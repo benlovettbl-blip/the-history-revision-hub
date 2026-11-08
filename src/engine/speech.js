@@ -22,6 +22,7 @@ let lastHardwareBoundaryTime = 0;
 
 let currentSpeechRate = 1.0;
 let currentVoiceGender = 'female'; // 'female' | 'male'
+let customActiveResetCallback = null;
 
 try {
   if (typeof window !== 'undefined' && window.localStorage) {
@@ -90,6 +91,7 @@ function isVoiceFemale(v) {
     name.includes('kate') ||
     name.includes('fiona') ||
     name.includes('susan') ||
+    name.includes('hazel') ||
     name.includes('zira') ||
     name.includes('fis-network') ||
     name.includes('jenny') ||
@@ -99,8 +101,10 @@ function isVoiceFemale(v) {
 
 function isVoiceMale(v) {
   const name = (v.name || '').toLowerCase();
+  // Critical guard: 'female' contains 'male' as a substring; reject if marked female
+  if (name.includes('female')) return false;
   return (
-    name.includes('male') ||
+    /\bmale\b/.test(name) ||
     name.includes('ryan') ||
     name.includes('thomas') ||
     name.includes('daniel') ||
@@ -109,8 +113,42 @@ function isVoiceMale(v) {
     name.includes('george') ||
     name.includes('david') ||
     name.includes('rjs-network') ||
-    name.includes('guy')
+    name.includes('guy') ||
+    name.includes('brian') ||
+    name.includes('alfie')
   );
+}
+
+/**
+ * Retrieve user-friendly details about the best matched active voice.
+ */
+export function getActiveVoiceDetails(genderPreference = currentVoiceGender) {
+  const voice = getBestVoice(genderPreference);
+  if (!voice) {
+    return {
+      name: 'Default Browser Voice',
+      friendlyName: 'UK Natural Voice',
+      isNatural: false,
+      gender: genderPreference,
+    };
+  }
+  const isNatural = isNaturalVoice(voice);
+  let friendlyName = voice.name
+    .replace(/Microsoft\s+/i, '')
+    .replace(/Google\s+/i, 'Google ')
+    .replace(/Apple\s+/i, '')
+    .replace(/\s*-\s*English\s*\([^)]+\)/i, '')
+    .replace(/\s*\(Natural\)/i, ' (Natural)')
+    .replace(/\s*Online\s*/i, ' ')
+    .trim();
+
+  return {
+    name: voice.name,
+    friendlyName: friendlyName || 'UK Voice',
+    isNatural,
+    gender: isVoiceFemale(voice) ? 'female' : 'male',
+    lang: voice.lang || 'en-GB',
+  };
 }
 
 /**
@@ -600,11 +638,20 @@ export function resetActiveSpeech() {
   activeStartCharOffset = 0;
   isPaused = false;
 
-  if (activeButton) {
-    activeButton.classList.remove('reading-active', 'reading-paused');
-    activeButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
-    activeButton.title = 'Read Aloud';
+  if (customActiveResetCallback) {
+    try {
+      customActiveResetCallback();
+    } catch (e) {}
+    customActiveResetCallback = null;
     activeButton = null;
+    activeStopBtn = null;
+  } else {
+    if (activeButton) {
+      activeButton.classList.remove('reading-active', 'reading-paused');
+      activeButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+      activeButton.title = 'Read Aloud';
+      activeButton = null;
+    }
   }
 
   if (activeStopBtn) {
@@ -620,13 +667,13 @@ export function resetActiveSpeech() {
   activeUtterance = null;
   window._activeSpeechUtterance = null;
 
-  // Cleanup any orphaned buttons or highlights in the DOM
-  document.querySelectorAll('.reading-active, .reading-paused').forEach((b) => {
+  // Cleanup any orphaned buttons or highlights in the DOM (skip custom reading studio buttons)
+  document.querySelectorAll('.btn[data-action="read-aloud"].reading-active, .btn[data-action="read-aloud"].reading-paused').forEach((b) => {
     b.classList.remove('reading-active', 'reading-paused');
     b.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     b.title = 'Read Aloud';
   });
-  document.querySelectorAll('.read-aloud-stop-btn').forEach((sb) => {
+  document.querySelectorAll('.read-aloud-playback-bar .read-aloud-stop-btn').forEach((sb) => {
     sb.style.display = 'none';
   });
   document.querySelectorAll('.reading-highlight').forEach((c) => {
@@ -647,16 +694,14 @@ export function cancelSpeech() {
 }
 
 /**
- * Smoothly resumes speech from the currently active sentence without restarting from word 0.
- * Used when the user changes playback speed or voice gender while listening.
+ * Jump speech narration directly to a specific sentence index in the active container.
+ * @param {number} sentenceIdx
  */
-function resumeSpeechFromCurrentSentence() {
+export function jumpToSentence(sentenceIdx) {
   if (!activeHighlightContainer || !activeSpokenText || activeWordSpans.length === 0) return;
 
-  const resumeSentenceIdx =
-    activeHighlightedSentenceIdx !== null ? activeHighlightedSentenceIdx : 0;
-
-  const remainingSpans = activeWordSpans.filter((s) => s.sentenceIdx >= resumeSentenceIdx);
+  activeHighlightedSentenceIdx = sentenceIdx;
+  const remainingSpans = activeWordSpans.filter((s) => s.sentenceIdx >= sentenceIdx);
   if (remainingSpans.length === 0) {
     resetActiveSpeech();
     return;
@@ -689,6 +734,16 @@ function resumeSpeechFromCurrentSentence() {
     if (!activeHighlightContainer) return;
     startUtterance(remainingText, charOffset, firstSpan);
   }, 60);
+}
+
+/**
+ * Smoothly resumes speech from the currently active sentence without restarting from word 0.
+ * Used when the user changes playback speed or voice gender while listening.
+ */
+function resumeSpeechFromCurrentSentence() {
+  const resumeSentenceIdx =
+    activeHighlightedSentenceIdx !== null ? activeHighlightedSentenceIdx : 0;
+  jumpToSentence(resumeSentenceIdx);
 }
 
 /**
@@ -931,12 +986,137 @@ export function readAloudText(btnElement) {
 }
 
 /**
+ * Read aloud an arbitrary text container (e.g. Literary Companion homework extract).
+ * Provides interactive sentence clicking, real-time karaoke sentence & word highlighting,
+ * custom play/pause/stop button synchronization, and status updates.
+ * @param {HTMLElement} textEl - The element containing the extract text
+ * @param {Object} [options]
+ * @param {HTMLElement} [options.playBtn] - Play/pause trigger button
+ * @param {HTMLElement} [options.stopBtn] - Stop button to show/hide
+ * @param {HTMLElement} [options.statusEl] - Text element for reading status
+ * @param {HTMLElement} [options.activeVoiceEl] - Element to show active voice name
+ * @param {Function} [options.onStateChange] - State change callback ('playing'|'paused'|'stopped')
+ */
+export function readAloudContainer(textEl, options = {}) {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+    console.warn('SpeechSynthesis API is not supported in this browser.');
+    return;
+  }
+
+  const { playBtn, stopBtn, statusEl, activeVoiceEl, onStateChange } = options;
+
+  // 1. If this container is already active and speech is speaking: toggle pause/resume
+  if (activeHighlightContainer === textEl && window.speechSynthesis.speaking) {
+    if (!isPaused) {
+      // Pause
+      window.speechSynthesis.pause();
+      isPaused = true;
+      if (playBtn) {
+        playBtn.classList.add('reading-paused');
+        playBtn.innerHTML = '<i class="fa-solid fa-play" id="play-icon"></i> <span id="play-btn-text">Resume Reading</span>';
+      }
+      if (statusEl) statusEl.textContent = '⏸ Paused';
+      updateFloatingAudioPlayerState();
+      if (onStateChange) onStateChange('paused');
+      return;
+    } else {
+      // Resume
+      window.speechSynthesis.resume();
+      isPaused = false;
+      if (playBtn) {
+        playBtn.classList.remove('reading-paused');
+        playBtn.innerHTML = '<i class="fa-solid fa-pause" id="play-icon"></i> <span id="play-btn-text">Pause Reading</span>';
+      }
+      if (statusEl) {
+        const details = getActiveVoiceDetails();
+        statusEl.textContent = `🔊 Reading aloud (${details.friendlyName}, ${currentSpeechRate}x)...`;
+      }
+      updateFloatingAudioPlayerState();
+      if (onStateChange) onStateChange('playing');
+      if (!window.speechSynthesis.speaking) {
+        resumeSpeechFromCurrentSentence();
+      }
+      return;
+    }
+  }
+
+  // 2. Start a fresh reading session on this container
+  cancelSpeech();
+
+  const { spokenText, spans } = prepareHighlightableText(textEl);
+  if (!spokenText || spans.length === 0) {
+    if (textEl._originalHtml) {
+      textEl.innerHTML = textEl._originalHtml;
+      delete textEl._originalHtml;
+    }
+    return;
+  }
+
+  // Make each sentence interactive (click to read from there)
+  spans.forEach((span) => {
+    span.el.classList.add('speech-interactive-sentence');
+    span.el.title = 'Click to listen from this sentence';
+    span.el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      jumpToSentence(span.sentenceIdx);
+      if (statusEl) {
+        const details = getActiveVoiceDetails();
+        statusEl.textContent = `🔊 Reading sentence ${span.sentenceIdx + 1} (${details.friendlyName}, ${currentSpeechRate}x)...`;
+      }
+      if (playBtn) {
+        playBtn.classList.add('reading-active');
+        playBtn.classList.remove('reading-paused');
+        playBtn.innerHTML = '<i class="fa-solid fa-pause" id="play-icon"></i> <span id="play-btn-text">Pause Reading</span>';
+      }
+    });
+  });
+
+  activeHighlightContainer = textEl;
+  activeWordSpans = spans;
+  activeSpokenText = spokenText;
+  activeButton = playBtn || null;
+  activeStopBtn = stopBtn || null;
+  activeChunk = textEl;
+
+  customActiveResetCallback = () => {
+    if (playBtn) {
+      playBtn.classList.remove('reading-active', 'reading-paused');
+      playBtn.innerHTML = '<i class="fa-solid fa-play" id="play-icon"></i> <span id="play-btn-text">Listen: Read Aloud</span>';
+    }
+    if (stopBtn) stopBtn.style.display = 'none';
+    if (statusEl) statusEl.textContent = 'Ready to read aloud';
+    if (onStateChange) onStateChange('stopped');
+  };
+
+  if (playBtn) {
+    playBtn.classList.add('reading-active');
+    playBtn.classList.remove('reading-paused');
+    playBtn.innerHTML = '<i class="fa-solid fa-pause" id="play-icon"></i> <span id="play-btn-text">Pause Reading</span>';
+  }
+  if (stopBtn) stopBtn.style.display = 'inline-flex';
+  if (statusEl) {
+    const details = getActiveVoiceDetails();
+    statusEl.textContent = `🔊 Reading aloud (${details.friendlyName}, ${currentSpeechRate}x)...`;
+  }
+  if (activeVoiceEl) {
+    const details = getActiveVoiceDetails();
+    activeVoiceEl.textContent = details.friendlyName;
+  }
+  if (onStateChange) onStateChange('playing');
+
+  startUtterance(spokenText, 0, spans[0]);
+}
+
+/**
  * Initialize Speech Synthesis system, bind global helpers, and inject header controls.
  */
 export function initSpeech() {
   if (typeof window === 'undefined') return;
 
   window.readAloudText = readAloudText;
+  window.readAloudContainer = readAloudContainer;
+  window.jumpToSentence = jumpToSentence;
+  window.getActiveVoiceDetails = getActiveVoiceDetails;
   window.cancelSpeech = cancelSpeech;
   window.setSpeechRate = setSpeechRate;
   window.getSpeechRate = getSpeechRate;

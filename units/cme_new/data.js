@@ -1,7 +1,4 @@
-// Conflict in the Middle East, 1945-1995 (Edexcel GCSE Paper 2)
-// Curriculum data with 5-Block Narrative & 1-to-1 Chronological Primary Source Alignment
-
-const cme_new_data = {
+export default {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -112,7 +109,12 @@ const cme_new_data = {
   "lessons": [
     {
       "id": "lesson_0",
-      "alias_ids": ["lesson_0", "lesson_0_intro", "intro", "lesson_1_1"],
+      "alias_ids": [
+        "lesson_0",
+        "lesson_0_intro",
+        "intro",
+        "lesson_1_1"
+      ],
       "specification_anchor": "The birth of the state of Israel and the 1948–49 War: historical background; the British Mandate, McMahon-Hussein Correspondence, Sykes-Picot Agreement (1916), Balfour Declaration (1917), and 1939 White Paper.",
       "key_individual": {
         "anchor_act": 3,
@@ -1161,11 +1163,131 @@ const cme_new_data = {
         }
       ],
       "card_image": "/images/cme_allenby_jerusalem_1917.jpg",
-      "card_position": "center 20%"
+      "card_position": "center 20%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1915–1916",
+          "heading": "The McMahon-Hussein Correspondence",
+          "focus_clue": "Why did Arabs believe Britain promised them independent sovereignty in 1915?",
+          "words": [
+            {
+              "term": "Ottoman Empire",
+              "clue": "For over four centuries leading up to the First World War, the lands of the Middle East were ruled as provinces of the Turkish Ottoman Empire."
+            },
+            {
+              "term": "Suez Canal",
+              "clue": "When the Ottomans entered the war on the side of Imperial Germany in October 1914, British imperial strategists faced an acute crisis: Ottoman forces threatened the vital Suez Canal, Britain's maritime lifeline to India."
+            },
+            {
+              "term": "Henry McMahon",
+              "clue": "Desperate to tie down Turkish forces, Sir Henry McMahon, the British High Commissioner in Cairo, initiated a series of ten diplomatic letters with Sharif Hussein of Mecca, the custodian of Islam’s holiest shrines and leader of the Hashemite dynasty."
+            }
+          ],
+          "model_sentence": "To protect the vital <strong>Suez Canal</strong> against attack from the <strong>Ottoman Empire</strong>, Sir <strong>Henry McMahon</strong> offered British recognition of Arab independence in return for an armed rebellion against Turkish rule.",
+          "title": "The McMahon-Hussein Correspondence",
+          "dates": "1915–1916"
+        },
+        {
+          "step": 2,
+          "date": "May 1916",
+          "heading": "The Secret Sykes-Picot Agreement",
+          "focus_clue": "Why was the secret Sykes-Picot Agreement viewed as an imperial betrayal?",
+          "words": [
+            {
+              "term": "Mark Sykes",
+              "clue": "In May 1916, British diplomat Sir Mark Sykes and French envoy François Georges-Picot concluded the secret Sykes-Picot Agreement."
+            },
+            {
+              "term": "François Georges-Picot",
+              "clue": "In May 1916, British diplomat Sir Mark Sykes and French envoy François Georges-Picot concluded the secret Sykes-Picot Agreement."
+            },
+            {
+              "term": "Sykes-Picot Agreement",
+              "clue": "In May 1916, British diplomat Sir Mark Sykes and French envoy François Georges-Picot concluded the secret Sykes-Picot Agreement."
+            }
+          ],
+          "model_sentence": "In May 1916, British diplomat Sir <strong>Mark Sykes</strong> and French envoy <strong>François Georges-Picot</strong> concluded the secret <strong>Sykes-Picot Agreement</strong>.",
+          "title": "The Secret Sykes-Picot Agreement",
+          "dates": "May 1916"
+        },
+        {
+          "step": 3,
+          "date": "November 1917",
+          "heading": "The Balfour Declaration",
+          "focus_clue": "How did the Balfour Declaration create contradictory British commitments?",
+          "words": [
+            {
+              "term": "David Lloyd George",
+              "clue": "To mobilize international Jewish diplomatic and financial influence—particularly in the United States and Russia—Prime Minister David Lloyd George and Foreign Secretary Arthur Balfour courted the British Zionist Federation."
+            },
+            {
+              "term": "Arthur Balfour",
+              "clue": "To mobilize international Jewish diplomatic and financial influence—particularly in the United States and Russia—Prime Minister David Lloyd George and Foreign Secretary Arthur Balfour courted the British Zionist Federation."
+            },
+            {
+              "term": "2 November 1917",
+              "clue": "On 2 November 1917, Balfour issued an official letter to Lord Walter Rothschild, proclaiming that the British Government viewed with favour \"the establishment in Palestine of a national home for the Jewish people.\" To appease internal critics and Arab allies, Balfour added a famous safeguard clause: \"nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities.\" At the time, Arab Muslims and Christians formed over 90% of the population of Palestine, while Jews comprised fewer than 10%."
+            }
+          ],
+          "model_sentence": "Backed by Prime Minister <strong>David Lloyd George</strong>, Foreign Secretary <strong>Arthur Balfour</strong> issued a historic pledge on <strong>2 November 1917</strong> committing the British government to establishing a national home for the Jewish people in Palestine.",
+          "title": "The Balfour Declaration",
+          "dates": "November 1917"
+        },
+        {
+          "step": 4,
+          "date": "1920–1936",
+          "heading": "The British Mandate & Rising Immigration",
+          "focus_clue": "Why did rising Jewish immigration spark communal violence under the Mandate?",
+          "words": [
+            {
+              "term": "Edmund Allenby's",
+              "clue": "Following Allied military conquest and General Edmund Allenby's entrance into Jerusalem in December 1917, the newly formed League of Nations ratified the Mandate System at the 1920 San Remo Conference."
+            },
+            {
+              "term": "League of Nations",
+              "clue": "Following Allied military conquest and General Edmund Allenby's entrance into Jerusalem in December 1917, the newly formed League of Nations ratified the Mandate System at the 1920 San Remo Conference."
+            },
+            {
+              "term": "Mandatory Palestine",
+              "clue": "Under Article 22 of the League Covenant, Britain was granted formal administrative governance over Mandatory Palestine, incorporating the Balfour commitments directly into international law."
+            }
+          ],
+          "model_sentence": "Following military occupation under General <strong>Edmund Allenby's</strong>, the <strong>League of Nations</strong> established <strong>Mandatory Palestine</strong>, sparking decades of communal friction over land and immigration.",
+          "title": "The British Mandate & Rising Immigration",
+          "dates": "1920–1936"
+        },
+        {
+          "step": 5,
+          "date": "1936–1939",
+          "heading": "The Arab Revolt & The 1939 White Paper",
+          "focus_clue": "Why did the 1939 White Paper turn Zionists against British rule?",
+          "words": [
+            {
+              "term": "Great Arab Revolt",
+              "clue": "In April 1936, simmering Arab anger erupted into the Great Arab Revolt."
+            },
+            {
+              "term": "Haj Amin al-Husseini",
+              "clue": "Led by the Arab Higher Committee under the Grand Mufti of Jerusalem, Haj Amin al-Husseini, Palestinian Arabs launched a six-month general strike, withholding taxes and boycotting British goods."
+            },
+            {
+              "term": "IPC oil pipeline",
+              "clue": "When strikes failed to halt Jewish immigration, the rebellion transformed into a countryside peasant guerrilla war, attacking British military convoys, sabotaging the IPC oil pipeline to Haifa, and targeting Jewish agricultural settlements (kibbutzim)."
+            }
+          ],
+          "model_sentence": "During the <strong>Great Arab Revolt</strong> coordinated by <strong>Haj Amin al-Husseini</strong>, rebel fighters sabotaged the strategic <strong>IPC oil pipeline</strong> to resist British rule and Zionist migration.",
+          "title": "The Arab Revolt & The 1939 White Paper",
+          "dates": "1936–1939"
+        }
+      ]
     },
     {
       "id": "lesson_1",
-      "alias_ids": ["lesson_2", "lesson_1_2"],
+      "alias_ids": [
+        "lesson_2",
+        "lesson_1_2"
+      ],
       "specification_anchor": "The birth of the state of Israel and the 1948–49 War: the British withdrawal from Palestine; Jewish insurgency (Irgun, Lehi, King David Hotel), UN Partition Resolution 181, civil conflict, and the declaration of the State of Israel (14 May 1948).",
       "key_individual": {
         "anchor_act": 12,
@@ -2601,11 +2723,131 @@ const cme_new_data = {
         }
       },
       "card_image": "/units/cme_new/assets/cme_david_ben_gurion__d597_087_.jpg",
-      "card_position": "center 20%"
+      "card_position": "center 20%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1945–1946",
+          "heading": "Holocaust Survivors & The 1,500 Monthly Limit",
+          "focus_clue": "Why did Bevin strictly enforce the 1,500 monthly refugee immigration limit?",
+          "words": [
+            {
+              "term": "Displaced Persons (DP) camps",
+              "clue": "Over 250,000 traumatised Jewish survivors remained stranded in European Displaced Persons (DP) camps, refusing to return to homes destroyed by pogroms and demanding passage to Palestine."
+            },
+            {
+              "term": "Harry S. Truman",
+              "clue": "US President Harry S. Truman exerted intense diplomatic pressure on Britain to immediately admit 100,000 Holocaust survivors into the Mandate."
+            },
+            {
+              "term": "Ernest Bevin",
+              "clue": "However, British Foreign Secretary Ernest Bevin adamantly rejected Truman's appeal, fearing that a massive influx would ignite an all-out Arab uprising that would jeopardize Middle Eastern oil supplies and air transit routes."
+            }
+          ],
+          "model_sentence": "While thousands languished in European <strong>Displaced Persons (DP) camps</strong>, US President <strong>Harry S. Truman</strong> clashed with British Foreign Secretary <strong>Ernest Bevin</strong> over Jewish immigration quotas.",
+          "title": "Holocaust Survivors & The 1,500 Monthly Limit",
+          "dates": "1945–1946"
+        },
+        {
+          "step": 2,
+          "date": "Nov 1945 – 1946",
+          "heading": "The Zionist Paramilitary Insurgency",
+          "focus_clue": "How did Zionist paramilitaries paralyze British infrastructure in Palestine?",
+          "words": [
+            {
+              "term": "United Resistance Movement",
+              "clue": "Convinced that British immigration restrictions condemned survivors to indefinite confinement, the three major Zionist underground paramilitaries united in November 1945 to form the United Resistance Movement (Tenuat HaMeri)."
+            },
+            {
+              "term": "Tenuat HaMeri",
+              "clue": "Convinced that British immigration restrictions condemned survivors to indefinite confinement, the three major Zionist underground paramilitaries united in November 1945 to form the United Resistance Movement (Tenuat HaMeri)."
+            },
+            {
+              "term": "Haganah",
+              "clue": "The mainstream Haganah (led by David Ben-Gurion), the right-wing Irgun Zvai Leumi (commanded by Menachem Begin), and the radical Lehi (Stern Gang) launched a coordinated insurgency to paralyze British security infrastructure."
+            }
+          ],
+          "model_sentence": "Formed to coordinate underground resistance, the <strong>United Resistance Movement</strong> (or <strong>Tenuat HaMeri</strong>) combined the military forces of the <strong>Haganah</strong> with Irgun and Lehi fighters.",
+          "title": "The Zionist Paramilitary Insurgency",
+          "dates": "Nov 1945 – 1946"
+        },
+        {
+          "step": 3,
+          "date": "22 July 1946",
+          "heading": "The King David Hotel Bombing",
+          "focus_clue": "Why did targeting the King David Hotel prove Palestine was ungovernable?",
+          "words": [
+            {
+              "term": "22 July 1946",
+              "clue": "On 22 July 1946, the Irgun executed a catastrophic strike against the administrative nerve-centre of the British Mandate."
+            },
+            {
+              "term": "King David Hotel",
+              "clue": "Six Irgun operatives disguised as Arab milk deliverymen slipped into the basement of the King David Hotel in Jerusalem, which housed the British Military Headquarters and Civil Secretariat."
+            },
+            {
+              "term": "91 people",
+              "clue": "The thunderous blast collapsed the entire six-storey southern wing into rubble, killing 91 people—including 28 British administrative officials, 41 Arab civil servants, 17 Jewish employees, and 5 bystanders."
+            }
+          ],
+          "model_sentence": "In protest against British immigration quotas, the militant <strong>22 July 1946</strong> bombed the British headquarters at the <strong>King David Hotel</strong>, convincing <strong>91 people</strong> that the mandate was ungovernable.",
+          "title": "The King David Hotel Bombing",
+          "dates": "22 July 1946"
+        },
+        {
+          "step": 4,
+          "date": "July 1947",
+          "heading": "The Sergeants Affair & Public Backlash",
+          "focus_clue": "Why did the Sergeants Affair trigger public outrage in Britain?",
+          "words": [
+            {
+              "term": "Clifford Martin",
+              "clue": "In July 1947, after British military courts sentenced three captured Irgun members to death for the Acre Prison break, Menachem Begin's underground kidnapped two off-duty British military intelligence sergeants, Clifford Martin and Mervyn Paice, in Netanya."
+            },
+            {
+              "term": "Mervyn Paice",
+              "clue": "In July 1947, after British military courts sentenced three captured Irgun members to death for the Acre Prison break, Menachem Begin's underground kidnapped two off-duty British military intelligence sergeants, Clifford Martin and Mervyn Paice, in Netanya."
+            },
+            {
+              "term": "Sergeants Affair",
+              "clue": "The Sergeants Affair triggered a fierce backlash across mainland Britain: anti-Semitic riots erupted in London, Liverpool, and Manchester, while British newspapers demanded an immediate troop withdrawal."
+            }
+          ],
+          "model_sentence": "In retaliation for the execution of three Irgun members, militants hanged British sergeants <strong>Clifford Martin</strong> and <strong>Mervyn Paice</strong>, sparking the national outrage of the <strong>Sergeants Affair</strong>.",
+          "title": "The Sergeants Affair & Public Backlash",
+          "dates": "July 1947"
+        },
+        {
+          "step": 5,
+          "date": "Summer–Nov 1947",
+          "heading": "The SS Exodus Crisis & Handover to the UN",
+          "focus_clue": "How did the SS Exodus crisis force Britain to surrender the Mandate to the UN?",
+          "words": [
+            {
+              "term": "Aliyah Bet",
+              "clue": "In July 1947, the Haganah launched its boldest Aliyah Bet clandestine immigration effort with the SS Exodus 1947, carrying 4,515 Holocaust survivors, including 655 children."
+            },
+            {
+              "term": "SS Exodus 1947",
+              "clue": "In July 1947, the Haganah launched its boldest Aliyah Bet clandestine immigration effort with the SS Exodus 1947, carrying 4,515 Holocaust survivors, including 655 children."
+            },
+            {
+              "term": "Germany",
+              "clue": "Rather than detaining the passengers in Cyprus, Ernest Bevin ordered the survivors shipped back to France; when they refused to disembark, Britain forcibly returned them to transit camps in Hamburg, Germany."
+            }
+          ],
+          "model_sentence": "Conducting clandestine immigration under <strong>Aliyah Bet</strong>, the intercepted refugee vessel <strong>SS Exodus 1947</strong> was forcibly returned to displaced camps in <strong>Germany</strong>, provoking global outcry.",
+          "title": "The SS Exodus Crisis & Handover to the UN",
+          "dates": "Summer–Nov 1947"
+        }
+      ]
     },
     {
       "id": "lesson_2",
-      "alias_ids": ["lesson_3", "lesson_1_3"],
+      "alias_ids": [
+        "lesson_3",
+        "lesson_1_3"
+      ],
       "specification_anchor": "The birth of the state of Israel and the 1948–49 War: the Arab-Israeli War of 1948–49; Arab disunity, Israeli military mobilisation, the 1949 Armistice Agreements, the Palestinian refugee crisis (Nakba), UNRWA, and the Law of Return.",
       "key_individual": {
         "anchor_act": 2,
@@ -4013,11 +4255,131 @@ const cme_new_data = {
         }
       ],
       "card_image": "/images/cme_palestinian_refugees_1948.jpg",
-      "card_position": "center 25%"
+      "card_position": "center 25%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "June–July 1948",
+          "heading": "The UN Ceasefire & The Czech Arms Supply",
+          "focus_clue": "How did the 4-week UN truce enable Israel to decisively shift military momentum?",
+          "words": [
+            {
+              "term": "11 June 1948",
+              "clue": "On 11 June 1948, UN mediator Count Folke Bernadotte negotiated a four-week truce."
+            },
+            {
+              "term": "Count Folke Bernadotte",
+              "clue": "On 11 June 1948, UN mediator Count Folke Bernadotte negotiated a four-week truce."
+            },
+            {
+              "term": "Israel Defense Forces",
+              "clue": "While the Arab League respected the truce and suffered from a British arms embargo, David Ben-Gurion utilized the pause to reorganize disparate paramilitary militias into a unified, disciplined national army: the Israel Defense Forces (IDF)."
+            }
+          ],
+          "model_sentence": "During the temporary truce declared on <strong>11 June 1948</strong>, UN mediator <strong>Count Folke Bernadotte</strong> attempted peace negotiations while the newly organized <strong>Israel Defense Forces</strong> secretly imported Czech armaments to secure military superiority.",
+          "title": "The UN Ceasefire & The Czech Arms Supply",
+          "dates": "June–July 1948"
+        },
+        {
+          "step": 2,
+          "date": "1948–1949",
+          "heading": "The Palestinian Refugee Crisis (The Nakba)",
+          "focus_clue": "Why is the cause of the 1948 Palestinian refugee flight (Al-Nakba) contested?",
+          "words": [
+            {
+              "term": "Al-Nakba",
+              "clue": "The 1948–49 War resulted in an unprecedented humanitarian catastrophe for Palestinian Arab society, an event known in Arabic as Al-Nakba (\"The Catastrophe\")."
+            },
+            {
+              "term": "700,000 Palestinian Arabs",
+              "clue": "Between December 1947 and the 1949 armistices, over 700,000 Palestinian Arabs—representing over 80% of the Arab population living within the borders of what became Israel—fled or were expelled from their ancestral towns and villages."
+            },
+            {
+              "term": "400 Arab villages",
+              "clue": "Over 400 Arab villages were systematically evacuated, abandoned, or razed."
+            }
+          ],
+          "model_sentence": "The catastrophic displacement of <strong>Al-Nakba</strong> forced over <strong>700,000 Palestinian Arabs</strong> into permanent exile as approximately <strong>400 Arab villages</strong> were depopulated and destroyed.",
+          "title": "The Palestinian Refugee Crisis (The Nakba)",
+          "dates": "1948–1949"
+        },
+        {
+          "step": 3,
+          "date": "1949",
+          "heading": "The 1949 Armistice Agreements (The Green Line)",
+          "focus_clue": "How did the 1949 Green Line transform the territory allocated by the UN?",
+          "words": [
+            {
+              "term": "Ralph Bunche",
+              "clue": "In early 1949, on the Mediterranean island of Rhodes, UN acting mediator Ralph Bunche brokered separate bilateral armistice agreements between Israel and Egypt, Lebanon, Jordan, and Syria."
+            },
+            {
+              "term": "Green Line",
+              "clue": "The resulting demarcation boundaries were drawn with green grease-pencils on military maps, becoming internationally known as the Green Line."
+            },
+            {
+              "term": "78% of Mandatory Palestine",
+              "clue": "Israel secured 78% of Mandatory Palestine—a 22% increase over the territorial allocation granted by UN Resolution 181."
+            }
+          ],
+          "model_sentence": "Under UN mediator <strong>Ralph Bunche</strong>, the 1949 armistice established the <strong>Green Line</strong>, leaving Israel in control of <strong>78% of Mandatory Palestine</strong>.",
+          "title": "The 1949 Armistice Agreements (The Green Line)",
+          "dates": "1949"
+        },
+        {
+          "step": 4,
+          "date": "July 1950",
+          "heading": "The Israeli Law of Return",
+          "focus_clue": "How did the Law of Return transform Israel’s demographics and economy by 1953?",
+          "words": [
+            {
+              "term": "5 July 1950",
+              "clue": "On 5 July 1950, the Israeli Knesset enacted the historic Law of Return, declaring that every Jewish person anywhere in the world possessed the inherent legal right to settle in Israel and receive automatic citizenship."
+            },
+            {
+              "term": "Law of Return",
+              "clue": "On 5 July 1950, the Israeli Knesset enacted the historic Law of Return, declaring that every Jewish person anywhere in the world possessed the inherent legal right to settle in Israel and receive automatic citizenship."
+            },
+            {
+              "term": "1.4 million by 1952",
+              "clue": "Within four years of statehood, Israel’s Jewish population more than doubled, surging from 650,000 in May 1948 to over 1.4 million by 1952."
+            }
+          ],
+          "model_sentence": "Passed on <strong>5 July 1950</strong>, the historic <strong>Law of Return</strong> granted universal immigration rights to Jewish refugees worldwide, driving the population to <strong>1.4 million by 1952</strong>.",
+          "title": "The Israeli Law of Return",
+          "dates": "July 1950"
+        },
+        {
+          "step": 5,
+          "date": "1950–1955",
+          "heading": "Fedayeen Border Raids & Israeli Reprisals",
+          "focus_clue": "Why did cross-border infiltration trigger Sharon’s Unit 101 raid on Qibya?",
+          "words": [
+            {
+              "term": "fedayeen",
+              "clue": "By 1953, Egyptian military intelligence in Gaza began organizing, arming, and financing these infiltrators into organized guerrilla squads known as fedayeen (\"self-sacrificers\"), who carried out sabotage, planted landmines, and attacked Israeli border settlements."
+            },
+            {
+              "term": "Unit 101",
+              "clue": "In August 1953, the IDF formed Unit 101, an elite commando unit commanded by Major Ariel Sharon."
+            },
+            {
+              "term": "Ariel Sharon",
+              "clue": "In August 1953, the IDF formed Unit 101, an elite commando unit commanded by Major Ariel Sharon."
+            }
+          ],
+          "model_sentence": "In response to cross-border infiltrations by Palestinian <strong>fedayeen</strong>, Prime Minister Ben-Gurion deployed <strong>Unit 101</strong> under Major <strong>Ariel Sharon</strong> to execute aggressive retaliatory raids such as the Qibya massacre.",
+          "title": "Fedayeen Border Raids & Israeli Reprisals",
+          "dates": "1950–1955"
+        }
+      ]
     },
     {
       "id": "lesson_3",
-      "alias_ids": ["lesson_4", "lesson_1_4"],
+      "alias_ids": [
+        "lesson_4",
+        "lesson_1_4"
+      ],
       "specification_anchor": "The birth of the state of Israel and the 1948–49 War: the Suez Crisis (1956); the rise of Gamal Abdel Nasser, nationalisation of the Suez Canal, secret Anglo-French-Israeli collusion, military operation, superpower intervention, and consequences.",
       "title": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
       "lesson_reflection": {
@@ -5432,11 +5794,145 @@ const cme_new_data = {
         }
       ],
       "card_image": "/images/cme_nasser_1956.jpg",
-      "card_position": "center 20%"
+      "card_position": "center 20%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "February 1955",
+          "heading": "The Gaza Raid",
+          "focus_clue": "Why did Ben-Gurion’s Gaza raid convince Nasser he needed modern heavy weapons?",
+          "words": [
+            {
+              "term": "28 February 1955",
+              "clue": "The date Israeli paratroopers launched a devastating raid into Egyptian-held Gaza."
+            },
+            {
+              "term": "Operation Black Arrow",
+              "clue": "The Israeli retaliatory strike against an Egyptian army garrison in Gaza that shattered border stability."
+            },
+            {
+              "term": "37 Egyptian soldiers",
+              "clue": "The Egyptian servicemen killed during the Gaza raid, which humiliated Gamal Abdel Nasser and prompted the Czech Arms Deal."
+            }
+          ],
+          "model_sentence": "Launched on <strong>28 February 1955</strong>, Israel's cross-border strike in <strong>Operation Black Arrow</strong> left <strong>37 Egyptian soldiers</strong> dead, pushing Nasser toward the Soviet bloc.",
+          "key_terms": [
+            {
+              "term": "28 February 1955",
+              "clue": "The date Israeli paratroopers launched a devastating raid into Egyptian-held Gaza."
+            },
+            {
+              "term": "Operation Black Arrow",
+              "clue": "The Israeli retaliatory strike against an Egyptian army garrison in Gaza that shattered border stability."
+            },
+            {
+              "term": "37 Egyptian soldiers",
+              "clue": "The Egyptian servicemen killed during the Gaza raid, which humiliated Gamal Abdel Nasser and prompted the Czech Arms Deal."
+            }
+          ],
+          "title": "The Gaza Raid",
+          "dates": "February 1955"
+        },
+        {
+          "step": 2,
+          "date": "September 1955",
+          "heading": "The Czech Arms Deal",
+          "focus_clue": "Why did the Czech arms deal alarm Britain, France, and Israel in 1955?",
+          "words": [
+            {
+              "term": "September 1955",
+              "clue": "In September 1955, Egypt announced the Czech Arms Deal—a massive $250 million arms agreement ostensibly negotiated with Czechoslovakia but fully backed by Moscow."
+            },
+            {
+              "term": "Czech Arms Deal",
+              "clue": "In September 1955, Egypt announced the Czech Arms Deal—a massive $250 million arms agreement ostensibly negotiated with Czechoslovakia but fully backed by Moscow."
+            },
+            {
+              "term": "200 MiG-15 jet fighters",
+              "clue": "In exchange for Egyptian cotton, the Soviet bloc delivered over 200 MiG-15 jet fighters, 50 Ilyushin bombers, 300 modern T-34 and JS-3 tanks, 200 armoured troop carriers, and two naval submarines."
+            }
+          ],
+          "model_sentence": "Concluded in <strong>September 1955</strong>, the landmark <strong>Czech Arms Deal</strong> supplied the Egyptian armed forces with over <strong>200 MiG-15 jet fighters</strong>, tilting the regional balance of power.",
+          "title": "The Czech Arms Deal",
+          "dates": "September 1955"
+        },
+        {
+          "step": 3,
+          "date": "July 1956",
+          "heading": "Dam Loans Cancelled & Suez Canal Nationalised",
+          "focus_clue": "Why did Britain and France view canal nationalisation as an intolerable threat?",
+          "words": [
+            {
+              "term": "Aswan High Dam",
+              "clue": "Nasser's crowning domestic development project was the Aswan High Dam, designed to control the annual Nile flooding, irrigate millions of acres of desert, and provide hydroelectric power for Egyptian industrialization."
+            },
+            {
+              "term": "John Foster Dulles",
+              "clue": "Angered by Nasser's recognition of Communist China and his Soviet arms purchases, US Secretary of State John Foster Dulles abruptly cancelled American and World Bank loan financing in July 1956, believing this would humiliate Nasser."
+            },
+            {
+              "term": "July 1956",
+              "clue": "Angered by Nasser's recognition of Communist China and his Soviet arms purchases, US Secretary of State John Foster Dulles abruptly cancelled American and World Bank loan financing in July 1956, believing this would humiliate Nasser."
+            }
+          ],
+          "model_sentence": "When US Secretary of State <strong>John Foster Dulles</strong> abruptly cancelled financing for the <strong>Aswan High Dam</strong>, President Nasser retaliated in <strong>July 1956</strong> by nationalising the Suez Canal.",
+          "title": "Dam Loans Cancelled & Suez Canal Nationalised",
+          "dates": "July 1956"
+        },
+        {
+          "step": 4,
+          "date": "October–November 1956",
+          "heading": "The Secret Sèvres Plot & Invasion",
+          "focus_clue": "How did the secret Sèvres Agreement orchestrate a pretext for invading Egypt?",
+          "words": [
+            {
+              "term": "Sèvres",
+              "clue": "Between 22 and 24 October 1956, senior British, French, and Israeli officials met covertly at a private villa in Sèvres, France."
+            },
+            {
+              "term": "Sèvres Agreement",
+              "clue": "Anthony Eden, French Prime Minister Guy Mollet, and Israeli Prime Minister David Ben-Gurion signed the secret Sèvres Agreement, orchestrating a cynical military conspiracy: Israel would launch a surprise invasion of the Sinai Peninsula toward the Suez Canal; Britain and France would then issue an ultimatum commanding both sides to withdraw ten miles from the waterway and intervene to \"separate the combatants.\" On 29 October 1956, Israeli paratroopers under Ariel Sharon dropped near the Mitla Pass, while Israeli armoured columns surged across the Sinai."
+            },
+            {
+              "term": "29 October 1956",
+              "clue": "Anthony Eden, French Prime Minister Guy Mollet, and Israeli Prime Minister David Ben-Gurion signed the secret Sèvres Agreement, orchestrating a cynical military conspiracy: Israel would launch a surprise invasion of the Sinai Peninsula toward the Suez Canal; Britain and France would then issue an ultimatum commanding both sides to withdraw ten miles from the waterway and intervene to \"separate the combatants.\" On 29 October 1956, Israeli paratroopers under Ariel Sharon dropped near the Mitla Pass, while Israeli armoured columns surged across the Sinai."
+            }
+          ],
+          "model_sentence": "In top-secret negotiations at Sèvres, representatives from Britain, France, and Israel concluded the clandestine <strong>Sèvres</strong>, orchestrating a pre-planned invasion of Sinai to provide a pretext for seizing the <strong>Sèvres Agreement</strong> from <strong>29 October 1956</strong>.",
+          "title": "The Secret Sèvres Plot & Invasion",
+          "dates": "October–November 1956"
+        },
+        {
+          "step": 5,
+          "date": "November 1956",
+          "heading": "US Ultimatum & British Retreat",
+          "focus_clue": "Why did the Suez Crisis end in political triumph for Nasser despite military defeat?",
+          "words": [
+            {
+              "term": "Dwight D. Eisenhower",
+              "clue": "The Anglo-French conspiracy provoked incandescent fury from US President Dwight D. Eisenhower, who was running for re-election on a platform of peace and had been kept completely in the dark."
+            },
+            {
+              "term": "6 November 1956",
+              "clue": "Facing total financial bankruptcy and run on sterling, Eden declared a humiliating ceasefire on 6 November 1956."
+            },
+            {
+              "term": "United Nations Emergency Force (UNEF)",
+              "clue": "The newly established United Nations Emergency Force (UNEF) deployed to Sinai to supervise the withdrawal of Anglo-French and Israeli forces."
+            }
+          ],
+          "model_sentence": "Facing severe financial pressure from US President <strong>Dwight D. Eisenhower</strong>, Britain declared a humiliating ceasefire on <strong>6 November 1956</strong>, allowing the <strong>United Nations Emergency Force (UNEF)</strong> to deploy to Sinai and supervise the withdrawal of invading forces.",
+          "title": "US Ultimatum & British Retreat",
+          "dates": "November 1956"
+        }
+      ]
     },
     {
       "id": "lesson_4",
-      "alias_ids": ["lesson_6", "lesson_2_1"],
+      "alias_ids": [
+        "lesson_6",
+        "lesson_2_1"
+      ],
       "specification_anchor": "The escalating conflict, 1956–73: rising tensions and causes of the 1967 War; border skirmishes, the Fedayeen, Headwater Diversion Plan water disputes, Syrian-Israeli clashes, closure of the Straits of Tiran, and expulsion of UNEF from Sinai.",
       "key_individual": {
         "anchor_act": 1,
@@ -6549,11 +7045,159 @@ const cme_new_data = {
       ],
       "extra_videos": [],
       "card_image": "/images/cme_cairo_summit_1964.jpg",
-      "card_position": "center 25%"
+      "card_position": "center 25%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "January 1964",
+          "heading": "The 1964 Cairo Conference & PLO Founded",
+          "focus_clue": "Why did Arab leaders meet in Cairo and create the PLO in 1964?",
+          "words": [
+            {
+              "term": "January 1964",
+              "clue": "In January 1964, Egyptian President Gamal Abdel Nasser convened the First Arab League Summit in Cairo, bringing together thirteen heads of state to forge a unified Arab strategy against Israel."
+            },
+            {
+              "term": "First Arab League Summit",
+              "clue": "In January 1964, Egyptian President Gamal Abdel Nasser convened the First Arab League Summit in Cairo, bringing together thirteen heads of state to forge a unified Arab strategy against Israel."
+            },
+            {
+              "term": "National Water Carrier",
+              "clue": "Arab leaders were particularly alarmed by Israel's completion of the National Water Carrier, a massive infrastructure project pumping water from the Sea of Galilee across the coastal plain to irrigate the Negev desert, which Arab states viewed as an illegal seizure of vital regional water resources."
+            }
+          ],
+          "model_sentence": "Convening in <strong>January 1964</strong>, the <strong>First Arab League Summit</strong> met in Cairo to address Israel's newly opened <strong>National Water Carrier</strong> project.",
+          "title": "The 1964 Cairo Conference & PLO Founded",
+          "dates": "January 1964"
+        },
+        {
+          "step": 2,
+          "date": "1964–1965",
+          "heading": "The Dispute Over the River Jordan Waterways",
+          "focus_clue": "How did the dispute over River Jordan water spark military conflict?",
+          "words": [
+            {
+              "term": "Headwaters Diversion Plan",
+              "clue": "In response to Israel's National Water Carrier, Arab states initiated the Headwaters Diversion Plan in late 1964."
+            },
+            {
+              "term": "River Jordan headwaters",
+              "clue": "Engineers in Syria, Lebanon, and Jordan began constructing vast channels and canals to divert the River Jordan headwaters—the primary northern tributaries of the Jordan River—away from the Sea of Galilee into the Yarmouk River in Jordan, cutting Israel’s water intake by 35%."
+            },
+            {
+              "term": "35%",
+              "clue": "Engineers in Syria, Lebanon, and Jordan began constructing vast channels and canals to divert the River Jordan headwaters—the primary northern tributaries of the Jordan River—away from the Sea of Galilee into the Yarmouk River in Jordan, cutting Israel’s water intake by 35%."
+            }
+          ],
+          "model_sentence": "Arab states attempted the <strong>Headwaters Diversion Plan</strong> to divert the vital <strong>River Jordan headwaters</strong>, aiming to deprive Israel of roughly <strong>35%</strong> of its freshwater inflow.",
+          "title": "The Dispute Over the River Jordan Waterways",
+          "dates": "1964–1965"
+        },
+        {
+          "step": 3,
+          "date": "1966",
+          "heading": "Syrian Support for Fatah Border Raids",
+          "focus_clue": "Why did Syria sponsor Fatah guerrilla raids across the border?",
+          "words": [
+            {
+              "term": "Neo-Ba'athist",
+              "clue": "In February 1966, a radical left-wing military coup within Syria brought the militant Neo-Ba'athist faction to power in Damascus, led by Salah Jadid and Defence Minister Hafez al-Assad."
+            },
+            {
+              "term": "Hafez al-Assad",
+              "clue": "In February 1966, a radical left-wing military coup within Syria brought the militant Neo-Ba'athist faction to power in Damascus, led by Salah Jadid and Defence Minister Hafez al-Assad."
+            },
+            {
+              "term": "Fatah",
+              "clue": "The new regime openly embraced a doctrine of \"popular liberation war,\" establishing Damascus as the operational headquarters and training ground for Yasser Arafat's Fatah guerrillas."
+            }
+          ],
+          "model_sentence": "Under a radical <strong>Neo-Ba'athist</strong> government including Defence Minister <strong>Hafez al-Assad</strong>, Syria sponsored militant border raids across the Golan Heights conducted by <strong>Fatah</strong>.",
+          "title": "Syrian Support for Fatah Border Raids",
+          "dates": "1966"
+        },
+        {
+          "step": 4,
+          "date": "13 November 1966",
+          "heading": "The Israeli Raid on Samu",
+          "focus_clue": "What were the consequences of the Israeli reprisal raid on Samu?",
+          "words": [
+            {
+              "term": "13 November 1966",
+              "clue": "The date Israeli forces conducted a major armored cross-border reprisal against the Jordanian West Bank."
+            },
+            {
+              "term": "Operation Shredder",
+              "clue": "The codename for the massive IDF armored raid that destroyed 125 buildings in the West Bank town of As-Samu."
+            },
+            {
+              "term": "As-Samu",
+              "clue": "The Jordanian village attacked in retaliation for a Fatah landmine, leaving fifteen Jordanian soldiers dead and shattering Israeli-Jordanian relations."
+            }
+          ],
+          "model_sentence": "On <strong>13 November 1966</strong>, the Israeli military initiated <strong>Operation Shredder</strong>, launching an armoured raid against <strong>As-Samu</strong> that destabilised King Hussein's regime.",
+          "key_terms": [
+            {
+              "term": "13 November 1966",
+              "clue": "The date Israeli forces conducted a major armored cross-border reprisal against the Jordanian West Bank."
+            },
+            {
+              "term": "Operation Shredder",
+              "clue": "The codename for the massive IDF armored raid that destroyed 125 buildings in the West Bank town of As-Samu."
+            },
+            {
+              "term": "As-Samu",
+              "clue": "The Jordanian village attacked in retaliation for a Fatah landmine, leaving fifteen Jordanian soldiers dead and shattering Israeli-Jordanian relations."
+            }
+          ],
+          "title": "The Israeli Raid on Samu",
+          "dates": "13 November 1966"
+        },
+        {
+          "step": 5,
+          "date": "7 April 1967",
+          "heading": "The Aerial Battle of 7 April 1967",
+          "focus_clue": "How did the 7 April dogfight escalate tensions toward all-out war?",
+          "words": [
+            {
+              "term": "7 April 1967",
+              "clue": "The day an intense aerial clash erupted along the Syrian-Israeli border over tractor plowing rights in the demilitarized zone."
+            },
+            {
+              "term": "Mirage III",
+              "clue": "French-built supersonic jet fighters flown by the Israeli Air Force that dominated Syrian dogfights over the Golan."
+            },
+            {
+              "term": "MiG-21",
+              "clue": "Soviet-supplied jet fighters flown by the Syrian Air Force, six of which were shot down during the clash."
+            }
+          ],
+          "model_sentence": "In a major air engagement on <strong>7 April 1967</strong>, Israeli pilots flying the <strong>Mirage III</strong> shot down six Syrian <strong>MiG-21</strong> fighters and buzzed Damascus.",
+          "key_terms": [
+            {
+              "term": "7 April 1967",
+              "clue": "The day an intense aerial clash erupted along the Syrian-Israeli border over tractor plowing rights in the demilitarized zone."
+            },
+            {
+              "term": "Mirage III",
+              "clue": "French-built supersonic jet fighters flown by the Israeli Air Force that dominated Syrian dogfights over the Golan."
+            },
+            {
+              "term": "MiG-21",
+              "clue": "Soviet-supplied jet fighters flown by the Syrian Air Force, six of which were shot down during the clash."
+            }
+          ],
+          "title": "The Aerial Battle of 7 April 1967",
+          "dates": "7 April 1967"
+        }
+      ]
     },
     {
       "id": "lesson_5",
-      "alias_ids": ["lesson_7", "lesson_2_2"],
+      "alias_ids": [
+        "lesson_7",
+        "lesson_2_2"
+      ],
       "specification_anchor": "The escalating conflict, 1956–73: the course of the Six-Day War (June 1967); preemptive airstrikes destroying Egyptian airfields, swift Israeli victories across Sinai, the West Bank, East Jerusalem, and the Golan Heights.",
       "key_individual": {
         "anchor_act": 2,
@@ -7657,11 +8301,159 @@ const cme_new_data = {
       ],
       "extra_videos": [],
       "card_image": "/images/cme_six_day_war_airfield_1967.jpg",
-      "card_position": "center 30%"
+      "card_position": "center 30%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "13–15 May 1967",
+          "heading": "Soviet False Reports & Egyptian Mobilisation",
+          "focus_clue": "How did Soviet false warnings trigger Egyptian troop mobilisation in Sinai?",
+          "words": [
+            {
+              "term": "13 May 1967",
+              "clue": "The day the Soviet Union transmitted false intelligence reports to Cairo claiming Israel was massing twelve brigades on the Syrian border."
+            },
+            {
+              "term": "ten to twelve combat brigades",
+              "clue": "The phantom Israeli force that Soviet intelligence falsely claimed was preparing an imminent invasion of Damascus."
+            },
+            {
+              "term": "14–15 May",
+              "clue": "The dates Egyptian troops staged public military parades through Cairo before deploying into the Sinai Peninsula."
+            }
+          ],
+          "model_sentence": "Prompted by false Soviet intelligence on <strong>13 May 1967</strong> alleging an attack by <strong>ten to twelve combat brigades</strong>, Egyptian forces marched into the Sinai on <strong>14–15 May</strong>.",
+          "key_terms": [
+            {
+              "term": "13 May 1967",
+              "clue": "The day the Soviet Union transmitted false intelligence reports to Cairo claiming Israel was massing twelve brigades on the Syrian border."
+            },
+            {
+              "term": "ten to twelve combat brigades",
+              "clue": "The phantom Israeli force that Soviet intelligence falsely claimed was preparing an imminent invasion of Damascus."
+            },
+            {
+              "term": "14–15 May",
+              "clue": "The dates Egyptian troops staged public military parades through Cairo before deploying into the Sinai Peninsula."
+            }
+          ],
+          "title": "Soviet False Reports & Egyptian Mobilisation",
+          "dates": "13–15 May 1967"
+        },
+        {
+          "step": 2,
+          "date": "16–23 May 1967",
+          "heading": "UN Peacekeepers Expelled & Straits of Tiran Closed",
+          "focus_clue": "Why was closing the Straits of Tiran treated by Israel as a casus belli?",
+          "words": [
+            {
+              "term": "16 May 1967",
+              "clue": "The date President Nasser formally demanded the immediate withdrawal of UN peacekeepers from the Sinai border."
+            },
+            {
+              "term": "United Nations Emergency Force (UNEF)",
+              "clue": "The international peacekeeping detachment stationed along the Egyptian-Israeli border since the 1956 Suez Crisis."
+            },
+            {
+              "term": "22–23 May",
+              "clue": "The dates Nasser announced the total closure of the Straits of Tiran, cutting off Israel's southern oil port of Eilat."
+            }
+          ],
+          "model_sentence": "After Nasser expelled the <strong>United Nations Emergency Force (UNEF)</strong> on <strong>16 May 1967</strong>, he closed the Straits of Tiran on <strong>22–23 May</strong>, making war all but inevitable.",
+          "key_terms": [
+            {
+              "term": "16 May 1967",
+              "clue": "The date President Nasser formally demanded the immediate withdrawal of UN peacekeepers from the Sinai border."
+            },
+            {
+              "term": "United Nations Emergency Force (UNEF)",
+              "clue": "The international peacekeeping detachment stationed along the Egyptian-Israeli border since the 1956 Suez Crisis."
+            },
+            {
+              "term": "22–23 May",
+              "clue": "The dates Nasser announced the total closure of the Straits of Tiran, cutting off Israel's southern oil port of Eilat."
+            }
+          ],
+          "title": "UN Peacekeepers Expelled & Straits of Tiran Closed",
+          "dates": "16–23 May 1967"
+        },
+        {
+          "step": 3,
+          "date": "30 May 1967",
+          "heading": "The Arab Defence Pact (Israel Encircled)",
+          "focus_clue": "How did the Egyptian-Jordanian Defence Pact encircle Israel on three fronts?",
+          "words": [
+            {
+              "term": "30 May 1967",
+              "clue": "On 30 May 1967, in a dramatic reconciliation, Jordan’s King Hussein flew to Cairo and signed a mutual Joint Defence Pact with his bitter rival Nasser, placing the Royal Jordanian Army under Egyptian operational command."
+            },
+            {
+              "term": "King Hussein",
+              "clue": "On 30 May 1967, in a dramatic reconciliation, Jordan’s King Hussein flew to Cairo and signed a mutual Joint Defence Pact with his bitter rival Nasser, placing the Royal Jordanian Army under Egyptian operational command."
+            },
+            {
+              "term": "Joint Defence Pact",
+              "clue": "On 30 May 1967, in a dramatic reconciliation, Jordan’s King Hussein flew to Cairo and signed a mutual Joint Defence Pact with his bitter rival Nasser, placing the Royal Jordanian Army under Egyptian operational command."
+            }
+          ],
+          "model_sentence": "On <strong>30 May 1967</strong>, in a dramatic reconciliation, Jordan’s <strong>King Hussein</strong> flew to Cairo and signed a mutual <strong>Joint Defence Pact</strong> with his bitter rival Nasser, placing the Royal Jordanian Army under Egyptian operational command.",
+          "title": "The Arab Defence Pact (Israel Encircled)",
+          "dates": "30 May 1967"
+        },
+        {
+          "step": 4,
+          "date": "5 June 1967",
+          "heading": "The Pre-Emptive Air Strike",
+          "focus_clue": "How did the pre-emptive air strike destroy Arab air power on the first morning?",
+          "words": [
+            {
+              "term": "5 June 1967",
+              "clue": "At 07:45 on Monday, 5 June 1967, the Israeli Air Force launched the pre-emptive air strike (Mivtza Moked), masterminded by IAF Commander Mordechai Hod."
+            },
+            {
+              "term": "the pre-emptive air strike",
+              "clue": "At 07:45 on Monday, 5 June 1967, the Israeli Air Force launched the pre-emptive air strike (Mivtza Moked), masterminded by IAF Commander Mordechai Hod."
+            },
+            {
+              "term": "Mivtza Moked",
+              "clue": "At 07:45 on Monday, 5 June 1967, the Israeli Air Force launched the pre-emptive air strike (Mivtza Moked), masterminded by IAF Commander Mordechai Hod."
+            }
+          ],
+          "model_sentence": "At 07:45 on Monday, <strong>5 June 1967</strong>, the Israeli Air Force launched <strong>the pre-emptive air strike</strong> (<strong>Mivtza Moked</strong>), masterminded by IAF Commander Mordechai Hod.",
+          "title": "The Pre-Emptive Air Strike",
+          "dates": "5 June 1967"
+        },
+        {
+          "step": 5,
+          "date": "5–10 June 1967",
+          "heading": "The Six-Day Victory & The Conquered Territories",
+          "focus_clue": "What territories did Israel conquer during the six days of fighting?",
+          "words": [
+            {
+              "term": "Israel Tal",
+              "clue": "With air control secured, Israeli armoured divisions commanded by Generals Israel Tal, Avraham Yoffe, and Ariel Sharon sliced through Egyptian defensive lines in Sinai, routing seven Egyptian divisions and trapping retreating armour at the Mitla Pass before reaching the Suez Canal in four days."
+            },
+            {
+              "term": "Avraham Yoffe",
+              "clue": "With air control secured, Israeli armoured divisions commanded by Generals Israel Tal, Avraham Yoffe, and Ariel Sharon sliced through Egyptian defensive lines in Sinai, routing seven Egyptian divisions and trapping retreating armour at the Mitla Pass before reaching the Suez Canal in four days."
+            },
+            {
+              "term": "Ariel Sharon",
+              "clue": "With air control secured, Israeli armoured divisions commanded by Generals Israel Tal, Avraham Yoffe, and Ariel Sharon sliced through Egyptian defensive lines in Sinai, routing seven Egyptian divisions and trapping retreating armour at the Mitla Pass before reaching the Suez Canal in four days."
+            }
+          ],
+          "model_sentence": "Led by armoured division commanders <strong>Israel Tal</strong>, <strong>Avraham Yoffe</strong>, and <strong>Ariel Sharon</strong>, Israeli forces swiftly captured the Sinai Peninsula during the Six-Day War.",
+          "title": "The Six-Day Victory & The Conquered Territories",
+          "dates": "5–10 June 1967"
+        }
+      ]
     },
     {
       "id": "lesson_6",
-      "alias_ids": ["lesson_8", "lesson_2_3"],
+      "alias_ids": [
+        "lesson_8",
+        "lesson_2_3"
+      ],
       "specification_anchor": "The escalating conflict, 1956–73: consequences of the 1967 War; creation of the occupied territories, Israeli settlements, Khartoum Resolution ('Three Noes'), UN Security Council Resolution 242 ('land for peace'), and the refugee crisis.",
       "key_individual": {
         "anchor_act": 3,
@@ -8771,11 +9563,145 @@ const cme_new_data = {
       ],
       "extra_videos": [],
       "card_image": "/units/cme_new/assets/conquered_territories_1967.png",
-      "card_position": "center 30%"
+      "card_position": "center 30%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "7 June 1967",
+          "heading": "The Capture of East Jerusalem",
+          "focus_clue": "Why did the capture and annexation of East Jerusalem cause global outcry?",
+          "words": [
+            {
+              "term": "7 June 1967",
+              "clue": "The momentous day Israeli paratroopers breached the Lions' Gate to capture the Old City of Jerusalem."
+            },
+            {
+              "term": "Motta Gur",
+              "clue": "Brigade commander of the 55th Paratroopers who broadcast the famous radio message: 'The Temple Mount is in our hands!'"
+            },
+            {
+              "term": "Western Wall",
+              "clue": "The sacred remnant of the Second Temple where emotional Israeli soldiers gathered to pray for the first time in nineteen years."
+            }
+          ],
+          "model_sentence": "On <strong>7 June 1967</strong>, paratrooper commander <strong>Motta Gur</strong> captured the Old City of Jerusalem, enabling Jewish worshippers to return to the <strong>Western Wall</strong>.",
+          "key_terms": [
+            {
+              "term": "7 June 1967",
+              "clue": "The momentous day Israeli paratroopers breached the Lions' Gate to capture the Old City of Jerusalem."
+            },
+            {
+              "term": "Motta Gur",
+              "clue": "Brigade commander of the 55th Paratroopers who broadcast the famous radio message: 'The Temple Mount is in our hands!'"
+            },
+            {
+              "term": "Western Wall",
+              "clue": "The sacred remnant of the Second Temple where emotional Israeli soldiers gathered to pray for the first time in nineteen years."
+            }
+          ],
+          "title": "The Capture of East Jerusalem",
+          "dates": "7 June 1967"
+        },
+        {
+          "step": 2,
+          "date": "September 1967",
+          "heading": "The Khartoum Summit & The \"Three No’s\"",
+          "focus_clue": "Why did the Arab League issue the \"Three Noes\" at the Khartoum Summit?",
+          "words": [
+            {
+              "term": "Khartoum",
+              "clue": "Stunned by their catastrophic defeat, eight Arab heads of state convened in the Sudanese capital of Khartoum in late August 1967 to forge a collective post-war strategy."
+            },
+            {
+              "term": "1 September 1967",
+              "clue": "On 1 September 1967, the summit issued the famous Khartoum Resolution, defined by the uncompromising \"Three Noes\": No peace with Israel, no recognition of Israel, no negotiations with Israel."
+            },
+            {
+              "term": "Khartoum Resolution",
+              "clue": "On 1 September 1967, the summit issued the famous Khartoum Resolution, defined by the uncompromising \"Three Noes\": No peace with Israel, no recognition of Israel, no negotiations with Israel."
+            }
+          ],
+          "model_sentence": "On <strong>1 September 1967</strong>, the summit issued the famous <strong>Khartoum</strong> Resolution, defined by the uncompromising \"Three Noes\": No peace with Israel, no recognition of Israel, no negotiations with Israel.",
+          "title": "The Khartoum Summit & The \"Three No’s\"",
+          "dates": "September 1967"
+        },
+        {
+          "step": 3,
+          "date": "22 November 1967",
+          "heading": "UN Resolution 242: \"Land for Peace\"",
+          "focus_clue": "How did UN Resolution 242 establish the principle of \"Land for Peace\"?",
+          "words": [
+            {
+              "term": "Resolution 242",
+              "clue": "After months of intense diplomatic wrangling, the United Nations Security Council unanimously adopted Resolution 242 on 22 November 1967."
+            },
+            {
+              "term": "22 November 1967",
+              "clue": "After months of intense diplomatic wrangling, the United Nations Security Council unanimously adopted Resolution 242 on 22 November 1967."
+            },
+            {
+              "term": "Land for Peace",
+              "clue": "Drafted by British Ambassador Lord Caradon, the resolution established the foundational principle of Middle Eastern diplomacy: \"Land for Peace.\" It called for the withdrawal of Israeli armed forces from \"territories occupied in the recent conflict\" in exchange for the termination of all claims of belligerency and respect for the sovereignty of every state in the region."
+            }
+          ],
+          "model_sentence": "Adopted in November 1967, <strong>Resolution 242</strong> established the fundamental 'land for peace' principle, linking Israeli territorial withdrawal to Arab recognition of <strong>22 November 1967</strong> and an end to <strong>Land for Peace</strong>.",
+          "title": "UN Resolution 242: \"Land for Peace\"",
+          "dates": "22 November 1967"
+        },
+        {
+          "step": 4,
+          "date": "1968–1969",
+          "heading": "The Bar-Lev Line on the Suez Canal",
+          "focus_clue": "Why did Israel build the fortified Bar-Lev Line along the Suez Canal?",
+          "words": [
+            {
+              "term": "Bar-Lev Line",
+              "clue": "Determined to hold the newly conquered Sinai Peninsula as a strategic defensive shield, the IDF constructed a massive chain of fortifications along the eastern bank of the Suez Canal: the Bar-Lev Line, named after Chief of Staff Haim Bar-Lev."
+            },
+            {
+              "term": "Haim Bar-Lev",
+              "clue": "Determined to hold the newly conquered Sinai Peninsula as a strategic defensive shield, the IDF constructed a massive chain of fortifications along the eastern bank of the Suez Canal: the Bar-Lev Line, named after Chief of Staff Haim Bar-Lev."
+            },
+            {
+              "term": "20-metre high artificial sand rampart",
+              "clue": "Costing $300 million, the defensive system consisted of a gigantic 20-metre high artificial sand rampart sloping into the canal at a 45-degree angle, backed by 35 heavily reinforced concrete bunker complexes (maozim)."
+            }
+          ],
+          "model_sentence": "Constructed along the Suez Canal, the fortified <strong>Bar-Lev Line</strong> named after Chief of Staff <strong>Haim Bar-Lev</strong> featured a massive <strong>20-metre high artificial sand rampart</strong>.",
+          "title": "The Bar-Lev Line on the Suez Canal",
+          "dates": "1968–1969"
+        },
+        {
+          "step": 5,
+          "date": "1968–1973",
+          "heading": "The Beginning of Israeli Settlements",
+          "focus_clue": "How did permanent Israeli settlements transform the occupied territories?",
+          "words": [
+            {
+              "term": "Yigal Allon",
+              "clue": "In the immediate aftermath of the Six-Day War, Israeli Deputy Prime Minister Yigal Allon presented a strategic blueprint known as the Allon Plan."
+            },
+            {
+              "term": "Allon Plan",
+              "clue": "In the immediate aftermath of the Six-Day War, Israeli Deputy Prime Minister Yigal Allon presented a strategic blueprint known as the Allon Plan."
+            },
+            {
+              "term": "Nahal",
+              "clue": "Under the Allon framework, the Israeli government established strategic agricultural outposts (Nahal) along the Jordan Valley and Golan Heights."
+            }
+          ],
+          "model_sentence": "Formulated by minister <strong>Yigal Allon</strong>, the strategic <strong>Allon Plan</strong> proposed establishing military agricultural settlements known as <strong>Nahal</strong> outposts along the Jordan Valley.",
+          "title": "The Beginning of Israeli Settlements",
+          "dates": "1968–1973"
+        }
+      ]
     },
     {
       "id": "lesson_7",
-      "alias_ids": ["lesson_9", "lesson_2_4"],
+      "alias_ids": [
+        "lesson_9",
+        "lesson_2_4"
+      ],
       "specification_anchor": "The escalating conflict, 1956–73: Palestinian nationalism and resistance; the emergence of the PLO and Yasser Arafat, Battle of Karameh (1968), guerrilla tactics, aircraft hijackings, Black September in Jordan (1970), and the 1972 Munich Olympic massacre.",
       "key_individual": {
         "anchor_act": 1,
@@ -9899,11 +10825,159 @@ const cme_new_data = {
       ],
       "extra_videos": [],
       "card_image": "/images/cme_munich_1972_balcony.jpg",
-      "card_position": "center 25%"
+      "card_position": "center 25%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "21 March 1968",
+          "heading": "The Battle of Karameh",
+          "focus_clue": "How did the Battle of Karameh establish Yasser Arafat as leader of the PLO?",
+          "words": [
+            {
+              "term": "21 March 1968",
+              "clue": "The date Israeli forces crossed the Jordan River to attack the Palestinian guerrilla stronghold at Karameh."
+            },
+            {
+              "term": "Karameh",
+              "clue": "The town in Jordan where Palestinian fighters offered fierce resistance to an IDF armored assault, suffering heavy casualties."
+            },
+            {
+              "term": "Yasser Arafat",
+              "clue": "The charismatic Fatah leader who transformed the Battle of Karameh into a celebrated moral victory, catapulting himself to PLO leadership."
+            }
+          ],
+          "model_sentence": "Fought on <strong>21 March 1968</strong>, the fierce resistance of Palestinian guerrillas at <strong>Karameh</strong> established <strong>Yasser Arafat</strong> as the undisputed leader of the liberation movement.",
+          "key_terms": [
+            {
+              "term": "21 March 1968",
+              "clue": "The date Israeli forces crossed the Jordan River to attack the Palestinian guerrilla stronghold at Karameh."
+            },
+            {
+              "term": "Karameh",
+              "clue": "The town in Jordan where Palestinian fighters offered fierce resistance to an IDF armored assault, suffering heavy casualties."
+            },
+            {
+              "term": "Yasser Arafat",
+              "clue": "The charismatic Fatah leader who transformed the Battle of Karameh into a celebrated moral victory, catapulting himself to PLO leadership."
+            }
+          ],
+          "title": "The Battle of Karameh",
+          "dates": "21 March 1968"
+        },
+        {
+          "step": 2,
+          "date": "September 1970",
+          "heading": "The Dawson’s Field Airline Hijackings",
+          "focus_clue": "Why did the PFLP hijack Western airliners to Dawson’s Field in 1970?",
+          "words": [
+            {
+              "term": "George Habash's Popular Front for the Liberation of Palestine",
+              "clue": "Frustrated by conventional military limits, radical Marxist factions of the PLO, notably George Habash's Popular Front for the Liberation of Palestine (PFLP), adopted international aircraft hijackings to thrust the Palestinian cause onto world television screens."
+            },
+            {
+              "term": "PFLP",
+              "clue": "Frustrated by conventional military limits, radical Marxist factions of the PLO, notably George Habash's Popular Front for the Liberation of Palestine (PFLP), adopted international aircraft hijackings to thrust the Palestinian cause onto world television screens."
+            },
+            {
+              "term": "6 September 1970",
+              "clue": "On 6 September 1970, PFLP commandos hijacked four Western airliners in mid-flight across Europe."
+            }
+          ],
+          "model_sentence": "Masterminded by <strong>George Habash's Popular Front for the Liberation of Palestine</strong> (the <strong>PFLP</strong>), four international airliners were hijacked simultaneously on <strong>6 September 1970</strong>.",
+          "title": "The Dawson’s Field Airline Hijackings",
+          "dates": "September 1970"
+        },
+        {
+          "step": 3,
+          "date": "September 1970",
+          "heading": "Black September (Civil War in Jordan)",
+          "focus_clue": "Why did King Hussein expel the PLO during Black September in 1970?",
+          "words": [
+            {
+              "term": "state-within-a-state",
+              "clue": "By late 1970, armed PLO guerrillas operated in Jordan as an autonomous \"state-within-a-state.\" Uniformed fedayeen carried weapons openly in Amman, collected illegal taxes, set up roadblocks, and even attempted to assassinate King Hussein twice."
+            },
+            {
+              "term": "16 September 1970",
+              "clue": "On 16 September 1970, King Hussein declared martial law and ordered the Royal Jordanian Army to crush the Palestinian armed enclaves in a brutal military campaign known as Black September."
+            },
+            {
+              "term": "Black September",
+              "clue": "On 16 September 1970, King Hussein declared martial law and ordered the Royal Jordanian Army to crush the Palestinian armed enclaves in a brutal military campaign known as Black September."
+            }
+          ],
+          "model_sentence": "Fearing that Palestinian guerrillas had established an armed <strong>state-within-a-state</strong>, King Hussein ordered the military into Amman on <strong>16 September 1970</strong>, igniting the civil conflict of <strong>Black September</strong>.",
+          "title": "Black September (Civil War in Jordan)",
+          "dates": "September 1970"
+        },
+        {
+          "step": 4,
+          "date": "5–6 September 1972",
+          "heading": "The Munich Olympics Massacre",
+          "focus_clue": "What was the global impact of the Munich Olympics massacre in 1972?",
+          "words": [
+            {
+              "term": "5 September 1972",
+              "clue": "The tragic day eight Palestinian terrorists broke into the Olympic Village in Munich, West Germany."
+            },
+            {
+              "term": "Black September",
+              "clue": "The militant Palestinian faction named after the 1970 Jordanian civil war that carried out the Munich attack."
+            },
+            {
+              "term": "nine Israeli athletes and coaches hostage",
+              "clue": "The Olympic team members taken captive in their dormitories and murdered during a botched German rescue attempt at Fürstenfeldbruck."
+            }
+          ],
+          "model_sentence": "On <strong>5 September 1972</strong>, the militant faction <strong>Black September</strong> stormed the Munich Olympic Village, taking <strong>nine Israeli athletes and coaches hostage</strong>.",
+          "key_terms": [
+            {
+              "term": "5 September 1972",
+              "clue": "The tragic day eight Palestinian terrorists broke into the Olympic Village in Munich, West Germany."
+            },
+            {
+              "term": "Black September",
+              "clue": "The militant Palestinian faction named after the 1970 Jordanian civil war that carried out the Munich attack."
+            },
+            {
+              "term": "nine Israeli athletes and coaches hostage",
+              "clue": "The Olympic team members taken captive in their dormitories and murdered during a botched German rescue attempt at Fürstenfeldbruck."
+            }
+          ],
+          "title": "The Munich Olympics Massacre",
+          "dates": "5–6 September 1972"
+        },
+        {
+          "step": 5,
+          "date": "1972–1979",
+          "heading": "Israeli Retaliation (Operation Wrath of God)",
+          "focus_clue": "How did Israel retaliate through Operation Wrath of God covert strikes?",
+          "words": [
+            {
+              "term": "Golda Meir",
+              "clue": "The Munich massacre galvanized Israeli Prime Minister Golda Meir and Defence Minister Moshe Dayan to authorize a covert global assassination campaign: Operation Wrath of God (Mivtza Za'am Ha'El)."
+            },
+            {
+              "term": "Operation Wrath of God",
+              "clue": "The Munich massacre galvanized Israeli Prime Minister Golda Meir and Defence Minister Moshe Dayan to authorize a covert global assassination campaign: Operation Wrath of God (Mivtza Za'am Ha'El)."
+            },
+            {
+              "term": "Mivtza Za'am Ha'El",
+              "clue": "The Munich massacre galvanized Israeli Prime Minister Golda Meir and Defence Minister Moshe Dayan to authorize a covert global assassination campaign: Operation Wrath of God (Mivtza Za'am Ha'El)."
+            }
+          ],
+          "model_sentence": "The Munich massacre galvanized Israeli Prime Minister <strong>Golda Meir</strong> and Defence Minister Moshe Dayan to authorize a covert global assassination campaign: <strong>Operation Wrath of God</strong> (<strong>Mivtza Za'am Ha'El</strong>).",
+          "title": "Israeli Retaliation (Operation Wrath of God)",
+          "dates": "1972–1979"
+        }
+      ]
     },
     {
       "id": "lesson_8",
-      "alias_ids": ["lesson_10", "lesson_2_5"],
+      "alias_ids": [
+        "lesson_10",
+        "lesson_2_5"
+      ],
       "specification_anchor": "The escalating conflict, 1956–73: the Yom Kippur War (October 1973); War of Attrition, Egyptian surprise crossing of the Suez Canal, Syrian offensive on the Golan, Israeli counter-offensive, US/Soviet resupply, and OAPEC oil embargo.",
       "key_individual": {
         "anchor_act": 1,
@@ -11022,11 +12096,159 @@ const cme_new_data = {
       ],
       "extra_videos": [],
       "card_image": "/units/cme_new/assets/yom_kippur_crossing.png",
-      "card_position": "center 30%"
+      "card_position": "center 30%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1969–1970",
+          "heading": "The War of Attrition",
+          "focus_clue": "Why did Nasser launch the War of Attrition along the Suez Canal?",
+          "words": [
+            {
+              "term": "March 1969",
+              "clue": "In March 1969, Egyptian President Gamal Abdel Nasser officially renounced the 1967 ceasefire and launched the War of Attrition (Harb al-Istinzaf) along the Suez Canal."
+            },
+            {
+              "term": "War of Attrition",
+              "clue": "In March 1969, Egyptian President Gamal Abdel Nasser officially renounced the 1967 ceasefire and launched the War of Attrition (Harb al-Istinzaf) along the Suez Canal."
+            },
+            {
+              "term": "Harb al-Istinzaf",
+              "clue": "In March 1969, Egyptian President Gamal Abdel Nasser officially renounced the 1967 ceasefire and launched the War of Attrition (Harb al-Istinzaf) along the Suez Canal."
+            }
+          ],
+          "model_sentence": "In <strong>March 1969</strong>, Egyptian President Gamal Abdel Nasser officially renounced the 1967 ceasefire and launched the <strong>War of Attrition</strong> (<strong>Harb al-Istinzaf</strong>) along the Suez Canal.",
+          "title": "The War of Attrition",
+          "dates": "1969–1970"
+        },
+        {
+          "step": 2,
+          "date": "1971–1972",
+          "heading": "Sadat Expels Soviet Advisers",
+          "focus_clue": "Why did Anwar Sadat expel 15,000 Soviet advisers from Egypt in 1972?",
+          "words": [
+            {
+              "term": "Anwar Sadat",
+              "clue": "Following Nasser’s sudden death in September 1970, his successor Anwar Sadat inherited a bankrupt Egyptian economy, an exhausted population, and a frozen diplomatic landscape."
+            },
+            {
+              "term": "Henry Kissinger",
+              "clue": "In 1971, he made secret diplomatic overtures to the United States offering peace in exchange for Israeli withdrawal from Sinai, but was rebuffed by Israeli Prime Minister Golda Meir and US National Security Adviser Henry Kissinger."
+            },
+            {
+              "term": "July 1972",
+              "clue": "Frustrated by Soviet reluctance to supply long-range offensive strike aircraft and suspicious of superpower détente, Sadat stunned the world in July 1972 by abruptly expelling all 15,000 Soviet military advisers and technicians from Egypt."
+            }
+          ],
+          "model_sentence": "Pursuing independent diplomatic initiatives, President <strong>Anwar Sadat</strong> expelled 15,000 Soviet military advisers in <strong>July 1972</strong> to encourage backchannel dialogue with <strong>Henry Kissinger</strong>.",
+          "title": "Sadat Expels Soviet Advisers",
+          "dates": "1971–1972"
+        },
+        {
+          "step": 3,
+          "date": "6 October 1973",
+          "heading": "The Surprise Attack on Yom Kippur",
+          "focus_clue": "How did Egyptian and Syrian forces achieve tactical surprise on Yom Kippur?",
+          "words": [
+            {
+              "term": "6 October 1973",
+              "clue": "The holy day of Yom Kippur when Egypt and Syria launched a coordinated surprise assault across the Suez Canal and Golan Heights."
+            },
+            {
+              "term": "the surprise attack",
+              "clue": "Operation Badr, which caught Israeli intelligence off guard and breached the heavily fortified Bar-Lev Line in hours."
+            },
+            {
+              "term": "Yom Kippur",
+              "clue": "The holiest day in the Jewish calendar, when Israel was at prayer and radio broadcasting was suspended, delaying national military mobilization."
+            }
+          ],
+          "model_sentence": "Launched on <strong>6 October 1973</strong>, <strong>the surprise attack</strong> by Arab armies took full advantage of the holiday of <strong>Yom Kippur</strong> to shatter the Bar-Lev Line.",
+          "key_terms": [
+            {
+              "term": "6 October 1973",
+              "clue": "The holy day of Yom Kippur when Egypt and Syria launched a coordinated surprise assault across the Suez Canal and Golan Heights."
+            },
+            {
+              "term": "the surprise attack",
+              "clue": "Operation Badr, which caught Israeli intelligence off guard and breached the heavily fortified Bar-Lev Line in hours."
+            },
+            {
+              "term": "Yom Kippur",
+              "clue": "The holiest day in the Jewish calendar, when Israel was at prayer and radio broadcasting was suspended, delaying national military mobilization."
+            }
+          ],
+          "title": "The Surprise Attack on Yom Kippur",
+          "dates": "6 October 1973"
+        },
+        {
+          "step": 4,
+          "date": "12–16 October 1973",
+          "heading": "The US Emergency Airlift & Israeli Counter-Attack",
+          "focus_clue": "How did the US airlift enable General Sharon’s canal counter-crossing?",
+          "words": [
+            {
+              "term": "14 October",
+              "clue": "On 14 October, US President Richard Nixon ordered Operation Nickel Grass—a massive emergency military airlift flying 22,000 tons of tanks, artillery, ammunition, and electronic jamming pods directly into Israel to counter a concurrent Soviet airlift to Egypt and Syria."
+            },
+            {
+              "term": "Operation Nickel Grass",
+              "clue": "On 14 October, US President Richard Nixon ordered Operation Nickel Grass—a massive emergency military airlift flying 22,000 tons of tanks, artillery, ammunition, and electronic jamming pods directly into Israel to counter a concurrent Soviet airlift to Egypt and Syria."
+            },
+            {
+              "term": "15–16 October",
+              "clue": "On 15–16 October, General Ariel Sharon exploited a gap between the Egyptian Second and Third Armies at Deversoir."
+            }
+          ],
+          "model_sentence": "Following the massive tank battle on <strong>14 October</strong>, US President Nixon ordered <strong>Operation Nickel Grass</strong> to deliver emergency military supplies, enabling the Israeli canal crossing on <strong>15–16 October</strong>.",
+          "title": "The US Emergency Airlift & Israeli Counter-Attack",
+          "dates": "12–16 October 1973"
+        },
+        {
+          "step": 5,
+          "date": "October 1973",
+          "heading": "The Arab Oil Embargo & Ceasefire",
+          "focus_clue": "How did the Arab OPEC oil embargo transform global superpower diplomacy?",
+          "words": [
+            {
+              "term": "17 October 1973",
+              "clue": "The date Arab oil ministers in Kuwait voted to implement production cuts and an embargo against Western nations supporting Israel."
+            },
+            {
+              "term": "$12 per barrel",
+              "clue": "The quadruple increase in world petroleum prices that plunged Western economies into unprecedented stagflation and energy panic."
+            },
+            {
+              "term": "Resolution 338",
+              "clue": "The United Nations Security Council resolution adopted on 22 October 1973 calling for an immediate ceasefire and implementation of Resolution 242."
+            }
+          ],
+          "model_sentence": "Announced on <strong>17 October 1973</strong>, the Arab oil embargo drove crude to <strong>$12 per barrel</strong> while world powers negotiated UN <strong>Resolution 338</strong>.",
+          "key_terms": [
+            {
+              "term": "17 October 1973",
+              "clue": "The date Arab oil ministers in Kuwait voted to implement production cuts and an embargo against Western nations supporting Israel."
+            },
+            {
+              "term": "$12 per barrel",
+              "clue": "The quadruple increase in world petroleum prices that plunged Western economies into unprecedented stagflation and energy panic."
+            },
+            {
+              "term": "Resolution 338",
+              "clue": "The United Nations Security Council resolution adopted on 22 October 1973 calling for an immediate ceasefire and implementation of Resolution 242."
+            }
+          ],
+          "title": "The Arab Oil Embargo & Ceasefire",
+          "dates": "October 1973"
+        }
+      ]
     },
     {
       "id": "lesson_9",
-      "alias_ids": ["lesson_11", "lesson_3_1"],
+      "alias_ids": [
+        "lesson_11",
+        "lesson_3_1"
+      ],
       "specification_anchor": "Attempts at peace, 1974–95: search for peace after 1973; Henry Kissinger's shuttle diplomacy, Anwar Sadat's historic visit to Jerusalem (1977), Camp David Accords (1978), and Washington Egypt-Israel Peace Treaty (1979).",
       "key_individual": {
         "anchor_act": 2,
@@ -12544,11 +13766,145 @@ const cme_new_data = {
         }
       ],
       "card_image": "/images/cme_camp_david_1978.jpg",
-      "card_position": "center 20%"
+      "card_position": "center 20%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1974–1975",
+          "heading": "Kissinger’s Shuttle Diplomacy",
+          "focus_clue": "How did Kissinger’s step-by-step shuttle diplomacy separate the frontline armies?",
+          "words": [
+            {
+              "term": "Henry Kissinger",
+              "clue": "To prevent renewed hostilities and exclude the Soviet Union from regional diplomacy, US Secretary of State Henry Kissinger launched an unprecedented campaign of \"Shuttle Diplomacy.\" Flying tirelessly between Cairo, Damascus, and Jerusalem aboard his Boeing 707, Kissinger pursued an incremental, step-by-step negotiating strategy rather than attempting an impossible comprehensive peace conference."
+            },
+            {
+              "term": "Shuttle Diplomacy",
+              "clue": "To prevent renewed hostilities and exclude the Soviet Union from regional diplomacy, US Secretary of State Henry Kissinger launched an unprecedented campaign of \"Shuttle Diplomacy.\" Flying tirelessly between Cairo, Damascus, and Jerusalem aboard his Boeing 707, Kissinger pursued an incremental, step-by-step negotiating strategy rather than attempting an impossible comprehensive peace conference."
+            },
+            {
+              "term": "Sinai I Disengagement Agreement",
+              "clue": "In January 1974, Kissinger brokered the Sinai I Disengagement Agreement, which separated Egyptian and Israeli forces, allowed the trapped Egyptian Third Army to be resupplied, and saw Israel withdraw 20 kilometres from the Suez Canal, allowing Egypt to clear and reopen the canal in June 1975."
+            }
+          ],
+          "model_sentence": "US Secretary of State <strong>Henry Kissinger</strong> conducted intensive <strong>Shuttle Diplomacy</strong> between Cairo and Jerusalem, culminating in the historic 1974 <strong>Sinai I Disengagement Agreement</strong>.",
+          "title": "Kissinger’s Shuttle Diplomacy",
+          "dates": "1974–1975"
+        },
+        {
+          "step": 2,
+          "date": "November 1977",
+          "heading": "Sadat’s Historic Visit to Jerusalem",
+          "focus_clue": "Why was Sadat’s speech to the Israeli Knesset such a profound psychological breakthrough?",
+          "words": [
+            {
+              "term": "May 1977",
+              "clue": "In May 1977, Israeli politics experienced an earthquake when the right-wing Likud party won a stunning general election, ending 29 years of uninterrupted Labour rule."
+            },
+            {
+              "term": "Likud party",
+              "clue": "In May 1977, Israeli politics experienced an earthquake when the right-wing Likud party won a stunning general election, ending 29 years of uninterrupted Labour rule."
+            },
+            {
+              "term": "Menachem Begin",
+              "clue": "Prime Minister Menachem Begin, a former Irgun underground leader, believed passionately in the historic \"Greater Land of Israel\" (Eretz Yisrael) and seemed an impossible partner for Arab peace."
+            }
+          ],
+          "model_sentence": "Following the stunning <strong>May 1977</strong> election victory of the right-wing <strong>Likud party</strong>, Prime Minister <strong>Menachem Begin</strong> welcomed Anwar Sadat to Jerusalem for historic peace negotiations.",
+          "title": "Sadat’s Historic Visit to Jerusalem",
+          "dates": "November 1977"
+        },
+        {
+          "step": 3,
+          "date": "September 1978",
+          "heading": "The Camp David Summit",
+          "focus_clue": "How did Jimmy Carter prevent the 13-day Camp David summit from collapsing?",
+          "words": [
+            {
+              "term": "Jimmy Carter",
+              "clue": "When direct bilateral negotiations between Begin and Sadat deadlocked over Israeli settlements in Sinai and Palestinian autonomy, US President Jimmy Carter took the immense political gamble of inviting both leaders to the secluded presidential retreat at Camp David, Maryland."
+            },
+            {
+              "term": "Camp David",
+              "clue": "When direct bilateral negotiations between Begin and Sadat deadlocked over Israeli settlements in Sinai and Palestinian autonomy, US President Jimmy Carter took the immense political gamble of inviting both leaders to the secluded presidential retreat at Camp David, Maryland."
+            },
+            {
+              "term": "5 to 17 September 1978",
+              "clue": "For thirteen agonizing days from 5 to 17 September 1978, Carter engaged in marathon mediation, shuttling between Begin’s and Sadat’s cabins when the two men refused to speak to each other after day three."
+            }
+          ],
+          "model_sentence": "Brokered by US President Jimmy Carter, Egyptian President <strong>Jimmy Carter</strong> and Israeli Prime Minister <strong>Camp David</strong> signed the historic <strong>5 to 17 September 1978</strong>, normalizing diplomatic relations.",
+          "title": "The Camp David Summit",
+          "dates": "September 1978"
+        },
+        {
+          "step": 4,
+          "date": "26 March 1979",
+          "heading": "The Egypt-Israel Peace Treaty",
+          "focus_clue": "What territorial concessions did Israel make under the 1979 Peace Treaty?",
+          "words": [
+            {
+              "term": "26 March 1979",
+              "clue": "On 26 March 1979, on the North Lawn of the White House, Menachem Begin and Anwar Sadat signed the historic Egypt-Israel Peace Treaty, witnessed by Jimmy Carter."
+            },
+            {
+              "term": "Egypt-Israel Peace Treaty",
+              "clue": "On 26 March 1979, on the North Lawn of the White House, Menachem Begin and Anwar Sadat signed the historic Egypt-Israel Peace Treaty, witnessed by Jimmy Carter."
+            },
+            {
+              "term": "Egypt & Israel (Hosted by USA)",
+              "clue": "On 26 March 1979, on the North Lawn of the White House, Menachem Begin and Anwar Sadat signed the historic Egypt-Israel Peace Treaty, witnessed by Jimmy Carter."
+            }
+          ],
+          "model_sentence": "Introduced in <strong>26 March 1979</strong>, the <strong>Egypt-Israel Peace Treaty</strong> transformed government policy, establishing lasting consequences through <strong>Egypt & Israel (Hosted by USA)</strong>.",
+          "title": "The Egypt-Israel Peace Treaty",
+          "dates": "26 March 1979"
+        },
+        {
+          "step": 5,
+          "date": "1979–1981",
+          "heading": "Arab Boycott & The Assassination of Sadat",
+          "focus_clue": "Why did Egyptian Islamic Jihad assassinate Anwar Sadat in October 1981?",
+          "words": [
+            {
+              "term": "6 October 1981",
+              "clue": "The day President Anwar Sadat was assassinated during an annual military victory parade in Cairo."
+            },
+            {
+              "term": "Khalid Islambouli",
+              "clue": "The army lieutenant and Egyptian Islamic Jihad conspirator who jumped from an artillery truck to fire directly into the presidential reviewing stand."
+            },
+            {
+              "term": "Anwar Sadat was assassinated",
+              "clue": "The tragic death of the Egyptian leader, gunned down by religious extremists enraged by his peace treaty with Israel."
+            }
+          ],
+          "model_sentence": "During a military parade on <strong>6 October 1981</strong>, army conspirator <strong>Khalid Islambouli</strong> led the attack where President <strong>Anwar Sadat was assassinated</strong>.",
+          "key_terms": [
+            {
+              "term": "6 October 1981",
+              "clue": "The day President Anwar Sadat was assassinated during an annual military victory parade in Cairo."
+            },
+            {
+              "term": "Khalid Islambouli",
+              "clue": "The army lieutenant and Egyptian Islamic Jihad conspirator who jumped from an artillery truck to fire directly into the presidential reviewing stand."
+            },
+            {
+              "term": "Anwar Sadat was assassinated",
+              "clue": "The tragic death of the Egyptian leader, gunned down by religious extremists enraged by his peace treaty with Israel."
+            }
+          ],
+          "title": "Arab Boycott & The Assassination of Sadat",
+          "dates": "1979–1981"
+        }
+      ]
     },
     {
       "id": "lesson_10",
-      "alias_ids": ["lesson_12", "lesson_3_2"],
+      "alias_ids": [
+        "lesson_12",
+        "lesson_3_2"
+      ],
       "specification_anchor": "Attempts at peace, 1974–95: continuing conflict and the Palestinian question; Operation Peace for Galilee and Israeli invasion of Lebanon (1982), Sabra and Shatila massacres, Kahan Commission, and First Intifada (1987–93).",
       "key_individual": {
         "anchor_act": 2,
@@ -14112,11 +15468,131 @@ const cme_new_data = {
         }
       ],
       "card_image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-      "card_position": "center 25%"
+      "card_position": "center 25%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "June 1982",
+          "heading": "The Israeli Invasion of Lebanon",
+          "focus_clue": "Why did Ariel Sharon expand the invasion far beyond the cabinet’s 40km limit?",
+          "words": [
+            {
+              "term": "Fatahland",
+              "clue": "Following their expulsion from Jordan in 1970–71, the PLO transformed southern Lebanon into an armed redoubt known as \"Fatahland,\" launching Katyusha rocket barrages and cross-border raids into northern Israel."
+            },
+            {
+              "term": "Operation Litani",
+              "clue": "In March 1978, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River before withdrawing in favor of UN peacekeepers (UNIFIL) and a proxy Christian militia, the South Lebanon Army (SLA)."
+            },
+            {
+              "term": "UNIFIL",
+              "clue": "In March 1978, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River before withdrawing in favor of UN peacekeepers (UNIFIL) and a proxy Christian militia, the South Lebanon Army (SLA)."
+            }
+          ],
+          "model_sentence": "Aiming to eradicate Palestinian guerrilla bases in southern Lebanon known as <strong>Fatahland</strong>, Israel launched <strong>Operation Litani</strong> in 1978, prompting the deployment of UN peacekeepers under <strong>UNIFIL</strong>.",
+          "title": "The Israeli Invasion of Lebanon",
+          "dates": "June 1982"
+        },
+        {
+          "step": 2,
+          "date": "September 1982",
+          "heading": "The Sabra and Shatila Massacres",
+          "focus_clue": "Why was Israel held internationally accountable for the Phalangist massacre?",
+          "words": [
+            {
+              "term": "Tunis",
+              "clue": "In August, US mediator Philip Habib negotiated the evacuation of the PLO leadership and guerrillas by sea to Tunis, leaving Palestinian civilian refugee camps in Beirut under international protection guarantees."
+            },
+            {
+              "term": "Bachir Gemayel",
+              "clue": "On 14 September, Lebanon’s newly elected Christian President, Bachir Gemayel, was assassinated."
+            },
+            {
+              "term": "Kataeb",
+              "clue": "In response, Sharon ordered the IDF into West Beirut and authorized Christian Phalangist (Kataeb) militias to enter the Sabra and Shatila refugee camps to \"mop up terrorists.\" Over three horrific days from 16 to 18 September 1982, while Israeli troops fired illumination flares over the camps and prevented exits, Phalangist militants slaughtered between 800 and 3,500 unarmed Palestinian refugees, mostly women, children, and elderly men."
+            }
+          ],
+          "model_sentence": "While the PLO evacuated to <strong>Tunis</strong>, the assassination of Christian President-elect <strong>Bachir Gemayel</strong> led Lebanese <strong>Kataeb</strong> Christian Phalangist militiamen to enter the refugee camps.",
+          "title": "The Sabra and Shatila Massacres",
+          "dates": "September 1982"
+        },
+        {
+          "step": 3,
+          "date": "December 1987",
+          "heading": "Outbreak of the First Intifada",
+          "focus_clue": "Why did a traffic collision in the Gaza Strip spark the First Intifada?",
+          "words": [
+            {
+              "term": "400,000 citizens",
+              "clue": "The Sabra and Shatila massacre provoked unprecedented moral outrage within Israel: over 400,000 citizens rallied in Tel Aviv demanding an investigation."
+            },
+            {
+              "term": "Kahan Commission of Inquiry",
+              "clue": "The official Kahan Commission of Inquiry concluded that Defence Minister Ariel Sharon bore \"personal responsibility\" for failing to foresee the bloodshed, forcing his resignation."
+            },
+            {
+              "term": "Hezbollah",
+              "clue": "Israel gradually withdrew into a narrow \"Security Zone\" in southern Lebanon, leaving behind a power vacuum quickly filled by a new, radical Iranian-backed Shiite militia: Hezbollah."
+            }
+          ],
+          "model_sentence": "Demonstrating public outrage, over <strong>400,000 citizens</strong> rallied in Tel Aviv demanding the official <strong>Kahan Commission of Inquiry</strong>, while Israeli occupation in the south catalyzed the rise of <strong>Hezbollah</strong>.",
+          "title": "Outbreak of the First Intifada",
+          "dates": "December 1987"
+        },
+        {
+          "step": 4,
+          "date": "1987–1988",
+          "heading": "The Israeli Response & The Rise of Hamas",
+          "focus_clue": "Why did the rise of Hamas threaten Yasser Arafat and the PLO’s leadership?",
+          "words": [
+            {
+              "term": "Unified National Leadership of the Uprising",
+              "clue": "The First Intifada was a genuine grassroots rebellion led not by the distant PLO in Tunis, but by local Palestinian youth—the \"children of the stones\"—and coordinated by the clandestine Unified National Leadership of the Uprising (UNLU)."
+            },
+            {
+              "term": "UNLU",
+              "clue": "The First Intifada was a genuine grassroots rebellion led not by the distant PLO in Tunis, but by local Palestinian youth—the \"children of the stones\"—and coordinated by the clandestine Unified National Leadership of the Uprising (UNLU)."
+            },
+            {
+              "term": "Yitzhak Rabin",
+              "clue": "Israeli Defence Minister Yitzhak Rabin responded with an \"Iron Fist\" policy, directing troops to use \"force, might, and beatings\" to crush dissent, but global television broadcasts of armed soldiers clubbing teenage demonstrators severely damaged Israel’s international image."
+            }
+          ],
+          "model_sentence": "Coordinating grassroots protests through the <strong>Unified National Leadership of the Uprising</strong> (the <strong>UNLU</strong>), activists resisted the 'iron fist' containment policy enforced by Defence Minister <strong>Yitzhak Rabin</strong>.",
+          "title": "The Israeli Response & The Rise of Hamas",
+          "dates": "1987–1988"
+        },
+        {
+          "step": 5,
+          "date": "December 1988",
+          "heading": "Arafat Renounces Terrorism & Accepts Resolution 242",
+          "focus_clue": "Why was Arafat’s 1988 Geneva speech a historic turning point for the PLO?",
+          "words": [
+            {
+              "term": "November 1988",
+              "clue": "In November 1988 in Algiers, the Palestinian National Council proclaimed the Declaration of Independence of the State of Palestine, implicitly accepting the 1947 UN partition and acknowledging the reality of Israel’s existence."
+            },
+            {
+              "term": "Declaration of Independence of the State of Palestine",
+              "clue": "In November 1988 in Algiers, the Palestinian National Council proclaimed the Declaration of Independence of the State of Palestine, implicitly accepting the 1947 UN partition and acknowledging the reality of Israel’s existence."
+            },
+            {
+              "term": "13 December 1988",
+              "clue": "On 13 December 1988, speaking before a special session of the UN General Assembly in Geneva (after the US denied him a visa for New York), Arafat took the decisive step: he explicitly accepted UN Resolutions 242 and 338, recognized Israel’s right to exist in peace and security, and completely renounced all forms of terrorism."
+            }
+          ],
+          "model_sentence": "Meeting in Algiers in <strong>November 1988</strong>, the PNC issued the historic <strong>Declaration of Independence of the State of Palestine</strong> before Yasser Arafat addressed the UN on <strong>13 December 1988</strong>.",
+          "title": "Arafat Renounces Terrorism & Accepts Resolution 242",
+          "dates": "December 1988"
+        }
+      ]
     },
     {
       "id": "lesson_11",
-      "alias_ids": ["lesson_13", "lesson_3_3"],
+      "alias_ids": [
+        "lesson_13",
+        "lesson_3_3"
+      ],
       "specification_anchor": "Attempts at peace, 1974–95: peace process in the 1990s; PLO renunciation of terrorism (1988), secret negotiations in Norway, Oslo I Accords (1993), handshake between Rabin and Arafat, assassination of Yitzhak Rabin (1995), and Oslo II agreement.",
       "key_individual": {
         "anchor_act": 2,
@@ -15643,7 +17119,124 @@ const cme_new_data = {
         }
       ],
       "card_image": "/images/cme_oslo_handshake_1993.jpg",
-      "card_position": "center 20%"
+      "card_position": "center 20%",
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "October 1991",
+          "heading": "The Madrid Peace Conference",
+          "focus_clue": "Why did the end of the Cold War and the Gulf War make the Madrid Conference possible?",
+          "words": [
+            {
+              "term": "collapse of the Soviet Union",
+              "clue": "The collapse of the Soviet Union (1989–1991) left the United States as the sole global superpower and cut off Syrian and Palestinian access to Soviet military and financial sponsorship."
+            },
+            {
+              "term": "Saddam Hussein",
+              "clue": "Concurrently, Yasser Arafat made the catastrophic blunder of backing Iraqi dictator Saddam Hussein during the 1990–1991 Gulf War, prompting Kuwait and Gulf monarchies to expel 300,000 Palestinian workers and cut off hundreds of millions of dollars in financial aid to the PLO."
+            },
+            {
+              "term": "1990–1991 Gulf War",
+              "clue": "Concurrently, Yasser Arafat made the catastrophic blunder of backing Iraqi dictator Saddam Hussein during the 1990–1991 Gulf War, prompting Kuwait and Gulf monarchies to expel 300,000 Palestinian workers and cut off hundreds of millions of dollars in financial aid to the PLO."
+            }
+          ],
+          "model_sentence": "Accelerated by the <strong>collapse of the Soviet Union</strong> and the defeat of <strong>Saddam Hussein</strong> in the <strong>1990–1991 Gulf War</strong>, world powers convened the October 1991 Madrid Peace Conference.",
+          "title": "The Madrid Peace Conference",
+          "dates": "October 1991"
+        },
+        {
+          "step": 2,
+          "date": "1993",
+          "heading": "The Secret Oslo Negotiations",
+          "focus_clue": "Why was strict secrecy essential for the Oslo negotiators in Norway?",
+          "words": [
+            {
+              "term": "Yitzhak Rabin’s",
+              "clue": "While the formal, public Madrid bilateral talks in Washington deadlocked over procedural formalities and Shamir's refusal to compromise, Israeli politics changed dramatically in June 1992 with the election of Yitzhak Rabin’s Labour government."
+            },
+            {
+              "term": "Yossi Beilin",
+              "clue": "In early 1993, Israeli academics Yair Hirschfeld and Ron Pundak, backed by Deputy Foreign Minister Yossi Beilin, opened a secret back-channel in Oslo, Norway, mediated by Norwegian diplomat Terje Rød-Larsen and Foreign Minister Johan Jørgen Holst."
+            },
+            {
+              "term": "Oslo",
+              "clue": "In early 1993, Israeli academics Yair Hirschfeld and Ron Pundak, backed by Deputy Foreign Minister Yossi Beilin, opened a secret back-channel in Oslo, Norway, mediated by Norwegian diplomat Terje Rød-Larsen and Foreign Minister Johan Jørgen Holst."
+            }
+          ],
+          "model_sentence": "Negotiated through secret backchannels in Norway, PLO Chairman <strong>Yitzhak Rabin’s</strong> and Israeli Prime Minister <strong>Yossi Beilin</strong> signed the <strong>Oslo</strong> on the White House lawn, agreeing to mutual recognition.",
+          "title": "The Secret Oslo Negotiations",
+          "dates": "1993"
+        },
+        {
+          "step": 3,
+          "date": "13 September 1993",
+          "heading": "The Oslo I Accord & The White House Handshake",
+          "focus_clue": "What did the \"Gaza-Jericho First\" formula provide for Palestinians?",
+          "words": [
+            {
+              "term": "13 September 1993",
+              "clue": "On 13 September 1993, on the South Lawn of the White House, President Bill Clinton hosted the historic signing of the Declaration of Principles on Interim Self-Government Arrangements (Oslo I)."
+            },
+            {
+              "term": "Bill Clinton",
+              "clue": "On 13 September 1993, on the South Lawn of the White House, President Bill Clinton hosted the historic signing of the Declaration of Principles on Interim Self-Government Arrangements (Oslo I)."
+            },
+            {
+              "term": "Declaration of Principles on Interim Self-Government Arrangements",
+              "clue": "On 13 September 1993, on the South Lawn of the White House, President Bill Clinton hosted the historic signing of the Declaration of Principles on Interim Self-Government Arrangements (Oslo I)."
+            }
+          ],
+          "model_sentence": "On <strong>13 September 1993</strong>, on the South Lawn of the White House, President <strong>Bill Clinton</strong> hosted the historic signing of the <strong>Declaration of Principles on Interim Self-Government Arrangements</strong> (Oslo I).",
+          "title": "The Oslo I Accord & The White House Handshake",
+          "dates": "13 September 1993"
+        },
+        {
+          "step": 4,
+          "date": "1994–1995",
+          "heading": "Israel-Jordan Peace Treaty & Oslo II",
+          "focus_clue": "How did the division of the West Bank into Areas A, B, and C leave territory fragmented?",
+          "words": [
+            {
+              "term": "26 October 1994",
+              "clue": "On 26 October 1994, King Hussein of Jordan and Yitzhak Rabin signed the Israel-Jordan Peace Treaty in the Arava desert, witnessed by President Clinton, making Jordan the second Arab state to normalize relations with Israel."
+            },
+            {
+              "term": "Israel-Jordan Peace Treaty",
+              "clue": "On 26 October 1994, King Hussein of Jordan and Yitzhak Rabin signed the Israel-Jordan Peace Treaty in the Arava desert, witnessed by President Clinton, making Jordan the second Arab state to normalize relations with Israel."
+            },
+            {
+              "term": "Oslo II Interim Agreement",
+              "clue": "In September 1995, Rabin and Arafat signed the Oslo II Interim Agreement in Taba, Egypt, expanding Palestinian self-rule across the major population centres of the West Bank."
+            }
+          ],
+          "model_sentence": "Negotiated through secret backchannels in Norway, PLO Chairman <strong>26 October 1994</strong> and Israeli Prime Minister <strong>Israel-Jordan Peace Treaty</strong> signed the <strong>Oslo II Interim Agreement</strong> on the White House lawn, agreeing to mutual recognition.",
+          "title": "Israel-Jordan Peace Treaty & Oslo II",
+          "dates": "1994–1995"
+        },
+        {
+          "step": 5,
+          "date": "4 November 1995",
+          "heading": "Extremist Violence & The Assassination of Rabin",
+          "focus_clue": "Why did Jewish extremist Yigal Amir assassinate Prime Minister Yitzhak Rabin?",
+          "words": [
+            {
+              "term": "Hamas and Palestinian Islamic Jihad",
+              "clue": "In response, Hamas and Palestinian Islamic Jihad unleashed a relentless campaign of suicide bombings against Israeli civilian buses in Tel Aviv and Jerusalem, killing dozens and eroding Israeli public faith in the peace process."
+            },
+            {
+              "term": "Benjamin Netanyahu",
+              "clue": "Concurrently, right-wing Israeli politicians, including Likud leader Benjamin Netanyahu, held rallies depicting Rabin in a Nazi SS uniform, denouncing the handover of biblical land as treason."
+            },
+            {
+              "term": "4 November 1995",
+              "clue": "On the evening of 4 November 1995, over 100,000 Israelis gathered at Kings of Israel Square in Tel Aviv for a massive rally supporting the peace process, singing \"Shir LaShalom\" (Song for Peace) alongside Rabin."
+            }
+          ],
+          "model_sentence": "Amidst waves of deadly suicide bus bombings by <strong>Hamas and Palestinian Islamic Jihad</strong> and fierce right-wing opposition led by <strong>Benjamin Netanyahu</strong>, Yitzhak Rabin was assassinated on <strong>4 November 1995</strong>.",
+          "title": "Extremist Violence & The Assassination of Rabin",
+          "dates": "4 November 1995"
+        }
+      ]
     }
   ],
   "exam_blocks": [
@@ -17958,11 +19551,6 @@ const cme_new_data = {
       "image": "/units/cme_new/assets/benjamin_netanyahu.jpg"
     }
   ],
-  "id": "cme_new"
+  "id": "cme_new",
+  "edition": "2026.1"
 };
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = cme_new_data;
-}
-
-export default cme_new_data;

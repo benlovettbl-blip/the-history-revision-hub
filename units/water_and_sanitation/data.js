@@ -1,11 +1,11 @@
 export default {
   "synopsis": "Two thousand years of human filth, deadly waterborne pestilence, and the desperate struggle for pure water. From Roman military engineers carving mountain aqueducts and baths to medieval monks engineering lead conduits against the Black Death, Britain's crowded cities were recurring death-traps. Follow the fearless visionaries—from John Snow mapping the Broad Street pump to Joseph Bazalgette blasting three hundred million bricks into the London subsoil to defeat the Great Stink—who conquered miasma theory and rebuilt public health from the sewers up.",
   "synopsis_tags": [
-      "Roman Aqueducts & Baths",
-      "Medieval Lead Conduits",
-      "The Great Stink (1858)",
-      "John Snow & Cholera",
-      "Bazalgette's Underground Sewers"
+    "Roman Aqueducts & Baths",
+    "Medieval Lead Conduits",
+    "The Great Stink (1858)",
+    "John Snow & Cholera",
+    "Bazalgette's Underground Sewers"
   ],
   "id": "water_and_sanitation",
   "edition": "2026.1",
@@ -251,7 +251,24 @@ export default {
             "Cramped Walled Cities"
           ],
           "focus_clue": "Why could crowded new Roman cities like Londinium not rely on traditional Iron Age cesspits and local streams?",
-          "focusClue": "Why could crowded new Roman cities like Londinium not rely on traditional Iron Age cesspits and local streams?"
+          "focusClue": "Why could crowded new Roman cities like Londinium not rely on traditional Iron Age cesspits and local streams?",
+          "words": [
+            {
+              "term": "Dispersed Celtic Roundhouses",
+              "clue": "Before the Roman conquest, Iron Age Britain was an agrarian society of small, scattered farming settlements and dispersed Celtic roundhouses with wattle-and-daub walls and thatched roofs."
+            },
+            {
+              "term": "Four Imperial Legions",
+              "clue": "Everything changed in AD 43 when Emperor Claudius invaded Britain with four imperial legions."
+            },
+            {
+              "term": "Cramped Walled Cities",
+              "clue": "The Romans brought an urban revolution, packing thousands into cramped walled cities and military forts (*castra*) like Londinium (London) and Eboracum (York)."
+            }
+          ],
+          "model_sentence": "Replacing the traditional <strong>Dispersed Celtic Roundhouses</strong>, the arrival of <strong>Four Imperial Legions</strong> transformed Britain into an urban society of <strong>Cramped Walled Cities</strong>.",
+          "title": "How did the Roman invasion of AD 43 trigger an urban sanitation crisis?",
+          "dates": "AD 43"
         },
         {
           "step": 2,
@@ -266,7 +283,24 @@ export default {
             "Castella Water Towers"
           ],
           "focus_clue": "How did Roman hydraulic engineers move freshwater across valleys without mechanical steam or electric pumps?",
-          "focusClue": "How did Roman hydraulic engineers move freshwater across valleys without mechanical steam or electric pumps?"
+          "focusClue": "How did Roman hydraulic engineers move freshwater across valleys without mechanical steam or electric pumps?",
+          "words": [
+            {
+              "term": "Distant Mountain Springs",
+              "clue": "Because local rivers quickly became fouled with street wash, engineers found pure natural springs in distant mountain springs and hills."
+            },
+            {
+              "term": "Mathematical Downward Gradient",
+              "clue": "To carry millions of gallons of water into towns, they constructed massive stone aqueducts (*aquae*) built on a precise mathematical downward gradient, delivering steady water into distribution towers (*castella*)."
+            },
+            {
+              "term": "Castella Water Towers",
+              "clue": "To carry millions of gallons of water into towns, they constructed massive stone aqueducts (*aquae*) built on a precise mathematical downward gradient, delivering steady water into distribution towers (*castella*)."
+            }
+          ],
+          "model_sentence": "Sourcing water from <strong>Distant Mountain Springs</strong>, Roman engineers applied a precise <strong>Mathematical Downward Gradient</strong> to channel fresh supplies into municipal <strong>Castella Water Towers</strong>.",
+          "title": "How did Roman engineers use gravity to transport millions of gallons of water?",
+          "dates": "c.AD 43–100"
         },
         {
           "step": 3,
@@ -281,7 +315,24 @@ export default {
             "Frigidarium Cold Plunge"
           ],
           "focus_clue": "Why were public thermae cheap social hubs where citizens bathed, made deals, and relaxed every afternoon?",
-          "focusClue": "Why were public thermae cheap social hubs where citizens bathed, made deals, and relaxed every afternoon?"
+          "focusClue": "Why were public thermae cheap social hubs where citizens bathed, made deals, and relaxed every afternoon?",
+          "words": [
+            {
+              "term": "Subterranean Hypocaust Heating",
+              "clue": "An underground subterranean hypocaust heating system circulated roaring hot air beneath suspended mosaic floors."
+            },
+            {
+              "term": "Olive Oil & Bronze Strigils",
+              "clue": "Without soap, bathers sweated in the hot steam room (*caldarium*), coated their skin in olive oil, and had slaves scrape off sweat, grime, and dead skin with curved bronze blades called strigils before taking a cold plunge into the frigidarium pool to close their pores."
+            },
+            {
+              "term": "Frigidarium Cold Plunge",
+              "clue": "Without soap, bathers sweated in the hot steam room (*caldarium*), coated their skin in olive oil, and had slaves scrape off sweat, grime, and dead skin with curved bronze blades called strigils before taking a cold plunge into the frigidarium pool to close their pores."
+            }
+          ],
+          "model_sentence": "Heated by <strong>Subterranean Hypocaust Heating</strong>, bathers cleansed themselves with <strong>Olive Oil & Bronze Strigils</strong> before cooling down in the <strong>Frigidarium Cold Plunge</strong>.",
+          "title": "How did monumental public bathhouses promote cleanliness and imperial culture?",
+          "dates": "c.AD 100"
         },
         {
           "step": 4,
@@ -296,7 +347,24 @@ export default {
             "Toxic Lead Water Pipes"
           ],
           "focus_clue": "Why did stagnant plunge pools and jointed lead pipes at Fishbourne Palace create hidden health hazards?",
-          "focusClue": "Why did stagnant plunge pools and jointed lead pipes at Fishbourne Palace create hidden health hazards?"
+          "focusClue": "Why did stagnant plunge pools and jointed lead pipes at Fishbourne Palace create hidden health hazards?",
+          "words": [
+            {
+              "term": "Communal Sponge on a Stick",
+              "clue": "For toilet paper, Romans shared a communal sponge on a stick called a tersorium, which was rinsed in a running saltwater channel on the floor and passed to the next person."
+            },
+            {
+              "term": "Intestinal Parasite Eggs",
+              "clue": "Because firewood was expensive, plunge pool water was rarely changed, turning warm baths into a soup of parasites containing microscopic intestinal parasite eggs."
+            },
+            {
+              "term": "Toxic Lead Water Pipes",
+              "clue": "Skeletons and preserved waste show widespread whipworm and dysentery, while toxic lead water pipes, wine, and cooking pots caused chronic lead poisoning (plumbism) among the Roman elite."
+            }
+          ],
+          "model_sentence": "Using a shared <strong>Communal Sponge on a Stick</strong> in public latrines spread <strong>Intestinal Parasite Eggs</strong>, while domestic supplies flowed through hazardous <strong>Toxic Lead Water Pipes</strong>.",
+          "title": "Why did forensic science expose severe flaws in Roman hygiene and health?",
+          "dates": "c.AD 150"
         },
         {
           "step": 5,
@@ -311,7 +379,24 @@ export default {
             "Thousand-Year Sanitation Void"
           ],
           "focus_clue": "Did Roman sanitation collapse because people forgot engineering skills, or because imperial taxes and administrators vanished?",
-          "focusClue": "Did Roman sanitation collapse because people forgot engineering skills, or because imperial taxes and administrators vanished?"
+          "focusClue": "Did Roman sanitation collapse because people forgot engineering skills, or because imperial taxes and administrators vanished?",
+          "words": [
+            {
+              "term": "Imperial Power & Vanity",
+              "clue": "However, modern historians argue Roman public health was driven by imperial power & vanity alongside military prestige (*romanitas*)."
+            },
+            {
+              "term": "Vanishing Roman Legions",
+              "clue": "When the Roman Empire collapsed in AD 410 and the vanishing Roman legions abandoned Britain, sanitation collapsed with them."
+            },
+            {
+              "term": "Thousand-Year Sanitation Void",
+              "clue": "Within decades, stone drains choked with silt, lead pipes were melted down for weapons, and Britain entered a thousand-year sanitation void where municipal drainage was forgotten."
+            }
+          ],
+          "model_sentence": "Driven more by <strong>Imperial Power & Vanity</strong> than hygiene, Roman engineering collapsed when <strong>Vanishing Roman Legions</strong> left Britain in a <strong>Thousand-Year Sanitation Void</strong>.",
+          "title": "Why did Roman water engineering abruptly collapse after AD 410?",
+          "dates": "AD 410"
         }
       ],
       "did_you_know": "Roman bathers did not use soap made from animal fat. Instead, they coated their bodies in scented olive oil and had slaves scrape off the accumulated sweat, dirt, and dead skin cells with a curved bronze blade called a strigil! Vendors outside the Colosseum even bottled gladiator sweat to sell as an expensive luxury cosmetic.",
@@ -1559,7 +1644,24 @@ export default {
             "Unpaved Muddy Thoroughfares"
           ],
           "focus_clue": "Why did rapid medieval town growth outpace water infrastructure once central imperial taxation had vanished?",
-          "focusClue": "Why did rapid medieval town growth outpace water infrastructure once central imperial taxation had vanished?"
+          "focusClue": "Why did rapid medieval town growth outpace water infrastructure once central imperial taxation had vanished?",
+          "words": [
+            {
+              "term": "Collapsed Roman Stone Aqueducts",
+              "clue": "After the Roman legions abandoned Britain in AD 410, collapsed Roman stone aqueducts and centralized infrastructure fell into ruin."
+            },
+            {
+              "term": "Booming Market Boroughs",
+              "clue": "By the twelfth century, booming market boroughs emerged across England, with thousands of traders crowding into unpaved muddy thoroughfares and narrow lanes."
+            },
+            {
+              "term": "Unpaved Muddy Thoroughfares",
+              "clue": "By the twelfth century, booming market boroughs emerged across England, with thousands of traders crowding into unpaved muddy thoroughfares and narrow lanes."
+            }
+          ],
+          "model_sentence": "Following the decay of <strong>Collapsed Roman Stone Aqueducts</strong>, expanding populations in <strong>Booming Market Boroughs</strong> were forced to draw water along <strong>Unpaved Muddy Thoroughfares</strong>.",
+          "title": "Why did the growth of medieval towns overwhelm traditional water supplies?",
+          "dates": "1100–1250"
         },
         {
           "step": 2,
@@ -1574,7 +1676,24 @@ export default {
             "Court Leet Fines & Rakers"
           ],
           "focus_clue": "How do court records prove that town councils actively tried to fine polluters rather than ignoring street filth?",
-          "focusClue": "How do court records prove that town councils actively tried to fine polluters rather than ignoring street filth?"
+          "focusClue": "How do court records prove that town councils actively tried to fine polluters rather than ignoring street filth?",
+          "words": [
+            {
+              "term": "Overcrowded Timber Tenements",
+              "clue": "In crowded towns like London, York, and Coventry, overcrowded timber tenements lined the streets."
+            },
+            {
+              "term": "Night-Time Gong Farmers",
+              "clue": "Cesspits were emptied by night-time gong farmers, who shovelled human waste into barrels for crop manure."
+            },
+            {
+              "term": "Court Leet Fines & Rakers",
+              "clue": "Town councils appointed municipal 'rakers' to sweep rubbish, while the local Court Leet fines were levied against landlords who dumped waste into public lanes."
+            }
+          ],
+          "model_sentence": "Outside <strong>Overcrowded Timber Tenements</strong>, cesspits were emptied at night by <strong>Night-Time Gong Farmers</strong>, while municipal order was enforced through <strong>Court Leet Fines & Rakers</strong>.",
+          "title": "How did medieval towns attempt to manage human and animal waste?",
+          "dates": "c.1250–1348"
         },
         {
           "step": 3,
@@ -1589,7 +1708,24 @@ export default {
             "Titchfield Abbey Fishponds"
           ],
           "focus_clue": "How did monks use five-stage settling tanks and running fountain basins to maintain sanitary isolation?",
-          "focusClue": "How did monks use five-stage settling tanks and running fountain basins to maintain sanitary isolation?"
+          "focusClue": "How did monks use five-stage settling tanks and running fountain basins to maintain sanitary isolation?",
+          "words": [
+            {
+              "term": "Settling Tanks & Lead Conduits",
+              "clue": "Monasteries possessed superior water systems with settling tanks & lead conduits carrying pure spring water from distant hills into monastic kitchens, infirmaries, and latrines."
+            },
+            {
+              "term": "Segregated Monastic Cloisters",
+              "clue": "Monks lived in segregated monastic cloisters shielded from outside contagion."
+            },
+            {
+              "term": "Titchfield Abbey Fishponds",
+              "clue": "Local monasteries like Titchfield Abbey fishponds and Canterbury Priory managed advanced fishponds and fresh running conduits."
+            }
+          ],
+          "model_sentence": "Equipped with sophisticated <strong>Settling Tanks & Lead Conduits</strong>, monks lived in <strong>Segregated Monastic Cloisters</strong> sustained by clean freshwater from <strong>Titchfield Abbey Fishponds</strong>.",
+          "title": "Why did medieval monasteries enjoy far cleaner water than crowded towns?",
+          "dates": "c.1300"
         },
         {
           "step": 4,
@@ -1604,7 +1740,24 @@ export default {
             "Forty-Day Port Quarantines"
           ],
           "focus_clue": "Why did religious beliefs and miasma theory prevent physicians from discovering that rat fleas transmitted plague?",
-          "focusClue": "Why did religious beliefs and miasma theory prevent physicians from discovering that rat fleas transmitted plague?"
+          "focusClue": "Why did religious beliefs and miasma theory prevent physicians from discovering that rat fleas transmitted plague?",
+          "words": [
+            {
+              "term": "Yersinia Pestis in Fleas",
+              "clue": "Carried by the bacterium *Yersinia pestis* living in fleas on black rats, the plague swept along trade routes, killing between thirty and fifty percent of Britain's population in under eighteen months."
+            },
+            {
+              "term": "Poisonous Foul Air (Miasma)",
+              "clue": "Medieval medical knowledge could not explain the contagion: physicians blamed planetary alignments, divine wrath, and poisonous foul air (miasma)."
+            },
+            {
+              "term": "Forty-Day Port Quarantines",
+              "clue": "Town councils barred travellers from infected regions and enacted forty-day port quarantines (*quarantena*)."
+            }
+          ],
+          "model_sentence": "Transmitted by <strong>Yersinia Pestis in Fleas</strong> rather than <strong>Poisonous Foul Air (Miasma)</strong>, the devastating Black Death prompted Italian city-states to introduce <strong>Forty-Day Port Quarantines</strong>.",
+          "title": "How did the 1348 Black Death challenge medieval understanding of disease?",
+          "dates": "1348–1350"
         },
         {
           "step": 5,
@@ -1619,7 +1772,24 @@ export default {
             "Carole Rawcliffe Revisionism"
           ],
           "focus_clue": "How does parliamentary legislation prove that medieval society recognised the vital danger of water pollution?",
-          "focusClue": "How does parliamentary legislation prove that medieval society recognised the vital danger of water pollution?"
+          "focusClue": "How does parliamentary legislation prove that medieval society recognised the vital danger of water pollution?",
+          "words": [
+            {
+              "term": "Statute of Cambridge (1388)",
+              "clue": "In 1388, Parliament passed the monumental Statute of Cambridge (1388), introducing compulsory river clean-up laws that levied a massive £20 fine on anyone who cast animal dung, entrails, or refuse into ditches, rivers, or waters."
+            },
+            {
+              "term": "Compulsory River Clean-Up",
+              "clue": "In 1388, Parliament passed the monumental Statute of Cambridge (1388), introducing compulsory river clean-up laws that levied a massive £20 fine on anyone who cast animal dung, entrails, or refuse into ditches, rivers, or waters."
+            },
+            {
+              "term": "Carole Rawcliffe Revisionism",
+              "clue": "Modern historians like Carole Rawcliffe have pioneered a Carole Rawcliffe revisionism, demonstrating that medieval civic authorities were not indifferent to urban filth."
+            }
+          ],
+          "model_sentence": "Passing the landmark <strong>Statute of Cambridge (1388)</strong> to mandate <strong>Compulsory River Clean-Up</strong>, town records support <strong>Carole Rawcliffe Revisionism</strong> regarding medieval cleanliness.",
+          "title": "Did public health genuinely collapse, or have Victorians exaggerated medieval squalor?",
+          "dates": "1388"
         }
       ],
       "did_you_know": "Gong farmers were among the highest-paid manual labourers in medieval England! Because the stench of emptying cesspits was so overwhelming and hazardous, they were legally permitted to work only between 9:00 PM and 5:00 AM under cover of darkness. They shoveled nightsoil into barrels and sold it to suburban farmers as prized agricultural fertilizer.",
@@ -2871,7 +3041,24 @@ export default {
             "Cantilevered Timber Tenements"
           ],
           "focus_clue": "Why did packing half a million people into the capital turn streets into foul, sunless trenches?",
-          "focusClue": "Why did packing half a million people into the capital turn streets into foul, sunless trenches?"
+          "focusClue": "Why did packing half a million people into the capital turn streets into foul, sunless trenches?",
+          "words": [
+            {
+              "term": "National Population Doubles",
+              "clue": "Between 1500 and 1700, England underwent a dramatic demographic transformation as national population doubles from roughly three million to over five million."
+            },
+            {
+              "term": "500,000 London Residents",
+              "clue": "By 1665, London was home to over 500,000 London residents crammed into towering, cantilevered timber tenements that jutted out over narrow streets, blocking sunlight and trapping sewer stench at ground level."
+            },
+            {
+              "term": "Cantilevered Timber Tenements",
+              "clue": "By 1665, London was home to over 500,000 London residents crammed into towering, cantilevered timber tenements that jutted out over narrow streets, blocking sunlight and trapping sewer stench at ground level."
+            }
+          ],
+          "model_sentence": "As the <strong>National Population Doubles</strong> to four million, over <strong>500,000 London Residents</strong> were packed into towering, precarious <strong>Cantilevered Timber Tenements</strong>.",
+          "title": "How did London’s rapid expansion create an unprecedented sanitation crisis?",
+          "dates": "1500–1600"
         },
         {
           "step": 2,
@@ -2886,7 +3073,24 @@ export default {
             "Absence of Running Water Mains"
           ],
           "focus_clue": "Why was a flush toilet useless for ordinary citizens who lacked pressurized running water pipes?",
-          "focusClue": "Why was a flush toilet useless for ordinary citizens who lacked pressurized running water pipes?"
+          "focusClue": "Why was a flush toilet useless for ordinary citizens who lacked pressurized running water pipes?",
+          "words": [
+            {
+              "term": "Queen Elizabeth’s Godson",
+              "clue": "In 1596, Queen Elizabeth I’s godson, Sir John Harington, invented the world’s first valve-operated flushing water closet (the 'Ajax')."
+            },
+            {
+              "term": "Valve-Operated Cistern",
+              "clue": "Sir John Harington's mechanical flushing water closet designed in 1596 using a gravity-fed cistern and flush valve, which failed to spread widely due to the lack of municipal sewage networks."
+            },
+            {
+              "term": "Absence of Running Water Mains",
+              "clue": "However, the total absence of running water mains meant the flush toilet was an isolated aristocratic novelty; ordinary citizens continued using pottery chamber pots and wooden close-stools for another 250 years."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>Queen Elizabeth’s Godson</strong>, strategic pressure surrounding <strong>Valve-Operated Cistern</strong> intensified, fundamentally altering the situation through <strong>Absence of Running Water Mains</strong>.",
+          "title": "Why did Sir John Harington’s revolutionary flush toilet fail to clean up Britain?",
+          "dates": "1596"
         },
         {
           "step": 3,
@@ -2901,7 +3105,24 @@ export default {
             "Hollowed Elm Tree Trunk Pipes"
           ],
           "focus_clue": "How did the New River bring clean Hertfordshire spring water to wealthy Londoners while slums still relied on water carriers?",
-          "focusClue": "How did the New River bring clean Hertfordshire spring water to wealthy Londoners while slums still relied on water carriers?"
+          "focusClue": "How did the New River bring clean Hertfordshire spring water to wealthy Londoners while slums still relied on water carriers?",
+          "words": [
+            {
+              "term": "Sir Hugh Myddelton",
+              "clue": "In 1609, goldsmith and entrepreneur Sir Hugh Myddelton financed the construction of the New River—an ambitious 38-mile man-made canal bringing pure spring water from Hertfordshire directly to New River Head in Islington."
+            },
+            {
+              "term": "38-Mile Man-Made Canal",
+              "clue": "In 1609, goldsmith and entrepreneur Sir Hugh Myddelton financed the construction of the New River—an ambitious 38-mile man-made canal bringing pure spring water from Hertfordshire directly to New River Head in Islington."
+            },
+            {
+              "term": "Hollowed Elm Tree Trunk Pipes",
+              "clue": "Water was distributed across the capital through a network of hollowed elm tree trunk pipes, providing fresh water to paying households and civic conduits."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>Sir Hugh Myddelton</strong>, strategic pressure surrounding <strong>38-Mile Man-Made Canal</strong> intensified, fundamentally altering the situation through <strong>Hollowed Elm Tree Trunk Pipes</strong>.",
+          "title": "How did private enterprise attempt to bring clean spring water into London?",
+          "dates": "1609–1613"
         },
         {
           "step": 4,
@@ -2916,7 +3137,24 @@ export default {
             "Nightsoil Men & Filth Carts"
           ],
           "focus_clue": "What does Pepys’ experience in October 1660 prove about the dangers of leaking cesspits beneath ordinary houses?",
-          "focusClue": "What does Pepys’ experience in October 1660 prove about the dangers of leaking cesspits beneath ordinary houses?"
+          "focusClue": "What does Pepys’ experience in October 1660 prove about the dangers of leaking cesspits beneath ordinary houses?",
+          "words": [
+            {
+              "term": "Stepping into Neighbour’s Waste",
+              "clue": "In October 1660, Pepys recorded the horrific experience of stepping into neighbour’s waste when entering his basement: *'Going down into my cellar..."
+            },
+            {
+              "term": "Fractured Brick Cesspits",
+              "clue": "I put my foot into a great heap of turds, by which I find that Mr Turner's house of office is full and comes into my cellar.'* Domestic cesspits were poorly lined with brick."
+            },
+            {
+              "term": "Nightsoil Men & Filth Carts",
+              "clue": "Homeowners were forced to pay nightsoil men & filth carts to empty vaults at night and haul raw waste out of the city in horse-drawn filth carts."
+            }
+          ],
+          "model_sentence": "Recounting the disgust of <strong>Stepping into Neighbour’s Waste</strong> from <strong>Fractured Brick Cesspits</strong>, Samuel Pepys documented the nightly struggle of <strong>Nightsoil Men & Filth Carts</strong>.",
+          "title": "What does Samuel Pepys’ diary reveal about domestic sanitation in Stuart London?",
+          "dates": "1660–1665"
         },
         {
           "step": 5,
@@ -2931,7 +3169,24 @@ export default {
             "Pounding Tobacco & Pomanders"
           ],
           "focus_clue": "Why did belief in miasma and humours persist despite the Scientific Revolution of Harvey and Hooke?",
-          "focusClue": "Why did belief in miasma and humours persist despite the Scientific Revolution of Harvey and Hooke?"
+          "focusClue": "Why did belief in miasma and humours persist despite the Scientific Revolution of Harvey and Hooke?",
+          "words": [
+            {
+              "term": "100,000 Plague Fatalities",
+              "clue": "When the Great Plague of 1665 struck London, causing over 100,000 plague fatalities in seven months, authorities still blamed miasma and planetary alignment."
+            },
+            {
+              "term": "Red Crosses & Watchmen",
+              "clue": "The Lord Mayor ordered the slaughter of over 40,000 dogs and 200,000 cats (the very predators that hunted plague rats), while watchmen locked infected families inside boarded-up houses marked with red crosses."
+            },
+            {
+              "term": "Pounding Tobacco & Pomanders",
+              "clue": "Citizens protected themselves by pounding tobacco & pomanders filled with perfumed herbs, completely unaware that rat fleas were transmitting the disease."
+            }
+          ],
+          "model_sentence": "Resulting in over <strong>100,000 Plague Fatalities</strong>, authorities quarantined houses behind <strong>Red Crosses & Watchmen</strong>, while terrified citizens relied on <strong>Pounding Tobacco & Pomanders</strong>.",
+          "title": "Why did medical responses to the 1665 Great Plague remain fundamentally medieval?",
+          "dates": "1665"
         }
       ],
       "did_you_know": "Sir John Harington named his satirical book about his flush toilet \"The Metamorphosis of Ajax\". This was a cheeky Elizabethan pun: in 1596, a toilet was commonly known as a \"jakes\", so \"a Jakes\" sounded exactly like the Greek mythological hero Ajax! Queen Elizabeth was amused by the invention, but banned Harington from court for his crude jokes.",
@@ -3428,8 +3683,8 @@ export default {
             "Explanation: Contrast private technological success for the rich against the reality of unpaved, overcrowded slums for ordinary people [3.1, 3.3].",
             "Link: Provide a balanced, comparative judgment: evaluate whether innovation outweighed squalor [3.5]."
           ],
-          "model_answer": "A primary reason was the total lack of scientific understanding about the true cause of disease. In 1665, doctors still believed the Great Plague was caused by foul-smelling air (miasma) or God's anger, knowing nothing of bacteria or fleas. Consequently, useless treatments like smoking tobacco or carrying sweet herbs were used instead of killing rats.<br><br>Furthermore, municipal measures were poorly enforced. Although infected houses were locked and marked with red crosses, desperate families escaped or bribed watchmen. Authorities also killed thousands of cats and dogs, mistakenly removing the natural predators that controlled the plague-carrying black rat population.",
-          "model": "A primary reason was the total lack of scientific understanding about the true cause of disease. In 1665, doctors still believed the Great Plague was caused by foul-smelling air (miasma) or God's anger, knowing nothing of bacteria or fleas. Consequently, useless treatments like smoking tobacco or carrying sweet herbs were used instead of killing rats.<br><br>Furthermore, municipal measures were poorly enforced. Although infected houses were locked and marked with red crosses, desperate families escaped or bribed watchmen. Authorities also killed thousands of cats and dogs, mistakenly removing the natural predators that controlled the plague-carrying black rat population."
+          "model_answer": "On the one hand, significant engineering and commercial progress was achieved in urban water supply during the Early Modern period. In London, Peter Morris built an innovative waterwheel at London Bridge in 1582 that harnessed tidal Thames currents to pump water through wooden pipes directly into affluent private residences. Furthermore, in 1613, Sir Hugh Myddelton completed the ambitious 38-mile New River aqueduct, bringing clean spring water from Hertfordshire into North London, which substantially improved water purity for tens of thousands of citizens compared to medieval cisterns.<br><br>On the other hand, sanitation and waste disposal remained dangerously primitive for the overwhelming majority of town dwellers. Towns lacked subterranean sewer networks; waste from domestic privies drained into porous cesspools that constantly seeped into drinking wells, while industrial offal, human excrement, and rotting refuse were routinely dumped into open gutters and waterways like London's notorious Fleet Ditch. Municipal scavenging (\"rakers\") was hopelessly overwhelmed by explosive population growth, and without any scientific knowledge of Germ Theory or waterborne disease, contaminated water continued to trigger devastating outbreaks of typhus, dysentery, and cholera. Therefore, while water engineering advanced for the wealthy, sanitation infrastructure remained stagnant and lethal.",
+          "model": "On the one hand, significant engineering and commercial progress was achieved in urban water supply during the Early Modern period. In London, Peter Morris built an innovative waterwheel at London Bridge in 1582 that harnessed tidal Thames currents to pump water through wooden pipes directly into affluent private residences. Furthermore, in 1613, Sir Hugh Myddelton completed the ambitious 38-mile New River aqueduct, bringing clean spring water from Hertfordshire into North London, which substantially improved water purity for tens of thousands of citizens compared to medieval cisterns.<br><br>On the other hand, sanitation and waste disposal remained dangerously primitive for the overwhelming majority of town dwellers. Towns lacked subterranean sewer networks; waste from domestic privies drained into porous cesspools that constantly seeped into drinking wells, while industrial offal, human excrement, and rotting refuse were routinely dumped into open gutters and waterways like London's notorious Fleet Ditch. Municipal scavenging (\"rakers\") was hopelessly overwhelmed by explosive population growth, and without any scientific knowledge of Germ Theory or waterborne disease, contaminated water continued to trigger devastating outbreaks of typhus, dysentery, and cholera. Therefore, while water engineering advanced for the wealthy, sanitation infrastructure remained stagnant and lethal."
         }
       ],
       "teacher_notes": {
@@ -4357,12 +4612,11 @@ export default {
         {
           "id": "water_l4_src_c",
           "letter": "Source C",
-          "type": "visual",
-          "title": "Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
           "type": "written",
-              "text": "The primary and most important condition of health in any large town is the prompt and systematic removal of all decomposing refuse, night-soil, and stagnant matter by a complete system of underground drainage... The pestilential diseases which ravage the labouring classes are caused by atmospheric impurities produced by decomposing matter, by damp and filth, and close and overcrowded dwellings. The expense of public drainage works would be far less than the financial burden of widowhood and orphanhood created by preventable pestilence.",
-              "content": "The primary and most important condition of health in any large town is the prompt and systematic removal of all decomposing refuse, night-soil, and stagnant matter by a complete system of underground drainage... The pestilential diseases which ravage the labouring classes are caused by atmospheric impurities produced by decomposing matter, by damp and filth, and close and overcrowded dwellings. The expense of public drainage works would be far less than the financial burden of widowhood and orphanhood created by preventable pestilence.",
-              "caption": "Title page of Chadwick's pioneering 1842 Parliamentary Blue Book presenting the first nationwide statistical analysis of poverty and disease.",
+          "title": "Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
+          "text": "The primary and most important condition of health in any large town is the prompt and systematic removal of all decomposing refuse, night-soil, and stagnant matter by a complete system of underground drainage... The pestilential diseases which ravage the labouring classes are caused by atmospheric impurities produced by decomposing matter, by damp and filth, and close and overcrowded dwellings. The expense of public drainage works would be far less than the financial burden of widowhood and orphanhood created by preventable pestilence.",
+          "content": "The primary and most important condition of health in any large town is the prompt and systematic removal of all decomposing refuse, night-soil, and stagnant matter by a complete system of underground drainage... The pestilential diseases which ravage the labouring classes are caused by atmospheric impurities produced by decomposing matter, by damp and filth, and close and overcrowded dwellings. The expense of public drainage works would be far less than the financial burden of widowhood and orphanhood created by preventable pestilence.",
+          "caption": "Title page of Chadwick's pioneering 1842 Parliamentary Blue Book presenting the first nationwide statistical analysis of poverty and disease.",
           "image": "/images/chadwick_sanitary_report_1842.jpg",
           "source_context": "Written by barrister and Poor Law commissioner Edwin Chadwick in 1842 after surveying over 2,000 local doctors across England, Wales, and Scotland. Chadwick compiled death rates, wage levels, and drainage conditions to show that filth caused premature death and cost taxpayers millions in poor relief. **Hinge Question:** Why did Chadwick believe that spending public taxes on sewers would actually make Britain richer rather than poorer?",
           "prompt": "How did Edwin Chadwick use evidence in Source C to challenge traditional Victorian beliefs about poverty and public health?",
@@ -4688,7 +4942,24 @@ export default {
             "Shared Overflowing Privy Middens"
           ],
           "focus_clue": "Why did industrial expansion and lack of municipal drainage pack millions into unventilated back-to-backs?",
-          "focusClue": "Why did industrial expansion and lack of municipal drainage pack millions into unventilated back-to-backs?"
+          "focusClue": "Why did industrial expansion and lack of municipal drainage pack millions into unventilated back-to-backs?",
+          "words": [
+            {
+              "term": "Steam-Powered Factory Boomtowns",
+              "clue": "Millions of rural workers migrated to rapidly expanding steam-powered factory boomtowns like Manchester, Birmingham, and Leeds."
+            },
+            {
+              "term": "Unventilated Back-to-Back Slums",
+              "clue": "In these industrial hubs, speculative builders squeezed thousands of unventilated back-to-back slums into tight courtyards, lacking running water, ventilation, or drains."
+            },
+            {
+              "term": "Shared Overflowing Privy Middens",
+              "clue": "Entire streets of sixty people shared a single privy over shared overflowing privy middens, which spilled human waste across unpaved courts where children played."
+            }
+          ],
+          "model_sentence": "The rapid expansion of <strong>Steam-Powered Factory Boomtowns</strong> forced industrial workers into <strong>Unventilated Back-to-Back Slums</strong> sharing pestilential, <strong>Shared Overflowing Privy Middens</strong>.",
+          "title": "How did rapid industrial urbanisation create unprecedented slum squalor in British factory boomtowns?",
+          "dates": "1780–1840"
         },
         {
           "step": 2,
@@ -4703,7 +4974,24 @@ export default {
             "Tar Barrels & Miasma Fallacy"
           ],
           "focus_clue": "Why did Victorian doctors burning tar barrels fail completely to stop waterborne Asiatic cholera?",
-          "focusClue": "Why did Victorian doctors burning tar barrels fail completely to stop waterborne Asiatic cholera?"
+          "focusClue": "Why did Victorian doctors burning tar barrels fail completely to stop waterborne Asiatic cholera?",
+          "words": [
+            {
+              "term": "Sunderland Baltic Shipping Port",
+              "clue": "In October 1831, a terrifying new disease arrived at the Sunderland Baltic shipping port from the Baltic: Asiatic cholera."
+            },
+            {
+              "term": "52,000 Dehydration Fatalities",
+              "clue": "During the 1831–32 epidemic, cholera claimed over 52,000 dehydration fatalities across Great Britain."
+            },
+            {
+              "term": "Tar Barrels & Miasma Fallacy",
+              "clue": "Because medical doctors still clung to the tar barrels & miasma fallacy, town councils burned barrels of pitch and tar in streets to purify foul air, completely failing to realise that human sewage leaking into parish water pumps was spreading the deadly infection."
+            }
+          ],
+          "model_sentence": "Arriving at the <strong>Sunderland Baltic Shipping Port</strong> in 1831, cholera caused <strong>52,000 Dehydration Fatalities</strong> while doctors burned useless <strong>Tar Barrels & Miasma Fallacy</strong> defenses.",
+          "title": "Why did the arrival of Asiatic cholera in 1831 terrorize Victorian Britain and expose the failure of miasma theory?",
+          "dates": "1831–1832"
         },
         {
           "step": 3,
@@ -4718,7 +5006,24 @@ export default {
             "Permissive 1848 Public Health Act"
           ],
           "focus_clue": "Why did wealthy ratepayers resist spending money on public health under the banner of laissez-faire?",
-          "focusClue": "Why did wealthy ratepayers resist spending money on public health under the banner of laissez-faire?"
+          "focusClue": "Why did wealthy ratepayers resist spending money on public health under the banner of laissez-faire?",
+          "words": [
+            {
+              "term": "Chadwick's Sanitary Report 1842",
+              "clue": "In 1842, Chadwick published his groundbreaking *Report on the Sanitary Condition of the Labouring Population*."
+            },
+            {
+              "term": "Poverty Caused by Slum Filth",
+              "clue": "Using statistical data, Chadwick proved that epidemic disease and poverty were directly caused by slum filth, defective drainage, and contaminated water supplies."
+            },
+            {
+              "term": "Permissive 1848 Public Health Act",
+              "clue": "His report pressured Parliament to pass the Public Health Act of 1848, which established the first General Board of Health."
+            }
+          ],
+          "model_sentence": "Published in 1842, <strong>Chadwick's Sanitary Report 1842</strong> demonstrated that <strong>Poverty Caused by Slum Filth</strong> required state intervention, though Parliament only passed the <strong>Permissive 1848 Public Health Act</strong>.",
+          "title": "Why did Edwin Chadwick’s 1842 Report fail to clean up Britain despite proving that filth caused disease?",
+          "dates": "1842–1848"
         },
         {
           "step": 4,
@@ -4733,7 +5038,24 @@ export default {
             "Parliament Panic & £3m Grant"
           ],
           "focus_clue": "How did the Great Stink threaten MPs in Parliament and force emergency legislation in eighteen days?",
-          "focusClue": "How did the Great Stink threaten MPs in Parliament and force emergency legislation in eighteen days?"
+          "focusClue": "How did the Great Stink threaten MPs in Parliament and force emergency legislation in eighteen days?",
+          "words": [
+            {
+              "term": "200,000 Flushing Water Closets",
+              "clue": "The widespread adoption of over 200,000 flushing water closets created an environmental disaster: water closets flushed massive volumes of raw human waste directly into old storm drains leading into the River Thames, turning the city’s primary drinking source into an open sewer."
+            },
+            {
+              "term": "Fermenting Thames Sludge 35°C",
+              "clue": "In the scorching summer of 1858, temperatures exceeded 35°C, fermenting Thames sludge into an overpowering stench known as the Great Stink."
+            },
+            {
+              "term": "Parliament Panic & £3m Grant",
+              "clue": "Parliament panic erupted as MPs soaked parliamentary curtains in chloride of lime to neutralise the smell, hurriedly passing emergency legislation and voting a £3m grant to finance a complete overhaul of London’s drainage network."
+            }
+          ],
+          "model_sentence": "With over <strong>200,000 Flushing Water Closets</strong> emptying into the stifling <strong>Fermenting Thames Sludge 35°C</strong>, an alarmed <strong>Parliament Panic & £3m Grant</strong> funded Joseph Bazalgette's sewers.",
+          "title": "How did the environmental catastrophe of the 'Great Stink' finally shatter Victorian laissez-faire inertia?",
+          "dates": "June 1858"
         },
         {
           "step": 5,
@@ -4748,7 +5070,24 @@ export default {
             "Gravity Gradient & Eastney Pumping"
           ],
           "focus_clue": "How did Bazalgette's 82 miles of subterranean sewers permanently separate drinking water from human waste?",
-          "focusClue": "How did Bazalgette's 82 miles of subterranean sewers permanently separate drinking water from human waste?"
+          "focusClue": "How did Bazalgette's 82 miles of subterranean sewers permanently separate drinking water from human waste?",
+          "words": [
+            {
+              "term": "82 Miles Intercepting Sewers",
+              "clue": "He constructed 82 miles of underground intercepting sewers along the north and south banks of the Thames, using 318 million bricks and newly invented Portland cement."
+            },
+            {
+              "term": "318 Million Bricks & Portland Cement",
+              "clue": "He constructed 82 miles of underground intercepting sewers along the north and south banks of the Thames, using 318 million bricks and newly invented Portland cement."
+            },
+            {
+              "term": "Gravity Gradient & Eastney Pumping",
+              "clue": "Bazalgette’s sewers were engineered on a precise gravity gradient to carry wastewater eastwards, aided by massive steam pumping stations like Abbey Mills, Crossness, and Portsmouth's gravity gradient & Eastney pumping station, discharging sewage into the tidal Thames far downstream from central London."
+            }
+          ],
+          "model_sentence": "Constructing <strong>82 Miles Intercepting Sewers</strong> with <strong>318 Million Bricks & Portland Cement</strong>, Bazalgette relied on a continuous <strong>Gravity Gradient & Eastney Pumping</strong> system.",
+          "title": "Why was Sir Joseph Bazalgette’s intercepting sewer network considered the greatest engineering triumph of the Victorian age?",
+          "dates": "1858–1865"
         }
       ]
     },
@@ -5355,7 +5694,24 @@ export default {
             "Entrenched Miasma Medical Dogma"
           ],
           "focus_clue": "Why did health authorities burn pitch barrels in the street instead of investigating municipal drinking pumps?",
-          "focusClue": "Why did health authorities burn pitch barrels in the street instead of investigating municipal drinking pumps?"
+          "focusClue": "Why did health authorities burn pitch barrels in the street instead of investigating municipal drinking pumps?",
+          "words": [
+            {
+              "term": "Soho Broad Street Epicentre",
+              "clue": "In late August 1854, a sudden cholera outbreak struck the crowded Soho Broad Street epicentre in central London."
+            },
+            {
+              "term": "Over 500 Deaths in Ten Days",
+              "clue": "Within 250 yards of the intersection between Broad Street and Cambridge Street, over 500 deaths in ten days occurred, terrorising local families and causing three-quarters of the neighbourhood to flee."
+            },
+            {
+              "term": "Entrenched Miasma Medical Dogma",
+              "clue": "At the time, the medical establishment was gripped by entrenched miasma medical dogma, insisting that the summer heat had caused decaying organic matter in Soho’s cesspools to release poisonous miasmatic vapours into the air, suffocating residents while they slept."
+            }
+          ],
+          "model_sentence": "Striking the crowded <strong>Soho Broad Street Epicentre</strong> with <strong>Over 500 Deaths in Ten Days</strong>, the outbreak was initially blamed on <strong>Entrenched Miasma Medical Dogma</strong>.",
+          "title": "Why did the medical establishment refuse to consider water as the cause of the 1854 Soho outbreak?",
+          "dates": "1854"
         },
         {
           "step": 2,
@@ -5370,7 +5726,24 @@ export default {
             "Lion Brewery Zero Fatalities"
           ],
           "focus_clue": "Why was the total survival of 70 workers drinking beer at the Lion Brewery decisive evidence?",
-          "focusClue": "Why was the total survival of 70 workers drinking beer at the Lion Brewery decisive evidence?"
+          "focusClue": "Why was the total survival of 70 workers drinking beer at the Lion Brewery decisive evidence?",
+          "words": [
+            {
+              "term": "Empirical Cholera Spot Map",
+              "clue": "Snow conducted an empirical door-to-door epidemiological investigation, plotting an empirical cholera spot map marking every fatality."
+            },
+            {
+              "term": "Broad Street Pump Clustering",
+              "clue": "The visual pattern revealed dense Broad Street pump clustering where cases surrounded the pump."
+            },
+            {
+              "term": "Lion Brewery Zero Fatalities",
+              "clue": "Crucially, the nearby Lion Brewery had zero fatalities because its 70 workers drank free beer instead of water, while the local workhouse had its own private well."
+            }
+          ],
+          "model_sentence": "Plotting cholera fatalities on his <strong>Empirical Cholera Spot Map</strong>, Dr Snow observed fatal <strong>Broad Street Pump Clustering</strong> while noting that workers at the <strong>Lion Brewery Zero Fatalities</strong> drank only beer.",
+          "title": "How did Dr John Snow use cartographic mapping and anomalous data to prove cholera was waterborne?",
+          "dates": "September 1854"
         },
         {
           "step": 3,
@@ -5385,7 +5758,24 @@ export default {
             "Fractured Brickwork & Leaking Cesspool"
           ],
           "focus_clue": "How did excavating the fractured cesspool at 40 Broad Street prove sewage seeped into the pump well?",
-          "focusClue": "How did excavating the fractured cesspool at 40 Broad Street prove sewage seeped into the pump well?"
+          "focusClue": "How did excavating the fractured cesspool at 40 Broad Street prove sewage seeped into the pump well?",
+          "words": [
+            {
+              "term": "Removed Broad Street Pump Handle",
+              "clue": "On the evening of Thursday 7 September 1854, Dr John Snow presented his findings to the parish authorities, and the next morning officials removed Broad Street pump handle."
+            },
+            {
+              "term": "Infant Frances Lewis at No. 40",
+              "clue": "Subsequent investigations by Reverend Henry Whitehead revealed the source of contamination: at 40 Broad Street, infant Frances Lewis had contracted cholera in late August."
+            },
+            {
+              "term": "Fractured Brickwork & Leaking Cesspool",
+              "clue": "Her mother had washed soiled nappies into an old cesspool less than three feet from the public well, where fractured brickwork & leaking cesspool contents percolated directly into the drinking water drawn by hundreds of residents."
+            }
+          ],
+          "model_sentence": "After parish vestrymen <strong>Removed Broad Street Pump Handle</strong>, inspectors traced the source to <strong>Infant Frances Lewis at No. 40</strong> leaking from <strong>Fractured Brickwork & Leaking Cesspool</strong>.",
+          "title": "What physical evidence finally proved how the Broad Street pump well had become contaminated?",
+          "dates": "1854–1855"
         },
         {
           "step": 4,
@@ -5400,7 +5790,24 @@ export default {
             "Koch Isolates Vibrio Cholerae 1884"
           ],
           "focus_clue": "How did Pasteur disproving spontaneous generation provide scientific foundation for Koch’s discovery?",
-          "focusClue": "How did Pasteur disproving spontaneous generation provide scientific foundation for Koch’s discovery?"
+          "focusClue": "How did Pasteur disproving spontaneous generation provide scientific foundation for Koch’s discovery?",
+          "words": [
+            {
+              "term": "Pasteur's Swan-Neck Flask Experiments",
+              "clue": "Through his famous swan-neck flask experiments, Pasteur proved that microorganisms in the air caused fermentation and decay, disproving spontaneous generation."
+            },
+            {
+              "term": "Germ Theory of Disease 1861",
+              "clue": "The definitive scientific breakthrough came from French chemist Louis Pasteur, who published his Germ Theory of Disease in 1861."
+            },
+            {
+              "term": "Koch Isolates Vibrio Cholerae 1884",
+              "clue": "Two decades later, in 1884, German microbiologist Robert Koch isolates Vibrio cholerae under the microscope, providing indisputable bacteriological proof that confirmed Dr John Snow’s waterborne theory and destroyed miasma theory forever."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>Pasteur's Swan-Neck Flask Experiments</strong>, strategic pressure surrounding <strong>Germ Theory of Disease 1861</strong> intensified, fundamentally altering the situation through <strong>Koch Isolates Vibrio Cholerae 1884</strong>.",
+          "title": "Why was laboratory bacteriological proof necessary to finally overthrow the ancient miasma theory?",
+          "dates": "1861–1884"
         },
         {
           "step": 5,
@@ -5415,7 +5822,24 @@ export default {
             "End of Laissez-Faire Ideology"
           ],
           "focus_clue": "Why was the legal mandate of \"shall\" rather than \"may\" the ultimate triumph of 19th-century public health?",
-          "focusClue": "Why was the legal mandate of \"shall\" rather than \"may\" the ultimate triumph of 19th-century public health?"
+          "focusClue": "Why was the legal mandate of \"shall\" rather than \"may\" the ultimate triumph of 19th-century public health?",
+          "words": [
+            {
+              "term": "Public Health Act 1875",
+              "clue": "The convergence of scientific certainty, Bazalgette’s engineering triumphs, and working-class voting power led directly to the Public Health Act of 1875."
+            },
+            {
+              "term": "Compulsory Municipal Officers & Water",
+              "clue": "Town councils were legally required to appoint compulsory municipal officers & water inspectors, Medical Officers of Health, supply clean piped water, collect refuse, and construct covered sewers."
+            },
+            {
+              "term": "End of Laissez-Faire Ideology",
+              "clue": "The 1875 Act permanently ended laissez-faire ideology in sanitation, establishing clean water and public health as universal legal rights for all British citizens."
+            }
+          ],
+          "model_sentence": "Replacing optional guidelines with mandatory health duties, the <strong>Public Health Act 1875</strong> required <strong>Compulsory Municipal Officers & Water</strong>, cementing the definitive <strong>End of Laissez-Faire Ideology</strong>.",
+          "title": "Why did the compulsory nature of the 1875 Public Health Act mark the definitive end of laissez-faire in Britain?",
+          "dates": "1875"
         }
       ]
     },
@@ -5424,8 +5848,8 @@ export default {
       "alias_ids": [
         "lesson_7"
       ],
-      "title": "November Assessment Masterclass: Rapid Progress in Public Health (1800–1900)",
-      "short_title": "November Assessment Masterclass",
+      "title": "Summative Assessment Masterclass: Rapid Progress in Public Health (1800–1900)",
+      "short_title": "Summative Assessment Masterclass",
       "period": "1800–1900",
       "enquiry": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
       "subtitle": "Step-by-step PEEL Planning & Revision Workshop: John Snow, Joseph Bazalgette, Louis Pasteur, and the 1875 Public Health Act",
@@ -5434,7 +5858,7 @@ export default {
       "card_position": "center",
       "banner": "/images/water_local_eastney_opt.jpg",
       "cover_image": "/images/water_local_eastney_opt.jpg",
-      "prologue": "Welcome to your November Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: \"Explain why there was rapid progress in Public Health 1800–1900?\". You will write three developed PEEL paragraphs explaining how scientific investigation (Dr John Snow), civil engineering (Sir Joseph Bazalgette), laboratory microbiology (Louis Pasteur), and compulsory government legislation (the 1875 Public Health Act) transformed British public health from deadly squalor into modern sanitary safety. Over half term, you are permitted to prepare ONE single sheet of A4 lined paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room! How will you combine evidence of scientific investigation, civil engineering, and government legislation to construct a compelling historical explanation?",
+      "prologue": "Welcome to your Summative Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: \"Explain why there was rapid progress in Public Health 1800–1900?\". You will write three developed PEEL paragraphs explaining how scientific investigation (Dr John Snow), civil engineering (Sir Joseph Bazalgette), laboratory microbiology (Louis Pasteur), and compulsory government legislation (the 1875 Public Health Act) transformed British public health from deadly squalor into modern sanitary safety. Over half term, you are permitted to prepare ONE single sheet of A4 lined paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room! How will you combine evidence of scientific investigation, civil engineering, and government legislation to construct a compelling historical explanation?",
       "did_you_know": "The 1875 Public Health Act was 150 pages long and contained 343 individual sections, establishing the framework for modern environmental health that still protects Britain today!",
       "assessment_notice": {
         "title": "Year 7 November Formal Assessment Timetable & Rules",
@@ -5524,7 +5948,7 @@ export default {
         }
       ],
       "causal_domino_spine": {
-        "title": "November Assessment Revision Framework (1800–1900)",
+        "title": "Summative Assessment Revision Framework (1800–1900)",
         "subtitle": "Key Turning Points & Causal Dominoes (5-Stage Framework)",
         "stages": [
           {
@@ -5843,8 +6267,8 @@ export default {
         {
           "id": "ws_l6_q2_explain_why",
           "type": "extended_writing",
-          "topic": "November Assessment: Explain Why [12 marks • 30 mins]",
-          "title": "November Assessment: Explain Why [12 marks • 30 mins]",
+          "topic": "Summative Assessment: Explain Why [12 marks • 30 mins]",
+          "title": "Summative Assessment: Explain Why [12 marks • 30 mins]",
           "question": "Explain why there was rapid progress in Public Health between 1800 and 1900. [12 marks • 30 mins]",
           "stimulus": [
             "Dr John Snow and the Broad Street pump investigation (1854)",
@@ -6065,6 +6489,123 @@ export default {
         {
           "q": "What are the rules for your 1 sheet of A4 revision notes in the assessment?",
           "a": "Bullet points, mind maps, statistics, and dates only. NO full continuous sentences or pre-written paragraphs allowed."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1800–1900",
+          "heading": "Deconstructing the Question: The 19th-Century Transformation (1800–1900)",
+          "focus_clue": "How do you structure a 12-mark PEEL response in 30 minutes with sustained evaluation?",
+          "words": [
+            {
+              "term": "\"Explain why there was rapid progress in Public Health between 1800 and 1900.\"",
+              "clue": "In this formal assessment, you are asked: \"Explain why there was rapid progress in Public Health between 1800 and 1900.\" (12 marks • 30 mins)."
+            },
+            {
+              "term": "three developed PEEL paragraphs",
+              "clue": "To achieve top marks, you must write three developed PEEL paragraphs choosing three of the four major historical catalysts, followed by a sustained evaluative conclusion that weighs which factor was the true master spark."
+            },
+            {
+              "term": "evaluative conclusion",
+              "clue": "To achieve top marks, you must write three developed PEEL paragraphs choosing three of the four major historical catalysts, followed by a sustained evaluative conclusion that weighs which factor was the true master spark."
+            }
+          ],
+          "model_sentence": "To answer <strong>\"Explain why there was rapid progress in Public Health between 1800 and 1900.\"</strong>, students structure <strong>three developed PEEL paragraphs</strong> leading to an <strong>evaluative conclusion</strong>.",
+          "title": "Deconstructing the Question: The 19th-Century Transformation (1800–1900)",
+          "dates": "1800–1900"
+        },
+        {
+          "step": 2,
+          "date": "1854",
+          "heading": "Reason 1: Dr John Snow & Scientific Epidemiology (1854)",
+          "focus_clue": "Why was Dr John Snow’s 1854 investigation a foundational reason for 19th-century public health progress?",
+          "words": [
+            {
+              "term": "Dr John Snow",
+              "clue": "The first decisive breakthrough was scientific observation and data analysis led by Dr John Snow."
+            },
+            {
+              "term": "miasma",
+              "clue": "In 1854, the medical establishment stubbornly insisted that cholera was spread by miasma (poisonous air)."
+            },
+            {
+              "term": "spot map",
+              "clue": "By plotting 616 deaths on a spot map, Snow proved that fatalities clustered tightly around the Broad Street water pump."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>Dr John Snow</strong>, strategic pressure surrounding <strong>miasma</strong> intensified, fundamentally altering the situation through <strong>spot map</strong>.",
+          "title": "Reason 1: Dr John Snow & Scientific Epidemiology (1854)",
+          "dates": "1854"
+        },
+        {
+          "step": 3,
+          "date": "1858–1865",
+          "heading": "Reason 2: Sir Joseph Bazalgette & Civil Engineering (1858–1865)",
+          "focus_clue": "How did Bazalgette’s intercepting sewer network transform municipal engineering into life-saving disease prevention?",
+          "words": [
+            {
+              "term": "Sir Joseph Bazalgette",
+              "clue": "The second vital factor was large-scale technological and civil engineering, spearheaded by Sir Joseph Bazalgette."
+            },
+            {
+              "term": "The Great Stink",
+              "clue": "In June 1858, an intense heatwave triggered The Great Stink, which overwhelmed the Houses of Parliament with suffocating stench."
+            },
+            {
+              "term": "laissez-faire",
+              "clue": "Terrified for their own lives, politicians abandoned laissez-faire inertia and granted £3 million for London’s drainage."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>Sir Joseph Bazalgette</strong>, strategic pressure surrounding <strong>The Great Stink</strong> intensified, fundamentally altering the situation through <strong>laissez-faire</strong>.",
+          "title": "Reason 2: Sir Joseph Bazalgette & Civil Engineering (1858–1865)",
+          "dates": "1858–1865"
+        },
+        {
+          "step": 4,
+          "date": "1861",
+          "heading": "Reason 3: Louis Pasteur & The Germ Theory (1861)",
+          "focus_clue": "Why was laboratory confirmation of Germ Theory essential for overcoming ratepayer resistance to clean water?",
+          "words": [
+            {
+              "term": "Louis Pasteur",
+              "clue": "The third crucial factor was microbiological laboratory science, led by French chemist Louis Pasteur."
+            },
+            {
+              "term": "spontaneous generation",
+              "clue": "Before Pasteur, politicians and ratepayers resisted spending money on expensive sewers because they believed disease arose mysteriously from decaying matter (spontaneous generation)."
+            },
+            {
+              "term": "Germ Theory of Disease",
+              "clue": "In 1861, Pasteur published his Germ Theory of Disease."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>Louis Pasteur</strong>, strategic pressure surrounding <strong>spontaneous generation</strong> intensified, fundamentally altering the situation through <strong>Germ Theory of Disease</strong>.",
+          "title": "Reason 3: Louis Pasteur & The Germ Theory (1861)",
+          "dates": "1861"
+        },
+        {
+          "step": 5,
+          "date": "1875",
+          "heading": "Reason 4: Government Legislation & The 1875 Public Health Act",
+          "focus_clue": "Why was compulsory parliamentary legislation the ultimate catalyst that turned scientific and engineering triumphs into nationwide reality?",
+          "words": [
+            {
+              "term": "Public Health Act of 1875",
+              "clue": "The fourth indispensable catalyst was political legislation, culminating in the Public Health Act of 1875 under Prime Minister Benjamin Disraeli."
+            },
+            {
+              "term": "compulsory",
+              "clue": "The 1875 Act made public health compulsory: for the first time, every local council in Britain was legally commanded to appoint a Medical Officer of Health, pave and light streets, collect refuse, and supply clean piped water and covered drainage."
+            },
+            {
+              "term": "Benjamin Disraeli & Parliament",
+              "clue": "The fourth indispensable catalyst was political legislation, culminating in the Public Health Act of 1875 under Prime Minister Benjamin Disraeli."
+            }
+          ],
+          "model_sentence": "Passed under Prime Minister <strong>Benjamin Disraeli & Parliament</strong>, the landmark <strong>Public Health Act of 1875</strong> made sanitation duties strictly <strong>compulsory</strong> nationwide.",
+          "title": "Reason 4: Government Legislation & The 1875 Public Health Act",
+          "dates": "1875"
         }
       ]
     }

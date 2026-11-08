@@ -397,7 +397,7 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
             <div>
               <span style="background: #3b82f6; color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Featured Formal Assessment</span>
-              <h3 style="margin: 8px 0 6px 0; color: #ffffff; font-size: 1.45rem; font-family: 'Playfair Display', serif;">November Assessment: "Why did war break out in 1914?"</h3>
+              <h3 style="margin: 8px 0 6px 0; color: #ffffff; font-size: 1.45rem; font-family: 'Playfair Display', serif;">Summative Assessment: "Why did war break out in 1914?"</h3>
               <p style="margin: 0 0 12px 0; color: #cbd5e1; font-size: 0.92rem; line-height: 1.45; max-width: 650px;">
                 <strong>Sets &amp; Dates:</strong> 9Y: Monday 9th November &bull; 9X: Thursday 12th November [30 mins &bull; 12 marks]<br>
                 <strong>Format:</strong> 3 developed PEEL paragraphs choosing from the 4 key factors. You are permitted 1 single sheet of A4 revision notes (bullet points, mind maps, statistics, and dates only).

@@ -14,6 +14,7 @@ import { switchView } from './navigation.js';
 import { DISCIPLINARY_STRANDS, YEAR_GROUPS_PROGRESSION } from './disciplinary_skills_data.js';
 import { PEDAGOGY_RESEARCH_BANK } from './pedagogy_data.js';
 import { SCHEMES_OF_WORK_DATA } from './scheme_of_work_data.js';
+import { isVerifiedPdf } from './verified_pdf_manifest.js';
 
 let activePortalTab = 'curriculum';
 let selectedSowUnit = 'medieval_england';
@@ -595,12 +596,12 @@ function renderTrackerTab(container) {
                     <span style="display: block; font-size: 0.75rem; color: #64748b;">${u.hours}</span>
                   </td>
                   <td style="padding: 14px 18px;">
-                    <a href="${u.workbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'">
+                    <a href="${isVerifiedPdf(u.workbookPdf) ? u.workbookPdf : `/units/${u.uid}/pupil_workbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'">
                       <i class="fa-solid fa-file-pen" style="color: #2563eb;"></i> ${u.workbookText}
                     </a>
                   </td>
                   <td style="padding: 14px 18px;">
-                    <a href="${u.textbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #0f172a; background: #f8fafc; border: 1px solid #cbd5e1; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='#f8fafc'">
+                    <a href="${isVerifiedPdf(u.textbookPdf) ? u.textbookPdf : `/units/${u.uid}/textbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #0f172a; background: #f8fafc; border: 1px solid #cbd5e1; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='#f8fafc'">
                       <i class="fa-solid fa-book-open" style="color: #475569;"></i> ${u.textbookText}
                     </a>
                   </td>
@@ -609,14 +610,14 @@ function renderTrackerTab(container) {
                   </td>
                   <td style="padding: 14px 18px; text-align: right; white-space: nowrap;">
                     <div style="display: inline-flex; gap: 6px;">
-                      <a href="${u.workbookPdf}" target="_blank" title="Download Pupil Workbook (PDF)" style="padding: 6px 10px; background: #1e3a8a; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
+                      <a href="${isVerifiedPdf(u.workbookPdf) ? u.workbookPdf : `/units/${u.uid}/pupil_workbook.html`}" target="_blank" title="${isVerifiedPdf(u.workbookPdf) ? 'Download Pupil Workbook (PDF)' : 'Open Pupil Workbook'}" style="padding: 6px 10px; background: #1e3a8a; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
                         <i class="fa-solid fa-file-pen"></i> WB
                       </a>
-                      <a href="${u.textbookPdf}" target="_blank" title="Download Master Textbook (PDF)" style="padding: 6px 10px; background: #475569; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
+                      <a href="${isVerifiedPdf(u.textbookPdf) ? u.textbookPdf : `/units/${u.uid}/textbook.html`}" target="_blank" title="${isVerifiedPdf(u.textbookPdf) ? 'Download Master Textbook (PDF)' : 'Open Master Textbook'}" style="padding: 6px 10px; background: #475569; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
                         <i class="fa-solid fa-book-open"></i> TB
                       </a>
                       ${u.combinedPdf ? `
-                      <a href="${u.combinedPdf}" target="_blank" title="Download 24-Page Combined Workbook (PDF)" style="padding: 6px 10px; background: #4f46e5; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
+                      <a href="${isVerifiedPdf(u.combinedPdf) ? u.combinedPdf : `/units/${u.uid}/pupil_workbook.html`}" target="_blank" title="Combined Master Scholar Workbook" style="padding: 6px 10px; background: #4f46e5; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
                         <i class="fa-solid fa-layer-group"></i> 24P
                       </a>` : ''}
                       <button type="button" onclick="window.switchView('lessons', '${u.uid}')" title="Launch Interactive Unit" style="padding: 6px 10px; background: #059669; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.75rem; font-weight: 700;">
@@ -1204,15 +1205,15 @@ function renderCurriculumTab(container) {
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
-            <a href="${currentUnit.textbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #ffffff; border: 1.5px solid #1e3a8a; color: #1e3a8a; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; transition: background 0.15s ease;">
-              <i class="fa-solid fa-book-open"></i> Master Textbook (PDF)
+            <a href="${isVerifiedPdf(currentUnit.textbookPdf) ? currentUnit.textbookPdf : `/units/${currentUnit.uid}/textbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #ffffff; border: 1.5px solid #1e3a8a; color: #1e3a8a; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; transition: background 0.15s ease;">
+              <i class="fa-solid fa-book-open"></i> ${isVerifiedPdf(currentUnit.textbookPdf) ? 'Master Textbook (PDF)' : 'Master Textbook'}
             </a>
-            <a href="${currentUnit.workbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #1e3a8a; color: #ffffff; border: 1.5px solid #1e3a8a; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(30,58,138,0.2);">
-              <i class="fa-solid fa-file-pen"></i> Pupil Workbook (PDF)
+            <a href="${isVerifiedPdf(currentUnit.workbookPdf) ? currentUnit.workbookPdf : `/units/${currentUnit.uid}/pupil_workbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #1e3a8a; color: #ffffff; border: 1.5px solid #1e3a8a; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(30,58,138,0.2);">
+              <i class="fa-solid fa-file-pen"></i> ${isVerifiedPdf(currentUnit.workbookPdf) ? 'Pupil Workbook (PDF)' : 'Pupil Workbook'}
             </a>
             ${currentUnit.combinedPdf ? `
-            <a href="${currentUnit.combinedPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #4f46e5; color: #ffffff; border: 1.5px solid #4f46e5; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(79,70,229,0.25);" title="Download 24-Page Combined Master Scholar Workbook (PDF)">
-              <i class="fa-solid fa-layer-group"></i> Combined Workbook (24p PDF)
+            <a href="${isVerifiedPdf(currentUnit.combinedPdf) ? currentUnit.combinedPdf : `/units/${currentUnit.uid}/pupil_workbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #4f46e5; color: #ffffff; border: 1.5px solid #4f46e5; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(79,70,229,0.25);" title="Download 24-Page Combined Master Scholar Workbook">
+              <i class="fa-solid fa-layer-group"></i> Combined Workbook (24p)
             </a>` : ''}
             <button type="button" onclick="window.switchView('curriculum')" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #eff6ff; color: #1e40af; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease;">
               <i class="fa-solid fa-table-columns"></i> Whole-School Progression Map &rarr;

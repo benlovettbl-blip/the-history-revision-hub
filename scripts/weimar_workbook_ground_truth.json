@@ -1,0 +1,210 @@
+[
+  {
+    "lessonNum": 1,
+    "kt": "KT1",
+    "q12m": "Explain why the Weimar Republic was established in Germany in 1918–1919. [12 marks]",
+    "stimuli": [
+      "Military defeat in the First World War",
+      "The Kiel Mutiny and German Revolution"
+    ],
+    "source_name": "Source A",
+    "q4m_topic": "the condition of Germany in November 1918",
+    "source_origin": "From an account by a British journalist in Berlin, November 1918.",
+    "source_text": "\"The streets are thronged with silent, emaciated crowds in threadbare coats. Men returning from the trenches sit on curbs selling matches, their faces yellow from starvation. Red flags hang from government windows, yet there is neither bread in the bakeries nor coal in the cellars.\""
+  },
+  {
+    "lessonNum": 2,
+    "kt": "KT1",
+    "q12m": "Explain why there were challenges to the Weimar Republic from both the left and right in the years 1919–1923. [12 marks]",
+    "stimuli": [
+      "The Treaty of Versailles (1919)",
+      "The Spartacist Uprising (1919)"
+    ],
+    "source_name": "Source B",
+    "q4m_topic": "German public reactions to the Treaty of Versailles",
+    "source_origin": "From a front-page editorial in the German newspaper Deutsche Zeitung, 28 June 1919.",
+    "source_text": "\"Today in the Hall of Mirrors at Versailles, the disgraceful treaty is being signed. German honor is dragged through the dirt. Never forget the shame of this day! We shall educate our sons for revenge; the German people will reconquer their rightful place among nations.\""
+  },
+  {
+    "lessonNum": 3,
+    "kt": "KT1",
+    "q12m": "Explain why the German economy and international standing recovered in the years 1924–1929. [12 marks]",
+    "stimuli": [
+      "The introduction of the Rentenmark",
+      "The Dawes Plan (1924)"
+    ],
+    "source_name": "Source C",
+    "q4m_topic": "the impact of the Rentenmark and economic recovery in Germany after 1924",
+    "source_origin": "From an account by a German bank clerk in Frankfurt, published in a local newspaper in 1925.",
+    "source_text": "\"The panic has vanished almost overnight. For the first time in ten years, customers walk into our branch calmly depositing wages they know will not evaporate by evening. Rentenmark notes are held with reverence; small shopkeepers no longer change price tags three times an hour, and queues for bread have melted away.\""
+  },
+  {
+    "lessonNum": 4,
+    "kt": "KT1",
+    "q12m": "Explain why there were significant cultural and social changes in Weimar Germany in the years 1924–1929. [12 marks]",
+    "stimuli": [
+      "The growth of the 'New Woman'",
+      "The Bauhaus movement in design and architecture"
+    ],
+    "source_name": "Source D",
+    "q4m_topic": "changes in the lives of German women during the 1920s",
+    "source_origin": "From an article in a Berlin illustrated magazine, Die Dame, published in 1927.",
+    "source_text": "\"The modern German woman has stepped onto the public stage. In the ministries and trading houses of Berlin, thousands of young women earn their own livelihoods as stenographers and bookkeepers. In the evenings, they pack the cinemas and dance halls unchaperoned, wearing practical bobbed hair and ready-made dresses, claiming their constitutional right to equal independence.\""
+  },
+  {
+    "lessonNum": 5,
+    "kt": "KT2",
+    "q12m": "Explain why the Nazi Party (NSDAP) developed rapidly in the years 1920–1922. [12 marks]",
+    "stimuli": [
+      "Hitler’s personal oratory and speeches",
+      "The creation of the SA (Sturmabteilung)"
+    ],
+    "source_name": "Source A",
+    "q4m_topic": "Adolf Hitler's speechmaking in Munich beer halls in 1921",
+    "source_origin": "From the memoirs of a Munich resident who attended a Nazi rally in the Hofbräuhaus, November 1921.",
+    "source_text": "\"The hall was packed to suffocating point with workers, soldiers, and students. When Hitler stepped forward, dead silence fell. He began hoarsely, but within minutes his voice rose to a fanatical roar, gesticulating wildly. He named the guilty politicians who signed the Armistice, and the crowd jumped on chairs screaming approval.\""
+  },
+  {
+    "lessonNum": 6,
+    "kt": "KT2",
+    "q12m": "Explain why the Nazi Party changed its strategy during the 'Lean Years' (1924–1929). [12 marks]",
+    "stimuli": [
+      "The failure of the Munich Putsch (1923)",
+      "The Bamberg Conference (1926)"
+    ],
+    "source_name": "Source B",
+    "q4m_topic": "the Munich Putsch trial in 1924",
+    "source_origin": "From an article in a Munich newspaper reporting on Hitler's trial for high treason, March 1924.",
+    "source_text": "\"The judges listened in respectful silence as Hitler spoke for four hours without interruption. He boldly admitted trying to overthrow the Berlin government, claiming he acted as a patriot to save Germany from Marxism. The court seemed more like a political platform for the defendant than a hall of justice.\""
+  },
+  {
+    "lessonNum": 7,
+    "kt": "KT2",
+    "q12m": "Explain why support for the Nazi Party increased in the years 1929–1932. [12 marks]",
+    "stimuli": [
+      "The Wall Street Crash and mass unemployment",
+      "Nazi propaganda under Joseph Goebbels"
+    ],
+    "source_name": "Source C",
+    "q4m_topic": "why ordinary Germans turned to the Nazi Party during the Great Depression",
+    "source_origin": "From a diary entry by a middle-class schoolteacher in Hamburg, May 1932.",
+    "source_text": "\"Our savings are completely gone, and my husband’s small pension has been cut in half by government decrees. Yesterday we stood in the soup queue behind former factory managers and clerks in frayed collars. The National Socialists held a rally in the square: their speakers did not offer vague compromises, but promised work, bread, and national pride. Desperate men clapped until their hands bled.\""
+  },
+  {
+    "lessonNum": 8,
+    "kt": "KT2",
+    "q12m": "Explain why Adolf Hitler was appointed Chancellor of Germany in January 1933. [12 marks]",
+    "stimuli": [
+      "The political intrigue of Franz von Papen",
+      "The November 1932 election results"
+    ],
+    "source_name": "Source D",
+    "q4m_topic": "Franz von Papen’s scheme to appoint Hitler as Chancellor",
+    "source_origin": "From the memoirs of a German diplomat in Berlin, recalling events in January 1933.",
+    "source_text": "\"Papen was utterly convinced he had outsmarted everyone. He assured President Hindenburg that Hitler would merely be a decorative figurehead in the cabinet, surrounded by experienced conservative ministers who held all key portfolios. Papen laughed off our warnings, declaring with absolute self-assurance that within two months they would have pushed Hitler so far into a corner that he would squeal.\""
+  },
+  {
+    "lessonNum": 9,
+    "kt": "KT3",
+    "q12m": "Explain why the Nazi regime was able to establish a one-party dictatorship by August 1934. [12 marks]",
+    "stimuli": [
+      "The Reichstag Fire (February 1933)",
+      "The Night of the Long Knives (June 1934)"
+    ],
+    "source_name": "Source A",
+    "q4m_topic": "the effect of the Reichstag Fire Decree on German political life",
+    "source_origin": "From the diary of an anti-Nazi German schoolteacher, Berlin, 1 March 1933.",
+    "source_text": "\"A terrible pall of fear has fallen over the city since the fire. Last night, plainclothes police and armed SA broke into my neighbour's flat and dragged his son away without explanation. The telephone lines are tapped; newspapers carrying the slightest criticism are shut down. We speak only in whispers.\""
+  },
+  {
+    "lessonNum": 10,
+    "kt": "KT3",
+    "q12m": "Explain why the Nazi police state and control over the churches was effective in the years 1933–1939. [12 marks]",
+    "stimuli": [
+      "The role of the Gestapo and SS",
+      "The Concordat with the Catholic Church (1933)"
+    ],
+    "source_name": "Source B",
+    "q4m_topic": "public fear of the Gestapo in Nazi Germany",
+    "source_origin": "From an interview with a German factory worker who lived in Essen during the 1930s.",
+    "source_text": "\"You never knew who was listening. The man at the next workbench might be a party block warden, or the woman sweeping the hallway might report you for not giving the Hitler salute. People vanished overnight into protective custody. You learned to keep your head down and look straight ahead.\""
+  },
+  {
+    "lessonNum": 11,
+    "kt": "KT3",
+    "q12m": "Explain why the Nazi regime was able to control and influence attitudes in Germany in the years 1933–1939. [12 marks]",
+    "stimuli": [
+      "The use of radio and the Volksempfänger",
+      "Censorship of newspapers and the arts"
+    ],
+    "source_name": "Source C",
+    "q4m_topic": "how Nazi propaganda was used to influence public opinion",
+    "source_origin": "From an account by an American reporter living in Berlin, published in 1935.",
+    "source_text": "\"One cannot escape the regime’s message for a single waking hour. Loudspeakers on street corners blare out political speeches, and in every cafe the cheap People’s Radio plays marching songs interspersed with news bulletins praising the Führer’s achievements. Even in the cinema, lights remain dimmed until the compulsory newsreel finishes, ensuring every citizen absorbs the state’s triumphant version of reality.\""
+  },
+  {
+    "lessonNum": 12,
+    "kt": "KT3",
+    "q12m": "Explain why active opposition to the Nazi regime was limited in the years 1933–1939. [12 marks]",
+    "stimuli": [
+      "The Gestapo and concentration camps",
+      "Economic recovery and Nazi social policies"
+    ],
+    "source_name": "Source D",
+    "q4m_topic": "the activities and attitudes of the Edelweiss Pirates",
+    "source_origin": "From a confidential Gestapo report on youth opposition in the Rhineland, 1938.",
+    "source_text": "\"Groups of youths between fourteen and seventeen, styling themselves the Edelweiss Pirates, continually evade state authority. They refuse to join the Hitler Youth, wear distinctive metal flower badges on their lapels, and gather secretly in parks at night singing banned songs. They openly mock party officials and have repeatedly assaulted patrol leaders in darkened streets.\""
+  },
+  {
+    "lessonNum": 13,
+    "kt": "KT4",
+    "q12m": "Explain why Nazi policies towards women changed in the years 1933–1939. [12 marks]",
+    "stimuli": [
+      "The slogan Kinder, Küche, Kirche",
+      "The demands of the rearmament economy after 1937"
+    ],
+    "source_name": "Source A",
+    "q4m_topic": "Nazi propaganda aimed at German mothers",
+    "source_origin": "From an official Nazi propaganda booklet, The German Mother and Her Children, published in Berlin, 1936.",
+    "source_text": "\"The German woman does not long for the vote or the office desk. Her holy mission is the creation and preservation of the German family. She must be the source of strength for her husband and the teacher of heroic values to her sons, sending healthy soldiers to serve the Führer.\""
+  },
+  {
+    "lessonNum": 14,
+    "kt": "KT4",
+    "q12m": "Explain why the Nazi regime placed such high importance on controlling the youth in the years 1933–1939. [12 marks]",
+    "stimuli": [
+      "The Hitler Youth and BDM",
+      "Changes to the school curriculum"
+    ],
+    "source_name": "Source B",
+    "q4m_topic": "physical training in the Hitler Youth",
+    "source_origin": "From an account by a former Hitler Youth member, written after the war.",
+    "source_text": "\"We were out in all weathers, marching twenty miles with sixty-pound packs until our boots were full of blood. Weaklings were ridiculed before the whole squad. Everything was competition: obstacle courses, wrestling, bayonet practice. They told us that German boys must be swift as greyhounds, tough as leather, and hard as Krupp steel.\""
+  },
+  {
+    "lessonNum": 15,
+    "kt": "KT4",
+    "q12m": "Explain why the standard of living for German workers changed in the years 1933–1939. [12 marks]",
+    "stimuli": [
+      "The German Labour Front (DAF) and KdF",
+      "The impact of rearmament and public works"
+    ],
+    "source_name": "Source C",
+    "q4m_topic": "the conditions experienced by German workers under the Nazi regime",
+    "source_origin": "From a secret report on working-class morale compiled for the outlawed SPD party in exile (Sopade), 1937.",
+    "source_text": "\"While the official newspapers celebrate the disappearance of unemployment, the reality inside the factories is grim. Men work ten to twelve hours a day without overtime pay, and any complaint to the Labour Front is treated as sabotage. However, the regime keeps grumbling in check by offering subsidized theatre tickets and weekend excursions through Strength Through Joy, which many young workers genuinely welcome.\""
+  },
+  {
+    "lessonNum": 16,
+    "kt": "KT4",
+    "q12m": "Explain why the persecution of Jews and other minorities escalated in Nazi Germany in the years 1933–1939. [12 marks]",
+    "stimuli": [
+      "The Nuremberg Laws (1935)",
+      "The events of Kristallnacht (1938)"
+    ],
+    "source_name": "Source D",
+    "q4m_topic": "the destruction caused during Kristallnacht in November 1938",
+    "source_origin": "From an eyewitness account by a British consular official in Leipzig, 11 November 1938.",
+    "source_text": "\"The devastation in the city centre is appalling. Shattered glass from Jewish-owned shops covers the pavements like gravel, and ancient synagogues have been reduced to smoking ruins while fire brigades stood by merely protecting adjacent Aryan buildings. Crowds of terrified families huddled in side streets as stormtroopers marched past carrying looted goods and dragging shopkeepers toward waiting police vans.\""
+  }
+]

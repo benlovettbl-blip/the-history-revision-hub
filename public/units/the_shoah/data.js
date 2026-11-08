@@ -1,13 +1,13 @@
 export default {
   "synopsis": "Before the catastrophic rupture of the Second World War, over nine million Jewish people inhabited every corner of Europe, speaking dozens of languages and enriching the intellectual, artistic, and political fabric of the continent. Trace how Adolf Hitler and the Nazi regime systematically weaponized racial antisemitism to strip German Jews of civil rights and legal personhood, before exploiting the smoke and chaos of total war to engineer the continent-wide annihilation of six million human beings. From the claustrophobic terror of the Warsaw Ghetto and the secret chronicle of the Ringelblum Archive to the mass shootings of the Einsatzgruppen in the killing fields of Ukraine, the industrial extermination machinery of Auschwitz-Birkenau, and the armed heroism of ghetto fighters and righteous rescuers—confront the deepest moral questions of complicity, indifference, human resistance, and the enduring obligation to remember.",
   "synopsis_tags": [
-      "Pre-War Jewish Life & Culture",
-      "Nuremberg Laws & Kristallnacht (1935–38)",
-      "Warsaw Ghetto & The Ringelblum Archive",
-      "Einsatzgruppen & Holocaust by Bullets",
-      "Auschwitz-Birkenau & Extermination Camps",
-      "Armed Resistance & Righteous Rescuers",
-      "Liberation & The Nuremberg Trials"
+    "Pre-War Jewish Life & Culture",
+    "Nuremberg Laws & Kristallnacht (1935–38)",
+    "Warsaw Ghetto & The Ringelblum Archive",
+    "Einsatzgruppen & Holocaust by Bullets",
+    "Auschwitz-Birkenau & Extermination Camps",
+    "Armed Resistance & Righteous Rescuers",
+    "Liberation & The Nuremberg Trials"
   ],
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
@@ -797,7 +797,7 @@ export default {
               "Pale of Settlement"
             ]
           },
-          "model_answer": "One consequence of the April 1933 Nazi anti-Jewish boycott was the legal and social exclusion of German Jews from public life. Specifically, SA stormtroopers stood outside Jewish shops and doctors' surgeries with placards, deterring customers and signaling to the German public that the Nazi state was systematically isolating Jews from the economy.",
+          "model_answer": "One decisive consequence of the rise of 19th-century racial antisemitism was that anti-Jewish hostility became biological and inescapable rather than religious. Under pseudo-scientific theories pioneered by figures like Wilhelm Marr and Houston Stewart Chamberlain, Jews were classified as a distinct, unchangeable biological \"race\" rather than a religious group, meaning religious conversion or cultural assimilation could no longer offer protection. Specifically, this new racial ideology fueled political antisemitic parties across Germany and Austria and legitimized violent, state-tolerated pogroms in the Russian Empire (such as the 1881–1884 pogrom waves), driving over two million traumatised Jews to flee Eastern Europe.",
           "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]"
         }
       ],
@@ -5650,7 +5650,7 @@ export default {
               "human dignity"
             ]
           },
-          "model_answer": "A primary reason prisoners resisted in extermination camps like Treblinka and Sobibor was the desperate realization that total extermination was imminent. When members of the Sonderkommando realized they were destined to be murdered to conceal Nazi crimes, they organized armed uprisings, blowing up crematoria and helping dozens escape to expose the death camps to the world.",
+          "model_answer": "A primary reason Jewish fighters launched the Warsaw Ghetto Uprising in April 1943 was the definitive knowledge that mass deportation meant industrial slaughter. By early 1943, underground courier reports confirmed that over 265,000 Warsaw Jews deported during the Great Action of summer 1942 had been murdered in Treblinka's gas chambers. Underground resistance organizations, notably the Jewish Combat Organization (ŻOB) led by 23-year-old Mordecai Anielewicz and the Jewish Military Union (ŻZW), recognized that the remaining 50,000 starving inhabitants were slated for complete liquidation.<br><br>Furthermore, the fighters were motivated by a desperate determination to die with honor and resist on their own terms. Armed with only smuggled pistols, homemade Molotov cocktails, and captured weapons, young fighters fought from interconnected cellars and sewer bunkers for nearly a month against heavily armed SS troops equipped with flame-throwers and artillery. As Anielewicz wrote, their armed resistance was not about military survival, but an uncompromising moral assertion of Jewish dignity and defiance against Nazi extermination.",
           "topic": "Question 2: Explain Why [8 marks • 12 mins]"
         }
       ],
@@ -6846,7 +6846,7 @@ export default {
               "military victory first"
             ]
           },
-          "model_answer": "Initially, Soviet troops liberated Majdanek in July 1944 and Auschwitz in January 1945, discovering gas chambers, mass graves, and mountains of victims' shoes and hair left behind by retreating SS guards.<br><br>Following this, British and American forces advancing into Germany liberated camps like Bergen-Belsen and Dachau in April 1945, finding thousands of unburied corpses and starving survivors dying of typhus.<br><br>Finally, Allied liberation provided undeniable photographic and film evidence of Nazi atrocities, which was used to prosecute Nazi war criminals at the 1945–46 Nuremberg Trials.",
+          "model_answer": "Initially, the international response before the outbreak of war was characterized by diplomatic inaction and closed borders. At the July 1938 Évian Conference, convened to address the growing Jewish refugee crisis from Nazi Germany and Austria, 31 of the 32 participating nations (including the US and Britain) refused to raise their immigration quotas, stranding hundreds of thousands of desperate Jews under Nazi control.<br><br>As a result, when systematic mass extermination began following the 1941 invasion of the USSR, verified intelligence smuggled out by Polish resistance courier Jan Karski and the Riegner Telegram reached Allied governments. In December 1942, the Allied powers issued a joint declaration publicly condemning Nazi extermination and promising postwar prosecution. However, despite urgent appeals from Jewish leaders, Allied military commanders consistently refused to divert bombers to destroy the railway lines to Auschwitz-Birkenau, arguing that rapid military victory against the German army was the only effective way to save remaining prisoners.<br><br>Finally, intense political pressure forced US President Franklin D. Roosevelt to create the War Refugee Board in January 1944. Working with Swedish diplomat Raoul Wallenberg in Budapest, the Board funded relief efforts, issued protective passports, and successfully rescued an estimated 200,000 European Jews from deportation in the final eighteen months of the war.",
           "topic": "Question 2: Narrative Account [8 marks • 12 mins]"
         }
       ],
@@ -8055,7 +8055,7 @@ export default {
               "State of Israel (1948)"
             ]
           },
-          "model_answer": "On the one hand, international Holocaust remembrance is vital because it honours the six million Jewish victims and counters dangerous Holocaust denial. Educational memorials, survivor testimonies, and Holocaust Memorial Day teach future generations about the perils of state-sponsored racism and prejudice.<br><br>On the other hand, memory must be matched by active prevention of modern genocide. Since 1945, the world has witnessed mass atrocities in Cambodia, Rwanda, and Srebrenica. Therefore, remembering the Shoah is profoundly important, but its ultimate value lies in educating society to challenge hatred and human rights abuses wherever they occur.",
+          "model_answer": "On the one hand, military liberation by Allied forces in spring 1945 unquestionably marked the end of systematic Nazi mass murder and daily terror. British, American, and Soviet soldiers ended the horrors of gas chambers, slave labor marches, and deliberate starvation, providing immediate emergency medical triage, clean water, and food supplies to tens of thousands of emaciated prisoners who were days away from death.<br><br>On the other hand, the agony of survivors persisted for years after 1945. Most liberated survivors had lost their entire extended families, homes, and communities, leaving them completely destitute with nowhere to go. Over 250,000 Jewish survivors languished for years in allied Displaced Persons (DP) camps behind barbed wire in Germany and Austria because international borders remained closed. Furthermore, survivors who attempted to return to their hometowns in Eastern Europe faced continuing violent antisemitism, such as the July 1946 Kielce pogrom in Poland where 42 Jewish survivors were murdered by local mobs. Coupled with profound, lifelong psychological trauma and survivor guilt, liberation was the beginning of an agonizing process of rebuilding shattered lives. Therefore, while liberation ended direct Nazi murder, intense physical, social, and emotional suffering continued for decades.",
           "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
         }
       ],

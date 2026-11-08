@@ -164,6 +164,48 @@
       "definition": "Soviet policy declared in 1968 stating that Moscow had the right to intervene militarily in any communist state where socialist rule was threatened; renounced by Gorbachev in 1989."
     }
   ],
+  "mock_exams": [
+    {
+      "id": "cold_war_mock_a",
+      "title": "Edexcel GCSE: Superpower Relations and the Cold War, 1941–91",
+      "url": "cold_war_mock_a.html",
+      "has_mark_scheme": true,
+      "mark_scheme_url": "cold_war_mock_a_mark_scheme.html",
+      "paper_reference": "1HI0/P4 (Paper 2)",
+      "total_marks": 32,
+      "time_minutes": 55
+    },
+    {
+      "id": "cold_war_mock_b",
+      "title": "Predicted Mock Paper B (Crises & Flashpoints)",
+      "url": "cold_war_mock_b.html",
+      "has_mark_scheme": true,
+      "mark_scheme_url": "cold_war_mock_b_mark_scheme.html",
+      "paper_reference": "1HI0/P4 (Paper 2)",
+      "total_marks": 32,
+      "time_minutes": 55
+    },
+    {
+      "id": "cold_war_mock_c",
+      "title": "Predicted Mock Paper C (Détente & Summit Diplomacy)",
+      "url": "cold_war_mock_c.html",
+      "has_mark_scheme": true,
+      "mark_scheme_url": "cold_war_mock_c_mark_scheme.html",
+      "paper_reference": "1HI0/P4 (Paper 2)",
+      "total_marks": 32,
+      "time_minutes": 55
+    },
+    {
+      "id": "cold_war_mock_radar",
+      "title": "Predicted Radar Mock Paper (Unexamined Spec Gaps & Overdue Topic Forecast)",
+      "url": "cold_war_mock_radar.html",
+      "has_mark_scheme": true,
+      "mark_scheme_url": "cold_war_mock_radar_mark_scheme.html",
+      "paper_reference": "1HI0/P4 (Paper 2)",
+      "total_marks": 32,
+      "time_minutes": 55
+    }
+  ],
   "lessons": [
     {
       "id": "lesson_1",
@@ -1697,6 +1739,123 @@
           "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]",
           "model": "One consequence of the American atomic bomb was the breakdown of post-war trust and the start of a nuclear arms race. Specifically, when President Truman revealed the atomic bomb at Potsdam and deployed it against Hiroshima, Stalin viewed it as capitalist intimidation. Consequently, Stalin accelerated the Soviet crash nuclear programme, successfully testing their first atomic weapon in August 1949."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1917–1924",
+          "heading": "Incompatible Worldviews: Free Market Capitalism vs Command Socialism",
+          "focus_clue": "Why were Western market capitalism and Soviet command socialism fundamentally incompatible?",
+          "words": [
+            {
+              "term": "United States of America",
+              "clue": "The great European empires of Britain, France, and Germany were bankrupt and devastated, leaving two continental titans standing supreme: the United States of America and the Union of Soviet Socialist Republics (USSR)."
+            },
+            {
+              "term": "Union of Soviet Socialist Republics (USSR)",
+              "clue": "The great European empires of Britain, France, and Germany were bankrupt and devastated, leaving two continental titans standing supreme: the United States of America and the Union of Soviet Socialist Republics (USSR)."
+            },
+            {
+              "term": "free-market capitalism",
+              "clue": "The United States championed free-market capitalism, an economic doctrine rooted in private enterprise, the profit motive, freedom of contract, and minimal state interference in commerce."
+            }
+          ],
+          "model_sentence": "Deep ideological conflict between the capitalist <strong>United States of America</strong> and the communist <strong>Union of Soviet Socialist Republics (USSR)</strong> pitted the principles of <strong>free-market capitalism</strong> against totalitarian state control.",
+          "title": "Incompatible Worldviews: Free Market Capitalism vs Command Socialism",
+          "dates": "1917–1924"
+        },
+        {
+          "step": 2,
+          "date": "1920s–1930s",
+          "heading": "Political Systems: Multi-Party Democracy vs Bolshevik Dictatorship",
+          "focus_clue": "How did the Soviet one-party state convince Western nations that peaceful political coexistence was impossible?",
+          "words": [
+            {
+              "term": "constitutional liberal democracy",
+              "clue": "The United States was a constitutional liberal democracy founded upon universal suffrage, competing multi-party elections, a free press, religious liberty, and the rule of law guaranteed by an independent judiciary."
+            },
+            {
+              "term": "totalitarian one-party dictatorship",
+              "clue": "Conversely, the USSR was a totalitarian one-party dictatorship governed exclusively by the Communist Party of the Soviet Union (CPSU)."
+            },
+            {
+              "term": "Soviet Politburo & Western Democracies",
+              "clue": "Tensions traced back to 1918 when Allied troops in Russia intervened during the civil war, feeding Western fear of the Red Terror and entrenching a defensive Soviet siege mentality."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>constitutional liberal democracy</strong>, the development of <strong>totalitarian one-party dictatorship</strong> directly precipitated <strong>Soviet Politburo & Western Democracies</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Political Systems: Multi-Party Democracy vs Bolshevik Dictatorship",
+          "dates": "1920s–1930s"
+        },
+        {
+          "step": 3,
+          "date": "1918–1939",
+          "heading": "Historical Grievances: 1917 Intervention, Appeasement & The Nazi-Soviet Pact",
+          "focus_clue": "Why did pre-Second World War events entrench deep psychological mistrust between Britain, the US, and the USSR?",
+          "words": [
+            {
+              "term": "Bolshevik Revolution of 1917",
+              "clue": "Following the Bolshevik Revolution of 1917, Western powers—including the United States, Britain, and France—dispatched expeditionary armies to Russia to fight alongside anti-communist \"White\" forces, attempting to strangle the fledgling Bolshevik regime in its cradle."
+            },
+            {
+              "term": "Nazi-Soviet Pact",
+              "clue": "In turn, Western democracies were horrified in August 1939 when Stalin signed the cynical Nazi-Soviet Pact with Hitler, partitioning Poland and supplying the German war machine with grain and oil while London fought alone against the Luftwaffe."
+            },
+            {
+              "term": "Allied Interveners & Nazi-Soviet Negotiators",
+              "clue": "Historically, allied interveners & nazi-soviet negotiators proved critical in shaping the outcome of Historical Grievances: 1917 Intervention, Appeasement & The Nazi-Soviet Pact."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Bolshevik Revolution of 1917</strong>, the development of <strong>Nazi-Soviet Pact</strong> directly precipitated <strong>Allied Interveners & Nazi-Soviet Negotiators</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Historical Grievances: 1917 Intervention, Appeasement & The Nazi-Soviet Pact",
+          "dates": "1918–1939"
+        },
+        {
+          "step": 4,
+          "date": "July–Aug 1945",
+          "heading": "The Nuclear Monopoly & The Emerging Balance of Terror",
+          "focus_clue": "How did the American atomic monopoly alter the strategic power balance at the end of the Second World War?",
+          "words": [
+            {
+              "term": "nuclear monopoly",
+              "clue": "When President Harry S. Truman deployed two atomic bombs against Hiroshima and Nagasaki in August 1945, killing over 150,000 people and forcing Japan's surrender, the United States established a temporary nuclear monopoly."
+            },
+            {
+              "term": "nuclear arms race",
+              "clue": "Stalin immediately ordered Soviet physicists to work day and night to develop an atomic bomb, triggering a four-decade nuclear arms race where both nations stockpiled thousands of thermonuclear warheads capable of extinguishing human civilization."
+            },
+            {
+              "term": "President Harry S. Truman & Manhattan Project",
+              "clue": "When President Harry S. Truman deployed two atomic bombs against Hiroshima and Nagasaki in August 1945, killing over 150,000 people and forcing Japan's surrender, the United States established a temporary nuclear monopoly."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>nuclear monopoly</strong>, the development of <strong>nuclear arms race</strong> directly precipitated <strong>President Harry S. Truman & Manhattan Project</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Nuclear Monopoly & The Emerging Balance of Terror",
+          "dates": "July–Aug 1945"
+        },
+        {
+          "step": 5,
+          "date": "1945–1946",
+          "heading": "The Historical Verdict: Geopolitical Vacuum in a Ruined Europe",
+          "focus_clue": "Why did the defeat of Nazi Germany inevitably bring the US and USSR into direct geopolitical rivalry?",
+          "words": [
+            {
+              "term": "Red Army & Western Allies",
+              "clue": "It illustrates Western alarm that Stalin was violently severing Eastern Europe from the democratic world, sealing millions behind an impenetrable barrier guarded by the Red Army."
+            },
+            {
+              "term": "Bipolar superpower rivalry",
+              "clue": "With the traditional European powers utterly ruined by 1945, the United States and the Soviet Union emerged as the two dominant ideological poles of world affairs."
+            },
+            {
+              "term": "Divided spheres of influence in Europe",
+              "clue": "Europe was permanently bifurcated into rival ideological camps, with Soviet military hegemony across the East balanced by American economic and military power in the West."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Red Army & Western Allies</strong>, the development of <strong>Bipolar superpower rivalry</strong> directly precipitated <strong>Divided spheres of influence in Europe</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Historical Verdict: Geopolitical Vacuum in a Ruined Europe",
+          "dates": "1945–1946"
+        }
       ]
     },
     {
@@ -3212,6 +3371,123 @@
           "model_answer": "Initially, at the Yalta Conference in February 1945, the Grand Alliance maintained cooperation. Churchill, Roosevelt, and Stalin agreed to divide Germany and Berlin into four zones, establish the United Nations, and signed the Declaration on Liberated Europe promising free elections.<br><br>However, relations deteriorated over Poland. Stalin broke his promise by arresting non-communist leaders and installing the pro-Soviet Lublin government. Tensions worsened when Roosevelt died in April 1945 and was replaced by Harry S. Truman, who adopted a confrontational stance toward Soviet expansion in Eastern Europe.<br><br>Finally, relations collapsed at the Potsdam Conference in July–August 1945. Truman informed Stalin of the successful Trinity atomic test, refusing Soviet demands for $10 billion in German reparations. With atomic monopoly, the US resisted Soviet demands, ending the conference without agreement and cementing the ideological division of Europe.",
           "topic": "Question 2: Narrative Account [8 marks • 12 mins]",
           "model": "Initially, at the Yalta Conference in February 1945, the Grand Alliance maintained cooperation. Churchill, Roosevelt, and Stalin agreed to divide Germany and Berlin into four zones, establish the United Nations, and signed the Declaration on Liberated Europe promising free elections.<br><br>However, relations deteriorated over Poland. Stalin broke his promise by arresting non-communist leaders and installing the pro-Soviet Lublin government. Tensions worsened when Roosevelt died in April 1945 and was replaced by Harry S. Truman, who adopted a confrontational stance toward Soviet expansion in Eastern Europe.<br><br>Finally, relations collapsed at the Potsdam Conference in July–August 1945. Truman informed Stalin of the successful Trinity atomic test, refusing Soviet demands for $10 billion in German reparations. With atomic monopoly, the US resisted Soviet demands, ending the conference without agreement and cementing the ideological division of Europe."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "Feb 1945",
+          "heading": "The Yalta Summit (February 1945): The Big Three's Fragile Consensus",
+          "focus_clue": "How did ambiguous agreements at Yalta conceal fundamental disagreements between the Big Three?",
+          "words": [
+            {
+              "term": "Franklin D. Roosevelt",
+              "clue": "In February 1945, with Nazi Germany collapsing under simultaneous Allied offensives, the \"Big Three\" leaders—US President Franklin D. Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin—convened at the Crimean resort of Yalta."
+            },
+            {
+              "term": "Winston Churchill",
+              "clue": "In February 1945, with Nazi Germany collapsing under simultaneous Allied offensives, the \"Big Three\" leaders—US President Franklin D. Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin—convened at the Crimean resort of Yalta."
+            },
+            {
+              "term": "Joseph Stalin",
+              "clue": "In February 1945, with Nazi Germany collapsing under simultaneous Allied offensives, the \"Big Three\" leaders—US President Franklin D. Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin—convened at the Crimean resort of Yalta."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Franklin D. Roosevelt</strong>, the development of <strong>Winston Churchill</strong> directly precipitated <strong>Joseph Stalin</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Yalta Summit (February 1945): The Big Three's Fragile Consensus",
+          "dates": "Feb 1945"
+        },
+        {
+          "step": 2,
+          "date": "Feb–Mar 1945",
+          "heading": "The Polish Question & The Declaration on Liberated Europe",
+          "focus_clue": "Why did the fate of post-war Poland become the primary catalyst for Allied breakdown?",
+          "words": [
+            {
+              "term": "Declaration on Liberated Europe",
+              "clue": "To preserve allied unity, Roosevelt brokered a vague compromise: Stalin signed the Declaration on Liberated Europe, pledging to permit \"free and unfettered elections\" across all liberated territories."
+            },
+            {
+              "term": "London Poles vs Lublin Poles & Stalin",
+              "clue": "Stalin signed the Declaration on Liberated Europe pledges for free elections, yet he bypassed the London government exiled during the war and installed the Lublin puppet regime in Warsaw."
+            },
+            {
+              "term": "Lublin Polish Communist Government",
+              "clue": "Stalin insisted that Poland must have a friendly government to safeguard Soviet borders, imposing the pro-Moscow Lublin Committee despite Western protests."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Declaration on Liberated Europe</strong>, the development of <strong>London Poles vs Lublin Poles & Stalin</strong> directly precipitated <strong>Lublin Polish Communist Government</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Polish Question & The Declaration on Liberated Europe",
+          "dates": "Feb–Mar 1945"
+        },
+        {
+          "step": 3,
+          "date": "July 1945",
+          "heading": "Changing of the Guard: Truman, Attlee, and Stalin at Potsdam (July 1945)",
+          "focus_clue": "How did changes in leadership between Yalta and Potsdam accelerate Cold War tensions?",
+          "words": [
+            {
+              "term": "Harry S. Truman",
+              "clue": "Franklin D. Roosevelt had died suddenly of a cerebral hemorrhage in April, replaced by Vice President Harry S. Truman—a blunt, pugnacious Midwesterner who viewed Soviet behavior through a lens of profound moral suspicion."
+            },
+            {
+              "term": "Clement Attlee",
+              "clue": "Midway through the conference, Winston Churchill was voted out of office in a British general election, replaced by Labour Prime Minister Clement Attlee."
+            },
+            {
+              "term": "Harry S. Truman, Clement Attlee & Joseph Stalin",
+              "clue": "Franklin D. Roosevelt had died suddenly of a cerebral hemorrhage in April, replaced by Vice President Harry S. Truman—a blunt, pugnacious Midwesterner who viewed Soviet behavior through a lens of profound moral suspicion."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>Harry S. Truman</strong>, strategic pressure surrounding <strong>Clement Attlee</strong> intensified, fundamentally altering the situation through <strong>Harry S. Truman, Clement Attlee & Joseph Stalin</strong>.",
+          "title": "Changing of the Guard: Truman, Attlee, and Stalin at Potsdam (July 1945)",
+          "dates": "July 1945"
+        },
+        {
+          "step": 4,
+          "date": "July 1945",
+          "heading": "The Trinity Test & Truman's Atomic Diplomatic Leverage",
+          "focus_clue": "Why did Truman's disclosure of the atomic bomb at Potsdam increase Soviet suspicion rather than compliance?",
+          "words": [
+            {
+              "term": "President Truman & Premier Stalin",
+              "clue": "During a break in negotiations on 24 July, Truman casually approached Stalin and remarked that the United States possessed \"a new weapon of unusual destructive force.\" Stalin nodded politely, urging Truman to make \"good use of it against the Japanese.\" In reality, Soviet espionage agents in the Manhattan Project had kept Moscow fully informed of American nuclear progress; Stalin immediately dispatched urgent orders to speed up the Soviet bomb project."
+            },
+            {
+              "term": "Manhattan Project Trinity Detonation",
+              "clue": "On 16 July 1945, American scientists successfully detonated the world's first atomic weapon in New Mexico, giving President Truman immense diplomatic confidence."
+            },
+            {
+              "term": "Nuclear diplomacy at Potsdam",
+              "clue": "Armed with atomic monopoly, Truman took a hardline stance against Stalin at Potsdam, accelerating mutual suspicion and sparking the post-war nuclear arms race."
+            }
+          ],
+          "model_sentence": "Under the decisive authority of <strong>President Truman & Premier Stalin</strong>, strategic pressure surrounding <strong>Strategic Catalyst</strong> intensified, fundamentally altering the situation through <strong>Lasting Consequence</strong>.",
+          "title": "The Trinity Test & Truman's Atomic Diplomatic Leverage",
+          "dates": "July 1945"
+        },
+        {
+          "step": 5,
+          "date": "Aug 1945",
+          "heading": "Reparations and the Division of Germany: The Grand Alliance Dies",
+          "focus_clue": "How did reparations agreements at Potsdam lay the foundation for the permanent division of Germany?",
+          "words": [
+            {
+              "term": "Allied Control Council & Four Powers",
+              "clue": "Berlin, although situated 100 miles deep within the Soviet occupation zone, would likewise be divided into four administrative sectors governed by an Allied Control Council."
+            },
+            {
+              "term": "Reparations",
+              "clue": "The primary point of contention at Potsdam was post-war German reparations."
+            },
+            {
+              "term": "Grand Alliance",
+              "clue": "The Grand Alliance was dead, replaced by suspicion, fear, and hostile confrontation."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Allied Control Council & Four Powers</strong>, the development of <strong>Reparations</strong> directly precipitated <strong>Grand Alliance</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Reparations and the Division of Germany: The Grand Alliance Dies",
+          "dates": "Aug 1945"
         }
       ]
     },
@@ -4793,7 +5069,148 @@
           },
           "model_answer": "Source A is useful because it provides official evidence of the Western Allies' resolve to resist Soviet pressure in Berlin. Foreign Secretary Ernest Bevin states Britain's determination to supply 2.5 million West Berliners by air rather than surrender the city. This matches my knowledge of Operation Vittles, which flew over 2.3 million tons of supplies into Berlin. However, as a parliamentary speech aimed at rallying domestic morale, Bevin downplays the terrifying risk of war with the USSR.<br><br>Source B is useful because it reveals the Soviet motive for the blockade: anger over Western economic unification and the introduction of the Deutsche Mark. From my knowledge, Stalin closed all road, rail, and canal routes on 24 June 1948 to force the Western powers out of Berlin. Overall, both sources are highly useful for showing the causes of the blockade and the Allied determination to fly supplies into West Berlin.",
           "topic": "Question 3: Forensic Source Utility [8 marks • 10 mins]",
-          "model": "Source A is useful because it provides official evidence of the Western Allies' resolve to resist Soviet pressure in Berlin. Foreign Secretary Ernest Bevin states Britain's determination to supply 2.5 million West Berliners by air rather than surrender the city. This matches my knowledge of Operation Vittles, which flew over 2.3 million tons of supplies into Berlin. However, as a parliamentary speech aimed at rallying domestic morale, Bevin downplays the terrifying risk of war with the USSR.<br><br>Source B is useful because it reveals the Soviet motive for the blockade: anger over Western economic unification and the introduction of the Deutsche Mark. From my knowledge, Stalin closed all road, rail, and canal routes on 24 June 1948 to force the Western powers out of Berlin. Overall, both sources are highly useful for showing the causes of the blockade and the Allied determination to fly supplies into West Berlin."
+          "model": "Source A is useful because it provides official evidence of the Western Allies' resolve to resist Soviet pressure in Berlin. Foreign Secretary Ernest Bevin states Britain's determination to supply 2.5 million West Berliners by air rather than surrender the city. This matches my knowledge of Operation Vittles, which flew over 2.3 million tons of supplies into Berlin. However, as a parliamentary speech aimed at rallying domestic morale, Bevin downplays the terrifying risk of war with the USSR.<br><br>Source B is useful because it reveals the Soviet motive for the blockade: anger over Western economic unification and the introduction of the Deutsche Mark. From my knowledge, Stalin closed all road, rail, and canal routes on 24 June 1948 to force the Western powers out of Berlin. Overall, both sources are highly useful for showing the causes of the blockade and the Allied determination to fly supplies into West Berlin.",
+          "source_a": {
+            "title": "Source A: Speech by Foreign Secretary Ernest Bevin to the House of Commons (30 June 1948)",
+            "badge": "Official Parliamentary Record • 1948",
+            "author": "Ernest Bevin, British Foreign Secretary, addressing Parliament (30 June 1948)",
+            "text": "The House will be aware of the grave situation which has arisen in Berlin. The Soviet authorities have cut off all rail and road traffic between the Western zones and Berlin. His Majesty's Government cannot be forced out of Berlin by starvation or coercion. We have put into operation an organized air service to carry essential flour, wheat, and coal into the British and American sectors. We are determined to prevent the 2.5 million inhabitants of West Berlin from being starved into political surrender."
+          },
+          "source_b": {
+            "title": "Source B: Political Cartoon by David Low, Evening Standard (July 1948)",
+            "badge": "British Political Cartoon • 1948",
+            "author": "David Low, Evening Standard, London (July 1948)",
+            "text": "[Visual Cartoon: Depicts a massive Soviet barricade across the land highway to Berlin, while overhead, an unbroken stream of British and American cargo aircraft flies directly over the blockade carrying coal, flour, and medical supplies into Tempelhof Airport, leaving Soviet guards watching helplessly below.]"
+          },
+          "sourceA": {
+            "title": "Source A: Speech by Foreign Secretary Ernest Bevin to the House of Commons (30 June 1948)",
+            "badge": "Official Parliamentary Record • 1948",
+            "author": "Ernest Bevin, British Foreign Secretary, addressing Parliament (30 June 1948)",
+            "text": "The House will be aware of the grave situation which has arisen in Berlin. The Soviet authorities have cut off all rail and road traffic between the Western zones and Berlin. His Majesty's Government cannot be forced out of Berlin by starvation or coercion. We have put into operation an organized air service to carry essential flour, wheat, and coal into the British and American sectors. We are determined to prevent the 2.5 million inhabitants of West Berlin from being starved into political surrender."
+          },
+          "sourceB": {
+            "title": "Source B: Political Cartoon by David Low, Evening Standard (July 1948)",
+            "badge": "British Political Cartoon • 1948",
+            "author": "David Low, Evening Standard, London (July 1948)",
+            "text": "[Visual Cartoon: Depicts a massive Soviet barricade across the land highway to Berlin, while overhead, an unbroken stream of British and American cargo aircraft flies directly over the blockade carrying coal, flour, and medical supplies into Tempelhof Airport, leaving Soviet guards watching helplessly below.]"
+          }
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "March 1946",
+          "heading": "Churchill's Fulton Speech: The Descent of the Iron Curtain (1946)",
+          "focus_clue": "Why did Churchill's 'Iron Curtain' speech mark a decisive turning point in Western public perceptions of the USSR?",
+          "words": [
+            {
+              "term": "\"salami tactics\"",
+              "clue": "Using what Hungarian communist Mátyás Rákosi termed \"salami tactics\"—slicing away non-communist political parties piece by piece through rigged elections, intimidation, and secret police murder—Stalin installed obedient puppet regimes in Poland, Romania, Bulgaria, Hungary, and Albania."
+            },
+            {
+              "term": "Winston Churchill & Harry Truman",
+              "clue": "In March 1946, Winston Churchill traveled to Westminster College in Fulton, Missouri, to deliver his seminal \"Sinews of Peace\" address with President Truman seated beside him."
+            },
+            {
+              "term": "Iron Curtain",
+              "clue": "Churchill warned the world in stark, unforgettable terms: \"From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the Continent.\" Behind this line, ancient capitals were subjected to Soviet control, crushing democratic liberties."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>\"salami tactics\"</strong>, the development of <strong>Winston Churchill & Harry Truman</strong> directly precipitated <strong>Iron Curtain</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Churchill's Fulton Speech: The Descent of the Iron Curtain (1946)",
+          "dates": "March 1946"
+        },
+        {
+          "step": 2,
+          "date": "1947",
+          "heading": "The Truman Doctrine & Marshall Plan: The Strategy of Containment (1947)",
+          "focus_clue": "How did the Truman Doctrine and Marshall Plan operationalize the strategy of containment?",
+          "words": [
+            {
+              "term": "Truman Doctrine",
+              "clue": "On 12 March 1947, President Truman addressed a joint session of Congress to announce a revolutionary departure in American foreign policy: the Truman Doctrine."
+            },
+            {
+              "term": "Marshall Plan",
+              "clue": "Truman pledged that the United States would provide financial and military aid to \"free peoples who are resisting attempted subjugation by armed minorities or by outside pressures.\" To back this commitment with economic muscle, Secretary of State George Marshall announced the Marshall Plan in June 1947, offering over $13 billion in economic aid to rebuild shattered European economies."
+            },
+            {
+              "term": "President Truman & George C. Marshall",
+              "clue": "Truman pledged that the United States would provide financial and military aid to \"free peoples who are resisting attempted subjugation by armed minorities or by outside pressures.\" To back this commitment with economic muscle, Secretary of State George Marshall announced the Marshall Plan in June 1947, offering over $13 billion in economic aid to rebuild shattered European economies."
+            }
+          ],
+          "model_sentence": "Committed to the containment of communism, US President Truman announced the <strong>Truman Doctrine</strong> in 1947, followed by the economic aid of the <strong>Marshall Plan</strong> to stabilize war-torn democracies against <strong>President Truman & George C. Marshall</strong>.",
+          "title": "The Truman Doctrine & Marshall Plan: The Strategy of Containment (1947)",
+          "dates": "1947"
+        },
+        {
+          "step": 3,
+          "date": "1947–1948",
+          "heading": "Soviet Salami Tactics & Cominform: Consolidating Eastern Europe",
+          "focus_clue": "Why did Soviet 'salami tactics' in Eastern Europe convince Western powers that diplomatic negotiation had failed?",
+          "words": [
+            {
+              "term": "Cominform",
+              "clue": "In September 1947, Stalin established the Cominform (Communist Information Bureau) to coordinate communist parties across Europe and enforce rigid ideological obedience to Moscow."
+            },
+            {
+              "term": "Prague Coup",
+              "clue": "Any lingering hopes for Eastern European democracy were violently extinguished in February 1948 during the Prague Coup, when Czech communists seized complete power, and pro-Western Foreign Minister Jan Masaryk fell to his death from a government window."
+            },
+            {
+              "term": "Joseph Stalin & Andrei Zhdanov",
+              "clue": "Historically, joseph stalin & andrei zhdanov proved critical in shaping the outcome of Soviet Salami Tactics & Cominform: Consolidating Eastern Europe."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Cominform</strong>, the development of <strong>Prague Coup</strong> directly precipitated <strong>Joseph Stalin & Andrei Zhdanov</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Soviet Salami Tactics & Cominform: Consolidating Eastern Europe",
+          "dates": "1947–1948"
+        },
+        {
+          "step": 4,
+          "date": "1948–1949",
+          "heading": "The Berlin Blockade & Operation Vittles: The 11-Month Airlift (1948–49)",
+          "focus_clue": "How did the Berlin Airlift transform former German enemies into frontline Western allies?",
+          "words": [
+            {
+              "term": "Deutsche Mark",
+              "clue": "Frustrated by Soviet obstructionism, the Western Allies merged their occupation zones in 1948 to create a unified economic entity (Trizonia) and introduced a stable new currency, the Deutsche Mark, to revive economic growth."
+            },
+            {
+              "term": "Berlin Airlift",
+              "clue": "Instead of surrendering or invading by land, Truman launched the Berlin Airlift (Operation Vittles)."
+            },
+            {
+              "term": "General Lucius Clay & Ernest Bevin",
+              "clue": "Historically, general lucius clay & ernest bevin proved critical in shaping the outcome of The Berlin Blockade & Operation Vittles: The 11-Month Airlift (1948–49)."
+            }
+          ],
+          "model_sentence": "When Soviet forces severed land routes in the <strong>Deutsche Mark</strong>, Western powers sustained West Berlin through the round-the-clock <strong>Berlin Airlift</strong>, cementing the division of Germany into <strong>General Lucius Clay & Ernest Bevin</strong>.",
+          "title": "The Berlin Blockade & Operation Vittles: The 11-Month Airlift (1948–49)",
+          "dates": "1948–1949"
+        },
+        {
+          "step": 5,
+          "date": "1949–1955",
+          "heading": "The Permanent Division: FRG, GDR, NATO (1949) and Warsaw Pact (1955)",
+          "focus_clue": "Why did the Berlin Crisis result in the formal military and political partition of Europe?",
+          "words": [
+            {
+              "term": "Federal Republic of Germany (FRG / West Germany)",
+              "clue": "In May 1949, the western zones formally unified to create the democratic Federal Republic of Germany (FRG / West Germany), with its capital at Bonn."
+            },
+            {
+              "term": "German Democratic Republic (GDR / East Germany)",
+              "clue": "In May 1949, the western zones formally unified to create the democratic Federal Republic of Germany (FRG / West Germany), with its capital at Bonn."
+            },
+            {
+              "term": "NATO",
+              "clue": "In April 1949, twelve Western nations signed the North Atlantic Treaty, creating NATO: a military alliance based on collective security (Article 5: an attack on one was an attack on all)."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Federal Republic of Germany (FRG / West Germany)</strong>, the development of <strong>German Democratic Republic (GDR / East Germany)</strong> directly precipitated <strong>NATO</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Permanent Division: FRG, GDR, NATO (1949) and Warsaw Pact (1955)",
+          "dates": "1949–1955"
         }
       ]
     },
@@ -6385,6 +6802,123 @@
           "topic": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
           "model": "On the one hand, American aggression was a primary catalyst for the crisis. Following Fidel Castro's 1959 revolution, the CIA orchestrated the disastrous April 1961 Bay of Pigs invasion to overthrow the Cuban government. When this failed, Operation Mongoose launched continuous sabotage and assassination attempts against Castro. Furthermore, the US deployed nuclear Jupiter missiles to Turkey, directly threatening the Soviet border. Nikita Khrushchev placed missiles in Cuba partly to defend a socialist ally from another US invasion.<br><br>On the other hand, the reckless secret actions of Nikita Khrushchev were equally responsible for triggering the crisis. By secretly shipping nuclear warheads and ballistic missiles 90 miles from Florida, Khrushchev attempted to dramatically shift the nuclear balance of power in one stroke. Deploying offensive weapons in secret violated established superpower norms, forcing President Kennedy to impose a naval blockade ('quarantine') on 22 October 1962.<br><br>In conclusion, while American hostility drove Cuba into the Soviet camp, Khrushchev's decision to secretly deploy offensive nuclear missiles was the decisive spark that brought the world to the brink of nuclear war."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1959–1961",
+          "heading": "The Cuban Revolution: Castro, Nationalization, and Soviet Alliance (1959)",
+          "focus_clue": "How did the failed Bay of Pigs invasion push revolutionary Cuba into Soviet military dependence?",
+          "words": [
+            {
+              "term": "Fidel Castro",
+              "clue": "In January 1959, young revolutionary guerrilla leader Fidel Castro overthrew the corrupt, US-backed military dictatorship of Fulgencio Batista in Cuba, just ninety miles south of Key West, Florida."
+            },
+            {
+              "term": "Nikita Khrushchev",
+              "clue": "Premier Nikita Khrushchev eagerly welcomed an ideological ally directly in the Western hemisphere, purchasing Cuban sugar and supplying Havana with crude oil and military equipment."
+            },
+            {
+              "term": "John F. Kennedy",
+              "clue": "In April 1961, newly inaugurated President John F. Kennedy authorized the catastrophic Bay of Pigs invasion: a CIA-orchestrated paramilitary assault by 1,400 Cuban exiles that was decisively crushed by Castro's forces within 72 hours, humiliating Kennedy and pushing Cuba entirely into Moscow's orbit."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Fidel Castro</strong>, the development of <strong>Nikita Khrushchev</strong> directly precipitated <strong>John F. Kennedy</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Cuban Revolution: Castro, Nationalization, and Soviet Alliance (1959)",
+          "dates": "1959–1961"
+        },
+        {
+          "step": 2,
+          "date": "14–16 Oct 1962",
+          "heading": "The Discovery: U-2 Spy Planes & Operation Anadyr (October 1962)",
+          "focus_clue": "Why did the photographic discovery of Soviet missile sites in Cuba trigger an immediate national security emergency?",
+          "words": [
+            {
+              "term": "Operation Anadyr",
+              "clue": "In the summer of 1962, Khrushchev initiated a clandestine gamble codenamed Operation Anadyr: the secret shipment of over 40,000 Soviet troops and dozens of medium- and intermediate-range nuclear ballistic missiles (MRBMs and IRBMs) to Cuba."
+            },
+            {
+              "term": "U-2 reconnaissance plane",
+              "clue": "On 14 October 1962, a high-altitude US Air Force U-2 reconnaissance plane piloted by Major Richard Heyser photographed Soviet nuclear missile launch pads under construction in San Cristóbal."
+            },
+            {
+              "term": "Major Richard Heyser & ExComm",
+              "clue": "On 14 October 1962, a high-altitude US Air Force U-2 reconnaissance plane piloted by Major Richard Heyser photographed Soviet nuclear missile launch pads under construction in San Cristóbal."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Operation Anadyr</strong>, the development of <strong>U-2 reconnaissance plane</strong> directly precipitated <strong>Major Richard Heyser & ExComm</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Discovery: U-2 Spy Planes & Operation Anadyr (October 1962)",
+          "dates": "14–16 Oct 1962"
+        },
+        {
+          "step": 3,
+          "date": "22–24 Oct 1962",
+          "heading": "Thirteen Days on the Brink: ExComm, Quarantine & DEFCON 2",
+          "focus_clue": "How did Kennedy's choice of a naval quarantine balance military firmness with diplomatic room for de-escalation?",
+          "words": [
+            {
+              "term": "ExComm",
+              "clue": "Kennedy convened an emergency council of twelve top national security advisors known as ExComm (Executive Committee of the National Security Council)."
+            },
+            {
+              "term": "\"quarantine\"",
+              "clue": "Instead, Kennedy chose a middle course: a naval blockade, diplomatically termed a \"quarantine\" to avoid an official declaration of war."
+            },
+            {
+              "term": "President Kennedy & US Navy",
+              "clue": "On the morning of 16 October, President Kennedy was shown the reconnaissance photographs, initiating thirteen of the most terrifying days in human history."
+            }
+          ],
+          "model_sentence": "When Soviet missile bases were discovered in Cuba in 1962, President <strong>ExComm</strong> enforced a naval quarantine, prompting Soviet Premier <strong>\"quarantine\"</strong> to withdraw the warheads in exchange for US concessions regarding <strong>President Kennedy & US Navy</strong>.",
+          "title": "Thirteen Days on the Brink: ExComm, Quarantine & DEFCON 2",
+          "dates": "22–24 Oct 1962"
+        },
+        {
+          "step": 4,
+          "date": "26–27 Oct 1962",
+          "heading": "Secret Diplomacy: Turkey, Quarantine & Khrushchev's Telegrams",
+          "focus_clue": "Why was back-channel compromise over missiles in Turkey essential to resolving the crisis?",
+          "words": [
+            {
+              "term": "Vasili Arkhipov",
+              "clue": "Simultaneously, a Soviet submarine (B-59) depth-charged by US destroyers nearly launched a nuclear torpedo, prevented only by the courageous refusal of officer Vasili Arkhipov."
+            },
+            {
+              "term": "Robert Kennedy & Ambassador Anatoly Dobrynin",
+              "clue": "Desperate to avoid catastrophe, Attorney General Robert F. Kennedy met secretly with Soviet Ambassador Anatoly Dobrynin, hammering out a compromise."
+            },
+            {
+              "term": "DEFCON",
+              "clue": "With US nuclear forces placed at DEFCON 2 maximum alert, global catastrophe was narrowly averted when Soviet submarine officer Vasily Arkhipov blocks a nuclear torpedo launch."
+            }
+          ],
+          "model_sentence": "When Soviet missile bases were discovered in Cuba in 1962, President <strong>Vasili Arkhipov</strong> enforced a naval quarantine, prompting Soviet Premier <strong>Robert Kennedy & Ambassador Anatoly Dobrynin</strong> to withdraw the warheads in exchange for US concessions regarding <strong>DEFCON</strong>.",
+          "title": "Secret Diplomacy: Turkey, Quarantine & Khrushchev's Telegrams",
+          "dates": "26–27 Oct 1962"
+        },
+        {
+          "step": 5,
+          "date": "1963",
+          "heading": "De-escalation and Deterrence: The Hotline & Partial Test Ban Treaty",
+          "focus_clue": "How did the Cuban Missile Crisis convince both superpowers to establish institutional arms control mechanisms?",
+          "words": [
+            {
+              "term": "\"hotline\" teletype link",
+              "clue": "In 1963, a direct \"hotline\" teletype link was established between the White House and the Kremlin to enable rapid communication during future crises."
+            },
+            {
+              "term": "Partial Nuclear Test Ban Treaty",
+              "clue": "In August 1963, the US, USSR, and Britain signed the Partial Nuclear Test Ban Treaty, prohibiting nuclear tests in the atmosphere, outer space, and underwater."
+            },
+            {
+              "term": "Superpower Leadership & UN",
+              "clue": "Historically, superpower leadership & un proved critical in shaping the outcome of De-escalation and Deterrence: The Hotline & Partial Test Ban Treaty."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>\"hotline\" teletype link</strong>, the development of <strong>Partial Nuclear Test Ban Treaty</strong> directly precipitated <strong>Superpower Leadership & UN</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "De-escalation and Deterrence: The Hotline & Partial Test Ban Treaty",
+          "dates": "1963"
+        }
       ]
     },
     {
@@ -7968,9 +8502,126 @@
               "Tet Offensive (1968)"
             ]
           },
-          "model_answer": "The conflict began in June 1950 when North Korean communist forces, equipped with Soviet tanks, invaded South Korea. Viewing this as direct Soviet aggression, President Truman deployed US forces under the United Nations flag, led by General Douglas MacArthur, who launched a brilliant amphibious landing at Incheon to push North Korean forces back.<br><br>Following this, the war escalated dramatically when UN troops crossed the 38th parallel toward the Yalu River. Alarmed by American troops on its border, Communist China intervened in November 1950 with 300,000 troops, driving UN forces back in bitter winter fighting. MacArthur publicly demanded the bombing of Chinese cities, leading Truman to dismiss him to prevent World War Three.<br><br>Finally, the fighting settled into a brutal trench stalemate along the 38th parallel, ending with an armistice in July 1953. Consequently, the war institutionalised Cold War militarisation, prompting the expansion of NATO and the US policy of global military containment.",
+          "model_answer": "Initially, following the French defeat at Dien Bien Phu and the 1954 Geneva Accords dividing Vietnam at the 17th parallel, the United States intervened to prevent communist expansion under President Eisenhower’s 'domino theory'. Under Presidents Eisenhower and Kennedy, the US sent financial aid and thousands of military 'advisers' (Green Berets) to support the anti-communist regime of Ngo Dinh Diem in South Vietnam.<br><br>As a result of increasing Vietcong guerrilla attacks and political instability in Saigon, the conflict escalated dramatically in August 1964 following the Gulf of Tonkin incident. President Lyndon B. Johnson used the alleged North Vietnamese torpedo boat attack to pass the Gulf of Tonkin Resolution, granting him near-unlimited authority to deploy conventional military forces. In early 1965, Johnson launched Operation Rolling Thunder, a sustained aerial bombing campaign against North Vietnam, and deployed the first US combat ground troops at Da Nang, escalating troop levels to over 500,000 soldiers by 1968.<br><br>Finally, the climax of American escalation occurred in January 1968 during the Tet Offensive, when Vietcong and North Vietnamese forces launched a coordinated surprise assault on over 100 cities, including the US Embassy in Saigon. Although militarily defeated with catastrophic communist casualties, the Tet Offensive shattered the American public’s belief that the US was winning the war, creating a profound 'credibility gap' that forced President Johnson to halt further troop increases and announce he would not seek re-election.",
           "topic": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "model": "The conflict began in June 1950 when North Korean communist forces, equipped with Soviet tanks, invaded South Korea. Viewing this as direct Soviet aggression, President Truman deployed US forces under the United Nations flag, led by General Douglas MacArthur, who launched a brilliant amphibious landing at Incheon to push North Korean forces back.<br><br>Following this, the war escalated dramatically when UN troops crossed the 38th parallel toward the Yalu River. Alarmed by American troops on its border, Communist China intervened in November 1950 with 300,000 troops, driving UN forces back in bitter winter fighting. MacArthur publicly demanded the bombing of Chinese cities, leading Truman to dismiss him to prevent World War Three.<br><br>Finally, the fighting settled into a brutal trench stalemate along the 38th parallel, ending with an armistice in July 1953. Consequently, the war institutionalised Cold War militarisation, prompting the expansion of NATO and the US policy of global military containment."
+          "model": "Initially, following the French defeat at Dien Bien Phu and the 1954 Geneva Accords dividing Vietnam at the 17th parallel, the United States intervened to prevent communist expansion under President Eisenhower’s 'domino theory'. Under Presidents Eisenhower and Kennedy, the US sent financial aid and thousands of military 'advisers' (Green Berets) to support the anti-communist regime of Ngo Dinh Diem in South Vietnam.<br><br>As a result of increasing Vietcong guerrilla attacks and political instability in Saigon, the conflict escalated dramatically in August 1964 following the Gulf of Tonkin incident. President Lyndon B. Johnson used the alleged North Vietnamese torpedo boat attack to pass the Gulf of Tonkin Resolution, granting him near-unlimited authority to deploy conventional military forces. In early 1965, Johnson launched Operation Rolling Thunder, a sustained aerial bombing campaign against North Vietnam, and deployed the first US combat ground troops at Da Nang, escalating troop levels to over 500,000 soldiers by 1968.<br><br>Finally, the climax of American escalation occurred in January 1968 during the Tet Offensive, when Vietcong and North Vietnamese forces launched a coordinated surprise assault on over 100 cities, including the US Embassy in Saigon. Although militarily defeated with catastrophic communist casualties, the Tet Offensive shattered the American public’s belief that the US was winning the war, creating a profound 'credibility gap' that forced President Johnson to halt further troop increases and announce he would not seek re-election."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1949–1950",
+          "heading": "Cold War Globalisation: The Asian Domino Theory & NSC-68",
+          "focus_clue": "Why did the 1949 Chinese Revolution expand the Cold War from Europe into Asia?",
+          "words": [
+            {
+              "term": "Mao Zedong",
+              "clue": "However, two seismic shocks in late 1949 permanently globalized the struggle: in August, the Soviet Union successfully tested its first atomic bomb (RDS-1)."
+            },
+            {
+              "term": "NSC-68",
+              "clue": "The US National Security Council issued NSC-68, a top-secret policy paper advocating a massive quadrupling of American defense spending to combat Soviet expansionism anywhere in the world."
+            },
+            {
+              "term": "Domino Theory",
+              "clue": "US foreign policy became defined by the Domino Theory: the belief that if one Asian nation succumbed to communism, its neighbours would inevitably topple like a row of dominoes."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Mao Zedong</strong>, the development of <strong>NSC-68</strong> directly precipitated <strong>Domino Theory</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Cold War Globalisation: The Asian Domino Theory & NSC-68",
+          "dates": "1949–1950"
+        },
+        {
+          "step": 2,
+          "date": "1950–1953",
+          "heading": "The Korean War (1950–53): 38th Parallel, Inchon, and Chinese Intervention",
+          "focus_clue": "How did the Korean War demonstrate the limits and dangers of superpower proxy conflict?",
+          "words": [
+            {
+              "term": "38th Parallel",
+              "clue": "The first blood-soaked test of this globalized containment policy occurred on the Korean peninsula, which had been partitioned along the 38th Parallel in 1945."
+            },
+            {
+              "term": "Kim Il-sung",
+              "clue": "On 25 June 1950, with Stalin’s diplomatic endorsement and Soviet military equipment, communist North Korea under Kim Il-sung launched a massive surprise invasion of capitalist South Korea, capturing Seoul within three days."
+            },
+            {
+              "term": "Douglas MacArthur",
+              "clue": "Viewing the invasion as a coordinated Kremlin test of Western resolve, Truman secured a United Nations Security Council resolution to deploy military forces, commanded by General Douglas MacArthur."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>38th Parallel</strong>, the development of <strong>Kim Il-sung</strong> directly precipitated <strong>Douglas MacArthur</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Korean War (1950–53): 38th Parallel, Inchon, and Chinese Intervention",
+          "dates": "1950–1953"
+        },
+        {
+          "step": 3,
+          "date": "1954–1964",
+          "heading": "The Indochina Crucible: From Dien Bien Phu to the Gulf of Tonkin",
+          "focus_clue": "Why did the Gulf of Tonkin Resolution transform American involvement in Vietnam into a full-scale ground war?",
+          "words": [
+            {
+              "term": "Ho Chi Minh",
+              "clue": "Led by communist nationalist Ho Chi Minh, the Viet Minh waged an anti-colonial war against French colonial forces, culminating in the catastrophic French surrender at Dien Bien Phu in May 1954."
+            },
+            {
+              "term": "Dien Bien Phu",
+              "clue": "Led by communist nationalist Ho Chi Minh, the Viet Minh waged an anti-colonial war against French colonial forces, culminating in the catastrophic French surrender at Dien Bien Phu in May 1954."
+            },
+            {
+              "term": "Vietcong (National Liberation Front)",
+              "clue": "By the early 1960s, communist guerrillas known as the Vietcong (National Liberation Front) launched an insurgency to reunify Vietnam."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Ho Chi Minh</strong>, the development of <strong>Dien Bien Phu</strong> directly precipitated <strong>Vietcong (National Liberation Front)</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Indochina Crucible: From Dien Bien Phu to the Gulf of Tonkin",
+          "dates": "1954–1964"
+        },
+        {
+          "step": 4,
+          "date": "1965–1968",
+          "heading": "Asymmetric Warfare: Cu Chi Tunnels vs Air Mobility & Chemical Weapons",
+          "focus_clue": "How did Vietcong guerrilla tactics neutralize superior American technological and aerial firepower?",
+          "words": [
+            {
+              "term": "asymmetric guerrilla warfare",
+              "clue": "In the dense tropical jungles of Vietnam, the world’s foremost industrial superpower collided with the realities of asymmetric guerrilla warfare."
+            },
+            {
+              "term": "Cu Chi",
+              "clue": "Instead, they moved in small squads under cover of darkness, deployed lethal booby traps (such as excrement-smeared punji stake pits), and lived in sprawling subterranean tunnel networks, such as the 250km complex at Cu Chi."
+            },
+            {
+              "term": "Ho Chi Minh Trail",
+              "clue": "Weapons and regular North Vietnamese troops flowed uninterrupted down the 16,000km Ho Chi Minh Trail through neutral Laos and Cambodia."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>asymmetric guerrilla warfare</strong>, the development of <strong>Cu Chi</strong> directly precipitated <strong>Ho Chi Minh Trail</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Asymmetric Warfare: Cu Chi Tunnels vs Air Mobility & Chemical Weapons",
+          "dates": "1965–1968"
+        },
+        {
+          "step": 5,
+          "date": "1973–1975",
+          "heading": "The Lessons of Asia: The Limits of Superpower Hegemony",
+          "focus_clue": "Why did the fall of Saigon establish profound domestic limits on American Cold War foreign interventions?",
+          "words": [
+            {
+              "term": "Tet Offensive",
+              "clue": "The psychological shock of the 1968 communist Tet Offensive, combined with rising American casualties (eventually totaling 58,220 dead) and massive domestic anti-war protests, shattered Washington’s political will."
+            },
+            {
+              "term": "Richard Nixon, Henry Kissinger & North Vietnamese Army",
+              "clue": "Following the 1973 Paris Peace Accords and complete American withdrawal, North Vietnamese tanks rolled into Saigon on 30 April 1975, reunifying the nation under communist rule."
+            },
+            {
+              "term": "Proxy War",
+              "clue": "The proxy wars in Korea and Vietnam exposed the stark limitations of superpower military might."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Tet Offensive</strong>, the development of <strong>Richard Nixon, Henry Kissinger & North Vietnamese Army</strong> directly precipitated <strong>Proxy War</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Lessons of Asia: The Limits of Superpower Hegemony",
+          "dates": "1973–1975"
         }
       ]
     },
@@ -9562,6 +10213,123 @@
           "topic": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
           "model": "On the one hand, Mikhail Gorbachev's reforms were the primary catalyst for the collapse of Soviet control. After becoming General Secretary in 1985, Gorbachev introduced Glasnost ('openness') and Perestroika ('restructuring'). Crucially, in December 1988, he repudiated the Brezhnev Doctrine, telling the UN that Eastern European nations could decide their own futures ('Sinatra Doctrine'). By making it clear that the Red Army would no longer use tanks to crush protests, Gorbachev emboldened populations in Poland, Hungary, and East Germany to demand democracy.<br><br>On the other hand, deep economic bankruptcy and popular grassroots resistance made communist collapse inevitable. The Soviet command economy was crippled by chronic shortages, food rationing, and high military spending on the Afghan War. Concurrently, grassroots civil resistance eroded communist authority. In Poland, the trade union Solidarity forced free elections in June 1989. When Hungary opened its border with Austria, thousands of East Germans escaped, triggering mass protests that accidentally opened the Berlin Wall on 9 November 1989.<br><br>In conclusion, while economic failure provided the underlying pressure, Gorbachev's refusal to use military force was the decisive reason why Soviet power collapsed so rapidly and peacefully in 1989."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1961–1979",
+          "heading": "The Construction of the Berlin Wall (August 1961) & Checkpoint Charlie",
+          "focus_clue": "How did the erection of the Berlin Wall and economic stagnation weaken long-term Soviet power?",
+          "words": [
+            {
+              "term": "2.7 million East Germans",
+              "clue": "Between 1949 and 1961, over 2.7 million East Germans—disproportionately young, skilled professionals, doctors, and engineers—fled to the West through the open border in Berlin."
+            },
+            {
+              "term": "Berlin Wall",
+              "clue": "In the early hours of Sunday, 13 August 1961, East German troops tore up paving stones and unrolled coils of barbed wire, beginning the construction of the concrete Berlin Wall."
+            },
+            {
+              "term": "Walter Ulbricht, Nikita Khrushchev & Leonid Brezhnev",
+              "clue": "Desperate to halt this catastrophic economic and demographic hemorrhage, East German leader Walter Ulbricht secured Soviet permission to seal the frontier."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>2.7 million East Germans</strong>, the development of <strong>Berlin Wall</strong> directly precipitated <strong>Walter Ulbricht, Nikita Khrushchev & Leonid Brezhnev</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Construction of the Berlin Wall (August 1961) & Checkpoint Charlie",
+          "dates": "1961–1979"
+        },
+        {
+          "step": 2,
+          "date": "1985–1988",
+          "heading": "Soviet Stagnation, Afghan Quagmire & The Cost of the Arms Race",
+          "focus_clue": "Why did Gorbachev's reform policies unintentionally destabilize the Soviet system they were meant to save?",
+          "words": [
+            {
+              "term": "Leonid Brezhnev",
+              "clue": "Under the eighteen-year rule of Leonid Brezhnev, the USSR suffered from chronic agricultural failure, pervasive bureaucratic corruption, and industrial stagnation."
+            },
+            {
+              "term": "Afghanistan",
+              "clue": "This economic exhaustion was compounded exponentially in December 1979 when the Soviet Union invaded Afghanistan to prop up a failing communist regime, becoming trapped in a ten-year guerrilla war against US-backed Afghan mujahideen that cost 15,000 Soviet lives and earned the moniker \"the Soviet Union's Vietnam\"."
+            },
+            {
+              "term": "Ronald Reagan",
+              "clue": "In the 1980s, President Ronald Reagan dramatically escalated defense spending, proposing the Strategic Defense Initiative (\"Star Wars\"), a space-based missile shield that the bankrupt Soviet economy could not match."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Leonid Brezhnev</strong>, the development of <strong>Afghanistan</strong> directly precipitated <strong>Ronald Reagan</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Soviet Stagnation, Afghan Quagmire & The Cost of the Arms Race",
+          "dates": "1985–1988"
+        },
+        {
+          "step": 3,
+          "date": "1988–1989",
+          "heading": "Gorbachev's Revolution: Glasnost, Perestroika & Abandoning the Brezhnev Doctrine",
+          "focus_clue": "How did Gorbachev's refusal to use military force spark the collapse of Eastern European communist regimes?",
+          "words": [
+            {
+              "term": "Mikhail Gorbachev",
+              "clue": "In March 1985, 54-year-old Mikhail Gorbachev became General Secretary of the Soviet Communist Party, recognizing that the USSR was facing systemic collapse unless it modernized."
+            },
+            {
+              "term": "Glasnost",
+              "clue": "Gorbachev introduced two revolutionary reform policies: Glasnost (openness), which permitted free public debate, freedom of the press, and open historical examination of Stalinist crimes."
+            },
+            {
+              "term": "Perestroika",
+              "clue": "Gorbachev introduced two revolutionary reform policies: Glasnost (openness), which permitted free public debate, freedom of the press, and open historical examination of Stalinist crimes."
+            }
+          ],
+          "model_sentence": "<strong>Mikhail Gorbachev</strong> initiated <strong>Glasnost</strong> free speech and <strong>Perestroika</strong> economic reform, negotiating the historic 1987 INF Treaty nuclear cuts that eliminated an entire class of missiles.",
+          "title": "Gorbachev's Revolution: Glasnost, Perestroika & Abandoning the Brezhnev Doctrine",
+          "dates": "1988–1989"
+        },
+        {
+          "step": 4,
+          "date": "9 Nov 1989",
+          "heading": "9 November 1989: The Breaching of the Berlin Wall & Velvet Revolutions",
+          "focus_clue": "Why did the sudden opening of the Berlin Wall immediately unravel Soviet control in Central Europe?",
+          "words": [
+            {
+              "term": "Solidarity",
+              "clue": "In Poland, the independent trade union Solidarity led by Lech Wałęsa swept free elections; in Hungary, reformers dismantled the barbed-wire border with Austria, allowing thousands of East Germans to escape to the West."
+            },
+            {
+              "term": "Günter Schabowski",
+              "clue": "On the evening of 9 November 1989, East German government spokesman Günter Schabowski mistakenly announced at a live press conference that new travel regulations allowing citizens to cross into West Berlin took effect \"immediately, without delay.\" Hundreds of thousands of euphoric East and West Berliners rushed the border checkpoints, overwhelming bewildered guards."
+            },
+            {
+              "term": "Günter Schabowski & East German Citizens",
+              "clue": "On the evening of 9 November 1989, East German government spokesman Günter Schabowski mistakenly announced at a live press conference that new travel regulations allowing citizens to cross into West Berlin took effect \"immediately, without delay.\" Hundreds of thousands of euphoric East and West Berliners rushed the border checkpoints, overwhelming bewildered guards."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Solidarity</strong>, the development of <strong>Günter Schabowski</strong> directly precipitated <strong>Günter Schabowski & East German Citizens</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "9 November 1989: The Breaching of the Berlin Wall & Velvet Revolutions",
+          "dates": "9 Nov 1989"
+        },
+        {
+          "step": 5,
+          "date": "1991",
+          "heading": "The August Coup & The Dissolution of the Soviet Union (25 Dec 1991)",
+          "focus_clue": "How did the failed hardline coup of August 1991 accelerate the final dissolution of the Soviet Union?",
+          "words": [
+            {
+              "term": "Boris Yeltsin",
+              "clue": "However, the coup was defeated by mass civilian resistance led by Russian President Boris Yeltsin, who climbed atop a tank outside the Russian parliament to rally the people."
+            },
+            {
+              "term": "Boris Yeltsin, Hardline Plotters & Mikhail Gorbachev",
+              "clue": "In August 1991, hardline communist and KGB officials staged a desperate military coup in Moscow, placing Gorbachev under house arrest."
+            },
+            {
+              "term": "Resignation of Mikhail Gorbachev (1991)",
+              "clue": "On Christmas Day 1991, Mikhail Gorbachev resigned as Soviet president, the red flag was lowered over the Kremlin, and the USSR officially dissolved."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Boris Yeltsin</strong>, the development of <strong>Boris Yeltsin, Hardline Plotters & Mikhail Gorbachev</strong> directly precipitated <strong>Resignation of Mikhail Gorbachev (1991)</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The August Coup & The Dissolution of the Soviet Union (25 Dec 1991)",
+          "dates": "1991"
+        }
       ]
     },
     {
@@ -11122,9 +11890,131 @@
           "topic": "Question 5: Synoptic Capstone Essay [12 marks • 15 mins]",
           "model": "On the one hand, proxy wars in the developing world caused catastrophic violence. Because nuclear deterrence (Mutually Assured Destruction) made direct war in Europe unthinkable, Washington and Moscow fought through regional proxies. In the Korean War (1950–1953), over three million people died. In Vietnam (1954–1975), nearly four million people were killed by napalm and bombing. Similarly, the Soviet invasion of Afghanistan (1979–1989) killed over one million civilians. In total, Cold War proxy wars and CIA/KGB covert coups claimed over twenty million lives.<br><br>On the other hand, the superpowers developed crucial diplomatic mechanisms to maintain peaceful coexistence. After the 1962 Cuban Missile Crisis, Kennedy and Khrushchev established the Washington-Moscow hotline and signed the 1963 Test Ban Treaty. In the 1970s, Détente produced the 1972 SALT I treaty, limiting nuclear weapons. Later, summit diplomacy between Reagan and Gorbachev achieved the historic 1987 INF Treaty, peacefully eliminating an entire class of nuclear missiles.<br><br>In conclusion, while nuclear deterrence successfully prevented World War Three in Europe, this stability came at the immense cost of proxy conflicts. For Asia, Africa, and Latin America, the Cold War was defined by devastating violence rather than peaceful coexistence."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1945–1990",
+          "heading": "The Eurocentric Myth: The \"Long Peace\" in Europe vs Global Slaughter",
+          "focus_clue": "Why is characterizing the Cold War as a 'peaceful' era an inaccurate Eurocentric perspective?",
+          "words": [
+            {
+              "term": "Superpower Diplomacy & NATO/Warsaw Pact",
+              "clue": "An exceptionally powerful nation capable of projecting dominant military, technological, and ideological influence worldwide."
+            },
+            {
+              "term": "Superpower",
+              "clue": "For decades, Western diplomatic historians described the era between 1945 and 1991 as the \"Cold War\" or the \"Long Peace\"—a period of international stability where the balance of power and nuclear deterrence successfully prevented a catastrophic World War III between the superpowers."
+            },
+            {
+              "term": "Third World proxy conflicts",
+              "clue": "While direct superpower war was avoided in Europe, the Cold War turned devastatingly hot across Asia, Africa, and Latin America, costing millions of lives."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Superpower Diplomacy & NATO/Warsaw Pact</strong>, the development of <strong>Superpower</strong> directly precipitated <strong>Third World proxy conflicts</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Eurocentric Myth: The \"Long Peace\" in Europe vs Global Slaughter",
+          "dates": "1945–1990"
+        },
+        {
+          "step": 2,
+          "date": "1945–1990",
+          "heading": "The Human Cost of Proxy War: 20 Million Dead Across Four Continents",
+          "focus_clue": "How does the death toll in proxy conflicts challenge the conventional view that the Cold War was 'cold'?",
+          "words": [
+            {
+              "term": "twenty million human beings lost their lives",
+              "clue": "Historians estimate that over twenty million human beings lost their lives in Cold War-related conflicts between 1945 and 1991."
+            },
+            {
+              "term": "Post-Colonial Nations & Proxy Armies",
+              "clue": "Yet this avoidance of direct armageddon came at an appalling price: the superpowers projected their ideological battle into vulnerable post-colonial nations, treating developing peoples as disposable pawns in a global chess match."
+            },
+            {
+              "term": "Superpower",
+              "clue": "Across sub-Saharan Africa, in Angola, Mozambique, and Ethiopia, superpower funding and weapons turned local decolonization struggles into decades-long civil wars that claimed hundreds of thousands of lives."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>twenty million human beings lost their lives</strong>, the development of <strong>Post-Colonial Nations & Proxy Armies</strong> directly precipitated <strong>Superpower</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Human Cost of Proxy War: 20 Million Dead Across Four Continents",
+          "dates": "1945–1990"
+        },
+        {
+          "step": 3,
+          "date": "1947–1989",
+          "heading": "The Invisible War: Espionage, Covert Action & Psychological Warfare",
+          "focus_clue": "Why were intelligence agencies and covert operations central to waging the Cold War?",
+          "words": [
+            {
+              "term": "Central Intelligence Agency (CIA)",
+              "clue": "Intelligence agencies like the American Central Intelligence Agency (CIA) and the Soviet KGB operated worldwide networks of spies, double agents, and codebreakers."
+            },
+            {
+              "term": "KGB",
+              "clue": "Intelligence agencies like the American Central Intelligence Agency (CIA) and the Soviet KGB operated worldwide networks of spies, double agents, and codebreakers."
+            },
+            {
+              "term": "Stasi",
+              "clue": "Across the Eastern Bloc, secret police networks like the East German Stasi maintained massive files on millions of citizens, deploying informants within families and workplaces to crush independent thought and enforce totalitarian conformity."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Central Intelligence Agency (CIA)</strong>, the development of <strong>KGB</strong> directly precipitated <strong>Stasi</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Invisible War: Espionage, Covert Action & Psychological Warfare",
+          "dates": "1947–1989"
+        },
+        {
+          "step": 4,
+          "date": "1950s–1980s",
+          "heading": "Technological Competition: The Space Race & The Arms Escalation",
+          "focus_clue": "How did the Space Race serve as a substitute for direct military conflict between the superpowers?",
+          "words": [
+            {
+              "term": "Sputnik 1",
+              "clue": "When the Soviet Union launched Sputnik 1, the first artificial satellite, in October 1957, and sent Yuri Gagarin into orbit as the first human in space in April 1961, American pride was profoundly shaken."
+            },
+            {
+              "term": "Yuri Gagarin",
+              "clue": "When the Soviet Union launched Sputnik 1, the first artificial satellite, in October 1957, and sent Yuri Gagarin into orbit as the first human in space in April 1961, American pride was profoundly shaken."
+            },
+            {
+              "term": "NASA, Soviet Space Programme & Military Scientists",
+              "clue": "When the Soviet Union launched Sputnik 1, the first artificial satellite, in October 1957, and sent Yuri Gagarin into orbit as the first human in space in April 1961, American pride was profoundly shaken."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Sputnik 1</strong>, the development of <strong>Yuri Gagarin</strong> directly precipitated <strong>NASA, Soviet Space Programme & Military Scientists</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "Technological Competition: The Space Race & The Arms Escalation",
+          "dates": "1950s–1980s"
+        },
+        {
+          "step": 5,
+          "date": "1945–1991",
+          "heading": "The Synoptic Verdict: An Era of Total War Without Direct Armageddon",
+          "focus_clue": "To what extent was the Cold War an era of total ideological warfare conducted without direct superpower confrontation?",
+          "words": [
+            {
+              "term": "Cold War Historians & Global Society",
+              "clue": "In answering whether the Cold War was truly \"cold\", historians conclude that the term is an incomplete and misleading description of a global tragedy."
+            },
+            {
+              "term": "Superpower",
+              "clue": "Direct military conflict between the US and the USSR was averted solely because nuclear weapons transformed conventional superpower war into collective suicide."
+            },
+            {
+              "term": "Mutually Assured Destruction (MAD)",
+              "clue": "Direct superpower conflict was deterred by the doctrine of Mutually Assured Destruction, guaranteeing that any nuclear exchange would result in total mutual annihilation."
+            }
+          ],
+          "model_sentence": "Amid escalating tensions surrounding <strong>Cold War Historians & Global Society</strong>, the development of <strong>Superpower</strong> directly precipitated <strong>Mutually Assured Destruction (MAD)</strong>, accelerating the bipolar division between the superpowers.",
+          "title": "The Synoptic Verdict: An Era of Total War Without Direct Armageddon",
+          "dates": "1945–1991"
+        }
       ]
     }
   ],
   "homepage_background": "/images/cold_war_cover.jpg",
-  "cover_image": "/images/cold_war_cover.jpg"
+  "cover_image": "/images/cold_war_cover.jpg",
+  "keyStage": "GCSE",
+  "key_stage": "GCSE",
+  "yearGroup": "Years 10–11",
+  "year_group": "Years 10–11",
+  "category": "GCSE"
 }

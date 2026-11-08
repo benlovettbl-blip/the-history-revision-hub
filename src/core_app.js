@@ -1937,8 +1937,8 @@ window.startQuiz = function (lessonId, isFullscreen = false) {
     if (ktMatch) {
       cleanBadge = 'KEY TOPIC ' + ktMatch[1];
     } else if (lesson.title) {
-      let t = lesson.title.replace(/^Enquiry:\s*/i, '');
-      cleanBadge = t.length > 25 ? t.slice(0, 23).trim() + '…' : t;
+      let t = lesson.title.replace(/^Enquiry:\s*/i, '').trim();
+      cleanBadge = t;
     }
     badge.innerText = cleanBadge;
   }

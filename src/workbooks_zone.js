@@ -1,4 +1,5 @@
 import { state } from './state.js';
+import { isVerifiedPdf } from './verified_pdf_manifest.js';
 
 let currentPreviewState = {
   activeTab: 'qp',
@@ -219,8 +220,22 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
   }
 
   if (downloadBtn) {
-    downloadBtn.href = resolvedPdfUrl;
-    downloadBtn.style.display = 'inline-flex';
+    if (isVerifiedPdf(resolvedPdfUrl)) {
+      downloadBtn.href = resolvedPdfUrl;
+      downloadBtn.target = '_blank';
+      downloadBtn.onclick = null;
+      downloadBtn.innerHTML = '<i class="fa-solid fa-file-pdf"></i> Download PDF';
+      downloadBtn.style.display = 'inline-flex';
+    } else {
+      downloadBtn.href = '#';
+      downloadBtn.target = '';
+      downloadBtn.onclick = (e) => {
+        e.preventDefault();
+        window.printInPagePreview();
+      };
+      downloadBtn.innerHTML = '<i class="fa-solid fa-print"></i> Print / Save PDF';
+      downloadBtn.style.display = 'inline-flex';
+    }
   }
 
   if (fullTabBtn) {
@@ -1376,8 +1391,23 @@ window.onPillarEditionChange = function (selectEl, unitId, pillarKey) {
   }
   if (descEl) descEl.textContent = edition.desc;
   if (btnPdf) {
-    btnPdf.href = edition.pdfUrl;
-    btnPdf.title = `Open ${edition.title} PDF in new tab`;
+    const hasPdf = isVerifiedPdf(edition.pdfUrl);
+    if (hasPdf) {
+      btnPdf.href = edition.pdfUrl;
+      btnPdf.target = '_blank';
+      btnPdf.onclick = null;
+      btnPdf.title = `Open ${edition.title} PDF in new tab`;
+      btnPdf.innerHTML = '<i class="fa-solid fa-file-pdf"></i> Download PDF';
+    } else {
+      btnPdf.href = '#';
+      btnPdf.target = '';
+      btnPdf.onclick = (e) => {
+        e.preventDefault();
+        window.openTeacherPrintPreview(edition.readUrl, (edition.title || '').replace(/'/g, "\\'"));
+      };
+      btnPdf.title = 'Open print preview & save as PDF';
+      btnPdf.innerHTML = '<i class="fa-solid fa-print"></i> Print Edition';
+    }
   }
   if (btnRead) {
     const cleanTitle = (edition.title || '').replace(/'/g, "\\'");
@@ -1441,9 +1471,17 @@ function renderMasterPillarCard(unitId, pillar) {
         <button type="button" class="pillar-btn-read" onclick="window.openInPagePreview('${defaultEdition.readUrl}', '${cleanTitle}', '${defaultEdition.pdfUrl}', { badge: '${pillar.badge}' })" style="background: #ffffff; color: #0f172a; border: 1.5px solid #cbd5e1; border-left: 3.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.borderColor='${pillar.color}'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.borderLeftColor='${pillar.color}'; this.style.boxShadow='none';">
           <i class="fa-solid fa-book-open-reader" style="color: ${pillar.color};"></i> Read Online
         </button>
+        ${
+          isVerifiedPdf(defaultEdition.pdfUrl)
+            ? `
         <a href="${defaultEdition.pdfUrl}" target="_blank" class="pillar-btn-pdf" title="Open ${cleanTitle} PDF in new tab" style="background: ${pillar.color}; color: #ffffff; border: 1.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease; box-shadow: 0 2px 6px ${pillar.color}40;" onmouseover="this.style.opacity='0.92';" onmouseout="this.style.opacity='1';">
           <i class="fa-solid fa-file-pdf"></i> Download PDF
-        </a>
+        </a>`
+            : `
+        <button type="button" class="pillar-btn-pdf" onclick="window.openTeacherPrintPreview('${defaultEdition.readUrl}', '${cleanTitle}')" title="Open print preview & save as PDF" style="background: ${pillar.color}; color: #ffffff; border: 1.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease; box-shadow: 0 2px 6px ${pillar.color}40;" onmouseover="this.style.opacity='0.92';" onmouseout="this.style.opacity='1';">
+          <i class="fa-solid fa-print"></i> Print Edition
+        </button>`
+        }
       </div>
     </div>
   `;

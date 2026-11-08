@@ -2156,7 +2156,7 @@
       "modelAnswer": "The Trail was not a single paved road but an intricate, 12,000-mile network of camouflaged jungle paths, bridges, and underground supply depots running through Laos and Cambodia. Over 300,000 peasant workers and youth volunteers immediately repaired bomb craters overnight. Despite the US dropping more bomb tonnage on Laos than on Germany and Japan combined in WWII, supply trucks and bicycle porters maintained an unbroken flow of Soviet and Chinese weapons southward."
     }
   ],
-  "generated_at": "2026-11-07T10:37:15.370Z",
+  "generated_at": "2026-11-08T13:56:04.074Z",
   "weimar_nazi_germany": [
     {
       "unit": "weimar_nazi_germany",
@@ -2264,6 +2264,325 @@
       "fileSizeKb": 140,
       "hingeQuestion": "Was William's victory at Hastings decided primarily by Norman tactical brilliance or Anglo-Saxon exhaustion and misfortune?",
       "modelAnswer": "A decisive factor in William’s victory was his mastery of combined arms and tactical flexibility. For over six hours on Senlac Hill, the Anglo-Saxon <strong>shield wall</strong> held firm against frontal cavalry charges. However, William exploited Saxon overconfidence by ordering a series of <strong>feigned retreats</strong>. When the undisciplined Saxon fyrd broke formation to pursue the 'fleeing' Normans, William’s heavy cavalry wheeled around and encircled them.<br><br>Deprived of the defensive protection of their locked shields and exhausted from their 400-mile march from <strong>Stamford Bridge</strong>, the Saxon infantry was decimated, proving that while Harold fought bravely, William's combined arms and tactical genius proved decisive."
+    }
+  ],
+  "australia": [
+    {
+      "unit": "australia",
+      "lessonId": "lesson_1",
+      "slug": "australia_lesson_1",
+      "title": "Claiming Australia: Captain Cook, Tupaia & The Myth of Terra Nullius (1768–1770)",
+      "topic": "Key Stage 3 • The History of Australia (1770–1901) • Lesson 1",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "1768–1769: Why did the British Admiralty issue secret imperial instructions to Captain Cook?",
+        "1769–1770: How did Tupaia’s navigational mastery enable the Endeavour to reach New Zealand and Australia?",
+        "April 1770: How did the Dharawal and Gweagal warriors defend their ancestral lands at Botany Bay?",
+        "August 1770: Why did Captain Cook claim eastern Australia on Possession Island without a treaty?",
+        "1770–1788: How did the legal fiction of terra nullius justify British dispossession of First Nations peoples?"
+      ],
+      "image": "/images/james_cook.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=australia&lesson=1",
+      "fileSizeKb": 140,
+      "hingeQuestion": "Why did the British Empire claim eastern Australia and declare it terra nullius between 1768 and 1788?",
+      "modelAnswer": "<span class=\"hl-bronze\">A primary reason Britain claimed eastern Australia in 1770 was strategic imperial rivalry with France.</span> <span class=\"hl-silver\">Following Captain Cook’s voyage, the British Admiralty sought naval bases in the Pacific to protect valuable Asian trade routes and supply vital timber and flax for naval masts and sails.</span><br><br><span class=\"hl-bronze\">Furthermore, the British declared Australia 'terra nullius' (nobody's land) because Indigenous Australians did not build European-style stone towns or cultivate fenced agricultural fields.</span> <span class=\"hl-gold\">By ignoring 65,000 years of Indigenous land management, British authorities justified seizing the continent without treaties, purchasing land, or recognizing Aboriginal ownership.</span>"
+    },
+    {
+      "unit": "australia",
+      "lessonId": "lesson_2",
+      "slug": "australia_lesson_2",
+      "title": "The First Fleet & The Convict Penal Colony (1783–1792)",
+      "topic": "Key Stage 3 • The History of Australia (1770–1901) • Lesson 2",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "1783–1786: Why did the loss of the American colonies force Britain to establish a penal colony in Australia?",
+        "1787–1788: How did Captain Arthur Phillip manage the 15,000-mile voyage of the First Fleet?",
+        "Jan 1788: Why did Governor Phillip abandon Botany Bay and establish the settlement at Sydney Cove?",
+        "1788–1790: What factors pushed the early settlement at Sydney Cove to the brink of starvation?",
+        "1788–1792: How did the system of convict labour balance severe punishment with the prospect of freedom?"
+      ],
+      "image": "/images/prison_hulks.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=australia&lesson=2",
+      "fileSizeKb": 140,
+      "hingeQuestion": "Whose story do we tell about the founding of the first British penal colony in Australia?",
+      "modelAnswer": "One key feature was severe overcrowding and squalid, disease-ridden conditions below deck [2.1]. For instance, decommissioned warship hulks on the Thames held hundreds of convicts packed together in darkness, where typhus (\"gaol fever\") and dysentery killed nearly 30% of inmates. A second key feature was grueling physical hard labour in leg irons [2.2]. Specifically, convicts were rowed ashore every day in heavy chains to dredge gravel from the Thames or construct military dockyards under threat of the cat-o'-nine-tails lash."
+    },
+    {
+      "unit": "australia",
+      "lessonId": "lesson_3",
+      "slug": "australia_lesson_3",
+      "title": "Frontier Warfare: Smallpox, Bennelong & Pemulwuy’s Resistance (1788–1802)",
+      "topic": "Key Stage 3 • The History of Australia (1770–1901) • Lesson 3",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Pre-1788: How did First Nations peoples manage and govern their lands before 1788?",
+        "April 1789: What was the impact of the 1789 smallpox epidemic on the Eora people of Sydney?",
+        "1789–1795: Why did Bennelong act as a cultural intermediary between the British and the Eora?",
+        "1790–1797: How did Pemulwuy lead Indigenous armed resistance against British expansion?",
+        "1795–1802: Why did the Hawkesbury River expansion lead to protracted frontier warfare?"
+      ],
+      "image": "/images/pemulwuy.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=australia&lesson=3",
+      "fileSizeKb": 140,
+      "hingeQuestion": "Was the colonisation of Australia a story of ‘amity and kindness’ or violent frontier resistance?",
+      "modelAnswer": "Initially, relations between the Eora people and British settlers deteriorated in 1788 as colonists cleared land, felled trees, and cut off Aboriginal hunting grounds and fishing coves around Sydney.<br><br>Following this, widespread frontier violence erupted as Indigenous clans fiercely defended their homelands. From 1790, Bidjigal warrior Pemulwuy led a brilliant 12-year guerrilla campaign, ambushing settlers, burning crops, and raiding colonial outposts along the Hawkesbury River.<br><br>Finally, British troops mounted punitive military expeditions, using muskets to overwhelm Indigenous spears. After Pemulwuy was killed in 1802, British expansion continued inland, displacing Aboriginal nations through violent frontier conflict."
+    },
+    {
+      "unit": "australia",
+      "lessonId": "lesson_4",
+      "slug": "australia_lesson_4",
+      "title": "The Frontier Wars, Pastoral Expansion & The Black War (1803–1840)",
+      "topic": "Key Stage 3 • The History of Australia (1770–1901) • Lesson 4",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "1803–1824: Why did the British settlement of Van Diemen’s Land trigger violent conflict with the Palawa people?",
+        "1826–1830: How did Governor Arthur’s martial law and the ‘Black Line’ escalate the Black War?",
+        "1830–1835: Why was the relocation of the Palawa to Wybalenna on Flinders Island catastrophic?",
+        "1820–1838: How did the Merino wool boom drive violent frontier expansion across the Australian interior?",
+        "1838: Why was the 1838 Myall Creek trial an unprecedented turning point in colonial Australian law?"
+      ],
+      "image": "/images/ballarat_gold.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=australia&lesson=4",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did pastoral expansion and frontier conflict transform colonial Australia?",
+      "modelAnswer": ""
+    },
+    {
+      "unit": "australia",
+      "lessonId": "lesson_5",
+      "slug": "australia_lesson_5",
+      "title": "The Gold Rush, Eureka Stockade & The Legacy of Colonisation (1851–1901)",
+      "topic": "Key Stage 3 • The History of Australia (1770–1901) • Lesson 5",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "1851–1853: How did the 1851 gold discoveries transform Australia from a penal colony into an economic powerhouse?",
+        "1853–1854: Why did the monthly miner’s licence fee provoke widespread outrage among the gold diggers?",
+        "Dec 1854: What was the significance of the 1854 Eureka Stockade for the development of Australian democracy?",
+        "1855–1901: How did anti-Chinese hostility on the goldfields lead directly to the 1901 White Australia Policy?",
+        "1901–Present: How did the 1938 Day of Mourning and the 1992 Mabo Decision reshape modern Australian history?"
+      ],
+      "image": "/images/aus_gold_rush.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=australia&lesson=5",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did the 1851 Gold Rush and the Eureka Stockade transform Australian society and democracy?",
+      "modelAnswer": "On the one hand, the 1854 Eureka Stockade was a major turning point in Australian democracy. Frustrated by corrupt gold commissioners and expensive mining licence fees, Ballarat gold miners rebelled under the Southern Cross flag. Although British soldiers crushed the stockade, public outrage led the colonial government to abolish the licence fee and grant the vote and parliamentary representation to miners.<br><br>On the other hand, the massive 1850s Gold Rush itself was a far more transformative economic turning point. Gold tripled Australia’s population, attracted international immigrants, and funded modern railways, transforming Australia from a remote penal colony into a wealthy, modern society."
+    }
+  ],
+  "ks2_ww2": [
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_1",
+      "slug": "ks2_ww2_lesson_1",
+      "title": "Enquiry 1: Outbreak 1939 & Home Front Mobilisation",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 1",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Sunday Morning Wireless Broadcast (3 September 1939)",
+        "The Cardboard Box on a Shoulder String",
+        "Pitch Black Nights & The Vigilant ARP Wardens"
+      ],
+      "image": "/units/ks2_ww2/assets/neville_chamberlain_1939.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=1",
+      "fileSizeKb": 140,
+      "hingeQuestion": "Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?",
+      "modelAnswer": "When Prime Minister <strong>Neville Chamberlain</strong> announced the outbreak of war during his <strong>wireless radio broadcast</strong>, the sudden wail of the <strong>air raid siren</strong> signaled that civilian life would change forever."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_2",
+      "slug": "ks2_ww2_lesson_2",
+      "title": "Enquiry 2: Operation Pied Piper & British Evacuation",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 2",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Great Exodus: Operation Pied Piper (1 September 1939)",
+        "The Billeting Hall: A Painful Lottery",
+        "Culture Shock: From Cobbled Slums to Farm Fields"
+      ],
+      "image": "/units/ks2_ww2/assets/evacuation_map_1939.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=2",
+      "fileSizeKb": 140,
+      "hingeQuestion": "What was it like for 1.5 million British children to be sent away from home with a brown paper luggage tag?",
+      "modelAnswer": "Under <strong>Operation Pied Piper</strong>, thousands of tearful children pinned a brown <strong>luggage label tag</strong> to their lapels before a countryside <strong>billeting officer</strong> placed them into safe rural homes."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_3",
+      "slug": "ks2_ww2_lesson_3",
+      "title": "Enquiry 3: Vera's Journey & The Kindertransport",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 3",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Decision to Rescue: November 1938",
+        "Vera's Small Suitcase & Her English Doll",
+        "Arrival at Liverpool Street: A New Life in England"
+      ],
+      "image": "/units/ks2_ww2/assets/kindertransport_route_map.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=3",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did 10,000 child refugees escape to Britain, and what was inside their suitcases?",
+      "modelAnswer": "In November 1938, Parliament created the <strong>Kindertransport</strong> rescue for unaccompanied <strong>refugee children</strong>, provided each child had a generous <strong>British sponsor</strong> to guarantee their care."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_4",
+      "slug": "ks2_ww2_lesson_4",
+      "title": "Enquiry 4: The Blitz & Air Raids",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 4",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Black Saturday & The 57 Nights of Fire (September 1940)",
+        "Sheltering Under the Earth: Anderson & Morrison Shelters",
+        "Heroism in the Rubble: Firefighters & The Blitz Spirit"
+      ],
+      "image": "/units/ks2_ww2/assets/st_pauls_survives_blitz_1940.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=4",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did communities in British cities stay safe when bombs fell for 57 nights in a row?",
+      "modelAnswer": "During the opening weeks of <strong>The Blitz</strong>, German aircraft dropped destructive <strong>incendiary bombs</strong> on London for <strong>57 consecutive nights</strong> in an effort to shatter British morale."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_5",
+      "slug": "ks2_ww2_lesson_5",
+      "title": "Enquiry 5: Dig for Victory & Wartime Rationing",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 5",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Atlantic Lifeline & The Threat of Starvation",
+        "Queuing with Coupons: The Weekly Allowance",
+        "Dig for Victory: From Flower Beds to Allotments"
+      ],
+      "image": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=5",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did Britain survive when German U-boats attacked food supply ships in the Atlantic?",
+      "modelAnswer": "Because prowling <strong>German U-boats</strong> threatened to sink <strong>merchant navy convoys</strong>, the government distributed a household <strong>ration book</strong> to guarantee that scarce food was shared fairly."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_6",
+      "slug": "ks2_ww2_lesson_6",
+      "title": "Enquiry 6: Women at War",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 6",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Conscription & The Factory Floor",
+        "The Land Girls: Breeches, Boots & Tractors",
+        "Air Transport Auxiliary & Breaking Barriers"
+      ],
+      "image": "/units/ks2_ww2/assets/women_aircraft_workers_ww2.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=6",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did women keep Britain running on the farms and in the factories while men fought overseas?",
+      "modelAnswer": "Following the historic <strong>conscription of women</strong>, thousands worked dangerous 12-hour shifts inside <strong>munitions factories</strong>, with many known affectionately as <strong>Canary Girls</strong> due to yellow cordite dust."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_7",
+      "slug": "ks2_ww2_lesson_7",
+      "title": "Enquiry 7: Pre-War Life & Rights Lost",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 7",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Vibrant Childhoods Across Europe Before 1939",
+        "The Gradual Loss of Rights: Step by Step",
+        "Banned from the Classroom: November 1938"
+      ],
+      "image": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=7",
+      "fileSizeKb": 140,
+      "hingeQuestion": "What was life like for Jewish children in Europe before the war, and how did laws gradually take their rights away?",
+      "modelAnswer": "Holding a colourful <strong>Schultüte (school cone)</strong> on their first day of classes, children in <strong>European Jewish life</strong> enjoyed a peaceful, typical <strong>pre-war childhood</strong>."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_8",
+      "slug": "ks2_ww2_lesson_8",
+      "title": "Enquiry 8: Secret Codebreakers & Bletchley Park",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 8",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Unbreakable Enigma & The Nazi Ciphers",
+        "Alan Turing & The Bombe Machine",
+        "The Silent Army of Women & The Secret That Shortened the War"
+      ],
+      "image": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=8",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did mathematicians and women working in secret wooden huts help shorten the Second World War?",
+      "modelAnswer": "By scrambling messages through spinning <strong>cipher rotors</strong>, the portable <strong>Enigma machine</strong> allowed commanders to transmit confidential <strong>military secret codes</strong> that seemed impossible to decipher."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_9",
+      "slug": "ks2_ww2_lesson_9",
+      "title": "Enquiry 9: Who Were the Rescuers?",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 9",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Cancelled Skiing Holiday (December 1938)",
+        "The Team in Prague & London: The Rescue Chain",
+        "669 Children & The Secret Scrapbook"
+      ],
+      "image": "/units/ks2_ww2/assets/nicholas_winton_1938_portrait.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=9",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did a stockbroker and a Dorset schoolteacher risk everything to rescue 669 Czech children?",
+      "modelAnswer": "Instead of going on his <strong>cancelled skiing holiday</strong>, young <strong>Nicholas Winton</strong> travelled to witness the harrowing <strong>Prague refugee crisis</strong> firsthand."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_10",
+      "slug": "ks2_ww2_lesson_10",
+      "title": "Enquiry 10: VE Day, Post-War Rebuilding & Remembrance",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 10",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Announcement & The Joyous Street Parties (8 May 1945)",
+        "The Tinge of Sorrow: Loss & Rebuilding",
+        "The Duty of Remembrance: The Poppy & The Cenotaph"
+      ],
+      "image": "/units/ks2_ww2/assets/churchill_ve_day_whitehall_1945.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=10",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How was peace celebrated in May 1945, and why is it our duty to remember their sacrifices?",
+      "modelAnswer": "Marking <strong>VE Day (8 May 1945)</strong>, ecstatic communities celebrated with music and <strong>street parties</strong>, listening joyfully to the historic <strong>Winston Churchill speech</strong>."
+    },
+    {
+      "unit": "ks2_ww2",
+      "lessonId": "lesson_11",
+      "slug": "ks2_ww2_lesson_11",
+      "title": "Enquiry 11: After the War — The Windermere Children & Rebuilding Lives (1945)",
+      "topic": "Key Stage 2 • World War II & The Home Front (1939–1945) • Enquiry 11",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Trapped Children & The Mercy Airlift (August 1945)",
+        "Sanctuary at Calgarth: Bread Under Pillows & Red Bicycles",
+        "Tom Palmer's 'After the War': Real Survivors & Historical Fiction",
+        "The Living Legacy & The '45 Aid Society"
+      ],
+      "image": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
+      "interactiveUrl": "/interactive_mats/viewer.html?unit=ks2_ww2&lesson=11",
+      "fileSizeKb": 140,
+      "hingeQuestion": "How did 300 child survivors rebuild their lives by Lake Windermere in 1945?",
+      "modelAnswer": "In August 1945, a daring <strong>RAF Lancaster mercy flight</strong> transported <strong>300 child survivors</strong> from devastated Europe to begin healing upon their <strong>Lake District arrival</strong>."
     }
   ]
 }

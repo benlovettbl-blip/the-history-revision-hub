@@ -73,8 +73,8 @@ for (const unit of KS3_16P_UNITS) {
   if (fs.existsSync(dbPath)) {
     try {
       const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
-      if (db[unit.id] && db[unit.id].data) {
-        unitData = db[unit.id].data;
+      if (db[unit.id]) {
+        unitData = db[unit.id].data || db[unit.id];
       }
     } catch (e) {}
   }

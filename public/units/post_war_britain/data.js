@@ -1,14 +1,14 @@
 export default {
   "synopsis": "Rising from the smouldering rubble of the Blitz, a bankrupt but determined Britain vowed to banish poverty and disease to construct a 'land fit for heroes'. Witness the revolutionary birth of Clement Attlee's National Health Service offering care free at the point of delivery from cradle to grave. Experience the historic arrival of HMT Empire Windrush in 1948, bringing Caribbean pioneers whose labour, cultural vibrancy, and anti-racist resistance forged modern multicultural Britain. Follow the seismic shifts of the post-war era: the dismantling of global empire after Suez, the counter-cultural explosion of the Swinging Sixties, the fierce industrial strikes and free-market deregulation of Margaret Thatcher's Britain, and the grassroots campaigns for civil rights, women's equality, and racial justice that transformed the realm into the millennium.",
   "synopsis_tags": [
-      "Attlee & The Creation of the NHS (1948)",
-      "Empire Windrush & The Making of Multicultural Britain",
-      "Decolonisation & The Suez Crisis (1956)",
-      "Youth Culture",
-      "Pop Art & 1960s Liberation",
-      "Brixton Uprisings & The Race Relations Acts",
-      "Thatcherism",
-      "The Miners’ Strike & Deindustrialisation"
+    "Attlee & The Creation of the NHS (1948)",
+    "Empire Windrush & The Making of Multicultural Britain",
+    "Decolonisation & The Suez Crisis (1956)",
+    "Youth Culture",
+    "Pop Art & 1960s Liberation",
+    "Brixton Uprisings & The Race Relations Acts",
+    "Thatcherism",
+    "The Miners’ Strike & Deindustrialisation"
   ],
   "id": "post_war_britain",
   "title": "KS3: Rights, Protest, and Post-War Britain (1900–Present)",
@@ -719,7 +719,7 @@ export default {
               "enfranchisement"
             ]
           },
-          "model_answer": "A primary reason for the creation of the NHS in 1948 was the shared experience of the Second World War. During the Blitz, the wartime government set up the Emergency Medical Service, proving that the state could successfully organize national healthcare. The 1942 Beveridge Report argued that a welfare state should conquer the 'Five Giants', including Disease, building overwhelming public support for free medical care.<br><br>Furthermore, the 1945 landslide victory of Clement Attlee's Labour Party provided the political mandate. Minister of Health Aneurin Bevan overcame fierce opposition from the British Medical Association, establishing a universal NHS free at the point of delivery on 5 July 1948.",
+          "model_answer": "A primary reason British women over thirty were granted the vote in 1918 was their indispensable contribution to the war effort during the First World War. Between 1914 and 1918, over one million women entered the workforce, taking on vital roles in munitions factories, public transport, agriculture (Women's Land Army), and frontline nursing. By keeping the wartime economy alive and manufacturing the artillery shells that sustained the Western Front, women definitively dismantled the anti-suffrage argument that they lacked the physical and civic capability for parliamentary responsibility.<br><br>Furthermore, the government feared a resurgence of pre-war Suffragette militancy if electoral reform excluded women. Before 1914, Emmeline Pankhurst’s WSPU had waged an escalating campaign of arson, window-smashing, and hunger strikes. When Parliament was forced to pass the 1918 Representation of the People Act to enfranchise working-class soldiers who had lost their voting qualifications through overseas military service, politicians recognized that failing to include women would provoke immediate, violent unrest.<br><br>Finally, decades of disciplined, constitutional lobbying by Millicent Fawcett’s NUWSS (Suffragists) had already established strong cross-party parliamentary alliances. The war allowed politicians who had previously opposed women's suffrage to reverse their stance without appearing to surrender to militant violence.",
           "topic": "Question 2: Explain Why [12 marks • 15 mins]"
         }
       ],
@@ -1448,10 +1448,10 @@ export default {
             "title": "Source B (Official Document Cover): Title Page of the Landmark Beveridge Report (November 1942)",
             "src": "/images/post_war_britain/beveridge_report_title_page_1942.jpg",
             "image": "/images/post_war_britain/beveridge_report_title_page_1942.jpg",
-            "type": "written",
-              "text": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
-              "content": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
-              "caption": "Title page of the landmark government Command Paper Cmd. 6404: 'Social Insurance and Allied Services: Report by Sir William Beveridge', published by HMSO in November 1942.",
+            "type": "visual",
+            "text": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
+            "content": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
+            "caption": "Title page of the landmark government Command Paper Cmd. 6404: 'Social Insurance and Allied Services: Report by Sir William Beveridge', published by HMSO in November 1942.",
             "citation": "His Majesty's Stationery Office (HMSO), London, Cmd. 6404, November 1942.",
             "question_badge": "Author's Purpose",
             "enquiry_question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?",
@@ -1461,8 +1461,7 @@ export default {
             "teacher_notes": {
               "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
             },
-            "id": "pwb_l2_src_b",
-            "type": "visual"
+            "id": "pwb_l2_src_b"
           }
         },
         {
@@ -1648,10 +1647,10 @@ export default {
           "title": "Source C (Press Photograph): Prime Minister Clement Attlee Following the 1945 Landslide",
           "src": "/images/post_war_britain/clement_attlee_1945.jpg",
           "image": "/images/post_war_britain/clement_attlee_1945.jpg",
-          "type": "written",
-              "text": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
-              "content": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
-              "caption": "Prime Minister Clement Attlee outside 10 Downing Street in July 1945 after Labour won a landslide 146-seat majority on a manifesto promising to build the Welfare State.",
+          "type": "visual",
+          "text": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
+          "content": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
+          "caption": "Prime Minister Clement Attlee outside 10 Downing Street in July 1945 after Labour won a landslide 146-seat majority on a manifesto promising to build the Welfare State.",
           "citation": "Central Office of Information / National Portrait Gallery, London.",
           "question_badge": "Source Inference",
           "enquiry_question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?",
@@ -1661,8 +1660,7 @@ export default {
           "teacher_notes": {
             "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
           },
-          "id": "pwb_l2_src_c",
-          "type": "visual"
+          "id": "pwb_l2_src_c"
         },
         {
           "letter": "D",
@@ -1858,7 +1856,7 @@ export default {
               "working-class health"
             ]
           },
-          "model_answer": "One consequence of the arrival of the Empire Windrush in 1948 was the vital contribution of Caribbean workers to rebuilding post-war Britain. Specifically, hundreds of Commonwealth citizens took up essential employment as nurses in the new NHS and drivers on London transport, laying the foundation for a vibrant, diverse multicultural society.",
+          "model_answer": "One consequence of the creation of the National Health Service on 5 July 1948 was the elimination of the financial barrier to medical care for working-class families, establishing universal healthcare free at the point of delivery based on clinical need rather than ability to pay. Specifically, millions of working-class citizens who had previously delayed seeing a doctor due to the terror of medical bills immediately accessed treatment, with over 187 million prescriptions dispensed and millions of pairs of free spectacles and dental dentures fitted in the first year alone. This transformed public health, dramatically reducing infant and maternal mortality and eliminating untreated chronic infections across industrial Britain.",
           "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]"
         }
       ],
@@ -2933,22 +2931,68 @@ export default {
           "interpretation_1": {
             "author": "Official Government Narrative / Newsreel (1948)",
             "work": "Pathé News Report: \"Welcome to Britain\"",
-            "extract": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth."
+            "extract": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth.",
+            "text": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth."
           },
           "interpretation_2": {
             "author": "Historian David Olusoga",
             "work": "Black and British: A Forgotten History (2016)",
-            "extract": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence."
+            "extract": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence.",
+            "text": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence."
           },
           "sub_question_b": {
-            "prompt": "Explain how Interpretations 1 and 2 differ on the reception faced by the Windrush Generation in post-war Britain. [4 marks]",
-            "model": "Interpretations 1 and 2 differ sharply over the warmth and fairness of the reception experienced by Caribbean migrants in post-war Britain [3.2, 3.4]. Interpretation 1 portrays a harmonious, welcoming mother country offering employment and colonial fraternity. In contrast, Interpretation 2 demonstrates that Caribbean citizens were met with systemic racism, housing discrimination, colour bars, and violent street hostility despite their legal British citizenship under the 1948 British Nationality Act."
+            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]",
+            "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\"."
           },
           "sub_question_c": {
-            "prompt": "Suggest one reason why Interpretations 1 and 2 differ on the reality of the Windrush experience. [4 marks]",
-            "model": "One reason why the interpretations differ is the divergent purposes and temporal perspectives of the authors [3.1, 3.5]. Interpretation 1 is a 1948 government-approved newsreel designed for cinema audiences to project British imperial unity and justify labor recruitment. In contrast, David Olusoga is a 21st-century historian drawing upon unsealed Cabinet records, personal migrant testimonies, and police records of the 1958 Notting Hill Riots to document the authentic, suppressed history of racial exclusion."
+            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer. [4 marks]",
+            "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations."
           },
-          "topic": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]"
+          "topic": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]",
+          "interp1": {
+            "author": "Official Government Narrative / Newsreel (1948)",
+            "work": "Pathé News Report: \"Welcome to Britain\"",
+            "extract": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth.",
+            "text": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth."
+          },
+          "interp2": {
+            "author": "Historian David Olusoga",
+            "work": "Black and British: A Forgotten History (2016)",
+            "extract": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence.",
+            "text": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence."
+          },
+          "source_b": {
+            "label": "Source B",
+            "title": "Source B: Ministry of Labour Official Statement (June 1948)",
+            "badge": "Official Government Record • 1948",
+            "author": "Ministry of Labour & National Service Press Release (June 1948)",
+            "text": "The arrival of citizens from Jamaica and the West Indies is a welcome event for our recovering economy. British industry faces severe manpower shortages in vital sectors. There are thousands of unfilled vacancies in British Railways, London transport, and our newly founded National Health Service. These British subjects are stepping forward with patriotism and skill to assist the mother country."
+          },
+          "source1": {
+            "label": "Source B",
+            "title": "Source B: Ministry of Labour Official Statement (June 1948)",
+            "badge": "Official Government Record • 1948",
+            "author": "Ministry of Labour & National Service Press Release (June 1948)",
+            "text": "The arrival of citizens from Jamaica and the West Indies is a welcome event for our recovering economy. British industry faces severe manpower shortages in vital sectors. There are thousands of unfilled vacancies in British Railways, London transport, and our newly founded National Health Service. These British subjects are stepping forward with patriotism and skill to assist the mother country."
+          },
+          "source_c": {
+            "label": "Source C",
+            "title": "Source C: Eyewitness Account of the Housing \"Colour Bar\" (1950s)",
+            "badge": "Firsthand Immigrant Testimony • 1950s",
+            "author": "Firsthand Testimony of a Jamaican arrival in Notting Hill (1952)",
+            "text": "When we walked down the streets seeking a place to live, every door was slammed in our faces. Windows of boarding houses openly displayed handwritten notices saying: \"No Coloureds, No Irish, No Dogs\". Even when rooms were advertised as vacant, the moment landlords saw our dark skin, they lied and said the room was taken. We were forced into overcrowded, unheated basements and charged extortionate rents."
+          },
+          "source2": {
+            "label": "Source C",
+            "title": "Source C: Eyewitness Account of the Housing \"Colour Bar\" (1950s)",
+            "badge": "Firsthand Immigrant Testimony • 1950s",
+            "author": "Firsthand Testimony of a Jamaican arrival in Notting Hill (1952)",
+            "text": "When we walked down the streets seeking a place to live, every door was slammed in our faces. Windows of boarding houses openly displayed handwritten notices saying: \"No Coloureds, No Irish, No Dogs\". Even when rooms were advertised as vacant, the moment landlords saw our dark skin, they lied and said the room was taken. We were forced into overcrowded, unheated basements and charged extortionate rents."
+          },
+          "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\".",
+          "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations.",
+          "model_answer": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations.</div>",
+          "model": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations.</div>"
         }
       ],
       "quiz": [
@@ -4115,7 +4159,7 @@ export default {
               "Race Relations Act 1965"
             ]
           },
-          "model_answer": "Initially, Egyptian President Nasser nationalised the Suez Canal in July 1956 to fund the Aswan Dam. Britain, France, and Israel met secretly at Sèvres, concocting a plan where Israel would invade Sinai, allowing Anglo-French troops to intervene to 'protect' the canal.<br><br>Following Israel's attack in October 1956, British and French forces landed at Port Said. However, US President Eisenhower furiously opposed the invasion, threatening to bankrupt Britain by collapsing the pound.<br><br>Finally, facing financial catastrophe and UN condemnation, Prime Minister Anthony Eden was forced to withdraw British troops in humiliation, demonstrating the end of Britain's status as a superpower.",
+          "model_answer": "Initially, in April 1963, 18-year-old student Guy Bailey was refused a job interview by the Bristol Omnibus Company because of their strict \"colour bar\" ban on employing Black and Asian crews. Outraged by this blatant racial discrimination, civil rights leaders Paul Stephenson, Roy Hackett, and the West Indian Development Council launched a total boycott of the city's bus network.<br><br>As a result, the boycott gained massive public momentum, attracting national media coverage and active solidarity from Bristol University students, local churches, and prominent politicians including Bristol South MP Tony Benn and Labour leader Harold Wilson. For four months, thousands of West Indian and white supporters refused to use municipal transport, causing significant revenue loss and severe moral embarrassment to the transport company.<br><br>Finally, on 28 August 1963—the same day Martin Luther King delivered his \"I Have a Dream\" speech in Washington—the Transport and General Workers' Union voted to abolish the colour bar, with the company hiring its first non-white conductor, Raghbir Singh, in September. This landmark victory demonstrated the power of peaceful direct action and directly pressured Harold Wilson's government into enacting Britain's first anti-discrimination law, the Race Relations Act of 1965.",
           "topic": "Question 1: Narrative Account [8 marks • 10 mins]"
         }
       ],
@@ -5239,7 +5283,7 @@ export default {
               "The War Game"
             ]
           },
-          "model_answer": "On the one hand, the 1960s was a decade of profound social and legal transformation. Harold Wilson's Labour government passed landmark liberalising legislation, including the legalisation of abortion (1967), the partial decriminalisation of male homosexuality (1967), and the abolition of capital punishment (1969). Concurrently, youth culture flourished through rock music, fashion, and greater personal freedom.<br><br>On the other hand, traditional conservatism remained deeply rooted for most ordinary citizens. Deep inequalities persisted, with women facing unequal pay until the 1970 Equal Pay Act, and racial discrimination remaining widespread despite early Race Relations Acts. Therefore, while legal reforms dismantled Victorian moral codes, genuine equality was an ongoing struggle.",
+          "model_answer": "On the one hand, public-facing civil defence preparations were largely cosmetic exercises in morale maintenance rather than genuine survival strategies against thermonuclear attack. Government advice pamphlets like \"Protect and Survive\" instructed families to build makeshift \"fallout rooms\" inside their homes using doors, mattresses, and whitewashed windows to deflect thermal radiation. In reality, given the catastrophic blast radius, firestorms, and radioactive fallout of modern Soviet multi-megaton hydrogen bombs, these flimsy domestic measures would have offered zero protection, serving primarily to project an illusion of control and suppress public hysteria and CND anti-nuclear protests.<br><br>On the other hand, genuine, heavily funded survival infrastructure was constructed to preserve military command and continuity of government. Massive hardened subterranean bunker complexes, such as the 35-acre Central Government War Headquarters (\"Burlington\") at Corsham, were engineered with self-contained air filtration, communication networks, and food stockpiles to keep political and military elites alive for months. Furthermore, the Royal Observer Corps operated a nationwide network of 1,500 monitoring posts to calculate nuclear blast vectors. Therefore, while civil defence for the ordinary population was an exercise in morale, the state invested immense resources into elite survival and military retaliation.",
           "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
         }
       ],

@@ -1,11 +1,11 @@
 export default {
   "synopsis": "Crowns shattered, royal heads rolling from the executioner's block, and an island kingdom consumed by religious fury and civil war. From the spark of Henry VIII’s seismic Break with Rome and the deadly religious pendulum of the Tudor monarchs to the gunpowder treason of 1605 and the fiery sea battle against the Spanish Armada. Witness Charles I claim absolute Divine Right, triggering a bloody clash between Royalist Cavaliers and Cromwell's New Model Army that culminated in public regicide, the puritan Republic, and the revolutionary birth of constitutional monarchy in the Glorious Revolution of 1689.",
   "synopsis_tags": [
-      "Break with Rome & Dissolution",
-      "The Spanish Armada (1588)",
-      "Gunpowder Plot (1605)",
-      "English Civil War & Regicide",
-      "Glorious Revolution & Bill of Rights (1689)"
+    "Break with Rome & Dissolution",
+    "The Spanish Armada (1588)",
+    "Gunpowder Plot (1605)",
+    "English Civil War & Regicide",
+    "Glorious Revolution & Bill of Rights (1689)"
   ],
   "id": "monarchy_religion_power",
   "title": "Crown, Church, or Parliament (1517–1689)",
@@ -1588,6 +1588,123 @@ export default {
           "a": "The Oath of Supremacy",
           "explanation": "The Oath of Supremacy required all clergy and office-holders to swear that Henry was head of the Church."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1517–1521",
+          "heading": "The Spark at Wittenberg (1517–1521)",
+          "focus_clue": "How did Martin Luther’s protest spark the Reformation across Europe?",
+          "words": [
+            {
+              "term": "indulgence",
+              "clue": "Luther was disgusted by corrupt Catholic friars selling an indulgence—a printed certificate promising wealthy sinners that their deceased relatives would escape the agony of Purgatory for cash."
+            },
+            {
+              "term": "Purgatory",
+              "clue": "Luther was disgusted by corrupt Catholic friars selling an indulgence—a printed certificate promising wealthy sinners that their deceased relatives would escape the agony of Purgatory for cash."
+            },
+            {
+              "term": "Reformation",
+              "clue": "Thanks to the newly invented printing press, Luther’s ideas swept across Europe like wildfire, triggering the Protestant Reformation."
+            }
+          ],
+          "model_sentence": "By attacking the corrupt sale of each papal <strong>indulgence</strong> promising release from <strong>Purgatory</strong>, Martin Luther launched the Protestant <strong>Reformation</strong> in 1517.",
+          "title": "The Spark at Wittenberg (1517–1521)",
+          "dates": "1517–1521"
+        },
+        {
+          "step": 2,
+          "date": "1525–1527",
+          "heading": "The King’s Dynastic Crisis (1525–1527)",
+          "focus_clue": "Why did the royal marriage become an urgent dynastic crisis?",
+          "words": [
+            {
+              "term": "dynastic",
+              "clue": "But by 1527, Henry faced an agonizing dynastic emergency."
+            },
+            {
+              "term": "annulment",
+              "clue": "Believing his marriage was cursed by God because Catherine had previously been married to his deceased brother Arthur, Henry demanded an official annulment from Rome to ensure the Tudor royal succession."
+            },
+            {
+              "term": "succession",
+              "clue": "Believing his marriage was cursed by God because Catherine had previously been married to his deceased brother Arthur, Henry demanded an official annulment from Rome to ensure the Tudor royal succession."
+            }
+          ],
+          "model_sentence": "Desperate to resolve his <strong>dynastic</strong> anxiety and secure the Tudor <strong>succession</strong> with a male heir, Henry VIII sought a papal <strong>annulment</strong> of his marriage to Catherine of Aragon.",
+          "title": "The King’s Dynastic Crisis (1525–1527)",
+          "dates": "1525–1527"
+        },
+        {
+          "step": 3,
+          "date": "1527–1529",
+          "heading": "The Roman Deadlock (1527–1529)",
+          "focus_clue": "Why did Pope Clement VII refuse Henry’s annulment request?",
+          "words": [
+            {
+              "term": "papacy",
+              "clue": "Charles warned the papacy that granting Henry an annulment would bring total destruction upon Italy."
+            },
+            {
+              "term": "sovereignty",
+              "clue": "For two agonising years, Henry’s chief minister, Cardinal Thomas Wolsey, attempted desperate legal manoeuvres in London to prove English legal sovereignty."
+            },
+            {
+              "term": "Pope Clement VII & Emperor Charles V",
+              "clue": "Normally, popes readily granted royal divorces for allied kings, but Pope Clement VII was hopelessly trapped."
+            }
+          ],
+          "model_sentence": "When political pressure from <strong>Pope Clement VII & Emperor Charles V</strong> blocked the divorce, Henry VIII repudiated the <strong>papacy</strong> to establish absolute royal <strong>sovereignty</strong>.",
+          "title": "The Roman Deadlock (1527–1529)",
+          "dates": "1527–1529"
+        },
+        {
+          "step": 4,
+          "date": "1529–1533",
+          "heading": "Cromwell’s Parliamentary Siege (1529–1533)",
+          "focus_clue": "How did Thomas Cromwell use Parliament to pressure the Church?",
+          "words": [
+            {
+              "term": "statute",
+              "clue": "Between 1529 and 1533, Cromwell used the Reformation Parliament to pass a series of revolutionary statute laws."
+            },
+            {
+              "term": "Thomas Cromwell & Reformation Parliament",
+              "clue": "Between 1529 and 1533, Cromwell used the Reformation Parliament to pass a series of revolutionary statute laws."
+            },
+            {
+              "term": "Reformation",
+              "clue": "Between 1529 and 1533, Cromwell used the Reformation Parliament to pass a series of revolutionary statute laws."
+            }
+          ],
+          "model_sentence": "Guided by chief minister <strong>Thomas Cromwell & Reformation Parliament</strong>, the Crown used <strong>statute</strong> law to enact the English <strong>Reformation</strong> and dissolve the monasteries.",
+          "title": "Cromwell’s Parliamentary Siege (1529–1533)",
+          "dates": "1529–1533"
+        },
+        {
+          "step": 5,
+          "date": "1534",
+          "heading": "Royal Supremacy & Monastic Meltdown (1534–1540)",
+          "focus_clue": "How did the Act of Supremacy legally consolidate royal sovereignty?",
+          "words": [
+            {
+              "term": "Act of Supremacy",
+              "clue": "In November 1534, Parliament passed the historic Act of Supremacy, formally declaring King Henry VIII the sole \"Supreme Head\" of the Church of England."
+            },
+            {
+              "term": "Supremacy",
+              "clue": "In November 1534, Parliament passed the historic Act of Supremacy, formally declaring King Henry VIII the sole \"Supreme Head\" of the Church of England."
+            },
+            {
+              "term": "treason",
+              "clue": "Refusing to swear the mandatory Oath of Supremacy was classified as high treason; Henry’s revered former Chancellor Sir Thomas More was promptly beheaded for remaining loyal to the Pope."
+            }
+          ],
+          "model_sentence": "The 1534 <strong>Act of <strong>Supremacy</strong></strong> made Henry Supreme Head of the Church of England, breaking ties with Rome and enforcing forced <strong>treason</strong> oaths under the Treason Act that led to the executions of Thomas More and John Fisher.",
+          "title": "Royal Supremacy & Monastic Meltdown (1534–1540)",
+          "dates": "1534"
+        }
       ]
     },
     {
@@ -2857,6 +2974,123 @@ export default {
           "a": "All clergy were required to swear an oath accepting her governance or forfeit their jobs",
           "explanation": "Clergy who refused to accept Elizabeth's governance were forced to forfeit their positions."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1558–1559",
+          "heading": "A Fractured Kingdom (1558–1559)",
+          "focus_clue": "Why was England religiously fractured when Elizabeth became Queen?",
+          "words": [
+            {
+              "term": "persecution",
+              "clue": "Then, under her strict Catholic half-sister Mary I, the Pope’s authority was restored with brutal persecution."
+            },
+            {
+              "term": "martyr",
+              "clue": "Mary burned over 280 Protestant men, women, and bishops at the stake—creating celebrated national martyr heroes like Cranmer, Latimer, and Ridley."
+            },
+            {
+              "term": "Queen Mary I & Protestant Returnees",
+              "clue": "Mary burned over 280 Protestant men, women, and bishops at the stake—creating celebrated national martyr heroes like Cranmer, Latimer, and Ridley."
+            }
+          ],
+          "model_sentence": "Following the brutal Catholic <strong>persecution</strong> under <strong>Queen Mary I & Protestant Returnees</strong>, the public venerated each Protestant <strong>martyr</strong> burned at Smithfield.",
+          "title": "A Fractured Kingdom (1558–1559)",
+          "dates": "1558–1559"
+        },
+        {
+          "step": 2,
+          "date": "1559",
+          "heading": "Restoring Control: Supreme Governor (1559)",
+          "focus_clue": "How did the Act of Supremacy restore royal control through compromise?",
+          "words": [
+            {
+              "term": "compromise",
+              "clue": "Instead of reclaiming Henry VIII’s provocative title of \"Supreme Head,\" Elizabeth agreed to a diplomatic compromise, adopting the softer title of Supreme Governor of the Church of England."
+            },
+            {
+              "term": "Supreme Governor",
+              "clue": "Instead of reclaiming Henry VIII’s provocative title of \"Supreme Head,\" Elizabeth agreed to a diplomatic compromise, adopting the softer title of Supreme Governor of the Church of England."
+            },
+            {
+              "term": "Elizabeth I & House of Lords",
+              "clue": "Elizabeth I negotiated with the conservative Catholic peers in the House of Lords to secure passage of the 1559 Elizabethan Religious Settlement."
+            }
+          ],
+          "model_sentence": "Seeking a moderate religious <strong>compromise</strong> in 1559, Parliament established Elizabeth as <strong>Supreme Governor</strong> following delicate negotiations between <strong>Elizabeth I & House of Lords</strong>.",
+          "title": "Restoring Control: Supreme Governor (1559)",
+          "dates": "1559"
+        },
+        {
+          "step": 3,
+          "date": "1559",
+          "heading": "The Via Media & The Prayer Book (1559)",
+          "focus_clue": "How did the Act of Uniformity establish the ‘Middle Way’ (Via Media)?",
+          "words": [
+            {
+              "term": "Uniformity",
+              "clue": "Alongside her supremacy, Elizabeth passed the 1559 Act of Uniformity, forging her famous Via Media—the \"Middle Way.\" Church was made compulsory: every subject had to attend English Protestant services every Sunday or pay a steep 12d fine as a recusant."
+            },
+            {
+              "term": "Via Media",
+              "clue": "Alongside her supremacy, Elizabeth passed the 1559 Act of Uniformity, forging her famous Via Media—the \"Middle Way.\" Church was made compulsory: every subject had to attend English Protestant services every Sunday or pay a steep 12d fine as a recusant."
+            },
+            {
+              "term": "recusant",
+              "clue": "Alongside her supremacy, Elizabeth passed the 1559 Act of Uniformity, forging her famous Via Media—the \"Middle Way.\" Church was made compulsory: every subject had to attend English Protestant services every Sunday or pay a steep 12d fine as a recusant."
+            }
+          ],
+          "model_sentence": "Enforcing the 1559 Act of <strong>Uniformity</strong> through a moderate <strong>Via Media</strong>, the Elizabethan Church imposed weekly fines on any Catholic <strong>recusant</strong> who refused to attend services.",
+          "title": "The Via Media & The Prayer Book (1559)",
+          "dates": "1559"
+        },
+        {
+          "step": 4,
+          "date": "1568–1570",
+          "heading": "The Catholic Storm Gathers (1568–1570)",
+          "focus_clue": "How did Mary Queen of Scots and the Papal Bull spark Catholic plots?",
+          "words": [
+            {
+              "term": "papal bull",
+              "clue": "The revolt was crushed, but in 1570, Pope Pius V dropped a theological bomb: he issued a formal papal bull named Regnans in Excelsis , declaring the excommunication of Elizabeth."
+            },
+            {
+              "term": "excommunication",
+              "clue": "The revolt was crushed, but in 1570, Pope Pius V dropped a theological bomb: he issued a formal papal bull named Regnans in Excelsis , declaring the excommunication of Elizabeth."
+            },
+            {
+              "term": "Pope Pius V & Northern Earls",
+              "clue": "In 1569, Catholic nobles in northern England launched the Northern Earls Rebellion to depose Elizabeth and crown Mary."
+            }
+          ],
+          "model_sentence": "In response to the 1569 Northern Rebellion, a provocative <strong>papal bull</strong> issued by <strong>Pope Pius V & Northern Earls</strong> declared the Queen's <strong>excommunication</strong> and urged her overthrow.",
+          "title": "The Catholic Storm Gathers (1568–1570)",
+          "dates": "1568–1570"
+        },
+        {
+          "step": 5,
+          "date": "1571–1588",
+          "heading": "Spies, Ciphers & The Scaffold (1571–1588)",
+          "focus_clue": "How did Walsingham’s spy network lead to Mary’s execution?",
+          "words": [
+            {
+              "term": "espionage",
+              "clue": "With Elizabeth’s life under constant threat from foreign Catholic assassins and Jesuit infiltration, her brilliant spymaster Sir Francis Walsingham established an elite network of espionage across Europe."
+            },
+            {
+              "term": "cipher",
+              "clue": "Walsingham’s cryptographers intercepted conspiratorial letters written in secret cipher, culminating in the 1586 Babington Plot."
+            },
+            {
+              "term": "Sir Francis Walsingham & Mary Stuart",
+              "clue": "With Elizabeth’s life under constant threat from foreign Catholic assassins and Jesuit infiltration, her brilliant spymaster Sir Francis Walsingham established an elite network of espionage across Europe."
+            }
+          ],
+          "model_sentence": "Utilising a sophisticated network of <strong>espionage</strong> to intercept each coded <strong>cipher</strong>, <strong>Sir Francis Walsingham & Mary Stuart</strong> clashed over the Babington Plot leading to Mary's execution.",
+          "title": "Spies, Ciphers & The Scaffold (1571–1588)",
+          "dates": "1571–1588"
+        }
       ]
     },
     {
@@ -4091,6 +4325,123 @@ export default {
           "answer": "Over 50 ships and 15,000 men perished",
           "a": "Over 50 ships and 15,000 men perished",
           "explanation": "Fierce Atlantic hurricanes smashed galleons against cliffs; over 50 ships and 15,000 men perished."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1585–1587",
+          "heading": "The Catholic Crusade (1585–1587)",
+          "focus_clue": "What imperial and religious rivalries provoked Philip II’s invasion?",
+          "words": [
+            {
+              "term": "crusade",
+              "clue": "King Philip II ruled the mightiest empire on earth, enriched by American silver, and viewed invading England as a sacred crusade to eradicate Protestantism."
+            },
+            {
+              "term": "privateer",
+              "clue": "Philip was outraged by English sea-captains like Francis Drake raiding Spanish treasure fleets as an authorised privateer, and infuriated that Elizabeth was sending troops to aid Dutch rebels against Spanish rule."
+            },
+            {
+              "term": "King Philip II & Queen Elizabeth I",
+              "clue": "King Philip II ruled the mightiest empire on earth, enriched by American silver, and viewed invading England as a sacred crusade to eradicate Protestantism."
+            }
+          ],
+          "model_sentence": "Viewing the invasion of England as a holy Catholic <strong>crusade</strong>, the imperial rivalry between <strong>King Philip II & Queen Elizabeth I</strong> escalated as each English <strong>privateer</strong> looted Spanish treasure fleets.",
+          "title": "The Catholic Crusade (1585–1587)",
+          "dates": "1585–1587"
+        },
+        {
+          "step": 2,
+          "date": "1587",
+          "heading": "Singeing the King’s Beard (April 1587)",
+          "focus_clue": "How did Drake’s raid on Cadiz delay the Spanish invasion?",
+          "words": [
+            {
+              "term": "logistics",
+              "clue": "This catastrophic blow to Spanish naval logistics delayed the invasion by a full year, forcing the Spanish to store their provisions in unseasoned green wood barrels that leaked fresh water and rotted food long before reaching England."
+            },
+            {
+              "term": "Sir Francis Drake & English Raiders",
+              "clue": "Before the Spanish fleet could assemble, Sir Francis Drake struck a devastating pre-emptive blow."
+            },
+            {
+              "term": "Logistics",
+              "clue": "This catastrophic blow to Spanish naval logistics delayed the invasion by a full year, forcing the Spanish to store their provisions in unseasoned green wood barrels that leaked fresh water and rotted food long before reaching England."
+            }
+          ],
+          "model_sentence": "Disrupting Spanish naval <strong>logistics</strong> in April 1587, <strong>Sir Francis Drake & English Raiders</strong> delayed the Armada by twelve months through daring raids that crippled Spanish supply <strong>Logistics</strong>.",
+          "title": "Singeing the King’s Beard (April 1587)",
+          "dates": "1587"
+        },
+        {
+          "step": 3,
+          "date": "July 1588",
+          "heading": "Channel Standoff & Gun Tactics (July 1588)",
+          "focus_clue": "How did the English fleet harry the Armada up the English Channel?",
+          "words": [
+            {
+              "term": "culverin",
+              "clue": "Armed with long-range culverin cannons mounted on compact truck carriages, English gunners could deliver a devastating rolling broadside from standoff distances and reload three times faster than Spanish gunners, without ever coming close enough to be boarded."
+            },
+            {
+              "term": "broadside",
+              "clue": "Armed with long-range culverin cannons mounted on compact truck carriages, English gunners could deliver a devastating rolling broadside from standoff distances and reload three times faster than Spanish gunners, without ever coming close enough to be boarded."
+            },
+            {
+              "term": "Duke of Medina Sidonia & Lord Howard",
+              "clue": "In July 1588, the 130 ships of the Great Armada entered the English Channel, commanded by the reluctant Duke of Medina Sidonia."
+            }
+          ],
+          "model_sentence": "Employing long-range <strong>culverin</strong> guns to unleash repeated <strong>broadside</strong> firepower, English tactics outmanoeuvred the galleons commanded by <strong>Duke of Medina Sidonia & Lord Howard</strong>.",
+          "title": "Channel Standoff & Gun Tactics (July 1588)",
+          "dates": "July 1588"
+        },
+        {
+          "step": 4,
+          "date": "7–8 August 1588",
+          "heading": "Midnight Hellburners at Calais (7–8 August 1588)",
+          "focus_clue": "How did English fireships at Calais shatter the Spanish formation?",
+          "words": [
+            {
+              "term": "fireship",
+              "clue": "Just after midnight on 7 August, the English steered eight blazing fireship vessels—packed with gunpowder, pitch, and ordnance—directly into the crowded Spanish anchorage."
+            },
+            {
+              "term": "anchorage",
+              "clue": "Just after midnight on 7 August, the English steered eight blazing fireship vessels—packed with gunpowder, pitch, and ordnance—directly into the crowded Spanish anchorage."
+            },
+            {
+              "term": "English Sea Captains & Spanish Galleons",
+              "clue": "Just after midnight on 7 August, the English steered eight blazing fireship vessels—packed with gunpowder, pitch, and ordnance—directly into the crowded Spanish anchorage."
+            }
+          ],
+          "model_sentence": "Deploying eight blazing <strong>fireship</strong> vessels into the crowded Calais <strong>anchorage</strong>, the clash between <strong>English Sea Captains & Spanish Galleons</strong> scattered the Spanish defensive formation.",
+          "title": "Midnight Hellburners at Calais (7–8 August 1588)",
+          "dates": "7–8 August 1588"
+        },
+        {
+          "step": 5,
+          "date": "Aug–Sept 1588",
+          "heading": "Gravelines & The Protestant Wind (August–September 1588)",
+          "focus_clue": "How did the Battle of Gravelines and severe storms destroy the fleet?",
+          "words": [
+            {
+              "term": "providence",
+              "clue": "Then, divine providence intervened."
+            },
+            {
+              "term": "Lord Howard, Drake & Atlantic Gales",
+              "clue": "English naval commanders Lord Howard and Francis Drake capitalized on the 'Protestant Wind' and fireships at Gravelines to disrupt the Spanish Armada."
+            },
+            {
+              "term": "Galleon",
+              "clue": "In an eight-hour running battle, English race-built galleons pounded the scattered, anchorless Spanish ships with over 100,000 cannonballs at point-blank range, killing thousands of soldiers and puncturing hulls."
+            }
+          ],
+          "model_sentence": "Interpreting the Armada's ruin as divine <strong>providence</strong>, English victories guided by <strong>Lord Howard, Drake & Atlantic Gales</strong> battered each retreating Spanish <strong>Galleon</strong> around Scotland and Ireland.",
+          "title": "Gravelines & The Protestant Wind (August–September 1588)",
+          "dates": "Aug–Sept 1588"
         }
       ]
     },
@@ -5327,6 +5678,123 @@ export default {
           "a": "The Bill of Rights",
           "explanation": "In February 1689, William and Mary accepted the historic Bill of Rights."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1629–1640",
+          "heading": "The Eleven Years’ Tyranny (1629–1640)",
+          "focus_clue": "Why did Charles I’s ‘Personal Rule’ without Parliament cause outrage?",
+          "words": [
+            {
+              "term": "Divine Right",
+              "clue": "In 1625, Charles I inherited the English throne, holding a fanatical belief in the Divine Right of Kings."
+            },
+            {
+              "term": "Personal Rule",
+              "clue": "When MPs in Parliament challenged his royal policies, Charles dismissed them in 1629, initiating eleven years of absolute Personal Rule."
+            },
+            {
+              "term": "Ship Money",
+              "clue": "Most notoriously, he imposed Ship Money—an emergency tax traditionally levied on coastal ports during war—and forced inland farming towns to pay it every year in peacetime."
+            }
+          ],
+          "model_sentence": "Governing under the theological doctrine of <strong>Divine Right</strong> during his eleven-year <strong>Personal Rule</strong>, Charles I provoked fierce resistance by illegally levying <strong>Ship Money</strong> across the nation.",
+          "title": "The Eleven Years’ Tyranny (1629–1640)",
+          "dates": "1629–1640"
+        },
+        {
+          "step": 2,
+          "date": "1640–1642",
+          "heading": "The Breakdown of Trust (1640–1642)",
+          "focus_clue": "How did the breakdown of trust lead to armed civil conflict?",
+          "words": [
+            {
+              "term": "impeachment",
+              "clue": "Furious MPs, led by John Pym, seized control: they outlawed Ship Money, passed an impeachment against the King’s chief minister Strafford, and declared that Parliament could not be dissolved without its own consent."
+            },
+            {
+              "term": "Charles I & The Five MPs",
+              "clue": "In January 1642, Charles committed an unprecedented breach of constitutional privilege: he entered the House of Commons with 400 armed soldiers to arrest five MPs for treason."
+            },
+            {
+              "term": "Ship Money",
+              "clue": "Furious MPs, led by John Pym, seized control: they outlawed Ship Money, passed an impeachment against the King’s chief minister Strafford, and declared that Parliament could not be dissolved without its own consent."
+            }
+          ],
+          "model_sentence": "Tensions boiled over into parliamentary <strong>impeachment</strong> proceedings when <strong>Charles I & The Five MPs</strong> clashed over royal tyranny and the unconstitutional collection of <strong>Ship Money</strong>.",
+          "title": "The Breakdown of Trust (1640–1642)",
+          "dates": "1640–1642"
+        },
+        {
+          "step": 3,
+          "date": "1645–1648",
+          "heading": "War & The New Model Army (1642–1648)",
+          "focus_clue": "How did the New Model Army defeat the King at the Battle of Naseby?",
+          "words": [
+            {
+              "term": "New Model Army",
+              "clue": "The tide turned decisively with the rise of Oliver Cromwell, who created the revolutionary New Model Army in 1645."
+            },
+            {
+              "term": "Oliver Cromwell & Sir Thomas Fairfax",
+              "clue": "Charles surrendered to the Scots in 1646, but while negotiating peace terms, he secretly signed a pact with Scottish factions, igniting a bloody Second Civil War in 1648 that branded him a \"man of blood.\" Parliament created the New Model Army, fielding full-time paid redcoats under Thomas Fairfax and Oliver Cromwell; at the Battle of Naseby (1645), Cromwell's cavalry charges routed and captured the royalists."
+            },
+            {
+              "term": "Parliamentary Victory at Naseby",
+              "clue": "The decisive defeat of Charles I's royalist forces by Oliver Cromwell and Sir Thomas Fairfax's disciplined New Model Army in June 1645."
+            }
+          ],
+          "model_sentence": "Organized under the joint command of <strong>Oliver Cromwell & Sir Thomas Fairfax</strong>, the disciplined <strong>New Model Army</strong> achieved the decisive <strong>Parliamentary Victory at Naseby</strong> in 1645.",
+          "title": "War & The New Model Army (1642–1648)",
+          "dates": "1645–1648"
+        },
+        {
+          "step": 4,
+          "date": "1648–1649",
+          "heading": "The Trial & Execution of Charles I (1648–1649)",
+          "focus_clue": "Why did Pride’s Purge and the High Court lead to regicide?",
+          "words": [
+            {
+              "term": "high treason",
+              "clue": "Furious that Charles had provoked renewed bloodshed, the New Model Army purged Parliament of moderate MPs in Pride’s Purge, leaving a radical \"Rump Parliament.\" In January 1649, this Rump established a High Court of Justice to try King Charles I for high treason against his own people."
+            },
+            {
+              "term": "Colonel Thomas Pride & High Court of Justice",
+              "clue": "Furious that Charles had provoked renewed bloodshed, the New Model Army purged Parliament of moderate MPs in Pride’s Purge, leaving a radical \"Rump Parliament.\" In January 1649, this Rump established a High Court of Justice to try King Charles I for high treason against his own people."
+            },
+            {
+              "term": "New Model Army",
+              "clue": "Furious that Charles had provoked renewed bloodshed, the New Model Army purged Parliament of moderate MPs in Pride’s Purge, leaving a radical \"Rump Parliament.\" In January 1649, this Rump established a High Court of Justice to try King Charles I for high treason against his own people."
+            }
+          ],
+          "model_sentence": "Charged with <strong>high treason</strong> against his people, the king was tried after <strong>Colonel Thomas Pride & High Court of Justice</strong> purged moderate MPs with the backing of the <strong>New Model Army</strong>.",
+          "title": "The Trial & Execution of Charles I (1648–1649)",
+          "dates": "1648–1649"
+        },
+        {
+          "step": 5,
+          "date": "1660–1689",
+          "heading": "The Glorious Revolution & The Bill of Rights (1660–1689)",
+          "focus_clue": "How did the Glorious Revolution permanently limit royal power?",
+          "words": [
+            {
+              "term": "Restoration",
+              "clue": "Following eleven years of Puritan rule under Lord Protector Oliver Cromwell, the monarchy was brought back in the 1660 Restoration under Charles II."
+            },
+            {
+              "term": "Bill of Rights",
+              "clue": "In February 1689, William and Mary accepted the historic Bill of Rights."
+            },
+            {
+              "term": "William III, Mary II & Convention Parliament",
+              "clue": "In 1688, seven leading nobles invited Protestant William of Orange and his wife Mary to invade England in the \"Glorious Revolution.\" James II fled into exile."
+            }
+          ],
+          "model_sentence": "Following the 1660 Stuart <strong>Restoration</strong>, the 1689 <strong>Bill of Rights</strong> established parliamentary sovereignty under <strong>William III, Mary II & Convention Parliament</strong>.",
+          "title": "The Glorious Revolution & The Bill of Rights (1660–1689)",
+          "dates": "1660–1689"
+        }
       ]
     },
     {
@@ -5952,8 +6420,8 @@ export default {
             "Evidence for 1689 (Bill of Rights): Detail how William and Mary accepted statutory limits on taxes, armies, and law suspension, making annual Parliaments legally indispensable.",
             "Comparative Conclusion: Synthesize why 1649 was a temporary military upheaval followed by the 1660 Restoration, whereas 1689 was the permanent constitutional victory."
           ],
-          "model_answer": "On the one hand, the 1688 Glorious Revolution was a major constitutional triumph because it ended absolute royal monarchy without a bloody civil war. Parliament invited Protestant William of Orange and Mary to replace Catholic James II. By signing the 1689 Bill of Rights, the Crown agreed that monarchs could not suspend laws or raise taxes without parliamentary consent, establishing a constitutional monarchy.<br><br>On the other hand, the revolution was violent and divisive outside England. In Ireland, James II’s Catholic supporters were brutally crushed at the Battle of the Boyne (1690), leading to oppressive Penal Laws against Irish Catholics. Therefore, while it secured peaceful constitutional liberty for English Protestants, it brought deep sectarian division and hardship to Ireland.",
-          "model": "On the one hand, the 1688 Glorious Revolution was a major constitutional triumph because it ended absolute royal monarchy without a bloody civil war. Parliament invited Protestant William of Orange and Mary to replace Catholic James II. By signing the 1689 Bill of Rights, the Crown agreed that monarchs could not suspend laws or raise taxes without parliamentary consent, establishing a constitutional monarchy.<br><br>On the other hand, the revolution was violent and divisive outside England. In Ireland, James II’s Catholic supporters were brutally crushed at the Battle of the Boyne (1690), leading to oppressive Penal Laws against Irish Catholics. Therefore, while it secured peaceful constitutional liberty for English Protestants, it brought deep sectarian division and hardship to Ireland."
+          "model_answer": "On the one hand, the public execution of King Charles I in January 1649 was an unprecedented revolutionary turning point. By putting an anointed monarch on trial for high treason against his own people, Parliament irreversibly shattered the Divine Right of Kings. The regicide abolished both the monarchy and the House of Lords, creating England’s first and only republic (the Commonwealth under Oliver Cromwell), demonstrating that a king was legally accountable to the law and to the nation.<br><br>On the other hand, the constitutional impact of 1649 proved fragile and short-lived compared to the lasting settlement of 1688–1689. Following Cromwell’s military dictatorship, the Commonwealth collapsed, resulting in the 1660 Restoration where Charles II and James II attempted to reassert absolute royal prerogative. In contrast, the Glorious Revolution of 1688 and the 1689 Bill of Rights permanently established constitutional monarchy and parliamentary supremacy. The Crown agreed never to suspend laws, maintain an army, or levy taxes without parliamentary consent, creating a permanent constitutional framework that endures to this day. Therefore, while 1649 was the most radical ideological shock, 1688 was the more enduring and successful turning point.",
+          "model": "On the one hand, the public execution of King Charles I in January 1649 was an unprecedented revolutionary turning point. By putting an anointed monarch on trial for high treason against his own people, Parliament irreversibly shattered the Divine Right of Kings. The regicide abolished both the monarchy and the House of Lords, creating England’s first and only republic (the Commonwealth under Oliver Cromwell), demonstrating that a king was legally accountable to the law and to the nation.<br><br>On the other hand, the constitutional impact of 1649 proved fragile and short-lived compared to the lasting settlement of 1688–1689. Following Cromwell’s military dictatorship, the Commonwealth collapsed, resulting in the 1660 Restoration where Charles II and James II attempted to reassert absolute royal prerogative. In contrast, the Glorious Revolution of 1688 and the 1689 Bill of Rights permanently established constitutional monarchy and parliamentary supremacy. The Crown agreed never to suspend laws, maintain an army, or levy taxes without parliamentary consent, creating a permanent constitutional framework that endures to this day. Therefore, while 1649 was the most radical ideological shock, 1688 was the more enduring and successful turning point."
         }
       ],
       "right_page_task": {
@@ -6590,8 +7058,126 @@ export default {
           "a": "By the King-in-Parliament rather than the personal will of a King",
           "explanation": "Sovereignty shifted irreversibly: Britain was now ruled by the King-in-Parliament."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1517–1534",
+          "heading": "Henry VIII & Sovereign Statehood (1517–1547)",
+          "focus_clue": "How did Henry VIII reshape sovereign authority in the Reformation?",
+          "words": [
+            {
+              "term": "sovereignty",
+              "clue": "Henry VIII’s Break with Rome transformed English sovereignty forever."
+            },
+            {
+              "term": "statute law",
+              "clue": "Yet paradoxically, to make his religious supremacy legally watertight, Henry was forced to use statute law passed by Parliament."
+            },
+            {
+              "term": "Henry VIII & The Reformation Parliament",
+              "clue": "Under Henry VIII, the Pope lost all English power, new laws were made with MPs in the Reformation Parliament, and vast monastery lands were given away or sold to gentry supporters."
+            }
+          ],
+          "model_sentence": "Asserting undivided national <strong>sovereignty</strong> through <strong>statute law</strong>, the political alliance between <strong>Henry VIII & The Reformation Parliament</strong> forged the modern English state.",
+          "title": "Henry VIII & Sovereign Statehood (1517–1547)",
+          "dates": "1517–1534"
+        },
+        {
+          "step": 2,
+          "date": "1559–1588",
+          "heading": "The Elizabethan Protestant Identity (1558–1603)",
+          "focus_clue": "How did the Elizabethan settlement forge a Protestant national state?",
+          "words": [
+            {
+              "term": "conformity",
+              "clue": "Through the 1559 Via Media, Elizabeth demonstrated political pragmatism: enforcing public conformity while avoiding the wholesale burnings of her predecessor Mary I. When Catholic assassination plots and Philip II’s 1588 Armada threatened England, Elizabeth rallied her subjects behind the Protestant Crown."
+            },
+            {
+              "term": "Elizabeth I & Elizabethan Parliaments",
+              "clue": "Queen Elizabeth I summoned ten Parliaments during her 44-year reign, managing intense debates over taxation, religion, and the royal succession."
+            },
+            {
+              "term": "Conformity",
+              "clue": "Through the 1559 Via Media, Elizabeth demonstrated political pragmatism: enforcing public conformity while avoiding the wholesale burnings of her predecessor Mary I. When Catholic assassination plots and Philip II’s 1588 Armada threatened England, Elizabeth rallied her subjects behind the Protestant Crown."
+            }
+          ],
+          "model_sentence": "Requiring strict religious <strong>conformity</strong> while avoiding windows into men's souls, negotiations between <strong>Elizabeth I & Elizabethan Parliaments</strong> established long-term <strong>Conformity</strong>.",
+          "title": "The Elizabethan Protestant Identity (1558–1603)",
+          "dates": "1559–1588"
+        },
+        {
+          "step": 3,
+          "date": "1603–1640",
+          "heading": "The Stuart Rupture: Divine Right (1603–1640)",
+          "focus_clue": "Why did Stuart claims of Divine Right provoke constitutional crisis?",
+          "words": [
+            {
+              "term": "absolutism",
+              "clue": "Both James I and his son Charles I brought rigid theories of royal absolutism to London, insisting that kings held a Divine Right to govern free from parliamentary interference."
+            },
+            {
+              "term": "James I, Charles I & Dissident MPs",
+              "clue": "Both James I and his son Charles I brought rigid theories of royal absolutism to London, insisting that kings held a Divine Right to govern free from parliamentary interference."
+            },
+            {
+              "term": "Absolutism",
+              "clue": "Both James I and his son Charles I brought rigid theories of royal absolutism to London, insisting that kings held a Divine Right to govern free from parliamentary interference."
+            }
+          ],
+          "model_sentence": "Early Stuart attempts to exercise monarchical <strong>absolutism</strong> created deep constitutional fissures between <strong>James I, Charles I & Dissident MPs</strong> over royal <strong>Absolutism</strong>.",
+          "title": "The Stuart Rupture: Divine Right (1603–1640)",
+          "dates": "1603–1640"
+        },
+        {
+          "step": 4,
+          "date": "1642–1649",
+          "heading": "The Shock of Regicide & Republic (1642–1649)",
+          "focus_clue": "Why was the trial and execution of Charles I a radical turning point?",
+          "words": [
+            {
+              "term": "Commonwealth",
+              "clue": "When Parliament’s New Model Army defeated the King at Naseby and Charles refused to negotiate peace, the Army executed Pride’s Purge and established a revolutionary Commonwealth republic."
+            },
+            {
+              "term": "precedent",
+              "clue": "It established the permanent legal precedent that British monarchs were not above the law: if a king ruled as a tyrant and shed his people’s blood, he could be held legally accountable and executed by the nation."
+            },
+            {
+              "term": "New Model Army & The Rump Parliament",
+              "clue": "When Parliament’s New Model Army defeated the King at Naseby and Charles refused to negotiate peace, the Army executed Pride’s Purge and established a revolutionary Commonwealth republic."
+            }
+          ],
+          "model_sentence": "The revolutionary birth of the English <strong>Commonwealth</strong> established an irreversible legal <strong>precedent</strong> enforced by the <strong>New Model Army & The Rump Parliament</strong>.",
+          "title": "The Shock of Regicide & Republic (1642–1649)",
+          "dates": "1642–1649"
+        },
+        {
+          "step": 5,
+          "date": "1660–1689",
+          "heading": "The 1689 Bill of Rights: Parliamentary Supremacy (1689)",
+          "focus_clue": "How did the 1689 Bill of Rights finalize Parliamentary Supremacy?",
+          "words": [
+            {
+              "term": "constitutional monarchy",
+              "clue": "By signing the 1689 Bill of Rights, William and Mary accepted a permanent constitutional monarchy."
+            },
+            {
+              "term": "veto",
+              "clue": "The Crown lost its royal veto over legislation, lost the power to levy taxes without parliamentary approval, and was barred from keeping a peacetime standing army."
+            },
+            {
+              "term": "William & Mary & The English Parliament",
+              "clue": "When James II attempted to rule by decree and promote Catholicism, Parliament expelled him and invited William and Mary to take the throne on statutory terms."
+            }
+          ],
+          "model_sentence": "Establishing a modern <strong>constitutional monarchy</strong> where the Crown lost its royal <strong>veto</strong> over parliamentary statutes, the 1689 settlement was sealed by <strong>William & Mary & The English Parliament</strong>.",
+          "title": "The 1689 Bill of Rights: Parliamentary Supremacy (1689)",
+          "dates": "1660–1689"
+        }
       ]
     }
   ],
-  "homepage_background": "/images/family_of_henry_viii_c1545.jpg"
+  "homepage_background": "/images/family_of_henry_viii_c1545.jpg",
+  "edition": "2026.1"
 };

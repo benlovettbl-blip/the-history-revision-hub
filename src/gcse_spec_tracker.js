@@ -1607,7 +1607,7 @@ function renderBlurtSetupHtml(availableTopics, topic, spec) {
                 ${
                   filteredPast.length > 0 && blurtState.selectedTariffFilter !== 'curated'
                     ? `
-                  <optgroup label="📝 Official Pearson Past Exam Questions (2018–2025) — ${filteredPast.length} Questions">
+                  <optgroup label="📝 Edexcel Past Exam Questions (2018–2025) — ${filteredPast.length} Questions">
                     ${filteredPast
                       .map(
                         (q) => `
@@ -2308,12 +2308,12 @@ function renderBlurtFinishedHtml(topic, spec) {
           </div>
         </div>
 
-        <!-- Right Column: Pearson Verbatim Benchmark Model -->
+        <!-- Right Column: Specification Benchmark Model -->
         <div class="gcse-blurt-benchmark-col">
           <div class="gcse-blurt-col-header" style="justify-content:space-between;">
             <div style="display:flex;align-items:center;gap:8px;">
               <i class="fa-solid fa-award" style="color:#10b981;"></i>
-              <h3>${topic.isPastPaperQuestion ? 'Official Pearson Mark Scheme Model' : 'Pearson Verbatim Benchmark Model'}</h3>
+              <h3>${topic.isPastPaperQuestion ? 'Edexcel Mark Scheme Benchmark Model' : 'Specification Benchmark Model'}</h3>
             </div>
             <span style="font-size:0.75rem;color:#64748b;font-weight:600;">Tick items you recalled</span>
           </div>
@@ -2321,7 +2321,7 @@ function renderBlurtFinishedHtml(topic, spec) {
           ${
             topic.indicativeContent && topic.indicativeContent.length > 0
               ? `
-            <!-- Official Pearson Mark Scheme Indicative Content Checklist -->
+            <!-- Edexcel Mark Scheme Indicative Content Checklist -->
             <div class="gcse-blurt-model-box" style="border-left:4px solid #10b981;background:#f0fdf4;border-color:#bbf7d0;">
               <div class="gcse-blurt-model-title" style="color:#065f46;display:flex;justify-content:space-between;align-items:center;">
                 <span><i class="fa-solid fa-list-check"></i> Official Mark Scheme Indicative Content (${topic.indicativeContent.length} Targets)</span>
@@ -2737,7 +2737,7 @@ function renderWfFeaturesListHtml() {
       </div>
 
       <div style="font-size:0.8rem;color:#64748b;margin-bottom:10px;background:#ffffff;padding:6px 10px;border-radius:6px;border:1px solid #e2e8f0;">
-        <strong>Official Pearson Question Stem:</strong> <em>"${item.question}"</em> [2 marks]
+        <strong>Edexcel Exam Question Stem:</strong> <em>"${item.question}"</em> [2 marks]
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">

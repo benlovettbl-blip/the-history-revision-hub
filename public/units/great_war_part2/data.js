@@ -1,13 +1,13 @@
 export default {
   "synopsis": "When Europe plunged into the abyss in August 1914, millions of young men rushed to enlist in an adventure they believed would be over by Christmas. Instead, industrial machinery transformed warfare into unprecedented slaughter. Confront the muddy hell of trench warfare and the controversial decisions of British generals at the Somme, uncover the forgotten global sacrifice of colonial soldiers from across the Empire, examine how total war gripped the Home Front under DORA, and discover how the bitter compromises of the Treaty of Versailles in 1919 sowed the seeds of future catastrophe.",
   "synopsis_tags": [
-      "Voluntary Enlistment & Pals Battalions",
-      "Trench Warfare",
-      "Gas & The Somme",
-      "Indian & Commonwealth Troops' Global Sacrifice",
-      "The Home Front",
-      "Rationing & DORA",
-      "Treaty of Versailles & The League of Nations (1919)"
+    "Voluntary Enlistment & Pals Battalions",
+    "Trench Warfare",
+    "Gas & The Somme",
+    "Indian & Commonwealth Troops' Global Sacrifice",
+    "The Home Front",
+    "Rationing & DORA",
+    "Treaty of Versailles & The League of Nations (1919)"
   ],
   "title": "KS3: The Great War — Apocalypse & Aftermath (1914–1919)",
   "homepage_background": "/images/sargent_gassed_1919.jpg",
@@ -111,7 +111,24 @@ export default {
             "BEF Just 120,000 Men",
             "Kitchener’s Dire Call"
           ],
-          "focus_clue": "How did Britain’s lack of peacetime conscription force the government into a massive voluntary advertising campaign?"
+          "focus_clue": "How did Britain’s lack of peacetime conscription force the government into a massive voluntary advertising campaign?",
+          "words": [
+            {
+              "term": "No Conscription",
+              "clue": "In August 1914, Great Britain possessed no peacetime conscription laws."
+            },
+            {
+              "term": "BEF Just 120,000 Men",
+              "clue": "The British Expeditionary Force in August 1914 was a professional army of just 120,000 soldiers, vastly outnumbered by million-man German and French conscript armies."
+            },
+            {
+              "term": "Kitchener’s Dire Call",
+              "clue": "Field Marshal Lord Kitchener warned the Cabinet that the war would last at least three years, issuing an unprecedented call for 500,000 volunteers."
+            }
+          ],
+          "model_sentence": "Because Britain possessed <strong>No Conscription</strong> and a peacetime <strong>BEF Just 120,000 Men</strong>, the government responded urgently to <strong>Kitchener’s Dire Call</strong> for volunteers.",
+          "title": "What forced Britain to launch Kitchener’s urgent call for 500,000 volunteers?",
+          "dates": "Aug 1914"
         },
         {
           "step": 2,
@@ -123,7 +140,24 @@ export default {
             "German Atrocities",
             "Crusade for Law"
           ],
-          "focus_clue": "Why did British volunteers view the war as a righteous crusade to defend international law and neutral Belgium?"
+          "focus_clue": "Why did British volunteers view the war as a righteous crusade to defend international law and neutral Belgium?",
+          "words": [
+            {
+              "term": "1839 Treaty of London",
+              "clue": "Under the historic 1839 Treaty of London , Britain had guaranteed Belgian sovereignty; German Chancellor Bethmann-Hollweg dismissed the treaty as a mere 'scrap of paper'."
+            },
+            {
+              "term": "German Atrocities",
+              "clue": "Public indignation turned to fury as reports of German atrocities in Belgium reached Britain."
+            },
+            {
+              "term": "Crusade for Law",
+              "clue": "British moral outrage at Germany's violation of Belgian neutrality under the 1839 Treaty of London, framing the conflict as a righteous defence of international law."
+            }
+          ],
+          "model_sentence": "Guaranteed under the <strong>1839 Treaty of London</strong>, Belgian neutrality was violated during reported <strong>German Atrocities</strong>, transforming the conflict into a moral <strong>Crusade for Law</strong>.",
+          "title": "How did the invasion of Belgium spark genuine moral outrage and civic duty?",
+          "dates": "Aug–Sept 1914"
         },
         {
           "step": 3,
@@ -135,7 +169,24 @@ export default {
             "Pompey Pals (14th/15th Hants)",
             "Fight Alongside Mates"
           ],
-          "focus_clue": "How did recruiting men from the same factories, offices, and football clubs encourage immediate mass enlistment?"
+          "focus_clue": "How did recruiting men from the same factories, offices, and football clubs encourage immediate mass enlistment?",
+          "words": [
+            {
+              "term": "Pals Battalions Formed",
+              "clue": "To manage the overwhelming influx of volunteers and harness local civic pride, Lord Derby and General Henry Rawlinson pioneered 'Pals Battalions' , guaranteeing that friends, work colleagues, and neighbours could enlist, train, and fight together."
+            },
+            {
+              "term": "Pompey Pals (14th/15th Hants)",
+              "clue": "On the south coast, Portsmouth raised the 14th and 15th Battalions of the Hampshire Regiment—the celebrated 'Pompey Pals' —drawing dockyard workers, clerks, and sportsmen eager to serve together."
+            },
+            {
+              "term": "Fight Alongside Mates",
+              "clue": "The popular recruitment appeal allowing friends, factory colleagues, and sports teammates to enlist and serve together in 'Pals Battalions'."
+            }
+          ],
+          "model_sentence": "To encourage enlistment, local <strong>Pals Battalions Formed</strong> across northern towns, including the <strong>Pompey Pals (14th/15th Hants)</strong> who volunteered to <strong>Fight Alongside Mates</strong>.",
+          "title": "Why did workplace camaraderie and local pride drive the formation of Pals Battalions?",
+          "dates": "Sept 1914"
         },
         {
           "step": 4,
@@ -147,7 +198,24 @@ export default {
             "Escape Factory Drudgery",
             "Over by Christmas"
           ],
-          "focus_clue": "Why did guaranteed daily meals, clean uniforms, and the promise of adventure appeal to impoverished Edwardian youths?"
+          "focus_clue": "Why did guaranteed daily meals, clean uniforms, and the promise of adventure appeal to impoverished Edwardian youths?",
+          "words": [
+            {
+              "term": "Regular Pay & Food",
+              "clue": "Enlisting earned the 'King’s Shilling' and regular army pay of one shilling and two pence (1s 2d) a day, three guaranteed hot meals, clean woollen uniforms, and sturdy leather boots."
+            },
+            {
+              "term": "Escape Factory Drudgery",
+              "clue": "The powerful incentive for young industrial workers to trade grim factory routines and low wages for outdoor military adventure, regular pay, and travel."
+            },
+            {
+              "term": "Over by Christmas",
+              "clue": "Naive teenage lads viewed joining up as an exhilarating overseas adventure and a chance to travel the world, convinced that the fighting would be glorious, swift, and 'over by Christmas' ."
+            }
+          ],
+          "model_sentence": "Lured by the promise of <strong>Regular Pay & Food</strong> to <strong>Escape Factory Drudgery</strong>, thousands enlisted expecting the war would be <strong>Over by Christmas</strong>.",
+          "title": "In what ways did poverty, adventure, and the King’s Shilling lure young recruits?",
+          "dates": "Autumn 1914"
         },
         {
           "step": 5,
@@ -159,7 +227,24 @@ export default {
             "White Feather Movement",
             "Unbearable Social Shame"
           ],
-          "focus_clue": "How did visual advertising and patriotic shaming make staying at home morally unbearable for eligible young men?"
+          "focus_clue": "How did visual advertising and patriotic shaming make staying at home morally unbearable for eligible young men?",
+          "words": [
+            {
+              "term": "Kitchener Finger Poster",
+              "clue": "Alfred Leete's iconic 1914 recruitment poster depicting Lord Kitchener pointing directly at the viewer with the slogan 'Your Country Needs YOU'."
+            },
+            {
+              "term": "White Feather Movement",
+              "clue": "In August 1914, Admiral Charles Fitzgerald founded the Order of the White Feather , dispatching women to hand white feathers—the traditional symbol of cowardice—to any able-bodied man not in uniform."
+            },
+            {
+              "term": "Unbearable Social Shame",
+              "clue": "Staying at home became socially unbearable."
+            }
+          ],
+          "model_sentence": "Promoted on Alfred Leete's <strong>Kitchener Finger Poster</strong>, social pressure was magnified by the <strong>White Feather Movement</strong>, inflicting <strong>Unbearable Social Shame</strong> on eligible men who remained at home.",
+          "title": "How did state propaganda and social coercion make refusal to enlist unbearable?",
+          "dates": "Late 1914"
         }
       ],
       "learning_objectives": {
@@ -449,10 +534,13 @@ export default {
             "Field Marshal Lord Kitchener, the newly appointed Secretary of State for War, immediately shattered public delusions that the war would be a brief adventure 'over by Christmas'. Kitchener warned Parliament that modern industrial war would last at least three years and devour millions of men, issuing an urgent national appeal for 500,000 volunteers.",
             "Personified in Alfred Leete’s iconic poster of Kitchener pointing directly at the viewer declaring 'Your Country Needs YOU', the response was staggering: over 750,000 men rushed to recruitment depots in the first eight weeks alone."
           ],
-          "text": "<p class=\"prose-p\">In August 1914, Great Britain possessed no peacetime conscription laws. Its standing army—the <strong>British Expeditionary Force (BEF)</strong>—numbered barely 120,000 regular soldiers. Unlike continental empires that maintained millions of conscripted troops, Britain relied entirely on voluntary enlistment.</p><p class=\"prose-p\">Field Marshal <strong>Lord Kitchener</strong>, the newly appointed Secretary of State for War, immediately shattered public delusions that the war would be a brief adventure 'over by Christmas'. Kitchener warned Parliament that modern industrial war would last at least three years and devour millions of men, issuing an urgent national appeal for 500,000 volunteers.</p><p class=\"prose-p\">Personified in Alfred Leete’s iconic poster of Kitchener pointing directly at the viewer declaring <em>'Your Country Needs YOU'</em>, the response was staggering: over 750,000 men rushed to recruitment depots in the first eight weeks alone.</p>",
+          "text": "<p class=\"prose-p\">In August 1914, Great Britain entered the European war without any peacetime conscription laws. Its modest regular army—the <strong>British Expeditionary Force (BEF)</strong>—numbered barely 120,000 professional soldiers, dwarfed by continental armies mobilising millions of trained conscripts. Unlike Germany or France, Britain’s strategic doctrine had long prioritised naval dominance, leaving its land forces woefully inadequate for prolonged continental warfare.</p><p class=\"prose-p\">Field Marshal <strong>Lord Kitchener</strong>, the celebrated imperial hero appointed Secretary of State for War, immediately shattered romantic illusions that the conflict would be a swift, glorious skirmish 'over by Christmas'. Kitchener presciently warned a stunned Cabinet that modern industrial warfare would devour millions of men and last at least three grueling years. He demanded an unprecedented peacetime expansion, issuing an urgent appeal for 500,000 volunteers.</p><p class=\"prose-p\">Immortalised on posters designed by Alfred Leete depicting Kitchener sternly pointing at passers-by with the legendary slogan <em>'Your Country Needs YOU'</em>, the campaign triggered an overwhelming patriotic response. Within eight weeks, over 750,000 men swarmed recruiting offices across Britain.</p>",
           "image": "/images/gw_kitchener_poster.jpg",
           "image_alt": "Lord Kitchener pointing finger recruitment poster 1914",
-          "caption": "Field Marshal Lord Kitchener pointing directly at the viewer: Alfred Leete’s iconic September 1914 recruitment poster that spurred hundreds of thousands to enlist."
+          "caption": "Field Marshal Lord Kitchener pointing directly at the viewer: Alfred Leete’s iconic September 1914 recruitment poster that spurred over 750,000 men to enlist in the first eight weeks alone.",
+          "heading": "Kitchener’s Warning & The Urgent Call for Volunteers",
+          "content": "<p class=\"prose-p\">In August 1914, Great Britain entered the European war without any peacetime conscription laws. Its modest regular army—the <strong>British Expeditionary Force (BEF)</strong>—numbered barely 120,000 professional soldiers, dwarfed by continental armies mobilising millions of trained conscripts. Unlike Germany or France, Britain’s strategic doctrine had long prioritised naval dominance, leaving its land forces woefully inadequate for prolonged continental warfare.</p><p class=\"prose-p\">Field Marshal <strong>Lord Kitchener</strong>, the celebrated imperial hero appointed Secretary of State for War, immediately shattered romantic illusions that the conflict would be a swift, glorious skirmish 'over by Christmas'. Kitchener presciently warned a stunned Cabinet that modern industrial warfare would devour millions of men and last at least three grueling years. He demanded an unprecedented peacetime expansion, issuing an urgent appeal for 500,000 volunteers.</p><p class=\"prose-p\">Immortalised on posters designed by Alfred Leete depicting Kitchener sternly pointing at passers-by with the legendary slogan <em>'Your Country Needs YOU'</em>, the campaign triggered an overwhelming patriotic response. Within eight weeks, over 750,000 men swarmed recruiting offices across Britain.</p>",
+          "body": "<p class=\"prose-p\">In August 1914, Great Britain entered the European war without any peacetime conscription laws. Its modest regular army—the <strong>British Expeditionary Force (BEF)</strong>—numbered barely 120,000 professional soldiers, dwarfed by continental armies mobilising millions of trained conscripts. Unlike Germany or France, Britain’s strategic doctrine had long prioritised naval dominance, leaving its land forces woefully inadequate for prolonged continental warfare.</p><p class=\"prose-p\">Field Marshal <strong>Lord Kitchener</strong>, the celebrated imperial hero appointed Secretary of State for War, immediately shattered romantic illusions that the conflict would be a swift, glorious skirmish 'over by Christmas'. Kitchener presciently warned a stunned Cabinet that modern industrial warfare would devour millions of men and last at least three grueling years. He demanded an unprecedented peacetime expansion, issuing an urgent appeal for 500,000 volunteers.</p><p class=\"prose-p\">Immortalised on posters designed by Alfred Leete depicting Kitchener sternly pointing at passers-by with the legendary slogan <em>'Your Country Needs YOU'</em>, the campaign triggered an overwhelming patriotic response. Within eight weeks, over 750,000 men swarmed recruiting offices across Britain.</p>"
         },
         {
           "ref": "1.2",
@@ -463,7 +551,12 @@ export default {
             "Public indignation turned to fury as reports of German atrocities in Belgium reached Britain. German troops burned the historic university library at Louvain and executed hundreds of Belgian civilian hostages accused of being snipers (franc-tireurs).",
             "Sensational British press reports depicting the 'Rape of Belgium' transformed the war into a righteous moral crusade. Young men felt an overwhelming civic duty to defend international law, protect 'Brave Little Belgium', and punish Prussian militarism."
           ],
-          "text": "<p class=\"prose-p\">At midnight on 4 August 1914, Great Britain declared war on the German Empire following Germany's invasion of neutral Belgium to execute the Schlieffen Plan. Under the historic 1839 <strong>Treaty of London</strong>, Britain had guaranteed Belgian sovereignty; German Chancellor Bethmann-Hollweg dismissed the treaty as a mere 'scrap of paper'.</p><p class=\"prose-p\">Public indignation turned to fury as reports of <strong>German atrocities</strong> in Belgium reached Britain. German troops burned the historic university library at Louvain and executed hundreds of Belgian civilian hostages accused of being snipers (<em>franc-tireurs</em>).</p><p class=\"prose-p\">Sensational British press reports depicting the <strong>'Rape of Belgium'</strong> transformed the war into a righteous moral crusade. Young men felt an overwhelming civic duty to defend international law, protect 'Brave Little Belgium', and punish Prussian militarism.</p>"
+          "text": "<p class=\"prose-p\">At midnight on 4 August 1914, Great Britain declared war on the German Empire following Kaiser Wilhelm II’s unprovoked invasion of neutral Belgium. Under the historic 1839 <strong>Treaty of London</strong>, European powers had solemnly pledged to uphold Belgian neutrality. When British diplomats demanded Germany respect this international guarantee, German Chancellor Bethmann-Hollweg notoriously dismissed the historic treaty as a worthless <em>'scrap of paper'</em>.</p><p class=\"prose-p\">German troops encountered unexpected armed resistance from the Belgian army and retaliated with harsh collective punishments. Across eastern Belgium, the German military burned historic towns, destroyed the priceless university library of Louvain, and executed hundreds of civilian hostages accused of being civilian snipers (<em>franc-tireurs</em>).</p><p class=\"prose-p\">Sensationalized British newspaper accounts depicting the <strong>'Rape of Belgium'</strong> galvanised national fury, portraying the war not as a cynical imperial rivalry, but as an urgent moral crusade between civilisation and barbarism. Young British men felt an irresistible civic obligation to punish Prussian militarism and defend 'Brave Little Belgium'.</p>",
+          "heading": "Belgian Neutrality, German Atrocities & The Moral Crusade",
+          "content": "<p class=\"prose-p\">At midnight on 4 August 1914, Great Britain declared war on the German Empire following Kaiser Wilhelm II’s unprovoked invasion of neutral Belgium. Under the historic 1839 <strong>Treaty of London</strong>, European powers had solemnly pledged to uphold Belgian neutrality. When British diplomats demanded Germany respect this international guarantee, German Chancellor Bethmann-Hollweg notoriously dismissed the historic treaty as a worthless <em>'scrap of paper'</em>.</p><p class=\"prose-p\">German troops encountered unexpected armed resistance from the Belgian army and retaliated with harsh collective punishments. Across eastern Belgium, the German military burned historic towns, destroyed the priceless university library of Louvain, and executed hundreds of civilian hostages accused of being civilian snipers (<em>franc-tireurs</em>).</p><p class=\"prose-p\">Sensationalized British newspaper accounts depicting the <strong>'Rape of Belgium'</strong> galvanised national fury, portraying the war not as a cynical imperial rivalry, but as an urgent moral crusade between civilisation and barbarism. Young British men felt an irresistible civic obligation to punish Prussian militarism and defend 'Brave Little Belgium'.</p>",
+          "body": "<p class=\"prose-p\">At midnight on 4 August 1914, Great Britain declared war on the German Empire following Kaiser Wilhelm II’s unprovoked invasion of neutral Belgium. Under the historic 1839 <strong>Treaty of London</strong>, European powers had solemnly pledged to uphold Belgian neutrality. When British diplomats demanded Germany respect this international guarantee, German Chancellor Bethmann-Hollweg notoriously dismissed the historic treaty as a worthless <em>'scrap of paper'</em>.</p><p class=\"prose-p\">German troops encountered unexpected armed resistance from the Belgian army and retaliated with harsh collective punishments. Across eastern Belgium, the German military burned historic towns, destroyed the priceless university library of Louvain, and executed hundreds of civilian hostages accused of being civilian snipers (<em>franc-tireurs</em>).</p><p class=\"prose-p\">Sensationalized British newspaper accounts depicting the <strong>'Rape of Belgium'</strong> galvanised national fury, portraying the war not as a cynical imperial rivalry, but as an urgent moral crusade between civilisation and barbarism. Young British men felt an irresistible civic obligation to punish Prussian militarism and defend 'Brave Little Belgium'.</p>",
+          "image": "/images/gw_scrap_of_paper.jpg",
+          "caption": "Parliamentary Recruiting Committee Poster No. 7, 'The Scrap of Paper' (1914), reproducing the 1839 Treaty of London to rally British moral outrage against Germany's invasion of neutral Belgium."
         },
         {
           "ref": "1.3",
@@ -472,9 +565,14 @@ export default {
           "paras": [
             "To manage the overwhelming influx of volunteers and harness local civic pride, Lord Derby and General Henry Rawlinson pioneered 'Pals Battalions', guaranteeing that friends, work colleagues, and neighbours could enlist, train, and fight together.",
             "Civic pride drove rapid mobilisation; entire factories, sports teams, and church congregations enlisted en masse. Cities raised bespoke units within days.",
-            "On the south coast, Portsmouth raised the 14th and 15th Battalions of the Hampshire Regiment—the celebrated 'Pompey Pals'—drawing dockyard workers, clerks, and sportsmen eager to serve together. This camaraderie made army service feel like an extension of local community life."
+            "On the south coast, Portsmouth and local communities including Fareham and Stubbington raised the 14th and 15th Battalions of the Hampshire Regiment—the celebrated 'Pompey Pals'—drawing dockyard workers, clerks, and sportsmen eager to serve together. This camaraderie made army service feel like an extension of local community life."
           ],
-          "text": "<p class=\"prose-p\">To manage the overwhelming influx of volunteers and harness local civic pride, <strong>Lord Derby</strong> and General Henry Rawlinson pioneered <strong>'Pals Battalions'</strong>, guaranteeing that friends, work colleagues, and neighbours could enlist, train, and fight together.</p><p class=\"prose-p\">Civic pride drove rapid mobilisation; entire factories, sports teams, and church congregations enlisted en masse. Cities raised bespoke units within days.</p><p class=\"prose-p\">On the south coast, Portsmouth raised the 14th and 15th Battalions of the Hampshire Regiment—the celebrated <strong>'Pompey Pals'</strong>—drawing dockyard workers, clerks, and sportsmen eager to serve together. This camaraderie made army service feel like an extension of local community life.</p>"
+          "text": "<p class=\"prose-p\">To channel the overwhelming flood of enthusiastic recruits and relieve overwhelmed central training depots, <strong>Lord Derby</strong> and General Henry Rawlinson devised an innovative recruitment strategy: the creation of <strong>'Pals Battalions'</strong>. The War Office pledged that friends, work colleagues, sporting teammates, and neighbours who enlisted together would remain united throughout military training and combat operations.</p><p class=\"prose-p\">This concept captured the vibrant civic pride of Edwardian Britain. Towns, churches, and professions competed fiercely to fund and recruit bespoke municipal battalions. Clerks, railway workers, and miners joined alongside their lifelong companions, turning military enlistment into an inspiring extension of neighborhood solidarity.</p><p class=\"prose-p\">On the south coast, Portsmouth alongside neighboring towns including Fareham and Stubbington rapidly raised the 14th and 15th Battalions of the Hampshire Regiment—celebrated locally as the <strong>'Pompey Pals'</strong>. Dockyard shipwrights, schoolteachers, and footballers formed tight-knit platoons. Tragically, this shared geographic recruitment meant that when disastrous battles struck, entire streets and communities would lose a whole generation of young men simultaneously.</p>",
+          "heading": "The Invention of Pals Battalions: Comrades in Arms",
+          "content": "<p class=\"prose-p\">To channel the overwhelming flood of enthusiastic recruits and relieve overwhelmed central training depots, <strong>Lord Derby</strong> and General Henry Rawlinson devised an innovative recruitment strategy: the creation of <strong>'Pals Battalions'</strong>. The War Office pledged that friends, work colleagues, sporting teammates, and neighbours who enlisted together would remain united throughout military training and combat operations.</p><p class=\"prose-p\">This concept captured the vibrant civic pride of Edwardian Britain. Towns, churches, and professions competed fiercely to fund and recruit bespoke municipal battalions. Clerks, railway workers, and miners joined alongside their lifelong companions, turning military enlistment into an inspiring extension of neighborhood solidarity.</p><p class=\"prose-p\">On the south coast, Portsmouth alongside neighboring towns including Fareham and Stubbington rapidly raised the 14th and 15th Battalions of the Hampshire Regiment—celebrated locally as the <strong>'Pompey Pals'</strong>. Dockyard shipwrights, schoolteachers, and footballers formed tight-knit platoons. Tragically, this shared geographic recruitment meant that when disastrous battles struck, entire streets and communities would lose a whole generation of young men simultaneously.</p>",
+          "body": "<p class=\"prose-p\">To channel the overwhelming flood of enthusiastic recruits and relieve overwhelmed central training depots, <strong>Lord Derby</strong> and General Henry Rawlinson devised an innovative recruitment strategy: the creation of <strong>'Pals Battalions'</strong>. The War Office pledged that friends, work colleagues, sporting teammates, and neighbours who enlisted together would remain united throughout military training and combat operations.</p><p class=\"prose-p\">This concept captured the vibrant civic pride of Edwardian Britain. Towns, churches, and professions competed fiercely to fund and recruit bespoke municipal battalions. Clerks, railway workers, and miners joined alongside their lifelong companions, turning military enlistment into an inspiring extension of neighborhood solidarity.</p><p class=\"prose-p\">On the south coast, Portsmouth alongside neighboring towns including Fareham and Stubbington rapidly raised the 14th and 15th Battalions of the Hampshire Regiment—celebrated locally as the <strong>'Pompey Pals'</strong>. Dockyard shipwrights, schoolteachers, and footballers formed tight-knit platoons. Tragically, this shared geographic recruitment meant that when disastrous battles struck, entire streets and communities would lose a whole generation of young men simultaneously.</p>",
+          "image": "/images/gw_recruitment_queue_1914.jpg",
+          "caption": "Hundreds of civilian volunteers queuing outside a London recruitment station in August 1914 to enlist together in local municipal Pals Battalions."
         },
         {
           "ref": "1.4",
@@ -485,7 +583,12 @@ export default {
             "Enlisting earned the 'King’s Shilling' and regular army pay of one shilling and two pence (1s 2d) a day, three guaranteed hot meals, clean woollen uniforms, and sturdy leather boots.",
             "Naive teenage lads viewed joining up as an exhilarating overseas adventure and a chance to travel the world, convinced that the fighting would be glorious, swift, and finished before Christmas."
           ],
-          "text": "<p class=\"prose-p\">Beyond patriotic duty, enlistment offered powerful economic relief. For thousands of working-class Edwardians trapped in low-paid casual labour or grim cotton mills, military service represented an immediate upgrade in living standards.</p><p class=\"prose-p\">Enlisting earned the <strong>'King’s Shilling'</strong> and regular army pay of one shilling and two pence (1s 2d) a day, three guaranteed hot meals, clean woollen uniforms, and sturdy leather boots.</p><p class=\"prose-p\">Naive teenage lads viewed joining up as an exhilarating overseas adventure and a chance to travel the world, convinced that the fighting would be glorious, swift, and <strong>'over by Christmas'</strong>.</p>"
+          "text": "<p class=\"prose-p\">While patriotic duty was paramount, enlistment was also driven by powerful economic pressures and the longing for adventure. For millions of Edwardian working-class youths, daily existence was defined by insecure casual dock labour, exhausting textile mill shifts, and damp urban tenements. Military enlistment offered guaranteed financial security and an immediate rise in material living conditions.</p><p class=\"prose-p\">Accepting the symbolic <strong>'King's Shilling'</strong> provided recruits with steady pay of one shilling and two pence (1s 2d) a day, three substantial hot meals, clean woollen uniforms, and sturdy leather boots—luxuries many poor families rarely enjoyed. For undernourished city lads, basic army rations caused average recruits to gain over an inch in height and a stone in weight during initial depot training.</p><p class=\"prose-p\">Furthermore, naive teenage volunteers viewed the army as an exhilarating passport to see the world. Encouraged by schoolboy adventure fiction, young men were convinced that soldiering offered romantic battlefield glory, foreign travel, and heroic distinction, all destined to conclude triumphantly <strong>'over by Christmas'</strong>.</p>",
+          "heading": "Poverty, Adventure & The Lure of the King’s Shilling",
+          "content": "<p class=\"prose-p\">While patriotic duty was paramount, enlistment was also driven by powerful economic pressures and the longing for adventure. For millions of Edwardian working-class youths, daily existence was defined by insecure casual dock labour, exhausting textile mill shifts, and damp urban tenements. Military enlistment offered guaranteed financial security and an immediate rise in material living conditions.</p><p class=\"prose-p\">Accepting the symbolic <strong>'King's Shilling'</strong> provided recruits with steady pay of one shilling and two pence (1s 2d) a day, three substantial hot meals, clean woollen uniforms, and sturdy leather boots—luxuries many poor families rarely enjoyed. For undernourished city lads, basic army rations caused average recruits to gain over an inch in height and a stone in weight during initial depot training.</p><p class=\"prose-p\">Furthermore, naive teenage volunteers viewed the army as an exhilarating passport to see the world. Encouraged by schoolboy adventure fiction, young men were convinced that soldiering offered romantic battlefield glory, foreign travel, and heroic distinction, all destined to conclude triumphantly <strong>'over by Christmas'</strong>.</p>",
+          "body": "<p class=\"prose-p\">While patriotic duty was paramount, enlistment was also driven by powerful economic pressures and the longing for adventure. For millions of Edwardian working-class youths, daily existence was defined by insecure casual dock labour, exhausting textile mill shifts, and damp urban tenements. Military enlistment offered guaranteed financial security and an immediate rise in material living conditions.</p><p class=\"prose-p\">Accepting the symbolic <strong>'King's Shilling'</strong> provided recruits with steady pay of one shilling and two pence (1s 2d) a day, three substantial hot meals, clean woollen uniforms, and sturdy leather boots—luxuries many poor families rarely enjoyed. For undernourished city lads, basic army rations caused average recruits to gain over an inch in height and a stone in weight during initial depot training.</p><p class=\"prose-p\">Furthermore, naive teenage volunteers viewed the army as an exhilarating passport to see the world. Encouraged by schoolboy adventure fiction, young men were convinced that soldiering offered romantic battlefield glory, foreign travel, and heroic distinction, all destined to conclude triumphantly <strong>'over by Christmas'</strong>.</p>",
+          "image": "/images/gw_jessie_pope.jpg",
+          "caption": "Popular patriotic poet Jessie Pope, whose pro-war newspaper verses portrayed soldiering as an exciting sporting adventure, encouraging young men to take the 'King's Shilling'."
         },
         {
           "ref": "1.5",
@@ -496,10 +599,13 @@ export default {
             "Music-hall songs ridiculed stay-at-homes, while commercial employers dismissed unmarried clerks to force them into recruiting offices. Staying at home became socially unbearable.",
             "Surrounded by Alfred Leete’s pointing poster and intense community expectations, young men faced intolerable public shame, ostracism, and accusations of cowardice if they refused to answer the nation’s call."
           ],
-          "text": "<p class=\"prose-p\">Enlistment was also propelled by fierce social coercion. In August 1914, Admiral Charles Fitzgerald founded the <strong>Order of the White Feather</strong>, dispatching women to hand white feathers—the traditional symbol of cowardice—to any able-bodied man not in uniform.</p><p class=\"prose-p\">Music-hall songs ridiculed stay-at-homes, while commercial employers dismissed unmarried clerks to force them into recruiting offices. Staying at home became socially unbearable.</p><p class=\"prose-p\">Surrounded by Alfred Leete’s pointing poster and intense community expectations, young men faced intolerable public shame, ostracism, and accusations of cowardice if they refused to answer the nation’s call.</p>",
+          "text": "<p class=\"prose-p\">Beneath spontaneous patriotic enthusiasm lay formidable instruments of social coercion. In late August 1914, retired Admiral Charles Fitzgerald founded the <strong>Order of the White Feather</strong> in Folkestone, dispatching young women through seaside resorts and city streets to pin white feathers—the traditional badge of cowardice—onto the lapels of any able-bodied man not wearing military uniform.</p><p class=\"prose-p\">Popular music halls amplified this coercive climate, performing rousing propaganda songs that mockingly questioned the masculinity of men who stayed at home. Prominent employers, commercial banks, and local councils dismissed unmarried male clerks to force them toward recruiting offices, while churches proclaimed that refusing to serve was a moral failure before God and nation.</p><p class=\"prose-p\">Surrounded by Alfred Leete's pointing poster, aggressive community gossip, and the relentless surveillance of neighbours, unmarried men faced unbearable public humiliation. Refusing the call meant enduring painful accusations of treason and social ostracism, transforming voluntary enlistment into a compulsory social obligation for Edwardian youth.</p>",
           "image": "/images/gw_women_say_go.jpg",
           "image_alt": "Women of Britain Say GO! Parliamentary Recruiting Committee poster 1915",
-          "caption": "Parliamentary Recruiting Committee Poster No. 75, 'Women of Britain Say—GO!' (1915), leveraging domestic emotional pressure and moral coercion to compel voluntary civilian enlistment."
+          "caption": "Parliamentary Recruiting Committee Poster No. 75, 'Women of Britain Say—GO!' (1915), leveraging domestic emotional pressure and moral coercion to compel voluntary civilian enlistment.",
+          "heading": "Coercive Patriotism: White Feathers & Social Pressure",
+          "content": "<p class=\"prose-p\">Beneath spontaneous patriotic enthusiasm lay formidable instruments of social coercion. In late August 1914, retired Admiral Charles Fitzgerald founded the <strong>Order of the White Feather</strong> in Folkestone, dispatching young women through seaside resorts and city streets to pin white feathers—the traditional badge of cowardice—onto the lapels of any able-bodied man not wearing military uniform.</p><p class=\"prose-p\">Popular music halls amplified this coercive climate, performing rousing propaganda songs that mockingly questioned the masculinity of men who stayed at home. Prominent employers, commercial banks, and local councils dismissed unmarried male clerks to force them toward recruiting offices, while churches proclaimed that refusing to serve was a moral failure before God and nation.</p><p class=\"prose-p\">Surrounded by Alfred Leete's pointing poster, aggressive community gossip, and the relentless surveillance of neighbours, unmarried men faced unbearable public humiliation. Refusing the call meant enduring painful accusations of treason and social ostracism, transforming voluntary enlistment into a compulsory social obligation for Edwardian youth.</p>",
+          "body": "<p class=\"prose-p\">Beneath spontaneous patriotic enthusiasm lay formidable instruments of social coercion. In late August 1914, retired Admiral Charles Fitzgerald founded the <strong>Order of the White Feather</strong> in Folkestone, dispatching young women through seaside resorts and city streets to pin white feathers—the traditional badge of cowardice—onto the lapels of any able-bodied man not wearing military uniform.</p><p class=\"prose-p\">Popular music halls amplified this coercive climate, performing rousing propaganda songs that mockingly questioned the masculinity of men who stayed at home. Prominent employers, commercial banks, and local councils dismissed unmarried male clerks to force them toward recruiting offices, while churches proclaimed that refusing to serve was a moral failure before God and nation.</p><p class=\"prose-p\">Surrounded by Alfred Leete's pointing poster, aggressive community gossip, and the relentless surveillance of neighbours, unmarried men faced unbearable public humiliation. Refusing the call meant enduring painful accusations of treason and social ostracism, transforming voluntary enlistment into a compulsory social obligation for Edwardian youth.</p>"
         }
       ],
       "quiz": [
@@ -1016,7 +1122,24 @@ export default {
             "Artillery Dominance",
             "400-Mile Trench Line"
           ],
-          "focus_clue": "Why did modern industrial firepower make open infantry movements impossible, establishing the 400-mile Western Front?"
+          "focus_clue": "Why did modern industrial firepower make open infantry movements impossible, establishing the 400-mile Western Front?",
+          "words": [
+            {
+              "term": "Race to the Sea",
+              "clue": "Following the Battle of the Marne and the frantic 'Race to the Sea' , opposing armies collided with industrial firepower."
+            },
+            {
+              "term": "Artillery Dominance",
+              "clue": "Heavy long-range guns, howitzers, and mortar batteries that caused approximately 60% of all battlefield casualties."
+            },
+            {
+              "term": "400-Mile Trench Line",
+              "clue": "Armies dug into the soil to escape relentless shrapnel, constructing a continuous, fortified 400-mile trench line running from the Belgian coast to the neutral Swiss border."
+            }
+          ],
+          "model_sentence": "Following the mobile maneuvers of the <strong>Race to the Sea</strong>, overwhelming <strong>Artillery Dominance</strong> forced both armies into an unbroken <strong>400-Mile Trench Line</strong> across France and Belgium.",
+          "title": "What forced armies underground into a 400-mile line of industrial stalemate?",
+          "dates": "Autumn 1914"
         },
         {
           "step": 2,
@@ -1028,7 +1151,24 @@ export default {
             "Zig-Zag Traverse Design",
             "Barbed Wire Belts"
           ],
-          "focus_clue": "Why were trenches dug in zig-zags with deep underground dugouts rather than straight defensive lines?"
+          "focus_clue": "Why were trenches dug in zig-zags with deep underground dugouts rather than straight defensive lines?",
+          "words": [
+            {
+              "term": "Fire, Support & Reserve",
+              "clue": "Frontline defenses evolved into an intricate three-tier defensive system : the frontline fire trench, the support trench (several hundred yards behind), and the reserve trench, connected by communication trenches."
+            },
+            {
+              "term": "Zig-Zag Traverse Design",
+              "clue": "Trench construction layout with 90-degree bends preventing enemy trench raiders from firing straight down the line and containing blast damage from shell bursts."
+            },
+            {
+              "term": "Barbed Wire Belts",
+              "clue": "Ahead of the frontline lay No Man’s Land , guarded by thick belts of coiled barbed wire designed to channel attackers into pre-sighted machine-gun kill zones."
+            }
+          ],
+          "model_sentence": "Constructed in a three-tier system of <strong>Fire, Support & Reserve</strong> trenches, defenses incorporated a protective <strong>Zig-Zag Traverse Design</strong> fronted by deep <strong>Barbed Wire Belts</strong>.",
+          "title": "How was the three-tier trench system constructed, traversed, and defended?",
+          "dates": "1915"
         },
         {
           "step": 3,
@@ -1040,7 +1180,24 @@ export default {
             "Corpses, Lice & Rats",
             "Shell Shock Trauma"
           ],
-          "focus_clue": "How did waterlogged clay, relentless shelling, and rotting corpses destroy soldiers’ physical and psychological health?"
+          "focus_clue": "How did waterlogged clay, relentless shelling, and rotting corpses destroy soldiers’ physical and psychological health?",
+          "words": [
+            {
+              "term": "Trench Foot & Gangrene",
+              "clue": "Waterlogged clay and relentless rain caused Trench Foot , a crippling fungal infection where poor circulation caused flesh to rot, leading to gangrene and amputation."
+            },
+            {
+              "term": "Corpses, Lice & Rats",
+              "clue": "Millions of body lice infested uniforms, causing itching and trench fever, while giant brown rats fed on corpses and rations."
+            },
+            {
+              "term": "Shell Shock Trauma",
+              "clue": "The constant terror of instant obliteration caused 'shell shock' —acute psychological trauma leaving soldiers shaking, mute, or catatonic."
+            }
+          ],
+          "model_sentence": "Subjected to horrific conditions causing <strong>Trench Foot & Gangrene</strong> amidst decomposing <strong>Corpses, Lice & Rats</strong>, soldiers suffered profound psychological <strong>Shell Shock Trauma</strong>.",
+          "title": "What lethal physical and psychological trauma did infantry endure in the mud?",
+          "dates": "1915–1916"
         },
         {
           "step": 4,
@@ -1052,7 +1209,24 @@ export default {
             "German Bunkers Intact",
             "57,470 Casualties Day 1"
           ],
-          "focus_clue": "Why did the 1.5 million-shell artillery bombardment fail to cut German barbed wire or destroy underground concrete dugouts?"
+          "focus_clue": "Why did the 1.5 million-shell artillery bombardment fail to cut German barbed wire or destroy underground concrete dugouts?",
+          "words": [
+            {
+              "term": "7-Day Bombardment Fails",
+              "clue": "The 1.5 million British artillery shells fired before 1 July 1916 that failed to cut German barbed wire or destroy deep German chalk dugouts."
+            },
+            {
+              "term": "German Bunkers Intact",
+              "clue": "The barrage failed catastrophically: a third of shells were duds, shrapnel failed to cut the thick barbed wire, and German defenders safely weathered the storm in deep concrete bunkers."
+            },
+            {
+              "term": "57,470 Casualties Day 1",
+              "clue": "By nightfall, Britain had suffered 57,470 casualties (19,240 killed)—the bloodiest day in British military history."
+            }
+          ],
+          "model_sentence": "Because the preliminary <strong>7-Day Bombardment Fails</strong> to destroy wire, deep <strong>German Bunkers Intact</strong> allowed machine gunners to inflict <strong>57,470 Casualties Day 1</strong> at the Somme.",
+          "title": "Why did the First Day of the Somme become the bloodiest disaster in British history?",
+          "dates": "1 July 1916"
         },
         {
           "step": 5,
@@ -1064,7 +1238,24 @@ export default {
             "Industrial Learning Curve",
             "Allied Victory in 1918"
           ],
-          "focus_clue": "Did Haig needlessly slaughter a generation of young men, or did he systematically master combined-arms warfare to win in 1918?"
+          "focus_clue": "Did Haig needlessly slaughter a generation of young men, or did he systematically master combined-arms warfare to win in 1918?",
+          "words": [
+            {
+              "term": "Lions Led by Donkeys",
+              "clue": "Popular post-war memory, reinforced by 1960s critics like Alan Clark ( 'lions led by donkeys' ), denounced Haig as a callous 'Butcher of the Somme' who squandered a generation in futile frontal assaults across muddy quagmires."
+            },
+            {
+              "term": "Industrial Learning Curve",
+              "clue": "However, modern revisionist historians like Gary Sheffield argue Haig was trapped on a steep 'learning curve' in an unprecedented industrial war."
+            },
+            {
+              "term": "Allied Victory in 1918",
+              "clue": "Haig's successful orchestration of the Hundred Days Offensive combining infantry, tanks, creeping barrages, and aircraft to break the Hindenburg Line."
+            }
+          ],
+          "model_sentence": "Debated as an era of <strong>Lions Led by Donkeys</strong>, British commanders adapted through an <strong>Industrial Learning Curve</strong> that culminated in the decisive <strong>Allied Victory in 1918</strong>.",
+          "title": "Was Sir Douglas Haig a callous \"butcher\" or a commander learning total war?",
+          "dates": "1916–1918"
         }
       ],
       "learning_objectives": {
@@ -1385,10 +1576,13 @@ export default {
             "Rapid-firing Maxim and Vickers machine guns firing 500 to 600 rounds per minute, combined with heavy rifled artillery, transformed open ground into lethal kill zones. Because defensive firepower crushed offensive infantry charges, neither side could advance.",
             "Armies dug into the soil to escape relentless shrapnel, constructing a continuous, fortified 400-mile trench line running from the Belgian coast to the neutral Swiss border."
           ],
-          "text": "<p class=\"prose-p\">By November 1914, mobile warfare on the Western Front had ceased completely. Following the Battle of the Marne and the frantic <strong>'Race to the Sea'</strong>, opposing armies collided with industrial firepower.</p><p class=\"prose-p\">Rapid-firing <strong>Maxim and Vickers machine guns</strong> firing 500 to 600 rounds per minute, combined with heavy rifled artillery, transformed open ground into lethal kill zones. Because defensive firepower crushed offensive infantry charges, neither side could advance.</p><p class=\"prose-p\">Armies dug into the soil to escape relentless shrapnel, constructing a continuous, fortified 400-mile trench line running from the Belgian coast to the neutral Swiss border.</p>",
+          "text": "<p class=\"prose-p\">By late November 1914, fluid mobile warfare on the Western Front had collapsed into complete immobility. Following the bloody Battle of the Marne and the frantic <strong>'Race to the Sea'</strong>, opposing British, French, and German armies collided along an unbroken front. For the first time in military history, battlefield tactics were dominated completely by the crushing defensive superiority of modern industrial firepower.</p><p class=\"prose-p\">Rapid-firing machine guns, notably the British <strong>Vickers</strong> and German <strong>Maxim</strong> firing 500 to 600 rounds per minute, combined with heavy rifled artillery firing explosive shrapnel shells, transformed open meadows into lethal zones of obliteration. When commanders launched traditional massed infantry charges across open ground, defensive crossfire slaughtered attacking lines in minutes.</p><p class=\"prose-p\">Confronting lethal shrapnel and bullet storms, armies dug desperately into the earth for self-preservation. What began as shallow emergency rifle pits rapidly expanded into a continuous, deeply fortified system of earthworks stretching 400 miles from the Belgian coast to the neutral Swiss frontier.</p>",
           "image": "/images/cheshire_regiment_trench.png",
           "image_alt": "British soldiers of Cheshire Regiment in front-line trench",
-          "caption": "British soldiers of the Cheshire Regiment in a front-line trench on the Western Front, showing parapet sandbags and trench periscope."
+          "caption": "British soldiers of the Cheshire Regiment in a front-line fire trench on the Western Front, showing parapet sandbags, periscope observation, and mud.",
+          "heading": "Firepower Superiority & The Western Front Stalemate",
+          "content": "<p class=\"prose-p\">By late November 1914, fluid mobile warfare on the Western Front had collapsed into complete immobility. Following the bloody Battle of the Marne and the frantic <strong>'Race to the Sea'</strong>, opposing British, French, and German armies collided along an unbroken front. For the first time in military history, battlefield tactics were dominated completely by the crushing defensive superiority of modern industrial firepower.</p><p class=\"prose-p\">Rapid-firing machine guns, notably the British <strong>Vickers</strong> and German <strong>Maxim</strong> firing 500 to 600 rounds per minute, combined with heavy rifled artillery firing explosive shrapnel shells, transformed open meadows into lethal zones of obliteration. When commanders launched traditional massed infantry charges across open ground, defensive crossfire slaughtered attacking lines in minutes.</p><p class=\"prose-p\">Confronting lethal shrapnel and bullet storms, armies dug desperately into the earth for self-preservation. What began as shallow emergency rifle pits rapidly expanded into a continuous, deeply fortified system of earthworks stretching 400 miles from the Belgian coast to the neutral Swiss frontier.</p>",
+          "body": "<p class=\"prose-p\">By late November 1914, fluid mobile warfare on the Western Front had collapsed into complete immobility. Following the bloody Battle of the Marne and the frantic <strong>'Race to the Sea'</strong>, opposing British, French, and German armies collided along an unbroken front. For the first time in military history, battlefield tactics were dominated completely by the crushing defensive superiority of modern industrial firepower.</p><p class=\"prose-p\">Rapid-firing machine guns, notably the British <strong>Vickers</strong> and German <strong>Maxim</strong> firing 500 to 600 rounds per minute, combined with heavy rifled artillery firing explosive shrapnel shells, transformed open meadows into lethal zones of obliteration. When commanders launched traditional massed infantry charges across open ground, defensive crossfire slaughtered attacking lines in minutes.</p><p class=\"prose-p\">Confronting lethal shrapnel and bullet storms, armies dug desperately into the earth for self-preservation. What began as shallow emergency rifle pits rapidly expanded into a continuous, deeply fortified system of earthworks stretching 400 miles from the Belgian coast to the neutral Swiss frontier.</p>"
         },
         {
           "ref": "2.2",
@@ -1399,7 +1593,12 @@ export default {
             "Trenches were constructed in a zig-zag pattern so that an explosive shell burst or infiltrating enemy raider could not clear an entire trench line.",
             "Ahead of the frontline lay No Man’s Land, guarded by thick belts of coiled barbed wire designed to channel attackers into pre-sighted machine-gun kill zones. Deep underground, reinforced subterranean concrete dugouts sheltered defending troops from artillery bombardments."
           ],
-          "text": "<p class=\"prose-p\">Frontline defenses evolved into an intricate <strong>three-tier defensive system</strong>: the frontline fire trench, the support trench (several hundred yards behind), and the reserve trench, connected by communication trenches.</p><p class=\"prose-p\">Trenches were constructed in a <strong>zig-zag pattern</strong> so that an explosive shell burst or infiltrating enemy raider could not clear an entire trench line.</p><p class=\"prose-p\">Ahead of the frontline lay <strong>No Man’s Land</strong>, guarded by thick belts of coiled barbed wire designed to channel attackers into pre-sighted machine-gun kill zones. Deep underground, reinforced subterranean concrete dugouts sheltered defending troops from artillery bombardments.</p>"
+          "text": "<p class=\"prose-p\">Frontline trenches rapidly developed into a sophisticated <strong>three-tier defensive network</strong> designed to absorb artillery bombardments and repel hostile assaults. At the front lay the forward fire trench, manned by sentries and machine-gun crews. Several hundred yards behind ran the support trench holding reserve troops and counter-attack supplies, followed by the reserve trench. All three lines were linked by sunken communication trenches for moving wounded men and ammunition.</p><p class=\"prose-p\">Trenches were deliberately excavated in an angular <strong>zig-zag or traverse pattern</strong>. This architectural safeguard ensured that if an enemy shell struck or hostile stormtroopers infiltrated a trench line, shrapnel and gunfire could not sweep down the full length of the ditch.</p><p class=\"prose-p\">Ahead of the fire trench lay <strong>No Man's Land</strong>, guarded by thick tangles of barbed wire belts designed to herd attacking soldiers into pre-sighted machine-gun fire zones. Deep underground, reinforced subterranean concrete dugouts offered shelter during sustained artillery barrages, preserving troops until enemy infantry advanced.</p>",
+          "heading": "Trench Architecture & The Three-Tier Defensive System",
+          "content": "<p class=\"prose-p\">Frontline trenches rapidly developed into a sophisticated <strong>three-tier defensive network</strong> designed to absorb artillery bombardments and repel hostile assaults. At the front lay the forward fire trench, manned by sentries and machine-gun crews. Several hundred yards behind ran the support trench holding reserve troops and counter-attack supplies, followed by the reserve trench. All three lines were linked by sunken communication trenches for moving wounded men and ammunition.</p><p class=\"prose-p\">Trenches were deliberately excavated in an angular <strong>zig-zag or traverse pattern</strong>. This architectural safeguard ensured that if an enemy shell struck or hostile stormtroopers infiltrated a trench line, shrapnel and gunfire could not sweep down the full length of the ditch.</p><p class=\"prose-p\">Ahead of the fire trench lay <strong>No Man's Land</strong>, guarded by thick tangles of barbed wire belts designed to herd attacking soldiers into pre-sighted machine-gun fire zones. Deep underground, reinforced subterranean concrete dugouts offered shelter during sustained artillery barrages, preserving troops until enemy infantry advanced.</p>",
+          "body": "<p class=\"prose-p\">Frontline trenches rapidly developed into a sophisticated <strong>three-tier defensive network</strong> designed to absorb artillery bombardments and repel hostile assaults. At the front lay the forward fire trench, manned by sentries and machine-gun crews. Several hundred yards behind ran the support trench holding reserve troops and counter-attack supplies, followed by the reserve trench. All three lines were linked by sunken communication trenches for moving wounded men and ammunition.</p><p class=\"prose-p\">Trenches were deliberately excavated in an angular <strong>zig-zag or traverse pattern</strong>. This architectural safeguard ensured that if an enemy shell struck or hostile stormtroopers infiltrated a trench line, shrapnel and gunfire could not sweep down the full length of the ditch.</p><p class=\"prose-p\">Ahead of the fire trench lay <strong>No Man's Land</strong>, guarded by thick tangles of barbed wire belts designed to herd attacking soldiers into pre-sighted machine-gun fire zones. Deep underground, reinforced subterranean concrete dugouts offered shelter during sustained artillery barrages, preserving troops until enemy infantry advanced.</p>",
+          "image": "/images/gw_trench_diagram.jpg",
+          "caption": "British War Office engineering profile diagram of a frontline fire trench, detailing the fire-step, sandbag breastwork, parados, drainage sump, and zig-zag traverse design."
         },
         {
           "ref": "2.3",
@@ -1410,7 +1609,12 @@ export default {
             "Millions of body lice infested uniforms, causing itching and trench fever, while giant brown rats fed on corpses and rations. Sleep was broken by predawn stand-to drills and night wire repairs.",
             "Day and night, unrelenting artillery shelling shook the earth. The constant terror of instant obliteration caused 'shell shock'—acute psychological trauma leaving soldiers shaking, mute, or catatonic. Over 300 British troops suffering mental breakdown were executed by firing squad for cowardice."
           ],
-          "text": "<p class=\"prose-p\">Life in the trenches was a constant ordeal against mud, filth, and terror. Waterlogged clay and relentless rain caused <strong>Trench Foot</strong>, a crippling fungal infection where poor circulation caused flesh to rot, leading to gangrene and amputation.</p><p class=\"prose-p\">Millions of body lice infested uniforms, causing itching and trench fever, while giant brown rats fed on corpses and rations. Sleep was broken by predawn stand-to drills and night wire repairs.</p><p class=\"prose-p\">Day and night, unrelenting artillery shelling shook the earth. The constant terror of instant obliteration caused <strong>'shell shock'</strong>—acute psychological trauma leaving soldiers shaking, mute, or catatonic. Over 300 British troops suffering mental breakdown were executed by firing squad for cowardice.</p>"
+          "text": "<p class=\"prose-p\">Daily survival in the trenches was a harrowing battle against elemental filth, disease, and relentless psychological torment. Waterlogged clay soil and continuous rainfall turned trench floors into putrid liquid mud, causing <strong>Trench Foot</strong>—a crippling fungal condition where restricted circulation caused toes to turn black with gangrene, often requiring surgical amputation.</p><p class=\"prose-p\">Soldiers lived in filthy, unwashed uniforms infested with millions of lice that spread painful trench fever, while giant brown rats gorged on unburied corpses in No Man's Land. Daily routines were dominated by predawn stand-to inspections, draining flooded duckboards, and nocturnal wire repairs under the glare of enemy flare-lights.</p><p class=\"prose-p\">Above all hung the constant, nerve-shattering terror of artillery bombardment. Heavy howitzers hurled thousands of high-explosive shells, pulverising trenches and burying men alive. This relentless bombardment caused <strong>'shell shock'</strong>—acute psychological trauma that left men trembling uncontrollably, mute, or catatonic. Tragically, military authorities treated this mental breakdown as moral failure, executing 306 British and Commonwealth soldiers for desertion or cowardice.</p>",
+          "heading": "Physical and Psychological Trauma in the Mud",
+          "content": "<p class=\"prose-p\">Daily survival in the trenches was a harrowing battle against elemental filth, disease, and relentless psychological torment. Waterlogged clay soil and continuous rainfall turned trench floors into putrid liquid mud, causing <strong>Trench Foot</strong>—a crippling fungal condition where restricted circulation caused toes to turn black with gangrene, often requiring surgical amputation.</p><p class=\"prose-p\">Soldiers lived in filthy, unwashed uniforms infested with millions of lice that spread painful trench fever, while giant brown rats gorged on unburied corpses in No Man's Land. Daily routines were dominated by predawn stand-to inspections, draining flooded duckboards, and nocturnal wire repairs under the glare of enemy flare-lights.</p><p class=\"prose-p\">Above all hung the constant, nerve-shattering terror of artillery bombardment. Heavy howitzers hurled thousands of high-explosive shells, pulverising trenches and burying men alive. This relentless bombardment caused <strong>'shell shock'</strong>—acute psychological trauma that left men trembling uncontrollably, mute, or catatonic. Tragically, military authorities treated this mental breakdown as moral failure, executing 306 British and Commonwealth soldiers for desertion or cowardice.</p>",
+          "body": "<p class=\"prose-p\">Daily survival in the trenches was a harrowing battle against elemental filth, disease, and relentless psychological torment. Waterlogged clay soil and continuous rainfall turned trench floors into putrid liquid mud, causing <strong>Trench Foot</strong>—a crippling fungal condition where restricted circulation caused toes to turn black with gangrene, often requiring surgical amputation.</p><p class=\"prose-p\">Soldiers lived in filthy, unwashed uniforms infested with millions of lice that spread painful trench fever, while giant brown rats gorged on unburied corpses in No Man's Land. Daily routines were dominated by predawn stand-to inspections, draining flooded duckboards, and nocturnal wire repairs under the glare of enemy flare-lights.</p><p class=\"prose-p\">Above all hung the constant, nerve-shattering terror of artillery bombardment. Heavy howitzers hurled thousands of high-explosive shells, pulverising trenches and burying men alive. This relentless bombardment caused <strong>'shell shock'</strong>—acute psychological trauma that left men trembling uncontrollably, mute, or catatonic. Tragically, military authorities treated this mental breakdown as moral failure, executing 306 British and Commonwealth soldiers for desertion or cowardice.</p>",
+          "image": "/images/gw_flooded_trench.jpg",
+          "caption": "British troops wading through a waterlogged, thigh-deep communication trench on duckboards; freezing water and filth caused trench foot, shell shock, and rampant gangrene."
         },
         {
           "ref": "2.4",
@@ -1421,10 +1625,13 @@ export default {
             "The barrage failed catastrophically: a third of shells were duds, shrapnel failed to cut the thick barbed wire, and German defenders safely weathered the storm in deep concrete bunkers.",
             "When the shelling lifted, German machine-gunners manned their posts and mowed down advancing British infantry walking in rigid lines. By nightfall, Britain had suffered 57,470 casualties (19,240 killed)—the bloodiest day in British military history. Entire Pals battalions were wiped out."
           ],
-          "text": "<p class=\"prose-p\">On 1 July 1916, British forces launched the Battle of the Somme, preceded by a colossal <strong>seven-day bombardment</strong> of 1.5 million artillery shells intended to destroy German trenches and shred their wire.</p><p class=\"prose-p\">The barrage failed catastrophically: a third of shells were duds, shrapnel failed to cut the thick barbed wire, and German defenders safely weathered the storm in deep concrete bunkers.</p><p class=\"prose-p\">When the shelling lifted, German machine-gunners manned their posts and mowed down advancing British infantry walking in rigid lines. By nightfall, Britain had suffered <strong>57,470 casualties</strong> (19,240 killed)—the bloodiest day in British military history. Entire Pals battalions were wiped out.</p>",
+          "text": "<p class=\"prose-p\">On 1 July 1916, British and French forces launched the Battle of the Somme, intended to relieve catastrophic French losses at Verdun and decisively break the German line. The offensive was preceded by a colossal <strong>seven-day preliminary bombardment</strong>, during which 1.5 million artillery shells were hurled at German positions to annihilate their frontline trenches and shred their defensive barbed wire.</p><p class=\"prose-p\">The bombardment proved disastrously ineffective. Over thirty percent of British shells were low-quality manufacturing duds, shrapnel failed to sever thick wire barricades, and German soldiers sheltered safely in fortified subterranean bunkers forty feet underground.</p><p class=\"prose-p\">When the bombardment lifted at 7:30 am, British troops climbed over their parapets and advanced in rigid tactical lines across No Man's Land. German machine-gunners emerged immediately, establishing deadly interlocking fields of fire. By dusk, the British Army had suffered <strong>57,470 casualties</strong>, including 19,240 dead—the bloodiest single day in British military history. Entire municipal Pals battalions were devastated in minutes, plunging towns into collective mourning.</p>",
           "image": "/images/gw_thiepval.jpg",
           "image_alt": "Thiepval Memorial to the Missing of the Somme",
-          "caption": "The Thiepval Memorial to the Missing of the Somme, bearing the names of over 72,000 British and South African men who died with no known grave."
+          "caption": "Sir Edwin Lutyens’ Thiepval Memorial to the Missing of the Somme, inscribed with the names of over 72,000 British and South African soldiers who died with no known grave.",
+          "heading": "1 July 1916: The Catastrophe of the Somme",
+          "content": "<p class=\"prose-p\">On 1 July 1916, British and French forces launched the Battle of the Somme, intended to relieve catastrophic French losses at Verdun and decisively break the German line. The offensive was preceded by a colossal <strong>seven-day preliminary bombardment</strong>, during which 1.5 million artillery shells were hurled at German positions to annihilate their frontline trenches and shred their defensive barbed wire.</p><p class=\"prose-p\">The bombardment proved disastrously ineffective. Over thirty percent of British shells were low-quality manufacturing duds, shrapnel failed to sever thick wire barricades, and German soldiers sheltered safely in fortified subterranean bunkers forty feet underground.</p><p class=\"prose-p\">When the bombardment lifted at 7:30 am, British troops climbed over their parapets and advanced in rigid tactical lines across No Man's Land. German machine-gunners emerged immediately, establishing deadly interlocking fields of fire. By dusk, the British Army had suffered <strong>57,470 casualties</strong>, including 19,240 dead—the bloodiest single day in British military history. Entire municipal Pals battalions were devastated in minutes, plunging towns into collective mourning.</p>",
+          "body": "<p class=\"prose-p\">On 1 July 1916, British and French forces launched the Battle of the Somme, intended to relieve catastrophic French losses at Verdun and decisively break the German line. The offensive was preceded by a colossal <strong>seven-day preliminary bombardment</strong>, during which 1.5 million artillery shells were hurled at German positions to annihilate their frontline trenches and shred their defensive barbed wire.</p><p class=\"prose-p\">The bombardment proved disastrously ineffective. Over thirty percent of British shells were low-quality manufacturing duds, shrapnel failed to sever thick wire barricades, and German soldiers sheltered safely in fortified subterranean bunkers forty feet underground.</p><p class=\"prose-p\">When the bombardment lifted at 7:30 am, British troops climbed over their parapets and advanced in rigid tactical lines across No Man's Land. German machine-gunners emerged immediately, establishing deadly interlocking fields of fire. By dusk, the British Army had suffered <strong>57,470 casualties</strong>, including 19,240 dead—the bloodiest single day in British military history. Entire municipal Pals battalions were devastated in minutes, plunging towns into collective mourning.</p>"
         },
         {
           "ref": "2.5",
@@ -1435,7 +1642,12 @@ export default {
             "However, modern revisionist historians like Gary Sheffield argue Haig was trapped on a steep 'learning curve' in an unprecedented industrial war.",
             "They emphasize that through trial, error, and technological adaptation—coordinating tanks, creeping artillery barrages, aircraft, and infantry—Haig forged the sophisticated combined-arms army that smashed Germany's Hindenburg Line in 1918."
           ],
-          "text": "<p class=\"prose-p\">British Commander-in-Chief <strong>Sir Douglas Haig</strong> remains deeply controversial. Popular post-war memory, reinforced by 1960s critics like Alan Clark (<em>'lions led by donkeys'</em>), denounced Haig as a callous 'Butcher of the Somme' who squandered a generation in futile frontal assaults across muddy quagmires.</p><p class=\"prose-p\">However, modern revisionist historians like Gary Sheffield argue Haig was trapped on a steep <strong>'learning curve'</strong> in an unprecedented industrial war.</p><p class=\"prose-p\">They emphasize that through trial, error, and technological adaptation—coordinating <strong>tanks</strong>, creeping artillery barrages, aircraft, and infantry—Haig forged the sophisticated combined-arms army that smashed Germany's Hindenburg Line in 1918.</p>"
+          "text": "<p class=\"prose-p\">British Commander-in-Chief <strong>Sir Douglas Haig</strong> remains the most fiercely debated military figure in modern British history. Following the war, influential critics and popular memory condemned Haig as a callous and unimaginative commander—the epitome of <em>'lions led by donkeys'</em>—who squandered an entire generation of young men in futile frontal assaults against fortified machine guns, indifferent to the appalling human carnage.</p><p class=\"prose-p\">However, modern revisionist military historians have challenged this simplistic verdict. They argue that Haig was trapped on a steep and unprecedented technological <strong>'learning curve'</strong>, navigating an industrial battlefield where defensive firepower inherently overwhelmed offensive tactics, and where primitive radio communications made tactical command in battle nearly impossible.</p><p class=\"prose-p\">Revisionists emphasize that through relentless trial, operational adaptation, and technological integration, Haig successfully pioneered sophisticated <strong>combined-arms warfare</strong>. By coordinating rolling artillery barrages, <strong>tanks</strong>, reconnaissance aircraft, and specialist infantry platoons, Haig commanded the British Army during the Hundred Days Offensive of 1918, successfully smashing the formidable Hindenburg Line to deliver Allied victory.</p>",
+          "heading": "The Haig Controversy: \"Butcher\" or Modernising General?",
+          "content": "<p class=\"prose-p\">British Commander-in-Chief <strong>Sir Douglas Haig</strong> remains the most fiercely debated military figure in modern British history. Following the war, influential critics and popular memory condemned Haig as a callous and unimaginative commander—the epitome of <em>'lions led by donkeys'</em>—who squandered an entire generation of young men in futile frontal assaults against fortified machine guns, indifferent to the appalling human carnage.</p><p class=\"prose-p\">However, modern revisionist military historians have challenged this simplistic verdict. They argue that Haig was trapped on a steep and unprecedented technological <strong>'learning curve'</strong>, navigating an industrial battlefield where defensive firepower inherently overwhelmed offensive tactics, and where primitive radio communications made tactical command in battle nearly impossible.</p><p class=\"prose-p\">Revisionists emphasize that through relentless trial, operational adaptation, and technological integration, Haig successfully pioneered sophisticated <strong>combined-arms warfare</strong>. By coordinating rolling artillery barrages, <strong>tanks</strong>, reconnaissance aircraft, and specialist infantry platoons, Haig commanded the British Army during the Hundred Days Offensive of 1918, successfully smashing the formidable Hindenburg Line to deliver Allied victory.</p>",
+          "body": "<p class=\"prose-p\">British Commander-in-Chief <strong>Sir Douglas Haig</strong> remains the most fiercely debated military figure in modern British history. Following the war, influential critics and popular memory condemned Haig as a callous and unimaginative commander—the epitome of <em>'lions led by donkeys'</em>—who squandered an entire generation of young men in futile frontal assaults against fortified machine guns, indifferent to the appalling human carnage.</p><p class=\"prose-p\">However, modern revisionist military historians have challenged this simplistic verdict. They argue that Haig was trapped on a steep and unprecedented technological <strong>'learning curve'</strong>, navigating an industrial battlefield where defensive firepower inherently overwhelmed offensive tactics, and where primitive radio communications made tactical command in battle nearly impossible.</p><p class=\"prose-p\">Revisionists emphasize that through relentless trial, operational adaptation, and technological integration, Haig successfully pioneered sophisticated <strong>combined-arms warfare</strong>. By coordinating rolling artillery barrages, <strong>tanks</strong>, reconnaissance aircraft, and specialist infantry platoons, Haig commanded the British Army during the Hundred Days Offensive of 1918, successfully smashing the formidable Hindenburg Line to deliver Allied victory.</p>",
+          "image": "/images/gw_douglas_haig.jpg",
+          "caption": "Field Marshal Sir Douglas Haig, Commander-in-Chief of the BEF (1915–1918), whose leadership remains fiercely debated between 'Butcher of the Somme' and modernising architect of combined-arms victory."
         }
       ],
       "quiz": [
@@ -2000,7 +2212,24 @@ export default {
             "Global Manpower Pool",
             "Dominions & Crown Colonies"
           ],
-          "focus_clue": "Why was Britain completely dependent on its global empire to supply troops, wheat, oil, and merchant ships?"
+          "focus_clue": "Why was Britain completely dependent on its global empire to supply troops, wheat, oil, and merchant ships?",
+          "words": [
+            {
+              "term": "Imperial War Cabinet",
+              "clue": "The Great War was not merely a European clash; it was an imperial struggle sustained by the British Empire."
+            },
+            {
+              "term": "Global Manpower Pool",
+              "clue": "The vast imperial network of four million soldiers, labourers, and resource workers mobilised from India, Africa, Canada, Australia, and the Caribbean."
+            },
+            {
+              "term": "Dominions & Crown Colonies",
+              "clue": "Self-governing nations (Canada, Australia, New Zealand, South Africa) and colonies whose troops fought under imperial command across European and Middle Eastern fronts."
+            }
+          ],
+          "model_sentence": "Meeting in London within the <strong>Imperial War Cabinet</strong>, Britain drew upon a massive <strong>Global Manpower Pool</strong> of soldiers and labourers recruited across <strong>Dominions & Crown Colonies</strong>.",
+          "title": "Why was Britain completely dependent on mobilising 4 million imperial subjects?",
+          "dates": "1914"
         },
         {
           "step": 2,
@@ -2012,7 +2241,24 @@ export default {
             "First Battle of Ypres",
             "Khadadad Khan VC"
           ],
-          "focus_clue": "How did Indian infantry and cavalry prevent a catastrophic British collapse in the freezing mud of Flanders in 1914?"
+          "focus_clue": "How did Indian infantry and cavalry prevent a catastrophic British collapse in the freezing mud of Flanders in 1914?",
+          "words": [
+            {
+              "term": "Lahore & Meerut Divisions",
+              "clue": "The two veteran Indian Army infantry divisions rushed to Flanders in October 1914 who plugged desperate gaps at the First Battle of Ypres."
+            },
+            {
+              "term": "First Battle of Ypres",
+              "clue": "Arriving in France wearing thin khaki cotton uniforms ill-suited to northern European winters, the Indian Expeditionary Force was rushed into the freezing mud of the First Battle of Ypres."
+            },
+            {
+              "term": "Khadadad Khan VC",
+              "clue": "Sepoy Khudadad Khan of the 129th Duke of Connaught's Own Baluchis, the first South Asian recipient of the Victoria Cross for defending his machine gun at Hollebeke."
+            }
+          ],
+          "model_sentence": "Deployed to the front, the <strong>Lahore & Meerut Divisions</strong> saved the line during the desperate <strong>First Battle of Ypres</strong>, where <strong>Khadadad Khan VC</strong> became the first South Asian recipient of the Victoria Cross.",
+          "title": "How crucially did 1.5 million Indian soldiers save the crumbling Allied line at Ypres?",
+          "dates": "1914–1915"
         },
         {
           "step": 3,
@@ -2024,7 +2270,24 @@ export default {
             "Mustafa Kemal & Turkish Defence",
             "Birth of ANZAC Legend"
           ],
-          "focus_clue": "Why did the bloody failure at Anzac Cove become the foundation myth of Australian and New Zealand independence?"
+          "focus_clue": "Why did the bloody failure at Anzac Cove become the foundation myth of Australian and New Zealand independence?",
+          "words": [
+            {
+              "term": "Dardanelles Disaster",
+              "clue": "The ill-fated 1915 naval and amphibious campaign championed by Winston Churchill to seize the Gallipoli peninsula and knock Ottoman Turkey out of the war."
+            },
+            {
+              "term": "Mustafa Kemal & Turkish Defence",
+              "clue": "The Ottoman commander who rallied Turkish defenders at Chunuk Bair, inflicting over 250,000 casualties on Allied forces and forcing evacuation."
+            },
+            {
+              "term": "Birth of ANZAC Legend",
+              "clue": "The defining cultural legacy of Gallipoli that established Australia and New Zealand's national pride, courage, and mateship on the world stage."
+            }
+          ],
+          "model_sentence": "The disastrous amphibious assault during the <strong>Dardanelles Disaster</strong> met fierce resistance from <strong>Mustafa Kemal & Turkish Defence</strong>, cementing the heroic <strong>Birth of ANZAC Legend</strong>.",
+          "title": "Why did the catastrophe of Gallipoli forge national identity for Australia and New Zealand?",
+          "dates": "1915"
         },
         {
           "step": 4,
@@ -2036,7 +2299,24 @@ export default {
             "Carrier Corps in East Africa",
             "Brutal Racial Segregation"
           ],
-          "focus_clue": "How did non-white labour battalions keep guns firing under deadly conditions while facing strict racial curfews?"
+          "focus_clue": "How did non-white labour battalions keep guns firing under deadly conditions while facing strict racial curfews?",
+          "words": [
+            {
+              "term": "140,000 Chinese Workers",
+              "clue": "Civilians recruited into the Chinese Labour Corps who unloaded munitions, built railways, dug trenches, and repaired roads under strict military discipline."
+            },
+            {
+              "term": "Carrier Corps in East Africa",
+              "clue": "From 1916, Britain recruited approximately 140,000 men for the Chinese Labour Corps (CLC) , alongside thousands in the South African Native Labour Corps and Egyptian Labour Corps."
+            },
+            {
+              "term": "Brutal Racial Segregation",
+              "clue": "Despite doing essential, dangerous work, labourers were subjected to strict racial segregation, housed in barbed-wire camps under armed guard, denied leave, and forbidden from socialising with British civilians or troops."
+            }
+          ],
+          "model_sentence": "Carrying heavy logistics, over <strong>140,000 Chinese Workers</strong> and the brave <strong>Carrier Corps in East Africa</strong> endured dangerous conditions and <strong>Brutal Racial Segregation</strong>.",
+          "title": "In what ways did the Chinese Labour Corps and African Pioneers sustain Allied logistics?",
+          "dates": "1916–1918"
         },
         {
           "step": 5,
@@ -2048,7 +2328,24 @@ export default {
             "Mass Graves in Africa",
             "Deliberate Erasure from Memory"
           ],
-          "focus_clue": "Why did the Imperial War Graves Commission deliberately refuse individual marked headstones for black African and Asian troops?"
+          "focus_clue": "Why did the Imperial War Graves Commission deliberately refuse individual marked headstones for black African and Asian troops?",
+          "words": [
+            {
+              "term": "Imperial Colour Bar",
+              "clue": "Institutional British military racism that prohibited non-white colonial soldiers from serving as commissioned officers and restricted Black West Indian troops to manual labor."
+            },
+            {
+              "term": "Mass Graves in Africa",
+              "clue": "The Imperial War Graves Commission systematically discriminated against African and Asian dead: while white soldiers received individual engraved headstones, colonial soldiers were buried in anonymous mass pits or left uncommemorated."
+            },
+            {
+              "term": "Deliberate Erasure from Memory",
+              "clue": "The discriminatory post-war Imperial War Graves policy that left hundreds of thousands of African and Indian soldiers without named individual headstones."
+            }
+          ],
+          "model_sentence": "Subjected to an institutional <strong>Imperial Colour Bar</strong>, thousands of colonial troops were buried in <strong>Mass Graves in Africa</strong>, suffering an unjust <strong>Deliberate Erasure from Memory</strong>.",
+          "title": "Why were non-white colonial soldiers denied equal pensions, medals, and remembrance?",
+          "dates": "Post-1918"
         }
       ],
       "learning_objectives": {
@@ -2270,7 +2567,12 @@ export default {
             "In addition to frontline manpower, the empire provided vital strategic resources: Canadian wheat, Indian jute and cotton, Australian wool and meat, and Persian and Nigerian oil.",
             "Merchant convoys crossing the Atlantic and Indian Oceans kept Britain fed and supplied with raw materials, turning the empire into the indispensable lifeline that prevented economic collapse and frontline defeat."
           ],
-          "text": "<p class=\"prose-p\">The Great War was not merely a European clash; it was an imperial struggle sustained by the British Empire. Over <strong>4 million non-white colonial soldiers and labourers</strong> from five continents were mobilised to support the British war effort.</p><p class=\"prose-p\">In addition to frontline manpower, the empire provided vital strategic resources: Canadian wheat, Indian jute and cotton, Australian wool and meat, and Persian and Nigerian oil.</p><p class=\"prose-p\">Merchant convoys crossing the Atlantic and Indian Oceans kept Britain fed and supplied with raw materials, turning the empire into the indispensable lifeline that prevented economic collapse and frontline defeat.</p>"
+          "text": "<p class=\"prose-p\">The Great War was fundamentally an imperial conflict whose final outcome depended directly on the resources and manpower of the British Empire. Over <strong>four million non-white colonial soldiers, logistical workers, and carriers</strong> from Africa, the Caribbean, India, and the Pacific were mobilised alongside hundreds of thousands of Dominion troops from Canada, Australia, and New Zealand to sustain Britain's war effort.</p><p class=\"prose-p\">Beyond battlefield manpower, the empire served as an indispensable economic lifeline that shielded Britain from industrial starvation and financial collapse. Canadian farms supplied millions of bushels of wheat; Australian and New Zealand pastoralists provided wool for uniforms and frozen meat; India supplied essential jute sacks for millions of trench sandbags, while oil reserves from Persia and Nigeria fueled the Royal Navy.</p><p class=\"prose-p\">Protected by British naval convoys across the Atlantic and Indian Oceans, this imperial supply network transported raw materials, munitions, and foodstuffs, transforming the British Empire into the decisive global foundation of Allied military endurance.</p>",
+          "heading": "Mobilising the Empire: A Truly Global Lifeline",
+          "content": "<p class=\"prose-p\">The Great War was fundamentally an imperial conflict whose final outcome depended directly on the resources and manpower of the British Empire. Over <strong>four million non-white colonial soldiers, logistical workers, and carriers</strong> from Africa, the Caribbean, India, and the Pacific were mobilised alongside hundreds of thousands of Dominion troops from Canada, Australia, and New Zealand to sustain Britain's war effort.</p><p class=\"prose-p\">Beyond battlefield manpower, the empire served as an indispensable economic lifeline that shielded Britain from industrial starvation and financial collapse. Canadian farms supplied millions of bushels of wheat; Australian and New Zealand pastoralists provided wool for uniforms and frozen meat; India supplied essential jute sacks for millions of trench sandbags, while oil reserves from Persia and Nigeria fueled the Royal Navy.</p><p class=\"prose-p\">Protected by British naval convoys across the Atlantic and Indian Oceans, this imperial supply network transported raw materials, munitions, and foodstuffs, transforming the British Empire into the decisive global foundation of Allied military endurance.</p>",
+          "body": "<p class=\"prose-p\">The Great War was fundamentally an imperial conflict whose final outcome depended directly on the resources and manpower of the British Empire. Over <strong>four million non-white colonial soldiers, logistical workers, and carriers</strong> from Africa, the Caribbean, India, and the Pacific were mobilised alongside hundreds of thousands of Dominion troops from Canada, Australia, and New Zealand to sustain Britain's war effort.</p><p class=\"prose-p\">Beyond battlefield manpower, the empire served as an indispensable economic lifeline that shielded Britain from industrial starvation and financial collapse. Canadian farms supplied millions of bushels of wheat; Australian and New Zealand pastoralists provided wool for uniforms and frozen meat; India supplied essential jute sacks for millions of trench sandbags, while oil reserves from Persia and Nigeria fueled the Royal Navy.</p><p class=\"prose-p\">Protected by British naval convoys across the Atlantic and Indian Oceans, this imperial supply network transported raw materials, munitions, and foodstuffs, transforming the British Empire into the decisive global foundation of Allied military endurance.</p>",
+          "image": "/images/gw_empire_needs_men.jpg",
+          "caption": "Parliamentary Recruiting Committee poster depicting the British imperial lion backed by Dominion lions: 'The Empire Needs Men! All answer the call'. Over four million non-white colonial troops and labourers served."
         },
         {
           "ref": "3.2",
@@ -2281,10 +2583,13 @@ export default {
             "Their courage plugged gaping holes in the crumbling Allied line at a moment of extreme peril.",
             "On 31 October 1914 at Hollebeke, Sepoy Khudadad Khan kept his machine gun firing alone despite being gravely wounded after his team was killed, becoming the first South Asian soldier awarded the Victoria Cross."
           ],
-          "text": "<p class=\"prose-p\">Over <strong>1.5 million Indian soldiers</strong> served overseas, providing critical support during the desperate autumn of 1914. Arriving in France wearing thin khaki cotton uniforms ill-suited to northern European winters, the Indian Expeditionary Force was rushed into the freezing mud of the First Battle of Ypres.</p><p class=\"prose-p\">Their courage plugged gaping holes in the crumbling Allied line at a moment of extreme peril.</p><p class=\"prose-p\">On 31 October 1914 at Hollebeke, Sepoy <strong>Khudadad Khan</strong> kept his machine gun firing alone despite being gravely wounded after his team was killed, becoming the first South Asian soldier awarded the <strong>Victoria Cross</strong>.</p>",
-          "image": "/images/gw_indian_army.jpg",
+          "text": "<p class=\"prose-p\">The Indian Army provided the earliest and most vital imperial reinforcements to the Western Front. In the autumn of 1914, over 130,000 soldiers of the Indian Expeditionary Force arrived in France, wearing light cotton uniforms ill-suited to northern European rain and sleet. Rushed directly into the freezing mud of the First Battle of Ypres, Indian soldiers plugged critical gaps in the shattered Allied frontline at a moment of desperate peril.</p><p class=\"prose-p\">Despite racial prejudice and severe language barriers, Indian troops fought with extraordinary gallantry in horrific trench conditions. On 31 October 1914 at Hollebeke, Belgium, Sepoy <strong>Khudadad Khan</strong> of the 129th Baluchis was stationed with his machine-gun section when German infantry overran the trench.</p><p class=\"prose-p\">Though gravely wounded and with his entire team killed around him, Khudadad Khan kept firing his gun single-handedly, holding back advancing German lines until reinforcements arrived. He became the first South Asian recipient of the <strong>Victoria Cross</strong>, Britain's highest award for military valor.</p>",
+          "image": "/images/gw_khudadad_khan.jpg",
           "image_alt": "Indian Army soldiers in France 1914",
-          "caption": "Soldiers of the Indian Expeditionary Force arriving in France in 1914, where 1.5 million Indian troops served across European and Middle Eastern fronts."
+          "caption": "Sepoy Khudadad Khan of the 129th Baluchis, the first South Asian soldier awarded the Victoria Cross, for holding his machine gun alone under intense fire at Hollebeke on 31 October 1914.",
+          "heading": "The Indian Army in Flanders & Khudadad Khan’s Victoria Cross",
+          "content": "<p class=\"prose-p\">The Indian Army provided the earliest and most vital imperial reinforcements to the Western Front. In the autumn of 1914, over 130,000 soldiers of the Indian Expeditionary Force arrived in France, wearing light cotton uniforms ill-suited to northern European rain and sleet. Rushed directly into the freezing mud of the First Battle of Ypres, Indian soldiers plugged critical gaps in the shattered Allied frontline at a moment of desperate peril.</p><p class=\"prose-p\">Despite racial prejudice and severe language barriers, Indian troops fought with extraordinary gallantry in horrific trench conditions. On 31 October 1914 at Hollebeke, Belgium, Sepoy <strong>Khudadad Khan</strong> of the 129th Baluchis was stationed with his machine-gun section when German infantry overran the trench.</p><p class=\"prose-p\">Though gravely wounded and with his entire team killed around him, Khudadad Khan kept firing his gun single-handedly, holding back advancing German lines until reinforcements arrived. He became the first South Asian recipient of the <strong>Victoria Cross</strong>, Britain's highest award for military valor.</p>",
+          "body": "<p class=\"prose-p\">The Indian Army provided the earliest and most vital imperial reinforcements to the Western Front. In the autumn of 1914, over 130,000 soldiers of the Indian Expeditionary Force arrived in France, wearing light cotton uniforms ill-suited to northern European rain and sleet. Rushed directly into the freezing mud of the First Battle of Ypres, Indian soldiers plugged critical gaps in the shattered Allied frontline at a moment of desperate peril.</p><p class=\"prose-p\">Despite racial prejudice and severe language barriers, Indian troops fought with extraordinary gallantry in horrific trench conditions. On 31 October 1914 at Hollebeke, Belgium, Sepoy <strong>Khudadad Khan</strong> of the 129th Baluchis was stationed with his machine-gun section when German infantry overran the trench.</p><p class=\"prose-p\">Though gravely wounded and with his entire team killed around him, Khudadad Khan kept firing his gun single-handedly, holding back advancing German lines until reinforcements arrived. He became the first South Asian recipient of the <strong>Victoria Cross</strong>, Britain's highest award for military valor.</p>"
         },
         {
           "ref": "3.3",
@@ -2295,10 +2600,13 @@ export default {
             "Though Gallipoli ended in bloody evacuation, the extraordinary endurance of ANZAC troops forged a fierce independent national identity for both nations.",
             "Meanwhile, 15,600 volunteers from the British West Indies Regiment (BWIR) endured systemic colonial racism; while barred from European combat, they fought with distinction in Palestine and the Jordan Valley."
           ],
-          "text": "<p class=\"prose-p\">In April 1915, Allied forces invaded the Ottoman Gallipoli peninsula to reopen maritime access to Russia. Soldiers of the Australian and New Zealand Army Corps (<strong>ANZAC</strong>) landed under devastating fire at <strong>Anzac Cove</strong>, pinned down beneath steep cliffs by entrenched Turkish machine guns.</p><p class=\"prose-p\">Though Gallipoli ended in bloody evacuation, the extraordinary endurance of ANZAC troops forged a fierce independent national identity for both nations.</p><p class=\"prose-p\">Meanwhile, 15,600 volunteers from the <strong>British West Indies Regiment (BWIR)</strong> endured systemic colonial racism; while barred from European combat, they fought with distinction in Palestine and the Jordan Valley.</p>",
+          "text": "<p class=\"prose-p\">In April 1915, Allied forces launched an ambitious amphibious invasion of the Ottoman Gallipoli Peninsula, aiming to knock the Ottoman Empire out of the war and open maritime supply routes to Russia. Men of the Australian and New Zealand Army Corps (<strong>ANZAC</strong>) landed under merciless fire at <strong>Anzac Cove</strong>, pinned down on narrow beaches beneath steep cliffs by entrenched Turkish machine-gunners.</p><p class=\"prose-p\">Although the Gallipoli campaign ended in costly defeat and evacuation, the legendary endurance, courage, and camaraderie displayed by ANZAC soldiers forged a powerful sense of independent national identity for both Australia and New Zealand.</p><p class=\"prose-p\">Simultaneously, over 15,600 volunteers from the Caribbean formed the <strong>British West Indies Regiment (BWIR)</strong>. Despite enduring institutional racism from the War Office—which initially barred non-white colonial troops from European combat out of fear of undermining white prestige—BWIR battalions served with exceptional distinction handling artillery shells under bombardment in France, and fighting in the Sinai and Palestine campaigns.</p>",
           "image": "/images/gw_bwir.jpg",
           "image_alt": "Soldiers of British West Indies Regiment BWIR",
-          "caption": "Soldiers of the British West Indies Regiment (BWIR), who volunteered from the Caribbean to serve in Egypt, Palestine, and on the Western Front."
+          "caption": "Soldiers of the British West Indies Regiment (BWIR) assembling artillery shells; 15,600 Caribbean volunteers served with distinction across France, Egypt, and Palestine.",
+          "heading": "Gallipoli, ANZAC Identity & The British West Indies Regiment",
+          "content": "<p class=\"prose-p\">In April 1915, Allied forces launched an ambitious amphibious invasion of the Ottoman Gallipoli Peninsula, aiming to knock the Ottoman Empire out of the war and open maritime supply routes to Russia. Men of the Australian and New Zealand Army Corps (<strong>ANZAC</strong>) landed under merciless fire at <strong>Anzac Cove</strong>, pinned down on narrow beaches beneath steep cliffs by entrenched Turkish machine-gunners.</p><p class=\"prose-p\">Although the Gallipoli campaign ended in costly defeat and evacuation, the legendary endurance, courage, and camaraderie displayed by ANZAC soldiers forged a powerful sense of independent national identity for both Australia and New Zealand.</p><p class=\"prose-p\">Simultaneously, over 15,600 volunteers from the Caribbean formed the <strong>British West Indies Regiment (BWIR)</strong>. Despite enduring institutional racism from the War Office—which initially barred non-white colonial troops from European combat out of fear of undermining white prestige—BWIR battalions served with exceptional distinction handling artillery shells under bombardment in France, and fighting in the Sinai and Palestine campaigns.</p>",
+          "body": "<p class=\"prose-p\">In April 1915, Allied forces launched an ambitious amphibious invasion of the Ottoman Gallipoli Peninsula, aiming to knock the Ottoman Empire out of the war and open maritime supply routes to Russia. Men of the Australian and New Zealand Army Corps (<strong>ANZAC</strong>) landed under merciless fire at <strong>Anzac Cove</strong>, pinned down on narrow beaches beneath steep cliffs by entrenched Turkish machine-gunners.</p><p class=\"prose-p\">Although the Gallipoli campaign ended in costly defeat and evacuation, the legendary endurance, courage, and camaraderie displayed by ANZAC soldiers forged a powerful sense of independent national identity for both Australia and New Zealand.</p><p class=\"prose-p\">Simultaneously, over 15,600 volunteers from the Caribbean formed the <strong>British West Indies Regiment (BWIR)</strong>. Despite enduring institutional racism from the War Office—which initially barred non-white colonial troops from European combat out of fear of undermining white prestige—BWIR battalions served with exceptional distinction handling artillery shells under bombardment in France, and fighting in the Sinai and Palestine campaigns.</p>"
         },
         {
           "ref": "3.4",
@@ -2309,7 +2617,12 @@ export default {
             "These men unloaded munitions ships, repaired shattered railways, dug frontline communication trenches, and cleared unexploded artillery under shellfire.",
             "Despite doing essential, dangerous work, labourers were subjected to strict racial segregation, housed in barbed-wire camps under armed guard, denied leave, and forbidden from socialising with British civilians or troops."
           ],
-          "text": "<p class=\"prose-p\">Behind the frontlines, brutal physical labour sustained the Allied war machine. From 1916, Britain recruited approximately <strong>140,000 men for the Chinese Labour Corps (CLC)</strong>, alongside thousands in the South African Native Labour Corps and Egyptian Labour Corps.</p><p class=\"prose-p\">These men unloaded munitions ships, repaired shattered railways, dug frontline communication trenches, and cleared unexploded artillery under shellfire.</p><p class=\"prose-p\">Despite doing essential, dangerous work, labourers were subjected to strict racial segregation, housed in barbed-wire camps under armed guard, denied leave, and forbidden from socialising with British civilians or troops.</p>"
+          "text": "<p class=\"prose-p\">Behind the violent drama of the frontline trenches, millions of colonial workers performed the exhausting physical labour required to sustain modern industrial warfare. Beginning in 1916, the British government recruited roughly <strong>140,000 men for the Chinese Labour Corps (CLC)</strong>, alongside tens of thousands in the South African Native Labour Corps and Egyptian Labour Corps.</p><p class=\"prose-p\">These unarmed labourers unloaded ammunition ships at French ports, constructed vital supply railways, dug communication trenches, and cleared unexploded artillery under enemy aerial bombardment. In East Africa, over one million African carriers were conscripted to transport heavy artillery and supplies across roadless jungles, enduring appalling disease rates that claimed over 100,000 lives.</p><p class=\"prose-p\">Despite performing dangerous, indispensable service, non-white workers endured strict racial segregation. Chinese and African labourers were confined in barbed-wire compounds under armed military guard, denied leave, and forbidden from interacting with European civilians, treated as disposable colonial manpower by the imperial state.</p>",
+          "heading": "Sustaining the Frontlines: The Chinese Labour Corps & African Carriers",
+          "content": "<p class=\"prose-p\">Behind the violent drama of the frontline trenches, millions of colonial workers performed the exhausting physical labour required to sustain modern industrial warfare. Beginning in 1916, the British government recruited roughly <strong>140,000 men for the Chinese Labour Corps (CLC)</strong>, alongside tens of thousands in the South African Native Labour Corps and Egyptian Labour Corps.</p><p class=\"prose-p\">These unarmed labourers unloaded ammunition ships at French ports, constructed vital supply railways, dug communication trenches, and cleared unexploded artillery under enemy aerial bombardment. In East Africa, over one million African carriers were conscripted to transport heavy artillery and supplies across roadless jungles, enduring appalling disease rates that claimed over 100,000 lives.</p><p class=\"prose-p\">Despite performing dangerous, indispensable service, non-white workers endured strict racial segregation. Chinese and African labourers were confined in barbed-wire compounds under armed military guard, denied leave, and forbidden from interacting with European civilians, treated as disposable colonial manpower by the imperial state.</p>",
+          "body": "<p class=\"prose-p\">Behind the violent drama of the frontline trenches, millions of colonial workers performed the exhausting physical labour required to sustain modern industrial warfare. Beginning in 1916, the British government recruited roughly <strong>140,000 men for the Chinese Labour Corps (CLC)</strong>, alongside tens of thousands in the South African Native Labour Corps and Egyptian Labour Corps.</p><p class=\"prose-p\">These unarmed labourers unloaded ammunition ships at French ports, constructed vital supply railways, dug communication trenches, and cleared unexploded artillery under enemy aerial bombardment. In East Africa, over one million African carriers were conscripted to transport heavy artillery and supplies across roadless jungles, enduring appalling disease rates that claimed over 100,000 lives.</p><p class=\"prose-p\">Despite performing dangerous, indispensable service, non-white workers endured strict racial segregation. Chinese and African labourers were confined in barbed-wire compounds under armed military guard, denied leave, and forbidden from interacting with European civilians, treated as disposable colonial manpower by the imperial state.</p>",
+          "image": "/images/gw_clc.jpg",
+          "caption": "Workers of the Chinese Labour Corps (CLC) clearing unexploded munitions and repairing supply railways in northern France; 140,000 Chinese labourers sustained the Allied Western Front."
         },
         {
           "ref": "3.5",
@@ -2320,7 +2633,12 @@ export default {
             "The Imperial War Graves Commission systematically discriminated against African and Asian dead: while white soldiers received individual engraved headstones, colonial soldiers were buried in anonymous mass pits or left uncommemorated.",
             "African and Indian veterans were denied equal pensions and barred from the 1919 London Victory Parade, erasing their decisive sacrifice from Britain's national memory for nearly a century."
           ],
-          "text": "<p class=\"prose-p\">After the 1918 Armistice, non-white imperial troops faced bitter betrayal. In December 1918, BWIR troops at Taranto, Italy, mutinied after being forced to clean latrines for white soldiers while denied victory pay.</p><p class=\"prose-p\">The Imperial War Graves Commission systematically discriminated against African and Asian dead: while white soldiers received individual engraved headstones, colonial soldiers were buried in anonymous mass pits or left uncommemorated.</p><p class=\"prose-p\">African and Indian veterans were denied equal pensions and barred from the 1919 London Victory Parade, erasing their decisive sacrifice from Britain's national memory for nearly a century.</p>"
+          "text": "<p class=\"prose-p\">Following the 11 November 1918 Armistice, imperial gratitude evaporated into systemic racial injustice. In December 1918, men of the British West Indies Regiment stationed at Taranto, Italy, mutinied after being denied victory pay and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers. The revolt was ruthlessly suppressed, and the regiment was rapidly disbanded.</p><p class=\"prose-p\">Even in death, colonial sacrifices were treated with deliberate inequality. The Imperial War Graves Commission, led by Sir Fabian Ware, adopted a discriminatory policy in Africa and the Middle East: while white British soldiers received individual engraved headstones, thousands of African and Asian soldiers and labourers were buried in anonymous mass pits or left uncommemorated.</p><p class=\"prose-p\">Colonial veterans returned to home countries where promises of democratic self-government and equal military pensions were ignored. African and Caribbean soldiers were barred from participating in the 1919 London Victory Parade, whitewashing their decisive imperial contributions from British public memory for generations.</p>",
+          "heading": "Post-War Injustice, Denied Pensions & Unmarked Graves",
+          "content": "<p class=\"prose-p\">Following the 11 November 1918 Armistice, imperial gratitude evaporated into systemic racial injustice. In December 1918, men of the British West Indies Regiment stationed at Taranto, Italy, mutinied after being denied victory pay and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers. The revolt was ruthlessly suppressed, and the regiment was rapidly disbanded.</p><p class=\"prose-p\">Even in death, colonial sacrifices were treated with deliberate inequality. The Imperial War Graves Commission, led by Sir Fabian Ware, adopted a discriminatory policy in Africa and the Middle East: while white British soldiers received individual engraved headstones, thousands of African and Asian soldiers and labourers were buried in anonymous mass pits or left uncommemorated.</p><p class=\"prose-p\">Colonial veterans returned to home countries where promises of democratic self-government and equal military pensions were ignored. African and Caribbean soldiers were barred from participating in the 1919 London Victory Parade, whitewashing their decisive imperial contributions from British public memory for generations.</p>",
+          "body": "<p class=\"prose-p\">Following the 11 November 1918 Armistice, imperial gratitude evaporated into systemic racial injustice. In December 1918, men of the British West Indies Regiment stationed at Taranto, Italy, mutinied after being denied victory pay and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers. The revolt was ruthlessly suppressed, and the regiment was rapidly disbanded.</p><p class=\"prose-p\">Even in death, colonial sacrifices were treated with deliberate inequality. The Imperial War Graves Commission, led by Sir Fabian Ware, adopted a discriminatory policy in Africa and the Middle East: while white British soldiers received individual engraved headstones, thousands of African and Asian soldiers and labourers were buried in anonymous mass pits or left uncommemorated.</p><p class=\"prose-p\">Colonial veterans returned to home countries where promises of democratic self-government and equal military pensions were ignored. African and Caribbean soldiers were barred from participating in the 1919 London Victory Parade, whitewashing their decisive imperial contributions from British public memory for generations.</p>",
+          "image": "/images/gw_dead_mans_penny.jpg",
+          "caption": "The bronze Next of Kin Memorial Plaque ('Dead Man's Penny') issued to families of fallen British soldiers, contrasting with the denied pensions and uncommemorated graves of colonial troops."
         }
       ],
       "quiz": [
@@ -2596,12 +2914,14 @@ export default {
           "interpretation_1": {
             "author": "Lord Curzon, British War Cabinet Minister, Speech at the Royal Albert Hall (1917)",
             "badge": "Interpretation 1: The Imperial Unity Orthodoxy (1917)",
-            "text": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”"
+            "text": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”",
+            "extract": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”"
           },
           "interpretation_2": {
             "author": "David Olusoga, Modern British Historian, The World’s War (2014)",
             "badge": "Interpretation 2: The Modern Critical Revisionism (2014)",
-            "text": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”"
+            "text": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”",
+            "extract": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”"
           },
           "matrix": [
             {
@@ -2625,10 +2945,59 @@ export default {
             "Interpretation 1 focuses primarily on wartime imperial mobilization and battlefield camaraderie...",
             "In contrast, Interpretation 2 focuses more on institutional racism, military hierarchies, and postwar commemoration..."
           ],
-          "model_answer_b": "Interpretations 1 and 2 differ fundamentally over the treatment and motivation of imperial troops in the First World War [1.1, 5.1]. Interpretation 1 portrays colonial involvement as a harmonious, voluntary display of \"imperial brotherhood\", asserting that Indian and dominion soldiers fought out of deep devotion and \"mutual love\" for the King-Emperor. In sharp contrast, Interpretation 2 argues that the reality for non-white troops was defined by systemic institutional racism, physical abuse, and unequal pay. While Curzon presents imperial sacrifice as celebrated and unified, Olusoga reveals that non-white troops were barred from officer ranks and deliberately whitewashed from British national remembrance after 1918 [5.1].",
-          "model_answer_c": "Interpretations 1 and 2 differ primarily because the two historians have chosen to focus on different aspects of the colonial war effort. Interpretation 1 focuses on wartime imperial mobilization, diplomatic loyalty, and frontline camaraderie during active combat, highlighting how soldiers from across the British Empire fought alongside British troops in Flanders, Gallipoli, and Egypt. In sharp contrast, Interpretation 2 focuses on institutional racism, military hierarchies, and postwar commemoration. Olusoga concentrates on the systemic barriers faced by non-white troops—such as exclusion from officer commissions, inferior wages, and severe corporal punishment—as well as the deliberate postwar refusal by imperial authorities to grant African dead individual headstones. Because Curzon and Olusoga focus on entirely different dimensions of the imperial experience (wartime solidarity versus institutional discrimination and memory), they arrive at opposing conclusions about the reality of the colonial soldier’s experience.",
-          "model_answer": "Colonial troops from India, Africa, and the Caribbean played a vital role in sustaining the Allied war effort. Over 1.3 million Indian soldiers served on the Western Front and in Mesopotamia, providing essential combat manpower at crucial moments like the 1914 Battle of Ypres. However, they faced systemic racism from British commanders, receiving inferior rations and lower pay while being excluded from becoming commissioned officers.",
-          "topic": "Enquiry Writing Task [8 marks • 10 mins]"
+          "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\".",
+          "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations.",
+          "model_answer": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the experiences and contributions of colonial troops in the Great War. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the experiences of colonial troops. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations.</div>",
+          "topic": "Enquiry Writing Task [8 marks • 10 mins]",
+          "interp1": {
+            "author": "Lord Curzon, British War Cabinet Minister, Speech at the Royal Albert Hall (1917)",
+            "badge": "Interpretation 1: The Imperial Unity Orthodoxy (1917)",
+            "text": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”",
+            "extract": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”"
+          },
+          "interp2": {
+            "author": "David Olusoga, Modern British Historian, The World’s War (2014)",
+            "badge": "Interpretation 2: The Modern Critical Revisionism (2014)",
+            "text": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”",
+            "extract": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”"
+          },
+          "source_b": {
+            "label": "Source B",
+            "title": "Source B: British War Propaganda Bureau Press Bulletin (1915)",
+            "badge": "Official Imperial Bulletin • 1915",
+            "author": "Official Government Press Release, London (1915)",
+            "text": "The King-Emperor sends his warmest greeting to the brave soldiers of the Indian Army and the overseas Dominions fighting in the trenches of Flanders. Their magnificent gallantry, loyalty, and unhesitating devotion prove to the civilized world the indissoluble bond of mutual brotherhood uniting all races of the British Empire in this righteous struggle."
+          },
+          "source1": {
+            "label": "Source B",
+            "title": "Source B: British War Propaganda Bureau Press Bulletin (1915)",
+            "badge": "Official Imperial Bulletin • 1915",
+            "author": "Official Government Press Release, London (1915)",
+            "text": "The King-Emperor sends his warmest greeting to the brave soldiers of the Indian Army and the overseas Dominions fighting in the trenches of Flanders. Their magnificent gallantry, loyalty, and unhesitating devotion prove to the civilized world the indissoluble bond of mutual brotherhood uniting all races of the British Empire in this righteous struggle."
+          },
+          "source_c": {
+            "label": "Source C",
+            "title": "Source C: Confidential War Office Report on Colonial Battalions (1918)",
+            "badge": "Confidential Military Report • 1918",
+            "author": "War Office Court of Inquiry into Discontent at Taranto Depot (December 1918)",
+            "text": "Discontent among colonial battalions at Taranto arose from deep-seated racial grievances. Soldiers of the British West Indies Regiment were subjected to discriminatory pay, denied combat parity, barred from holding commissioned officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers."
+          },
+          "source2": {
+            "label": "Source C",
+            "title": "Source C: Confidential War Office Report on Colonial Battalions (1918)",
+            "badge": "Confidential Military Report • 1918",
+            "author": "War Office Court of Inquiry into Discontent at Taranto Depot (December 1918)",
+            "text": "Discontent among colonial battalions at Taranto arose from deep-seated racial grievances. Soldiers of the British West Indies Regiment were subjected to discriminatory pay, denied combat parity, barred from holding commissioned officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers."
+          },
+          "sub_question_b": {
+            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the experiences and contributions of colonial troops in the Great War. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]",
+            "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\"."
+          },
+          "sub_question_c": {
+            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the experiences of colonial troops. You may use Sources B and C to help explain your answer. [4 marks]",
+            "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations."
+          },
+          "model": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the experiences and contributions of colonial troops in the Great War. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the experiences of colonial troops. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations.</div>"
         }
       ],
       "prologue": "While history books often focus on the Western Front, the First World War was a truly global conflict. Over four million non-white colonial soldiers from India, Africa, and the Caribbean served as combatants and labourers in France, Gallipoli, and Mesopotamia. How much of a 'World' War was it, and why were empire troops forgotten?",
@@ -2936,7 +3305,24 @@ export default {
             "Strict Press Censorship",
             "Curfews & Watered Beer"
           ],
-          "focus_clue": "How did DORA transform Britain from a laissez-faire liberal state into a strictly controlled wartime command economy?"
+          "focus_clue": "How did DORA transform Britain from a laissez-faire liberal state into a strictly controlled wartime command economy?",
+          "words": [
+            {
+              "term": "Defence of the Realm Act",
+              "clue": "On 8 August 1914, Parliament passed the Defence of the Realm Act (DORA) , granting the government sweeping authoritarian powers."
+            },
+            {
+              "term": "Strict Press Censorship",
+              "clue": "Powers under the Defence of the Realm Act (DORA) authorising government vetting of newspapers and mail to prevent military secrets leaking and maintain civilian morale."
+            },
+            {
+              "term": "Curfews & Watered Beer",
+              "clue": "To maximize industrial productivity, pub opening hours were strictly curtailed, beer was watered down, and 'buying rounds' was banned, transforming Britain into a tightly regimented command society."
+            }
+          ],
+          "model_sentence": "Enacted in August 1914, the <strong>Defence of the Realm Act</strong> imposed <strong>Strict Press Censorship</strong> alongside wartime regulations including <strong>Curfews & Watered Beer</strong>.",
+          "title": "In what ways did DORA grant the British state unprecedented authoritarian control?",
+          "dates": "Aug 1914"
         },
         {
           "step": 2,
@@ -2948,7 +3334,24 @@ export default {
             "Ministry of Munitions",
             "State-Run National Shell Factories"
           ],
-          "focus_clue": "Why did severe ammunition shortages on the Western Front compel the state to seize control of private industrial production?"
+          "focus_clue": "Why did severe ammunition shortages on the Western Front compel the state to seize control of private industrial production?",
+          "words": [
+            {
+              "term": "Daily Mail Shell Scandal",
+              "clue": "Colonel Charles Repington published front-page headlines in the Daily Mail exposing the 'Shell Crisis' , revealing that British guns were limited to a few rounds daily while German artillery fired relentlessly."
+            },
+            {
+              "term": "Ministry of Munitions",
+              "clue": "The scandal brought down Asquith’s government and created the Ministry of Munitions under David Lloyd George ."
+            },
+            {
+              "term": "State-Run National Shell Factories",
+              "clue": "Over 200 state-owned munitions factories established under Minister of Munitions David Lloyd George to end the 1915 shell scandal."
+            }
+          ],
+          "model_sentence": "Exposed by the sensational <strong>Daily Mail Shell Scandal</strong>, David Lloyd George established the new <strong>Ministry of Munitions</strong> to create <strong>State-Run National Shell Factories</strong>.",
+          "title": "What forced David Lloyd George to nationalise munitions factories in 1915?",
+          "dates": "1915–1916"
         },
         {
           "step": 3,
@@ -2960,7 +3363,24 @@ export default {
             "Military Service Act 1916",
             "Conscientious Objectors"
           ],
-          "focus_clue": "Why was the introduction of conscription for all men aged 18–41 the most radical infringement on personal liberty in British history?"
+          "focus_clue": "Why was the introduction of conscription for all men aged 18–41 the most radical infringement on personal liberty in British history?",
+          "words": [
+            {
+              "term": "Somme Demands Reserves",
+              "clue": "The catastrophic loss of 57,000 British casualties on 1 July 1916 that exhausted voluntary enlistment and necessitated the 1916 Military Service Act."
+            },
+            {
+              "term": "Military Service Act 1916",
+              "clue": "In January 1916, Parliament passed the Military Service Act , introducing compulsory conscription for unmarried men aged 18 to 41, later extended to married men and older ages."
+            },
+            {
+              "term": "Conscientious Objectors",
+              "clue": "Approximately 16,000 men registered as Conscientious Objectors on moral, religious, or political grounds."
+            }
+          ],
+          "model_sentence": "Because the meatgrinder at the <strong>Somme Demands Reserves</strong>, Parliament passed the <strong>Military Service Act 1916</strong>, introducing conscription while establishing tribunals for <strong>Conscientious Objectors</strong>.",
+          "title": "Why did catastrophic frontline casualties force Britain to impose conscription in 1916?",
+          "dates": "Jan 1916"
         },
         {
           "step": 4,
@@ -2972,7 +3392,24 @@ export default {
             "Silvertown Explosion (1917)",
             "80% of British Munitions"
           ],
-          "focus_clue": "What lethal industrial dangers did women face manufacturing explosives, and how did their work permanently reshape female gender roles?"
+          "focus_clue": "What lethal industrial dangers did women face manufacturing explosives, and how did their work permanently reshape female gender roles?",
+          "words": [
+            {
+              "term": "Toxic TNT Jaundice",
+              "clue": "Handling toxic TNT explosive powder without protective gear poisoned the workers, causing toxic jaundice that turned their skin and hair bright yellow—earning them the nickname 'Canary Girls' ."
+            },
+            {
+              "term": "Silvertown Explosion (1917)",
+              "clue": "Workers also faced extreme danger: in January 1917, the Silvertown munitions factory in London exploded, killing 73 people."
+            },
+            {
+              "term": "80% of British Munitions",
+              "clue": "Munitions workers produced over 80% of British weaponry and shells ."
+            }
+          ],
+          "model_sentence": "Exposed to chemical illness like <strong>Toxic TNT Jaundice</strong> and disasters like the <strong>Silvertown Explosion (1917)</strong>, female munitions workers manufactured over <strong>80% of British Munitions</strong>.",
+          "title": "How did 1 million \"Canary Girls\" transform industrial production despite toxic hazards?",
+          "dates": "1916–1918"
         },
         {
           "step": 5,
@@ -2984,7 +3421,24 @@ export default {
             "Only 6 Weeks Food Left",
             "Sugar & Meat Ration Books"
           ],
-          "focus_clue": "How did German submarine warfare bring Britain within weeks of starvation, forcing the compulsory rationing of sugar, butter, and meat?"
+          "focus_clue": "How did German submarine warfare bring Britain within weeks of starvation, forcing the compulsory rationing of sugar, butter, and meat?",
+          "words": [
+            {
+              "term": "U-Boats Sink Merchant Fleet",
+              "clue": "In February 1917, Germany launched unrestricted submarine warfare , deploying U-boats to sink all merchant shipping supplying Britain."
+            },
+            {
+              "term": "Only 6 Weeks Food Left",
+              "clue": "By April 1917, U-boats were sinking one in every four ships bound for British ports, reducing the nation’s wheat supplies to just six weeks of food reserves ."
+            },
+            {
+              "term": "Sugar & Meat Ration Books",
+              "clue": "The government responded by organizing naval convoys to protect merchant ships and introducing compulsory rationing in early 1918 for sugar, meat, and butter."
+            }
+          ],
+          "model_sentence": "When unrestricted <strong>U-Boats Sink Merchant Fleet</strong> tonnage leaving <strong>Only 6 Weeks Food Left</strong>, the British government introduced compulsory <strong>Sugar & Meat Ration Books</strong>.",
+          "title": "Why did unrestricted German submarine warfare push Britain to the brink of starvation?",
+          "dates": "1917–1918"
         }
       ],
       "learning_objectives": {
@@ -3206,7 +3660,12 @@ export default {
             "On 8 August 1914, Parliament passed the Defence of the Realm Act (DORA), granting the government sweeping authoritarian powers. DORA allowed the state to censor newspapers, arrest suspected spies without trial, commandeer private land and factories, and introduce the blackout.",
             "To maximize industrial productivity, pub opening hours were strictly curtailed, beer was watered down, and 'buying rounds' was banned, transforming Britain into a tightly regimented command society."
           ],
-          "text": "<p class=\"prose-p\">Before 1914, Britain operated on classical liberal principles of individual freedom and minimal state interference. The war shattered this model.</p><p class=\"prose-p\">On 8 August 1914, Parliament passed the <strong>Defence of the Realm Act (DORA)</strong>, granting the government sweeping authoritarian powers. DORA allowed the state to censor newspapers, arrest suspected spies without trial, commandeer private land and factories, and introduce the blackout.</p><p class=\"prose-p\">To maximize industrial productivity, pub opening hours were strictly curtailed, beer was watered down, and 'buying rounds' was banned, transforming Britain into a tightly regimented command society.</p>"
+          "text": "<p class=\"prose-p\">Before 1914, Great Britain prided itself on being a liberal society characterized by minimal state intervention, free trade, and robust legal protections for individual liberties. The existential demands of total industrial warfare demolished this laissez-faire tradition almost overnight. On 8 August 1914, Parliament passed the <strong>Defence of the Realm Act (DORA)</strong> with virtually no debate, vesting the government with sweeping authoritarian powers.</p><p class=\"prose-p\">Under DORA, the British state seized unprecedented control over everyday civilian life. Authorities were empowered to censor newspapers, ban anti-war publications, intercept private postal mail, arrest suspected saboteurs without trial, and commandeer privately owned land, railways, and factories for military production.</p><p class=\"prose-p\">To maximise factory output and curb industrial absenteeism, DORA introduced blackouts, banned fireworks, made flying kites illegal, and restricted pub opening hours while watering down beer. British citizens quickly realized that defeating Prussian autocracy required Britain to construct an authoritarian regulatory apparatus of its own.</p>",
+          "heading": "DORA & The Rise of the Authoritarian State",
+          "content": "<p class=\"prose-p\">Before 1914, Great Britain prided itself on being a liberal society characterized by minimal state intervention, free trade, and robust legal protections for individual liberties. The existential demands of total industrial warfare demolished this laissez-faire tradition almost overnight. On 8 August 1914, Parliament passed the <strong>Defence of the Realm Act (DORA)</strong> with virtually no debate, vesting the government with sweeping authoritarian powers.</p><p class=\"prose-p\">Under DORA, the British state seized unprecedented control over everyday civilian life. Authorities were empowered to censor newspapers, ban anti-war publications, intercept private postal mail, arrest suspected saboteurs without trial, and commandeer privately owned land, railways, and factories for military production.</p><p class=\"prose-p\">To maximise factory output and curb industrial absenteeism, DORA introduced blackouts, banned fireworks, made flying kites illegal, and restricted pub opening hours while watering down beer. British citizens quickly realized that defeating Prussian autocracy required Britain to construct an authoritarian regulatory apparatus of its own.</p>",
+          "body": "<p class=\"prose-p\">Before 1914, Great Britain prided itself on being a liberal society characterized by minimal state intervention, free trade, and robust legal protections for individual liberties. The existential demands of total industrial warfare demolished this laissez-faire tradition almost overnight. On 8 August 1914, Parliament passed the <strong>Defence of the Realm Act (DORA)</strong> with virtually no debate, vesting the government with sweeping authoritarian powers.</p><p class=\"prose-p\">Under DORA, the British state seized unprecedented control over everyday civilian life. Authorities were empowered to censor newspapers, ban anti-war publications, intercept private postal mail, arrest suspected saboteurs without trial, and commandeer privately owned land, railways, and factories for military production.</p><p class=\"prose-p\">To maximise factory output and curb industrial absenteeism, DORA introduced blackouts, banned fireworks, made flying kites illegal, and restricted pub opening hours while watering down beer. British citizens quickly realized that defeating Prussian autocracy required Britain to construct an authoritarian regulatory apparatus of its own.</p>",
+          "image": "/images/gw_dora_notice.jpg",
+          "caption": "Official public government proclamation placard posted under the Defence of the Realm Act (DORA), announcing strict wartime blackout and lighting restrictions in British cities."
         },
         {
           "ref": "4.2",
@@ -3217,7 +3676,12 @@ export default {
             "Colonel Charles Repington published front-page headlines in the Daily Mail exposing the 'Shell Crisis', revealing that British guns were limited to a few rounds daily while German artillery fired relentlessly.",
             "The scandal brought down Asquith’s government and created the Ministry of Munitions under David Lloyd George. The state seized direct control over private factories, modernised production lines, and coordinated raw materials, transforming British industry into a centralized war-production engine."
           ],
-          "text": "<p class=\"prose-p\">In May 1915, British military strategy stalled during the Battle of Aubers Ridge due to a catastrophic ammunition shortage.</p><p class=\"prose-p\">Colonel Charles Repington published front-page headlines in the <em>Daily Mail</em> exposing the <strong>'Shell Crisis'</strong>, revealing that British guns were limited to a few rounds daily while German artillery fired relentlessly.</p><p class=\"prose-p\">The scandal brought down Asquith’s government and created the Ministry of Munitions under <strong>David Lloyd George</strong>. The state seized direct control over private factories, modernised production lines, and coordinated raw materials, transforming British industry into a centralized war-production engine.</p>"
+          "text": "<p class=\"prose-p\">By spring 1915, British offensives on the Western Front stalled due to a catastrophic munitions shortage known as the <strong>'Shell Crisis'</strong>. British artillery batteries were strictly rationed to just a handful of shells daily, leaving infantry defenseless against German bombardment. Newspaper revelations caused a national scandal that brought down Asquith's Liberal government, forcing the creation of a cross-party coalition.</p><p class=\"prose-p\">Dynamic politician <strong>David Lloyd George</strong> was appointed head of the newly created Ministry of Munitions. Lloyd George acted ruthlessly, taking direct control over private armament factories, setting wages, commandeering raw metal supplies, and establishing national shell factories operated by the government.</p><p class=\"prose-p\">Lloyd George negotiated the 'Treasury Agreements' with trade union leaders, suspending protective workplace rules and allowing <strong>'dilution'</strong>—the practice of breaking skilled craft jobs down into repetitive machine tasks performed by semi-skilled workers and women. This radical state intervention revolutionized British industrial capacity, multiplying munitions production tenfold and establishing state-managed wartime capitalism.</p>",
+          "heading": "The 1915 Shell Crisis & Industrial Mobilisation",
+          "content": "<p class=\"prose-p\">By spring 1915, British offensives on the Western Front stalled due to a catastrophic munitions shortage known as the <strong>'Shell Crisis'</strong>. British artillery batteries were strictly rationed to just a handful of shells daily, leaving infantry defenseless against German bombardment. Newspaper revelations caused a national scandal that brought down Asquith's Liberal government, forcing the creation of a cross-party coalition.</p><p class=\"prose-p\">Dynamic politician <strong>David Lloyd George</strong> was appointed head of the newly created Ministry of Munitions. Lloyd George acted ruthlessly, taking direct control over private armament factories, setting wages, commandeering raw metal supplies, and establishing national shell factories operated by the government.</p><p class=\"prose-p\">Lloyd George negotiated the 'Treasury Agreements' with trade union leaders, suspending protective workplace rules and allowing <strong>'dilution'</strong>—the practice of breaking skilled craft jobs down into repetitive machine tasks performed by semi-skilled workers and women. This radical state intervention revolutionized British industrial capacity, multiplying munitions production tenfold and establishing state-managed wartime capitalism.</p>",
+          "body": "<p class=\"prose-p\">By spring 1915, British offensives on the Western Front stalled due to a catastrophic munitions shortage known as the <strong>'Shell Crisis'</strong>. British artillery batteries were strictly rationed to just a handful of shells daily, leaving infantry defenseless against German bombardment. Newspaper revelations caused a national scandal that brought down Asquith's Liberal government, forcing the creation of a cross-party coalition.</p><p class=\"prose-p\">Dynamic politician <strong>David Lloyd George</strong> was appointed head of the newly created Ministry of Munitions. Lloyd George acted ruthlessly, taking direct control over private armament factories, setting wages, commandeering raw metal supplies, and establishing national shell factories operated by the government.</p><p class=\"prose-p\">Lloyd George negotiated the 'Treasury Agreements' with trade union leaders, suspending protective workplace rules and allowing <strong>'dilution'</strong>—the practice of breaking skilled craft jobs down into repetitive machine tasks performed by semi-skilled workers and women. This radical state intervention revolutionized British industrial capacity, multiplying munitions production tenfold and establishing state-managed wartime capitalism.</p>",
+          "image": "/images/gw_lloyd_george.jpg",
+          "caption": "David Lloyd George inspecting artillery shell production as Minister of Munitions in 1915; his state-managed factories multiplied British shell output tenfold."
         },
         {
           "ref": "4.3",
@@ -3228,10 +3692,13 @@ export default {
             "In January 1916, Parliament passed the Military Service Act, introducing compulsory conscription for unmarried men aged 18 to 41, later extended to married men and older ages.",
             "Approximately 16,000 men registered as Conscientious Objectors on moral, religious, or political grounds. While 'alternativists' served in non-combatant roles like driving frontline ambulances, roughly 1,500 'absolutists' refused any war work. Absolutists were jailed in harsh prisons like Dartmoor, subjected to hard labour, public disgrace, and stripped of voting rights."
           ],
-          "text": "<p class=\"prose-p\">By late 1915, voluntary enlistment could no longer replenish the Western Front’s catastrophic casualty rates.</p><p class=\"prose-p\">In January 1916, Parliament passed the <strong>Military Service Act</strong>, introducing compulsory conscription for unmarried men aged 18 to 41, later extended to married men and older ages.</p><p class=\"prose-p\">Approximately 16,000 men registered as <strong>Conscientious Objectors</strong> on moral, religious, or political grounds. While 'alternativists' served in non-combatant roles like driving frontline ambulances, roughly 1,500 'absolutists' refused any war work. Absolutists were jailed in harsh prisons like Dartmoor, subjected to hard labour, public disgrace, and stripped of voting rights.</p>",
-          "image": "/images/suffragettes_kenney_pankhurst.jpg",
+          "text": "<p class=\"prose-p\">As the catastrophic casualty lists from Gallipoli, Loos, and Ypres mounted throughout 1915, voluntary recruitment slowed to a trickle. Reluctantly acknowledging that volunteerism could no longer replace the hundreds of thousands of men lost on the frontlines, Prime Minister Herbert Asquith introduced the <strong>Military Service Act</strong> in January 1916, ending Britain's centuries-old tradition of voluntary military service.</p><p class=\"prose-p\">The act initially conscripted all single men aged 18 to 41, and was extended to married men four months later. While the vast majority complied, approximately 16,000 men claimed exemption as <strong>Conscientious Objectors (COs)</strong> on religious, moral, or political grounds.</p><p class=\"prose-p\">COs faced hostile military tribunals composed of local civic elders who treated them with contempt. While some 'alternativists' agreed to perform non-combatant roles such as driving ambulances or farm work, roughly 1,500 'absolutists' refused all war-related service. These men endured brutal physical punishments, solitary confinement in damp prison cells, and harsh hard labor in penal camps like Dartmoor.</p>",
+          "image": "/images/gw_richmond_castle.jpg",
           "image_alt": "Suffragette campaigners Annie Kenney and Christabel Pankhurst",
-          "caption": "Suffragette leaders Annie Kenney and Christabel Pankhurst, whose militant campaign paused during the war as women mobilised for the national effort."
+          "caption": "The 19th-century cell block at Richmond Castle, Yorkshire, where the 'Richmond Sixteen' absolutist Conscientious Objectors were imprisoned and etched anti-war graffiti before being court-martialed in France.",
+          "heading": "Conscription, The Military Service Act & Conscientious Objectors",
+          "content": "<p class=\"prose-p\">As the catastrophic casualty lists from Gallipoli, Loos, and Ypres mounted throughout 1915, voluntary recruitment slowed to a trickle. Reluctantly acknowledging that volunteerism could no longer replace the hundreds of thousands of men lost on the frontlines, Prime Minister Herbert Asquith introduced the <strong>Military Service Act</strong> in January 1916, ending Britain's centuries-old tradition of voluntary military service.</p><p class=\"prose-p\">The act initially conscripted all single men aged 18 to 41, and was extended to married men four months later. While the vast majority complied, approximately 16,000 men claimed exemption as <strong>Conscientious Objectors (COs)</strong> on religious, moral, or political grounds.</p><p class=\"prose-p\">COs faced hostile military tribunals composed of local civic elders who treated them with contempt. While some 'alternativists' agreed to perform non-combatant roles such as driving ambulances or farm work, roughly 1,500 'absolutists' refused all war-related service. These men endured brutal physical punishments, solitary confinement in damp prison cells, and harsh hard labor in penal camps like Dartmoor.</p>",
+          "body": "<p class=\"prose-p\">As the catastrophic casualty lists from Gallipoli, Loos, and Ypres mounted throughout 1915, voluntary recruitment slowed to a trickle. Reluctantly acknowledging that volunteerism could no longer replace the hundreds of thousands of men lost on the frontlines, Prime Minister Herbert Asquith introduced the <strong>Military Service Act</strong> in January 1916, ending Britain's centuries-old tradition of voluntary military service.</p><p class=\"prose-p\">The act initially conscripted all single men aged 18 to 41, and was extended to married men four months later. While the vast majority complied, approximately 16,000 men claimed exemption as <strong>Conscientious Objectors (COs)</strong> on religious, moral, or political grounds.</p><p class=\"prose-p\">COs faced hostile military tribunals composed of local civic elders who treated them with contempt. While some 'alternativists' agreed to perform non-combatant roles such as driving ambulances or farm work, roughly 1,500 'absolutists' refused all war-related service. These men endured brutal physical punishments, solitary confinement in damp prison cells, and harsh hard labor in penal camps like Dartmoor.</p>"
         },
         {
           "ref": "4.4",
@@ -3242,10 +3709,13 @@ export default {
             "Handling toxic TNT explosive powder without protective gear poisoned the workers, causing toxic jaundice that turned their skin and hair bright yellow—earning them the nickname 'Canary Girls'.",
             "Workers also faced extreme danger: in January 1917, the Silvertown munitions factory in London exploded, killing 73 people. Women’s vital contribution permanently reshaped gender roles, paving the way for the 1918 Representation of the People Act."
           ],
-          "text": "<p class=\"prose-p\">With millions of men conscripted, nearly one million women stepped into munitions factories and engineering works to sustain the war effort. Munitions workers produced over <strong>80% of British weaponry and shells</strong>.</p><p class=\"prose-p\">Handling toxic TNT explosive powder without protective gear poisoned the workers, causing toxic jaundice that turned their skin and hair bright yellow—earning them the nickname <strong>'Canary Girls'</strong>.</p><p class=\"prose-p\">Workers also faced extreme danger: in January 1917, the Silvertown munitions factory in London exploded, killing 73 people. Women’s vital contribution permanently reshaped gender roles, paving the way for the <strong>1918 Representation of the People Act</strong>.</p>",
+          "text": "<p class=\"prose-p\">The enlistment of millions of working-class men created a severe domestic labor crisis that forced the massive mobilization of women into the national workforce. Between 1914 and 1918, over one million British women entered employment, driving buses, policing streets, working on farms in the Women’s Land Army, and staffing heavy engineering and railway yards.</p><p class=\"prose-p\">The most hazardous service was performed by approximately 700,000 female munitions workers, known affectionately as <strong>'munitionettes'</strong>. Handling highly volatile Cordite and TNT explosive powders stained their skin and hair bright yellow, earning them the iconic nickname <strong>'Canary Girls'</strong>.</p><p class=\"prose-p\">These women labored twelve-hour shifts in toxic, unventilated factories, facing devastating risks of fatal TNT jaundice, respiratory failure, and catastrophic chemical explosions. In January 1917, an accidental blast at the Silvertown munitions factory in East London killed 73 people and flattened hundreds of homes. Women’s courageous industrial sacrifice permanently undermined sexist arguments against female suffrage, helping secure the vote for women over 30 in 1918.</p>",
           "image": "/images/gw_munitionettes.jpg",
           "image_alt": "Female munitions workers Canary Girls in factory",
-          "caption": "Female munitions workers ('Canary Girls') handling artillery shells in a British munitions factory; exposure to toxic TNT caused jaundice and yellowed skin."
+          "caption": "Female munitions workers ('Canary Girls') handling artillery shells in a British factory; exposure to toxic TNT caused jaundice, bright yellow skin, and constant risk of fatal explosions.",
+          "heading": "Canary Girls & Female Industrial Mobilisation",
+          "content": "<p class=\"prose-p\">The enlistment of millions of working-class men created a severe domestic labor crisis that forced the massive mobilization of women into the national workforce. Between 1914 and 1918, over one million British women entered employment, driving buses, policing streets, working on farms in the Women’s Land Army, and staffing heavy engineering and railway yards.</p><p class=\"prose-p\">The most hazardous service was performed by approximately 700,000 female munitions workers, known affectionately as <strong>'munitionettes'</strong>. Handling highly volatile Cordite and TNT explosive powders stained their skin and hair bright yellow, earning them the iconic nickname <strong>'Canary Girls'</strong>.</p><p class=\"prose-p\">These women labored twelve-hour shifts in toxic, unventilated factories, facing devastating risks of fatal TNT jaundice, respiratory failure, and catastrophic chemical explosions. In January 1917, an accidental blast at the Silvertown munitions factory in East London killed 73 people and flattened hundreds of homes. Women’s courageous industrial sacrifice permanently undermined sexist arguments against female suffrage, helping secure the vote for women over 30 in 1918.</p>",
+          "body": "<p class=\"prose-p\">The enlistment of millions of working-class men created a severe domestic labor crisis that forced the massive mobilization of women into the national workforce. Between 1914 and 1918, over one million British women entered employment, driving buses, policing streets, working on farms in the Women’s Land Army, and staffing heavy engineering and railway yards.</p><p class=\"prose-p\">The most hazardous service was performed by approximately 700,000 female munitions workers, known affectionately as <strong>'munitionettes'</strong>. Handling highly volatile Cordite and TNT explosive powders stained their skin and hair bright yellow, earning them the iconic nickname <strong>'Canary Girls'</strong>.</p><p class=\"prose-p\">These women labored twelve-hour shifts in toxic, unventilated factories, facing devastating risks of fatal TNT jaundice, respiratory failure, and catastrophic chemical explosions. In January 1917, an accidental blast at the Silvertown munitions factory in East London killed 73 people and flattened hundreds of homes. Women’s courageous industrial sacrifice permanently undermined sexist arguments against female suffrage, helping secure the vote for women over 30 in 1918.</p>"
         },
         {
           "ref": "4.5",
@@ -3256,7 +3726,12 @@ export default {
             "By April 1917, U-boats were sinking one in every four ships bound for British ports, reducing the nation’s wheat supplies to just six weeks of food reserves. Food prices soared, long queues formed outside grocery shops, and public panic mounted.",
             "The government responded by organizing naval convoys to protect merchant ships and introducing compulsory rationing in early 1918 for sugar, meat, and butter. Ration books ensured equitable distribution and prevented civilian starvation until the war’s end."
           ],
-          "text": "<p class=\"prose-p\">In February 1917, Germany launched <strong>unrestricted submarine warfare</strong>, deploying U-boats to sink all merchant shipping supplying Britain.</p><p class=\"prose-p\">By April 1917, U-boats were sinking one in every four ships bound for British ports, reducing the nation’s wheat supplies to just <strong>six weeks of food reserves</strong>. Food prices soared, long queues formed outside grocery shops, and public panic mounted.</p><p class=\"prose-p\">The government responded by organizing naval convoys to protect merchant ships and introducing <strong>compulsory rationing</strong> in early 1918 for sugar, meat, and butter. Ration books ensured equitable distribution and prevented civilian starvation until the war’s end.</p>"
+          "text": "<p class=\"prose-p\">By early 1917, Britain faced imminent starvation due to Germany's declaration of <strong>unrestricted submarine warfare</strong>. German U-boats sank hundreds of Allied merchant ships in the Atlantic, aiming to starve Britain into surrender before American troops arrived in Europe. By April 1917, submarine attacks had reduced Britain's national wheat reserves to a precarious <strong>six weeks of grain supplies</strong>.</p><p class=\"prose-p\">Civilians experienced soaring food prices, hoarding, and exhausting queues outside grocery stores, where women waited hours for basic foodstuffs like potatoes, tea, and sugar. Malnutrition threatened working-class families and civil unrest simmered in industrial cities.</p><p class=\"prose-p\">The government countered this existential threat through decisive state action. The Royal Navy introduced the armed convoy system, drastically reducing shipping losses, while the Board of Agriculture mobilized the Women's Land Army to plow pasture for crops. In early 1918, the government introduced <strong>compulsory national rationing</strong> for sugar, meat, and butter. Standardised ration books guaranteed fair civilian distribution, successfully preventing mass starvation until the war's conclusion.</p>",
+          "heading": "Unrestricted Submarine Warfare, Food Shortages & Rationing",
+          "content": "<p class=\"prose-p\">By early 1917, Britain faced imminent starvation due to Germany's declaration of <strong>unrestricted submarine warfare</strong>. German U-boats sank hundreds of Allied merchant ships in the Atlantic, aiming to starve Britain into surrender before American troops arrived in Europe. By April 1917, submarine attacks had reduced Britain's national wheat reserves to a precarious <strong>six weeks of grain supplies</strong>.</p><p class=\"prose-p\">Civilians experienced soaring food prices, hoarding, and exhausting queues outside grocery stores, where women waited hours for basic foodstuffs like potatoes, tea, and sugar. Malnutrition threatened working-class families and civil unrest simmered in industrial cities.</p><p class=\"prose-p\">The government countered this existential threat through decisive state action. The Royal Navy introduced the armed convoy system, drastically reducing shipping losses, while the Board of Agriculture mobilized the Women's Land Army to plow pasture for crops. In early 1918, the government introduced <strong>compulsory national rationing</strong> for sugar, meat, and butter. Standardised ration books guaranteed fair civilian distribution, successfully preventing mass starvation until the war's conclusion.</p>",
+          "body": "<p class=\"prose-p\">By early 1917, Britain faced imminent starvation due to Germany's declaration of <strong>unrestricted submarine warfare</strong>. German U-boats sank hundreds of Allied merchant ships in the Atlantic, aiming to starve Britain into surrender before American troops arrived in Europe. By April 1917, submarine attacks had reduced Britain's national wheat reserves to a precarious <strong>six weeks of grain supplies</strong>.</p><p class=\"prose-p\">Civilians experienced soaring food prices, hoarding, and exhausting queues outside grocery stores, where women waited hours for basic foodstuffs like potatoes, tea, and sugar. Malnutrition threatened working-class families and civil unrest simmered in industrial cities.</p><p class=\"prose-p\">The government countered this existential threat through decisive state action. The Royal Navy introduced the armed convoy system, drastically reducing shipping losses, while the Board of Agriculture mobilized the Women's Land Army to plow pasture for crops. In early 1918, the government introduced <strong>compulsory national rationing</strong> for sugar, meat, and butter. Standardised ration books guaranteed fair civilian distribution, successfully preventing mass starvation until the war's conclusion.</p>",
+          "image": "/images/gw_ration_book.jpg",
+          "caption": "Official Ministry of Food 1918 National Ration Book with coupons for meat, butter, and sugar, introduced to prevent civilian starvation after German U-boats sank Atlantic grain ships."
         }
       ],
       "quiz": [
@@ -3905,7 +4380,24 @@ export default {
             "Kaiser Abdicates to Holland",
             "Armistice in Compiègne Wagon"
           ],
-          "focus_clue": "Why did the British naval blockade and the Allied Hundred Days Offensive break the German Army’s will to fight?"
+          "focus_clue": "Why did the British naval blockade and the Allied Hundred Days Offensive break the German Army’s will to fight?",
+          "words": [
+            {
+              "term": "Kiel Mutiny & Revolution",
+              "clue": "German sailors at Wilhelmshaven and Kiel refusing orders to launch a suicidal final fleet sortie in late October 1918, sparking nationwide socialist councils."
+            },
+            {
+              "term": "Kaiser Abdicates to Holland",
+              "clue": "Kaiser Wilhelm II stepping down on 9 November 1918 and fleeing across the Dutch border as Prince Max of Baden announced the formation of a republic."
+            },
+            {
+              "term": "Armistice in Compiègne Wagon",
+              "clue": "The ceasefire signed at 5:00 a.m. on 11 November 1918 inside Marshal Foch's railway carriage in the Compiègne Forest, ending active combat."
+            }
+          ],
+          "model_sentence": "Sparked by the naval <strong>Kiel Mutiny & Revolution</strong>, unrest spread until the <strong>Kaiser Abdicates to Holland</strong>, paving the way for the signing of the <strong>Armistice in Compiègne Wagon</strong>.",
+          "title": "What forced the German military to concede defeat and accept the Armistice in 1918?",
+          "dates": "11 Nov 1918"
         },
         {
           "step": 2,
@@ -3917,7 +4409,24 @@ export default {
             "Wilson’s 14 Points & League",
             "Lloyd George’s Compromise"
           ],
-          "focus_clue": "Why did French desires to permanently disarm Germany clash with American idealism and British trade interests?"
+          "focus_clue": "Why did French desires to permanently disarm Germany clash with American idealism and British trade interests?",
+          "words": [
+            {
+              "term": "Clemenceau Demands Revenge",
+              "clue": "French Premier Georges Clemenceau , whose nation suffered immense devastation, demanded severe revenge, crippling reparations, and the permanent dismemberment of German military power."
+            },
+            {
+              "term": "Wilson’s 14 Points & League",
+              "clue": "American President Woodrow Wilson championed his Fourteen Points, advocating national self-determination, disarmament, and a League of Nations to resolve disputes peacefully."
+            },
+            {
+              "term": "Lloyd George’s Compromise",
+              "clue": "British Prime Minister balancing public demands to 'squeeze Germany until the pips squeak' with the economic necessity of preserving Germany as a trading partner against Bolshevism."
+            }
+          ],
+          "model_sentence": "At Versailles, French leader <strong>Clemenceau Demands Revenge</strong>, clashing with <strong>Wilson’s 14 Points & League</strong> while Britain navigated <strong>Lloyd George’s Compromise</strong>.",
+          "title": "How did conflicting national motives divide Clemenceau, Lloyd George, and Wilson?",
+          "dates": "Jan–June 1919"
         },
         {
           "step": 3,
@@ -3929,7 +4438,24 @@ export default {
             "£6.6 Billion Reparations",
             "100,000 Army Cap & Land Cuts"
           ],
-          "focus_clue": "Why did Germans across all political parties denounce the Treaty of Versailles as an unjust and humiliating \"Diktat\"?"
+          "focus_clue": "Why did Germans across all political parties denounce the Treaty of Versailles as an unjust and humiliating \"Diktat\"?",
+          "words": [
+            {
+              "term": "Article 231 \"War Guilt\"",
+              "clue": "Under Article 231 —the 'War Guilt Clause'—Germany was forced to accept sole legal responsibility for starting the war, justifying astronomical reparations fixed in 1921 at £6.6 billion ."
+            },
+            {
+              "term": "£6.6 Billion Reparations",
+              "clue": "Under Article 231 —the 'War Guilt Clause'—Germany was forced to accept sole legal responsibility for starting the war, justifying astronomical reparations fixed in 1921 at £6.6 billion ."
+            },
+            {
+              "term": "100,000 Army Cap & Land Cuts",
+              "clue": "Its military was dismantled: the army capped at 100,000 volunteers , conscription banned, submarines and aircraft forbidden, the navy limited to six battleships, and the Rhineland permanently demilitarised."
+            }
+          ],
+          "model_sentence": "Enraged by the humiliating <strong>Article 231 \"War Guilt\"</strong> clause and crushing <strong>£6.6 Billion Reparations</strong>, Germany protested against the strict <strong>100,000 Army Cap & Land Cuts</strong>.",
+          "title": "Why did Germans across all political parties denounce the Treaty terms as an unjust \"Diktat\"?",
+          "dates": "28 June 1919"
         },
         {
           "step": 4,
@@ -3941,7 +4467,24 @@ export default {
             "Keynes: \"Carthaginian Peace\"",
             "Dyson: \"1940 Class\" Weeps"
           ],
-          "focus_clue": "How did contemporary critics like Keynes and Dyson predict that punishing Germany economically would breed a second war in 1939?"
+          "focus_clue": "How did contemporary critics like Keynes and Dyson predict that punishing Germany economically would breed a second war in 1939?",
+          "words": [
+            {
+              "term": "Article 231 Moral Condemnation",
+              "clue": "The \"War Guilt Clause\" of the Treaty of Versailles, forcing Germany to accept sole moral and legal responsibility for causing the war."
+            },
+            {
+              "term": "Keynes: \"Carthaginian Peace\"",
+              "clue": "Keynes argued that crippling Germany’s industrial economy was a 'Carthaginian Peace' that would pauperize Central Europe and provoke revenge."
+            },
+            {
+              "term": "Dyson: \"1940 Class\" Weeps",
+              "clue": "I seem to hear a child weeping!' Above a weeping child labelled '1940 Class' , Dyson chillingly prophesied that the punitive treaty would lead to a second global war by 1940."
+            }
+          ],
+          "model_sentence": "Condemned for its punitive <strong>Article 231 Moral Condemnation</strong>, economist <strong>Keynes: \"Carthaginian Peace\"</strong> and political cartoonist <strong>Dyson: \"1940 Class\" Weeps</strong> warned that the treaty would ignite future war.",
+          "title": "How did Article 231, Keynes’ warning, and Will Dyson’s cartoon predict future catastrophe?",
+          "dates": "June–Dec 1919"
         },
         {
           "step": 5,
@@ -3953,7 +4496,24 @@ export default {
             "MacMillan: Germany Stayed Intact",
             "Fatal Failure of Enforcement"
           ],
-          "focus_clue": "Did the Treaty of Versailles directly cause World War II, or did the fatal flaw lie in the Allies’ failure to enforce its terms?"
+          "focus_clue": "Did the Treaty of Versailles directly cause World War II, or did the fatal flaw lie in the Allies’ failure to enforce its terms?",
+          "words": [
+            {
+              "term": "Traditional: Created Hitler",
+              "clue": "The historical argument popularized by John Maynard Keynes asserting that punitive reparations and war guilt clauses crippled the Weimar Republic and paved the way for Nazism."
+            },
+            {
+              "term": "MacMillan: Germany Stayed Intact",
+              "clue": "However, modern revisionist historians point out that Germany’s industrial core and territorial integrity remained largely intact."
+            },
+            {
+              "term": "Fatal Failure of Enforcement",
+              "clue": "The revisionist historical verdict arguing that Versailles was neither too harsh nor too lenient, but failed because Britain and France refused to enforce its terms in the 1930s."
+            }
+          ],
+          "model_sentence": "Driven by the leadership of <strong>Traditional: Created Hitler</strong>, the impact of <strong>MacMillan: Germany Stayed Intact</strong> was consolidated through the deployment of <strong>Fatal Failure of Enforcement</strong>.",
+          "title": "The Historical Verdict: Was Versailles an impossibly harsh peace or an unenforced compromise?",
+          "dates": "1920–1939"
         }
       ],
       "learning_objectives": {
@@ -4175,10 +4735,13 @@ export default {
             "In late October 1918, sailors of the High Seas Fleet at Kiel mutinied, refusing to launch a suicidal final attack. The rebellion triggered nationwide revolution. On 9 November, Kaiser Wilhelm II abdicated and fled to exile in the Netherlands.",
             "Two days later, at 11:00 am on 11 November 1918, German representatives signed the Armistice in a railway carriage in the Compiègne Forest, ending combat operations."
           ],
-          "text": "<p class=\"prose-p\">By autumn 1918, Germany was facing total collapse. The British naval blockade had brought German civilians to the brink of starvation, while the Allied Hundred Days Offensive broke the Hindenburg Line.</p><p class=\"prose-p\">In late October 1918, sailors of the High Seas Fleet at <strong>Kiel mutinied</strong>, refusing to launch a suicidal final attack. The rebellion triggered nationwide revolution. On 9 November, <strong>Kaiser Wilhelm II abdicated</strong> and fled to exile in the Netherlands.</p><p class=\"prose-p\">Two days later, at 11:00 am on <strong>11 November 1918</strong>, German representatives signed the Armistice in a railway carriage in the Compiègne Forest, ending combat operations.</p>",
-          "image": "/images/kiel_mutiny_1918.jpg",
+          "text": "<p class=\"prose-p\">By autumn 1918, the German war machine was broken. The relentless Royal Navy naval blockade had starved German cities of food and industrial chemicals, causing severe malnutrition and over 400,000 civilian deaths. On the Western Front, the Allied Hundred Days Offensive—driven by fresh American manpower and British combined-arms tank warfare—smashed through Germany’s formidable Hindenburg Line.</p><p class=\"prose-p\">In late October 1918, sailors of the German High Seas Fleet at <strong>Kiel mutinied</strong>, refusing suicidal orders to sail into a final battle against the Royal Navy. The mutiny ignited a nationwide socialist revolution that swept across German industrial cities. Realising military victory was impossible, army commanders informed <strong>Kaiser Wilhelm II</strong> that he had lost the military's support; on 9 November, the Kaiser abdicated and fled to exile in the Netherlands.</p><p class=\"prose-p\">Two days later, at 11:00 am on <strong>11 November 1918</strong>, representatives of the newly proclaimed German Republic signed the Armistice in a railway carriage at Compiègne, ending four years of catastrophic bloodshed.</p>",
+          "image": "/images/gw_armistice_carriage.jpg",
           "image_alt": "Sailors of the German High Seas Fleet mutiny at Kiel November 1918",
-          "caption": "Rebellious German sailors at Kiel in November 1918; the mutiny sparked the German Revolution, the Kaiser’s abdication, and the Armistice."
+          "caption": "Allied Commander-in-Chief Marshal Ferdinand Foch standing outside the railway dining carriage in the Forest of Compiègne on 11 November 1918 after signing the Armistice.",
+          "heading": "The German Collapse, Mutiny & The 11 November Armistice",
+          "content": "<p class=\"prose-p\">By autumn 1918, the German war machine was broken. The relentless Royal Navy naval blockade had starved German cities of food and industrial chemicals, causing severe malnutrition and over 400,000 civilian deaths. On the Western Front, the Allied Hundred Days Offensive—driven by fresh American manpower and British combined-arms tank warfare—smashed through Germany’s formidable Hindenburg Line.</p><p class=\"prose-p\">In late October 1918, sailors of the German High Seas Fleet at <strong>Kiel mutinied</strong>, refusing suicidal orders to sail into a final battle against the Royal Navy. The mutiny ignited a nationwide socialist revolution that swept across German industrial cities. Realising military victory was impossible, army commanders informed <strong>Kaiser Wilhelm II</strong> that he had lost the military's support; on 9 November, the Kaiser abdicated and fled to exile in the Netherlands.</p><p class=\"prose-p\">Two days later, at 11:00 am on <strong>11 November 1918</strong>, representatives of the newly proclaimed German Republic signed the Armistice in a railway carriage at Compiègne, ending four years of catastrophic bloodshed.</p>",
+          "body": "<p class=\"prose-p\">By autumn 1918, the German war machine was broken. The relentless Royal Navy naval blockade had starved German cities of food and industrial chemicals, causing severe malnutrition and over 400,000 civilian deaths. On the Western Front, the Allied Hundred Days Offensive—driven by fresh American manpower and British combined-arms tank warfare—smashed through Germany’s formidable Hindenburg Line.</p><p class=\"prose-p\">In late October 1918, sailors of the German High Seas Fleet at <strong>Kiel mutinied</strong>, refusing suicidal orders to sail into a final battle against the Royal Navy. The mutiny ignited a nationwide socialist revolution that swept across German industrial cities. Realising military victory was impossible, army commanders informed <strong>Kaiser Wilhelm II</strong> that he had lost the military's support; on 9 November, the Kaiser abdicated and fled to exile in the Netherlands.</p><p class=\"prose-p\">Two days later, at 11:00 am on <strong>11 November 1918</strong>, representatives of the newly proclaimed German Republic signed the Armistice in a railway carriage at Compiègne, ending four years of catastrophic bloodshed.</p>"
         },
         {
           "ref": "5.2",
@@ -4189,7 +4752,12 @@ export default {
             "American President Woodrow Wilson championed his Fourteen Points, advocating national self-determination, disarmament, and a League of Nations to resolve disputes peacefully.",
             "French Premier Georges Clemenceau, whose nation suffered immense devastation, demanded severe revenge, crippling reparations, and the permanent dismemberment of German military power. British Prime Minister David Lloyd George sought a pragmatic middle ground, wanting Germany punished but economically viable enough to resume vital trading relations."
           ],
-          "text": "<p class=\"prose-p\">In January 1919, leaders assembled at the Palace of Versailles to negotiate a lasting peace. Decisions were dominated by the <strong>'Big Three'</strong>, each pursuing conflicting goals.</p><p class=\"prose-p\">American President <strong>Woodrow Wilson</strong> championed his Fourteen Points, advocating national self-determination, disarmament, and a League of Nations to resolve disputes peacefully.</p><p class=\"prose-p\">French Premier <strong>Georges Clemenceau</strong>, whose nation suffered immense devastation, demanded severe revenge, crippling reparations, and the permanent dismemberment of German military power. British Prime Minister <strong>David Lloyd George</strong> sought a pragmatic middle ground, wanting Germany punished but economically viable enough to resume vital trading relations.</p>"
+          "text": "<p class=\"prose-p\">In January 1919, leaders from over thirty nations convened at the Palace of Versailles to negotiate a post-war settlement. However, proceedings were dominated by the <strong>'Big Three'</strong>: American President Woodrow Wilson, French Premier Georges Clemenceau, and British Prime Minister David Lloyd George, each pursuing fundamentally irreconcilable national agendas.</p><p class=\"prose-p\"><strong>Woodrow Wilson</strong> arrived as an idealistic reformer championing his 'Fourteen Points', advocating national self-determination for European peoples, disarmament, and the creation of an international League of Nations to resolve disputes without bloodshed. In stark contrast, <strong>Georges Clemenceau</strong>—whose nation had suffered 1.4 million military deaths and widespread northern devastation—demanded severe vengeance, crippling financial reparations, and the permanent military dismemberment of Germany to ensure France's future security.</p><p class=\"prose-p\"><strong>David Lloyd George</strong> occupied a pragmatic middle position. While pressured by a vindictive British public to 'squeeze Germany until the pips squeak', Lloyd George privately feared that destroying Germany would eliminate a vital trading partner and leave Central Europe vulnerable to Bolshevik revolution.</p>",
+          "heading": "The Paris Peace Conference & The Big Three Agendas",
+          "content": "<p class=\"prose-p\">In January 1919, leaders from over thirty nations convened at the Palace of Versailles to negotiate a post-war settlement. However, proceedings were dominated by the <strong>'Big Three'</strong>: American President Woodrow Wilson, French Premier Georges Clemenceau, and British Prime Minister David Lloyd George, each pursuing fundamentally irreconcilable national agendas.</p><p class=\"prose-p\"><strong>Woodrow Wilson</strong> arrived as an idealistic reformer championing his 'Fourteen Points', advocating national self-determination for European peoples, disarmament, and the creation of an international League of Nations to resolve disputes without bloodshed. In stark contrast, <strong>Georges Clemenceau</strong>—whose nation had suffered 1.4 million military deaths and widespread northern devastation—demanded severe vengeance, crippling financial reparations, and the permanent military dismemberment of Germany to ensure France's future security.</p><p class=\"prose-p\"><strong>David Lloyd George</strong> occupied a pragmatic middle position. While pressured by a vindictive British public to 'squeeze Germany until the pips squeak', Lloyd George privately feared that destroying Germany would eliminate a vital trading partner and leave Central Europe vulnerable to Bolshevik revolution.</p>",
+          "body": "<p class=\"prose-p\">In January 1919, leaders from over thirty nations convened at the Palace of Versailles to negotiate a post-war settlement. However, proceedings were dominated by the <strong>'Big Three'</strong>: American President Woodrow Wilson, French Premier Georges Clemenceau, and British Prime Minister David Lloyd George, each pursuing fundamentally irreconcilable national agendas.</p><p class=\"prose-p\"><strong>Woodrow Wilson</strong> arrived as an idealistic reformer championing his 'Fourteen Points', advocating national self-determination for European peoples, disarmament, and the creation of an international League of Nations to resolve disputes without bloodshed. In stark contrast, <strong>Georges Clemenceau</strong>—whose nation had suffered 1.4 million military deaths and widespread northern devastation—demanded severe vengeance, crippling financial reparations, and the permanent military dismemberment of Germany to ensure France's future security.</p><p class=\"prose-p\"><strong>David Lloyd George</strong> occupied a pragmatic middle position. While pressured by a vindictive British public to 'squeeze Germany until the pips squeak', Lloyd George privately feared that destroying Germany would eliminate a vital trading partner and leave Central Europe vulnerable to Bolshevik revolution.</p>",
+          "image": "/images/gw_big_three_versailles.jpg",
+          "caption": "The 'Big Four' at the Paris Peace Conference (1919): David Lloyd George (Britain), Vittorio Orlando (Italy), Georges Clemenceau (France), and Woodrow Wilson (USA)."
         },
         {
           "ref": "5.3",
@@ -4200,10 +4768,13 @@ export default {
             "Germany lost 13% of its European territory, including Alsace-Lorraine to France and the Polish Corridor, cutting off East Prussia.",
             "Its military was dismantled: the army capped at 100,000 volunteers, conscription banned, submarines and aircraft forbidden, the navy limited to six battleships, and the Rhineland permanently demilitarised. Germans furiously condemned the settlement as an imposed, non-negotiable 'Diktat'."
           ],
-          "text": "<p class=\"prose-p\">Signed on 28 June 1919, the Treaty of Versailles imposed harsh terms. Under <strong>Article 231</strong>—the 'War Guilt Clause'—Germany was forced to accept sole legal responsibility for starting the war, justifying astronomical reparations fixed in 1921 at <strong>£6.6 billion</strong>.</p><p class=\"prose-p\">Germany lost 13% of its European territory, including Alsace-Lorraine to France and the Polish Corridor, cutting off East Prussia.</p><p class=\"prose-p\">Its military was dismantled: the army capped at <strong>100,000 volunteers</strong>, conscription banned, submarines and aircraft forbidden, the navy limited to six battleships, and the Rhineland permanently demilitarised. Germans furiously condemned the settlement as an imposed, non-negotiable <strong>'Diktat'</strong>.</p>",
+          "text": "<p class=\"prose-p\">Signed on 28 June 1919 in the Hall of Mirrors, the Treaty of Versailles imposed deeply punitive terms on the defeated German Republic. Under <strong>Article 231</strong>—the controversial 'War Guilt Clause'—Germany was forced to accept sole moral and legal responsibility for causing the war. This clause provided the legal justification for astronomical financial reparations, ultimately fixed in 1921 at <strong>£6.6 billion</strong>.</p><p class=\"prose-p\">Territorially, Germany was stripped of thirteen percent of its European land, losing Alsace-Lorraine to France, Eupen-Malmedy to Belgium, and the Polish Corridor to Poland, severing East Prussia from the German mainland. Germany also lost all its overseas colonies.</p><p class=\"prose-p\">Militarily, Germany was virtually disarmed: its army was capped at <strong>100,000 volunteers</strong>, conscription was abolished, tanks and combat aircraft were banned, the navy was limited to six obsolete battleships, and the Rhineland was permanently demilitarised. German delegates signed under threat of immediate Allied invasion, and the public furiously condemned the settlement as a humiliating, non-negotiable <strong>'Diktat'</strong>.</p>",
           "image": "/images/weimar_abdication_decree_1918.jpg",
           "image_alt": "Proclamation decree of the German Republic and abdication 1918",
-          "caption": "Official decree announcing the abdication of Kaiser Wilhelm II in November 1918, paving the way for the signing of the Treaty of Versailles."
+          "caption": "Official Berlin proclamation announcing the abdication of Kaiser Wilhelm II in November 1918, paving the way for the signing of the Treaty of Versailles.",
+          "heading": "The Terms of Versailles & The German \"Diktat\" Trauma",
+          "content": "<p class=\"prose-p\">Signed on 28 June 1919 in the Hall of Mirrors, the Treaty of Versailles imposed deeply punitive terms on the defeated German Republic. Under <strong>Article 231</strong>—the controversial 'War Guilt Clause'—Germany was forced to accept sole moral and legal responsibility for causing the war. This clause provided the legal justification for astronomical financial reparations, ultimately fixed in 1921 at <strong>£6.6 billion</strong>.</p><p class=\"prose-p\">Territorially, Germany was stripped of thirteen percent of its European land, losing Alsace-Lorraine to France, Eupen-Malmedy to Belgium, and the Polish Corridor to Poland, severing East Prussia from the German mainland. Germany also lost all its overseas colonies.</p><p class=\"prose-p\">Militarily, Germany was virtually disarmed: its army was capped at <strong>100,000 volunteers</strong>, conscription was abolished, tanks and combat aircraft were banned, the navy was limited to six obsolete battleships, and the Rhineland was permanently demilitarised. German delegates signed under threat of immediate Allied invasion, and the public furiously condemned the settlement as a humiliating, non-negotiable <strong>'Diktat'</strong>.</p>",
+          "body": "<p class=\"prose-p\">Signed on 28 June 1919 in the Hall of Mirrors, the Treaty of Versailles imposed deeply punitive terms on the defeated German Republic. Under <strong>Article 231</strong>—the controversial 'War Guilt Clause'—Germany was forced to accept sole moral and legal responsibility for causing the war. This clause provided the legal justification for astronomical financial reparations, ultimately fixed in 1921 at <strong>£6.6 billion</strong>.</p><p class=\"prose-p\">Territorially, Germany was stripped of thirteen percent of its European land, losing Alsace-Lorraine to France, Eupen-Malmedy to Belgium, and the Polish Corridor to Poland, severing East Prussia from the German mainland. Germany also lost all its overseas colonies.</p><p class=\"prose-p\">Militarily, Germany was virtually disarmed: its army was capped at <strong>100,000 volunteers</strong>, conscription was abolished, tanks and combat aircraft were banned, the navy was limited to six obsolete battleships, and the Rhineland was permanently demilitarised. German delegates signed under threat of immediate Allied invasion, and the public furiously condemned the settlement as a humiliating, non-negotiable <strong>'Diktat'</strong>.</p>"
         },
         {
           "ref": "5.4",
@@ -4214,7 +4785,12 @@ export default {
             "Keynes argued that crippling Germany’s industrial economy was a 'Carthaginian Peace' that would pauperize Central Europe and provoke revenge.",
             "In May 1919, Australian cartoonist Will Dyson published his famous cartoon 'Peace and Future Cannon Fodder', depicting the Big Three leaving the conference while Clemenceau remarks: 'Curious! I seem to hear a child weeping!' Above a weeping child labelled '1940 Class', Dyson chillingly prophesied that the punitive treaty would lead to a second global war by 1940."
           ],
-          "text": "<p class=\"prose-p\">Contemporaries quickly warned of Versailles’ dangerous repercussions. British Treasury delegate <strong>John Maynard Keynes</strong> resigned in protest, publishing <em>The Economic Consequences of the Peace</em> (1919).</p><p class=\"prose-p\">Keynes argued that crippling Germany’s industrial economy was a <strong>'Carthaginian Peace'</strong> that would pauperize Central Europe and provoke revenge.</p><p class=\"prose-p\">In May 1919, Australian cartoonist <strong>Will Dyson</strong> published his famous cartoon <em>'Peace and Future Cannon Fodder'</em>, depicting the Big Three leaving the conference while Clemenceau remarks: 'Curious! I seem to hear a child weeping!' Above a weeping child labelled <strong>'1940 Class'</strong>, Dyson chillingly prophesied that the punitive treaty would lead to a second global war by 1940.</p>"
+          "text": "<p class=\"prose-p\">Contemporaries immediately recognized the perilous instability embedded in the Versailles settlement. British Treasury representative <strong>John Maynard Keynes</strong> resigned in protest from the Paris delegation, publishing his explosive critique <em>The Economic Consequences of the Peace</em> in late 1919. Keynes warned that extracting impossible financial reparations would destroy Germany’s industrial economy, impoverishing Central Europe and fostering dangerous political extremism and desires for revenge.</p><p class=\"prose-p\">Keynes denounced the punitive treaty as a <strong>'Carthaginian Peace'</strong>, arguing that a prosperous, democratic Germany was essential for European continental stability and economic recovery.</p><p class=\"prose-p\">Simultaneously, Australian political cartoonist <strong>Will Dyson</strong> published a remarkably prescient drawing in the <em>Daily Herald</em> entitled 'Peace and Future Cannon Fodder'. The cartoon depicted the Big Three leaving the Versailles hall, with Clemenceau remarking: 'Curious! I seem to hear a child weeping!' In the corner, a naked child wept beneath the label <strong>'1940 Class'</strong>—chillingly prophesying that the punitive treaty would lead inexorably to a second world war by 1940.</p>",
+          "heading": "Keynes’ Carthaginian Peace & Will Dyson’s Prophetic Cartoon",
+          "content": "<p class=\"prose-p\">Contemporaries immediately recognized the perilous instability embedded in the Versailles settlement. British Treasury representative <strong>John Maynard Keynes</strong> resigned in protest from the Paris delegation, publishing his explosive critique <em>The Economic Consequences of the Peace</em> in late 1919. Keynes warned that extracting impossible financial reparations would destroy Germany’s industrial economy, impoverishing Central Europe and fostering dangerous political extremism and desires for revenge.</p><p class=\"prose-p\">Keynes denounced the punitive treaty as a <strong>'Carthaginian Peace'</strong>, arguing that a prosperous, democratic Germany was essential for European continental stability and economic recovery.</p><p class=\"prose-p\">Simultaneously, Australian political cartoonist <strong>Will Dyson</strong> published a remarkably prescient drawing in the <em>Daily Herald</em> entitled 'Peace and Future Cannon Fodder'. The cartoon depicted the Big Three leaving the Versailles hall, with Clemenceau remarking: 'Curious! I seem to hear a child weeping!' In the corner, a naked child wept beneath the label <strong>'1940 Class'</strong>—chillingly prophesying that the punitive treaty would lead inexorably to a second world war by 1940.</p>",
+          "body": "<p class=\"prose-p\">Contemporaries immediately recognized the perilous instability embedded in the Versailles settlement. British Treasury representative <strong>John Maynard Keynes</strong> resigned in protest from the Paris delegation, publishing his explosive critique <em>The Economic Consequences of the Peace</em> in late 1919. Keynes warned that extracting impossible financial reparations would destroy Germany’s industrial economy, impoverishing Central Europe and fostering dangerous political extremism and desires for revenge.</p><p class=\"prose-p\">Keynes denounced the punitive treaty as a <strong>'Carthaginian Peace'</strong>, arguing that a prosperous, democratic Germany was essential for European continental stability and economic recovery.</p><p class=\"prose-p\">Simultaneously, Australian political cartoonist <strong>Will Dyson</strong> published a remarkably prescient drawing in the <em>Daily Herald</em> entitled 'Peace and Future Cannon Fodder'. The cartoon depicted the Big Three leaving the Versailles hall, with Clemenceau remarking: 'Curious! I seem to hear a child weeping!' In the corner, a naked child wept beneath the label <strong>'1940 Class'</strong>—chillingly prophesying that the punitive treaty would lead inexorably to a second world war by 1940.</p>",
+          "image": "/images/gw_weeping_child.jpg",
+          "caption": "Will Dyson’s prophetic cartoon 'Peace and Future Cannon Fodder' (Daily Herald, May 1919), showing Clemenceau leaving Versailles while a naked child weeping beneath the label '1940 Class' foretells a second world war."
         },
         {
           "ref": "5.5",
@@ -4225,7 +4801,12 @@ export default {
             "However, modern revisionist historians point out that Germany’s industrial core and territorial integrity remained largely intact.",
             "They argue Versailles’ fatal weakness was not its inherent severity, but the Allies' rapid loss of political will to enforce its terms during the 1930s when Hitler began remilitarising Europe."
           ],
-          "text": "<p class=\"prose-p\">For decades, historians blamed Versailles directly for the rise of Adolf Hitler and the outbreak of World War II, arguing the treaty was too harsh to be accepted but too lenient to permanently suppress Germany. Nazi propaganda relentlessly exploited public resentment against the 'stab in the back' and the Diktat.</p><p class=\"prose-p\">However, modern revisionist historians point out that Germany’s industrial core and territorial integrity remained largely intact.</p><p class=\"prose-p\">They argue Versailles’ fatal weakness was not its inherent severity, but the Allies' rapid loss of political will to enforce its terms during the 1930s when Hitler began remilitarising Europe.</p>"
+          "text": "<p class=\"prose-p\">For decades following 1919, historians and popular opinion blamed the Treaty of Versailles directly for the collapse of the democratic Weimar Republic and the catastrophic rise of Adolf Hitler. Critics argued that the treaty was fundamentally flawed: harsh enough to infuriate German national pride, yet too lenient to permanently suppress German military and industrial resurgence. Nazi propaganda relentlessly exploited public bitterness over the 'November criminals' and the 'stab in the back'.</p><p class=\"prose-p\">However, modern revisionist historians offer a more nuanced verdict. They emphasize that despite territorial losses, Germany’s industrial core, demographic weight, and territorial integrity remained largely intact, leaving it potentially the dominant economic power on the continent.</p><p class=\"prose-p\">Historians like Margaret MacMillan argue that the fatal flaw of Versailles lay not in its inherent terms, but in the Allied powers' rapid loss of political willpower to enforce them during the 1920s and 1930s, allowing aggressive German remilitarisation to proceed unchecked until war returned.</p>",
+          "heading": "The Historical Verdict: Harsh Vengeance or Unenforced Compromise?",
+          "content": "<p class=\"prose-p\">For decades following 1919, historians and popular opinion blamed the Treaty of Versailles directly for the collapse of the democratic Weimar Republic and the catastrophic rise of Adolf Hitler. Critics argued that the treaty was fundamentally flawed: harsh enough to infuriate German national pride, yet too lenient to permanently suppress German military and industrial resurgence. Nazi propaganda relentlessly exploited public bitterness over the 'November criminals' and the 'stab in the back'.</p><p class=\"prose-p\">However, modern revisionist historians offer a more nuanced verdict. They emphasize that despite territorial losses, Germany’s industrial core, demographic weight, and territorial integrity remained largely intact, leaving it potentially the dominant economic power on the continent.</p><p class=\"prose-p\">Historians like Margaret MacMillan argue that the fatal flaw of Versailles lay not in its inherent terms, but in the Allied powers' rapid loss of political willpower to enforce them during the 1920s and 1930s, allowing aggressive German remilitarisation to proceed unchecked until war returned.</p>",
+          "body": "<p class=\"prose-p\">For decades following 1919, historians and popular opinion blamed the Treaty of Versailles directly for the collapse of the democratic Weimar Republic and the catastrophic rise of Adolf Hitler. Critics argued that the treaty was fundamentally flawed: harsh enough to infuriate German national pride, yet too lenient to permanently suppress German military and industrial resurgence. Nazi propaganda relentlessly exploited public bitterness over the 'November criminals' and the 'stab in the back'.</p><p class=\"prose-p\">However, modern revisionist historians offer a more nuanced verdict. They emphasize that despite territorial losses, Germany’s industrial core, demographic weight, and territorial integrity remained largely intact, leaving it potentially the dominant economic power on the continent.</p><p class=\"prose-p\">Historians like Margaret MacMillan argue that the fatal flaw of Versailles lay not in its inherent terms, but in the Allied powers' rapid loss of political willpower to enforce them during the 1920s and 1930s, allowing aggressive German remilitarisation to proceed unchecked until war returned.</p>",
+          "image": "/images/gw_berlin_reichstag_protest_1919.jpg",
+          "caption": "Mass demonstration in front of the Reichstag in Berlin (May 1919), where thousands of Germans protested the punitive terms and War Guilt clause of the Treaty of Versailles."
         }
       ],
       "quiz": [
@@ -4825,5 +5406,11 @@ export default {
         "What dark prediction did Keynes make about the long-term consequence of impoverishing Central Europe?"
       ]
     }
-  ]
+  ],
+  "edition": "2026.1",
+  "keyStage": "KS3",
+  "yearGroup": "Year 9",
+  "year_group": "Year 9",
+  "category": "KS3",
+  "key_stage": "KS3"
 };

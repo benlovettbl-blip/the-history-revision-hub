@@ -1,11 +1,11 @@
 export default {
   "synopsis": "A disputed succession, a blood-soaked hilltop in Sussex, and a conqueror's iron fist that violently transformed Anglo-Saxon England forever. Enter the tumultuous world of stone fortresses, feudal bondage, and royal fury. Experience the dramatic murder of Thomas Becket in Canterbury Cathedral, King John cornered by rebel barons at Runnymede to seal Magna Carta, and the catastrophic arrival of the Black Death that shattered feudalism and spurred peasant revolt.",
   "synopsis_tags": [
-      "Battle of Hastings (1066)",
-      "Domesday Book & Feudalism",
-      "Thomas Becket & Henry II",
-      "Magna Carta (1215)",
-      "Black Death & Peasants' Revolt"
+    "Battle of Hastings (1066)",
+    "Domesday Book & Feudalism",
+    "Thomas Becket & Henry II",
+    "Magna Carta (1215)",
+    "Black Death & Peasants' Revolt"
   ],
   "id": "medieval_england",
   "title": "Medieval England: 1066–1485",
@@ -1778,11 +1778,10 @@ export default {
             {
               "id": "medieval_england_l2_src_c",
               "letter": "C",
-              "type": "visual",
+              "type": "written",
               "src": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
               "image": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
               "title": "Source C: The Peterborough Chronicle on the Harrying of the North and William's Reign (c. 1121)",
-              "type": "written",
               "text": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
               "content": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
               "caption": "Folio from the Peterborough Chronicle (Bodleian Library MS Laud Misc. 636, f. 60r), chronicling the starvation and total devastation of Yorkshire in the winter of 1069–1070.",
@@ -1802,14 +1801,13 @@ export default {
           "source": {
             "id": "medieval_england_l2_src_c",
             "letter": "C",
-            "type": "visual",
+            "type": "written",
             "src": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
             "image": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
             "title": "Source C: The Peterborough Chronicle on the Harrying of the North and William's Reign (c. 1121)",
-            "type": "written",
-              "text": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
-              "content": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
-              "caption": "Folio from the Peterborough Chronicle (Bodleian Library MS Laud Misc. 636, f. 60r), chronicling the starvation and total devastation of Yorkshire in the winter of 1069–1070.",
+            "text": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
+            "content": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
+            "caption": "Folio from the Peterborough Chronicle (Bodleian Library MS Laud Misc. 636, f. 60r), chronicling the starvation and total devastation of Yorkshire in the winter of 1069–1070.",
             "author": "Anglo-Saxon monastic scribe at Peterborough Abbey",
             "date": "c. 1121",
             "question_badge": "SYSTEMATIC ATROCITY & FEUDAL TERROR",
@@ -2362,14 +2360,13 @@ export default {
         {
           "id": "medieval_england_l2_src_c",
           "letter": "C",
-          "type": "visual",
+          "type": "written",
           "src": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
           "image": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
           "title": "Source C: The Peterborough Chronicle on the Harrying of the North and William's Reign (c. 1121)",
-          "type": "written",
-              "text": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
-              "content": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
-              "caption": "Folio from the Peterborough Chronicle (Bodleian Library MS Laud Misc. 636, f. 60r), chronicling the starvation and total devastation of Yorkshire in the winter of 1069–1070.",
+          "text": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
+          "content": "He caused castles to be built and poor men to be sorely oppressed. The King was so very stern and took from his subjects many marks of gold and many hundred pounds of silver... He let his lands to farm on the hardest terms... and cared not how shamefully the reeves obtained money from poor men, nor how many illegal things they did. The rich complained and the poor murmured, but he was so sturdy that he took no notice of them; they had to follow the King's will entirely if they wished to live or keep their lands or goods.",
+          "caption": "Folio from the Peterborough Chronicle (Bodleian Library MS Laud Misc. 636, f. 60r), chronicling the starvation and total devastation of Yorkshire in the winter of 1069–1070.",
           "author": "Anglo-Saxon monastic scribe at Peterborough Abbey",
           "date": "c. 1121",
           "question_badge": "SYSTEMATIC ATROCITY & FEUDAL TERROR",
@@ -3111,13 +3108,15 @@ export default {
             "title": "Interpretation 1",
             "badge": "Contemporary Hagiography (c. 1175)",
             "author": "Edward Grim, Eyewitness Monk & Chronicler, Life of St Thomas (c. 1175)",
-            "text": "“The glorious martyr Thomas stood like a rock before the altar, refusing to yield the sacred liberties of Christ’s holy Church to earthly tyrants. He offered his neck to the wicked swords of the four knights, dying willingly so that God’s law might triumph over royal pride.”"
+            "text": "“The glorious martyr Thomas stood like a rock before the altar, refusing to yield the sacred liberties of Christ’s holy Church to earthly tyrants. He offered his neck to the wicked swords of the four knights, dying willingly so that God’s law might triumph over royal pride.”",
+            "extract": "“The glorious martyr Thomas stood like a rock before the altar, refusing to yield the sacred liberties of Christ’s holy Church to earthly tyrants. He offered his neck to the wicked swords of the four knights, dying willingly so that God’s law might triumph over royal pride.”"
           },
           "interp2": {
             "title": "Interpretation 2",
             "badge": "Modern Critical Revisionism (1986)",
             "author": "Historian Frank Barlow, Thomas Becket (1986)",
-            "text": "“Becket was vain, stubborn, and obsessively confrontational. Having served Henry faithfully as chancellor, his dramatic conversion into an unbending champion of clerical privilege was theatrical extremism. By shielding rapists and murderers in holy orders from secular law, Becket provoked a needless crisis.”"
+            "text": "“Becket was vain, stubborn, and obsessively confrontational. Having served Henry faithfully as chancellor, his dramatic conversion into an unbending champion of clerical privilege was theatrical extremism. By shielding rapists and murderers in holy orders from secular law, Becket provoked a needless crisis.”",
+            "extract": "“Becket was vain, stubborn, and obsessively confrontational. Having served Henry faithfully as chancellor, his dramatic conversion into an unbending champion of clerical privilege was theatrical extremism. By shielding rapists and murderers in holy orders from secular law, Becket provoked a needless crisis.”"
           },
           "matrix": [
             {
@@ -3142,7 +3141,21 @@ export default {
             "Specifically, Interpretation 1 focuses primarily on Becket’s spiritual devotion and defence of sacred liberties, whereas Interpretation 2 focuses on...",
             "As a result, they reach contrasting conclusions because..."
           ],
-          "model_answer": "Interpretation 1 suggests that Magna Carta (1215) was a selfish feudal contract designed solely to protect the private privileges and wealth of rebel barons against King John. In contrast, Interpretation 2 argues that Magna Carta was a foundational constitutional turning point that established the enduring principle of the Rule of Law, declaring that even the monarch is subject to the law of the land."
+          "model_answer": "Interpretation 1 suggests that Magna Carta (1215) was a selfish feudal contract designed solely to protect the private privileges and wealth of rebel barons against King John. In contrast, Interpretation 2 argues that Magna Carta was a foundational constitutional turning point that established the enduring principle of the Rule of Law, declaring that even the monarch is subject to the law of the land.",
+          "interpretation_1": {
+            "title": "Interpretation 1",
+            "badge": "Contemporary Hagiography (c. 1175)",
+            "author": "Edward Grim, Eyewitness Monk & Chronicler, Life of St Thomas (c. 1175)",
+            "text": "“The glorious martyr Thomas stood like a rock before the altar, refusing to yield the sacred liberties of Christ’s holy Church to earthly tyrants. He offered his neck to the wicked swords of the four knights, dying willingly so that God’s law might triumph over royal pride.”",
+            "extract": "“The glorious martyr Thomas stood like a rock before the altar, refusing to yield the sacred liberties of Christ’s holy Church to earthly tyrants. He offered his neck to the wicked swords of the four knights, dying willingly so that God’s law might triumph over royal pride.”"
+          },
+          "interpretation_2": {
+            "title": "Interpretation 2",
+            "badge": "Modern Critical Revisionism (1986)",
+            "author": "Historian Frank Barlow, Thomas Becket (1986)",
+            "text": "“Becket was vain, stubborn, and obsessively confrontational. Having served Henry faithfully as chancellor, his dramatic conversion into an unbending champion of clerical privilege was theatrical extremism. By shielding rapists and murderers in holy orders from secular law, Becket provoked a needless crisis.”",
+            "extract": "“Becket was vain, stubborn, and obsessively confrontational. Having served Henry faithfully as chancellor, his dramatic conversion into an unbending champion of clerical privilege was theatrical extremism. By shielding rapists and murderers in holy orders from secular law, Becket provoked a needless crisis.”"
+          }
         }
       ],
       "teacher_notes": {

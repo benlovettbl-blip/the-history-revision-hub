@@ -3159,11 +3159,25 @@ export function renderLessonLaunchpad({
   if (hasInfographic) {
     const count = lessonInfographics.length;
     const hasInteractive = lessonInfographics && lessonInfographics.some((m) => m.interactiveUrl);
+    const isKs2Unit =
+      unitId === 'ks2_ww2' ||
+      (unitId && unitId.startsWith('ks2')) ||
+      (typeof window !== 'undefined' &&
+        (window.currentUnitId === 'ks2_ww2' ||
+          (window.currentUnitId && window.currentUnitId.startsWith('ks2'))));
     tabs.push({
       key: 'infographic',
-      label: hasInteractive ? (count > 1 ? `Interactive Mats (${count})` : 'Interactive Revision Mat') : (count > 1 ? `Visual Revision Mats (${count})` : 'Visual Revision Mat'),
-      icon: hasInteractive ? 'fa-solid fa-wand-magic-sparkles icon-infographic' : 'fa-solid fa-chart-pie icon-infographic',
-      badge: hasInteractive ? (count > 1 ? `${count} Interactive` : 'Interactive') : (count > 1 ? `${count} Mats` : 'Visual Mat'),
+      label: hasInteractive
+        ? (count > 1
+            ? `Interactive Mats (${count})`
+            : (isKs2Unit ? 'Interactive Presentation Mat' : 'Interactive Revision Mat'))
+        : (count > 1 ? `Visual Revision Mats (${count})` : 'Visual Revision Mat'),
+      icon: hasInteractive
+        ? 'fa-solid fa-wand-magic-sparkles icon-infographic'
+        : 'fa-solid fa-chart-pie icon-infographic',
+      badge: hasInteractive
+        ? (count > 1 ? `${count} Interactive` : 'Interactive')
+        : (count > 1 ? `${count} Mats` : 'Visual Mat'),
     });
   }
 
@@ -3449,6 +3463,8 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
     'How far do you agree with Interpretation 1?';
   const interp1 = task.interp1 || task.interpretation_1 || task.interp_1 || {};
   const interp2 = task.interp2 || task.interpretation_2 || task.interp_2 || {};
+  const sourceB = task.source_b || task.source1 || task.sourceB || null;
+  const sourceC = task.source_c || task.source2 || task.sourceC || null;
   const matrix = task.matrix || [
     {
       col: '1. INTERPRETATION 1 CLAIMS',
@@ -3480,14 +3496,98 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
       'Weighing both interpretations against historical evidence, I conclude that...',
     ];
   }
-  const modelAnswer = task.model_answer || task.model || '';
+  let modelAnswer = task.model_answer || task.model || '';
+  if (!modelAnswer) {
+    const parts = [];
+    if (task.sub_question_b) {
+      const qPrompt = task.sub_question_b.prompt
+        ? `<strong style="color: #6d28d9; display: block; margin-bottom: 6px;">Part (b) [4 marks]: ${task.sub_question_b.prompt}</strong>`
+        : '<strong style="color: #6d28d9; display: block; margin-bottom: 6px;">Part (b) Target Exemplar Model Answer [4 marks]:</strong>';
+      parts.push(`${qPrompt}<div style="line-height: 1.6;">${task.sub_question_b.model || task.sub_question_b.model_answer || ''}</div>`);
+    } else if (task.model_answer_b) {
+      parts.push(`<strong style="color: #6d28d9; display: block; margin-bottom: 6px;">Part (b) Target Exemplar Model Answer [4 marks]:</strong><div style="line-height: 1.6;">${task.model_answer_b}</div>`);
+    }
+    if (task.sub_question_c) {
+      const qPrompt = task.sub_question_c.prompt
+        ? `<strong style="color: #6d28d9; display: block; margin-bottom: 6px;">Part (c) [4 marks]: ${task.sub_question_c.prompt}</strong>`
+        : '<strong style="color: #6d28d9; display: block; margin-bottom: 6px;">Part (c) Target Exemplar Model Answer [4 marks]:</strong>';
+      parts.push(`${qPrompt}<div style="line-height: 1.6;">${task.sub_question_c.model || task.sub_question_c.model_answer || ''}</div>`);
+    } else if (task.model_answer_c) {
+      parts.push(`<strong style="color: #6d28d9; display: block; margin-bottom: 6px;">Part (c) Target Exemplar Model Answer [4 marks]:</strong><div style="line-height: 1.6;">${task.model_answer_c}</div>`);
+    }
+    if (parts.length > 0) {
+      modelAnswer = parts.join('<div style="margin: 14px 0; border-top: 1px dashed #ddd6fe;"></div>');
+    }
+  }
+
+  const renderSourceCard = (srcObj, numOrLabel, borderCol, bgCol, textCol) => {
+    if (!srcObj) return '';
+    const sTitle = srcObj.title || srcObj.label || (typeof numOrLabel === 'string' ? numOrLabel : `Source ${numOrLabel}`);
+    const sBadge = srcObj.badge || (numOrLabel === 'Source B' || numOrLabel === 1 ? 'Primary Source Evidence (Corroborates Interp 1)' : 'Primary Source Evidence (Corroborates Interp 2)');
+    const sAuthor = srcObj.author || srcObj.provenance || srcObj.attribution || '';
+    const sWork = srcObj.work || srcObj.source || srcObj.title_of_work || '';
+    const sText =
+      typeof srcObj === 'string'
+        ? srcObj
+        : srcObj.extract ||
+          srcObj.text ||
+          srcObj.quote ||
+          srcObj.content ||
+          srcObj.body ||
+          srcObj.statement ||
+          srcObj.excerpt ||
+          '';
+
+    const citation = [sAuthor, sWork ? `<em>${sWork}</em>` : ''].filter(Boolean).join(' &bull; ');
+
+    return `
+      <div style="background: ${bgCol}; border: 1.5px solid ${borderCol}; border-radius: 8px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1px solid ${borderCol}; padding-bottom: 6px; flex-wrap: wrap; gap: 6px;">
+            <strong style="color: ${textCol}; font-size: 0.95rem; text-transform: uppercase; font-family: 'Inter', sans-serif;">
+              <i class="fa-solid fa-scroll" style="margin-right: 5px;"></i> ${sTitle}
+            </strong>
+            <span style="font-size: 0.72rem; font-weight: 700; padding: 2px 7px; background: rgba(0,0,0,0.06); border-radius: 3px; color: ${textCol}; border: 1px solid rgba(0,0,0,0.1);">
+              ${sBadge}
+            </span>
+          </div>
+          <div class="archival-source-body" style="font-family: 'Georgia', serif; font-size: 0.93rem; line-height: 1.6; color: #1e293b; margin-bottom: 12px; font-style: italic; background: rgba(255,255,255,0.75); padding: 10px 12px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.05);">
+            ${sText ? `&ldquo;${sText.replace(/^“|”$/g, '')}&rdquo;` : '<span style="color: #94a3b8;">[Source extract text unavailable]</span>'}
+          </div>
+        </div>
+        ${citation
+        ? `
+          <div style="padding: 6px 10px; background: #ffffff; border-left: 3px solid ${textCol}; border-radius: 4px; font-size: 0.8rem; color: #475569; font-weight: 600;">
+            <i class="fa-solid fa-feather-pointed" style="color: ${textCol};"></i> ${citation}
+          </div>
+        `
+        : ''
+      }
+      </div>
+    `;
+  };
 
   const renderInterpCard = (intObj, num, borderCol, bgCol, textCol) => {
+    if (!intObj) return '';
     const iTitle = intObj.title || `Interpretation ${num}`;
     const iBadge =
       intObj.badge || (num === 1 ? 'Orthodox Historiography' : 'Revisionist Historiography');
-    const iAuthor = intObj.author || '';
-    const iText = intObj.text || intObj.quote || '';
+    const iAuthor = intObj.author || intObj.provenance || intObj.attribution || '';
+    const iWork = intObj.work || intObj.source || intObj.title_of_work || '';
+    const iText =
+      typeof intObj === 'string'
+        ? intObj
+        : intObj.extract ||
+          intObj.text ||
+          intObj.quote ||
+          intObj.content ||
+          intObj.interpretation ||
+          intObj.body ||
+          intObj.statement ||
+          intObj.excerpt ||
+          '';
+
+    const citation = [iAuthor, iWork ? `<em>${iWork}</em>` : ''].filter(Boolean).join(' &bull; ');
 
     return `
       <div style="background: ${bgCol}; border: 1.5px solid ${borderCol}; border-radius: 8px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
@@ -3500,14 +3600,14 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
               ${iBadge}
             </span>
           </div>
-          <div class="archival-source-body" style="font-family: 'Georgia', serif; font-size: 0.92rem; line-height: 1.55; color: #1e293b; margin-bottom: 10px; font-style: italic;">
-            ${iText ? `&ldquo;${iText.replace(/^“|”$/g, '')}&rdquo;` : ''}
+          <div class="archival-source-body" style="font-family: 'Georgia', serif; font-size: 0.95rem; line-height: 1.6; color: #1e293b; margin-bottom: 12px; font-style: italic; background: rgba(255,255,255,0.7); padding: 10px 12px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.05);">
+            ${iText ? `&ldquo;${iText.replace(/^“|”$/g, '')}&rdquo;` : '<span style="color: #94a3b8;">[Interpretation extract text unavailable]</span>'}
           </div>
         </div>
-        ${iAuthor
+        ${citation
         ? `
           <div style="padding: 6px 10px; background: #ffffff; border-left: 3px solid ${textCol}; border-radius: 4px; font-size: 0.8rem; color: #475569; font-weight: 600;">
-            <i class="fa-solid fa-user-pen" style="color: ${textCol};"></i> ${iAuthor}
+            <i class="fa-solid fa-user-pen" style="color: ${textCol};"></i> ${citation}
           </div>
         `
         : ''
@@ -3534,10 +3634,53 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
         <strong>Debate Prompt:</strong> ${prompt}
       </div>
 
+      <!-- Pearson Edexcel Paper 3 Technique Strategy Card -->
+      <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-left: 4px solid #16a34a; border-radius: 6px; padding: 12px 14px; margin-bottom: 16px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; flex-wrap: wrap; gap: 6px;">
+          <strong style="color: #166534; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-award"></i> Pearson Edexcel GCSE Paper 3 Technique (Questions 3b &amp; 3c)
+          </strong>
+          <span style="font-size: 0.72rem; font-weight: 700; padding: 2px 7px; background: #dcfce7; border-radius: 3px; color: #15803d; border: 1px solid #bbf7d0;">
+            Level 2 / Full Marks Strategy
+          </span>
+        </div>
+        <div style="font-size: 0.82rem; color: #14532d; line-height: 1.5;">
+          <div><strong>&bull; Question 3(b) [4 marks]:</strong> State the main difference in view/argument, then quote directly from Interpretation 1 and contrast with a direct quote from Interpretation 2.</div>
+          <div style="margin-top: 4px;"><strong>&bull; Question 3(c) [4 marks]:</strong> Explain that the interpretations differ because the historians have used different sources of evidence. Link Interpretation 1 to evidence in Source B, and link Interpretation 2 to evidence in Source C.</div>
+          <div style="margin-top: 4px; color: #dc2626; font-weight: 600;"><strong>&bull; Examiner Warning:</strong> Do NOT evaluate the provenance, bias, purpose, or dates of the interpretations. Edexcel awards 0 marks / caps provenance evaluation of interpretations!</div>
+        </div>
+      </div>
+
+      ${(sourceB || sourceC)
+      ? `
+      <!-- Archival Primary Sources (Source B & Source C for Question 3c Evidence Matching) -->
+      <div style="margin-bottom: 16px; background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 6px;">
+          <strong style="color: #0f766e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-box-archive"></i> Archival Primary Sources &bull; Study Source B &amp; Source C (For Question 3c Evidence Matching)
+          </strong>
+          <span style="font-size: 0.72rem; font-weight: 700; padding: 2px 8px; background: #ccfbf1; border-radius: 4px; color: #0f766e; border: 1px solid #99f6e4;">
+            Official Paper 3 Matched Sources
+          </span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px;">
+          ${renderSourceCard(sourceB, 'Source B', '#99f6e4', '#f0fdfa', '#0f766e')}
+          ${renderSourceCard(sourceC, 'Source C', '#fed7aa', '#fff7ed', '#c2410c')}
+        </div>
+      </div>
+      `
+      : ''
+    }
+
       <!-- Side-by-Side Historical Interpretations -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 16px;">
-        ${renderInterpCard(interp1, 1, '#c4b5fd', '#faf5ff', '#6d28d9')}
-        ${renderInterpCard(interp2, 2, '#cbd5e1', '#ffffff', '#334155')}
+      <div style="margin-bottom: 16px;">
+        <div style="font-weight: 700; font-size: 0.85rem; color: #6d28d9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+          <i class="fa-solid fa-graduation-cap"></i> Secondary Historical Interpretations &bull; Study Interpretation 1 &amp; Interpretation 2
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+          ${renderInterpCard(interp1, 1, '#c4b5fd', '#faf5ff', '#6d28d9')}
+          ${renderInterpCard(interp2, 2, '#cbd5e1', '#ffffff', '#334155')}
+        </div>
       </div>
 
       <!-- 3-Step Historiographical Planning Matrix -->
@@ -5159,111 +5302,38 @@ export function renderLesson(lesson) {
     lesson.do_now &&
     (lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks)
   ) {
-    if (isGCSE) {
-      const headerHtml = renderDoNowHeaderWithTimerHTML({
-        timerId: 'donow-timer',
-        title: 'Do Now Tasks',
-        badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
-        icon: 'fa-solid fa-list-check',
-        showRevealAll: true,
-        includeTimer: false,
-      });
-      const timerHtml = renderDoNowInlineTimerHTML('donow-timer');
-      const currentDb =
-        typeof window !== 'undefined'
-          ? window.db || (appStore && appStore.state && appStore.state.db)
-          : null;
-      htmlDoNowInner = renderGcseDoNowPanelHTML({
+    const headerHtml = renderDoNowHeaderWithTimerHTML({
+      timerId: 'donow-timer',
+      title: 'Do Now Tasks',
+      badgeText: '🧠 Prior Knowledge Retrieval',
+      icon: 'fa-solid fa-list-check',
+      showRevealAll: true,
+      includeTimer: false,
+    });
+    const timerHtml = renderDoNowInlineTimerHTML('donow-timer');
+    const currentDb =
+      typeof window !== 'undefined'
+        ? window.db || (appStore && appStore.state && appStore.state.db)
+        : null;
+    htmlDoNowInner = renderGcseDoNowPanelHTML({
+      lesson,
+      activeUnit,
+      unitId,
+      db: currentDb,
+      headerHtml,
+      timerHtml,
+      isKs3: !isGCSE,
+    });
+    window.postRenderHooks.push(() => {
+      initGcseDoNowEngine(
         lesson,
         activeUnit,
-        unitId,
-        db: currentDb,
-        headerHtml,
-        timerHtml,
-      });
-      window.postRenderHooks.push(() => {
-        initGcseDoNowEngine(
-          lesson,
-          activeUnit,
-          typeof window !== 'undefined'
-            ? window.db || (appStore && appStore.state && appStore.state.db)
-            : null,
-        );
-      });
-    } else {
-      try {
-        const taught = JSON.parse(localStorage.getItem('taughtUnits') || '[]');
-        if (taught.length > 0 && window.KNOWLEDGE_BANK) {
-          const rawItems =
-            lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks || [];
-          rawItems.forEach((item) => {
-            if (item && item.question && item.question.includes('PAST TOPIC:')) {
-              const unit = taught[Math.floor(Math.random() * taught.length)];
-              const bank = window.KNOWLEDGE_BANK[unit];
-              if (bank && bank.length > 0) {
-                const randQ = bank[Math.floor(Math.random() * bank.length)];
-                item.question = 'PAST TOPIC: ' + randQ.question;
-                item.answer = randQ.answer;
-              }
-            }
-          });
-        }
-      } catch (e) {
-        console.error(e);
-      }
-
-      htmlDoNowInner += `
-          <div class="donow-panel-content">
-            ${renderDoNowHeaderWithTimerHTML({
-        timerId: 'donow-timer',
-        title: 'Do Now Tasks',
-        badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
-        icon: 'fa-solid fa-list-check',
-        showRevealAll: true,
-      })}
-            <div class="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
-      `;
-      const doNowItems = lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks || [];
-      doNowItems.forEach((item, index) => {
-        let qText = item.question || item.q || item.event || '';
-        let aText = item.answer || item.a || item.year || '';
-        if (typeof qText !== 'string') qText = String(qText);
-        if (typeof aText !== 'string') aText = String(aText);
-        // Strip obsolete retrieval metadata phrases such as (Last Week), (Last Lesson), etc.
-        qText = qText.replace(/\s*\((Last Lesson|Last Week|Prior Topic|Prior Unit|Earlier in Unit|Last Term|Last Year|Synoptic|Immediate Previous Lesson|Prior Learning|Foundational Context)\)\s*$/i, '').trim();
-        if (window.currentUnitId) {
-          qText = qText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
-          aText = aText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
-        }
-        const cardId = `donow-card-${index}`;
-        const isLast = index === doNowItems.length - 1;
-        htmlDoNowInner += `
-            <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" title="Tap anywhere on this row to reveal or hide the answer" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 7px 14px; min-height: 38px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
-              <div style="display: flex; align-items: flex-start; gap: 10px; flex: 1 1 auto; min-width: 0;">
-                <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1; margin-top: 1px;">${index + 1}</span>
-                <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; flex: 1; min-width: 0;">
-                  <span class="donow-q-text" style="font-size: 0.88rem; line-height: 1.38; color: #1e293b; font-weight: 600;">${qText}</span>
-                  <div class="answer donow-inline-answer" id="${cardId}" style="display: none; margin: 0; padding: 0; background: transparent;">
-                    <span class="donow-answer-badge" style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 10px; background: #eff6ff; border: 1.2px solid #93c5fd; border-radius: 12px; font-size: 0.82rem; font-weight: 700; color: #1d4ed8; text-align: left; line-height: 1.3; word-break: break-word; box-shadow: 0 1px 2px rgba(37, 99, 235, 0.08);">
-                      <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem; flex-shrink: 0;"></i>
-                      ${aText}
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="donow-right-status-box" style="display: flex; align-items: center; justify-content: flex-end; flex-shrink: 0; margin-left: 8px;">
-                <span class="donow-reveal-pill" style="font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;">
-                  <i class="fa-solid fa-eye" style="font-size: 0.65rem;"></i> Reveal
-                </span>
-                <span class="donow-revealed-pill" style="display: none; font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #eff6ff; border: 1px solid #93c5fd; padding: 2px 8px; border-radius: 12px; align-items: center; gap: 4px; white-space: nowrap;">
-                  <i class="fa-solid fa-check" style="font-size: 0.7rem;"></i> Answered
-                </span>
-              </div>
-            </div>
-          `;
-      });
-      htmlDoNowInner += `</div></div>`;
-    }
+        typeof window !== 'undefined'
+          ? window.db || (appStore && appStore.state && appStore.state.db)
+          : null,
+        !isGCSE,
+      );
+    });
   }
   htmlDoNow = htmlDoNowInner;
 
@@ -7408,7 +7478,28 @@ export function renderLesson(lesson) {
         window.currentUnitId === 'first_british_empire' ||
         unitId === 'first_british_empire';
 
-      const hasPureVisual = Boolean(block.image && !block.image_context);
+      let effectiveImage = block.image;
+      let effectiveCaption = block.caption || block.image_caption || block.image_alt || '';
+      let effectiveAlt = block.image_alt || 'Archival Plate';
+
+      // Smart Visual Borrowing: If block has no image, borrow from matching visual source
+      if (!effectiveImage && Array.isArray(rawSourcesList) && rawSourcesList.length > 0) {
+        const matchingVisualSource = rawSourcesList.find(
+          (s) => s && (s.type === 'visual' || s.image || s.src) && (s.image || s.src)
+        );
+        if (matchingVisualSource) {
+          effectiveImage = matchingVisualSource.image || matchingVisualSource.src;
+          const rawCap =
+            matchingVisualSource.caption ||
+            matchingVisualSource.title ||
+            matchingVisualSource.description ||
+            '';
+          effectiveCaption = rawCap.replace(/^Source\s+[A-Z]\s*(\([^)]*\))?:?\s*/i, '').trim();
+          effectiveAlt = matchingVisualSource.title || 'Archival Evidence Plate';
+        }
+      }
+
+      const hasPureVisual = Boolean(effectiveImage && !block.image_context);
       const isReversed = hasPureVisual ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
 
       const stageQ = stageObj ? (stageObj.question || '') : '';
@@ -7436,7 +7527,10 @@ export function renderLesson(lesson) {
                 </span>
                 ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
               </div>
-              <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px;">
+              <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
+                <button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
+                  <i class="fa-solid fa-chalkboard-user"></i> <span>Present Stage ${stageNum}</span>
+                </button>
                 ${renderAudioPlaybackBar('Read Aloud Paragraph')}
               </div>
             </div>
@@ -7470,7 +7564,10 @@ export function renderLesson(lesson) {
               </span>
               ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
             </div>
-            <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px;">
+            <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
+              <button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
+                <i class="fa-solid fa-chalkboard-user"></i> <span>Present Stage ${stageNum}</span>
+              </button>
               ${renderAudioPlaybackBar('Read Aloud Paragraph')}
             </div>
           </div>
@@ -7478,9 +7575,9 @@ export function renderLesson(lesson) {
       }
 
       const narrativeChunkHtml = `
-              <div id="para-${index + 1}" class="narrative-chunk ${hasPureVisual ? '' : 'standalone-narrative-chunk'}" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 16px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
+              <div id="para-${index + 1}" class="narrative-chunk ${hasPureVisual ? '' : 'standalone-narrative-chunk'}" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 18px 20px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
                 ${stageQ ? '' : headerBlockHtml}
-                <div class="narrative-text" style="width: 100%; ${hasPureVisual ? '' : 'max-width: 880px;'} line-height: ${hasPureVisual ? '1.65' : '1.7'}; color: #1e293b; font-size: 1.05rem;">${styledContent}</div>
+                <div class="narrative-text" style="width: 100%; ${hasPureVisual ? '' : 'max-width: 880px;'} line-height: ${hasPureVisual ? '1.72' : '1.75'}; color: #0f172a; font-size: 1.15rem;">${styledContent}</div>
               </div>
       `;
 
@@ -7490,7 +7587,7 @@ export function renderLesson(lesson) {
         const rawWordCount = rawContent.split(/\s+/).filter(Boolean).length;
         const hasMultipleParagraphs = /<br\s*\/?>\s*<br\s*\/?>|<\/p>\s*<p>/i.test(block.content || block.text || '');
         const isCompactNarrative = !hasMultipleParagraphs || rawWordCount < 165;
-        const plateMaxImgHeight = isCompactNarrative ? '205px' : '310px';
+        const plateMaxImgHeight = isCompactNarrative ? '195px' : '260px';
         const plateFlexBasis = isCompactNarrative ? '300px' : '360px';
         const plateMaxWidth = isCompactNarrative ? '340px' : '400px';
         const platePadding = isCompactNarrative ? '12px 14px' : '14px 16px';
@@ -7498,13 +7595,13 @@ export function renderLesson(lesson) {
 
         const visualPlateHtml = `
           <div class="${plateClass}" style="flex: 0 0 ${plateFlexBasis}; max-width: ${plateMaxWidth}; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: ${platePadding}; box-shadow: 0 2px 5px rgba(0,0,0,0.04); text-align: center;">
-            <img src="${getAssetUrl(block.image)}" alt="${block.image_alt || 'Archival Plate'}" style="max-width: 100%; max-height: ${plateMaxImgHeight}; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(block.image)}">
-            ${block.caption || block.image_caption || block.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 10px; font-style: italic; line-height: 1.45; user-select: none;">${block.caption || block.image_caption || block.image_alt}</div>` : ''}
+            <img src="${getAssetUrl(effectiveImage)}" alt="${effectiveAlt}" style="max-width: 100%; max-height: ${plateMaxImgHeight}; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(effectiveImage)}">
+            ${effectiveCaption ? `<div class="narrative-plate-caption" style="font-size: 0.80rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.4; user-select: none;">${effectiveCaption}</div>` : ''}
           </div>
         `;
         topNarrativeHtml = `
           ${stageQ ? headerBlockHtml : ''}
-          <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 20px; align-items: stretch; margin-bottom: 16px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
+          <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 16px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
             ${narrativeChunkHtml}
             ${visualPlateHtml}
           </div>
@@ -9204,6 +9301,9 @@ export function renderLesson(lesson) {
                     <span>${qNumPrefix}${taskTitle}</span>
                   </h4>
                   <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
+                    <button type="button" class="btn-open-writing-studio no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToPart){window.openLessonInfographicModalToPart(3, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openWritingStudioFromTask){window.openWritingStudioFromTask();}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: none; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35); transition: transform 0.15s ease;" title="Open Writing Studio and Clue Ladder for right page task">
+                      <i class="fa-solid fa-pen-nib"></i> Open Writing Studio &amp; Clue Ladder
+                    </button>
                     ${isLocalKs3 ? `<span style="background: #e0f2fe; color: #0369a1; font-size: 0.72rem; font-weight: 800; padding: 4px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px;"><i class="fa-solid fa-book-open"></i> In Pupil Workbook &bull; Page ${currentIndex < 3 ? 3 + currentIndex * 2 : 5 + currentIndex * 2}</span>` : ''}
                     <span style="background: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
                       <i class="fa-solid fa-graduation-cap"></i> ${badgeText}
@@ -13000,7 +13100,7 @@ if (typeof window !== 'undefined') {
         <!-- Body -->
         <div style="padding: 24px;">
           ${lessonTitle ? `<div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.18rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; border-bottom: 1px solid #f1f5f9; padding-bottom: 10px; line-height: 1.35;">${lessonTitle}</div>` : ''}
-          
+            const adv = task.adva
           <div style="background: #f8fafc; border-left: 4px solid #2563eb; border-radius: 6px; padding: 16px 20px; margin-bottom: 22px; font-size: 1rem; color: #1e293b; line-height: 1.6; box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);">
             <div style="font-size: 0.75rem; font-weight: 800; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
               <i class="fa-solid fa-scroll" style="color: #3b82f6;"></i> Official Syllabus Focus

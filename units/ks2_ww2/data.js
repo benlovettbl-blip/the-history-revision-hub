@@ -1,4 +1,4 @@
-const ks2_ww2_data = {
+export default {
   "id": "ks2_ww2",
   "title": "KS2: World War II & The Home Front (1939–1945)",
   "shortTitle": "World War II & The Home Front",
@@ -258,18 +258,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Artifact Detective: The Gas Mask Box",
-          "question": "Why did the British government insist that every civilian carry their gas mask in a cardboard box at all times?",
-          "starter": "The British government required all civilians to carry their gas masks because...",
-          "model_answer": "The British government required all civilians to carry their gas masks at all times because they feared enemy bombers would drop deadly poison gas on British cities without warning. Carrying the box on a shoulder strap ensured that children and adults could put on their respirator within seconds of an air raid siren sounding."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look closely at Source A. How do you think it felt for children to do their schoolwork wearing rubber gas masks?",
+          "starter": "Looking closely at Source A, doing schoolwork wearing a rubber gas mask must have felt...",
+          "hints": [
+            "Mention the suffocating rubber facepiece and misting glass eyepieces.",
+            "Explain how difficult it was to hear the teacher or talk to classmates.",
+            "Reflect on the constant reminder of danger during ordinary lessons."
+          ],
+          "model_answer": "Looking closely at Source A, doing schoolwork wearing a rubber gas mask must have felt claustrophobic, hot, and frightening for young pupils. The heavy black rubber smelled strongly of sulfur and chemicals, while the small glass eyepieces frequently misted over with sweat so children could barely read their exercise books. Breathing through the heavy charcoal canister made a strange rasping sound, and teachers had to shout to be heard. Even though no bombs had fallen yet, doing sums in a respirator served as an eerie daily reminder that Britain was on the brink of total war.",
+          "key_terms": [
+            "rubber facepiece",
+            "eyepieces",
+            "gas mask drill"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Home Front Explanation: The Blackout",
-          "question": "Explain how the blackout helped protect British cities from enemy air attacks, and what challenges it created for ordinary people.",
-          "starter": "The blackout helped protect British towns and cities by...",
-          "model_answer": "The blackout helped protect British towns and cities by switching off all streetlamps, dimming vehicle headlights, and forcing families to cover their windows with heavy black curtains. This made it nearly impossible for German bomber pilots flying at night to identify targets like factories, railways, and docks. However, it created serious daily challenges: people regularly walked into lampposts or fell off pavements in the pitch black, road accidents increased, and families had to spend every evening in stuffy rooms under the watchful eyes of ARP wardens."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Why did the British government insist that every civilian carry their gas mask in a cardboard box at all times?",
+          "starter": "The British government required all civilians to carry their gas masks at all times because...",
+          "hints": [
+            "Recall the horrific memories of poison gas attacks from the First World War.",
+            "Explain the fear of surprise aerial bombardments dropping deadly chemical bombs.",
+            "Highlight the shoulder strap design allowing instant donning within seconds."
+          ],
+          "model_answer": "The British government required all civilians to carry their gas masks at all times because ministers feared German bombers would drop lethal poison gas on civilian cities without warning. Remembering the horrific blinded soldiers and choking trenches of the First World War, the government issued 38 million respirators and made carrying them mandatory. Wearing the cardboard box on a shoulder strap meant adults and children could pull on their masks within seconds of an air raid siren wailing. Bus conductors refused entry and headteachers sent pupils home if they forgot their box, ensuring maximum civilian preparedness.",
+          "key_terms": [
+            "poison gas",
+            "38 million",
+            "shoulder strap"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Every window had to be covered with heavy black curtains. Why was the blackout so strictly enforced by Air Raid Wardens?",
+          "starter": "Air Raid Wardens strictly enforced the blackout every evening because...",
+          "hints": [
+            "Explain how bomber navigators relied on city lights, reflections, and streetlamps.",
+            "Describe the volunteer wardens patrolling darkened streets shouting warnings.",
+            "Discuss the daily dangers and inconveniences of living in total darkness."
+          ],
+          "model_answer": "Air Raid Wardens strictly enforced the blackout every evening because even a single beam of light escaping through a careless curtain gap could guide enemy bombers directly to towns, railway hubs, and factories. Over 1.4 million volunteer ARP wardens patrolled the pitch-black streets in tin helmets, shouting \"Put that light out!\" and reporting households that showed illumination. Although stumbling through darkened streets led to fractured limbs and traffic collisions, the strict blackout successfully blinded German pilots and saved thousands of civilian lives.",
+          "key_terms": [
+            "blackout curtains",
+            "ARP warden",
+            "light leak"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: In what ways did the outbreak of war change the daily routine of ordinary British schoolchildren overnight?",
+          "starter": "The outbreak of the Second World War completely transformed the daily routines of British schoolchildren overnight by...",
+          "hints": [
+            "Synthesize evidence across gas masks, air raid practices, and home life.",
+            "Contrast peaceful pre-war days with sudden emergency routines.",
+            "Conclude with the psychological resilience required of children."
+          ],
+          "model_answer": "The outbreak of the Second World War completely transformed the daily routines of British schoolchildren overnight. Almost instantly, children had to carry a bulky cardboard gas mask box wherever they walked, and normal school lessons were interrupted by sudden air raid practices in cold cloakrooms. At home, families had to spend every evening in stuffy rooms behind suffocating black curtains, keeping torches dimmed and listening anxiously to radio updates. Almost overnight, British children had to grow up rapidly, adapting their lives to constant safety drills, sirens, and the ever-present threat of enemy bombardment.",
+          "key_terms": [
+            "gas mask box",
+            "blackout",
+            "air raid drills"
+          ]
         }
       ],
       "quiz": [
@@ -611,6 +677,71 @@ const ks2_ww2_data = {
           },
           "source_context": "During the blackout, vehicle headlamps were covered with metal hoods with narrow horizontal slits pointing down at the road, emitting only a faint beam. Thousands of road accidents occurred in the early months of the war because drivers could not see pedestrians in the dark. **Hinge Question:** Why did the blackout cause more civilian deaths in road traffic accidents in late 1939 than enemy bombing did?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Sunday Morning Wireless Broadcast (3 September 1939)",
+          "focus_clue": "How did ordinary families hear that Britain was officially at war with Germany?",
+          "words": [
+            {
+              "term": "Neville Chamberlain",
+              "clue": "At 11:15 am on Sunday 3 September 1939, Prime Minister Neville Chamberlain spoke to the nation over BBC wireless radio, solemnly announcing that Britain was at war with Germany."
+            },
+            {
+              "term": "wireless radio broadcast",
+              "clue": "Millions of families gathered tensely around wooden wireless radio sets in living rooms across Britain, listening in stunned silence to the Prime Minister's grave voice."
+            },
+            {
+              "term": "air raid siren",
+              "clue": "Just fifteen minutes after Chamberlain finished speaking, the terrifying, rising and falling wail of London's air raid sirens sounded for the very first time."
+            }
+          ],
+          "model_sentence": "When Prime Minister <strong>Neville Chamberlain</strong> announced the outbreak of war during his <strong>wireless radio broadcast</strong>, the sudden wail of the <strong>air raid siren</strong> signaled that civilian life would change forever.",
+          "title": "The Sunday Morning Wireless Broadcast (3 September 1939)"
+        },
+        {
+          "step": 2,
+          "heading": "The Cardboard Box on a Shoulder String",
+          "focus_clue": "Why did every British citizen have to carry a cardboard box everywhere they went?",
+          "words": [
+            {
+              "term": "civilian gas mask",
+              "clue": "Fearing deadly poison gas attacks from German bombers, the British government issued a civilian rubber gas mask with round glass eyepieces to every citizen."
+            },
+            {
+              "term": "cardboard carrying box",
+              "clue": "Children and adults carried their gas mask everywhere in a square cardboard carrying box hung over the shoulder with a piece of string."
+            },
+            {
+              "term": "38 million gas masks",
+              "clue": "By the outbreak of war, over 38 million gas masks had been distributed to protect men, women, and children across Britain."
+            }
+          ],
+          "model_sentence": "Because the government feared deadly poison gas bombs, over <strong>38 million gas masks</strong> were handed out, meaning every child carried a <strong>civilian gas mask</strong> inside a square <strong>cardboard carrying box</strong>.",
+          "title": "The Cardboard Box on a Shoulder String"
+        },
+        {
+          "step": 3,
+          "heading": "Pitch Black Nights & The Vigilant ARP Wardens",
+          "focus_clue": "How did communities hide their entire cities from enemy bombers in the night sky?",
+          "words": [
+            {
+              "term": "Blackout",
+              "clue": "Under strict Blackout laws, every home, shop, and street lamp had to be completely dark so German bomber crews could not spot navigation targets."
+            },
+            {
+              "term": "ARP wardens",
+              "clue": "Air Raid Precautions (ARP) wardens patrolled neighbourhood streets wearing steel helmets, shouting 'Put that light out!' if even a crack of light escaped."
+            },
+            {
+              "term": "heavy blackout curtains",
+              "clue": "Families hung thick black blackout curtains or painted their window panes with black bitumen paint before switching on any indoor light."
+            }
+          ],
+          "model_sentence": "To enforce the strict rules of the <strong>Blackout</strong>, families hung <strong>heavy blackout curtains</strong> while vigilant <strong>ARP wardens</strong> patrolled the unlit streets to keep neighbourhoods safe from bombing.",
+          "title": "Pitch Black Nights & The Vigilant ARP Wardens"
+        }
       ]
     },
     {
@@ -851,18 +982,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Evidence Detective: The Luggage Label",
-          "question": "Why was the cardboard luggage label pinned to an evacuee's coat such an important piece of historical evidence?",
-          "starter": "The cardboard luggage label was vital because...",
-          "model_answer": "The cardboard luggage label was vital because it was the only way teachers and billeting officers could identify children if they became separated from their class during chaotic train journeys. It recorded their full name, home address, school, and destination code, ensuring that families could be traced."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. Why did authorities attach luggage labels to children's coats rather than placing identification inside their bags?",
+          "starter": "Authorities pinned cardboard luggage labels directly onto children's coats because...",
+          "hints": [
+            "Consider the chaos of crowded railway stations with thousands of separated pupils.",
+            "Explain what would happen if bags were lost or separated from children.",
+            "Note how billeting officers needed immediate, visible information at the arrival platform."
+          ],
+          "model_answer": "Authorities pinned cardboard luggage labels directly onto children's coats because crowded railway platforms were chaotic, noisy, and confusing. With over 1.5 million children travelling across the country, bags and suitcases frequently got mixed up or left behind on train wagons. Pinned visibly to the chest, a child's luggage label allowed busy teachers, railway staff, and rural billeting officers to instantly identify each evacuee's name, home school, and destination without having to search through personal luggage.",
+          "key_terms": [
+            "luggage label",
+            "identification",
+            "pinned to coat"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Postcard Home: Dual Perspectives",
-          "question": "Write a short postcard home from the perspective of an evacuee who has just spent their first week on a countryside farm.",
-          "starter": "Dear Mum and Dad, The farm in Devon is so different from our street in London because...",
-          "model_answer": "Dear Mum and Dad, The farm in Devon is so different from our street in London because it is so quiet at night, except for owls hooting in the trees. Yesterday, Farmer Jones let me collect eggs from the hens and I saw a cow being milked for the very first time! My host family is kind and gave me clean warm blankets, but I miss you and our parlour terribly. I keep my gas mask box under my bed just like you told me. Love from your loving son."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "What contrasting feelings might a young evacuee experience upon arriving at a quiet countryside railway station?",
+          "starter": "Upon stepping onto a quiet countryside railway platform, an evacuee would feel a mixture of...",
+          "hints": [
+            "Contrast the fear of leaving parents behind with curiosity about open green fields.",
+            "Mention the shock of rural silence, farm animals, and strange regional accents.",
+            "Explain the overwhelming exhaustion after hours travelling without knowing their destination."
+          ],
+          "model_answer": "Upon stepping onto a quiet countryside railway platform, an evacuee would feel an overwhelming mixture of excitement, homesickness, and bewilderment. For city children from crowded streets like the East End of London, the fresh rural air, rolling green hills, and farm animals felt like a fantastical holiday adventure. However, beneath that curiosity lay profound heartache and dread: they were hundreds of miles from their mothers, holding a damp gas mask box, and nervously wondering what kind of strangers were about to take them into their homes.",
+          "key_terms": [
+            "countryside station",
+            "billeting officer",
+            "homesickness"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine arriving in a village hall where local villagers choose which child to take home. How would you feel standing in line?",
+          "starter": "Standing in line in a draughty village hall waiting to be chosen would feel...",
+          "hints": [
+            "Reflect on the undignified inspection by strangers picking clean or strong-looking children.",
+            "Consider the fear of being separated from brothers and sisters.",
+            "Describe the relief of being chosen versus the sting of being left until last."
+          ],
+          "model_answer": "Standing in line in a draughty village hall waiting to be chosen would feel humiliating, terrifying, and deeply lonely. Local hosts would walk down the rows picking children like items on a market stall, often choosing the best-dressed, healthiest-looking boys and girls first while leaving scruffier children or siblings behind. Clutching my cardboard label, I would be desperate not to be split up from my sister, watching other children walk away with strange adults and silently praying that a warm, kind family would step forward to take us.",
+          "key_terms": [
+            "village hall",
+            "foster family",
+            "standing in line"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why was evacuation both an adventure and a heartbreaking separation for British families?",
+          "starter": "Operation Pied Piper was both an exciting adventure and a heartbreaking separation because...",
+          "hints": [
+            "Contrast rural discoveries with the emotional cost of split families.",
+            "Mention social culture shocks between city poverty and country estates.",
+            "Synthesize why evacuation was deemed essential despite emotional trauma."
+          ],
+          "model_answer": "Operation Pied Piper was both an exciting adventure and a heartbreaking separation because it saved children's lives at the cost of fracturing families. For many inner-city children who had never seen an apple tree or a cow, life in the British countryside opened up a wonder-filled world of open skies, fresh milk, and woodland play. Yet for parents left behind in bomb-threatened cities, waving goodbye to tearful children on train platforms was agony, and thousands of young evacuees suffered profound homesickness, strict hosts, and years of separation from everyone they loved.",
+          "key_terms": [
+            "Operation Pied Piper",
+            "evacuees",
+            "separation"
+          ]
         }
       ],
       "quiz": [
@@ -1205,6 +1402,71 @@ const ks2_ww2_data = {
           },
           "source_context": "Over 3 million people were relocated across Great Britain over the course of the war. Most evacuees from London were sent to Kent, Sussex, Berkshire, Devon, and Cornwall, while children from Liverpool and Manchester were sent to Wales and Lancashire. **Hinge Question:** Why were some coastal towns in Kent and Sussex evacuated for a second time in 1940 after the Battle of Britain began?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Great Exodus: Operation Pied Piper (1 September 1939)",
+          "focus_clue": "Why were over a million city children sent away from their parents on steam trains?",
+          "words": [
+            {
+              "term": "Operation Pied Piper",
+              "clue": "On Friday 1 September 1939, the government launched Operation Pied Piper, the mass evacuation of vulnerable children from crowded industrial cities into rural safety."
+            },
+            {
+              "term": "luggage label tag",
+              "clue": "Every evacuee pinned a brown cardboard luggage label tag to their coat showing their name, school, address, and evacuation identity number."
+            },
+            {
+              "term": "billeting officer",
+              "clue": "Government billeting officers greeted the evacuees upon arrival at countryside stations and arranged their placement with local host families."
+            }
+          ],
+          "model_sentence": "Under <strong>Operation Pied Piper</strong>, thousands of tearful children pinned a brown <strong>luggage label tag</strong> to their lapels before a countryside <strong>billeting officer</strong> placed them into safe rural homes.",
+          "title": "The Great Exodus: Operation Pied Piper (1 September 1939)"
+        },
+        {
+          "step": 2,
+          "heading": "The Billeting Hall: A Painful Lottery",
+          "focus_clue": "What happened when evacuee children arrived at unfamiliar rural village halls?",
+          "words": [
+            {
+              "term": "village hall",
+              "clue": "Exhausted children were led into the village hall or local school, where foster parents lined up to choose which evacuees they would take home."
+            },
+            {
+              "term": "host families",
+              "clue": "Country host families inspected the children, often choosing older or healthier-looking children first, sometimes separating brothers and sisters."
+            },
+            {
+              "term": "evacuee",
+              "clue": "Each young evacuee faced the frightening uncertainty of moving into a stranger's house hundreds of miles away from their own parents."
+            }
+          ],
+          "model_sentence": "Standing in the crowded <strong>village hall</strong>, each nervous <strong>evacuee</strong> waited to see which local <strong>host families</strong> would choose them to take home.",
+          "title": "The Billeting Hall: A Painful Lottery"
+        },
+        {
+          "step": 3,
+          "heading": "Culture Shock: From Cobbled Slums to Farm Fields",
+          "focus_clue": "How did life in the peaceful countryside shock city children who had never seen cows or orchards?",
+          "words": [
+            {
+              "term": "countryside life",
+              "clue": "City children from cobbled London or Liverpool streets encountered country life for the first time, seeing farm animals, fresh mud, and dark starry nights."
+            },
+            {
+              "term": "open green fields",
+              "clue": "Instead of smoggy streets and tenements, children played in open green fields, picking blackberries and helping farmers milk dairy cows."
+            },
+            {
+              "term": "wartime foster care",
+              "clue": "Generous foster parents washed muddy clothes, cooked hearty hot meals, and provided loving wartime foster care to keep their young guests happy and healthy."
+            }
+          ],
+          "model_sentence": "Although adjusting to rural <strong>countryside life</strong> was difficult at first, playing in <strong>open green fields</strong> and receiving loving <strong>wartime foster care</strong> helped many city children thrive in safety.",
+          "title": "Culture Shock: From Cobbled Slums to Farm Fields"
+        }
       ]
     },
     {
@@ -1445,18 +1707,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Artifact Detective: Vera's Keepsakes",
-          "question": "Why did Vera's mother place family photographs and a special doll inside her small suitcase?",
-          "starter": "Vera's mother packed these personal items because...",
-          "model_answer": "Vera's mother packed family photographs and her beloved doll so that Vera would have comforting, familiar items in a foreign country. In a small suitcase where space was precious, these keepsakes preserved her connection to her family, home, and childhood memories."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. Why did each child have to wear a numbered identity card around their neck walking down this gangway?",
+          "starter": "Each refugee child wore a numbered identity tag around their neck because...",
+          "hints": [
+            "Note that these foreign children did not speak English and travelled without parents.",
+            "Explain how numbers matched passenger manifests and sponsor records.",
+            "Reflect on the sheer vulnerability of walking into a foreign country alone."
+          ],
+          "model_answer": "Each refugee child wore a numbered identity tag around their neck because they were travelling completely alone without their parents and most spoke only German or Czech, not English. As they walked down the ship's gangway in Harwich or Southampton, British immigration officers and volunteer welfare workers relied on these large numbered cards to match every child to the official railway manifests, ensure none were lost, and guide them safely to their pre-arranged foster families or transit camps.",
+          "key_terms": [
+            "identity card",
+            "ship gangway",
+            "passenger manifest"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Dual Perspective: The Station Platform",
-          "question": "Compare how Vera felt boarding the train with how her parents felt waving goodbye on the Prague platform.",
-          "starter": "While 9-year-old Vera felt confused and frightened because... her parents felt...",
-          "model_answer": "While 9-year-old Vera felt confused, nervous, and bewildered because she was leaving everything she knew with strangers, her parents felt an agonizing mixture of heartbreak and relief. They hid their tears and smiled so that Vera would not be terrified, knowing that sending their daughter away alone to a foreign land was the only way to save her life."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Each refugee child was allowed only ONE small suitcase. What 3 personal items would you pack to remember your family?",
+          "starter": "If I were allowed only one small suitcase on the Kindertransport, I would choose to pack...",
+          "hints": [
+            "Choose meaningful personal keepsakes over bulky material goods.",
+            "Explain why photographs, a handwritten letter, or a family heirloom mattered most.",
+            "Link your choices to the historical reality that many never saw their parents again."
+          ],
+          "model_answer": "If I were allowed only one small suitcase on the Kindertransport, I would choose to pack a framed family photograph, a handwritten blessing or letter from my mother, and a beloved childhood toy, such as a cloth doll. In a small suitcase with strict 50-mark currency limits, sentimental treasures were infinitely more precious than extra clothes. A mother's handwritten letter would preserve her voice and love across foreign borders, while a photograph would ensure that as the years passed, I would never forget my parents' faces.",
+          "key_terms": [
+            "small suitcase",
+            "family photograph",
+            "keepsakes"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "How did British volunteers and foster families demonstrate extraordinary compassion to welcome children who spoke no English?",
+          "starter": "British volunteers and foster families demonstrated extraordinary compassion by...",
+          "hints": [
+            "Mention language barriers bridged with gestures, smiles, and warm meals.",
+            "Highlight the £50 financial guarantee raised by ordinary citizens.",
+            "Discuss providing a patient, gentle home to deeply traumatised refugee children."
+          ],
+          "model_answer": "British volunteers and foster families demonstrated extraordinary compassion by opening their homes, hearts, and wallets to children fleeing deadly persecution. Ordinary families and religious groups raised the mandatory £50 guarantee (worth over £3,500 today) for children they had never met. When frightened refugees arrived speaking no English, foster parents welcomed them with warm cups of tea, patient smiles, picture dictionaries, and gentle kindness, helping vulnerable young people feel secure in a strange new land.",
+          "key_terms": [
+            "foster family",
+            "£50 guarantee",
+            "compassion"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why is the Kindertransport remembered as one of the greatest humanitarian rescue missions in British history?",
+          "starter": "The Kindertransport is remembered as one of the greatest humanitarian rescue missions in British history because...",
+          "hints": [
+            "Highlight the rescue of nearly 10,000 predominantly Jewish children within 9 months.",
+            "Recognize the teamwork between parliament, rescuers like Nicholas Winton, and volunteers.",
+            "Acknowledge the tragic context: the children were saved, but most of their parents were murdered."
+          ],
+          "model_answer": "The Kindertransport is remembered as one of the greatest humanitarian rescue missions in British history because it saved nearly 10,000 innocent children from horrific Nazi persecution. In the brief nine-month window between the November Pogrom and the outbreak of war, tireless rescuers like Nicholas Winton and Trevor Chadwick cut through red tape, while British families stepped forward to provide shelter. Although the tragedy remains that almost all of these children never saw their murdered parents again, the rescue stands as an enduring monument to moral courage, volunteer dedication, and humanitarian shelter in humanity's darkest hour.",
+          "key_terms": [
+            "Kindertransport",
+            "refugee children",
+            "humanitarian rescue"
+          ]
         }
       ],
       "quiz": [
@@ -1799,6 +2127,71 @@ const ks2_ww2_data = {
           },
           "source_context": "In her suitcase, Vera carried photos of her parents, a handwritten letter from her mother telling her to be good and polite, and a list of English words. These few items were all that remained of her childhood world in Czechoslovakia. **Hinge Question:** How did letters and photographs help refugee children hold on to their heritage while learning a new language and culture in Britain?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Decision to Rescue: November 1938",
+          "focus_clue": "Why did the British Parliament agree to allow thousands of refugee children into Britain without their parents?",
+          "words": [
+            {
+              "term": "Kindertransport",
+              "clue": "Following the violent November Pogrom in 1938, the British government agreed to permit nearly 10,000 predominantly Jewish refugee children into Britain on rescue trains."
+            },
+            {
+              "term": "British sponsor",
+              "clue": "Every child needed a British sponsor who pledged a £50 guarantee (worth thousands today) to ensure the child would not cost the British taxpayer anything."
+            },
+            {
+              "term": "refugee children",
+              "clue": "The British government strictly limited the rescue to refugee children under 17, meaning desperate mothers and fathers could not travel with them."
+            }
+          ],
+          "model_sentence": "In November 1938, Parliament created the <strong>Kindertransport</strong> rescue for unaccompanied <strong>refugee children</strong>, provided each child had a generous <strong>British sponsor</strong> to guarantee their care.",
+          "title": "The Decision to Rescue: November 1938"
+        },
+        {
+          "step": 2,
+          "heading": "Vera's Small Suitcase & Her English Doll",
+          "focus_clue": "What could a nine-year-old child take when forced to leave home forever?",
+          "words": [
+            {
+              "term": "Vera Schaufeld",
+              "clue": "In Prague, nine-year-old Vera Schaufeld packed her belongings into one small suitcase before saying a final goodbye to her beloved parents at the railway platform."
+            },
+            {
+              "term": "numbered identity tag",
+              "clue": "Vera and every other child had to wear a numbered identity tag hanging around their neck so volunteers could keep track of them during the long train journey."
+            },
+            {
+              "term": "one small suitcase",
+              "clue": "German authorities allowed each refugee child only one small suitcase containing clothes and one precious toy, like Vera's cherished doll."
+            }
+          ],
+          "model_sentence": "Young <strong>Vera Schaufeld</strong> wept as she said goodbye at Prague station, carrying only <strong>one small suitcase</strong> and wearing a <strong>numbered identity tag</strong> around her neck.",
+          "title": "Vera's Small Suitcase & Her English Doll"
+        },
+        {
+          "step": 3,
+          "heading": "Arrival at Liverpool Street: A New Life in England",
+          "focus_clue": "What happened when the exhausted refugee children reached London?",
+          "words": [
+            {
+              "term": "Liverpool Street Station",
+              "clue": "After crossing the North Sea by ferry to Harwich, the refugee children boarded the 'Boat Train' arriving at London's cavernous Liverpool Street Station."
+            },
+            {
+              "term": "refugee foster family",
+              "clue": "British volunteer foster families waited on the platforms to greet the bewildered children, offering warm coats, tea, and safe shelter in British homes."
+            },
+            {
+              "term": "new life in Britain",
+              "clue": "Although they could not speak English and deeply missed their parents, the children began building a safe new life in Britain with foster families."
+            }
+          ],
+          "model_sentence": "Stepping onto the platform at <strong>Liverpool Street Station</strong>, bewildered children were welcomed by a kind <strong>refugee foster family</strong> to begin their safe <strong>new life in Britain</strong>.",
+          "title": "Arrival at Liverpool Street: A New Life in England"
+        }
       ]
     },
     {
@@ -2039,18 +2432,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Shelter Comparison",
-          "question": "Explain why an Anderson shelter was built in a garden under soil, whereas a Morrison shelter was placed inside a living room.",
-          "starter": "An Anderson shelter was built in the garden because... whereas a Morrison shelter was designed for indoors because...",
-          "model_answer": "An Anderson shelter was built in a garden pit covered with earth because the soil absorbed the deadly shockwave and stopped shrapnel from high-explosive bombs. In contrast, a Morrison shelter was designed like a sturdy steel dining table for homes without gardens, built to withstand the crushing weight of a collapsing ceiling or falling brick walls."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. Why did families bury their Anderson shelter halfway into the soil and pile earth and turf on top?",
+          "starter": "Families buried their Anderson shelter halfway into the garden soil because...",
+          "hints": [
+            "Explain that corrugated steel resisted flying bomb splinters and falling masonry.",
+            "Describe how thick layers of earth absorbed the deadly shockwaves of high-explosive blasts.",
+            "Note the turf on top provided camouflage from low-flying German aircraft."
+          ],
+          "model_answer": "Families buried their Anderson shelter halfway into the garden soil and mounded thick layers of earth and turf on top to absorb the concussive shockwaves of high-explosive bombs. While the arched corrugated steel sheets could deflect sharp metal shrapnel and falling bricks, the surrounding earth absorbed explosive blast pressure that would otherwise crush an above-ground shed. The turf also blended into garden gardens, reducing visibility from night raiders.",
+          "key_terms": [
+            "Anderson shelter",
+            "corrugated steel",
+            "earth and turf"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Community Resilience",
-          "question": "Describe how neighbours and volunteer services worked together to keep British cities running during the Blitz.",
-          "starter": "During the Blitz, communities showed incredible resilience by...",
-          "model_answer": "During the Blitz, communities showed incredible resilience by supporting each other through terror and destruction. Volunteer ARP wardens sounded sirens and directed people to safe shelters, while the Auxiliary Fire Service risked their lives extinguishing blazing fires caused by incendiary bombs. Neighbours shared thermoses of hot tea in underground tube stations and garden shelters, took in families whose homes were bombed, and cleared broken glass so milkmen and postmen could deliver essentials the very next morning."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "What supplies and comforts would you want to take with you into a dark garden shelter during a nighttime air raid?",
+          "starter": "To endure a long, freezing night inside an Anderson shelter, the most essential supplies to bring were...",
+          "hints": [
+            "Think about warmth, lighting, and dampness (blankets, oil lamps, thermos).",
+            "Mention activities to distract children from thunderous bomb explosions (books, games).",
+            "Include emergency tools like a spade, whistle, or torch if the shelter door became buried."
+          ],
+          "model_answer": "To endure a long, freezing night inside an Anderson shelter, the most essential supplies were warm woollen blankets, a hot thermos of sweet tea, a paraffin heater, and battery torches. Because shelters were damp and cold, heavy coats and dry cushions made wooden bunks bearable. Parents also packed books, card games, and boiled sweets to distract terrified children from the terrifying thud of falling bombs, alongside a whistle and spade in case the entrance became blocked by falling debris.",
+          "key_terms": [
+            "woollen blankets",
+            "paraffin heater",
+            "falling bombs"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Why did over 150,000 Londoners choose to sleep on dusty Underground platforms rather than stay in their own bedrooms?",
+          "starter": "Over 150,000 Londoners chose to sleep on tube station platforms because...",
+          "hints": [
+            "Contrast flimsy brick houses in street terraces with deep underground tunnels.",
+            "Describe the mutual comfort and singing among neighbours during night bombardments.",
+            "Acknowledge the foul air, noise, and draughts endured for guaranteed survival."
+          ],
+          "model_answer": "Over 150,000 Londoners chose to sleep on tube station platforms because they knew that seventy feet of solid London clay above their heads was completely impenetrable to even the heaviest German bombs. In crowded row houses, a single direct hit meant instant death, whereas the Underground guaranteed survival. Despite the stuffy air, screeching train wheels, and mosquito-ridden dust, the underground created an incredible camaraderie: neighbours brewed tea, sang songs together, and slept peacefully knowing they would wake up alive.",
+          "key_terms": [
+            "Underground platform",
+            "sheltering",
+            "camaraderie"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why was British civilian resilience and community spirit described as the secret weapon that defeated the Blitz?",
+          "starter": "British civilian resilience and community spirit was described as the secret weapon that defeated the Blitz because...",
+          "hints": [
+            "Explain Hitler's objective: terrorising civilians into demanding surrender.",
+            "Give examples of ordinary citizens: ARP wardens, auxiliary firefighters, neighbours.",
+            "Conclude on the \"Blitz Spirit\" turning destruction into collective defiance."
+          ],
+          "model_answer": "British civilian resilience and community spirit was described as the secret weapon that defeated the Blitz because Hitler's main aim was to shatter British morale and force the nation to beg for peace. Instead of collapsing in terror across 57 nights of continuous bombing, ordinary Londoners, Scousers, and Mancunians pulled together. Volunteer rescue squads dug neighbours from ruins, mobile canteens served hot tea at bomb sites, and people defiantly opened shopfronts with signs reading \"More Open Than Usual\". This unbreakable solidarity proved that terror bombing could never conquer a united society.",
+          "key_terms": [
+            "The Blitz",
+            "civilian resilience",
+            "Blitz spirit"
+          ]
         }
       ],
       "quiz": [
@@ -2393,6 +2852,71 @@ const ks2_ww2_data = {
           },
           "source_context": "The Women's Voluntary Services (WVS) grew to over one million members. During the Blitz, their mobile tea vans arrived at bomb sites within minutes of the 'All Clear' siren, providing hot stew, tea, blankets, and dry clothes to families who had lost everything. **Hinge Question:** Why was a simple cup of hot tea from a mobile canteen considered vital for sustaining British civilian morale after an air raid?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "Black Saturday & The 57 Nights of Fire (September 1940)",
+          "focus_clue": "How did the German air force attempt to break the British spirit by bombing London?",
+          "words": [
+            {
+              "term": "The Blitz",
+              "clue": "On 'Black Saturday' 7 September 1940, the German Luftwaffe launched The Blitz, an intense eight-month bombing campaign against British cities and docks."
+            },
+            {
+              "term": "incendiary bombs",
+              "clue": "German bombers dropped thousands of small incendiary bombs designed to ignite blazing infernos across warehouses, timber yards, and residential streets."
+            },
+            {
+              "term": "57 consecutive nights",
+              "clue": "London was bombed relentlessly for 57 consecutive nights as sirens wailed and searchlights swept the dark night sky."
+            }
+          ],
+          "model_sentence": "During the opening weeks of <strong>The Blitz</strong>, German aircraft dropped destructive <strong>incendiary bombs</strong> on London for <strong>57 consecutive nights</strong> in an effort to shatter British morale.",
+          "title": "Black Saturday & The 57 Nights of Fire (September 1940)"
+        },
+        {
+          "step": 2,
+          "heading": "Sheltering Under the Earth: Anderson & Morrison Shelters",
+          "focus_clue": "Where did British families shelter when the high-explosive bombs began to fall?",
+          "words": [
+            {
+              "term": "Anderson shelter",
+              "clue": "Over two million families built corrugated iron Anderson shelters buried in their back gardens, covering the curved roofs with earth and growing vegetables on top."
+            },
+            {
+              "term": "Morrison shelter",
+              "clue": "For homes without gardens, the government introduced the indoor steel Morrison shelter, which doubled as a heavy dining table capable of withstanding falling masonry."
+            },
+            {
+              "term": "corrugated iron",
+              "clue": "Curved sheets of corrugated iron bolted firmly into a pit protected families from flying shrapnel and collapsing bricks during heavy raids."
+            }
+          ],
+          "model_sentence": "While families with gardens dug deep holes for an <strong>Anderson shelter</strong> made of <strong>corrugated iron</strong>, city dwellers assembled an indoor steel <strong>Morrison shelter</strong> inside their living rooms.",
+          "title": "Sheltering Under the Earth: Anderson & Morrison Shelters"
+        },
+        {
+          "step": 3,
+          "heading": "Heroism in the Rubble: Firefighters & The Blitz Spirit",
+          "focus_clue": "Who ran toward the flames while everyone else was taking cover?",
+          "words": [
+            {
+              "term": "Auxiliary Fire Service",
+              "clue": "Brave men and women in the Auxiliary Fire Service (AFS) pumped water through ruptured hoses while bombs exploded around them to extinguish devastating infernos."
+            },
+            {
+              "term": "unexploded bomb squads",
+              "clue": "Specialist Royal Engineer bomb disposal squads dug deep into craters with hand spades to defuse ticking, delayed-action high explosive bombs."
+            },
+            {
+              "term": "Blitz spirit",
+              "clue": "Neighbours cleared glass together, swept debris off doorsteps, and made cups of tea in bombed ruins, demonstrating defiant civilian Blitz spirit."
+            }
+          ],
+          "model_sentence": "Courageous volunteers in the <strong>Auxiliary Fire Service</strong> and daring <strong>unexploded bomb squads</strong> risked their lives daily, personifying the resilient <strong>Blitz spirit</strong> of wartime Britain.",
+          "title": "Heroism in the Rubble: Firefighters & The Blitz Spirit"
+        }
       ]
     },
     {
@@ -2633,18 +3157,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Rationing Fairness",
-          "question": "Why did the British government use a coupon points system rather than just letting shopkeepers raise their prices?",
-          "starter": "The government used a coupon system rather than higher prices because...",
-          "model_answer": "The government used a coupon system rather than letting prices rise because if food became expensive, wealthy families would buy everything while poor working-class families would starve. Ration coupons ensured \"fair shares for all\", guaranteeing every citizen the same basic nutrition regardless of their wealth."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. Why did the government use pictures of cheerful children on posters to encourage families to grow food?",
+          "starter": "The government used cheerful, energetic children on Dig for Victory posters because...",
+          "hints": [
+            "Show how children made gardening feel like a proud, heroic family mission.",
+            "Appeal to parental love and the patriotic desire to keep children healthy.",
+            "Convince every household that even the smallest hands could help defeat U-boats."
+          ],
+          "model_answer": "The government used cheerful, energetic children on \"Dig for Victory\" posters to make domestic food production feel like a proud, accessible family adventure rather than exhausting manual labour. Seeing smiling boys and girls clutching spades and oversized vegetables inspired parents to turn their flowerbeds into allotments and showed youngsters that even the smallest hands could play an active part in defeating the German U-boat blockade.",
+          "key_terms": [
+            "Dig for Victory",
+            "allotments",
+            "propaganda poster"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Wartime Meal Planning",
-          "question": "Explain how the Dig for Victory campaign helped ordinary British families survive strict food rationing.",
-          "starter": "The Dig for Victory campaign helped families survive rationing by...",
-          "model_answer": "The Dig for Victory campaign helped British families survive by encouraging them to grow their own fresh vegetables in back gardens, schoolyards, and public parks. Because imported foods like meat, butter, and sugar were severely restricted, families relied on homegrown potatoes, carrots, and cabbages to prepare wholesome meals like Lord Woolton Pie. Growing their own food freed up cargo space on merchant ships for weapons, ensuring Britain survived the German U-boat blockade."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "One egg, 50g of butter, and two rashers of bacon for the entire week! How would your family plan breakfast and dinner?",
+          "starter": "With such tiny weekly food rations, my family would have to plan meals by...",
+          "hints": [
+            "Explain substituting luxury ingredients with bulky homegrown vegetables (potatoes, carrots).",
+            "Describe creative wartime recipes like Woolton Pie, powdered eggs, and carrot jam.",
+            "Highlight how nothing was wasted and leftovers were remade into soups."
+          ],
+          "model_answer": "With such tiny weekly food rations, my family would have to plan every meal around bulky homegrown vegetables and government staples like the National Loaf. The single fresh egg would be saved for weekend baking or given to a sick child, while weekday breakfasts would rely on oat porridge sweetened with grated carrot or scrambled dried powdered egg. Dinners would feature Lord Woolton Pie—a hot pastry filled with potatoes, parsnips, and turnips in vegetable broth—ensuring every scrape of bacon fat was used for cooking grease.",
+          "key_terms": [
+            "ration book",
+            "weekly coupons",
+            "Woolton Pie"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Why was throwing away leftover food made a criminal offence punishable by heavy fines during wartime?",
+          "starter": "Wasting food was treated as a serious criminal offence during the war because...",
+          "hints": [
+            "Mention the brave merchant sailors who risked their lives crossing the U-boat Atlantic.",
+            "Explain that wasted bread was equivalent to wasting British shipping space and fuel.",
+            "Note how scraps were collected for communal pig clubs and fertilizer."
+          ],
+          "model_answer": "Wasting food was treated as a serious criminal offence during the war because every single ounce of imported flour, meat, and sugar was brought across the North Atlantic by brave merchant seamen who risked their lives against Nazi U-boats. Throwing away crusts or potato peelings was seen as an insult to those sailors' sacrifices and a direct sabotage of the national war effort. Instead, food scraps had to be saved for pig swill, fed to backyard chickens, or turned into stockpot broth.",
+          "key_terms": [
+            "wasting food",
+            "merchant ships",
+            "U-boat blockade"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why was the rationing system considered one of the fairest and healthiest government policies in British history?",
+          "starter": "The wartime rationing system is regarded as one of Britain's fairest and healthiest social policies because...",
+          "hints": [
+            "Explain \"fair shares for all\": the rich could not buy extra basic food with money.",
+            "Highlight free cod liver oil, vitamins, and milk provided to children and expectant mothers.",
+            "Conclude with the surprising drop in child mortality and improved nutritional health."
+          ],
+          "model_answer": "The wartime rationing system is regarded as one of Britain's fairest and healthiest social policies because it eliminated social inequality at the dinner table. Regardless of wealth, every individual received the exact same coupon quota, preventing rich families from hoarding basic foodstuffs while the poor starved. Furthermore, with sugar and fats restricted and children given free cod liver oil, orange juice, and fortified school milk, overall public health actually improved: child mortality fell, dental health rose, and malnutrition vanished across poor industrial cities.",
+          "key_terms": [
+            "fair shares for all",
+            "rationing system",
+            "public health"
+          ]
         }
       ],
       "quiz": [
@@ -2987,6 +3577,71 @@ const ks2_ww2_data = {
           },
           "source_context": "The Ministry of Food created cartoon mascots 'Potato Pete' and 'Doctor Carrot' with catchy songs, recipe books, and comic strips to persuade children to eat unrationed vegetables instead of bread and sweets. **Hinge Question:** Why did the government use cheerful cartoon characters to convey serious wartime economic messages to families and children?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Atlantic Lifeline & The Threat of Starvation",
+          "focus_clue": "Why was Britain on the verge of starving in 1940?",
+          "words": [
+            {
+              "term": "ration book",
+              "clue": "To ensure food was shared equally when German attacks threatened imports, the government issued a coloured ration book containing coupons for every citizen."
+            },
+            {
+              "term": "merchant navy convoys",
+              "clue": "Brave merchant navy convoys sailed across stormy waters to bring essential wheat, sugar, and meat across the Atlantic from North America."
+            },
+            {
+              "term": "German U-boats",
+              "clue": "Prowling German U-boats torpedoed hundreds of Allied cargo ships, sinking millions of tons of food supplies in an attempt to starve Britain into surrender."
+            }
+          ],
+          "model_sentence": "Because prowling <strong>German U-boats</strong> threatened to sink <strong>merchant navy convoys</strong>, the government distributed a household <strong>ration book</strong> to guarantee that scarce food was shared fairly.",
+          "title": "The Atlantic Lifeline & The Threat of Starvation"
+        },
+        {
+          "step": 2,
+          "heading": "Queuing with Coupons: The Weekly Allowance",
+          "focus_clue": "How did a British family survive on tiny weekly rations?",
+          "words": [
+            {
+              "term": "weekly food ration",
+              "clue": "An adult's weekly food ration included just one fresh egg, 2 ounces of butter, 2 ounces of tea, and about a shilling's worth of meat."
+            },
+            {
+              "term": "points system",
+              "clue": "The Ministry of Food created a flexible points system so families could spend extra points on tins of beans, dried fruit, or rare treats."
+            },
+            {
+              "term": "black market",
+              "clue": "A shadowy illegal black market emerged where dishonest traders known as 'spivs' sold unrationed petrol, silk stockings, and luxury butter at inflated prices."
+            }
+          ],
+          "model_sentence": "Shoppers carefully balanced their <strong>weekly food ration</strong> and conserved their coupons under the <strong>points system</strong>, while police worked to shut down the illegal <strong>black market</strong>.",
+          "title": "Queuing with Coupons: The Weekly Allowance"
+        },
+        {
+          "step": 3,
+          "heading": "Dig for Victory: From Flower Beds to Allotments",
+          "focus_clue": "How did ordinary citizens turn city lawns into productive vegetable gardens?",
+          "words": [
+            {
+              "term": "Dig for Victory",
+              "clue": "The famous 'Dig for Victory' campaign urged citizens to transform back gardens, golf courses, and park flowerbeds into productive vegetable plots."
+            },
+            {
+              "term": "allotments and parks",
+              "clue": "Families and schoolchildren grew potatoes, cabbages, and carrots on communal allotments and parks to replace food lost to submarine attacks."
+            },
+            {
+              "term": "Lord Woolton Pie",
+              "clue": "The Minister of Food promoted creative recipes like 'Lord Woolton Pie'—a crust filled with turnips, carrots, and potatoes with no meat at all."
+            }
+          ],
+          "model_sentence": "Answering the government call to <strong>Dig for Victory</strong>, communities planted cabbages and potatoes in <strong>allotments and parks</strong> to bake meatless dishes like <strong>Lord Woolton Pie</strong>.",
+          "title": "Dig for Victory: From Flower Beds to Allotments"
+        }
       ]
     },
     {
@@ -3227,18 +3882,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "The Land Army Role",
-          "question": "What physical skills and endurance did a Land Army volunteer need to work on a British farm?",
-          "starter": "A volunteer in the Women's Land Army needed strength and resilience because...",
-          "model_answer": "A volunteer in the Women's Land Army needed immense physical strength and stamina because farm work began before dawn in freezing weather. Land Girls had to drive heavy mechanical tractors, shovel animal manure, milk cows by hand, and dig drainage ditches for ten hours a day, despite having no prior agricultural experience."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. What clues in this painting show what daily life was like for the women working on British farms?",
+          "starter": "Looking at Source A, the visual details reveal that life in the Women's Land Army was...",
+          "hints": [
+            "Point out their practical uniforms: corduroy breeches, heavy boots, and armbands.",
+            "Observe their relaxed postures having a packed lunch outdoors under a tree.",
+            "Note the background fields showing the heavy agricultural labour demanded of them."
+          ],
+          "model_answer": "Looking at Source A, the visual details reveal that life in the Women's Land Army was physically demanding yet full of strong outdoor camaraderie. The women wear practical brown corduroy breeches, green jumpers, and heavy leather workboots suitable for rough fields rather than traditional skirts. Resting under the shade of a tree with simple tin flasks and lunch tins shows that their workdays were long and exhausting, but their relaxed smiles highlight a deep bond of shared pride in keeping the country fed.",
+          "key_terms": [
+            "Land Girls",
+            "practical uniform",
+            "outdoor farmwork"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Social Significance of Women's War Work",
-          "question": "Explain how women's work in factories, farms, and flying aircraft during World War II challenged traditional views about gender roles.",
-          "starter": "Women's work during the Second World War challenged traditional attitudes by...",
-          "model_answer": "Women's work during World War II fundamentally challenged traditional views because before 1939, many people believed women were only suited for domestic housework or low-skilled jobs. By operating heavy farm machinery, manufacturing complex bombs, engineering aircraft, and flying high-speed Spitfire fighter planes, women proved they possessed the exact same technical ability, physical endurance, and bravery as men. Their vital contribution made it impossible for society to return completely to the old idea that women belonged only in the home."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Before 1939, many women were expected to stay at home. How did assembling Spitfire engines change women's place in society?",
+          "starter": "Assembling Spitfire engines and working in munitions factories transformed women's place in society by...",
+          "hints": [
+            "Explain how women mastered complex technical, engineering, and manufacturing skills.",
+            "Highlight earning independent wages and contributing directly to military victories.",
+            "Connect this to breaking Victorian stereotypes about female physical and mental limits."
+          ],
+          "model_answer": "Assembling Spitfire engines and working in munitions factories transformed women's place in society by shattering the old prejudice that women were only suited for domestic housework. In noisy aircraft hangars and engineering sheds, women mastered complex metal lathes, electrical wiring, and heavy machinery, producing thousands of battle-winning aircraft with extraordinary precision. Earning their own independent wages and doing vital engineering work proved once and for all that women possessed equal skill, strength, and capability to men.",
+          "key_terms": [
+            "Spitfire assembly",
+            "munitions factory",
+            "engineering skills"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine leaving a comfortable city home to live in a draughty farm barn rising at 5am each morning. What would you find hardest?",
+          "starter": "Trading a comfortable city bedroom for a draughty barn to work on a farm would be hardest because...",
+          "hints": [
+            "Describe the physical exhaustion of 50-hour weeks milking cows, lifting hay bales, and ditch-digging.",
+            "Mention the freezing winter cold, blistering hands, and lack of running hot water.",
+            "Reflect on overcoming rural loneliness through hard work and Land Girl sisterhood."
+          ],
+          "model_answer": "Trading a comfortable city bedroom for a draughty barn would be hardest because of the brutal physical exhaustion and bone-chilling winter cold. Rising at 5am in freezing pitch-black to muck out dairy stalls, heave sodden sacks of potatoes, and dig drainage ditches with raw, blistered hands would test anyone's stamina. Without indoor bathrooms or heating, the lack of basic comforts would be a colossal shock, made endurable only by the warmth of Land Girl friendships and pride in serving Britain.",
+          "key_terms": [
+            "farm barn",
+            "early morning",
+            "hard physical labour"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why could Britain not have survived or won the Second World War without the mobilization of women?",
+          "starter": "Britain could not have survived or achieved victory in the Second World War without women because...",
+          "hints": [
+            "Cover agriculture (keeping Britain fed), industry (Spitfires and munitions), and defence (radar and ATA pilots).",
+            "Emphasize that over 7 million women were mobilized into essential national service.",
+            "Conclude on the permanent legacy for modern gender equality."
+          ],
+          "model_answer": "Britain could not have survived or achieved victory in the Second World War without women because their labour sustained the nation's entire economic and military infrastructure while men fought abroad. Over 80,000 Land Girls prevented starvation by producing record agricultural harvests, while hundreds of thousands in factories built 80% of Britain's military hardware, from bombs to Spitfires. Serving also as radar plotters, dispatch riders, nurses, and codebreakers, women formed the indispensable backbone of the Home Front, changing British society forever.",
+          "key_terms": [
+            "women's mobilization",
+            "Home Front",
+            "wartime industry"
+          ]
         }
       ],
       "quiz": [
@@ -3581,6 +4302,71 @@ const ks2_ww2_data = {
           },
           "source_context": "In early 1945, eighteen-year-old Princess Elizabeth insisted on joining the Auxiliary Territorial Service (ATS) as Subaltern Windsor. She trained as a military mechanic and heavy ambulance truck driver, learning to take engines apart and change heavy tyres. **Hinge Question:** Why was it vital for royal morale that the future Queen of England undergo identical military mechanical training alongside ordinary working girls?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "Conscription & The Factory Floor",
+          "focus_clue": "How were British women mobilised to power the war machine?",
+          "words": [
+            {
+              "term": "conscription of women",
+              "clue": "In December 1941, Britain became the first nation to introduce the conscription of women, requiring unmarried women aged 20 to 30 to join the auxiliary services or industry."
+            },
+            {
+              "term": "munitions factories",
+              "clue": "Over two million women worked long, dangerous shifts in noisy munitions factories manufacturing aircraft components, shells, and bullets."
+            },
+            {
+              "term": "Canary Girls",
+              "clue": "Female munitions workers who filled explosive shells were nicknamed 'Canary Girls' because handling toxic TNT cordite turned their skin and hair bright yellow."
+            }
+          ],
+          "model_sentence": "Following the historic <strong>conscription of women</strong>, thousands worked dangerous 12-hour shifts inside <strong>munitions factories</strong>, with many known affectionately as <strong>Canary Girls</strong> due to yellow cordite dust.",
+          "title": "Conscription & The Factory Floor"
+        },
+        {
+          "step": 2,
+          "heading": "The Land Girls: Breeches, Boots & Tractors",
+          "focus_clue": "Who took over Britain's farms to keep the nation fed while men fought abroad?",
+          "words": [
+            {
+              "term": "Women's Land Army",
+              "clue": "Over 80,000 women joined the Women's Land Army (WLA), leaving city homes to work as agricultural labourers on farms across England, Scotland, and Wales."
+            },
+            {
+              "term": "Land Girls",
+              "clue": "Dressed in sturdy breeches and green sweaters, 'Land Girls' ploughed fields, drove heavy tractors, milked dairy cows, and harvested cereal crops."
+            },
+            {
+              "term": "timber and farming",
+              "clue": "Specialist units like the 'Lumber Jills' felled pine forests for timber while agricultural brigades doubled Britain's domestic food production."
+            }
+          ],
+          "model_sentence": "Serving loyally in the <strong>Women's Land Army</strong>, cheerful <strong>Land Girls</strong> transformed national food supplies by carrying out heavy work across <strong>timber and farming</strong>.",
+          "title": "The Land Girls: Breeches, Boots & Tractors"
+        },
+        {
+          "step": 3,
+          "heading": "Air Transport Auxiliary & Breaking Barriers",
+          "focus_clue": "How did women take to the skies and change society forever?",
+          "words": [
+            {
+              "term": "Air Transport Auxiliary (ATA)",
+              "clue": "The female section of the Air Transport Auxiliary (ATA) delivered new military aircraft directly from aircraft factories to frontline RAF squadrons."
+            },
+            {
+              "term": "Spitfire ferry pilots",
+              "clue": "Courageous female Spitfire ferry pilots like Pauline Gower flew fighter planes and heavy four-engine bombers without radios or mounted guns."
+            },
+            {
+              "term": "wartime independence",
+              "clue": "Earning their own wages and mastering technical trades gave British women a new sense of wartime independence that permanently reshaped society."
+            }
+          ],
+          "model_sentence": "By taking to the skies as daring <strong>Spitfire ferry pilots</strong> in the <strong>Air Transport Auxiliary (ATA)</strong>, skilled women proved their capability and earned lasting <strong>wartime independence</strong>.",
+          "title": "Air Transport Auxiliary & Breaking Barriers"
+        }
       ]
     },
     {
@@ -3822,18 +4608,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Chronology Ladder: Rights Lost",
-          "question": "Why was taking away everyday items like bicycles, pets, and park access so damaging to children?",
-          "starter": "Taking away everyday items like pets and park access was so damaging because...",
-          "model_answer": "Taking away pets, bicycles, and park access was deeply damaging because it targeted children's personal happiness and emotional security. It made children feel isolated, unwanted, and excluded from normal life, even before they were banned from going to school."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look closely at Source A. What can we learn about these boys from looking at their photograph? Can you tell their religion or nationality?",
+          "starter": "Looking closely at Source A, the photograph reveals that these boys were...",
+          "hints": [
+            "Notice their matching jerseys, relaxed smiles, and proud team spirit.",
+            "Observe that their clothes, haircuts, and expressions are completely ordinary.",
+            "Conclude that you cannot tell their religion or nationality by looking at them."
+          ],
+          "model_answer": "Looking closely at Source A, the photograph reveals that these young boys were completely ordinary children who loved sport, friendship, and school just like boys anywhere in Europe. Dressed in matching striped football shirts with their goalkeeper seated proudly in front, their happy faces show comradeship and innocence. You cannot tell their religion, heritage, or nationality by looking at them, which powerfully proves that before Nazi persecution, Jewish children were woven naturally into the vibrant fabric of everyday European life.",
+          "key_terms": [
+            "football team",
+            "ordinary childhood",
+            "friendship"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Empathy & Civil Rights Reflection",
-          "question": "How would you feel if a law suddenly declared that you were forbidden from attending school with your friends? What does this teach us about the importance of protecting civil rights?",
-          "starter": "If a law suddenly banned me from my school, I would feel... This teaches us that civil rights are important because...",
-          "model_answer": "If a law suddenly banned me from school, I would feel confused, hurt, and terribly lonely, wondering why my friends and teachers were no longer allowed to speak to me. This historical injustice teaches us that civil rights and fair laws are vital in any society: we must never allow any group of people to be treated unequally or excluded because of their religion, race, or identity."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Why is it so vital to learn how children lived, laughed, and played football before studying the laws that took their rights away?",
+          "starter": "It is essential to learn about children's everyday pre-war lives before studying discrimination because...",
+          "hints": [
+            "Emphasize seeing people as complete, human individuals rather than just \"victims\".",
+            "Show what was cruelly lost: real childhoods, hobbies, friendships, and dreams.",
+            "Connect pre-war normality to understanding the tragedy of subsequent persecution."
+          ],
+          "model_answer": "It is essential to learn about children's everyday pre-war lives before studying discrimination because we must remember victims of persecution as real, living human beings rather than faceless statistics. Learning about their favorite school subjects, family holidays, pet dogs, and football matches restores their personal dignity and identity. This helps pupils understand that the Holocaust did not just destroy lives; it destroyed vibrant communities, cherished childhoods, and brilliant futures.",
+          "key_terms": [
+            "pre-war life",
+            "human dignity",
+            "restoring identity"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "How would you feel if a new rule suddenly told you that you could no longer go to school or play football with your friends?",
+          "starter": "If an unjust decree suddenly banned me from attending school or playing with my friends, I would feel...",
+          "hints": [
+            "Describe the bewildering confusion of being punished when you have done nothing wrong.",
+            "Reflect on the betrayal of having friends or teachers look away or cross the street.",
+            "Express the growing dread and isolation of having your world shrunk step-by-step."
+          ],
+          "model_answer": "If an unjust decree suddenly banned me from attending school or playing football with my friends, I would feel deeply confused, heartbroken, and angry. It would be bewildering to be told that you are forbidden from entering your own classroom or swimming pool simply because of who you are, especially when you have done nothing wrong. The hardest part would be seeing former teammates and neighbours ignore you in the street, creating a painful sense of loneliness and fear as your world was stripped away.",
+          "key_terms": [
+            "anti-Jewish laws",
+            "school ban",
+            "isolation"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why did the gradual stripping of rights step-by-step make it so difficult for families to foresee what lay ahead?",
+          "starter": "The gradual, step-by-step stripping of civil rights made it extraordinarily difficult for families to foresee catastrophe because...",
+          "hints": [
+            "Explain that each law seemed small or temporary at first (parks, radios, schools).",
+            "Highlight how families adapted and hoped that each decree would be the last.",
+            "Conclude on the dangerous trap of creeping intolerance and the need to protect rights early."
+          ],
+          "model_answer": "The gradual, step-by-step stripping of civil rights made it extraordinarily difficult for families to foresee catastrophe because the persecution was rolled out slowly over six years. Because laws were introduced incrementally—first banning sports clubs, then bicycles, then park benches, and finally schools—many families hoped each indignity was the worst that would happen and tried to adapt. Having lived in Germany and Austria as patriotic citizens for generations, they could never have imagined that school bans would eventually escalate into mass deportation and genocide.",
+          "key_terms": [
+            "step-by-step discrimination",
+            "civil rights",
+            "escalation"
+          ]
         }
       ],
       "quiz": [
@@ -4175,6 +5027,71 @@ const ks2_ww2_data = {
           },
           "source_context": "Nazi laws systematically targeted everyday joys: Jewish families were forbidden from owning radios, keeping pet cats or dogs, riding bicycles, or walking in public parks marked with yellow 'Jews Forbidden' benches. **Hinge Question:** Why did the Nazi regime specifically target children's pets and bicycles in their anti-Jewish legislation?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "Vibrant Childhoods Across Europe Before 1939",
+          "focus_clue": "What was normal daily life like for Jewish children in Europe before Nazi persecution began?",
+          "words": [
+            {
+              "term": "Schultüte (school cone)",
+              "clue": "On their very first day of primary school, German children proudly carried a colourful cardboard cone called a Schultüte packed with sweets, nuts, and stationery."
+            },
+            {
+              "term": "European Jewish life",
+              "clue": "Before 1933, Jewish families in Berlin, Vienna, and Prague were deeply integrated into European Jewish life as doctors, teachers, musicians, and shopkeepers."
+            },
+            {
+              "term": "pre-war childhood",
+              "clue": "Boys and girls enjoyed a happy pre-war childhood playing football in city parks, going on family holidays, and celebrating birthdays with friends."
+            }
+          ],
+          "model_sentence": "Holding a colourful <strong>Schultüte (school cone)</strong> on their first day of classes, children in <strong>European Jewish life</strong> enjoyed a peaceful, typical <strong>pre-war childhood</strong>.",
+          "title": "Vibrant Childhoods Across Europe Before 1939"
+        },
+        {
+          "step": 2,
+          "heading": "The Gradual Loss of Rights: Step by Step",
+          "focus_clue": "How did the Nazi regime systematically strip Jewish citizens of their ordinary legal rights?",
+          "words": [
+            {
+              "term": "Nuremberg Laws",
+              "clue": "In 1935, the Nazi government enacted the discriminatory Nuremberg Laws, stripping Jewish people of German citizenship and civil freedoms."
+            },
+            {
+              "term": "anti-Jewish boycotts",
+              "clue": "Stormtroopers stood outside Jewish-owned shops holding signs urging boycotts, while parks put up yellow benches painted 'For Aryans Only'."
+            },
+            {
+              "term": "loss of citizenship",
+              "clue": "With the abrupt loss of citizenship, Jewish doctors and lawyers were forbidden from practicing and families lost their legal protection."
+            }
+          ],
+          "model_sentence": "Through the cruel provisions of the <strong>Nuremberg Laws</strong> and state-sponsored <strong>anti-Jewish boycotts</strong>, families faced the sudden <strong>loss of citizenship</strong> and basic human rights.",
+          "title": "The Gradual Loss of Rights: Step by Step"
+        },
+        {
+          "step": 3,
+          "heading": "Banned from the Classroom: November 1938",
+          "focus_clue": "How were young pupils suddenly expelled from their schools and isolated from their friends?",
+          "words": [
+            {
+              "term": "Kristallnacht pogrom",
+              "clue": "On 9-10 November 1938, the violent Kristallnacht pogrom destroyed hundreds of synagogues, smashed Jewish shops, and terrorised innocent families."
+            },
+            {
+              "term": "banned from state schools",
+              "clue": "Days after the pogrom, the Nazi Education Ministry announced that all Jewish children were permanently banned from state schools."
+            },
+            {
+              "term": "childhood uprooted",
+              "clue": "Young boys and girls were suddenly shut out from their classrooms and friends overnight, leaving their peaceful childhood uprooted."
+            }
+          ],
+          "model_sentence": "Following the destruction of the <strong>Kristallnacht pogrom</strong>, pupils were heartlessly <strong>banned from state schools</strong>, leaving their happy <strong>childhood uprooted</strong>.",
+          "title": "Banned from the Classroom: November 1938"
+        }
       ]
     },
     {
@@ -4415,18 +5332,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "The Machine Breakthrough",
-          "question": "Why did Alan Turing say that \"only a machine can defeat a machine\"?",
-          "starter": "Alan Turing realized only a machine could defeat Enigma because...",
-          "model_answer": "Alan Turing realized that because the German Enigma machine had over 158 million million million possible settings that were reset every single night at midnight, human codebreakers using pencil and paper could never test the combinations in time. Only an automated electrical machine like the Bombe could calculate thousands of possibilities in minutes."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. Why did the German military believe that no human codebreaker could ever crack the Enigma machine?",
+          "starter": "The German military believed the Enigma machine was completely uncrackable because...",
+          "hints": [
+            "Examine the mechanical rotors that changed electrical circuits with every single keypress.",
+            "Highlight the plugboard cables multiplying combinations into 158 million million million.",
+            "Explain how the machine reset its cipher keys daily at midnight."
+          ],
+          "model_answer": "The German military believed the Enigma machine was completely uncrackable because of its staggering mechanical complexity. Every time an operator pressed a key, internal rotor wheels clicked forward, changing the internal electrical pathway and substituting a different letter every single time. Combined with front plugboard cables that swapped pairs of letters, Enigma generated over 158 quintillion possible cipher combinations that were reset every midnight, making pencil-and-paper human decoding mathematically impossible.",
+          "key_terms": [
+            "Enigma machine",
+            "rotor wheels",
+            "cipher combinations"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "The Duty of Secrecy",
-          "question": "Explain why the staff at Bletchley Park were forbidden from speaking about their work, and why their secrecy was vital to winning the war.",
-          "starter": "The staff at Bletchley Park had to keep their work completely secret because...",
-          "model_answer": "The staff at Bletchley Park were legally bound by the Official Secrets Act because if the German military discovered that their \"unbreakable\" Enigma codes were being read by the British, they would have immediately redesigned their machines and changed their communication systems. By keeping their work secret even from their own families for over thirty years, the codebreakers ensured that British commanders could continue intercepting vital enemy battle plans, which shortened the war by up to two years."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Why did the codebreakers at Bletchley Park have to build a machine (the Bombe) to defeat another machine?",
+          "starter": "Alan Turing and the Bletchley Park codebreakers had to invent the Bombe machine because...",
+          "hints": [
+            "Recall Turing's quote: \"Only a machine can defeat a machine\".",
+            "Explain that mathematical trial-and-error by hand took months, but orders were decoded daily.",
+            "Describe the spinning drum cylinders checking thousands of wheel settings in minutes."
+          ],
+          "model_answer": "Alan Turing and the Bletchley Park codebreakers had to invent the Bombe machine because human brains could never calculate combinations fast enough to be useful. As Turing famously realized, \"only a machine can defeat a machine\". By building electrical computing machines with rows of rapidly spinning drums that simulated multiple Enigma rotors at once, the Bombe could test and eliminate thousands of rotor combinations in minutes, finding the correct daily cipher settings before German armies launched their attacks.",
+          "key_terms": [
+            "Alan Turing",
+            "Bombe machine",
+            "rapid computing"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Over 10,000 staff worked at Bletchley, mostly young women. Why did they never speak about their work to their own families for 30 years?",
+          "starter": "The staff at Bletchley Park maintained absolute silence about their wartime achievements because...",
+          "hints": [
+            "Mention swearing the strict Official Secrets Act under penalty of treason.",
+            "Explain the real danger that foreign enemies might realize their codes were broken.",
+            "Reflect on enduring decades being thought of as having \"ordinary clerical jobs\"."
+          ],
+          "model_answer": "The staff at Bletchley Park maintained absolute silence about their wartime achievements because they took the Official Secrets Act with sacred seriousness. Over 7,000 young women worked tirelessly in freezing wooden huts deciphering intercepted signals, but revealing their work risked alerting foreign adversaries that British intelligence could read their ciphers. For over thirty years, these modest heroes never spoke to their spouses or children, willingly enduring being viewed as ordinary clerks while knowing in their hearts they had saved the free world.",
+          "key_terms": [
+            "Official Secrets Act",
+            "wooden huts",
+            "decades of silence"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Historians estimate Bletchley Park shortened the war by up to two years. How did codebreaking save millions of lives?",
+          "starter": "Intelligence decrypted at Bletchley Park shortened the war by up to two years and saved millions of lives by...",
+          "hints": [
+            "Describe Ultra intelligence locating Atlantic U-boat wolfpacks to protect merchant food ships.",
+            "Mention forewarning Allied commanders of German troop movements before D-Day.",
+            "Conclude on Alan Turing's computing legacy pioneering modern computers."
+          ],
+          "model_answer": "Intelligence decrypted at Bletchley Park shortened the war by up to two years and saved millions of lives by giving Allied commanders total foresight into enemy strategy. Codenamed \"Ultra\", decrypted naval ciphers directed Allied supply convoys safely around German U-boat wolfpacks in the Battle of the Atlantic, preventing British starvation. In 1944, codebreakers confirmed that Hitler believed the D-Day deception, allowing Allied armies to break into Europe with far fewer casualties and hastening Nazi Germany's total collapse.",
+          "key_terms": [
+            "Ultra intelligence",
+            "Battle of the Atlantic",
+            "shortened the war"
+          ]
         }
       ],
       "quiz": [
@@ -4769,6 +5752,71 @@ const ks2_ww2_data = {
           },
           "source_context": "Each brass rotor inside the Enigma had 26 input pins and 26 spring-loaded output contacts connected by scrambled internal wiring. Every time a letter was typed, the right-hand rotor stepped forward one notch like an odometer, ensuring that the letter 'A' would never scramble to the same letter twice in a row. **Hinge Question:** Why did the rule that 'no letter could ever scramble to itself' provide Alan Turing with the vital clue needed to crack the code?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Unbreakable Enigma & The Nazi Ciphers",
+          "focus_clue": "Why did the German military believe their secret codes were impossible to crack?",
+          "words": [
+            {
+              "term": "Enigma machine",
+              "clue": "The German armed forces encoded their top secret military orders using an electromechanical typewriter called the Enigma machine."
+            },
+            {
+              "term": "cipher rotors",
+              "clue": "Inside the Enigma, three or more movable cipher rotors scrambled letters through billions of combinations each time a key was pressed."
+            },
+            {
+              "term": "military secret codes",
+              "clue": "German commanders believed their military secret codes were mathematically unbreakable, allowing them to send U-boat orders by radio."
+            }
+          ],
+          "model_sentence": "By scrambling messages through spinning <strong>cipher rotors</strong>, the portable <strong>Enigma machine</strong> allowed commanders to transmit confidential <strong>military secret codes</strong> that seemed impossible to decipher.",
+          "title": "The Unbreakable Enigma & The Nazi Ciphers"
+        },
+        {
+          "step": 2,
+          "heading": "Alan Turing & The Bombe Machine",
+          "focus_clue": "How did brilliant British thinkers build early computers to outsmart the Enigma?",
+          "words": [
+            {
+              "term": "Bletchley Park",
+              "clue": "At Bletchley Park, a Victorian mansion in Buckinghamshire, Britain assembled an eccentric team of mathematicians, chess champions, and linguists."
+            },
+            {
+              "term": "Alan Turing",
+              "clue": "Genius Cambridge mathematician Alan Turing designed pioneering electromechanical machines that revolutionized modern codebreaking."
+            },
+            {
+              "term": "The Bombe machine",
+              "clue": "Turing's invention, The Bombe machine, used spinning metal drums to test thousands of Enigma rotor combinations in just minutes."
+            }
+          ],
+          "model_sentence": "Working in wooden huts at <strong>Bletchley Park</strong>, brilliant mathematician <strong>Alan Turing</strong> invented <strong>The Bombe machine</strong> to crack German ciphers at astonishing speed.",
+          "title": "Alan Turing & The Bombe Machine"
+        },
+        {
+          "step": 3,
+          "heading": "The Silent Army of Women & The Secret That Shortened the War",
+          "focus_clue": "Who operated the codebreaking machines and kept the great secret for thirty years?",
+          "words": [
+            {
+              "term": "Wrens (WRNS)",
+              "clue": "Nearly 75% of the staff at Bletchley were women, including thousands of young Wrens (Women's Royal Naval Service) who operated the heavy Bombe machines."
+            },
+            {
+              "term": "Ultra intelligence",
+              "clue": "Decrypted German messages, codenamed 'Ultra intelligence', gave Allied commanders advance warning of enemy troop movements and submarine ambushes."
+            },
+            {
+              "term": "codebreaker secrecy",
+              "clue": "Staff signed the Official Secrets Act, maintaining total codebreaker secrecy even after the war and never telling their families what they had achieved."
+            }
+          ],
+          "model_sentence": "Dedicated young <strong>Wrens (WRNS)</strong> tirelessly operated the decoding machines, generating crucial <strong>Ultra intelligence</strong> while upholding strict <strong>codebreaker secrecy</strong> that helped win the war.",
+          "title": "The Silent Army of Women & The Secret That Shortened the War"
+        }
       ]
     },
     {
@@ -5009,18 +6057,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "The Rescue Chain",
-          "question": "Why was rescuing 669 children a collaborative team effort that required people like Trevor Chadwick in Prague and foster families in Britain?",
-          "starter": "The rescue operation was a team effort because...",
-          "model_answer": "The rescue was a collaborative team effort because Nicholas Winton could not do everything alone. While Winton worked in London securing government visas and finding foster homes, Trevor Chadwick risked his life in Prague facing Gestapo officers and putting children onto trains, and generous British families provided the homes, love, and money needed to care for the refugees."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. What qualities make someone like Nicholas Winton step forward as a rescuer when others choose to look away?",
+          "starter": "Examining Source A, the qualities that led Nicholas Winton to step forward as a rescuer include...",
+          "hints": [
+            "Look at the tenderness with which he holds the vulnerable refugee child in Prague.",
+            "Note his decisive initiative to cancel a skiing holiday and confront bureaucracy.",
+            "Reflect on his deep moral conviction that human lives matter more than personal convenience."
+          ],
+          "model_answer": "Examining Source A, the qualities that led Nicholas Winton to step forward as a rescuer were moral courage, decisive initiative, and profound practical empathy. Instead of taking a leisurely skiing holiday in Switzerland, 29-year-old Winton cancelled his plans to visit freezing refugee camps in Prague. Seeing terrified children facing imminent danger, he refused to say \"it is someone else's problem\" and took personal responsibility, spending weeks cutting through government red tape to save human lives.",
+          "key_terms": [
+            "Nicholas Winton",
+            "moral courage",
+            "rescue initiative"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Upstander vs Bystander",
-          "question": "Explain the difference between an \"upstander\" and a \"bystander\" using the example of Nicholas Winton and Trevor Chadwick.",
-          "starter": "An upstander is someone who... whereas a bystander is someone who... Nicholas Winton and Trevor Chadwick were upstanders because...",
-          "model_answer": "An upstander is someone who sees injustice, cruelty, or danger and chooses to take action to protect others, whereas a bystander is someone who sees something wrong happening but chooses to look away and do nothing. Nicholas Winton and Trevor Chadwick were true upstanders because they were under no obligation to help: Winton could have gone on his skiing holiday in Switzerland, and Chadwick could have remained safely in his school in Dorset. Instead, they gave up their comfort, took enormous personal risks, and worked tirelessly to rescue 669 children who would otherwise have perished."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Winton recorded every child's name, transport number, and foster family in a leather scrapbook. Why were these records so important?",
+          "starter": "The detailed records and photographs kept in Nicholas Winton's leather scrapbook were vital because...",
+          "hints": [
+            "Explain legal requirements: convincing the Home Office that each child had a £50 guarantee.",
+            "Highlight reunion and identity: ensuring children could trace their roots decades later.",
+            "Describe the dramatic discovery 50 years later by his wife Grete in their attic."
+          ],
+          "model_answer": "The detailed records and photographs kept in Nicholas Winton's leather scrapbook were vital because they legally proved to British immigration authorities that every single refugee had a verified foster home and a £50 deposit. More profoundly, these ledger pages preserved the identities, original names, and origins of 669 children whose parents were later murdered. Kept quietly in an attic for fifty years until found by his wife Grete, the scrapbook eventually allowed generations of descendants to discover the identity of the man who saved their lives.",
+          "key_terms": [
+            "leather scrapbook",
+            "foster records",
+            "saving 669 children"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "What is the vital difference between a \"bystander\" who watches injustice happen and an \"upstander\" who takes action?",
+          "starter": "The vital distinction between a bystander and an upstander is that...",
+          "hints": [
+            "Define a bystander as someone who ignores wrongdoing because of fear, apathy, or convenience.",
+            "Define an upstander like Winton or Chadwick as someone who speaks up and takes moral action.",
+            "Apply the lesson to modern playground, school, and community life today."
+          ],
+          "model_answer": "The vital distinction between a bystander and an upstander is that a bystander watches injustice happen and does nothing, whereas an upstander chooses to intervene and protect those in danger. Bystanders often tell themselves that the problem is not their fault or that someone else will act. In contrast, upstanders like Nicholas Winton and Trevor Chadwick demonstrate that when we witness discrimination or suffering, doing nothing is a choice, and that one determined person taking action can alter the course of history.",
+          "key_terms": [
+            "upstander",
+            "bystander",
+            "taking action"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: What can young people today learn from the moral courage of Nicholas Winton and Trevor Chadwick?",
+          "starter": "Young people today can draw vital life lessons from the moral courage of Winton and Chadwick, including...",
+          "hints": [
+            "Highlight that ordinary individuals—a stockbroker and a teacher—saved 669 lives without superpowers.",
+            "Emphasize moral humility: Winton never bragged or sought fame for his rescue.",
+            "Encourage pupils to stand up against bullying and prejudice in their own everyday lives."
+          ],
+          "model_answer": "Young people today can draw vital life lessons from Nicholas Winton and Trevor Chadwick: you do not need wealth, authority, or superpowers to defeat injustice; you simply need the courage to care. Winton was an ordinary London clerk and Chadwick was a schoolteacher, yet together they organized rescue trains against impossible odds. Furthermore, Winton's fifty years of modest silence teaches that genuine goodness seeks no applause. Their legacy challenges every young person to stand up against prejudice, protect the vulnerable, and choose compassion over apathy.",
+          "key_terms": [
+            "ordinary heroes",
+            "Trevor Chadwick",
+            "standing up to injustice"
+          ]
         }
       ],
       "quiz": [
@@ -5363,6 +6477,71 @@ const ks2_ww2_data = {
           },
           "source_context": "Winton organized eight successful train transports carrying 669 children to safety. Tragically, the ninth and largest train with 250 children was scheduled to leave on 1 September 1939—the day Hitler invaded Poland. German authorities closed the border, and most of those 250 children perished in the Holocaust. **Hinge Question:** Why did the tragedy of the ninth cancelled train haunt Nicholas Winton for the rest of his long life?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Cancelled Skiing Holiday (December 1938)",
+          "focus_clue": "How did an ordinary 29-year-old London stockbroker end up organising a mass rescue of children?",
+          "words": [
+            {
+              "term": "Nicholas Winton",
+              "clue": "In December 1938, 29-year-old London stockbroker Nicholas Winton cancelled his Swiss skiing holiday to travel to Prague to help desperate refugee families."
+            },
+            {
+              "term": "Prague refugee crisis",
+              "clue": "Arriving in snowy Czechoslovakia, Winton saw freezing refugee camps filled with families who had fled the Nazi annexation of the Sudetenland."
+            },
+            {
+              "term": "cancelled skiing holiday",
+              "clue": "Winton's spontaneous decision on his cancelled skiing holiday led him to set up a makeshift rescue office in his hotel bedroom."
+            }
+          ],
+          "model_sentence": "Instead of going on his <strong>cancelled skiing holiday</strong>, young <strong>Nicholas Winton</strong> travelled to witness the harrowing <strong>Prague refugee crisis</strong> firsthand.",
+          "title": "The Cancelled Skiing Holiday (December 1938)"
+        },
+        {
+          "step": 2,
+          "heading": "The Team in Prague & London: The Rescue Chain",
+          "focus_clue": "Who were the brave men and women who risked arrest to secure travel visas and trains?",
+          "words": [
+            {
+              "term": "Trevor Chadwick",
+              "clue": "British schoolteacher Trevor Chadwick stayed behind in dangerous Nazi-occupied Prague, facing down the Gestapo to arrange passports and trains for children."
+            },
+            {
+              "term": "Doreen Warriner",
+              "clue": "University economist Doreen Warriner led the humanitarian committee in Prague, finding safe houses and securing travel permits for endangered families."
+            },
+            {
+              "term": "rescue train transports",
+              "clue": "Together with volunteers in London finding sponsors, this brave team organised eight rescue train transports that carried children safely across Europe."
+            }
+          ],
+          "model_sentence": "While <strong>Doreen Warriner</strong> and schoolteacher <strong>Trevor Chadwick</strong> risked arrest in Prague, volunteers in Britain coordinated eight lifesaving <strong>rescue train transports</strong>.",
+          "title": "The Team in Prague & London: The Rescue Chain"
+        },
+        {
+          "step": 3,
+          "heading": "669 Children & The Secret Scrapbook",
+          "focus_clue": "How was Nicholas Winton's remarkable wartime secret discovered fifty years later?",
+          "words": [
+            {
+              "term": "669 children saved",
+              "clue": "Between March and August 1939, Winton's team successfully saved 669 predominantly Jewish children from the horrors of the Holocaust."
+            },
+            {
+              "term": "secret scrapbook",
+              "clue": "Winton never spoke of the rescue until 1988, when his wife Grete discovered a dusty secret scrapbook in their attic containing the children's names and photos."
+            },
+            {
+              "term": "That's Life reunion",
+              "clue": "On the BBC TV show 'That's Life', presenter Esther Rantzen surprised Winton by revealing that the entire audience around him were the children he had rescued."
+            }
+          ],
+          "model_sentence": "Fifty years after the rescue of <strong>669 children saved</strong>, Winton's wife found his dusty <strong>secret scrapbook</strong> in the attic, leading to an emotional <strong>That's Life reunion</strong> on national television.",
+          "title": "669 Children & The Secret Scrapbook"
+        }
       ]
     },
     {
@@ -5603,18 +6782,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Dual Emotions of VE Day",
-          "question": "Why did many British families feel both great joy and deep sadness on VE Day in May 1945?",
-          "starter": "Families experienced both joy and sadness on VE Day because...",
-          "model_answer": "Families experienced both joy and sadness on VE Day because while they felt immense relief that the terrifying air raids and war in Europe were finally over, they also felt profound grief for fathers, sons, and daughters who had been killed and would never come home to celebrate with them."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at Source A. What does this immense crowd celebrating in the heart of London tell us about the nation's relief when war finally ended?",
+          "starter": "The immense, sea of celebrating faces filling Trafalgar Square in Source A shows that...",
+          "hints": [
+            "Observe people dancing in fountains, climbing statues, and waving Union flags.",
+            "Reflect on nearly six years of terror bombing, blackout, and bereavement suddenly lifting.",
+            "Explain the overwhelming collective release of tension across all social classes."
+          ],
+          "model_answer": "The immense sea of celebrating faces filling Trafalgar Square in Source A shows the colossal wave of relief that swept across Britain when the war in Europe finally ended on 8 May 1945. After nearly six long years of nightly blackouts, falling V-weapons, and constant fear of telegrams reporting fallen loved ones, the sight of thousands dancing in fountains, hugging strangers, and waving flags captures an unforgettable moment of collective liberation, joy, and triumph over tyranny.",
+          "key_terms": [
+            "Trafalgar Square",
+            "VE Day crowd",
+            "collective relief"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "The Moral Duty of Remembrance",
-          "question": "Explain why it is our duty today to remember the people who lived through the Second World War, and what we can learn from their actions.",
-          "starter": "It is our duty to remember the World War II generation because... From their actions, we learn that...",
-          "model_answer": "It is our duty to remember the World War II generation because they made immense personal sacrifices—enduring bombing, separation, rationing, and loss of life—to defend democracy and defeat tyranny. From their actions, we learn that ordinary people can show extraordinary courage when they work together as a community, that we must stand up for refugees and victims of persecution, and that peace and freedom are precious gifts that must be cherished and defended by every new generation."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Why was VE Day both a moment of ecstatic celebration and a time of quiet heartache for millions of families?",
+          "starter": "VE Day was both a moment of wild celebration and a time of quiet heartache because...",
+          "hints": [
+            "Contrast street parties and bonfires with empty chairs at the family dinner table.",
+            "Acknowledge that war was still raging in the Pacific against Japan.",
+            "Describe how grief and relief mingled in every British community."
+          ],
+          "model_answer": "VE Day was both a moment of wild celebration and a time of quiet heartache because the end of fighting in Europe brought sharp reminders of terrible personal loss. While streets hosted joyous trestle-table tea parties and bonfires, hundreds of thousands of British families looked at empty chairs where fathers, sons, and brothers should have been sitting. Furthermore, the war was not fully over: tens of thousands of British soldiers were still fighting and enduring brutal prisoner-of-war camps in the Pacific.",
+          "key_terms": [
+            "street parties",
+            "empty chairs",
+            "personal loss"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Even though war ended in Europe, why did rationing of food and clothes continue in Britain until 1954?",
+          "starter": "Even after victory was declared, strict rationing continued across Britain until 1954 because...",
+          "hints": [
+            "Explain that Britain was nearly bankrupt after spending its national wealth on defence.",
+            "Mention Britain's duty to send food supplies to feed starving, war-ravaged Europe.",
+            "Note how rebuilding shattered cities took priority over importing consumer luxuries."
+          ],
+          "model_answer": "Even after victory was declared, strict rationing continued across Britain until 1954 because the nation had poured its entire financial wealth into defeating Nazi Germany and was essentially bankrupt. Millions of homes and factories lay in ruins, global shipping was disrupted, and Britain committed to sending food aid to prevent starvation across liberated Europe. In fact, bread was even rationed in 1946—something that had never occurred during the war—meaning families had to wait nearly a decade for peacetime abundance.",
+          "key_terms": [
+            "post-war rationing",
+            "rebuilding cities",
+            "bankruptcy"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why is it vital that we continue to remember the sacrifices and courage of the Second World War generation today?",
+          "starter": "It is vital that modern generations continue to honour and remember the Second World War generation because...",
+          "hints": [
+            "Reflect on the democratic freedoms, civil liberties, and human rights defended at great cost.",
+            "Consider the lessons of resisting totalitarianism and protecting refugees.",
+            "Conclude on the duty to pass these first-hand memories forward as living veterans pass away."
+          ],
+          "model_answer": "It is vital that modern generations continue to honour and remember the Second World War generation because the democratic freedoms, peace, and human rights we enjoy today were purchased through their extraordinary endurance. From radar operators and codebreakers to soldiers on Normandy beaches and civilians in ruined cities, ordinary people united to defend human dignity against horrific tyranny. As the final eyewitnesses pass away, it becomes our solemn historical duty to carry their stories forward, ensuring that hatred and division are never allowed to rise again.",
+          "key_terms": [
+            "sacrifices",
+            "remembrance",
+            "democratic freedoms"
+          ]
         }
       ],
       "quiz": [
@@ -5957,6 +7202,71 @@ const ks2_ww2_data = {
           },
           "source_context": "Over 50,000 people packed into Trafalgar Square on VE Day, climbing lampposts, waving flags, and singing into the night as searchlights illuminated the night sky for the first time in six years without air raid sirens. **Hinge Question:** How did the lifting of the blackout on VE Day symbolize the return of light, hope, and safety to Britain?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Announcement & The Joyous Street Parties (8 May 1945)",
+          "focus_clue": "How did the British public celebrate the long-awaited victory in Europe?",
+          "words": [
+            {
+              "term": "VE Day (8 May 1945)",
+              "clue": "On Tuesday 8 May 1945, Britain celebrated Victory in Europe (VE Day) after Nazi Germany officially surrendered, ending nearly six years of war in Europe."
+            },
+            {
+              "term": "street parties",
+              "clue": "Neighbourhoods pooled their scarce food rations to throw jubilant outdoor street parties decorated with homemade paper bunting and Union Jack flags."
+            },
+            {
+              "term": "Winston Churchill speech",
+              "clue": "Prime Minister Winston Churchill gave a triumphant radio address and waved to cheering thousands from the balcony of the Ministry of Health in London."
+            }
+          ],
+          "model_sentence": "Marking <strong>VE Day (8 May 1945)</strong>, ecstatic communities celebrated with music and <strong>street parties</strong>, listening joyfully to the historic <strong>Winston Churchill speech</strong>.",
+          "title": "The Announcement & The Joyous Street Parties (8 May 1945)"
+        },
+        {
+          "step": 2,
+          "heading": "The Tinge of Sorrow: Loss & Rebuilding",
+          "focus_clue": "Why was victory accompanied by deep personal sadness and destroyed cities?",
+          "words": [
+            {
+              "term": "damaged cities",
+              "clue": "Over four million British houses had been destroyed or damaged by enemy bombs, leaving whole streets in rubble from Coventry to London."
+            },
+            {
+              "term": "rebuilding Britain",
+              "clue": "Citizens united to begin rebuilding Britain, clearing bomb sites and constructing prefabricated 'prefab' homes for displaced families."
+            },
+            {
+              "term": "National Health Service (NHS)",
+              "clue": "In 1948, the post-war government launched the revolutionary National Health Service (NHS), providing free healthcare to all citizens for the first time."
+            }
+          ],
+          "model_sentence": "As families mourned fallen loved ones across <strong>damaged cities</strong>, the challenging task of <strong>rebuilding Britain</strong> inspired social reforms like the <strong>National Health Service (NHS)</strong>.",
+          "title": "The Tinge of Sorrow: Loss & Rebuilding"
+        },
+        {
+          "step": 3,
+          "heading": "The Duty of Remembrance: The Poppy & The Cenotaph",
+          "focus_clue": "How do we continue to remember the sacrifices of the wartime generation today?",
+          "words": [
+            {
+              "term": "Remembrance Sunday",
+              "clue": "Every November on Remembrance Sunday, people across Britain fall silent for two minutes to remember service personnel and civilians killed in conflict."
+            },
+            {
+              "term": "red poppy",
+              "clue": "Wearing a red paper poppy honours the sacrifice of armed forces and civilian workers who gave their lives during the two world wars."
+            },
+            {
+              "term": "The Cenotaph",
+              "clue": "The national service of remembrance takes place at The Cenotaph in Whitehall, London, where veterans, the royal family, and civic leaders lay wreaths."
+            }
+          ],
+          "model_sentence": "Every November on <strong>Remembrance Sunday</strong>, citizens wear a <strong>red poppy</strong> and lay wreaths at <strong>The Cenotaph</strong> to honour the courageous generation that lived through the war.",
+          "title": "The Duty of Remembrance: The Poppy & The Cenotaph"
+        }
       ]
     },
     {
@@ -6248,18 +7558,84 @@ const ks2_ww2_data = {
       ],
       "tasks": [
         {
-          "type": "short_answer",
-          "topic": "Connecting Kindertransport & The Windermere Children",
-          "question": "Explain the difference between how children on the Kindertransport (1938–39) and the Windermere Children (1945) arrived in Britain, and why both groups needed help.",
-          "starter": "The children on the Kindertransport and the Windermere Children were different because... However, both groups needed help because...",
-          "model_answer": "The children on the Kindertransport were rescued before the war broke out in 1938–39, travelling by train and ferry to foster families. In contrast, the Windermere Children were child survivors who were trapped across Europe during the war, survived concentration camps, and were flown to Cumbria in RAF bombers in August 1945 after losing their families. Both groups needed help because they were innocent young refugees fleeing deadly Nazi persecution who needed safety, care, and a chance to rebuild their lives."
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look at the photograph of child survivors arriving in Cumbria. What details show the mixture of exhaustion and relief on their faces?",
+          "starter": "Examining the photograph of the child survivors landing at RAF Crosby-on-Eden, the key details reveal...",
+          "hints": [
+            "Notice their thin frames, oversized donated clothes, and fragile postures.",
+            "Observe their watchful, cautious eyes after surviving concentration camps.",
+            "Highlight the compassionate RAF airmen gently assisting them down the aircraft steps."
+          ],
+          "model_answer": "Examining the photograph of child survivors landing at RAF Crosby-on-Eden in August 1945, the poignant details reveal profound physical trauma mingled with cautious relief. Emerging from heavy RAF Stirling bombers, the children appear gaunt, hollow-cheeked, and swallowed up by oversized donated British coats. Yet in their cautious eyes, one can see the very first glimmer of safety as gentle British airmen and nurses assist them down the aircraft steps into a land where no one was shouting or threatening them with violence.",
+          "key_terms": [
+            "RAF bombers",
+            "child survivors",
+            "cautious relief"
+          ]
         },
         {
-          "type": "extended_writing",
-          "topic": "Sanctuary and Healing at Lake Windermere",
-          "question": "Explain how the environment of Lake Windermere, the care of Dr Oscar Friedman's team, and friendship helped 300 child survivors begin to heal after the Second World War.",
-          "starter": "When the 300 child survivors first arrived at the Calgarth Estate in August 1945, they felt... Life by Lake Windermere helped them heal because...",
-          "model_answer": "When the 300 child survivors first arrived at the Calgarth Estate in August 1945, they were deeply traumatised, malnourished, and fearful; many even hid bread under their pillows because they could not believe food would still be there tomorrow. However, life by Lake Windermere provided a peaceful sanctuary. Led by caring staff like Dr Oscar Friedman and Marie Paneth, the children received nutritious food, clean beds, and medical care with unconditional patience. Crucially, they were given the freedom to be children again: riding donated red bicycles, swimming in Lake Windermere, playing football, and learning English. Together, they formed an unbreakable bond of friendship, helping each other recover from tragic losses and build hopeful new futures in Britain."
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Explain the difference between how children on the Kindertransport (1938–39) and the Windermere Children (1945) arrived in Britain, and why both groups needed help.",
+          "starter": "The children on the Kindertransport and the Windermere Children arrived under very different circumstances because...",
+          "hints": [
+            "Contrast pre-war railway rescue from homes with post-liberation air transport from concentration camps.",
+            "Explain that Kindertransport children arrived with packed suitcases; Windermere children arrived in camp rags.",
+            "Conclude why both groups required safety, medical care, and psychological sanctuary."
+          ],
+          "model_answer": "The children on the Kindertransport and the Windermere Children arrived under very different circumstances because of the timeline of the war. The 10,000 Kindertransport refugees arrived in 1938–39 before the fighting started, travelling by train with small suitcases and luggage labels to foster families. In contrast, the 300 Windermere Children were liberated survivor orphans flown in military aircraft directly from concentration camps like Theresienstadt in August 1945. Both groups required compassionate sanctuary because both had been targeted for murder by the Nazi regime and lost everything.",
+          "key_terms": [
+            "liberated orphans",
+            "Kindertransport contrast",
+            "sanctuary"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine arriving at Lake Windermere after years of trauma in concentration camps. How would having your own clean bed and a red bicycle feel?",
+          "starter": "Arriving at the peaceful Calgarth Estate by Lake Windermere after years of camp starvation would feel...",
+          "hints": [
+            "Describe the initial disbelief: hiding bread under pillows because you feared food would vanish.",
+            "Reflect on the profound joy of riding a red bicycle and swimming in fresh lake waters.",
+            "Highlight the life-saving psychological impact of unconditional kindness and clean sheets."
+          ],
+          "model_answer": "Arriving at the peaceful Calgarth Estate by Lake Windermere after years of camp starvation would feel like waking up in a miraculous dream that you were terrified might end. At first, children were so traumatised they hid bread rolls under their mattresses, unable to believe breakfast would still be served tomorrow. But feeling soft, clean sheets, receiving patient smiles from Dr Oscar Friedman, swimming in the blue waters of Lake Windermere, and riding donated red bicycles restored their stolen childhoods and proved that human warmth still existed.",
+          "key_terms": [
+            "Calgarth Estate",
+            "red bicycles",
+            "clean beds"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: What does the story of the Windermere Children teach us about human compassion, recovery, and hope after the Second World War?",
+          "starter": "The remarkable recovery of the Windermere Children provides an enduring lesson about human resilience, compassion, and hope because...",
+          "hints": [
+            "Show how love, patient therapy, nature, and community healed deep trauma.",
+            "Emphasize that these 300 orphans became British citizens, doctors, teachers, and grandparents.",
+            "Conclude that compassion has the power to rebuild lives after the deepest darkness."
+          ],
+          "model_answer": "The remarkable recovery of the Windermere Children provides an enduring lesson that even after the deepest imaginable trauma, human beings can heal through compassion, friendship, and patience. Brought to the tranquil shores of Lake Windermere, these 300 child survivors were not treated as broken victims, but were nurtured with unconditional kindness, medical care, and the freedom to play and learn. Against all odds, they formed a lifelong family of brothers and sisters, going on to build flourishing families, careers, and contributions in Britain, proving that love and life will always triumph over hate.",
+          "key_terms": [
+            "Dr Oscar Friedman",
+            "healing trauma",
+            "hope and friendship"
+          ]
         }
       ],
       "quiz": [
@@ -6634,13 +8010,94 @@ const ks2_ww2_data = {
           },
           "source_context": "Ten converted RAF Short Stirling bombers made round-trip flights from Prague to Cumberland in August 1945. Many children had never seen an airplane before; RAF aircrews gave them chocolate and oranges during the flight, marking their very first taste of kindness from soldiers. **Hinge Question:** How did the compassionate actions of the RAF crew members begin the children's healing process before they even landed on British soil?"
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "The Trapped Children & The Mercy Airlift (August 1945)",
+          "focus_clue": "How did 300 young Holocaust survivors get brought from liberated camps to the English Lake District?",
+          "words": [
+            {
+              "term": "300 child survivors",
+              "clue": "In August 1945, the British government permitted 300 child survivors of Nazi concentration camps to enter Britain for recuperation and care."
+            },
+            {
+              "term": "RAF Lancaster mercy flight",
+              "clue": "Ten converted Royal Air Force bomber aircraft flew from Prague to Cumbria in an extraordinary humanitarian airlift, carrying orphaned children to safety."
+            },
+            {
+              "term": "Lake District arrival",
+              "clue": "Landing at RAF Crosby-on-Eden, the traumatised children looked out through coach windows at the tranquil hills and sparkling waters of Lake Windermere."
+            }
+          ],
+          "model_sentence": "In August 1945, a daring <strong>RAF Lancaster mercy flight</strong> transported <strong>300 child survivors</strong> from devastated Europe to begin healing upon their <strong>Lake District arrival</strong>.",
+          "title": "The Trapped Children & The Mercy Airlift (August 1945)"
+        },
+        {
+          "step": 2,
+          "heading": "Sanctuary at Calgarth: Bread Under Pillows & Red Bicycles",
+          "focus_clue": "How did caring therapists and doctors help traumatised children learn to smile and play again?",
+          "words": [
+            {
+              "term": "Calgarth Estate",
+              "clue": "The children were housed in wooden chalets at Calgarth Estate on the shores of Lake Windermere, surrounded by peaceful woods and clean mountain air."
+            },
+            {
+              "term": "Dr Oscar Friedman",
+              "clue": "Psychologist Dr Oscar Friedman and art therapist Marie Paneth showed gentle kindness, understanding why starved children hid loaves of bread under their pillows."
+            },
+            {
+              "term": "red bicycles and fresh air",
+              "clue": "The estate was supplied with shiny red bicycles, sports equipment, and warm clothing, allowing the children to swim in the lake and rediscover childhood."
+            }
+          ],
+          "model_sentence": "Finding sanctuary at <strong>Calgarth Estate</strong>, the children were guided with loving patience by <strong>Dr Oscar Friedman</strong>, slowly rediscovering joy through <strong>red bicycles and fresh air</strong>.",
+          "title": "Sanctuary at Calgarth: Bread Under Pillows & Red Bicycles"
+        },
+        {
+          "step": 3,
+          "heading": "Tom Palmer's 'After the War': Real Survivors & Historical Fiction",
+          "focus_clue": "How do historical fiction novels preserve the real voices of the Windermere children?",
+          "words": [
+            {
+              "term": "Tom Palmer (author)",
+              "clue": "Children's author Tom Palmer travelled to Windermere and worked closely with living survivors to write his award-winning historical novel 'After the War'."
+            },
+            {
+              "term": "Arek Hersh MBE",
+              "clue": "Survivor Arek Hersh MBE, who survived the Lodz Ghetto and Auschwitz as a child, shared his vivid memories of arriving at Lake Windermere as a boy."
+            },
+            {
+              "term": "survivor memories",
+              "clue": "Recording authentic survivor memories ensures that future generations of young readers will never forget what these brave children endured and overcame."
+            }
+          ],
+          "model_sentence": "By interviewing heroic survivors like <strong>Arek Hersh MBE</strong>, children's author <strong>Tom Palmer (author)</strong> wove real <strong>survivor memories</strong> into an unforgettable story of resilience.",
+          "title": "Tom Palmer's 'After the War': Real Survivors & Historical Fiction"
+        },
+        {
+          "step": 4,
+          "heading": "The Living Legacy & The '45 Aid Society",
+          "focus_clue": "How did these rescued children grow up to give back to the British society that sheltered them?",
+          "words": [
+            {
+              "term": "'45 Aid Society",
+              "clue": "As adults, the Windermere children founded the '45 Aid Society to raise money for British charities and support others in need of humanitarian refuge."
+            },
+            {
+              "term": "rebuilding broken lives",
+              "clue": "Despite losing almost all their families in Europe, the survivors qualified as doctors, teachers, business leaders, and loving parents, rebuilding broken lives."
+            },
+            {
+              "term": "lasting friendship",
+              "clue": "Bonded by shared survival and sanctuary in Cumbria, the Windermere children remained a close-knit family, cherishing their lasting friendship for decades."
+            }
+          ],
+          "model_sentence": "Demonstrating the triumph of the human spirit through <strong>rebuilding broken lives</strong>, the Windermere survivors created the charitable <strong>'45 Aid Society</strong> and celebrated a lifetime of <strong>lasting friendship</strong>.",
+          "title": "The Living Legacy & The '45 Aid Society"
+        }
       ]
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)"
 };
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = ks2_ww2_data;
-}
-export default ks2_ww2_data;

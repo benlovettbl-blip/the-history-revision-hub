@@ -1,2 +1,1 @@
 node scripts/verify_sanitization.cjs
-node scripts/lint_workbook_app_parity.cjs

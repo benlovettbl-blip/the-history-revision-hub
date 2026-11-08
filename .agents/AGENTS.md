@@ -1,5 +1,24 @@
 ## Strict School Anonymity & Commercial Neutrality Policy
 STRICT RULE: You are STRICTLY FORBIDDEN from using the name of the user's school ("Meoncross", "Meoncross School") in ANY user-facing text, page titles, document headers, footers, meta tags, printed booklets, worksheets, PDFs, PowerPoint presentations, mark schemes, teacher notes, audio scripts, or curriculum files (`data.js`, `index.html`, etc.).
+
+## Autonomous Execution & Cognitive Accessibility Protocol
+STRICT DIRECTIVE: The user has explicitly stated that they have a bad memory and will not be able to remember terminal commands, multi-file database sync procedures, or validation steps.
+1. **Zero Memory Burden on the User**: NEVER expect or instruct the user to remember command-line syntax, database sync steps, or file locations.
+2. **Autonomous End-to-End Execution**: Whenever the user requests a change to any lesson, workbook, task, question, starter, or tariff:
+   - Perform the full end-to-end synchronization automatically across all data stores (`data/*.json`, `public/data/*.json`, `database.json`, `public/database.json`, `units/*/data.js`, and `pupil_workbook.html`).
+   - Automatically execute the validation test suite (`npm run audit:tasks`) in the background to ensure 100% integrity.
+   - Report back cleanly with simple confirmations and browser verification links, without overwhelming the user with technical procedures.
+3. **Fast Git Commits & On-Demand Auditing**: The git pre-commit hook is kept lightweight (running only mandatory sanitization). The 372-task simulation audit (`npm run audit:tasks`) is run on-demand by the assistant during major updates or upon request, ensuring fast commits on all devices.
+4. **Zero-Prompt Tablet Handoff & Automatic Resumption**: The user must NEVER have to remember what to type when switching devices (e.g. tablet) or opening a new chat. Whenever the user starts a session with "hi", "hey", "where are we?", "continue", or any brief greeting:
+   - You MUST NOT wait for the user to explain what they were doing or remember commands.
+   - Immediately read `.agents/task.md` and the latest git commit.
+   - Greet the user with a concise 3-bullet briefing: (a) Exact status of the project, (b) What was completed in the last session, and (c) The single recommended next step, asking only for a simple confirmation or choice.
+
+## Strict 1-to-1 Narrative Block to Workbook Stage Alignment Invariant
+STRICT RULE: In every lesson across all 19 units, `lesson.narrative_blocks` and `lesson.workbook_stages` MUST maintain an exact 1-to-1 correspondence (both containing exactly 5 items).
+1. **Zero Orphan Intro Blocks:** `narrative_blocks[0]` must NEVER be a general scene-setting introduction that shifts the topic sequence. Block 1 must correspond directly to Stage 1, Block 2 to Stage 2, ..., and Block 5 to Stage 5. Overarching enquiry context belongs in `lesson.enquiry` or `lesson.overview`.
+2. **Trigger Term & Topic Fidelity:** The title and prose of `narrative_blocks[i]` must directly explain and incorporate the 3 Trigger Terms present in `workbook_stages[i]`.
+3. **Automated Verification:** Any change to lesson narratives or workbook stages must be verified by running `npm run audit:stages` (`node scripts/detailed_stage_inspection.cjs`).
 1. **Commercial Independence:** The platform is an independent commercial educational product intended for wider sale and multi-school adoption. It must maintain 100% strict institutional neutrality.
 2. **Approved Branding Terminology:** Always use the platform's public title ("The History Revision Hub" / "GCSE History Revision Hub") or generic departmental designations ("The History Department", "The History Portal", "Fieldwork Primary Record", "Fieldwork Archive").
 3. **No Associated School Identifiers:** Never include school-specific email domains (`@meoncross.co.uk`), school telephone numbers, school archive seals, teacher surname nameplates (render pupil/teacher fields with blank lines `<span class="line"></span>`), or student family links that identify the school.

@@ -1520,7 +1520,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
                         <span style="background: #e2e8f0; color: #334155; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 6px;">${p.questions.length} Questions</span>
                       </div>
                       <p style="color: #64748b; font-size: 0.88rem; margin: 0 0 15px 0;">
-                        Official Pearson Edexcel Examination Series with complete question paper, mark scheme, and examiner report insights.
+                        Edexcel GCSE Examination Series with complete question paper, mark scheme, and examiner report insights.
                       </p>
                     </div>
                     <div style="display: flex; gap: 8px; flex-wrap: wrap;">

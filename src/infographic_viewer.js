@@ -17,6 +17,7 @@ if (typeof window !== 'undefined' && staticManifest) {
 let currentItem = null;
 let currentList = [];
 let currentIndex = 0;
+let currentRequestedMode = null;
 
 let zoomLevel = 1;
 let panX = 0;
@@ -50,28 +51,52 @@ export async function getInfographicsManifest() {
  */
 export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
   const manifest = manifestCache || (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__);
-  if (!manifest) return [];
-  const unitList = manifest[unitId] || [];
-  if (!unitList.length) return [];
+  const unitList = (manifest && unitId && manifest[unitId]) ? manifest[unitId] : [];
 
   const targetStr = String(lessonIdOrIndex ?? '').trim();
-  if (!targetStr) return [];
   const normalizedTarget = targetStr.replace(/^lesson_/i, '');
 
-  return unitList.filter((item) => {
-    if (item.lessonId) {
-      if (item.lessonId === targetStr) return true;
-      if (item.lessonId === `lesson_${targetStr}`) return true;
-      if (`lesson_${item.lessonId}` === targetStr) return true;
-      if (item.lessonId.replace(/^lesson_/i, '') === normalizedTarget) return true;
+  if (unitList.length > 0 && targetStr) {
+    const matched = unitList.filter((item) => {
+      if (item.lessonId) {
+        if (item.lessonId === targetStr) return true;
+        if (item.lessonId === `lesson_${targetStr}`) return true;
+        if (`lesson_${item.lessonId}` === targetStr) return true;
+        if (item.lessonId.replace(/^lesson_/i, '') === normalizedTarget) return true;
+      }
+      if (Array.isArray(item.lessonIds)) {
+        if (item.lessonIds.includes(targetStr)) return true;
+        if (item.lessonIds.includes(`lesson_${targetStr}`)) return true;
+        if (item.lessonIds.some(id => id.replace(/^lesson_/i, '') === normalizedTarget)) return true;
+      }
+      return false;
+    });
+    if (matched.length > 0) return matched;
+  }
+
+  // Universal Interactive Presentation Mat Fallback:
+  // Every lesson across all KS3 & GCSE curriculum units has an interactive presentation mat at /interactive_mats/viewer.html!
+  // Key Stage 2 (KS2) primary units use their dedicated Enquiry Worksheets and 24-page primary pupil workbook.
+  if (unitId && (targetStr || targetStr === '0')) {
+    if (unitId === 'ks2_ww2' || unitId.startsWith('ks2')) {
+      return [];
     }
-    if (Array.isArray(item.lessonIds)) {
-      if (item.lessonIds.includes(targetStr)) return true;
-      if (item.lessonIds.includes(`lesson_${targetStr}`)) return true;
-      if (item.lessonIds.some(id => id.replace(/^lesson_/i, '') === normalizedTarget)) return true;
-    }
-    return false;
-  });
+    const cleanLessonNum = normalizedTarget || '1';
+    return [
+      {
+        unit: unitId,
+        lessonId: `lesson_${cleanLessonNum}`,
+        slug: `${unitId}_lesson_${cleanLessonNum}`,
+        title: `Interactive Presentation Mat • Lesson ${cleanLessonNum}`,
+        topic: `${unitId} • Lesson ${cleanLessonNum}`,
+        type: 'lesson_summary',
+        aspect: 'landscape',
+        interactiveUrl: `/interactive_mats/viewer.html?unit=${encodeURIComponent(unitId)}&lesson=${encodeURIComponent(cleanLessonNum)}`
+      }
+    ];
+  }
+
+  return [];
 }
 
 /**
@@ -147,12 +172,12 @@ function ensureModalElement() {
       <!-- Action Toolbar -->
       <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
         <!-- Dual Mode Segmented Control (Poster vs Interactive) -->
-        <div id="infographic-mode-toggle" style="display: none; align-items: center; background: #0f172a; border-radius: 6px; padding: 2px; border: 1px solid rgba(245, 158, 11, 0.4); margin-right: 4px;">
-          <button type="button" id="infographic-btn-mode-poster" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: #0284c7; color: #ffffff; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;">
-            <i class="fa-solid fa-image"></i> Poster
+        <div id="infographic-mode-toggle" style="display: none; align-items: center; background: #0f172a; border-radius: 6px; padding: 2px; border: 1px solid rgba(56, 189, 248, 0.4); margin-right: 4px;">
+          <button type="button" id="infographic-btn-mode-poster" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: #0284c7; color: #ffffff; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="View High-Resolution Visual Revision Infographic Poster">
+            <i class="fa-solid fa-image"></i> <span>Visual Infographic</span>
           </button>
-          <button type="button" id="infographic-btn-mode-interactive" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: transparent; color: #94a3b8; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;">
-            <i class="fa-solid fa-wand-magic-sparkles" style="color: #f59e0b;"></i> Interactive
+          <button type="button" id="infographic-btn-mode-interactive" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: transparent; color: #94a3b8; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Switch to Interactive Presentation Mat &amp; Writing Studio">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color: #f59e0b;"></i> <span>Interactive Mat</span>
           </button>
         </div>
 
@@ -218,7 +243,7 @@ function ensureModalElement() {
       </div>
 
       <!-- Collapsible Questions & Practice Drawer -->
-      <aside id="infographic-drawer" style="width: 400px; max-width: 90vw; background: #080e1d; border-left: 1px solid #1e293b; display: flex; flex-direction: column; z-index: 8; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
+      <aside id="infographic-drawer" style="width: 420px; max-width: 92vw; background: #080e1d; border-left: 1px solid #1e293b; display: flex; flex-direction: column; z-index: 8; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
         <div style="padding: 12px 16px; background: #0f172a; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;">
           <div style="font-weight: 700; font-size: 0.9rem; color: #f8fafc; display: flex; align-items: center; gap: 8px;">
             <i class="fa-solid fa-circle-question" style="color: #fde047;"></i>
@@ -230,22 +255,22 @@ function ensureModalElement() {
           <!-- Interactive Study Tools: 3 Pickable Pills (Placed FIRST for fast question access) -->
           <div style="display: flex; flex-direction: column; gap: 10px;">
             <div style="display: flex; align-items: center; justify-content: space-between;">
-              <div style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
-                <i class="fa-solid fa-layer-group" style="color: #f59e0b;"></i>
-                <span id="drawer-exam-header-title">Exam Practice &amp; Retrieval Checks</span>
+              <div style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; line-height: 1.3;">
+                <i class="fa-solid fa-layer-group" style="color: #f59e0b; flex-shrink: 0;"></i>
+                <span id="drawer-exam-header-title" style="word-break: break-word;">Exam Practice &amp; Retrieval Checks</span>
               </div>
             </div>
 
             <!-- Pill Navigation Tabs -->
             <div id="drawer-pill-nav" style="display: flex; gap: 4px; background: #0b1329; padding: 3px; border-radius: 8px; border: 1px solid #1e293b;">
-              <button type="button" id="drawer-tab-exam" class="drawer-pill-btn active" data-tab="exam" style="flex: 1; padding: 6px 6px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: #0284c7; color: #ffffff;">
-                <i class="fa-solid fa-pen-nib"></i> Exam Link
+              <button type="button" id="drawer-tab-exam" class="drawer-pill-btn active" data-tab="exam" style="flex: 1 1 0; min-width: 0; padding: 6px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: #0284c7; color: #ffffff; white-space: nowrap;">
+                <i class="fa-solid fa-pen-nib" style="flex-shrink: 0;"></i> <span class="tab-label">Exam Link</span>
               </button>
-              <button type="button" id="drawer-tab-hinge" class="drawer-pill-btn" data-tab="hinge" style="flex: 1; padding: 6px 6px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: transparent; color: #94a3b8;">
-                <i class="fa-solid fa-lightbulb"></i> Hinge Check
+              <button type="button" id="drawer-tab-hinge" class="drawer-pill-btn" data-tab="hinge" style="flex: 1 1 0; min-width: 0; padding: 6px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: transparent; color: #94a3b8; white-space: nowrap;">
+                <i class="fa-solid fa-lightbulb" style="flex-shrink: 0;"></i> <span class="tab-label">Hinge Check</span>
               </button>
-              <button type="button" id="drawer-tab-vocab" class="drawer-pill-btn" data-tab="vocab" style="flex: 1; padding: 6px 6px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: transparent; color: #94a3b8;">
-                <i class="fa-solid fa-book-bookmark"></i> Key Terms
+              <button type="button" id="drawer-tab-vocab" class="drawer-pill-btn" data-tab="vocab" style="flex: 1 1 0; min-width: 0; padding: 6px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: transparent; color: #94a3b8; white-space: nowrap;">
+                <i class="fa-solid fa-book-bookmark" style="flex-shrink: 0;"></i> <span class="tab-label">Key Terms</span>
               </button>
             </div>
 
@@ -685,6 +710,14 @@ function renderCurrentItem() {
   }
   if (!currentItem) return;
 
+  // Auto-link interactive revision mat if unit & lessonId exist and not already present
+  currentList.forEach((it) => {
+    if (!it.interactiveUrl && it.unit && it.lessonId && it.type !== 'unit_roadmap' && it.type !== 'roadmap') {
+      const cleanNum = String(it.lessonId).replace(/^lesson_/i, '');
+      it.interactiveUrl = `/interactive_mats/viewer.html?unit=${encodeURIComponent(it.unit)}&lesson=${encodeURIComponent(cleanNum)}`;
+    }
+  });
+
   const img = modal.querySelector('#infographic-image');
   const title = modal.querySelector('#infographic-title');
   const topicBadge = modal.querySelector('#infographic-badge-topic');
@@ -856,9 +889,34 @@ function renderCurrentItem() {
     }
   }
 
-  if (currentItem.interactiveUrl) {
-    if (modeToggle) modeToggle.style.display = 'none'; // Use the interactive version exclusively as requested
-    setViewMode('interactive'); // Default directly to interactive revision mat!
+  const hasPosterImage = Boolean(currentItem.image && currentItem.image.trim().length > 0);
+  const hasInteractive = Boolean(currentItem.interactiveUrl);
+
+  if (hasPosterImage && hasInteractive) {
+    if (modeToggle) {
+      modeToggle.style.display = 'inline-flex';
+      if (btnModePoster) {
+        btnModePoster.onclick = () => {
+          currentRequestedMode = 'poster';
+          setViewMode('poster');
+        };
+      }
+      if (btnModeInteractive) {
+        btnModeInteractive.onclick = () => {
+          currentRequestedMode = 'interactive';
+          setViewMode('interactive');
+        };
+      }
+    }
+    // Respect explicit requested mode, otherwise DEFAULT to visual infographic poster!
+    if (currentRequestedMode === 'interactive') {
+      setViewMode('interactive');
+    } else {
+      setViewMode('poster');
+    }
+  } else if (hasInteractive && !hasPosterImage) {
+    if (modeToggle) modeToggle.style.display = 'none';
+    setViewMode('interactive');
   } else {
     if (modeToggle) modeToggle.style.display = 'none';
     if (tabBtn) tabBtn.style.display = 'none';
@@ -873,6 +931,31 @@ function renderCurrentItem() {
  * Extract up to 3 official Edexcel exam questions for this topic across question types.
  */
 function extractTopicExamQuestions(lesson, unitId, item) {
+  const isIntroOrRoadmap =
+    !item ||
+    item.type === 'unit_roadmap' ||
+    item.type === 'unit_overview' ||
+    item.type === 'roadmap' ||
+    item.type === 'intro' ||
+    item.lessonId === 'lesson_0' ||
+    (item.slug &&
+      (item.slug.includes('roadmap') ||
+        item.slug.includes('course_overview') ||
+        item.slug.includes('spec_roadmap'))) ||
+    (item.topic &&
+      (item.topic.toLowerCase().includes('specification architecture') ||
+        item.topic.toLowerCase().includes("examiner's toolkit") ||
+        item.topic.toLowerCase().includes('course roadmap') ||
+        item.topic.toLowerCase().includes('course overview'))) ||
+    (item.title &&
+      (item.title.toLowerCase().includes('specification roadmap') ||
+        item.title.toLowerCase().includes('master course overview')));
+
+  // Course roadmaps and syllabus overviews do not have exam questions
+  if (isIntroOrRoadmap) {
+    return [];
+  }
+
   const ep = lesson?.exam_practice;
   const rawQuestions = ep && Array.isArray(ep.questions) ? ep.questions : [];
   const results = [];
@@ -1192,9 +1275,16 @@ function extractTopicExamQuestions(lesson, unitId, item) {
         ? t.stimulus.join(' • ')
         : (t.stimulus || null);
 
+      let pillText = cleanTitle;
+      if (pillText.length > 40) {
+        const sliced = pillText.slice(0, 38);
+        const lastSpace = sliced.lastIndexOf(' ');
+        pillText = (lastSpace > 15 ? sliced.slice(0, lastSpace) : sliced).trim() + '...';
+      }
+
       results.push({
         id: t.id || `task_${idx + 1}`,
-        pillLabel: cleanTitle.length > 22 ? cleanTitle.slice(0, 20) + '...' : cleanTitle,
+        pillLabel: pillText,
         badge: 'Key Stage 3 • Right Page Writing Task',
         tariff: 'Writing Clues & Scaffolding',
         prompt: cleanQuestion || t.question,
@@ -1248,8 +1338,8 @@ function extractTopicExamQuestions(lesson, unitId, item) {
     });
   }
 
-  // If still empty (e.g. unit roadmap), synthesize authentic spec question
-  if (results.length === 0) {
+  // If still empty (e.g. unmigrated lesson topic), synthesize authentic spec question
+  if (results.length === 0 && !isIntroOrRoadmap) {
     const topicTitle = item.topic || lesson?.title || 'this topic';
     results.push({
       id: 'q1',
@@ -1336,7 +1426,50 @@ function renderDrawerTools(modal, item) {
   }
 
   // 1. EXAM TARGET DATA (WITH CLICKABLE QUESTION TYPE SUB-PILLS)
+  const isIntroOrRoadmap =
+    !item ||
+    item.type === 'unit_roadmap' ||
+    item.type === 'unit_overview' ||
+    item.type === 'roadmap' ||
+    item.type === 'intro' ||
+    item.lessonId === 'lesson_0' ||
+    (item.slug &&
+      (item.slug.includes('roadmap') ||
+        item.slug.includes('course_overview') ||
+        item.slug.includes('spec_roadmap'))) ||
+    (item.topic &&
+      (item.topic.toLowerCase().includes('specification architecture') ||
+        item.topic.toLowerCase().includes("examiner's toolkit") ||
+        item.topic.toLowerCase().includes('course roadmap') ||
+        item.topic.toLowerCase().includes('course overview'))) ||
+    (item.title &&
+      (item.title.toLowerCase().includes('specification roadmap') ||
+        item.title.toLowerCase().includes('master course overview')));
+
   const examQuestions = extractTopicExamQuestions(lesson, item.unit, item);
+
+  const tabExam = modal.querySelector('#drawer-tab-exam');
+  const tabHinge = modal.querySelector('#drawer-tab-hinge');
+  const tabVocab = modal.querySelector('#drawer-tab-vocab');
+  const panelExam = modal.querySelector('#drawer-panel-exam');
+  const panelHinge = modal.querySelector('#drawer-panel-hinge');
+  const panelVocab = modal.querySelector('#drawer-panel-vocab');
+  const drawerExamHeader = modal.querySelector('#drawer-exam-header-title');
+
+  if (isIntroOrRoadmap || examQuestions.length === 0) {
+    if (tabExam) tabExam.style.display = 'none';
+    if (panelExam) panelExam.style.display = 'none';
+    if (drawerExamHeader) drawerExamHeader.innerHTML = 'Big Picture Enquiry &amp; Syllabus Overview';
+    if (tabHinge) {
+      tabHinge.click();
+    }
+  } else {
+    if (tabExam) tabExam.style.display = 'flex';
+    if (panelExam) panelExam.style.display = 'flex';
+    if (tabExam) {
+      tabExam.click();
+    }
+  }
 
   const subpillsContainer = modal.querySelector('#drawer-exam-subpills');
   const examBadge = modal.querySelector('#drawer-exam-badge');
@@ -1368,11 +1501,11 @@ function renderDrawerTools(modal, item) {
     const drawerExamHeader = modal.querySelector('#drawer-exam-header-title');
 
     if (qObj.isKS3) {
-      if (tabExam) tabExam.innerHTML = '<i class="fa-solid fa-pen-nib"></i> Writing Clues';
+      if (tabExam) tabExam.innerHTML = '<i class="fa-solid fa-pen-nib" style="flex-shrink: 0;"></i> <span class="tab-label">Writing Clues</span>';
       if (labelExam) labelExam.textContent = 'Select Writing Task:';
       if (drawerExamHeader) drawerExamHeader.innerHTML = 'Enquiry Studio &amp; Writing Clues';
     } else {
-      if (tabExam) tabExam.innerHTML = '<i class="fa-solid fa-pen-nib"></i> Exam Link';
+      if (tabExam) tabExam.innerHTML = '<i class="fa-solid fa-pen-nib" style="flex-shrink: 0;"></i> <span class="tab-label">Exam Link</span>';
       if (labelExam) labelExam.textContent = 'Select Exam Question Type:';
       if (drawerExamHeader) drawerExamHeader.innerHTML = 'Exam Practice &amp; Retrieval Checks';
     }
@@ -1456,16 +1589,19 @@ function renderDrawerTools(modal, item) {
       pill.className = 'drawer-exam-subpill';
       const isActive = idx === 0;
       pill.style.cssText = `
-        padding: 4px 9px;
-        font-size: 0.72rem;
+        padding: 5px 10px;
+        font-size: 0.74rem;
         font-weight: 700;
-        border-radius: 5px;
+        border-radius: 6px;
         border: 1px solid ${isActive ? '#38bdf8' : '#334155'};
         background: ${isActive ? 'rgba(2, 132, 199, 0.4)' : '#1e293b'};
         color: ${isActive ? '#ffffff' : '#94a3b8'};
         cursor: pointer;
         transition: all 0.15s ease;
-        white-space: nowrap;
+        white-space: normal;
+        line-height: 1.25;
+        text-align: center;
+        max-width: 100%;
       `;
       pill.textContent = q.pillLabel;
 
@@ -1670,6 +1806,11 @@ export async function openInfographicModal(options) {
   const modal = ensureModalElement();
   const manifest = await getInfographicsManifest();
 
+  currentRequestedMode =
+    options && typeof options === 'object'
+      ? options.initialMode || options.mode || null
+      : null;
+
   if (typeof options === 'string') {
     // If slug passed
     const all = Object.values(manifest).filter(Array.isArray).flat();
@@ -1690,6 +1831,10 @@ export async function openInfographicModal(options) {
     currentList = options.items;
     currentIndex = options.startIndex || 0;
     currentItem = currentList[currentIndex];
+  } else if (options && options.item) {
+    currentList = [options.item];
+    currentIndex = 0;
+    currentItem = options.item;
   } else if (options && options.slug) {
     const all = Object.values(manifest).filter(Array.isArray).flat();
     const found = all.find((i) => i.slug === options.slug);
@@ -1712,6 +1857,14 @@ export async function openInfographicModal(options) {
 
   if (!currentItem) return;
 
+  // Auto-link interactive revision mat if unit & lessonId exist and not already present
+  currentList.forEach((it) => {
+    if (!it.interactiveUrl && it.unit && it.lessonId && it.type !== 'unit_roadmap' && it.type !== 'roadmap') {
+      const cleanNum = String(it.lessonId).replace(/^lesson_/i, '');
+      it.interactiveUrl = `/interactive_mats/viewer.html?unit=${encodeURIComponent(it.unit)}&lesson=${encodeURIComponent(cleanNum)}`;
+    }
+  });
+
   renderCurrentItem();
   modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -1720,21 +1873,115 @@ export async function openInfographicModal(options) {
 /**
  * Global helper to open lesson infographics.
  */
-export async function openLessonInfographicModal(lessonIdOrIndex, unitId) {
+export async function openLessonInfographicModal(lessonIdOrIndex, unitId, options = {}) {
   const activeUnit =
     unitId ||
     (typeof window !== 'undefined' && window.currentUnitId) ||
     'cme_new';
-  const items = await getLessonInfographics(activeUnit, lessonIdOrIndex);
+  const targetLesson =
+    lessonIdOrIndex ??
+    (typeof window !== 'undefined' && (window.currentLessonId ?? window.currentLessonIndex)) ??
+    0;
+
+  // If worksheet mode is explicitly requested for KS2, route to worksheet modal
+  if ((activeUnit === 'ks2_ww2' || activeUnit.startsWith('ks2')) && options.mode === 'worksheet') {
+    if (typeof window !== 'undefined' && typeof window.openKs2WorksheetModal === 'function') {
+      window.openKs2WorksheetModal(targetLesson);
+      return;
+    }
+  }
+
+  let items = await getLessonInfographics(activeUnit, targetLesson);
+  if (!items || items.length === 0) {
+    const manifest = await getInfographicsManifest();
+    const unitList = manifest[activeUnit] || [];
+    const targetStr = String(targetLesson).replace(/^lesson_/i, '');
+    const matched = unitList.filter((item) => {
+      const itemLesson = String(item.lessonId || '').replace(/^lesson_/i, '');
+      return itemLesson === targetStr;
+    });
+    if (matched.length > 0) {
+      items = matched;
+    }
+  }
+
+  // Universal Presentation Mat Fallback:
+  // If no dedicated static mat exists or item lacks interactiveUrl, route to universal viewer!
+  if (!items || items.length === 0) {
+    const cleanLessonNum = String(targetLesson).replace(/^lesson_/i, '') || '1';
+    items = [
+      {
+        unit: activeUnit,
+        lessonId: targetLesson,
+        slug: `${activeUnit}_lesson_${cleanLessonNum}`,
+        title: `Interactive Presentation Mat • Lesson ${cleanLessonNum}`,
+        topic: `${activeUnit} • Lesson ${cleanLessonNum}`,
+        type: 'lesson_summary',
+        aspect: 'landscape',
+        interactiveUrl: `/interactive_mats/viewer.html?unit=${encodeURIComponent(activeUnit)}&lesson=${encodeURIComponent(targetLesson)}`
+      }
+    ];
+  } else {
+    items.forEach((it) => {
+      if (!it.interactiveUrl) {
+        it.interactiveUrl = `/interactive_mats/viewer.html?unit=${encodeURIComponent(activeUnit)}&lesson=${encodeURIComponent(targetLesson)}`;
+      }
+    });
+  }
+
   if (items.length > 0) {
-    openInfographicModal({ items, startIndex: 0 });
+    openInfographicModal({ items, startIndex: 0, ...options });
   } else {
     // Fallback: check if unit roadmaps exist
     const roadmaps = await getUnitRoadmaps(activeUnit);
     if (roadmaps.length > 0) {
-      openInfographicModal({ items: roadmaps, startIndex: 0 });
+      openInfographicModal({ items: roadmaps, startIndex: 0, ...options });
     }
   }
+}
+
+/**
+ * Open lesson infographic directly focused on a specific narrative step (0-indexed).
+ */
+export async function openLessonInfographicModalToStep(stepIndex, lessonIdOrIndex, unitId) {
+  await openLessonInfographicModal(lessonIdOrIndex, unitId, { initialMode: 'interactive' });
+  const sendStep = () => {
+    try {
+      const modal = document.getElementById('hub-infographic-modal');
+      const iframe = modal?.querySelector('#infographic-frame');
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage({ action: 'setStep', step: stepIndex }, '*');
+        if (typeof iframe.contentWindow.goToStep === 'function') {
+          iframe.contentWindow.goToStep(stepIndex + 1);
+        }
+      }
+    } catch (e) {}
+  };
+  setTimeout(sendStep, 60);
+  setTimeout(sendStep, 250);
+  setTimeout(sendStep, 600);
+}
+
+/**
+ * Open lesson infographic directly focused on a specific part tab (e.g. Part 3: Writing Studio).
+ */
+export async function openLessonInfographicModalToPart(partNumber, lessonIdOrIndex, unitId) {
+  await openLessonInfographicModal(lessonIdOrIndex, unitId, { initialMode: 'interactive' });
+  const sendTab = () => {
+    try {
+      const modal = document.getElementById('hub-infographic-modal');
+      const iframe = modal?.querySelector('#infographic-frame');
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage({ action: 'switchTab', tab: partNumber }, '*');
+        if (typeof iframe.contentWindow.switchPart === 'function') {
+          iframe.contentWindow.switchPart(partNumber);
+        }
+      }
+    } catch (e) {}
+  };
+  setTimeout(sendTab, 60);
+  setTimeout(sendTab, 250);
+  setTimeout(sendTab, 600);
 }
 
 /**
@@ -1752,6 +1999,9 @@ export function closeInfographicModal() {
 if (typeof window !== 'undefined') {
   window.openInfographicModal = openInfographicModal;
   window.openLessonInfographicModal = openLessonInfographicModal;
+  window.openLessonInfographicModalToStep = openLessonInfographicModalToStep;
+  window.openLessonInfographicModalToPart = openLessonInfographicModalToPart;
+  window.openWritingStudioFromTask = () => openLessonInfographicModalToPart(3);
   window.closeInfographicModal = closeInfographicModal;
   window.getLessonInfographics = getLessonInfographics;
   window.getLessonInfographicsSync = getLessonInfographicsSync;

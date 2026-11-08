@@ -1,0 +1,194 @@
+[
+  {
+    "lessonNum": 1,
+    "kt": "KT1",
+    "q12m": "Explain why it was difficult for Black Americans in the Southern states to exercise their civil rights in the early 1950s. [12 marks]",
+    "stimuli": [
+      "Jim Crow laws and legal disenfranchisement",
+      "The Ku Klux Klan (KKK) and white supremacist terror"
+    ],
+    "q4m_topic": "legal segregation in the American South in the early 1950s",
+    "source_origin": "Mississippi Department of Archives and History, State Statute Compendium",
+    "source_text": "The Mississippi State Code (§7785): All railroad companies and bus operators carrying passengers in this state shall provide equal but separate accommodations for the white and colored races by providing separate ca..."
+  },
+  {
+    "lessonNum": 2,
+    "kt": "KT1",
+    "q12m": "Explain why the Supreme Court decision in Brown v. Board of Education (1954) was a turning point in the struggle for civil rights. [12 marks]",
+    "stimuli": [
+      "The legal doctrine of 'separate but equal'",
+      "The role of the NAACP and Thurgood Marshall"
+    ],
+    "q4m_topic": "the opposition faced by Black students attempting to desegregate Southern schools in 1957",
+    "source_origin": "United States Supreme Court, Brown v. Board of Education of Topeka, 347 U.S. 483 (1954)",
+    "source_text": "Does segregation of children in public schools solely on the basis of race, even though the physical facilities and other 'tangible' factors may be equal, deprive the children of the minority group of equal educatio..."
+  },
+  {
+    "lessonNum": 3,
+    "kt": "KT1",
+    "q12m": "Explain why the Montgomery Bus Boycott succeeded in achieving its aims between 1955 and 1956. [12 marks]",
+    "stimuli": [
+      "The Montgomery Improvement Association (MIA) and Martin Luther King Jr.",
+      "The Supreme Court ruling in Browder v. Gayle (1956)"
+    ],
+    "q4m_topic": "the determination of the Black community during the Montgomery Bus Boycott (1955–56)",
+    "source_origin": "Montgomery Municipal Court Archives, Alabama Department of Archives and History",
+    "source_text": "Contemporary archival extract."
+  },
+  {
+    "lessonNum": 4,
+    "kt": "KT1",
+    "q12m": "Explain why white segregationists mounted 'Massive Resistance' across the South between 1954 and 1960. [12 marks]",
+    "stimuli": [
+      "White Citizens' Councils and economic intimidation",
+      "The 'Southern Manifesto' and state governors"
+    ],
+    "q4m_topic": "the racial violence and terror inflicted on Black Americans in the South in 1955",
+    "source_origin": "Special Collections, Mitchell Memorial Library, Mississippi State University",
+    "source_text": "Contemporary archival extract."
+  },
+  {
+    "lessonNum": 5,
+    "kt": "KT2",
+    "q12m": "Explain why peaceful direct action (sit-ins and Freedom Rides) succeeded in desegregating public facilities between 1960 and 1961. [12 marks]",
+    "stimuli": [
+      "The Greensboro sit-ins and the Student Nonviolent Coordinating Committee (SNCC)",
+      "The Freedom Rides and the Interstate Commerce Commission (ICC)"
+    ],
+    "q4m_topic": "the discipline of civil rights demonstrators during the lunch counter sit-ins (1960)",
+    "source_origin": "Associated Press Archive, Newsfilm and Still Photography Collection",
+    "source_text": "Contemporary archival extract."
+  },
+  {
+    "lessonNum": 6,
+    "kt": "KT2",
+    "q12m": "Explain why the Civil Rights Act was passed in 1964. [12 marks]",
+    "stimuli": [
+      "The Birmingham Campaign (May 1963)",
+      "The assassination of President John F. Kennedy (November 1963)"
+    ],
+    "q4m_topic": "the message and impact of the 1963 March on Washington",
+    "source_origin": "Dr Martin Luther King Jr., Letter from Birmingham Jail (16 April 1963)",
+    "source_text": "We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was 'well timed' in t..."
+  },
+  {
+    "lessonNum": 7,
+    "kt": "KT2",
+    "q12m": "Explain why the Voting Rights Act was passed in 1965. [12 marks]",
+    "stimuli": [
+      "The Selma to Montgomery marches and 'Bloody Sunday' (March 1965)",
+      "The Mississippi Freedom Summer and the murder of civil rights workers (1964)"
+    ],
+    "q4m_topic": "the Black Power salute at the 1968 Mexico City Olympic Games",
+    "source_origin": "Schomburg Center for Research in Black Culture, New York Public Library",
+    "source_text": "Contemporary archival extract."
+  },
+  {
+    "lessonNum": 8,
+    "kt": "KT2",
+    "q12m": "Explain why the Black Power movement grew in popularity in the late 1960s. [12 marks]",
+    "stimuli": [
+      "The ideas of Malcolm X and the Black Panther Party",
+      "Frustration with the limitations of non-violent civil rights laws in northern cities"
+    ],
+    "q4m_topic": "the causes of urban riots in American cities between 1965 and 1968",
+    "source_origin": "Statement of Tommy Jacquette, Watts Community Organizer, Los Angeles (August 1965)",
+    "source_text": "Since August 1965, where are we going? Where is Watts going? We didn't burn our own community; we burned the property of white slumlords and merchants who bled our people dry for generations. It was a revolt, not a ..."
+  },
+  {
+    "lessonNum": 9,
+    "kt": "KT3",
+    "q12m": "Explain why the United States became increasingly involved in Vietnam between 1954 and 1963. [12 marks]",
+    "stimuli": [
+      "The Domino Theory and the Cold War containment policy",
+      "US support for Ngo Dinh Diem and the growth of the Vietcong"
+    ],
+    "q4m_topic": "American geopolitical fears regarding the spread of communism in Southeast Asia (1954)",
+    "source_origin": "President Dwight D. Eisenhower, The President's News Conference (7 April 1954), Public Papers of the Presidents",
+    "source_text": "You have, of course, both the specific and the general when you talk about such things. First of all, you have the specific value of a locality in its production of materials that the world needs, like rubber and ti..."
+  },
+  {
+    "lessonNum": 10,
+    "kt": "KT3",
+    "q12m": "Explain why US military involvement in Vietnam escalated under President Johnson between 1964 and 1965. [12 marks]",
+    "stimuli": [
+      "The Gulf of Tonkin incident (August 1964)",
+      "The attack on the US base at Pleiku (February 1965)"
+    ],
+    "q4m_topic": "the deployment of US Marines to Vietnam in March 1965",
+    "source_origin": "Commander, Task Group 72.1 (USS Maddox) to Commander Seventh Fleet, Flash Precedence Cable (4 August 1964)",
+    "source_text": "Review of action makes many reported contacts and torpedoes fired appear doubtful. Freak weather effects on radar and overeager sonarmen may have accounted for many reports. No actual visual sightings by Maddox. Sug..."
+  },
+  {
+    "lessonNum": 11,
+    "kt": "KT3",
+    "q12m": "Explain why US military tactics failed to defeat the Vietcong between 1965 and 1968. [12 marks]",
+    "stimuli": [
+      "Vietcong guerrilla tactics and underground tunnel networks",
+      "US Search and Destroy missions and chemical defoliants (Agent Orange)"
+    ],
+    "q4m_topic": "the role of helicopters in US combat operations in Vietnam",
+    "source_origin": "MACV Combined Intelligence Center, Exploitation of Enemy Facilities Section",
+    "source_text": "Contemporary archival extract."
+  },
+  {
+    "lessonNum": 12,
+    "kt": "KT3",
+    "q12m": "Explain why the Tet Offensive of January 1968 was a decisive turning point in the Vietnam War. [12 marks]",
+    "stimuli": [
+      "The military outcome for the Vietcong and US forces",
+      "The 'credibility gap' and Walter Cronkite's television report"
+    ],
+    "q4m_topic": "President Nixon's visit to US soldiers in Vietnam in 1969",
+    "source_origin": "Walter Cronkite, CBS News Special Report: Report from Vietnam (27 February 1968)",
+    "source_text": "To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable pessimism. To..."
+  },
+  {
+    "lessonNum": 13,
+    "kt": "KT4",
+    "q12m": "Explain why public opposition to the Vietnam War intensified in the United States between 1968 and 1971. [12 marks]",
+    "stimuli": [
+      "Revelations of the My Lai massacre (November 1969)",
+      "The Kent State University shootings (May 1970)"
+    ],
+    "q4m_topic": "the introduction of the military draft lottery in 1969",
+    "source_origin": "Peers Commission Inquiry into the My Lai Massacre, Department of the Army (1970)",
+    "source_text": "Contemporary archival extract."
+  },
+  {
+    "lessonNum": 14,
+    "kt": "KT4",
+    "q12m": "Explain why President Richard Nixon introduced the policy of 'Vietnamization' in 1969. [12 marks]",
+    "stimuli": [
+      "Domestic anti-war protests and the 'Silent Majority'",
+      "The aim of achieving 'peace with honour'"
+    ],
+    "q4m_topic": "President Nixon's televised 'Silent Majority' address (November 1969)",
+    "source_origin": "President Richard Nixon, Address to the Nation on the War in Vietnam (3 November 1969)",
+    "source_text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated b..."
+  },
+  {
+    "lessonNum": 15,
+    "kt": "KT4",
+    "q12m": "Explain why the Paris Peace Accords were signed in January 1973. [12 marks]",
+    "stimuli": [
+      "The 'Christmas Bombings' (Operation Linebacker II, December 1972)",
+      "The diplomatic rapprochement between the US, China, and the Soviet Union"
+    ],
+    "q4m_topic": "the signing of the Paris Peace Accords in January 1973",
+    "source_origin": "Associated Press Wirephoto / United States Department of State Archives",
+    "source_text": "Contemporary archival extract."
+  },
+  {
+    "lessonNum": 16,
+    "kt": "KT4",
+    "q12m": "Explain why South Vietnam collapsed so rapidly in 1975 following the withdrawal of US forces. [12 marks]",
+    "stimuli": [
+      "The corruption and military weaknesses of the ARVN",
+      "US congressional cuts to military and economic aid"
+    ],
+    "q4m_topic": "the physical and psychological toll on US combat soldiers in Vietnam",
+    "source_origin": "National Archives Still Pictures, Record Group 111, Washington D.C.",
+    "source_text": "Contemporary archival extract."
+  }
+]

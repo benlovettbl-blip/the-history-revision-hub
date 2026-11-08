@@ -1,3 +1,5 @@
+import { isVerifiedPdf } from '../verified_pdf_manifest.js';
+
 /**
  * Hero Curricular Launchpad Engine
  * Renders the high-status 3-Pillars Quick-Launch Bar (Master Textbook, Pupil Workbook,
@@ -461,9 +463,14 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
             <i class="fa-solid fa-book-open"></i>
             <span>${tb.label}</span>
           </button>
+          ${
+            isVerifiedPdf(tb.pdfUrl)
+              ? `
           <a href="${tb.pdfUrl}" target="_blank" download title="Download Master Textbook PDF" class="launchpad-pill-pdf">
             <i class="fa-solid fa-file-pdf"></i>
-          </a>
+          </a>`
+              : ''
+          }
         </div>`
     : '';
 
@@ -487,9 +494,14 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
             <i class="${wbIcon}"></i>
             <span>${wb.label}</span>
           </button>
+          ${
+            isVerifiedPdf(wb.pdfUrl)
+              ? `
           <a href="${wb.pdfUrl}" target="_blank" download title="${wbDownloadTooltip}" class="launchpad-pill-pdf">
             <i class="fa-solid fa-file-pdf"></i>
-          </a>
+          </a>`
+              : ''
+          }
         </div>`
     : '';
 
@@ -501,9 +513,14 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
             <i class="fa-solid fa-brain"></i>
             <span>${rc.label}</span>
           </button>
+          ${
+            isVerifiedPdf(rc.pdfUrl)
+              ? `
           <a href="${rc.pdfUrl}" target="_blank" download title="Download ${cleanRcTitle || rc.label} PDF" class="launchpad-pill-pdf">
             <i class="fa-solid fa-file-pdf"></i>
-          </a>
+          </a>`
+              : ''
+          }
         </div>`
     : '';
 
@@ -515,9 +532,14 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
             <i class="fa-solid fa-layer-group"></i>
             <span>${cb.label}</span>
           </button>
+          ${
+            isVerifiedPdf(cb.pdfUrl)
+              ? `
           <a href="${cb.pdfUrl}" target="_blank" download title="Download Combined Master Scholar Workbook (24 Pages) PDF" class="launchpad-pill-pdf">
             <i class="fa-solid fa-file-pdf"></i>
-          </a>
+          </a>`
+              : ''
+          }
         </div>`
     : '';
 

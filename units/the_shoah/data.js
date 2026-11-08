@@ -1,13 +1,13 @@
 export default {
   "synopsis": "Before the catastrophic rupture of the Second World War, over nine million Jewish people inhabited every corner of Europe, speaking dozens of languages and enriching the intellectual, artistic, and political fabric of the continent. Trace how Adolf Hitler and the Nazi regime systematically weaponized racial antisemitism to strip German Jews of civil rights and legal personhood, before exploiting the smoke and chaos of total war to engineer the continent-wide annihilation of six million human beings. From the claustrophobic terror of the Warsaw Ghetto and the secret chronicle of the Ringelblum Archive to the mass shootings of the Einsatzgruppen in the killing fields of Ukraine, the industrial extermination machinery of Auschwitz-Birkenau, and the armed heroism of ghetto fighters and righteous rescuers—confront the deepest moral questions of complicity, indifference, human resistance, and the enduring obligation to remember.",
   "synopsis_tags": [
-      "Pre-War Jewish Life & Culture",
-      "Nuremberg Laws & Kristallnacht (1935–38)",
-      "Warsaw Ghetto & The Ringelblum Archive",
-      "Einsatzgruppen & Holocaust by Bullets",
-      "Auschwitz-Birkenau & Extermination Camps",
-      "Armed Resistance & Righteous Rescuers",
-      "Liberation & The Nuremberg Trials"
+    "Pre-War Jewish Life & Culture",
+    "Nuremberg Laws & Kristallnacht (1935–38)",
+    "Warsaw Ghetto & The Ringelblum Archive",
+    "Einsatzgruppen & Holocaust by Bullets",
+    "Auschwitz-Birkenau & Extermination Camps",
+    "Armed Resistance & Righteous Rescuers",
+    "Liberation & The Nuremberg Trials"
   ],
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
@@ -797,7 +797,7 @@ export default {
               "Pale of Settlement"
             ]
           },
-          "model_answer": "One consequence of the April 1933 Nazi anti-Jewish boycott was the legal and social exclusion of German Jews from public life. Specifically, SA stormtroopers stood outside Jewish shops and doctors' surgeries with placards, deterring customers and signaling to the German public that the Nazi state was systematically isolating Jews from the economy.",
+          "model_answer": "One decisive consequence of the rise of 19th-century racial antisemitism was that anti-Jewish hostility became biological and inescapable rather than religious. Under pseudo-scientific theories pioneered by figures like Wilhelm Marr and Houston Stewart Chamberlain, Jews were classified as a distinct, unchangeable biological \"race\" rather than a religious group, meaning religious conversion or cultural assimilation could no longer offer protection. Specifically, this new racial ideology fueled political antisemitic parties across Germany and Austria and legitimized violent, state-tolerated pogroms in the Russian Empire (such as the 1881–1884 pogrom waves), driving over two million traumatised Jews to flee Eastern Europe.",
           "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]"
         }
       ],
@@ -1323,6 +1323,193 @@ export default {
           "answer": "Wilhelm Marr",
           "a": "Wilhelm Marr",
           "explanation": "German theorist Wilhelm Marr coined the term antisemitism in 1879, defining Jewish identity as an unchangeable biological race."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "c. 1930s",
+          "heading": "The European Mosaic: 9.5 Million Lives (c. 1930s)",
+          "focus_clue": "What made European Jewish life before 1939 so geographically diverse?",
+          "words": [
+            {
+              "term": "9.5 million Jewish people",
+              "clue": "The total Jewish population residing across continental Europe on the eve of the Second World War."
+            },
+            {
+              "term": "European Jewry",
+              "clue": "The diverse communities of Jewish people living across Europe with rich cultural, religious, and civic traditions."
+            },
+            {
+              "term": "Yiddish",
+              "clue": "The Germanic language written in Hebrew characters spoken by the majority of Ashkenazi Jews in Central and Eastern Europe."
+            }
+          ],
+          "model_sentence": "Prior to the Second World War, the vibrant tapestry of <strong>European Jewry</strong> encompassed over <strong>9.5 million Jewish people</strong>, many of whom spoke <strong>Yiddish</strong> in thriving communities across Central and Eastern Europe.",
+          "key_terms": [
+            {
+              "term": "9.5 million Jewish people",
+              "clue": "The total Jewish population residing across continental Europe on the eve of the Second World War."
+            },
+            {
+              "term": "European Jewry",
+              "clue": "The diverse communities of Jewish people living across Europe with rich cultural, religious, and civic traditions."
+            },
+            {
+              "term": "Yiddish",
+              "clue": "The Germanic language written in Hebrew characters spoken by the majority of Ashkenazi Jews in Central and Eastern Europe."
+            }
+          ],
+          "title": "The European Mosaic: 9.5 Million Lives (c. 1930s)",
+          "dates": "c. 1930s"
+        },
+        {
+          "step": 2,
+          "date": "Pre-1939",
+          "heading": "Yiddishland: The Cultural Heartland of Eastern Europe",
+          "focus_clue": "Why was Vilna known as the \"Jerusalem of the North\"?",
+          "words": [
+            {
+              "term": "shtetls",
+              "clue": "Small market towns in Poland, Ukraine, and Lithuania with large, close-knit Jewish populations."
+            },
+            {
+              "term": "Yiddish culture",
+              "clue": "The flourishing literary, musical, and theatrical heritage that defined Jewish daily life in Eastern Europe."
+            },
+            {
+              "term": "Vilna",
+              "clue": "The capital of Lithuania celebrated as the 'Jerusalem of the North' for its renowned talmudic academies and secular Yiddish institutes."
+            }
+          ],
+          "model_sentence": "Centred in small market towns known as <strong>shtetls</strong> and major cultural capitals like <strong>Vilna</strong>, Eastern European Jewish civilization flourished through the everyday vitality of <strong>Yiddish culture</strong>.",
+          "key_terms": [
+            {
+              "term": "shtetls",
+              "clue": "Small market towns in Poland, Ukraine, and Lithuania with large, close-knit Jewish populations."
+            },
+            {
+              "term": "Yiddish culture",
+              "clue": "The flourishing literary, musical, and theatrical heritage that defined Jewish daily life in Eastern Europe."
+            },
+            {
+              "term": "Vilna",
+              "clue": "The capital of Lithuania celebrated as the 'Jerusalem of the North' for its renowned talmudic academies and secular Yiddish institutes."
+            }
+          ],
+          "title": "Yiddishland: The Cultural Heartland of Eastern Europe",
+          "dates": "Pre-1939"
+        },
+        {
+          "step": 3,
+          "date": "1871–1933",
+          "heading": "Integration, Patriotism, and Civic Life in Central Europe",
+          "focus_clue": "How does the First World War service of German Jews refute Nazi stereotypes?",
+          "words": [
+            {
+              "term": "assimilated",
+              "clue": "Jewish citizens who integrated deeply into mainstream German culture, language, university education, and professional life."
+            },
+            {
+              "term": "100,000 German Jewish soldiers",
+              "clue": "The patriotic Jewish men who enlisted in the Kaiser's army during WWI, with 12,000 dying on the battlefields for Germany."
+            },
+            {
+              "term": "German & Western Jews",
+              "clue": "Communities in Germany, France, and Britain who viewed themselves as patriotic citizens of their respective nations."
+            }
+          ],
+          "model_sentence": "In Weimar Germany, highly <strong>assimilated</strong> communities of <strong>German & Western Jews</strong> took immense pride in their citizenship, demonstrated when over <strong>100,000 German Jewish soldiers</strong> served in the imperial armed forces.",
+          "key_terms": [
+            {
+              "term": "assimilated",
+              "clue": "Jewish citizens who integrated deeply into mainstream German culture, language, university education, and professional life."
+            },
+            {
+              "term": "100,000 German Jewish soldiers",
+              "clue": "The patriotic Jewish men who enlisted in the Kaiser's army during WWI, with 12,000 dying on the battlefields for Germany."
+            },
+            {
+              "term": "German & Western Jews",
+              "clue": "Communities in Germany, France, and Britain who viewed themselves as patriotic citizens of their respective nations."
+            }
+          ],
+          "title": "Integration, Patriotism, and Civic Life in Central Europe",
+          "dates": "1871–1933"
+        },
+        {
+          "step": 4,
+          "date": "Centuries to 1930s",
+          "heading": "The Sephardic World: Heritage of Southern Europe",
+          "focus_clue": "What distinguished the Sephardic Jewish experience in Southern Europe?",
+          "words": [
+            {
+              "term": "Sephardic Jewish communities",
+              "clue": "Communities descended from Jews expelled from Spain and Portugal in the 1490s, settled across the Mediterranean."
+            },
+            {
+              "term": "Thessaloniki",
+              "clue": "The historic Aegean port city known as the 'Jerusalem of the Balkans', where Sephardic Jews formed the majority of the city's population."
+            },
+            {
+              "term": "Ladino language",
+              "clue": "The Judeo-Spanish language spoken and written in Hebrew script by Sephardic communities for over four centuries."
+            }
+          ],
+          "model_sentence": "Vibrant <strong>Sephardic Jewish communities</strong> flourished across Southern Europe, most notably in <strong>Thessaloniki</strong> where families maintained their rich heritage and traditional <strong>Ladino language</strong>.",
+          "key_terms": [
+            {
+              "term": "Sephardic Jewish communities",
+              "clue": "Communities descended from Jews expelled from Spain and Portugal in the 1490s, settled across the Mediterranean."
+            },
+            {
+              "term": "Thessaloniki",
+              "clue": "The historic Aegean port city known as the 'Jerusalem of the Balkans', where Sephardic Jews formed the majority of the city's population."
+            },
+            {
+              "term": "Ladino language",
+              "clue": "The Judeo-Spanish language spoken and written in Hebrew script by Sephardic communities for over four centuries."
+            }
+          ],
+          "title": "The Sephardic World: Heritage of Southern Europe",
+          "dates": "Centuries to 1930s"
+        },
+        {
+          "step": 5,
+          "date": "Late 19th Century",
+          "heading": "The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism",
+          "focus_clue": "Why was the invention of racial antisemitism so deadly?",
+          "words": [
+            {
+              "term": "religious anti-Judaism",
+              "clue": "Centuries-old Christian theology blaming Jews for the death of Christ, restricting guild membership and land ownership."
+            },
+            {
+              "term": "racial antisemitism",
+              "clue": "The 19th-century pseudo-scientific doctrine treating Jewish identity as an unchangeable biological infection carried in the blood."
+            },
+            {
+              "term": "pseudo-scientific biological racism",
+              "clue": "The Social Darwinist theory that human races were locked in an existential biological struggle for survival and supremacy."
+            }
+          ],
+          "model_sentence": "While medieval Church hatred was rooted in <strong>religious anti-Judaism</strong>, late nineteenth-century nationalists embraced <strong>racial antisemitism</strong> grounded in <strong>pseudo-scientific biological racism</strong>.",
+          "key_terms": [
+            {
+              "term": "religious anti-Judaism",
+              "clue": "Centuries-old Christian theology blaming Jews for the death of Christ, restricting guild membership and land ownership."
+            },
+            {
+              "term": "racial antisemitism",
+              "clue": "The 19th-century pseudo-scientific doctrine treating Jewish identity as an unchangeable biological infection carried in the blood."
+            },
+            {
+              "term": "pseudo-scientific biological racism",
+              "clue": "The Social Darwinist theory that human races were locked in an existential biological struggle for survival and supremacy."
+            }
+          ],
+          "title": "The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism",
+          "dates": "Late 19th Century"
         }
       ]
     },
@@ -2521,6 +2708,165 @@ export default {
           "a": "December 1938 to September 1939",
           "explanation": "The Kindertransport operated between December 1938 and the outbreak of war on 1 September 1939."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "April 1933",
+          "heading": "The Boycott and the Civil Service Purge (1933)",
+          "focus_clue": "Why did the Nazis begin their persecution with economic boycotts and civil service laws?",
+          "words": [
+            {
+              "term": "nationwide anti-Jewish boycott (1 April 1933)",
+              "clue": "The state-sponsored one-day commercial boycott where SA men stood outside Jewish-owned shops with placards."
+            },
+            {
+              "term": "Civil Service Restoration Act (7 April 1933)",
+              "clue": "The Nazi law ordering the dismissal of all non-Aryan civil servants, teachers, and university professors."
+            },
+            {
+              "term": "Nazi SA stormtrooper intimidation",
+              "clue": "Violent paramilitaries in brown uniforms who harassed customers, painted Stars of David, and enforced the boycott."
+            }
+          ],
+          "model_sentence": "Beginning with the <strong>nationwide anti-Jewish boycott (1 April 1933)</strong> enforced by <strong>Nazi SA stormtrooper intimidation</strong>, the regime rapidly purged Jews under the <strong>Civil Service Restoration Act (7 April 1933)</strong>.",
+          "title": "The Boycott and the Civil Service Purge (1933)",
+          "dates": "April 1933"
+        },
+        {
+          "step": 2,
+          "date": "September 1935",
+          "heading": "The 1935 Nuremberg Laws: Redefining Citizenship",
+          "focus_clue": "How did the Nuremberg Laws fundamentally redefine German citizenship?",
+          "words": [
+            {
+              "term": "Nuremberg Laws",
+              "clue": "The September 1935 legal statutes that formally stripped German Jews of citizenship, political rights, and marital freedom."
+            },
+            {
+              "term": "Reich Citizenship Law",
+              "clue": "The decree stripping Jews of German citizenship and reducing them to 'subjects of the state' without basic constitutional rights."
+            },
+            {
+              "term": "Law for Protection of German Blood",
+              "clue": "The statute criminalizing marriage and sexual relations between Jewish citizens and Germans of 'Aryan' blood."
+            }
+          ],
+          "model_sentence": "Announced at the September 1935 Nuremberg Party Rally, the <strong>Nuremberg Laws</strong> enacted the <strong>Reich Citizenship Law</strong> alongside the <strong>Law for Protection of German Blood</strong>.",
+          "key_terms": [
+            {
+              "term": "Nuremberg Laws",
+              "clue": "The September 1935 legal statutes that formally stripped German Jews of citizenship, political rights, and marital freedom."
+            },
+            {
+              "term": "Reich Citizenship Law",
+              "clue": "The decree stripping Jews of German citizenship and reducing them to 'subjects of the state' without basic constitutional rights."
+            },
+            {
+              "term": "Law for Protection of German Blood",
+              "clue": "The statute criminalizing marriage and sexual relations between Jewish citizens and Germans of 'Aryan' blood."
+            }
+          ],
+          "title": "The 1935 Nuremberg Laws: Redefining Citizenship",
+          "dates": "September 1935"
+        },
+        {
+          "step": 3,
+          "date": "1935–1938",
+          "heading": "Daily Exclusion and \"Social Death\" (1935–1938)",
+          "focus_clue": "What does Victor Klemperer’s diary reveal about the psychological impact of daily decrees?",
+          "words": [
+            {
+              "term": "400 separate anti-Jewish decrees",
+              "clue": "The pervasive web of bureaucratic regulations passed between 1933 and 1938 barring Jews from medicine, law, parks, and universities."
+            },
+            {
+              "term": "'social death' exclusion",
+              "clue": "The complete, systematic isolation of Jews from ordinary German society and public spaces through legal segregation."
+            },
+            {
+              "term": "Aryanization of businesses",
+              "clue": "The forced transfer of Jewish-owned shops, factories, and property to non-Jewish German buyers at rock-bottom prices."
+            }
+          ],
+          "model_sentence": "Enforced through more than <strong>400 separate anti-Jewish decrees</strong>, the systematic <strong>Aryanization of businesses</strong> inflicted catastrophic <strong>'social death' exclusion</strong> upon German Jews.",
+          "key_terms": [
+            {
+              "term": "400 separate anti-Jewish decrees",
+              "clue": "The pervasive web of bureaucratic regulations passed between 1933 and 1938 barring Jews from medicine, law, parks, and universities."
+            },
+            {
+              "term": "'social death' exclusion",
+              "clue": "The complete, systematic isolation of Jews from ordinary German society and public spaces through legal segregation."
+            },
+            {
+              "term": "Aryanization of businesses",
+              "clue": "The forced transfer of Jewish-owned shops, factories, and property to non-Jewish German buyers at rock-bottom prices."
+            }
+          ],
+          "title": "Daily Exclusion and \"Social Death\" (1935–1938)",
+          "dates": "1935–1938"
+        },
+        {
+          "step": 4,
+          "date": "9–10 Nov 1938",
+          "heading": "The November Pogrom (\"Kristallnacht\", 9–10 November 1938)",
+          "focus_clue": "Why was the November Pogrom a decisive turning point in Nazi anti-Jewish policy?",
+          "words": [
+            {
+              "term": "9–10 November 1938",
+              "clue": "On the night of 9–10 November 1938, the regime orchestrated a violent nationwide pogrom known as Kristallnacht (Night of Broken Glass)."
+            },
+            {
+              "term": "Kristallnacht",
+              "clue": "On the night of 9–10 November 1938, the regime orchestrated a violent nationwide pogrom known as Kristallnacht (Night of Broken Glass)."
+            },
+            {
+              "term": "1,400 synagogues were burned",
+              "clue": "Over forty-eight hours, mobs attacked Jewish communities: over 1,400 synagogues were burned or destroyed, 7,500 businesses trashed, and at least ninety-one Jews murdered."
+            }
+          ],
+          "model_sentence": "Orchestrated by the Nazi regime on 9-10 November 1938, the violent pogrom known as <strong>9–10 November 1938</strong> destroyed over 1,000 synagogues and saw 30,000 Jewish men deported to <strong>Kristallnacht</strong> under the authority of <strong>1,400 synagogues were burned</strong>.",
+          "title": "The November Pogrom (\"Kristallnacht\", 9–10 November 1938)",
+          "dates": "9–10 Nov 1938"
+        },
+        {
+          "step": 5,
+          "date": "1938–1939",
+          "heading": "The Refugee Crisis: Closed Doors and the Kindertransport",
+          "focus_clue": "Why did the Evian Conference fail to rescue European Jews?",
+          "words": [
+            {
+              "term": "Évian Conference (1938)",
+              "clue": "The July 1938 international conference called by Roosevelt where 32 nations offered sympathy but refused to expand immigration quotas for German Jewish refugees."
+            },
+            {
+              "term": "Kindertransport",
+              "clue": "The British rescue mission that brought nearly 10,000 unaccompanied refugee children to safety in the UK between December 1938 and September 1939."
+            },
+            {
+              "term": "10,000 refugee children rescued",
+              "clue": "The predominantly Jewish children under 17 given temporary asylum in Britain provided they had private sponsors and left their parents behind."
+            }
+          ],
+          "model_sentence": "Following international inaction at the <strong>Évian Conference (1938)</strong>, the British <strong>Kindertransport</strong> initiative saw nearly <strong>10,000 refugee children rescued</strong> from escalating Nazi terror.",
+          "key_terms": [
+            {
+              "term": "Évian Conference (1938)",
+              "clue": "The July 1938 international conference called by Roosevelt where 32 nations offered sympathy but refused to expand immigration quotas for German Jewish refugees."
+            },
+            {
+              "term": "Kindertransport",
+              "clue": "The British rescue mission that brought nearly 10,000 unaccompanied refugee children to safety in the UK between December 1938 and September 1939."
+            },
+            {
+              "term": "10,000 refugee children rescued",
+              "clue": "The predominantly Jewish children under 17 given temporary asylum in Britain provided they had private sponsors and left their parents behind."
+            }
+          ],
+          "title": "The Refugee Crisis: Closed Doors and the Kindertransport",
+          "dates": "1938–1939"
+        }
       ]
     },
     {
@@ -3716,6 +4062,179 @@ export default {
           "answer": "Ten metal boxes and two aluminium milk cans",
           "a": "Ten metal boxes and two aluminium milk cans",
           "explanation": "The documents were sealed into ten metal boxes and two heavy aluminium milk cans, discovered in 1946 and 1950."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "September 1939",
+          "heading": "The Conquest of Poland and Heydrich’s Plan (1939)",
+          "focus_clue": "How did the conquest of Poland fundamentally alter the scale of the Jewish population under Nazi control?",
+          "words": [
+            {
+              "term": "invasion of Poland (1 September 1939)",
+              "clue": "The German blitzkrieg attack that initiated WWII and placed over two million Polish Jews under brutal Nazi occupation."
+            },
+            {
+              "term": "two million Polish Jews",
+              "clue": "The massive Jewish population of occupied Poland, far larger than Germany's pre-war Jewish community of 500,000."
+            },
+            {
+              "term": "Heydrich's Schnellbrief (21 September 1939)",
+              "clue": "The urgent directive ordering all Polish Jews to be gathered from rural villages and concentrated into cities near rail junctions."
+            }
+          ],
+          "model_sentence": "Following the <strong>invasion of Poland (1 September 1939)</strong> that trapped <strong>two million Polish Jews</strong>, Reinhard Heydrich issued <strong>Heydrich's Schnellbrief (21 September 1939)</strong> ordering concentration into urban ghettos.",
+          "title": "The Conquest of Poland and Heydrich’s Plan (1939)",
+          "dates": "September 1939"
+        },
+        {
+          "step": 2,
+          "date": "Autumn 1939",
+          "heading": "Stigmatisation, Forced Labour, and the Yellow Star",
+          "focus_clue": "Why was the mandatory wearing of the Star of David such a devastating psychological weapon?",
+          "words": [
+            {
+              "term": "Hans Frank (General Government)",
+              "clue": "Nazi Governor-General of occupied central Poland who oversaw forced labor, ghettoization, and plunder from Wawel Castle."
+            },
+            {
+              "term": "compulsory Yellow Star badge",
+              "clue": "The yellow Star of David badge that all Polish Jews aged ten and over were forced to wear on their clothing under pain of death."
+            },
+            {
+              "term": "forced labour decree",
+              "clue": "The October 1939 decree conscripting all Jewish men aged 14 to 60 into brutal manual labor battalions without pay or rights."
+            }
+          ],
+          "model_sentence": "Under the authority of <strong>Hans Frank (General Government)</strong>, occupation officials enacted a draconian <strong>forced labour decree</strong> and mandated the <strong>compulsory Yellow Star badge</strong>.",
+          "key_terms": [
+            {
+              "term": "Hans Frank (General Government)",
+              "clue": "Nazi Governor-General of occupied central Poland who oversaw forced labor, ghettoization, and plunder from Wawel Castle."
+            },
+            {
+              "term": "compulsory Yellow Star badge",
+              "clue": "The yellow Star of David badge that all Polish Jews aged ten and over were forced to wear on their clothing under pain of death."
+            },
+            {
+              "term": "forced labour decree",
+              "clue": "The October 1939 decree conscripting all Jewish men aged 14 to 60 into brutal manual labor battalions without pay or rights."
+            }
+          ],
+          "title": "Stigmatisation, Forced Labour, and the Yellow Star",
+          "dates": "Autumn 1939"
+        },
+        {
+          "step": 3,
+          "date": "1940–1941",
+          "heading": "The Walls Go Up: The Warsaw and Łódź Ghettos (1940)",
+          "focus_clue": "What physical and demographic conditions defined life inside the Warsaw Ghetto?",
+          "words": [
+            {
+              "term": "urban ghettos",
+              "clue": "Walled, overcrowded districts in Polish cities established by Nazi occupiers to isolate, exploit, and starve Jewish populations."
+            },
+            {
+              "term": "Warsaw Ghetto",
+              "clue": "The largest ghetto in Nazi-occupied Europe, confining over 400,000 Jews into just 1.3 square miles under catastrophic humanitarian conditions."
+            },
+            {
+              "term": "sealed brick walls",
+              "clue": "Ten-foot high brick walls topped with broken glass and barbed wire constructed around the ghetto perimeter, guarded by armed police."
+            }
+          ],
+          "model_sentence": "Nazi authorities established overcrowded <strong>urban ghettos</strong> to segregate Polish Jewry, imprisoning over 400,000 people inside the <strong>Warsaw Ghetto</strong> behind <strong>sealed brick walls</strong>.",
+          "key_terms": [
+            {
+              "term": "urban ghettos",
+              "clue": "Walled, overcrowded districts in Polish cities established by Nazi occupiers to isolate, exploit, and starve Jewish populations."
+            },
+            {
+              "term": "Warsaw Ghetto",
+              "clue": "The largest ghetto in Nazi-occupied Europe, confining over 400,000 Jews into just 1.3 square miles under catastrophic humanitarian conditions."
+            },
+            {
+              "term": "sealed brick walls",
+              "clue": "Ten-foot high brick walls topped with broken glass and barbed wire constructed around the ghetto perimeter, guarded by armed police."
+            }
+          ],
+          "title": "The Walls Go Up: The Warsaw and Łódź Ghettos (1940)",
+          "dates": "1940–1941"
+        },
+        {
+          "step": 4,
+          "date": "1940–1942",
+          "heading": "Starvation, Typhus, and the Child Smugglers",
+          "focus_clue": "How did food rationing function as an instrument of slow mass murder in the ghettos?",
+          "words": [
+            {
+              "term": "180 to 220 calories a day",
+              "clue": "The deliberate starvation rations allotted to Polish Jews in sealed ghettoes, barely eight percent of adult daily nutritional needs."
+            },
+            {
+              "term": "deliberate starvation policy",
+              "clue": "Nazi economic planning designed to exterminate urban ghetto populations through famine, hypothermia, and typhus epidemics."
+            },
+            {
+              "term": "Warsaw child smugglers",
+              "clue": "Heroic children who squeezed through drainage gutters and holes in the brick wall to bring food into the starving Warsaw Ghetto."
+            }
+          ],
+          "model_sentence": "Confronting a ruthless <strong>deliberate starvation policy</strong> providing only <strong>180 to 220 calories a day</strong>, heroic <strong>Warsaw child smugglers</strong> risked execution to smuggle food past guards.",
+          "key_terms": [
+            {
+              "term": "180 to 220 calories a day",
+              "clue": "The deliberate starvation rations allotted to Polish Jews in sealed ghettoes, barely eight percent of adult daily nutritional needs."
+            },
+            {
+              "term": "deliberate starvation policy",
+              "clue": "Nazi economic planning designed to exterminate urban ghetto populations through famine, hypothermia, and typhus epidemics."
+            },
+            {
+              "term": "Warsaw child smugglers",
+              "clue": "Heroic children who squeezed through drainage gutters and holes in the brick wall to bring food into the starving Warsaw Ghetto."
+            }
+          ],
+          "title": "Starvation, Typhus, and the Child Smugglers",
+          "dates": "1940–1942"
+        },
+        {
+          "step": 5,
+          "date": "1940–1943",
+          "heading": "Spiritual Resistance: The Secret Oneg Shabbat Archive",
+          "focus_clue": "Why was the creation of the Oneg Shabbat archive an extraordinary act of spiritual resistance?",
+          "words": [
+            {
+              "term": "Emanuel Ringelblum",
+              "clue": "The heroic Polish-Jewish historian who assembled and directed the clandestine underground archive chronicling the tragedy of the Warsaw Ghetto."
+            },
+            {
+              "term": "Oyneg Shabes archive",
+              "clue": "The secret codename ('Sabbath Joy') for the clandestine historical archive that gathered diaries, ration cards, posters, and photographs."
+            },
+            {
+              "term": "buried milk cans",
+              "clue": "The heavy metal containers and tin boxes used to bury the archive beneath ghetto basements to ensure the historical truth survived."
+            }
+          ],
+          "model_sentence": "Under the leadership of historian <strong>Emanuel Ringelblum</strong>, the clandestine <strong>Oyneg Shabes archive</strong> preserved eyewitness testimony of ghetto life inside sealed tin boxes and <strong>buried milk cans</strong>.",
+          "key_terms": [
+            {
+              "term": "Emanuel Ringelblum",
+              "clue": "The heroic Polish-Jewish historian who assembled and directed the clandestine underground archive chronicling the tragedy of the Warsaw Ghetto."
+            },
+            {
+              "term": "Oyneg Shabes archive",
+              "clue": "The secret codename ('Sabbath Joy') for the clandestine historical archive that gathered diaries, ration cards, posters, and photographs."
+            },
+            {
+              "term": "buried milk cans",
+              "clue": "The heavy metal containers and tin boxes used to bury the archive beneath ghetto basements to ensure the historical truth survived."
+            }
+          ],
+          "title": "Spiritual Resistance: The Secret Oneg Shabbat Archive",
+          "dates": "1940–1943"
         }
       ]
     },
@@ -4923,6 +5442,179 @@ export default {
           "a": "Chełmno",
           "explanation": "At Chełmno in December 1941, the SS began using sealed gas vans powered by carbon monoxide exhaust fumes."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "22 June 1941",
+          "heading": "Operation Barbarossa: Ideological Annihilation (June 1941)",
+          "focus_clue": "Why did the invasion of the Soviet Union differ fundamentally from the earlier campaigns in Western Europe?",
+          "words": [
+            {
+              "term": "22 June 1941",
+              "clue": "The date Adolf Hitler launched Operation Barbarossa, invading the Soviet Union with three million soldiers."
+            },
+            {
+              "term": "Operation Barbarossa",
+              "clue": "The Axis invasion of the USSR, framed from the beginning as an ideological war of extermination against Judeo-Bolshevism."
+            },
+            {
+              "term": "Adolf Hitler & German High Command",
+              "clue": "Nazi military leaders who issued criminal orders, including the Commissar Order, authorizing the summary execution of Soviet captives."
+            }
+          ],
+          "model_sentence": "Launched on <strong>22 June 1941</strong> under the ideological leadership of <strong>Adolf Hitler & German High Command</strong>, <strong>Operation Barbarossa</strong> transformed the conflict into an uncompromising war of racial annihilation.",
+          "title": "Operation Barbarossa: Ideological Annihilation (June 1941)",
+          "dates": "22 June 1941"
+        },
+        {
+          "step": 2,
+          "date": "Summer 1941",
+          "heading": "The Einsatzgruppen and Order Police Battalions",
+          "focus_clue": "How did the Einsatzgruppen’s killing mandate radicalise between June and August 1941?",
+          "words": [
+            {
+              "term": "SS Einsatzgruppen",
+              "clue": "Four mobile paramilitary death squads (A, B, C, and D) assigned to follow Wehrmacht armies and execute Soviet Jews and commissars."
+            },
+            {
+              "term": "Order Police battalions",
+              "clue": "Militarized German police battalions, such as Reserve Police Battalion 101, who carried out mass roundups and shooting executions."
+            },
+            {
+              "term": "'Holocaust by Bullets'",
+              "clue": "The phase of the genocide where over 1.5 million Jewish civilians were murdered in face-to-face mass shootings across the USSR."
+            }
+          ],
+          "model_sentence": "Following the invasion of the Soviet Union, <strong>SS Einsatzgruppen</strong> mobile death squads cooperated with <strong>Order Police battalions</strong> to conduct the horrific <strong>'Holocaust by Bullets'</strong>.",
+          "key_terms": [
+            {
+              "term": "SS Einsatzgruppen",
+              "clue": "Four mobile paramilitary death squads (A, B, C, and D) assigned to follow Wehrmacht armies and execute Soviet Jews and commissars."
+            },
+            {
+              "term": "Order Police battalions",
+              "clue": "Militarized German police battalions, such as Reserve Police Battalion 101, who carried out mass roundups and shooting executions."
+            },
+            {
+              "term": "'Holocaust by Bullets'",
+              "clue": "The phase of the genocide where over 1.5 million Jewish civilians were murdered in face-to-face mass shootings across the USSR."
+            }
+          ],
+          "title": "The Einsatzgruppen and Order Police Battalions",
+          "dates": "Summer 1941"
+        },
+        {
+          "step": 3,
+          "date": "29–30 Sept 1941",
+          "heading": "The Massacre at Babi Yar (Kyiv, September 1941)",
+          "focus_clue": "What made the massacre at Babi Yar such a terrifying manifestation of industrialised face-to-face murder?",
+          "words": [
+            {
+              "term": "Babyn Yar ravine massacre",
+              "clue": "The ravine outside Kyiv, Ukraine, where 33,771 Jewish men, women, and children were methodically shot over two days in September 1941."
+            },
+            {
+              "term": "33,771 shot in 36 hours",
+              "clue": "The exact execution count recorded in SS Operational Situation Report No. 101 documenting the slaughter at Babyn Yar."
+            },
+            {
+              "term": "Sonderkommando 4a & Order Police",
+              "clue": "The specialized SS execution unit led by Paul Blobel and assisted by Police Battalion 45 that organized the Babyn Yar massacre."
+            }
+          ],
+          "model_sentence": "During the horrific <strong>Babyn Yar ravine massacre</strong> outside Kyiv, <strong>Sonderkommando 4a & Order Police</strong> murdered <strong>33,771 shot in 36 hours</strong> into mass burial trenches.",
+          "key_terms": [
+            {
+              "term": "Babyn Yar ravine massacre",
+              "clue": "The ravine outside Kyiv, Ukraine, where 33,771 Jewish men, women, and children were methodically shot over two days in September 1941."
+            },
+            {
+              "term": "33,771 shot in 36 hours",
+              "clue": "The exact execution count recorded in SS Operational Situation Report No. 101 documenting the slaughter at Babyn Yar."
+            },
+            {
+              "term": "Sonderkommando 4a & Order Police",
+              "clue": "The specialized SS execution unit led by Paul Blobel and assisted by Police Battalion 45 that organized the Babyn Yar massacre."
+            }
+          ],
+          "title": "The Massacre at Babi Yar (Kyiv, September 1941)",
+          "dates": "29–30 Sept 1941"
+        },
+        {
+          "step": 4,
+          "date": "1941–1942",
+          "heading": "Massacres Across the Baltics and Local Collaboration",
+          "focus_clue": "What role did local auxiliary collaborators play in the mass shootings across the Baltic States and Ukraine?",
+          "words": [
+            {
+              "term": "Ponary Forest massacres",
+              "clue": "The wooded pits outside Vilnius, Lithuania, where over 70,000 Jewish victims were shot by Einsatzgruppen and local collaborators."
+            },
+            {
+              "term": "Einsatzgruppe A killing squads",
+              "clue": "The SS unit operating in the Baltic states responsible for murdering nearly 250,000 Jews within six months of the invasion."
+            },
+            {
+              "term": "local Baltic collaboration",
+              "clue": "Auxiliary militia units from Lithuania and Latvia who actively carried out pogroms and mass shootings alongside SS commanders."
+            }
+          ],
+          "model_sentence": "At the <strong>Ponary Forest massacres</strong>, the genocidal operations of <strong>Einsatzgruppe A killing squads</strong> were facilitated by extensive <strong>local Baltic collaboration</strong>.",
+          "key_terms": [
+            {
+              "term": "Ponary Forest massacres",
+              "clue": "The wooded pits outside Vilnius, Lithuania, where over 70,000 Jewish victims were shot by Einsatzgruppen and local collaborators."
+            },
+            {
+              "term": "Einsatzgruppe A killing squads",
+              "clue": "The SS unit operating in the Baltic states responsible for murdering nearly 250,000 Jews within six months of the invasion."
+            },
+            {
+              "term": "local Baltic collaboration",
+              "clue": "Auxiliary militia units from Lithuania and Latvia who actively carried out pogroms and mass shootings alongside SS commanders."
+            }
+          ],
+          "title": "Massacres Across the Baltics and Local Collaboration",
+          "dates": "1941–1942"
+        },
+        {
+          "step": 5,
+          "date": "Late 1941",
+          "heading": "Perpetrator Strain and the Shift toward Industrial Murder",
+          "focus_clue": "Why did the psychological strain on German shooters drive the transition toward mobile and stationary gas chambers?",
+          "words": [
+            {
+              "term": "mass shooting psychological strain",
+              "clue": "The alcoholism, breakdowns, and demoralization experienced by German shooting squads executing women and children face-to-face."
+            },
+            {
+              "term": "Heinrich Himmler & SS technicians",
+              "clue": "Nazi leaders who sought more impersonal, automated methods of mass extermination to shield executioners from psychological trauma."
+            },
+            {
+              "term": "shift to gas vans",
+              "clue": "The deployment of hermetically sealed trucks redirecting exhaust fumes into passenger compartments, tested at Chełmno in December 1941."
+            }
+          ],
+          "model_sentence": "Citing <strong>mass shooting psychological strain</strong> among execution squads, <strong>Heinrich Himmler & SS technicians</strong> ordered the lethal <strong>shift to gas vans</strong> as a prelude to extermination camps.",
+          "key_terms": [
+            {
+              "term": "mass shooting psychological strain",
+              "clue": "The alcoholism, breakdowns, and demoralization experienced by German shooting squads executing women and children face-to-face."
+            },
+            {
+              "term": "Heinrich Himmler & SS technicians",
+              "clue": "Nazi leaders who sought more impersonal, automated methods of mass extermination to shield executioners from psychological trauma."
+            },
+            {
+              "term": "shift to gas vans",
+              "clue": "The deployment of hermetically sealed trucks redirecting exhaust fumes into passenger compartments, tested at Chełmno in December 1941."
+            }
+          ],
+          "title": "Perpetrator Strain and the Shift toward Industrial Murder",
+          "dates": "Late 1941"
+        }
       ]
     },
     {
@@ -5650,7 +6342,7 @@ export default {
               "human dignity"
             ]
           },
-          "model_answer": "A primary reason prisoners resisted in extermination camps like Treblinka and Sobibor was the desperate realization that total extermination was imminent. When members of the Sonderkommando realized they were destined to be murdered to conceal Nazi crimes, they organized armed uprisings, blowing up crematoria and helping dozens escape to expose the death camps to the world.",
+          "model_answer": "A primary reason Jewish fighters launched the Warsaw Ghetto Uprising in April 1943 was the definitive knowledge that mass deportation meant industrial slaughter. By early 1943, underground courier reports confirmed that over 265,000 Warsaw Jews deported during the Great Action of summer 1942 had been murdered in Treblinka's gas chambers. Underground resistance organizations, notably the Jewish Combat Organization (ŻOB) led by 23-year-old Mordecai Anielewicz and the Jewish Military Union (ŻZW), recognized that the remaining 50,000 starving inhabitants were slated for complete liquidation.<br><br>Furthermore, the fighters were motivated by a desperate determination to die with honor and resist on their own terms. Armed with only smuggled pistols, homemade Molotov cocktails, and captured weapons, young fighters fought from interconnected cellars and sewer bunkers for nearly a month against heavily armed SS troops equipped with flame-throwers and artillery. As Anielewicz wrote, their armed resistance was not about military survival, but an uncompromising moral assertion of Jewish dignity and defiance against Nazi extermination.",
           "topic": "Question 2: Explain Why [8 marks • 12 mins]"
         }
       ],
@@ -6176,6 +6868,165 @@ export default {
           "answer": "Jewish women smuggled it out in matchboxes from a munitions factory",
           "a": "Jewish women smuggled it out in matchboxes from a munitions factory",
           "explanation": "Young women working in the Weichsel-Union-Metallwerke factory, including Roza Robota, smuggled gunpowder in matchboxes."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "20 January 1942",
+          "heading": "The Wannsee Conference: The Bureaucracy of Murder (1942)",
+          "focus_clue": "Why was the Wannsee Conference a meeting of coordination rather than decision-making?",
+          "words": [
+            {
+              "term": "20 January 1942",
+              "clue": "The date fifteen senior Nazi government officials met at a lakeside villa in Berlin to coordinate the Final Solution."
+            },
+            {
+              "term": "Wannsee Conference",
+              "clue": "The ninety-minute secret meeting where administrative leaders coordinated the deportation of 11 million European Jews to death camps."
+            },
+            {
+              "term": "Reinhard Heydrich & 15 State Officials",
+              "clue": "RSHA chief Heydrich and government state secretaries who organized the bureaucratic machinery of mass industrial murder."
+            }
+          ],
+          "model_sentence": "Convening on <strong>20 January 1942</strong> lakeside in Berlin, <strong>Reinhard Heydrich & 15 State Officials</strong> met at the <strong>Wannsee Conference</strong> to coordinate the logistical machinery of the Final Solution.",
+          "title": "The Wannsee Conference: The Bureaucracy of Murder (1942)",
+          "dates": "20 January 1942"
+        },
+        {
+          "step": 2,
+          "date": "1942–1943",
+          "heading": "Operation Reinhard: The Pure Death Camps (1942–1943)",
+          "focus_clue": "What distinguished the Operation Reinhard camps from traditional concentration camps like Dachau?",
+          "words": [
+            {
+              "term": "Operation Reinhard",
+              "clue": "The top-secret Nazi plan coordinated by Odilo Globocnik to murder all two million Polish Jews in the General Government."
+            },
+            {
+              "term": "Bełżec, Sobibór, and Treblinka",
+              "clue": "The three purpose-built industrial death camps constructed in eastern Poland equipped with carbon monoxide gas chambers."
+            },
+            {
+              "term": "1.7 million murder victims",
+              "clue": "The staggering death toll of Jewish men, women, and children slaughtered in the Operation Reinhard camps between March 1942 and late 1943."
+            }
+          ],
+          "model_sentence": "Codenamed <strong>Operation Reinhard</strong>, the Nazi regime constructed the purpose-built death camps of <strong>Bełżec, Sobibór, and Treblinka</strong>, resulting in over <strong>1.7 million murder victims</strong>.",
+          "key_terms": [
+            {
+              "term": "Operation Reinhard",
+              "clue": "The top-secret Nazi plan coordinated by Odilo Globocnik to murder all two million Polish Jews in the General Government."
+            },
+            {
+              "term": "Bełżec, Sobibór, and Treblinka",
+              "clue": "The three purpose-built industrial death camps constructed in eastern Poland equipped with carbon monoxide gas chambers."
+            },
+            {
+              "term": "1.7 million murder victims",
+              "clue": "The staggering death toll of Jewish men, women, and children slaughtered in the Operation Reinhard camps between March 1942 and late 1943."
+            }
+          ],
+          "title": "Operation Reinhard: The Pure Death Camps (1942–1943)",
+          "dates": "1942–1943"
+        },
+        {
+          "step": 3,
+          "date": "1942–1944",
+          "heading": "Auschwitz-Birkenau: The Factory of Industrial Death",
+          "focus_clue": "How did the dual function of Auschwitz-Birkenau operate in practice?",
+          "words": [
+            {
+              "term": "Auschwitz-Birkenau",
+              "clue": "The largest Nazi concentration and extermination complex in Poland, combining industrial slave labour with mass murder via gas chambers."
+            },
+            {
+              "term": "Zyklon B gas chambers",
+              "clue": "The commercial hydrogen cyanide pesticide pellets dropped into disguised underground shower rooms to asphyxiate up to 2,000 victims at a time."
+            },
+            {
+              "term": "1.1 million murdered",
+              "clue": "The human death toll at Auschwitz-Birkenau, including nearly one million European Jews alongside Roma, Soviet prisoners of war, and Poles."
+            }
+          ],
+          "model_sentence": "Operating as an industrial death factory, <strong>Auschwitz-Birkenau</strong> utilized <strong>Zyklon B gas chambers</strong> to execute over <strong>1.1 million murdered</strong> victims, predominantly European Jews.",
+          "key_terms": [
+            {
+              "term": "Auschwitz-Birkenau",
+              "clue": "The largest Nazi concentration and extermination complex in Poland, combining industrial slave labour with mass murder via gas chambers."
+            },
+            {
+              "term": "Zyklon B gas chambers",
+              "clue": "The commercial hydrogen cyanide pesticide pellets dropped into disguised underground shower rooms to asphyxiate up to 2,000 victims at a time."
+            },
+            {
+              "term": "1.1 million murdered",
+              "clue": "The human death toll at Auschwitz-Birkenau, including nearly one million European Jews alongside Roma, Soviet prisoners of war, and Poles."
+            }
+          ],
+          "title": "Auschwitz-Birkenau: The Factory of Industrial Death",
+          "dates": "1942–1944"
+        },
+        {
+          "step": 4,
+          "date": "April–May 1943",
+          "heading": "The Warsaw Ghetto Uprising (April–May 1943)",
+          "focus_clue": "Why was the Warsaw Ghetto Uprising such a monumental act of moral and physical defiance?",
+          "words": [
+            {
+              "term": "ŻOB",
+              "clue": "The Jewish Combat Organisation (ŻOB), led by 24-year-old Mordechai Anielewicz, and the Jewish Military Union (ŻZW) fought back."
+            },
+            {
+              "term": "Mordechai Anielewicz",
+              "clue": "The Jewish Combat Organisation (ŻOB), led by 24-year-old Mordechai Anielewicz, and the Jewish Military Union (ŻZW) fought back."
+            },
+            {
+              "term": "ŻZW",
+              "clue": "The Jewish Combat Organisation (ŻOB), led by 24-year-old Mordechai Anielewicz, and the Jewish Military Union (ŻZW) fought back."
+            }
+          ],
+          "model_sentence": "The Jewish Combat Organisation (ŻOB), led by 24-year-old <strong>Mordechai Anielewicz</strong>, and the Jewish Military Union (ŻZW) fought back.",
+          "title": "The Warsaw Ghetto Uprising (April–May 1943)",
+          "dates": "April–May 1943"
+        },
+        {
+          "step": 5,
+          "date": "1943–1944",
+          "heading": "Revolts in the Death Camps and the Partisans",
+          "focus_clue": "How do uprisings inside the death camps disprove the myth of passive Jewish acceptance?",
+          "words": [
+            {
+              "term": "Treblinka revolt",
+              "clue": "The August 1943 prisoner uprising where Sonderkommando inmates seized weapons from the camp armory, torched barracks, and allowed several hundred to escape."
+            },
+            {
+              "term": "Sobibór uprising",
+              "clue": "The October 1943 revolt led by Leon Feldhendler and Alexander Pechersky, killing eleven SS officers and leading to the permanent closure of the camp."
+            },
+            {
+              "term": "armed camp rebellions",
+              "clue": "Desperate, heroic prisoner revolts in extermination centres demonstrating that Jewish victims resisted their executioners even inside the death camps."
+            }
+          ],
+          "model_sentence": "Defying impossible odds, Jewish Sonderkommandos organized <strong>armed camp rebellions</strong> including the heroic August 1943 <strong>Treblinka revolt</strong> and the October 1943 <strong>Sobibór uprising</strong>.",
+          "key_terms": [
+            {
+              "term": "Treblinka revolt",
+              "clue": "The August 1943 prisoner uprising where Sonderkommando inmates seized weapons from the camp armory, torched barracks, and allowed several hundred to escape."
+            },
+            {
+              "term": "Sobibór uprising",
+              "clue": "The October 1943 revolt led by Leon Feldhendler and Alexander Pechersky, killing eleven SS officers and leading to the permanent closure of the camp."
+            },
+            {
+              "term": "armed camp rebellions",
+              "clue": "Desperate, heroic prisoner revolts in extermination centres demonstrating that Jewish victims resisted their executioners even inside the death camps."
+            }
+          ],
+          "title": "Revolts in the Death Camps and the Partisans",
+          "dates": "1943–1944"
         }
       ]
     },
@@ -6846,7 +7697,7 @@ export default {
               "military victory first"
             ]
           },
-          "model_answer": "Initially, Soviet troops liberated Majdanek in July 1944 and Auschwitz in January 1945, discovering gas chambers, mass graves, and mountains of victims' shoes and hair left behind by retreating SS guards.<br><br>Following this, British and American forces advancing into Germany liberated camps like Bergen-Belsen and Dachau in April 1945, finding thousands of unburied corpses and starving survivors dying of typhus.<br><br>Finally, Allied liberation provided undeniable photographic and film evidence of Nazi atrocities, which was used to prosecute Nazi war criminals at the 1945–46 Nuremberg Trials.",
+          "model_answer": "Initially, the international response before the outbreak of war was characterized by diplomatic inaction and closed borders. At the July 1938 Évian Conference, convened to address the growing Jewish refugee crisis from Nazi Germany and Austria, 31 of the 32 participating nations (including the US and Britain) refused to raise their immigration quotas, stranding hundreds of thousands of desperate Jews under Nazi control.<br><br>As a result, when systematic mass extermination began following the 1941 invasion of the USSR, verified intelligence smuggled out by Polish resistance courier Jan Karski and the Riegner Telegram reached Allied governments. In December 1942, the Allied powers issued a joint declaration publicly condemning Nazi extermination and promising postwar prosecution. However, despite urgent appeals from Jewish leaders, Allied military commanders consistently refused to divert bombers to destroy the railway lines to Auschwitz-Birkenau, arguing that rapid military victory against the German army was the only effective way to save remaining prisoners.<br><br>Finally, intense political pressure forced US President Franklin D. Roosevelt to create the War Refugee Board in January 1944. Working with Swedish diplomat Raoul Wallenberg in Budapest, the Board funded relief efforts, issued protective passports, and successfully rescued an estimated 200,000 European Jews from deportation in the final eighteen months of the war.",
           "topic": "Question 2: Narrative Account [8 marks • 12 mins]"
         }
       ],
@@ -7372,6 +8223,193 @@ export default {
           "answer": "To achieve the complete military defeat of Nazi Germany as fast as possible",
           "a": "To achieve the complete military defeat of Nazi Germany as fast as possible",
           "explanation": "Allied commanders maintained that total military victory as rapidly as possible was the only viable salvation."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "1941–1945",
+          "heading": "The Bureaucracy of Destruction: Ordinary Professionals",
+          "focus_clue": "How did civil servants and railway schedulers contribute to the machinery of the Holocaust?",
+          "words": [
+            {
+              "term": "Raul Hilberg's analysis",
+              "clue": "The pioneering historical study 'The Destruction of the European Jews' demonstrating that the Holocaust required the active cooperation of the entire German state apparatus."
+            },
+            {
+              "term": "Deutsche Reichsbahn railway network",
+              "clue": "The German state railway system that scheduled and routed deportation trains across Europe, charging the SS passenger fares for each victim."
+            },
+            {
+              "term": "civil service complicity",
+              "clue": "The routine participation of bank tellers, lawyers, police officers, and clerks whose ordinary bureaucratic actions made genocide possible."
+            }
+          ],
+          "model_sentence": "As shown in <strong>Raul Hilberg's analysis</strong>, executing the Holocaust required extensive <strong>civil service complicity</strong> and the logistical cooperation of the <strong>Deutsche Reichsbahn railway network</strong>.",
+          "key_terms": [
+            {
+              "term": "Raul Hilberg's analysis",
+              "clue": "The pioneering historical study 'The Destruction of the European Jews' demonstrating that the Holocaust required the active cooperation of the entire German state apparatus."
+            },
+            {
+              "term": "Deutsche Reichsbahn railway network",
+              "clue": "The German state railway system that scheduled and routed deportation trains across Europe, charging the SS passenger fares for each victim."
+            },
+            {
+              "term": "civil service complicity",
+              "clue": "The routine participation of bank tellers, lawyers, police officers, and clerks whose ordinary bureaucratic actions made genocide possible."
+            }
+          ],
+          "title": "The Bureaucracy of Destruction: Ordinary Professionals",
+          "dates": "1941–1945"
+        },
+        {
+          "step": 2,
+          "date": "1940–1944",
+          "heading": "European Collaboration: An All-European Catastrophe",
+          "focus_clue": "Why was collaboration by foreign governments like Vichy France and Hungary indispensable to the Nazis?",
+          "words": [
+            {
+              "term": "437,000 Hungarian Jews deported",
+              "clue": "The lightning deportation of over 430,000 Hungarian Jewish citizens to Auschwitz in just 54 days between May and July 1944."
+            },
+            {
+              "term": "Vichy and Arrow Cross collaboration",
+              "clue": "Fascist and collaborationist regimes across France, Slovakia, and Hungary that actively rounded up their Jewish citizens for deportation."
+            },
+            {
+              "term": "European-wide complicity",
+              "clue": "The painful historical reality that the Final Solution was facilitated by local police forces, civil servants, and informants across conquered Europe."
+            }
+          ],
+          "model_sentence": "Demonstrating tragic <strong>European-wide complicity</strong>, <strong>Vichy and Arrow Cross collaboration</strong> culminated when over <strong>437,000 Hungarian Jews deported</strong> were transported to Auschwitz in fifty-four days.",
+          "key_terms": [
+            {
+              "term": "437,000 Hungarian Jews deported",
+              "clue": "The lightning deportation of over 430,000 Hungarian Jewish citizens to Auschwitz in just 54 days between May and July 1944."
+            },
+            {
+              "term": "Vichy and Arrow Cross collaboration",
+              "clue": "Fascist and collaborationist regimes across France, Slovakia, and Hungary that actively rounded up their Jewish citizens for deportation."
+            },
+            {
+              "term": "European-wide complicity",
+              "clue": "The painful historical reality that the Final Solution was facilitated by local police forces, civil servants, and informants across conquered Europe."
+            }
+          ],
+          "title": "European Collaboration: An All-European Catastrophe",
+          "dates": "1940–1944"
+        },
+        {
+          "step": 3,
+          "date": "1933–1945",
+          "heading": "The Bystanders: Silence, Fear, and Complicity",
+          "focus_clue": "To what extent does looking away in silence make a bystander morally complicit in state persecution?",
+          "words": [
+            {
+              "term": "bystander complicity",
+              "clue": "The widespread passivity, indifference, and tacit acceptance of anti-Jewish persecution by ordinary citizens across occupied Europe."
+            },
+            {
+              "term": "ordinary European citizens",
+              "clue": "The general populace who witnessed arrests, deportations, and public humiliation of neighbors but chose not to intervene."
+            },
+            {
+              "term": "pervasive culture of silence",
+              "clue": "The climate of fear, censorship, and social conformity that allowed Nazi authorities to execute genocide without public outcry."
+            }
+          ],
+          "model_sentence": "Across Nazi-occupied territories, <strong>bystander complicity</strong> and a <strong>pervasive culture of silence</strong> enabled deportation trains to roll while <strong>ordinary European citizens</strong> looked away.",
+          "key_terms": [
+            {
+              "term": "bystander complicity",
+              "clue": "The widespread passivity, indifference, and tacit acceptance of anti-Jewish persecution by ordinary citizens across occupied Europe."
+            },
+            {
+              "term": "ordinary European citizens",
+              "clue": "The general populace who witnessed arrests, deportations, and public humiliation of neighbors but chose not to intervene."
+            },
+            {
+              "term": "pervasive culture of silence",
+              "clue": "The climate of fear, censorship, and social conformity that allowed Nazi authorities to execute genocide without public outcry."
+            }
+          ],
+          "title": "The Bystanders: Silence, Fear, and Complicity",
+          "dates": "1933–1945"
+        },
+        {
+          "step": 4,
+          "date": "1940–1944",
+          "heading": "Righteous Among the Nations: Courage Defying Death",
+          "focus_clue": "What factors enabled the Danish people to rescue over 95% of their Jewish population?",
+          "words": [
+            {
+              "term": "Rescue of the Danish Jews",
+              "clue": "The heroic underground evacuation in October 1943 where Danish citizens ferried over 7,200 Jews across the sea to neutral Sweden."
+            },
+            {
+              "term": "Le Chambon-sur-Lignon sanctuary",
+              "clue": "The French Protestant mountain village led by Pastor André Trocmé that sheltered and saved 3,500 Jewish refugees."
+            },
+            {
+              "term": "Righteous Among the Nations",
+              "clue": "The official honour conferred by Yad Vashem upon non-Jewish rescuers who risked their lives to save Jewish people from the Holocaust."
+            }
+          ],
+          "model_sentence": "Extraordinary rescue operations like the <strong>Rescue of the Danish Jews</strong> and the <strong>Le Chambon-sur-Lignon sanctuary</strong> earned courageous protectors the title of <strong>Righteous Among the Nations</strong>.",
+          "key_terms": [
+            {
+              "term": "Rescue of the Danish Jews",
+              "clue": "The heroic underground evacuation in October 1943 where Danish citizens ferried over 7,200 Jews across the sea to neutral Sweden."
+            },
+            {
+              "term": "Le Chambon-sur-Lignon sanctuary",
+              "clue": "The French Protestant mountain village led by Pastor André Trocmé that sheltered and saved 3,500 Jewish refugees."
+            },
+            {
+              "term": "Righteous Among the Nations",
+              "clue": "The official honour conferred by Yad Vashem upon non-Jewish rescuers who risked their lives to save Jewish people from the Holocaust."
+            }
+          ],
+          "title": "Righteous Among the Nations: Courage Defying Death",
+          "dates": "1940–1944"
+        },
+        {
+          "step": 5,
+          "date": "1942–1944",
+          "heading": "Allied Knowledge, Dilemmas, and the Question of Action",
+          "focus_clue": "Why did the Allied powers decide against bombing the railway tracks leading to Auschwitz?",
+          "words": [
+            {
+              "term": "Allied inaction dilemmas",
+              "clue": "The controversial refusal of Britain and the US to modify immigration quotas or bomb Auschwitz railway lines to halt mass murder."
+            },
+            {
+              "term": "Jan Karski courier reports",
+              "clue": "The eyewitness intelligence smuggled out of the Warsaw Ghetto by Polish underground courier Jan Karski to Churchill and Roosevelt."
+            },
+            {
+              "term": "refusal to bomb Auschwitz rail lines",
+              "clue": "The deliberate military decision by Allied commanders prioritizing frontline military victory over humanitarian bombing missions."
+            }
+          ],
+          "model_sentence": "Despite compelling eyewitness testimonies delivered through <strong>Jan Karski courier reports</strong>, <strong>Allied inaction dilemmas</strong> culminated in the tragic <strong>refusal to bomb Auschwitz rail lines</strong>.",
+          "key_terms": [
+            {
+              "term": "Allied inaction dilemmas",
+              "clue": "The controversial refusal of Britain and the US to modify immigration quotas or bomb Auschwitz railway lines to halt mass murder."
+            },
+            {
+              "term": "Jan Karski courier reports",
+              "clue": "The eyewitness intelligence smuggled out of the Warsaw Ghetto by Polish underground courier Jan Karski to Churchill and Roosevelt."
+            },
+            {
+              "term": "refusal to bomb Auschwitz rail lines",
+              "clue": "The deliberate military decision by Allied commanders prioritizing frontline military victory over humanitarian bombing missions."
+            }
+          ],
+          "title": "Allied Knowledge, Dilemmas, and the Question of Action",
+          "dates": "1942–1944"
         }
       ]
     },
@@ -8055,7 +9093,7 @@ export default {
               "State of Israel (1948)"
             ]
           },
-          "model_answer": "On the one hand, international Holocaust remembrance is vital because it honours the six million Jewish victims and counters dangerous Holocaust denial. Educational memorials, survivor testimonies, and Holocaust Memorial Day teach future generations about the perils of state-sponsored racism and prejudice.<br><br>On the other hand, memory must be matched by active prevention of modern genocide. Since 1945, the world has witnessed mass atrocities in Cambodia, Rwanda, and Srebrenica. Therefore, remembering the Shoah is profoundly important, but its ultimate value lies in educating society to challenge hatred and human rights abuses wherever they occur.",
+          "model_answer": "On the one hand, military liberation by Allied forces in spring 1945 unquestionably marked the end of systematic Nazi mass murder and daily terror. British, American, and Soviet soldiers ended the horrors of gas chambers, slave labor marches, and deliberate starvation, providing immediate emergency medical triage, clean water, and food supplies to tens of thousands of emaciated prisoners who were days away from death.<br><br>On the other hand, the agony of survivors persisted for years after 1945. Most liberated survivors had lost their entire extended families, homes, and communities, leaving them completely destitute with nowhere to go. Over 250,000 Jewish survivors languished for years in allied Displaced Persons (DP) camps behind barbed wire in Germany and Austria because international borders remained closed. Furthermore, survivors who attempted to return to their hometowns in Eastern Europe faced continuing violent antisemitism, such as the July 1946 Kielce pogrom in Poland where 42 Jewish survivors were murdered by local mobs. Coupled with profound, lifelong psychological trauma and survivor guilt, liberation was the beginning of an agonizing process of rebuilding shattered lives. Therefore, while liberation ended direct Nazi murder, intense physical, social, and emotional suffering continued for decades.",
           "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
         }
       ],
@@ -8581,6 +9619,179 @@ export default {
           "answer": "1.5 million children",
           "a": "1.5 million children",
           "explanation": "Approximately 1.5 million innocent Jewish children were murdered during the Holocaust."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "Winter 1944–1945",
+          "heading": "The Death Marches: The Final Spasm of Terror (1944–1945)",
+          "focus_clue": "Why did the Nazi authorities force starving prisoners onto death marches in the final months of the war?",
+          "words": [
+            {
+              "term": "evacuation death marches (1944–45)",
+              "clue": "The forced winter transfers of over 250,000 starving concentration camp inmates into Germany as Soviet armies approached."
+            },
+            {
+              "term": "SS camp guard brutality",
+              "clue": "The routine execution of any prisoner who collapsed or faltered on the frozen roads during death marches."
+            },
+            {
+              "term": "winter forced evacuation",
+              "clue": "The freezing, chaotic marches in January 1945 from Auschwitz, Stutthof, and Gross-Rosen where tens of thousands perished."
+            }
+          ],
+          "model_sentence": "During the desperate <strong>winter forced evacuation</strong> of camps, rampant <strong>SS camp guard brutality</strong> turned the <strong>evacuation death marches (1944–45)</strong> into mass death traps.",
+          "key_terms": [
+            {
+              "term": "evacuation death marches (1944–45)",
+              "clue": "The forced winter transfers of over 250,000 starving concentration camp inmates into Germany as Soviet armies approached."
+            },
+            {
+              "term": "SS camp guard brutality",
+              "clue": "The routine execution of any prisoner who collapsed or faltered on the frozen roads during death marches."
+            },
+            {
+              "term": "winter forced evacuation",
+              "clue": "The freezing, chaotic marches in January 1945 from Auschwitz, Stutthof, and Gross-Rosen where tens of thousands perished."
+            }
+          ],
+          "title": "The Death Marches: The Final Spasm of Terror (1944–1945)",
+          "dates": "Winter 1944–1945"
+        },
+        {
+          "step": 2,
+          "date": "Jan–May 1945",
+          "heading": "Liberation: The World Confronts the Unimaginable",
+          "focus_clue": "How did the liberation of Bergen-Belsen shatter any remaining doubt about the scale of Nazi crimes?",
+          "words": [
+            {
+              "term": "27 January 1945",
+              "clue": "The day Soviet soldiers of the 322nd Rifle Division arrived at Auschwitz-Birkenau, discovering 7,000 surviving inmates and warehouse piles of human hair."
+            },
+            {
+              "term": "15 April 1945",
+              "clue": "The date British forces entered Bergen-Belsen camp in northern Germany, discovering 60,000 starving prisoners and 13,000 unburied corpses."
+            },
+            {
+              "term": "Bergen-Belsen",
+              "clue": "The concentration camp liberated by the British 11th Armoured Division whose horrors shocked the international public through BBC radio broadcasts."
+            }
+          ],
+          "model_sentence": "Following the Soviet discovery of Auschwitz on <strong>27 January 1945</strong>, British forces reached <strong>Bergen-Belsen</strong> on <strong>15 April 1945</strong>, confronting the horrific reality of Nazi extermination.",
+          "title": "Liberation: The World Confronts the Unimaginable",
+          "dates": "Jan–May 1945"
+        },
+        {
+          "step": 3,
+          "date": "1945–1948",
+          "heading": "The Painful Aftermath: Displaced Persons and Windermere",
+          "focus_clue": "What challenges did survivors face when trying to rebuild their lives in post-war Europe?",
+          "words": [
+            {
+              "term": "Displaced Persons (DP) camps",
+              "clue": "Temporary refugee camps in Germany, Austria, and Italy housing over 250,000 surviving European Jews with nowhere else to go."
+            },
+            {
+              "term": "Windermere child survivors",
+              "clue": "A group of 300 traumatized orphan children brought from liberated camps to the Lake District in 1945 to begin rehabilitation."
+            },
+            {
+              "term": "psychological trauma of liberation",
+              "clue": "The devastating grief experienced by survivors upon discovering that their families, homes, and entire communities were annihilated."
+            }
+          ],
+          "model_sentence": "While hundreds of thousands languished in <strong>Displaced Persons (DP) camps</strong>, three hundred <strong>Windermere child survivors</strong> arrived in Britain seeking recovery from the <strong>psychological trauma of liberation</strong>.",
+          "key_terms": [
+            {
+              "term": "Displaced Persons (DP) camps",
+              "clue": "Temporary refugee camps in Germany, Austria, and Italy housing over 250,000 surviving European Jews with nowhere else to go."
+            },
+            {
+              "term": "Windermere child survivors",
+              "clue": "A group of 300 traumatized orphan children brought from liberated camps to the Lake District in 1945 to begin rehabilitation."
+            },
+            {
+              "term": "psychological trauma of liberation",
+              "clue": "The devastating grief experienced by survivors upon discovering that their families, homes, and entire communities were annihilated."
+            }
+          ],
+          "title": "The Painful Aftermath: Displaced Persons and Windermere",
+          "dates": "1945–1948"
+        },
+        {
+          "step": 4,
+          "date": "1945–1948",
+          "heading": "Justice and International Law: Nuremberg and Lemkin",
+          "focus_clue": "How did Raphael Lemkin transform international law following the Holocaust?",
+          "words": [
+            {
+              "term": "International Military Tribunal (IMT)",
+              "clue": "The international court established by Britain, the US, USSR, and France in Nuremberg in 1945 to try top Nazi leaders for war crimes."
+            },
+            {
+              "term": "crimes against humanity",
+              "clue": "The revolutionary legal concept introduced at Nuremberg to prosecute murder, extermination, enslavement, and persecution against civilian populations."
+            },
+            {
+              "term": "Raphael Lemkin's concept of genocide",
+              "clue": "The Polish-Jewish legal scholar who coined the term 'genocide' in 1944, leading directly to the 1948 UN Convention on the Prevention and Punishment of Genocide."
+            }
+          ],
+          "model_sentence": "The post-war <strong>International Military Tribunal (IMT)</strong> at Nuremberg prosecuted Nazi leaders for <strong>crimes against humanity</strong>, informed by <strong>Raphael Lemkin's concept of genocide</strong>.",
+          "key_terms": [
+            {
+              "term": "International Military Tribunal (IMT)",
+              "clue": "The international court established by Britain, the US, USSR, and France in Nuremberg in 1945 to try top Nazi leaders for war crimes."
+            },
+            {
+              "term": "crimes against humanity",
+              "clue": "The revolutionary legal concept introduced at Nuremberg to prosecute murder, extermination, enslavement, and persecution against civilian populations."
+            },
+            {
+              "term": "Raphael Lemkin's concept of genocide",
+              "clue": "The Polish-Jewish legal scholar who coined the term 'genocide' in 1944, leading directly to the 1948 UN Convention on the Prevention and Punishment of Genocide."
+            }
+          ],
+          "title": "Justice and International Law: Nuremberg and Lemkin",
+          "dates": "1945–1948"
+        },
+        {
+          "step": 5,
+          "date": "Post-War to Present",
+          "heading": "What Was Lost? The Imperative of Memory",
+          "focus_clue": "What is our ethical and historical responsibility to the memory of the Shoah today?",
+          "words": [
+            {
+              "term": "Shoah historical memory",
+              "clue": "The collective preservation of the facts, victims, and lessons of the Holocaust through monuments, archives, and education."
+            },
+            {
+              "term": "survivor oral testimony",
+              "clue": "Recorded first-person accounts by witnesses like Elie Wiesel and Primo Levi that provide irreplaceable human truth about the genocide."
+            },
+            {
+              "term": "imperative of remembrance",
+              "clue": "The ethical duty of future generations to remember the Shoah and vigorously resist antisemitism and hate in all forms."
+            }
+          ],
+          "model_sentence": "Anchored in authentic <strong>survivor oral testimony</strong>, preserving <strong>Shoah historical memory</strong> fulfills an urgent moral <strong>imperative of remembrance</strong> for the civilized world.",
+          "key_terms": [
+            {
+              "term": "Shoah historical memory",
+              "clue": "The collective preservation of the facts, victims, and lessons of the Holocaust through monuments, archives, and education."
+            },
+            {
+              "term": "survivor oral testimony",
+              "clue": "Recorded first-person accounts by witnesses like Elie Wiesel and Primo Levi that provide irreplaceable human truth about the genocide."
+            },
+            {
+              "term": "imperative of remembrance",
+              "clue": "The ethical duty of future generations to remember the Shoah and vigorously resist antisemitism and hate in all forms."
+            }
+          ],
+          "title": "What Was Lost? The Imperative of Memory",
+          "dates": "Post-War to Present"
         }
       ]
     }

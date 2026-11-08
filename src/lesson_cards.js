@@ -62,14 +62,25 @@ export function resolveLessonCardImage(lesson) {
   if (!lesson) return null;
 
   // 1. Mandatory hardcoded historical protections for high-stakes GCSE turning points
+  const activeUnitId = (typeof window !== 'undefined' && window.currentUnitId) || '';
+  const isCME =
+    activeUnitId.startsWith('cme') ||
+    (lesson.title &&
+      (lesson.title.includes('Oslo') ||
+        lesson.title.includes('Munich') ||
+        lesson.title.includes('British Mandate') ||
+        lesson.title.includes('Arab-Israeli')));
+
   if (
-    lesson.id === 'lesson_11' ||
-    lesson.id === 'lesson_13' ||
-    (lesson.title && lesson.title.includes('Oslo') && lesson.title.includes('Attempts at a Solution'))
+    isCME &&
+    (lesson.id === 'lesson_11' ||
+      lesson.id === 'lesson_13' ||
+      (lesson.title && lesson.title.includes('Oslo') && lesson.title.includes('Attempts at a Solution')))
   ) {
     return '/images/cme_oslo_handshake_1993.jpg';
   }
   if (
+    isCME &&
     lesson.id === 'lesson_9' &&
     lesson.title &&
     (lesson.title.includes('Black September') || lesson.title.includes('Munich'))
@@ -553,8 +564,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             }
 
             topMediaHTML = `
-              <div style="position: relative; width: 100%; height: 145px; overflow: hidden; background: #0f172a; flex-shrink: 0;">
-                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="width: 100%; height: 100%; object-fit: cover; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);" />
+              <div style="position: relative; width: 100%; height: 165px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
+                <div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>
+                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));" />
               </div>
             `;
           } else {
@@ -606,12 +618,15 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                       const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(currentUnitId, lesson.id || index) : 0;
                       if (!cnt || cnt === 0) return '';
                       const items = typeof window !== 'undefined' && window.getLessonInfographicsSync ? window.getLessonInfographicsSync(currentUnitId, lesson.id || index) : [];
+                      const hasPoster = items && items.some(it => it.image && it.image.trim().length > 0);
                       const hasInteractive = items && items.some(it => it.interactiveUrl);
-                      if (hasInteractive) {
-                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Interactive Visual Revision Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#f59e0b'; this.style.color='#000000';" onmouseout="this.style.background='#fef3c7'; this.style.color='#b45309';"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: 0.7rem; color: #d97706;"></i> <span>Interactive Mat</span></button>`;
+                      if (hasPoster) {
+                        const label = cnt > 1 ? `Infographics (${cnt})` : 'Infographic';
+                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Visual Revision Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff';" onmouseout="this.style.background='#e0f2fe'; this.style.color='#0284c7';"><i class="fa-solid fa-chart-pie" style="font-size: 0.7rem;"></i> <span>${label}</span></button>`;
                       }
-                      const label = cnt > 1 ? `Infographics (${cnt})` : 'Infographic';
-                      return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Visual Revision Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff';" onmouseout="this.style.background='#e0f2fe'; this.style.color='#0284c7';"><i class="fa-solid fa-chart-pie" style="font-size: 0.7rem;"></i> <span>${label}</span></button>`;
+                      if (hasInteractive) {
+                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}', { initialMode: 'interactive' });}" title="Open Interactive Presentation Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#f59e0b'; this.style.color='#000000';" onmouseout="this.style.background='#fef3c7'; this.style.color='#b45309';"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: 0.7rem; color: #d97706;"></i> <span>Interactive Mat</span></button>`;
+                      }
                     })()}
                   </div>
                   <h3 style="margin: 0 0 8px 0; color: #0f172a; font-size: 1.02rem; font-weight: 700; line-height: 1.35; font-family: 'Playfair Display', Georgia, serif;">
@@ -1205,8 +1220,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           if (!cardPos) cardPos = 'center';
 
           topMediaHTML = `
-            <div style="position: relative; width: 100%; height: 145px; overflow: hidden; background: #0f172a; flex-shrink: 0;">
-              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="width: 100%; height: 100%; object-fit: cover; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);" />
+            <div style="position: relative; width: 100%; height: 165px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
+              <div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>
+              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));" />
             </div>
           `;
         } else {

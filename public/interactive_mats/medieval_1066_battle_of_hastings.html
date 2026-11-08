@@ -118,284 +118,719 @@
       padding: 10px 18px;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 14px;
-    }
-
-    .mat-header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 5px;
-      height: 100%;
-      background: linear-gradient(180deg, #38bdf8, #fbbf24, #f43f5e);
+      gap: 16px;
     }
 
     .header-sub {
-      color: var(--gold-primary);
-      font-size: 0.75rem;
+      font-size: 0.76rem;
       font-weight: 800;
-      letter-spacing: 1.2px;
       text-transform: uppercase;
-      margin-bottom: 2px;
+      letter-spacing: 1px;
+      color: var(--cyan-accent);
       display: flex;
       align-items: center;
       gap: 6px;
+      margin-bottom: 2px;
     }
 
     .header-title {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.45rem;
+      font-size: clamp(1.2rem, 1.8vw, 1.6rem);
       font-weight: 900;
       color: #ffffff;
-      line-height: 1.15;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
     }
 
     .header-enquiry {
-      font-size: 0.82rem;
+      font-size: clamp(0.78rem, 1vw, 0.88rem);
       color: #cbd5e1;
+      font-style: italic;
       margin-top: 3px;
       display: flex;
       align-items: center;
       gap: 6px;
-      font-style: italic;
     }
 
-    /* PART 1: 5 NARRATIVE BLOCKS GRID */
-    .blocks-grid-5 {
+    /* ================================================================= */
+    /* PART 1: LEFT-PAGE STEP PRESENTATION CONTROLS                      */
+    /* ================================================================= */
+    .step-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 6px 12px;
+    }
+
+    .step-pills-nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .step-pill {
+      padding: 4px 10px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      border-radius: 6px;
+      border: 1px solid #334155;
+      background: #1e293b;
+      color: #94a3b8;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .step-pill:hover {
+      border-color: #38bdf8;
+      color: #f8fafc;
+    }
+
+    .step-pill.active {
+      background: rgba(2, 132, 199, 0.35);
+      border-color: #38bdf8;
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);
+    }
+
+    .view-toggle-nav {
+      display: inline-flex;
+      background: #090e1a;
+      border: 1px solid #1e293b;
+      border-radius: 6px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .view-toggle-btn {
+      padding: 3px 9px;
+      font-size: 0.70rem;
+      font-weight: 700;
+      border-radius: 4px;
+      border: none;
+      background: transparent;
+      color: #64748b;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s ease;
+    }
+
+    .view-toggle-btn.active {
+      background: #0f172a;
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    /* STEP PRESENTATION CARD (FULL WIDTH FOCUS) */
+    .presentation-card {
+      background: var(--bg-card);
+      border: 1.5px solid rgba(56, 189, 248, 0.35);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .presentation-split {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: minmax(320px, 42%) 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .presentation-split { grid-template-columns: 1fr; }
+    }
+
+    /* Left Column: Big Primary Source */
+    .presentation-source-card {
+      background: #090e1a;
+      border: 1.5px solid #1e293b;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .presentation-img-wrap {
+      width: 100%;
+      height: 270px;
+      background: #030712;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: zoom-in;
+      position: relative;
+    }
+
+    .presentation-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform 0.25s ease;
+    }
+
+    .presentation-img-wrap:hover img {
+      transform: scale(1.02);
+    }
+
+    .presentation-source-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #38bdf8;
+    }
+
+    .presentation-source-desc {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* Right Column: Narrative & Large Word Trigger Boxes */
+    .presentation-content-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .presentation-stage-header {
+      border-bottom: 1.5px solid #1e293b;
+      padding-bottom: 8px;
+    }
+
+    .presentation-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .stage-tag {
+      background: #0284c7;
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .stage-date {
+      color: #fbbf24;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .presentation-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-top: 2px;
+    }
+
+    .presentation-enquiry-q {
+      font-size: 0.95rem;
+      color: #7dd3fc;
+      font-weight: 600;
+      font-style: italic;
+      margin-top: 2px;
+    }
+
+    .presentation-narrative-text {
+      background: #0f172a;
+      border-left: 4px solid #0284c7;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 0.94rem;
+      line-height: 1.65;
+      color: #e2e8f0;
+    }
+
+    .presentation-narrative-text strong {
+      color: #fde047;
+      font-weight: 700;
+    }
+
+    .para-ref {
+      font-weight: 800;
+      color: #38bdf8;
+      font-size: 0.84em;
+      margin-right: 6px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 1px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* 3 High-Visibility Workbook Word Boxes (Clean, Bold, No Clue Accordion) */
+    .workbook-spine-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #fbbf24;
+      margin-top: 2px;
+    }
+
+    .presentation-words-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
 
-    @media (max-width: 1200px) {
-      .blocks-grid-5 { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 700px) {
+      .presentation-words-grid { grid-template-columns: 1fr; }
     }
 
-    @media (max-width: 768px) {
-      .blocks-grid-5 { grid-template-columns: 1fr; }
+    .presentation-word-card {
+      background: #090e1a;
+      border: 1.5px solid #334155;
+      border-radius: 8px;
+      padding: 9px 13px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      user-select: none;
+      min-height: 48px;
+      justify-content: center;
+    }
+
+    .presentation-word-card:hover {
+      border-color: #38bdf8;
+      background: #0f172a;
+      transform: translateY(-1px);
+    }
+
+    .presentation-word-card.recorded {
+      border-color: #22c55e;
+      background: rgba(34, 197, 94, 0.12);
+      box-shadow: 0 0 12px rgba(34, 197, 94, 0.18);
+    }
+
+    .word-card-top {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .word-card-check {
+      font-size: 1.1rem;
+      color: #64748b;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .presentation-word-card:hover .word-card-check {
+      color: #38bdf8;
+    }
+
+    .presentation-word-card.recorded .word-card-check {
+      color: #22c55e;
+    }
+
+    .word-card-name {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.3;
+    }
+
+    .presentation-word-card.recorded .word-card-name {
+      color: #f0fdf4;
+    }
+
+    .word-card-clue {
+      font-size: 0.74rem;
+      color: #cbd5e1;
+      line-height: 1.35;
+      padding-left: 25px;
+      display: none;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      padding-top: 5px;
+      margin-top: 2px;
+    }
+
+    /* Model Sentence Banner */
+    .presentation-sentence-bar {
+      background: #090e1a;
+      border: 1px dashed #38bdf8;
+      border-radius: 8px;
+      padding: 9px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .presentation-sentence-btn {
+      padding: 5px 12px;
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid #38bdf8;
+      border-radius: 6px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .presentation-sentence-btn:hover {
+      background: #0284c7;
+    }
+
+    .presentation-sentence-text {
+      flex: 1 1 280px;
+      font-size: 0.86rem;
+      color: #fef08a;
+      font-style: italic;
+      line-height: 1.45;
+      display: none;
+    }
+
+    /* Bottom Stage Navigator Bar */
+    .stage-nav-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1.5px solid #1e293b;
+      padding-top: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .stage-nav-btn {
+      padding: 7px 16px;
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid #334155;
+      border-radius: 7px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+    }
+
+    .stage-nav-btn:hover:not(:disabled) {
+      background: #0284c7;
+      border-color: #38bdf8;
+    }
+
+    .stage-nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .stage-nav-dots {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .stage-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #334155;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .stage-dot.active {
+      background: #38bdf8;
+      transform: scale(1.3);
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+    }
+
+    /* BIRD'S EYE (ALL 5) GRID */
+    .blocks-grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(230px, 1fr));
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 6px;
     }
 
     .block-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 10px;
-      overflow: hidden;
+      padding: 10px;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-      transition: all 0.2s ease;
+      gap: 8px;
+      transition: all 0.25s ease;
+      position: relative;
     }
 
     .block-card:hover {
-      border-color: #38bdf8;
-      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.2);
+      border-color: rgba(56, 189, 248, 0.4);
+      background: var(--bg-card-hover);
     }
 
     .block-header-strip {
-      padding: 6px 10px;
-      background: #0f172a;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 4px;
     }
 
     .block-act-badge {
-      font-size: 0.68rem;
-      font-weight: 800;
-      color: #38bdf8;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--cyan-accent);
     }
 
     .block-title {
-      font-size: 0.86rem;
-      font-weight: 800;
-      color: #ffffff;
-      padding: 8px 10px 4px 10px;
       font-family: 'Playfair Display', Georgia, serif;
-      line-height: 1.2;
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
     }
 
     .block-source-preview {
-      position: relative;
-      height: 110px;
-      background: #030712;
-      overflow: hidden;
+      width: 100%;
+      height: 105px;
+      background: #090e1a;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 4px;
+      overflow: hidden;
       cursor: zoom-in;
+      position: relative;
     }
 
     .block-source-preview img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      border-radius: 4px;
-      transition: transform 0.2s ease;
-    }
-
-    .block-source-preview:hover img {
-      transform: scale(1.04);
     }
 
     .block-source-badge {
       position: absolute;
-      bottom: 5px;
-      left: 6px;
-      background: rgba(15, 23, 42, 0.88);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #ffffff;
+      bottom: 4px;
+      left: 4px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 3px;
       padding: 2px 6px;
-      border-radius: 4px;
       font-size: 0.62rem;
-      font-weight: 800;
-      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffffff;
       backdrop-filter: blur(4px);
     }
 
     .block-summary-text {
-      padding: 6px 10px;
-      font-size: 0.76rem;
-      color: #94a3b8;
-      line-height: 1.35;
+      font-size: 0.74rem;
+      line-height: 1.4;
+      color: #cbd5e1;
     }
 
-    /* THE 3 WORKBOOK WORD BOXES PER BLOCK */
     .word-boxes-section {
-      background: rgba(8, 14, 29, 0.9);
-      border-top: 1px dashed rgba(255, 255, 255, 0.12);
-      padding: 8px 10px;
       display: flex;
       flex-direction: column;
       gap: 5px;
+      margin-top: auto;
     }
 
     .word-box-item {
-      background: #0f172a;
+      background: #090e1a;
       border: 1px solid #1e293b;
       border-radius: 6px;
-      padding: 5px 8px;
+      padding: 6px 8px;
       cursor: pointer;
-      transition: all 0.15s ease;
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 3px;
+      transition: all 0.15s ease;
+      user-select: none;
     }
 
     .word-box-item:hover {
       border-color: #38bdf8;
-      background: #131e33;
+      background: #0f172a;
     }
 
-    .word-box-item.revealed {
-      border-color: #38bdf8;
-      background: rgba(2, 132, 199, 0.15);
+    .word-box-item.recorded {
+      border-color: #22c55e;
+      background: rgba(34, 197, 94, 0.12);
     }
 
     .word-box-top {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      gap: 6px;
+    }
+
+    .word-item-check {
+      font-size: 0.85rem;
+      color: #64748b;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .word-box-item:hover .word-item-check {
+      color: #38bdf8;
+    }
+
+    .word-box-item.recorded .word-item-check {
+      color: #22c55e;
     }
 
     .word-box-title {
-      font-size: 0.74rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      color: #f8fafc;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .word-box-status {
-      font-size: 0.65rem;
-      color: #38bdf8;
-      font-weight: 600;
+      color: #ffffff;
     }
 
     .word-box-note {
       font-size: 0.71rem;
       color: #cbd5e1;
       line-height: 1.3;
+      padding-left: 18px;
+      display: none;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
       padding-top: 3px;
-      border-top: 1px dotted rgba(255, 255, 255, 0.1);
-      display: none;
+      margin-top: 2px;
+    }
+      color: #22c55e;
     }
 
-    /* Model Sentence Strip */
-    .sentence-launcher-box {
-      margin-top: auto;
-      padding: 6px 10px;
-      background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.9));
-      border-top: 1px solid #1e293b;
-      font-size: 0.72rem;
-    }
-
-    .sentence-launcher-btn {
-      background: none;
-      border: none;
-      color: #38bdf8;
-      font-size: 0.7rem;
+    .word-box-title {
+      font-size: 0.74rem;
       font-weight: 700;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 0;
-      outline: none;
-    }
-
-    .sentence-launcher-output {
-      margin-top: 4px;
-      font-style: italic;
-      color: #f8fafc;
-      display: none;
-      padding-left: 6px;
-      border-left: 2px solid #38bdf8;
+      color: #ffffff;
       line-height: 1.3;
     }
 
-    /* PART 2: THE CAUSAL BALANCE SCALE */
+    .word-box-item.recorded .word-box-title {
+      color: #f0fdf4;
+    }
+
+    .sentence-launcher-box {
+      margin-top: 4px;
+      border-top: 1px dashed #1e293b;
+      padding-top: 6px;
+    }
+
+    .sentence-launcher-btn {
+      width: 100%;
+      padding: 5px 8px;
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid #334155;
+      border-radius: 5px;
+      font-size: 0.70rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .sentence-launcher-btn:hover {
+      background: #0284c7;
+      border-color: #38bdf8;
+    }
+
+    .sentence-launcher-output {
+      display: none;
+      margin-top: 6px;
+      padding: 6px 8px;
+      background: #090e1a;
+      border-left: 3px solid #fbbf24;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.72rem;
+      color: #fef08a;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* PART 2: CAUSAL BALANCE SCALE */
     .scale-container {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 16px 20px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
       gap: 14px;
     }
 
-    .scale-stage {
+    .scale-rig {
       position: relative;
-      height: 220px;
-      background: radial-gradient(circle at center, #0f172a 0%, #070d18 100%);
-      border: 1px solid #1e293b;
-      border-radius: 10px;
+      height: 140px;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
+      margin: 10px 0;
     }
 
     .scale-beam {
-      width: 70%;
-      height: 8px;
-      background: #475569;
-      border-radius: 4px;
       position: relative;
+      width: 70%;
+      height: 6px;
+      background: linear-gradient(90deg, #f43f5e 0%, #0284c7 100%);
+      border-radius: 3px;
       transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transform-origin: center center;
     }
 
     .scale-pivot {
@@ -460,8 +895,9 @@
     /* PART 3: WRITING STUDIO & CLUE LADDER */
     .studio-grid {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: 1fr 1.05fr;
       gap: 14px;
+      align-items: stretch;
     }
 
     @media (max-width: 900px) {
@@ -558,13 +994,13 @@
     /* Print Styles */
     @media print {
       body { background: #ffffff !important; color: #000000 !important; padding: 0 !important; }
-      .top-bar, .mode-nav, .palette-chip, .sentence-launcher-btn, #detail-modal { display: none !important; }
+      .top-bar, .mode-nav, .palette-chip, .sentence-launcher-btn, #detail-modal, .step-toolbar { display: none !important; }
       .mat-header { background: #f1f5f9 !important; border: 2px solid #0284c7 !important; color: #000000 !important; }
       .header-title, .header-sub, .header-enquiry { color: #000000 !important; }
       #part-1-container, #part-2-container, #part-3-container { display: block !important; margin-bottom: 16px; }
       .blocks-grid-5 { grid-template-columns: repeat(5, 1fr) !important; gap: 8px !important; }
       .block-card, .clue-ladder-card, .scale-container { background: #ffffff !important; border: 1px solid #cbd5e1 !important; color: #000000 !important; }
-      .word-box-note, .sentence-launcher-output, #model-essay-box { display: block !important; color: #1e293b !important; }
+      .word-box-note, .sentence-launcher-output, #model-essay-box, .word-card-clue, .presentation-sentence-text { display: block !important; color: #1e293b !important; }
     }
   </style>
 </head>
@@ -593,7 +1029,7 @@
       </nav>
 
       <div style="display: flex; align-items: center; gap: 6px;">
-        <button type="button" class="palette-chip" onclick="toggleAllWordBoxes()"><i class="fa-solid fa-wand-magic-sparkles"></i> Reveal All Clues</button>
+        <button type="button" class="palette-chip" id="btn-toggle-all-words" onclick="toggleAllWordBoxes()"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Reveal All Clues</span></button>
         <button type="button" class="palette-chip" onclick="window.print()"><i class="fa-solid fa-print"></i> Print A4 Handout</button>
         <button type="button" class="palette-chip" onclick="resetAll()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
       </div>
@@ -617,441 +1053,638 @@
     </header>
 
     <!-- ================================================================= -->
-    <!-- PART 1: LEFT-PAGE COMPANION (ALL 5 NARRATIVE BLOCKS & 15 WORDS)    -->
+    <!-- PART 1: LEFT-PAGE COMPANION (OPTION A: STEP FOCUS + OVERVIEW)     -->
     <!-- ================================================================= -->
-    <main id="part-1-container" class="blocks-grid-5">
+    <main id="part-1-container" style="display: flex; flex-direction: column; gap: 10px;">
 
-      <!-- BLOCK 1: SUCCESSION VOID -->
-      <section class="block-card">
-        <div class="block-header-strip">
-          <span class="block-act-badge"><i class="fa-solid fa-1"></i> Block 1</span>
-          <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Jan 1066</span>
-        </div>
-        <h2 class="block-title">The Succession Void</h2>
-        <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 27): King Edward on Deathbed', 'King Edward the Confessor died childless on 5 January 1066 after reigning 24 years. Without a direct blood heir, England plunged into an immediate succession crisis.', '/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg')">
-          <img src="/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg" alt="Edward Confessor Deathbed" />
-          <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Edward Confessor</span>
-        </div>
-        <p class="block-summary-text">
-          Edward dies without an heir. The Witan crowns Earl Harold Godwinson, sparking rival claims.
-        </p>
-
-        <!-- 3 WORD BOXES -->
-        <div class="word-boxes-section">
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Succession Crisis</span>
-              <span class="word-box-status">[ Click Clue ]</span>
-            </div>
-            <div class="word-box-note">Edward dies childless; no direct heir to the throne.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> The Witan</span>
-              <span class="word-box-status">[ Click Clue ]</span>
-            </div>
-            <div class="word-box-note">Royal council of Saxon nobles and bishops who elected Harold.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Childless King</span>
-              <span class="word-box-status">[ Click Clue ]</span>
-            </div>
-            <div class="word-box-note">Death without children created a dangerous power vacuum.</div>
-          </div>
-        </div>
-
-        <div class="sentence-launcher-box">
-          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
-            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+      <!-- Step-by-Step Presentation Toolbar -->
+      <div class="step-toolbar">
+        <div class="step-pills-nav" id="step-pills-bar">
+          <button type="button" class="step-pill active" data-step="1" onclick="goToStep(1)">
+            <i class="fa-solid fa-1"></i> <span>1. Succession Void</span>
           </button>
-          <div class="sentence-launcher-output">
-            "When Edward died a <strong>childless king</strong>, the <strong>succession crisis</strong> forced the <strong>Witan</strong> to crown Harold."
+          <button type="button" class="step-pill" data-step="2" onclick="goToStep(2)">
+            <i class="fa-solid fa-2"></i> <span>2. Three Claimants</span>
+          </button>
+          <button type="button" class="step-pill" data-step="3" onclick="goToStep(3)">
+            <i class="fa-solid fa-3"></i> <span>3. Stamford Bridge</span>
+          </button>
+          <button type="button" class="step-pill" data-step="4" onclick="goToStep(4)">
+            <i class="fa-solid fa-4"></i> <span>4. Shield Wall</span>
+          </button>
+          <button type="button" class="step-pill" data-step="5" onclick="goToStep(5)">
+            <i class="fa-solid fa-5"></i> <span>5. Feigned Retreat</span>
+          </button>
+        </div>
+
+        <div class="view-toggle-nav">
+          <button type="button" class="view-toggle-btn active" id="btn-view-focus" onclick="togglePart1View('focus')">
+            <i class="fa-solid fa-chalkboard-user"></i> <span>Presentation View</span>
+          </button>
+          <button type="button" class="view-toggle-btn" id="btn-view-grid" onclick="togglePart1View('grid')">
+            <i class="fa-solid fa-table-columns"></i> <span>All 5 Overview</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- VIEW A: HIGH-VISIBILITY STEP PRESENTATION (FOCUS MODE) -->
+      <section id="step-focus-view" class="presentation-card">
+        <div class="presentation-split">
+          <!-- Left Column: Big Primary Source -->
+          <div class="presentation-source-card">
+            <div class="presentation-img-wrap" id="pres-img-wrap" onclick="openActiveSourceModal()">
+              <img id="pres-img" src="/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg" alt="Primary Visual Source" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="presentation-source-badge" id="pres-source-badge">
+                <i class="fa-solid fa-camera"></i> Bayeux Tapestry (Scene 27)
+              </span>
+              <button type="button" class="palette-chip" style="padding: 2px 7px; font-size: 0.68rem;" onclick="openActiveSourceModal()">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Enlarge
+              </button>
+            </div>
+            <p class="presentation-source-desc" id="pres-source-desc">
+              King Edward the Confessor died childless on 5 January 1066 after reigning 24 years, creating an immediate succession crisis.
+            </p>
           </div>
+
+          <!-- Right Column: Narrative, Enquiry, and 3 Large Workbook Word Boxes -->
+          <div class="presentation-content-card">
+            <div class="presentation-stage-header">
+              <div class="presentation-meta-row">
+                <span class="stage-tag" id="pres-stage-tag"><i class="fa-solid fa-flag"></i> Stage 1 of 5</span>
+                <span class="stage-date" id="pres-stage-date"><i class="fa-regular fa-clock"></i> January 1066</span>
+              </div>
+              <h2 class="presentation-title" id="pres-title">The Succession Void</h2>
+              <div class="presentation-enquiry-q" id="pres-enquiry-q">
+                Why did the death of Edward the Confessor trigger a succession crisis?
+              </div>
+            </div>
+
+            <!-- Narrative Paragraph -->
+            <div class="presentation-narrative-text" id="pres-narrative-text">
+              On 5 January 1066, King Edward the Confessor died after reigning for twenty-four years. Edward left England in an existential crisis: he had died childless, leaving no direct heir to the throne. In Anglo-Saxon England, royal blood did not guarantee succession; the royal council, known as the Witan, held the constitutional right to elect the next monarch. Within twenty-four hours of Edward’s burial in Westminster Abbey, the Witan elected England’s wealthiest nobleman, Earl Harold Godwinson.
+            </div>
+
+            <!-- 3 High-Visibility Workbook Word Boxes (Verbatim from Pupil Workbook) -->
+            <div>
+              <div class="workbook-spine-header">
+                <span><i class="fa-solid fa-pen-fancy"></i> Left Workbook Page &bull; 3 Trigger Words:</span>
+                <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">(Click box to reveal clue &amp; check off in workbook)</span>
+              </div>
+              <div class="presentation-words-grid" id="pres-words-grid">
+                <!-- Dynamically populated per active step -->
+              </div>
+            </div>
+
+            <!-- Model Sentence Banner -->
+            <div class="presentation-sentence-bar">
+              <button type="button" class="presentation-sentence-btn" id="pres-sentence-btn" onclick="togglePresentationSentence()">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+              </button>
+              <div class="presentation-sentence-text" id="pres-sentence-text">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Stage Navigation Strip -->
+        <div class="stage-nav-footer">
+          <button type="button" class="stage-nav-btn" id="btn-prev-stage" onclick="changeStep(-1)">
+            <i class="fa-solid fa-arrow-left"></i> Previous Stage
+          </button>
+          
+          <div class="stage-nav-dots" id="stage-nav-dots">
+            <span class="stage-dot active" onclick="goToStep(1)"></span>
+            <span class="stage-dot" onclick="goToStep(2)"></span>
+            <span class="stage-dot" onclick="goToStep(3)"></span>
+            <span class="stage-dot" onclick="goToStep(4)"></span>
+            <span class="stage-dot" onclick="goToStep(5)"></span>
+          </div>
+
+          <div style="font-size: 0.72rem; color: #64748b; font-style: italic;">
+            <i class="fa-solid fa-keyboard"></i> Use [←] and [→] arrow keys to present
+          </div>
+
+          <button type="button" class="stage-nav-btn" id="btn-next-stage" onclick="changeStep(1)">
+            Next Stage <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </section>
 
-      <!-- BLOCK 2: THREE CLAIMANTS -->
-      <section class="block-card">
-        <div class="block-header-strip">
-          <span class="block-act-badge"><i class="fa-solid fa-2"></i> Block 2</span>
-          <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Early 1066</span>
-        </div>
-        <h2 class="block-title">The Three Claimants</h2>
-        <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 23): Harold Swears Sacred Oath', 'Harold Godwinson swears on holy relics at Bayeux (c. 1064) to support William. William convinced Pope Alexander II that Harold was a perjurer, securing the Papal Banner.', '/images/medieval_england/source_a_bayeux_harold_oath.jpg')">
-          <img src="/images/medieval_england/source_a_bayeux_harold_oath.jpg" alt="Harold swearing oath" />
-          <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Sacred Relics Oath</span>
-        </div>
-        <p class="block-summary-text">
-          Duke William claims Harold broke an oath; Viking warrior Harald Hardrada invades from Norway.
-        </p>
+      <!-- VIEW B: BIRD'S EYE (ALL 5 COLUMNS OVERVIEW) -->
+      <section id="all-5-overview-view" class="blocks-grid-5" style="display: none;">
 
-        <!-- 3 WORD BOXES -->
-        <div class="word-boxes-section">
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Harold Godwinson</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+        <!-- BLOCK 1: SUCCESSION VOID -->
+        <section class="block-card">
+          <div class="block-header-strip">
+            <span class="block-act-badge"><i class="fa-solid fa-1"></i> Block 1</span>
+            <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Jan 1066</span>
+          </div>
+          <h2 class="block-title">The Succession Void</h2>
+          <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 27): King Edward on Deathbed', 'King Edward the Confessor died childless on 5 January 1066 after reigning 24 years. Without a direct blood heir, England plunged into an immediate succession crisis.', '/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg')">
+            <img src="/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg" alt="Edward Confessor Deathbed" />
+            <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Edward Confessor</span>
+          </div>
+          <p class="block-summary-text">
+            Edward dies without an heir. The Witan crowns Earl Harold Godwinson, sparking rival claims.
+          </p>
+
+          <!-- 3 WORD BOXES (From Workbook Trigger Spine) -->
+          <div class="word-boxes-section">
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Childless English King</span>
+              </div>
+              <div class="word-box-note">Edward dies childless on 5 Jan 1066 leaving no direct blood heir, creating a succession void.</div>
             </div>
-            <div class="word-box-note">Earl of Wessex crowned by the Witan to defend England.</div>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Three Rival Claimants</span>
+              </div>
+              <div class="word-box-note">Three powerful rivals contest the crown: Harold Godwinson, Duke William, and Harald Hardrada.</div>
+            </div>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Witan Backs Harold</span>
+              </div>
+              <div class="word-box-note">Royal council of Anglo-Saxon nobles and bishops elects Earl Harold Godwinson as King Harold II.</div>
+            </div>
           </div>
 
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Duke William</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+          <div class="sentence-launcher-box">
+            <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+            </button>
+            <div class="sentence-launcher-output">
+              "When Edward died a <strong>childless English king</strong>, <strong>three rival claimants</strong> contested the succession before the <strong>Witan backed Harold</strong>."
             </div>
-            <div class="word-box-note">Norman ruler claiming Edward's promise and the Papal Banner.</div>
           </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Harald Hardrada</span>
-              <span class="word-box-status">[ Click Clue ]</span>
-            </div>
-            <div class="word-box-note">Fierce Viking king invading Yorkshire with 300 longships.</div>
-          </div>
-        </div>
-
-        <div class="sentence-launcher-box">
-          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
-            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+          
+          <button type="button" class="palette-chip" style="margin-top: 6px; width: 100%; text-align: center; justify-content: center;" onclick="goToStep(1); togglePart1View('focus');">
+            <i class="fa-solid fa-chalkboard-user"></i> Present Stage 1
           </button>
-          <div class="sentence-launcher-output">
-            "While <strong>Harold Godwinson</strong> held London, <strong>Duke William</strong> and <strong>Harald Hardrada</strong> both launched rival invasion fleets."
+        </section>
+
+        <!-- BLOCK 2: THREE CLAIMANTS -->
+        <section class="block-card">
+          <div class="block-header-strip">
+            <span class="block-act-badge"><i class="fa-solid fa-2"></i> Block 2</span>
+            <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Early 1066</span>
           </div>
-        </div>
-      </section>
+          <h2 class="block-title">The Three Claimants</h2>
+          <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 23): Harold Swears Sacred Oath', 'Harold Godwinson swears on holy relics at Bayeux (c. 1064) to support William. William convinced Pope Alexander II that Harold was a perjurer, securing the Papal Banner.', '/images/medieval_england/source_a_bayeux_harold_oath.jpg')">
+            <img src="/images/medieval_england/source_a_bayeux_harold_oath.jpg" alt="Harold swearing oath" />
+            <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Sacred Relics Oath</span>
+          </div>
+          <p class="block-summary-text">
+            Duke William claims Harold broke an oath; Viking warrior Harald Hardrada invades from Norway.
+          </p>
 
-      <!-- BLOCK 3: STAMFORD BRIDGE -->
-      <section class="block-card">
-        <div class="block-header-strip">
-          <span class="block-act-badge"><i class="fa-solid fa-3"></i> Block 3</span>
-          <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Sep 1066</span>
-        </div>
-        <h2 class="block-title">Stamford Bridge &amp; March</h2>
-        <div class="block-source-preview" onclick="showDetail('Silver Penny of King Harold II (1066)', 'Harold II silver penny bearing PAX (Peace). Harold marched 190 miles north in four days, destroying Hardrada\'s army at Stamford Bridge, but lost hundreds of his finest housecarls.', '/images/medieval_england/source_c_harold_godwinson_penny.jpg')">
-          <img src="/images/medieval_england/source_c_harold_godwinson_penny.jpg" alt="Harold Silver Penny" />
-          <span class="block-source-badge"><i class="fa-solid fa-coins"></i> Harold II Penny</span>
-        </div>
-        <p class="block-summary-text">
-          Harold marches 190 miles north to crush Vikings at Stamford Bridge; the wind shifts south.
-        </p>
-
-        <!-- 3 WORD BOXES -->
-        <div class="word-boxes-section">
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Housecarls</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+          <!-- 3 WORD BOXES -->
+          <div class="word-boxes-section">
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">English Earl Takes Crown</span>
+              </div>
+              <div class="word-box-note">Harold is crowned in Westminster Abbey, but faces immediate threats of invasion from Normandy and Norway.</div>
             </div>
-            <div class="word-box-note">Harold's elite professional bodyguards; heavily depleted in the north.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> 190-Mile March</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Fierce Viking Giant</span>
+              </div>
+              <div class="word-box-note">Viking warrior Harald Hardrada stakes a claim based on an earlier Danish pact, preparing 300 longships.</div>
             </div>
-            <div class="word-box-note">Rapid forced march north and back south left troops exhausted.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Shift in Wind</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Duke Promised the Throne</span>
+              </div>
+              <div class="word-box-note">Duke William claims Edward promised him the crown in 1051, backed by Harold's sacred relic oath.</div>
             </div>
-            <div class="word-box-note">Southerly wind let William cross while Harold was in York.</div>
           </div>
-        </div>
 
-        <div class="sentence-launcher-box">
-          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
-            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+          <div class="sentence-launcher-box">
+            <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+            </button>
+            <div class="sentence-launcher-output">
+              "While an <strong>English earl took the crown</strong>, a <strong>fierce Viking giant</strong> attacked the north and the <strong>Duke promised the throne</strong> sailed from Normandy."
+            </div>
+          </div>
+
+          <button type="button" class="palette-chip" style="margin-top: 6px; width: 100%; text-align: center; justify-content: center;" onclick="goToStep(2); togglePart1View('focus');">
+            <i class="fa-solid fa-chalkboard-user"></i> Present Stage 2
           </button>
-          <div class="sentence-launcher-output">
-            "Harold's <strong>190-mile march</strong> cost him vital <strong>housecarls</strong>, before a <strong>shift in the wind</strong> enabled William to land."
+        </section>
+
+        <!-- BLOCK 3: STAMFORD BRIDGE -->
+        <section class="block-card">
+          <div class="block-header-strip">
+            <span class="block-act-badge"><i class="fa-solid fa-3"></i> Block 3</span>
+            <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Sep 1066</span>
           </div>
-        </div>
-      </section>
+          <h2 class="block-title">Stamford Bridge &amp; March</h2>
+          <div class="block-source-preview" onclick="showDetail('Silver Penny of King Harold II (1066)', 'Harold II silver penny bearing PAX (Peace). Harold marched 190 miles north in four days, destroying Hardrada\'s army at Stamford Bridge, but lost hundreds of his finest housecarls.', '/images/medieval_england/source_c_harold_godwinson_penny.jpg')">
+            <img src="/images/medieval_england/source_c_harold_godwinson_penny.jpg" alt="Harold Silver Penny" />
+            <span class="block-source-badge"><i class="fa-solid fa-coins"></i> Harold II Penny</span>
+          </div>
+          <p class="block-summary-text">
+            Harold marches 190 miles north to crush Vikings at Stamford Bridge; the wind shifts south.
+          </p>
 
-      <!-- BLOCK 4: SENLAC HILL SHIELD WALL -->
-      <section class="block-card">
-        <div class="block-header-strip">
-          <span class="block-act-badge"><i class="fa-solid fa-4"></i> Block 4</span>
-          <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">14 Oct 1066</span>
-        </div>
-        <h2 class="block-title">The Shield Wall</h2>
-        <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry: Norman Cavalry Charging Shield Wall', 'Norman heavy cavalry with stirrups and couched lances charge uphill against the dense Anglo-Saxon shield wall. Harold\'s defensive formation held firm for over six hours.', '/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg')">
-          <img src="/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg" alt="Norman Cavalry on Senlac Hill" />
-          <span class="block-source-badge"><i class="fa-solid fa-shield-halved"></i> Norman Cavalry</span>
-        </div>
-        <p class="block-summary-text">
-          On Senlac Hill, Harold forms an interlocking shield wall, repelling Norman cavalry for six hours.
-        </p>
-
-        <!-- 3 WORD BOXES -->
-        <div class="word-boxes-section">
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Senlac Hill</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+          <!-- 3 WORD BOXES -->
+          <div class="word-boxes-section">
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">300 Viking Longships</span>
+              </div>
+              <div class="word-box-note">Hardrada lands 300 ships in Yorkshire; Harold marches his army 190 miles north in just four days.</div>
             </div>
-            <div class="word-box-note">Steep ridge giving Saxons strong defensive high ground.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Shield Wall</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Fierce River Clash</span>
+              </div>
+              <div class="word-box-note">At Stamford Bridge, Hardrada is slain and the Viking army annihilated; only 24 ships return to Norway.</div>
             </div>
-            <div class="word-box-note">Dense wall of overlapping oak shields repelling cavalry charges.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Fyrd Militia</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Marching Night and Day</span>
+              </div>
+              <div class="word-box-note">Hearing William landed at Pevensey, Harold's exhausted troops must immediately force-march 250 miles south.</div>
             </div>
-            <div class="word-box-note">Part-time peasant soldiers with limited weapons and armor.</div>
           </div>
-        </div>
 
-        <div class="sentence-launcher-box">
-          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
-            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+          <div class="sentence-launcher-box">
+            <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+            </button>
+            <div class="sentence-launcher-output">
+              "After destroying <strong>300 Viking longships</strong> in a <strong>fierce river clash</strong>, Harold's army spent weeks <strong>marching night and day</strong>, leaving them exhausted."
+            </div>
+          </div>
+
+          <button type="button" class="palette-chip" style="margin-top: 6px; width: 100%; text-align: center; justify-content: center;" onclick="goToStep(3); togglePart1View('focus');">
+            <i class="fa-solid fa-chalkboard-user"></i> Present Stage 3
           </button>
-          <div class="sentence-launcher-output">
-            "Atop <strong>Senlac Hill</strong>, Harold's locked <strong>shield wall</strong> held firm despite his inexperienced <strong>fyrd militia</strong>."
+        </section>
+
+        <!-- BLOCK 4: SENLAC HILL SHIELD WALL -->
+        <section class="block-card">
+          <div class="block-header-strip">
+            <span class="block-act-badge"><i class="fa-solid fa-4"></i> Block 4</span>
+            <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">14 Oct 1066</span>
           </div>
-        </div>
-      </section>
+          <h2 class="block-title">The Shield Wall</h2>
+          <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry: Norman Cavalry Charging Shield Wall', 'Norman heavy cavalry with stirrups and couched lances charge uphill against the dense Anglo-Saxon shield wall. Harold\'s defensive formation held firm for over six hours.', '/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg')">
+            <img src="/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg" alt="Norman Cavalry on Senlac Hill" />
+            <span class="block-source-badge"><i class="fa-solid fa-shield-halved"></i> Norman Cavalry</span>
+          </div>
+          <p class="block-summary-text">
+            On Senlac Hill, Harold forms an interlocking shield wall, repelling Norman cavalry for six hours.
+          </p>
 
-      <!-- BLOCK 5: FEIGNED RETREAT -->
-      <section class="block-card">
-        <div class="block-header-strip">
-          <span class="block-act-badge"><i class="fa-solid fa-5"></i> Block 5</span>
-          <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Late 14 Oct</span>
-        </div>
-        <h2 class="block-title">Feigned Retreat &amp; Victory</h2>
-        <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 71): King Harold Slain at Hastings', 'King Harold is struck down as the Saxon line disintegrates. William\'s feigned retreat lured the fyrd down the hill where Norman cavalry encircled and slaughtered them.', '/images/medieval_england/source_b_bayeux_harold_death.jpg')">
-          <img src="/images/medieval_england/source_b_bayeux_harold_death.jpg" alt="Harold Slain at Hastings" />
-          <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Harold Slain</span>
-        </div>
-        <p class="block-summary-text">
-          William orders fake retreats, breaking the shield wall. Norman cavalry and archers destroy the Saxons.
-        </p>
-
-        <!-- 3 WORD BOXES -->
-        <div class="word-boxes-section">
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Feigned Retreat</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+          <!-- 3 WORD BOXES -->
+          <div class="word-boxes-section">
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Steep Slippery Ridge</span>
+              </div>
+              <div class="word-box-note">Saxons hold the high ground on Senlac Hill, forcing Norman cavalry to charge uphill into marshland.</div>
             </div>
-            <div class="word-box-note">Tactical trick where Norman cavalry faked flight, luring Saxons off the hill.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Combined Arms</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Locked Wooden Shields</span>
+              </div>
+              <div class="word-box-note">Impenetrable Saxon shield wall holds firm against repeated Norman cavalry charges for six hours.</div>
             </div>
-            <div class="word-box-note">Coordinated heavy cavalry, high-angle archers, and disciplined infantry.</div>
-          </div>
-
-          <div class="word-box-item" onclick="toggleWordBox(this)">
-            <div class="word-box-top">
-              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Harold Slain</span>
-              <span class="word-box-status">[ Click Clue ]</span>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Two-Handed Battleaxes</span>
+              </div>
+              <div class="word-box-note">Elite Saxon housecarls wield deadly two-handed battleaxes, chopping through Norman armour and horses.</div>
             </div>
-            <div class="word-box-note">King Harold killed late in the battle; Saxon army broke and fled.</div>
           </div>
-        </div>
 
-        <div class="sentence-launcher-box">
-          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
-            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+          <div class="sentence-launcher-box">
+            <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+            </button>
+            <div class="sentence-launcher-output">
+              "Atop the <strong>steep slippery ridge</strong>, the Saxons formed <strong>locked wooden shields</strong> and swung <strong>two-handed battleaxes</strong>, holding Senlac Hill."
+            </div>
+          </div>
+
+          <button type="button" class="palette-chip" style="margin-top: 6px; width: 100%; text-align: center; justify-content: center;" onclick="goToStep(4); togglePart1View('focus');">
+            <i class="fa-solid fa-chalkboard-user"></i> Present Stage 4
           </button>
-          <div class="sentence-launcher-output">
-            "William's <strong>feigned retreat</strong> shattered the shield wall, letting his <strong>combined arms</strong> triumph when <strong>Harold was slain</strong>."
+        </section>
+
+        <!-- BLOCK 5: FEIGNED RETREAT -->
+        <section class="block-card">
+          <div class="block-header-strip">
+            <span class="block-act-badge"><i class="fa-solid fa-5"></i> Block 5</span>
+            <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">Late 14 Oct</span>
           </div>
-        </div>
+          <h2 class="block-title">Feigned Retreat &amp; Victory</h2>
+          <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 71): King Harold Slain at Hastings', 'King Harold is struck down as the Saxon line disintegrates. William\'s feigned retreat lured the fyrd down the hill where Norman cavalry encircled and slaughtered them.', '/images/medieval_england/source_b_bayeux_harold_death.jpg')">
+            <img src="/images/medieval_england/source_b_bayeux_harold_death.jpg" alt="Harold Slain at Hastings" />
+            <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Harold Slain</span>
+          </div>
+          <p class="block-summary-text">
+            William orders fake retreats, breaking the shield wall. Norman cavalry and archers destroy the Saxons.
+          </p>
+
+          <!-- 3 WORD BOXES -->
+          <div class="word-boxes-section">
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Pretending to Run Away</span>
+              </div>
+              <div class="word-box-note">William orders fake retreats; undisciplined Saxon fyrd militia break rank to pursue down the hill.</div>
+            </div>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Chasing Down the Hill</span>
+              </div>
+              <div class="word-box-note">Lured onto open ground, scattered Saxons are encircled and butchered by Norman heavy cavalry.</div>
+            </div>
+            <div class="word-box-item" onclick="toggleWordBox(this)" title="Click to reveal clue &amp; mark recorded">
+              <div class="word-box-top">
+                <i class="fa-regular fa-square-check word-item-check"></i>
+                <span class="word-box-title">Arrow Strikes Harold</span>
+              </div>
+              <div class="word-box-note">Norman archers angle arrows high; King Harold is struck down and the Anglo-Saxon army collapses.</div>
+            </div>
+          </div>
+
+          <div class="sentence-launcher-box">
+            <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Model Sentence</span>
+            </button>
+            <div class="sentence-launcher-output">
+              "By <strong>pretending to run away</strong>, William tricked the Saxons into <strong>chasing down the hill</strong> until an <strong>arrow struck Harold</strong>, ending Saxon rule."
+            </div>
+          </div>
+
+          <button type="button" class="palette-chip" style="margin-top: 6px; width: 100%; text-align: center; justify-content: center;" onclick="goToStep(5); togglePart1View('focus');">
+            <i class="fa-solid fa-chalkboard-user"></i> Present Stage 5
+          </button>
+        </section>
+
       </section>
 
     </main>
 
     <!-- ================================================================= -->
-    <!-- PART 2: THE CAUSAL BALANCE SCALE (LUCK VS TACTICAL SKILL)          -->
+    <!-- PART 2: CAUSAL BALANCE SCALE (TACTICAL SKILL VS SAXON MISFORTUNE) -->
     <!-- ================================================================= -->
     <main id="part-2-container" class="scale-container" style="display: none;">
-      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
-        <h2 style="font-size: 1.25rem; font-weight: 800; color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">
-          The Historian's Weighing Scale: What Really Decided 1066?
+      <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 8px;">
+        <span class="ks3-badge" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: rgba(245, 158, 11, 0.4);">
+          <i class="fa-solid fa-scale-balanced"></i> Disciplinary Enquiry Scale
+        </span>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; color: #ffffff; margin-top: 4px;">
+          Was William's Victory Decided by Norman Military Genius or Saxon Misfortune?
         </h2>
-        <p style="font-size: 0.82rem; color: #94a3b8; margin-top: 3px;">
-          Click evidence chips to weigh whether William won through <strong>Saxon Misfortune</strong> or <strong>Norman Military Skill</strong>.
+        <p style="font-size: 0.8rem; color: #94a3b8;">
+          Click the historical evidence chips below to weigh up the causal factors. Watch the scale tip as you build your historical argument!
         </p>
       </div>
 
-      <!-- Animated Balance Scale -->
-      <div class="scale-stage">
-        <div class="scale-pivot"></div>
+      <!-- Animated Balance Scale Visual -->
+      <div class="scale-rig">
         <div class="scale-beam" id="scale-beam">
           <div class="scale-pan-left">
             <div class="pan-label" style="color: #f43f5e;"><i class="fa-solid fa-cloud-bolt"></i> Saxon Misfortune</div>
             <div class="pan-weight" id="weight-luck" style="color: #f43f5e;">0 pts</div>
           </div>
           <div class="scale-pan-right">
-            <div class="pan-label" style="color: #38bdf8;"><i class="fa-solid fa-chess"></i> Norman Skill</div>
+            <div class="pan-label" style="color: #38bdf8;"><i class="fa-solid fa-chess-knight"></i> Norman Tactical Skill</div>
             <div class="pan-weight" id="weight-skill" style="color: #38bdf8;">0 pts</div>
           </div>
         </div>
+        <div class="scale-pivot"></div>
       </div>
 
-      <!-- Evidence Chips Selection Grid -->
-      <div class="scale-chips-grid">
-        <!-- Misfortune Column -->
-        <div style="display: flex; flex-direction: column; gap: 6px;">
-          <div style="font-size: 0.74rem; font-weight: 800; color: #f43f5e; text-transform: uppercase; letter-spacing: 0.5px;">
-            <i class="fa-solid fa-cloud-bolt"></i> Saxon Misfortune &amp; Exhaustion
-          </div>
-          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="15" onclick="toggleScaleChip(this)">
-            <span><strong>1. Dual Invasion:</strong> Attacked in the north and south in the same month</span>
-            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
-          </button>
-          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="20" onclick="toggleScaleChip(this)">
-            <span><strong>2. Stamford Bridge Losses:</strong> Harold lost many of his finest housecarls</span>
-            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
-          </button>
-          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="15" onclick="toggleScaleChip(this)">
-            <span><strong>3. 400-Mile March:</strong> Saxon army marched on foot across England without rest</span>
-            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
-          </button>
-          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="10" onclick="toggleScaleChip(this)">
-            <span><strong>4. The Channel Wind:</strong> Wind delayed William until Harold marched north</span>
-            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
-          </button>
-        </div>
-
-        <!-- Skill Column -->
-        <div style="display: flex; flex-direction: column; gap: 6px;">
-          <div style="font-size: 0.74rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px;">
-            <i class="fa-solid fa-shield"></i> Norman Tactical Brilliance
-          </div>
-          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="20" onclick="toggleScaleChip(this)">
-            <span><strong>1. Feigned Retreat:</strong> Tactical trick broke the impenetrable shield wall</span>
-            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
-          </button>
-          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="20" onclick="toggleScaleChip(this)">
-            <span><strong>2. Combined Arms:</strong> Coordinated archers, heavy cavalry, and infantry</span>
-            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
-          </button>
-          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="15" onclick="toggleScaleChip(this)">
-            <span><strong>3. William's Leadership:</strong> Removing helmet under arrow fire to stop panic</span>
-            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
-          </button>
-          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="10" onclick="toggleScaleChip(this)">
-            <span><strong>4. Papal Banner:</strong> Pope's blessing gave Norman soldiers moral confidence</span>
-            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
-          </button>
-        </div>
-      </div>
-
-      <div id="scale-verdict-box" style="padding: 10px 14px; background: #0f172a; border-radius: 8px; border-left: 4px solid var(--gold-primary); font-size: 0.84rem; color: #f8fafc;">
+      <!-- Live Verdict Banner -->
+      <div id="scale-verdict-box" style="background: #090e1a; border: 1.5px solid #0284c7; border-radius: 8px; padding: 10px 14px; font-size: 0.84rem; color: #e2e8f0; line-height: 1.45;">
         <strong>Enquiry Conclusion:</strong> Click chips on both sides to weigh up your historical conclusion!
+      </div>
+
+      <!-- Evidence Chips Grid -->
+      <div class="scale-chips-grid">
+        <!-- Left: Saxon Misfortune & Exhaustion -->
+        <div style="background: #090e1a; border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 0.76rem; font-weight: 800; color: #f43f5e; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid rgba(244, 63, 94, 0.2); padding-bottom: 4px;">
+            <i class="fa-solid fa-feather"></i> Saxon Exhaustion &amp; Bad Luck
+          </div>
+
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="15" onclick="toggleScaleChip(this)">
+            <span><strong>190-Mile Forced March:</strong> Troops exhausted after rushing to York.</span>
+            <span style="color: #f43f5e; font-weight: 700;">+15</span>
+          </button>
+
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="20" onclick="toggleScaleChip(this)">
+            <span><strong>Depleted Elite Housecarls:</strong> Hundreds died crushing Vikings at Stamford Bridge.</span>
+            <span style="color: #f43f5e; font-weight: 700;">+20</span>
+          </button>
+
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="15" onclick="toggleScaleChip(this)">
+            <span><strong>Fyrd Militia Inexperience:</strong> Untrained farmers panicked and broke ranks.</span>
+            <span style="color: #f43f5e; font-weight: 700;">+15</span>
+          </button>
+
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="10" onclick="toggleScaleChip(this)">
+            <span><strong>Crucial Wind Shift:</strong> Southerly wind enabled William to land while Harold was in York.</span>
+            <span style="color: #f43f5e; font-weight: 700;">+10</span>
+          </button>
+        </div>
+
+        <!-- Right: Norman Tactical Skill & Leadership -->
+        <div style="background: #090e1a; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 0.76rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid rgba(56, 189, 248, 0.2); padding-bottom: 4px;">
+            <i class="fa-solid fa-chess"></i> Norman Military Innovation &amp; Combined Arms
+          </div>
+
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="25" onclick="toggleScaleChip(this)">
+            <span><strong>The Feigned Retreat:</strong> Deliberately tricked the Saxon fyrd off the hill.</span>
+            <span style="color: #38bdf8; font-weight: 700;">+25</span>
+          </button>
+
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="15" onclick="toggleScaleChip(this)">
+            <span><strong>Combined Arms Tactics:</strong> Seamless coordination of archers, infantry, and heavy cavalry.</span>
+            <span style="color: #38bdf8; font-weight: 700;">+15</span>
+          </button>
+
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="10" onclick="toggleScaleChip(this)">
+            <span><strong>High-Angle Archer Fire:</strong> Plunging arrows over shield wall struck Harold.</span>
+            <span style="color: #38bdf8; font-weight: 700;">+10</span>
+          </button>
+
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="10" onclick="toggleScaleChip(this)">
+            <span><strong>William's Personal Leadership:</strong> Lifted his helmet on battlefield to rally retreating troops.</span>
+            <span style="color: #38bdf8; font-weight: 700;">+10</span>
+          </button>
+        </div>
       </div>
     </main>
 
     <!-- ================================================================= -->
-    <!-- PART 3: RIGHT-PAGE COMPANION (WRITING STUDIO & CLUE LADDER)        -->
+    <!-- PART 3: RIGHT-PAGE WRITING STUDIO & CLUE LADDER                   -->
     <!-- ================================================================= -->
     <main id="part-3-container" class="studio-grid" style="display: none;">
 
-      <!-- Clue Ladder -->
+      <!-- Left Column: The 3-Tier Clue Ladder -->
       <section class="clue-ladder-card">
-        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">
-          <span style="font-size: 0.68rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px;">Right Workbook Page &bull; Writing Studio</span>
-          <h2 style="font-size: 1.1rem; font-weight: 800; color: #ffffff; font-family: 'Playfair Display', Georgia, serif; margin-top: 2px;">
-            The 3-Tier Clue Ladder (Write Your Paragraph)
+        <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+          <span class="ks3-badge"><i class="fa-solid fa-stairs"></i> Writing Clue Ladder</span>
+          <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; color: #ffffff; margin-top: 4px;">
+            Clues for Your Right-Hand Workbook Page Write-Up
           </h2>
-        </div>
-
-        <!-- Bronze Step -->
-        <div class="ladder-step active">
-          <span class="ladder-badge badge-bronze"><i class="fa-solid fa-award"></i> Bronze Clue &bull; Sentence Starter (Point)</span>
-          <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.35;">
-            "A crucial factor in William's victory was his tactical deployment of combined arms..."
-          </p>
-        </div>
-
-        <!-- Silver Step -->
-        <div class="ladder-step">
-          <span class="ladder-badge badge-silver"><i class="fa-solid fa-award"></i> Silver Clue &bull; Left Page Word Checklist (Evidence)</span>
           <p style="font-size: 0.78rem; color: #94a3b8;">
-            Embed evidence from Blocks 3, 4, and 5 into your paragraph:
+            Select a tier to guide your paragraph without simply copying a model answer:
           </p>
-          <div class="word-palette-chips">
-            <span class="palette-chip">Shield Wall</span>
-            <span class="palette-chip">Feigned Retreat</span>
-            <span class="palette-chip">Combined Arms</span>
-            <span class="palette-chip">Stamford Bridge Fatigue</span>
+        </div>
+
+        <!-- Tier 1: Bronze Starter -->
+        <div class="ladder-step" id="step-bronze">
+          <div class="ladder-badge badge-bronze"><i class="fa-solid fa-shield"></i> Tier 1: Bronze Sentence Starter</div>
+          <p style="font-size: 0.82rem; color: #f8fafc; font-style: italic;">
+            "A decisive reason why Duke William won the Battle of Hastings was..."
+          </p>
+          <div style="font-size: 0.72rem; color: #94a3b8;">
+            Complete this sentence by picking either <strong>Norman tactics</strong> or <strong>Anglo-Saxon exhaustion</strong>.
           </div>
         </div>
 
-        <!-- Gold Step -->
-        <div class="ladder-step">
-          <span class="ladder-badge badge-gold"><i class="fa-solid fa-award"></i> Gold Clue &bull; The Explanation ('So What?')</span>
-          <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.35;">
-            Explain <strong>why</strong> the feigned retreat was decisive: once the Saxon fyrd broke formation, their lack of horses meant they were easily encircled and slaughtered by Norman cavalry!
+        <!-- Tier 2: Silver Evidence Checklist -->
+        <div class="ladder-step active" id="step-silver">
+          <div class="ladder-badge badge-silver"><i class="fa-solid fa-list-check"></i> Tier 2: Silver Evidence Checklist</div>
+          <p style="font-size: 0.8rem; color: #e2e8f0;">
+            Did your paragraph include these core historical facts from the left page?
           </p>
+          <ul style="font-size: 0.76rem; color: #94a3b8; padding-left: 18px; line-height: 1.5;">
+            <li>Did you name <strong>Senlac Hill</strong> and explain why the <strong>shield wall</strong> held for 6 hours?</li>
+            <li>Did you explain the <strong>feigned retreat</strong> and how it tricked the Saxon <strong>fyrd</strong>?</li>
+            <li>Did you mention Harold's 190-mile forced march after the Battle of <strong>Stamford Bridge</strong>?</li>
+          </ul>
         </div>
 
-        <!-- Exemplar Reveal -->
-        <div style="margin-top: 4px;">
-          <button type="button" class="palette-chip" style="width: 100%; padding: 7px; text-align: center; background: #0284c7; color: #ffffff;" onclick="toggleModelEssay()">
-            <i class="fa-solid fa-eye"></i> <span>Reveal Exemplar Paragraph</span>
+        <!-- Tier 3: Gold Explanation -->
+        <div class="ladder-step" id="step-gold">
+          <div class="ladder-badge badge-gold"><i class="fa-solid fa-crown"></i> Tier 3: Gold Historian Explanation</div>
+          <p style="font-size: 0.8rem; color: #fef08a; font-style: italic;">
+            "This meant that while Harold's exhausted housecarls could withstand direct frontal assault, they lacked the cavalry mobility to survive once their formation fractured..."
+          </p>
+          <div style="font-size: 0.72rem; color: #94a3b8;">
+            Use connectives like <em>Consequently</em>, <em>Crucially</em>, and <em>This proved decisive because...</em>
+          </div>
+        </div>
+
+        <!-- Reveal Model Trigger Bar -->
+        <div style="margin-top: auto; padding-top: 10px; border-top: 1px dashed var(--border-subtle); display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+          <span style="font-size: 0.74rem; color: #94a3b8; font-style: italic;">
+            <i class="fa-solid fa-lightbulb" style="color: #fbbf24; margin-right: 4px;"></i> Compare your draft against a finished historian write-up:
+          </span>
+          <button type="button" class="palette-chip" id="btn-reveal-left" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.4); color: #4ade80; font-size: 0.74rem; font-weight: 700; padding: 6px 14px; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px;" onclick="toggleModelEssay()">
+            <i class="fa-solid fa-eye" id="reveal-icon-left"></i> <span id="reveal-text-left">Reveal Model on Right &rarr;</span>
           </button>
-          <div id="model-essay-box" style="display: none; margin-top: 8px; padding: 10px 12px; background: #0b1120; border-radius: 6px; border-left: 3px solid #38bdf8; font-size: 0.82rem; line-height: 1.5; color: #f8fafc; font-family: Georgia, serif;">
-            "A decisive factor in William’s victory was his mastery of combined arms. For over six hours on Senlac Hill, the Anglo-Saxon <strong>shield wall</strong> held firm against frontal cavalry charges. However, William exploited Saxon overconfidence by ordering a series of <strong>feigned retreats</strong>. When the undisciplined Saxon fyrd broke formation to pursue the 'fleeing' Normans, William’s heavy cavalry wheeled around and encircled them. Deprived of the defensive protection of their locked shields and exhausted from their 400-mile march from <strong>Stamford Bridge</strong>, the Saxon infantry was decimated, proving that William's tactical flexibility—not mere fortune—secured his triumph."
-          </div>
         </div>
       </section>
 
-      <!-- Historian's Vocabulary Bank -->
+      <!-- Right Column: Disciplinary Word Palette -->
       <section class="clue-ladder-card">
-        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">
-          <span style="font-size: 0.68rem; font-weight: 800; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.5px;">Writing Toolkit</span>
-          <h2 style="font-size: 1.1rem; font-weight: 800; color: #ffffff; font-family: 'Playfair Display', Georgia, serif; margin-top: 2px;">
-            Historian's Vocabulary Bank
+        <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+          <span class="ks3-badge" style="background: rgba(14, 165, 233, 0.2); color: #38bdf8; border-color: rgba(56, 189, 248, 0.4);">
+            <i class="fa-solid fa-spell-check"></i> Vocabulary Bank
+          </span>
+          <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; color: #ffffff; margin-top: 4px;">
+            Historian Vocabulary Palette
           </h2>
+          <p style="font-size: 0.78rem; color: #94a3b8;">
+            Upgrade your right-page write-up by weaving in these high-level analytical terms:
+          </p>
         </div>
 
         <div>
-          <span style="font-size: 0.7rem; font-weight: 800; color: #38bdf8; text-transform: uppercase;">Elevate Your Causal Verbs</span>
+          <div style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; margin-bottom: 4px;">
+            1. Causal Connectives (Linking Events):
+          </div>
           <div class="word-palette-chips">
-            <span class="palette-chip" onclick="showWordHelp('Precipitated', 'Caused an event to happen suddenly or sooner than expected.')">precipitated</span>
-            <span class="palette-chip" onclick="showWordHelp('Decimated', 'Destroyed or killed a huge proportion of an army.')">decimated</span>
-            <span class="palette-chip" onclick="showWordHelp('Neutralised', 'Rendered an enemy advantage completely harmless or ineffective.')">neutralised</span>
-            <span class="palette-chip" onclick="showWordHelp('Outmanoeuvred', 'Gained an advantage through superior tactical skill.')">outmanoeuvred</span>
-            <span class="palette-chip" onclick="showWordHelp('Capitalised on', 'Took full advantage of a mistake or opportunity.')">capitalised on</span>
+            <span class="palette-chip" onclick="showWordHelp('Consequently', 'As a direct result or outcome of an earlier event.')">Consequently</span>
+            <span class="palette-chip" onclick="showWordHelp('Catalyzed', 'Caused an event to happen much faster or more violently.')">Catalyzed</span>
+            <span class="palette-chip" onclick="showWordHelp('Decisively', 'In a way that settles an issue convincingly or permanently.')">Decisively</span>
+            <span class="palette-chip" onclick="showWordHelp('Undermined', 'Weakened or eroded someone\'s power or position gradually.')">Undermined</span>
           </div>
         </div>
 
-        <div style="margin-top: 8px;">
-          <span style="font-size: 0.7rem; font-weight: 800; color: #fbbf24; text-transform: uppercase;">Key Evaluative Adjectives</span>
+        <div>
+          <div style="font-size: 0.72rem; font-weight: 800; color: #fbbf24; text-transform: uppercase; margin-bottom: 4px;">
+            2. Tactical &amp; Military Concepts:
+          </div>
           <div class="word-palette-chips">
-            <span class="palette-chip" onclick="showWordHelp('Indispensable', 'So absolutely necessary that the outcome could not happen without it.')">indispensable</span>
-            <span class="palette-chip" onclick="showWordHelp('Pivotal', 'A central turning point on which everything else depended.')">pivotal</span>
-            <span class="palette-chip" onclick="showWordHelp('Catastrophic', 'Involving sudden and massive ruin or defeat.')">catastrophic</span>
-            <span class="palette-chip" onclick="showWordHelp('Insurmountable', 'Too great to be overcome or resisted.')">insurmountable</span>
+            <span class="palette-chip" onclick="showWordHelp('Combined Arms', 'Coordinating archers, cavalry, and infantry together for maximum effect.')">Combined Arms</span>
+            <span class="palette-chip" onclick="showWordHelp('Feigned Retreat', 'Pretending to run away in panic to trick enemy soldiers into breaking formation.')">Feigned Retreat</span>
+            <span class="palette-chip" onclick="showWordHelp('Impenetrable', 'Impossible to pass through or break into (like the shield wall).')">Impenetrable</span>
+            <span class="palette-chip" onclick="showWordHelp('Decimated', 'Severely damaged, killed, or reduced in strength.')">Decimated</span>
           </div>
         </div>
 
-        <div id="word-help-box" style="margin-top: auto; padding: 8px 10px; background: #0f172a; border-radius: 6px; border: 1px solid #1e293b; font-size: 0.76rem; color: #94a3b8;">
-          <strong style="color: #ffffff;">Tip:</strong> Click any word above to view its meaning and a model sentence!
+        <div>
+          <div style="font-size: 0.72rem; font-weight: 800; color: #34d399; text-transform: uppercase; margin-bottom: 4px;">
+            3. Historical Evaluation Adjectives:
+          </div>
+          <div class="word-palette-chips">
+            <span class="palette-chip" onclick="showWordHelp('Indispensable', 'Absolutely necessary; without which the event could not have happened.')">Indispensable</span>
+            <span class="palette-chip" onclick="showWordHelp('Exhausted', 'Completely drained of physical strength after continuous forced marching.')">Exhausted</span>
+            <span class="palette-chip" onclick="showWordHelp('Reckless', 'Acting without proper caution; taking unnecessary dangerous risks.')">Reckless</span>
+            <span class="palette-chip" onclick="showWordHelp('Formidable', 'Inspiring fear or respect through being impressively large or powerful.')">Formidable</span>
+          </div>
+        </div>
+
+        <!-- Immediate Definition Help Box -->
+        <div id="word-help-box" style="margin-top: 8px; padding: 8px 10px; background: #0f172a; border-radius: 6px; border: 1px solid #1e293b; font-size: 0.76rem; color: #94a3b8; min-height: 44px; display: flex; flex-direction: column; justify-content: center;">
+          <div><strong style="color: #ffffff;">Tip:</strong> Click any word above to view its meaning and a model sentence!</div>
+        </div>
+
+        <!-- Exemplar Model Section (Anchored on the Right) -->
+        <div class="exemplar-model-container" style="margin-top: auto; padding-top: 10px; border-top: 1px dashed var(--border-subtle); display: flex; flex-direction: column; gap: 8px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.72rem; font-weight: 800; color: #4ade80; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-file-signature"></i> Exemplar Model Paragraph
+            </span>
+            <button type="button" class="palette-chip" id="btn-reveal-right" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.4); color: #4ade80; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; display: inline-flex; align-items: center; gap: 5px;" onclick="toggleModelEssay()">
+              <i class="fa-solid fa-eye" id="reveal-icon-right"></i> <span id="reveal-text-right">Reveal Model</span>
+            </button>
+          </div>
+
+          <div id="model-essay-placeholder" style="padding: 14px; background: rgba(15, 23, 42, 0.6); border: 1px dashed rgba(255, 255, 255, 0.12); border-radius: 6px; font-size: 0.76rem; color: #64748b; text-align: center; font-style: italic;">
+            <i class="fa-solid fa-lock" style="margin-right: 6px; color: #475569;"></i> Ready to inspect a finished historian write-up? Click "Reveal Model" to see Bronze, Silver &amp; Gold woven together.
+          </div>
+
+          <div id="model-essay-box" style="display: none; padding: 11px 13px; background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.35); border-radius: 6px; font-size: 0.78rem; line-height: 1.55; color: #dcfce7; max-height: 200px; overflow-y: auto;">
+            <div style="margin-bottom: 6px; display: flex; gap: 6px; flex-wrap: wrap;">
+              <span style="font-size: 0.65rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; background: rgba(249, 115, 22, 0.2); color: #f97316; border: 1px solid rgba(249, 115, 22, 0.4);">Bronze Starter</span>
+              <span style="font-size: 0.65rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; background: rgba(203, 213, 225, 0.2); color: #cbd5e1; border: 1px solid rgba(203, 213, 225, 0.4);">Silver Facts</span>
+              <span style="font-size: 0.65rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; background: rgba(251, 191, 36, 0.2); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.4);">Gold Vocabulary</span>
+            </div>
+            A decisive factor in William’s victory was his mastery of <strong>combined arms</strong> and tactical flexibility. For over six hours on <strong>Senlac Hill</strong>, the Anglo-Saxon <strong>shield wall</strong> held firm against frontal cavalry charges. However, William exploited Saxon overconfidence by ordering a series of <strong>feigned retreats</strong>. When the undisciplined Saxon fyrd broke formation to pursue the 'fleeing' Normans, William’s heavy cavalry wheeled around and encircled them.<br><br>Deprived of the defensive protection of their locked shields and exhausted from their 190-mile forced march after <strong>Stamford Bridge</strong>, the Saxon infantry was <strong>decimated</strong>, proving that while Harold fought bravely, William's combined arms and tactical genius proved <strong>decisive</strong>.
+          </div>
         </div>
       </section>
 
@@ -1077,6 +1710,139 @@
   </div>
 
   <script>
+    // =========================================================================
+    // KS3 STAGE DATA (VERBATIM CURRICULUM NARRATIVE & 3 WORKBOOK TRIGGER WORDS)
+    // =========================================================================
+    const stagesData = [
+      {
+        step: 1,
+        date: 'January 1066',
+        title: 'The Succession Void',
+        question: 'Why did the death of Edward the Confessor trigger a succession crisis?',
+        image: '/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg',
+        badge: 'Edward the Confessor on Deathbed',
+        caption: 'Bayeux Tapestry Scene 27: King Edward the Confessor dies childless on 5 January 1066 after reigning 24 years.',
+        narrative: '<span class="para-ref">[1.1]</span> On 5 January 1066, King Edward the Confessor died after reigning for twenty-four years. Edward left England in an existential crisis: he had died childless, leaving no direct heir to the throne. In Anglo-Saxon England, royal blood did not guarantee succession; the royal council, known as the <strong>Witan</strong>, held the constitutional right to elect the next monarch. Within twenty-four hours of Edward’s burial in Westminster Abbey, the Witan elected England’s wealthiest nobleman, <strong>Harold Godwinson</strong>, Earl of Wessex. Harold was crowned King Harold II, but his coronation ignited an international dynastic bloodbath.',
+        words: [
+          {
+            term: 'Childless English King',
+            clue: 'King Edward dies on 5 January 1066 leaving no direct blood heir, creating an immediate succession crisis.'
+          },
+          {
+            term: 'Three Rival Claimants',
+            clue: 'The English crown is contested by three powerful leaders: Harold Godwinson, Duke William of Normandy, and Harald Hardrada.'
+          },
+          {
+            term: 'Witan Backs Harold',
+            clue: 'The royal council of Anglo-Saxon nobles and bishops unanimously elects England\'s wealthiest earl, Harold Godwinson, as King Harold II.'
+          }
+        ],
+        modelSentence: 'When Edward died a <strong>childless English king</strong>, <strong>three rival claimants</strong> contested the succession before the <strong>Witan backed Harold</strong>.'
+      },
+      {
+        step: 2,
+        date: 'Early 1066',
+        title: 'The Three Claimants',
+        question: 'Who were the three rival claimants contending for the English crown?',
+        image: '/images/medieval_england/source_a_bayeux_harold_oath.jpg',
+        badge: 'Sacred Relics Oath at Bayeux',
+        caption: 'Bayeux Tapestry Scene 23: Harold swears allegiance over holy relics to Duke William of Normandy (c. 1064).',
+        narrative: '<span class="para-ref">[1.2]</span> Harold’s crown was immediately challenged by two formidable foreign rulers. In Normandy, <strong>Duke William</strong> claimed that Edward the Confessor had promised him the English throne in 1051, and that Harold Godwinson had sworn a sacred oath on holy relics in 1064 supporting William’s claim. William secured the blessing of Pope Alexander II, carrying a papal banner into battle. Simultaneously in Scandinavia, the fearsome Viking king <strong>Harald Hardrada</strong> of Norway staked a claim based on an earlier agreement between his ancestors and former Danish rulers of England. Surrounded by enemies, King Harold mobilized England’s armies for an unavoidable two-front invasion.',
+        words: [
+          {
+            term: 'English Earl Takes Crown',
+            clue: 'Harold Godwinson is crowned King Harold II in Westminster Abbey, but faces immediate threats of invasion from Normandy and Scandinavia.'
+          },
+          {
+            term: 'Fierce Viking Giant',
+            clue: 'Harald Hardrada, the feared warrior-king of Norway, assembles an invasion armada based on an earlier Danish pact.'
+          },
+          {
+            term: 'Duke Promised the Throne',
+            clue: 'Duke William of Normandy claims Edward promised him the crown in 1051, backed by Harold\'s sacred relic oath in 1064.'
+          }
+        ],
+        modelSentence: 'While an <strong>English earl took the crown</strong>, a <strong>fierce Viking giant</strong> invaded from the north and the <strong>Duke promised the throne</strong> prepared to cross from Normandy.'
+      },
+      {
+        step: 3,
+        date: 'September 1066',
+        title: 'Stamford Bridge & The Forced March',
+        question: 'How did the Battle of Stamford Bridge exhaust King Harold’s northern forces?',
+        image: '/images/medieval_england/source_c_harold_godwinson_penny.jpg',
+        badge: 'Harold II Silver Penny (PAX)',
+        caption: 'Silver Penny of King Harold II (1066) bearing PAX (Peace). Issued before Harold marched 190 miles north.',
+        narrative: '<span class="para-ref">[1.3]</span> The first blow fell in the north. In September 1066, Harald Hardrada landed 300 Viking longships along the Yorkshire coast. King Harold performed a superhuman military feat: he marched his army 190 miles north from London in just four days. On 25 September, Harold surprised the Vikings at <strong>Stamford Bridge</strong>. In a savage battle, Hardrada was killed with an arrow through the throat, and the Viking army was so utterly annihilated that only 24 longships were needed to carry the survivors home. But Harold’s triumph was fatally brief. Two days later, Duke William’s invasion fleet landed unopposed at Pevensey Bay on the southern coast.',
+        words: [
+          {
+            term: '300 Viking Longships',
+            clue: 'Harald Hardrada lands 300 Viking longships along Yorkshire; Harold marches 190 miles in four days to surprise him.'
+          },
+          {
+            term: 'Fierce River Clash',
+            clue: 'Harold crushes the Vikings at Stamford Bridge; Hardrada is killed and only 24 of 300 longships return home.'
+          },
+          {
+            term: 'Marching Night and Day',
+            clue: 'Hearing William landed at Pevensey Bay, Harold\'s exhausted troops must immediately force-march 250 miles back south to Hastings.'
+          }
+        ],
+        modelSentence: 'After destroying <strong>300 Viking longships</strong> in a <strong>fierce river clash</strong>, Harold\'s army spent weeks <strong>marching night and day</strong>, leaving them dangerously depleted for Hastings.'
+      },
+      {
+        step: 4,
+        date: '14 October 1066 (Morning)',
+        title: 'The Shield Wall on Senlac Hill',
+        question: 'How did the Anglo-Saxon shield wall withstand repeated Norman charges on Senlac Hill?',
+        image: '/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg',
+        badge: 'Norman Heavy Cavalry Charge',
+        caption: 'Bayeux Tapestry Scene 52: Norman cavalry with couched lances charge uphill against the Saxon shield wall.',
+        narrative: '<span class="para-ref">[1.4]</span> Rather than resting his exhausted troops in London, Harold immediately force-marched his men 250 miles back south. On the morning of 14 October 1066, the armies collided on <strong>Senlac Hill</strong> near Hastings. Harold deployed his men in a dense, interlocking <strong>shield wall</strong> across the ridge, with elite two-handed axemen (housecarls) in front and peasant militia (the fyrd) behind. For five gruelling hours, the Saxon shield wall held firm. Norman cavalry charged uphill into a blizzard of javelins and axes, while Norman archers shot blind into the shield wall without breaking it.',
+        words: [
+          {
+            term: 'Steep Slippery Ridge',
+            clue: 'Harold deploys his men on the high ground of Senlac Hill, forcing Norman cavalry to charge uphill into wet marshland.'
+          },
+          {
+            term: 'Locked Wooden Shields',
+            clue: 'An interlocking Anglo-Saxon shield wall holds firm for over five hours against repeated frontal Norman cavalry charges.'
+          },
+          {
+            term: 'Two-Handed Battleaxes',
+            clue: 'Elite Saxon housecarls wield deadly two-handed Danish axes, cutting down Norman armored cavalry at close range.'
+          }
+        ],
+        modelSentence: 'Atop the <strong>steep slippery ridge</strong>, the Saxons formed <strong>locked wooden shields</strong> and wielded <strong>two-handed battleaxes</strong>, holding off Norman attacks for six hours.'
+      },
+      {
+        step: 5,
+        date: '14 October 1066 (Late Afternoon)',
+        title: 'The Feigned Retreat & Anglo-Saxon Defeat',
+        question: 'How did the feigned retreat tactic break the shield wall and secure Norman victory?',
+        image: '/images/medieval_england/source_b_bayeux_harold_death.jpg',
+        badge: 'The Feigned Retreat & Harold\'s Death',
+        caption: 'Bayeux Tapestry Scene 71: Anglo-Saxon lines crumble as Normans turn and encircle them; Harold is slain.',
+        narrative: '<span class="para-ref">[1.5]</span> The turning point came in the late afternoon. Sensing panic on his left flank where Breton soldiers retreated, William turned disaster into tactical genius. He ordered repeated <strong>feigned retreats</strong>: Norman cavalry charged the hill, then pretended to flee in terror. Tempted by the prospect of victory, undisciplined Saxon fyrd militia broke rank and surged downhill in pursuit. Immediately, Norman horsemen wheeled around, surrounded the scattered Saxons on open ground, and butchered them. With the shield wall fractured, Norman archers angled arrows high into the air. Harold was killed—traditionally struck in the eye with an arrow—and the Anglo-Saxon army disintegrated.',
+        words: [
+          {
+            term: 'Pretending to Run Away',
+            clue: 'William orders fake retreats; undisciplined Saxon fyrd militia break formation to chase the fleeing Normans down the hill.'
+          },
+          {
+            term: 'Chasing Down the Hill',
+            clue: 'Leaving the defensive shield wall, the undisciplined Saxon militia are quickly encircled and cut down by Norman heavy cavalry.'
+          },
+          {
+            term: 'Arrow Strikes Harold',
+            clue: 'Norman archers fire high plunging volleys; King Harold is struck down and killed, causing the Anglo-Saxon army to collapse.'
+          }
+        ],
+        modelSentence: 'By <strong>pretending to run away</strong>, William tricked the Saxon fyrd into <strong>chasing down the hill</strong>, before an <strong>arrow struck Harold</strong> and ended Anglo-Saxon rule.'
+      }
+    ];
+
+    let currentStep = 1;
+
     function notifyParentFit() {
       try {
         if (window.parent && typeof window.parent.__hubApplyWhiteboardFit === 'function') {
@@ -1090,35 +1856,198 @@
       document.querySelectorAll('.mode-btn').forEach((btn, idx) => {
         btn.classList.toggle('active', idx + 1 === partNum);
       });
-      document.getElementById('part-1-container').style.display = partNum === 1 ? 'grid' : 'none';
+      document.getElementById('part-1-container').style.display = partNum === 1 ? 'flex' : 'none';
       document.getElementById('part-2-container').style.display = partNum === 2 ? 'flex' : 'none';
       document.getElementById('part-3-container').style.display = partNum === 3 ? 'grid' : 'none';
       notifyParentFit();
     }
 
-    // 2. Word Box Toggle
+    // 2. Part 1 View Switcher: Focus (Single Step) vs Grid (All 5)
+    function togglePart1View(viewType) {
+      const btnFocus = document.getElementById('btn-view-focus');
+      const btnGrid = document.getElementById('btn-view-grid');
+      const focusView = document.getElementById('step-focus-view');
+      const gridView = document.getElementById('all-5-overview-view');
+
+      if (viewType === 'grid') {
+        btnGrid.classList.add('active');
+        btnFocus.classList.remove('active');
+        focusView.style.display = 'none';
+        gridView.style.display = 'grid';
+      } else {
+        btnFocus.classList.add('active');
+        btnGrid.classList.remove('active');
+        focusView.style.display = 'flex';
+        gridView.style.display = 'none';
+      }
+      notifyParentFit();
+    }
+
+    // 3. Step Navigation (Presentation Focus Mode)
+    function goToStep(stepNum) {
+      if (stepNum < 1) stepNum = 1;
+      if (stepNum > 5) stepNum = 5;
+      currentStep = stepNum;
+
+      const data = stagesData[currentStep - 1];
+      if (!data) return;
+
+      // Update Step Pills
+      document.querySelectorAll('.step-pill').forEach(pill => {
+        pill.classList.toggle('active', parseInt(pill.dataset.step, 10) === currentStep);
+      });
+
+      // Update Dots
+      document.querySelectorAll('.stage-dot').forEach((dot, idx) => {
+        dot.classList.toggle('active', idx + 1 === currentStep);
+      });
+
+      // Update Prev / Next Buttons
+      const btnPrev = document.getElementById('btn-prev-stage');
+      const btnNext = document.getElementById('btn-next-stage');
+      if (btnPrev) btnPrev.disabled = currentStep === 1;
+      if (btnNext) btnNext.disabled = currentStep === 5;
+
+      // Update Presentation Card Contents
+      document.getElementById('pres-img').src = data.image;
+      document.getElementById('pres-img').alt = data.badge;
+      document.getElementById('pres-source-badge').innerHTML = `<i class="fa-solid fa-camera"></i> ${data.badge}`;
+      document.getElementById('pres-source-desc').textContent = data.caption;
+
+      document.getElementById('pres-stage-tag').innerHTML = `<i class="fa-solid fa-flag"></i> Stage ${data.step} of 5`;
+      document.getElementById('pres-stage-date').innerHTML = `<i class="fa-regular fa-clock"></i> ${data.date}`;
+      document.getElementById('pres-title').textContent = data.title;
+      document.getElementById('pres-enquiry-q').textContent = data.question;
+      document.getElementById('pres-narrative-text').innerHTML = data.narrative;
+
+      // Render 3 Workbook Words with Clues
+      const wordsGrid = document.getElementById('pres-words-grid');
+      wordsGrid.innerHTML = data.words.map((w, idx) => {
+        const term = typeof w === 'string' ? w : w.term;
+        const clue = typeof w === 'object' && w.clue ? w.clue : '';
+        return `
+          <div class="presentation-word-card" onclick="togglePresentationWord(this)" title="Click to reveal clue &amp; check off">
+            <div class="word-card-top">
+              <i class="fa-regular fa-square-check word-card-check"></i>
+              <span class="word-card-name">${term}</span>
+            </div>
+            ${clue ? `<div class="word-card-clue">${clue}</div>` : ''}
+          </div>
+        `;
+      }).join('');
+
+      // Model Sentence
+      const sentenceText = document.getElementById('pres-sentence-text');
+      const sentenceBtn = document.getElementById('pres-sentence-btn');
+      sentenceText.innerHTML = data.modelSentence;
+      sentenceText.style.display = 'none';
+      sentenceBtn.querySelector('span').textContent = 'Model Sentence';
+
+      notifyParentFit();
+    }
+
+    function changeStep(delta) {
+      goToStep(currentStep + delta);
+    }
+
+    function togglePresentationWord(card) {
+      const isRecorded = card.classList.toggle('recorded');
+      const icon = card.querySelector('.word-card-check');
+      const clue = card.querySelector('.word-card-clue');
+      if (icon) {
+        if (isRecorded) {
+          icon.className = 'fa-solid fa-square-check word-card-check';
+          icon.style.color = '#22c55e';
+          if (clue) clue.style.display = 'block';
+        } else {
+          icon.className = 'fa-regular fa-square-check word-card-check';
+          icon.style.color = '#64748b';
+          if (clue) clue.style.display = 'none';
+        }
+      }
+      notifyParentFit();
+    }
+
+    function togglePresentationSentence() {
+      const sentenceText = document.getElementById('pres-sentence-text');
+      const sentenceBtn = document.getElementById('pres-sentence-btn');
+      const isHidden = sentenceText.style.display === 'none' || !sentenceText.style.display;
+      sentenceText.style.display = isHidden ? 'block' : 'none';
+      sentenceBtn.querySelector('span').textContent = isHidden ? 'Hide Sentence' : 'Model Sentence';
+      notifyParentFit();
+    }
+
+    function openActiveSourceModal() {
+      const data = stagesData[currentStep - 1];
+      if (data) {
+        showDetail(data.badge, data.caption, data.image);
+      }
+    }
+
+    // Keyboard Arrow Navigation
+    window.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+        changeStep(1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        changeStep(-1);
+      }
+    });
+
+    // 4. Word Box Toggle (for All 5 Grid View)
     function toggleWordBox(el) {
+      const isRecorded = el.classList.toggle('recorded');
+      const icon = el.querySelector('.word-item-check');
       const note = el.querySelector('.word-box-note');
-      const status = el.querySelector('.word-box-status');
-      const isRevealed = note.style.display === 'block';
-      note.style.display = isRevealed ? 'none' : 'block';
-      el.classList.toggle('revealed', !isRevealed);
-      status.textContent = isRevealed ? '[ Click Clue ]' : '[ Revealed ]';
+      if (icon) {
+        if (isRecorded) {
+          icon.className = 'fa-solid fa-square-check word-item-check';
+          icon.style.color = '#22c55e';
+          if (note) note.style.display = 'block';
+        } else {
+          icon.className = 'fa-regular fa-square-check word-item-check';
+          icon.style.color = '#64748b';
+          if (note) note.style.display = 'none';
+        }
+      }
       notifyParentFit();
     }
 
     function toggleAllWordBoxes() {
-      document.querySelectorAll('.word-box-item').forEach(el => {
-        const note = el.querySelector('.word-box-note');
-        const status = el.querySelector('.word-box-status');
-        note.style.display = 'block';
-        el.classList.add('revealed');
-        status.textContent = '[ Revealed ]';
+      const focusCards = document.querySelectorAll('.presentation-word-card');
+      const allRecorded = focusCards.length > 0 && Array.from(focusCards).every(c => c.classList.contains('recorded'));
+      const targetState = !allRecorded;
+
+      focusCards.forEach(card => {
+        card.classList.toggle('recorded', targetState);
+        const icon = card.querySelector('.word-card-check');
+        const clue = card.querySelector('.word-card-clue');
+        if (icon) {
+          icon.className = targetState ? 'fa-solid fa-square-check word-card-check' : 'fa-regular fa-square-check word-card-check';
+          icon.style.color = targetState ? '#22c55e' : '#64748b';
+        }
+        if (clue) clue.style.display = targetState ? 'block' : 'none';
       });
+
+      document.querySelectorAll('.word-box-item').forEach(el => {
+        el.classList.toggle('recorded', targetState);
+        const icon = el.querySelector('.word-item-check');
+        const note = el.querySelector('.word-box-note');
+        if (icon) {
+          icon.className = targetState ? 'fa-solid fa-square-check word-item-check' : 'fa-regular fa-square-check word-item-check';
+          icon.style.color = targetState ? '#22c55e' : '#64748b';
+        }
+        if (note) note.style.display = targetState ? 'block' : 'none';
+      });
+
+      const btn = document.getElementById('btn-toggle-all-words');
+      if (btn) {
+        btn.innerHTML = targetState ? '<i class="fa-solid fa-eye-slash"></i> <span>Hide All Clues</span>' : '<i class="fa-solid fa-wand-magic-sparkles"></i> <span>Reveal All Clues</span>';
+      }
       notifyParentFit();
     }
 
-    // 3. Model Sentence Toggle
+    // 5. Model Sentence Toggle (Grid View)
     function toggleSentence(btn) {
       const out = btn.nextElementSibling;
       const isHidden = out.style.display === 'none' || !out.style.display;
@@ -1127,7 +2056,7 @@
       notifyParentFit();
     }
 
-    // 4. Weighing Scale Logic
+    // 6. Weighing Scale Logic
     let luckWeight = 0;
     let skillWeight = 0;
 
@@ -1163,19 +2092,55 @@
       }
     }
 
-    // 5. Word Help
+    // 7. Word Help
     function showWordHelp(word, def) {
       const box = document.getElementById('word-help-box');
-      box.innerHTML = `<strong style="color: #38bdf8;">${word}:</strong> ${def} <div style="margin-top: 3px; font-style: italic; color: #f8fafc;">e.g. "William's cavalry <strong>${word.toLowerCase()}</strong> the scattered Saxon fyrd on Senlac Hill."</div>`;
+      box.innerHTML = `<div style="display: flex; justify-content: space-between; align-items: baseline;"><strong style="color: #38bdf8; font-size: 0.8rem;">${word}</strong> <span style="font-size: 0.68rem; color: #64748b; text-transform: uppercase;">Vocabulary Helper</span></div><div style="color: #e2e8f0; margin-top: 2px;">${def}</div><div style="margin-top: 4px; font-style: italic; color: #fef08a; font-size: 0.72rem;"><i class="fa-solid fa-quote-left" style="opacity: 0.5; margin-right: 4px;"></i>e.g. "William's cavalry <strong>${word.toLowerCase()}</strong> the scattered Saxon fyrd on Senlac Hill."</div>`;
+      notifyParentFit();
     }
 
     function toggleModelEssay() {
       const box = document.getElementById('model-essay-box');
-      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      const placeholder = document.getElementById('model-essay-placeholder');
+      const btnLeft = document.getElementById('btn-reveal-left');
+      const btnRight = document.getElementById('btn-reveal-right');
+      const isHidden = (box.style.display === 'none' || !box.style.display);
+
+      if (isHidden) {
+        box.style.display = 'block';
+        if (placeholder) placeholder.style.display = 'none';
+        if (btnLeft) {
+          btnLeft.innerHTML = '<i class="fa-solid fa-eye-slash"></i> <span>Hide Model &rarr;</span>';
+          btnLeft.style.background = 'rgba(239, 68, 68, 0.15)';
+          btnLeft.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+          btnLeft.style.color = '#f87171';
+        }
+        if (btnRight) {
+          btnRight.innerHTML = '<i class="fa-solid fa-eye-slash"></i> <span>Hide Model</span>';
+          btnRight.style.background = 'rgba(239, 68, 68, 0.15)';
+          btnRight.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+          btnRight.style.color = '#f87171';
+        }
+      } else {
+        box.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'block';
+        if (btnLeft) {
+          btnLeft.innerHTML = '<i class="fa-solid fa-eye"></i> <span>Reveal Model on Right &rarr;</span>';
+          btnLeft.style.background = 'rgba(34, 197, 94, 0.15)';
+          btnLeft.style.borderColor = 'rgba(34, 197, 94, 0.4)';
+          btnLeft.style.color = '#4ade80';
+        }
+        if (btnRight) {
+          btnRight.innerHTML = '<i class="fa-solid fa-eye"></i> <span>Reveal Model</span>';
+          btnRight.style.background = 'rgba(34, 197, 94, 0.15)';
+          btnRight.style.borderColor = 'rgba(34, 197, 94, 0.4)';
+          btnRight.style.color = '#4ade80';
+        }
+      }
       notifyParentFit();
     }
 
-    // 6. Archival Source Modal
+    // 8. Archival Source Modal
     function showDetail(title, desc, imgSrc) {
       document.getElementById('modal-title').textContent = title;
       document.getElementById('modal-body').textContent = desc;
@@ -1197,11 +2162,30 @@
     }
 
     function resetAll() {
-      document.querySelectorAll('.word-box-note').forEach(n => n.style.display = 'none');
       document.querySelectorAll('.word-box-item').forEach(w => {
-        w.classList.remove('revealed');
-        w.querySelector('.word-box-status').textContent = '[ Click Clue ]';
+        w.classList.remove('recorded');
+        const icon = w.querySelector('.word-item-check');
+        if (icon) {
+          icon.className = 'fa-regular fa-square-check word-item-check';
+          icon.style.color = '#64748b';
+        }
+        const note = w.querySelector('.word-box-note');
+        if (note) note.style.display = 'none';
       });
+      document.querySelectorAll('.presentation-word-card').forEach(w => {
+        w.classList.remove('recorded');
+        const icon = w.querySelector('.word-card-check');
+        if (icon) {
+          icon.className = 'fa-regular fa-square-check word-card-check';
+          icon.style.color = '#64748b';
+        }
+        const clue = w.querySelector('.word-card-clue');
+        if (clue) clue.style.display = 'none';
+      });
+      const toggleWordsBtn = document.getElementById('btn-toggle-all-words');
+      if (toggleWordsBtn) {
+        toggleWordsBtn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles"></i> <span>Reveal All Clues</span>';
+      }
       document.querySelectorAll('.sentence-launcher-output').forEach(s => s.style.display = 'none');
       document.querySelectorAll('.scale-chip-btn').forEach(b => b.classList.remove('active'));
       luckWeight = 0;
@@ -1209,9 +2193,54 @@
       document.getElementById('weight-luck').textContent = '0 pts';
       document.getElementById('weight-skill').textContent = '0 pts';
       document.getElementById('scale-beam').style.transform = 'rotate(0deg)';
-      document.getElementById('model-essay-box').style.display = 'none';
+      const modelBox = document.getElementById('model-essay-box');
+      if (modelBox) modelBox.style.display = 'none';
+      const placeholder = document.getElementById('model-essay-placeholder');
+      if (placeholder) placeholder.style.display = 'block';
+      const btnLeft = document.getElementById('btn-reveal-left');
+      if (btnLeft) {
+        btnLeft.innerHTML = '<i class="fa-solid fa-eye"></i> <span>Reveal Model on Right &rarr;</span>';
+        btnLeft.style.background = 'rgba(34, 197, 94, 0.15)';
+        btnLeft.style.borderColor = 'rgba(34, 197, 94, 0.4)';
+        btnLeft.style.color = '#4ade80';
+      }
+      const btnRight = document.getElementById('btn-reveal-right');
+      if (btnRight) {
+        btnRight.innerHTML = '<i class="fa-solid fa-eye"></i> <span>Reveal Model</span>';
+        btnRight.style.background = 'rgba(34, 197, 94, 0.15)';
+        btnRight.style.borderColor = 'rgba(34, 197, 94, 0.4)';
+        btnRight.style.color = '#4ade80';
+      }
+      const wordBox = document.getElementById('word-help-box');
+      if (wordBox) {
+        wordBox.innerHTML = '<div><strong style="color: #ffffff;">Tip:</strong> Click any word above to view its meaning and a model sentence!</div>';
+      }
+      goToStep(1);
       switchPart(1);
     }
+
+    // Listen to messages from parent app (e.g. when teacher clicks "Present Stage X" in lesson)
+    window.addEventListener('message', (event) => {
+      if (!event.data) return;
+      if (event.data.action === 'setStep' && typeof event.data.step === 'number') {
+        switchPart(1);
+        togglePart1View('focus');
+        goToStep(event.data.step + 1);
+      } else if (event.data.action === 'switchTab' && typeof event.data.tab === 'number') {
+        switchPart(event.data.tab);
+      }
+    });
+
+    // Check URL parameters on initial load
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const stepParam = params.get('step');
+      if (stepParam) {
+        goToStep(parseInt(stepParam, 10));
+      } else {
+        goToStep(1);
+      }
+    });
   </script>
 </body>
 </html>

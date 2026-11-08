@@ -1,4 +1,5 @@
 import { appStore } from './store.js';
+import { isVerifiedPdf } from '../verified_pdf_manifest.js';
 import {
   renderLesson,
   assignQuestionNumbers,
@@ -1665,8 +1666,8 @@ window.startQuiz = function (lessonId, isFullscreen = false) {
     if (ktMatch) {
       cleanBadge = 'KEY TOPIC ' + ktMatch[1];
     } else if (lesson.title) {
-      let t = lesson.title.replace(/^Enquiry:\s*/i, '');
-      cleanBadge = t.length > 25 ? t.slice(0, 23).trim() + '…' : t;
+      let t = lesson.title.replace(/^Enquiry:\s*/i, '').trim();
+      cleanBadge = t;
     }
     badge.innerText = cleanBadge;
   }
@@ -3082,9 +3083,14 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
             <i class="fa-solid fa-print"></i> Print Class Set
           </button>
           
+          ${
+            isVerifiedPdf(pdfUrl)
+              ? `
           <a id="teacherPrintModalPdfDownload" href="${pdfUrl}" target="_blank" download style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3); font-weight: 600; font-size: 0.88rem; padding: 8px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
             <i class="fa-solid fa-file-pdf"></i> High-Resolution PDF
-          </a>
+          </a>`
+              : ''
+          }
 
           <a href="${htmlUrl}" target="_blank" style="background: rgba(255, 255, 255, 0.08); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.15); font-weight: 600; font-size: 0.88rem; padding: 8px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Full Tab

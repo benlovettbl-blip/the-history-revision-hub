@@ -43,7 +43,7 @@ const enquiries = [
       'On Sunday 3 September 1939, Prime Minister Neville Chamberlain announced over the radio that Britain was at war with Germany. Within fifteen minutes, the first wailing air raid siren sounded across London.<br><br>Fearing that enemy bombers might drop poison gas bombs on civilian cities, the British government issued 38 million gas masks in cardboard boxes with string straps. Even walking to school or playing outside, children had to carry their boxes everywhere and practise wearing them during lessons.',
     vocab: ['Respirator', 'Blackout', 'Mobilisation', 'Air Raid Warden'],
     q1: 'Look closely at Source A. How do you think it felt for children to do their schoolwork wearing rubber gas masks?',
-    q2: 'Why did the British government insist that every baby, child, and adult carry a gas mask before any bombs had fallen?',
+    q2: 'Why did the British government insist that every civilian carry their gas mask in a cardboard box at all times?',
     q3: 'Every window had to be covered with heavy black curtains. Why was the blackout so strictly enforced by Air Raid Wardens?',
     q4: 'Big Question: In what ways did the outbreak of war change the daily routine of ordinary British schoolchildren overnight?',
   },

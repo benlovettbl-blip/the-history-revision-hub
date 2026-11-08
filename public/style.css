@@ -11120,6 +11120,34 @@ body.search-modal-open {
   box-shadow: 0 1px 3px rgba(2, 132, 199, 0.25);
 }
 
+.btn-donow-count {
+  padding: 3px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-donow-count:hover {
+  color: #0284c7;
+}
+
+.btn-donow-count.active {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.4);
+}
+
 .donow-source-badge {
   display: inline-flex;
   align-items: center;

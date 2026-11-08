@@ -39,6 +39,9 @@ export const KS3_RETRIEVAL_UNITS = [
   { id: 'first_british_empire', label: '1st British Empire', title: 'The First British Empire', bg: '#eff6ff', border: '#dbeafe', text: '#1e40af' },
   { id: 'second_british_empire', label: '2nd British Empire', title: 'The Second British Empire', bg: '#f5f3ff', border: '#ede9fe', text: '#5b21b6' },
   { id: 'post_war_britain', label: 'Post-War Britain', title: 'Post-War Britain, 1945–1997', bg: '#fdf2f8', border: '#fce7f3', text: '#9d174d' },
+  { id: 'australia', label: 'Australia', title: 'Indigenous & Colonial Australia', bg: '#fffbeb', border: '#fef3c7', text: '#92400e' },
+  { id: 'water_and_sanitation', label: 'Water & Sanitation', title: 'Water & Sanitation Through Time', bg: '#f0fdfa', border: '#ccfbf1', text: '#0f766e' },
+  { id: 'early_modern_world', label: 'Early Modern', title: 'The Early Modern World, c1450–1750', bg: '#faf5ff', border: '#f3e8ff', text: '#6b21a8' },
 ];
 
 export const ALL_RETRIEVAL_UNITS = [...GCSE_RETRIEVAL_UNITS, ...KS3_RETRIEVAL_UNITS];
@@ -46,6 +49,50 @@ export const ALL_RETRIEVAL_UNITS = [...GCSE_RETRIEVAL_UNITS, ...KS3_RETRIEVAL_UN
 const LOCAL_STORAGE_KEY_SELECTED_UNITS = 'history_hub_selected_gcse_units';
 const LOCAL_STORAGE_KEY_ACTIVE_MODE = 'history_hub_gcse_donow_mode';
 const LOCAL_STORAGE_KEY_SELECTED_TARGET = 'history_hub_selected_retrieval_target';
+const LOCAL_STORAGE_KEY_SELECTED_KS3_TARGET = 'history_hub_selected_ks3_retrieval_target';
+const SESSION_STORAGE_KEY_COUNT_OVERRIDE = 'history_hub_donow_count_override';
+
+/**
+ * Accurately determines if a unit belongs to Key Stage 3.
+ */
+export function isKs3Unit(unit, unitId = '') {
+  const uid = unitId || unit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '');
+  if (unit?.key_stage === 'KS3' || unit?.category === 'KS3') return true;
+  if (['cme_new', 'usa', 'weimar_nazi_germany', 'edexcel_medicine', 'eee', 'cold_war'].includes(uid)) return false;
+  if (uid.startsWith('gcse_') || unit?.category === 'GCSE' || unit?.key_stage === 'KS4') return false;
+  return true;
+}
+
+/**
+ * Gets active question count based on key stage and retrieval scope.
+ * Smart defaults:
+ * - KS3: 5 questions for 'previous', 'current', and 'unit' (5-minute lesson starter); 10 questions for 'other'/'all' (broad synoptic mix).
+ * - GCSE: 10 questions across all modes.
+ * User manual toggle (5 Qs | 10 Qs | 15 Qs | 20 Qs) explicitly overrides this for the current lesson session.
+ */
+export function getSavedQuestionCount(isKs3 = false, activeMode = 'previous') {
+  if (typeof window !== 'undefined' && window.currentDoNowCountOverride) {
+    const val = parseInt(window.currentDoNowCountOverride, 10);
+    if ([5, 10, 15, 20].includes(val)) return val;
+  }
+
+  if (isKs3) {
+    if (activeMode === 'other' || activeMode === 'all') {
+      return 10;
+    }
+    return 5;
+  }
+  return 10;
+}
+
+/**
+ * Saves explicit question count toggle preference (5, 10, 15, or 20) in memory for the active lesson session.
+ */
+export function saveQuestionCount(count) {
+  if (typeof window !== 'undefined') {
+    window.currentDoNowCountOverride = count;
+  }
+}
 
 function cleanSearchTokens(str) {
   return String(str || '')
@@ -296,22 +343,19 @@ export function extractCleanQA(
 
 /**
  * Deterministic pseudo-random or timestamp-seeded shuffle to ensure fresh variety.
+ * CRITICAL: When seed is null, returns canonical array order untouched (100% deterministic).
  */
 export function shuffleArray(arr, seed = null) {
-  const copy = [...arr];
-  if (seed !== null && typeof seed === 'number') {
-    // Linear congruential generator for reproducible shuffle
-    let s = seed;
-    for (let i = copy.length - 1; i > 0; i--) {
-      s = (s * 9301 + 49297) % 233280;
-      const rnd = s / 233280;
-      const j = Math.floor(rnd * (i + 1));
-      [copy[i], copy[j]] = [copy[j], copy[i]];
-    }
-    return copy;
+  if (seed === null || seed === undefined) {
+    return [...arr];
   }
+  const copy = [...arr];
+  let s = typeof seed === 'number' ? seed : 123456789;
+  // Linear congruential generator for reproducible shuffle
   for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    s = (s * 9301 + 49297) % 233280;
+    const rnd = s / 233280;
+    const j = Math.floor(rnd * (i + 1));
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
   return copy;
@@ -358,59 +402,57 @@ export function saveSelectedGcseUnits(units) {
 }
 
 /**
- * Gets currently selected retrieval target ('all_gcse' or a specific unit ID) from localStorage.
+ * Gets currently selected retrieval target ('all_gcse', 'all_ks3', or a specific unit ID) from localStorage.
  */
-export function getSelectedRetrievalTarget() {
+export function getSelectedRetrievalTarget(isKs3 = false) {
   try {
     if (typeof localStorage !== 'undefined') {
-      const stored = localStorage.getItem(LOCAL_STORAGE_KEY_SELECTED_TARGET);
+      const key = isKs3 ? LOCAL_STORAGE_KEY_SELECTED_KS3_TARGET : LOCAL_STORAGE_KEY_SELECTED_TARGET;
+      const stored = localStorage.getItem(key);
       if (stored) return stored;
     }
   } catch (e) {}
-  return 'all_gcse';
+  return isKs3 ? 'all_ks3' : 'all_gcse';
 }
 
 /**
  * Saves selected retrieval target to localStorage.
  */
-export function saveSelectedRetrievalTarget(targetId) {
+export function saveSelectedRetrievalTarget(targetId, isKs3 = false) {
   try {
     if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(LOCAL_STORAGE_KEY_SELECTED_TARGET, targetId);
+      const key = isKs3 ? LOCAL_STORAGE_KEY_SELECTED_KS3_TARGET : LOCAL_STORAGE_KEY_SELECTED_TARGET;
+      localStorage.setItem(key, targetId);
     }
   } catch (e) {}
 }
 
 /**
- * Gets preferred active mode ('current', 'previous', 'unit', 'other') from localStorage.
+ * Gets active retrieval mode ('current', 'previous', 'unit', 'other').
+ * In-memory per lesson session; defaults to 'previous' on initial load.
  */
 export function getSavedDoNowMode() {
-  try {
-    if (typeof localStorage !== 'undefined') {
-      const mode = localStorage.getItem(LOCAL_STORAGE_KEY_ACTIVE_MODE);
-      if (mode === 'all') return 'other';
-      if (mode && ['current', 'previous', 'unit', 'other'].includes(mode)) return mode;
-    }
-  } catch (e) {}
+  if (typeof window !== 'undefined' && window.currentDoNowMode) {
+    return window.currentDoNowMode;
+  }
   return 'previous';
 }
 
 /**
- * Saves preferred active mode to localStorage.
+ * Saves active retrieval mode in memory for the current session.
  */
 export function saveDoNowMode(mode) {
-  try {
-    if (typeof localStorage !== 'undefined') {
-      const cleanMode = mode === 'all' ? 'other' : mode;
-      localStorage.setItem(LOCAL_STORAGE_KEY_ACTIVE_MODE, cleanMode);
-    }
-  } catch (e) {}
+  if (typeof window !== 'undefined') {
+    window.currentDoNowMode = mode === 'all' ? 'other' : mode;
+  }
 }
 
 /**
- * Mode 0: "This Lesson" (10 questions directly on the active lesson for pupil self-study).
+ * Mode 0: "This Lesson" (questions directly on the active lesson for pupil self-study).
  */
-export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null) {
+export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null, targetCount = null) {
+  const isKs3 = isKs3Unit(activeUnit);
+  const count = targetCount || getSavedQuestionCount(isKs3, 'current');
   const lessons = activeUnit?.lessons || [];
   const currentIndex = lessons.findIndex(
     (l) => (l.id && l.id === currentLesson.id) || l.title === currentLesson.title,
@@ -430,8 +472,8 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
     });
   }
 
-  // 2. Supplement from currentLesson.do_now if quiz had fewer than 10
-  if (pool.length < 10) {
+  // 2. Supplement from currentLesson.do_now if quiz had fewer than count
+  if (pool.length < count) {
     const baseItems =
       currentLesson.do_now?.items ||
       currentLesson.do_now?.questions ||
@@ -448,7 +490,7 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
   }
 
   // 3. Supplement from flashcards if needed
-  if (pool.length < 10 && Array.isArray(currentLesson.flashcards)) {
+  if (pool.length < count && Array.isArray(currentLesson.flashcards)) {
     currentLesson.flashcards.forEach((fc) => {
       const stage = findMatchingBlockIndex(fc, currentLesson.narrative_blocks);
       const qa = extractCleanQA(
@@ -467,21 +509,23 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
   }
 
   // Deterministic canonical order on load (seed === null); randomized when seed provided
-  const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, 10);
+  const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, count);
   const cleanTitle = (currentLesson.title || `Lesson ${lessonNum}`).split(':')[0].trim();
 
   return {
     mode: 'current',
-    subtitle: `Current Lesson Recall • 10 Questions from Lesson ${lessonNum}: ${cleanTitle}`,
+    subtitle: `Current Lesson Recall • ${finalQuestions.length} Questions from Lesson ${lessonNum}: ${cleanTitle}`,
     questions: finalQuestions,
     isLessonOne: false,
   };
 }
 
 /**
- * Mode 1: "Previous" (10 questions strictly from the immediate previous lesson).
+ * Mode 1: "Previous" (questions strictly from the immediate previous lesson).
  */
-export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = null) {
+export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = null, targetCount = null) {
+  const isKs3 = isKs3Unit(activeUnit);
+  const count = targetCount || getSavedQuestionCount(isKs3, 'previous');
   const lessons = activeUnit?.lessons || [];
   const currentIndex = lessons.findIndex(
     (l) => (l.id && l.id === currentLesson.id) || l.title === currentLesson.title,
@@ -504,10 +548,23 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
         return extractCleanQA(it, 'Foundational', 2, currentLesson.title, activeUnit?.id, stage);
       })
       .filter(Boolean);
+
+    if (items.length < count && Array.isArray(currentLesson.quiz)) {
+      currentLesson.quiz.forEach((q) => {
+        const stage = findMatchingBlockIndex(q, currentLesson.narrative_blocks);
+        const qa = extractCleanQA(q, 'Foundational', 2, currentLesson.title, activeUnit?.id, stage);
+        if (qa && !items.some((it) => it.question === qa.question)) {
+          qa.unitId = activeUnit?.id || '';
+          items.push(qa);
+        }
+      });
+    }
+
+    const finalItems = (seed !== null ? shuffleArray(items, seed) : items).slice(0, count);
     return {
       mode: 'previous',
-      subtitle: 'Lesson 2: Specification Baseline • 1945–1949 Mandate & Creation of Israel',
-      questions: (seed !== null ? shuffleArray(items, seed) : items).slice(0, 10),
+      subtitle: `Lesson 2: Specification Baseline • ${finalItems.length} Core Baseline Questions`,
+      questions: finalItems,
       isLessonOne: true,
     };
   }
@@ -525,10 +582,24 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
         return extractCleanQA(it, 'Foundational', 1, currentLesson.title, activeUnit?.id, stage);
       })
       .filter(Boolean);
+
+    // If extended drill requested (10, 15, or 20 Qs), supplement from currentLesson.quiz
+    if (items.length < count && Array.isArray(currentLesson.quiz)) {
+      currentLesson.quiz.forEach((q) => {
+        const stage = findMatchingBlockIndex(q, currentLesson.narrative_blocks);
+        const qa = extractCleanQA(q, 'Foundational', 1, currentLesson.title, activeUnit?.id, stage);
+        if (qa && !items.some((it) => it.question === qa.question)) {
+          qa.unitId = activeUnit?.id || '';
+          items.push(qa);
+        }
+      });
+    }
+
+    const finalItems = (seed !== null ? shuffleArray(items, seed) : items).slice(0, count);
     return {
       mode: 'previous',
-      subtitle: 'Lesson 1: Foundational Baseline • Core Prior Knowledge',
-      questions: items.slice(0, 10),
+      subtitle: `Lesson 1: Foundational Baseline • ${finalItems.length} Core Questions`,
+      questions: finalItems,
       isLessonOne: true,
     };
   }
@@ -548,8 +619,8 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
     });
   }
 
-  // 2. Supplement from prevLesson.do_now if quiz had fewer than 10
-  if (pool.length < 10) {
+  // 2. Supplement from prevLesson.do_now if quiz had fewer than count
+  if (pool.length < count) {
     const baseItems =
       prevLesson.do_now?.items ||
       prevLesson.do_now?.questions ||
@@ -566,7 +637,7 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
   }
 
   // 3. Supplement from flashcards if needed
-  if (pool.length < 10 && Array.isArray(prevLesson.flashcards)) {
+  if (pool.length < count && Array.isArray(prevLesson.flashcards)) {
     prevLesson.flashcards.forEach((fc) => {
       const stage = findMatchingBlockIndex(fc, prevLesson.narrative_blocks);
       const qa = extractCleanQA(
@@ -584,21 +655,23 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
     });
   }
 
-  const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, 10);
+  const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, count);
   const prevTitle = (prevLesson.title || `Lesson ${currentIndex}`).split(':')[0].trim();
 
   return {
     mode: 'previous',
-    subtitle: `Immediate Recall • 10 Questions from Lesson ${currentIndex}: ${prevTitle}`,
+    subtitle: `Immediate Recall • ${finalQuestions.length} Questions from Lesson ${currentIndex}: ${prevTitle}`,
     questions: finalQuestions,
     isLessonOne: false,
   };
 }
 
 /**
- * Mode 2: "Unit" (10 questions interleaved across all prior lessons 1 to N-1).
+ * Mode 2: "Unit" (questions interleaved across all prior lessons 1 to N-1).
  */
-export function getUnitInterleavedQuestions(activeUnit, currentLesson, seed = null) {
+export function getUnitInterleavedQuestions(activeUnit, currentLesson, seed = null, targetCount = null) {
+  const isKs3 = isKs3Unit(activeUnit);
+  const count = targetCount || getSavedQuestionCount(isKs3, 'unit');
   const lessons = activeUnit?.lessons || [];
   const currentIndex = lessons.findIndex(
     (l) => (l.id && l.id === currentLesson.id) || l.title === currentLesson.title,
@@ -608,11 +681,11 @@ export function getUnitInterleavedQuestions(activeUnit, currentLesson, seed = nu
   const startIdx = isCme ? 1 : 0; // Exclude pre-1945 intro lesson (KT 1.0) for CME
 
   if (currentIndex <= startIdx) {
-    return getPreviousLessonQuestions(activeUnit, currentLesson, seed);
+    return getPreviousLessonQuestions(activeUnit, currentLesson, seed, count);
   }
 
   const priorLessons = lessons.slice(startIdx, currentIndex);
-  const qPerLesson = Math.max(1, Math.ceil(10 / priorLessons.length));
+  const qPerLesson = Math.max(1, Math.ceil(count / priorLessons.length));
   const pool = [];
 
   priorLessons.forEach((pl, relativeIdx) => {
@@ -643,32 +716,44 @@ export function getUnitInterleavedQuestions(activeUnit, currentLesson, seed = nu
     pool.push(...sampled);
   });
 
-  const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, 10);
+  const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, count);
 
   return {
     mode: 'unit',
-    subtitle: `Unit Interleaving • 10 Questions across Lessons 1–${currentIndex}`,
+    subtitle: `Unit Interleaving • ${finalQuestions.length} Questions across Lessons 1–${currentIndex}`,
     questions: finalQuestions,
     isLessonOne: false,
   };
 }
 
 /**
- * Mode 3: "Other Units" (10 questions sampled from selected target unit or synoptic mix).
+ * Mode 3: "Other Units" (questions sampled from selected target unit or synoptic mix).
  */
-export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target = 'all_gcse', seed = null) {
+export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target = null, seed = null, targetCount = null) {
   const currentUnitId = activeUnit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '');
+  const isKs3 = isKs3Unit(activeUnit, currentUnitId);
+  const count = targetCount || getSavedQuestionCount(isKs3, 'other');
+  const resolvedTarget = target || getSelectedRetrievalTarget(isKs3);
 
   let selectedUnitIds = [];
   let isAllGcse = false;
+  let isAllKs3 = false;
 
-  if (!target || target === 'all_gcse') {
-    isAllGcse = true;
-    selectedUnitIds = GCSE_RETRIEVAL_UNITS.map((u) => u.id);
-  } else if (Array.isArray(target)) {
-    selectedUnitIds = target;
-  } else if (typeof target === 'string') {
-    selectedUnitIds = [target];
+  if (resolvedTarget === 'all_ks3') {
+    isAllKs3 = true;
+    selectedUnitIds = KS3_RETRIEVAL_UNITS.map((u) => u.id);
+  } else if (!resolvedTarget || resolvedTarget === 'all_gcse') {
+    if (isKs3 && (!resolvedTarget || resolvedTarget === 'all_ks3')) {
+      isAllKs3 = true;
+      selectedUnitIds = KS3_RETRIEVAL_UNITS.map((u) => u.id);
+    } else {
+      isAllGcse = true;
+      selectedUnitIds = GCSE_RETRIEVAL_UNITS.map((u) => u.id);
+    }
+  } else if (Array.isArray(resolvedTarget)) {
+    selectedUnitIds = resolvedTarget;
+  } else if (typeof resolvedTarget === 'string') {
+    selectedUnitIds = [resolvedTarget];
   }
 
   // Resolve unit objects
@@ -681,12 +766,12 @@ export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target =
     .filter(Boolean);
 
   if (validUnits.length === 0) {
-    return getUnitInterleavedQuestions(activeUnit, currentLesson, seed);
+    return getUnitInterleavedQuestions(activeUnit, currentLesson, seed, count);
   }
 
   // Allocate target question counts across selected units
   let collected = [];
-  const qPerUnit = Math.max(1, Math.ceil(10 / validUnits.length));
+  const qPerUnit = Math.max(1, Math.ceil(count / validUnits.length));
 
   validUnits.forEach(({ unitData, meta }) => {
     const isCurrent = meta.id === currentUnitId;
@@ -735,17 +820,19 @@ export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target =
     collected.push(...sampled);
   });
 
-  const finalQuestions = (seed !== null ? shuffleArray(collected, seed) : collected).slice(0, 10);
+  const finalQuestions = (seed !== null ? shuffleArray(collected, seed) : collected).slice(0, count);
   
   let subtitleText = '';
   if (validUnits.length === 1) {
     const singleMeta = validUnits[0].meta;
-    subtitleText = `${singleMeta.label} Retrieval &bull; 10 Questions from ${singleMeta.title}`;
+    subtitleText = `${singleMeta.label} Retrieval &bull; ${finalQuestions.length} Questions from ${singleMeta.title}`;
+  } else if (isAllKs3) {
+    subtitleText = `Synoptic KS3 Mix &bull; ${finalQuestions.length} Questions across All KS3 Units`;
   } else if (isAllGcse) {
-    subtitleText = `Synoptic GCSE Mix &bull; 10 Questions across All GCSE Units`;
+    subtitleText = `Synoptic GCSE Mix &bull; ${finalQuestions.length} Questions across All GCSE Units`;
   } else {
     const unitLabels = validUnits.map((v) => v.meta.label).join(' &bull; ');
-    subtitleText = `Synoptic Retrieval &bull; 10 Questions across ${unitLabels}`;
+    subtitleText = `Synoptic Retrieval &bull; ${finalQuestions.length} Questions across ${unitLabels}`;
   }
 
   return {
@@ -903,8 +990,65 @@ export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
 /**
  * Renders the unit filter chips bar when "Other Units" mode is active.
  */
-export function renderGcseUnitChipsHTML(activeTarget = '') {
-  const currentTarget = activeTarget || getSelectedRetrievalTarget();
+export function renderGcseUnitChipsHTML(activeTarget = '', isKs3 = false) {
+  const currentTarget = activeTarget || getSelectedRetrievalTarget(isKs3);
+
+  if (isKs3) {
+    const isAll = !currentTarget || currentTarget === 'all_ks3';
+    const ks3Chips = KS3_RETRIEVAL_UNITS.map((u) => {
+      const isSelected = currentTarget === u.id;
+      return `
+        <button type="button"
+          class="btn-donow-unit-chip ${isSelected ? 'selected' : ''}"
+          data-unit-id="${u.id}"
+          onclick="event.stopPropagation(); window.selectGcseDoNowTarget('${u.id}');"
+          title="Retrieve questions from ${u.title}">
+          <i class="fa-solid ${isSelected ? 'fa-check' : 'fa-book-bookmark'}" style="font-size: 0.65rem;"></i>
+          <span>${u.label}</span>
+        </button>
+      `;
+    }).join('');
+
+    const gcseOptions = GCSE_RETRIEVAL_UNITS.map((g) => {
+      const isSelected = currentTarget === g.id;
+      return `<option value="${g.id}" ${isSelected ? 'selected' : ''}>${g.label}</option>`;
+    }).join('');
+
+    return `
+      <div class="donow-unit-chips-bar" style="margin: 0 0 10px 0; padding: 10px 14px; background: #f0fdf4; border: 1.2px solid #bbf7d0; border-radius: 8px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-bottom: 8px;">
+          <span style="font-size: 0.72rem; font-weight: 800; color: #166534; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-graduation-cap" style="color: #16a34a; font-size: 0.82rem;"></i> Choose Starter Era / Unit:
+          </span>
+          <span style="font-size: 0.7rem; color: #15803d; font-weight: 600;">
+            Select any Key Stage 3 topic to load retrieval questions
+          </span>
+        </div>
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
+          <button type="button"
+            class="btn-donow-unit-chip ${isAll ? 'selected' : ''}"
+            data-unit-id="all_ks3"
+            onclick="event.stopPropagation(); window.selectGcseDoNowTarget('all_ks3');"
+            title="Questions synoptically sampled across all KS3 units">
+            <i class="fa-solid ${isAll ? 'fa-check' : 'fa-sparkles'}" style="font-size: 0.65rem;"></i>
+            <span>✨ All KS3 (Synoptic Mix)</span>
+          </button>
+          ${ks3Chips}
+          <div style="display: inline-flex; align-items: center; margin-left: 2px;">
+            <select class="donow-ks3-select"
+              onchange="event.stopPropagation(); if (this.value) window.selectGcseDoNowTarget(this.value);"
+              title="Retrieve questions from cross-phase GCSE units"
+              style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 12px; border: 1.2px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer; outline: none; transition: all 0.15s ease;">
+              <option value="" style="background: #ffffff; color: #475569;">Cross-Phase GCSE Units ▾</option>
+              ${gcseOptions}
+            </select>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // GCSE Mode
   const isAllGcse = !currentTarget || currentTarget === 'all_gcse';
   const isKs3Active = KS3_RETRIEVAL_UNITS.some((k) => k.id === currentTarget);
 
@@ -915,7 +1059,7 @@ export function renderGcseUnitChipsHTML(activeTarget = '') {
         class="btn-donow-unit-chip ${isSelected ? 'selected' : ''}"
         data-unit-id="${u.id}"
         onclick="event.stopPropagation(); window.selectGcseDoNowTarget('${u.id}');"
-        title="Retrieve 10 questions from ${u.title}">
+        title="Retrieve questions from ${u.title}">
         <i class="fa-solid ${isSelected ? 'fa-check' : 'fa-book-bookmark'}" style="font-size: 0.65rem;"></i>
         <span>${u.label}</span>
       </button>
@@ -934,7 +1078,7 @@ export function renderGcseUnitChipsHTML(activeTarget = '') {
           <i class="fa-solid fa-graduation-cap" style="color: #16a34a; font-size: 0.82rem;"></i> Choose Starter Unit:
         </span>
         <span style="font-size: 0.7rem; color: #15803d; font-weight: 600;">
-          Select any unit to load 10 recall questions
+          Select any unit to load recall questions
         </span>
       </div>
       <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
@@ -942,7 +1086,7 @@ export function renderGcseUnitChipsHTML(activeTarget = '') {
           class="btn-donow-unit-chip ${isAllGcse ? 'selected' : ''}"
           data-unit-id="all_gcse"
           onclick="event.stopPropagation(); window.selectGcseDoNowTarget('all_gcse');"
-          title="10 Questions synoptically sampled across all GCSE units">
+          title="Questions synoptically sampled across all GCSE units">
           <i class="fa-solid ${isAllGcse ? 'fa-check' : 'fa-sparkles'}" style="font-size: 0.65rem;"></i>
           <span>✨ All GCSE (Synoptic Mix)</span>
         </button>
@@ -962,7 +1106,7 @@ export function renderGcseUnitChipsHTML(activeTarget = '') {
 }
 
 /**
- * Renders the complete GCSE 3-mode Do Now panel HTML.
+ * Renders the complete 3-mode Do Now panel HTML for KS3 and GCSE.
  */
 export function renderGcseDoNowPanelHTML({
   activeUnit,
@@ -971,28 +1115,32 @@ export function renderGcseDoNowPanelHTML({
   db = null,
   headerHtml = '',
   timerHtml = '',
+  isKs3 = null,
 }) {
   const currentUnitId = unitId || activeUnit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '');
-  const activeMode = getSavedDoNowMode();
-  const currentTarget = getSelectedRetrievalTarget();
+  const isKs3Effective = isKs3 !== null ? isKs3 : isKs3Unit(activeUnit, currentUnitId);
+  // Default mode for a lesson starter is ALWAYS 'previous' so teachers and pupils are always in sync on lesson load
+  const activeMode = 'previous';
+  const currentTarget = isKs3Effective ? 'all_ks3' : 'all_gcse';
+  const activeCount = isKs3Effective ? 5 : 10;
 
-  // Compute initial questions for active mode (deterministic canonical order on load)
+  // Compute initial questions for active mode
   let result;
   if (activeMode === 'current') {
-    result = getCurrentLessonQuestions(activeUnit, lesson);
+    result = getCurrentLessonQuestions(activeUnit, lesson, null, activeCount);
   } else if (activeMode === 'unit') {
-    result = getUnitInterleavedQuestions(activeUnit, lesson);
+    result = getUnitInterleavedQuestions(activeUnit, lesson, null, activeCount);
   } else if (activeMode === 'other' || activeMode === 'all') {
-    result = getSynopticGcseQuestions(activeUnit, lesson, db || (typeof window !== 'undefined' ? window.db : {}), currentTarget);
+    result = getSynopticGcseQuestions(activeUnit, lesson, db || (typeof window !== 'undefined' ? window.db : {}), currentTarget, null, activeCount);
   } else {
-    result = getPreviousLessonQuestions(activeUnit, lesson);
+    result = getPreviousLessonQuestions(activeUnit, lesson, null, activeCount);
   }
 
   const rowsHtml = renderDoNowRowsHTML(result.questions, activeMode, currentUnitId);
-  const chipsHtml = renderGcseUnitChipsHTML(currentTarget);
+  const chipsHtml = renderGcseUnitChipsHTML(currentTarget, isKs3Effective);
 
   return `
-    <div class="donow-panel-content gcse-3mode-donow" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}">
+    <div class="donow-panel-content gcse-3mode-donow" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}" data-is-ks3="${isKs3Effective ? 'true' : 'false'}">
       ${headerHtml}
 
       <!-- Scope Control Deck with Timer on the Right -->
@@ -1006,7 +1154,7 @@ export function renderGcseDoNowPanelHTML({
               class="btn-donow-mode ${activeMode === 'previous' ? 'active' : ''}"
               data-donow-mode="previous"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('previous');"
-              title="10 Questions strictly from the immediate previous lesson"
+              title="Questions strictly from the immediate previous lesson"
               style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'previous' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'previous' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'previous' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-arrow-rotate-left"></i> Previous
             </button>
@@ -1014,7 +1162,7 @@ export function renderGcseDoNowPanelHTML({
               class="btn-donow-mode ${activeMode === 'current' ? 'active' : ''}"
               data-donow-mode="current"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('current');"
-              title="10 Questions directly on this current lesson"
+              title="Questions directly on this current lesson"
               style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'current' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'current' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'current' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-book-open"></i> This Lesson
             </button>
@@ -1022,7 +1170,7 @@ export function renderGcseDoNowPanelHTML({
               class="btn-donow-mode ${activeMode === 'unit' ? 'active' : ''}"
               data-donow-mode="unit"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('unit');"
-              title="10 Questions interleaved across this unit up to now"
+              title="Questions interleaved across this unit up to now"
               style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'unit' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'unit' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'unit' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-layer-group"></i> Unit
             </button>
@@ -1030,15 +1178,52 @@ export function renderGcseDoNowPanelHTML({
               class="btn-donow-mode ${activeMode === 'other' || activeMode === 'all' ? 'active' : ''}"
               data-donow-mode="other"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('other');"
-              title="10 Questions from another unit or synoptic mix"
+              title="Questions from another unit or synoptic mix"
               style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'other' || activeMode === 'all' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'other' || activeMode === 'all' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'other' || activeMode === 'all' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-earth-americas"></i> All
             </button>
           </div>
+
+          <!-- Question Count Pill Toggle: 5 Qs | 10 Qs | 15 Qs | 20 Qs -->
+          <div class="donow-count-btn-group" style="display: inline-flex; align-items: center; background: #e2e8f0; padding: 2px; border-radius: 999px; gap: 2px; border: 1px solid #cbd5e1; box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); user-select: none;">
+            <button type="button"
+              class="btn-donow-count ${activeCount === 5 ? 'active' : ''}"
+              data-donow-count="5"
+              onclick="event.stopPropagation(); window.setDoNowQuestionCount(5);"
+              title="Set to 5 recall questions (standard 5-minute starter)"
+              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 5 ? '#0284c7' : 'transparent'}; color: ${activeCount === 5 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 5 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              5 Qs
+            </button>
+            <button type="button"
+              class="btn-donow-count ${activeCount === 10 ? 'active' : ''}"
+              data-donow-count="10"
+              onclick="event.stopPropagation(); window.setDoNowQuestionCount(10);"
+              title="Set to 10 recall questions (standard retrieval drill)"
+              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 10 ? '#0284c7' : 'transparent'}; color: ${activeCount === 10 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 10 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              10 Qs
+            </button>
+            <button type="button"
+              class="btn-donow-count ${activeCount === 15 ? 'active' : ''}"
+              data-donow-count="15"
+              onclick="event.stopPropagation(); window.setDoNowQuestionCount(15);"
+              title="Set to 15 recall questions (extended retrieval drill)"
+              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 15 ? '#0284c7' : 'transparent'}; color: ${activeCount === 15 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 15 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              15 Qs
+            </button>
+            <button type="button"
+              class="btn-donow-count ${activeCount === 20 ? 'active' : ''}"
+              data-donow-count="20"
+              onclick="event.stopPropagation(); window.setDoNowQuestionCount(20);"
+              title="Set to 20 recall questions (full topic mastery challenge)"
+              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 20 ? '#0284c7' : 'transparent'}; color: ${activeCount === 20 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 20 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              20 Qs
+            </button>
+          </div>
+
           <button type="button"
             class="btn-donow-shuffle"
             onclick="event.stopPropagation(); window.refreshCurrentGcseDoNow(true);"
-            title="Roll a fresh randomized set of 10 questions for this scope"
+            title="Roll a fresh randomized set of questions for this scope"
             style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0369a1; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
             <i class="fa-solid fa-arrows-rotate" style="color: #0284c7;"></i> Shuffle
           </button>
@@ -1060,7 +1245,7 @@ export function renderGcseDoNowPanelHTML({
         ${chipsHtml}
       </div>
 
-      <!-- 10 Questions Container -->
+      <!-- Questions Container -->
       <div class="donow-rows-container" id="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
         ${rowsHtml}
       </div>
@@ -1069,15 +1254,40 @@ export function renderGcseDoNowPanelHTML({
 }
 
 /**
- * Initializes global window event handlers for dynamic mode switching, unit toggling, shuffling,
- * explanation drawers, and direct narrative block navigation.
+ * Initializes global window event handlers for dynamic mode switching, unit toggling, question count switching,
+ * shuffling, explanation drawers, and direct narrative block navigation.
  */
-export function initGcseDoNowEngine(currentLesson, activeUnit, db) {
+export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null) {
   if (typeof window === 'undefined') return;
+
+  // Reset session overrides to guarantee fresh canonical lesson default state on load
+  window.currentDoNowMode = 'previous';
+  window.currentDoNowCountOverride = null;
 
   window.currentGcseLesson = currentLesson;
   window.currentGcseActiveUnit = activeUnit;
   window.currentGcseDb = db || window.db || {};
+  const isKs3Effective = isKs3 !== null ? isKs3 : isKs3Unit(activeUnit);
+  window.isCurrentUnitKs3 = isKs3Effective;
+
+  window.setDoNowQuestionCount = function (count) {
+    saveQuestionCount(count);
+    document.querySelectorAll('.btn-donow-count').forEach((btn) => {
+      const isCur = parseInt(btn.dataset.donowCount, 10) === count;
+      if (isCur) {
+        btn.classList.add('active');
+        btn.style.background = '#0284c7';
+        btn.style.color = '#ffffff';
+        btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
+      } else {
+        btn.classList.remove('active');
+        btn.style.background = 'transparent';
+        btn.style.color = '#475569';
+        btn.style.boxShadow = 'none';
+      }
+    });
+    window.refreshCurrentGcseDoNow(false);
+  };
 
   window.setGcseDoNowMode = function (mode) {
     const cleanMode = mode === 'all' ? 'other' : mode;
@@ -1105,17 +1315,36 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db) {
       chipsWrapper.style.display = cleanMode === 'other' ? 'block' : 'none';
     }
 
-    // 3. Re-generate questions in canonical deterministic order
+    // 3. Sync count button active states (in case smart default adjusted)
+    const isCurKs3 = !!window.isCurrentUnitKs3;
+    const curCount = getSavedQuestionCount(isCurKs3, cleanMode);
+    document.querySelectorAll('.btn-donow-count').forEach((btn) => {
+      const isCur = parseInt(btn.dataset.donowCount, 10) === curCount;
+      if (isCur) {
+        btn.classList.add('active');
+        btn.style.background = '#0284c7';
+        btn.style.color = '#ffffff';
+        btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
+      } else {
+        btn.classList.remove('active');
+        btn.style.background = 'transparent';
+        btn.style.color = '#475569';
+        btn.style.boxShadow = 'none';
+      }
+    });
+
+    // 4. Re-generate questions in canonical deterministic order
     window.refreshCurrentGcseDoNow(false);
   };
 
   window.selectGcseDoNowTarget = function (targetId) {
-    saveSelectedRetrievalTarget(targetId);
+    const isCurKs3 = !!window.isCurrentUnitKs3;
+    saveSelectedRetrievalTarget(targetId, isCurKs3);
 
     // Update chips HTML
     const chipsWrapper = document.getElementById('donow-gcse-unit-chips-wrapper');
     if (chipsWrapper) {
-      chipsWrapper.innerHTML = renderGcseUnitChipsHTML(targetId);
+      chipsWrapper.innerHTML = renderGcseUnitChipsHTML(targetId, isCurKs3);
     }
 
     // Re-generate questions in canonical deterministic order
@@ -1184,19 +1413,21 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db) {
     const activeUnit = window.currentGcseActiveUnit;
     const db = window.currentGcseDb || window.db || {};
     const curUnitId = activeUnit?.id || window.currentUnitId;
+    const isCurKs3 = !!window.isCurrentUnitKs3 || isKs3Unit(activeUnit, curUnitId);
     const mode = getSavedDoNowMode();
-    const target = getSelectedRetrievalTarget();
+    const target = getSelectedRetrievalTarget(isCurKs3);
+    const count = getSavedQuestionCount(isCurKs3, mode);
     const seed = forceShuffle ? Math.floor(Math.random() * 1000000) : null;
 
     let result;
     if (mode === 'current') {
-      result = getCurrentLessonQuestions(activeUnit, lesson, seed);
+      result = getCurrentLessonQuestions(activeUnit, lesson, seed, count);
     } else if (mode === 'unit') {
-      result = getUnitInterleavedQuestions(activeUnit, lesson, seed);
+      result = getUnitInterleavedQuestions(activeUnit, lesson, seed, count);
     } else if (mode === 'other' || mode === 'all') {
-      result = getSynopticGcseQuestions(activeUnit, lesson, db, target, seed);
+      result = getSynopticGcseQuestions(activeUnit, lesson, db, target, seed, count);
     } else {
-      result = getPreviousLessonQuestions(activeUnit, lesson, seed);
+      result = getPreviousLessonQuestions(activeUnit, lesson, seed, count);
     }
 
     // Update subtitle

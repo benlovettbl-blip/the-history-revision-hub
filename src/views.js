@@ -41,10 +41,14 @@ import {
 
 export function getUnits() {
   if (!window.db) return [];
-  return Object.keys(window.db).map((k) => ({
-    id: k,
-    ...window.db[k].data,
-  }));
+  return Object.keys(window.db).map((k) => {
+    const raw = window.db[k] || {};
+    const unitObj = raw.data || raw;
+    return {
+      id: k,
+      ...unitObj,
+    };
+  });
 }
 
 export function renderDashboard() {
@@ -147,7 +151,8 @@ export function renderDashboard() {
   const renderUnitCard = (unit, index, meta) => {
     const isUnlocked = true;
     const rawTitle = unit.title || unit.id;
-    const imageUrl = unit.homepage_background || unit.cover_image || '';
+    const rawImageUrl = unit.homepage_background || unit.cover_image || '';
+    const imageUrl = rawImageUrl ? getAssetUrl(rawImageUrl) : '';
 
     const displayTitle =
       unitCanonicalTitles[unit.id] || rawTitle.replace(/^(KS3:\s*|Paper\s*\d+:\s*)/i, '').trim();
@@ -183,12 +188,21 @@ export function renderDashboard() {
       ? (meta.paperBadge || 'Edexcel Paper')
       : `Year ${meta.year}`;
 
+    const cardImgHtml = imageUrl
+      ? `
+        <div class="module-card-img" style="position: relative; height: 130px; overflow: hidden; background: #0a101f; margin: -12px -12px 10px -12px; border-bottom: 1px solid var(--border-glass, #e2e8f0); flex-shrink: 0;">
+          <div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imageUrl}'); background-size: cover; background-position: ${bgPos}; filter: blur(12px) brightness(0.35); opacity: 0.7; transform: scale(1.1);"></div>
+          <img src="${imageUrl}" alt="${displayTitle}" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.5)); transition: transform 0.3s ease;" />
+        </div>
+      `
+      : `<div class="module-card-img" style="height: 130px; background: var(--primary); margin: -12px -12px 10px -12px;"></div>`;
+
     return `
       <div class="module-card ${isUnlocked ? '' : 'locked'}" data-year="${meta.year || ''}" data-paper="${meta.paper || ''}" data-stage="${meta.stage}" style="animation-delay: ${index * 0.04}s; cursor: pointer; position: relative; ${isGcse ? 'border-top: 3.5px solid #f59e0b;' : 'border-top: 3.5px solid #2563eb;'}" data-action="launch-subapp" data-unit="${unit.id}">
         <span style="position: absolute; top: 7px; left: 7px; z-index: 10; background: ${isGcse ? 'rgba(180, 83, 9, 0.92)' : 'rgba(30, 58, 138, 0.92)'}; color: #ffffff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.25); backdrop-filter: blur(4px);">
           ${badgeText}
         </span>
-        ${imageUrl ? `<div class="module-card-img" style="background-image: url('${imageUrl}'); background-position: ${bgPos}; background-size: cover;"></div>` : `<div class="module-card-img" style="background: var(--primary);"></div>`}
+        ${cardImgHtml}
         <div style="position: relative; z-index: 2; padding: 0; flex-grow: 1; display: flex; flex-direction: column;">
           <div style="flex-grow: 1; min-width: 0;">
             <h4 style="margin: 0 0 5px 0; font-size: 0.94rem; font-weight: 700; line-height: 1.25; color: var(--text-main, #0f172a); font-family: 'Playfair Display', serif; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; min-height: 2.5em;" title="${displayTitle}">${displayTitle}</h4>
@@ -1927,7 +1941,7 @@ export async function renderLessonsView() {
           (l.title && l.title.toLowerCase().includes(requestedLesson.toLowerCase())),
       );
     }
-    // Backward-compatibility alias: Water & Sanitation November Assessment was previously Lesson 7
+    // Backward-compatibility alias: Water & Sanitation Summative Assessment was previously Lesson 7
     if (
       (unitId === 'water_and_sanitation' || window.currentUnitId === 'water_and_sanitation') &&
       (parsed === 7 ||
@@ -1935,7 +1949,7 @@ export async function renderLessonsView() {
         requestedLesson === '7' ||
         targetIndex >= lessonsList.length)
     ) {
-      targetIndex = lessonsList.length - 1; // Seamlessly routes to November Assessment Masterclass (Lesson 6)
+      targetIndex = lessonsList.length - 1; // Seamlessly routes to Summative Assessment Masterclass (Lesson 6)
     }
     if (targetIndex >= 0 && targetIndex < lessonsList.length) {
       window.viewLessonDetail(targetIndex, null, true);
@@ -2669,9 +2683,9 @@ async function renderOfficialPastPapers(container, unitId) {
       container.innerHTML = `
         <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 40px 30px; text-align: center; margin: 20px 0;">
           <div style="font-size: 2.2rem; margin-bottom: 10px;">📦</div>
-          <h3 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">Official Pearson Archive</h3>
+          <h3 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">Edexcel Exam Paper Archive</h3>
           <p style="color: #4b5563; font-size: 0.92rem; max-width: 650px; margin: 0 auto; line-height: 1.5;">
-            Official Pearson Edexcel examination series past papers are curated for Key Stage 4 (GCSE) syllabus units. For KS3 units, use the full Pupil Workbooks, Master Textbooks, and Mastery Quizzes.
+            Edexcel GCSE Examination Series past papers are curated for Key Stage 4 (GCSE) syllabus units. For KS3 units, use the full Pupil Workbooks, Master Textbooks, and Mastery Quizzes.
           </p>
         </div>
       `;
@@ -2703,7 +2717,7 @@ async function renderOfficialPastPapers(container, unitId) {
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
           <div>
             <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #000000;">
-              OFFICIAL PEARSON ARCHIVE &bull; ${unitManifest.paperCode}
+              Edexcel Exam Paper Archive &bull; ${unitManifest.paperCode}
             </div>
             <h2 style="margin: 4px 0 6px 0; font-size: 1.45rem; font-weight: 900; font-family: 'Outfit', sans-serif; color: #000000;">
               Official Past Examination Papers &amp; Mark Schemes (2018–2026)
@@ -2993,7 +3007,7 @@ export async function renderMockExamsView() {
           <i class="fa-solid fa-graduation-cap"></i> Predicted Mock Exam Papers
         </button>
         <button id="tab-btn-official-past-papers" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
-          <i class="fa-solid fa-box-archive"></i> Official Pearson Past Papers (2018–2026 Archive)
+          <i class="fa-solid fa-box-archive"></i> Edexcel Past Papers Archive (2018–2026 Archive)
         </button>
         <button id="tab-btn-trend-radar" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
           <i class="fa-solid fa-chart-line"></i> 2018–2026 Past Paper Matrix &amp; Overdue Radar
@@ -3095,15 +3109,15 @@ export async function renderMockExamsView() {
               Exam Hall Saddle-Stitch Booklets:
             </div>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-              <a href="/pdfs/mocks/${unitId}/${mock.id}_question_booklet.pdf" target="_blank" download="${mock.id}_question_booklet.pdf" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 8px 6px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Download 16-page saddle-stitch Question & Answer Booklet (4 folded A3 sheets)">
+              <a href="/units/${unitId}/${mock.id}_question_booklet.html" target="_blank" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 8px 6px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Open 16-page saddle-stitch Question & Answer Booklet in new tab (Print-ready A4)">
                 <i class="fa-solid fa-file-lines" style="color: #60a5fa;"></i> 16p Question Booklet
               </a>
-              <a href="/pdfs/mocks/${unitId}/${mock.id}_sources_booklet.pdf" target="_blank" download="${mock.id}_sources_booklet.pdf" style="text-align: center; text-decoration: none; background: #f8fafc; color: #0f172a; border: 2px solid #000000; padding: 8px 6px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#e2e8f0';" onmouseout="this.style.background='#f8fafc';" title="Download 4-page loose Sources/Interpretations Booklet (1 folded A3 sheet)">
+              <a href="/units/${unitId}/${mock.id}_sources_booklet.html" target="_blank" style="text-align: center; text-decoration: none; background: #f8fafc; color: #0f172a; border: 2px solid #000000; padding: 8px 6px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#e2e8f0';" onmouseout="this.style.background='#f8fafc';" title="Open 4-page loose Sources/Interpretations Booklet in new tab (Print-ready A4)">
                 <i class="fa-solid fa-book-open" style="color: #f59e0b;"></i> 4p Sources Insert
               </a>
             </div>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-              <a href="/pdfs/mocks/${unitId}/${mock.id}.pdf" target="_blank" download="${mock.id}.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 7px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download 20-page collated complete exam pack (Pages 1–16 QP + Pages 17–20 Sources)">
+              <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 7px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Open complete collated exam pack in new tab">
                 <i class="fa-solid fa-layer-group" style="color: #64748b;"></i> 20p Complete Pack
               </a>
               <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 7px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Open interactive exam simulator with timer">
@@ -3112,13 +3126,13 @@ export async function renderMockExamsView() {
             </div>
           `
               : `
-            <!-- Question Paper Actions: Interactive Simulator & Authentic A4 PDF -->
+            <!-- Question Paper Actions: Interactive Simulator & Authentic A4 Paper -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
               <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Open interactive exam simulator with timer">
                 <i class="fa-solid fa-laptop"></i> Interactive
               </a>
-              <a href="/pdfs/mocks/${unitId}/${mock.id}.pdf" target="_blank" download="${mock.id}.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download printable A4 Question Paper PDF">
-                <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> Paper PDF
+              <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Open printable A4 Question Paper">
+                <i class="fa-solid fa-file-lines" style="color: #dc2626;"></i> Paper View
               </a>
             </div>
           `
@@ -3142,8 +3156,8 @@ export async function renderMockExamsView() {
               <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #f4f4f5; color: #000000; border: 1.5px solid #71717a; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#e4e4e7';" onmouseout="this.style.background='#f4f4f5';" title="Open interactive mark scheme with model answers">
                 <i class="fa-solid fa-clipboard-check"></i> Interactive MS
               </a>
-              <a href="/pdfs/mocks/${unitId}/${mock.id}_mark_scheme.pdf" target="_blank" download="${mock.id}_mark_scheme.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download printable A4 Mark Scheme PDF">
-                <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> MS PDF
+              <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Open printable A4 Mark Scheme">
+                <i class="fa-solid fa-file-lines" style="color: #16a34a;"></i> Printable MS
               </a>
             </div>
           `
@@ -3162,7 +3176,7 @@ export async function renderMockExamsView() {
         </div>
       </div> <!-- End #mock-papers-wrapper -->
 
-      <!-- Official Pearson Past Papers Archive Container -->
+      <!-- Edexcel Past Papers Archive Archive Container -->
       <div id="official-past-papers-container" style="display: none;"></div>
 
       <!-- Past Paper Question Matrix & Overdue Radar Container -->
