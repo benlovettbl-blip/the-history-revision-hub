@@ -156,18 +156,157 @@ export function renderLessonExamPracticeHTML(unitId, lesson) {
         </div>
 
         <!-- Model Answer Drawer (hidden by default) -->
-        <div id="exam-model-drawer-${q.id}" style="display: none; margin-top: 18px; padding: 18px 20px; background: #fdfdfd; border: 1.5px solid #86efac; border-left: 5px solid #22c55e; border-radius: 10px; box-shadow: 0 4px 14px rgba(34, 197, 94, 0.08);">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-            <div style="font-weight: 800; font-size: 0.88rem; color: #15803d; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-award"></i> Grade 8/9 Official Mark Scheme Model Answer
-            </div>
-            <span style="font-size: 0.78rem; background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 4px; font-weight: 700;">
-              Full Marks (${q.marks}/${q.marks})
-            </span>
-          </div>
-          <div style="font-size: 0.95rem; line-height: 1.65; color: #1e293b; ${q.modelAnswer && q.modelAnswer.includes('<div') ? '' : 'white-space: pre-line;'}">
-            ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(q.modelAnswer) : q.modelAnswer}
-          </div>
+        <div id="exam-model-drawer-${q.id}" class="exam-model-drawer" style="display: none; margin-top: 18px; padding: 18px 20px; background: #ffffff; border: 1.5px solid #10b981; border-radius: 12px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);">
+          ${
+            q.model_tiers
+              ? (() => {
+                  const tiers = q.model_tiers;
+                  const tierKeys = Object.keys(tiers);
+                  const defaultKey = tiers.tier_16m
+                    ? 'tier_16m'
+                    : tiers.tier_12m
+                    ? 'tier_12m'
+                    : tiers.tier_8m
+                    ? 'tier_8m'
+                    : tiers.tier_4m
+                    ? 'tier_4m'
+                    : tierKeys[0];
+
+                  const tabButtonsHtml = tierKeys
+                    .map((key) => {
+                      const t = tiers[key];
+                      const isActive = key === defaultKey;
+                      const btnBg = isActive ? '#0f172a' : '#ffffff';
+                      const btnColor = isActive ? '#ffffff' : '#334155';
+                      const btnBorder = isActive ? '#0f172a' : '#cbd5e1';
+                      const btnWeight = isActive ? '700' : '600';
+                      const badgeIcon =
+                        key === 'tier_4m' || key === 'tier_8m' || key === 'tier_12m' || key === 'tier_16m'
+                          ? 'fa-star'
+                          : key === 'tier_10m' || key === 'tier_20m'
+                          ? 'fa-rocket'
+                          : key === 'tier_5m' || key === 'tier_6m' || key === 'tier_9m'
+                          ? 'fa-list-check'
+                          : key === 'tier_2m' || key === 'tier_3m'
+                          ? 'fa-pen-to-square'
+                          : 'fa-lightbulb';
+                      return `
+                        <button type="button" class="btn exam-tier-tab-btn-${q.id} ${isActive ? 'active' : ''}" onclick="window.switchExamCardModelTier('${q.id}', '${key}')" data-tier-btn="${key}" style="padding: 6px 12px; font-size: 0.8rem; font-weight: ${btnWeight}; border-radius: 6px; border: 1.5px solid ${btnBorder}; background: ${btnBg}; color: ${btnColor}; cursor: pointer; transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 5px;">
+                          <i class="fa-solid ${badgeIcon}"></i> ${t.title || key}
+                        </button>
+                      `;
+                    })
+                    .join('');
+
+                  const panesHtml = tierKeys
+                    .map((key) => {
+                      const t = tiers[key];
+                      const isActive = key === defaultKey;
+                      const wordCount = (t.text || '').replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length;
+
+                      let themeBorder = '#cbd5e1';
+                      let themeBadgeBg = '#e2e8f0';
+                      let themeBadgeColor = '#334155';
+                      let verdictBorder = '#94a3b8';
+                      let verdictBg = '#f1f5f9';
+                      let verdictColor = '#1e293b';
+
+                      if (key === 'tier_1m') {
+                        themeBorder = '#fed7aa';
+                        themeBadgeBg = '#ffedd5';
+                        themeBadgeColor = '#c2410c';
+                        verdictBorder = '#f97316';
+                        verdictBg = '#fffaf5';
+                        verdictColor = '#9a3412';
+                      } else if (key === 'tier_2m' || key === 'tier_3m') {
+                        themeBorder = '#fde68a';
+                        themeBadgeBg = '#fef3c7';
+                        themeBadgeColor = '#b45309';
+                        verdictBorder = '#eab308';
+                        verdictBg = '#fefce8';
+                        verdictColor = '#854d0e';
+                      } else if (key === 'tier_4m' || key === 'tier_8m' || key === 'tier_12m' || key === 'tier_16m') {
+                        themeBorder = '#a7f3d0';
+                        themeBadgeBg = '#d1fae5';
+                        themeBadgeColor = '#065f46';
+                        verdictBorder = '#10b981';
+                        verdictBg = '#f0fdf4';
+                        verdictColor = '#064e3b';
+                      } else if (key === 'tier_10m' || key === 'tier_20m') {
+                        themeBorder = '#e9d5ff';
+                        themeBadgeBg = '#f3e8ff';
+                        themeBadgeColor = '#7e22ce';
+                        verdictBorder = '#a855f7';
+                        verdictBg = '#faf5ff';
+                        verdictColor = '#581c87';
+                      }
+
+                      return `
+                        <div id="exam-tier-pane-${q.id}-${key}" class="exam-tier-pane-${q.id}" style="display: ${isActive ? 'block' : 'none'};">
+                          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid ${themeBorder};">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                              <span style="background: ${themeBadgeBg}; color: ${themeBadgeColor}; font-weight: 800; font-size: 0.78rem; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.5px; text-transform: uppercase;">
+                                ${t.score || t.level}
+                              </span>
+                              <span style="font-size: 0.8rem; font-weight: 600; color: #64748b;">
+                                ${t.level || ''}
+                              </span>
+                            </div>
+                            <span style="font-size: 0.78rem; font-weight: 700; color: #64748b; background: #ffffff; padding: 2px 8px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                              ${wordCount} words
+                            </span>
+                          </div>
+                          <div style="font-size: 0.96rem; line-height: 1.65; color: #0f172a; margin-bottom: 14px;">
+                            ${t.text}
+                          </div>
+                          ${
+                            t.verdict
+                              ? `
+                            <div style="background: ${verdictBg}; border-left: 3.5px solid ${verdictBorder}; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: 0.86rem; line-height: 1.5; color: ${verdictColor};">
+                              <strong style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.4px;">
+                                <i class="fa-solid fa-clipboard-check"></i> 2026 Pearson Examiner Verdict:
+                              </strong>
+                              <div>${t.verdict}</div>
+                            </div>
+                          `
+                              : ''
+                          }
+                        </div>
+                      `;
+                    })
+                    .join('');
+
+                  return `
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                      <span style="font-weight: 800; font-size: 0.82rem; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+                        <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> Pearson Edexcel 4-Tier Examiner Ladder
+                      </span>
+                      <span style="font-size: 0.74rem; font-weight: 600; color: #64748b;">
+                        Toggle rungs to analyze mark boundaries
+                      </span>
+                    </div>
+                    <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px; border-radius: 8px;">
+                      ${tabButtonsHtml}
+                    </div>
+                    <div class="exam-tier-panes-container">
+                      ${panesHtml}
+                    </div>
+                  `;
+                })()
+              : `
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <div style="font-weight: 800; font-size: 0.88rem; color: #15803d; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
+                    <i class="fa-solid fa-award"></i> Grade 8/9 Official Mark Scheme Model Answer
+                  </div>
+                  <span style="font-size: 0.78rem; background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 4px; font-weight: 700;">
+                    Full Marks (${q.marks}/${q.marks})
+                  </span>
+                </div>
+                <div style="font-size: 0.95rem; line-height: 1.65; color: #1e293b; ${q.modelAnswer && q.modelAnswer.includes('<div') ? '' : 'white-space: pre-line;'}">
+                  ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(q.modelAnswer) : q.modelAnswer}
+                </div>
+              `
+          }
         </div>
       </div>
     `;
@@ -228,6 +367,27 @@ export function initLessonExamPractice(unitId, lesson) {
     } else {
       drawer.style.display = 'block';
       if (btn) btn.innerHTML = '<i class="fa-regular fa-eye-slash" style="color: #16a34a;"></i> Hide Model Answer';
+    }
+  };
+
+  // Switch active model tier rung inside exam card
+  window.switchExamCardModelTier = function(qId, targetTier) {
+    const btns = document.querySelectorAll(`.exam-tier-tab-btn-${qId}`);
+    btns.forEach((btn) => {
+      const isTarget = btn.getAttribute('data-tier-btn') === targetTier;
+      btn.style.background = isTarget ? '#0f172a' : '#ffffff';
+      btn.style.color = isTarget ? '#ffffff' : '#334155';
+      btn.style.borderColor = isTarget ? '#0f172a' : '#cbd5e1';
+      btn.style.fontWeight = isTarget ? '700' : '600';
+    });
+
+    const panes = document.querySelectorAll(`.exam-tier-pane-${qId}`);
+    panes.forEach((p) => {
+      p.style.display = 'none';
+    });
+    const targetPane = document.getElementById(`exam-tier-pane-${qId}-${targetTier}`);
+    if (targetPane) {
+      targetPane.style.display = 'block';
     }
   };
 
