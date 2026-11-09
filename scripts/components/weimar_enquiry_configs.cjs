@@ -392,9 +392,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "1920–1921",
           "title": "Party Rebranding & The Swastika Banner",
           "bullets": [
-            "Führerprinzip absolute leadership",
+            "NSDAP party rebranding",
             "Swastika party emblem",
-            "Hitler oratorical appeal"
+            "Völkischer Beobachter newspaper"
           ],
           "focusClue": "Why was visual branding crucial for attracting working-class recruits?"
         },
@@ -402,9 +402,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "Jul 1921",
           "title": "Hitler Takes Absolute Leadership (Führerprinzip)",
           "bullets": [
-            "Sturmabteilung (SA) Brownshirts",
-            "Ernst Röhm leadership",
-            "Rival party intimidation"
+            "Führerprinzip absolute leadership",
+            "Resignation ultimatum (Jul 1921)",
+            "Anton Drexler sidelined"
           ],
           "focusClue": "How did personal oratory secure complete dominance over party rivals?"
         },
@@ -412,9 +412,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "Aug 1921",
           "title": "Formation of the Sturmabteilung (SA)",
           "bullets": [
-            "Völkischer Beobachter newspaper",
-            "Munich paramilitary growth",
-            "Mussolini March on Rome"
+            "Sturmabteilung (SA) Brownshirts",
+            "Ernst Röhm leadership",
+            "Rival party intimidation"
           ],
           "focusClue": "What role did organized paramilitary violence play in protecting meetings?"
         }

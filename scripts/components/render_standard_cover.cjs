@@ -2019,6 +2019,7 @@ function renderMasterKs3FrontCover({
 }
 
 const { renderVersoLessonQr } = require('./render_verso_lesson_qr.cjs');
+const { renderStandardSpinePage } = require('./render_standard_spine.cjs');
 
 module.exports = {
   renderStandardFrontCover,
@@ -2027,6 +2028,7 @@ module.exports = {
   renderKs3BackCover,
   renderWorkbookCoverCenterpiece,
   renderMasterKs3FrontCover,
+  renderStandardSpinePage,
   detectArtworkAspectRatioSync,
   detectArtworkAspectRatio,
   generateQrSvg,

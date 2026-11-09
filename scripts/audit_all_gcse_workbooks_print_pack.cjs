@@ -194,7 +194,17 @@ async function auditGcseWorkbook(item, browser) {
       const utilizedH = clientH - footerGap;
       const utilization = Math.round((utilizedH / clientH) * 100);
 
-      return { pageNum, scrollH, clientH, overflow, footerGap, utilization };
+      // Enforce Clean White Stage Banner Standard (Zero Black Inverted Banners)
+      const stageBanners = Array.from(p.querySelectorAll('.stage-banner'));
+      let blackBannerCount = 0;
+      stageBanners.forEach((b) => {
+        const bg = window.getComputedStyle(b).backgroundColor;
+        if (bg === 'rgb(0, 0, 0)' || bg === '#000000' || bg === '#000') {
+          blackBannerCount++;
+        }
+      });
+
+      return { pageNum, scrollH, clientH, overflow, footerGap, utilization, blackBannerCount };
     });
   });
 
@@ -293,7 +303,11 @@ async function run() {
       Math.round(r.pages.reduce((acc, p) => acc + p.utilization, 0) / r.pages.length) + '%';
 
     let status = '✅ PASS';
-    if (maxOverflow > 0 || !r.isMultipleOf4 || !r.pdfStats?.matchesHtml || !r.clutterClean) {
+    const totalBlackBanners = r.pages.reduce((acc, p) => acc + (p.blackBannerCount || 0), 0);
+    if (totalBlackBanners > 0) {
+      status = '❌ REGRESSION (BLACK BANNERS)';
+      totalDefects++;
+    } else if (maxOverflow > 0 || !r.isMultipleOf4 || !r.pdfStats?.matchesHtml || !r.clutterClean) {
       status = '⚠️ NEEDS REVIEW';
       totalDefects++;
     }
