@@ -19,6 +19,20 @@ STRICT RULE: In every lesson across all 19 units, `lesson.narrative_blocks` and 
 1. **Zero Orphan Intro Blocks:** `narrative_blocks[0]` must NEVER be a general scene-setting introduction that shifts the topic sequence. Block 1 must correspond directly to Stage 1, Block 2 to Stage 2, ..., and Block 5 to Stage 5. Overarching enquiry context belongs in `lesson.enquiry` or `lesson.overview`.
 2. **Trigger Term & Topic Fidelity:** The title and prose of `narrative_blocks[i]` must directly explain and incorporate the 3 Trigger Terms present in `workbook_stages[i]`.
 3. **Automated Verification:** Any change to lesson narratives or workbook stages must be verified by running `npm run audit:stages` (`node scripts/detailed_stage_inspection.cjs`).
+
+## Universal Curricular Lexile, Word Budget & Readability Standard Across All Key Stages
+STRICT RULE: The narrative prose in digital lesson blocks, master textbooks, and pupil workbooks is designed for whole-class teacher reading, paired pupil tracking, and independent revision. It must strictly adhere to the following age-calibrated word budgets and readability standards:
+1. **Key Stage 2 (Years 5–6 / Ages 9–11): 50–80 words per block**
+   - Sensory storytelling, clear concrete nouns, short sentences, and explicit in-context vocabulary scaffolding.
+2. **Key Stage 3 (Years 7–9 / Ages 11–14): 80–110 words per block (Strict cap: 120w)**
+   - Structure: Exactly 2 punchy paragraphs (`[X.1]`, `[X.2]`), ~40–55 words each.
+   - Cognitive Load: Designed for a 45–60 second classroom read-aloud. Zero post-16 academic fluff or syntactical bloat.
+   - Workbook Fidelity: Must seamlessly incorporate the 3 Trigger Terms from `workbook_stages[i]` so pupils can easily identify and transcribe them into their 5-stage note-taking lines.
+3. **Key Stage 4 / GCSE (Years 10–11 / Ages 14–16): 110–140 words per block (Strict cap: 150w)**
+   - Structure: Exactly 2 balanced paragraphs (`[X.1]`, `[X.2]`), ~55–70 words each.
+   - Examination Specificity: Concrete historical mechanisms, causal turning points, key individuals, dates, and named legislation/treaties matching Pearson Edexcel specification points.
+   - Zero Jargon Inflation: STRICTLY FORBIDDEN from including university-level biochemistry, pathology, or political theory jargon (e.g. *pharmacogenomics*, *CRISPR*, *monoclinic space groups*, *barium platinocyanide*, *prophylactic double mastectomies*). All essential concepts must be explained in clear, authentic secondary school prose.
+4. **Zero Dangling Text Tails:** Never append trigger lists, summary sentences, or metadata outside closing `</p>` tags. All trigger terms must be naturally and grammatically embedded inside the paragraph sentences.
 1. **Commercial Independence:** The platform is an independent commercial educational product intended for wider sale and multi-school adoption. It must maintain 100% strict institutional neutrality.
 2. **Approved Branding Terminology:** Always use the platform's public title ("The History Revision Hub" / "GCSE History Revision Hub") or generic departmental designations ("The History Department", "The History Portal", "Fieldwork Primary Record", "Fieldwork Archive").
 3. **No Associated School Identifiers:** Never include school-specific email domains (`@meoncross.co.uk`), school telephone numbers, school archive seals, teacher surname nameplates (render pupil/teacher fields with blank lines `<span class="line"></span>`), or student family links that identify the school.
