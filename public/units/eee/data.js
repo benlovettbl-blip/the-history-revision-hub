@@ -246,14 +246,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The Privy Council was a core group of approximately 19 trusted noble advisers led by William Cecil.<br><strong>Detail:</strong> They met almost daily to manage national finance, military defence, and law enforcement, advising the Queen on royal policy.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Privy Council functioned as the conciliar executive of the Tudor state. By streamlining membership from 50 down to 19 trusted advisers, Elizabeth created a cohesive administrative engine to execute crown policy and manage parliamentary affairs.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -284,14 +276,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Elizabeth inherited a crippling Crown debt of £300,000 from Mary I.<br><strong>Detail:</strong> Much of this debt was owed to foreign bankers on the Antwerp Exchange at high interest rates of up to 14%.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Tudor crown finances faced severe structural vulnerability in 1558. Heavy liabilities on the Antwerp money market forced Cecil and Gresham to prioritize fiscal retrenchment and recoinage before undertaking foreign military expenditure.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -371,14 +355,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>One major reason Elizabeth’s legitimacy was questioned was Catholic rejection of Henry VIII’s marriage to Anne Boleyn. Roman Catholic doctrine held that marriage was a holy sacrament indissoluble by secular authorities, meaning Henry’s 1533 marriage to Anne could only be valid if Pope Clement VII annulled his first marriage to Catherine of Aragon. Because the Papacy adamantly refused to grant an annulment, Catholics viewed Henry’s break from Rome as heresy and his union with Anne as invalid. Consequently, devout Catholics in England and across Europe viewed Elizabeth as illegitimate by birth, making her ineligible to inherit the crown under canon law.<br><br>Furthermore, Elizabeth’s legitimacy was undermined by English statute law and Henry VIII’s own succession legislation. Following the execution of Anne Boleyn for treason in 1536, Parliament passed the Second Act of Succession, which legally declared Elizabeth illegitimate and barred her from the royal succession. Although Henry’s Third Succession Act of 1544 subsequently restored Elizabeth to the line of inheritance behind Edward and Mary, it crucially never repealed the legal declaration of her bastardy. This created a dangerous legal contradiction that domestic opponents and foreign rivals readily exploited to challenge her constitutional right to reign in 1558.<br><br>Finally, Elizabeth’s legitimacy was questioned because of the existence of a formidable alternative Catholic claimant in Mary, Queen of Scots. As the great-granddaughter of Henry VII through his eldest daughter Margaret Tudor, Mary held an unimpeachable claim under dynastic hereditary law. Catholic powers such as France, along with English Catholic traditionalists, argued that if Elizabeth was illegitimate, Mary Stuart was the lawful Queen of England. In 1558, Mary’s French husband Francis II openly quartered the English royal coat of arms with Mary’s, demonstrating that international Catholic powers viewed Elizabeth as a usurper and creating an immediate geopolitical and dynastic threat to her throne.</p>",
                 "verdict": "Level 4 (12/12 marks). Analytical explanation directed consistently at the question. Examines three distinct aspects of content with precise historical evidence (canon law/papal annulment, 1536/1544 Succession Acts, Mary Stuart/Francis II quartering arms) and sustained PEEL causal links throughout."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The contestation of Elizabeth’s legitimacy in 1558 represented an existential convergence of canon law, statutory ambiguity, and European dynastic rivalry.<br><br>First, ecclesiastical jurisprudence fundamentally delegitimized Elizabeth’s birth. The Petrine supremacy claimed by Rome dictated that Henry VIII’s marriage to Catherine of Aragon remained sacramental, rendering Cranmer's Dunstable annulment null and void. In the eyes of Catholic Europe, Elizabeth was not merely born out of wedlock; her very existence symbolized schism and her accession embodied heresy.<br><br>Second, Tudor statutory contradictions provided legal ammunition for sceptics. The 1536 Succession Act had established her bastardy in common law, a stigma never formally expunged by the 1544 Act. This legal anomaly compromised her royal prerogative, leaving her vulnerable to challenges in Parliament and courts of law.<br><br>Third, this ideological dispute was weaponized by the Franco-Scottish alliance. With Mary Stuart asserting her status as the legitimate de jure Catholic heir, the question of legitimacy ceased to be an academic theological dispute and became the focal point of a geopolitical campaign to unseat the Tudor settlement.</p>",
-                "verdict": "Scholar Distinction. Superb synthesis evaluating canon law, common law contradictions, and European dynastic geopolitics."
               }
             }
           }
@@ -480,7 +456,7 @@ export default {
           "type": "narrative",
           "title": "Hatfield Oak to the Tower: Inheriting Bankruptcy and Cecil's Partnership (1558)",
           "theme_heading": "Hatfield Oak to the Tower: Inheriting Bankruptcy and Cecil's Partnership (1558)",
-          "text": "<span class=\"para-ref\">[1.1]</span> On a cold November morning in 1558, twenty-five-year-old **Elizabeth Tudor** received word beneath an oak tree at Hatfield House that her half-sister Mary was dead and she was now Queen of England. Elizabeth was exceptionally intelligent, confident, and highly educated, speaking fluent Latin, French, and Italian. Having narrowly survived imprisonment in the Tower of London during Mary’s reign, she had developed a sharp political instinct and a cautious nature. Yet the realm she inherited was on the brink of financial disaster.<br><br><span class=\"para-ref\">[1.2]</span> England was burdened by an astronomical **£300,000 Crown debt**, largely run up fighting costly wars in France. The Crown’s ordinary annual income was barely **£286,000**, forcing the government to borrow heavily from moneylenders on the **Antwerp Exchange** at ruinous interest rates of **14 per cent**. To rescue royal finances, Elizabeth immediately appointed her most trusted advisor, **Sir William Cecil**, as Principal Secretary, beginning a campaign to slash household expenses, sell royal lands, and bring stability to the treasury.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In November 1558, twenty-five-year-old <strong>Elizabeth Tudor</strong> ascended the throne following the death of Mary I. She inherited an impoverished realm burdened by an astronomical <strong>£300,000 Crown debt</strong>, largely incurred through costly foreign wars in France.<br><br><span class=\"para-ref\">[1.2]</span> The Crown’s ordinary annual income stood at barely £286,000, forcing heavy borrowing from European financiers on the <strong>Antwerp Exchange</strong> at extortionate interest rates of <strong>14 per cent</strong>. Seeking immediate stability, Elizabeth appointed her most trusted advisor, <strong>Sir William Cecil</strong>, as Principal Secretary on accession day, establishing a partnership that directed English governance for four decades.",
           "level_4": "Elizabeth became queen in 1558 facing a massive £300,000 debt left by Mary I. She had to borrow money at high interest from Antwerp and appointed William Cecil as her chief advisor to restore stability.",
           "source": {
             "id": "source_a_coronation_portrait",
@@ -531,7 +507,8 @@ export default {
                 "source_context": "Official oil portrait of Elizabeth I commissioned following her January 1559 coronation at Westminster Abbey. In 16th-century patriarchal England, female rule was widely considered weak and unnatural. **Hinge Question:** How did Elizabeth use royal portraits like the Coronation Portrait to project divine authority and overcome early doubts about female rule?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[1.1]</span> In November 1558, twenty-five-year-old <strong>Elizabeth Tudor</strong> ascended the throne following the death of Mary I. She inherited an impoverished realm burdened by an astronomical <strong>£300,000 Crown debt</strong>, largely incurred through costly foreign wars in France.<br><br><span class=\"para-ref\">[1.2]</span> The Crown’s ordinary annual income stood at barely £286,000, forcing heavy borrowing from European financiers on the <strong>Antwerp Exchange</strong> at extortionate interest rates of <strong>14 per cent</strong>. Seeking immediate stability, Elizabeth appointed her most trusted advisor, <strong>Sir William Cecil</strong>, as Principal Secretary on accession day, establishing a partnership that directed English governance for four decades."
         },
         {
           "stage": 2,
@@ -542,7 +519,7 @@ export default {
           "image": "/images/elizabeth_procession_1601.jpg",
           "image_alt": "Procession portrait of Queen Elizabeth I carried in a litter surrounded by courtiers and Privy Councillors",
           "caption": "Queen Elizabeth I in Procession (c. 1601, attr. Robert Peake). Depicting the elaborate Tudor Court and Privy Council patronage network that sustained royal authority.",
-          "text": "<span class=\"para-ref\">[2.1]</span> Tudor monarchical governance was rooted in the concept of **Divine Right**, but the Crown possessed no standing army or professional police force. Sovereign power was directed by the monarch and a small, elite **Privy Council** of nineteen trusted advisors who met daily to manage state finance, national defence, and foreign policy.<br><br><span class=\"para-ref\">[2.2]</span> Elizabeth secured political stability by balancing rival court factions against one another. She distributed **royal patronage and monopolies**—exclusive commercial licences and profitable offices—to secure noble loyalty without surrendering monarchical authority, preventing ambitious aristocrats from uniting in rebellion.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Tudor monarchical governance was rooted in the concept of <strong>Divine Right</strong>, but the Crown possessed no standing army or professional police force. Sovereign power was instead maintained through an executive <strong>19-man Privy Council</strong> comprising senior noblemen and statesmen meeting daily to guide defense, finance, and diplomacy.<br><br><span class=\"para-ref\">[2.2]</span> To bind the landed aristocracy and ambitious courtiers to her rule, Elizabeth deployed a sophisticated system of <strong>royal patronage</strong>, distributing titles, offices, leases, and lucrative <strong>commercial monopolies</strong>. By balancing rival political factions at court—most notably between the cautious William Cecil and her favourite, Lord Robert Dudley—the Queen prevented any single noble clique from dominating royal decision-making.",
           "level_4": "Elizabeth governed with a 19-man Privy Council of trusted nobles and advisors. She used royal patronage, like giving titles and monopolies, to keep rival noble factions loyal and balanced at court.",
           "source": {
             "id": "source_b_william_cecil",
@@ -594,7 +571,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> Tudor monarchical governance was rooted in the concept of **Divine Right**, but the Crown possessed no standing army or professional police force. Sovereign power was instead maintained through an executive **19-man Privy Council** comprising senior noblemen and statesmen meeting daily to guide defense, finance, and diplomacy.<br><br><span class=\"para-ref\">[2.2]</span> To bind the landed aristocracy and ambitious courtiers to her rule, Elizabeth deployed a sophisticated system of **royal patronage**, distributing titles, offices, leases, and lucrative **commercial monopolies**. By balancing rival political factions at court—most notably between the cautious William Cecil and her favourite, Lord Robert Dudley—the Queen prevented any single noble clique from dominating royal decision-making. Elizabeth maintained factional balance at court by dividing patronage between rival noble factions to prevent rebellion."
+          "content": "<span class=\"para-ref\">[2.1]</span> Tudor monarchical governance was rooted in the concept of <strong>Divine Right</strong>, but the Crown possessed no standing army or professional police force. Sovereign power was instead maintained through an executive <strong>19-man Privy Council</strong> comprising senior noblemen and statesmen meeting daily to guide defense, finance, and diplomacy.<br><br><span class=\"para-ref\">[2.2]</span> To bind the landed aristocracy and ambitious courtiers to her rule, Elizabeth deployed a sophisticated system of <strong>royal patronage</strong>, distributing titles, offices, leases, and lucrative <strong>commercial monopolies</strong>. By balancing rival political factions at court—most notably between the cautious William Cecil and her favourite, Lord Robert Dudley—the Queen prevented any single noble clique from dominating royal decision-making."
         },
         {
           "stage": 3,
@@ -602,7 +579,7 @@ export default {
           "type": "narrative",
           "title": "Challenges of Gender & Marriage: Female Monarchical Rule, Legitimacy and Knox's Opposition (1558)",
           "theme_heading": "Challenges of Gender & Marriage: Female Monarchical Rule, Legitimacy and Knox's Opposition (1558)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Elizabethan government was centred entirely around the monarch, who claimed to rule by **Divine Right**—the belief that kings and queens were appointed directly by God. The **Court** was made up of noblemen, advisers, and servants who travelled with the Queen from palace to palace. The Court was the stage where Elizabeth displayed her magnificent wealth and authority, and where ambitious courtiers competed for royal favour.<br><br><span class=\"para-ref\">[3.2]</span> The real engine of national government was the **Privy Council**, a select group of around 19 senior noblemen and statesmen meeting almost daily to manage defense, tax collection, and foreign affairs. Elizabeth controlled her powerful nobles through **patronage**—distributing titles, land leases, and lucrative trade monopolies. By balancing rival factions at court, especially between the cautious William Cecil and her dashing favourite, Lord Robert Dudley, Elizabeth ensured that no single noble clique could dominate her decisions.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Elizabeth’s right to rule was challenged by deep-seated sixteenth-century patriarchal prejudice and religious doubts over her <strong>legitimacy</strong>. Roman Catholic canon law regarded Henry VIII’s marriage to <strong>Anne Boleyn</strong> as illegal and bigamous, because Pope Clement VII had refused to annul Henry’s first marriage to Catherine of Aragon. Furthermore, following Anne’s execution in 1536, Parliament passed the <strong>Second Succession Act</strong>, legally declaring Elizabeth illegitimate.<br><br><span class=\"para-ref\">[3.2]</span> As an unmarried female ruler—a <strong>Queen Regnant</strong>—contemporary European society considered her inherently incapable of commanding military forces or governing without a husband. Consequently, both Parliament and the Privy Council exerted relentless pressure upon Elizabeth to marry and produce a Protestant heir, a dilemma she navigated by declaring herself married to the English realm.",
           "level_4": "Catholics questioned Elizabeth's legitimacy because the Pope never recognized Henry VIII's divorce to marry Anne Boleyn. Society also doubted a female ruler, putting intense pressure on Elizabeth to marry and secure an heir.",
           "sources": [
             {
@@ -633,7 +610,7 @@ export default {
               "text": "To promote a woman to bear rule, superiority, dominion, or empire above any realm, nation, or city, is repugnant to nature; an insult to God, a thing most contrary to his revealed will and approved ordinance; and finally, it is the subversion of good order, of all equity and justice... Woman in her greatest perfection was made to serve and obey man, not to rule and govern him."
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> Elizabeth’s right to rule was challenged by deep-seated sixteenth-century patriarchal prejudice and religious doubts over her **legitimacy**. Roman Catholic canon law regarded Henry VIII’s marriage to **Anne Boleyn** as illegal and bigamous, because Pope Clement VII had refused to annul Henry’s first marriage to Catherine of Aragon. Furthermore, following Anne’s execution in 1536, Parliament passed the **Second Succession Act**, legally declaring Elizabeth illegitimate.<br><br><span class=\"para-ref\">[3.2]</span> As an unmarried female ruler—a **Queen Regnant**—contemporary European society considered her inherently incapable of commanding military forces or governing without a husband. Consequently, both Parliament and the Privy Council exerted relentless pressure upon Elizabeth to marry and produce a Protestant heir, a dilemma she navigated by declaring herself married to the English realm. Catholics cited the Papal rejection of Anne Boleyn and the 1536 Succession Act bar to challenge her legitimacy."
+          "content": "<span class=\"para-ref\">[3.1]</span> Elizabeth’s right to rule was challenged by deep-seated sixteenth-century patriarchal prejudice and religious doubts over her <strong>legitimacy</strong>. Roman Catholic canon law regarded Henry VIII’s marriage to <strong>Anne Boleyn</strong> as illegal and bigamous, because Pope Clement VII had refused to annul Henry’s first marriage to Catherine of Aragon. Furthermore, following Anne’s execution in 1536, Parliament passed the <strong>Second Succession Act</strong>, legally declaring Elizabeth illegitimate.<br><br><span class=\"para-ref\">[3.2]</span> As an unmarried female ruler—a <strong>Queen Regnant</strong>—contemporary European society considered her inherently incapable of commanding military forces or governing without a husband. Consequently, both Parliament and the Privy Council exerted relentless pressure upon Elizabeth to marry and produce a Protestant heir, a dilemma she navigated by declaring herself married to the English realm."
         },
         {
           "stage": 4,
@@ -641,7 +618,7 @@ export default {
           "type": "narrative",
           "title": "Whitehall to the Shires: Reluctant Parliaments and Unpaid Country JPs (1559)",
           "theme_heading": "Whitehall to the Shires: Reluctant Parliaments and Unpaid Country JPs (1559)",
-          "text": "<span class=\"para-ref\">[4.1]</span> Elizabeth possessed great power, but she was not an absolute ruler. The Crown had no standing army and no national police force, and Elizabeth could not pass new laws or raise taxes without the consent of **Parliament**. Parliament was made up of the House of Lords (nobles and bishops) and the House of Commons (wealthy elected landowners and town leaders). Elizabeth viewed Parliament as a necessary nuisance, calling MPs only nine times during her 45-year reign, primarily to grant **extraordinary taxation** (subsidies) during national emergencies or wars.<br><br><span class=\"para-ref\">[4.2]</span> Across the English counties, the Crown relied entirely on unpaid local gentlemen to carry out royal orders. Each county was headed by a **Lord Lieutenant**, a great nobleman appointed by the Queen to govern the region and train the local militia for defence. Beneath them, **Justices of the Peace (JPs)** drawn from the county gentry maintained daily law and order, sat as judges in quarterly court sessions, repaired roads, and collected taxes.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Beyond Whitehall, the Crown depended entirely on local authorities to execute royal policy across England's counties. County administration was overseen by <strong>Lords Lieutenant</strong>, wealthy magnates responsible for raising local militias during emergencies, and unpaid <strong>Justices of the Peace (JPs)</strong> drawn from the country gentry. These JPs enforced statutory law, collected taxes, repaired roads, and punished petty crime at quarterly sessions.<br><br><span class=\"para-ref\">[4.2]</span> Meanwhile, <strong>Parliament</strong> was an occasional advisory body called only when the monarch required extraordinary <strong>taxation (subsidies)</strong> or statute legislation. While MPs gathered only nine times during Elizabeth’s forty-five-year reign, parliamentary consent was constitutionally mandatory to authorize Crown taxes, granting the Commons significant financial leverage.",
           "level_4": "In the countryside, unpaid Justices of the Peace and Lords Lieutenant enforced laws and maintained order. Parliament met only when Elizabeth needed new laws or emergency tax subsidies.",
           "image": "/images/elizabeth_i_in_parliament_1559.jpg",
           "image_alt": "Contemporary engraving of Queen Elizabeth I presiding over her first Parliament in 1559",
@@ -676,7 +653,7 @@ export default {
               "text": "The Queen's Majesty strictly commandeth all Justices of the Peace within every shire of this realm diligently to assemble themselves in their quarter sessions, to inquire into all riots, unlawful assemblies, vagabonds, and breaches of the peace, and to levy the royal subsidies granted by Parliament without fear, favor, or corruption, preserving good order and justice among the common people."
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Beyond Whitehall, the Crown depended entirely on local authorities to execute royal policy across England's counties. County administration was overseen by **Lords Lieutenant**, wealthy magnates responsible for raising local militias during emergencies, and unpaid **Justices of the Peace (JPs)** drawn from the country gentry. These JPs enforced statutory law, collected taxes, repaired roads, and punished petty crime at quarterly sessions.<br><br><span class=\"para-ref\">[4.2]</span> Meanwhile, **Parliament** was an occasional advisory body called only when the monarch required extraordinary **taxation (subsidies)** or statute legislation. While MPs gathered only nine times during Elizabeth’s forty-five-year reign, parliamentary consent was constitutionally mandatory to authorize Crown taxes, granting the Commons significant financial leverage. Crown finance relied on Parliament, as extraordinary taxation was granted solely by MPs in the Commons."
+          "content": "<span class=\"para-ref\">[4.1]</span> Beyond Whitehall, the Crown depended entirely on local authorities to execute royal policy across England's counties. County administration was overseen by <strong>Lords Lieutenant</strong>, wealthy magnates responsible for raising local militias during emergencies, and unpaid <strong>Justices of the Peace (JPs)</strong> drawn from the country gentry. These JPs enforced statutory law, collected taxes, repaired roads, and punished petty crime at quarterly sessions.<br><br><span class=\"para-ref\">[4.2]</span> Meanwhile, <strong>Parliament</strong> was an occasional advisory body called only when the monarch required extraordinary <strong>taxation (subsidies)</strong> or statute legislation. While MPs gathered only nine times during Elizabeth’s forty-five-year reign, parliamentary consent was constitutionally mandatory to authorize Crown taxes, granting the Commons significant financial leverage."
         },
         {
           "stage": 5,
@@ -684,7 +661,7 @@ export default {
           "type": "narrative",
           "title": "The Catholic Pincer: The Surrender of Calais and French Troops on the Tweed (1558–1560)",
           "theme_heading": "The Catholic Pincer: The Surrender of Calais and French Troops on the Tweed (1558–1560)",
-          "text": "<span class=\"para-ref\">[5.1]</span> Beyond England's borders, Elizabeth faced an immediate military crisis from the Catholic alliance between France and Scotland. In January 1558, French forces had captured **Calais**, England's last continental possession, humiliating the nation and leaving the southern coast vulnerable to cross-Channel invasion. The loss of continental Calais confirmed England's military isolation.<br><br><span class=\"para-ref\">[5.2]</span> To the north, Mary of Guise governed Scotland with a garrison of French troops, creating a dangerous Catholic pincer around England. Mary Stuart, Queen of Scots, quartered the English royal coat of arms with the French fleur-de-lis, openly claiming the English throne. Financially exhausted, Elizabeth concluded the **Treaty of Cateau-Cambrésis (1559)**, acknowledging the loss of Calais to avoid ruinous war.",
+          "text": "<span class=\"para-ref\">[5.1]</span> In foreign affairs, England stood isolated and militarily encircled by Catholic powers. In January 1558, French forces had captured <strong>Calais</strong>, England’s last continental possession held since 1347, stripping the realm of its vital trade gateway and strategic Channel outpost.<br><br><span class=\"para-ref\">[5.2]</span> The danger was compounded on the northern border by the historic <strong>Auld Alliance</strong> between France and Scotland. Scotland was ruled by French Catholic regent <strong>Mary of Guise</strong>, who stationed French garrisons on English borders, while her daughter <strong>Mary, Queen of Scots</strong>, married to the French Dauphin, openly quartered the <strong>English royal arms</strong> on her heraldic crest, asserting herself as the lawful monarch of England.",
           "level_4": "England faced severe foreign threats after losing Calais to France in January 1558. The Auld Alliance between France and Scotland threatened England's northern border, and Mary, Queen of Scots claimed the English throne.",
           "sources": [
             {
@@ -715,7 +692,8 @@ export default {
                 "source_context": "Portrait of Queen Mary I painted by Antonis Mor at the time of her marriage to Philip of Spain. When Mary died in November 1558, England was impoverished, plagued by famine and influenza, and humiliated by the loss of Calais, its last continental possession. **Hinge Question:** To what extent did the loss of Calais and £300,000 in crown debt under Mary I severely constrain Elizabeth's early foreign policy?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[5.1]</span> In foreign affairs, England stood isolated and militarily encircled by Catholic powers. In January 1558, French forces had captured <strong>Calais</strong>, England’s last continental possession held since 1347, stripping the realm of its vital trade gateway and strategic Channel outpost.<br><br><span class=\"para-ref\">[5.2]</span> The danger was compounded on the northern border by the historic <strong>Auld Alliance</strong> between France and Scotland. Scotland was ruled by French Catholic regent <strong>Mary of Guise</strong>, who stationed French garrisons on English borders, while her daughter <strong>Mary, Queen of Scots</strong>, married to the French Dauphin, openly quartered the <strong>English royal arms</strong> on her heraldic crest, asserting herself as the lawful monarch of England."
         }
       ],
       "quiz": [
@@ -1124,7 +1102,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "£300,000 Crown Debt",
+              "clue": "England was burdened by an astronomical £300,000 Crown debt, largely run up fighting costly wars in France."
+            },
+            {
+              "term": "Antwerp Loans (14% Interest)",
+              "clue": "The Crown’s ordinary annual income was barely £286,000, forcing the government to borrow heavily from moneylenders on the Antwerp Exchange at ruinous interest rates of 14 per cent."
+            },
+            {
+              "term": "Cecil Appointed Principal Secretary",
+              "clue": "To rescue royal finances, Elizabeth immediately appointed her most trusted advisor, Sir William Cecil, as Principal Secretary, beginning a campaign to slash household expenses, sell royal lands, and bring stability to the treasury."
+            }
+          ],
+          "model_sentence": "Inheriting a staggering <strong>£300,000 Crown Debt</strong> compounded by extortionate <strong>Antwerp Loans (14% Interest)</strong>, Elizabeth acted decisively by appointing <strong>Cecil Appointed Principal Secretary</strong> to restore the nation's solvency."
         },
         {
           "stage": 2,
@@ -1140,7 +1133,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "19-Man Privy Council",
+              "clue": "Sovereign power was directed by the monarch and a small, elite Privy Council of nineteen trusted advisors who met daily to manage state finance, national defence, and foreign policy."
+            },
+            {
+              "term": "Monopolies & Royal Licences",
+              "clue": "She distributed royal patronage and monopolies—exclusive commercial licences and profitable offices—to secure noble loyalty without surrendering monarchical authority, preventing ambitious aristocrats from uniting in rebellion."
+            },
+            {
+              "term": "Factional Balance at Court",
+              "clue": "Elizabeth carefully balanced rival factions on the Privy Council—such as William Cecil and Robert Dudley—to prevent any single courtier from dominating policy."
+            }
+          ],
+          "model_sentence": "Meeting daily, the <strong>19-Man Privy Council</strong> managed administration while Elizabeth granted lucrative <strong>Monopolies & Royal Licences</strong> to preserve the delicate <strong>Factional Balance at Court</strong>."
         },
         {
           "stage": 3,
@@ -1156,7 +1164,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Papal Rejection of Anne Boleyn",
+              "clue": "The Roman Catholic Church's refusal to annul Henry VIII's marriage to Catherine of Aragon, leaving Catholic Europe regarding Elizabeth as an illegitimate child of Anne Boleyn."
+            },
+            {
+              "term": "1536 Succession Act Bar",
+              "clue": "The second succession act passed by Henry VIII that formally declared both Mary and Elizabeth illegitimate following Anne Boleyn's execution."
+            },
+            {
+              "term": "Pressure to Produce Protestant Heir",
+              "clue": "Urgent appeals from Parliament and the Privy Council imploring the unmarried Queen to marry and secure the Protestant succession against Mary Queen of Scots."
+            }
+          ],
+          "model_sentence": "Compounded by the <strong>Papal Rejection of Anne Boleyn</strong> and the legal barrier of the <strong>1536 Succession Act Bar</strong>, Elizabeth faced immense <strong>Pressure to Produce Protestant Heir</strong>."
         },
         {
           "stage": 4,
@@ -1172,7 +1195,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Unpaid Justices of the Peace",
+              "clue": "Beneath them, Justices of the Peace (JPs) drawn from the county gentry maintained daily law and order, sat as judges in quarterly court sessions, repaired roads, and collected taxes."
+            },
+            {
+              "term": "Lords Lieutenant County Militias",
+              "clue": "Each county was headed by a Lord Lieutenant, a great nobleman appointed by the Queen to govern the region and train the local militia for defence."
+            },
+            {
+              "term": "Taxation Granted Solely by MPs",
+              "clue": "Elizabeth viewed Parliament as a necessary nuisance, calling MPs only nine times during her 45-year reign, primarily to grant extraordinary taxation (subsidies) during national emergencies or wars."
+            }
+          ],
+          "model_sentence": "Relying locally on <strong>Unpaid Justices of the Peace</strong> and <strong>Lords Lieutenant County Militias</strong>, the Crown remained financially constrained by <strong>Taxation Granted Solely by MPs</strong>."
         },
         {
           "stage": 5,
@@ -1188,7 +1226,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Loss of Calais (January 1558)",
+              "clue": "In January 1558, French forces had captured Calais, England's last continental possession, humiliating the nation and leaving the southern coast vulnerable to cross-Channel invasion."
+            },
+            {
+              "term": "French Garrison Troops in Scotland",
+              "clue": "To the north, Mary of Guise governed Scotland with a garrison of French troops, creating a dangerous Catholic pincer around England."
+            },
+            {
+              "term": "Quartered English Royal Arms",
+              "clue": "Mary Stuart, Queen of Scots, quartered the English royal coat of arms with the French fleur-de-lis, openly claiming the English throne."
+            }
+          ],
+          "model_sentence": "Following the humiliating <strong>Loss of Calais (January 1558)</strong>, English security was threatened by <strong>French Garrison Troops in Scotland</strong> alongside Mary Stuart’s <strong>Quartered English Royal Arms</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -1455,14 +1508,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The Act made Elizabeth 'Supreme Governor' of the Church of England rather than 'Supreme Head'.<br><strong>Detail:</strong> All clergy and royal officials had to swear an Oath of Supremacy accepting her authority or forfeit their positions.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The title 'Supreme Governor' engineered an Erastian compromise. It established royal ecclesiastical supremacy while placating Catholics who held that only the Pope could be head of the Church, and Puritans who opposed female clerical leadership.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -1493,14 +1538,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The Injunctions were 57 practical instructions issued by William Cecil to enforce the religious settlement across all parishes.<br><strong>Detail:</strong> For example, every parish church was ordered to possess an English Bible and clergy were required to wear the surplice.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Royal Injunctions established bureaucratic surveillance over parish worship. They enforced Protestant liturgical conformity through the Great Bible while preserving traditional vestments to maintain social tranquility.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -1580,14 +1617,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>The Religious Settlement of 1559 was largely successful in establishing a pragmatic, moderate compromise (the Via Media) that achieved broad compliance among the vast majority of ordinary English parishioners. Through the Act of Uniformity and the 1559 Book of Common Prayer, Elizabeth deliberately engineered a theological ambiguity that allowed traditionalists and moderate Protestants to worship side-by-side. Crucially, the 1559 Communion service combined the wording of Edward VI’s 1549 prayer book (which implied the Catholic doctrine of transubstantiation) with that of the 1552 book (which presented Communion purely as a Protestant act of remembrance). Furthermore, Elizabeth’s calculated adoption of the title 'Supreme Governor' rather than 'Supreme Head' in the Act of Supremacy appeased conservative nobles. By tolerating outward liturgical conformity while declining to 'make windows into men's souls', the Settlement successfully averted the violent confessional civil wars that consumed contemporary France and the Netherlands.<br><br>However, it can be strongly argued that the Settlement was fundamentally unsuccessful in resolving deep ideological divisions among devout Catholics. Almost the entire Marian episcopate—all 15 bishops except the Bishop of Llandaff—refused to swear the Oath of Supremacy and were forcibly deprived of their sees. Moreover, among the landed Catholic gentry, especially in the conservative North and West, compliance was merely superficial. Devout Catholics became recusants, paying the 12d weekly fine and sheltering Marian priests who celebrated illicit Latin Masses in secret chapel chambers. This ideological fracture remained a simmering domestic danger, ultimately providing the fertile ground for the 1569 Northern Rebellion and paving the way for the Pope's formal excommunication of Elizabeth in 1570.<br><br>Furthermore, the Settlement failed to satisfy radical Protestants (Puritans), who viewed the compromise as an incomplete, dangerous half-reformation. Having spent Mary’s reign in exile in Calvinist Geneva and Zurich, returning Puritan clergy were outraged by the retention of 'popish dregs' in the 1559 Royal Injunctions. They fiercely opposed the requirement for ministers to wear the surplice, the use of wedding rings, kneeling to receive Communion, and the preservation of church decoration and bishops. This discontent erupted openly in the Vestiarian Controversy of 1566, demonstrating that the Settlement had failed to assimilate the zealous Protestant wing of the English church.<br><br>In conclusion, when assessed against the criterion of short-term civil stability, the Religious Settlement was an undeniable political triumph: it prevented civil conflict, consolidated Elizabeth’s throne, and secured passive conformity from the vast majority of the population. However, when judged against the higher criterion of achieving genuine theological reconciliation, the Settlement was unsuccessful, as it permanently alienated both committed Catholics and zealous Puritans, institutionalizing religious divisions that would destabilize the remainder of Elizabeth’s reign.</p>",
                 "verdict": "Level 4 (16/16 marks). Comprehensive, analytical, and criteria-driven evaluation directed consistently at the question. Deploys three distinct aspects of content (theological ambiguity/Via Media, Catholic recusancy/episcopal purge, Puritan discontent/Vestiarian Controversy) supported by precise historical detail, and reaches a nuanced, sustained judgement."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The historiographical debate regarding the Elizabethan Religious Settlement turns upon the distinction between institutional containment and ideological unification.<br><br>From an institutional and Erastian perspective, the Settlement was a masterpiece of political statecraft. By deliberately crafting liturgical ambiguity within the 1559 Book of Common Prayer—juxtaposing the 1549 and 1552 Eucharistic formulae—and decoupling external civic conformity from private theological conviction, Elizabeth neutralized immediate mass rebellion, securing four decades of internal peace while the rest of Western Europe disintegrated into religious slaughter.<br><br>Conversely, from a theological perspective, the Settlement was inherently unstable. It institutionalized an uneasy hybrid: a Calvinist soteriology encapsulated in the Thirty-Nine Articles grafted onto a conservative, pre-Reformation episcopal hierarchy and traditional liturgical vestments. This structural contradiction ensured that the English Church remained perpetually contested from its inception, besieged simultaneously by Catholic Counter-Reformation treason and Puritan Presbyterian insurgency.</p>",
-                "verdict": "Scholar Distinction. Masterclass in historiographical analysis distinguishing between Erastian political containment and structural theological tension."
               }
             }
           }
@@ -1671,7 +1700,7 @@ export default {
           "type": "narrative",
           "title": "A Fractured Realm: Marian Burnings, Geneva Exiles and the Search for Peace (1558–1559)",
           "theme_heading": "A Fractured Realm: Marian Burnings, Geneva Exiles and the Search for Peace (1558–1559)",
-          "text": "<span class=\"para-ref\">[1.1]</span> When Elizabeth came to the throne, England was deeply scarred by thirty years of religious turmoil. Henry VIII had broken with Rome in the 1530s, Edward VI had introduced strict Protestantism, and Mary I had brutally restored Roman Catholicism, burning nearly 300 Protestants at the stake. This rapid pendulum swing left the nation bitterly divided and on edge.<br><br><span class=\"para-ref\">[1.2]</span> Geography deepened this religious rift. In the remote North and West, conservative landowners and peasants remained fiercely loyal to the traditional Roman Catholic faith, the Latin Mass, and church decorations. In contrast, London, the South-East, and trading ports had embraced the Protestant Reformation, demanding an English Bible and a clean break from the Pope. Elizabeth’s supreme challenge was to craft a religious settlement that would bring peace and prevent a devastating civil war.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Upon her accession, Elizabeth inherited a nation bitterly polarized by decades of religious upheaval. The northern and western shires—dominated by conservative Catholic noble families—remained deeply committed to traditional Latin worship and papal authority. Conversely, London and the southeastern ports had embraced radical <strong>Protestant Reformation</strong> doctrines, fuelled by merchant trade with Europe.<br><br><span class=\"para-ref\">[1.2]</span> The country was still scarred by the trauma of Mary I’s reign, during which nearly <strong>300 Protestants were burned at the stake</strong> for heresy. Elizabeth sought to avoid European-style civil wars by formulating a pragmatic religious compromise—a \"Middle Way\" that would establish Protestant uniformity while placating moderate Catholic traditionalists.",
           "level_4": "England was deeply divided in 1558 between a Catholic north and a Protestant southeast. After Mary I's burnings of nearly 300 Protestants, Elizabeth aimed for a moderate religious compromise to avoid civil conflict.",
           "image": "/images/great_bible_frontispiece.jpg",
           "image_alt": "Frontispiece of the Great Bible in English displaying the monarch distributing the Word of God",
@@ -1707,7 +1736,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> Upon her accession, Elizabeth inherited a nation bitterly polarized by decades of religious upheaval. The northern and western shires—dominated by conservative Catholic noble families—remained deeply committed to traditional Latin worship and papal authority. Conversely, London and the southeastern ports had embraced radical **Protestant Reformation** doctrines, fuelled by merchant trade with Europe.<br><br><span class=\"para-ref\">[1.2]</span> The country was still scarred by the trauma of Mary I’s reign, during which nearly **300 Protestants were burned at the stake** for heresy. Elizabeth sought to avoid European-style civil wars by formulating a pragmatic religious compromise—a \"Middle Way\" that would establish Protestant uniformity while placating moderate Catholic traditionalists. Religious division pitted the conservative North & western gentry against radical returning Marian exiles from Geneva, while Marian bishops in the Lords opposed Protestant reform."
+          "content": "<span class=\"para-ref\">[1.1]</span> Upon her accession, Elizabeth inherited a nation bitterly polarized by decades of religious upheaval. The northern and western shires—dominated by conservative Catholic noble families—remained deeply committed to traditional Latin worship and papal authority. Conversely, London and the southeastern ports had embraced radical <strong>Protestant Reformation</strong> doctrines, fuelled by merchant trade with Europe.<br><br><span class=\"para-ref\">[1.2]</span> The country was still scarred by the trauma of Mary I’s reign, during which nearly <strong>300 Protestants were burned at the stake</strong> for heresy. Elizabeth sought to avoid European-style civil wars by formulating a pragmatic religious compromise—a \"Middle Way\" that would establish Protestant uniformity while placating moderate Catholic traditionalists."
         },
         {
           "stage": 2,
@@ -1715,7 +1744,7 @@ export default {
           "type": "narrative",
           "title": "The Crown Restored: The Act of Supremacy and the Title of Supreme Governor (1559)",
           "theme_heading": "The Crown Restored: The Act of Supremacy and the Title of Supreme Governor (1559)",
-          "text": "<span class=\"para-ref\">[2.1]</span> In May 1559, Elizabeth steered the **Act of Supremacy** through Parliament, formally establishing England’s independence from the Pope. In a brilliant political compromise, Elizabeth chose the title **\"Supreme Governor\"** of the Church of England, rather than \"Supreme Head\" as her father Henry VIII had used.<br><br><span class=\"para-ref\">[2.2]</span> This subtle difference was crucial. It comforted Catholics, who believed that only Jesus Christ or the Pope could be the earthly head of the Church, and it reassured Protestants who felt that a woman could not hold spiritual headship over holy matters. The Act required all clergy and royal officials to take an **Oath of Supremacy** swearing loyalty to Elizabeth. While all but one Catholic bishop refused and lost their positions, the overwhelming majority of ordinary parish priests—around 8,000 out of 9,000—took the oath and kept their livings.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Passed by Parliament in May 1559, the <strong>Act of Supremacy</strong> re-established England’s formal break with the Papacy in Rome. In a deliberate political compromise to appease Catholics who held the Pope as the only earthly head of the Church, Elizabeth rejected Henry VIII’s title of 'Supreme Head' and assumed the title of <strong>Supreme Governor of the Church of England</strong>.<br><br><span class=\"para-ref\">[2.2]</span> All clergy, judges, and royal officials were legally mandated to swear the <strong>Oath of Supremacy</strong>, swearing allegiance to the Queen's spiritual leadership on pain of losing their offices and facing treason charges. To enforce compliance and punish clerical disobedience, the act established the <strong>Court of High Commission</strong>.",
           "level_4": "The 1559 Act of Supremacy broke with Rome, naming Elizabeth Supreme Governor of the Church of England. All clergy and royal officials had to swear the Oath of Supremacy or lose their positions.",
           "source": {
             "id": "source_a_act_of_supremacy",
@@ -1766,7 +1795,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> Passed by Parliament in May 1559, the **Act of Supremacy** re-established England’s formal break with the Papacy in Rome. In a deliberate political compromise to appease Catholics who held the Pope as the only earthly head of the Church, Elizabeth rejected Henry VIII’s title of 'Supreme Head' and assumed the title of **Supreme Governor of the Church of England**.<br><br><span class=\"para-ref\">[2.2]</span> All clergy, judges, and royal officials were legally mandated to swear the **Oath of Supremacy**, swearing allegiance to the Queen's spiritual leadership on pain of losing their offices and facing treason charges. To enforce compliance and punish clerical disobedience, the act established the **Court of High Commission**. Under the Act of Supremacy, all Marian bishops who refused the oath were deprived of their sees, establishing Elizabeth as Supreme Governor."
+          "content": "<span class=\"para-ref\">[2.1]</span> Passed by Parliament in May 1559, the <strong>Act of Supremacy</strong> re-established England’s formal break with the Papacy in Rome. In a deliberate political compromise to appease Catholics who held the Pope as the only earthly head of the Church, Elizabeth rejected Henry VIII’s title of 'Supreme Head' and assumed the title of <strong>Supreme Governor of the Church of England</strong>.<br><br><span class=\"para-ref\">[2.2]</span> All clergy, judges, and royal officials were legally mandated to swear the <strong>Oath of Supremacy</strong>, swearing allegiance to the Queen's spiritual leadership on pain of losing their offices and facing treason charges. To enforce compliance and punish clerical disobedience, the act established the <strong>Court of High Commission</strong>."
         },
         {
           "stage": 3,
@@ -1774,7 +1803,7 @@ export default {
           "type": "narrative",
           "title": "The Altar of Compromise: The Act of Uniformity, Liturgy and One-Shilling Recusancy (1559)",
           "theme_heading": "The Altar of Compromise: The Act of Uniformity, Liturgy and One-Shilling Recusancy (1559)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Passed alongside Supremacy, the **Act of Uniformity** dictated the exact appearance of every church and established a single, uniform order of service across the entire country. Every parish church was legally required to use the new 1559 **Book of Common Prayer** in English, ending the Latin Catholic Mass.<br><br><span class=\"para-ref\">[3.2]</span> To keep both sides from rebelling, the Prayer Book contained clever theological compromises. During Communion, the wording for receiving the bread and wine was deliberately ambiguous: Protestants could view it as a spiritual commemoration of Christ’s sacrifice, while traditional Catholics could still believe in the miracle of transubstantiation. At the same time, churches were permitted to keep moderate decorations, candles, and priests were required to wear traditional white surplices, reassuring conservative worshippers that their local church felt familiar.",
+          "text": "<span class=\"para-ref\">[3.1]</span> The <strong>Act of Uniformity (May 1559)</strong> established a mandatory national framework for church worship across England. It enforced a single, standardized <strong>Book of Common Prayer</strong> written in English, blending Protestant theology with ambiguous wording regarding the Eucharist to allow Catholics to interpret communion in their own way.<br><br><span class=\"para-ref\">[3.2]</span> Attendance at Anglican parish church services on Sundays and holy days was made compulsory; those who refused were labelled <strong>recusants</strong> and fined <strong>one shilling (12d)</strong> per missed service. However, under the controversial <strong>Ornaments Rubric</strong>, church decorations and traditional clerical <strong>vestments</strong> from the 1548 Edwardian Reformation were retained, provoking immediate outrage among radical Puritans.",
           "level_4": "The 1559 Act of Uniformity introduced an English Book of Common Prayer and made Sunday church attendance compulsory, fining absent recusants one shilling. It kept traditional vestments to placate Catholics.",
           "sources": [
             {
@@ -1805,7 +1834,7 @@ export default {
               "text": "The bill of uniformity for the service and sacraments passeth with extreme difficulty in the Upper House. The bishops oppose it stubbornly as heresy. If two of the chief prelates [the Bishops of Winchester and Lincoln] be not sequestered in the Tower before the division, the votes will stand equal and the Queen's reformation shall be overthrown."
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> The **Act of Uniformity (May 1559)** established a mandatory national framework for church worship across England. It enforced a single, standardized **Book of Common Prayer** written in English, blending Protestant theology with ambiguous wording regarding the Eucharist to allow Catholics to interpret communion in their own way.<br><br><span class=\"para-ref\">[3.2]</span> Attendance at Anglican parish church services on Sundays and holy days was made compulsory; those who refused were labelled **recusants** and fined **one shilling (12d)** per missed service. However, under the controversial **Ornaments Rubric**, church decorations and traditional clerical **vestments** from the 1548 Edwardian Reformation were retained, provoking immediate outrage among radical Puritans. The Act of Uniformity imposed a one-shilling recusancy fine for missing Sunday church and used deliberate communion ambiguity to accommodate both beliefs. The Act of Uniformity imposed a one-shilling recusancy fine for missing Sunday church and used deliberate communion ambiguity to accommodate both beliefs."
+          "content": "<span class=\"para-ref\">[3.1]</span> The <strong>Act of Uniformity (May 1559)</strong> established a mandatory national framework for church worship across England. It enforced a single, standardized <strong>Book of Common Prayer</strong> written in English, blending Protestant theology with ambiguous wording regarding the Eucharist to allow Catholics to interpret communion in their own way.<br><br><span class=\"para-ref\">[3.2]</span> Attendance at Anglican parish church services on Sundays and holy days was made compulsory; those who refused were labelled <strong>recusants</strong> and fined <strong>one shilling (12d)</strong> per missed service. However, under the controversial <strong>Ornaments Rubric</strong>, church decorations and traditional clerical <strong>vestments</strong> from the 1548 Edwardian Reformation were retained, provoking immediate outrage among radical Puritans."
         },
         {
           "stage": 4,
@@ -1813,7 +1842,7 @@ export default {
           "type": "narrative",
           "title": "The Royal Injunctions: Crucifix Bans, Clerical Surplices and Church Visitations (1559)",
           "theme_heading": "The Royal Injunctions: Crucifix Bans, Clerical Surplices and Church Visitations (1559)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued 57 **Royal Injunctions** to ensure every parish enforced the new laws. Royal commissioners visited every diocese to inspect churches, administer the Oath of Supremacy, and ensure that every church bought an English Bible. Images, pilgrimages, and false miracles were strictly forbidden, and clergy required special licences to preach to stop religious rabble-rousing.<br><br><span class=\"para-ref\">[4.2]</span> Church attendance on Sundays and holy days was made strictly compulsory. Anyone who refused to attend church was labelled a **recusant** and fined **one shilling**—roughly a week's pay for a common labourer. However, Elizabeth famously declared that she had no desire to \"make windows into men's souls.\" During the first decade of her reign, recusancy fines were rarely collected with harshness, allowing quiet Catholic families to conform outwardly without fear of persecution.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued <strong>57 Royal Injunctions</strong> in the name of <strong>Queen Elizabeth I</strong> to provide precise administrative instructions for the day-to-day enforcement of the religious settlement. Clergy were instructed to preach royal supremacy at least once every quarter and report anyone praising foreign papal jurisdiction. Every parish church was legally mandated to purchase an <strong>English Bible</strong> accessible to all parishioners.<br><br><span class=\"para-ref\">[4.2]</span> To eradicate traditional Catholic idolatry, pilgrimages, fake miracles, and candle-burning before images were strictly prohibited. Furthermore, clerical marriage was tightly regulated, requiring prospective brides to be vetted and approved by two Justices of the Peace and the local bishop.",
           "level_4": "The 57 Royal Injunctions issued in Queen Elizabeth's name detailed how churches must operate, requiring an English Bible in every parish and banning pilgrimages and image worship. Clergy had to preach royal supremacy quarterly.",
           "source": {
             "id": "source_b_book_of_common_prayer",
@@ -1869,7 +1898,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued **57 Royal Injunctions** in the name of **Queen Elizabeth I** to provide precise administrative instructions for the day-to-day enforcement of the religious settlement. Clergy were instructed to preach royal supremacy at least once every quarter and report anyone praising foreign papal jurisdiction. Every parish church was legally mandated to purchase an **English Bible** accessible to all parishioners.<br><br><span class=\"para-ref\">[4.2]</span> To eradicate traditional Catholic idolatry, pilgrimages, fake miracles, and candle-burning before images were strictly prohibited. Furthermore, clerical marriage was tightly regulated, requiring prospective brides to be vetted and approved by two Justices of the Peace and the local bishop. The 1559 Royal Injunctions set fifty-seven royal directives enforcing clerical vestments and an English Bible in every parish church. The 1559 Royal Injunctions set fifty-seven royal directives enforcing clerical vestments and an English Bible in every parish church."
+          "content": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued <strong>57 Royal Injunctions</strong> in the name of <strong>Queen Elizabeth I</strong> to provide precise administrative instructions for the day-to-day enforcement of the religious settlement. Clergy were instructed to preach royal supremacy at least once every quarter and report anyone praising foreign papal jurisdiction. Every parish church was legally mandated to purchase an <strong>English Bible</strong> accessible to all parishioners.<br><br><span class=\"para-ref\">[4.2]</span> To eradicate traditional Catholic idolatry, pilgrimages, fake miracles, and candle-burning before images were strictly prohibited. Furthermore, clerical marriage was tightly regulated, requiring prospective brides to be vetted and approved by two Justices of the Peace and the local bishop."
         },
         {
           "stage": 5,
@@ -1877,7 +1906,7 @@ export default {
           "type": "narrative",
           "title": "The Pulpit of the Realm: Church Courts, Royal Homilies and Community Feasts (1559–1560s)",
           "theme_heading": "The Pulpit of the Realm: Church Courts, Royal Homilies and Community Feasts (1559–1560s)",
-          "text": "<span class=\"para-ref\">[5.1]</span> The Elizabethan regime dispatched royal commissioners on nationwide **Visitations in 1559** to inspect parish churches and administer the Oath of Supremacy. Approximately 400 clergy members resigned or were deprived of their livings rather than conform, but the vast majority of ordinary priests took the oath, securing national religious continuity.<br><br><span class=\"para-ref\">[5.2]</span> The Church also maintained social discipline through local **church courts**. These courts settled community disputes, granted marriage licences, inspected wills, and punished moral offences such as drunkenness, slander, and adultery. Moral offences supervised by courts ensured that parish churches remained effective instruments of royal order and community cohesion.",
+          "text": "<span class=\"para-ref\">[5.1]</span> The Elizabethan regime dispatched royal commissioners on nationwide <strong>Visitations in 1559</strong> to inspect parish churches and administer the Oath of Supremacy. While roughly <strong>400 clergy resigned or were deprived</strong> of their livings, the vast majority of ordinary parish priests accepted the settlement to retain their livelihoods.<br><br><span class=\"para-ref\">[5.2]</span> However, the senior Catholic hierarchy refused to compromise: all Marian bishops except one rejected the Oath and were dismissed, allowing Elizabeth to appoint loyal Protestant reformers to key bishoprics. The <strong>Church of England</strong> served as an essential engine of royal authority, utilizing churchwardens and ecclesiastical courts to supervise community morals, distribute poor relief, and reinforce state loyalty from the pulpit.",
           "level_4": "Royal Visitations enforced the settlement: nearly all Marian bishops refused the Oath and were removed, though most parish clergy complied. The Church of England became a vital instrument for maintaining local social order.",
           "sources": [
             {
@@ -1908,7 +1937,7 @@ export default {
               "text": "We understand with profound grief that Elizabeth, the pretended Queen of England, hath abolished the Holy Sacrifice of the Mass, replaced the sacred Latin liturgy with a heretical vernacular service, and compelled Catholic clergy under severe penalties to swear allegiance to her monstrous spiritual supremacy."
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> The Elizabethan regime dispatched royal commissioners on nationwide **Visitations in 1559** to inspect parish churches and administer the Oath of Supremacy. While roughly **400 clergy resigned or were deprived** of their livings, the vast majority of ordinary parish priests accepted the settlement to retain their livelihoods.<br><br><span class=\"para-ref\">[5.2]</span> However, the senior Catholic hierarchy refused to compromise: all Marian bishops except one rejected the Oath and were dismissed, allowing Elizabeth to appoint loyal Protestant reformers to key bishoprics. The **Church of England** served as an essential engine of royal authority, utilizing churchwardens and ecclesiastical courts to supervise community morals, distribute poor relief, and reinforce state loyalty from the pulpit. To enforce the settlement, 125 visitation commissioners conducted tours, using parish church court supervision and resulting in four hundred clergy resignations."
+          "content": "<span class=\"para-ref\">[5.1]</span> The Elizabethan regime dispatched royal commissioners on nationwide <strong>Visitations in 1559</strong> to inspect parish churches and administer the Oath of Supremacy. While roughly <strong>400 clergy resigned or were deprived</strong> of their livings, the vast majority of ordinary parish priests accepted the settlement to retain their livelihoods.<br><br><span class=\"para-ref\">[5.2]</span> However, the senior Catholic hierarchy refused to compromise: all Marian bishops except one rejected the Oath and were dismissed, allowing Elizabeth to appoint loyal Protestant reformers to key bishoprics. The <strong>Church of England</strong> served as an essential engine of royal authority, utilizing churchwardens and ecclesiastical courts to supervise community morals, distribute poor relief, and reinforce state loyalty from the pulpit."
         }
       ],
       "quiz": [
@@ -2317,7 +2346,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Conservative North & Western Gentry",
+              "clue": "In the remote North and West, conservative landowners and peasants remained fiercely loyal to the traditional Roman Catholic faith, the Latin Mass, and church decorations."
+            },
+            {
+              "term": "Radical Returning Marian Exiles",
+              "clue": "Hundreds of zealous English Protestants who had fled Mary I's burnings to Geneva and Zurich, returning in 1558 demanding a radically purified Calvinist Church."
+            },
+            {
+              "term": "Marian Bishops in Lords",
+              "clue": "The conservative Catholic bishops appointed by Mary I who held twenty-six seats in the House of Lords and fiercely resisted Elizabeth's Protestant religious legislation."
+            }
+          ],
+          "model_sentence": "Divided between the <strong>Conservative North & Western Gentry</strong> and <strong>Radical Returning Marian Exiles</strong>, Elizabeth had to overcome the resistance of <strong>Marian Bishops in Lords</strong>."
         },
         {
           "stage": 2,
@@ -2333,7 +2377,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "‘Supreme Governor’ Compromise Title",
+              "clue": "In a brilliant political compromise, Elizabeth chose the title \"Supreme Governor\" of the Church of England, rather than \"Supreme Head\" as her father Henry VIII had used."
+            },
+            {
+              "term": "Compulsory Oath for Clergy",
+              "clue": "The Act required all clergy and royal officials to take an Oath of Supremacy swearing loyalty to Elizabeth."
+            },
+            {
+              "term": "All Marian Bishops Deprived",
+              "clue": "The dismissal and house arrest of all but one Catholic bishop in 1559 for refusing to take the Oath of Supremacy recognizing Elizabeth as Supreme Governor."
+            }
+          ],
+          "model_sentence": "Adopting the <strong>‘Supreme Governor’ Compromise Title</strong>, the 1559 Act of Supremacy enforced a <strong>Compulsory Oath for Clergy</strong> that resulted in <strong>All Marian Bishops Deprived</strong> of their sees."
         },
         {
           "stage": 3,
@@ -2349,7 +2408,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Compulsory 1559 Prayer Book",
+              "clue": "Every parish church was legally required to use the new 1559 Book of Common Prayer in English, ending the Latin Catholic Mass."
+            },
+            {
+              "term": "One-Shilling Recusancy Fine",
+              "clue": "The financial penalty of twelve pence (roughly a week's wage for a laborer) imposed under the 1559 Act of Uniformity for failing to attend Sunday church."
+            },
+            {
+              "term": "Deliberate Communion Ambiguity",
+              "clue": "During Communion, the wording for receiving the bread and wine was deliberately ambiguous: Protestants could view it as a spiritual commemoration of Christ’s sacrifice, while traditional Catholics could still believe in the miracle of transubstantiation."
+            }
+          ],
+          "model_sentence": "Enacting the <strong>Compulsory 1559 Prayer Book</strong> and a <strong>One-Shilling Recusancy Fine</strong>, the Act of Uniformity crafted a <strong>Deliberate Communion Ambiguity</strong> to placate moderates."
         },
         {
           "stage": 4,
@@ -2365,7 +2439,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Fifty-Seven Royal Directives",
+              "clue": "The comprehensive Royal Injunctions issued by Elizabeth in 1559 regulating clergy conduct, preaching licenses, church furnishings, and Bible ownership in English."
+            },
+            {
+              "term": "English Bible in Every Church",
+              "clue": "Royal commissioners visited every diocese to inspect churches, administer the Oath of Supremacy, and ensure that every church bought an English Bible."
+            },
+            {
+              "term": "Pilgrimages & Fake Miracles Banned",
+              "clue": "Images, pilgrimages, and false miracles were strictly forbidden, and clergy required special licences to preach to stop religious rabble-rousing."
+            }
+          ],
+          "model_sentence": "Issuing <strong>Fifty-Seven Royal Directives</strong> that placed an <strong>English Bible in Every Church</strong>, the Royal Injunctions ensured that <strong>Pilgrimages & Fake Miracles Banned</strong> were enforced."
         },
         {
           "stage": 5,
@@ -2381,7 +2470,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "125 Visitation Commissioners",
+              "clue": "The Elizabethan regime dispatched royal commissioners on nationwide Visitations in 1559 to inspect parish churches and administer the Oath of Supremacy."
+            },
+            {
+              "term": "Parish Church Court Supervision",
+              "clue": "Moral offences supervised by courts ensured that parish churches remained effective instruments of royal order and community cohesion."
+            },
+            {
+              "term": "Four Hundred Clergy Resignations",
+              "clue": "The estimated four hundred Catholic parish priests and university fellows who chose to resign their livings rather than swear the 1559 Oath of Supremacy."
+            }
+          ],
+          "model_sentence": "Dispatched across England, <strong>125 Visitation Commissioners</strong> enforced <strong>Parish Church Court Supervision</strong>, resulting in approximately <strong>Four Hundred Clergy Resignations</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -2643,14 +2747,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> One key feature was the Vestiarian Controversy of 1566 over clerical dress.<br><strong>Detail:</strong> Thirty-seven London priests were dismissed for refusing to wear the white linen surplice, which they condemned as 'popish rags'.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Vestiarian Controversy exposed fundamental puritan resistance to adiaphora. Rejecting royal authority over indifferent ceremonies, non-conforming ministers prioritised scriptural purity over crown uniformity, precipitating the Lambeth deprivations.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -2681,14 +2777,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Pope Pius V issued the Papal Bull *Regnans in Excelsis* in 1570, excommunicating Queen Elizabeth as a heretic.<br><strong>Detail:</strong> It released English Catholics from their allegiance to Elizabeth and commanded them to disobey her laws under pain of excommunication.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Catholic challenge was fundamentally internationalized by the 1570 Papal Bull. By declaring Elizabeth a heretic and absolving subjects of allegiance, Rome forced English Catholics to choose between religious loyalty and treason against the Crown.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -2768,14 +2856,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>One primary reason Puritans challenged the Religious Settlement was the persistence of ritualistic Catholic practices and vestments, which they viewed as idolatrous and unscriptural. Influenced by radical Calvinist theology, Puritans believed that any practice not explicitly commanded in the Bible was an offense to God. They fiercely objected to clerical vestments—particularly the white linen surplice—condemning them as 'popish rags' and relics of the Antichrist. This discontent culminated in the Vestiarian Controversy of 1566, when Archbishop Matthew Parker issued the 'Book of Advertisements' enforcing clerical dress. When 37 London clergymen chose to forfeit their livelihoods rather than conform, it demonstrated that Puritans placed divine scriptural command above royal liturgical mandates, provoking an open confrontation with the Crown.<br><br>Furthermore, Puritans challenged the Settlement because of the profound theological expectations shaped by their experiences as Marian exiles. During the reign of Mary I, hundreds of English Protestants had fled to European Calvinist strongholds such as Geneva, Zurich, and Frankfurt. There, they experienced churches that were completely cleansed of Catholic hierarchy, ornamentation, and ritual. When they returned upon Elizabeth's accession in 1558, they anticipated establishing a thoroughly purified Calvinist church. Instead, Elizabeth’s 1559 Settlement preserved crucifixes, church organs, kneeling at Communion, and traditional feast days to appease conservative Catholics. Feeling betrayed by this compromise, Puritan ministers and members of Parliament actively campaigned to purge what they viewed as dangerous remnants of Roman superstition.<br><br>Finally, Puritans challenged the Settlement because they fundamentally opposed the hierarchy and governance of the Elizabethan Church. While Elizabeth insisted upon the episcopal system of bishops and archbishops to enforce royal authority and crown control, radical Puritans advocated for a Presbyterian structure modelled on Geneva. Under Presbyterianism, the church would be governed by local elders and elected assemblies, stripping the Queen of her power to appoint bishops and dictate liturgy. By questioning the legitimacy of bishops and royal authority over spiritual matters, Puritans were not merely seeking liturgical reform, but mounting a direct constitutional challenge to the Queen's royal prerogative and Supreme Governorship.</p>",
                 "verdict": "Level 4 (12/12 marks). Excellent analytical explanation covering three distinct aspects (Vestiarian Controversy/scriptural purity, Marian exile expectations, Presbyterian challenge to episcopacy) with precise evidence and consistent PEEL links back to the question stem."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Puritan insurgency of the 1560s exposed the irreconcilable ontological divide between the Erastian statecraft of the Tudor monarchy and the covenantal theology of radical Reformed Protestantism.<br><br>For Elizabeth, religious uniformity was an instrument of civic cohesion; external obedience in matters of adiaphora (indifferent ceremonies) was a non-negotiable duty of royal subjecthood. For returning Marian exiles steeped in Bezan and Bullingerian covenantal theology, however, the survival of Catholic visual culture represented an ongoing spiritual pollution that jeopardized England's status as an elect nation.<br><br>Consequently, what commenced as a parochial squabble over linen vestments rapidly transmuted into an ecclesiological assault upon episcopal hegemony. By seeking to substitute royal conciliar oversight with Presbyterian synods, Puritans struck at the very core of Tudor monarchical sovereignty, transforming liturgical dissent into a constitutional crisis.</p>",
-                "verdict": "Scholar Distinction. Masterful exploration of Erastian civic uniformity versus Calvinist covenantal theology."
               }
             }
           }
@@ -2859,7 +2939,7 @@ export default {
           "type": "narrative",
           "title": "The Puritan Challenge: Beliefs, Demands and the Crucifix Controversy (1559–1563)",
           "theme_heading": "The Puritan Challenge: Beliefs, Demands and the Crucifix Controversy (1559–1563)",
-          "text": "<span class=\"para-ref\">[1.1]</span> Despite Elizabeth’s hopes for a peaceful compromise, her Religious Settlement immediately came under fire from radical Protestants known as **Puritans**. Influenced by John Calvin’s strict Reformation in Geneva, Puritans believed the Elizabethan Church was half-reformed and still contaminated by Catholic superstition. They demanded that the Church be completely \"purified\" of everything not explicitly commanded in the Bible.<br><br><span class=\"para-ref\">[1.2]</span> Puritans wanted all Catholic rituals swept away. They demanded the abolition of bishops, arguing that church congregations should be governed democratically by elected elders (presbyteries). They wanted church walls whitewashed, stained glass smashed, organs silenced, and altars replaced with simple wooden tables. Puritans also led a strict moral crusade against popular leisure, demanding the banning of theatres, gambling, cock-fighting, and Sunday drinking.",
+          "text": "<span class=\"para-ref\">[1.1]</span> The religious settlement was immediately contested by zealous English Protestants known as <strong>Puritans</strong>. Having fled England to escape Mary I's burnings, these <strong>Marian Exiles</strong> returned from Geneva and Zurich deeply influenced by John Calvin's radical theology. They demanded that the Church of England be completely purified of all remaining \"popish dregs\" and Catholic superstitions.<br><br><span class=\"para-ref\">[1.2]</span> Puritans fiercely objected to traditional church hierarchy, particularly the authority of bishops, with radical <strong>Presbyterians</strong> demanding a democratic church governed by local elders. They rejected kneeling to receive communion, the use of wedding rings, and music in church, arguing that only practices explicitly authorized in scripture were permissible.",
           "level_4": "Returning Marian exiles, known as Puritans, demanded the complete removal of Catholic practices from the Church of England. They rejected bishops, organ music, and unbiblical traditions like wedding rings.",
           "sources": [
             {
@@ -2890,7 +2970,7 @@ export default {
               "text": "That little silver cross of ill-omened origin still maintains its place in the Queen's chapel. Wretched me! This thing will soon be taken for an example and set up in parish churches everywhere. I have already spoken freely against it; would that it were dashed to pieces and reduced to powder, for the people will think it an idol!"
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> The religious settlement was immediately contested by zealous English Protestants known as **Puritans**. Having fled England to escape Mary I's burnings, these **Marian Exiles** returned from Geneva and Zurich deeply influenced by John Calvin's radical theology. They demanded that the Church of England be completely purified of all remaining \"popish dregs\" and Catholic superstitions.<br><br><span class=\"para-ref\">[1.2]</span> Puritans fiercely objected to traditional church hierarchy, particularly the authority of bishops, with radical **Presbyterians** demanding a democratic church governed by local elders. They rejected kneeling to receive communion, the use of wedding rings, and music in church, arguing that only practices explicitly authorized in scripture were permissible. Strong Geneva Calvinist influence inspired Puritan demands to abolish holy days, which Elizabeth rejected as an intolerable threat to royal prerogative."
+          "content": "<span class=\"para-ref\">[1.1]</span> The religious settlement was immediately contested by zealous English Protestants known as <strong>Puritans</strong>. Having fled England to escape Mary I's burnings, these <strong>Marian Exiles</strong> returned from Geneva and Zurich deeply influenced by John Calvin's radical theology. They demanded that the Church of England be completely purified of all remaining \"popish dregs\" and Catholic superstitions.<br><br><span class=\"para-ref\">[1.2]</span> Puritans fiercely objected to traditional church hierarchy, particularly the authority of bishops, with radical <strong>Presbyterians</strong> demanding a democratic church governed by local elders. They rejected kneeling to receive communion, the use of wedding rings, and music in church, arguing that only practices explicitly authorized in scripture were permissible."
         },
         {
           "stage": 2,
@@ -2898,7 +2978,7 @@ export default {
           "type": "narrative",
           "title": "The Vestments Controversy: Archbishop Parker, the Surplice Dispute and Puritan Defiance (1566)",
           "theme_heading": "The Vestments Controversy: Archbishop Parker, the Surplice Dispute and Puritan Defiance (1566)",
-          "text": "<span class=\"para-ref\">[2.1]</span> Puritan opposition quickly exploded into open defiance over church symbols and dress. During the **Crucifix Controversy**, Elizabeth demanded that a silver crucifix remain in the Royal Chapel and ordered crosses in every parish church to soothe Catholic worshippers. Puritan bishops protested vigorously, threatening to resign en masse. Lacking enough educated Protestant clergymen to replace them, Elizabeth was forced to back down, allowing crucifixes to be removed from local churches.<br><br><span class=\"para-ref\">[2.2]</span> In 1566, the conflict flared again in the **Vestment Controversy**. Elizabeth insisted that priests wear the traditional white linen surplice during services, but radical Puritans condemned them as \"popish rags.\" In response, Archbishop Matthew Parker issued the **Book of Advertisements**, ordering all clergy to conform. When 110 London priests were summoned to Lambeth Palace to model the required vestments, **37 refused** and were immediately stripped of their jobs, proving that Elizabeth would not allow Puritan defiance to weaken royal authority.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Clashes between Elizabeth and Puritan reformers erupted over church visuals and clerical dress. Elizabeth insisted on retaining a silver <strong>crucifix</strong> in her Royal Chapel, provoking threats of resignation from newly appointed Puritan bishops who viewed crucifixes as idol worship; Elizabeth eventually compromised by removing the chapel cross. A more serious confrontation unfolded over clerical attire in 1566.<br><br><span class=\"para-ref\">[2.2]</span> Radical Puritans refused to wear the traditional white linen <strong>surplice</strong>, denouncing it as the livery of the Antichrist. In response, Archbishop of Canterbury Matthew Parker issued the <strong>Book of Advertisements (1566)</strong>, mandating uniform clerical dress. When 110 London ministers were summoned to Lambeth Palace to demonstrate compliance, <strong>37 ministers refused and were deprived</strong> of their pulpits.",
           "level_4": "Puritans protested Elizabeth's retention of church crucifixes and ornate vestments. In 1566, Archbishop Parker insisted all clergy wear the white surplice, resulting in 37 London ministers being stripped of their livings.",
           "source": {
             "id": "source_a_regnans_in_excelsis",
@@ -2953,7 +3033,7 @@ export default {
               "text": "Thirty-seven ministers of London, being called before Archbishop Parker at Lambeth Palace and commanded to wear the square cap, gown, and linen surplice, did stubbornly refuse, crying out: 'We cannot consent to wear the livery of the Antichrist and the rags of popery!' Whereupon they were instantly suspended from their livings and forbidden to preach, leaving London parishes without divine service."
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> Clashes between Elizabeth and Puritan reformers erupted over church visuals and clerical dress. Elizabeth insisted on retaining a silver **crucifix** in her Royal Chapel, provoking threats of resignation from newly appointed Puritan bishops who viewed crucifixes as idol worship; Elizabeth eventually compromised by removing the chapel cross. A more serious confrontation unfolded over clerical attire in 1566.<br><br><span class=\"para-ref\">[2.2]</span> Radical Puritans refused to wear the traditional white linen **surplice**, denouncing it as the livery of the Antichrist. In response, Archbishop of Canterbury Matthew Parker issued the **Book of Advertisements (1566)**, mandating uniform clerical dress. When 110 London ministers were summoned to Lambeth Palace to demonstrate compliance, **37 ministers refused and were deprived** of their pulpits. During the Vestarian Controversy, thirty-seven London priests were sacked for refusing Archbishop Parker's Book of Advertisements dress codes. During the Vestarian Controversy, thirty-seven London priests were sacked for refusing Archbishop Parker's Book of Advertisements dress codes."
+          "content": "<span class=\"para-ref\">[2.1]</span> Clashes between Elizabeth and Puritan reformers erupted over church visuals and clerical dress. Elizabeth insisted on retaining a silver <strong>crucifix</strong> in her Royal Chapel, provoking threats of resignation from newly appointed Puritan bishops who viewed crucifixes as idol worship; Elizabeth eventually compromised by removing the chapel cross. A more serious confrontation unfolded over clerical attire in 1566.<br><br><span class=\"para-ref\">[2.2]</span> Radical Puritans refused to wear the traditional white linen <strong>surplice</strong>, denouncing it as the livery of the Antichrist. In response, Archbishop of Canterbury Matthew Parker issued the <strong>Book of Advertisements (1566)</strong>, mandating uniform clerical dress. When 110 London ministers were summoned to Lambeth Palace to demonstrate compliance, <strong>37 ministers refused and were deprived</strong> of their pulpits."
         },
         {
           "stage": 3,
@@ -2961,7 +3041,7 @@ export default {
           "type": "narrative",
           "title": "The Catholic Stronghold: Northern Magnates, Manor Altars and Church Papists (1559–1568)",
           "theme_heading": "The Catholic Stronghold: Northern Magnates, Manor Altars and Church Papists (1559–1568)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Domestic Catholic opposition was widespread but initially cautious. In the conservative northern counties and Lancashire, powerful magnates such as the Earls of Northumberland and Westmorland remained loyal to the traditional Catholic Latin mass. Many Catholic families maintained secret chapels in their country manor houses, hiding outlawed Catholic priests in concealed priests' holes.<br><br><span class=\"para-ref\">[3.2]</span> For the first decade of her reign, Elizabeth adopted a pragmatic policy of political conciliation. Moderate Catholics who attended compulsory parish services became known as **Church Papists**, and lax local JPs in the north frequently overlooked recusancy. Elizabeth avoided creating martyrs who might provoke open Catholic rebellion, famously resolving that she had \"no desire to make windows into men's souls\" as long as they remained outwardly loyal subjects.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Domestic Catholic opposition was widespread but initially cautious. In the conservative northern counties and Lancashire, powerful magnates such as the Earls of Northumberland and Westmorland quietly sheltered Catholic priests.<br><br><span class=\"para-ref\">[3.2]</span> Many wealthy families became <strong>\"Church Papists\"</strong>, attending Anglican Sunday services to pay lip service to the law and avoid fines, while secretly attending Latin <strong>Mass</strong> in private household chapels. Because Elizabeth declared she had no desire to \"make windows into men's souls\", early enforcement was deliberately lenient: the one-shilling recusancy fines were rarely collected systematically from the gentry, and Pope Pius IV refrained from instructing English Catholics to actively rebel during the first decade of her reign.",
           "level_4": "Most English Catholics initially conformed as Church Papists, attending Anglican services outwardly to avoid fines while practising Catholic rites in secret. Elizabeth kept enforcement lenient to prevent unrest.",
           "source": {
             "id": "source_b_edmund_campion",
@@ -3012,7 +3092,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> Domestic Catholic opposition was widespread but initially cautious. In the conservative northern counties and Lancashire, powerful magnates such as the Earls of Northumberland and Westmorland quietly sheltered Catholic priests.<br><br><span class=\"para-ref\">[3.2]</span> Many wealthy families became **\"Church Papists\"**, attending Anglican Sunday services to pay lip service to the law and avoid fines, while secretly attending Latin **Mass** in private household chapels. Because Elizabeth declared she had no desire to \"make windows into men's souls\", early enforcement was deliberately lenient: the one-shilling recusancy fines were rarely collected systematically from the gentry, and Pope Pius IV refrained from instructing English Catholics to actively rebel during the first decade of her reign. Elizabeth adopted a tolerant stance, refusing to \"make windows into men’s souls\", while lax local JPs in the North turned a blind eye to Catholic non-attendance. Elizabeth adopted a tolerant stance, refusing to \"make windows into men’s souls\", while lax local JPs in the North turned a blind eye to Catholic non-attendance."
+          "content": "<span class=\"para-ref\">[3.1]</span> Domestic Catholic opposition was widespread but initially cautious. In the conservative northern counties and Lancashire, powerful magnates such as the Earls of Northumberland and Westmorland quietly sheltered Catholic priests.<br><br><span class=\"para-ref\">[3.2]</span> Many wealthy families became <strong>\"Church Papists\"</strong>, attending Anglican Sunday services to pay lip service to the law and avoid fines, while secretly attending Latin <strong>Mass</strong> in private household chapels. Because Elizabeth declared she had no desire to \"make windows into men's souls\", early enforcement was deliberately lenient: the one-shilling recusancy fines were rarely collected systematically from the gentry, and Pope Pius IV refrained from instructing English Catholics to actively rebel during the first decade of her reign."
         },
         {
           "stage": 4,
@@ -3020,7 +3100,7 @@ export default {
           "type": "narrative",
           "title": "The Counter-Reformation Shadow: Alba's Tercios, Douai Seminaries and the Jesuit Mission (1562–1568)",
           "theme_heading": "The Counter-Reformation Shadow: Alba's Tercios, Douai Seminaries and the Jesuit Mission (1562–1568)",
-          "text": "<span class=\"para-ref\">[4.1]</span> Following the failed Revolt of the Northern Earls, the Catholic threat took a terrifying international turn. In February 1570, **Pope Pius V** issued the historic papal bull ***Regnans in Excelsis***, formally excommunicating Elizabeth and condemning her as a heretic and a usurper.<br><br><span class=\"para-ref\">[4.2]</span> The papal bull commanded all faithful Roman Catholics to withdraw their loyalty from Elizabeth, declaring that any English Catholic who continued to obey her laws would also face excommunication. This fatal decree put English Catholics in an impossible position: they could no longer be both loyal English patriots and faithful Roman Catholics. To Elizabeth’s government, Catholic worship was no longer treated as religious non-conformity—it was now viewed as outright treason against the Crown.",
+          "text": "<span class=\"para-ref\">[4.1]</span> England's geopolitical security deteriorated dramatically in the 1560s as European religious conflicts intensified. In 1562, civil warfare erupted between Catholics and Huguenots in the <strong>French Wars of Religion</strong>, removing France as an immediate invasion threat but alarming England by demonstrating how religion could rip a kingdom apart. Far more dangerous was the situation across the English Channel in the Spanish Netherlands.<br><br><span class=\"para-ref\">[4.2]</span> In 1566, Dutch Calvinists launched iconoclastic riots against Spanish rule. King Philip II responded in 1567 by dispatching the ruthless <strong>Duke of Alba</strong> with an elite force of <strong>10,000 Spanish troops</strong> to crush the rebellion. Alba's presence on the Channel coast placed a formidable Catholic army within striking distance of England.",
           "level_4": "Religious wars in France showed the danger of civil conflict, while in 1567 Philip II sent the Duke of Alba and 10,000 Spanish troops to crush Dutch rebels, placing an invasion army on England's doorstep.",
           "image": "/units/eee/assets/portraits/alba.jpg",
           "image_alt": "Portrait of Fernando Álvarez de Toledo, 3rd Duke of Alba, Spanish military commander",
@@ -3055,7 +3135,7 @@ export default {
               "text": "Our purpose in erecting this seminary at Douai in Flanders is to draw together English Catholic scholars in exile, to preserve the ancient faith in our native language, and to train zealous young priests who shall return to England secretly to administer the sacraments, reconcile lapsed believers, and rescue Catholic souls from heresy, even at the peril of death."
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> England's geopolitical security deteriorated dramatically in the 1560s as European religious conflicts intensified. In 1562, civil warfare erupted between Catholics and Huguenots in the **French Wars of Religion**, removing France as an immediate invasion threat but alarming England by demonstrating how religion could rip a kingdom apart. Far more dangerous was the situation across the English Channel in the Spanish Netherlands.<br><br><span class=\"para-ref\">[4.2]</span> In 1566, Dutch Calvinists launched iconoclastic riots against Spanish rule. King Philip II responded in 1567 by dispatching the ruthless **Duke of Alba** with an elite force of **10,000 Spanish troops** to crush the rebellion. Alba's presence on the Channel coast placed a formidable Catholic army within striking distance of England. The Duke of Alba arrived in the Netherlands with 10,000 troops, establishing the Council of Troubles whose brutality alarmed Protestant England. The Duke of Alba arrived in the Netherlands with 10,000 troops, establishing the Council of Troubles whose brutality alarmed Protestant England."
+          "content": "<span class=\"para-ref\">[4.1]</span> England's geopolitical security deteriorated dramatically in the 1560s as European religious conflicts intensified. In 1562, civil warfare erupted between Catholics and Huguenots in the <strong>French Wars of Religion</strong>, removing France as an immediate invasion threat but alarming England by demonstrating how religion could rip a kingdom apart. Far more dangerous was the situation across the English Channel in the Spanish Netherlands.<br><br><span class=\"para-ref\">[4.2]</span> In 1566, Dutch Calvinists launched iconoclastic riots against Spanish rule. King Philip II responded in 1567 by dispatching the ruthless <strong>Duke of Alba</strong> with an elite force of <strong>10,000 Spanish troops</strong> to crush the rebellion. Alba's presence on the Channel coast placed a formidable Catholic army within striking distance of England."
         },
         {
           "stage": 5,
@@ -3063,7 +3143,7 @@ export default {
           "type": "narrative",
           "title": "The Genoese Loan: Spanish Silver, Trade Embargoes and the Edge of War (1568–1569)",
           "theme_heading": "The Genoese Loan: Spanish Silver, Trade Embargoes and the Edge of War (1568–1569)",
-          "text": "<span class=\"para-ref\">[5.1]</span> Abroad, the Catholic **Counter-Reformation** gathered fierce momentum as the Papacy urged Europe's Catholic superpowers to extinguish Protestantism. Fortunately for Elizabeth, France was paralyzed from 1562 by its own bloody French Wars of Religion, preventing French Catholic forces from mounting an invasion across the Channel.<br><br><span class=\"para-ref\">[5.2]</span> However, a deadly storm was brewing in the Spanish Netherlands, directly across the Channel. When Dutch Protestants rebelled against Spanish rule, King Philip II dispatched the ruthless **Duke of Alba** with an army of 10,000 battle-hardened Spanish troops in 1567 to crush the revolt. Alba established the notorious \"Council of Blood,\" executing thousands of Protestant rebels. With a massive Spanish invasion force stationed just a short sail from the English coast, Elizabeth faced the terrifying prospect of a foreign Catholic invasion.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Anglo-Spanish relations reached a breaking point in the winter of 1568 over the <strong>Genoese Loan</strong>. Four Spanish transport ships carrying <strong>400,000 florins (gold and silver)</strong> to pay Alba's soldiers in the Netherlands were chased by French privateers and forced to seek shelter in Southampton and Plymouth.<br><br><span class=\"para-ref\">[5.2]</span> Discovering that the bullion belonged to Genoese bankers and had not yet been formally transferred to Spain, William Cecil advised Elizabeth to confiscate the entire treasure and take over the loan herself. Furious at this act of piracy, Alba seized all English merchant ships and goods in Antwerp, and Philip II imposed a total <strong>trade embargo</strong> on English cloth, plunging the London mercantile community into economic depression and pushing both nations toward open hostility.",
           "level_4": "In 1568, Elizabeth seized 400,000 florins of silver from Spanish ships sheltering in English ports. In retaliation, Spain placed an embargo on English cloth, severely escalating hostility between England and Spain.",
           "sources": [
             {
@@ -3094,7 +3174,7 @@ export default {
               "text": "Whereas five Spanish vessels carrying 400,000 florins of silver borrowed from Genoese bankers have taken refuge from Huguenot privateers in the ports of Plymouth and Southampton: let the bullion be brought ashore and safely secured in the Tower of London. Since the money belongeth to the merchants of Genoa until delivered to the Duke of Alba in Antwerp, Her Majesty hath decided to take up the loan herself."
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> Anglo-Spanish relations reached a breaking point in the winter of 1568 over the **Genoese Loan**. Four Spanish transport ships carrying **400,000 florins (gold and silver)** to pay Alba's soldiers in the Netherlands were chased by French privateers and forced to seek shelter in Southampton and Plymouth.<br><br><span class=\"para-ref\">[5.2]</span> Discovering that the bullion belonged to Genoese bankers and had not yet been formally transferred to Spain, William Cecil advised Elizabeth to confiscate the entire treasure and take over the loan herself. Furious at this act of piracy, Alba seized all English merchant ships and goods in Antwerp, and Philip II imposed a total **trade embargo** on English cloth, plunging the London mercantile community into economic depression and pushing both nations toward open hostility. When Spanish ships carrying £85,000 Italian bullion sought storm shelter in English ports, the Queen claimed the Italian bank loan, provoking a Spanish trade embargo. When Spanish ships carrying £85,000 Italian bullion sought storm shelter in English ports, the Queen claimed the Italian bank loan, provoking a Spanish trade embargo."
+          "content": "<span class=\"para-ref\">[5.1]</span> Anglo-Spanish relations reached a breaking point in the winter of 1568 over the <strong>Genoese Loan</strong>. Four Spanish transport ships carrying <strong>400,000 florins (gold and silver)</strong> to pay Alba's soldiers in the Netherlands were chased by French privateers and forced to seek shelter in Southampton and Plymouth.<br><br><span class=\"para-ref\">[5.2]</span> Discovering that the bullion belonged to Genoese bankers and had not yet been formally transferred to Spain, William Cecil advised Elizabeth to confiscate the entire treasure and take over the loan herself. Furious at this act of piracy, Alba seized all English merchant ships and goods in Antwerp, and Philip II imposed a total <strong>trade embargo</strong> on English cloth, plunging the London mercantile community into economic depression and pushing both nations toward open hostility."
         }
       ],
       "quiz": [
@@ -3501,7 +3581,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Geneva Calvinist Influence",
+              "clue": "Influenced by John Calvin’s strict Reformation in Geneva, Puritans believed the Elizabethan Church was half-reformed and still contaminated by Catholic superstition."
+            },
+            {
+              "term": "Demand to Abolish Holy Days",
+              "clue": "Puritan attempts in the 1563 Convocation to eliminate saints' feast days, organ music, and kneeling at communion as remnants of Catholic 'papistry'."
+            },
+            {
+              "term": "Threat to Royal Prerogative",
+              "clue": "Elizabeth's fierce defense of her monarchical authority, forbidding Parliament and Puritans from debating church settlement reforms without royal permission."
+            }
+          ],
+          "model_sentence": "Influenced by <strong>Geneva Calvinist Influence</strong>, radical Puritans presented a <strong>Demand to Abolish Holy Days</strong>, which the Queen condemned as an unacceptable <strong>Threat to Royal Prerogative</strong>."
         },
         {
           "stage": 2,
@@ -3517,7 +3612,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Compulsory Clergy Surplices",
+              "clue": "The requirement in the 1566 Book of Advertisements that all ministers wear white surplices during services, sparking thirty-seven London clergy dismissals."
+            },
+            {
+              "term": "White Linen Surplice Requirement",
+              "clue": "Elizabeth insisted that priests wear the traditional white linen surplice during services, but radical Puritans condemned them as \"popish rags.\" In response, Archbishop Matthew Parker issued the Book of Advertisements, ordering all clergy to conform."
+            },
+            {
+              "term": "Thirty-Seven London Priests Sacked",
+              "clue": "When 110 London priests were summoned to Lambeth Palace to model the required vestments, 37 refused and were immediately stripped of their jobs, proving that Elizabeth would not allow Puritan defiance to weaken royal authority."
+            }
+          ],
+          "model_sentence": "The Queen's insistence on <strong>Compulsory Clergy Surplices</strong> under the <strong>White Linen Surplice Requirement</strong> culminated in <strong>Thirty-Seven London Priests Sacked</strong> during the Vestments Controversy."
         },
         {
           "stage": 3,
@@ -3533,7 +3643,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Church Papists Attending Services",
+              "clue": "Moderate Catholics who attended compulsory parish services became known as Church Papists, and lax local JPs in the north frequently overlooked recusancy."
+            },
+            {
+              "term": "Lax Local JPs in North",
+              "clue": "Moderate Catholics who attended compulsory parish services became known as Church Papists, and lax local JPs in the north frequently overlooked recusancy."
+            },
+            {
+              "term": "Tolerant ‘Windows Into Men’s Souls’",
+              "clue": "Elizabeth avoided creating martyrs who might provoke open Catholic rebellion, famously resolving that she had \"no desire to make windows into men's souls\" as long as they remained outwardly loyal subjects."
+            }
+          ],
+          "model_sentence": "While many were <strong>Church Papists Attending Services</strong> and protected by <strong>Lax Local JPs in North</strong>, Elizabeth maintained a <strong>Tolerant ‘Windows Into Men’s Souls’</strong> policy in her early reign."
         },
         {
           "stage": 4,
@@ -3549,7 +3674,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "French Wars of Religion (1562)",
+              "clue": "The outbreak of brutal civil warfare between French Catholics and Huguenot Protestants that temporarily prevented France from invading Protestant England."
+            },
+            {
+              "term": "10,000 Spanish Troops in Netherlands",
+              "clue": "The elite Spanish Army of Flanders dispatched under the Duke of Alba in 1567 to crush Dutch Protestant rebels directly across the English Channel."
+            },
+            {
+              "term": "Council of Troubles Brutality",
+              "clue": "The ruthless military tribunal established by the Duke of Alba that executed thousands of suspected Dutch rebels and heretics, nicknamed the 'Council of Blood'."
+            }
+          ],
+          "model_sentence": "While the <strong>French Wars of Religion (1562)</strong> distracted France, the arrival of <strong>10,000 Spanish Troops in Netherlands</strong> brought the <strong>Council of Troubles Brutality</strong> to England's doorstep."
         },
         {
           "stage": 5,
@@ -3565,7 +3705,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "£85,000 Italian Bullion Storm Shelter",
+              "clue": "Four Genoese ships carrying 400,000 florins intended to pay Alba's Spanish troops seeking shelter from privateers in Plymouth and Southampton in 1568."
+            },
+            {
+              "term": "Queen Claims Italian Bank Loan",
+              "clue": "Elizabeth's audacious legal manoeuvre impounding the Genoese bullion, arguing that since the gold belonged to Italian bankers and not Spain, she would borrow it herself."
+            },
+            {
+              "term": "Alba Imposes English Trade Embargo",
+              "clue": "The retaliatory trade sanctions imposed by the Duke of Alba seizing English merchant ships in Antwerp, severely damaging London's cloth export market."
+            }
+          ],
+          "model_sentence": "When stormy seas forced an <strong>£85,000 Italian Bullion Storm Shelter</strong> into English ports, the <strong>Queen Claims Italian Bank Loan</strong> manoeuvre provoked Alba to enforce the <strong>Alba Imposes English Trade Embargo</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -3835,14 +3990,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Mary was the great-granddaughter of Henry VII through his eldest daughter, Margaret Tudor.<br><strong>Detail:</strong> Because Catholics viewed Elizabeth as illegitimate, they believed Mary was the rightful, legitimate Catholic heir to the English throne.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Mary Stuart's dynastic claim was rooted in unimpeachable legitimate descent and primogeniture. Under Catholic canon law, Mary possessed a superior hereditary title to the English throne, presenting an enduring constitutional threat to Elizabeth.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -3873,14 +4020,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Elizabeth established an inquiry at York and Westminster to investigate whether Mary plotted the murder of Lord Darnley.<br><strong>Detail:</strong> The inquiry used the disputed Casket Letters to reach a 'not proven' verdict, allowing Elizabeth to keep Mary detained under house arrest without condemning an anointed queen.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Relations between the rival sovereigns were defined by legal impasse. Elizabeth utilized the 1568 York conference not to deliver justice, but to maintain a diplomatic equilibrium that neutralized Mary's claim while avoiding open war with Scotland or France.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -3960,14 +4099,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>The arrival of Mary, Queen of Scots in May 1568 at Workington was undeniably a profound catalyst for domestic instability, as it provided disaffected English Catholics with an immediate, legitimate, and physically present alternative monarch. Previously, Catholic opposition had lacked a unified leader and a credible dynastic successor. Mary’s sudden presence transformed theoretical Catholic grievances into active political conspiracies. Most notably, it inspired the 1569 Norfolk Marriage Plot, in which Thomas Howard, the Duke of Norfolk—England’s premier peer—conspired with courtiers, foreign ambassadors, and the Earls of Northumberland and Westmorland to marry Mary and force Elizabeth to name her successor. This direct threat to the royal prerogative exposed deep factional fractures at court and created widespread anxiety regarding a Catholic restoration.<br><br>However, it can be strongly argued that the primary cause of instability in 1568–69 was the deep-seated political, economic, and religious alienation of the ancient Catholic nobility in the North of England. Long before Mary crossed the Solway Firth, the Earls of Northumberland and Westmorland resented the relentless expansion of Tudor centralisation under William Cecil. Elizabeth had systematically stripped these magnates of their traditional feudal authority, replacing them with southern Protestant loyalists like Lord Hunsdon and James Pilkington, the militant Bishop of Durham. Economically, Northumberland had been deprived of lucrative copper mines found on his estates. Therefore, the simmering resentment of the Northern nobility created a combustible domestic climate that was ready to explode irrespective of Mary’s arrival.<br><br>Furthermore, international religious tensions and foreign intervention significantly amplified instability during these critical years. In 1567, King Philip II of Spain dispatched the Duke of Alba with 10,000 veteran Spanish troops to the nearby Netherlands to crush the Dutch Protestant rebellion. The presence of a formidable Catholic army across the Channel terrified the Elizabethan regime. This panic escalated dramatically in November 1568 when Elizabeth seized Spanish ships carrying 400,000 florins of Genoese loan bullion that had sheltered in English ports, prompting an immediate Spanish trade embargo. These geopolitical flashpoints convinced English Catholics that foreign military assistance was imminent, emboldening domestic plotters to challenge Elizabeth.<br><br>In conclusion, while Mary’s arrival acted as the immediate spark that crystallized opposition around a viable Catholic figurehead, it was not the sole or fundamental cause of instability. Without the preexisting socio-political alienation of the northern magnates and the menacing geopolitical threat of Alba’s army, Mary would have remained merely an isolated Scottish fugitive. It was the volatile combination of long-standing northern feudal grievances and external Spanish pressure that turned Mary's arrival into a catastrophic crisis of state.</p>",
                 "verdict": "Level 4 (16/16 marks). Exceptional criteria-driven evaluation weighing three distinct aspects (Mary's arrival/Norfolk Plot, Northern feudal alienation, Alba's army/Genoese bullion crisis) with rich factual evidence and a sustained, nuanced verdict."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The crisis of 1568–69 illustrates the structural volatility of the mid-Elizabethan polity, wherein domestic dynastic insecurity became entangled with European confessional warfare.<br><br>Mary Stuart's arrival at Workington functioned as a constitutional solvent. By presenting an anointed, legitimate Catholic sovereign within English borders, Mary demolished the regime’s central ideological defense—that obedience to Elizabeth was the only safeguard against civil chaos. Her presence galvanized the reactionary aristocratic faction led by Norfolk, Arundel, and Pembroke, who sought to purge Cecil’s Protestant administrative clique.<br><br>Yet, attributing the instability solely to Mary overlooks the profound structural disaffection of the northern periphery. The Northern Revolt of 1569 was essentially the final gasp of northern bastard feudalism against the fiscal, religious, and administrative encroachments of the bureaucratic Tudor state. Mary was the catalyst, but the material conditions of rebellion—regional alienation, Catholic recusancy, and Spanish military proximity—were already fully assembled.</p>",
-                "verdict": "Scholar Distinction. Brilliant structural historiography synthesizing bastard feudalism, conciliar factionalism, and confessional geopolitics."
               }
             }
           }
@@ -4052,7 +4183,7 @@ export default {
           "type": "narrative",
           "title": "Two Anointed Queens: The Scottish Succession, Bloodline Rivalry and the French Pincer (1560–1565)",
           "theme_heading": "Two Anointed Queens: The Scottish Succession, Bloodline Rivalry and the French Pincer (1560–1565)",
-          "text": "<span class=\"para-ref\">[1.1]</span> The greatest dynastic threat to Elizabeth arrived in the form of her charismatic cousin, **Mary Stuart**, Queen of Scots. Born in 1542, Mary was the granddaughter of Henry VIII’s elder sister, **Margaret Tudor**, giving her an undisputed royal lineage. To Roman Catholics who rejected Henry VIII's marriage to Anne Boleyn, Elizabeth was illegitimate, making Mary the rightful, legitimate Queen of England and a natural Catholic figurehead.<br><br><span class=\"para-ref\">[1.2]</span> Raised in France and widowed following the death of King Francis II, Mary returned to Edinburgh in 1561 to rule a Scotland dominated by Protestant lords. In 1565, Mary dramatically strengthened her dynastic claim by marrying her English Catholic cousin, **Henry Stuart, Lord Darnley**, who was also descended from Margaret Tudor. This marriage united the two strongest alternative claims to the English throne, creating an alarming threat on Elizabeth's northern border.",
+          "text": "<span class=\"para-ref\">[1.1]</span> <strong>Mary, Queen of Scots</strong>, represented an existential dynastic challenge to Elizabeth I. As the granddaughter of Henry VIII's elder sister Margaret Tudor, Mary held an unassailable hereditary claim to the English crown, and Roman Catholics regarded her as the legitimate rightful sovereign. Following the death of her French husband King Francis II in 1560, Mary returned to rule Presbyterian Scotland.<br><br><span class=\"para-ref\">[1.2]</span> In July 1565, Mary dramatically strengthened her dynastic position by marrying her Catholic cousin, <strong>Henry Stuart, Lord Darnley</strong>, who was also a Tudor descendant. This union united the two strongest Catholic claims to the English throne, stoking intense panic in Whitehall about the succession.",
           "level_4": "Mary, Queen of Scots held a strong Tudor claim to the English throne and was viewed by Catholics as the rightful queen. Her 1565 marriage to Lord Darnley reinforced her dynastic challenge to Elizabeth.",
           "source": {
             "id": "source_a_mary_queen_of_scots",
@@ -4107,7 +4238,8 @@ export default {
                 "source_context": "Mary Stuart fled Scotland across the Solway Firth into England in May 1568 after Scottish Protestant lords rebelled and forced her abdication. As a devout Catholic with a direct bloodline claim to the English crown, she immediately became the natural figurehead for Catholic plots to overthrow Elizabeth. **Hinge Question:** Why did Mary Queen of Scots' arrival in England in May 1568 place Elizabeth in an impossible political and diplomatic dilemma?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[1.1]</span> <strong>Mary, Queen of Scots</strong>, represented an existential dynastic challenge to Elizabeth I. As the granddaughter of Henry VIII's elder sister Margaret Tudor, Mary held an unassailable hereditary claim to the English crown, and Roman Catholics regarded her as the legitimate rightful sovereign. Following the death of her French husband King Francis II in 1560, Mary returned to rule Presbyterian Scotland.<br><br><span class=\"para-ref\">[1.2]</span> In July 1565, Mary dramatically strengthened her dynastic position by marrying her Catholic cousin, <strong>Henry Stuart, Lord Darnley</strong>, who was also a Tudor descendant. This union united the two strongest Catholic claims to the English throne, stoking intense panic in Whitehall about the succession."
         },
         {
           "stage": 2,
@@ -4115,7 +4247,7 @@ export default {
           "type": "narrative",
           "title": "Kirk o' Field: Gunpowder Treason, Bothwell's Ambition and Darnley's Murder (1567)",
           "theme_heading": "Kirk o' Field: Gunpowder Treason, Bothwell's Ambition and Darnley's Murder (1567)",
-          "text": "<span class=\"para-ref\">[2.1]</span> In 1565, Mary made a fateful political blunder by marrying her handsome, ambitious cousin, **Lord Darnley**, securing the royal line with the birth of a son, Prince James. However, Darnley quickly proved to be violent, drunken, and intensely jealous. In March 1566, Darnley and a group of Protestant nobles burst into Mary’s private chambers at Holyrood Palace and brutally stabbed her Italian secretary, David Rizzio, fifty-six times in front of the pregnant Queen.<br><br><span class=\"para-ref\">[2.2]</span> The marriage was shattered beyond repair. In February 1567, Darnley’s residence at Kirk o’ Field was blown apart by barrels of gunpowder, and Darnley’s body was found strangled in the orchard. Outrage swept Scotland when Mary married the chief suspect in the murder, the **Earl of Bothwell**, just three months later. Convinced that Mary was complicit in her husband's murder, the Scottish Protestant nobility rose in furious armed rebellion.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Mary Queen of Scots' personal reign in Scotland quickly unraveled through marital discord and scandal. Darnley was arrogant, violent, and jealous of Mary's Italian private secretary, David Rizzio, whom Darnley and Protestant lords murdered in Mary's presence at Holyrood Palace in 1566. Marital relations collapsed completely.<br><br><span class=\"para-ref\">[2.2]</span> In the early hours of <strong>10 February 1567</strong>, the house at <strong>Kirk o' Field</strong> where Darnley was recuperating from smallpox was destroyed in a massive gunpowder explosion; Darnley’s body was discovered strangled in an adjoining orchard. Public suspicion immediately fell upon the ambitious <strong>Earl of Bothwell</strong>, whom Mary shockingly married in May 1567 under Protestant rites, provoking outrage across Scotland and Europe.",
           "level_4": "In February 1567, Mary's unpopular husband Lord Darnley was murdered at Kirk o' Field. When Mary married the chief suspect, the Earl of Bothwell, Scottish nobles rebelled against her.",
           "sources": [
             {
@@ -4151,7 +4283,7 @@ export default {
           "image_alt": "Portrait of Henry Stuart, Lord Darnley, second husband of Mary Queen of Scots",
           "caption": "Lord Darnley: Mary's second husband whose mysterious gunpowder assassination at Kirk o' Field in 1567 destroyed her Scottish rule.",
           "isReversed": true,
-          "content": "<span class=\"para-ref\">[2.1]</span> Mary Queen of Scots' personal reign in Scotland quickly unraveled through marital discord and scandal. Darnley was arrogant, violent, and jealous of Mary's Italian private secretary, David Rizzio, whom Darnley and Protestant lords murdered in Mary's presence at Holyrood Palace in 1566. Marital relations collapsed completely.<br><br><span class=\"para-ref\">[2.2]</span> In the early hours of **10 February 1567**, the house at **Kirk o' Field** where Darnley was recuperating from smallpox was destroyed in a massive gunpowder explosion; Darnley’s body was discovered strangled in an adjoining orchard. Public suspicion immediately fell upon the ambitious **Earl of Bothwell**, whom Mary shockingly married in May 1567 under Protestant rites, provoking outrage across Scotland and Europe. Scottish Protestant rebellion and public outrage over the Bothwell marriage forced Mary's abdication at Carberry Hill. Scottish Protestant rebellion and public outrage over the Bothwell marriage forced Mary's abdication at Carberry Hill."
+          "content": "<span class=\"para-ref\">[2.1]</span> Mary Queen of Scots' personal reign in Scotland quickly unraveled through marital discord and scandal. Darnley was arrogant, violent, and jealous of Mary's Italian private secretary, David Rizzio, whom Darnley and Protestant lords murdered in Mary's presence at Holyrood Palace in 1566. Marital relations collapsed completely.<br><br><span class=\"para-ref\">[2.2]</span> In the early hours of <strong>10 February 1567</strong>, the house at <strong>Kirk o' Field</strong> where Darnley was recuperating from smallpox was destroyed in a massive gunpowder explosion; Darnley’s body was discovered strangled in an adjoining orchard. Public suspicion immediately fell upon the ambitious <strong>Earl of Bothwell</strong>, whom Mary shockingly married in May 1567 under Protestant rites, provoking outrage across Scotland and Europe."
         },
         {
           "stage": 3,
@@ -4159,7 +4291,7 @@ export default {
           "type": "narrative",
           "title": "Lochleven to the Solway: Abdication, Island Dungeon and Mary's Desperate Flight (1567–1568)",
           "theme_heading": "Lochleven to the Solway: Abdication, Island Dungeon and Mary's Desperate Flight (1567–1568)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Defeated by rebel lords at Carberry Hill, Mary was imprisoned in the isolated island fortress of **Lochleven Castle**. Under intense intimidation, she was forced on 24 July 1567 to sign deeds of **abdication** in favour of her one-year-old infant son, who was crowned King **James VI**, with her Protestant half-brother, the Earl of Moray, ruling as regent.<br><br><span class=\"para-ref\">[3.2]</span> In May 1568, Mary pulled off a daring escape from the castle, gathered a small force of loyal Catholic supporters, but was decisively routed at the Battle of Langside. Desperate and ignoring the warnings of her closest advisors, Mary climbed into a small fishing boat and sailed across the Solway Firth, landing at **Workington in Cumberland** on 16 May 1568. Mary believed her \"sister Queen\" Elizabeth would welcome her with open arms and provide an army to reconquer Scotland.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Scottish Protestant lords rose in armed rebellion against Mary and Bothwell, confronting the Queen's forces at <strong>Carberry Hill</strong> in June 1567. Abandoned by her troops, Mary surrendered while Bothwell fled into exile.<br><br><span class=\"para-ref\">[3.2]</span> Imprisoned in the island fortress of <strong>Lochleven Castle</strong>, Mary was subjected to intense intimidation and forced on 24 July 1567 to sign deeds of <strong>abdication</strong> in favour of her one-year-old infant son, who was crowned King <strong>James VI</strong>, with Protestant Earl of Moray ruling as regent. However, with the aid of loyal supporters, Mary made a daring escape from Lochleven in May 1568, raised a 6,000-man army, but suffered decisive military defeat at the <strong>Battle of Langside</strong>.",
           "level_4": "Mary was imprisoned at Lochleven Castle in 1567 and forced to abdicate for her baby son, James VI. After escaping in May 1568, her forces were defeated at Langside, forcing her to flee.",
           "sources": [
             {
@@ -4184,7 +4316,7 @@ export default {
               "text": "We, Mary, by the grace of God Queen of Scots, being by long sickness and grievous travail so vexed and weary of government that our frail body and spirit can no longer endure the weight thereof, do freely resign and give over the Crown and royal estate of this realm to our dearest son, Prince James, and ordain our brother, James, Earl of Moray, to be Regent."
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> Scottish Protestant lords rose in armed rebellion against Mary and Bothwell, confronting the Queen's forces at **Carberry Hill** in June 1567. Abandoned by her troops, Mary surrendered while Bothwell fled into exile.<br><br><span class=\"para-ref\">[3.2]</span> Imprisoned in the island fortress of **Lochleven Castle**, Mary was subjected to intense intimidation and forced on 24 July 1567 to sign deeds of **abdication** in favour of her one-year-old infant son, who was crowned King **James VI**, with Protestant Earl of Moray ruling as regent. However, with the aid of loyal supporters, Mary made a daring escape from Lochleven in May 1568, raised a 6,000-man army, but suffered decisive military defeat at the **Battle of Langside**. Fleeing Scotland in a fishing boat crossing to Workington, Mary became an anointed monarch under house arrest at Carlisle Castle."
+          "content": "<span class=\"para-ref\">[3.1]</span> Scottish Protestant lords rose in armed rebellion against Mary and Bothwell, confronting the Queen's forces at <strong>Carberry Hill</strong> in June 1567. Abandoned by her troops, Mary surrendered while Bothwell fled into exile.<br><br><span class=\"para-ref\">[3.2]</span> Imprisoned in the island fortress of <strong>Lochleven Castle</strong>, Mary was subjected to intense intimidation and forced on 24 July 1567 to sign deeds of <strong>abdication</strong> in favour of her one-year-old infant son, who was crowned King <strong>James VI</strong>, with Protestant Earl of Moray ruling as regent. However, with the aid of loyal supporters, Mary made a daring escape from Lochleven in May 1568, raised a 6,000-man army, but suffered decisive military defeat at the <strong>Battle of Langside</strong>."
         },
         {
           "stage": 4,
@@ -4192,7 +4324,7 @@ export default {
           "type": "narrative",
           "title": "The York Inquiry: The Mysterious Casket Letters and Cecil's Stalemate (1568–1569)",
           "theme_heading": "The York Inquiry: The Mysterious Casket Letters and Cecil's Stalemate (1568–1569)",
-          "text": "<span class=\"para-ref\">[4.1]</span> Following Mary’s arrival in England, Elizabeth ordered an official judicial conference at **York and Westminster (1568–69)** to investigate the murder of Lord Darnley. Scottish Protestant regents produced the disputed **Casket Letters**—eight French casket love letters and sonnets allegedly written by Mary to Bothwell, proving her complicity in the murder.<br><br><span class=\"para-ref\">[4.2]</span> Mary's defence insisted the letters were complete Protestant forgeries, but Mary was refused direct cross-examination before the commissioners. Refusing to validate the rebellion of Scottish subjects against an anointed queen, Elizabeth declared an inconclusive \"not proven\" verdict: this lack of a guilty verdict justified Mary's continued detention without formally executing her.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Fleeing Scotland, Mary crossed the Solway Firth in an open fishing boat, landing at <strong>Workington in Cumberland on 16 May 1568</strong>. Her arrival in England plunged Elizabeth into a severe constitutional dilemma: executing or restoring Mary would provoke foreign intervention, yet releasing her would provide English Catholics with an inspiring leader. To buy time, Elizabeth convened an official inquiry at <strong>York and Westminster (1568–69)</strong> to investigate Darnley’s murder.<br><br><span class=\"para-ref\">[4.2]</span> The Scottish Regent Moray produced eight love letters and sonnets—the controversial <strong>Casket Letters</strong>—allegedly proving Mary's complicity in Darnley's death. Unwilling to declare a fellow anointed queen guilty of murder, Elizabeth concluded with a deliberate <strong>\"not proven\" verdict</strong>, keeping Mary detained in legal limbo.",
           "level_4": "Mary fled to England in May 1568. At the York Inquiry, Moray presented the Casket Letters to accuse Mary of murder; Elizabeth returned a 'not proven' verdict to keep Mary prisoner without formal conviction.",
           "source": {
             "id": "source_b_francis_walsingham",
@@ -4237,7 +4369,7 @@ export default {
               "text": "Extract from the alleged letter of Mary to Bothwell: 'I must have your love, else let me die... You have made me dissemble so far that I have horror at it. Blame me not if I obey you to bring him [Darnley] to Glasgow. You force me to a deceitful play... He suspecteth greatly, but I shall bring him to Kirk o' Field, where he shall be at your disposal.'"
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Fleeing Scotland, Mary crossed the Solway Firth in an open fishing boat, landing at **Workington in Cumberland on 16 May 1568**. Her arrival in England plunged Elizabeth into a severe constitutional dilemma: executing or restoring Mary would provoke foreign intervention, yet releasing her would provide English Catholics with an inspiring leader. To buy time, Elizabeth convened an official inquiry at **York and Westminster (1568–69)** to investigate Darnley’s murder.<br><br><span class=\"para-ref\">[4.2]</span> The Scottish Regent Moray produced eight love letters and sonnets—the controversial **Casket Letters**—allegedly proving Mary's complicity in Darnley's death. Unwilling to declare a fellow anointed queen guilty of murder, Elizabeth concluded with a deliberate **\"not proven\" verdict**, keeping Mary detained in legal limbo. At the York Conference, Elizabeth ordered no verdict on the Casket Letters, which justified Mary's continued detention without direct cross-examination. At the York Conference, Elizabeth ordered no verdict on the Casket Letters, which justified Mary's continued detention without direct cross-examination."
+          "content": "<span class=\"para-ref\">[4.1]</span> Fleeing Scotland, Mary crossed the Solway Firth in an open fishing boat, landing at <strong>Workington in Cumberland on 16 May 1568</strong>. Her arrival in England plunged Elizabeth into a severe constitutional dilemma: executing or restoring Mary would provoke foreign intervention, yet releasing her would provide English Catholics with an inspiring leader. To buy time, Elizabeth convened an official inquiry at <strong>York and Westminster (1568–69)</strong> to investigate Darnley’s murder.<br><br><span class=\"para-ref\">[4.2]</span> The Scottish Regent Moray produced eight love letters and sonnets—the controversial <strong>Casket Letters</strong>—allegedly proving Mary's complicity in Darnley's death. Unwilling to declare a fellow anointed queen guilty of murder, Elizabeth concluded with a deliberate <strong>\"not proven\" verdict</strong>, keeping Mary detained in legal limbo."
         },
         {
           "stage": 5,
@@ -4245,7 +4377,7 @@ export default {
           "type": "narrative",
           "title": "The Gilded Cage: Bolton Castle, Northern Vigilance and the Threat to Whitehall (1569)",
           "theme_heading": "The Gilded Cage: Bolton Castle, Northern Vigilance and the Threat to Whitehall (1569)",
-          "text": "<span class=\"para-ref\">[5.1]</span> Following the inquiry, Mary was placed under honourable confinement in remote aristocratic estates, principally under the custody of **George Talbot, Earl of Shrewsbury**, at Tutbury Castle and Sheffield Manor. While guarded securely, Mary’s presence in England acted as an immediate magnet for northern Catholic discontent.<br><br><span class=\"para-ref\">[5.2]</span> In 1569, disaffected Catholic nobles devised the **Duke of Norfolk court marriage plot**, scheming to marry England’s premier peer to Mary and restore her to the Scottish throne. When Elizabeth discovered and forbade the marriage, the crisis triggered the armed Revolt of the Northern Earls.",
+          "text": "<span class=\"para-ref\">[5.1]</span> With the inquiry concluded, Mary was placed under honourable confinement in remote aristocratic estates, principally under the custody of <strong>George Talbot, Earl of Shrewsbury</strong>, at <strong>Tutbury Castle</strong> and Sheffield Manor. While Elizabeth sought to treat her cousin with royal dignity, Mary’s presence on English soil acted as a permanent catalyst for domestic Catholic conspiracy.<br><br><span class=\"para-ref\">[5.2]</span> William Cecil warned that Mary was a dangerous internal \"Trojan horse\" around whom disaffected northern magnates and foreign Catholic powers would inevitably coalesce. By the autumn of 1569, Mary had become the focal point of a treasonous conspiracy that would erupt into the Revolt of the Northern Earls.",
           "level_4": "Mary was held under house arrest under the Earl of Shrewsbury at Tutbury Castle. Her continued presence in England gave disgruntled Catholic nobles a figurehead to plot against Elizabeth.",
           "sources": [
             {
@@ -4270,7 +4402,7 @@ export default {
               "text": "This Queen of Scots hath a charming and eloquent tongue; she hath also a great wit and courage. The northern papists do greatly reverence and flock to her. If she remain long in this shire, she will stir up a perilous rebellion. Her presence here is a firebrand in the thatch of the realm; she must be removed farther from the Scottish border and kept under rigorous surveillance."
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> With the inquiry concluded, Mary was placed under honourable confinement in remote aristocratic estates, principally under the custody of **George Talbot, Earl of Shrewsbury**, at **Tutbury Castle** and Sheffield Manor. While Elizabeth sought to treat her cousin with royal dignity, Mary’s presence on English soil acted as a permanent catalyst for domestic Catholic conspiracy.<br><br><span class=\"para-ref\">[5.2]</span> William Cecil warned that Mary was a dangerous internal \"Trojan horse\" around whom disaffected northern magnates and foreign Catholic powers would inevitably coalesce. By the autumn of 1569, Mary had become the focal point of a treasonous conspiracy that would erupt into the Revolt of the Northern Earls. The Duke of Norfolk court marriage plot collapsed, but Mary remained a permanent magnet for northern Catholic discontent."
+          "content": "<span class=\"para-ref\">[5.1]</span> With the inquiry concluded, Mary was placed under honourable confinement in remote aristocratic estates, principally under the custody of <strong>George Talbot, Earl of Shrewsbury</strong>, at <strong>Tutbury Castle</strong> and Sheffield Manor. While Elizabeth sought to treat her cousin with royal dignity, Mary’s presence on English soil acted as a permanent catalyst for domestic Catholic conspiracy.<br><br><span class=\"para-ref\">[5.2]</span> William Cecil warned that Mary was a dangerous internal \"Trojan horse\" around whom disaffected northern magnates and foreign Catholic powers would inevitably coalesce. By the autumn of 1569, Mary had become the focal point of a treasonous conspiracy that would erupt into the Revolt of the Northern Earls."
         }
       ],
       "quiz": [
@@ -4678,7 +4810,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Margaret Tudor Granddaughter Lineage",
+              "clue": "Born in 1542, Mary was the granddaughter of Henry VIII’s elder sister, Margaret Tudor, giving her an undisputed royal lineage."
+            },
+            {
+              "term": "Suspicious Murder of Mary’s Husband",
+              "clue": "The mysterious explosion at Kirk o' Field in 1567 that killed Lord Darnley, followed by Mary Queen of Scots marrying the chief suspect, the Earl of Bothwell."
+            },
+            {
+              "term": "Legitimate Catholic Figurehead",
+              "clue": "To Roman Catholics who rejected Henry VIII's marriage to Anne Boleyn, Elizabeth was illegitimate, making Mary the rightful, legitimate Queen of England and a natural Catholic figurehead."
+            }
+          ],
+          "model_sentence": "Backed by royal <strong>Margaret Tudor Granddaughter Lineage</strong>, Mary Queen of Scots fled Scotland following the <strong>Suspicious Murder of Mary’s Husband</strong> to become a <strong>Legitimate Catholic Figurehead</strong> in England."
         },
         {
           "stage": 2,
@@ -4694,7 +4841,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Kirk o’ Field Gunpowder Explosion",
+              "clue": "In February 1567, Darnley’s residence at Kirk o’ Field was blown apart by barrels of gunpowder, and Darnley’s body was found strangled in the orchard."
+            },
+            {
+              "term": "Scottish Nobility Force Abdication",
+              "clue": "Convinced that Mary was complicit in her husband's murder, the Scottish Protestant nobility rose in furious armed rebellion."
+            },
+            {
+              "term": "Scottish Protestant Rebellion",
+              "clue": "Convinced that Mary was complicit in her husband's murder, the Scottish Protestant nobility rose in furious armed rebellion."
+            }
+          ],
+          "model_sentence": "The mysterious <strong>Kirk o’ Field Gunpowder Explosion</strong> and subsequent <strong>Scottish Protestant Rebellion</strong> led the rebellious <strong>Scottish Nobility Force Abdication</strong> upon Mary."
         },
         {
           "stage": 3,
@@ -4710,7 +4872,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Forced Abdication for Infant James VI",
+              "clue": "Under intense intimidation, she was forced on 24 July 1567 to sign deeds of abdication in favour of her one-year-old infant son, who was crowned King James VI, with her Protestant half-brother, the Earl of Moray, ruling as regent."
+            },
+            {
+              "term": "Fishing Boat Crossing to Workington",
+              "clue": "Desperate and ignoring the warnings of her closest advisors, Mary climbed into a small fishing boat and sailed across the Solway Firth, landing at Workington in Cumberland on 16 May 1568."
+            },
+            {
+              "term": "Anointed Monarch Under House Arrest",
+              "clue": "The unprecedented diplomatic and legal dilemma of holding a crowned, divinely anointed foreign queen under nineteen years of captivity in English castles."
+            }
+          ],
+          "model_sentence": "Following her <strong>Forced Abdication for Infant James VI</strong> and an escape culminating in a <strong>Fishing Boat Crossing to Workington</strong>, Mary became an <strong>Anointed Monarch Under House Arrest</strong>."
         },
         {
           "stage": 4,
@@ -4726,7 +4903,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Eight French Casket Love Letters",
+              "clue": "Scottish Protestant regents produced the disputed Casket Letters—eight French casket love letters and sonnets allegedly written by Mary to Bothwell, proving her complicity in the murder."
+            },
+            {
+              "term": "Refusal of Direct Cross-Examination",
+              "clue": "The York and Westminster inquiry procedures where Mary was forbidden from appearing in person or cross-examining Scottish regents presenting the Casket Letters."
+            },
+            {
+              "term": "No Verdict Justifies Detention",
+              "clue": "Refusing to validate the rebellion of Scottish subjects against an anointed queen, Elizabeth declared an inconclusive \"not proven\" verdict: this lack of a guilty verdict justified Mary's continued detention without formally executing her."
+            }
+          ],
+          "model_sentence": "Examining the controversial <strong>Eight French Casket Love Letters</strong> amidst Mary's <strong>Refusal of Direct Cross-Examination</strong>, the York commissioners declared <strong>No Verdict Justifies Detention</strong>."
         },
         {
           "stage": 5,
@@ -4742,7 +4934,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Guarded by Earl of Shrewsbury",
+              "clue": "Following the inquiry, Mary was placed under honourable confinement in remote aristocratic estates, principally under the custody of George Talbot, Earl of Shrewsbury, at Tutbury Castle and Sheffield Manor."
+            },
+            {
+              "term": "Duke of Norfolk Court Marriage Plot",
+              "clue": "In 1569, disaffected Catholic nobles devised the Duke of Norfolk court marriage plot, scheming to marry England’s premier peer to Mary and restore her to the Scottish throne."
+            },
+            {
+              "term": "Magnet for Northern Catholic Discontent",
+              "clue": "While guarded securely, Mary’s presence in England acted as an immediate magnet for northern Catholic discontent."
+            }
+          ],
+          "model_sentence": "Closely <strong>Guarded by Earl of Shrewsbury</strong> in northern castles, Mary was drawn into the <strong>Duke of Norfolk Court Marriage Plot</strong> as a <strong>Magnet for Northern Catholic Discontent</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -5022,14 +5229,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The Earls of Northumberland and Westmorland led 4,600 Catholic rebels to seize Durham Cathedral in November 1569.<br><strong>Detail:</strong> They destroyed the English Bible, restored the traditional Latin Mass, and planned to free Mary, Queen of Scots.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Northern Rebellion was the final armed stand of northern bastard feudalism against Tudor administrative centralisation, demonstrating the fragility of the religious settlement in conservative aristocratic regions.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -5060,14 +5259,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Anthony Babington communicated with the imprisoned Mary using coded letters smuggled inside beer barrels.<br><strong>Detail:</strong> Sir Francis Walsingham’s spy network intercepted and decoded the letters, securing written proof that Mary approved Elizabeth's assassination.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Babington conspiracy functioned as an operational triumph of Walsingham's counter-espionage network. Intercepting Mary's explicit endorsement of regicide provided the definitive legal evidence required to execute an anointed monarch under the 1585 Act.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -5147,14 +5338,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>One decisive reason for the execution of Mary, Queen of Scots in February 1587 was the discovery of indisputable, documentary evidence of her complicity in the Babington Plot (1586). Unlike earlier conspiracies (such as the Ridolfi Plot in 1571 or the Throckmorton Plot in 1583) where Mary’s involvement was indirect or unproven, the Babington conspiracy provided irrefutable proof. Sir Francis Walsingham’s intelligence service intercepted coded letters concealed in beer barrels, decoded by cipher expert Thomas Phelippes. In her reply to Anthony Babington dated July 1586, Mary explicitly sanctioned Elizabeth's assassination by the 'four gentlemen'. This concrete evidence made it impossible for Elizabeth to maintain the fiction that Mary was merely an innocent guest, providing the legal basis for her trial at Fotheringhay Castle.<br><br>Furthermore, Mary was executed due to the strict legal machinery created by the 1584 Bond of Association and the 1585 Act for the Queen’s Safety. Following the assassination of Protestant leader William the Silent in the Netherlands, Cecil and Walsingham drafted the Bond of Association, in which thousands of Englishmen swore an oath to execute anyone who attempted or benefited from an assassination of Elizabeth. Parliament formalized this into the Act for the Queen’s Safety, establishing that if Elizabeth was assassinated or a plot was launched on behalf of any claimant, that claimant would be permanently barred from the succession and prosecuted to death. When Mary was convicted under this statute, Privy Councillors and Parliament insisted that failing to enforce the law would violate divine providence and leave Elizabeth in mortal danger.<br><br>Finally, Mary’s execution was accelerated by the imminent geopolitical threat of Spanish invasion. By late 1586, King Philip II of Spain had formally decided to launch the Armada against England, having obtained papal blessing and financial support from Pope Sixtus V. In Spanish battle plans, Mary Stuart was the designated Catholic monarch to be installed on the English throne following the conquest. The Privy Council, particularly William Cecil and Walsingham, recognized that as long as Mary lived, she remained an active rallying point and legitimate sovereign for Spanish invaders and English Catholic fifth-columnists. Consequently, Parliament and Council exerted relentless pressure on a reluctant Elizabeth, presenting Mary’s execution as an unavoidable military and national security imperative to safeguard Protestant England.</p>",
                 "verdict": "Level 4 (12/12 marks). Superb analytical explanation covering three distinct aspects of content (Babington epistolary proof, Bond of Association/1585 Act, Spanish invasion threat/Council pressure) with rich historical evidence and sustained PEEL focus on why execution became inevitable."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The execution of Mary Stuart in February 1587 was the climax of an eighteen-year constitutional struggle between royal prerogative and conciliar national security.<br><br>For Elizabeth, executing an anointed cousin violated the mystical sanctity of kingship (rex solutus) and set a lethal precedent for regicide. For William Cecil and the Protestant conciliar elite, however, Mary represented a mortal cancer within the body politic. The intersection of Walsingham's cipher intelligence, the statutory mandate of the 1585 Act for the Queen’s Safety, and the ideological crusade of the Spanish Habsburgs stripped Elizabeth of diplomatic room for manoeuvre.<br><br>By framing Mary’s decapitation not as private vengeance but as the lawful defense of the Protestant commonwealth against Counter-Reformation terror, the Privy Council transformed Mary’s trial into a defining assertion of national sovereignty, sacrificing dynastic legitimacy to preserve the survival of the Tudor state.</p>",
-                "verdict": "Scholar Distinction. Masterful exploration of the conflict between the sanctity of royal prerogative and conciliar raison d'état."
               }
             }
           }
@@ -5211,7 +5394,7 @@ export default {
           "type": "narrative",
           "title": "The Northern Fire: Catholic Earls, Durham Cathedral and Tudor Vengeance (1569–1570)",
           "theme_heading": "The Northern Fire: Catholic Earls, Durham Cathedral and Tudor Vengeance (1569–1570)",
-          "text": "<span class=\"para-ref\">[1.1]</span> In November 1569, Catholic discontent erupted into open armed rebellion in northern England. The revolt was led by two powerful northern Catholic magnates: **Charles Neville, Earl of Westmorland**, and **Thomas Percy, Earl of Northumberland**. The earls were furious at being excluded from Elizabeth's court by William Cecil, angry at the loss of copper mining rights on their lands, and determined to restore traditional Roman Catholicism to England.<br><br><span class=\"para-ref\">[1.2]</span> The rebels plotted to marry **Thomas Howard, Duke of Norfolk** (England’s senior nobleman) to Mary, Queen of Scots, and depose Elizabeth. The earls marched on Durham with 4,600 men, captured Durham Cathedral, destroyed the English Communion table, and triumphantly held Latin Catholic Mass. However, Spanish troops promised by Philip II never arrived, and the revolt collapsed when the Earl of Sussex marched north with an army of 14,000 royal troops. Elizabeth took ruthless revenge, executing **over 450 rebel peasants** to terrorize the north into obedience.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In November 1569, Catholic discontent exploded into armed rebellion in the north of England, led by <strong>Charles Neville, Earl of Westmorland</strong>, and <strong>Thomas Percy, Earl of Northumberland</strong>. The earls were furious at their loss of political influence at court to upstart Protestants like William Cecil, and angry over Crown control of northern mineral rights. The rebels marched into <strong>Durham Cathedral</strong>, tore down Protestant communion tables, burned English service books, and celebrated traditional Latin Catholic <strong>Mass</strong>.<br><br><span class=\"para-ref\">[1.2]</span> They planned to march south, liberate Mary, Queen of Scots from Tutbury, and marry her to the Duke of Norfolk. However, the rebellion collapsed when the Earl of Sussex mobilized a royal army; the earls fled into Scotland, and Elizabeth ordered the ruthless execution of <strong>450 ordinary rebels</strong>.",
           "level_4": "In 1569, northern Catholic earls rebelled, restoring Latin Mass at Durham Cathedral and plotting to put Mary on the throne. Royal troops crushed the revolt, and Elizabeth executed 450 rebels.",
           "sources": [
             {
@@ -5243,7 +5426,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> In November 1569, Catholic discontent exploded into armed rebellion in the north of England, led by **Charles Neville, Earl of Westmorland**, and **Thomas Percy, Earl of Northumberland**. The earls were furious at their loss of political influence at court to upstart Protestants like William Cecil, and angry over Crown control of northern mineral rights. The rebels marched into **Durham Cathedral**, tore down Protestant communion tables, burned English service books, and celebrated traditional Latin Catholic **Mass**.<br><br><span class=\"para-ref\">[1.2]</span> They planned to march south, liberate Mary, Queen of Scots from Tutbury, and marry her to the Duke of Norfolk. However, the rebellion collapsed when the Earl of Sussex mobilized a royal army; the earls fled into Scotland, and Elizabeth ordered the ruthless execution of **450 ordinary rebels**. When Spanish troops failed to land at Hartlepool, the Northern Earls fled, followed by four hundred and fifty royal executions of rebel followers."
+          "content": "<span class=\"para-ref\">[1.1]</span> In November 1569, Catholic discontent exploded into armed rebellion in the north of England, led by <strong>Charles Neville, Earl of Westmorland</strong>, and <strong>Thomas Percy, Earl of Northumberland</strong>. The earls were furious at their loss of political influence at court to upstart Protestants like William Cecil, and angry over Crown control of northern mineral rights. The rebels marched into <strong>Durham Cathedral</strong>, tore down Protestant communion tables, burned English service books, and celebrated traditional Latin Catholic <strong>Mass</strong>.<br><br><span class=\"para-ref\">[1.2]</span> They planned to march south, liberate Mary, Queen of Scots from Tutbury, and marry her to the Duke of Norfolk. However, the rebellion collapsed when the Earl of Sussex mobilized a royal army; the earls fled into Scotland, and Elizabeth ordered the ruthless execution of <strong>450 ordinary rebels</strong>."
         },
         {
           "stage": 2,
@@ -5251,7 +5434,7 @@ export default {
           "type": "narrative",
           "title": "Regnans in Excelsis & The Ridolfi Conspiracy: Intercepted Ciphers and Norfolk's Axe (1570–1572)",
           "theme_heading": "Regnans in Excelsis & The Ridolfi Conspiracy: Intercepted Ciphers and Norfolk's Axe (1570–1572)",
-          "text": "<span class=\"para-ref\">[2.1]</span> In 1570, Pope Pius V issued the historic papal bull **Regnans in Excelsis**, excommunicating Queen Elizabeth and releasing English Catholics from their allegiance. In 1571, an Italian banker living in London, **Roberto Ridolfi**, orchestrated a conspiracy with international backing from Rome and King Philip II of Spain. Operating as an Italian banker conspiracy courier, Ridolfi travelled between Rome, Madrid, and Brussels to coordinate a foreign invasion.<br><br><span class=\"para-ref\">[2.2]</span> The plot called for the Duke of Alba to land 10,000 Spanish troops at Harwich, march on London, assassinate Elizabeth, and place Mary on the throne married to the Duke of Norfolk. However, William Cecil’s intelligence agents intercepted Ridolfi’s messengers and decrypted their ciphers. Norfolk was arrested, tried for high treason, and **executed on Tower Hill in June 1572**.",
+          "text": "<span class=\"para-ref\">[2.1]</span> In February 1570, Pope Pius V issued the momentous papal bull <strong>Regnans in Excelsis</strong>, excommunicating Elizabeth as a heretic and releasing all English subjects from their oaths of allegiance. This transformed English Catholics into potential traitors in the eyes of the law. Capitalizing on this decree, Italian banker <strong>Roberto Ridolfi</strong> orchestrated a conspiracy in 1571 to assassinate Elizabeth, land 10,000 Spanish soldiers under the Duke of Alba, and place Mary on the throne married to the <strong>Duke of Norfolk</strong>.<br><br><span class=\"para-ref\">[2.2]</span> William Cecil and Walsingham intercepted ciphered messages, exposed the plot, and arrested the conspirators. Ridolfi remained abroad, the Spanish ambassador was expelled, and Norfolk was executed on Tower Hill in June 1572.",
           "level_4": "In 1570, the Pope excommunicated Elizabeth, encouraging Catholic rebellion. The 1571 Ridolfi Plot aimed to invade with Spanish troops and crown Mary; Cecil uncovered the plot and executed the Duke of Norfolk.",
           "sources": [
             {
@@ -5282,7 +5465,8 @@ export default {
                 "source_context": "In 1571, Italian banker Roberto Ridolfi concocted a plot with Spanish ambassador Don Guerau de Spes and Pope Pius V. The plan involved an invasion of 10,000 Spanish troops from the Netherlands under Alba, the murder of Elizabeth, and the marriage of Norfolk to Mary Stuart. **Hinge Question:** How did the proposed marriage between the Duke of Norfolk and Mary Queen of Scots connect aristocratic discontent to foreign invasion plots?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[2.1]</span> In February 1570, Pope Pius V issued the momentous papal bull <strong>Regnans in Excelsis</strong>, excommunicating Elizabeth as a heretic and releasing all English subjects from their oaths of allegiance. This transformed English Catholics into potential traitors in the eyes of the law. Capitalizing on this decree, Italian banker <strong>Roberto Ridolfi</strong> orchestrated a conspiracy in 1571 to assassinate Elizabeth, land 10,000 Spanish soldiers under the Duke of Alba, and place Mary on the throne married to the <strong>Duke of Norfolk</strong>.<br><br><span class=\"para-ref\">[2.2]</span> William Cecil and Walsingham intercepted ciphered messages, exposed the plot, and arrested the conspirators. Ridolfi remained abroad, the Spanish ambassador was expelled, and Norfolk was executed on Tower Hill in June 1572."
         },
         {
           "stage": 3,
@@ -5290,7 +5474,7 @@ export default {
           "type": "narrative",
           "title": "The Jesuit Shadow & Throckmorton's Confession: The Rack and the Bond of Association (1583–1584)",
           "theme_heading": "The Jesuit Shadow & Throckmorton's Confession: The Rack and the Bond of Association (1583–1584)",
-          "text": "<span class=\"para-ref\">[3.1]</span> By the early 1580s, the Catholic threat was fueled by seminary priests and Jesuit missionaries arriving secretly from Europe. In 1583, a young English Catholic nobleman named **Francis Throckmorton** became the central courier for a dangerous new international conspiracy. The plan was for the French **Duke of Guise** (Mary’s cousin) to land an invasion force in Sussex, financed by King Philip II and the Pope, to assassinate Elizabeth and liberate Mary.<br><br><span class=\"para-ref\">[3.2]</span> The conspiracy was uncovered by **Sir Francis Walsingham**, Elizabeth’s brilliant and ruthless Spymaster. Walsingham placed Throckmorton’s London house under surveillance, arrested him, and put him on the rack until he confessed the entire plot. Throckmorton was executed at Tyburn. The terrifying discovery that Mary was actively collaborating with foreign Catholic invaders led Cecil and Walsingham to draft the **Bond of Association (1584)**: a nationwide pledge that anyone plotting against Elizabeth would be put to death, along with any royal claimant who stood to benefit from it.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Catholic plots escalated in 1583 with the <strong>Throckmorton Plot</strong>, organized by young Catholic gentleman Francis Throckmorton. The conspiracy planned for the French Catholic <strong>Duke of Guise</strong> to invade England with Spanish financial funding from Philip II, depose Elizabeth, and crown Mary. Sir Francis Walsingham's spy network placed Throckmorton under surveillance, arrested him, and extracted a full confession under torture on the rack.<br><br><span class=\"para-ref\">[3.2]</span> The Spanish ambassador, <strong>Bernardino de Mendoza</strong>, was expelled from England. In response to the growing peril, Cecil and Walsingham drafted the <strong>Bond of Association (1584)</strong>, an oath taken by thousands of Englishmen pledging to execute anyone attempting or benefiting from Elizabeth’s assassination.",
           "level_4": "The 1583 Throckmorton Plot planned a French invasion backed by Spanish funds to crown Mary. Walsingham caught Throckmorton, leading to the expulsion of Spain's ambassador and the 1584 Bond of Association.",
           "source": {
             "id": "source_a_throckmorton_plot",
@@ -5341,7 +5525,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> Catholic plots escalated in 1583 with the **Throckmorton Plot**, organized by young Catholic gentleman Francis Throckmorton. The conspiracy planned for the French Catholic **Duke of Guise** to invade England with Spanish financial funding from Philip II, depose Elizabeth, and crown Mary. Sir Francis Walsingham's spy network placed Throckmorton under surveillance, arrested him, and extracted a full confession under torture on the rack.<br><br><span class=\"para-ref\">[3.2]</span> The Spanish ambassador, **Bernardino de Mendoza**, was expelled from England. In response to the growing peril, Cecil and Walsingham drafted the **Bond of Association (1584)**, an oath taken by thousands of Englishmen pledging to execute anyone attempting or benefiting from Elizabeth’s assassination. In the Ridolfi Plot, King Philip II promised to provide 200,000 ducats to finance a Spanish invasion force. In the Ridolfi Plot, King Philip II promised to provide 200,000 ducats to finance a Spanish invasion force."
+          "content": "<span class=\"para-ref\">[3.1]</span> Catholic plots escalated in 1583 with the <strong>Throckmorton Plot</strong>, organized by young Catholic gentleman Francis Throckmorton. The conspiracy planned for the French Catholic <strong>Duke of Guise</strong> to invade England with Spanish financial funding from Philip II, depose Elizabeth, and crown Mary. Sir Francis Walsingham's spy network placed Throckmorton under surveillance, arrested him, and extracted a full confession under torture on the rack.<br><br><span class=\"para-ref\">[3.2]</span> The Spanish ambassador, <strong>Bernardino de Mendoza</strong>, was expelled from England. In response to the growing peril, Cecil and Walsingham drafted the <strong>Bond of Association (1584)</strong>, an oath taken by thousands of Englishmen pledging to execute anyone attempting or benefiting from Elizabeth’s assassination."
         },
         {
           "stage": 4,
@@ -5349,7 +5533,7 @@ export default {
           "type": "narrative",
           "title": "The Beer Barrel Cryptograms: Walsingham's Trap and Babington's Fatal Sign-Off (1586)",
           "theme_heading": "The Beer Barrel Cryptograms: Walsingham's Trap and Babington's Fatal Sign-Off (1586)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In 1586, Catholic conspirators made their final attempt to assassinate Elizabeth and place Mary on the throne. Led by **Anthony Babington**, a wealthy young Catholic gentleman, the plot was backed by Philip II and the Pope, who promised Spanish troops the moment Elizabeth was dead. Babington established contact with Mary, who was now held in tight confinement at Chartley Manor in Staffordshire under the strict Puritan warden Sir Amias Paulet.<br><br><span class=\"para-ref\">[4.2]</span> Babington used an undercover Catholic priest, Gilbert Gifford, to smuggle encrypted messages inside **waterproof beer barrels** delivered to Mary's kitchen. Unbeknownst to Babington, Gifford was a double agent working for Walsingham. Every letter was intercepted, copied, and decoded by Walsingham's expert cryptanalyst, **Thomas Phelippes**. On 17 July 1586, Mary sent the fatal reply approving Elizabeth’s assassination (\"four stout men\"). Walsingham had the irrefutable proof he needed. Babington and his fellow conspirators were rounded up and brutally hanged, drawn, and quartered at St Giles’ Fields.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In 1586, Catholic gentleman <strong>Anthony Babington</strong> devised a plan to murder Elizabeth and spark an international Catholic invasion to install Mary on the English throne. Mary, now held under strict confinement by Puritan warden Sir Amias Paulet at Chartley Hall, corresponded with Babington through <strong>coded letters hidden inside beer barrels</strong>. However, Walsingham’s double agent <strong>Gilbert Gifford</strong> intercepted every message, which was decoded by cryptanalyst Thomas Phelippes.<br><br><span class=\"para-ref\">[4.2]</span> Crucially, on 17 July 1586, Mary sent a letter explicitly approving the assassination of Elizabeth. Walsingham now possessed the incontrovertible written evidence of regicide required to condemn Mary under the 1585 Act for the Preservation of the Queen's Safety.",
           "level_4": "In 1586, Anthony Babington plotted to assassinate Elizabeth. Walsingham intercepted ciphered letters inside beer barrels, obtaining Mary's written approval of the murder plot.",
           "source": {
             "id": "source_b_anthony_babington",
@@ -5407,7 +5591,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> In 1586, Catholic gentleman **Anthony Babington** devised a plan to murder Elizabeth and spark an international Catholic invasion to install Mary on the English throne. Mary, now held under strict confinement by Puritan warden Sir Amias Paulet at Chartley Hall, corresponded with Babington through **coded letters hidden inside beer barrels**. However, Walsingham’s double agent **Gilbert Gifford** intercepted every message, which was decoded by cryptanalyst Thomas Phelippes.<br><br><span class=\"para-ref\">[4.2]</span> Crucially, on 17 July 1586, Mary sent a letter explicitly approving the assassination of Elizabeth. Walsingham now possessed the incontrovertible written evidence of regicide required to condemn Mary under the 1585 Act for the Preservation of the Queen's Safety. Codebreaker Thomas Phelippes decoded the gallows cipher, revealing Mary’s explicit approval of regicide in the Babington conspiracy. Codebreaker Thomas Phelippes decoded the gallows cipher, revealing Mary’s explicit approval of regicide in the Babington conspiracy."
+          "content": "<span class=\"para-ref\">[4.1]</span> In 1586, Catholic gentleman <strong>Anthony Babington</strong> devised a plan to murder Elizabeth and spark an international Catholic invasion to install Mary on the English throne. Mary, now held under strict confinement by Puritan warden Sir Amias Paulet at Chartley Hall, corresponded with Babington through <strong>coded letters hidden inside beer barrels</strong>. However, Walsingham’s double agent <strong>Gilbert Gifford</strong> intercepted every message, which was decoded by cryptanalyst Thomas Phelippes.<br><br><span class=\"para-ref\">[4.2]</span> Crucially, on 17 July 1586, Mary sent a letter explicitly approving the assassination of Elizabeth. Walsingham now possessed the incontrovertible written evidence of regicide required to condemn Mary under the 1585 Act for the Preservation of the Queen's Safety."
         },
         {
           "stage": 5,
@@ -5415,7 +5599,7 @@ export default {
           "type": "narrative",
           "title": "The Great Hall at Fotheringhay: The Regicide Dilemma and Mary's Red Execution (1587)",
           "theme_heading": "The Great Hall at Fotheringhay: The Regicide Dilemma and Mary's Red Execution (1587)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In October 1586, Mary was brought to trial at **Fotheringhay Castle** in Northamptonshire. Charged under the 1585 Act for the Queen’s Safety, she defended herself with great dignity, arguing that as an anointed foreign queen, no English court had the legal authority to try her. Nonetheless, confronted with the intercepted Babington letters, the 36 commissioners found her guilty of high treason and sentenced her to death.<br><br><span class=\"para-ref\">[5.2]</span> Elizabeth agonized for four months over signing the death warrant. She feared the sin of executing a God-anointed monarch and dreaded the retaliation of Spain, France, and Mary’s son, King James VI. Finally, on 1 February 1587, Elizabeth signed the warrant, but ordered her secretary William Davison not to dispatch it without further command. The Privy Council acted secretly behind her back, sending the warrant to Fotheringhay. On **8 February 1587**, Mary was beheaded before 300 witnesses in the Great Hall. Her execution removed the Catholic figurehead for English rebellion, but it gave King Philip II the final moral and religious pretext he needed to launch the Spanish Armada.",
+          "text": "<span class=\"para-ref\">[5.1]</span> In October 1586, Mary was brought to trial before a commission of forty-six peers at <strong>Fotheringhay Castle</strong> in Northamptonshire and found guilty of high treason. Elizabeth agonized for months over executing an anointed cousin, fearing it would set a dangerous precedent for regicide and provoke retaliation from Catholic Spain and Scotland. Under immense pressure from Parliament and the Privy Council, Elizabeth signed the death warrant on 1 February 1587, but ordered Cecil not to dispatch it immediately.<br><br><span class=\"para-ref\">[5.2]</span> Cecil acted secretly, and on <strong>8 February 1587, Mary was beheaded</strong> in the Great Hall at Fotheringhay. The execution eliminated the domestic Catholic figurehead, but provided Philip II with the ultimate religious justification to launch the Spanish Armada.",
           "level_4": "Mary was found guilty of treason at Fotheringhay Castle. After agonizing hesitation, Elizabeth signed the warrant, and Mary was beheaded on 8 February 1587, driving Philip II to launch the Armada.",
           "image": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
           "image_alt": "Contemporary German-Dutch engraving depicting the scaffold and execution of Mary, Queen of Scots at Fotheringhay Castle",
@@ -5451,7 +5635,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> In October 1586, Mary was brought to trial before a commission of forty-six peers at **Fotheringhay Castle** in Northamptonshire and found guilty of high treason. Elizabeth agonized for months over executing an anointed cousin, fearing it would set a dangerous precedent for regicide and provoke retaliation from Catholic Spain and Scotland. Under immense pressure from Parliament and the Privy Council, Elizabeth signed the death warrant on 1 February 1587, but ordered Cecil not to dispatch it immediately.<br><br><span class=\"para-ref\">[5.2]</span> Cecil acted secretly, and on **8 February 1587, Mary was beheaded** in the Great Hall at Fotheringhay. The execution eliminated the domestic Catholic figurehead, but provided Philip II with the ultimate religious justification to launch the Spanish Armada. Convicted under the Act for the Queen’s Safety, Mary met her execution at Fotheringhay Castle, claiming divine right monarchical martyrdom. Convicted under the Act for the Queen’s Safety, Mary met her execution at Fotheringhay Castle, claiming divine right monarchical martyrdom."
+          "content": "<span class=\"para-ref\">[5.1]</span> In October 1586, Mary was brought to trial before a commission of forty-six peers at <strong>Fotheringhay Castle</strong> in Northamptonshire and found guilty of high treason. Elizabeth agonized for months over executing an anointed cousin, fearing it would set a dangerous precedent for regicide and provoke retaliation from Catholic Spain and Scotland. Under immense pressure from Parliament and the Privy Council, Elizabeth signed the death warrant on 1 February 1587, but ordered Cecil not to dispatch it immediately.<br><br><span class=\"para-ref\">[5.2]</span> Cecil acted secretly, and on <strong>8 February 1587, Mary was beheaded</strong> in the Great Hall at Fotheringhay. The execution eliminated the domestic Catholic figurehead, but provided Philip II with the ultimate religious justification to launch the Spanish Armada."
         }
       ],
       "quiz": [
@@ -5863,7 +6047,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Latin Mass at Durham Cathedral",
+              "clue": "The earls marched on Durham with 4,600 men, captured Durham Cathedral, destroyed the English Communion table, and triumphantly held Latin Catholic Mass."
+            },
+            {
+              "term": "Spanish Troops Fail to Land",
+              "clue": "However, Spanish troops promised by Philip II never arrived, and the revolt collapsed when the Earl of Sussex marched north with an army of 14,000 royal troops."
+            },
+            {
+              "term": "Four Hundred and Fifty Executions",
+              "clue": "The brutal royal vengeance ordered by Elizabeth following the failed 1569 Revolt of the Northern Earls, hanging hundreds of common rebels in village squares."
+            }
+          ],
+          "model_sentence": "After celebrating a rebel <strong>Latin Mass at Durham Cathedral</strong>, the 1569 revolt collapsed when <strong>Spanish Troops Fail to Land</strong>, prompting <strong>Four Hundred and Fifty Executions</strong> of common rebels."
         },
         {
           "stage": 2,
@@ -5879,7 +6078,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Regnans in Excelsis Excommunication",
+              "clue": "In 1570, Pope Pius V issued the historic papal bull Regnans in Excelsis, excommunicating Queen Elizabeth and releasing English Catholics from their allegiance."
+            },
+            {
+              "term": "Italian Banker Roberto Ridolfi Courier",
+              "clue": "In 1571, an Italian banker living in London, Roberto Ridolfi, orchestrated a conspiracy with international backing from Rome and King Philip II of Spain."
+            },
+            {
+              "term": "Norfolk Beheaded on Tower Hill",
+              "clue": "Norfolk was arrested, tried for high treason, and executed on Tower Hill in June 1572."
+            }
+          ],
+          "model_sentence": "Pope Pius V's 1570 <strong>Regnans in Excelsis Excommunication</strong> bull inspired <strong>Italian Banker Roberto Ridolfi Courier</strong> to coordinate a conspiracy that saw <strong>Norfolk Beheaded on Tower Hill</strong>."
         },
         {
           "stage": 3,
@@ -5895,7 +6109,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "French Catholic Invasion Plan",
+              "clue": "The plan was for the French Duke of Guise (Mary’s cousin) to land an invasion force in Sussex, financed by King Philip II and the Pope, to assassinate Elizabeth and liberate Mary."
+            },
+            {
+              "term": "Philip II Provides 200,000 Ducats",
+              "clue": "The substantial Spanish funding promised through banker Roberto di Ridolfi to finance a 10,000-man invasion of England during the 1571 Ridolfi Plot."
+            },
+            {
+              "term": "Bond of Association Traitor Oath",
+              "clue": "The terrifying discovery that Mary was actively collaborating with foreign Catholic invaders led Cecil and Walsingham to draft the Bond of Association (1584): a nationwide pledge that anyone plotting against Elizabeth would be put to death, along with any royal claimant who stood to benefit from it."
+            }
+          ],
+          "model_sentence": "Uncovering a dangerous <strong>French Catholic Invasion Plan</strong> funded when <strong>Philip II Provides 200,000 Ducats</strong>, Walsingham's discovery prompted Parliament to enact the <strong>Bond of Association Traitor Oath</strong>."
         },
         {
           "stage": 4,
@@ -5911,7 +6140,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Letters in Waterproof Beer Barrels",
+              "clue": "Babington used an undercover Catholic priest, Gilbert Gifford, to smuggle encrypted messages inside waterproof beer barrels delivered to Mary's kitchen."
+            },
+            {
+              "term": "Phelippes Decodes Gallows Cipher",
+              "clue": "Cryptographer Thomas Phelippes cracking the coded correspondence between Mary Queen of Scots and Anthony Babington, adding a gallows symbol to the intercepted letters."
+            },
+            {
+              "term": "Explicit Approval of Regicide",
+              "clue": "Mary Queen of Scots' fatal letter of 17 July 1586 explicitly authorizing the assassination of Elizabeth, providing concrete legal treason evidence."
+            }
+          ],
+          "model_sentence": "Smuggling <strong>Letters in Waterproof Beer Barrels</strong>, Walsingham intercepted notes as <strong>Phelippes Decodes Gallows Cipher</strong>, exposing Mary's <strong>Explicit Approval of Regicide</strong>."
         },
         {
           "stage": 5,
@@ -5927,7 +6171,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Act for the Queen’s Safety Trial",
+              "clue": "Charged under the 1585 Act for the Queen’s Safety, she defended herself with great dignity, arguing that as an anointed foreign queen, no English court had the legal authority to try her."
+            },
+            {
+              "term": "Fotheringhay Castle Great Hall Block",
+              "clue": "In October 1586, Mary was brought to trial at Fotheringhay Castle in Northamptonshire."
+            },
+            {
+              "term": "Divine Right Monarchical Martyrdom",
+              "clue": "Mary's theatrical performance on the Fotheringhay execution scaffold in February 1587, dressing in Catholic martyr's crimson and clutching an ivory crucifix."
+            }
+          ],
+          "model_sentence": "Tried under the <strong>Act for the Queen’s Safety Trial</strong> and led to the <strong>Fotheringhay Castle Great Hall Block</strong>, Mary staged a dramatic display of <strong>Divine Right Monarchical Martyrdom</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -6226,14 +6485,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> English captains like Francis Drake operated under royal licenses (letters of marque) to raid Spanish ports and treasure ships in the Americas.<br><strong>Detail:</strong> In 1579, Drake captured the Spanish galleon *Cacafuego*, seizing over £400,000 in silver and gold, of which Elizabeth took a massive half-share.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Privateering served as crown-licensed mercantilist proxy warfare. By sanctioning attacks on Philip II's Atlantic bullion route, Elizabeth inflicted severe fiscal disruption on the Spanish empire while subsidising her own peacetime crown revenues.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -6264,14 +6515,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Francis Drake conducted privateering raids against Spanish treasure ports and shipping along the Pacific coast of South America.<br><strong>Detail:</strong> In 1579, he captured the Spanish treasure galleon *Cacafuego* laden with 26 tons of silver and gold coins worth £140,000, bringing it back to Elizabeth on the Golden Hind.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Drake's American privateering was a devastating instrument of state-sanctioned economic disruption. Intercepting the Pacific bullion route challenged Spain's mercantilist monopoly and funded Crown finances, provoking intense diplomatic hostility with Philip II.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -6351,14 +6594,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>Commercial and colonial rivalry was undeniably a powerful underlying catalyst for conflict between England and Spain in the years 1570–85. Philip II enforced a strict mercantilist trade monopoly across the Spanish Empire in America, strictly forbidding foreign merchants from trading without a royal license from the Casa de Contratación. English adventurers, led by John Hawkins and Francis Drake, brazenly violated this monopoly through illicit trading and privateering raids. Tensions escalated dramatically following Drake's circumnavigation (1577–80), during which he plundered Spanish ports along the Pacific coast and captured the treasure galleon *Cacafuego*, seizing over £400,000 of bullion. When Elizabeth not only pocketed half the plunder but publicly knighted Drake aboard the *Golden Hind* in 1581, Philip regarded this as an intolerable state-sponsored act of piracy that struck directly at the economic lifeblood of his empire.<br><br>However, profound religious and ideological antagonism played an equally vital role in driving the two nations toward open conflict. Philip II viewed himself as the supreme temporal champion of the Counter-Reformation, dedicated to extirpating heresy and restoring Catholic supremacy across Europe. The 1570 Papal Bull *Regnans in Excelsis*, which excommunicated Elizabeth, placed a holy obligation on Catholic monarchs to depose her. Consequently, Spanish ambassadors in London—notably Guerau de Spes and Bernardino de Mendoza—actively conspired with domestic Catholic rebels in the Ridolfi Plot (1571) and Throckmorton Plot (1583) to assassinate Elizabeth and install Mary, Queen of Scots. These repeated Spanish-backed attempts on Elizabeth’s life convinced the English Privy Council that Spain was an existential spiritual enemy whose goal was the complete annihilation of the Protestant English state.<br><br>Crucially, the decisive trigger that transformed simmering hostilities into formal warfare was geopolitical intervention in the Netherlands. The Low Countries were England’s primary commercial trade partner and lay directly across the English Channel. When the Spanish Duke of Parma launched a brutal military campaign that brought the Dutch Protestant rebels to the brink of collapse following the 1584 assassination of William the Silent, Elizabeth could no longer remain passive. Fearing that total Spanish subjugation of the Netherlands would provide Parma’s 30,000 veteran troops with an unassailable invasion base, Elizabeth signed the Treaty of Nonsuch in August 1585, committing an English army of 7,300 men under Robert Dudley. This direct military intervention in Philip’s sovereign territory represented a formal declaration of war and was the immediate casus belli that convinced Philip to assemble the Spanish Armada.<br><br>In conclusion, while commercial rivalry provided the persistent economic friction and financed English maritime strength, it was not the primary cause of open war; commercial disputes had festered for decades without triggering official conflict. Rather, it was England's geopolitical military intervention in the Netherlands under the 1585 Treaty of Nonsuch, inflamed by deep confessional hatred following the 1570 Papal Bull, that ultimately made open war inevitable. The Netherlands converted chronic privateering piracy into an unavoidable struggle for national survival.</p>",
                 "verdict": "Level 4 (16/16 marks). Comprehensive, criteria-driven evaluation weighing commercial rivalry against Counter-Reformation ideology and the geopolitical crisis in the Netherlands. Supported by precise historical evidence (*Cacafuego*, Treaty of Nonsuch, Parma's army) with an integrated analytical judgement."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The escalation of Anglo-Spanish confrontation between 1570 and 1585 represents the structural breakdown of the traditional Burgundian-Tudor alliance under the twin pressures of global mercantilism and confessional polarisation.<br><br>While privateering raids along the Spanish Main—epitomised by Drake’s looting of the *Cacafuego*—inflicted acute fiscal embarrassment upon the Spanish treasury, Philip II initially tolerated English maritime predation as a manageable irritant rather than a cause for continental war. Similarly, confessional hostility, though elevated by the 1570 Bull and Mendoza’s intrigue, remained subordinated to Philip’s overarching strategic priorities in the Mediterranean and Portugal.<br><br>The decisive structural rupture occurred when the geopolitical security of the Thames Estuary was compromised. The advance of Parma's Army of Flanders and the French Catholic-Habsburg coalition forged at Joinville (1584) forced Elizabeth into formal military intervention via the 1585 Treaty of Nonsuch. Once English crown forces engaged Spanish tercios on Flemish soil, proxy mercantilist friction merged with existential national security, rendering total war the only possible resolution.</p>",
-                "verdict": "Scholar Distinction. Masterful structural historiography evaluating the breakdown of the Burgundian alliance and the geopolitical centrality of the Low Countries."
               }
             }
           }
@@ -6442,7 +6677,7 @@ export default {
           "type": "narrative",
           "title": "The Spanish Superpower: Philip II's Empire, the Dutch Revolt and English Sympathy (1570–1577)",
           "theme_heading": "The Spanish Superpower: Philip II's Empire, the Dutch Revolt and English Sympathy (1570–1577)",
-          "text": "<span class=\"para-ref\">[1.1]</span> For the first decade of Elizabeth’s reign, England and Spain maintained a fragile peace. King Philip II of Spain, who had been married to Elizabeth’s sister Mary I, initially viewed England as a vital counterweight against Spanish rival France. However, religious ideology soon poisoned relations. As the most powerful monarch in Europe, ruling Spain, parts of Italy, and the New World, Philip saw himself as the divine champion of Roman Catholicism, sworn to eradicate Protestant heresy.<br><br><span class=\"para-ref\">[1.2]</span> The papal bull of 1570 made open conflict between the two nations an ideological crusade. While Philip secretly financed Catholic plots to overthrow Elizabeth, the Queen allowed English volunteers to fight for Dutch Protestant rebels and opened English ports to Protestant privateers known as the **Sea Beggars**, who preyed on Spanish supply shipping. Though both monarchs avoided an open declaration of war, an undeclared proxy war was escalating across Europe.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Throughout the 1570s, ideological and geopolitical tensions mounted between Protestant England and Catholic Spain, the undisputed European superpower ruled by <strong>Philip II</strong>. The primary flashpoint was the <strong>Dutch Revolt</strong>, where Protestant rebels led by Prince <strong>William of Orange</strong> fought against Spanish Habsburg rule in the Netherlands.<br><br><span class=\"para-ref\">[1.2]</span> Elizabeth faced a delicate dilemma: direct military intervention risked all-out war with Spain, yet a total Spanish victory would leave the Channel coast under hostile military control. Elizabeth pursued covert proxy diplomacy, allowing Dutch Protestant privateers known as the <strong>Sea Beggars</strong> to shelter in English ports and attack Spanish supply shipping, while secretly sending financial subsidies to Dutch rebels.",
           "level_4": "Religious and political rivalry grew between Protestant England and Catholic Spain over the Dutch Revolt. Elizabeth secretly funded Dutch rebels and sheltered Dutch Sea Beggar privateers in English ports.",
           "source": {
             "id": "source_a_robert_dudley",
@@ -6498,7 +6733,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> Throughout the 1570s, ideological and geopolitical tensions mounted between Protestant England and Catholic Spain, the undisputed European superpower ruled by **Philip II**. The primary flashpoint was the **Dutch Revolt**, where Protestant rebels led by Prince **William of Orange** fought against Spanish Habsburg rule in the Netherlands.<br><br><span class=\"para-ref\">[1.2]</span> Elizabeth faced a delicate dilemma: direct military intervention risked all-out war with Spain, yet a total Spanish victory would leave the Channel coast under hostile military control. Elizabeth pursued covert proxy diplomacy, allowing Dutch Protestant privateers known as the **Sea Beggars** to shelter in English ports and attack Spanish supply shipping, while secretly sending financial subsidies to Dutch rebels. Spanish control over Antwerp deep-water ports threatened English cloth exports and national security across the Narrow Seas. Spanish control over Antwerp deep-water ports threatened English cloth exports and national security across the Narrow Seas."
+          "content": "<span class=\"para-ref\">[1.1]</span> Throughout the 1570s, ideological and geopolitical tensions mounted between Protestant England and Catholic Spain, the undisputed European superpower ruled by <strong>Philip II</strong>. The primary flashpoint was the <strong>Dutch Revolt</strong>, where Protestant rebels led by Prince <strong>William of Orange</strong> fought against Spanish Habsburg rule in the Netherlands.<br><br><span class=\"para-ref\">[1.2]</span> Elizabeth faced a delicate dilemma: direct military intervention risked all-out war with Spain, yet a total Spanish victory would leave the Channel coast under hostile military control. Elizabeth pursued covert proxy diplomacy, allowing Dutch Protestant privateers known as the <strong>Sea Beggars</strong> to shelter in English ports and attack Spanish supply shipping, while secretly sending financial subsidies to Dutch rebels."
         },
         {
           "stage": 2,
@@ -6506,7 +6741,7 @@ export default {
           "type": "narrative",
           "title": "The Silver Route: John Hawkins, Caribbean Privateering and the Cacafuego Loot (1570–1579)",
           "theme_heading": "The Silver Route: John Hawkins, Caribbean Privateering and the Cacafuego Loot (1570–1579)",
-          "text": "<span class=\"para-ref\">[2.1]</span> Beyond religion, commercial rivalry in the Atlantic drove England and Spain into bitter conflict. Philip claimed a total monopoly over all trade with Spain’s wealthy colonies in the Americas, strictly forbidding foreign merchants from trading without a royal Spanish licence. English merchants, shut out of traditional European cloth markets, saw the New World as a lucrative opportunity for immense wealth.<br><br><span class=\"para-ref\">[2.2]</span> In the 1560s, Plymouth merchant **Sir John Hawkins** pioneered the English transatlantic slave trade, capturing enslaved people in West Africa and selling them illegally to Spanish colonists in the Caribbean. In 1568, a Spanish fleet attacked Hawkins and his young cousin **Francis Drake** at San Juan de Ulúa in Mexico, sinking three English ships. Drake returned to England swearing lifelong vengeance against Spain and launched a decade of relentless privateering against Spanish treasure fleets.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Commercial rivalry intensified as English mariners challenged Spain’s strict imperial trade monopoly in the Americas. Under Spanish colonial law, foreign merchants were banned from trading with Spanish settlements in the Caribbean and Central America. English captains, led by <strong>John Hawkins</strong>, defied these bans by pioneering the transatlantic slave trade and smuggling manufactured goods.<br><br><span class=\"para-ref\">[2.2]</span> When Spanish naval forces ambushed Hawkins’ fleet at <strong>San Juan de Ulúa</strong> in 1568, English privateers felt morally justified in waging undeclared piracy. English adventurers, prominently <strong>Francis Drake</strong>, raided Spanish treasure fleets and coastal towns in the West Indies, plundering silver mule trains at Nombre de Dios in 1572.",
           "level_4": "Spain held a strict trade monopoly in the New World, banning foreign merchants. English privateers like Hawkins and Drake challenged this through illegal trade and raiding Spanish treasure ships.",
           "sources": [
             {
@@ -6538,7 +6773,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> Commercial rivalry intensified as English mariners challenged Spain’s strict imperial trade monopoly in the Americas. Under Spanish colonial law, foreign merchants were banned from trading with Spanish settlements in the Caribbean and Central America. English captains, led by **John Hawkins**, defied these bans by pioneering the transatlantic slave trade and smuggling manufactured goods.<br><br><span class=\"para-ref\">[2.2]</span> When Spanish naval forces ambushed Hawkins’ fleet at **San Juan de Ulúa** in 1568, English privateers felt morally justified in waging undeclared piracy. English adventurers, prominently **Francis Drake**, raided Spanish treasure fleets and coastal towns in the West Indies, plundering silver mule trains at Nombre de Dios in 1572. To break Spain's monopoly on American bullion, the Queen licensed legal piracy, backing privateers to raid treasure routes. To break Spain's monopoly on American bullion, the Queen licensed legal piracy, backing privateers to raid treasure routes."
+          "content": "<span class=\"para-ref\">[2.1]</span> Commercial rivalry intensified as English mariners challenged Spain’s strict imperial trade monopoly in the Americas. Under Spanish colonial law, foreign merchants were banned from trading with Spanish settlements in the Caribbean and Central America. English captains, led by <strong>John Hawkins</strong>, defied these bans by pioneering the transatlantic slave trade and smuggling manufactured goods.<br><br><span class=\"para-ref\">[2.2]</span> When Spanish naval forces ambushed Hawkins’ fleet at <strong>San Juan de Ulúa</strong> in 1568, English privateers felt morally justified in waging undeclared piracy. English adventurers, prominently <strong>Francis Drake</strong>, raided Spanish treasure fleets and coastal towns in the West Indies, plundering silver mule trains at Nombre de Dios in 1572."
         },
         {
           "stage": 3,
@@ -6546,7 +6781,7 @@ export default {
           "type": "narrative",
           "title": "The Golden Hind: Drake's Oceanic Voyage, Pacific Plunder and the Plymouth Return (1577–1580)",
           "theme_heading": "The Golden Hind: Drake's Oceanic Voyage, Pacific Plunder and the Plymouth Return (1577–1580)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Francis Drake became the scourge of the Spanish Empire. In 1572, he captured the Spanish port of **Nombre de Dios** in Panama, intercepting a mule train laden with silver from the mines of Potosí. In December 1577, Drake set out on his historic three-year voyage around the world aboard the *Pelican* (renamed the *Golden Hind*), with Elizabeth secretly financing the venture and granting him permission to raid Spanish territories in the Pacific.<br><br><span class=\"para-ref\">[3.2]</span> Drake plundered the undefended coasts of Chile and Peru, capturing the great treasure galleon *Cacafuego* with its cargo of 26 tons of silver and thousands of gold coins. When Drake returned to Plymouth in September 1580, his cargo was worth an astonishing **£140,000**, easily covering the Crown's entire foreign debt. In April 1581, Elizabeth openly defied Philip by boarding the *Golden Hind* at Deptford and **knighting Drake** on his own deck—a public insult that infuriated the Spanish King and proved England was ready to challenge Spanish naval mastery.",
+          "text": "<span class=\"para-ref\">[3.1]</span> In December 1577, Francis Drake sailed from Plymouth with five ships on a covert mission backed by Elizabeth to disrupt Spanish commerce in the Pacific. After surviving treacherous storms in the <strong>Strait of Magellan</strong>, Drake’s flagship, renamed the <strong>Golden Hind</strong>, sailed up the undefended Pacific coast of South America, plundering Spanish ports in Chile and Peru.<br><br><span class=\"para-ref\">[3.2]</span> In March 1579, Drake captured the Spanish treasure galleon <strong>Nuestra Señora de la Concepción (the 'Cacafuego')</strong>, seizing eighty pounds of gold, thirteen chests of silver coins, and <strong>twenty-six tons of unrefined silver</strong>. Drake sailed across the Pacific and Indian Oceans, returning to Plymouth in September 1580 with <strong>£400,000 in plunder</strong>, single-handedly eliminating the English Crown debt.",
           "level_4": "Between 1577 and 1580, Drake circumnavigated the globe, plundering undefended Spanish ports and capturing the treasure galleon Cacafuego, bringing home £400,000 in bullion.",
           "source": {
             "id": "source_b_francis_drake_privateer",
@@ -6598,7 +6833,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> In December 1577, Francis Drake sailed from Plymouth with five ships on a covert mission backed by Elizabeth to disrupt Spanish commerce in the Pacific. After surviving treacherous storms in the **Strait of Magellan**, Drake’s flagship, renamed the **Golden Hind**, sailed up the undefended Pacific coast of South America, plundering Spanish ports in Chile and Peru.<br><br><span class=\"para-ref\">[3.2]</span> In March 1579, Drake captured the Spanish treasure galleon **Nuestra Señora de la Concepción (the 'Cacafuego')**, seizing eighty pounds of gold, thirteen chests of silver coins, and **twenty-six tons of unrefined silver**. Drake sailed across the Pacific and Indian Oceans, returning to Plymouth in September 1580 with **£400,000 in plunder**, single-handedly eliminating the English Crown debt. Francis Drake captured the treasure ship Cacafuego with secret royal funding, carrying vast silver riches back to England. Drake carried out uncharted Pacific raids on Peru, capturing the silver galleon Cacafuego, and received an open knighthood defiance on the Golden Hind deck."
+          "content": "<span class=\"para-ref\">[3.1]</span> In December 1577, Francis Drake sailed from Plymouth with five ships on a covert mission backed by Elizabeth to disrupt Spanish commerce in the Pacific. After surviving treacherous storms in the <strong>Strait of Magellan</strong>, Drake’s flagship, renamed the <strong>Golden Hind</strong>, sailed up the undefended Pacific coast of South America, plundering Spanish ports in Chile and Peru.<br><br><span class=\"para-ref\">[3.2]</span> In March 1579, Drake captured the Spanish treasure galleon <strong>Nuestra Señora de la Concepción (the 'Cacafuego')</strong>, seizing eighty pounds of gold, thirteen chests of silver coins, and <strong>twenty-six tons of unrefined silver</strong>. Drake sailed across the Pacific and Indian Oceans, returning to Plymouth in September 1580 with <strong>£400,000 in plunder</strong>, single-handedly eliminating the English Crown debt."
         },
         {
           "stage": 4,
@@ -6606,7 +6841,7 @@ export default {
           "type": "narrative",
           "title": "The Deptford Knighting: Elizabeth's Defiance, Philip's Outrage and the £10,000 Reward (1580–1581)",
           "theme_heading": "The Deptford Knighting: Elizabeth's Defiance, Philip's Outrage and the £10,000 Reward (1580–1581)",
-          "text": "<span class=\"para-ref\">[4.1]</span> The Netherlands was the flashpoint that pushed England and Spain to war. In 1576, unpaid Spanish troops mutinied and brutally sacked the commercial city of Antwerp—an atrocity known as the **\"Spanish Fury\"** that left 7,000 citizens dead. In response, all seventeen Dutch provinces united in the **Pacification of Ghent**, demanding the expulsion of all Spanish troops and religious freedom.<br><br><span class=\"para-ref\">[4.2]</span> However, Philip dispatched his greatest military commander, the **Duke of Parma**, who systematically reconquered the southern Catholic provinces through brilliant diplomacy and siege warfare. In July 1584, the Dutch Protestant leader, **William the Silent (Prince of Orange)**, was assassinated by a Catholic fanatic. Without William's leadership, the Dutch Protestant rebellion was on the verge of total collapse, leaving Elizabeth facing the nightmare of a victorious Spanish army stationed right on the Channel coast.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In April 1581, Elizabeth made a provocative public statement of defiance against Spain. Flouting Philip II's demands that Drake be handed over as a pirate, the Queen visited the Golden Hind at Deptford and publicly <strong>knighted Sir Francis Drake</strong> on the quarterdeck. Philip was enraged by this royal endorsement of piracy.<br><br><span class=\"para-ref\">[4.2]</span> Spain's geopolitical power grew dramatically in 1580 when Philip inherited the Portuguese throne, acquiring the Portuguese navy and global trading empire. Tensions surged further as Spanish forces made steady military gains in the Netherlands under the brilliant command of the <strong>Duke of Parma</strong>, capturing key Dutch fortresses and pushing the Protestant rebels to the brink of collapse.",
           "level_4": "In 1581, Elizabeth knighted Drake on the Golden Hind, infuriating Philip II. Meanwhile, Spain annexed Portugal and advanced across the Netherlands under the Duke of Parma.",
           "image": "/units/eee/assets/portraits/william_of_orange.jpg",
           "image_alt": "Portrait of William the Silent, Prince of Orange, leader of the Dutch Revolt",
@@ -6642,7 +6877,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> In April 1581, Elizabeth made a provocative public statement of defiance against Spain. Flouting Philip II's demands that Drake be handed over as a pirate, the Queen visited the Golden Hind at Deptford and publicly **knighted Sir Francis Drake** on the quarterdeck. Philip was enraged by this royal endorsement of piracy.<br><br><span class=\"para-ref\">[4.2]</span> Spain's geopolitical power grew dramatically in 1580 when Philip inherited the Portuguese throne, acquiring the Portuguese navy and global trading empire. Tensions surged further as Spanish forces made steady military gains in the Netherlands under the brilliant command of the **Duke of Parma**, capturing key Dutch fortresses and pushing the Protestant rebels to the brink of collapse. The Spanish Fury sack of Antwerp united the Low Countries in the Pacification of Ghent, while Elizabeth funded John Casimir's mercenaries. In 1580, Philip II inherits the Portuguese crown and empire. The assassination of William of Orange in 1584 and the French Catholic Guise League accord at Joinville left England isolated."
+          "content": "<span class=\"para-ref\">[4.1]</span> In April 1581, Elizabeth made a provocative public statement of defiance against Spain. Flouting Philip II's demands that Drake be handed over as a pirate, the Queen visited the Golden Hind at Deptford and publicly <strong>knighted Sir Francis Drake</strong> on the quarterdeck. Philip was enraged by this royal endorsement of piracy.<br><br><span class=\"para-ref\">[4.2]</span> Spain's geopolitical power grew dramatically in 1580 when Philip inherited the Portuguese throne, acquiring the Portuguese navy and global trading empire. Tensions surged further as Spanish forces made steady military gains in the Netherlands under the brilliant command of the <strong>Duke of Parma</strong>, capturing key Dutch fortresses and pushing the Protestant rebels to the brink of collapse."
         },
         {
           "stage": 5,
@@ -6650,7 +6885,7 @@ export default {
           "type": "narrative",
           "title": "The Alliance Hardens: The French Catholic League, Joinville and the Treaty of Nonsuch (1584–1585)",
           "theme_heading": "The Alliance Hardens: The French Catholic League, Joinville and the Treaty of Nonsuch (1584–1585)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In December 1584, the European balance of power shifted decisively against England. King Philip II signed the secret **Treaty of Joinville** with the powerful French Catholic League, led by the Duke of Guise. The treaty pledged that France and Spain would unite to crush European Protestantism and prevent the Protestant heir, Henry of Navarre, from taking the French throne.<br><br><span class=\"para-ref\">[5.2]</span> The Treaty of Joinville removed the historic rivalry between France and Spain that had kept England safe for thirty years. For the first time, Philip II had a free hand to attack England without fear of French intervention. Stripped of diplomatic options and facing Spanish domination of the Netherlands, Elizabeth was forced to abandon her policy of cautious neutrality and intervene directly with military force.",
+          "text": "<span class=\"para-ref\">[5.1]</span> The crisis reached an emergency in July 1584 when a Catholic fanatic assassinated Dutch leader <strong>William the Silent</strong>, leaving the Dutch revolt leaderless. In December 1584, Philip II signed the secret <strong>Treaty of Joinville</strong> with the French Catholic League, uniting Europe's two Catholic superpowers against Protestantism and eliminating the threat of France attacking Spain.<br><br><span class=\"para-ref\">[5.2]</span> Realizing that England would stand completely isolated if the Netherlands fell, Elizabeth abandoned her policy of covert aid. In August 1585, she signed the <strong>Treaty of Nonsuch</strong>, placing the Dutch Netherlands under English military protection, agreeing to dispatch <strong>7,400 English soldiers</strong> funded by the Crown, and officially entering into direct war with Spain.",
           "level_4": "The assassination of William of Orange and the Franco-Spanish Treaty of Joinville in 1584 forced Elizabeth to act. In August 1585, she signed the Treaty of Nonsuch, committing troops and going to war with Spain.",
           "sources": [
             {
@@ -6675,7 +6910,7 @@ export default {
               "text": "I must remind Your Majesty that my flat-bottomed invasion barges cannot withstand open sea warfare or the English warships. Unless the Duke of Medina Sidonia's Armada sweeps the English fleet completely from the Channel and anchors off Dunkirk to cover our embarkation, it will be utter madness to put our 30,000 veterans to sea. The enemy's long guns will send my soldiers to the bottom of the ocean."
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> The crisis reached an emergency in July 1584 when a Catholic fanatic assassinated Dutch leader **William the Silent**, leaving the Dutch revolt leaderless. In December 1584, Philip II signed the secret **Treaty of Joinville** with the French Catholic League, uniting Europe's two Catholic superpowers against Protestantism and eliminating the threat of France attacking Spain.<br><br><span class=\"para-ref\">[5.2]</span> Realizing that England would stand completely isolated if the Netherlands fell, Elizabeth abandoned her policy of covert aid. In August 1585, she signed the **Treaty of Nonsuch**, placing the Dutch Netherlands under English military protection, agreeing to dispatch **7,400 English soldiers** funded by the Crown, and officially entering into direct war with Spain. The murder of William of Orange and the French-Spanish Treaty of Joinville led to direct open military confrontation being declared. Under the 1585 Treaty of Nonsuch, Elizabeth agreed to send 7,400 English troops under Dudley (Earl of Leicester) to assist the Dutch, marking direct open military confrontation being declared."
+          "content": "<span class=\"para-ref\">[5.1]</span> The crisis reached an emergency in July 1584 when a Catholic fanatic assassinated Dutch leader <strong>William the Silent</strong>, leaving the Dutch revolt leaderless. In December 1584, Philip II signed the secret <strong>Treaty of Joinville</strong> with the French Catholic League, uniting Europe's two Catholic superpowers against Protestantism and eliminating the threat of France attacking Spain.<br><br><span class=\"para-ref\">[5.2]</span> Realizing that England would stand completely isolated if the Netherlands fell, Elizabeth abandoned her policy of covert aid. In August 1585, she signed the <strong>Treaty of Nonsuch</strong>, placing the Dutch Netherlands under English military protection, agreeing to dispatch <strong>7,400 English soldiers</strong> funded by the Crown, and officially entering into direct war with Spain."
         }
       ],
       "quiz": [
@@ -7085,7 +7320,23 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Antwerp Deep-Water Ports Threat",
+              "clue": "Antwerp Deep-Water Ports Threat"
+            },
+            {
+              "term": "William of Orange Protestant Rebellion",
+              "clue": "William of Orange Protestant Rebellion"
+            },
+            {
+              "term": "Funding Sea Beggars Privateers",
+              "clue": "Funding Sea Beggars Privateers"
+            }
+          ],
+          "model_sentence": "Driven by the strategic <strong>Antwerp Deep-Water Ports Threat</strong> and sympathy for the <strong>William of Orange Protestant Rebellion</strong>, Elizabeth secretly aided the rebels by <strong>Funding Sea Beggars Privateers</strong>.",
+          "heading": "Political and Religious Rivalry with Spain"
         },
         {
           "stage": 2,
@@ -7101,7 +7352,23 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Spanish Monopoly on American Bullion",
+              "clue": "Spanish Monopoly on American Bullion"
+            },
+            {
+              "term": "Nombre de Dios Mule Train Ambush",
+              "clue": "Nombre de Dios Mule Train Ambush"
+            },
+            {
+              "term": "Queen Licences Legal Piracy",
+              "clue": "Queen Licences Legal Piracy"
+            }
+          ],
+          "model_sentence": "Challenging the <strong>Spanish Monopoly on American Bullion</strong>, Drake’s daring <strong>Nombre de Dios Mule Train Ambush</strong> in 1572 demonstrated how the <strong>Queen Licences Legal Piracy</strong>.",
+          "heading": "Commercial Rivalry in the New World"
         },
         {
           "stage": 3,
@@ -7111,29 +7378,61 @@ export default {
           "focus_clue": "Why did Drake’s circumnavigation represent a direct challenge to the Spanish Empire?",
           "para_ref": "[3.1–3.2]",
           "bullets": [
-            "Cacafuego Surrenders £140,000 Treasure",
+            "Five Ships Sail from Plymouth (1577)",
             "Uncharted Pacific Raids on Peru",
-            "Golden Hind Knighthood Defiance"
+            "Cacafuego Surrenders £140,000 Treasure"
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Five Ships Sail from Plymouth (1577)",
+              "clue": "Five Ships Sail from Plymouth (1577)"
+            },
+            {
+              "term": "Uncharted Pacific Raids on Peru",
+              "clue": "Uncharted Pacific Raids on Peru"
+            },
+            {
+              "term": "Cacafuego Surrenders £140,000 Treasure",
+              "clue": "Cacafuego Surrenders £140,000 Treasure"
+            }
+          ],
+          "model_sentence": "Looting the galleon <strong>Cacafuego Surrenders £140,000 Treasure</strong> during <strong>Uncharted Pacific Raids on Peru</strong>, Drake returned to receive a defiant <strong>Golden Hind Knighthood Defiance</strong> from the Queen.",
+          "heading": "Drake’s Circumnavigation"
         },
         {
           "stage": 4,
           "dates": "1581–1584",
-          "title": "Escalation & Elizabeth’s Defiance",
+          "title": "The Deptford Knighting & Royal Defiance",
           "spec_focus": "Political and religious rivalry; commercial rivalry in the New World; privateering; Sir Francis Drake; raid on Cadiz (1587).",
-          "focus_clue": "How did events in Europe between 1580 and 1584 increase the threat of a Spanish invasion?",
+          "focus_clue": "Why did Elizabeth’s decision to knight Drake aboard the Golden Hind outrage Philip II?",
           "para_ref": "[4.1–4.2]",
           "bullets": [
-            "Philip II Inherits Portuguese Crown",
-            "Assassination of William of Orange",
-            "French Catholic Guise League Accord"
+            "Boarding Golden Hind at Deptford (1581)",
+            "French Ambassador Confers Knighthood",
+            "£10,000 Royal Reward & Spanish Fury"
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Boarding Golden Hind at Deptford (1581)",
+              "clue": "Boarding Golden Hind at Deptford (1581)"
+            },
+            {
+              "term": "French Ambassador Confers Knighthood",
+              "clue": "French Ambassador Confers Knighthood"
+            },
+            {
+              "term": "£10,000 Royal Reward & Spanish Fury",
+              "clue": "£10,000 Royal Reward & Spanish Fury"
+            }
+          ],
+          "model_sentence": "When <strong>Philip II Inherits Portuguese Crown</strong> and the tragic <strong>Assassination of William of Orange</strong> unfolded, Spain concluded the secret <strong>French Catholic Guise League Accord</strong>.",
+          "heading": "The Deptford Knighting & Royal Defiance"
         },
         {
           "stage": 5,
@@ -7143,13 +7442,29 @@ export default {
           "focus_clue": "Why did the Treaty of Nonsuch mark the point of no return for war between England and Spain?",
           "para_ref": "[5.1–5.2]",
           "bullets": [
+            "Assassination of William of Orange (1584)",
             "Secret Treaty of Joinville (Dec 1584)",
-            "7,400 English Troops under Dudley",
-            "Direct Military Confrontation Declared"
+            "7,400 English Troops under Dudley (1585)"
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Assassination of William of Orange (1584)",
+              "clue": "Assassination of William of Orange (1584)"
+            },
+            {
+              "term": "Secret Treaty of Joinville (Dec 1584)",
+              "clue": "Secret Treaty of Joinville (Dec 1584)"
+            },
+            {
+              "term": "7,400 English Troops under Dudley (1585)",
+              "clue": "7,400 English Troops under Dudley (1585)"
+            }
+          ],
+          "model_sentence": "Prompted by the Catholic <strong>Secret Treaty of Joinville (Dec 1584)</strong>, Elizabeth dispatched <strong>7,400 English Troops under Dudley</strong> under the Treaty of Nonsuch, making <strong>Direct Military Confrontation Declared</strong> between England and Spain.",
+          "heading": "The Treaties of Joinville & Nonsuch"
         }
       ],
       "causal_domino_spine": {
@@ -7422,14 +7737,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Elizabeth signed the treaty in August 1585 to send 7,300 English soldiers under Robert Dudley to aid the Dutch Protestant rebels against Spain.<br><strong>Detail:</strong> In return, England was handed the cautionary deep-water ports of Brill and Flushing as security for her military costs.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Treaty of Nonsuch ended Elizabeth's policy of non-intervention, establishing an open military protectorate over the Netherlands and creating a de facto state of war between England and the Spanish Habsburgs.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -7460,14 +7767,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Dudley angered Elizabeth by accepting the political title of 'Governor-General of the United Provinces' without her permission.<br><strong>Detail:</strong> His military campaign struggled because troops were unpaid and poorly supplied, and English commanders betrayed key garrisons at Zutphen and Deventer to Spain.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Leicester's campaign suffered from severe strategic divergence. While Dudley pursued an expansive Calvinist alliance, Elizabeth demanded limited, low-cost defensive containment, leaving the expedition chronically underfunded and politically compromised.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -7547,14 +7846,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>One primary reason for England’s military intervention in the Netherlands in 1585 was the sudden collapse of Dutch rebel leadership following the assassination of William the Silent in July 1584. As the charismatic leader of the Protestant rebellion, William had unified the northern and southern provinces. His murder by a radical Catholic assassin left the Dutch resistance leaderless and on the brink of total surrender. Simultaneously, the brilliant Spanish commander, the Duke of Parma, was methodically recapturing major Flemish strongholds, culminating in the siege and fall of Antwerp in August 1585. The English Privy Council recognized that without immediate direct military and financial assistance from England, the Dutch revolt would be extinguished, eliminating the vital buffer zone that protected England from Spanish aggression.<br><br>Furthermore, England was compelled to intervene by the alarming diplomatic realignment created by the secret Treaty of Joinville in December 1584. This agreement united King Philip II of Spain with the French Catholic Holy League, led by the Duke of Guise. For decades, Elizabeth had successfully played France and Spain against one another to prevent either superpower from dominating the English Channel. Joinville shattered this balance of power: France was effectively neutralized as a counterweight, and the French Crown was pledged to assist Spain in eradicating Protestantism. England was left completely isolated in Western Europe, facing a unified Catholic axis. In this perilous diplomatic climate, backing the Dutch was the only available method to tie down Spanish military resources and prevent a coordinated Catholic crusade against England.<br><br>Finally, England intervened due to vital national security and commercial imperatives concerning the English Channel and the cloth trade. Geographically, the Low Countries were situated directly opposite the Thames estuary; deep-water ports like Flushing, Brill, and Antwerp provided the ideal assembly and staging grounds for an amphibious invasion of southern England. If Parma’s veteran tercios established unchallenged control over the coast, English maritime defenses would be permanently outflanked. Economically, Antwerp was the primary European distribution depot for English woolen cloth, which accounted for over 75% of England's export trade. Therefore, Elizabeth signed the Treaty of Nonsuch in August 1585 to secure the 'cautionary towns' of Brill and Flushing, simultaneously safeguarding England's economic lifeline and establishing a forward defensive perimeter against Spanish invasion.</p>",
                 "verdict": "Level 4 (12/12 marks). Fully analytical explanation covering three distinct aspects of content (William the Silent's assassination/fall of Antwerp, Treaty of Joinville/Catholic alliance, Channel security/cloth trade) with rich factual evidence and sustained causal links throughout."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>England’s military intervention in 1585 marked the involuntary collapse of Elizabeth’s diplomatic strategy of 'masterly inactivity'.<br><br>Throughout the 1570s, Elizabeth had sought to preserve an autonomous, Burgundian Netherlands under nominal Spanish suzerainty, using covert subventions to sustain rebel resistance without provoking direct war with Madrid. The dual catastrophe of 1584—the assassination of William of Orange and the Treaty of Joinville—demolished this strategic equilibrium. Joinville eliminated the Franco-Habsburg antagonism that had anchored Tudor security since 1485, creating a terrifying ideological hegemony committed to Counter-Reformation crusade.<br><br>Faced with the imminent capitulation of Antwerp to Parma's siege-train, non-intervention ceased to be a policy of prudent economy and became an existential vulnerability. The Treaty of Nonsuch was thus an act of strategic desperation: deploying crown forces to establish a defensive glacis in Flanders to prevent the Spanish Army from utilizing the deep-water ports of Zeeland as the launchpad for an invasion of England.</p>",
-                "verdict": "Scholar Distinction. Masterful balance of power analysis demonstrating how the collapse of the Franco-Habsburg rivalry forced the end of Elizabeth's non-interventionism."
               }
             }
           }
@@ -7611,7 +7902,7 @@ export default {
           "type": "narrative",
           "title": "The Treaty of Nonsuch: Leicester's Expedition and the Defense of Flushing (1585–1586)",
           "theme_heading": "The Treaty of Nonsuch: Leicester's Expedition and the Defense of Flushing (1585–1586)",
-          "text": "<span class=\"para-ref\">[1.1]</span> With Dutch Protestant independence collapsing, Elizabeth finally made the fateful decision to intervene with open military force. In August 1585, she signed the **Treaty of Nonsuch** with the Dutch Protestant rebels, bringing England into direct, formal war against the Spanish Empire.<br><br><span class=\"para-ref\">[1.2]</span> Under the treaty, Elizabeth agreed to pay for an army of **7,400 English soldiers** led by her favourite courtier, **Robert Dudley, Earl of Leicester**. In return, the Dutch handed over two vital deep-water ports—**Brill and Flushing**—known as the **\"Cautionary Towns,\"** which English garrisons occupied as financial security for the costs of the war. Philip II regarded the Treaty of Nonsuch as an open declaration of war, and began drafting plans for a full-scale naval invasion of England.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Under the terms of the Treaty of Nonsuch, Elizabeth appointed her favourite, <strong>Robert Dudley, Earl of Leicester</strong>, to command the English expeditionary army of 7,000 troops sent to the Netherlands in December 1585. However, the campaign began in political chaos.<br><br><span class=\"para-ref\">[1.2]</span> In January 1586, Leicester accepted the title of <strong>Governor-General of the Low Countries</strong> from the Dutch Estates General. Elizabeth was enraged, viewing this unauthorized acceptance as an intolerable usurpation of sovereign power that implied England sought to annex the Netherlands, and she severely reprimanded Leicester, undermining his authority in the eyes of Dutch allies and Spanish commanders alike.",
           "level_4": "In December 1585, the Earl of Leicester led 7,000 troops to the Netherlands. He angered Elizabeth by accepting the title of Governor-General, creating friction between England and the Dutch.",
           "sources": [
             {
@@ -7643,7 +7934,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> Under the terms of the Treaty of Nonsuch, Elizabeth appointed her favourite, **Robert Dudley, Earl of Leicester**, to command the English expeditionary army of 7,000 troops sent to the Netherlands in December 1585. However, the campaign began in political chaos.<br><br><span class=\"para-ref\">[1.2]</span> In January 1586, Leicester accepted the title of **Governor-General of the Low Countries** from the Dutch Estates General. Elizabeth was enraged, viewing this unauthorized acceptance as an intolerable usurpation of sovereign power that implied England sought to annex the Netherlands, and she severely reprimanded Leicester, undermining his authority in the eyes of Dutch allies and Spanish commanders alike. Underfunded & deserting English troops struggled, though Leicester prevented the Duke of Parma from capturing vital deep-water ports along the coast. Underfunded & deserting English troops struggled, though Leicester prevented the Duke of Parma from capturing vital deep-water ports along the coast."
+          "content": "<span class=\"para-ref\">[1.1]</span> Under the terms of the Treaty of Nonsuch, Elizabeth appointed her favourite, <strong>Robert Dudley, Earl of Leicester</strong>, to command the English expeditionary army of 7,000 troops sent to the Netherlands in December 1585. However, the campaign began in political chaos.<br><br><span class=\"para-ref\">[1.2]</span> In January 1586, Leicester accepted the title of <strong>Governor-General of the Low Countries</strong> from the Dutch Estates General. Elizabeth was enraged, viewing this unauthorized acceptance as an intolerable usurpation of sovereign power that implied England sought to annex the Netherlands, and she severely reprimanded Leicester, undermining his authority in the eyes of Dutch allies and Spanish commanders alike."
         },
         {
           "stage": 2,
@@ -7651,7 +7942,7 @@ export default {
           "type": "narrative",
           "title": "Disaster in the Low Countries: Zutphen, Desertions and Leicester's Resignation (1586–1587)",
           "theme_heading": "Disaster in the Low Countries: Zutphen, Desertions and Leicester's Resignation (1586–1587)",
-          "text": "<span class=\"para-ref\">[2.1]</span> The English military campaign in the Netherlands proved to be an expensive failure. Elizabeth was reluctant to commit fully, underfunding Leicester’s troops and hoping to negotiate peace with Spain. English soldiers lacked food, proper shoes, and wages, leading to low morale and high desertion rates. To make matters worse, Leicester enraged Elizabeth by accepting the title of **\"Governor-General of the United Provinces\"**, implying that England wanted to usurp Dutch sovereignty.<br><br><span class=\"para-ref\">[2.2]</span> The campaign was crippled by devastating betrayals. In January 1587, two English Catholic officers appointed by Leicester, **Sir William Stanley** and **Rowland York**, defected to the Spanish side, handing over the fortified town of Deventer and the fort at Zutphen to the Duke of Parma. This catastrophic betrayal shattered Dutch trust in English leadership. Frustrated and disgraced, Leicester resigned his command and returned to England in December 1587, having achieved little more than preventing Parma from capturing the deep-water ports of Zeeland.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Leicester’s military operations were plagued by logistical shortages, tactical blunders, and internal dissension. Elizabeth refused to provide sufficient funding, leaving English soldiers unpaid, diseased, and starving. In September 1586, English forces failed to capture the Spanish supply base at <strong>Zutphen</strong>, a battle famed for the death of poet-soldier <strong>Sir Philip Sidney</strong>.<br><br><span class=\"para-ref\">[2.2]</span> Relations with the Dutch collapsed completely in January 1587 when English Catholic mercenary commanders, Sir William Stanley and Rowland York, defected to Spain and betrayed the key fortresses of <strong>Deventer and the Zutphen sconces</strong> to the Duke of Parma. Deeply humiliated and mistrusted by Dutch leaders, Leicester was recalled to England in December 1587, having achieved negligible military gains.",
           "level_4": "The English campaign suffered from lack of funds and poor leadership. At Zutphen, Sir Philip Sidney was killed, and the betrayal of Deventer to Spain destroyed English credibility, forcing Leicester's recall.",
           "sources": [
             {
@@ -7686,7 +7977,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> Leicester’s military operations were plagued by logistical shortages, tactical blunders, and internal dissension. Elizabeth refused to provide sufficient funding, leaving English soldiers unpaid, diseased, and starving. In September 1586, English forces failed to capture the Spanish supply base at **Zutphen**, a battle famed for the death of poet-soldier **Sir Philip Sidney**.<br><br><span class=\"para-ref\">[2.2]</span> Relations with the Dutch collapsed completely in January 1587 when English Catholic mercenary commanders, Sir William Stanley and Rowland York, defected to Spain and betrayed the key fortresses of **Deventer and the Zutphen sconces** to the Duke of Parma. Deeply humiliated and mistrusted by Dutch leaders, Leicester was recalled to England in December 1587, having achieved negligible military gains. English commanders Stanley & Yorke betrayed Dutch forts at Deventer and Zutphen, deepening Dutch Council of State distrust."
+          "content": "<span class=\"para-ref\">[2.1]</span> Leicester’s military operations were plagued by logistical shortages, tactical blunders, and internal dissension. Elizabeth refused to provide sufficient funding, leaving English soldiers unpaid, diseased, and starving. In September 1586, English forces failed to capture the Spanish supply base at <strong>Zutphen</strong>, a battle famed for the death of poet-soldier <strong>Sir Philip Sidney</strong>.<br><br><span class=\"para-ref\">[2.2]</span> Relations with the Dutch collapsed completely in January 1587 when English Catholic mercenary commanders, Sir William Stanley and Rowland York, defected to Spain and betrayed the key fortresses of <strong>Deventer and the Zutphen sconces</strong> to the Duke of Parma. Deeply humiliated and mistrusted by Dutch leaders, Leicester was recalled to England in December 1587, having achieved negligible military gains."
         },
         {
           "stage": 3,
@@ -7694,7 +7985,7 @@ export default {
           "type": "narrative",
           "title": "Singeing the King of Spain's Beard: Drake's Daring Raid on Cadiz Harbour (1587)",
           "theme_heading": "Singeing the King of Spain's Beard: Drake's Daring Raid on Cadiz Harbour (1587)",
-          "text": "<span class=\"para-ref\">[3.1]</span> By early 1587, Philip II’s naval preparations at the Atlantic port of Cadiz were nearing completion. In April, Elizabeth dispatched Francis Drake with a fleet of 24 ships to disrupt Spanish assembly. Defying cautious orders, Drake audaciously sailed his flagship, the *Elizabeth Bonaventure*, directly into Cadiz harbour under the guns of Spanish fortresses.<br><br><span class=\"para-ref\">[3.2]</span> Over three days, Drake burned and sank **over thirty Spanish ships**, plundered massive supplies, and destroyed tons of seasoned wooden barrel staves needed for food and water storage. Drake boasted that he had **\"singed the King of Spain's beard.\"** The raid delayed the Spanish Armada by more than a year and forced the Spanish to construct fresh, unseasoned water barrels, causing water contamination and disease that devastated the Armada during its voyage.",
+          "text": "<span class=\"para-ref\">[3.1]</span> With war now open and Philip assembling a massive invasion armada in Spanish ports, Elizabeth dispatched Sir Francis Drake with twenty-four warships to disrupt Spanish preparations. On <strong>19 April 1587</strong>, Drake audaciously sailed straight into the heavily fortified harbour of <strong>Cadiz</strong>, catching the Spanish fleet unprepared.<br><br><span class=\"para-ref\">[3.2]</span> Over thirty-six hours of daring naval warfare, Drake destroyed or captured <strong>thirty Spanish transport ships and warships</strong>, broke harbour fortifications, and plundered enormous quantities of arms and provisions. Drake famously characterized this pre-emptive strike as <strong>\"singeing the King of Spain's beard\"</strong>, demonstrating English naval supremacy in Spain's home waters.",
           "level_4": "In April 1587, Drake attacked the fortified port of Cadiz in a daring pre-emptive strike. He destroyed 30 Spanish ships, famously boasting he had 'singed the King of Spain's beard'.",
           "image": "/images/drake_cadiz_1587.jpg",
           "image_alt": "Engraving depicting Sir Francis Drake's fleet attacking Spanish shipping in the Bay of Cadiz in April 1587",
@@ -7723,7 +8014,7 @@ export default {
               "text": "At midnight two hours before day, the English loosed eight great ships filled with pitch, brimstone, and wild-fire, sailing directly upon our fleet before the wind. Seeing the blazing hulls drifting among us with their cannon discharging in the flames, our captains cried 'The hellburners of Antwerp!' In terrifying panic, every galleon cut her cables and severed their anchors, scattering in wild confusion across the stormy shoals."
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> With war now open and Philip assembling a massive invasion armada in Spanish ports, Elizabeth dispatched Sir Francis Drake with twenty-four warships to disrupt Spanish preparations. On **19 April 1587**, Drake audaciously sailed straight into the heavily fortified harbour of **Cadiz**, catching the Spanish fleet unprepared.<br><br><span class=\"para-ref\">[3.2]</span> Over thirty-six hours of daring naval warfare, Drake destroyed or captured **thirty Spanish transport ships and warships**, broke harbour fortifications, and plundered enormous quantities of arms and provisions. Drake famously characterized this pre-emptive strike as **\"singeing the King of Spain's beard\"**, demonstrating English naval supremacy in Spain's home waters. Drake's Cadiz raid (\"singeing the King of Spain’s beard\") destroyed supplies and postponed the Armada by twelve months. Drake's Cadiz raid (\"singeing the King of Spain’s beard\") destroyed supplies and postponed the Armada by twelve months."
+          "content": "<span class=\"para-ref\">[3.1]</span> With war now open and Philip assembling a massive invasion armada in Spanish ports, Elizabeth dispatched Sir Francis Drake with twenty-four warships to disrupt Spanish preparations. On <strong>19 April 1587</strong>, Drake audaciously sailed straight into the heavily fortified harbour of <strong>Cadiz</strong>, catching the Spanish fleet unprepared.<br><br><span class=\"para-ref\">[3.2]</span> Over thirty-six hours of daring naval warfare, Drake destroyed or captured <strong>thirty Spanish transport ships and warships</strong>, broke harbour fortifications, and plundered enormous quantities of arms and provisions. Drake famously characterized this pre-emptive strike as <strong>\"singeing the King of Spain's beard\"</strong>, demonstrating English naval supremacy in Spain's home waters."
         },
         {
           "stage": 4,
@@ -7731,7 +8022,7 @@ export default {
           "type": "narrative",
           "title": "The Logistical Shock: Seasoned Barrel Hoops, Scorched Fleets and Spanish Delay (1587–1588)",
           "theme_heading": "The Logistical Shock: Seasoned Barrel Hoops, Scorched Fleets and Spanish Delay (1587–1588)",
-          "text": "<span class=\"para-ref\">[4.1]</span> Drake’s daring raid on Cadiz inflicted devastating logistical damage on Spanish war planning. He destroyed thirty warships and destroyed fleet provisions and supplies, including tons of dried food and water barrels. Drake also captured the **San Felipe**, a massive Portuguese treasure ship laden with spices and silks worth £114,000.<br><br><span class=\"para-ref\">[4.2]</span> Drake burned thousands of seasoned wooden barrel staves, forcing Spain to construct hurried casks from unseasoned green wood. When Spain's legendary naval commander, the Marquis of Santa Cruz, died in 1588, Philip appointed the inexperienced Duke of Medina Sidonia to lead the fleet. When the Armada finally sailed, rotting food and leaking water casks crippled crew morale before a single shot was fired.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Drake’s raid on Cadiz inflicted devastating tactical and logistical damage on Spanish war planning. He captured the <strong>San Felipe</strong>, a massive Portuguese East Indiaman carrying £108,000 in spices and treasure, which provided funds for English defense and yielded trade secrets. More critically, Drake sailed along the Portuguese coast destroying fishing fleets and burning <strong>thousands of tons of seasoned oak barrel staves</strong>.<br><br><span class=\"para-ref\">[4.2]</span> This forced the Spanish to construct water barrels from green, unseasoned wood, causing food supplies to rot and drinking water to leak during the 1588 voyage. Most decisively, Drake’s raid delayed the sailing of the Armada by <strong>twelve months</strong>, giving England vital time to fortify coastlines and build warships.",
           "level_4": "Drake's raid captured vast treasure and destroyed thousands of seasoned barrel staves, causing Spanish supplies to spoil. Crucially, the strike delayed the Armada by a full year, aiding English preparations.",
           "image": "/images/ark_royal.jpg",
           "image_alt": "Contemporary naval engraving of the English warship Ark Royal, flagship of Lord Howard of Effingham",
@@ -7767,7 +8058,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Drake’s raid on Cadiz inflicted devastating tactical and logistical damage on Spanish war planning. He captured the **San Felipe**, a massive Portuguese East Indiaman carrying £108,000 in spices and treasure, which provided funds for English defense and yielded trade secrets. More critically, Drake sailed along the Portuguese coast destroying fishing fleets and burning **thousands of tons of seasoned oak barrel staves**.<br><br><span class=\"para-ref\">[4.2]</span> This forced the Spanish to construct water barrels from green, unseasoned wood, causing food supplies to rot and drinking water to leak during the 1588 voyage. Most decisively, Drake’s raid delayed the sailing of the Armada by **twelve months**, giving England vital time to fortify coastlines and build warships. When Admiral Santa Cruz died, the inexperienced Duke of Medina Sidonia took charge of a fleet crippled by rotting food and leaking water casks."
+          "content": "<span class=\"para-ref\">[4.1]</span> Drake’s raid on Cadiz inflicted devastating tactical and logistical damage on Spanish war planning. He captured the <strong>San Felipe</strong>, a massive Portuguese East Indiaman carrying £108,000 in spices and treasure, which provided funds for English defense and yielded trade secrets. More critically, Drake sailed along the Portuguese coast destroying fishing fleets and burning <strong>thousands of tons of seasoned oak barrel staves</strong>.<br><br><span class=\"para-ref\">[4.2]</span> This forced the Spanish to construct water barrels from green, unseasoned wood, causing food supplies to rot and drinking water to leak during the 1588 voyage. Most decisively, Drake’s raid delayed the sailing of the Armada by <strong>twelve months</strong>, giving England vital time to fortify coastlines and build warships."
         },
         {
           "stage": 5,
@@ -7775,7 +8066,7 @@ export default {
           "type": "narrative",
           "title": "The Enterprise of England: Medina Sidonia Assembles the Great Fleet at Lisbon (1588)",
           "theme_heading": "The Enterprise of England: Medina Sidonia Assembles the Great Fleet at Lisbon (1588)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In May 1588, Philip II's grand Armada of **130 ships and 30,000 men departed from Lisbon** on the \"Enterprise of England\". Philip’s strategy required Medina Sidonia to sail up the English Channel, anchor off Flanders, and ferry the Duke of Parma’s 27,000 veteran infantry across in flat-bottomed barges.<br><br><span class=\"para-ref\">[5.2]</span> However, the invasion plan was compromised by fatal geographic and communication obstacles: Parma lacked a deep-water harbor in the Dutch shallows to shelter his barges from Dutch gunboats, while maritime communication between Medina Sidonia at sea and Parma on land required an unreliable 48-hour message relay by small boat, making synchronization impossible.",
+          "text": "<span class=\"para-ref\">[5.1]</span> In May 1588, the <strong>Spanish Armada (the 'Enterprise of England')</strong> finally set sail from Lisbon under the command of the <strong>Duke of Medina Sidonia</strong>, comprising <strong>130 warships, 8,000 sailors, and 19,000 soldiers</strong>. Philip II's grand strategy was to sail up the English Channel, anchor off the coast of Flanders, and join forces with the <strong>Duke of Parma’s 27,000 veteran soldiers</strong>, who would be ferried across the Channel in flat-bottomed barges under the Armada’s naval escort.<br><br><span class=\"para-ref\">[5.2]</span> However, the plan contained fatal strategic flaws: Medina Sidonia had no deep-water port in the Low Countries to shelter his fleet, and communication between the Armada and Parma's army required overland messengers, creating dangerous delays and coordination failures.",
           "level_4": "In May 1588, 130 Spanish ships sailed under Medina Sidonia to link with Parma's 27,000 troops in Flanders. The plan had severe flaws, lacking a deep-water port and reliable communications.",
           "source": {
             "id": "source_b_tilbury_speech",
@@ -7831,7 +8122,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> In May 1588, the **Spanish Armada (the 'Enterprise of England')** finally set sail from Lisbon under the command of the **Duke of Medina Sidonia**, comprising **130 warships, 8,000 sailors, and 19,000 soldiers**. Philip II's grand strategy was to sail up the English Channel, anchor off the coast of Flanders, and join forces with the **Duke of Parma’s 27,000 veteran soldiers**, who would be ferried across the Channel in flat-bottomed barges under the Armada’s naval escort.<br><br><span class=\"para-ref\">[5.2]</span> However, the plan contained fatal strategic flaws: Medina Sidonia had no deep-water port in the Low Countries to shelter his fleet, and communication between the Armada and Parma's army required overland messengers, creating dangerous delays and coordination failures. Parma lacked a deep-water harbor in the Flemish shallows and faced an unreliable 48-hour message relay while blockaded by Dutch flyboats. Parma lacked a deep-water harbor in the Flemish shallows and faced an unreliable 48-hour message relay while blockaded by Dutch flyboats."
+          "content": "<span class=\"para-ref\">[5.1]</span> In May 1588, the <strong>Spanish Armada (the 'Enterprise of England')</strong> finally set sail from Lisbon under the command of the <strong>Duke of Medina Sidonia</strong>, comprising <strong>130 warships, 8,000 sailors, and 19,000 soldiers</strong>. Philip II's grand strategy was to sail up the English Channel, anchor off the coast of Flanders, and join forces with the <strong>Duke of Parma’s 27,000 veteran soldiers</strong>, who would be ferried across the Channel in flat-bottomed barges under the Armada’s naval escort.<br><br><span class=\"para-ref\">[5.2]</span> However, the plan contained fatal strategic flaws: Medina Sidonia had no deep-water port in the Low Countries to shelter his fleet, and communication between the Armada and Parma's army required overland messengers, creating dangerous delays and coordination failures."
         }
       ],
       "quiz": [
@@ -8246,7 +8537,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Governor-General Title Angers Elizabeth",
+              "clue": "Robert Dudley accepting the supreme title of Governor-General of the United Provinces, furious that he implied Elizabeth was claiming sovereignty over the Netherlands."
+            },
+            {
+              "term": "Underfunded & Deserting English Troops",
+              "clue": "The desperate plight of English soldiers in the Low Countries, unpaid by a parsimonious queen and dying of disease and starvation in winter camps."
+            },
+            {
+              "term": "Prevents Parma Capturing Deep Ports",
+              "clue": "In return, the Dutch handed over two vital deep-water ports—Brill and Flushing—known as the \"Cautionary Towns,\" which English garrisons occupied as financial security for the costs of the war."
+            }
+          ],
+          "model_sentence": "Although Dudley accepting the <strong>Governor-General Title Angers Elizabeth</strong> while commanding <strong>Underfunded & Deserting English Troops</strong>, his campaign <strong>Prevents Parma Capturing Deep Ports</strong> like Flushing and Brill."
         },
         {
           "stage": 2,
@@ -8262,7 +8568,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Sir Philip Sidney Killed at Zutphen",
+              "clue": "In January 1587, two English Catholic officers appointed by Leicester, Sir William Stanley and Rowland York, defected to the Spanish side, handing over the fortified town of Deventer and the fort at Zutphen to the Duke of Parma."
+            },
+            {
+              "term": "Stanley & Yorke Betray Dutch Forts",
+              "clue": "This catastrophic betrayal shattered Dutch trust in English leadership."
+            },
+            {
+              "term": "Dutch Council of State Distrust",
+              "clue": "Bitter friction between English commanders and wealthy Dutch regents over military strategy, taxation, and Dudley's unilateral political appointments."
+            }
+          ],
+          "model_sentence": "Driven by the leadership of <strong>Sir Philip Sidney Killed at Zutphen</strong>, the impact of <strong>Stanley & Yorke Betray Dutch Forts</strong> was consolidated through the deployment of <strong>Dutch Council of State Distrust</strong>."
         },
         {
           "stage": 3,
@@ -8278,7 +8599,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Thirty Spanish Warships Destroyed",
+              "clue": "Over three days, Drake burned and sank over thirty Spanish ships, plundered massive supplies, and destroyed tons of seasoned wooden barrel staves needed for food and water storage."
+            },
+            {
+              "term": "‘Singeing the King of Spain’s Beard’",
+              "clue": "Drake boasted that he had \"singed the King of Spain's beard.\" The raid delayed the Spanish Armada by more than a year and forced the Spanish to construct fresh, unseasoned water barrels, causing water contamination and disease that devastated the Armada during its voyage."
+            },
+            {
+              "term": "Postpones Armada by Twelve Months",
+              "clue": "Francis Drake's 'Singeing of the King of Spain's Beard' in Cadiz harbor (1587), destroying thirty-seven Spanish ships and thousands of seasoned barrel staves."
+            }
+          ],
+          "model_sentence": "Leading a preemptive raid where <strong>Thirty Spanish Warships Destroyed</strong> in Cadiz harbor, Drake celebrated <strong>‘Singeing the King of Spain’s Beard’</strong> as the strike <strong>Postpones Armada by Twelve Months</strong>."
         },
         {
           "stage": 4,
@@ -8294,7 +8630,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Seasoned Barrel Staves Incinerated",
+              "clue": "Drake burned thousands of seasoned wooden barrel staves, forcing Spain to construct hurried casks from unseasoned green wood."
+            },
+            {
+              "term": "Santa Cruz Dies; Medina Sidonia Inexperienced",
+              "clue": "When Spain's legendary naval commander, the Marquis of Santa Cruz, died in 1588, Philip appointed the inexperienced Duke of Medina Sidonia to lead the fleet."
+            },
+            {
+              "term": "Rotting Food & Leaking Water Casks",
+              "clue": "When the Armada finally sailed, rotting food and leaking water casks crippled crew morale before a single shot was fired."
+            }
+          ],
+          "model_sentence": "Because <strong>Seasoned Barrel Staves Incinerated</strong> at Cadiz and <strong>Santa Cruz Dies; Medina Sidonia Inexperienced</strong> took command, the Spanish fleet departed with <strong>Rotting Food & Leaking Water Casks</strong>."
         },
         {
           "stage": 5,
@@ -8310,7 +8661,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "130 Ships & 30,000 Men Sail",
+              "clue": "In May 1588, Philip II's grand Armada of 130 ships and 30,000 men departed from Lisbon on the \"Enterprise of England\"."
+            },
+            {
+              "term": "Parma Lacks Deep-Water Harbor in Shallows",
+              "clue": "However, the invasion plan was compromised by fatal geographic and communication obstacles: Parma lacked a deep-water harbor in the Dutch shallows to shelter his barges from Dutch gunboats, while maritime communication between Medina Sidonia at sea and Parma on land required an unreliable 48-hour message relay by small boat, making synchronization impossible."
+            },
+            {
+              "term": "Unreliable 48-Hour Message Relay",
+              "clue": "However, the invasion plan was compromised by fatal geographic and communication obstacles: Parma lacked a deep-water harbor in the Dutch shallows to shelter his barges from Dutch gunboats, while maritime communication between Medina Sidonia at sea and Parma on land required an unreliable 48-hour message relay by small boat, making synchronization impossible."
+            }
+          ],
+          "model_sentence": "When <strong>130 Ships & 30,000 Men Sail</strong> up the Channel, communications collapsed because <strong>Parma Lacks Deep-Water Harbor in Shallows</strong> and commanders relied on an <strong>Unreliable 48-Hour Message Relay</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -8624,14 +8990,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The Spanish Armada of 130 ships had to sail through the English Channel to join forces with the Duke of Parma's army in the Netherlands.<br><strong>Detail:</strong> Medina Sidonia was ordered to escort Parma's 27,000 veteran soldiers across the Channel on flat-bottomed barges to launch a land invasion of Kent.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Philip II's invasion strategy was an ambitious combined-arms amphibious assault. However, relying on a sea-borne rendezvous between Medina Sidonia's fleet and Parma's land army without a deep-water port proved to be the plan's fatal strategic vulnerability.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -8662,14 +9020,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The English sent eight pitch-soaked fireships into the anchored Armada at Calais on the night of 7 August 1588.<br><strong>Detail:</strong> This caused mass panic, forcing Spanish captains to cut their anchor cables and scattering the protective crescent formation.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The fireship assault off Calais shattered the tactical cohesion of the Spanish fleet. Deprived of anchors and scattered into the North Sea, the Armada was exposed to close-range English artillery broadsides at the Battle of Gravelines.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -8749,14 +9099,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>English naval tactics and superior ship architecture played a critical, decisive role in the defeat of the Spanish Armada in the summer of 1588. Under the naval administration of John Hawkins, England had constructed a fleet of modern 'race-built' galleons. These vessels featured lower forecastles, streamlined hulls, and greater manoeuvrability, allowing them to sail closer to the wind and consistently hold the 'weather gauge' against the heavier Spanish ships. Crucially, the English mounted their long-range culverin cannons on innovative four-wheeled naval truck carriages, enabling gun crews to reload and fire multiple broadsides in the time a Spanish crew fired once. The tactical climax occurred on the night of 7–8 August off Calais, where Lord Howard unleashed eight pitch-filled fireships into the anchored Armada. The ensuing panic compelled Spanish captains to cut their anchor cables, permanently shattering their impregnable crescent formation. In the subsequent Battle of Gravelines (8 August), English ships closed to point-blank range, battering five Spanish galleons, sinking three, and forcing the disorganized fleet into the treacherous North Sea.<br><br>However, it can be strongly argued that the fundamental cause of the Armada's failure lay in Philip II's fatally flawed grand strategy and catastrophic communication failures. Philip’s operational plan required the Duke of Medina Sidonia’s fleet to sail up the Channel and rendezvous with the Duke of Parma’s 30,000 veteran invasion troops in the Netherlands. This plan contained an insurmountable structural defect: Spain controlled no deep-water port in the Low Countries, meaning Parma’s flat-bottomed invasion barges could only embark from shallow coastal ports like Dunkirk and Sluis. These exits were effectively blockaded by agile Dutch rebel flyboats. Furthermore, communication between Medina Sidonia at sea and Parma on land relied on mounted messengers through hostile territory, taking over 48 hours for a message to travel between them. Consequently, when the Armada arrived off Calais, Parma’s army was not even assembled or ready to embark, rendering the entire invasion enterprise impossible regardless of English actions.<br><br>Furthermore, adverse environmental conditions—celebrated in England as the 'Protestant Wind'—transformed a tactical Spanish retreat into an absolute naval catastrophe. After the Battle of Gravelines, prevailing south-westerly gales cut off the Armada's escape route back down the English Channel, forcing Medina Sidonia to navigate the perilous, uncharted route around the northern coast of Scotland and west of Ireland. Deprived of their anchors (cut at Calais), with damaged hulls, spoiled food, and contaminated water stored in unseasoned casks, the Armada encountered violent Atlantic autumn tempests. Over 40 Spanish galleons were driven onto the rocky cliffs of the Hebrides and the Irish coast, where thousands of Spanish soldiers and sailors were either drowned or slaughtered by local garrisons. In terms of sheer material destruction, weather was responsible for destroying far more Spanish ships and men than English gunfire.<br><br>In conclusion, while the 'Protestant Wind' delivered the final coup de grâce and Spanish strategic planning was deeply flawed from its inception, English naval tactics were the decisive operational factor. It was the audacity of the fireship attack at Calais and the relentless close-quarters gunnery at Gravelines that broke the crescent formation, prevented the rendezvous with Parma, and drove the Armada into the North Sea. Without Hawkins' superior ship design and the tactical brilliance of Drake and Howard, the Armada would have remained an intact fighting force capable of securing an anchorage and executing the invasion.</p>",
                 "verdict": "Level 4 (16/16 marks). Exemplary analytical evaluation weighing three distinct aspects (English tactics/fireships, flawed Spanish grand strategy/lack of deep-water port, 'Protestant Wind' Atlantic storms). Employs rich technical knowledge (culverins, truck carriages, Dutch flyboats) and reaches a sustained, criteria-driven verdict."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Armada campaign of 1588 represents the collision of two divergent naval philosophies against a backdrop of insurmountable logistical friction.<br><br>Philip II conceived the Armada as an amphibious transport operation: the fleet was merely a floating siege-train designed to deliver the tercios of Flanders to the Kent coast, relying upon traditional close-quarters boarding tactics. This grand design was fatally compromised by an operational non-sequitur: demanding a rendezvous between deep-draught galleons and shallow-draught barges in the absence of a captured deep-water port, while Dutch Sea Beggars dominated the littoral shallows.<br><br>Hawkins and Drake exploited this systemic flaw through an asymmetric revolution in naval doctrine. By leveraging superior hydrodynamic design (race-built galleons) and mechanical artillery reload efficiency (truck carriages), English forces maintained tactical standoff. The psychological shock of the Calais fireships dismantled the media luna formation, allowing English gunnery at Gravelines to turn strategic stalemate into tactical retreat, which the subsequent Atlantic tempests escalated into total logistical ruin.</p>",
-                "verdict": "Scholar Distinction. Masterclass in military and naval historiography analyzing operational geometry, littoral choke-points, and the transformation of naval warfare."
               }
             }
           }
@@ -8813,7 +9155,7 @@ export default {
           "type": "narrative",
           "title": "The Crescent Advances: Channel Skirmishes from Plymouth to the Isle of Wight (1588)",
           "theme_heading": "The Crescent Advances: Channel Skirmishes from Plymouth to the Isle of Wight (1588)",
-          "text": "<span class=\"para-ref\">[1.1]</span> In May 1588, Philip II’s **Spanish Armada**—130 ships, 2,430 cannons, and 30,000 men commanded by the Duke of Medina Sidonia—set sail from Lisbon. Philip’s plan was to sail up the English Channel, rendezvous with the Duke of Parma’s 27,000 veteran soldiers in Flanders, and ferry the invasion army across to Kent in flat-bottomed barges. However, the plan suffered fatal flaws: Medina Sidonia had no naval combat experience, supplies spoiled in unseasoned barrels, and Parma possessed no deep-water port, causing 48-hour communication delays.<br><br><span class=\"para-ref\">[1.2]</span> On 29 July 1588, the Armada was sighted off Cornwall, sailing in an impenetrable, seven-mile **crescent formation** with armed galleons protecting unarmed transports. Over the next week, the English fleet under Lord Howard and Francis Drake engaged the Spanish in running skirmishes off **Plymouth** and the **Isle of Wight**. English captains used their faster ships and long-range **culverin cannons** in a gunnery duel beyond boarding range, denying Medina Sidonia safe anchorage in the deep Solent and forcing the Armada onward towards Calais.",
+          "text": "<span class=\"para-ref\">[1.1]</span> On 19 July 1588, the Spanish Armada was sighted off the Lizard in Cornwall, advancing in an impenetrable <strong>seven-mile-wide crescent defensive formation</strong>, with heavily armed galleons protecting unarmed supply storeships in the centre. The English fleet, commanded by <strong>Lord Howard of Effingham</strong> and Sir Francis Drake, sailed out from Plymouth. For a week, running artillery duels took place off Plymouth, Portland Bill, and the <strong>Isle of Wight</strong>.<br><br><span class=\"para-ref\">[1.2]</span> English captains utilized their superior maneuverability to stay upwind and fire long-range <strong>culverin cannons</strong>, avoiding Spanish boarding tactics. While the English failed to break the crescent formation, they successfully prevented the Spanish from seizing a secure anchorage on the Isle of Wight.",
           "level_4": "The Armada sailed up the Channel in a tight 7-mile crescent. English ships engaged in long-range artillery battles, preventing the Spanish from capturing an anchorage at the Isle of Wight.",
           "sources": [
             {
@@ -8844,7 +9186,8 @@ export default {
                 "source_context": "On the night of 7–8 August 1588, Lord Howard of Effingham and Drake launched eight pitch-soaked fireships into the tightly anchored Armada off Calais. Panicked Spanish captains cut their anchor cables and drifted into the North Sea, leaving their ships exposed to devastating English broadsides at Gravelines the next morning. **Hinge Question:** How did the English fireship attack off Calais effectively shatter the Armada's defensive crescent formation?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[1.1]</span> On 19 July 1588, the Spanish Armada was sighted off the Lizard in Cornwall, advancing in an impenetrable <strong>seven-mile-wide crescent defensive formation</strong>, with heavily armed galleons protecting unarmed supply storeships in the centre. The English fleet, commanded by <strong>Lord Howard of Effingham</strong> and Sir Francis Drake, sailed out from Plymouth. For a week, running artillery duels took place off Plymouth, Portland Bill, and the <strong>Isle of Wight</strong>.<br><br><span class=\"para-ref\">[1.2]</span> English captains utilized their superior maneuverability to stay upwind and fire long-range <strong>culverin cannons</strong>, avoiding Spanish boarding tactics. While the English failed to break the crescent formation, they successfully prevented the Spanish from seizing a secure anchorage on the Isle of Wight."
         },
         {
           "stage": 2,
@@ -8852,7 +9195,7 @@ export default {
           "type": "narrative",
           "title": "Midnight at Calais Roads: Hell-Burners, Severed Anchors and Broken Formation (1588)",
           "theme_heading": "Midnight at Calais Roads: Hell-Burners, Severed Anchors and Broken Formation (1588)",
-          "text": "<span class=\"para-ref\">[2.1]</span> On 29 July 1588, the Armada was sighted off the Lizard in Cornwall. Medina Sidonia arranged his fleet into a formidable **crescent formation**, placing heavily armed galleons on the outer flanks to shield the slower transport supply hulks in the centre. This tactical wall was virtually impregnable to direct frontal attack.<br><br><span class=\"para-ref\">[2.2]</span> For a week, Howard and Drake shadowed the Armada as it sailed past Plymouth, Portland Bill, and the Isle of Wight. The English used their superior speed and long-range culverins to bombard the Spanish formation from a distance. Although the English fired thousands of cannonballs, the sturdy Spanish oak hulls held firm, and only two Spanish ships were captured after accidental collisions. On 6 August, Medina Sidonia anchored in the open roads of **Calais**, anxiously awaiting word from Parma.",
+          "text": "<span class=\"para-ref\">[2.1]</span> On 6 August, Medina Sidonia anchored the Armada off <strong>Calais Roads</strong>, awaiting news from the Duke of Parma. However, Parma’s army was blockaded in Dunkirk by Dutch flyboats and was not ready to embark. Recognizing the Spanish vulnerability at anchor, Howard launched a daring midnight attack on 7–8 August.<br><br><span class=\"para-ref\">[2.2]</span> The English loaded eight old transport vessels with pitch, tar, and loaded cannons, set them ablaze, and sent these <strong>eight fireships</strong> drifting with the wind and tide into the densely packed Spanish anchorage. Panic swept through the Armada: fearing deadly explosive \"hellburners\", Spanish captains <strong>severed their anchor cables</strong> and scattered into the darkness. The disciplined crescent formation was permanently broken.",
           "level_4": "While anchored at Calais, the English launched eight blazing fireships at midnight. Terrified Spanish captains cut their anchor cables and scattered in panic, permanently shattering their defensive crescent.",
           "image": "/images/spanish_armada_battle.jpg",
           "image_alt": "Dramatic maritime painting showing English and Spanish galleons locked in close artillery duel in the English Channel",
@@ -8888,7 +9231,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> On 6 August, Medina Sidonia anchored the Armada off **Calais Roads**, awaiting news from the Duke of Parma. However, Parma’s army was blockaded in Dunkirk by Dutch flyboats and was not ready to embark. Recognizing the Spanish vulnerability at anchor, Howard launched a daring midnight attack on 7–8 August.<br><br><span class=\"para-ref\">[2.2]</span> The English loaded eight old transport vessels with pitch, tar, and loaded cannons, set them ablaze, and sent these **eight fireships** drifting with the wind and tide into the densely packed Spanish anchorage. Panic swept through the Armada: fearing deadly explosive \"hellburners\", Spanish captains **severed their anchor cables** and scattered into the darkness. The disciplined crescent formation was permanently broken. At Calais, panic-stricken Spanish ships cut anchors when eight English fireships attacked, ensuring the shattered crescent never reformed. At Calais, panic-stricken Spanish ships cut anchors when eight English fireships attacked, ensuring the shattered crescent never reformed."
+          "content": "<span class=\"para-ref\">[2.1]</span> On 6 August, Medina Sidonia anchored the Armada off <strong>Calais Roads</strong>, awaiting news from the Duke of Parma. However, Parma’s army was blockaded in Dunkirk by Dutch flyboats and was not ready to embark. Recognizing the Spanish vulnerability at anchor, Howard launched a daring midnight attack on 7–8 August.<br><br><span class=\"para-ref\">[2.2]</span> The English loaded eight old transport vessels with pitch, tar, and loaded cannons, set them ablaze, and sent these <strong>eight fireships</strong> drifting with the wind and tide into the densely packed Spanish anchorage. Panic swept through the Armada: fearing deadly explosive \"hellburners\", Spanish captains <strong>severed their anchor cables</strong> and scattered into the darkness. The disciplined crescent formation was permanently broken."
         },
         {
           "stage": 3,
@@ -8896,7 +9239,7 @@ export default {
           "type": "narrative",
           "title": "The Bloodbath at Gravelines: Hawkins' Race-Built Galleons and Close-Range Broadside (1588)",
           "theme_heading": "The Bloodbath at Gravelines: Hawkins' Race-Built Galleons and Close-Range Broadside (1588)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Anchored in the vulnerable Calais roads, the Armada was exposed to disaster. Medina Sidonia discovered that Parma’s troops were trapped by Dutch flyboats and would take at least six days to embark. Seeing their opportunity, the English commanders held a midnight council of war on Howard’s flagship, the *Ark Royal*.<br><br><span class=\"para-ref\">[3.2]</span> At midnight on 7 August, the English launched **eight old ships loaded with pitch, tar, and gunpowder**, setting them ablaze and sending them drifting on the tide directly toward the densely packed Spanish fleet. Terrified of \"hellburners\" (floating bombs), Spanish captains panicked, severed their anchor cables, and hoisted sails to flee. By dawn, the tight crescent formation was completely shattered, and the disorganized Spanish ships were scattered northward along the treacherous Flemish coast.",
+          "text": "<span class=\"para-ref\">[3.1]</span> At dawn on <strong>8 August 1588</strong>, English warships attacked the disorganized Spanish fleet off the coast of <strong>Gravelines</strong>. John Hawkins’ modern <strong>race-built galleons</strong>—lower, faster, and more maneuverable than the bulky Spanish vessels—closed to point-blank range, pounding Spanish hulls with continuous broadsides. English gun crews, trained to rapidly reload four-wheeled gun carriages, fired multiple shots for every single Spanish reply.<br><br><span class=\"para-ref\">[3.2]</span> Spanish gunners, crowded with soldiers and armed with mismatched cannons, were unable to reload effectively. Three Spanish galleons were sunk, many were severely crippled, and over <strong>1,000 Spanish sailors were killed</strong>, while the English suffered negligible ship losses.",
           "level_4": "At Gravelines on 8 August, faster English galleons closed in with rapid broadside fire. English gunnery sank three galleons and shattered Spanish resistance without losing a single ship.",
           "source": {
             "id": "source_a_battle_of_gravelines",
@@ -8948,7 +9291,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> At dawn on **8 August 1588**, English warships attacked the disorganized Spanish fleet off the coast of **Gravelines**. John Hawkins’ modern **race-built galleons**—lower, faster, and more maneuverable than the bulky Spanish vessels—closed to point-blank range, pounding Spanish hulls with continuous broadsides. English gun crews, trained to rapidly reload four-wheeled gun carriages, fired multiple shots for every single Spanish reply.<br><br><span class=\"para-ref\">[3.2]</span> Spanish gunners, crowded with soldiers and armed with mismatched cannons, were unable to reload effectively. Three Spanish galleons were sunk, many were severely crippled, and over **1,000 Spanish sailors were killed**, while the English suffered negligible ship losses. English ships deployed rapid-fire broadside gunnery at close range during the decisive Battle of Gravelines. English ships deployed rapid-fire broadside gunnery at close range during the decisive Battle of Gravelines."
+          "content": "<span class=\"para-ref\">[3.1]</span> At dawn on <strong>8 August 1588</strong>, English warships attacked the disorganized Spanish fleet off the coast of <strong>Gravelines</strong>. John Hawkins’ modern <strong>race-built galleons</strong>—lower, faster, and more maneuverable than the bulky Spanish vessels—closed to point-blank range, pounding Spanish hulls with continuous broadsides. English gun crews, trained to rapidly reload four-wheeled gun carriages, fired multiple shots for every single Spanish reply.<br><br><span class=\"para-ref\">[3.2]</span> Spanish gunners, crowded with soldiers and armed with mismatched cannons, were unable to reload effectively. Three Spanish galleons were sunk, many were severely crippled, and over <strong>1,000 Spanish sailors were killed</strong>, while the English suffered negligible ship losses."
         },
         {
           "stage": 4,
@@ -8956,7 +9299,7 @@ export default {
           "type": "narrative",
           "title": "The Protestant Wind: The Ordeal of the Scottish Isles and Shipwrecks on Irish Rocks (1588)",
           "theme_heading": "The Protestant Wind: The Ordeal of the Scottish Isles and Shipwrecks on Irish Rocks (1588)",
-          "text": "<span class=\"para-ref\">[4.1]</span> On the morning of 8 August 1588, Howard and Drake struck the scattered Spanish ships in the ferocious **Battle of Gravelines**. Closing to within 100 yards, English race-built galleons unleashed devastating, rapid broadsides. Spanish crews, exhausted and short of properly sized shot, were unable to reload their heavy guns and suffered horrifying casualties.<br><br><span class=\"para-ref\">[4.2]</span> Five Spanish galleons were sunk or run aground, and over 1,000 Spanish sailors were killed. Just as the surviving Spanish fleet seemed doomed to wreck on the Zeeland sandbanks, a sudden gale blew up from the south-west—hailed by the English as the **\"Protestant Wind\"**—driving the Armada away from the Flemish coast into the icy North Sea. With their ammunition exhausted, the English fleet turned back at the Firth of Forth, leaving the broken Armada to face the treacherous journey home.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Following Gravelines, the surviving Armada faced utter destruction. A fierce southwesterly gale—celebrated by Protestants as the <strong>\"Protestant Wind\"</strong>—prevented the Spanish from reuniting with Parma and drove the fleet into the treacherous North Sea. With their anchor cables severed at Calais, Spanish ships could not shelter in friendly harbours and were forced to undertake a perilous voyage home around the northern coast of Scotland and the western coast of Ireland.<br><br><span class=\"para-ref\">[4.2]</span> Battered by fierce Atlantic storms and lacking fresh water and navigational charts, dozens of ships were wrecked on the rocky cliffs of <strong>Scotland and Ireland</strong>. Surviving sailors who crawled ashore were slaughtered by local clans or English garrisons; barely <strong>sixty-seven battered vessels</strong> returned to Spain.",
           "level_4": "Driven north by gale-force winds, the Armada was forced to sail around Scotland and Ireland. Lacking anchors, dozens of ships were wrecked in Atlantic storms, and only 67 ships limped home.",
           "image": "/images/armada_gravelines_chart_1590.jpg",
           "image_alt": "Augustine Ryther chart depicting the English fireship attack on the Armada off Calais and the battle of Gravelines",
@@ -8985,7 +9328,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Following Gravelines, the surviving Armada faced utter destruction. A fierce southwesterly gale—celebrated by Protestants as the **\"Protestant Wind\"**—prevented the Spanish from reuniting with Parma and drove the fleet into the treacherous North Sea. With their anchor cables severed at Calais, Spanish ships could not shelter in friendly harbours and were forced to undertake a perilous voyage home around the northern coast of Scotland and the western coast of Ireland.<br><br><span class=\"para-ref\">[4.2]</span> Battered by fierce Atlantic storms and lacking fresh water and navigational charts, dozens of ships were wrecked on the rocky cliffs of **Scotland and Ireland**. Surviving sailors who crawled ashore were slaughtered by local clans or English garrisons; barely **sixty-seven battered vessels** returned to Spain. Missing anchors proved fatal on Scottish & Irish reefs, where autumn gales wrecked dozens of fleeing Spanish galleons."
+          "content": "<span class=\"para-ref\">[4.1]</span> Following Gravelines, the surviving Armada faced utter destruction. A fierce southwesterly gale—celebrated by Protestants as the <strong>\"Protestant Wind\"</strong>—prevented the Spanish from reuniting with Parma and drove the fleet into the treacherous North Sea. With their anchor cables severed at Calais, Spanish ships could not shelter in friendly harbours and were forced to undertake a perilous voyage home around the northern coast of Scotland and the western coast of Ireland.<br><br><span class=\"para-ref\">[4.2]</span> Battered by fierce Atlantic storms and lacking fresh water and navigational charts, dozens of ships were wrecked on the rocky cliffs of <strong>Scotland and Ireland</strong>. Surviving sailors who crawled ashore were slaughtered by local clans or English garrisons; barely <strong>sixty-seven battered vessels</strong> returned to Spain."
         },
         {
           "stage": 5,
@@ -8993,7 +9336,7 @@ export default {
           "type": "narrative",
           "title": "The Protestant Deliverance: Elizabeth at Tilbury, Medals of Gold and English Triumph (1588–1589)",
           "theme_heading": "The Protestant Deliverance: Elizabeth at Tilbury, Medals of Gold and English Triumph (1588–1589)",
-          "text": "<span class=\"para-ref\">[5.1]</span> Following the Armada's defeat, Elizabeth cemented her image as the victorious Protestant warrior queen. Riding among her troops at Tilbury, Elizabeth delivered her iconic address: \"I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too.\"<br><br><span class=\"para-ref\">[5.2]</span> England celebrated the deliverance as a divine Protestant miracle, issuing commemorative medals inscribed: *God blew and they were scattered*. The triumph secured Elizabeth's throne, demonstrated the superiority of English naval tactics, and established England's rising Protestant naval superpower prestige on the world stage.",
+          "text": "<span class=\"para-ref\">[5.1]</span> England's triumph over the Armada was celebrated as a divine validation of Protestantism, with Elizabeth issuing commemorative medals inscribed: <em>\"God blew and they were scattered\"</em>. At the military camp at Tilbury, Elizabeth delivered her iconic address, declaring she had <strong>\"the heart and stomach of a king, and of a king of England too\"</strong>, cementing her national status as Gloriana.<br><br><span class=\"para-ref\">[5.2]</span> The victory secured English national independence, prevented a catastrophic Catholic restoration, and established England as a formidable maritime power. While war with Spain dragged on until the Treaty of London in 1604, Philip II’s financial credit was battered and the myth of Spanish naval invincibility was permanently shattered.",
           "level_4": "Defeating the Armada secured English independence and boosted national pride, inspiring Elizabeth's Tilbury speech. It shattered the myth of Spanish naval invincibility and validated the Protestant nation.",
           "source": {
             "id": "source_b_armada_portrait",
@@ -9045,7 +9388,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> England's triumph over the Armada was celebrated as a divine validation of Protestantism, with Elizabeth issuing commemorative medals inscribed: <em>\"God blew and they were scattered\"</em>. At the military camp at Tilbury, Elizabeth delivered her iconic address, declaring she had **\"the heart and stomach of a king, and of a king of England too\"**, cementing her national status as Gloriana.<br><br><span class=\"para-ref\">[5.2]</span> The victory secured English national independence, prevented a catastrophic Catholic restoration, and established England as a formidable maritime power. While war with Spain dragged on until the Treaty of London in 1604, Philip II’s financial credit was battered and the myth of Spanish naval invincibility was permanently shattered. The victory medal proclaimed \"God blew and they were scattered\", marking total strategic humiliation for Philip II."
+          "content": "<span class=\"para-ref\">[5.1]</span> England's triumph over the Armada was celebrated as a divine validation of Protestantism, with Elizabeth issuing commemorative medals inscribed: <em>\"God blew and they were scattered\"</em>. At the military camp at Tilbury, Elizabeth delivered her iconic address, declaring she had <strong>\"the heart and stomach of a king, and of a king of England too\"</strong>, cementing her national status as Gloriana.<br><br><span class=\"para-ref\">[5.2]</span> The victory secured English national independence, prevented a catastrophic Catholic restoration, and established England as a formidable maritime power. While war with Spain dragged on until the Treaty of London in 1604, Philip II’s financial credit was battered and the myth of Spanish naval invincibility was permanently shattered."
         }
       ],
       "quiz": [
@@ -9459,7 +9802,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Seven-Mile Crescent Defensive Line",
+              "clue": "The tightly disciplined defensive formation maintained by the 130-ship Spanish Armada sailing up the English Channel, protecting its transport vessels."
+            },
+            {
+              "term": "Long-Range Culverin Duel Beyond Boarding",
+              "clue": "English captains used their faster ships and long-range culverin cannons in a gunnery duel beyond boarding range, denying Medina Sidonia safe anchorage in the deep Solent and forcing the Armada onward towards Calais."
+            },
+            {
+              "term": "Prevented Landing on Isle of Wight",
+              "clue": "Over the next week, the English fleet under Lord Howard and Francis Drake engaged the Spanish in running skirmishes off Plymouth and the Isle of Wight."
+            }
+          ],
+          "model_sentence": "Advancing in a formidable <strong>Seven-Mile Crescent Defensive Line</strong>, Medina Sidonia fought a <strong>Long-Range Culverin Duel Beyond Boarding</strong> that successfully <strong>Prevented Landing on Isle of Wight</strong>."
         },
         {
           "stage": 2,
@@ -9475,7 +9833,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Eight Pitch-Soaked Vessels at Midnight",
+              "clue": "The fireships packed with gunpowder and pitch launched by the English fleet into Calais harbour on 7 August 1588, scattering the panicked Spanish fleet."
+            },
+            {
+              "term": "Panic-Stricken Spanish Ships Cut Anchors",
+              "clue": "Although the English fired thousands of cannonballs, the sturdy Spanish oak hulls held firm, and only two Spanish ships were captured after accidental collisions."
+            },
+            {
+              "term": "Shattered Crescent Never Reforms",
+              "clue": "The loss of formation after the fireship attack that left individual Spanish galleons isolated and exposed to close-range English broadsides at Gravelines."
+            }
+          ],
+          "model_sentence": "Releasing <strong>Eight Pitch-Soaked Vessels at Midnight</strong> into Calais roads, the attack caused <strong>Panic-Stricken Spanish Ships Cut Anchors</strong>, ensuring their <strong>Shattered Crescent Never Reforms</strong>."
         },
         {
           "stage": 3,
@@ -9491,7 +9864,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Fast English Race-Built Galleons",
+              "clue": "A fast, highly manoeuvrable multi-decked warship carrying heavy broadside cannons, perfected by English shipbuilders."
+            },
+            {
+              "term": "Rapid-Fire Broadside Gunnery Close Range",
+              "clue": "English culverin naval guns mounted on nimble race-built galleons capable of firing repeated iron shot while staying out of Spanish grappling range."
+            },
+            {
+              "term": "Three Galleons Sunk & Fleet Scattered",
+              "clue": "A fast, highly manoeuvrable multi-decked warship carrying heavy broadside cannons, perfected by English shipbuilders."
+            }
+          ],
+          "model_sentence": "Taking advantage of <strong>Fast English Race-Built Galleons</strong>, Howard used <strong>Rapid-Fire Broadside Gunnery Close Range</strong> until <strong>Three Galleons Sunk & Fleet Scattered</strong> at Gravelines."
         },
         {
           "stage": 4,
@@ -9507,7 +9895,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Gale-Force ‘Protestant Wind’ Drives North",
+              "clue": "Just as the surviving Spanish fleet seemed doomed to wreck on the Zeeland sandbanks, a sudden gale blew up from the south-west—hailed by the English as the \"Protestant Wind\"—driving the Armada away from the Flemish coast into the icy North Sea."
+            },
+            {
+              "term": "Missing Anchors on Scottish & Irish Reefs",
+              "clue": "The fatal decision of Armada captains to cut their anchor cables at Calais, leaving ships unable to moor off rocky Scottish and Irish coasts in Atlantic storms."
+            },
+            {
+              "term": "Only Sixty-Seven Battered Ships Return",
+              "clue": "The catastrophic toll of the Armada campaign, where nearly half of Philip II's fleet was wrecked by storms and starvation on the return journey."
+            }
+          ],
+          "model_sentence": "As a <strong>Gale-Force ‘Protestant Wind’ Drives North</strong>, wrecked ships foundered on <strong>Missing Anchors on Scottish & Irish Reefs</strong>, leaving <strong>Only Sixty-Seven Battered Ships Return</strong> to Spain."
         },
         {
           "stage": 5,
@@ -9523,7 +9926,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Tilbury Speech: ‘Heart & Stomach of a King’",
+              "clue": "Riding among her troops at Tilbury, Elizabeth delivered her iconic address: \"I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too.\" England celebrated the deliverance as a divine Protestant miracle, issuing commemorative medals inscribed: *God blew and they were scattered*."
+            },
+            {
+              "term": "‘God Blew and They Were Scattered’ Medals",
+              "clue": "Riding among her troops at Tilbury, Elizabeth delivered her iconic address: \"I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too.\" England celebrated the deliverance as a divine Protestant miracle, issuing commemorative medals inscribed: *God blew and they were scattered*."
+            },
+            {
+              "term": "English Naval Superpower Prestige Secured",
+              "clue": "The triumph secured Elizabeth's throne, demonstrated the superiority of English naval tactics, and established England's rising Protestant naval superpower prestige on the world stage."
+            }
+          ],
+          "model_sentence": "Inspiring her troops with her <strong>Tilbury Speech: ‘Heart & Stomach of a King’</strong> and minting <strong>‘God Blew and They Were Scattered’ Medals</strong>, the triumph saw <strong>English Naval Superpower Prestige Secured</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -9793,14 +10211,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Grammar schools were fee-paying secondary schools for boys from middle-class families (sons of gentry and wealthy merchants) aged 7 to 14.<br><strong>Detail:</strong> They had long 10-hour school days focusing heavily on Latin grammar, Greek, classical Roman writers like Cicero, and religious education.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Grammar schools functioned as humanist training grounds for the emergent Tudor administrative and commercial elite, cultivating rhetorical eloquence and civic responsibility required for statecraft and commerce.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -9831,14 +10241,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Theatres like The Globe and The Rose were purpose-built circular open-air wooden amphitheatres erected outside the City of London walls to avoid Puritan bans.<br><strong>Detail:</strong> They held up to 3,000 spectators, with poorer 'groundlings' paying 1d to stand in the yard and wealthy nobles paying up to 6d for covered gallery seats.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The Elizabethan commercial theatre created a shared secular public sphere in suburban liberties, democratizing cultural consumption across social strata while operating beyond municipal puritan jurisdiction.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -9918,14 +10320,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>One primary reason for the expansion of education in Elizabethan England was the intellectual revolution of Renaissance Humanism. Humanist thinkers, inspired by philosophers such as Desiderius Erasmus, argued that education should not merely serve the Church to train priests, but was vital for unlocking human potential, cultivating virtue, and training active citizens for public service. This intellectual movement gained immense support among the gentry and wealthy urban elites, who recognized that a classical humanist education in Latin, history, and rhetoric was essential for political influence and social mobility. Consequently, wealthy benefactors endowed over 70 new grammar schools across England, transforming secondary education from a narrow theological training ground into a dynamic vehicle for civic leadership.<br><br>Furthermore, the rapid growth of domestic and international commerce created an urgent practical demand for a literate and numerate workforce. During Elizabeth’s reign, England’s commercial landscape expanded dramatically with the foundation of chartered joint-stock companies (such as the Muscovy, Eastland, and Levant Companies) and the diversification of domestic markets. Merchants, shipwrights, customs officials, and Yeomen farmers managing enclosed estates required practical literacy and numeracy to maintain complex double-entry ledgers, write maritime contracts, navigate legal courts, and calculate currency exchange rates. To satisfy this functional commercial necessity, hundreds of local 'petty schools' and dame schools were established, teaching basic reading, writing, and English arithmetic to the sons of merchants, yeomen, and skilled craftsmen.<br><br>Finally, the consolidation of the Protestant Reformation created a powerful spiritual incentive for mass literacy. Central to Protestant doctrine was the principle of 'sola scriptura'—the belief that individual believers could only attain salvation through personal engagement with the Word of God. The 1559 Royal Injunctions ordered every parish church to possess an English Great Bible, encouraging ordinary parishioners to read scripture for themselves. Protestant parents felt a deep moral and religious obligation to ensure their children were literate enough to read the Bible, recite the Protestant catechism, and study religious pamphlets. This religious imperative drove widespread attendance at petty schools and grammar schools, cementing literacy as a foundational pillar of both religious conformity and national Protestant identity.</p>",
                 "verdict": "Level 4 (12/12 marks). Analytical explanation directed consistently at the question. Examines three distinct aspects of content (Renaissance humanism/grammar schools, commercial expansion/petty schools, Protestant sola scriptura/Bible literacy) with precise historical evidence and sustained PEEL causal links throughout."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The pedagogical expansion of the Elizabethan era represented a structural convergence of ideological, socio-economic, and administrative transformations.<br><br>First, the humanist revolution secularized educational teleology: by subordinating scholastic theology to classical literae humaniores, thinkers like Erasmus and Roger Ascham reframed education as the prerequisite for civic governance, motivating the gentry to fund endowed grammar schools to secure their sons' administrative pre-eminence.<br><br>Second, the maturation of early modern commercial capitalism demanded functional numeracy and vernacular literacy. The proliferation of joint-stock companies and maritime ventures necessitated a bourgeois administrative cadre capable of managing complex ledger systems and legal conveyancing, spawning an infrastructure of petty and dame schools.<br><br>Third, Protestant confessionalisation embedded vernacular literacy within the domestic sphere. By defining salvation through personal scripture encounter (sola scriptura), the Reformation made literacy a religious imperative, transforming educational acquisition from an aristocratic privilege into an instrument of spiritual survival and crown surveillance.</p>",
-                "verdict": "Scholar Distinction. Masterful evaluation of humanist secularisation, commercial capitalism, and Protestant confessionalisation."
               }
             }
           }
@@ -9986,7 +10380,7 @@ export default {
           "image_alt": "Johannes Stradanus engraving Impressio Librorum showing a Renaissance printing workshop",
           "caption": "Johannes Stradanus, Impressio Librorum (c. 1580). Renaissance engraving depicting moveable-type compositors, inkers, and screw presses that drove the Tudor literacy revolution.",
           "isReversed": false,
-          "text": "<span class=\"para-ref\">[1.1]</span> In Elizabethan England, education was strictly governed by the **Great Chain of Being**, reflecting each child’s predetermined social status. While the intellectual movement of **Humanism** encouraged education to train active citizens for public service, schooling remained an exclusive privilege rather than a universal right. Basic literacy began at home or in local **petty schools** and **dame schools**, where young children learned the alphabet, hornbook reading, and the catechism before boys entered grammar school.<br><br><span class=\"para-ref\">[1.2]</span> The Protestant Reformation and the **printing press** accelerated national demand for literacy, as Protestant doctrine held that every Christian should read the English Bible. Although formal schooling was unavailable to the labouring poor, literacy rose steadily: by 1588, approximately **30 per cent of men** and **10 per cent of women** could read and write. For wealthy merchants and yeomen, securing a literate education for their sons became the essential gateway to commercial success and social advancement.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Education in Elizabethan England was shaped by the Renaissance revival of learning known as <strong>Humanism</strong>, which argued that education should develop civilized citizens capable of governing the realm. However, schooling was strictly governed by the <strong>Great Chain of Being</strong>: education was intended to prepare children for their ordained station in life, not to encourage social climbing.<br><br><span class=\"para-ref\">[1.2]</span> Literacy rates rose steadily, with male literacy increasing from 20% to roughly <strong>30% of men</strong> by 1600, while female literacy remained below <strong>10%</strong>. Young children of the middling sort began their education in <strong>Petty Schools</strong> (or Dame Schools for girls), run by local women or clergy, learning basic English reading, writing, and arithmetic before progressing to grammar school or domestic work.",
           "level_4": "Influenced by Humanism, Elizabethan education expanded, raising male literacy to about 30%. However, schooling was restricted by social class, preparing pupils only for their assigned social station.",
           "sources": [
             {
@@ -10017,7 +10411,8 @@ export default {
                 "source_context": "Hornbooks were wooden paddles holding a sheet of printed paper covered by transparent animal horn to protect it from sticky fingers. Every Elizabethan child began learning literacy through the alphabet and the Lord's Prayer. **Hinge Question:** Why did Protestant religious doctrine make early reading literacy an essential spiritual duty rather than merely an elite academic luxury?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[1.1]</span> Education in Elizabethan England was shaped by the Renaissance revival of learning known as <strong>Humanism</strong>, which argued that education should develop civilized citizens capable of governing the realm. However, schooling was strictly governed by the <strong>Great Chain of Being</strong>: education was intended to prepare children for their ordained station in life, not to encourage social climbing.<br><br><span class=\"para-ref\">[1.2]</span> Literacy rates rose steadily, with male literacy increasing from 20% to roughly <strong>30% of men</strong> by 1600, while female literacy remained below <strong>10%</strong>. Young children of the middling sort began their education in <strong>Petty Schools</strong> (or Dame Schools for girls), run by local women or clergy, learning basic English reading, writing, and arithmetic before progressing to grammar school or domestic work."
         },
         {
           "stage": 2,
@@ -10025,7 +10420,7 @@ export default {
           "type": "narrative",
           "title": "The Latin Grammar School: Rote Chant, Birch Rods and the Making of the Tudor Elite",
           "theme_heading": "The Latin Grammar School: Rote Chant, Birch Rods and the Making of the Tudor Elite",
-          "text": "<span class=\"para-ref\">[2.1]</span> The backbone of Elizabethan secondary education was the **Grammar School**. Over seventy new grammar schools were founded during Elizabeth’s reign, financed by wealthy gentry and merchant benefactors. Grammar schools catered exclusively to boys from the gentry, yeomen, and merchant classes. The curriculum was gruelling: boys attended school six days a week from 6 am to 5 pm, studying Latin grammar, Greek, history, and classical literature, enforced through strict corporal punishment with the birch rod.<br><br><span class=\"para-ref\">[2.2]</span> Younger children of the middling sort began their education at **Petty Schools** (often run in a local teacher's home) or **Dame Schools** (run by local women), where they learned basic reading, writing, and arithmetic using a hornbook. At the top of the system stood England’s two ancient universities, **Oxford and Cambridge**, where young gentlemen studied law, medicine, philosophy, and theology, alongside the **Inns of Court** in London, which trained wealthy young men in statutory law.",
+          "text": "<span class=\"para-ref\">[2.1]</span> The Elizabethan era witnessed a dramatic expansion in secondary education, with over <strong>seventy new endowed Grammar Schools</strong> founded across the realm, including Queen Elizabeth's Grammar School in Blackburn. These schools were independent of church control and charged fees, though funded scholarships allowed bright boys from yeoman and merchant backgrounds to attend.<br><br><span class=\"para-ref\">[2.2]</span> The curriculum was rigorously academic, concentrating on <strong>Latin grammar, classical literature (Cicero, Virgil), Greek, and rhetoric</strong>. School days were intensely demanding, lasting from 6:00 am to 5:00 pm, six days a week, reinforced by strict corporal punishment with the birch rod to instill discipline and deference to authority.",
           "level_4": "Over 70 new grammar schools provided classical education in Latin and rhetoric for sons of merchants and gentry. The rigorous routine instilled strict social discipline through corporal punishment.",
           "isReversed": false,
           "sources": [
@@ -10051,7 +10446,7 @@ export default {
               "text": "I have known good wits so beaten and battered by cruel schoolmasters that they have clean lost all delight in learning. Young gentlemen are driven from books by the terror of the birch rod; for masters do punish dullness of memory as if it were malice of the heart. Beat a horse often and he will ever shy; beat a child often, and you shall make him an enemy to all virtue."
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> The Elizabethan era witnessed a dramatic expansion in secondary education, with over **seventy new endowed Grammar Schools** founded across the realm, including Queen Elizabeth's Grammar School in Blackburn. These schools were independent of church control and charged fees, though funded scholarships allowed bright boys from yeoman and merchant backgrounds to attend.<br><br><span class=\"para-ref\">[2.2]</span> The curriculum was rigorously academic, concentrating on **Latin grammar, classical literature (Cicero, Virgil), Greek, and rhetoric**. School days were intensely demanding, lasting from 6:00 am to 5:00 pm, six days a week, reinforced by strict corporal punishment with the birch rod to instill discipline and deference to authority. Grammar school expansion offered social mobility for middling sons of yeomen and merchants, while girls remained excluded."
+          "content": "<span class=\"para-ref\">[2.1]</span> The Elizabethan era witnessed a dramatic expansion in secondary education, with over <strong>seventy new endowed Grammar Schools</strong> founded across the realm, including Queen Elizabeth's Grammar School in Blackburn. These schools were independent of church control and charged fees, though funded scholarships allowed bright boys from yeoman and merchant backgrounds to attend.<br><br><span class=\"para-ref\">[2.2]</span> The curriculum was rigorously academic, concentrating on <strong>Latin grammar, classical literature (Cicero, Virgil), Greek, and rhetoric</strong>. School days were intensely demanding, lasting from 6:00 am to 5:00 pm, six days a week, reinforced by strict corporal punishment with the birch rod to instill discipline and deference to authority."
         },
         {
           "stage": 3,
@@ -10059,7 +10454,7 @@ export default {
           "type": "narrative",
           "title": "Oxford, Cambridge & The Inns of Court: Gentlemen Scholars, Lawyers and Private Tutors",
           "theme_heading": "Oxford, Cambridge & The Inns of Court: Gentlemen Scholars, Lawyers and Private Tutors",
-          "text": "<span class=\"para-ref\">[3.1]</span> Education in Elizabethan England was strictly divided by social station and gender. Wealthy aristocratic families did not send their sons to ordinary schools; noble boys were educated at home by private tutors, learning Latin, French, courtly manners, fencing, and horsemanship. Noble girls also received private tuition in modern languages, music, needlework, and household management, but were barred from grammar schools and universities.<br><br><span class=\"para-ref\">[3.2]</span> For the vast majority of lower-class children—the sons and daughters of tenant farmers and agricultural labourers—formal education did not exist. Poor families needed their children working in fields or domestic service from the age of seven or eight to help the family survive. Working-class boys might enter a seven-year trade apprenticeship at fourteen, while girls learned housekeeping, spinning, and brewing from their mothers to prepare for marriage.",
+          "text": "<span class=\"para-ref\">[3.1]</span> For the children of the nobility and landed gentry, formal education was delivered at home by <strong>private tutors</strong>, teaching classical languages, French, history, geography, and gentlemanly accomplishments like horsemanship and fencing. Daughters of noble households were tutored in needlework, music, and foreign languages to prepare them for advantageous marriages.<br><br><span class=\"para-ref\">[3.2]</span> Higher education centered on England’s two ancient universities, <strong>Oxford and Cambridge</strong>, which expanded significantly under Elizabeth to train Anglican clergy, lawyers, and royal administrators. Wealthy young gentlemen frequently completed their education in London at the <strong>Inns of Court</strong>, studying common law and acquiring the cosmopolitan legal skills necessary for managing landed estates and county governance.",
           "level_4": "Noble children were taught at home by private tutors in academic subjects and courtly skills. Older sons progressed to Oxford, Cambridge, or the London Inns of Court to study law and administration.",
           "source": {
             "id": "source_a_royal_procession",
@@ -10104,7 +10499,7 @@ export default {
               "text": "At Oxford and Cambridge, gentlemen scholars are instructed in logic, rhetoric, and moral philosophy, but of late years many do apply their minds to geography, geometry, and astronomy. Master Thomas Harriot and other scholars have brought forth new calculations for oceanic navigation, translating Euclidean principles to assist our mariners in sailing the Atlantic."
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> For the children of the nobility and landed gentry, formal education was delivered at home by **private tutors**, teaching classical languages, French, history, geography, and gentlemanly accomplishments like horsemanship and fencing. Daughters of noble households were tutored in needlework, music, and foreign languages to prepare them for advantageous marriages.<br><br><span class=\"para-ref\">[3.2]</span> Higher education centered on England’s two ancient universities, **Oxford and Cambridge**, which expanded significantly under Elizabeth to train Anglican clergy, lawyers, and royal administrators. Wealthy young gentlemen frequently completed their education in London at the **Inns of Court**, studying common law and acquiring the cosmopolitan legal skills necessary for managing landed estates and county governance. Oxford & Cambridge college expansions and the Inns of Court trained the gentry in legal administration and statecraft."
+          "content": "<span class=\"para-ref\">[3.1]</span> For the children of the nobility and landed gentry, formal education was delivered at home by <strong>private tutors</strong>, teaching classical languages, French, history, geography, and gentlemanly accomplishments like horsemanship and fencing. Daughters of noble households were tutored in needlework, music, and foreign languages to prepare them for advantageous marriages.<br><br><span class=\"para-ref\">[3.2]</span> Higher education centered on England’s two ancient universities, <strong>Oxford and Cambridge</strong>, which expanded significantly under Elizabeth to train Anglican clergy, lawyers, and royal administrators. Wealthy young gentlemen frequently completed their education in London at the <strong>Inns of Court</strong>, studying common law and acquiring the cosmopolitan legal skills necessary for managing landed estates and county governance."
         },
         {
           "stage": 4,
@@ -10112,7 +10507,7 @@ export default {
           "type": "narrative",
           "title": "Blood Sports and Tavern Dice: Football Brawls, Cockfighting and Aristocratic Hunting",
           "theme_heading": "Blood Sports and Tavern Dice: Football Brawls, Cockfighting and Aristocratic Hunting",
-          "text": "<span class=\"para-ref\">[4.1]</span> Elizabethan leisure reflected the sharp divide in social hierarchy. Wealthy noblemen enjoyed sophisticated pursuits such as hunting on horseback, hawking, archery, tennis, and fencing. In contrast, ordinary working people gathered at village fairs, parish feasts, and alehouses to drink, dance around Maypoles, play early forms of bowls, or engage in violent parish football matches that often resulted in broken limbs.<br><br><span class=\"para-ref\">[4.2]</span> Across all social classes, Elizabethans loved **blood sports**. Huge crowds flocked to purpose-built arenas on Bankside in Southwark to watch **bear-baiting** and **bull-baiting**, where chained animals were mauled by mastiffs, with spectators placing heavy bets. **Cock-fighting** was equally popular, enjoyed by monarchs and labourers alike. However, the growing Puritan movement fiercely condemned blood sports, fairs, and Maypoles, denouncing them as ungodly vices that defiled the Christian Sabbath and distracted people from prayer.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Elizabethan leisure pursuits closely mirrored the rigid class structure of society. The nobility indulged in exclusive, expensive sports such as <strong>hunting deer, hawking, real tennis, and fencing</strong>, which reinforced aristocratic chivalry and martial prowess.<br><br><span class=\"para-ref\">[4.2]</span> In contrast, common working people engaged in rowdy, violent community pastimes on holidays, including <strong>football</strong>—an unregulated, brutal brawl between rival villages that frequently resulted in broken limbs and fatal injuries. However, blood sports were enjoyed by all social classes: <strong>bear-baiting, bull-baiting, and cockfighting</strong> drew huge, enthusiastic crowds from nobles to vagrants at purpose-built arenas such as the Paris Garden in Southwark, where spectators gambled heavily on the outcome.",
           "level_4": "Leisure was sharply divided by class: elites enjoyed hunting, hawking, and tennis, while commoners played violent village football. However, blood sports like bear-baiting were loved by all social ranks.",
           "isReversed": true,
           "sources": [
@@ -10145,7 +10540,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Elizabethan leisure pursuits closely mirrored the rigid class structure of society. The nobility indulged in exclusive, expensive sports such as **hunting deer, hawking, real tennis, and fencing**, which reinforced aristocratic chivalry and martial prowess.<br><br><span class=\"para-ref\">[4.2]</span> In contrast, common working people engaged in rowdy, violent community pastimes on holidays, including **football**—an unregulated, brutal brawl between rival villages that frequently resulted in broken limbs and fatal injuries. However, blood sports were enjoyed by all social classes: **bear-baiting, bull-baiting, and cockfighting** drew huge, enthusiastic crowds from nobles to vagrants at purpose-built arenas such as the Paris Garden in Southwark, where spectators gambled heavily on the outcome. Working men engaged in violent folk football and archery for commoners on village greens."
+          "content": "<span class=\"para-ref\">[4.1]</span> Elizabethan leisure pursuits closely mirrored the rigid class structure of society. The nobility indulged in exclusive, expensive sports such as <strong>hunting deer, hawking, real tennis, and fencing</strong>, which reinforced aristocratic chivalry and martial prowess.<br><br><span class=\"para-ref\">[4.2]</span> In contrast, common working people engaged in rowdy, violent community pastimes on holidays, including <strong>football</strong>—an unregulated, brutal brawl between rival villages that frequently resulted in broken limbs and fatal injuries. However, blood sports were enjoyed by all social classes: <strong>bear-baiting, bull-baiting, and cockfighting</strong> drew huge, enthusiastic crowds from nobles to vagrants at purpose-built arenas such as the Paris Garden in Southwark, where spectators gambled heavily on the outcome."
         },
         {
           "stage": 5,
@@ -10157,7 +10552,7 @@ export default {
           "image_alt": "The Chandos portrait of William Shakespeare wearing an earring and white collar",
           "caption": "Attributed to John Taylor, The Chandos Portrait of William Shakespeare (c. 1600–1610, NPG 1). Playwright whose works for the Lord Chamberlain's Men defined the booming commercial Elizabethan stage.",
           "isReversed": true,
-          "text": "<span class=\"para-ref\">[5.1]</span> The Elizabethan era saw the birth of commercial English drama. In 1576, actor James Burbage built **The Theatre** in Shoreditch, launching purpose-built venues like the Red Lion and the Rose outside the city walls of London to escape municipal bans.<br><br><span class=\"para-ref\">[5.2]</span> The playhouses attracted up to 3,000 spectators across all social classes: common groundlings paid 1d to stand in the open pit, while wealthy gentry paid up to 6d for cushioned galleries. However, religious authorities fiercely resisted: Puritans condemned immorality and disease, warning that packed playhouses spread the bubonic plague, promoted blasphemy, and drew workers away from honest labour.",
+          "text": "<span class=\"para-ref\">[5.1]</span> The Elizabethan era saw the birth of secular commercial drama, evolving from wandering troupes of actors performing in inn-yards to purpose-built permanent playhouses. In 1576, James Burbage erected the first permanent theatre, <strong>The Theatre</strong>, in Shoreditch, outside the City of London's jurisdiction, followed by <strong>The Curtain (1577) and The Rose (1587)</strong>.<br><br><span class=\"para-ref\">[5.2]</span> Playhouses accommodated up to 3,000 spectators and were unique social melting pots: common <strong>groundlings paid one penny</strong> to stand in the open yard, while wealthy gentry paid up to sixpence for cushioned upper galleries. However, the theatre provoked fierce opposition from <strong>Puritan ministers and London authorities</strong>, who condemned plays as sinful breeding grounds for plague, prostitution, and public disorder.",
           "level_4": "Permanent playhouses like 'The Theatre' (1576) emerged outside London, attracting thousands from penny groundlings to nobles. Puritans and magistrates opposed theatres due to fears of plague and immorality.",
           "source": {
             "id": "source_b_swan_theatre",
@@ -10209,7 +10604,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> The Elizabethan era saw the birth of secular commercial drama, evolving from wandering troupes of actors performing in inn-yards to purpose-built permanent playhouses. In 1576, James Burbage erected the first permanent theatre, **The Theatre**, in Shoreditch, outside the City of London's jurisdiction, followed by **The Curtain (1577) and The Rose (1587)**.<br><br><span class=\"para-ref\">[5.2]</span> Playhouses accommodated up to 3,000 spectators and were unique social melting pots: common **groundlings paid one penny** to stand in the open yard, while wealthy gentry paid up to sixpence for cushioned upper galleries. However, the theatre provoked fierce opposition from **Puritan ministers and London authorities**, who condemned plays as sinful breeding grounds for plague, prostitution, and public disorder. Puritans condemned the new theatres for immorality and plague risk, attempting to ban playhouses outside the city walls."
+          "content": "<span class=\"para-ref\">[5.1]</span> The Elizabethan era saw the birth of secular commercial drama, evolving from wandering troupes of actors performing in inn-yards to purpose-built permanent playhouses. In 1576, James Burbage erected the first permanent theatre, <strong>The Theatre</strong>, in Shoreditch, outside the City of London's jurisdiction, followed by <strong>The Curtain (1577) and The Rose (1587)</strong>.<br><br><span class=\"para-ref\">[5.2]</span> Playhouses accommodated up to 3,000 spectators and were unique social melting pots: common <strong>groundlings paid one penny</strong> to stand in the open yard, while wealthy gentry paid up to sixpence for cushioned upper galleries. However, the theatre provoked fierce opposition from <strong>Puritan ministers and London authorities</strong>, who condemned plays as sinful breeding grounds for plague, prostitution, and public disorder."
         }
       ],
       "quiz": [
@@ -10654,7 +11049,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Literacy at 30% for Men & 10% for Women",
+              "clue": "Although formal schooling was unavailable to the labouring poor, literacy rose steadily: by 1588, approximately 30 per cent of men and 10 per cent of women could read and write."
+            },
+            {
+              "term": "Petty Schools & Dame Schools for Basics",
+              "clue": "Basic literacy began at home or in local petty schools and dame schools, where young children learned the alphabet, hornbook reading, and the catechism before boys entered grammar school."
+            },
+            {
+              "term": "Reinforcing Great Chain of Being",
+              "clue": "In Elizabethan England, education was strictly governed by the Great Chain of Being, reflecting each child’s predetermined social status."
+            }
+          ],
+          "model_sentence": "Reflecting modest <strong>Literacy at 30% for Men & 10% for Women</strong>, children learned reading in <strong>Petty Schools & Dame Schools for Basics</strong>, with schooling designed around <strong>Reinforcing Great Chain of Being</strong>."
         },
         {
           "stage": 2,
@@ -10670,7 +11080,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Over Seventy New Endowed Schools Founded",
+              "clue": "Over seventy new grammar schools were founded during Elizabeth’s reign, financed by wealthy gentry and merchant benefactors."
+            },
+            {
+              "term": "Latin Grammar & Classical Rhetoric Curriculum",
+              "clue": "The curriculum was gruelling: boys attended school six days a week from 6 am to 5 pm, studying Latin grammar, Greek, history, and classical literature, enforced through strict corporal punishment with the birch rod."
+            },
+            {
+              "term": "Social Mobility for Middling Sons",
+              "clue": "The rising social status of yeoman farmers and merchants whose educated sons attended grammar schools and entered legal and administrative careers."
+            }
+          ],
+          "model_sentence": "As <strong>Over Seventy New Endowed Schools Founded</strong> across England, grammar schools taught a <strong>Latin Grammar & Classical Rhetoric Curriculum</strong> that offered <strong>Social Mobility for Middling Sons</strong>."
         },
         {
           "stage": 3,
@@ -10686,7 +11111,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Private Tutors in Noble Households",
+              "clue": "Wealthy aristocratic families did not send their sons to ordinary schools; noble boys were educated at home by private tutors, learning Latin, French, courtly manners, fencing, and horsemanship."
+            },
+            {
+              "term": "Oxford & Cambridge College Expansions",
+              "clue": "The rapid growth of Elizabethan university colleges providing theological training for Anglican clergy and education for gentry administrators."
+            },
+            {
+              "term": "Inns of Court London Legal Training",
+              "clue": "The prestigious London legal institutions (Gray's Inn, Lincoln's Inn, Temple) where wealthy gentry sons completed their gentlemanly education."
+            }
+          ],
+          "model_sentence": "Supplementing <strong>Private Tutors in Noble Households</strong>, aristocratic sons attended <strong>Oxford & Cambridge College Expansions</strong> before completing their training with <strong>Inns of Court London Legal Training</strong>."
         },
         {
           "stage": 4,
@@ -10702,7 +11142,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Hunting, Hawking & Fencing for Elites",
+              "clue": "Wealthy noblemen enjoyed sophisticated pursuits such as hunting on horseback, hawking, archery, tennis, and fencing."
+            },
+            {
+              "term": "Violent Folk Football & Archery for Commoners",
+              "clue": "In contrast, ordinary working people gathered at village fairs, parish feasts, and alehouses to drink, dance around Maypoles, play early forms of bowls, or engage in violent parish football matches that often resulted in broken limbs."
+            },
+            {
+              "term": "Universal Paris Garden Bear-Baiting",
+              "clue": "Popular mass entertainment in Southwark amphitheaters where audiences from all social classes gathered to watch dogs bait chained bears and bulls."
+            }
+          ],
+          "model_sentence": "While nobles enjoyed <strong>Hunting, Hawking & Fencing for Elites</strong> and commoners played <strong>Violent Folk Football & Archery for Commoners</strong>, all classes flocked to <strong>Universal Paris Garden Bear-Baiting</strong>."
         },
         {
           "stage": 5,
@@ -10718,7 +11173,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Burbage Builds ‘The Theatre’ at Shoreditch",
+              "clue": "In 1576, actor James Burbage built The Theatre in Shoreditch, launching purpose-built venues like the Red Lion and the Rose outside the city walls of London to escape municipal bans."
+            },
+            {
+              "term": "Penny Groundlings Mingle with Box Gentry",
+              "clue": "The playhouses attracted up to 3,000 spectators across all social classes: common groundlings paid 1d to stand in the open pit, while wealthy gentry paid up to 6d for cushioned galleries."
+            },
+            {
+              "term": "Puritans Condemn Immorality & Plague Risk",
+              "clue": "However, religious authorities fiercely resisted: Puritans condemned immorality and disease, warning that packed playhouses spread the bubonic plague, promoted blasphemy, and drew workers away from honest labour."
+            }
+          ],
+          "model_sentence": "When James <strong>Burbage Builds ‘The Theatre’ at Shoreditch</strong> in 1576, thousands of <strong>Penny Groundlings Mingle with Box Gentry</strong>, even as <strong>Puritans Condemn Immorality & Plague Risk</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -10989,14 +11459,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The Act introduced harsh physical punishments for the 'idle poor', including public whipping and burning through the ear gristle with a hot iron.<br><strong>Detail:</strong> However, it also introduced a compulsory local poor rate to collect money to house and feed the elderly and sick ('impotent poor').</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The 1572 Act institutionalized statutory division between the 'deserving' and 'undeserving' poor, combining punitive corporal discipline for mobile vagrants with municipal taxation for local parish relief.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -11027,14 +11489,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Towns and Justices of the Peace were required to provide raw materials (such as wool, hemp, and flax) so the able-bodied poor could work for wages.<br><strong>Detail:</strong> It also ordered Houses of Correction (Bridewells) to be built to punish and force anyone who refused to work to do hard labour.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The 1576 Act shifted social policy from mere penal repression to state-sponsored employment creation, attempting to absorb surplus agricultural labor through municipal raw material stocks and Bridewells.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -11114,14 +11568,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>Bad harvests and resulting subsistence crises were undeniably a catastrophic short-term accelerator of poverty and distress in Elizabethan England. Because the vast majority of ordinary Elizabethans lived at subsistence level, agricultural yields dictated daily survival. When catastrophic weather ruined consecutive harvests—notably in 1573, 1586, and during the devastating four-year famine of 1594–97—food supplies collapsed. The price of wheat and grain skyrocketed by up to 300%, while real wages remained stagnant. For landless day laborers and urban wage-earners who spent up to 80% of their income on food, harvest failures pushed millions across the threshold of absolute starvation. The resulting desperation forced families to abandon rural villages and take to the roads as vagrants, directly triggering the severe poverty crises of the 1570s and 1590s.<br><br>However, it can be strongly argued that the fundamental, underlying cause of poverty was relentless demographic pressure and structural inflation. During Elizabeth’s reign, England’s population surged by more than 40%, rising from approximately 2.8 million in 1558 to over 4.1 million by 1603. This unprecedented population growth drastically outstripped agricultural output, creating chronic demand-pull inflation that drove up food prices throughout the entire half-century. Simultaneously, a swelling labor force flooded the job market, depressing real wages and making underemployment endemic. Furthermore, the land market faced intense pressure: landlords exploited the land hunger by 'rack-renting' (charging exorbitant rents) and imposing crushing entry fines on tenant farmers. This demographic pressure created a permanent structural underclass of working poor who were chronically impoverished regardless of weather conditions.<br><br>Furthermore, the widespread practice of agrarian enclosure and the expansion of sheep farming contributed significantly to rural depopulation and destitution. Landlords increasingly enclosed traditional open-field arable land, fencing off common lands and converting crop farming into pasture for sheep because the international wool trade was vastly more lucrative. Unlike labor-intensive arable farming, which required dozens of laborers to plow, plant, and harvest, pastoral sheep farming required only a handful of shepherds. Consequently, enclosure led to mass rural evictions, the destruction of cottages, and the loss of customary grazing rights for poor peasants. Thousands of dispossessed agricultural workers were cast adrift without land or employment, swelling the ranks of the 'sturdy vagabonds' who migrated toward London and major market towns.<br><br>In conclusion, while bad harvests acted as acute, visible triggers that turned chronic hardship into acute famine, they were not the fundamental cause of the increase in poverty. The true underlying causes were structural: the dramatic population explosion and the widespread enclosure of agricultural land created a permanent structural surplus of labor and relentless price inflation. Bad harvests merely exposed and accelerated a crisis of poverty that had already been engineered by demographic and agrarian revolution.</p>",
                 "verdict": "Level 4 (16/16 marks). Comprehensive, criteria-driven evaluation weighing short-term harvest failures against structural demographic growth and agrarian enclosure. Deploys rich factual detail (population 2.8m to 4.1m, grain price inflation, rack-renting, sheep farming evictions) and reaches a sustained, sophisticated judgement."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The historiography of Elizabethan poverty requires an analytical distinction between acute exogenous shocks and underlying Malthusian structural pressures.<br><br>Bad harvests undeniably acted as acute catalysts of socio-economic catastrophe. In a pre-industrial agrarian economy lacking integrated transportation, climatic anomalies (such as the torrential rains of the mid-1590s) caused immediate grain price hyper-inflation, precipitating localized mortality spikes and visible waves of wandering vagrancy that terrified the landed gentry.<br><br>Nevertheless, harvest failures were merely the periodic triggers of a profound structural crisis. The primary driver was a classic Malthusian dilemma: a demographic surge from 2.8 to 4.1 million collided with an inelastic agricultural ceiling and debased currency, driving a 50% collapse in real wages across the sixteenth century. When compounded by capitalist agrarian restructuring—enclosure of common waste and rack-renting to facilitate sheep pasture—the Tudor countryside generated a structural surplus of proletarianized labor, compelling the state to construct the institutional architecture of the Poor Laws (1572–1601) to stave off agrarian revolt.</p>",
-                "verdict": "Scholar Distinction. Masterclass in economic historiography synthesizing Malthusian demographic traps, wage deflation, and agrarian capitalism."
               }
             }
           }
@@ -11183,7 +11629,7 @@ export default {
           "image_alt": "Marcus Gheeraerts portrait of Sir William Cecil, 1st Baron Burghley with white beard and wand of office",
           "caption": "Marcus Gheeraerts the Elder, Sir William Cecil, 1st Baron Burghley (c. 1585, NPG 362). Queen Elizabeth's chief minister whose parliamentary memoranda closely tracked rising grain prices and harvest crises.",
           "isReversed": false,
-          "text": "<span class=\"para-ref\">[1.1]</span> Throughout Elizabeth’s reign, poverty and homelessness surged to crisis levels across England. The primary engine of poverty was rapid **population growth**: England’s population jumped from approximately **3.0 million in 1551 to over 4.2 million by 1601**. This sudden demographic surge created severe competition for food, housing, and land, driving food prices sharply upwards while surplus labor kept agricultural wages stagnant.<br><br><span class=\"para-ref\">[1.2]</span> The crisis was intensified by economic catastrophe. In bad harvest years (such as 1556, 1586, and the catastrophic crop failures of the 1590s), grain shortages caused food prices to skyrocket, forcing poor families to spend up to **80 per cent of their total income on bread alone**. Furthermore, previous Tudor monarchs had debased the currency by reducing the silver content of coins to pay for wars, creating widespread inflation that impoverished ordinary wage-earners.",
+          "text": "<span class=\"para-ref\">[1.1]</span> The fundamental driver of Elizabethan poverty was a massive demographic explosion. England’s population surged from 3 million in 1558 to over <strong>4.2 million by 1600</strong>, driven by falling death rates and higher fertility. Agricultural food production failed to keep pace with this rapid growth, resulting in severe food shortages and spiralling inflation, particularly when compounded by consecutive <strong>bad harvests in the 1570s and 1580s</strong>.<br><br><span class=\"para-ref\">[1.2]</span> The price of basic bread grain escalated far faster than income, causing <strong>real wages to collapse by 50%</strong>. Ordinary labourers, tenant farmers, and urban apprentices were pushed below subsistence levels, sparking a widespread crisis of poverty and hunger across the realm.",
           "level_4": "England's population grew from 3m to over 4m, causing demand for food to outstrip supply. Bad harvests drove up food prices while real wages fell, plunging thousands into desperate poverty.",
           "sources": [
             {
@@ -11205,7 +11651,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> The fundamental driver of Elizabethan poverty was a massive demographic explosion. England’s population surged from 3 million in 1558 to over **4.2 million by 1600**, driven by falling death rates and higher fertility. Agricultural food production failed to keep pace with this rapid growth, resulting in severe food shortages and spiralling inflation, particularly when compounded by consecutive **bad harvests in the 1570s and 1580s**.<br><br><span class=\"para-ref\">[1.2]</span> The price of basic bread grain escalated far faster than income, causing **real wages to collapse by 50%**. Ordinary labourers, tenant farmers, and urban apprentices were pushed below subsistence levels, sparking a widespread crisis of poverty and hunger across the realm. England's population surged from 3 million to over 4 million, driving food inflation and extreme poverty. England's population surges from 3 million to over 4 million, driving food inflation and extreme poverty."
+          "content": "<span class=\"para-ref\">[1.1]</span> The fundamental driver of Elizabethan poverty was a massive demographic explosion. England’s population surged from 3 million in 1558 to over <strong>4.2 million by 1600</strong>, driven by falling death rates and higher fertility. Agricultural food production failed to keep pace with this rapid growth, resulting in severe food shortages and spiralling inflation, particularly when compounded by consecutive <strong>bad harvests in the 1570s and 1580s</strong>.<br><br><span class=\"para-ref\">[1.2]</span> The price of basic bread grain escalated far faster than income, causing <strong>real wages to collapse by 50%</strong>. Ordinary labourers, tenant farmers, and urban apprentices were pushed below subsistence levels, sparking a widespread crisis of poverty and hunger across the realm."
         },
         {
           "stage": 2,
@@ -11213,7 +11659,7 @@ export default {
           "type": "narrative",
           "title": "Enclosure and Rural Poverty: Sheep Farming, Rising Rents and Displaced Villagers",
           "theme_heading": "Enclosure and Rural Poverty: Sheep Farming, Rising Rents and Displaced Villagers",
-          "text": "<span class=\"para-ref\">[2.1]</span> Agrarian changes in the English countryside pushed thousands of rural families off the land. As the English cloth trade boomed, landowners realized that rearing sheep for wool was far more profitable than growing wheat. Landowners engaged in **enclosure**—combining small open agricultural strips into large, fenced pastures and enclosing ancient common land that ordinary villagers relied on to graze cattle and gather firewood.<br><br><span class=\"para-ref\">[2.2]</span> Sheep farming required only a handful of shepherds compared to dozens of farmhands, causing massive rural unemployment. In addition, Henry VIII’s **Dissolution of the Monasteries** in the 1530s had destroyed the centuries-old Catholic welfare safety net: monasteries had provided food, shelter, medical care, and alms to the destitute. With the monasteries gone, thousands of dispossessed peasants were forced onto the roads as homeless vagrants.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Agrarian restructuring intensified rural unemployment. Landowners realized that sheep farming for the booming wool and cloth trade—which accounted for <strong>80% of English exports</strong>—was far more profitable than traditional arable grain farming. Consequently, landlords carried out <strong>enclosure</strong>, fencing off open communal fields and common waste land to create large private sheep pastures.<br><br><span class=\"para-ref\">[2.2]</span> Unlike labour-intensive crop cultivation, sheep farming required only a handful of shepherds. Landlords dramatically raised rents (<strong>rack-renting</strong>) and evicted thousands of tenant cottagers and strip farmers, forcing dispossessed rural families to wander the country in search of employment as landless vagrants.",
           "level_4": "Landlords enclosed common land to graze sheep for the profitable wool trade, which required few workers. Evicted tenant farmers were driven off the land and forced into vagrancy.",
           "isReversed": false,
           "sources": [
@@ -11236,7 +11682,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> Agrarian restructuring intensified rural unemployment. Landowners realized that sheep farming for the booming wool and cloth trade—which accounted for **80% of English exports**—was far more profitable than traditional arable grain farming. Consequently, landlords carried out **enclosure**, fencing off open communal fields and common waste land to create large private sheep pastures.<br><br><span class=\"para-ref\">[2.2]</span> Unlike labour-intensive crop cultivation, sheep farming required only a handful of shepherds. Landlords dramatically raised rents (**rack-renting**) and evicted thousands of tenant cottagers and strip farmers, forcing dispossessed rural families to wander the country in search of employment as landless vagrants. Enclosure involved hedging common land for low-labour flocks of sheep, displacing tenant farmers into unemployment. Enclosure involved hedging common land for low-labour flocks of sheep, displacing tenant farmers into unemployment."
+          "content": "<span class=\"para-ref\">[2.1]</span> Agrarian restructuring intensified rural unemployment. Landowners realized that sheep farming for the booming wool and cloth trade—which accounted for <strong>80% of English exports</strong>—was far more profitable than traditional arable grain farming. Consequently, landlords carried out <strong>enclosure</strong>, fencing off open communal fields and common waste land to create large private sheep pastures.<br><br><span class=\"para-ref\">[2.2]</span> Unlike labour-intensive crop cultivation, sheep farming required only a handful of shepherds. Landlords dramatically raised rents (<strong>rack-renting</strong>) and evicted thousands of tenant cottagers and strip farmers, forcing dispossessed rural families to wander the country in search of employment as landless vagrants."
         },
         {
           "stage": 3,
@@ -11244,7 +11690,7 @@ export default {
           "type": "narrative",
           "title": "The Fear of Vagrancy: 'Deserving Poor' vs 'Idle Beggars' and Social Anxieties",
           "theme_heading": "The Fear of Vagrancy: 'Deserving Poor' vs 'Idle Beggars' and Social Anxieties",
-          "text": "<span class=\"para-ref\">[3.1]</span> Elizabethan society viewed vagrancy with genuine terror. Without a national police force, magistrates feared that roaming bands of homeless vagabonds would spread plague, commit burglaries, and spark violent popular rebellion. Sixteenth-century thinkers divided the impoverished into two distinct categories: the **\"Deserving (Impotent) Poor\"** and the **\"Undeserving (Idle) Poor\"**.<br><br><span class=\"para-ref\">[3.2]</span> The **Deserving or Impotent Poor**—the elderly, sick, orphans, and disabled who were physically unable to work—were viewed with Christian sympathy and entitled to local charity. In contrast, the **Undeserving Poor**, branded as \"idle sturdy beggars\", were seen as lazy criminals who chose vagrancy over honest toil. Writers like Thomas Harman published sensational pamphlets warning of beggar tricks, such as \"counterfeit cranks\" who foamed at the mouth using soap to scam donations, hardening public attitudes against wandering vagabonds.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Elizabethan authorities grew terrified of social unrest, viewing the growing masses of wandering beggars as a direct threat to law and order. Society drew a rigid distinction between the <strong>\"Impotent Poor\"</strong> (the elderly, orphans, and physically sick who were genuinely unable to work) and the <strong>\"Idle Poor\" or \"Sturdy Beggars\"</strong> (able-bodied individuals suspected of feigning illness to avoid honest toil).<br><br><span class=\"para-ref\">[3.2]</span> Popular literature, notably Thomas Harman’s sensationalist 1567 book <strong>A Caveat for Common Cursitors</strong>, propagated the fear that vagrants formed organised criminal gangs of \"counterfeit cranks\" and \"hookers\", convincing the Elizabethan ruling class that harsh statutory measures were urgently necessary.",
           "level_4": "Elizabethans distinguished between the deserving 'impotent poor' and the 'idle sturdy beggars'. Influenced by books like Harman's Caveat, authorities feared vagrants would cause riots and crime.",
           "source": {
             "id": "source_a_caveat_for_cursitors",
@@ -11286,7 +11732,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> Elizabethan authorities grew terrified of social unrest, viewing the growing masses of wandering beggars as a direct threat to law and order. Society drew a rigid distinction between the **\"Impotent Poor\"** (the elderly, orphans, and physically sick who were genuinely unable to work) and the **\"Idle Poor\" or \"Sturdy Beggars\"** (able-bodied individuals suspected of feigning illness to avoid honest toil).<br><br><span class=\"para-ref\">[3.2]</span> Popular literature, notably Thomas Harman’s sensationalist 1567 book **A Caveat for Common Cursitors**, propagated the fear that vagrants formed organised criminal gangs of \"counterfeit cranks\" and \"hookers\", convincing the Elizabethan ruling class that harsh statutory measures were urgently necessary. Authorities lived in constant dread of social unrest and treasonous riot caused by roving bands of vagabonds."
+          "content": "<span class=\"para-ref\">[3.1]</span> Elizabethan authorities grew terrified of social unrest, viewing the growing masses of wandering beggars as a direct threat to law and order. Society drew a rigid distinction between the <strong>\"Impotent Poor\"</strong> (the elderly, orphans, and physically sick who were genuinely unable to work) and the <strong>\"Idle Poor\" or \"Sturdy Beggars\"</strong> (able-bodied individuals suspected of feigning illness to avoid honest toil).<br><br><span class=\"para-ref\">[3.2]</span> Popular literature, notably Thomas Harman’s sensationalist 1567 book <strong>A Caveat for Common Cursitors</strong>, propagated the fear that vagrants formed organised criminal gangs of \"counterfeit cranks\" and \"hookers\", convincing the Elizabethan ruling class that harsh statutory measures were urgently necessary."
         },
         {
           "stage": 4,
@@ -11294,7 +11740,7 @@ export default {
           "type": "narrative",
           "title": "Branded with the Red-Hot Iron: The 1572 Vagabonds Act and Compulsory Poor Rates",
           "theme_heading": "Branded with the Red-Hot Iron: The 1572 Vagabonds Act and Compulsory Poor Rates",
-          "text": "<span class=\"para-ref\">[4.1]</span> As traditional voluntary charity failed to cope with the crisis, Parliament took decisive legislative action. The landmark **Vagabonds Act of 1572** introduced brutal deterrents: anyone over fourteen convicted of vagrancy was to be **whipped and burned through the gristle of the right ear** with a hot iron. A second offence brought life imprisonment, and a third offence carried the death penalty by hanging.<br><br><span class=\"para-ref\">[4.2]</span> Crucially, the 1572 Act also recognized that the impotent poor needed organized support. It legally required local magistrates to establish a **compulsory Poor Rate tax** on all local property owners and appoint **Overseers of the Poor** to collect funds and provide weekly financial relief to the impotent poor. In 1576, Parliament passed the **Act for the Relief of the Poor**, ordering towns to provide raw materials (such as wool, hemp, and flax) so the able-bodied unemployed could work, while establishing **Houses of Correction (Bridewells)** to punish those who refused to work.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Passed by Parliament in response to rising vagrancy, the <strong>1572 Vagabonds Act</strong> combined draconian criminal punishments with the first institutional mechanism for state welfare. To deter vagrancy, any able-bodied person over fourteen caught begging without a licence was to be arrested, <strong>severely whipped, and have a hole burned through their right ear</strong> with a hot iron.<br><br><span class=\"para-ref\">[4.2]</span> Repeat offenders faced death for felony. However, the act introduced a landmark welfare reform: local magistrates were legally required to establish a <strong>compulsory Poor Rate tax</strong> on all local property owners and appoint <strong>Overseers of the Poor</strong> to collect funds and provide weekly financial relief to the impotent poor.",
           "level_4": "The 1572 Vagabonds Act punished sturdy beggars with whipping and ear-boring, but also introduced a compulsory parish Poor Rate tax and Overseers of the Poor to support the impotent poor.",
           "isReversed": true,
           "sources": [
@@ -11318,7 +11764,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Passed by Parliament in response to rising vagrancy, the **1572 Vagabonds Act** combined draconian criminal punishments with the first institutional mechanism for state welfare. To deter vagrancy, any able-bodied person over fourteen caught begging without a licence was to be arrested, **severely whipped, and have a hole burned through their right ear** with a hot iron.<br><br><span class=\"para-ref\">[4.2]</span> Repeat offenders faced death for felony. However, the act introduced a landmark welfare reform: local magistrates were legally required to establish a **compulsory Poor Rate tax** on all local property owners and appoint **Overseers of the Poor** to collect funds and provide weekly financial relief to the impotent poor. The 1572 Vagabonds Act appointed overseers to distribute relief and mandated ear-boring punishments for sturdy beggars. The 1572 Vagabonds Act appointed overseers to distribute relief and mandated ear-boring punishments for sturdy beggars."
+          "content": "<span class=\"para-ref\">[4.1]</span> Passed by Parliament in response to rising vagrancy, the <strong>1572 Vagabonds Act</strong> combined draconian criminal punishments with the first institutional mechanism for state welfare. To deter vagrancy, any able-bodied person over fourteen caught begging without a licence was to be arrested, <strong>severely whipped, and have a hole burned through their right ear</strong> with a hot iron.<br><br><span class=\"para-ref\">[4.2]</span> Repeat offenders faced death for felony. However, the act introduced a landmark welfare reform: local magistrates were legally required to establish a <strong>compulsory Poor Rate tax</strong> on all local property owners and appoint <strong>Overseers of the Poor</strong> to collect funds and provide weekly financial relief to the impotent poor."
         },
         {
           "stage": 5,
@@ -11330,7 +11776,7 @@ export default {
           "image_alt": "George Vertue engraving showing King Edward VI granting the charter of Bridewell Palace to the City of London",
           "caption": "George Vertue after Hans Holbein, The Charter of Bridewell Hospital (1750). The institutional prototype adopted nationwide under the 1576 Poor Act to put the able-bodied poor to work in county Houses of Correction.",
           "isReversed": true,
-          "text": "<span class=\"para-ref\">[5.1]</span> In 1576, Parliament passed the landmark **Act for Relief of the Poor**, recognizing that the state had a direct responsibility to provide employment for the able-bodied poor. The 1576 statute ordered towns and parishes to maintain raw stocks of **wool, hemp, and flax** so the unemployed could be put to work producing cloth. Furthermore, the act established compulsory **Houses of Correction (Bridewells)**, where persistent idle vagrants were sentenced to hard labour and physical discipline.<br><br><span class=\"para-ref\">[5.2]</span> The 1576 legislation established the structural principle that distinguish between poverty caused by economic hardship and idle vagabondage. When disastrous harvest failures in the 1590s caused famine and food riots, Parliament codified these measures into the famous **1601 Elizabethan Poor Law**. Under the 1601 statute, compulsory poor rates, overseers, almshouses for the impotent, and parish apprentice schemes remained the cornerstone of English social welfare until 1834.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Recognizing that physical punishment alone could not solve systemic unemployment, Parliament enacted the <strong>1576 Act for the Relief of the Poor</strong>. This statute established a new principle: local government had a duty to provide work for the able-bodied unemployed.<br><br><span class=\"para-ref\">[5.2]</span> Justices of the Peace in every county were directed to purchase a communal stock of <strong>raw materials—such as wool, hemp, flax, and iron</strong>—for the unemployed to spin and process in exchange for wages. Furthermore, each town was required to construct a <strong>House of Correction (known as a Bridewell)</strong>, where persistent idle vagrants were compelled to perform hard manual labour under strict discipline, laying the foundation for the landmark 1601 Poor Law.",
           "level_4": "The 1576 Act ordered JPs to provide raw wool and hemp so the able-bodied poor could earn wages. It established Houses of Correction (Bridewells) to force persistent vagrants into hard labor.",
           "source": {
             "id": "source_b_poor_law_statute",
@@ -11376,7 +11822,8 @@ export default {
                 "source_context": "The 1601 'Act for the Relief of the Poor' created a comprehensive welfare system: Overseers levied a compulsory local tax; the impotent poor were given pensions or almshouses; the able-bodied were provided raw flax and wool to work; and orphans were apprenticed. It endured until 1834. **Hinge Question:** Why did the 1601 Poor Law place administrative and financial responsibility strictly on individual parishes rather than creating a centralized royal welfare fund?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[5.1]</span> Recognizing that physical punishment alone could not solve systemic unemployment, Parliament enacted the <strong>1576 Act for the Relief of the Poor</strong>. This statute established a new principle: local government had a duty to provide work for the able-bodied unemployed.<br><br><span class=\"para-ref\">[5.2]</span> Justices of the Peace in every county were directed to purchase a communal stock of <strong>raw materials—such as wool, hemp, flax, and iron</strong>—for the unemployed to spin and process in exchange for wages. Furthermore, each town was required to construct a <strong>House of Correction (known as a Bridewell)</strong>, where persistent idle vagrants were compelled to perform hard manual labour under strict discipline, laying the foundation for the landmark 1601 Poor Law."
         }
       ],
       "quiz": [
@@ -11816,7 +12263,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Population Surges from 3m to Over 4m",
+              "clue": "The dramatic 35 percent demographic explosion during Elizabeth's reign that triggered massive food inflation, land shortages, and urban vagrancy."
+            },
+            {
+              "term": "Consecutive Bad Harvests Inflate Grain Prices",
+              "clue": "In bad harvest years (such as 1556, 1586, and the catastrophic crop failures of the 1590s), grain shortages caused food prices to skyrocket, forcing poor families to spend up to 80 per cent of their total income on bread alone."
+            },
+            {
+              "term": "Falling Real Wages for Farm Labourers",
+              "clue": "Severe economic hardship caused by bad harvests, debased coinage, and surplus agricultural labor driving down purchasing power across England."
+            }
+          ],
+          "model_sentence": "As the national <strong>Population Surges from 3m to Over 4m</strong>, severe harvests meant that <strong>Consecutive Bad Harvests Inflate Grain Prices</strong>, causing <strong>Falling Real Wages for Farm Labourers</strong>."
         },
         {
           "stage": 2,
@@ -11832,7 +12294,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Wool Accounts for 80% of English Exports",
+              "clue": "As the English cloth trade boomed, landowners realized that rearing sheep for wool was far more profitable than growing wheat."
+            },
+            {
+              "term": "Hedging Common Land for Low-Labour Flocks",
+              "clue": "Landowners engaged in enclosure—combining small open agricultural strips into large, fenced pastures and enclosing ancient common land that ordinary villagers relied on to graze cattle and gather firewood."
+            },
+            {
+              "term": "Eviction of Strip-Farming Tenant Cottagers",
+              "clue": "The conversion of communal arable open fields into enclosed sheep pastures, displacing peasant families and accelerating rural poverty."
+            }
+          ],
+          "model_sentence": "Because lucrative <strong>Wool Accounts for 80% of English Exports</strong>, landowners turned to <strong>Hedging Common Land for Low-Labour Flocks</strong>, causing the bitter <strong>Eviction of Strip-Farming Tenant Cottagers</strong>."
         },
         {
           "stage": 3,
@@ -11848,7 +12325,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Harman’s Caveat for Common Cursitors Book",
+              "clue": "Thomas Harman's sensational 1567 expose categorizing vagabonds into fraudulent archetypes like 'counterfeit cranks' and 'clapper-dudgeons'."
+            },
+            {
+              "term": "Impotent Poor Versus Sturdy Beggars",
+              "clue": "In contrast, the Undeserving Poor, branded as \"idle sturdy beggars\", were seen as lazy criminals who chose vagrancy over honest toil."
+            },
+            {
+              "term": "Dread of Social Unrest & Treasonous Riot",
+              "clue": "The deep ruling-class fear that desperate wandering beggars would band together to spark riots, disorder, and rebellions against the Crown."
+            }
+          ],
+          "model_sentence": "Influenced by Thomas <strong>Harman’s Caveat for Common Cursitors Book</strong>, authorities distinguished between the <strong>Impotent Poor Versus Sturdy Beggars</strong> driven by the <strong>Dread of Social Unrest & Treasonous Riot</strong>."
         },
         {
           "stage": 4,
@@ -11864,7 +12356,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Compulsory Parish Poor Rate Tax",
+              "clue": "It legally required local magistrates to establish a compulsory Poor Rate tax on all local property owners and appoint Overseers of the Poor to collect funds and provide weekly financial relief to the impotent poor."
+            },
+            {
+              "term": "Overseers Appointed to Distribute Relief",
+              "clue": "It legally required local magistrates to establish a compulsory Poor Rate tax on all local property owners and appoint Overseers of the Poor to collect funds and provide weekly financial relief to the impotent poor."
+            },
+            {
+              "term": "Ear-Boring with Hot Iron for Repeat Vagrants",
+              "clue": "The landmark Vagabonds Act of 1572 introduced brutal deterrents: anyone over fourteen convicted of vagrancy was to be whipped and burned through the gristle of the right ear with a hot iron."
+            }
+          ],
+          "model_sentence": "Establishing a <strong>Compulsory Parish Poor Rate Tax</strong> administered by <strong>Overseers Appointed to Distribute Relief</strong>, the 1572 Vagabonds Act retained harsh <strong>Ear-Boring with Hot Iron for Repeat Vagrants</strong>."
         },
         {
           "stage": 5,
@@ -11880,7 +12387,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Parishes Provide Raw Wool, Flax & Hemp",
+              "clue": "The 1576 statute ordered towns and parishes to maintain raw stocks of wool, hemp, and flax so the unemployed could be put to work producing cloth."
+            },
+            {
+              "term": "County Bridewells Compel Hard Labour",
+              "clue": "Furthermore, the act established compulsory Houses of Correction (Bridewells), where persistent idle vagrants were sentenced to hard labour and physical discipline."
+            },
+            {
+              "term": "Foundation for Comprehensive 1601 Poor Law",
+              "clue": "When disastrous harvest failures in the 1590s caused famine and food riots, Parliament codified these measures into the famous 1601 Elizabethan Poor Law."
+            }
+          ],
+          "model_sentence": "Requiring that <strong>Parishes Provide Raw Wool, Flax & Hemp</strong> for employment while <strong>County Bridewells Compel Hard Labour</strong>, the 1576 Act created the <strong>Foundation for Comprehensive 1601 Poor Law</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -12151,14 +12673,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Navigators adopted precision instruments like the astrolabe and quadrant to calculate their exact latitude using the sun or the North Star.<br><strong>Detail:</strong> This was aided by the 1569 Mercator map projection, which allowed sailors to plot straight compass courses across open oceans without distorting direction.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Navigational advancements transformed trans-oceanic voyaging from perilous coastal pilotage into mathematical oceanography, enabling English captains to establish reliable oceanic routes across the Atlantic and Pacific.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -12189,14 +12703,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Drake became the first Englishman to sail around the world between 1577 and 1580 in his flagship, the *Golden Hind*.<br><strong>Detail:</strong> He raided Spanish ports along the Pacific coast of South America and returned with £400,000 of Spanish silver, earning a knighthood from the Queen.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Drake’s circumnavigation demonstrated global maritime reach and shattered Iberian *mare clausum* doctrine, combining lucrative privateering plunder with territorial claim-staking in 'Nova Albion'.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -12276,14 +12782,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>One primary reason Francis Drake undertook his circumnavigation in 1577–1580 was the immense financial profit to be gained from raiding unfortified Spanish treasure fleets and settlements along the Pacific coast of the Americas. Under Spanish colonial rule, silver mined at Potosí and gold from Peru were shipped along the Pacific coast to Panama. Because no European rival had ever penetrated the Straits of Magellan into the Pacific Ocean, Spanish towns like Valparaiso and Callao possessed zero coastal fortifications, and Spanish treasure ships sailed unarmed. Secretly commissioned by Queen Elizabeth and a syndicate of courtiers, Drake was instructed to exploit this vulnerability. By sailing into the Pacific in the *Golden Hind*, Drake achieved complete surprise, sacking Spanish settlements and capturing the great treasure galleon *Nuestra Señora de la Concepción* (the *Cacafuego*), seizing over £400,000 of bullion. The lure of unprecedented personal and royal plunder was a paramount financial driver of the expedition.<br><br>Furthermore, Drake circumnavigated the globe to discover lucrative new trade routes and break Spanish and Portuguese global trading monopolies. By the 1570s, England’s traditional economic lifeline—the export of woolen cloth through the market of Antwerp—had been severely disrupted by the Dutch Revolt and Spanish trade embargoes. English merchants urgently needed to establish direct maritime contact with alternative global markets, particularly the highly profitable Spice Islands (the Moluccas) in the East Indies. Spanish and Portuguese treaties barred foreign vessels from using the Cape of Good Hope or the Atlantic trade lanes. Drake’s voyage was designed to pioneer a western maritime route across the Pacific, circumventing Iberian control. In 1579, Drake reached the Moluccan island of Ternate, where he successfully negotiated a lucrative trade treaty with the local Sultan, securing six tons of cloves and establishing England's first commercial foothold in the Asian spice trade.<br><br>Finally, Drake circumnavigated the globe as a calculated geopolitical challenge to the imperial dominance of King Philip II of Spain. Elizabeth sought to demonstrate that the Papacy’s 1494 Treaty of Tordesillas—which had divided the entire non-European world exclusively between Spain and Portugal—was invalid and would not be respected by England. By claiming the northern territory of 'Nova Albion' (modern California) for Elizabeth in June 1579, Drake staked an official English territorial claim in North America. Furthermore, by returning safely to Deptford in 1580 after sailing completely around the earth, Drake proved that English seamanship, navigation, and ship architecture were equal to any global power. Elizabeth’s public knighting of Drake aboard the *Golden Hind* served as a defiant declaration that England was prepared to assert its global naval power in direct defiance of the Spanish Empire.</p>",
                 "verdict": "Level 4 (12/12 marks). Analytical explanation directed consistently at the question. Examines three distinct aspects of content (Pacific plunder/unfortified Spanish coast, breaking Iberian monopolies/Ternate spice treaty, geopolitical challenge/Nova Albion claim) with precise historical evidence and sustained PEEL causal links throughout."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Drake’s circumnavigation was the premier operational manifestation of Elizabethan forward maritime strategy, driven by an interlocking nexus of capital accumulation, mercantilist diversification, and ideological imperialism.<br><br>Financially, the expedition functioned as a highly speculative joint-stock venture engineered by Leicester, Walsingham, and the Queen to capitalize on the structural defenselessness of Spain’s Pacific littoral. The capture of the *Cacafuego* repaid investors at a staggering 4,700%, proving that privateering could underwrite the fiscal solvency of the Tudor state.<br><br>Geopolitically and commercially, the voyage demolished Iberian mare clausum (closed sea) doctrine. By charting the Pacific, securing a direct commercial concession for cloves with Sultan Babullah of Ternate, and annexing 'Nova Albion' under the royal prerogative, Drake transformed privateering into an instrument of proto-imperial diplomacy, demonstrating that England was capable of projecting naval power globally to challenge Habsburg hegemony.</p>",
-                "verdict": "Scholar Distinction. Masterclass in geopolitical and economic historiography evaluating joint-stock speculation, mare clausum doctrine, and proto-imperial expansion."
               }
             }
           }
@@ -12340,7 +12838,7 @@ export default {
           "type": "narrative",
           "title": "Navigating the Ocean Sea: Astrolabes, Magnetic Compasses and Mercator's Projection (1558–1575)",
           "theme_heading": "Navigating the Ocean Sea: Astrolabes, Magnetic Compasses and Mercator's Projection (1558–1575)",
-          "text": "<span class=\"para-ref\">[1.1]</span> During the reign of Elizabeth I, navigational science unlocked oceanic exploration. English mariners adopted **astrolabes and quadrants to measure latitude** by calculating the precise angle of the sun and North Star, alongside magnetic compasses to maintain steady ocean bearings far out of sight of land.<br><br><span class=\"para-ref\">[1.2]</span> The development of **Mercator projection global maps in 1569** allowed navigators to plot true straight compass bearings across spherical oceans without distorted courses. Equipped with printed navigational manuals and ephemeris tables, Elizabethan mariners gained the technical confidence to navigate boldly away from known coastlines into uncharted Atlantic and Pacific waters.",
+          "text": "<span class=\"para-ref\">[1.1]</span> The Elizabethan golden age of maritime exploration was unlocked by revolutionary advances in navigational instruments and cartography. English captains began using <strong>astrolabes and quadrants</strong> to measure the angular elevation of the sun and the North Star, allowing them to calculate precise <strong>latitude</strong> at sea.<br><br><span class=\"para-ref\">[1.2]</span> The introduction of the magnetic compass, cross-staff, and the \"log and line\" enabled navigators to measure vessel speed and estimate dead reckoning across open oceans. Furthermore, Gerardus Mercator’s revolutionary <strong>1569 Mercator Projection map</strong> introduced conformal nautical charts with straight lines of constant bearing, enabling English navigators to plot reliable transoceanic courses across the Atlantic and Pacific away from familiar shorelines.",
           "level_4": "Navigational tools like astrolabes, quadrants, and the magnetic compass allowed sailors to calculate latitude and speed. Mercator's 1569 map projection enabled captains to sail accurately across open oceans.",
           "source": {
             "id": "source_a_naval_galleons",
@@ -12391,7 +12889,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> The Elizabethan golden age of maritime exploration was unlocked by revolutionary advances in navigational instruments and cartography. English captains began using **astrolabes and quadrants** to measure the angular elevation of the sun and the North Star, allowing them to calculate precise **latitude** at sea.<br><br><span class=\"para-ref\">[1.2]</span> The introduction of the magnetic compass, cross-staff, and the \"log and line\" enabled navigators to measure vessel speed and estimate dead reckoning across open oceans. Furthermore, Gerardus Mercator’s revolutionary **1569 Mercator Projection map** introduced conformal nautical charts with straight lines of constant bearing, enabling English navigators to plot reliable transoceanic courses across the Atlantic and Pacific away from familiar shorelines. New instruments enabled navigation away from known coastlines into open ocean waters."
+          "content": "<span class=\"para-ref\">[1.1]</span> The Elizabethan golden age of maritime exploration was unlocked by revolutionary advances in navigational instruments and cartography. English captains began using <strong>astrolabes and quadrants</strong> to measure the angular elevation of the sun and the North Star, allowing them to calculate precise <strong>latitude</strong> at sea.<br><br><span class=\"para-ref\">[1.2]</span> The introduction of the magnetic compass, cross-staff, and the \"log and line\" enabled navigators to measure vessel speed and estimate dead reckoning across open oceans. Furthermore, Gerardus Mercator’s revolutionary <strong>1569 Mercator Projection map</strong> introduced conformal nautical charts with straight lines of constant bearing, enabling English navigators to plot reliable transoceanic courses across the Atlantic and Pacific away from familiar shorelines."
         },
         {
           "stage": 2,
@@ -12402,7 +12900,7 @@ export default {
           "image": "/images/sir_john_hawkins.JPG",
           "image_alt": "Contemporary portrait engraving of Sir John Hawkins, Treasurer of the Navy and designer of the race-built galleon",
           "caption": "Sir John Hawkins (1532–1595). Elizabeth's Treasurer of the Navy whose race-built galleon design revolutionized English naval architecture.",
-          "text": "<span class=\"para-ref\">[2.1]</span> Revolutionary transformations in naval architecture led by Sir John Hawkins gave English mariners decisive advantages at sea. Hawkins pioneered the 'race-built' galleon, cutting away cumbersome high forecastles and sterncastles to create sleek, low-profile hulls with dramatically reduced wind resistance.<br><br><span class=\"para-ref\">[2.2]</span> By combining traditional square sails with **triangular lateen sails**, English galleons achieved superior **manoeuvrable tacking in severe Atlantic weather**. Crucially, shipwrights mounted heavy **culverin cannons on compact four-wheel naval carriages**, enabling rapid broadside reloading by smaller gun crews to batter enemy vessels from safe standoff distance.",
+          "text": "<span class=\"para-ref\">[2.1]</span> English oceanic voyages were made possible by major transformations in naval architecture led by Sir John Hawkins. Departing from traditional, high-castled Spanish carraks, Hawkins developed the <strong>race-built galleon</strong>—a ship with a longer keel, lower forecastles, and a streamlined hull that reduced water resistance.<br><br><span class=\"para-ref\">[2.2]</span> These ships incorporated triangular <strong>lateen sails</strong> alongside square sails, giving them exceptional maneuverability to \"tack\" close to the wind in violent Atlantic weather. Crucially, English shipwrights redesigned gun decks to mount heavy <strong>culverin cannons on compact four-wheeled truck carriages</strong>, allowing English crews to fire rapid broadsides through low gunports without destabilizing the ship.",
           "level_4": "Hawkins designed streamlined 'race-built galleons' with lower forecastles and lateen sails for superior handling. English ships carried heavy culverin cannons on four-wheel carriages for rapid broadside firing.",
           "isReversed": false,
           "sources": [
@@ -12435,7 +12933,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> English oceanic voyages were made possible by major transformations in naval architecture led by Sir John Hawkins. Departing from traditional, high-castled Spanish carraks, Hawkins developed the **race-built galleon**—a ship with a longer keel, lower forecastles, and a streamlined hull that reduced water resistance.<br><br><span class=\"para-ref\">[2.2]</span> These ships incorporated triangular **lateen sails** alongside square sails, giving them exceptional maneuverability to \"tack\" close to the wind in violent Atlantic weather. Crucially, English shipwrights redesigned gun decks to mount heavy **culverin cannons on compact four-wheeled truck carriages**, allowing English crews to fire rapid broadsides through low gunports without destabilizing the ship. Galleons with triangular lateen sails allowed manoeuvrable tacking in severe Atlantic weather."
+          "content": "<span class=\"para-ref\">[2.1]</span> English oceanic voyages were made possible by major transformations in naval architecture led by Sir John Hawkins. Departing from traditional, high-castled Spanish carraks, Hawkins developed the <strong>race-built galleon</strong>—a ship with a longer keel, lower forecastles, and a streamlined hull that reduced water resistance.<br><br><span class=\"para-ref\">[2.2]</span> These ships incorporated triangular <strong>lateen sails</strong> alongside square sails, giving them exceptional maneuverability to \"tack\" close to the wind in violent Atlantic weather. Crucially, English shipwrights redesigned gun decks to mount heavy <strong>culverin cannons on compact four-wheeled truck carriages</strong>, allowing English crews to fire rapid broadsides through low gunports without destabilizing the ship."
         },
         {
           "stage": 3,
@@ -12443,7 +12941,7 @@ export default {
           "type": "narrative",
           "title": "The Quest for Cathay: The Muscovy Company, Guinea Gold and the Northwest Passage (1550s–1570s)",
           "theme_heading": "The Quest for Cathay: The Muscovy Company, Guinea Gold and the Northwest Passage (1550s–1570s)",
-          "text": "<span class=\"para-ref\">[3.1]</span> English exploration was propelled by commercial necessity following the **Antwerp cloth market collapse** in the 1550s. To break Spanish and Portuguese monopolies and diversify exports beyond European wool markets, London merchants established innovative chartered **joint-stock companies**—pooling private investment capital to share risks and profits in long-distance maritime trade.<br><br><span class=\"para-ref\">[3.2]</span> The **Muscovy Company (1555)** secured exclusive rights to Russian furs and timber, while the **Levant Company (1581)** imported Ottoman silk and spices. Simultaneously, daring navigators like **Martin Frobisher and John Davis** led Arctic ice expeditions searching for a northern trade passage to China, expanding English geographic knowledge across the North Atlantic.",
+          "text": "<span class=\"para-ref\">[3.1]</span> English exploration was primarily propelled by commercial desperation. During the 1550s, the collapse of the European woollen cloth market at <strong>Antwerp</strong> caused severe domestic economic depression, compelling London merchants to establish new global export markets. To finance these risky, capital-intensive expeditions, merchants formed <strong>joint-stock companies</strong>, pooling private capital and sharing financial risk under royal charters.<br><br><span class=\"para-ref\">[3.2]</span> The <strong>Muscovy Company (1555)</strong> opened direct fur and timber trade with Russia, while the <strong>Levant Company (1581)</strong> traded silks and spices in the Mediterranean. Simultaneously, explorers like <strong>Martin Frobisher and John Davis</strong> led multiple Arctic expeditions seeking a <strong>North-West Passage</strong> to China and the East Indies, demonstrating English determination to bypass Spanish trade routes.",
           "level_4": "The collapse of the Antwerp cloth trade forced English merchants to form joint-stock companies to fund exploration. Adventurers established trade with Russia and searched for an Arctic North-West Passage to Asia.",
           "sources": [
             {
@@ -12474,7 +12972,8 @@ export default {
                 "source_context": "Chart by Augustine Ryther showing the dramatic improvement in English cartography during Elizabeth's reign. With Mercator projection charts and accurate navigational logs, English sea captains could calculate course headings across open oceans with far greater precision than earlier medieval coastal sailors. **Hinge Question:** What does this navigational chart indicate about the growing cartographic accuracy available to late Elizabethan ship captains?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[3.1]</span> English exploration was primarily propelled by commercial desperation. During the 1550s, the collapse of the European woollen cloth market at <strong>Antwerp</strong> caused severe domestic economic depression, compelling London merchants to establish new global export markets. To finance these risky, capital-intensive expeditions, merchants formed <strong>joint-stock companies</strong>, pooling private capital and sharing financial risk under royal charters.<br><br><span class=\"para-ref\">[3.2]</span> The <strong>Muscovy Company (1555)</strong> opened direct fur and timber trade with Russia, while the <strong>Levant Company (1581)</strong> traded silks and spices in the Mediterranean. Simultaneously, explorers like <strong>Martin Frobisher and John Davis</strong> led multiple Arctic expeditions seeking a <strong>North-West Passage</strong> to China and the East Indies, demonstrating English determination to bypass Spanish trade routes."
         },
         {
           "stage": 4,
@@ -12482,7 +12981,7 @@ export default {
           "type": "narrative",
           "title": "Around the Globe: Drake's Golden Hind, the Straits of Magellan and Nova Albion (1577–1580)",
           "theme_heading": "Around the Globe: Drake's Golden Hind, the Straits of Magellan and Nova Albion (1577–1580)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In December 1577, Francis Drake sailed from Plymouth aboard the *Pelican* on a covert expedition backed by Elizabeth to disrupt Spanish commerce in the Pacific. Surviving South Atlantic tempests and suppressing mutiny, Drake renamed his flagship the **Golden Hind** and navigated the frozen, treacherous **Straits of Magellan** in just sixteen days.<br><br><span class=\"para-ref\">[4.2]</span> Emerging alone into the Pacific Ocean, Drake raided undefended Spanish treasure ports along the Chilean and Peruvian coastlines, capturing the bullion galleon *Cacafuego* laden with silver and gold. Sailing north to California to evade Spanish warships, Drake claimed the territory as **Nova Albion** for Queen Elizabeth, before crossing the Pacific to trade for precious cloves with the Sultan of Ternate.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In December 1577, Francis Drake sailed from Plymouth with five ships on a secret mission backed by Elizabeth to break into the Spanish Pacific. After navigating the treacherous <strong>Strait of Magellan</strong>, where devastating storms sank four ships and drove his flagship south to Cape Horn, Drake renamed his surviving vessel the <strong>Golden Hind</strong>.<br><br><span class=\"para-ref\">[4.2]</span> Navigating the uncharted Pacific coast of South America, Drake plundered Spanish ports in Peru and captured the treasure galleon <em>Cacafuego</em>. In June 1579, Drake landed in California, claimed the territory for Elizabeth as <strong>Nova Albion</strong>, and sailed west across the Pacific, trading for six tons of cloves with the Sultan of Ternate in the Spice Islands before completing the circumnavigation in September 1580.",
           "level_4": "In 1577-80, Drake sailed the Golden Hind through the Strait of Magellan, plundered Spanish Pacific ports, claimed Nova Albion in California, and traded for spices in the Moluccas, circumnavigating the globe.",
           "source": {
             "id": "source_b_francis_drake_circumnavigator",
@@ -12538,7 +13037,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> In December 1577, Francis Drake sailed from Plymouth with five ships on a secret mission backed by Elizabeth to break into the Spanish Pacific. After navigating the treacherous **Strait of Magellan**, where devastating storms sank four ships and drove his flagship south to Cape Horn, Drake renamed his surviving vessel the **Golden Hind**.<br><br><span class=\"para-ref\">[4.2]</span> Navigating the uncharted Pacific coast of South America, Drake plundered Spanish ports in Peru and captured the treasure galleon <em>Cacafuego</em>. In June 1579, Drake landed in California, claimed the territory for Elizabeth as **Nova Albion**, and sailed west across the Pacific, trading for six tons of cloves with the Sultan of Ternate in the Spice Islands before completing the circumnavigation in September 1580. After surviving severe gale storms in the Strait of Magellan, Drake navigated the Pacific and claimed Nova Albion."
+          "content": "<span class=\"para-ref\">[4.1]</span> In December 1577, Francis Drake sailed from Plymouth with five ships on a secret mission backed by Elizabeth to break into the Spanish Pacific. After navigating the treacherous <strong>Strait of Magellan</strong>, where devastating storms sank four ships and drove his flagship south to Cape Horn, Drake renamed his surviving vessel the <strong>Golden Hind</strong>.<br><br><span class=\"para-ref\">[4.2]</span> Navigating the uncharted Pacific coast of South America, Drake plundered Spanish ports in Peru and captured the treasure galleon <em>Cacafuego</em>. In June 1579, Drake landed in California, claimed the territory for Elizabeth as <strong>Nova Albion</strong>, and sailed west across the Pacific, trading for six tons of cloves with the Sultan of Ternate in the Spice Islands before completing the circumnavigation in September 1580."
         },
         {
           "stage": 5,
@@ -12546,7 +13045,7 @@ export default {
           "type": "narrative",
           "title": "The Spoils of the Pacific: Stolen Silver, King Philip's Humiliation and Global Geopolitics (1580–1588)",
           "theme_heading": "The Spoils of the Pacific: Stolen Silver, King Philip's Humiliation and Global Geopolitics (1580–1588)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In September 1580, after nearly three years at sea, the battered *Golden Hind* sailed into Plymouth harbour with fifty-nine surviving crewmen. Drake became the first Englishman—and the first commander in history—to bring his own ship through a complete circumnavigation of the globe. His captured treasure was valued at **£140,000**, delivering a staggering **4,700% financial profit** that paid off Elizabeth’s entire foreign Crown debt.<br><br><span class=\"para-ref\">[5.2]</span> In April 1581, Elizabeth knighted Drake aboard the *Golden Hind* at Deptford in open defiance of Philip II. Drake’s voyage proved England could challenge Spanish maritime dominance, cemented English mariners as world-class ocean navigators, and inspired a generation of Elizabethan overseas explorers.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Drake’s triumphant circumnavigation transformed England’s international standing. He returned to Plymouth laden with silver, gold, pearls, and spices worth <strong>£140,000</strong>, delivering a staggering <strong>4,700% return</strong> to his investors and enabling Elizabeth to pay off the entire Crown foreign debt with funds to spare.<br><br><span class=\"para-ref\">[5.2]</span> Drake became the first captain to successfully sail his own ship around the world, proving that English sailors and race-built galleons could master global navigation and challenge Spanish naval hegemony anywhere on earth. The voyage laid the navigational and geopolitical foundation for England's future global empire, inspiring future ventures to establish colonies in North America and direct trade in Asia.",
           "level_4": "Drake's voyage brought home massive wealth, wiped out the Crown foreign debt, and proved England could challenge Spain on the world's oceans, establishing the blueprint for the British Empire.",
           "sources": [
             {
@@ -12577,7 +13076,7 @@ export default {
               "text": "The master-thief Drake hath arrived at Plymouth laden with astronomical riches stolen from Your Majesty's peaceful subjects in Peru. He hath brought twenty-six tons of silver bullion, eighty pounds of gold, and chests of pearls and emeralds from the Cacafuego. The Queen hath received him privately at court, and far from punishing this pirate, she hath taken the lion's share of the booty for her royal treasury and intends to knight him on his ship!"
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> Drake’s triumphant circumnavigation transformed England’s international standing. He returned to Plymouth laden with silver, gold, pearls, and spices worth **£140,000**, delivering a staggering **4,700% return** to his investors and enabling Elizabeth to pay off the entire Crown foreign debt with funds to spare.<br><br><span class=\"para-ref\">[5.2]</span> Drake became the first captain to successfully sail his own ship around the world, proving that English sailors and race-built galleons could master global navigation and challenge Spanish naval hegemony anywhere on earth. The voyage laid the navigational and geopolitical foundation for England's future global empire, inspiring future ventures to establish colonies in North America and direct trade in Asia. Drake returned with £140,000 in Spanish bullion cargo, producing a 4,700% financial profit that paid the Crown debt and proved England could challenge Spanish seas. Drake returned with £140,000 in Spanish bullion cargo, producing a 4,700% financial profit that paid the Crown debt and proved England could challenge Spanish seas."
+          "content": "<span class=\"para-ref\">[5.1]</span> Drake’s triumphant circumnavigation transformed England’s international standing. He returned to Plymouth laden with silver, gold, pearls, and spices worth <strong>£140,000</strong>, delivering a staggering <strong>4,700% return</strong> to his investors and enabling Elizabeth to pay off the entire Crown foreign debt with funds to spare.<br><br><span class=\"para-ref\">[5.2]</span> Drake became the first captain to successfully sail his own ship around the world, proving that English sailors and race-built galleons could master global navigation and challenge Spanish naval hegemony anywhere on earth. The voyage laid the navigational and geopolitical foundation for England's future global empire, inspiring future ventures to establish colonies in North America and direct trade in Asia."
         }
       ],
       "quiz": [
@@ -13023,7 +13522,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Astrolabes & Quadrants Measure Latitude",
+              "clue": "English mariners adopted astrolabes and quadrants to measure latitude by calculating the precise angle of the sun and North Star, alongside magnetic compasses to maintain steady ocean bearings far out of sight of land."
+            },
+            {
+              "term": "Mercator Projection Global Maps (1569)",
+              "clue": "The development of Mercator projection global maps in 1569 allowed navigators to plot true straight compass bearings across spherical oceans without distorted courses."
+            },
+            {
+              "term": "Navigation Away from Known Coastlines",
+              "clue": "Equipped with printed navigational manuals and ephemeris tables, Elizabethan mariners gained the technical confidence to navigate boldly away from known coastlines into uncharted Atlantic and Pacific waters."
+            }
+          ],
+          "model_sentence": "Navigators utilized <strong>Astrolabes & Quadrants Measure Latitude</strong> and Gerard <strong>Mercator Projection Global Maps (1569)</strong> to pioneer long-distance <strong>Navigation Away from Known Coastlines</strong>."
         },
         {
           "stage": 2,
@@ -13039,7 +13553,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Low Forecastles & Triangular Lateen Sails",
+              "clue": "By combining traditional square sails with triangular lateen sails, English galleons achieved superior manoeuvrable tacking in severe Atlantic weather."
+            },
+            {
+              "term": "Culverin Cannons on Four-Wheel Carriages",
+              "clue": "Crucially, shipwrights mounted heavy culverin cannons on compact four-wheel naval carriages, enabling rapid broadside reloading by smaller gun crews to batter enemy vessels from safe standoff distance."
+            },
+            {
+              "term": "Manoeuvrable Tacking in Severe Atlantic Weather",
+              "clue": "By combining traditional square sails with triangular lateen sails, English galleons achieved superior manoeuvrable tacking in severe Atlantic weather."
+            }
+          ],
+          "model_sentence": "Featuring <strong>Low Forecastles & Triangular Lateen Sails</strong> with heavy <strong>Culverin Cannons on Four-Wheel Carriages</strong>, English galleons excelled at <strong>Manoeuvrable Tacking in Severe Atlantic Weather</strong>."
         },
         {
           "stage": 3,
@@ -13055,7 +13584,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Collapse of Antwerp Cloth Market (1550s)",
+              "clue": "English exploration was propelled by commercial necessity following the Antwerp cloth market collapse in the 1550s."
+            },
+            {
+              "term": "Muscovy & Levant Joint-Stock Companies",
+              "clue": "The Muscovy Company (1555) secured exclusive rights to Russian furs and timber, while the Levant Company (1581) imported Ottoman silk and spices."
+            },
+            {
+              "term": "Frobisher & Davis Arctic Northwest Search",
+              "clue": "Simultaneously, daring navigators like Martin Frobisher and John Davis led Arctic ice expeditions searching for a northern trade passage to China, expanding English geographic knowledge across the North Atlantic."
+            }
+          ],
+          "model_sentence": "Prompted by the <strong>Collapse of Antwerp Cloth Market (1550s)</strong>, merchants created the <strong>Muscovy & Levant Joint-Stock Companies</strong> while funding the <strong>Frobisher & Davis Arctic Northwest Search</strong>."
         },
         {
           "stage": 4,
@@ -13071,7 +13615,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Pelican Renamed Golden Hind at Horn",
+              "clue": "Surviving South Atlantic tempests and suppressing mutiny, Drake renamed his flagship the Golden Hind and navigated the frozen, treacherous Straits of Magellan in just sixteen days."
+            },
+            {
+              "term": "Strait of Magellan Gale Storm Survival",
+              "clue": "Surviving South Atlantic tempests and suppressing mutiny, Drake renamed his flagship the Golden Hind and navigated the frozen, treacherous Straits of Magellan in just sixteen days."
+            },
+            {
+              "term": "Claims Nova Albion (California) for Crown",
+              "clue": "Sailing north to California to evade Spanish warships, Drake claimed the territory as Nova Albion for Queen Elizabeth, before crossing the Pacific to trade for precious cloves with the Sultan of Ternate."
+            }
+          ],
+          "model_sentence": "Renaming his flagship after the <strong>Pelican Renamed Golden Hind at Horn</strong> following <strong>Strait of Magellan Gale Storm Survival</strong>, Drake claimed <strong>Claims Nova Albion (California) for Crown</strong>."
         },
         {
           "stage": 5,
@@ -13087,7 +13646,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "£140,000 Spanish Bullion Cargo Returns",
+              "clue": "The vast wealth brought back by Francis Drake aboard the Golden Hind in 1580, paying off England's national debt and enriching Elizabeth's treasury."
+            },
+            {
+              "term": "4,700% Financial Profit Pays Crown Debt",
+              "clue": "His captured treasure was valued at £140,000, delivering a staggering 4,700% financial profit that paid off Elizabeth’s entire foreign Crown debt."
+            },
+            {
+              "term": "Proves England Can Challenge Spanish Seas",
+              "clue": "Drake’s voyage proved England could challenge Spanish maritime dominance, cemented English mariners as world-class ocean navigators, and inspired a generation of Elizabethan overseas explorers."
+            }
+          ],
+          "model_sentence": "Returning home with <strong>£140,000 Spanish Bullion Cargo Returns</strong> that earned a <strong>4,700% Financial Profit Pays Crown Debt</strong>, the voyage demonstrated that <strong>Proves England Can Challenge Spanish Seas</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -13364,14 +13938,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> Raleigh received a royal patent from Elizabeth in 1584 to establish a permanent colony on Roanoke Island to produce cash crops like tobacco and sugar.<br><strong>Detail:</strong> The colony was also planned as a naval base for English privateers to raid the Spanish treasure fleets sailing home from the Caribbean.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>Raleigh's Virginia project integrated mercantilist commodity extraction with forward naval projection, conceiving Roanoke as an agrarian plantation and a strategic privateering bastion against the Spanish West Indies.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -13402,14 +13968,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p><strong>Feature:</strong> The expedition’s flagship, the *Tiger*, ran aground on arrival, destroying almost all the settlers' seed corn and food supplies.<br><strong>Detail:</strong> The colonists lacked farming skills and relations with the local Secotan tribe broke down, forcing them to abandon the settlement aboard Drake’s fleet in 1586.</p>",
                 "verdict": "AO1 (2 marks). Maximum marks awarded. Accurately identifies a key feature (1 mark) and provides specific supporting detail (1 mark)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The 1585 Roanoke colony collapsed due to maritime logistical failure compounded by demographic dysfunction—gentlemen unwilling to farm and military escalation that alienated indigenous food supplies.</p>",
-                "verdict": "Scholar Distinction. Precise conceptual analysis evaluating the constitutional and political significance of the feature."
               }
             }
           },
@@ -13489,14 +14047,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "<p>The catastrophic loss of provisions caused by maritime misfortune was undeniably a profound and immediate cause of the failure of the 1585 Roanoke settlement. When the initial expedition commanded by Sir Richard Grenville arrived at the Outer Banks in June 1585, the flagship *Tiger* ran aground on the shallow sandbanks, breaching the hull and flooding the cargo hold. This disaster ruined virtually all the expedition's seed corn, grain barrels, livestock, and planting supplies. Crucially, the colonists arrived too late in the agricultural season to clear forest land and sow autumn crops, leaving the 107 settlers with less than twenty days of food. This initial logistical catastrophe made the colony entirely dependent for survival upon external supply voyages from England or upon reciprocal food gifts from the local indigenous inhabitants, placing the enterprise in immediate mortal jeopardy.<br><br>However, it can be strongly argued that the fundamental underlying cause of failure was the unsuitable social composition of the colonists and their fatal lack of agricultural and practical survival skills. Walter Raleigh’s expedition consisted primarily of 107 men who were professional soldiers, veterans of the brutal Irish wars, and wealthy aristocratic 'gentlemen'. Tudor social hierarchy dictated that gentlemen considered manual agricultural labor beneath their dignity; they steadfastly refused to perform heavy physical tasks such as digging, felling timber, or fishing. Instead of constructing durable shelters and cultivating sustenance, they spent their time searching for gold or precious minerals. Furthermore, the expedition lacked essential craftsmen, farmers, bricklayers, and women to establish a permanent domestic community. When food grew scarce, these soldiers lacked the ecological knowledge and patience required to cultivate the unfamiliar American soil, making the colony structurally unsustainable.<br><br>Furthermore, the catastrophic breakdown of relations with the local Native Americans turned logistical hardship into an unsustainable military crisis. Initially, the local Algonquian-speaking Secotan tribe, led by Chief Wingina, welcomed the English and provided them with fish, corn, and game. However, the militaristic governor, Ralph Lane, treated the indigenous population with aggressive suspicion and heavy-handed martial law. When an English silver cup went missing, English soldiers burned down an entire native village and destroyed their standing corn. Furthermore, European diseases introduced by the settlers decimated native populations, leading the Secotan to believe English spirits were killing them. As tribal hospitality turned to hostility, Wingina prepared to remove his people and starve the garrison. Lane responded with a pre-emptive ambush, shooting and decapitating Wingina in June 1586. This violence completely severed the colony’s food supply, surrounding the fort with hostile warriors and forcing Lane and the surviving colonists to flee aboard Sir Francis Drake’s visiting fleet just days later.<br><br>In conclusion, while the loss of provisions on the *Tiger* made the colony immediately precarious, it was not the sole or primary reason for failure. Other colonies with limited initial supplies survived by learning indigenous farming techniques and maintaining diplomatic alliances. Rather, it was the fatal social composition of aristocratic gentlemen unwilling to farm, coupled with Ralph Lane's militaristic alienation and murder of Chief Wingina, that transformed a manageable logistical challenge into total collapse. By destroying their only source of food and indigenous goodwill, the colonists engineered their own demise.</p>",
                 "verdict": "Level 4 (16/16 marks). Comprehensive, criteria-driven evaluation weighing logistical loss of supplies against demographic/skill deficits and military conflict with the Secotan tribe. Deploys precise historical evidence (*Tiger* grounding, Ralph Lane, Chief Wingina, Irish veterans) and reaches a sustained, nuanced judgement."
-              },
-              "tier_20m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "<p>The failure of the 1585 Roanoke enterprise illuminates the profound structural difficulties of early modern English colonization prior to the development of corporate joint-stock settlement models.<br><br>While the grounding of the *Tiger* inflicted acute logistical trauma by destroying the expedition's seed crop and food reserves, environmental adversity was not inherently fatal. The decisive failure lay in the institutional and sociological design of the colony. Conceived as a semi-feudal, militarized outpost staffed by Irish campaign veterans and aristocratic adventurers, the settlement lacked the basic agrarian labour force necessary for ecological reproduction.<br><br>Lane’s garrison mentality translated this material insecurity into catastrophic diplomatic escalation. By interpreting indigenous reluctance to provide tribute as existential treason and assassinating Wingina, Lane dismantled the tributary relationship that sustained the colony. Thus, ideological rigidity and militarized paranoia, rather than mere supply loss, doomed England's inaugural Atlantic settlement.</p>",
-                "verdict": "Scholar Distinction. Masterclass in colonial historiography analyzing corporate joint-stock failure, garrison mentalities, and ecological unsustainability."
               }
             }
           }
@@ -13555,7 +14105,7 @@ export default {
           "type": "narrative",
           "title": "The Imperial Vision: Raleigh's Royal Patent, Arthur Barlowe's Expedition and Virginia (1584)",
           "theme_heading": "The Imperial Vision: Raleigh's Royal Patent, Arthur Barlowe's Expedition and Virginia (1584)",
-          "text": "<span class=\"para-ref\">[1.1]</span> In 1584, Queen Elizabeth granted Sir Walter Raleigh a six-year royal charter authorizing him to discover, explore, and settle uncharted lands in North America. Raleigh named the territory **Virginia** in honor of Elizabeth, the \"Virgin Queen\".<br><br><span class=\"para-ref\">[1.2]</span> Court intellectuals like Richard Hakluyt argued that colonizing Virginia was vital for England’s future. Establishing an American colony would reduce trade dependence on rivals by supplying timber, sugar, and tobacco, while opening new markets for English woollen cloth. Strategically, Virginia would provide a secure naval base for Caribbean privateering, allowing English warships to raid Spanish treasure fleets.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In March 1584, Queen Elizabeth granted courtier and explorer <strong>Sir Walter Raleigh</strong> a royal patent authorizing him to discover, explore, and colonize any \"remote, heathen and barbarous lands\" not already claimed by a Christian prince. Raleigh and advisor <strong>Richard Hakluyt</strong> published <em>A Discourse on Western Planting</em>, arguing that an American colony would provide a vital forward privateering base to intercept Spanish treasure fleets from the Caribbean.<br><br><span class=\"para-ref\">[1.2]</span> Furthermore, a permanent colony would supply England with exotic timber, sugar, and tobacco, create a new export market for English woollen cloth, and offer productive employment for England's surplus impoverished population. Raleigh named the territory <strong>Virginia</strong> in honor of Elizabeth, the Virgin Queen.",
           "level_4": "In 1584, Elizabeth gave Walter Raleigh a charter to colonize North America, named Virginia. Hakluyt argued the colony would serve as a privateering base against Spain and open new trade markets.",
           "source": {
             "id": "source_a_walter_raleigh",
@@ -13607,7 +14157,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> In March 1584, Queen Elizabeth granted courtier and explorer **Sir Walter Raleigh** a royal patent authorizing him to discover, explore, and colonize any \"remote, heathen and barbarous lands\" not already claimed by a Christian prince. Raleigh and advisor **Richard Hakluyt** published <em>A Discourse on Western Planting</em>, arguing that an American colony would provide a vital forward privateering base to intercept Spanish treasure fleets from the Caribbean.<br><br><span class=\"para-ref\">[1.2]</span> Furthermore, a permanent colony would supply England with exotic timber, sugar, and tobacco, create a new export market for English woollen cloth, and offer productive employment for England's surplus impoverished population. Raleigh named the territory **Virginia** in honor of Elizabeth, the Virgin Queen. Queen Elizabeth granted Walter Raleigh a six-year patent to claim uncharted land in North America. Queen Elizabeth granted Walter Raleigh a six-year patent to claim uncharted land in North America."
+          "content": "<span class=\"para-ref\">[1.1]</span> In March 1584, Queen Elizabeth granted courtier and explorer <strong>Sir Walter Raleigh</strong> a royal patent authorizing him to discover, explore, and colonize any \"remote, heathen and barbarous lands\" not already claimed by a Christian prince. Raleigh and advisor <strong>Richard Hakluyt</strong> published <em>A Discourse on Western Planting</em>, arguing that an American colony would provide a vital forward privateering base to intercept Spanish treasure fleets from the Caribbean.<br><br><span class=\"para-ref\">[1.2]</span> Furthermore, a permanent colony would supply England with exotic timber, sugar, and tobacco, create a new export market for English woollen cloth, and offer productive employment for England's surplus impoverished population. Raleigh named the territory <strong>Virginia</strong> in honor of Elizabeth, the Virgin Queen."
         },
         {
           "stage": 2,
@@ -13615,7 +14165,7 @@ export default {
           "type": "narrative",
           "title": "Mismatched Colonists: Soldiers, Alchemists, Grenville's Command and Lane's Fort (1584–1585)",
           "theme_heading": "Mismatched Colonists: Soldiers, Alchemists, Grenville's Command and Lane's Fort (1584–1585)",
-          "text": "<span class=\"para-ref\">[2.1]</span> In 1585, Sir Walter Raleigh organized England's first attempt to colonize North America, dispatching a fleet of five ships carrying 107 colonists to Roanoke Island in Virginia. However, the expedition's social composition created severe structural vulnerabilities: the party was composed almost entirely of soldiers and aristocratic gentlemen who considered manual labour beneath them, with virtually no skilled farmers to cultivate crops.<br><br><span class=\"para-ref\">[2.2]</span> The colony suffered from divided leadership: commander Sir Richard Grenville clashed bitterly with governor Ralph Lane, who imposed harsh military discipline on the settlement. Accompanying the expedition were **Manteo and Wanchese**, two Algonquian Native translators who had visited London in 1584 to facilitate communication, trade, and diplomacy between English settlers and the local Secotan tribe.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Raleigh faced severe obstacles in organizing the 1585 colonial expedition to Roanoke Island. Forbidden by Elizabeth from leading the voyage personally, Raleigh appointed his aristocratic cousin, <strong>Sir Richard Grenville</strong>, as fleet commander, and army veteran <strong>Ralph Lane</strong> as colony governor. The expedition’s social composition was fundamentally flawed: the <strong>107 colonists</strong> were predominantly aristocratic \"gentlemen\" who refused to engage in manual labor, and soldiers accustomed to martial violence rather than farming.<br><br><span class=\"para-ref\">[2.2]</span> Crucially, the party lacked experienced farmers, fishermen, and bricklayers needed to build a self-sufficient colony. However, the expedition included skilled scientist <strong>Thomas Harriot</strong> and surveyor-artist <strong>John White</strong>, accompanied by two Native American translators, <strong>Manteo and Wanchese</strong>.",
           "level_4": "Raleigh sent 107 colonists led by Richard Grenville and Ralph Lane. The group lacked farmers and was dominated by soldiers and gentlemen who refused manual labour, creating fatal weaknesses.",
           "image": "/images/john_white_village_secotan.jpg",
           "image_alt": "Watercolor painting by John White depicting the Algonquin village of Secotan with crops, houses, and ceremonial circle",
@@ -13650,7 +14200,8 @@ export default {
                 "source_context": "John White, an artist and surveyor on the 1585 voyage, created this accurate hydrographic chart of the Carolina Outer Banks. The map shows the narrow barrier islands and shallow sounds that proved disastrous for English deep-draft ships; the flagship Tiger ran aground on the shoals, soaking and ruining nearly all the colonists' grain supplies. **Hinge Question:** How does John White's detailed chart of the Outer Banks explain why treacherous shoals caused the flagship Tiger to run aground and ruin food supplies?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[2.1]</span> Raleigh faced severe obstacles in organizing the 1585 colonial expedition to Roanoke Island. Forbidden by Elizabeth from leading the voyage personally, Raleigh appointed his aristocratic cousin, <strong>Sir Richard Grenville</strong>, as fleet commander, and army veteran <strong>Ralph Lane</strong> as colony governor. The expedition’s social composition was fundamentally flawed: the <strong>107 colonists</strong> were predominantly aristocratic \"gentlemen\" who refused to engage in manual labor, and soldiers accustomed to martial violence rather than farming.<br><br><span class=\"para-ref\">[2.2]</span> Crucially, the party lacked experienced farmers, fishermen, and bricklayers needed to build a self-sufficient colony. However, the expedition included skilled scientist <strong>Thomas Harriot</strong> and surveyor-artist <strong>John White</strong>, accompanied by two Native American translators, <strong>Manteo and Wanchese</strong>."
         },
         {
           "stage": 3,
@@ -13658,7 +14209,7 @@ export default {
           "type": "narrative",
           "title": "Shoals and Spoiled Corn: The Tiger Wreck, Food Shortages and Secotan Hostility (1585–1586)",
           "theme_heading": "Shoals and Spoiled Corn: The Tiger Wreck, Food Shortages and Secotan Hostility (1585–1586)",
-          "text": "<span class=\"para-ref\">[3.1]</span> The Roanoke settlement was crippled from the outset by misfortune. In June 1585, the expedition's flagship **Tiger ran aground on a sandbar** off the Carolina Banks; seawater flooded the hold, ruining the colonists' grain seeds and perishable food provisions. Arriving too late in the season to plant crops, the colonists faced immediate starvation.<br><br><span class=\"para-ref\">[3.2]</span> The colonists developed a disastrous reliance on local **Secotan fish weirs** and food handouts for survival. When European diseases decimated Native American villages and desperate settlers demanded unsustainable quantities of maize, relations between Governor Lane and Chief Wingina collapsed into bitter mutual suspicion and armed hostility.",
+          "text": "<span class=\"para-ref\">[3.1]</span> The 1585 expedition suffered immediate disaster upon arrival off the North Carolina coast in July. The fleet flagship, the <strong>Tiger</strong>, ran aground on a treacherous coastal sandbar, flooding the hold with seawater and destroying the colonists’ seeds, livestock, and primary grain provisions. Forced to settle on <strong>Roanoke Island</strong> with only a fraction of their food, the colonists were unable to cultivate crops because they had arrived too late in the planting season.<br><br><span class=\"para-ref\">[3.2]</span> The English were forced to rely completely on the local <strong>Secotan tribe</strong> and their paramount chief, <strong>Wingina</strong>, demanding food handouts and relying on Indigenous fish weirs. As English demands drained tribal food reserves, relations between the two communities rapidly turned hostile.",
           "level_4": "The flagship Tiger ran aground in 1585, destroying grain seeds and food supplies. Arriving too late to plant crops, the colonists became completely dependent on food handouts from Chief Wingina's Secotan tribe.",
           "source": {
             "id": "source_b_roanoke_colony_map",
@@ -13708,7 +14259,8 @@ export default {
                 "source_context": "John White was instructed by Raleigh to paint accurate life studies of the indigenous peoples of Virginia. His paintings offer extraordinary primary ethnographic detail of the Secotan and Roanoke tribes, showing that the Native Americans were organized, sophisticated communities rather than savage barbarians. **Hinge Question:** What does White's portrait of an indigenous leader reveal about initial English intentions to study and engage with local tribes?"
               }
             }
-          ]
+          ],
+          "content": "<span class=\"para-ref\">[3.1]</span> The 1585 expedition suffered immediate disaster upon arrival off the North Carolina coast in July. The fleet flagship, the <strong>Tiger</strong>, ran aground on a treacherous coastal sandbar, flooding the hold with seawater and destroying the colonists’ seeds, livestock, and primary grain provisions. Forced to settle on <strong>Roanoke Island</strong> with only a fraction of their food, the colonists were unable to cultivate crops because they had arrived too late in the planting season.<br><br><span class=\"para-ref\">[3.2]</span> The English were forced to rely completely on the local <strong>Secotan tribe</strong> and their paramount chief, <strong>Wingina</strong>, demanding food handouts and relying on Indigenous fish weirs. As English demands drained tribal food reserves, relations between the two communities rapidly turned hostile."
         },
         {
           "stage": 4,
@@ -13716,7 +14268,7 @@ export default {
           "type": "narrative",
           "title": "The Severed Thread: The Death of Wingina, Drake's Rescue and the First Evacuation (1586)",
           "theme_heading": "The Severed Thread: The Death of Wingina, Drake's Rescue and the First Evacuation (1586)",
-          "text": "<span class=\"para-ref\">[4.1]</span> Undeterred by the 1585 failure, Raleigh dispatched a second expedition to Roanoke in April 1587. Learning from past mistakes, Raleigh recruited **118 civilian settlers, including seventeen women and eleven children**, aiming to establish a permanent farming community. He appointed artist **John White** as governor. Shortly after landing, White’s daughter gave birth to **Virginia Dare**—the first English child born in the Americas.<br><br><span class=\"para-ref\">[4.2]</span> However, the new settlers inherited the hostile relations left behind by Lane’s violence, and local tribes refused to trade. Desperate for reinforcements and essential agricultural supplies, Governor John White sailed back to England in August 1587, leaving his daughter, infant granddaughter, and the colonists on Roanoke Island.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Tensions between the Roanoke colonists and the Secotan exploded into open warfare in the spring of 1586. English diseases decimated local villages, leading Indigenous priests to believe the English possessed supernatural weapons. When a silver cup went missing, Grenville burned an entire Native village in retaliation.<br><br><span class=\"para-ref\">[4.2]</span> Convinced Chief Wingina was plotting a coordinated attack to wipe out the settlement, Governor Ralph Lane launched a pre-emptive ambush in June 1586, <strong>killing Chief Wingina</strong> and beheading him. Trapped in a fortified compound without food and facing imminent starvation, the colonists were rescued just days later when <strong>Sir Francis Drake</strong> arrived with his fleet after raiding the Spanish Caribbean, evacuating the desperate survivors back to England.",
           "level_4": "Conflict erupted when English diseases spread and a village was burned over a stolen cup. Lane ambushed and killed Chief Wingina, and when Drake arrived days later, the starving colonists evacuated.",
           "image": "/images/john_white_indians_fishing.jpg",
           "image_alt": "John White watercolor depicting Native Americans catching fish in weirs and dugout canoes in Virginia waters",
@@ -13752,7 +14304,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Tensions between the Roanoke colonists and the Secotan exploded into open warfare in the spring of 1586. English diseases decimated local villages, leading Indigenous priests to believe the English possessed supernatural weapons. When a silver cup went missing, Grenville burned an entire Native village in retaliation.<br><br><span class=\"para-ref\">[4.2]</span> Convinced Chief Wingina was plotting a coordinated attack to wipe out the settlement, Governor Ralph Lane launched a pre-emptive ambush in June 1586, **killing Chief Wingina** and beheading him. Trapped in a fortified compound without food and facing imminent starvation, the colonists were rescued just days later when **Sir Francis Drake** arrived with his fleet after raiding the Spanish Caribbean, evacuating the desperate survivors back to England. Relations collapsed when a stolen silver cup dispute led to village burning, and Drake arrived to evacuate the starving settlers."
+          "content": "<span class=\"para-ref\">[4.1]</span> Tensions between the Roanoke colonists and the Secotan exploded into open warfare in the spring of 1586. English diseases decimated local villages, leading Indigenous priests to believe the English possessed supernatural weapons. When a silver cup went missing, Grenville burned an entire Native village in retaliation.<br><br><span class=\"para-ref\">[4.2]</span> Convinced Chief Wingina was plotting a coordinated attack to wipe out the settlement, Governor Ralph Lane launched a pre-emptive ambush in June 1586, <strong>killing Chief Wingina</strong> and beheading him. Trapped in a fortified compound without food and facing imminent starvation, the colonists were rescued just days later when <strong>Sir Francis Drake</strong> arrived with his fleet after raiding the Spanish Caribbean, evacuating the desperate survivors back to England."
         },
         {
           "stage": 5,
@@ -13760,7 +14312,7 @@ export default {
           "type": "narrative",
           "title": "The Lost Colony: John White's Families, the Armada Embargo and the Mystery of CROATOAN (1587–1590)",
           "theme_heading": "The Lost Colony: John White's Families, the Armada Embargo and the Mystery of CROATOAN (1587–1590)",
-          "text": "<span class=\"para-ref\">[5.1]</span> White’s return to Virginia was blocked by the outbreak of open war with Spain. With the **Spanish Armada** threatening invasion in 1588, Queen Elizabeth impounded all English ocean-going vessels for national defence. It was not until August 1590—three full years later—that White was finally able to return to Roanoke Island.<br><br><span class=\"para-ref\">[5.2]</span> White stepped ashore to find the settlement completely abandoned, the houses dismantled, and the settlement overgrown with weeds. There was no sign of a struggle, but carved into a palisade wooden post was the single word **\"CROATOAN\"**, the name of a nearby Native island. A sudden hurricane forced White’s ship to leave before he could search the island, and the fate of the \"Lost Colony\" remains one of history’s greatest unsolved mysteries. Despite its failure, the Roanoke ventures provided invaluable logistical, agricultural, and diplomatic lessons that enabled the permanent settlement of Jamestown in 1607.",
+          "text": "<span class=\"para-ref\">[5.1]</span> In 1587, Raleigh dispatched a second expedition to Roanoke under <strong>John White</strong>, this time recruiting <strong>118 civilian settlers, including women and children</strong>, to establish a permanent farming community. Shortly after arrival, White’s daughter gave birth to <strong>Virginia Dare</strong>, the first English child born in the Americas. In August 1587, White returned to England for emergency supplies, but his return was blocked for three years because all English shipping was impounded to defend against the <strong>1588 Spanish Armada</strong>.<br><br><span class=\"para-ref\">[5.2]</span> When White finally returned to Roanoke in August 1590, the settlement was entirely deserted, with the single word <strong>\"CROATOAN\"</strong> carved into a palisade post. Although both attempts failed, Roanoke provided essential navigational charts and agricultural lessons that ensured the successful founding of <strong>Jamestown in 1607</strong>.",
           "level_4": "In 1587, a second colony of 118 civilian settlers was led by John White. Delayed for three years by the Armada, White returned in 1590 to find the colony vanished, leaving only the word 'CROATOAN'.",
           "sources": [
             {
@@ -13792,7 +14344,7 @@ export default {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> In 1587, Raleigh dispatched a second expedition to Roanoke under **John White**, this time recruiting **118 civilian settlers, including women and children**, to establish a permanent farming community. Shortly after arrival, White’s daughter gave birth to **Virginia Dare**, the first English child born in the Americas. In August 1587, White returned to England for emergency supplies, but his return was blocked for three years because all English shipping was impounded to defend against the **1588 Spanish Armada**.<br><br><span class=\"para-ref\">[5.2]</span> When White finally returned to Roanoke in August 1590, the settlement was entirely deserted, with the single word **\"CROATOAN\"** carved into a palisade post. Although both attempts failed, Roanoke provided essential navigational charts and agricultural lessons that ensured the successful founding of **Jamestown in 1607**. The threat of the Spanish Armada led the government to impound supply ships in England, leaving the Roanoke settlers stranded."
+          "content": "<span class=\"para-ref\">[5.1]</span> In 1587, Raleigh dispatched a second expedition to Roanoke under <strong>John White</strong>, this time recruiting <strong>118 civilian settlers, including women and children</strong>, to establish a permanent farming community. Shortly after arrival, White’s daughter gave birth to <strong>Virginia Dare</strong>, the first English child born in the Americas. In August 1587, White returned to England for emergency supplies, but his return was blocked for three years because all English shipping was impounded to defend against the <strong>1588 Spanish Armada</strong>.<br><br><span class=\"para-ref\">[5.2]</span> When White finally returned to Roanoke in August 1590, the settlement was entirely deserted, with the single word <strong>\"CROATOAN\"</strong> carved into a palisade post. Although both attempts failed, Roanoke provided essential navigational charts and agricultural lessons that ensured the successful founding of <strong>Jamestown in 1607</strong>."
         }
       ],
       "quiz": [
@@ -14239,7 +14791,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Six-Year Patent to Claim Uncharted Land",
+              "clue": "In 1584, Queen Elizabeth granted Sir Walter Raleigh a six-year royal charter authorizing him to discover, explore, and settle uncharted lands in North America."
+            },
+            {
+              "term": "Hakluyt’s Discourse on Western Planting",
+              "clue": "Richard Hakluyt's influential 1584 treatise arguing that American colonization would challenge Catholic Spain, expand trade, and export surplus population."
+            },
+            {
+              "term": "Privateering Base to Intercept Spanish Plate",
+              "clue": "Strategically, Virginia would provide a secure naval base for Caribbean privateering, allowing English warships to raid Spanish treasure fleets."
+            }
+          ],
+          "model_sentence": "Granted a royal <strong>Six-Year Patent to Claim Uncharted Land</strong>, Walter Raleigh utilized <strong>Hakluyt’s Discourse on Western Planting</strong> to promote a <strong>Privateering Base to Intercept Spanish Plate</strong>."
         },
         {
           "stage": 2,
@@ -14255,7 +14822,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "107 Gentlemen Soldiers & No Farmers",
+              "clue": "However, the expedition's social composition created severe structural vulnerabilities: the party was composed almost entirely of soldiers and aristocratic gentlemen who considered manual labour beneath them, with virtually no skilled farmers to cultivate crops."
+            },
+            {
+              "term": "Grenville Fleet & Ralph Lane Army Discipline",
+              "clue": "The colony suffered from divided leadership: commander Sir Richard Grenville clashed bitterly with governor Ralph Lane, who imposed harsh military discipline on the settlement."
+            },
+            {
+              "term": "Manteo & Wanchese Native Translators",
+              "clue": "Accompanying the expedition were Manteo and Wanchese, two Algonquian Native translators who had visited London in 1584 to facilitate communication, trade, and diplomacy between English settlers and the local Secotan tribe."
+            }
+          ],
+          "model_sentence": "Consisting of <strong>107 Gentlemen Soldiers & No Farmers</strong> under the strict <strong>Grenville Fleet & Ralph Lane Army Discipline</strong>, the expedition brought <strong>Manteo & Wanchese Native Translators</strong> to Virginia."
         },
         {
           "stage": 3,
@@ -14271,7 +14853,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Flagship Tiger Runs Aground on Sandbar",
+              "clue": "In June 1585, the expedition's flagship Tiger ran aground on a sandbar off the Carolina Banks; seawater flooded the hold, ruining the colonists' grain seeds and perishable food provisions."
+            },
+            {
+              "term": "Seawater Ruins Grain Seeds & Provisions",
+              "clue": "In June 1585, the expedition's flagship Tiger ran aground on a sandbar off the Carolina Banks; seawater flooded the hold, ruining the colonists' grain seeds and perishable food provisions."
+            },
+            {
+              "term": "Disastrous Reliance on Secotan Fish Weirs",
+              "clue": "The colonists developed a disastrous reliance on local Secotan fish weirs and food handouts for survival."
+            }
+          ],
+          "model_sentence": "When their <strong>Flagship Tiger Runs Aground on Sandbar</strong> and <strong>Seawater Ruins Grain Seeds & Provisions</strong>, colonists suffered from a <strong>Disastrous Reliance on Secotan Fish Weirs</strong>."
         },
         {
           "stage": 4,
@@ -14287,7 +14884,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "Silver Cup Dispute Leads to Village Burning",
+              "clue": "The reckless overreaction by Sir Richard Grenville in 1585, burning an entire Native Secotan village and cornfields over a missing silver cup."
+            },
+            {
+              "term": "Ralph Lane Ambush Kills Chief Wingina",
+              "clue": "The preemptive strike by English governor Ralph Lane in June 1586, beheading the local Secotan leader and making peace with indigenous tribes impossible."
+            },
+            {
+              "term": "Drake Arrives to Evacuate Starving Settlers",
+              "clue": "Francis Drake's fleet visiting Roanoke in June 1586 following Caribbean raids, rescuing the demoralized and starving first English settlers."
+            }
+          ],
+          "model_sentence": "Escalating when a minor <strong>Silver Cup Dispute Leads to Village Burning</strong>, Governor <strong>Ralph Lane Ambush Kills Chief Wingina</strong> before <strong>Drake Arrives to Evacuate Starving Settlers</strong> in 1586."
         },
         {
           "stage": 5,
@@ -14303,7 +14915,22 @@ export default {
           ],
           "writing_frame": {
             "connectives": "To a large extent, it can be argued that... &bull; A decisive factor supporting this view was... &bull; Specifically, this was important because... &bull; On the other hand, an alternative perspective is that... &bull; In particular, ... &bull; In conclusion, the decisive reason was... because..."
-          }
+          },
+          "words": [
+            {
+              "term": "118 Civilian Settlers Led by John White",
+              "clue": "White stepped ashore to find the settlement completely abandoned, the houses dismantled, and the settlement overgrown with weeds."
+            },
+            {
+              "term": "Armada Impounds Supply Ships in England",
+              "clue": "The military emergency of 1588 forcing the Privy Council to requisition all ocean-going vessels for defense, preventing relief ships from reaching the Lost Colony."
+            },
+            {
+              "term": "‘CROATOAN’ Carved on Deserted Palisade",
+              "clue": "There was no sign of a struggle, but carved into a palisade wooden post was the single word \"CROATOAN\", the name of a nearby Native island."
+            }
+          ],
+          "model_sentence": "Comprising <strong>118 Civilian Settlers Led by John White</strong>, disaster struck when the <strong>Armada Impounds Supply Ships in England</strong>, leaving only the cryptic word <strong>‘CROATOAN’ Carved on Deserted Palisade</strong>."
         }
       ],
       "causal_domino_spine": {
@@ -14644,5 +15271,10 @@ export default {
     }
   ],
   "id": "eee",
-  "edition": "2026.1"
+  "edition": "2026.1",
+  "keyStage": "GCSE",
+  "key_stage": "GCSE",
+  "yearGroup": "Years 10–11",
+  "year_group": "Years 10–11",
+  "category": "GCSE"
 };

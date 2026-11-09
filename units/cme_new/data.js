@@ -13,8 +13,8 @@ export default {
   "enquiry_question": "Why has peace proved so difficult to achieve in the Middle East?",
   "homepage_background": "/images/cme_cover.jpg",
   "enquiry": "Why has peace proved so elusive in the Middle East?",
-  "category": "Edexcel GCSE",
-  "yearGroup": "GCSE",
+  "category": "GCSE",
+  "yearGroup": "Years 10–11",
   "desc": "Paper 2",
   "icon": "fa-dove",
   "color": "#0ea5e9",
@@ -2226,14 +2226,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to abandon Palestine.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 51 words. Directly pairs specific terms (Irgun, 91 personnel killed) with clear causal mechanism (public outrage forcing Attlee's cabinet to withdraw)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the 22 July 1946 Irgun bombing of the King David Hotel was the fatal erosion of Britain’s domestic political resolve to sustain Mandatory rule. By infiltrating the basement of the hotel's southwest wing—housing both the British Secretariat and Military Headquarters—Menachem Begin’s militant underground killed 91 British, Arab, and Jewish civil servants and destroyed central intelligence files. This catastrophic security breach demonstrated that the 100,000-strong British garrison could not enforce civilian order against Zionist insurgent warfare. Facing mounting British press campaigns demanding to 'bring the boys home' alongside post-war austerity and sterling insolvency, Prime Minister Clement Attlee concluded the Mandate was ungovernable, directly precipitating the February 1947 referral of Palestine to the United Nations.",
-                "verdict": "Historiographical depth examining the strategic objectives of the Hebrew Resistance Movement, the vulnerability of the Mandatory apparatus, and post-war imperial economic collapse."
               }
             },
             "scaffolding": {
@@ -2281,14 +2273,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the SS Exodus affair was a catastrophic international public relations disaster for Britain. When the Royal Navy forcibly boarded the ship and returned 4,500 Holocaust survivors to displaced persons camps in Germany, global outrage mounted, directly pushing US President Truman to demand Britain end the blockade and surrender the Mandate.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Pairs specific historical evidence (4,500 survivors returned to Germany, Royal Navy blockade) with diplomatic consequence (US pressure from Truman)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the SS Exodus incident of July 1947 was the total destruction of Britain's moral authority in the international arena, critically undermining Foreign Secretary Ernest Bevin's policy. Seeking to deter illegal Aliyah Bet immigration, Bevin ordered the Royal Navy to intercept the unarmed vessel carrying 4,514 Holocaust survivors and forcibly deport them back to displaced persons camps in Hamburg, British-occupied Germany. The harrowing media images of barbed-wire enclosures and concentration camp survivors being forced ashore on German soil generated intense global condemnation, particularly across the American public. This moral backlash directly galvanised President Harry S. Truman to endorse Zionist statehood demands and decisively influenced the visiting United Nations Special Committee on Palestine (UNSCOP) to recommend the immediate termination of the British Mandate.",
-                "verdict": "Academic excellence evaluating Aliyah Bet, Bevin's deterrence miscalculation, media visual propaganda, and its direct influence on UNSCOP commissioners."
               }
             },
             "scaffolding": {
@@ -2336,14 +2320,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One reason the bombing of the King David Hotel was important for Britain's decision to withdraw was that it completely destroyed the operational infrastructure of British governance in Palestine. The explosion destroyed the Secretariat and military headquarters, killing 91 key British, Arab, and Jewish staff while destroying vital intelligence registries. This proved that Britain's 100,000-man military garrison could no longer guarantee law and order against Zionist paramilitaries, proving that the Mandate had become militarily ungovernable.<br><br>Furthermore, the bombing was decisive because it destroyed domestic British political support for staying in Palestine. Coming directly after the trauma of the Second World War, the British public and press were outraged by soldiers and civil servants being killed abroad while Britain suffered severe post-war austerity and economic debt. Facing an unsustainable £40 million annual deployment cost, Prime Minister Clement Attlee’s government concluded that remaining in Palestine was untenable, directly accelerating the cabinet's February 1947 decision to surrender the Mandate to the United Nations.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 168 words across two distinct analytical paragraphs. Directly answers 'what difference X made to Y' (Paragraph 1 on governance collapse; Paragraph 2 on domestic political/economic exhaustion forcing UN handover)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The bombing of the King David Hotel on 22 July 1946 was the decisive operational turning point that shattered Britain's political will to maintain the Palestine Mandate, functioning as both an administrative collapse and a domestic political catalyst.<br><br>First, the attack critically incapacitated the coercive apparatus of the Mandatory state. By targeting the southwest wing of the hotel, which accommodated the civil Secretariat, the British Military Command, and the Criminal Investigation Department (CID), the Irgun decapitated Britain’s administrative hierarchy, killing 91 key personnel and incinerating indispensable intelligence archives documenting the Jewish underground. This catastrophe exposed the impotence of General Sir Evelyn Barker’s 100,000-man military apparatus. It proved that despite imposing sweeping martial curfews and cordon-and-search operations under 'Operation Agatha', Britain could neither pacify the Hebrew Resistance Movement nor protect its own administrative nerve centre.<br><br>Second, and most decisively, the bombing transformed Palestine from an imperial asset into an intolerable domestic political liability for Clement Attlee’s Labour government. Grappling with severe post-war economic exhaustion, the fuel crisis of 1947, and reliance on emergency American loans, the Treasury could not justify an annual expenditure of over £40 million maintaining a hostile garrison. Sensationalist British press coverage crystallized around the demand to 'bring our boys home', particularly following the retaliatory hanging of two British sergeants by the Irgun. Concluding that British presence lacked moral legitimacy and strategic utility, Foreign Secretary Ernest Bevin abandoned the partition proposals and announced on 14 February 1947 that Britain would surrender the Mandate unconditionally to the United Nations.",
-                "verdict": "Elite historiographical evaluation linking military infrastructure paralysis, CID archive destruction, Treasury fiscal crises, and cabinet policymaking under Attlee and Bevin."
               }
             },
             "scaffolding": {
@@ -3582,14 +3558,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the 1948–49 War for Palestinian Arabs was the creation of a permanent refugee crisis, known as the Nakba ('Catastrophe'). Over 700,000 Palestinians fled or were expelled from their villages, resulting in their confinement to squalid UNRWA refugee camps in the West Bank, Gaza, and Lebanon with no right of return.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Integrates specific terminology (Nakba, 700,000 refugees, UNRWA camps) and explains the permanent humanitarian and political consequence."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the 1948–49 War for Palestinian Arabs was the shattering of their communal fabric and the institutionalisation of statelessness known as the Nakba ('Catastrophe'). Between 700,000 and 750,000 Arabs—over 80% of the Arab population in what became Israel—fled or were expelled under operations like Plan Dalet, depopulating over 400 villages. Israel’s subsequent 1950 Absentee Property Law expropriated refugee lands, while the new state refused repatriation to preserve a Jewish demographic majority. Consequently, three-quarters of a million Palestinians were consigned to permanent, generation-spanning dependency in United Nations Relief and Works Agency (UNRWA) camps across the West Bank, Gaza, Jordan, Syria, and Lebanon, transforming Palestinian national identity into a militant struggle for the 'Right of Return' under UN Resolution 194.",
-                "verdict": "Exemplary historiographical precision analysing Plan Dalet, the Absentee Property Law, UN Resolution 194, and the institutional evolution of UNRWA."
               }
             },
             "scaffolding": {
@@ -3637,14 +3605,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the 1950 Law of Return was a rapid demographic transformation that doubled Israel’s population within four years. By granting every Jewish person automatic citizenship, over 680,000 European Holocaust survivors and Middle Eastern Jewish refugees arrived, directly securing vital manpower for national defence and the Israeli Defense Forces (IDF).",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 51 words. Pairs specific historical data (doubling population, 680,000 arrivals, Holocaust survivors) with causal military outcome (manpower for IDF)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the Knesset passing the Law of Return on 5 July 1950 was the institutionalisation of the 'Ingathering of the Exiles' (Kibbutz Galuyot), transforming Israel’s demographic and security profile at the cost of immense domestic economic strain. By granting every Jewish person the inherent legal right to immigrate (Aliyah) and acquire immediate citizenship, Israel absorbed over 687,000 immigrants between 1948 and 1951, doubling its Jewish population from 650,000 to over 1.3 million. While this influx provided indispensable conscript manpower for the newly constituted Israeli Defense Forces (IDF) and populated vulnerable frontiers along the 1949 armistice Green Line, it forced Prime Minister David Ben-Gurion’s government to impose strict austerity (Tzena) and house hundreds of thousands of Sephardic and Mizrahi refugees in squalid transit tent camps (Ma'abarot), cementing enduring socio-economic divides.",
-                "verdict": "Scholarly evaluation analysing Knesset legislation, Kibbutz Galuyot ideology, the Tzena austerity regime, Ma'abarot transit camps, and Mizrahi-Ashkenazi demographic shifts."
               }
             },
             "scaffolding": {
@@ -3692,14 +3652,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One reason the Law of Return was vital for the development of Israel was that it resolved the young state’s acute existential security and demographic deficit. Surrounded by hostile Arab states with vastly superior populations, Israel had only 650,000 Jewish citizens in 1948. By guaranteeing automatic citizenship to every Jewish immigrant, the law enabled 680,000 Holocaust survivors and Mizrahi refugees to arrive by 1951, doubling the population and providing essential conscripts to build the Israeli Defense Forces (IDF) into a formidable military deterrent.<br><br>Furthermore, the Law was decisive for national development because it facilitated the rapid territorial consolidation of Israel's newly established borders. The state strategically directed hundreds of thousands of new arrivals into farming cooperatives (kibbutzim and moshavim) along the fragile 1949 armistice lines (the Green Line) and in the Negev desert. This physically secured previously vulnerable frontiers against cross-border Fedayeen infiltration, converting an insecure armistice boundary into a permanently settled and economically productive sovereign state.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 165 words across two distinct paragraphs. Explains 'what difference X made to Y' (Paragraph 1 on demographic survival and IDF conscription; Paragraph 2 on border fortification and agricultural kibbutzim along the Green Line)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The enactment of the Law of Return on 5 July 1950 served as the ideological, demographic, and strategic foundation upon which the nascent State of Israel established institutional viability in the traumatic shadow of the 1948–49 War.<br><br>Strategically, the law rectified Israel's acute demographic imbalance against the Arab League coalition. Confronting an existential encirclement with a vulnerable Jewish population of merely 650,000, Prime Minister David Ben-Gurion prioritized rapid population expansion over economic orthodoxy. By conferring universal legal right to Aliyah, the state absorbed over 687,000 immigrants in thirty-six months. This demographic doubling provided the vital human reservoir necessary to institutionalise universal military conscription under the 1949 Defense Service Law, establishing the IDF’s unique reserve mobilization system that deterred Arab revanchism.<br><br>Geopolitically and domestically, the Law enabled the physical consolidation of sovereign territory. Ben-Gurion implemented an aggressive spatial dispersal strategy ('Population Dispersal Plan'), purposefully channelling incoming Mizrahi and European refugees away from coastal Tel Aviv into over 250 newly erected agrarian cooperatives (kibbutzim and moshavim) and development towns along the 1949 armistice Green Line and the barren Negev desert. This policy effectively populated depopulated Palestinian Arab lands, created defensive militarized buffers against fedayeen infiltration, and created irreversible facts on the ground that precluded any practical implementation of UN Resolution 194's refugee repatriation mandate.",
-                "verdict": "Elite historiographical synthesis analysing Ben-Gurion's spatial dispersal doctrine, the 1949 Defense Service Law reserve architecture, and the geopolitical preemption of UN Resolution 194."
               }
             },
             "scaffolding": {
@@ -5259,14 +5211,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the February 1955 Israeli raid on Gaza was that it prompted President Nasser to seek modern weapons from the Soviet bloc. The death of 37 Egyptian soldiers exposed Egypt's severe military inferiority, directly driving Nasser to sign the September 1955 Czechoslovak arms deal to obtain advanced Soviet MiG-15 jet fighters and tanks.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Pairs precise facts (37 Egyptian casualties, Operation Black Arrow, MiG-15s) with causal explanation (September 1955 Czech arms deal)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the 28 February 1955 Israeli assault on Egyptian military headquarters in Gaza (Operation Black Arrow) was Egypt's geopolitical pivot away from Western alignment towards the Soviet bloc. Commanded by Ariel Sharon's paratroopers in retaliation for cross-border fedayeen infiltration, the raid resulted in 37 Egyptian military fatalities and shattered President Gamal Abdel Nasser's domestic prestige. Rebuffed by the United States and Britain who conditioned arms sales on joining the anti-Soviet Baghdad Pact, Nasser circumvented Western hegemony by concluding the clandestine September 1955 Czechoslovak arms agreement. This transaction supplied Egypt with 200 MiG-15 jet fighters, 300 Soviet T-34 tanks, and naval submarines, fatally breaching the 1950 Tripartite Declaration and bringing the Cold War directly into the Arab-Israeli conflict.",
-                "verdict": "Elite historiographical evaluation examining Operation Black Arrow, the Baghdad Pact alignment crisis, the Tripartite Declaration collapse, and Cold War arms escalation."
               }
             },
             "scaffolding": {
@@ -5314,14 +5258,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the 1956 Suez Crisis was the permanent destruction of Britain and France’s status as independent global superpowers. When US President Eisenhower threatened to trigger a collapse of the British pound unless forces withdrew immediately, London capitulated, proving that European imperial powers could never again launch major military operations without American approval.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Directly pairs specific terms (Eisenhower, sterling crisis, British pound) with clear causal explanation of the loss of imperial independence."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the 1956 Suez Crisis for Britain and France was the terminal collapse of European imperial prestige and the definitive transition to a bipolar Cold War order dominated exclusively by Washington and Moscow. Incensed by Anglo-French collusion that undercut Western moral denunciations of the simultaneous Soviet invasion of Hungary, US President Dwight D. Eisenhower weaponised economic leverage, threatening to dump American holdings of sterling bonds and blocking emergency IMF credits. Facing an immediate run on the pound and severe petroleum rationing, Prime Minister Sir Anthony Eden was forced into an unconditional ceasefire on 6 November. This public humiliation precipitated Eden’s political resignation, hastened British decolonisation across Africa and the Persian Gulf ('East of Suez'), and demonstrated that Britain’s foreign policy was permanently subordinated to the Atlantic alliance.",
-                "verdict": "Exceptional academic depth analyzing financial diplomacy, sterling bond dumping, Eden's resignation, the Hungarian linkage, and the historic retreat from East of Suez."
               }
             },
             "scaffolding": {
@@ -5372,14 +5308,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "The crisis began on 26 July 1956 when Egyptian President Gamal Abdel Nasser nationalised the Anglo-French Suez Canal Company. Nasser seized the waterway to collect shipping tolls after the United States and Britain cancelled funding for Egypt's vital Aswan High Dam. British Prime Minister Anthony Eden viewed this as an intolerable threat to Britain’s imperial oil route, branding Nasser an aggressive dictator.<br><br>In response, Britain and France orchestrated the secret Protocol of Sèvres in October 1956, colluding with Israel to manufacture a pretext for military intervention. Under this plan, Israel invaded the Egyptian Sinai on 29 October, advancing towards the canal. Britain and France immediately issued a coordinated ultimatum demanding both sides withdraw from the canal zone, before landing Anglo-French paratroopers and launching air strikes on Port Said under the guise of 'separating the combatants'.<br><br>However, this military conspiracy provoked decisive superpower intervention that halted the invasion. US President Dwight D. Eisenhower condemned the operation and threatened to collapse the British pound by blocking vital loans unless forces withdrew immediately. Facing total financial ruin, Britain accepted a humiliating ceasefire on 6 November 1956, allowing the United Nations Emergency Force (UNEF) to deploy and supervise the withdrawal of allied troops.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 195 words in 3 paragraphs. Fully satisfies the 3-aspect standard and integrates explicit causal links ('In response', 'manufacture a pretext', 'However, this military conspiracy provoked') explaining the beginning, escalation, and outcome."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The 1956 Suez Crisis represented the violent collision of post-colonial Arab nationalism with waning Anglo-French imperial pretensions, unfolding through a tightly linked chain of diplomatic escalation, clandestine conspiracy, and superpower coercion.<br><br>The crisis ignited on 26 July 1956 when President Gamal Abdel Nasser announced the nationalisation of the Suez Canal Maritime Company during a speech in Alexandria, intending to divert its annual £30 million transit revenues to finance the Aswan High Dam following Anglo-American cancellation of World Bank loans. British Prime Minister Anthony Eden, viewing the canal as the imperial artery through which 70% of Western Europe's oil flowed, framed Nasser's act as fascist appeasement analogous to the 1930s Rhineland crisis, resolving upon regime change.<br><br>Failing to secure international diplomatic condemnation, Britain and Guy Mollet's France convened the clandestine Protocol of Sèvres (22–24 October 1956) with David Ben-Gurion's Israel. Under this tripartite conspiracy, Israel launched Operation Kadesh on 29 October, dropping paratroopers near the Mitla Pass in Sinai. Britain and France immediately issued a pre-arranged joint ultimatum ordering both armies to withdraw ten miles from the canal, knowing Egypt would refuse. On 5–6 November, Anglo-French airborne forces assaulted Port Said under Operation Musketeer.<br><br>However, this tactical military success provoked an immediate structural crisis. Incensed by Anglo-French duplicity while the Soviet Union crushed the Hungarian Uprising, US President Dwight D. Eisenhower weaponised American financial hegemony, refusing emergency IMF loans and threatening a devastating sell-off of sterling bonds. Facing currency insolvency and Soviet threats of rocket strikes, Eden capitulated, ordering a ceasefire on 6 November. The subsequent deployment of the United Nations Emergency Force (UNEF) codified the total eclipse of European imperial power and consecrated Nasser as the heroic vanguard of Pan-Arabism.",
-                "verdict": "Masterful historiographical account analyzing financial geopolitics, the Mitla Pass tactical operation, the Hungarian diplomatic linkage, and the permanent shift to bipolar hegemony."
               }
             },
             "scaffolding": {
@@ -6455,14 +6383,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the 1964 Cairo Conference was the unification of Palestinian resistance through the creation of the Palestine Liberation Organisation (PLO). Arab League heads of state established the PLO under the Palestinian National Charter, creating a dedicated political body and armed fedayeen factions like Yasser Arafat's Fatah to actively challenge Israeli sovereignty.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 50 words. Accurately links specific historical facts (PLO, Palestinian National Charter, Fatah) with the causal outcome (institutionalized fedayeen guerrilla warfare)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the January 1964 Arab League Summit in Cairo was the institutionalisation of Palestinian national identity and armed struggle through the establishment of the Palestine Liberation Organisation (PLO). Convened by Gamal Abdel Nasser to counter Israel’s National Water Carrier diversion from the Sea of Galilee, the conference sought to assert Egyptian hegemony over pan-Arab policy while establishing the Headwater Diversion Plan. However, by chartering the PLO under Ahmad Shukeiri and legitimising the Palestinian National Covenant, the summit inadvertently created an autonomous militant vanguard. This empowered independent fedayeen groups—most notably Yasser Arafat’s Fatah—to conduct cross-border sabotage raids from Syrian and Jordanian territory, triggering aggressive Israeli military reprisals like the November 1966 Samu raid and locking the region into an escalatory spiral that culminated in the Six-Day War.",
-                "verdict": "Elite historiographical evaluation connecting riparian hydro-politics (National Water Carrier), Nasser's pan-Arab containment strategy, and the emergence of autonomous fedayeen militancy."
               }
             },
             "scaffolding": {
@@ -6510,14 +6430,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the aerial clashes on 7 April 1967 was a sharp military escalation between Israel and Syria that dragged Egypt towards war. After Israeli Mirage jets shot down six Syrian MiG-21 fighters and buzzed Damascus, Syria publicly accused Egypt of failing to honour their mutual defence treaty, directly pressuring President Nasser to mobilise troops in Sinai.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Directly pairs specific factual knowledge (six Syrian MiG-21s, Mirage jets, buzz over Damascus) with causal consequence (Syrian pressure forcing Nasser to mobilise under their mutual defence pact)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the 7 April 1967 military escalation was the fatal activation of the November 1966 Egyptian-Syrian Mutual Defense Pact, creating the direct pretext for the May crisis. Initiated by Israeli armoured tractor cultivation in disputed demilitarized zones (DMZs) below the Golan Heights, Syrian artillery bombarded Israeli border kibbutzim, triggering a massive Israeli Air Force retaliatory strike. The IAF shot down six Soviet-supplied Syrian MiG-21 interceptors and flew provocative low-altitude victory passes over Damascus. This public humiliation severely discredited the radical Ba'athist regime in Damascus, prompting Syrian broadcasts to denounce Gamal Abdel Nasser as a coward hiding behind the protective shield of the United Nations Emergency Force (UNEF). Stung by accusations of pan-Arab betrayal and subsequently alarmed by fabricated Soviet intelligence warnings in early May claiming an imminent Israeli invasion of Syria, Nasser was politically compelled to deploy 100,000 troops into the Sinai Peninsula.",
-                "verdict": "Academic perfection analysing DMZ agricultural provocations, Ba'athist regime insecurity, and the psychological mechanism that forced Nasser's fateful Sinai deployment."
               }
             },
             "scaffolding": {
@@ -6568,14 +6480,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "The path to war began along the northern border between 1964 and April 1967. Syria’s radical Ba'athist regime actively backed Fatah guerrilla raids against Israeli infrastructure and shelled Israeli farming kibbutzim from artillery emplacements on the Golan Heights. In response to repeated ambushes, Israel conducted aggressive counter-attacks, culminating in the major air battle of 7 April 1967 where Israeli Mirage jets shot down six Syrian MiG-21s and buzzed Damascus.<br><br>This public humiliation directly triggered the fateful actions of President Nasser in May 1967. Stung by Syrian taunts that he was hiding behind UN peacekeepers, and spurred by false Soviet intelligence reports alleging an imminent Israeli invasion of Syria, Nasser took a series of rapid gambles: he ordered 100,000 Egyptian troops into the Sinai Peninsula, expelled the United Nations Emergency Force (UNEF), and announced the total naval blockade of the Straits of Tiran, choking off Israel’s southern oil port of Eilat.<br><br>These provocative actions made all-out war virtually inevitable by convincing Israeli leaders that their existence was under immediate threat. When King Hussein of Jordan signed a mutual defence pact with Egypt on 30 May, completing Israel's encirclement, Israel resolved to act before an Arab invasion could assemble. Consequently, on the morning of 5 June 1967, the Israeli Air Force launched Operation Focus, destroying over 300 Egyptian aircraft on the ground in three hours and initiating the Six-Day War.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 196 words across 3 paragraphs. Fulfills the 3-aspect standard and deploys clear causal bridges ('In response to', 'This public humiliation directly triggered', 'These provocative actions made all-out war virtually inevitable', 'Consequently') linking border tensions to the pre-emptive strike."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The outbreak of the Six-Day War in June 1967 unfolded through a catastrophic escalation cycle characterised by miscalculation, proxy warfare, and structural deterrence collapse.<br><br>The catalyst originated in the Syrian-Israeli border friction from 1964 onward. Damascus sponsored Yasser Arafat's Fatah guerrillas to sabotage Israel's National Water Carrier, provoking intense IDF retaliation. Following the 7 April 1967 aerial battle over the Golan—wherein Israeli Mirages down six Syrian MiGs and buzzed Damascus—the Ba'athist government accused Gamal Abdel Nasser of hiding behind the UN buffer. This political vulnerability intersected fatally with a fabricated Soviet intelligence cable in early May alleging twelve Israeli brigades were massing on Syria's frontier.<br><br>Compelled to salvage his pan-Arab prestige, Nasser initiated three unilateral escalations: deploying 100,000 Egyptian troops into Sinai, abruptly demanding the removal of Secretary-General U Thant’s UNEF peacekeepers, and closing the Straits of Tiran on 22 May. The blockade severed Israel's primary petroleum lifeline via Eilat, an act Prime Minister Levi Eshkol had repeatedly declared a formal casus belli.<br><br>The tipping point occurred on 30 May when King Hussein of Jordan unexpectedly flew to Cairo and signed a mutual defence pact, placing Jordanian forces under Egyptian command alongside an Iraqi contingent. Confronting operational asphyxiation and the prospect of a coordinated multi-front assault, newly appointed Israeli Defense Minister Moshe Dayan and Chief of Staff Yitzhak Rabin executed Operation Focus at 07:45 on 5 June. Striking with near-total air assets while Egyptian pilots were eating breakfast, the IAF neutralised 338 Arab aircraft in 180 minutes, sealing total tactical surprise.",
-                "verdict": "Elite historiographical narrative tracing proxy hydro-warfare, Soviet intelligence deception, the legal casus belli of Tiran, and the operational precision of Operation Focus."
               }
             },
             "scaffolding": {
@@ -7718,14 +7622,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of Nasser's actions in May 1967 was that it convinced Israeli leaders that an Arab invasion was imminent, prompting a pre-emptive strike. By expelling UN peacekeepers from Sinai and closing the Straits of Tiran to Israeli shipping at Sharm el-Sheikh, Nasser severed Israel's primary oil route, which Israel considered a casus belli (act of war) leading directly to Operation Focus on 5 June.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 58 words. Accurately links specific facts (expelling UNEF, blockading Straits of Tiran at Sharm el-Sheikh) to the causal outcome (Operation Focus pre-emptive strike)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of Gamal Abdel Nasser's escalatory measures between 14 and 22 May 1967 was the total collapse of the post-1956 international deterrence framework, leaving Israel's security establishment with no perceived alternative to a pre-emptive war. By orchestrating the abrupt expulsion of the United Nations Emergency Force (UNEF) buffer, remilitarising the Sinai with 100,000 troops and 1,000 tanks, and establishing a maritime blockade of the Straits of Tiran at Sharm el-Sheikh, Nasser severed Israel’s southern petroleum lifeline to Iran via the port of Eilat. Because Prime Minister Levi Eshkol had repeatedly declared the closure of the straits an unequivocal casus belli under international maritime law, and confronting a catastrophic economic paralysis resulting from the total mobilisation of its civilian reserve army, the Israeli cabinet formed a National Unity government with Moshe Dayan, authorising the devastating pre-emptive aerial assault of 5 June.",
-                "verdict": "Masterful academic evaluation assessing UNEF legal dissolution, economic reserve paralysis, international maritime law, and Dayan's appointment to the National Unity government."
               }
             },
             "scaffolding": {
@@ -7773,14 +7669,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the outbreak of the Six-Day War was a total Israeli military victory that radically transformed the borders of the Middle East. By destroying Arab air forces on 5 June, Israel rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights, tripling the territory under its control and placing over one million Palestinian Arabs under military occupation.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 58 words. Deploys precise geographical knowledge (Sinai, Gaza, West Bank, East Jerusalem, Golan) and explains the profound causal transformation (tripling territory, military occupation of 1 million Palestinians)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the outbreak and rapid conclusion of the June 1967 Six-Day War was the fundamental transformation of Israel from an insecure, geographically constricted state into the undisputed regional hegemon governing an extensive occupied empire. By obliterating Egyptian, Syrian, and Jordanian air forces in Operation Focus, the IDF conquered 26,000 square miles of territory—encompassing the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and the Syrian Golan Heights—within 132 hours of combat. While tripling its landmass established deep strategic depth and united historic Jerusalem under Israeli sovereignty, it incorporated over one million disenfranchised Palestinian Arabs under military administration, igniting bitter international legal disputes under the Fourth Geneva Convention and altering the Arab-Israeli conflict from an interstate confrontation into an enduring struggle over territorial occupation and national self-determination.",
-                "verdict": "Exceptional academic narrative evaluating geopolitical depth, the Fourth Geneva Convention, demographic liabilities, and the structural transformation of the conflict."
               }
             },
             "scaffolding": {
@@ -7828,14 +7716,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One reason the Golan Heights were of paramount importance for Israeli security was that capturing the plateau permanently eliminated Syrian artillery bombardment of northern Israeli communities. For nineteen years between 1948 and 1967, the Syrian military had used fortified bunkers on the volcanic escarpment to shell civilian farming kibbutzim in the Hula Valley and along the Sea of Galilee below. By seizing the heights on 9–10 June 1967, the IDF removed this immediate existential threat, allowing Israeli civilians in Upper Galilee to live and farm without the threat of cross-border shelling.<br><br>Furthermore, holding the Golan Heights was decisive for national security because it provided vital strategic depth and natural defensive barriers against future Syrian ground invasions. Rising over 1,000 metres above the plains, the high plateau—including Mount Hermon—enabled the IDF to install advanced electronic early-warning radar stations that monitored military movements all the way to Damascus, just 40 miles away. This commanding high ground proved essential during the 1973 Yom Kippur War, where Israeli armoured brigades held the 'Valley of Tears' against overwhelming Syrian tank assaults, preventing Syrian forces from penetrating into the Israeli heartland.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 178 words across two distinct analytical paragraphs. Answers 'what difference X made to Y' directly (Paragraph 1 on eliminating Hula Valley artillery bombardment; Paragraph 2 on strategic early-warning radar and tank defense in the Valley of Tears)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The capture and retention of the Golan Heights in June 1967 fundamentally restructured Israel's military doctrine, transforming an indefensible tactical vulnerability into an indispensable strategic bastion.<br><br>Tactically, control of the basalt plateau resolved nineteen years of acute border insecurity across Upper Galilee. Prior to 1967, the Syrian Armed Forces had exploited the 1,000-foot natural escarpment to establish deeply entrenched concrete artillery bunkers, continually subjecting Israeli agrarian kibbutzim in the Hula Valley and Lake Kinneret fishing vessels to interdictive artillery bombardments and sniper fire. Conquering the heights during the ferocious uphill assaults on 9–10 June permanently neutralised this topographical disadvantage, securing the freshwater resources of the Sea of Galilee and safeguarding vital drainage conduits under the National Water Carrier.<br><br>Strategically and operationally, the Golan provided crucial topographic buffer depth and early-warning intelligence assets that proved decisive for state survival. Stationed on the heights of Mount Hermon ('the eyes of the nation') and across the volcanic ridges of the plateau, Israeli signal intelligence and radar stations maintained uninhibited line-of-sight reconnaissance over southern Syria directly to Damascus, located barely 40 miles distant. This geographic reality served as an irreplaceable defensive barrier during the October 1973 Yom Kippur War. Despite overwhelming numerical superiority, Syrian armoured divisions were canalised into narrow choke points such as the 'Valley of Tears', enabling Avigdor Ben-Gal's depleted 7th Armoured Brigade to conduct a heroic four-day holding action that averted a catastrophic Syrian armoured breakthrough into civilian population centres.",
-                "verdict": "Elite historiographical evaluation analyzing riparian security, Mount Hermon signals intelligence, the 1973 Valley of Tears operational engagement, and the transformation of defensive doctrine."
               }
             },
             "scaffolding": {
@@ -8974,14 +8854,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of UN Resolution 242 was that it created a diplomatic deadlock over 'Land for Peace'. Israel was asked to withdraw from occupied lands in exchange for Arab recognition, but neither side agreed, freezing the borders and directly causing the 1969 War of Attrition.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 44 words (2 clear sentences). Pairs specific terms ('Land for Peace', occupied lands, Arab recognition) with causal outcome (War of Attrition)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of UN Resolution 242 was the institutionalisation of the 'Land for Peace' diplomatic architecture, which paradoxically entrenched a thirty-year territorial stalemate through deliberate linguistic ambiguity. Drafted by British Ambassador Lord Caradon, the English text intentionally omitted the definite article, calling for withdrawal from 'territories occupied' rather than 'the territories', allowing Israel to assert that only partial withdrawal was required to secure defensible borders. Conversely, the French text ('retrait des forces armées israéliennes des territoires occupés') mandated complete evacuation. Compounded by the Arab League's Khartoum Resolution adopting the uncompromising 'Three Noes' (no peace, no recognition, no negotiation), this diplomatic impasse froze the post-1967 borders, legitimised Israel's establishment of the fortified Bar-Lev Line and early Allon Plan settlements, and convinced Anwar Sadat that only renewed military force could break the diplomatic paralysis, precipitating the 1973 Yom Kippur War.",
-                "verdict": "Exceptional academic and historiographical depth. Evaluates linguistic drafting divergence, contrasts multilateral resolutions, and traces causal mechanisms from the legal impasse to strategic military escalation."
               }
             },
             "scaffolding": {
@@ -9028,14 +8900,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the dispute over the Suez Canal was the outbreak of the War of Attrition. Because the canal was closed as a fortified frontline, Israel built the Bar-Lev Line along the east bank, which prompted continuous Egyptian artillery shelling and commando raids until the 1970 ceasefire.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 43 words (2 clear sentences). Pairs specific specification terms (War of Attrition, Bar-Lev Line, 1970 ceasefire) with direct causal outcome."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One major consequence of the continued dispute over the Suez Canal was the militarisation of the waterway into the central battleground of the 1969–70 War of Attrition. Following the Six-Day War, Egypt closed the canal to international maritime traffic—trapping the 'Yellow Fleet' of merchant ships—and transformed the west bank into an artillery staging zone. In response, Chief of Staff Chaim Bar-Lev oversaw the construction of the massive Bar-Lev Line, a $300 million network of sand ramparts and concrete bunkers designed to repel amphibious assaults. This tactical deadlock prompted Nasser to launch daily artillery bombardments and commando crossings, provoking deep-penetration Israeli airstrikes and Soviet military intervention (Operation Kavkaz) before the August 1970 Rogers Plan ceasefire. Ultimately, this confrontation convinced Sadat that Israel's fortifications could only be overcome by a coordinated amphibious assault, directly inspiring Operation Badr in October 1973.",
-                "verdict": "Exceptional academic and strategic depth. Integrates tactical infrastructure (Bar-Lev Line), international logistics (Yellow Fleet), superpower escalation (Soviet Operation Kavkaz), and explains the operational bridge to the 1973 Yom Kippur War."
               }
             },
             "scaffolding": {
@@ -9086,14 +8950,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "The chain of events began in June 1967 when Israel annexed East Jerusalem and occupied Sinai, Gaza, the West Bank, and the Golan Heights. This displacement of over 300,000 Palestinian refugees across the River Jordan directly created an acute humanitarian crisis that destabilised Jordan and made immediate Arab military retaliation a top priority.<br><br>This humiliation directly provoked Arab leaders to convene at the Khartoum Summit in August 1967. Rather than seeking compromise, the heads of state issued the uncompromising 'Three Noes' (no peace, no recognition, no negotiations). In direct response, both sides hardened their diplomatic stances, effectively blocking bilateral peace talks and entrenching military confrontation along the new ceasefire lines.<br><br>This diplomatic deadlock ultimately forced the United Nations to intervene in November 1967 by passing Resolution 242. British diplomats attempted to bridge the divide through the principle of 'Land for Peace'; however, deliberate linguistic ambiguity over 'territories occupied' allowed Israel to retain the lands while Arab states demanded total withdrawal first. Consequently, rather than resolving the dispute, Resolution 242 cemented an enduring geopolitical stalemate that governed Middle Eastern conflict for decades.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 196 words in 3 paragraphs. Meets the 3-aspect standard and deploys clear causal bridges ('directly created', 'directly provoked', 'In direct response', 'ultimately forced') explaining how each stage produced the next."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The immediate aftermath of the Six-Day War triggered an acute structural transformation across the Middle East, initiating a sequence of escalating diplomatic and military crises between June and November 1967.<br><br>The sequence began in June with Israel's rapid conquest and occupation of the Sinai Peninsula, Gaza Strip, West Bank, and Golan Heights, alongside the unilateral administrative annexation of East Jerusalem. This territorial expansion created a strategic buffer zone for Israel but generated an immediate demographic and humanitarian catastrophe, driving more than 300,000 Palestinian refugees across the Jordan River. This massive influx radically destabilised the Hashemite Kingdom of Jordan and established the fertile recruiting ground for armed Fedayeen resistance movements.<br><br>This acute humiliation directly provoked the fourth Arab League summit in Khartoum in August–September 1967. Under Egyptian President Gamal Abdel Nasser's leadership, the Arab states sought to mask catastrophic military vulnerability with ideological defiance, culminating in the adoption of the celebrated 'Three Noes': no peace with Israel, no recognition of Israel, and no negotiations with Israel. In direct response to Khartoum's rejectionism, the Israeli cabinet abandoned its initial willingness to trade Sinai and Golan for comprehensive bilateral peace treaties, instead entrenching its military occupation and constructing the defensive Bar-Lev fortification line along the Suez Canal.<br><br>This total diplomatic paralysis ultimately forced the United Nations Security Council to intervene, culminating in the unanimous adoption of British-sponsored Resolution 242 on 22 November 1967. Crafted by Lord Caradon, the resolution enshrined the conceptual formula of 'Land for Peace'—mandating the 'withdrawal of Israel armed forces from territories occupied in the recent conflict' in exchange for the termination of all belligerency and respect for the sovereignty of every state in the area. However, the intentional omission of the definite article 'the' before 'territories' in the English text allowed Israel to interpret the clause as requiring only partial withdrawal to secure borders, whereas the French translation ('des territoires occupés') supported the Arab demand for full and immediate evacuation. Consequently, far from resolving the conflict, Resolution 242 codified the geopolitical deadlock and set the operational parameters for the War of Attrition and the 1973 October War.",
-                "verdict": "Exceptional scholarly narrative integrating international law, geopolitical strategy, domestic Arab regime preservation, and detailed historiographical analysis of the Bar-Lev Line and UN drafting ambiguity."
               }
             },
             "scaffolding": {
@@ -10218,14 +10074,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the September 1970 PFLP Dawson's Field airplane hijackings was King Hussein's military crackdown against Palestinian militias in Jordan. By landing three hijacked Western airliners in the Jordanian desert and blowing them up on international television, the PFLP humiliated the Jordanian monarchy, directly provoking King Hussein to declare martial law and launch the 'Black September' civil war to expel the fedayeen.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 57 words. Directly connects specific factual evidence (Dawson's Field, PFLP, blowing up planes on TV) with the causal outcome (King Hussein declaring martial law and launching Black September)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the Popular Front for the Liberation of Palestine (PFLP) Dawson’s Field hijackings in September 1970 was the terminal rupture between the Jordanian Hashemite monarchy and the Palestinian guerrilla movement. Operating as a 'state within a state' in Amman, George Habash's Marxist PFLP commandeered three Western airliners (Pan Am, Swissair, TWA) and detonated them before global media at a former RAF airstrip outside Zarka, exposing King Hussein’s total loss of sovereign domestic authority. Fearing an imminent republican coup and Western intervention, Hussein appointed a military cabinet, declared martial law on 16 September, and unleashed the Bedouin-dominated Jordanian Armed Forces under Brigadier Habis al-Majali. The resulting ten-day 'Black September' urban offensive crushed the PLO’s paramilitary presence in Amman, repelled an abortive Syrian tank incursion, and permanently altered Palestinian organizational geography.",
-                "verdict": "Masterful academic narrative evaluating the PFLP's revolutionary strategy, the 'state within a state' governance crisis, Bedouin army loyalty, and the broader regional Cold War stakes."
               }
             },
             "scaffolding": {
@@ -10273,14 +10121,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the expulsion of the PLO from Jordan was the relocation of Palestinian guerrilla bases to southern Lebanon. After being forced out of Jordan by July 1971, Yasser Arafat's PLO established an autonomous armed enclave ('Fatahland') in Lebanon, which destabilised Lebanon's delicate political balance and directly led to cross-border Israeli invasions in 1978 and 1982.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Combines specific historical knowledge (Arafat, Fatahland, southern Lebanon) with clear causal consequence (destabilizing Lebanon leading to the 1978 and 1982 Israeli invasions)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the PLO’s total expulsion from Jordan between September 1970 and July 1971 was the geographical and tactical restructuring of Palestinian resistance, leading directly to the collapse of Lebanese state stability and the internationalisation of terrorism. Deprived of their 200-mile frontier along the Jordan River, Yasser Arafat relocated thousands of fighters to Beirut and the Arkoub region of southern Lebanon, exploiting the 1969 Cairo Agreement to construct a heavily fortified quasi-state ('Fatahland'). This armed presence upset Lebanon's fragile National Pact sectarian balance, catalysing the devastating 1975 Lebanese Civil War. Furthermore, bitter humiliation over the Jordanian expulsion radicalised disillusioned Fatah cadres into establishing the clandestine 'Black September Organization' (BSO), dedicated to spectacular transnational terrorism—culminating in the assassination of Jordanian Prime Minister Wasfi Tal and the 1972 Munich Olympic massacre.",
-                "verdict": "Exemplary historiographical synthesis analyzing the 1969 Cairo Agreement, Lebanese sectarian destabilization, and the formation of the Black September clandestine cell."
               }
             },
             "scaffolding": {
@@ -10328,14 +10168,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One reason the Munich Olympics massacre was important for international attitudes was that it broadcast the Palestinian political plight to an unprecedented global television audience. In September 1972, the Black September faction infiltrated the Olympic Village and took eleven Israeli athletes hostage, demanding the release of 234 Palestinian prisoners. Watched live by an estimated 900 million viewers across the world, the crisis shattered the Western perception that Palestinians were merely passive, forgotten refugees living in UN camps, forcefully establishing the Palestinian national cause as an urgent global political issue that could no longer be ignored.<br><br>Furthermore, Munich was decisive because the brutal murder of all eleven Israeli hostages produced profound moral outrage that branded Palestinian militancy as international terrorism. The catastrophe at Fürstenfeldbruck airfield led Western governments, including the United States and West Germany, to condemn the PLO and establish elite counter-terrorism units. For Israel, it prompted Prime Minister Golda Meir to authorise 'Operation Wrath of God', an aggressive covert assassination campaign across Europe against Palestinian leaders, entrenching international hostility and ensuring the Israeli government refused all diplomatic contact with the PLO for decades.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 178 words across two distinct analytical paragraphs. Directly answers 'what difference X made to Y' (Paragraph 1 on global awareness destroying the 'passive refugee' myth; Paragraph 2 on moral condemnation, counter-terrorism, and Golda Meir's Operation Wrath of God)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The 5–6 September 1972 Munich Olympic massacre represented a watershed in the internationalisation of the Palestinian struggle, exerting a profound and bifurcated impact on global political consciousness and security architecture.<br><br>On one hand, the attack was a calculated exercise in asymmetrical propaganda of the deed. By infiltrating the Olympic Village and taking eleven members of the Israeli delegation hostage, the Black September Organization exploited the world's premier televised sporting spectacle to bypass Arab state censorship. Broadcast in real time to 900 million viewers globally, the drama effectively erased the patronizing international narrative that Palestinians were merely anonymous humanitarian refugees under UNRWA care, forcing global chancelleries to acknowledge a distinct, unignorable Palestinian national identity and territorial claim.<br><br>Conversely, the botched rescue operation at Fürstenfeldbruck airbase and the slaughter of the Israeli hostages alienated Western public opinion and codified the Palestinian national movement as the vanguard of transnational terrorism. Western states responded with institutional militarisation, establishing specialized counter-terrorism taskforces (e.g. GSG 9 in West Germany) and intensifying intelligence surveillance. For Israel, Prime Minister Golda Meir and the secretive Committee X authorized the Mossad to launch 'Operation Wrath of God'—a multi-year clandestine assassination campaign targeting Palestinian intellectuals and operational figures across Rome, Paris, and Beirut. While Arafat would leverage the ensuing global prominence to secure Arab League recognition at Rabat and address the UN General Assembly in 1974, Munich permanently entrenched Israeli political refusal to engage with the PLO.",
-                "verdict": "Brilliant academic evaluation analyzing 'propaganda of the deed', the deconstruction of the refugee narrative, Mossad's Committee X, and Arafat's subsequent pivot to the UN podium."
               }
             },
             "scaffolding": {
@@ -11494,14 +11326,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of Israel’s consolidation of the occupied territories was that it convinced Arab leaders that lost lands could only be recovered through military force. By building the fortified Bar-Lev Line along the Suez Canal and constructing permanent civilian settlements, Israel signalled it would never withdraw voluntarily, directly prompting Egyptian President Anwar Sadat to plan the 1973 Yom Kippur surprise attack.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 58 words. Directly links specific historical evidence (Bar-Lev Line along Suez Canal, civilian settlements) with the causal outcome (Sadat planning the 1973 Yom Kippur War)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of Israel's post-1967 territorial consolidation was the institutionalisation of a strategic impasse that made a regional war of revision inevitable. Under the influence of the Allon Plan and the Galili Document, the Israeli government constructed permanent civilian and agricultural settlements across the West Bank, Golan Heights, and Yamit in Sinai, while erecting the $300 million sand-berm Bar-Lev fortification system along the east bank of the Suez Canal. This physical infrastructure created widespread hubris within the Israeli intelligence apparatus (the 'Conception'), which presumed Arab armies lacked the military capability to breach Israeli lines. Conversely, it convinced President Anwar Sadat that bilateral diplomacy was bankrupt and that only a violent military disruption could unfreeze the diplomatic stalemate, directly catalysing Operation Badr in October 1973.",
-                "verdict": "Scholarly evaluation analysing the Galili Document, the Allon Plan, Israeli intelligence hubris ('The Conception'), and Sadat's limited-war doctrine."
               }
             },
             "scaffolding": {
@@ -11549,14 +11373,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One major consequence of the Yom Kippur War was the 1973 OPEC oil embargo, which quadrupled global crude oil prices. By cutting petroleum production and embargoing Western nations that supported Israel, Arab oil states triggered severe economic recessions, directly forcing US Secretary of State Henry Kissinger to intervene and launch 'shuttle diplomacy' to negotiate disengagement.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Integrates specific terminology (OPEC embargo, quadrupled oil prices, Henry Kissinger, shuttle diplomacy) and explains the international economic and diplomatic consequence."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the October 1973 Yom Kippur War was the permanent shattering of the Israeli psychological sense of invulnerability and the weaponisation of Middle Eastern energy supplies against the West. Suffered during the initial Egyptian crossing of the Suez Canal and Syrian breakthroughs on the Golan, Israel's loss of over 2,600 soldiers provoked immense domestic trauma, culminating in the Agranat Commission of Inquiry and the forced resignation of Prime Minister Golda Meir and Defense Minister Moshe Dayan. Concurrently, the Organisation of Arab Petroleum Exporting Countries (OAPEC) implemented production cuts and a total embargo against the United States and the Netherlands, quadrupling the posted price of crude oil from $3 to nearly $12 per barrel. This induced stagflation across Western industrial economies, abruptly demonstrating that Washington could no longer treat the Arab-Israeli conflict with benign neglect, compelling Henry Kissinger to initiate intensive step-by-step shuttle diplomacy.",
-                "verdict": "Exceptional academic analysis covering Israeli domestic trauma, the Agranat Commission, OAPEC pricing leverage, Western stagflation, and Kissingerian diplomacy."
               }
             },
             "scaffolding": {
@@ -11607,14 +11423,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "The war began on 6 October 1973 when Egypt and Syria launched a coordinated surprise attack on the Jewish holy day of Yom Kippur and during the Muslim month of Ramadan. In the south, Egyptian infantry executed Operation Badr, using high-pressure water cannons to breach the sand ramparts of the Bar-Lev Line and crossing the Suez Canal under a dense umbrella of Soviet-supplied SAM anti-aircraft missiles. Simultaneously, Syrian armoured divisions assaulted the Golan Heights, overwhelming early Israeli defences and inflicting severe initial casualties on the unprepared IDF.<br><br>As Israeli forces faced an existential crisis on both fronts, the conflict escalated into a high-stakes superpower proxy struggle. US President Nixon authorised Operation Nickel Grass, a massive emergency military airlift that delivered tanks, ammunition, and Phantom jets directly to Israel. This vital resupply enabled General Ariel Sharon's armoured division to exploit a gap between Egyptian armies, cross to the west bank of the Suez Canal, and surround Egypt’s Third Army, completely reversing the military momentum on the ground.<br><br>However, this military turnaround triggered dramatic global economic and diplomatic intervention. In direct response to American military aid for Israel, Arab OPEC members deployed the 'oil weapon', slashing oil production and placing an embargo on Western nations, which quadrupled world oil prices. Fearing direct Soviet military intervention to save Egypt's Third Army, the US placed its nuclear forces on DEFCON 3. This dangerous escalation forced US Secretary of State Henry Kissinger to step in, brokering UN Resolution 338 and securing a ceasefire on 24 October 1973.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 200 words across 3 paragraphs. Fulfills the 3-aspect standard and integrates explicit causal links ('As Israeli forces faced...', 'This vital resupply enabled...', 'In direct response...', 'This dangerous escalation forced...') linking the initial assault to the counter-crossing, the oil weapon, and the ceasefire."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The October 1973 Yom Kippur War was the crucible that shattered the post-1967 military status quo, transitioning through a dangerous cycle of tactical surprise, superpower brinkmanship, and global geoeconomic coercion.<br><br>The war ignited at 14:00 on 6 October 1973 when Egyptian and Syrian forces executed Operation Badr under cover of deception exercises during Yom Kippur and Ramadan. In the Sinai, Egyptian assault teams deployed high-pressure water monitors to liquefy the 60-foot sand ramparts of the Bar-Lev Line, ferrying 100,000 troops across the Suez Canal while stationary Soviet-supplied SA-6 missile batteries neutralised the Israeli Air Force's tactical air support. Simultaneously on the Golan, three Syrian divisions overwhelmed Avigdor Ben-Gal's 7th Armoured Brigade, threatening the Galilee heartland.<br><br>Confronting ammunition depletion and existential vulnerability, Prime Minister Golda Meir appealed to Washington, prompting President Richard Nixon and Henry Kissinger to initiate Operation Nickel Grass—a massive airlift delivering 22,000 tons of materiel. Re-equipped with TOW anti-tank missiles and Phantom jets, the IDF stabilized the Golan and executed a audacious counter-offensive in Sinai. On 15–16 October, General Ariel Sharon's 143rd Armoured Division penetrated the seam between the Egyptian Second and Third Armies at the Deversoir corridor, established a pontoon bridge across the canal, and completely encircled the 20,000-man Egyptian Third Army.<br><br>This battlefield reversal immediately catalysed global geopolitical contagion. On 17 October, the Organisation of Arab Petroleum Exporting Countries (OAPEC) deployed the 'oil weapon', instituting 5% monthly production cuts and an embargo against Western allies, triggering a quadrupling of crude oil prices. Concurrently, when Soviet General Secretary Leonid Brezhnev threatened unilateral military intervention to relieve Egypt's Third Army, the White House placed American nuclear forces on DEFCON 3. This acute brinkmanship compelled Kissinger to fly to Moscow and draft UN Security Council Resolution 338, enforcing an armistice on 25 October and setting the stage for post-war disengagement diplomacy.",
-                "verdict": "Elite academic narrative analyzing Operation Badr, the SA-6 SAM umbrella, Operation Nickel Grass, Sharon's Deversoir crossing, the OAPEC oil weapon, and superpower DEFCON 3 brinkmanship."
               }
             },
             "scaffolding": {
@@ -13124,14 +12932,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the 1973 OPEC oil embargo was that it forced the United States to abandon its passive stance and actively mediate Middle Eastern diplomacy. Because quadrupled crude oil prices and fuel shortages caused severe domestic economic stagflation, Secretary of State Henry Kissinger launched intensive 'shuttle diplomacy' to broker disengagement agreements and prevent future Arab-Israeli wars.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Accurately links specific economic evidence (OPEC embargo, quadrupled oil prices, stagflation) to the foreign policy outcome (Kissinger's shuttle diplomacy and disengagement pacts)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the 1973 OAPEC oil embargo was the structural reorientation of American Middle Eastern grand strategy from uncritical containment to active bilateral mediation. Confronted with a 400% surge in posted crude oil prices, consumer panic at petrol stations, and severe industrial stagflation, President Richard Nixon and National Security Advisor Henry Kissinger recognised that unhedged diplomatic alignment with Israel jeopardised the Western world’s macroeconomic architecture. To neutralise the Arab oil weapon, Kissinger inaugurated his famous 'step-by-step' shuttle diplomacy in 1974, systematically travelling between Jerusalem, Cairo, and Damascus. By negotiating the Sinai I (1974) and Sinai II (1975) disengagement accords, the US successfully decoupled Egyptian strategic interests from Syrian revanchism and established Washington as the indispensable arbiter of regional diplomacy.",
-                "verdict": "Elite academic analysis evaluating grand strategy reorientation, macroeconomic vulnerability, Kissingerian step-by-step disengagement, and the decoupling of Egypt from Syria."
               }
             },
             "scaffolding": {
@@ -13179,14 +12979,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of Anwar Sadat’s visit to Jerusalem in November 1977 was that it shattered thirty years of psychological enmity and opened direct bilateral peace negotiations. By addressing the Israeli Knesset in person and declaring 'no more war', Sadat bypassed deadlocked international conferences, directly creating the diplomatic trust that enabled President Jimmy Carter to convene the 1978 Camp David summit.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 57 words. Directly connects specific historical evidence (landing at Ben Gurion Airport, Knesset speech, 'no more war') with the causal outcome (Camp David summit under Jimmy Carter)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of Anwar Sadat’s historic 19–21 November 1977 journey to Jerusalem was the irreversible destruction of the psychological taboo against Arab recognition of Israel. Recognizing that Soviet-backed multilateral negotiations in Geneva would drown in procedural wrangling over PLO representation, Sadat unilaterally executed a dramatic diplomatic coup by flying to Tel Aviv. Addressing the Knesset before Prime Minister Menachem Begin, Sadat proclaimed: 'You want to live with us in this part of the world... in peace and security... We welcome you among us.' While demanding the total return of Arab lands occupied in 1967, Sadat's personal courage transformed the paradigm from existential war to contractual negotiation. This direct bilateral engagement bypassed Arab League rejectionism and established the direct bilateral channel that culminated in the September 1978 Camp David Accords.",
-                "verdict": "Academic excellence evaluating the Geneva multilateral deadlock, the psychological breakthrough of the Knesset speech, and the institutional path to Camp David."
               }
             },
             "scaffolding": {
@@ -13237,14 +13029,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "Diplomatic engagement began in early 1974 following the October 1973 War. Driven by the devastating impact of the Arab oil embargo on the Western economy, US Secretary of State Henry Kissinger initiated intensive 'shuttle diplomacy', flying relentlessly between Cairo and Jerusalem. This step-by-step approach secured the Sinai I (1974) and Sinai II (1975) disengagement agreements, which pulled Israeli forces back from the Suez Canal, allowed Egypt to clear and reopen the vital canal in June 1975, and established early-warning buffer zones monitored by American technicians.<br><br>However, this diplomatic momentum stalled dramatically in May 1977 following the election of Menachem Begin's right-wing Likud government. Begin was an ideological hardliner who viewed the occupied West Bank as historic biblical territory ('Judea and Samaria') and initially showed little interest in peace with Arab neighbours. Fearing that diplomatic paralysis would lead inexorably to another catastrophic war, Egyptian President Anwar Sadat took a daring gamble to break the psychological deadlock.<br><br>This culminated on 19 November 1977 when Sadat undertook an unprecedented visit to Jerusalem, landing at Ben Gurion Airport and addressing the Israeli Knesset in person. Declaring 'no more war, no more bloodshed', Sadat offered full diplomatic peace in exchange for the return of Egyptian territory. This historic gesture stunned the world and shattered thirty years of Arab rejectionism, directly compelling Begin to respond and laying the essential foundation for the 1978 Camp David negotiations.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 200 words across 3 paragraphs. Fulfills the 3-aspect standard and deploys clear causal bridges ('Driven by...', 'However, this diplomatic momentum stalled...', 'Fearing that diplomatic paralysis would lead...', 'This culminated on...') linking shuttle diplomacy to the Knesset breakthrough."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "Diplomatic negotiations between Israel and Egypt between 1974 and 1977 unfolded through a complex transition from American-mediated incrementalism to direct bilateral summitry.<br><br>The process originated in the aftermath of the October 1973 War, where the acute pressure of the OAPEC oil embargo impelled US Secretary of State Henry Kissinger to pursue 'step-by-step' disengagement diplomacy. Flying between Cairo, Jerusalem, and Damascus, Kissinger leveraged American financial commitments to broker the January 1974 Sinai I Accord, establishing a UN-monitored buffer zone east of the Suez Canal. This enabled Egypt to clear and reopen the canal on 5 June 1975, followed by the September 1975 Sinai II Accord, in which Israel surrendered the strategic Abu Rudeis oil fields and the Giddi and Mitla passes in exchange for non-belligerency commitments and American electronic surveillance stations.<br><br>However, this incremental momentum collapsed in May 1977 when Menachem Begin's Revisionist Zionist Likud coalition achieved an electoral triumph in Israel. Begin rejected withdrawal from the biblical lands of 'Judea and Samaria' (the West Bank) and expanded Jewish settlements. Concurrently, US President Jimmy Carter’s attempt to reconvene a multilateral Geneva peace conference with Soviet co-sponsorship threatened to stall negotiations over PLO participation.<br><br>Fearing that regional paralysis would undermine Egypt’s domestic economy and ignite another war, Anwar Sadat executed a revolutionary geopolitical initiative. On 9 November 1977, Sadat astonished the Egyptian parliament by declaring his willingness to travel to Jerusalem. Landing at Ben Gurion Airport on 19 November, Sadat addressed the Knesset, directly stating: 'We used to reject you... yet today we agree to live with you in peace.' This profound psychological rupture dismantled thirty years of pan-Arab rejectionism and locked Begin into bilateral negotiations that culminated at Camp David.",
-                "verdict": "Elite historiographical evaluation analyzing Kissinger's step-by-step doctrine, the Abu Rudeis and Mitla concessions, the Likud electoral earthquake, Carter's Geneva dilemma, and Sadat's Knesset initiative."
               }
             },
             "scaffolding": {
@@ -13324,14 +13108,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One reason the Camp David Accords were of profound importance for Arab-Israeli relations was that they achieved the first formal peace treaty between Israel and a frontline Arab state, breaking thirty years of continuous warfare. Under the bilateral framework brokered by US President Jimmy Carter, Israel agreed to withdraw completely from the Sinai Peninsula and dismantle its settlements, while Egypt granted full diplomatic recognition and opened the Suez Canal and Straits of Tiran to Israeli shipping. This established the vital precedent of 'land for peace' and neutralised the Arab world’s largest military power, ensuring Israel no longer faced a credible two-front existential threat.<br><br>Furthermore, the Accords were decisive because they deeply fractured the Arab world and isolated Egypt from its traditional allies. Because the framework for Palestinian self-government in the West Bank and Gaza lacked binding timetables and was rejected by Israeli Prime Minister Menachem Begin as statehood, other Arab states viewed Anwar Sadat as a traitor to the Palestinian cause. At the November 1978 Baghdad Summit, Arab League members voted to expel Egypt and sever diplomatic relations, deepening regional instability and directly fuelling the Islamist opposition that led to Sadat's assassination in October 1981.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 174 words across two distinct analytical paragraphs. Directly answers 'what difference X made to Y' (Paragraph 1 on breaking the Arab military coalition and establishing the 'land for peace' precedent; Paragraph 2 on Arab League expulsion, isolation of Egypt, and Sadat's assassination)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The Camp David Accords of September 1978 represented the single most consequential diplomatic transformation in the modern Middle East, permanently disarticulating the pan-Arab military coalition while codifying an enduring rift over Palestinian self-determination.<br><br>Strategically, the bilateral 'Framework for the Conclusion of a Peace Treaty between Egypt and Israel' permanently dismantled the existential threat to the State of Israel. By exchanging the entire 60,000-square-kilometre Sinai Peninsula and dismantling fifteen civilian settlements (including Yamit) for formal diplomatic recognition and normalized trade relations, Prime Minister Menachem Begin successfully detached Egypt—the Arab world’s demographic, cultural, and military anchor—from the confrontation front. With Egypt’s 400,000-man army neutralized by demilitarized buffer zones and an American-funded $3 billion annual military assistance package, the Arab League lost its capacity to launch a coordinated two-front conventional war against Israel, fundamentally altering the regional balance of power.<br><br>Conversely, the accords ignited profound geopolitical destabilization across the Arab periphery. Because the companion 'Framework for Peace in the Middle East' offered only ambiguous 'autonomy' for the West Bank and Gaza while Begin explicitly refused to freeze Jewish settlement construction or concede sovereign Palestinian statehood, the agreement was denounced as a catastrophic betrayal of pan-Arab solidarity. At the November 1978 Baghdad Summit, the Arab League unanimously severed diplomatic relations with Cairo, suspended Egypt’s membership, and relocated its headquarters to Tunis. Domestically, this diplomatic isolation inflamed Egyptian Islamist militancy, directly provoking the October 1981 assassination of Anwar Sadat by Egyptian Islamic Jihad and leaving the unresolved Palestinian question to fester into asymmetric intifada warfare.",
-                "verdict": "Elite historiographical evaluation examining Begin's autonomy doctrine, the neutralization of the Egyptian armed forces, American financial subsidization, and the geopolitical isolation of Cairo."
               }
             },
             "scaffolding": {
@@ -14778,14 +14554,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of Operation Litani in March 1978 was the deployment of United Nations peacekeepers and the creation of an Israeli proxy security belt in southern Lebanon. In response to 25,000 Israeli troops advancing to the Litani River, UN Security Council Resolution 425 established UNIFIL, while Israel armed the South Lebanon Army to police a southern border buffer zone.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly links the Israeli military advance (25,000 troops, Litani River) to the causal outcome (UN Resolution 425, UNIFIL deployment, South Lebanon Army buffer zone)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One structural consequence of Operation Litani in March 1978 was the institutionalisation of an internationalised security regime and an Israeli proxy enclave in southern Lebanon. Launched following the deadly Fatah Coastal Road massacre, the cross-border operation mobilized 25,000 IDF troops to push PLO fedayeen north of the Litani River. While UN Security Council Resolution 425 established the United Nations Interim Force in Lebanon (UNIFIL) to oversee Israeli withdrawal, Prime Minister Menachem Begin circumvented complete evacuation by arming Major Saad Haddad’s Christian South Lebanon Army (SLA). This established an informal 'security belt' that militarised the borderlands and laid the strategic architecture for Sharon's expanded 1982 invasion.",
-                "verdict": "Masterful academic analysis evaluating the Coastal Road catalyst, Resolution 425, the UNIFIL mandate, SLA proxy architecture, and long-term destabilisation."
               }
             },
             "scaffolding": {
@@ -14833,14 +14601,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the Sabra and Shatila massacre was severe domestic political fallout in Israel that forced the resignation of Defence Minister Ariel Sharon. Following massive protests of 400,000 people in Tel Aviv, the official Kahan Commission ruled that Sharon bore 'personal responsibility' for permitting Christian Phalangist militias into the refugee camps, compelling him to resign.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 49 words. Accurately connects the massacre in the refugee camps to the public backlash (400,000 rally), the Kahan Commission report, and Sharon's resignation."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One profound consequence of the September 1982 Sabra and Shatila massacre was the unprecedented domestic moral crisis that crippled the Begin government and terminated Ariel Sharon’s tenure as Defence Minister. Following the slaughter of up to 2,000 Palestinian civilians by Lebanese Phalangist militias operating under IDF illumination, approximately 400,000 Israelis—nearly ten percent of the national population—rallied in Tel Aviv under Peace Now banners. The subsequent judicial inquiry chaired by Justice Yitzhak Kahan issued a scathing verdict, concluding that Sharon bore 'personal responsibility' for ignoring the imminent danger of bloodshed. Sharon was forced to resign from the Defence Ministry, Menachem Begin’s political authority was irrevocably shattered, and Israeli domestic consensus regarding military adventurism in Lebanon dissolved.",
-                "verdict": "Flawless scholarly evaluation examining the Peace Now mass mobilisation, Kahan Commission jurisprudence, Sharon's censure, and the erosion of Israeli domestic consensus."
               }
             },
             "scaffolding": {
@@ -14888,14 +14648,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the outbreak of the First Intifada in December 1987 was that it shattered Israeli complacency and proved military occupation was unsustainable. Following the fatal Jabalia checkpoint crash, widespread strikes, commercial boycotts, and youth stone-throwing demonstrated that twenty years of direct military control over Palestinians could not be maintained by force alone.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly links the catalyst (Jabalia incident) and civil disobedience (strikes, boycotts) to the strategic outcome (shattering Israeli complacency over military occupation)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the outbreak of the First Intifada in December 1987 was the irreparable destruction of Israel's doctrine of 'enlightened occupation' and the transfer of political agency to internal Palestinian grassroots leadership. Sparked by the Jabalia camp collision that killed four Palestinian workers, the spontaneous uprising bypassed the exiled PLO leadership in Tunis. Instead, local popular committees formed the Unified National Leadership of the Uprising (UNLU), orchestrating tax strikes, civil disobedience, and stone-throwing confrontations. This asymmetric resistance destroyed Israeli illusions of economic co-optation, demonstrated the futility of Yitzhak Rabin’s 'force, might, and beatings' policy, and forced the Israeli security establishment to acknowledge that the status quo was strategically untenable.",
-                "verdict": "Exemplary historiographical evaluation contrasting external PLO hegemony with the UNLU grassroots movement, analyzing Rabin's military doctrine, and proving the strategic collapse of the occupation model."
               }
             },
             "scaffolding": {
@@ -14947,14 +14699,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "Israeli military involvement began in March 1978 when Prime Minister Menachem Begin launched Operation Litani following the Coastal Road attack. Over 25,000 Israeli soldiers advanced to the Litani River to push PLO fedayeen away from the border. Although UN Security Council Resolution 425 established UNIFIL and a Christian militia buffer zone, cross-border rocket fire persisted, convincing Defence Minister Ariel Sharon that only total military destruction of the PLO could guarantee Israeli security.<br><br>Consequently, this tension escalated into a full-scale invasion in June 1982 under the pretext of the attempted assassination of Ambassador Shlomo Argov. Sharon launched Operation Peace for Galilee, deceptively telling the cabinet troops would advance only 40 kilometres, but instead driving sixty miles to lay siege to West Beirut. Relentless artillery bombardment and air strikes eventually forced Yasser Arafat and thousands of PLO fighters to evacuate Lebanon for Tunis.<br><br>Finally, this operation culminated in disaster in September 1982 following the assassination of Lebanese President Gemayel. Israeli forces permitted Christian Phalangist militias into the Sabra and Shatila refugee camps, resulting in the slaughter of hundreds of civilians under IDF illumination flares. Unprecedented protests of 400,000 people in Tel Aviv forced the Kahan Commission inquiry, compelling Sharon to resign and leaving Israel bogged down in Lebanon.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 202 words across 3 paragraphs. Fulfills the 3-phase chronological structure with explicit causal bridges ('Consequently, this tension escalated...', 'Finally, this operation culminated in disaster...', 'Unprecedented protests of 400,000 people... forced...')."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "Israeli military intervention in Lebanon between 1978 and 1983 transitioned from a localized border cordon sanitaire into a disastrous ideological crusade aimed at redrawing the Levant’s political map.<br><br>The intervention began in March 1978 following the Fatah Coastal Road massacre, prompting Menachem Begin to launch Operation Litani. Deploying 25,000 troops, the IDF cleared PLO artillery positions up to the Litani River. While UN Resolution 425 deployed UNIFIL peacekeepers and Israel cultivated Major Saad Haddad’s Christian South Lebanon Army buffer, the failure to neutralize PLO Katyusha rocket arsenals convinced Defence Minister Ariel Sharon that piecemeal containment was futile.<br><br>This impasse escalated into total war in June 1982 following the Abu Nidal faction's assassination attempt on Ambassador Shlomo Argov in London. Sharon exploited the pretext to launch Operation Peace for Galilee. Misleading the Israeli cabinet with promises of a modest 40-kilometre security zone, Sharon drove armoured columns sixty miles north to encircle West Beirut. A brutal ten-week naval, aerial, and artillery siege forced Yasser Arafat and 14,000 PLO combatants to evacuate Lebanon under multinational supervision, relocating PLO headquarters to Tunis.<br><br>However, Sharon's broader political objective—installing a Maronite puppet government under Bachir Gemayel—collapsed following Gemayel’s assassination on 14 September 1982. In direct response, the IDF occupied West Beirut and authorized Lebanese Christian Phalangist militias to enter the Sabra and Shatila refugee camps. Over three days, Phalangists slaughtered up to 2,000 defenceless Palestinian civilians while Israeli forces illuminated the night sky with mortar flares. The domestic revulsion manifested in a 400,000-citizen demonstration in Tel Aviv, prompting the Kahan Commission to declare Sharon personally responsible for failing to anticipate the atrocities. Sharon's removal, Begin's shattered resignation in 1983, and the creation of Hezbollah transformed Lebanon into an eighteen-year quagmire for Israel.",
-                "verdict": "Exemplary historiographical synthesis analyzing Sharon's Grand Plan, the siege of Beirut, the Phalangist-Maronite alliance, the Kahan Commission jurisprudence, and the emergence of Hezbollah."
               }
             },
             "scaffolding": {
@@ -15036,14 +14780,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One reason the First Intifada was of profound importance for international attitudes was that television coverage dramatically transformed the global perception of Palestinians from aggressors into victims of military occupation. Before 1987, Western governments and media primarily associated the Palestinian movement with cross-border terrorism, hijackings, and guerrilla warfare. However, worldwide television broadcasts showing unarmed Palestinian youths armed only with stones confronting heavily armed IDF soldiers—alongside Defence Minister Yitzhak Rabin's controversial 'Iron Fist' policy of breaking the bones of protesters—shattered Israel's moral image abroad and generated unprecedented global sympathy for the Palestinian population.<br><br>Furthermore, the Intifada was decisive because it created irresistible international diplomatic pressure that compelled both Yasser Arafat and the United States to alter their policies. Realising that grassroots resistance inside the territories was eclipsing the exiled PLO leadership, Arafat addressed the UN General Assembly in Geneva in December 1988, formally renouncing terrorism and accepting UN Resolutions 242 and 338. By meeting long-standing American conditions, this concession forced the US government to open direct diplomatic dialogue with the PLO, fundamentally legitimising the Palestinian struggle on the international stage and laying the direct groundwork for the 1991 Madrid Conference.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 183 words across 2 balanced paragraphs. Directly answers 'what difference did it make to international attitudes' by demonstrating the media transformation from 'terrorists' to 'occupied victims' and the diplomatic breakthrough of US-PLO dialogue."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The First Intifada exercised a revolutionary impact on international attitudes by dismantling Israel’s David-versus-Goliath moral hegemony and compelling Western powers to integrate the PLO into official multilateral diplomacy.<br><br>Crucially, the asymmetry of televised urban warfare inverted international public perception. For four decades, Western media had framed Israel as an embattled democratic oasis besieged by hostile Arab states and PLO terrorists. The daily imagery of teenage Palestinians armed only with stones confronting Merkava tanks and heavily armoured soldiers—compounded by Defence Minister Yitzhak Rabin’s draconian 'Iron Fist' policy of breaking the bones of demonstrators—shattered this consensus. International television transformed the Palestinians from an abstract refugee diaspora into a legitimate, occupied nation suffering systematic human rights deprivations, severely straining Israel’s bipartisan standing in Washington and Western Europe.<br><br>Furthermore, the uprising reshuffled diplomatic architecture by exposing the PLO’s vulnerability to internal obsolescence. Recognizing that the grassroots Unified National Leadership of the Uprising (UNLU) was displacing his exiled bureaucracy in Tunis, Yasser Arafat seized the diplomatic initiative. In December 1988, Arafat addressed a special session of the UN General Assembly in Geneva, formally endorsing UN Resolutions 242 and 338, recognising Israel's right to exist, and renouncing terrorism. This met the stringent preconditions established by the US State Department, compelling the Reagan administration to initiate direct official dialogue with the PLO. Consequently, the Intifada destroyed the diplomatic fiction that the Palestinian question could be bypassed in regional peacemaking, paving the direct trajectory to Madrid and Oslo.",
-                "verdict": "Historiographical masterclass analysing the David-and-Goliath media paradigm shift, Rabin's 'Iron Fist' doctrine, the UNLU grassroots pressure on Tunis, and the institutionalization of direct US-PLO dialogue in Geneva."
               }
             },
             "scaffolding": {
@@ -16333,14 +16069,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the secret Oslo back-channel negotiations in 1993 was the historic breakthrough of mutual diplomatic recognition between Israel and the PLO. Through the Letters of Mutual Recognition, Prime Minister Yitzhak Rabin officially recognised the PLO as the Palestinian people's representative, while Yasser Arafat recognised Israel's right to exist and renounced terrorism.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly links the secret talks to the specific diplomatic outcome (Letters of Mutual Recognition, PLO recognized as representative, Israel's right to exist recognized, terrorism renounced)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One transformative consequence of the secret 1993 Norwegian back-channel negotiations was the formal dismantling of forty-five years of mutual existential denial through the historic Letters of Mutual Recognition. Initiated by Terje Rød-Larsen and Israeli academics away from media scrutiny, the clandestine channel allowed Israeli Foreign Minister Shimon Peres and PLO negotiator Ahmed Qurei to bypass orthodox diplomatic impasses. On 9 September 1993, Yasser Arafat officially recognized Israel’s right to exist in peace and explicitly renounced terrorism, while Prime Minister Yitzhak Rabin reciprocally recognized the PLO as the legitimate representative of the Palestinian people, creating the legal and moral foundation for the Oslo I Accord.",
-                "verdict": "Exemplary academic analysis examining the Norwegian diplomatic channel, the Letters of Mutual Recognition, and the transformation from existential denial to contractual co-existence."
               }
             },
             "scaffolding": {
@@ -16388,14 +16116,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One consequence of the assassination of Yitzhak Rabin was the severe derailment of the peace process and the election of a right-wing Israeli government opposed to Oslo. In May 1996, Likud leader Benjamin Netanyahu won the premiership on a hardline security platform, subsequently halting further territorial handovers to the Palestinian National Authority.",
                 "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly connects the assassination to the political consequence (electoral shift to Likud under Netanyahu, freeze on territorial handovers to the PNA)."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "One decisive consequence of the 4 November 1995 assassination of Yitzhak Rabin was the destruction of the domestic Israeli political coalition underpinning the Oslo peace process and the ascendance of the rejectionist right wing. Shot at a massive Tel Aviv peace rally by Jewish religious ultra-nationalist Yigal Amir—who believed relinquishing biblical land violated the divine mandate—Rabin’s murder deprived the Israeli peace movement of its only military leader capable of reassuring a security-conscious public. Combined with retaliatory Hamas suicide bus bombings in early 1996, the vacuum led directly to the May 1996 election of Likud leader Benjamin Netanyahu, who systematically suspended implementation of the Oslo II redeployments.",
-                "verdict": "Scholarly evaluation analyzing Amir's theological motivations, the loss of Rabin's military credibility, the synergy with Hamas bus bombings, and Netanyahu's structural obstruction of Oslo II."
               }
             },
             "scaffolding": {
@@ -16447,14 +16167,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "The peace process began in 1992 following the election of Israeli Prime Minister Yitzhak Rabin on a platform of territorial compromise. In complete secrecy, Israeli and PLO envoys conducted back-channel negotiations in Norway, producing the historic Letters of Mutual Recognition where Israel recognised the PLO and Yasser Arafat renounced terrorism. This culminated on 13 September 1993 when Rabin and Arafat signed the Oslo I Accord on the White House lawn, agreeing to phased Palestinian self-government.<br><br>Following this initial breakthrough, the process advanced into practical governance through the May 1994 Cairo Agreement, which established the Palestinian National Authority (PNA) in Gaza and Jericho. Diplomatic momentum continued with the 1994 peace treaty with Jordan, culminating in the September 1995 Oslo II Agreement, which divided the West Bank into Areas A, B, and C to extend Palestinian civil administration.<br><br>However, this delicate momentum was shattered by violent extremist resistance from both sides. In February 1994, Jewish extremist Baruch Goldstein murdered 29 Palestinians in Hebron, triggering deadly retaliatory suicide bus bombings by Hamas that hardened Israeli public opinion. The crisis culminated on 4 November 1995 when Jewish religious extremist Yigal Amir assassinated Rabin at a Tel Aviv peace rally, bringing the momentum of the Oslo peace process to a tragic halt.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 204 words across 3 paragraphs. Fulfills the 3-phase narrative standard with explicit causal connectives ('The peace process began...', 'Following this initial breakthrough...', 'However, this delicate momentum was shattered...', 'The crisis culminated on...')."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The Israeli-Palestinian peace process between 1992 and 1995 represented a dialectic between courageous bilateral diplomacy and violent ideological rejectionism.<br><br>The breakthrough originated in the June 1992 election of Yitzhak Rabin’s Labor government, which pledged rapid disengagement from Palestinian population centres. Bypassing stalled multilateral forums, Israeli academics and PLO officials met covertly near Oslo under Norwegian auspices. These clandestine sessions produced the September 1993 Letters of Mutual Recognition, wherein Israel officially acknowledged the PLO as the Palestinian people's representative, and Yasser Arafat renounced terrorism. On 13 September 1993, Rabin and Arafat signed the Declaration of Principles (Oslo I) on the White House lawn, agreeing to an interim five-year schedule for Palestinian self-government.<br><br>This framework was institutionalized through the May 1994 Cairo Agreement, allowing Arafat to establish the Palestinian National Authority (PNA) in Gaza and Jericho, and catalyzed the October 1994 Israel-Jordan Peace Treaty. In September 1995, the parties signed the Oslo II Accord, partitioning the West Bank into Areas A (full Palestinian control), B (joint control), and C (exclusive Israeli control).<br><br>However, this incremental structure incentivized extremist sabotage. In February 1994, Jewish ultra-nationalist Baruch Goldstein massacred 29 Muslim worshippers in Hebron, provoking Hamas and Islamic Jihad to launch devastating suicide bus bombings across Tel Aviv and Jerusalem. This campaign of terror polarized Israeli public sentiment. The crisis reached its tragic climax on 4 November 1995 when religious zealot Yigal Amir assassinated Rabin at a Tel Aviv peace rally. Rabin’s death paralyzed the peace camp, destroyed mutual confidence, and enabled Benjamin Netanyahu’s election in 1996.",
-                "verdict": "Historiographical tour de force examining the Labor electoral mandate, the Norwegian back-channel, Oslo I and II institutional architecture, the asymmetric extremist sabotage dialectic, and the geopolitical fallout of Rabin's assassination."
               }
             },
             "scaffolding": {
@@ -16536,14 +16248,6 @@ export default {
                 "badge": "Edexcel Benchmark",
                 "text": "One reason the Oslo I Accord was of profound importance for relations between Israel and the PLO was that it shattered forty-five years of mutual denial through official diplomatic recognition. Through the Letters of Mutual Recognition exchanged in September 1993, Prime Minister Yitzhak Rabin officially acknowledged the PLO as the legitimate representative of the Palestinian people, while Yasser Arafat recognised Israel's right to exist in peace and formally renounced terrorism. This historic breakthrough transformed former mortal enemies into negotiating partners, leading directly to the iconic handshake between Rabin and Arafat on the White House lawn on 13 September 1993.<br><br>Furthermore, the Accord was of decisive importance because it established the practical mechanism for Palestinian self-government through the creation of the Palestinian National Authority (PNA). Under the 'Gaza-Jericho First' formula, Israeli forces redeployed from major population centres, allowing Arafat to establish an autonomous Palestinian administration on home soil. However, because Oslo deferred intractable issues such as Jerusalem, Jewish settlements, and Palestinian refugees, the agreement provoked intense opposition from extremists on both sides, sparking deadly Hamas suicide bombings and right-wing Israeli resistance that culminated in Rabin's assassination.",
                 "verdict": "AO2 Level 3 (4 marks) • AO1 Level 3 (4 marks). Exactly 181 words across 2 balanced paragraphs. Directly answers 'what difference did it make to relations' by analyzing the transition from existential denial to contractual partnership, as well as the fatal friction caused by deferred final status issues."
-              },
-              "tier_10m": {
-                "title": "Level 10 Scholar 🚀",
-                "score": "Level 10",
-                "level": "Academic Distinction (Scholar)",
-                "badge": "A* Masterclass",
-                "text": "The Oslo I Accord represented a structural paradigm shift in Israeli-Palestinian relations, transforming existential confrontation into institutional co-dependence while establishing the structural contradictions that ultimately precipitated its collapse.<br><br>The accord’s primary significance lay in the legal and psychological dismantling of forty-five years of reciprocal delegitimation. Through the prerequisite Letters of Mutual Recognition, Prime Minister Yitzhak Rabin conferred state-level legitimacy upon the PLO as the sole representative of the Palestinian people, while Yasser Arafat surrendered the core tenet of the Palestinian National Charter by recognizing Israel's sovereign right to exist and explicitly renouncing armed struggle. This institutionalized diplomacy, ratified by the historic 13 September 1993 White House handshake, permanently removed the PLO from Western terrorist registries and positioned it as Israel's sole interlocutor.<br><br>Concurrently, the Declaration of Principles established the infrastructure of Palestinian territorial proto-statehood through the Palestinian National Authority (PNA). Implementing the 'Gaza-Jericho First' protocol under the 1994 Cairo Agreement, Israeli security forces transferred municipal and security control to Arafat’s administration. However, the accord's fatal architectural flaw was its incrementalism: by deferring definitive 'final status' resolutions—the status of East Jerusalem, the dismantling of Jewish settlements, border demarcations, and the return of 1948 refugees—for five years, Oslo incentivised extremist spoiler campaigns. Islamist factions (Hamas, PIJ) launched asymmetric terror attacks to subvert secular PLO hegemony, while Israeli religious ultra-nationalists mobilized against the cession of biblical land, culminating in Rabin's assassination and cementing an intractable strategic impasse.",
-                "verdict": "Elite historiographical evaluation analyzing the legal revolution of mutual recognition, the institutionalization of the PNA, and the destabilizing structural hazards of deferred final-status negotiations."
               }
             },
             "scaffolding": {
@@ -19552,5 +19256,8 @@ export default {
     }
   ],
   "id": "cme_new",
-  "edition": "2026.1"
+  "edition": "2026.1",
+  "keyStage": "GCSE",
+  "key_stage": "GCSE",
+  "year_group": "Years 10–11"
 };
