@@ -314,7 +314,7 @@ export default {
           "image": "/images/jewish_population_europe_1933_map.jpg",
           "image_alt": "Archival map of Jewish population distribution across Europe in 1933",
           "caption": "Demographic Map of European Jewish Life (1933, USHMM): Prior to the Holocaust, 9.5 million Jewish people lived across Europe, over half in Poland and the western Soviet Union.",
-          "text": "<span class=\"para-ref\">[1.1]</span> In the early 1930s, approximately **9.5 million Jewish people** lived in Europe, representing just under two percent of the continent’s total population. They did not live in a single country, nor did they share an identical way of life. Over 60% of European Jews lived in Central and Eastern Europe—predominantly within the borders of Poland, Romania, Lithuania, Hungary, and the western territories of the Soviet Union. In contrast, smaller communities lived in Western Europe: roughly 500,000 in Germany, 300,000 in Britain, and 250,000 in France. Across each country, Jewish communities sustained a vibrant regional life with distinct traditions, occupations, and local institutions. Depending on where they were born, a Jewish child in 1933 might grow up speaking Yiddish in a bustling Polish city, speaking German in an intellectual Berlin household, or speaking Ladino along the sunlit Mediterranean docks of Thessaloniki.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In the early 1930s, approximately 9.5 million Jewish people lived across continental Europe, representing under two percent of the total population. European Jewry was immensely diverse, spanning distinct traditions, occupations, and vibrant civic cultures.</p><p class=\"prose-p\">Over sixty percent lived in Central and Eastern Europe, predominantly across Poland, Hungary, Romania, and the Soviet Union, where millions spoke Yiddish as their mother tongue. Smaller communities flourished in Western Europe, including Germany, Britain, and France, contributing richly to science, arts, and civic life.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -350,7 +350,7 @@ export default {
         {
           "act": 2,
           "title": "Yiddishland: The Cultural Heartland of Eastern Europe",
-          "text": "<span class=\"para-ref\">[1.2]</span> Across the towns and countryside of Eastern Europe lay a distinct cultural world historians refer to as <em>Yiddishland</em>. In rural **shtetls** (small market towns) and expanding big cities like Warsaw, Łódź, and Kraków, millions of Jews spoke **Yiddish**—a language written in Hebrew characters combining medieval High German with Hebrew and Slavic vocabulary. In cities like **Vilna** (the capital of Lithuania), known affectionately as the <em>\"Jerusalem of the North\"</em>, Jewish life hummed with intellectual energy: world-renowned Talmudic academies existed alongside modern socialist political parties (such as the General Jewish Labour Bund), Zionist pioneering movements, Yiddish daily papers and newspapers, and avant-garde art collectives. Jewish life in Eastern Europe was vibrant, fiercely debated, and deeply rooted.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Across the countryside of Eastern Europe lay a distinct cultural world known as Yiddishland. Millions of Jews lived in rural shtetls (small market towns) and expanding cities like Warsaw and Kraków, creating a flourishing Yiddish culture with its own literature, theatre, and newspapers.</p><p class=\"prose-p\">In cities like Vilna, celebrated as the \"Jerusalem of the North\", Jewish community life hummed with energy. World-renowned talmudic academies existed alongside modern socialist political parties, Zionist youth organisations, and avant-garde art collectives, creating a deeply rooted, vibrant civilization.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -389,7 +389,7 @@ export default {
         {
           "act": 3,
           "title": "Integration, Patriotism, and Civic Life in Central Europe",
-          "text": "<span class=\"para-ref\">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. In the German Empire and the Weimar Republic, Jews had achieved full civic emancipation and legal equality by 1871. Most German Jews were thoroughly **assimilated**: they spoke German as their mother tongue, attended state universities, celebrated German literature and music, and intermarried across faiths. During the First World War (WWI), over **100,000 German Jewish soldiers served in the imperial armed forces**; approximately 12,000 gave their lives for the Fatherland, and 18,000 were awarded Iron Crosses for battlefield bravery. German Jews saw themselves not as foreigners, but as loyal, patriotic Germans who made monumental contributions to science (such as Albert Einstein), medicine, philosophy, industry, and the arts.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. Following emancipation in 1871, German & Western Jews were thoroughly assimilated: they spoke German, attended universities, and integrated deeply into professional, cultural, and political life.</p><p class=\"prose-p\">During the First World War, over 100,000 German Jewish soldiers served loyally in the imperial armed forces, with 12,000 dying on European battlefields. German Jews viewed themselves not as outsiders, but as proud, patriotic citizens who contributed monumental achievements to science, industry, and the arts.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -461,7 +461,7 @@ export default {
         {
           "act": 5,
           "title": "The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism",
-          "text": "<span class=\"para-ref\">[1.5]</span> While European Jews built rich lives, they had long contended with prejudice. For centuries, Christian Europe had harboured medieval Church hatred and **religious anti-Judaism**—blaming Jews for the crucifixion of Jesus, barring them from owning land or joining craft guilds, and subjecting them to periodic violent expulsions and pogroms. However, in the late nineteenth century, a fatal ideological mutation occurred. Influenced by pseudo-scientific misinterpretations of Darwinian biology, European theorists (such as Wilhelm Marr, who coined the term <em>antisemitism</em> in 1879) argued that Jews were not a religious community, but a distinct biological \"race\". Under traditional anti-Judaism, a Jewish person could escape discrimination through Christian baptism. Under modern **racial antisemitism**, framed around a pseudo-scientific biological blood theory, baptism was no escape because Jewish identity was treated as an unchangeable genetic infection passed through the blood. It was this pseudo-scientific racial hatred that Adolf Hitler and the Nazi Party adopted as the core of their totalitarian worldview.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> For centuries, medieval Christian Europe harboured deep religious anti-Judaism, blaming Jewish communities for the death of Christ, restricting guild membership, and carrying out violent expulsions. However, in the late nineteenth century, a fatal ideological mutation occurred.</p><p class=\"prose-p\">Theorists invented modern racial antisemitism, treating Jewish identity not as a religious faith that could be escaped through Christian baptism, but as pseudo-scientific biological racism carried in the blood. Adolf Hitler and the Nazi Party adopted this toxic racial theory as the foundation of their totalitarian worldview.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -1788,7 +1788,7 @@ export default {
         {
           "act": 3,
           "title": "Daily Exclusion and \"Social Death\" (1935–1938)",
-          "text": "<span class=\"para-ref\">[2.3]</span> Between 1935 and 1938, the German state issued over **400 separate anti-Jewish decrees**. These laws invaded every aspect of daily existence, systematically humiliating Jewish citizens and cutting them off from public society. Jewish children were expelled from state schools; Jewish doctors and lawyers were barred from treating or representing non-Jewish clients; Jewish-owned businesses were subjected to forced \"Aryanisation\", meaning they were confiscated or sold at a fraction of their value. Jewish people were restricted to sitting on designated yellow park benches, barred from municipal swimming pools, public parks, and cinemas, and forbidden from owning pets, radios, or bicycles. Daily life became an agonizing ordeal as former neighbours and friends look away and cross the street to avoid greeting them.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Between 1933 and 1938, the Nazi regime issued over 400 separate anti-Jewish decrees to strip Jewish citizens of their livelihoods and rights. Systematic Aryanization of businesses forced Jewish owners to sell shops and factories to German buyers at rock-bottom prices.</p><p class=\"prose-p\">These pervasive regulations enforced brutal 'social death' exclusion from public life. Jews were expelled from schools, barred from cinemas and parks, restricted to yellow benches, and forbidden from owning radios or pets, as former neighbours crossed the street to avoid greeting them.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -1824,7 +1824,7 @@ export default {
         {
           "act": 4,
           "title": "The November Pogrom (\"Kristallnacht\", 9–10 November 1938)",
-          "text": "<span class=\"para-ref\">[2.4]</span> On the night of **9–10 November 1938**, the regime orchestrated a violent nationwide pogrom known as **Kristallnacht** (Night of Broken Glass). Following the assassination of a German diplomat in Paris by a desperate Polish-Jewish teenager, Propaganda Minister Joseph Goebbels unleashed the SA, SS, and Hitler Youth to attack Jewish communities. Over forty-eight hours, mobs attacked Jewish communities: over **1,400 synagogues were burned** or destroyed, 7,500 businesses trashed, and at least ninety-one Jews murdered. In the aftermath, the Gestapo arrested over **30,000 Jewish men and sent them to concentration camps** at Dachau, Buchenwald, and Sachsenhausen. To compound the cruelty, the Nazi government imposed a punitive **1 billion mark fine** (one billion Reichsmarks) on the Jewish community to pay for the destruction.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> On the night of 9–10 November 1938, the Nazi regime orchestrated a nationwide pogrom known as Kristallnacht (the Night of Broken Glass). Propaganda Minister Joseph Goebbels unleashed the SA, SS, and Hitler Youth to launch violent coordinated assaults on Jewish communities.</p><p class=\"prose-p\">Across forty-eight hours, over 1,400 synagogues were burned or destroyed, 7,500 businesses trashed, and ninety-one Jews murdered. The Gestapo arrested 30,000 Jewish men and sent them to concentration camps, while imposing a punitive one-billion-mark fine on the Jewish community to pay for the destruction.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -4474,7 +4474,7 @@ export default {
         {
           "act": 2,
           "title": "The Einsatzgruppen and Order Police Battalions",
-          "text": "<span class=\"para-ref\">[4.2]</span> Marching directly behind the front-line Wehrmacht combat divisions were 4 SS killing squads known as the **Einsatzgruppen** (A, B, C, and D), supplemented by Order Police battalions. While the Einsatzgruppen initially targeted adult Jewish men in leadership roles, by August 1941 their orders expanded to total annihilation: entire communities, with women & children shot alongside men into massive trenches.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Following directly behind front-line Wehrmacht combat divisions in June 1941 were four mobile paramilitary death squads known as the SS Einsatzgruppen (A, B, C, and D). These execution units were reinforced by militarized Order Police battalions to round up and execute Soviet Jews.</p><p class=\"prose-p\">By August 1941, German orders escalated to total annihilation, shooting entire communities of women and children beside pre-dug ravines. This horrific phase, known as the 'Holocaust by Bullets', murdered over 1.5 million Jewish civilians in face-to-face mass executions across Soviet territories.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -4513,7 +4513,7 @@ export default {
         {
           "act": 3,
           "title": "The Massacre at Babi Yar (Kyiv, September 1941)",
-          "text": "<span class=\"para-ref\">[4.3]</span> The most notorious massacre of this \"Holocaust by Bullets\" occurred on the outskirts of Kyiv at **Babyn Yar** (Babi Yar), a deep ravine outside Kyiv. On 28 September 1941, notices were posted across Kyiv ordering all Jewish residents to report with documents and warm clothing. Believing they were being resettled, over 30,000 men, women, and children arrived at the designated cemetery. They were marched in small groups to the ravine, forced to strip naked, surrender valuables, and lie face down atop the bodies of those already killed. Over two days (29–30 September 1941), a total of **33,771 shot in 36 hours** into the ravine. The killers sent clinical Berlin reports back to headquarters detailing the exact numbers.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> The most notorious massacre of the Holocaust by Bullets occurred outside Kyiv in Ukraine. On 29 September 1941, Sonderkommando 4a & Order Police battalions marched tens of thousands of Jewish residents to a vast ravine, ordering them to surrender valuables and undress.</p><p class=\"prose-p\">Victims were forced into the gorge and shot in layers atop one another. In this horrific Babyn Yar ravine massacre, exactly 33,771 shot in 36 hours were murdered, while German commanders sent meticulous administrative reports to Berlin documenting the mass execution.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -4549,7 +4549,7 @@ export default {
         {
           "act": 4,
           "title": "Massacres Across the Baltics and Local Collaboration",
-          "text": "<span class=\"para-ref\">[4.4]</span> The slaughter was repeated across hundreds of towns in Lithuania, Latvia, Belarus, and Ukraine. In the wooded Ponary Forest pits near Vilna, over 70,000 Jews were shot. By the end of 1941, over 90% of Lithuanians and local Jewish communities were dead. In these mass killings, German units relied extensively on local auxiliary collaboration—Lithuanian, Latvian, and Ukrainian auxiliary police battalions who volunteered to round up, guard, and shoot their Jewish neighbours.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Mass shootings swept across Lithuania, Latvia, Belarus, and Ukraine. Operating in the Baltic states, Einsatzgruppe A killing squads slaughtered nearly 250,000 Jewish victims within six months of the invasion, devastating centuries-old centers of Jewish learning.</p><p class=\"prose-p\">In the Ponary Forest massacres outside Vilnius, over 70,000 Jewish victims were systematically executed in wooded pits. The German death squads relied heavily on local Baltic collaboration, using auxiliary police battalions from Lithuania and Latvia who volunteered to round up, guard, and shoot their Jewish neighbours.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -8725,7 +8725,7 @@ export default {
         {
           "act": 4,
           "title": "Justice and International Law: Nuremberg and Lemkin",
-          "text": "<span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the **International Military Tribunal (IMT) at Nuremberg**. In the very city where Hitler had enacted the 1935 racial laws, twenty-one senior Nazi leaders—including Hermann Göring and Rudolf Hess—sat in the dock. The tribunal established the revolutionary legal principle that \"following orders\" from a superior officer was no defence for committing state crimes. Twelve defendants were sentenced to death by hanging for war crimes and **crimes against humanity**. Meanwhile, a Polish-Jewish legal scholar named **Raphael Lemkin**, who had lost forty-nine members of his family in the Holocaust, campaigned tirelessly for the creation of a new international law. Lemkin coined the word **\"genocide\"** (combining the Greek <em>genos</em>, meaning race or tribe, with the Latin <em>cide</em>, meaning killing). In December 1948, the United Nations adopted the **Genocide Convention**, officially making the intentional destruction of a people a universal crime under international law.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the International Military Tribunal (IMT) at Nuremberg to try senior Nazi leaders for war crimes. The court established that following superior orders was no legal defence, sentencing twelve defendants to death for crimes against humanity.</p><p class=\"prose-p\">Simultaneously, Polish-Jewish legal scholar Raphael Lemkin, who lost forty-nine relatives in the Shoah, pioneered Raphael Lemkin's concept of genocide to define the deliberate destruction of a national group. Lemkin’s tireless campaign led directly to the 1948 United Nations Genocide Convention, establishing universal legal protections under international law.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -8765,7 +8765,7 @@ export default {
           "image_alt": "Peter Eisenman Memorial to the Murdered Jews of Europe in Berlin showing grid of concrete stelae",
           "caption": "Peter Eisenman, Memorial to the Murdered Jews of Europe (Berlin, 2005). Field of 2,711 concrete stelae commemorating the six million Jewish victims of Nazi extermination.",
           "isReversed": true,
-          "text": "<span class=\"para-ref\">[7.5]</span> What was lost in the Shoah? Approximately **6 million souls extinguished**—two out of every three European Jews, including 1.5 million children. Yet the loss cannot be measured in numbers alone. With them vanished an entire civilization: a millennium of Yiddishland annihilated across Central and Eastern Europe. Entire family branches, centuries-old synagogues, and irreplaceable archives were erased from human existence. As the generation of eyewitness survivors passes away, the duty of bearing witness shifts to us. To remember the Shoah is not merely to mourn the dead; it is to understand how easily civilized societies can slide into barbarism, to challenge antisemitism and racism in our own communities, and to uphold the solemn Never Again pledge inscribed on memorials across the globe.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.5]</span> The Shoah extinguished six million human lives—two-thirds of European Jewry, including 1.5 million children. Beyond the staggering death toll, an entire millennium of Yiddish civilisation across Central and Eastern Europe was permanently destroyed.</p><p class=\"prose-p\">As eyewitnesses pass away, preserving Shoah historical memory depends upon survivor oral testimony from voices like Elie Wiesel and Primo Levi. Upholding this imperative of remembrance requires every generation to confront antisemitism, defend human rights, and ensure the solemn pledge of \"Never Again\" endures across civilized society.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -9795,5 +9795,10 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  "keyStage": "KS3",
+  "yearGroup": "Year 9",
+  "year_group": "Year 9",
+  "category": "KS3",
+  "key_stage": "KS3"
 };

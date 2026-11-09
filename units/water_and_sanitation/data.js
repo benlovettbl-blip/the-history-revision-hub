@@ -485,7 +485,7 @@ export default {
           "act": 1,
           "title": "Celtic Settlement & the Roman Conquest (AD 43)",
           "theme_heading": "Celtic Settlement & the Roman Conquest (AD 43)",
-          "text": "<span class=\"para-ref\">[1.1]</span> Before the Roman conquest, Iron Age Britain was an agrarian society of small, scattered farming settlements and dispersed Celtic roundhouses with wattle-and-daub walls and thatched roofs. Because farming homesteads were spread across open countryside, waste disposal was natural and sustainable: families dug shallow cesspits that rotted into crop fertilizer without endangering drinking supplies. Freshwater was drawn in wooden buckets from clean streams and gravel wells.<br><br>Everything changed in **AD 43** when Emperor Claudius invaded Britain with four imperial legions. The Romans brought an urban revolution, packing thousands into cramped walled cities and military forts (*castra*) like Londinium (London) and Eboracum (York). Thousands of soldiers and citizens were packed into cramped streets. Rural Celtic habits could not cope with this crowding; without organized municipal water and waste systems, urban populations would quickly collapse from deadly epidemics.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Before the Roman conquest, Iron Age Britain was an agrarian society of small farming settlements and dispersed Celtic roundhouses. Waste disposal was simple and sustainable: families dug shallow cesspits in open fields that composted naturally into manure without poisoning freshwater streams or shallow wells.</p><p class=\"prose-p\">Everything changed in AD 43 when Emperor Claudius invaded with four imperial legions. The Romans established cramped walled cities like Londinium (London) and Eboracum (York), packing thousands of soldiers and civilians together. Without municipal water engineering, urban populations faced catastrophic collapse from waterborne epidemics.</p>",
           "sources": [
             {
               "id": "water_l1_src_a",
@@ -557,7 +557,7 @@ export default {
           "act": 2,
           "title": "Gravity Hydraulics: Aqueducts & Water Towers",
           "theme_heading": "Gravity Hydraulics: Aqueducts & Water Towers",
-          "text": "<span class=\"para-ref\">[1.2]</span> Roman engineers solved urban overcrowding through mastery of hydraulics and gravity. Because local rivers quickly became fouled with street wash, engineers found pure natural springs in distant mountain springs and hills. To carry millions of gallons of water into towns, they constructed massive stone **aqueducts** (*aquae*) built on a precise mathematical downward gradient, delivering steady water into distribution towers (*castella*).<br><br>From these towers, lead and clay pipes distributed pressurized water across the town. Water was rationed by priority: first to free street fountains for ordinary citizens, second to public bathhouses (*thermae*), and third to the luxury villas of wealthy patricians who paid a water tax. At Fishbourne Roman Palace, excavated lead pipes prove that water pressure was harnessed for ornamental fountains and private baths, showcasing the engineering power of Rome.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Roman engineers solved urban water shortages through mastery of gravity hydraulics. Because local rivers became fouled with urban filth, engineers surveyed distant mountain springs and hills to capture pure upland water supplies for growing provincial cities.</p><p class=\"prose-p\">Engineers constructed massive stone aqueducts built on a precise mathematical downward gradient, channeling millions of gallons into castella water towers. From these storage reservoirs, lead and terracotta pipes distributed pressurized water across towns, prioritizing public street fountains, communal thermae baths, and wealthy private villas.</p>",
           "source": {
             "id": "water_l1_src_b",
             "letter": "B",
@@ -633,7 +633,7 @@ export default {
           "act": 3,
           "title": "The Thermae: Public Baths & Hypocaust Heating",
           "theme_heading": "The Thermae: Public Baths & Hypocaust Heating",
-          "text": "<span class=\"para-ref\">[1.3]</span> The centerpiece of Roman public health was the public bathhouse (**thermae**), open to all citizens for a tiny copper coin (*quadrans*). Roman bathing was an active physical ritual. Without soap, bathers sweated in the hot steam room (*caldarium*), coated their skin in olive oil, and had slaves scrape off sweat, grime, and dead skin with curved bronze blades called **strigils** before taking a cold plunge into the frigidarium pool to close their pores.<br><br>Outside amphitheatres, vendors even bottled gladiator sweat and dirt to sell as luxury beauty products! An underground subterranean hypocaust heating system circulated roaring hot air beneath suspended mosaic floors. The thermae served as vital community centres where Romans exercised, conducted business, and socialized, weaving basic hygiene directly into Roman civic life.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> The centerpiece of Roman urban hygiene was the communal public bathhouse (thermae), open to all citizens for a tiny copper coin. Bathers coated their skin in olive oil & bronze strigils were used by enslaved attendants to scrape away accumulated sweat and grime.</p><p class=\"prose-p\">Bathers moved between heated steam chambers and the invigorating frigidarium cold plunge pool to close their pores. An ingenious subterranean hypocaust heating system circulated furnace heat beneath suspended mosaic floors, making public baths essential civic hubs where Romans exercised, socialised, and washed.</p>",
           "source": {
             "id": "water_l1_src_c",
             "letter": "C",
@@ -705,7 +705,7 @@ export default {
           "act": 4,
           "title": "Public Latrines, the Tersorium & the Lead Paradox",
           "theme_heading": "Public Latrines, the Tersorium & the Lead Paradox",
-          "text": "<span class=\"para-ref\">[1.4]</span> Roman towns featured communal public latrines with stone bench seats set over deep trenches, flushed continuously by wastewater from the bathhouses. There were no cubicles or privacy doors: citizens sat shoulder-to-shoulder chatting about politics! For toilet paper, Romans shared a communal sponge on a stick called a **tersorium**, which was rinsed in a running saltwater channel on the floor and passed to the next person.<br><br>While bronze strigils removed surface dirt, modern archaeology exposes serious flaws in Roman hygiene. Romans knew nothing about bacteria, believing diseases came from bad air (*miasma*) or unbalanced humours. Because firewood was expensive, plunge pool water was rarely changed, turning warm baths into a soup of parasites containing microscopic intestinal parasite eggs. Skeletons and preserved waste show widespread whipworm and dysentery, while toxic lead water pipes, wine, and cooking pots caused chronic lead poisoning (**plumbism**) among the Roman elite.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Roman towns featured communal stone latrines flushed continuously by bathhouse wastewater, where citizens sat together without privacy cubicles. For cleaning, Romans shared a communal sponge on a stick (tersorium), rinsed in a running saltwater floor channel between users.</p><p class=\"prose-p\">Despite monumental engineering, archaeological excavations reveal widespread contamination. Warm bath water was rarely changed, exposing bathers to microscopic intestinal parasite eggs that spread whipworm and dysentery. Furthermore, drinking water delivered through toxic lead water pipes caused chronic plumbism poisoning among urban populations.</p>",
           "source": {
             "id": "water_l1_src_d",
             "letter": "D",
@@ -783,7 +783,7 @@ export default {
           "act": 5,
           "title": "Historical Verdict: Romanitas, Imperial Prestige & The AD 410 Collapse",
           "theme_heading": "Historical Verdict: Romanitas, Imperial Prestige & The AD 410 Collapse",
-          "text": "<span class=\"para-ref\">[1.5]</span> Historians debate the true motives behind Roman sanitation. Victorian historians believed the Romans built sewers simply to keep people clean and healthy. However, modern historians argue Roman public health was driven by imperial power & vanity alongside military prestige (*romanitas*). Sick soldiers could not march or put down rebellions; towering stone aqueducts and grand marble thermae were physical displays of Roman supremacy designed to awe conquered Celtic tribes.<br><br>This system proved fragile. When the Roman Empire collapsed in **AD 410** and the vanishing Roman legions abandoned Britain, sanitation collapsed with them. This was not because Britons forgot engineering techniques, but because imperial taxes, legionary discipline, and municipal maintenance vanished. Within decades, stone drains choked with silt, lead pipes were melted down for weapons, and Britain entered a thousand-year sanitation void where municipal drainage was forgotten.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Modern historians judge Roman sanitation as a reflection of imperial power & vanity rather than modern medical understanding. Roman governors constructed monumental aqueducts and marble baths primarily to project Romanitas and civilised prestige across newly conquered barbarian provinces.</p><p class=\"prose-p\">The fatal flaw of Roman hygiene was its total dependence on centralized imperial administration. When vanishing Roman legions withdrew from Britain in AD 410, complex maintenance collapsed, leaving a thousand-year sanitation void as urban aqueducts decayed into overgrown rubble.</p>",
           "sources": [
             {
               "id": "water_l1_src_e",
@@ -1957,7 +1957,7 @@ export default {
           "image_alt": "Archival photograph of a medieval rolled parchment court roll manuscript with Latin script",
           "caption": "Manorial Court Roll (c. 14th Century). Municipal courts and local Leets met regularly to levy heavy fines on townspeople dumping offal, nightsoil, and refuse into public streets.",
           "isReversed": false,
-          "text": "<span class=\"para-ref\">[2.2]</span> Contrary to the myth that medieval people happily wallowed in filth, town corporations and municipal authorities fought a desperate battle to maintain order. In crowded towns like London, York, and Coventry, overcrowded timber tenements lined the streets. Because space was tight, residents built wooden privies over cesspits in small backyards. Cesspits were emptied by night-time gong farmers, who shovelled human waste into barrels for crop manure.<br><br>Town councils appointed municipal 'rakers' to sweep rubbish, while the local Court Leet fines were levied against landlords who dumped waste into public lanes. Towns passed strict curfews forbidding the emptying of chamber pots out of windows into the kennel (gutter) during daylight hours. While medieval towns were undeniably smelly, civic leaders understood that accumulated waste threatened public health.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> In medieval towns like London, York, and Coventry, municipal corporations fought a constant battle to manage waste. Narrow streets were lined with overcrowded timber tenements, where families constructed wooden privies over private backyard cesspits.</p><p class=\"prose-p\">To prevent overflows, householders paid night-time gong farmers to shovel human excrement into barrels for rural crop fertiliser. Town bailiffs appointed municipal rakers to clear street rubbish, while Court Leet fines & rakers punished butchers and tanners who dumped offal into public thoroughfares.</p>",
           "source": {
             "id": "water_l2_src_b",
             "letter": "B",
@@ -2029,7 +2029,7 @@ export default {
           "act": 3,
           "title": "Monastic Hydraulics: Canterbury Priory’s Five Settling Tanks (c.1165)",
           "theme_heading": "Monastic Hydraulics: Canterbury Priory’s Five Settling Tanks (c.1165)",
-          "text": "<span class=\"para-ref\">[2.3]</span> The sharpest contrast to crowded town squalor lay inside medieval religious houses. Monasteries possessed superior water systems with settling tanks & lead conduits carrying pure spring water from distant hills into monastic kitchens, infirmaries, and latrines. Monks lived in segregated monastic cloisters shielded from outside contagion.<br><br>Monasteries designed multi-stage water filtration: water entered through settling tanks where silt dropped to the bottom, flowed through lead pipes into brass taps, and flushed latrines (*reredorters*) built directly over running rivers. Local monasteries like Titchfield Abbey fishponds and Canterbury Priory managed advanced fishponds and fresh running conduits. Monasteries enjoyed cleaner water than kings because of monastic wealth, strict literacy to read Latin engineering texts, and Christian belief that physical cleanliness reflected spiritual purity.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> The sharpest contrast to crowded town squalor existed inside medieval religious houses. Monasteries engineered superior water infrastructure, with settling tanks & lead conduits carrying pure spring water from distant hills directly into monastic kitchens, infirmaries, and latrines.</p><p class=\"prose-p\">Monks lived in segregated monastic cloisters shielded from outside contagion, designing multi-stage filtration where water flushed latrines built over running rivers. Establishments like Titchfield Abbey fishponds and Canterbury Priory managed advanced fisheries and clean running conduits, combining immense monastic wealth with technical literacy.</p>",
           "source": {
             "id": "water_l2_src_c",
             "letter": "C",
@@ -2177,7 +2177,7 @@ export default {
           "act": 5,
           "title": "Historical Verdict: The 1388 Statute of Cambridge & Peasant Realities",
           "theme_heading": "Historical Verdict: The 1388 Statute of Cambridge & Peasant Realities",
-          "text": "<span class=\"para-ref\">[2.5]</span> Modern historians like Carole Rawcliffe have pioneered a Carole Rawcliffe revisionism, demonstrating that medieval civic authorities were not indifferent to urban filth. In 1388, Parliament passed the monumental **Statute of Cambridge (1388)**, introducing compulsory river clean-up laws that levied a massive £20 fine on anyone who cast animal dung, entrails, or refuse into ditches, rivers, or waters.<br><br>In Coventry, the town clerk John Leet organized a proactive municipal sanitation squad, banning waste disposal in the River Sherbourne and building designated public waste dumps outside the town walls. Medieval public health failed not from a lack of will or regulation, but because local councils lacked microscopes to discover bacteria and sufficient police power to enforce sanitation laws consistently.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Modern historians like Carole Rawcliffe have pioneered Carole Rawcliffe revisionism, demonstrating that medieval civic leaders actively fought urban filth. In 1388, Parliament passed the landmark Statute of Cambridge (1388), introducing compulsory river clean-up laws that levied massive £20 fines for dumping animal entrails into waterways.</p><p class=\"prose-p\">In Coventry, town officials banned waste dumping in the River Sherbourne and constructed designated municipal waste dumps outside town walls. Medieval sanitation struggled not from civic apathy, but because town bailiffs lacked police power to enforce regulations across rapidly growing populations.</p>",
           "source": {
             "id": "water_l2_src_e",
             "letter": "E",
@@ -3349,7 +3349,7 @@ export default {
           "image_alt": "Nicholas Hilliard portrait of Queen Elizabeth I in ornate embroidered gown and ruff",
           "caption": "Nicholas Hilliard, Queen Elizabeth I (The Phoenix Portrait, c. 1575, NPG 190). Godmother to Sir John Harington and early royal adopter of his 1596 water closet installed at Richmond Palace.",
           "isReversed": false,
-          "text": "<span class=\"para-ref\">[3.2]</span> In 1596, Queen Elizabeth I’s godson, **Sir John Harington**, invented the world’s first valve-operated flushing water closet (the 'Ajax'). Harington installed a working model for his godmother at Richmond Palace, featuring a cistern that washed waste into a vault below. However, the total absence of running water mains meant the flush toilet was an isolated aristocratic novelty; ordinary citizens continued using pottery chamber pots and wooden close-stools for another 250 years.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In 1596, Queen Elizabeth’s godson, Sir John Harington, invented the world’s first flushing water closet, known as the 'Ajax'. Harington installed a working model at Richmond Palace, designing an ingenious valve-operated cistern that released water to wash waste into a basement vault.</p><p class=\"prose-p\">However, the invention failed to transform Tudor society. The total absence of running water mains and town sewer networks meant the flush toilet remained an isolated royal curiosity. Ordinary Elizabethans continued relying on pottery chamber pots and wooden close-stools for another two centuries.</p>",
           "source": {
             "id": "water_l3_src_b",
             "letter": "B",
@@ -3421,7 +3421,7 @@ export default {
           "act": 3,
           "title": "Private Water for the Wealthy: Sir Hugh Myddelton & The New River (1613)",
           "theme_heading": "Private Water for the Wealthy: Sir Hugh Myddelton & The New River (1613)",
-          "text": "<span class=\"para-ref\">[3.3]</span> As London’s parish wells became dangerously polluted, private enterprise stepped in. In 1609, goldsmith and entrepreneur **Sir Hugh Myddelton** financed the construction of the **New River**—an ambitious 38-mile man-made canal bringing pure spring water from Hertfordshire directly to New River Head in Islington. Water was distributed across the capital through a network of hollowed elm tree trunk pipes, providing fresh water to paying households and civic conduits.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> As London’s medieval parish wells became dangerously polluted by expanding cesspits, wealthy commercial entrepreneurs stepped forward. In 1609, goldsmith and financier Sir Hugh Myddelton funded the construction of the New River to bring clean water to the expanding capital.</p><p class=\"prose-p\">Myddelton engineered an ambitious 38-mile man-made canal, bringing fresh spring water from Hertfordshire to Islington. Water was distributed across London through a pioneering network of hollowed elm tree trunk pipes, providing reliable drinking water to wealthy subscribers and civic conduit fountains.</p>",
           "sources": [
             {
               "id": "water_l3_src_c",
@@ -3497,7 +3497,7 @@ export default {
           "image_alt": "John Hayls oil portrait of Samuel Pepys holding a sheet of music",
           "caption": "John Hayls, Samuel Pepys (1666, NPG 211). The famous naval administrator whose diary laid bare the sanitary squalor of Restoration London when his neighbour's cracked cesspit flooded his cellar.",
           "isReversed": true,
-          "text": "<span class=\"para-ref\">[3.4]</span> The reality of seventeenth-century domestic sanitation is captured in the private diary of naval administrator **Samuel Pepys**. In October 1660, Pepys recorded the horrific experience of stepping into neighbour’s waste when entering his basement: *'Going down into my cellar... I put my foot into a great heap of turds, by which I find that Mr Turner's house of office is full and comes into my cellar.'*<br><br>Domestic cesspits were poorly lined with brick; over time, fractured brick cesspits cracked and leaked human excrement into adjoining cellars and shallow water wells. Homeowners were forced to pay nightsoil men & filth carts to empty vaults at night and haul raw waste out of the city in horse-drawn filth carts.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> The grim reality of seventeenth-century domestic sanitation is vividly recorded in Samuel Pepys’s famous diary. In October 1660, Pepys suffered the horrific ordeal of stepping into neighbour’s waste when entering his basement, discovering a neighbour's overflowing privy had flooded into his cellar.</p><p class=\"prose-p\">Because urban cellars were poorly constructed, fractured brick cesspits routinely cracked and leaked raw sewage into adjoining properties and shallow drinking wells. Householders had to pay nightsoil men & filth carts to shovel out subterranean cesspools at midnight and cart foul waste beyond city walls.</p>",
           "source": {
             "id": "water_l3_src_d",
             "letter": "D",
@@ -6036,7 +6036,7 @@ export default {
           "image": "/units/water_and_sanitation/assets/joseph_bazalgette.jpg",
           "image_alt": "Portrait photograph of Sir Joseph Bazalgette, Chief Engineer of the Metropolitan Board of Works",
           "caption": "Sir Joseph Bazalgette (1819–1891). Chief Engineer whose 82-mile intercepting sewer network permanently eradicated cholera epidemics from London.",
-          "text": "<span class=\"para-ref\">[6.3]</span> The second vital factor was large-scale technological and civil engineering, spearheaded by **Sir Joseph Bazalgette**. Following the installation of 200,000 flushing water closets, the tidal River Thames was turned into a giant open sewer. In June 1858, an intense heatwave triggered **The Great Stink**, which overwhelmed the Houses of Parliament with suffocating stench. Terrified for their own lives, politicians abandoned **laissez-faire** inertia and granted £3 million for London’s drainage. Between 1859 and 1865, Bazalgette directed navvies to build **82 miles of brick intercepting sewers** using 318 million bricks and waterproof Portland cement. By transporting 420 million gallons of sewage daily eastward past the capital, Bazalgette permanently separated drinking water from human waste, eradicating cholera from London forever."
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.3]</span> The second vital catalyst in Victorian sanitation was large-scale civil engineering spearheaded by Sir Joseph Bazalgette. Following the installation of 200,000 water closets, the River Thames was turned into a foul open sewer, triggering The Great Stink in June 1858.</p><p class=\"prose-p\">Terrified by the suffocating stench rising into Parliament, politicians abandoned laissez-faire inertia and funded £3 million for London’s drainage. Bazalgette directed navvies to construct eighty-two miles of underground brick intercepting sewers, transporting 420 million gallons of sewage daily past the capital and permanently eradicating cholera from London.</p>"
         },
         {
           "ref": "[6.4]",
@@ -6051,7 +6051,7 @@ export default {
           "ref": "[6.5]",
           "period": "1875",
           "title": "Reason 4: Government Legislation & The 1875 Public Health Act",
-          "text": "<span class=\"para-ref\">[6.5]</span> The fourth indispensable catalyst was political legislation, culminating in the **Public Health Act of 1875** under Prime Minister Benjamin Disraeli. Earlier legislation, such as Edwin Chadwick’s 1848 Act, had failed because setting up health boards was *permissive* (optional), allowing wealthy ratepayers to block spending. However, the extension of the vote to working-class men in the 1867 Reform Act forced politicians to prioritize working-class living conditions. The 1875 Act made public health **compulsory**: for the first time, every local council in Britain was legally commanded to appoint a Medical Officer of Health, pave and light streets, collect refuse, and supply clean piped water and covered drainage. This ended laissez-faire and ensured that scientific and engineering triumphs protected every citizen nationwide."
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.5]</span> The fourth indispensable catalyst was political legislation, culminating in the Public Health Act of 1875 passed under Prime Minister Benjamin Disraeli & Parliament. While Edwin Chadwick’s 1848 Act had failed because health boards were permissive, working-class male enfranchisement in 1867 forced politicians to act.</p><p class=\"prose-p\">The 1875 statute made public health compulsory nationwide: every local authority was legally required to appoint a medical officer of health, pave streets, collect refuse, and provide clean piped water. This decisive legislation ended government indifference, ensuring engineering and scientific advances protected all citizens.</p>"
         }
       ],
       "video": [
@@ -6609,5 +6609,9 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  "keyStage": "KS3",
+  "key_stage": "KS3",
+  "yearGroup": "Year 7",
+  "category": "KS3"
 };

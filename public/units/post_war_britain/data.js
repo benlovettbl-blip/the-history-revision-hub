@@ -246,7 +246,7 @@ export default {
           "act": 1,
           "title": "The Constitutional Campaign: Millicent Fawcett & The NUWSS (1897–1903)",
           "theme_heading": "The Constitutional Campaign: Millicent Fawcett & The NUWSS (1897–1903)",
-          "text": "<span class=\"para-ref\">[1.1]</span> In 1897, seventeen regional women’s suffrage societies united under the leadership of **Dame Millicent Garrett Fawcett** to form the **National Union of Women's Suffrage Societies (NUWSS)**. Known as the <em>Suffragists</em>, the NUWSS was a peaceful, democratic federation that rapidly expanded to over 500 local branches and 50,000 peaceful members across Great Britain.<br><br><span class=\"para-ref\">[1.2]</span> Fawcett believed passionately in constitutional campaigning, law-abiding methods, and patient persuasion. The Suffragists organized public lectures, collected mass petitions to Parliament, published their newspaper <em>The Common Cause</em>, and lobbied sympathetic Members of Parliament. Fawcett argued that women could never convince a skeptical male political establishment by breaking the law, but must demonstrate moral superiority and democratic responsibility, proving women mature citizens fully capable of exercising the vote.<br><br><span class=\"para-ref\">[1.3]</span> As Fawcett later reflected in 1918, this steady pressure laid the indispensable groundwork for enfranchisement. By converting trade unionists, local councillors, and moderate politicians to the justice of equal voting rights, the NUWSS ensured that women’s suffrage became a respectable, mainstream political demand.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In 1897, seventeen regional suffrage groups united under Dame Millicent Garrett Fawcett to establish the National Union of Women's Suffrage Societies (NUWSS). Known as Suffragists, the democratic organisation rapidly grew to over 50,000 peaceful members across Great Britain.</p><p class=\"prose-p\">Fawcett championed constitutional campaigning, arguing that law-abiding methods, mass petitions, and reasoned parliamentary lobbying were the only way to win voting rights. By demonstrating moral responsibility, the NUWSS persuaded politicians that women were mature citizens capable of exercising the democratic franchise.</p>",
           "image": "/images/post_war_britain/millicent_fawcett_portrait.jpg",
           "image_alt": "Dame Millicent Garrett Fawcett portrait",
           "caption": "Dame Millicent Garrett Fawcett (1847–1929): President of the NUWSS, who led the peaceful, constitutional Suffragist campaign for equal voting rights.",
@@ -294,7 +294,7 @@ export default {
           "act": 2,
           "title": "'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action (1903–1914)",
           "theme_heading": "'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action (1903–1914)",
-          "text": "<span class=\"para-ref\">[2.1]</span> Frustrated by decades of parliamentary delays and stalled bills broken by Liberal and Conservative governments, **Emmeline Pankhurst** and her daughters Christabel and Sylvia took radical action, founding the militant WSPU (**Women's Social and Political Union**) in Manchester in October 1903. Adopting the militant motto <em>'Deeds, not words'</em>, the WSPU members became universally known as the **Suffragettes**.<br><br><span class=\"para-ref\">[2.2]</span> Unlike the democratic NUWSS, the WSPU operated as a disciplined military hierarchy. Suffragettes abandoned peaceful petitions in favor of direct action and headlines: heckling Cabinet ministers at political rallies, chaining themselves to railings outside Parliament, and storming the House of Commons. They argued that only dramatic disruption and sensational headlines would force the government to take the vote seriously.<br><br><span class=\"para-ref\">[2.3]</span> The clash reached its climax in May 1914 when Emmeline Pankhurst led a deputation to present a petition to King George V outside Buckingham Palace. In the dramatic archival photograph, Superintendent Rolfe is captured physically lifting Pankhurst off her feet to arrest her, illustrating the state's determination to suppress female protest.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Frustrated by decades of parliamentary delay, Emmeline Pankhurst and her daughters founded the Women's Social and Political Union (WSPU) in Manchester in October 1903. Members adopted the radical motto 'Deeds, not words' militancy, becoming universally known as the Suffragettes.</p><p class=\"prose-p\">Unlike peaceful suffragists, the militant WSPU operated as a disciplined military hierarchy. Suffragettes embraced direct action to capture national headlines, chaining themselves to parliamentary railings, interrupting political rallies, and confronting police outside Buckingham Palace to force the government to grant female suffrage.</p>",
           "isReversed": true,
           "sources": [
             {
@@ -339,7 +339,7 @@ export default {
           "act": 3,
           "title": "Prison Brutality, Hunger Strikes & The Cat and Mouse Act (1909–1914)",
           "theme_heading": "Prison Brutality, Hunger Strikes & The Cat and Mouse Act (1909–1914)",
-          "text": "<span class=\"para-ref\">[3.1]</span> When imprisoned in Holloway and other jails, Suffragettes demanded to be treated as political prisoners rather than common criminals. In July 1909, Marion Wallace Dunlop initiated a revolutionary protest tactic as Suffragettes hunger strike for their rights. To prevent prisoners from dying, the Liberal government introduced brutal forced tube feeding—an agonizing procedure where rubber tubes were shoved down prisoners' nostrils or throats by wardresses and medical officers.<br><br><span class=\"para-ref\">[3.2]</span> Public outrage at force-feeding compelled Home Secretary Reginald McKenna to pass the **Prisoners (Temporary Discharge for Ill-Health) Act 1913**, notoriously dubbed the **'Cat and Mouse Act'**. Under this notorious release and re-arrest law, hunger-striking Suffragettes were released on license when dangerously frail, allowed to recover at home, and then re-arrested by police to serve the remainder of their sentences.<br><br><span class=\"para-ref\">[3.3]</span> The WSPU turned this state cruelty into a powerful propaganda weapon. As depicted in famous WSPU propaganda posters, the government was satirized as a bloodthirsty feline toying with a helpless female prisoner. The WSPU awarded military-style silver **Hunger Strike Medals** to survivors like Helen MacRae, honoring their physical sacrifice for the cause.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Imprisoned in Holloway and other jails, Suffragettes initiated defiant hunger strike protests demanding to be treated as political prisoners. To prevent inmate deaths, the Liberal government introduced agonizing forced tube-feeding, shoving rubber hoses down prisoners' throats and provoking widespread public outrage.</p><p class=\"prose-p\">In response, Parliament passed the notorious 1913 'Cat and Mouse Act', allowing severely weakened hunger strikers to be released on license and re-arrested once recovered. Honoring their physical sacrifice, the WSPU awarded military-style silver Hunger Strike Medals to courageous survivors.</p>",
           "isReversed": false,
           "sources": [
             {
@@ -384,7 +384,7 @@ export default {
           "act": 4,
           "title": "The Suffragette Bodyguard: Edith Garrud & The Jiu-Jitsu Defense (1910–1914)",
           "theme_heading": "The Suffragette Bodyguard: Edith Garrud & The Jiu-Jitsu Defense (1910–1914)",
-          "text": "<span class=\"para-ref\">[4.1]</span> As police tactics became increasingly aggressive—culminating in the violence of 'Black Friday' in November 1910—the WSPU organized an elite security unit known as **'The Bodyguard'**. Led by martial artist **Edith Garrud**, thirty athletic women were trained in **jiu-jitsu** to protect Emmeline Pankhurst from re-arrest under the Cat and Mouse Act, concealing wooden clubs beneath their Edwardian dresses.<br><br><span class=\"para-ref\">[4.2]</span> The escalation peaked in dramatic tragedy on 4 June 1913 at the Epsom Derby. Suffragette **Emily Wilding Davison** stepped onto the racetrack directly in front of the King’s horse at Epsom Derby (Anmer), sustaining fatal head injuries. Davison carried two WSPU flags, intending to pin the suffragette colours to the royal bridle.<br><br><span class=\"para-ref\">[4.3]</span> Davison died four days later, celebrated by thousands of suffragettes as a heroic martyr for the cause. The horrific collision was captured on early cinematic cameras, generating global newsreel coverage shown in cinemas across Europe and America, provoking worldwide debate over women's voting rights.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> As police violence escalated, the WSPU formed an elite thirty-woman security unit known as 'The Bodyguard'. Directed by martial arts pioneer Edith Garrud, these athletic women were trained in jiu-jitsu self-defence to shield Emmeline Pankhurst from aggressive police batons.</p><p class=\"prose-p\">Concealing wooden clubs beneath their Edwardian dresses, the bodyguards successfully fought off arresting officers during public speeches. Physical conflict peaked in June 1913 when Emily Wilding Davison stepped before King George V’s horse at the Epsom Derby, dying from catastrophic injuries.</p>",
           "isReversed": true,
           "sources": [
             {
@@ -429,7 +429,7 @@ export default {
           "act": 5,
           "title": "Total War Mobilisation, Munitions Work & The 1918 Victory (1914–1918)",
           "theme_heading": "Total War Mobilisation, Munitions Work & The 1918 Victory (1914–1918)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In August 1914, the outbreak of the First World War transformed the political landscape overnight. Emmeline Pankhurst suspended WSPU militancy to back the British war effort, while the NUWSS continued constitutional lobbying alongside relief work. Between 1914 and 1918, over 1.5 million women in work entered the labour force, taking over transport, farming, administration, and heavy industry.<br><br><span class=\"para-ref\">[5.2]</span> Nearly one million women worked in dangerous munitions factories, nicknamed munitions 'Canary Girls' because toxic TNT chemicals turned their skin and hair bright yellow. Their courage handling lethal explosives proved that women were indispensable partners in national defense.<br><br><span class=\"para-ref\">[5.3]</span> In February 1918, Parliament passed the historic **Representation of the People Act 1918**. While the Act granted universal suffrage to all men over twenty-one, it granted the vote for women over 30 who were householders or married to householders. Although full equal suffrage was not achieved until 1928, the 1918 Act enfranchised 8.4 million British women, representing the decisive breakthrough in women's rights.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> In August 1914, the outbreak of the First World War suspended militant campaigning. Over 1.5 million women entered factories, farms, and hospitals, performing vital wartime patriotic service as munitions Canary Girls handling toxic explosives to sustain the national war effort.</p><p class=\"prose-p\">Their indispensable contribution broke down parliamentary opposition. In February 1918, Parliament passed the historic Representation of the People Act 1918, granting the parliamentary vote to 8.4 million women over thirty. Although retaining a temporary property qualification enfranchisement, the statute marked a decisive constitutional breakthrough.</p>",
           "image": "/images/post_war_britain/canary_girls_chilwell_1917.jpg",
           "image_alt": "Munitions workers Canary Girls at Chilwell",
           "caption": "Munitions Workers ('Canary Girls') at Chilwell (1917): Toxic chemicals turned their skin yellow as women powered wartime heavy industry, proving their democratic equality.",
@@ -1286,6 +1286,193 @@ export default {
           "a": "Mass mobilization of two million women in munitions factories and agriculture",
           "explanation": "Women’s wartime industrial labor disproved anti-suffrage claims of female inferiority."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "Key Event",
+          "heading": "The Constitutional Campaign: Millicent Fawcett & The NUWSS (1897–1903)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Dame Millicent Garrett Fawcett",
+              "clue": "Leader of the NUWSS who advocated patient persuasion, democratic campaigning, and law-abiding methods to win the vote."
+            },
+            {
+              "term": "National Union of Women's Suffrage Societies (NUWSS)",
+              "clue": "The peaceful, democratic federation founded in 1897 uniting over 50,000 constitutional suffragists across Britain."
+            },
+            {
+              "term": "constitutional campaigning",
+              "clue": "The law-abiding strategy of mass petitions, parliamentary lobbying, and public education to prove women mature democratic citizens."
+            }
+          ],
+          "model_sentence": "Under the leadership of <strong>Dame Millicent Garrett Fawcett</strong>, the <strong>National Union of Women's Suffrage Societies (NUWSS)</strong> relied on <strong>constitutional campaigning</strong> to make women's enfranchisement a respectable mainstream demand.",
+          "key_terms": [
+            {
+              "term": "Dame Millicent Garrett Fawcett",
+              "clue": "Leader of the NUWSS who advocated patient persuasion, democratic campaigning, and law-abiding methods to win the vote."
+            },
+            {
+              "term": "National Union of Women's Suffrage Societies (NUWSS)",
+              "clue": "The peaceful, democratic federation founded in 1897 uniting over 50,000 constitutional suffragists across Britain."
+            },
+            {
+              "term": "constitutional campaigning",
+              "clue": "The law-abiding strategy of mass petitions, parliamentary lobbying, and public education to prove women mature democratic citizens."
+            }
+          ],
+          "title": "The Constitutional Campaign: Millicent Fawcett & The NUWSS (1897–1903)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 2,
+          "date": "Key Event",
+          "heading": "'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action (1903–1914)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Emmeline Pankhurst",
+              "clue": "Charismatic co-founder of the militant WSPU in Manchester in 1903 who championed radical direct action to force political concessions."
+            },
+            {
+              "term": "Women's Social and Political Union (WSPU)",
+              "clue": "The militant suffrage organization founded in 1903 that operated as a disciplined hierarchy to demand immediate voting rights."
+            },
+            {
+              "term": "'Deeds, not words' militancy",
+              "clue": "The radical motto driving Suffragettes to heckle ministers, chain themselves to railings, and disrupt Parliament for media headlines."
+            }
+          ],
+          "model_sentence": "Frustrated by decades of parliamentary inaction, <strong>Emmeline Pankhurst</strong> established the <strong>Women's Social and Political Union (WSPU)</strong> to wage an uncompromising campaign of <strong>'Deeds, not words' militancy</strong>.",
+          "key_terms": [
+            {
+              "term": "Emmeline Pankhurst",
+              "clue": "Charismatic co-founder of the militant WSPU in Manchester in 1903 who championed radical direct action to force political concessions."
+            },
+            {
+              "term": "Women's Social and Political Union (WSPU)",
+              "clue": "The militant suffrage organization founded in 1903 that operated as a disciplined hierarchy to demand immediate voting rights."
+            },
+            {
+              "term": "'Deeds, not words' militancy",
+              "clue": "The radical motto driving Suffragettes to heckle ministers, chain themselves to railings, and disrupt Parliament for media headlines."
+            }
+          ],
+          "title": "'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action (1903–1914)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 3,
+          "date": "Key Event",
+          "heading": "Prison Brutality, Hunger Strikes & The Cat and Mouse Act (1909–1914)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "hunger strike protests",
+              "clue": "The prison resistance tactic initiated by Marion Wallace Dunlop in 1909 demanding political prisoner status, met with brutal forced feeding."
+            },
+            {
+              "term": "'Cat and Mouse Act'",
+              "clue": "The notorious 1913 law allowing hunger strikers to be released on license when dangerously frail and re-arrested once recovered."
+            },
+            {
+              "term": "Hunger Strike Medals",
+              "clue": "Military-style silver honours awarded by the WSPU to women who endured imprisonment and the physical agony of forced feeding."
+            }
+          ],
+          "model_sentence": "When the government countered Suffragette <strong>hunger strike protests</strong> with the cruel <strong>'Cat and Mouse Act'</strong>, the WSPU awarded commemorative <strong>Hunger Strike Medals</strong> to honour their physical sacrifice.",
+          "key_terms": [
+            {
+              "term": "hunger strike protests",
+              "clue": "The prison resistance tactic initiated by Marion Wallace Dunlop in 1909 demanding political prisoner status, met with brutal forced feeding."
+            },
+            {
+              "term": "'Cat and Mouse Act'",
+              "clue": "The notorious 1913 law allowing hunger strikers to be released on license when dangerously frail and re-arrested once recovered."
+            },
+            {
+              "term": "Hunger Strike Medals",
+              "clue": "Military-style silver honours awarded by the WSPU to women who endured imprisonment and the physical agony of forced feeding."
+            }
+          ],
+          "title": "Prison Brutality, Hunger Strikes & The Cat and Mouse Act (1909–1914)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 4,
+          "date": "Key Event",
+          "heading": "The Suffragette Bodyguard: Edith Garrud & The Jiu-Jitsu Defense (1910–1914)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "'The Bodyguard'",
+              "clue": "The elite security unit of thirty athletic suffragettes tasked with protecting WSPU leaders from police assault and re-arrest."
+            },
+            {
+              "term": "Edith Garrud",
+              "clue": "Pioneering martial arts instructor who taught suffragettes unarmed combat and jiu-jitsu to evade and overpower police officers."
+            },
+            {
+              "term": "jiu-jitsu self-defence",
+              "clue": "The Japanese martial art utilized by Suffragette bodyguards wielding concealed Indian clubs to shield Emmeline Pankhurst from arrest."
+            }
+          ],
+          "model_sentence": "Trained by martial artist <strong>Edith Garrud</strong> in <strong>jiu-jitsu self-defence</strong>, the covert WSPU security unit known as <strong>'The Bodyguard'</strong> successfully protected fugitive leaders from police batons.",
+          "key_terms": [
+            {
+              "term": "'The Bodyguard'",
+              "clue": "The elite security unit of thirty athletic suffragettes tasked with protecting WSPU leaders from police assault and re-arrest."
+            },
+            {
+              "term": "Edith Garrud",
+              "clue": "Pioneering martial arts instructor who taught suffragettes unarmed combat and jiu-jitsu to evade and overpower police officers."
+            },
+            {
+              "term": "jiu-jitsu self-defence",
+              "clue": "The Japanese martial art utilized by Suffragette bodyguards wielding concealed Indian clubs to shield Emmeline Pankhurst from arrest."
+            }
+          ],
+          "title": "The Suffragette Bodyguard: Edith Garrud & The Jiu-Jitsu Defense (1910–1914)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 5,
+          "date": "Key Event",
+          "heading": "Total War Mobilisation, Munitions Work & The 1918 Victory (1914–1918)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Representation of the People Act 1918",
+              "clue": "Historic legislation that enfranchised 8.4 million women aged 30 and over who met minimal property qualifications."
+            },
+            {
+              "term": "wartime patriotic service",
+              "clue": "The mobilization of millions of women into munitions factories, transport, and agriculture during WWI, proving their vital national contribution."
+            },
+            {
+              "term": "property qualification enfranchisement",
+              "clue": "The parliamentary compromise granting votes only to women householders or wives of householders, excluding younger working-class women."
+            }
+          ],
+          "model_sentence": "Recognising years of pre-war pressure and vital <strong>wartime patriotic service</strong>, Parliament passed the <strong>Representation of the People Act 1918</strong>, although it retained a restrictive <strong>property qualification enfranchisement</strong>.",
+          "key_terms": [
+            {
+              "term": "Representation of the People Act 1918",
+              "clue": "Historic legislation that enfranchised 8.4 million women aged 30 and over who met minimal property qualifications."
+            },
+            {
+              "term": "wartime patriotic service",
+              "clue": "The mobilization of millions of women into munitions factories, transport, and agriculture during WWI, proving their vital national contribution."
+            },
+            {
+              "term": "property qualification enfranchisement",
+              "clue": "The parliamentary compromise granting votes only to women householders or wives of householders, excluding younger working-class women."
+            }
+          ],
+          "title": "Total War Mobilisation, Munitions Work & The 1918 Victory (1914–1918)",
+          "dates": "Key Event"
+        }
       ]
     },
     {
@@ -1369,7 +1556,7 @@ export default {
           "act": 1,
           "title": "Total War, Evacuation & Shared Social Transformation (1940–1942)",
           "theme_heading": "Total War, Evacuation & Shared Social Transformation (1940–1942)",
-          "text": "<span class=\"para-ref\">[1.1]</span> The shared trauma of the Second World War fundamentally reshaped British society. In September 1939, Operation Pied Piper evacuated 1.5 million city children to rural foster homes. For wealthy host families, the arrival of impoverished urban children caused immense shock: slum malnutrition exposed widespread rickets, lice, and chronic poverty in Britain's industrial cities.<br><br><span class=\"para-ref\">[1.2]</span> On the home front, universal food and clothing rationing created an ethic of rationing and common sacrifice. Working-class and middle-class citizens queued at identical food shops, sheltered together in underground stations during the shared ordeal of the Blitz, and served side-by-side in the Home Guard and ARP wardens, cementing a collective expectation that peacetime Britain must build a fairer, healthier society.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> In September 1939, the massive Operation Pied Piper evacuation relocated 1.5 million city children and mothers to rural foster families. The arrival of impoverished urban children caused immense shock, exposing widespread rickets, lice, and malnutrition to affluent host families.</p><p class=\"prose-p\">On the home front, the Blitz, rationing, and shared wartime trauma forged powerful cross-class social solidarity. Citizens queued together at shops and served side by side as ARP wardens, cementing a collective determination that post-war Britain must eliminate poverty and build a fairer society.</p>",
           "isReversed": false,
           "sources": [
             {
@@ -1558,7 +1745,7 @@ export default {
           "act": 5,
           "title": "'The Appointed Day': Overcoming the BMA & The Reality of Free Care (5 July 1948)",
           "theme_heading": "'The Appointed Day': Overcoming the BMA & The Reality of Free Care (5 July 1948)",
-          "text": "<span class=\"para-ref\">[5.1]</span> The crowning achievement of the Welfare State was the **National Health Service (NHS)**, founded on 5 July 1948 under charismatic Health Minister **Aneurin Bevan**. Bevan faced fierce resistance from the British Medical Association (BMA), where private doctors and the BMA threatens total boycott, refusing to become salaried state employees.<br><br><span class=\"para-ref\">[5.2]</span> Bevan outmaneuvered the doctors with brilliant political pragmatism: he allowed hospital consultants to continue treating lucrative private patients inside NHS beds, famously quipping that he had *'stuffed their mouths with gold'*. When the NHS opened, it guaranteed free healthcare for all at the point of delivery, funded entirely from general taxation, transforming healthcare from a private luxury into a universal civil right.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> The crowning achievement of post-war welfare was the National Health Service (NHS), founded on 5 July 1948 under Health Minister Aneurin Bevan. Bevan faced intense resistance from private doctors in the British Medical Association, who threatened a total boycott rather than becoming salaried state employees.</p><p class=\"prose-p\">Bevan overcame opposition through his famous 'stuffed their mouths with gold' compromise, allowing senior hospital consultants to treat lucrative private patients in NHS beds. When the NHS opened, it guaranteed free medical care for all at the point of delivery, transforming healthcare from a privileged luxury into a universal civil right.</p>",
           "image": "/images/bevan_first_day_nhs_1948.jpg",
           "image_alt": "Aneurin Bevan visiting Park Hospital on the first day of the NHS",
           "caption": "Aneurin Bevan at Park Hospital (5 July 1948): Celebrating the birth of the National Health Service, delivering free medical care to all citizens.",
@@ -2423,6 +2610,193 @@ export default {
           "a": "Key coal, railway, and steel industries",
           "explanation": "Labour nationalized commanding heights of the economy including coal, rail, and steel."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "Key Event",
+          "heading": "Total War, Evacuation & Shared Social Transformation (1940–1942)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Operation Pied Piper evacuation",
+              "clue": "The September 1939 wartime scheme that evacuated 1.5 million city children and mothers to rural foster families."
+            },
+            {
+              "term": "shared wartime trauma",
+              "clue": "The collective suffering from the Blitz, rationing, and civilian casualties that united the British public across social classes."
+            },
+            {
+              "term": "cross-class social solidarity",
+              "clue": "The unprecedented exposure of affluent rural host families to inner-city child poverty and malnutrition, sparking demands for welfare reform."
+            }
+          ],
+          "model_sentence": "The nationwide <strong>Operation Pied Piper evacuation</strong> exposed deep urban deprivation to rural hosts, generating a powerful sense of <strong>shared wartime trauma</strong> and <strong>cross-class social solidarity</strong>.",
+          "key_terms": [
+            {
+              "term": "Operation Pied Piper evacuation",
+              "clue": "The September 1939 wartime scheme that evacuated 1.5 million city children and mothers to rural foster families."
+            },
+            {
+              "term": "shared wartime trauma",
+              "clue": "The collective suffering from the Blitz, rationing, and civilian casualties that united the British public across social classes."
+            },
+            {
+              "term": "cross-class social solidarity",
+              "clue": "The unprecedented exposure of affluent rural host families to inner-city child poverty and malnutrition, sparking demands for welfare reform."
+            }
+          ],
+          "title": "Total War, Evacuation & Shared Social Transformation (1940–1942)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 2,
+          "date": "Key Event",
+          "heading": "Slaying the Five Giants: William Beveridge & The Blueprint for Welfare (1942)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Beveridge Report (1942)",
+              "clue": "Sir William Beveridge's revolutionary social blueprint that sold 630,000 copies proposing universal state protection 'from the cradle to the grave'."
+            },
+            {
+              "term": "Five Giants of Want and Disease",
+              "clue": "The societal scourges identified by Beveridge—Want, Disease, Ignorance, Squalor, and Idleness—that post-war reconstruction had to defeat."
+            },
+            {
+              "term": "universal social security",
+              "clue": "A comprehensive state insurance system providing sickness, unemployment, and retirement benefits funded by flat-rate contributions."
+            }
+          ],
+          "model_sentence": "Published in December 1942, the revolutionary <strong>Beveridge Report (1942)</strong> proposed <strong>universal social security</strong> to slay the <strong>Five Giants of Want and Disease</strong> blighting British society.",
+          "key_terms": [
+            {
+              "term": "Beveridge Report (1942)",
+              "clue": "Sir William Beveridge's revolutionary social blueprint that sold 630,000 copies proposing universal state protection 'from the cradle to the grave'."
+            },
+            {
+              "term": "Five Giants of Want and Disease",
+              "clue": "The societal scourges identified by Beveridge—Want, Disease, Ignorance, Squalor, and Idleness—that post-war reconstruction had to defeat."
+            },
+            {
+              "term": "universal social security",
+              "clue": "A comprehensive state insurance system providing sickness, unemployment, and retirement benefits funded by flat-rate contributions."
+            }
+          ],
+          "title": "Slaying the Five Giants: William Beveridge & The Blueprint for Welfare (1942)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 3,
+          "date": "Key Event",
+          "heading": "The 1945 Labour Landslide: Clement Attlee & 'The New Jerusalem' (July 1945)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "1945 Labour election landslide",
+              "clue": "Clement Attlee's stunning 146-seat parliamentary victory over Winston Churchill's Conservatives in the first general election in a decade."
+            },
+            {
+              "term": "Clement Attlee",
+              "clue": "Labour Prime Minister whose decisive administration nationalized major industries and constructed the modern British welfare state."
+            },
+            {
+              "term": "'Let Us Face the Future' manifesto",
+              "clue": "Labour's progressive 1945 election manifesto pledging to eliminate poverty, provide full employment, and build a free health service."
+            }
+          ],
+          "model_sentence": "Campaigning on their visionary <strong>'Let Us Face the Future' manifesto</strong>, <strong>Clement Attlee</strong> led the party to the historic <strong>1945 Labour election landslide</strong>.",
+          "key_terms": [
+            {
+              "term": "1945 Labour election landslide",
+              "clue": "Clement Attlee's stunning 146-seat parliamentary victory over Winston Churchill's Conservatives in the first general election in a decade."
+            },
+            {
+              "term": "Clement Attlee",
+              "clue": "Labour Prime Minister whose decisive administration nationalized major industries and constructed the modern British welfare state."
+            },
+            {
+              "term": "'Let Us Face the Future' manifesto",
+              "clue": "Labour's progressive 1945 election manifesto pledging to eliminate poverty, provide full employment, and build a free health service."
+            }
+          ],
+          "title": "The 1945 Labour Landslide: Clement Attlee & 'The New Jerusalem' (July 1945)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 4,
+          "date": "Key Event",
+          "heading": "Aneurin Bevan & The NHS Act: Healthcare as a Human Right (1946–1947)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "National Insurance Act 1946",
+              "clue": "Legislation creating a unified system of flat-rate unemployment, sickness, and maternity benefits funded by weekly national insurance stamps."
+            },
+            {
+              "term": "National Assistance Act 1948",
+              "clue": "The landmark act that abolished the hated Victorian Poor Law workhouse system and created an unconditional state safety net."
+            },
+            {
+              "term": "abolition of the Poor Law",
+              "clue": "The formal dismantling of punitive workhouses, ensuring that poverty was no longer treated as a personal moral failure."
+            }
+          ],
+          "model_sentence": "Through the passage of the <strong>National Insurance Act 1946</strong> and the <strong>National Assistance Act 1948</strong>, Attlee's government achieved the historic <strong>abolition of the Poor Law</strong>.",
+          "key_terms": [
+            {
+              "term": "National Insurance Act 1946",
+              "clue": "Legislation creating a unified system of flat-rate unemployment, sickness, and maternity benefits funded by weekly national insurance stamps."
+            },
+            {
+              "term": "National Assistance Act 1948",
+              "clue": "The landmark act that abolished the hated Victorian Poor Law workhouse system and created an unconditional state safety net."
+            },
+            {
+              "term": "abolition of the Poor Law",
+              "clue": "The formal dismantling of punitive workhouses, ensuring that poverty was no longer treated as a personal moral failure."
+            }
+          ],
+          "title": "Aneurin Bevan & The NHS Act: Healthcare as a Human Right (1946–1947)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 5,
+          "date": "Key Event",
+          "heading": "'The Appointed Day': Overcoming the BMA & The Reality of Free Care (5 July 1948)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "National Health Service (NHS)",
+              "clue": "The world's first universal health system founded on 5 July 1948 providing free medical treatment at the point of delivery from general taxation."
+            },
+            {
+              "term": "Health Minister Aneurin Bevan",
+              "clue": "The passionate Welsh socialist minister who overcame fierce opposition from private doctors to establish the National Health Service."
+            },
+            {
+              "term": "'stuffed their mouths with gold' compromise",
+              "clue": "Bevan's pragmatic concession allowing hospital consultants to retain lucrative private patients inside NHS hospitals to secure their cooperation."
+            }
+          ],
+          "model_sentence": "On 5 July 1948, <strong>Health Minister Aneurin Bevan</strong> launched the universal <strong>National Health Service (NHS)</strong> after securing doctor agreement through his famous <strong>'stuffed their mouths with gold' compromise</strong>.",
+          "key_terms": [
+            {
+              "term": "National Health Service (NHS)",
+              "clue": "The world's first universal health system founded on 5 July 1948 providing free medical treatment at the point of delivery from general taxation."
+            },
+            {
+              "term": "Health Minister Aneurin Bevan",
+              "clue": "The passionate Welsh socialist minister who overcame fierce opposition from private doctors to establish the National Health Service."
+            },
+            {
+              "term": "'stuffed their mouths with gold' compromise",
+              "clue": "Bevan's pragmatic concession allowing hospital consultants to retain lucrative private patients inside NHS hospitals to secure their cooperation."
+            }
+          ],
+          "title": "'The Appointed Day': Overcoming the BMA & The Reality of Free Care (5 July 1948)",
+          "dates": "Key Event"
+        }
       ]
     },
     {
@@ -2596,7 +2970,7 @@ export default {
           "act": 3,
           "title": "22 June 1948: HMT Empire Windrush Docks at Tilbury (1948)",
           "theme_heading": "22 June 1948: HMT Empire Windrush Docks at Tilbury (1948)",
-          "text": "<span class=\"para-ref\">[3.1]</span> On **22 June 1948**, the converted troopship **HMT Empire Windrush** docked at Tilbury Docks in Essex, where 492 Caribbean pioneers arrive from Jamaica, Trinidad, and Barbados. As newsreel cameras filmed the arrivals, Trinidadian calypso singer Lord Kitchener sings calypso, performing his famous love letter: *'London is the place for me'*. Many passengers were nurses, welders, RAF veterans, carpenters, and teachers who answered the call to rebuild Britain.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 22 June 1948, the converted troopship HMT Empire Windrush docked at Tilbury Docks in Essex. Carrying 492 passengers from Jamaica, Trinidad, and Barbados, the ship brought eager Caribbean pioneer arrivals answering Britain’s urgent post-war labour shortage.</p><p class=\"prose-p\">As British Pathé newsreel cameras filmed the historic arrival, Trinidadian calypso singer Aldwyn Roberts performed his legendary Lord Kitchener calypso recording, singing \"London is the place for me\" from the deck. These pioneering arrivals included RAF veterans, nurses, and artisans who laid the foundation of modern multicultural Britain.</p>",
           "image": "/images/empire_windrush_1948.jpg",
           "image_alt": "HMT Empire Windrush docking at Tilbury in June 1948",
           "caption": "HMT Empire Windrush at Tilbury (June 1948): The historic arrival of 492 Caribbean passengers, initiating the modern multicultural era.",
@@ -3557,6 +3931,193 @@ export default {
           "q": "What critical public services in Britain desperately needed workers to rebuild following World War II?",
           "a": "The NHS, London Transport, and British Rail",
           "explanation": "The NHS and transport infrastructure depended heavily upon Caribbean labour."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "Key Event",
+          "heading": "Post-War Reconstruction & Industrial Labour Shortages (1945–1948)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "post-war labour shortages",
+              "clue": "Severe manpower deficits across nationalized coal, rail networks, and London Transport following the devastation of World War II."
+            },
+            {
+              "term": "Commonwealth worker recruitment",
+              "clue": "The British government's deliberate campaign to invite citizens from the Caribbean, India, and Pakistan to rebuild British infrastructure."
+            },
+            {
+              "term": "rebuilding essential public services",
+              "clue": "Staffing hospitals, bus networks, and manufacturing industries critical to national economic survival."
+            }
+          ],
+          "model_sentence": "Facing acute <strong>post-war labour shortages</strong> across transport and hospitals, the government actively encouraged <strong>Commonwealth worker recruitment</strong> to assist in <strong>rebuilding essential public services</strong>.",
+          "key_terms": [
+            {
+              "term": "post-war labour shortages",
+              "clue": "Severe manpower deficits across nationalized coal, rail networks, and London Transport following the devastation of World War II."
+            },
+            {
+              "term": "Commonwealth worker recruitment",
+              "clue": "The British government's deliberate campaign to invite citizens from the Caribbean, India, and Pakistan to rebuild British infrastructure."
+            },
+            {
+              "term": "rebuilding essential public services",
+              "clue": "Staffing hospitals, bus networks, and manufacturing industries critical to national economic survival."
+            }
+          ],
+          "title": "Post-War Reconstruction & Industrial Labour Shortages (1945–1948)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 2,
+          "date": "Key Event",
+          "heading": "Imperial Citizens: The British Nationality Act 1948 & Statutory Rights (1948)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "British Nationality Act 1948",
+              "clue": "Historic statute creating Citizens of the UK and Colonies (CUKC), granting 800 million imperial subjects unrestricted rights of entry and settlement."
+            },
+            {
+              "term": "Citizens of the UK and Colonies (CUKC)",
+              "clue": "The common legal status entitling all Commonwealth citizens to British passports, legal equality, and immediate voting rights."
+            },
+            {
+              "term": "unrestricted right of settlement",
+              "clue": "The statutory guarantee allowing Commonwealth arrivals to live, work, and settle in Great Britain without visas or quotas."
+            }
+          ],
+          "model_sentence": "The landmark <strong>British Nationality Act 1948</strong> conferred equal status on <strong>Citizens of the UK and Colonies (CUKC)</strong>, guaranteeing them an <strong>unrestricted right of settlement</strong> in Britain.",
+          "key_terms": [
+            {
+              "term": "British Nationality Act 1948",
+              "clue": "Historic statute creating Citizens of the UK and Colonies (CUKC), granting 800 million imperial subjects unrestricted rights of entry and settlement."
+            },
+            {
+              "term": "Citizens of the UK and Colonies (CUKC)",
+              "clue": "The common legal status entitling all Commonwealth citizens to British passports, legal equality, and immediate voting rights."
+            },
+            {
+              "term": "unrestricted right of settlement",
+              "clue": "The statutory guarantee allowing Commonwealth arrivals to live, work, and settle in Great Britain without visas or quotas."
+            }
+          ],
+          "title": "Imperial Citizens: The British Nationality Act 1948 & Statutory Rights (1948)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 3,
+          "date": "Key Event",
+          "heading": "22 June 1948: HMT Empire Windrush Docks at Tilbury (1948)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "HMT Empire Windrush (22 June 1948)",
+              "clue": "The converted troopship that docked at Tilbury Docks carrying 492 Caribbean passengers to help rebuild post-war Britain."
+            },
+            {
+              "term": "Lord Kitchener calypso recording",
+              "clue": "Trinidadian singer Aldwyn Roberts singing his iconic love letter 'London is the place for me' directly to Pathé newsreel cameras on the gangway."
+            },
+            {
+              "term": "Caribbean pioneer arrivals",
+              "clue": "RAF veterans, nurses, welders, and artisans who answered Britain's call for workers and laid the foundation of modern multicultural Britain."
+            }
+          ],
+          "model_sentence": "When <strong>HMT Empire Windrush (22 June 1948)</strong> docked at Tilbury, the historic <strong>Lord Kitchener calypso recording</strong> celebrated the hope of the arriving <strong>Caribbean pioneer arrivals</strong>.",
+          "key_terms": [
+            {
+              "term": "HMT Empire Windrush (22 June 1948)",
+              "clue": "The converted troopship that docked at Tilbury Docks carrying 492 Caribbean passengers to help rebuild post-war Britain."
+            },
+            {
+              "term": "Lord Kitchener calypso recording",
+              "clue": "Trinidadian singer Aldwyn Roberts singing his iconic love letter 'London is the place for me' directly to Pathé newsreel cameras on the gangway."
+            },
+            {
+              "term": "Caribbean pioneer arrivals",
+              "clue": "RAF veterans, nurses, welders, and artisans who answered Britain's call for workers and laid the foundation of modern multicultural Britain."
+            }
+          ],
+          "title": "22 June 1948: HMT Empire Windrush Docks at Tilbury (1948)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 4,
+          "date": "Key Event",
+          "heading": "'No Blacks, No Irish, No Dogs': The Informal Colour Bar & Exploitation (1950s)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "'No Blacks, No Irish, No Dogs'",
+              "clue": "Notorious signs placed in boarding house windows by white private landlords in the 1950s enforcing housing discrimination."
+            },
+            {
+              "term": "informal colour bar",
+              "clue": "Unofficial racial discrimination in private housing, banking, pubs, and employment that operated without formal legislation."
+            },
+            {
+              "term": "Caribbean 'pardner' credit unions",
+              "clue": "Community rotating credit schemes where members pooled weekly savings to help families purchase freehold homes and bypass racist mortgage lenders."
+            }
+          ],
+          "model_sentence": "Confronting the humiliations of an <strong>informal colour bar</strong> and signs reading <strong>'No Blacks, No Irish, No Dogs'</strong>, immigrants organized <strong>Caribbean 'pardner' credit unions</strong> to achieve financial independence.",
+          "key_terms": [
+            {
+              "term": "'No Blacks, No Irish, No Dogs'",
+              "clue": "Notorious signs placed in boarding house windows by white private landlords in the 1950s enforcing housing discrimination."
+            },
+            {
+              "term": "informal colour bar",
+              "clue": "Unofficial racial discrimination in private housing, banking, pubs, and employment that operated without formal legislation."
+            },
+            {
+              "term": "Caribbean 'pardner' credit unions",
+              "clue": "Community rotating credit schemes where members pooled weekly savings to help families purchase freehold homes and bypass racist mortgage lenders."
+            }
+          ],
+          "title": "'No Blacks, No Irish, No Dogs': The Informal Colour Bar & Exploitation (1950s)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 5,
+          "date": "Key Event",
+          "heading": "The 1958 Notting Hill Riots, Claudia Jones & The Caribbean Carnival (1958–1959)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "1958 Notting Hill riots",
+              "clue": "Five nights of racist violence in London where white 'Teddy Boy' mobs attacked Black residents and homes with iron bars and petrol bombs."
+            },
+            {
+              "term": "Claudia Jones",
+              "clue": "Trinidad-born communist journalist and activist who founded the West Indian Gazette in Brixton to fight racial injustice and organize the Black community."
+            },
+            {
+              "term": "Notting Hill Carnival origins",
+              "clue": "The historic indoor Caribbean carnival organized by Claudia Jones at St Pancras Town Hall in January 1959 to heal racial divisions through music and culture."
+            }
+          ],
+          "model_sentence": "Following the racial terror of the <strong>1958 Notting Hill riots</strong>, visionary activist <strong>Claudia Jones</strong> founded the cultural showcase that marked the <strong>Notting Hill Carnival origins</strong>.",
+          "key_terms": [
+            {
+              "term": "1958 Notting Hill riots",
+              "clue": "Five nights of racist violence in London where white 'Teddy Boy' mobs attacked Black residents and homes with iron bars and petrol bombs."
+            },
+            {
+              "term": "Claudia Jones",
+              "clue": "Trinidad-born communist journalist and activist who founded the West Indian Gazette in Brixton to fight racial injustice and organize the Black community."
+            },
+            {
+              "term": "Notting Hill Carnival origins",
+              "clue": "The historic indoor Caribbean carnival organized by Claudia Jones at St Pancras Town Hall in January 1959 to heal racial divisions through music and culture."
+            }
+          ],
+          "title": "The 1958 Notting Hill Riots, Claudia Jones & The Caribbean Carnival (1958–1959)",
+          "dates": "Key Event"
         }
       ]
     },
@@ -4726,6 +5287,193 @@ export default {
           "a": "The St Pauls district",
           "explanation": "St Pauls was the cultural and social heart of Bristol’s Caribbean community."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "Key Event",
+          "heading": "The Bristol 'Colour Bar': The Omnibus Company & Trade Union Discrimination (1950s–1963)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Bristol Omnibus Company",
+              "clue": "The state-owned municipal bus operator in Bristol that openly enforced a racial colour bar against hiring Black or Asian bus crews."
+            },
+            {
+              "term": "commercial colour bar",
+              "clue": "The discriminatory hiring policy that relegated Black employees to low-paid garage cleaning while banning them from driving or conducting buses."
+            },
+            {
+              "term": "Transport and General Workers' Union",
+              "clue": "The union branch whose white bus crews voted to strike if management hired non-white workers, colluding with company discrimination."
+            }
+          ],
+          "model_sentence": "In early 1963, the <strong>Bristol Omnibus Company</strong> and the <strong>Transport and General Workers' Union</strong> colluded to maintain an exclusionary <strong>commercial colour bar</strong> on the city's bus routes.",
+          "key_terms": [
+            {
+              "term": "Bristol Omnibus Company",
+              "clue": "The state-owned municipal bus operator in Bristol that openly enforced a racial colour bar against hiring Black or Asian bus crews."
+            },
+            {
+              "term": "commercial colour bar",
+              "clue": "The discriminatory hiring policy that relegated Black employees to low-paid garage cleaning while banning them from driving or conducting buses."
+            },
+            {
+              "term": "Transport and General Workers' Union",
+              "clue": "The union branch whose white bus crews voted to strike if management hired non-white workers, colluding with company discrimination."
+            }
+          ],
+          "title": "The Bristol 'Colour Bar': The Omnibus Company & Trade Union Discrimination (1950s–1963)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 2,
+          "date": "Key Event",
+          "heading": "The Rejection of Guy Bailey & The West Indian Development Council (April 1963)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Paul Stephenson",
+              "clue": "26-year-old Black youth worker and community leader who orchestrated the undercover sting operation exposing Bristol's bus discrimination."
+            },
+            {
+              "term": "Guy Bailey job interview rejection",
+              "clue": "The immediate telephone cancellation of qualified 18-year-old Guy Bailey's interview once the company learned he was Black."
+            },
+            {
+              "term": "West Indian Development Council",
+              "clue": "The grassroots civil rights group founded by Stephenson, Roy Hackett, and Owen Henry that launched the Bristol Bus Boycott."
+            }
+          ],
+          "model_sentence": "When <strong>Paul Stephenson</strong> exposed the blatant <strong>Guy Bailey job interview rejection</strong>, the <strong>West Indian Development Council</strong> voted to mobilize a direct-action campaign.",
+          "key_terms": [
+            {
+              "term": "Paul Stephenson",
+              "clue": "26-year-old Black youth worker and community leader who orchestrated the undercover sting operation exposing Bristol's bus discrimination."
+            },
+            {
+              "term": "Guy Bailey job interview rejection",
+              "clue": "The immediate telephone cancellation of qualified 18-year-old Guy Bailey's interview once the company learned he was Black."
+            },
+            {
+              "term": "West Indian Development Council",
+              "clue": "The grassroots civil rights group founded by Stephenson, Roy Hackett, and Owen Henry that launched the Bristol Bus Boycott."
+            }
+          ],
+          "title": "The Rejection of Guy Bailey & The West Indian Development Council (April 1963)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 3,
+          "date": "Key Event",
+          "heading": "Students, Churches & Community Solidarity: The Citywide Boycott (May 1963)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "citywide bus boycott",
+              "clue": "The four-month peaceful boycott launched on 30 April 1963 where thousands of Bristolians refused to ride the municipal buses."
+            },
+            {
+              "term": "Bristol University student solidarity",
+              "clue": "Hundreds of student demonstrators who joined picket lines and marched through city streets carrying protest placards."
+            },
+            {
+              "term": "mass non-violent non-cooperation",
+              "clue": "The direct-action strategy inspired by Martin Luther King Jr.'s Montgomery Bus Boycott that applied intense moral and economic pressure."
+            }
+          ],
+          "model_sentence": "Relying on <strong>mass non-violent non-cooperation</strong>, the <strong>citywide bus boycott</strong> gained nationwide support bolstered by enthusiastic <strong>Bristol University student solidarity</strong>.",
+          "key_terms": [
+            {
+              "term": "citywide bus boycott",
+              "clue": "The four-month peaceful boycott launched on 30 April 1963 where thousands of Bristolians refused to ride the municipal buses."
+            },
+            {
+              "term": "Bristol University student solidarity",
+              "clue": "Hundreds of student demonstrators who joined picket lines and marched through city streets carrying protest placards."
+            },
+            {
+              "term": "mass non-violent non-cooperation",
+              "clue": "The direct-action strategy inspired by Martin Luther King Jr.'s Montgomery Bus Boycott that applied intense moral and economic pressure."
+            }
+          ],
+          "title": "Students, Churches & Community Solidarity: The Citywide Boycott (May 1963)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 4,
+          "date": "Key Event",
+          "heading": "High-Level Political Intervention: Tony Benn & The Company's Surrender (August 1963)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Tony Benn political intervention",
+              "clue": "Local Bristol South East Labour MP who championed the boycott, condemned racial discrimination, and brought the issue to national party leaders."
+            },
+            {
+              "term": "Bristol Omnibus Company surrender",
+              "clue": "The capitulation of company management on 28 August 1963, formally ending the colour bar and announcing equal employment opportunities."
+            },
+            {
+              "term": "first Black bus conductor hired",
+              "clue": "Pakistani Sikh worker Raghbir Singh and Jamaican Norman Samuels being employed on Bristol buses in September 1963, cementing the victory."
+            }
+          ],
+          "model_sentence": "Propelled by high-level <strong>Tony Benn political intervention</strong>, the <strong>Bristol Omnibus Company surrender</strong> on 28 August 1963 led directly to the <strong>first Black bus conductor hired</strong> weeks later.",
+          "key_terms": [
+            {
+              "term": "Tony Benn political intervention",
+              "clue": "Local Bristol South East Labour MP who championed the boycott, condemned racial discrimination, and brought the issue to national party leaders."
+            },
+            {
+              "term": "Bristol Omnibus Company surrender",
+              "clue": "The capitulation of company management on 28 August 1963, formally ending the colour bar and announcing equal employment opportunities."
+            },
+            {
+              "term": "first Black bus conductor hired",
+              "clue": "Pakistani Sikh worker Raghbir Singh and Jamaican Norman Samuels being employed on Bristol buses in September 1963, cementing the victory."
+            }
+          ],
+          "title": "High-Level Political Intervention: Tony Benn & The Company's Surrender (August 1963)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 5,
+          "date": "Key Event",
+          "heading": "Harold Wilson, The Race Relations Acts & British Civil Rights Legacy (1965–1968)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Race Relations Act 1965",
+              "clue": "Harold Wilson's landmark legislation—the first of its kind in British history—that legally banned racial discrimination in public accommodations."
+            },
+            {
+              "term": "statutory ban on racial discrimination",
+              "clue": "The legal prohibition against refusing services or denying access to hotels, public transport, and restaurants based on race."
+            },
+            {
+              "term": "British civil rights turning point",
+              "clue": "The Bristol Boycott's historic legacy in forcing Parliament to replace customary prejudice with enforceable statutory civil rights protections."
+            }
+          ],
+          "model_sentence": "Recognised as a pivotal <strong>British civil rights turning point</strong>, the Bristol campaign directly pressured Parliament to enact the historic <strong>Race Relations Act 1965</strong>, establishing a <strong>statutory ban on racial discrimination</strong>.",
+          "key_terms": [
+            {
+              "term": "Race Relations Act 1965",
+              "clue": "Harold Wilson's landmark legislation—the first of its kind in British history—that legally banned racial discrimination in public accommodations."
+            },
+            {
+              "term": "statutory ban on racial discrimination",
+              "clue": "The legal prohibition against refusing services or denying access to hotels, public transport, and restaurants based on race."
+            },
+            {
+              "term": "British civil rights turning point",
+              "clue": "The Bristol Boycott's historic legacy in forcing Parliament to replace customary prejudice with enforceable statutory civil rights protections."
+            }
+          ],
+          "title": "Harold Wilson, The Race Relations Acts & British Civil Rights Legacy (1965–1968)",
+          "dates": "Key Event"
+        }
       ]
     },
     {
@@ -5850,7 +6598,200 @@ export default {
           "a": "Threads",
           "explanation": "Threads traumatized a generation with its unflinching depiction of nuclear winter and medieval regression."
         }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "date": "Key Event",
+          "heading": "Under the Mushroom Cloud: British Deterrence & The Hydrogen Bomb (1952–1957)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "British nuclear deterrent",
+              "clue": "The development of an independent British atomic and hydrogen bomb stockpile to maintain great-power status alongside the US and USSR."
+            },
+            {
+              "term": "Operation Hurricane (1952)",
+              "clue": "Britain's first atomic bomb test conducted off Western Australia, making Britain the world's third nuclear power."
+            },
+            {
+              "term": "Aldermaston CND marches",
+              "clue": "The famous annual four-day, 52-mile protest walks from London to the Atomic Weapons Research Establishment in Berkshire."
+            }
+          ],
+          "model_sentence": "While governments justified the <strong>British nuclear deterrent</strong> following <strong>Operation Hurricane (1952)</strong>, widespread public fear sparked the massive <strong>Aldermaston CND marches</strong>.",
+          "key_terms": [
+            {
+              "term": "British nuclear deterrent",
+              "clue": "The development of an independent British atomic and hydrogen bomb stockpile to maintain great-power status alongside the US and USSR."
+            },
+            {
+              "term": "Operation Hurricane (1952)",
+              "clue": "Britain's first atomic bomb test conducted off Western Australia, making Britain the world's third nuclear power."
+            },
+            {
+              "term": "Aldermaston CND marches",
+              "clue": "The famous annual four-day, 52-mile protest walks from London to the Atomic Weapons Research Establishment in Berkshire."
+            }
+          ],
+          "title": "Under the Mushroom Cloud: British Deterrence & The Hydrogen Bomb (1952–1957)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 2,
+          "date": "Key Event",
+          "heading": "The Peace Movement: Gerald Holtom, CND & The Aldermaston Marches (1958–1960)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Campaign for Nuclear Disarmament (CND)",
+              "clue": "The mass peace movement founded in 1958 by Bertrand Russell and Canon John Collins demanding unilateral British nuclear disarmament."
+            },
+            {
+              "term": "Gerald Holtom peace symbol",
+              "clue": "The iconic semaphore-based emblem (combining N and D for Nuclear Disarmament) created in 1958 that became a universal global symbol for peace."
+            },
+            {
+              "term": "annual Aldermaston protest marches",
+              "clue": "Mass Easter weekend demonstrations drawing over 100,000 citizens marching peacefully through the English countryside."
+            }
+          ],
+          "model_sentence": "Founded to demand unilateral disarmament, the <strong>Campaign for Nuclear Disarmament (CND)</strong> adopted the timeless <strong>Gerald Holtom peace symbol</strong> and organized the <strong>annual Aldermaston protest marches</strong>.",
+          "key_terms": [
+            {
+              "term": "Campaign for Nuclear Disarmament (CND)",
+              "clue": "The mass peace movement founded in 1958 by Bertrand Russell and Canon John Collins demanding unilateral British nuclear disarmament."
+            },
+            {
+              "term": "Gerald Holtom peace symbol",
+              "clue": "The iconic semaphore-based emblem (combining N and D for Nuclear Disarmament) created in 1958 that became a universal global symbol for peace."
+            },
+            {
+              "term": "annual Aldermaston protest marches",
+              "clue": "Mass Easter weekend demonstrations drawing over 100,000 citizens marching peacefully through the English countryside."
+            }
+          ],
+          "title": "The Peace Movement: Gerald Holtom, CND & The Aldermaston Marches (1958–1960)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 3,
+          "date": "Key Event",
+          "heading": "Secret Bunkers & Subterranean Watch: The Royal Observer Corps at York (1961–1970)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "Royal Observer Corps (ROC)",
+              "clue": "A civilian defence organization that operated a secret network of 1,563 subterranean concrete monitoring posts across Great Britain."
+            },
+            {
+              "term": "subterranean monitoring posts",
+              "clue": "Blast-proof underground bunkers designed for volunteer observers to survive a thermonuclear attack and record nuclear detonations."
+            },
+            {
+              "term": "nuclear fallout radiation tracking",
+              "clue": "The critical task of plotting radioactive fallout plumes across the UK using fixed-survey meters to guide government survival plans."
+            }
+          ],
+          "model_sentence": "Trained in <strong>nuclear fallout radiation tracking</strong>, dedicated volunteers of the <strong>Royal Observer Corps (ROC)</strong> staffed over 1,500 <strong>subterranean monitoring posts</strong> during the Cold War.",
+          "key_terms": [
+            {
+              "term": "Royal Observer Corps (ROC)",
+              "clue": "A civilian defence organization that operated a secret network of 1,563 subterranean concrete monitoring posts across Great Britain."
+            },
+            {
+              "term": "subterranean monitoring posts",
+              "clue": "Blast-proof underground bunkers designed for volunteer observers to survive a thermonuclear attack and record nuclear detonations."
+            },
+            {
+              "term": "nuclear fallout radiation tracking",
+              "clue": "The critical task of plotting radioactive fallout plumes across the UK using fixed-survey meters to guide government survival plans."
+            }
+          ],
+          "title": "Secret Bunkers & Subterranean Watch: The Royal Observer Corps at York (1961–1970)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 4,
+          "date": "Key Event",
+          "heading": "'Protect and Survive': The Home Office Whitewash & The Inner Core Shelter (1980)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "'Protect and Survive' pamphlet",
+              "clue": "The infamous Home Office booklet published in 1980 instructing households on how to survive a nuclear attack using cardboard and sandbags."
+            },
+            {
+              "term": "'inner core' refuge mockery",
+              "clue": "Public derision directed at government instructions to build makeshift shelter cores by leaning doors against interior walls inside homes."
+            },
+            {
+              "term": "Home Office civil defence propaganda",
+              "clue": "Official booklets and terrifying television public information films that downplayed the apocalyptic reality of thermonuclear warfare."
+            }
+          ],
+          "model_sentence": "Widespread ridicule greeted <strong>Home Office civil defence propaganda</strong> when the 1980 <strong>'Protect and Survive' pamphlet</strong> prescribed an absurd <strong>'inner core' refuge mockery</strong>.",
+          "key_terms": [
+            {
+              "term": "'Protect and Survive' pamphlet",
+              "clue": "The infamous Home Office booklet published in 1980 instructing households on how to survive a nuclear attack using cardboard and sandbags."
+            },
+            {
+              "term": "'inner core' refuge mockery",
+              "clue": "Public derision directed at government instructions to build makeshift shelter cores by leaning doors against interior walls inside homes."
+            },
+            {
+              "term": "Home Office civil defence propaganda",
+              "clue": "Official booklets and terrifying television public information films that downplayed the apocalyptic reality of thermonuclear warfare."
+            }
+          ],
+          "title": "'Protect and Survive': The Home Office Whitewash & The Inner Core Shelter (1980)",
+          "dates": "Key Event"
+        },
+        {
+          "step": 5,
+          "date": "Key Event",
+          "heading": "'Protest and Survive': E. P. Thompson, Nuclear Satire & Greenham Common (1980–1983)",
+          "focus_clue": "Why was this turning point critical?",
+          "words": [
+            {
+              "term": "'Protest and Survive' counter-manifesto",
+              "clue": "Historian E. P. Thompson's blistering anti-nuclear pamphlet denouncing official civil defence advice as lethal deception."
+            },
+            {
+              "term": "historian E. P. Thompson",
+              "clue": "Prominent socialist historian and CND leader whose passionate writings helped mobilize a new generation against nuclear cruise missiles."
+            },
+            {
+              "term": "Greenham Common Women's Peace Camp",
+              "clue": "The non-violent direct-action protest camp established in 1981 by women encircling the RAF base holding American nuclear cruise missiles."
+            }
+          ],
+          "model_sentence": "Reinvigorated by <strong>historian E. P. Thompson</strong> and his bestselling <strong>'Protest and Survive' counter-manifesto</strong>, activists established the <strong>Greenham Common Women's Peace Camp</strong> to blockade nuclear missiles.",
+          "key_terms": [
+            {
+              "term": "'Protest and Survive' counter-manifesto",
+              "clue": "Historian E. P. Thompson's blistering anti-nuclear pamphlet denouncing official civil defence advice as lethal deception."
+            },
+            {
+              "term": "historian E. P. Thompson",
+              "clue": "Prominent socialist historian and CND leader whose passionate writings helped mobilize a new generation against nuclear cruise missiles."
+            },
+            {
+              "term": "Greenham Common Women's Peace Camp",
+              "clue": "The non-violent direct-action protest camp established in 1981 by women encircling the RAF base holding American nuclear cruise missiles."
+            }
+          ],
+          "title": "'Protest and Survive': E. P. Thompson, Nuclear Satire & Greenham Common (1980–1983)",
+          "dates": "Key Event"
+        }
       ]
     }
-  ]
+  ],
+  "edition": "2026.1",
+  "keyStage": "KS3",
+  "yearGroup": "Year 9",
+  "year_group": "Year 9",
+  "category": "KS3",
+  "key_stage": "KS3"
 };
