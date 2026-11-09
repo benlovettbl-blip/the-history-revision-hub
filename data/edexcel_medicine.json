@@ -1721,7 +1721,25 @@
       "extra_videos": [],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Supernatural & Religious Explanations",
-      "inquiry_question": "Why did the medieval Catholic Church maintain that sin, celestial alignment, and divine will were the ultimate causes of sickness and pestilence?"
+      "inquiry_question": "Why did the medieval Catholic Church maintain that sin, celestial alignment, and divine will were the ultimate causes of sickness and pestilence?",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], why did the medieval Catholic Church teach that disease was sent by God?",
+          "answer": "As a divine punishment for personal sins or a test of faith from God."
+        },
+        {
+          "question": "Using paragraph [2.1], how were lepers treated in medieval society?",
+          "answer": "They were cast out of towns into leper houses (lazar houses) and had to ring a bell to warn people away."
+        },
+        {
+          "question": "According to paragraph [3.1], how did medieval physicians use the Zodiac Man diagram?",
+          "answer": "To check the alignment of stars and planets before performing operations or bloodletting."
+        },
+        {
+          "question": "Using paragraph [5.1], why did the medieval Church ban dissection and oppose scientific challenge?",
+          "answer": "To protect Galen's teachings and Christian doctrine, which held that the human body was created by God and must remain intact."
+        }
+      ]
     },
     {
       "id": "lesson_1_2",
@@ -2813,7 +2831,25 @@
       "extra_videos": [],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Rational Explanations & Ancient Authorities",
-      "inquiry_question": "How did Hippocrates and Galen provide medieval physicians with a rational, secular framework for explaining disease, and why did the Church protect their ideas for centuries?"
+      "inquiry_question": "How did Hippocrates and Galen provide medieval physicians with a rational, secular framework for explaining disease, and why did the Church protect their ideas for centuries?",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], why was Hippocrates important for medical history?",
+          "answer": "He developed the first natural, rational explanations for disease rather than blaming gods or spirits."
+        },
+        {
+          "question": "Using paragraph [2.1], what were the Four Humours that medieval doctors believed controlled health?",
+          "answer": "Blood, phlegm, yellow bile (choler), and black bile."
+        },
+        {
+          "question": "According to paragraph [3.1], how did Galen’s Theory of Opposites treat an excess of cold, wet phlegm?",
+          "answer": "By prescribing hot and dry remedies, such as eating hot peppers or warm broths."
+        },
+        {
+          "question": "Using paragraph [4.1], what was uroscopy and how did doctors use it to diagnose illness?",
+          "answer": "Examining the colour, smell, and taste of a patient’s urine using a urine chart to determine humoural balance."
+        }
+      ]
     },
     {
       "id": "lesson_1_3",
@@ -3918,7 +3954,25 @@
       "extra_videos": [],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Approaches to Prevention & Treatment",
-      "inquiry_question": "How did ordinary medieval people attempt to prevent and treat disease through a combination of humoral rebalancing, herbal electuaries, and spiritual rituals?"
+      "inquiry_question": "How did ordinary medieval people attempt to prevent and treat disease through a combination of humoral rebalancing, herbal electuaries, and spiritual rituals?",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what spiritual treatments did medieval people use to seek healing?",
+          "answer": "Praying, fasting, going on pilgrimages to holy shrines, and touching holy relics."
+        },
+        {
+          "question": "Using paragraph [2.1], what was phlebotomy (bloodletting) and why was it performed?",
+          "answer": "Removing blood using cupping, leeches, or opening a vein to restore the balance of the Four Humours."
+        },
+        {
+          "question": "According to paragraph [3.1], why did medieval physicians prescribe emetics and laxatives?",
+          "answer": "To purge toxic humours from the stomach and bowels through vomiting and emptying the bowels."
+        },
+        {
+          "question": "Using paragraph [4.1], what was theriac and why was it popular in the Middle Ages?",
+          "answer": "A complex herbal remedy containing up to seventy ingredients used as a universal cure against poison and plague."
+        }
+      ]
     },
     {
       "id": "lesson_1_4",
@@ -5024,7 +5078,25 @@
       "extra_videos": [],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Medical Providers & Monastic Hospitals",
-      "inquiry_question": "Who provided medical care in medieval England, and why did monastic hospitals focus on spiritual salvation and physical comfort rather than medical cure?"
+      "inquiry_question": "Who provided medical care in medieval England, and why did monastic hospitals focus on spiritual salvation and physical comfort rather than medical cure?",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], why did university-trained physicians rarely touch their patients?",
+          "answer": "They focused on book learning of Galen and Hippocrates, leaving manual surgical procedures to barber-surgeons."
+        },
+        {
+          "question": "Using paragraph [2.1], what did apothecaries sell to medieval customers?",
+          "answer": "Herbal medicines, ointments, spices, and simples mixed according to traditional recipes."
+        },
+        {
+          "question": "According to paragraph [3.1], what operations were barber-surgeons qualified to perform?",
+          "answer": "Bloodletting, tooth pulling, lancing boils, setting broken bones, and amputating limbs."
+        },
+        {
+          "question": "Using paragraph [4.1], what was the primary purpose of medieval monastic hospitals?",
+          "answer": "To provide spiritual care, shelter, and warmth (\"care not cure\"), rather than treating or curing disease."
+        }
+      ]
     },
     {
       "id": "lesson_1_5",
@@ -6137,7 +6209,25 @@
       "extra_videos": [],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Case Study: The Black Death (1348–1349)",
-      "inquiry_question": "How did fourteenth-century Britain attempt to understand and respond to the catastrophic mortality of the Black Death, and why did existing medical theories fail?"
+      "inquiry_question": "How did fourteenth-century Britain attempt to understand and respond to the catastrophic mortality of the Black Death, and why did existing medical theories fail?",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], in what year and at which Dorset port did the Black Death arrive in England?",
+          "answer": "1348 at Melcombe Regis (Weymouth), carried by flea-infested black rats on merchant trading ships."
+        },
+        {
+          "question": "Using paragraph [2.1], what were the two main forms of plague and their terrifying symptoms?",
+          "answer": "Bubonic plague (foul-smelling black buboes in groin and armpits) and pneumonic plague (fatal lung infection)."
+        },
+        {
+          "question": "According to paragraph [3.1], what desperate treatments did medieval people try against the plague?",
+          "answer": "Strapping live toads or chickens to buboes, drinking vinegar, bleeding, and whipping themselves (flagellants)."
+        },
+        {
+          "question": "Using paragraph [5.1], what proportion of England’s population was killed by the Black Death?",
+          "answer": "Between one-third and one-half (roughly 30% to 50%) of England's entire population."
+        }
+      ]
     },
     {
       "id": "lesson_2_1",
