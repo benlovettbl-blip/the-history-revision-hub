@@ -25,7 +25,7 @@
  *    - Set 4: Cambrai 1917 (Blood Depots & Thomas Splints) (NEW)
  * 5. Reference & Masterclass (Pages 30–32):
  *    - Page 30: Western Front Primary Source Provenance Typology & Utility Matrix (NEW)
- *    - Page 31: Official 2026 Pearson Edexcel Examining Masterclass: Secrets of Grade 9 Execution (NEW)
+ *    - Page 31: Master Assessment & Examination Strategy Guide: Secrets of Grade 9 Execution (NEW)
  *    - Page 32: Back Cover — Full-Page Pearson Edexcel Specification Audit & Revision Checklist
  * 6. Ruled Lines Budget:
  *    - All essay paragraphs strictly 6 lines each (18 lines for Q4; 24 lines for Q5/6).
@@ -3791,7 +3791,7 @@ function generateMasterHtml() {
             <div class="page-header">
                 <div class="header-left">
                     <h2>Section A &amp; Section B Examination Mastery</h2>
-                    <p>Official 2026 Pearson Edexcel Examining Masterclass · Option 11 Examiner Protocols</p>
+                    <p>Master Assessment & Examination Strategy Guide · Option 11 Examiner Protocols</p>
                 </div>
                 <span class="header-tag">Examiner Masterclass · Page 31</span>
             </div>

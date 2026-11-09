@@ -293,7 +293,7 @@ Object.keys(RECALIBRATED_FEATURES).forEach(lessonId => {
   // Build Q1 Container
   const q1Container = `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 12px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q1 Feature Drill [2 Marks])</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q1 Feature Drill [2 Marks])</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1 Mark:</strong> Identifies a valid feature (fact).<br><strong>2 Marks:</strong> Feature identified (1 mark) AND supported by a specific piece of evidence/detail (1 mark).</p>
   </div>
   <div style="background: #fffbeb; border: 1.5px solid #fef3c7; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px;">
@@ -326,7 +326,7 @@ Object.keys(RECALIBRATED_FEATURES).forEach(lessonId => {
   // Build Q2 Container
   const q2Container = `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 12px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q1 Feature Drill [2 Marks])</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q1 Feature Drill [2 Marks])</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1 Mark:</strong> Identifies a valid feature (fact).<br><strong>2 Marks:</strong> Feature identified (1 mark) AND supported by a specific piece of evidence/detail (1 mark).</p>
   </div>
   <div style="background: #fffbeb; border: 1.5px solid #fef3c7; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px;">

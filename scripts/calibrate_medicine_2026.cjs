@@ -6,11 +6,11 @@ const mockBankPath = path.join(__dirname, '../src/engine/mock_exam_bank_data.js'
 let mockBankCode = fs.readFileSync(mockBankPath, 'utf8');
 
 // The June 2026 calibrated questions for Medicine:
-const med26Questions = {
+const medicineExamQuestions = {
   // Lesson 5.4: RAMC & Evacuation Chain
   lesson_5_4: [
     {
-      id: "med26_q1a_ccs",
+      id: "med_exam_q1a_ccs",
       mockId: "med_june_2026_live",
       qCode: "1(a)",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -23,7 +23,7 @@ const med26Questions = {
       sourceExtract: "",
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Marker Guidance</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Guidance</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>Reward:</strong> Triage system (3 tiers), surgical facilities (operating rooms to prevent gangrene), mobile X-ray units, bed capacity (200–500 expanding to thousands), or location situated <em>several miles behind the front line</em> (out of artillery range, near transport lines).<br><strong>DO NOT REWARD (Zero Credit):</strong> Stating that the CCS was "on the frontline" or in the trenches (a geographical error confusing CCS with RAP).</p>
   </div>
 
@@ -58,7 +58,7 @@ const med26Questions = {
       mockUrl: "/units/edexcel_medicine/"
     },
     {
-      id: "med26_q2a_utility",
+      id: "med_exam_q2a_utility",
       mockId: "med_june_2026_live",
       qCode: "2(a)",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -81,14 +81,14 @@ const med26Questions = {
           <div style="font-weight: 800; color: #1e3a8a; margin-bottom: 4px; text-transform: uppercase; font-size: 0.82rem;">Source B: Official War Photograph published in the Daily Mail (July 1916)</div>
           <div style="font-size: 0.82rem; color: #64748b; margin-bottom: 8px; font-style: italic;">An official war photograph showing British soldiers pushing a motorised ambulance through deep mud during the Battle of the Somme, July 1916.</div>
           <div style="text-align: center; margin: 10px 0;">
-            <img src="/images/med26/source_b_ambulance_somme_1916.jpg" alt="Source B: Soldiers pushing motorised ambulance on the Somme" style="max-height: 250px; border-radius: 6px; border: 1px solid #cbd5e1; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: inline-block;">
+            <img src="/images/source_b_ambulance_somme_1916.jpg" alt="Source B: Soldiers pushing motorised ambulance on the Somme" style="max-height: 250px; border-radius: 6px; border: 1px solid #cbd5e1; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: inline-block;">
           </div>
           <div style="font-size: 0.8rem; color: #64748b; text-align: center;">Official War Photograph / Daily Mail National Press Series (CBW / Alamy / Crown Copyright Expired).</div>
         </div>
       </div>`,
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (AO3 Best-Fit)</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (AO3 Best-Fit)</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1. Zero Comparison Rule:</strong> Do NOT compare Source A and B; they are marked independently.<br><strong>2. The 'No-Knowledge' Trap (Level 2 Ceiling):</strong> Evaluating provenance without deploying qualitative historical knowledge caps the answer at Level 2 (max 5 marks).<br><strong>3. Level 3 Benchmark:</strong> Content AND provenance of both sources evaluated with precise contextual knowledge (e.g. 57,000 casualties on day 1 of the Somme, waterlogged craters requiring 6–8 bearers per stretcher, heavy ambulance chassis bogged down in mud).</p>
   </div>
 
@@ -122,7 +122,7 @@ const med26Questions = {
       mockUrl: "/units/edexcel_medicine/"
     },
     {
-      id: "med26_q2b_followup",
+      id: "med_exam_q2b_followup",
       mockId: "med_june_2026_live",
       qCode: "2(b)",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -135,7 +135,7 @@ const med26Questions = {
       sourceExtract: "",
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q2b 4-Part Precision)</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q2b 4-Part Precision)</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>Part (a) Detail:</strong> Must select a valid detail from Source A on transport problems.<br><strong>Part (b) Question:</strong> Must directly investigate the wider enquiry (problems of transporting wounded). Questions on treatments or wounds score 0.<br><strong>Part (c) Source Type:</strong> Must name an existing, specific historical record. Writing <em>'RAMC records'</em> or <em>'Conduct an interview'</em> scores 0.<br><strong>Part (d) Explanation:</strong> Must explain how the source answers the specific question.</p>
   </div>
 
@@ -164,7 +164,7 @@ const med26Questions = {
   // Lesson 5.5: Medical Advances & Western Front Experiments
   lesson_5_5: [
     {
-      id: "med26_q1b_blood_storage",
+      id: "med_exam_q1b_blood_storage",
       mockId: "med_june_2026_live",
       qCode: "1(b)",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -177,7 +177,7 @@ const med26Questions = {
       sourceExtract: "",
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Marker Guidance</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Guidance</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>Reward:</strong> Chemical anticoagulants (sodium citrate 1914, citrate-glucose 1916), cooling/refrigeration (ice chests), sterile glass storage bottles, or the first blood bank at Cambrai (Oswald Robertson 1917).<br><strong>DO NOT REWARD (Zero Credit):</strong> General blood transfusion knowledge (e.g. Landsteiner blood groups or direct syringe transfusions) <em>without an explicit link to blood storage</em>.</p>
   </div>
 
@@ -216,7 +216,7 @@ const med26Questions = {
   // Lesson 2.3: Renaissance Prevention & The Great Plague (1665)
   lesson_2_3: [
     {
-      id: "med26_q3_prevention",
+      id: "med_exam_q3_prevention",
       mockId: "med_june_2026_live",
       qCode: "3",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -229,7 +229,7 @@ const med26Questions = {
       sourceExtract: "",
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q3 Dual-Period Requirement)</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q3 Dual-Period Requirement)</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>The Single-Period Trap:</strong> Answers providing detailed knowledge of only ONE period are strictly capped at 2 marks. Full marks (4/4) require an explicit explanation of difference supported by accurate historical evidence from BOTH periods.</p>
   </div>
 
@@ -268,7 +268,7 @@ const med26Questions = {
   // Lesson 3.3: Hospital Care, Florence Nightingale & Surgery Advances
   lesson_3_3: [
     {
-      id: "med26_q4_hospitals",
+      id: "med_exam_q4_hospitals",
       mockId: "med_june_2026_live",
       qCode: "4",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -284,7 +284,7 @@ const med26Questions = {
       sourceExtract: "",
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (The Rigid 3-Aspects Ceiling)</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (The Rigid 3-Aspects Ceiling)</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>The 3-Aspects Rule:</strong> Candidates MUST address at least <strong>three distinct aspects of content</strong> to access Level 4 (10–12 marks). Covering only the two stimulus points caps the response at Level 3. No introduction or conclusion is required; causes do not need to be prioritized.</p>
   </div>
 
@@ -324,7 +324,7 @@ const med26Questions = {
   // Lesson 1.1: Medieval Supernatural & Religious Explanations
   lesson_1_1: [
     {
-      id: "med26_q5_medieval_religion",
+      id: "med_exam_q5_medieval_religion",
       mockId: "med_june_2026_live",
       qCode: "5",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -340,7 +340,7 @@ const med26Questions = {
       sourceExtract: "",
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q5/Q6 Judgement Essays)</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q5/Q6 Judgement Essays)</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1. Three Aspects Required for Level 4:</strong> Must deploy at least three aspects of content (e.g. Church/religion, miasma/astrology, Four Humours/rational).<br><strong>2. Judgement:</strong> Can be conveyed internally through paragraph evaluation; separate conclusion not mandatory.<br><strong>3. SPaG (4 Marks):</strong> Requires accurate deployment of specialist historical terms (etiology, hegemony, phlebotomy, miasma, monotheism).</p>
   </div>
 
@@ -381,7 +381,7 @@ const med26Questions = {
   // Lesson 4.1: Science & Technology in Modern Medicine
   lesson_4_1: [
     {
-      id: "med26_q6_science_tech",
+      id: "med_exam_q6_science_tech",
       mockId: "med_june_2026_live",
       qCode: "6",
       mockTitle: "Official Edexcel GCSE June 2026 Live Exam Paper (1HI0/11)",
@@ -397,7 +397,7 @@ const med26Questions = {
       sourceExtract: "",
       modelAnswer: `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q5/Q6 Judgement Essays)</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q5/Q6 Judgement Essays)</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1. Three Aspects Required for Level 4:</strong> Must deploy at least three aspects (e.g. high-tech surgery/diagnostics, scientific pharmacology/DNA genetics, and state NHS infrastructure).<br><strong>2. Interdependence Judgement:</strong> Explains how technological breakthroughs were dependent upon state funding and democratic healthcare delivery to achieve real progress.</p>
   </div>
 
@@ -441,5 +441,5 @@ const med26Questions = {
 
 console.log('June 2026 calibrated questions prepared.');
 
-module.exports = { med26Questions };
+module.exports = { medicineExamQuestions };
 

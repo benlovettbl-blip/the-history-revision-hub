@@ -92,7 +92,7 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         score: "5 / 8 Marks",
         level: "Level 2 (No-Knowledge Trap)",
         text: `<p>The source is useful because it provides direct details about the severe operational conditions faced by medical personnel. The author describes the terrain and the difficulties of treating casualties under fire, which shows the physical danger involved.<br><br>Furthermore, the source is useful in its provenance because it was produced during the First World War by an eyewitness. However, it is limited because it only reflects one specific sector and cannot tell us about medical treatment across the entire Western Front.</p>`,
-        verdict: "AO3 (5 marks). Level 2 maximum. Evaluates source content and makes sensible provenance observations, but falls into the standardisation 'No-Knowledge Trap' by failing to deploy qualitative contextual knowledge to interrogate or corroborate the source's claims."
+        verdict: "AO3 (5 marks). Level 2 maximum. Evaluates source content and makes sensible provenance observations, but falls into the mark scheme 'No-Knowledge Trap' by failing to deploy qualitative contextual knowledge to interrogate or corroborate the source's claims."
       },
       tier_8m: {
         title: "8/8 Grade 9 Exam ★",
@@ -100,7 +100,7 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         level: "Level 3 Top (Content + Provenance + Context)",
         badge: "Edexcel Benchmark",
         text: cleanExisting,
-        verdict: "AO3 (8 marks). Full marks awarded. Comprehensively evaluates both content and provenance using precise historical knowledge. Strictly obeys the independent evaluation and zero-comparison standardisation rules."
+        verdict: "AO3 (8 marks). Full marks awarded. Comprehensively evaluates both content and provenance using precise historical knowledge. Strictly obeys the independent evaluation and zero-comparison mark scheme criteria."
       },
       tier_10m: {
         title: "Level 10 Scholar 🚀",
@@ -121,12 +121,12 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         score: "2 / 4 Marks",
         level: "Level 1 (Generic Source Trap)",
         text: `<p><strong>Detail in the source that I would follow up:</strong><br>The high number of casualties and the difficulty of treating them quickly.<br><br><strong>Question I would ask:</strong><br>How many soldiers were treated by the medical staff in total?<br><br><strong>What type of source I would use:</strong><br>RAMC records or ask a veteran soldier.<br><br><strong>How this might help answer my question:</strong><br>It would give me numbers about casualties.</p>`,
-        verdict: "AO3 (2 marks). Selects a valid detail and asks a plausible question (2 marks). However, 'RAMC records' is a generic non-specific category and 'ask a veteran soldier' is historically invalid, scoring 0 marks under standardisation rules."
+        verdict: "AO3 (2 marks). Selects a valid detail and asks a plausible question (2 marks). However, 'RAMC records' is a generic non-specific category and 'ask a veteran soldier' is historically invalid, scoring 0 marks under official mark scheme criteria."
       },
       tier_4m: {
         title: "4/4 Grade 9 Exam ★",
         score: "4 / 4 Marks",
-        level: "Level 2 Full Marks (Standardisation Benchmark)",
+        level: "Level 2 Full Marks (Official Mark Scheme Benchmark)",
         badge: "Edexcel Benchmark",
         text: cleanExisting,
         verdict: "AO3 (4 marks). Full marks awarded. Precise detail quoted, question is tightly focused on evacuation/treatment logistics, source names a specific contemporary document (e.g. RAMC Field Ambulance War Diary or Battalion Medical Officer Casebook), and explanation directly demonstrates historical utility."

@@ -488,7 +488,7 @@ function updateMockExamBankData() {
   // 1. Upgrade Medicine Lesson 2.2
   const medQ1Model = `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q3 Similarity / Difference [4 Marks])</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q3 Similarity / Difference [4 Marks])</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1. Valid Comparison:</strong> Must identify a clear comparative criterion (e.g. bedside empirical observation vs humoural uroscopy).<br><strong>2. Evidence from BOTH Periods:</strong> Level 2 (3–4 marks) strictly requires specific historical detail from both the medieval and Renaissance periods.<br><strong>3. The One-Sided Trap:</strong> Describing Sydenham without specific medieval knowledge is capped at Level 1 (maximum 2 marks).</p>
   </div>
 
@@ -521,7 +521,7 @@ function updateMockExamBankData() {
 
   const medQ2Model = `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q4 12-Mark Causation)</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q4 12-Mark Causation)</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1. Three Distinct Aspects:</strong> Must deploy at least three aspects of content (e.g. bedside observation, disease nosology/classification, practical therapeutics).<br><strong>2. PEEL Structure:</strong> Point, Evidence (dates, Latin texts, specific diseases), Explanation of medical significance, Link.<br><strong>3. Sustained Analysis:</strong> Must consistently explain <em>why</em> Sydenham was significant in advancing British medicine rather than giving a biographical story.</p>
   </div>
 
@@ -581,7 +581,7 @@ function updateMockExamBankData() {
     // Build Q1 Model
     const q1Container = `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 12px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q1 Feature Drill [2 Marks])</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q1 Feature Drill [2 Marks])</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1 Mark:</strong> Identifies a valid general feature without specific supporting historical detail.<br><strong>2 Marks:</strong> Feature clearly identified AND supported by precise historical detail (names, dates, acts, numbers).</p>
   </div>
   <div style="background: #fffbeb; border: 1.5px solid #fef3c7; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px;">
@@ -613,7 +613,7 @@ function updateMockExamBankData() {
     // Build Q2 Model
     const q2Container = `<div class="tiered-model-container">
   <div style="background: #f1f5f9; border-left: 4px solid #0284c7; padding: 10px 14px; border-radius: 6px; margin-bottom: 12px; font-size: 0.85rem; color: #1e293b;">
-    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Standardisation Rules (Q1 Feature Drill [2 Marks])</strong>
+    <strong style="color: #0369a1; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fa-solid fa-clipboard-check"></i> Official Edexcel Mark Scheme Rules (Q1 Feature Drill [2 Marks])</strong>
     <p style="margin: 4px 0 0 0; line-height: 1.45;"><strong>1 Mark:</strong> Identifies a valid general feature without specific supporting historical detail.<br><strong>2 Marks:</strong> Feature clearly identified AND supported by precise historical detail (names, dates, acts, numbers).</p>
   </div>
   <div style="background: #fffbeb; border: 1.5px solid #fef3c7; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px;">
@@ -645,8 +645,8 @@ function updateMockExamBankData() {
     // Build Q3 Model (12m or 16m)
     const is12m = Boolean(lm.q3.tier_12m);
     const ruleTitle = is12m
-      ? 'Official Edexcel Standardisation Rules (Q2 Causation [12 Marks])'
-      : 'Official Edexcel Standardisation Rules (Q3/Q4 Judgement Essay [16 Marks])';
+      ? 'Official Edexcel Mark Scheme Rules (Q2 Causation [12 Marks])'
+      : 'Official Edexcel Mark Scheme Rules (Q3/Q4 Judgement Essay [16 Marks])';
     const ruleText = is12m
       ? '<strong>1. Three Distinct Aspects:</strong> Must deploy at least three distinct causes/aspects of content.<br><strong>2. Sustained PEEL:</strong> Point, Evidence, Explanation of cause, Link.<br><strong>3. Zero Conclusion Required:</strong> Level 4 (10–12 marks) requires analytical explanation throughout; no separate conclusion needed.'
       : '<strong>1. Three Distinct Aspects:</strong> Must deploy at least three aspects of content weighing both sides.<br><strong>2. Criteria-Driven Evaluation:</strong> Must weigh factors against clear historical criteria.<br><strong>3. Sustained Judgement:</strong> Must reach a reasoned, justified conclusion.<br><strong>4. Zero SPaG:</strong> Paper 2 has NO SPaG marks (16 marks flat).';

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const rootDir = path.resolve(__dirname, '..');
-const { med26Questions } = require('./calibrate_medicine_2026.cjs');
+const { medicineExamQuestions } = require('./calibrate_medicine_2026.cjs');
 
 console.log('--- Step 1: Integrating June 2026 questions into mock_exam_bank_data.js ---');
 
@@ -21,9 +21,9 @@ if (!bankData.edexcel_medicine) {
   bankData.edexcel_medicine = {};
 }
 
-// Inject med26Questions into edexcel_medicine
+// Inject medicineExamQuestions into edexcel_medicine
 let totalInjected = 0;
-for (const [lessonId, qList] of Object.entries(med26Questions)) {
+for (const [lessonId, qList] of Object.entries(medicineExamQuestions)) {
   if (!bankData.edexcel_medicine[lessonId]) {
     bankData.edexcel_medicine[lessonId] = [];
   }
@@ -101,7 +101,7 @@ const mockJune2026 = {
           {
             "id": "Source B",
             "provenance": "An official war photograph published in the Daily Mail, July 1916. It shows British soldiers pushing a motorised ambulance through deep mud during the Battle of the Somme.",
-            "image": "/images/med26/source_b_ambulance_somme_1916.jpg",
+            "image": "/images/source_b_ambulance_somme_1916.jpg",
             "caption": "Source B: Official War Photograph published in the Daily Mail (July 1916) showing British soldiers pushing a motorised ambulance through deep mud on the Somme.",
             "content": "[Archival Photograph: British soldiers manually pushing a bogged-down motorised ambulance through deep liquid mud and cratered ruts during the Battle of the Somme, July 1916.]"
           }

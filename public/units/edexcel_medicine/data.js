@@ -79,7 +79,7 @@ export default {
               {
                 "id": "Source B",
                 "provenance": "An official war photograph published in the Daily Mail, July 1916. It shows British soldiers pushing a motorised ambulance through deep mud during the Battle of the Somme.",
-                "image": "/images/med26/source_b_ambulance_somme_1916.jpg",
+                "image": "/images/source_b_ambulance_somme_1916.jpg",
                 "caption": "Source B: Official War Photograph published in the Daily Mail (July 1916) showing British soldiers pushing a motorised ambulance through deep mud on the Somme.",
                 "content": "[Archival Photograph: British soldiers manually pushing a bogged-down motorised ambulance through deep liquid mud and cratered ruts during the Battle of the Somme, July 1916.]"
               }
