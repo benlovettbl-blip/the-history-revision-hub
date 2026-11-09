@@ -861,7 +861,7 @@ function buildMedievalTwoPageWorkbook(unitData, period) {
       caption: 'James le Palmer (fl. 1360–1375) • Fourteenth-century illuminated manuscript showing two plague sufferers bearing bubonic sores in bed while priests administer last rites and prayer.',
       sourceTag: 'Primary Visual Evidence',
       archiveTag: 'The British Library Manuscript Collection',
-      heightMm: 68,
+      heightMm: 88,
     },
     footerQuip: 'Notes: Key Topic 1 Specification Framework &bull; Retain for revision.',
     totalPageCount: 20,

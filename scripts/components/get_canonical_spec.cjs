@@ -98,7 +98,27 @@ const KEY_TERMS_TO_BOLD = [
   'Freedom Riders', 'Civil Rights Act (1964)', 'Voting Rights Act (1965)',
   'Malcolm X', 'Black Power', 'Black Panthers', 'domino theory', 'Gulf of Tonkin',
   'Operation Rolling Thunder', 'Search and Destroy', 'Tet Offensive (1968)',
-  'Vietnamisation', 'Paris Peace Agreement (1973)'
+  'Vietnamisation', 'Paris Peace Agreement (1973)',
+  // Medicine in Britain (Option 11)
+  'Theory of the Four Humours', 'Four Humours', 'miasma theory', 'Galen',
+  'Black Death, 1348–49', 'Black Death', 'Supernatural and religious explanations', 'supernatural and religious explanations',
+  'bloodletting and purging', 'purifying the air', 'physician, apothecary and barber surgeon',
+  'Thomas Sydenham', 'printing press', 'Royal Society', 'Vesalius', 'William Harvey',
+  'circulation of the blood', 'Great Plague in London (1665)', 'Great Plague',
+  'Pasteur’s Germ Theory', 'Germ Theory', 'Koch’s work on microbes', 'Robert Koch',
+  'Florence Nightingale', 'influence of Nightingale', 'anaesthetics and antiseptics',
+  'Public Health Act (1875)', 'Jenner and the development of vaccination', 'vaccination',
+  'Cholera in London (1854)', 'Snow and the Broad Street pump', 'John Snow',
+  'genetic and lifestyle factors', 'blood tests, scans and monitors', 'NHS',
+  'magic bullets and antibiotics', 'mass vaccinations',
+  'Fleming, Florey and Chain’s development of penicillin', 'penicillin',
+  'lung cancer in the twenty-first century', 'lung cancer',
+  // Western Front (Option 11 Section A)
+  'Western Front', 'Ypres salient', 'the Somme', 'Arras and Cambrai', 'trench system',
+  'RAMC', 'chain of evacuation', 'stretcher bearers', 'field ambulance',
+  'dressing station', 'casualty clearing station', 'base hospital', 'underground hospital at Arras',
+  'Thomas splint', 'mobile x-ray units', 'blood bank for the Battle of Cambrai',
+  'blood transfusions', 'aseptic surgery'
 ];
 
 function highlightKeyTerms(text) {

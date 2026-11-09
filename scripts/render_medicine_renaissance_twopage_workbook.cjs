@@ -867,7 +867,7 @@ function buildRenaissanceTwoPageWorkbook(unitData, period) {
       caption: 'Woodcut title page showing Andreas Vesalius conducting an open human dissection surrounded by students, challenging Galenic anatomy directly from empirical observation.',
       sourceTag: 'Primary Visual Evidence',
       archiveTag: 'Wellcome Collection Historical Archive',
-      heightMm: 68,
+      heightMm: 88,
     },
     footerQuip: 'Notes: Key Topic 2 Specification Framework &bull; Retain for revision.',
     totalPageCount: 20,

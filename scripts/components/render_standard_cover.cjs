@@ -70,6 +70,9 @@ function renderStandardFrontCover({
   const isPaper3 = unitId === 'weimar_nazi_germany' || unitId === 'usa';
   const isWeimar = isPaper3;
   const isEee = unitId === 'eee';
+  const isMedicine = unitId === 'edexcel_medicine';
+  const isWesternFront = isMedicine && keyTopicNum === 5;
+  const isMedicineThematic = isMedicine && !isWesternFront;
 
   if (isEee) {
     const defaultPhotoHeight = 102;
@@ -348,7 +351,14 @@ function renderStandardFrontCover({
   const objectPos = heroImage.objectPosition || 'center 36%';
 
   let specFontSize, specLineHeight, specTitleSize, specItemMargin, specTitleMargin, bulletSize;
-  if (specBox.typography) {
+  if (isMedicine) {
+    specFontSize = '7.7pt';
+    specLineHeight = '1.34';
+    specTitleSize = '8.4pt';
+    specItemMargin = '4px';
+    specTitleMargin = '4px';
+    bulletSize = '6.0px';
+  } else if (specBox.typography) {
     specFontSize = specBox.typography.fontSize;
     specLineHeight = specBox.typography.lineHeight;
     specTitleSize = specBox.typography.titleSize;
@@ -412,8 +422,8 @@ function renderStandardFrontCover({
     }
   }
 
-  const specItemPadding = numCols >= 4 || maxItems >= 4 ? '3.5px 6px' : '7px 9px';
-  const itemsJustify = maxItems <= 3 ? 'space-evenly' : 'flex-start';
+  const specItemPadding = isMedicine ? '5px 7px' : (numCols >= 4 || maxItems >= 4 ? '3.5px 6px' : '7px 9px');
+  const itemsJustify = isMedicine ? 'flex-start' : (maxItems <= 3 ? 'space-evenly' : 'flex-start');
 
   function formatTopicTitle(str) {
     const smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|v.?|vs.?|via)$/i;
@@ -428,6 +438,42 @@ function renderStandardFrontCover({
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     }).join(' ');
   }
+
+  const MEDICINE_DEPTH_CALLOUTS = {
+    1: {
+      3: {
+        badge: '🎯 Case Study Depth Focus',
+        text: '<strong>National &amp; Local Dimensions:</strong> Contrasting supernatural beliefs (divine wrath, flagellants) and humoral purging against King Edward III’s 1349 cleanliness order and London quarantine pits.',
+        bg: '#f0fdf4',
+        border: '#bbf7d0',
+        accent: '#16a34a',
+        titleColor: '#15803d',
+        textColor: '#166534',
+      }
+    },
+    2: {
+      1: {
+        badge: '🎯 Scientific Method &amp; Ideas',
+        text: '<strong>Observation vs Ancient Authority:</strong> How the scientific revolution, royal patronage (Charles II), and movable type print challenged Galenic hegemony despite stubborn humoral continuities.',
+        bg: '#eff6ff',
+        border: '#bfdbfe',
+        accent: '#2563eb',
+        titleColor: '#1d4ed8',
+        textColor: '#1e40af',
+      }
+    },
+    3: {
+      1: {
+        badge: '🎯 Causation Turning Point',
+        text: '<strong>From Spontaneous Generation to Germs:</strong> How Pasteur’s 1861 swan-neck flask experiments and Koch’s chemical dye staining isolated specific pathogens, decisively destroying miasma.',
+        bg: '#eff6ff',
+        border: '#bfdbfe',
+        accent: '#2563eb',
+        titleColor: '#1d4ed8',
+        textColor: '#1e40af',
+      }
+    }
+  };
 
   const subtopicsHtml = (specBox.subtopics || [])
     .map((sub, idx) => {
@@ -447,17 +493,37 @@ function renderStandardFrontCover({
         )
         .join('\n');
 
+      let depthCalloutHtml = '';
+      if (isMedicineThematic && MEDICINE_DEPTH_CALLOUTS[keyTopicNum]?.[idx + 1]) {
+        const callout = MEDICINE_DEPTH_CALLOUTS[keyTopicNum][idx + 1];
+        depthCalloutHtml = `
+            <div style="background: ${callout.bg}; border: 1px solid ${callout.border}; border-left: 3px solid ${callout.accent}; border-radius: 3px; padding: 4.5px 7px; margin-top: 2px; display: flex; flex-direction: column; gap: 2px; box-sizing: border-box;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 900; text-transform: uppercase; color: ${callout.titleColor}; letter-spacing: 0.5px;">
+                ${callout.badge}
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; line-height: 1.25; color: ${callout.textColor};">
+                ${callout.text}
+              </span>
+            </div>`;
+      }
+
+      const colJustify = isMedicine ? 'flex-start' : 'space-between';
+      const colItemsJustify = isMedicine ? 'flex-start' : itemsJustify;
+      const colGap = isMedicine ? '4px' : '6px';
+      const colPadding = isMedicine ? '5px 7px' : '6px 8px';
+
       return `
           <!-- Subtopic Card ${idx + 1} -->
-          <div class="spec-column-box" style="background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 4px; padding: 6px 8px 6px 8px; display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);">
-            <div style="display: flex; align-items: flex-start; gap: 6px; border-bottom: 2px solid #0284c7; padding-bottom: 4px; margin-bottom: ${specTitleMargin}; flex-shrink: 0;">
+          <div class="spec-column-box" style="background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 4px; padding: ${colPadding}; display: flex; flex-direction: column; justify-content: ${colJustify}; height: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);">
+            <div style="display: flex; align-items: flex-start; gap: 6px; border-bottom: 2px solid #0284c7; padding-bottom: 3.5px; margin-bottom: ${specTitleMargin}; flex-shrink: 0;">
               <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; width: 17px; height: 17px; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">${topicNum}</span>
               <strong style="font-family: 'Playfair Display', Georgia, serif; font-size: ${specTitleSize}; font-weight: 900; color: #0f172a; line-height: 1.18; letter-spacing: 0.1px;">
                 ${elegantTitle}
               </strong>
             </div>
-            <div class="spec-column-items" style="flex: 1; display: flex; flex-direction: column; justify-content: ${itemsJustify}; gap: 6px;">
+            <div class="spec-column-items" style="flex: 1; display: flex; flex-direction: column; justify-content: ${colItemsJustify}; gap: ${colGap};">
               ${itemsHtml}
+              ${depthCalloutHtml}
             </div>
           </div>`;
     })
@@ -531,6 +597,161 @@ function renderStandardFrontCover({
 
       </div>`;
 
+  let examMatrixHtml = '';
+  if (isMedicine) {
+    if (isWesternFront) {
+      examMatrixHtml = `
+      <!-- Paper 1 Examination Target Strip (Section A: Historic Environment) -->
+      <div class="exam-target-strip" style="border-top: 1.5px solid #0f172a; background: #ffffff; padding: 3px 6px 3px 6px; display: flex; flex-direction: column; gap: 3px; flex-shrink: 0; box-sizing: border-box;">
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 2px 8px; border-radius: 2px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 900; padding: 1px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.6px;">Exam Matrix</span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #f8fafc;">
+              Edexcel Paper 1 Section A Examination Targeting Matrix &bull; Historic Environment [16 Marks &bull; 25 Mins]
+            </span>
+          </div>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 700; color: #94a3b8; text-transform: uppercase;">
+            Specification 1HI0/11
+          </span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px;">
+          <!-- Card 1: Question 1 -->
+          <div style="background: #f8fafc; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #0284c7; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q1 &bull; 4 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #0369a1; text-transform: uppercase;">AO1 Historic Environment</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                Describe Two Features of [Site Focus]
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Format:</strong> Two distinct feature pairs (2m + 2m).<br>
+                <strong>Rule:</strong> State 1 valid feature + add 1 specific supporting factual detail per feature (5 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #e0f2fe; border-left: 2px solid #0284c7; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #0369a1;">
+              Practice: Workbook Feature Identification Drills
+            </div>
+          </div>
+          <!-- Card 2: Question 2(a) -->
+          <div style="background: #f8fafc; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #2563eb; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #60a5fa; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q2(a) &bull; 8 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #1d4ed8; text-transform: uppercase;">AO3 Dual Source Utility</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                How Useful Are Sources A and B?
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Format:</strong> Evaluate both sources systematically.<br>
+                <strong>Rule:</strong> Assess Content detail, Provenance (Nature, Origin, Motive), and contextual accuracy (12 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #eff6ff; border-left: 2px solid #2563eb; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #1e40af;">
+              Practice: Workbook Source Analysis Canvas
+            </div>
+          </div>
+          <!-- Card 3: Question 2(b) -->
+          <div style="background: #f8fafc; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #d97706; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #fbbf24; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q2(b) &bull; 4 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #b45309; text-transform: uppercase;">AO3 Historical Enquiry</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                4-Prompt Follow-Up Matrix
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Format:</strong> 4-step tabular enquiry.<br>
+                <strong>Rule:</strong> (1) Detail to follow up, (2) Question to ask, (3) Source type to use, (4) Clinical/military value (8 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #fefce8; border-left: 2px solid #d97706; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #854d0e;">
+              Practice: 4-Prompt Tabular Follow-Up Matrix
+            </div>
+          </div>
+        </div>
+      </div>`;
+    } else {
+      examMatrixHtml = `
+      <!-- Paper 1 Examination Target Strip (Section B: Thematic Study) -->
+      <div class="exam-target-strip" style="border-top: 1.5px solid #0f172a; background: #ffffff; padding: 3px 6px 3px 6px; display: flex; flex-direction: column; gap: 3px; flex-shrink: 0; box-sizing: border-box;">
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 2px 8px; border-radius: 2px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 900; padding: 1px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.6px;">Exam Matrix</span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #f8fafc;">
+              Edexcel Paper 1 Section B Examination Targeting Framework &bull; Thematic Study [36m + 4m SPaG &bull; 55 Mins]
+            </span>
+          </div>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 700; color: #94a3b8; text-transform: uppercase;">
+            Specification 1HI0/11
+          </span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px;">
+          <!-- Card 1: Question 3 -->
+          <div style="background: #f8fafc; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #0284c7; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q3 &bull; 4 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #0369a1; text-transform: uppercase;">AO1/AO2 Concept Drill</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                Similarity or Difference Across Eras
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Target:</strong> Explain 1 way [ideas / treatments / care] in this era were similar or different to another period.<br>
+                <strong>Rule:</strong> Provide specific factual evidence from <em>both</em> named periods to secure 4/4 marks (approx. 5 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #e0f2fe; border-left: 2px solid #0284c7; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #0369a1;">
+              Practice: In-Workbook 4-Mark Comparative Tasks
+            </div>
+          </div>
+          <!-- Card 2: Question 4 -->
+          <div style="background: #f8fafc; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #2563eb; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #60a5fa; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q4 &bull; 12 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #1d4ed8; text-transform: uppercase;">AO1/AO2 Causation</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                Explain Why [Causal Change] Occurred
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Target:</strong> Multi-causal analytical essay explaining why medical change or continuity took place.<br>
+                <strong>Rule:</strong> Write 3 developed PEEL paragraphs. Must address both stimulus points + 1 distinct point of own knowledge (18 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #eff6ff; border-left: 2px solid #2563eb; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #1e40af;">
+              Practice: Chronological Inquiry Spine &amp; Causation Drills
+            </div>
+          </div>
+          <!-- Card 3: Questions 5 & 6 -->
+          <div style="background: #f8fafc; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #d97706; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #fbbf24; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q5/6 &bull; 16+4 SPaG</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #b45309; text-transform: uppercase;">AO1/AO2/AO4 Synoptic</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                ‘How Far Do You Agree?’ Evaluative Essay
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Target:</strong> Choose Q5 OR Q6. Evaluative thematic essay assessing factor significance or change over time.<br>
+                <strong>Rule:</strong> Balanced argument (for/against) with sustained criteria and a decisive historical verdict (30 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #fefce8; border-left: 2px solid #d97706; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #854d0e;">
+              Practice: Full 16-Mark Extended Writing Frames
+            </div>
+          </div>
+        </div>
+      </div>`;
+    }
+  }
+
   return `
   <!-- ====================================================================
        PAGE 1: OUTSIDE FRONT COVER (Master Architectural Cover)
@@ -587,6 +808,7 @@ function renderStandardFrontCover({
         <div style="padding: 5px 6px; display: grid; grid-template-columns: repeat(${specBox.subtopics.length || 3}, 1fr); gap: 6px; font-family: 'Inter', sans-serif; flex: 1; overflow: hidden;">
           ${subtopicsHtml}
         </div>
+        ${examMatrixHtml}
       </div>
 
       ${footerHtml}

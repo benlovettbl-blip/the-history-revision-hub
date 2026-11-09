@@ -1637,41 +1637,87 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
         </div>
       </div>
 
-      <!-- Prominent Primary Visual Source Centerpiece (Base64 Inlined, Uncropped Full Canvas) -->
-      <div style="margin: 2px 0 4px 0; border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; background: #ffffff;">
-        <div style="display: flex; justify-content: center; align-items: center; background: #fafafa; padding: 2px 0;">
-          <img src="${coverImgBase64}" alt="Stretcher Bearers of the Royal Army Medical Corps (RAMC) Lifting a Wounded Man out of a Trench by Gilbert Rogers (c1919)" style="height: 104mm; width: auto; max-width: 100%; object-fit: contain; display: block; margin: 0 auto; border: 1.2px solid #0f284e; border-radius: 2px; box-shadow: 0 2px 6px rgba(15,40,78,0.22);">
+      <!-- Master Wide Photographic Plate -->
+      <div style="margin: 2px 0 3px 0; border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; background: #ffffff;">
+        <div style="height: 94mm; background: #000000; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+          <img src="${coverImgBase64}" alt="Stretcher Bearers of the Royal Army Medical Corps (RAMC) Lifting a Wounded Man out of a Trench by Gilbert Rogers (c1919)" style="width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; filter: grayscale(100%) contrast(115%);">
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #0f284e; padding: 3px 8px; border-top: 1.5px solid #0f284e; background: #ffffff;">
+        <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 7.0pt; color: #0f284e; padding: 3px 8px; border-top: 1.5px solid #0f284e; background: #ffffff;">
           <span><strong>Primary Visual Evidence:</strong> <em>Stretcher Bearers of the RAMC Lifting a Wounded Man out of a Trench</em> &bull; Gilbert Rogers (c. 1919)</span>
           <span style="font-weight: 700; color: #475569;">OFFICIAL EDEXCEL SOURCE ARCHIVE &bull; IWM ART 2485 / RAMC HISTORIC COLLECTION</span>
         </div>
       </div>
 
-      <!-- Edexcel Paper 1 Section A Specification Overview & Exam Strategy -->
-      <div style="border: 1.2px solid #0f284e; border-radius: 4px; padding: 5px 8px; background: #f0f4f9; margin: 3px 0 4px 0; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;">
-        <div style="border-right: 1px solid #cbd5e1; padding-right: 6px;">
-          <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">
-            1. Feature Drills [4m]
+      <!-- Edexcel Paper 1 Section A Examination Targeting Matrix -->
+      <div style="border: 1.4px solid #0f284e; border-radius: 4px; overflow: hidden; background: #ffffff; margin: 2px 0 3px 0;">
+        <div style="background: linear-gradient(135deg, #0f284e 0%, #1e3a5f 100%); color: #ffffff; padding: 2.5px 8px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 900; padding: 1px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.6px;">Exam Matrix</span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #f8fafc;">
+              Edexcel Paper 1 Section A Examination Targeting Matrix &bull; Historic Environment [16 Marks &bull; 25 Mins]
+            </span>
           </div>
-          <div style="font-family: 'Georgia', serif; font-size: 6.8pt; line-height: 1.2; color: #334155; margin-top: 1px;">
-            Q1(a) &amp; Q1(b): Two 2-mark questions. Identify 1 specific feature + 1 supporting factual detail (5 mins).
-          </div>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 700; color: #94a3b8; text-transform: uppercase;">
+            Specification 1HI0/11
+          </span>
         </div>
-        <div style="border-right: 1px solid #cbd5e1; padding-right: 6px;">
-          <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">
-            2. Source Utility [8m]
+        <div style="padding: 4px 6px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; background: #f8fafc;">
+          <!-- Card 1: Question 1 -->
+          <div style="background: #ffffff; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #0284c7; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q1 &bull; 4 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #0369a1; text-transform: uppercase;">AO1 Historic Site</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                Describe Two Features of [Site Focus]
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Format:</strong> Two distinct feature pairs (2m + 2m).<br>
+                <strong>Rule:</strong> State 1 valid feature + add 1 specific supporting factual detail per feature (5 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #e0f2fe; border-left: 2px solid #0284c7; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #0369a1;">
+              Practice: In-Workbook Feature Drills
+            </div>
           </div>
-          <div style="font-family: 'Georgia', serif; font-size: 6.8pt; line-height: 1.2; color: #334155; margin-top: 1px;">
-            Q2(a): 3-step evaluation of Content, Provenance (Nature, Origin, Motive), and Contextual Limitations (10 mins).
+          <!-- Card 2: Question 2(a) -->
+          <div style="background: #ffffff; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #2563eb; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #60a5fa; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q2(a) &bull; 8 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #1d4ed8; text-transform: uppercase;">AO3 Dual Source Utility</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                How Useful Are Sources A and B?
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Format:</strong> Evaluate both sources systematically.<br>
+                <strong>Rule:</strong> Assess Content detail, Provenance (Nature, Origin, Motive), and contextual accuracy (12 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #eff6ff; border-left: 2px solid #2563eb; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #1e40af;">
+              Practice: Dual-Source Utility Evaluation Pages
+            </div>
           </div>
-        </div>
-        <div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">
-            3. Follow-Up Enquiry [4m]
-          </div>
-          <div style="font-family: 'Georgia', serif; font-size: 6.8pt; line-height: 1.2; color: #334155; margin-top: 1px;">
-            Q2(b): 4-row tabular enquiry: Detail, Historical Question, Source Type, and Clinical Value (5 mins).
+          <!-- Card 3: Question 2(b) -->
+          <div style="background: #ffffff; border: 1.2px solid #cbd5e1; border-top: 2.5px solid #d97706; border-radius: 3px; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+                <span style="background: #0f172a; color: #fbbf24; font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; padding: 1px 5px; border-radius: 2px;">Q2(b) &bull; 4 MARKS</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #b45309; text-transform: uppercase;">AO3 Historical Enquiry</span>
+              </div>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.3pt; font-weight: 900; color: #0f172a; line-height: 1.15; margin-bottom: 2px;">
+                4-Prompt Follow-Up Matrix
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; line-height: 1.24; color: #334155;">
+                <strong>Format:</strong> 4-step tabular enquiry.<br>
+                <strong>Rule:</strong> (1) Detail to follow up, (2) Question to ask, (3) Source type to use, (4) Clinical/military value (8 mins).
+              </div>
+            </div>
+            <div style="margin-top: 3px; padding: 1.5px 4px; background: #fefce8; border-left: 2px solid #d97706; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; color: #854d0e;">
+              Practice: 4-Prompt Tabular Follow-Up Matrix
+            </div>
           </div>
         </div>
       </div>

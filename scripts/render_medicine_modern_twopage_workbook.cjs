@@ -139,12 +139,12 @@ const modernConfigs = [
         step: 1,
         dates: 'c1900–1940s',
         title: 'Mendel & Early Genetics',
-        questionHeading: 'Why did doctors assume proteins carried hereditary traits?',
+        questionHeading: 'Why did early doctors struggle to explain hereditary traits?',
         paraBadge: '[1.1]',
         bullets: [
-          'Gregor Mendel peas',
+          'Gregor Mendel genetics',
           'Chromosomes observed',
-          'Hereditary protein theory',
+          'Unknown hereditary mechanism',
         ],
       },
       {
@@ -404,7 +404,7 @@ const modernConfigs = [
     enquiryQuestion:
       'Why did penicillin require a global war and American industrial might to become a mass-produced cure?',
     specAnchor:
-      'Case study: The Antibiotic Revolution: Fleming’s discovery (1928); Florey and Chain (Oxford purification 1938–40); wartime need and US mass production (Peoria deep-tank fermentation 1941–44); D-Day supply; antibiotic resistance.',
+      'Case study: The Antibiotic Revolution: Fleming’s discovery (1928); Florey and Chain (Oxford purification 1938–40); wartime need and US mass production (industrial deep-tank fermentation 1941–44); D-Day supply; antibiotic resistance.',
     tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
     examStem:
       'Explain why penicillin was successfully developed and mass-produced in the period 1928–1945. [12 marks]',
@@ -412,7 +412,7 @@ const modernConfigs = [
     connectives:
       'One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because...',
     wordBank:
-      'Alexander Fleming (1928) &bull; penicillin &bull; Howard Florey &bull; Ernst Chain &bull; Norman Heatley &bull; Albert Alexander (1941) &bull; Peoria fermentation &bull; mass production (1944)',
+      'Alexander Fleming (1928) &bull; penicillin &bull; Howard Florey &bull; Ernst Chain &bull; Norman Heatley &bull; Albert Alexander (1941) &bull; deep-tank fermentation &bull; mass production (1944)',
     timelineMission:
       'Turn to Pages 2–3 (Key Topic 4.4). In the drawing box, sketch Fleming’s contaminated petri dish and an American 10,000-gallon deep-tank vat. Annotate how penicillin saved Allied troops on D-Day!',
     fourMark: {
@@ -448,12 +448,12 @@ const modernConfigs = [
         step: 2,
         dates: '1938–1940',
         title: 'Florey & Chain at Oxford',
-        questionHeading: 'How did Norman Heatley solve the purification challenge?',
+        questionHeading: 'How did Florey and Chain overcome the challenge of purifying penicillin?',
         paraBadge: '[4.2]',
         bullets: [
           'Florey & Chain (Oxford)',
+          'Purifying active penicillin',
           'Norman Heatley apparatus',
-          'Freeze-drying extract',
         ],
       },
       {
@@ -471,12 +471,12 @@ const modernConfigs = [
       {
         step: 4,
         dates: '1941–1944',
-        title: 'Peoria & US Mass Production',
-        questionHeading: 'How did US industrial fermentation enable mass production?',
+        title: 'US Government & Mass Production',
+        questionHeading: 'How did US industrial mass-production transform wartime supply?',
         paraBadge: '[4.4]',
         bullets: [
-          'Peoria, Illinois lab',
-          'Corn-steep liquor vats',
+          'US government funding',
+          'Deep fermentation tanks',
           '2.3m D-Day doses',
         ],
       },
@@ -579,7 +579,7 @@ const modernConfigs = [
         bullets: [
           'Tumour DNA sequencing',
           'Targeted pharmacotherapy',
-          'Pembrolizumab T-cell boost',
+          'Targeted immunotherapy',
         ],
       },
       {
@@ -860,7 +860,7 @@ function buildModernTwoPageWorkbook(unitData, period) {
       caption: 'Central Office of Information • Minister of Health Aneurin Bevan inaugurating the National Health Service at Park Hospital, Davyhulme, marking universal free access to healthcare.',
       sourceTag: 'Primary Visual Evidence',
       archiveTag: 'The National Archives • INF 12/88',
-      heightMm: 68,
+      heightMm: 88,
     },
     footerQuip: 'Notes: Key Topic 4 Specification Framework &bull; Retain for revision.',
     totalPageCount: 20,
@@ -902,7 +902,7 @@ function buildModernTwoPageWorkbook(unitData, period) {
       year: '1941–44',
       title: 'Florey, Chain & Heatley: Penicillin Mass Production',
       kt: 'Key Topic 4.4',
-      desc: 'Howard Florey and Ernst Chain purify penicillin at Oxford, successfully treating mice and Albert Alexander (1941). Heatley and Florey travel to Peoria, Illinois, using corn-steep liquor and deep-tank fermentation to produce 2.3 million doses for D-Day casualties.',
+      desc: 'Howard Florey and Ernst Chain purify penicillin at Oxford, successfully treating mice and Albert Alexander (1941). US government funding enables industrial deep-tank fermentation, producing 2.3 million doses for D-Day casualties.',
     },
     {
       year: '1948',
@@ -984,7 +984,7 @@ function buildModernTwoPageWorkbook(unitData, period) {
         </div>
 
         <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 3px 6px; margin-bottom: 5px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Draw visual symbols for Peoria deep fermentation vats, the 1948 NHS charter, Franklin’s Photograph 51 double helix, and CT scan slices across the timeline below.
+          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Draw visual symbols for US deep fermentation vats, the 1948 NHS charter, Franklin’s Photograph 51 double helix, and CT scan slices across the timeline below.
         </div>
       </div>
 
