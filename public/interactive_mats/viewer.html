@@ -974,6 +974,56 @@
       pointer-events: none;
     }
 
+    .block-source-preview.written-preview {
+      background: linear-gradient(150deg, #0d172c 0%, #060b17 100%);
+      border: 1.5px solid rgba(245, 158, 11, 0.45);
+      padding: 10px 12px 28px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      text-align: left;
+      box-sizing: border-box;
+    }
+
+    .block-source-preview.written-preview:hover {
+      border-color: #f59e0b;
+      box-shadow: 0 0 14px rgba(245, 158, 11, 0.28);
+    }
+
+    .overview-written-header {
+      font-size: 0.62rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #f59e0b;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 6px;
+      flex-shrink: 0;
+    }
+
+    .overview-written-body {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.72rem;
+      color: #f8fafc;
+      line-height: 1.45;
+      font-style: italic;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+    }
+
+    .block-source-badge.written-badge {
+      color: #f59e0b;
+      border-color: rgba(245, 158, 11, 0.45);
+      background: rgba(10, 16, 30, 0.95);
+    }
+
     .block-summary-text {
       font-size: 0.74rem;
       color: #e2e8f0;
@@ -1276,22 +1326,50 @@
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(3, 7, 18, 0.85);
-      backdrop-filter: blur(4px);
+      background: rgba(3, 7, 18, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       z-index: 9999;
       justify-content: center;
       align-items: center;
-      padding: 16px;
+      padding: clamp(10px, 1.8vw, 24px);
     }
 
     .modal-card {
-      background: #0b1329;
-      border: 1.5px solid var(--border-gold);
-      border-radius: 8px;
-      max-width: 650px;
-      width: 100%;
-      padding: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      background: linear-gradient(160deg, #0e172e 0%, #060b17 100%);
+      border: 2px solid rgba(245, 158, 11, 0.65);
+      border-radius: 14px;
+      width: min(97vw, 1750px);
+      max-width: 97vw;
+      height: min(94vh, 880px);
+      max-height: 94vh;
+      min-height: min(84vh, 680px);
+      padding: clamp(20px, 2.2vw, 32px) clamp(24px, 3.2vw, 52px);
+      box-shadow: 0 35px 95px rgba(0,0,0,0.98), 0 0 65px rgba(245, 158, 11, 0.18);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-y: auto;
+      box-sizing: border-box;
+      animation: modalFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .modal-card.modal-card-visual {
+      border-color: rgba(56, 189, 248, 0.65);
+      box-shadow: 0 35px 95px rgba(0,0,0,0.98), 0 0 65px rgba(56, 189, 248, 0.18);
+      min-height: auto;
+      height: auto;
+    }
+
+    @keyframes modalFadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.97) translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
     }
 
     /* Loading Spinner */
@@ -1869,19 +1947,25 @@
 
   </div>
 
-  <!-- Uncropped Archival Source Modal -->
+  <!-- Uncropped Archival Source Modal (Classroom / Projector-Grade Scale) -->
   <div id="detail-modal" onclick="closeModalDirect()">
     <div class="modal-card" onclick="event.stopPropagation()">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-        <h3 id="modal-title" style="color: var(--gold-primary); font-size: 1.1rem; font-family: 'Playfair Display', Georgia, serif;"></h3>
-        <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; gap: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 12px; flex-shrink: 0;">
+        <div style="flex: 1; min-width: 0;">
+          <span id="modal-type-badge" style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.7px; color: #38bdf8; background: rgba(2, 132, 199, 0.2); border: 1.5px solid rgba(56, 189, 248, 0.35); padding: 3px 12px; border-radius: 5px; display: inline-flex; align-items: center; gap: 7px; margin-bottom: 8px;">
+            <i class="fa-solid fa-camera"></i> Primary Visual Source
+          </span>
+          <h3 id="modal-title" style="color: #f8fafc; font-size: clamp(1.2rem, 1.8vw, 1.6rem); font-family: 'Playfair Display', Georgia, serif; margin: 0; line-height: 1.35; font-weight: 700;"></h3>
+        </div>
+        <button type="button" onclick="closeModalDirect()" style="width: 40px; height: 40px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; color: #cbd5e1; font-size: 1.25rem; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.15s ease;" title="Close (Esc)" onmouseover="this.style.background='rgba(239,68,68,0.2)'; this.style.borderColor='#ef4444';" onmouseout="this.style.background='rgba(255,255,255,0.08)'; this.style.borderColor='rgba(255,255,255,0.18)';"><i class="fa-solid fa-xmark"></i></button>
       </div>
-      <div id="modal-img-container" style="text-align: center; margin-bottom: 10px; background: #030712; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 6px; display: none;">
-        <img id="modal-img" src="" alt="Primary Visual Source" style="max-height: 48vh; max-width: 100%; object-fit: contain; border-radius: 4px; display: block; margin: 0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.5);" />
+      <div id="modal-img-container" style="text-align: center; margin: 10px 0 14px 0; background: #01040a; border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: clamp(12px, 1.5vw, 18px); display: none; flex-shrink: 0;">
+        <img id="modal-img" src="" alt="Primary Archival Source" style="max-height: clamp(52vh, 68vh, 76vh); max-width: 100%; width: auto; object-fit: contain; border-radius: 6px; display: block; margin: 0 auto; box-shadow: 0 12px 35px rgba(0,0,0,0.85);" />
       </div>
-      <p id="modal-body" style="color: #e2e8f0; font-size: 0.86rem; line-height: 1.5;"></p>
-      <div style="margin-top: 14px; text-align: right;">
-        <button type="button" class="palette-chip" style="background: #1e293b; color: #ffffff;" onclick="closeModalDirect()">Close</button>
+      <div id="modal-body" style="color: #e2e8f0; font-size: 1rem; line-height: 1.65; flex: 1; display: flex; flex-direction: column; justify-content: center; min-height: 0;"></div>
+      <div style="margin-top: 14px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 12px; flex-shrink: 0;">
+        <span style="font-size: 0.8rem; color: #64748b; font-family: monospace;">Tip: Press <kbd style="background: rgba(255,255,255,0.08); padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15); color: #cbd5e1; font-weight: 600;">ESC</kbd> or click backdrop to close</span>
+        <button type="button" class="palette-chip" style="background: #1e293b; color: #ffffff; padding: 8px 26px; font-size: 0.92rem; font-weight: 700; border-radius: 6px; cursor: pointer; border: 1px solid rgba(255,255,255,0.18);" onclick="closeModalDirect()"><i class="fa-solid fa-xmark" style="margin-right: 6px;"></i> Close</button>
       </div>
     </div>
   </div>
@@ -2659,7 +2743,9 @@
 
     function formatNarrativeWithHighlights(narrative, words) {
       if (!narrative) return '';
-      let prose = narrative.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      let prose = narrative
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*([^*\s](?:[^*\n]*?[^*\s])?)\*/g, '<em>$1</em>');
       if (words && Array.isArray(words)) {
         const terms = words
           .filter(w => w && (typeof w === 'string' ? w.trim() : (w.term && w.term.trim())))
@@ -2706,8 +2792,9 @@
       // Left Column Source Image vs Written Card
       const presImg = document.getElementById('pres-img');
       const presWritten = document.getElementById('pres-written-card');
+      const hasImg = Boolean(data.image && data.image !== 'null' && data.image !== 'undefined' && data.image.trim() !== '');
 
-      if (data.image) {
+      if (hasImg) {
         presImg.src = data.image;
         presImg.style.display = 'block';
         presWritten.style.display = 'none';
@@ -2715,9 +2802,13 @@
         presImg.style.display = 'none';
         presWritten.style.display = 'flex';
         presWritten.innerHTML = `
-          <div style="font-size: 0.74rem; color: #f59e0b; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px;"><i class="fa-solid fa-scroll"></i> ${data.writtenTitle || 'Archival Primary Document'}</div>
-          ${data.writtenProvenance ? `<div style="font-size: 0.72rem; color: #94a3b8; font-style: italic; margin-bottom: 6px;">${data.writtenProvenance}</div>` : ''}
-          <div style="font-family: 'Playfair Display', serif; font-size: 0.88rem; color: #f8fafc; line-height: 1.55;"><i class="fa-solid fa-quote-left" style="color: #f59e0b; font-size: 0.75rem; margin-right: 5px;"></i>${data.writtenText}</div>
+          <div style="font-size: 0.76rem; color: #f59e0b; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-scroll"></i> ${data.writtenTitle || 'Primary Archival Extract'}
+          </div>
+          ${data.writtenProvenance ? `<div style="font-size: 0.74rem; color: #94a3b8; font-style: italic; margin-bottom: 4px;"><i class="fa-solid fa-feather-pointed" style="color: #f59e0b; font-size: 0.7rem; margin-right: 4px;"></i>${data.writtenProvenance}</div>` : ''}
+          <div style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(0.92rem, 1.15vw, 1.12rem); color: #f8fafc; line-height: 1.6; font-style: italic;">
+            <i class="fa-solid fa-quote-left" style="color: #f59e0b; font-size: 0.85rem; margin-right: 6px;"></i>${data.writtenText}
+          </div>
         `;
       } else {
         presImg.style.display = 'none';
@@ -2726,8 +2817,13 @@
       }
 
       let sourceIcon = 'fa-landmark';
-      let badgeLabel = 'Visual Source Evidence';
-      if (data.image) {
+      let badgeLabel = 'Historical Archive Evidence';
+      if (!hasImg && data.writtenText) {
+        sourceIcon = 'fa-scroll';
+        badgeLabel = 'Primary Archival Extract';
+      } else if (hasImg) {
+        sourceIcon = 'fa-camera';
+        badgeLabel = 'Primary Visual Evidence';
         const lower = ((data.caption || '') + ' ' + (data.badge || '')).toLowerCase();
         if (lower.includes('portrait')) { sourceIcon = 'fa-user-tie'; badgeLabel = 'Contemporary Oil Portrait'; }
         else if (lower.includes('painting') || lower.includes('oil')) { sourceIcon = 'fa-palette'; badgeLabel = 'Contemporary Painting'; }
@@ -2735,11 +2831,21 @@
         else if (lower.includes('photo')) { sourceIcon = 'fa-camera'; badgeLabel = 'Archival Photograph'; }
         else if (lower.includes('engraving') || lower.includes('sketch') || lower.includes('drawing')) { sourceIcon = 'fa-pen-ruler'; badgeLabel = 'Contemporary Engraving'; }
       }
-      document.getElementById('pres-source-badge').innerHTML = `<i class="fa-solid ${sourceIcon}"></i> ${badgeLabel}`;
+      const badgeEl = document.getElementById('pres-source-badge');
+      if (badgeEl) {
+        badgeEl.innerHTML = `<i class="fa-solid ${sourceIcon}"></i> ${badgeLabel}`;
+        if (!hasImg && data.writtenText) {
+          badgeEl.style.borderColor = 'rgba(245, 158, 11, 0.45)';
+          badgeEl.style.color = '#f59e0b';
+        } else {
+          badgeEl.style.borderColor = '';
+          badgeEl.style.color = '';
+        }
+      }
       
       const sourceCard = document.querySelector('.presentation-source-card');
       const descEl = document.getElementById('pres-source-desc');
-      if (data.writtenText && data.image) {
+      if (data.writtenText && hasImg) {
         if (sourceCard) sourceCard.classList.remove('visual-only');
         let cleanCap = (data.caption || '').trim();
         let cleanTitle = (data.writtenTitle || 'Primary Archival Extract')
@@ -2769,6 +2875,10 @@
             </div>
           </div>
         `;
+      } else if (!hasImg && data.writtenText) {
+        if (sourceCard) sourceCard.classList.remove('visual-only');
+        let cleanProv = (data.writtenProvenance || data.caption || '').trim();
+        descEl.innerHTML = cleanProv ? `<div style="font-size: 0.74rem; color: #94a3b8; font-style: italic;"><i class="fa-solid fa-feather-pointed" style="color: #f59e0b; margin-right: 5px;"></i>${cleanProv}</div>` : '';
       } else {
         if (sourceCard) sourceCard.classList.add('visual-only');
         descEl.innerHTML = `<i class="fa-solid fa-circle-info" style="color: #38bdf8; margin-right: 4px;"></i>${data.caption || data.title}`;
@@ -2835,6 +2945,41 @@
       container.style.setProperty('--overview-cols', stagesData.length);
       container.innerHTML = stagesData.map(st => {
         const shortBadge = getCleanOverviewBadge(st.badge, st.caption, st.title);
+        const hasImg = Boolean(st.image && st.image !== 'null' && st.image !== 'undefined' && st.image.trim() !== '');
+        const isDoc = !hasImg && Boolean(st.writtenText);
+
+        const safeTitle = (st.title || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeBadge = (st.badge || st.title || 'Primary Evidence').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeCaption = (st.caption || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeWrittenTitle = (st.writtenTitle || 'Primary Archival Extract').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeWrittenProv = (st.writtenProvenance || st.caption || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeWrittenText = (st.writtenText || '').replace(/'/g, "\\'").replace(/\n/g, ' ').replace(/"/g, '&quot;');
+
+        let previewHtml = '';
+        let badgeHtml = '';
+        let clickAttr = '';
+
+        if (hasImg) {
+          previewHtml = `<img src="${st.image}" alt="${safeTitle}" />`;
+          badgeHtml = `<span class="block-source-badge"><i class="fa-solid fa-camera"></i> ${shortBadge}</span>`;
+          clickAttr = `onclick="showDetail('${safeBadge}', '${safeCaption}', '${st.image}', '${safeWrittenText}', 'visual')"`;
+        } else if (isDoc) {
+          previewHtml = `
+            <div class="overview-written-header">
+              <i class="fa-solid fa-scroll"></i> Primary Archival Document
+            </div>
+            <div class="overview-written-body">
+              <i class="fa-solid fa-quote-left" style="color: #f59e0b; margin-right: 4px; font-size: 0.65rem;"></i>${st.writtenText.replace(/"/g, '&quot;')}
+            </div>
+          `;
+          badgeHtml = `<span class="block-source-badge written-badge"><i class="fa-solid fa-scroll"></i> ${getCleanOverviewBadge(st.writtenTitle, st.writtenProvenance, 'Primary Archival Extract')}</span>`;
+          clickAttr = `onclick="showDetail('${safeWrittenTitle}', '${safeWrittenProv}', '', '${safeWrittenText}', 'written')"`;
+        } else {
+          previewHtml = `<div style="padding: 10px; font-size: 0.68rem; color: #94a3b8; font-style: italic;"><i class="fa-solid fa-landmark"></i> Historical Archive Evidence</div>`;
+          badgeHtml = `<span class="block-source-badge"><i class="fa-solid fa-landmark"></i> Primary Evidence</span>`;
+          clickAttr = `onclick="showDetail('${safeTitle}', '${safeCaption}', '', '', 'visual')"`;
+        }
+
         return `
         <section class="block-card">
           <div class="block-header-strip">
@@ -2842,9 +2987,9 @@
             <span style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">${st.date}</span>
           </div>
           <h2 class="block-title">${st.title}</h2>
-          <div class="block-source-preview" onclick="showDetail('${st.badge.replace(/'/g, "\\'")}', '${(st.caption || '').replace(/'/g, "\\'")}', '${st.image}', '${(st.writtenText || '').replace(/'/g, "\\'").replace(/\n/g, ' ')}')">
-            ${st.image ? `<img src="${st.image}" alt="${st.title}" />` : `<div style="padding: 10px; font-size: 0.65rem; color: #94a3b8; font-style: italic;">Archival Document</div>`}
-            <span class="block-source-badge"><i class="fa-solid fa-camera"></i> ${shortBadge}</span>
+          <div class="block-source-preview ${isDoc ? 'written-preview' : ''}" ${clickAttr}>
+            ${previewHtml}
+            ${badgeHtml}
           </div>
           <div class="block-summary-text">${formatNarrativeWithHighlights(st.narrative, st.words)}</div>
 
@@ -4555,31 +4700,92 @@ function cleanCausalTopic(task, lesson) {
     function openActiveSourceModal() {
       const data = stagesData[currentStep - 1];
       if (!data) return;
-      showDetail(data.badge, data.caption || data.title, data.image, data.writtenText);
+      if (data.writtenText && !data.image) {
+        showDetail(
+          data.writtenTitle || 'Primary Archival Document',
+          data.writtenProvenance || data.caption || '',
+          '',
+          data.writtenText,
+          'written'
+        );
+      } else {
+        showDetail(
+          data.badge || data.title || 'Primary Visual Source',
+          data.caption || data.title,
+          data.image,
+          data.writtenText || '',
+          data.image ? 'visual' : (data.writtenText ? 'written' : 'visual')
+        );
+      }
     }
 
-    function showDetail(title, text, imgSrc, writtenText) {
-      document.getElementById('modal-title').textContent = title;
+    function showDetail(title, text, imgSrc, writtenText, sourceType) {
+      const hasValidImg = Boolean(imgSrc && imgSrc !== 'null' && imgSrc !== 'undefined' && imgSrc.trim() !== '');
+      const isWritten = (sourceType === 'written') || (!hasValidImg && Boolean(writtenText));
+      const modalEl = document.getElementById('detail-modal');
+      const cardEl = modalEl.querySelector('.modal-card');
+      const typeBadge = document.getElementById('modal-type-badge');
+      const titleEl = document.getElementById('modal-title');
       const bodyEl = document.getElementById('modal-body');
-      if (writtenText) {
+      const imgContainer = document.getElementById('modal-img-container');
+      const modalImg = document.getElementById('modal-img');
+
+      if (isWritten) {
+        if (cardEl) {
+          cardEl.classList.remove('modal-card-visual');
+          cardEl.classList.add('modal-card-written');
+        }
+        if (typeBadge) {
+          typeBadge.innerHTML = '<i class="fa-solid fa-scroll"></i> Primary Archival Document';
+          typeBadge.style.color = '#f59e0b';
+          typeBadge.style.background = 'rgba(245, 158, 11, 0.18)';
+          typeBadge.style.borderColor = 'rgba(245, 158, 11, 0.45)';
+        }
+        titleEl.textContent = title || 'Archival Primary Document';
+        imgContainer.style.display = 'none';
+
         bodyEl.innerHTML = `
-          <div style="margin-bottom: 12px; color: #cbd5e1;">${text}</div>
-          <div style="padding: 12px 14px; background: rgba(15, 23, 42, 0.9); border-left: 4px solid #f59e0b; border-radius: 6px; font-family: 'Playfair Display', Georgia, serif; font-size: 0.92rem; color: #f8fafc; line-height: 1.6; font-style: italic;">
-            <i class="fa-solid fa-quote-left" style="color: #f59e0b; margin-right: 6px;"></i>${writtenText}
+          <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: clamp(10px, 1.5vw, 18px); margin: clamp(8px, 1.2vw, 16px) 0; min-height: 0;">
+            ${text ? `
+              <div style="font-size: clamp(0.92rem, 1.2vw, 1.1rem); color: #94a3b8; line-height: 1.5; padding: 5px 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; width: fit-content; flex-shrink: 0;">
+                <i class="fa-solid fa-feather-pointed" style="color: #f59e0b;"></i>
+                <span>${text}</span>
+              </div>
+            ` : ''}
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: clamp(20px, 2.5vw, 36px) clamp(24px, 3.2vw, 48px); background: linear-gradient(150deg, #091124 0%, #050914 100%); border-left: 6px solid #f59e0b; border-radius: 12px; box-shadow: inset 0 2px 14px rgba(0,0,0,0.65), 0 12px 35px rgba(0,0,0,0.5); min-height: 0;">
+              <i class="fa-solid fa-quote-left" style="font-size: clamp(1.8rem, 2.6vw, 3.2rem); color: #f59e0b; opacity: 0.85; margin-bottom: 12px; display: block; flex-shrink: 0;"></i>
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.25rem, 1.8vw, 1.65rem); color: #ffffff; line-height: 1.8; font-style: italic; letter-spacing: 0.2px; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">
+                ${writtenText}
+              </div>
+            </div>
           </div>
         `;
       } else {
-        bodyEl.textContent = text;
+        if (cardEl) {
+          cardEl.classList.remove('modal-card-written');
+          cardEl.classList.add('modal-card-visual');
+        }
+        if (typeBadge) {
+          typeBadge.innerHTML = '<i class="fa-solid fa-camera"></i> Primary Visual Source';
+          typeBadge.style.color = '#38bdf8';
+          typeBadge.style.background = 'rgba(2, 132, 199, 0.2)';
+          typeBadge.style.borderColor = 'rgba(56, 189, 248, 0.35)';
+        }
+        titleEl.textContent = title || 'Archival Visual Evidence';
+        if (hasValidImg) {
+          modalImg.src = imgSrc;
+          imgContainer.style.display = 'block';
+        } else {
+          imgContainer.style.display = 'none';
+        }
+        bodyEl.innerHTML = text ? `
+          <div style="font-size: clamp(1rem, 1.25vw, 1.2rem); color: #cbd5e1; line-height: 1.65; text-align: center; margin-top: 14px; padding: 0 12px; flex-shrink: 0;">
+            ${text}
+          </div>
+        ` : '';
       }
-      const imgContainer = document.getElementById('modal-img-container');
-      const modalImg = document.getElementById('modal-img');
-      if (imgSrc) {
-        modalImg.src = imgSrc;
-        imgContainer.style.display = 'block';
-      } else {
-        imgContainer.style.display = 'none';
-      }
-      document.getElementById('detail-modal').style.display = 'flex';
+
+      modalEl.style.display = 'flex';
     }
 
     function closeModalDirect() {

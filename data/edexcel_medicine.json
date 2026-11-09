@@ -874,11 +874,11 @@
           "act_title": "Stage 3: Christian Astrology & Planetary Conjunction — How did the Church reconcile astrology with Christian doctrine?",
           "theme": "Astrological Influences and the Zodiac Man",
           "title": "Astrological Influences and the Zodiac Man",
-          "content": "Few diseases demonstrated the fusion of physical malady and spiritual judgment as vividly as leprosy. Lepers were believed to bear an outward physical sign of internal moral corruption and sinful lust, though some religious orders also viewed them with Christian pity as sharing Christ’s earthly sufferings. Once diagnosed by a priest or bishop, lepers were legally cast out of society through a formal burial rite: earth was cast upon their feet to symbolise that they were dead to the world. They were compelled to reside in isolated leper houses (lazar houses) outside town boundaries, wear distinctive grey cloaks, and rattle wooden clappers to warn healthy travellers away.",
+          "content": "Alongside divine intervention, medieval society relied heavily on astrology to explain the unpredictable timing and severity of disease. Drawing upon Arab scholarship and classical cosmological texts, medieval physicians believed that the macrocosm of celestial planets directly influenced the microcosm of the human anatomy. The position of the Moon, Mars, and Saturn was thought to govern specific bodily organs and fluids. Before administering treatments such as phlebotomy (bloodletting), purging, or compounding herbal cordials, physicians consulted complex almanacs and zodiac diagrams. Operating while the Moon was in an unfavorable sign was believed to bring fatal hemorrhaging or exacerbate corrupt internal humours.",
           "text": "Alongside divine intervention, medieval society relied heavily on astrology to explain the unpredictable timing and severity of disease. Drawing upon Arab scholarship and classical cosmological texts, medieval physicians believed that the macrocosm of celestial planets directly influenced the microcosm of the human anatomy. The position of the Moon, Mars, and Saturn was thought to govern specific bodily organs and fluids. Before administering treatments such as phlebotomy (bloodletting), purging, or compounding herbal cordials, physicians consulted complex almanacs and zodiac diagrams. Operating while the Moon was in an unfavorable sign was believed to bring fatal hemorrhaging or exacerbate corrupt internal humours.",
-          "image": "/images/medieval_church_interior.jpg",
-          "caption": "Medieval church interior where liturgical processions and prayers were offered to avert divine judgment.",
-          "image_alt": "Interior of a medieval vaulted church with stained glass windows",
+          "image": "/images/zodiac_man.jpg",
+          "caption": "Fourteenth-century illuminated vellum chart illustrating the Zodiac Man (Homo Signorum), showing planetary governance of bodily organs.",
+          "image_alt": "Zodiac Man manuscript illumination showing astrological signs on human anatomy",
           "isReversed": true,
           "sources": [
             {
@@ -910,11 +910,11 @@
           "act_title": "Stage 4: Purgatory, Saints & Holy Relics — Why did sick people turn to pilgrimage shrines rather than doctors?",
           "theme": "Spiritual Intercession, Relics, and Miracle Cures",
           "title": "Spiritual Intercession, Relics, and Miracle Cures",
-          "content": "Alongside divine intervention, medieval society relied heavily on astrology to explain the unpredictable timing and severity of disease. Drawing upon Arab scholarship and classical cosmological texts, medieval physicians believed that the macrocosm of celestial planets directly influenced the microcosm of the human anatomy. The position of the Moon, Mars, and Saturn was thought to govern specific bodily organs and fluids. Before administering treatments such as phlebotomy (bloodletting), purging, or compounding herbal cordials, physicians consulted complex almanacs and zodiac diagrams. Operating while the Moon was in an unfavorable sign was believed to bring fatal hemorrhaging or exacerbate corrupt internal humours.",
+          "content": "Because disease was viewed as fundamentally supernatural in origin, treatments were predominantly religious and spiritual. The sick undertook arduous pilgrimages to holy shrines—most famously the tomb of Archbishop Thomas Becket at Canterbury Cathedral or Our Lady of Walsingham. Pilgrims prayed before sacred reliquaries containing bone fragments, garments, or vials of saintly blood, believing that physical contact or proximity could channel miraculous divine healing. Wealthy families paid chantries to sing perpetual intercessory masses for their sick relatives, while communities carried holy relics in solemn street processions to ward off pestilence.",
           "text": "Because disease was viewed as fundamentally supernatural in origin, treatments were predominantly religious and spiritual. The sick undertook arduous pilgrimages to holy shrines—most famously the tomb of Archbishop Thomas Becket at Canterbury Cathedral or Our Lady of Walsingham. Pilgrims prayed before sacred reliquaries containing bone fragments, garments, or vials of saintly blood, believing that physical contact or proximity could channel miraculous divine healing. Wealthy families paid chantries to sing perpetual intercessory masses for their sick relatives, while communities carried holy relics in solemn street processions to ward off pestilence.",
-          "image": null,
-          "caption": null,
-          "image_alt": null,
+          "image": "/images/becket_pilgrim_badge.jpg",
+          "caption": "Cast lead-alloy pilgrim ampulla from the shrine of St Thomas Becket, Canterbury (c.1300), filled with holy water.",
+          "image_alt": "Lead alloy pilgrim ampulla flask of St Thomas Becket",
           "isReversed": false,
           "sources": [
             {
