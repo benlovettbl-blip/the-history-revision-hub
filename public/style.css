@@ -4209,6 +4209,98 @@ body.sen-mode .narrative-chunk.reading-highlight {
   opacity: 0.95;
 }
 
+/* Pupil Workbook Live Anchor & Progressive Disclosure Reveal */
+.stage-workbook-anchor-row {
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stage-triggers-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+
+.stage-trigger-chip {
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #f8fafc;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.73rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.stage-trigger-chip:hover {
+  background: rgba(2, 132, 199, 0.28) !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.3);
+}
+
+.stage-trigger-chip:active {
+  transform: translateY(0);
+}
+
+.btn-stage-model-toggle {
+  background: rgba(2, 132, 199, 0.22);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  color: #7dd3fc;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.70rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-stage-model-toggle:hover {
+  background: rgba(2, 132, 199, 0.38) !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);
+}
+
+.stage-model-reveal-panel {
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1.5px dashed #38bdf8;
+  border-radius: 6px;
+  color: #f8fafc;
+  animation: modelSlideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modelSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* In-Lesson Audio Playback Bar (Clean Minimalist Single-Button Standard) */
 .read-aloud-playback-bar {
   display: inline-flex;

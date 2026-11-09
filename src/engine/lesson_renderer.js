@@ -6690,7 +6690,38 @@ export function renderLesson(lesson) {
         matchedStage = stagesList[index] || null;
       }
 
-      let stageDateVal = (matchedStage && matchedStage.date) || '';
+      // Synchronize 1:1 with lesson.workbook_stages for pupil workbook alignment
+      const wbStagesList =
+        (lesson &&
+          lesson.workbook_stages &&
+          Array.isArray(lesson.workbook_stages) &&
+          lesson.workbook_stages) ||
+        [];
+
+      let matchedWbStage = null;
+      if (wbStagesList.length === (lesson?.narrative_blocks?.length || 0)) {
+        matchedWbStage = wbStagesList[index] || null;
+      } else if (decimalRef) {
+        matchedWbStage =
+          wbStagesList.find(
+            (s) =>
+              (s.para_ref &&
+                (s.para_ref === decimalRef ||
+                  s.para_ref === `[${decimalRef}]` ||
+                  s.para_ref.includes(`[${decimalRef}]`))) ||
+              (s.paraRef &&
+                (s.paraRef === decimalRef ||
+                  s.paraRef === `[${decimalRef}]` ||
+                  s.paraRef.includes(`[${decimalRef}]`))) ||
+              (s.step && s.step === index + 1),
+          ) ||
+          wbStagesList[index] ||
+          null;
+      } else {
+        matchedWbStage = wbStagesList[index] || null;
+      }
+
+      let stageDateVal = (matchedStage && matchedStage.date) || (matchedWbStage && (matchedWbStage.date || matchedWbStage.dates)) || '';
       const stageObj = matchedStage;
       const stageNum = stageObj ? (stageObj.step || index + 1) : index + 1;
       let cleanHeadingTitle = '';
@@ -7502,7 +7533,16 @@ export function renderLesson(lesson) {
       const hasPureVisual = Boolean(effectiveImage && !block.image_context);
       const isReversed = hasPureVisual ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
 
-      const stageQ = stageObj ? (stageObj.question || '') : '';
+      let stageQ = stageObj ? (stageObj.question || '') : '';
+      if (!stageQ && matchedWbStage) {
+        stageQ =
+          matchedWbStage.heading ||
+          matchedWbStage.focus_clue ||
+          matchedWbStage.question ||
+          matchedWbStage.prompt ||
+          matchedWbStage.title ||
+          '';
+      }
       const matchingLetter = ['A', 'B', 'C', 'D', 'E'][index];
       const isFiveBlockUnit = [
         'cme_new',
@@ -7513,8 +7553,92 @@ export function renderLesson(lesson) {
         'edexcel_medicine',
       ].includes(window.currentUnitId || unitId);
 
+      // Extract 3 Pupil Workbook Trigger Terms and Model Sentence for Live Classroom Teaching
+      let triggerTerms = [];
+      if (matchedWbStage) {
+        if (Array.isArray(matchedWbStage.bullets) && matchedWbStage.bullets.length > 0) {
+          triggerTerms = matchedWbStage.bullets;
+        } else if (Array.isArray(matchedWbStage.words) && matchedWbStage.words.length > 0) {
+          triggerTerms = matchedWbStage.words.map((w) =>
+            typeof w === 'string' ? w : w.term || w.word || '',
+          );
+        } else if (Array.isArray(matchedWbStage.keywords) && matchedWbStage.keywords.length > 0) {
+          triggerTerms = matchedWbStage.keywords.map((k) =>
+            typeof k === 'string' ? k : k.term || k.word || '',
+          );
+        }
+      }
+      triggerTerms = triggerTerms.filter(Boolean);
+
+      const wbModelSentence =
+        (matchedWbStage &&
+          (matchedWbStage.model_sentence ||
+            matchedWbStage.modelSentence ||
+            matchedWbStage.exemplar ||
+            '')) ||
+        '';
+
+      let workbookAnchorHtml = '';
+      if (triggerTerms.length > 0 || wbModelSentence) {
+        const modelRevealId = `stage-model-reveal-${stageNum}-${index}`;
+        const chipsHtml = triggerTerms
+          .map((term, tIdx) => {
+            const escapedTerm = String(term).replace(/"/g, '&quot;').replace(/'/g, "\\'");
+            return `
+              <span class="stage-trigger-chip no-print" onclick="event.stopPropagation(); if(window.spotlightTriggerTerm){window.spotlightTriggerTerm('${escapedTerm}', 'para-${index + 1}');}" title="Pupil Workbook Trigger ${tIdx + 1} &bull; Click to spotlight in text" style="background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(56, 189, 248, 0.35); color: #f8fafc; font-family: 'Inter', sans-serif; font-size: 0.73rem; font-weight: 600; padding: 3px 9px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;">
+                <span style="color: #38bdf8; font-weight: 900; font-size: 0.70rem;">${tIdx + 1}.</span>
+                <span>${term}</span>
+              </span>
+            `;
+          })
+          .join('');
+
+        const revealBtnHtml = wbModelSentence
+          ? `
+            <button type="button" class="btn-stage-model-toggle no-print" onclick="event.stopPropagation(); if(window.toggleStageModelSentence){window.toggleStageModelSentence(this, '${modelRevealId}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 10px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease; white-space: nowrap;" title="Click to reveal gold standard synthesis sentence for pupil self-assessment">
+              <i class="fa-regular fa-eye"></i> <span>Reveal Target Synthesis</span>
+            </button>
+          `
+          : '';
+
+        const modelPanelHtml = wbModelSentence
+          ? `
+            <div id="${modelRevealId}" class="stage-model-reveal-panel" style="display: none; margin-top: 10px; padding: 10px 14px; background: rgba(15, 23, 42, 0.75); border: 1.5px dashed #38bdf8; border-radius: 6px; color: #f8fafc; transition: all 0.25s ease;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 5px; gap: 8px; flex-wrap: wrap;">
+                <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-solid fa-award" style="color: #f59e0b;"></i> Gold Standard Synthesis Model &bull; Workbook Self-Assessment
+                </span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 0.65rem; color: #94a3b8; font-style: italic;">
+                  Pupil Green-Pen Check
+                </span>
+              </div>
+              <div style="font-family: 'Lora', Georgia, serif; font-size: 0.96rem; line-height: 1.55; color: #f1f5f9;">
+                &ldquo;${wbModelSentence}&rdquo;
+              </div>
+            </div>
+          `
+          : '';
+
+        workbookAnchorHtml = `
+          <div class="stage-workbook-anchor-row" style="margin-top: 10px; padding-top: 9px; border-top: 1px solid rgba(148, 163, 184, 0.2); display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;">
+              <div class="stage-triggers-container" style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; flex: 1 1 auto;">
+                <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px; margin-right: 2px;">
+                  <i class="fa-solid fa-pen-nib"></i> Workbook Triggers:
+                </span>
+                ${chipsHtml}
+              </div>
+              ${revealBtnHtml}
+            </div>
+            ${modelPanelHtml}
+          </div>
+        `;
+      }
+
+      const isHeaderUnified = Boolean(stageQ || workbookAnchorHtml);
+
       let headerBlockHtml = '';
-      if (stageQ) {
+      if (isHeaderUnified) {
         headerBlockHtml = `
           <div class="workbook-stage-question-banner unified-stage-header-card" id="stage-banner-${stageNum}" style="margin-bottom: 14px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 8px; padding: 12px 16px; color: #ffffff; box-shadow: 0 2px 6px rgba(15,23,42,0.12);">
             <div class="stage-header-top-bar" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
@@ -7534,24 +7658,32 @@ export function renderLesson(lesson) {
                 ${renderAudioPlaybackBar('Read Aloud Paragraph')}
               </div>
             </div>
+            ${
+              stageQ
+                ? `
             <div class="stage-enquiry-subcard" onclick="if(window.jumpToSpineCard){window.jumpToSpineCard(${stageNum});}" title="Click to view Stage ${stageNum} causal dominoes in Chronology Spine above" style="padding-top: 10px; border-top: 1px solid rgba(148, 163, 184, 0.2); cursor: pointer;">
               <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
                 <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px;">
                   <i class="fa-solid fa-book-open"></i> Stage ${stageNum} Workbook Enquiry
                 </span>
-                ${matchingLetter && isFiveBlockUnit
-            ? `
+                ${
+                  matchingLetter && isFiveBlockUnit
+                    ? `
                   <button type="button" class="stage-source-jump-btn" onclick="event.stopPropagation(); if(window.jumpToSourceDrawer){window.jumpToSourceDrawer('${matchingLetter}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;" title="Jump directly to Source ${matchingLetter} Evidence Drawer below">
                     <i class="fa-solid fa-scroll" style="color: #38bdf8;"></i> Jump to Source ${matchingLetter}
                   </button>
                 `
-            : ''
-          }
+                    : ''
+                }
               </div>
               <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #f8fafc; line-height: 1.35;">
                 &ldquo;${stageQ}&rdquo;
               </div>
             </div>
+            `
+                : ''
+            }
+            ${workbookAnchorHtml}
           </div>
         `;
       } else {
@@ -7576,7 +7708,7 @@ export function renderLesson(lesson) {
 
       const narrativeChunkHtml = `
               <div id="para-${index + 1}" class="narrative-chunk ${hasPureVisual ? '' : 'standalone-narrative-chunk'}" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 18px 20px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
-                ${stageQ ? '' : headerBlockHtml}
+                ${isHeaderUnified ? '' : headerBlockHtml}
                 <div class="narrative-text" style="width: 100%; ${hasPureVisual ? '' : 'max-width: 880px;'} line-height: ${hasPureVisual ? '1.72' : '1.75'}; color: #0f172a; font-size: 1.15rem;">${styledContent}</div>
               </div>
       `;
@@ -7600,7 +7732,7 @@ export function renderLesson(lesson) {
           </div>
         `;
         topNarrativeHtml = `
-          ${stageQ ? headerBlockHtml : ''}
+          ${isHeaderUnified ? headerBlockHtml : ''}
           <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 16px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
             ${narrativeChunkHtml}
             ${visualPlateHtml}
@@ -7608,7 +7740,7 @@ export function renderLesson(lesson) {
         `;
       } else {
         topNarrativeHtml = `
-          ${stageQ ? headerBlockHtml : ''}
+          ${isHeaderUnified ? headerBlockHtml : ''}
           ${narrativeChunkHtml}
           ${imageHtml}
         `;
@@ -13075,7 +13207,6 @@ if (typeof window !== 'undefined') {
         <!-- Body -->
         <div style="padding: 24px;">
           ${lessonTitle ? `<div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.18rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; border-bottom: 1px solid #f1f5f9; padding-bottom: 10px; line-height: 1.35;">${lessonTitle}</div>` : ''}
-            const adv = task.adva
           <div style="background: #f8fafc; border-left: 4px solid #2563eb; border-radius: 6px; padding: 16px 20px; margin-bottom: 22px; font-size: 1rem; color: #1e293b; line-height: 1.6; box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);">
             <div style="font-size: 0.75rem; font-weight: 800; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
               <i class="fa-solid fa-scroll" style="color: #3b82f6;"></i> Official Syllabus Focus
@@ -13110,5 +13241,43 @@ if (typeof window !== 'undefined') {
   window.closeLessonSpecModal = function () {
     const existing = document.getElementById('lesson-spec-modal-overlay');
     if (existing) existing.remove();
+  };
+
+  window.toggleStageModelSentence = function (btn, targetId) {
+    const panel = document.getElementById(targetId);
+    if (!panel) return;
+    const isHidden = panel.style.display === 'none' || !panel.style.display;
+    if (isHidden) {
+      panel.style.display = 'block';
+      if (btn) {
+        btn.innerHTML = '<i class="fa-regular fa-eye-slash"></i> <span>Hide Model</span>';
+        btn.style.background = 'rgba(239, 68, 68, 0.22)';
+        btn.style.borderColor = 'rgba(248, 113, 113, 0.5)';
+        btn.style.color = '#fca5a5';
+      }
+    } else {
+      panel.style.display = 'none';
+      if (btn) {
+        btn.innerHTML = '<i class="fa-regular fa-eye"></i> <span>Reveal Target Synthesis</span>';
+        btn.style.background = 'rgba(2, 132, 199, 0.22)';
+        btn.style.borderColor = 'rgba(56, 189, 248, 0.45)';
+        btn.style.color = '#7dd3fc';
+      }
+    }
+  };
+
+  window.spotlightTriggerTerm = function (termText, paraId) {
+    const container = document.getElementById(paraId);
+    if (!container) return;
+    container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const originalBorder = container.style.borderLeft;
+    const originalShadow = container.style.boxShadow;
+    container.style.transition = 'all 0.3s ease';
+    container.style.borderLeft = '6px solid #0ea5e9';
+    container.style.boxShadow = '0 0 24px rgba(14, 165, 233, 0.4)';
+    setTimeout(() => {
+      container.style.borderLeft = originalBorder;
+      container.style.boxShadow = originalShadow;
+    }, 2000);
   };
 }
