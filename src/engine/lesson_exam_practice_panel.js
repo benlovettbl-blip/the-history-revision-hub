@@ -183,8 +183,6 @@ export function renderLessonExamPracticeHTML(unitId, lesson) {
                       const badgeIcon =
                         key === 'tier_4m' || key === 'tier_8m' || key === 'tier_12m' || key === 'tier_16m'
                           ? 'fa-star'
-                          : key === 'tier_10m' || key === 'tier_20m'
-                          ? 'fa-rocket'
                           : key === 'tier_5m' || key === 'tier_6m' || key === 'tier_9m'
                           ? 'fa-list-check'
                           : key === 'tier_2m' || key === 'tier_3m'
@@ -232,13 +230,6 @@ export function renderLessonExamPracticeHTML(unitId, lesson) {
                         verdictBorder = '#10b981';
                         verdictBg = '#f0fdf4';
                         verdictColor = '#064e3b';
-                      } else if (key === 'tier_10m' || key === 'tier_20m') {
-                        themeBorder = '#e9d5ff';
-                        themeBadgeBg = '#f3e8ff';
-                        themeBadgeColor = '#7e22ce';
-                        verdictBorder = '#a855f7';
-                        verdictBg = '#faf5ff';
-                        verdictColor = '#581c87';
                       }
 
                       return `
@@ -279,7 +270,7 @@ export function renderLessonExamPracticeHTML(unitId, lesson) {
                   return `
                     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
                       <span style="font-weight: 800; font-size: 0.82rem; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
-                        <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> Pearson Edexcel 4-Tier Examiner Ladder
+                        <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> Pearson Edexcel ${tierKeys.length}-Tier Mark Scheme Ladder
                       </span>
                       <span style="font-size: 0.74rem; font-weight: 600; color: #64748b;">
                         Toggle rungs to analyze mark boundaries

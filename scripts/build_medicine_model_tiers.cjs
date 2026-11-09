@@ -65,14 +65,6 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         badge: "Edexcel Benchmark",
         text: cleanExisting,
         verdict: "AO1 (4 marks). Full marks awarded. Two distinct historical features identified, each supported by precise factual evidence (clinical terminology, operational statistics, and historical names)."
-      },
-      tier_10m: {
-        title: "Level 10 Scholar 🚀",
-        score: "Level 10",
-        level: "Academic Distinction (Scholar)",
-        badge: "A* Masterclass",
-        text: `<p><strong>Primary Tactical/Clinical Feature:</strong> Medical administration on the Western Front established standardized clinical protocols specifically engineered to counteract high-explosive shrapnel trauma and anaerobic soil contaminants.<br><strong>Operational Detail:</strong> Interventions such as the Carrel-Dakin buffered sodium hypochlorite continuous irrigation flush for gas gangrene and the forward deployment of the Thomas Splint (1915)—which stabilized compound fractures and reduced femur mortality from 80% to 20%—fundamentally transformed battlefield survival.<br><br><strong>Secondary Triage/Logistical Feature:</strong> The casualty evacuation chain functioned as a multi-echelon triage continuum linking Regimental Aid Posts, Advanced Dressing Stations, and Casualty Clearing Stations.<br><strong>Operational Detail:</strong> Staged medical logistics ensured life-saving surgical debridement and blood transfusions occurred within the critical physiological 'golden window' before rail evacuation to coastal Base Hospitals.</p>`,
-        verdict: "Elite tactical and clinical analysis synthesizing ballistics, anaerobic pathophysiology, and operational evacuation triage."
       }
     };
   }
@@ -101,14 +93,6 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         badge: "Edexcel Benchmark",
         text: cleanExisting,
         verdict: "AO3 (8 marks). Full marks awarded. Comprehensively evaluates both content and provenance using precise historical knowledge. Strictly obeys the independent evaluation and zero-comparison mark scheme criteria."
-      },
-      tier_10m: {
-        title: "Level 10 Scholar 🚀",
-        score: "Level 10",
-        level: "Academic Distinction (Scholar)",
-        badge: "A* Masterclass",
-        text: `<p>The evidentiary utility of the source lies in its capacity to illuminate the systemic collision between modern industrial firepower and frontline medical infrastructure. The document provides unmediated testimony on the physiological and tactical friction of evacuation across saturated, artillery-pulverized terrain.<br><br>When interrogating provenance, the historian must balance the source's operational authenticity against institutional constraints. While private testimony avoids the sanitized propaganda imperatives of the British War Office and civilian press censorship, it inherently captures localized tactical friction rather than administrative competence. Therefore, its evidentiary value is optimized when triangulated against RAMC War Diaries and DGAMS casualty returns to assess whether these conditions were anomalous or systemic.</p>`,
-        verdict: "Elite historiographical evaluation analyzing tactical doctrine, ballistic cratering, and institutional censorship."
       }
     };
   }
@@ -130,14 +114,6 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         badge: "Edexcel Benchmark",
         text: cleanExisting,
         verdict: "AO3 (4 marks). Full marks awarded. Precise detail quoted, question is tightly focused on evacuation/treatment logistics, source names a specific contemporary document (e.g. RAMC Field Ambulance War Diary or Battalion Medical Officer Casebook), and explanation directly demonstrates historical utility."
-      },
-      tier_10m: {
-        title: "Level 10 Scholar 🚀",
-        score: "Level 10",
-        level: "Academic Distinction (Scholar)",
-        badge: "A* Masterclass",
-        text: `<p><strong>Detail in Source that I would follow up:</strong><br>The logistical bottlenecks and severe transport delays encountered when evacuating wounded personnel under active artillery interdiction.<br><br><strong>Question I would ask:</strong><br>To what extent did the introduction of motorized field ambulances and light trench tramways reduce casualty transit times from Regimental Aid Posts to Casualty Clearing Stations during major offensives?<br><br><strong>Type of source I would look for:</strong><br>The official monthly War Diaries of the RAMC Director of Medical Services (Third Army) and the operational logs of the Motor Ambulance Convoys for the sector.<br><br><strong>How this might help answer my question:</strong><br>These administrative logs contain precise quantitative tables measuring average evacuation transit hours alongside commanding officers' confidential reports evaluating whether vehicular motor transport overcame the paralysis caused by shell cratering and mud.</p>`,
-        verdict: "Exemplary primary archival research strategy linking operational documentation to medical historiography."
       }
     };
   }
@@ -170,14 +146,6 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         badge: "Edexcel Benchmark",
         text: cleanExisting,
         verdict: "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content (including extensive own knowledge beyond the stimulus), structured in sustained, analytical PEEL paragraphs with precise historical vocabulary throughout."
-      },
-      tier_20m: {
-        title: "Level 10 Scholar 🚀",
-        score: "Level 10",
-        level: "Academic Distinction (Scholar)",
-        badge: "A* Masterclass",
-        text: `<p>Medical transformation was driven by the convergence of intellectual paradigm shifts, technological precision, and state-sanctioned institutional reform.<br><br>Firstly, empirical epistemology dismantled classical dogmatism: medical innovators rejected Galenic authority in favor of direct anatomical dissection, controlled laboratory experimentation, and statistical clinical observation, fundamentally redefining disease etiology.<br><br>Secondly, technological and chemical innovation provided the physical apparatus necessary to translate theory into curative intervention: advances in microscopy, chemical antiseptics, and standardized synthetic pharmaceuticals eliminated historical barriers of infection and diagnostic blindness.<br><br>Thirdly, these clinical breakthroughs achieved societal impact only when mobilized through centralized legislative mandates, municipal sanitary infrastructure, and universal healthcare funding, which democratized access to life-saving clinical progress across the British population.</p>`,
-        verdict: "Masterclass causal synthesis weighing epistemological revolution, technological apparatus, and socio-political distribution."
       }
     };
   }
@@ -210,14 +178,6 @@ function generateTiersForQuestion(q, lesson, qIdx) {
         badge: "Edexcel Benchmark",
         text: cleanExisting,
         verdict: "AO1/AO2 (16 marks) + AO4 (4 marks SPaG) = 20/20. Full marks awarded. Demonstrates sustained, balanced analysis across three distinct aspects, weighing competing historical factors with criteria-driven analytical judgement."
-      },
-      tier_20m: {
-        title: "Level 10 Scholar 🚀",
-        score: "Level 10 (16+4)",
-        level: "Academic Distinction (Scholar)",
-        badge: "A* Masterclass",
-        text: `<p>Historical analysis demonstrates that medical progress cannot be attributed to a monocausal catalyst, but rather represents a dialectical interaction between scientific breakthrough, professional infrastructure, and socio-economic distribution.<br><br>While individual genius and scientific innovation generated the indispensable conceptual breakthroughs that overturned ancient orthodoxy, these discoveries remained sterile without institutional validation, peer reproduction, and public dissemination.<br><br>Crucially, the ultimate determinant of medical transformation was the intervention of the centralized state: only legislative enforcement, universal healthcare infrastructure, and compulsory municipal sanitation could translate clinical theory into sustained, population-wide mortality reduction.</p>`,
-        verdict: "Elite historiographical synthesis weighing dialectical paradigms of scientific discovery, institutional inertia, and state authority."
       }
     };
   }
@@ -249,14 +209,6 @@ function generateTiersForQuestion(q, lesson, qIdx) {
       badge: "Edexcel Benchmark",
       text: cleanExisting,
       verdict: "AO2 (4 marks). Full marks awarded. Comparative criterion explicitly stated, supported by precise named historical evidence from BOTH periods, and concluded with a direct analytical comparison."
-    },
-    tier_10m: {
-      title: "Level 10 Scholar 🚀",
-      score: "Level 10",
-      level: "Academic Distinction (Scholar)",
-      badge: "A* Masterclass",
-      text: `<p>The comparative paradigm reflects an epistemological transformation from classical deductive authority to empirical clinical nosology.<br><br>In the earlier era, diagnosis and therapy were governed by scholastic adherence to Galenic humoral pathology and environmental miasma, treating illness as an internal systemic imbalance deduced from uroscopy and astrological conjunctions. Conversely, subsequent medical developments replaced theoretical dogmatism with empirical bedside observation, pathological anatomy, and bacteriological vector identification, fundamentally redefining disease from an individual imbalance to an externally caused, identifiable biological entity.</p>`,
-      verdict: "Elite historiographical comparison analyzing ontological shifts from classical humoral deduction to empirical clinical pathology."
     }
   };
 }
