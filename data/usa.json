@@ -883,7 +883,7 @@
           "act_title": "Stage 5: Emergence of Non-Violent Direct Action — Why did early non-violent direct action by CORE mark an important tactical shift from courtroom litigation?",
           "title": "Emergence of Non-Violent Direct Action",
           "theme_heading": "Emergence of Non-Violent Direct Action",
-          "text": "<span class=\"para-ref\">[5.1]</span> **Black Veterans and the Double V Campaign:** The return of over one million Black servicemen from the battlefields of the Second World War created a profound crisis of expectations. Having fought abroad against fascist tyranny under the banner of democracy, Black veterans returned home to the American South only to face routine humiliation, racial slurs, and lynch mob violence. The Black press championed the \"Double V Campaign\"—victory over fascism abroad and victory over racism at home. Veterans refused to accept pre-war subservience, swelling the membership of local NAACP branches and providing disciplined leadership for the emerging civil rights movement.\n\n<span class=\"para-ref\">[5.2]</span> **Executive Order 9981 and Cold War Geopolitics:** Racial violence against returning veterans shocked President Harry S. Truman. In 1947, Truman's Committee on Civil Rights published *To Secure These Rights*, a scathing indictment of American apartheid that warned racial inequality was damaging US prestige in the Cold War against Soviet propaganda. In July 1948, defying fierce opposition from Southern Democrats (\"Dixiecrats\"), Truman signed Executive Order 9981, officially ordering the desegregation of the United States Armed Forces. This marked the first decisive federal executive action against racial discrimination since Reconstruction.\n\n<span class=\"para-ref\">[5.3]</span> **The Limits of Executive Power and Regional Entrenchment:** By 1954, the foundational groundwork for the modern civil rights revolution had been laid, but the daily reality for Southern Black Americans remained virtually unchanged. Truman's executive orders did not extend to state Jim Crow statutes, and congressional civil rights legislation was repeatedly killed by Southern senators through Senate filibusters. The white power structure—enforced by all-white police forces, juries, and the omnipresent threat of the Ku Klux Klan—remained completely intact across the Deep South.\n\n<span class=\"para-ref\">[5.4]</span> **A Nation at the Crossroads:** Nevertheless, the early 1950s witnessed the convergence of essential causal mechanisms: a legally triumphant NAACP armed with the 14th Amendment, a growing network of non-violent direct-action activists, and a federal executive increasingly sensitive to international Cold War embarrassment. As the NAACP prepared its final, defining assault on segregated public schools in *Brown v. Board of Education*, the fragile edifice of Southern white supremacy stood on the brink of an unprecedented constitutional explosion.",
+          "text": "<span class=\"para-ref\">[5.1]</span> **Black Veterans and the Double V Campaign:** Over one million Black soldiers returned from the Second World War having fought against fascist tyranny under the banner of democracy. Black newspapers championed the \"Double V Campaign\"—demanding victory over fascism abroad and victory over racism at home. Returning veterans refused to accept pre-war subservience, providing disciplined leadership and swelling local NAACP branches across the South.<br><br><span class=\"para-ref\">[5.2]</span> **Executive Order 9981 & Emerging Defiance:** Violence against returning Black veterans shocked President Harry S. Truman. In July 1948, Truman signed Executive Order 9981, desegregating the United States Armed Forces. Although Southern Jim Crow laws remained firmly entrenched, grassroots resistance grew rapidly, laying the essential foundation for the modern non-violent civil rights movement.",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> **Black Veterans and the Double V Campaign:** The return of over one million Black servicemen from the battlefields of the Second World War created a profound crisis of expectations. Having fought abroad against fascist tyranny under the banner of democracy, Black veterans returned home to the American South only to face routine humiliation, racial slurs, and lynch mob violence. The Black press championed the \"Double V Campaign\"—victory over fascism abroad and victory over racism at home. Veterans refused to accept pre-war subservience, swelling the membership of local NAACP branches and providing disciplined leadership for the emerging civil rights movement.",
             "<span class=\"para-ref\">[5.2]</span> **Executive Order 9981 and Cold War Geopolitics:** Racial violence against returning veterans shocked President Harry S. Truman. In 1947, Truman's Committee on Civil Rights published *To Secure These Rights*, a scathing indictment of American apartheid that warned racial inequality was damaging US prestige in the Cold War against Soviet propaganda. In July 1948, defying fierce opposition from Southern Democrats (\"Dixiecrats\"), Truman signed Executive Order 9981, officially ordering the desegregation of the United States Armed Forces. This marked the first decisive federal executive action against racial discrimination since Reconstruction.",
@@ -919,7 +919,9 @@
               "source": "/images/usa_school_segregation_brown_1954_map.png"
             }
           ],
-          "isReversed": false
+          "isReversed": false,
+          "theme": "Emergence of Non-Violent Direct Action",
+          "content": "<span class=\"para-ref\">[5.1]</span> **Black Veterans and the Double V Campaign:** Over one million Black soldiers returned from the Second World War having fought against fascist tyranny under the banner of democracy. Black newspapers championed the \"Double V Campaign\"—demanding victory over fascism abroad and victory over racism at home. Returning veterans refused to accept pre-war subservience, providing disciplined leadership and swelling local NAACP branches across the South.<br><br><span class=\"para-ref\">[5.2]</span> **Executive Order 9981 & Emerging Defiance:** Violence against returning Black veterans shocked President Harry S. Truman. In July 1948, Truman signed Executive Order 9981, desegregating the United States Armed Forces. Although Southern Jim Crow laws remained firmly entrenched, grassroots resistance grew rapidly, laying the essential foundation for the modern non-violent civil rights movement."
         }
       ],
       "primary_source": null,
@@ -1862,6 +1864,24 @@
           "title": "Emergence of Non-Violent Direct Action",
           "dates": "1942–1954"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what 1896 Supreme Court ruling established the doctrine of 'separate but equal'?",
+          "answer": "Plessy v. Ferguson, which sanctioned legal racial segregation across the American South."
+        },
+        {
+          "question": "Using paragraph [2.1], what two methods were used by Southern states to disenfranchise Black voters?",
+          "answer": "Discriminatory poll taxes and arbitrary literacy tests administered by white registrars."
+        },
+        {
+          "question": "According to paragraph [3.1], what legal strategy did Thurgood Marshall and the NAACP use to attack Jim Crow?",
+          "answer": "Taking cases to federal courts using the Equal Protection Clause of the 14th Amendment to prove segregated facilities were inherently unequal."
+        },
+        {
+          "question": "Using paragraph [5.1], what was the 'Double V Campaign' championed by Black veterans of the Second World War?",
+          "answer": "Demanding victory over fascist tyranny abroad and victory over racial segregation and discrimination at home."
+        }
       ]
     },
     {
@@ -2022,7 +2042,7 @@
           "act_title": "Stage 2: Southern Massive Resistance — How did Southern political leaders organize 'Massive Resistance' to block court-ordered school integration?",
           "title": "Southern Massive Resistance",
           "theme_heading": "Southern Massive Resistance",
-          "text": "<span class=\"para-ref\">[2.1]</span> **Chief Justice Earl Warren and the Unanimous Verdict:** On 17 May 1954, newly appointed Chief Justice Earl Warren delivered the unanimous 9–0 verdict of the Supreme Court. Recognizing that any judicial dissent would be weaponized by Southern segregationists, Warren had lobbied skeptical associate justices for months to forge total consensus. The ruling declared unequivocally: *\"In the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.\"* After 58 years, the legal foundation of Jim Crow apartheid was constitutionally shattered.\n\n<span class=\"para-ref\">[2.2]</span> **The Fatal Compromise of Brown II and \"All Deliberate Speed\":** While Brown was hailed as a magnificent constitutional milestone, the Supreme Court issued an ambiguous implementation ruling in May 1955 (*Brown II*). Refusing to set a binding deadline, the Court merely ordered desegregation to proceed *\"with all deliberate speed\"*. Southern school boards seized upon this vague phrase to delay integration indefinitely. Emboldened by judicial hesitation, Southern politicians launched \"Massive Resistance\", pledging to defund public education, shut down schools, and resist federal desegregation by any lawful means.",
+          "text": "<span class=\"para-ref\">[2.1]</span> **Chief Justice Earl Warren & The Unanimous Verdict:** On 17 May 1954, Chief Justice Earl Warren delivered a unanimous 9–0 Supreme Court ruling. Warren forged total consensus to prevent segregationist dissent, declaring: *\"In the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.\"* The 58-year-old legal precedent of Jim Crow was constitutionally broken.<br><br><span class=\"para-ref\">[2.2]</span> **The Flaw of Brown II & \"Massive Resistance\":** However, in May 1955 the Court issued *Brown II*, ordering desegregation to proceed only *\"with all deliberate speed\"*. Southern school boards exploited this vague phrase to delay integration indefinitely. Southern congressmen signed the \"Southern Manifesto\", pledging \"Massive Resistance\" and threatening to shut public schools rather than admit Black children.",
           "paragraphs": [
             "<span class=\"para-ref\">[2.1]</span> **Chief Justice Earl Warren and the Unanimous Verdict:** On 17 May 1954, newly appointed Chief Justice Earl Warren delivered the unanimous 9–0 verdict of the Supreme Court. Recognizing that any judicial dissent would be weaponized by Southern segregationists, Warren had lobbied skeptical associate justices for months to forge total consensus. The ruling declared unequivocally: *\"In the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.\"* After 58 years, the legal foundation of Jim Crow apartheid was constitutionally shattered.",
             "<span class=\"para-ref\">[2.2]</span> **The Fatal Compromise of Brown II and \"All Deliberate Speed\":** While Brown was hailed as a magnificent constitutional milestone, the Supreme Court issued an ambiguous implementation ruling in May 1955 (*Brown II*). Refusing to set a binding deadline, the Court merely ordered desegregation to proceed *\"with all deliberate speed\"*. Southern school boards seized upon this vague phrase to delay integration indefinitely. Emboldened by judicial hesitation, Southern politicians launched \"Massive Resistance\", pledging to defund public education, shut down schools, and resist federal desegregation by any lawful means."
@@ -2057,7 +2077,9 @@
               "text": "The unwarranted decision of the Supreme Court in the public school cases is now bearing the fruit always produced when men substitute naked power for established law... We regard the decisions of the Supreme Court as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary undertaking to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people... We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation."
             }
           ],
-          "isReversed": true
+          "isReversed": true,
+          "theme": "Southern Massive Resistance",
+          "content": "<span class=\"para-ref\">[2.1]</span> **Chief Justice Earl Warren & The Unanimous Verdict:** On 17 May 1954, Chief Justice Earl Warren delivered a unanimous 9–0 Supreme Court ruling. Warren forged total consensus to prevent segregationist dissent, declaring: *\"In the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.\"* The 58-year-old legal precedent of Jim Crow was constitutionally broken.<br><br><span class=\"para-ref\">[2.2]</span> **The Flaw of Brown II & \"Massive Resistance\":** However, in May 1955 the Court issued *Brown II*, ordering desegregation to proceed only *\"with all deliberate speed\"*. Southern school boards exploited this vague phrase to delay integration indefinitely. Southern congressmen signed the \"Southern Manifesto\", pledging \"Massive Resistance\" and threatening to shut public schools rather than admit Black children."
         },
         {
           "act": 3,
@@ -2148,7 +2170,7 @@
           "act_title": "Stage 5: The Lost Year in Little Rock — What did the closure of Little Rock high schools during the 'Lost Year' reveal about the limits of initial desegregation?",
           "title": "The Lost Year in Little Rock",
           "theme_heading": "The Lost Year in Little Rock",
-          "text": "<span class=\"para-ref\">[5.1]</span> **The \"Lost Year\" and the Resilience of Resistance:** Although federal troops protected the Little Rock Nine through the academic year, white resistance was far from defeated. In September 1958, Governor Faubus took the extreme step of closing all four public high schools in Little Rock for an entire academic year (the \"Lost Year\"), attempting to force white pupils into private, segregated academies. It was not until the Supreme Court ruled in *Cooper v. Aaron* (1958) that states were bound by Supreme Court orders that Little Rock schools reopened on an integrated basis in 1959.\n\n<span class=\"para-ref\">[5.2]</span> **The Realities of Educational Desegregation by 1960:** The battle over education exposed the fundamental dualism of the early civil rights movement. While the NAACP won total constitutional supremacy in the federal courts, the absence of executive enforcement mechanisms meant that desegregation was painfully slow. By 1960, six years after the Brown ruling, less than one percent of Black children in the eleven states of the former Confederacy attended school with white children. The legal victory was complete, but the struggle on the ground had only just begun.",
+          "text": "<span class=\"para-ref\">[5.1]</span> **The \"Lost Year\" in Little Rock (1958–1959):** In September 1958, Governor Faubus escalated white resistance by shutting all four Little Rock public high schools for an entire year (the \"Lost Year\"), attempting to divert white pupils into segregated private academies. Only in 1959 did federal courts force Little Rock schools to reopen on an integrated basis.<br><br><span class=\"para-ref\">[5.2]</span> **The Reality of Desegregation by 1960:** The Little Rock crisis exposed the limits of judicial rulings without executive enforcement. By 1960, six years after *Brown v. Board*, fewer than 1% of Black children in the former Confederate states attended school with white children. The legal victory was won, but desegregation on the ground remained agonizingly slow.",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> **The \"Lost Year\" and the Resilience of Resistance:** Although federal troops protected the Little Rock Nine through the academic year, white resistance was far from defeated. In September 1958, Governor Faubus took the extreme step of closing all four public high schools in Little Rock for an entire academic year (the \"Lost Year\"), attempting to force white pupils into private, segregated academies. It was not until the Supreme Court ruled in *Cooper v. Aaron* (1958) that states were bound by Supreme Court orders that Little Rock schools reopened on an integrated basis in 1959.",
             "<span class=\"para-ref\">[5.2]</span> **The Realities of Educational Desegregation by 1960:** The battle over education exposed the fundamental dualism of the early civil rights movement. While the NAACP won total constitutional supremacy in the federal courts, the absence of executive enforcement mechanisms meant that desegregation was painfully slow. By 1960, six years after the Brown ruling, less than one percent of Black children in the eleven states of the former Confederacy attended school with white children. The legal victory was complete, but the struggle on the ground had only just begun."
@@ -2182,7 +2204,9 @@
               "source": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg"
             }
           ],
-          "isReversed": false
+          "isReversed": false,
+          "theme": "The Lost Year in Little Rock",
+          "content": "<span class=\"para-ref\">[5.1]</span> **The \"Lost Year\" in Little Rock (1958–1959):** In September 1958, Governor Faubus escalated white resistance by shutting all four Little Rock public high schools for an entire year (the \"Lost Year\"), attempting to divert white pupils into segregated private academies. Only in 1959 did federal courts force Little Rock schools to reopen on an integrated basis.<br><br><span class=\"para-ref\">[5.2]</span> **The Reality of Desegregation by 1960:** The Little Rock crisis exposed the limits of judicial rulings without executive enforcement. By 1960, six years after *Brown v. Board*, fewer than 1% of Black children in the former Confederate states attended school with white children. The legal victory was won, but desegregation on the ground remained agonizingly slow."
         }
       ],
       "primary_source": null,
@@ -3134,6 +3158,24 @@
           "title": "The Lost Year in Little Rock",
           "dates": "1958–1959"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], why did Oliver Brown and the NAACP challenge school segregation in Topeka, Kansas?",
+          "answer": "His daughter Linda had to walk past a white school through dangerous railroad tracks to reach a distant, segregated Black school."
+        },
+        {
+          "question": "Using paragraph [2.1], what historic verdict did Chief Justice Earl Warren deliver on 17 May 1954?",
+          "answer": "A unanimous 9–0 ruling declaring that 'separate educational facilities are inherently unequal', overturning Plessy v. Ferguson."
+        },
+        {
+          "question": "According to paragraph [3.1], how did Arkansas Governor Orval Faubus attempt to prevent integration at Little Rock Central High School in 1957?",
+          "answer": "He deployed the armed Arkansas National Guard to surround the school and physically block the Little Rock Nine from entering."
+        },
+        {
+          "question": "Using paragraph [4.1], how did President Dwight D. Eisenhower enforce the desegregation of Central High School?",
+          "answer": "He sent 1,000 paratroopers of the 101st Airborne Division and federalized the Arkansas National Guard to escort the students."
+        }
       ]
     },
     {
@@ -3249,7 +3291,7 @@
           "act_title": "Stage 1: The Arrest of Rosa Parks — Why was Rosa Parks' deliberate refusal to give up her seat the ideal catalyst to spark a citywide bus boycott?",
           "title": "The Arrest of Rosa Parks",
           "theme_heading": "The Arrest of Rosa Parks",
-          "text": "<span class=\"para-ref\">[1.1]</span> **The Degradation of the Montgomery Bus Lines:** In Montgomery, Alabama, municipal bus segregation was a source of constant daily humiliation for Black residents, who made up over 70% of transit ridership. City ordinances required Black passengers to pay their fare at the front, exit, and re-enter through the rear door. The first four rows of seats were reserved exclusively for whites; if white seats filled up, Black passengers seated in the middle \"coloured section\" were legally required to vacate entire rows so no white passenger had to sit near a Black person. Bus drivers carried firearms, routinely abusing Black women with racial profanities.\n\n<span class=\"para-ref\">[1.2]</span> **The Arrest of Rosa Parks and the WPC Leaflet Blitz:** On 1 December 1955, seamstress Rosa Parks, a respected NAACP officer trained at the Highlander Folk School, refused a driver's command to surrender her seat to a white man. Her arrest provided the NAACP with the morally impeccable test case it had been waiting for. Overnight, Jo Ann Robinson and the Women’s Political Council (WPC) duplicated 35,000 protest leaflets on a college mimeograph machine. Mobilizing churches and social clubs, they called for a one-day boycott of all municipal buses on Monday, 5 December—the day of Parks' trial.",
+          "text": "<span class=\"para-ref\">[1.1]</span> **Municipal Bus Segregation in Montgomery:** In Montgomery, Alabama, municipal bus segregation was a daily humiliation for Black residents, who made up over 70% of passengers. Black riders had to pay at the front, enter through the rear, and give up their seats in the middle section if white rows filled up. Drivers carried pistols and routinely shouted racial abuse at Black passengers.<br><br><span class=\"para-ref\">[1.2]</span> **The Arrest of Rosa Parks (1 Dec 1955):** On 1 December 1955, seamstress and NAACP activist Rosa Parks refused a driver's order to give her seat to a white man. Her arrest triggered immediate action: Jo Ann Robinson and the Women’s Political Council printed 35,000 leaflets calling for a one-day boycott on 5 December, launching the historic Montgomery Bus Boycott.",
           "paragraphs": [
             "<span class=\"para-ref\">[1.1]</span> **The Degradation of the Montgomery Bus Lines:** In Montgomery, Alabama, municipal bus segregation was a source of constant daily humiliation for Black residents, who made up over 70% of transit ridership. City ordinances required Black passengers to pay their fare at the front, exit, and re-enter through the rear door. The first four rows of seats were reserved exclusively for whites; if white seats filled up, Black passengers seated in the middle \"coloured section\" were legally required to vacate entire rows so no white passenger had to sit near a Black person. Bus drivers carried firearms, routinely abusing Black women with racial profanities.",
             "<span class=\"para-ref\">[1.2]</span> **The Arrest of Rosa Parks and the WPC Leaflet Blitz:** On 1 December 1955, seamstress Rosa Parks, a respected NAACP officer trained at the Highlander Folk School, refused a driver's command to surrender her seat to a white man. Her arrest provided the NAACP with the morally impeccable test case it had been waiting for. Overnight, Jo Ann Robinson and the Women’s Political Council (WPC) duplicated 35,000 protest leaflets on a college mimeograph machine. Mobilizing churches and social clubs, they called for a one-day boycott of all municipal buses on Monday, 5 December—the day of Parks' trial."
@@ -3286,7 +3328,9 @@
           "isReversed": false,
           "image": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg",
           "image_alt": "Rosa Parks being fingerprinted following her arrest in Montgomery, Alabama (1955)",
-          "caption": "Rosa Parks being fingerprinted by Montgomery police officer D.H. Lackey following her arrest on 1 December 1955 for refusing to yield her seat."
+          "caption": "Rosa Parks being fingerprinted by Montgomery police officer D.H. Lackey following her arrest on 1 December 1955 for refusing to yield her seat.",
+          "theme": "The Arrest of Rosa Parks",
+          "content": "<span class=\"para-ref\">[1.1]</span> **Municipal Bus Segregation in Montgomery:** In Montgomery, Alabama, municipal bus segregation was a daily humiliation for Black residents, who made up over 70% of passengers. Black riders had to pay at the front, enter through the rear, and give up their seats in the middle section if white rows filled up. Drivers carried pistols and routinely shouted racial abuse at Black passengers.<br><br><span class=\"para-ref\">[1.2]</span> **The Arrest of Rosa Parks (1 Dec 1955):** On 1 December 1955, seamstress and NAACP activist Rosa Parks refused a driver's order to give her seat to a white man. Her arrest triggered immediate action: Jo Ann Robinson and the Women’s Political Council printed 35,000 leaflets calling for a one-day boycott on 5 December, launching the historic Montgomery Bus Boycott."
         },
         {
           "act": 2,
@@ -4431,6 +4475,24 @@
           ],
           "title": "Desegregated Buses Roll in Montgomery",
           "dates": "21 December 1956"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.2], what action by Rosa Parks on 1 December 1955 triggered the Montgomery Bus Boycott?",
+          "answer": "She refused a bus driver's order to give up her seat in the coloured section to a white passenger."
+        },
+        {
+          "question": "Using paragraph [2.1], who was elected leader of the newly formed Montgomery Improvement Association (MIA)?",
+          "answer": "Dr Martin Luther King Jr., a 26-year-old Baptist minister at Dexter Avenue Baptist Church."
+        },
+        {
+          "question": "According to paragraph [3.1], how did the Black community maintain the bus boycott for 381 days without municipal transit?",
+          "answer": "By organizing an elaborate private carpool system with dispatch stations, supplemented by church volunteer drivers and walking miles to work."
+        },
+        {
+          "question": "Using paragraph [4.1], what Supreme Court ruling permanently ended segregation on Montgomery's buses in November 1956?",
+          "answer": "Browder v. Gayle, which declared segregated seating on municipal public transport unconstitutional."
         }
       ]
     },
@@ -5738,6 +5800,24 @@
           "title": "Passage of the Flawed 1957 Act",
           "dates": "September 1957"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what were the White Citizens' Councils and what tactics did they use?",
+          "answer": "Middle-class segregationist groups who used economic boycotts, sacking Black workers and denying bank loans to civil rights activists."
+        },
+        {
+          "question": "Using paragraph [2.1], why was 14-year-old Emmett Till murdered in Money, Mississippi, in August 1955?",
+          "answer": "He was accused of whistling at a white woman, Carolyn Bryant, in a grocery store."
+        },
+        {
+          "question": "According to paragraph [3.1], why did Emmett Till's mother, Mamie Till-Mobley, insist on an open-casket funeral in Chicago?",
+          "answer": "So the entire world could see the horrific facial disfigurement inflicted by his white murderers."
+        },
+        {
+          "question": "Using paragraph [5.1], why was the Civil Rights Act of 1957 criticized as weak and ineffective?",
+          "answer": "Southern senators weakened the bill, requiring all-white juries to try voting obstruction cases, resulting in almost zero new voter registrations."
+        }
       ]
     },
     {
@@ -5932,7 +6012,7 @@
           "act_title": "Stage 3: The Launch of the Freedom Rides — What was the primary goal of the 1961 Freedom Rides organized by CORE across the interstate South?",
           "title": "The Launch of the Freedom Rides",
           "theme_heading": "The Launch of the Freedom Rides",
-          "text": "<span class=\"para-ref\">[3.1]</span> **Testing the Law: The CORE Freedom Rides:** Although the Supreme Court had outlawed segregation in interstate bus terminals in *Boynton v. Virginia* (1960), Southern bus companies and municipal police routinely ignored federal law. On 4 May 1961, James Farmer, director of the Congress of Racial Equality (CORE), launched the \"Freedom Rides\". Interracial groups boarded Greyhound and Trailways buses in Washington, D.C., bound for New Orleans, determined to deliberately test whether Southern authorities would enforce federal transit desegregation.\n\n<span class=\"para-ref\">[3.2]</span> **Firebombs and Savage Violence in Alabama:** On Mother's Day, 14 May 1961, the Greyhound bus was intercepted outside Anniston, Alabama, by an armed Ku Klux Klan mob. White vigilantes slashed the tires, firebombed the vehicle, and held the doors shut to roast the riders alive; the activists barely escaped through smoke and shattered windows, only to be brutally beaten with iron pipes. An hour later, riders on the Trailways bus arrived at Birmingham, where Public Safety Commissioner Eugene \"Bull\" Connor gave Klan thugs fifteen unhindered minutes to beat the riders unconscious. Graphic press photographs of the smouldering wreckage shocked the international community.",
+          "text": "<span class=\"para-ref\">[3.1]</span> **Testing Federal Law: The CORE Freedom Rides:** On 4 May 1961, James Farmer and the Congress of Racial Equality (CORE) launched the \"Freedom Rides\". Interracial teams of Black and white activists boarded Greyhound and Trailways buses in Washington, D.C., bound for New Orleans, determined to test whether Southern authorities would obey the Supreme Court ruling banning segregation in interstate bus terminals.<br><br><span class=\"para-ref\">[3.2]</span> **The Anniston Firebomb & Birmingham Ambush:** On 14 May 1961, a Ku Klux Klan mob intercepted the Greyhound bus outside Anniston, Alabama, slashing its tires and firebombing the vehicle. In Birmingham, Police Commissioner \"Bull\" Connor allowed Klansmen fifteen minutes to beat the riders with iron pipes. Shocking international photographs of the burning bus forced the federal government to intervene.",
           "paragraphs": [
             "<span class=\"para-ref\">[3.1]</span> **Testing the Law: The CORE Freedom Rides:** Although the Supreme Court had outlawed segregation in interstate bus terminals in *Boynton v. Virginia* (1960), Southern bus companies and municipal police routinely ignored federal law. On 4 May 1961, James Farmer, director of the Congress of Racial Equality (CORE), launched the \"Freedom Rides\". Interracial groups boarded Greyhound and Trailways buses in Washington, D.C., bound for New Orleans, determined to deliberately test whether Southern authorities would enforce federal transit desegregation.",
             "<span class=\"para-ref\">[3.2]</span> **Firebombs and Savage Violence in Alabama:** On Mother's Day, 14 May 1961, the Greyhound bus was intercepted outside Anniston, Alabama, by an armed Ku Klux Klan mob. White vigilantes slashed the tires, firebombed the vehicle, and held the doors shut to roast the riders alive; the activists barely escaped through smoke and shattered windows, only to be brutally beaten with iron pipes. An hour later, riders on the Trailways bus arrived at Birmingham, where Public Safety Commissioner Eugene \"Bull\" Connor gave Klan thugs fifteen unhindered minutes to beat the riders unconscious. Graphic press photographs of the smouldering wreckage shocked the international community."
@@ -5965,14 +6045,16 @@
               "src": "/units/usa/assets/sources/freedom-riders-bus-wreckage.jpg",
               "source": "/units/usa/assets/sources/freedom-riders-bus-wreckage.jpg"
             }
-          ]
+          ],
+          "theme": "The Launch of the Freedom Rides",
+          "content": "<span class=\"para-ref\">[3.1]</span> **Testing Federal Law: The CORE Freedom Rides:** On 4 May 1961, James Farmer and the Congress of Racial Equality (CORE) launched the \"Freedom Rides\". Interracial teams of Black and white activists boarded Greyhound and Trailways buses in Washington, D.C., bound for New Orleans, determined to test whether Southern authorities would obey the Supreme Court ruling banning segregation in interstate bus terminals.<br><br><span class=\"para-ref\">[3.2]</span> **The Anniston Firebomb & Birmingham Ambush:** On 14 May 1961, a Ku Klux Klan mob intercepted the Greyhound bus outside Anniston, Alabama, slashing its tires and firebombing the vehicle. In Birmingham, Police Commissioner \"Bull\" Connor allowed Klansmen fifteen minutes to beat the riders with iron pipes. Shocking international photographs of the burning bus forced the federal government to intervene."
         },
         {
           "act": 4,
           "act_title": "Stage 4: The Anniston & Montgomery Ambush — How did televised violence against Freedom Riders in Anniston and Montgomery force federal intervention?",
           "title": "The Anniston & Montgomery Ambush",
           "theme_heading": "The Anniston & Montgomery Ambush",
-          "text": "<span class=\"para-ref\">[4.1]</span> **Robert Kennedy and the Interstate Commerce Commission:** The savagery in Alabama created an acute foreign policy dilemma for President John F. Kennedy, who was preparing for a high-stakes summit in Vienna with Soviet Premier Nikita Khrushchev. Attorney General Robert F. Kennedy deployed 400 federal marshals to protect riders in Montgomery and petitioned the Interstate Commerce Commission (ICC). On 1 November 1961, the ICC issued strict regulations mandating the removal of all racial signs in bus terminals and stations, representing a clear operational victory for non-violent direct action.\n\n<span class=\"para-ref\">[4.2]</span> **The Insurrection at the University of Mississippi (1962):** Direct action soon expanded to Southern university campuses. In September 1962, James Meredith, an Air Force veteran, attempted to enrol as the first Black student at the University of Mississippi (\"Ole Miss\"), backed by a federal court order. Mississippi Governor Ross Barnett personally blocked Meredith at the registrar's office. When 500 federal marshals escorted Meredith onto campus on 30 September, a furious white mob of 2,500 attacked them with firearms, petrol bombs, and acid. Two civilians were killed and 300 marshals injured before President Kennedy federalized the state guard and sent 31,000 soldiers to restore order. Meredith enrolled the following morning under military guard.",
+          "text": "<span class=\"para-ref\">[4.1]</span> **Robert Kennedy Deploys Federal Marshals:** The violence in Alabama embarrassed President John F. Kennedy during the Cold War. Attorney General Robert Kennedy deployed 400 federal marshals to protect riders in Montgomery, Alabama, after local police abandoned them to another violent white mob at the bus terminal.<br><br><span class=\"para-ref\">[4.2]</span> **The ICC Desegregation Order (Nov 1961):** Robert Kennedy petitioned the Interstate Commerce Commission (ICC) to enforce compliance. On 1 November 1961, the ICC issued strict nationwide regulations ordering the removal of all \"whites only\" signs in interstate bus and train terminals, proving that non-violent direct action could force the federal government to act.",
           "paragraphs": [
             "<span class=\"para-ref\">[4.1]</span> **Robert Kennedy and the Interstate Commerce Commission:** The savagery in Alabama created an acute foreign policy dilemma for President John F. Kennedy, who was preparing for a high-stakes summit in Vienna with Soviet Premier Nikita Khrushchev. Attorney General Robert F. Kennedy deployed 400 federal marshals to protect riders in Montgomery and petitioned the Interstate Commerce Commission (ICC). On 1 November 1961, the ICC issued strict regulations mandating the removal of all racial signs in bus terminals and stations, representing a clear operational victory for non-violent direct action.",
             "<span class=\"para-ref\">[4.2]</span> **The Insurrection at the University of Mississippi (1962):** Direct action soon expanded to Southern university campuses. In September 1962, James Meredith, an Air Force veteran, attempted to enrol as the first Black student at the University of Mississippi (\"Ole Miss\"), backed by a federal court order. Mississippi Governor Ross Barnett personally blocked Meredith at the registrar's office. When 500 federal marshals escorted Meredith onto campus on 30 September, a furious white mob of 2,500 attacked them with firearms, petrol bombs, and acid. Two civilians were killed and 300 marshals injured before President Kennedy federalized the state guard and sent 31,000 soldiers to restore order. Meredith enrolled the following morning under military guard."
@@ -6005,7 +6087,9 @@
           "isReversed": true,
           "image": "/units/usa/assets/sources/james-meredith-walking.jpg",
           "image_alt": "James Meredith walking on campus at the University of Mississippi flanked by federal marshals, October 1962",
-          "caption": "James Meredith at the University of Mississippi (October 1962): Flanked by federal marshals, Air Force veteran James Meredith walks to class as the first Black student admitted to Ole Miss, following violent segregationist riots that required 31,000 federal troops to suppress."
+          "caption": "James Meredith at the University of Mississippi (October 1962): Flanked by federal marshals, Air Force veteran James Meredith walks to class as the first Black student admitted to Ole Miss, following violent segregationist riots that required 31,000 federal troops to suppress.",
+          "theme": "The Anniston & Montgomery Ambush",
+          "content": "<span class=\"para-ref\">[4.1]</span> **Robert Kennedy Deploys Federal Marshals:** The violence in Alabama embarrassed President John F. Kennedy during the Cold War. Attorney General Robert Kennedy deployed 400 federal marshals to protect riders in Montgomery, Alabama, after local police abandoned them to another violent white mob at the bus terminal.<br><br><span class=\"para-ref\">[4.2]</span> **The ICC Desegregation Order (Nov 1961):** Robert Kennedy petitioned the Interstate Commerce Commission (ICC) to enforce compliance. On 1 November 1961, the ICC issued strict nationwide regulations ordering the removal of all \"whites only\" signs in interstate bus and train terminals, proving that non-violent direct action could force the federal government to act."
         },
         {
           "act": 5,
@@ -6990,6 +7074,24 @@
           "title": "The ICC Desegregation Order",
           "dates": "November 1961"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what action did four Black college students take at Woolworth’s in Greensboro, North Carolina, on 1 February 1960?",
+          "answer": "They sat at the segregated, 'whites-only' lunch counter and refused to leave after being denied service."
+        },
+        {
+          "question": "Using paragraph [2.1], what student organization was founded in April 1960 to coordinate non-violent direct action?",
+          "answer": "The Student Nonviolent Coordinating Committee (SNCC), advised by veteran organizer Ella Baker."
+        },
+        {
+          "question": "According to paragraph [3.1], what was the purpose of the 1961 Freedom Rides organized by CORE?",
+          "answer": "Interracial teams rode interstate buses through the South to test whether authorities were obeying federal court bans on terminal segregation."
+        },
+        {
+          "question": "Using paragraph [4.2], what government regulation resulted from the Freedom Rides in November 1961?",
+          "answer": "The Interstate Commerce Commission (ICC) ordered all racial segregation signs removed from interstate bus and rail stations."
+        }
       ]
     },
     {
@@ -7105,7 +7207,7 @@
           "act_title": "Stage 1: Project C & The Children's Crusade in Birmingham — How did Bull Connor's violent suppression of the Children's Crusade in Birmingham transform national opinion?",
           "title": "Project C & The Children's Crusade in Birmingham",
           "theme_heading": "Project C & The Children's Crusade in Birmingham",
-          "text": "<span class=\"para-ref\">[1.1]</span> **Targeting the Citadel of Southern Segregation:** In April 1963, Dr Martin Luther King Jr., the SCLC, and local leader Rev. Fred Shuttlesworth launched \"Project C\" (for Confrontation) in Birmingham, Alabama—widely regarded as the most segregated city in America. Recognizing that municipal desegregation required severe economic pressure, activists targeted downtown department stores with sit-ins and boycotts. Birmingham's notorious Commissioner of Public Safety, Eugene \"Bull\" Connor, responded with mass arrests, imprisoning King on Good Friday. While incarcerated, King wrote his famous *Letter from Birmingham Jail*, declaring that \"justice too long delayed is justice denied.\"\n\n<span class=\"para-ref\">[1.2]</span> **The Children's Crusade and Televised Brutality:** Facing dwindling adult volunteers fearful of losing their jobs, SCLC organizer James Bevel recruited thousands of school students. On 2 and 3 May 1963, over a thousand young marchers poured out of the 16th Street Baptist Church. Connor unleashed snarling police dogs and commanded firefighters to blast the children with high-pressure fire hoses that tore clothes and rolled youths down the asphalt. Televised images of children being mauled by police dogs horrified the nation and forced white business leaders to agree to a desegregation pact on 10 May.",
+          "text": "<span class=\"para-ref\">[1.1]</span> **Project C in Birmingham (April 1963):** In April 1963, Dr Martin Luther King Jr., the SCLC, and Rev. Fred Shuttlesworth launched \"Project C\" (Confrontation) in Birmingham, Alabama—one of America's most segregated cities. Activists boycotted downtown stores and held sit-ins. When arrested, King penned his famous *Letter from Birmingham Jail*, declaring that \"justice too long delayed is justice denied.\"<br><br><span class=\"para-ref\">[1.2]</span> **The Children's Crusade & Televised Outrage:** In May, thousands of schoolchildren joined the protests. Police Commissioner \"Bull\" Connor unleashed snarling police attack dogs and high-pressure fire hoses on the young marchers. Televised footage of children being knocked down by water jets horrified the world, forcing Birmingham business leaders to agree to desegregate downtown facilities.",
           "paragraphs": [
             "<span class=\"para-ref\">[1.1]</span> **Targeting the Citadel of Southern Segregation:** In April 1963, Dr Martin Luther King Jr., the SCLC, and local leader Rev. Fred Shuttlesworth launched \"Project C\" (for Confrontation) in Birmingham, Alabama—widely regarded as the most segregated city in America. Recognizing that municipal desegregation required severe economic pressure, activists targeted downtown department stores with sit-ins and boycotts. Birmingham's notorious Commissioner of Public Safety, Eugene \"Bull\" Connor, responded with mass arrests, imprisoning King on Good Friday. While incarcerated, King wrote his famous *Letter from Birmingham Jail*, declaring that \"justice too long delayed is justice denied.\"",
             "<span class=\"para-ref\">[1.2]</span> **The Children's Crusade and Televised Brutality:** Facing dwindling adult volunteers fearful of losing their jobs, SCLC organizer James Bevel recruited thousands of school students. On 2 and 3 May 1963, over a thousand young marchers poured out of the 16th Street Baptist Church. Connor unleashed snarling police dogs and commanded firefighters to blast the children with high-pressure fire hoses that tore clothes and rolled youths down the asphalt. Televised images of children being mauled by police dogs horrified the nation and forced white business leaders to agree to a desegregation pact on 10 May."
@@ -7143,7 +7245,9 @@
           "image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
           "image_alt": "Police dog attacking a young African American protester in Birmingham",
           "caption": "Plate 2.3: Police dog lunging at teenager Walter Gadsden during Project C in Birmingham, Alabama (3 May 1963), photographed by Bill Hudson.",
-          "isReversed": false
+          "isReversed": false,
+          "theme": "Project C & The Children's Crusade in Birmingham",
+          "content": "<span class=\"para-ref\">[1.1]</span> **Project C in Birmingham (April 1963):** In April 1963, Dr Martin Luther King Jr., the SCLC, and Rev. Fred Shuttlesworth launched \"Project C\" (Confrontation) in Birmingham, Alabama—one of America's most segregated cities. Activists boycotted downtown stores and held sit-ins. When arrested, King penned his famous *Letter from Birmingham Jail*, declaring that \"justice too long delayed is justice denied.\"<br><br><span class=\"para-ref\">[1.2]</span> **The Children's Crusade & Televised Outrage:** In May, thousands of schoolchildren joined the protests. Police Commissioner \"Bull\" Connor unleashed snarling police attack dogs and high-pressure fire hoses on the young marchers. Televised footage of children being knocked down by water jets horrified the world, forcing Birmingham business leaders to agree to desegregate downtown facilities."
         },
         {
           "act": 2,
@@ -7275,7 +7379,7 @@
           "act_title": "Stage 5: Enactment of the Voting Rights Act of 1965 — In what ways did the Voting Rights Act of 1965 revolutionize political participation for Black Americans in the South?",
           "title": "Enactment of the Voting Rights Act of 1965",
           "theme_heading": "Enactment of the Voting Rights Act of 1965",
-          "text": "<span class=\"para-ref\">[5.1]</span> **The Voting Rights Act of 1965:** Television networks interrupted regular broadcasting to air footage of state-sanctioned savagery, triggering nationwide outrage. On 15 March, President Johnson addressed a joint session of Congress, calling Selma \"a turning point in man's unending search for freedom\" and concluding with the civil rights anthem: \"And we shall overcome.\" On 6 August 1965, Johnson signed the Voting Rights Act. The law suspended all literacy tests and dispatched federal registrars to Southern counties. Within three years, Black voter registration in Mississippi skyrocketed from 7% to over 60%, revolutionizing Southern electoral politics.\n\n<span class=\"para-ref\">[5.2]</span> **The High-Water Mark of the Non-Violent Coalition:** Between May 1963 and August 1965, the mainstream civil rights coalition achieved its greatest constitutional and legislative triumphs. The combination of local sacrificial bravery, brilliant tactical provocation of violent white authorities, moral television imagery, and presidential political will dismantled the entire statutory architecture of Southern apartheid that had stood since Reconstruction.\n\n<span class=\"para-ref\">[5.3]</span> **The Looming Frontier of Economic Disparity:** Yet even as President Johnson signed the Voting Rights Act, the seeds of future division were evident. Just five days later, the Watts ghetto in Los Angeles erupted in flames. Federal legislation had dismantled legal segregation in the South, but it had done almost nothing to solve the crushing problems of ghetto housing, police brutality, and entrenched economic poverty in the urban North and West. The movement's triumphant legislative era was over; an era of radical rebellion was about to begin.",
+          "text": "<span class=\"para-ref\">[5.1]</span> **Enactment of the Voting Rights Act (6 Aug 1965):** Shocked by the televised brutality at Selma, President Lyndon B. Johnson addressed Congress, declaring that \"we shall overcome\". On 6 August 1965, Johnson signed the historic Voting Rights Act. The law banned all discriminatory literacy tests and empowered federal examiners to directly register Black voters in Southern counties where registration fell below 50%.<br><br><span class=\"para-ref\">[5.2]</span> **Transformative Impact & New Challenges:** The Voting Rights Act transformed Southern politics: within three years, Black voter registration in Mississippi jumped from 7% to over 60%. However, while federal legislation abolished *de jure* legal barriers in the South, it did not solve urban poverty, substandard ghetto housing, or police brutality in Northern cities.",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> **The Voting Rights Act of 1965:** Television networks interrupted regular broadcasting to air footage of state-sanctioned savagery, triggering nationwide outrage. On 15 March, President Johnson addressed a joint session of Congress, calling Selma \"a turning point in man's unending search for freedom\" and concluding with the civil rights anthem: \"And we shall overcome.\" On 6 August 1965, Johnson signed the Voting Rights Act. The law suspended all literacy tests and dispatched federal registrars to Southern counties. Within three years, Black voter registration in Mississippi skyrocketed from 7% to over 60%, revolutionizing Southern electoral politics.",
             "<span class=\"para-ref\">[5.2]</span> **The High-Water Mark of the Non-Violent Coalition:** Between May 1963 and August 1965, the mainstream civil rights coalition achieved its greatest constitutional and legislative triumphs. The combination of local sacrificial bravery, brilliant tactical provocation of violent white authorities, moral television imagery, and presidential political will dismantled the entire statutory architecture of Southern apartheid that had stood since Reconstruction.",
@@ -7311,7 +7415,9 @@
               "text": "This act flows from a clear and simple wrong. Millions of Americans are denied the right to vote because of their color. This law will strike away the last major shackle of those fierce and ancient bonds. Today the Negro citizen takes his place at the ballot box. The command of the Constitution is clear. No American may be denied the right to vote because of his race or color. Every American citizen must have an equal right to vote in every election where he is entitled to vote under the Constitution."
             }
           ],
-          "isReversed": false
+          "isReversed": false,
+          "theme": "Enactment of the Voting Rights Act of 1965",
+          "content": "<span class=\"para-ref\">[5.1]</span> **Enactment of the Voting Rights Act (6 Aug 1965):** Shocked by the televised brutality at Selma, President Lyndon B. Johnson addressed Congress, declaring that \"we shall overcome\". On 6 August 1965, Johnson signed the historic Voting Rights Act. The law banned all discriminatory literacy tests and empowered federal examiners to directly register Black voters in Southern counties where registration fell below 50%.<br><br><span class=\"para-ref\">[5.2]</span> **Transformative Impact & New Challenges:** The Voting Rights Act transformed Southern politics: within three years, Black voter registration in Mississippi jumped from 7% to over 60%. However, while federal legislation abolished *de jure* legal barriers in the South, it did not solve urban poverty, substandard ghetto housing, or police brutality in Northern cities."
         }
       ],
       "primary_source": null,
@@ -8264,6 +8370,24 @@
           ],
           "title": "Enactment of the Voting Rights Act of 1965",
           "dates": "6 August 1965"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.2], what brutal tactics did Police Commissioner 'Bull' Connor use against child marchers in Birmingham in May 1963?",
+          "answer": "He unleashed snarling police attack dogs and blasted schoolchildren with high-pressure fire hoses."
+        },
+        {
+          "question": "Using paragraph [2.1], what historic speech was delivered by Dr Martin Luther King Jr. during the August 1963 March on Washington?",
+          "answer": "His famous 'I Have a Dream' speech, delivered to 250,000 marchers at the Lincoln Memorial."
+        },
+        {
+          "question": "According to paragraph [3.1], what major discriminatory practices were outlawed by the Civil Rights Act of 1964?",
+          "answer": "Segregation in public accommodations, schools, and employment discrimination based on race, colour, religion, or sex."
+        },
+        {
+          "question": "Using paragraph [4.1], what happened to peaceful marchers on 'Bloody Sunday' (7 March 1965) at Edmund Pettus Bridge in Selma, Alabama?",
+          "answer": "Alabama state troopers fired tear gas and savagely beat marchers with clubs and bullwhips on horseback."
         }
       ]
     },
@@ -9581,6 +9705,24 @@
           "title": "The Mexico City Olympics Black Power Salute",
           "dates": "16 October 1968"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], how did Malcolm X's philosophy differ from Dr Martin Luther King Jr.'s?",
+          "answer": "Malcolm X rejected white integration, preaching Black self-defence, racial pride, and armed resistance 'by any means necessary'."
+        },
+        {
+          "question": "Using paragraph [2.1], who popularized the slogan 'Black Power' during the June 1966 Meredith March against Fear?",
+          "answer": "Stokely Carmichael, the newly elected chairman of SNCC."
+        },
+        {
+          "question": "According to paragraph [3.1], who founded the Black Panther Party in Oakland, California, in October 1966?",
+          "answer": "Huey P. Newton and Bobby Seale."
+        },
+        {
+          "question": "Using paragraph [4.1], what community survival programs were operated by the Black Panthers alongside armed patrols?",
+          "answer": "Free Breakfast for Children programs, free community health clinics, and educational liberation schools."
+        }
       ]
     },
     {
@@ -9865,9 +10007,9 @@
         {
           "act": 5,
           "act_title": "Stage 5: King's Assassination & The 1968 Civil Rights Act — How did the assassination of Dr Martin Luther King Jr. and the passage of the 1968 Fair Housing Act reshape the movement?",
-          "title": "King's Assassination & The 1968 Civil Rights Act",
-          "theme_heading": "King's Assassination & The 1968 Civil Rights Act",
-          "text": "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, President Lyndon B. Johnson signed the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.\n\n<span class=\"para-ref\">[5.2]</span> **A Transformed Political Landscape:** By 1975, the civil rights movement had fundamentally transformed the American South. The blatant barbarism of de jure segregation was extinct, and millions of enfranchised Black citizens wielded decisive political power, electing thousands of Black municipal officials, sheriffs, and members of Congress. In major cities, Black mayors took office in Cleveland, Gary, Newark, Detroit, Los Angeles, and Atlanta. Affirmative action programs opened the doors of universities, corporations, and federal civil service to a growing Black middle class.\n\n<span class=\"para-ref\">[5.3]</span> **The Unfinished Revolution of Economic Justice:** Yet the promise of full racial equality remained tragically unfulfilled. As legal barriers fell, white Americans retreated into suburban enclaves (\"white flight\"), leaving inner-city schools and neighbourhoods more economically segregated than before. Dr King's ultimate crusade—the eradication of systemic poverty, urban ghettoization, and militarism—remained unfinished. The heroic era of 1954–75 had destroyed the legal pillars of racial apartheid, but it left the deeper structural inequalities of American capitalism and society unresolved.",
+          "title": "The Assassination of Dr Martin Luther King Jr. (4 April 1968)",
+          "theme_heading": "The Assassination of Dr Martin Luther King Jr. (4 April 1968)",
+          "text": "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In April 1968, Dr Martin Luther King Jr. visited Memphis, Tennessee, to support striking Black sanitation workers. On 4 April 1968, while standing on the balcony of the Lorraine Motel, King was shot and assassinated by James Earl Ray. King's murder ignited the greatest wave of social unrest in modern American history.<br><br><span class=\"para-ref\">[5.2]</span> **Nationwide Riots & The Fair Housing Act:** Riots erupted across more than 125 cities, leaving 46 dead and requiring 45,000 national guardsmen to restore order. In response to the crisis, President Lyndon B. Johnson signed the Civil Rights Act of 1968 (the Fair Housing Act), banning racial discrimination in the sale and rental of housing.",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, Congress rushed to pass the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.",
             "<span class=\"para-ref\">[5.2]</span> **A Transformed Political Landscape:** By 1975, the civil rights movement had fundamentally transformed the American South. The blatant barbarism of de jure segregation was extinct, and millions of enfranchised Black citizens wielded decisive political power, electing thousands of Black municipal officials, sheriffs, and members of Congress. In major cities, Black mayors took office in Cleveland, Gary, Newark, Detroit, Los Angeles, and Atlanta. Affirmative action programs opened the doors of universities, corporations, and federal civil service to a growing Black middle class.",
@@ -9904,7 +10046,9 @@
           ],
           "isReversed": false,
           "caption": "President Lyndon B. Johnson with Dr Martin Luther King Jr.: Throughout their legislative partnership, Johnson relied on King's moral leadership to pass civil rights statutes. One week after King's assassination in April 1968, Johnson signed the Civil Rights Act of 1968 (Fair Housing Act) into federal law.",
-          "image_alt": "President Lyndon B. Johnson conferring with Dr Martin Luther King Jr."
+          "image_alt": "President Lyndon B. Johnson conferring with Dr Martin Luther King Jr.",
+          "theme": "The Assassination of Dr Martin Luther King Jr. (4 April 1968)",
+          "content": "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In April 1968, Dr Martin Luther King Jr. visited Memphis, Tennessee, to support striking Black sanitation workers. On 4 April 1968, while standing on the balcony of the Lorraine Motel, King was shot and assassinated by James Earl Ray. King's murder ignited the greatest wave of social unrest in modern American history.<br><br><span class=\"para-ref\">[5.2]</span> **Nationwide Riots & The Fair Housing Act:** Riots erupted across more than 125 cities, leaving 46 dead and requiring 45,000 national guardsmen to restore order. In response to the crisis, President Lyndon B. Johnson signed the Civil Rights Act of 1968 (the Fair Housing Act), banning racial discrimination in the sale and rental of housing."
         }
       ],
       "primary_source": null,
@@ -10925,6 +11069,24 @@
             "Nationwide 100-city uprisings",
             "1968 Fair Housing Act passed"
           ]
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what caused the devastating Watts riot in Los Angeles in August 1965?",
+          "answer": "The aggressive arrest of a young Black motorist by California highway patrol sparked six days of arson, looting, and street clashes."
+        },
+        {
+          "question": "Using paragraph [2.1], why did race riots erupt across more than 120 American cities during the 'Long Hot Summers' of 1967?",
+          "answer": "Deep anger over police brutality, substandard ghetto housing, unemployment, and institutional racial discrimination."
+        },
+        {
+          "question": "According to paragraph [3.1], what famous conclusion did the 1968 Kerner Commission report reach about American society?",
+          "answer": "That America was 'moving toward two societies, one black, one white—separate and unequal', blaming pervasive white racism."
+        },
+        {
+          "question": "Using paragraph [5.1], what national tragedy occurred on 4 April 1968 in Memphis, Tennessee?",
+          "answer": "Dr Martin Luther King Jr. was assassinated on the Lorraine Motel balcony by James Earl Ray, triggering riots in over 100 cities."
         }
       ]
     },
@@ -12197,6 +12359,24 @@
           "title": "The Overthrow & Assassination of Diem",
           "dates": "1–2 November 1963"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what was President Eisenhower's 'Domino Theory'?",
+          "answer": "The belief that if South Vietnam fell to communism, neighbouring Southeast Asian nations would topple like a row of falling dominoes."
+        },
+        {
+          "question": "Using paragraph [2.1], how was Vietnam divided at the 1954 Geneva Accords following France's defeat at Dien Bien Phu?",
+          "answer": "Along the 17th Parallel into communist North Vietnam (under Ho Chi Minh) and capitalist South Vietnam (under Ngo Dinh Diem)."
+        },
+        {
+          "question": "According to paragraph [3.1], why was South Vietnamese President Ngo Dinh Diem widely loathed by ordinary Vietnamese peasants?",
+          "answer": "He was deeply corrupt, favoured the Catholic elite while persecuting the Buddhist majority, and forced peasants into fortified 'Strategic Hamlets'."
+        },
+        {
+          "question": "Using paragraph [5.1], what happened to President Diem in November 1963?",
+          "answer": "He was overthrown and assassinated in a military coup tacitly approved by President John F. Kennedy's administration."
+        }
       ]
     },
     {
@@ -12482,7 +12662,7 @@
           "act_title": "Stage 5: First US Ground Combat Troops Land at Da Nang — How did the landing of 3,500 Marines at Da Nang in March 1965 mark the permanent Americanization of the war?",
           "title": "First US Ground Combat Troops Land at Da Nang",
           "theme_heading": "First US Ground Combat Troops Land at Da Nang",
-          "text": "<span class=\"para-ref\">[5.1]</span> **The Landing at Da Nang (8 March 1965):** To defend the massive Da Nang air base from Vietcong retaliation, General William Westmoreland requested ground combat troops. On 8 March 1965, 3,500 heavily armed US Marines of the 9th Marine Expeditionary Brigade waded ashore onto the beaches of Da Nang. Greeted initially by local schoolgirls presenting flower garlands, the Marines' defensive mission quickly morphed into offensive combat. By the end of 1965, Westmoreland had convinced Johnson to expand American troop strength from 23,000 advisors to over 184,000 ground combat infantrymen.\n\n<span class=\"para-ref\">[5.2]</span> **The Irreversible Escalation of 1965:** The decisions taken by Lyndon Johnson between August 1964 and July 1965 transformed what had been a localized anti-colonial and civil conflict into an Americanized war. In choosing massive military escalation over diplomatic negotiation, Johnson committed American global prestige to preserving an artificial, corrupt regime in Saigon that enjoyed virtually no legitimate popular base outside the urban Catholic elite.\n\n<span class=\"para-ref\">[5.3]</span> **The Illusion of Rapid Victory:** American military planners entered the conflict with supreme technical hubris, convinced that the world's most technologically advanced industrial superpower could effortlessly crush a ragged peasant army in the Southeast Asian jungle. They completely failed to comprehend the nationalist dedication of the Vietnamese communist fighters, who had already endured twenty years of war against the French and were prepared to sacrifice millions of lives to achieve national reunification and independence.",
+          "text": "<span class=\"para-ref\">[5.1]</span> **The Landing at Da Nang (8 March 1965):** To defend the vital US air base at Da Nang from Vietcong guerrilla attacks, General William Westmoreland requested combat troops. On 8 March 1965, 3,500 heavily armed US Marines waded ashore at Red Beach, Da Nang. This marked the fateful shift from American military advisors to direct ground combat.<br><br><span class=\"para-ref\">[5.2]</span> **Rapid Escalation & General Westmoreland:** Within months, the Marines' defensive perimeter expanded into offensive search-and-destroy combat across South Vietnam. By the close of 1965, President Johnson had escalated American troop strength from 23,000 advisors to over 184,000 ground troops, committing the United States to a full-scale land war in Asia.",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> **The Landing at Da Nang (8 March 1965):** To defend the massive Da Nang air base from Vietcong retaliation, General William Westmoreland requested ground combat troops. On 8 March 1965, 3,500 heavily armed US Marines of the 9th Marine Expeditionary Brigade waded ashore onto the beaches of Da Nang. Greeted initially by local schoolgirls presenting flower garlands, the Marines' defensive mission quickly morphed into offensive combat. By the end of 1965, Westmoreland had convinced Johnson to expand American troop strength from 23,000 advisors to over 184,000 ground combat infantrymen.",
             "<span class=\"para-ref\">[5.2]</span> **The Irreversible Escalation of 1965:** The decisions taken by Lyndon Johnson between August 1964 and July 1965 transformed what had been a localized anti-colonial and civil conflict into an Americanized war. In choosing massive military escalation over diplomatic negotiation, Johnson committed American global prestige to preserving an artificial, corrupt regime in Saigon that enjoyed virtually no legitimate popular base outside the urban Catholic elite.",
@@ -12517,7 +12697,9 @@
               "source": "/units/usa/assets/sources/marines-landing-danang.jpg"
             }
           ],
-          "isReversed": false
+          "isReversed": false,
+          "theme": "First US Ground Combat Troops Land at Da Nang",
+          "content": "<span class=\"para-ref\">[5.1]</span> **The Landing at Da Nang (8 March 1965):** To defend the vital US air base at Da Nang from Vietcong guerrilla attacks, General William Westmoreland requested combat troops. On 8 March 1965, 3,500 heavily armed US Marines waded ashore at Red Beach, Da Nang. This marked the fateful shift from American military advisors to direct ground combat.<br><br><span class=\"para-ref\">[5.2]</span> **Rapid Escalation & General Westmoreland:** Within months, the Marines' defensive perimeter expanded into offensive search-and-destroy combat across South Vietnam. By the close of 1965, President Johnson had escalated American troop strength from 23,000 advisors to over 184,000 ground troops, committing the United States to a full-scale land war in Asia."
         }
       ],
       "primary_source": null,
@@ -13495,6 +13677,24 @@
             "General Westmoreland escalation"
           ]
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what occurred during the Gulf of Tonkin incident in August 1964?",
+          "answer": "The US destroyer USS Maddox reported being fired upon by North Vietnamese torpedo boats in the Gulf of Tonkin."
+        },
+        {
+          "question": "Using paragraph [2.1], what powers did the Gulf of Tonkin Resolution grant to President Lyndon B. Johnson?",
+          "answer": "Complete authority to 'take all necessary measures' to repel armed attacks without needing a formal declaration of war from Congress."
+        },
+        {
+          "question": "According to paragraph [3.1], what was Operation Rolling Thunder, launched in March 1965?",
+          "answer": "A massive, continuous three-year aerial bombing campaign against military targets and supply routes in North Vietnam."
+        },
+        {
+          "question": "Using paragraph [5.1], why did the landing of 3,500 US Marines at Da Nang on 8 March 1965 represent a critical turning point?",
+          "answer": "It marked the introduction of direct American ground combat troops, shifting the US role from advising to fighting a land war."
+        }
       ]
     },
     {
@@ -13689,7 +13889,7 @@
           "act_title": "Stage 3: The Ho Chi Minh Trail Supply Lifeline — How did the Ho Chi Minh Trail enable North Vietnam to sustain the southern insurgency despite continuous US bombing?",
           "title": "The Ho Chi Minh Trail Supply Lifeline",
           "theme_heading": "The Ho Chi Minh Trail Supply Lifeline",
-          "text": "<span class=\"para-ref\">[3.1]</span> **The Ho Chi Minh Trail:** The lifeblood of the communist insurgency was the Ho Chi Minh Trail: an intricate 16,000-kilometre logistical corridor of jungle roads, paths, and river waterways snaking from North Vietnam through neutral Laos and Cambodia into South Vietnam. Despite the US Air Force dropping millions of tons of bombs—more than fell on Germany and Japan combined in World War II—over 300,000 North Vietnamese volunteer labourers and youth brigades repaired damaged roads overnight. Reinforced cargo bicycles, pack animals, and convoys of Soviet trucks maintained an uninterrupted flow of heavy weapons and reinforcements.\n\n<span class=\"para-ref\">[3.2]</span> **Psychological Terror: Booby Traps:** Vietcong fighters turned the jungle into a lethal psychological labyrinth. Roughly 11% of all American deaths and 17% of wounds were caused by booby traps. Troops feared \"punji stick\" pits: sharpened bamboo stakes smeared with human excrement designed to puncture combat boots and cause severe bacterial infection. Other traps included tripwire-detonated grenades, \"Bouncing Betty\" landmines that leaped waist-high before detonating, and hollowed-out bamboo logs filled with venomous vipers. This constant, invisible danger drove young American soldiers into chronic paranoia and psychological exhaustion.",
+          "text": "<span class=\"para-ref\">[3.1]</span> **The Logistics of the Ho Chi Minh Trail:** The lifeblood of the communist insurgency was the Ho Chi Minh Trail: an intricate 16,000-kilometre corridor of jungle roads, paths, and river waterways snaking from North Vietnam through neutral Laos and Cambodia into South Vietnam. Despite the US Air Force dropping millions of tons of bombs, over 300,000 North Vietnamese volunteer youth brigades repaired bomb craters overnight.<br><br><span class=\"para-ref\">[3.2]</span> **Sustaining the War Effort:** Cargo bicycles, pack animals, and Soviet-supplied trucks carried an uninterrupted flow of heavy artillery, rockets, ammunition, and fresh troops southward, ensuring that the Vietcong could never be starved of supplies.",
           "paragraphs": [
             "<span class=\"para-ref\">[3.1]</span> **The Ho Chi Minh Trail:** The lifeblood of the communist insurgency was the Ho Chi Minh Trail: an intricate 16,000-kilometre logistical corridor of jungle roads, paths, and river waterways snaking from North Vietnam through neutral Laos and Cambodia into South Vietnam. Despite the US Air Force dropping millions of tons of bombs—more than fell on Germany and Japan combined in World War II—over 300,000 North Vietnamese volunteer labourers and youth brigades repaired damaged roads overnight. Reinforced cargo bicycles, pack animals, and convoys of Soviet trucks maintained an uninterrupted flow of heavy weapons and reinforcements.",
             "<span class=\"para-ref\">[3.2]</span> **Psychological Terror: Booby Traps:** Vietcong fighters turned the jungle into a lethal psychological labyrinth. Roughly 11% of all American deaths and 17% of wounds were caused by booby traps. Troops feared \"punji stick\" pits: sharpened bamboo stakes smeared with human excrement designed to puncture combat boots and cause severe bacterial infection. Other traps included tripwire-detonated grenades, \"Bouncing Betty\" landmines that leaped waist-high before detonating, and hollowed-out bamboo logs filled with venomous vipers. This constant, invisible danger drove young American soldiers into chronic paranoia and psychological exhaustion."
@@ -13726,14 +13926,16 @@
           "isReversed": true,
           "image": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
           "image_alt": "Bell UH-1 Huey helicopters landing US infantry in a jungle clearing (1966)",
-          "caption": "Bell UH-1 Iroquois 'Huey' helicopters deploying infantry during air cavalry search-and-destroy sweeps in the central highlands (1966)."
+          "caption": "Bell UH-1 Iroquois 'Huey' helicopters deploying infantry during air cavalry search-and-destroy sweeps in the central highlands (1966).",
+          "theme": "The Ho Chi Minh Trail Supply Lifeline",
+          "content": "<span class=\"para-ref\">[3.1]</span> **The Logistics of the Ho Chi Minh Trail:** The lifeblood of the communist insurgency was the Ho Chi Minh Trail: an intricate 16,000-kilometre corridor of jungle roads, paths, and river waterways snaking from North Vietnam through neutral Laos and Cambodia into South Vietnam. Despite the US Air Force dropping millions of tons of bombs, over 300,000 North Vietnamese volunteer youth brigades repaired bomb craters overnight.<br><br><span class=\"para-ref\">[3.2]</span> **Sustaining the War Effort:** Cargo bicycles, pack animals, and Soviet-supplied trucks carried an uninterrupted flow of heavy artillery, rockets, ammunition, and fresh troops southward, ensuring that the Vietcong could never be starved of supplies."
         },
         {
           "act": 4,
           "act_title": "Stage 4: Chemical Defoliation & Napalm Warfare — Why did the use of chemical defoliants like Agent Orange and napalm prove counterproductive for US military objectives?",
           "title": "Chemical Defoliation & Napalm Warfare",
           "theme_heading": "Chemical Defoliation & Napalm Warfare",
-          "text": "<span class=\"para-ref\">[4.1]</span> **Westmoreland's War of Attrition:** General William Westmoreland adopted a strategy of attrition, believing American technological power could kill Vietcong fighters faster than Hanoi could replace them (the \"crossover point\"). American combat operations took the form of \"Search and Destroy\" missions: heavily armed infantry platoons were ferried by Bell UH-1 \"Huey\" helicopters into suspected enemy strongholds to locate the enemy, direct artillery and airstrikes, and count the dead (\"body count\"). Frustrated by their inability to find the enemy, American soldiers frequently burned suspected villages to the ground in notorious \"Zippo raids\".\n\n<span class=\"para-ref\">[4.2]</span> **Chemical Weapons and Environmental Devastation:** To strip away dense jungle canopy and destroy food crops that sustained the guerrillas, the US military launched Operation Ranch Hand (1961–1971). Specially modified C-123 cargo aircraft sprayed over 20 million gallons of toxic herbicides across South Vietnam, primarily Agent Orange, which was heavily contaminated with deadly dioxin. Furthermore, the US dropped nearly 400,000 tons of napalm: jellied petroleum that clung to human skin and burned at over 1,000°C. These brutal chemical weapons disfigured tens of thousands of civilians and poisoned ecosystems for generations.",
+          "text": "<span class=\"para-ref\">[4.1]</span> **Operation Ranch Hand & Agent Orange:** To strip away dense jungle canopy that hid guerrillas and wipe out food crops, the US military launched Operation Ranch Hand. Specially modified cargo planes sprayed over 20 million gallons of toxic chemical herbicides across South Vietnam, primarily Agent Orange. Dioxin contamination caused severe long-term cancers, birth defects, and permanent ecological destruction.<br><br><span class=\"para-ref\">[4.2]</span> **Napalm Air Strikes:** Furthermore, US aircraft dropped nearly 400,000 tons of napalm: jellied petroleum that ignited at over 1,000°C, clinging to human skin and suffocating victims. The horrific burns inflicted on civilian villagers turned world opinion sharply against American tactics.",
           "paragraphs": [
             "<span class=\"para-ref\">[4.1]</span> **Westmoreland's War of Attrition:** General William Westmoreland adopted a strategy of attrition, believing American technological power could kill Vietcong fighters faster than Hanoi could replace them (the \"crossover point\"). American combat operations took the form of \"Search and Destroy\" missions: heavily armed infantry platoons were ferried by Bell UH-1 \"Huey\" helicopters into suspected enemy strongholds to locate the enemy, direct artillery and airstrikes, and count the dead (\"body count\"). Frustrated by their inability to find the enemy, American soldiers frequently burned suspected villages to the ground in notorious \"Zippo raids\".",
             "<span class=\"para-ref\">[4.2]</span> **Chemical Weapons and Environmental Devastation:** To strip away dense jungle canopy and destroy food crops that sustained the guerrillas, the US military launched Operation Ranch Hand (1961–1971). Specially modified C-123 cargo aircraft sprayed over 20 million gallons of toxic herbicides across South Vietnam, primarily Agent Orange, which was heavily contaminated with deadly dioxin. Furthermore, the US dropped nearly 400,000 tons of napalm: jellied petroleum that clung to human skin and burned at over 1,000°C. These brutal chemical weapons disfigured tens of thousands of civilians and poisoned ecosystems for generations."
@@ -13767,7 +13969,9 @@
               "source": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg"
             }
           ],
-          "isReversed": true
+          "isReversed": true,
+          "theme": "Chemical Defoliation & Napalm Warfare",
+          "content": "<span class=\"para-ref\">[4.1]</span> **Operation Ranch Hand & Agent Orange:** To strip away dense jungle canopy that hid guerrillas and wipe out food crops, the US military launched Operation Ranch Hand. Specially modified cargo planes sprayed over 20 million gallons of toxic chemical herbicides across South Vietnam, primarily Agent Orange. Dioxin contamination caused severe long-term cancers, birth defects, and permanent ecological destruction.<br><br><span class=\"para-ref\">[4.2]</span> **Napalm Air Strikes:** Furthermore, US aircraft dropped nearly 400,000 tons of napalm: jellied petroleum that ignited at over 1,000°C, clinging to human skin and suffocating victims. The horrific burns inflicted on civilian villagers turned world opinion sharply against American tactics."
         },
         {
           "act": 5,
@@ -14823,6 +15027,24 @@
             "'Zippo' village burns",
             "Body-count measurement failure"
           ]
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what guerrilla tactics did the Vietcong use to neutralize superior American firepower?",
+          "answer": "Ambushes, 'clinging to the belt' in close combat to prevent US airstrikes, retreating into the jungle, and disappearing into local villages."
+        },
+        {
+          "question": "Using paragraph [2.1], how did the underground tunnel network at Cu Chi protect communist guerrillas?",
+          "answer": "They provided bomb-proof shelters, underground hospitals, weapons factories, and hidden trapdoors for surprise attacks."
+        },
+        {
+          "question": "According to paragraph [3.1], what was the Ho Chi Minh Trail and why was it so vital to the communist war effort?",
+          "answer": "A 16,000-km network of jungle roads through neutral Laos and Cambodia delivering continuous Soviet and Chinese weapons to the South."
+        },
+        {
+          "question": "Using paragraph [4.1], what was Agent Orange and why did the US military spray over 20 million gallons of it?",
+          "answer": "A toxic chemical herbicide sprayed from aircraft to destroy jungle foliage concealing guerrillas and kill enemy food crops."
         }
       ]
     },
@@ -16148,6 +16370,24 @@
           "title": "Phased Troop Withdrawals & Morale Collapse",
           "dates": "1969–1972"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what was the Tet Offensive, launched by the Vietcong and North Vietnamese in January 1968?",
+          "answer": "A coordinated surprise attack on over 100 South Vietnamese towns, cities, and the US Embassy in Saigon during the Lunar New Year truce."
+        },
+        {
+          "question": "Using paragraph [2.1], why was the Tet Offensive a massive psychological and political defeat for the United States despite military victory?",
+          "answer": "It proved to the American public that the government was lying about imminent victory, creating a massive 'credibility gap'."
+        },
+        {
+          "question": "According to paragraph [3.1], what was President Richard Nixon's policy of 'Vietnamization'?",
+          "answer": "Withdrawing American combat troops and training and equipping the South Vietnamese Army (ARVN) to fight the war alone."
+        },
+        {
+          "question": "Using paragraph [4.1], what secret military operations did Nixon order in 1969–1970 that sparked fury at home?",
+          "answer": "Secret bombing and military ground incursions into neutral Cambodia and Laos to destroy communist sanctuaries."
+        }
       ]
     },
     {
@@ -16307,7 +16547,7 @@
           "act_title": "Stage 2: The Draft System & Class Inequity — Why did class and racial inequalities in the military draft provoke widespread campus resistance and draft card burnings?",
           "title": "The Draft System & Class Inequity",
           "theme_heading": "The Draft System & Class Inequity",
-          "text": "<span class=\"para-ref\">[2.1]</span> **A Deeply Discriminatory Draft System:** Opposition to the war was intensely concentrated around the military draft (Selective Service). Between 1965 and 1973, over two million young men were conscripted. The draft system was rife with socioeconomic bias: middle-class and wealthy youths secured college deferments, joined the safe National Guard, or obtained sympathetic doctor's notes for minor physical ailments. Consequently, the burden of jungle combat fell disproportionately upon poor, working-class, and minority youths. African Americans made up roughly 11% of the US population but accounted for over 20% of combat deaths in the early war years.\n\n<span class=\"para-ref\">[2.2]</span> **Mass Resistance and the Anti-War Vanguard:** In response, draft resistance erupted across the nation. Young men staged mass rallies to publicly burn their draft registration cards, while thousands fled to Canada or Sweden. Heavyweight boxing champion Muhammad Ali refused induction in 1967 on religious and racial grounds, famously declaring: \"I ain't got no quarrel with them Vietcong; no Vietcong ever called me nigger.\" In December 1969, Nixon introduced a televised draft lottery, but rather than placating students, it provoked even broader panic and protest as young men discovered their fate drawn live on national television.",
+          "text": "<span class=\"para-ref\">[2.1]</span> **A Discriminatory Draft System:** Opposition to the war centered on the military draft (Selective Service). Over two million young men were conscripted between 1965 and 1973. The draft system favoured the wealthy: middle-class youths obtained college deferments or doctor excuses, while working-class and minority men were sent to fight. Black Americans made up 11% of the US population but over 20% of combat deaths in the early war years.<br><br><span class=\"para-ref\">[2.2]</span> **Draft Resistance & Muhammad Ali:** In response, young men staged mass rallies to publicly burn draft cards, while thousands fled to Canada. In 1967, world boxing champion Muhammad Ali refused the draft on moral and religious grounds, declaring: \"I ain't got no quarrel with them Vietcong.\" The draft galvanized millions of students into active protest.",
           "paragraphs": [
             "<span class=\"para-ref\">[2.1]</span> **A Deeply Discriminatory Draft System:** Opposition to the war was intensely concentrated around the military draft (Selective Service). Between 1965 and 1973, over two million young men were conscripted. The draft system was rife with socioeconomic bias: middle-class and wealthy youths secured college deferments, joined the safe National Guard, or obtained sympathetic doctor's notes for minor physical ailments. Consequently, the burden of jungle combat fell disproportionately upon poor, working-class, and minority youths. African Americans made up roughly 11% of the US population but accounted for over 20% of combat deaths in the early war years.",
             "<span class=\"para-ref\">[2.2]</span> **Mass Resistance and the Anti-War Vanguard:** In response, draft resistance erupted across the nation. Young men staged mass rallies to publicly burn their draft registration cards, while thousands fled to Canada or Sweden. Heavyweight boxing champion Muhammad Ali refused induction in 1967 on religious and racial grounds, famously declaring: \"I ain't got no quarrel with them Vietcong; no Vietcong ever called me nigger.\" In December 1969, Nixon introduced a televised draft lottery, but rather than placating students, it provoked even broader panic and protest as young men discovered their fate drawn live on national television."
@@ -16341,14 +16581,16 @@
               "source": "/units/usa/assets/sources/my_lai_soldier_hut_fire_1968.jpg"
             }
           ],
-          "isReversed": true
+          "isReversed": true,
+          "theme": "The Draft System & Class Inequity",
+          "content": "<span class=\"para-ref\">[2.1]</span> **A Discriminatory Draft System:** Opposition to the war centered on the military draft (Selective Service). Over two million young men were conscripted between 1965 and 1973. The draft system favoured the wealthy: middle-class youths obtained college deferments or doctor excuses, while working-class and minority men were sent to fight. Black Americans made up 11% of the US population but over 20% of combat deaths in the early war years.<br><br><span class=\"para-ref\">[2.2]</span> **Draft Resistance & Muhammad Ali:** In response, young men staged mass rallies to publicly burn draft cards, while thousands fled to Canada. In 1967, world boxing champion Muhammad Ali refused the draft on moral and religious grounds, declaring: \"I ain't got no quarrel with them Vietcong.\" The draft galvanized millions of students into active protest."
         },
         {
           "act": 3,
           "act_title": "Stage 3: Exposure of the My Lai Massacre — How did revelations of the My Lai massacre undermine the moral justification for the American war effort?",
           "title": "Exposure of the My Lai Massacre",
           "theme_heading": "Exposure of the My Lai Massacre",
-          "text": "<span class=\"para-ref\">[3.1]</span> **The Slaughter at Son My (16 March 1968):** On the morning of 16 March 1968, Charlie Company of the 11th Infantry Brigade landed in the village of Son My (My Lai hamlet). Angered by heavy booby-trap casualties and briefed that the village was a Vietcong stronghold, soldiers found only unarmed women, children, and elderly men preparing breakfast. Under the direct orders of Lieutenant William Calley, American troops spent four hours systematically slaughtering up to 504 unarmed civilians, herding families into ditches and executing them, raping girls, and slaughtering livestock. The massacre was halted only when helicopter pilot Hugh Thompson landed between the soldiers and villagers, threatening to open fire on his fellow Americans.\n\n<span class=\"para-ref\">[3.2]</span> **Exposure and the Shattering of Moral Authority:** Military brass buried reports of the atrocity for twenty months. In November 1969, investigative journalist Seymour Hersh broke the story, accompanied by horrifying photographs taken by army photographer Ronald Haeberle showing corpses piled in ditches. The revelations shattered the cherished myth of American moral exceptionalism. In March 1971, Calley was convicted of premeditated murder and sentenced to life imprisonment, but President Nixon quickly reduced his sentence to three years of house arrest, further outraging the anti-war movement.",
+          "text": "<span class=\"para-ref\">[3.1]</span> **The Slaughter at My Lai (16 March 1968):** On 16 March 1968, American troops of Charlie Company, commanded by Lieutenant William Calley, entered the village of My Lai. Frustrated by booby-trap casualties and finding no enemy soldiers, the unit murdered up to 504 unarmed Vietnamese civilians—mostly women, children, and elderly men—herding them into ditches and executing them.<br><br><span class=\"para-ref\">[3.2]</span> **Exposure & Shattered Moral Authority:** The massacre was concealed by military officials until November 1969, when investigative reporter Seymour Hersh published the story alongside horrifying photographs of bodies piled in ditches. The revelations destroyed the belief that the US was fighting a noble war, severely deepening anti-war feeling across America.",
           "paragraphs": [
             "<span class=\"para-ref\">[3.1]</span> **The Slaughter at Son My (16 March 1968):** On the morning of 16 March 1968, Charlie Company of the 11th Infantry Brigade landed in the village of Son My (My Lai hamlet). Angered by heavy booby-trap casualties and briefed that the village was a Vietcong stronghold, soldiers found only unarmed women, children, and elderly men preparing breakfast. Under the direct orders of Lieutenant William Calley, American troops spent four hours systematically slaughtering up to 504 unarmed civilians, herding families into ditches and executing them, raping girls, and slaughtering livestock. The massacre was halted only when helicopter pilot Hugh Thompson landed between the soldiers and villagers, threatening to open fire on his fellow Americans.",
             "<span class=\"para-ref\">[3.2]</span> **Exposure and the Shattering of Moral Authority:** Military brass buried reports of the atrocity for twenty months. In November 1969, investigative journalist Seymour Hersh broke the story, accompanied by horrifying photographs taken by army photographer Ronald Haeberle showing corpses piled in ditches. The revelations shattered the cherished myth of American moral exceptionalism. In March 1971, Calley was convicted of premeditated murder and sentenced to life imprisonment, but President Nixon quickly reduced his sentence to three years of house arrest, further outraging the anti-war movement."
@@ -16385,7 +16627,9 @@
           "isReversed": true,
           "image": "/units/usa/assets/sources/vietnam-draft-lottery.jpg",
           "image_alt": "Selective Service officials drawing birthdate capsules from a glass urn during the draft lottery (December 1969)",
-          "caption": "Selective Service officials drawing birthdate capsules on 1 December 1969 to determine conscription order, the first US draft lottery held since 1942."
+          "caption": "Selective Service officials drawing birthdate capsules on 1 December 1969 to determine conscription order, the first US draft lottery held since 1942.",
+          "theme": "Exposure of the My Lai Massacre",
+          "content": "<span class=\"para-ref\">[3.1]</span> **The Slaughter at My Lai (16 March 1968):** On 16 March 1968, American troops of Charlie Company, commanded by Lieutenant William Calley, entered the village of My Lai. Frustrated by booby-trap casualties and finding no enemy soldiers, the unit murdered up to 504 unarmed Vietnamese civilians—mostly women, children, and elderly men—herding them into ditches and executing them.<br><br><span class=\"para-ref\">[3.2]</span> **Exposure & Shattered Moral Authority:** The massacre was concealed by military officials until November 1969, when investigative reporter Seymour Hersh published the story alongside horrifying photographs of bodies piled in ditches. The revelations destroyed the belief that the US was fighting a noble war, severely deepening anti-war feeling across America."
         },
         {
           "act": 4,
@@ -17414,6 +17658,24 @@
           ],
           "title": "Publication of the Pentagon Papers",
           "dates": "June 1971"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], why was Vietnam called America’s first 'living room war'?",
+          "answer": "Television networks broadcast nightly, uncensored colour combat footage of wounded soldiers and burning villages directly into family living rooms."
+        },
+        {
+          "question": "Using paragraph [2.1], why was the military draft system criticized as unfair and discriminatory?",
+          "answer": "Wealthier and middle-class youths obtained college deferments or doctor excuses, while working-class and minority men were disproportionately conscripted."
+        },
+        {
+          "question": "According to paragraph [3.1], what occurred at the village of My Lai on 16 March 1968 under Lieutenant William Calley?",
+          "answer": "US troops of Charlie Company systematically murdered up to 504 unarmed Vietnamese women, children, and elderly civilians."
+        },
+        {
+          "question": "Using paragraph [4.1], what happened at Kent State University in Ohio on 4 May 1970?",
+          "answer": "National Guardsmen fired 67 rounds into unarmed student anti-war protesters, killing four students and wounding nine others."
         }
       ]
     },
@@ -18685,6 +18947,24 @@
           ],
           "title": "Nixon's 49-State Landslide Re-election",
           "dates": "November 1972"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], why did millions of working-class and conservative Americans support the Vietnam War?",
+          "answer": "Out of anti-communist patriotism, respect for the armed forces, and disgust at student protesters burning American flags."
+        },
+        {
+          "question": "Using paragraph [2.1], who were the 'Silent Majority' addressed by President Richard Nixon in November 1969?",
+          "answer": "Law-abiding, patriotic Americans who supported the war and government policies but did not join vocal street demonstrations."
+        },
+        {
+          "question": "According to paragraph [3.1], what were the 'Hard Hat Riots' in New York City in May 1970?",
+          "answer": "Pro-war construction workers wearing hard hats attacked anti-war student demonstrators near Wall Street, supported by police."
+        },
+        {
+          "question": "Using paragraph [5.1], what was the result of the 1972 US Presidential Election?",
+          "answer": "Richard Nixon won an overwhelming 49-state landslide re-election victory over anti-war Democratic candidate George McGovern."
         }
       ]
     },
@@ -19991,6 +20271,24 @@
           ],
           "title": "Congress Passes the War Powers Act Over Nixon's Veto",
           "dates": "7 November 1973"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], who conducted the secret Paris peace negotiations between 1969 and 1973?",
+          "answer": "US National Security Advisor Henry Kissinger and North Vietnamese diplomat Le Duc Tho."
+        },
+        {
+          "question": "Using paragraph [2.1], what was Operation Linebacker II (the 'Christmas Bombings') in December 1972?",
+          "answer": "Twelve days of massive, around-the-clock B-52 bombing raids on Hanoi and Haiphong to force North Vietnam back to the negotiating table."
+        },
+        {
+          "question": "According to paragraph [3.1], what did the Paris Peace Accords of January 1973 stipulate?",
+          "answer": "A complete ceasefire, the withdrawal of all remaining US combat troops within 60 days, and the release of all American prisoners of war."
+        },
+        {
+          "question": "Using paragraph [5.1], what restriction did Congress pass in November 1973 under the War Powers Act?",
+          "answer": "The President had to inform Congress within 48 hours of deploying troops and could not keep troops committed for over 60 days without congressional approval."
         }
       ]
     },
@@ -21310,6 +21608,24 @@
           ],
           "title": "The Collapse of the American Domestic Home Front",
           "dates": "1968–1975"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], how quickly did the South Vietnamese Army (ARVN) collapse during the 1975 Spring Offensive?",
+          "answer": "Within just 55 days, as ARVN troops panicked and fled south despite possessing billions of dollars of American weaponry."
+        },
+        {
+          "question": "Using paragraph [2.1], what was Operation Frequent Wind in April 1975?",
+          "answer": "The emergency helicopter evacuation of over 7,000 Americans and South Vietnamese allies from the US Embassy roof as Saigon fell."
+        },
+        {
+          "question": "According to paragraph [3.1], why was Vietnamese nationalist determination a decisive factor in American defeat?",
+          "answer": "The Vietcong and North Vietnamese viewed the conflict as a holy war for national independence and were willing to sustain catastrophic casualties."
+        },
+        {
+          "question": "Using paragraph [5.1], how did the collapse of the American domestic home front prevent further US military intervention?",
+          "answer": "Deep public disillusionment, student protests, the Watergate scandal, and congressional funding cutoffs made continuing the war politically impossible."
         }
       ]
     }
