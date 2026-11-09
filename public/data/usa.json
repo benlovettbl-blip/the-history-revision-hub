@@ -1268,7 +1268,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about legal segregation in the American South in the early 1950s. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that racial segregation was strictly and legally enforced in public transport facilities.<br><strong>Details in the source that tell me this:</strong><br>The statute mandates that railroad and bus operators provide 'equal but separate accommodations for the white and colored races'.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the state criminalized any mixing of races on passenger transit.<br><strong>Details in the source that tell me this:</strong><br>The law orders separate cars and partitioned compartments to ensure strict physical division between passengers.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Public transport was strictly segregated by law.<br><strong>Details in the source that tell me this:</strong><br>'equal but separate accommodations for the white and colored races'.</p><p><strong>(ii) What I can infer:</strong><br>Mixing between racial groups was strictly prohibited.<br><strong>Details in the source that tell me this:</strong><br>'separate cars and partitioned compartments'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -1285,22 +1285,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that racial segregation was strictly enforced on public transport in the South.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>The Mississippi State Code (§7785): All railroad c...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Public transport was legally segregated by race.<br><strong>Details in the source that tell me this:</strong><br>'equal but separate accommodations for the white and colored races'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that racial segregation was strictly and legally enforced in public transport facilities.<br><strong>Details in the source that tell me this:</strong><br>The statute mandates that railroad and bus operators provide 'equal but separate accommodations for the white and colored races'.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the state criminalized any mixing of races on passenger transit.<br><strong>Details in the source that tell me this:</strong><br>The law orders separate cars and partitioned compartments to ensure strict physical division between passengers.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Public transport was strictly segregated by law.<br><strong>Details in the source that tell me this:</strong><br>'equal but separate accommodations for the white and colored races'.</p><p><strong>(ii) What I can infer:</strong><br>Mixing between racial groups was strictly prohibited.<br><strong>Details in the source that tell me this:</strong><br>'separate cars and partitioned compartments'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -2530,7 +2530,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the opposition faced by Black students attempting to desegregate Southern schools in 1957. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that Black students faced intense, hostile opposition from local white crowds when entering desegregated schools.<br><strong>Details in the source that tell me this:</strong><br>The source describes angry mobs shouting threats and spitting at students attempting to enter the school gates.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that state authorities initially assisted the resistance to integration.<br><strong>Details in the source that tell me this:</strong><br>National Guard troops were initially deployed by the state governor to physically bar the Black students from entering.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Black pupils faced intense hostility and threats from white crowds.<br><strong>Details in the source that tell me this:</strong><br>'angry mobs shouting threats and spitting at students'.</p><p><strong>(ii) What I can infer:</strong><br>State authorities deployed armed soldiers to block integration.<br><strong>Details in the source that tell me this:</strong><br>'National Guard troops were deployed by the governor to bar entry'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -2547,22 +2547,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that Black students faced angry white crowds when entering desegregated schools.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Does segregation of children in public schools sol...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Black pupils faced intense hostility and threats from white mobs.<br><strong>Details in the source that tell me this:</strong><br>'angry mobs shouting threats and spitting at students'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that Black students faced intense, hostile opposition from local white crowds when entering desegregated schools.<br><strong>Details in the source that tell me this:</strong><br>The source describes angry mobs shouting threats and spitting at students attempting to enter the school gates.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that state authorities initially assisted the resistance to integration.<br><strong>Details in the source that tell me this:</strong><br>National Guard troops were initially deployed by the state governor to physically bar the Black students from entering.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Black pupils faced intense hostility and threats from white crowds.<br><strong>Details in the source that tell me this:</strong><br>'angry mobs shouting threats and spitting at students'.</p><p><strong>(ii) What I can infer:</strong><br>State authorities deployed armed soldiers to block integration.<br><strong>Details in the source that tell me this:</strong><br>'National Guard troops were deployed by the governor to bar entry'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -3794,7 +3794,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the determination of the Black community during the Montgomery Bus Boycott (1955–56). [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that the Black community in Montgomery showed immense collective endurance and unity.<br><strong>Details in the source that tell me this:</strong><br>Thousands of residents walked miles to work daily through rain and heat rather than riding the segregated buses.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that local authorities used intimidation and legal harassment to break the boycott.<br><strong>Details in the source that tell me this:</strong><br>Police repeatedly arrested carpool drivers and cited them for minor traffic offenses to disrupt the transport system.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Black citizens showed immense collective endurance and unity.<br><strong>Details in the source that tell me this:</strong><br>'Thousands walked miles to work daily through rain and heat'.</p><p><strong>(ii) What I can infer:</strong><br>Local authorities used police harassment to disrupt the protest.<br><strong>Details in the source that tell me this:</strong><br>'Police repeatedly arrested carpool drivers for minor offenses'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -3811,22 +3811,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that Black citizens in Montgomery were determined to boycott buses.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Black citizens showed immense endurance to sustain the boycott.<br><strong>Details in the source that tell me this:</strong><br>'Thousands walked miles to work daily through rain and heat'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that the Black community in Montgomery showed immense collective endurance and unity.<br><strong>Details in the source that tell me this:</strong><br>Thousands of residents walked miles to work daily through rain and heat rather than riding the segregated buses.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that local authorities used intimidation and legal harassment to break the boycott.<br><strong>Details in the source that tell me this:</strong><br>Police repeatedly arrested carpool drivers and cited them for minor traffic offenses to disrupt the transport system.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Black citizens showed immense collective endurance and unity.<br><strong>Details in the source that tell me this:</strong><br>'Thousands walked miles to work daily through rain and heat'.</p><p><strong>(ii) What I can infer:</strong><br>Local authorities used police harassment to disrupt the protest.<br><strong>Details in the source that tell me this:</strong><br>'Police repeatedly arrested carpool drivers for minor offenses'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -3884,7 +3884,7 @@
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the reasons for the success of the Montgomery Bus Boycott (1955–56)? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for investigating the boycott’s success because it highlights the community's economic leverage, arguing that \"if Negroes did not ride the buses, they could not operate\". This claim was factually valid: Black citizens comprised over 70% of Montgomery's passengers, so the instruction to \"stay off the buses Monday\" immediately starved the transit company of vital fare revenue. As an agitational circular authored by Jo Ann Robinson's Women's Political Council immediately following Rosa Parks' arrest, its purpose was mass mobilization, providing historians authentic evidence of the practical instructions that convinced 40,000 residents to boycott from day one.<br><br>Source C is equally useful because it captures the constitutional and moral rhetoric that sustained the movement, declaring that \"we are determined to apply our citizenship to the fullness of its meaning\". King used Christian framing to transform a municipal seating dispute into a moral crusade, explaining that ordinary citizens were \"tired of being trampled over by the iron feet of oppression\". This spiritual resolve proved decisive in enduring 381 days of economic retaliation and KKK bombings. As an inspirational rally address at Holt Street Baptist Church, King's purpose was to galvanize supporters, making it valuable for historians studying how charismatic ministerial leadership preserved unity until Browder v. Gayle.",
+            "model": "<p>Source B is highly useful for investigating the boycott’s success because it reveals the community's economic leverage, urging residents to 'stay off the buses' as 'Negroes did not ride, they could not operate'. Since Black citizens provided over 70% of passenger revenue, this leaflet demonstrates how financial pressure crippled the transit company. Produced by Jo Ann Robinson's Women's Political Council immediately following Rosa Parks' arrest, its purpose was mass mobilisation, making it authentic evidence of how local organisers coordinated 40,000 boycotters.</p><p>Source C is equally useful because it captures the moral and religious leadership that sustained the movement. King proclaimed that citizens were 'tired of being trampled over by the iron feet of oppression'. This Christian rhetoric sustained morale through 381 days of bombings and economic retaliation until *Browder v. Gayle*. As King’s opening address at Holt Street Baptist Church, its purpose was inspiration, providing valuable insight into how charismatic oratory maintained non-violent unity.</p><p>Together, both sources are valuable because they show practical economic organisation alongside spiritual resolve.</p>",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -3897,26 +3897,26 @@
             "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance (author/purpose). Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Judgement",
+                "title": "2/8 Simple Comment",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Simple Judgement)",
-                "text": "Source B is useful because it is a leaflet written at the time of the bus boycott and tells people not to ride the buses. Source C is from Martin Luther King so it is biased because he led the boycott, but it is useful because he was there.",
-                "verdict": "AO3 (2 marks). Simple assertions with generic provenance comments ('at the time', 'biased'). Fails to evaluate how NOP affects usefulness or deploy contextual knowledge."
+                "level": "Level 1 (Simple Comment on Surface Feature)",
+                "text": "<p>Source B is useful because it tells people to stay off the buses. Source C is also useful because Martin Luther King gave a speech saying people were tired of oppression. Both sources show people were unhappy.</p>",
+                "verdict": "AO3 (2 marks). Simple surface-level comments without evaluating provenance, context, or specific utility for the enquiry."
               },
               "tier_5m": {
-                "title": "5/8 Developed Content",
+                "title": "5/8 Partial Utility",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Developed Evaluation)",
-                "text": "Source B is useful because it shows how the Women's Political Council organized the boycott immediately after Rosa Parks was arrested on 1 December 1955. The leaflet urged Black citizens to stay off the buses, which was successful because 90% of Black passengers complied.<br><br>Source C is useful because it is a speech by Martin Luther King explaining why non-violence was important. King motivated thousands of protesters at the Holt Street Baptist Church. However, it is an inspiring speech designed to rally followers, so it exaggerates unity.",
-                "verdict": "AO3 (5 marks). Good analysis of source content supported by contextual knowledge, but provenance comments remain partially descriptive rather than explicitly demonstrating how author/purpose affects the weight of evidence."
+                "level": "Level 2 (Developed Content Analysis)",
+                "text": "<p>Source B is useful because it explains the economic power of Black citizens, who made up over 70% of passengers, showing why the boycott worked. Source C is useful because King inspired people with Christian values to keep walking for 381 days.<br><br>However, neither source is evaluated for provenance, so reliability and purpose are not considered.</p>",
+                "verdict": "AO3 (5 marks). Clear explanation of content and context for both sources, but lacks evaluation of provenance and tone."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
                 "score": "8 / 8 Marks",
                 "level": "Level 3 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Source B is useful for investigating the boycott’s success because it highlights the community's economic leverage, arguing that \"if Negroes did not ride the buses, they could not operate\". This claim was factually valid: Black citizens comprised over 70% of Montgomery's passengers, so the instruction to \"stay off the buses Monday\" immediately starved the transit company of vital fare revenue. As an agitational circular authored by Jo Ann Robinson's Women's Political Council immediately following Rosa Parks' arrest, its purpose was mass mobilization, providing historians authentic evidence of the practical instructions that convinced 40,000 residents to boycott from day one.<br><br>Source C is equally useful because it captures the constitutional and moral rhetoric that sustained the movement, declaring that \"we are determined to apply our citizenship to the fullness of its meaning\". King used Christian framing to transform a municipal seating dispute into a moral crusade, explaining that ordinary citizens were \"tired of being trampled over by the iron feet of oppression\". This spiritual resolve proved decisive in enduring 381 days of economic retaliation and KKK bombings. As an inspirational rally address at Holt Street Baptist Church, King's purpose was to galvanize supporters, making it valuable for historians studying how charismatic ministerial leadership preserved unity until Browder v. Gayle.",
-                "verdict": "AO3 Level 3 (8 marks). 191 words across 2 tightly woven paragraphs. Each paragraph embeds 2 verbatim quotes anchoring Content, Contextual Validation, and 1-aspect NOP linked directly to the enquiry. Zero wasted intro, comparison, or conclusion."
+                "text": "<p>Source B is highly useful for investigating the boycott’s success because it reveals the community's economic leverage, urging residents to 'stay off the buses' as 'Negroes did not ride, they could not operate'. Since Black citizens provided over 70% of passenger revenue, this leaflet demonstrates how financial pressure crippled the transit company. Produced by Jo Ann Robinson's Women's Political Council immediately following Rosa Parks' arrest, its purpose was mass mobilisation, making it authentic evidence of how local organisers coordinated 40,000 boycotters.</p><p>Source C is equally useful because it captures the moral and religious leadership that sustained the movement. King proclaimed that citizens were 'tired of being trampled over by the iron feet of oppression'. This Christian rhetoric sustained morale through 381 days of bombings and economic retaliation until *Browder v. Gayle*. As King’s opening address at Holt Street Baptist Church, its purpose was inspiration, providing valuable insight into how charismatic oratory maintained non-violent unity.</p><p>Together, both sources are valuable because they show practical economic organisation alongside spiritual resolve.</p>",
+                "verdict": "AO3 (8 marks). Detailed evaluation of content, provenance, and historical context for both sources, assessing how they complement each other for the enquiry."
               }
             }
           }
@@ -5087,7 +5087,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the racial violence and terror inflicted on Black Americans in the South in 1955. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that racial violence against Black Americans in the South was extreme and unchecked by local law enforcement.<br><strong>Details in the source that tell me this:</strong><br>The extract details the brutal abduction and murder of Emmett Till after he allegedly whistled at a white woman.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the Southern judicial system actively protected white perpetrators of racial violence.<br><strong>Details in the source that tell me this:</strong><br>An all-white, all-male jury acquitted the confessed murderers after deliberating for barely an hour.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Racial violence against Black Americans was brutal and unprovoked.<br><strong>Details in the source that tell me this:</strong><br>'brutally abducted and murdered after allegedly whistling at a white woman'.</p><p><strong>(ii) What I can infer:</strong><br>The Southern judicial system protected white murderers.<br><strong>Details in the source that tell me this:</strong><br>'An all-white jury acquitted the confessed murderers after barely an hour'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -5104,22 +5104,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that Black people suffered extreme racial violence in Mississippi.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Racial violence against Black Americans was brutal and unpunished.<br><strong>Details in the source that tell me this:</strong><br>'brutally abducted and murdered after allegedly whistling at a white woman'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that racial violence against Black Americans in the South was extreme and unchecked by local law enforcement.<br><strong>Details in the source that tell me this:</strong><br>The extract details the brutal abduction and murder of Emmett Till after he allegedly whistled at a white woman.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the Southern judicial system actively protected white perpetrators of racial violence.<br><strong>Details in the source that tell me this:</strong><br>An all-white, all-male jury acquitted the confessed murderers after deliberating for barely an hour.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Racial violence against Black Americans was brutal and unprovoked.<br><strong>Details in the source that tell me this:</strong><br>'brutally abducted and murdered after allegedly whistling at a white woman'.</p><p><strong>(ii) What I can infer:</strong><br>The Southern judicial system protected white murderers.<br><strong>Details in the source that tell me this:</strong><br>'An all-white jury acquitted the confessed murderers after barely an hour'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -5186,7 +5186,7 @@
               }
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 is supported by compelling evidence showing that political leadership and 'Massive Resistance' organised by Southern state governments were fundamental in blocking school desegregation. Following the Brown ruling, 101 Southern congressmen signed the 'Southern Manifesto' in 1956, pledging to resist desegregation by all legal means. Southern governors like Orval Faubus at Little Rock (1957) actively deployed state National Guardsmen to block Black pupils from entering white schools, giving state-sponsored legitimacy to segregationist defiance.<br><br>On the other hand, Interpretation 2 offers an equally persuasive argument by focusing on the grassroots hostility, cultural racism, and violence organised by White Citizens' Councils and the KKK. White Citizens' Councils grew to over 250,000 members across the South, using economic intimidation, firing Black parents, and closing down public schools entirely (as in Prince Edward County, Virginia) to fund private all-white academies. This demonstrates that resistance was not merely top-down political rhetoric, but deeply embedded in the social fabric of white Southern communities.<br><br>Furthermore, contextual analysis confirms that the Supreme Court's vague wording in Brown II (1955)—ordering desegregation with 'all deliberate speed'—provided Southern school boards with an open invitation to delay integration for years without facing federal legal penalties.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a large extent. While state governors and politicians provided legal cover, it was the deep-seated, community-wide white backlash and economic terror on the ground that made the enforcement of school desegregation so painfully slow and hazardous for Black children.",
+            "model": "<p>Interpretation 2 presents a compelling argument that Southern resistance to school desegregation was fundamentally driven from below by entrenched grassroots white hostility. The historian highlights how ordinary citizens mobilised to preserve white supremacy. This view is strongly substantiated by contextual evidence: White Citizens' Councils rapidly enrolled 250,000 members across the South, using economic intimidation, mortgage cancellations, and dismissals against Black parents who registered their children. In Prince Edward County, Virginia, authorities closed all public schools for five years rather than integrate, funding private 'segregation academies' for white children. Furthermore, violent white mobs physically assaulted Black pupils, spitting at Elizabeth Eckford outside Little Rock Central High. Therefore, Interpretation 2 is supported because the day-to-day enforcement of desegregation was thwarted by violent communal resistance rather than political speeches alone.</p><p>However, Interpretation 1 provides a vital counter-perspective by demonstrating that grassroots bigotry required state-sanctioned legitimacy to remain effective. In 1956, 101 Southern congressmen signed the 'Southern Manifesto', declaring Brown a judicial abuse and pledging resistance by all lawful means. Furthermore, Southern governors like Orval Faubus actively deployed the Arkansas National Guard in September 1957 to bar the 'Little Rock Nine', forcing President Eisenhower to dispatch the 101st Airborne Division. Therefore, Interpretation 1 is persuasive because political leaders created the legal shelter and institutional defiance that emboldened local communities to resist federal rulings.</p><p>In conclusion, I agree with Interpretation 2 to a substantial extent. While Southern politicians provided institutional cover (Interpretation 1), it was the ferocious grassroots backlash, economic terrorism, and community school closures (Interpretation 2) that made desegregation painfully slow and hazardous for Black children across the Deep South.</p>",
             "scaffolding": {
               "acronym": "Evaluative Verdict Framework",
               "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
@@ -5199,26 +5199,26 @@
             "examiner_tip": "Level 4 Discriminator: You MUST explicitly indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 against Interpretation 1 using precise contextual knowledge (e.g. Southern Manifesto, Little Rock Nine, Orval Faubus), and deploy specialist terminology for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
-                "title": "4/16 Simple Statement",
+                "title": "4/16 Basic Description",
                 "score": "4 / 16 Marks",
-                "level": "Level 1 Top (Simple Evaluation)",
-                "text": "Interpretation 2 says that Southern states resisted school desegregation because local politicians and governors like Orval Faubus wanted to keep white votes. I agree with this because Faubus used the National Guard to stop Black students entering Little Rock High School. However Interpretation 1 says ordinary white people were racist and joined the KKK.",
-                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (2 marks). Simple evaluation that relies heavily on paraphrase and generalized assertions without balanced analysis of both interpretations."
+                "level": "Level 1 Top / Level 2 Bottom (Basic Description)",
+                "text": "<p>Interpretation 2 says white people in the South resisted school integration because they were racist and set up private academies. This is true because the KKK attacked Black students. However, politicians also stopped integration because governors like Faubus used troops at Little Rock to block Black children.</p>",
+                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (1 mark). Simple, generalized description of one view with brief mention of the other, lacking sustained historical analysis or criteria-driven evaluation."
               },
               "tier_8m": {
-                "title": "8/16 Descriptive Account",
+                "title": "8/16 Two-Sided Account",
                 "score": "8 / 16 Marks",
-                "level": "Level 2 Top (Descriptive Account)",
-                "text": "Interpretation 2 argues that Southern resistance to school desegregation was driven by political leaders who used 'Massive Resistance' to win elections. In 1956, over 100 Southern congressmen signed the Southern Manifesto promising to resist the Supreme Court. In Arkansas, Governor Orval Faubus surrounded Little Rock Central High School with the National Guard in 1957 to stop nine Black students entering, proving politicians led the resistance.<br><br>On the other hand, Interpretation 1 emphasizes that deep-rooted racial hatred among ordinary white citizens was the main reason. White Citizens' Councils were set up across the South and thousands of white parents protested outside schools and threatened Black children. Therefore both politicians and the public resisted desegregation.",
-                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (3 marks). Good factual support for both interpretations, but remains largely descriptive. Lacks explicit analysis of how the views are conveyed and offers an undeveloped final verdict."
+                "level": "Level 2 Top / Level 3 Bottom (Two-Sided Account)",
+                "text": "<p>On the one hand, Interpretation 2 is convincing because grassroots racism was intense. White Citizens' Councils grew to 250,000 members, using boycotts and closing public schools to stop integration, such as in Prince Edward County. Angry white mobs also attacked Black children attempting to enter schools.<br><br>On the other hand, Interpretation 1 emphasizes top-down political resistance. In 1956, 101 Southern congressmen signed the Southern Manifesto, promising to resist desegregation. Governor Orval Faubus deployed the National Guard at Little Rock to block nine Black pupils.<br><br>Overall, I agree with Interpretation 2 because ordinary white communities resisted desegregation every day on the ground.</p>",
+                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (2 marks). Explains both interpretations with relevant contextual facts, but lacks deep historiographical evaluation or a developed criteria-based verdict."
               },
               "tier_16m": {
                 "title": "16/16 Grade 9 Exam ★",
-                "score": "16 / 16 Marks (+4 SPaG)",
+                "score": "16 / 16 Marks",
                 "level": "Level 4 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Interpretation 2 presents a compelling argument that Southern resistance to school desegregation following Brown v. Board of Education (1954) was fundamentally orchestrated from above by Southern politicians pursuing 'Massive Resistance'. The historian emphasizes that governors and congressmen exploited segregationist sentiment to maintain political power. This view is powerfully supported by historical evidence: in March 1956, 101 Southern congressmen signed the Southern Manifesto, declaring the Supreme Court's ruling a 'clear abuse of judicial power' and pledging defiance. This institutional resistance culminated at Little Rock Central High School in September 1957, where Arkansas Governor Orval Faubus deployed the state National Guard to physically block the 'Little Rock Nine' to ensure his re-election, compelling President Eisenhower to federalize the Guard and dispatch the 101st Airborne Division.<br><br>However, Interpretation 1 offers a vital alternative perspective by highlighting that resistance was deeply rooted in grassroots popular hostility among white Southern communities. The author uses intense, emotive language to describe the 'furious backlash' of ordinary citizens. This is corroborated by the rapid mushrooming of White Citizens' Councils, which enrolled 250,000 members by 1956 to enforce economic boycotts against Black families seeking school transfers. Furthermore, when schools were integrated, violent white mobs physically assaulted Black pupils, spat at Elizabeth Eckford, and thousands of white families withdrew their children into segregated private academies ('segregation academies').<br><br>Overall, I agree with Interpretation 2 to a large extent. While grassroots white prejudice (Interpretation 1) provided the underlying combustible material, it was the official leadership, legislative obstruction, and defiance of state governors (Interpretation 2) that legitimized open resistance and delayed meaningful desegregation for over a decade. The specialist legal terminology and sustained reasoning demonstrate that political leadership was the decisive driver.",
-                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). 328 words. Flawlessly analyzes both interpretations, explicitly demonstrates how different views are conveyed (tone, emphasis, language), integrates precise contextual evidence (Southern Manifesto, Orval Faubus, 101st Airborne, White Citizens' Councils), and delivers a sustained, substantiated judgement with specialist legal terms."
+                "text": "<p>Interpretation 2 presents a compelling argument that Southern resistance to school desegregation was fundamentally driven from below by entrenched grassroots white hostility. The historian highlights how ordinary citizens mobilised to preserve white supremacy. This view is strongly substantiated by contextual evidence: White Citizens' Councils rapidly enrolled 250,000 members across the South, using economic intimidation, mortgage cancellations, and dismissals against Black parents who registered their children. In Prince Edward County, Virginia, authorities closed all public schools for five years rather than integrate, funding private 'segregation academies' for white children. Furthermore, violent white mobs physically assaulted Black pupils, spitting at Elizabeth Eckford outside Little Rock Central High. Therefore, Interpretation 2 is supported because the day-to-day enforcement of desegregation was thwarted by violent communal resistance rather than political speeches alone.</p><p>However, Interpretation 1 provides a vital counter-perspective by demonstrating that grassroots bigotry required state-sanctioned legitimacy to remain effective. In 1956, 101 Southern congressmen signed the 'Southern Manifesto', declaring Brown a judicial abuse and pledging resistance by all lawful means. Furthermore, Southern governors like Orval Faubus actively deployed the Arkansas National Guard in September 1957 to bar the 'Little Rock Nine', forcing President Eisenhower to dispatch the 101st Airborne Division. Therefore, Interpretation 1 is persuasive because political leaders created the legal shelter and institutional defiance that emboldened local communities to resist federal rulings.</p><p>In conclusion, I agree with Interpretation 2 to a substantial extent. While Southern politicians provided institutional cover (Interpretation 1), it was the ferocious grassroots backlash, economic terrorism, and community school closures (Interpretation 2) that made desegregation painfully slow and hazardous for Black children across the Deep South.</p>",
+                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). Analytical, balanced evaluation of both interpretations against detailed historical context, culminating in a sustained, criteria-driven verdict with accurate specialist terminology."
               }
             }
           }
@@ -6396,7 +6396,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the discipline of civil rights demonstrators during the lunch counter sit-ins (1960). [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that civil rights sit-in demonstrators were highly trained in non-violent discipline.<br><strong>Details in the source that tell me this:</strong><br>Students remained seated upright, reading textbooks quietly without retaliating while food and abuse were hurled at them.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that white segregationist opponents used physical provocation and humiliation to provoke a violent response.<br><strong>Details in the source that tell me this:</strong><br>The source describes white youths pouring hot coffee and smearing condiments over the demonstrators' heads.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Demonstrators maintained disciplined non-violent restraint.<br><strong>Details in the source that tell me this:</strong><br>'Students remained seated upright, reading quietly without retaliating'.</p><p><strong>(ii) What I can infer:</strong><br>White segregationists used physical humiliation to provoke violence.<br><strong>Details in the source that tell me this:</strong><br>'pouring hot coffee and smearing condiments over demonstrators'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -6413,22 +6413,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that lunch counter sit-in demonstrators stayed calm and peaceful.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Demonstrators were disciplined in non-violent resistance.<br><strong>Details in the source that tell me this:</strong><br>'Students remained seated upright, reading quietly without retaliating'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that civil rights sit-in demonstrators were highly trained in non-violent discipline.<br><strong>Details in the source that tell me this:</strong><br>Students remained seated upright, reading textbooks quietly without retaliating while food and abuse were hurled at them.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that white segregationist opponents used physical provocation and humiliation to provoke a violent response.<br><strong>Details in the source that tell me this:</strong><br>The source describes white youths pouring hot coffee and smearing condiments over the demonstrators' heads.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Demonstrators maintained disciplined non-violent restraint.<br><strong>Details in the source that tell me this:</strong><br>'Students remained seated upright, reading quietly without retaliating'.</p><p><strong>(ii) What I can infer:</strong><br>White segregationists used physical humiliation to provoke violence.<br><strong>Details in the source that tell me this:</strong><br>'pouring hot coffee and smearing condiments over demonstrators'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -7660,7 +7660,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the message and impact of the 1963 March on Washington. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that the 1963 March on Washington demonstrated massive, disciplined, and multi-racial solidarity.<br><strong>Details in the source that tell me this:</strong><br>The source describes a quarter of a million Black and white citizens gathered peacefully together before the Lincoln Memorial.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that civil rights leaders explicitly demanded both racial equality and economic justice.<br><strong>Details in the source that tell me this:</strong><br>Banners and speeches prominently demanded 'Jobs and Freedom' alongside immediate voting rights protections.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>The march demonstrated massive multiracial solidarity.<br><strong>Details in the source that tell me this:</strong><br>'a quarter of a million Black and white citizens gathered peacefully'.</p><p><strong>(ii) What I can infer:</strong><br>Civil rights leaders demanded economic justice alongside legal equality.<br><strong>Details in the source that tell me this:</strong><br>'Banners and speeches prominently demanded Jobs and Freedom'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -7677,22 +7677,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that the March on Washington was huge and brought many people together.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>We know through painful experience that freedom is...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>The march demonstrated massive, peaceful multiracial solidarity.<br><strong>Details in the source that tell me this:</strong><br>'a quarter of a million Black and white citizens gathered peacefully'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that the 1963 March on Washington demonstrated massive, disciplined, and multi-racial solidarity.<br><strong>Details in the source that tell me this:</strong><br>The source describes a quarter of a million Black and white citizens gathered peacefully together before the Lincoln Memorial.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that civil rights leaders explicitly demanded both racial equality and economic justice.<br><strong>Details in the source that tell me this:</strong><br>Banners and speeches prominently demanded 'Jobs and Freedom' alongside immediate voting rights protections.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>The march demonstrated massive multiracial solidarity.<br><strong>Details in the source that tell me this:</strong><br>'a quarter of a million Black and white citizens gathered peacefully'.</p><p><strong>(ii) What I can infer:</strong><br>Civil rights leaders demanded economic justice alongside legal equality.<br><strong>Details in the source that tell me this:</strong><br>'Banners and speeches prominently demanded Jobs and Freedom'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -8934,7 +8934,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the Black Power salute at the 1968 Mexico City Olympic Games. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that Black athletes used global media platforms to protest continuing racial injustice in America.<br><strong>Details in the source that tell me this:</strong><br>Tommie Smith and John Carlos bowed their heads and raised gloved fists during the US national anthem at the Olympics.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the protest carried symbolic references to Black poverty and suffering.<br><strong>Details in the source that tell me this:</strong><br>The athletes wore black socks without shoes on the podium to represent Black poverty in the United States.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Athletes used global stages to protest domestic racism.<br><strong>Details in the source that tell me this:</strong><br>'bowed their heads and raised gloved fists during the anthem'.</p><p><strong>(ii) What I can infer:</strong><br>The protest highlighted Black poverty and victims of lynchings.<br><strong>Details in the source that tell me this:</strong><br>'wore black socks with no shoes to represent Black poverty'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -8951,22 +8951,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that Black Olympic athletes protested against American racism.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Athletes used global sporting events to protest racial injustice.<br><strong>Details in the source that tell me this:</strong><br>'bowed their heads and raised gloved fists during the national anthem'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that Black athletes used global media platforms to protest continuing racial injustice in America.<br><strong>Details in the source that tell me this:</strong><br>Tommie Smith and John Carlos bowed their heads and raised gloved fists during the US national anthem at the Olympics.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the protest carried symbolic references to Black poverty and suffering.<br><strong>Details in the source that tell me this:</strong><br>The athletes wore black socks without shoes on the podium to represent Black poverty in the United States.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Athletes used global stages to protest domestic racism.<br><strong>Details in the source that tell me this:</strong><br>'bowed their heads and raised gloved fists during the anthem'.</p><p><strong>(ii) What I can infer:</strong><br>The protest highlighted Black poverty and victims of lynchings.<br><strong>Details in the source that tell me this:</strong><br>'wore black socks with no shoes to represent Black poverty'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -9024,7 +9024,7 @@
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the causes of the riots in northern and western cities between 1965 and 1967? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is highly useful for investigating the causes of the riots because it provides an unsparing official diagnosis of structural inequality, concluding that \"our nation is moving toward two societies, one black, one white—separate and unequal\". This finding was substantiated by facts: northern de facto segregation trapped African Americans in redlined ghettos where unemployment was double the white rate, validating the report's conclusion that \"white institutions created it, white institutions maintain it\". As an official federal commission established by President Johnson following the 1967 Detroit riots, its purpose was objective sociological analysis; its unsparing condemnation of white racism makes it exceptionally reliable evidence that economic despair, not outside agitators, sparked the uprisings.<br><br>Source C is equally useful because it captures the acute psychological frustration and immediate triggers on the streets, with the resident testifying that \"we're treated like dogs by the police every single day\". This confirms that heavy-handed policing in northern cities was the primary flashpoint, explaining why six days of street clashes in August 1965 left 34 dead after the resident noted \"it wasn't a riot, it was a rebellion against being shut out of America\". As personal testimony from a Black resident living through the Watts rebellion, its purpose was to articulate community anger; while emotionally charged, this subjectivity is invaluable for historians studying the breakdown of faith in peaceful protest that catalyzed Black Power.",
+            "model": "<p>Source B is highly useful for investigating the causes of urban riots because it provides an unsparing official diagnosis of structural inequality, warning that America was becoming 'two societies, one black, one white—separate and unequal'. This was accurate: northern *de facto* segregation trapped African Americans in redlined ghettos with double the white unemployment rate. As an official federal report commissioned by President Johnson after the 1967 Detroit riots, its purpose was objective sociological analysis, providing reliable proof that institutional white racism, not outside agitators, drove the uprisings.</p><p>Source C is equally useful because it captures the raw psychological fury on the streets, testifying that residents were 'treated like dogs by the police every single day'. This confirms that heavy-handed policing was the immediate spark in the 1965 Watts rebellion, which left 34 dead. As personal testimony from a Watts resident living through the violence, its purpose was to express community grief, offering invaluable insight into why peaceful protest lost credibility.</p><p>Together, both sources combine official systemic findings with authentic eyewitness testimony to explain urban unrest.</p>",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -9037,26 +9037,26 @@
             "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance (author/purpose). Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Judgement",
+                "title": "2/8 Simple Comment",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Simple Judgement)",
-                "text": "Source B is useful because it is a government report explaining why riots happened in cities like Detroit. Source C is from a Black resident who says the police were unfair, but it is biased because he hates the police.",
-                "verdict": "AO3 (2 marks). Simple assertions with generic provenance comments ('government report', 'biased'). Lacks specific contextual evidence or explanation of how NOP affects value for the enquiry."
+                "level": "Level 1 (Simple Comment on Surface Feature)",
+                "text": "<p>Source B is useful because it says America was divided into two societies. Source C is useful because an eyewitness says police treated them badly. Both sources show why people were angry and rioted.</p>",
+                "verdict": "AO3 (2 marks). Simple surface-level comments without evaluating provenance, context, or specific utility for the enquiry."
               },
               "tier_5m": {
-                "title": "5/8 Developed Content",
+                "title": "5/8 Partial Utility",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Developed Evaluation)",
-                "text": "Source B is useful because it is from the Kerner Commission appointed by President Johnson after the 1967 riots. It states that white racism created the ghetto and caused the riots. It gives accurate facts about poor housing and unemployment.<br><br>Source C is useful because it gives the view of an African American living in Watts in 1965, explaining that police harassment caused the explosion. As an eyewitness, it gives personal insight, but may only represent one neighbourhood.",
-                "verdict": "AO3 (5 marks). Good factual support (Kerner Commission, Watts 1965), but provenance comments remain partially descriptive rather than explaining how the author's purpose or official status directly alters the historical usefulness of the content."
+                "level": "Level 2 (Developed Content Analysis)",
+                "text": "<p>Source B is useful because the Kerner Commission proved that white racism and ghetto poverty created northern riots. Source C is useful because it gives an eyewitness view of police brutality in Watts that caused six days of violence.<br><br>However, the answer does not properly analyze the provenance or contrasting purposes of official reports versus personal accounts.</p>",
+                "verdict": "AO3 (5 marks). Clear explanation of content and context for both sources, but lacks evaluation of provenance and tone."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
                 "score": "8 / 8 Marks",
                 "level": "Level 3 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Source B is highly useful for investigating the causes of the riots because it provides an unsparing official diagnosis of structural inequality, concluding that \"our nation is moving toward two societies, one black, one white—separate and unequal\". This finding was substantiated by facts: northern de facto segregation trapped African Americans in redlined ghettos where unemployment was double the white rate, validating the report's conclusion that \"white institutions created it, white institutions maintain it\". As an official federal commission established by President Johnson following the 1967 Detroit riots, its purpose was objective sociological analysis; its unsparing condemnation of white racism makes it exceptionally reliable evidence that economic despair, not outside agitators, sparked the uprisings.<br><br>Source C is equally useful because it captures the acute psychological frustration and immediate triggers on the streets, with the resident testifying that \"we're treated like dogs by the police every single day\". This confirms that heavy-handed policing in northern cities was the primary flashpoint, explaining why six days of street clashes in August 1965 left 34 dead after the resident noted \"it wasn't a riot, it was a rebellion against being shut out of America\". As personal testimony from a Black resident living through the Watts rebellion, its purpose was to articulate community anger; while emotionally charged, this subjectivity is invaluable for historians studying the breakdown of faith in peaceful protest that catalyzed Black Power.",
-                "verdict": "AO3 Level 3 (8 marks). 196 words across 2 tightly woven paragraphs. Each paragraph embeds 2 verbatim quotes anchoring Content, Contextual Validation, and 1-aspect NOP linked directly to the enquiry. Zero wasted intro, comparison, or conclusion."
+                "text": "<p>Source B is highly useful for investigating the causes of urban riots because it provides an unsparing official diagnosis of structural inequality, warning that America was becoming 'two societies, one black, one white—separate and unequal'. This was accurate: northern *de facto* segregation trapped African Americans in redlined ghettos with double the white unemployment rate. As an official federal report commissioned by President Johnson after the 1967 Detroit riots, its purpose was objective sociological analysis, providing reliable proof that institutional white racism, not outside agitators, drove the uprisings.</p><p>Source C is equally useful because it captures the raw psychological fury on the streets, testifying that residents were 'treated like dogs by the police every single day'. This confirms that heavy-handed policing was the immediate spark in the 1965 Watts rebellion, which left 34 dead. As personal testimony from a Watts resident living through the violence, its purpose was to express community grief, offering invaluable insight into why peaceful protest lost credibility.</p><p>Together, both sources combine official systemic findings with authentic eyewitness testimony to explain urban unrest.</p>",
+                "verdict": "AO3 (8 marks). Detailed evaluation of content, provenance, and historical context for both sources, assessing how they complement each other for the enquiry."
               }
             }
           }
@@ -10244,7 +10244,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the causes of urban riots in American cities between 1965 and 1968. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that urban riots in northern and western cities were triggered by deep frustration over police harassment and systemic poverty.<br><strong>Details in the source that tell me this:</strong><br>Community organizers describe boiling anger over constant aggressive police stops and chronic joblessness in the ghetto.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that mainstream non-violent civil rights victories had failed to improve daily living standards in northern inner cities.<br><strong>Details in the source that tell me this:</strong><br>Residents expressed bitterness that federal voting laws made zero difference to run-down tenements and segregated city schools.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Residents viewed the riots as a rebellion against economic exclusion.<br><strong>Details in the source that tell me this:</strong><br>'a rebellion against being shut out of America'.</p><p><strong>(ii) What I can infer:</strong><br>Violence targeted commercial businesses exploiting the Black community.<br><strong>Details in the source that tell me this:</strong><br>'burned the property of white merchants who exploited us'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -10261,22 +10261,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that Black residents in Watts were furious about their living conditions.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Since August 1965, where are we going? Where is Wa...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Residents viewed the riots as a rebellion against economic exclusion.<br><strong>Details in the source that tell me this:</strong><br>'a rebellion against being shut out of America'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that urban riots in northern and western cities were triggered by deep frustration over police harassment and systemic poverty.<br><strong>Details in the source that tell me this:</strong><br>Community organizers describe boiling anger over constant aggressive police stops and chronic joblessness in the ghetto.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that mainstream non-violent civil rights victories had failed to improve daily living standards in northern inner cities.<br><strong>Details in the source that tell me this:</strong><br>Residents expressed bitterness that federal voting laws made zero difference to run-down tenements and segregated city schools.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Residents viewed the riots as a rebellion against economic exclusion.<br><strong>Details in the source that tell me this:</strong><br>'a rebellion against being shut out of America'.</p><p><strong>(ii) What I can infer:</strong><br>Violence targeted commercial businesses exploiting the Black community.<br><strong>Details in the source that tell me this:</strong><br>'burned the property of white merchants who exploited us'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -10343,7 +10343,7 @@
               }
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 argues that the split was caused primarily by ideological impatience and a fundamental rejection of non-violence by younger militants like Stokely Carmichael and Malcolm X. Younger activists in SNCC and CORE had endured brutal beatings during the Freedom Rides and Mississippi Freedom Summer without seeing tangible economic improvements in poor Black communities. Black Power advocates argued that non-violence was humiliating and ineffective for self-defense, adopting the slogan 'Black Power' and expelling white members to pursue racial self-determination and armed self-defense through groups like the Black Panther Party.<br><br>On the other hand, Interpretation 2 emphasizes that the split was driven by the changing geographical and economic focus of the movement from Southern legal desegregation to Northern urban poverty. When Martin Luther King Jr. brought his non-violent campaign to Chicago in 1966, he faced fierce white working-class hostility and found that moral marches could not resolve deep-rooted problems like housing discrimination, joblessness, and police brutality. Militants correctly recognized that the moderate tactics of the SCLC were ill-equipped to address the structural economic misery of urban ghettos.<br><br>Furthermore, government repression and the FBI’s COINTELPRO operations deliberately exacerbated divisions between civil rights leaders, planting false stories and escalating rivalries between mainstream organizations and radical factions.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a moderate extent. While Carmichael and Malcolm X provided the radical rhetoric, it was the persistent failure of non-violent legalism to alleviate the crushing economic misery and police brutality in northern urban centres that made the fracture of the civil rights movement inevitable.",
+            "model": "<p>Interpretation 2 presents a compelling argument that the split in the civil rights movement was primarily ideological, driven by radical young activists who rejected non-violence in favour of Black nationalism. Following the assassination of Malcolm X, leaders like Stokely Carmichael became disillusioned with peaceful assimilation. In June 1966, during the March Against Fear, Carmichael popularised the slogan 'Black Power' and subsequently expelled white members from SNCC, while CORE under Floyd McKissick also endorsed armed self-defence. Furthermore, the Black Panther Party, founded in October 1966 by Huey Newton and Bobby Seale, openly carried firearms and promoted revolutionary separatism, directly contradicting Martin Luther King's Christian non-violence. Therefore, Interpretation 2 is supported because this ideological transformation produced irreconcilable strategic divisions that shattered the coalition.</p><p>However, Interpretation 1 offers an equally convincing counter-argument by emphasising that this ideological radicalisation was caused by continuing socio-economic misery and police brutality in northern urban ghettos. While legislative triumphs like the 1964 Civil Rights Act ended Southern *de jure* segregation, they did nothing to alleviate northern *de facto* inequality, poor housing, and mass unemployment. The explosive Watts riots of August 1965 (leaving 34 dead) and the 1967 Detroit rebellion proved that northern Black youths viewed King's Southern tactics as irrelevant to their everyday oppression. Therefore, Interpretation 1 is valid because economic despair and systemic violence created the bitter disillusionment that fed Black Power.</p><p>In conclusion, I agree with Interpretation 2 to a large extent. While urban economic misery (Interpretation 1) provided the underlying combustible anger, it was the formal ideological rejection of non-violence and integration by Carmichael, CORE, and the Black Panthers (Interpretation 2) that turned community frustration into a permanent institutional schism.</p>",
             "scaffolding": {
               "acronym": "Evaluative Verdict Framework",
               "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
@@ -10356,26 +10356,26 @@
             "examiner_tip": "Level 4 Discriminator: Indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 (radicalization, Stokely Carmichael, Black nationalism) against Interpretation 1 (exhaustion with non-violence, slow federal enforcement, police brutality in the South). Deploy specialist terms for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
-                "title": "4/16 Simple Statement",
+                "title": "4/16 Basic Description",
                 "score": "4 / 16 Marks",
-                "level": "Level 1 Top (Simple Evaluation)",
-                "text": "Interpretation 2 says the split happened because young activists like Stokely Carmichael wanted Black Power and rejected Martin Luther King's non-violence. I agree because SNCC expelled white members. Interpretation 1 says the split was caused by police violence and slow progress.",
-                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (2 marks). Simple assertion that repeats the main claims of the interpretations without developed evaluation or sufficient historical knowledge."
+                "level": "Level 1 Top / Level 2 Bottom (Basic Description)",
+                "text": "<p>Interpretation 2 argues that the civil rights movement split because Black Power leaders like Stokely Carmichael wanted self-defence and rejected non-violence. This is true because Carmichael shouted Black Power in 1966. However, Interpretation 1 says northern riots and poverty caused the split because people in ghettos were angry.</p>",
+                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (1 mark). Simple, generalized description of one view with brief mention of the other, lacking sustained historical analysis or criteria-driven evaluation."
               },
               "tier_8m": {
-                "title": "8/16 Descriptive Account",
+                "title": "8/16 Two-Sided Account",
                 "score": "8 / 16 Marks",
-                "level": "Level 2 Top (Descriptive Account)",
-                "text": "Interpretation 2 argues that the civil rights movement split because new leaders like Stokely Carmichael of SNCC and Floyd McKissick of CORE adopted Black Power. At the March Against Fear in June 1966, Carmichael shouted 'Black Power!' and argued that Black Americans should use self-defence, which rejected Martin Luther King's Christian non-violence.<br><br>However, Interpretation 1 emphasizes that the split was caused by frustration with white violence and slow federal change. Civil rights workers in Mississippi had seen three volunteers murdered in 1964 and were beaten at the Edmund Pettus Bridge in Selma in 1965. Therefore, activists lost faith in peaceful protest.",
-                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (3 marks). Good factual knowledge supporting both sides, but remains largely descriptive. Lacks explicit analysis of how the views are conveyed and provides an undeveloped conclusion."
+                "level": "Level 2 Top / Level 3 Bottom (Two-Sided Account)",
+                "text": "<p>On the one hand, Interpretation 2 is persuasive because radical leaders changed civil rights ideology. In 1966, Stokely Carmichael took over SNCC and expelled white members, demanding 'Black Power' and racial separatism rather than peaceful integration. Malcolm X had also inspired activists to reject non-violence and practice armed self-defence.<br><br>On the other hand, Interpretation 1 emphasizes economic frustration in northern cities. Despite the 1964 Civil Rights Act, African Americans still faced ghetto poverty, job discrimination, and police brutality, sparking riots in Watts (1965) and Detroit (1967).<br><br>Overall, I agree with Interpretation 2 because ideological shifts in SNCC and the Black Panthers formally broke the movement.</p>",
+                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (2 marks). Explains both interpretations with relevant contextual facts, but lacks deep historiographical evaluation or a developed criteria-based verdict."
               },
               "tier_16m": {
                 "title": "16/16 Grade 9 Exam ★",
-                "score": "16 / 16 Marks (+4 SPaG)",
+                "score": "16 / 16 Marks",
                 "level": "Level 4 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Interpretation 2 presents a compelling argument that the schism between mainstream non-violent organisations (such as the NAACP and SCLC) and the emerging Black Power movement was fundamentally driven by an ideological revolution in leadership and philosophy. The historian emphasizes that younger activists consciously repudiated racial integration in favour of Black nationalism and self-determination. This is strongly corroborated by historical evidence: during the June 1966 March Against Fear in Mississippi, newly elected SNCC chairman Stokely Carmichael electrified crowds by chanting 'We want Black Power!', openly breaking with Dr. Martin Luther King Jr.'s commitment to interracial cooperation. By 1966–67, both SNCC and CORE expelled white members, rejected non-violence as humiliating submission, and embraced armed self-defence, as later exemplified by Huey Newton and Bobby Seale’s Black Panther Party for Self-Defense.<br><br>However, Interpretation 1 provides a vital counter-perspective by arguing that this ideological rupture was not merely an aggressive choice, but an inevitable consequence of profound disillusionment with relentless white racist violence and the inadequacy of federal protection. The author uses intense, emotive phrasing to describe the 'exhaustion and trauma' of field workers. This is validated by historical context: grassroots activists in the deep South had endured the Mississippi Freedom Summer murders of Goodman, Chaney, and Schwerner in 1964, the rejection of the Mississippi Freedom Democratic Party (MFDP), and state trooper beatings on 'Bloody Sunday' in Selma (1965). Furthermore, while the 1964 and 1965 Acts granted formal legal and voting equality, they failed to dismantle Northern urban poverty, housing segregation, or chronic police brutality.<br><br>Overall, I agree with Interpretation 2 to a moderate extent. While Carmichael and the Black Panthers actively formulated a radical new separatist ideology (Interpretation 2), this radicalization was fundamentally forged in the crucible of Southern white terrorism and federal lethargy (Interpretation 1). The specialist historical vocabulary and sustained reasoning demonstrate that ideological radicalisation was the direct byproduct of systemic frustration.",
-                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). 338 words. Flawlessly evaluates both interpretations, explicitly demonstrates how different views are conveyed (tone, emphasis, language), integrates precise contextual evidence (March Against Fear, SNCC expulsion of whites, Black Panthers, MFDP, Bloody Sunday), and delivers a sustained, substantiated judgement with specialist terminology."
+                "text": "<p>Interpretation 2 presents a compelling argument that the split in the civil rights movement was primarily ideological, driven by radical young activists who rejected non-violence in favour of Black nationalism. Following the assassination of Malcolm X, leaders like Stokely Carmichael became disillusioned with peaceful assimilation. In June 1966, during the March Against Fear, Carmichael popularised the slogan 'Black Power' and subsequently expelled white members from SNCC, while CORE under Floyd McKissick also endorsed armed self-defence. Furthermore, the Black Panther Party, founded in October 1966 by Huey Newton and Bobby Seale, openly carried firearms and promoted revolutionary separatism, directly contradicting Martin Luther King's Christian non-violence. Therefore, Interpretation 2 is supported because this ideological transformation produced irreconcilable strategic divisions that shattered the coalition.</p><p>However, Interpretation 1 offers an equally convincing counter-argument by emphasising that this ideological radicalisation was caused by continuing socio-economic misery and police brutality in northern urban ghettos. While legislative triumphs like the 1964 Civil Rights Act ended Southern *de jure* segregation, they did nothing to alleviate northern *de facto* inequality, poor housing, and mass unemployment. The explosive Watts riots of August 1965 (leaving 34 dead) and the 1967 Detroit rebellion proved that northern Black youths viewed King's Southern tactics as irrelevant to their everyday oppression. Therefore, Interpretation 1 is valid because economic despair and systemic violence created the bitter disillusionment that fed Black Power.</p><p>In conclusion, I agree with Interpretation 2 to a large extent. While urban economic misery (Interpretation 1) provided the underlying combustible anger, it was the formal ideological rejection of non-violence and integration by Carmichael, CORE, and the Black Panthers (Interpretation 2) that turned community frustration into a permanent institutional schism.</p>",
+                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). Analytical, balanced evaluation of both interpretations against detailed historical context, culminating in a sustained, criteria-driven verdict with accurate specialist terminology."
               }
             }
           }
@@ -11593,7 +11593,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about American geopolitical fears regarding the spread of communism in Southeast Asia (1954). [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that American leadership believed the loss of Indochina would trigger a chain reaction of communist takeovers across Asia.<br><strong>Details in the source that tell me this:</strong><br>Eisenhower uses the 'falling domino' analogy to explain that knocking over the first country leads to the collapse of the rest.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the US considered Southeast Asia vital for its economic resources and strategic security.<br><strong>Details in the source that tell me this:</strong><br>The president warns that losing the region would deny the West access to valuable raw materials and trade routes.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>US patrols faced invisible guerrilla snipers in dense jungle.<br><strong>Details in the source that tell me this:</strong><br>'patrols were ambushed by unseen snipers from concealed tunnels'.</p><p><strong>(ii) What I can infer:</strong><br>Search-and-destroy tactics displaced local peasant villagers.<br><strong>Details in the source that tell me this:</strong><br>'burning thatched huts and driving terrified peasant families into camps'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -11610,22 +11610,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that American soldiers faced invisible enemies and snipers in Vietnam.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>You have, of course, both the specific and the gen...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>US patrols were vulnerable to unseen guerrilla ambushes in the jungle.<br><strong>Details in the source that tell me this:</strong><br>'patrols were ambushed by unseen snipers from concealed tunnels'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that American leadership believed the loss of Indochina would trigger a chain reaction of communist takeovers across Asia.<br><strong>Details in the source that tell me this:</strong><br>Eisenhower uses the 'falling domino' analogy to explain that knocking over the first country leads to the collapse of the rest.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the US considered Southeast Asia vital for its economic resources and strategic security.<br><strong>Details in the source that tell me this:</strong><br>The president warns that losing the region would deny the West access to valuable raw materials and trade routes.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>US patrols faced invisible guerrilla snipers in dense jungle.<br><strong>Details in the source that tell me this:</strong><br>'patrols were ambushed by unseen snipers from concealed tunnels'.</p><p><strong>(ii) What I can infer:</strong><br>Search-and-destroy tactics displaced local peasant villagers.<br><strong>Details in the source that tell me this:</strong><br>'burning thatched huts and driving terrified peasant families into camps'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -12866,7 +12866,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the deployment of US Marines to Vietnam in March 1965. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that naval commanders in the Gulf of Tonkin faced severe confusion and doubted whether a second attack had actually occurred.<br><strong>Details in the source that tell me this:</strong><br>The cable reports freak weather effects on radar and overeager sonar men, warning that many contacts were erroneous.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that military officers urged caution and thorough daytime reconnaissance before launching retaliatory airstrikes.<br><strong>Details in the source that tell me this:</strong><br>The commander specifically recommends a complete evaluation before taking further retaliatory action.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>The Vietcong launched simultaneous attacks across urban areas.<br><strong>Details in the source that tell me this:</strong><br>'assault teams struck over one hundred urban centres including the US Embassy'.</p><p><strong>(ii) What I can infer:</strong><br>The assault undermined official claims of imminent victory.<br><strong>Details in the source that tell me this:</strong><br>'contradicted military briefings claiming the war was nearly won'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -12883,22 +12883,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that the Tet Offensive shocked the American government.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Review of action makes many reported contacts and ...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>The Vietcong launched massive coordinated attacks in cities.<br><strong>Details in the source that tell me this:</strong><br>'assault teams struck over one hundred urban centres including the US Embassy'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that naval commanders in the Gulf of Tonkin faced severe confusion and doubted whether a second attack had actually occurred.<br><strong>Details in the source that tell me this:</strong><br>The cable reports freak weather effects on radar and overeager sonar men, warning that many contacts were erroneous.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that military officers urged caution and thorough daytime reconnaissance before launching retaliatory airstrikes.<br><strong>Details in the source that tell me this:</strong><br>The commander specifically recommends a complete evaluation before taking further retaliatory action.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>The Vietcong launched simultaneous attacks across urban areas.<br><strong>Details in the source that tell me this:</strong><br>'assault teams struck over one hundred urban centres including the US Embassy'.</p><p><strong>(ii) What I can infer:</strong><br>The assault undermined official claims of imminent victory.<br><strong>Details in the source that tell me this:</strong><br>'contradicted military briefings claiming the war was nearly won'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -14158,7 +14158,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the role of helicopters in US combat operations in Vietnam. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that Vietcong tunnel networks were highly sophisticated, multi-level underground strongholds.<br><strong>Details in the source that tell me this:</strong><br>The intelligence diagram shows interconnected bunkers containing hospitals, sleeping quarters, and ammunition caches deep underground.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the tunnels provided complete concealment and protection from heavy US aerial bombing.<br><strong>Details in the source that tell me this:</strong><br>The tunnels featured blast baffles, camouflage trapdoors, and ventilation shafts hidden in tree roots to survive airstrikes.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Guerrilla traps aimed to maim soldiers rather than kill.<br><strong>Details in the source that tell me this:</strong><br>'constructed to maim rather than kill, halting patrol movements'.</p><p><strong>(ii) What I can infer:</strong><br>The Vietcong recycled discarded American weaponry to build traps.<br><strong>Details in the source that tell me this:</strong><br>'built from bamboo, tripwires, and unexploded American ordnance'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -14175,22 +14175,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that Vietcong traps were cheap and dangerous for US soldiers.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Guerrilla booby traps were designed to injure soldiers to halt patrols.<br><strong>Details in the source that tell me this:</strong><br>'constructed to maim rather than kill, halting patrol movements'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that Vietcong tunnel networks were highly sophisticated, multi-level underground strongholds.<br><strong>Details in the source that tell me this:</strong><br>The intelligence diagram shows interconnected bunkers containing hospitals, sleeping quarters, and ammunition caches deep underground.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the tunnels provided complete concealment and protection from heavy US aerial bombing.<br><strong>Details in the source that tell me this:</strong><br>The tunnels featured blast baffles, camouflage trapdoors, and ventilation shafts hidden in tree roots to survive airstrikes.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Guerrilla traps aimed to maim soldiers rather than kill.<br><strong>Details in the source that tell me this:</strong><br>'constructed to maim rather than kill, halting patrol movements'.</p><p><strong>(ii) What I can infer:</strong><br>The Vietcong recycled discarded American weaponry to build traps.<br><strong>Details in the source that tell me this:</strong><br>'built from bamboo, tripwires, and unexploded American ordnance'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -14248,7 +14248,7 @@
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the reasons why US military tactics failed to defeat the Vietcong (1965–68)? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is highly useful for investigating why US military tactics failed because it details the asymmetric, psychological nature of guerrilla warfare, noting that Vietcong traps were \"constructed from local bamboo, barbed wire, and unexploded American ordnance\". This highlights how high-tech American firepower was neutralized: cheap punji-stick pits and tripwires cost almost nothing, yet the manual stresses they were \"designed to maim rather than kill, forcing units to halt operations\". As an official US military instructional manual produced for American infantry in 1967, its purpose was practical tactical training; its candid acknowledgment of American vulnerability makes it exceptionally reliable evidence of how guerrilla booby traps demoralized US patrols and destroyed mobility.<br><br>Source C is equally useful because it reveals the logistical resilience and civilian mobilization that defeated General Westmoreland's search-and-destroy doctrine. The photograph shows North Vietnamese porters pushing \"reinforced pack bicycles laden with hundreds of pounds of artillery shells\" along concealed jungle paths. Contextually, despite Operation Rolling Thunder dropping more bombs on Laos and Vietnam than fell in WWII, the Vietcong were kept continuously resupplied because 300,000 workers repaired the trail overnight, confirming the source's visual evidence of \"indomitable peasant logistics\". As a communist documentary photograph, its purpose was to celebrate revolutionary endurance, providing valuable historical proof of how simple manpower outmatched American aerial bombardment.",
+            "model": "<p>Source B is highly useful for investigating why US military tactics failed because it details the asymmetric nature of guerrilla warfare, noting Vietcong traps were built from 'local bamboo, barbed wire, and unexploded American ordnance'. This explains how cheap punji pits neutralized superior US technology, designed 'to maim rather than kill' and paralyze infantry patrols. As an official US Army training manual from 1967, its purpose was practical tactical instruction, giving candid, highly reliable evidence of how guerrilla traps eroded American troop morale and destroyed mobility.</p><p>Source C is equally useful because it reveals the logistical resilience that defeated General Westmoreland's search-and-destroy doctrine. The photograph shows porters moving vital supplies on 'reinforced pack bicycles' along concealed jungle trails. Despite Operation Rolling Thunder dropping millions of tons of bombs, the Ho Chi Minh Trail kept supplies flowing south. As documentary wartime photography, its purpose was recording supply operations, providing valuable visual proof of Vietnamese perseverance.</p><p>Together, both sources explain why high-tech conventional warfare failed against cheap, resilient guerrilla tactics.</p>",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -14261,26 +14261,26 @@
             "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes/visual details: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance (author/purpose). Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Judgement",
+                "title": "2/8 Simple Comment",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Simple Judgement)",
-                "text": "Source B is useful because it is by an American reporter describing search and destroy missions. Source C is from a Vietcong soldier so it is biased because he wanted the communists to win, but it tells us about tunnels.",
-                "verdict": "AO3 (2 marks). Simple assertions with generic provenance labels ('reporter', 'biased'). Fails to explain how NOP alters usefulness or deploy contextual knowledge."
+                "level": "Level 1 (Simple Comment on Surface Feature)",
+                "text": "<p>Source B is useful because it shows guerrilla traps were made from bamboo. Source C is useful because it shows Vietnamese porters carrying supplies on bicycles. Both sources show the Vietcong fought hard.</p>",
+                "verdict": "AO3 (2 marks). Simple surface-level comments without evaluating provenance, context, or specific utility for the enquiry."
               },
               "tier_5m": {
-                "title": "5/8 Developed Content",
+                "title": "5/8 Partial Utility",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Developed Evaluation)",
-                "text": "Source B is useful because it shows how US search and destroy missions destroyed Vietnamese villages and alienated peasants. Using chemical defoliants like Agent Orange and napalm burned villages, turning civilians toward the Vietcong.<br><br>Source C is useful because it details the extensive tunnel networks built by the Vietcong, such as at Cu Chi. This allowed guerrillas to survive US artillery and airstrikes. As a Vietcong memoir, it provides first-hand evidence, but exaggerates bravery.",
-                "verdict": "AO3 (5 marks). Solid factual knowledge (Agent Orange, Cu Chi), but provenance evaluation remains descriptive rather than explaining how the author's viewpoint affects the evidential utility."
+                "level": "Level 2 (Developed Content Analysis)",
+                "text": "<p>Source B is useful because the military manual explains that punji traps were designed to maim US soldiers, slowing patrols. Source C is useful because it shows the Ho Chi Minh Trail used bicycles to keep supplies moving despite bombing.<br><br>However, the response focuses mainly on information without assessing provenance or military context in depth.</p>",
+                "verdict": "AO3 (5 marks). Clear explanation of content and context for both sources, but lacks evaluation of provenance and tone."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
                 "score": "8 / 8 Marks",
                 "level": "Level 3 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Source B is highly useful for investigating why US military tactics failed because it details the asymmetric, psychological nature of guerrilla warfare, noting that Vietcong traps were \"constructed from local bamboo, barbed wire, and unexploded American ordnance\". This highlights how high-tech American firepower was neutralized: cheap punji-stick pits and tripwires cost almost nothing, yet the manual stresses they were \"designed to maim rather than kill, forcing units to halt operations\". As an official US military instructional manual produced for American infantry in 1967, its purpose was practical tactical training; its candid acknowledgment of American vulnerability makes it exceptionally reliable evidence of how guerrilla booby traps demoralized US patrols and destroyed mobility.<br><br>Source C is equally useful because it reveals the logistical resilience and civilian mobilization that defeated General Westmoreland's search-and-destroy doctrine. The photograph shows North Vietnamese porters pushing \"reinforced pack bicycles laden with hundreds of pounds of artillery shells\" along concealed jungle paths. Contextually, despite Operation Rolling Thunder dropping more bombs on Laos and Vietnam than fell in WWII, the Vietcong were kept continuously resupplied because 300,000 workers repaired the trail overnight, confirming the source's visual evidence of \"indomitable peasant logistics\". As a communist documentary photograph, its purpose was to celebrate revolutionary endurance, providing valuable historical proof of how simple manpower outmatched American aerial bombardment.",
-                "verdict": "AO3 Level 3 (8 marks). 194 words across 2 tightly woven paragraphs. Each paragraph embeds 2 verbatim quotes anchoring Content, Contextual Validation, and 1-aspect NOP linked directly to the enquiry. Zero wasted intro, comparison, or conclusion."
+                "text": "<p>Source B is highly useful for investigating why US military tactics failed because it details the asymmetric nature of guerrilla warfare, noting Vietcong traps were built from 'local bamboo, barbed wire, and unexploded American ordnance'. This explains how cheap punji pits neutralized superior US technology, designed 'to maim rather than kill' and paralyze infantry patrols. As an official US Army training manual from 1967, its purpose was practical tactical instruction, giving candid, highly reliable evidence of how guerrilla traps eroded American troop morale and destroyed mobility.</p><p>Source C is equally useful because it reveals the logistical resilience that defeated General Westmoreland's search-and-destroy doctrine. The photograph shows porters moving vital supplies on 'reinforced pack bicycles' along concealed jungle trails. Despite Operation Rolling Thunder dropping millions of tons of bombs, the Ho Chi Minh Trail kept supplies flowing south. As documentary wartime photography, its purpose was recording supply operations, providing valuable visual proof of Vietnamese perseverance.</p><p>Together, both sources explain why high-tech conventional warfare failed against cheap, resilient guerrilla tactics.</p>",
+                "verdict": "AO3 (8 marks). Detailed evaluation of content, provenance, and historical context for both sources, assessing how they complement each other for the enquiry."
               }
             }
           }
@@ -15492,7 +15492,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about President Nixon's visit to US soldiers in Vietnam in 1969. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that respected media journalists concluded the war could no longer be won through military victory.<br><strong>Details in the source that tell me this:</strong><br>Walter Cronkite states directly on air that the only rational conclusion is that the war is mired in a bloody stalemate.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that television reporting urged the US government to negotiate a peaceful diplomatic exit.<br><strong>Details in the source that tell me this:</strong><br>Cronkite concludes that the United States must negotiate not as victors, but as an honorable people who did their best.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Military force was turned fatally upon unarmed students.<br><strong>Details in the source that tell me this:</strong><br>'National Guardsmen opened fire, killing four student demonstrators'.</p><p><strong>(ii) What I can infer:</strong><br>The killings triggered nationwide shutdowns of higher education.<br><strong>Details in the source that tell me this:</strong><br>'hundreds of universities closed as four million students went on strike'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -15509,22 +15509,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that the Kent State shootings caused huge student outrage.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>To say that we are closer to victory today is to b...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>The confrontation between Guardsmen and student demonstrators proved fatal.<br><strong>Details in the source that tell me this:</strong><br>'National Guardsmen opened fire, killing four student demonstrators'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that respected media journalists concluded the war could no longer be won through military victory.<br><strong>Details in the source that tell me this:</strong><br>Walter Cronkite states directly on air that the only rational conclusion is that the war is mired in a bloody stalemate.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that television reporting urged the US government to negotiate a peaceful diplomatic exit.<br><strong>Details in the source that tell me this:</strong><br>Cronkite concludes that the United States must negotiate not as victors, but as an honorable people who did their best.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Military force was turned fatally upon unarmed students.<br><strong>Details in the source that tell me this:</strong><br>'National Guardsmen opened fire, killing four student demonstrators'.</p><p><strong>(ii) What I can infer:</strong><br>The killings triggered nationwide shutdowns of higher education.<br><strong>Details in the source that tell me this:</strong><br>'hundreds of universities closed as four million students went on strike'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -15591,7 +15591,7 @@
               }
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 emphasizes that from a purely military standpoint, the Tet Offensive was an overwhelming, catastrophic defeat for the Vietcong and North Vietnamese Army. Over 84,000 communist troops attacked over 100 South Vietnamese cities and military installations, including the US Embassy in Saigon. However, US and ARVN forces rapidly recaptured every single objective, inflicting devastating casualties—killing an estimated 45,000 communist fighters and permanently crippling the Vietcong's independent military capacity for the remainder of the war.<br><br>On the other hand, Interpretation 2 persuasively argues that the Tet Offensive was a decisive, war-winning political and psychological victory for the communists. For years, General Westmoreland and President Johnson had assured the American public that the war was nearly won and that there was 'light at the end of the tunnel'. Seeing communist commandos breach the US Embassy on television shattered public credibility, creating an unbridgeable 'credibility gap' and convincing influential journalists like Walter Cronkite that the war was un-winnable.<br><br>Furthermore, the political fallout was immediate and catastrophic for the US administration: anti-war demonstrations escalated, public support plummeted, and on 31 March 1968, President Johnson stunned the nation by announcing he would halt bombing and would not seek re-election.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a very large extent. While the US military won the tactical engagements on the battlefield, the Tet Offensive fatally destroyed American political will on the home front, proving that the United States could not achieve total victory and making a negotiated US withdrawal inevitable.",
+            "model": "<p>Interpretation 2 presents a compelling argument that anti-war sentiment grew primarily because of the direct human burden of conscription and youth activism. The historian argues that the military draft threatened millions of young men, disproportionately falling upon working-class families while affluent youths secured college deferments. This created widespread resistance, including draft-card burnings and 40,000 youths fleeing to Canada. Campus radicalism reached a violent climax in May 1970, when National Guardsmen shot dead four student demonstrators at Kent State University, triggering nationwide strikes across 450 universities and closing hundreds of campuses. Furthermore, Vietnam Veterans Against the War dramatically threw their medals over the Capitol steps in 1971. Therefore, Interpretation 2 is supported because the personal threat of the draft mobilised unprecedented, active mass resistance.</p><p>However, Interpretation 1 provides a vital counter-balance by highlighting the transformative power of television media. As the first uncensored 'living room war', nightly news broadcasts delivered graphic footage of wounded soldiers and napalmed villages directly into American homes. In February 1968, following the surprise Tet Offensive, CBS anchorman Walter Cronkite declared the war an unwinnable 'stalemate', prompting President Johnson to remark, 'If I've lost Cronkite, I've lost Middle America'. Furthermore, investigative reports exposing the 1968 My Lai massacre and the 1971 Pentagon Papers fatally destroyed government credibility. Therefore, Interpretation 1 is persuasive because media exposure eroded the silent majority's patriotic faith in official narratives.</p><p>In conclusion, I agree with Interpretation 2 to a moderate extent, but Interpretation 1 provides the deeper catalyst. While draft resistance (Interpretation 2) drove youth mobilization, it was the television exposure of military stalemate and atrocities (Interpretation 1) that convinced mainstream middle America that continuing the Vietnam War was morally indefensible.</p>",
             "scaffolding": {
               "acronym": "Evaluative Verdict Framework",
               "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
@@ -15604,26 +15604,26 @@
             "examiner_tip": "Level 4 Discriminator: Indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 (psychological shock, credibility gap, Cronkite broadcast, political defeat) against Interpretation 1 (tactical military catastrophe for the Vietcong/NVA). Deploy specialist terms for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
-                "title": "4/16 Simple Statement",
+                "title": "4/16 Basic Description",
                 "score": "4 / 16 Marks",
-                "level": "Level 1 Top (Simple Evaluation)",
-                "text": "Interpretation 2 says the Tet Offensive was a major political disaster for the US because the American public saw that the war could not be won on television. I agree because Walter Cronkite said the war was a stalemate and Johnson resigned. However Interpretation 1 says the US military won because they killed thousands of Vietcong.",
-                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (2 marks). Simple evaluation repeating the main points without developed textual analysis or balanced historical evidence."
+                "level": "Level 1 Top / Level 2 Bottom (Basic Description)",
+                "text": "<p>Interpretation 2 says anti-war feeling grew because of student protests and the draft, which made young men fear dying in Vietnam. This happened at Kent State where four students were shot. However, Interpretation 1 says television showed the horrors of war like the Tet Offensive, turning Americans against the war.</p>",
+                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (1 mark). Simple, generalized description of one view with brief mention of the other, lacking sustained historical analysis or criteria-driven evaluation."
               },
               "tier_8m": {
-                "title": "8/16 Descriptive Account",
+                "title": "8/16 Two-Sided Account",
                 "score": "8 / 16 Marks",
-                "level": "Level 2 Top (Descriptive Account)",
-                "text": "Interpretation 2 argues that the Tet Offensive was a turning point because it destroyed American confidence. Even though the US military drove the Vietcong out of cities like Saigon and Hue, news broadcasts of the US embassy being attacked shocked the public. CBS newsman Walter Cronkite declared the war was unwinnable, leading President Johnson to announce in March 1968 that he would not run for re-election.<br><br>On the other hand, Interpretation 1 emphasizes that from a military standpoint, Tet was a crushing defeat for the communists. Around 45,000 Vietcong and North Vietnamese soldiers were killed, and the South Vietnamese people did not rise up to support them. Therefore, while Tet was a military victory for the US, it was a political disaster.",
-                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (3 marks). Good factual knowledge supporting both interpretations, but remains largely descriptive. Lacks explicit analysis of how the views are conveyed through language and tone."
+                "level": "Level 2 Top / Level 3 Bottom (Two-Sided Account)",
+                "text": "<p>On the one hand, Interpretation 2 is convincing because conscription directly threatened millions of young Americans. The draft lottery introduced in 1969 created intense campus protests, culminating in May 1970 when Ohio National Guardsmen shot dead four students at Kent State University, sparking a nationwide student strike of over four million youths.<br><br>On the other hand, Interpretation 1 highlights the decisive role of the media. As the first 'television war', evening news broadcasts brought graphic combat footage into American living rooms. Walter Cronkite's report after the 1968 Tet Offensive and revelations of the My Lai massacre shattered public trust in government claims.<br><br>Overall, I agree with Interpretation 2 because draft resistance mobilised active protest.</p>",
+                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (2 marks). Explains both interpretations with relevant contextual facts, but lacks deep historiographical evaluation or a developed criteria-based verdict."
               },
               "tier_16m": {
                 "title": "16/16 Grade 9 Exam ★",
-                "score": "16 / 16 Marks (+4 SPaG)",
+                "score": "16 / 16 Marks",
                 "level": "Level 4 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Interpretation 2 presents a persuasive and historically substantiated argument that the Tet Offensive of January 1968 was a decisive political and psychological defeat for the United States. The historian uses emphatic language to describe the 'catastrophic collapse' of public faith in government policy. This view is strongly corroborated by historical reality: for months prior to Tet, General Westmoreland and President Johnson had assured the American public that the communist insurgency was broken and there was 'light at the end of the tunnel'. The spectacle of over 80,000 communist troops simultaneously attacking over 100 cities, including penetrating the US Embassy in Saigon, shattered this narrative. Television broadcasts exposed a glaring 'credibility gap', prompting influential CBS anchor Walter Cronkite to pronounce the conflict a bloody 'stalemate'. This domestic crisis forced Johnson to halt bombing escalation and announce on 31 March 1968 that he would not seek re-election.<br><br>However, Interpretation 1 provides a crucial counter-balance by demonstrating that, from a strictly military perspective, the offensive was an unmitigated catastrophe for the communist forces. The author employs clinical, objective phrasing to highlight tactical failure. Historical evidence fully validates this: the Vietcong suffered staggering losses, with an estimated 45,000 fighters killed out of 84,000 deployed. Communist forces failed to hold a single city, and the anticipated popular uprising among the South Vietnamese population failed to materialize. In Hue, US Marines and ARVN forces systematically destroyed occupying communist battalions. The Vietcong was so permanently decimated as an effective fighting force that North Vietnamese conventional army units (NVA) had to take over the primary burden of the war thereafter.<br><br>Overall, I agree with Interpretation 2 to a very large extent. While Interpretation 1 correctly records the tactical battlefield slaughter of communist guerrillas, wars are ultimately decided by political will. The Tet Offensive irrevocably broke the American domestic consensus, destroyed Johnson’s presidency, and forced Washington to adopt a strategy of phased disengagement, making it the decisive psychological turning point of the entire conflict.",
-                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). 342 words. Flawlessly analyzes both interpretations, explicitly demonstrates how different views are conveyed (tone, emphasis, language), integrates precise contextual evidence (80,000 troops, 100 cities, 45,000 VC casualties, Walter Cronkite, 'credibility gap', LBJ 31 March 1968 address), and delivers a sustained, substantiated judgement with specialist terminology."
+                "text": "<p>Interpretation 2 presents a compelling argument that anti-war sentiment grew primarily because of the direct human burden of conscription and youth activism. The historian argues that the military draft threatened millions of young men, disproportionately falling upon working-class families while affluent youths secured college deferments. This created widespread resistance, including draft-card burnings and 40,000 youths fleeing to Canada. Campus radicalism reached a violent climax in May 1970, when National Guardsmen shot dead four student demonstrators at Kent State University, triggering nationwide strikes across 450 universities and closing hundreds of campuses. Furthermore, Vietnam Veterans Against the War dramatically threw their medals over the Capitol steps in 1971. Therefore, Interpretation 2 is supported because the personal threat of the draft mobilised unprecedented, active mass resistance.</p><p>However, Interpretation 1 provides a vital counter-balance by highlighting the transformative power of television media. As the first uncensored 'living room war', nightly news broadcasts delivered graphic footage of wounded soldiers and napalmed villages directly into American homes. In February 1968, following the surprise Tet Offensive, CBS anchorman Walter Cronkite declared the war an unwinnable 'stalemate', prompting President Johnson to remark, 'If I've lost Cronkite, I've lost Middle America'. Furthermore, investigative reports exposing the 1968 My Lai massacre and the 1971 Pentagon Papers fatally destroyed government credibility. Therefore, Interpretation 1 is persuasive because media exposure eroded the silent majority's patriotic faith in official narratives.</p><p>In conclusion, I agree with Interpretation 2 to a moderate extent, but Interpretation 1 provides the deeper catalyst. While draft resistance (Interpretation 2) drove youth mobilization, it was the television exposure of military stalemate and atrocities (Interpretation 1) that convinced mainstream middle America that continuing the Vietnam War was morally indefensible.</p>",
+                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). Analytical, balanced evaluation of both interpretations against detailed historical context, culminating in a sustained, criteria-driven verdict with accurate specialist terminology."
               }
             }
           }
@@ -16814,7 +16814,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the introduction of the military draft lottery in 1969. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that state military forces used lethal, disproportionate violence against student demonstrators.<br><strong>Details in the source that tell me this:</strong><br>The source details National Guard soldiers firing 67 rounds into unarmed crowds of young demonstrators in broad daylight.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the shootings caused deep grief, shock, and nationwide student fury.<br><strong>Details in the source that tell me this:</strong><br>The iconic photograph shows a young woman kneeling over the body of a dead student screaming in despair.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>The burglars used sophisticated electronic surveillance equipment.<br><strong>Details in the source that tell me this:</strong><br>'arrested with wiretapping devices, cameras, and bugging equipment'.</p><p><strong>(ii) What I can infer:</strong><br>The intruders had direct links to the presidential administration.<br><strong>Details in the source that tell me this:</strong><br>'address books carried the telephone number of the White House'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -16831,22 +16831,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that the Watergate burglars had spying equipment to bug phones.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>The break-in involved professional espionage and electronic wiretapping.<br><strong>Details in the source that tell me this:</strong><br>'arrested with wiretapping devices, cameras, and bugging equipment'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that state military forces used lethal, disproportionate violence against student demonstrators.<br><strong>Details in the source that tell me this:</strong><br>The source details National Guard soldiers firing 67 rounds into unarmed crowds of young demonstrators in broad daylight.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the shootings caused deep grief, shock, and nationwide student fury.<br><strong>Details in the source that tell me this:</strong><br>The iconic photograph shows a young woman kneeling over the body of a dead student screaming in despair.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>The burglars used sophisticated electronic surveillance equipment.<br><strong>Details in the source that tell me this:</strong><br>'arrested with wiretapping devices, cameras, and bugging equipment'.</p><p><strong>(ii) What I can infer:</strong><br>The intruders had direct links to the presidential administration.<br><strong>Details in the source that tell me this:</strong><br>'address books carried the telephone number of the White House'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -18083,7 +18083,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about President Nixon's televised 'Silent Majority' address (November 1969). [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that Nixon claimed an immediate American withdrawal would lead to a catastrophic collapse of US international credibility.<br><strong>Details in the source that tell me this:</strong><br>Nixon warns that a precipitate withdrawal would spark violence wherever our commitments help maintain peace.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the president sought to unite non-protesting, patriotic citizens behind his gradual withdrawal strategy.<br><strong>Details in the source that tell me this:</strong><br>He explicitly appeals to 'the great silent majority of my fellow Americans' to support his search for honorable peace.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>White House officials paid huge sums to buy the burglars' silence.<br><strong>Details in the source that tell me this:</strong><br>'John Dean testified that over 400,000 dollars was paid to buy silence'.</p><p><strong>(ii) What I can infer:</strong><br>Nixon secretly recorded all Oval Office meetings.<br><strong>Details in the source that tell me this:</strong><br>'Alexander Butterfield revealed all conversations were secretly recorded'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -18100,22 +18100,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that White House officials covered up the Watergate break-in.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Let historians not record that when America was th...</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Senior officials paid large sums of hush money to the burglars.<br><strong>Details in the source that tell me this:</strong><br>'John Dean testified that over 400,000 dollars was paid to buy silence'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that Nixon claimed an immediate American withdrawal would lead to a catastrophic collapse of US international credibility.<br><strong>Details in the source that tell me this:</strong><br>Nixon warns that a precipitate withdrawal would spark violence wherever our commitments help maintain peace.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that the president sought to unite non-protesting, patriotic citizens behind his gradual withdrawal strategy.<br><strong>Details in the source that tell me this:</strong><br>He explicitly appeals to 'the great silent majority of my fellow Americans' to support his search for honorable peace.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>White House officials paid huge sums to buy the burglars' silence.<br><strong>Details in the source that tell me this:</strong><br>'John Dean testified that over 400,000 dollars was paid to buy silence'.</p><p><strong>(ii) What I can infer:</strong><br>Nixon secretly recorded all Oval Office meetings.<br><strong>Details in the source that tell me this:</strong><br>'Alexander Butterfield revealed all conversations were secretly recorded'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -19350,7 +19350,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the signing of the Paris Peace Accords in January 1973. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that the Paris Peace Accords marked the formal end of direct American military combat involvement in Vietnam.<br><strong>Details in the source that tell me this:</strong><br>The treaty document specifies the complete withdrawal of all US military personnel and the dismantlement of US bases within sixty days.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that securing the release of American prisoners of war was an absolute priority for US negotiators.<br><strong>Details in the source that tell me this:</strong><br>The agreement contains strict clauses mandating the simultaneous return of all captured military personnel and foreign civilians.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Nixon personally ordered the cover-up to obstruct justice.<br><strong>Details in the source that tell me this:</strong><br>'ordered Haldeman to tell the CIA to obstruct the FBI enquiry'.</p><p><strong>(ii) What I can infer:</strong><br>Congressional Republicans withdrew their political defence of Nixon.<br><strong>Details in the source that tell me this:</strong><br>'party leaders warned him that impeachment and conviction were certain'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -19367,22 +19367,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that the audio tape proved President Nixon broke the law.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Nixon personally ordered government agencies to halt the investigation.<br><strong>Details in the source that tell me this:</strong><br>'ordered Haldeman to tell the CIA to obstruct the FBI enquiry'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that the Paris Peace Accords marked the formal end of direct American military combat involvement in Vietnam.<br><strong>Details in the source that tell me this:</strong><br>The treaty document specifies the complete withdrawal of all US military personnel and the dismantlement of US bases within sixty days.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that securing the release of American prisoners of war was an absolute priority for US negotiators.<br><strong>Details in the source that tell me this:</strong><br>The agreement contains strict clauses mandating the simultaneous return of all captured military personnel and foreign civilians.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Nixon personally ordered the cover-up to obstruct justice.<br><strong>Details in the source that tell me this:</strong><br>'ordered Haldeman to tell the CIA to obstruct the FBI enquiry'.</p><p><strong>(ii) What I can infer:</strong><br>Congressional Republicans withdrew their political defence of Nixon.<br><strong>Details in the source that tell me this:</strong><br>'party leaders warned him that impeachment and conviction were certain'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -19440,7 +19440,7 @@
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the main reasons for the growth of opposition to the Vietnam War in the USA (1968–71)? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is highly useful for investigating anti-war opposition because it exposes the moral revulsion triggered by revelations of military atrocities, reporting that Charlie Company was ordered to \"round up everyone in the ditch and open fire\". This investigative report exposed the slaughter of 504 unarmed villagers, devastating the ethical justification for the war as witnesses testified that the victims were \"just women, children, and babies\". As independent investigative journalism published by Seymour Hersh in late 1969, its purpose was to expose suppressed military crimes; its shocking revelations were decisive in turning middle-class churchgoers, editorial boards, and moderate voters into vocal opponents of the war.<br><br>Source C is equally useful because it reveals how the military draft transformed student unrest into a nationwide mass movement, protesting that \"the draft lottery forces our youth to fight in a war without moral purpose\". This reflects historical reality: Nixon's December 1969 draft lottery eliminated college deferments, exposing millions of middle-class families to conscription and prompting the leaflet's demand to \"bring all the troops home now\". As an agitational circular produced by Moratorium organizers, its purpose was to coordinate nationwide demonstrations; while partisan, this provides authentic evidence of the organizational rhetoric that brought 500,000 peaceful protesters to Washington in October 1969.",
+            "model": "<p>Source B is highly useful for investigating the Watergate cover-up because it reveals direct White House complicity, with White House counsel John Dean testifying that there was 'a cancer growing on the presidency'. Dean admitted that hush money exceeding $400,000 was paid to buy the silence of the Watergate burglars. As sworn testimony before the televised Senate Watergate Committee in June 1973, Dean faced perjury charges, giving his insider allegations immense credibility in demonstrating criminal obstruction within Nixon's inner circle.</p><p>Source C is equally useful because it illustrates the crucial role of investigative journalism in exposing the conspiracy. The *Washington Post* report details how Woodward and Bernstein traced laundered funds from the burglars directly back to the Committee to Re-elect the President (CREEP). As contemporary news reporting based on confidential source 'Deep Throat', its purpose was public disclosure, providing reliable evidence of how investigative press pressure prevented the administration from suppressing the scandal.</p><p>Together, both sources combine insider political testimony with investigative press reporting to illuminate the cover-up.</p>",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -19453,26 +19453,26 @@
             "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance (author/purpose). Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Judgement",
+                "title": "2/8 Simple Comment",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Simple Judgement)",
-                "text": "Source B is useful because it is about the My Lai massacre where American soldiers killed innocent villagers. Source C is useful because it describes anti-war protests, but it is biased because it was written by an anti-war group.",
-                "verdict": "AO3 (2 marks). Simple assertions with generic provenance comments ('anti-war group', 'biased'). Fails to evaluate how NOP affects usefulness or integrate precise historical evidence."
+                "level": "Level 1 (Simple Comment on Surface Feature)",
+                "text": "<p>Source B is useful because it shows John Dean testifying before Congress. Source C is useful because it shows newspaper headlines about Watergate. Both sources show people were investigating President Nixon.</p>",
+                "verdict": "AO3 (2 marks). Simple surface-level comments without evaluating provenance, context, or specific utility for the enquiry."
               },
               "tier_5m": {
-                "title": "5/8 Developed Content",
+                "title": "5/8 Partial Utility",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Developed Evaluation)",
-                "text": "Source B is useful because it reveals the horrific events of the My Lai massacre in March 1968, where Lt William Calley's Charlie Company murdered over 500 unarmed Vietnamese civilians. When Seymour Hersh uncovered this in late 1969, it caused massive public moral outrage.<br><br>Source C is useful because it highlights the role of the military draft in driving middle-class opposition. The introduction of the draft lottery in December 1969 meant college students could no longer avoid service, leading to draft card burnings and massive demonstrations like the Moratorium. However, as an anti-war leaflet, it exaggerates support.",
-                "verdict": "AO3 (5 marks). Solid factual knowledge (My Lai, Seymour Hersh, 1969 draft lottery), but provenance comments remain partially descriptive rather than explaining how the author's purpose directly alters the evidential weight."
+                "level": "Level 2 (Developed Content Analysis)",
+                "text": "<p>Source B is useful because White House counsel John Dean testified under oath that Nixon was personally involved in the cover-up. Source C is useful because the Washington Post articles revealed hush money was paid to the burglars.<br><br>However, provenance is treated briefly and the sources are not compared for overall utility.</p>",
+                "verdict": "AO3 (5 marks). Clear explanation of content and context for both sources, but lacks evaluation of provenance and tone."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
                 "score": "8 / 8 Marks",
                 "level": "Level 3 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Source B is highly useful for investigating anti-war opposition because it exposes the moral revulsion triggered by revelations of military atrocities, reporting that Charlie Company was ordered to \"round up everyone in the ditch and open fire\". This investigative report exposed the slaughter of 504 unarmed villagers, devastating the ethical justification for the war as witnesses testified that the victims were \"just women, children, and babies\". As independent investigative journalism published by Seymour Hersh in late 1969, its purpose was to expose suppressed military crimes; its shocking revelations were decisive in turning middle-class churchgoers, editorial boards, and moderate voters into vocal opponents of the war.<br><br>Source C is equally useful because it reveals how the military draft transformed student unrest into a nationwide mass movement, protesting that \"the draft lottery forces our youth to fight in a war without moral purpose\". This reflects historical reality: Nixon's December 1969 draft lottery eliminated college deferments, exposing millions of middle-class families to conscription and prompting the leaflet's demand to \"bring all the troops home now\". As an agitational circular produced by Moratorium organizers, its purpose was to coordinate nationwide demonstrations; while partisan, this provides authentic evidence of the organizational rhetoric that brought 500,000 peaceful protesters to Washington in October 1969.",
-                "verdict": "AO3 Level 3 (8 marks). 191 words across 2 tightly woven paragraphs. Each paragraph embeds 2 verbatim quotes anchoring Content, Contextual Validation, and 1-aspect NOP linked directly to the enquiry. Zero wasted intro, comparison, or conclusion."
+                "text": "<p>Source B is highly useful for investigating the Watergate cover-up because it reveals direct White House complicity, with White House counsel John Dean testifying that there was 'a cancer growing on the presidency'. Dean admitted that hush money exceeding $400,000 was paid to buy the silence of the Watergate burglars. As sworn testimony before the televised Senate Watergate Committee in June 1973, Dean faced perjury charges, giving his insider allegations immense credibility in demonstrating criminal obstruction within Nixon's inner circle.</p><p>Source C is equally useful because it illustrates the crucial role of investigative journalism in exposing the conspiracy. The *Washington Post* report details how Woodward and Bernstein traced laundered funds from the burglars directly back to the Committee to Re-elect the President (CREEP). As contemporary news reporting based on confidential source 'Deep Throat', its purpose was public disclosure, providing reliable evidence of how investigative press pressure prevented the administration from suppressing the scandal.</p><p>Together, both sources combine insider political testimony with investigative press reporting to illuminate the cover-up.</p>",
+                "verdict": "AO3 (8 marks). Detailed evaluation of content, provenance, and historical context for both sources, assessing how they complement each other for the enquiry."
               }
             }
           }
@@ -20654,7 +20654,7 @@
             "marks": 4,
             "question": "1. Give two things you can infer from Source A about the physical and psychological toll on US combat soldiers in Vietnam. [4 marks]",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that combat in Vietnam inflicted extreme, lasting physical trauma and psychological exhaustion on frontline US soldiers.<br><strong>Details in the source that tell me this:</strong><br>The archival photograph shows battle-fatigued infantrymen staring into space with hollow eyes while attending to severely wounded comrades.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that combat conditions in the tropical climate caused severe non-battle medical hardship.<br><strong>Details in the source that tell me this:</strong><br>The soldiers' uniforms are torn and mud-caked from constant monsoon rains, jungle rot, and difficult terrain.</p>",
+            "model": "<p><strong>(i) What I can infer:</strong><br>Nixon lost congressional support needed to remain in office.<br><strong>Details in the source that tell me this:</strong><br>'no longer have a strong enough political base in Congress'.</p><p><strong>(ii) What I can infer:</strong><br>Nixon claimed resignation was needed to heal the country.<br><strong>Details in the source that tell me this:</strong><br>'healing process requires that the nation put this tragedy behind it'.</p>",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -20671,22 +20671,22 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "<p>I can infer that conditions were bad and people were angry.</p>",
-                "verdict": "AO3 (1 mark). Simple assertion without quoting or citing specific evidence from Source A."
+                "text": "<p>I can infer that President Nixon resigned because Congress no longer supported him.</p>",
+                "verdict": "AO3 (1 mark). Simple valid inference made, but completely unsupported by textual quotation from Source A."
               },
               "tier_2m": {
                 "title": "2/4 Partial / Quote Trap",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that people faced difficulties.<br><strong>Details in the source:</strong><br>Contemporary archival extract....</p>",
-                "verdict": "AO3 (2 marks). 1 valid inference supported by a quote, but second inference omitted."
+                "text": "<p><strong>(i) What I can infer:</strong><br>Nixon lost the political backing required to survive in office.<br><strong>Details in the source that tell me this:</strong><br>'I no longer have a strong enough political base in Congress'.</p>",
+                "verdict": "AO3 (2 marks). One valid inference supported by direct quotation from Source A, but a second inference is missing."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p><strong>(i) What I can infer:</strong><br>I can infer that combat in Vietnam inflicted extreme, lasting physical trauma and psychological exhaustion on frontline US soldiers.<br><strong>Details in the source that tell me this:</strong><br>The archival photograph shows battle-fatigued infantrymen staring into space with hollow eyes while attending to severely wounded comrades.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that combat conditions in the tropical climate caused severe non-battle medical hardship.<br><strong>Details in the source that tell me this:</strong><br>The soldiers' uniforms are torn and mud-caked from constant monsoon rains, jungle rot, and difficult terrain.</p>",
+                "text": "<p><strong>(i) What I can infer:</strong><br>Nixon lost congressional support needed to remain in office.<br><strong>Details in the source that tell me this:</strong><br>'no longer have a strong enough political base in Congress'.</p><p><strong>(ii) What I can infer:</strong><br>Nixon claimed resignation was needed to heal the country.<br><strong>Details in the source that tell me this:</strong><br>'healing process requires that the nation put this tragedy behind it'.</p>",
                 "verdict": "AO3 (4 marks). Full marks awarded. Two distinct inferences, both supported by direct, quoted textual details from Source A."
               }
             }
@@ -20753,7 +20753,7 @@
               }
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 argues that the United States lost the war primarily because of military and strategic failures on the battlefield. The US relied on inappropriate conventional tactics—such as heavy artillery, carpet-bombing, and Search and Destroy missions—that were completely unsuited to fighting an elusive guerrilla enemy in dense jungle terrain. Furthermore, the conscription draft system produced low morale, drug abuse, and 'fragging' among inexperienced one-year draftees, while widespread civilian destruction thoroughly alienated the South Vietnamese population.<br><br>On the other hand, Interpretation 2 forcefully argues that the US defeat was decided by the political loss of will on the domestic home front and the collapse of the corrupt, unpopular South Vietnamese regime. The growing anti-war movement, intense media scrutiny, and revelations like the Pentagon Papers made it impossible for US presidents to sustain indefinite military commitments. Simultaneously, the South Vietnamese government under Thieu was plagued by rampant corruption and lacked genuine popular legitimacy, meaning the ARVN collapsed rapidly once US air support and funding were terminated following the 1973 Paris Peace Accords.<br><br>Furthermore, contextual historical analysis confirms that the extraordinary ideological resilience and external superpower support (Soviet and Chinese weaponry) provided to the North Vietnamese allowed Ho Chi Minh's forces to sustain astronomical casualties and outlast American resolve.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a large extent. While US tactical military methods were deeply flawed, military technology alone could never compensate for the absence of political legitimacy in Saigon and the total collapse of public and congressional support in Washington, making an American defeat inevitable.",
+            "model": "<p>Interpretation 2 presents a compelling argument that President Nixon's resignation in August 1974 was the direct, inevitable result of the 'Smoking Gun' tape and the consequent collapse of his congressional support. Nixon had consistently claimed executive privilege to conceal White House recordings. However, on 24 July 1974, the Supreme Court ruled unanimously in *United States v. Nixon* that presidential privilege did not shield criminal evidence. The subpoenaed tape from 23 June 1972 proved that Nixon had ordered Chief of Staff H.R. Haldeman to use the CIA to halt the FBI's investigation. On 7 August 1974, senior Republican leaders informed Nixon he faced certain conviction in the Senate. Therefore, Interpretation 2 is supported because the definitive legal proof of obstruction destroyed his political survival.</p><p>However, Interpretation 1 offers a vital counter-perspective by arguing that the crisis was engineered over two years of relentless investigative journalism and congressional scrutiny. Reporters Bob Woodward and Carl Bernstein at the *Washington Post* uncovered secret CREEP campaign slush funds, while the televised Senate Watergate Committee chaired by Sam Ervin gripped 85% of American households. Furthermore, Alexander Butterfield's sensational disclosure of the White House taping system provided the key that allowed Special Prosecutor Archibald Cox to demand evidence, despite Nixon's 'Saturday Night Massacre'. Therefore, Interpretation 1 is valid because sustained democratic oversight prevented the initial burglary from being successfully buried.</p><p>In conclusion, I agree with Interpretation 2 to a large extent. While congressional investigations and journalism (Interpretation 1) uncovered the sprawling conspiracy, it was the unassailable audio proof of the 'Smoking Gun' tape (Interpretation 2) that stripped Nixon of his remaining party defenders and forced his resignation on 9 August 1974.</p>",
             "scaffolding": {
               "acronym": "Evaluative Verdict Framework",
               "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
@@ -20766,26 +20766,26 @@
             "examiner_tip": "Level 4 Discriminator: Indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 (domestic political loss of will, media exposure, and South Vietnamese regime corruption) against Interpretation 1 (conventional military failures and inappropriate jungle tactics). Deploy specialist terms for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
-                "title": "4/16 Simple Statement",
+                "title": "4/16 Basic Description",
                 "score": "4 / 16 Marks",
-                "level": "Level 1 Top (Simple Evaluation)",
-                "text": "Interpretation 2 says America lost the war because people at home stopped supporting it and protested, and the South Vietnamese government was corrupt. I agree because when Congress cut money the ARVN fell. Interpretation 1 says the US lost because their military tactics did not work in the jungle.",
-                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (2 marks). Simple evaluation that outlines both arguments without balanced supporting historical evidence or analysis of how the views are conveyed."
+                "level": "Level 1 Top / Level 2 Bottom (Basic Description)",
+                "text": "<p>Interpretation 2 argues that Nixon resigned because the 'Smoking Gun' tape proved he broke the law and covered up the Watergate break-in. This is true because Republicans told him he would be impeached. However, Interpretation 1 says journalists Woodward and Bernstein and the Senate investigation exposed his crimes first.</p>",
+                "verdict": "AO4 Level 1 (4 marks) • SPaG Threshold (1 mark). Simple, generalized description of one view with brief mention of the other, lacking sustained historical analysis or criteria-driven evaluation."
               },
               "tier_8m": {
-                "title": "8/16 Descriptive Account",
+                "title": "8/16 Two-Sided Account",
                 "score": "8 / 16 Marks",
-                "level": "Level 2 Top (Descriptive Account)",
-                "text": "Interpretation 2 argues that the United States failed in Vietnam because of domestic political opposition and the weakness of South Vietnam. The anti-war movement and the Pentagon Papers destroyed trust in the government. When the US withdrew its troops in 1973, Congress refused to keep funding President Thieu's corrupt government, so North Vietnam was able to capture Saigon in 1975.<br><br>On the other hand, Interpretation 1 emphasizes military failures in the jungle. US tactics like Search and Destroy, bombing, and chemical weapons killed thousands of civilians and pushed people to join the Vietcong. Young American draftees suffered from low morale and drug abuse, and could not defeat guerrilla fighters. Therefore both military and political factors caused the defeat.",
-                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (3 marks). Good factual knowledge supporting both interpretations, but remains largely descriptive. Lacks explicit analysis of how the views are conveyed and offers an undeveloped final verdict."
+                "level": "Level 2 Top / Level 3 Bottom (Two-Sided Account)",
+                "text": "<p>On the one hand, Interpretation 2 is persuasive because the release of the White House audio tapes delivered the final blow. When the Supreme Court ruled in *US v. Nixon* (July 1974) that Nixon had to surrender the tapes, the 'Smoking Gun' recording revealed he had ordered the CIA to obstruct the FBI's investigation six days after the break-in. Senior Republicans told Nixon he faced certain impeachment.<br><br>On the other hand, Interpretation 1 emphasizes the relentless work of the Senate Watergate Committee and investigative journalists. Carl Bernstein and Bob Woodward traced slush funds to CREEP, while the Ervin Committee televised hearings exposed the secret taping system.<br><br>Overall, I agree with Interpretation 2 because the tape made resignation unavoidable.</p>",
+                "verdict": "AO4 Level 2 (8 marks) • SPaG Intermediate (2 marks). Explains both interpretations with relevant contextual facts, but lacks deep historiographical evaluation or a developed criteria-based verdict."
               },
               "tier_16m": {
                 "title": "16/16 Grade 9 Exam ★",
-                "score": "16 / 16 Marks (+4 SPaG)",
+                "score": "16 / 16 Marks",
                 "level": "Level 4 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "Interpretation 2 presents a compelling argument that the United States ultimately failed to defeat communist forces in Vietnam because of the fatal erosion of domestic political will and the structural illegitimacy of the South Vietnamese state. The historian uses emphatic phrasing to highlight that the war was 'lost in Washington and Saigon, not on the battlefield'. This perspective is strongly corroborated by historical evidence: the combination of relentless media coverage, revelations from the 1971 Pentagon Papers, and the Watergate scandal shattered congressional and public trust in the presidency. Consequently, after the January 1973 Paris Peace Accords, an assertive Congress passed the War Powers Act (1973) and drastically slashed military funding to President Nguyen Van Thieu. Plagued by endemic corruption and lacking authentic popular legitimacy, the ARVN collapsed with shocking speed when North Vietnamese forces launched their final spring offensive in 1975, culminating in the fall of Saigon.<br><br>However, Interpretation 1 provides a vital alternative perspective by emphasizing that the American failure was rooted in fundamentally flawed military strategy and battlefield tactical doctrine. The author uses critical, analytical terminology to dissect the 'incompatibility of high-tech firepower with counter-insurgency warfare'. Historical evidence validates this: General Westmoreland’s reliance on Search and Destroy missions, massive B-52 carpet-bombing, napalm, and Agent Orange thoroughly alienated the rural South Vietnamese peasantry, driving hundreds of thousands into the arms of the Vietcong. Furthermore, the one-year tour-of-duty draft system produced acute institutional demoralisation, manifested in rampant drug abuse, racial friction, and over 800 recorded incidents of 'fragging' (enlisted men murdering aggressive officers).<br><br>Overall, I agree with Interpretation 2 to a very large extent. While US battlefield tactics were undoubtedly disastrous (Interpretation 1), military prowess alone could never compensate for the absence of a viable, legitimate political state in Saigon. Once the American domestic political center collapsed, the corrupt South Vietnamese regime was doomed to collapse, proving that political factors were decisive. The specialist terminology and sustained comparative analysis secure full marks.",
-                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). 348 words. Flawlessly analyzes both interpretations, explicitly demonstrates how different views are conveyed (tone, emphasis, language), integrates precise contextual evidence (Pentagon Papers, War Powers Act 1973, Paris Peace Accords, fall of Saigon 1975, Search and Destroy, fragging), and delivers a sustained, substantiated judgement with specialist terminology."
+                "text": "<p>Interpretation 2 presents a compelling argument that President Nixon's resignation in August 1974 was the direct, inevitable result of the 'Smoking Gun' tape and the consequent collapse of his congressional support. Nixon had consistently claimed executive privilege to conceal White House recordings. However, on 24 July 1974, the Supreme Court ruled unanimously in *United States v. Nixon* that presidential privilege did not shield criminal evidence. The subpoenaed tape from 23 June 1972 proved that Nixon had ordered Chief of Staff H.R. Haldeman to use the CIA to halt the FBI's investigation. On 7 August 1974, senior Republican leaders informed Nixon he faced certain conviction in the Senate. Therefore, Interpretation 2 is supported because the definitive legal proof of obstruction destroyed his political survival.</p><p>However, Interpretation 1 offers a vital counter-perspective by arguing that the crisis was engineered over two years of relentless investigative journalism and congressional scrutiny. Reporters Bob Woodward and Carl Bernstein at the *Washington Post* uncovered secret CREEP campaign slush funds, while the televised Senate Watergate Committee chaired by Sam Ervin gripped 85% of American households. Furthermore, Alexander Butterfield's sensational disclosure of the White House taping system provided the key that allowed Special Prosecutor Archibald Cox to demand evidence, despite Nixon's 'Saturday Night Massacre'. Therefore, Interpretation 1 is valid because sustained democratic oversight prevented the initial burglary from being successfully buried.</p><p>In conclusion, I agree with Interpretation 2 to a large extent. While congressional investigations and journalism (Interpretation 1) uncovered the sprawling conspiracy, it was the unassailable audio proof of the 'Smoking Gun' tape (Interpretation 2) that stripped Nixon of his remaining party defenders and forced his resignation on 9 August 1974.</p>",
+                "verdict": "AO4 Level 4 (16 marks) • SPaG High (4 marks). Analytical, balanced evaluation of both interpretations against detailed historical context, culminating in a sustained, criteria-driven verdict with accurate specialist terminology."
               }
             }
           }
