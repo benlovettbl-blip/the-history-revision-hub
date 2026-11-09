@@ -109,14 +109,14 @@ const medievalConfigs = [
     enquiryQuestion: 'Why did the Catholic Church dominate medieval explanations of disease?',
     specAnchor:
       'Supernatural & religious causes; Catholic Church influence; astrology & planetary conjunctions.',
-    tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
+    tariff: 'Question 5: Evaluative Essay [16 marks + 4 marks SPaG &bull; 25 mins]',
     examStem:
-      'Explain why the Catholic Church had such a major influence on ideas about the causes of disease in the period c1250–c1500. [12 marks]',
-    stimulus: ['Monastic scriptoria and book-copying', 'The imprisonment of Roger Bacon (1277)'],
+      '‘In the medieval period (c1250–c1500), ideas about the cause of illness were mainly based on religion.’ How far do you agree? Explain your answer. [16 marks + 4 marks SPaG]',
+    stimulus: ['the Church', 'miasma'],
     connectives:
-      'One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because...',
+      'To a large extent, it can be argued that... &bull; On the one hand, a major religious belief was that... &bull; Furthermore, this meant that... &bull; On the other hand, an alternative rational explanation was... &bull; In conclusion, the decisive reason why...',
     wordBank:
-      'divine retribution &bull; biblical leprosy &bull; Lazar houses &bull; teleology &bull; heresy &bull; Roger Bacon (1277) &bull; monastic scriptoria &bull; 1345 planetary conjunction &bull; astrological almanacs',
+      'divine punishment &bull; original sin &bull; flagellants &bull; tithes &bull; pilgrimage &bull; Canterbury &bull; Galen &bull; Theory of the Four Humours &bull; miasma &bull; foul vapours &bull; astrology &bull; 1345 planetary conjunction',
     timelineMission:
       'Turn to Pages 2–3 (Key Topic 1.1). In the drawing box, sketch a monk copying Galen’s medical book in a scriptorium. Add two speech bubbles explaining why the Church banned new medical experiments and imprisoned Roger Bacon in 1277.',
     fourMark: {
@@ -139,61 +139,61 @@ const medievalConfigs = [
       {
         step: 1,
         dates: 'c1250',
-        title: 'Scriptoria & Church Monopoly on Learning',
-        questionHeading: 'How did church scriptoria prevent new medical ideas from spreading?',
+        title: 'Divine Retribution & Original Sin',
+        questionHeading: 'Why was disease believed to be a direct punishment sent by God?',
         paraBadge: '[1.1]',
         bullets: [
-          'Church scriptoria monopoly',
-          'Latin manuscript copying',
-          'Roger Bacon imprisoned (1277)',
+          'Divine punishment for sin',
+          'Original sin & human fallen state',
+          'Prayer & repentance as primary cure',
         ],
       },
       {
         step: 2,
         dates: 'c1280',
-        title: 'Biblical Leprosy & Divine Retribution',
+        title: 'Moral Taint: Leprosy & Social Stigma',
         questionHeading: 'Why was leprosy viewed as visible proof of divine judgment?',
         paraBadge: '[1.2]',
         bullets: [
-          'Divine punishment for sin',
-          'Biblical leprosy stigma',
-          'Lazar houses isolation',
+          'Biblical leprosy moral stigma',
+          'Exile to isolated Lazar houses',
+          'Warning wooden clappers & bells',
         ],
       },
       {
         step: 3,
         dates: '1345',
-        title: 'Christian Astrology & Planetary Conjunction',
+        title: 'Astrological Influences & The Zodiac Man',
         questionHeading: 'How did the Church reconcile astrology with Christian doctrine?',
         paraBadge: '[1.3]',
         bullets: [
+          'Zodiac Man parchment wheels',
           '1345 planetary conjunction',
-          'Mars, Jupiter & Saturn',
-          'Zodiac calendar almanacs',
+          'Mars, Saturn & Jupiter alignment',
         ],
       },
       {
         step: 4,
         dates: 'c1350',
-        title: 'Purgatory, Saints & Holy Relics',
+        title: 'Spiritual Intercession, Relics & Pilgrimage',
         questionHeading: 'Why did sick people turn to pilgrimage shrines rather than doctors?',
         paraBadge: '[1.4]',
         bullets: [
-          'Shrines & holy relics',
-          'Pilgrimage prayers',
-          'Sale of indulgences',
+          'Arduous pilgrimage to Canterbury',
+          'Kissing holy relics of saints',
+          'Chantry masses & sale of indulgences',
         ],
       },
       {
         step: 5,
         dates: 'c1400',
-        title: 'Censorship & The Ban on Dissection',
+        title: 'Monastic Scriptoria, Galen & Censorship',
         questionHeading: 'Why did church enforcement of Galen prevent medical progress?',
         paraBadge: '[1.5]',
         bullets: [
-          'Galen theological fit',
-          'Dissection bans enforced',
-          'Heresy excommunication threat',
+          'Monastic scriptoria Latin copying',
+          'Galen purposeful creator dogma',
+          'Roger Bacon imprisoned for heresy (1277)',
         ],
       },
     ],
@@ -210,12 +210,12 @@ const medievalConfigs = [
       'Rational explanations: Four Humours (Hippocrates), Theory of Opposites (Galen), Miasma; diagnostic tools.',
     tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
     examStem:
-      'Explain why the Theory of the Four Humours remained the dominant rational explanation of disease throughout the period c1250–c1500. [12 marks]',
-    stimulus: ['Galen’s Theory of Opposites', 'The diagnostic matula (uroscopy)'],
+      'Explain why there was little change in medicine in England during the medieval period (c1250–c1500). [12 marks]',
+    stimulus: ['Galen', 'monastery hospitals'],
     connectives:
       'One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because...',
     wordBank:
-      'Four Humours &bull; blood, phlegm, yellow bile, black bile &bull; Theory of Opposites &bull; Galen &bull; clinical observation &bull; Hippocratic Oath &bull; matula &bull; uroscopy wheel &bull; Zodiac Man &bull; miasma',
+      'Theory of the Four Humours &bull; Theory of Opposites &bull; Claudius Galen &bull; Catholic Church &bull; papal authority &bull; heresy &bull; Roger Bacon &bull; monastery hospitals &bull; care not cure &bull; lack of dissection',
     timelineMission:
       'Turn to Pages 2–3 (Key Topic 1.2). In the drawing box, sketch a four-part diagram of the Four Humours (Blood, Phlegm, Yellow Bile, Black Bile) showing their seasons and qualities. Annotate Galen’s Theory of Opposites alongside a flask of urine.',
     fourMark: {
@@ -307,20 +307,20 @@ const medievalConfigs = [
       'How did medieval people attempt to treat and prevent disease, and why did rational and religious methods coexist?',
     specAnchor:
       'Approaches to treatment and prevention; religious & supernatural treatments; humoral treatments (phlebotomy, purging); herbal remedies; regimens.',
-    tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
+    tariff: 'Question 5: Evaluative Essay [16 marks + 4 marks SPaG &bull; 25 mins]',
     examStem:
-      'Explain why bloodletting and purging remained the most common medical treatments throughout the period c1250–c1500. [12 marks]',
-    stimulus: ['Phlebotomy (bloodletting by fleam or leeches)', 'The Regimen Sanitatis'],
+      '‘The main reason why medical care and treatment was ineffective during the medieval period, c1250–c1500, was because medical knowledge was based on Galen’s ideas.’ How far do you agree? Explain your answer. [16 marks + 4 marks SPaG]',
+    stimulus: ['Theory of Opposites', 'hospitals'],
     connectives:
-      'One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because...',
+      'To a large extent, it can be argued that... &bull; On the one hand, a major reason treatment was ineffective was... &bull; For example, ... &bull; On the other hand, another decisive factor was... &bull; In conclusion, the main reason why...',
     wordBank:
-      'phlebotomy &bull; fleam &bull; leeches &bull; cupping &bull; purging &bull; emetics &bull; clysters &bull; theriac &bull; herbal materia medica &bull; Regimen Sanitatis &bull; flagellants',
+      'Claudius Galen &bull; Theory of Opposites &bull; phlebotomy (bloodletting) &bull; fleam &bull; leeches &bull; purging &bull; emetics &bull; laxatives &bull; clysters &bull; monastic hospitals &bull; care not cure &bull; religious penance &bull; herbal theriac',
     timelineMission:
       'Turn to Pages 2–3 (Key Topic 1.3). In the drawing box, sketch a barber-surgeon using a fleam and pewter bleeding bowl, alongside a flagellant whip. Label how one treated the body and the other treated the soul.',
     fourMark: {
       type: 'Similarity',
       question:
-        'Explain one way in which approaches to preventing disease in the Medieval period (c1250–c1500) were similar to approaches in the Renaissance period (c1500–c1700). [4 marks]',
+        'Explain one way in which ideas about the prevention of illness in the medieval period (c1250–c1500) were similar to ideas about the prevention of illness in the Renaissance period (c1500–c1700). [4 marks]',
       hint: 'Identify 1 valid similarity, then explain with specific historical detail from both named eras.',
       stems:
         'One way prevention was similar was... &bull; In the Medieval period... &bull; Similarly, in the Renaissance period...',
@@ -410,13 +410,13 @@ const medievalConfigs = [
     examStem:
       'Explain why hospital care in medieval England was based on the concept of ‘care rather than cure’ in the period c1250–c1500. [12 marks]',
     stimulus: [
-      'Monastic rules and religious charity',
-      'The exclusion of infectious diseases (lepers and plague victims)',
+      'the role of the Church',
+      'lack of medical knowledge',
     ],
     connectives:
       'One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because...',
     wordBank:
-      'care not cure &bull; monastic hospitals &bull; St Bartholomew’s (1123) &bull; infirmarer &bull; university physicians &bull; apothecaries &bull; barber-surgeons &bull; wise women &bull; fleam &bull; Lazar houses',
+      'care not cure &bull; monastic hospitals &bull; St Bartholomew’s (1123) &bull; infirmarer &bull; prayer and salvation &bull; exclusion of infectious disease &bull; Lazar houses &bull; university physicians &bull; apothecaries &bull; barber-surgeons &bull; wise women',
     timelineMission:
       'Turn to Pages 2–3 (Key Topic 1.4). In the drawing box, sketch the interior of a monastic hospital ward showing rows of beds facing a chapel altar. Annotate why monks prioritized prayer over medical surgery.',
     fourMark: {
@@ -508,17 +508,17 @@ const medievalConfigs = [
       'Why did medieval society fail to halt the devastating mortality of the Black Death?',
     specAnchor:
       'Case study: The Black Death, 1348–49; beliefs about causes; approaches to treatment and prevention; local government action.',
-    tariff: 'Question 5/6: Thematic Essay [16 marks + 4 marks SPaG &bull; 25 mins]',
+    tariff: 'Question 5: Evaluative Essay [16 marks + 4 marks SPaG &bull; 25 mins]',
     examStem:
-      '‘The main reason why so many people died during the Black Death (1348–49) was because governments had no effective way of preventing disease.’ How far do you agree? Explain your answer. [16 marks + 4 marks SPaG]',
+      '‘There was little progress in understanding the cause of disease in the years c1250–c1700.’ How far do you agree? Explain your answer. [16 marks + 4 marks SPaG]',
     stimulus: [
-      'King Edward III’s cleanliness order (1349)',
-      'Belief in miasma and supernatural causes',
+      'the Great Plague in London, 1665',
+      'Thomas Sydenham',
     ],
     connectives:
-      'One main reason was that... &bull; For example, ... &bull; This was important because... &bull; Another key factor was... &bull; In particular, ... &bull; Overall, the most decisive reason was... because...',
+      'To a large extent, it can be argued that... &bull; On the one hand, there was profound continuity because... &bull; For example, during the Great Plague of 1665... &bull; On the other hand, there were emerging challenges to tradition... &bull; In conclusion, the degree of progress was...',
     wordBank:
-      'Black Death (1348) &bull; Melcombe Regis &bull; bubonic plague &bull; pneumonic plague &bull; Yersinia pestis &bull; black rats &bull; Xenopsylla cheopis fleas &bull; buboes &bull; King Edward III &bull; East Smithfield mass graves &bull; miasma',
+      'Black Death (1348) &bull; Great Plague (1665) &bull; divine punishment &bull; flagellants &bull; miasma &bull; sweet pomanders &bull; Yersinia pestis &bull; Four Humours &bull; Thomas Sydenham &bull; Observationes Medicae &bull; species of disease',
     timelineMission:
       'Turn to Pages 2–3 (Key Topic 1.5). In the drawing box, sketch the arrival of a trading cog at Melcombe Regis carrying rats and fleas, alongside an emergency mass burial pit at East Smithfield.',
     fourMark: {
