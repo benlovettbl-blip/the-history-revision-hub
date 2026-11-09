@@ -452,11 +452,44 @@ unitData.lessons.forEach((lesson, idx) => {
   console.log(`✅ Lesson ${idx + 1} (${lesson.id}) synchronized with 100% workbook parity.`);
 });
 
-// Serialize back to units/edexcel_medicine/data.js
+// 1. Serialize back to units/edexcel_medicine/data.js and public/units/edexcel_medicine/data.js
 const outputText = `export default ${JSON.stringify(unitData, null, 2)};\n`;
 fs.writeFileSync(dataFilePath, outputText, 'utf8');
 
+const pubDataJsPath = path.join(ROOT_DIR, 'public', 'units', 'edexcel_medicine', 'data.js');
+if (fs.existsSync(path.dirname(pubDataJsPath))) {
+  fs.writeFileSync(pubDataJsPath, outputText, 'utf8');
+}
+
+// 2. Synchronize to data/edexcel_medicine.json and public/data/edexcel_medicine.json
+const jsonText = JSON.stringify(unitData, null, 2);
+const dataJsonPath = path.join(ROOT_DIR, 'data', 'edexcel_medicine.json');
+fs.writeFileSync(dataJsonPath, jsonText, 'utf8');
+
+const pubDataJsonPath = path.join(ROOT_DIR, 'public', 'data', 'edexcel_medicine.json');
+fs.writeFileSync(pubDataJsonPath, jsonText, 'utf8');
+
+// 3. Synchronize to database.json and public/database.json
+const dbPath = path.join(ROOT_DIR, 'database.json');
+const pubDbPath = path.join(ROOT_DIR, 'public', 'database.json');
+
+[dbPath, pubDbPath].forEach(p => {
+  if (fs.existsSync(p)) {
+    const db = JSON.parse(fs.readFileSync(p, 'utf8'));
+    if (!db.edexcel_medicine) db.edexcel_medicine = {};
+    db.edexcel_medicine.data = unitData;
+    fs.writeFileSync(p, JSON.stringify(db, null, 2), 'utf8');
+    console.log(`✅ Synchronized database store: ${path.relative(ROOT_DIR, p)}`);
+  }
+});
+
 console.log('\n=============================================================');
-console.log('🎉 Successfully synchronized all 26 lessons in units/edexcel_medicine/data.js!');
+console.log('🎉 Successfully synchronized all 26 lessons across all 6 data stores:');
+console.log('   - units/edexcel_medicine/data.js');
+console.log('   - public/units/edexcel_medicine/data.js');
+console.log('   - data/edexcel_medicine.json');
+console.log('   - public/data/edexcel_medicine.json');
+console.log('   - database.json');
+console.log('   - public/database.json');
 console.log('=============================================================');
 
