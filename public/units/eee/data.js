@@ -1,4 +1,4 @@
-export default {
+window.unitData = {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -1358,7 +1358,25 @@ export default {
       "card_image": "/images/elizabeth_coronation_robes.jpg",
       "hero_image": "/images/elizabeth_coronation_robes.jpg",
       "banner_position": "center 15%",
-      "card_position": "center 15%"
+      "card_position": "center 15%",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what financial crisis did Elizabeth I inherit upon ascending the throne in November 1558?",
+          "answer": "Crown debt of £300,000 and annual crown revenues of only £110,000, worsened by high inflation and debased silver currency."
+        },
+        {
+          "question": "Using paragraph [2.1], what was the role of the 19-man Privy Council and who was Elizabeth's chief secretary?",
+          "answer": "To advise the Queen on royal policy, run daily administration, and enforce laws; led by Sir William Cecil."
+        },
+        {
+          "question": "According to paragraph [3.1], why did sixteenth-century European society view female monarchical rule with deep patriarchal suspicion?",
+          "answer": "Belief that women lacked the physical and mental capacity to govern or command armies, popularized by John Knox's pamphlet attacking female rule."
+        },
+        {
+          "question": "Using paragraph [5.1], what humiliating territorial loss had England suffered to France under Queen Mary in January 1558?",
+          "answer": "The loss of Calais, England's last military and trading foothold on continental European soil."
+        }
+      ]
     },
     {
       "id": "lesson_1_2",
@@ -2597,7 +2615,25 @@ export default {
         ]
       },
       "hook_text": "For a quarter of a century, the English people had suffered whiplash religious revolutions—from Henry VIII’s violent break with Rome to the iconoclasm of Edward VI and the terrifying Smithfield fires of Mary I, where nearly three hundred Protestants burned alive. In the spring of 1559, Queen Elizabeth faced an intractable dilemma: how to satisfy returning Calvinist exiles without provoking a Catholic civil war. Her answer was the 'Middle Way'—a calculated political compromise that would define England's religious identity for centuries. How successfully did Elizabeth's 1559 Religious Settlement reconcile deep divisions between Catholics and Puritans while establishing royal supremacy?",
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [2.1], what title was granted to Queen Elizabeth by the Act of Supremacy (May 1559)?",
+          "answer": "Supreme Governor of the Church of England, pacifying Catholics who believed only the Pope or Christ was supreme head."
+        },
+        {
+          "question": "Using paragraph [3.1], what penalty did the Act of Uniformity impose on recusants who refused to attend Sunday church?",
+          "answer": "A fine of one shilling (12 pence) per week, a heavy sum for ordinary commoners."
+        },
+        {
+          "question": "According to paragraph [4.1], what did Elizabeth's 57 Royal Injunctions order regarding church decoration and vestments?",
+          "answer": "Every parish had to possess an English Bible, destroy monuments of fake miracles, and ensure clergy wore white linen surplices."
+        },
+        {
+          "question": "Using paragraph [5.1], how many Catholic bishops refused to swear the Oath of Supremacy during royal visitations in 1559?",
+          "answer": "All Marian bishops except one (27 out of 28 bishops) refused and were stripped of their offices."
+        }
+      ]
     },
     {
       "id": "lesson_1_3",
@@ -3832,7 +3868,25 @@ export default {
         ]
       },
       "hook_text": "Elizabeth famously declared she had 'no desire to make windows into men's souls', hoping that outward conformity would quiet the kingdom. Yet by the mid-1560s, her delicate 'Middle Way' was caught between two unyielding fires. Zealous Calvinist Puritans denounced church music and priestly vestments as the sinful 'dregs of popery', while conservative Catholic magnates across the North guarded traditional Latin masses in secret manor house attics. Could the Elizabethan church hold together under ideological assault from both extremes?",
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what did radical Puritans demand regarding church practices and decoration?",
+          "answer": "The total removal of all Catholic idols, crucifixes, organs, stained glass, and unbiblical holy days."
+        },
+        {
+          "question": "Using paragraph [2.1], what was the 'Vestments Controversy' of 1566 and how did Archbishop Parker respond?",
+          "answer": "Thirty-seven Puritan clergy refused to wear traditional surplice vestments and were dismissed from the Church by Archbishop Parker's Book of Advertisements."
+        },
+        {
+          "question": "According to paragraph [3.1], what were 'Church Papists' in Elizabethan England?",
+          "answer": "Moderate Catholics who attended compulsory Protestant services to avoid recusancy fines while practicing Catholic mass secretly at home."
+        },
+        {
+          "question": "Using paragraph [5.1], what was the 'Genoese Loan' incident of 1568 and how did it damage Anglo-Spanish relations?",
+          "answer": "Elizabeth seized 400,000 florins of Spanish gold from storm-driven ships in English ports, prompting King Philip II to impose a trade embargo."
+        }
+      ]
     },
     {
       "id": "lesson_1_4",
@@ -5066,7 +5120,25 @@ export default {
       "card_image": "/images/mary_queen_of_scots_pink_portrait.jpg",
       "hero_image": "/images/mary_queen_of_scots_pink_portrait.jpg",
       "banner_position": "center 15%",
-      "card_position": "center 15%"
+      "card_position": "center 15%",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], why did Mary, Queen of Scots, represent an existential dynastic challenge to Elizabeth I?",
+          "answer": "As the granddaughter of Henry VIII's sister Margaret, Catholics viewed Mary as the legitimate, rightful Catholic Queen of England."
+        },
+        {
+          "question": "Using paragraph [2.1], what scandalous event in Edinburgh in February 1567 destroyed Mary's standing in Scotland?",
+          "answer": "The gunpowder explosion and murder of her husband, Lord Darnley, at Kirk o' Field, followed by her marriage to the chief suspect, the Earl of Bothwell."
+        },
+        {
+          "question": "According to paragraph [3.1], where was Mary imprisoned in Scotland before her dramatic escape across the Solway Firth to England in 1568?",
+          "answer": "Lochleven Castle, where Scottish Protestant lords forced her to abdicate in favour of her infant son, James VI."
+        },
+        {
+          "question": "Using paragraph [4.1], what were the 'Casket Letters' presented at the 1568–69 York Inquiry?",
+          "answer": "Love letters and sonnets allegedly written by Mary to Bothwell, used by Scottish lords to prove her complicity in Darnley's murder."
+        }
+      ]
     },
     {
       "id": "lesson_2_1",
@@ -6334,7 +6406,25 @@ export default {
           "a": "Executed on 8 February 1587 after her direct complicity in the Babington Plot was proven by Walsingham's intercepted ciphered letters."
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what action did the Catholic Earls of Northumberland and Westmorland take at Durham Cathedral in November 1569?",
+          "answer": "They tore up the English Bible and Book of Common Prayer and celebrated traditional Latin Catholic Mass, launching the Northern Rebellion."
+        },
+        {
+          "question": "Using paragraph [2.1], what did Pope Pius V decree in his 1570 papal bull Regnans in Excelsis?",
+          "answer": "He excommunicated Elizabeth as a heretic and released all English subjects from their oaths of allegiance to her."
+        },
+        {
+          "question": "According to paragraph [3.1], what was the 1583 Throckmorton Plot and who was backing it?",
+          "answer": "A planned French Catholic invasion financed by Spain and the Papacy to overthrow Elizabeth and crown Mary, Queen of Scots."
+        },
+        {
+          "question": "Using paragraph [5.1], how did Sir Francis Walsingham uncover the 1586 Babington Plot?",
+          "answer": "He intercepted, decoded, and resealed encrypted letters smuggled in beer barrels, obtaining Mary's written approval to assassinate Elizabeth."
+        }
+      ]
     },
     {
       "id": "lesson_2_2",
@@ -7575,7 +7665,25 @@ export default {
           "Evaluate why the assassination of William of Orange and the Treaty of Joinville brought England and Spain to open war."
         ]
       },
-      "hook_text": "By the 1570s, King Philip II of Spain ruled the wealthiest global empire on earth, fed by flotillas of galleons carrying hundreds of tons of silver from the mines of Potosi and Zacatecas. Shut out from legal trade in the Americas by Spanish monopolies, daring English privateers—the 'Sea Dogs'—ventured into the Caribbean and the Pacific, waging an undeclared guerrilla war on Spanish shipping. Why did religious ideology, stolen silver bars, and Francis Drake's audacious voyage around the globe push England and Spain onto a collision course for war?"
+      "hook_text": "By the 1570s, King Philip II of Spain ruled the wealthiest global empire on earth, fed by flotillas of galleons carrying hundreds of tons of silver from the mines of Potosi and Zacatecas. Shut out from legal trade in the Americas by Spanish monopolies, daring English privateers—the 'Sea Dogs'—ventured into the Caribbean and the Pacific, waging an undeclared guerrilla war on Spanish shipping. Why did religious ideology, stolen silver bars, and Francis Drake's audacious voyage around the globe push England and Spain onto a collision course for war?",
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what two core sources of conflict brought England and Spain to the brink of war in the 1570s?",
+          "answer": "Religious differences (Catholic crusade vs Protestant haven) and commercial rivalry over illegal trade in the Spanish New World."
+        },
+        {
+          "question": "Using paragraph [2.1], what did Francis Drake achieve during his 1577–1580 circumnavigation of the globe?",
+          "answer": "He plundered Spanish silver treasure ships on the Pacific coast, brought home £400,000 of booty on the Golden Hind, and was knighted by Elizabeth."
+        },
+        {
+          "question": "According to paragraph [3.1], why did the Dutch Revolt in the Spanish Netherlands threaten English national security?",
+          "answer": "The Spanish Duke of Alba stationed a veteran army of 50,000 troops directly across the English Channel, capable of launching an invasion of England."
+        },
+        {
+          "question": "Using paragraph [5.1], what treaty did Elizabeth sign in August 1585, officially committing English troops to the Netherlands?",
+          "answer": "The Treaty of Nonsuch, sending 7,400 English soldiers under the Earl of Leicester to support Dutch rebels against Spain."
+        }
+      ]
     },
     {
       "id": "lesson_2_3",
@@ -8818,7 +8926,25 @@ export default {
           "a": "Philip II's supreme military commander in the Netherlands whose elite army was intended to link up with the Armada to invade England."
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what legal act passed in 1584 mandated the execution of anyone who plotted to assassinate Queen Elizabeth?",
+          "answer": "The Bond of Association, drafted by Cecil and Walsingham after the assassination of William of Orange."
+        },
+        {
+          "question": "Using paragraph [2.1], where was Mary, Queen of Scots, put on trial for high treason in October 1586?",
+          "answer": "Fotheringhay Castle in Northamptonshire, before a court of 46 English peers, judges, and Privy Councillors."
+        },
+        {
+          "question": "According to paragraph [3.1], why was Elizabeth deeply reluctant to sign Mary’s death warrant?",
+          "answer": "She feared executing an anointed, divinely appointed monarch set a dangerous precedent and would unite Catholic France and Spain against England."
+        },
+        {
+          "question": "Using paragraph [4.1], on what date was Mary, Queen of Scots, beheaded inside the Great Hall of Fotheringhay Castle?",
+          "answer": "8 February 1587, dressed in liturgical crimson—the Catholic colour of martyrdom."
+        }
+      ]
     },
     {
       "id": "lesson_2_4",
@@ -10083,7 +10209,25 @@ export default {
           "a": "A prevailing gale that forced the retreating Armada north around Scotland and Ireland, where dozens of ships were wrecked on rocky shores."
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what was King Philip II’s grand strategic plan for the 1588 Spanish Armada?",
+          "answer": "Sail 130 warships through the English Channel to rendezvous with the Duke of Parma’s 30,000 veteran invasion troops in Flanders."
+        },
+        {
+          "question": "Using paragraph [2.1], what tactical advantages did the English royal fleet possess over the Spanish galleons?",
+          "answer": "Faster, lower 'race-built' galleons equipped with culverin cannon mounted on four-wheeled truck carriages that could reload three times faster."
+        },
+        {
+          "question": "According to paragraph [3.1], what decisive tactic did the English deploy against the anchored Spanish fleet off Calais on 7 August 1588?",
+          "answer": "Eight hell-burner fireships packed with pitch, tar, and gunpowder, causing Spanish captains to panic, cut their anchor cables, and scatter."
+        },
+        {
+          "question": "Using paragraph [4.1], what decisive naval battle was fought on 8 August 1588 where English cannon battered Spanish galleons?",
+          "answer": "The Battle of Gravelines, forcing the battered Armada into the hostile North Sea to circumnavigate Scotland and Ireland."
+        }
+      ]
     },
     {
       "id": "lesson_3_1",
@@ -11330,7 +11474,25 @@ export default {
           "a": "Nobles enjoyed elite pastimes like hunting and tennis, while ordinary working people engaged in rough public sports like bear-baiting and football."
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], how did the development of printing and humanism impact Elizabethan grammar school education?",
+          "answer": "Literacy expanded among the gentry and merchant classes, with grammar schools teaching Latin grammar, rhetoric, and classical philosophy."
+        },
+        {
+          "question": "Using paragraph [2.1], how did education for girls differ from boys in Elizabethan society?",
+          "answer": "Girls were excluded from grammar schools and universities, receiving home education in needlework, French, music, and domestic household management."
+        },
+        {
+          "question": "According to paragraph [3.1], what were the most popular blood sports enjoyed by all social classes in Elizabethan England?",
+          "answer": "Bear-baiting, bull-baiting, and cockfighting in purpose-built circular arenas on London's Southwark bank."
+        },
+        {
+          "question": "Using paragraph [4.1], why did the construction of purpose-built theatres (like James Burbage's The Theatre in 1576) revolutionize drama?",
+          "answer": "It replaced travelling vagabond actors with professional playhouses charging tiered ticket prices, from one-penny groundlings to cushioned galleries."
+        }
+      ]
     },
     {
       "id": "lesson_3_2",
@@ -12544,7 +12706,25 @@ export default {
           "a": "It established a permanent, nationwide legal system dividing the poor into three classes and requiring parishes to provide work or relief."
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what economic pressures caused a dramatic rise in Elizabethan poverty and vagrancy?",
+          "answer": "Rapid population growth from 2.8m to 4m, bad harvests, debased coinage, and agricultural enclosure converting arable land to sheep farming."
+        },
+        {
+          "question": "Using paragraph [2.1], how did Elizabethan society distinguish between the 'impotent poor' and the 'idle poor'?",
+          "answer": "The impotent poor were genuinely unable to work due to age or disability; the idle poor were able-bodied vagrants seen as dangerous criminals."
+        },
+        {
+          "question": "According to paragraph [3.1], what harsh punishments did the 1572 Vagrancy Act impose on unlicensed beggars?",
+          "answer": "Public whipping, burning a hole through the gristle of the right ear with a hot iron, and execution on the third offence."
+        },
+        {
+          "question": "Using paragraph [4.1], what was the historic significance of the 1601 Act for the Relief of the Poor?",
+          "answer": "It created a compulsory national poor rate collected by parish Overseers, providing parish relief for the impotent and materials for the able-bodied to work."
+        }
+      ]
     },
     {
       "id": "lesson_3_3",
@@ -13803,7 +13983,25 @@ export default {
           "a": "Francis Drake's flagship on his three-year voyage around the world, on which Elizabeth publicly knighted him in 1581."
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], how did John Hawkins pioneer the English transatlantic triangular slave trade in the 1560s?",
+          "answer": "He kidnapped enslaved Africans on the Guinea coast and sold them illegally to Spanish colonists in the Caribbean for pearls, hides, and sugar."
+        },
+        {
+          "question": "Using paragraph [2.1], what technological innovations enabled Elizabethan sailors to undertake long-distance oceanic navigation?",
+          "answer": "Magnetic compasses, navigational astrolabes, Mercator projection sea charts, and faster, highly manoeuvrable caravel and galleon hulls."
+        },
+        {
+          "question": "According to paragraph [3.1], why did Elizabeth issue privateering 'Letters of Marque' to sea captains like Francis Drake?",
+          "answer": "To legally sanction private attacks on Spanish treasure ships and colonies, enriching the royal treasury while denying open warfare."
+        },
+        {
+          "question": "Using paragraph [4.1], what chartered monopoly trading companies were founded in the Elizabethan era to open global commerce?",
+          "answer": "The Muscovy Company (Russia), the Levant Company (Ottoman Empire), and the East India Company (chartered in 1600 for Asian spice trade)."
+        }
+      ]
     },
     {
       "id": "lesson_3_4",
@@ -15072,7 +15270,25 @@ export default {
           "a": "Governor John White returned in 1590 to find the entire settlement deserted with no sign of battle, leaving only the word 'CROATOAN' carved into a wooden post."
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what royal patent did Queen Elizabeth grant to Sir Walter Raleigh in March 1584?",
+          "answer": "A charter authorizing him to discover, search, and colonize remote 'heathen and barbarous lands' not possessed by any Christian prince."
+        },
+        {
+          "question": "Using paragraph [2.1], where was England’s first experimental colony established in 1585 and who commanded the voyage?",
+          "answer": "Roanoke Island off the coast of North Carolina, commanded by Sir Richard Grenville and led by governor Ralph Lane."
+        },
+        {
+          "question": "According to paragraph [3.1], why did the first 1585 Roanoke colony collapse within a year?",
+          "answer": "Loss of food supplies when the flagship Tiger ran aground, hostile relations with Chief Wingina's Secotan tribe, and colonists' refusal to farm."
+        },
+        {
+          "question": "Using paragraph [4.1], what mystery confronted Governor John White when he returned to Roanoke in 1590 after the Armada crisis?",
+          "answer": "The entire colony of 115 settlers had vanished without trace, with only the word 'CROATOAN' carved into a wooden palisade post."
+        }
+      ]
     }
   ],
   "key_individuals": [
@@ -15278,3 +15494,4 @@ export default {
   "year_group": "Years 10–11",
   "category": "GCSE"
 };
+if (typeof module !== "undefined") { module.exports = window.unitData; }

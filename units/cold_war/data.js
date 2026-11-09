@@ -1,4 +1,4 @@
-export default {
+window.unitData = {
   "id": "cold_war",
   "title": "The Cold War & Global Flashpoints (1945–1991)",
   "enquiry": "Superpower Relations and the Cold War: How did ideological rivalry divide the globe on the brink of nuclear destruction?",
@@ -1826,6 +1826,24 @@ export default {
           "title": "The Historical Verdict: Geopolitical Vacuum in a Ruined Europe",
           "dates": "1945–1946"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [1.1], what fundamental ideological difference separated American capitalism from Soviet communism?",
+          "answer": "The US championed multi-party democracy and free-market private enterprise, while the USSR enforced a one-party communist dictatorship and state-controlled planned economy."
+        },
+        {
+          "question": "Using paragraph [1.2], what major agreements were reached by the 'Big Three' at the Tehran Conference in November 1943?",
+          "answer": "Britain and the US agreed to open a 'Second Front' in Western Europe (D-Day), while Stalin agreed to wage war against Japan after Germany was defeated."
+        },
+        {
+          "question": "According to paragraph [1.3], what compromise over post-war elections was agreed at the Yalta Conference in February 1945?",
+          "answer": "The Declaration of Liberated Europe, promising free, democratic multi-party elections in all liberated European nations."
+        },
+        {
+          "question": "Using paragraph [1.5], how did President Harry S. Truman change the dynamic at the Potsdam Conference in July 1945?",
+          "answer": "Truman adopted a much more aggressive, suspicious stance toward Stalin following the successful Trinity atomic bomb test."
+        }
       ]
     },
     {
@@ -3428,6 +3446,24 @@ export default {
           "model_sentence": "Amid escalating tensions surrounding <strong>Allied Control Council & Four Powers</strong>, the development of <strong>Reparations</strong> directly precipitated <strong>Grand Alliance</strong>, accelerating the bipolar division between the superpowers.",
           "title": "Reparations and the Division of Germany: The Grand Alliance Dies",
           "dates": "Aug 1945"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [2.1], what geopolitical shock did the atomic bombings of Hiroshima and Nagasaki deliver in August 1945?",
+          "answer": "They demonstrated absolute American military supremacy, prompting Stalin to accelerate the Soviet atomic bomb project."
+        },
+        {
+          "question": "Using paragraph [2.2], what secret telegram did American diplomat George Kennan send from Moscow in February 1946?",
+          "answer": "The 'Long Telegram', warning that the USSR was fanatically hostile to the West and proposing the strategy of 'containment'."
+        },
+        {
+          "question": "According to paragraph [2.3], what counter-report was sent to Moscow by Soviet Ambassador Nikolai Novikov in September 1946?",
+          "answer": "The Novikov Telegram, claiming the US was pursuing world military domination and using economic power for imperialist expansion."
+        },
+        {
+          "question": "Using paragraph [2.5], when did the Soviet Union successfully detonate its first atomic bomb (First Lightning)?",
+          "answer": "August 1949, shattering America's nuclear monopoly years ahead of Western intelligence estimates."
         }
       ]
     },
@@ -5112,6 +5148,24 @@ export default {
           "title": "The Permanent Division: FRG, GDR, NATO (1949) and Warsaw Pact (1955)",
           "dates": "1949–1955"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [3.1], what famous phrase was used by Winston Churchill during his Fulton, Missouri speech in March 1946?",
+          "answer": "That 'an iron curtain has descended across the Continent' dividing free democratic Europe from Soviet totalitarian control."
+        },
+        {
+          "question": "Using paragraph [3.2], what commitment did President Truman make under the 1947 Truman Doctrine?",
+          "answer": "Pledging $400 million in aid to Greece and Turkey, declaring the US would support free peoples resisting subjugation by armed minorities or outside pressures."
+        },
+        {
+          "question": "According to paragraph [3.4], how did the Western Allies defeat Stalin’s Berlin Blockade between June 1948 and May 1949?",
+          "answer": "By launching the Berlin Airlift (Operation Vittles), flying over 2.3 million tons of food, coal, and medicine into West Berlin around the clock."
+        },
+        {
+          "question": "Using paragraph [3.5], what military alliance was founded by Western nations in April 1949 to deter Soviet aggression?",
+          "answer": "The North Atlantic Treaty Organization (NATO), establishing collective defence (an attack on one is an attack on all)."
+        }
       ]
     },
     {
@@ -6779,6 +6833,24 @@ export default {
           "title": "De-escalation and Deterrence: The Hotline & Partial Test Ban Treaty",
           "dates": "1963"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [4.1], why did Fidel Castro ally Cuba with the Soviet Union following the 1959 Cuban Revolution?",
+          "answer": "After the US imposed economic embargoes and backed the failed CIA Bay of Pigs invasion (1961), Castro sought Soviet military and economic protection."
+        },
+        {
+          "question": "Using paragraph [4.2], what evidence was discovered by American U-2 spy plane flights over Cuba on 14 October 1962?",
+          "answer": "High-resolution photographs showing construction of Soviet medium-range nuclear ballistic missile launch sites capable of striking most US cities."
+        },
+        {
+          "question": "According to paragraph [4.3], what military response did President John F. Kennedy choose instead of an immediate air strike?",
+          "answer": "A naval 'quarantine' (blockade) of Cuba to intercept Soviet ships carrying military equipment, backed by DEFCON 2 nuclear alert."
+        },
+        {
+          "question": "Using paragraph [4.5], what secret deal ended the Cuban Missile Crisis and what safety measures were established?",
+          "answer": "Khrushchev removed missiles from Cuba in return for a US pledge not to invade Cuba and a secret agreement to remove US Jupiter missiles from Turkey; the Moscow-Washington Hotline was established."
+        }
       ]
     },
     {
@@ -8442,6 +8514,24 @@ export default {
           "model_sentence": "Amid escalating tensions surrounding <strong>Tet Offensive</strong>, the development of <strong>Richard Nixon, Henry Kissinger & North Vietnamese Army</strong> directly precipitated <strong>Proxy War</strong>, accelerating the bipolar division between the superpowers.",
           "title": "The Lessons of Asia: The Limits of Superpower Hegemony",
           "dates": "1973–1975"
+        }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [5.1], how did the 1949 Chinese Communist victory shift Cold War containment policy in Asia?",
+          "answer": "It led to the adoption of the 'Domino Theory' and NSC-68, tripling US defence spending to prevent communism spreading across Asia."
+        },
+        {
+          "question": "Using paragraph [5.2], how did the United Nations and the US respond when North Korean forces invaded South Korea in June 1950?",
+          "answer": "The UN Security Council authorized military intervention; General MacArthur landed at Inchon and pushed communist forces back toward the Chinese border."
+        },
+        {
+          "question": "According to paragraph [5.3], what decisive defeat did French colonial forces suffer in Vietnam in May 1954?",
+          "answer": "The Battle of Dien Bien Phu, forcing France to withdraw and dividing Vietnam along the 17th Parallel at the Geneva Conference."
+        },
+        {
+          "question": "Using paragraph [5.4], why did American military superiority fail to defeat the Vietcong in the Vietnam War?",
+          "answer": "The Vietcong used asymmetric guerrilla tactics, underground tunnels, and the Ho Chi Minh Trail, while US bombing and chemical weapons alienated the peasant population."
         }
       ]
     },
@@ -10110,6 +10200,24 @@ export default {
           "title": "The August Coup & The Dissolution of the Soviet Union (25 Dec 1991)",
           "dates": "1991"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [6.1], why did the East German government erect the Berlin Wall in August 1961?",
+          "answer": "To stop the catastrophic 'brain drain' of over 2.7 million skilled workers and professionals fleeing from communist East Berlin into West Berlin."
+        },
+        {
+          "question": "Using paragraph [6.3], what two radical reform policies were introduced by Soviet leader Mikhail Gorbachev in 1985?",
+          "answer": "Glasnost (openness and freedom of speech) and Perestroika (economic restructuring and private enterprise)."
+        },
+        {
+          "question": "According to paragraph [6.4], what historic event took place in Berlin on the night of 9 November 1989?",
+          "answer": "Thousands of East Berliners overwhelmed border checkpoints and tore down the Berlin Wall after government travel restrictions were mistakenly announced lifted."
+        },
+        {
+          "question": "Using paragraph [6.5], on what date was the hammer-and-sickle Soviet flag lowered for the last time over the Kremlin?",
+          "answer": "25 December 1991, marking the formal dissolution of the Soviet Union into fifteen independent republics."
+        }
       ]
     },
     {
@@ -11747,6 +11855,24 @@ export default {
           "title": "The Synoptic Verdict: An Era of Total War Without Direct Armageddon",
           "dates": "1945–1991"
         }
+      ],
+      "guided_reading": [
+        {
+          "question": "According to paragraph [7.1], why do historians challenge the traditional Western concept of the 'Long Peace' (1945–1991)?",
+          "answer": "While direct armed conflict between the superpowers was avoided in Europe, violent proxy wars inflicted devastating slaughter across the Global South."
+        },
+        {
+          "question": "Using paragraph [7.2], approximately how many people were killed in Cold War proxy conflicts across Asia, Africa, and Latin America?",
+          "answer": "Over 20 million people died in proxy wars, including in Korea, Vietnam, Angola, Afghanistan, and Central America."
+        },
+        {
+          "question": "According to paragraph [7.3], what covert methods were used by the CIA and KGB during the 'invisible' Cold War?",
+          "answer": "Espionage, wiretapping, assassinations, propaganda disinformation, and orchestrating foreign military coups (like Iran in 1953 and Chile in 1973)."
+        },
+        {
+          "question": "Using paragraph [7.4], how did the Space Race serve as an ideological battleground between the superpowers?",
+          "answer": "It was a test of technological and ideological superiority, from Sputnik in 1957 and Yuri Gagarin in 1961 to the American Apollo 11 Moon landing in 1969."
+        }
       ]
     }
   ],
@@ -11758,3 +11884,4 @@ export default {
   "year_group": "Years 10–11",
   "category": "GCSE"
 };
+if (typeof module !== "undefined") { module.exports = window.unitData; }
