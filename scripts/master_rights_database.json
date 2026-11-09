@@ -5109,7 +5109,9 @@
           "rights_status": "Educational Fair Dealing / CDPA 1988 (Museum Documentation)",
           "commercial_use_permitted": true,
           "source_url": "https://collection.sciencemuseumgroup.org.uk/objects/co8084950",
-          "asset_path": "/images/dna_structure.jpg"
+          "asset_path": "/images/dna_structure.jpg",
+          "caption": "Watson and Crick's original wire-and-sheet-metal demonstration model of the DNA double helix (1953), constructed at the Cavendish Laboratory, Cambridge, and preserved at the Science Museum, London.",
+          "hinge_question": "Why did Watson and Crick rely on physical mechanical modeling rather than direct chemical experimentation to deduce the structure of DNA?"
         },
         {
           "lesson_num": 16,

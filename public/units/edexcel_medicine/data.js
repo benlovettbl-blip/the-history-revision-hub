@@ -17341,27 +17341,6 @@ export default {
           "title": "Mendel, Heredity & The Chromosomal Mystery (c1900–1940s)",
           "theme_heading": "Mendel, Heredity & The Chromosomal Mystery (c1900–1940s)",
           "text": "<span class=\"para-ref\">[1.1]</span> By the opening decades of the twentieth century, Louis Pasteur and Robert Koch’s Germ Theory had conquered infectious medicine, explaining how external bacteria caused cholera, tuberculosis, and anthrax. Yet physicians were confronted by a profound biological mystery: why did fatal illnesses such as cystic fibrosis, sickle cell anemia, and hemophilia recur relentlessly across generations of the same family without any microbial infection? In 1900, European botanists rediscovered the forgotten 1866 hybridization experiments of Augustinian monk Gregor Mendel, which demonstrated that physical characteristics were transmitted from parents to offspring in precise mathematical ratios via invisible biological units termed \"genes.\"<br><br><span class=\"para-ref\">[1.2]</span> Medical researchers recognized that humanity possessed an internal biological blueprint; however, the physical nature of the gene remained an impenetrable enigma. Microscopic staining revealed thread-like chromosomes inside the cell nucleus, but biochemists were locked in debate over whether genetic blueprints were stored in complex chromosomal proteins or in a puzzling, overlooked nucleic acid called deoxyribonucleic acid (DNA). Without deciphering the molecular geometry of DNA, doctors could neither explain how genetic information replicated during cellular division nor comprehend how microscopic copying errors caused catastrophic hereditary mutations.",
-          "sources": [
-            {
-              "id": "source_a_watson_crick_model",
-              "letter": "A",
-              "type": "visual",
-              "title": "Source A: James Watson and Francis Crick with the Double Helix Model (1953)",
-              "image": "/images/dna_structure.jpg",
-              "image_url": "/images/dna_structure.jpg",
-              "caption": "Photograph of James Watson and Francis Crick at the Cavendish Laboratory, Cambridge (1953), demonstrating their mechanical wire-and-sheet-metal model of the DNA double helix.",
-              "citation": "A. Barrington Brown / Science Photo Library (Public Domain / Educational Use).",
-              "question_badge": "MOLECULAR REVOLUTION & STRUCTURAL MODELLING",
-              "question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
-              "model_answer": "Source A shows that Watson and Crick investigated DNA by building physical, three-dimensional wire-and-metal scale models. By combining Rosalind Franklin's X-ray data with chemical base-pairing rules, they physically pieced together how adenine, thymine, guanine, and cytosine formed a double helical spiral.",
-              "teacher_notes": {
-                "source_context": "Watson and Crick announced their discovery at the Eagle pub in Cambridge on 28 February 1953, declaring they had 'found the secret of life'. Their model explained both how genetic information is stored and how it replicates during cell division. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
-              },
-              "enquiry_question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
-              "hinge_question": "Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?",
-              "source_context": "Watson and Crick announced their discovery at the Eagle pub in Cambridge on 28 February 1953, declaring they had 'found the secret of life'. Their model explained both how genetic information is stored and how it replicates during cell division. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
-            }
-          ],
           "content": "<span class=\"para-ref\">[1.1]</span> By the opening decades of the twentieth century, Louis Pasteur and Robert Koch’s Germ Theory had conquered infectious medicine, explaining how external bacteria caused cholera, tuberculosis, and anthrax. Yet physicians were confronted by a profound biological mystery: why did fatal illnesses such as cystic fibrosis, sickle cell anemia, and hemophilia recur relentlessly across generations of the same family without any microbial infection? In 1900, European botanists rediscovered the forgotten 1866 hybridization experiments of Augustinian monk Gregor Mendel, which demonstrated that physical characteristics were transmitted from parents to offspring in precise mathematical ratios via invisible biological units termed \"genes.\"<br><br><span class=\"para-ref\">[1.2]</span> Medical researchers recognized that humanity possessed an internal biological blueprint; however, the physical nature of the gene remained an impenetrable enigma. Microscopic staining revealed thread-like chromosomes inside the cell nucleus, but biochemists were locked in debate over whether genetic blueprints were stored in complex chromosomal proteins or in a puzzling, overlooked nucleic acid called deoxyribonucleic acid (DNA). Without deciphering the molecular geometry of DNA, doctors could neither explain how genetic information replicated during cellular division nor comprehend how microscopic copying errors caused catastrophic hereditary mutations.",
           "theme": "Mendel, Heredity & The Chromosomal Mystery (c1900–1940s)"
         },
@@ -17374,34 +17353,6 @@ export default {
           "image_alt": "X-ray diffraction photograph of crystallized DNA fiber taken by Rosalind Franklin and Raymond Gosling in May 1952, known as Photograph 51",
           "caption": "Rosalind Franklin's Photograph 51 (1952): Taken at King's College London, this historic X-ray diffraction image revealed the distinctive cross-shaped reflection pattern that proved the double helical geometry of DNA.",
           "isReversed": false,
-          "sources": [
-            {
-              "id": "source_b_watson_crick_nature_1953",
-              "letter": "B",
-              "type": "written",
-              "title": "Source B: James Watson and Francis Crick, 'Molecular Structure of Nucleic Acids', 'Nature' (25 April 1953)",
-              "citation": "J. D. Watson and F. H. C. Crick, 'Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid', Nature, vol. 171, 1953, pp. 737–738.",
-              "content": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
-              "question_badge": "GENETIC REPLICATION & COMPLEMENTARY PAIRING",
-              "question": "Explain the importance of the discovery described in Source B for medical understanding of heredity.",
-              "model_answer": "Source B provided the exact chemical explanation for genetic inheritance. By establishing that adenine always pairs with thymine and guanine with cytosine, Watson and Crick revealed that each DNA strand serves as a template to duplicate identical genetic code during reproduction, explaining how hereditary traits and genetic defects pass from parents to children.",
-              "teacher_notes": {
-                "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?"
-              },
-              "text": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
-              "enquiry_question": "Explain the importance of the discovery described in Source B for medical understanding of heredity.",
-              "hinge_question": "Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
-              "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?"
-            }
-          ],
-          "content": "<span class=\"para-ref\">[2.1]</span> In January 1951, physical chemist Rosalind Franklin joined King’s College London, bringing world-class expertise in X-ray crystallography—a demanding technique whereby high-energy X-ray beams were diffracted through crystallized biological fibers onto photographic film. Working alongside PhD student Raymond Gosling in a damp, subterranean basement laboratory, Franklin perfected a micro-camera setup, exposing calf thymus DNA to 62 continuous hours of radiation under controlled humidity. In May 1952, Franklin captured \"Photograph 51\" (<span class=\"archival-meta-tag\">Source A</span>), a stark, razor-sharp diffraction image displaying an unmistakable dark X-shaped cross of reflections that mathematically proved DNA formed a double-stranded helical cylinder.<br><br><span class=\"para-ref\">[2.2]</span> Severe institutional discord paralyzed the King’s biophysics unit. Maurice Wilkins, a senior physicist who mistakenly regarded Franklin as his technical assistant rather than an independent investigator, clashed with her rigorous empirical standards. In January 1953, without Franklin’s knowledge or permission, Wilkins showed Photograph 51 to James Watson, an ambitious 24-year-old American biologist visiting from Cambridge. Watson later recorded that his jaw dropped and his pulse raced upon viewing the print: the distinct X-cross pattern immediately provided Watson and his Cambridge collaborator Francis Crick with the exact mathematical dimensions required to solve the molecule.",
-          "theme": "Rosalind Franklin & Photograph 51 (1951–1952)"
-        },
-        {
-          "act": 3,
-          "title": "Watson & Crick’s Double Helix Model (1953)",
-          "theme_heading": "Watson & Crick’s Double Helix Model (1953)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Armed with Franklin’s experimental measurements, Watson and Crick spent frantic weeks in their Cambridge Free School Lane laboratory assembling sheet-metal cutouts and brass wire rods on an upright stand. In March 1953, they completed a magnificent three-dimensional model (<span class=\"archival-meta-tag\">Source B</span>) revealing that DNA was a \"double helix\"—two antiparallel sugar-phosphate backbones intertwined around a central axis, linked by complementary nitrogenous base pairs: Adenine (A) bonded strictly to Thymine (T), and Cytosine (C) bonded strictly to Guanine (G).<br><br><span class=\"para-ref\">[3.2]</span> This base-pairing rule instantly solved the mechanism of biological reproduction: during cell division, the two strands unzip, and each acts as a template to synthesize an identical replica. Watson and Crick famously burst into The Eagle pub, proclaiming they had discovered \"the secret of life.\" In April 1953, they published their 900-word breakthrough paper in <em>Nature</em>, opening the modern era of molecular genetics.",
           "sources": [
             {
               "id": "source_c_rosalind_franklin_portrait",
@@ -17423,6 +17374,36 @@ export default {
               "source_context": "Franklin died of ovarian cancer in 1958 at the age of thirty-seven, four years before Watson, Crick, and Maurice Wilkins received the 1962 Nobel Prize (which is never awarded posthumously). **Hinge Question:** How does the history of Franklin's unacknowledged contribution reflect broader historical barriers faced by women in twentieth-century medical science?"
             }
           ],
+          "content": "<span class=\"para-ref\">[2.1]</span> In January 1951, physical chemist Rosalind Franklin joined King’s College London, bringing world-class expertise in X-ray crystallography—a demanding technique whereby high-energy X-ray beams were diffracted through crystallized biological fibers onto photographic film. Working alongside PhD student Raymond Gosling in a damp, subterranean basement laboratory, Franklin perfected a micro-camera setup, exposing calf thymus DNA to 62 continuous hours of radiation under controlled humidity. In May 1952, Franklin captured \"Photograph 51\" (<span class=\"archival-meta-tag\">Source A</span>), a stark, razor-sharp diffraction image displaying an unmistakable dark X-shaped cross of reflections that mathematically proved DNA formed a double-stranded helical cylinder.<br><br><span class=\"para-ref\">[2.2]</span> Severe institutional discord paralyzed the King’s biophysics unit. Maurice Wilkins, a senior physicist who mistakenly regarded Franklin as his technical assistant rather than an independent investigator, clashed with her rigorous empirical standards. In January 1953, without Franklin’s knowledge or permission, Wilkins showed Photograph 51 to James Watson, an ambitious 24-year-old American biologist visiting from Cambridge. Watson later recorded that his jaw dropped and his pulse raced upon viewing the print: the distinct X-cross pattern immediately provided Watson and his Cambridge collaborator Francis Crick with the exact mathematical dimensions required to solve the molecule.",
+          "theme": "Rosalind Franklin & Photograph 51 (1951–1952)"
+        },
+        {
+          "act": 3,
+          "title": "Watson & Crick’s Double Helix Model (1953)",
+          "theme_heading": "Watson & Crick’s Double Helix Model (1953)",
+          "text": "<span class=\"para-ref\">[3.1]</span> Armed with Franklin’s experimental measurements, Watson and Crick spent frantic weeks in their Cambridge Free School Lane laboratory assembling sheet-metal cutouts and brass wire rods on an upright stand. In March 1953, they completed a magnificent three-dimensional model (<span class=\"archival-meta-tag\">Source B</span>) revealing that DNA was a \"double helix\"—two antiparallel sugar-phosphate backbones intertwined around a central axis, linked by complementary nitrogenous base pairs: Adenine (A) bonded strictly to Thymine (T), and Cytosine (C) bonded strictly to Guanine (G).<br><br><span class=\"para-ref\">[3.2]</span> This base-pairing rule instantly solved the mechanism of biological reproduction: during cell division, the two strands unzip, and each acts as a template to synthesize an identical replica. Watson and Crick famously burst into The Eagle pub, proclaiming they had discovered \"the secret of life.\" In April 1953, they published their 900-word breakthrough paper in <em>Nature</em>, opening the modern era of molecular genetics.",
+          "sources": [
+            {
+              "id": "source_a_watson_crick_model",
+              "letter": "A",
+              "type": "artefact",
+              "format": "artefact",
+              "title": "Source A: Watson and Crick's 1953 Demonstration Model of the DNA Double Helix",
+              "image": "/images/dna_structure.jpg",
+              "image_url": "/images/dna_structure.jpg",
+              "caption": "Watson and Crick's original wire-and-sheet-metal demonstration model of the DNA double helix (1953), constructed at the Cavendish Laboratory, Cambridge, and preserved at the Science Museum, London.",
+              "citation": "Science Museum, London (Object 1977-310 / Wikimedia Commons Public Domain).",
+              "question_badge": "MOLECULAR REVOLUTION & STRUCTURAL MODELLING",
+              "question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
+              "model_answer": "Source A shows that Watson and Crick investigated DNA by constructing a physical, three-dimensional wire-and-sheet-metal scale model. Rather than relying solely on chemical experiments, they used physical modeling to puzzle out how complementary base pairs (adenine-thymine and cytosine-guanine) fit together along an antiparallel double helical spiral.",
+              "teacher_notes": {
+                "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
+              },
+              "enquiry_question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
+              "hinge_question": "Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?",
+              "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
+            }
+          ],
           "content": "<span class=\"para-ref\">[3.1]</span> Armed with Franklin’s experimental measurements, Watson and Crick spent frantic weeks in their Cambridge Free School Lane laboratory assembling sheet-metal cutouts and brass wire rods on an upright stand. In March 1953, they completed a magnificent three-dimensional model (<span class=\"archival-meta-tag\">Source B</span>) revealing that DNA was a \"double helix\"—two antiparallel sugar-phosphate backbones intertwined around a central axis, linked by complementary nitrogenous base pairs: Adenine (A) bonded strictly to Thymine (T), and Cytosine (C) bonded strictly to Guanine (G).<br><br><span class=\"para-ref\">[3.2]</span> This base-pairing rule instantly solved the mechanism of biological reproduction: during cell division, the two strands unzip, and each acts as a template to synthesize an identical replica. Watson and Crick famously burst into The Eagle pub, proclaiming they had discovered \"the secret of life.\" In April 1953, they published their 900-word breakthrough paper in <em>Nature</em>, opening the modern era of molecular genetics.",
           "theme": "Watson & Crick’s Double Helix Model (1953)"
         },
@@ -17435,34 +17416,6 @@ export default {
           "image_alt": "Automated capillary electrophoresis DNA sequencing machines in an international laboratory during the Human Genome Project",
           "caption": "The Human Genome Project (1990–2003): International scientific consortium involving eighteen countries that successfully sequenced all three billion chemical base pairs of human DNA, mapping every hereditary gene.",
           "isReversed": true,
-          "sources": [
-            {
-              "id": "source_d_franklin_notebook_1952",
-              "letter": "D",
-              "type": "written",
-              "title": "Source D: Dr Rosalind Franklin, Laboratory Research Report, King's College London (1952)",
-              "citation": "Rosalind Franklin, Medical Research Council Biophysics Committee Report, King's College London, December 1952.",
-              "content": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
-              "question_badge": "EMPIRICAL MEASUREMENT & CRYSTALLOGRAPHY",
-              "question": "Explain how Dr Franklin's measurements in Source D contributed to solving the structure of DNA.",
-              "model_answer": "Franklin's precise mathematical measurements proved that the phosphate sugar backbones lay on the outside of the molecule with the bases facing inward, and established that each helical turn measured exactly 34 Ångströms. This provided the indispensable physical dimensions without which Watson and Crick's theoretical models could not work.",
-              "teacher_notes": {
-                "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's data standard scientific collaboration or an ethical breach of intellectual property?"
-              },
-              "text": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
-              "enquiry_question": "Explain how Dr Franklin's measurements in Source D contributed to solving the structure of DNA.",
-              "hinge_question": "Was the sharing of Franklin's data standard scientific collaboration or an ethical breach of intellectual property?",
-              "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's data standard scientific collaboration or an ethical breach of intellectual property?"
-            }
-          ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Deciphering the structure of DNA was the catalyst for the greatest collaborative expedition in biomedical history: the Human Genome Project. Launched in 1990 as an international public consortium led by James Watson and Francis Collins and co-funded by the UK Wellcome Trust Sanger Institute, researchers across Britain, the United States, France, Germany, and Japan spent thirteen years decoding the genetic instruction manual.<br><br><span class=\"para-ref\">[4.2]</span> Completed in April 2003, the project successfully mapped all 3 billion chemical base pairs across humanity’s 20,000–25,000 genes, publishing the data free online. This monumental digital reference sequence allows geneticists to pinpoint specific faulty mutations responsible for over 4,000 inherited disorders, including the BRCA1 and BRCA2 genes that dramatically elevate hereditary breast and ovarian cancer risks.",
-          "theme": "The Human Genome Project (1990–2003)"
-        },
-        {
-          "act": 5,
-          "title": "Genetic Screening & The Treatment Gap (2000s–Present)",
-          "theme_heading": "Genetic Screening & The Treatment Gap (2000s–Present)",
-          "text": "<span class=\"para-ref\">[5.1]</span> The genetic revolution fundamentally transformed modern clinical practice from reactive symptom management into predictive, personalized medicine. Armed with genomic sequencing, contemporary doctors no longer rely on standardized treatments; instead, individuals carrying faulty hereditary mutations can undergo preventative blood screening, enabling life-saving prophylactic surgery such as double mastectomies decades before malignant tumors form. Furthermore, pharmacogenomics matches targeted drug therapies directly to a patient’s individual DNA profile.<br><br><span class=\"para-ref\">[5.2]</span> However, medical historians emphasize the persistent \"Diagnostic-Therapeutic Lag\": while sequencing a patient’s genome is now rapid and inexpensive, developing safe, effective gene therapies remains extraordinarily complex, costly, and ethically contested. Correcting mutated genes inside living human bodies via techniques like CRISPR-Cas9 has progressed slowly, proving that understanding the genetic cause of disease does not automatically translate into an immediate clinical cure.",
           "sources": [
             {
               "id": "source_e_human_genome_announcement_2000",
@@ -17483,6 +17436,14 @@ export default {
               "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?"
             }
           ],
+          "content": "<span class=\"para-ref\">[4.1]</span> Deciphering the structure of DNA was the catalyst for the greatest collaborative expedition in biomedical history: the Human Genome Project. Launched in 1990 as an international public consortium led by James Watson and Francis Collins and co-funded by the UK Wellcome Trust Sanger Institute, researchers across Britain, the United States, France, Germany, and Japan spent thirteen years decoding the genetic instruction manual.<br><br><span class=\"para-ref\">[4.2]</span> Completed in April 2003, the project successfully mapped all 3 billion chemical base pairs across humanity’s 20,000–25,000 genes, publishing the data free online. This monumental digital reference sequence allows geneticists to pinpoint specific faulty mutations responsible for over 4,000 inherited disorders, including the BRCA1 and BRCA2 genes that dramatically elevate hereditary breast and ovarian cancer risks.",
+          "theme": "The Human Genome Project (1990–2003)"
+        },
+        {
+          "act": 5,
+          "title": "Genetic Screening & The Treatment Gap (2000s–Present)",
+          "theme_heading": "Genetic Screening & The Treatment Gap (2000s–Present)",
+          "text": "<span class=\"para-ref\">[5.1]</span> The genetic revolution fundamentally transformed modern clinical practice from reactive symptom management into predictive, personalized medicine. Armed with genomic sequencing, contemporary doctors no longer rely on standardized treatments; instead, individuals carrying faulty hereditary mutations can undergo preventative blood screening, enabling life-saving prophylactic surgery such as double mastectomies decades before malignant tumors form. Furthermore, pharmacogenomics matches targeted drug therapies directly to a patient’s individual DNA profile.<br><br><span class=\"para-ref\">[5.2]</span> However, medical historians emphasize the persistent \"Diagnostic-Therapeutic Lag\": while sequencing a patient’s genome is now rapid and inexpensive, developing safe, effective gene therapies remains extraordinarily complex, costly, and ethically contested. Correcting mutated genes inside living human bodies via techniques like CRISPR-Cas9 has progressed slowly, proving that understanding the genetic cause of disease does not automatically translate into an immediate clinical cure.",
           "content": "<span class=\"para-ref\">[5.1]</span> The genetic revolution fundamentally transformed modern clinical practice from reactive symptom management into predictive, personalized medicine. Armed with genomic sequencing, contemporary doctors no longer rely on standardized treatments; instead, individuals carrying faulty hereditary mutations can undergo preventative blood screening, enabling life-saving prophylactic surgery such as double mastectomies decades before malignant tumors form. Furthermore, pharmacogenomics matches targeted drug therapies directly to a patient’s individual DNA profile.<br><br><span class=\"para-ref\">[5.2]</span> However, medical historians emphasize the persistent \"Diagnostic-Therapeutic Lag\": while sequencing a patient’s genome is now rapid and inexpensive, developing safe, effective gene therapies remains extraordinarily complex, costly, and ethically contested. Correcting mutated genes inside living human bodies via techniques like CRISPR-Cas9 has progressed slowly, proving that understanding the genetic cause of disease does not automatically translate into an immediate clinical cure.",
           "theme": "Genetic Screening & The Treatment Gap (2000s–Present)"
         }
@@ -17681,21 +17642,22 @@ export default {
         {
           "id": "source_a_watson_crick_model",
           "letter": "A",
-          "type": "visual",
-          "title": "Source A: James Watson and Francis Crick with the Double Helix Model (1953)",
+          "type": "artefact",
+          "title": "Source A: Watson and Crick's 1953 Demonstration Model of the DNA Double Helix",
           "image": "/images/dna_structure.jpg",
           "image_url": "/images/dna_structure.jpg",
-          "caption": "Photograph of James Watson and Francis Crick at the Cavendish Laboratory, Cambridge (1953), demonstrating their mechanical wire-and-sheet-metal model of the DNA double helix.",
-          "citation": "A. Barrington Brown / Science Photo Library (Public Domain / Educational Use).",
+          "caption": "Watson and Crick's original wire-and-sheet-metal demonstration model of the DNA double helix (1953), constructed at the Cavendish Laboratory, Cambridge, and preserved at the Science Museum, London.",
+          "citation": "Science Museum, London (Object 1977-310 / Wikimedia Commons Public Domain).",
           "question_badge": "MOLECULAR REVOLUTION & STRUCTURAL MODELLING",
           "question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
-          "model_answer": "Source A shows that Watson and Crick investigated DNA by building physical, three-dimensional wire-and-metal scale models. By combining Rosalind Franklin's X-ray data with chemical base-pairing rules, they physically pieced together how adenine, thymine, guanine, and cytosine formed a double helical spiral.",
+          "model_answer": "Source A shows that Watson and Crick investigated DNA by constructing a physical, three-dimensional wire-and-sheet-metal scale model. Rather than relying solely on chemical experiments, they used physical modeling to puzzle out how complementary base pairs (adenine-thymine and cytosine-guanine) fit together along an antiparallel double helical spiral.",
           "teacher_notes": {
-            "source_context": "Watson and Crick announced their discovery at the Eagle pub in Cambridge on 28 February 1953, declaring they had 'found the secret of life'. Their model explained both how genetic information is stored and how it replicates during cell division. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
+            "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
           },
           "enquiry_question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
           "hinge_question": "Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?",
-          "source_context": "Watson and Crick announced their discovery at the Eagle pub in Cambridge on 28 February 1953, declaring they had 'found the secret of life'. Their model explained both how genetic information is stored and how it replicates during cell division. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
+          "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?",
+          "format": "artefact"
         },
         {
           "id": "source_b_watson_crick_nature_1953",

@@ -2547,8 +2547,16 @@
         }
 
         const rawSources = block.sources || (block.source ? [block.source] : []);
-        if (rawSources.length === 0 && Array.isArray(lesson.sources) && lesson.sources[stepNum - 1]) {
-          rawSources.push(lesson.sources[stepNum - 1]);
+        if (rawSources.length === 0 && Array.isArray(lesson.sources)) {
+          const bTitle = (block.title || block.theme_heading || '').toLowerCase();
+          const matched = lesson.sources.find(s => {
+            const sTitle = (s.title || s.caption || '').toLowerCase();
+            return (bTitle.includes('watson') && sTitle.includes('watson')) ||
+                   (bTitle.includes('mendel') && sTitle.includes('mendel')) ||
+                   (bTitle.includes('franklin') && sTitle.includes('franklin')) ||
+                   (bTitle.includes('genome') && sTitle.includes('genome'));
+          });
+          if (matched) rawSources.push(matched);
         }
 
         const visualSrc = rawSources.find(s => s.url || s.image || s.src);
@@ -2814,6 +2822,7 @@
         if (lower.includes('portrait')) { sourceIcon = 'fa-user-tie'; badgeLabel = 'Contemporary Oil Portrait'; }
         else if (lower.includes('painting') || lower.includes('oil')) { sourceIcon = 'fa-palette'; badgeLabel = 'Contemporary Painting'; }
         else if (lower.includes('map') || lower.includes('chart')) { sourceIcon = 'fa-map-location-dot'; badgeLabel = 'Archival Map / Chart'; }
+        else if (lower.includes('model') || lower.includes('artefact') || lower.includes('artifact') || lower.includes('apparatus') || lower.includes('specimen')) { sourceIcon = 'fa-cube'; badgeLabel = 'Museum Artefact / Model'; }
         else if (lower.includes('photo')) { sourceIcon = 'fa-camera'; badgeLabel = 'Archival Photograph'; }
         else if (lower.includes('engraving') || lower.includes('sketch') || lower.includes('drawing')) { sourceIcon = 'fa-pen-ruler'; badgeLabel = 'Contemporary Engraving'; }
       }
@@ -2919,6 +2928,7 @@
       if (combined.includes('botanical') || combined.includes('acacia') || combined.includes('plant')) return 'Botanical Illustration';
       if (combined.includes('sketch') || combined.includes('drawing')) return 'Eyewitness Sketch';
       if (combined.includes('map') || combined.includes('chart') || combined.includes('ocean')) return 'Archival Navigation Chart';
+      if (combined.includes('model') || combined.includes('artefact') || combined.includes('artifact') || combined.includes('apparatus') || combined.includes('specimen')) return 'Museum Artefact / Model';
       if (combined.includes('photo') || combined.includes('photograph')) return 'Archival Photograph';
       if (combined.includes('engraving') || combined.includes('woodcut') || combined.includes('print')) return 'Contemporary Engraving';
       if (combined.includes('written') || combined.includes('document') || combined.includes('orders') || combined.includes('proclamation')) return 'Archival Primary Document';

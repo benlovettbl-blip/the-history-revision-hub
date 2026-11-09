@@ -433,11 +433,11 @@ async function run() {
         letter: 'B',
         blockIndex: 3, // Block 4: The Discovery of DNA and Genetics
         image: '/images/dna_structure.jpg',
-        title: 'Watson and Crick with the Wire DNA Model (1953)',
+        title: "Watson and Crick's 1953 Demonstration Model of the DNA Double Helix",
         provenance:
-          'Photograph by Antony Barrington Brown, Cavendish Laboratory, University of Cambridge, May 1953.',
+          "Original wire-and-sheet-metal demonstration model constructed at the Cavendish Laboratory, Cambridge (1953); preserved at the Science Museum, London (Object 1977-310).",
         caption:
-          'James Watson and Francis Crick admiring their full-scale molecular wire model of the DNA double helix at the Cavendish Laboratory.',
+          "Watson and Crick's original wire-and-sheet-metal demonstration model of the DNA double helix (1953), constructed at the Cavendish Laboratory, Cambridge, and preserved at the Science Museum, London.",
         context:
           'Building on the X-ray data of Rosalind Franklin, James Watson and Francis Crick constructed a three-dimensional metal model demonstrating that DNA consists of two intertwined sugar-phosphate strands held together by complementary base pairs (adenine with thymine, cytosine with guanine). Understanding how genetic code was copied led directly to modern medical genetics, gene therapy, and the international Human Genome Project (1990–2003), which sequenced all 3 billion chemical base pairs in human DNA.',
         hingeQuestion:
