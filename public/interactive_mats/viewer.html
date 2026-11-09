@@ -1243,9 +1243,10 @@
     /* PART 3: RIGHT-PAGE WRITING STUDIO & CLUE LADDER */
     .studio-grid {
       display: grid;
-      grid-template-columns: 1fr 1.05fr;
-      gap: 12px;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 16px;
       align-items: stretch;
+      min-height: calc(100vh - 180px);
     }
 
     @media (max-width: 900px) {
@@ -1258,12 +1259,12 @@
       background: var(--bg-card);
       border: 1.5px solid #1e3a8a;
       border-radius: 8px;
-      padding: 12px 14px;
+      padding: clamp(14px, 1.4vw, 20px);
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-      min-height: 560px;
+      box-sizing: border-box;
     }
 
     .ladder-step {
@@ -1777,14 +1778,14 @@
         </span>
       </div>
 
-      <!-- Left Column: The 3-Tier Clue Ladder -->
-      <section class="clue-ladder-card">
+      <!-- Left Column: The 3-Tier Clue Ladder & Vocabulary Palette -->
+      <section class="clue-ladder-card" style="display: flex; flex-direction: column; gap: 12px; overflow-y: auto;">
         <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
           <span class="ks3-badge"><i class="fa-solid fa-stairs"></i> Writing Clue Ladder</span>
           <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; color: #ffffff; margin-top: 4px;" id="writing-studio-title">
             Clues for Your Right-Hand Workbook Page Write-Up
           </h2>
-          <p style="font-size: 0.78rem; color: #94a3b8;" id="writing-studio-tariff">
+          <p style="font-size: 0.78rem; color: #94a3b8; margin: 0;" id="writing-studio-tariff">
             Select a tier to guide your paragraph without simply copying a model answer:
           </p>
         </div>
@@ -1803,10 +1804,10 @@
         <!-- Tier 2: Silver Evidence Checklist -->
         <div class="ladder-step active" id="step-silver">
           <div class="ladder-badge badge-silver"><i class="fa-solid fa-list-check"></i> Tier 2: Silver Evidence Checklist</div>
-          <p style="font-size: 0.8rem; color: #e2e8f0;">
+          <p style="font-size: 0.8rem; color: #e2e8f0; margin-bottom: 4px;">
             Did your paragraph include these core historical facts from the left page?
           </p>
-          <ul style="font-size: 0.76rem; color: #94a3b8; padding-left: 18px; line-height: 1.5;" id="silver-checklist">
+          <ul style="font-size: 0.76rem; color: #94a3b8; padding-left: 18px; line-height: 1.5; margin: 0;" id="silver-checklist">
             <!-- Populated dynamically -->
           </ul>
         </div>
@@ -1822,123 +1823,108 @@
           </div>
         </div>
 
-        <!-- Interactive Ruled Pupil Write-Up Pad -->
-        <div class="pupil-writeup-card" id="pupil-writeup-card">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-            <span style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px;">
-              <i class="fa-solid fa-pen-fancy"></i> Pupil Write-Up Pad <span id="writeup-line-spacing-badge" style="font-size: 0.65rem; color: #94a3b8; font-weight: normal; margin-left: 6px;">(Primary 11mm Wide Ruled Lines)</span>
+        <!-- Disciplinary Word Palette -->
+        <div style="border-top: 1px dashed var(--border-subtle); padding-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="ks3-badge" style="background: rgba(14, 165, 233, 0.2); color: #38bdf8; border-color: rgba(56, 189, 248, 0.4);">
+              <i class="fa-solid fa-spell-check"></i> Vocabulary Bank
             </span>
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span id="writeup-word-count" style="font-size: 0.72rem; color: #94a3b8; font-weight: 600;">Words: 0</span>
-              <button type="button" class="palette-chip" style="font-size: 0.65rem; padding: 2px 6px;" onclick="clearWriteupDraft()"><i class="fa-solid fa-eraser"></i> Clear</button>
+            <span style="font-size: 0.72rem; color: #94a3b8;">Historian Vocabulary Palette</span>
+          </div>
+
+          <div>
+            <div style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; margin-bottom: 4px;">
+              1. Causal Connectives (Linking Events):
+            </div>
+            <div class="word-palette-chips" id="palette-chips-connectives">
+              <!-- Populated dynamically -->
             </div>
           </div>
 
-          <!-- Trigger Word Tracker Pills -->
-          <div id="writeup-tracker-pills" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px;">
-            <!-- Populated dynamically: [✓] Word 1, [✓] Word 2, [✓] Word 3 -->
+          <div>
+            <div style="font-size: 0.72rem; font-weight: 800; color: #fbbf24; text-transform: uppercase; margin-bottom: 4px;">
+              2. Disciplinary Concepts &amp; Vocabulary:
+            </div>
+            <div class="word-palette-chips" id="palette-chips-concepts">
+              <!-- Populated dynamically -->
+            </div>
           </div>
 
-          <!-- Ruled Area -->
-          <textarea id="pupil-writeup-textarea" class="ruled-writing-area ks2-ruled" placeholder="Start your paragraph here using your Bronze starter and Silver facts..."></textarea>
-        </div>
+          <div>
+            <div style="font-size: 0.72rem; font-weight: 800; color: #34d399; text-transform: uppercase; margin-bottom: 4px;">
+              3. Historical Evaluation Adjectives:
+            </div>
+            <div class="word-palette-chips" id="palette-chips-adjectives">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
 
-        <!-- Reveal Model Trigger Bar -->
-        <div style="margin-top: auto; padding-top: 10px; border-top: 1px dashed var(--border-subtle); display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-          <span style="font-size: 0.74rem; color: #94a3b8; font-style: italic;">
-            <i class="fa-solid fa-lightbulb" style="color: #fbbf24; margin-right: 4px;"></i> Compare your draft against a finished write-up:
-          </span>
-          <button type="button" class="palette-chip" id="btn-reveal-left" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.4); color: #4ade80; font-size: 0.74rem; font-weight: 700; padding: 6px 14px; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px;" onclick="toggleModelEssay()">
-            <i class="fa-solid fa-eye" id="reveal-icon-left"></i> <span id="reveal-text-left">Reveal Model on Right &rarr;</span>
-          </button>
+          <!-- Immediate Definition Help Box -->
+          <div id="word-help-box" style="margin-top: 4px; padding: 8px 10px; background: #0f172a; border-radius: 6px; border: 1px solid #1e293b; font-size: 0.76rem; color: #94a3b8; min-height: 44px; display: flex; flex-direction: column; justify-content: center;">
+            <div><strong style="color: #ffffff;">Tip:</strong> Click any word above to view its meaning and a model sentence!</div>
+          </div>
         </div>
       </section>
 
-      <!-- Right Column: Disciplinary Word Palette -->
-      <section class="clue-ladder-card">
-        <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
-          <span class="ks3-badge" style="background: rgba(14, 165, 233, 0.2); color: #38bdf8; border-color: rgba(56, 189, 248, 0.4);">
-            <i class="fa-solid fa-spell-check"></i> Vocabulary Bank
-          </span>
-          <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; color: #ffffff; margin-top: 4px;">
-            Historian Vocabulary Palette
-          </h2>
-          <p style="font-size: 0.78rem; color: #94a3b8;">
-            Upgrade your right-page write-up by weaving in these high-level analytical terms:
-          </p>
-        </div>
-
-        <div>
-          <div style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; margin-bottom: 4px;">
-            1. Causal Connectives (Linking Events):
-          </div>
-          <div class="word-palette-chips" id="palette-chips-connectives">
-            <!-- Populated dynamically -->
-          </div>
-        </div>
-
-        <div>
-          <div style="font-size: 0.72rem; font-weight: 800; color: #fbbf24; text-transform: uppercase; margin-bottom: 4px;">
-            2. Disciplinary Concepts &amp; Vocabulary:
-          </div>
-          <div class="word-palette-chips" id="palette-chips-concepts">
-            <!-- Populated dynamically -->
-          </div>
-        </div>
-
-        <div>
-          <div style="font-size: 0.72rem; font-weight: 800; color: #34d399; text-transform: uppercase; margin-bottom: 4px;">
-            3. Historical Evaluation Adjectives:
-          </div>
-          <div class="word-palette-chips" id="palette-chips-adjectives">
-            <!-- Populated dynamically -->
-          </div>
-        </div>
-
-        <!-- Immediate Definition Help Box -->
-        <div id="word-help-box" style="margin-top: 8px; padding: 8px 10px; background: #0f172a; border-radius: 6px; border: 1px solid #1e293b; font-size: 0.76rem; color: #94a3b8; min-height: 44px; display: flex; flex-direction: column; justify-content: center;">
-          <div><strong style="color: #ffffff;">Tip:</strong> Click any word above to view its meaning and a model sentence!</div>
-        </div>
-
-        <!-- Exemplar Model Section (Anchored on the Right) -->
-        <div class="exemplar-model-container" style="margin-top: auto; padding-top: 10px; border-top: 1px dashed var(--border-subtle); display: flex; flex-direction: column; gap: 8px;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <span style="font-size: 0.72rem; font-weight: 800; color: #4ade80; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-file-signature"></i> Exemplar Model Paragraph
+      <!-- Right Column: Grand Exemplar Model Answer Studio -->
+      <section class="clue-ladder-card exemplar-studio-card" style="display: flex; flex-direction: column; gap: 12px; height: 100%;">
+        <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
+          <div>
+            <span class="ks3-badge" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border-color: rgba(34, 197, 94, 0.45);">
+              <i class="fa-solid fa-file-signature"></i> Exemplar Model Studio
             </span>
-            <button type="button" class="palette-chip" id="btn-reveal-right" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.4); color: #4ade80; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; display: inline-flex; align-items: center; gap: 5px;" onclick="toggleModelEssay()">
-              <i class="fa-solid fa-eye" id="reveal-icon-right"></i> <span id="reveal-text-right">Reveal Model</span>
-            </button>
+            <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.15rem, 1.5vw, 1.4rem); color: #ffffff; margin-top: 4px; font-weight: 700;">
+              Exemplar Evaluative Model Answer (WAGOLL)
+            </h2>
+            <p style="font-size: 0.78rem; color: #94a3b8; margin: 0;">
+              High-impact model response demonstrating disciplinary writing and sustained historical judgement.
+            </p>
           </div>
+          <button type="button" class="palette-chip" id="btn-reveal-right" style="background: rgba(34, 197, 94, 0.2); border-color: rgba(34, 197, 94, 0.5); color: #4ade80; font-size: 0.8rem; font-weight: 800; padding: 7px 16px; display: inline-flex; align-items: center; gap: 7px; border-radius: 6px; box-shadow: 0 0 12px rgba(34, 197, 94, 0.25);" onclick="toggleModelEssay()">
+            <i class="fa-solid fa-eye" id="reveal-icon-right"></i> <span id="reveal-text-right">Reveal Model</span>
+          </button>
+        </div>
 
-          <div id="model-essay-placeholder" style="padding: 14px; background: rgba(15, 23, 42, 0.6); border: 1px dashed rgba(255, 255, 255, 0.12); border-radius: 6px; font-size: 0.76rem; color: #64748b; text-align: center; font-style: italic;">
-            <i class="fa-solid fa-lock" style="margin-right: 6px; color: #475569;"></i> Ready to inspect a finished write-up? Click "Reveal Model" to see Bronze, Silver &amp; Gold woven together.
+        <!-- Scaffolding Layer Bar (Visible on the right) -->
+        <div class="model-essay-layer-bar" style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center; padding: 6px 10px; background: #070d19; border: 1px solid #1e293b; border-radius: 6px;">
+          <span style="font-size: 0.68rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px;">
+            <i class="fa-solid fa-layer-group"></i> Scaffolding Layers:
+          </span>
+          <button type="button" class="layer-pill active" id="pill-layer-all" onclick="filterModelLayers('all')">
+            <i class="fa-solid fa-check-double"></i> All Layers
+          </button>
+          <button type="button" class="layer-pill layer-bronze" id="pill-layer-bronze" onclick="filterModelLayers('bronze')">
+            <span class="layer-dot" style="background: #f97316;"></span> Bronze Starter
+          </button>
+          <button type="button" class="layer-pill layer-silver" id="pill-layer-silver" onclick="filterModelLayers('silver')">
+            <span class="layer-dot" style="background: #cbd5e1;"></span> Silver Facts
+          </button>
+          <button type="button" class="layer-pill layer-gold" id="pill-layer-gold" onclick="filterModelLayers('gold')">
+            <span class="layer-dot" style="background: #eab308;"></span> Gold Vocabulary
+          </button>
+          <button type="button" class="layer-pill layer-plain" id="pill-layer-plain" onclick="filterModelLayers('plain')">
+            <i class="fa-solid fa-font"></i> Plain Prose
+          </button>
+        </div>
+
+        <!-- Model Placeholder when hidden -->
+        <div id="model-essay-placeholder" style="flex: 1; min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 32px; background: rgba(11, 19, 38, 0.6); border: 2px dashed rgba(255, 255, 255, 0.12); border-radius: 10px; text-align: center; gap: 12px;">
+          <i class="fa-solid fa-lock" style="font-size: 2.2rem; color: #475569;"></i>
+          <div style="font-size: 0.95rem; color: #cbd5e1; font-weight: 600;">
+            Pupils: Draft your answer in your printed pupil workbook first!
           </div>
+          <p style="font-size: 0.8rem; color: #64748b; max-width: 440px; margin: 0; line-height: 1.5;">
+            Use your <strong>Bronze starter</strong>, <strong>Silver facts</strong>, and <strong>Historian Vocabulary</strong>. Click "Reveal Model" to project the complete Grade 9 WAGOLL breakdown for class discussion and D.I.R.T. self-assessment.
+          </p>
+          <button type="button" class="palette-chip" style="background: rgba(34, 197, 94, 0.2); border-color: rgba(34, 197, 94, 0.5); color: #4ade80; font-size: 0.78rem; font-weight: 700; padding: 6px 14px; margin-top: 8px;" onclick="toggleModelEssay()">
+            <i class="fa-solid fa-eye"></i> Reveal Exemplar Model
+          </button>
+        </div>
 
-          <div id="model-essay-box" class="layer-filter-all" style="display: none; padding: 14px 16px; background: #070e1b; border: 1.5px solid rgba(34, 197, 94, 0.4); border-radius: 6px; font-size: 0.88rem; line-height: 1.65; color: #f1f5f9; max-height: 260px; overflow-y: auto; box-shadow: 0 4px 14px rgba(0,0,0,0.4);">
-            <div class="model-essay-layer-bar" style="margin-bottom: 10px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
-              <span style="font-size: 0.68rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px;">
-                <i class="fa-solid fa-layer-group"></i> Scaffolding Layers:
-              </span>
-              <button type="button" class="layer-pill active" id="pill-layer-all" onclick="filterModelLayers('all')">
-                <i class="fa-solid fa-check-double"></i> All Layers
-              </button>
-              <button type="button" class="layer-pill layer-bronze" id="pill-layer-bronze" onclick="filterModelLayers('bronze')">
-                <span class="layer-dot" style="background: #f97316;"></span> Bronze Starter
-              </button>
-              <button type="button" class="layer-pill layer-silver" id="pill-layer-silver" onclick="filterModelLayers('silver')">
-                <span class="layer-dot" style="background: #cbd5e1;"></span> Silver Facts
-              </button>
-              <button type="button" class="layer-pill layer-gold" id="pill-layer-gold" onclick="filterModelLayers('gold')">
-                <span class="layer-dot" style="background: #eab308;"></span> Gold Vocabulary
-              </button>
-              <button type="button" class="layer-pill layer-plain" id="pill-layer-plain" onclick="filterModelLayers('plain')">
-                <i class="fa-solid fa-font"></i> Plain Prose
-              </button>
-            </div>
-            <div id="model-essay-content" style="line-height: 1.7; font-size: 0.88rem;">
-              <!-- Populated dynamically with Bronze, Silver, Gold color spans -->
-            </div>
+        <!-- Model Essay Box when revealed -->
+        <div id="model-essay-box" class="layer-filter-all" style="display: none; flex: 1; flex-direction: column; padding: clamp(18px, 2.2vw, 32px); background: linear-gradient(160deg, #091222 0%, #040812 100%); border: 2px solid rgba(34, 197, 94, 0.55); border-radius: 12px; box-shadow: 0 12px 35px rgba(0,0,0,0.65); overflow-y: auto; min-height: 440px;">
+          <div id="model-essay-content" style="font-family: 'Lora', Georgia, serif; font-size: clamp(1.08rem, 1.4vw, 1.28rem); line-height: 1.85; color: #ffffff; letter-spacing: 0.2px;">
+            <!-- Populated dynamically with Bronze, Silver, Gold color spans -->
           </div>
         </div>
       </section>
@@ -4670,7 +4656,7 @@ function cleanCausalTopic(task, lesson) {
       const iconR = document.getElementById('reveal-icon-right');
 
       if (modelRevealed) {
-        box.style.display = 'block';
+        box.style.display = 'flex';
         ph.style.display = 'none';
         if (textL) textL.textContent = 'Hide Model Paragraph';
         if (textR) textR.textContent = 'Hide Model';
