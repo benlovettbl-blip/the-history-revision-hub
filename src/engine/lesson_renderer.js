@@ -10508,24 +10508,25 @@ export function renderLesson(lesson) {
             ? 'tier_8m'
             : tiers.tier_4m
             ? 'tier_4m'
-            : tierKeys[0];
+            : tiers.tier_2m
+            ? 'tier_2m'
+            : tierKeys[tierKeys.length - 1];
 
           const tabButtonsHtml = tierKeys
-            .map((key) => {
+            .map((key, idx) => {
               const t = tiers[key];
               const isActive = key === defaultKey;
+              const isTop = (key === defaultKey);
+              const isMiddle = (!isTop && idx > 0 && idx < tierKeys.length - 1);
               const btnBg = isActive ? '#0f172a' : '#ffffff';
               const btnColor = isActive ? '#ffffff' : '#334155';
               const btnBorder = isActive ? '#0f172a' : '#cbd5e1';
               const btnWeight = isActive ? '700' : '600';
-              const badgeIcon =
-                key === 'tier_4m' || key === 'tier_8m' || key === 'tier_12m' || key === 'tier_16m'
-                  ? 'fa-star'
-                  : key === 'tier_5m' || key === 'tier_6m' || key === 'tier_9m'
-                  ? 'fa-list-check'
-                  : key === 'tier_2m' || key === 'tier_3m'
-                  ? 'fa-pen-to-square'
-                  : 'fa-lightbulb';
+              const badgeIcon = isTop
+                ? 'fa-star'
+                : isMiddle
+                ? 'fa-list-check'
+                : 'fa-pen-to-square';
               return `
               <button type="button" class="btn model-tier-tab-btn ${isActive ? 'active' : ''}" data-action="switch-model-tier" data-target-tier="tier-${key}-${qIdx}" style="padding: 6px 12px; font-size: 0.8rem; font-weight: ${btnWeight}; border-radius: 6px; border: 1.5px solid ${btnBorder}; background: ${btnBg}; color: ${btnColor}; cursor: pointer; transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid ${badgeIcon}"></i> ${t.title || key}
@@ -10535,51 +10536,34 @@ export function renderLesson(lesson) {
             .join('');
 
           const panesHtml = tierKeys
-            .map((key) => {
+            .map((key, idx) => {
               const t = tiers[key];
               const isActive = key === defaultKey;
+              const isTop = (key === defaultKey);
+              const isMiddle = (!isTop && idx > 0);
               const wordCount = (t.text || '').trim().split(/\s+/).filter(Boolean).length;
 
-              let themeBorder = '#cbd5e1';
-              let themeBadgeBg = '#e2e8f0';
-              let themeBadgeColor = '#334155';
-              let verdictBorder = '#94a3b8';
-              let verdictBg = '#f1f5f9';
-              let verdictColor = '#1e293b';
+              let themeBorder = '#fed7aa';
+              let themeBadgeBg = '#ffedd5';
+              let themeBadgeColor = '#c2410c';
+              let verdictBorder = '#f97316';
+              let verdictBg = '#fffaf5';
+              let verdictColor = '#9a3412';
 
-              if (key === 'tier_1m') {
-                themeBorder = '#fed7aa';
-                themeBadgeBg = '#ffedd5';
-                themeBadgeColor = '#c2410c';
-                verdictBorder = '#f97316';
-                verdictBg = '#fffaf5';
-                verdictColor = '#9a3412';
-              } else if (key === 'tier_2m' || key === 'tier_3m') {
-                themeBorder = '#fef08a';
-                themeBadgeBg = '#fef9c3';
-                themeBadgeColor = '#854d0e';
-                verdictBorder = '#eab308';
-                verdictBg = '#fefce8';
-                verdictColor = '#713f12';
-              } else if (key === 'tier_5m' || key === 'tier_6m' || key === 'tier_9m') {
-                themeBorder = '#bae6fd';
-                themeBadgeBg = '#e0f2fe';
-                themeBadgeColor = '#0369a1';
-                verdictBorder = '#0284c7';
-                verdictBg = '#f0f9ff';
-                verdictColor = '#075985';
-              } else if (
-                key === 'tier_4m' ||
-                key === 'tier_8m' ||
-                key === 'tier_12m' ||
-                key === 'tier_16m'
-              ) {
+              if (isTop) {
                 themeBorder = '#bbf7d0';
                 themeBadgeBg = '#dcfce7';
                 themeBadgeColor = '#15803d';
                 verdictBorder = '#10b981';
                 verdictBg = '#f0fdf4';
                 verdictColor = '#065f46';
+              } else if (isMiddle) {
+                themeBorder = '#bae6fd';
+                themeBadgeBg = '#e0f2fe';
+                themeBadgeColor = '#0369a1';
+                verdictBorder = '#0284c7';
+                verdictBg = '#f0f9ff';
+                verdictColor = '#075985';
               }
 
               return `
