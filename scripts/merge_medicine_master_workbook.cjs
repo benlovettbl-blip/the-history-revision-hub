@@ -44,11 +44,13 @@ async function mergeMedicineMasterWorkbook() {
 
   const outputFileName = 'edexcel_medicine_pupil_workbook_master_FINAL_V17.pdf';
   const outputPath = path.join(pdfsDir, outputFileName);
+  const standardMasterPath = path.join(pdfsDir, 'edexcel_medicine_pupil_workbook_master.pdf');
   const mergedPdfBytes = await mergedPdf.save();
   fs.writeFileSync(outputPath, mergedPdfBytes);
+  fs.writeFileSync(standardMasterPath, mergedPdfBytes);
 
   const stats = fs.statSync(outputPath);
-  console.log(`🎉 Successfully created Master Workbook PDF: ${outputFileName}`);
+  console.log(`🎉 Successfully created Master Workbook PDF: ${outputFileName} & edexcel_medicine_pupil_workbook_master.pdf`);
   console.log(
     `   Total Pages: ${totalPages} | File Size: ${(stats.size / 1024 / 1024).toFixed(2)} MB`,
   );
