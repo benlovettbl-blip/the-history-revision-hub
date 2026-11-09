@@ -1,16 +1,24 @@
 # Department Rollout Staged State & Recommendations
 
-## Last Completed Session (Desktop):
-- **Guided Reading & Literacy Engine:** Interactive speech-to-text highlighting, audio companion, and KS3 5-stage narrative block structure validated against DfE/Ofsted secondary reading standards.
-- **Sanitization Audit:** 100% Clean pass across 6,496 files (0 school/teacher identifiers).
-- **Universal Synchronization:** Data files, unit manifests, and workbook-to-app alignments reconciled.
+## Last Completed Session:
+- **Curricular Readability & Accessibility Calibration:**
+  - **Edexcel Medicine (25 lessons):** 100% calibrated to accessible Year 11 prose, post-16 biochemistry jargon eliminated, Guided Reading populated.
+  - **Weimar & Nazi Germany (16 lessons):** 58 dangling text tails and duplicate sentences stripped, prose calibrated to 131w avg, 64 Guided Reading questions added.
+  - **The USA 1954–75 (16 lessons):** Narrative bloat eliminated (Lesson 1.1 Block 5 trimmed from 350w to 126w, Lesson 2.4 Block 5 trimmed from 277w to 123w), prose calibrated to 124w avg, 64 Guided Reading questions added.
+- **Universal Curricular Lexile Standard Codified in `.agents/AGENTS.md`:**
+  - KS2: 50–80 words per block.
+  - KS3: 80–110 words per block (strict cap: 120w, exactly 2 paragraphs `[X.1]` and `[X.2]`, 3 trigger terms embedded).
+  - GCSE: 110–140 words per block (strict cap: 150w, exactly 2 paragraphs `[X.1]` and `[X.2]`, zero university jargon).
+- **Sanitization Audit:** 100% Clean pass across 6,866 files.
 
 ## Current Active Status:
-- **GCSE Edexcel Medicine:** 100% Complete (130 stages across KT1–KT5, 5x 24p workbooks).
-- **GCSE Middle East:** 100% Complete (60 stages across 12 lessons).
+- **GCSE Edexcel Medicine:** 100% Complete & Calibrated (25 lessons, 125 stages).
+- **GCSE Weimar & Nazi Germany:** 100% Complete & Calibrated (16 lessons, 80 stages, 64 Guided Reading Qs).
+- **GCSE The USA 1954–75:** 100% Complete & Calibrated (16 lessons, 80 stages, 64 Guided Reading Qs).
+- **GCSE Early Elizabethan England (12 lessons):** Gold standard length (111w avg), Guided Reading pending.
+- **GCSE / Paper 2 Cold War (7 lessons):** Prose intact (160w avg), Guided Reading pending.
 - **KS3 Perfected:** Year 9 Great War Part 2, Year 8 Industrialisation, Year 8 Australia, Year 8 Second British Empire, Year 8 First British Empire, Year 8 Monarchy Religion Power, Year 7 Medieval England.
-- **Year 9 Postponed Units (Half Term):** The Cold War (`cold_war`), The Shoah (`the_shoah`), and Post-War Britain (`post_war_britain`) paused for half-term build.
 
-## Staged Recommendations for Next Unit Chronology Spine:
-- **Option A (Recommended - GCSE Paper 3):** *Weimar and Nazi Germany (1918–1939)* (`weimar_nazi_germany`, 16 lessons across KT1–KT4, 80 stages from `scripts/components/weimar_enquiry_configs.cjs`).
-- **Option B (GCSE Paper 2):** *Early Elizabethan England (1558–1588)* (`eee`, 12 lessons across KT1–KT3, 60 stages from `scripts/components/eee_enquiry_configs.cjs`).
+## Recommended Next Steps:
+- **Option A:** Populate 4 Guided Reading questions per lesson for *Early Elizabethan England* (12 lessons, 48 Qs).
+- **Option B:** Populate 4 Guided Reading questions per lesson for *Superpower Relations & The Cold War* (7 lessons, 28 Qs).
