@@ -1,10 +1,3 @@
-/**
- * src/engine/mock_exam_bank_data.js
- *
- * Indexed official GCSE Mock Examination Questions mapped strictly to
- * their culminating syllabus lessons (ensuring pupils have been taught all prerequisite knowledge).
- */
-
 export const UNIT_LESSON_MOCK_QUESTIONS = {
   "usa": {
     "lesson_1_1": [
@@ -39,9 +32,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Ku Klux Klan"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why Black Americans faced segregation and discrimination in the Southern states in the early 1950s was that federal judicial rulings provided constitutional backing for segregation.” In 1896, the landmark Supreme Court decision in <strong>Plessy v. Ferguson</strong> established the 'separate but equal' doctrine. This legal precedent allowed Southern states to pass sweeping <strong>Jim Crow</strong> laws enforcing segregation in schools, public transport, and restaurants. <em>Therefore, federal judicial approval was a primary reason why Black Americans faced segregation and discrimination in the Southern states in the early 1950s because it legally shielded discriminatory state laws from constitutional challenges.</em>\n\n“A second reason why Black Americans faced segregation and discrimination in the Southern states in the early 1950s was that Southern state authorities systematically disenfranchised Black voters.” States introduced impossible literacy tests, requiring Black applicants to explain complex constitutional clauses, alongside <strong>poll taxes</strong> and grandfather clauses. This meant that by 1956, only <strong>20%</strong> of eligible Southern Black citizens were registered to vote. <em>Therefore, political disenfranchisement was a crucial cause of why Black Americans faced segregation and discrimination in the Southern states in the early 1950s because it prevented Black citizens from obtaining the democratic representation needed to challenge racist local policies.</em>\n\n“A third reason why Black Americans faced segregation and discrimination in the Southern states in the early 1950s was that segregation was ruthlessly enforced through organized white violence and social terror.” The <strong>Ku Klux Klan</strong> and White Citizens' Councils carried out lynchings, bombings, and economic intimidation, such as firing Black workers who tried to register. This campaign was reinforced by local police complicity and all-white juries who refused to convict white attackers. <em>Therefore, grassroots violence and state-level complicity were decisive reasons why Black Americans faced segregation and discrimination in the Southern states in the early 1950s because they made active resistance too dangerous, ensuring daily compliance.</em>",
+        "modelAnswer": "One major factor entrenching segregation was the <strong>federal legal doctrine established by Plessy v. Ferguson (1896)</strong>. The US Supreme Court ruled that racial segregation did not violate the Fourteenth Amendment provided facilities were 'separate but equal'. Southern states exploited this constitutional loophole to enact Jim Crow laws segregating transport, schools, and hospitals, maintaining substandard facilities for Black citizens. Therefore, this caused widespread segregation because judicial rulings gave Southern states authority to enforce racial separation in every aspect of public life.<br><br>Furthermore, discrimination was brutally maintained through <strong>vigilante terrorism by the Ku Klux Klan</strong>. Re-emerging in the post-war era, the Klan used night-riding, church bombings, cross burnings, and lynchings to terrorise Black citizens who challenged the racial status quo. Crucially, local police officers, sheriffs, and judges were often active Klan sympathisers, shielding white perpetrators from criminal prosecution. Therefore, this forced Black Americans to endure discrimination because the pervasive threat of racial violence and state collusion made challenging segregation life-threatening.<br><br>In addition, segregation persisted through <strong>systematic political disenfranchisement across Southern states</strong>. To prevent Black Americans from electing reformist officials, state authorities enforced discriminatory voting barriers, including impossible literacy tests, grandfather clauses, and expensive poll taxes. As a result, less than 20% of eligible Southern Black adults were registered to vote by 1950. Therefore, this perpetuated discrimination because disenfranchisement stripped Black communities of political influence, leaving Southern white supremacists in unchallenged control of local law enforcement and government institutions.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_1_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_1_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_1_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Black Americans faced segregation and discrimination in the South in the 1950s because of Jim Crow laws that separated Black and white people. The Supreme Court had said segregation was legal in Plessy v Ferguson. Also the Ku Klux Klan used violence, burning crosses and lynching Black people who tried to stand up for their rights. Therefore Black people lived in fear and could not get equal treatment.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Jim Crow, Plessy, and the KKK, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason Black Americans faced segregation was <strong>Supreme Court rulings like Plessy v Ferguson (1896)</strong>. The Supreme Court ruled that 'separate but equal' public facilities were constitutional under the 14th Amendment. Southern states used this legal precedent to enforce strict Jim Crow laws separating Black and white citizens on buses, trains, restaurants, and schools, although Black facilities were always inferior.<br><br>Another reason was the terror created by <strong>the Ku Klux Klan</strong>. The KKK was a white supremacist terrorist group that used beatings, cross burnings, and lynchings to terrorise Black communities. Because local sheriffs and judges were often Klan members, Klansmen committed racial murders with total impunity.<br><br>In conclusion, legal rulings and Klan violence enforced segregation in the South.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Plessy v Ferguson and the KKK). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as state-level disenfranchisement through poll taxes and literacy tests), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor entrenching segregation was the <strong>federal legal doctrine established by Plessy v. Ferguson (1896)</strong>. The US Supreme Court ruled that racial segregation did not violate the Fourteenth Amendment provided facilities were 'separate but equal'. Southern states exploited this constitutional loophole to enact Jim Crow laws segregating transport, schools, and hospitals, maintaining substandard facilities for Black citizens. Therefore, this caused widespread segregation because judicial rulings gave Southern states authority to enforce racial separation in every aspect of public life.<br><br>Furthermore, discrimination was brutally maintained through <strong>vigilante terrorism by the Ku Klux Klan</strong>. Re-emerging in the post-war era, the Klan used night-riding, church bombings, cross burnings, and lynchings to terrorise Black citizens who challenged the racial status quo. Crucially, local police officers, sheriffs, and judges were often active Klan sympathisers, shielding white perpetrators from criminal prosecution. Therefore, this forced Black Americans to endure discrimination because the pervasive threat of racial violence and state collusion made challenging segregation life-threatening.<br><br>In addition, segregation persisted through <strong>systematic political disenfranchisement across Southern states</strong>. To prevent Black Americans from electing reformist officials, state authorities enforced discriminatory voting barriers, including impossible literacy tests, grandfather clauses, and expensive poll taxes. As a result, less than 20% of eligible Southern Black adults were registered to vote by 1950. Therefore, this perpetuated discrimination because disenfranchisement stripped Black communities of political influence, leaving Southern white supremacists in unchallenged control of local law enforcement and government institutions.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (232 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_1_q3a",
@@ -124,9 +141,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "White Citizens' Councils"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why school desegregation met with significant opposition in the years 1954–57 was the widespread anger and resistance triggered by the Brown v. Board of Education ruling.” In 1954, the Supreme Court declared segregated schools unconstitutional, challenging the Southern way of life. Southern politicians and citizens viewed this as an illegal federal intrusion into state rights. <em>Therefore, the Brown ruling was a primary cause of opposition because it threatened the social structure of the South, provoking a coordinated segregationist backlash to defend local racial customs.</em>\n\n“A second reason why school desegregation met with significant opposition was the rapid growth and organization of White Citizens' Councils.” Founded in 1954, these councils consisted of middle-class white professionals who used economic pressure to target supporters of integration, firing Black workers and evicting tenants who signed desegregation petitions. <em>Therefore, the White Citizens' Councils were a key cause of opposition because they successfully intimidated the local Black community, making it dangerous for parents to enroll their children in integrated schools.</em>\n\n“A third reason why school desegregation met with significant opposition was the political strategy of 'Massive Resistance' promoted by Southern state leaders.” Southern governors and senators signed the Southern Manifesto, pledging to block integration by any lawful means, and passed state laws that closed public schools down rather than allowing integration. <em>Therefore, this political obstruction was a decisive cause of opposition because it gave official, legal backing to segregationist resistance, leading directly to crises like the military blockade in Little Rock.</em>",
+        "modelAnswer": "One primary cause of fierce opposition was the <strong>judicial breakthrough of Brown v. Board of Education (1954)</strong>. Led by Chief Justice Earl Warren, the Supreme Court unanimously overturned *Plessy*, ruling that segregated schools were 'inherently unequal' and unconstitutional. Southern whites viewed the decision as a tyrannical federal assault on states' rights and traditional Southern racial hierarchy. However, the subsequent 1955 'Brown II' ruling vaguely ordered desegregation 'with all deliberate speed', inviting Southern authorities to obstruct integration. Therefore, this caused massive resistance because Southern whites resisted federal intervention while exploiting vague judicial timelines to delay compliance.<br><br>Furthermore, opposition was mobilised by the <strong>rapid growth of middle-class White Citizens' Councils</strong>. Founded in Mississippi in 1954, these councils reached 250,000 members, using economic intimidation rather than Klan violence. Councils pressured banks to deny mortgages and forced employers to fire Black parents who attempted to enroll children in white schools, alongside boycotting white moderates. Therefore, this led to effective delays in desegregation because economic retaliation terrorised Black families into withdrawing desegregation petitions.<br><br>In addition, opposition was entrenched by <strong>political 'Massive Resistance' orchestrated by Southern governors</strong>. In 1956, 101 Southern congressmen signed the Southern Manifesto pledging to resist desegregation. In 1957, Governor Orval Faubus deployed the Arkansas National Guard to block the 'Little Rock Nine' from Central High School. Therefore, this forced intense political confrontation because state governors used state troops and legislative obstruction to directly defy federal integration orders.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_11_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_11_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_11_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "School desegregation met with huge opposition because white people in the South did not want Black children in their schools. When the Supreme Court ruled in Brown v. Board of Education that schools must mix, Southern politicians were furious. White Citizens' Councils were formed to stop integration and threatened Black parents. Therefore Southern whites fought hard to keep schools segregated.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Brown, White Citizens' Councils, and resistance, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for opposition was the anger over the <strong>Brown v. Board of Education ruling in 1954</strong>. Chief Justice Earl Warren declared that 'separate educational facilities are inherently unequal', ordering schools to desegregate. Southern segregationists felt their traditional way of life and state rights were being attacked by the federal government, sparking widespread fury across the South.<br><br>Another reason was the creation of <strong>White Citizens' Councils</strong>. Formed in Mississippi in 1954, these councils spread across the South with hundreds of thousands of middle-class white members. They used economic retaliation, sacking Black parents and denying bank loans to anyone who applied for their children to attend white schools.<br><br>In conclusion, the Brown ruling and White Citizens' Councils led to intense opposition against desegregation.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Brown v. Board and White Citizens' Councils). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as political 'Massive Resistance' and Governor Orval Faubus at Little Rock), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary cause of fierce opposition was the <strong>judicial breakthrough of Brown v. Board of Education (1954)</strong>. Led by Chief Justice Earl Warren, the Supreme Court unanimously overturned *Plessy*, ruling that segregated schools were 'inherently unequal' and unconstitutional. Southern whites viewed the decision as a tyrannical federal assault on states' rights and traditional Southern racial hierarchy. However, the subsequent 1955 'Brown II' ruling vaguely ordered desegregation 'with all deliberate speed', inviting Southern authorities to obstruct integration. Therefore, this caused massive resistance because Southern whites resisted federal intervention while exploiting vague judicial timelines to delay compliance.<br><br>Furthermore, opposition was mobilised by the <strong>rapid growth of middle-class White Citizens' Councils</strong>. Founded in Mississippi in 1954, these councils reached 250,000 members, using economic intimidation rather than Klan violence. Councils pressured banks to deny mortgages and forced employers to fire Black parents who attempted to enroll children in white schools, alongside boycotting white moderates. Therefore, this led to effective delays in desegregation because economic retaliation terrorised Black families into withdrawing desegregation petitions.<br><br>In addition, opposition was entrenched by <strong>political 'Massive Resistance' orchestrated by Southern governors</strong>. In 1956, 101 Southern congressmen signed the Southern Manifesto pledging to resist desegregation. In 1957, Governor Orval Faubus deployed the Arkansas National Guard to block the 'Little Rock Nine' from Central High School. Therefore, this forced intense political confrontation because state governors used state troops and legislative obstruction to directly defy federal integration orders.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (234 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_11_q3a",
@@ -177,9 +218,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "civil rights legislation"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why the civil rights movement grew in the years 1954–60 was the legal breakthrough of the Brown v. Topeka decision, which gave activists constitutional backing.” In 1954, the Supreme Court ruled that school segregation was unconstitutional. This historic victory proved that the legal foundation of Jim Crow could be dismantled, giving Black Americans the confidence to launch active campaigns. <em>Therefore, the Brown ruling was a primary cause of the movement's growth because it provided the legal precedent and hope needed to inspire local communities to organize protests.</em>\n\n“A second reason why the civil rights movement grew in the years 1954–60 was the success and organization of the Montgomery Bus Boycott.” Triggered by <strong>Rosa Parks</strong>' arrest, the Montgomery Improvement Association (MIA), led by Martin Luther King Jr., organized a <strong>381-day</strong> boycott of the city's segregated buses. By setting up a highly coordinated <strong>carpool system</strong> and sustained economic pressure, they forced the bus company into financial crisis until the Supreme Court ruled bus segregation unconstitutional. <em>Therefore, the Montgomery Bus Boycott was a crucial cause of the movement's growth because it demonstrated that unified grassroots non-violent direct action could achieve concrete victories, providing a template for future protests.</em>\n\n“A third reason why the civil rights movement grew in the years 1954–60 was the passage of the first federal civil rights laws in decades.” The <strong>Civil Rights Act of 1957</strong>, pushed by Senator Lyndon B. Johnson, established a Civil Rights Commission and a new division in the Department of Justice to protect voting rights. While the bill was watered down and only increased Southern Black registration by <strong>3%</strong>, it was the first civil rights legislation passed since Reconstruction. <em>Therefore, this legislation was a key cause of the movement's growth because it signaled that the federal government was beginning to accept its responsibility to protect Black citizens, encouraging activists to keep campaigning.</em>",
+        "modelAnswer": "One major catalyst for the movement's growth was the <strong>inspirational triumph of the Montgomery Bus Boycott (1955–56)</strong>. Sparked by Rosa Parks' arrest, the Black community maintained a 381-day boycott under the Montgomery Improvement Association led by Dr Martin Luther King Jr. Relying on carpools, activists inflicted heavy losses on the bus company until the Supreme Court ruled bus segregation unconstitutional in *Browder v. Gayle*. Therefore, this caused the movement to grow rapidly because it proved disciplined, non-violent mass collective action could defeat segregation and catapulted King into a nationally respected civil rights leader.<br><br>Furthermore, momentum was generated by the <strong>symbolic passage of federal civil rights legislation</strong>. In 1957 and 1960, the Eisenhower administration passed the first federal civil rights acts since Reconstruction. Although filibusters diluted enforcement, the 1957 Act established the Civil Rights Commission to monitor voter suppression. Therefore, this led to organizational expansion because federal legislative recognition demonstrated to activists that grassroots campaigning could successfully compel Washington to intervene in Southern racial affairs.<br><br>In addition, the movement expanded through <strong>youth direct action and the establishment of SNCC in 1960</strong>. In February 1960, four students staged a sit-in at a segregated Woolworth's lunch counter in Greensboro, North Carolina. Within weeks, the tactic spread to 55 cities, drawing 70,000 participants and leading to the Student Nonviolent Coordinating Committee (SNCC). Therefore, this accelerated movement growth because youth direct action expanded protests into nationwide student campaigns that forced commercial integration.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_3_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_3_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_3_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The civil rights movement grew between 1954 and 1960 because Black people were inspired by Rosa Parks who refused to give up her bus seat. The Montgomery Bus Boycott lasted over a year and proved that peaceful protests worked. Then Congress passed the 1957 Civil Rights Act and students started sit-ins at lunch counters. Therefore more Black people joined the fight for equal rights across America.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Rosa Parks, the boycott, and lunch counters, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the movement grew was the success of the <strong>Montgomery Bus Boycott of 1955–56</strong>. When Rosa Parks was arrested for refusing to give up her bus seat, Black residents boycotted city buses for 381 days. Led by Martin Luther King Jr., the boycott cost the bus company thousands of dollars until the Supreme Court integrated the buses, inspiring activists nationwide.<br><br>Another reason was the introduction of <strong>federal civil rights legislation</strong>. President Eisenhower passed the Civil Rights Act of 1957, the first civil rights law since Reconstruction, aimed at protecting voting rights. Although weak, it established a federal Civil Rights Commission to investigate abuses.<br><br>In conclusion, the Montgomery Boycott and federal legislation helped the civil rights movement expand.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Montgomery Boycott and legislation). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the Brown v. Board legal victory and student-led direct action like the 1960 Greensboro sit-ins), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major catalyst for the movement's growth was the <strong>inspirational triumph of the Montgomery Bus Boycott (1955–56)</strong>. Sparked by Rosa Parks' arrest, the Black community maintained a 381-day boycott under the Montgomery Improvement Association led by Dr Martin Luther King Jr. Relying on carpools, activists inflicted heavy losses on the bus company until the Supreme Court ruled bus segregation unconstitutional in *Browder v. Gayle*. Therefore, this caused the movement to grow rapidly because it proved disciplined, non-violent mass collective action could defeat segregation and catapulted King into a nationally respected civil rights leader.<br><br>Furthermore, momentum was generated by the <strong>symbolic passage of federal civil rights legislation</strong>. In 1957 and 1960, the Eisenhower administration passed the first federal civil rights acts since Reconstruction. Although filibusters diluted enforcement, the 1957 Act established the Civil Rights Commission to monitor voter suppression. Therefore, this led to organizational expansion because federal legislative recognition demonstrated to activists that grassroots campaigning could successfully compel Washington to intervene in Southern racial affairs.<br><br>In addition, the movement expanded through <strong>youth direct action and the establishment of SNCC in 1960</strong>. In February 1960, four students staged a sit-in at a segregated Woolworth's lunch counter in Greensboro, North Carolina. Within weeks, the tactic spread to 55 cities, drawing 70,000 participants and leading to the Student Nonviolent Coordinating Committee (SNCC). Therefore, this accelerated movement growth because youth direct action expanded protests into nationwide student campaigns that forced commercial integration.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_7_q2",
@@ -196,9 +261,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "US Supreme Court"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why the Montgomery Bus Boycott (1955–56) was successful was the outstanding local organisation by the Montgomery Improvement Association (MIA).” Instead of using buses, the MIA organised a complex and highly effective <strong>carpool system</strong> involving over 300 vehicles, alongside reduced-fare taxi rides from Black drivers, to ensure that Black workers could still travel to their jobs. This was kickstarted by <strong>Jo Ann Robinson</strong> distributing 35,000 leaflets. <em>Therefore, the boycott was successful because this logistical network allowed the Black community to sustain the boycott for <strong>381 days</strong> without being starved into submission by the city's authorities.</em>\n\n“Another reason why it was successful was the severe economic pressure the boycott placed on local authorities and businesses.” Because Black Americans made up roughly <strong>70%</strong> of bus riders in Montgomery, their year-long refusal to pay fares threatened the local bus company with bankruptcy and damaged downtown merchants. This solidarity was solidified by the respect for <strong>Rosa Parks</strong>, whose arrest united the community. <em>Therefore, this led to success because the city authorities simply could not afford to maintain segregation if it meant the total financial ruin of their transport system.</em>\n\n“A final reason for its success was the parallel legal strategy that reached the highest courts.” While the boycott applied economic pressure on the streets, the <strong>NAACP</strong> successfully took the case to the federal courts. In 1956, the US Supreme Court upheld the ruling in <strong>Browder v. Gayle</strong>, definitively declaring that segregation on Montgomery buses was unconstitutional based on the precedent set by the <strong>Brown v. Topeka</strong> case. <em>Therefore, the boycott ultimately succeeded because the Supreme Court forced the state of Alabama to legally change its discriminatory laws, overriding local resistance.</em>\n\nIn conclusion, the boycott was successful because the sheer economic endurance and organisation of the grassroots movement gave civil rights lawyers the time and leverage needed to win the ultimate legal victory in the Supreme Court.",
+        "modelAnswer": "One primary reason for success was the <strong>outstanding strategic leadership of the Montgomery Improvement Association (MIA)</strong>. Formed after Rosa Parks' arrest in December 1955, the MIA elected Dr Martin Luther King Jr. as president. King provided inspirational moral leadership, articulating non-violent resistance that kept the community unified and disciplined despite police harassment and the firebombing of his home. Therefore, this caused the boycott to succeed because King's charismatic leadership maintained community resolve and prevented protesters from resorting to violence that would justify police suppression.<br><br>Furthermore, the boycott triumphed through the <strong>decisive legal ruling of the US Supreme Court in *Browder v. Gayle* (1956)</strong>. While the boycott maintained street-level pressure, NAACP lawyers challenged Montgomery's bus segregation laws in federal court. In November 1956, the Supreme Court upheld the district court ruling that bus segregation violated the Fourteenth Amendment's Equal Protection Clause. Therefore, this led directly to the boycott's victory because the Supreme Court provided binding authority that legally forced Montgomery to desegregate public buses.<br><br>In addition, success was achieved through <strong>meticulous community logistics and devastating economic pressure</strong>. Black residents formed 70% of ridership; by boycotting buses for 381 days, they pushed the company into near-bankruptcy. The MIA organised a sophisticated carpool network of 300 private cars and church station wagons alongside Black taxi drivers offering discounted fares. Therefore, this forced city authorities to yield because prolonged economic devastation combined with unbreakable community self-sufficiency made continuing segregation commercially impossible.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_7_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_7_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_7_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The Montgomery Bus Boycott was successful because Black people refused to ride the buses for over a year after Rosa Parks was arrested. The Montgomery Improvement Association was led by Martin Luther King who made inspiring speeches in church. Black taxi drivers gave cheap rides and people walked miles to work. Finally the Supreme Court ruled segregation on buses was illegal. Therefore the boycott achieved its goal and buses were desegregated.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Rosa Parks, King, walking, and the Supreme Court, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the boycott succeeded was the leadership of the <strong>Montgomery Improvement Association (MIA)</strong>. Formed in December 1955, the MIA chose Dr Martin Luther King Jr. as its president. King organised regular church rallies to keep spirits high, organised carpools, and insisted on peaceful, non-violent Christian protest even when his home was bombed.<br><br>Another reason was the ruling of the <strong>US Supreme Court in Browder v. Gayle</strong>. In November 1956, the Supreme Court affirmed that segregation on public buses violated the Fourteenth Amendment. This legal decision overruled Alabama state laws and forced the city of Montgomery to integrate its buses on 21 December 1956.<br><br>In conclusion, the MIA's leadership and the Supreme Court ruling made the boycott a great success.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (MIA and Supreme Court). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as community economic solidarity, carpool logistics, and financial damage to the bus company), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason for success was the <strong>outstanding strategic leadership of the Montgomery Improvement Association (MIA)</strong>. Formed after Rosa Parks' arrest in December 1955, the MIA elected Dr Martin Luther King Jr. as president. King provided inspirational moral leadership, articulating non-violent resistance that kept the community unified and disciplined despite police harassment and the firebombing of his home. Therefore, this caused the boycott to succeed because King's charismatic leadership maintained community resolve and prevented protesters from resorting to violence that would justify police suppression.<br><br>Furthermore, the boycott triumphed through the <strong>decisive legal ruling of the US Supreme Court in *Browder v. Gayle* (1956)</strong>. While the boycott maintained street-level pressure, NAACP lawyers challenged Montgomery's bus segregation laws in federal court. In November 1956, the Supreme Court upheld the district court ruling that bus segregation violated the Fourteenth Amendment's Equal Protection Clause. Therefore, this led directly to the boycott's victory because the Supreme Court provided binding authority that legally forced Montgomery to desegregate public buses.<br><br>In addition, success was achieved through <strong>meticulous community logistics and devastating economic pressure</strong>. Black residents formed 70% of ridership; by boycotting buses for 381 days, they pushed the company into near-bankruptcy. The MIA organised a sophisticated carpool network of 300 private cars and church station wagons alongside Black taxi drivers offering discounted fares. Therefore, this forced city authorities to yield because prolonged economic devastation combined with unbreakable community self-sufficiency made continuing segregation commercially impossible.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_1_4": [
@@ -233,9 +322,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Ku Klux Klan (KKK)"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why opposition to the civil rights movement was successful in delaying progress in the years 1954–60 was the unified political defiance of Southern leaders.” In 1956, 101 Southern members of Congress signed the <strong>Southern Manifesto</strong>, which accused the Supreme Court of abusing its power in the Brown ruling and urged states to resist desegregation. <em>Therefore, this political defiance legitimized state-level resistance, encouraging Southern governors to pass laws closing public schools rather than desegregating them.</em>\n\n“A second reason why opposition to the civil rights movement was successful in delaying progress was the use of violence and physical intimidation.” The <strong>KKK</strong> experienced a revival, using bombings, beatings, and threats of violence against civil rights activists. For example, during the Montgomery Bus Boycott, the homes of leaders were bombed, and local registrars used poll taxes and literacy tests backed by economic threats to keep Black voter registration extremely low. <em>Therefore, this climate of terror and systemic disenfranchisement intimidated many Black citizens, successfully slowing the growth of grassroots campaigns.</em>\n\n“A third reason why opposition to the civil rights movement was successful in delaying progress was the systemic economic intimidation enforced by the <strong>White Citizens' Councils</strong>.” Formed in 1954 in response to the Brown ruling, these councils consisted of prominent white local businessmen, bankers, and politicians. They targeted civil rights supporters by evicting Black tenants, denying bank loans and mortgages to Black buyers, and firing Black workers who signed school integration petitions. <em>Therefore, this economic warfare delayed progress because it threatened the direct livelihood of Black families, making the cost of participation in civil rights activism financially ruinous for many ordinary citizens.</em>",
+        "modelAnswer": "One major factor delaying civil rights progress was the <strong>political defiance legitimised by the Southern Manifesto in 1956</strong>. Signed by 101 Southern congressmen, the manifesto denounced the *Brown* ruling as an abuse of power infringing states' rights. By giving federal political sanction to resistance, Southern congressmen encouraged state legislatures to enact hundreds of segregationist obstruction statutes. Therefore, this caused progress to be delayed because prominent national politicians legitimized open defiance of the Supreme Court, assuring Southern officials that federal orders could be safely disregarded.<br><br>Furthermore, progress was obstructed by the <strong>violent intimidation and domestic terrorism of the Ku Klux Klan</strong>. With police collusion, the KKK carried out bombings and murders, notably the 1955 murder of 14-year-old Emmett Till in Mississippi. All-white juries routinely acquitted white assailants despite overwhelming evidence. Therefore, this led directly to delayed progress because lethal violence and institutionalised judicial corruption terrorised rural Black communities into abandoning voter registration and integration efforts.<br><br>In addition, progress was impeded by <strong>state-sponsored 'Massive Resistance' and public school closures</strong>. Southern governors exploited the ambiguous phrase 'with all deliberate speed' from *Brown II* to block integration entirely. In Virginia, Senator Harry Byrd led policies that defunded integrated schools; Prince Edward County closed public schools for five years rather than integrate, funding private academies for whites. Therefore, this forced civil rights progress to stall because state governments proved willing to dismantle public education rather than comply with federal desegregation mandates.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_12_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_12_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_12_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Opposition delayed civil rights progress between 1954 and 1960 because Southern politicians refused to obey the Supreme Court. Over 100 congressmen signed the Southern Manifesto promising to resist integration. Also the Ku Klux Klan attacked civil rights workers, bombing churches and beating Black people. Governors also closed down schools rather than let Black children in. Therefore civil rights made very slow progress in the South.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the Southern Manifesto, KKK, and closed schools, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason opposition delayed progress was the <strong>Southern Manifesto of 1956</strong>. Signed by 101 Southern congressmen and senators, including Strom Thurmond, the document attacked the Supreme Court's *Brown* decision as an abuse of judicial power. It encouraged Southern state legislatures to enact laws preventing desegregation and defying federal authority.<br><br>Another reason was violent terrorism by the <strong>Ku Klux Klan (KKK)</strong>. The Klan reformed into violent klaverns, carrying out bombings, cross burnings, and murders of civil rights activists, such as the murder of Emmett Till in 1955. Their violence terrified Black communities and made them afraid to challenge segregation.<br><br>In conclusion, the Southern Manifesto and Klan terror successfully delayed civil rights progress.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Southern Manifesto and KKK). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as state-level 'Massive Resistance' closing public schools and White Citizens' Councils), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor delaying civil rights progress was the <strong>political defiance legitimised by the Southern Manifesto in 1956</strong>. Signed by 101 Southern congressmen, the manifesto denounced the *Brown* ruling as an abuse of power infringing states' rights. By giving federal political sanction to resistance, Southern congressmen encouraged state legislatures to enact hundreds of segregationist obstruction statutes. Therefore, this caused progress to be delayed because prominent national politicians legitimized open defiance of the Supreme Court, assuring Southern officials that federal orders could be safely disregarded.<br><br>Furthermore, progress was obstructed by the <strong>violent intimidation and domestic terrorism of the Ku Klux Klan</strong>. With police collusion, the KKK carried out bombings and murders, notably the 1955 murder of 14-year-old Emmett Till in Mississippi. All-white juries routinely acquitted white assailants despite overwhelming evidence. Therefore, this led directly to delayed progress because lethal violence and institutionalised judicial corruption terrorised rural Black communities into abandoning voter registration and integration efforts.<br><br>In addition, progress was impeded by <strong>state-sponsored 'Massive Resistance' and public school closures</strong>. Southern governors exploited the ambiguous phrase 'with all deliberate speed' from *Brown II* to block integration entirely. In Virginia, Senator Harry Byrd led policies that defunded integrated schools; Prince Edward County closed public schools for five years rather than integrate, funding private academies for whites. Therefore, this forced civil rights progress to stall because state governments proved willing to dismantle public education rather than comply with federal desegregation mandates.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_12_q3a",
@@ -368,9 +481,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Police Commissioner Bull Connor"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why the Birmingham Campaign (1963) was launched was that Birmingham was widely known as the most segregated city in America.” The local SCLC and Alabama Christian Movement for Human Rights had tried to negotiate with local merchants, but white businesses refused to desegregate lunch counters or hire Black workers, and local authorities banned all protests. <em>Therefore, segregation and the failure of negotiations were a primary cause of why the Birmingham Campaign was launched, as SCLC realized direct action was the only way to break the stalemate.</em>\n\n“A second reason why the Birmingham Campaign (1963) was launched was to implement 'Project C' (Confrontation) to provoke a federal response.” The organizers, led by SCLC, designed a strategy of public demonstrations to provoke a violent reaction from the notorious segregationist <strong>Police Commissioner Bull Connor</strong>. They knew Connor's aggressive methods would expose the brutality of Southern racism. <em>Therefore, Project C was a key cause of why the Birmingham Campaign was launched, because it aimed to force federal intervention by creating a public crisis that Washington could not ignore.</em>\n\n“A third reason why the Birmingham Campaign (1963) was launched was to capture national media and television coverage to win public support.” Activists knew that visual media would shock the northern public and international community. When Connor used high-pressure water <strong>hoses</strong> and attack dogs against child marchers, the images were broadcast worldwide, generating massive moral outrage. <em>Therefore, the strategic use of media exposure was a decisive cause of why the Birmingham Campaign was launched, because it mobilized national opinion and forced President Kennedy to draft the Civil Rights Act.</em>",
+        "modelAnswer": "One primary reason the campaign was launched was the <strong>SCLC's strategic design of Project C (Confrontation)</strong>. Following the disappointing Albany Campaign of 1962, where police avoided brutality, Martin Luther King Jr. developed 'Project C'. The plan aimed to apply coordinated direct action—boycotts of downtown stores, sit-ins, and street marches—to cause complete economic paralysis. Therefore, this caused the launch of the campaign because the SCLC needed a calculated direct-action crisis to compel municipal white business owners to negotiate desegregation.<br><br>Furthermore, Birmingham was deliberately selected due to the <strong>predictable, aggressive temperament of Police Commissioner Eugene 'Bull' Connor</strong>. Connor was a fierce white supremacist who used uncompromising force against civil rights activists. King recognised that Connor's authoritarian instincts would lead to severe police overreaction, contrasting peaceful demonstrators against brutal state aggression on national television. Therefore, this led directly to the campaign's launch because activists intentionally exploited Connor's predictable brutality to generate shocking media footage that would compel federal intervention.<br><br>In addition, the campaign was launched because <strong>Birmingham was the most violently segregated metropolis in the United States</strong>. Nicknamed 'Bombingham' after 50 bombings of Black homes and churches, the city closed public parks and pools to avoid integration. Local leader Reverend Fred Shuttlesworth appealed for SCLC assistance to dismantle total apartheid. Therefore, this forced the campaign's initiation because cracking the South's most entrenched citadel of white supremacy was essential to reviving national momentum for civil rights legislation.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_9_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_9_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_9_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The Birmingham Campaign was launched in 1963 because Birmingham, Alabama was the most segregated city in America. Dr Martin Luther King and the SCLC launched Project C to challenge racist businesses. They knew Police Commissioner Bull Connor was extremely violent and would attack peaceful protesters. By putting children into the marches, they got the attacks filmed on television. Therefore the campaign forced the city to desegregate.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Birmingham, Project C, Bull Connor, and television, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the campaign was launched was the SCLC's strategy of <strong>Project C (Confrontation)</strong>. After failing to achieve progress in Albany, Georgia in 1962, Dr King and Reverend Fred Shuttlesworth designed Project C to deliberately create public disruption. They planned peaceful marches, boycotts of downtown department stores, and lunch-counter sit-ins to provoke a crisis that could not be ignored.<br><br>Another reason was the notorious brutality of <strong>Police Commissioner Bull Connor</strong>. Connor was a vicious segregationist who had close ties to the Ku Klux Klan. The SCLC knew Connor would overreact with violence, using high-pressure fire hoses and police attack dogs against demonstrators, creating international media attention.<br><br>In conclusion, Project C and Bull Connor's racism made Birmingham the ideal battleground.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Project C and Bull Connor). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as Birmingham's reputation as 'Bombingham' and the SCLC's urgent need for a decisive victory after Albany), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason the campaign was launched was the <strong>SCLC's strategic design of Project C (Confrontation)</strong>. Following the disappointing Albany Campaign of 1962, where police avoided brutality, Martin Luther King Jr. developed 'Project C'. The plan aimed to apply coordinated direct action—boycotts of downtown stores, sit-ins, and street marches—to cause complete economic paralysis. Therefore, this caused the launch of the campaign because the SCLC needed a calculated direct-action crisis to compel municipal white business owners to negotiate desegregation.<br><br>Furthermore, Birmingham was deliberately selected due to the <strong>predictable, aggressive temperament of Police Commissioner Eugene 'Bull' Connor</strong>. Connor was a fierce white supremacist who used uncompromising force against civil rights activists. King recognised that Connor's authoritarian instincts would lead to severe police overreaction, contrasting peaceful demonstrators against brutal state aggression on national television. Therefore, this led directly to the campaign's launch because activists intentionally exploited Connor's predictable brutality to generate shocking media footage that would compel federal intervention.<br><br>In addition, the campaign was launched because <strong>Birmingham was the most violently segregated metropolis in the United States</strong>. Nicknamed 'Bombingham' after 50 bombings of Black homes and churches, the city closed public parks and pools to avoid integration. Local leader Reverend Fred Shuttlesworth appealed for SCLC assistance to dismantle total apartheid. Therefore, this forced the campaign's initiation because cracking the South's most entrenched citadel of white supremacy was essential to reviving national momentum for civil rights legislation.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (234 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_9_q3a",
@@ -419,9 +556,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "President Lyndon B. Johnson"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why the campaign in Selma (1965) was successful was Martin Luther King Jr.'s strategic choice of location to deliberately provoke a violent reaction.” The SCLC intentionally chose Selma because of its notoriously aggressive local sheriff, Jim Clark, and its appealing voter registration record (where only 383 of 15,000 eligible Black adults were registered). King knew that peaceful marchers demanding the vote would be met with unwarranted police brutality. <em>Therefore, this strategic provocation led to success because it guaranteed that the oppressive reality of Southern voter suppression could no longer be hidden from the rest of the nation.</em>\n\n“Another reason for its success was the immense power of television media in shocking the national public.” During the first attempted march to Montgomery on 7 March 1965, peaceful demonstrators were viciously attacked with tear gas, whips, and clubs by state troopers on the <strong>Edmund Pettus Bridge</strong>. This event became known as <strong>Bloody Sunday</strong>. The unprovoked savagery was broadcast directly into millions of living rooms across America and around the world. <em>Therefore, the campaign succeeded because the horrific visual evidence generated massive national sympathy and outrage, transforming a local Alabama protest into an urgent national political crisis.</em>\n\n“A final reason the campaign was successful was that it forced immediate and decisive federal intervention.” In the wake of the public outcry over Bloody Sunday, President <strong>Lyndon B. Johnson</strong> federalised the National Guard to protect the marchers so they could successfully complete their journey to Montgomery. More importantly, Johnson used the momentum of the crisis to demand that Congress pass new legislation. <em>Therefore, the campaign ultimately succeeded because it gave LBJ the exact political leverage he needed to sign the historic <strong>Voting Rights Act of 1965</strong>, which banned literacy tests and finally guaranteed the vote for Black Americans.</em>\n\nIn conclusion, the Selma campaign was successful because the calculated bravery of the marchers created a violent media spectacle, which in turn left the federal government with no choice but to forcefully intervene and change the law.",
+        "modelAnswer": "One primary reason for success was the <strong>national moral outrage generated by televised media coverage of 'Bloody Sunday'</strong>. On 7 March 1965, 600 peaceful marchers crossing the Edmund Pettus Bridge were charged by Alabama troopers using tear gas, whips, and clubs. Television networks interrupted regular evening broadcasts to show graphic footage of defenceless marchers being beaten unconscious. Therefore, this caused the campaign to succeed because shocking television imagery horrified 50 million white viewers nationwide, generating irresistible public demand for federal intervention.<br><br>Furthermore, the campaign achieved victory through the <strong>decisive political leadership of President Lyndon B. Johnson</strong>. Recognizing that the Civil Rights Act of 1964 had left voting disenfranchisement unresolved, Johnson intervened decisively. On 15 March 1965, he addressed Congress adopting the slogan 'We Shall Overcome', federalising National Guardsmen to protect marchers to Montgomery. Therefore, this led to campaign success because presidential power placed federal authority directly behind the protesters, making state obstruction impossible.<br><br>In addition, victory was secured by the <strong>strategic genius of Martin Luther King and passage of the Voting Rights Act of 1965</strong>. King selected Selma because only 1% of eligible Black adults were registered to vote, and his leadership maintained non-violence. In August 1965, Johnson signed the Voting Rights Act, outlawing literacy tests and authorising federal examiners to register voters. Therefore, this forced the realization of the campaign's ultimate objective because federal legislation permanently ended disenfranchisement, registering 250,000 Black voters by late 1965.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_10_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_10_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_10_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The campaign in Selma in 1965 was successful because Black people were trying to register to vote. State troopers attacked peaceful marchers on the Edmund Pettus Bridge on Bloody Sunday using tear gas and clubs. The shocking violence was shown on national television, which horrified the American public. President Lyndon B. Johnson then gave a famous speech and passed the Voting Rights Act. Therefore the marchers achieved voting rights.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Bloody Sunday, television, LBJ, and the Voting Rights Act, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the Selma campaign succeeded was the impact of <strong>televised media coverage of 'Bloody Sunday'</strong>. On 7 March 1965, 600 civil rights marchers crossing the Edmund Pettus Bridge were brutally attacked by Alabama state troopers using tear gas, whips, and billy clubs. Television networks interrupted regular programming to broadcast the violence, outraging 50 million American viewers.<br><br>Another reason was the intervention of <strong>President Lyndon B. Johnson</strong>. Outraged by the brutality, Johnson federalised the Alabama National Guard to protect marchers on their 54-mile march to Montgomery. He delivered an address to Congress echoing the movement's anthem 'We Shall Overcome' and introduced the Voting Rights Act.<br><br>In conclusion, television news and President Johnson's political support made Selma successful.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (televised media and LBJ). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as King's tactical leadership and the passage of the Voting Rights Act of 1965 banning literacy tests), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason for success was the <strong>national moral outrage generated by televised media coverage of 'Bloody Sunday'</strong>. On 7 March 1965, 600 peaceful marchers crossing the Edmund Pettus Bridge were charged by Alabama troopers using tear gas, whips, and clubs. Television networks interrupted regular evening broadcasts to show graphic footage of defenceless marchers being beaten unconscious. Therefore, this caused the campaign to succeed because shocking television imagery horrified 50 million white viewers nationwide, generating irresistible public demand for federal intervention.<br><br>Furthermore, the campaign achieved victory through the <strong>decisive political leadership of President Lyndon B. Johnson</strong>. Recognizing that the Civil Rights Act of 1964 had left voting disenfranchisement unresolved, Johnson intervened decisively. On 15 March 1965, he addressed Congress adopting the slogan 'We Shall Overcome', federalising National Guardsmen to protect marchers to Montgomery. Therefore, this led to campaign success because presidential power placed federal authority directly behind the protesters, making state obstruction impossible.<br><br>In addition, victory was secured by the <strong>strategic genius of Martin Luther King and passage of the Voting Rights Act of 1965</strong>. King selected Selma because only 1% of eligible Black adults were registered to vote, and his leadership maintained non-violence. In August 1965, Johnson signed the Voting Rights Act, outlawing literacy tests and authorising federal examiners to register voters. Therefore, this forced the realization of the campaign's ultimate objective because federal legislation permanently ended disenfranchisement, registering 250,000 Black voters by late 1965.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (234 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_10_q3a",
@@ -586,9 +747,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Chicago Freedom Movement (1966)"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why the civil rights movement faced growing limitations in the years 1965–75 was the shift in focus to deep-seated economic and housing inequalities in Northern cities, which faced intense white resistance.” In 1966, Martin Luther King Jr. launched the <strong>Chicago Freedom Movement</strong> to combat housing discrimination. However, when activists marched through white neighborhoods like Cicero, they were met by violent white mobs throwing bricks and bottles, and Mayor Richard Daley reneged on agreements once King left the city. <em>Therefore, this Northern backlash delayed progress because it proved that informal, de facto segregation and entrenched white racism in the North were much harder to dismantle than Southern de jure segregation, leaving ghetto conditions unchanged.</em>\n\n“A second reason why the civil rights movement struggled to achieve progress was the findings and subsequent neglect of the <strong>Kerner Commission</strong> in 1968.” Appointed by President Johnson to investigate the causes of urban riots, the commission concluded that the primary cause of violence was systemic white racism, warning that America was split into “two societies, one Black, one white - separate and unequal.” Although the report recommended massive federal investment in housing, jobs, and education to rebuild inner-city communities, Johnson largely rejected the findings due to the soaring cost of the Vietnam War and political backlash. <em>Therefore, the government's failure to act on these findings delayed progress because it left the root economic causes of Black frustration unresolved, leading to persistent poverty and inequality in urban areas.</em>\n\n“A third reason why progress became limited after 1965 was the fragmentation of the civil rights coalition following the assassination of Martin Luther King Jr.” The assassination of King in Memphis in <strong>1968</strong> triggered riots in over 100 cities, demonstrating the deep anger of Black Americans but also alienating white moderates who feared urban violence. SCLC's subsequent initiatives, such as the <strong>Poor People's Campaign</strong>, failed to secure federal reforms due to leadership struggles under Ralph Abernathy and the rise of radical groups like the Black Panthers. <em>Therefore, the loss of unified, non-violent leadership and the splintering of the movement delayed progress because it destroyed the broad political coalition needed to pass further major federal civil rights legislation.</em>",
+        "modelAnswer": "One major factor limiting progress was the <strong>deep structural economic inequalities highlighted by the Kerner Report (1968)</strong>. Investigating ghetto riots in Watts (1965) and Detroit, the Kerner Commission concluded America was 'moving toward two societies, one black, one white—separate and unequal'. Unlike Southern de jure segregation, Northern de facto economic deprivation in housing and employment could not be dismantled simply by passing federal voting laws. Therefore, this caused progress to stall because resolving entrenched socio-economic decay required billions in federal taxation that white voters and congressmen refused to authorise.<br><br>Furthermore, progress was obstructed by the <strong>fierce white resistance encountered during the Chicago Freedom Movement (1966)</strong>. Focusing on Chicago housing, King faced violent white mobs throwing bricks, remarking he had never seen such hatred in Alabama. Crucially, Chicago Mayor Richard Daley outmanoeuvred King with unfulfilled paper agreements. Therefore, this led directly to limitations in progress because Northern white working-class communities bitterly resisted residential integration, proving civil rights tactics were ineffective against systemic Northern prejudice.<br><br>In addition, the movement was crippled by <strong>internal ideological fractures over Black Power and the assassination of King</strong>. Frustrated by the slow pace of change, leaders like Stokely Carmichael popularized 'Black Power', rejecting non-violence and interracial cooperation. This radicalization and King's 1968 assassination alienated white allies, prompting conservative backlash under Richard Nixon. Therefore, this forced the movement into fragmentation because bitter ideological divisions destroyed the broad multiracial coalition that had delivered previous legislative triumphs.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_13_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_13_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_13_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The civil rights movement faced growing challenges after 1965 because riots broke out in Northern cities like Watts and Detroit. The Kerner Report said America was moving towards two separate societies. When Martin Luther King went to Chicago, he was hit by a brick and faced angry white mobs. Also younger activists like Malcolm X and the Black Panthers rejected non-violence. Therefore the movement split apart and lost white support.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions riots, Kerner Report, Chicago, and Black Panthers, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for growing challenges was the <strong>findings of the Kerner Report in 1968</strong>. Commissioned by President Johnson after devastating ghetto riots in Watts, Detroit, and Newark, the report concluded that America was moving towards 'two societies, one black, one white—separate and unequal'. It highlighted systemic police brutality, unemployment, and poor housing, but white politicians refused to fund its anti-poverty recommendations.<br><br>Another reason was the failure of the <strong>Chicago Freedom Movement in 1966</strong>. Dr King moved into a Chicago slum to campaign against discriminatory housing practices. However, King faced violent hostility from white working-class residents and Mayor Daley outmanoeuvred him with vague promises.<br><br>In conclusion, urban poverty and the failure of Northern campaigns created huge obstacles for civil rights.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Kerner Report and Chicago Campaign). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as ideological fracture over Black Power, white backlash, and King's assassination in 1968), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor limiting progress was the <strong>deep structural economic inequalities highlighted by the Kerner Report (1968)</strong>. Investigating ghetto riots in Watts (1965) and Detroit, the Kerner Commission concluded America was 'moving toward two societies, one black, one white—separate and unequal'. Unlike Southern de jure segregation, Northern de facto economic deprivation in housing and employment could not be dismantled simply by passing federal voting laws. Therefore, this caused progress to stall because resolving entrenched socio-economic decay required billions in federal taxation that white voters and congressmen refused to authorise.<br><br>Furthermore, progress was obstructed by the <strong>fierce white resistance encountered during the Chicago Freedom Movement (1966)</strong>. Focusing on Chicago housing, King faced violent white mobs throwing bricks, remarking he had never seen such hatred in Alabama. Crucially, Chicago Mayor Richard Daley outmanoeuvred King with unfulfilled paper agreements. Therefore, this led directly to limitations in progress because Northern white working-class communities bitterly resisted residential integration, proving civil rights tactics were ineffective against systemic Northern prejudice.<br><br>In addition, the movement was crippled by <strong>internal ideological fractures over Black Power and the assassination of King</strong>. Frustrated by the slow pace of change, leaders like Stokely Carmichael popularized 'Black Power', rejecting non-violence and interracial cooperation. This radicalization and King's 1968 assassination alienated white allies, prompting conservative backlash under Richard Nixon. Therefore, this forced the movement into fragmentation because bitter ideological divisions destroyed the broad multiracial coalition that had delivered previous legislative triumphs.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_13_q3a",
@@ -723,9 +908,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "the US use of Agent Orange"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why the USA was not able to win the war against the Vietcong in the years 1964–73 was that Vietcong guerrilla tactics neutralized American military and technological superiority.” The Vietcong avoided large-scale battles, using ambushes and hiding in complex underground tunnel networks. They deployed cheap, lethal <strong>booby traps</strong>, such as Punji stake pits and tripwires, which caused roughly <strong>11%</strong> of US deaths. <em>Therefore, Vietcong guerrilla tactics were a vital cause of why the USA was not able to win the war against the Vietcong in the years 1964–73 because they created a constant state of fear and paranoia, rendering US air support and heavy weaponry ineffective.</em>\n\n“A second reason why the USA was not able to win the war against the Vietcong in the years 1964–73 was that US tactics like the use of chemical weapons actively alienated the Vietnamese peasantry.” The US military sprayed millions of gallons of <strong>Agent Orange</strong> to destroy the jungle canopy and crops, destroying the livelihoods of innocent peasants. This chemical warfare, alongside the destructive <strong>Search and Destroy</strong> raids that burned villages, completely undermined the policy of winning <strong>hearts and minds</strong>. <em>Therefore, the alienation of the rural population was a crucial reason why the USA was not able to win the war against the Vietcong in the years 1964–73 because it led to local peasants providing the Vietcong with food, shelter, and vital intelligence.</em>\n\n“A third reason why the USA was not able to win the war against the Vietcong in the years 1964–73 was low troop morale and the one-year rotation system.” The draft system meant that US soldiers were young, inexperienced conscripts who only served a <strong>one-year tour</strong> of duty. Just as soldiers gained combat experience, they were sent home and replaced by raw recruits, which led to drug abuse, low commitment, and the fragging of officers. <em>Therefore, the lack of combat continuity and low troop commitment were decisive reasons why the USA was not able to win the war against the Vietcong in the years 1964–73 because they made it impossible for the US army to defeat the highly motivated Vietcong forces.</em>",
+        "modelAnswer": "One primary reason the USA failed to win was the <strong>devastating psychological and physical toll of Vietcong booby traps</strong>. The Vietcong deployed concealed traps: sharpened bamboo punji stakes, landmines, and tripwire grenades. These hidden hazards caused 11% of all American deaths and 17% of disabling wounds. Therefore, this caused American failure because booby traps inflicted continuous casualties without pitched battles, destroying the combat morale of young conscript soldiers who never saw the enemy.<br><br>Furthermore, the US war effort was crippled by the <strong>counterproductive destruction caused by chemical defoliants like Agent Orange</strong>. To strip jungle foliage, the US Air Force sprayed 20 million gallons of herbicides under Operation Ranch Hand. However, this poisoned water supplies, devastated rural farming livelihoods, and caused catastrophic birth defects. Therefore, this led directly to US defeat because chemical warfare completely alienated the South Vietnamese peasantry, driving thousands of recruits into the arms of the Vietcong insurgency.<br><br>In addition, the US military was outmanoeuvred by <strong>vast underground tunnel systems and the Ho Chi Minh Trail</strong>. Networks like the 250-kilometre Cu Chi tunnels provided the Vietcong with bomb-proof barracks, hospitals, and weapons caches beneath US bases. Simultaneously, the Ho Chi Minh Trail delivered 60 tons of Soviet and Chinese supplies daily. Therefore, this forced the war into an unwinnable stalemate because massive US aerial bombardment could neither sever enemy logistics nor locate guerrilla fighters operating underground.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_6_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_6_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_6_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The USA was not able to win against the Vietcong because the Vietcong used guerrilla warfare. They built hidden booby traps like punji stick pits that injured American soldiers. The US tried to drop Agent Orange to kill the jungle, but this made Vietnamese peasants hate the Americans. The Vietcong also hid in underground tunnels. Therefore American soldiers could not find the enemy and could not defeat them.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions guerrilla warfare, booby traps, and Agent Orange, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the USA could not win was the <strong>Vietcong's extensive use of booby traps</strong>. The Vietcong laid punji traps with sharpened bamboo sticks smeared with excrement, tripwires connected to grenades, and unexploded American bombs. These traps caused 11% of American deaths and 17% of wounds, causing constant fear among US patrols in the jungle.<br><br>Another reason was the <strong>US military's use of Agent Orange and defoliants</strong>. To strip away the dense jungle canopy that hid Vietcong fighters, US planes sprayed over 20 million gallons of toxic chemical herbicides. This poisoned crops and water supplies, causing horrific birth defects and alienating the rural population.<br><br>In conclusion, booby traps and the destruction caused by Agent Orange prevented a US victory.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (booby traps and Agent Orange). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the Ho Chi Minh Trail and the Cu Chi tunnel network), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason the USA failed to win was the <strong>devastating psychological and physical toll of Vietcong booby traps</strong>. The Vietcong deployed concealed traps: sharpened bamboo punji stakes, landmines, and tripwire grenades. These hidden hazards caused 11% of all American deaths and 17% of disabling wounds. Therefore, this caused American failure because booby traps inflicted continuous casualties without pitched battles, destroying the combat morale of young conscript soldiers who never saw the enemy.<br><br>Furthermore, the US war effort was crippled by the <strong>counterproductive destruction caused by chemical defoliants like Agent Orange</strong>. To strip jungle foliage, the US Air Force sprayed 20 million gallons of herbicides under Operation Ranch Hand. However, this poisoned water supplies, devastated rural farming livelihoods, and caused catastrophic birth defects. Therefore, this led directly to US defeat because chemical warfare completely alienated the South Vietnamese peasantry, driving thousands of recruits into the arms of the Vietcong insurgency.<br><br>In addition, the US military was outmanoeuvred by <strong>vast underground tunnel systems and the Ho Chi Minh Trail</strong>. Networks like the 250-kilometre Cu Chi tunnels provided the Vietcong with bomb-proof barracks, hospitals, and weapons caches beneath US bases. Simultaneously, the Ho Chi Minh Trail delivered 60 tons of Soviet and Chinese supplies daily. Therefore, this forced the war into an unwinnable stalemate because massive US aerial bombardment could neither sever enemy logistics nor locate guerrilla fighters operating underground.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_8_q1",
@@ -758,9 +967,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Hearts and minds"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why US Search and Destroy tactics were unsuccessful in the years 1965–68 was that Vietcong guerrilla tactics neutralized the American advantage in firepower.” The Vietcong avoided large-scale conventional battles, choosing to fight in close proximity and utilize complex underground <strong>tunnels</strong> to evade detection. They deployed lethal <strong>booby traps</strong>, such as Punji pits and tripwires, which caused high casualties and constant paranoia among US troops. <em>Therefore, the Vietcong's guerrilla tactics made Search and Destroy missions unsuccessful because US patrols were constantly ambushed by an invisible enemy, preventing them from utilizing their superior weapons.</em>\n\n“A second reason why US Search and Destroy tactics were unsuccessful in the years 1965–68 was that they actively alienated the South Vietnamese peasant population.” Search and Destroy operations relied on burning suspected villages, destroying crops, and killing livestock in what were often called 'Zippo raids.' This destruction of rural livelihoods completely undermined the US policy of winning the <strong>hearts and minds</strong> of the civilian population. <em>Therefore, civilian alienation made Search and Destroy tactics unsuccessful because it drove local peasants to support the Vietcong, providing them with food, cover, and vital intelligence.</em>\n\n“A third reason why US Search and Destroy tactics were unsuccessful in the years 1965–68 was the flawed focus on body counts rather than holding territory.” The US military strategy of <strong>attrition</strong> aimed to kill more enemy fighters than they could replace, using helicopters to temporarily sweep areas before returning to base. However, this meant that once US forces withdrew, the Vietcong simply returned and re-established control over the villages. <em>Therefore, the focus on body counts and lack of territorial control made Search and Destroy unsuccessful because it resulted in temporary tactical raids that failed to establish permanent security or political control.</em>",
+        "modelAnswer": "One major reason Search and Destroy tactics failed was the <strong>superiority of Vietcong asymmetric guerrilla tactics</strong>. The Vietcong fought at close quarters ('hanging onto belts') to prevent US forces from calling in artillery and air strikes. Because the guerrillas wore peasant clothes and retreated instantly into complex underground tunnel complexes, American patrols rarely caught enemy units in open battle. Therefore, this caused Search and Destroy to fail because high-technology firepower was rendered useless against an elusive enemy that dictated every engagement.<br><br>Furthermore, the tactic catastrophically undermined the <strong>essential struggle to win the 'hearts and minds' of the rural peasantry</strong>. Searching for guerrillas, US troops carried out 'Zippo raids', torching peasant huts, killing livestock, and burning grain stores. These scorched-earth operations generated millions of destitute rural refugees. Therefore, this led directly to tactical failure because brutal search missions alienated ordinary villagers, driving agrarian communities into actively supplying intelligence, shelter, and recruits to the Vietcong.<br><br>In addition, the strategy was fatally compromised by its <strong>reliance on inflated 'body counts' and civilian atrocities</strong>. General Westmoreland measured success purely through enemy deaths rather than territory secured. Pressure for high body counts encouraged indiscriminate killing, culminating in the 1968 My Lai massacre where US soldiers murdered over 500 unarmed villagers. Therefore, this forced the complete moral collapse of the strategy because slaughtering non-combatants destroyed international legitimacy and convinced the Vietnamese population that American troops were brutal foreign oppressors.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_8_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_8_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_8_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Search and Destroy tactics failed between 1965 and 1968 because American troops in helicopters could not find the Vietcong who hid among ordinary villagers. The Vietcong used guerrilla tactics to set ambushes and then disappear into the jungle. US soldiers got frustrated and burned villages with Zippo lighters, which ruined the hearts and minds campaign. Therefore the local people supported the Vietcong instead of America.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions helicopters, Zippo lighters, and hearts and minds, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason Search and Destroy failed was the <strong>effectiveness of Vietcong guerrilla tactics</strong>. The Vietcong used hit-and-run ambushes, attacking US patrols at close range ('grabbing them by the belt') so American artillery could not be used. When US troops landed in helicopters, the Vietcong vanished into tunnels or melted into local villages without uniforms.<br><br>Another reason was the total failure to win <strong>'hearts and minds' of the Vietnamese people</strong>. General Westmoreland judged success by body counts. US soldiers burned peasant huts in 'Zippo raids', killed livestock, and destroyed rice paddies. This brutality made ordinary peasants hate the Americans.<br><br>In conclusion, guerrilla warfare and losing hearts and minds made Search and Destroy ineffective.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (guerrilla tactics and hearts and minds). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as civilian atrocities like the 1968 My Lai massacre and the flawed 'body count' metric), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason Search and Destroy tactics failed was the <strong>superiority of Vietcong asymmetric guerrilla tactics</strong>. The Vietcong fought at close quarters ('hanging onto belts') to prevent US forces from calling in artillery and air strikes. Because the guerrillas wore peasant clothes and retreated instantly into complex underground tunnel complexes, American patrols rarely caught enemy units in open battle. Therefore, this caused Search and Destroy to fail because high-technology firepower was rendered useless against an elusive enemy that dictated every engagement.<br><br>Furthermore, the tactic catastrophically undermined the <strong>essential struggle to win the 'hearts and minds' of the rural peasantry</strong>. Searching for guerrillas, US troops carried out 'Zippo raids', torching peasant huts, killing livestock, and burning grain stores. These scorched-earth operations generated millions of destitute rural refugees. Therefore, this led directly to tactical failure because brutal search missions alienated ordinary villagers, driving agrarian communities into actively supplying intelligence, shelter, and recruits to the Vietcong.<br><br>In addition, the strategy was fatally compromised by its <strong>reliance on inflated 'body counts' and civilian atrocities</strong>. General Westmoreland measured success purely through enemy deaths rather than territory secured. Pressure for high body counts encouraged indiscriminate killing, culminating in the 1968 My Lai massacre where US soldiers murdered over 500 unarmed villagers. Therefore, this forced the complete moral collapse of the strategy because slaughtering non-combatants destroyed international legitimacy and convinced the Vietnamese population that American troops were brutal foreign oppressors.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "usa_mock_8_q3a",
@@ -811,9 +1044,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Nixon Doctrine"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why US involvement in the Vietnam War changed under President Nixon was the implementation of Vietnamisation to withdraw US troops.” Under the <strong>Nixon Doctrine</strong>, Nixon began the systematic withdrawal of US ground troops, reducing forces from over 500,000 to under 25,000 by 1972, while training the South Vietnamese army. This policy was designed to appease domestic anti-war sentiment by reducing US casualties. <em>Therefore, Vietnamisation was a primary cause of why US involvement in the Vietnam War changed under President Nixon because it marked the transition of the US role from active ground combat to an advisory and supportive capacity.</em>\n\n“A second reason why US involvement in the Vietnam War changed under President Nixon was that intense domestic anti-war protests and political pressure forced a change in policy.” Events like the exposure of the <strong>My Lai Massacre</strong> in 1969, the <strong>Kent State</strong> shootings in 1970, and the leaking of the <strong>Pentagon Papers</strong> in 1971 destroyed public trust. The resulting credibility gap made it politically impossible for Nixon to maintain large-scale US ground involvement. <em>Therefore, domestic political unrest was a decisive cause of why US involvement in the Vietnam War changed under President Nixon because it forced the administration to accelerate troop withdrawals to prevent political collapse at home.</em>\n\n“A third reason why US involvement in the Vietnam War changed under President Nixon was that Nixon shifted the military focus toward aggressive air campaigns.” Nixon ordered the invasion of neutral Cambodia in 1970 and Laos in 1971, and launched Operation <strong>Linebacker</strong> bombings on Hanoi. These operations aimed to disrupt the Ho Chi Minh Trail and force North Vietnam to negotiate, protecting withdrawing US forces. <em>Therefore, this military shift to air campaigns was a key cause of why US involvement in the Vietnam War changed under President Nixon because it replaced American ground combat casualties with heavy air power and regional incursions.</em>",
+        "modelAnswer": "One major reason for changed involvement was the <strong>implementation of Vietnamisation from 1969 onwards</strong>. Faced with anti-war protests, Nixon withdrew US ground forces while supplying the South Vietnamese Army (ARVN) with artillery, aircraft, and training. Consequently, US troop deployments plummeted from 543,000 in 1969 to under 25,000 by 1972. Therefore, this caused a profound change in US policy because it transformed America's role from fighting a direct ground war to providing technological and logistical support to local South Vietnamese forces.<br><br>Furthermore, policy shifted due to the <strong>overarching geopolitical realignment of the Nixon Doctrine (1969)</strong>. Outlined in Guam, the doctrine declared that while the US would maintain its nuclear umbrella and treaty alliances, Asian nations were now responsible for providing their own ground troops for military defence. Nixon recognized that American public opinion would no longer tolerate open-ended foreign troop commitments. Therefore, this led directly to reduced direct military intervention because Washington formally abandoned the open-ended interventionist policies established under the Truman Doctrine.<br><br>In addition, involvement changed through <strong>Nixon's aggressive aerial escalation into Cambodia and Laos</strong>. While withdrawing ground troops to placate domestic voters, Nixon authorised secret B-52 bombing (Operation Menu) and incursions into Cambodia to cut the Ho Chi Minh Trail. Therefore, this forced a major transformation in military strategy because Nixon compensated for withdrawing American infantry by drastically expanding covert aerial warfare across Indochina.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_2_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_2_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_2_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "US involvement changed under Nixon because American people were sick of the war. Nixon introduced Vietnamisation to train the South Vietnamese army so American troops could come home. He also announced the Nixon Doctrine saying Asian nations must defend themselves. However, Nixon secretly bombed Cambodia to destroy communist supply lines. Therefore Nixon reduced US ground soldiers while expanding air bombing.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Vietnamisation, Nixon Doctrine, and Cambodia, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason involvement changed was the introduction of <strong>Vietnamisation in 1969</strong>. Nixon aimed to withdraw US combat troops while building up the South Vietnamese Army (ARVN) with modern American weapons, tanks, and helicopters so they could fight the war themselves. Between 1969 and 1972, Nixon reduced US troop numbers from 543,000 to under 50,000.<br><br>Another reason was the adoption of the <strong>Nixon Doctrine</strong>. Announced in Guam in 1969, the doctrine stated that the USA would honour treaty commitments and provide nuclear protection, but Asian allies had to supply their own ground troops for defence.<br><br>In conclusion, Vietnamisation and the Nixon Doctrine shifted the fighting onto the ARVN.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Vietnamisation and Nixon Doctrine). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as domestic anti-war pressure and expanding aerial bombing into Cambodia and Laos), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason for changed involvement was the <strong>implementation of Vietnamisation from 1969 onwards</strong>. Faced with anti-war protests, Nixon withdrew US ground forces while supplying the South Vietnamese Army (ARVN) with artillery, aircraft, and training. Consequently, US troop deployments plummeted from 543,000 in 1969 to under 25,000 by 1972. Therefore, this caused a profound change in US policy because it transformed America's role from fighting a direct ground war to providing technological and logistical support to local South Vietnamese forces.<br><br>Furthermore, policy shifted due to the <strong>overarching geopolitical realignment of the Nixon Doctrine (1969)</strong>. Outlined in Guam, the doctrine declared that while the US would maintain its nuclear umbrella and treaty alliances, Asian nations were now responsible for providing their own ground troops for military defence. Nixon recognized that American public opinion would no longer tolerate open-ended foreign troop commitments. Therefore, this led directly to reduced direct military intervention because Washington formally abandoned the open-ended interventionist policies established under the Truman Doctrine.<br><br>In addition, involvement changed through <strong>Nixon's aggressive aerial escalation into Cambodia and Laos</strong>. While withdrawing ground troops to placate domestic voters, Nixon authorised secret B-52 bombing (Operation Menu) and incursions into Cambodia to cut the Ho Chi Minh Trail. Therefore, this forced a major transformation in military strategy because Nixon compensated for withdrawing American infantry by drastically expanding covert aerial warfare across Indochina.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (232 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_1": [
@@ -832,9 +1089,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "the draft system"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why there was opposition to the war in Vietnam in the years 1965–72 was the unfairness of the draft system.” The selective service system called up young men, particularly working-class and Black Americans who could not access college deferments, to fight in a dangerous conflict. The draft led to high-profile resistance, including Muhammad Ali refusing to serve and students burning draft cards. <em>Therefore, the draft system was a primary cause of opposition to the war because it directly threatened the lives of young Americans, sparking massive student-led anti-war protests.</em>\n\n“A second reason why there was opposition to the war in Vietnam in the years 1965–72 was the unprecedented television and media coverage of the conflict.” Unlike previous wars, the media broadcasted graphic footage of combat, such as the use of <strong>Napalm</strong> and the devastation of the <strong>Tet Offensive</strong> in 1968, directly into American living rooms. This coverage exposed the brutality of the war and created a severe <strong>credibility gap</strong> between government promises and the reality on the ground. <em>Therefore, media coverage was a crucial cause of opposition to the war because it turned public opinion against the conflict by exposing the human cost and showing that victory was unlikely.</em>\n\n“A third reason why there was opposition to the war in Vietnam in the years 1965–72 was the shock of events that exposed military atrocities.” The revelation of the <strong>My Lai Massacre</strong> in 1969, where US soldiers murdered over 300 unarmed South Vietnamese civilians, horrified the public. This atrocity, alongside the leaking of the <strong>Pentagon Papers</strong> in 1971, proved that the government had lied about the war's progress and methods. <em>Therefore, the exposure of military atrocities and lies was a key cause of opposition to the war because it undermined the moral justification for US involvement, uniting moderates and radicals in demanding withdrawal.</em>",
+        "modelAnswer": "One primary cause of anti-war opposition was <strong>uncensored television and media coverage of the conflict</strong>. As the first 'living-room war', networks broadcast raw combat footage into American homes each evening, showing body bags and casualties. Crucially, following the 1968 Tet Offensive, CBS anchorman Walter Cronkite declared the war an unwinnable stalemate, shattering government claims that victory was near. Therefore, this caused public opposition to surge because transparent media reporting exposed a profound 'credibility gap' between upbeat official Pentagon statements and the grim reality of military stalemate.<br><br>Furthermore, protest was fuelled by the <strong>glaring social and racial inequality of the military draft system</strong>. The draft conscripted men aged 18 to 26, but granted college deferments to middle-class youths. Consequently, working-class and Black Americans were drafted in disproportionate numbers. Therefore, this led to furious domestic resistance because young people viewed the draft as an immoral system that forced underprivileged citizens to fight in an unjust foreign war.<br><br>In addition, opposition escalated due to <strong>horrific civilian atrocities and domestic state violence against protesters</strong>. In 1969, revelations of the My Lai massacre of 500 civilians shocked the public. In May 1970, National Guardsmen shot dead four student protesters at Kent State University. Therefore, this forced widespread anti-war mobilisations because blatant war crimes and the killing of student demonstrators convinced millions that the conflict was morally corrupting American democracy.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_4_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_4_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_4_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "There was opposition to the Vietnam War because people watched television news every night showing American soldiers dying and burning villages. Also young men hated the draft system because it seemed unfair that rich college boys could avoid the draft while working-class and Black men were sent to fight. Protests spread to universities like Kent State where four students were shot dead. Therefore millions protested to end the war.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions TV news, the draft, and Kent State, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for opposition was <strong>television and media coverage of the war</strong>. Vietnam was the first 'living-room war', with journalists broadcasting uncensored footage of combat, casualties, and burning villages. When respected news anchor Walter Cronkite declared the war was an unwinnable stalemate after the 1968 Tet Offensive, millions of Americans lost faith in the government.<br><br>Another reason was the unfairness of <strong>the military draft system</strong>. The Selective Service system conscripted young men aged 18 to 26. Because middle-class college students could get deferments, working-class and Black Americans were drafted in disproportionate numbers, leading to mass draft-card burnings.<br><br>In conclusion, media reports and the draft system caused immense public protest against the war.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (media and the draft). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as atrocities like My Lai and the killing of students at Kent State in 1970), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary cause of anti-war opposition was <strong>uncensored television and media coverage of the conflict</strong>. As the first 'living-room war', networks broadcast raw combat footage into American homes each evening, showing body bags and casualties. Crucially, following the 1968 Tet Offensive, CBS anchorman Walter Cronkite declared the war an unwinnable stalemate, shattering government claims that victory was near. Therefore, this caused public opposition to surge because transparent media reporting exposed a profound 'credibility gap' between upbeat official Pentagon statements and the grim reality of military stalemate.<br><br>Furthermore, protest was fuelled by the <strong>glaring social and racial inequality of the military draft system</strong>. The draft conscripted men aged 18 to 26, but granted college deferments to middle-class youths. Consequently, working-class and Black Americans were drafted in disproportionate numbers. Therefore, this led to furious domestic resistance because young people viewed the draft as an immoral system that forced underprivileged citizens to fight in an unjust foreign war.<br><br>In addition, opposition escalated due to <strong>horrific civilian atrocities and domestic state violence against protesters</strong>. In 1969, revelations of the My Lai massacre of 500 civilians shocked the public. In May 1970, National Guardsmen shot dead four student protesters at Kent State University. Therefore, this forced widespread anti-war mobilisations because blatant war crimes and the killing of student demonstrators convinced millions that the conflict was morally corrupting American democracy.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (234 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_2": [
@@ -853,9 +1134,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The impact of the Tet Offensive (1968)"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason why President Nixon introduced Vietnamization was the unsustainable toll of <strong>rising American military casualties</strong> and the explosive anti-war backlash on the home front. By 1969, over 36,000 American soldiers had been killed, with hundreds dying each week. Draft resistance, student strikes, and veterans returning medals convinced Nixon that the American public would no longer tolerate high US body bags, forcing him to promise 'peace with honour' and begin the phased withdrawal of ground troops.<br><br>A second decisive factor was the <strong>shattering psychological impact of the 1968 Tet Offensive</strong>. Tet had destroyed the credibility of the US government, exposing the reality that 500,000 US soldiers could not secure South Vietnam against communist guerrilla infiltration. Nixon recognized that continuing a direct US ground war was politically suicidal, compelling him to shift the military burden of ground combat entirely onto the South Vietnamese Army (ARVN), supported by US air and naval power.<br><br>Finally, Nixon sought to implement his broader <strong>Nixon Doctrine and diplomatic détente</strong> with the Soviet Union and China. By pursuing diplomatic triangular diplomacy with Beijing and Moscow, Nixon hoped to isolate North Vietnam diplomatically while demonstrating that America’s Asian allies had to take primary responsibility for their own military defense, thereby facilitating an honourable exit for the United States.",
+        "modelAnswer": "One major reason President Nixon introduced Vietnamization was the <strong>unsustainable domestic political cost of rising American casualties</strong>. By late 1968, US battle deaths exceeded 30,000, with weekly casualties routinely surpassing 500 conscripts. This rising death toll triggered public outrage, draft card burnings, and mass Moratorium marches across American cities. Therefore, this forced Nixon to introduce Vietnamization because continuing a war requiring continuous high casualties among American soldiers was politically unsustainable for an elected president.<br><br>Furthermore, policy change was compelled by the <strong>shattering psychological aftermath of the January 1968 Tet Offensive</strong>. When communist troops attacked over 100 towns and breached the US Embassy in Saigon, official credibility collapsed. Tet conclusively demonstrated to political leaders that massive US ground intervention had failed to destroy the communist insurgency. Therefore, this led directly to Vietnamization because the offensive proved a decisive military victory was unattainable, convincing policymakers that American ground forces must be phased out.<br><br>In addition, Nixon introduced the policy to <strong>fulfill his 1968 election campaign pledge of securing 'peace with honour'</strong>. Having campaigned on a 'secret plan' to end the conflict, Nixon needed a strategy that allowed US disengagement without abandoning South Vietnam to immediate communist conquest. Equipping the ARVN with modern tanks and artillery allowed Nixon to withdraw troops while claiming to preserve South Vietnamese independence. Therefore, this caused the adoption of Vietnamization because equipping local forces provided a face-saving exit strategy that facilitated American military withdrawal.",
         "pdfUrl": "/pdfs/usa/usa_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/usa/"
+        "mockUrl": "/units/usa/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "President Nixon introduced Vietnamization in 1969 because too many American soldiers were dying in Vietnam. The 1968 Tet Offensive had shocked everyone and proved the communists were not beaten. The American public held huge anti-war marches and demanded that troops come home. So Nixon decided to train South Vietnamese soldiers to fight while American soldiers returned home. Therefore Nixon started bringing US soldiers back to America.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions casualties, the Tet Offensive, and bringing troops home, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason Nixon introduced Vietnamization was the <strong>heavy toll of rising American military casualties</strong>. By 1968, over 30,000 US soldiers had been killed in Vietnam, with weekly death counts exceeding 500. This heavy loss of life created widespread grief and anger at home, turning public opinion against continuing the war.<br><br>Another reason was the psychological impact of the <strong>Tet Offensive in January 1968</strong>. Over 80,000 communist fighters launched coordinated attacks across 100 cities. Although the US military repelled the offensive, it proved that the Vietcong could still launch massive attacks, destroying President Johnson's political credibility.<br><br>In conclusion, heavy casualties and the Tet Offensive convinced Nixon to adopt Vietnamization.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (rising casualties and Tet Offensive). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as domestic electoral pressure and fulfilling Nixon's promise of 'peace with honor'), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason President Nixon introduced Vietnamization was the <strong>unsustainable domestic political cost of rising American casualties</strong>. By late 1968, US battle deaths exceeded 30,000, with weekly casualties routinely surpassing 500 conscripts. This rising death toll triggered public outrage, draft card burnings, and mass Moratorium marches across American cities. Therefore, this forced Nixon to introduce Vietnamization because continuing a war requiring continuous high casualties among American soldiers was politically unsustainable for an elected president.<br><br>Furthermore, policy change was compelled by the <strong>shattering psychological aftermath of the January 1968 Tet Offensive</strong>. When communist troops attacked over 100 towns and breached the US Embassy in Saigon, official credibility collapsed. Tet conclusively demonstrated to political leaders that massive US ground intervention had failed to destroy the communist insurgency. Therefore, this led directly to Vietnamization because the offensive proved a decisive military victory was unattainable, convincing policymakers that American ground forces must be phased out.<br><br>In addition, Nixon introduced the policy to <strong>fulfill his 1968 election campaign pledge of securing 'peace with honour'</strong>. Having campaigned on a 'secret plan' to end the conflict, Nixon needed a strategy that allowed US disengagement without abandoning South Vietnam to immediate communist conquest. Equipping the ARVN with modern tanks and artillery allowed Nixon to withdraw troops while claiming to preserve South Vietnamese independence. Therefore, this caused the adoption of Vietnamization because equipping local forces provided a face-saving exit strategy that facilitated American military withdrawal.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (232 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_3": [
@@ -874,9 +1179,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "the Ho Chi Minh Trail"
         ],
         "sourceExtract": "",
-        "modelAnswer": "“One reason why the USA was involved in the peace negotiations (1972–73) about the war in Vietnam was President Nixon's need to implement Vietnamisation and fulfill his election promises.” Nixon was elected in 1968 after promising to achieve 'peace with honour'. His policy of <strong>Vietnamisation</strong> aimed to withdraw US troops while training and equipping South Vietnamese forces to defend themselves, ending direct US combat involvement. <em>Therefore, Nixon's political commitment to the American electorate was a primary reason why the USA was involved in the peace negotiations (1972–73) about the war in Vietnam because a negotiated treaty was the only way to withdraw troops honorably.</em>\n\n“A second reason why the USA was involved in the peace negotiations (1972–73) about the war in Vietnam was that the USA realized that a military victory was impossible due to the resilience of communist supply routes.” Despite massive bombing campaigns like Operation Linebacker, the Vietcong and North Vietnamese Army continued to receive supplies along the <strong>Ho Chi Minh Trail</strong> through Cambodia and Laos. The trail's resilience meant that US military power could not force a communist surrender, resulting in a prolonged deadlock. <em>Therefore, the failure to sever communist lines of supply was a key reason why the USA was involved in the peace negotiations (1972–73) about the war in Vietnam because it forced the Nixon administration to accept that a diplomatic settlement was the only realistic exit.</em>\n\n“A third reason why the USA was involved in the peace negotiations (1972–73) about the war in Vietnam was the immense economic burden of the conflict and changing global relations.” The war cost the USA over <strong>$100 billion</strong>, causing high inflation. At the same time, Nixon pursued a policy of <strong>détente</strong> with the Soviet Union and rapprochement with China, hoping to pressure North Vietnam to negotiate. <em>Therefore, financial pressures and the pursuit of détente were vital reasons why the USA was involved in the peace negotiations (1972–73) about the war in Vietnam because they made ending the war highly desirable for US global strategy.</em>",
+        "modelAnswer": "One primary reason the USA pursued negotiations was the <strong>advanced state of Vietnamisation and domestic war weariness</strong>. By late 1972, Nixon had withdrawn over 500,000 troops, leaving fewer than 25,000. With the public exhausted and Congress threatening to cut funds, escalation was impossible. Therefore, this forced the USA into negotiations because diplomacy represented the only viable mechanism to exit the conflict, secure the return of 591 American prisoners of war, and fulfill Nixon's promise of 'peace with honour'.<br><br>Furthermore, negotiations were compelled by the <strong>inability of US air power to sever the Ho Chi Minh Trail</strong>. Running through Laos and Cambodia, this corridor supplied North Vietnamese units with thousands of tons of Soviet and Chinese weapons. Even after years of heavy B-52 carpet bombing, supply lines remained resilient. Therefore, this led directly to peace talks because American military leadership recognized that air strikes alone could never choke off communist logistics or force North Vietnam into unconditional surrender.<br><br>In addition, negotiations were unlocked through <strong>Nixon's 'triangular diplomacy' with Moscow and Beijing</strong>. By visiting Beijing in February 1972 and signing the SALT I treaty in Moscow in May 1972, Nixon successfully exploited the Sino-Soviet split. Both communist superpowers, seeking improved economic relations with Washington, pressured North Vietnam to negotiate pragmatically. Therefore, this caused a diplomatic breakthrough because isolating Hanoi from unconditional superpower backing made the signing of the January 1973 Paris Peace Accords possible.",
         "pdfUrl": "/pdfs/mocks/usa/usa_mock_5_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_5_question_booklet.html"
+        "mockUrl": "/units/usa/usa_mock_5_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The USA was involved in peace negotiations in 1972–73 because Nixon wanted to end the war and get all American prisoners of war back home. Vietnamisation had allowed many US troops to leave, but the North Vietnamese kept sending supplies down the Ho Chi Minh Trail. Nixon also visited China and Russia to get them to pressure North Vietnam. Finally they signed the Paris Peace Accords in 1973. Therefore the US was able to withdraw from the war.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions prisoners of war, the Ho Chi Minh Trail, and Paris Accords, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the USA negotiated was the progress of <strong>Vietnamisation</strong>. By 1972, President Nixon had withdrawn almost all US combat troops, leaving fewer than 25,000 soldiers in South Vietnam. Because the American public refused to allow ground troops to return, Nixon had to use diplomacy to secure a peace deal and retrieve captured US pilots.<br><br>Another reason was the failure to shut down the <strong>Ho Chi Minh Trail</strong>. Despite dropping millions of tons of bombs on Laos and Cambodia, the North Vietnamese continued moving troops and artillery south along the trail, proving that US military power could not prevent North Vietnam from fighting.<br><br>In conclusion, troop withdrawals under Vietnamisation and the failure to block the trail forced the US to negotiate.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Vietnamisation and Ho Chi Minh Trail). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as triangular diplomacy with Beijing and Moscow, and the December 1972 Christmas Bombings), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason the USA pursued negotiations was the <strong>advanced state of Vietnamisation and domestic war weariness</strong>. By late 1972, Nixon had withdrawn over 500,000 troops, leaving fewer than 25,000. With the public exhausted and Congress threatening to cut funds, escalation was impossible. Therefore, this forced the USA into negotiations because diplomacy represented the only viable mechanism to exit the conflict, secure the return of 591 American prisoners of war, and fulfill Nixon's promise of 'peace with honour'.<br><br>Furthermore, negotiations were compelled by the <strong>inability of US air power to sever the Ho Chi Minh Trail</strong>. Running through Laos and Cambodia, this corridor supplied North Vietnamese units with thousands of tons of Soviet and Chinese weapons. Even after years of heavy B-52 carpet bombing, supply lines remained resilient. Therefore, this led directly to peace talks because American military leadership recognized that air strikes alone could never choke off communist logistics or force North Vietnam into unconditional surrender.<br><br>In addition, negotiations were unlocked through <strong>Nixon's 'triangular diplomacy' with Moscow and Beijing</strong>. By visiting Beijing in February 1972 and signing the SALT I treaty in Moscow in May 1972, Nixon successfully exploited the Sino-Soviet split. Both communist superpowers, seeking improved economic relations with Washington, pressured North Vietnam to negotiate pragmatically. Therefore, this caused a diplomatic breakthrough because isolating Hanoi from unconditional superpower backing made the signing of the January 1973 Paris Peace Accords possible.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_4": [
@@ -947,9 +1276,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Kiel Mutiny"
         ],
         "sourceExtract": "",
-        "modelAnswer": "The German Revolution of 1918, which swept away the autocratic Kaiserreich and led to the creation of the Weimar Republic, was caused by a combination of military failure, domestic starvation, and political collapse. The fundamental cause of the revolution was Germany’s imminent military defeat in the First World War. By the summer of 1918, the German army’s final offensive had failed, and the entry of the United States had tipped the military balance decisively in favor of the Allies. Knowing the war was lost, Germany's military commanders, Ludendorff and Hindenburg, advised the Kaiser to hand power to a civilian government to secure a more favorable peace. This sudden admission of defeat shocked the German public, who had been lied to by wartime propaganda, and shattered their faith in the imperial government’s leadership.<br><br><br><br>Furthermore, this military exhaustion was worsened by severe starvation and suffering on the home front, caused by the British naval blockade. The blockade had cut off Germany's imports of food and fertilizer, resulting in catastrophic food shortages. By 1918, over 750,000 German civilians had died from starvation and related illnesses. The population was physically and mentally broken. Consequently, when the Spanish Flu epidemic struck, it swept through a weakened and despairing population, fueling deep-seated anger against the Kaiser and the ruling elites. This suffering convinced ordinary Germans that the imperial system was sacrificing their lives for a futile war, creating a highly volatile revolutionary climate.<br><br><br><br>This domestic anger exploded into open rebellion with the Kiel Mutiny in late October 1918. Realizing the war was lost, naval commanders in Kiel ordered a final, suicidal battle against the British navy to save the \"honor\" of the fleet. Refusing to participate in what they saw as a death sentence, the sailors mutinied. The mutiny spread rapidly across Germany's industrial ports and cities. Armed sailors and factory workers formed \"workers' and soldiers' councils\" to seize municipal buildings and factories, mimicking the Bolshevik Revolution in Russia. To prevent a complete communist takeover, moderate Social Democrats led by Friedrich Ebert demanded the Kaiser’s abdication. On 9 November 1918, Kaiser Wilhelm II abdicated and fled to exile in Holland, and Philipp Scheidemann declared the new German Republic. Thus, the revolution was the direct result of a population driven to rebellion by military defeat, starvation, and a refusal to die for a collapsing imperial regime.",
+        "modelAnswer": "One major cause of the German Revolution was <strong>impending military defeat compounded by the British naval blockade</strong>. By October 1918, General Ludendorff admitted the Western Front had collapsed and Germany must seek an armistice. Simultaneously, the four-year naval blockade caused severe food shortages, hypothermia, and over 750,000 civilian deaths, destroying public morale. Therefore, this caused the revolution because military catastrophe and domestic starvation completely destroyed the Kaiser's political legitimacy and exhausted the nation's willingness to fight.<br><br>Furthermore, the crisis was ignited by the <strong>Kiel naval mutiny in late October 1918</strong>. When admirals ordered a suicidal final attack against the British Grand Fleet, sailors at Kiel refused to obey, arresting officers and raising revolutionary flags. Within days, this revolt spread rapidly across German ports and industrial cities like Hamburg. Therefore, this led directly to the revolution because the armed forces openly mutinied, depriving the imperial regime of the military power required to crush domestic rebellion.<br><br>In addition, revolution succeeded through the <strong>establishment of workers' and soldiers' councils across Germany</strong>. Inspired by the Russian soviets, trade unions and mutinous soldiers seized town halls throughout Bavaria and Berlin. On 9 November 1918, with general strikes paralysing the capital, Kaiser Wilhelm II was forced to abdicate, allowing Friedrich Ebert to proclaim a republic. Therefore, this forced the collapse of the monarchy because nationwide mass insurrections left the imperial government powerless to govern.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_notebook_3_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_3_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_3_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The German Revolution of 1918 happened because Germany was losing the First World War. The British naval blockade starved German civilians, so people were hungry and angry with the Kaiser. Then sailors at Kiel mutinied and refused to attack the British navy. Workers and soldiers joined the protests, forcing Kaiser Wilhelm II to run away to Holland. Therefore the German Empire collapsed and a new republic was formed.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the war defeat, blockade, and Kiel mutiny, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the revolution occurred was <strong>military defeat and the British naval blockade</strong>. By autumn 1918, German military commanders Ludendorff and Hindenburg knew the army could not win the war. At home, the naval blockade prevented food supplies from entering, causing over 750,000 civilian deaths from starvation and hypothermia, which turned the public against the government.<br><br>Another reason was the <strong>Kiel Mutiny in late October 1918</strong>. When naval commanders ordered sailors to sail out for a suicidal final battle against the British navy, sailors at Kiel refused to obey orders. They took control of their ships and established sailors' councils, sparking widespread mutinies across Germany.<br><br>In conclusion, starvation from the blockade and the Kiel Mutiny forced the Kaiser to abdicate.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (blockade and Kiel Mutiny). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the widespread creation of workers' and soldiers' councils and the abdication of Kaiser Wilhelm II), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major cause of the German Revolution was <strong>impending military defeat compounded by the British naval blockade</strong>. By October 1918, General Ludendorff admitted the Western Front had collapsed and Germany must seek an armistice. Simultaneously, the four-year naval blockade caused severe food shortages, hypothermia, and over 750,000 civilian deaths, destroying public morale. Therefore, this caused the revolution because military catastrophe and domestic starvation completely destroyed the Kaiser's political legitimacy and exhausted the nation's willingness to fight.<br><br>Furthermore, the crisis was ignited by the <strong>Kiel naval mutiny in late October 1918</strong>. When admirals ordered a suicidal final attack against the British Grand Fleet, sailors at Kiel refused to obey, arresting officers and raising revolutionary flags. Within days, this revolt spread rapidly across German ports and industrial cities like Hamburg. Therefore, this led directly to the revolution because the armed forces openly mutinied, depriving the imperial regime of the military power required to crush domestic rebellion.<br><br>In addition, revolution succeeded through the <strong>establishment of workers' and soldiers' councils across Germany</strong>. Inspired by the Russian soviets, trade unions and mutinous soldiers seized town halls throughout Bavaria and Berlin. On 9 November 1918, with general strikes paralysing the capital, Kaiser Wilhelm II was forced to abdicate, allowing Friedrich Ebert to proclaim a republic. Therefore, this forced the collapse of the monarchy because nationwide mass insurrections left the imperial government powerless to govern.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "mock_notebook_1_q1",
@@ -984,9 +1337,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Kapp Putsch"
         ],
         "sourceExtract": "",
-        "modelAnswer": "The Weimar Republic was born out of defeat in the First World War, which immediately triggered severe political instability between 1919 and 1923. One primary cause of this instability was the widespread anger and resentment surrounding the Treaty of Versailles. Signed reluctantly by the new Social Democratic government in June 1919, the treaty was near-universally condemned in Germany as a *Diktat*—a dictated peace imposed without negotiation. In particular, Article 231 (the \"War Guilt\" clause) forced Germany to accept sole responsibility for the war, which deeply humiliated the population and fostered the *Dolchstosslegende* (the \"stab-in-the-back\" myth). This myth claimed that the German army had not been defeated militarily but was betrayed from within by the socialist politicians who signed the Armistice—dubbed the \"November Criminals\". Consequently, this severely undermined the legitimacy of the Weimar democracy and made its political leaders permanent targets for right-wing nationalists.<br><br><br><br>Furthermore, this extreme polarization of German politics led to direct physical challenges to the state from both the Left and the Right. When the government attempted to reduce the size of the army and disband the Freikorps (nationalist paramilitary units of ex-soldiers) to meet the military restrictions of Versailles, right-wing military figures revolted. Led by Wolfgang Kapp and backed by armed Freikorps troops, they successfully seized Berlin in March 1920. The weakness of the state was highlighted when the regular army (*Reichswehr*) refused to fire on the rebels. The Weimar politicians were forced to flee Berlin, and the putsch was only defeated because the government called for a general strike of trade unions and civil servants, which paralyzed the city’s infrastructure. This proved that the government lacked a reliable monopoly on physical force and depended on extra-parliamentary measures to survive.<br><br><br><br>Finally, this political instability was exacerbated by a targeted campaign of right-wing terrorism and political assassinations. Between 1919 and 1922, right-wing extremists carried out 376 political murders, aimed at eliminating democratic politicians and destabilizing the state. The most high-profile victims included Matthias Erzberger, the Centre Party politician who had signed the 1918 Armistice, assassinated in 1921; and Walther Rathenau, the brilliant Weimar Foreign Minister, murdered in 1922. These assassinations, combined with the subsequent hyperinflation crisis of 1923, meant that by the end of 1923, the Weimar Republic's authority was fragile, contested by extremist paramilitary groups, and deeply unpopular among a population that blamed democracy for their national humiliation and economic misery.",
+        "modelAnswer": "One major cause of political instability was the <strong>outrage surrounding the Treaty of Versailles in June 1919</strong>. Germans universally condemned the treaty as an imposed 'Diktat' that forced Germany to accept Article 231 War Guilt, surrender 13% of its territory, and pay £6.6 billion in reparations. Right-wing nationalists promoted the 'stab-in-the-back' myth (*Dolchstosslegende*), branding Weimar politicians 'November Criminals'. Therefore, this caused severe instability because it permanently damaged the democratic republic's legitimacy and made moderate politicians targets of deep nationalist resentment.<br><br>Furthermore, the republic was destabilised by <strong>violent right-wing uprisings like the Kapp Putsch in March 1920</strong>. When the government attempted to disband the Freikorps to meet treaty troop limits, nationalist Wolfgang Kapp and 5,000 paramilitaries seized Berlin. Crucially, the German army refused to protect the state, forcing the cabinet to flee. Therefore, this led to dangerous political instability because it proved the republic could not rely on its own armed forces to defend democracy against right-wing treason.<br><br>In addition, instability was intensified by <strong>extreme left-wing uprisings and waves of political assassinations</strong>. In January 1919, the communist Spartacist League launched an armed uprising in Berlin, bloodily suppressed by the Freikorps. Subsequently, right-wing terrorist groups like Organisation Consul assassinated 376 republican politicians, including Foreign Minister Walther Rathenau in 1922. Therefore, this forced continuous instability because regular paramilitary street violence and political terrorism made constitutional governance almost impossible to sustain.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_notebook_1_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_1_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_1_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The Weimar Republic had lots of political instability between 1919 and 1923 because Germans hated losing the war. They blamed the government for signing the harsh Treaty of Versailles and called them the November Criminals. There were also violent rebellions like the right-wing Kapp Putsch where soldiers tried to take over Berlin. Therefore politicians were constantly threatened by enemies who wanted to overthrow the government.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Versailles and the Kapp Putsch, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for instability was the <strong>Treaty of Versailles in 1919</strong>. Germans despised the 'Diktat' which forced them to accept Article 231 war guilt, pay £6.6 billion in reparations, and lose 13% of their European territory. Right-wing Germans accused the Weimar politicians of stabbing the army in the back ('Dolchstoss'), making the new democratic republic extremely unpopular.<br><br>Another reason was the <strong>Kapp Putsch in March 1920</strong>. When the government tried to disband Freikorps units to obey Versailles military limits, Wolfgang Kapp and 5,000 armed soldiers marched into Berlin to overthrow the government. The regular army refused to fire on them, forcing President Ebert to flee.<br><br>In conclusion, the Treaty of Versailles and the Kapp Putsch caused great instability for Weimar.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Versailles and Kapp Putsch). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as left-wing Spartacist rebellions and political assassinations by Organisation Consul), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major cause of political instability was the <strong>outrage surrounding the Treaty of Versailles in June 1919</strong>. Germans universally condemned the treaty as an imposed 'Diktat' that forced Germany to accept Article 231 War Guilt, surrender 13% of its territory, and pay £6.6 billion in reparations. Right-wing nationalists promoted the 'stab-in-the-back' myth (*Dolchstosslegende*), branding Weimar politicians 'November Criminals'. Therefore, this caused severe instability because it permanently damaged the democratic republic's legitimacy and made moderate politicians targets of deep nationalist resentment.<br><br>Furthermore, the republic was destabilised by <strong>violent right-wing uprisings like the Kapp Putsch in March 1920</strong>. When the government attempted to disband the Freikorps to meet treaty troop limits, nationalist Wolfgang Kapp and 5,000 paramilitaries seized Berlin. Crucially, the German army refused to protect the state, forcing the cabinet to flee. Therefore, this led to dangerous political instability because it proved the republic could not rely on its own armed forces to defend democracy against right-wing treason.<br><br>In addition, instability was intensified by <strong>extreme left-wing uprisings and waves of political assassinations</strong>. In January 1919, the communist Spartacist League launched an armed uprising in Berlin, bloodily suppressed by the Freikorps. Subsequently, right-wing terrorist groups like Organisation Consul assassinated 376 republican politicians, including Foreign Minister Walther Rathenau in 1922. Therefore, this forced continuous instability because regular paramilitary street violence and political terrorism made constitutional governance almost impossible to sustain.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (223 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "mock_notebook_3_q2_alt",
@@ -1003,9 +1380,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Passive resistance"
         ],
         "sourceExtract": "",
-        "modelAnswer": "The catastrophic hyperinflation crisis of 1923, which saw the German mark become completely worthless, was caused by the structural weaknesses of the Weimar economy, the burden of war reparations, and a disastrous policy of passive resistance. The long-term cause of the crisis lay in the war reparations demanded by the Allies under the Treaty of Versailles. In 1921, the reparations bill was fixed at the astronomical sum of £6.6 billion, to be paid in annual installments. Germany was already economically crippled by the cost of the war, and the loss of its rich coalfields in Alsace-Lorraine and Silesia severely reduced its industrial capacity to generate wealth. Bypassing regular taxation, the Weimar government began printing paper marks to buy foreign currency to pay the Allies, which immediately triggered a steady devaluation of the mark between 1921 and 1922.<br><br><br><br>The crisis reached a tipping point in January 1923 when Germany failed to deliver a planned payment of coal and telegraph poles. In response, French and Belgian troops invaded and occupied the Ruhr, Germany's industrial heartland, intending to confiscate coal and steel directly as reparations. The Weimar government, militarily powerless due to the Versailles restrictions, could not resist physically. Instead, the Chancellor called for \"passive resistance,\" ordering the workers in the Ruhr to go on strike and refuse to cooperate with the occupying forces. This was a disaster for the German economy, as it instantly cut off the Ruhr’s massive industrial output, which Germany relied on for tax revenue and exports.<br><br><br><br>To support the striking workers and their families, the government took the fatal step of printing vast amounts of paper money to pay their wages. Because there was no industrial production in the Ruhr to back up this newly printed money, the currency collapsed spectacularly. The supply of money far outstripped the supply of goods in the shops, leading to rapid, uncontrollable price rises. By late 1923, the price of a loaf of bread rose to over 200 billion marks, and workers had to be paid twice a day so they could buy food before prices doubled again. This hyperinflation was the direct consequence of a government printing money to pay for a strike it could not afford, while its primary source of industrial wealth was occupied by a foreign army.",
+        "modelAnswer": "One primary cause of hyperinflation was the <strong>military occupation of the Ruhr by French and Belgian troops in January 1923</strong>. After the Weimar Republic defaulted on reparations deliveries of coal and timber, 60,000 Franco-Belgian soldiers occupied Germany's industrial heartland to seize resources by force. The invaders took control of mines, railways, and factories. Therefore, this caused the collapse into hyperinflation because it stripped Germany of the industrial region producing over 70% of the nation's coal, raw iron, and vital export revenues.<br><br>Furthermore, the crisis was triggered by the <strong>German government's policy of passive resistance in the Ruhr</strong>. The Weimar government instructed all miners, railwaymen, and civil servants to go on strike and refuse cooperation with the French. However, this completely halted industrial production and deprived the German treasury of critical tax receipts. Therefore, this led directly to financial ruin because the total industrial shutdown created severe shortages of manufactured goods while state revenues completely dried up.<br><br>In addition, hyperinflation was catalysed by the <strong>government's disastrous decision to print unbacked paper banknotes</strong>. To pay striking Ruhr workers their wages, the Reichsbank operated nearly 2,000 printing presses round the clock, printing trillions of unbacked paper marks. As currency flooded the market while goods were scarce, money became worthless, with bread reaching 200 billion marks. Therefore, this forced hyperinflation to spiraling heights because printing limitless unbacked currency destroyed all domestic and international confidence in the monetary system.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_notebook_3_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_3_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_3_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Hyperinflation happened in 1923 because Germany failed to pay its war reparations. French and Belgian soldiers marched into the Ruhr to steal coal and iron. The German government told workers to go on strike, but then printed huge amounts of paper money to pay the striking workers. The money became totally useless, and people had to carry wheelbarrows of cash to buy bread. Therefore the German currency completely collapsed.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the Ruhr, strike, and wheelbarrows of cash, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the economy collapsed was the <strong>French occupation of the Ruhr in January 1923</strong>. When Germany missed a reparations shipment of timber and coal, 60,000 French and Belgian troops occupied the Ruhr industrial heartland. The French seized coal mines, railways, and factories to extract reparations by force, paralysing German industrial output.<br><br>Another reason was the Weimar government's policy of <strong>passive resistance</strong>. The German government ordered Ruhr workers to go on strike and refuse to cooperate with the French invaders. While this halted French exploitation, it meant the Ruhr stopped producing manufactured goods and tax revenues for Germany.<br><br>In conclusion, the invasion of the Ruhr and the strike caused hyperinflation.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Ruhr invasion and passive resistance). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the reckless printing of unbacked paper currency by the Reichsbank), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary cause of hyperinflation was the <strong>military occupation of the Ruhr by French and Belgian troops in January 1923</strong>. After the Weimar Republic defaulted on reparations deliveries of coal and timber, 60,000 Franco-Belgian soldiers occupied Germany's industrial heartland to seize resources by force. The invaders took control of mines, railways, and factories. Therefore, this caused the collapse into hyperinflation because it stripped Germany of the industrial region producing over 70% of the nation's coal, raw iron, and vital export revenues.<br><br>Furthermore, the crisis was triggered by the <strong>German government's policy of passive resistance in the Ruhr</strong>. The Weimar government instructed all miners, railwaymen, and civil servants to go on strike and refuse cooperation with the French. However, this completely halted industrial production and deprived the German treasury of critical tax receipts. Therefore, this led directly to financial ruin because the total industrial shutdown created severe shortages of manufactured goods while state revenues completely dried up.<br><br>In addition, hyperinflation was catalysed by the <strong>government's disastrous decision to print unbacked paper banknotes</strong>. To pay striking Ruhr workers their wages, the Reichsbank operated nearly 2,000 printing presses round the clock, printing trillions of unbacked paper marks. As currency flooded the market while goods were scarce, money became worthless, with bread reaching 200 billion marks. Therefore, this forced hyperinflation to spiraling heights because printing limitless unbacked currency destroyed all domestic and international confidence in the monetary system.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (225 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "mock_adapted_2026_q3a",
@@ -1056,9 +1457,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Rentenmark"
         ],
         "sourceExtract": "",
-        "modelAnswer": "Following the catastrophic hyperinflation crisis of 1923, the Weimar Republic underwent a dramatic economic recovery during the \"Golden Years\" of 1924 to 1929. The foremost catalyst for this stabilization was the decisive leadership of Gustav Stresemann, who became Chancellor in August 1923 and subsequently served as Foreign Minister. Stresemann understood that economic recovery required the immediate resolution of hyperinflation and the end of passive resistance in the occupied Ruhr. His first major step in November 1923 was the introduction of a temporary currency, the Rentenmark. Unlike the old paper mark, which had been completely ruined by over-printing, the Rentenmark’s value was strictly tied to German property, specifically industrial and agricultural land. This successfully restored public trust. Consequently, in August 1924, this temporary measure was replaced by a permanent, gold-backed currency, the Reichsmark. This decisive monetary reform halted hyperinflation, stabilized prices, and laid the essential groundwork for wider industrial and commercial investment.<br><br><br><br>A second crucial factor in the recovery was the restructuring of Germany's international obligations through the Dawes Plan of 1924. Under the original terms of the Treaty of Versailles, Germany had been faced with an unpayable reparations bill of £6.6 billion, which had triggered the French invasion of the Ruhr in 1923 when Germany defaulted. The Dawes Plan, negotiated by Stresemann, temporarily reduced Germany’s annual payments to a manageable level. Crucially, the plan also provided a massive 800 million gold mark loan from the United States to stimulate the German economy. As a result of these US loans, German factories were rebuilt using modern mechanisation and assembly-line techniques, which dramatically boosted industrial production. Employment increased, and because workers received higher wages, they spent more money in the domestic economy, creating a positive multiplier effect. This economic stability was further secured by the withdrawal of French troops from the Ruhr by 1925, which allowed German coal and steel production to resume without foreign disruption.<br><br><br><br>Finally, the recovery was supported by Stresemann’s foreign policy successes, which restored Germany's international standing and attracted further foreign capital. By signing the Locarno Pact in 1925, Germany accepted its western borders with France and Belgium, which reassured foreign investors of geopolitical stability. This international reconciliation culminated in Germany joining the League of Nations in 1926 with a permanent seat on its council, restoring national pride and encouraging US financiers to invest even more heavily. In 1929, the Young Plan further reduced the total reparations bill to £2 billion and extended the payment term over 59 years, lowering Germany's long-term financial liabilities. Although this recovery was highly dependent on short-term US loans—making it, as Stresemann warned, like \"dancing on a volcano\"—the combination of currency reform, Dawes Plan loans, and international diplomacy successfully transformed Germany from a bankrupt pariah state into a thriving industrial economy by 1929.",
+        "modelAnswer": "One major factor in economic recovery was the <strong>decisive leadership and diplomacy of Gustav Stresemann</strong>. Appointed Chancellor in 1923, Stresemann ended passive resistance in the Ruhr, cutting off massive state welfare payments to striking workers. His pragmatic cooperation persuaded French forces to withdraw by 1925, restoring industrial output. Therefore, this led to economic recovery because restoring industrial operations in the Ruhr eliminated bankrupting government expenditure and reopened vital coal and manufacturing export markets.<br><br>Furthermore, recovery was established by the <strong>successful monetary reform of the Rentenmark in November 1923</strong>. Overseen by Hjalmar Schacht, the worthless mark was replaced with the temporary Rentenmark, backed by German land and industrial assets. Strict controls limited circulation, ensuring the currency maintained its value before becoming the permanent Reichsmark. Therefore, this caused economic stability to return because establishing a stable, trustworthy currency ended hyperinflation and restored public and commercial confidence in everyday commerce.<br><br>In addition, the economy was revitalised by <strong>massive American financial loans under the 1924 Dawes Plan</strong>. Charles Dawes restructured reparations and secured an initial 800-million-gold-mark loan from Wall Street banks. Over the next five years, billions in US loans flowed into German industry, modernising factories, railways, and municipal housing. Therefore, this forced rapid economic growth because substantial American capital investment rebuilt German heavy industry, lowered unemployment, and drove national manufacturing output above pre-war levels.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_notebook_1_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_1_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_1_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The German economy recovered in the Golden Years because Gustav Stresemann became Chancellor and sorted out the problems. He stopped passive resistance in the Ruhr and introduced a brand new currency called the Rentenmark which ended hyperinflation. He also arranged big loans from America under the Dawes Plan so German businesses could build new factories. Therefore Germany became rich and stable again between 1924 and 1929.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Stresemann, Rentenmark, and US loans, but lacks analytical PEEL paragraphs, statistics, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the economy recovered was the political leadership of <strong>Gustav Stresemann</strong>. In autumn 1923, Stresemann made the brave decision to end passive resistance in the Ruhr and resumed reparations payments. This persuaded the French and Belgian troops to leave the Ruhr, allowing German factories and mines to restart production.<br><br>Another reason was the introduction of the <strong>Rentenmark in November 1923</strong>. Stresemann and financial expert Hjalmar Schacht burned the old worthless marks and created a temporary new currency backed by agricultural land and industrial assets. People trusted this new stable currency, which immediately brought hyperinflation to an end.<br><br>In conclusion, Stresemann's policies and the Rentenmark fixed the German economy.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Stresemann and Rentenmark). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the Dawes and Young Plans securing massive US loans), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor in economic recovery was the <strong>decisive leadership and diplomacy of Gustav Stresemann</strong>. Appointed Chancellor in 1923, Stresemann ended passive resistance in the Ruhr, cutting off massive state welfare payments to striking workers. His pragmatic cooperation persuaded French forces to withdraw by 1925, restoring industrial output. Therefore, this led to economic recovery because restoring industrial operations in the Ruhr eliminated bankrupting government expenditure and reopened vital coal and manufacturing export markets.<br><br>Furthermore, recovery was established by the <strong>successful monetary reform of the Rentenmark in November 1923</strong>. Overseen by Hjalmar Schacht, the worthless mark was replaced with the temporary Rentenmark, backed by German land and industrial assets. Strict controls limited circulation, ensuring the currency maintained its value before becoming the permanent Reichsmark. Therefore, this caused economic stability to return because establishing a stable, trustworthy currency ended hyperinflation and restored public and commercial confidence in everyday commerce.<br><br>In addition, the economy was revitalised by <strong>massive American financial loans under the 1924 Dawes Plan</strong>. Charles Dawes restructured reparations and secured an initial 800-million-gold-mark loan from Wall Street banks. Over the next five years, billions in US loans flowed into German industry, modernising factories, railways, and municipal housing. Therefore, this forced rapid economic growth because substantial American capital investment rebuilt German heavy industry, lowered unemployment, and drove national manufacturing output above pre-war levels.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "lesson_1_3_can_q1",
@@ -1125,9 +1550,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Bauhaus school"
         ],
         "sourceExtract": "",
-        "modelAnswer": "The Weimar Republic between 1924 and 1929 experienced a spectacular cultural flowering, often referred to as the \"Golden Age,\" which was driven by a combination of political, economic, and technological factors. The primary catalyst for this development was the political freedom guaranteed by the new Weimar Constitution. Under the old Kaiserreich, strict government censorship had stifled artistic expression, forcing artists to conform to traditional, patriotic styles. However, the Weimar Constitution guaranteed absolute freedom of speech and the press. Consequently, this removed all pre-war censorship, allowing writers, artists, and directors to experiment with bold, controversial ideas without fear of arrest. This newfound freedom turned Berlin into the avant-garde capital of Europe, attracting creative minds from across the world.<br><br><br><br>Furthermore, this freedom of expression found its most powerful artistic outlet in the movement known as Expressionism. Expressionist artists, such as George Grosz and Otto Dix, rejected traditional, idealized art. Instead, they believed that art should depict raw emotion and the gritty, often seedier reality of everyday Weimar life. They used their paintings to make powerful social and political criticisms, depicting war-disabled veterans, poverty, and political hypocrisy on the streets of Berlin. This artistic experimentation extended directly into architecture and design through the Bauhaus school, founded by Walter Gropius in Dessau in 1925. Bauhaus design stressed that beauty lay in functionality, modern technology, and clean, simple lines, completely challenging traditional, ornate pre-war architecture. This architectural revolution was heavily supported by government funding, which saw the Bauhaus style as a progressive symbol of the new democratic republic.<br><br><br><br>Finally, this cultural explosion was facilitated by the economic recovery led by Gustav Stresemann, which provided both state funding and disposable income. With hyperinflation solved and US loans flooding into the country under the Dawes Plan, the German government and local councils had the financial means to fund public libraries, theaters, and museums. Furthermore, as living standards rose and working hours were reduced, ordinary Germans had more leisure time and disposable income to spend on cultural activities, such as cinema and cabaret. Technological developments, such as the rise of mass media, also played a crucial role. The German film industry became the most innovative in Europe, producing pioneering films like Fritz Lang’s sci-fi epic *Metropolis* in 1927. Thus, the synergy of constitutional freedom, artistic rebellion, and American-funded economic prosperity created the unique conditions for Weimar's \"Golden Age\".",
+        "modelAnswer": "One major driver of cultural flowering was the <strong>growth of the Expressionist movement in painting and cinema</strong>. Rebuffing traditional imperial art, Expressionists like Otto Dix and George Grosz depicted the harsh realities of urban life, wounded veterans, and social inequality with raw emotion. In cinema, Expressionism produced groundbreaking films like Robert Wiene's *The Cabinet of Dr. Caligari* and Fritz Lang's *Metropolis*. Therefore, this caused a cultural renaissance because artists had the creative freedom to explore provocative psychological and political themes that reflected post-war society.<br><br>Furthermore, cultural innovation flourished through the <strong>founding of the influential Bauhaus design movement</strong>. Established in Weimar by Walter Gropius in 1919, the Bauhaus school championed the revolutionary principle that 'form follows function'. Designers embraced clean geometric lines, steel, and glass, modernising furniture, typography, and municipal housing estates. Therefore, this led to a golden age of design because Bauhaus revolutionized architectural philosophy, making Germany the undisputed international pioneer of modern functionalist design.<br><br>In addition, cultural development was unleashed by <strong>Article 118 of the Weimar Constitution and economic recovery</strong>. Article 118 guaranteed complete freedom of expression, dismantling imperial censorship and allowing cabaret, avant-garde theatre, and Remarque's anti-war literature to thrive. Combined with economic recovery after 1924, government subsidies funded public museums and theatres. Therefore, this fostered cultural vitality because legal protections and financial prosperity created the ideal environment for bold artistic experimentation to flourish.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_notebook_2_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_2_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_2_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "There was a Golden Age of culture in Weimar Germany because the 1920s were a time of great artistic freedom. Artists like George Grosz painted Expressionist pictures showing the horrors of war. The Bauhaus school designed modern buildings and sleek furniture. Also Berlin became famous for crazy nightclubs and cinemas. Therefore people enjoyed exciting modern culture because censorship had been removed by the government.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Expressionism, Bauhaus, and nightclubs, but lacks analytical PEEL paragraphs, constitutional clauses, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for cultural development was the rise of <strong>Expressionism in art and cinema</strong>. Artists like Otto Dix and George Grosz used distorted images and bold colours to critique the misery of war, disabled veterans, and corrupt politicians. In cinema, Expressionist films like *The Cabinet of Dr. Caligari* and Fritz Lang's *Metropolis* explored dark psychological themes.<br><br>Another reason was the influence of the <strong>Bauhaus school of architecture</strong>. Founded by Walter Gropius in 1919 in Weimar, Bauhaus rejected traditional imperial decoration in favour of clean geometric lines and functional designs. Bauhaus architects used glass and steel to design modern housing, furniture, and practical lamps.<br><br>In conclusion, Expressionism and the Bauhaus made Weimar Germany culturally famous.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Expressionism and Bauhaus). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as constitutional freedom under Article 118 and economic stabilization funding the arts), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major driver of cultural flowering was the <strong>growth of the Expressionist movement in painting and cinema</strong>. Rebuffing traditional imperial art, Expressionists like Otto Dix and George Grosz depicted the harsh realities of urban life, wounded veterans, and social inequality with raw emotion. In cinema, Expressionism produced groundbreaking films like Robert Wiene's *The Cabinet of Dr. Caligari* and Fritz Lang's *Metropolis*. Therefore, this caused a cultural renaissance because artists had the creative freedom to explore provocative psychological and political themes that reflected post-war society.<br><br>Furthermore, cultural innovation flourished through the <strong>founding of the influential Bauhaus design movement</strong>. Established in Weimar by Walter Gropius in 1919, the Bauhaus school championed the revolutionary principle that 'form follows function'. Designers embraced clean geometric lines, steel, and glass, modernising furniture, typography, and municipal housing estates. Therefore, this led to a golden age of design because Bauhaus revolutionized architectural philosophy, making Germany the undisputed international pioneer of modern functionalist design.<br><br>In addition, cultural development was unleashed by <strong>Article 118 of the Weimar Constitution and economic recovery</strong>. Article 118 guaranteed complete freedom of expression, dismantling imperial censorship and allowing cabaret, avant-garde theatre, and Remarque's anti-war literature to thrive. Combined with economic recovery after 1924, government subsidies funded public museums and theatres. Therefore, this fostered cultural vitality because legal protections and financial prosperity created the ideal environment for bold artistic experimentation to flourish.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_2_1": [
@@ -1162,9 +1611,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The creation of the Sturmabteilung (SA) in 1921."
         ],
         "sourceExtract": "<div style=\"font-weight: 700; color: #b45309; margin-bottom: 6px;\">From the 25-Point Programme of the NSDAP, announced by Adolf Hitler in Munich, 24 February 1920.</div><div>Point 1: We demand the union of all Germans in a Greater Germany on the basis of the right of national self-determination.\nPoint 2: We demand the revocation of the peace treaties of Versailles and Saint-Germain.\nPoint 4: None but those of German blood... may be members of the nation. No Jew, therefore, may be a member of the nation.</div>",
-        "modelAnswer": "One reason the Nazi Party gained support in Munich was Adolf Hitler's powerful oratorical talent. Joining the German Workers' Party (DAP) in 1919, Hitler captivated crowds in Munich beer halls with passionate, theatrical speeches blaming Jews, communists, and the 'November Criminals' for Germany's wartime defeat, rapidly building a personal following.<br><br>Furthermore, the 25-Point Programme (1920) offered broad appeal across different social groups. It combined intense nationalism (demanding *Lebensraum* and abolishing the Treaty of Versailles) with socialist promises like profit-sharing in heavy industry and pensions for the elderly, attracting bitter veterans and struggling lower-middle-class workers.<br><br>Finally, the creation of the SA (Stormtroopers) in 1921 gave the party a powerful physical presence. Led by Ernst Röhm, the brownshirts protected Nazi meetings, violently attacked political rivals, and provided unemployed young men with uniforms, purpose, and meals, projecting an image of disciplined strength amidst Munich's political chaos.",
+        "modelAnswer": "One major factor behind rising support was <strong>Hitler's captivating public speaking and dynamic beer hall rallies</strong>. Joining the German Workers' Party (DAP) in 1919, Hitler quickly became party leader due to his oratorical talent. In crowded Munich beer halls, he denounced the Treaty of Versailles and scapegoated Jews and Marxists for the 1918 surrender. Therefore, this caused Nazi support to grow because Hitler's theatrical delivery and fierce nationalist messaging offered emotionally persuasive scapegoats to disillusioned ex-soldiers and nationalist Bavarians.<br><br>Furthermore, the NSDAP attracted members through the <strong>establishment of the paramilitary Sturmabteilung (SA) in 1921</strong>. Under Ernst Röhm, the 'Brownshirts' recruited disaffected ex-soldiers and Freikorps veterans. The SA projected an image of disciplined order, protecting Nazi rallies and brawling with Communist rivals in the streets. Therefore, this led to increased party appeal because the SA convinced middle-class citizens that the Nazis provided a robust, muscular defence against the perceived threat of a Bolshevik revolution.<br><br>In addition, the party benefited from the <strong>25-Point Programme and Munich's right-wing political climate</strong>. Published in February 1920 by Hitler and Anton Drexler, the manifesto combined fierce nationalism, revoking Versailles, and anti-capitalist promises appealing to small shopkeepers. Crucially, Bavarian state authorities were fiercely anti-socialist and protected right-wing extremists. Therefore, this fostered Nazi expansion because an appealing multi-class manifesto combined with sympathetic local judicial protection allowed the party to organize freely across Munich.",
         "pdfUrl": "/pdfs/weimar_nazi_germany/weimar_nazi_germany_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/"
+        "mockUrl": "/units/weimar_nazi_germany/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The Nazi Party gained support in Munich because Adolf Hitler was a very exciting public speaker. He spoke at crowded beer hall meetings where he shouted against the Treaty of Versailles and blamed Jews for Germany's defeat. The Nazis also set up the SA brownshirts who fought against communists in the streets. Therefore angry people in Bavaria joined the Nazis because Hitler sounded like a strong leader.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions beer halls, Versailles, and the SA, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the Nazis gained support was <strong>Hitler's public speaking and beer hall meetings</strong>. Joining the DAP in 1919, Hitler discovered he had a powerful oratorical talent. He held packed rallies in Munich beer halls like the Hofbräuhaus, gesturing dramatically and attacking the Weimar Republic for surrendering in 1918, which attracted thousands of listeners.<br><br>Another reason was the <strong>creation of the Sturmabteilung (SA) in 1921</strong>. Led by Ernst Röhm, the SA or 'Brownshirts' provided violent security at Nazi meetings and attacked left-wing opponents. Their discipline and military uniforms appealed to ex-soldiers who wanted an aggressive anti-communist force.<br><br>In conclusion, Hitler's speeches and the violent SA helped the Nazis grow rapidly in Munich.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Hitler's speaking and the SA). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the conservative Bavarian political climate and the radical appeal of the 25-Point Programme), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor behind rising support was <strong>Hitler's captivating public speaking and dynamic beer hall rallies</strong>. Joining the German Workers' Party (DAP) in 1919, Hitler quickly became party leader due to his oratorical talent. In crowded Munich beer halls, he denounced the Treaty of Versailles and scapegoated Jews and Marxists for the 1918 surrender. Therefore, this caused Nazi support to grow because Hitler's theatrical delivery and fierce nationalist messaging offered emotionally persuasive scapegoats to disillusioned ex-soldiers and nationalist Bavarians.<br><br>Furthermore, the NSDAP attracted members through the <strong>establishment of the paramilitary Sturmabteilung (SA) in 1921</strong>. Under Ernst Röhm, the 'Brownshirts' recruited disaffected ex-soldiers and Freikorps veterans. The SA projected an image of disciplined order, protecting Nazi rallies and brawling with Communist rivals in the streets. Therefore, this led to increased party appeal because the SA convinced middle-class citizens that the Nazis provided a robust, muscular defence against the perceived threat of a Bolshevik revolution.<br><br>In addition, the party benefited from the <strong>25-Point Programme and Munich's right-wing political climate</strong>. Published in February 1920 by Hitler and Anton Drexler, the manifesto combined fierce nationalism, revoking Versailles, and anti-capitalist promises appealing to small shopkeepers. Crucially, Bavarian state authorities were fiercely anti-socialist and protected right-wing extremists. Therefore, this fostered Nazi expansion because an appealing multi-class manifesto combined with sympathetic local judicial protection allowed the party to organize freely across Munich.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_2_2": [
@@ -1183,9 +1656,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Bamberg Conference (1926)"
         ],
         "sourceExtract": "",
-        "modelAnswer": "The reorganisation of the Nazi Party between 1924 and 1928 was a critical turning point that transformed a chaotic, violent paramilitary group into a highly structured, national political machine. The primary catalyst for this shift was the failure of the Munich Putsch in November 1923, which resulted in Hitler being imprisoned in Landsberg Prison for high treason. During his nine months in prison, Hitler wrote *Mein Kampf*, in which he formulated his core ideology and, crucially, realized that the Nazi Party could no longer seize power through violent, armed revolution. Instead, Hitler decided to adopt the \"legal route,\" meaning the party had to participate in democratic elections to destroy the Weimar Republic from within. Consequently, this strategic shift required a complete overhaul of the party's structure to enable effective national electoral campaigns.<br><br><br><br>To achieve this national reach, Hitler divided Germany into 35 regions, known as *Gaue*, which matched the electoral districts of the Reichstag. To lead each region, Hitler appointed a trusted lieutenant called a *Gauleiter*, who was directly responsible for spreading Nazi propaganda and organizing local party branches. This federal structure was tightly controlled from the new party headquarters in Munich, where Hitler established a centralized bureaucracy, appointing a Party Secretary and a Party Treasurer to manage party funds. Furthermore, to secure absolute control over this expanding organization, Hitler asserted the *Führerprinzip* (the Leadership Principle), which demanded absolute obedience to him as the supreme leader. As part of this drive for personal security and loyalty, Hitler also established the SS (Schutzstaffel) in 1925, as an elite bodyguard unit designed to be unquestionably loyal to him, reducing his dependence on the rowdy and unreliable SA.<br><br><br><br>Finally, the party had to be reorganised to crush internal ideological divisions that threatened to split the movement. By 1925, a deep rift had emerged between the northern German Gauleiters, led by Gregor Strasser, who emphasized the \"socialist\" elements of the 25-Point Programme, and the southern German faction, led by Hitler, who prioritized \"nationalism\" and anti-Semitism. To resolve this, Hitler called the Bamberg Conference in February 1926. At this conference, Hitler spoke for over two hours, systematically associating socialism with communism, which he knew the party despised. He successfully asserted his absolute authority, winning over key northern figures like Joseph Goebbels. Strasser's socialist-leaning proposals were abandoned, the 25-Point Programme was declared unalterable, and Hitler's position as undisputed *Führer* was permanently cemented. This internal pacification ensured the party was fully unified and ready to exploit the economic crisis of 1929.",
+        "modelAnswer": "One primary reason for reorganisation was the <strong>catastrophic failure of the Munich Putsch in November 1923</strong>. Hitler's armed attempt to overthrow the Weimar Republic resulted in 16 Nazi deaths, the temporary banning of the NSDAP, and his imprisonment in Landsberg. While writing *Mein Kampf*, Hitler realised armed revolution was impossible against the army, prompting him to adopt a legal strategy (*Legalitätsprinzip*) to win Reichstag elections. Therefore, this caused a total reorganisation because Hitler was forced to transform a violent Bavarian paramilitary group into an organised national political machine.<br><br>Furthermore, the party was restructured to centralise authority at the <strong>Bamberg Conference in February 1926</strong>. An ideological rift had emerged between the northern socialist faction under Gregor Strasser and Hitler's southern nationalist wing. At Bamberg, Hitler defeated Strasser, establishing the *Führerprinzip* (Leader Principle) ensuring his absolute authority over party policy. Therefore, this led to structural reorganisation because establishing absolute top-down obedience ended internal factionalism and unified the NSDAP under Hitler's single command.<br><br>In addition, reorganisation established a <strong>nationwide administrative network and specialist front organisations</strong>. Germany was divided into 35 districts (*Gaue*), each governed by a loyal *Gauleiter* appointed by Hitler. The party also created targeted sub-organisations: the Hitler Youth, Nazi Women's League, the SS, and modern propaganda led by Joseph Goebbels. Therefore, this accelerated party restructuring because constructing professional administrative branches across every German region allowed the NSDAP to target and mobilise specific social demographics systematically.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_notebook_2_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_2_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_notebook_2_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The Nazi Party was reorganised between 1924 and 1928 because the Munich Putsch had completely failed. Hitler went to Landsberg prison and realised he could not take power with guns, so he decided to win power legally through elections. He held a big meeting called the Bamberg Conference where he made himself the total leader. He also set up the Hitler Youth. Therefore the party became much better organised to win votes.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the failed Putsch, Bamberg Conference, and Hitler Youth, but lacks analytical PEEL paragraphs, structural detail, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the party was reorganised was the <strong>failure of the Munich Putsch in November 1923</strong>. Hitler's attempt to march on Berlin was crushed by Bavarian police, resulting in 16 Nazi deaths and Hitler being sent to prison. While writing *Mein Kampf* in Landsberg, Hitler realized armed revolutions would always be stopped by the army, so he adopted a 'legal strategy' to win seats in the Reichstag.<br><br>Another reason was the <strong>Bamberg Conference of 1926</strong>. Hitler called party leaders together to defeat the socialist wing led by Gregor Strasser. Hitler insisted that the party must be fully nationalist, establishing the *Führerprinzip* (leader principle) where his orders had to be obeyed without debate.<br><br>In conclusion, the Munich Putsch and the Bamberg Conference reshaped the Nazi Party.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Munich Putsch and Bamberg Conference). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as creating nationwide Gau structures, specialist front organisations, and propaganda by Goebbels), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason for reorganisation was the <strong>catastrophic failure of the Munich Putsch in November 1923</strong>. Hitler's armed attempt to overthrow the Weimar Republic resulted in 16 Nazi deaths, the temporary banning of the NSDAP, and his imprisonment in Landsberg. While writing *Mein Kampf*, Hitler realised armed revolution was impossible against the army, prompting him to adopt a legal strategy (*Legalitätsprinzip*) to win Reichstag elections. Therefore, this caused a total reorganisation because Hitler was forced to transform a violent Bavarian paramilitary group into an organised national political machine.<br><br>Furthermore, the party was restructured to centralise authority at the <strong>Bamberg Conference in February 1926</strong>. An ideological rift had emerged between the northern socialist faction under Gregor Strasser and Hitler's southern nationalist wing. At Bamberg, Hitler defeated Strasser, establishing the *Führerprinzip* (Leader Principle) ensuring his absolute authority over party policy. Therefore, this led to structural reorganisation because establishing absolute top-down obedience ended internal factionalism and unified the NSDAP under Hitler's single command.<br><br>In addition, reorganisation established a <strong>nationwide administrative network and specialist front organisations</strong>. Germany was divided into 35 districts (*Gaue*), each governed by a loyal *Gauleiter* appointed by Hitler. The party also created targeted sub-organisations: the Hitler Youth, Nazi Women's League, the SS, and modern propaganda led by Joseph Goebbels. Therefore, this accelerated party restructuring because constructing professional administrative branches across every German region allowed the NSDAP to target and mobilise specific social demographics systematically.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (226 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "lesson_2_2_can_q2",
@@ -1254,9 +1751,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Political scheming / Franz von Papen"
         ],
         "sourceExtract": "",
-        "modelAnswer": "Hitler was appointed Chancellor in January 1933 due to a combination of his immense electoral popularity, the weakness of the Weimar Constitution, and the political miscalculations of conservative elites.<br><br>A significant underlying reason for his appointment was the electoral success of the Nazi Party following the Wall Street Crash. As the economic depression deepened and unemployment reached 6 million, millions of desperate voters abandoned moderate democratic parties in favor of extremist solutions. The Nazis ran a highly effective, modern propaganda campaign spearheaded by Joseph Goebbels, which promised \"Work and Bread\" and scapegoated Jews and Communists. As a result, in the July 1932 elections, the Nazi Party won 230 seats, making them the largest single party in the Reichstag. Hitler's massive popular mandate meant he could not be ignored in any parliamentary coalition.<br><br>However, Hitler did not have a majority and relied on the structural weaknesses of the Weimar Constitution to reach power. The system of Proportional Representation meant that no single party could form a stable government, leading to continuous political deadlock. President Hindenburg was forced to rule repeatedly using Article 48, which bypassed the Reichstag and ruled by emergency decree. This normalized authoritarian rule and severely weakened German democracy. Chancellors like Heinrich Brüning and Franz von Papen lacked Reichstag support and were deeply unpopular, creating a continuous crisis of governance that left the door open for a strongman leader.<br><br>Finally, the immediate trigger for Hitler’s appointment was the political intrigue and miscalculation by President Hindenburg and his conservative allies. Hindenburg despised Hitler, calling him a \"vulgar little corporal,\" and initially refused to appoint him despite his electoral success. However, in January 1933, the current Chancellor, Kurt von Schleicher, lost Hindenburg's support. Franz von Papen, seeking to return to power and desiring revenge against Schleicher, convinced Hindenburg to appoint Hitler as Chancellor, with Papen as Vice-Chancellor. They arrogantly believed they could control Hitler and use his popular support to form a stable, conservative government, famously stating they would \"push him into a corner until he squeaks.\" This fatal miscalculation handed Hitler the chancellorship legally on January 30, 1933.",
+        "modelAnswer": "One major factor behind Hitler's appointment was the <strong>economic misery caused by the Great Depression</strong>. Following the 1929 Wall Street Crash, American banks recalled loans, bankrupting businesses and leaving six million workers unemployed by 1932. Desperate voters abandoned moderate parties for the Nazis, who promised 'Work and Bread'. Therefore, this caused Hitler's appointment because economic suffering propelled the NSDAP into becoming the largest Reichstag party with 230 seats in 1932, making stable governance without them impossible.<br><br>Furthermore, Hitler's path was cleared by the <strong>political scheming of Franz von Papen and conservative elites</strong>. Bitter over being ousted by General von Schleicher, Papen struck a secret deal with Hitler. Papen convinced President Hindenburg to appoint Hitler Chancellor on 30 January 1933, boasting he had 'boxed Hitler into a corner' with only three Nazi ministers. Therefore, this led directly to Hitler's appointment because conservative elites deliberately handed him power in the mistaken belief they could control him while using his mass support.<br><br>In addition, Weimar was crippled by the <strong>collapse of parliamentary democracy and reliance on Article 48</strong>. After 1930, Chancellor Heinrich Brüning could not command a Reichstag majority and governed solely through emergency presidential decrees while enforcing unpopular austerity cuts. Therefore, this forced Hitler's appointment because the continuous erosion of parliamentary democracy normalised authoritarian rule and left the state dependent on appointing a Chancellor backed by mass popular support.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_adapted_2026_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_adapted_2026_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_adapted_2026_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Adolf Hitler was appointed Chancellor in 1933 because of the Great Depression which put six million Germans out of work. People lost their jobs and voted for the Nazis because Hitler promised them work and bread. Also right-wing politicians like Franz von Papen schemed behind President Hindenburg's back, thinking they could control Hitler as Chancellor. Therefore Hindenburg gave Hitler the job on 30 January 1933.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions unemployment, Papen, and Hindenburg, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason Hitler was appointed Chancellor was the <strong>impact of the Great Depression and massive unemployment</strong>. Following the 1929 Wall Street Crash, American loans were recalled and German businesses went bankrupt, leaving 6 million people unemployed by 1932. Desperate voters abandoned moderate parties and turned to the Nazis, who promised 'Work and Bread', making them the largest party in the Reichstag with 230 seats in July 1932.<br><br>Another reason was <strong>political scheming by Franz von Papen</strong>. Papen was sacked as Chancellor and replaced by General von Schleicher. Wanting revenge, Papen struck a deal with Hitler and persuaded President Hindenburg that they could control Hitler in a conservative coalition, famously boasting they had 'boxed him in'.<br><br>In conclusion, the Depression made the Nazis popular and Papen's scheming got Hitler into power.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Great Depression and Papen's scheming). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the collapse of parliamentary democracy and Brüning's abuse of Article 48 emergency decrees), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor behind Hitler's appointment was the <strong>economic misery caused by the Great Depression</strong>. Following the 1929 Wall Street Crash, American banks recalled loans, bankrupting businesses and leaving six million workers unemployed by 1932. Desperate voters abandoned moderate parties for the Nazis, who promised 'Work and Bread'. Therefore, this caused Hitler's appointment because economic suffering propelled the NSDAP into becoming the largest Reichstag party with 230 seats in 1932, making stable governance without them impossible.<br><br>Furthermore, Hitler's path was cleared by the <strong>political scheming of Franz von Papen and conservative elites</strong>. Bitter over being ousted by General von Schleicher, Papen struck a secret deal with Hitler. Papen convinced President Hindenburg to appoint Hitler Chancellor on 30 January 1933, boasting he had 'boxed Hitler into a corner' with only three Nazi ministers. Therefore, this led directly to Hitler's appointment because conservative elites deliberately handed him power in the mistaken belief they could control him while using his mass support.<br><br>In addition, Weimar was crippled by the <strong>collapse of parliamentary democracy and reliance on Article 48</strong>. After 1930, Chancellor Heinrich Brüning could not command a Reichstag majority and governed solely through emergency presidential decrees while enforcing unpopular austerity cuts. Therefore, this forced Hitler's appointment because the continuous erosion of parliamentary democracy normalised authoritarian rule and left the state dependent on appointing a Chancellor backed by mass popular support.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (225 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "lesson_2_4_can_q2",
@@ -1307,9 +1828,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Enabling Act (23 March 1933)"
         ],
         "sourceExtract": "<div style=\"font-weight: 700; color: #b45309; margin-bottom: 6px;\">Contemporary press photograph of the gutted Reichstag building, 28 February 1933.</div><div>The central debating chamber of the German parliament is completely destroyed by fire, with the glass dome shattered, roof collapsed, and seating incinerated, which Hitler and Göring declared was the planned signal for a violent communist revolution across Germany.</div>",
-        "modelAnswer": "One reason Hitler was able to establish a dictatorship was the Reichstag Fire in February 1933. Blaming a communist conspiracy, Hitler persuaded President Hindenburg to sign the Emergency Decree 'For the Protection of People and State'. This suspended basic civil liberties and allowed the SA and police to arrest 4,000 communists, crushing political opposition before the March election.<br><br>Furthermore, the Enabling Act (March 1933) gave Hitler full dictatorial powers. Intimidating the Reichstag with armed SS and SA troops and securing the Centre Party's support, Hitler passed the law allowing him to make laws without Reichstag or presidential approval for four years, legally dismantling the Weimar Constitution.<br><br>Finally, the Night of the Long Knives (June 1934) eliminated internal rivals. Fearing Ernst Röhm's 2-million-strong SA and needing the army's support, Hitler had Röhm and hundreds of SA leaders executed. When Hindenburg died in August 1934, the army swore an oath of personal loyalty to Hitler as *Führer*, completing the dictatorship.",
+        "modelAnswer": "One primary reason Hitler established a dictatorship was the <strong>Reichstag Fire Decree of 28 February 1933</strong>. Blaming a communist conspiracy, Hitler persuaded President Hindenburg to issue emergency decrees suspending civil liberties, including free speech and assembly. This allowed the SA to arrest 4,000 communists and ban opposition newspapers. Therefore, this caused the establishment of a dictatorship because it legalised state terror and crippled political opposition immediately before the critical March 1933 elections.<br><br>Furthermore, dictatorship was institutionalised through the <strong>passage of the Enabling Act on 23 March 1933</strong>. Intimidating deputies with armed SA guards inside the Kroll Opera House, Hitler secured the required two-thirds majority to pass the act by 444 votes to 94. The law granted Hitler power to enact legislation without the Reichstag for four years. Therefore, this led directly to dictatorship because it destroyed the constitutional separation of powers, effectively ending parliamentary democracy and allowing Hitler to govern by decree.<br><br>In addition, Hitler cemented total supremacy through the <strong>Night of the Long Knives and Hindenburg's death in 1934</strong>. On 30 June 1934, Hitler used the SS to execute Ernst Röhm and SA leaders, eliminating radical rivals and securing army support. When Hindenburg died in August, Hitler merged Chancellor and President into 'Führer', making soldiers swear an unconditional personal oath. Therefore, this forced the final completion of dictatorship because eliminating internal party dissent and securing army loyalty removed the last potential checks on Hitler's absolute power.",
         "pdfUrl": "/pdfs/weimar_nazi_germany/weimar_nazi_germany_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/"
+        "mockUrl": "/units/weimar_nazi_germany/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Hitler established a dictatorship in Germany because the Reichstag building caught fire in February 1933. Hitler blamed a Dutch communist and got President Hindenburg to ban civil rights. Then Hitler passed the Enabling Act which allowed him to make laws without parliament. Finally he killed Ernst Röhm on the Night of the Long Knives. Therefore Hitler got total power and made himself the Führer.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the fire, Enabling Act, and Long Knives, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason Hitler established a dictatorship was the <strong>Reichstag Fire Decree of 28 February 1933</strong>. When the Reichstag building was burned down by Marinus van der Lubbe, Hitler claimed it was a communist revolution. He persuaded President Hindenburg to sign the Emergency Decree for the Protection of the People and State, suspending freedom of speech, assembly, and the press, allowing the SA to arrest 4,000 communists.<br><br>Another reason was the <strong>Enabling Act of 23 March 1933</strong>. Hitler used the SA to intimidate members of parliament in the Kroll Opera House to vote for the act. Passing by 444 votes to 94, it allowed Hitler to pass laws without consulting the Reichstag or President for four years.<br><br>In conclusion, the Fire Decree and the Enabling Act gave Hitler legal dictatorial power.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Reichstag Fire and Enabling Act). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the Night of the Long Knives and Hindenburg's death), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason Hitler established a dictatorship was the <strong>Reichstag Fire Decree of 28 February 1933</strong>. Blaming a communist conspiracy, Hitler persuaded President Hindenburg to issue emergency decrees suspending civil liberties, including free speech and assembly. This allowed the SA to arrest 4,000 communists and ban opposition newspapers. Therefore, this caused the establishment of a dictatorship because it legalised state terror and crippled political opposition immediately before the critical March 1933 elections.<br><br>Furthermore, dictatorship was institutionalised through the <strong>passage of the Enabling Act on 23 March 1933</strong>. Intimidating deputies with armed SA guards inside the Kroll Opera House, Hitler secured the required two-thirds majority to pass the act by 444 votes to 94. The law granted Hitler power to enact legislation without the Reichstag for four years. Therefore, this led directly to dictatorship because it destroyed the constitutional separation of powers, effectively ending parliamentary democracy and allowing Hitler to govern by decree.<br><br>In addition, Hitler cemented total supremacy through the <strong>Night of the Long Knives and Hindenburg's death in 1934</strong>. On 30 June 1934, Hitler used the SS to execute Ernst Röhm and SA leaders, eliminating radical rivals and securing army support. When Hindenburg died in August, Hitler merged Chancellor and President into 'Führer', making soldiers swear an unconditional personal oath. Therefore, this forced the final completion of dictatorship because eliminating internal party dissent and securing army loyalty removed the last potential checks on Hitler's absolute power.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_3_2": [
@@ -1430,9 +1975,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Nazi policies on family"
         ],
         "sourceExtract": "",
-        "modelAnswer": "There were dramatic changes in the position of women in German society between 1924 and 1939, driven first by the progressive Weimar Constitution and later by the reactionary, ideologically driven policies of the Nazi Party.<br><br>During the Weimar \"Golden Years\" (1924-29), women experienced unprecedented freedom and social progress. The Weimar Constitution guaranteed women equal voting rights and equal pay in the professions. By 1933, there were 100,000 female teachers and 3,000 female doctors. Furthermore, a \"New Woman\" culture emerged in cities like Berlin, where young women embraced financial independence, cut their hair short, smoked in public, and enjoyed active social lives. This represented a massive shift away from traditional, restrictive pre-war gender roles.<br><br>However, when the Nazis took power in 1933, they aggressively reversed these changes because they viewed the \"New Woman\" as a threat to their demographic and militaristic goals. Driven by their ideology, the Nazis believed a woman's sole biological duty was to raise racially pure Aryan children to expand the Reich (Lebensraum). They immediately implemented the Law for the Encouragement of Marriage (1933), which gave loans of 1,000 marks to young couples, provided the woman gave up her job. Women were banned from professional careers, including medicine and the law, and were forced back into the domestic sphere under the slogan \"Kinder, Kirche, Küche\" (Children, Church, Cooking).<br><br>Finally, changes in women's positions were also driven by the Nazis' aggressive rearmament program in the late 1930s. As Germany prepared for war and male workers were conscripted into the army, a severe labor shortage emerged. Consequently, the Nazis were forced to reverse their own ideological policies. In 1937, the marriage loans were extended to women who continued to work, and by 1939, millions of women were actively recruited back into agriculture and heavy industry to support the war effort. Thus, the position of women fluctuated wildly based on the shifting political and economic priorities of the state.",
+        "modelAnswer": "One major driver of change was the <strong>emancipation of women during the Weimar Republic</strong>. Under Article 109 of the Weimar Constitution, women enjoyed equal civic rights, voting rights, and equal pay in public service. The 'New Woman' saw 100,000 female teachers and 3,000 doctors by the late 1920s, alongside one million in clerical roles, experiencing unheralded economic independence. Therefore, this caused a major shift in women's status because democratic constitutional protections enabled women to enter the formal workforce and challenge traditional domestic roles.<br><br>Furthermore, women's lives were transformed by <strong>Nazi pro-natalist policies after 1933</strong>. Believing women's sole purpose was 'Children, Kitchen, Church' (*Kinder, Küche, Kirche*), the Nazi regime purged female civil servants, doctors, and judges. In 1933, the Marriage Law offered interest-free loans of 1,000 marks, with 25% written off per child born, alongside the Mother's Cross rewarding large families. Therefore, this led to a severe regression in women's social position because the totalitarian state subordinated female autonomy entirely to domestic childbearing.<br><br>In addition, policies shifted dramatically due to <strong>wartime labour shortages under the Four-Year Plan after 1937</strong>. As rapid rearmament drained the male workforce, the regime reversed its stay-at-home dogma, introducing compulsory labour service for unmarried women in 1938 and recruiting over 1.5 million women into munitions and agriculture. Therefore, this forced another fundamental change in women's status because urgent war preparations compelled the regime to abandon its domestic rhetoric in favour of industrial female mobilization.",
         "pdfUrl": "/pdfs/mocks/weimar_nazi_germany/mock_adapted_2026_question_booklet.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/mock_adapted_2026_question_booklet.html"
+        "mockUrl": "/units/weimar_nazi_germany/mock_adapted_2026_question_booklet.html",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The position of women changed between 1924 and 1939 because in Weimar Germany women had lots of freedom. They could vote, smoke cigarettes, and work in offices. But when the Nazis took over in 1933, they believed women should stay at home and have babies for Germany. They gave medals to mothers who had lots of children and sacked female doctors. Therefore women lost their jobs and had to become housewives.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the contrast between Weimar and Nazi Germany, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for changes was the <strong>expansion of jobs and rights for women in Weimar Germany</strong>. Under the Weimar Constitution, women were given the vote, equal civic rights, and entered professions like teaching, medicine, and the civil service. By the late 1920s, millions of 'New Women' worked in retail and offices, earning their own wages and enjoying social independence.<br><br>Another reason was <strong>Nazi policies promoting traditional family values after 1933</strong>. The Nazis believed women belonged in the home focusing on 'Kinder, Küche, Kirche' (Children, Kitchen, Church). They introduced marriage loans that gave newlyweds money if the woman left her job, and gave the Cross of Honour of the German Mother to reward women who had large families.<br><br>In conclusion, Weimar brought women freedom but Nazi family policies forced them into the home.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Weimar jobs and Nazi family policies). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the re-conscription of women into factory war production after 1937 under the Four-Year Plan), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major driver of change was the <strong>emancipation of women during the Weimar Republic</strong>. Under Article 109 of the Weimar Constitution, women enjoyed equal civic rights, voting rights, and equal pay in public service. The 'New Woman' saw 100,000 female teachers and 3,000 doctors by the late 1920s, alongside one million in clerical roles, experiencing unheralded economic independence. Therefore, this caused a major shift in women's status because democratic constitutional protections enabled women to enter the formal workforce and challenge traditional domestic roles.<br><br>Furthermore, women's lives were transformed by <strong>Nazi pro-natalist policies after 1933</strong>. Believing women's sole purpose was 'Children, Kitchen, Church' (*Kinder, Küche, Kirche*), the Nazi regime purged female civil servants, doctors, and judges. In 1933, the Marriage Law offered interest-free loans of 1,000 marks, with 25% written off per child born, alongside the Mother's Cross rewarding large families. Therefore, this led to a severe regression in women's social position because the totalitarian state subordinated female autonomy entirely to domestic childbearing.<br><br>In addition, policies shifted dramatically due to <strong>wartime labour shortages under the Four-Year Plan after 1937</strong>. As rapid rearmament drained the male workforce, the regime reversed its stay-at-home dogma, introducing compulsory labour service for unmarried women in 1938 and recruiting over 1.5 million women into munitions and agriculture. Therefore, this forced another fundamental change in women's status because urgent war preparations compelled the regime to abandon its domestic rhetoric in favour of industrial female mobilization.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       },
       {
         "id": "lesson_4_1_can_q2",
@@ -1449,9 +2018,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Nazi ideological beliefs about the family"
         ],
         "sourceExtract": "<div style=\"font-weight: 700; color: #b45309; margin-bottom: 6px;\">Official keynote address delivered by Propaganda Minister Joseph Goebbels on 18 March 1933, defining the Nazi regime's compulsory biological and domestic role for women.</div><div>The German woman has a high mission in our national life. Her highest mission is to give children to the nation. While man fights for the existence of the folk, woman tends the hearth and cares for the future generation. Politics, statecraft, and military defense belong solely to men; woman's world is her family, her children, and her home.</div>",
-        "modelAnswer": "One reason Nazi policies towards women were implemented was to reverse the sharp decline in Germany's birth rate. During the 1920s, births fell to under one million per year, which threatened Hitler’s military ambitions. To boost births, the regime offered Marriage Loans of 1,000 marks, deducting 25% for each child born, and awarded the Honour Cross of the German Mother (bronze for 4, gold for 8) to reward large families.<br><br>Furthermore, the regime wanted to remove women from employment to reduce male unemployment. Under the policy of *Kinder, Küche, Kirche* (Children, Kitchen, Church), women were dismissed from civil service, legal, and medical professions. Banning female doctors and judges freed up professional jobs for men, fulfilling Nazi ideological beliefs about gender roles.<br><br>Finally, racial eugenics shaped policies toward women. Under the Law for the Prevention of Hereditarily Diseased Offspring (1933), over 300,000 women deemed 'genetically unfit' or racially inferior were forcibly sterilized to ensure only 'pure Aryan' children were born.",
+        "modelAnswer": "One primary reason Nazi policies towards women were introduced was the <strong>decline in the German birth rate during the Weimar period</strong>. In the 1920s, annual births fell from two million to under one million. To stimulate population growth, the 1933 Marriage Law offered 1,000-mark loans, forgiving 25% of the debt per child, alongside the Mother's Cross rewarding large families. Therefore, this caused family policies to be introduced because financial incentives and civic honours were deployed to reverse demographic decline and expand the German population.<br><br>Furthermore, policies were driven by <strong>rigid Nazi ideological beliefs regarding natural gender roles</strong>. Hitler viewed the patriarchal family as the bedrock of the *Volksgemeinschaft*, defining women's biological destiny as domestic motherhood under the slogan *Kinder, Küche, Kirche*. The regime discouraged makeup and smoking, establishing the *Reichsmütterdienst* to train women in domestic hygiene. Therefore, this led to strict female regulations because Nazi ideology demanded that women subordinate personal ambitions entirely to maternal duty.<br><br>In addition, policies were designed to <strong>reduce male unemployment and prepare for demographic expansion</strong>. In 1933, the regime purged female doctors, teachers, and civil servants to free up vacancies for unemployed men, successfully reducing male jobless figures. Simultaneously, Hitler sought a massive population surge to provide soldiers and agricultural settlers for military conquest in Eastern Europe (*Lebensraum*). Therefore, this forced the implementation of restrictive policies because removing women from employment reduced male joblessness while preparing Germany for imperial demographic expansion.",
         "pdfUrl": "/pdfs/weimar_nazi_germany/weimar_nazi_germany_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/weimar_nazi_germany/"
+        "mockUrl": "/units/weimar_nazi_germany/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Nazi policies towards women were implemented because Hitler was worried that German birth rates were dropping too low. The Nazis wanted a massive population to conquer land in Eastern Europe. They also had strong ideological beliefs that women should be mothers and look after children while men were soldiers. They gave medals to mothers and banned female doctors. Therefore the Nazis made laws to force women back into the home.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions birth rates and mothers' medals, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason policies were implemented was to reverse <strong>falling German birth rates</strong>. During the 1920s, the birth rate in Germany fell from over two million births a year down to under one million. The Nazis believed a shrinking population would make Germany weak, so they introduced marriage loans in 1933 and gave out the Mother's Cross to encourage women to have four or more children.<br><br>Another reason was <strong>Nazi ideological beliefs about the family</strong>. Hitler believed men and women had separate natural roles, with men being warriors and women staying in the home focusing on 'Kinder, Küche, Kirche'. The regime discouraged cosmetics, smoking, and dyed hair, promoting healthy Aryan mothers.<br><br>In conclusion, birth rates and ideology made the Nazis introduce family policies.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (birth rates and family ideology). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as reducing male unemployment by sacking female professionals and demographic expansion for future Lebensraum), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason Nazi policies towards women were introduced was the <strong>decline in the German birth rate during the Weimar period</strong>. In the 1920s, annual births fell from two million to under one million. To stimulate population growth, the 1933 Marriage Law offered 1,000-mark loans, forgiving 25% of the debt per child, alongside the Mother's Cross rewarding large families. Therefore, this caused family policies to be introduced because financial incentives and civic honours were deployed to reverse demographic decline and expand the German population.<br><br>Furthermore, policies were driven by <strong>rigid Nazi ideological beliefs regarding natural gender roles</strong>. Hitler viewed the patriarchal family as the bedrock of the *Volksgemeinschaft*, defining women's biological destiny as domestic motherhood under the slogan *Kinder, Küche, Kirche*. The regime discouraged makeup and smoking, establishing the *Reichsmütterdienst* to train women in domestic hygiene. Therefore, this led to strict female regulations because Nazi ideology demanded that women subordinate personal ambitions entirely to maternal duty.<br><br>In addition, policies were designed to <strong>reduce male unemployment and prepare for demographic expansion</strong>. In 1933, the regime purged female doctors, teachers, and civil servants to free up vacancies for unemployed men, successfully reducing male jobless figures. Simultaneously, Hitler sought a massive population surge to provide soldiers and agricultural settlers for military conquest in Eastern Europe (*Lebensraum*). Therefore, this forced the implementation of restrictive policies because removing women from employment reduced male joblessness while preparing Germany for imperial demographic expansion.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (223 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_2": [
@@ -1558,740 +2151,740 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
     ]
   },
   "cme_new": {
-      "lesson_1": [
-          {
-              "id": "lesson_2_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the bombing of the King David Hotel (July 1946).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to abandon Palestine.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_2_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the SS Exodus affair (July 1947).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the SS Exodus affair was a catastrophic international public relations disaster for Britain. When the Royal Navy forcibly boarded the ship and returned 4,500 Holocaust survivors to displaced persons camps in Germany, global outrage mounted, directly pushing US President Truman to demand Britain end the blockade and surrender the Mandate.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_2_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "3",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the bombing of the King David Hotel (July 1946) for the British decision to withdraw from Palestine.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One reason the bombing of the King David Hotel was important for Britain's decision to withdraw was that it completely destroyed the operational infrastructure of British governance in Palestine. The explosion destroyed the Secretariat and military headquarters, killing 91 key British, Arab, and Jewish staff while destroying vital intelligence registries. This proved that Britain's 100,000-man military garrison could no longer guarantee law and order against Zionist paramilitaries, proving that the Mandate had become militarily ungovernable.<br><br>Furthermore, the bombing was decisive because it destroyed domestic British political support for staying in Palestine. Coming directly after the trauma of the Second World War, the British public and press were outraged by soldiers and civil servants being killed abroad while Britain suffered severe post-war austerity and economic debt. Facing an unsustainable £40 million annual deployment cost, Prime Minister Clement Attlee’s government concluded that remaining in Palestine was untenable, directly accelerating the cabinet's February 1947 decision to surrender the Mandate to the United Nations.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          }
-      ],
-      "lesson_2": [
-          {
-              "id": "lesson_3_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the 1948–49 War for Palestinian Arabs.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the 1948–49 War for Palestinian Arabs was the creation of a permanent refugee crisis, known as the Nakba ('Catastrophe'). Over 700,000 Palestinians fled or were expelled from their villages, resulting in their confinement to squalid UNRWA refugee camps in the West Bank, Gaza, and Lebanon with no right of return.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_3_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the Israeli Law of Return (1950).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the 1950 Law of Return was a rapid demographic transformation that doubled Israel’s population within four years. By granting every Jewish person automatic citizenship, over 680,000 European Holocaust survivors and Middle Eastern Jewish refugees arrived, directly securing vital manpower for national defence and the Israeli Defense Forces (IDF).",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_3_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "3",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the Law of Return (1950) for the development of the new State of Israel in the aftermath of the 1948–49 War.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One reason the Law of Return was vital for the development of Israel was that it resolved the young state’s acute existential security and demographic deficit. Surrounded by hostile Arab states with vastly superior populations, Israel had only 650,000 Jewish citizens in 1948. By guaranteeing automatic citizenship to every Jewish immigrant, the law enabled 680,000 Holocaust survivors and Mizrahi refugees to arrive by 1951, doubling the population and providing essential conscripts to build the Israeli Defense Forces (IDF) into a formidable military deterrent.<br><br>Furthermore, the Law was decisive for national development because it facilitated the rapid territorial consolidation of Israel's newly established borders. The state strategically directed hundreds of thousands of new arrivals into farming cooperatives (kibbutzim and moshavim) along the fragile 1949 armistice lines (the Green Line) and in the Negev desert. This physically secured previously vulnerable frontiers against cross-border Fedayeen infiltration, converting an insecure armistice boundary into a permanently settled and economically productive sovereign state.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          }
-      ],
-      "lesson_3": [
-          {
-              "id": "lesson_4_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the Israeli raid on Gaza (February 1955).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the February 1955 Israeli raid on Gaza was that it prompted President Nasser to seek modern weapons from the Soviet bloc. The death of 37 Egyptian soldiers exposed Egypt's severe military inferiority, directly driving Nasser to sign the September 1955 Czechoslovak arms deal to obtain advanced Soviet MiG-15 jet fighters and tanks.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_4_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the 1956 Suez Crisis for Britain and France as global powers.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the 1956 Suez Crisis was the permanent destruction of Britain and France’s status as independent global superpowers. When US President Eisenhower threatened to trigger a collapse of the British pound unless forces withdrew immediately, London capitulated, proving that European imperial powers could never again launch major military operations without American approval.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_4_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "2",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing the events of the 1956 Suez Crisis from the nationalisation of the canal to the withdrawal of Anglo-French forces.",
-              "stimulus": [
-                  "President Nasser nationalises the Suez Canal (26 July 1956)",
-                  "The secret Protocol of Sèvres and Israeli invasion of Sinai (October 1956)"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "The crisis began on 26 July 1956 when Egyptian President Gamal Abdel Nasser nationalised the Anglo-French Suez Canal Company. Nasser seized the waterway to collect shipping tolls after the United States and Britain cancelled funding for Egypt's vital Aswan High Dam. British Prime Minister Anthony Eden viewed this as an intolerable threat to Britain’s imperial oil route, branding Nasser an aggressive dictator.<br><br>In response, Britain and France orchestrated the secret Protocol of Sèvres in October 1956, colluding with Israel to manufacture a pretext for military intervention. Under this plan, Israel invaded the Egyptian Sinai on 29 October, advancing towards the canal. Britain and France immediately issued a coordinated ultimatum demanding both sides withdraw from the canal zone, before landing Anglo-French paratroopers and launching air strikes on Port Said under the guise of 'separating the combatants'.<br><br>However, this military conspiracy provoked decisive superpower intervention that halted the invasion. US President Dwight D. Eisenhower condemned the operation and threatened to collapse the British pound by blocking vital loans unless forces withdrew immediately. Facing total financial ruin, Britain accepted a humiliating ceasefire on 6 November 1956, allowing the United Nations Emergency Force (UNEF) to deploy and supervise the withdrawal of allied troops.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "cme_mock_radar_q3a",
-              "mockId": "cme_mock_radar",
-              "qCode": "3",
-              "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of Nasser's leadership of the Arab world for growing tension between Israel and Egypt in the years 1955–56.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        Nasser’s emergence as the undisputed champion of pan-Arab nationalism was critically important for escalating Israeli-Egyptian tensions because it challenged Western dominance and intensified border militarisation.<br><br>\n        Firstly, Nasser’s determination to modernize Egypt’s military led directly to the <strong>Czech Arms Deal in September 1955</strong>. Frustrated by Western restrictions on weapons sales, Nasser bypassed the Tripartite Declaration and agreed to purchase over 200 Soviet MiG-15 jets and hundreds of tanks from Czechoslovakia in exchange for Egyptian cotton. This drastically altered the regional balance of power, sparking acute security panic in Israel, where Prime Minister David Ben-Gurion feared that Egypt would soon launch a war of annihilation once Egyptian pilots were trained on Soviet hardware.<br><br>\n        Secondly, Nasser actively supported <em>fedayeen</em> commando raids into southern Israel from the Egyptian-administered Gaza Strip, portraying himself as the protector of Palestinian refugees. Israel retaliated with massive military reprisals, most notably the February 1955 Gaza Raid. When the US subsequently withdrew funding for the Aswan High Dam, Nasser responded on 26 July 1956 by nationalising the Suez Canal and imposing a blockade on Israeli shipping through the Straits of Tiran. This direct economic strangulation of Israel's southern port of Eilat provided the decisive catalyst for Israel to conspire secretly with Britain and France in the <strong>Protocol of Sèvres</strong>, triggering the Suez War in October 1956.",
-              "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
-              "mockUrl": "/units/cme_new/cme_mock_radar.html"
-          }
-      ],
-      "lesson_4": [
-          {
-              "id": "lesson_6_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the Cairo Conference (1964).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the 1964 Cairo Conference was the unification of Palestinian resistance through the creation of the Palestine Liberation Organisation (PLO). Arab League heads of state established the PLO under the Palestinian National Charter, creating a dedicated political body and armed fedayeen factions like Yasser Arafat's Fatah to actively challenge Israeli sovereignty.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_6_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the events of 7 April 1967.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the aerial clashes on 7 April 1967 was a sharp military escalation between Israel and Syria that dragged Egypt towards war. After Israeli Mirage jets shot down six Syrian MiG-21 fighters and buzzed Damascus, Syria publicly accused Egypt of failing to honour their mutual defence treaty, directly pressuring President Nasser to mobilise troops in Sinai.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_6_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "2",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing the key events leading to the outbreak of the Six-Day War (1967).",
-              "stimulus": [
-                  "Syria’s support for Fatah",
-                  "The actions of Nasser"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "The path to war began along the northern border between 1964 and April 1967. Syria’s radical Ba'athist regime actively backed Fatah guerrilla raids against Israeli infrastructure and shelled Israeli farming kibbutzim from artillery emplacements on the Golan Heights. In response to repeated ambushes, Israel conducted aggressive counter-attacks, culminating in the major air battle of 7 April 1967 where Israeli Mirage jets shot down six Syrian MiG-21s and buzzed Damascus.<br><br>This public humiliation directly triggered the fateful actions of President Nasser in May 1967. Stung by Syrian taunts that he was hiding behind UN peacekeepers, and spurred by false Soviet intelligence reports alleging an imminent Israeli invasion of Syria, Nasser took a series of rapid gambles: he ordered 100,000 Egyptian troops into the Sinai Peninsula, expelled the United Nations Emergency Force (UNEF), and announced the total naval blockade of the Straits of Tiran, choking off Israel’s southern oil port of Eilat.<br><br>These provocative actions made all-out war virtually inevitable by convincing Israeli leaders that their existence was under immediate threat. When King Hussein of Jordan signed a mutual defence pact with Egypt on 30 May, completing Israel's encirclement, Israel resolved to act before an Arab invasion could assemble. Consequently, on the morning of 5 June 1967, the Israeli Air Force launched Operation Focus, destroying over 300 Egyptian aircraft on the ground in three hours and initiating the Six-Day War.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "cme_mock_radar_q1a",
-              "mockId": "cme_mock_radar",
-              "qCode": "1(a)",
-              "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the Cairo Conference (1964).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "<strong>Exemplar Model Answer (Level 2 — 4 Marks):</strong><br>\n      One major consequence of the Cairo Conference in January 1964 was the institutional creation of the Palestine Liberation Organization (PLO) to unite disparate Palestinian factions under an official political banner. At the summit, Arab leaders led by Egyptian President Gamal Abdel Nasser agreed to create a representative body for Palestinians, leading directly to the First Palestinian National Council meeting in East Jerusalem in May 1964. As a result, Palestinian nationalism transitioned from scattered refugee committees into an internationally recognized political entity with its own constitution (the Palestinian National Charter) and military wing (the Palestine Liberation Army). This gave Palestinians an autonomous voice on the world stage, although it also initially allowed Arab states like Egypt to supervise and direct Palestinian resistance until Yasser Arafat’s independent Fatah guerrilla movement took control of the PLO leadership after 1967.",
-              "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
-              "mockUrl": "/units/cme_new/cme_mock_radar.html"
-          }
-      ],
-      "lesson_5": [
-          {
-              "id": "lesson_7_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the actions of Nasser in the period leading to war.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of Nasser's actions in May 1967 was that it convinced Israeli leaders that an Arab invasion was imminent, prompting a pre-emptive strike. By expelling UN peacekeepers from Sinai and closing the Straits of Tiran to Israeli shipping at Sharm el-Sheikh, Nasser severed Israel's primary oil route, which Israel considered a casus belli (act of war) leading directly to Operation Focus on 5 June.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_7_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the outbreak of the Six-Day War (1967).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the outbreak of the Six-Day War was a total Israeli military victory that radically transformed the borders of the Middle East. By destroying Arab air forces on 5 June, Israel rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights, tripling the territory under its control and placing over one million Palestinian Arabs under military occupation.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_7_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "3",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the Golan Heights for Israeli security.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One reason the Golan Heights were of paramount importance for Israeli security was that capturing the plateau permanently eliminated Syrian artillery bombardment of northern Israeli communities. For nineteen years between 1948 and 1967, the Syrian military had used fortified bunkers on the volcanic escarpment to shell civilian farming kibbutzim in the Hula Valley and along the Sea of Galilee below. By seizing the heights on 9–10 June 1967, the IDF removed this immediate existential threat, allowing Israeli civilians in Upper Galilee to live and farm without the threat of cross-border shelling.<br><br>Furthermore, holding the Golan Heights was decisive for national security because it provided vital strategic depth and natural defensive barriers against future Syrian ground invasions. Rising over 1,000 metres above the plains, the high plateau—including Mount Hermon—enabled the IDF to install advanced electronic early-warning radar stations that monitored military movements all the way to Damascus, just 40 miles away. This commanding high ground proved essential during the 1973 Yom Kippur War, where Israeli armoured brigades held the 'Valley of Tears' against overwhelming Syrian tank assaults, preventing Syrian forces from penetrating into the Israeli heartland.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          }
-      ],
-      "lesson_6": [
-          {
-              "id": "lesson_8_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of UN Resolution 242.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of UN Resolution 242 was that it created a diplomatic deadlock over 'Land for Peace'. Israel was asked to withdraw from occupied lands in exchange for Arab recognition, but neither side agreed, freezing the borders and directly causing the 1969 War of Attrition.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_8_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the continued dispute over the Suez Canal.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the dispute over the Suez Canal was the outbreak of the War of Attrition. Because the canal was closed as a fortified frontline, Israel built the Bar-Lev Line along the east bank, which prompted continuous Egyptian artillery shelling and commando raids until the 1970 ceasefire.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_8_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "2",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing the aftermath of the 1967 war in the period from June to November 1967.",
-              "stimulus": [
-                  "The occupied territories",
-                  "UN Resolution 242"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "The chain of events began in June 1967 when Israel annexed East Jerusalem and occupied Sinai, Gaza, the West Bank, and the Golan Heights. This displacement of over 300,000 Palestinian refugees across the River Jordan directly created an acute humanitarian crisis that destabilised Jordan and made immediate Arab military retaliation a top priority.<br><br>This humiliation directly provoked Arab leaders to convene at the Khartoum Summit in August 1967. Rather than seeking compromise, the heads of state issued the uncompromising 'Three Noes' (no peace, no recognition, no negotiations). In direct response, both sides hardened their diplomatic stances, effectively blocking bilateral peace talks and entrenching military confrontation along the new ceasefire lines.<br><br>This diplomatic deadlock ultimately forced the United Nations to intervene in November 1967 by passing Resolution 242. British diplomats attempted to bridge the divide through the principle of 'Land for Peace'; however, deliberate linguistic ambiguity over 'territories occupied' allowed Israel to retain the lands while Arab states demanded total withdrawal first. Consequently, rather than resolving the dispute, Resolution 242 cemented an enduring geopolitical stalemate that governed Middle Eastern conflict for decades.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "cme_mock_radar_q1b",
-              "mockId": "cme_mock_radar",
-              "qCode": "1(b)",
-              "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of Israel's consolidation of control of the occupied territories in the years immediately following 1967.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "<strong>Exemplar Model Answer (Level 2 — 4 Marks):</strong><br>\n      One significant consequence of Israel’s consolidation of control over the occupied territories after the Six Day War was the establishment of Israeli Jewish settlements across the West Bank, Gaza, and the Golan Heights, creating deep territorial and political friction with Palestinian residents. Following the 1967 victory, the Israeli government began expropriating land and providing state subsidies for Jewish civilian settlements, beginning with the Allon Plan which sought to create defensive security buffers along the Jordan Valley. As a direct result, over one million Palestinian Arabs were brought under strict Israeli military administration without political voting rights, while Jewish settlers established fortified towns and checkpoints. This permanently complicated future peace negotiations, as it altered the demographic map of the territories and fueled Palestinian resentment, creating the underlying grievances that later sparked the 1987 First Intifada.",
-              "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
-              "mockUrl": "/units/cme_new/cme_mock_radar.html"
-          }
-      ],
-      "lesson_7": [
-          {
-              "id": "lesson_9_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the PFLP airplane hijacks of 1970.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the September 1970 PFLP Dawson's Field airplane hijackings was King Hussein's military crackdown against Palestinian militias in Jordan. By landing three hijacked Western airliners in the Jordanian desert and blowing them up on international television, the PFLP humiliated the Jordanian monarchy, directly provoking King Hussein to declare martial law and launch the 'Black September' civil war to expel the fedayeen.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_9_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the expulsion of the PLO from Jordan (1970).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the expulsion of the PLO from Jordan was the relocation of Palestinian guerrilla bases to southern Lebanon. After being forced out of Jordan by July 1971, Yasser Arafat's PLO established an autonomous armed enclave ('Fatahland') in Lebanon, which destabilised Lebanon's delicate political balance and directly led to cross-border Israeli invasions in 1978 and 1982.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_9_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "3",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the Munich Olympics for international attitudes towards the Palestine issue.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One reason the Munich Olympics massacre was important for international attitudes was that it broadcast the Palestinian political plight to an unprecedented global television audience. In September 1972, the Black September faction infiltrated the Olympic Village and took eleven Israeli athletes hostage, demanding the release of 234 Palestinian prisoners. Watched live by an estimated 900 million viewers across the world, the crisis shattered the Western perception that Palestinians were merely passive, forgotten refugees living in UN camps, forcefully establishing the Palestinian national cause as an urgent global political issue that could no longer be ignored.<br><br>Furthermore, Munich was decisive because the brutal murder of all eleven Israeli hostages produced profound moral outrage that branded Palestinian militancy as international terrorism. The catastrophe at Fürstenfeldbruck airfield led Western governments, including the United States and West Germany, to condemn the PLO and establish elite counter-terrorism units. For Israel, it prompted Prime Minister Golda Meir to authorise 'Operation Wrath of God', an aggressive covert assassination campaign across Europe against Palestinian leaders, entrenching international hostility and ensuring the Israeli government refused all diplomatic contact with the PLO for decades.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          }
-      ],
-      "lesson_8": [
-          {
-              "id": "lesson_10_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of Israel’s consolidation of control of the occupied territories.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of Israel’s consolidation of the occupied territories was that it convinced Arab leaders that lost lands could only be recovered through military force. By building the fortified Bar-Lev Line along the Suez Canal and constructing permanent civilian settlements, Israel signalled it would never withdraw voluntarily, directly prompting Egyptian President Anwar Sadat to plan the 1973 Yom Kippur surprise attack.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_10_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the Yom Kippur War (1973).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One major consequence of the Yom Kippur War was the 1973 OPEC oil embargo, which quadrupled global crude oil prices. By cutting petroleum production and embargoing Western nations that supported Israel, Arab oil states triggered severe economic recessions, directly forcing US Secretary of State Henry Kissinger to intervene and launch 'shuttle diplomacy' to negotiate disengagement.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_10_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "2",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing the key events of the Yom Kippur War (1973) and its aftermath.",
-              "stimulus": [
-                  "The surprise attack on 6 October 1973",
-                  "The OPEC oil embargo"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "The war began on 6 October 1973 when Egypt and Syria launched a coordinated surprise attack on the Jewish holy day of Yom Kippur and during the Muslim month of Ramadan. In the south, Egyptian infantry executed Operation Badr, using high-pressure water cannons to breach the sand ramparts of the Bar-Lev Line and crossing the Suez Canal under a dense umbrella of Soviet-supplied SAM anti-aircraft missiles. Simultaneously, Syrian armoured divisions assaulted the Golan Heights, overwhelming early Israeli defences and inflicting severe initial casualties on the unprepared IDF.<br><br>As Israeli forces faced an existential crisis on both fronts, the conflict escalated into a high-stakes superpower proxy struggle. US President Nixon authorised Operation Nickel Grass, a massive emergency military airlift that delivered tanks, ammunition, and Phantom jets directly to Israel. This vital resupply enabled General Ariel Sharon's armoured division to exploit a gap between Egyptian armies, cross to the west bank of the Suez Canal, and surround Egypt’s Third Army, completely reversing the military momentum on the ground.<br><br>However, this military turnaround triggered dramatic global economic and diplomatic intervention. In direct response to American military aid for Israel, Arab OPEC members deployed the 'oil weapon', slashing oil production and placing an embargo on Western nations, which quadrupled world oil prices. Fearing direct Soviet military intervention to save Egypt's Third Army, the US placed its nuclear forces on DEFCON 3. This dangerous escalation forced US Secretary of State Henry Kissinger to step in, brokering UN Resolution 338 and securing a ceasefire on 24 October 1973.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "cme_mock_radar_q2",
-              "mockId": "cme_mock_radar",
-              "qCode": "2",
-              "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing Egyptian relations with the superpowers and Israel in the years 1967–73.",
-              "stimulus": [
-                  "Soviet military aid to Egypt",
-                  "the surprise attack on Yom Kippur (1973)"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n      Following Egypt’s catastrophic defeat in the Six Day War of 1967, Egyptian relations with both the superpowers and Israel underwent a dramatic transformation driven by a determination to reverse Israeli occupation of the Sinai Peninsula.<br><br>\n      Initially, relations between Egypt and the Soviet Union deepened significantly. With Egypt’s air force and military infrastructure decimated, President Nasser turned to Moscow for extensive rearmament. The USSR supplied over $2 billion in modern military hardware, including advanced MiG-21 fighters and SAM-2/SAM-3 anti-aircraft missile batteries, accompanied by approximately 15,000 Soviet military advisors. This enabled Egypt to launch the <strong>War of Attrition (1969–70)</strong>, conducting artillery bombardments and commando raids across the Suez Canal against Israel’s fortified Bar-Lev Line. However, when Nasser died in September 1970, his successor <strong>Anwar Sadat</strong> grew frustrated with Soviet reluctance to supply offensive strike aircraft capable of attacking deep into Israeli territory.<br><br>\n      This frustration triggered a pivotal turning point in superpower relations. In July 1972, Sadat took the calculated gamble of expelling all 15,000 Soviet military advisors from Egypt. While superficially weakening Egypt’s military capability, this move was secretly designed to signal to the United States that Egypt was open to diplomatic realignment, provided Washington pressured Israel to withdraw from the Sinai. When the US and Israel remained complacent, assuming Arab forces were too weak to launch a major assault, Sadat coordinated a joint offensive with President Assad of Syria.<br><br>\n      The culmination of this narrative occurred on 6 October 1973 with <strong>Operation Badr</strong>: the surprise crossing of the Suez Canal on the Jewish holiday of Yom Kippur. Egyptian forces breached the Bar-Lev Line with high-pressure water cannons and established defensive bridgeheads under an umbrella of mobile SAM missile batteries, inflicting heavy losses on Israeli counter-attacks. Although Israel eventually rallied and crossed to the west bank of the canal, the war completely shattered the myth of Israeli military invincibility. Crucially, it forced US Secretary of State Henry Kissinger into active 'shuttle diplomacy', ultimately initiating the diplomatic peace process that led directly to the Camp David Accords.",
-              "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
-              "mockUrl": "/units/cme_new/cme_mock_radar.html"
-          }
-      ],
-      "lesson_9": [
-          {
-              "id": "lesson_11_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the 1973 OPEC oil embargo for American foreign policy in the Middle East.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the 1973 OPEC oil embargo was that it forced the United States to abandon its passive stance and actively mediate Middle Eastern diplomacy. Because quadrupled crude oil prices and fuel shortages caused severe domestic economic stagflation, Secretary of State Henry Kissinger launched intensive 'shuttle diplomacy' to broker disengagement agreements and prevent future Arab-Israeli wars.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_11_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of Anwar Sadat’s visit to Jerusalem in November 1977.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of Anwar Sadat’s visit to Jerusalem in November 1977 was that it shattered thirty years of psychological enmity and opened direct bilateral peace negotiations. By addressing the Israeli Knesset in person and declaring 'no more war', Sadat bypassed deadlocked international conferences, directly creating the diplomatic trust that enabled President Jimmy Carter to convene the 1978 Camp David summit.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_11_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "2",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing the key events in diplomatic negotiations between Israel and Egypt from 1974 to November 1977.",
-              "stimulus": [
-                  "Kissinger’s shuttle diplomacy",
-                  "Sadat’s visit to Jerusalem (1977)"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "Diplomatic engagement began in early 1974 following the October 1973 War. Driven by the devastating impact of the Arab oil embargo on the Western economy, US Secretary of State Henry Kissinger initiated intensive 'shuttle diplomacy', flying relentlessly between Cairo and Jerusalem. This step-by-step approach secured the Sinai I (1974) and Sinai II (1975) disengagement agreements, which pulled Israeli forces back from the Suez Canal, allowed Egypt to clear and reopen the vital canal in June 1975, and established early-warning buffer zones monitored by American technicians.<br><br>However, this diplomatic momentum stalled dramatically in May 1977 following the election of Menachem Begin's right-wing Likud government. Begin was an ideological hardliner who viewed the occupied West Bank as historic biblical territory ('Judea and Samaria') and initially showed little interest in peace with Arab neighbours. Fearing that diplomatic paralysis would lead inexorably to another catastrophic war, Egyptian President Anwar Sadat took a daring gamble to break the psychological deadlock.<br><br>This culminated on 19 November 1977 when Sadat undertook an unprecedented visit to Jerusalem, landing at Ben Gurion Airport and addressing the Israeli Knesset in person. Declaring 'no more war, no more bloodshed', Sadat offered full diplomatic peace in exchange for the return of Egyptian territory. This historic gesture stunned the world and shattered thirty years of Arab rejectionism, directly compelling Begin to respond and laying the essential foundation for the 1978 Camp David negotiations.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_11_can_q4",
-              "mockId": "cme_canonical_practice",
-              "qCode": "3",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the Camp David Accords (1978) for Arab-Israeli relations.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One reason the Camp David Accords were of profound importance for Arab-Israeli relations was that they achieved the first formal peace treaty between Israel and a frontline Arab state, breaking thirty years of continuous warfare. Under the bilateral framework brokered by US President Jimmy Carter, Israel agreed to withdraw completely from the Sinai Peninsula and dismantle its settlements, while Egypt granted full diplomatic recognition and opened the Suez Canal and Straits of Tiran to Israeli shipping. This established the vital precedent of 'land for peace' and neutralised the Arab world’s largest military power, ensuring Israel no longer faced a credible two-front existential threat.<br><br>Furthermore, the Accords were decisive because they deeply fractured the Arab world and isolated Egypt from its traditional allies. Because the framework for Palestinian self-government in the West Bank and Gaza lacked binding timetables and was rejected by Israeli Prime Minister Menachem Begin as statehood, other Arab states viewed Anwar Sadat as a traitor to the Palestinian cause. At the November 1978 Baghdad Summit, Arab League members voted to expel Egypt and sever diplomatic relations, deepening regional instability and directly fuelling the Islamist opposition that led to Sadat's assassination in October 1981.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "cme_mock_radar_q3b",
-              "mockId": "cme_mock_radar",
-              "qCode": "3",
-              "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of Arafat's speech to the UN (1974) for international recognition of the Palestinian cause.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        Yasser Arafat’s address to the United Nations General Assembly on 13 November 1974 was of paramount importance because it fundamentally shifted international perception of the Palestinian conflict from a humanitarian refugee dilemma into a legitimate national self-determination struggle.<br><br>\n        Firstly, the speech provided the PLO with unprecedented global diplomatic legitimacy. Arafat became the first representative of a non-state entity to address the General Assembly, invited following the Arab League’s Rabat Summit declaration that the PLO was the 'sole legitimate representative of the Palestinian people'. Wearing a holster and carrying an olive branch, Arafat famously concluded: <em>'I have come bearing an olive branch and a freedom fighter’s gun. Do not let the olive branch fall from my hand.'</em> This iconic imagery resonated powerfully across the Non-Aligned Movement and the Communist bloc.<br><br>\n        Secondly, the immediate consequence was <strong>UN Resolution 3236 and 3237</strong>, which reaffirmed the inalienable rights of the Palestinian people to self-determination, national independence, and sovereignty in Palestine, while granting the PLO official Permanent Observer status at the UN. This diplomatic breakthrough marginalized extreme rejectionist groups by showing that political diplomacy could achieve global standing, establishing a foundation that later allowed the PLO to negotiate bilaterally with the United States and Israel during the 1993 Oslo Peace Process.",
-              "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
-              "mockUrl": "/units/cme_new/cme_mock_radar.html"
-          }
-      ],
-      "lesson_10": [
-          {
-              "id": "lesson_12_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of Operation Litani in March 1978.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of Operation Litani in March 1978 was the deployment of United Nations peacekeepers and the creation of an Israeli proxy security belt in southern Lebanon. In response to 25,000 Israeli troops advancing to the Litani River, UN Security Council Resolution 425 established UNIFIL, while Israel armed the South Lebanon Army to police a southern border buffer zone.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_12_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the Sabra and Shatila massacre (September 1982).",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the Sabra and Shatila massacre was severe domestic political fallout in Israel that forced the resignation of Defence Minister Ariel Sharon. Following massive protests of 400,000 people in Tel Aviv, the official Kahan Commission ruled that Sharon bore 'personal responsibility' for permitting Christian Phalangist militias into the refugee camps, compelling him to resign.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_12_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(c)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the outbreak of the First Intifada in December 1987.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the outbreak of the First Intifada in December 1987 was that it shattered Israeli complacency and proved military occupation was unsustainable. Following the fatal Jabalia checkpoint crash, widespread strikes, commercial boycotts, and youth stone-throwing demonstrated that twenty years of direct military control over Palestinians could not be maintained by force alone.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_12_can_q4",
-              "mockId": "cme_canonical_practice",
-              "qCode": "2",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing Israeli military involvement in Lebanon between 1978 and 1983.",
-              "stimulus": [
-                  "Operation Litani (1978)",
-                  "The Sabra and Shatila massacre (1982)"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "Israeli military involvement began in March 1978 when Prime Minister Menachem Begin launched Operation Litani following the Coastal Road attack. Over 25,000 Israeli soldiers advanced to the Litani River to push PLO fedayeen away from the border. Although UN Security Council Resolution 425 established UNIFIL and a Christian militia buffer zone, cross-border rocket fire persisted, convincing Defence Minister Ariel Sharon that only total military destruction of the PLO could guarantee Israeli security.<br><br>Consequently, this tension escalated into a full-scale invasion in June 1982 under the pretext of the attempted assassination of Ambassador Shlomo Argov. Sharon launched Operation Peace for Galilee, deceptively telling the cabinet troops would advance only 40 kilometres, but instead driving sixty miles to lay siege to West Beirut. Relentless artillery bombardment and air strikes eventually forced Yasser Arafat and thousands of PLO fighters to evacuate Lebanon for Tunis.<br><br>Finally, this operation culminated in disaster in September 1982 following the assassination of Lebanese President Gemayel. Israeli forces permitted Christian Phalangist militias into the Sabra and Shatila refugee camps, resulting in the slaughter of hundreds of civilians under IDF illumination flares. Unprecedented protests of 400,000 people in Tel Aviv forced the Kahan Commission inquiry, compelling Sharon to resign and leaving Israel bogged down in Lebanon.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_12_can_q5",
-              "mockId": "cme_canonical_practice",
-              "qCode": "3",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the First Intifada (1987–93) for international attitudes towards the Palestine issue.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One reason the First Intifada was of profound importance for international attitudes was that television coverage dramatically transformed the global perception of Palestinians from aggressors into victims of military occupation. Before 1987, Western governments and media primarily associated the Palestinian movement with cross-border terrorism, hijackings, and guerrilla warfare. However, worldwide television broadcasts showing unarmed Palestinian youths armed only with stones confronting heavily armed IDF soldiers—alongside Defence Minister Yitzhak Rabin's controversial 'Iron Fist' policy of breaking the bones of protesters—shattered Israel's moral image abroad and generated unprecedented global sympathy for the Palestinian population.<br><br>Furthermore, the Intifada was decisive because it created irresistible international diplomatic pressure that compelled both Yasser Arafat and the United States to alter their policies. Realising that grassroots resistance inside the territories was eclipsing the exiled PLO leadership, Arafat addressed the UN General Assembly in Geneva in December 1988, formally renouncing terrorism and accepting UN Resolutions 242 and 338. By meeting long-standing American conditions, this concession forced the US government to open direct diplomatic dialogue with the PLO, fundamentally legitimising the Palestinian struggle on the international stage and laying the direct groundwork for the 1991 Madrid Conference.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          }
-      ],
-      "lesson_11": [
-          {
-              "id": "lesson_13_can_q1",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(a)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the secret Oslo back-channel negotiations in 1993.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the secret Oslo back-channel negotiations in 1993 was the historic breakthrough of mutual diplomatic recognition between Israel and the PLO. Through the Letters of Mutual Recognition, Prime Minister Yitzhak Rabin officially recognised the PLO as the Palestinian people's representative, while Yasser Arafat recognised Israel's right to exist and renounced terrorism.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_13_can_q2",
-              "mockId": "cme_canonical_practice",
-              "qCode": "1(b)",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "4-Mark Consequence",
-              "marks": 4,
-              "targetMins": 6,
-              "questionText": "Explain one consequence of the assassination of Yitzhak Rabin on 4 November 1995.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One consequence of the assassination of Yitzhak Rabin was the severe derailment of the peace process and the election of a right-wing Israeli government opposed to Oslo. In May 1996, Likud leader Benjamin Netanyahu won the premiership on a hardline security platform, subsequently halting further territorial handovers to the Palestinian National Authority.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_13_can_q3",
-              "mockId": "cme_canonical_practice",
-              "qCode": "2",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Narrative Account",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Write a narrative account analysing the peace process between Israel and the Palestinians from 1992 to the assassination of Yitzhak Rabin in 1995.",
-              "stimulus": [
-                  "The Oslo I Accords (1993)",
-                  "Extremist opposition to the peace process"
-              ],
-              "sourceExtract": "",
-              "modelAnswer": "The peace process began in 1992 following the election of Israeli Prime Minister Yitzhak Rabin on a platform of territorial compromise. In complete secrecy, Israeli and PLO envoys conducted back-channel negotiations in Norway, producing the historic Letters of Mutual Recognition where Israel recognised the PLO and Yasser Arafat renounced terrorism. This culminated on 13 September 1993 when Rabin and Arafat signed the Oslo I Accord on the White House lawn, agreeing to phased Palestinian self-government.<br><br>Following this initial breakthrough, the process advanced into practical governance through the May 1994 Cairo Agreement, which established the Palestinian National Authority (PNA) in Gaza and Jericho. Diplomatic momentum continued with the 1994 peace treaty with Jordan, culminating in the September 1995 Oslo II Agreement, which divided the West Bank into Areas A, B, and C to extend Palestinian civil administration.<br><br>However, this delicate momentum was shattered by violent extremist resistance from both sides. In February 1994, Jewish extremist Baruch Goldstein murdered 29 Palestinians in Hebron, triggering deadly retaliatory suicide bus bombings by Hamas that hardened Israeli public opinion. The crisis culminated on 4 November 1995 when Jewish religious extremist Yigal Amir assassinated Rabin at a Tel Aviv peace rally, bringing the momentum of the Oslo peace process to a tragic halt.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "lesson_13_can_q4",
-              "mockId": "cme_canonical_practice",
-              "qCode": "3",
-              "mockTitle": "Official Edexcel Syllabus Practice Station",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the Oslo I Accord (1993) for relations between Israel and the PLO.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "One reason the Oslo I Accord was of profound importance for relations between Israel and the PLO was that it shattered forty-five years of mutual denial through official diplomatic recognition. Through the Letters of Mutual Recognition exchanged in September 1993, Prime Minister Yitzhak Rabin officially acknowledged the PLO as the legitimate representative of the Palestinian people, while Yasser Arafat recognised Israel's right to exist in peace and formally renounced terrorism. This historic breakthrough transformed former mortal enemies into negotiating partners, leading directly to the iconic handshake between Rabin and Arafat on the White House lawn on 13 September 1993.<br><br>Furthermore, the Accord was of decisive importance because it established the practical mechanism for Palestinian self-government through the creation of the Palestinian National Authority (PNA). Under the 'Gaza-Jericho First' formula, Israeli forces redeployed from major population centres, allowing Arafat to establish an autonomous Palestinian administration on home soil. However, because Oslo deferred intractable issues such as Jerusalem, Jewish settlements, and Palestinian refugees, the agreement provoked intense opposition from extremists on both sides, sparking deadly Hamas suicide bombings and right-wing Israeli resistance that culminated in Rabin's assassination.",
-              "pdfUrl": "/pdfs/cme_new_textbook.pdf",
-              "mockUrl": "/units/cme_new/"
-          },
-          {
-              "id": "cme_mock_radar_q3c",
-              "mockId": "cme_mock_radar",
-              "qCode": "3",
-              "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
-              "paperCode": "Option 26/27 (1HI0/26-27)",
-              "type": "8-Mark Importance",
-              "marks": 8,
-              "targetMins": 16,
-              "questionText": "Explain the importance of the end of the Cold War and the Gulf War (1991) for superpower peace efforts in the Middle East.",
-              "stimulus": [],
-              "sourceExtract": "",
-              "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        The confluence of the Cold War’s end and the 1991 Gulf War was decisive in creating an unprecedented diplomatic window that forced both Arab states and Israel to the negotiating table.<br><br>\n        Firstly, the collapse of the Soviet Union eliminated the primary military and diplomatic sponsor of radical Arab regimes like Syria and the PLO. Without Soviet subsidies and weaponry, Arab states could no longer contemplate military parity with Israel. Furthermore, the massive exodus of over 400,000 Soviet Jews immigrating to Israel in the early 1990s strained Israel’s economy, making Prime Minister Yitzhak Shamir heavily reliant on $10 billion in US loan guarantees, which President George H.W. Bush threatened to withhold unless Israel agreed to attend international peace talks.<br><br>\n        Secondly, the 1991 Gulf War transformed regional alliances. When Saddam Hussein invaded Kuwait, the US built a coalition that included Arab states such as Egypt, Saudi Arabia, and Syria. To reward these Arab allies and disprove accusations of double standards, US President Bush and Secretary of State James Baker committed to resolving the Arab-Israeli conflict immediately following the liberation of Kuwait. Meanwhile, the PLO had disastrously backed Saddam Hussein, resulting in the expulsion of 300,000 Palestinians from Kuwait and the cut-off of Gulf financial aid, leaving Arafat isolated and desperate for a diplomatic breakthrough. This unique superpower leverage led directly to the convening of the <strong>Madrid Peace Conference in October 1991</strong>, where Israeli and Arab delegates sat face-to-face for the first time in history.",
-              "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
-              "mockUrl": "/units/cme_new/cme_mock_radar.html"
-          }
-      ]
+    "lesson_1": [
+      {
+        "id": "lesson_2_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the bombing of the King David Hotel (July 1946).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to abandon Palestine.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_2_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the SS Exodus affair (July 1947).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the SS Exodus affair was a catastrophic international public relations disaster for Britain. When the Royal Navy forcibly boarded the ship and returned 4,500 Holocaust survivors to displaced persons camps in Germany, global outrage mounted, directly pushing US President Truman to demand Britain end the blockade and surrender the Mandate.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_2_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the bombing of the King David Hotel (July 1946) for the British decision to withdraw from Palestine.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One reason the bombing of the King David Hotel was important for Britain's decision to withdraw was that it completely destroyed the operational infrastructure of British governance in Palestine. The explosion destroyed the Secretariat and military headquarters, killing 91 key British, Arab, and Jewish staff while destroying vital intelligence registries. This proved that Britain's 100,000-man military garrison could no longer guarantee law and order against Zionist paramilitaries, proving that the Mandate had become militarily ungovernable.<br><br>Furthermore, the bombing was decisive because it destroyed domestic British political support for staying in Palestine. Coming directly after the trauma of the Second World War, the British public and press were outraged by soldiers and civil servants being killed abroad while Britain suffered severe post-war austerity and economic debt. Facing an unsustainable £40 million annual deployment cost, Prime Minister Clement Attlee’s government concluded that remaining in Palestine was untenable, directly accelerating the cabinet's February 1947 decision to surrender the Mandate to the United Nations.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      }
+    ],
+    "lesson_2": [
+      {
+        "id": "lesson_3_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the 1948–49 War for Palestinian Arabs.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the 1948–49 War for Palestinian Arabs was the creation of a permanent refugee crisis, known as the Nakba ('Catastrophe'). Over 700,000 Palestinians fled or were expelled from their villages, resulting in their confinement to squalid UNRWA refugee camps in the West Bank, Gaza, and Lebanon with no right of return.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_3_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the Israeli Law of Return (1950).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the 1950 Law of Return was a rapid demographic transformation that doubled Israel’s population within four years. By granting every Jewish person automatic citizenship, over 680,000 European Holocaust survivors and Middle Eastern Jewish refugees arrived, directly securing vital manpower for national defence and the Israeli Defense Forces (IDF).",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_3_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the Law of Return (1950) for the development of the new State of Israel in the aftermath of the 1948–49 War.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One reason the Law of Return was vital for the development of Israel was that it resolved the young state’s acute existential security and demographic deficit. Surrounded by hostile Arab states with vastly superior populations, Israel had only 650,000 Jewish citizens in 1948. By guaranteeing automatic citizenship to every Jewish immigrant, the law enabled 680,000 Holocaust survivors and Mizrahi refugees to arrive by 1951, doubling the population and providing essential conscripts to build the Israeli Defense Forces (IDF) into a formidable military deterrent.<br><br>Furthermore, the Law was decisive for national development because it facilitated the rapid territorial consolidation of Israel's newly established borders. The state strategically directed hundreds of thousands of new arrivals into farming cooperatives (kibbutzim and moshavim) along the fragile 1949 armistice lines (the Green Line) and in the Negev desert. This physically secured previously vulnerable frontiers against cross-border Fedayeen infiltration, converting an insecure armistice boundary into a permanently settled and economically productive sovereign state.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      }
+    ],
+    "lesson_3": [
+      {
+        "id": "lesson_4_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the Israeli raid on Gaza (February 1955).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the February 1955 Israeli raid on Gaza was that it prompted President Nasser to seek modern weapons from the Soviet bloc. The death of 37 Egyptian soldiers exposed Egypt's severe military inferiority, directly driving Nasser to sign the September 1955 Czechoslovak arms deal to obtain advanced Soviet MiG-15 jet fighters and tanks.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_4_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the 1956 Suez Crisis for Britain and France as global powers.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the 1956 Suez Crisis was the permanent destruction of Britain and France’s status as independent global superpowers. When US President Eisenhower threatened to trigger a collapse of the British pound unless forces withdrew immediately, London capitulated, proving that European imperial powers could never again launch major military operations without American approval.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_4_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "2",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing the events of the 1956 Suez Crisis from the nationalisation of the canal to the withdrawal of Anglo-French forces.",
+        "stimulus": [
+          "President Nasser nationalises the Suez Canal (26 July 1956)",
+          "The secret Protocol of Sèvres and Israeli invasion of Sinai (October 1956)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "The crisis began on 26 July 1956 when Egyptian President Gamal Abdel Nasser nationalised the Anglo-French Suez Canal Company. Nasser seized the waterway to collect shipping tolls after the United States and Britain cancelled funding for Egypt's vital Aswan High Dam. British Prime Minister Anthony Eden viewed this as an intolerable threat to Britain’s imperial oil route, branding Nasser an aggressive dictator.<br><br>In response, Britain and France orchestrated the secret Protocol of Sèvres in October 1956, colluding with Israel to manufacture a pretext for military intervention. Under this plan, Israel invaded the Egyptian Sinai on 29 October, advancing towards the canal. Britain and France immediately issued a coordinated ultimatum demanding both sides withdraw from the canal zone, before landing Anglo-French paratroopers and launching air strikes on Port Said under the guise of 'separating the combatants'.<br><br>However, this military conspiracy provoked decisive superpower intervention that halted the invasion. US President Dwight D. Eisenhower condemned the operation and threatened to collapse the British pound by blocking vital loans unless forces withdrew immediately. Facing total financial ruin, Britain accepted a humiliating ceasefire on 6 November 1956, allowing the United Nations Emergency Force (UNEF) to deploy and supervise the withdrawal of allied troops.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "cme_mock_radar_q3a",
+        "mockId": "cme_mock_radar",
+        "qCode": "3",
+        "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of Nasser's leadership of the Arab world for growing tension between Israel and Egypt in the years 1955–56.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        Nasser’s emergence as the undisputed champion of pan-Arab nationalism was critically important for escalating Israeli-Egyptian tensions because it challenged Western dominance and intensified border militarisation.<br><br>\n        Firstly, Nasser’s determination to modernize Egypt’s military led directly to the <strong>Czech Arms Deal in September 1955</strong>. Frustrated by Western restrictions on weapons sales, Nasser bypassed the Tripartite Declaration and agreed to purchase over 200 Soviet MiG-15 jets and hundreds of tanks from Czechoslovakia in exchange for Egyptian cotton. This drastically altered the regional balance of power, sparking acute security panic in Israel, where Prime Minister David Ben-Gurion feared that Egypt would soon launch a war of annihilation once Egyptian pilots were trained on Soviet hardware.<br><br>\n        Secondly, Nasser actively supported <em>fedayeen</em> commando raids into southern Israel from the Egyptian-administered Gaza Strip, portraying himself as the protector of Palestinian refugees. Israel retaliated with massive military reprisals, most notably the February 1955 Gaza Raid. When the US subsequently withdrew funding for the Aswan High Dam, Nasser responded on 26 July 1956 by nationalising the Suez Canal and imposing a blockade on Israeli shipping through the Straits of Tiran. This direct economic strangulation of Israel's southern port of Eilat provided the decisive catalyst for Israel to conspire secretly with Britain and France in the <strong>Protocol of Sèvres</strong>, triggering the Suez War in October 1956.",
+        "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
+        "mockUrl": "/units/cme_new/cme_mock_radar.html"
+      }
+    ],
+    "lesson_4": [
+      {
+        "id": "lesson_6_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the Cairo Conference (1964).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the 1964 Cairo Conference was the unification of Palestinian resistance through the creation of the Palestine Liberation Organisation (PLO). Arab League heads of state established the PLO under the Palestinian National Charter, creating a dedicated political body and armed fedayeen factions like Yasser Arafat's Fatah to actively challenge Israeli sovereignty.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_6_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the events of 7 April 1967.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the aerial clashes on 7 April 1967 was a sharp military escalation between Israel and Syria that dragged Egypt towards war. After Israeli Mirage jets shot down six Syrian MiG-21 fighters and buzzed Damascus, Syria publicly accused Egypt of failing to honour their mutual defence treaty, directly pressuring President Nasser to mobilise troops in Sinai.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_6_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "2",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing the key events leading to the outbreak of the Six-Day War (1967).",
+        "stimulus": [
+          "Syria’s support for Fatah",
+          "The actions of Nasser"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "The path to war began along the northern border between 1964 and April 1967. Syria’s radical Ba'athist regime actively backed Fatah guerrilla raids against Israeli infrastructure and shelled Israeli farming kibbutzim from artillery emplacements on the Golan Heights. In response to repeated ambushes, Israel conducted aggressive counter-attacks, culminating in the major air battle of 7 April 1967 where Israeli Mirage jets shot down six Syrian MiG-21s and buzzed Damascus.<br><br>This public humiliation directly triggered the fateful actions of President Nasser in May 1967. Stung by Syrian taunts that he was hiding behind UN peacekeepers, and spurred by false Soviet intelligence reports alleging an imminent Israeli invasion of Syria, Nasser took a series of rapid gambles: he ordered 100,000 Egyptian troops into the Sinai Peninsula, expelled the United Nations Emergency Force (UNEF), and announced the total naval blockade of the Straits of Tiran, choking off Israel’s southern oil port of Eilat.<br><br>These provocative actions made all-out war virtually inevitable by convincing Israeli leaders that their existence was under immediate threat. When King Hussein of Jordan signed a mutual defence pact with Egypt on 30 May, completing Israel's encirclement, Israel resolved to act before an Arab invasion could assemble. Consequently, on the morning of 5 June 1967, the Israeli Air Force launched Operation Focus, destroying over 300 Egyptian aircraft on the ground in three hours and initiating the Six-Day War.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "cme_mock_radar_q1a",
+        "mockId": "cme_mock_radar",
+        "qCode": "1(a)",
+        "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the Cairo Conference (1964).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "<strong>Exemplar Model Answer (Level 2 — 4 Marks):</strong><br>\n      One major consequence of the Cairo Conference in January 1964 was the institutional creation of the Palestine Liberation Organization (PLO) to unite disparate Palestinian factions under an official political banner. At the summit, Arab leaders led by Egyptian President Gamal Abdel Nasser agreed to create a representative body for Palestinians, leading directly to the First Palestinian National Council meeting in East Jerusalem in May 1964. As a result, Palestinian nationalism transitioned from scattered refugee committees into an internationally recognized political entity with its own constitution (the Palestinian National Charter) and military wing (the Palestine Liberation Army). This gave Palestinians an autonomous voice on the world stage, although it also initially allowed Arab states like Egypt to supervise and direct Palestinian resistance until Yasser Arafat’s independent Fatah guerrilla movement took control of the PLO leadership after 1967.",
+        "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
+        "mockUrl": "/units/cme_new/cme_mock_radar.html"
+      }
+    ],
+    "lesson_5": [
+      {
+        "id": "lesson_7_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the actions of Nasser in the period leading to war.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of Nasser's actions in May 1967 was that it convinced Israeli leaders that an Arab invasion was imminent, prompting a pre-emptive strike. By expelling UN peacekeepers from Sinai and closing the Straits of Tiran to Israeli shipping at Sharm el-Sheikh, Nasser severed Israel's primary oil route, which Israel considered a casus belli (act of war) leading directly to Operation Focus on 5 June.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_7_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the outbreak of the Six-Day War (1967).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the outbreak of the Six-Day War was a total Israeli military victory that radically transformed the borders of the Middle East. By destroying Arab air forces on 5 June, Israel rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights, tripling the territory under its control and placing over one million Palestinian Arabs under military occupation.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_7_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the Golan Heights for Israeli security.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One reason the Golan Heights were of paramount importance for Israeli security was that capturing the plateau permanently eliminated Syrian artillery bombardment of northern Israeli communities. For nineteen years between 1948 and 1967, the Syrian military had used fortified bunkers on the volcanic escarpment to shell civilian farming kibbutzim in the Hula Valley and along the Sea of Galilee below. By seizing the heights on 9–10 June 1967, the IDF removed this immediate existential threat, allowing Israeli civilians in Upper Galilee to live and farm without the threat of cross-border shelling.<br><br>Furthermore, holding the Golan Heights was decisive for national security because it provided vital strategic depth and natural defensive barriers against future Syrian ground invasions. Rising over 1,000 metres above the plains, the high plateau—including Mount Hermon—enabled the IDF to install advanced electronic early-warning radar stations that monitored military movements all the way to Damascus, just 40 miles away. This commanding high ground proved essential during the 1973 Yom Kippur War, where Israeli armoured brigades held the 'Valley of Tears' against overwhelming Syrian tank assaults, preventing Syrian forces from penetrating into the Israeli heartland.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      }
+    ],
+    "lesson_6": [
+      {
+        "id": "lesson_8_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of UN Resolution 242.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of UN Resolution 242 was that it created a diplomatic deadlock over 'Land for Peace'. Israel was asked to withdraw from occupied lands in exchange for Arab recognition, but neither side agreed, freezing the borders and directly causing the 1969 War of Attrition.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_8_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the continued dispute over the Suez Canal.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the dispute over the Suez Canal was the outbreak of the War of Attrition. Because the canal was closed as a fortified frontline, Israel built the Bar-Lev Line along the east bank, which prompted continuous Egyptian artillery shelling and commando raids until the 1970 ceasefire.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_8_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "2",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing the aftermath of the 1967 war in the period from June to November 1967.",
+        "stimulus": [
+          "The occupied territories",
+          "UN Resolution 242"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "The chain of events began in June 1967 when Israel annexed East Jerusalem and occupied Sinai, Gaza, the West Bank, and the Golan Heights. This displacement of over 300,000 Palestinian refugees across the River Jordan directly created an acute humanitarian crisis that destabilised Jordan and made immediate Arab military retaliation a top priority.<br><br>This humiliation directly provoked Arab leaders to convene at the Khartoum Summit in August 1967. Rather than seeking compromise, the heads of state issued the uncompromising 'Three Noes' (no peace, no recognition, no negotiations). In direct response, both sides hardened their diplomatic stances, effectively blocking bilateral peace talks and entrenching military confrontation along the new ceasefire lines.<br><br>This diplomatic deadlock ultimately forced the United Nations to intervene in November 1967 by passing Resolution 242. British diplomats attempted to bridge the divide through the principle of 'Land for Peace'; however, deliberate linguistic ambiguity over 'territories occupied' allowed Israel to retain the lands while Arab states demanded total withdrawal first. Consequently, rather than resolving the dispute, Resolution 242 cemented an enduring geopolitical stalemate that governed Middle Eastern conflict for decades.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "cme_mock_radar_q1b",
+        "mockId": "cme_mock_radar",
+        "qCode": "1(b)",
+        "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of Israel's consolidation of control of the occupied territories in the years immediately following 1967.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "<strong>Exemplar Model Answer (Level 2 — 4 Marks):</strong><br>\n      One significant consequence of Israel’s consolidation of control over the occupied territories after the Six Day War was the establishment of Israeli Jewish settlements across the West Bank, Gaza, and the Golan Heights, creating deep territorial and political friction with Palestinian residents. Following the 1967 victory, the Israeli government began expropriating land and providing state subsidies for Jewish civilian settlements, beginning with the Allon Plan which sought to create defensive security buffers along the Jordan Valley. As a direct result, over one million Palestinian Arabs were brought under strict Israeli military administration without political voting rights, while Jewish settlers established fortified towns and checkpoints. This permanently complicated future peace negotiations, as it altered the demographic map of the territories and fueled Palestinian resentment, creating the underlying grievances that later sparked the 1987 First Intifada.",
+        "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
+        "mockUrl": "/units/cme_new/cme_mock_radar.html"
+      }
+    ],
+    "lesson_7": [
+      {
+        "id": "lesson_9_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the PFLP airplane hijacks of 1970.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the September 1970 PFLP Dawson's Field airplane hijackings was King Hussein's military crackdown against Palestinian militias in Jordan. By landing three hijacked Western airliners in the Jordanian desert and blowing them up on international television, the PFLP humiliated the Jordanian monarchy, directly provoking King Hussein to declare martial law and launch the 'Black September' civil war to expel the fedayeen.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_9_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the expulsion of the PLO from Jordan (1970).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the expulsion of the PLO from Jordan was the relocation of Palestinian guerrilla bases to southern Lebanon. After being forced out of Jordan by July 1971, Yasser Arafat's PLO established an autonomous armed enclave ('Fatahland') in Lebanon, which destabilised Lebanon's delicate political balance and directly led to cross-border Israeli invasions in 1978 and 1982.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_9_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the Munich Olympics for international attitudes towards the Palestine issue.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One reason the Munich Olympics massacre was important for international attitudes was that it broadcast the Palestinian political plight to an unprecedented global television audience. In September 1972, the Black September faction infiltrated the Olympic Village and took eleven Israeli athletes hostage, demanding the release of 234 Palestinian prisoners. Watched live by an estimated 900 million viewers across the world, the crisis shattered the Western perception that Palestinians were merely passive, forgotten refugees living in UN camps, forcefully establishing the Palestinian national cause as an urgent global political issue that could no longer be ignored.<br><br>Furthermore, Munich was decisive because the brutal murder of all eleven Israeli hostages produced profound moral outrage that branded Palestinian militancy as international terrorism. The catastrophe at Fürstenfeldbruck airfield led Western governments, including the United States and West Germany, to condemn the PLO and establish elite counter-terrorism units. For Israel, it prompted Prime Minister Golda Meir to authorise 'Operation Wrath of God', an aggressive covert assassination campaign across Europe against Palestinian leaders, entrenching international hostility and ensuring the Israeli government refused all diplomatic contact with the PLO for decades.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      }
+    ],
+    "lesson_8": [
+      {
+        "id": "lesson_10_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of Israel’s consolidation of control of the occupied territories.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of Israel’s consolidation of the occupied territories was that it convinced Arab leaders that lost lands could only be recovered through military force. By building the fortified Bar-Lev Line along the Suez Canal and constructing permanent civilian settlements, Israel signalled it would never withdraw voluntarily, directly prompting Egyptian President Anwar Sadat to plan the 1973 Yom Kippur surprise attack.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_10_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the Yom Kippur War (1973).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One major consequence of the Yom Kippur War was the 1973 OPEC oil embargo, which quadrupled global crude oil prices. By cutting petroleum production and embargoing Western nations that supported Israel, Arab oil states triggered severe economic recessions, directly forcing US Secretary of State Henry Kissinger to intervene and launch 'shuttle diplomacy' to negotiate disengagement.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_10_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "2",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing the key events of the Yom Kippur War (1973) and its aftermath.",
+        "stimulus": [
+          "The surprise attack on 6 October 1973",
+          "The OPEC oil embargo"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "The war began on 6 October 1973 when Egypt and Syria launched a coordinated surprise attack on the Jewish holy day of Yom Kippur and during the Muslim month of Ramadan. In the south, Egyptian infantry executed Operation Badr, using high-pressure water cannons to breach the sand ramparts of the Bar-Lev Line and crossing the Suez Canal under a dense umbrella of Soviet-supplied SAM anti-aircraft missiles. Simultaneously, Syrian armoured divisions assaulted the Golan Heights, overwhelming early Israeli defences and inflicting severe initial casualties on the unprepared IDF.<br><br>As Israeli forces faced an existential crisis on both fronts, the conflict escalated into a high-stakes superpower proxy struggle. US President Nixon authorised Operation Nickel Grass, a massive emergency military airlift that delivered tanks, ammunition, and Phantom jets directly to Israel. This vital resupply enabled General Ariel Sharon's armoured division to exploit a gap between Egyptian armies, cross to the west bank of the Suez Canal, and surround Egypt’s Third Army, completely reversing the military momentum on the ground.<br><br>However, this military turnaround triggered dramatic global economic and diplomatic intervention. In direct response to American military aid for Israel, Arab OPEC members deployed the 'oil weapon', slashing oil production and placing an embargo on Western nations, which quadrupled world oil prices. Fearing direct Soviet military intervention to save Egypt's Third Army, the US placed its nuclear forces on DEFCON 3. This dangerous escalation forced US Secretary of State Henry Kissinger to step in, brokering UN Resolution 338 and securing a ceasefire on 24 October 1973.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "cme_mock_radar_q2",
+        "mockId": "cme_mock_radar",
+        "qCode": "2",
+        "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing Egyptian relations with the superpowers and Israel in the years 1967–73.",
+        "stimulus": [
+          "Soviet military aid to Egypt",
+          "the surprise attack on Yom Kippur (1973)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n      Following Egypt’s catastrophic defeat in the Six Day War of 1967, Egyptian relations with both the superpowers and Israel underwent a dramatic transformation driven by a determination to reverse Israeli occupation of the Sinai Peninsula.<br><br>\n      Initially, relations between Egypt and the Soviet Union deepened significantly. With Egypt’s air force and military infrastructure decimated, President Nasser turned to Moscow for extensive rearmament. The USSR supplied over $2 billion in modern military hardware, including advanced MiG-21 fighters and SAM-2/SAM-3 anti-aircraft missile batteries, accompanied by approximately 15,000 Soviet military advisors. This enabled Egypt to launch the <strong>War of Attrition (1969–70)</strong>, conducting artillery bombardments and commando raids across the Suez Canal against Israel’s fortified Bar-Lev Line. However, when Nasser died in September 1970, his successor <strong>Anwar Sadat</strong> grew frustrated with Soviet reluctance to supply offensive strike aircraft capable of attacking deep into Israeli territory.<br><br>\n      This frustration triggered a pivotal turning point in superpower relations. In July 1972, Sadat took the calculated gamble of expelling all 15,000 Soviet military advisors from Egypt. While superficially weakening Egypt’s military capability, this move was secretly designed to signal to the United States that Egypt was open to diplomatic realignment, provided Washington pressured Israel to withdraw from the Sinai. When the US and Israel remained complacent, assuming Arab forces were too weak to launch a major assault, Sadat coordinated a joint offensive with President Assad of Syria.<br><br>\n      The culmination of this narrative occurred on 6 October 1973 with <strong>Operation Badr</strong>: the surprise crossing of the Suez Canal on the Jewish holiday of Yom Kippur. Egyptian forces breached the Bar-Lev Line with high-pressure water cannons and established defensive bridgeheads under an umbrella of mobile SAM missile batteries, inflicting heavy losses on Israeli counter-attacks. Although Israel eventually rallied and crossed to the west bank of the canal, the war completely shattered the myth of Israeli military invincibility. Crucially, it forced US Secretary of State Henry Kissinger into active 'shuttle diplomacy', ultimately initiating the diplomatic peace process that led directly to the Camp David Accords.",
+        "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
+        "mockUrl": "/units/cme_new/cme_mock_radar.html"
+      }
+    ],
+    "lesson_9": [
+      {
+        "id": "lesson_11_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the 1973 OPEC oil embargo for American foreign policy in the Middle East.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the 1973 OPEC oil embargo was that it forced the United States to abandon its passive stance and actively mediate Middle Eastern diplomacy. Because quadrupled crude oil prices and fuel shortages caused severe domestic economic stagflation, Secretary of State Henry Kissinger launched intensive 'shuttle diplomacy' to broker disengagement agreements and prevent future Arab-Israeli wars.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_11_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of Anwar Sadat’s visit to Jerusalem in November 1977.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of Anwar Sadat’s visit to Jerusalem in November 1977 was that it shattered thirty years of psychological enmity and opened direct bilateral peace negotiations. By addressing the Israeli Knesset in person and declaring 'no more war', Sadat bypassed deadlocked international conferences, directly creating the diplomatic trust that enabled President Jimmy Carter to convene the 1978 Camp David summit.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_11_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "2",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing the key events in diplomatic negotiations between Israel and Egypt from 1974 to November 1977.",
+        "stimulus": [
+          "Kissinger’s shuttle diplomacy",
+          "Sadat’s visit to Jerusalem (1977)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "Diplomatic engagement began in early 1974 following the October 1973 War. Driven by the devastating impact of the Arab oil embargo on the Western economy, US Secretary of State Henry Kissinger initiated intensive 'shuttle diplomacy', flying relentlessly between Cairo and Jerusalem. This step-by-step approach secured the Sinai I (1974) and Sinai II (1975) disengagement agreements, which pulled Israeli forces back from the Suez Canal, allowed Egypt to clear and reopen the vital canal in June 1975, and established early-warning buffer zones monitored by American technicians.<br><br>However, this diplomatic momentum stalled dramatically in May 1977 following the election of Menachem Begin's right-wing Likud government. Begin was an ideological hardliner who viewed the occupied West Bank as historic biblical territory ('Judea and Samaria') and initially showed little interest in peace with Arab neighbours. Fearing that diplomatic paralysis would lead inexorably to another catastrophic war, Egyptian President Anwar Sadat took a daring gamble to break the psychological deadlock.<br><br>This culminated on 19 November 1977 when Sadat undertook an unprecedented visit to Jerusalem, landing at Ben Gurion Airport and addressing the Israeli Knesset in person. Declaring 'no more war, no more bloodshed', Sadat offered full diplomatic peace in exchange for the return of Egyptian territory. This historic gesture stunned the world and shattered thirty years of Arab rejectionism, directly compelling Begin to respond and laying the essential foundation for the 1978 Camp David negotiations.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_11_can_q4",
+        "mockId": "cme_canonical_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the Camp David Accords (1978) for Arab-Israeli relations.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One reason the Camp David Accords were of profound importance for Arab-Israeli relations was that they achieved the first formal peace treaty between Israel and a frontline Arab state, breaking thirty years of continuous warfare. Under the bilateral framework brokered by US President Jimmy Carter, Israel agreed to withdraw completely from the Sinai Peninsula and dismantle its settlements, while Egypt granted full diplomatic recognition and opened the Suez Canal and Straits of Tiran to Israeli shipping. This established the vital precedent of 'land for peace' and neutralised the Arab world’s largest military power, ensuring Israel no longer faced a credible two-front existential threat.<br><br>Furthermore, the Accords were decisive because they deeply fractured the Arab world and isolated Egypt from its traditional allies. Because the framework for Palestinian self-government in the West Bank and Gaza lacked binding timetables and was rejected by Israeli Prime Minister Menachem Begin as statehood, other Arab states viewed Anwar Sadat as a traitor to the Palestinian cause. At the November 1978 Baghdad Summit, Arab League members voted to expel Egypt and sever diplomatic relations, deepening regional instability and directly fuelling the Islamist opposition that led to Sadat's assassination in October 1981.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "cme_mock_radar_q3b",
+        "mockId": "cme_mock_radar",
+        "qCode": "3",
+        "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of Arafat's speech to the UN (1974) for international recognition of the Palestinian cause.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        Yasser Arafat’s address to the United Nations General Assembly on 13 November 1974 was of paramount importance because it fundamentally shifted international perception of the Palestinian conflict from a humanitarian refugee dilemma into a legitimate national self-determination struggle.<br><br>\n        Firstly, the speech provided the PLO with unprecedented global diplomatic legitimacy. Arafat became the first representative of a non-state entity to address the General Assembly, invited following the Arab League’s Rabat Summit declaration that the PLO was the 'sole legitimate representative of the Palestinian people'. Wearing a holster and carrying an olive branch, Arafat famously concluded: <em>'I have come bearing an olive branch and a freedom fighter’s gun. Do not let the olive branch fall from my hand.'</em> This iconic imagery resonated powerfully across the Non-Aligned Movement and the Communist bloc.<br><br>\n        Secondly, the immediate consequence was <strong>UN Resolution 3236 and 3237</strong>, which reaffirmed the inalienable rights of the Palestinian people to self-determination, national independence, and sovereignty in Palestine, while granting the PLO official Permanent Observer status at the UN. This diplomatic breakthrough marginalized extreme rejectionist groups by showing that political diplomacy could achieve global standing, establishing a foundation that later allowed the PLO to negotiate bilaterally with the United States and Israel during the 1993 Oslo Peace Process.",
+        "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
+        "mockUrl": "/units/cme_new/cme_mock_radar.html"
+      }
+    ],
+    "lesson_10": [
+      {
+        "id": "lesson_12_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of Operation Litani in March 1978.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of Operation Litani in March 1978 was the deployment of United Nations peacekeepers and the creation of an Israeli proxy security belt in southern Lebanon. In response to 25,000 Israeli troops advancing to the Litani River, UN Security Council Resolution 425 established UNIFIL, while Israel armed the South Lebanon Army to police a southern border buffer zone.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_12_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the Sabra and Shatila massacre (September 1982).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the Sabra and Shatila massacre was severe domestic political fallout in Israel that forced the resignation of Defence Minister Ariel Sharon. Following massive protests of 400,000 people in Tel Aviv, the official Kahan Commission ruled that Sharon bore 'personal responsibility' for permitting Christian Phalangist militias into the refugee camps, compelling him to resign.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_12_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(c)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the outbreak of the First Intifada in December 1987.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the outbreak of the First Intifada in December 1987 was that it shattered Israeli complacency and proved military occupation was unsustainable. Following the fatal Jabalia checkpoint crash, widespread strikes, commercial boycotts, and youth stone-throwing demonstrated that twenty years of direct military control over Palestinians could not be maintained by force alone.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_12_can_q4",
+        "mockId": "cme_canonical_practice",
+        "qCode": "2",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing Israeli military involvement in Lebanon between 1978 and 1983.",
+        "stimulus": [
+          "Operation Litani (1978)",
+          "The Sabra and Shatila massacre (1982)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "Israeli military involvement began in March 1978 when Prime Minister Menachem Begin launched Operation Litani following the Coastal Road attack. Over 25,000 Israeli soldiers advanced to the Litani River to push PLO fedayeen away from the border. Although UN Security Council Resolution 425 established UNIFIL and a Christian militia buffer zone, cross-border rocket fire persisted, convincing Defence Minister Ariel Sharon that only total military destruction of the PLO could guarantee Israeli security.<br><br>Consequently, this tension escalated into a full-scale invasion in June 1982 under the pretext of the attempted assassination of Ambassador Shlomo Argov. Sharon launched Operation Peace for Galilee, deceptively telling the cabinet troops would advance only 40 kilometres, but instead driving sixty miles to lay siege to West Beirut. Relentless artillery bombardment and air strikes eventually forced Yasser Arafat and thousands of PLO fighters to evacuate Lebanon for Tunis.<br><br>Finally, this operation culminated in disaster in September 1982 following the assassination of Lebanese President Gemayel. Israeli forces permitted Christian Phalangist militias into the Sabra and Shatila refugee camps, resulting in the slaughter of hundreds of civilians under IDF illumination flares. Unprecedented protests of 400,000 people in Tel Aviv forced the Kahan Commission inquiry, compelling Sharon to resign and leaving Israel bogged down in Lebanon.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_12_can_q5",
+        "mockId": "cme_canonical_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the First Intifada (1987–93) for international attitudes towards the Palestine issue.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One reason the First Intifada was of profound importance for international attitudes was that television coverage dramatically transformed the global perception of Palestinians from aggressors into victims of military occupation. Before 1987, Western governments and media primarily associated the Palestinian movement with cross-border terrorism, hijackings, and guerrilla warfare. However, worldwide television broadcasts showing unarmed Palestinian youths armed only with stones confronting heavily armed IDF soldiers—alongside Defence Minister Yitzhak Rabin's controversial 'Iron Fist' policy of breaking the bones of protesters—shattered Israel's moral image abroad and generated unprecedented global sympathy for the Palestinian population.<br><br>Furthermore, the Intifada was decisive because it created irresistible international diplomatic pressure that compelled both Yasser Arafat and the United States to alter their policies. Realising that grassroots resistance inside the territories was eclipsing the exiled PLO leadership, Arafat addressed the UN General Assembly in Geneva in December 1988, formally renouncing terrorism and accepting UN Resolutions 242 and 338. By meeting long-standing American conditions, this concession forced the US government to open direct diplomatic dialogue with the PLO, fundamentally legitimising the Palestinian struggle on the international stage and laying the direct groundwork for the 1991 Madrid Conference.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      }
+    ],
+    "lesson_11": [
+      {
+        "id": "lesson_13_can_q1",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the secret Oslo back-channel negotiations in 1993.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the secret Oslo back-channel negotiations in 1993 was the historic breakthrough of mutual diplomatic recognition between Israel and the PLO. Through the Letters of Mutual Recognition, Prime Minister Yitzhak Rabin officially recognised the PLO as the Palestinian people's representative, while Yasser Arafat recognised Israel's right to exist and renounced terrorism.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_13_can_q2",
+        "mockId": "cme_canonical_practice",
+        "qCode": "1(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "4-Mark Consequence",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one consequence of the assassination of Yitzhak Rabin on 4 November 1995.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One consequence of the assassination of Yitzhak Rabin was the severe derailment of the peace process and the election of a right-wing Israeli government opposed to Oslo. In May 1996, Likud leader Benjamin Netanyahu won the premiership on a hardline security platform, subsequently halting further territorial handovers to the Palestinian National Authority.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_13_can_q3",
+        "mockId": "cme_canonical_practice",
+        "qCode": "2",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Narrative Account",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Write a narrative account analysing the peace process between Israel and the Palestinians from 1992 to the assassination of Yitzhak Rabin in 1995.",
+        "stimulus": [
+          "The Oslo I Accords (1993)",
+          "Extremist opposition to the peace process"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "The peace process began in 1992 following the election of Israeli Prime Minister Yitzhak Rabin on a platform of territorial compromise. In complete secrecy, Israeli and PLO envoys conducted back-channel negotiations in Norway, producing the historic Letters of Mutual Recognition where Israel recognised the PLO and Yasser Arafat renounced terrorism. This culminated on 13 September 1993 when Rabin and Arafat signed the Oslo I Accord on the White House lawn, agreeing to phased Palestinian self-government.<br><br>Following this initial breakthrough, the process advanced into practical governance through the May 1994 Cairo Agreement, which established the Palestinian National Authority (PNA) in Gaza and Jericho. Diplomatic momentum continued with the 1994 peace treaty with Jordan, culminating in the September 1995 Oslo II Agreement, which divided the West Bank into Areas A, B, and C to extend Palestinian civil administration.<br><br>However, this delicate momentum was shattered by violent extremist resistance from both sides. In February 1994, Jewish extremist Baruch Goldstein murdered 29 Palestinians in Hebron, triggering deadly retaliatory suicide bus bombings by Hamas that hardened Israeli public opinion. The crisis culminated on 4 November 1995 when Jewish religious extremist Yigal Amir assassinated Rabin at a Tel Aviv peace rally, bringing the momentum of the Oslo peace process to a tragic halt.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "lesson_13_can_q4",
+        "mockId": "cme_canonical_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the Oslo I Accord (1993) for relations between Israel and the PLO.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One reason the Oslo I Accord was of profound importance for relations between Israel and the PLO was that it shattered forty-five years of mutual denial through official diplomatic recognition. Through the Letters of Mutual Recognition exchanged in September 1993, Prime Minister Yitzhak Rabin officially acknowledged the PLO as the legitimate representative of the Palestinian people, while Yasser Arafat recognised Israel's right to exist in peace and formally renounced terrorism. This historic breakthrough transformed former mortal enemies into negotiating partners, leading directly to the iconic handshake between Rabin and Arafat on the White House lawn on 13 September 1993.<br><br>Furthermore, the Accord was of decisive importance because it established the practical mechanism for Palestinian self-government through the creation of the Palestinian National Authority (PNA). Under the 'Gaza-Jericho First' formula, Israeli forces redeployed from major population centres, allowing Arafat to establish an autonomous Palestinian administration on home soil. However, because Oslo deferred intractable issues such as Jerusalem, Jewish settlements, and Palestinian refugees, the agreement provoked intense opposition from extremists on both sides, sparking deadly Hamas suicide bombings and right-wing Israeli resistance that culminated in Rabin's assassination.",
+        "pdfUrl": "/pdfs/cme_new_textbook.pdf",
+        "mockUrl": "/units/cme_new/"
+      },
+      {
+        "id": "cme_mock_radar_q3c",
+        "mockId": "cme_mock_radar",
+        "qCode": "3",
+        "mockTitle": "Predicted Radar Mock Paper (Unexamined Spec Gaps)",
+        "paperCode": "Option 26/27 (1HI0/26-27)",
+        "type": "8-Mark Importance",
+        "marks": 8,
+        "targetMins": 16,
+        "questionText": "Explain the importance of the end of the Cold War and the Gulf War (1991) for superpower peace efforts in the Middle East.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        The confluence of the Cold War’s end and the 1991 Gulf War was decisive in creating an unprecedented diplomatic window that forced both Arab states and Israel to the negotiating table.<br><br>\n        Firstly, the collapse of the Soviet Union eliminated the primary military and diplomatic sponsor of radical Arab regimes like Syria and the PLO. Without Soviet subsidies and weaponry, Arab states could no longer contemplate military parity with Israel. Furthermore, the massive exodus of over 400,000 Soviet Jews immigrating to Israel in the early 1990s strained Israel’s economy, making Prime Minister Yitzhak Shamir heavily reliant on $10 billion in US loan guarantees, which President George H.W. Bush threatened to withhold unless Israel agreed to attend international peace talks.<br><br>\n        Secondly, the 1991 Gulf War transformed regional alliances. When Saddam Hussein invaded Kuwait, the US built a coalition that included Arab states such as Egypt, Saudi Arabia, and Syria. To reward these Arab allies and disprove accusations of double standards, US President Bush and Secretary of State James Baker committed to resolving the Arab-Israeli conflict immediately following the liberation of Kuwait. Meanwhile, the PLO had disastrously backed Saddam Hussein, resulting in the expulsion of 300,000 Palestinians from Kuwait and the cut-off of Gulf financial aid, leaving Arafat isolated and desperate for a diplomatic breakthrough. This unique superpower leverage led directly to the convening of the <strong>Madrid Peace Conference in October 1991</strong>, where Israeli and Arab delegates sat face-to-face for the first time in history.",
+        "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
+        "mockUrl": "/units/cme_new/cme_mock_radar.html"
+      }
+    ]
   },
   "edexcel_medicine": {
     "lesson_1_1": [
@@ -2326,9 +2919,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Galen and the Christian worldview"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason the Catholic Church had such influence was its control over education and book-copying. In the Middle Ages, books were hand-copied by monks in monastic scriptoria, meaning the Church decided which medical texts were preserved. Because Galen wrote that the human body was created by one God, the Church officially approved his ideas and banned books that disagreed. Furthermore, medieval universities were run by Church clergy, so medical students spent years memorising Galen and Hippocrates instead of examining real patients. Therefore, the Church maintained a major influence over medical ideas because students were taught to treat Galen's texts as absolute truth rather than thinking independently.<br><br>Furthermore, the Church had the legal and religious power to punish anyone who challenged traditional ideas. Priests taught that disease was sent directly by God as a punishment for sin or a test of faith, and questioning this was treated as heresy. For example, in 1277 the Franciscan friar Roger Bacon was imprisoned by Church authorities for arguing that doctors should do scientific experiments rather than simply accepting ancient books. This harsh punishment sent a terrifying message to scholars across Europe that questioning Church-approved ideas would result in arrest and excommunication. Therefore, the Church controlled medical thinking because fear of punishment stopped doctors from investigating scientific causes of disease.<br><br>Finally, the Church ran society's hospitals and directed the daily religious beliefs of ordinary people. Most people attended church every Sunday, where priests told them that epidemics like the 1348 Black Death were caused by God's anger. Monastic hospitals were run by monks and nuns who focused on 'care not cure', offering patients prayer, warmth, and food rather than medical treatment. Because ordinary people were deeply religious and had no scientific alternative, everyone accepted the Church’s supernatural explanations for illness. Therefore, the Church had a massive influence because ordinary people completely relied on Christian teachings to understand illness.",
+        "modelAnswer": "One major reason the Catholic Church held immense influence was its <strong>monopoly over education and book production</strong>. In monastic scriptoria, monks hand-copied all manuscripts, allowing the Church to censor texts that contradicted scripture. Furthermore, universities were run by clergy, teaching medical students to memorise ancient authorities rather than conduct practical examinations. Therefore, this led to Church dominance over medical ideas because physicians were trained only in Church-approved doctrines and never investigated physical causes independently.<br><br>Furthermore, the Church promoted <strong>Galen's anatomical theories within a Christian worldview</strong>. Although Galen was pagan, his belief that the human body was designed by a single Creator aligned with Catholic theology. The Church declared Galen infallible, teaching that dissections served only to demonstrate his perfection. Therefore, this caused Galen's medical ideas to be accepted as unquestionable doctrine because challenging his anatomy was treated as challenging God's divine creation.<br><br>In addition, the Church dominated ideas because society believed <strong>disease was divine punishment for sin</strong>. Priests taught that epidemics like the 1348 Black Death were sent by God, making repentance the only cure. Questioning supernatural causes was punished as heresy; in 1277, Roger Bacon was imprisoned for advocating scientific observation. Therefore, this reinforced the Church's total influence over ideas about disease because ordinary people and physicians believed seeking physical cures was futile without seeking divine forgiveness.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The Catholic Church had a massive influence on medical ideas because it ran all the churches and monasteries in England. Priests told ordinary people that God sent diseases like the Black Death to punish their sins. Furthermore, monks copied books by hand, so they chose which books people could read, and anyone who argued with the Church was arrested. Therefore the Church was very powerful and everyone listened to what priests said about disease.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions relevant issues (monasteries, punishment for sin, copying books) but lacks specific historical names, dates, or analytical PEEL paragraphs, and treats Church influence as a simple story without explaining causal links."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the Catholic Church had influence was its <strong>control of education and book production</strong>. In medieval scriptoria, monks hand-copied all medical manuscripts and destroyed or banned any texts that contradicted the Bible. In universities, Church-trained professors taught students to memorise ancient texts rather than examine living patients, ensuring no new medical theories emerged.<br><br>Another reason was the Church's promotion of <strong>Galen and the Christian worldview</strong>. Galen believed the human body was created by one God, which fit Christian teachings perfectly. The Church declared his anatomical writings infallible and banned physicians from questioning his doctrines during dissections.<br><br>In conclusion, controlling universities and promoting Galen gave the Catholic Church huge power over medieval medicine.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes two stimulus factors (education/scriptoria and Galen's monotheism). However, it remains narrative rather than analytical and omits a third distinct aspect beyond the stimulus (such as religious punishment for sin or persecution of heresy like Roger Bacon), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason the Catholic Church held immense influence was its <strong>monopoly over education and book production</strong>. In monastic scriptoria, monks hand-copied all manuscripts, allowing the Church to censor texts that contradicted scripture. Furthermore, universities were run by clergy, teaching medical students to memorise ancient authorities rather than conduct practical examinations. Therefore, this led to Church dominance over medical ideas because physicians were trained only in Church-approved doctrines and never investigated physical causes independently.<br><br>Furthermore, the Church promoted <strong>Galen's anatomical theories within a Christian worldview</strong>. Although Galen was pagan, his belief that the human body was designed by a single Creator aligned with Catholic theology. The Church declared Galen infallible, teaching that dissections served only to demonstrate his perfection. Therefore, this caused Galen's medical ideas to be accepted as unquestionable doctrine because challenging his anatomy was treated as challenging God's divine creation.<br><br>In addition, the Church dominated ideas because society believed <strong>disease was divine punishment for sin</strong>. Priests taught that epidemics like the 1348 Black Death were sent by God, making repentance the only cure. Questioning supernatural causes was punished as heresy; in 1277, Roger Bacon was imprisoned for advocating scientific observation. Therefore, this reinforced the Church's total influence over ideas about disease because ordinary people and physicians believed seeking physical cures was futile without seeking divine forgiveness.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_1_2": [
@@ -2363,9 +2980,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Lack of practical human dissection"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One primary reason Galen’s ideas continued to be believed was that his medical theories seemed logical and offered practical treatments. Galen expanded Hippocrates’ Four Humours into the Theory of Opposites. This gave doctors a clear system for treating illness: if a patient had a cold, wet fever, they were given hot, dry remedies like pepper or mustard. Because this gave doctors and ordinary people an understandable framework for illness, it provided reassuring explanations even when treatments failed to cure deadly epidemics. Therefore, Galen’s ideas continued to be believed because they provided a practical, common-sense explanation for illness that medieval people could easily understand.<br><br>Furthermore, Galen’s writings were actively supported and protected by the medieval Catholic Church. Galen believed that every part of the human body was purposefully created by a single God, which fit perfectly with Christian teachings. Because the Church controlled universities and book-copying, it declared Galen’s texts infallible and banned criticism of his work. In medical lectures, professors read aloud from Galen while an assistant cut open a body; if the corpse did not match Galen's drawings, professors claimed the body was deformed rather than admitting Galen was wrong. Therefore, Galen's ideas continued to be believed because the Church made it impossible for medical students to challenge his authority.<br><br>Finally, there was a total lack of alternative scientific tools or human dissection to disprove Galen's errors. Human dissection was heavily restricted by the Church, and doctors had no microscopes to see bacteria or physiological instruments to test blood flow. Because Galen had dissected animals like pigs and apes rather than humans, his mistakes remained undiscovered for centuries. Without modern scientific equipment or the freedom to experiment on human bodies, medieval doctors had no way of testing whether Galen’s theories were correct. Therefore, Galen’s ideas continued to be believed because doctors had neither the tools nor the scientific evidence to prove his theories wrong.",
+        "modelAnswer": "One major reason Galen's ideas endured was the <strong>Catholic Church's active endorsement of his monotheism</strong>. Galen argued that every organ was designed for a purpose by a divine Creator, aligning with Christian theology. Because the Church controlled university curricula and book copying, it declared Galen infallible and outlawed criticism of his texts. Therefore, this led to Galen's ideas being preserved for centuries because the Church made his medical teachings the mandatory foundation of all licensed medical education.<br><br>Furthermore, Galen's ideas persisted due to the <strong>severe lack of practical human dissection</strong>. Catholic authorities restricted human dissection, forcing scholars to rely on ancient books. When annual dissections occurred, barber-surgeons cut while professors read Galen aloud; any anatomical mismatch was blamed on a deformed corpse. Therefore, this caused Galen's anatomical mistakes to remain unchallenged because physicians never had the practical opportunity to examine and map internal human anatomy for themselves.<br><br>In addition, Galen was believed because his <strong>Theory of Opposites provided a logical, practical clinical system</strong>. Expanding Hippocrates' Four Humours, Galen taught that illness stemmed from humoural imbalances treatable by opposites, such as hot pepper for cold phlegm. This gave doctors a systematic method to explain symptoms and prescribe clear treatments. Therefore, this ensured Galen's ideas continued to be believed because his humoural system offered an accessible, common-sense explanation for illness that seemed to explain every symptom.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Galen’s medical ideas continued to be believed for hundreds of years because he was a famous Greek doctor whose books were respected by everybody. The Catholic Church told doctors to read his books, and nobody was allowed to dissect bodies to see if he was right or wrong. Also his ideas about the Four Humours seemed to make sense to ordinary people. Therefore people just kept believing Galen because they had no better ideas.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions general points (respect, Church, Four Humours) but provides no precise evidence, lacks PEEL structure, and tells a simple story without sustained causal explanation."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason Galen's ideas continued to be believed was <strong>Church approval of his monotheism</strong>. Galen wrote that the body was designed by a divine Creator, which fit Catholic teachings. The Church controlled universities and made sure students only studied Galen's books. Anyone who criticised Galen risked being punished for heresy, so medical professors never questioned his writings.<br><br>Another reason was the <strong>lack of practical human dissection</strong>. The Church restricted human dissections, and when they took place, an assistant did the cutting while the professor read aloud from Galen. If the corpse looked different from Galen's book, professors said the body was deformed rather than admitting Galen was wrong.<br><br>In conclusion, the Church and lack of dissection meant Galen was accepted for centuries.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Church monotheism and lack of dissection). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the practical clinical utility of the Theory of Opposites), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason Galen's ideas endured was the <strong>Catholic Church's active endorsement of his monotheism</strong>. Galen argued that every organ was designed for a purpose by a divine Creator, aligning with Christian theology. Because the Church controlled university curricula and book copying, it declared Galen infallible and outlawed criticism of his texts. Therefore, this led to Galen's ideas being preserved for centuries because the Church made his medical teachings the mandatory foundation of all licensed medical education.<br><br>Furthermore, Galen's ideas persisted due to the <strong>severe lack of practical human dissection</strong>. Catholic authorities restricted human dissection, forcing scholars to rely on ancient books. When annual dissections occurred, barber-surgeons cut while professors read Galen aloud; any anatomical mismatch was blamed on a deformed corpse. Therefore, this caused Galen's anatomical mistakes to remain unchallenged because physicians never had the practical opportunity to examine and map internal human anatomy for themselves.<br><br>In addition, Galen was believed because his <strong>Theory of Opposites provided a logical, practical clinical system</strong>. Expanding Hippocrates' Four Humours, Galen taught that illness stemmed from humoural imbalances treatable by opposites, such as hot pepper for cold phlegm. This gave doctors a systematic method to explain symptoms and prescribe clear treatments. Therefore, this ensured Galen's ideas continued to be believed because his humoural system offered an accessible, common-sense explanation for illness that seemed to explain every symptom.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (227 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_1_3": [
@@ -2400,9 +3041,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Bloodletting (phlebotomy) and purging"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason medieval treatments focused on humoural balance was the universal belief in the Four Humours. Hippocrates and Galen taught that the body was made of four humours (blood, phlegm, yellow bile, and black bile) and that illness was caused when these humours became unbalanced. Treatments were designed to remove whichever humour was in excess, using bloodletting (phlebotomy) with leeches or cuts, and purging with herbal laxatives. Because patients visibly lost bodily fluids during these treatments, both doctors and patients believed that the excess humours causing the illness were being successfully expelled. Therefore, treatments focused on humoural balance because evacuative therapies provided visible physical proof that the disease was leaving the body.<br><br>Furthermore, preventive health advice was structured entirely around keeping the humours in equilibrium, as shown by the Regimen Sanitatis. The Regimen Sanitatis (Rule of Health) was a widely used medieval health guide that advised people to regulate their diet, sleep, and exercise to prevent humoural imbalance. Wealthy people consulted physicians to check their personal humoural complexion and astrological birth charts, adapting their lifestyle (such as avoiding cold foods in winter) to keep their humours balanced. Therefore, treatments focused on humoural balance because preventing disease was seen as a daily routine of maintaining internal bodily harmony.<br><br>Finally, treatments focused on the humours because there was no alternative scientific understanding of what caused disease. Without microscopes, people had no knowledge of bacteria, viruses, or cellular biology. Since the Catholic Church strictly enforced Galen’s teachings and banned independent experimentation, physicians were never taught any rival theories of medicine. Without any awareness of germs or modern medicines, humoural theory remained the only rational explanation for sickness available to medieval physicians. Therefore, treatments focused on humoural balance because physicians had no other scientific framework to explain or treat illness.",
+        "modelAnswer": "One primary reason treatments focused on humoural balance was the <strong>practical application of Galen's Theory of Opposites</strong>. Physicians believed the body was governed by blood, phlegm, black bile, and yellow bile, carrying opposing qualities of heat, cold, wetness, and dryness. Under Galen's rules, a patient suffering from a cold, wet fever was prescribed hot, dry remedies like pepper or radish to counteract the humoural excess. Therefore, this caused treatments to focus on humoural balance because physicians believed opposing qualities could directly neutralise excess bodily fluids.<br><br>Furthermore, humoural balancing was reinforced through <strong>invasive physical procedures like bloodletting and purging</strong>. Barber-surgeons used vein-man phlebotomy charts to bleed patients via incisions, cupping, or leeches to remove excess blood, the most dangerous humour. Similarly, physicians prescribed violent emetics and laxatives to expel corrupt yellow and black bile. Therefore, this forced medieval healers to concentrate on humoural balance because removing excess blood or bile was seen as the only practical way to extract corrupt humours.<br><br>In addition, humoural treatments dominated because <strong>university-trained physicians relied entirely on diagnostic charts and astrology</strong>. Doctors inspected urine against colour charts and consulted zodiac horoscopes to calculate planetary humoural influences. Because classical Hippocratic-Galenic doctrine was taught as infallible in universities, alternative physical treatments were never developed. Therefore, this led to total reliance on humoural balancing treatments because licensed medieval physicians were legally and academically bound to follow classical humoural dogma.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Medieval treatments focused on humoural balance because everyone believed in the Four Humours. Doctors thought that being sick meant you had too much blood, yellow bile, black bile, or phlegm in your body. To fix this, barber-surgeons cut people's veins to let out bad blood or gave them herbs to make them vomit. Therefore they kept trying to balance the humours because they did not know about germs.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the Four Humours and bloodletting, but lacks analytical PEEL paragraphs, includes no named medical theories or texts, and tells a simple story."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason treatments focused on humoural balance was <strong>Galen's Theory of Opposites</strong>. Galen taught that each humour had qualities like hot, cold, wet, and dry. If a patient caught a cold, doctors gave them hot, dry remedies like pepper or wine to balance them out. This made sense to medieval people, so treatments always tried to balance the body.<br><br>Another reason was the common use of <strong>bloodletting and purging</strong>. Doctors and barber-surgeons used phlebotomy charts to cut specific veins, or applied leeches to drain excess blood. They also gave emetics and laxatives to clear out yellow or black bile and restore balance.<br><br>In conclusion, Opposites and bloodletting were the main ways medieval doctors treated their patients.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Theory of Opposites and bloodletting/purging). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as university medical dogma, astrology, and urine charts), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason treatments focused on humoural balance was the <strong>practical application of Galen's Theory of Opposites</strong>. Physicians believed the body was governed by blood, phlegm, black bile, and yellow bile, carrying opposing qualities of heat, cold, wetness, and dryness. Under Galen's rules, a patient suffering from a cold, wet fever was prescribed hot, dry remedies like pepper or radish to counteract the humoural excess. Therefore, this caused treatments to focus on humoural balance because physicians believed opposing qualities could directly neutralise excess bodily fluids.<br><br>Furthermore, humoural balancing was reinforced through <strong>invasive physical procedures like bloodletting and purging</strong>. Barber-surgeons used vein-man phlebotomy charts to bleed patients via incisions, cupping, or leeches to remove excess blood, the most dangerous humour. Similarly, physicians prescribed violent emetics and laxatives to expel corrupt yellow and black bile. Therefore, this forced medieval healers to concentrate on humoural balance because removing excess blood or bile was seen as the only practical way to extract corrupt humours.<br><br>In addition, humoural treatments dominated because <strong>university-trained physicians relied entirely on diagnostic charts and astrology</strong>. Doctors inspected urine against colour charts and consulted zodiac horoscopes to calculate planetary humoural influences. Because classical Hippocratic-Galenic doctrine was taught as infallible in universities, alternative physical treatments were never developed. Therefore, this led to total reliance on humoural balancing treatments because licensed medieval physicians were legally and academically bound to follow classical humoural dogma.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_1_4": [
@@ -2437,9 +3102,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Lack of medically trained physicians in hospitals"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One fundamental reason medieval hospitals provided ‘care not cure’ was that they were religious institutions rather than medical facilities. Hospitals were run by monks and nuns and paid for by the Catholic Church or wealthy lords seeking forgiveness for their sins. The Latin word 'hospitium' meant hospitality, meaning hospitals were built as shelters for the elderly, poor, and pilgrims rather than places to treat the sick. Wards were arranged so that patient beds faced directly toward the chapel altar, ensuring patients could watch mass, confess their sins, and prepare their souls for heaven. Therefore, hospitals provided 'care not cure' because their primary purpose was saving the patient's soul through prayer rather than curing their physical body.<br><br>Furthermore, medieval hospitals deliberately lacked medically trained staff and surgical equipment. Monks and nuns had no medical training; their duties consisted of basic nursing care, such as washing patients, providing clean linens, and feeding them warm soup. Hospitals could not afford university-trained physicians, who charged high fees and only treated wealthy clients. Moreover, hospitals turned away people suffering from contagious diseases like leprosy and the plague, meaning they rarely admitted patients who needed active medical treatment. Therefore, hospitals provided 'care not cure' because they did not have the doctors, medicines, or equipment needed to cure illnesses.<br><br>Finally, medieval Christian doctrine taught that physical illness was sent directly by God to cleanse human sins. Priests and monks believed that attempting to cure a disease medically might interfere with God’s divine will, whereas prayer and repentance would heal the patient spiritually. As a result, hospital staff saw their Christian duty as offering compassionate comfort and shelter while letting God decide whether the patient lived or died. Therefore, hospitals provided 'care not cure' because religious belief placed spiritual salvation far above physical medicine.",
+        "modelAnswer": "One major reason medieval hospitals provided 'care not cure' was their <strong>monastic foundation and primary focus on spiritual salvation</strong>. Institutions like St Bartholomew's in London were run by religious orders obeying Christ's Seven Works of Mercy. Monks and nuns prioritised saving the immortal soul through daily masses, confession, and bedside prayers rather than attempting physical cures, believing sickness reflected divine will. Therefore, this caused medieval hospitals to prioritise care over cure because religious orders believed spiritual salvation through prayer was far more vital than treating mortal physical illness.<br><br>Furthermore, hospitals could not offer medical cures due to the <strong>total absence of university-trained physicians</strong>. Licensed physicians were expensive and served only wealthy aristocratic patrons for private fees. Hospital wards were staffed entirely by nuns and sisters who provided basic nursing—warmth, clean bedding, rest, and broth—without possessing surgical or pharmaceutical training. Therefore, this led hospitals to provide care not cure because attendants possessed no surgical or pharmaceutical training and could only offer basic nursing comfort.<br><br>In addition, hospitals enforced <strong>strict admission rules that deliberately excluded contagious and dying patients</strong>. Monastic statutes barred lepers, plague victims, and pregnant women to protect the house, redirecting lepers to outside lazar houses. Instead, hospitals functioned as shelters for elderly pilgrims, destitute travellers, and the infirm. Therefore, this reinforced the policy of care not cure because hospitals were designed as charitable shelters for rest and recovery rather than medical facilities for healing dangerous diseases.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Medieval hospitals provided care not cure because they were run by monks and nuns in Catholic monasteries. Monks gave sick people warm beds, soup, and said prayers for their souls, but they did not have doctors to cure them. Also, hospitals did not allow people with catching diseases like leprosy inside. Therefore patients were just looked after until they either got better or died peacefully.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions monks, prayer, and beds, but provides no specific hospital names, dates, or analytical PEEL structure, explaining the topic as a simple story."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason hospitals gave care not cure was <strong>monastic rules and the focus on prayer</strong>. Medieval hospitals like St Bartholomew's were run by religious orders who followed the Seven Works of Mercy. Monks and nuns focused on feeding the hungry, giving warm clothing, and praying for patients' souls so they could go to heaven, rather than giving medical cures.<br><br>Another reason was the <strong>lack of medically trained physicians in hospitals</strong>. University-trained doctors were very expensive and worked only for wealthy nobles. Hospitals were looked after by nuns and sisters who had no medical training and could only offer basic nursing care and clean sheets.<br><br>In conclusion, religious prayer and having no doctors meant hospitals only cared for people.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (monastic rules/prayer and lack of physicians). However, it remains narrative and omits a third distinct aspect beyond the stimulus (such as the exclusion of infectious diseases and focus on travellers/pilgrims), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason medieval hospitals provided 'care not cure' was their <strong>monastic foundation and primary focus on spiritual salvation</strong>. Institutions like St Bartholomew's in London were run by religious orders obeying Christ's Seven Works of Mercy. Monks and nuns prioritised saving the immortal soul through daily masses, confession, and bedside prayers rather than attempting physical cures, believing sickness reflected divine will. Therefore, this caused medieval hospitals to prioritise care over cure because religious orders believed spiritual salvation through prayer was far more vital than treating mortal physical illness.<br><br>Furthermore, hospitals could not offer medical cures due to the <strong>total absence of university-trained physicians</strong>. Licensed physicians were expensive and served only wealthy aristocratic patrons for private fees. Hospital wards were staffed entirely by nuns and sisters who provided basic nursing—warmth, clean bedding, rest, and broth—without possessing surgical or pharmaceutical training. Therefore, this led hospitals to provide care not cure because attendants possessed no surgical or pharmaceutical training and could only offer basic nursing comfort.<br><br>In addition, hospitals enforced <strong>strict admission rules that deliberately excluded contagious and dying patients</strong>. Monastic statutes barred lepers, plague victims, and pregnant women to protect the house, redirecting lepers to outside lazar houses. Instead, hospitals functioned as shelters for elderly pilgrims, destitute travellers, and the infirm. Therefore, this reinforced the policy of care not cure because hospitals were designed as charitable shelters for rest and recovery rather than medical facilities for healing dangerous diseases.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_1_5": [
@@ -2511,9 +3200,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Royal Society and Philosophical Transactions"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason for changes in medical communication was the invention of the movable-type printing press. Invented by Johannes Gutenberg in c.1440 and brought to England by William Caxton in 1476, the printing press allowed thousands of identical books to be produced quickly and cheaply. Prior to this, books were hand-copied by monks in monasteries, which was slow, expensive, and subject to Church censorship. Crucially, the printing press allowed new anatomical discoveries, such as Andreas Vesalius’s De Fabrica (1543), to be printed with exact anatomical drawings and shared simultaneously across European universities without errors. Therefore, medical communication changed because the printing press bypassed Church control and allowed accurate scientific discoveries to spread rapidly across Europe.<br><br>Furthermore, communication changed fundamentally due to the founding of the Royal Society in London in 1660. Granted a Royal Charter by King Charles II in 1662, the Royal Society promoted scientific experimentation under the motto 'Nullius in Verba' ('Take nobody's word for it'). In 1665, they began publishing Philosophical Transactions, Europe’s first peer-reviewed scientific journal. This created an international network where scientists could publish experimental results, critique each other's work, and read about new microscopic discoveries like Robert Hooke’s Micrographia (1665). Therefore, communication changed because the Royal Society created an official platform for scientists to share, debate, and verify new discoveries together.<br><br>Finally, communication changed because the Renaissance and Humanism weakened the authority of the Catholic Church. Following the Protestant Reformation and the closure of monasteries, scholars were encouraged to question ancient authority and think critically (Humanism). Instead of blindly copying Galen's ancient manuscripts, university medical faculties and commercial publishers actively sought and printed books detailing hands-on dissections and clinical experiments. Therefore, communication changed because the rise of Humanism created widespread demand for new scientific research rather than ancient Church-approved texts.",
+        "modelAnswer": "One major catalyst for changing medical communication was the <strong>widespread adoption of Gutenberg's movable metal-type printing press</strong>. Prior to printing, manuscripts were hand-copied by monks, which was slow and riddled with errors. The printing press allowed identical copies of revolutionary texts, such as Andreas Vesalius's *The Fabric of the Human Body* (1543), to be mass-produced with precise anatomical woodcuts. Therefore, this led to revolutionary changes in communication because accurate medical ideas and illustrations could spread across Europe in weeks without copying errors.<br><br>Furthermore, communication was transformed by the <strong>establishment of the Royal Society and its journal *Philosophical Transactions* (1665)</strong>. Granted a royal charter by Charles II in 1662, the Society adopted the motto *Nullius in Verba* ('Take nobody's word for it'). By publishing regular reports of scientific experiments, the journal enabled doctors across Europe to review, challenge, and replicate new medical hypotheses. Therefore, this caused a major shift in communication because scientists could publish, debate, and peer-review empirical experimental findings rapidly across national borders.<br><br>In addition, communication evolved through the <strong>decline of Church Latin in favour of vernacular English medical publishing</strong>. During the Renaissance, physicians and surgeons began writing textbooks in English rather than Latin, making anatomical and surgical knowledge accessible to barber-surgeons and apothecaries who lacked university education. Therefore, this transformed medical communication because scientific ideas were no longer monopolised by churchmen but shared openly among practical medical practitioners.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Ideas about disease changed because of Gutenberg's printing press, which meant books could be made much faster without monks writing them. Also the Royal Society was set up by King Charles II so scientists could meet and talk about their ideas. Furthermore, people began writing books in English instead of Latin so normal people could read them. Therefore new medical ideas spread around much quicker.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the printing press, Royal Society, and English language, but lacks analytical PEEL paragraphs, dates, and sustained causal explanation."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason communication changed was the invention of <strong>the printing press by Gutenberg</strong>. Before this, monks copied manuscripts by hand, which took months and caused copying mistakes. With movable metal type, thousands of identical medical books like Vesalius's anatomy textbook could be printed quickly and sold across Europe with clear anatomical pictures.<br><br>Another reason was the founding of the <strong>Royal Society and Philosophical Transactions</strong> in 1665. The Royal Society met in London to watch experiments and discuss scientific ideas. They published the world's first scientific journal, which allowed doctors and scientists to share their findings and debate discoveries.<br><br>In conclusion, the printing press and Royal Society allowed medical books and ideas to travel much faster.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (printing press and Royal Society). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as secular publishing in English and humanist empirical debate), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major catalyst for changing medical communication was the <strong>widespread adoption of Gutenberg's movable metal-type printing press</strong>. Prior to printing, manuscripts were hand-copied by monks, which was slow and riddled with errors. The printing press allowed identical copies of revolutionary texts, such as Andreas Vesalius's *The Fabric of the Human Body* (1543), to be mass-produced with precise anatomical woodcuts. Therefore, this led to revolutionary changes in communication because accurate medical ideas and illustrations could spread across Europe in weeks without copying errors.<br><br>Furthermore, communication was transformed by the <strong>establishment of the Royal Society and its journal *Philosophical Transactions* (1665)</strong>. Granted a royal charter by Charles II in 1662, the Society adopted the motto *Nullius in Verba* ('Take nobody's word for it'). By publishing regular reports of scientific experiments, the journal enabled doctors across Europe to review, challenge, and replicate new medical hypotheses. Therefore, this caused a major shift in communication because scientists could publish, debate, and peer-review empirical experimental findings rapidly across national borders.<br><br>In addition, communication evolved through the <strong>decline of Church Latin in favour of vernacular English medical publishing</strong>. During the Renaissance, physicians and surgeons began writing textbooks in English rather than Latin, making anatomical and surgical knowledge accessible to barber-surgeons and apothecaries who lacked university education. Therefore, this transformed medical communication because scientific ideas were no longer monopolised by churchmen but shared openly among practical medical practitioners.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_2_2": [
@@ -2548,9 +3261,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Classification of distinct illnesses"
         ],
         "sourceExtract": "",
-        "modelAnswer": "Thomas Sydenham was significant primarily because he revolutionized medical diagnosis by introducing direct bedside observation. In the 1600s, most physicians diagnosed patients theoretically by reading Galen or checking urine charts, rarely spending time with the patient. Sydenham, nicknamed the 'English Hippocrates', rejected this and insisted that doctors must sit at the patient's bedside, observe symptoms closely, and take detailed clinical notes over time. By doing so, he encouraged doctors to treat what they actually observed in real patients rather than what they read in ancient manuscripts. Therefore, Sydenham was significant because he established careful bedside clinical observation as the foundation of British medical diagnosis.<br><br>Furthermore, Sydenham was significant because he pioneered the idea of classifying diseases into distinct groups in his book Observationes Medicae (1676). Traditional humoural theory claimed illness was completely unique to each person's individual balance of humours. Sydenham overturned this by arguing that diseases were external conditions with fixed patterns of symptoms, just like plants in a botanical book. This allowed him to achieve major breakthroughs, such as proving that scarlet fever and measles were two completely separate diseases rather than variations of the same fever. Therefore, Sydenham was significant because classifying diseases into specific categories laid the vital foundations for modern medical diagnosis and epidemiology.<br><br>Finally, Sydenham was significant because he introduced sensible, practical treatments that saved lives. For smallpox, traditional doctors sealed patients in overheated rooms with heavy blankets to 'sweat out' the poison. Sydenham introduced a 'cooling treatment' with fresh air, cool drinks, and light blankets, which dramatically reduced deaths. He also popularized using cinchona bark (quinine) from South America to treat malaria. While his treatments still included traditional bloodletting, his willingness to test practical remedies broke away from dangerous medieval traditions. Therefore, Sydenham was significant because his common-sense treatments directly improved patient recovery rates and challenged outdated medical customs.",
+        "modelAnswer": "One major reason Thomas Sydenham was significant was his <strong>revolutionary classification of diseases into distinct species</strong>. Previously, humoural theory taught that each patient suffered from a unique, personal bodily imbalance. Sydenham challenged this by arguing that diseases had consistent, external characteristics and could be classified into distinct families, just like botanists classified plants. Therefore, this caused a major breakthrough in medicine because doctors began diagnosing specific external diseases rather than blaming vague internal humoural disharmonies.<br><br>Furthermore, Sydenham achieved lasting significance through his <strong>landmark medical textbook *Observationes Medicae* (1676)</strong>. Based on meticulous clinical case notes, Sydenham provided the first accurate medical descriptions differentiating scarlet fever from measles and diagnosing severe gout. His book became a standard university textbook across Europe for over two centuries, training generations of physicians in empirical diagnostics. Therefore, this led to lasting significance because his textbook gave generations of physicians an empirical clinical guide to identify and record specific illnesses accurately.<br><br>In addition, Sydenham was significant because he <strong>pioneered practical bedside observation over traditional humoural treatments</strong>. Earning the title 'the English Hippocrates', he refused to bleed feverish patients automatically, instead prescribing fresh air and cool drinks for smallpox patients and using Peruvian cinchona bark (quinine) to treat malaria. Therefore, this made Sydenham significant because his empirical methods broke with unproven medieval traditions and laid the foundations for modern scientific clinical medicine.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Thomas Sydenham was significant because he was known as the 'English Hippocrates'. He believed doctors should sit by patients' beds and watch their symptoms carefully instead of just reading ancient textbooks. He wrote a famous book called Observationes Medicae and realised diseases were different from each other. He also gave people cool rooms for smallpox. Therefore Sydenham helped change medicine by watching patients directly.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions the nickname and book title, but lacks analytical PEEL paragraphs, provides no detailed classification mechanics, and tells a simple story."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason Thomas Sydenham was significant was his <strong>classification of distinct illnesses</strong>. Before Sydenham, doctors believed every patient had a unique humoural imbalance. Sydenham argued that diseases had specific identities like plants, and could be sorted into groups based on their symptoms, which helped doctors diagnose separate diseases.<br><br>Another reason was his book <strong>Observationes Medicae (1676)</strong>. Sydenham wrote down exact descriptions of different illnesses like scarlet fever, measles, and gout. His book was used by medical students for over two hundred years because it gave accurate clinical observations instead of old theories.<br><br>In conclusion, Sydenham's book and classification of diseases made him a very important doctor in Britain.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (classification and Observationes Medicae). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as his rejection of humoural treatments and use of cinchona/cool air therapies), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason Thomas Sydenham was significant was his <strong>revolutionary classification of diseases into distinct species</strong>. Previously, humoural theory taught that each patient suffered from a unique, personal bodily imbalance. Sydenham challenged this by arguing that diseases had consistent, external characteristics and could be classified into distinct families, just like botanists classified plants. Therefore, this caused a major breakthrough in medicine because doctors began diagnosing specific external diseases rather than blaming vague internal humoural disharmonies.<br><br>Furthermore, Sydenham achieved lasting significance through his <strong>landmark medical textbook *Observationes Medicae* (1676)</strong>. Based on meticulous clinical case notes, Sydenham provided the first accurate medical descriptions differentiating scarlet fever from measles and diagnosing severe gout. His book became a standard university textbook across Europe for over two centuries, training generations of physicians in empirical diagnostics. Therefore, this led to lasting significance because his textbook gave generations of physicians an empirical clinical guide to identify and record specific illnesses accurately.<br><br>In addition, Sydenham was significant because he <strong>pioneered practical bedside observation over traditional humoural treatments</strong>. Earning the title 'the English Hippocrates', he refused to bleed feverish patients automatically, instead prescribing fresh air and cool drinks for smallpox patients and using Peruvian cinchona bark (quinine) to treat malaria. Therefore, this made Sydenham significant because his empirical methods broke with unproven medieval traditions and laid the foundations for modern scientific clinical medicine.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (226 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_2_3": [
@@ -2622,9 +3359,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "De Motu Cordis (1628)"
         ],
         "sourceExtract": "",
-        "modelAnswer": "William Harvey's discovery was a major turning point primarily because he used mathematical calculations to disprove Galen's 1,400-year-old ideas about blood. Galen taught that the liver constantly manufactured new blood from food, which was then burned up by bodily tissues as fuel. In De Motu Cordis (1628), Harvey calculated that the heart pumped approximately 540 pints of blood per hour, which was three times the weight of an average human body. This mathematical proof showed it was physically impossible for the liver to produce or the body to burn that amount of blood, proving that the same blood must circulate repeatedly in a closed loop. Therefore, Harvey's discovery was a turning point because mathematics definitively proved Galen's theory of blood consumption was completely wrong.<br><br>Furthermore, Harvey's discovery was a turning point because he proved his theories through repeatable scientific experiments. Harvey studied one-way valves in veins and carried out famous arm tourniquet experiments on living humans. By pushing blood down a vein away from the heart, he showed the vein stayed empty, proving that vein valves only permit blood to flow one way—back toward the heart. By publishing these experiments in De Motu Cordis, Harvey established experimental physiology as a scientific discipline, showing doctors that theories must be tested through practical demonstrations. Therefore, Harvey was a turning point because he established the modern scientific method of using physical experiments to prove how the human body works.<br><br>However, Harvey's discovery was only a partial turning point because it had very little immediate impact on treating living patients. Knowing that blood circulated did not cure illnesses, and attempts at blood transfusions failed and killed patients because blood groups were unknown. Crucially, despite Harvey proving that the body had a fixed amount of blood, doctors (including Harvey himself) continued to prescribe bloodletting for another 200 years because they lacked alternative treatments. Consequently, while Harvey transformed anatomical understanding, his discoveries could not be used to save lives until the 19th and 20th centuries. Therefore, Harvey was a turning point in scientific understanding and anatomy, but had almost no practical effect on curing sick patients at the time.",
+        "modelAnswer": "One major reason William Harvey's discovery was a turning point was his <strong>observation of mechanical heart valves and blood flow</strong>. Dissecting cold-blooded animals with slow heartbeats, Harvey demonstrated that the heart acted as a muscular pump pushing blood into arteries, while one-way venous valves prevented backflow. Using arm ligatures, he proved blood travelled away from the heart in arteries and returned via veins. Therefore, this caused a turning point because it provided empirical proof that the heart functioned as a mechanical muscular pump circulating a fixed volume of blood.<br><br>Furthermore, Harvey was a turning point because his <strong>treatise *De Motu Cordis* (1628) established experimental proof</strong>. Harvey calculated mathematically that the heart pumped three times an adult's body weight in blood hourly, proving the liver could not produce that volume continuously from food. Therefore, this led to a revolution in medical science because it gave the European scientific community undeniable experimental evidence that could be independently tested and verified.<br><br>In addition, Harvey was a turning point because he <strong>shattered Galen's 1,400-year-old dogma regarding bodily physiology</strong>. Galen taught that blood was made in the liver and consumed by tissues. By proving continuous circulation, Harvey disproved Galen's physiology, undermining the rationale for humoural bloodletting. Therefore, this transformed medical thinking because proving Galen wrong on core physiology undermined the entire basis of humoural treatments like bloodletting and encouraged modern experimental physiology.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "William Harvey was a turning point because he discovered that blood travels round the body in a circle. He proved that the heart acts like a pump by checking heart valves and tying up people's arms. He wrote a book called De Motu Cordis in 1628 to show everyone that Galen was wrong about the liver making blood. Therefore Harvey changed what people knew about human bodies.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions circulation, the heart pump, and De Motu Cordis, but lacks analytical PEEL paragraphs, provides no volume calculations, and tells a simple story."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason William Harvey was a turning point was his <strong>observation of mechanical heart valves</strong>. By dissecting cold-blooded animals whose hearts beat slowly, Harvey proved that blood only pumped one way through the heart. He tied tight ligatures around human arms to show that blood flowed down in arteries and back up in veins.<br><br>Another reason was his book <strong>De Motu Cordis (1628)</strong>. In this book, Harvey published mathematical calculations showing that the heart pumped hundreds of pints of blood each hour, which was far too much for the liver to produce, proving circulation was true.<br><br>In conclusion, Harvey's experiments and famous book in 1628 made him a great turning point in medical history.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (valves/ligatures and De Motu Cordis). However, it remains narrative and omits a third distinct aspect beyond the stimulus (such as dismantling Galen's liver dogma and undermining humoural bloodletting), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason William Harvey's discovery was a turning point was his <strong>observation of mechanical heart valves and blood flow</strong>. Dissecting cold-blooded animals with slow heartbeats, Harvey demonstrated that the heart acted as a muscular pump pushing blood into arteries, while one-way venous valves prevented backflow. Using arm ligatures, he proved blood travelled away from the heart in arteries and returned via veins. Therefore, this caused a turning point because it provided empirical proof that the heart functioned as a mechanical muscular pump circulating a fixed volume of blood.<br><br>Furthermore, Harvey was a turning point because his <strong>treatise *De Motu Cordis* (1628) established experimental proof</strong>. Harvey calculated mathematically that the heart pumped three times an adult's body weight in blood hourly, proving the liver could not produce that volume continuously from food. Therefore, this led to a revolution in medical science because it gave the European scientific community undeniable experimental evidence that could be independently tested and verified.<br><br>In addition, Harvey was a turning point because he <strong>shattered Galen's 1,400-year-old dogma regarding bodily physiology</strong>. Galen taught that blood was made in the liver and consumed by tissues. By proving continuous circulation, Harvey disproved Galen's physiology, undermining the rationale for humoural bloodletting. Therefore, this transformed medical thinking because proving Galen wrong on core physiology undermined the entire basis of humoural treatments like bloodletting and encouraged modern experimental physiology.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_2_5": [
@@ -2696,9 +3457,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Robert Koch"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason for rapid progress was Louis Pasteur's development and publication of the <strong>Germ Theory</strong> in 1861. Prior to Pasteur, British and European medicine was dominated by the false theories of spontaneous generation and miasma. Investigating why wine and beer turned sour, Pasteur used swan-neck flask experiments to prove that airborne living microbes caused decay, and demonstrated that heating liquids killed these organisms (pasteurisation). He then linked this discovery to animal and human illness, publishing his Germ Theory in 1861 and demonstrating in 1878 that specific germs caused silkworm disease. Therefore, Pasteur provided the essential conceptual breakthrough by proving scientifically that external microscopic organisms, rather than spontaneous generation or bad air, were the true cause of decay and disease.<br><br>Furthermore, German physician <strong>Robert Koch</strong> transformed Pasteur's theoretical breakthrough into practical, systematic microbe-hunting. While Pasteur proved germs caused decay, he could not isolate individual human disease-causing bacteria. Koch solved this by developing groundbreaking laboratory techniques: he used solid agar jelly in petri dishes to grow pure, separate bacterial colonies and stained microbes with synthetic aniline dyes so they could be seen clearly under microscopes. Using these methods, Koch isolated the specific bacteria responsible for anthrax (1876), tuberculosis (1882), and cholera (1883), and formulated 'Koch's Postulates'—a rigid four-step scientific test proving a specific microbe caused a specific disease. Therefore, Koch accelerated progress by providing the precise scientific tools and methodology that enabled researchers across Europe to identify the exact microbial causes of deadly human diseases.<br><br>In addition, rapid progress was driven by <strong>advancements in optical technology and intense national rivalry</strong>. During the 1870s and 1880s, industrial precision engineering perfected the achromatic optical microscope; microscope lenses designed by Ernst Abbe and manufactured by the Carl Zeiss company allowed scientists to view bacteria magnified up to 1,000 times without visual distortion. At the same time, the Franco-Prussian War (1870–71) ignited fierce patriotic rivalry between France and Germany. Both the French and German national governments poured massive public funding into research institutes: the German government established the Imperial Health Office for Koch's team, while the French government funded the Pasteur Institute in Paris. Therefore, technological manufacturing combined with state-backed financial investment and nationalist competition enabled rival research teams to discover disease-causing pathogens at an unprecedented speed.",
+        "modelAnswer": "One primary reason for rapid progress was <strong>Louis Pasteur's publication of Germ Theory in 1861</strong>. Investigating why beer soured, Pasteur used swan-necked flasks to disprove spontaneous generation, demonstrating that airborne microorganisms caused decay. Although British doctors initially resisted his findings, Pasteur subsequently proved that specific microorganisms caused animal diseases like silkworm blight and chicken cholera. Therefore, this caused rapid progress because it replaced vague miasma theories with scientific proof that specific living microbes were the physical agents of disease.<br><br>Furthermore, progress accelerated due to <strong>Robert Koch's development of bacteriological methods</strong>. German doctor Robert Koch developed revolutionary techniques: using solid agar jelly in Petri dishes to culture pure bacterial colonies and methyl violet dyes to stain transparent bacteria. Between 1876 and 1883, Koch successfully identified the specific microbes responsible for anthrax, tuberculosis, and cholera. Therefore, this led to rapid identification of illnesses because Koch established a replicable scientific method for isolating and proving exactly which bacterium caused which disease.<br><br>In addition, progress was driven by <strong>crucial technological developments in precision microscopy</strong>. In 1830, Joseph Jackson Lister designed achromatic lenses that eliminated optical distortion, and by the 1870s, Ernst Abbe developed oil-immersion lenses magnifying specimens 1,000 times. Combined with microphotography, these optical breakthroughs allowed scientists worldwide to visually verify Koch's bacteria. Therefore, this accelerated medical progress because researchers now possessed the precision optical instruments necessary to see, differentiate, and photograph deadly bacteria.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "There was rapid progress in finding causes of illness because Louis Pasteur invented the Germ Theory in 1861. He used a swan-neck flask to show germs caused decay. Then Robert Koch found the exact bacteria for anthrax and cholera by growing them on agar plates and staining them. Also better microscopes were invented. Therefore doctors finally understood that bacteria caused disease instead of bad smells.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Pasteur, Koch, and microscopes, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for rapid progress was the work of <strong>Louis Pasteur</strong>. In 1861, Pasteur published his Germ Theory, proving that microbes caused beer and milk to spoil. He used swan-necked flasks to disprove spontaneous generation, showing that microscopic organisms lived in the air and caused decay rather than generating from rotting matter.<br><br>Another reason was the discoveries of <strong>Robert Koch</strong>. Koch built on Pasteur's work by identifying the specific bacteria that caused diseases. In 1876 he found the anthrax microbe, in 1882 he identified the bacterium for tuberculosis, and in 1883 he found the cholera microbe using agar jelly and chemical dyes.<br><br>In conclusion, Pasteur and Koch together proved that specific microbes caused deadly diseases.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Pasteur and Koch). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as technological advances in microscopes and industrial dye staining), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One primary reason for rapid progress was <strong>Louis Pasteur's publication of Germ Theory in 1861</strong>. Investigating why beer soured, Pasteur used swan-necked flasks to disprove spontaneous generation, demonstrating that airborne microorganisms caused decay. Although British doctors initially resisted his findings, Pasteur subsequently proved that specific microorganisms caused animal diseases like silkworm blight and chicken cholera. Therefore, this caused rapid progress because it replaced vague miasma theories with scientific proof that specific living microbes were the physical agents of disease.<br><br>Furthermore, progress accelerated due to <strong>Robert Koch's development of bacteriological methods</strong>. German doctor Robert Koch developed revolutionary techniques: using solid agar jelly in Petri dishes to culture pure bacterial colonies and methyl violet dyes to stain transparent bacteria. Between 1876 and 1883, Koch successfully identified the specific microbes responsible for anthrax, tuberculosis, and cholera. Therefore, this led to rapid identification of illnesses because Koch established a replicable scientific method for isolating and proving exactly which bacterium caused which disease.<br><br>In addition, progress was driven by <strong>crucial technological developments in precision microscopy</strong>. In 1830, Joseph Jackson Lister designed achromatic lenses that eliminated optical distortion, and by the 1870s, Ernst Abbe developed oil-immersion lenses magnifying specimens 1,000 times. Combined with microphotography, these optical breakthroughs allowed scientists worldwide to visually verify Koch's bacteria. Therefore, this accelerated medical progress because researchers now possessed the precision optical instruments necessary to see, differentiate, and photograph deadly bacteria.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (228 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_3_2": [
@@ -2733,9 +3518,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Anti-Vaccination League"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason for opposition was the <strong>commercial self-interest of professional inoculators</strong>. In the eighteenth century, smallpox inoculation had become an enormously lucrative private medical business. Prominent dynasties like the Sutton family charged wealthy aristocrats and merchants substantial fees (often up to £20 per patient) to quarantine and inoculate households with mild smallpox. Because Jenner offered vaccination for free to local farmworkers and published his findings openly, inoculators feared losing their livelihoods and status. Consequently, commercial inoculators launched aggressive smear campaigns in pamphlets and newspapers, publishing false stories of vaccinated patients falling ill to protect their monopoly on smallpox prevention.<br><br>Furthermore, fierce opposition came from <strong>religious and moral traditionalists who formed groups like the Anti-Vaccination League</strong>. Many devout Christians and conservative clergymen argued that smallpox was a divine punishment sent by God to cleanse sinful humans, meaning that attempting to eradicate it interfered with God's will. Moreover, using cowpox was viewed as disgusting and unnatural because it crossed the sacred boundary between beasts and human beings. Satirical cartoonists like James Gillray published famous caricatures showing vaccinated patients sprouting cow horns, tails, and bovine muzzles from their flesh. When Parliament later made vaccination compulsory in the 1852 and 1867 Vaccination Acts, opposition intensified into mass street protests by the Anti-Vaccination League, who argued compulsory vaccination infringed upon personal civil liberties.<br><br>In addition, opposition was justified by <strong>scientific skepticism within the medical establishment and early clinical accidents</strong>. When Jenner submitted his paper to the Royal Society in 1797, they rejected it because Jenner could not explain *how* vaccination worked; since viruses and antibodies were completely unknown before Pasteur's 1861 Germ Theory, Jenner's idea that an animal infection could protect against a human disease seemed unscientific guesswork. Furthermore, early vaccination had real practical dangers: careless doctors contaminated vaccination lancets with blood or syphilis, or accidentally used smallpox matter instead of cowpox, leading to tragic patient deaths. Therefore, genuine medical ignorance and fatal clinical errors convinced many respectable physicians that vaccination was an unproven, hazardous procedure.",
+        "modelAnswer": "One major reason for opposition was <strong>fierce financial resistance from commercial inoculators</strong>. In the eighteenth century, smallpox variolation (inoculating patients with live smallpox scabs) was a highly profitable commercial enterprise dominated by medical dynasties like the Sutton family. Because Jenner offered cowpox vaccination as a safer and much cheaper alternative, commercial inoculators waged aggressive public campaigns questioning Jenner's competence to protect their lucrative medical practices. Therefore, this caused fierce opposition because established medical practitioners actively campaigned against vaccination to protect their lucrative inoculation businesses.<br><br>Furthermore, opposition intensified through the <strong>founding of the Anti-Vaccination League against compulsory legislation</strong>. When Parliament passed Compulsory Vaccination Acts in 1853 and 1867 enforcing fines and prison sentences for non-compliant parents, massive public resistance erupted. Leagues formed across Britain, arguing that state-mandated injections violated individual civil liberties and bodily autonomy. Therefore, this led to widespread opposition because working-class citizens and libertarian leagues viewed compulsory state-enforced injections as tyranny over their personal bodies.<br><br>In addition, opposition was fuelled by <strong>deep religious objections and Jenner's inability to explain the biological mechanism</strong>. Church ministers preached that infecting humans with animal disease from cows was immoral, while James Gillray's satirical cartoons depicted vaccinated patients sprouting cow horns. Because Jenner could not scientifically explain why cowpox conferred immunity before Germ Theory, many physicians remained sceptical. Therefore, this generated sustained public hostility because superstitious fears and moral outrage convinced many that injecting animal matter defied divine law.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "There was opposition to Edward Jenner's smallpox vaccination because people were afraid of taking cowpox from a cow. Religious leaders said it was wrong to put animal disease into humans, and cartoons showed people turning into cows. Doctors who inoculated people with real smallpox also opposed it because they lost money. Therefore people protested against Jenner's new vaccine.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions fear of cows, inoculators, and cartoons, but lacks analytical PEEL paragraphs, dates, and sustained causal explanation."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason for opposition was resistance from <strong>commercial inoculators</strong>. Doctors and inoculators like the Sutton family made large amounts of money inoculating wealthy people with live smallpox. Jenner's cowpox vaccine was much cheaper and safer, so commercial inoculators attacked Jenner in medical journals to protect their profits.<br><br>Another reason was the formation of the <strong>Anti-Vaccination League</strong>. When the British government passed laws in 1853 and 1867 making vaccination compulsory for babies, parents protested. The League argued that compulsory vaccination infringed on personal liberty and took away parents' rights to decide their children's healthcare.<br><br>In conclusion, money and government laws caused strong opposition to Jenner's smallpox vaccination.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (inoculators and Anti-Vaccination League). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as religious outrage over animal fluids and Jenner's inability to explain the biological mechanism), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason for opposition was <strong>fierce financial resistance from commercial inoculators</strong>. In the eighteenth century, smallpox variolation (inoculating patients with live smallpox scabs) was a highly profitable commercial enterprise dominated by medical dynasties like the Sutton family. Because Jenner offered cowpox vaccination as a safer and much cheaper alternative, commercial inoculators waged aggressive public campaigns questioning Jenner's competence to protect their lucrative medical practices. Therefore, this caused fierce opposition because established medical practitioners actively campaigned against vaccination to protect their lucrative inoculation businesses.<br><br>Furthermore, opposition intensified through the <strong>founding of the Anti-Vaccination League against compulsory legislation</strong>. When Parliament passed Compulsory Vaccination Acts in 1853 and 1867 enforcing fines and prison sentences for non-compliant parents, massive public resistance erupted. Leagues formed across Britain, arguing that state-mandated injections violated individual civil liberties and bodily autonomy. Therefore, this led to widespread opposition because working-class citizens and libertarian leagues viewed compulsory state-enforced injections as tyranny over their personal bodies.<br><br>In addition, opposition was fuelled by <strong>deep religious objections and Jenner's inability to explain the biological mechanism</strong>. Church ministers preached that infecting humans with animal disease from cows was immoral, while James Gillray's satirical cartoons depicted vaccinated patients sprouting cow horns. Because Jenner could not scientifically explain why cowpox conferred immunity before Germ Theory, many physicians remained sceptical. Therefore, this generated sustained public hostility because superstitious fears and moral outrage convinced many that injecting animal matter defied divine law.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (231 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_3_3": [
@@ -2770,9 +3579,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Antiseptic and aseptic surgery"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason hospital care improved was the pioneering work of <strong>Florence Nightingale in hospital design and hygiene</strong>. During the Crimean War (1854–56), Nightingale took 38 nurses to Scutari Barrack Hospital, where she slashed the death rate from 42% to 2% through aggressive sanitation, fresh air, clean water, and nutritious food. Returning to Britain as a national heroine, she published *Notes on Hospitals* (1859), which revolutionized hospital architecture. She advocated the 'pavilion plan', replacing cramped multi-story wards with separate, single-story wings featuring large windows facing each other to maximize cross-ventilation, along with easily cleaned tiled floors and dedicated drainage. As new hospitals like St Thomas' in London were rebuilt to these specifications, hospitalism and airborne cross-infection plummeted.<br><br>Furthermore, hospital care improved because <strong>nursing was transformed into a disciplined, professional medical career</strong>. Before the 1860s, hospital nurses were widely regarded as working-class, untrained, and negligent women often caricatured as drunken 'Betsy Prigs'. Nightingale used the £44,000 public fund raised in her honour to establish the Nightingale Training School at St Thomas' Hospital in 1860. The school provided rigorous scientific, anatomical, and sanitary training under strict matrons, establishing nursing as a respectable, middle-class profession with defined uniforms, codes of conduct, and sterile medical routines. Educated Nightingale nurses were dispatched across Britain and the British Empire to manage wards, ensuring that sterile procedures, accurate patient temperature charting, and wound monitoring were maintained twenty-four hours a day.<br><br>In addition, rapid improvement was driven by the <strong>introduction of antiseptic and aseptic surgical methods on hospital wards</strong>. Following Joseph Lister's 1865 breakthrough using carbolic acid to kill airborne microbes in compound fractures, hospital gangrene and sepsis were steadily brought under control. By the 1880s and 1890s, hospitals transitioned from antiseptic spray to total aseptic surgery: operating theatres were moved away from general wards into dedicated sterile suites equipped with steam autoclaves (invented by Charles Chamberland in 1881) to sterilize surgical instruments, gowns, and gauze. Surgeons and ward staff began wearing sterile boiled rubber gloves and white linen aprons, and replaced unwashed communal sponges with single-use sterile dressings. Therefore, eliminating bacteria from surgical wards transformed hospitals from terrifying death traps into modern, lifesaving clinical institutions.",
+        "modelAnswer": "One major factor improving hospital care was <strong>Florence Nightingale's professionalisation of nursing and sanitation</strong>. Returning from the Crimean War, where her sanitary reforms at Scutari reduced mortality from 42% to 2%, Nightingale published *Notes on Nursing* (1859). In 1860, she established the Nightingale Training School at St Thomas' Hospital, establishing rigorous training in patient hygiene and ward administration. Therefore, this caused a revolution in hospital care because nursing was transformed into a disciplined, professional medical career that dramatically reduced patient mortality.<br><br>Furthermore, care was transformed by the <strong>transition from antiseptic to aseptic surgery</strong>. In 1865, Joseph Lister introduced carbolic acid spray to sterilise wounds and dressings, reducing surgical gangrene mortality from 46% to 15%. By the 1890s, surgeons advanced to aseptic methods: boiling surgical instruments in steam autoclaves, wearing sterile rubber gloves and gowns, and sterilising operating theatres. Therefore, this led to rapid improvements in hospitals because wards and operating theatres were transformed from lethal death traps into clean, sterile environments where post-operative infections plummeted.<br><br>In addition, hospital improvement was accelerated by <strong>revolutionary pavilion-style architectural redesigns</strong>. Advocated in Nightingale's *Notes on Hospitals* (1859), modern hospitals were built with separate pavilion wards, large windows, polished tiled surfaces, and cross-ventilation to disperse miasmas and bacteria. Isolating infectious patients in dedicated fever wards prevented deadly cross-contamination. Therefore, this improved hospital care because modern architectural design effectively stopped the airborne spread of cross-infection between patients.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Hospital care improved rapidly because Florence Nightingale went to the Crimean War and cleaned up the hospital at Scutari. She washed the floors, brought clean food, and cut the death rate. When she came home she opened a nursing school. Also Joseph Lister used carbolic acid in surgery, which stopped people dying of infections. Therefore hospitals became much safer and cleaner places for patients.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Nightingale, Scutari, and Lister, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason hospital care improved was the work of <strong>Florence Nightingale</strong>. During the Crimean War at Scutari hospital, Nightingale cleaned the wards, provided clean clothing, and improved ventilation, reducing the death rate from 42% to 2%. In 1860 she set up the Nightingale Training School at St Thomas' Hospital, turning nursing into a respected, trained profession.<br><br>Another reason was the development of <strong>antiseptic and aseptic surgery</strong>. In 1865, Joseph Lister used carbolic acid spray to kill bacteria during operations, reducing surgical mortality from 46% to 15%. By the 1890s, hospitals adopted aseptic techniques, sterilising instruments and using rubber gloves.<br><br>In conclusion, Nightingale's nursing reforms and Lister's antiseptics made hospitals much better places.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Nightingale and antiseptic/aseptic surgery). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as architectural pavilion design and cross-ventilation), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor improving hospital care was <strong>Florence Nightingale's professionalisation of nursing and sanitation</strong>. Returning from the Crimean War, where her sanitary reforms at Scutari reduced mortality from 42% to 2%, Nightingale published *Notes on Nursing* (1859). In 1860, she established the Nightingale Training School at St Thomas' Hospital, establishing rigorous training in patient hygiene and ward administration. Therefore, this caused a revolution in hospital care because nursing was transformed into a disciplined, professional medical career that dramatically reduced patient mortality.<br><br>Furthermore, care was transformed by the <strong>transition from antiseptic to aseptic surgery</strong>. In 1865, Joseph Lister introduced carbolic acid spray to sterilise wounds and dressings, reducing surgical gangrene mortality from 46% to 15%. By the 1890s, surgeons advanced to aseptic methods: boiling surgical instruments in steam autoclaves, wearing sterile rubber gloves and gowns, and sterilising operating theatres. Therefore, this led to rapid improvements in hospitals because wards and operating theatres were transformed from lethal death traps into clean, sterile environments where post-operative infections plummeted.<br><br>In addition, hospital improvement was accelerated by <strong>revolutionary pavilion-style architectural redesigns</strong>. Advocated in Nightingale's *Notes on Hospitals* (1859), modern hospitals were built with separate pavilion wards, large windows, polished tiled surfaces, and cross-ventilation to disperse miasmas and bacteria. Isolating infectious patients in dedicated fever wards prevented deadly cross-contamination. Therefore, this improved hospital care because modern architectural design effectively stopped the airborne spread of cross-infection between patients.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (227 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_3_4": [
@@ -2868,7 +3701,7 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Great Stink (1858)"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason the government abandoned laissez-faire was the <strong>expansion of the franchise through the 1867 Reform Act</strong>. Before 1867, only wealthy property owners voted, so governments ignored slum conditions to keep local taxes low. However, the 1867 Reform Act gave the vote to working-class men in towns. To win elections, politicians like Benjamin Disraeli had to promise social reforms, leading his Conservative government to pass the 1875 Public Health Act to win working-class support.<br><br>Furthermore, the government was forced to act by the <strong>Great Stink of 1858</strong>. During a hot summer, raw sewage in the River Thames produced a terrible smell outside Parliament, forcing MPs to soak curtains in chloride of lime. Fearing disease, Parliament gave £3 million to Joseph Bazalgette to build London's underground sewer system. The success of these sewers proved that government engineering saved lives, creating pressure for nationwide public health laws.<br><br>In addition, the shift was driven by <strong>scientific discoveries from John Snow and Louis Pasteur</strong>. In 1854, John Snow proved cholera was waterborne by removing the Broad Street pump handle. In 1861, Pasteur published his Germ Theory, scientifically proving that microscopic bacteria caused disease. This destroyed the miasma theory and proved that dirty water caused epidemics, forcing the government to make clean water compulsory in 1875.",
+        "modelAnswer": "One major reason the government abandoned laissez-faire was the <strong>expansion of the franchise through the 1867 Reform Act</strong>. Before 1867, only wealthy property owners voted, so governments kept taxes low by ignoring slum housing. However, the 1867 Reform Act gave the vote to urban working-class men. To win general elections, politicians like Benjamin Disraeli had to compete for working-class votes by promising social improvements. Therefore, this forced the government to abandon laissez-faire because politicians now depended directly on working-class electors who demanded sanitary legislation.<br><br>Furthermore, reform was compelled by the <strong>crisis of the Great Stink of 1858</strong>. During an intensely hot summer, untreated sewage in the Thames produced an unbearable stench outside Parliament, forcing MPs to soak curtains in chloride of lime. Fearing miasma would sicken politicians, Parliament granted £3 million to Joseph Bazalgette to build London's underground sewers. Therefore, this led to national public health reform because Bazalgette's massive engineering triumph proved that state intervention directly saved lives.<br><br>In addition, the shift was driven by <strong>scientific proof from John Snow and Louis Pasteur</strong>. In 1854, Snow demonstrated cholera was waterborne by removing the Broad Street pump handle, while Pasteur's 1861 Germ Theory proved microscopic bacteria thrived in dirty water. This destroyed miasma theory and exposed laissez-faire as deadly negligence. Therefore, this caused the passage of the 1875 Act because ministers now possessed undeniable proof that only compulsory clean water and sanitation could halt lethal epidemics.",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -2889,8 +3722,8 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major reason the government abandoned laissez-faire was the <strong>expansion of the franchise through the 1867 Reform Act</strong>. Before 1867, only wealthy property owners voted, so governments ignored slum conditions to keep local taxes low. However, the 1867 Reform Act gave the vote to working-class men in towns. To win elections, politicians like Benjamin Disraeli had to promise social reforms, leading his Conservative government to pass the 1875 Public Health Act to win working-class support.<br><br>Furthermore, the government was forced to act by the <strong>Great Stink of 1858</strong>. During a hot summer, raw sewage in the River Thames produced a terrible smell outside Parliament, forcing MPs to soak curtains in chloride of lime. Fearing disease, Parliament gave £3 million to Joseph Bazalgette to build London's underground sewer system. The success of these sewers proved that government engineering saved lives, creating pressure for nationwide public health laws.<br><br>In addition, the shift was driven by <strong>scientific discoveries from John Snow and Louis Pasteur</strong>. In 1854, John Snow proved cholera was waterborne by removing the Broad Street pump handle. In 1861, Pasteur published his Germ Theory, scientifically proving that microscopic bacteria caused disease. This destroyed the miasma theory and proved that dirty water caused epidemics, forcing the government to make clean water compulsory in 1875.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content in realistic candidate exam length (224 words), structured in sustained analytical paragraphs with precise historical vocabulary throughout, meeting all Level 4 criteria."
+            "text": "One major reason the government abandoned laissez-faire was the <strong>expansion of the franchise through the 1867 Reform Act</strong>. Before 1867, only wealthy property owners voted, so governments kept taxes low by ignoring slum housing. However, the 1867 Reform Act gave the vote to urban working-class men. To win general elections, politicians like Benjamin Disraeli had to compete for working-class votes by promising social improvements. Therefore, this forced the government to abandon laissez-faire because politicians now depended directly on working-class electors who demanded sanitary legislation.<br><br>Furthermore, reform was compelled by the <strong>crisis of the Great Stink of 1858</strong>. During an intensely hot summer, untreated sewage in the Thames produced an unbearable stench outside Parliament, forcing MPs to soak curtains in chloride of lime. Fearing miasma would sicken politicians, Parliament granted £3 million to Joseph Bazalgette to build London's underground sewers. Therefore, this led to national public health reform because Bazalgette's massive engineering triumph proved that state intervention directly saved lives.<br><br>In addition, the shift was driven by <strong>scientific proof from John Snow and Louis Pasteur</strong>. In 1854, Snow demonstrated cholera was waterborne by removing the Broad Street pump handle, while Pasteur's 1861 Germ Theory proved microscopic bacteria thrived in dirty water. This destroyed miasma theory and exposed laissez-faire as deadly negligence. Therefore, this caused the passage of the 1875 Act because ministers now possessed undeniable proof that only compulsory clean water and sanitation could halt lethal epidemics.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (220 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
           }
         },
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
@@ -2929,9 +3762,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The Human Genome Project"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason genetic understanding improved was the <strong>discovery of the molecular structure of DNA in 1953</strong>. Prior to the 1950s, scientists knew that traits were inherited through chromosomes, but had no idea how genetic information was stored or replicated. Working at King's College London, <strong>Rosalind Franklin</strong> and Maurice Wilkins used pioneering X-ray crystallography to capture 'Photograph 51', which clearly revealed the diffraction pattern of a helical structure. Using Franklin's data, Cambridge researchers James Watson and Francis Crick constructed their famous 3D double-helix model of DNA in 1953, cracking the code of complementary base pairs (Adenine-Thymine, Cytosine-Guanine). This discovery explained for the first time the physical mechanism of heredity, proving that genes were chemical sequences that could be read, copied, and potentially repaired.<br><br>Furthermore, understanding accelerated through the launch and completion of the <strong>Human Genome Project (1990–2003)</strong>. Coordinated by an international coalition of publicly funded laboratories in the United States, Britain, France, Germany, and Japan, the project set out to map and sequence every single one of the 3 billion chemical base pairs in the human genetic code. By completing the map in 2003, researchers successfully catalogued roughly 20,000 human genes. This breakthrough allowed modern medical geneticists to pinpoint the exact faulty gene mutations responsible for devastating hereditary diseases like cystic fibrosis, Huntington's chorea, sickle cell anaemia, and inherited breast cancers (BRCA1/BRCA2), moving medicine from treating symptoms to identifying genetic root causes.<br><br>In addition, rapid progress was driven by <strong>advancements in digital computing power and electron microscopy</strong>. In the 1950s, manual DNA sequencing of a few dozen base pairs took months of painstaking laboratory work. However, the post-war digital computing revolution and the development of automated automated gene-sequencing machines powered by supercomputers enabled scientists to process billions of genetic sequences in hours. Furthermore, modern electron microscopes and CRISPR gene-editing technology (developed in 2012) allowed scientists not only to view chromosomes at atomic resolution, but to edit and correct mutated gene sequences directly. Therefore, advanced computing and imaging technology transformed genetic theory into practical diagnostic screening and targeted gene therapy.",
+        "modelAnswer": "One major factor driving rapid progress was <strong>Rosalind Franklin's capture of Photograph 51 in 1952</strong>. Working at King's College London, Franklin used X-ray crystallography to produce Photograph 51, providing the critical physical evidence revealing DNA's helical geometry. This enabled James Watson and Francis Crick in 1953 to construct the double-helix DNA model, demonstrating how chemical base pairs replicate genetic instructions. Therefore, this caused rapid genetic progress because identifying the double-helix structure revealed the exact physical mechanism by which genetic information is stored and replicated.<br><br>Furthermore, understanding accelerated through the <strong>international collaboration of the Human Genome Project (1990–2003)</strong>. Co-ordinated by scientists across Britain, the USA, and globally, this public project successfully mapped all three billion chemical base pairs in human DNA. Mapping the complete genetic blueprint allowed medical researchers to identify the specific genetic mutations responsible for conditions like Down's syndrome and Huntington's disease. Therefore, this led to massive medical breakthroughs because mapping the entire human genetic sequence allowed scientists to identify the specific faulty genes responsible for hereditary diseases.<br><br>In addition, progress was made possible by <strong>post-war advances in computing power and automated DNA sequencers</strong>. In the late twentieth century, automated sequencing machines and digital supercomputers replaced manual gene counting, allowing laboratories to analyse millions of base pairs in hours rather than decades. Therefore, this accelerated genetic understanding because computerized data-processing enabled researchers to rapidly detect genetic mutations and develop targeted gene therapies.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Understanding of genetics improved quickly after 1950 because Rosalind Franklin took a famous X-ray picture called Photograph 51. Then Watson and Crick used it to build the double helix model of DNA. Later on, scientists did the Human Genome Project to map out every human gene using fast computers. Therefore doctors now understand what causes hereditary diseases like cystic fibrosis.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Franklin, Watson/Crick, and the Human Genome Project, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason understanding improved was <strong>Rosalind Franklin and Photograph 51</strong>. In 1952, Rosalind Franklin used X-ray crystallography to take Photograph 51 at King's College London. This image showed the structure of DNA, which allowed James Watson and Francis Crick in 1953 to build the famous double helix model showing how genes pass on traits.<br><br>Another reason was the <strong>Human Genome Project</strong>. Launched in 1990 and completed in 2003, this international scientific project mapped all three billion base pairs of human DNA. This gave doctors an exact map of human genes, helping them see which genes cause hereditary diseases.<br><br>In conclusion, Franklin's photo and the Human Genome Project helped scientists understand genetics.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Franklin and the Human Genome Project). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as computing technology, automated sequencers, and gene therapy), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor driving rapid progress was <strong>Rosalind Franklin's capture of Photograph 51 in 1952</strong>. Working at King's College London, Franklin used X-ray crystallography to produce Photograph 51, providing the critical physical evidence revealing DNA's helical geometry. This enabled James Watson and Francis Crick in 1953 to construct the double-helix DNA model, demonstrating how chemical base pairs replicate genetic instructions. Therefore, this caused rapid genetic progress because identifying the double-helix structure revealed the exact physical mechanism by which genetic information is stored and replicated.<br><br>Furthermore, understanding accelerated through the <strong>international collaboration of the Human Genome Project (1990–2003)</strong>. Co-ordinated by scientists across Britain, the USA, and globally, this public project successfully mapped all three billion chemical base pairs in human DNA. Mapping the complete genetic blueprint allowed medical researchers to identify the specific genetic mutations responsible for conditions like Down's syndrome and Huntington's disease. Therefore, this led to massive medical breakthroughs because mapping the entire human genetic sequence allowed scientists to identify the specific faulty genes responsible for hereditary diseases.<br><br>In addition, progress was made possible by <strong>post-war advances in computing power and automated DNA sequencers</strong>. In the late twentieth century, automated sequencing machines and digital supercomputers replaced manual gene counting, allowing laboratories to analyse millions of base pairs in hours rather than decades. Therefore, this accelerated genetic understanding because computerized data-processing enabled researchers to rapidly detect genetic mutations and develop targeted gene therapies.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (226 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_2": [
@@ -2966,9 +3823,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "CT and MRI scanners"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason technological developments improved diagnosis was the <strong>application of X-rays from 1895 onwards</strong>. Discovered by German physicist Wilhelm Röntgen in 1895, X-rays possessed the unique physical property of passing through human soft tissue while being absorbed by dense bone. Within months of discovery, British hospitals installed primitive X-ray machines, allowing doctors to diagnose bone fractures and joint dislocations accurately without inflicting painful physical manipulation. During the First World War, Marie Curie and the Red Cross deployed mobile X-ray vans to the Western Front, enabling battlefield surgeons to locate lodged shrapnel and bullet fragments instantly before cutting into tissue. Therefore, X-rays provided the first non-invasive window into the living human skeleton, eliminating guesswork in trauma and orthopedic diagnosis.<br><br>Furthermore, diagnosis was revolutionized by the <strong>invention of computerized tomography (CT) and magnetic resonance imaging (MRI)</strong>. While traditional X-rays showed bones clearly, they could not differentiate soft tissues or detect early-stage brain tumours. In 1971, British electrical engineer Godfrey Hounsfield invented the <strong>CT scanner</strong>, using rotating X-ray beams combined with digital computers to construct detailed 3D cross-sectional slices of internal organs. This was followed in the 1980s by the development of <strong>MRI scanners</strong>, which used radio waves and powerful magnetic fields to map water molecules in bodily tissues without any harmful radiation exposure. Consequently, physicians could detect microscopic brain strokes, spinal disc tears, and malignant liver or lung tumours years before they became fatal, vastly improving treatment survival rates.<br><br>In addition, diagnosis advanced through the development of <strong>fiber-optic endoscopy and automated biochemical testing</strong>. The invention of flexible fiber-optic cables in the 1950s led to the development of the <strong>endoscope</strong>, allowing doctors to feed thin illuminated cameras down the throat or into the bowel to inspect stomach ulcers, colon polyps, and internal bleeding directly on video screens and take needle biopsies. Simultaneously, electronic laboratory analyzers automated the testing of blood, urine, and cerebrospinal fluid, measuring blood glucose for diabetes, detecting troponin levels for heart attacks, and identifying viral antibodies for HIV and hepatitis. Therefore, optical and biochemical technologies enabled doctors to diagnose physiological disorders precisely at cellular and chemical levels.",
+        "modelAnswer": "One major technological development was the <strong>discovery and medical application of X-rays</strong>. Discovered by Wilhelm Röntgen in 1895, X-rays passed through soft tissue to cast shadows of dense bone on photographic plates. By 1914, Marie Curie's mobile radiology units enabled battlefield surgeons to locate bullets and shrapnel immediately, eliminating dangerous exploratory operations. Therefore, this led to major diagnostic improvements because doctors could locate internal fractures, tumours, and foreign objects without having to perform dangerous exploratory surgery.<br><br>Furthermore, diagnosis was transformed by the <strong>invention of advanced CT and MRI scanners in the 1970s</strong>. In 1972, British engineer Godfrey Hounsfield invented the CT scanner, using computers to combine multiple X-ray cross-sections into 3D images. Soon after, Magnetic Resonance Imaging (MRI) used magnetic fields and radio waves to image soft tissues like the brain and spinal cord without radiation. Therefore, this caused diagnostic accuracy to increase dramatically because physicians could detect early-stage brain tumours, internal bleeding, and organ damage with unprecedented precision.<br><br>In addition, diagnosis was improved by <strong>scientific blood analysis, chemical pathology, and flexible endoscopes</strong>. Twentieth-century automated blood testing allowed clinicians to measure white blood cell counts, identify blood groups, and detect chemical markers for diabetes and kidney failure. Simultaneously, fibre-optic endoscopes allowed internal organs to be directly viewed. Therefore, this transformed medical diagnosis because clinicians could identify diseases biochemically and visually at an early, treatable stage rather than relying on external physical symptoms.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Technology improved diagnosis in the twentieth century because doctors got new machines. Wilhelm Röntgen discovered X-rays which let doctors see broken bones without cutting people open. Then CT and MRI scanners were invented in the 1970s which let doctors look inside people's brains and organs. Doctors also started using blood tests. Therefore technology made finding out what was wrong with patients much easier.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions X-rays, CT/MRI, and blood tests, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason technology improved diagnosis was the invention of <strong>X-rays</strong>. Discovered by Wilhelm Röntgen in 1895, X-rays allowed doctors to take images of bones and locate bullets inside soldiers without surgery. During the First World War, mobile X-ray machines helped surgeons find shrapnel quickly, making diagnosis much faster and safer.<br><br>Another reason was the development of <strong>CT and MRI scanners</strong>. In 1972, Godfrey Hounsfield invented the CT scanner using computers to build 3D images of the body. In the 1970s, MRI scanners were developed using magnetic fields to produce detailed pictures of soft tissues, helping doctors detect tumours.<br><br>In conclusion, X-rays and MRI scanners helped doctors diagnose patients without operating.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (X-rays and CT/MRI). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as blood testing, automated laboratory pathology, and endoscopes), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major technological development was the <strong>discovery and medical application of X-rays</strong>. Discovered by Wilhelm Röntgen in 1895, X-rays passed through soft tissue to cast shadows of dense bone on photographic plates. By 1914, Marie Curie's mobile radiology units enabled battlefield surgeons to locate bullets and shrapnel immediately, eliminating dangerous exploratory operations. Therefore, this led to major diagnostic improvements because doctors could locate internal fractures, tumours, and foreign objects without having to perform dangerous exploratory surgery.<br><br>Furthermore, diagnosis was transformed by the <strong>invention of advanced CT and MRI scanners in the 1970s</strong>. In 1972, British engineer Godfrey Hounsfield invented the CT scanner, using computers to combine multiple X-ray cross-sections into 3D images. Soon after, Magnetic Resonance Imaging (MRI) used magnetic fields and radio waves to image soft tissues like the brain and spinal cord without radiation. Therefore, this caused diagnostic accuracy to increase dramatically because physicians could detect early-stage brain tumours, internal bleeding, and organ damage with unprecedented precision.<br><br>In addition, diagnosis was improved by <strong>scientific blood analysis, chemical pathology, and flexible endoscopes</strong>. Twentieth-century automated blood testing allowed clinicians to measure white blood cell counts, identify blood groups, and detect chemical markers for diabetes and kidney failure. Simultaneously, fibre-optic endoscopes allowed internal organs to be directly viewed. Therefore, this transformed medical diagnosis because clinicians could identify diseases biochemically and visually at an early, treatable stage rather than relying on external physical symptoms.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (229 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_3": [
@@ -3003,9 +3884,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "Aneurin Bevan"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason the NHS was created was the <strong>social impact of the Second World War and the publication of the Beveridge Report in 1942</strong>. During the war, the evacuation of over one million urban children to rural middle-class homes exposed the shocking reality of poverty, malnutrition, and untreated illnesses suffered by working-class families. Furthermore, the Blitz required the government to establish the Emergency Medical Service (EMS), organizing state-run blood depots, casualty wards, and ambulance networks. In December 1942, civil servant William Beveridge published his landmark social insurance report, calling for a post-war assault on the 'Five Giant Evils': Want, Ignorance, Idleness, Squalor, and <strong>Disease</strong>. The report sold over 600,000 copies and became a symbol of post-war reconstruction, creating overwhelming public expectation that healthcare should be a universal right funded by taxation.<br><br>Furthermore, the establishment of the NHS was driven by the <strong>political victory and determination of the 1945 Labour Government and Health Minister Aneurin Bevan</strong>. The Labour Party won a landslide general election in July 1945 on a manifesto promising to build a comprehensive welfare state. Appointed Minister of Health, former Welsh coalminer Aneurin Bevan demonstrated immense political skill and tenacity. He faced ferocious opposition from the British Medical Association (BMA), who claimed that state medicine would turn doctors into civil servants and rob them of private incomes. Bevan overcame their resistance by compromising pragmatically: he agreed that hospital consultants could retain private beds alongside their NHS duties, famously remarking that he had 'stuffed their mouths with gold'. On 5 July 1948, Bevan officially opened Park Hospital in Manchester, launching the NHS as a free service available to every British citizen regardless of income.<br><br>In addition, the NHS was necessary because the <strong>pre-war healthcare system was completely unequal, fragmented, and failing</strong>. Under the 1911 National Insurance Act, only employed male manual workers earning under £250 annually were eligible for a panel doctor; their wives, children, and the elderly were completely excluded. Voluntary hospitals relied on charitable donations and were on the brink of bankruptcy, while municipal hospitals operated under the grim stigma of Victorian workhouses. Working-class families had to pay private doctor fees or subscribe to private medical clubs, meaning treatable conditions like pneumonia, hernia, and rickets went untreated until patients were on the verge of death. Therefore, the glaring moral and practical bankruptcy of the pre-war private system made a unified, state-funded National Health Service an urgent necessity.",
+        "modelAnswer": "One major factor behind the NHS was the <strong>impact of the Beveridge Report in 1942</strong>. Sir William Beveridge identified 'Disease' as one of the Five Giants blighting society, proposing a comprehensive welfare state providing healthcare 'from the cradle to the grave'. Selling over 600,000 copies, the report created immense public demand that compelled post-war politicians to act. Therefore, this led to the creation of the NHS because Beveridge created irresistible democratic momentum that forced the post-war Labour government to promise a universal healthcare system.<br><br>Furthermore, the NHS was achieved through the <strong>political tenacity and pragmatism of Health Minister Aneurin Bevan</strong>. Bevan faced intense resistance from the British Medical Association (BMA), who feared doctors would become underpaid state servants. Bevan overcame this by allowing hospital consultants to retain private patients in NHS hospitals, famously remarking he 'stuffed their mouths with gold'. Therefore, this caused the successful launch of the NHS because Bevan's political compromises defeated medical opposition and made healthcare free at the point of delivery.<br><br>In addition, the reform was driven by the <strong>wartime Emergency Medical Service (EMS) and pre-war healthcare inequality</strong>. Prior to 1948, working-class wives and children were excluded from national insurance. During the Blitz, the government EMS treated air-raid casualties, proving centralised medical coordination was remarkably effective. Therefore, this forced the establishment of the NHS because wartime state coordination proved a national health system was viable and destroyed public tolerance for unequal pre-war healthcare.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "The NHS was set up in 1948 because the British people wanted free healthcare after the Second World War. William Beveridge wrote a famous report saying Britain should fight the five giants like Disease. Then Aneurin Bevan, the new Health Minister, argued with doctors and persuaded them to join the NHS. On 5 July 1948, the NHS opened so healthcare was free for everyone. Therefore people no longer had to pay to see a doctor.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Beveridge, Bevan, and free healthcare, but lacks analytical PEEL paragraphs, provides no detailed legislation or wartime mechanics, and tells a simple story."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason the NHS was set up was the <strong>Beveridge Report of 1942</strong>. Sir William Beveridge identified 'Five Giants' that ruined lives, including Disease. His report sold over 600,000 copies and recommended a free national health service from the cradle to the grave, which became hugely popular with the British public during the war.<br><br>Another reason was the determination of <strong>Aneurin Bevan</strong>. As Labour's Minister of Health, Bevan fought hard against the British Medical Association, who did not want to become state employees. Bevan compromised by letting consultants keep private hospital beds, famously saying he 'stuffed their mouths with gold', and opened the NHS on 5 July 1948.<br><br>In conclusion, Beveridge's report and Bevan's political skills made the NHS a reality.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Beveridge Report and Bevan). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the wartime Emergency Medical Service and pre-war healthcare inequality), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor behind the NHS was the <strong>impact of the Beveridge Report in 1942</strong>. Sir William Beveridge identified 'Disease' as one of the Five Giants blighting society, proposing a comprehensive welfare state providing healthcare 'from the cradle to the grave'. Selling over 600,000 copies, the report created immense public demand that compelled post-war politicians to act. Therefore, this led to the creation of the NHS because Beveridge created irresistible democratic momentum that forced the post-war Labour government to promise a universal healthcare system.<br><br>Furthermore, the NHS was achieved through the <strong>political tenacity and pragmatism of Health Minister Aneurin Bevan</strong>. Bevan faced intense resistance from the British Medical Association (BMA), who feared doctors would become underpaid state servants. Bevan overcame this by allowing hospital consultants to retain private patients in NHS hospitals, famously remarking he 'stuffed their mouths with gold'. Therefore, this caused the successful launch of the NHS because Bevan's political compromises defeated medical opposition and made healthcare free at the point of delivery.<br><br>In addition, the reform was driven by the <strong>wartime Emergency Medical Service (EMS) and pre-war healthcare inequality</strong>. Prior to 1948, working-class wives and children were excluded from national insurance. During the Blitz, the government EMS treated air-raid casualties, proving centralised medical coordination was remarkably effective. Therefore, this forced the establishment of the NHS because wartime state coordination proved a national health system was viable and destroyed public tolerance for unequal pre-war healthcare.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_4_4": [
@@ -3077,9 +3982,33 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
           "The 2007 public smoking ban"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason prevention methods changed was the <strong>accumulation of incontrovertible epidemiological evidence proving the deadly link between smoking and cancer</strong>. In the early twentieth century, smoking was viewed as glamorous and harmless; during the Second World War, cigarettes were distributed free to soldiers. However, in 1950, British medical researchers <strong>Richard Doll and Austin Bradford Hill</strong> published a landmark epidemiological study of 709 lung cancer patients, proving that tobacco smoke contained potent chemical carcinogens that destroyed lung tissue. When their subsequent British Doctors Study (1954) proved that heavy smokers were twenty times more likely to die of lung cancer, the British government was stripped of plausible deniability. As scientific research in the 1980s further proved the lethal dangers of passive 'secondhand' smoking to children and non-smokers, the government was forced to transition from passive advice to direct preventative intervention.<br><br>Furthermore, prevention changed through the <strong>abandonment of voluntary advertising codes in favor of coercive statutory bans</strong>. Throughout the 1960s and 1970s, the government relied on weak, voluntary agreements with powerful tobacco corporations, banning cigarette adverts on television in 1965 and placing modest printed warnings on packets. However, smoking rates remained high, and lung cancer claimed 40,000 British lives annually, costing the National Health Service hundreds of millions of pounds in chemotherapy, radiotherapy, and palliative care. Recognizing that voluntary agreements had failed, Parliament passed aggressive legislation: the Tobacco Advertising and Promotion Act (2002) banned all sports sponsorship (such as Formula 1) and billboard advertising. This culminated in the <strong>Health Act of 2007</strong>, which made it a criminal offense to smoke in all enclosed public places, pubs, and workplaces, de-normalizing tobacco consumption across society.<br><br>In addition, prevention evolved through <strong>punitive fiscal taxation, plain packaging, and mass-market public education</strong>. To deter young people from initiating smoking, successive British chancellors deliberately imposed massive excise duties on cigarettes, increasing prices until taxes constituted over 80% of packet costs. In 2007, the legal age for purchasing tobacco was raised from 16 to 18, and in 2015 smoking in cars carrying children was banned. In 2016, Britain enforced compulsory standardized plain packaging: all brand logos and distinctive colors were outlawed in favor of a drab olive-brown box covered with 65% graphic photographic warnings of diseased lungs and mouth tumours. Combined with NHS-funded nationwide mass campaigns like 'Stoptober', free nicotine replacement therapies, and electronic vapor alternatives, the government successfully pushed adult smoking rates from 45% in 1974 to under 13% today.",
+        "modelAnswer": "One major factor transforming prevention was <strong>conclusive epidemiological evidence provided by Richard Doll and Austin Bradford Hill</strong>. In 1950, Doll and Hill surveyed 709 patients, establishing a definitive statistical link between tobacco smoke and lung cancer, followed by their 1954 study showing heavy smokers were twenty times more likely to die from the disease. Therefore, this caused government prevention to change because conclusive statistical proof destroyed tobacco company denial and forced ministers to treat smoking as a lethal public health crisis.<br><br>Furthermore, prevention methods changed through <strong>compulsory statutory bans, culminating in the 2007 Health Act</strong>. Abandoning voluntary agreements that failed to curb consumption, Parliament banned television cigarette adverts in 1965 and sports sponsorship in 2002. In 2007, legislation made smoking in all enclosed workplaces and restaurants a criminal offence to eliminate second-hand smoke. Therefore, this led to a radical transformation in prevention because the state used statutory legislation to protect non-smokers and de-normalise smoking in British public life.<br><br>In addition, the government shifted towards <strong>punitive fiscal taxation, mass education, and standardized plain packaging</strong>. Successive chancellors raised tobacco excise duties until taxes exceeded 80% of retail packet costs, pricing young people out of smoking. In 2016, legislation mandated olive-green plain packaging displaying graphic photographic warnings of diseased lungs. Therefore, this forced smoking rates to fall sharply because aggressive fiscal disincentives and the removal of glamorous branding made cigarettes unaffordable and unappealing to young people.",
         "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Government methods to prevent lung cancer changed because doctors discovered smoking caused cancer. Richard Doll proved that smoking cigarettes gave people tumours in their lungs. Later on, the government banned smoking in pubs and restaurants in 2007 so other people would not breathe in smoke. They also put graphic pictures on cigarette packets and raised taxes. Therefore the government took strong action to stop people smoking.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Doll, the 2007 ban, and packets, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason prevention changed was the <strong>epidemiological studies of Richard Doll</strong>. In 1950, Richard Doll and Austin Bradford Hill published research showing that heavy smokers were twenty times more likely to get lung cancer. This scientific proof destroyed the belief that smoking was harmless and forced the government to issue health warnings.<br><br>Another reason was the introduction of the <strong>2007 public smoking ban</strong>. The government passed the Health Act 2007, making it illegal to smoke in enclosed workplaces, pubs, and restaurants. This was designed to protect the public from dangerous secondhand smoke and make smoking less socially acceptable.<br><br>In conclusion, Doll's scientific proof and the 2007 smoking ban were key reasons why prevention methods changed.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Doll's research and the 2007 ban). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as punitive taxation, advertising bans, and standardised plain packaging), legally capping it at Level 2 under the Pearson mark scheme."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major factor transforming prevention was <strong>conclusive epidemiological evidence provided by Richard Doll and Austin Bradford Hill</strong>. In 1950, Doll and Hill surveyed 709 patients, establishing a definitive statistical link between tobacco smoke and lung cancer, followed by their 1954 study showing heavy smokers were twenty times more likely to die from the disease. Therefore, this caused government prevention to change because conclusive statistical proof destroyed tobacco company denial and forced ministers to treat smoking as a lethal public health crisis.<br><br>Furthermore, prevention methods changed through <strong>compulsory statutory bans, culminating in the 2007 Health Act</strong>. Abandoning voluntary agreements that failed to curb consumption, Parliament banned television cigarette adverts in 1965 and sports sponsorship in 2002. In 2007, legislation made smoking in all enclosed workplaces and restaurants a criminal offence to eliminate second-hand smoke. Therefore, this led to a radical transformation in prevention because the state used statutory legislation to protect non-smokers and de-normalise smoking in British public life.<br><br>In addition, the government shifted towards <strong>punitive fiscal taxation, mass education, and standardized plain packaging</strong>. Successive chancellors raised tobacco excise duties until taxes exceeded 80% of retail packet costs, pricing young people out of smoking. In 2016, legislation mandated olive-green plain packaging displaying graphic photographic warnings of diseased lungs. Therefore, this forced smoking rates to fall sharply because aggressive fiscal disincentives and the removal of glamorous branding made cigarettes unaffordable and unappealing to young people.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (220 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+          }
+        }
       }
     ],
     "lesson_5_1": [
@@ -3386,27 +4315,6 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
 };
 
 export function getLessonMockQuestions(unitId, lessonId) {
-  if (!unitId || !lessonId) return [];
-  const unitMap = UNIT_LESSON_MOCK_QUESTIONS[unitId];
-  if (!unitMap) return [];
-  if (unitMap[lessonId]) return unitMap[lessonId];
-  if (unitId === 'cme_new') {
-    const cmeLegacyMap = {
-      lesson_2: 'lesson_1',
-      lesson_3: 'lesson_2',
-      lesson_4: 'lesson_3',
-      lesson_6: 'lesson_4',
-      lesson_7: 'lesson_5',
-      lesson_8: 'lesson_6',
-      lesson_9: 'lesson_7',
-      lesson_10: 'lesson_8',
-      lesson_11: 'lesson_9',
-      lesson_12: 'lesson_10',
-      lesson_13: 'lesson_11',
-    };
-    if (cmeLegacyMap[lessonId] && unitMap[cmeLegacyMap[lessonId]]) {
-      return unitMap[cmeLegacyMap[lessonId]];
-    }
-  }
-  return [];
+  if (!UNIT_LESSON_MOCK_QUESTIONS[unitId]) return [];
+  return UNIT_LESSON_MOCK_QUESTIONS[unitId][lessonId] || [];
 }
