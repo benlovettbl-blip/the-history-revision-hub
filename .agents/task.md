@@ -15,10 +15,10 @@
 - **GCSE Edexcel Medicine:** 100% Complete & Calibrated (25 lessons, 125 stages).
 - **GCSE Weimar & Nazi Germany:** 100% Complete & Calibrated (16 lessons, 80 stages, 64 Guided Reading Qs).
 - **GCSE The USA 1954–75:** 100% Complete & Calibrated (16 lessons, 80 stages, 64 Guided Reading Qs).
-- **GCSE Early Elizabethan England (12 lessons):** Gold standard length (111w avg), Guided Reading pending.
-- **GCSE / Paper 2 Cold War (7 lessons):** Prose intact (160w avg), Guided Reading pending.
+- **GCSE Early Elizabethan England:** 100% Complete & Calibrated (12 lessons, 60 stages, 48 Guided Reading Qs).
+- **GCSE Superpower Relations & The Cold War:** 100% Complete & Calibrated (7 lessons, 35 stages, 28 Guided Reading Qs).
 - **KS3 Perfected:** Year 9 Great War Part 2, Year 8 Industrialisation, Year 8 Australia, Year 8 Second British Empire, Year 8 First British Empire, Year 8 Monarchy Religion Power, Year 7 Medieval England.
 
 ## Recommended Next Steps:
-- **Option A:** Populate 4 Guided Reading questions per lesson for *Early Elizabethan England* (12 lessons, 48 Qs).
-- **Option B:** Populate 4 Guided Reading questions per lesson for *Superpower Relations & The Cold War* (7 lessons, 28 Qs).
+- **Option A:** Populate Guided Reading for *Conflict in the Middle East* (`cme_new`, 12 lessons, 48 Qs) to complete all KS4/GCSE units.
+- **Option B:** Run browser QA inspection on the interactive guided reading station in the live app.
