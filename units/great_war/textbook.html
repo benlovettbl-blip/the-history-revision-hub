@@ -159,7 +159,7 @@
 
     .cover-hero-wrap {
       width: 100%;
-      height: 78mm;
+      height: 89mm;
       border: 1.5px solid #0f172a;
       position: relative;
       background: #0f172a;
@@ -269,7 +269,7 @@
     }
 
     .cover-directory-table td {
-      padding: 4.5px 8px;
+      padding: 5.5px 8px;
       vertical-align: middle;
     }
 
@@ -581,23 +581,31 @@
 
     .block-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 9.6pt;
-      line-height: 1.44;
       color: #1e293b;
       margin: 0;
     }
 
-    .block-prose strong {
+    .block-prose .prose-p {
+      font-family: 'Lora', Georgia, serif;
+      color: #1e293b;
+      margin: 0 0 5px 0;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    .block-prose .prose-p:last-child {
+      margin-bottom: 0;
+    }
+
+    .block-prose strong, .block-prose .prose-p strong {
       font-weight: 700;
       color: #0f172a;
     }
 
-    /* Calibrated base styling per enquiry */
-    .page-lesson-1 .block-prose { font-size: 9.5pt; line-height: 1.43; }
-    .page-lesson-2 .block-prose { font-size: 9.6pt; line-height: 1.44; }
-    .page-lesson-3 .block-prose { font-size: 9.55pt; line-height: 1.43; }
-    .page-lesson-4 .block-prose { font-size: 9.7pt; line-height: 1.45; }
-    .page-lesson-5 .block-prose { font-size: 9.35pt; line-height: 1.42; }
+    /* Calibrated typography: dynamically calibrated in Puppeteer */
+    .block-section { margin-bottom: 6px; }
+    .block-prose .prose-p { font-size: 11.2pt; line-height: 1.50; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -972,49 +980,59 @@
     <div class="prose-body">
       <div class="prose-columns">
         
-          <div class="block-section" style="margin-bottom: 4px;">
+          <div class="block-section" style="margin-bottom: 5.3px;">
             <div class="block-header">
               <span class="block-ref">[1.1]</span>
               <span class="block-title">The Fragmented Chessboard, Zollverein &amp; Prussian Power (1862–1866)</span>
             </div>
             <div class="block-workbook-question">What enabled Prussia to overturn the 1815 balance of power?</div>
-            <p class="block-prose" style="font-size: 8.8pt; line-height: 1.35;">Before 1871, Central Europe was deeply divided. In 1815, the Congress of Vienna organized the region into <strong>thirty-nine independent states (39 independent states)</strong>. Two rival powers competed for control. Catholic Austria ruled a vast, multinational empire. In contrast, Protestant <strong>Prussia</strong> was a disciplined military powerhouse, rich in coal, railways, and Krupp steel.<br><br>In 1834, Prussia launched the <strong>Zollverein</strong> (Customs Union). This agreement removed internal taxes between German states while deliberately locking out Austria. German trade boomed on Prussian railways. In 1862, <strong>Otto von Bismarck</strong> became Prussian Minister-President. Bismarck bypassed parliament and declared his ruthless philosophy: <em>"The great questions of the day will not be decided by speeches and majority votes... but by iron and blood."</em> Practicing pure <em>Realpolitik</em>, Bismarck led Prussia to swift military victories over Denmark in 1864 and Austria in 1866. Before 1871, Germany did not exist as a single nation; instead, the German lands were divided into 39 separate German states, which were unified under Prussian leadership backed by deadly Krupp steel guns.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">In the mid-nineteenth century, Central Europe was fragmented into 39 separate German states divided between Austrian and Prussian influence. Determined to unite Germany under the Prussian monarchy, Minister-President Otto von Bismarck delivered his famous Bismarck’s Blood &amp; Iron speech in 1862, arguing that military strength alone determined history.</p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">Bismarck expanded Prussian armed forces through modern railways and lethal, breech-loading deadly Krupp steel guns. Prussian military technology outgunned Austria and Denmark, establishing Prussia as the unchallenged master of Northern Germany.</p><p style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4px;">
+          <div class="block-section" style="margin-bottom: 5.3px;">
             <div class="block-header">
               <span class="block-ref">[1.2]</span>
               <span class="block-title">The Sedan Debacle &amp; Proclamation at Versailles (1870–1871)</span>
             </div>
             <div class="block-workbook-question">How was the German Empire proclaimed at Versailles in 1871?</div>
-            <p class="block-prose" style="font-size: 8.8pt; line-height: 1.35;">To unite the southern German states with Prussia, Bismarck needed a common enemy. In July 1870, he edited the famous <strong>Ems Telegram</strong> to make it look like King Wilhelm I had insulted the French ambassador. Furious, Emperor Napoleon III declared war. France was completely unprepared. Prussian railways and heavy Krupp artillery crushed French defenses. On 1 September 1870, German forces encircled the French army at the <strong>Battle of Sedan</strong>, capturing Napoleon III and 104,000 soldiers.<br><br>The French government refused to surrender, triggering the brutal <strong>Siege of Paris</strong>. Starving citizens survived by eating horses and zoo animals. On <strong>18 January 1871</strong>, Bismarck delivered the ultimate humiliation. Inside the famous <strong>Hall of Mirrors at the Palace of Versailles</strong>, German princes proclaimed King Wilhelm I the first German Emperor (Kaiser). The German Empire was forged through war. At the Battle of Sedan, the French Emperor was captured at Sedan, leading to the new German Empire being crowned at Versailles in the Hall of Mirrors as Prussia dominates Europe.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">In July 1870, Bismarck provoked war with France to rally the independent southern German kingdoms into a national union. At the Battle of Sedan, Prussian encirclement resulted in French Emperor captured at Sedan alongside eighty thousand soldiers, toppling Emperor Napoleon III’s imperial regime.</p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">On 18 January 1871, German princes gathered in the Palace of Versailles where the German Empire crowned at Versailles, appointing Kaiser Wilhelm I. Following victory, Prussia dominates Europe as the continent’s leading industrial and military titan.</p><p style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4px;">
+          <div class="block-section" style="margin-bottom: 5.3px;">
             <div class="block-header">
               <span class="block-ref">[1.3]</span>
               <span class="block-title">The Treaty of Frankfurt &amp; Annexation of Alsace-Lorraine (May 1871)</span>
             </div>
             <div class="block-workbook-question">Why did the annexation of Alsace-Lorraine shatter peace?</div>
-            <p class="block-prose" style="font-size: 8.8pt; line-height: 1.35;">In May 1871, the two nations signed the <strong>Treaty of Frankfurt</strong>. German leaders designed the treaty to crush French military power. France had to pay a massive fine of <strong>five billion gold francs (5 billion gold francs)</strong>. German occupation troops remained on French soil until every centime was paid. Even worse was the territorial loss: Germany seized the border provinces of <strong>Alsace</strong> and <strong>Lorraine</strong>.<br><br>This annexation tore away 1.6 million French citizens and vital iron-ore basins. The ancient fortress city of Metz and the cathedral city of Strasbourg became fortified German strongholds. Overnight, forty-one million people and the Krupp arms foundries merged into a giant military empire. A united Germany now stood at the heart of Europe. Under the 1871 Treaty of Frankfurt, the French were forced to pay 5 billion francs, losing coal and iron land in Alsace-Lorraine, cementing deep hatred between France and Germany.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">The 1871 Treaty of Frankfurt imposed harsh punitive terms on defeated France. Bismarck ordered German occupation troops to remain in French cities until the French forced to pay 5 billion gold francs in war indemnities.</p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">Crucially, France was humiliated by losing coal and iron land through the annexation of the wealthy border provinces of Alsace-Lorraine. This painful territorial seizure created enduring hatred between France and Germany that poisoned European international relations for four decades.</p><p style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4px;">
+          <div class="block-section" style="margin-bottom: 5.3px;">
             <div class="block-header">
               <span class="block-ref">[1.4]</span>
               <span class="block-title">French Revanche &amp; The Cult of the Lost Provinces (1871–1889)</span>
             </div>
             <div class="block-workbook-question">In what ways did French "Revanche" shape patriotic culture?</div>
-            <p class="block-prose" style="font-size: 8.8pt; line-height: 1.35;">Losing Alsace-Lorraine deeply scarred the French nation for over forty years. In Paris, the statue of Strasbourg on the Place de la Concorde was draped in black mourning cloth. French schools taught generations of boys that their greatest duty was <strong>Revanche</strong> (revenge)—the recovery of their lost land.<br><br>In classrooms, wall maps showed Alsace-Lorraine shaded pitch-black as the <em>"tache noire"</em> (black spot). France introduced compulsory military training, and children practiced military marching in school drills. As French statesman Léon Gambetta declared: <em>"Think of it always; speak of it never."</em> No French politician could ever make peace with Berlin while German troops occupied Strasbourg and Metz. In French schools, pupils saw classroom maps veiled in black crepe, dreaming of French revenge (revanche) while the state enforced army conscription for boys.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">Across the French Third Republic, the loss of Alsace-Lorraine inspired <em>revanche</em>—a national desire for vengeance against Germany. In primary schools across the nation, patriotic teachers kept classroom maps veiled in black crepe paper to mourn the lost eastern provinces every morning.</p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">French schoolchildren grew up dreaming of French revenge and the future liberation of their homeland. The French government introduced universal army conscription for boys reaching twenty, training millions of young citizens for an unavoidable continental war.</p><p style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4px;">
+          <div class="block-section" style="margin-bottom: 5.3px;">
             <div class="block-header">
               <span class="block-ref">[1.5]</span>
               <span class="block-title">Bismarckian Isolation, The Reinsurance Treaty &amp; Two-Front Dread (1871–1890)</span>
             </div>
             <div class="block-workbook-question">Evaluate how Bismarck's diplomacy isolated the French Republic.</div>
-            <p class="block-prose" style="font-size: 8.8pt; line-height: 1.35;">British statesman <strong>Benjamin Disraeli</strong> warned Parliament that German unification had destroyed the balance of power. Bismarck knew France would never forgive its defeat. For the next twenty years, Bismarck had one central goal: <strong>keep France diplomatically isolated to protect German peace</strong>.<br><br>Germany dreaded a <strong>war on two fronts (encirclement)</strong>, attacked by France from the west and Russia from the east. To prevent this, Bismarck built a network of defensive alliances. His masterpiece was the secret 1887 <strong>Reinsurance Treaty</strong> with Russia, promising neutrality if either empire faced war. Bismarck's diplomacy kept Europe peaceful. However, in 1888, the impetuous young <strong>Kaiser Wilhelm II</strong> took power. In 1890, Wilhelm fired Bismarck and let the Russian treaty lapse. Germany had stepped onto the path toward dangerous two-front encirclement. Chancellor Otto von Bismarck negotiated a secret deal with Russia to avoid the nightmare fear of war on two fronts, with the overarching aim of keeping France isolated.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">As Imperial Chancellor, Otto von Bismarck devoted his diplomatic career to keeping France isolated from potential European allies. Bismarck was permanently haunted by the existential fear of war on two fronts against France in the west and Tsarist Russia in the east.</p><p class="prose-p" style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;">To safeguard Germany’s eastern frontier, Bismarck negotiated a secret deal with Russia in the 1887 Reinsurance Treaty, promising mutual neutrality. Through cautious diplomacy, Bismarck balanced European alliances and protected the newly created German Reich.</p><p style="font-size: 11.05pt; line-height: 1.46; margin-bottom: 4px;"></p>
+            </div>
           </div>
         
       </div>
@@ -1046,49 +1064,59 @@
     <div class="prose-body">
       <div class="prose-columns">
         
-          <div class="block-section" style="margin-bottom: 4.1px;">
+          <div class="block-section" style="margin-bottom: 5px;">
             <div class="block-header">
               <span class="block-ref">[2.1]</span>
               <span class="block-title">The Scramble for Africa &amp; The Berlin Conference (1884–1885)</span>
             </div>
             <div class="block-workbook-question">Why did European empires carve up Africa in the 1880s Scramble?</div>
-            <p class="block-prose" style="font-size: 8.9pt; line-height: 1.36;">Between 1881 and 1914, European powers raced to conquer Africa in the <strong>Scramble for Africa</strong>. Factories in Europe demanded cheap raw materials—rubber, copper, cotton, and palm oil. Rulers also wanted new trade markets and imperial prestige. In 1870, Europeans controlled under ten percent of Africa; by 1914, they ruled ninety percent.<br><br>To avoid war among European powers, Bismarck organized the <strong>Berlin Conference (1884–1885)</strong>. Fourteen nations met to agree rules for carving up the continent. They agreed the rule of <strong>effective occupation</strong>: countries had to set up physical offices, soldiers, and administration before claiming land. European diplomats drew straight borders across maps, completely ignoring African languages, cultures, and historic tribal kingdoms. European powers carved up the African continent in search of rubber, copper &amp; mineral riches, setting ground rules made at the Berlin meeting of 1884–1885.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">In the late nineteenth century, European empires engaged in carving up African land during the competitive Scramble for Africa. Industrial powers sought overseas colonies to exploit raw materials, including valuable rubber, copper &amp; mineral riches, palm oil, and cotton.</p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">To prevent armed clashes among rival powers, Chancellor Bismarck organized the 1884 Berlin Conference. The rules made at Berlin meeting established that empires had to prove "effective occupation", prompting a rapid rush to conquer the African interior.</p><p style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.1px;">
+          <div class="block-section" style="margin-bottom: 5px;">
             <div class="block-header">
               <span class="block-ref">[2.2]</span>
               <span class="block-title">Kaiser Wilhelm II,"Weltpolitik" &amp; "A Place in the Sun" (1890–1897)</span>
             </div>
             <div class="block-workbook-question">Explain why Wilhelm II launched "Weltpolitik" in the 1890s.</div>
-            <p class="block-prose" style="font-size: 8.9pt; line-height: 1.36;">Bismarck insisted Germany was a satisfied European power with no need for distant colonies. Pointing to a map, he declared: <em>"Here lies Russia, and here lies France, and we are in the middle; that is my map of Africa."</em> But in 1888, the young, ambitious <strong>Kaiser Wilhelm II</strong> took the German throne. Wilhelm wanted personal glory and dismissed Bismarck in 1890, an event dubbed "Dropping the Pilot."<br><br>The Kaiser demanded that Germany become a global superpower. In 1897, Bernhard von Bülow announced that Germany demanded its <strong>"place in the sun" (Platz an der Sonne)</strong>. This aggressive imperial policy was called <strong>Weltpolitik</strong> ("World Policy"). Because Britain and France already owned the richest territories, Wilhelm decided to build a mighty battlefleet, putting Germany on a direct collision course with Britain. In 1890, the impetuous young Kaiser sacks old Bismarck, pursuing Weltpolitik and demanding a place in the sun to match Britain by building a German empire.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">In 1890, twenty-nine-year-old Kaiser Wilhelm II forced the sudden resignation of the veteran Chancellor. Kaiser sacks old Bismarck to abandon cautious European balance-of-power treaties in favour of an aggressive global strategy known as <em>Weltpolitik</em> ("World Policy").</p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">Wilhelm envied the vast overseas territories of Great Britain and France, loudly demanding a place in the sun for the German nation. Building a German empire across Africa, Asia, and the Pacific required colonial acquisitions and a battle fleet to challenge British naval mastery.</p><p style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.1px;">
+          <div class="block-section" style="margin-bottom: 5px;">
             <div class="block-header">
               <span class="block-ref">[2.3]</span>
               <span class="block-title">The First Moroccan Crisis &amp; The Landing at Tangier (March 1905)</span>
             </div>
             <div class="block-workbook-question">What happened when the Kaiser landed at Tangier in 1905?</div>
-            <p class="block-prose" style="font-size: 8.9pt; line-height: 1.36;">In April 1904, alarmed by rising German power, Britain and France signed the <strong>Entente Cordiale</strong> ("Friendly Understanding"). This was a colonial pact rather than a military alliance. France accepted British control of Egypt, while Britain accepted French influence over the Sultanate of <strong>Morocco</strong>. German leaders feared this new friendship would surround them.<br><br>On 31 March 1905, Kaiser Wilhelm II triggered the <strong>First Moroccan Crisis</strong>. Arriving in the Moroccan port of <strong>Tangier</strong> on a white horse, Wilhelm announced his support for the Sultan's independence. He challenged French control and demanded equal German trading rights. The Kaiser gambled that France would back down and that Britain would not support Paris. His gamble failed completely. In 1905, the Kaiser rides a white horse into Tangier, testing Britain and France by promising to protect Morocco as an independent sultanate.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">In March 1905, Kaiser Wilhelm challenged expanding French influence across North Africa by landing unannounced at Tangier. In a theatrical show of imperial defiance, the Kaiser rides white horse through the streets to the German embassy.</p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">Wilhelm was actively testing Britain and France following their 1904 Entente Cordiale agreement, openly promising to protect Morocco as a free, independent sovereign state. Wilhelm intended to humiliate the French Republic and split the fledgling Anglo-French alliance before European eyes.</p><p style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.1px;">
+          <div class="block-section" style="margin-bottom: 5px;">
             <div class="block-header">
               <span class="block-ref">[2.4]</span>
               <span class="block-title">The Algeciras Conference &amp; German Diplomatic Isolation (1906)</span>
             </div>
             <div class="block-workbook-question">To what extent did the 1906 Algeciras Conference isolate Germany?</div>
-            <p class="block-prose" style="font-size: 8.9pt; line-height: 1.36;">To resolve the Moroccan standoff, Germany demanded an international conference, expecting global support. In January 1906, diplomats met at the <strong>Algeciras Conference</strong> in southern Spain. The meeting ended in complete humiliation for Germany.<br><br>Instead of splitting Britain and France, German pressure pushed them closer together. British Foreign Secretary Sir Edward Grey firmly backed France. Russia, Italy, Spain, and the United States all voted to give France control over Moroccan police and banking. Only Austria-Hungary voted alongside Germany. Kaiser Wilhelm II left Algeciras furious. He was now convinced that the Great Powers were conspiring to encircle Germany, a paranoid fear known as <strong>Einkreisung</strong> (encirclement). At the 1906 Algeciras Conference, Germany was defeated in the vote as Britain backs up France, leaving Berlin isolated and fearing being surrounded by rivals.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">The Moroccan dispute was settled at the 1906 Algeciras Conference in Spain. The international summit proved a catastrophic diplomatic setback for Berlin: Germany defeated in vote by twelve nations to two, with only Austria-Hungary supporting the German delegation.</p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">Throughout the crisis, Britain backs up France completely, initiating secret joint military staff conversations in London. Instead of breaking the Entente, German bullying cemented Anglo-French defense ties, leaving German leaders fearing being surrounded by hostile powers on all borders.</p><p style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.1px;">
+          <div class="block-section" style="margin-bottom: 5px;">
             <div class="block-header">
               <span class="block-ref">[2.5]</span>
               <span class="block-title">The Second Moroccan Crisis: The Panther at Agadir &amp; Mansion House (July 1911)</span>
             </div>
             <div class="block-workbook-question">Why did the gunboat Panther at Agadir bring Europe close to war?</div>
-            <p class="block-prose" style="font-size: 8.9pt; line-height: 1.36;">In spring 1911, Moroccan tribes rebelled against the Sultan in Fez. France sent troops to restore order. Accusing France of breaking the Algeciras agreement, Germany used <strong>gunboat diplomacy</strong>. On <strong>1 July 1911</strong>, Germany sent the gunboat <strong>SMS Panther</strong> to the Atlantic port of <strong>Agadir</strong>, trying to force France into handing over the French Congo.<br><br>The gunboat provoked outrage in London because Agadir lay near vital British shipping routes. On 21 July 1911, British Chancellor <strong>David Lloyd George</strong> gave his famous <strong>Mansion House Speech</strong>. He warned that Britain would fight rather than accept peace through national humiliation. Germany backed down and accepted a small piece of the Congo. The crisis backfired on Germany: Britain and France were pushed into secret joint military talks to defend against a German invasion. In the 1911 Agadir Crisis, the German gunboat Panther was sent to bully France; Chancellor David Lloyd George issues a warning in his Mansion House speech, prompting Britain and France to plan for war together.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">In July 1911, imperial tensions erupted again when French forces marched to suppress unrest in Fez. Germany reacted aggressively: the gunboat sent to bully France, SMS Panther, anchored threateningly inside the Moroccan port of Agadir.</p><p class="prose-p" style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;">British leaders feared Germany sought an Atlantic naval base. In his famous Mansion House speech, Chancellor David Lloyd George issues warning that Britain would fight to defend international standing. Humiliated into retreat, Germany watched Britain and France plan for war with coordinated naval deployments.</p><p style="font-size: 10.9pt; line-height: 1.45; margin-bottom: 3.9px;"></p>
+            </div>
           </div>
         
       </div>
@@ -1120,49 +1148,59 @@
     <div class="prose-body">
       <div class="prose-columns">
         
-          <div class="block-section" style="margin-bottom: 4.2px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[3.1]</span>
               <span class="block-title">The Two-Power Standard &amp; British Maritime Survival (1889–1897)</span>
             </div>
             <div class="block-workbook-question">Why was naval supremacy vital for Great Britain's survival?</div>
-            <p class="block-prose" style="font-size: 9pt; line-height: 1.37;">For Great Britain, naval supremacy was essential for national survival. As an island nation, Britain could not feed its people without ocean imports. By 1900, Britain imported four-fifths of its wheat and meat on merchant ships. If enemy battleships cut these supply routes, Britain would starve within six weeks. The Royal Navy also defended a global empire of four hundred million subjects.<br><br>In the <strong>Naval Defence Act of 1889</strong>, Britain established the <strong>Two-Power Standard</strong>. This law required the Royal Navy to be as large as the world's next two biggest navies combined (then France and Russia). British leaders believed that unmatched sea power was the best way to prevent continental wars. As an island nation, Britain was surrounded by sea, with essential food brought by ships from across the globe; to survive, the Two-Power Standard required a fleet twice as big as rivals combined.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">As an island nation, Great Britain relied on unchallenged maritime dominance for national survival. With Britain surrounded by sea and over sixty percent of its essential food brought by ships, an enemy naval blockade meant rapid starvation for British civilians.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">In 1889, Parliament codified the Two-Power Standard into national law. This statutory standard required the Royal Navy to maintain a battleship fleet twice as big as rivals France and Russia combined, guaranteeing imperial ocean security and protecting worldwide merchant shipping lanes.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.2px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[3.2]</span>
               <span class="block-title">Admiral von Tirpitz, German Naval Laws &amp; "Risk Theory" (1898–1900)</span>
             </div>
             <div class="block-workbook-question">How did Tirpitz's "Risk Theory" plan to challenge the Royal Navy?</div>
-            <p class="block-prose" style="font-size: 9pt; line-height: 1.37;">In 1897, Kaiser Wilhelm II appointed <strong>Admiral Alfred von Tirpitz</strong> to run the Imperial Navy. Tirpitz believed Germany could not become a world empire without a powerful battlefleet. In 1898 and 1900, Tirpitz passed the famous <strong>German Naval Laws</strong> through the Reichstag, funding dozens of battleships for the new <strong>High Seas Fleet</strong>.<br><br>Tirpitz justified this cost using his <strong>Risk Theory (Risikotheorie)</strong>. Britain's navy was scattered around the globe protecting colonies. Germany would instead concentrate its fleet across the North Sea in ports like Wilhelmshaven and Kiel. Tirpitz argued that Britain would not risk a battle because heavy losses would ruin its naval supremacy over rivals. Tirpitz expected Britain to give in to German colonial demands. It was a disastrous miscalculation. Under Admiral von Tirpitz, Germany plans the High Seas Fleet, building warships in the North Sea and directly threatening British waters.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">In 1898, German Naval Secretary Admiral Alfred von Tirpitz secured the German Naval Laws through the Reichstag. Tirpitz plans High Seas Fleet expansion directly across the German coastline, formulating his controversial "Risk Theory" to challenge British supremacy.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">By building warships in North Sea bases, Tirpitz calculated that Germany could threaten the Royal Navy into diplomatic neutrality. Threatening British waters convinced the Admiralty that Germany was preparing to challenge British naval command of home waters in a future conflict.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.2px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[3.3]</span>
               <span class="block-title">The Dreadnought Revolution: All-Big-Gun Technology (February 1906)</span>
             </div>
             <div class="block-workbook-question">Why did HMS Dreadnought reset naval supremacy to zero?</div>
-            <p class="block-prose" style="font-size: 9pt; line-height: 1.37;">Britain met the German challenge under First Sea Lord <strong>Admiral Sir John "Jackie" Fisher</strong>. Fisher recognized that older warships with mixed gun sizes were outdated. Building in secret at Portsmouth Dockyard, Fisher launched <strong>HMS Dreadnought</strong> in February 1906.<br><br><em>Dreadnought</em> transformed naval warfare. It was the world's first "all-big-gun" battleship, armed with ten 12-inch heavy guns that fired 850-pound shells over eight miles. Powered by modern steam turbines, it cruised at 21 knots, faster than any battleship afloat. However, <em>Dreadnought</em> created a serious problem for Britain. By making older ships obsolete, it erased Britain's big lead of fifty pre-dreadnoughts to Germany's twenty. The naval race was reset to zero: <strong>Britain 1, Germany 0</strong>. Germany could now build dreadnoughts of its own. In 1906, Britain launched HMS Dreadnought with ten huge 12-inch guns and fast steam turbine engines, rendering all older pre-dreadnought battleships now useless overnight.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">In 1906, Britain’s First Sea Lord Sir John Fisher unveiled HMS Dreadnought, revolutionizing warship design worldwide. The battleship was armed with ten huge 12-inch guns capable of firing broadsides twice as heavy as any vessel afloat.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Powered by fast steam turbine engines, Dreadnought surpassed every rival warship in speed and firepower. However, by rendering all older battleships now useless overnight, Dreadnought wiped out Britain's naval lead, allowing Germany to start building dreadnoughts on equal terms.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.2px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[3.4]</span>
               <span class="block-title">The 1909 Naval Panic: "We Want Eight and We Won't Wait!" (1909)</span>
             </div>
             <div class="block-workbook-question">What triggered the 1909 British naval panic ("We want eight")?</div>
-            <p class="block-prose" style="font-size: 9pt; line-height: 1.37;">Between 1906 and 1908, Germany accelerated naval building, constructing four dreadnoughts each year. In late 1908, British intelligence discovered German shipyards were secretly stockpiling steel to build even faster. In January 1909, public alarm erupted in the <strong>1909 Naval Panic</strong>.<br><br>Prime Minister H.H. Asquith and Chancellor David Lloyd George had hoped to spend money on social reforms like pensions. However, newspapers, the public, and politicians launched a fierce campaign demanding more warships: <em>"We want eight and we won't wait!"</em> The government yielded to public pressure. Parliament voted to build eight super-dreadnoughts in a single year, comfortably out-building Germany but placing massive tax burdens on both countries. Fearing secret German docks and naval expansion, newspaper headlines cause panic, sparking the public cry: 'We want eight and we won't wait!', leading to Britain building eight battleships in 1909.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">By 1909, naval competition reached fever pitch and national hysteria in Great Britain. British naval intelligence reported German shipyards accelerating construction, leading the anxious British public into fearing secret German docks constructing hidden battleships along the Baltic coast.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Sensational newspaper headlines cause panic across the country, while crowds marched chanting: "We want eight and we won't wait!" Under immense political pressure, the government funded building eight battleships in a single year, maintaining British dominance.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.2px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[3.5]</span>
               <span class="block-title">The Haldane Mission Failure &amp; Strategic Redeployment (1912–1914)</span>
             </div>
             <div class="block-workbook-question">Evaluate why the 1912 Haldane Mission failed to stop the arms race.</div>
-            <p class="block-prose" style="font-size: 9pt; line-height: 1.37;">By 1912, the crushing cost of the naval race led Britain to seek a truce. British War Secretary <strong>Lord Haldane</strong> traveled to Berlin to propose a "naval holiday." Haldane offered to slow down dreadnought construction if Germany restricted its fleet. However, the Kaiser insisted that <strong>Britain must pledge strict neutrality in any future European war</strong>.<br><br>Britain refused because this pledge would allow Germany to crush France. The mission collapsed. In response, First Lord of the Admiralty <strong>Winston Churchill</strong> reorganized British naval defense. Britain pulled its main battleships from the Mediterranean Sea and placed sixty percent of the Royal Navy in the North Sea. Under a new agreement, the French navy guarded the Mediterranean, while Britain guarded the French coast. Germany had lost the naval race, but the rivalry permanently wrecked relations between London and Berlin. When diplomatic talks in Berlin fail because Germany refuses to stop building dreadnoughts, Royal Navy ships guard the North Sea from Scapa Flow, ready for battle.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">In 1912, British War Secretary Lord Haldane travelled to Berlin seeking a formal naval truce between empires. Haldane offered territorial concessions in Africa if Germany reduced dreadnought construction, but diplomatic talks in Berlin fail completely due to Kaiser Wilhelm's opposition.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Kaiser Wilhelm and Tirpitz insisted that Germany refuses to stop building without a British neutrality pledge. Britain redeployed its Mediterranean battleships to home ports, ensuring Royal Navy ships guard North Sea waters against German naval strikes and pre-emptive attacks.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
       </div>
@@ -1194,49 +1232,59 @@
     <div class="prose-body">
       <div class="prose-columns">
         
-          <div class="block-section" style="margin-bottom: 4.3px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[4.1]</span>
               <span class="block-title">The Central European Bloc: Dual Alliance &amp; Triple Alliance (1879–1882)</span>
             </div>
             <div class="block-workbook-question">How did Bismarck's Dual Alliance create a Central European bloc?</div>
-            <p class="block-prose" style="font-size: 9.1pt; line-height: 1.38;">In October 1879, Chancellor Otto von Bismarck acted to prevent a hostile coalition between France and Russia. He negotiated the <strong>Dual Alliance</strong> with Austria-Hungary. Both empires promised mutual military support if attacked by Russia, and neutrality if attacked by another power. In 1882, Italy joined after losing Tunisia to France, creating the <strong>Triple Alliance</strong>.<br><br>Bismarck designed the alliance to defend Central Europe and deter foreign attacks. However, it had a dangerous flaw. The treaty tied Germany's military power to the weak, multi-ethnic Austro-Hungarian Empire. Ruled by the aging Emperor Franz Joseph, Austria-Hungary was fracturing under intense nationalist unrest. Under the Dual Alliance of 1879, Germany backs Austria-Hungary, and in 1882 Italy joins the Triple Alliance with a mutual promise of help against Russia.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Between 1879 and 1882, Central Europe unified into a formidable mutual military coalition. Through the defensive Dual Alliance of 1879, Germany backs Austria to protect both central empires against Russian territorial ambitions in Eastern Europe and the volatile Balkans.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">In 1882, Italy joins the Triple Alliance alongside Germany and Austria-Hungary. The mutual defense treaty guaranteed military assistance, securing a vital promise of help against Russia if war erupted, dividing the continent into armed power blocs.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.3px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[4.2]</span>
               <span class="block-title">The Counter-Alliance: Franco-Russian Alliance &amp; Triple Entente (1894–1907)</span>
             </div>
             <div class="block-workbook-question">Explain why the 1894 Franco-Russian Alliance broke isolation.</div>
-            <p class="block-prose" style="font-size: 9.1pt; line-height: 1.38;">In 1890, Kaiser Wilhelm II allowed Germany's secret Reinsurance Treaty with Russia to lapse. Needing money to build the Trans-Siberian Railway, Russia turned to France. In 1894, the two nations signed the <strong>Franco-Russian Military Alliance</strong>, promising mutual defense against Germany. Bismarck's worst fear—a two-front encirclement—had come true.<br><br>Alarmed by German naval expansion, Britain abandoned its traditional "Splendid Isolation." Britain settled colonial disputes with France in the 1904 <strong>Entente Cordiale</strong>, and with Russia in the 1907 <strong>Anglo-Russian Convention</strong>. Together, Britain, France, and Russia formed the <strong>Triple Entente</strong>. Europe was now split into two hostile armed camps. Like a chain of dynamite, a quarrel between any two powers threatened to drag all six into war. To counter Berlin, French money helps Russia build strategic railways, while in 1904 Britain and France shake hands on the Entente Cordiale.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">When Germany allowed its Russian alliance to expire, the French Republic seized the opportunity to break its diplomatic isolation. In 1894, French money helps Russia finance industrialisation and construct strategic military railways toward Germany's frontier, sealing the formal Franco-Russian Military Alliance.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">A decade later, Britain and France shake hands over colonial rivalries in the 1904 Entente Cordiale. By 1907, Britain resolved differences with Russia, completing the Triple Entente formed to counterbalance the Central Powers.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.3px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[4.3]</span>
               <span class="block-title">The "Balkan Powder Keg", Ottoman Decline &amp; Pan-Slavism (1900–1908)</span>
             </div>
             <div class="block-workbook-question">Why was south-eastern Europe known as the "Balkan Powder Keg"?</div>
-            <p class="block-prose" style="font-size: 9.1pt; line-height: 1.38;">For centuries, the <strong>Ottoman Empire</strong> ruled the Balkan peninsula. By 1900, Ottoman power was fading rapidly, earning the nickname the "Sick Man of Europe." As Turkish rule collapsed, new independent nations—Greece, Bulgaria, Romania, and <strong>Serbia</strong>—broke away. This unstable power vacuum became known as the <strong>"Balkan Powder Keg."</strong><br><br>Two rival empires competed for influence in the Balkans. Russia supported fellow Slavs and Orthodox Christians under the banner of <strong>Pan-Slavism</strong>, seeking warm-water sea routes to the Mediterranean. In contrast, Austria-Hungary feared that Slavic nationalism would tear its empire apart. Independent Serbia wanted to unite all South Slavs into a "Greater Serbia," making it Austria's fiercest rival. In south-eastern Europe, the decaying Ottoman Empire was falling apart, while Slavic peoples want freedom, creating a dangerous powder keg where Austria clashes with Russia.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">The mountainous Balkan peninsula became known as the explosive "powder keg of Europe". With the ancient Ottoman Empire falling apart after centuries of dominance, newly emerging Balkan nations fought to liberate territory from collapsing Turkish rule.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Millions of Orthodox Slavic peoples want freedom from foreign imperial domination, looking to independent Serbia and Tsarist Russia for protection. In this volatile region, expansionist Austria clashes with Russia as both rival empires sought hegemony over the crumbling Balkans.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.3px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[4.4]</span>
               <span class="block-title">The 1908 Bosnian Annexation Crisis &amp; Russian Humiliation (October 1908)</span>
             </div>
             <div class="block-workbook-question">What were the consequences of the 1908 Bosnian Annexation Crisis?</div>
-            <p class="block-prose" style="font-size: 9.1pt; line-height: 1.38;">In October 1908, the powder keg nearly exploded. Taking advantage of chaos in the Ottoman Empire, Austria-Hungary <strong>annexed the provinces of Bosnia and Herzegovina</strong>. This annexation outraged Serbia, which considered Bosnia its rightful territory. Serbian crowds protested in Belgrade, demanding war.<br><br>Russia supported Serbia and prepared its army. However, German Chancellor Bernhard von Bülow intervened. In March 1909, Germany delivered an ultimatum: Russia must accept the annexation, or face war with Germany and Austria. Still recovering from its 1905 defeat by Japan, Russia could not fight. Tsar Nicholas II backed down and forced Serbia to accept Austrian rule. The humiliation was painful: Russia began rapid military rearmament and resolved never to surrender in the Balkans again. In the 1908 Bosnian Crisis, Austria grabs Bosnia, causing humiliation in St Petersburg and intense Serbian fury at the land grab.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">In October 1908, crisis erupted across south-eastern Europe when Austria grabs Bosnia and Herzegovina, formally annexing the Slavic territories without international approval. The annexation sparked furious Serbian fury at land grab, as Serbian nationalists dreamed of creating a united South Slavic state.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Tsarist Russia mobilised to support Serbia, but Germany issued a threatening ultimatum demanding Russian compliance. Unprepared for war, Russia forced to back down in humiliation, swearing never to yield to Austro-German intimidation again.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 4.3px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[4.5]</span>
               <span class="block-title">The 1912–1913 Balkan Wars &amp; The Pre-emptive War Urge (1912–1913)</span>
             </div>
             <div class="block-workbook-question">To what extent did the 1912–13 Balkan Wars embolden Serbia?</div>
-            <p class="block-prose" style="font-size: 9.1pt; line-height: 1.38;">In October 1912, the <strong>First Balkan War</strong> broke out. Serbia, Greece, Bulgaria, and Montenegro (the Balkan League) attacked the Ottoman Empire, expelling Turkish forces from Europe within six weeks. In 1913, the allies turned on each other in the <strong>Second Balkan War</strong>, where Serbia defeated Bulgaria.<br><br>These wars transformed Serbia into a formidable regional power. Serbia expanded its territory by eighty percent, and its population jumped from three to 4.5 million. Armed with modern French artillery, Serbian nationalists intensified secret agitation inside Austria-Hungary. In Vienna, Austrian General <strong>Franz Conrad von Hötzendorf</strong> demanded a <strong>pre-emptive war</strong> to crush Serbia before it grew even stronger: Conrad urged war over twenty times in 1913 alone. Europe stood on the edge of catastrophe. During the Balkan Wars of 1912–1913, Serbia wins two wars, emerging with double the land and army, while Austria plans to crush Serbia before it grew even stronger.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">In 1912 and 1913, the Balkan League attacked the Turks in the Balkan Wars, expelling Ottoman authority from Europe. Serbia emerged victorious: Serbia wins two wars in rapid succession, dramatically expanding its regional influence and national prestige.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">The kingdom achieved double the land and army strength, inspiring militant pan-Slav nationalists inside the Austro-Hungarian empire. Terrified of ethnic disintegration, hawkish generals in Vienna concluded that Austria plans to crush Serbia in a pre-emptive strike before Slavic nationalism dismantled their realm.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
       </div>
@@ -1268,49 +1316,59 @@
     <div class="prose-body">
       <div class="prose-columns">
         
-          <div class="block-section" style="margin-bottom: 3.7px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[5.1]</span>
               <span class="block-title">The Assassination of Franz Ferdinand in Sarajevo (28 June 1914)</span>
             </div>
             <div class="block-workbook-question">What motivated the Black Hand to assassinate Franz Ferdinand in Sarajevo?</div>
-            <p class="block-prose" style="font-size: 8.5pt; line-height: 1.32;">On Sunday, 28 June 1914, <strong>Archduke Franz Ferdinand</strong>, heir to the Austro-Hungarian throne, visited <strong>Sarajevo</strong> with his wife Sophie. The date was <em>Vidovdan</em> (St Vitus Day), a sacred Serbian national holiday. Six young assassins from <strong>Young Bosnia</strong> waited along the Appel Quay. They were armed with pistols and bombs supplied by the Serbian secret society, the <strong>Black Hand</strong>, led by Colonel Dragutin Dimitrijević ("Apis").<br><br>The first attack failed when a bomb bounced off the car, injuring bystanders. After a City Hall reception, Franz Ferdinand decided to visit the wounded in hospital. However, his driver took a wrong turn onto Franz Josef Street outside <strong>Schiller's Delicatessen</strong> near the <strong>Latin Bridge</strong>. When ordered to reverse, the car stalled. Standing nearby was nineteen-year-old student <strong>Gavrilo Princip</strong>. Princip stepped forward and fired two shots at close range, killing Sophie and Franz Ferdinand within minutes. On 28 June 1914, Archduke Franz Ferdinand rode in an open-top car in Sarajevo; after a wrong turn at the sandwich shop, assassin Gavrilo Princip fires two shots, killing the Archduke and his wife Sophie.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">On 28 June 1914, Archduke Franz Ferdinand, heir to the Austro-Hungarian throne, toured Sarajevo. Travelling in an open-top car in Sarajevo with his wife Sophie, the royal couple survived an initial grenade attack on the Appel Quay.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Later that morning, the royal chauffeur made a fatal wrong turn at the sandwich shop where Black Hand conspirator Gavrilo Princip stood. Stepping forward, Gavrilo Princip fires two shots at point-blank range, assassinating the Archduke and Sophie and igniting the July Crisis.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 3.7px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[5.2]</span>
               <span class="block-title">The "Blank Cheque" &amp; The Escalation of the Crisis (5 July 1914)</span>
             </div>
             <div class="block-workbook-question">How did Germany's "Blank Cheque" escalate the regional crisis?</div>
-            <p class="block-prose" style="font-size: 8.5pt; line-height: 1.32;">The assassination caused shock and outrage across Europe. Austrian leaders decided to use the murders as an excuse to destroy the Serbian threat forever. However, attacking Serbia risked a war with Russia. On 5 July 1914, Austrian envoy Count Alexander Hoyos traveled to Berlin to secure German support.<br><br>Kaiser Wilhelm II and Chancellor Theobald von Bethmann-Hollweg made a fateful decision. They issued the famous <strong>"Blank Cheque" (Blankovollmacht)</strong>, promising unconditional German military backing to Austria-Hungary. Germany urged Vienna to strike quickly while international sympathy was high. German leaders gambled that Russia was not ready to fight and that Britain would remain neutral. Strengthened by German promises, Austrian leaders prepared for war. In early July, Kaiser Wilhelm II promises total support to Vienna, with a formal 'blank cheque' given to Austria to take action against Serbia.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">The Austro-Hungarian government resolved to use the Sarajevo assassination to crush Serbia militarily once and for all. However, Austrian leaders feared that invading Serbia would trigger Russian military intervention to protect Slavic independence across Eastern Europe.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">On 5 July 1914, the German Kaiser promises total support to Emperor Franz Joseph. This unconditional blank cheque given to Austria guaranteed German military alliance under all circumstances, leaving Austria ready to attack Serbia regardless of European consequences.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 3.7px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[5.3]</span>
               <span class="block-title">The Ten-Point Ultimatum &amp; Declaration of War on Serbia (23–28 July 1914)</span>
             </div>
             <div class="block-workbook-question">Explain why Austria’s Ten-Point Ultimatum made war inevitable.</div>
-            <p class="block-prose" style="font-size: 8.5pt; line-height: 1.32;">On 23 July 1914, Austria-Hungary sent a harsh <strong>Ten-Point Ultimatum</strong> to Serbia, demanding an answer within forty-eight hours. The terms were deliberately designed to be impossible to accept. Austria demanded that Serbia ban anti-Austrian newspapers, dismiss hostile officers, and allow Austro-Hungarian police onto Serbian soil.<br><br>Allowing foreign police on sovereign soil would destroy Serbian independence. However, advised by Russia to show restraint, Serbia accepted eight demands and offered international arbitration for the other two. British Foreign Secretary Sir Edward Grey praised Serbia's peaceful reply. Nevertheless, Austria-Hungary was determined to fight. On <strong>28 July 1914</strong>, Austria declared war on Serbia. That night, Austrian gunboats shelled Belgrade from the Danube River. The July Crisis had turned into war. After Serbia rejected the harsh Austro-Hungarian ultimatum, Austrian gunboats began shelling Serbia from the river Danube into Belgrade on 28 July.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">On 23 July 1914, Austria-Hungary delivered an ultimatum containing harsh ten-point demands designed deliberately to be rejected by Serbian authorities within forty-eight hours. The ultimatum included demanding Austrian police in Belgrade to arrest dissidents and suppress anti-Austrian groups, directly violating Serbian independent national sovereignty.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Although Serbia accepted nine conditions, Austria broke diplomatic ties. On 28 July, Austria declared war, shelling Serbia from the river Danube with gunboats and initiating Europe’s descent into world war.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 3.7px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[5.4]</span>
               <span class="block-title">Railway Mobilisation Schedules &amp; The Domino Effect (29–31 July 1914)</span>
             </div>
             <div class="block-workbook-question">In what ways did rigid railway mobilisation schedules trigger the domino effect?</div>
-            <p class="block-prose" style="font-size: 8.5pt; line-height: 1.32;">The shelling of Belgrade set off the alliance system like dominoes. Russian commanders warned Tsar Nicholas II that if Russia failed to act, Austria would conquer the Balkans. Because Russia was vast with few railways, its army took six weeks to assemble. Delaying mobilization would leave Russia defenseless. On <strong>30 July 1914</strong>, the Tsar ordered <strong>general mobilization</strong>.<br><br>Russian mobilization triggered rigid military plans across Europe, a process historian A.J.P. Taylor called <strong>"War by Timetable."</strong> In 1914, mobilization was treated as an act of war involving millions of troops and inflexible train schedules. German Chief of Staff <strong>Helmuth von Moltke the Younger</strong> warned that war could no longer be stopped. Germany ordered Russia to halt mobilization, and demanded that France promise neutrality. Both refused. On 1 August, Germany declared war on Russia; on 3 August, Germany declared war on France. The crisis escalated as mobilization orders saw thousands of soldiers boarding trains, while the clock ticking for generals forced rigid railroad timetables into motion.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Austrian aggression activated Europe’s rigid military alliances across the continent. Bound by sacred honour to protect Serbia, Tsar Nicholas II ordered general mobilisation: Russian millions call up to war across thousands of miles of the Russian Empire.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Across Europe, millions of soldiers boarding trains headed toward borders according to rigid railway timetables. With the clock ticking for generals terrified of being caught unready, mobilisation plans could not be halted without risking total military defeat.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
-          <div class="block-section" style="margin-bottom: 3.7px;">
+          <div class="block-section" style="margin-bottom: 5.5px;">
             <div class="block-header">
               <span class="block-ref">[5.5]</span>
               <span class="block-title">The Schlieffen Plan, Belgian Neutrality &amp; British Entry (1–4 August 1914)</span>
             </div>
             <div class="block-workbook-question">What forced Great Britain to declare war following the invasion of Belgium?</div>
-            <p class="block-prose" style="font-size: 8.5pt; line-height: 1.32;">Germany's strategy was dictated by the <strong>Schlieffen Plan</strong>, designed by Count Alfred von Schlieffen to prevent a two-front war. The plan assumed Russia would take six weeks to mobilize. During those six weeks, Germany would send ninety percent of its army through neutral <strong>Belgium</strong> to encircle Paris and knock France out in forty-two days, before turning east to fight Russia.<br><br>On 2 August, Germany demanded free passage through Belgium. King Albert refused, declaring: <em>"Belgium is a nation, not a road."</em> On <strong>3 August 1914</strong>, German armies invaded Belgium. This invasion brought Great Britain into the war. Britain had promised to protect Belgian neutrality in the <strong>1839 Treaty of London</strong>, and could not allow a hostile power to control Channel ports. When Germany dismissed the treaty as a <em>"scrap of paper,"</em> Britain declared war at 11:00 PM on <strong>4 August 1914</strong>. Watching London's street lamps, Sir Edward Grey remarked: <em>"The lamps are going out all over Europe; we shall not see them lit again in our lifetime."</em> When German troops march into Belgium, Chancellor Bethmann-Hollweg dismissed the 1839 Treaty of London as a 'scrap of paper' broken by war; as the ultimatum expired, Britain enters the war at midnight on 4 August.</p>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Executing the Schlieffen Plan to knock out France before Russia mobilized, German troops march into Belgium on 4 August 1914. German Chancellor Bethmann-Hollweg dismissed the 1839 Treaty of London guaranteeing Belgian neutrality as a mere scrap of paper treaty broken at will.</p><p class="prose-p" style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;">Great Britain demanded immediate German withdrawal from neutral territory. When Germany refused, Britain enters the war at midnight on 4 August 1914, plunging the British Empire into the catastrophic slaughter of the First World War.</p><p style="font-size: 11.2pt; line-height: 1.46; margin-bottom: 4.1px;"></p>
+            </div>
           </div>
         
       </div>

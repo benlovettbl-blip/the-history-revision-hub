@@ -1769,7 +1769,6 @@ function buildUsaHtml() {
 
     /* 2-COLUMN BALANCED PROSE */
     .prose-columns {
-      flex: 1;
       column-count: 2;
       column-gap: 8mm;
       column-fill: balance;

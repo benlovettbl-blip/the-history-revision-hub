@@ -60,6 +60,17 @@ function getBase64Image(relativePath) {
 }
 
 // Clean in-prose paragraph ref pills and format markdown
+function formatBlockParas(text) {
+  if (!text) return '';
+  const cleaned = cleanProse(text);
+  const paras = cleaned
+    .split(/\n\s*\n|<\/p>\s*<p>/i)
+    .map((p) => p.replace(/<\/?p>/gi, '').trim())
+    .filter(Boolean);
+  if (paras.length === 0) return `<p class="prose-p">${cleaned}</p>`;
+  return paras.map((p) => `<p class="prose-p">${p}</p>`).join('');
+}
+
 function cleanProse(text) {
   if (!text) return '';
   return text
@@ -476,7 +487,7 @@ function buildHtml() {
 
     .cover-hero-wrap {
       width: 100%;
-      height: 96mm;
+      height: 101mm;
       border: 1.5px solid #0f172a;
       border-radius: 2px;
       overflow: hidden;
@@ -857,7 +868,7 @@ function buildHtml() {
       text-align: justify;
       text-justify: inter-word;
       hyphens: auto;
-      flex: 1;
+      
     }
 
     .block-section {
@@ -904,7 +915,7 @@ function buildHtml() {
       margin: 0;
     }
 
-    .block-prose p {
+    .block-prose .prose-p, .block-prose p {
       margin: 0 0 3px 0;
       text-indent: 0;
       break-inside: auto;
@@ -1195,7 +1206,7 @@ function buildHtml() {
                   <span class="block-title">${b.title || ''}</span>
                 </div>
                 ${qText ? `<div class="block-workbook-question">${qText}</div>` : ''}
-                <p class="block-prose">${cleaned}</p>
+                <div class="block-prose">${formatBlockParas(b.text)}</div>
               </div>
             `;
             })
@@ -1303,42 +1314,51 @@ async function run() {
     const lessonPages = document.querySelectorAll('.page-lesson');
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
-      const body = p.querySelector('.prose-body');
-      const cols = p.querySelector('.prose-columns');
-      const proseEls = p.querySelectorAll('.block-prose');
-      const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer || !body || !cols) return;
+      const footerTop = footer ? footer.getBoundingClientRect().top : p.clientHeight - 30;
+      const prose = p.querySelector('.prose-columns');
+      const proseEls = Array.from(p.querySelectorAll('.block-prose .prose-p, .block-prose p, .block-prose'));
+      const sections = Array.from(p.querySelectorAll('.block-section'));
+      if (!prose || !proseEls.length || !footer) return;
 
-      let size = 11.0;
-      let lh = 1.48;
-      let margin = 4.5;
+      let best = null;
+      for (let s = 9.8; s <= 12.6; s += 0.05) {
+        const lh = (1.40 + (s - 9.8) * 0.045).toFixed(2);
+        const mb = (3.5 + (s - 9.8) * 1.4).toFixed(1);
+        const pMb = (3.0 + (s - 9.8) * 0.8).toFixed(1);
 
-      proseEls.forEach((el) => {
-        el.style.fontSize = size.toFixed(2) + 'pt';
-        el.style.lineHeight = lh.toFixed(2);
-      });
-
-      const checkOverflow = () => {
-        const footerTop = footer.getBoundingClientRect().top;
-        const allChildren = Array.from(
-          p.querySelectorAll('p, .block-header, .block-workbook-question'),
-        );
-        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
-        const colOverflow =
-          cols.scrollHeight > body.clientHeight + 2 || cols.scrollWidth > cols.clientWidth + 5;
-        const footerCollision = maxBottom > footerTop - 8;
-        return colOverflow || footerCollision;
-      };
-
-      while (checkOverflow() && size > 6.5) {
-        size -= 0.05;
-        lh -= 0.005;
-        margin = Math.max(2.0, margin - 0.05);
         proseEls.forEach((el) => {
-          el.style.fontSize = size.toFixed(2) + 'pt';
-          el.style.lineHeight = lh.toFixed(2);
+          el.style.fontSize = s.toFixed(2) + 'pt';
+          el.style.lineHeight = lh;
+          if (el.classList.contains('prose-p')) el.style.marginBottom = pMb + 'px';
         });
-        sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
+        sections.forEach((sec) => {
+          sec.style.marginBottom = mb + 'px';
+        });
+
+        const bDiff = p.scrollHeight - p.clientHeight;
+        const colDiff = prose.scrollHeight - prose.clientHeight;
+        const allChildren = Array.from(
+          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question')
+        );
+        const maxChildB = allChildren.length ? Math.max(...allChildren.map((c) => c.getBoundingClientRect().bottom)) : 0;
+        const proseB = prose.getBoundingClientRect().bottom;
+        const maxB = Math.max(maxChildB, proseB);
+        const clearance = Math.round(footerTop - maxB);
+
+        if (bDiff <= 0 && colDiff <= 0 && clearance >= 35) {
+          best = { s, lh, mb, pMb, clearance };
+        }
+      }
+
+      if (best) {
+        proseEls.forEach((el) => {
+          el.style.fontSize = best.s.toFixed(2) + 'pt';
+          el.style.lineHeight = best.lh;
+          if (el.classList.contains('prose-p')) el.style.marginBottom = best.pMb + 'px';
+        });
+        sections.forEach((sec) => {
+          sec.style.marginBottom = best.mb + 'px';
+        });
       }
     });
   });

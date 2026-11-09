@@ -67,6 +67,28 @@ function getBase64Image(relativePath) {
 }
 
 // Clean in-prose paragraph ref pills (e.g. <span class="para-ref">[1.1]</span>)
+function formatBlockParas(htmlText) {
+  if (!htmlText) return '';
+  const matches = htmlText.match(/<p\b[^>]*>([\s\S]*?)<\/p>/gi);
+  if (matches && matches.length > 0) {
+    return matches
+      .map((m) => {
+        let inner = m.replace(/<\/?p\b[^>]*>/gi, '');
+        inner = cleanProse(inner);
+        inner = formatMarkdown(inner);
+        return `<p class="prose-p">${inner}</p>`;
+      })
+      .join('\n');
+  }
+  const cleaned = cleanProse(htmlText);
+  const paras = cleaned
+    .split(/\n\s*\n/)
+    .map((p) => formatMarkdown(p.trim()))
+    .filter(Boolean);
+  if (paras.length === 0) return `<p class="prose-p">${formatMarkdown(cleaned)}</p>`;
+  return paras.map((p) => `<p class="prose-p">${p}</p>`).join('\n');
+}
+
 function cleanProse(text) {
   if (!text) return '';
   return text
@@ -761,7 +783,6 @@ function buildHtml() {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      justify-content: space-between;
     }
 
     .enquiry-banner {
@@ -809,7 +830,6 @@ function buildHtml() {
       column-count: 2;
       column-gap: 6.5mm;
       column-fill: balance;
-      flex-grow: 1;
       text-align: justify;
     }
 
@@ -840,16 +860,6 @@ function buildHtml() {
       color: #1e3a8a;
       break-after: avoid;
       page-break-after: avoid;
-    }
-
-    .block-prose p {
-      margin: 0 0 3px 0;
-      text-indent: 0;
-      break-inside: auto;
-      page-break-inside: auto;
-      orphans: 2;
-      widows: 2;
-    }
       margin-bottom: 2.5px;
       line-height: 1.25;
       padding-left: 5px;
@@ -858,21 +868,31 @@ function buildHtml() {
 
     .block-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 8.0pt;
-      line-height: 1.36;
       color: #1e293b;
       margin: 0;
-      text-indent: 0;
     }
 
-    .block-prose strong {
+    .block-prose .prose-p, .block-prose p {
+      font-family: 'Lora', Georgia, serif;
+      margin: 0 0 3px 0;
+      text-indent: 0;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    .block-prose .prose-p:last-child, .block-prose p:last-child {
+      margin-bottom: 0;
+    }
+
+    .block-prose strong, .block-prose .prose-p strong {
       color: #0f172a;
       font-weight: 700;
     }
-
-    /* Calibrated base styling per enquiry */
-    .page-lesson-5 .block-prose { font-size: 7.4pt; line-height: 1.28; }
-    .page-lesson-5 .block-section { margin-bottom: 3.5px; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1142,7 +1162,7 @@ function buildHtml() {
               <div class="block-section">
                 <div class="block-header">[${idx + 1}.${bIdx + 1}] ${b.period ? b.period + ' ' : ''}${b.title || ''}</div>
                 ${qText ? `<span class="block-workbook-question">${qText}</span>` : ''}
-                <p class="block-prose">${formattedText}</p>
+                <div class="block-prose">${formatBlockParas(b.text)}</div>
               </div>
             `;
             })
@@ -1260,40 +1280,52 @@ async function main() {
     const lessonPages = document.querySelectorAll('.page-lesson');
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
-      const body = p.querySelector('.prose-body');
-      const proseEls = p.querySelectorAll('.block-prose');
-      const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer || !body) return;
+      const pRect = p.getBoundingClientRect();
+      const footerH = footer ? footer.offsetHeight : 25;
+      const trueFooterTop = pRect.bottom - footerH;
+      const prose = p.querySelector('.prose-body');
+      const proseEls = Array.from(p.querySelectorAll('.block-prose .prose-p, .block-prose p'));
+      const sections = Array.from(p.querySelectorAll('.block-section'));
+      if (!prose || !proseEls.length || !footer) return;
 
-      let size = 11.0;
-      let lh = 1.48;
-      let margin = 4.5;
+      let best = null;
+      for (let s = 9.0; s <= 12.6; s += 0.05) {
+        const lh = (1.38 + (s - 9.0) * 0.045).toFixed(2);
+        const mb = (3.0 + (s - 9.0) * 1.2).toFixed(1);
+        const pMb = (2.5 + (s - 9.0) * 0.8).toFixed(1);
 
-      proseEls.forEach((el) => {
-        el.style.fontSize = size.toFixed(2) + 'pt';
-        el.style.lineHeight = lh.toFixed(2);
-      });
-
-      const checkOverflow = () => {
-        const footerTop = footer.getBoundingClientRect().top;
-        const allChildren = Array.from(
-          p.querySelectorAll('p, .block-header, .block-workbook-question'),
-        );
-        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
-        const pageOverflow = p.scrollHeight > p.clientHeight;
-        const footerCollision = maxBottom > footerTop - 8;
-        return pageOverflow || footerCollision;
-      };
-
-      while (checkOverflow() && size > 6.5) {
-        size -= 0.05;
-        lh -= 0.005;
-        margin = Math.max(2.0, margin - 0.05);
         proseEls.forEach((el) => {
-          el.style.fontSize = size.toFixed(2) + 'pt';
-          el.style.lineHeight = lh.toFixed(2);
+          el.style.fontSize = s.toFixed(2) + 'pt';
+          el.style.lineHeight = lh;
+          if (el.classList.contains('prose-p')) el.style.marginBottom = pMb + 'px';
         });
-        sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
+        sections.forEach((sec) => {
+          sec.style.marginBottom = mb + 'px';
+        });
+
+        const colDiff = prose.scrollHeight - prose.clientHeight;
+        const allChildren = Array.from(
+          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question')
+        );
+        const maxChildB = allChildren.length ? Math.max(...allChildren.map((c) => c.getBoundingClientRect().bottom)) : 0;
+        const proseB = prose.getBoundingClientRect().bottom;
+        const maxB = Math.max(maxChildB, proseB);
+        const clearance = Math.round(trueFooterTop - maxB);
+
+        if (colDiff <= 0 && clearance >= 48) {
+          best = { s: s.toFixed(2), lh, mb, pMb, clearance };
+        }
+      }
+
+      if (best) {
+        proseEls.forEach((el) => {
+          el.style.fontSize = best.s + 'pt';
+          el.style.lineHeight = best.lh;
+          if (el.classList.contains('prose-p')) el.style.marginBottom = best.pMb + 'px';
+        });
+        sections.forEach((sec) => {
+          sec.style.marginBottom = best.mb + 'px';
+        });
       }
     });
   });
