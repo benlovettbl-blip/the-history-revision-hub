@@ -264,7 +264,7 @@ export function renderLessonExamPracticeHTML(unitId, lesson) {
                               ? `
                             <div style="background: ${verdictBg}; border-left: 3.5px solid ${verdictBorder}; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: 0.86rem; line-height: 1.5; color: ${verdictColor};">
                               <strong style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.4px;">
-                                <i class="fa-solid fa-clipboard-check"></i> 2026 Pearson Examiner Verdict:
+                                <i class="fa-solid fa-clipboard-check"></i> Official Examiner Assessment Verdict:
                               </strong>
                               <div>${t.verdict}</div>
                             </div>
