@@ -1,4 +1,4 @@
-export default {
+window.unitData = {
   "synopsis": "A vast maritime empire painted red across world maps, propelled by ironclad warships, industrial machinery, and the relentless extraction of colonial wealth. From the bustling slipways of Portsmouth Royal Dockyard to the brutal suppression of the 1857 Indian Rebellion, Britain governed a fifth of humanity under the banner of imperial civilising mission. Confront the stark realities of conquest and displacement: the expansion of penal colonies into Indigenous Australia, the violent partition of the African continent during the Scramble for Africa, and the pioneering economic critique of Dadabhai Naoroji exposing how Britain drained trillions from the Indian subcontinent.",
   "synopsis_tags": [
     "Portsmouth Royal Dockyard & Naval Supremacy",
@@ -1900,7 +1900,7 @@ export default {
               "clue": "Yielding to political pressure, Parliament passed the protectionist Calico Acts of 1700 and 1721, banning printed cotton cloth from being imported, worn, or used in Britain, deliberately protecting home wool sales and traditional silk industries from Asian competition."
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>protesting English Weavers</strong> and <strong>banning Printed Cotton Cloth</strong>, established authority maintained doctrinal control by <strong>protecting Home Wool Sales</strong>.",
+          "model_sentence": "In response to violent demonstrations by <strong>protesting English Weavers</strong>, Parliament passed legislation <strong>banning Printed Cotton Cloth</strong> in order to succeed in <strong>protecting Home Wool Sales</strong>.",
           "title": "Why did the British Parliament pass the protectionist Calico Acts?",
           "dates": "1721"
         },
@@ -1929,7 +1929,7 @@ export default {
               "clue": "Instead of shipping bullion from Britain, the Company began buying silk with local taxes, using Bengal’s own tax revenue to purchase goods for European export, effectively halting silver shipments from Britain altogether."
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>collecting Peasant Crop Taxes</strong> and <strong>buying Silk with Local Taxes</strong>, established authority maintained doctrinal control by <strong>halting Silver Shipments</strong>.",
+          "model_sentence": "Under the Diwani treaty, the East India Company began <strong>collecting Peasant Crop Taxes</strong> across Bengal, using this revenue for <strong>buying Silk with Local Taxes</strong> and decisively <strong>halting Silver Shipments</strong> from London.",
           "title": "How did the Diwani of Bengal invert the financial flow between Britain and India?",
           "dates": "1765"
         },
@@ -3751,7 +3751,7 @@ export default {
               "clue": "To claim legal ownership over an African territory, European powers could not merely claim it on paper."
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>building Coastal Forts</strong> and <strong>marching Troops into Interior</strong>, established authority maintained doctrinal control by <strong>planting National Flags</strong>.",
+          "model_sentence": "European imperial powers moved beyond simply <strong>building Coastal Forts</strong> by aggressively <strong>marching Troops into Interior</strong> territories and <strong>planting National Flags</strong> to claim exclusive colonial sovereignty.",
           "title": "How did the principle of Effective Occupation accelerate military conquest?",
           "dates": "1884"
         },

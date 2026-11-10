@@ -114,7 +114,7 @@ function buildAuthenticModelSentence(words, narrative, stageTitle, lessonTitle, 
     const g2 = w2.charAt(0).toLowerCase() + w2.slice(1);
 
     if (isGerund(w1) && isGerund(w2)) {
-      return `By strictly enforcing <strong>${g0}</strong> and <strong>${g1}</strong>, established authority maintained doctrinal control by <strong>${g2}</strong>.`;
+      return `By actively <strong>${g0}</strong> alongside <strong>${g1}</strong>, decisive historical momentum developed, ultimately leading to <strong>${g2}</strong>.`;
     } else {
       return `Through <strong>${g0}</strong> and the implementation of <strong>${w1}</strong>, structural pressure mounted, directly precipitating <strong>${w2}</strong>.`;
     }
