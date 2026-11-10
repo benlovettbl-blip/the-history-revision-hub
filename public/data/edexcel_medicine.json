@@ -17455,7 +17455,53 @@
           "theme": "Mendel, Heredity & The Chromosomal Mystery (c1900–1940s)",
           "image": "/images/gregor_mendel_pea_experiments.jpg",
           "image_alt": "Archival photographic portrait of Gregor Mendel in Augustinian habit alongside botanical diagram of pea and bean plant characteristics showing green pods and wrinkled seeds",
-          "caption": "Gregor Mendel (1822–1884) & The Laws of Inheritance (1866): Working in the monastery garden at St Thomas's Abbey in Brno, Augustinian friar Gregor Mendel cross-bred thousands of garden pea and bean plants, proving that traits such as green pods and wrinkled seeds were passed down in predictable mathematical patterns."
+          "caption": "Gregor Mendel (1822–1884) & The Laws of Inheritance (1866): Working in the monastery garden at St Thomas's Abbey in Brno, Augustinian friar Gregor Mendel cross-bred thousands of garden pea and bean plants, proving that traits such as green pods and wrinkled seeds were passed down in predictable mathematical patterns.",
+          "sources": [
+            {
+              "id": "source_a_mendel_hybridisation_1866",
+              "letter": "A",
+              "type": "written",
+              "title": "Source A: Gregor Mendel, 'Experiments in Plant Hybridisation' (1866 / translated 1901)",
+              "text": "The object of the experiment was to observe the changes in each pair of differentiating characters and to deduce the law according to which they appear in successive generations... If two plants which differ constantly in one or several characters are crossed, the traits are not blended. One trait appears dominant, while the other remains recessive... When these hybrids were allowed to fertilise themselves, the recessive character reappeared in exactly one-fourth of the offspring, demonstrating a fixed mathematical ratio of 3 to 1.",
+              "content": "The object of the experiment was to observe the changes in each pair of differentiating characters and to deduce the law according to which they appear in successive generations... If two plants which differ constantly in one or several characters are crossed, the traits are not blended. One trait appears dominant, while the other remains recessive... When these hybrids were allowed to fertilise themselves, the recessive character reappeared in exactly one-fourth of the offspring, demonstrating a fixed mathematical ratio of 3 to 1.",
+              "caption": "Extract from Gregor Mendel's groundbreaking 1866 research paper documenting his eight years of pea plant cross-breeding experiments at the monastery in Brno.",
+              "desc": "Scientific paper by Gregor Mendel demonstrating the fundamental laws of inheritance through statistical tracking of pea plant traits.",
+              "citation": "Gregor Mendel, 'Experiments in Plant Hybridisation', Journal of the Royal Horticultural Society, vol. 26, 1901 (translated from Versuche über Pflanzen-Hybriden, 1866).",
+              "provenance": "Gregor Mendel, Augustinian monk, research paper presented to the Natural History Society of Brno, 1866.",
+              "question_badge": "HEREDITARY UNITS & MATHEMATICAL RATIOS",
+              "question_type": "Source Inference",
+              "question": "Explain what Source A shows about Gregor Mendel's discoveries regarding how traits are passed from parents to offspring.",
+              "enquiry_question": "Explain what Source A shows about Gregor Mendel's discoveries regarding how traits are passed from parents to offspring.",
+              "model_answer": "Source A shows that Gregor Mendel discovered that hereditary characteristics are not blended together, but are transmitted as distinct, unchanging individual units (later called genes). By tracking thousands of hybrid pea plants, he proved that traits follow predictable mathematical ratios (such as 3 to 1 for dominant and recessive traits) rather than random blending.",
+              "hinge_question": "Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?",
+              "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900. **Hinge Question:** Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?",
+              "teacher_notes": {
+                "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900. **Hinge Question:** Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?"
+              }
+            }
+          ],
+          "source": {
+            "id": "source_a_mendel_hybridisation_1866",
+            "letter": "A",
+            "type": "written",
+            "title": "Source A: Gregor Mendel, 'Experiments in Plant Hybridisation' (1866 / translated 1901)",
+            "text": "The object of the experiment was to observe the changes in each pair of differentiating characters and to deduce the law according to which they appear in successive generations... If two plants which differ constantly in one or several characters are crossed, the traits are not blended. One trait appears dominant, while the other remains recessive... When these hybrids were allowed to fertilise themselves, the recessive character reappeared in exactly one-fourth of the offspring, demonstrating a fixed mathematical ratio of 3 to 1.",
+            "content": "The object of the experiment was to observe the changes in each pair of differentiating characters and to deduce the law according to which they appear in successive generations... If two plants which differ constantly in one or several characters are crossed, the traits are not blended. One trait appears dominant, while the other remains recessive... When these hybrids were allowed to fertilise themselves, the recessive character reappeared in exactly one-fourth of the offspring, demonstrating a fixed mathematical ratio of 3 to 1.",
+            "caption": "Extract from Gregor Mendel's groundbreaking 1866 research paper documenting his eight years of pea plant cross-breeding experiments at the monastery in Brno.",
+            "desc": "Scientific paper by Gregor Mendel demonstrating the fundamental laws of inheritance through statistical tracking of pea plant traits.",
+            "citation": "Gregor Mendel, 'Experiments in Plant Hybridisation', Journal of the Royal Horticultural Society, vol. 26, 1901 (translated from Versuche über Pflanzen-Hybriden, 1866).",
+            "provenance": "Gregor Mendel, Augustinian monk, research paper presented to the Natural History Society of Brno, 1866.",
+            "question_badge": "HEREDITARY UNITS & MATHEMATICAL RATIOS",
+            "question_type": "Source Inference",
+            "question": "Explain what Source A shows about Gregor Mendel's discoveries regarding how traits are passed from parents to offspring.",
+            "enquiry_question": "Explain what Source A shows about Gregor Mendel's discoveries regarding how traits are passed from parents to offspring.",
+            "model_answer": "Source A shows that Gregor Mendel discovered that hereditary characteristics are not blended together, but are transmitted as distinct, unchanging individual units (later called genes). By tracking thousands of hybrid pea plants, he proved that traits follow predictable mathematical ratios (such as 3 to 1 for dominant and recessive traits) rather than random blending.",
+            "hinge_question": "Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?",
+            "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900. **Hinge Question:** Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?",
+            "teacher_notes": {
+              "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900. **Hinge Question:** Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?"
+            }
+          }
         },
         {
           "act": 2,
@@ -17468,27 +17514,52 @@
           "isReversed": false,
           "sources": [
             {
-              "id": "source_c_rosalind_franklin_portrait",
-              "letter": "C",
-              "type": "visual",
-              "title": "Source C: Dr Rosalind Franklin at King's College London (c.1952)",
-              "image": "/images/rosalind_franklin_portrait.jpg",
-              "image_url": "/images/rosalind_franklin_portrait.jpg",
-              "caption": "Photographic portrait of Dr Rosalind Franklin, pioneering physical chemist and X-ray crystallographer whose meticulous laboratory work at King's College London produced Photograph 51.",
-              "citation": "National Portrait Gallery, London / King's College London Archives (Public Domain).",
-              "question_badge": "SCIENTIFIC RIGOUR & EXPERIMENTAL DISCOVERY",
-              "question": "Explain the historical significance of Rosalind Franklin's contribution to the discovery of DNA shown in Source C.",
-              "model_answer": "Source C commemorates Dr Rosalind Franklin, whose rigorous X-ray crystallography produced the crucial experimental data—most notably Photograph 51—that proved DNA had a helical structure with water-attracting phosphate backbones on the outside. Her uncredited data enabled Watson and Crick to construct their correct double helix model.",
+              "id": "source_b_franklin_report_1952",
+              "letter": "B",
+              "type": "written",
+              "title": "Source B: Dr Rosalind Franklin, MRC Laboratory Research Report, King's College London (1952)",
+              "text": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
+              "content": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
+              "caption": "Extract from Dr Rosalind Franklin and Raymond Gosling's confidential research report for the Medical Research Council Biophysics Committee, December 1952.",
+              "desc": "Confidential laboratory research report detailing the crystallographic measurements and helical symmetry of DNA.",
+              "citation": "Dr Rosalind Franklin and Raymond Gosling, Medical Research Council Biophysics Committee Report, King's College London, December 1952.",
+              "provenance": "Confidential laboratory report submitted by Dr Rosalind Franklin to the Medical Research Council, December 1952.",
+              "question_badge": "X-RAY CRYSTALLOGRAPHY & MOLECULAR GEOMETRY",
+              "question_type": "Source Inference",
+              "question": "Explain how Dr Franklin's measurements in Source B contributed to solving the structure of DNA.",
+              "enquiry_question": "Explain how Dr Franklin's measurements in Source B contributed to solving the structure of DNA.",
+              "model_answer": "Source B shows Franklin's precise crystallographic deduction that DNA's phosphate backbones must lie on the outside with bases facing inward, and that the structure possesses double helical symmetry repeating at 34 Ångströms. This specific mathematical measurement provided the essential blueprint that enabled Watson and Crick to assemble their model.",
+              "hinge_question": "Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?",
+              "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?",
               "teacher_notes": {
-                "source_context": "Franklin died of ovarian cancer in 1958 at the age of thirty-seven, four years before Watson, Crick, and Maurice Wilkins received the 1962 Nobel Prize (which is never awarded posthumously). **Hinge Question:** How does the history of Franklin's unacknowledged contribution reflect broader historical barriers faced by women in twentieth-century medical science?"
-              },
-              "enquiry_question": "Explain the historical significance of Rosalind Franklin's contribution to the discovery of DNA shown in Source C.",
-              "hinge_question": "How does the history of Franklin's unacknowledged contribution reflect broader historical barriers faced by women in twentieth-century medical science?",
-              "source_context": "Franklin died of ovarian cancer in 1958 at the age of thirty-seven, four years before Watson, Crick, and Maurice Wilkins received the 1962 Nobel Prize (which is never awarded posthumously). **Hinge Question:** How does the history of Franklin's unacknowledged contribution reflect broader historical barriers faced by women in twentieth-century medical science?"
+                "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?"
+              }
             }
           ],
           "content": "<span class=\"para-ref\">[2.1]</span> In January 1951, physical chemist Rosalind Franklin joined King’s College London as an expert in X-ray crystallography—a demanding technique using high-powered X-rays to take shadow diffraction photographs of microscopic molecules. Working alongside PhD student Raymond Gosling in a basement laboratory, Franklin perfected a camera setup, exposing delicate DNA fibres to 62 continuous hours of X-ray beams. In May 1952, she captured \"Photograph 51\" (<span class=\"archival-meta-tag\">Source A</span>), a razor-sharp image showing a dark X-shaped pattern that proved DNA formed a double-stranded helical spiral.<br><br><span class=\"para-ref\">[2.2]</span> Severe personal and professional tension divided the King’s biophysics unit. Maurice Wilkins, a senior physicist who mistakenly regarded Franklin as his assistant rather than an independent researcher, clashed with her rigorous standards. In January 1953, without Franklin’s knowledge or permission, Wilkins showed Photograph 51 to James Watson, an ambitious 24-year-old American biologist visiting from Cambridge. Watson later recalled that his mouth fell open and his pulse raced: the distinct 'X' pattern gave Watson and Francis Crick immediate proof that DNA was a double helix, providing the vital breakthrough they needed to build their model.",
-          "theme": "Rosalind Franklin & Photograph 51 (1951–1952)"
+          "theme": "Rosalind Franklin & Photograph 51 (1951–1952)",
+          "source": {
+            "id": "source_b_franklin_report_1952",
+            "letter": "B",
+            "type": "written",
+            "title": "Source B: Dr Rosalind Franklin, MRC Laboratory Research Report, King's College London (1952)",
+            "text": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
+            "content": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
+            "caption": "Extract from Dr Rosalind Franklin and Raymond Gosling's confidential research report for the Medical Research Council Biophysics Committee, December 1952.",
+            "desc": "Confidential laboratory research report detailing the crystallographic measurements and helical symmetry of DNA.",
+            "citation": "Dr Rosalind Franklin and Raymond Gosling, Medical Research Council Biophysics Committee Report, King's College London, December 1952.",
+            "provenance": "Confidential laboratory report submitted by Dr Rosalind Franklin to the Medical Research Council, December 1952.",
+            "question_badge": "X-RAY CRYSTALLOGRAPHY & MOLECULAR GEOMETRY",
+            "question_type": "Source Inference",
+            "question": "Explain how Dr Franklin's measurements in Source B contributed to solving the structure of DNA.",
+            "enquiry_question": "Explain how Dr Franklin's measurements in Source B contributed to solving the structure of DNA.",
+            "model_answer": "Source B shows Franklin's precise crystallographic deduction that DNA's phosphate backbones must lie on the outside with bases facing inward, and that the structure possesses double helical symmetry repeating at 34 Ångströms. This specific mathematical measurement provided the essential blueprint that enabled Watson and Crick to assemble their model.",
+            "hinge_question": "Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?",
+            "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?",
+            "teacher_notes": {
+              "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?"
+            }
+          }
         },
         {
           "act": 3,
@@ -17497,28 +17568,55 @@
           "text": "<span class=\"para-ref\">[3.1]</span> Armed with Franklin’s experimental measurements, James Watson and Francis Crick worked frantically at the Cavendish Laboratory in Cambridge. Instead of running wet chemical experiments, they used physical modeling, assembling sheet-metal cutouts and brass wire rods on an upright stand (<span class=\"archival-meta-tag\">Source B</span>). In March 1953, they completed their model, proving that DNA was a \"double helix\"—a twisting ladder with two chemical backbones linked by pairs of four chemical bases: Adenine (A) bonded strictly with Thymine (T), and Cytosine (C) bonded strictly with Guanine (G).<br><br><span class=\"para-ref\">[3.2]</span> This base-pairing discovery was revolutionary because it explained how genetic replication works. During cell division, the two strands unzip down the middle, and each strand acts as a template to build an identical copy. Watson and Crick famously announced in The Eagle pub that they had discovered \"the secret of life.\" In April 1953, they published their breakthrough paper in <em>Nature</em>, proving for the first time how hereditary information is stored and passed from parent to child.",
           "sources": [
             {
-              "id": "source_a_watson_crick_model",
-              "letter": "A",
-              "type": "artefact",
-              "format": "artefact",
-              "title": "Source A: Watson and Crick's 1953 Demonstration Model of the DNA Double Helix",
-              "image": "/images/dna_structure.jpg",
-              "image_url": "/images/dna_structure.jpg",
-              "caption": "Watson and Crick's original wire-and-sheet-metal demonstration model of the DNA double helix (1953), constructed at the Cavendish Laboratory, Cambridge, and preserved at the Science Museum, London.",
-              "citation": "Science Museum, London (Object 1977-310 / Wikimedia Commons Public Domain).",
-              "question_badge": "MOLECULAR REVOLUTION & STRUCTURAL MODELLING",
-              "question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
-              "model_answer": "Source A shows that Watson and Crick investigated DNA by constructing a physical, three-dimensional wire-and-sheet-metal scale model. Rather than relying solely on chemical experiments, they used physical modeling to puzzle out how complementary base pairs (adenine-thymine and cytosine-guanine) fit together along an antiparallel double helical spiral.",
+              "id": "source_c_watson_crick_nature_1953",
+              "letter": "C",
+              "type": "written",
+              "title": "Source C: James Watson and Francis Crick, 'Molecular Structure of Nucleic Acids', 'Nature' (25 April 1953)",
+              "text": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
+              "content": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
+              "caption": "Extract from Watson and Crick's landmark one-page scientific announcement of the double helix published in Nature in April 1953.",
+              "desc": "Published scientific paper in Nature announcing the antiparallel double helix structure of DNA and its complementary base-pairing mechanism.",
+              "citation": "J. D. Watson and F. H. C. Crick, 'Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid', Nature, vol. 171, 1953, pp. 737–738.",
+              "provenance": "James Watson and Francis Crick, Cavendish Laboratory, Cambridge University, published in Nature, 25 April 1953.",
+              "question_badge": "GENETIC REPLICATION & COMPLEMENTARY PAIRING",
+              "question_type": "Source Inference",
+              "question": "Explain the importance of the discovery described in Source C for medical understanding of heredity.",
+              "enquiry_question": "Explain the importance of the discovery described in Source C for medical understanding of heredity.",
+              "model_answer": "Source C provided the exact chemical explanation for genetic inheritance. By establishing that adenine always pairs with thymine and guanine with cytosine, Watson and Crick revealed that each DNA strand serves as a template to duplicate identical genetic code during reproduction, explaining how hereditary traits and genetic defects pass from parents to children.",
+              "hinge_question": "Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
+              "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
               "teacher_notes": {
-                "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
-              },
-              "enquiry_question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
-              "hinge_question": "Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?",
-              "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
+                "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?"
+              }
             }
           ],
           "content": "<span class=\"para-ref\">[3.1]</span> Armed with Franklin’s experimental measurements, James Watson and Francis Crick worked frantically at the Cavendish Laboratory in Cambridge. Instead of running wet chemical experiments, they used physical modeling, assembling sheet-metal cutouts and brass wire rods on an upright stand (<span class=\"archival-meta-tag\">Source B</span>). In March 1953, they completed their model, proving that DNA was a \"double helix\"—a twisting ladder with two chemical backbones linked by pairs of four chemical bases: Adenine (A) bonded strictly with Thymine (T), and Cytosine (C) bonded strictly with Guanine (G).<br><br><span class=\"para-ref\">[3.2]</span> This base-pairing discovery was revolutionary because it explained how genetic replication works. During cell division, the two strands unzip down the middle, and each strand acts as a template to build an identical copy. Watson and Crick famously announced in The Eagle pub that they had discovered \"the secret of life.\" In April 1953, they published their breakthrough paper in <em>Nature</em>, proving for the first time how hereditary information is stored and passed from parent to child.",
-          "theme": "Watson & Crick’s Double Helix Model (1953)"
+          "theme": "Watson & Crick’s Double Helix Model (1953)",
+          "image": "/images/watson_and_crick_1953.jpg",
+          "image_alt": "Historic photograph of James Watson and Francis Crick with their wire-and-sheet-metal DNA double helix model at the Cavendish Laboratory, Cambridge in May 1953",
+          "caption": "James Watson and Francis Crick with the DNA Double Helix Model (1953): Photographed by Antony Barrington Brown at the Cavendish Laboratory, Cambridge University, showing Watson (left) and Crick (right) demonstrating their scale model.",
+          "source": {
+            "id": "source_c_watson_crick_nature_1953",
+            "letter": "C",
+            "type": "written",
+            "title": "Source C: James Watson and Francis Crick, 'Molecular Structure of Nucleic Acids', 'Nature' (25 April 1953)",
+            "text": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
+            "content": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
+            "caption": "Extract from Watson and Crick's landmark one-page scientific announcement of the double helix published in Nature in April 1953.",
+            "desc": "Published scientific paper in Nature announcing the antiparallel double helix structure of DNA and its complementary base-pairing mechanism.",
+            "citation": "J. D. Watson and F. H. C. Crick, 'Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid', Nature, vol. 171, 1953, pp. 737–738.",
+            "provenance": "James Watson and Francis Crick, Cavendish Laboratory, Cambridge University, published in Nature, 25 April 1953.",
+            "question_badge": "GENETIC REPLICATION & COMPLEMENTARY PAIRING",
+            "question_type": "Source Inference",
+            "question": "Explain the importance of the discovery described in Source C for medical understanding of heredity.",
+            "enquiry_question": "Explain the importance of the discovery described in Source C for medical understanding of heredity.",
+            "model_answer": "Source C provided the exact chemical explanation for genetic inheritance. By establishing that adenine always pairs with thymine and guanine with cytosine, Watson and Crick revealed that each DNA strand serves as a template to duplicate identical genetic code during reproduction, explaining how hereditary traits and genetic defects pass from parents to children.",
+            "hinge_question": "Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
+            "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
+            "teacher_notes": {
+              "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?"
+            }
+          }
         },
         {
           "act": 4,
@@ -17531,26 +17629,52 @@
           "isReversed": true,
           "sources": [
             {
-              "id": "source_e_human_genome_announcement_2000",
-              "letter": "E",
+              "id": "source_d_human_genome_announcement_2000",
+              "letter": "D",
               "type": "written",
-              "title": "Source E: President Bill Clinton and Prime Minister Tony Blair, Joint Declaration on the Human Genome Project (26 June 2000)",
-              "citation": "The White House & 10 Downing Street, Joint Press Release on the Completion of the First Survey of the Entire Human Genome, Washington D.C. and London, 26 June 2000.",
+              "title": "Source D: President Bill Clinton and Prime Minister Tony Blair, Joint Declaration on the Human Genome Project (26 June 2000)",
+              "text": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
               "content": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
+              "caption": "Extract from the televised international joint press conference held simultaneously in Washington D.C. and London on 26 June 2000.",
+              "desc": "Joint declaration by President Bill Clinton and Prime Minister Tony Blair celebrating the completion of the first draft sequence of the human genome.",
+              "citation": "The White House & 10 Downing Street, Joint Press Release on the Completion of the First Survey of the Entire Human Genome, Washington D.C. and London, 26 June 2000.",
+              "provenance": "Joint international press statement by US President Bill Clinton and UK Prime Minister Tony Blair, 26 June 2000.",
               "question_badge": "GENOMIC MEDICINE & THE FUTURE OF HEALING",
-              "question": "Explain what Source E suggests about the impact of the Human Genome Project on future healthcare.",
-              "model_answer": "Source E suggests that the Human Genome Project would revolutionize medical treatment by shifting healthcare from reactive disease symptom treatment to personalized genetic medicine. By identifying the exact hereditary mutations that cause illnesses like cancer and diabetes, doctors could predict, prevent, and custom-tailor genetic therapies for individual patients.",
+              "question_type": "Source Inference",
+              "question": "Explain what Source D suggests about the impact of the Human Genome Project on future healthcare.",
+              "enquiry_question": "Explain what Source D suggests about the impact of the Human Genome Project on future healthcare.",
+              "model_answer": "Source D suggests that the Human Genome Project would revolutionize medical treatment by shifting healthcare from reactive disease symptom treatment to personalized genetic medicine. By identifying the exact hereditary mutations that cause illnesses like cancer and diabetes, doctors could predict, prevent, and custom-tailor genetic therapies for individual patients.",
+              "hinge_question": "Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
+              "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
               "teacher_notes": {
                 "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?"
-              },
-              "text": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
-              "enquiry_question": "Explain what Source E suggests about the impact of the Human Genome Project on future healthcare.",
-              "hinge_question": "Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
-              "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?"
+              }
             }
           ],
           "content": "<span class=\"para-ref\">[4.1]</span> Discovering the structure of DNA was the catalyst for the greatest collaborative scientific effort in modern medical history: the Human Genome Project. Launched in 1990, the project was an international public consortium led by scientists in the United States and Britain (funded by the Medical Research Council and the Wellcome Trust charity), alongside researchers in France, Germany, and Japan. Their mission was to decode the complete genetic instruction manual of human life.<br><br><span class=\"para-ref\">[4.2]</span> Completed in April 2003, the project successfully mapped all 3 billion chemical base pairs across humanity’s 20,000–25,000 genes, publishing the data free online for all scientists. Powered by advanced laboratory computers, this landmark achievement allowed researchers to pinpoint the specific faulty genes responsible for over 4,000 inherited disorders, including the BRCA1 and BRCA2 genes that increase the risk of hereditary breast and ovarian cancer.",
-          "theme": "The Human Genome Project (1990–2003)"
+          "theme": "The Human Genome Project (1990–2003)",
+          "source": {
+            "id": "source_d_human_genome_announcement_2000",
+            "letter": "D",
+            "type": "written",
+            "title": "Source D: President Bill Clinton and Prime Minister Tony Blair, Joint Declaration on the Human Genome Project (26 June 2000)",
+            "text": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
+            "content": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
+            "caption": "Extract from the televised international joint press conference held simultaneously in Washington D.C. and London on 26 June 2000.",
+            "desc": "Joint declaration by President Bill Clinton and Prime Minister Tony Blair celebrating the completion of the first draft sequence of the human genome.",
+            "citation": "The White House & 10 Downing Street, Joint Press Release on the Completion of the First Survey of the Entire Human Genome, Washington D.C. and London, 26 June 2000.",
+            "provenance": "Joint international press statement by US President Bill Clinton and UK Prime Minister Tony Blair, 26 June 2000.",
+            "question_badge": "GENOMIC MEDICINE & THE FUTURE OF HEALING",
+            "question_type": "Source Inference",
+            "question": "Explain what Source D suggests about the impact of the Human Genome Project on future healthcare.",
+            "enquiry_question": "Explain what Source D suggests about the impact of the Human Genome Project on future healthcare.",
+            "model_answer": "Source D suggests that the Human Genome Project would revolutionize medical treatment by shifting healthcare from reactive disease symptom treatment to personalized genetic medicine. By identifying the exact hereditary mutations that cause illnesses like cancer and diabetes, doctors could predict, prevent, and custom-tailor genetic therapies for individual patients.",
+            "hinge_question": "Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
+            "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
+            "teacher_notes": {
+              "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?"
+            }
+          }
         },
         {
           "act": 5,
@@ -17558,7 +17682,53 @@
           "theme_heading": "Genetic Screening & The Treatment Gap (2000s–Present)",
           "text": "<span class=\"para-ref\">[5.1]</span> The discovery of DNA and the Human Genome Project transformed modern medicine by allowing doctors to understand the root causes of inherited disease. For the first time, doctors could use genetic testing and screening to see if a patient carried faulty genes passed down from their parents. For example, testing can identify breast cancer risk genes (like BRCA1 and BRCA2) or cystic fibrosis before symptoms appear. This allows patients to take preventative action, have regular health checks, or undergo preventative surgery before disease develops.<br><br><span class=\"para-ref\">[5.2]</span> However, medical historians emphasize that understanding the cause of a disease does not automatically provide a cure. While finding and mapping faulty genes is now quick and cheap, repairing or replacing them through gene therapy has proved slow, difficult, and expensive. As a result, there is still a major gap between diagnosis and treatment: doctors can easily identify genetic diseases, but cures for most hereditary conditions remain a challenge for the future.",
           "content": "<span class=\"para-ref\">[5.1]</span> The discovery of DNA and the Human Genome Project transformed modern medicine by allowing doctors to understand the root causes of inherited disease. For the first time, doctors could use genetic testing and screening to see if a patient carried faulty genes passed down from their parents. For example, testing can identify breast cancer risk genes (like BRCA1 and BRCA2) or cystic fibrosis before symptoms appear. This allows patients to take preventative action, have regular health checks, or undergo preventative surgery before disease develops.<br><br><span class=\"para-ref\">[5.2]</span> However, medical historians emphasize that understanding the cause of a disease does not automatically provide a cure. While finding and mapping faulty genes is now quick and cheap, repairing or replacing them through gene therapy has proved slow, difficult, and expensive. As a result, there is still a major gap between diagnosis and treatment: doctors can easily identify genetic diseases, but cures for most hereditary conditions remain a challenge for the future.",
-          "theme": "Genetic Screening & The Treatment Gap (2000s–Present)"
+          "theme": "Genetic Screening & The Treatment Gap (2000s–Present)",
+          "sources": [
+            {
+              "id": "source_e_collins_treatment_gap_2003",
+              "letter": "E",
+              "type": "written",
+              "title": "Source E: Dr Francis Collins, Commentary on the 'Treatment Gap' in Genomic Medicine (2003)",
+              "text": "The immediate medical payoff of sequencing the human genome is diagnostic, not curative. We can now test patients with unprecedented precision to identify whether they carry faulty genes that predispose them to breast cancer, Huntington's disease, or cystic fibrosis. Yet we must be completely candid with the public: diagnosis far outpaces therapeutics. Discovering a genetic misspelling does not automatically produce a medicine or a corrective gene therapy. Developing safe, targeted genetic cures requires decades of complex clinical trials. For now, doctors can identify the inherited causes of disease, but the power to fix those flaws remains the great unfinished challenge of modern medicine.",
+              "content": "The immediate medical payoff of sequencing the human genome is diagnostic, not curative. We can now test patients with unprecedented precision to identify whether they carry faulty genes that predispose them to breast cancer, Huntington's disease, or cystic fibrosis. Yet we must be completely candid with the public: diagnosis far outpaces therapeutics. Discovering a genetic misspelling does not automatically produce a medicine or a corrective gene therapy. Developing safe, targeted genetic cures requires decades of complex clinical trials. For now, doctors can identify the inherited causes of disease, but the power to fix those flaws remains the great unfinished challenge of modern medicine.",
+              "caption": "Dr Francis Collins, leader of the international public consortium that sequenced the human genome, reflecting on the realities of post-genomic healthcare in 2003.",
+              "desc": "Medical commentary by Dr Francis Collins explaining the persistent gap between diagnostic genetic testing and therapeutic clinical cures.",
+              "citation": "Dr Francis Collins, Director of the National Human Genome Research Institute, Address on the Medical Realities of the Human Genome Project, Bethesda, Maryland, April 2003.",
+              "provenance": "Dr Francis Collins, Director of the NHGRI, address on the completion of the Human Genome Project, April 2003.",
+              "question_badge": "THE TREATMENT GAP & ETHICAL FRONTIERS",
+              "question_type": "Source Inference",
+              "question": "Explain what Source E suggests about the limitations of genetic medicine in the early twenty-first century.",
+              "enquiry_question": "Explain what Source E suggests about the limitations of genetic medicine in the early twenty-first century.",
+              "model_answer": "Source E reveals the 'treatment gap' in modern medicine: while scientists can rapidly and cheaply diagnose faulty genes predisposing patients to conditions like breast cancer or Huntington's, they cannot yet easily cure or repair those defective genes. Cures require decades of complex research, meaning patients can know their genetic risks years before effective gene therapy treatments exist.",
+              "hinge_question": "How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?",
+              "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative mastectomies, but true gene editing (such as CRISPR) remains difficult and raises profound ethical debates. **Hinge Question:** How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?",
+              "teacher_notes": {
+                "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative mastectomies, but true gene editing (such as CRISPR) remains difficult and raises profound ethical debates. **Hinge Question:** How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?"
+              }
+            }
+          ],
+          "source": {
+            "id": "source_e_collins_treatment_gap_2003",
+            "letter": "E",
+            "type": "written",
+            "title": "Source E: Dr Francis Collins, Commentary on the 'Treatment Gap' in Genomic Medicine (2003)",
+            "text": "The immediate medical payoff of sequencing the human genome is diagnostic, not curative. We can now test patients with unprecedented precision to identify whether they carry faulty genes that predispose them to breast cancer, Huntington's disease, or cystic fibrosis. Yet we must be completely candid with the public: diagnosis far outpaces therapeutics. Discovering a genetic misspelling does not automatically produce a medicine or a corrective gene therapy. Developing safe, targeted genetic cures requires decades of complex clinical trials. For now, doctors can identify the inherited causes of disease, but the power to fix those flaws remains the great unfinished challenge of modern medicine.",
+            "content": "The immediate medical payoff of sequencing the human genome is diagnostic, not curative. We can now test patients with unprecedented precision to identify whether they carry faulty genes that predispose them to breast cancer, Huntington's disease, or cystic fibrosis. Yet we must be completely candid with the public: diagnosis far outpaces therapeutics. Discovering a genetic misspelling does not automatically produce a medicine or a corrective gene therapy. Developing safe, targeted genetic cures requires decades of complex clinical trials. For now, doctors can identify the inherited causes of disease, but the power to fix those flaws remains the great unfinished challenge of modern medicine.",
+            "caption": "Dr Francis Collins, leader of the international public consortium that sequenced the human genome, reflecting on the realities of post-genomic healthcare in 2003.",
+            "desc": "Medical commentary by Dr Francis Collins explaining the persistent gap between diagnostic genetic testing and therapeutic clinical cures.",
+            "citation": "Dr Francis Collins, Director of the National Human Genome Research Institute, Address on the Medical Realities of the Human Genome Project, Bethesda, Maryland, April 2003.",
+            "provenance": "Dr Francis Collins, Director of the NHGRI, address on the completion of the Human Genome Project, April 2003.",
+            "question_badge": "THE TREATMENT GAP & ETHICAL FRONTIERS",
+            "question_type": "Source Inference",
+            "question": "Explain what Source E suggests about the limitations of genetic medicine in the early twenty-first century.",
+            "enquiry_question": "Explain what Source E suggests about the limitations of genetic medicine in the early twenty-first century.",
+            "model_answer": "Source E reveals the 'treatment gap' in modern medicine: while scientists can rapidly and cheaply diagnose faulty genes predisposing patients to conditions like breast cancer or Huntington's, they cannot yet easily cure or repair those defective genes. Cures require decades of complex research, meaning patients can know their genetic risks years before effective gene therapy treatments exist.",
+            "hinge_question": "How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?",
+            "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative mastectomies, but true gene editing (such as CRISPR) remains difficult and raises profound ethical debates. **Hinge Question:** How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?",
+            "teacher_notes": {
+              "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative mastectomies, but true gene editing (such as CRISPR) remains difficult and raises profound ethical debates. **Hinge Question:** How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?"
+            }
+          }
         }
       ],
       "vocab": [
@@ -17753,97 +17923,114 @@
       },
       "sources": [
         {
-          "id": "source_a_watson_crick_model",
+          "id": "source_a_mendel_hybridisation_1866",
           "letter": "A",
-          "type": "artefact",
-          "title": "Source A: Watson and Crick's 1953 Demonstration Model of the DNA Double Helix",
-          "image": "/images/dna_structure.jpg",
-          "image_url": "/images/dna_structure.jpg",
-          "caption": "Watson and Crick's original wire-and-sheet-metal demonstration model of the DNA double helix (1953), constructed at the Cavendish Laboratory, Cambridge, and preserved at the Science Museum, London.",
-          "citation": "Science Museum, London (Object 1977-310 / Wikimedia Commons Public Domain).",
-          "question_badge": "MOLECULAR REVOLUTION & STRUCTURAL MODELLING",
-          "question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
-          "model_answer": "Source A shows that Watson and Crick investigated DNA by constructing a physical, three-dimensional wire-and-sheet-metal scale model. Rather than relying solely on chemical experiments, they used physical modeling to puzzle out how complementary base pairs (adenine-thymine and cytosine-guanine) fit together along an antiparallel double helical spiral.",
+          "type": "written",
+          "title": "Source A: Gregor Mendel, 'Experiments in Plant Hybridisation' (1866 / translated 1901)",
+          "text": "The object of the experiment was to observe the changes in each pair of differentiating characters and to deduce the law according to which they appear in successive generations... If two plants which differ constantly in one or several characters are crossed, the traits are not blended. One trait appears dominant, while the other remains recessive... When these hybrids were allowed to fertilise themselves, the recessive character reappeared in exactly one-fourth of the offspring, demonstrating a fixed mathematical ratio of 3 to 1.",
+          "content": "The object of the experiment was to observe the changes in each pair of differentiating characters and to deduce the law according to which they appear in successive generations... If two plants which differ constantly in one or several characters are crossed, the traits are not blended. One trait appears dominant, while the other remains recessive... When these hybrids were allowed to fertilise themselves, the recessive character reappeared in exactly one-fourth of the offspring, demonstrating a fixed mathematical ratio of 3 to 1.",
+          "caption": "Extract from Gregor Mendel's groundbreaking 1866 research paper documenting his eight years of pea plant cross-breeding experiments at the monastery in Brno.",
+          "desc": "Scientific paper by Gregor Mendel demonstrating the fundamental laws of inheritance through statistical tracking of pea plant traits.",
+          "citation": "Gregor Mendel, 'Experiments in Plant Hybridisation', Journal of the Royal Horticultural Society, vol. 26, 1901 (translated from Versuche über Pflanzen-Hybriden, 1866).",
+          "provenance": "Gregor Mendel, Augustinian monk, research paper presented to the Natural History Society of Brno, 1866.",
+          "question_badge": "HEREDITARY UNITS & MATHEMATICAL RATIOS",
+          "question_type": "Source Inference",
+          "question": "Explain what Source A shows about Gregor Mendel's discoveries regarding how traits are passed from parents to offspring.",
+          "enquiry_question": "Explain what Source A shows about Gregor Mendel's discoveries regarding how traits are passed from parents to offspring.",
+          "model_answer": "Source A shows that Gregor Mendel discovered that hereditary characteristics are not blended together, but are transmitted as distinct, unchanging individual units (later called genes). By tracking thousands of hybrid pea plants, he proved that traits follow predictable mathematical ratios (such as 3 to 1 for dominant and recessive traits) rather than random blending.",
+          "hinge_question": "Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?",
+          "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900. **Hinge Question:** Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?",
           "teacher_notes": {
-            "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?"
-          },
-          "enquiry_question": "Explain what Source A shows about how the structure of DNA was investigated in 1953.",
-          "hinge_question": "Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?",
-          "source_context": "In March 1953 at the Cavendish Laboratory in Cambridge, James Watson and Francis Crick constructed this three-dimensional molecular model from sheet-metal bases and brass rods to test the geometric compatibility of base pairs indicated by Rosalind Franklin's Photograph 51. **Hinge Question:** Why was physical 3D model-building essential in an era before computer-generated molecular graphics existed?",
-          "format": "artefact"
+            "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900. **Hinge Question:** Why did nineteenth-century medical doctors fail to recognize the significance of Mendel's mathematical laws of inheritance when they were published in 1866?"
+          }
         },
         {
-          "id": "source_b_watson_crick_nature_1953",
+          "id": "source_b_franklin_report_1952",
           "letter": "B",
           "type": "written",
-          "title": "Source B: James Watson and Francis Crick, 'Molecular Structure of Nucleic Acids', 'Nature' (25 April 1953)",
-          "citation": "J. D. Watson and F. H. C. Crick, 'Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid', Nature, vol. 171, 1953, pp. 737–738.",
+          "title": "Source B: Dr Rosalind Franklin, MRC Laboratory Research Report, King's College London (1952)",
+          "text": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
+          "content": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
+          "caption": "Extract from Dr Rosalind Franklin and Raymond Gosling's confidential research report for the Medical Research Council Biophysics Committee, December 1952.",
+          "desc": "Confidential laboratory research report detailing the crystallographic measurements and helical symmetry of DNA.",
+          "citation": "Dr Rosalind Franklin and Raymond Gosling, Medical Research Council Biophysics Committee Report, King's College London, December 1952.",
+          "provenance": "Confidential laboratory report submitted by Dr Rosalind Franklin to the Medical Research Council, December 1952.",
+          "question_badge": "X-RAY CRYSTALLOGRAPHY & MOLECULAR GEOMETRY",
+          "question_type": "Source Inference",
+          "question": "Explain how Dr Franklin's measurements in Source B contributed to solving the structure of DNA.",
+          "enquiry_question": "Explain how Dr Franklin's measurements in Source B contributed to solving the structure of DNA.",
+          "model_answer": "Source B shows Franklin's precise crystallographic deduction that DNA's phosphate backbones must lie on the outside with bases facing inward, and that the structure possesses double helical symmetry repeating at 34 Ångströms. This specific mathematical measurement provided the essential blueprint that enabled Watson and Crick to assemble their model.",
+          "hinge_question": "Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?",
+          "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?",
+          "teacher_notes": {
+            "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's unpublished data standard scientific collaboration or an ethical breach of scientific integrity?"
+          }
+        },
+        {
+          "id": "source_c_watson_crick_nature_1953",
+          "letter": "C",
+          "type": "written",
+          "title": "Source C: James Watson and Francis Crick, 'Molecular Structure of Nucleic Acids', 'Nature' (25 April 1953)",
+          "text": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
           "content": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
+          "caption": "Extract from Watson and Crick's landmark one-page scientific announcement of the double helix published in Nature in April 1953.",
+          "desc": "Published scientific paper in Nature announcing the antiparallel double helix structure of DNA and its complementary base-pairing mechanism.",
+          "citation": "J. D. Watson and F. H. C. Crick, 'Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid', Nature, vol. 171, 1953, pp. 737–738.",
+          "provenance": "James Watson and Francis Crick, Cavendish Laboratory, Cambridge University, published in Nature, 25 April 1953.",
           "question_badge": "GENETIC REPLICATION & COMPLEMENTARY PAIRING",
-          "question": "Explain the importance of the discovery described in Source B for medical understanding of heredity.",
-          "model_answer": "Source B provided the exact chemical explanation for genetic inheritance. By establishing that adenine always pairs with thymine and guanine with cytosine, Watson and Crick revealed that each DNA strand serves as a template to duplicate identical genetic code during reproduction, explaining how hereditary traits and genetic defects pass from parents to children.",
+          "question_type": "Source Inference",
+          "question": "Explain the importance of the discovery described in Source C for medical understanding of heredity.",
+          "enquiry_question": "Explain the importance of the discovery described in Source C for medical understanding of heredity.",
+          "model_answer": "Source C provided the exact chemical explanation for genetic inheritance. By establishing that adenine always pairs with thymine and guanine with cytosine, Watson and Crick revealed that each DNA strand serves as a template to duplicate identical genetic code during reproduction, explaining how hereditary traits and genetic defects pass from parents to children.",
+          "hinge_question": "Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
+          "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
           "teacher_notes": {
             "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?"
-          },
-          "text": "We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest... We have assumed that the bases only occur in pairs: a single base from one chain being hydrogen-bonded to a single base from the other chain. One of the pair must be a purine and the other a pyrimidine... If adenine only pairs with thymine, and guanine only with cytosine, then given the sequence of bases on one chain, that of the other is automatically determined. It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.",
-          "enquiry_question": "Explain the importance of the discovery described in Source B for medical understanding of heredity.",
-          "hinge_question": "Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?",
-          "source_context": "Watson and Crick's famous understated final sentence ('It has not escaped our notice...') became one of the most celebrated lines in scientific history, foreshadowing modern gene editing, forensic profiling, and mRNA vaccines. **Hinge Question:** Why did understanding the chemical copying mechanism matter more to doctors than just knowing DNA existed?"
+          }
         },
         {
-          "id": "source_c_rosalind_franklin_portrait",
-          "letter": "C",
-          "type": "visual",
-          "title": "Source C: Dr Rosalind Franklin at King's College London (c.1952)",
-          "image": "/images/rosalind_franklin_portrait.jpg",
-          "image_url": "/images/rosalind_franklin_portrait.jpg",
-          "caption": "Photographic portrait of Dr Rosalind Franklin, pioneering physical chemist and X-ray crystallographer whose meticulous laboratory work at King's College London produced Photograph 51.",
-          "citation": "National Portrait Gallery, London / King's College London Archives (Public Domain).",
-          "question_badge": "SCIENTIFIC RIGOUR & EXPERIMENTAL DISCOVERY",
-          "question": "Explain the historical significance of Rosalind Franklin's contribution to the discovery of DNA shown in Source C.",
-          "model_answer": "Source C commemorates Dr Rosalind Franklin, whose rigorous X-ray crystallography produced the crucial experimental data—most notably Photograph 51—that proved DNA had a helical structure with water-attracting phosphate backbones on the outside. Her uncredited data enabled Watson and Crick to construct their correct double helix model.",
-          "teacher_notes": {
-            "source_context": "Franklin died of ovarian cancer in 1958 at the age of thirty-seven, four years before Watson, Crick, and Maurice Wilkins received the 1962 Nobel Prize (which is never awarded posthumously). **Hinge Question:** How does the history of Franklin's unacknowledged contribution reflect broader historical barriers faced by women in twentieth-century medical science?"
-          },
-          "enquiry_question": "Explain the historical significance of Rosalind Franklin's contribution to the discovery of DNA shown in Source C.",
-          "hinge_question": "How does the history of Franklin's unacknowledged contribution reflect broader historical barriers faced by women in twentieth-century medical science?",
-          "source_context": "Franklin died of ovarian cancer in 1958 at the age of thirty-seven, four years before Watson, Crick, and Maurice Wilkins received the 1962 Nobel Prize (which is never awarded posthumously). **Hinge Question:** How does the history of Franklin's unacknowledged contribution reflect broader historical barriers faced by women in twentieth-century medical science?"
-        },
-        {
-          "id": "source_d_franklin_notebook_1952",
+          "id": "source_d_human_genome_announcement_2000",
           "letter": "D",
           "type": "written",
-          "title": "Source D: Dr Rosalind Franklin, Laboratory Research Report, King's College London (1952)",
-          "citation": "Rosalind Franklin, Medical Research Council Biophysics Committee Report, King's College London, December 1952.",
-          "content": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
-          "question_badge": "EMPIRICAL MEASUREMENT & CRYSTALLOGRAPHY",
-          "question": "Explain how Dr Franklin's measurements in Source D contributed to solving the structure of DNA.",
-          "model_answer": "Franklin's precise mathematical measurements proved that the phosphate sugar backbones lay on the outside of the molecule with the bases facing inward, and established that each helical turn measured exactly 34 Ångströms. This provided the indispensable physical dimensions without which Watson and Crick's theoretical models could not work.",
-          "teacher_notes": {
-            "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's data standard scientific collaboration or an ethical breach of intellectual property?"
-          },
-          "text": "Conclusion: The results show that the helical structure must be of the type in which the phosphate groups lie on the outside of the cylinder, in close contact with water, with the organic purine and pyrimidine bases packed tightly into the hydrophobic core. The crystalline 'A' form can be reversibly converted to the wet 'B' form by increasing the atmospheric humidity. The fibre axis repeats at 34 Ångströms with 10 nucleotide units per complete turn of the helix, demonstrating a double helical symmetry.",
-          "enquiry_question": "Explain how Dr Franklin's measurements in Source D contributed to solving the structure of DNA.",
-          "hinge_question": "Was the sharing of Franklin's data standard scientific collaboration or an ethical breach of intellectual property?",
-          "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'. **Hinge Question:** Was the sharing of Franklin's data standard scientific collaboration or an ethical breach of intellectual property?"
-        },
-        {
-          "id": "source_e_human_genome_announcement_2000",
-          "letter": "E",
-          "type": "written",
-          "title": "Source E: President Bill Clinton and Prime Minister Tony Blair, Joint Declaration on the Human Genome Project (26 June 2000)",
-          "citation": "The White House & 10 Downing Street, Joint Press Release on the Completion of the First Survey of the Entire Human Genome, Washington D.C. and London, 26 June 2000.",
+          "title": "Source D: President Bill Clinton and Prime Minister Tony Blair, Joint Declaration on the Human Genome Project (26 June 2000)",
+          "text": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
           "content": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
+          "caption": "Extract from the televised international joint press conference held simultaneously in Washington D.C. and London on 26 June 2000.",
+          "desc": "Joint declaration by President Bill Clinton and Prime Minister Tony Blair celebrating the completion of the first draft sequence of the human genome.",
+          "citation": "The White House & 10 Downing Street, Joint Press Release on the Completion of the First Survey of the Entire Human Genome, Washington D.C. and London, 26 June 2000.",
+          "provenance": "Joint international press statement by US President Bill Clinton and UK Prime Minister Tony Blair, 26 June 2000.",
           "question_badge": "GENOMIC MEDICINE & THE FUTURE OF HEALING",
-          "question": "Explain what Source E suggests about the impact of the Human Genome Project on future healthcare.",
-          "model_answer": "Source E suggests that the Human Genome Project would revolutionize medical treatment by shifting healthcare from reactive disease symptom treatment to personalized genetic medicine. By identifying the exact hereditary mutations that cause illnesses like cancer and diabetes, doctors could predict, prevent, and custom-tailor genetic therapies for individual patients.",
+          "question_type": "Source Inference",
+          "question": "Explain what Source D suggests about the impact of the Human Genome Project on future healthcare.",
+          "enquiry_question": "Explain what Source D suggests about the impact of the Human Genome Project on future healthcare.",
+          "model_answer": "Source D suggests that the Human Genome Project would revolutionize medical treatment by shifting healthcare from reactive disease symptom treatment to personalized genetic medicine. By identifying the exact hereditary mutations that cause illnesses like cancer and diabetes, doctors could predict, prevent, and custom-tailor genetic therapies for individual patients.",
+          "hinge_question": "Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
+          "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
           "teacher_notes": {
             "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?"
-          },
-          "text": "Nearly fifty years ago, in a Cambridge laboratory, Watson and Crick first deciphered the structure of DNA... Today, we are learning the language in which God created life. We are gaining ever more awe for the complexity, the beauty, and the wonder of God's most divine and sacred gift. With this profound new knowledge, humanity is on the verge of gaining immense new power to heal. Genome science will revolutionize the diagnosis, prevention, and treatment of most, if not all, human diseases. In coming decades, doctors will pinpoint the genetic causes of cancer, Alzheimer's, and diabetes, tailoring therapies to individual patients before symptoms ever appear.",
-          "enquiry_question": "Explain what Source E suggests about the impact of the Human Genome Project on future healthcare.",
-          "hinge_question": "Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
-          "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?"
+          }
+        },
+        {
+          "id": "source_e_collins_treatment_gap_2003",
+          "letter": "E",
+          "type": "written",
+          "title": "Source E: Dr Francis Collins, Commentary on the 'Treatment Gap' in Genomic Medicine (2003)",
+          "text": "The immediate medical payoff of sequencing the human genome is diagnostic, not curative. We can now test patients with unprecedented precision to identify whether they carry faulty genes that predispose them to breast cancer, Huntington's disease, or cystic fibrosis. Yet we must be completely candid with the public: diagnosis far outpaces therapeutics. Discovering a genetic misspelling does not automatically produce a medicine or a corrective gene therapy. Developing safe, targeted genetic cures requires decades of complex clinical trials. For now, doctors can identify the inherited causes of disease, but the power to fix those flaws remains the great unfinished challenge of modern medicine.",
+          "content": "The immediate medical payoff of sequencing the human genome is diagnostic, not curative. We can now test patients with unprecedented precision to identify whether they carry faulty genes that predispose them to breast cancer, Huntington's disease, or cystic fibrosis. Yet we must be completely candid with the public: diagnosis far outpaces therapeutics. Discovering a genetic misspelling does not automatically produce a medicine or a corrective gene therapy. Developing safe, targeted genetic cures requires decades of complex clinical trials. For now, doctors can identify the inherited causes of disease, but the power to fix those flaws remains the great unfinished challenge of modern medicine.",
+          "caption": "Dr Francis Collins, leader of the international public consortium that sequenced the human genome, reflecting on the realities of post-genomic healthcare in 2003.",
+          "desc": "Medical commentary by Dr Francis Collins explaining the persistent gap between diagnostic genetic testing and therapeutic clinical cures.",
+          "citation": "Dr Francis Collins, Director of the National Human Genome Research Institute, Address on the Medical Realities of the Human Genome Project, Bethesda, Maryland, April 2003.",
+          "provenance": "Dr Francis Collins, Director of the NHGRI, address on the completion of the Human Genome Project, April 2003.",
+          "question_badge": "THE TREATMENT GAP & ETHICAL FRONTIERS",
+          "question_type": "Source Inference",
+          "question": "Explain what Source E suggests about the limitations of genetic medicine in the early twenty-first century.",
+          "enquiry_question": "Explain what Source E suggests about the limitations of genetic medicine in the early twenty-first century.",
+          "model_answer": "Source E reveals the 'treatment gap' in modern medicine: while scientists can rapidly and cheaply diagnose faulty genes predisposing patients to conditions like breast cancer or Huntington's, they cannot yet easily cure or repair those defective genes. Cures require decades of complex research, meaning patients can know their genetic risks years before effective gene therapy treatments exist.",
+          "hinge_question": "How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?",
+          "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative mastectomies, but true gene editing (such as CRISPR) remains difficult and raises profound ethical debates. **Hinge Question:** How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?",
+          "teacher_notes": {
+            "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative mastectomies, but true gene editing (such as CRISPR) remains difficult and raises profound ethical debates. **Hinge Question:** How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?"
+          }
         }
       ],
       "do_now": {
