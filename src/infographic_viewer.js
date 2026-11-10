@@ -148,78 +148,61 @@ function ensureModalElement() {
 
   modal.innerHTML = `
     <!-- Top Control Bar -->
-    <header style="height: 60px; padding: 0 20px; background: #070d19; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; z-index: 10;">
+    <header style="height: 60px; padding: 0 12px; background: #070d19; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; z-index: 10; gap: 8px;">
       <!-- Title & Badges -->
-      <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
-        <div style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; box-shadow: 0 2px 8px rgba(37,99,235,0.4);">
+      <div style="display: flex; align-items: center; gap: 9px; min-width: 0; flex: 1 1 auto;">
+        <div style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0; box-shadow: 0 2px 8px rgba(37,99,235,0.4);">
           <i class="fa-solid fa-chart-pie"></i>
         </div>
-        <div style="min-width: 0;">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span id="infographic-badge-topic" style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; background: rgba(2, 132, 199, 0.2); border: 1px solid rgba(56, 189, 248, 0.3); padding: 1.5px 7px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Topic</span>
-            <span id="infographic-badge-type" style="font-size: 0.7rem; font-weight: 600; color: #94a3b8; background: #1e293b; padding: 1.5px 6px; border-radius: 4px;">Visual Revision Mat</span>
-            <span id="infographic-counter" style="font-size: 0.72rem; color: #cbd5e1; font-weight: 600;">1 / 1</span>
+        <div style="min-width: 0; flex: 1;">
+          <div style="display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; white-space: nowrap; margin-bottom: 2px;">
+            <span id="infographic-badge-topic" style="font-size: 0.68rem; font-weight: 800; color: #38bdf8; background: rgba(2, 132, 199, 0.2); border: 1px solid rgba(56, 189, 248, 0.35); padding: 1.5px 6px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; flex-shrink: 0;">Topic</span>
+            <span id="infographic-badge-type" style="font-size: 0.66rem; font-weight: 600; color: #94a3b8; background: #1e293b; padding: 1.5px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; border: 1px solid #334155;">Visual Revision Mat</span>
+            <span id="infographic-counter" style="font-size: 0.68rem; color: #cbd5e1; font-weight: 700; white-space: nowrap; flex-shrink: 0;">1/1</span>
           </div>
-          <h3 id="infographic-title" style="margin: 2px 0 0 0; font-size: 1.05rem; font-weight: 700; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: 'Playfair Display', Georgia, serif; max-width: 45vw;">
+          <h3 id="infographic-title" style="margin: 0; font-size: 0.90rem; font-weight: 700; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: 'Lora', serif; line-height: 1.25;" title="">
             Infographic Title
           </h3>
         </div>
       </div>
 
-      <!-- Multiple Infographics Quick Switcher Tabs -->
-      <div id="infographic-multi-tabs" style="display: none; align-items: center; gap: 6px; margin: 0 12px; overflow-x: auto; max-width: 35vw;"></div>
+      <!-- Multiple Infographics Quick Switcher Tabs (Segmented Control Pill Bar - Zero Scrollbars) -->
+      <div id="infographic-multi-tabs" style="display: none; align-items: center; background: #0b1329; border: 1px solid #1e293b; border-radius: 8px; padding: 2px; flex-shrink: 0; white-space: nowrap; margin: 0 4px;"></div>
 
       <!-- Action Toolbar -->
-      <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <div style="display: flex; align-items: center; gap: 5px; flex-shrink: 0;">
         <!-- Dual Mode Segmented Control (Poster vs Interactive) -->
-        <div id="infographic-mode-toggle" style="display: none; align-items: center; background: #0f172a; border-radius: 6px; padding: 2px; border: 1px solid rgba(56, 189, 248, 0.4); margin-right: 4px;">
-          <button type="button" id="infographic-btn-mode-poster" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: #0284c7; color: #ffffff; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="View High-Resolution Visual Revision Infographic Poster">
-            <i class="fa-solid fa-image"></i> <span>Visual Infographic</span>
+        <div id="infographic-mode-toggle" style="display: none; align-items: center; background: #0f172a; border-radius: 6px; padding: 2px; border: 1px solid rgba(56, 189, 248, 0.4); margin-right: 2px;">
+          <button type="button" id="infographic-btn-mode-poster" style="padding: 3.5px 8px; font-size: 0.70rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: #0284c7; color: #ffffff; display: flex; align-items: center; gap: 4px; transition: all 0.15s ease;" title="View High-Resolution Visual Revision Infographic Poster">
+            <i class="fa-solid fa-image"></i> <span>Poster</span>
           </button>
-          <button type="button" id="infographic-btn-mode-interactive" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: transparent; color: #94a3b8; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Switch to Interactive Presentation Mat &amp; Writing Studio">
-            <i class="fa-solid fa-wand-magic-sparkles" style="color: #f59e0b;"></i> <span>Interactive Mat</span>
+          <button type="button" id="infographic-btn-mode-interactive" style="padding: 3.5px 8px; font-size: 0.70rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: transparent; color: #94a3b8; display: flex; align-items: center; gap: 4px; transition: all 0.15s ease;" title="Switch to Interactive Presentation Mat &amp; Writing Studio">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color: #f59e0b;"></i> <span>Interactive</span>
           </button>
         </div>
 
         <!-- Zoom Controls -->
-        <div id="infographic-zoom-controls" style="display: flex; align-items: center; background: #1e293b; border-radius: 6px; padding: 2px 4px; border: 1px solid #334155;">
-          <button type="button" id="infographic-btn-zoom-out" style="background: none; border: none; color: #cbd5e1; width: 28px; height: 28px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;" title="Zoom Out (-)"><i class="fa-solid fa-minus"></i></button>
-          <span id="infographic-zoom-label" style="font-size: 0.76rem; font-weight: 700; color: #f8fafc; min-width: 44px; text-align: center; font-family: monospace;">100%</span>
-          <button type="button" id="infographic-btn-zoom-in" style="background: none; border: none; color: #cbd5e1; width: 28px; height: 28px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;" title="Zoom In (+)"><i class="fa-solid fa-plus"></i></button>
-          <button type="button" id="infographic-btn-zoom-reset" style="background: none; border: none; color: #94a3b8; padding: 0 6px; height: 28px; cursor: pointer; font-size: 0.72rem; font-weight: 700; border-left: 1px solid #334155;" title="Fit / Reset (0)">FIT</button>
+        <div id="infographic-zoom-controls" style="display: flex; align-items: center; background: #1e293b; border-radius: 6px; padding: 2px 3px; border: 1px solid #334155;">
+          <button type="button" id="infographic-btn-zoom-out" style="background: none; border: none; color: #cbd5e1; width: 24px; height: 24px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.78rem;" title="Zoom Out (-)"><i class="fa-solid fa-minus"></i></button>
+          <span id="infographic-zoom-label" style="font-size: 0.72rem; font-weight: 700; color: #f8fafc; min-width: 36px; text-align: center; font-family: monospace;">100%</span>
+          <button type="button" id="infographic-btn-zoom-in" style="background: none; border: none; color: #cbd5e1; width: 24px; height: 24px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.78rem;" title="Zoom In (+)"><i class="fa-solid fa-plus"></i></button>
+          <button type="button" id="infographic-btn-zoom-reset" style="background: none; border: none; color: #94a3b8; padding: 0 5px; height: 24px; cursor: pointer; font-size: 0.68rem; font-weight: 700; border-left: 1px solid #334155;" title="Fit / Reset (0)">FIT</button>
         </div>
 
         <!-- Whiteboard Fit (Auto-scales mat to fit 100% on one screen with zero scrolling) -->
-        <button type="button" id="infographic-btn-whiteboard-fit" style="display: none; align-items: center; gap: 6px; padding: 6px 12px; background: #0284c7; color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);" title="Whiteboard Mode: Automatically scales mat to fit 100% on one screen with zero scrolling">
+        <button type="button" id="infographic-btn-whiteboard-fit" style="display: none; align-items: center; gap: 4px; padding: 4px 8px; background: #0284c7; color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);" title="Whiteboard Mode: Automatically scales mat to fit 100% on one screen with zero scrolling">
           <i class="fa-solid fa-chalkboard-user"></i>
-          <span class="btn-text-desktop">Fit to Screen</span>
+          <span class="btn-text-desktop">Fit</span>
         </button>
 
         <!-- Projector Fullscreen (F11 requestFullscreen) -->
-        <button type="button" id="infographic-btn-fullscreen" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #1e293b; color: #f1f5f9; border: 1px solid #334155; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;" title="Toggle Projector Fullscreen Mode">
+        <button type="button" id="infographic-btn-fullscreen" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; background: #1e293b; color: #f1f5f9; border: 1px solid #334155; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;" title="Toggle Projector Fullscreen Mode">
           <i class="fa-solid fa-expand" id="infographic-fullscreen-icon"></i>
-          <span class="btn-text-desktop" id="infographic-fullscreen-text">Projector View</span>
-        </button>
-
-        <!-- Download & Open in New Tab -->
-        <a id="infographic-btn-tab" href="#" target="_blank" style="display: none; align-items: center; gap: 6px; padding: 6px 12px; background: #334155; color: #f8fafc; text-decoration: none; border: 1px solid #475569; border-radius: 6px; font-size: 0.82rem; font-weight: 700; transition: all 0.15s ease;" title="Open interactive revision mat in a new full browser window">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          <span class="btn-text-desktop">New Tab</span>
-        </a>
-        <a id="infographic-btn-download" href="#" target="_blank" download style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #0284c7; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; transition: all 0.15s ease;" title="Download high-resolution revision image">
-          <i class="fa-solid fa-download"></i>
-          <span class="btn-text-desktop">Download</span>
-        </a>
-
-        <!-- Toggle Questions & Practice Drawer -->
-        <button type="button" id="infographic-btn-toggle-drawer" style="padding: 7px 14px; background: #1e293b; color: #f8fafc; border: 1.5px solid #38bdf8; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.25);" title="Open Questions & Practice Sidebar (Hinge Check, Exam Questions & Model Answers)">
-          <i class="fa-solid fa-circle-question" style="color: #38bdf8; font-size: 0.95rem;"></i>
-          <span id="infographic-drawer-btn-label">Questions &amp; Practice</span>
-          <i class="fa-solid fa-chevron-left" id="infographic-drawer-chevron" style="font-size: 0.72rem; transition: transform 0.25s ease;"></i>
+          <span class="btn-text-desktop" id="infographic-fullscreen-text">Projector</span>
         </button>
 
         <!-- Close Modal -->
-        <button type="button" id="infographic-btn-close" style="width: 34px; height: 34px; background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1rem; margin-left: 6px;" title="Close (Esc)"><i class="fa-solid fa-xmark"></i></button>
+        <button type="button" id="infographic-btn-close" style="width: 30px; height: 30px; background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.90rem; margin-left: 2px; transition: all 0.15s ease;" title="Close (Esc)"><i class="fa-solid fa-xmark"></i></button>
       </div>
     </header>
 
@@ -432,18 +415,22 @@ function setupModalEvents(modal) {
   const updateDrawerStateUI = (isOpen) => {
     if (isOpen) {
       drawer.style.display = 'flex';
-      btnToggleDrawer.style.background = '#0284c7';
-      btnToggleDrawer.style.color = '#ffffff';
-      btnToggleDrawer.style.borderColor = '#38bdf8';
-      btnToggleDrawer.style.boxShadow = '0 0 12px rgba(56, 189, 248, 0.5)';
+      if (btnToggleDrawer) {
+        btnToggleDrawer.style.background = '#0284c7';
+        btnToggleDrawer.style.color = '#ffffff';
+        btnToggleDrawer.style.borderColor = '#38bdf8';
+        btnToggleDrawer.style.boxShadow = '0 0 12px rgba(56, 189, 248, 0.5)';
+      }
       if (drawerChevron) drawerChevron.style.transform = 'rotate(90deg)';
       if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'none';
     } else {
       drawer.style.display = 'none';
-      btnToggleDrawer.style.background = '#1e293b';
-      btnToggleDrawer.style.color = '#f8fafc';
-      btnToggleDrawer.style.borderColor = '#38bdf8';
-      btnToggleDrawer.style.boxShadow = 'none';
+      if (btnToggleDrawer) {
+        btnToggleDrawer.style.background = '#1e293b';
+        btnToggleDrawer.style.color = '#f8fafc';
+        btnToggleDrawer.style.borderColor = '#38bdf8';
+        btnToggleDrawer.style.boxShadow = 'none';
+      }
       if (drawerChevron) drawerChevron.style.transform = 'rotate(0deg)';
       if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'flex';
     }
@@ -459,8 +446,8 @@ function setupModalEvents(modal) {
     const isCurrentlyClosed = drawer.style.display === 'none';
     updateDrawerStateUI(isCurrentlyClosed);
   };
-  btnToggleDrawer.addEventListener('click', toggleDrawer);
-  btnCloseDrawer.addEventListener('click', toggleDrawer);
+  if (btnToggleDrawer) btnToggleDrawer.addEventListener('click', toggleDrawer);
+  if (btnCloseDrawer) btnCloseDrawer.addEventListener('click', () => updateDrawerStateUI(false));
   if (floatingQuestionsBtn) {
     floatingQuestionsBtn.addEventListener('click', () => updateDrawerStateUI(true));
   }
@@ -562,7 +549,7 @@ function setupModalEvents(modal) {
         iconFullscreen.className = isFull ? 'fa-solid fa-compress' : 'fa-solid fa-expand';
       }
       if (textFullscreen) {
-        textFullscreen.textContent = isFull ? 'Exit Projector' : 'Projector View';
+        textFullscreen.textContent = isFull ? 'Exit' : 'Projector';
       }
       setTimeout(applyWhiteboardFit, 150);
     });
@@ -734,17 +721,26 @@ function renderCurrentItem() {
 
   // Set titles and labels
   title.textContent = currentItem.title || 'Visual Revision Mat';
-  topicBadge.textContent = currentItem.topic || 'Curriculum Topic';
+  title.title = currentItem.title || '';
 
-  let typeLabel = 'Visual Revision Mat';
-  if (currentItem.type === 'unit_roadmap') typeLabel = 'Course Roadmap';
-  else if (currentItem.type === 'thematic_timeline') typeLabel = 'Chronological Spine';
-  else if (currentItem.type === 'exam_technique') typeLabel = 'Exam Technique Guide';
-  else if (currentItem.type === 'thematic_deep_dive') typeLabel = 'Depth Case Study';
+  let topicText = currentItem.topic || 'Curriculum Topic';
+  const fullTopic = topicText;
+  const ktMatch = topicText.match(/^(?:Key Topic|KT)\s*([0-9\.]+)/i);
+  if (ktMatch) {
+    topicText = `KEY TOPIC ${ktMatch[1]}`;
+  }
+  topicBadge.textContent = topicText;
+  topicBadge.title = fullTopic;
+
+  let typeLabel = 'Revision Mat';
+  if (currentItem.type === 'unit_roadmap') typeLabel = 'Roadmap';
+  else if (currentItem.type === 'thematic_timeline') typeLabel = 'Timeline';
+  else if (currentItem.type === 'exam_technique') typeLabel = 'Exam Guide';
+  else if (currentItem.type === 'thematic_deep_dive') typeLabel = 'Depth Study';
   typeBadge.textContent = typeLabel;
 
   if (currentList.length > 1) {
-    counter.textContent = `${currentIndex + 1} of ${currentList.length}`;
+    counter.textContent = `${currentIndex + 1}/${currentList.length}`;
     counter.style.display = 'inline-block';
     btnPrev.style.display = 'flex';
     btnNext.style.display = 'flex';
@@ -754,36 +750,56 @@ function renderCurrentItem() {
     btnNext.style.display = 'none';
   }
 
-  // Render multi-item switcher tabs
+  // Render multi-item switcher tabs (Segmented Control Pill Bar - Zero Scrollbars)
   const multiTabs = modal.querySelector('#infographic-multi-tabs');
   if (multiTabs) {
     if (currentList.length > 1) {
-      multiTabs.style.display = 'flex';
+      multiTabs.style.display = 'inline-flex';
       multiTabs.innerHTML = '';
       currentList.forEach((item, idx) => {
         const btn = document.createElement('button');
         btn.type = 'button';
         const isActive = idx === currentIndex;
         btn.style.cssText = `
-          padding: 4px 10px;
-          font-size: 0.74rem;
+          padding: 3.5px 8px;
+          font-size: 0.72rem;
           font-weight: 700;
           border-radius: 6px;
+          border: none;
           cursor: pointer;
           white-space: nowrap;
           transition: all 0.15s ease;
-          border: 1px solid ${isActive ? '#38bdf8' : '#334155'};
-          background: ${isActive ? 'rgba(2, 132, 199, 0.4)' : '#1e293b'};
+          background: ${isActive ? '#0284c7' : 'transparent'};
           color: ${isActive ? '#ffffff' : '#94a3b8'};
+          box-shadow: ${isActive ? '0 1px 4px rgba(2, 132, 199, 0.4)' : 'none'};
         `;
-        let label = `Mat ${idx + 1}`;
-        if (item.type === 'thematic_deep_dive') label = `Depth Study`;
-        else if (item.type === 'thematic_timeline') label = `Timeline`;
-        else if (item.title) {
-          const short = item.title.split(':')[0].trim();
-          if (short.length <= 18) label = short;
+        if (!isActive) {
+          btn.addEventListener('mouseenter', () => {
+            btn.style.color = '#f1f5f9';
+            btn.style.background = 'rgba(255, 255, 255, 0.06)';
+          });
+          btn.addEventListener('mouseleave', () => {
+            btn.style.color = '#94a3b8';
+            btn.style.background = 'transparent';
+          });
         }
-        btn.innerHTML = `<span style="opacity: ${isActive ? 1 : 0.7}; margin-right: 4px;">${idx + 1}.</span> ${label}`;
+
+        let label = `Mat ${idx + 1}`;
+        if (item.type === 'thematic_deep_dive') label = 'Depth Study';
+        else if (item.type === 'thematic_timeline') label = 'Timeline';
+        else if (item.title) {
+          let clean = item.title.split(/[:(]/)[0].replace(/^The\s+/i, '').trim();
+          if (/medical revolutions/i.test(clean)) clean = 'Revolutions';
+          else if (/public health/i.test(clean)) clean = 'Public Health';
+          else if (clean.length > 14) {
+            clean = clean.split(/\s+/).slice(0, 2).join(' ');
+            if (clean.length > 14) clean = clean.split(/\s+/)[0];
+          }
+          if (clean) label = clean;
+        }
+
+        btn.innerHTML = `<span style="opacity: ${isActive ? 1 : 0.65}; margin-right: 4px;">${idx + 1}.</span> ${label}`;
+        btn.title = item.title || `Switch to Mat ${idx + 1}`;
         btn.addEventListener('click', () => {
           currentIndex = idx;
           currentItem = currentList[currentIndex];
@@ -796,9 +812,11 @@ function renderCurrentItem() {
     }
   }
 
-  // Set download href
-  downloadBtn.href = currentItem.image;
-  downloadBtn.setAttribute('download', `${currentItem.slug || 'infographic'}.webp`);
+  // Set download href if button exists
+  if (downloadBtn) {
+    downloadBtn.href = currentItem.image;
+    downloadBtn.setAttribute('download', `${currentItem.slug || 'infographic'}.webp`);
+  }
 
   // Key points
   keyPointsList.innerHTML = '';

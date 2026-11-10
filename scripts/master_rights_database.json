@@ -5998,6 +5998,20 @@
           "commercial_use_permitted": true,
           "source_url": "https://wellcomecollection.org/works/l0000527",
           "asset_path": "/images/gregor_mendel_pea_experiments.jpg"
+        },
+        {
+          "lesson_num": 16,
+          "lesson_title": "KT4.1 Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
+          "source_id": "Lesson 16 Narrative Plate 3",
+          "artifact_title": "James Watson and Francis Crick with the DNA Double Helix Model",
+          "date": "May 1953",
+          "creator": "Antony Barrington Brown (1927–2012)",
+          "repository": "National Portrait Gallery, London / Cavendish Laboratory, Cambridge",
+          "accession_id": "NPG x126210 / Wellcome Collection Codebreakers Archive",
+          "rights_status": "Educational Fair Dealing / CDPA 1988 (Archival Photograph for Instruction)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.npg.org.uk/collections/search/portrait/mw132470",
+          "asset_path": "/images/watson_and_crick_1953.jpg"
         }
       ],
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 11",

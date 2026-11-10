@@ -472,6 +472,23 @@ window.addEventListener('DOMContentLoaded', async () => {
       }, 150);
     }
 
+    // Direct Infographic / Revision Mat Modal Experience
+    const matParam = urlParams.get('mat') || urlParams.get('infographic');
+    if (matParam) {
+      const uId = unit || 'edexcel_medicine';
+      const targetMat =
+        matParam === 'true' || matParam === '1'
+          ? initialLesson || 'lesson_3_5'
+          : matParam;
+      setTimeout(() => {
+        if (typeof window.openLessonInfographicModal === 'function') {
+          window.openLessonInfographicModal(targetMat, uId);
+        } else if (typeof window.openInfographicModal === 'function') {
+          window.openInfographicModal({ slug: targetMat, unitId: uId });
+        }
+      }, 250);
+    }
+
     if (window.location.hash && window.location.hash.includes('-section')) {
       setTimeout(() => {
         const target = document.querySelector(window.location.hash);
