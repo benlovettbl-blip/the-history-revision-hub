@@ -7574,9 +7574,8 @@ export function renderLesson(lesson) {
       if (triggerTerms.length > 0) {
         const chipsHtml = triggerTerms
           .map((term, tIdx) => {
-            const escapedTerm = String(term).replace(/"/g, '&quot;').replace(/'/g, "\\'");
             return `
-              <span class="stage-trigger-chip no-print" onclick="event.stopPropagation(); if(window.spotlightTriggerTerm){window.spotlightTriggerTerm('${escapedTerm}', 'para-${index + 1}');}" title="Pupil Workbook Trigger ${tIdx + 1} &bull; Click to spotlight in text" style="background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(56, 189, 248, 0.35); color: #f8fafc; font-family: 'Inter', sans-serif; font-size: 0.73rem; font-weight: 600; padding: 3px 9px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;">
+              <span class="stage-trigger-chip no-print" style="background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(56, 189, 248, 0.35); color: #f8fafc; font-family: 'Inter', sans-serif; font-size: 0.73rem; font-weight: 600; padding: 3px 9px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px; cursor: default; pointer-events: none; user-select: none;">
                 <span style="color: #38bdf8; font-weight: 900; font-size: 0.70rem;">${tIdx + 1}.</span>
                 <span>${term}</span>
               </span>
@@ -13202,43 +13201,5 @@ if (typeof window !== 'undefined') {
   window.closeLessonSpecModal = function () {
     const existing = document.getElementById('lesson-spec-modal-overlay');
     if (existing) existing.remove();
-  };
-
-  window.toggleStageModelSentence = function (btn, targetId) {
-    const panel = document.getElementById(targetId);
-    if (!panel) return;
-    const isHidden = panel.style.display === 'none' || !panel.style.display;
-    if (isHidden) {
-      panel.style.display = 'block';
-      if (btn) {
-        btn.innerHTML = '<i class="fa-regular fa-eye-slash"></i> <span>Hide Model</span>';
-        btn.style.background = 'rgba(239, 68, 68, 0.22)';
-        btn.style.borderColor = 'rgba(248, 113, 113, 0.5)';
-        btn.style.color = '#fca5a5';
-      }
-    } else {
-      panel.style.display = 'none';
-      if (btn) {
-        btn.innerHTML = '<i class="fa-regular fa-eye"></i> <span>Reveal Target Synthesis</span>';
-        btn.style.background = 'rgba(2, 132, 199, 0.22)';
-        btn.style.borderColor = 'rgba(56, 189, 248, 0.45)';
-        btn.style.color = '#7dd3fc';
-      }
-    }
-  };
-
-  window.spotlightTriggerTerm = function (termText, paraId) {
-    const container = document.getElementById(paraId);
-    if (!container) return;
-    container.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    const originalBorder = container.style.borderLeft;
-    const originalShadow = container.style.boxShadow;
-    container.style.transition = 'all 0.3s ease';
-    container.style.borderLeft = '6px solid #0ea5e9';
-    container.style.boxShadow = '0 0 24px rgba(14, 165, 233, 0.4)';
-    setTimeout(() => {
-      container.style.borderLeft = originalBorder;
-      container.style.boxShadow = originalShadow;
-    }, 2000);
   };
 }
