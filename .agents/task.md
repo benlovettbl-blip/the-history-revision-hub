@@ -1,37 +1,29 @@
 # Department Rollout Staged State & Recommendations
 
 ## Last Completed Session:
-- **Universal Master Companion Classroom Textbook Recompilation & Typographical Balancing:**
-  - Following the universal calibration of KS3 narrative blocks (80–110w), all companion textbooks were audited and recompiled to guarantee full page budget utilization without voids or overflows.
-  - Implemented bidirectional auto-calibration typography engines (scaling font-size dynamically up to ~10.5pt–11.6pt Lora serif, line-height 1.45–1.53, balanced paragraph margins, and positive footer clearance >= 25px).
-  - Fixed multi-column `flex: 1` void traps, nested `<p>` browser closure bugs, and broken CSS selectors.
-  - **100% `✅ OPTIMAL` Reprographics Pass Across All 11 KS3 Units:**
-    1. **Medieval England, 1066–1485 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    2. **The Great War: Part 1, 1871–1914 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    3. **The Great War: Part 2, 1914–1919 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    4. **Monarchy, Religion & Power, 1509–1745 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    5. **The First British Empire, 1585–1783 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    6. **The Second British Empire, 1783–1914 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    7. **Industrialisation, Empire & Power, 1750–1901 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    8. **The History of Australia, 1770–1901 (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-    9. **Water and Sanitation Through Time, AD 43–Present (8 pages):** 100% `✅ OPTIMAL` (97–100% utilized, 0px overflow).
-    10. **The Shoah / Holocaust, 1933–1948 (12 pages):** 100% `✅ OPTIMAL` (96–98% utilized, 0px overflow).
-    11. **Post-War Britain, 1900–Present (8 pages):** 100% `✅ OPTIMAL` (97% utilized, 0px overflow).
-  - **GCSE / Key Stage 4 Textbooks:**
-    - Conflict in the Middle East, 1945–1995 (28 pages): 100% `✅ OPTIMAL` (0px overflow, 96% utilized).
-    - Weimar and Nazi Germany, 1918–1939 (28 pages): 100% `✅ OPTIMAL` (0px overflow, 96% utilized).
-    - Early Elizabethan England, 1558–1588 (28 pages): 100% `✅ OPTIMAL` (0px overflow, 96% utilized).
-    - Cold War and Global Flashpoints, 1945–1991 (12 pages): 100% `✅ OPTIMAL` (0px overflow, 96% utilized).
-    - Medicine Through Time (5 eras, 64 pages): 100% `✅ OPTIMAL` (0px overflow, 96% utilized).
-    - USA, 1954–1975 (28 pages): 0px overflow across all 28 pages.
-
-- **Data Integrity & Verification:**
-  - `node scripts/verify_all_textbooks_ssot.cjs`: 15/15 units verified (100% SSoT compliance, 276 total pages).
-  - `node scripts/verify_sanitization.cjs`: 0 matches for prohibited school/teacher identifiers across 6,891 files (100% clean).
+- **Lesson Stage Header Streamlining & Cognitive Accessibility:**
+  - Removed interactive model toggle and reveal drawer clutter from lesson stage headers.
+  - Made the 3-word workbook trigger chips 100% static (`cursor: default`, `pointer-events: none`, `user-select: none`), serving purely as clear classroom tracking anchors for teacher instruction and pupil workbook note-taking.
+- **Medicine Lesson 4.1 Narrative & Visual Evidence Upgrades:**
+  - Added Gregor Mendel & garden pea/bean cross-breeding experiments to paragraph `[1.1]` of Lesson 4.1.
+  - Composed and integrated authentic dual visual plate `gregor_mendel_pea_experiments.jpg` (portrait + botanical trait diagram).
+  - Integrated iconic May 1953 Antony Barrington Brown photograph `watson_and_crick_1953.jpg` (Watson & Crick at the Cavendish Laboratory) into Block 3, properly registered in `scripts/master_rights_database.json`.
+- **Lesson 4.1 Primary Source Deduplication & 1:1 Disciplinary Alignment:**
+  - Diagnosed and resolved the block-fallback glitch where Source A and Source E (Clinton & Blair) rendered twice.
+  - Aligned all 5 inquiry stages 1:1 with authentic, spec-calibrated primary sources:
+    - **Source A:** Gregor Mendel, *Experiments in Plant Hybridisation* (1866 / trans. 1901)
+    - **Source B:** Dr Rosalind Franklin, MRC Laboratory Research Report (1952)
+    - **Source C:** James Watson & Francis Crick, *Molecular Structure of Nucleic Acids*, *Nature* (25 April 1953)
+    - **Source D:** President Bill Clinton & Prime Minister Tony Blair, Joint Declaration on the HGP (26 June 2000)
+    - **Source E:** Dr Francis Collins, Commentary on the 'Treatment Gap' in Genomic Medicine (2003)
+  - Synchronized across all 6 data stores (`data/`, `public/data/`, `units/*/data.js`, `public/units/*/data.js`, `database.json`, `public/database.json`).
+- **Platform-Wide Audit & Verification:**
+  - Verified 0 duplicate sources across all 19 units repository-wide.
+  - 100% clean institutional neutrality verified via `verify_sanitization.cjs` (0 issues across 6,969 files).
+  - Production build verified via `npm run build` (vite build: 0 errors).
+  - Pushed to `origin/main` (commit `ef18ae5b`), triggering live Netlify production deployment.
 
 ## Current Active Status:
-- All Master Companion Textbooks recompiled, calibrated to optimal typography, zero overflow, and positive footer clearance.
-- Entire platform maintains 100% commercial neutrality under *"The History Revision Hub"*.
-
-## Recommended Next Step:
-- Review the compiled textbook PDFs or proceed with any specific workbook or curriculum enhancements as directed.
+- Platform is 100% synchronized, fully built, and deployed to Netlify production (`https://the-history-revision-hub.netlify.app`).
+- Live classroom views, stage headers, and pupil workbook triggers are in perfect harmony.
+- Ready for next development priority or review.
