@@ -7570,17 +7570,8 @@ export function renderLesson(lesson) {
       }
       triggerTerms = triggerTerms.filter(Boolean);
 
-      const wbModelSentence =
-        (matchedWbStage &&
-          (matchedWbStage.model_sentence ||
-            matchedWbStage.modelSentence ||
-            matchedWbStage.exemplar ||
-            '')) ||
-        '';
-
       let workbookAnchorHtml = '';
-      if (triggerTerms.length > 0 || wbModelSentence) {
-        const modelRevealId = `stage-model-reveal-${stageNum}-${index}`;
+      if (triggerTerms.length > 0) {
         const chipsHtml = triggerTerms
           .map((term, tIdx) => {
             const escapedTerm = String(term).replace(/"/g, '&quot;').replace(/'/g, "\\'");
@@ -7593,44 +7584,14 @@ export function renderLesson(lesson) {
           })
           .join('');
 
-        const revealBtnHtml = wbModelSentence
-          ? `
-            <button type="button" class="btn-stage-model-toggle no-print" onclick="event.stopPropagation(); if(window.toggleStageModelSentence){window.toggleStageModelSentence(this, '${modelRevealId}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 10px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease; white-space: nowrap;" title="Click to reveal gold standard synthesis sentence for pupil self-assessment">
-              <i class="fa-regular fa-eye"></i> <span>Reveal Target Synthesis</span>
-            </button>
-          `
-          : '';
-
-        const modelPanelHtml = wbModelSentence
-          ? `
-            <div id="${modelRevealId}" class="stage-model-reveal-panel" style="display: none; margin-top: 10px; padding: 10px 14px; background: rgba(15, 23, 42, 0.75); border: 1.5px dashed #38bdf8; border-radius: 6px; color: #f8fafc; transition: all 0.25s ease;">
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 5px; gap: 8px; flex-wrap: wrap;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px;">
-                  <i class="fa-solid fa-award" style="color: #f59e0b;"></i> Gold Standard Synthesis Model &bull; Workbook Self-Assessment
-                </span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 0.65rem; color: #94a3b8; font-style: italic;">
-                  Pupil Green-Pen Check
-                </span>
-              </div>
-              <div style="font-family: 'Lora', Georgia, serif; font-size: 0.96rem; line-height: 1.55; color: #f1f5f9;">
-                &ldquo;${wbModelSentence}&rdquo;
-              </div>
-            </div>
-          `
-          : '';
-
         workbookAnchorHtml = `
-          <div class="stage-workbook-anchor-row" style="margin-top: 10px; padding-top: 9px; border-top: 1px solid rgba(148, 163, 184, 0.2); display: flex; flex-direction: column; gap: 8px;">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;">
-              <div class="stage-triggers-container" style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; flex: 1 1 auto;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px; margin-right: 2px;">
-                  <i class="fa-solid fa-pen-nib"></i> Workbook Triggers:
-                </span>
-                ${chipsHtml}
-              </div>
-              ${revealBtnHtml}
+          <div class="stage-workbook-anchor-row" style="margin-top: 10px; padding-top: 9px; border-top: 1px solid rgba(148, 163, 184, 0.2); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <div class="stage-triggers-container" style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; flex: 1 1 auto;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px; margin-right: 2px;">
+                <i class="fa-solid fa-pen-nib"></i> Workbook Triggers:
+              </span>
+              ${chipsHtml}
             </div>
-            ${modelPanelHtml}
           </div>
         `;
       }
