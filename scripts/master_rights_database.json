@@ -5984,6 +5984,20 @@
           "commercial_use_permitted": true,
           "source_url": "https://www.iwm.org.uk/collections/item/object/205193982",
           "asset_path": "/images/source_b_ambulance_somme_1916.jpg"
+        },
+        {
+          "lesson_num": 16,
+          "lesson_title": "KT4.1 Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
+          "source_id": "Lesson 16 Narrative Plate 1",
+          "artifact_title": "Gregor Mendel and His Inheritance Experiments on Garden Peas and Beans",
+          "date": "1862–1866",
+          "creator": "Gregor Johann Mendel (1822–1884)",
+          "repository": "Augustinian Abbey of St Thomas, Brno / Wellcome Collection, London",
+          "accession_id": "Wellcome Collection ICV No 39868 / Moravian Museum (Mendelianum)",
+          "rights_status": "Public Domain (19th-Century Archival Photograph & Botanical Diagram)",
+          "commercial_use_permitted": true,
+          "source_url": "https://wellcomecollection.org/works/l0000527",
+          "asset_path": "/images/gregor_mendel_pea_experiments.jpg"
         }
       ],
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 11",
