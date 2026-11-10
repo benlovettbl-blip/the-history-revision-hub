@@ -1,4 +1,4 @@
-export default {
+window.unitData = {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -1281,7 +1281,7 @@ export default {
           "date": "c1250",
           "para_ref": "[1.1–1.2]",
           "heading": "Why was disease believed to be a direct punishment sent by God?",
-          "title": "Divine Retribution & Original Sin",
+          "title": "Supernatural & Religious Explanations of Disease",
           "dates": "c1250",
           "focus_clue": "Why was disease believed to be a direct punishment sent by God?",
           "bullets": [
@@ -1292,15 +1292,15 @@ export default {
           "words": [
             {
               "term": "Divine punishment for sin",
-              "clue": "The medieval Catholic Church taught that illness was a divine punishment sent by God to cleanse sin, leading sufferers to prioritize spiritual repentance over physical medical treatment."
+              "clue": "Official specification focus term: Divine punishment for sin"
             },
             {
               "term": "Original sin & human fallen state",
-              "clue": "Ordinary peasants and learned scholars believed humanity was inherently fallen, meaning bodily afflictions were natural reminders of moral weakness."
+              "clue": "Official specification focus term: Original sin & human fallen state"
             },
             {
               "term": "Prayer & repentance as primary cure",
-              "clue": "Because God sent disease, devout Christians believed genuine confession, fasting, and heartfelt prayer were the only reliable remedies."
+              "clue": "Official specification focus term: Prayer & repentance as primary cure"
             }
           ],
           "model_sentence": "Rooted in <strong>Original sin & human fallen state</strong>, ordinary people accepted sickness as <strong>Divine punishment for sin</strong>, relying on <strong>Prayer & repentance as primary cure</strong>."
@@ -1309,10 +1309,10 @@ export default {
           "step": 2,
           "date": "c1280",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why was leprosy viewed as visible proof of divine judgment?",
-          "title": "Moral Taint: Leprosy & Social Exclusion",
+          "heading": "Why were leprosy sufferers banished from medieval communities?",
+          "title": "Moral Taint: Leprosy & Social Stigma",
           "dates": "c1280",
-          "focus_clue": "Why was leprosy viewed as visible proof of divine judgment?",
+          "focus_clue": "Why were leprosy sufferers banished from medieval communities?",
           "bullets": [
             "Biblical leprosy moral stigma",
             "Exile to isolated Lazar houses",
@@ -1321,15 +1321,15 @@ export default {
           "words": [
             {
               "term": "Biblical leprosy moral stigma",
-              "clue": "Lepers were believed to bear an outward physical sign of internal moral corruption, lust, and divine condemnation."
+              "clue": "Official specification focus term: Biblical leprosy moral stigma"
             },
             {
               "term": "Exile to isolated Lazar houses",
-              "clue": "Sufferers were legally cast out of towns and forced to live in isolated Lazar houses beyond city gates."
+              "clue": "Official specification focus term: Exile to isolated Lazar houses"
             },
             {
               "term": "Warning wooden clappers & bells",
-              "clue": "Lepers were forced to wear heavy hooded cloaks and sound wooden clappers or warning bells to alert healthy travellers."
+              "clue": "Official specification focus term: Warning wooden clappers & bells"
             }
           ],
           "model_sentence": "Bearing the painful <strong>Biblical leprosy moral stigma</strong>, victims faced <strong>Exile to isolated Lazar houses</strong> while sounding <strong>Warning wooden clappers & bells</strong>."
@@ -1338,10 +1338,10 @@ export default {
           "step": 3,
           "date": "1345",
           "para_ref": "[3.1–3.2]",
-          "heading": "How did the Church reconcile astrology with Christian doctrine?",
-          "title": "Astrological Explanations & The Zodiac Man",
+          "heading": "How did physicians use planetary movements to diagnose illness?",
+          "title": "Astrological Influences & The Zodiac Man",
           "dates": "1345",
-          "focus_clue": "How did the Church reconcile astrology with Christian doctrine?",
+          "focus_clue": "How did physicians use planetary movements to diagnose illness?",
           "bullets": [
             "Zodiac Man parchment wheels",
             "1345 planetary conjunction",
@@ -1350,15 +1350,15 @@ export default {
           "words": [
             {
               "term": "Zodiac Man parchment wheels",
-              "clue": "Physicians consulted complex astrological parchment wheels linking each sign of the Zodiac to governing body parts before bleeding or purging."
+              "clue": "Official specification focus term: Zodiac Man parchment wheels"
             },
             {
               "term": "1345 planetary conjunction",
-              "clue": "The conjunction of Mars, Jupiter, and Saturn under Aquarius in 1345 was widely cited by church scholars as the celestial trigger of the Black Death."
+              "clue": "Official specification focus term: 1345 planetary conjunction"
             },
             {
               "term": "Mars, Saturn & Jupiter alignment",
-              "clue": "Planetary alignments were viewed as instruments of God’s cosmic will, transmitting corrupting miasma through the night air."
+              "clue": "Official specification focus term: Mars, Saturn & Jupiter alignment"
             }
           ],
           "model_sentence": "Medieval physicians consulted <strong>Zodiac Man parchment wheels</strong>, blaming the fateful <strong>1345 planetary conjunction</strong> and <strong>Mars, Saturn & Jupiter alignment</strong> for corrupting the air."
@@ -1367,10 +1367,10 @@ export default {
           "step": 4,
           "date": "c1350",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why did sick people turn to pilgrimage shrines rather than doctors?",
+          "heading": "Why did sick people travel to saintly shrines seeking divine healing?",
           "title": "Spiritual Intercession, Relics & Pilgrimage",
           "dates": "c1350",
-          "focus_clue": "Why did sick people turn to pilgrimage shrines rather than doctors?",
+          "focus_clue": "Why did sick people travel to saintly shrines seeking divine healing?",
           "bullets": [
             "Arduous pilgrimage to Canterbury",
             "Kissing holy relics of saints",
@@ -1379,15 +1379,15 @@ export default {
           "words": [
             {
               "term": "Arduous pilgrimage to Canterbury",
-              "clue": "Thousands of sick believers walked barefoot to holy shrines such as Thomas Becket’s tomb at Canterbury Cathedral in search of miraculous cures."
+              "clue": "Official specification focus term: Arduous pilgrimage to Canterbury"
             },
             {
               "term": "Kissing holy relics of saints",
-              "clue": "Touching or kissing bone fragments, garments, and relics of holy saints was believed to channel divine healing grace."
+              "clue": "Official specification focus term: Kissing holy relics of saints"
             },
             {
               "term": "Chantry masses & sale of indulgences",
-              "clue": "Wealthy families founded chantry chapels and bought papal indulgences to shorten suffering in purgatory and secure physical recovery."
+              "clue": "Official specification focus term: Chantry masses & sale of indulgences"
             }
           ],
           "model_sentence": "Seeking miraculous cures, pilgrims undertook the <strong>Arduous pilgrimage to Canterbury</strong>, reverently <strong>Kissing holy relics of saints</strong> and funding <strong>Chantry masses & sale of indulgences</strong>."
@@ -1396,10 +1396,10 @@ export default {
           "step": 5,
           "date": "c1400",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did church enforcement of Galen prevent medical progress?",
+          "heading": "How did the Church maintain absolute control over medical education?",
           "title": "Monastic Scriptoria, Galen & Censorship",
           "dates": "c1400",
-          "focus_clue": "Why did church enforcement of Galen prevent medical progress?",
+          "focus_clue": "How did the Church maintain absolute control over medical education?",
           "bullets": [
             "Monastic scriptoria Latin copying",
             "Galen purposeful creator dogma",
@@ -1408,15 +1408,15 @@ export default {
           "words": [
             {
               "term": "Monastic scriptoria Latin copying",
-              "clue": "Monks in scriptoria painstakingly hand-copied ancient Latin manuscripts, preserving traditional Galenic ideas without challenging or verifying them."
+              "clue": "Official specification focus term: Monastic scriptoria Latin copying"
             },
             {
               "term": "Galen purposeful creator dogma",
-              "clue": "Because pagan Galen taught the human body was made by a purposeful divine designer, the Catholic Church treated his anatomical writings as indisputable sacred dogma."
+              "clue": "Official specification focus term: Galen purposeful creator dogma"
             },
             {
               "term": "Roger Bacon imprisoned for heresy (1277)",
-              "clue": "Franciscan friar Roger Bacon was imprisoned by church authorities in 1277 after arguing that empirical observation should replace blind obedience to ancient texts."
+              "clue": "Official specification focus term: Roger Bacon imprisoned for heresy (1277)"
             }
           ],
           "model_sentence": "Through <strong>Monastic scriptoria Latin copying</strong> and enforcing <strong>Galen purposeful creator dogma</strong>, the Church suppressed empirical science, leaving <strong>Roger Bacon imprisoned for heresy (1277)</strong>."
@@ -2390,145 +2390,145 @@ export default {
           "step": 1,
           "date": "c460 BC",
           "para_ref": "[1.1–1.2]",
-          "heading": "How did Hippocrates separate medicine from superstition?",
+          "heading": "How did Greek observation challenge supernatural beliefs?",
           "bullets": [
-            "Observing clinical symptoms at the bedside",
-            "Recording natural disease trajectories in treatises",
-            "Rejecting divine curses in favour of bodily laws"
+            "Hippocratic clinical method",
+            "Rejection of gods",
+            "Hippocratic Oath ethics"
           ],
-          "focus_clue": "How did Hippocrates separate medicine from superstition?",
+          "focus_clue": "How did Greek observation challenge supernatural beliefs?",
           "words": [
             {
-              "term": "Observing clinical symptoms at the bedside",
-              "clue": "Hippocrates pioneered clinical bedside observation, recording patients' pulses, breathing, and symptoms carefully rather than attributing illnesses to demonic spirits."
+              "term": "Hippocratic clinical method",
+              "clue": "Official specification focus term: Hippocratic clinical method"
             },
             {
-              "term": "Recording natural disease trajectories in treatises",
-              "clue": "Hippocrates (c.460–c.370 BC) argued that disease was caused by natural, physical imbalances within the body rather than malicious demons."
+              "term": "Rejection of gods",
+              "clue": "Official specification focus term: Rejection of gods"
             },
             {
-              "term": "Rejecting divine curses in favour of bodily laws",
-              "clue": "Hippocratic medicine separated healing from superstition, insisting that diseases were natural phenomena governed by physical laws that human reason could understand."
+              "term": "Hippocratic Oath ethics",
+              "clue": "Official specification focus term: Hippocratic Oath ethics"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>observing clinical symptoms at the bedside</strong> and <strong>recording natural disease trajectories in treatises</strong>, established authority maintained doctrinal control by <strong>rejecting divine curses in favour of bodily laws</strong>.",
-          "title": "How did Hippocrates separate medicine from superstition?",
+          "model_sentence": "By establishing the <strong>Hippocratic clinical method</strong>, Greek physicians pioneered the <strong>Rejection of gods</strong> as direct causes of illness, binding practitioners to <strong>Hippocratic Oath ethics</strong>.",
+          "title": "Rational Explanations: Hippocrates & Clinical Method",
           "dates": "c460 BC"
         },
         {
           "step": 2,
           "date": "c1250",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why did humoral theory seem logical to medieval people?",
+          "heading": "How did humoral balance explain health and disease?",
           "bullets": [
-            "Balancing blood, phlegm, yellow bile, and black bile",
-            "Connecting bodily fluids to seasons and elements",
-            "Explaining distinct emotional temperaments"
+            "Four bodily humours",
+            "Blood, phlegm & biles",
+            "Seasonal balance system"
           ],
-          "focus_clue": "Why did humoral theory seem logical to medieval people?",
+          "focus_clue": "How did humoral balance explain health and disease?",
           "words": [
             {
-              "term": "Balancing blood, phlegm, yellow bile, and black bile",
-              "clue": "If a patient suffered from a fever—believed to be caused by an excess of blood or yellow bile, characterised as hot and dry—the physician must prescribe cold, wet remedies such as cucumber, cooling herbs, or cold baths."
+              "term": "Four bodily humours",
+              "clue": "Official specification focus term: Four bodily humours"
             },
             {
-              "term": "Connecting bodily fluids to seasons and elements",
-              "clue": "Each humour corresponded to one of the four earthly elements (air, water, earth, fire) and changed with the seasons."
+              "term": "Blood, phlegm & biles",
+              "clue": "Official specification focus term: Blood, phlegm & biles"
             },
             {
-              "term": "Explaining distinct emotional temperaments",
-              "clue": "Galen linked bodily health to the Four Humours (blood, phlegm, black bile, yellow bile), arguing that an excess of any fluid determined a person's emotional personality and physical ailments."
+              "term": "Seasonal balance system",
+              "clue": "Official specification focus term: Seasonal balance system"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>balancing blood, phlegm, yellow bile, and black bile</strong> and <strong>connecting bodily fluids to seasons and elements</strong>, established authority maintained doctrinal control by <strong>explaining distinct emotional temperaments</strong>.",
-          "title": "Why did humoral theory seem logical to medieval people?",
+          "model_sentence": "Medieval rational medicine relied on the <strong>Four bodily humours</strong>, asserting that health required balancing <strong>Blood, phlegm & biles</strong> within a strict <strong>Seasonal balance system</strong>.",
+          "title": "The Four Bodily Humours",
           "dates": "c1250"
         },
         {
           "step": 3,
           "date": "c1280",
           "para_ref": "[3.1–3.2]",
-          "heading": "How did the Theory of Opposites provide practical treatment rules?",
+          "heading": "How did Galen extend Hippocratic humoral theory?",
           "bullets": [
-            "Formulating contraria contrariis curantur in imperial Rome",
-            "Treating cold wet phlegm with hot dry spices",
-            "Administering cooling cucumbers for burning yellow bile fevers"
+            "Galen Theory of Opposites",
+            "Contraries cure contraries",
+            "Animal dissection errors"
           ],
-          "focus_clue": "How did the Theory of Opposites provide practical treatment rules?",
+          "focus_clue": "How did Galen extend Hippocratic humoral theory?",
           "words": [
             {
-              "term": "Formulating contraria contrariis curantur in imperial Rome",
-              "clue": "In the second century AD, the Greek physician Galen working in Rome greatly expanded Hippocratic humoralism by creating the Theory of Opposites (contraria contrariis curantur)."
+              "term": "Galen Theory of Opposites",
+              "clue": "Official specification focus term: Galen Theory of Opposites"
             },
             {
-              "term": "Treating cold wet phlegm with hot dry spices",
-              "clue": "He established the Theory of the Four Humours: the body contained four vital liquids—Blood (warm and wet), Phlegm (cold and wet), Black Bile (cold and dry), and Yellow Bile (warm and dry)."
+              "term": "Contraries cure contraries",
+              "clue": "Official specification focus term: Contraries cure contraries"
             },
             {
-              "term": "Administering cooling cucumbers for burning yellow bile fevers",
-              "clue": "A dark, thick urine indicated burning yellow bile, whereas thin, pale urine pointed to excessive phlegm."
+              "term": "Animal dissection errors",
+              "clue": "Official specification focus term: Animal dissection errors"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>formulating contraria contrariis curantur in imperial Rome</strong> and <strong>treating cold wet phlegm with hot dry spices</strong>, established authority maintained doctrinal control by <strong>administering cooling cucumbers for burning yellow bile fevers</strong>.",
-          "title": "How did the Theory of Opposites provide practical treatment rules?",
+          "model_sentence": "Building on Hippocrates, <strong>Galen Theory of Opposites</strong> taught that <strong>Contraries cure contraries</strong>, though his anatomical authority was deeply flawed by uncorrected <strong>Animal dissection errors</strong>.",
+          "title": "Galen’s Theory of Opposites",
           "dates": "c1280"
         },
         {
           "step": 4,
           "date": "c1300",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why did uroscopy give physicians great diagnostic authority?",
+          "heading": "Why was urine inspection central to medieval diagnosis?",
           "bullets": [
-            "Inspecting clear glass matula flasks against window light",
-            "Comparing urine colour against twenty-part parchment wheels",
-            "Charging exorbitant consultation fees without cutting skin"
+            "Uroscopy urine flask (matula)",
+            "Urine diagnostic wheel",
+            "Zodiac Man alignment"
           ],
-          "focus_clue": "Why did uroscopy give physicians great diagnostic authority?",
+          "focus_clue": "Why was urine inspection central to medieval diagnosis?",
           "words": [
             {
-              "term": "Inspecting clear glass matula flasks against window light",
-              "clue": "Physicians collected urine in a glass flask called a jordan and compared its colour, density, smell, and even taste against printed urine wheels."
+              "term": "Uroscopy urine flask (matula)",
+              "clue": "Official specification focus term: Uroscopy urine flask (matula)"
             },
             {
-              "term": "Comparing urine colour against twenty-part parchment wheels",
-              "clue": "Physicians collected urine in a glass flask called a jordan and compared its colour, density, smell, and even taste against printed urine wheels."
+              "term": "Urine diagnostic wheel",
+              "clue": "Official specification focus term: Urine diagnostic wheel"
             },
             {
-              "term": "Charging exorbitant consultation fees without cutting skin",
-              "clue": "University-trained medieval physicians commanded high consultation fees examining patient urine and astrology charts, refusing to perform physical surgery which they deemed degrading trade work."
+              "term": "Zodiac Man alignment",
+              "clue": "Official specification focus term: Zodiac Man alignment"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>inspecting clear glass matula flasks against window light</strong> and <strong>comparing urine colour against twenty-part parchment wheels</strong>, established authority maintained doctrinal control by <strong>charging exorbitant consultation fees without cutting skin</strong>.",
-          "title": "Why did uroscopy give physicians great diagnostic authority?",
+          "model_sentence": "Physicians inspected patient samples using a glass <strong>Uroscopy urine flask (matula)</strong>, matching colour against a <strong>Urine diagnostic wheel</strong> alongside <strong>Zodiac Man alignment</strong>.",
+          "title": "The Matula & Diagnostic Uroscopy",
           "dates": "c1300"
         },
         {
           "step": 5,
           "date": "c1350",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did rational physicians link bad smells directly to epidemics?",
+          "heading": "Why was bad air blamed for spreading epidemic disease?",
           "bullets": [
-            "Blaming poisonous miasma arising from stagnant cesspools",
-            "Inhaling corrupt foul air directly into bloodstream",
-            "Sniffing herbal pomanders to neutralise noxious vapours"
+            "Miasma theory (bad air)",
+            "Cesspool stench fears",
+            "Unbalanced bodily fluids"
           ],
-          "focus_clue": "Why did rational physicians link bad smells directly to epidemics?",
+          "focus_clue": "Why was bad air blamed for spreading epidemic disease?",
           "words": [
             {
-              "term": "Blaming poisonous miasma arising from stagnant cesspools",
-              "clue": "Physicians attributed widespread epidemics to miasma—foul-smelling toxic vapors released by rotting waste, animal carcasses, and stagnant cesspools."
+              "term": "Miasma theory (bad air)",
+              "clue": "Official specification focus term: Miasma theory (bad air)"
             },
             {
-              "term": "Inhaling corrupt foul air directly into bloodstream",
-              "clue": "Source E shows that London authorities believed rotting offal and filth produced foul stenches (miasma) that corrupted the air and caused fever."
+              "term": "Cesspool stench fears",
+              "clue": "Official specification focus term: Cesspool stench fears"
             },
             {
-              "term": "Sniffing herbal pomanders to neutralise noxious vapours",
-              "clue": "Wealthy citizens carried pomanders packed with perfumed herbs, cloves, and lavender to ward off poisonous miasma while walking through foul-smelling medieval streets."
+              "term": "Unbalanced bodily fluids",
+              "clue": "Official specification focus term: Unbalanced bodily fluids"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>blaming poisonous miasma arising from stagnant cesspools</strong> and <strong>inhaling corrupt foul air directly into bloodstream</strong>, established authority maintained doctrinal control by <strong>sniffing herbal pomanders to neutralise noxious vapours</strong>.",
-          "title": "Why did rational physicians link bad smells directly to epidemics?",
+          "model_sentence": "Believing in <strong>Miasma theory (bad air)</strong>, medieval communities associated <strong>Cesspool stench fears</strong> with poisonous airborne vapours that corrupted <strong>Unbalanced bodily fluids</strong>.",
+          "title": "Miasma Theory & Foul Vapours",
           "dates": "c1350"
         }
       ],
@@ -3513,145 +3513,145 @@ export default {
           "step": 1,
           "date": "c1250",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did ordinary people consider prayer more vital than medicine?",
+          "heading": "How did Christians attempt to prevent illness through devotion?",
           "bullets": [
-            "Chanting the Lord’s Prayer and Hail Marys",
-            "Ordering parish fasts and penitential processions",
-            "Seeking miraculous cures at saintly shrines"
+            "Penance & fasting",
+            "Chanted Latin prayers",
+            "Flagellant whipping processions"
           ],
-          "focus_clue": "Why did ordinary people consider prayer more vital than medicine?",
+          "focus_clue": "How did Christians attempt to prevent illness through devotion?",
           "words": [
             {
-              "term": "Chanting the Lord’s Prayer and Hail Marys",
-              "clue": "The primary treatments were therefore religious: saying special prayers such as the Ave Maria and Paternoster, paying for chanting masses, fasting on bread and water, and lighting consecrated candles at local parish altars."
+              "term": "Penance & fasting",
+              "clue": "Official specification focus term: Penance & fasting"
             },
             {
-              "term": "Ordering parish fasts and penitential processions",
-              "clue": "During outbreaks of disease, bishops ordered communities to participate in public penitential processions, praying and fasting to appease God's divine wrath."
+              "term": "Chanted Latin prayers",
+              "clue": "Official specification focus term: Chanted Latin prayers"
             },
             {
-              "term": "Seeking miraculous cures at saintly shrines",
-              "clue": "Unable to afford physicians, thousands of suffering commoners walked miles to pilgrimage shrines like Thomas Becket's tomb at Canterbury seeking miraculous cures."
+              "term": "Flagellant whipping processions",
+              "clue": "Official specification focus term: Flagellant whipping processions"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>chanting the Lord’s Prayer and Hail Marys</strong> and <strong>ordering parish fasts and penitential processions</strong>, established authority maintained doctrinal control by <strong>seeking miraculous cures at saintly shrines</strong>.",
-          "title": "Why did ordinary people consider prayer more vital than medicine?",
+          "model_sentence": "To avert God's wrath, the medieval Church prescribed strict <strong>Penance & fasting</strong> alongside <strong>Chanted Latin prayers</strong>, inspiring extreme <strong>Flagellant whipping processions</strong> during plague crises.",
+          "title": "Religious Rituals, Prayer & Penance",
           "dates": "c1250"
         },
         {
           "step": 2,
           "date": "c1300",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why was bloodletting the most universal physical treatment?",
+          "heading": "Why was bloodletting the most common medieval surgical treatment?",
           "bullets": [
-            "Relieving dangerous plethoric blood congestion",
-            "Slicing median arm veins with lancets and fleams",
-            "Bleeding monastic brothers six times a year"
+            "Phlebotomy vein incision",
+            "Iron fleams & leeches",
+            "Cupping & pewter bowls"
           ],
-          "focus_clue": "Why was bloodletting the most universal physical treatment?",
+          "focus_clue": "Why was bloodletting the most common medieval surgical treatment?",
           "words": [
             {
-              "term": "Relieving dangerous plethoric blood congestion",
-              "clue": "Medieval medicine held that an excess of warm blood caused fevers and inflammation, making therapeutic bloodletting the most universal treatment to restore humoral balance."
+              "term": "Phlebotomy vein incision",
+              "clue": "Official specification focus term: Phlebotomy vein incision"
             },
             {
-              "term": "Slicing median arm veins with lancets and fleams",
-              "clue": "Barber-surgeons drained pints of blood by slicing veins with sharp iron fleams or applying blood-sucking leeches until the patient felt faint."
+              "term": "Iron fleams & leeches",
+              "clue": "Official specification focus term: Iron fleams & leeches"
             },
             {
-              "term": "Bleeding monastic brothers six times a year",
-              "clue": "Monks in monasteries were routinely bled four to six times a year as a preventative measure, followed by days of resting and nourishing broths."
+              "term": "Cupping & pewter bowls",
+              "clue": "Official specification focus term: Cupping & pewter bowls"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>relieving dangerous plethoric blood congestion</strong> and <strong>slicing median arm veins with lancets and fleams</strong>, established authority maintained doctrinal control by <strong>bleeding monastic brothers six times a year</strong>.",
-          "title": "Why was bloodletting the most universal physical treatment?",
+          "model_sentence": "To restore humoral balance, barber-surgeons performed <strong>Phlebotomy vein incision</strong> using <strong>Iron fleams & leeches</strong>, collecting expelled blood in <strong>Cupping & pewter bowls</strong>.",
+          "title": "Humoral Phlebotomy (Bloodletting)",
           "dates": "c1300"
         },
         {
           "step": 3,
           "date": "c1320",
           "para_ref": "[3.1–3.2]",
-          "heading": "How was purging believed to restore bodily equilibrium?",
+          "heading": "How did digestive evacuation treat humoral imbalance?",
           "bullets": [
-            "Administering violent emetics to induce vomiting",
-            "Injecting herbal broths through pewter clyster pipes",
-            "Flushing corrupt poisonous humours from the bowels"
+            "Emetics (black hellebore)",
+            "Laxatives & clysters",
+            "Humoural fluid evacuation"
           ],
-          "focus_clue": "How was purging believed to restore bodily equilibrium?",
+          "focus_clue": "How did digestive evacuation treat humoral imbalance?",
           "words": [
             {
-              "term": "Administering violent emetics to induce vomiting",
-              "clue": "Patients were administered powerful herbal emetics formulated from hellebore or antimony to induce violent vomiting."
+              "term": "Emetics (black hellebore)",
+              "clue": "Official specification focus term: Emetics (black hellebore)"
             },
             {
-              "term": "Injecting herbal broths through pewter clyster pipes",
-              "clue": "For stubborn ailments, practitioners administered a clyster—an enema injected into the rectum using a pewter or copper syringe attached to an animal bladder."
+              "term": "Laxatives & clysters",
+              "clue": "Official specification focus term: Laxatives & clysters"
             },
             {
-              "term": "Flushing corrupt poisonous humours from the bowels",
-              "clue": "Purging was so violently exhausting that patients frequently faint from dehydration, but medieval healers believed this physical trauma proved that corrupted, malignant humours were successfully leaving the patient's system."
+              "term": "Humoural fluid evacuation",
+              "clue": "Official specification focus term: Humoural fluid evacuation"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>administering violent emetics to induce vomiting</strong> and <strong>injecting herbal broths through pewter clyster pipes</strong>, established authority maintained doctrinal control by <strong>flushing corrupt poisonous humours from the bowels</strong>.",
-          "title": "How was purging believed to restore bodily equilibrium?",
+          "model_sentence": "Sufferers took toxic <strong>Emetics (black hellebore)</strong> and administered <strong>Laxatives & clysters</strong> to force immediate <strong>Humoural fluid evacuation</strong> from congested organs.",
+          "title": "Purging, Vomiting & Enemas",
           "dates": "c1320"
         },
         {
           "step": 4,
           "date": "c1350",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why did herbal recipes remain popular across all social classes?",
+          "heading": "How were plant mixtures and Theriac used to combat sickness?",
           "bullets": [
-            "Compounding garden herbs like sage and mint",
-            "Mixing seventy ingredients into Venice Theriac",
-            "Using opium to dull acute physical pain"
+            "Herbal Materia Medica",
+            "Theriac (70 ingredients)",
+            "Local apothecaries remedies"
           ],
-          "focus_clue": "Why did herbal recipes remain popular across all social classes?",
+          "focus_clue": "How were plant mixtures and Theriac used to combat sickness?",
           "words": [
             {
-              "term": "Compounding garden herbs like sage and mint",
-              "clue": "Environmental air quality was deemed crucial; to protect against airborne miasma, households burned aromatic woods like juniper or scattered fresh lavender, sage, and mint across rush-covered floors."
+              "term": "Herbal Materia Medica",
+              "clue": "Official specification focus term: Herbal Materia Medica"
             },
             {
-              "term": "Mixing seventy ingredients into Venice Theriac",
-              "clue": "A complex herbal and animal antidote containing dozens of ingredients (including crushed viper flesh and opium) widely consumed as a panacea."
+              "term": "Theriac (70 ingredients)",
+              "clue": "Official specification focus term: Theriac (70 ingredients)"
             },
             {
-              "term": "Using opium to dull acute physical pain",
-              "clue": "Instead, he pioneered gentle herbal dressings, washing wounds with wine (an antiseptic), and administering opium for pain relief, achieving remarkably high survival rates."
+              "term": "Local apothecaries remedies",
+              "clue": "Official specification focus term: Local apothecaries remedies"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>compounding garden herbs like sage and mint</strong> and <strong>mixing seventy ingredients into Venice Theriac</strong>, established authority maintained doctrinal control by <strong>using opium to dull acute physical pain</strong>.",
-          "title": "Why did herbal recipes remain popular across all social classes?",
+          "model_sentence": "Drawing on ancient <strong>Herbal Materia Medica</strong>, compounders mixed complex <strong>Theriac (70 ingredients)</strong> to supply <strong>Local apothecaries remedies</strong> against acute disease.",
+          "title": "Herbal Apothecary Remedies & Theriac",
           "dates": "c1350"
         },
         {
           "step": 5,
           "date": "c1400",
           "para_ref": "[5.1–5.2]",
-          "heading": "How did wealthy barons attempt to prevent sickness before it struck?",
+          "heading": "What rules did wealthy elites follow to preserve personal health?",
           "bullets": [
-            "Following Salerno’s Regimen Sanitatis rules",
-            "Holding sweet-scented pomanders against miasma",
-            "Fleeing plague cities for rural country manors"
+            "Regimen Sanitatis rules",
+            "Sweet pomander scents",
+            "Lavender & burning tar"
           ],
-          "focus_clue": "How did wealthy barons attempt to prevent sickness before it struck?",
+          "focus_clue": "What rules did wealthy elites follow to preserve personal health?",
           "words": [
             {
-              "term": "Following Salerno’s Regimen Sanitatis rules",
-              "clue": "Alongside curative treatments, medieval medicine placed paramount importance on prevention through lifestyle moderation, codified in the *Regimen Sanitatis* (The Rule of Health)."
+              "term": "Regimen Sanitatis rules",
+              "clue": "Official specification focus term: Regimen Sanitatis rules"
             },
             {
-              "term": "Holding sweet-scented pomanders against miasma",
-              "clue": "Environmental air quality was deemed crucial; to protect against airborne miasma, households burned aromatic woods like juniper or scattered fresh lavender, sage, and mint across rush-covered floors."
+              "term": "Sweet pomander scents",
+              "clue": "Official specification focus term: Sweet pomander scents"
             },
             {
-              "term": "Fleeing plague cities for rural country manors",
-              "clue": "At the first sign of an epidemic, wealthy landowners and royal courtiers fled crowded, unsanitary cities for isolated country estates to escape infectious air."
+              "term": "Lavender & burning tar",
+              "clue": "Official specification focus term: Lavender & burning tar"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>following Salerno’s Regimen Sanitatis rules</strong> and <strong>holding sweet-scented pomanders against miasma</strong>, established authority maintained doctrinal control by <strong>fleeing plague cities for rural country manors</strong>.",
-          "title": "How did wealthy barons attempt to prevent sickness before it struck?",
+          "model_sentence": "Wealthy citizens followed <strong>Regimen Sanitatis rules</strong> by carrying <strong>Sweet pomander scents</strong> and fumigating bedchambers with <strong>Lavender & burning tar</strong> to repel bad air.",
+          "title": "The Regimen Sanitatis & Clean Air",
           "dates": "c1400"
         }
       ],
@@ -4636,145 +4636,145 @@ export default {
           "step": 1,
           "date": "c1250",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why were university physicians accessible only to the ultra-wealthy?",
+          "heading": "Why were trained physicians inaccessible to the poor?",
           "bullets": [
-            "Training ten years in Latin disputations and Galen",
-            "Charging exorbitant bedside consultation fees",
-            "Refusing manual surgical cutting as beneath dignity"
+            "University-trained physicians",
+            "Latin texts & star charts",
+            "High diagnostic fees"
           ],
-          "focus_clue": "Why were university physicians accessible only to the ultra-wealthy?",
+          "focus_clue": "Why were trained physicians inaccessible to the poor?",
           "words": [
             {
-              "term": "Training ten years in Latin disputations and Galen",
-              "clue": "Because their training took up to ten years, their fees were exorbitant, limiting their services to royalty, nobility, and wealthy merchants."
+              "term": "University-trained physicians",
+              "clue": "Official specification focus term: University-trained physicians"
             },
             {
-              "term": "Charging exorbitant bedside consultation fees",
-              "clue": "Because their training took up to ten years, their fees were exorbitant, limiting their services to royalty, nobility, and wealthy merchants."
+              "term": "Latin texts & star charts",
+              "clue": "Official specification focus term: Latin texts & star charts"
             },
             {
-              "term": "Refusing manual surgical cutting as beneath dignity",
-              "clue": "In sharp contrast to university-educated physicians who considered manual labor beneath their intellectual dignity, barber-surgeons were craftsmen organized into urban trade guilds, such as the London Guild of Barber-Surgeons established in 1308."
+              "term": "High diagnostic fees",
+              "clue": "Official specification focus term: High diagnostic fees"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>training ten years in Latin disputations and Galen</strong> and <strong>charging exorbitant bedside consultation fees</strong>, established authority maintained doctrinal control by <strong>refusing manual surgical cutting as beneath dignity</strong>.",
-          "title": "Why were university physicians accessible only to the ultra-wealthy?",
+          "model_sentence": "Wealthy elites consulted <strong>University-trained physicians</strong> who diagnosed illness through ancient <strong>Latin texts & star charts</strong> while charging <strong>High diagnostic fees</strong> without performing surgery.",
+          "title": "University Physicians & High Consultation Fees",
           "dates": "c1250"
         },
         {
           "step": 2,
           "date": "c1300",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did apothecaries provide accessible medicines to townspeople?",
+          "heading": "How did apothecaries provide affordable urban remedies?",
           "bullets": [
-            "Serving seven-year practical merchant guild apprenticeships",
-            "Dispensing herbal simples and syrups from shopfronts",
-            "Offering cheap medicinal alternatives to town burghers"
+            "Apothecary guild trade",
+            "Herbal preparations sold",
+            "Cheaper urban access"
           ],
-          "focus_clue": "How did apothecaries provide accessible medicines to townspeople?",
+          "focus_clue": "How did apothecaries provide affordable urban remedies?",
           "words": [
             {
-              "term": "Serving seven-year practical merchant guild apprenticeships",
-              "clue": "Apothecaries were organized into trading guilds (often alongside pepperers and grocers) and trained through rigorous seven-year manual apprenticeships."
+              "term": "Apothecary guild trade",
+              "clue": "Official specification focus term: Apothecary guild trade"
             },
             {
-              "term": "Dispensing herbal simples and syrups from shopfronts",
-              "clue": "They relied on rich oral traditions and handwritten manuscript recipe books (*leechbooks*) passed down through generations, preparing herbal infusions, syrups, and soothing poultices from kitchen gardens and surrounding hedgerows using sage, garlic, elderberry, mint, and chamomile."
+              "term": "Herbal preparations sold",
+              "clue": "Official specification focus term: Herbal preparations sold"
             },
             {
-              "term": "Offering cheap medicinal alternatives to town burghers",
-              "clue": "Apothecaries mixed affordable herbal concoctions, ointments, and tonics for urban townspeople who could never afford a university-educated physician's fees."
+              "term": "Cheaper urban access",
+              "clue": "Official specification focus term: Cheaper urban access"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>serving seven-year practical merchant guild apprenticeships</strong> and <strong>dispensing herbal simples and syrups from shopfronts</strong>, established authority maintained doctrinal control by <strong>offering cheap medicinal alternatives to town burghers</strong>.",
-          "title": "How did apothecaries provide accessible medicines to townspeople?",
+          "model_sentence": "Ordinary townspeople turned to the <strong>Apothecary guild trade</strong>, where retail shopfronts and <strong>Herbal preparations sold</strong> provided far <strong>Cheaper urban access</strong> to medical care.",
+          "title": "Guild Apothecaries & Spicers",
           "dates": "c1300"
         },
         {
           "step": 3,
           "date": "c1320",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why were barber-surgeons viewed as lower-status craftsmen?",
+          "heading": "What manual procedures did barber-surgeons carry out?",
           "bullets": [
-            "Performing bloody manual procedures and amputations",
-            "Belonging to craft trade guilds rather than universities",
-            "Working with cautery irons without anaesthetic"
+            "Barber-surgeon guild",
+            "Bloodletting & tooth pulling",
+            "Cauterisation & amputation"
           ],
-          "focus_clue": "Why were barber-surgeons viewed as lower-status craftsmen?",
+          "focus_clue": "What manual procedures did barber-surgeons carry out?",
           "words": [
             {
-              "term": "Performing bloody manual procedures and amputations",
-              "clue": "Because the Catholic Church strictly forbade clergy and scholars from shedding human blood (*ecclesia abhorret a sanguine*), physicians refused to cut tissue, delegating all bloody manual operations to barber-surgeons."
+              "term": "Barber-surgeon guild",
+              "clue": "Official specification focus term: Barber-surgeon guild"
             },
             {
-              "term": "Belonging to craft trade guilds rather than universities",
-              "clue": "In sharp contrast to university-educated physicians who considered manual labor beneath their intellectual dignity, barber-surgeons were craftsmen organized into urban trade guilds, such as the London Guild of Barber-Surgeons established in 1308."
+              "term": "Bloodletting & tooth pulling",
+              "clue": "Official specification focus term: Bloodletting & tooth pulling"
             },
             {
-              "term": "Working with cautery irons without anaesthetic",
-              "clue": "They pulled decayed teeth, lanced agonising carbuncles and boils, set broken bones, dressed battle wounds with egg yolks and turpentine, and carried out emergency amputations on gangrenous limbs without anaesthetic or antiseptics."
+              "term": "Cauterisation & amputation",
+              "clue": "Official specification focus term: Cauterisation & amputation"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>performing bloody manual procedures and amputations</strong> and <strong>belonging to craft trade guilds rather than universities</strong>, established authority maintained doctrinal control by <strong>working with cautery irons without anaesthetic</strong>.",
-          "title": "Why were barber-surgeons viewed as lower-status craftsmen?",
+          "model_sentence": "Manual operations fell to the <strong>Barber-surgeon guild</strong>, who conducted routine <strong>Bloodletting & tooth pulling</strong> as well as traumatic <strong>Cauterisation & amputation</strong> without anaesthetics.",
+          "title": "Barber-Surgeons & Wound Care",
           "dates": "c1320"
         },
         {
           "step": 4,
           "date": "c1350",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why did monastic hospitals deliberately avoid medical treatment?",
+          "heading": "Why did medieval hospitals prioritize spiritual comfort over healing?",
           "bullets": [
-            "Emphasizing spiritual care not cure in chapels",
-            "Providing clean beds and hot broth to elderly pilgrims",
-            "Barring infectious plague and leprosy sufferers"
+            "Monastic charity hospitals",
+            "Care not cure philosophy",
+            "Bed rest & prayer"
           ],
-          "focus_clue": "Why did monastic hospitals deliberately avoid medical treatment?",
+          "focus_clue": "Why did medieval hospitals prioritize spiritual comfort over healing?",
           "words": [
             {
-              "term": "Emphasizing spiritual care not cure in chapels",
-              "clue": "The guiding ethos was strictly \"care not cure\": providing clean bedding, warm fires, simple nourishment, and daily religious confession to comfort the patient's soul for eternity."
+              "term": "Monastic charity hospitals",
+              "clue": "Official specification focus term: Monastic charity hospitals"
             },
             {
-              "term": "Providing clean beds and hot broth to elderly pilgrims",
-              "clue": "These institutions were not medical treatment centres in the modern sense: they admitted the elderly, the homeless, pilgrims, and the chronically infirm, but specifically rejected infectious, incurable, or dying patients to prevent contagion."
+              "term": "Care not cure philosophy",
+              "clue": "Official specification focus term: Care not cure philosophy"
             },
             {
-              "term": "Barring infectious plague and leprosy sufferers",
-              "clue": "Monastic hospitals focused on spiritual comfort and prayer rather than physical cure, strictly barring sufferers of leprosy, plague, and contagious fevers from entering."
+              "term": "Bed rest & prayer",
+              "clue": "Official specification focus term: Bed rest & prayer"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>emphasizing spiritual care not cure in chapels</strong> and <strong>providing clean beds and hot broth to elderly pilgrims</strong>, established authority maintained doctrinal control by <strong>barring infectious plague and leprosy sufferers</strong>.",
-          "title": "Why did monastic hospitals deliberately avoid medical treatment?",
+          "model_sentence": "Run by nuns and monks, <strong>Monastic charity hospitals</strong> operated under a strict <strong>Care not cure philosophy</strong>, offering poor pilgrims shelter, warm broth, <strong>Bed rest & prayer</strong>.",
+          "title": "Monastic Hospitals: Care Not Cure",
           "dates": "c1350"
         },
         {
           "step": 5,
           "date": "c1400",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did the vast majority of sick people rely on female family members?",
+          "heading": "What vital medical role did women play in local villages?",
           "bullets": [
-            "Administering domestic garden poultices and tisanes",
-            "Delivering village infants through traditional midwifery",
-            "Providing free practical care inside peasant cottages"
+            "Domestic women healers",
+            "Local herb gardening",
+            "Midwifery & home care"
           ],
-          "focus_clue": "Why did the vast majority of sick people rely on female family members?",
+          "focus_clue": "What vital medical role did women play in local villages?",
           "words": [
             {
-              "term": "Administering domestic garden poultices and tisanes",
-              "clue": "They relied on rich oral traditions and handwritten manuscript recipe books (*leechbooks*) passed down through generations, preparing herbal infusions, syrups, and soothing poultices from kitchen gardens and surrounding hedgerows using sage, garlic, elderberry, mint, and chamomile."
+              "term": "Domestic women healers",
+              "clue": "Official specification focus term: Domestic women healers"
             },
             {
-              "term": "Delivering village infants through traditional midwifery",
-              "clue": "Wise women also served as traditional village midwives, attending labors, delivering newborns, and managing postpartum recovery."
+              "term": "Local herb gardening",
+              "clue": "Official specification focus term: Local herb gardening"
             },
             {
-              "term": "Providing free practical care inside peasant cottages",
-              "clue": "Although admired for their practical nursing skills and affordable community care, their status remained precarious."
+              "term": "Midwifery & home care",
+              "clue": "Official specification focus term: Midwifery & home care"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>administering domestic garden poultices and tisanes</strong> and <strong>delivering village infants through traditional midwifery</strong>, established authority maintained doctrinal control by <strong>providing free practical care inside peasant cottages</strong>.",
-          "title": "Why did the vast majority of sick people rely on female family members?",
+          "model_sentence": "The vast majority of everyday treatment was delivered by <strong>Domestic women healers</strong>, who practiced <strong>Local herb gardening</strong> to provide village <strong>Midwifery & home care</strong>.",
+          "title": "Women Healers & Household Care",
           "dates": "c1400"
         }
       ],
@@ -5768,145 +5768,145 @@ export default {
           "step": 1,
           "date": "June 1348",
           "para_ref": "[1.1–1.2]",
-          "heading": "How did trade routes unwittingly bring the plague to England?",
+          "heading": "How did the Black Death reach England in 1348?",
           "bullets": [
-            "Docking trade cogs from Gascony in Dorset",
-            "Unloading flea-infested wool sacks onto wharves",
-            "Spreading black rats into crowded timber cottages"
+            "Melcombe Regis port (1348)",
+            "Yersinia pestis bacteria",
+            "Black rats & fleas"
           ],
-          "focus_clue": "How did trade routes unwittingly bring the plague to England?",
+          "focus_clue": "How did the Black Death reach England in 1348?",
           "words": [
             {
-              "term": "Docking trade cogs from Gascony in Dorset",
-              "clue": "In June 1348, commercial sailing cogs carrying wine from Gascony docked at the Dorset port of Melcombe Regis, unwittingly bringing plague-carrying black rats to England."
+              "term": "Melcombe Regis port (1348)",
+              "clue": "Official specification focus term: Melcombe Regis port (1348)"
             },
             {
-              "term": "Unloading flea-infested wool sacks onto wharves",
-              "clue": "Dockers handling imported wool bales and cargo sacks were bitten by Xenopsylla cheopis fleas carrying the lethal Yersinia pestis bacterium."
+              "term": "Yersinia pestis bacteria",
+              "clue": "Official specification focus term: Yersinia pestis bacteria"
             },
             {
-              "term": "Spreading black rats into crowded timber cottages",
-              "clue": "The disease presented primarily in two terrifying forms: bubonic plague, spread by fleas living on black rats, causing high fever, vomiting, and agonizing dark swellings (buboes) in the groin and armpits."
+              "term": "Black rats & fleas",
+              "clue": "Official specification focus term: Black rats & fleas"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>docking trade cogs from Gascony in Dorset</strong> and <strong>unloading flea-infested wool sacks onto wharves</strong>, established authority maintained doctrinal control by <strong>spreading black rats into crowded timber cottages</strong>.",
-          "title": "How did trade routes unwittingly bring the plague to England?",
+          "model_sentence": "The Black Death arrived at <strong>Melcombe Regis port (1348)</strong> carrying deadly <strong>Yersinia pestis bacteria</strong> concealed on merchant trade ships inside <strong>Black rats & fleas</strong>.",
+          "title": "Arrival of the Pestilence at Melcombe Regis",
           "dates": "June 1348"
         },
         {
           "step": 2,
           "date": "Autumn 1348",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why was the pneumonic strain far deadlier than the bubonic form?",
+          "heading": "What symptoms made the Black Death so terrifyingly lethal?",
           "bullets": [
-            "Swelling agonizing egg-sized groin lumps",
-            "Coughing bloody phlegm across family rooms",
-            "Killing infected farm labourers within three days"
+            "Bubonic groin swellings (buboes)",
+            "Pneumonic bloody coughing",
+            "Mortality in three days"
           ],
-          "focus_clue": "Why was the pneumonic strain far deadlier than the bubonic form?",
+          "focus_clue": "What symptoms made the Black Death so terrifyingly lethal?",
           "words": [
             {
-              "term": "Swelling agonizing egg-sized groin lumps",
-              "clue": "The bubonic strain, transmitted by fleas from infected black rats, attacked the lymphatic system: victims suffered violent shivering, vomiting, high fevers, and the eruption of agonizing, foul-smelling swellings called buboes in the groin, armpits, and neck, which grew to the size of apples and turned black as internal hemorrhaging occurred."
+              "term": "Bubonic groin swellings (buboes)",
+              "clue": "Official specification focus term: Bubonic groin swellings (buboes)"
             },
             {
-              "term": "Coughing bloody phlegm across family rooms",
-              "clue": "The pneumonic strain of the plague attacked victims' lungs, spreading rapidly through coughing droplets and killing infected patients within forty-eight hours."
+              "term": "Pneumonic bloody coughing",
+              "clue": "Official specification focus term: Pneumonic bloody coughing"
             },
             {
-              "term": "Killing infected farm labourers within three days",
-              "clue": "If the buboes failed to burst, victims died within three to five days."
+              "term": "Mortality in three days",
+              "clue": "Official specification focus term: Mortality in three days"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>swelling agonizing egg-sized groin lumps</strong> and <strong>coughing bloody phlegm across family rooms</strong>, established authority maintained doctrinal control by <strong>killing infected farm labourers within three days</strong>.",
-          "title": "Why was the pneumonic strain far deadlier than the bubonic form?",
+          "model_sentence": "Victims developed agonizing <strong>Bubonic groin swellings (buboes)</strong> or suffered <strong>Pneumonic bloody coughing</strong>, leading to rapid <strong>Mortality in three days</strong>.",
+          "title": "Buboes & Pneumonic Terror",
           "dates": "Autumn 1348"
         },
         {
           "step": 3,
           "date": "Winter 1348",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why were medical treatments completely useless against the plague?",
+          "heading": "Why were medieval cures powerless against the plague?",
           "bullets": [
-            "Lancing hard neck swellings with hot knives",
-            "Strapping plucked live hens to dark sores",
-            "Drinking crushed emerald stones dissolved in vinegar"
+            "Divine wrath & miasma",
+            "Lancing buboes & live hens",
+            "Bleeding & crushed emeralds"
           ],
-          "focus_clue": "Why were medical treatments completely useless against the plague?",
+          "focus_clue": "Why were medieval cures powerless against the plague?",
           "words": [
             {
-              "term": "Lancing hard neck swellings with hot knives",
-              "clue": "Desperate barber-surgeons cut open agonizing egg-sized buboes on patients' groins and necks with heated blades, which caused unbearable pain and spread septic infection."
+              "term": "Divine wrath & miasma",
+              "clue": "Official specification focus term: Divine wrath & miasma"
             },
             {
-              "term": "Strapping plucked live hens to dark sores",
-              "clue": "Treatments were desperate improvisations of humoral and supernatural remedies: lancing and draining buboes with hot irons, applying live toads or plucked chickens to draw out poison, bloodletting until the patient fainted, and administering spoonfuls of crushed emeralds, Theriac, or vinegar."
+              "term": "Lancing buboes & live hens",
+              "clue": "Official specification focus term: Lancing buboes & live hens"
             },
             {
-              "term": "Drinking crushed emerald stones dissolved in vinegar",
-              "clue": "Treatments were desperate improvisations of humoral and supernatural remedies: lancing and draining buboes with hot irons, applying live toads or plucked chickens to draw out poison, bloodletting until the patient fainted, and administering spoonfuls of crushed emeralds, Theriac, or vinegar."
+              "term": "Bleeding & crushed emeralds",
+              "clue": "Official specification focus term: Bleeding & crushed emeralds"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>lancing hard neck swellings with hot knives</strong> and <strong>strapping plucked live hens to dark sores</strong>, established authority maintained doctrinal control by <strong>drinking crushed emerald stones dissolved in vinegar</strong>.",
-          "title": "Why were medical treatments completely useless against the plague?",
+          "model_sentence": "Because people attributed the plague to <strong>Divine wrath & miasma</strong>, desperate treatments ranged from <strong>Lancing buboes & live hens</strong> to desperate <strong>Bleeding & crushed emeralds</strong>.",
+          "title": "Desperate Treatments & Strapped Chickens",
           "dates": "Winter 1348"
         },
         {
           "step": 4,
           "date": "1349",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did belief in miasma shape royal prevention orders?",
+          "heading": "How did town authorities attempt to halt the spread of contagion?",
           "bullets": [
-            "Ordering town bailiffs to clear butchered animal entrails",
-            "Shovelling horse dung out of unpaved London streets",
-            "Lighting smoking pitch fires at road corners"
+            "Quarantine isolation rules",
+            "Cleaning town butchery waste",
+            "Street fire smoke barriers"
           ],
-          "focus_clue": "How did belief in miasma shape royal prevention orders?",
+          "focus_clue": "How did town authorities attempt to halt the spread of contagion?",
           "words": [
             {
-              "term": "Ordering town bailiffs to clear butchered animal entrails",
-              "clue": "King Edward III ordered the Lord Mayor of London to clear foul-smelling animal guts and filth from public streets, mistakenly believing stench generated plague miasma."
+              "term": "Quarantine isolation rules",
+              "clue": "Official specification focus term: Quarantine isolation rules"
             },
             {
-              "term": "Shovelling horse dung out of unpaved London streets",
-              "clue": "Official royal writ sent by King Edward III commanding the Mayor and Aldermen of London to clean streets and slaughterhouses to stop the plague."
+              "term": "Cleaning town butchery waste",
+              "clue": "Official specification focus term: Cleaning town butchery waste"
             },
             {
-              "term": "Lighting smoking pitch fires at road corners",
-              "clue": "Town councils burned tar, pitch, and fragrant sweet-smelling woods at street intersections in an attempt to purify corrupted air and disperse invisible plague vapors."
+              "term": "Street fire smoke barriers",
+              "clue": "Official specification focus term: Street fire smoke barriers"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>ordering town bailiffs to clear butchered animal entrails</strong> and <strong>shovelling horse dung out of unpaved London streets</strong>, established authority maintained doctrinal control by <strong>lighting smoking pitch fires at road corners</strong>.",
-          "title": "How did belief in miasma shape royal prevention orders?",
+          "model_sentence": "Authorities attempted crisis prevention through <strong>Quarantine isolation rules</strong>, ordering the <strong>Cleaning town butchery waste</strong> and lighting pungent <strong>Street fire smoke barriers</strong>.",
+          "title": "King Edward III’s Cleanliness Order",
           "dates": "1349"
         },
         {
           "step": 5,
           "date": "1349–1350",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did the Black Death trigger a long-term social and economic crisis?",
+          "heading": "How did the Black Death transform medieval English society?",
           "bullets": [
-            "Digging vast emergency trenches at East Smithfield",
-            "Piling stacked corpses under thin river clay",
-            "Losing half of England’s agricultural workforce"
+            "Mass burial trenches",
+            "Third to half population lost",
+            "Labour shortage & wage rises"
           ],
-          "focus_clue": "Why did the Black Death trigger a long-term social and economic crisis?",
+          "focus_clue": "How did the Black Death transform medieval English society?",
           "words": [
             {
-              "term": "Digging vast emergency trenches at East Smithfield",
-              "clue": "As the death toll escalated beyond the capacity of traditional churchyards, London authorities purchased new emergency cemetery grounds at East Smithfield and Spitalfields, excavating colossal mass burial trenches where hundreds of corpses were stacked in layers like cargo in a ship's hold."
+              "term": "Mass burial trenches",
+              "clue": "Official specification focus term: Mass burial trenches"
             },
             {
-              "term": "Piling stacked corpses under thin river clay",
-              "clue": "As the death toll escalated beyond the capacity of traditional churchyards, London authorities purchased new emergency cemetery grounds at East Smithfield and Spitalfields, excavating colossal mass burial trenches where hundreds of corpses were stacked in layers like cargo in a ship's hold."
+              "term": "Third to half population lost",
+              "clue": "Official specification focus term: Third to half population lost"
             },
             {
-              "term": "Losing half of England’s agricultural workforce",
-              "clue": "The Black Death wiped out roughly 40% of England's population, causing an acute labor shortage that empowered surviving peasants to demand higher wages and weakened feudal serfdom."
+              "term": "Labour shortage & wage rises",
+              "clue": "Official specification focus term: Labour shortage & wage rises"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>digging vast emergency trenches at East Smithfield</strong> and <strong>piling stacked corpses under thin river clay</strong>, established authority maintained doctrinal control by <strong>losing half of England’s agricultural workforce</strong>.",
-          "title": "Why did the Black Death trigger a long-term social and economic crisis?",
+          "model_sentence": "Churchyards overflowed into emergency <strong>Mass burial trenches</strong> as a <strong>Third to half population lost</strong> caused severe <strong>Labour shortage & wage rises</strong> across England.",
+          "title": "Mass Burial Pits & Demographic Collapse",
           "dates": "1349–1350"
         }
       ],
@@ -7054,145 +7054,145 @@ export default {
           "step": 1,
           "date": "c1440–1476",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did printing break the clerical monopoly on medical learning?",
+          "heading": "How did movable type break the Church's monopoly on learning?",
           "bullets": [
-            "Casting lead type in Gutenberg’s German workshop",
-            "Setting up William Caxton’s Westminster press",
-            "Printing hundreds of identical illustrated medical books"
+            "Gutenberg printing press",
+            "Movable metal type",
+            "Rapid book mass-production"
           ],
-          "focus_clue": "Why did printing break the clerical monopoly on medical learning?",
+          "focus_clue": "How did movable type break the Church's monopoly on learning?",
           "words": [
             {
-              "term": "Casting lead type in Gutenberg’s German workshop",
-              "clue": "Around 1440 in Mainz, Germany, Johannes Gutenberg developed movable metal type, sparking an information revolution across Europe."
+              "term": "Gutenberg printing press",
+              "clue": "Official specification focus term: Gutenberg printing press"
             },
             {
-              "term": "Setting up William Caxton’s Westminster press",
-              "clue": "By 1476, William Caxton had established England’s first commercial press in Westminster."
+              "term": "Movable metal type",
+              "clue": "Official specification focus term: Movable metal type"
             },
             {
-              "term": "Printing hundreds of identical illustrated medical books",
-              "clue": "The printing press allowed thousands of identical, accurate copies of anatomical treatises and clinical manuals to be produced rapidly and cheaply."
+              "term": "Rapid book mass-production",
+              "clue": "Official specification focus term: Rapid book mass-production"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>casting lead type in Gutenberg’s German workshop</strong> and <strong>setting up William Caxton’s Westminster press</strong>, established authority maintained doctrinal control by <strong>printing hundreds of identical illustrated medical books</strong>.",
-          "title": "Why did printing break the clerical monopoly on medical learning?",
+          "model_sentence": "Invented around 1440, the <strong>Gutenberg printing press</strong> utilized <strong>Movable metal type</strong> to enable <strong>Rapid book mass-production</strong>, stripping the Church of its monopoly on medical texts.",
+          "title": "The Printing Press & Information Revolution",
           "dates": "c1440–1476"
         },
         {
           "step": 2,
           "date": "c1500",
           "para_ref": "[2.1]",
-          "heading": "How did humanism inspire physicians to challenge Galen?",
+          "heading": "How did Humanism challenge medieval Galenic dogma?",
           "bullets": [
-            "Translating original Greek manuscripts directly",
-            "Spotting errors made by medieval monk copyists",
-            "Urging independent questioning of ancient authority"
+            "Humanism scholarly inquiry",
+            "Original Greek translations",
+            "Challenging Galenic dogma"
           ],
-          "focus_clue": "How did humanism inspire physicians to challenge Galen?",
+          "focus_clue": "How did Humanism challenge medieval Galenic dogma?",
           "words": [
             {
-              "term": "Translating original Greek manuscripts directly",
-              "clue": "Beginning in fifteenth-century Italy, Renaissance Humanism championed human intellectual potential, direct curiosity, and a return to original classical manuscripts (ad fontes)."
+              "term": "Humanism scholarly inquiry",
+              "clue": "Official specification focus term: Humanism scholarly inquiry"
             },
             {
-              "term": "Spotting errors made by medieval monk copyists",
-              "clue": "When scholars reread original Greek editions of Hippocrates and Galen, they discovered that medieval monks had distorted ancient texts to fit Christian theology."
+              "term": "Original Greek translations",
+              "clue": "Official specification focus term: Original Greek translations"
             },
             {
-              "term": "Urging independent questioning of ancient authority",
-              "clue": "Source C shows that the Crown formally endorsed a new scientific method: theories had to be proven through rigorous experimental demonstration rather than accepted on the authority of ancient texts or hearsay."
+              "term": "Challenging Galenic dogma",
+              "clue": "Official specification focus term: Challenging Galenic dogma"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>translating original Greek manuscripts directly</strong> and <strong>spotting errors made by medieval monk copyists</strong>, established authority maintained doctrinal control by <strong>urging independent questioning of ancient authority</strong>.",
-          "title": "How did humanism inspire physicians to challenge Galen?",
+          "model_sentence": "The rise of <strong>Humanism scholarly inquiry</strong> led scholars to rediscover <strong>Original Greek translations</strong>, inspiring medical pioneers into <strong>Challenging Galenic dogma</strong> through direct observation.",
+          "title": "Renaissance Humanism & Ancient Texts",
           "dates": "c1500"
         },
         {
           "step": 3,
           "date": "1660–1662",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why was experimental observation central to the Royal Society?",
+          "heading": "Why was the Royal Society's motto 'Nullius in Verba' so revolutionary?",
           "bullets": [
-            "Meeting at Gresham College in London",
-            "Receiving royal charter from King Charles II",
-            "Adopting Latin motto \"Nullius in Verba\""
+            "Royal Society founded (1660)",
+            "Royal charter Charles II",
+            "'Nullius in Verba' motto"
           ],
-          "focus_clue": "Why was experimental observation central to the Royal Society?",
+          "focus_clue": "Why was the Royal Society's motto 'Nullius in Verba' so revolutionary?",
           "words": [
             {
-              "term": "Meeting at Gresham College in London",
-              "clue": "In November 1660, a group of natural philosophers—including Christopher Wren, Robert Boyle, and John Wilkins—gathered at Gresham College in London to establish the Royal Society."
+              "term": "Royal Society founded (1660)",
+              "clue": "Official specification focus term: Royal Society founded (1660)"
             },
             {
-              "term": "Receiving royal charter from King Charles II",
-              "clue": "Granted a royal charter by King Charles II in 1662, the Society met weekly to witness practical laboratory experiments rather than debate philosophical theory."
+              "term": "Royal charter Charles II",
+              "clue": "Official specification focus term: Royal charter Charles II"
             },
             {
-              "term": "Adopting Latin motto \"Nullius in Verba\"",
-              "clue": "Its official motto, Nullius in Verba ('Take nobody’s word for it'), served as a revolutionary declaration: scientific truth could never be established by appealing to ancient authorities like Galen or church tradition, but solely through observable, repeatable empirical proof."
+              "term": "'Nullius in Verba' motto",
+              "clue": "Official specification focus term: 'Nullius in Verba' motto"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>meeting at Gresham College in London</strong> and <strong>receiving royal charter from King Charles II</strong>, established authority maintained doctrinal control by <strong>adopting Latin motto \"Nullius in Verba\"</strong>.",
-          "title": "Why was experimental observation central to the Royal Society?",
+          "model_sentence": "When the <strong>Royal Society founded (1660)</strong> secured its <strong>Royal charter Charles II</strong>, it adopted the famous <strong>'Nullius in Verba' motto</strong> ('take nobody's word for it') to champion empirical experiment.",
+          "title": "Foundation of the Royal Society",
           "dates": "1660–1662"
         },
         {
           "step": 4,
           "date": "1665",
           "para_ref": "[2.2]",
-          "heading": "How did scientific journals speed up the exchange of medical knowledge?",
+          "heading": "How did scientific journals accelerate medical collaboration?",
           "bullets": [
-            "Publishing Henry Oldenburg’s monthly scientific journal",
-            "Distributing experimental reports across Europe",
-            "Debating laboratory findings among rival scientists"
+            "Philosophical Transactions (1665)",
+            "Scientific paper peer-sharing",
+            "Empirical laboratory debates"
           ],
-          "focus_clue": "How did scientific journals speed up the exchange of medical knowledge?",
+          "focus_clue": "How did scientific journals accelerate medical collaboration?",
           "words": [
             {
-              "term": "Publishing Henry Oldenburg’s monthly scientific journal",
-              "clue": "In 1665, the Royal Society’s secretary, Henry Oldenburg, founded Philosophical Transactions, the world’s first scientific journal."
+              "term": "Philosophical Transactions (1665)",
+              "clue": "Official specification focus term: Philosophical Transactions (1665)"
             },
             {
-              "term": "Distributing experimental reports across Europe",
-              "clue": "The journal created a global network of peer review: physicians and natural philosophers across Europe submitted experimental papers, clinical case notes, and technological inventions to be read, challenged, and verified by fellow scholars."
+              "term": "Scientific paper peer-sharing",
+              "clue": "Official specification focus term: Scientific paper peer-sharing"
             },
             {
-              "term": "Debating laboratory findings among rival scientists",
-              "clue": "Founded in 1660, the Royal Society published scientific experiments in its journal 'Philosophical Transactions', encouraging doctors to test findings through peer review."
+              "term": "Empirical laboratory debates",
+              "clue": "Official specification focus term: Empirical laboratory debates"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>publishing Henry Oldenburg’s monthly scientific journal</strong> and <strong>distributing experimental reports across Europe</strong>, established authority maintained doctrinal control by <strong>debating laboratory findings among rival scientists</strong>.",
-          "title": "How did scientific journals speed up the exchange of medical knowledge?",
+          "model_sentence": "Through the launch of <strong>Philosophical Transactions (1665)</strong>, scientists established international <strong>Scientific paper peer-sharing</strong> to encourage rigorous <strong>Empirical laboratory debates</strong>.",
+          "title": "Philosophical Transactions & Peer Review",
           "dates": "1665"
         },
         {
           "step": 5,
           "date": "1665–1676",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did 17th-century microscopes fail to transform medical treatment?",
+          "heading": "How did optical technology reveal microscopic biological structures?",
           "bullets": [
-            "Grinding curved glass lenses in brass cylinders",
-            "Sketching flea legs in Hooke’s Micrographia",
-            "Observing tiny swimming creatures in pond water"
+            "Compound light microscopes",
+            "Robert Hooke Micrographia",
+            "Leeuwenhoek 'animalcules'"
           ],
-          "focus_clue": "Why did 17th-century microscopes fail to transform medical treatment?",
+          "focus_clue": "How did optical technology reveal microscopic biological structures?",
           "words": [
             {
-              "term": "Grinding curved glass lenses in brass cylinders",
-              "clue": "Antonie van Leeuwenhoek ground precision miniature glass lenses, building early microscopes capable of magnifying specimens over 200 times."
+              "term": "Compound light microscopes",
+              "clue": "Official specification focus term: Compound light microscopes"
             },
             {
-              "term": "Sketching flea legs in Hooke’s Micrographia",
-              "clue": "Fold-out engraving of a common flea magnified several hundred times, displaying armored scales, jointed legs, and hairs, drawn by Robert Hooke using his compound microscope."
+              "term": "Robert Hooke Micrographia",
+              "clue": "Official specification focus term: Robert Hooke Micrographia"
             },
             {
-              "term": "Observing tiny swimming creatures in pond water",
-              "clue": "Through his brass microscopes, Leeuwenhoek observed moving single-celled organisms in pond water and human plaque, proving a microscopic living world existed."
+              "term": "Leeuwenhoek 'animalcules'",
+              "clue": "Official specification focus term: Leeuwenhoek 'animalcules'"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>grinding curved glass lenses in brass cylinders</strong> and <strong>sketching flea legs in Hooke’s Micrographia</strong>, established authority maintained doctrinal control by <strong>observing tiny swimming creatures in pond water</strong>.",
-          "title": "Why did 17th-century microscopes fail to transform medical treatment?",
+          "model_sentence": "Technological breakthroughs in <strong>Compound light microscopes</strong> enabled <strong>Robert Hooke Micrographia</strong> and Antonie van <strong>Leeuwenhoek 'animalcules'</strong>, proving invisible organisms existed.",
+          "title": "Early Microscopes & Animalcules",
           "dates": "1665–1676"
         }
       ],
@@ -8178,145 +8178,145 @@ export default {
           "step": 1,
           "date": "1660s",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did Sydenham believe bedside observation surpassed textbook learning?",
+          "heading": "Why was Sydenham called the 'English Hippocrates'?",
           "bullets": [
-            "Dismissing speculative book learning in Latin",
-            "Observing real patient symptoms at the bedside",
-            "Recording fever patterns and changes in pulse"
+            "Thomas Sydenham bedside",
+            "Close clinical observation",
+            "Detailed symptom logging"
           ],
-          "focus_clue": "Why did Sydenham believe bedside observation surpassed textbook learning?",
+          "focus_clue": "Why was Sydenham called the 'English Hippocrates'?",
           "words": [
             {
-              "term": "Dismissing speculative book learning in Latin",
-              "clue": "While most university-trained physicians spent consultations reading Latin textbooks, casting horoscopes, and inspecting urine flasks, Sydenham insisted that true medical knowledge could only be gained at the patient’s bedside."
+              "term": "Thomas Sydenham bedside",
+              "clue": "Official specification focus term: Thomas Sydenham bedside"
             },
             {
-              "term": "Observing real patient symptoms at the bedside",
-              "clue": "While most university-trained physicians spent consultations reading Latin textbooks, casting horoscopes, and inspecting urine flasks, Sydenham insisted that true medical knowledge could only be gained at the patient’s bedside."
+              "term": "Close clinical observation",
+              "clue": "Official specification focus term: Close clinical observation"
             },
             {
-              "term": "Recording fever patterns and changes in pulse",
-              "clue": "Dubbed the 'English Hippocrates', Thomas Sydenham spent hours at patients' bedsides taking detailed notes on disease symptoms to classify distinct medical illnesses."
+              "term": "Detailed symptom logging",
+              "clue": "Official specification focus term: Detailed symptom logging"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>dismissing speculative book learning in Latin</strong> and <strong>observing real patient symptoms at the bedside</strong>, established authority maintained doctrinal control by <strong>recording fever patterns and changes in pulse</strong>.",
-          "title": "Why did Sydenham believe bedside observation surpassed textbook learning?",
+          "model_sentence": "Known as the 'English Hippocrates', <strong>Thomas Sydenham bedside</strong> practice emphasized <strong>Close clinical observation</strong> and <strong>Detailed symptom logging</strong> rather than relying on ancient Galenic books.",
+          "title": "Thomas Sydenham & Bedside Observation",
           "dates": "1660s"
         },
         {
           "step": 2,
           "date": "1676",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did classifying diseases challenge traditional individual humoral theory?",
+          "heading": "How did Sydenham classify diseases as separate species?",
           "bullets": [
-            "Publishing landmark Observationes Medicae textbook",
-            "Classifying diseases into distinct species like plants",
-            "Distinguishing scarlet fever from measles"
+            "Medical botany taxonomy",
+            "Differential disease diagnosis",
+            "Observationes Medicae (1676)"
           ],
-          "focus_clue": "How did classifying diseases challenge traditional individual humoral theory?",
+          "focus_clue": "How did Sydenham classify diseases as separate species?",
           "words": [
             {
-              "term": "Publishing landmark Observationes Medicae textbook",
-              "clue": "In his masterwork Observationes Medicae (1676), Sydenham argued that diseases should be classified into specific species, exactly as botanists classify plants and flowers."
+              "term": "Medical botany taxonomy",
+              "clue": "Official specification focus term: Medical botany taxonomy"
             },
             {
-              "term": "Classifying diseases into distinct species like plants",
-              "clue": "In his masterwork Observationes Medicae (1676), Sydenham argued that diseases should be classified into specific species, exactly as botanists classify plants and flowers."
+              "term": "Differential disease diagnosis",
+              "clue": "Official specification focus term: Differential disease diagnosis"
             },
             {
-              "term": "Distinguishing scarlet fever from measles",
-              "clue": "Measles, scarlet fever, and smallpox each had uniform, predictable symptoms and followed specific courses regardless of who caught them."
+              "term": "Observationes Medicae (1676)",
+              "clue": "Official specification focus term: Observationes Medicae (1676)"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>publishing landmark Observationes Medicae textbook</strong> and <strong>classifying diseases into distinct species like plants</strong>, established authority maintained doctrinal control by <strong>distinguishing scarlet fever from measles</strong>.",
-          "title": "How did classifying diseases challenge traditional individual humoral theory?",
+          "model_sentence": "Classifying illnesses like plants through <strong>Medical botany taxonomy</strong>, Sydenham advanced <strong>Differential disease diagnosis</strong> in his landmark treatise <strong>Observationes Medicae (1676)</strong>.",
+          "title": "Observationes Medicae & Disease Classification",
           "dates": "1676"
         },
         {
           "step": 3,
           "date": "c1670s",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why was the success of Peruvian bark a mortal blow to humoral balance?",
+          "heading": "How did specific remedies challenge humoral balance?",
           "bullets": [
-            "Using Cinchona tree bark to cure malaria fevers",
-            "Targeting specific diseases with specific chemicals",
-            "Disproving the need for humoral purging"
+            "Cinchona bark (quinine)",
+            "Specific cures ague",
+            "Challenging humour balance"
           ],
-          "focus_clue": "Why was the success of Peruvian bark a mortal blow to humoral balance?",
+          "focus_clue": "How did specific remedies challenge humoral balance?",
           "words": [
             {
-              "term": "Using Cinchona tree bark to cure malaria fevers",
-              "clue": "He popularized the use of Peruvian Bark (Cinchona / Jesuit's Bark), which contained quinine, to successfully treat intermittent agues (malaria)."
+              "term": "Cinchona bark (quinine)",
+              "clue": "Official specification focus term: Cinchona bark (quinine)"
             },
             {
-              "term": "Targeting specific diseases with specific chemicals",
-              "clue": "In his masterwork Observationes Medicae (1676), Sydenham argued that diseases should be classified into specific species, exactly as botanists classify plants and flowers."
+              "term": "Specific cures ague",
+              "clue": "Official specification focus term: Specific cures ague"
             },
             {
-              "term": "Disproving the need for humoral purging",
-              "clue": "Galenist doctors had fiercely opposed Cinchona because it cured fevers without causing purging or vomiting, violating humoral logic."
+              "term": "Challenging humour balance",
+              "clue": "Official specification focus term: Challenging humour balance"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>using Cinchona tree bark to cure malaria fevers</strong> and <strong>targeting specific diseases with specific chemicals</strong>, established authority maintained doctrinal control by <strong>disproving the need for humoral purging</strong>.",
-          "title": "Why was the success of Peruvian bark a mortal blow to humoral balance?",
+          "model_sentence": "By demonstrating that imported <strong>Cinchona bark (quinine)</strong> acted as a <strong>Specific cures ague</strong>, Sydenham succeeded in directly <strong>Challenging humour balance</strong> theory.",
+          "title": "Quinine & Cinchona Bark for Malaria",
           "dates": "c1670s"
         },
         {
           "step": 4,
           "date": "c1670s",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why did Sydenham’s cool treatment drastically cut smallpox deaths?",
+          "heading": "Why did Sydenham reject traditional heating treatments?",
           "bullets": [
-            "Ending dangerous heated sweating rooms",
-            "Prescribing light bedsheets and open fresh air",
-            "Administering cooling fluids to lower fever"
+            "Cool therapy treatment",
+            "Fresh bedroom ventilation",
+            "Avoiding heavy blankets"
           ],
-          "focus_clue": "Why did Sydenham’s cool treatment drastically cut smallpox deaths?",
+          "focus_clue": "Why did Sydenham reject traditional heating treatments?",
           "words": [
             {
-              "term": "Ending dangerous heated sweating rooms",
-              "clue": "Standard medical treatment for smallpox involved the 'sweating method': sealing patients in stifling rooms with shuttered windows, roaring fires, heavy blankets, and scorching cordials to force humours out through the skin."
+              "term": "Cool therapy treatment",
+              "clue": "Official specification focus term: Cool therapy treatment"
             },
             {
-              "term": "Prescribing light bedsheets and open fresh air",
-              "clue": "Instead, he pioneered 'cool therapy': opening windows for fresh air, removing heavy blankets, giving cool barley water, and lowering the patient’s temperature."
+              "term": "Fresh bedroom ventilation",
+              "clue": "Official specification focus term: Fresh bedroom ventilation"
             },
             {
-              "term": "Administering cooling fluids to lower fever",
-              "clue": "Sydenham broke with tradition by treating smallpox with cool drinks, open bedroom windows, and light blankets, drastically cutting mortality compared to heating therapy."
+              "term": "Avoiding heavy blankets",
+              "clue": "Official specification focus term: Avoiding heavy blankets"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>ending dangerous heated sweating rooms</strong> and <strong>prescribing light bedsheets and open fresh air</strong>, established authority maintained doctrinal control by <strong>administering cooling fluids to lower fever</strong>.",
-          "title": "Why did Sydenham’s cool treatment drastically cut smallpox deaths?",
+          "model_sentence": "Sydenham overturned traditional heating cures by prescribing <strong>Cool therapy treatment</strong>, insisting on <strong>Fresh bedroom ventilation</strong> and strictly <strong>Avoiding heavy blankets</strong> for smallpox fevers.",
+          "title": "Cool Therapy for Smallpox Fevers",
           "dates": "c1670s"
         },
         {
           "step": 5,
           "date": "1680s",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did medical treatments remain mostly medieval despite Sydenham?",
+          "heading": "Why were Sydenham's ideas slow to change everyday medical practice?",
           "bullets": [
-            "Lacking knowledge of microscopic bacteria and germs",
-            "Continuing to prescribe bloodletting and purges",
-            "Facing resistance from the Royal College of Physicians"
+            "Conservative medical opposition",
+            "Continued purging reliance",
+            "Slow professional shift"
           ],
-          "focus_clue": "Why did medical treatments remain mostly medieval despite Sydenham?",
+          "focus_clue": "Why were Sydenham's ideas slow to change everyday medical practice?",
           "words": [
             {
-              "term": "Lacking knowledge of microscopic bacteria and germs",
-              "clue": "He had no understanding of microscopic bacteria or contagion, continuing to believe that epidemic fevers were caused by unwholesome atmospheric miasmas."
+              "term": "Conservative medical opposition",
+              "clue": "Official specification focus term: Conservative medical opposition"
             },
             {
-              "term": "Continuing to prescribe bloodletting and purges",
-              "clue": "Despite his groundbreaking focus on bedside observation, Sydenham still adhered to humoral theory, routinely bleeding and purging patients to clear impurities."
+              "term": "Continued purging reliance",
+              "clue": "Official specification focus term: Continued purging reliance"
             },
             {
-              "term": "Facing resistance from the Royal College of Physicians",
-              "clue": "Established London physicians in the Royal College defended ancient Galenic theory, dismissing Thomas Sydenham's focus on clinical bedside observations as unscholarly."
+              "term": "Slow professional shift",
+              "clue": "Official specification focus term: Slow professional shift"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>lacking knowledge of microscopic bacteria and germs</strong> and <strong>continuing to prescribe bloodletting and purges</strong>, established authority maintained doctrinal control by <strong>facing resistance from the Royal College of Physicians</strong>.",
-          "title": "Why did medical treatments remain mostly medieval despite Sydenham?",
+          "model_sentence": "Despite his clinical successes, widespread <strong>Conservative medical opposition</strong> and a <strong>Continued purging reliance</strong> meant that Sydenham's bedside method caused only a <strong>Slow professional shift</strong>.",
+          "title": "Conservative Resistance & Continuing Continuity",
           "dates": "1680s"
         }
       ],
@@ -9298,145 +9298,145 @@ export default {
           "step": 1,
           "date": "1537",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why was a professor dissecting human bodies revolutionary in 1537?",
+          "heading": "How did Vesalius challenge Galen's anatomical authority?",
           "bullets": [
-            "Stepping down from the elevated university pulpit",
-            "Dismissing uneducated barber-surgeons from dissection",
-            "Handling human cadavers directly with his own hands"
+            "Padua dissection theatre",
+            "Direct personal dissection",
+            "Challenging Galen's 300 errors"
           ],
-          "focus_clue": "Why was a professor dissecting human bodies revolutionary in 1537?",
+          "focus_clue": "How did Vesalius challenge Galen's anatomical authority?",
           "words": [
             {
-              "term": "Stepping down from the elevated university pulpit",
-              "clue": "In 1537 at the University of Padua, Vesalius broke centuries of tradition by stepping down from the elevated lecturer's pulpit to dissect human cadavers with his own hands."
+              "term": "Padua dissection theatre",
+              "clue": "Official specification focus term: Padua dissection theatre"
             },
             {
-              "term": "Dismissing uneducated barber-surgeons from dissection",
-              "clue": "Rejecting medieval tradition—where aristocratic professors sat in elevated chairs reading Galen while uneducated barber-surgeons chopped at cadavers below—Vesalius descended from the rostrum, gripped the dissection scalpel with his own hands, and encouraged students to examine human tissues and organs directly."
+              "term": "Direct personal dissection",
+              "clue": "Official specification focus term: Direct personal dissection"
             },
             {
-              "term": "Handling human cadavers directly with his own hands",
-              "clue": "Rejecting medieval tradition—where aristocratic professors sat in elevated chairs reading Galen while uneducated barber-surgeons chopped at cadavers below—Vesalius descended from the rostrum, gripped the dissection scalpel with his own hands, and encouraged students to examine human tissues and organs directly."
+              "term": "Challenging Galen's 300 errors",
+              "clue": "Official specification focus term: Challenging Galen's 300 errors"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>stepping down from the elevated university pulpit</strong> and <strong>dismissing uneducated barber-surgeons from dissection</strong>, established authority maintained doctrinal control by <strong>handling human cadavers directly with his own hands</strong>.",
-          "title": "Why was a professor dissecting human bodies revolutionary in 1537?",
+          "model_sentence": "Working in his famous <strong>Padua dissection theatre</strong>, Vesalius insisted on <strong>Direct personal dissection</strong> of human corpses, famously <strong>Challenging Galen's 300 errors</strong>.",
+          "title": "Andreas Vesalius & Padua Anatomical Dissections",
           "dates": "1537"
         },
         {
           "step": 2,
           "date": "1540",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did Vesalius prove Galen had made anatomical mistakes?",
+          "heading": "Why was De Humani Corporis Fabrica an international masterpiece?",
           "bullets": [
-            "Revealing Galen dissected Barbary apes and dogs",
-            "Proving the human jawbone is one bone not two",
-            "Cataloguing over three hundred major Galenic errors"
+            "De Humani Corporis Fabrica",
+            "Johannes Oporinus Basel printing",
+            "Titian studio woodcut plates"
           ],
-          "focus_clue": "How did Vesalius prove Galen had made anatomical mistakes?",
+          "focus_clue": "Why was De Humani Corporis Fabrica an international masterpiece?",
           "words": [
             {
-              "term": "Revealing Galen dissected Barbary apes and dogs",
-              "clue": "Because ancient Roman law forbade the dissection of human bodies, Galen had dissected apes, pigs, and dogs, wrongly assuming human anatomy was identical."
+              "term": "De Humani Corporis Fabrica",
+              "clue": "Official specification focus term: De Humani Corporis Fabrica"
             },
             {
-              "term": "Proving the human jawbone is one bone not two",
-              "clue": "Vesalius proved that the human lower jaw was a single solid bone, not two as Galen claimed."
+              "term": "Johannes Oporinus Basel printing",
+              "clue": "Official specification focus term: Johannes Oporinus Basel printing"
             },
             {
-              "term": "Cataloguing over three hundred major Galenic errors",
-              "clue": "By performing dozens of dissections on executed criminals, Vesalius made a staggering discovery: Galen’s anatomical writings contained over two hundred major errors."
+              "term": "Titian studio woodcut plates",
+              "clue": "Official specification focus term: Titian studio woodcut plates"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>revealing Galen dissected Barbary apes and dogs</strong> and <strong>proving the human jawbone is one bone not two</strong>, established authority maintained doctrinal control by <strong>cataloguing over three hundred major Galenic errors</strong>.",
-          "title": "How did Vesalius prove Galen had made anatomical mistakes?",
+          "model_sentence": "In 1543, Vesalius published <strong>De Humani Corporis Fabrica</strong>, working with <strong>Johannes Oporinus Basel printing</strong> and dynamic <strong>Titian studio woodcut plates</strong> to set a new visual standard.",
+          "title": "Publication of De Humani Corporis Fabrica (1543)",
           "dates": "1540"
         },
         {
           "step": 3,
           "date": "1543",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why was The Fabrica considered a masterpiece of Renaissance science?",
+          "heading": "What specific anatomical mistakes did Vesalius correct?",
           "bullets": [
-            "Publishing lavish woodcut plates from Titian’s workshop",
-            "Depicting realistic muscle men against Italian landscapes",
-            "Printing identical anatomical textbooks across Europe"
+            "Human jawbone single bone",
+            "Missing heart septum pores",
+            "Sternum three segments"
           ],
-          "focus_clue": "Why was The Fabrica considered a masterpiece of Renaissance science?",
+          "focus_clue": "What specific anatomical mistakes did Vesalius correct?",
           "words": [
             {
-              "term": "Publishing lavish woodcut plates from Titian’s workshop",
-              "clue": "Illustrated by master artists from Titian’s workshop in Venice, Fabrica featured over two hundred extraordinarily precise, realistic woodcuts."
+              "term": "Human jawbone single bone",
+              "clue": "Official specification focus term: Human jawbone single bone"
             },
             {
-              "term": "Depicting realistic muscle men against Italian landscapes",
-              "clue": "The illustrations depicted animated cadavers in dramatic classical poses set against rolling Italian landscapes, stripping away muscle layers step-by-step to reveal deep musculature, bone structures, and vascular networks."
+              "term": "Missing heart septum pores",
+              "clue": "Official specification focus term: Missing heart septum pores"
             },
             {
-              "term": "Printing identical anatomical textbooks across Europe",
-              "clue": "Publication of Fabrica unleashed ferocious academic backlash across Europe."
+              "term": "Sternum three segments",
+              "clue": "Official specification focus term: Sternum three segments"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>publishing lavish woodcut plates from Titian’s workshop</strong> and <strong>depicting realistic muscle men against Italian landscapes</strong>, established authority maintained doctrinal control by <strong>printing identical anatomical textbooks across Europe</strong>.",
-          "title": "Why was The Fabrica considered a masterpiece of Renaissance science?",
+          "model_sentence": "Vesalius proved the <strong>Human jawbone single bone</strong>, demonstrated the <strong>Missing heart septum pores</strong>, and verified that the human <strong>Sternum three segments</strong> rather than seven.",
+          "title": "Key Corrected Errors: Jawbone, Septum & Sternum",
           "dates": "1543"
         },
         {
           "step": 4,
           "date": "1545–1553",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did English translations spread Vesalius’s ideas to barber-surgeons?",
+          "heading": "Why did traditional professors reject Vesalius's discoveries?",
           "bullets": [
-            "Engraving Thomas Geminus’s portable copperplate manual",
-            "Translating Latin anatomical texts into vernacular English",
-            "Putting accurate diagrams into the hands of surgeons"
+            "Vicious traditional backlash",
+            "Sylvius Galenic loyalty",
+            "Resignation from Padua"
           ],
-          "focus_clue": "How did English translations spread Vesalius’s ideas to barber-surgeons?",
+          "focus_clue": "Why did traditional professors reject Vesalius's discoveries?",
           "words": [
             {
-              "term": "Engraving Thomas Geminus’s portable copperplate manual",
-              "clue": "In 1545, Thomas Geminus published Compendiosa in London, copying Vesalius’s anatomical plates onto copper engravings with English text."
+              "term": "Vicious traditional backlash",
+              "clue": "Official specification focus term: Vicious traditional backlash"
             },
             {
-              "term": "Translating Latin anatomical texts into vernacular English",
-              "clue": "In 1545, Thomas Geminus published Compendiosa in London, copying Vesalius’s anatomical plates onto copper engravings with English text."
+              "term": "Sylvius Galenic loyalty",
+              "clue": "Official specification focus term: Sylvius Galenic loyalty"
             },
             {
-              "term": "Putting accurate diagrams into the hands of surgeons",
-              "clue": "Rejecting medieval tradition—where aristocratic professors sat in elevated chairs reading Galen while uneducated barber-surgeons chopped at cadavers below—Vesalius descended from the rostrum, gripped the dissection scalpel with his own hands, and encouraged students to examine human tissues and organs directly."
+              "term": "Resignation from Padua",
+              "clue": "Official specification focus term: Resignation from Padua"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>engraving Thomas Geminus’s portable copperplate manual</strong> and <strong>translating Latin anatomical texts into vernacular English</strong>, established authority maintained doctrinal control by <strong>putting accurate diagrams into the hands of surgeons</strong>.",
-          "title": "How did English translations spread Vesalius’s ideas to barber-surgeons?",
+          "model_sentence": "Vesalius faced <strong>Vicious traditional backlash</strong> from established professors like <strong>Sylvius Galenic loyalty</strong>, eventually forcing his bitter <strong>Resignation from Padua</strong>.",
+          "title": "Backlash from Galenists & Resignation from Padua",
           "dates": "1545–1553"
         },
         {
           "step": 5,
           "date": "c1560",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did Vesalius’s anatomical discoveries fail to save sick patients immediately?",
+          "heading": "How did Vesalius's work transform English surgery?",
           "bullets": [
-            "Facing furious resistance from traditional Galenists",
-            "Lacking anaesthetics, antiseptics, and germ theory",
-            "Providing anatomical knowledge without clinical cures"
+            "Thomas Geminus Compendiosa",
+            "English barber-surgeon training",
+            "Anatomical dissection foundation"
           ],
-          "focus_clue": "Why did Vesalius’s anatomical discoveries fail to save sick patients immediately?",
+          "focus_clue": "How did Vesalius's work transform English surgery?",
           "words": [
             {
-              "term": "Facing furious resistance from traditional Galenists",
-              "clue": "Conservative professors fiercely attacked Vesalius, claiming that human anatomy had physically degenerated since ancient times rather than admitting Galen had been mistaken."
+              "term": "Thomas Geminus Compendiosa",
+              "clue": "Official specification focus term: Thomas Geminus Compendiosa"
             },
             {
-              "term": "Lacking anaesthetics, antiseptics, and germ theory",
-              "clue": "Although Vesalius dramatically improved anatomical knowledge, surgery remained crude and lethal because doctors still lacked effective anaesthetics, antiseptics, or an understanding of infection."
+              "term": "English barber-surgeon training",
+              "clue": "Official specification focus term: English barber-surgeon training"
             },
             {
-              "term": "Providing anatomical knowledge without clinical cures",
-              "clue": "Yet Vesalius’s anatomical breakthroughs carried a major limitation: while he accurately mapped the human body, knowing the correct shape of an organ did not reveal how it functioned or provide cures for lethal diseases."
+              "term": "Anatomical dissection foundation",
+              "clue": "Official specification focus term: Anatomical dissection foundation"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>facing furious resistance from traditional Galenists</strong> and <strong>lacking anaesthetics, antiseptics, and germ theory</strong>, established authority maintained doctrinal control by <strong>providing anatomical knowledge without clinical cures</strong>.",
-          "title": "Why did Vesalius’s anatomical discoveries fail to save sick patients immediately?",
+          "model_sentence": "Through <strong>Thomas Geminus Compendiosa</strong>, Vesalius's illustrations revolutionized <strong>English barber-surgeon training</strong> and laid the permanent <strong>Anatomical dissection foundation</strong> for surgery.",
+          "title": "Long-Term Impact on Surgery & Barber-Surgeon Training",
           "dates": "c1560"
         }
       ],
@@ -10417,145 +10417,145 @@ export default {
           "step": 1,
           "date": "c1615",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did Harvey study cold-blooded animals to understand the human heart?",
+          "heading": "How did Fabricius's valves inspire Harvey's research on blood?",
           "bullets": [
-            "Observing the slow-beating hearts of frogs and snakes",
-            "Studying one-way vein valves under Fabricius at Padua",
-            "Challenging Galen’s two separate blood systems"
+            "Girolamo Fabricius valves",
+            "One-way blood flow",
+            "Cold frog dissections"
           ],
-          "focus_clue": "Why did Harvey study cold-blooded animals to understand the human heart?",
+          "focus_clue": "How did Fabricius's valves inspire Harvey's research on blood?",
           "words": [
             {
-              "term": "Observing the slow-beating hearts of frogs and snakes",
-              "clue": "William Harvey dissected cold-blooded reptiles and amphibians because their slow heart rates allowed him to observe how individual chambers pumped blood."
+              "term": "Girolamo Fabricius valves",
+              "clue": "Official specification focus term: Girolamo Fabricius valves"
             },
             {
-              "term": "Studying one-way vein valves under Fabricius at Padua",
-              "clue": "English physician William Harvey (1578–1657) studied medicine at the University of Padua under Hieronymus Fabricius, who discovered that human veins contained one-way valves."
+              "term": "One-way blood flow",
+              "clue": "Official specification focus term: One-way blood flow"
             },
             {
-              "term": "Challenging Galen’s two separate blood systems",
-              "clue": "Harvey overturned Galen's theory of two separate blood systems—nutritive blood from the liver and vital blood from the heart—proving blood circulated continuously in one closed loop."
+              "term": "Cold frog dissections",
+              "clue": "Official specification focus term: Cold frog dissections"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>observing the slow-beating hearts of frogs and snakes</strong> and <strong>studying one-way vein valves under Fabricius at Padua</strong>, established authority maintained doctrinal control by <strong>challenging Galen’s two separate blood systems</strong>.",
-          "title": "Why did Harvey study cold-blooded animals to understand the human heart?",
+          "model_sentence": "Studying under Fabricius, Harvey investigated <strong>Girolamo Fabricius valves</strong>, conducting <strong>Cold frog dissections</strong> to observe the heart and establish <strong>One-way blood flow</strong>.",
+          "title": "William Harvey & Venous Valves",
           "dates": "c1615"
         },
         {
           "step": 2,
           "date": "1620s",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did mathematical calculations prove Galen’s theory impossible?",
+          "heading": "How did calculations prove that blood circulates continuously?",
           "bullets": [
-            "Calculating two ounces of blood pumped per beat",
-            "Pumping 540 pints per hour (three times body weight)",
-            "Proving the liver could not manufacture this volume"
+            "Circulation mathematical proof",
+            "Heart mechanical pump",
+            "Galenic liver theory refuted"
           ],
-          "focus_clue": "How did mathematical calculations prove Galen’s theory impossible?",
+          "focus_clue": "How did calculations prove that blood circulates continuously?",
           "words": [
             {
-              "term": "Calculating two ounces of blood pumped per beat",
-              "clue": "Through rigorous calculations, Harvey proved that in one hour, the heart pumped over three times the entire weight of a human body in blood."
+              "term": "Circulation mathematical proof",
+              "clue": "Official specification focus term: Circulation mathematical proof"
             },
             {
-              "term": "Pumping 540 pints per hour (three times body weight)",
-              "clue": "Through rigorous calculations, Harvey proved that in one hour, the heart pumped over three times the entire weight of a human body in blood."
+              "term": "Heart mechanical pump",
+              "clue": "Official specification focus term: Heart mechanical pump"
             },
             {
-              "term": "Proving the liver could not manufacture this volume",
-              "clue": "For 1,500 years, Galenic doctrine held that the liver continuously manufactured fresh venous blood from digested food (chyle), which was carried through veins to be consumed like fuel by body tissues, while the heart produced arterial blood carrying vital spirits."
+              "term": "Galenic liver theory refuted",
+              "clue": "Official specification focus term: Galenic liver theory refuted"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>calculating two ounces of blood pumped per beat</strong> and <strong>pumping 540 pints per hour (three times body weight)</strong>, established authority maintained doctrinal control by <strong>proving the liver could not manufacture this volume</strong>.",
-          "title": "How did mathematical calculations prove Galen’s theory impossible?",
+          "model_sentence": "By calculating blood volume in a brilliant <strong>Circulation mathematical proof</strong>, Harvey proved the <strong>Heart mechanical pump</strong>, leaving <strong>Galenic liver theory refuted</strong>.",
+          "title": "The Mechanical Pump & Mathematical Proof",
           "dates": "1620s"
         },
         {
           "step": 3,
           "date": "1628",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did Harvey publish his research abroad rather than in England?",
+          "heading": "How did the forearm ligature experiment prove circulation?",
           "bullets": [
-            "Conducting the famous arm tourniquet experiment",
-            "Publishing De Motu Cordis in Frankfurt in 1628",
-            "Providing undeniable proof that blood circulates"
+            "De Motu Cordis (1628)",
+            "Forearm tight-ligature test",
+            "Venous valve demonstration"
           ],
-          "focus_clue": "Why did Harvey publish his research abroad rather than in England?",
+          "focus_clue": "How did the forearm ligature experiment prove circulation?",
           "words": [
             {
-              "term": "Conducting the famous arm tourniquet experiment",
-              "clue": "To prove circulation on living humans, Harvey devised a simple forearm ligature experiment: tying a tight tourniquet blocked arterial blood from entering the arm; loosening it slightly allowed arterial blood through, engorging the veins."
+              "term": "De Motu Cordis (1628)",
+              "clue": "Official specification focus term: De Motu Cordis (1628)"
             },
             {
-              "term": "Publishing De Motu Cordis in Frankfurt in 1628",
-              "clue": "In 1628, Harvey published his findings in Frankfurt in Exercitatio Anatomica de Motu Cordis et Sanguinis in Animalibus ('On the Motion of the Heart and Blood in Animals')."
+              "term": "Forearm tight-ligature test",
+              "clue": "Official specification focus term: Forearm tight-ligature test"
             },
             {
-              "term": "Providing undeniable proof that blood circulates",
-              "clue": "For 1,500 years, Galenic doctrine held that the liver continuously manufactured fresh venous blood from digested food (chyle), which was carried through veins to be consumed like fuel by body tissues, while the heart produced arterial blood carrying vital spirits."
+              "term": "Venous valve demonstration",
+              "clue": "Official specification focus term: Venous valve demonstration"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>conducting the famous arm tourniquet experiment</strong> and <strong>publishing De Motu Cordis in Frankfurt in 1628</strong>, established authority maintained doctrinal control by <strong>providing undeniable proof that blood circulates</strong>.",
-          "title": "Why did Harvey publish his research abroad rather than in England?",
+          "model_sentence": "Harvey published his findings in <strong>De Motu Cordis (1628)</strong>, using his famous <strong>Forearm tight-ligature test</strong> as a visual <strong>Venous valve demonstration</strong>.",
+          "title": "Publication of De Motu Cordis (1628)",
           "dates": "1628"
         },
         {
           "step": 4,
           "date": "1630s–1650s",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why was Harvey’s discovery fiercely rejected by established doctors?",
+          "heading": "Why did physicians mock Harvey's circulatory theory?",
           "bullets": [
-            "Facing ridicule by Galenists as a quack circulator",
-            "Losing wealthy patients who feared radical ideas",
-            "Lacking microscopes to show artery-vein connections"
+            "Conservative medical opposition",
+            "Losing private clients",
+            "Slow university adoption"
           ],
-          "focus_clue": "Why was Harvey’s discovery fiercely rejected by established doctors?",
+          "focus_clue": "Why did physicians mock Harvey's circulatory theory?",
           "words": [
             {
-              "term": "Facing ridicule by Galenists as a quack circulator",
-              "clue": "Conservative physicians, mocking him as a 'circulator' (a Latin pun meaning charlatan or wandering quack), refused to accept that Galen was wrong."
+              "term": "Conservative medical opposition",
+              "clue": "Official specification focus term: Conservative medical opposition"
             },
             {
-              "term": "Losing wealthy patients who feared radical ideas",
-              "clue": "The biographer John Aubrey noted that after publishing De Motu Cordis, Harvey 'fell mightily in his practice' as wealthy patients refused to consult a doctor whose theories were considered eccentric and mad."
+              "term": "Losing private clients",
+              "clue": "Official specification focus term: Losing private clients"
             },
             {
-              "term": "Lacking microscopes to show artery-vein connections",
-              "clue": "Because 17th-century microscopes could not resolve microscopic capillaries connecting arteries to veins, many doctors rejected Harvey's theory until Marcello Malpighi observed capillaries in 1661."
+              "term": "Slow university adoption",
+              "clue": "Official specification focus term: Slow university adoption"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>facing ridicule by Galenists as a quack circulator</strong> and <strong>losing wealthy patients who feared radical ideas</strong>, established authority maintained doctrinal control by <strong>lacking microscopes to show artery-vein connections</strong>.",
-          "title": "Why was Harvey’s discovery fiercely rejected by established doctors?",
+          "model_sentence": "Harvey met fierce <strong>Conservative medical opposition</strong> from established doctors, temporarily <strong>Losing private clients</strong> and facing a very <strong>Slow university adoption</strong> across Europe.",
+          "title": "Opposition from 'Galenists' & Professional Skepticism",
           "dates": "1630s–1650s"
         },
         {
           "step": 5,
           "date": "1661",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why was the discovery of capillaries the final proof Harvey was right?",
+          "heading": "How did the microscope provide the final missing link in circulation?",
           "bullets": [
-            "Observing frog lung capillaries under Malpighi’s microscope",
-            "Confirming Harvey’s closed circulatory circuit",
-            "Continuing bloodletting treatments for two hundred years"
+            "Marcello Malpighi (1661)",
+            "Microscopic capillary vessels",
+            "Circulatory proof complete"
           ],
-          "focus_clue": "Why was the discovery of capillaries the final proof Harvey was right?",
+          "focus_clue": "How did the microscope provide the final missing link in circulation?",
           "words": [
             {
-              "term": "Observing frog lung capillaries under Malpighi’s microscope",
-              "clue": "Harvey had no compound microscope powerful enough to see the tiny capillaries linking arteries and veins (which Marcello Malpighi finally observed in frog lungs in 1661)."
+              "term": "Marcello Malpighi (1661)",
+              "clue": "Official specification focus term: Marcello Malpighi (1661)"
             },
             {
-              "term": "Confirming Harvey’s closed circulatory circuit",
-              "clue": "A derogatory 17th-century insult used by conservative physicians to mock Harvey as an irrational charlatan or quack."
+              "term": "Microscopic capillary vessels",
+              "clue": "Official specification focus term: Microscopic capillary vessels"
             },
             {
-              "term": "Continuing bloodletting treatments for two hundred years",
-              "clue": "Furthermore, understanding blood circulation offered no new treatments: doctors could not perform blood transfusions or surgical vascular repairs, and physicians continued to prescribe phlebotomy, purging, and herbal cordials for another two centuries."
+              "term": "Circulatory proof complete",
+              "clue": "Official specification focus term: Circulatory proof complete"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>observing frog lung capillaries under Malpighi’s microscope</strong> and <strong>confirming Harvey’s closed circulatory circuit</strong>, established authority maintained doctrinal control by <strong>continuing bloodletting treatments for two hundred years</strong>.",
-          "title": "Why was the discovery of capillaries the final proof Harvey was right?",
+          "model_sentence": "Four years after Harvey died, <strong>Marcello Malpighi (1661)</strong> used early microscopes to discover <strong>Microscopic capillary vessels</strong>, rendering the <strong>Circulatory proof complete</strong>.",
+          "title": "Marcello Malpighi Confirms Capillaries (1661)",
           "dates": "1661"
         }
       ],
@@ -11549,145 +11549,145 @@ export default {
           "step": 1,
           "date": "Spring 1665",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did the rich flee London while the poor suffered catastrophic mortality?",
+          "heading": "How did the Great Plague of 1665 impact London?",
           "bullets": [
-            "Spreading through poor crowded London parishes",
-            "Fleeing town by carriage: King Charles II and physicians",
-            "Leaving poor weavers trapped behind city gates"
+            "Great Plague (1665)",
+            "Charles II court flight",
+            "St Giles parish outbreak"
           ],
-          "focus_clue": "Why did the rich flee London while the poor suffered catastrophic mortality?",
+          "focus_clue": "How did the Great Plague of 1665 impact London?",
           "words": [
             {
-              "term": "Spreading through poor crowded London parishes",
-              "clue": "The Great Plague of 1665 ravaged crowded, unsanitary suburban parishes like St Giles, where poor families lived in damp tenements infested with black rats and fleas."
+              "term": "Great Plague (1665)",
+              "clue": "Official specification focus term: Great Plague (1665)"
             },
             {
-              "term": "Fleeing town by carriage: King Charles II and physicians",
-              "clue": "King Charles II, his court, Parliament, and virtually all wealthy physicians fled to Oxford and the countryside, leaving poor citizens, parish watchmen, and a handful of devoted apothecaries to confront the devastation."
+              "term": "Charles II court flight",
+              "clue": "Official specification focus term: Charles II court flight"
             },
             {
-              "term": "Leaving poor weavers trapped behind city gates",
-              "clue": "King Charles II, his court, Parliament, and virtually all wealthy physicians fled to Oxford and the countryside, leaving poor citizens, parish watchmen, and a handful of devoted apothecaries to confront the devastation."
+              "term": "St Giles parish outbreak",
+              "clue": "Official specification focus term: St Giles parish outbreak"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>spreading through poor crowded London parishes</strong> and <strong>fleeing town by carriage: King Charles II and physicians</strong>, established authority maintained doctrinal control by <strong>leaving poor weavers trapped behind city gates</strong>.",
-          "title": "Why did the rich flee London while the poor suffered catastrophic mortality?",
+          "model_sentence": "The devastating <strong>Great Plague (1665)</strong> began with a suburban <strong>St Giles parish outbreak</strong> before spreading rapidly, triggering the hasty <strong>Charles II court flight</strong> into the countryside.",
+          "title": "Outbreak in St Giles & Flight of the Wealthy",
           "dates": "Spring 1665"
         },
         {
           "step": 2,
           "date": "Summer 1665",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why did people still use 14th-century remedies in 1665?",
+          "heading": "Why did treatments in 1665 mirror those of the 1348 Black Death?",
           "bullets": [
-            "Blaming planetary alignments and wrath of God",
-            "Sniffing dried sponges soaked in vinegar",
-            "Strapping plucked live pigeons to hot buboes"
+            "Wrath of God & miasma",
+            "Plague water & pomanders",
+            "Pigeon bubo remedies"
           ],
-          "focus_clue": "Why did people still use 14th-century remedies in 1665?",
+          "focus_clue": "Why did treatments in 1665 mirror those of the 1348 Black Death?",
           "words": [
             {
-              "term": "Blaming planetary alignments and wrath of God",
-              "clue": "The Church proclaimed the pestilence was God’s wrath punishing London for vice, drunkenness, and the sins of the Restoration court."
+              "term": "Wrath of God & miasma",
+              "clue": "Official specification focus term: Wrath of God & miasma"
             },
             {
-              "term": "Sniffing dried sponges soaked in vinegar",
-              "clue": "Doctors prescribed smoking tobacco to repel foul air, holding vinegar-soaked sponges, taking London Treacle (an electuary of Theriac and herbs), and strapping live plucked chickens or dried toads to swollen buboes to 'draw out' poison."
+              "term": "Plague water & pomanders",
+              "clue": "Official specification focus term: Plague water & pomanders"
             },
             {
-              "term": "Strapping plucked live pigeons to hot buboes",
-              "clue": "Doctors prescribed smoking tobacco to repel foul air, holding vinegar-soaked sponges, taking London Treacle (an electuary of Theriac and herbs), and strapping live plucked chickens or dried toads to swollen buboes to 'draw out' poison."
+              "term": "Pigeon bubo remedies",
+              "clue": "Official specification focus term: Pigeon bubo remedies"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>blaming planetary alignments and wrath of God</strong> and <strong>sniffing dried sponges soaked in vinegar</strong>, established authority maintained doctrinal control by <strong>strapping plucked live pigeons to hot buboes</strong>.",
-          "title": "Why did people still use 14th-century remedies in 1665?",
+          "model_sentence": "Treatments remained rooted in beliefs about the <strong>Wrath of God & miasma</strong>, as Londoners relied on <strong>Plague water & pomanders</strong> alongside bizarre plucked <strong>Pigeon bubo remedies</strong>.",
+          "title": "Continuity of Supernatural & Humoral Treatments",
           "dates": "Summer 1665"
         },
         {
           "step": 3,
           "date": "1665",
           "para_ref": "[3.1–3.2]",
-          "heading": "How did local government action in 1665 show greater organization than 1348?",
+          "heading": "How did government quarantine attempt to halt transmission?",
           "bullets": [
-            "Painting red crosses on barred front doors",
-            "Posting armed watchmen to enforce quarantine",
-            "Building wooden pest houses outside city walls"
+            "Mayor quarantine orders",
+            "Red cross marked doors",
+            "Parish pest houses"
           ],
-          "focus_clue": "How did local government action in 1665 show greater organization than 1348?",
+          "focus_clue": "How did government quarantine attempt to halt transmission?",
           "words": [
             {
-              "term": "Painting red crosses on barred front doors",
-              "clue": "A red cross one foot high was painted on the front door alongside the prayer 'Lord have mercy upon us'."
+              "term": "Mayor quarantine orders",
+              "clue": "Official specification focus term: Mayor quarantine orders"
             },
             {
-              "term": "Posting armed watchmen to enforce quarantine",
-              "clue": "Armed watchmen guarded doors day and night to prevent residents from escaping."
+              "term": "Red cross marked doors",
+              "clue": "Official specification focus term: Red cross marked doors"
             },
             {
-              "term": "Building wooden pest houses outside city walls",
-              "clue": "Broadside engraving illustrating scenes from the 1665 plague: citizens fleeing by water and coach, searchers carrying white rods, the dead cart collecting corpses, and mass burials in plague pits outside city walls."
+              "term": "Parish pest houses",
+              "clue": "Official specification focus term: Parish pest houses"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>painting red crosses on barred front doors</strong> and <strong>posting armed watchmen to enforce quarantine</strong>, established authority maintained doctrinal control by <strong>building wooden pest houses outside city walls</strong>.",
-          "title": "How did local government action in 1665 show greater organization than 1348?",
+          "model_sentence": "The city enforced strict <strong>Mayor quarantine orders</strong>, locking families inside homes behind <strong>Red cross marked doors</strong> and confining infectious paupers to isolated <strong>Parish pest houses</strong>.",
+          "title": "Lord Mayor's Orders: Red Crosses & Watchmen",
           "dates": "1665"
         },
         {
           "step": 4,
           "date": "1665",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why was slaughtering cats and dogs a tragic medical mistake?",
+          "heading": "Why were street fires and culling pets ineffective countermeasures?",
           "bullets": [
-            "Killing forty thousand domestic dogs and cats",
-            "Eliminating the natural predators of black rats",
-            "Allowing plague-carrying rodent fleas to multiply"
+            "Culling dogs & cats",
+            "Street barrel fires",
+            "Tobacco smoke warding"
           ],
-          "focus_clue": "Why was slaughtering cats and dogs a tragic medical mistake?",
+          "focus_clue": "Why were street fires and culling pets ineffective countermeasures?",
           "words": [
             {
-              "term": "Killing forty thousand domestic dogs and cats",
-              "clue": "Believing household pets spread miasma, the Lord Mayor ordered the slaughter of over 40,000 dogs and 200,000 cats."
+              "term": "Culling dogs & cats",
+              "clue": "Official specification focus term: Culling dogs & cats"
             },
             {
-              "term": "Eliminating the natural predators of black rats",
-              "clue": "This catastrophic blunder eliminated the primary natural predators of black rats, allowing the rodent population and their plague-carrying fleas to multiply uncontrollably."
+              "term": "Street barrel fires",
+              "clue": "Official specification focus term: Street barrel fires"
             },
             {
-              "term": "Allowing plague-carrying rodent fleas to multiply",
-              "clue": "This catastrophic blunder eliminated the primary natural predators of black rats, allowing the rodent population and their plague-carrying fleas to multiply uncontrollably."
+              "term": "Tobacco smoke warding",
+              "clue": "Official specification focus term: Tobacco smoke warding"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>killing forty thousand domestic dogs and cats</strong> and <strong>eliminating the natural predators of black rats</strong>, established authority maintained doctrinal control by <strong>allowing plague-carrying rodent fleas to multiply</strong>.",
-          "title": "Why was slaughtering cats and dogs a tragic medical mistake?",
+          "model_sentence": "Mayoral edicts mistakenly ordered the <strong>Culling dogs & cats</strong>, while wardens lit smoking <strong>Street barrel fires</strong> and encouraged <strong>Tobacco smoke warding</strong> against foul vapours.",
+          "title": "Culling Animals & Smoking Fires",
           "dates": "1665"
         },
         {
           "step": 5,
           "date": "Winter 1665–1666",
           "para_ref": "[5.1–5.2]",
-          "heading": "How devastating was the demographic impact of the 1665 epidemic?",
+          "heading": "What was the devastating demographic toll of the 1665 plague?",
           "bullets": [
-            "Calling \"Bring out your dead\" into empty alleys",
-            "Burying one hundred thousand Londoners in mass trenches",
-            "Ending the plague through winter frosts and the Great Fire"
+            "London dead carts",
+            "100,000 plague deaths",
+            "Bills of Mortality records"
           ],
-          "focus_clue": "How devastating was the demographic impact of the 1665 epidemic?",
+          "focus_clue": "What was the devastating demographic toll of the 1665 plague?",
           "words": [
             {
-              "term": "Calling \"Bring out your dead\" into empty alleys",
-              "clue": "At night, dead carts trundled through deserted streets accompanied by the mournful cry 'Bring out your dead!', dumping bodies into vast mass trenches at Holywell Mount and Bunhill Fields."
+              "term": "London dead carts",
+              "clue": "Official specification focus term: London dead carts"
             },
             {
-              "term": "Burying one hundred thousand Londoners in mass trenches",
-              "clue": "At night, dead carts trundled through deserted streets accompanied by the mournful cry 'Bring out your dead!', dumping bodies into vast mass trenches at Holywell Mount and Bunhill Fields."
+              "term": "100,000 plague deaths",
+              "clue": "Official specification focus term: 100,000 plague deaths"
             },
             {
-              "term": "Ending the plague through winter frosts and the Great Fire",
-              "clue": "The plague finally abated during the freezing winter of 1665–1666, followed by the Great Fire of London in September 1666."
+              "term": "Bills of Mortality records",
+              "clue": "Official specification focus term: Bills of Mortality records"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>calling \"Bring out your dead\" into empty alleys</strong> and <strong>burying one hundred thousand Londoners in mass trenches</strong>, established authority maintained doctrinal control by <strong>ending the plague through winter frosts and the Great Fire</strong>.",
-          "title": "How devastating was the demographic impact of the 1665 epidemic?",
+          "model_sentence": "Rattling through deserted streets, <strong>London dead carts</strong> collected corpses as over <strong>100,000 plague deaths</strong> were grimly documented in weekly <strong>Bills of Mortality records</strong>.",
+          "title": "The Dead Carts & East Smithfield Pits",
           "dates": "Winter 1665–1666"
         }
       ],
@@ -12547,145 +12547,145 @@ export default {
           "step": 1,
           "date": "c1700–1850s",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did doctors believe disease created germs, rather than vice versa?",
+          "heading": "What did scientists believe caused disease before Germ Theory?",
           "bullets": [
-            "Smelling rotting meat and open cesspools",
-            "Foul airborne damp blamed for illness",
-            "Microscopes seeing tiny swimming creatures"
+            "Spontaneous generation theory",
+            "Miasma stench blamed",
+            "Pre-bacteriology limits"
           ],
-          "focus_clue": "Why did doctors believe disease created germs, rather than vice versa?",
+          "focus_clue": "What did scientists believe caused disease before Germ Theory?",
           "words": [
             {
-              "term": "Smelling rotting meat and open cesspools",
-              "clue": "The dominant scientific paradigm remained Spontaneous Generation —the belief that rotting matter naturally generated living microbes out of decay, just as rotting meat appeared to spawn flies and maggots."
+              "term": "Spontaneous generation theory",
+              "clue": "Official specification focus term: Spontaneous generation theory"
             },
             {
-              "term": "Foul airborne damp blamed for illness",
-              "clue": "Before Pasteur, most doctors adhered to the miasma theory, believing that damp, foul-smelling air from rotting waste spontaneously generated disease within human bodies."
+              "term": "Miasma stench blamed",
+              "clue": "Official specification focus term: Miasma stench blamed"
             },
             {
-              "term": "Microscopes seeing tiny swimming creatures",
-              "clue": "Early 19th-century microscopists observed microorganisms in rotting food and diseased tissue, but believed these microbes were the byproduct, rather than the cause, of decay."
+              "term": "Pre-bacteriology limits",
+              "clue": "Official specification focus term: Pre-bacteriology limits"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Smelling rotting meat and open cesspools</strong> reinforced <strong>Foul airborne damp blamed for illness</strong>, meaning that <strong>Microscopes seeing tiny swimming creatures</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did doctors believe disease created germs, rather than vice versa?",
+          "model_sentence": "Before the 1860s, orthodox science upheld <strong>Spontaneous generation theory</strong> and <strong>Miasma stench blamed</strong> for epidemics, highlighting the severe <strong>Pre-bacteriology limits</strong> of medicine.",
+          "title": "Spontaneous Generation & Miasma Orthodoxy",
           "dates": "c1700–1850s"
         },
         {
           "step": 2,
           "date": "1861",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did the swan-neck flask disprove spontaneous generation?",
+          "heading": "How did Pasteur prove that microbes cause decay?",
           "bullets": [
-            "Heating sour beer inside glass flasks",
-            "Bent swan necks trapping airborne dust",
-            "Boiled broth staying clear and fresh"
+            "Louis Pasteur (1861)",
+            "Swan-neck flask test",
+            "Airborne microbes proved"
           ],
-          "focus_clue": "How did the swan-neck flask disprove spontaneous generation?",
+          "focus_clue": "How did Pasteur prove that microbes cause decay?",
           "words": [
             {
-              "term": "Heating sour beer inside glass flasks",
-              "clue": "Pasteur prepared nutrient yeast broths inside glass flasks, heating them to boiling point to destroy all pre-existing microbial life."
+              "term": "Louis Pasteur (1861)",
+              "clue": "Official specification focus term: Louis Pasteur (1861)"
             },
             {
-              "term": "Bent swan necks trapping airborne dust",
-              "clue": "Air was permitted to circulate freely into the flask through the open end, but airborne dust particles, fungal spores, and bacteria were trapped by gravity and condensation in the downward dip of the curve."
+              "term": "Swan-neck flask test",
+              "clue": "Official specification focus term: Swan-neck flask test"
             },
             {
-              "term": "Boiled broth staying clear and fresh",
-              "clue": "The results were conclusive: the nutrient broth inside the swan-neck flasks remained sterile, fresh, and crystal clear indefinitely."
+              "term": "Airborne microbes proved",
+              "clue": "Official specification focus term: Airborne microbes proved"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Heating sour beer inside glass flasks</strong> reinforced <strong>Bent swan necks trapping airborne dust</strong>, meaning that <strong>Boiled broth staying clear and fresh</strong> remained deeply entrenched during this medical era.",
-          "title": "How did the swan-neck flask disprove spontaneous generation?",
+          "model_sentence": "In 1861, French chemist <strong>Louis Pasteur (1861)</strong> conducted his famous <strong>Swan-neck flask test</strong>, through which <strong>Airborne microbes proved</strong> that decaying matter did not generate life.",
+          "title": "Louis Pasteur's Swan-Neck Flask Experiments",
           "dates": "1861"
         },
         {
           "step": 3,
           "date": "1867–1876",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did British doctors refuse to believe germs caused human illness?",
+          "heading": "Why did British doctors resist Pasteur's Germ Theory?",
           "bullets": [
-            "London doctors defending bad air theory",
-            "Shining light beams through dusty boxes",
-            "Spraying smelly carbolic acid on cut flesh"
+            "British medical scepticism",
+            "John Tyndall experiments",
+            "Charlton Bastian opposition"
           ],
-          "focus_clue": "Why did British doctors refuse to believe germs caused human illness?",
+          "focus_clue": "Why did British doctors resist Pasteur's Germ Theory?",
           "words": [
             {
-              "term": "London doctors defending bad air theory",
-              "clue": "Powerful British authorities—led by Dr Henry Charlton Bastian, Professor of Pathological Anatomy at University College London—violently opposed Germ Theory through the 1870s."
+              "term": "British medical scepticism",
+              "clue": "Official specification focus term: British medical scepticism"
             },
             {
-              "term": "Shining light beams through dusty boxes",
-              "clue": "Physicist John Tyndall designed sealed, dust-free glass boxes and used light beams to demonstrate that sterile broth remained pure until exposed to airborne bacterial particles."
+              "term": "John Tyndall experiments",
+              "clue": "Official specification focus term: John Tyndall experiments"
             },
             {
-              "term": "Spraying smelly carbolic acid on cut flesh",
-              "clue": "Joseph Lister's success spraying carbolic acid antiseptic onto open surgical wounds provided practical clinical proof that airborne microbes caused gangrene and sepsis."
+              "term": "Charlton Bastian opposition",
+              "clue": "Official specification focus term: Charlton Bastian opposition"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>London doctors defending bad air theory</strong> reinforced <strong>Shining light beams through dusty boxes</strong>, meaning that <strong>Spraying smelly carbolic acid on cut flesh</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did British doctors refuse to believe germs caused human illness?",
+          "model_sentence": "Pasteur encountered persistent <strong>British medical scepticism</strong> led by <strong>Charlton Bastian opposition</strong>, until physicist <strong>John Tyndall experiments</strong> helped vindicate germ theory.",
+          "title": "British Medical Scepticism & John Tyndall",
           "dates": "1867–1876"
         },
         {
           "step": 4,
           "date": "1876–1882",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did Koch’s staining and culture methods prove specificity?",
+          "heading": "How did Koch identify specific bacterial culprits?",
           "bullets": [
-            "Solid seaweed agar jelly in shallow dishes",
-            "Staining microbes with bright purple dyes",
-            "Photographing deadly tuberculosis under glass lenses"
+            "Robert Koch bacteriology",
+            "Agar jelly plates",
+            "Methyl violet stains"
           ],
-          "focus_clue": "How did Koch’s staining and culture methods prove specificity?",
+          "focus_clue": "How did Koch identify specific bacterial culprits?",
           "words": [
             {
-              "term": "Solid seaweed agar jelly in shallow dishes",
-              "clue": "Koch transformed microbiology into an exact forensic science through four breakthrough innovations: first, using solid culture media (nutrient agar jelly derived from seaweed in flat glass Petri dishes) instead of contaminated liquid broths, allowing pure, isolated bacterial colonies to be grown; second, staining transparent microbes with synthetic industrial aniline dyes (methyl violet and methylene blue), making bacteria stand out sharply against human tissue; third, fitting Zeiss compound microscopes with precision oil-immersion lenses; and fourth, photographing bacterial specimens with camera attachments ( Source B ), producing permanent, irrefutable photographic evidence."
+              "term": "Robert Koch bacteriology",
+              "clue": "Official specification focus term: Robert Koch bacteriology"
             },
             {
-              "term": "Staining microbes with bright purple dyes",
-              "clue": "Koch transformed microbiology into an exact forensic science through four breakthrough innovations: first, using solid culture media (nutrient agar jelly derived from seaweed in flat glass Petri dishes) instead of contaminated liquid broths, allowing pure, isolated bacterial colonies to be grown; second, staining transparent microbes with synthetic industrial aniline dyes (methyl violet and methylene blue), making bacteria stand out sharply against human tissue; third, fitting Zeiss compound microscopes with precision oil-immersion lenses; and fourth, photographing bacterial specimens with camera attachments ( Source B ), producing permanent, irrefutable photographic evidence."
+              "term": "Agar jelly plates",
+              "clue": "Official specification focus term: Agar jelly plates"
             },
             {
-              "term": "Photographing deadly tuberculosis under glass lenses",
-              "clue": "Koch transformed microbiology into an exact forensic science through four breakthrough innovations: first, using solid culture media (nutrient agar jelly derived from seaweed in flat glass Petri dishes) instead of contaminated liquid broths, allowing pure, isolated bacterial colonies to be grown; second, staining transparent microbes with synthetic industrial aniline dyes (methyl violet and methylene blue), making bacteria stand out sharply against human tissue; third, fitting Zeiss compound microscopes with precision oil-immersion lenses; and fourth, photographing bacterial specimens with camera attachments ( Source B ), producing permanent, irrefutable photographic evidence."
+              "term": "Methyl violet stains",
+              "clue": "Official specification focus term: Methyl violet stains"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Solid seaweed agar jelly in shallow dishes</strong> reinforced <strong>Staining microbes with bright purple dyes</strong>, meaning that <strong>Photographing deadly tuberculosis under glass lenses</strong> remained deeply entrenched during this medical era.",
-          "title": "How did Koch’s staining and culture methods prove specificity?",
+          "model_sentence": "In Germany, <strong>Robert Koch bacteriology</strong> revolutionized diagnosis by culturing microbes on solid <strong>Agar jelly plates</strong> and staining bacteria with visible <strong>Methyl violet stains</strong>.",
+          "title": "Robert Koch & Staining Specific Microbes",
           "dates": "1876–1882"
         },
         {
           "step": 5,
           "date": "1883–1890",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why was photomicrography crucial in winning British doctors over?",
+          "heading": "Why was isolating tuberculosis and cholera microbes so vital?",
           "bullets": [
-            "Tracking curved cholera germs in river water",
-            "Taking crisp black-and-white photos of germs",
-            "Injecting farm animals to test poisons"
+            "Tuberculosis bacteria (1882)",
+            "Cholera microbe (1883)",
+            "High-resolution microphotography"
           ],
-          "focus_clue": "Why was photomicrography crucial in winning British doctors over?",
+          "focus_clue": "Why was isolating tuberculosis and cholera microbes so vital?",
           "words": [
             {
-              "term": "Tracking curved cholera germs in river water",
-              "clue": "In 1883, Koch traveled to Egypt and India to isolate the comma-shaped Vibrio cholerae bacterium in contaminated drinking water, providing visual proof of John Snow's earlier deductions."
+              "term": "Tuberculosis bacteria (1882)",
+              "clue": "Official specification focus term: Tuberculosis bacteria (1882)"
             },
             {
-              "term": "Taking crisp black-and-white photos of germs",
-              "clue": "Robert Koch attached cameras to microscopes, producing unambiguous photomicrographs of distinct bacteria that convinced sceptical British doctors that specific germs caused specific diseases."
+              "term": "Cholera microbe (1883)",
+              "clue": "Official specification focus term: Cholera microbe (1883)"
             },
             {
-              "term": "Injecting farm animals to test poisons",
-              "clue": "Koch tested his experimental postulates by injecting pure bacterial cultures into healthy laboratory mice and sheep to observe whether they developed the exact symptoms of disease."
+              "term": "High-resolution microphotography",
+              "clue": "Official specification focus term: High-resolution microphotography"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>tracking curved cholera germs in river water</strong> and <strong>taking crisp black-and-white photos of germs</strong>, established authority maintained doctrinal control by <strong>injecting farm animals to test poisons</strong>.",
-          "title": "Why was photomicrography crucial in winning British doctors over?",
+          "model_sentence": "Koch identified the deadly <strong>Tuberculosis bacteria (1882)</strong> and the <strong>Cholera microbe (1883)</strong>, publishing definitive proof using <strong>High-resolution microphotography</strong>.",
+          "title": "Discovery of Tuberculosis & Cholera Bacteria",
           "dates": "1883–1890"
         }
       ],
@@ -13642,145 +13642,145 @@ export default {
           "step": 1,
           "date": "1721–1795",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why was inoculation dangerous for poor urban communities?",
+          "heading": "How did 18th-century doctors attempt to prevent smallpox?",
           "bullets": [
-            "Scabbing sores blinding young children",
-            "Scratching live pus into healthy arms",
-            "Paying rich doctors high guinea fees"
+            "Smallpox variolation inoculation",
+            "Suttonian method fees",
+            "Infection risk remains"
           ],
-          "focus_clue": "Why was inoculation dangerous for poor urban communities?",
+          "focus_clue": "How did 18th-century doctors attempt to prevent smallpox?",
           "words": [
             {
-              "term": "Scabbing sores blinding young children",
-              "clue": "Smallpox was a terrifying epidemic disease that killed roughly one-third of victims, leaving survivors permanently scarred with pockmarks or blinded by facial lesions."
+              "term": "Smallpox variolation inoculation",
+              "clue": "Official specification focus term: Smallpox variolation inoculation"
             },
             {
-              "term": "Scratching live pus into healthy arms",
-              "clue": "Inoculation involved using a lancet to scrape live, infectious smallpox pus from a sick patient’s pustule directly into a cut on a healthy person’s arm."
+              "term": "Suttonian method fees",
+              "clue": "Official specification focus term: Suttonian method fees"
             },
             {
-              "term": "Paying rich doctors high guinea fees",
-              "clue": "Furthermore, commercial inoculators like the Sutton and Dimsdale families charged extortionate fees (up to 20 guineas), making prevention a luxury monopoly reserved exclusively for the wealthy."
+              "term": "Infection risk remains",
+              "clue": "Official specification focus term: Infection risk remains"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>scabbing sores blinding young children</strong> and <strong>scratching live pus into healthy arms</strong>, established authority maintained doctrinal control by <strong>paying rich doctors high guinea fees</strong>.",
-          "title": "Why was inoculation dangerous for poor urban communities?",
+          "model_sentence": "Throughout the 1700s, doctors practiced <strong>Smallpox variolation inoculation</strong> and charged lucrative <strong>Suttonian method fees</strong>, even though a deadly <strong>Infection risk remains</strong>.",
+          "title": "Smallpox Variolation & Suttonian Inoculation",
           "dates": "1721–1795"
         },
         {
           "step": 2,
           "date": "1796–1798",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did Jenner use scientific experimentation to test folklore?",
+          "heading": "How did Jenner discover that cowpox protects against smallpox?",
           "bullets": [
-            "Milking cows with clear smooth skin",
-            "Scraping blister liquid into boy James Phipps",
-            "Dosing boy with deadly pox without illness"
+            "Edward Jenner (1796)",
+            "James Phipps vaccination",
+            "Cowpox blister pus"
           ],
-          "focus_clue": "How did Jenner use scientific experimentation to test folklore?",
+          "focus_clue": "How did Jenner discover that cowpox protects against smallpox?",
           "words": [
             {
-              "term": "Milking cows with clear smooth skin",
-              "clue": "Edward Jenner investigated Gloucestershire folklore that milkmaids who contracted mild cowpox sores from udders possessed clear skin and seemed immune to deadly smallpox."
+              "term": "Edward Jenner (1796)",
+              "clue": "Official specification focus term: Edward Jenner (1796)"
             },
             {
-              "term": "Scraping blister liquid into boy James Phipps",
-              "clue": "On 14 May 1796, Jenner extracted pus from a fresh cowpox vesicle on the hand of dairymaid Sarah Nelmes and scratched it into the arm of eight-year-old James Phipps, the son of Jenner’s impoverished gardener."
+              "term": "James Phipps vaccination",
+              "clue": "Official specification focus term: James Phipps vaccination"
             },
             {
-              "term": "Dosing boy with deadly pox without illness",
-              "clue": "In July 1796, Jenner tested his vaccine by deliberately inoculating eight-year-old James Phipps with virulent smallpox matter, proving the boy was completely immune."
+              "term": "Cowpox blister pus",
+              "clue": "Official specification focus term: Cowpox blister pus"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>milking cows with clear smooth skin</strong> and <strong>scraping blister liquid into boy James Phipps</strong>, established authority maintained doctrinal control by <strong>dosing boy with deadly pox without illness</strong>.",
-          "title": "How did Jenner use scientific experimentation to test folklore?",
+          "model_sentence": "In 1796, country doctor <strong>Edward Jenner (1796)</strong> performed the historic <strong>James Phipps vaccination</strong> by deliberately inoculating the boy with harmless <strong>Cowpox blister pus</strong>.",
+          "title": "Edward Jenner & The James Phipps Vaccination",
           "dates": "1796–1798"
         },
         {
           "step": 3,
           "date": "1798–1810s",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did London doctors and church leaders resist vaccination?",
+          "heading": "Why was Jenner's vaccine opposed by doctors and the public?",
           "bullets": [
-            "Printing scary cartoons with sprouting cow horns",
-            "Church pulpits warning against beast blood",
-            "Dirty hospital needles passing deadly infections"
+            "Royal Society scepticism",
+            "Anti-vaccine cartoon satire",
+            "Cowpox contamination fears"
           ],
-          "focus_clue": "Why did London doctors and church leaders resist vaccination?",
+          "focus_clue": "Why was Jenner's vaccine opposed by doctors and the public?",
           "words": [
             {
-              "term": "Printing scary cartoons with sprouting cow horns",
-              "clue": "Furthermore, sensational anti-vaccination caricatures—most famously James Gillray’s 1802 print The Cow-Pock ( Source B )—stoked visceral public panic by depicting vaccinated citizens sprouting horns, tails, and full-grown cows from their flesh."
+              "term": "Royal Society scepticism",
+              "clue": "Official specification focus term: Royal Society scepticism"
             },
             {
-              "term": "Church pulpits warning against beast blood",
-              "clue": "Despite its obvious lifesaving potential, Jenner’s discovery provoked ferocious, sustained opposition from three entrenched factions: first, commercial inoculators and London physicians, who feared the loss of their lucrative variolation monopoly and spread rumors that cowpox was ineffective; second, religious preachers, who thundered from church pulpits that injecting disease matter from a \"brute beast\" into human veins was an ungodly abomination that interfered with God’s divine punishment for sin; and third, the conservative scientific establishment."
+              "term": "Anti-vaccine cartoon satire",
+              "clue": "Official specification focus term: Anti-vaccine cartoon satire"
             },
             {
-              "term": "Dirty hospital needles passing deadly infections",
-              "clue": "Working-class and middle-class parents argued the state had no right to violate their bodily autonomy by forcing animal substances into their infants, especially when unsterilized needles risked transmitting fatal infections like syphilis and erysipelas."
+              "term": "Cowpox contamination fears",
+              "clue": "Official specification focus term: Cowpox contamination fears"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Printing scary cartoons with sprouting cow horns</strong> reinforced <strong>Church pulpits warning against beast blood</strong>, meaning that <strong>Dirty hospital needles passing deadly infections</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did London doctors and church leaders resist vaccination?",
+          "model_sentence": "Jenner encountered fierce <strong>Royal Society scepticism</strong> and popular <strong>Anti-vaccine cartoon satire</strong>, as critics stoked hysterical <strong>Cowpox contamination fears</strong>.",
+          "title": "Skepticism from the Royal Society & Caricaturists",
           "dates": "1798–1810s"
         },
         {
           "step": 4,
           "date": "1802–1840",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why did the British government abandon laissez-faire for vaccination?",
+          "heading": "How did the British government support Jenner's vaccine?",
           "bullets": [
-            "Voting thirty thousand pounds in gold coins",
-            "Giving free scratches to village babies",
-            "Banning old dangerous pus cuts by law"
+            "Parliamentary grants (£30,000)",
+            "1840 Vaccination Act",
+            "Inoculation banned legally"
           ],
-          "focus_clue": "Why did the British government abandon laissez-faire for vaccination?",
+          "focus_clue": "How did the British government support Jenner's vaccine?",
           "words": [
             {
-              "term": "Voting thirty thousand pounds in gold coins",
-              "clue": "In 1802 and 1807, the British Parliament voted generous parliamentary grants totalling £30,000 to fund Jenner's vaccination research and establish national supply clinics."
+              "term": "Parliamentary grants (£30,000)",
+              "clue": "Official specification focus term: Parliamentary grants (£30,000)"
             },
             {
-              "term": "Giving free scratches to village babies",
-              "clue": "Charitable organizations like the Royal Jennerian Society provided free cowpox vaccinations to hundreds of poor infants across Britain to eradicate smallpox."
+              "term": "1840 Vaccination Act",
+              "clue": "Official specification focus term: 1840 Vaccination Act"
             },
             {
-              "term": "Banning old dangerous pus cuts by law",
-              "clue": "The Act outlawed the dangerous practice of variolation (smallpox inoculation) entirely, making it a criminal offence."
+              "term": "Inoculation banned legally",
+              "clue": "Official specification focus term: Inoculation banned legally"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>voting thirty thousand pounds in gold coins</strong> and <strong>giving free scratches to village babies</strong>, established authority maintained doctrinal control by <strong>banning old dangerous pus cuts by law</strong>.",
-          "title": "Why did the British government abandon laissez-faire for vaccination?",
+          "model_sentence": "Convinced by Jenner's evidence, Parliament awarded <strong>Parliamentary grants (£30,000)</strong>, passed the <strong>1840 Vaccination Act</strong>, and ensured dangerous variolation <strong>Inoculation banned legally</strong>.",
+          "title": "Parliamentary Grants & The 1840 Vaccination Act",
           "dates": "1802–1840"
         },
         {
           "step": 5,
           "date": "1852–1871",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did making vaccination compulsory spark fierce public protests?",
+          "heading": "Why did smallpox vaccination become mandatory in Britain?",
           "bullets": [
-            "Fining poor parents for refusing jabs",
-            "Angry street protests marching with banners",
-            "Plunging death rates as smallpox disappears"
+            "Compulsory Vaccination (1853)",
+            "1871 Enforcement Act",
+            "Dramatic smallpox eradication"
           ],
-          "focus_clue": "Why did making vaccination compulsory spark fierce public protests?",
+          "focus_clue": "Why did smallpox vaccination become mandatory in Britain?",
           "words": [
             {
-              "term": "Fining poor parents for refusing jabs",
-              "clue": "The 1853 Compulsory Vaccination Act imposed harsh fines and prison sentences on parents who failed to vaccinate infants within three months of birth."
+              "term": "Compulsory Vaccination (1853)",
+              "clue": "Official specification focus term: Compulsory Vaccination (1853)"
             },
             {
-              "term": "Angry street protests marching with banners",
-              "clue": "The Anti-Vaccination League organised mass public protests, arguing that compulsory injections infringed on personal liberty and injected animal filth into human blood."
+              "term": "1871 Enforcement Act",
+              "clue": "Official specification focus term: 1871 Enforcement Act"
             },
             {
-              "term": "Plunging death rates as smallpox disappears",
-              "clue": "Despite civil liberties protests, compulsory vaccination caused national smallpox deaths to plummet from over 40,000 per decade to virtually zero by the end of the century."
+              "term": "Dramatic smallpox eradication",
+              "clue": "Official specification focus term: Dramatic smallpox eradication"
             }
           ],
-          "model_sentence": "Through <strong>fining poor parents for refusing jabs</strong> and the implementation of <strong>Angry street protests marching with banners</strong>, structural pressure mounted, directly precipitating <strong>Plunging death rates as smallpox disappears</strong>.",
-          "title": "Why did making vaccination compulsory spark fierce public protests?",
+          "model_sentence": "The passage of the <strong>Compulsory Vaccination (1853)</strong> and the <strong>1871 Enforcement Act</strong> successfully curbed epidemics, leading to the <strong>Dramatic smallpox eradication</strong>.",
+          "title": "Compulsory Vaccination & Global Eradication",
           "dates": "1852–1871"
         }
       ],
@@ -14730,145 +14730,145 @@ export default {
           "step": 1,
           "date": "c1700–1850",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why were early Victorian hospital wards notorious death traps?",
+          "heading": "Why were early 19th-century hospitals known as death traps?",
           "bullets": [
-            "Crowded dark rooms smelling of festering wounds",
-            "Drunk ward women sleeping on dirty rags",
-            "Sharing blood-soaked blankets between beds"
+            "Pauper hospital squalor",
+            "Untrained nurse reputation",
+            "Cross-infection septic wards"
           ],
-          "focus_clue": "Why were early Victorian hospital wards notorious death traps?",
+          "focus_clue": "Why were early 19th-century hospitals known as death traps?",
           "words": [
             {
-              "term": "Crowded dark rooms smelling of festering wounds",
-              "clue": "Early 19th-century hospital wards were unventilated, squalid death traps where unwashed nurses shared dirty bandages between gangrenous surgical patients."
+              "term": "Pauper hospital squalor",
+              "clue": "Official specification focus term: Pauper hospital squalor"
             },
             {
-              "term": "Drunk ward women sleeping on dirty rags",
-              "clue": "Middle-class women refused to enter the trade, leaving ward care to uneducated drudges who lacked any basic understanding of hygiene, dressing wounds, or infection control."
+              "term": "Untrained nurse reputation",
+              "clue": "Official specification focus term: Untrained nurse reputation"
             },
             {
-              "term": "Sharing blood-soaked blankets between beds",
-              "clue": "Wards were cramped, airless, and dark; beds were pushed tightly together with three or four patients sharing a single straw mattress contaminated with blood, feces, and vomit ( Source A )."
+              "term": "Cross-infection septic wards",
+              "clue": "Official specification focus term: Cross-infection septic wards"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Crowded dark rooms smelling of festering wounds</strong> reinforced <strong>Drunk ward women sleeping on dirty rags</strong>, meaning that <strong>Sharing blood-soaked blankets between beds</strong> remained deeply entrenched during this medical era.",
-          "title": "Why were early Victorian hospital wards notorious death traps?",
+          "model_sentence": "Early Victorian healthcare suffered from <strong>Pauper hospital squalor</strong> and a notorious <strong>Untrained nurse reputation</strong>, which produced lethal <strong>Cross-infection septic wards</strong>.",
+          "title": "Hospital Squalor & The 'Betsy Prig' Reputation",
           "dates": "c1700–1850"
         },
         {
           "step": 2,
           "date": "1854–1856",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did Nightingale’s sanitary reforms drastically cut the death rate?",
+          "heading": "How did Nightingale reduce the mortality rate in the Crimea?",
           "bullets": [
-            "Sewers overflowing beneath wooden ward floors",
-            "Scrubbing dirty walls with boiling water and soap",
-            "Feeding wounded soldiers hot fresh stew"
+            "Crimean War (1854)",
+            "Scutari hospital sanitation",
+            "Death rate plummeted (42% to 2%)"
           ],
-          "focus_clue": "How did Nightingale’s sanitary reforms drastically cut the death rate?",
+          "focus_clue": "How did Nightingale reduce the mortality rate in the Crimea?",
           "words": [
             {
-              "term": "Sewers overflowing beneath wooden ward floors",
-              "clue": "Old Victorian hospitals were monolithic, multi-story blocks where foul air from lower wards rose through stairwells to poison upper floors."
+              "term": "Crimean War (1854)",
+              "clue": "Official specification focus term: Crimean War (1854)"
             },
             {
-              "term": "Scrubbing dirty walls with boiling water and soap",
-              "clue": "She organized military-style sanitary discipline: cleaning wards with boiling water, operating kitchens to serve nourishing broths, washing soldiers’ clothes in separate laundry facilities, and opening windows for fresh air ( Source B )."
+              "term": "Scutari hospital sanitation",
+              "clue": "Official specification focus term: Scutari hospital sanitation"
             },
             {
-              "term": "Feeding wounded soldiers hot fresh stew",
-              "clue": "She organized military-style sanitary discipline: cleaning wards with boiling water, operating kitchens to serve nourishing broths, washing soldiers’ clothes in separate laundry facilities, and opening windows for fresh air ( Source B )."
+              "term": "Death rate plummeted (42% to 2%)",
+              "clue": "Official specification focus term: Death rate plummeted (42% to 2%)"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Sewers overflowing beneath wooden ward floors</strong> reinforced <strong>Scrubbing dirty walls with boiling water and soap</strong>, meaning that <strong>Feeding wounded soldiers hot fresh stew</strong> remained deeply entrenched during this medical era.",
-          "title": "How did Nightingale’s sanitary reforms drastically cut the death rate?",
+          "model_sentence": "Sent to the <strong>Crimean War (1854)</strong>, Florence Nightingale enforced rigorous <strong>Scutari hospital sanitation</strong>, ensuring the soldier <strong>Death rate plummeted (42% to 2%)</strong>.",
+          "title": "Florence Nightingale at Scutari Hospital (1854)",
           "dates": "1854–1856"
         },
         {
           "step": 3,
           "date": "1859",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did Nightingale’s belief in miasma still produce effective hygiene?",
+          "heading": "How did Nightingale use statistics to reform hospital design?",
           "bullets": [
-            "Opening high windows for fresh river breezes",
-            "Drawing colourful polar pie charts for MPs",
-            "Demanding clean white cotton bandages"
+            "Notes on Nursing (1859)",
+            "Sanitary statistical charts",
+            "Pavilion hospital architecture"
           ],
-          "focus_clue": "Why did Nightingale’s belief in miasma still produce effective hygiene?",
+          "focus_clue": "How did Nightingale use statistics to reform hospital design?",
           "words": [
             {
-              "term": "Opening high windows for fresh river breezes",
-              "clue": "She organized military-style sanitary discipline: cleaning wards with boiling water, operating kitchens to serve nourishing broths, washing soldiers’ clothes in separate laundry facilities, and opening windows for fresh air (Source B)."
+              "term": "Notes on Nursing (1859)",
+              "clue": "Official specification focus term: Notes on Nursing (1859)"
             },
             {
-              "term": "Drawing colourful polar pie charts for MPs",
-              "clue": "Florence Nightingale pioneered statistical data visualization, using colorful 'polar area' coxcomb diagrams to prove to politicians that poor sanitation killed far more soldiers than combat."
+              "term": "Sanitary statistical charts",
+              "clue": "Official specification focus term: Sanitary statistical charts"
             },
             {
-              "term": "Demanding clean white cotton bandages",
-              "clue": "Sensational eyewitness dispatches published in *The Times* by William Howard Russell ignited public fury in London: British soldiers were dying in thousands not on the battlefield, but from rampant cholera, dysentery, and frostbite inside military hospitals that lacked bandages, food, soap, or clean water."
+              "term": "Pavilion hospital architecture",
+              "clue": "Official specification focus term: Pavilion hospital architecture"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>opening high windows for fresh river breezes</strong> and <strong>drawing colourful polar pie charts for MPs</strong>, established authority maintained doctrinal control by <strong>demanding clean white cotton bandages</strong>.",
-          "title": "Why did Nightingale’s belief in miasma still produce effective hygiene?",
+          "model_sentence": "Returning to Britain, Nightingale published <strong>Notes on Nursing (1859)</strong>, using pioneering <strong>Sanitary statistical charts</strong> to advocate modern <strong>Pavilion hospital architecture</strong>.",
+          "title": "Notes on Nursing & Statistical Reforms",
           "dates": "1859"
         },
         {
           "step": 4,
           "date": "1860s",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did the pavilion plan prevent cross-infection between wards?",
+          "heading": "What architectural features made pavilion hospitals sanitary?",
           "bullets": [
-            "Building long narrow brick ward pavilions",
-            "Washing smooth glazed walls with water",
-            "Cross-ventilation blowing stale room air away"
+            "Separate pavilion wards",
+            "Cross-ventilation high windows",
+            "Tiled washable surfaces"
           ],
-          "focus_clue": "How did the pavilion plan prevent cross-infection between wards?",
+          "focus_clue": "What architectural features made pavilion hospitals sanitary?",
           "words": [
             {
-              "term": "Building long narrow brick ward pavilions",
-              "clue": "Nightingale championed the pavilion hospital design, featuring separate, well-ventilated wings with large cross-windows to disperse infectious air and prevent hospital fever."
+              "term": "Separate pavilion wards",
+              "clue": "Official specification focus term: Separate pavilion wards"
             },
             {
-              "term": "Washing smooth glazed walls with water",
-              "clue": "Floors were made of non-porous polished hardwood, walls were surfaced with washable glazed tiles, and plumbing was housed in separate annexes."
+              "term": "Cross-ventilation high windows",
+              "clue": "Official specification focus term: Cross-ventilation high windows"
             },
             {
-              "term": "Cross-ventilation blowing stale room air away",
-              "clue": "Inside each pavilion, wards were designed with high ceilings and large opposing windows positioned directly opposite each bed, creating continuous cross-ventilation that diluted and flushed away airborne poisons."
+              "term": "Tiled washable surfaces",
+              "clue": "Official specification focus term: Tiled washable surfaces"
             }
           ],
-          "model_sentence": "Through <strong>building long narrow brick ward pavilions</strong> and the implementation of <strong>Washing smooth glazed walls with water</strong>, structural pressure mounted, directly precipitating <strong>Cross-ventilation blowing stale room air away</strong>.",
-          "title": "How did the pavilion plan prevent cross-infection between wards?",
+          "model_sentence": "The pavilion design featured <strong>Separate pavilion wards</strong> with <strong>Cross-ventilation high windows</strong> and easily sanitized, <strong>Tiled washable surfaces</strong> to prevent airborne contagion.",
+          "title": "The Pavilion Plan Hospital Design",
           "dates": "1860s"
         },
         {
           "step": 5,
           "date": "1860–1890s",
           "para_ref": "[5.1–5.2]",
-          "heading": "How did nurse training permanently raise the standard of hospital care?",
+          "heading": "How did Nightingale establish nursing as a respected profession?",
           "bullets": [
-            "Uniformed women learning medical rules at St Thomas'",
-            "Stern matrons inspecting spotless bedside tables",
-            "Fusing clean hands with microbe science"
+            "St Thomas' Training School",
+            "Nightingale Fund (£44,000)",
+            "Professional disciplined matrons"
           ],
-          "focus_clue": "How did nurse training permanently raise the standard of hospital care?",
+          "focus_clue": "How did Nightingale establish nursing as a respected profession?",
           "words": [
             {
-              "term": "Uniformed women learning medical rules at St Thomas'",
-              "clue": "Founded in 1860, the Nightingale Training School at St Thomas' Hospital trained disciplined, educated nurses in anatomy, hygiene, and clinical care."
+              "term": "St Thomas' Training School",
+              "clue": "Official specification focus term: St Thomas' Training School"
             },
             {
-              "term": "Stern matrons inspecting spotless bedside tables",
-              "clue": "Nightingale matrons established strict ward hierarchies, inspecting bedside cleanliness, white aprons, and fresh bedding daily to eliminate infection."
+              "term": "Nightingale Fund (£44,000)",
+              "clue": "Official specification focus term: Nightingale Fund (£44,000)"
             },
             {
-              "term": "Fusing clean hands with microbe science",
-              "clue": "By the late 19th century, Nightingale's empirical emphasis on hygiene merged with Pasteur and Lister's germ science to create modern aseptic hospital care."
+              "term": "Professional disciplined matrons",
+              "clue": "Official specification focus term: Professional disciplined matrons"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Uniformed women learning medical rules at St Thomas'</strong> reinforced <strong>Stern matrons inspecting spotless bedside tables</strong>, meaning that <strong>Fusing clean hands with microbe science</strong> remained deeply entrenched during this medical era.",
-          "title": "How did nurse training permanently raise the standard of hospital care?",
+          "model_sentence": "Financed by the <strong>Nightingale Fund (£44,000)</strong>, Nightingale founded <strong>St Thomas' Training School</strong>, elevating nursing into an elite career led by <strong>Professional disciplined matrons</strong>.",
+          "title": "St Thomas' School & Professional Matrons",
           "dates": "1860–1890s"
         }
       ],
@@ -15838,145 +15838,145 @@ export default {
           "step": 1,
           "date": "c1700–1846",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why was surgical speed essential before the discovery of anaesthetics?",
+          "heading": "Why was pre-anaesthetic surgery limited by pain and shock?",
           "bullets": [
-            "Holding down screaming patients with leather straps",
-            "Sawing off broken legs in thirty seconds",
-            "Breathing sweet laughing gas at fairgrounds"
+            "Speed-focused surgery pain",
+            "Surgical shock mortality",
+            "Ether & nitrous oxide"
           ],
-          "focus_clue": "Why was surgical speed essential before the discovery of anaesthetics?",
+          "focus_clue": "Why was pre-anaesthetic surgery limited by pain and shock?",
           "words": [
             {
-              "term": "Holding down screaming patients with leather straps",
-              "clue": "Patients had to be dragged into operating theatres and physically pinned to wooden tables by burly hospital porters while screaming in terror."
+              "term": "Speed-focused surgery pain",
+              "clue": "Official specification focus term: Speed-focused surgery pain"
             },
             {
-              "term": "Sawing off broken legs in thirty seconds",
-              "clue": "The premier surgeon of the era, London’s Robert Liston, was celebrated for amputating an adult thigh in under thirty seconds."
+              "term": "Surgical shock mortality",
+              "clue": "Official specification focus term: Surgical shock mortality"
             },
             {
-              "term": "Breathing sweet laughing gas at fairgrounds",
-              "clue": "Before modern surgical anaesthesia, dentists and travelling showmen demonstrated nitrous oxide (laughing gas) at public exhibitions for amusement."
+              "term": "Ether & nitrous oxide",
+              "clue": "Official specification focus term: Ether & nitrous oxide"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>holding down screaming patients with leather straps</strong> and <strong>sawing off broken legs in thirty seconds</strong>, established authority maintained doctrinal control by <strong>breathing sweet laughing gas at fairgrounds</strong>.",
-          "title": "Why was surgical speed essential before the discovery of anaesthetics?",
+          "model_sentence": "Early surgery was characterized by agonizing <strong>Speed-focused surgery pain</strong> and fatal <strong>Surgical shock mortality</strong>, despite primitive trials with <strong>Ether & nitrous oxide</strong>.",
+          "title": "Speed Surgery, Shock & Early Inhaled Gases",
           "dates": "c1700–1846"
         },
         {
           "step": 2,
           "date": "1847–1853",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why did the death of Hannah Greener cause panic among surgeons?",
+          "heading": "How did James Simpson discover chloroform anaesthesia in 1847?",
           "bullets": [
-            "Sniffing heavy liquid vapour under dinner table",
-            "Young Hannah Greener dying from cold overdose",
-            "Queen Victoria giving birth with zero pain"
+            "James Simpson (1847)",
+            "Chloroform anaesthetic vapour",
+            "Queen Victoria childbirth (1853)"
           ],
-          "focus_clue": "Why did the death of Hannah Greener cause panic among surgeons?",
+          "focus_clue": "How did James Simpson discover chloroform anaesthesia in 1847?",
           "words": [
             {
-              "term": "Sniffing heavy liquid vapour under dinner table",
-              "clue": "In November 1847, Edinburgh obstetrician James Simpson and his colleagues tested chloroform vapors in his dining room, quickly collapsing unconscious onto the floor."
+              "term": "James Simpson (1847)",
+              "clue": "Official specification focus term: James Simpson (1847)"
             },
             {
-              "term": "Young Hannah Greener dying from cold overdose",
-              "clue": "Doctors warned of lethal toxicity: in 1848, fifteen-year-old Hannah Greener died from ventricular fibrillation during a minor toenail operation after receiving an uncontrolled chloroform dose."
+              "term": "Chloroform anaesthetic vapour",
+              "clue": "Official specification focus term: Chloroform anaesthetic vapour"
             },
             {
-              "term": "Queen Victoria giving birth with zero pain",
-              "clue": "Opposition finally collapsed in 1853, when Dr John Snow developed a precision chloroform inhaler mask and administered it to Queen Victoria during the birth of Prince Leopold, winning royal endorsement for the new anaesthetic."
+              "term": "Queen Victoria childbirth (1853)",
+              "clue": "Official specification focus term: Queen Victoria childbirth (1853)"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Sniffing heavy liquid vapour under dinner table</strong> reinforced <strong>Young Hannah Greener dying from cold overdose</strong>, meaning that <strong>Queen Victoria giving birth with zero pain</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did the death of Hannah Greener cause panic among surgeons?",
+          "model_sentence": "In 1847, Edinburgh surgeon <strong>James Simpson (1847)</strong> discovered the power of <strong>Chloroform anaesthetic vapour</strong>, which gained national acceptance after <strong>Queen Victoria childbirth (1853)</strong>.",
+          "title": "James Simpson & The Discovery of Chloroform",
           "dates": "1847–1853"
         },
         {
           "step": 3,
           "date": "1846–1865",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did conquering surgical pain lead to higher patient death rates?",
+          "heading": "Why did death rates rise immediately after anaesthetics were introduced?",
           "bullets": [
-            "Wearing stiff dried blood coats as badges",
-            "Cutting deeper into belly flesh for longer",
-            "Black rotting gangrene killing feverish patients"
+            "'Black Period' surgery",
+            "Deeper invasive operations",
+            "Hospital gangrene surge"
           ],
-          "focus_clue": "Why did conquering surgical pain lead to higher patient death rates?",
+          "focus_clue": "Why did death rates rise immediately after anaesthetics were introduced?",
           "words": [
             {
-              "term": "Wearing stiff dried blood coats as badges",
-              "clue": "Doctors wore blood-caked coats as badges of pride, sponges used to mop up pus from one patient were reused on the next without washing, and surgical dressings were rarely changed."
+              "term": "'Black Period' surgery",
+              "clue": "Official specification focus term: 'Black Period' surgery"
             },
             {
-              "term": "Cutting deeper into belly flesh for longer",
-              "clue": "Because patients were unconscious and motionless, surgeons attempted deeper, longer, and more complex internal procedures."
+              "term": "Deeper invasive operations",
+              "clue": "Official specification focus term: Deeper invasive operations"
             },
             {
-              "term": "Black rotting gangrene killing feverish patients",
-              "clue": "More patients died of gangrene, septicaemia, and pyaemia during the Black Period than ever before."
+              "term": "Hospital gangrene surge",
+              "clue": "Official specification focus term: Hospital gangrene surge"
             }
           ],
-          "model_sentence": "Through <strong>wearing stiff dried blood coats as badges</strong> and the implementation of <strong>Cutting deeper into belly flesh for longer</strong>, structural pressure mounted, directly precipitating <strong>Black rotting gangrene killing feverish patients</strong>.",
-          "title": "Why did conquering surgical pain lead to higher patient death rates?",
+          "model_sentence": "Anaesthesia initially led to the dangerous <strong>'Black Period' surgery</strong>, as surgeons attempted <strong>Deeper invasive operations</strong> without antisepsis, causing a lethal <strong>Hospital gangrene surge</strong>.",
+          "title": "The 'Black Period' of Surgery & High Infection",
           "dates": "1846–1865"
         },
         {
           "step": 4,
           "date": "1865–1870s",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did Lister apply Germ Theory to solve hospital gangrene?",
+          "heading": "How did Joseph Lister apply Germ Theory to wound infection?",
           "bullets": [
-            "Treating green sewage water with smelly chemicals",
-            "Wrapping boy Jamie Greenlees' fractured leg",
-            "Pumping fine acid mist over open surgical wounds"
+            "Joseph Lister (1865)",
+            "Carbolic acid spray",
+            "Compound fracture antisepsis"
           ],
-          "focus_clue": "How did Lister apply Germ Theory to solve hospital gangrene?",
+          "focus_clue": "How did Joseph Lister apply Germ Theory to wound infection?",
           "words": [
             {
-              "term": "Treating green sewage water with smelly chemicals",
-              "clue": "Joseph Lister was inspired by reports that carbolic acid disinfectant stopped foul fermentation and disease in cattle exposed to municipal sewage in Carlisle."
+              "term": "Joseph Lister (1865)",
+              "clue": "Official specification focus term: Joseph Lister (1865)"
             },
             {
-              "term": "Wrapping boy Jamie Greenlees' fractured leg",
-              "clue": "In August 1865, eleven-year-old James Greenlees was brought to Glasgow Infirmary with an open compound fracture of the leg after being run over by a cart—a condition that almost invariably ended in fatal gangrene and amputation."
+              "term": "Carbolic acid spray",
+              "clue": "Official specification focus term: Carbolic acid spray"
             },
             {
-              "term": "Pumping fine acid mist over open surgical wounds",
-              "clue": "Lister developed a comprehensive antiseptic regime: surgeons washed their hands in carbolic lotion, instruments were soaked in carbolic solution, dressings were impregnated with carbolic oil, and a steam-driven apparatus pumped a fine mist of carbolic acid over the patient throughout the operation ( Source B )."
+              "term": "Compound fracture antisepsis",
+              "clue": "Official specification focus term: Compound fracture antisepsis"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>treating green sewage water with smelly chemicals</strong> and <strong>wrapping boy Jamie Greenlees' fractured leg</strong>, established authority maintained doctrinal control by <strong>pumping fine acid mist over open surgical wounds</strong>.",
-          "title": "How did Lister apply Germ Theory to solve hospital gangrene?",
+          "model_sentence": "Inspired by Pasteur's germ theory, <strong>Joseph Lister (1865)</strong> applied a diluted <strong>Carbolic acid spray</strong> to achieve dramatic <strong>Compound fracture antisepsis</strong> without infection.",
+          "title": "Joseph Lister & Carbolic Acid Spray",
           "dates": "1865–1870s"
         },
         {
           "step": 5,
           "date": "1880s–1890s",
           "para_ref": "[4.1–4.2]",
-          "heading": "What is the crucial difference between antiseptic and aseptic surgery?",
+          "heading": "How did surgeons create completely germ-free operating environments?",
           "bullets": [
-            "Boiling metal scalpels in pressurized steam kettles",
-            "Pulling on thin sterile rubber gloves",
-            "Tying white cotton masks over mouths and noses"
+            "Aseptic surgical theatre",
+            "Autoclave steam sterilisation",
+            "Sterile gloves & masks"
           ],
-          "focus_clue": "What is the crucial difference between antiseptic and aseptic surgery?",
+          "focus_clue": "How did surgeons create completely germ-free operating environments?",
           "words": [
             {
-              "term": "Boiling metal scalpels in pressurized steam kettles",
-              "clue": "High-pressure steam autoclaves (invented by Charles Chamberland in 1881 and championed by Ernst von Bergmann in 1886) sterilized all instruments."
+              "term": "Aseptic surgical theatre",
+              "clue": "Official specification focus term: Aseptic surgical theatre"
             },
             {
-              "term": "Pulling on thin sterile rubber gloves",
-              "clue": "High-pressure steam autoclaves (invented by Charles Chamberland in 1881 and championed by Ernst von Bergmann in 1886) sterilized all instruments."
+              "term": "Autoclave steam sterilisation",
+              "clue": "Official specification focus term: Autoclave steam sterilisation"
             },
             {
-              "term": "Tying white cotton masks over mouths and noses",
-              "clue": "High-pressure steam autoclaves (invented by Charles Chamberland in 1881 and championed by Ernst von Bergmann in 1886) sterilized all instruments."
+              "term": "Sterile gloves & masks",
+              "clue": "Official specification focus term: Sterile gloves & masks"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>boiling metal scalpels in pressurized steam kettles</strong> and <strong>pulling on thin sterile rubber gloves</strong>, established authority maintained doctrinal control by <strong>tying white cotton masks over mouths and noses</strong>.",
-          "title": "What is the crucial difference between antiseptic and aseptic surgery?",
+          "model_sentence": "Antiseptic techniques soon evolved into the modern <strong>Aseptic surgical theatre</strong>, relying on <strong>Autoclave steam sterilisation</strong> alongside mandatory <strong>Sterile gloves & masks</strong>.",
+          "title": "From Antiseptic to Aseptic Operating Theatres",
           "dates": "1880s–1890s"
         }
       ],
@@ -16936,145 +16936,145 @@ export default {
           "step": 1,
           "date": "1831–1848",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did towns refuse to set up health boards under the 1848 Act?",
+          "heading": "Why was early Victorian government reluctant to intervene in public health?",
           "bullets": [
-            "Violent watery sickness turning human skin blue",
-            "Piles of human excrement rotting near houses",
-            "Parliament passing optional town health boards"
+            "Cholera epidemics (1831–1854)",
+            "Laissez-faire government policy",
+            "Permissive 1848 Health Act"
           ],
-          "focus_clue": "Why did towns refuse to set up health boards under the 1848 Act?",
+          "focus_clue": "Why was early Victorian government reluctant to intervene in public health?",
           "words": [
             {
-              "term": "Violent watery sickness turning human skin blue",
-              "clue": "Striking with ferocious speed, cholera caused violent vomiting, watery diarrhea, and fatal dehydration, turning victims blue within hours and killing over 50,000 Britons in 1831–32 alone."
+              "term": "Cholera epidemics (1831–1854)",
+              "clue": "Official specification focus term: Cholera epidemics (1831–1854)"
             },
             {
-              "term": "Piles of human excrement rotting near houses",
-              "clue": "In rapidly expanding industrial towns, overflowing privy cesspools and uncollected dung heaps seeped raw sewage into shallow groundwater wells."
+              "term": "Laissez-faire government policy",
+              "clue": "Official specification focus term: Laissez-faire government policy"
             },
             {
-              "term": "Parliament passing optional town health boards",
-              "clue": "However, the Act was purely *permissive* (optional): towns were not forced to set up health boards unless death rates were exceptionally high, and penny-pinching ratepayers fiercely resisted paying higher local taxes."
+              "term": "Permissive 1848 Health Act",
+              "clue": "Official specification focus term: Permissive 1848 Health Act"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Violent watery sickness turning human skin blue</strong> reinforced <strong>Piles of human excrement rotting near houses</strong>, meaning that <strong>Parliament passing optional town health boards</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did towns refuse to set up health boards under the 1848 Act?",
+          "model_sentence": "Devastating <strong>Cholera epidemics (1831–1854)</strong> met with stubborn <strong>Laissez-faire government policy</strong>, as clean water remained optional under the weak, <strong>Permissive 1848 Health Act</strong>.",
+          "title": "Cholera Epidemics & Laissez-Faire Inaction",
           "dates": "1831–1848"
         },
         {
           "step": 2,
           "date": "1854",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did Snow use epidemiological mapping to prove water transmission?",
+          "heading": "How did Dr John Snow prove cholera was waterborne in 1854?",
           "bullets": [
-            "Plotting black death bars on street map",
-            "Brewery men drinking ale staying completely healthy",
-            "Unscrewing heavy iron pump handle with wrench"
+            "John Snow Soho (1854)",
+            "Broad Street spot map",
+            "Pump handle removed"
           ],
-          "focus_clue": "How did Snow use epidemiological mapping to prove water transmission?",
+          "focus_clue": "How did Dr John Snow prove cholera was waterborne in 1854?",
           "words": [
             {
-              "term": "Plotting black death bars on street map",
-              "clue": "On a detailed map of Soho, Snow drew a black bar at each street address representing each cholera victim ( Source B )."
+              "term": "John Snow Soho (1854)",
+              "clue": "Official specification focus term: John Snow Soho (1854)"
             },
             {
-              "term": "Brewery men drinking ale staying completely healthy",
-              "clue": "Snow reasoned that because cholera attacked the digestive system rather than the lungs, the disease had to be ingested through contaminated drinking water rather than inhaled from bad air."
+              "term": "Broad Street spot map",
+              "clue": "Official specification focus term: Broad Street spot map"
             },
             {
-              "term": "Unscrewing heavy iron pump handle with wrench",
-              "clue": "Convinced by Snow’s forensic map, the parish vestry unscrewed the handle from the Broad Street pump on 8 September 1854, ending the outbreak overnight."
+              "term": "Pump handle removed",
+              "clue": "Official specification focus term: Pump handle removed"
             }
           ],
-          "model_sentence": "Through <strong>plotting black death bars on street map</strong> and the implementation of <strong>Brewery men drinking ale staying completely healthy</strong>, structural pressure mounted, directly precipitating <strong>Unscrewing heavy iron pump handle with wrench</strong>.",
-          "title": "How did Snow use epidemiological mapping to prove water transmission?",
+          "model_sentence": "Investigating the 1854 Soho outbreak, <strong>John Snow Soho (1854)</strong> plotted deaths on his <strong>Broad Street spot map</strong>, ending the local epidemic after the <strong>Pump handle removed</strong>.",
+          "title": "John Snow & The Broad Street Pump Handle",
           "dates": "1854"
         },
         {
           "step": 3,
           "date": "1854–1858",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did the medical establishment refuse to accept Snow’s water theory?",
+          "heading": "How did water supply statistics confirm Snow's theory?",
           "bullets": [
-            "Cracked brick cesspool leaking into drinking well",
-            "Medical journals laughing at dirty water theory",
-            "Doctors burning pitch barrels in foggy streets"
+            "Water company comparison",
+            "Southwark vs Lambeth",
+            "Waterborne transmission proved"
           ],
-          "focus_clue": "Why did the medical establishment refuse to accept Snow’s water theory?",
+          "focus_clue": "How did water supply statistics confirm Snow's theory?",
           "words": [
             {
-              "term": "Cracked brick cesspool leaking into drinking well",
-              "clue": "Families shared overflowing communal privies that drained into unlined cesspools beneath floorboards, while drinking water was bought from water carts or pumped from shallow wells dug right next to sewage pits."
+              "term": "Water company comparison",
+              "clue": "Official specification focus term: Water company comparison"
             },
             {
-              "term": "Medical journals laughing at dirty water theory",
-              "clue": "The prestigious medical journal *The Lancet* published scathing critiques mocking Snow’s \"peculiar water theory.\" Because Snow died of a stroke in 1858 at the age of forty-five, he did not live to see his discovery officially accepted by the scientific world."
+              "term": "Southwark vs Lambeth",
+              "clue": "Official specification focus term: Southwark vs Lambeth"
             },
             {
-              "term": "Doctors burning pitch barrels in foggy streets",
-              "clue": "During the 1854 cholera epidemic, public health officials still believed bad smells spread disease, ordering barrels of tar and pitch burned to purify city air."
+              "term": "Waterborne transmission proved",
+              "clue": "Official specification focus term: Waterborne transmission proved"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Cracked brick cesspool leaking into drinking well</strong> reinforced <strong>Medical journals laughing at dirty water theory</strong>, meaning that <strong>Doctors burning pitch barrels in foggy streets</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did the medical establishment refuse to accept Snow’s water theory?",
+          "model_sentence": "Snow's statistical <strong>Water company comparison</strong> between contaminated <strong>Southwark vs Lambeth</strong> water customers conclusively delivered <strong>Waterborne transmission proved</strong>.",
+          "title": "Water Company Comparison & Statistical Proof",
           "dates": "1854–1858"
         },
         {
           "step": 4,
           "date": "1858–1865",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why did fear of miasma paradoxically save thousands from cholera?",
+          "heading": "How did the Great Stink of 1858 force government action?",
           "bullets": [
-            "Boiling brown river mud halting Parliament debates",
-            "Soaking courtroom window curtains in lime juice",
-            "Digging thousand miles of underground brick tunnels"
+            "Great Stink (1858)",
+            "Joseph Bazalgette sewers",
+            "Underground London interceptors"
           ],
-          "focus_clue": "Why did fear of miasma paradoxically save thousands from cholera?",
+          "focus_clue": "How did the Great Stink of 1858 force government action?",
           "words": [
             {
-              "term": "Boiling brown river mud halting Parliament debates",
-              "clue": "During the Great Stink of 1858, parliamentarians abandoned work as the boiling, untreated sewage in the River Thames produced an overwhelming, sickening stench."
+              "term": "Great Stink (1858)",
+              "clue": "Official specification focus term: Great Stink (1858)"
             },
             {
-              "term": "Soaking courtroom window curtains in lime juice",
-              "clue": "Sittings in the House of Commons were halted, and window curtains were soaked in chloride of lime to neutralize the fumes."
+              "term": "Joseph Bazalgette sewers",
+              "clue": "Official specification focus term: Joseph Bazalgette sewers"
             },
             {
-              "term": "Digging thousand miles of underground brick tunnels",
-              "clue": "Opened in 1865, Bazalgette’s engineering marvel constructed 1,100 miles of street sewers feeding into 82 miles of massive brick-arched intercepting tunnels, diverting 420 million gallons of sewage every day eastward away from London’s drinking water intakes."
+              "term": "Underground London interceptors",
+              "clue": "Official specification focus term: Underground London interceptors"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>boiling brown river mud halting Parliament debates</strong> and <strong>soaking courtroom window curtains in lime juice</strong>, established authority maintained doctrinal control by <strong>digging thousand miles of underground brick tunnels</strong>.",
-          "title": "Why did fear of miasma paradoxically save thousands from cholera?",
+          "model_sentence": "When the sweltering <strong>Great Stink (1858)</strong> overwhelmed Parliament, politicians funded engineer <strong>Joseph Bazalgette sewers</strong>, constructing vast <strong>Underground London interceptors</strong>.",
+          "title": "The Great Stink & Bazalgette's London Sewers",
           "dates": "1858–1865"
         },
         {
           "step": 5,
           "date": "1875",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why was the 1875 Act the definitive death blow to laissez-faire?",
+          "heading": "Why did the 1875 Public Health Act mark a turning point in state policy?",
           "bullets": [
-            "Working factory men winning parliamentary votes",
-            "Forcing town councils to pipe clean fresh water",
-            "Hiring official medical inspectors for bad food"
+            "1875 Public Health Act",
+            "Compulsory town sewers",
+            "End of laissez-faire"
           ],
-          "focus_clue": "Why was the 1875 Act the definitive death blow to laissez-faire?",
+          "focus_clue": "Why did the 1875 Public Health Act mark a turning point in state policy?",
           "words": [
             {
-              "term": "Working factory men winning parliamentary votes",
-              "clue": "Under the 1867 Second Reform Act, urban working-class men had been granted the parliamentary vote; politicians could no longer ignore the appalling squalor of industrial slums if they wished to win elections."
+              "term": "1875 Public Health Act",
+              "clue": "Official specification focus term: 1875 Public Health Act"
             },
             {
-              "term": "Forcing town councils to pipe clean fresh water",
-              "clue": "While Edwin Chadwick’s earlier *1848 Public Health Act* had been purely *permissive* (optional) and largely ignored by tight-fisted local ratepayer councils, the 1875 Act was strictly compulsory: every town council was legally forced to provide clean piped water, construct modern drainage, collect street refuse, pave roadways, and appoint a full-time Medical Officer of Health and Sanitary Inspector."
+              "term": "Compulsory town sewers",
+              "clue": "Official specification focus term: Compulsory town sewers"
             },
             {
-              "term": "Hiring official medical inspectors for bad food",
-              "clue": "The prestigious medical journal *The Lancet* published scathing critiques mocking Snow’s \"peculiar water theory.\" Because Snow died of a stroke in 1858 at the age of forty-five, he did not live to see his discovery officially accepted by the scientific world."
+              "term": "End of laissez-faire",
+              "clue": "Official specification focus term: End of laissez-faire"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>working factory men winning parliamentary votes</strong> and <strong>forcing town councils to pipe clean fresh water</strong>, established authority maintained doctrinal control by <strong>hiring official medical inspectors for bad food</strong>.",
-          "title": "Why was the 1875 Act the definitive death blow to laissez-faire?",
+          "model_sentence": "The landmark <strong>1875 Public Health Act</strong> forced local councils to install <strong>Compulsory town sewers</strong>, marking the permanent <strong>End of laissez-faire</strong> public health in Britain.",
+          "title": "The 1875 Public Health Act & End of Laissez-Faire",
           "dates": "1875"
         }
       ],
@@ -17949,20 +17949,20 @@ export default {
           "focus_clue": "Why did early doctors struggle to explain hereditary traits?",
           "words": [
             {
-              "term": "Growing wrinkled green garden peas",
-              "clue": "In the 1860s, Austrian monk Gregor Mendel cross-bred garden pea plants to discover fundamental mathematical laws of genetic inheritance and dominant-recessive traits."
+              "term": "Gregor Mendel genetics",
+              "clue": "Official specification focus term: Gregor Mendel genetics"
             },
             {
-              "term": "Spotting dark rod shapes inside cells",
-              "clue": "In the late 19th century, microscopists using aniline dyes identified dark, rod-like thread structures inside cell nuclei, naming them chromosomes."
+              "term": "Chromosomes observed",
+              "clue": "Official specification focus term: Chromosomes observed"
             },
             {
-              "term": "Assuming heavy protein chains hold secrets",
-              "clue": "Until the 1940s, most biochemists assumed that complex hereditary information had to be stored in intricate proteins rather than simple nucleic acids."
+              "term": "Unknown hereditary mechanism",
+              "clue": "Official specification focus term: Unknown hereditary mechanism"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>growing wrinkled green garden peas</strong> and <strong>spotting dark rod shapes inside cells</strong>, established authority maintained doctrinal control by <strong>assuming heavy protein chains hold secrets</strong>.",
-          "title": "Why did doctors assume proteins carried hereditary traits?",
+          "model_sentence": "Although <strong>Gregor Mendel genetics</strong> and microscopic research ensured <strong>Chromosomes observed</strong> in cell nuclei, doctors struggled because the <strong>Unknown hereditary mechanism</strong> was overlooked.",
+          "title": "Mendel & Early Genetics",
           "dates": "c1900–1940s"
         },
         {
@@ -17971,27 +17971,27 @@ export default {
           "para_ref": "[2.1–2.2]",
           "heading": "How did Photograph 51 prove DNA’s helical structure?",
           "bullets": [
-            "Beaming invisible rays through wet DNA fibers",
-            "Exposing glass photographic plates for sixty hours",
-            "Revealing clear fuzzy X-shaped shadow marks"
+            "Rosalind Franklin",
+            "X-ray crystallography",
+            "Photograph 51 (1952)"
           ],
           "focus_clue": "How did Photograph 51 prove DNA’s helical structure?",
           "words": [
             {
-              "term": "Beaming invisible rays through wet DNA fibers",
-              "clue": "In January 1951, physical chemist Rosalind Franklin joined King’s College London, bringing world-class expertise in X-ray crystallography—a demanding technique whereby high-energy X-ray beams were diffracted through crystallized biological fibers onto photographic film."
+              "term": "Rosalind Franklin",
+              "clue": "Official specification focus term: Rosalind Franklin"
             },
             {
-              "term": "Exposing glass photographic plates for sixty hours",
-              "clue": "Working alongside PhD student Raymond Gosling in a damp, subterranean basement laboratory, Franklin perfected a micro-camera setup, exposing calf thymus DNA to 62 continuous hours of radiation under controlled humidity."
+              "term": "X-ray crystallography",
+              "clue": "Official specification focus term: X-ray crystallography"
             },
             {
-              "term": "Revealing clear fuzzy X-shaped shadow marks",
-              "clue": "In 1952, Rosalind Franklin and Raymond Gosling captured 'Photograph 51', an X-ray diffraction image whose distinct cross pattern proved DNA had a double helix structure."
+              "term": "Photograph 51 (1952)",
+              "clue": "Official specification focus term: Photograph 51 (1952)"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>beaming invisible rays through wet DNA fibers</strong> and <strong>exposing glass photographic plates for sixty hours</strong>, established authority maintained doctrinal control by <strong>revealing clear fuzzy X-shaped shadow marks</strong>.",
-          "title": "How did Photograph 51 prove DNA’s helical structure?",
+          "model_sentence": "At King's College London, physical chemist <strong>Rosalind Franklin</strong> used specialized <strong>X-ray crystallography</strong> to capture the historic <strong>Photograph 51 (1952)</strong> showing an X-shaped diffraction pattern.",
+          "title": "Franklin & Photograph 51",
           "dates": "1951–1952"
         },
         {
@@ -18000,27 +18000,27 @@ export default {
           "para_ref": "[3.1–3.2]",
           "heading": "How did base pairing explain hereditary replication?",
           "bullets": [
-            "Twisting thin metal wire into spirals",
-            "Locking four chemical pairs like puzzle pieces",
-            "Rushing to celebratory pints at The Eagle pub"
+            "Watson & Crick model",
+            "Double helix structure",
+            "DNA base pairing"
           ],
           "focus_clue": "How did base pairing explain hereditary replication?",
           "words": [
             {
-              "term": "Twisting thin metal wire into spirals",
-              "clue": "Armed with Franklin’s experimental measurements, Watson and Crick spent frantic weeks in their Cambridge Free School Lane laboratory assembling sheet-metal cutouts and brass wire rods on an upright stand."
+              "term": "Watson & Crick model",
+              "clue": "Official specification focus term: Watson & Crick model"
             },
             {
-              "term": "Locking four chemical pairs like puzzle pieces",
-              "clue": "James Watson and Francis Crick built their 1953 DNA model around complementary base pairing: adenine always bonding with thymine, and cytosine with guanine."
+              "term": "Double helix structure",
+              "clue": "Official specification focus term: Double helix structure"
             },
             {
-              "term": "Rushing to celebratory pints at The Eagle pub",
-              "clue": "Watson and Crick famously burst into The Eagle pub, proclaiming they had discovered \"the secret of life.\" In April 1953, they published their 900-word breakthrough paper in Nature , opening the modern era of molecular genetics."
+              "term": "DNA base pairing",
+              "clue": "Official specification focus term: DNA base pairing"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>twisting thin metal wire into spirals</strong> and <strong>locking four chemical pairs like puzzle pieces</strong>, established authority maintained doctrinal control by <strong>rushing to celebratory pints at The Eagle pub</strong>.",
-          "title": "How did base pairing explain hereditary replication?",
+          "model_sentence": "Using Franklin's data, the Cambridge <strong>Watson & Crick model</strong> unlocked the <strong>Double helix structure</strong>, demonstrating how chemical <strong>DNA base pairing</strong> enables genetic replication.",
+          "title": "Watson & Crick’s Model",
           "dates": "1953"
         },
         {
@@ -18029,27 +18029,27 @@ export default {
           "para_ref": "[4.1–4.2]",
           "heading": "Why was mapping 3 billion base pairs a medical milestone?",
           "bullets": [
-            "Linking laboratory supercomputers across six nations",
-            "Reading three billion chemical letters in blood",
-            "Publishing complete human code free online"
+            "Human Genome Project",
+            "Mapped 3bn base pairs",
+            "International teamwork"
           ],
           "focus_clue": "Why was mapping 3 billion base pairs a medical milestone?",
           "words": [
             {
-              "term": "Linking laboratory supercomputers across six nations",
-              "clue": "Launched in 1990, the international Human Genome Project coordinated laboratories and supercomputers across six countries to map all 3 billion chemical base pairs in human DNA."
+              "term": "Human Genome Project",
+              "clue": "Official specification focus term: Human Genome Project"
             },
             {
-              "term": "Reading three billion chemical letters in blood",
-              "clue": "Completed in April 2003, the project successfully mapped all 3 billion chemical base pairs across humanity’s 20,000–25,000 genes, publishing the data free online."
+              "term": "Mapped 3bn base pairs",
+              "clue": "Official specification focus term: Mapped 3bn base pairs"
             },
             {
-              "term": "Publishing complete human code free online",
-              "clue": "Completed in April 2003, the project successfully mapped all 3 billion chemical base pairs across humanity’s 20,000–25,000 genes, publishing the data free online."
+              "term": "International teamwork",
+              "clue": "Official specification focus term: International teamwork"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>linking laboratory supercomputers across six nations</strong> and <strong>reading three billion chemical letters in blood</strong>, established authority maintained doctrinal control by <strong>publishing complete human code free online</strong>.",
-          "title": "Why was mapping 3 billion base pairs a medical milestone?",
+          "model_sentence": "Launched in 1990, the global <strong>Human Genome Project</strong> relied on <strong>International teamwork</strong> across six nations, successfully having <strong>Mapped 3bn base pairs</strong> of human DNA by 2003.",
+          "title": "Human Genome Project",
           "dates": "1990–2003"
         },
         {
@@ -18058,27 +18058,27 @@ export default {
           "para_ref": "[5.1–5.2]",
           "heading": "Why did understanding causes outpace finding cures?",
           "bullets": [
-            "Testing saliva drops for faulty breast genes",
-            "Matching targeted pills to personal body code",
-            "Struggling to fix broken genetic code inside bodies"
+            "Genetic screening",
+            "BRCA1/2 gene testing",
+            "Gene therapy lag"
           ],
           "focus_clue": "Why did understanding causes outpace finding cures?",
           "words": [
             {
-              "term": "Testing saliva drops for faulty breast genes",
-              "clue": "This monumental digital reference sequence allows geneticists to pinpoint specific faulty mutations responsible for over 4,000 inherited disorders, including the BRCA1 and BRCA2 genes that dramatically elevate hereditary breast and ovarian cancer risks."
+              "term": "Genetic screening",
+              "clue": "Official specification focus term: Genetic screening"
             },
             {
-              "term": "Matching targeted pills to personal body code",
-              "clue": "Mapping the human genome enabled pharmacogenomics, allowing modern doctors to design tailored therapies matching a patient's specific genetic profile."
+              "term": "BRCA1/2 gene testing",
+              "clue": "Official specification focus term: BRCA1/2 gene testing"
             },
             {
-              "term": "Struggling to fix broken genetic code inside bodies",
-              "clue": "Correcting mutated genes inside living human bodies via techniques like CRISPR-Cas9 has progressed slowly, proving that understanding the genetic cause of disease does not automatically translate into an immediate clinical cure."
+              "term": "Gene therapy lag",
+              "clue": "Official specification focus term: Gene therapy lag"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>testing saliva drops for faulty breast genes</strong> and <strong>matching targeted pills to personal body code</strong>, established authority maintained doctrinal control by <strong>struggling to fix broken genetic code inside bodies</strong>.",
-          "title": "Why did understanding causes outpace finding cures?",
+          "model_sentence": "Mapping human DNA transformed preventive <strong>Genetic screening</strong> through targeted <strong>BRCA1/2 gene testing</strong>, even though effective clinical <strong>Gene therapy lag</strong> remained a persistent challenge.",
+          "title": "Screening & Treatment Gap",
           "dates": "2000s–Present"
         }
       ],
@@ -18990,27 +18990,27 @@ export default {
           "para_ref": "[1.1–1.2]",
           "heading": "How did X-rays transform surgical trauma diagnosis in WWI?",
           "bullets": [
-            "Photographing wife Bertha’s hand and gold wedding ring",
-            "Driving mobile medical vans to muddy trenches",
-            "Finding jagged lead shrapnel without deep cuts"
+            "Wilhelm Röntgen (1895)",
+            "Marie Curie mobile vans",
+            "Shrapnel detection"
           ],
           "focus_clue": "How did X-rays transform surgical trauma diagnosis in WWI?",
           "words": [
             {
-              "term": "Photographing wife Bertha’s hand and gold wedding ring",
-              "clue": "On 22 December 1895, Röntgen exposed his wife Bertha’s hand over a photographic glass plate for fifteen minutes ( Source A )."
+              "term": "Wilhelm Röntgen (1895)",
+              "clue": "Official specification focus term: Wilhelm Röntgen (1895)"
             },
             {
-              "term": "Driving mobile medical vans to muddy trenches",
-              "clue": "During World War I, Polish-French scientist Marie Curie mobilized twenty mobile radiology cars (\"petites Curies\"), driving diagnostic X-ray units directly to Casualty Clearing Stations located several miles behind the frontline to locate shrapnel before fatal gas gangrene set in."
+              "term": "Marie Curie mobile vans",
+              "clue": "Official specification focus term: Marie Curie mobile vans"
             },
             {
-              "term": "Finding jagged lead shrapnel without deep cuts",
-              "clue": "Surgeons could instantly locate broken bones, dislocated joints, and embedded metal bullets or shrapnel without exploratory cutting, dramatically reducing surgical trauma and infection risk."
+              "term": "Shrapnel detection",
+              "clue": "Official specification focus term: Shrapnel detection"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>photographing wife Bertha’s hand and gold wedding ring</strong> and <strong>driving mobile medical vans to muddy trenches</strong>, established authority maintained doctrinal control by <strong>finding jagged lead shrapnel without deep cuts</strong>.",
-          "title": "How did X-rays transform surgical trauma diagnosis in WWI?",
+          "model_sentence": "The 1895 discovery of X-rays by <strong>Wilhelm Röntgen (1895)</strong> was mobilized on the Western Front via <strong>Marie Curie mobile vans</strong> to allow accurate, non-invasive <strong>Shrapnel detection</strong>.",
+          "title": "Röntgen & Early X-Rays",
           "dates": "1895–1918"
         },
         {
@@ -19019,27 +19019,27 @@ export default {
           "para_ref": "[2.1–2.2]",
           "heading": "Why was fiber-optic endoscopy superior to exploratory surgery?",
           "bullets": [
-            "Spinning red test tubes in fast centrifuges",
-            "Counting abnormal white cells on glass slides",
-            "Sliding flexible glass cables down throat tubes"
+            "Blood tests & typing",
+            "Centrifuges & biopsy",
+            "Fiber-optic endoscopes"
           ],
           "focus_clue": "Why was fiber-optic endoscopy superior to exploratory surgery?",
           "words": [
             {
-              "term": "Spinning red test tubes in fast centrifuges",
-              "clue": "Automated laboratory testing transformed diagnostic precision: centrifuges separated blood plasma, automated cell counters measured white blood cell spikes signaling acute infection or leukaemia, and biochemical assays measured blood glucose to diagnose diabetes and blood pressure cuffs monitored cardiovascular strain."
+              "term": "Blood tests & typing",
+              "clue": "Official specification focus term: Blood tests & typing"
             },
             {
-              "term": "Counting abnormal white cells on glass slides",
-              "clue": "Modern clinical laboratories use automated electronic counters and stained blood smears to detect abnormal white blood cells and diagnose leukemia."
+              "term": "Centrifuges & biopsy",
+              "clue": "Official specification focus term: Centrifuges & biopsy"
             },
             {
-              "term": "Sliding flexible glass cables down throat tubes",
-              "clue": "Doctors could now slide flexible endoscopes down a patient’s throat or into the bowel, directly inspecting gastric ulcers and biopsying tumors under direct vision without a single surgical incision."
+              "term": "Fiber-optic endoscopes",
+              "clue": "Official specification focus term: Fiber-optic endoscopes"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>spinning red test tubes in fast centrifuges</strong> and <strong>counting abnormal white cells on glass slides</strong>, established authority maintained doctrinal control by <strong>sliding flexible glass cables down throat tubes</strong>.",
-          "title": "Why was fiber-optic endoscopy superior to exploratory surgery?",
+          "model_sentence": "Modern diagnostic clinics adopted routine <strong>Blood tests & typing</strong> and laboratory <strong>Centrifuges & biopsy</strong> alongside flexible <strong>Fiber-optic endoscopes</strong> to inspect internal organs safely.",
+          "title": "Blood Labs & Endoscopy",
           "dates": "1930s–1960s"
         },
         {
@@ -19048,27 +19048,27 @@ export default {
           "para_ref": "[3.1–3.2]",
           "heading": "Why did CT scans transform internal soft-tissue diagnosis?",
           "bullets": [
-            "Spinning heavy donut scanners around hospital beds",
-            "Combining computer pictures into 3D body slices",
-            "Using magnetic radio waves to find brain lumps"
+            "Godfrey Hounsfield (1971)",
+            "EMI CT body scanning",
+            "MRI magnetic imaging"
           ],
           "focus_clue": "Why did CT scans transform internal soft-tissue diagnosis?",
           "words": [
             {
-              "term": "Spinning heavy donut scanners around hospital beds",
-              "clue": "Confronted by the astronomical financial cost of managing chronic lifestyle illnesses with high-tech scanners and intensive hospital care, the British government recognized that prevention was far more effective than clinical treatment."
+              "term": "Godfrey Hounsfield (1971)",
+              "clue": "Official specification focus term: Godfrey Hounsfield (1971)"
             },
             {
-              "term": "Combining computer pictures into 3D body slices",
-              "clue": "Hounsfield realized that rotating an X-ray tube 360 degrees around a patient while linked to a digital computer allowed thousands of tissue density measurements to be mathematically reconstructed into razor-sharp cross-sectional 3D \"slices\" of internal organs."
+              "term": "EMI CT body scanning",
+              "clue": "Official specification focus term: EMI CT body scanning"
             },
             {
-              "term": "Using magnetic radio waves to find brain lumps",
-              "clue": "MRI used powerful magnetic fields and harmless radio waves to render soft tissues, spinal cords, and brain matter with pristine clarity and zero ionizing radiation."
+              "term": "MRI magnetic imaging",
+              "clue": "Official specification focus term: MRI magnetic imaging"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>spinning heavy donut scanners around hospital beds</strong> and <strong>combining computer pictures into 3D body slices</strong>, established authority maintained doctrinal control by <strong>using magnetic radio waves to find brain lumps</strong>.",
-          "title": "Why did CT scans transform internal soft-tissue diagnosis?",
+          "model_sentence": "British engineer <strong>Godfrey Hounsfield (1971)</strong> invented 3D <strong>EMI CT body scanning</strong>, which was soon complemented by radiation-free <strong>MRI magnetic imaging</strong> to pinpoint brain tumours.",
+          "title": "Hounsfield’s CT & MRI",
           "dates": "1971–1980s"
         },
         {
@@ -19077,56 +19077,56 @@ export default {
           "para_ref": "[4.1–4.2]",
           "heading": "What drove the shift from infectious to lifestyle diseases?",
           "bullets": [
-            "Banishing deadly childhood fevers with wonder drugs",
-            "People living past seventy years of age",
-            "Rising chest tumours and clogged heart arteries"
+            "Antibiotics curb fevers",
+            "Higher life expectancy",
+            "Cancers & heart disease"
           ],
           "focus_clue": "What drove the shift from infectious to lifestyle diseases?",
           "words": [
             {
-              "term": "Banishing deadly childhood fevers with wonder drugs",
-              "clue": "The introduction of penicillin, sulfonamides, and routine vaccines in the mid-20th century eradicated deadly infectious diseases like scarlet fever and diphtheria."
+              "term": "Antibiotics curb fevers",
+              "clue": "Official specification focus term: Antibiotics curb fevers"
             },
             {
-              "term": "People living past seventy years of age",
-              "clue": "Average UK life expectancy surged past 75 by the 1980s."
+              "term": "Higher life expectancy",
+              "clue": "Official specification focus term: Higher life expectancy"
             },
             {
-              "term": "Rising chest tumours and clogged heart arteries",
-              "clue": "As people lived longer and smoking and fatty diets became widespread, chronic lifestyle conditions like cardiovascular disease and lung cancer became Britain's leading killers."
+              "term": "Cancers & heart disease",
+              "clue": "Official specification focus term: Cancers & heart disease"
             }
           ],
-          "model_sentence": "Through <strong>banishing deadly childhood fevers with wonder drugs</strong> and the implementation of <strong>People living past seventy years of age</strong>, structural pressure mounted, directly precipitating <strong>Rising chest tumours and clogged heart arteries</strong>.",
-          "title": "What drove the shift from infectious to lifestyle diseases?",
+          "model_sentence": "Because post-war <strong>Antibiotics curb fevers</strong> and delivered a <strong>Higher life expectancy</strong>, modern Britain experienced an epidemiological shift toward chronic <strong>Cancers & heart disease</strong>.",
+          "title": "Epidemiological Shift",
           "dates": "c1950–1980s"
         },
         {
           "step": 5,
           "date": "1980s–Present",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why do governments favour lifestyle prevention over treatment?",
+          "heading": "How has government public health shifted to behavioural prevention?",
           "bullets": [
-            "Clicking compulsory car seatbelts across chests",
-            "Extinguishing glowing cigarettes outside pub doors",
-            "Taxing sugary fizzy cans and advertising fruit"
+            "1983 Seatbelt legislation",
+            "2007 Public smoking ban",
+            "Sugar tax & Change4Life"
           ],
-          "focus_clue": "Why do governments favour lifestyle prevention over treatment?",
+          "focus_clue": "How has government public health shifted to behavioural prevention?",
           "words": [
             {
-              "term": "Clicking compulsory car seatbelts across chests",
-              "clue": "From the 1980s onward, the Department of Health launched nationwide health promotion campaigns: compulsory seatbelts (1983), the Change4Life dietary and exercise initiative, the soft drinks sugar levy (2018), and graphic public education campaigns warning against binge drinking and skin cancer."
+              "term": "1983 Seatbelt legislation",
+              "clue": "Official specification focus term: 1983 Seatbelt legislation"
             },
             {
-              "term": "Extinguishing glowing cigarettes outside pub doors",
-              "clue": "To combat deadly passive smoking, England introduced legislation on 1 July 2007 banning smoking in all enclosed workplaces, restaurants, and pubs."
+              "term": "2007 Public smoking ban",
+              "clue": "Official specification focus term: 2007 Public smoking ban"
             },
             {
-              "term": "Taxing sugary fizzy cans and advertising fruit",
-              "clue": "Modern government health campaigns use fiscal sugar taxes and television junk food advertising bans to combat escalating rates of childhood obesity and type-2 diabetes."
+              "term": "Sugar tax & Change4Life",
+              "clue": "Official specification focus term: Sugar tax & Change4Life"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>clicking compulsory car seatbelts across chests</strong> and <strong>extinguishing glowing cigarettes outside pub doors</strong>, established authority maintained doctrinal control by <strong>taxing sugary fizzy cans and advertising fruit</strong>.",
-          "title": "Why do governments favour lifestyle prevention over treatment?",
+          "model_sentence": "Government preventative health shifted to lifestyle legislation, progressing from the <strong>1983 Seatbelt legislation</strong> to the landmark <strong>2007 Public smoking ban</strong> and the <strong>Sugar tax & Change4Life</strong> campaigns.",
+          "title": "State Lifestyle Campaigns",
           "dates": "1980s–Present"
         }
       ],
@@ -20031,145 +20031,145 @@ export default {
           "step": 1,
           "date": "1906–1909",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why was Salvarsan 606 termed the first \"magic bullet\"?",
+          "heading": "How did Paul Ehrlich discover the first 'magic bullet' for syphilis?",
           "bullets": [
-            "Testing hundreds of toxic yellow arsenic mixtures",
-            "Hunting chemical bullets that only hit germs",
-            "Curing deadly human syphilis with magic bullet"
+            "Paul Ehrlich research",
+            "Magic bullet concept",
+            "Salvarsan 606 (1909)"
           ],
-          "focus_clue": "Why was Salvarsan 606 termed the first \"magic bullet\"?",
+          "focus_clue": "How did Paul Ehrlich discover the first 'magic bullet' for syphilis?",
           "words": [
             {
-              "term": "Testing hundreds of toxic yellow arsenic mixtures",
-              "clue": "In 1909, Paul Ehrlich's assistant Sahachiro Hata tested hundreds of synthetic chemical compounds, discovering compound 606 (Salvarsan) cured syphilis without killing the host."
+              "term": "Paul Ehrlich research",
+              "clue": "Official specification focus term: Paul Ehrlich research"
             },
             {
-              "term": "Hunting chemical bullets that only hit germs",
-              "clue": "Ehrlich reasoned that if a toxin could be chemically bonded to a selective dye molecule, it would behave like a guided missile—destroying targeted microbes without harming the host."
+              "term": "Magic bullet concept",
+              "clue": "Official specification focus term: Magic bullet concept"
             },
             {
-              "term": "Curing deadly human syphilis with magic bullet",
-              "clue": "A brilliant German physician named Paul Ehrlich proposed an audacious hypothesis: the *Zauberkugel*, or \"magic bullet.\" Ehrlich noticed that certain synthetic aniline dyes attached themselves selectively to specific bacterial cells while leaving surrounding human cells unstained."
+              "term": "Salvarsan 606 (1909)",
+              "clue": "Official specification focus term: Salvarsan 606 (1909)"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>testing hundreds of toxic yellow arsenic mixtures</strong> and <strong>hunting chemical bullets that only hit germs</strong>, established authority maintained doctrinal control by <strong>curing deadly human syphilis with magic bullet</strong>.",
-          "title": "Why was Salvarsan 606 termed the first \"magic bullet\"?",
+          "model_sentence": "German scientist <strong>Paul Ehrlich research</strong> pioneered the chemical <strong>Magic bullet concept</strong>, discovering that arsenic compound <strong>Salvarsan 606 (1909)</strong> targeted syphilis without poisoning patients.",
+          "title": "Paul Ehrlich & Salvarsan 606",
           "dates": "1906–1909"
         },
         {
           "step": 2,
           "date": "1932–1935",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did Prontosil prove synthetic drugs could kill microbes?",
+          "heading": "How did Prontosil red dye launch the sulfa drug revolution?",
           "bullets": [
-            "Injecting bright red leather dye into mice",
-            "Saving sick daughter from arm-amputation death",
-            "Discovering active white sulfa medicine powder"
+            "Gerhard Domagk (1932)",
+            "Prontosil red dye",
+            "Sulfa drug revolution"
           ],
-          "focus_clue": "How did Prontosil prove synthetic drugs could kill microbes?",
+          "focus_clue": "How did Prontosil red dye launch the sulfa drug revolution?",
           "words": [
             {
-              "term": "Injecting bright red leather dye into mice",
-              "clue": "In 1932, German pathologist Gerhard Domagk achieved the next therapeutic breakthrough with Prontosil, a bright red industrial leather dye manufactured by Bayer."
+              "term": "Gerhard Domagk (1932)",
+              "clue": "Official specification focus term: Gerhard Domagk (1932)"
             },
             {
-              "term": "Saving sick daughter from arm-amputation death",
-              "clue": "In 1935, Gerhard Domagk injected his own daughter Hildegard with red Prontosil dye, successfully curing a severe streptococcal blood infection and saving her arm from amputation."
+              "term": "Prontosil red dye",
+              "clue": "Official specification focus term: Prontosil red dye"
             },
             {
-              "term": "Discovering active white sulfa medicine powder",
-              "clue": "Gerhard Domagk tested red Prontosil dye on mice in 1932, discovering that sulfonamide broke down in the bloodstream to cure lethal streptococcal blood poisoning."
+              "term": "Sulfa drug revolution",
+              "clue": "Official specification focus term: Sulfa drug revolution"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>injecting bright red leather dye into mice</strong> and <strong>saving sick daughter from arm-amputation death</strong>, established authority maintained doctrinal control by <strong>discovering active white sulfa medicine powder</strong>.",
-          "title": "How did Prontosil prove synthetic drugs could kill microbes?",
+          "model_sentence": "In 1932, <strong>Gerhard Domagk (1932)</strong> discovered that <strong>Prontosil red dye</strong> cured lethal streptococcal infections in mice, launching the multi-purpose <strong>Sulfa drug revolution</strong>.",
+          "title": "Gerhard Domagk & Prontosil (1932)",
           "dates": "1932–1935"
         },
         {
           "step": 3,
           "date": "1942",
           "para_ref": "[3.1–3.2]",
-          "heading": "How did WWII unity create momentum for state healthcare?",
+          "heading": "How did the Beveridge Report plan post-war healthcare reform?",
           "bullets": [
-            "Listing Five Giants that crush poor workers",
-            "Surviving Nazi air bombs with community spirit",
-            "Demanding free medical care for every citizen"
+            "1942 Beveridge Report",
+            "Five Giant Evils",
+            "Post-war welfare state"
           ],
-          "focus_clue": "How did WWII unity create momentum for state healthcare?",
+          "focus_clue": "How did the Beveridge Report plan post-war healthcare reform?",
           "words": [
             {
-              "term": "Listing Five Giants that crush poor workers",
-              "clue": "In December 1942, civil servant William Beveridge published his famous social report, proclaiming that post-war reconstruction required slaying \"Five Giant Evils\": Want, Disease, Ignorance, Squalor, and Idleness."
+              "term": "1942 Beveridge Report",
+              "clue": "Official specification focus term: 1942 Beveridge Report"
             },
             {
-              "term": "Surviving Nazi air bombs with community spirit",
-              "clue": "During the wartime Blitz, shared civilian suffering and the successful Emergency Medical Service created overwhelming political consensus for a universal, free state healthcare system."
+              "term": "Five Giant Evils",
+              "clue": "Official specification focus term: Five Giant Evils"
             },
             {
-              "term": "Demanding free medical care for every citizen",
-              "clue": "The report became an instant bestseller, recommending a comprehensive welfare state and a universal National Health Service providing free medical treatment for every citizen."
+              "term": "Post-war welfare state",
+              "clue": "Official specification focus term: Post-war welfare state"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>listing Five Giants that crush poor workers</strong> and <strong>surviving Nazi air bombs with community spirit</strong>, established authority maintained doctrinal control by <strong>demanding free medical care for every citizen</strong>.",
-          "title": "How did WWII unity create momentum for state healthcare?",
+          "model_sentence": "During wartime bombing, the <strong>1942 Beveridge Report</strong> vowed to defeat the <strong>Five Giant Evils</strong> (including Disease and Want), creating the blueprint for Britain's <strong>Post-war welfare state</strong>.",
+          "title": "The Beveridge Report & Welfare Blueprint (1942)",
           "dates": "1942"
         },
         {
           "step": 4,
           "date": "1945–1948",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did Bevan compromise to persuade resistant doctors?",
+          "heading": "How did Aneurin Bevan overcome BMA doctor opposition to create the NHS?",
           "bullets": [
-            "Offering private bed perks to stubborn doctors",
-            "Delivering free spectacles and dentures to families",
-            "Abolishing terrifying doctor bills forever"
+            "Aneurin Bevan (1948)",
+            "BMA doctor compromise",
+            "Free universal healthcare"
           ],
-          "focus_clue": "How did Bevan compromise to persuade resistant doctors?",
+          "focus_clue": "How did Aneurin Bevan overcome BMA doctor opposition to create the NHS?",
           "words": [
             {
-              "term": "Offering private bed perks to stubborn doctors",
-              "clue": "Bevan faced venomous resistance from the British Medical Association (BMA), whose affluent private physicians denounced state-funded healthcare as \"medical dictatorship.\" Bevan outmaneuvered the doctors through astute political compromise: he permitted hospital consultants to continue private fee-paying practice inside state hospitals, famously admitting he had \"stuffed their mouths with gold.\" In June 1948, Bevan distributed an official household information leaflet ( Source B ) to every family in Britain, explaining the scope of universal healthcare."
+              "term": "Aneurin Bevan (1948)",
+              "clue": "Official specification focus term: Aneurin Bevan (1948)"
             },
             {
-              "term": "Delivering free spectacles and dentures to families",
-              "clue": "When the service opened, pent-up demand resulted in 8.5 million pairs of free spectacles and millions of dentures dispensed within months, wildly exceeding budgetary forecasts."
+              "term": "BMA doctor compromise",
+              "clue": "Official specification focus term: BMA doctor compromise"
             },
             {
-              "term": "Abolishing terrifying doctor bills forever",
-              "clue": "On 5 July 1948, Health Minister Aneurin Bevan launched the National Health Service (NHS), guaranteeing free healthcare at the point of delivery regardless of wealth."
+              "term": "Free universal healthcare",
+              "clue": "Official specification focus term: Free universal healthcare"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>offering private bed perks to stubborn doctors</strong> and <strong>delivering free spectacles and dentures to families</strong>, established authority maintained doctrinal control by <strong>abolishing terrifying doctor bills forever</strong>.",
-          "title": "How did Bevan compromise to persuade resistant doctors?",
+          "model_sentence": "Health Minister <strong>Aneurin Bevan (1948)</strong> secured a pragmatic <strong>BMA doctor compromise</strong> to successfully launch the NHS and guarantee <strong>Free universal healthcare</strong> for all citizens.",
+          "title": "Aneurin Bevan & The Launch of the NHS (1948)",
           "dates": "1945–1948"
         },
         {
           "step": 5,
           "date": "1950s–Present",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why has modern medical success created financial strain?",
+          "heading": "Why did advanced medical treatments strain the NHS budget?",
           "bullets": [
-            "Pumping blood through giant artificial kidney filters",
-            "Replacing worn hip joints with metal balls",
-            "Charging small fees for paper medicine slips"
+            "Kidney dialysis units",
+            "Hip replacement surgery",
+            "Rising NHS cost pressures"
           ],
-          "focus_clue": "Why has modern medical success created financial strain?",
+          "focus_clue": "Why did advanced medical treatments strain the NHS budget?",
           "words": [
             {
-              "term": "Pumping blood through giant artificial kidney filters",
-              "clue": "In 1943, Willem Kolff developed the first dialysis machine, using cellophane sausage casings and rotating drums to filter toxins from blood in patients with kidney failure."
+              "term": "Kidney dialysis units",
+              "clue": "Official specification focus term: Kidney dialysis units"
             },
             {
-              "term": "Replacing worn hip joints with metal balls",
-              "clue": "In 1962, British surgeon John Charnley pioneered modern low-friction hip replacement surgery, using stainless steel femoral heads and high-density polyethylene sockets."
+              "term": "Hip replacement surgery",
+              "clue": "Official specification focus term: Hip replacement surgery"
             },
             {
-              "term": "Charging small fees for paper medicine slips",
-              "clue": "Soaring prescription costs forced the government in 1951 to introduce modest charges for dental care and medicine slips, causing Bevan to resign from Cabinet in protest."
+              "term": "Rising NHS cost pressures",
+              "clue": "Official specification focus term: Rising NHS cost pressures"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>pumping blood through giant artificial kidney filters</strong> and <strong>replacing worn hip joints with metal balls</strong>, established authority maintained doctrinal control by <strong>charging small fees for paper medicine slips</strong>.",
-          "title": "Why has modern medical success created financial strain?",
+          "model_sentence": "Technological breakthroughs like artificial <strong>Kidney dialysis units</strong> and routine <strong>Hip replacement surgery</strong> vastly improved quality of life while triggering <strong>Rising NHS cost pressures</strong>.",
+          "title": "High-Tech Care & Financial Pressures",
           "dates": "1950s–Present"
         }
       ],
@@ -21072,29 +21072,29 @@ export default {
           "step": 1,
           "date": "1928–1929",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why could Fleming not turn mould into a clinical medicine?",
+          "heading": "How did Alexander Fleming accidentally discover penicillin in 1928?",
           "bullets": [
-            "Finding fluffy mould on dirty glass dish",
-            "Golden germs dissolving in clear circle halos",
-            "Failing to separate fragile liquid juice"
+            "Alexander Fleming (1928)",
+            "Penicillium notatum mould",
+            "Staphylococcus halo"
           ],
-          "focus_clue": "Why could Fleming not turn mould into a clinical medicine?",
+          "focus_clue": "How did Alexander Fleming accidentally discover penicillin in 1928?",
           "words": [
             {
-              "term": "Finding fluffy mould on dirty glass dish",
-              "clue": "Source A shows Fleming's accidental discovery: a fungal mould spore (*Penicillium notatum*) landed on an uncovered staphylococcus culture dish, producing a natural chemical that dissolved and killed the surrounding bacteria, creating a visible clear ring of inhibition where bacteria could not grow."
+              "term": "Alexander Fleming (1928)",
+              "clue": "Official specification focus term: Alexander Fleming (1928)"
             },
             {
-              "term": "Golden germs dissolving in clear circle halos",
-              "clue": "Returning on 3 September 1928, Fleming examined the plate ( Source A ) and noticed a clear, bacteria-free halo around a blob of blue-green mould where colonies of golden bacteria had dissolved."
+              "term": "Penicillium notatum mould",
+              "clue": "Official specification focus term: Penicillium notatum mould"
             },
             {
-              "term": "Failing to separate fragile liquid juice",
-              "clue": "In 1928, Alexander Fleming discovered that Penicillium notatum mould dissolved staphylococcal bacteria, but lacked the biochemical facilities to purify its fragile active juice."
+              "term": "Staphylococcus halo",
+              "clue": "Official specification focus term: Staphylococcus halo"
             }
           ],
-          "model_sentence": "Through <strong>finding fluffy mould on dirty glass dish</strong> and the implementation of <strong>Golden germs dissolving in clear circle halos</strong>, structural pressure mounted, directly precipitating <strong>Failing to separate fragile liquid juice</strong>.",
-          "title": "Why could Fleming not turn mould into a clinical medicine?",
+          "model_sentence": "In 1928, Scottish bacteriologist <strong>Alexander Fleming (1928)</strong> returned from holiday to discover stray <strong>Penicillium notatum mould</strong> creating a bacteria-free <strong>Staphylococcus halo</strong> on a Petri dish.",
+          "title": "Fleming & The Staph Halo (1928)",
           "dates": "1928–1929"
         },
         {
@@ -21111,18 +21111,18 @@ export default {
           "words": [
             {
               "term": "Florey & Chain (Oxford)",
-              "clue": "Howard Florey and Ernst Chain assembled a dedicated scientific team at Oxford University in 1938 to investigate penicillin."
+              "clue": "Official specification focus term: Florey & Chain (Oxford)"
             },
             {
               "term": "Purifying active penicillin",
-              "clue": "The team overcame the chemical instability of penicillin, using freeze-drying extraction to produce pure, stable yellow crystals."
+              "clue": "Official specification focus term: Purifying active penicillin"
             },
             {
               "term": "Norman Heatley apparatus",
-              "clue": "Biochemist Norman Heatley designed specialized ceramic vessels and modified hospital equipment to culture the mold."
+              "clue": "Official specification focus term: Norman Heatley apparatus"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>brewing fungus inside hospital bedpans and milk churns</strong> and <strong>winning American dollar grants during air raids</strong>, established authority maintained doctrinal control by <strong>freezing brown liquid into precious yellow crystals</strong>.",
+          "model_sentence": "A decade later, Oxford researchers <strong>Florey & Chain (Oxford)</strong> overcame financial shortages in <strong>Purifying active penicillin</strong> by building homemade <strong>Norman Heatley apparatus</strong> out of hospital bedpans.",
           "title": "Florey & Chain at Oxford",
           "dates": "1938–1940"
         },
@@ -21132,27 +21132,27 @@ export default {
           "para_ref": "[3.1–3.2]",
           "heading": "Why was Alexander’s trial both a success and a tragedy?",
           "bullets": [
-            "Infecting eight mice and keeping treated four alive",
-            "Scraping rose thorn scratches on policeman's face",
-            "Running out of drops before patient recovers"
+            "1940 Lethal mice trial",
+            "Albert Alexander (1941)",
+            "Supply exhaustion death"
           ],
           "focus_clue": "Why was Alexander’s trial both a success and a tragedy?",
           "words": [
             {
-              "term": "Infecting eight mice and keeping treated four alive",
-              "clue": "In May 1940, the Oxford team conducted a definitive animal trial: eight mice were injected with lethal streptococci; four were administered penicillin, while four were left untreated."
+              "term": "1940 Lethal mice trial",
+              "clue": "Official specification focus term: 1940 Lethal mice trial"
             },
             {
-              "term": "Scraping rose thorn scratches on policeman's face",
-              "clue": "In February 1941, the team undertook their first clinical trial on Albert Alexander, a 43-year-old Oxford policeman dying from severe blood poisoning and facial abscesses following a scratch from a rose thorn."
+              "term": "Albert Alexander (1941)",
+              "clue": "Official specification focus term: Albert Alexander (1941)"
             },
             {
-              "term": "Running out of drops before patient recovers",
-              "clue": "In 1941, Howard Florey and Ernst Chain treated policeman Albert Alexander with purified penicillin; he recovered dramatically until supplies ran out and he tragically relapsed."
+              "term": "Supply exhaustion death",
+              "clue": "Official specification focus term: Supply exhaustion death"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>infecting eight mice and keeping treated four alive</strong> and <strong>scraping rose thorn scratches on policeman's face</strong>, established authority maintained doctrinal control by <strong>running out of drops before patient recovers</strong>.",
-          "title": "Why was Alexander’s trial both a success and a tragedy?",
+          "model_sentence": "Following a triumphant <strong>1940 Lethal mice trial</strong>, doctors treated policeman <strong>Albert Alexander (1941)</strong>, but tragic <strong>Supply exhaustion death</strong> proved mass manufacture was urgently required.",
+          "title": "Mice Trials & Albert Alexander",
           "dates": "1940–1941"
         },
         {
@@ -21169,18 +21169,18 @@ export default {
           "words": [
             {
               "term": "US government funding",
-              "clue": "The US War Production Board designated penicillin production a top military priority, investing millions of dollars in pharmaceutical manufacturing."
+              "clue": "Official specification focus term: US government funding"
             },
             {
               "term": "Deep fermentation tanks",
-              "clue": "American factories built giant 10,000-gallon deep-aeration fermentation tanks to culture massive quantities of mold."
+              "clue": "Official specification focus term: Deep fermentation tanks"
             },
             {
               "term": "2.3m D-Day doses",
-              "clue": "US industrial mass-production generated 2.3 million doses in time for Allied forces invading Normandy on D-Day in June 1944."
+              "clue": "Official specification focus term: 2.3m D-Day doses"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>feeding corn beer wash to rotting melon mould</strong> and <strong>pumping sterile air through giant ten-thousand-gallon vats</strong>, established authority maintained doctrinal control by <strong>brewing million doses for D-Day landing craft</strong>.",
+          "model_sentence": "Wartime industrial intervention via <strong>US government funding</strong> pioneered industrial <strong>Deep fermentation tanks</strong>, successfully producing over <strong>2.3m D-Day doses</strong> to save Allied wounded.",
           "title": "US Government & Mass Production",
           "dates": "1941–1944"
         },
@@ -21190,27 +21190,27 @@ export default {
           "para_ref": "[5.1–5.2]",
           "heading": "Why did Fleming warn that antibiotic overuse causes resistance?",
           "bullets": [
-            "Spraying white powder directly into torn soldiers' limbs",
-            "Three scientists sharing golden Nobel prize medal",
-            "Overusing capsules creating tough hospital superbugs"
+            "Allied troop survival",
+            "1945 Nobel Prize",
+            "MRSA superbug threat"
           ],
           "focus_clue": "Why did Fleming warn that antibiotic overuse causes resistance?",
           "words": [
             {
-              "term": "Spraying white powder directly into torn soldiers' limbs",
-              "clue": "By D-Day in 1944, Allied mass-production in American fermentation vats supplied enough penicillin powder to treat thousands of wounded troops and eradicate gas gangrene."
+              "term": "Allied troop survival",
+              "clue": "Official specification focus term: Allied troop survival"
             },
             {
-              "term": "Three scientists sharing golden Nobel prize medal",
-              "clue": "In 1945, Alexander Fleming, Howard Florey, and Ernst Chain were jointly awarded the Nobel Prize in Physiology or Medicine."
+              "term": "1945 Nobel Prize",
+              "clue": "Official specification focus term: 1945 Nobel Prize"
             },
             {
-              "term": "Overusing capsules creating tough hospital superbugs",
-              "clue": "Fleming presciently warned that underdosing or overusing antibiotics would allow bacteria to mutate, creating drug-resistant superbugs like MRSA."
+              "term": "MRSA superbug threat",
+              "clue": "Official specification focus term: MRSA superbug threat"
             }
           ],
-          "model_sentence": "Through <strong>spraying white powder directly into torn soldiers' limbs</strong> and the implementation of <strong>Three scientists sharing golden Nobel prize medal</strong>, structural pressure mounted, directly precipitating <strong>Overusing capsules creating tough hospital superbugs</strong>.",
-          "title": "Why did Fleming warn that antibiotic overuse causes resistance?",
+          "model_sentence": "While penicillin transformed <strong>Allied troop survival</strong> and earned Fleming, Florey and Chain the <strong>1945 Nobel Prize</strong>, modern overuse has unleashed the dangerous <strong>MRSA superbug threat</strong>.",
+          "title": "D-Day & Superbugs",
           "dates": "1944–Present"
         }
       ],
@@ -22119,145 +22119,145 @@ export default {
           "step": 1,
           "date": "1920s–1950",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did early doctors fail to link smoking to lung cancer?",
+          "heading": "Why is early lung cancer so difficult to detect?",
           "bullets": [
-            "Men coughing black blood into hospital basins",
-            "Blaming smelly road tarmac and lorry exhaust fumes",
-            "Colourful billboards showing smiling smoking doctors"
+            "Few pain receptors",
+            "Asymptomatic growth",
+            "Late Stage 3/4 detection"
           ],
-          "focus_clue": "Why did early doctors fail to link smoking to lung cancer?",
+          "focus_clue": "Why is early lung cancer so difficult to detect?",
           "words": [
             {
-              "term": "Men coughing black blood into hospital basins",
-              "clue": "In the 1940s, British hospitals recorded an alarming surge in patients suffering from lethal respiratory tumors, prompting epidemiological investigations into tobacco smoke."
+              "term": "Few pain receptors",
+              "clue": "Official specification focus term: Few pain receptors"
             },
             {
-              "term": "Blaming smelly road tarmac and lorry exhaust fumes",
-              "clue": "Most contemporary physicians assumed the culprit was environmental pollution, pointing to coal fires, automobile exhaust fumes, or tarmac road resurfacing."
+              "term": "Asymptomatic growth",
+              "clue": "Official specification focus term: Asymptomatic growth"
             },
             {
-              "term": "Colourful billboards showing smiling smoking doctors",
-              "clue": "In the interwar and post-war years, commercial tobacco corporations mounted aggressive advertising campaigns across print newspapers, cinema reels, and roadside billboards, associating smoking with athleticism, Hollywood glamour, and social sophistication."
+              "term": "Late Stage 3/4 detection",
+              "clue": "Official specification focus term: Late Stage 3/4 detection"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Men coughing black blood into hospital basins</strong> reinforced <strong>Blaming smelly road tarmac and lorry exhaust fumes</strong>, meaning that <strong>Colourful billboards showing smiling smoking doctors</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did early doctors fail to link smoking to lung cancer?",
+          "model_sentence": "Because human lungs possess <strong>Few pain receptors</strong>, malignant tumours expand through silent <strong>Asymptomatic growth</strong>, resulting in dangerous <strong>Late Stage 3/4 detection</strong>.",
+          "title": "The Diagnostic Challenge",
           "dates": "1920s–1950"
         },
         {
           "step": 2,
           "date": "1950–1954",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did statistical epidemiology prove the causal link?",
+          "heading": "How do CT and PET scans improve cancer detection?",
           "bullets": [
-            "Interviewing sick patients across twenty London wards",
-            "Tracking forty thousand real family doctors over years",
-            "Proving heavy smokers face fifty-times higher risk"
+            "High-resolution CT scans",
+            "PET-CT tracer imaging",
+            "Bronchoscopy & biopsy"
           ],
-          "focus_clue": "How did statistical epidemiology prove the causal link?",
+          "focus_clue": "How do CT and PET scans improve cancer detection?",
           "words": [
             {
-              "term": "Interviewing sick patients across twenty London wards",
-              "clue": "Doll and Hill designed an innovative forensic inquiry, personally interviewing 709 lung cancer patients across twenty London hospitals between 1948 and 1952, comparing their detailed life histories with an identical control group of hospital patients admitted for non-cancer illnesses."
+              "term": "High-resolution CT scans",
+              "clue": "Official specification focus term: High-resolution CT scans"
             },
             {
-              "term": "Tracking forty thousand real family doctors over years",
-              "clue": "To silence skeptical tobacco executives, in October 1951 Doll and Hill launched the monumental British Doctors Study, tracking the smoking habits and cause of death of over 40,000 registered British physicians over several decades."
+              "term": "PET-CT tracer imaging",
+              "clue": "Official specification focus term: PET-CT tracer imaging"
             },
             {
-              "term": "Proving heavy smokers face fifty-times higher risk",
-              "clue": "In September 1950, Doll and Hill dropped a scientific bombshell in the *British Medical Journal* (BMJ): heavy cigarette smokers were fifty times more likely to contract lung cancer than non-smokers, with the statistical risk rising in direct proportion to the number of cigarettes smoked per day."
+              "term": "Bronchoscopy & biopsy",
+              "clue": "Official specification focus term: Bronchoscopy & biopsy"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>interviewing sick patients across twenty London wards</strong> and <strong>tracking forty thousand real family doctors over years</strong>, established authority maintained doctrinal control by <strong>proving heavy smokers face fifty-times higher risk</strong>.",
-          "title": "How did statistical epidemiology prove the causal link?",
+          "model_sentence": "Modern diagnostic oncology deploys <strong>High-resolution CT scans</strong> and functional <strong>PET-CT tracer imaging</strong> before performing a <strong>Bronchoscopy & biopsy</strong> to extract physical tumour cells.",
+          "title": "High-Tech Diagnostic Scans",
           "dates": "1950–1954"
         },
         {
           "step": 3,
           "date": "1962–1971",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did government action encounter strong tobacco lobbying?",
+          "heading": "How has technology reduced treatment trauma?",
           "bullets": [
-            "Banning glowing cigarette commercials on evening television",
-            "Printing bold black warning text on cardboard cartons",
-            "Sponsoring fast racing cars to keep brands famous"
+            "VATS keyhole lobectomy",
+            "Chest cracking avoided",
+            "CyberKnife pinpoint rays"
           ],
-          "focus_clue": "Why did government action encounter strong tobacco lobbying?",
+          "focus_clue": "How has technology reduced treatment trauma?",
           "words": [
             {
-              "term": "Banning glowing cigarette commercials on evening television",
-              "clue": "Under intense public pressure, Parliament initiated an escalating legislative campaign against tobacco: in 1965, the government banned all cigarette commercials from British television screens."
+              "term": "VATS keyhole lobectomy",
+              "clue": "Official specification focus term: VATS keyhole lobectomy"
             },
             {
-              "term": "Printing bold black warning text on cardboard cartons",
-              "clue": "Following scientific reports linking smoking to fatal lung disease, governments mandated bold health warnings on cigarette packets and restricted tobacco advertising."
+              "term": "Chest cracking avoided",
+              "clue": "Official specification focus term: Chest cracking avoided"
             },
             {
-              "term": "Sponsoring fast racing cars to keep brands famous",
-              "clue": "However, commercial tobacco firms fought back by sponsoring Formula 1 motor racing, keeping brand logos visible to millions of young television viewers."
+              "term": "CyberKnife pinpoint rays",
+              "clue": "Official specification focus term: CyberKnife pinpoint rays"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>banning glowing cigarette commercials on evening television</strong> and <strong>printing bold black warning text on cardboard cartons</strong>, established authority maintained doctrinal control by <strong>sponsoring fast racing cars to keep brands famous</strong>.",
-          "title": "Why did government action encounter strong tobacco lobbying?",
+          "model_sentence": "Surgeons execute <strong>VATS keyhole lobectomy</strong> ensuring painful <strong>Chest cracking avoided</strong>, while robotic <strong>CyberKnife pinpoint rays</strong> irradiate deep inoperable tumours with extreme accuracy.",
+          "title": "Keyhole Surgery & CyberKnife",
           "dates": "1962–1971"
         },
         {
           "step": 4,
           "date": "2000s",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why was passive smoking crucial in banning public smoking?",
+          "heading": "How does immunotherapy harness the immune system?",
           "bullets": [
             "Tumour DNA sequencing",
             "Targeted pharmacotherapy",
             "Targeted immunotherapy"
           ],
-          "focus_clue": "Why was passive smoking crucial in banning public smoking?",
+          "focus_clue": "How does immunotherapy harness the immune system?",
           "words": [
             {
-              "term": "Breathing toxic secondhand smoke in crowded rooms",
-              "clue": "Extensive epidemiological research proved that inhaling secondhand tobacco smoke in crowded pubs, restaurants, and workplaces caused thousands of fatal heart attacks and lung cancers in non-smoking hospitality workers every year."
+              "term": "Tumour DNA sequencing",
+              "clue": "Official specification focus term: Tumour DNA sequencing"
             },
             {
-              "term": "Padlocking pub ashtrays and stepping outside into cold",
-              "clue": "In 2007, Britain enacted legislation banning smoking in all enclosed public places and workplaces to protect employees and patrons from toxic passive smoke."
+              "term": "Targeted pharmacotherapy",
+              "clue": "Official specification focus term: Targeted pharmacotherapy"
             },
             {
-              "term": "Raising legal counter buying age to eighteen",
-              "clue": "In October 2007, the legal purchase age for tobacco was raised from 16 to 18, permanently changing British social habits."
+              "term": "Targeted immunotherapy",
+              "clue": "Official specification focus term: Targeted immunotherapy"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>breathing toxic secondhand smoke in crowded rooms</strong> and <strong>padlocking pub ashtrays and stepping outside into cold</strong>, established authority maintained doctrinal control by <strong>raising legal counter buying age to eighteen</strong>.",
-          "title": "Why was passive smoking crucial in banning public smoking?",
+          "model_sentence": "Modern genetics utilizes <strong>Tumour DNA sequencing</strong> to prescribe customized <strong>Targeted pharmacotherapy</strong> and <strong>Targeted immunotherapy</strong> that trains the patient's immune system to destroy cancer cells.",
+          "title": "Targeted Genetic Oncology",
           "dates": "2000s"
         },
         {
           "step": 5,
           "date": "2010s–Present",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why does low cancer survival prove prevention beats cure?",
+          "heading": "Why has state legislation proved more effective than cure?",
           "bullets": [
-            "Selling plain ugly mud-green packets with graphic photos",
-            "Guiding tiny robotic camera pincers between chest ribs",
-            "Boosting immune soldier cells to attack hidden tumours"
+            "2007 Public smoking ban",
+            "2016 Plain packaging",
+            "Smoke-free generation law"
           ],
-          "focus_clue": "Why does low cancer survival prove prevention beats cure?",
+          "focus_clue": "Why has state legislation proved more effective than cure?",
           "words": [
             {
-              "term": "Selling plain ugly mud-green packets with graphic photos",
-              "clue": "In May 2016, the UK enacted standardized plain packaging ( Source B ), mandating that all cigarettes be sold in an unappealing olive-green pack (Pantone 448C) with brand names in uniform typography, covered in graphic pictorial warnings of diseased organs."
+              "term": "2007 Public smoking ban",
+              "clue": "Official specification focus term: 2007 Public smoking ban"
             },
             {
-              "term": "Guiding tiny robotic camera pincers between chest ribs",
-              "clue": "Modern oncologists deploy robotic video-assisted thoracoscopic surgery, guiding miniature cameras and surgical pincers through tiny chest incisions to excise lung tumors."
+              "term": "2016 Plain packaging",
+              "clue": "Official specification focus term: 2016 Plain packaging"
             },
             {
-              "term": "Boosting immune soldier cells to attack hidden tumours",
-              "clue": "Meanwhile, modern clinical oncology deploys high-tech therapies: video-assisted keyhole lobectomies, stereotactic radiotherapy beams that destroy tumors while sparing healthy tissue, and immunotherapy drugs (like pembrolizumab) that train the immune system to hunt cancer cells."
+              "term": "Smoke-free generation law",
+              "clue": "Official specification focus term: Smoke-free generation law"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>selling plain ugly mud-green packets with graphic photos</strong> and <strong>guiding tiny robotic camera pincers between chest ribs</strong>, established authority maintained doctrinal control by <strong>boosting immune soldier cells to attack hidden tumours</strong>.",
-          "title": "Why does low cancer survival prove prevention beats cure?",
+          "model_sentence": "Realizing prevention is far cheaper than cure, Parliament passed the <strong>2007 Public smoking ban</strong> and <strong>2016 Plain packaging</strong> regulations, advancing toward a historic <strong>Smoke-free generation law</strong>.",
+          "title": "Government Statutory Action",
           "dates": "2010s–Present"
         }
       ],
@@ -23102,145 +23102,145 @@ export default {
           "step": 1,
           "date": "1914–1915",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why was the low-lying topography of Ypres a tactical and medical nightmare?",
+          "heading": "Why was the Ypres Salient so difficult to defend?",
           "bullets": [
-            "Digging into sticky wet clay",
-            "Heavy artillery breaking water canals",
-            "Wounded men sinking into knee-deep mud"
+            "Ypres Salient vulnerable geography",
+            "Hill 60 mine warfare",
+            "Passchendaele liquid mud"
           ],
-          "focus_clue": "Why was the low-lying topography of Ypres a tactical and medical nightmare?",
+          "focus_clue": "Why was the Ypres Salient so difficult to defend?",
           "words": [
             {
-              "term": "Digging into sticky wet clay",
-              "clue": "In the low-lying Ypres salient, British troops digging trenches immediately struck heavy, waterlogged clay, causing trench walls to collapse and filling dugouts with foul mud."
+              "term": "Ypres Salient vulnerable geography",
+              "clue": "Official specification focus term: Ypres Salient vulnerable geography"
             },
             {
-              "term": "Heavy artillery breaking water canals",
-              "clue": "Heavy breech-loading artillery firing high-explosive shells, combined with rapid-firing Vickers machine guns capable of discharging 500 rounds per minute, rendered open infantry advances suicidal."
+              "term": "Hill 60 mine warfare",
+              "clue": "Official specification focus term: Hill 60 mine warfare"
             },
             {
-              "term": "Wounded men sinking into knee-deep mud",
-              "clue": "When relentless artillery bombardments pulverized the ancient agricultural drainage dykes, the ground liquefied into an ocean of putrid mud."
+              "term": "Passchendaele liquid mud",
+              "clue": "Official specification focus term: Passchendaele liquid mud"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Digging into sticky wet clay</strong> reinforced <strong>Heavy artillery breaking water canals</strong>, meaning that <strong>Wounded men sinking into knee-deep mud</strong> remained deeply entrenched during this medical era.",
-          "title": "Why was the low-lying topography of Ypres a tactical and medical nightmare?",
+          "model_sentence": "The British sector faced the <strong>Ypres Salient vulnerable geography</strong>, resulting in subterranean <strong>Hill 60 mine warfare</strong> and the treacherous, drowning quagmire of <strong>Passchendaele liquid mud</strong>.",
+          "title": "Ypres Salient & Hill 60 Mines",
           "dates": "1914–1915"
         },
         {
           "step": 2,
           "date": "1914–1918",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did zig-zag traverses limit shrapnel injuries and contain shell explosions?",
+          "heading": "Why did the first day of the Somme cause unprecedented casualties?",
           "bullets": [
-            "Digging sharp zig-zag corners into earth",
-            "Laying wooden duckboards over smelly puddles",
-            "Stacking sandbags high on front firing steps"
+            "1916 Somme casualty catastrophe",
+            "57,000 first-day casualties",
+            "Creeping barrage trauma"
           ],
-          "focus_clue": "How did zig-zag traverses limit shrapnel injuries and contain shell explosions?",
+          "focus_clue": "Why did the first day of the Somme cause unprecedented casualties?",
           "words": [
             {
-              "term": "Digging sharp zig-zag corners into earth",
-              "clue": "When an incoming high-explosive artillery shell detonated, the sharp earthen blast walls absorbed the supersonic concussion and contained hot flying metal fragments within that single bay, preventing shrapnel from slaughtering men in adjoining bays."
+              "term": "1916 Somme casualty catastrophe",
+              "clue": "Official specification focus term: 1916 Somme casualty catastrophe"
             },
             {
-              "term": "Laying wooden duckboards over smelly puddles",
-              "clue": "Frontline trenches were engineered with precise structural features: a raised firestep allowed sentries to look over the parapet into No Man’s Land."
+              "term": "57,000 first-day casualties",
+              "clue": "Official specification focus term: 57,000 first-day casualties"
             },
             {
-              "term": "Stacking sandbags high on front firing steps",
-              "clue": "Heavy breech-loading artillery firing high-explosive shells, combined with rapid-firing Vickers machine guns capable of discharging 500 rounds per minute, rendered open infantry advances suicidal."
+              "term": "Creeping barrage trauma",
+              "clue": "Official specification focus term: Creeping barrage trauma"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>digging sharp zig-zag corners into earth</strong> and <strong>laying wooden duckboards over smelly puddles</strong>, established authority maintained doctrinal control by <strong>stacking sandbags high on front firing steps</strong>.",
-          "title": "How did zig-zag traverses limit shrapnel injuries and contain shell explosions?",
+          "model_sentence": "The bloodiest trial began with the <strong>1916 Somme casualty catastrophe</strong>, which produced <strong>57,000 first-day casualties</strong> as infantry advanced behind the experimental <strong>Creeping barrage trauma</strong>.",
+          "title": "The Battle of the Somme (1916)",
           "dates": "1914–1918"
         },
         {
           "step": 3,
           "date": "1915–1918",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did narrow communication trenches create acute bottlenecks for stretchers?",
+          "heading": "How did underground chalk quarries shelter soldiers and hospitals?",
           "bullets": [
-            "Guarding firing steps facing No Man's Land",
-            "Squeezing wooden stretchers along narrow passages",
-            "Crawling through listening saps near enemy barbed wire"
+            "Arras underground chalk tunnels",
+            "Thompson's Cave 700-bed hospital",
+            "Electric lighting & water"
           ],
-          "focus_clue": "Why did narrow communication trenches create acute bottlenecks for stretchers?",
+          "focus_clue": "How did underground chalk quarries shelter soldiers and hospitals?",
           "words": [
             {
-              "term": "Guarding firing steps facing No Man's Land",
-              "clue": "The photograph clearly reveals the interlocking zig-zag pattern of fire bays and traverses, alongside deep communication trenches linking the front line back to support trenches across a cratered no-man's-land."
+              "term": "Arras underground chalk tunnels",
+              "clue": "Official specification focus term: Arras underground chalk tunnels"
             },
             {
-              "term": "Squeezing wooden stretchers along narrow passages",
-              "clue": "For Royal Army Medical Corps (RAMC) stretcher bearers, maneuvering rigid six-foot wooden stretchers around dozens of sharp right-angled traverses while squeezing past oncoming reinforcements was agonizingly slow."
+              "term": "Thompson's Cave 700-bed hospital",
+              "clue": "Official specification focus term: Thompson's Cave 700-bed hospital"
             },
             {
-              "term": "Crawling through listening saps near enemy barbed wire",
-              "clue": "Nearest the enemy lay the frontline trench (50 to 200 yards from German lines), backed approximately 80 yards behind by the support trench , which housed reserve troops ready to reinforce the firestep during an assault."
+              "term": "Electric lighting & water",
+              "clue": "Official specification focus term: Electric lighting & water"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>guarding firing steps facing No Man's Land</strong> and <strong>squeezing wooden stretchers along narrow passages</strong>, established authority maintained doctrinal control by <strong>crawling through listening saps near enemy barbed wire</strong>.",
-          "title": "Why did narrow communication trenches create acute bottlenecks for stretchers?",
+          "model_sentence": "Before the 1917 battle, New Zealand miners excavated <strong>Arras underground chalk tunnels</strong>, constructing <strong>Thompson's Cave 700-bed hospital</strong> fully equipped with <strong>Electric lighting & water</strong>.",
+          "title": "Arras Underground Caves (1917)",
           "dates": "1915–1918"
         },
         {
           "step": 4,
           "date": "Nov 1916–1917",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did the chalk geology at Arras allow safe, sterile surgical conditions?",
+          "heading": "How did massed tank assaults strain medical evacuation?",
           "bullets": [
-            "Carving hospital wards deep into dry white chalk",
-            "Wiring electric light bulbs and water pipes",
-            "Treating seven hundred beds safely underground"
+            "1917 Cambrai massed tank assault",
+            "Surprise artillery barrage",
+            "Mass casualty triage strain"
           ],
-          "focus_clue": "How did the chalk geology at Arras allow safe, sterile surgical conditions?",
+          "focus_clue": "How did massed tank assaults strain medical evacuation?",
           "words": [
             {
-              "term": "Carving hospital wards deep into dry white chalk",
-              "clue": "In striking contrast to the waterlogged clay of Flanders, the terrain around the historic city of Arras in northern France was underlain by dry, permeable chalk."
+              "term": "1917 Cambrai massed tank assault",
+              "clue": "Official specification focus term: 1917 Cambrai massed tank assault"
             },
             {
-              "term": "Wiring electric light bulbs and water pipes",
-              "clue": "Fitted with electric lighting, piped running water, and ventilation shafts, Thompson’s Cave operated entirely immune to surface artillery bombardment."
+              "term": "Surprise artillery barrage",
+              "clue": "Official specification focus term: Surprise artillery barrage"
             },
             {
-              "term": "Treating seven hundred beds safely underground",
-              "clue": "Connected directly to the front line by covered chalk saps, this underground dressing station and hospital housed 700 hospital beds, operating theatres, rest stations, a mortuary, and a kitchen."
+              "term": "Mass casualty triage strain",
+              "clue": "Official specification focus term: Mass casualty triage strain"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>carving hospital wards deep into dry white chalk</strong> and <strong>wiring electric light bulbs and water pipes</strong>, established authority maintained doctrinal control by <strong>treating seven hundred beds safely underground</strong>.",
-          "title": "How did the chalk geology at Arras allow safe, sterile surgical conditions?",
+          "model_sentence": "The <strong>1917 Cambrai massed tank assault</strong> relied on a devastating <strong>Surprise artillery barrage</strong>, putting immense <strong>Mass casualty triage strain</strong> on frontline medical units.",
+          "title": "The Battle of Cambrai (1917)",
           "dates": "Nov 1916–1917"
         },
         {
           "step": 5,
           "date": "1916–1917",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did mass-casualty offensives force the RAMC to reorganize evacuation?",
+          "heading": "How did trench architecture delay stretcher-bearer transport?",
           "bullets": [
-            "Fifty-seven thousand men falling on first morning",
-            "Driving heavy metal tanks over chalk slopes",
-            "Overworked medical orderly lines facing endless stretchers"
+            "Trench network zig-zag layout",
+            "Firebays & communication lines",
+            "Stretcher bearer bottlenecks"
           ],
-          "focus_clue": "Why did mass-casualty offensives force the RAMC to reorganize evacuation?",
+          "focus_clue": "How did trench architecture delay stretcher-bearer transport?",
           "words": [
             {
-              "term": "Fifty-seven thousand men falling on first morning",
-              "clue": "The sheer tidal wave of wounded men completely overwhelmed the existing evacuation chain: frontline aid posts ran out of morphine and bandages, motor ambulances broke down on rutted roads, and thousands of casualties lay on open stretchers in clearing station fields for days awaiting emergency surgery."
+              "term": "Trench network zig-zag layout",
+              "clue": "Official specification focus term: Trench network zig-zag layout"
             },
             {
-              "term": "Driving heavy metal tanks over chalk slopes",
-              "clue": "By November 1917 at the Battle of Cambrai , where 450 British tanks broke through the Hindenburg Line on unbroken chalk ground, the medical service had evolved into a sophisticated, mechanized trauma pipeline."
+              "term": "Firebays & communication lines",
+              "clue": "Official specification focus term: Firebays & communication lines"
             },
             {
-              "term": "Overworked medical orderly lines facing endless stretchers",
-              "clue": "For Royal Army Medical Corps (RAMC) stretcher bearers, maneuvering rigid six-foot wooden stretchers around dozens of sharp right-angled traverses while squeezing past oncoming reinforcements was agonizingly slow."
+              "term": "Stretcher bearer bottlenecks",
+              "clue": "Official specification focus term: Stretcher bearer bottlenecks"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Fifty-seven thousand men falling on first morning</strong> reinforced <strong>Driving heavy metal tanks over chalk slopes</strong>, meaning that <strong>Overworked medical orderly lines facing endless stretchers</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did mass-casualty offensives force the RAMC to reorganize evacuation?",
+          "model_sentence": "Defensive trenches featured a <strong>Trench network zig-zag layout</strong> with reinforced <strong>Firebays & communication lines</strong> that created agonizing <strong>Stretcher bearer bottlenecks</strong> when evacuating wounded.",
+          "title": "Trench System Anatomy & Bottlenecks",
           "dates": "1916–1917"
         }
       ],
@@ -24148,145 +24148,145 @@ export default {
           "step": 1,
           "date": "1914–1915",
           "para_ref": "[1.1–1.2]",
-          "heading": "How did prolonged cold water immersion destroy tissue and produce gangrene?",
+          "heading": "How did waterlogged trenches cause trench foot?",
           "bullets": [
-            "Standing for days in freezing dirty water",
-            "Toes turning numb, swollen, and bluish-black",
-            "Surgeons sawing off rotting gangrene feet"
+            "Waterlogged standing mud",
+            "Constricted numb feet",
+            "Whale oil & dry socks"
           ],
-          "focus_clue": "How did prolonged cold water immersion destroy tissue and produce gangrene?",
+          "focus_clue": "How did waterlogged trenches cause trench foot?",
           "words": [
             {
-              "term": "Standing for days in freezing dirty water",
-              "clue": "For British soldiers stationed in the trenches, standing in cold, stagnant water was an inescapable reality of daily life."
+              "term": "Waterlogged standing mud",
+              "clue": "Official specification focus term: Waterlogged standing mud"
             },
             {
-              "term": "Toes turning numb, swollen, and bluish-black",
-              "clue": "By November 1914, medical officers noted an alarming epidemic: thousands of men were reporting to medical dugouts unable to walk, their feet swollen, numb, and drained of color."
+              "term": "Constricted numb feet",
+              "clue": "Official specification focus term: Constricted numb feet"
             },
             {
-              "term": "Surgeons sawing off rotting gangrene feet",
-              "clue": "By November 1914, medical officers noted an alarming epidemic: thousands of men were reporting to medical dugouts unable to walk, their feet swollen, numb, and drained of color."
+              "term": "Whale oil & dry socks",
+              "clue": "Official specification focus term: Whale oil & dry socks"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Standing for days in freezing dirty water</strong> reinforced <strong>Toes turning numb, swollen, and bluish-black</strong>, meaning that <strong>Surgeons sawing off rotting gangrene feet</strong> remained deeply entrenched during this medical era.",
-          "title": "How did prolonged cold water immersion destroy tissue and produce gangrene?",
+          "model_sentence": "Prolonged exposure to freezing, <strong>Waterlogged standing mud</strong> produced <strong>Constricted numb feet</strong> (trench foot), which officers combated by inspecting <strong>Whale oil & dry socks</strong> daily.",
+          "title": "Trench Foot: Mud & Gangrene",
           "dates": "1914–1915"
         },
         {
           "step": 2,
           "date": "1915–1918",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why did mandatory officer inspections succeed where voluntary advice had failed?",
+          "heading": "Why did body lice transmit debilitating trench fever?",
           "bullets": [
-            "Pairs of soldiers rubbing fishy grease into toes",
-            "Packing three dry woollen pairs in kits",
-            "Officers holding daily morning foot inspections"
+            "Body lice in uniform seams",
+            "Pyrrhic scratching infection",
+            "Trench fever (PUO)"
           ],
-          "focus_clue": "Why did mandatory officer inspections succeed where voluntary advice had failed?",
+          "focus_clue": "Why did body lice transmit debilitating trench fever?",
           "words": [
             {
-              "term": "Pairs of soldiers rubbing fishy grease into toes",
-              "clue": "Soldiers were organized into mandatory \"buddy pairs,\" inspecting each other’s feet daily, washing them in clean water, and vigorously rubbing them with whale oil to form a waterproof barrier ( Source A )."
+              "term": "Body lice in uniform seams",
+              "clue": "Official specification focus term: Body lice in uniform seams"
             },
             {
-              "term": "Packing three dry woollen pairs in kits",
-              "clue": "Every infantryman was required to carry three pairs of dry woollen socks, exchanging wet socks for dry ones twice daily."
+              "term": "Pyrrhic scratching infection",
+              "clue": "Official specification focus term: Pyrrhic scratching infection"
             },
             {
-              "term": "Officers holding daily morning foot inspections",
-              "clue": "Officers who permitted trench foot cases in their platoon faced severe disciplinary charges, transforming trench foot from an unavoidable medical malady into a punishable failure of military discipline."
+              "term": "Trench fever (PUO)",
+              "clue": "Official specification focus term: Trench fever (PUO)"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Pairs of soldiers rubbing fishy grease into toes</strong> reinforced <strong>Packing three dry woollen pairs in kits</strong>, meaning that <strong>Officers holding daily morning foot inspections</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did mandatory officer inspections succeed where voluntary advice had failed?",
+          "model_sentence": "Infestations of <strong>Body lice in uniform seams</strong> and endless <strong>Pyrrhic scratching infection</strong> transmitted <strong>Trench fever (PUO)</strong>, putting thousands of infantrymen temporarily out of action.",
+          "title": "Trench Fever & Lice Infestation",
           "dates": "1915–1918"
         },
         {
           "step": 3,
           "date": "1914–1918",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did trench fever persist until the body louse insect vector was proven in 1918?",
+          "heading": "Why was shell shock initially treated as cowardice?",
           "bullets": [
-            "Scratching itchy insect bites along uniform seams",
-            "High shaking chills and burning shin bone aches",
-            "Steaming dirty woollen jackets in giant barrels"
+            "Shell shock trauma",
+            "Tremors, paralysis & mutism",
+            "Craiglockhart psychiatric care"
           ],
-          "focus_clue": "Why did trench fever persist until the body louse insect vector was proven in 1918?",
+          "focus_clue": "Why was shell shock initially treated as cowardice?",
           "words": [
             {
-              "term": "Scratching itchy insect bites along uniform seams",
-              "clue": "Soldiers spent off-duty hours \"chatting\"—running candle flames along uniform seams to pop the lice."
+              "term": "Shell shock trauma",
+              "clue": "Official specification focus term: Shell shock trauma"
             },
             {
-              "term": "High shaking chills and burning shin bone aches",
-              "clue": "Trench fever caused sudden shivering, splitting headaches, severe aching in the shins, and recurring high fevers lasting up to a month, incapacitating up to 15% of an army’s strength at any one time."
+              "term": "Tremors, paralysis & mutism",
+              "clue": "Official specification focus term: Tremors, paralysis & mutism"
             },
             {
-              "term": "Steaming dirty woollen jackets in giant barrels",
-              "clue": "To combat trench fever, British units set up mobile de-lousing stations where soldiers' lice-infested woollen uniforms were baked and steamed in giant sealed barrels."
+              "term": "Craiglockhart psychiatric care",
+              "clue": "Official specification focus term: Craiglockhart psychiatric care"
             }
           ],
-          "model_sentence": "Through <strong>scratching itchy insect bites along uniform seams</strong> and the implementation of <strong>High shaking chills and burning shin bone aches</strong>, structural pressure mounted, directly precipitating <strong>Steaming dirty woollen jackets in giant barrels</strong>.",
-          "title": "Why did trench fever persist until the body louse insect vector was proven in 1918?",
+          "model_sentence": "Relentless high-explosive bombardments triggered <strong>Shell shock trauma</strong> characterized by violent <strong>Tremors, paralysis & mutism</strong>, eventually treated through specialist <strong>Craiglockhart psychiatric care</strong>.",
+          "title": "Shell Shock & Mental Breakdown",
           "dates": "1914–1918"
         },
         {
           "step": 4,
           "date": "1914–1918",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did strict sanitation and chemical water chlorination prevent epidemics?",
+          "heading": "How did soldiers survive the first poison gas attack in 1915?",
           "bullets": [
-            "Violent stomach cramps from dirty swamp water",
-            "Digging deep toilet pits far behind sleeping lines",
-            "Throwing smelly white lime powder into waste trenches"
+            "Chlorine gas lung burning (1915)",
+            "Urine-soaked cloth pads",
+            "Small box respirators (1916)"
           ],
-          "focus_clue": "How did strict sanitation and chemical water chlorination prevent epidemics?",
+          "focus_clue": "How did soldiers survive the first poison gas attack in 1915?",
           "words": [
             {
-              "term": "Violent stomach cramps from dirty swamp water",
-              "clue": "Contaminated mud, unburied corpses, and open latrines spawned dangerous outbreaks of dysentery —a virulent bacterial infection causing agonizing stomach cramps, fever, and severe bloody diarrhea."
+              "term": "Chlorine gas lung burning (1915)",
+              "clue": "Official specification focus term: Chlorine gas lung burning (1915)"
             },
             {
-              "term": "Digging deep toilet pits far behind sleeping lines",
-              "clue": "These pioneer orderlies inspected latrines, enforced deep burial of refuse, and treated waste pits with quicklime (calcium oxide)."
+              "term": "Urine-soaked cloth pads",
+              "clue": "Official specification focus term: Urine-soaked cloth pads"
             },
             {
-              "term": "Throwing smelly white lime powder into waste trenches",
-              "clue": "In the frontline, men were forced to defecate into open chloride of lime buckets or shallow latrine trenches."
+              "term": "Small box respirators (1916)",
+              "clue": "Official specification focus term: Small box respirators (1916)"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Violent stomach cramps from dirty swamp water</strong> reinforced <strong>Digging deep toilet pits far behind sleeping lines</strong>, meaning that <strong>Throwing smelly white lime powder into waste trenches</strong> remained deeply entrenched during this medical era.",
-          "title": "How did strict sanitation and chemical water chlorination prevent epidemics?",
+          "model_sentence": "German troops unleashed <strong>Chlorine gas lung burning (1915)</strong> at Second Ypres, forcing troops to use crude <strong>Urine-soaked cloth pads</strong> until issued advanced <strong>Small box respirators (1916)</strong>.",
+          "title": "Chlorine Gas & Improvised Defences",
           "dates": "1914–1918"
         },
         {
           "step": 5,
           "date": "1914–1918",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why was shell shock initially stigmatised as cowardice before being treated medically?",
+          "heading": "Why was mustard gas so psychologically terrifying?",
           "bullets": [
-            "Endless artillery thunder breaking soldiers' minds",
-            "Men shaking uncontrollably and losing their speech",
-            "Resting traumatised patients in quiet country hospitals"
+            "Phosgene & mustard blistering",
+            "Internal airway suffocation",
+            "Rotting external skin burns"
           ],
-          "focus_clue": "Why was shell shock initially stigmatised as cowardice before being treated medically?",
+          "focus_clue": "Why was mustard gas so psychologically terrifying?",
           "words": [
             {
-              "term": "Endless artillery thunder breaking soldiers' minds",
-              "clue": "Prolonged exposure to relentless high-explosive artillery bombardments caused severe psychiatric trauma known as shell shock, fracturing soldiers' mental stability."
+              "term": "Phosgene & mustard blistering",
+              "clue": "Official specification focus term: Phosgene & mustard blistering"
             },
             {
-              "term": "Men shaking uncontrollably and losing their speech",
-              "clue": "Victims of acute shell shock suffered debilitating physical symptoms including violent involuntary tremors, hysterical blindness, mutism, and severe nightmares."
+              "term": "Internal airway suffocation",
+              "clue": "Official specification focus term: Internal airway suffocation"
             },
             {
-              "term": "Resting traumatised patients in quiet country hospitals",
-              "clue": "Pioneering doctors like W.H.R. Rivers at Craiglockhart Hospital replaced harsh military discipline with restful psychiatric talk therapy in tranquil rural settings."
+              "term": "Rotting external skin burns",
+              "clue": "Official specification focus term: Rotting external skin burns"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Endless artillery thunder breaking soldiers' minds</strong> reinforced <strong>Men shaking uncontrollably and losing their speech</strong>, meaning that <strong>Resting traumatised patients in quiet country hospitals</strong> remained deeply entrenched during this medical era.",
-          "title": "Why was shell shock initially stigmatised as cowardice before being treated medically?",
+          "model_sentence": "Chemical warfare escalated with <strong>Phosgene & mustard blistering</strong>, causing agonizing <strong>Internal airway suffocation</strong> alongside horrific, <strong>Rotting external skin burns</strong>.",
+          "title": "Phosgene, Mustard Gas & Late Casualties",
           "dates": "1914–1918"
         }
       ],
@@ -25185,145 +25185,145 @@ export default {
           "step": 1,
           "date": "1914–1918",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why did jagged shrapnel fragments cause far worse infections than rifle bullets?",
+          "heading": "Why did shrapnel cause 58% of all Western Front wounds?",
           "bullets": [
-            "Blasting hot jagged metal balls through flesh",
-            "Blowing dirty uniform cloth deep into broken bones",
-            "Causing over half of all battlefield wounds"
+            "High explosive shrapnel shells",
+            "Steel ball fragmentation",
+            "Brodie helmet introduction (1915)"
           ],
-          "focus_clue": "Why did jagged shrapnel fragments cause far worse infections than rifle bullets?",
+          "focus_clue": "Why did shrapnel cause 58% of all Western Front wounds?",
           "words": [
             {
-              "term": "Blasting hot jagged metal balls through flesh",
-              "clue": "Artillery batteries discharged massive ordnance: high-explosive shells packed with trinitrotoluene (TNT) detonated on contact, creating a colossal supersonic blast wave and tearing thick steel casings into thousands of razor-sharp, jagged, red-hot metal fragments of irregular shapes and sizes."
+              "term": "High explosive shrapnel shells",
+              "clue": "Official specification focus term: High explosive shrapnel shells"
             },
             {
-              "term": "Blowing dirty uniform cloth deep into broken bones",
-              "clue": "Furthermore, the explosive vacuum and velocity of the metal fragment sucked foreign matter deep into the cavity: pieces of dirty woollen tunic, sodden khaki trousers, soil, and boot leather were buried into the wounded muscle."
+              "term": "Steel ball fragmentation",
+              "clue": "Official specification focus term: Steel ball fragmentation"
             },
             {
-              "term": "Causing over half of all battlefield wounds",
-              "clue": "The nature of battlefield wounds on the Western Front was dictated by the catastrophic supremacy of modern industrial artillery."
+              "term": "Brodie helmet introduction (1915)",
+              "clue": "Official specification focus term: Brodie helmet introduction (1915)"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>blasting hot jagged metal balls through flesh</strong> and <strong>blowing dirty uniform cloth deep into broken bones</strong>, established authority maintained doctrinal control by <strong>causing over half of all battlefield wounds</strong>.",
-          "title": "Why did jagged shrapnel fragments cause far worse infections than rifle bullets?",
+          "model_sentence": "Artillery accounted for most casualties via <strong>High explosive shrapnel shells</strong> and deadly <strong>Steel ball fragmentation</strong>, leading to the vital <strong>Brodie helmet introduction (1915)</strong> to reduce head wounds.",
+          "title": "High-Explosive Shells & The Brodie Helmet",
           "dates": "1914–1918"
         },
         {
           "step": 2,
           "date": "1914–1918",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why was Clostridium welchii so lethal in deep, airless shrapnel wounds?",
+          "heading": "How did rapid-fire machine guns cause devastating trauma?",
           "bullets": [
-            "Fertilising farmland with rotten animal manure",
-            "Deadly microbes multiplying inside airless wounds",
-            "Hissing bubbles swelling under blackened skin"
+            "Machine gun 450-rpm bursts",
+            "Shattered compound bone trauma",
+            "Catastrophic arterial haemorrhage"
           ],
-          "focus_clue": "Why was Clostridium welchii so lethal in deep, airless shrapnel wounds?",
+          "focus_clue": "How did rapid-fire machine guns cause devastating trauma?",
           "words": [
             {
-              "term": "Fertilising farmland with rotten animal manure",
-              "clue": "Northern France and Flanders had been intensively cultivated agricultural farmland for centuries, heavily fertilized with massive deposits of cow, horse, and pig manure."
+              "term": "Machine gun 450-rpm bursts",
+              "clue": "Official specification focus term: Machine gun 450-rpm bursts"
             },
             {
-              "term": "Deadly microbes multiplying inside airless wounds",
-              "clue": "Deep, jagged shrapnel wounds containing dead muscle tissue, deprived of blood flow, provided the perfect incubator for these deadly bacteria."
+              "term": "Shattered compound bone trauma",
+              "clue": "Official specification focus term: Shattered compound bone trauma"
             },
             {
-              "term": "Hissing bubbles swelling under blackened skin",
-              "clue": "Soil bacteria in manure-rich Flemish farmland caused gas gangrene, an infection where toxins produced foul-smelling gas bubbles under necrotic blackened tissue."
+              "term": "Catastrophic arterial haemorrhage",
+              "clue": "Official specification focus term: Catastrophic arterial haemorrhage"
             }
           ],
-          "model_sentence": "Through <strong>fertilising farmland with rotten animal manure</strong> and the implementation of <strong>Deadly microbes multiplying inside airless wounds</strong>, structural pressure mounted, directly precipitating <strong>Hissing bubbles swelling under blackened skin</strong>.",
-          "title": "Why was Clostridium welchii so lethal in deep, airless shrapnel wounds?",
+          "model_sentence": "Frontline defensive barrages produced <strong>Machine gun 450-rpm bursts</strong>, creating severe <strong>Shattered compound bone trauma</strong> and triggering <strong>Catastrophic arterial haemorrhage</strong>.",
+          "title": "Machine Gun Wounds & Compound Trauma",
           "dates": "1914–1918"
         },
         {
           "step": 3,
           "date": "Late 1915",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did the introduction of the Brodie helmet cause an apparent rise in hospital head cases?",
+          "heading": "Why did agricultural fertilizer make battlefield infections lethal?",
           "bullets": [
-            "Soft cloth caps offering zero protection from blasts",
-            "Pressing hard steel bowls with wide gutters",
-            "Slashing deadly skull splinter wounds by eighty percent"
+            "Manured Flanders farmland",
+            "Tetanus & gas gangrene bacteria",
+            "Anaerobic tissue rotting"
           ],
-          "focus_clue": "Why did the introduction of the Brodie helmet cause an apparent rise in hospital head cases?",
+          "focus_clue": "Why did agricultural fertilizer make battlefield infections lethal?",
           "words": [
             {
-              "term": "Soft cloth caps offering zero protection from blasts",
-              "clue": "British soldiers entered the conflict wearing soft cloth peaked caps that offered zero ballistic protection."
+              "term": "Manured Flanders farmland",
+              "clue": "Official specification focus term: Manured Flanders farmland"
             },
             {
-              "term": "Pressing hard steel bowls with wide gutters",
-              "clue": "Stamped from a single sheet of hardened manganese steel and lined with felt and canvas, the helmet featured a distinctive wide, shallow brim designed to deflect descending artillery shrapnel away from the wearer’s face, neck, and shoulders."
+              "term": "Tetanus & gas gangrene bacteria",
+              "clue": "Official specification focus term: Tetanus & gas gangrene bacteria"
             },
             {
-              "term": "Slashing deadly skull splinter wounds by eighty percent",
-              "clue": "Deep, jagged shrapnel wounds containing dead muscle tissue, deprived of blood flow, provided the perfect incubator for these deadly bacteria.Within hours of injury, anaerobic bacteria multiplied inside the devitalized tissue."
+              "term": "Anaerobic tissue rotting",
+              "clue": "Official specification focus term: Anaerobic tissue rotting"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Soft cloth caps offering zero protection from blasts</strong> reinforced <strong>Pressing hard steel bowls with wide gutters</strong>, meaning that <strong>Slashing deadly skull splinter wounds by eighty percent</strong> remained deeply entrenched during this medical era.",
-          "title": "Why did the introduction of the Brodie helmet cause an apparent rise in hospital head cases?",
+          "model_sentence": "Decades of intense cultivation across <strong>Manured Flanders farmland</strong> filled bomb craters with lethal <strong>Tetanus & gas gangrene bacteria</strong> that accelerated <strong>Anaerobic tissue rotting</strong>.",
+          "title": "Manured Flanders Soil & Gas Gangrene",
           "dates": "Late 1915"
         },
         {
           "step": 4,
           "date": "Apr 1915–1916",
           "para_ref": "[4.1–4.2]",
-          "heading": "How did the rapid evolution of chemical respirators counter suffocating gases?",
+          "heading": "How did routine anti-tetanus injections save thousands of lives?",
           "bullets": [
-            "Releasing green-yellow choking cloud over fields",
-            "Holding urine-soaked handkerchiefs over noses",
-            "Breathing through grey flannel hoods with glass eyepieces"
+            "Anti-tetanus serum injections",
+            "Routine frontline administration",
+            "Dramatic lockjaw prevention"
           ],
-          "focus_clue": "How did the rapid evolution of chemical respirators counter suffocating gases?",
+          "focus_clue": "How did routine anti-tetanus injections save thousands of lives?",
           "words": [
             {
-              "term": "Releasing green-yellow choking cloud over fields",
-              "clue": "At the Second Battle of Ypres in April 1915, the German army released 168 tons of chlorine gas from cylinders, creating a dense suffocating cloud."
+              "term": "Anti-tetanus serum injections",
+              "clue": "Official specification focus term: Anti-tetanus serum injections"
             },
             {
-              "term": "Holding urine-soaked handkerchiefs over noses",
-              "clue": "Before respirators were issued, Allied soldiers desperately pressed urine-soaked rags over their faces, as the ammonia neutralized acidic chlorine gas."
+              "term": "Routine frontline administration",
+              "clue": "Official specification focus term: Routine frontline administration"
             },
             {
-              "term": "Breathing through grey flannel hoods with glass eyepieces",
-              "clue": "Unprepared Allied troops initially soaked socks and cotton bandoliers in urine (ammonia neutralized chlorine) before the British issued the flannel Hypo Helmet and the chemical-impregnated Phenate-Hexamine (PH) Helmet ( Source B ) fitted with glass goggles and a rubber exhale valve."
+              "term": "Dramatic lockjaw prevention",
+              "clue": "Official specification focus term: Dramatic lockjaw prevention"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>releasing green-yellow choking cloud over fields</strong> and <strong>holding urine-soaked handkerchiefs over noses</strong>, established authority maintained doctrinal control by <strong>breathing through grey flannel hoods with glass eyepieces</strong>.",
-          "title": "How did the rapid evolution of chemical respirators counter suffocating gases?",
+          "model_sentence": "To counter soil-borne tetanus, RAMC medical staff enforced <strong>Anti-tetanus serum injections</strong> as a <strong>Routine frontline administration</strong>, achieving a <strong>Dramatic lockjaw prevention</strong>.",
+          "title": "Anti-Tetanus Serum & Preventive Injections",
           "dates": "Apr 1915–1916"
         },
         {
           "step": 5,
           "date": "1916–1918",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why was mustard gas far harder to counter than chlorine or phosgene?",
+          "heading": "How did deep wound debridement prevent fatal gangrene?",
           "bullets": [
-            "Sucking air through rubber tubes and charcoal canisters",
-            "Oily yellow liquid burning huge skin blisters through clothes",
-            "Soaking into muddy earth for weeks without evaporating"
+            "Inadequacy of simple antiseptics",
+            "Deep surgical debridement",
+            "Carrel-Dakin chemical flushing"
           ],
-          "focus_clue": "Why was mustard gas far harder to counter than chlorine or phosgene?",
+          "focus_clue": "How did deep wound debridement prevent fatal gangrene?",
           "words": [
             {
-              "term": "Sucking air through rubber tubes and charcoal canisters",
-              "clue": "The SBR comprised a snug rubberized face mask with glass eyepieces, connected by a flexible corrugated hose to a metal chest canister containing chemical neutralizers and granules of activated vegetable charcoal."
+              "term": "Inadequacy of simple antiseptics",
+              "clue": "Official specification focus term: Inadequacy of simple antiseptics"
             },
             {
-              "term": "Oily yellow liquid burning huge skin blisters through clothes",
-              "clue": "Fired in artillery shells, the oily liquid penetrated damp woollen uniforms, causing severe chemical burns, immense fluid-filled weeping blisters, temporary blindness, and respiratory tract destruction."
+              "term": "Deep surgical debridement",
+              "clue": "Official specification focus term: Deep surgical debridement"
             },
             {
-              "term": "Soaking into muddy earth for weeks without evaporating",
-              "clue": "Mustard gas contaminated muddy shell craters for days or weeks, forcing medical units to establish specialized decontamination showers and stripping stations."
+              "term": "Carrel-Dakin chemical flushing",
+              "clue": "Official specification focus term: Carrel-Dakin chemical flushing"
             }
           ],
-          "model_sentence": "Through <strong>sucking air through rubber tubes and charcoal canisters</strong> and the implementation of <strong>Oily yellow liquid burning huge skin blisters through clothes</strong>, structural pressure mounted, directly precipitating <strong>Soaking into muddy earth for weeks without evaporating</strong>.",
-          "title": "Why was mustard gas far harder to counter than chlorine or phosgene?",
+          "model_sentence": "Because deep explosive wounds highlighted the <strong>Inadequacy of simple antiseptics</strong>, military surgeons adopted <strong>Deep surgical debridement</strong> and continuous <strong>Carrel-Dakin chemical flushing</strong>.",
+          "title": "Debridement & The Carrel-Dakin Method",
           "dates": "1916–1918"
         }
       ],
@@ -26230,145 +26230,145 @@ export default {
           "step": 1,
           "date": "1914–1918",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why was rapid evacuation by stretcher bearers vital to prevent irreversible shock?",
+          "heading": "What harrowing obstacles did stretcher bearers face in No Man's Land?",
           "bullets": [
-            "Teams of four hauling wounded through bullet fire",
-            "Crowding into dark sandbagged frontline dugouts",
-            "Slapping brown iodine and white bandages on cuts"
+            "Stretcher bearer four-man squads",
+            "Traversing shell-cratered mud",
+            "Frontline Regimental Aid Posts"
           ],
-          "focus_clue": "Why was rapid evacuation by stretcher bearers vital to prevent irreversible shock?",
+          "focus_clue": "What harrowing obstacles did stretcher bearers face in No Man's Land?",
           "words": [
             {
-              "term": "Teams of four hauling wounded through bullet fire",
-              "clue": "Because the manured soil of Flanders and northern France was teeming with virulent anaerobic bacteria that caused fatal gas gangrene within twenty-four hours, the Royal Army Medical Corps (RAMC) constructed an organized, continuous evacuation pipeline from the firestep back to specialized base hospitals: the Chain of Evacuation ."
+              "term": "Stretcher bearer four-man squads",
+              "clue": "Official specification focus term: Stretcher bearer four-man squads"
             },
             {
-              "term": "Crowding into dark sandbagged frontline dugouts",
-              "clue": "Located 200 to 300 yards behind the frontline in a communication trench dugout, ruined farmhouse cellar, or sandbagged breastwork, the RAP was staffed by the Regimental Medical Officer (RMO) and orderlies."
+              "term": "Traversing shell-cratered mud",
+              "clue": "Official specification focus term: Traversing shell-cratered mud"
             },
             {
-              "term": "Slapping brown iodine and white bandages on cuts",
-              "clue": "Regimental stretcher bearers applied antiseptic iodine tincture and field dressings in forward trenches to stabilise wounded men before stretcher evacuation."
+              "term": "Frontline Regimental Aid Posts",
+              "clue": "Official specification focus term: Frontline Regimental Aid Posts"
             }
           ],
-          "model_sentence": "Crucially, the practice of <strong>Teams of four hauling wounded through bullet fire</strong> reinforced <strong>Crowding into dark sandbagged frontline dugouts</strong>, meaning that <strong>Slapping brown iodine and white bandages on cuts</strong> remained deeply entrenched during this medical era.",
-          "title": "Why was rapid evacuation by stretcher bearers vital to prevent irreversible shock?",
+          "model_sentence": "Unarmed <strong>Stretcher bearer four-man squads</strong> worked under fire <strong>Traversing shell-cratered mud</strong> to carry wounded back to <strong>Frontline Regimental Aid Posts</strong>.",
+          "title": "Stretcher Bearers & Frontline Retrieval",
           "dates": "1914–1918"
         },
         {
           "step": 2,
           "date": "1914–1918",
           "para_ref": "[2.1–2.2]",
-          "heading": "What was the tactical role of Dressing Stations in preventing CCS congestion?",
+          "heading": "What immediate triage took place in the Regimental Aid Post?",
           "bullets": [
-            "Setting up treatment cots inside ruined farm barns",
-            "Checking clean bandages one mile behind frontline",
-            "Loading urgent bleeding cases into transport carts"
+            "Regimental Aid Post (RAP)",
+            "Immediate tourniquets & bandaging",
+            "Preventing immediate blood loss"
           ],
-          "focus_clue": "What was the tactical role of Dressing Stations in preventing CCS congestion?",
+          "focus_clue": "What immediate triage took place in the Regimental Aid Post?",
           "words": [
             {
-              "term": "Setting up treatment cots inside ruined farm barns",
-              "clue": "Located one to two miles behind the front in tents, bunkers, or ruined barns, dressing stations acted as an intermediate clearing filter."
+              "term": "Regimental Aid Post (RAP)",
+              "clue": "Official specification focus term: Regimental Aid Post (RAP)"
             },
             {
-              "term": "Checking clean bandages one mile behind frontline",
-              "clue": "Located one to two miles behind the front in tents, bunkers, or ruined barns, dressing stations acted as an intermediate clearing filter."
+              "term": "Immediate tourniquets & bandaging",
+              "clue": "Official specification focus term: Immediate tourniquets & bandaging"
             },
             {
-              "term": "Loading urgent bleeding cases into transport carts",
-              "clue": "Orderlies at advanced dressing stations loaded severely hemorrhaging casualties into horse-drawn and motor ambulances for rapid transport to Casualty Clearing Stations."
+              "term": "Preventing immediate blood loss",
+              "clue": "Official specification focus term: Preventing immediate blood loss"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>setting up treatment cots inside ruined farm barns</strong> and <strong>checking clean bandages one mile behind frontline</strong>, established authority maintained doctrinal control by <strong>loading urgent bleeding cases into transport carts</strong>.",
-          "title": "What was the tactical role of Dressing Stations in preventing CCS congestion?",
+          "model_sentence": "Located just 200 yards behind trenches, the <strong>Regimental Aid Post (RAP)</strong> delivered <strong>Immediate tourniquets & bandaging</strong>, focusing strictly on <strong>Preventing immediate blood loss</strong>.",
+          "title": "Regimental Aid Posts: First Aid Under Fire",
           "dates": "1914–1918"
         },
         {
           "step": 3,
           "date": "1914–1918",
           "para_ref": "[3.1–3.2]",
-          "heading": "How did the 3-tier triage system maximize survival during mass offensives?",
+          "heading": "How did Field Ambulances sort casualties behind the lines?",
           "bullets": [
-            "Setting up big operating tents near railway tracks",
-            "Sorting bleeding soldiers into three survival groups",
-            "Rushing torn stomach wounds straight to surgeons' tables"
+            "Advanced Dressing Stations (ADS)",
+            "Main Dressing Stations (MDS)",
+            "Field Ambulance medical triage"
           ],
-          "focus_clue": "How did the 3-tier triage system maximize survival during mass offensives?",
+          "focus_clue": "How did Field Ambulances sort casualties behind the lines?",
           "words": [
             {
-              "term": "Setting up big operating tents near railway tracks",
-              "clue": "Located 7 to 12 miles behind the front line—safely beyond standard German field artillery range, but positioned strategically beside railway lines and canal networks—the CCS was the first facility equipped with sterile operating theatres, autoclaves, mobile X-ray vans, and professional military nurses of the Queen Alexandra’s Imperial Military Nursing Service (QAIMNS)."
+              "term": "Advanced Dressing Stations (ADS)",
+              "clue": "Official specification focus term: Advanced Dressing Stations (ADS)"
             },
             {
-              "term": "Sorting bleeding soldiers into three survival groups",
-              "clue": "To handle thousands of casualties arriving simultaneously during major offensives, medical officers operated a rigorous system of Triage , dividing incoming men into three strict clinical categories: (1) The Walking Wounded (men with minor flesh wounds who were dressed and returned to duty); (2) Those Requiring Immediate Surgery (patients with compound fractures, ruptured femurs, or penetrating abdominal and chest wounds who had a viable chance of survival if operated on immediately); and (3) The Moribund (hopelessly wounded soldiers whose injuries were fatal, who were placed in quiet tents and made comfortable with morphine until they passed away)."
+              "term": "Main Dressing Stations (MDS)",
+              "clue": "Official specification focus term: Main Dressing Stations (MDS)"
             },
             {
-              "term": "Rushing torn stomach wounds straight to surgeons' tables",
-              "clue": "At Casualty Clearing Stations (CCS), triage doctors immediately prioritized abdominal and severe chest wounds for immediate emergency surgery to prevent shock."
+              "term": "Field Ambulance medical triage",
+              "clue": "Official specification focus term: Field Ambulance medical triage"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>setting up big operating tents near railway tracks</strong> and <strong>sorting bleeding soldiers into three survival groups</strong>, established authority maintained doctrinal control by <strong>rushing torn stomach wounds straight to surgeons' tables</strong>.",
-          "title": "How did the 3-tier triage system maximize survival during mass offensives?",
+          "model_sentence": "Casualties passed to <strong>Advanced Dressing Stations (ADS)</strong> and <strong>Main Dressing Stations (MDS)</strong>, where RAMC officers performed urgent <strong>Field Ambulance medical triage</strong>.",
+          "title": "Dressing Stations & Motor Ambulances",
           "dates": "1914–1918"
         },
         {
           "step": 4,
           "date": "1914–1918",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why were Base Hospitals situated near major coastal rail terminals and ports?",
+          "heading": "Why were CCS operating huts the most vital link in the evacuation chain?",
           "bullets": [
-            "Converting coastal resort hotels into recovery wards",
-            "Treating specialized amputations and poison burns",
-            "Carrying healed patients onto white hospital ships"
+            "Casualty Clearing Stations (CCS)",
+            "Specialist surgical operating huts",
+            "Crucial 24-hour infection window"
           ],
-          "focus_clue": "Why were Base Hospitals situated near major coastal rail terminals and ports?",
+          "focus_clue": "Why were CCS operating huts the most vital link in the evacuation chain?",
           "words": [
             {
-              "term": "Converting coastal resort hotels into recovery wards",
-              "clue": "The RAMC solved this by converting French commercial canal barges into floating ambulance wards (Source B)."
+              "term": "Casualty Clearing Stations (CCS)",
+              "clue": "Official specification focus term: Casualty Clearing Stations (CCS)"
             },
             {
-              "term": "Treating specialized amputations and poison burns",
-              "clue": "Large Base Hospitals near French coastal ports provided long-term specialized care for severe burn casualties, orthopedic amputations, and poison gas lung damage."
+              "term": "Specialist surgical operating huts",
+              "clue": "Official specification focus term: Specialist surgical operating huts"
             },
             {
-              "term": "Carrying healed patients onto white hospital ships",
-              "clue": "When casualties stabilized sufficiently to travel and required extended convalescence, they were loaded onto dedicated white-painted hospital ships (marked with red crosses and green hull bands) for the voyage across the English Channel back to specialized military and civilian hospitals in Britain (\"Blighty\")."
+              "term": "Crucial 24-hour infection window",
+              "clue": "Official specification focus term: Crucial 24-hour infection window"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>converting coastal resort hotels into recovery wards</strong> and <strong>treating specialized amputations and poison burns</strong>, established authority maintained doctrinal control by <strong>carrying healed patients onto white hospital ships</strong>.",
-          "title": "Why were Base Hospitals situated near major coastal rail terminals and ports?",
+          "model_sentence": "Life-saving operations took place at <strong>Casualty Clearing Stations (CCS)</strong>, whose <strong>Specialist surgical operating huts</strong> treated wounded soldiers within the <strong>Crucial 24-hour infection window</strong>.",
+          "title": "Casualty Clearing Stations & Triage",
           "dates": "1914–1918"
         },
         {
           "step": 5,
           "date": "1914–1918",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why were canal barges preferred over trains for head and chest trauma?",
+          "heading": "How were long-term casualties transported to coastal Base Hospitals?",
           "bullets": [
-            "Bouncing painfully in old wooden horse wagons",
-            "Donating hundreds of fast petrol motor vans",
-            "Gliding gently down quiet canals for head injuries"
+            "Base hospitals near French ports",
+            "Ambulance trains & canal barges",
+            "'Blighty' ship evacuations"
           ],
-          "focus_clue": "Why were canal barges preferred over trains for head and chest trauma?",
+          "focus_clue": "How were long-term casualties transported to coastal Base Hospitals?",
           "words": [
             {
-              "term": "Bouncing painfully in old wooden horse wagons",
-              "clue": "Over cratered, shell-ploughed roads, horse wagons jolted agonizingly, causing jagged bone splinters to sever arteries and throwing stabilized casualties into fatal secondary shock."
+              "term": "Base hospitals near French ports",
+              "clue": "Official specification focus term: Base hospitals near French ports"
             },
             {
-              "term": "Donating hundreds of fast petrol motor vans",
-              "clue": "In response, public appeals coordinated by the British Red Cross raised funds to purchase motorized ambulance vans."
+              "term": "Ambulance trains & canal barges",
+              "clue": "Official specification focus term: Ambulance trains & canal barges"
             },
             {
-              "term": "Gliding gently down quiet canals for head injuries",
-              "clue": "Specially fitted hospital canal barges transported soldiers with severe head injuries and fractured spines smoothly, avoiding the violent jarring of rough roads."
+              "term": "'Blighty' ship evacuations",
+              "clue": "Official specification focus term: 'Blighty' ship evacuations"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>bouncing painfully in old wooden horse wagons</strong> and <strong>donating hundreds of fast petrol motor vans</strong>, established authority maintained doctrinal control by <strong>gliding gently down quiet canals for head injuries</strong>.",
-          "title": "Why were canal barges preferred over trains for head and chest trauma?",
+          "model_sentence": "Recovering troops travelled to <strong>Base hospitals near French ports</strong> aboard dedicated <strong>Ambulance trains & canal barges</strong>, awaiting final <strong>'Blighty' ship evacuations</strong> to Britain.",
+          "title": "Base Hospitals & Ambulance Trains",
           "dates": "1914–1918"
         }
       ],
@@ -27263,145 +27263,145 @@ export default {
           "step": 1,
           "date": "1914–1918",
           "para_ref": "[1.1–1.2]",
-          "heading": "Why was surgical excision of dead tissue more effective than chemical antiseptics?",
+          "heading": "How did the Thomas splint reduce compound fracture mortality from 80% to 20%?",
           "bullets": [
-            "Cutting away bruised, black, and dead muscle tissue",
-            "Depriving hungry bacteria of rotting food",
-            "Leaving surgical cuts open to wash before stitching"
+            "Thomas splint (1916)",
+            "Compound femur fracture",
+            "Survival rate surge (20% to 82%)"
           ],
-          "focus_clue": "Why was surgical excision of dead tissue more effective than chemical antiseptics?",
+          "focus_clue": "How did the Thomas splint reduce compound fracture mortality from 80% to 20%?",
           "words": [
             {
-              "term": "Cutting away bruised, black, and dead muscle tissue",
-              "clue": "Operating under general or local anaesthesia in forward stations, surgeons used scalpels to systematically cut away all dead, bruised, and contaminated muscle tissue around the margins of the wound, depriving anaerobic bacteria of the devitalized biological material they required to multiply."
+              "term": "Thomas splint (1916)",
+              "clue": "Official specification focus term: Thomas splint (1916)"
             },
             {
-              "term": "Depriving hungry bacteria of rotting food",
-              "clue": "Operating under general or local anaesthesia in forward stations, surgeons used scalpels to systematically cut away all dead, bruised, and contaminated muscle tissue around the margins of the wound, depriving anaerobic bacteria of the devitalized biological material they required to multiply."
+              "term": "Compound femur fracture",
+              "clue": "Official specification focus term: Compound femur fracture"
             },
             {
-              "term": "Leaving surgical cuts open to wash before stitching",
-              "clue": "Furthermore, surgeons rejected immediate stitching, practicing delayed primary closure : wounds were left wide open and packed with sterile gauze for 24 to 48 hours to expose tissue to oxygen, halting anaerobic bacterial reproduction before the wound was surgically closed."
+              "term": "Survival rate surge (20% to 82%)",
+              "clue": "Official specification focus term: Survival rate surge (20% to 82%)"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>cutting away bruised, black, and dead muscle tissue</strong> and <strong>depriving hungry bacteria of rotting food</strong>, established authority maintained doctrinal control by <strong>leaving surgical cuts open to wash before stitching</strong>.",
-          "title": "Why was surgical excision of dead tissue more effective than chemical antiseptics?",
+          "model_sentence": "Introduced to the Western Front in 1916, the <strong>Thomas splint (1916)</strong> stabilized severe <strong>Compound femur fracture</strong> trauma, driving an astounding <strong>Survival rate surge (20% to 82%)</strong>.",
+          "title": "The Thomas Splint & Femur Survival",
           "dates": "1914–1918"
         },
         {
           "step": 2,
           "date": "1915–1918",
           "para_ref": "[2.1–2.2]",
-          "heading": "How did continuous chemical irrigation solve the problem of deep wound infection?",
+          "heading": "How did mobile radiographic vans locate buried shrapnel before surgery?",
           "bullets": [
-            "Pushing narrow rubber tubes deep into torn flesh",
-            "Dripping fresh salty bleach solution day and night",
-            "Killing hidden microbes before gangrene takes hold"
+            "Mobile X-ray radiographic vans",
+            "Locating shrapnel before surgery",
+            "Preventing tissue damage"
           ],
-          "focus_clue": "How did continuous chemical irrigation solve the problem of deep wound infection?",
+          "focus_clue": "How did mobile radiographic vans locate buried shrapnel before surgery?",
           "words": [
             {
-              "term": "Pushing narrow rubber tubes deep into torn flesh",
-              "clue": "Carrel designed an ingenious mechanical apparatus to deliver the antiseptic: a network of narrow, flexible rubber tubes pierced with tiny holes was laid deep inside the recesses of the wound."
+              "term": "Mobile X-ray radiographic vans",
+              "clue": "Official specification focus term: Mobile X-ray radiographic vans"
             },
             {
-              "term": "Dripping fresh salty bleach solution day and night",
-              "clue": "Antiseptic solution was dripped continuously from an elevated glass reservoir, flushing the wound cavity day and night in forward operating theatres ( Source B )."
+              "term": "Locating shrapnel before surgery",
+              "clue": "Official specification focus term: Locating shrapnel before surgery"
             },
             {
-              "term": "Killing hidden microbes before gangrene takes hold",
-              "clue": "Surgeons used the Carrel-Dakin method, continuously flushing deep contaminated wounds with sodium hypochlorite antiseptic through rubber tubes to kill anaerobic bacteria."
+              "term": "Preventing tissue damage",
+              "clue": "Official specification focus term: Preventing tissue damage"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>pushing narrow rubber tubes deep into torn flesh</strong> and <strong>dripping fresh salty bleach solution day and night</strong>, established authority maintained doctrinal control by <strong>killing hidden microbes before gangrene takes hold</strong>.",
-          "title": "How did continuous chemical irrigation solve the problem of deep wound infection?",
+          "model_sentence": "Frontline CCS units relied on <strong>Mobile X-ray radiographic vans</strong> for accurately <strong>Locating shrapnel before surgery</strong> and <strong>Preventing tissue damage</strong> during exploratory cutting.",
+          "title": "Mobile X-Ray Units at the Front",
           "dates": "1915–1918"
         },
         {
           "step": 3,
           "date": "Dec 1915–1916",
           "para_ref": "[3.1–3.2]",
-          "heading": "How did rigid traction prevent fatal haemorrhage and shock from broken femurs?",
+          "heading": "Why was direct person-to-person transfusion impractical on the battlefield?",
           "bullets": [
-            "Fitting padded metal oval ring around upper groin",
-            "Pulling leather cords to stretch broken leg bones taut",
-            "Dropping thigh fracture deaths from eighty to twenty percent"
+            "Direct blood transfusion technique",
+            "Syringe-and-cannula matching",
+            "Frontline donor limitations"
           ],
-          "focus_clue": "How did rigid traction prevent fatal haemorrhage and shock from broken femurs?",
+          "focus_clue": "Why was direct person-to-person transfusion impractical on the battlefield?",
           "words": [
             {
-              "term": "Fitting padded metal oval ring around upper groin",
-              "clue": "The splint applied continuous mechanical traction : a padded oval metal ring fitted firmly against the groin and pelvis, connected to two rigid parallel metal rods extending past the foot."
+              "term": "Direct blood transfusion technique",
+              "clue": "Official specification focus term: Direct blood transfusion technique"
             },
             {
-              "term": "Pulling leather cords to stretch broken leg bones taut",
-              "clue": "By strapping the soldier’s boot to the bottom crossbar and twisting cords taut with a windlass, the leg was pulled straight."
+              "term": "Syringe-and-cannula matching",
+              "clue": "Official specification focus term: Syringe-and-cannula matching"
             },
             {
-              "term": "Dropping thigh fracture deaths from eighty to twenty percent",
-              "clue": "In the opening year of the war, compound fractures of the femur (thigh bone) were among the most lethal injuries on the Western Front, carrying an appalling mortality rate of approximately 80%."
+              "term": "Frontline donor limitations",
+              "clue": "Official specification focus term: Frontline donor limitations"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>fitting padded metal oval ring around upper groin</strong> and <strong>pulling leather cords to stretch broken leg bones taut</strong>, established authority maintained doctrinal control by <strong>dropping thigh fracture deaths from eighty to twenty percent</strong>.",
-          "title": "How did rigid traction prevent fatal haemorrhage and shock from broken femurs?",
+          "model_sentence": "Early transfusions required a risky <strong>Direct blood transfusion technique</strong> using <strong>Syringe-and-cannula matching</strong>, which was heavily restricted by dangerous <strong>Frontline donor limitations</strong>.",
+          "title": "Early Blood Transfusion & Direct Donor Matching",
           "dates": "Dec 1915–1916"
         },
         {
           "step": 4,
           "date": "1914–1918",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why was locating shrapnel on an X-ray vital before operating on gas gangrene?",
+          "heading": "How did chemical additives allow blood to be stored without clotting?",
           "bullets": [
-            "Running small dynamo generators off motor engines",
-            "Scanning wounded soldiers right behind battle lines",
-            "Locating buried steel balls before surgeon cuts"
+            "Richard Lewisohn sodium citrate",
+            "Francis Rous & Turner glucose",
+            "Refrigerated storage longevity"
           ],
-          "focus_clue": "Why was locating shrapnel on an X-ray vital before operating on gas gangrene?",
+          "focus_clue": "How did chemical additives allow blood to be stored without clotting?",
           "words": [
             {
-              "term": "Running small dynamo generators off motor engines",
-              "clue": "Inspired by pioneering scientist Marie Curie—who equipped French hospital vans known as \"petites Curies\"—the British War Office fitted motorized vans with portable radiography equipment, darkroom developing facilities, and petrol-driven electrical dynamo generators connected directly to the automobile engine."
+              "term": "Richard Lewisohn sodium citrate",
+              "clue": "Official specification focus term: Richard Lewisohn sodium citrate"
             },
             {
-              "term": "Scanning wounded soldiers right behind battle lines",
-              "clue": "Mobile X-ray vans equipped with photographic plates located embedded jagged shrapnel fragments and bullets inside wounded soldiers before surgery."
+              "term": "Francis Rous & Turner glucose",
+              "clue": "Official specification focus term: Francis Rous & Turner glucose"
             },
             {
-              "term": "Locating buried steel balls before surgeon cuts",
-              "clue": "Radiologists also used fluorescent screens for real-time fluoroscopy, allowing surgeons to extract buried metal balls quickly with minimal incisions, dramatically reducing operating times and surgical shock during heavy offensives."
+              "term": "Refrigerated storage longevity",
+              "clue": "Official specification focus term: Refrigerated storage longevity"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>running small dynamo generators off motor engines</strong> and <strong>scanning wounded soldiers right behind battle lines</strong>, established authority maintained doctrinal control by <strong>locating buried steel balls before surgeon cuts</strong>.",
-          "title": "Why was locating shrapnel on an X-ray vital before operating on gas gangrene?",
+          "model_sentence": "Breakthroughs by <strong>Richard Lewisohn sodium citrate</strong> (preventing clotting) and <strong>Francis Rous & Turner glucose</strong> allowed blood to maintain <strong>Refrigerated storage longevity</strong> for weeks.",
+          "title": "Sodium Citrate & Glucose Storage (1915–1916)",
           "dates": "1914–1918"
         },
         {
           "step": 5,
           "date": "1914–1918",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did undetected cloth fragments remain the primary cause of post-op gangrene?",
+          "heading": "How did Oswald Robertson create the world's first blood bank at Cambrai?",
           "bullets": [
-            "Shattering delicate glass vacuum bulbs on bumpy tracks",
-            "Overheating metal tubes after five minutes of use",
-            "Failing to spot buried uniform cloth and muddy splinters"
+            "Oswald Robertson blood depot",
+            "1917 Cambrai mass casualties",
+            "Stored universal donor blood"
           ],
-          "focus_clue": "Why did undetected cloth fragments remain the primary cause of post-op gangrene?",
+          "focus_clue": "How did Oswald Robertson create the world's first blood bank at Cambrai?",
           "words": [
             {
-              "term": "Shattering delicate glass vacuum bulbs on bumpy tracks",
-              "clue": "Furthermore, transporting heavy X-ray vans and delicate glass photographic plates over rutted, shell-cratered roads frequently shattered electrical vacuum bulbs and fractured fragile glass developer plates."
+              "term": "Oswald Robertson blood depot",
+              "clue": "Official specification focus term: Oswald Robertson blood depot"
             },
             {
-              "term": "Overheating metal tubes after five minutes of use",
-              "clue": "The glass vacuum tubes (Crookes tubes) overheated rapidly after a few minutes of continuous operation and had to be rested to cool down, causing dangerous bottlenecks when hundreds of casualties flooded a CCS."
+              "term": "1917 Cambrai mass casualties",
+              "clue": "Official specification focus term: 1917 Cambrai mass casualties"
             },
             {
-              "term": "Failing to spot buried uniform cloth and muddy splinters",
-              "clue": "X-rays could not reveal muddy soil, trench timber splinters, or fragments of sodden woollen khaki uniform buried deep in muscle tissue."
+              "term": "Stored universal donor blood",
+              "clue": "Official specification focus term: Stored universal donor blood"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>shattering delicate glass vacuum bulbs on bumpy tracks</strong> and <strong>overheating metal tubes after five minutes of use</strong>, established authority maintained doctrinal control by <strong>failing to spot buried uniform cloth and muddy splinters</strong>.",
-          "title": "Why did undetected cloth fragments remain the primary cause of post-op gangrene?",
+          "model_sentence": "At the Battle of Cambrai, US doctor <strong>Oswald Robertson blood depot</strong> saved hundreds of <strong>1917 Cambrai mass casualties</strong> using pre-packaged <strong>Stored universal donor blood</strong>.",
+          "title": "Oswald Robertson & The Cambrai Blood Depot (1917)",
           "dates": "1914–1918"
         }
       ],
@@ -28315,145 +28315,145 @@ export default {
           "step": 1,
           "date": "1914–1915",
           "para_ref": "[1.1–1.2]",
-          "heading": "How did sodium citrate liberate blood transfusion from donor-to-patient tubing?",
+          "heading": "How did Harvey Cushing revolutionize battlefield brain surgery?",
           "bullets": [
-            "Adding chemical salts to stop blood turning into jelly",
-            "Uncoupling donor arm from dying patient's vein",
-            "Pouring red liquid freely through sterile glass funnels"
+            "Harvey Cushing brain surgery",
+            "Local anaesthetic technique",
+            "Magnet metal splinter removal"
           ],
-          "focus_clue": "How did sodium citrate liberate blood transfusion from donor-to-patient tubing?",
+          "focus_clue": "How did Harvey Cushing revolutionize battlefield brain surgery?",
           "words": [
             {
-              "term": "Adding chemical salts to stop blood turning into jelly",
-              "clue": "In 1914, Belgian doctor Albert Hustin and Argentine physician Luis Agote discovered that adding non-toxic sodium citrate to freshly drawn blood neutralized calcium ions, preventing coagulation and allowing blood to be administered indirectly via sterile glass funnels."
+              "term": "Harvey Cushing brain surgery",
+              "clue": "Official specification focus term: Harvey Cushing brain surgery"
             },
             {
-              "term": "Uncoupling donor arm from dying patient's vein",
-              "clue": "Transfusions required a direct donor lying immediately beside the patient, connected arm-to-arm by a rubber tube."
+              "term": "Local anaesthetic technique",
+              "clue": "Official specification focus term: Local anaesthetic technique"
             },
             {
-              "term": "Pouring red liquid freely through sterile glass funnels",
-              "clue": "In 1914, Belgian doctor Albert Hustin and Argentine physician Luis Agote discovered that adding non-toxic sodium citrate to freshly drawn blood neutralized calcium ions, preventing coagulation and allowing blood to be administered indirectly via sterile glass funnels."
+              "term": "Magnet metal splinter removal",
+              "clue": "Official specification focus term: Magnet metal splinter removal"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>adding chemical salts to stop blood turning into jelly</strong> and <strong>uncoupling donor arm from dying patient's vein</strong>, established authority maintained doctrinal control by <strong>pouring red liquid freely through sterile glass funnels</strong>.",
-          "title": "How did sodium citrate liberate blood transfusion from donor-to-patient tubing?",
+          "model_sentence": "Pioneering American surgeon <strong>Harvey Cushing brain surgery</strong> on the Western Front utilized a <strong>Local anaesthetic technique</strong> alongside gentle <strong>Magnet metal splinter removal</strong>.",
+          "title": "Harvey Cushing: Magnets & Local Anaesthesia",
           "dates": "1914–1915"
         },
         {
           "step": 2,
           "date": "1916–1917",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why was glucose addition essential to prevent red blood cell breakdown?",
+          "heading": "How did Cushing reduce brain surgery mortality to 29%?",
           "bullets": [
-            "Mixing sweet sugar syrup to feed fragile red cells",
-            "Packing glass medicine bottles into insulated ice chests",
-            "Keeping precious donations fresh for four weeks"
+            "Reduced brain surgery mortality",
+            "Slow precision debridement",
+            "Cushing 71% survival rate"
           ],
-          "focus_clue": "Why was glucose addition essential to prevent red blood cell breakdown?",
+          "focus_clue": "How did Cushing reduce brain surgery mortality to 29%?",
           "words": [
             {
-              "term": "Mixing sweet sugar syrup to feed fragile red cells",
-              "clue": "In 1915, American doctor Richard Weil proved that citrated blood could be kept in glass bottles in a refrigerator for a few days, but after 72 hours the fragile red blood cells broke down and lysed, releasing toxic potassium and causing severe kidney failure in recipients."
+              "term": "Reduced brain surgery mortality",
+              "clue": "Official specification focus term: Reduced brain surgery mortality"
             },
             {
-              "term": "Packing glass medicine bottles into insulated ice chests",
-              "clue": "By mixing freshly collected blood with sodium citrate and glucose and storing it in glass medicine bottles packed inside insulated ice chests, blood could be preserved fresh, intact, and fully viable for up to four weeks (28 days)."
+              "term": "Slow precision debridement",
+              "clue": "Official specification focus term: Slow precision debridement"
             },
             {
-              "term": "Keeping precious donations fresh for four weeks",
-              "clue": "By mixing freshly collected blood with sodium citrate and glucose and storing it in glass medicine bottles packed inside insulated ice chests, blood could be preserved fresh, intact, and fully viable for up to four weeks (28 days)."
+              "term": "Cushing 71% survival rate",
+              "clue": "Official specification focus term: Cushing 71% survival rate"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>mixing sweet sugar syrup to feed fragile red cells</strong> and <strong>packing glass medicine bottles into insulated ice chests</strong>, established authority maintained doctrinal control by <strong>keeping precious donations fresh for four weeks</strong>.",
-          "title": "Why was glucose addition essential to prevent red blood cell breakdown?",
+          "model_sentence": "Cushing's methods achieved <strong>Reduced brain surgery mortality</strong> through patient, <strong>Slow precision debridement</strong>, securing an extraordinary <strong>Cushing 71% survival rate</strong>.",
+          "title": "Reduced Brain Mortality & Micro-Debridement",
           "dates": "1916–1917"
         },
         {
           "step": 3,
           "date": "Nov 1917",
           "para_ref": "[3.1–3.2]",
-          "heading": "Why did pre-stored blood transform surgical survival during surprise assaults?",
+          "heading": "Why was facial reconstruction surgery born out of WWI trench warfare?",
           "bullets": [
-            "Collecting universal Type O bottles before big attack",
-            "Carrying twenty-two vacuum metal flasks to frontline",
-            "Reviving dying soldiers suffering cold shock"
+            "Harold Gillies plastic surgery",
+            "Queen's Hospital Sidcup",
+            "Facial reconstruction tube pedicle"
           ],
-          "focus_clue": "Why did pre-stored blood transform surgical survival during surprise assaults?",
+          "focus_clue": "Why was facial reconstruction surgery born out of WWI trench warfare?",
           "words": [
             {
-              "term": "Collecting universal Type O bottles before big attack",
-              "clue": "Prior to the Battle of Cambrai in 1917, Canadian doctor Oswald Robertson gathered citrate-preserved Type O blood in refrigerated bottles to establish the first blood bank."
+              "term": "Harold Gillies plastic surgery",
+              "clue": "Official specification focus term: Harold Gillies plastic surgery"
             },
             {
-              "term": "Carrying twenty-two vacuum metal flasks to frontline",
-              "clue": "Medical orderly teams transported cold-stored blood in insulated vacuum flasks directly into advanced casualty dressing stations to treat catastrophic hemorrhage."
+              "term": "Queen's Hospital Sidcup",
+              "clue": "Official specification focus term: Queen's Hospital Sidcup"
             },
             {
-              "term": "Reviving dying soldiers suffering cold shock",
-              "clue": "48 near the Cambrai front, Robertson treated twenty-two soldiers suffering from lethal haemorrhagic shock who were expected to die from severe blood loss."
+              "term": "Facial reconstruction tube pedicle",
+              "clue": "Official specification focus term: Facial reconstruction tube pedicle"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>collecting universal Type O bottles before big attack</strong> and <strong>carrying twenty-two vacuum metal flasks to frontline</strong>, established authority maintained doctrinal control by <strong>reviving dying soldiers suffering cold shock</strong>.",
-          "title": "Why did pre-stored blood transform surgical survival during surprise assaults?",
+          "model_sentence": "Confronting horrific disfigurements, New Zealand surgeon <strong>Harold Gillies plastic surgery</strong> at <strong>Queen's Hospital Sidcup</strong> invented the groundbreaking <strong>Facial reconstruction tube pedicle</strong>.",
+          "title": "Harold Gillies & The Queen's Hospital, Sidcup",
           "dates": "Nov 1917"
         },
         {
           "step": 4,
           "date": "1917–1918",
           "para_ref": "[4.1–4.2]",
-          "heading": "Why was local anaesthesia superior to general anaesthetic in head trauma?",
+          "heading": "How did the tubed pedicle preserve blood supply during skin grafts?",
           "bullets": [
-            "Numbing scalp with local needle jabs to stop brain swelling",
-            "Clamping bleeding blood vessels with tiny silver clips",
-            "Pulling out buried iron shards with magnetic rods"
+            "Walking wounded skin graft healing",
+            "Preserving blood supply",
+            "Reducing fatal graft rejection"
           ],
-          "focus_clue": "Why was local anaesthesia superior to general anaesthetic in head trauma?",
+          "focus_clue": "How did the tubed pedicle preserve blood supply during skin grafts?",
           "words": [
             {
-              "term": "Numbing scalp with local needle jabs to stop brain swelling",
-              "clue": "Cushing pioneered operating on conscious brain casualties under local anaesthetic (novocaine injected into the scalp), which kept the brain calm and unswollen."
+              "term": "Walking wounded skin graft healing",
+              "clue": "Official specification focus term: Walking wounded skin graft healing"
             },
             {
-              "term": "Clamping bleeding blood vessels with tiny silver clips",
-              "clue": "He designed an electrical suction apparatus to gently aspirate pulped, dead brain tissue, deployed powerful surgical electromagnets to extract deeply embedded steel shrapnel shards without lacerating healthy cerebral cortex, and used tiny silver clips to clamp delicate bleeding vessels."
+              "term": "Preserving blood supply",
+              "clue": "Official specification focus term: Preserving blood supply"
             },
             {
-              "term": "Pulling out buried iron shards with magnetic rods",
-              "clue": "He designed an electrical suction apparatus to gently aspirate pulped, dead brain tissue, deployed powerful surgical electromagnets to extract deeply embedded steel shrapnel shards without lacerating healthy cerebral cortex, and used tiny silver clips to clamp delicate bleeding vessels."
+              "term": "Reducing fatal graft rejection",
+              "clue": "Official specification focus term: Reducing fatal graft rejection"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>numbing scalp with local needle jabs to stop brain swelling</strong> and <strong>clamping bleeding blood vessels with tiny silver clips</strong>, established authority maintained doctrinal control by <strong>pulling out buried iron shards with magnetic rods</strong>.",
-          "title": "Why was local anaesthesia superior to general anaesthetic in head trauma?",
+          "model_sentence": "The tube pedicle allowed <strong>Walking wounded skin graft healing</strong> by permanently <strong>Preserving blood supply</strong> between transfers, greatly <strong>Reducing fatal graft rejection</strong>.",
+          "title": "The Tubed Pedicle & Tissue Viability",
           "dates": "1917–1918"
         },
         {
           "step": 5,
           "date": "1917–1918",
           "para_ref": "[5.1–5.2]",
-          "heading": "How did the tubed pedicle technique prevent skin grafts from rotting and dying?",
+          "heading": "What was the lasting humanitarian and surgical legacy of Sidcup?",
           "bullets": [
-            "Rolling chest skin into living round meat tubes",
-            "Keeping blood pumping into graft while it stitches to face",
-            "Sculpting new noses, chins, and jaws for shattered soldiers"
+            "Restoring soldiers' facial dignity",
+            "Over 11,000 Sidcup operations",
+            "Foundations of modern plastic surgery"
           ],
-          "focus_clue": "How did the tubed pedicle technique prevent skin grafts from rotting and dying?",
+          "focus_clue": "What was the lasting humanitarian and surgical legacy of Sidcup?",
           "words": [
             {
-              "term": "Rolling chest skin into living round meat tubes",
-              "clue": "A flap of healthy skin was cut from the patient’s chest, neck, or forehead and rolled into an enclosed, living tube of flesh with its internal blood vessels intact, while remaining attached at one end to maintain active arterial circulation."
+              "term": "Restoring soldiers' facial dignity",
+              "clue": "Official specification focus term: Restoring soldiers' facial dignity"
             },
             {
-              "term": "Keeping blood pumping into graft while it stitches to face",
-              "clue": "Gillies confronted a major biological hurdle: large, flat skin grafts transplanted onto open facial wounds invariably rotted and died from microbial infection and lack of blood supply."
+              "term": "Over 11,000 Sidcup operations",
+              "clue": "Official specification focus term: Over 11,000 Sidcup operations"
             },
             {
-              "term": "Sculpting new noses, chins, and jaws for shattered soldiers",
-              "clue": "Because trench sentries looked directly over parapets, thousands of soldiers sustained horrific facial wounds from machine-gun bullets and shrapnel, having jaws, noses, and cheeks completely blown away."
+              "term": "Foundations of modern plastic surgery",
+              "clue": "Official specification focus term: Foundations of modern plastic surgery"
             }
           ],
-          "model_sentence": "By strictly enforcing <strong>rolling chest skin into living round meat tubes</strong> and <strong>keeping blood pumping into graft while it stitches to face</strong>, established authority maintained doctrinal control by <strong>sculpting new noses, chins, and jaws for shattered soldiers</strong>.",
-          "title": "How did the tubed pedicle technique prevent skin grafts from rotting and dying?",
+          "model_sentence": "Gillies focused on <strong>Restoring soldiers' facial dignity</strong> across <strong>Over 11,000 Sidcup operations</strong>, successfully building the permanent <strong>Foundations of modern plastic surgery</strong>.",
+          "title": "Restoring Identity: Over 11,000 Operations",
           "dates": "1917–1918"
         }
       ],
