@@ -94,13 +94,13 @@ export const CURRICULAR_PILLARS_CATALOG = {
   medieval_england: {
     textbook: {
       title: 'Medieval England (1066–1381) Master Classroom Textbook',
-      label: 'Master Textbook (12 Pages)',
+      label: 'Master Textbook (8 Pages)',
       htmlUrl: '/units/medieval_england/textbook.html',
       pdfUrl: '/pdfs/medieval_england_textbook.pdf',
     },
     workbook: {
       title: 'Medieval England Pupil Workbook',
-      label: 'Pupil Workbook',
+      label: 'Pupil Workbook (16 Pages)',
       htmlUrl: '/units/medieval_england/pupil_workbook.html',
       pdfUrl: '/pdfs/medieval_england_pupil_workbook.pdf',
     },
@@ -280,11 +280,11 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/cme_new_textbook.pdf',
     },
     workbook: {
-      title: 'Conflict in the Middle East Complete Mastery Exam Pack (36 Pages)',
-      label: 'Mastery Exam Pack (36 Pages)',
-      htmlUrl: '/units/cme_new/booklets/cme_mastery_FULL.html',
-      pdfUrl: '/pdfs/cme_mastery_pack_FULL.pdf',
-      icon: 'fa-solid fa-file-signature',
+      title: 'Conflict in the Middle East 68-Page Complete Master Pupil Workbook',
+      label: 'Pupil Workbook (68 Pages)',
+      htmlUrl: '/units/cme_new/pupil_workbook_KT1.html',
+      pdfUrl: '/pdfs/cme_new_pupil_workbook_master.pdf',
+      icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
       title: 'Conflict in the Middle East Master Knowledge Retrieval Companion',
@@ -307,12 +307,11 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/usa_textbook.pdf',
     },
     workbook: {
-      title:
-        'Conflict at Home and Abroad: the USA, 1954–75 Paper 3 Complete Mastery Exam Pack (48 Pages)',
-      label: 'Mastery Exam Pack (48 Pages)',
-      htmlUrl: '/units/usa/booklets/usa_mastery_FULL.html',
-      pdfUrl: '/pdfs/usa_mastery_pack_FULL.pdf',
-      icon: 'fa-solid fa-file-signature',
+      title: 'USA, 1954–1975 80-Page Complete Master Pupil Workbook',
+      label: 'Pupil Workbook (80 Pages)',
+      htmlUrl: '/units/usa/pupil_workbook_KT1.html',
+      pdfUrl: '/pdfs/usa_pupil_workbook_master.pdf',
+      icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
       title: 'USA 1954–1975 Master Knowledge Retrieval Companion',
@@ -335,10 +334,11 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
     },
     workbook: {
-      title: 'Medicine in Britain Master Pupil Workbook',
-      label: 'Pupil Workbook (20 Pages)',
+      title: 'Medicine Through Time 104-Page Complete Master Pupil Workbook',
+      label: 'Pupil Workbook (104 Pages)',
       htmlUrl: '/units/edexcel_medicine/pupil_workbook_medieval.html',
-      pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf',
+      pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_master.pdf',
+      icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
       title: 'Medicine in Britain Master Knowledge Retrieval Companion',
@@ -361,10 +361,11 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/weimar_nazi_germany_textbook.pdf',
     },
     workbook: {
-      title: 'Weimar & Nazi Germany Pupil Workbook',
-      label: 'Pupil Workbook (20 Pages)',
+      title: 'Weimar & Nazi Germany 80-Page Complete Master Pupil Workbook',
+      label: 'Pupil Workbook (80 Pages)',
       htmlUrl: '/units/weimar_nazi_germany/pupil_workbook_KT1.html',
-      pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
+      pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf',
+      icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
       title: 'Weimar and Nazi Germany Master Knowledge Retrieval Companion',
@@ -375,16 +376,17 @@ export const CURRICULAR_PILLARS_CATALOG = {
   },
   eee: {
     textbook: {
-      title: 'Early Elizabethan England Master Textbook',
+      title: 'Early Elizabethan England (1558–1588) 28-Page Master Textbook',
       label: 'Master Textbook',
       htmlUrl: '/units/eee/textbook_UNIFIED.html',
       pdfUrl: '/pdfs/eee_textbook.pdf',
     },
     workbook: {
-      title: 'Early Elizabethan England Pupil Workbook',
-      label: 'Pupil Workbook (16 Pages)',
+      title: 'Early Elizabethan England 48-Page Complete Master Pupil Workbook',
+      label: 'Pupil Workbook (48 Pages)',
       htmlUrl: '/units/eee/pupil_workbook_KT1.html',
-      pdfUrl: '/pdfs/eee_pupil_workbook_KT1.pdf',
+      pdfUrl: '/pdfs/eee_pupil_workbook_master.pdf',
+      icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
       title: 'Early Elizabethan England Master Knowledge Retrieval Companion',
@@ -402,9 +404,10 @@ export const CURRICULAR_PILLARS_CATALOG = {
     },
     workbook: {
       title: 'Superpower Relations & Cold War Pupil Workbook',
-      label: 'Pupil Workbook (16 Pages)',
+      label: 'Pupil Workbook (20 Pages)',
       htmlUrl: '/units/cold_war/pupil_workbook.html',
       pdfUrl: '/pdfs/cold_war_pupil_workbook.pdf',
+      icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
       title: 'Superpower Relations Knowledge Retrieval Companion',

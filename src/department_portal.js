@@ -325,7 +325,7 @@ const UNIT_HEALTH_DATA = [
     workbookText: 'Consumable Pupil Workbook (KT1–3)',
     textbookText: '28-Page Master Textbook',
     mapText: 'Spanish Armada Route & Circumnavigation',
-    workbookPdf: '/pdfs/eee_pupil_workbook_KT1.pdf',
+    workbookPdf: '/pdfs/eee_pupil_workbook_master.pdf',
     textbookPdf: '/pdfs/eee_textbook.pdf',
   },
   {
@@ -338,7 +338,7 @@ const UNIT_HEALTH_DATA = [
     workbookText: 'Consumable Pupil Workbook (KT1–3)',
     textbookText: '28-Page Master Textbook',
     mapText: '1949 Green Line, Sinai, Golan & West Bank',
-    workbookPdf: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
+    workbookPdf: '/pdfs/cme_new_pupil_workbook_master.pdf',
     textbookPdf: '/pdfs/cme_new_textbook.pdf',
   },
   {
@@ -351,7 +351,7 @@ const UNIT_HEALTH_DATA = [
     workbookText: 'Consumable Pupil Workbook (KT1–4)',
     textbookText: '28-Page Master Textbook',
     mapText: 'Weimar Border Plebiscites & Rhineland',
-    workbookPdf: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
+    workbookPdf: '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf',
     textbookPdf: '/pdfs/weimar_nazi_germany_textbook.pdf',
   },
   {
@@ -364,7 +364,7 @@ const UNIT_HEALTH_DATA = [
     workbookText: 'Consumable Pupil Workbook (KT1–4)',
     textbookText: '28-Page Master Textbook',
     mapText: 'Civil Rights Movement & Vietnam Theater',
-    workbookPdf: '/pdfs/usa_pupil_workbook_KT1.pdf',
+    workbookPdf: '/pdfs/usa_pupil_workbook_master.pdf',
     textbookPdf: '/pdfs/usa_textbook.pdf',
   },
 ];
