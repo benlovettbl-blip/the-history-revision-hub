@@ -45,7 +45,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT3.pdf';
-        else resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
+        else resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_master.pdf';
       } else if (url.includes('retrieval') || url.includes('companion')) {
         resolvedPdfUrl = '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf';
       } else if (url.includes('textbook')) {
@@ -62,7 +62,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf';
         else if (url.includes('KT4')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf';
-        else resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf';
+        else resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf';
       } else if (url.includes('mastery')) {
         resolvedPdfUrl = '/pdfs/weimar_nazi_germany_mastery_pack_KT1.pdf';
       } else if (url.includes('retrieval') || url.includes('companion')) {
@@ -82,7 +82,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT3.pdf';
         else if (url.includes('KT4')) resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT4.pdf';
-        else resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT1.pdf';
+        else resolvedPdfUrl = '/pdfs/usa_pupil_workbook_master.pdf';
       } else if (url.includes('mastery')) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/usa_mastery_pack_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/usa_mastery_pack_KT2.pdf';
@@ -105,7 +105,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT3.pdf';
-        else resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
+        else resolvedPdfUrl = '/pdfs/eee_pupil_workbook_master.pdf';
       } else if (url.includes('mastery')) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/eee_mastery_pack_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/eee_mastery_pack_KT2.pdf';
@@ -409,18 +409,18 @@ const UNIT_PUBLICATIONS = {
       editions: [
         {
           id: 'all',
-          label: 'Complete Unit (KT1–KT3 Combined)',
-          title: '36-Page Complete Exam Practice & Assessment Mastery Pack',
-          pages: '36 Pages',
-          desc: 'Complete 36-page exam practice volume combining KT1, KT2, and KT3. Differentiated stepped ladder, 4-mark consequence drills, and photocopier-safe lines.',
-          readUrl: '/units/cme_new/booklets/cme_mastery_FULL.html',
-          pdfUrl: '/pdfs/cme_mastery_pack_FULL.pdf',
+          label: 'Complete Unit Master Volume (KT1–KT3 Combined)',
+          title: 'Conflict in the Middle East 68-Page Complete Master Pupil Workbook',
+          pages: '68 Pages (A4)',
+          desc: 'Complete 68-page classroom pupil workbook binding KT1 (Creation of Israel), KT2 (Escalating Conflict), and KT3 (Search for Peace). 12 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
+          readUrl: '/units/cme_new/pupil_workbook_KT1.html',
+          pdfUrl: '/pdfs/cme_new_pupil_workbook_master.pdf',
         },
         {
           id: 'KT1',
           label: 'Key Topic 1: Creation of Israel (1945–56)',
           title: 'KT1 Pupil Consumable Workbook (1945–56)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Photocopier-ready classroom workbook for KT1. Guided recall, enquiry spreads, source analysis, and stepped exam ladders.',
           readUrl: '/units/cme_new/pupil_workbook_KT1.html',
           pdfUrl: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
@@ -429,7 +429,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT2',
           label: 'Key Topic 2: The Escalating Conflict (1964–73)',
           title: 'KT2 Pupil Consumable Workbook (1964–73)',
-          pages: '12 Pages',
+          pages: '24 Pages',
           desc: 'Photocopier-ready classroom workbook for KT2. Six-Day War analysis, military tactics, Resolution 242 evaluation, and 12-mark causation scaffolds.',
           readUrl: '/units/cme_new/pupil_workbook_KT2.html',
           pdfUrl: '/pdfs/cme_new_pupil_workbook_KT2.pdf',
@@ -438,10 +438,19 @@ const UNIT_PUBLICATIONS = {
           id: 'KT3',
           label: 'Key Topic 3: The Search for Peace (1974–95)',
           title: 'KT3 Pupil Consumable Workbook (1974–95)',
-          pages: '12 Pages',
+          pages: '24 Pages',
           desc: 'Photocopier-ready classroom workbook for KT3. Camp David treaties, First Intifada timeline, Oslo Accords peace process, and 16-mark essays.',
           readUrl: '/units/cme_new/pupil_workbook_KT3.html',
           pdfUrl: '/pdfs/cme_new_pupil_workbook_KT3.pdf',
+        },
+        {
+          id: 'mastery',
+          label: 'Mastery Exam Pack (KT1–KT3 Practice)',
+          title: '36-Page Complete Exam Practice & Assessment Mastery Pack',
+          pages: '36 Pages',
+          desc: 'Complete 36-page exam practice volume combining KT1, KT2, and KT3. Differentiated stepped ladder, 4-mark consequence drills, and photocopier-safe lines.',
+          readUrl: '/units/cme_new/booklets/cme_mastery_FULL.html',
+          pdfUrl: '/pdfs/cme_mastery_pack_FULL.pdf',
         },
       ],
     },
@@ -473,10 +482,10 @@ const UNIT_PUBLICATIONS = {
       editions: [
         {
           id: 'all',
-          label: 'Complete 12-Page Master Classroom Textbook',
-          title: 'Medieval England (1066–1381) Master Classroom Textbook',
-          pages: '12 Pages',
-          desc: 'Complete 12-page pure narrative classroom textbook. 6 Double-Page Enquiry Spreads, Chronological Milestone Spine, Cartographic Battle Plan & Master Retrieval Quiz.',
+          label: 'Complete 8-Page Master Classroom Textbook',
+          title: 'Medieval England (1066–1381) 8-Page Master Textbook',
+          pages: '8 Pages',
+          desc: 'Complete 8-page pure narrative classroom textbook. 6 Double-Page Enquiry Spreads, Chronological Milestone Spine, Cartographic Battle Plan & Master Retrieval Quiz.',
           readUrl: '/units/medieval_england/textbook.html',
           pdfUrl: '/pdfs/medieval_england_textbook.pdf',
         },
@@ -509,7 +518,7 @@ const UNIT_PUBLICATIONS = {
           id: 'all',
           label: 'Knowledge Retrieval Companion (40 Qs)',
           title: 'Medieval England Knowledge Retrieval Companion',
-          pages: '12 Pages',
+          pages: '8 Pages',
           desc: '40 core factual questions across all enquiries with dual handwriting lines, front tracking ledger, and teacher marking bank.',
           readUrl: '/units/medieval_england/quiz_pack.html',
           pdfUrl: '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf',
@@ -544,18 +553,18 @@ const UNIT_PUBLICATIONS = {
       editions: [
         {
           id: 'all',
-          label: 'Complete Unit (KT1–KT4 Combined)',
-          title: '48-Page Complete Unit Master Compendium (KT1–KT4 Combined)',
-          pages: '48 Pages',
-          desc: 'Complete 48-page compendium binding KT1, KT2, KT3, and KT4. 4 full Paper 3 exam paper simulations, 16 primary sources/interpretations, and 24 Grade 8/9 exemplars.',
-          readUrl: '/units/usa/booklets/usa_mastery_FULL.html',
-          pdfUrl: '/pdfs/usa_mastery_pack_FULL.pdf',
+          label: 'Complete Unit Master Volume (KT1–KT4 Combined)',
+          title: 'USA (1954–1975) 80-Page Complete Master Pupil Workbook',
+          pages: '80 Pages (A4)',
+          desc: 'Complete 80-page classroom pupil workbook binding KT1 (Civil Rights), KT2 (Black Power), KT3 (Peace & Protest), and KT4 (Vietnam). 16 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
+          readUrl: '/units/usa/pupil_workbook_KT1.html',
+          pdfUrl: '/pdfs/usa_pupil_workbook_master.pdf',
         },
         {
           id: 'KT1',
           label: 'Key Topic 1: Civil Rights (1954–65)',
           title: 'KT1 Pupil Workbook: Civil Rights (1954–65)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Pupil consumable workbook for KT1 with source utility grids, stepped essay scaffolding, and retrieval tasks.',
           readUrl: '/units/usa/pupil_workbook_KT1.html',
           pdfUrl: '/pdfs/usa_pupil_workbook_KT1.pdf',
@@ -564,7 +573,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT2',
           label: 'Key Topic 2: Black Power (1965–75)',
           title: 'KT2 Pupil Workbook: Black Power (1965–75)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Pupil consumable workbook for KT2 with Black Panther source analysis and 16-mark essay frameworks.',
           readUrl: '/units/usa/pupil_workbook_KT2.html',
           pdfUrl: '/pdfs/usa_pupil_workbook_KT2.pdf',
@@ -573,7 +582,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT3',
           label: 'Key Topic 3: Peace & Protest (1960–75)',
           title: 'KT3 Pupil Workbook: Peace & Protest (1960–75)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: "Pupil consumable workbook for KT3 covering counterculture, women's rights, and student demonstrations.",
           readUrl: '/units/usa/pupil_workbook_KT3.html',
           pdfUrl: '/pdfs/usa_pupil_workbook_KT3.pdf',
@@ -582,10 +591,19 @@ const UNIT_PUBLICATIONS = {
           id: 'KT4',
           label: 'Key Topic 4: The Vietnam War (1954–75)',
           title: 'KT4 Pupil Workbook: The Vietnam War (1954–75)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Pupil consumable workbook for KT4 with tactical analysis grids, Tet Offensive evaluation, and exam drills.',
           readUrl: '/units/usa/pupil_workbook_KT4.html',
           pdfUrl: '/pdfs/usa_pupil_workbook_KT4.pdf',
+        },
+        {
+          id: 'mastery',
+          label: 'Mastery Exam Pack (KT1–KT4 Practice)',
+          title: '48-Page Complete Exam Practice & Assessment Mastery Pack',
+          pages: '48 Pages',
+          desc: 'Complete 48-page compendium binding KT1, KT2, KT3, and KT4. 4 full Paper 3 exam paper simulations, 16 primary sources/interpretations, and 24 Grade 8/9 exemplars.',
+          readUrl: '/units/usa/booklets/usa_mastery_FULL.html',
+          pdfUrl: '/pdfs/usa_mastery_pack_FULL.pdf',
         },
       ],
     },
@@ -655,8 +673,8 @@ const UNIT_PUBLICATIONS = {
           id: 'textbook_western_front',
           label: 'Hist Env: The Western Front (1914–1918)',
           title: 'The British Sector of the Western Front Historic Environment Textbook',
-          pages: '14 Pages',
-          desc: '14-page publisher-grade master classroom textbook. Evacuation chain, RAMC/FANY, gas attacks, wounds, and National Archives/RAMC sources.',
+          pages: '16 Pages',
+          desc: '16-page publisher-grade master classroom textbook. Evacuation chain, RAMC/FANY, gas attacks, wounds, and National Archives/RAMC sources.',
           readUrl: '/units/edexcel_medicine/textbook_western_front_PUBLISHER.html',
           pdfUrl: '/pdfs/edexcel_medicine_textbook_western_front.pdf',
         },
@@ -670,9 +688,9 @@ const UNIT_PUBLICATIONS = {
       editions: [
         {
           id: 'all',
-          label: 'Complete Course (96-Page All-in-One Bound Master)',
-          title: 'Paper 1: Master All-in-One Consumable Pupil Workbook (96 Pages)',
-          pages: '96 Pages',
+          label: 'Complete Course (104-Page All-in-One Bound Master)',
+          title: 'Paper 1: Master All-in-One Consumable Pupil Workbook (104 Pages)',
+          pages: '104 Pages',
           desc: 'The definitive photocopier-ready classroom workbook binding Section A (Western Front) and all four Section B chronological eras together.',
           readUrl: '/units/edexcel_medicine/booklets/medicine_mastery_compendium_32page.html',
           pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_master.pdf',
@@ -681,7 +699,7 @@ const UNIT_PUBLICATIONS = {
           id: 'medieval',
           label: 'Era 1: Medieval Britain (c1250–c1500)',
           title: 'Medieval Britain Pupil Consumable Workbook',
-          pages: '16 Pages',
+          pages: '20 Pages',
           desc: 'Black Death causation grids, Four Humours enquiry tasks, and 12-mark causation essay ladders.',
           readUrl: '/units/edexcel_medicine/pupil_workbook_medieval.html',
           pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf',
@@ -690,7 +708,7 @@ const UNIT_PUBLICATIONS = {
           id: 'renaissance',
           label: 'Era 2: The Medical Renaissance (c1500–c1700)',
           title: 'The Medical Renaissance Pupil Consumable Workbook',
-          pages: '16 Pages',
+          pages: '20 Pages',
           desc: 'Vesalius vs Galen anatomical analysis, Harvey blood circulation tasks, and similarity/difference exam drills.',
           readUrl: '/units/edexcel_medicine/pupil_workbook_renaissance.html',
           pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_renaissance.pdf',
@@ -699,7 +717,7 @@ const UNIT_PUBLICATIONS = {
           id: '18th_19th',
           label: 'Era 3: 18th & 19th C. Britain (c1700–c1900)',
           title: '18th & 19th C. Britain Pupil Consumable Workbook',
-          pages: '16 Pages',
+          pages: '20 Pages',
           desc: 'Germ Theory timelines, Nightingale hospital reform, Lister antiseptics, and 16-mark essay scaffolding.',
           readUrl: '/units/edexcel_medicine/pupil_workbook_18th_19th.html',
           pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_18th_19th.pdf',
@@ -717,7 +735,7 @@ const UNIT_PUBLICATIONS = {
           id: 'western_front',
           label: 'Historic Env: The Western Front (1914–18)',
           title: 'The Western Front Historic Environment Pupil Workbook',
-          pages: '16 Pages',
+          pages: '28 Pages',
           desc: 'Evacuation chain mapping, trench conditions source analysis, and Q1/Q2 exam technique worksheets.',
           readUrl: '/units/edexcel_medicine/pupil_workbook_western_front.html',
           pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf',
@@ -787,18 +805,18 @@ const UNIT_PUBLICATIONS = {
       editions: [
         {
           id: 'all',
-          label: 'Complete Course (KT1–KT3 Combined)',
-          title: 'Complete Paper 2 Elizabethan Consumable Workbook Pack',
-          pages: '36 Pages',
-          desc: 'Comprehensive classroom pupil workbook volume combining KT1, KT2, and KT3 with 2-mark feature drills, 12-mark causation, and 16-mark essays.',
+          label: 'Complete Unit Master Volume (KT1–KT3 Combined)',
+          title: 'Early Elizabethan England (1558–1588) 48-Page Complete Master Pupil Workbook',
+          pages: '48 Pages (A4)',
+          desc: 'Complete 48-page classroom pupil workbook binding KT1 (Queen & Government), KT2 (Plots & Armada), and KT3 (Society & Exploration). 12 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
           readUrl: '/units/eee/pupil_workbook_KT1.html',
-          pdfUrl: '/pdfs/eee_pupil_workbook_KT1.pdf',
+          pdfUrl: '/pdfs/eee_pupil_workbook_master.pdf',
         },
         {
           id: 'KT1',
           label: 'Key Topic 1: Queen, Government & Religion',
           title: 'KT1 Pupil Workbook: Queen, Government & Religion',
-          pages: '12 Pages',
+          pages: '16 Pages',
           desc: 'Pupil consumable workbook for KT1 with religious settlement tables and stepped writing scaffolds.',
           readUrl: '/units/eee/pupil_workbook_KT1.html',
           pdfUrl: '/pdfs/eee_pupil_workbook_KT1.pdf',
@@ -807,7 +825,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT2',
           label: 'Key Topic 2: Plots & The Spanish Armada',
           title: 'KT2 Pupil Workbook: Plots & The Spanish Armada',
-          pages: '12 Pages',
+          pages: '16 Pages',
           desc: 'Pupil consumable workbook for KT2 with plot comparison matrices and Armada battle analysis.',
           readUrl: '/units/eee/pupil_workbook_KT2.html',
           pdfUrl: '/pdfs/eee_pupil_workbook_KT2.pdf',
@@ -816,7 +834,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT3',
           label: 'Key Topic 3: Society, Poverty & Exploration',
           title: 'KT3 Pupil Workbook: Society, Poverty & Exploration',
-          pages: '12 Pages',
+          pages: '16 Pages',
           desc: 'Pupil consumable workbook for KT3 with social hierarchy tasks and Virginia voyage evaluations.',
           readUrl: '/units/eee/pupil_workbook_KT3.html',
           pdfUrl: '/pdfs/eee_pupil_workbook_KT3.pdf',
@@ -886,18 +904,18 @@ const UNIT_PUBLICATIONS = {
       editions: [
         {
           id: 'all',
-          label: 'Complete Course (KT1–KT4 Combined)',
-          title: 'Complete Paper 3 Weimar & Nazi Germany Consumable Workbook Pack',
-          pages: '48 Pages',
-          desc: 'Comprehensive pupil workbook volume combining KT1, KT2, KT3, and KT4 with Q1 inference, Q2 causation, Q3(a) utility, Q3(b/c) interpretations, and Q3(d) essays.',
+          label: 'Complete Unit Master Volume (KT1–KT4 Combined)',
+          title: 'Weimar & Nazi Germany (1918–1939) 80-Page Complete Master Pupil Workbook',
+          pages: '80 Pages (A4)',
+          desc: 'Complete 80-page classroom pupil workbook binding KT1 (Weimar Republic), KT2 (Hitler’s Rise), KT3 (Nazi Control), and KT4 (Life in Nazi Germany). 16 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
           readUrl: '/units/weimar_nazi_germany/pupil_workbook_KT1.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
+          pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf',
         },
         {
           id: 'KT1',
           label: 'Key Topic 1: The Weimar Republic (1918–29)',
           title: 'KT1 Pupil Workbook: The Weimar Republic (1918–29)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Weimar Constitution analysis, hyperinflation sources, and Stresemann utility drills.',
           readUrl: '/units/weimar_nazi_germany/pupil_workbook_KT1.html',
           pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
@@ -906,7 +924,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT2',
           label: 'Key Topic 2: Hitler’s Rise to Power (1919–33)',
           title: 'KT2 Pupil Workbook: Hitler’s Rise to Power (1919–33)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Depression election analysis, backstairs intrigue, and 12-mark causation scaffolds.',
           readUrl: '/units/weimar_nazi_germany/pupil_workbook_KT2.html',
           pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf',
@@ -915,7 +933,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT3',
           label: 'Key Topic 3: Nazi Control & Dictatorship (1933–39)',
           title: 'KT3 Pupil Workbook: Nazi Control & Dictatorship (1933–39)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Police State sources, church opposition, and Interpretation difference questions.',
           readUrl: '/units/weimar_nazi_germany/pupil_workbook_KT3.html',
           pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf',
@@ -924,7 +942,7 @@ const UNIT_PUBLICATIONS = {
           id: 'KT4',
           label: 'Key Topic 4: Life in Nazi Germany (1933–39)',
           title: 'KT4 Pupil Workbook: Life in Nazi Germany (1933–39)',
-          pages: '12 Pages',
+          pages: '20 Pages',
           desc: 'Youth and women policy comparisons, standard of living evaluations, and 16-mark essay frameworks.',
           readUrl: '/units/weimar_nazi_germany/pupil_workbook_KT4.html',
           pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf',
@@ -1230,8 +1248,8 @@ const UNIT_PUBLICATIONS = {
           id: 'all',
           label: 'Pupil Consumable Workbook',
           title: 'Cold War & Superpower Relations Pupil Consumable Workbook',
-          pages: '16 Pages',
-          desc: '16-page Gold Standard saddle-stitch pupil workbook. 6 Two-Page Enquiry Spreads with 5-Stage Chronological Inquiry Spines, Centrefold Living Timeline, and Assessment Progress Ledger.',
+          pages: '20 Pages',
+          desc: '20-page Gold Standard saddle-stitch pupil workbook. 7 Two-Page Enquiry Spreads with 5-Stage Chronological Inquiry Spines, Centrefold Living Timeline, and Assessment Progress Ledger.',
           readUrl: '/units/cold_war/pupil_workbook.html',
           pdfUrl: '/pdfs/cold_war_pupil_workbook.pdf',
         },
