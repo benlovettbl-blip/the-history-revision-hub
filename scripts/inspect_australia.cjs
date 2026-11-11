@@ -20,3 +20,4 @@ d.lessons.forEach((l, i) => {
 
 console.log(`\nTotal blocks: ${blockCount}, Average word count: ${(totalWords / blockCount).toFixed(1)}w`);
 console.log(`Fails: ${fails}`);
+

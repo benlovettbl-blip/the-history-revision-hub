@@ -533,8 +533,12 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     url.searchParams.set('view', viewName);
     if (param) url.searchParams.set('unit', param);
     else url.searchParams.delete('unit');
-    if ((viewName === 'reading' || viewName === 'guided-reading') && options && options.lessonIndex !== undefined) {
-      url.searchParams.set('lesson', options.lessonIndex + 1);
+    if (viewName === 'reading' || viewName === 'guided-reading') {
+      if (options && options.rawLesson !== undefined) {
+        url.searchParams.set('lesson', options.rawLesson);
+      } else if (options && options.lessonIndex !== undefined) {
+        url.searchParams.set('lesson', options.lessonIndex + 1);
+      }
     } else if (viewName !== 'reading' && viewName !== 'guided-reading') {
       url.searchParams.delete('lesson');
     }

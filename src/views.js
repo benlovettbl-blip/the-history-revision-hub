@@ -3290,20 +3290,18 @@ export async function renderReadingView(options = {}) {
   const guidedReadingData = unitData.guided_reading || [];
 
   const urlParams = new URLSearchParams(window.location.search);
+  const rawLesson = options && options.rawLesson ? options.rawLesson : urlParams.get('lesson');
   let lessonParam = options && options.lessonIndex !== undefined ? options.lessonIndex : null;
-  if (lessonParam === null) {
-    const rawLesson = urlParams.get('lesson');
-    if (rawLesson !== null) {
-      const parsed = parseInt(rawLesson, 10);
-      if (!isNaN(parsed)) {
-        // e.g. ?lesson=1 -> index 0
-        lessonParam = parsed > 0 ? parsed - 1 : 0;
-      }
+  if (lessonParam === null && rawLesson !== null) {
+    const parsed = parseInt(rawLesson, 10);
+    if (!isNaN(parsed)) {
+      // e.g. ?lesson=1 -> index 0
+      lessonParam = parsed > 0 ? parsed - 1 : 0;
     }
   }
   const currentLessonIndex = typeof lessonParam === 'number' ? lessonParam : 0;
 
-  initGuidedReadingTask(container, guidedReadingData, { currentLessonIndex, unitId, unitData });
+  initGuidedReadingTask(container, guidedReadingData, { currentLessonIndex, rawLesson, unitId, unitData });
 }
 
 export async function renderMarkingView(options = {}) {

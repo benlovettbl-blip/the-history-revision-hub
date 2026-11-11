@@ -819,6 +819,17 @@ function renderStandardFrontCover({
 /**
  * Renders the Standard Outside Back Cover (Page 16)
  */
+function renderHwPassportStrip() {
+  return `
+    <div style="display: flex; flex-wrap: wrap; gap: 7px; align-items: center; margin-top: 2.5px; font-size: 6.8pt; border-top: 1px dashed #cbd5e1; padding-top: 2px; color: #000000; font-family: 'Inter', sans-serif;">
+      <span><strong>HW Set:</strong> <span style="display: inline-block; border-bottom: 1.2px solid #000000; width: 12mm;">&nbsp;</span></span>
+      <span><strong>Due:</strong> <span style="display: inline-block; border-bottom: 1.2px solid #000000; width: 12mm;">&nbsp;</span></span>
+      <span>&#9633; <em>Read &amp; Quizzed</em></span>
+      <span><strong>Home Quiz:</strong> <span style="display: inline-block; border-bottom: 1.2px solid #000000; width: 8mm;">&nbsp;</span><strong>/ 10</strong></span>
+      <span><strong>Parent Sign:</strong> <span style="display: inline-block; border-bottom: 1.2px solid #000000; width: 22mm;">&nbsp;</span></span>
+    </div>`;
+}
+
 function renderStandardBackCover({
   unitId = 'cme_new',
   paperTitle = 'EDEXCEL GCSE (9–1) HISTORY • PAPER 2: CONFLICT IN THE MIDDLE EAST, 1945–1995',
@@ -873,62 +884,158 @@ function renderStandardBackCover({
         .map(
           (enq) => `
             <tr style="border-bottom: 1px solid #000000;">
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 10.0pt;">${enq.num}</td>
-              <td style="padding: 6px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 10.0pt;">${enq.num}</td>
+              <td style="padding: 5px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
                 <div style="font-weight: 800; color: #000; font-size: 9.0pt;">${enq.code || `KT${keyTopicNum}.${enq.num}`}: ${enq.title}</div>
-                ${enq.enquiryQuestion ? `<div style="font-size: 7.4pt; color: #475569; font-style: italic; margin-top: 2px; line-height: 1.25;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${enq.enquiryQuestion ? `<div style="font-size: 7.2pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${renderHwPassportStrip()}
               </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.2pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.2pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 26</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 11mm; margin-right: 2px;">&nbsp;</span><strong>/ 10</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ 4</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 10mm; margin-right: 2px;">&nbsp;</span><strong>/ 12</strong></span></td>
+              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 12mm; margin-right: 2px;">&nbsp;</span><strong>/ 26</strong></span></td>
             </tr>`,
         )
         .join('\n') +
       `
             <tr style="border-bottom: 1.5px solid #000000; background: #f8fafc;">
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 10.0pt;">★</td>
-              <td style="padding: 6px 10px; border-right: 1px solid #000000; font-size: 8.6pt; line-height: 1.28;">
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 10.0pt;">★</td>
+              <td style="padding: 5px 10px; border-right: 1px solid #000000; font-size: 8.6pt; line-height: 1.28;">
                 <div style="font-weight: 800; color: #000; font-size: 8.8pt;">Section B Capstone Assessment (pp. 16–19)</div>
                 <div style="font-size: 7.2pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.20;">Q3(a) Utility [8m] &bull; Q3(b) Study Views [4m] &bull; Q3(c) Why Differ [4m] &bull; Q3(d) Evaluative Essay [20m]</div>
               </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-size: 8.2pt; font-weight: 800;">Q3(a): &nbsp;&nbsp;<strong>/ 8</strong></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-size: 8.2pt; font-weight: 800;">Q3(b): &nbsp;&nbsp;<strong>/ 4</strong></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-size: 8.2pt; font-weight: 800; white-space: nowrap;">Q3(c): <strong>/ 4</strong> &bull; Q3(d): <strong>/ 20</strong></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.2pt; font-weight: 900; background: #e2e8f0; white-space: nowrap;"><span style="font-size: 10.2pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 36</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 8.2pt; font-weight: 800;">Q3(a): &nbsp;&nbsp;<strong>/ 8</strong></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 8.2pt; font-weight: 800;">Q3(b): &nbsp;&nbsp;<strong>/ 4</strong></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 8.2pt; font-weight: 800; white-space: nowrap;">Q3(c): <strong>/ 4</strong> &bull; Q3(d): <strong>/ 20</strong></td>
+              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #e2e8f0; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 12mm; margin-right: 2px;">&nbsp;</span><strong>/ 36</strong></span></td>
             </tr>`;
   } else if (isWesternFront) {
     enquiriesRowsHtml = enquiries
       .map(
-        (enq) => `
-            <tr style="border-bottom: 1px solid #000000;">
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.0pt;">${enq.num}</td>
-              <td style="padding: 4px 8px; border-right: 1px solid #000000; font-size: 8.4pt; line-height: 1.25;">
-                <div style="font-weight: 800; color: #000; font-size: 8.6pt;">${enq.code || `KT5.${enq.num}`}: ${enq.title}</div>
-                ${enq.enquiryQuestion ? `<div style="font-size: 7.2pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+        (enq, idx) => {
+          const qrSvg = (qrLessons && qrLessons[idx]) ? generateQrSvg(qrLessons[idx].url) : '';
+          return `
+            <tr style="border-bottom: 1.5px solid #000000;">
+              <!-- HW Dates & QR Code -->
+              <td style="padding: 4px 2px 3px 2px; border-right: 1.5px solid #000000; vertical-align: top; width: 22mm;">
+                <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100%; min-height: 28mm; box-sizing: border-box;">
+                  <div style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; color: #000000; white-space: nowrap; margin-top: 1px;">
+                    SET: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 12mm;">&nbsp;</span>
+                  </div>
+                  <div style="width: 14.5mm; height: 14.5mm; margin: auto 0; display: flex; align-items: center; justify-content: center;">
+                    ${qrSvg}
+                  </div>
+                  <div style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; color: #000000; white-space: nowrap; margin-bottom: 1px;">
+                    DUE: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 12mm;">&nbsp;</span>
+                  </div>
+                </div>
               </td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 8.2pt; font-weight: 800;">${enq.q2Type || ([1, 3, 5].includes(enq.num) ? 'Q2(a) Utility' : 'Q2(b) Follow-up')}: &nbsp;&nbsp;&nbsp;<strong>/ ${enq.q2Marks || ([1, 3, 5].includes(enq.num) ? 8 : 4)}</strong></span></td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 9.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || ([1, 3, 5].includes(enq.num) ? 22 : 18)}</strong></span></td>
-            </tr>`,
+
+              <!-- Enquiry & Homework Passport -->
+              <td style="padding: 4px 8px; border-right: 1.5px solid #000000; vertical-align: top;">
+                <div style="display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
+                  <div>
+                    <div style="font-weight: 900; color: #000; font-size: 9.0pt; line-height: 1.25;">${enq.code || `KT5.${enq.num}`}: ${enq.title}</div>
+                    ${enq.enquiryQuestion ? `<div style="font-size: 7.4pt; color: #334155; font-style: italic; margin-top: 2px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                  </div>
+                  
+                  <!-- Open Parental Passport Section -->
+                  <div style="border-top: 1.2px dashed #94a3b8; padding-top: 3px; margin-top: 3px; flex: 1; display: flex; flex-direction: column; justify-content: space-around;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 7.6pt; font-family: 'Inter', sans-serif; font-weight: 800; color: #000000; white-space: nowrap;">
+                      <span style="white-space: nowrap;"><span style="font-size: 8.5pt;">&#9633;</span> <strong>Read Aloud / Audio Tracked</strong></span>
+                      <span style="white-space: nowrap; margin-left: 8px;"><strong>10-Q Online Quiz Score:</strong> <span style="display: inline-block; border-bottom: 1.5px solid #000000; width: 13mm; margin: 0 4px;">&nbsp;</span><strong style="font-size: 9.2pt;">/ 10</strong></span>
+                    </div>
+                    <div style="display: flex; align-items: flex-end; font-size: 7.8pt; font-family: 'Inter', sans-serif; font-weight: 900; color: #000000;">
+                      <span style="white-space: nowrap; margin-right: 6px;">Parent / Carer Signature:</span>
+                      <div style="flex: 1; border-bottom: 1.5px solid #000000; height: 16px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <!-- In-Class Do Now -->
+              <td style="padding: 4px 2px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 20mm; white-space: nowrap;">
+                <div style="font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #000000; margin-bottom: 2px;">KT 5.${enq.num} Recall</div>
+                <span style="font-size: 9.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.5px solid #000; width: 11mm; margin-right: 2px;">&nbsp;</span><strong>/ 10</strong></span>
+              </td>
+
+              <!-- In-Class Q1 Features -->
+              <td style="padding: 4px 2px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 18mm; white-space: nowrap;">
+                <div style="font-size: 6.8pt; font-weight: 800; color: #475569; margin-bottom: 2px;">Q1 Features</div>
+                <span style="font-size: 9.2pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ 4</strong></span>
+              </td>
+
+              <!-- In-Class Q2 Source Enquiry -->
+              <td style="padding: 4px 2px; text-align: center; vertical-align: middle; width: 24mm; white-space: nowrap;">
+                <div style="font-size: 6.8pt; font-weight: 800; color: #475569; margin-bottom: 2px;">${enq.q2Type || ([1, 3, 5].includes(enq.num) ? 'Q2(a) Utility' : 'Q2(b) Follow-up')}</div>
+                <span style="font-size: 9.2pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q2Marks || ([1, 3, 5].includes(enq.num) ? 8 : 4)}</strong></span>
+              </td>
+            </tr>`;
+        },
       )
       .join('\n');
   } else if (isMedicineThematic) {
     enquiriesRowsHtml = enquiries
       .map(
-        (enq) => `
-            <tr style="border-bottom: 1px solid #000000;">
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 10.0pt;">${enq.num}</td>
-              <td style="padding: 6px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
-                <div style="font-weight: 800; color: #000; font-size: 9.0pt;">${enq.code || `KT${keyTopicNum}.${enq.num}`}: ${enq.title}</div>
-                ${enq.enquiryQuestion ? `<div style="font-size: 7.4pt; color: #475569; font-style: italic; margin-top: 2px; line-height: 1.25;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+        (enq, idx) => {
+          const qrSvg = (qrLessons && qrLessons[idx]) ? generateQrSvg(qrLessons[idx].url) : '';
+          return `
+            <tr style="border-bottom: 1.5px solid #000000;">
+              <!-- HW Dates & QR Code -->
+              <td style="padding: 5px 2px 4px 2px; border-right: 1.5px solid #000000; vertical-align: top; width: 22mm;">
+                <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100%; min-height: 31mm; box-sizing: border-box;">
+                  <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; color: #000000; white-space: nowrap; margin-top: 1px;">
+                    SET: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 12mm;">&nbsp;</span>
+                  </div>
+                  <div style="width: 15.5mm; height: 15.5mm; margin: auto 0; display: flex; align-items: center; justify-content: center;">
+                    ${qrSvg}
+                  </div>
+                  <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; color: #000000; white-space: nowrap; margin-bottom: 1px;">
+                    DUE: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 12mm;">&nbsp;</span>
+                  </div>
+                </div>
               </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 8.6pt; font-weight: 800;">${enq.extType || (enq.num === 5 ? 'Q5/6 Essay' : 'Q4 Explain')}: &nbsp;&nbsp;<strong>/ ${enq.extMarks || (enq.num === 5 ? 20 : 12)}</strong></span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.2pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.2pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || (enq.num === 5 ? 34 : 26)}</strong></span></td>
-            </tr>`,
+
+              <!-- Enquiry & Homework Passport -->
+              <td style="padding: 5px 8px; border-right: 1.5px solid #000000; vertical-align: top;">
+                <div style="display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
+                  <div>
+                    <div style="font-weight: 900; color: #000; font-size: 9.2pt; line-height: 1.25;">${enq.code || `KT${keyTopicNum}.${enq.num}`}: ${enq.title}</div>
+                    ${enq.enquiryQuestion ? `<div style="font-size: 7.8pt; color: #334155; font-style: italic; margin-top: 2px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                  </div>
+                  
+                  <!-- Open Parental Passport Section (Enlarged Typography, Generous Pen Space, No Middle Void) -->
+                  <div style="border-top: 1.2px dashed #94a3b8; padding-top: 4px; margin-top: 4px; flex: 1; display: flex; flex-direction: column; justify-content: space-around;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 7.8pt; font-family: 'Inter', sans-serif; font-weight: 800; color: #000000; white-space: nowrap;">
+                      <span style="white-space: nowrap;"><span style="font-size: 9.0pt;">&#9633;</span> <strong>Read Aloud / Audio Tracked</strong></span>
+                      <span style="white-space: nowrap; margin-left: 8px;"><strong>10-Q Online Quiz Score:</strong> <span style="display: inline-block; border-bottom: 1.5px solid #000000; width: 14mm; margin: 0 4px;">&nbsp;</span><strong style="font-size: 9.5pt;">/ 10</strong></span>
+                    </div>
+                    <div style="display: flex; align-items: flex-end; font-size: 8.0pt; font-family: 'Inter', sans-serif; font-weight: 900; color: #000000;">
+                      <span style="white-space: nowrap; margin-right: 6px;">Parent / Carer Signature:</span>
+                      <div style="flex: 1; border-bottom: 1.5px solid #000000; height: 18px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <!-- In-Class Do Now -->
+              <td style="padding: 4px 2px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 20mm; white-space: nowrap;">
+                <div style="font-size: 7.2pt; font-weight: 900; text-transform: uppercase; color: #000000; margin-bottom: 3px;">KT ${keyTopicNum}.${enq.num} Recall</div>
+                <span style="font-size: 10.0pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.5px solid #000; width: 12mm; margin-right: 2px;">&nbsp;</span><strong>/ 10</strong></span>
+              </td>
+
+              <!-- In-Class Sim/Diff -->
+              <td style="padding: 4px 2px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 18mm; white-space: nowrap;">
+                <span style="font-size: 9.2pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ 4</strong></span>
+              </td>
+
+              <!-- In-Class Extended Task -->
+              <td style="padding: 4px 2px; text-align: center; vertical-align: middle; width: 24mm; white-space: nowrap;">
+                <div style="font-size: 6.8pt; font-weight: 800; color: #475569; margin-bottom: 2px;">${enq.extType || (enq.num === 5 ? 'Q5/6 Essay' : 'Q4 Explain')}</div>
+                <span style="font-size: 9.2pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || (enq.num === 5 ? 20 : 12)}</strong></span>
+              </td>
+            </tr>`;
+        },
       )
       .join('\n');
   } else if (isEEE) {
@@ -936,16 +1043,17 @@ function renderStandardBackCover({
       .map(
         (enq) => `
             <tr style="border-bottom: 1px solid #000000;">
-              <td style="padding: 8px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 10.0pt;">${enq.num}</td>
-              <td style="padding: 8px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 10.0pt;">${enq.num}</td>
+              <td style="padding: 6px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
                 <div style="font-weight: 800; color: #000; font-size: 9.0pt;">${enq.code || `KT${keyTopicNum}.${enq.num}`}: ${enq.title}</div>
-                ${enq.enquiryQuestion ? `<div style="font-size: 7.4pt; color: #475569; font-style: italic; margin-top: 2px; line-height: 1.25;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${enq.enquiryQuestion ? `<div style="font-size: 7.2pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${renderHwPassportStrip()}
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.doNowMarks || 10}</strong></span></td>
-              <td style="padding: 8px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.q1aMarks || 2}</strong></span></td>
-              <td style="padding: 8px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.q1bMarks || 2}</strong></span></td>
-              <td style="padding: 8px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.6pt;"><span style="font-size: 8.8pt; font-weight: 800;">${enq.extType || (enq.extMarks === 20 ? 'Q3 Essay' : 'Q2 Explain')}: &nbsp;&nbsp;<strong>/ ${enq.extMarks || 12}</strong></span></td>
-              <td style="padding: 8px 6px; text-align: center; font-size: 10.2pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.2pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || (enq.extMarks === 20 ? 34 : 26)}</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 11mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1aMarks || 2}</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1bMarks || 2}</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.6pt;"><span style="font-size: 8.8pt; font-weight: 800;">${enq.extType || (enq.extMarks === 20 ? 'Q3 Essay' : 'Q2 Explain')}: <span style="display: inline-block; border-bottom: 1.2px solid #000; width: 10mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || 12}</strong></span></td>
+              <td style="padding: 6px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 12mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.totalMarks || (enq.extMarks === 20 ? 34 : 26)}</strong></span></td>
             </tr>`,
       )
       .join('\n');
@@ -957,11 +1065,12 @@ function renderStandardBackCover({
               <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">${enq.num}</td>
               <td style="padding: 4px 10px; border-right: 1px solid #000000; font-size: 8.6pt; line-height: 1.25;">
                 <div style="font-weight: 800; color: #000; font-size: 8.8pt;">${enq.code || `Enquiry ${enq.num}`}: ${enq.title}</div>
-                ${enq.enquiryQuestion ? `<div style="font-size: 7.2pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${enq.enquiryQuestion ? `<div style="font-size: 7.0pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.18;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${renderHwPassportStrip()}
               </td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.doNowMarks || 10}</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;"><span style="font-size: 8.6pt; font-weight: 800;">${enq.extType || 'Task'}: &nbsp;&nbsp;<strong>/ ${enq.extMarks || 8}</strong></span></td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 9.8pt; font-weight: 900; background: #fafafa;"><span style="font-size: 9.8pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || ((enq.doNowMarks || 10) + (enq.extMarks || 8))}</strong></span></td>
+              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.0pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 11mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span></td>
+              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;"><span style="font-size: 8.6pt; font-weight: 800;">${enq.extType || 'Task'}: <span style="display: inline-block; border-bottom: 1.2px solid #000; width: 10mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || 8}</strong></span></td>
+              <td style="padding: 4px 6px; text-align: center; font-size: 9.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 9.5pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 11mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.totalMarks || ((enq.doNowMarks || 10) + (enq.extMarks || 8))}</strong></span></td>
             </tr>`,
       )
       .join('\n');
@@ -970,16 +1079,17 @@ function renderStandardBackCover({
       .map(
         (enq) => `
             <tr style="border-bottom: 1px solid #000000;">
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">${enq.num}</td>
-              <td style="padding: 6px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">${enq.num}</td>
+              <td style="padding: 5px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
                 <div style="font-weight: 800; color: #000; font-size: 9.0pt;">${enq.code || `KT${keyTopicNum}.${enq.num}`}: ${enq.title}</div>
-                ${enq.enquiryQuestion ? `<div style="font-size: 7.4pt; color: #475569; font-style: italic; margin-top: 2px; line-height: 1.25;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${enq.enquiryQuestion ? `<div style="font-size: 7.2pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${renderHwPassportStrip()}
               </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.doNowMarks || 10}</strong></span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.q1aMarks || 4}</strong></span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.q1bMarks || 4}</strong></span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.6pt;"><span style="font-size: 8.8pt; font-weight: 800;">${enq.extType || 'Q2'}: &nbsp;&nbsp;<strong>/ ${enq.extMarks || 8}</strong></span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.2pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.2pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || 26}</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 11mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1aMarks || 4}</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1bMarks || 4}</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.6pt;"><span style="font-size: 8.8pt; font-weight: 800;">${enq.extType || 'Q2'}: <span style="display: inline-block; border-bottom: 1.2px solid #000; width: 10mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || 8}</strong></span></td>
+              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 12mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.totalMarks || 26}</strong></span></td>
             </tr>`,
       )
       .join('\n');
@@ -1000,7 +1110,7 @@ function renderStandardBackCover({
               Scan to Quiz
             </div>
             <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">
-              Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong>
+              Quiz: <span style="display: inline-block; border-bottom: 1.2px solid #000000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ 10</strong>
             </div>
           </div>`;
     })
@@ -1023,46 +1133,25 @@ function renderStandardBackCover({
   <div class="page page-container verso-page" id="page-${totalPageCount}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
       
-      <!-- Top Departmental Header Bar -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 3px;" data-department-name="The History Department">
+      <!-- Top Departmental Header Bar (Clean Single-Line Standard) -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 5px;" data-department-name="The History Department">
         <div style="display: flex; justify-content: space-between; align-items: baseline;">
-          <span class="school-brand-target" style="font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; letter-spacing: 2px; text-transform: uppercase;">The History Department</span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;">GCSE History Revision Hub &bull; Pupil Assessment Record</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1px; border-top: 1px solid #000; padding-top: 2px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #222;">${paperTitle}</span>
-        </div>
-      </div>
-
-      <!-- Header Block -->
-      <div style="text-align: center; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.5pt; margin: 0 0 1px 0; font-weight: 900; text-transform: uppercase;">
-          ${trackerTitle}
-        </h2>
-        <div style="font-family: 'Inter', sans-serif; font-size: 7.6pt; color: #222222; font-weight: 700; letter-spacing: 0.5px;">
-          ${trackerSubtitle}
+          <span class="school-brand-target" style="font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;">The History Department</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #000000;">
+            GCSE Assessment &amp; Homework Passport
+          </span>
         </div>
       </div>
 
       <!-- Target Grade & Pupil Information Strip -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 6px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 12px; align-items: center; margin-bottom: 3px;">
-        <div>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase;">Pupil:</span>
-          <div style="border-bottom: 1.5px solid #000000; height: 16px; margin-top: 1px;"></div>
+      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5px 12px; background: #ffffff; display: grid; grid-template-columns: 3fr 1fr; gap: 16px; align-items: center; margin-bottom: 4px;">
+        <div style="display: flex; align-items: baseline; gap: 8px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; text-transform: uppercase;">Pupil Name:</span>
+          <div style="border-bottom: 1.5px solid #000000; flex: 1; height: 16px;"></div>
         </div>
-        <div style="text-align: center;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase;">Target Grade:</span>
-          <div style="border: 1.5px solid #000000; border-radius: 3px; width: 36px; height: 22px; margin: 1px auto 0 auto; font-family: 'Inter', sans-serif; font-size: 10.5pt; font-weight: 900; line-height: 20px;"></div>
-        </div>
-        <div style="text-align: center;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase;">Predicted:</span>
-          <div style="border: 1.5px solid #000000; border-radius: 3px; width: 36px; height: 22px; margin: 1px auto 0 auto; font-family: 'Inter', sans-serif; font-size: 10.5pt; font-weight: 900; line-height: 20px;"></div>
-        </div>
-        <div style="text-align: center;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase;">Attitude:</span>
-          <div style="font-family: 'Inter', sans-serif; font-size: 9.0pt; font-weight: 800; margin-top: 3px;">
-            1 &bull; 2 &bull; 3 &bull; 4 &bull; 5
-          </div>
+        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; text-transform: uppercase;">Target Grade:</span>
+          <div style="border: 1.5px solid #000000; border-radius: 3px; width: 34px; height: 22px; font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; line-height: 20px; text-align: center;"></div>
         </div>
       </div>
 
@@ -1094,12 +1183,19 @@ function renderStandardBackCover({
                 : isMedicineThematic
                 ? `
             <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 8.0mm;">
-              <th style="padding: 3px 4px; width: 26px; text-align: center; font-size: 8.5pt; font-weight: 900; border-right: 1px solid #000000;">#</th>
-              <th style="padding: 3px 10px; text-align: left; font-size: 8.2pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Enquiry / Specification Focus</th>
-              <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Do Now (10m)</th>
-              <th style="padding: 3px 4px; width: 88px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q3 Sim/Diff (4m)</th>
-              <th style="padding: 3px 4px; width: 110px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q4/5 Extended</th>
-              <th style="padding: 3px 6px; width: 88px; text-align: center; font-size: 8.5pt; font-weight: 900; text-transform: uppercase;">Lesson Total</th>
+              <th style="padding: 3px 2px; width: 23mm; text-align: center; font-size: 7.8pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">HW Dates &amp; QR</th>
+              <th style="padding: 2px 8px; text-align: left; border-right: 1.5px solid #000000;">
+                <div style="font-size: 8.0pt; font-weight: 900; text-transform: uppercase; line-height: 1.15;">Enquiry Focus &amp; Parental Homework Verification</div>
+                <div style="font-size: 5.8pt; font-weight: 700; text-transform: none; color: #475569; letter-spacing: 0; line-height: 1.10; margin-top: 1px;">
+                  1. Scan QR to read aloud / track audio narration &bull; 2. Complete 10-Q online quiz &bull; 3. Parent verifies &amp; signs
+                </div>
+              </th>
+              <th style="padding: 2px 2px; width: 20mm; text-align: center; border-right: 1.5px solid #000000;">
+                <div style="font-size: 7.8pt; font-weight: 900; text-transform: uppercase; line-height: 1.15;">Do Now (10m)</div>
+                <div style="font-size: 5.6pt; font-weight: 700; text-transform: none; color: #475569; letter-spacing: 0; line-height: 1.05; margin-top: 1px;">Topic Recall</div>
+              </th>
+              <th style="padding: 3px 2px; width: 18mm; text-align: center; font-size: 7.8pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">Q3 Sim/Diff</th>
+              <th style="padding: 3px 2px; width: 24mm; text-align: center; font-size: 7.8pt; font-weight: 900; text-transform: uppercase;">Q4/5 Extended</th>
             </tr>`
                 : isEEE
                 ? `
@@ -1143,115 +1239,11 @@ function renderStandardBackCover({
           </thead>
           <tbody>
             ${enquiriesRowsHtml}
-            ${
-              isWeimar
-                ? `
-            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 8.0mm;">
-              <td colspan="2" style="padding: 4px 10px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.4pt; letter-spacing: 0.5px;">Key Topic ${keyTopicNum} Cumulative Assessment Totals</td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 40</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Q1 Infer: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 16</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Q2 Cause: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 48</strong></span></td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000; white-space: nowrap;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 140</strong></span></td>
-            </tr>`
-                : isWesternFront
-                ? `
-            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 7.5mm;">
-              <td colspan="2" style="padding: 3px 8px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.2pt; letter-spacing: 0.5px;">Key Topic 5 Cumulative Assessment Totals</td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Do Now: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 60</strong></span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1 Feat: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 24</strong></span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q2 Enq: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 36</strong></span></td>
-              <td style="padding: 3px 4px; text-align: center; font-size: 10.2pt; font-weight: 900; background: #ffffff; color: #000000; white-space: nowrap;"><span style="font-size: 10.2pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 120</strong></span></td>
-            </tr>`
-                : isMedicineThematic
-                ? `
-            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 8.0mm;">
-              <td colspan="2" style="padding: 4px 10px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.4pt; letter-spacing: 0.5px;">Key Topic ${keyTopicNum} Cumulative Assessment Totals</td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 50</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Q3: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 20</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Ext: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 68</strong></span></td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 138</strong></td>
-            </tr>`
-                : isEEE
-                ? `
-            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 8.0mm;">
-              <td colspan="2" style="padding: 4px 10px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.4pt; letter-spacing: 0.5px;">Key Topic ${keyTopicNum} Cumulative Assessment Totals</td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ ${totalStarter}</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Q1(a): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ ${totalQ1a}</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Q1(b): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ ${totalQ1b}</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Ext: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ ${totalExt}</strong></span></td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${grandTotal}</strong></span></td>
-            </tr>`
-                : isColdWar
-                ? `
-            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 8.0mm;">
-              <td colspan="2" style="padding: 4px 10px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.4pt; letter-spacing: 0.5px;">Unit Cumulative Assessment Totals</td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 70</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Tasks: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 68</strong></span></td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 138</strong></span></td>
-            </tr>`
-                : `
-            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 8.0mm;">
-              <td colspan="2" style="padding: 4px 10px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.4pt; letter-spacing: 0.5px;">Key Topic ${keyTopicNum} Cumulative Assessment Totals</td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalStarter}</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Q1(a): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalQ1a}</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Q1(b): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalQ1b}</strong></span></td>
-              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Ext: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalExt}</strong></span></td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${grandTotal}</strong></td>
-            </tr>`
-            }
           </tbody>
         </table>
       </div>
 
-      <!-- Teacher Formative Assessment & Action Targets (Fixed-Pitch Lines, Clean Full-Width) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 6px 12px; background: #ffffff; margin-bottom: 3px; flex-shrink: 0;">
-        <div style="border-bottom: 1.2px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; color: #000000; letter-spacing: 0.5px;">
-            Teacher Formative Assessment &bull; WWW / EBI Feedback
-          </strong>
-        </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start;">
-          <div>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; text-transform: uppercase; color: #000; display: block; margin-bottom: 2px;">
-              What Went Well (WWW):
-            </span>
-            <div style="border-bottom: 1.2px solid #000; height: 7.5mm;"></div>
-            <div style="border-bottom: 1.2px solid #000; height: 7.5mm;"></div>
-            <div style="border-bottom: 1.2px solid #000; height: 7.5mm;"></div>
-          </div>
-          <div>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; text-transform: uppercase; color: #000; display: block; margin-bottom: 2px;">
-              Even Better If (EBI):
-            </span>
-            <div style="border-bottom: 1.2px solid #000; height: 7.5mm;"></div>
-            <div style="border-bottom: 1.2px solid #000; height: 7.5mm;"></div>
-            <div style="border-bottom: 1.2px solid #000; height: 7.5mm;"></div>
-          </div>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #000000; padding-top: 3px; margin-top: 4px; font-family: 'Inter', sans-serif; font-size: 7.5pt;">
-          <span><strong>Teacher Signature:</strong> ${feedback.signature || '____________________________'}</span>
-          <span><strong>Date:</strong> ${feedback.date || '____________________'}</span>
-        </div>
-      </div>
-
-      ${diagnosticChecklistHtml}
-
-      <!-- Interactive Quizzing & Revision QR Hub (Compact Strip) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 3px 6px; background: #ffffff; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.5pt; text-transform: uppercase; color: #000000; letter-spacing: 0.5px;">
-            📱 Digital Quizzing Hub &bull; 20-Question Practice Quizzes
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.4pt; color: #333333; font-weight: 600;">
-            Scan with smartphone camera to open live interactive 20-question self-marking quizzes
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(${qrLessons.length || 5}, minmax(0, 1fr)); gap: 5px; text-align: center; width: 100%; box-sizing: border-box;">
-          ${qrCardsHtml}
-        </div>
-      </div>
 
       ${footerHtml}
     </div>

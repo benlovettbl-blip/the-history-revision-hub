@@ -48,62 +48,52 @@ function generateQrSvg(url) {
 // ============================================================================
 // 7 Dedicated Shoah Enquiry Configurations (Gold Standard 5-Stage Standard)
 // ============================================================================
+
+const ENQUIRY_SHORT_TITLES = {
+  1: 'Pre-War Diversity & Antisemitism',
+  2: 'Stripping Rights & Kristallnacht',
+  3: 'WWII Outbreak & Ghettoisation',
+  4: 'Barbarossa & Mass Murder',
+  5: 'Final Solution & Resistance',
+  6: 'Complicity, Rescue & Bystanders',
+  7: 'Liberation, Aftermath & Memory'
+};
+
 const enquiryConfigs = [
   {
     lessonNum: 1,
     id: 'lesson_1',
-    title: 'Enquiry 1: Pre-War European Jewish Life & Culture',
+    title: 'Pre-War Diversity & Antisemitism',
     enquiryQuestion: 'Who were the Jews of Europe before the Second World War?',
     specAnchor:
       '9.5 million European Jews; demographic diversity; Yiddishland in Eastern Europe (shtetls, Warsaw, Vilna); Western integration in Berlin & Paris; 100,000 German Jewish WWI soldiers; Sephardic heritage in Thessaloniki; religious anti-Judaism vs modern racial antisemitism.',
     stages: [
-      {
-        step: 1,
-        paraRef: '[1.1]',
-        date: 'c. 1930s',
-        questionHeading: 'What made European Jewish life before 1939 so demographically diverse?',
-        bullets: ['9.5 Million People', 'Over 60% in East', 'Vibrant Regional Life'],
-        focusClue:
-          'Why is it a historical error to imagine pre-war European Jews as a single, uniform community?',
-      },
-      {
-        step: 2,
-        paraRef: '[1.2]',
-        date: 'Pre-1939',
-        questionHeading: 'Why was Eastern Europe renowned as the heartland of Yiddish culture?',
-        bullets: ['Shtetls and Big Cities', 'Yiddish Daily Papers', 'Vilna: Jerusalem of North'],
-        focusClue:
-          'How did towns and cities like Warsaw and Vilna sustain rich literature, theatre, and religious scholarship?',
-      },
-      {
-        step: 3,
-        paraRef: '[1.3]',
-        date: '1871–1933',
-        questionHeading:
-          'How does the First World War service of German Jews disprove Nazi stereotypes?',
-        bullets: ['Full Civic Emancipation', '100,000 WWI Soldiers', '18,000 Iron Crosses'],
-        focusClue:
-          'What does the decorated military service of 100,000 German Jews reveal about their patriotic identity?',
-      },
-      {
-        step: 4,
-        paraRef: '[1.4]',
-        date: 'Centuries–1930s',
-        questionHeading: 'What distinguished the Sephardic Jewish experience in Southern Europe?',
-        bullets: ['Spanish Heritage 1492', 'Ladino Dialect Spoken', 'Thessaloniki Port Closes'],
-        focusClue:
-          'Why was the Greek port city of Thessaloniki historically celebrated as the "Mother of Israel"?',
-      },
-      {
-        step: 5,
-        paraRef: '[1.5]',
-        date: 'Late 19th C.',
-        questionHeading: 'Why was the 19th-century invention of racial antisemitism so deadly?',
-        bullets: ['Medieval Church Hatred', 'Baptism No Escape', 'Biological Blood Theory'],
-        focusClue:
-          'How did pseudo-scientific racial theory transform religious anti-Judaism into biological determinism?',
-      },
-    ],
+        {
+                    "step": 1,
+                    "date": "c. 1930s",
+                    "questionHeading": "Where did most of Europe's 9.5 million Jewish people live before 1939?"
+            },
+            {
+                    "step": 2,
+                    "date": "c. 1930s",
+                    "questionHeading": "What was daily life and culture like in the Jewish towns (shtetls) of Eastern Europe?"
+            },
+            {
+                    "step": 3,
+                    "date": "1871–1933",
+                    "questionHeading": "How did German Jews show their loyalty to Germany during the First World War?"
+            },
+            {
+                    "step": 4,
+                    "date": "c. 1930s",
+                    "questionHeading": "What made the Sephardic Jewish community in Thessaloniki unique?"
+            },
+            {
+                    "step": 5,
+                    "date": "19th–20th C.",
+                    "questionHeading": "Why was Nazi hatred based on 'blood' and race far deadlier than older religious hatred?"
+            }
+      ],
     vocabPrompt:
       'Define <strong>Racial Antisemitism</strong> and explain how it fundamentally differed from medieval Christian anti-Judaism:',
     rightPage: {
@@ -140,63 +130,38 @@ const enquiryConfigs = [
   {
     lessonNum: 2,
     id: 'lesson_2',
-    title: 'Enquiry 2: Nazi Persecution & The Stripping of Rights (1933–1939)',
+    title: 'Stripping Rights & Kristallnacht (1933–1939)',
     enquiryQuestion:
       'How were German Jews progressively stripped of citizenship and rights (1933–1939)?',
     specAnchor:
       '1 April 1933 Boycott; Civil Service Law; 1935 Nuremberg Laws (Reich Citizenship Law, Blood Protection Law); 400 anti-Jewish decrees; Victor Klemperer’s diary ("social death"); November Pogrom (Kristallnacht 1938); Evian Conference; Kindertransport.',
     stages: [
-      {
-        step: 1,
-        paraRef: '[2.1]',
-        date: 'April 1933',
-        questionHeading:
-          'Why did the Nazi state begin persecution with economic boycotts and civil service purges?',
-        bullets: ['SA Picket Windows', 'Jude Smudged in Paint', 'Judges & Teachers Fired'],
-        focusClue:
-          'How did the Law for the Restoration of the Professional Civil Service legally exclude Jews from public institutions?',
-      },
-      {
-        step: 2,
-        paraRef: '[2.2]',
-        date: 'Sept 1935',
-        questionHeading:
-          'How did the 1935 Nuremberg Laws legally codify racial discrimination into German law?',
-        bullets: ['Citizenship Revoked', 'Intermarriage Banned', 'Grandparent Blood Chart'],
-        focusClue:
-          'Why did the Reich Citizenship Law reduce German Jews to second-class "subjects" without political rights?',
-      },
-      {
-        step: 3,
-        paraRef: '[2.3]',
-        date: '1935–1938',
-        questionHeading:
-          'What does Victor Klemperer’s diary reveal about the psychological reality of "social death"?',
-        bullets: ['400 Separate Decrees', 'Yellow Park Benches', 'Friends Look Away'],
-        focusClue:
-          'How did incremental decrees banning Jews from parks, driving, and owning pets systematically isolate them from neighbours?',
-      },
-      {
-        step: 4,
-        paraRef: '[2.4]',
-        date: '9–10 Nov 1938',
-        questionHeading:
-          'Why was the November Pogrom (Kristallnacht) a violent turning point in state policy?',
-        bullets: ['1,400 Synagogues Burned', '30,000 Men to Camps', '1 Billion Mark Fine'],
-        focusClue:
-          'What does the instruction to fire brigades to protect only "Aryan" buildings reveal about the collapse of the rule of law?',
-      },
-      {
-        step: 5,
-        paraRef: '[2.5]',
-        date: '1938–1939',
-        questionHeading:
-          'Why did the Evian Conference fail to resolve the desperate Jewish refugee crisis?',
-        bullets: ['32 Nations Meet', 'Closed Global Borders', '10,000 Children Rescued'],
-        focusClue:
-          'How did the failure of international nations to open immigration quotas leave hundreds of thousands of Jews trapped?',
-      },
-    ],
+        {
+                    "step": 1,
+                    "date": "1933–1934",
+                    "questionHeading": "Why did the Nazis start their persecution by boycotting Jewish shops and firing workers?"
+            },
+            {
+                    "step": 2,
+                    "date": "1935–1936",
+                    "questionHeading": "How did the 1935 Nuremberg Laws take away German citizenship from Jewish people?"
+            },
+            {
+                    "step": 3,
+                    "date": "1935–1938",
+                    "questionHeading": "How did daily Nazi bans and rules cut Jewish people off from their neighbours?"
+            },
+            {
+                    "step": 4,
+                    "date": "Nov 1938",
+                    "questionHeading": "Why was the violence of Kristallnacht (the November Pogrom) a major turning point?"
+            },
+            {
+                    "step": 5,
+                    "date": "1938–1939",
+                    "questionHeading": "What was the Kindertransport, and why were borders closed to adult Jewish refugees?"
+            }
+      ],
     vocabPrompt:
       'Define <strong>Social Death</strong> and explain how bureaucratic decrees and the Nuremberg Laws enforced it between 1933 and 1939:',
     rightPage: {
@@ -225,81 +190,51 @@ const enquiryConfigs = [
   {
     lessonNum: 3,
     id: 'lesson_3',
-    title: 'Enquiry 3: War, Forced Segregation & The Warsaw Ghetto (1939–1941)',
+    title: 'WWII Outbreak & Ghettoisation (1939–1941)',
     enquiryQuestion: 'How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?',
     specAnchor:
       'Invasion of Poland (1 Sept 1939); Heydrich’s Schnellbrief; Star of David armbands; forced labour; Warsaw Ghetto established (Nov 1940); 450,000 crammed into 1.3 sq miles; 180–220 calories/day; typhus epidemics; child food smugglers; Emanuel Ringelblum & Oneg Shabbat archive.',
     stages: [
-      {
-        step: 1,
-        paraRef: '[3.1]',
-        date: 'Sept 1939',
-        questionHeading:
-          'How did the conquest of Poland fundamentally expand the scale of Nazi persecution?',
-        bullets: ['2 Million Polish Jews', 'Heydrich’s Schnellbrief', 'Rail Hub Concentration'],
-        focusClue:
-          'Why did capturing Poland force the Nazi leadership to abandon voluntary emigration in favour of forced concentration?',
-      },
-      {
-        step: 2,
-        paraRef: '[3.2]',
-        date: 'Autumn 1939',
-        questionHeading:
-          'Why was the mandatory Star of David armband such a devastating psychological weapon?',
-        bullets: ['Marked for Humiliation', 'Forced Labour Gangs', 'Businesses Confiscated'],
-        focusClue:
-          'How did public stigmatisation and slave labour battalions prepare the ground for total physical segregation?',
-      },
-      {
-        step: 3,
-        paraRef: '[3.3]',
-        date: '1940–1941',
-        questionHeading:
-          'What physical and demographic conditions defined life inside the sealed Warsaw Ghetto?',
-        bullets: ['3-Metre Brick Wall', '450,000 Imprisoned', '7–9 People Per Room'],
-        focusClue:
-          'Why did cramming 30% of Warsaw’s population into 2.4% of its urban space create immediate humanitarian collapse?',
-      },
-      {
-        step: 4,
-        paraRef: '[3.4]',
-        date: '1940–1942',
-        questionHeading:
-          'How did Nazi food administrators use caloric rationing as a tool of slow mass murder?',
-        bullets: ['180–220 Calories a Day', '80,000 Dead of Hunger', 'Brave Child Smugglers'],
-        focusClue:
-          'Why were small children the indispensable lifeline preventing the immediate starvation of the entire ghetto?',
-      },
-      {
-        step: 5,
-        paraRef: '[3.5]',
-        date: '1940–1943',
-        questionHeading:
-          'Why was Emanuel Ringelblum’s Oneg Shabbat archive an act of extraordinary spiritual resistance?',
-        bullets: ['Underground Historians', 'Buried in Milk Cans', 'Truth Outliving Terror'],
-        focusClue:
-          'How did secretly collecting diaries, songs, and death records defeat the Nazi attempt to erase their victims from history?',
-      },
-    ],
+        {
+                    "step": 1,
+                    "date": "Sept 1939",
+                    "questionHeading": "How did the invasion of Poland bring two million more Jewish people under Nazi rule?"
+            },
+            {
+                    "step": 2,
+                    "date": "1939–1940",
+                    "questionHeading": "Why did the Nazis force Jewish people to wear the Yellow Star badge and do slave labour?"
+            },
+            {
+                    "step": 3,
+                    "date": "1940–1941",
+                    "questionHeading": "How were the Warsaw and Łódź ghettos created, and how were they cut off from the world?"
+            },
+            {
+                    "step": 4,
+                    "date": "1940–1942",
+                    "questionHeading": "What hardships did families face inside the ghettos, and how did children smuggle food?"
+            },
+            {
+                    "step": 5,
+                    "date": "1940–1943",
+                    "questionHeading": "How did Emanuel Ringelblum and the Oneg Shabbat archive secretly preserve the truth?"
+            }
+      ],
     vocabPrompt:
       'Define <strong>Spiritual Resistance</strong> and explain how Emanuel Ringelblum’s Oneg Shabbat archive preserved human dignity:',
     rightPage: {
       type: 'source_utility_8',
       tariff: 'Question 3: Source Utility [8 marks • 12 mins]',
-      badge: 'SOURCE UTILITY',
+      badge: 'FORENSIC SOURCE EVALUATION',
       question:
-        'How useful is Source A for an enquiry into the living conditions and physical confinement of Jews in the Warsaw Ghetto? [8 marks]',
-      sourceCaption:
-        'Source A: An extract from the diary of 16-year-old Mary Berg, written inside the Warsaw Ghetto, January 1941.',
-      sourceText:
-        '"The brick wall around the ghetto grows taller every day. It cuts us off completely from the world. Outside, streetcars clang and people walk freely in the sunshine; inside, children in rags freeze on the pavements with swollen bellies, crying for a crust of bread. We have organized secret classes in the cellar. We study history and literature by candlelight, defying the guards who patrol the gates. Even if they starve our bodies, they cannot extinguish our minds."',
-      stems:
-        'Source A is useful because of its content, which reveals that... • In particular, it shows that living conditions were... • Furthermore, the provenance makes it valuable because it was written by... • However, a historian must also consider its limitations, such as...',
-      wordBank:
-        'Warsaw Ghetto wall • 180 calories • starvation • typhus • child smugglers • Mary Berg • Oneg Shabbat • Emanuel Ringelblum • milk cans',
-      timelineMissionTitle: 'Timeline Task • pp. 10–11',
-      timelineMission:
-        '<strong>Milestones 4 &amp; 5 (1939–1942):</strong> Choose <strong>(A) Creative Sketch:</strong> Illustrate life and defiance behind the walls — e.g. a child smuggling a loaf of bread through a hole in a 10ft brick wall, or a sealed metal milk can buried beneath cobblestones hiding secret diaries &bull; OR &bull; <strong>(B) Mind Map:</strong> "The Warsaw Ghetto" (Walls, Starvation, Oneg Shabbat)',
+        'Study Sources A and B on the digital portal. How useful are Sources A and B for an enquiry into living conditions and physical confinement in the Warsaw Ghetto? Explain your answer using Sources A and B and your knowledge of the historical context. [8 marks]',
+      sourceA_badge: 'SOURCE A (WRITTEN DIARY EXTRACT)',
+      sourceA_caption:
+        'Extract from the secret diary of 16-year-old Mary Berg inside the Warsaw Ghetto (January 1941), describing brick walls, starvation rations, and secret underground classes.',
+      sourceB_badge: 'SOURCE B (ARCHIVAL RECORD & TESTAMENT)',
+      sourceB_caption:
+        'Underground report from Emanuel Ringelblum’s Oneg Shabbat archive buried in aluminium milk cans beneath the ghetto rubble (1942), documenting child food smugglers and typhus mortality.',
     },
     leftPageQuip:
       'Official rations in the Warsaw Ghetto provided only 180 calories per day; over 80,000 people died of hunger and disease before deportations began.',
@@ -309,94 +244,51 @@ const enquiryConfigs = [
   {
     lessonNum: 4,
     id: 'lesson_4',
-    title: 'Enquiry 4: Operation Barbarossa & The Holocaust by Bullets (1941–1942)',
+    title: 'Barbarossa & The Holocaust by Bullets (1941–1942)',
     enquiryQuestion: 'How and why did persecution turn into systematic mass murder (1941–1942)?',
     specAnchor:
       'Operation Barbarossa (22 June 1941); war of extermination (Vernichtungskrieg); Commissar Order; Einsatzgruppen (A, B, C, D); Order Police (Reserve Police Battalion 101); Babi Yar ravine massacre (33,771 murdered in 36 hours); Ponary forest; local collaboration in Baltics/Ukraine; perpetrator psychological strain; gas vans at Chełmno.',
     stages: [
-      {
-        step: 1,
-        paraRef: '[4.1]',
-        date: '22 June 1941',
-        questionHeading:
-          'Why did the invasion of the Soviet Union mark a fundamental shift to ideological total war?',
-        bullets: ['Operation Barbarossa', 'Commissar Order Issued', 'Judeo-Bolshevism Myth'],
-        focusClue:
-          'How did Hitler’s framing of the invasion as a biological war of annihilation remove all military rules of warfare?',
-      },
-      {
-        step: 2,
-        paraRef: '[4.2]',
-        date: 'Summer 1941',
-        questionHeading:
-          'How did the Einsatzgruppen’s killing mandate expand from officials to entire communities?',
-        bullets: ['4 SS Killing Squads', 'Order Police Battalions', 'Women & Children Shot'],
-        focusClue:
-          'Why did inspection visits by Heinrich Himmler in July–August 1941 trigger total slaughter of all Jewish families?',
-      },
-      {
-        step: 3,
-        paraRef: '[4.3]',
-        date: '29–30 Sept 1941',
-        questionHeading:
-          'What made the mass execution at Babi Yar such an unprecedented manifestation of murder?',
-        bullets: ['Ravine Outside Kyiv', '33,771 Shot in 36 Hours', 'Clinical Berlin Reports'],
-        focusClue:
-          'How was the deception of "resettlement" used to march tens of thousands of people into a ravine to be shot face-to-face?',
-      },
-      {
-        step: 4,
-        paraRef: '[4.4]',
-        date: '1941–1942',
-        questionHeading:
-          'What role did local auxiliary police play in massacres across Lithuania, Latvia, and Ukraine?',
-        bullets: ['Ponary Forest Pits', '90% of Lithuanians Dead', 'Auxiliary Collaboration'],
-        focusClue:
-          'Why was the participation of local nationalist volunteers crucial to the speed and totality of the mass shootings?',
-      },
-      {
-        step: 5,
-        paraRef: '[4.5]',
-        date: 'Late 1941',
-        questionHeading:
-          'Why did the psychological strain on executioners drive the transition toward industrial gas vans?',
-        bullets: ['Himmler Sick at Minsk', 'Shooter Nervous Breakdowns', 'Chełmno Exhaust Vans'],
-        focusClue:
-          'How did concern for the emotional health of German executioners accelerate the development of mechanical gas chambers?',
-      },
-    ],
+        {
+                    "step": 1,
+                    "date": "June 1941",
+                    "questionHeading": "Why was the German invasion of the Soviet Union treated as a war of total destruction?"
+            },
+            {
+                    "step": 2,
+                    "date": "Summer 1941",
+                    "questionHeading": "How did the Einsatzgruppen mobile death squads carry out the 'Holocaust by Bullets'?"
+            },
+            {
+                    "step": 3,
+                    "date": "Sept 1941",
+                    "questionHeading": "What happened during the mass shooting at Babi Yar ravine outside Kyiv?"
+            },
+            {
+                    "step": 4,
+                    "date": "Autumn 1941",
+                    "questionHeading": "How did local helpers in the Baltic states and Ukraine assist Nazi death squads?"
+            },
+            {
+                    "step": 5,
+                    "date": "Late 1941",
+                    "questionHeading": "Why did Nazi leaders switch from face-to-face shootings to using poison gas vans at Chełmno?"
+            }
+      ],
     vocabPrompt:
       'Define <strong>The Holocaust by Bullets</strong> and explain why Operation Barbarossa was the decisive turning point into total genocide:',
     rightPage: {
-      type: 'single_12',
-      tariff: 'Question 4: Evaluative Statement Essay [12 marks • 15 mins]',
-      examStem:
-        '‘The invasion of the Soviet Union in June 1941 was the main turning point in the development of the Holocaust.’ How far do you agree? [12 marks]',
-      stimulus: [
-        'The invasion of the Soviet Union and the Einsatzgruppen mass shootings (1941)',
-        'The enactment of the Nuremberg Laws and Kristallnacht (1935–1938)',
-      ],
-      structureStrip: [
-        {
-          col: '1. OPERATION BARBAROSSA (1941)',
-          text: 'Explain how the invasion of the USSR transformed policy from segregation to systematic mass murder (Babi Yar, Ponary, 1.5m shot).',
-        },
-        {
-          col: '2. PRE-1941 LEGAL PERSECUTION',
-          text: 'Explain the counter-argument: that the 1935 Nuremberg Laws and Kristallnacht created the legal and moral climate that made murder possible.',
-        },
-        {
-          col: '3. COMPARATIVE VERDICT',
-          text: 'Weigh whether the transition to actual physical extermination in June 1941 represented the decisive, irrevocable watershed.',
-        },
-      ],
-      connectives:
-        'To a large extent, it can be argued that... • On the one hand, Operation Barbarossa was decisive because... • In particular, this meant that... • On the other hand, an alternative view is that... • In conclusion, the primary turning point was... because...',
-      wordBank:
-        'Operation Barbarossa • Vernichtungskrieg • Einsatzgruppen • Babi Yar (33,771 dead) • Ponary • Christopher Browning • Ordinary Men • Chełmno gas vans',
-      timelineMissionTitle: 'Timeline Task • pp. 10–11',
-      timelineMission:
-        '<strong>Milestone 6 (1941):</strong> Choose <strong>(A) Creative Sketch:</strong> Depict the brutal turning point of 1941 — e.g. a lightning-bolt invasion arrow cutting across the Soviet border, or a single memorial candle burning at the edge of the dark Babi Yar ravine &bull; OR &bull; <strong>(B) Mind Map:</strong> "Holocaust by Bullets" (Barbarossa, Einsatzgruppen, Babi Yar)',
+      type: 'interpretations_8',
+      tariff: 'Question 4: Historical Interpretations [8 marks • 12 mins]',
+      badge: 'HISTORIOGRAPHICAL DEBATE',
+      question:
+        'Study Interpretations 1 and 2 on the digital portal. How do Interpretations 1 and 2 differ about why ordinary German policemen participated in mass shootings during the Holocaust? Explain your answer using both interpretations and your own knowledge. [8 marks]',
+      interpretation1_badge: 'INTERPRETATION 1 (SITUATIONAL / PEER PRESSURE)',
+      interpretation1_caption:
+        'Historian Christopher Browning, Ordinary Men (1992), arguing that group conformity, situational peer pressure, and fear of isolation drove ordinary reservists in Battalion 101 to shoot.',
+      interpretation2_badge: 'INTERPRETATION 2 (CULTURAL / IDEOLOGICAL MOTIVE)',
+      interpretation2_caption:
+        'Historian Daniel Goldhagen, Hitler’s Willing Executioners (1996), arguing that deeply rooted "eliminationist antisemitism" in German culture led ordinary men to kill eagerly and willingly.',
     },
     leftPageQuip:
       'Over 1.5 million Jewish people were murdered in open pits and ravines during the "Holocaust by Bullets" before death camps were built.',
@@ -406,62 +298,37 @@ const enquiryConfigs = [
   {
     lessonNum: 5,
     id: 'lesson_5',
-    title: 'Enquiry 5: The "Final Solution" & Armed Resistance (1942–1944)',
+    title: 'The "Final Solution" & Armed Resistance (1942–1944)',
     enquiryQuestion: 'How did the "Final Solution" operate, and how did Jews resist?',
     specAnchor:
       'Wannsee Conference (20 Jan 1942); Reinhard Heydrich & Adolf Eichmann; coordination of state ministries; Operation Reinhard death camps (Bełżec, Sobibór, Treblinka); carbon monoxide chambers; Auschwitz-Birkenau dual function; Zyklon B; ramp selection; Warsaw Ghetto Uprising (April 1943); Mordechai Anielewicz & ŻOB; Treblinka & Sobibór camp revolts; Sonderkommando revolt (Oct 1944).',
     stages: [
-      {
-        step: 1,
-        paraRef: '[5.1]',
-        date: '20 Jan 1942',
-        questionHeading:
-          'Why was the Wannsee Conference a meeting of bureaucratic coordination rather than policy creation?',
-        bullets: ['15 Senior Civil Servants', 'Eichmann’s 11 Million List', 'Railway Cooperation'],
-        focusClue:
-          'How did the Wannsee Conference bind government ministries and the state railway into the mechanics of extermination?',
-      },
-      {
-        step: 2,
-        paraRef: '[5.2]',
-        date: '1942–1943',
-        questionHeading:
-          'What made the three Operation Reinhard camps fundamentally distinct from concentration camps?',
-        bullets: ['Bełżec, Sobibór, Treblinka', 'Zero Selection for Labour', 'Dead Within 2 Hours'],
-        focusClue:
-          'Why were Bełżec, Sobibór, and Treblinka designed purely as industrial assembly lines of immediate human extermination?',
-      },
-      {
-        step: 3,
-        paraRef: '[5.3]',
-        date: '1942–1944',
-        questionHeading:
-          'How did the dual function of Auschwitz-Birkenau combine slave labour with industrial murder?',
-        bullets: ['Railway Ramp Selection', 'Zyklon B in Ceiling Vents', '1.1 Million Murdered'],
-        focusClue:
-          'How did SS doctors decide who lived temporarily as industrial slaves and who was sent immediately to the gas chambers?',
-      },
-      {
-        step: 4,
-        paraRef: '[5.4]',
-        date: 'April–May 1943',
-        questionHeading:
-          'Why was the Warsaw Ghetto Uprising a monumental triumph of human courage and dignity?',
-        bullets: ['ŻOB & Anielewicz', 'Pistols vs German Tanks', '27 Days of Defiance'],
-        focusClue:
-          'Why did young Jewish fighters choose to die fighting in the ruins of Warsaw rather than perish silently in Treblinka?',
-      },
-      {
-        step: 5,
-        paraRef: '[5.5]',
-        date: '1943–1944',
-        questionHeading:
-          'How do armed uprisings inside the death camps disprove the myth of passive Jewish victimhood?',
-        bullets: ['Treblinka Armoury Raid', 'Sobibór Mass Breakout', 'Crematorium IV Blown Up'],
-        focusClue:
-          'How did prisoners at Treblinka, Sobibór, and Auschwitz stage armed revolts under conditions of near-total starvation?',
-      },
-    ],
+        {
+                    "step": 1,
+                    "date": "Jan 1942",
+                    "questionHeading": "What was the purpose of the 1942 Wannsee Conference, and what did leaders coordinate?"
+            },
+            {
+                    "step": 2,
+                    "date": "1942–1943",
+                    "questionHeading": "What made the three Operation Reinhard camps (Belzec, Sobibor, Treblinka) pure death camps?"
+            },
+            {
+                    "step": 3,
+                    "date": "1942–1944",
+                    "questionHeading": "How did Auschwitz-Birkenau combine slave labour with industrial gas chambers?"
+            },
+            {
+                    "step": 4,
+                    "date": "April–May 1943",
+                    "questionHeading": "How did young Jewish fighters resist Nazi forces in the 1943 Warsaw Ghetto Uprising?"
+            },
+            {
+                    "step": 5,
+                    "date": "1943–1944",
+                    "questionHeading": "How did revolts at Treblinka, Sobibór, and Auschwitz prove that prisoners fought back?"
+            }
+      ],
     vocabPrompt:
       'Define <strong>Operation Reinhard</strong> and explain the crucial distinction between a concentration camp and an extermination camp:',
     rightPage: {
@@ -498,93 +365,51 @@ const enquiryConfigs = [
   {
     lessonNum: 6,
     id: 'lesson_6',
-    title: 'Enquiry 6: Responsibility, Complicity & Rescue across Europe',
+    title: 'Responsibility, Complicity & Rescue across Europe',
     enquiryQuestion: 'Who was responsible, who collaborated, and who tried to save?',
     specAnchor:
       'Raul Hilberg’s spectrum (perpetrators, victims, bystanders); German civil service & Deutsche Reichsbahn; European collaboration (Vichy France & Vel’ d’Hiv roundup; Hungarian deportations); bystander indifference & Ian Kershaw; Righteous Among the Nations; rescue of Danish Jewry (Oct 1943); Le Chambon-sur-Lignon; White Rose (Sophie Scholl); Allied knowledge & Jan Karski; bombing Auschwitz debate.',
     stages: [
-      {
-        step: 1,
-        paraRef: '[6.1]',
-        date: '1941–1945',
-        questionHeading:
-          'How did ordinary civil servants and railway schedulers contribute to the machinery of murder?',
-        bullets: [
-          'Desk Murderers (Schreibtischtäter)',
-          'Reichsbahn Train Schedules',
-          'Billing Per Passenger Km',
-        ],
-        focusClue:
-          'Why did modern bureaucratic specialization allow ordinary professionals to organize mass murder without holding a weapon?',
-      },
-      {
-        step: 2,
-        paraRef: '[6.2]',
-        date: '1940–1944',
-        questionHeading:
-          'Why was collaboration by foreign governments like Vichy France and Hungary indispensable?',
-        bullets: ['Vichy Vel’ d’Hiv Arrests', '437,000 Hungarians Deported', 'All-European Crime'],
-        focusClue:
-          'How did local police forces and collaborationist ministries round up Jewish citizens under German occupation?',
-      },
-      {
-        step: 3,
-        paraRef: '[6.3]',
-        date: '1933–1945',
-        questionHeading:
-          'To what extent did passive bystander indifference enable the perpetrators to succeed?',
-        bullets: [
-          'Watching Neighbours Taken',
-          'Stolen Furniture Auctions',
-          'Paved with Indifference',
-        ],
-        focusClue:
-          'What did historian Ian Kershaw mean when he wrote that "the road to Auschwitz was built by hatred, but paved with indifference"?',
-      },
-      {
-        step: 4,
-        paraRef: '[6.4]',
-        date: '1940–1944',
-        questionHeading:
-          'What unique factors enabled the people of Denmark to rescue over 95% of their Jewish population?',
-        bullets: [
-          'Spontaneous Nationwide Effort',
-          '7,200 Ferry by Fishing Boat',
-          'Neutral Sweden Safe',
-        ],
-        focusClue:
-          'How does the Danish rescue prove that collective moral courage could thwart Nazi extermination orders?',
-      },
-      {
-        step: 5,
-        paraRef: '[6.5]',
-        date: '1942–1944',
-        questionHeading:
-          'Why did the Allied powers decide against bombing the railway tracks leading to Auschwitz?',
-        bullets: ['Jan Karski Eyewitness', 'Dec 1942 Allied Warning', 'Prioritising Total War'],
-        focusClue:
-          'Why did British and American military commanders argue that defeating Germany quickly was the only effective rescue strategy?',
-      },
-    ],
+        {
+                    "step": 1,
+                    "date": "1941–1945",
+                    "questionHeading": "How did railway planners, clerks, and civil servants help make the Holocaust happen?"
+            },
+            {
+                    "step": 2,
+                    "date": "1940–1944",
+                    "questionHeading": "How did foreign police and governments (like Vichy France and Hungary) help the Nazis?"
+            },
+            {
+                    "step": 3,
+                    "date": "1940–1945",
+                    "questionHeading": "Why did so many ordinary people across Europe remain silent bystanders?"
+            },
+            {
+                    "step": 4,
+                    "date": "1940–1945",
+                    "questionHeading": "How did rescuers in Denmark and the village of Le Chambon risk their lives to save Jewish people?"
+            },
+            {
+                    "step": 5,
+                    "date": "1942–1944",
+                    "questionHeading": "What did Allied leaders know about the death camps, and why did they not bomb the railway tracks?"
+            }
+      ],
     vocabPrompt:
       'Define <strong>Righteous Among the Nations</strong> and explain the extraordinary moral risk faced by rescuers in occupied Europe:',
     rightPage: {
-      type: 'narrative_8',
-      tariff: 'Question 2: Narrative Account [8 marks • 12 mins]',
-      badge: 'NARRATIVE ACCOUNT',
-      examStem:
-        'Write a narrative account analysing how the international community and Allied powers responded to the Holocaust between 1938 and 1944. [8 marks]',
-      stimulus: [
-        'The failure of the Evian Conference (1938)',
-        'The Allied Joint Declaration on Nazi extermination (December 1942)',
-      ],
-      connectives:
-        'Initially, before the war began... • Following the outbreak of war, detailed intelligence arrived when... • A diplomatic milestone occurred in December 1942 when... • However, in practice... • Consequently, this resulted in...',
-      wordBank:
-        'Evian Conference • Kindertransport • Jan Karski • Joint Declaration (1942) • Bermuda Conference • Auschwitz rail bombing debate • War Refugee Board',
-      timelineMissionTitle: 'Timeline Task • pp. 10–11',
-      timelineMission:
-        '<strong>Milestone 9 (1943):</strong> Choose <strong>(A) Creative Sketch:</strong> Illustrate courage against the odds — e.g. a small wooden fishing boat sailing through dark waves under moonlight to Sweden, or an official passport stamped with a life-saving hand-written visa &bull; OR &bull; <strong>(B) Mind Map:</strong> "Rescue &amp; Resistance" (Danish boats, Sugihara visas, White Rose)',
+      type: 'source_utility_8',
+      tariff: 'Question 6: Source Utility [8 marks • 12 mins]',
+      badge: 'FORENSIC SOURCE EVALUATION',
+      question:
+        'Study Sources C and D on the digital portal. How useful are Sources C and D for an enquiry into the responses of ordinary people and authorities to Nazi persecution and deportations? Explain your answer using Sources C and D and your knowledge of the historical context. [8 marks]',
+      sourceA_badge: 'SOURCE C (EYEWITNESS TESTIMONY & RESCUE)',
+      sourceA_caption:
+        'Eyewitness testimony from a Danish fisherman on the clandestine civilian flotilla across the Øresund to neutral Sweden (October 1943), saving over 7,200 Jewish people.',
+      sourceB_badge: 'SOURCE D (OFFICIAL POLICE CIRCULAR & COMPLICITY)',
+      sourceB_caption:
+        'Secret circular from the Paris Prefecture of Police ordering French municipal officers to arrest and intern 13,000 Jewish families at the Vélodrome d’Hiver (July 1942).',
     },
     leftPageQuip:
       'In occupied Poland, sheltering a Jewish person carried an automatic death penalty for the rescuer and their entire family.',
@@ -594,98 +419,63 @@ const enquiryConfigs = [
   {
     lessonNum: 7,
     id: 'lesson_7',
-    title: 'Enquiry 7: Liberation, Aftermath & The Legacy of Memory (1944–1948)',
+    title: 'Liberation, Aftermath & Legacy of Memory (1944–1948)',
     enquiryQuestion: 'What was lost, and what does survivor testimony teach us?',
     specAnchor:
       'Death marches (winter 1944–45; 250,000 forced west, 70,000 dead); liberation of Auschwitz (27 Jan 1945), Buchenwald, and Bergen-Belsen (15 April 1945; British 11th Armoured Division); Richard Dimbleby BBC broadcast; 250,000 in DP camps; Kielce Pogrom (1946); Windermere Children in UK; Nuremberg Trials (IMT 1945–46); Raphael Lemkin and the UN Genocide Convention (1948); the obliteration of Yiddishland; ethical duty of memory.',
     stages: [
-      {
-        step: 1,
-        paraRef: '[7.1]',
-        date: 'Winter 1944–45',
-        questionHeading:
-          'Why did the SS force 250,000 starving prisoners onto death marches in the final winter of war?',
-        bullets: ['Red Army Closes In', 'Sub-Zero Freezing Roads', '70,000 Shot or Frozen'],
-        focusClue:
-          'Why was the Nazi leadership determined that camp inmates must not be liberated alive to bear witness?',
-      },
-      {
-        step: 2,
-        paraRef: '[7.2]',
-        date: 'Jan–April 1945',
-        questionHeading:
-          'How did the liberation of Bergen-Belsen shatter any remaining doubt about the scale of atrocities?',
-        bullets: [
-          'British 11th Armoured Enters',
-          '60,000 Starving Prisoners',
-          'Dimbleby Weeps on BBC',
-        ],
-        focusClue:
-          'What did British soldiers and journalists confront when they entered Bergen-Belsen on 15 April 1945?',
-      },
-      {
-        step: 3,
-        paraRef: '[7.3]',
-        date: '1945–1948',
-        questionHeading:
-          'Why did post-war trauma and the struggle for British Mandate Palestine keep 250,000 survivors in DP camps?',
-        bullets: ['250,000 in DP Camps', 'SS Exodus 1947 Crisis', 'Zionist Statehood Demand'],
-        focusClue:
-          'How did continued antisemitic violence (Kielce) and British Mandate naval blockades force survivors onto perilous refugee ships like the SS Exodus 1947?',
-      },
-      {
-        step: 4,
-        paraRef: '[7.4]',
-        date: '1945–1948',
-        questionHeading:
-          'How did Raphael Lemkin and the Nuremberg Trials fundamentally transform international law?',
-        bullets: ['Nuremberg Tribunal', 'Crimes Against Humanity', 'UN Genocide Convention'],
-        focusClue:
-          'Why was the legal rejection of "following superior orders" a revolutionary turning point in world jurisprudence?',
-      },
-      {
-        step: 5,
-        paraRef: '[7.5]',
-        date: 'Post-War–Present',
-        questionHeading:
-          'What was permanently lost in the Shoah, and what is our ethical responsibility to history?',
-        bullets: ['6 Million Souls Extinguished', 'Yiddishland Annihilated', 'Never Again Pledge'],
-        focusClue:
-          'As the generation of eyewitness survivors passes away, why is preserving authentic historical testimony an urgent moral duty?',
-      },
-    ],
+        {
+                    "step": 1,
+                    "date": "Winter 1944–45",
+                    "questionHeading": "Why did the SS force starving prisoners onto freezing death marches at the end of the war?"
+            },
+            {
+                    "step": 2,
+                    "date": "Spring 1945",
+                    "questionHeading": "What terrible conditions did British and Allied soldiers find when liberating Bergen-Belsen?"
+            },
+            {
+                    "step": 3,
+                    "date": "1945–1948",
+                    "questionHeading": "What challenges did survivors face in Displaced Persons (DP) camps after liberation?"
+            },
+            {
+                    "step": 4,
+                    "date": "1945–1948",
+                    "questionHeading": "How did the Nuremberg Trials and Raphael Lemkin establish new laws against genocide?"
+            },
+            {
+                    "step": 5,
+                    "date": "Post-1945",
+                    "questionHeading": "What human and cultural life was destroyed in the Shoah, and why must we remember?"
+            }
+      ],
     vocabPrompt:
       'Define <strong>Genocide</strong> as coined by Raphael Lemkin in 1944 and explain its significance in international law:',
     rightPage: {
       type: 'single_12',
       tariff: 'Question 5: Evaluative Statement Essay [12 marks • 15 mins]',
+      badge: 'EXTENDED EVALUATIVE ESSAY',
       examStem:
         '‘The liberation of the concentration camps in 1945 marked the end of the suffering of Holocaust survivors.’ How far do you agree? [12 marks]',
       stimulus: [
-        'The liberation of Bergen-Belsen and Auschwitz (1945) and ongoing mortality in Displaced Persons (DP) camps',
-        'The struggle of survivors attempting to reach British Mandate Palestine (e.g. SS Exodus 1947) and the movement for a Jewish homeland',
+        'The liberation of Bergen-Belsen and Auschwitz (1945)',
+        'Ongoing mortality and homelessness in Displaced Persons (DP) camps',
       ],
       structureStrip: [
         {
-          col: '1. PHYSICAL LIBERATION & MEDICAL RESCUE',
-          text: 'Allied forces halted industrial death camp murder, but typhus, extreme starvation, and psychological trauma caused thousands to perish in the weeks following liberation.',
+          col: '1. PHYSICAL LIBERATION & RELIEF',
+          text: 'Evaluate how far Allied liberation of camps immediately ended physical danger, starvation, and persecution.',
         },
         {
-          col: '2. ONGOING LOSS, HOMELESSNESS & ANTISEMITISM',
-          text: 'Survivors returned home to discover entire communities annihilated, property confiscated, and continued violent antisemitism in Eastern Europe (Kielce Pogrom 1946), leaving 250,000 stranded in Allied Displaced Persons camps.',
+          col: '2. ONGOING LOSS, HOMELESSNESS & TRAUMA',
+          text: 'Evaluate the ongoing hardship: bereavement, destroyed communities, post-war antisemitism, and DP camps.',
         },
         {
-          col: '3. BRITISH MANDATE PALESTINE & THE ZIONIST STRUGGLE',
-          text: 'Strict British immigration quotas (1939 White Paper) forced desperate survivors onto illegal Aliyah Bet ships; the naval interception and forced return of the SS Exodus 1947 galvanized international Zionist pressure for sovereign self-determination, culminating in UN Resolution 181 and the 1948 establishment of Israel.',
+          col: '3. COMPARATIVE VERDICT',
+          text: 'Reach an overall evaluative judgement weighing immediate deliverance against lingering trauma and hardship.',
         },
       ],
-      connectives:
-        'To a large extent, it can be argued that... • On the one hand, Allied liberation brought immediate deliverance from... • However, intense suffering endured because... • In particular, the geopolitical struggle over British Mandate Palestine meant that... • Consequently, for tens of thousands of survivors on ships like the SS Exodus 1947... • In conclusion, liberation was not the end of suffering but rather... because...',
-      wordBank:
-        'Bergen-Belsen • typhus • Displaced Persons (DP) camps • Windermere Children • Kielce Pogrom 1946 • British Mandate Palestine • 1939 White Paper • Aliyah Bet • SS Exodus 1947 • Zionism • UN Resolution 181 • State of Israel • Nuremberg Trials • Raphael Lemkin • 1948 Genocide Convention',
-      timelineMissionTitle: 'Timeline Task • pp. 10–11',
-      timelineMission:
-        '<strong>Milestone 10 (1945–1948):</strong> Choose <strong>(A) Creative Sketch:</strong> Depict liberation and the pursuit of justice — e.g. a barbed-wire gate swung wide open toward a rising sun, or a judge’s wooden gavel striking down beside the words "Never Again" &bull; OR &bull; <strong>(B) Mind Map:</strong> "Liberation &amp; Justice" (Camp liberation, DP camps, Nuremberg Trials)',
     },
     leftPageQuip:
       'Even after British troops liberated Bergen-Belsen, over 14,000 survivors died within weeks due to advanced starvation and typhus.',
@@ -702,10 +492,10 @@ function renderNotesPage(pageNum, quip, totalPages = 20) {
   const isEven = pageNum % 2 === 0;
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
-  const numLines = 32;
+  const numLines = 34;
   let linesHtml = '';
   for (let i = 0; i < numLines; i++) {
-    linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
+    linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
   }
 
   return `
@@ -932,102 +722,99 @@ function renderFooterStrip(pageNum, quip, totalPages = 20) {
 }
 
 // ============================================================================
-// LEFT PAGE RENDERER: 5-STAGE CHRONOLOGICAL INQUIRY SPINE (HIGH-CONTRAST MONO)
+// LEFT PAGE RENDERER: 4-SECTION CHRONOLOGICAL & EVALUATIVE SPINE (OPTION A)
 // ============================================================================
 function renderSpinePage(cfg, pageNum, totalPages = 20) {
-  const stagesHtml = cfg.stages
-    .map((st, sIdx) => {
-      const stageNum = st.step || sIdx + 1;
-      const questionText = (st.questionHeading || st.focusClue || st.title || '').replace(/^\[[\d\.]+\]\s*/, '').trim();
-      const combinedLen = questionText.length + (st.date ? String(st.date).length : 0);
-      const qFontSize = combinedLen > 105 ? '7.8pt' : combinedLen > 95 ? '8.2pt' : combinedLen > 85 ? '8.5pt' : '8.8pt';
+  // 1. Build Top 5-Question Reference Roadmap Block (under title)
+  const questionRowsHtml = cfg.stages.slice(0, 5).map((st, sIdx) => {
+    const stageNum = st.step || sIdx + 1;
+    const qText = (st.questionHeading || st.focusClue || st.title || '').replace(/^\[[\d\.]+\]\s*/, '').trim();
+    const rawDate = (st.date || '').trim();
+    const isVerdictWord = /verdict|evaluation|judgment/i.test(rawDate);
+    const dateStr = !isVerdictWord ? rawDate : '';
 
-      const bulletsHtml = (st.bullets || [])
-        .map(
-          (b, idx) => `
-            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
-                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
+    return `
+          <div style="display: flex; align-items: baseline; gap: 6px; line-height: 1.35;">
+            <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">${stageNum}</span>
+            ${dateStr ? `<span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; color: #000000; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">${dateStr}</span><span style="color: #000000; font-weight: 900; font-size: 7.5pt;">&bull;</span>` : ''}
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 700; color: #000000; flex: 1; letter-spacing: -0.1px; line-height: 1.25;">${qText}</span>
+          </div>`;
+  }).join('');
+
+  // 2. Generate 24 Full-Width A4 Ruled Exercise Book Lines with Stage Badges in the 26mm Left Margin
+  const totalRuledLines = 25;
+  const stageBadgesByLine = {
+    0: { num: 1, date: cfg.stages[0]?.date || '' },
+    5: { num: 2, date: cfg.stages[1]?.date || '' },
+    10: { num: 3, date: cfg.stages[2]?.date || '' },
+    15: { num: 4, date: cfg.stages[3]?.date || '' },
+    20: { num: 5, date: cfg.stages[4]?.date || '' }
+  };
+
+  let ruledLinesHtml = '';
+  for (let i = 0; i < totalRuledLines; i++) {
+    const badgeInfo = stageBadgesByLine[i];
+    let marginContent = '';
+    if (badgeInfo) {
+      const isVerdict = /verdict|evaluation|judgment/i.test(badgeInfo.date || '');
+      const cleanDate = !isVerdict ? (badgeInfo.date || '') : '';
+      marginContent = `<span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; padding: 0.5px 4px; border-radius: 2px; white-space: nowrap;">${badgeInfo.num}</span>${cleanDate ? ` <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000; text-transform: uppercase;">${cleanDate}</span>` : ''}`;
+    }
+
+    ruledLinesHtml += `
+            <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; display: flex; width: 100%; box-sizing: border-box; margin: 0;">
+              <!-- 26mm Left Margin Rule -->
+              <div style="width: 26mm; flex-shrink: 0; border-right: 1.5px solid #000000; padding-right: 2mm; display: flex; align-items: center; justify-content: flex-start; gap: 3px; box-sizing: border-box;">
+                ${marginContent}
               </div>
-            </div>`,
-        )
-        .join('');
-
-      return `
-        <!-- STAGE ${stageNum} CONTAINER -->
-        <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
-          
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
-                ${stageNum}
-              </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
-                ${st.date ? `${st.date}` : ''}
-              </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span class="stage-question-text" data-base-size="${qFontSize}" style="font-family: 'Playfair Display', serif; font-size: ${qFontSize}; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                ${questionText}
-              </span>
-            </div>
-          </div>
-
-          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
-          <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
-            
-            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
-            <div class="stage-trigger-col">
-              ${bulletsHtml}
-            </div>
-
-            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div class="stage-writing-col">
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-            </div>
-
-          </div>
-        </div>`;
-    })
-    .join('');
+              <!-- Full-Width Notes Handwriting Line -->
+              <div style="flex: 1; min-width: 0;"></div>
+            </div>`;
+  }
 
   const isEven = pageNum % 2 === 0;
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
   return `
-  <!-- LESSON SPREAD: ${isEven ? 'LEFT PAGE (VERSO)' : 'RIGHT PAGE (RECTO)'} • CHRONOLOGICAL INQUIRY SPINE -->
+  <!-- LESSON SPREAD: ${isEven ? 'LEFT PAGE (VERSO)' : 'RIGHT PAGE (RECTO)'} • 5-QUESTION ROADMAP & EXERCISE CANVAS -->
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
+    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
       
-      <!-- Lesson Header with Inquiry Question Title & 14mm Micro-QR -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+      <!-- Lesson Header with Topic Title, Inquiry Question & 14mm Micro-QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2.2px; margin-bottom: 2.5px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
         <div style="flex: 1; min-width: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.4px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
               ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
             </span>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
               YEAR 9 &bull; THE SHOAH: 1933–1945
             </span>
           </div>
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 12.6pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
-            ${cfg.enquiryQuestion}
-          </h2>
+          <div style="font-family: 'Inter', sans-serif; font-size: 11.2pt; font-weight: 900; color: #000000; line-height: 1.18; margin-top: 1.5px;">
+            Enquiry ${cfg.lessonNum}: ${cfg.title}
+          </div>
+          <div style="font-family: 'Georgia', serif; font-size: 9.6pt; font-style: italic; color: #000000; line-height: 1.2; margin-top: 1px;">
+            &ldquo;${cfg.enquiryQuestion}&rdquo;
+          </div>
         </div>
         ${renderVersoLessonQr({ unitId: 'the_shoah', lessonId: cfg.id || `lesson_${cfg.lessonNum}` })}
       </div>
 
-      <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
-      <div style="flex: 1; display: flex; flex-direction: column; min-height: 0; margin-top: 1px;">
-        <div style="display: flex; flex-direction: column; flex: 1; min-height: 0; gap: 0;">
-          ${stagesHtml}
+      <!-- 5 Core Inquiry Questions Reference Roadmap (Under Title) -->
+      <div style="border: 1.2px solid #000000; border-radius: 2px; padding: 2.5px 5px; margin-bottom: 2.5mm; background: #ffffff; flex-shrink: 0;">
+        <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; color: #000000; border-bottom: 1.2px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px; display: flex; justify-content: space-between;">
+          <span style="font-size: 7.8pt;">5 Core Inquiry Questions &bull; Chronological Roadmap</span>
+          <span>Questions 1–5</span>
         </div>
+        <div style="display: flex; flex-direction: column; gap: 1.5px;">
+          ${questionRowsHtml}
+        </div>
+      </div>
+
+      <!-- Authentic British Exercise Book Canvas: 26mm Margin + 24 Full-Width Ruled Lines -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
+        ${ruledLinesHtml}
       </div>
 
       ${renderFooterStrip(pageNum, cfg.leftPageQuip, totalPages)}
@@ -1035,19 +822,17 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
   </div>`;
 }
 
-// ============================================================================
-// RIGHT PAGE RENDERER: ROTATING DISCIPLINARY WRITING (MONOCHROME INTERIOR)
-// ============================================================================
 function renderRightPage(cfg, pageNum, totalPages = 20) {
   const rp = cfg.rightPage;
   const isEven = pageNum % 2 === 0;
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
+  // 12-MARK EVALUATIVE STATEMENT ESSAY (ENQUIRY 7)
   if (rp.type === 'single_12') {
     let linesHtml = '';
-    const numLines = 26;
+    const numLines = 27;
     for (let i = 0; i < numLines; i++) {
-      linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
+      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
     }
 
     return `
@@ -1055,80 +840,89 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%;">
       
-      <!-- Top Writing Block (Header + Question + Guidance) -->
+      <!-- Top Writing Block (Header + Enquiry Focus + Question + Structural Guide) -->
       <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px;">
-        <!-- Exam Header -->
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 2px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.8pt; color: #000000; margin: 0; font-weight: 900;">
+        
+        <!-- Disciplinary Assessment Header with Enquiry Question -->
+        <div style="border-bottom: 2px solid #000000; padding-bottom: 2.2px; margin-bottom: 2.5px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; DISCIPLINARY ASSESSMENT
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 9 &bull; THE SHOAH: 1933–1945
+            </span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.5px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 11.2pt; font-weight: 900; color: #000000; line-height: 1.18;">
+              Enquiry ${cfg.lessonNum}: ${cfg.title}
+            </div>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px; white-space: nowrap; margin-left: 8px;">
+              EXTENDED EVALUATIVE ESSAY
+            </span>
+          </div>
+        </div>
+          <div style="font-family: 'Georgia', serif; font-size: 9.6pt; font-style: italic; color: #000000; line-height: 1.2; margin-top: 1px;">
+            &ldquo;${cfg.enquiryQuestion}&rdquo;
+          </div>
+
+        <!-- Tariff Subheader Bar -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase; letter-spacing: 0.3px;">
             ${rp.tariff}
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            Extended Evaluative Essay
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-style: italic; color: #000000;">
+            Independent Examination Practice
           </span>
         </div>
 
         <!-- Question Stem & Stimulus Box -->
         <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; border-radius: 2.5px; padding: 4px 8px; background: #ffffff;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 11.0pt; font-weight: 900; color: #000000; margin-bottom: 3px; line-height: 1.26;">
+          <div style="font-family: 'Playfair Display', serif; font-size: 10.8pt; font-weight: 900; color: #000000; margin-bottom: 3px; line-height: 1.24;">
             ${rp.examStem}
           </div>
-          <div style="display: flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
+          <div style="display: flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 8.2pt; color: #000000;">
             <strong style="color: #000000;">Stimulus:</strong>
-            <span style="border: 1.2px solid #000000; padding: 1px 7px; border-radius: 2px; font-weight: 800; color: #000000; background: #ffffff;">${rp.stimulus[0]}</span>
-            <span style="border: 1.2px solid #000000; padding: 1px 7px; border-radius: 2px; font-weight: 800; color: #000000; background: #ffffff;">${rp.stimulus[1]}</span>
-            <span style="font-style: italic; color: #000000;">(Support each factor with your own precise historical evidence)</span>
+            <span style="border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px; font-weight: 800; color: #000000; background: #ffffff;">${rp.stimulus[0]}</span>
+            <span style="border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px; font-weight: 800; color: #000000; background: #ffffff;">${rp.stimulus[1]}</span>
+            <span style="font-style: italic; color: #000000; font-size: 7.8pt;">(Support each factor with precise historical evidence)</span>
           </div>
         </div>
 
         ${
           rp.structureStrip
             ? `
-        <!-- Evaluative Structure Strip -->
+        <!-- Evaluative Structure Strip (Disciplinary Architecture Only - Zero Giveaways) -->
         <div style="border: 1.2px solid #000000; border-radius: 2.5px; padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px;">
           ${rp.structureStrip
             .map(
               (col) => `
             <div style="border-right: 1px solid #000000; padding-right: 4px;">
-              <div style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #000000;">${col.col}</div>
-              <div style="font-family: 'Georgia', serif; font-size: 6.6pt; line-height: 1.15; color: #000000; margin-top: 1px;">${col.text}</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; text-transform: uppercase; color: #000000;">${col.col}</div>
+              <div style="font-family: 'Georgia', serif; font-size: 7.6pt; line-height: 1.2; color: #000000; margin-top: 1px;">${col.text}</div>
             </div>`,
             )
             .join('')}
         </div>`
             : ''
         }
-
-        <!-- Writing Guidelines Strip -->
-        <div style="border: 1px solid #000000; padding: 2.5px 7px; border-radius: 2px; background: #ffffff; font-size: 7.4pt; font-family: 'Inter', sans-serif;">
-          <strong>Analytical Connectives:</strong> <span style="font-style: italic;">${rp.connectives}</span><br>
-          <strong>High-Yield Vocabulary:</strong> <span style="font-weight: 600;">${rp.wordBank}</span>
-        </div>
       </div>
 
-      <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to timeline task box -->
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 2px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
+      <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to footer strip -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${linesHtml}      </div>
-
-      <!-- Timeline Task Box (Docked at Bottom) -->
-      <div style="flex-shrink: 0; border: 1.5px solid #000000; border-radius: 3px; padding: 2.5px 7px; background: #ffffff; display: flex; align-items: center; gap: 7px; margin-bottom: 2px;">
-        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">
-          Timeline Task &bull; pp. 10–11
-        </span>
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.22; color: #000000; flex: 1;">
-          ${rp.timelineMission || cfg.timelineMission}
-        </span>
-      </div>
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
   </div>`;
   }
 
+  // 8-MARK NARRATIVE ACCOUNT (ENQUIRY 2)
   if (rp.type === 'narrative_8') {
     let linesHtml = '';
-    const numLines = 28;
+    const numLines = 29;
     for (let i = 0; i < numLines; i++) {
-      linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
+      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
     }
 
     return `
@@ -1136,129 +930,242 @@ ${linesHtml}      </div>
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%;">
       
-      <!-- Top Writing Block (Header + Question + Guidelines) -->
+      <!-- Top Writing Block (Header + Enquiry Focus + Question) -->
       <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px;">
-        <!-- Exam Header -->
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 2px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.8pt; color: #000000; margin: 0; font-weight: 900;">
+        
+        <!-- Disciplinary Assessment Header with Enquiry Question -->
+        <div style="border-bottom: 2px solid #000000; padding-bottom: 2.2px; margin-bottom: 2.5px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; DISCIPLINARY ASSESSMENT
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 9 &bull; THE SHOAH: 1933–1945
+            </span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.5px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 11.2pt; font-weight: 900; color: #000000; line-height: 1.18;">
+              Enquiry ${cfg.lessonNum}: ${cfg.title}
+            </div>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px; white-space: nowrap; margin-left: 8px;">
+              CHRONOLOGICAL CAUSAL ACCOUNT
+            </span>
+          </div>
+        </div>
+          <div style="font-family: 'Georgia', serif; font-size: 9.6pt; font-style: italic; color: #000000; line-height: 1.2; margin-top: 1px;">
+            &ldquo;${cfg.enquiryQuestion}&rdquo;
+          </div>
+
+        <!-- Tariff Subheader Bar -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase; letter-spacing: 0.3px;">
             ${rp.tariff}
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            Chronological Causal Account
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-style: italic; color: #000000;">
+            Independent Examination Practice
           </span>
         </div>
 
         <!-- Question Stem & Stimulus Box -->
         <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; border-radius: 2.5px; padding: 4px 8px; background: #ffffff;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 11.0pt; font-weight: 900; color: #000000; margin-bottom: 3px; line-height: 1.26;">
+          <div style="font-family: 'Playfair Display', serif; font-size: 10.8pt; font-weight: 900; color: #000000; margin-bottom: 3px; line-height: 1.24;">
             ${rp.examStem}
           </div>
-          <div style="display: flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
+          <div style="display: flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.6pt; color: #000000;">
             <strong style="color: #000000;">Stimulus:</strong>
             <span style="border: 1.2px solid #000000; padding: 1px 7px; border-radius: 2px; font-weight: 800; color: #000000; background: #ffffff;">${rp.stimulus[0]}</span>
             <span style="border: 1.2px solid #000000; padding: 1px 7px; border-radius: 2px; font-weight: 800; color: #000000; background: #ffffff;">${rp.stimulus[1]}</span>
-            <span style="font-style: italic; color: #000000;">(Support each factor with your own precise historical evidence)</span>
+            <span style="font-style: italic; color: #000000;">(Support each factor with precise historical evidence)</span>
           </div>
         </div>
-
-        <!-- Writing Guidelines Strip -->
-        <div style="border: 1px solid #000000; padding: 2.5px 7px; border-radius: 2px; background: #ffffff; font-size: 7.4pt; font-family: 'Inter', sans-serif;">
-          <strong>Causal Connectives:</strong> <span style="font-style: italic;">${rp.connectives}</span><br>
-          <strong>High-Yield Vocabulary:</strong> <span style="font-weight: 600;">${rp.wordBank}</span>
-        </div>
       </div>
 
-      <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to timeline task box -->
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 2px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
+      <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to footer strip -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${linesHtml}      </div>
-
-      <!-- Timeline Task Box (Docked at Bottom) -->
-      <div style="flex-shrink: 0; border: 1.5px solid #000000; border-radius: 3px; padding: 2.5px 7px; background: #ffffff; display: flex; align-items: center; gap: 7px; margin-bottom: 2px;">
-        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">
-          Timeline Task &bull; pp. 10–11
-        </span>
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.22; color: #000000; flex: 1;">
-          ${rp.timelineMission || cfg.timelineMission}
-        </span>
-      </div>
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
   </div>`;
   }
 
+  // 8-MARK SOURCE UTILITY (ENQUIRIES 3 & 6 • TWO SOURCES FOCUS)
   if (rp.type === 'source_utility_8') {
     let linesHtml = '';
-    const numLines = 24;
+    const numLines = 27;
     for (let i = 0; i < numLines; i++) {
-      linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
+      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
     }
 
     return `
-  <!-- LESSON SPREAD: ${isEven ? 'LEFT PAGE (VERSO)' : 'RIGHT PAGE (RECTO)'} • SOURCE UTILITY -->
+  <!-- LESSON SPREAD: ${isEven ? 'LEFT PAGE (VERSO)' : 'RIGHT PAGE (RECTO)'} • SOURCE UTILITY (TWO SOURCES) -->
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%;">
       
-      <!-- Top Writing Block (Header + Question + Source + Guidance) -->
+      <!-- Top Writing Block (Header + Enquiry Focus + Question + Dual Source Provenance) -->
       <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px;">
-        <!-- Exam Header -->
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 2px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.8pt; color: #000000; margin: 0; font-weight: 900;">
+        
+        <!-- Disciplinary Assessment Header with Enquiry Question -->
+        <div style="border-bottom: 2px solid #000000; padding-bottom: 2.2px; margin-bottom: 2.5px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; DISCIPLINARY ASSESSMENT
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 9 &bull; THE SHOAH: 1933–1945
+            </span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.5px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 11.2pt; font-weight: 900; color: #000000; line-height: 1.18;">
+              Enquiry ${cfg.lessonNum}: ${cfg.title}
+            </div>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px; white-space: nowrap; margin-left: 8px;">
+              FORENSIC SOURCE EVALUATION
+            </span>
+          </div>
+        </div>
+          <div style="font-family: 'Georgia', serif; font-size: 9.6pt; font-style: italic; color: #000000; line-height: 1.2; margin-top: 1px;">
+            &ldquo;${cfg.enquiryQuestion}&rdquo;
+          </div>
+
+        <!-- Tariff Subheader Bar -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase; letter-spacing: 0.3px;">
             ${rp.tariff}
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            Forensic Source Evaluation
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-style: italic; color: #000000;">
+            Independent Examination Practice
           </span>
         </div>
 
         <!-- Question Stem Box -->
         <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; border-radius: 2.5px; padding: 3.5px 7px; background: #ffffff;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 10.8pt; font-weight: 900; color: #000000; line-height: 1.24;">
+          <div style="font-family: 'Playfair Display', serif; font-size: 10.5pt; font-weight: 900; color: #000000; line-height: 1.22;">
             ${rp.question}
           </div>
         </div>
 
-        <!-- Primary Source Plate Box -->
-        <div style="border: 1.2px solid #000000; border-radius: 2.5px; padding: 3.5px 7px; background: #ffffff;">
-          <div style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; color: #000000; text-transform: uppercase; border-bottom: 0.8px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
-            ${rp.sourceCaption}
+        <!-- Dual Sources Reference Strip (Digital Eyes Standard: Full Texts & High-Res Visuals in App) -->
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; padding: 3px 6px; background: #ffffff; display: flex; flex-direction: column; gap: 2.5px;">
+          <div style="display: flex; align-items: baseline; gap: 6px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase; white-space: nowrap;">
+              ${rp.sourceA_badge || 'Source A'}
+            </span>
+            <span style="font-family: 'Georgia', serif; font-size: 8.4pt; color: #000000; line-height: 1.24;">
+              ${rp.sourceA_caption || rp.sourceCaption}
+            </span>
           </div>
-          <div style="font-family: 'Georgia', serif; font-size: 8.2pt; font-style: italic; line-height: 1.25; color: #000000;">
-            ${rp.sourceText}
+          <div style="display: flex; align-items: baseline; gap: 6px; border-top: 1px dashed #000000; padding-top: 2px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase; white-space: nowrap;">
+              ${rp.sourceB_badge || 'Source B'}
+            </span>
+            <span style="font-family: 'Georgia', serif; font-size: 8.4pt; color: #000000; line-height: 1.24;">
+              ${rp.sourceB_caption}
+            </span>
           </div>
-        </div>
-
-        <!-- Scaffolding Guide -->
-        <div style="border: 1px solid #000000; padding: 2.5px 7px; border-radius: 2px; background: #ffffff; font-size: 7.3pt; font-family: 'Inter', sans-serif;">
-          <strong>Evaluative Stems:</strong> <span style="font-style: italic;">${rp.stems}</span><br>
-          <strong>Key Vocabulary:</strong> <span style="font-weight: 600;">${rp.wordBank}</span>
         </div>
       </div>
 
-      <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to timeline task box -->
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 2px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
+      <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to footer strip -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${linesHtml}      </div>
-
-      <!-- Timeline Task Box (Docked at Bottom) -->
-      <div style="flex-shrink: 0; border: 1.5px solid #000000; border-radius: 3px; padding: 2.5px 7px; background: #ffffff; display: flex; align-items: center; gap: 7px; margin-bottom: 2px;">
-        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">
-          Timeline Task &bull; pp. 10–11
-        </span>
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.22; color: #000000; flex: 1;">
-          ${rp.timelineMission || cfg.timelineMission}
-        </span>
-      </div>
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
   </div>`;
   }
 
-  // Default: Split Short Drills (4m Features + 4m Consequence / Why)
+  // 8-MARK HISTORICAL INTERPRETATIONS (ENQUIRY 4 • TWO INTERPRETATIONS FOCUS)
+  if (rp.type === 'interpretations_8') {
+    let linesHtml = '';
+    const numLines = 27;
+    for (let i = 0; i < numLines; i++) {
+      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
+    }
+
+    return `
+  <!-- LESSON SPREAD: ${isEven ? 'LEFT PAGE (VERSO)' : 'RIGHT PAGE (RECTO)'} • HISTORICAL INTERPRETATIONS -->
+  <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
+    <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%;">
+      
+      <!-- Top Writing Block (Header + Enquiry Focus + Question + Dual Interpretations Provenance) -->
+      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px;">
+        
+        <!-- Disciplinary Assessment Header with Enquiry Question -->
+        <div style="border-bottom: 2px solid #000000; padding-bottom: 2.2px; margin-bottom: 2.5px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; DISCIPLINARY ASSESSMENT
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 9 &bull; THE SHOAH: 1933–1945
+            </span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.5px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 11.2pt; font-weight: 900; color: #000000; line-height: 1.18;">
+              Enquiry ${cfg.lessonNum}: ${cfg.title}
+            </div>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px; white-space: nowrap; margin-left: 8px;">
+              HISTORIOGRAPHICAL DEBATE
+            </span>
+          </div>
+        </div>
+          <div style="font-family: 'Georgia', serif; font-size: 9.6pt; font-style: italic; color: #000000; line-height: 1.2; margin-top: 1px;">
+            &ldquo;${cfg.enquiryQuestion}&rdquo;
+          </div>
+
+        <!-- Tariff Subheader Bar -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase; letter-spacing: 0.3px;">
+            ${rp.tariff}
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-style: italic; color: #000000;">
+            Independent Examination Practice
+          </span>
+        </div>
+
+        <!-- Question Stem Box -->
+        <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; border-radius: 2.5px; padding: 3.5px 7px; background: #ffffff;">
+          <div style="font-family: 'Playfair Display', serif; font-size: 10.5pt; font-weight: 900; color: #000000; line-height: 1.22;">
+            ${rp.question}
+          </div>
+        </div>
+
+        <!-- Dual Interpretations Reference Strip (Digital Eyes Standard: Full Texts in App) -->
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; padding: 3px 6px; background: #ffffff; display: flex; flex-direction: column; gap: 2.5px;">
+          <div style="display: flex; align-items: baseline; gap: 6px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase; white-space: nowrap;">
+              ${rp.interpretation1_badge || 'Interpretation 1'}
+            </span>
+            <span style="font-family: 'Georgia', serif; font-size: 8.4pt; color: #000000; line-height: 1.24;">
+              ${rp.interpretation1_caption}
+            </span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 6px; border-top: 1px dashed #000000; padding-top: 2px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase; white-space: nowrap;">
+              ${rp.interpretation2_badge || 'Interpretation 2'}
+            </span>
+            <span style="font-family: 'Georgia', serif; font-size: 8.4pt; color: #000000; line-height: 1.24;">
+              ${rp.interpretation2_caption}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to footer strip -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
+${linesHtml}      </div>
+
+      ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
+    </div>
+  </div>`;
+  }
+
+  // Default: Split Short Drills (4m Features + 4m Consequence / 8m Why) (ENQUIRIES 1 & 5)
   let partBLinesHtml = '';
-  const numPartBLines = 20;
+  const numPartBLines = 21;
   for (let i = 0; i < numPartBLines; i++) {
-    partBLinesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
+    partBLinesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
   }
 
   return `
@@ -1266,23 +1173,45 @@ ${linesHtml}      </div>
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%;">
       
+      <!-- Top Writing Block (Header + Enquiry Focus) -->
+      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px; margin-bottom: 3px;">
+        <div style="border-bottom: 2px solid #000000; padding-bottom: 2.2px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; DISCIPLINARY ASSESSMENT
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 9 &bull; THE SHOAH: 1933–1945
+            </span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.5px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 11.2pt; font-weight: 900; color: #000000; line-height: 1.18;">
+              Enquiry ${cfg.lessonNum}: ${cfg.title}
+            </div>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px; white-space: nowrap; margin-left: 8px;">
+              FEATURE DRILL &amp; EXTENDED WRITING
+            </span>
+          </div>
+        </div>
+          <div style="font-family: 'Georgia', serif; font-size: 9.6pt; font-style: italic; color: #000000; line-height: 1.2; margin-top: 1px;">
+            &ldquo;${cfg.enquiryQuestion}&rdquo;
+          </div>
+      </div>
+
       <!-- PART A: Feature Drill Block (flex-shrink: 0) -->
       <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px; margin-bottom: 3px;">
         <div style="border-bottom: 1.5px solid #000000; padding-bottom: 2px;">
           <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 0; font-weight: 900;">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 11.0pt; color: #000000; margin: 0; font-weight: 900;">
               ${rp.partA.tariff}
-            </h2>
+            </h3>
             <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px;">
               ${rp.partA.badge}
             </span>
           </div>
         </div>
-        <div style="border: 1px solid #000000; border-left: 3px solid #000000; border-radius: 2px; padding: 2.5px 6px; background: #ffffff; font-family: 'Playfair Display', serif; font-size: 10.2pt; font-weight: 900; line-height: 1.22;">
+        <div style="border: 1px solid #000000; border-left: 3px solid #000000; border-radius: 2px; padding: 2.5px 6px; background: #ffffff; font-family: 'Playfair Display', serif; font-size: 10.0pt; font-weight: 900; line-height: 1.22;">
           ${rp.partA.question}
-        </div>
-        <div style="border: 1px solid #000000; padding: 2px 6px; border-radius: 2px; background: #ffffff; font-size: 7.3pt; font-family: 'Inter', sans-serif;">
-          <strong>Writing Stems:</strong> <span style="font-style: italic;">${rp.partA.stems}</span>
         </div>
         <!-- Ruled Lines for Part A @ consistent 7.8mm -->
         <div class="ruled-lines-block" style="margin-top: 1px;">
@@ -1296,217 +1225,342 @@ ${linesHtml}      </div>
       <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px;">
         <div style="border-bottom: 1.5px solid #000000; padding-bottom: 2px;">
           <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 0; font-weight: 900;">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 11.0pt; color: #000000; margin: 0; font-weight: 900;">
               ${rp.partB.tariff}
-            </h2>
+            </h3>
             <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px;">
               ${rp.partB.badge}
             </span>
           </div>
         </div>
-        <div style="border: 1px solid #000000; border-left: 3px solid #000000; border-radius: 2px; padding: 2.5px 6px; background: #ffffff; font-family: 'Playfair Display', serif; font-size: 10.2pt; font-weight: 900; line-height: 1.22;">
+        <div style="border: 1px solid #000000; border-left: 3px solid #000000; border-radius: 2px; padding: 2.5px 6px; background: #ffffff; font-family: 'Playfair Display', serif; font-size: 10.0pt; font-weight: 900; line-height: 1.22;">
           ${rp.partB.question}
         </div>
-        <div style="border: 1px solid #000000; padding: 2px 6px; border-radius: 2px; background: #ffffff; font-size: 7.3pt; font-family: 'Inter', sans-serif;">
-          <strong>Connectives:</strong> <span style="font-style: italic;">${rp.partB.connectives}</span><br>
-          <strong>Vocabulary:</strong> <span style="font-weight: 600;">${rp.partB.wordBank}</span>
-        </div>
       </div>
 
-      <!-- Ruled Lines for Part B: flex: 1 fills ALL remaining space down to timeline task box -->
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 2px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
+      <!-- Ruled Lines for Part B: flex: 1 fills ALL remaining space down to footer strip -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${partBLinesHtml}      </div>
-
-      <!-- Timeline Task Box (Docked at Bottom) -->
-      <div style="flex-shrink: 0; border: 1.5px solid #000000; border-radius: 3px; padding: 2.5px 7px; background: #ffffff; display: flex; align-items: center; gap: 7px; margin-bottom: 2px;">
-        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">
-          Timeline Task &bull; pp. 10–11
-        </span>
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.22; color: #000000; flex: 1;">
-          ${rp.timelineMission || cfg.timelineMission}
-        </span>
-      </div>
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
   </div>`;
 }
 
-// ============================================================================
-// CENTREFOLD SPREAD: PANORAMIC LIVING TIMELINE (PAGES 10 & 11 OF 20)
-// ============================================================================
 function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
-  const milestones = [
-    {
-      num: 1,
-      enquiryNum: 1,
-      date: 'Pre-1939',
-      title: 'Vibrant European Jewry & Cultural Diversity',
-      clue: 'Over 9.5 million Jewish people thrive across Europe in diverse communities—from vibrant Yiddish-speaking shtetls and cities like Warsaw and Vilna, to integrated German patriots and Sephardic communities in Thessaloniki.',
-    },
-    {
-      num: 2,
-      enquiryNum: 2,
-      date: 'April 1933',
-      title: 'State Boycott & The Purge of the Civil Service',
-      clue: 'SA stormtroopers picket Jewish businesses; the Civil Service Law summarily dismisses Jewish judges, doctors, and academics, initiating the legal process of "social death" and civic exclusion.',
-    },
-    {
-      num: 3,
-      enquiryNum: 2,
-      date: '1935–1938',
-      title: 'The Nuremberg Race Laws & Kristallnacht Pogrom',
-      clue: 'The 1935 Nuremberg Laws strip citizenship and ban intermarriage; in November 1938, state-instigated Kristallnacht destroys 1,400 synagogues, sending 30,000 men to camps and ending legal security.',
-    },
-    {
-      num: 4,
-      enquiryNum: 3,
-      date: '1939–1940',
-      title: 'Invasion of Poland, Armbands & Ghettoisation',
-      clue: 'Following the Blitzkrieg invasion, 2 million Polish Jews are forced to wear the Star of David and concentrated behind sealed brick walls in urban ghettos (Warsaw, Łódź) under Heydrich’s orders.',
-    },
-    {
-      num: 5,
-      enquiryNum: 3,
-      date: '1940–1942',
-      title: 'Warsaw Ghetto Starvation & The Oneg Shabbat Archive',
-      clue: 'Nazi authorities enforce starvation rations of 180 calories/day, killing 80,000; Emanuel Ringelblum leads the underground Oneg Shabbat archive, burying diaries in metal milk cans to preserve the truth.',
-    },
-    {
-      num: 6,
-      enquiryNum: 4,
-      date: 'June 1941',
-      title: 'Operation Barbarossa & The Holocaust by Bullets',
-      clue: 'Following the invasion of the USSR, four mobile Einsatzgruppen and Order Police battalions shoot over 1.5 million Jewish men, women, and children into ravines and pits (Babi Yar, Ponary).',
-    },
-    {
-      num: 7,
-      enquiryNum: 5,
-      date: '1942–1943',
-      title: 'The Wannsee Conference & Operation Reinhard Camps',
-      clue: 'Heydrich coordinates state ministries at Wannsee for the murder of 11 million Jews; dedicated extermination camps at Bełżec, Sobibór, and Treblinka gas 1.7 million victims upon immediate arrival.',
-    },
-    {
-      num: 8,
-      enquiryNum: 5,
-      date: '1943–1944',
-      title: 'The Warsaw Ghetto Uprising & Armed Camp Revolts',
-      clue: 'Mordechai Anielewicz leads the ŻOB in 27 days of armed resistance in Warsaw ("Hazak V\'ematz"); armed revolts erupt inside Treblinka, Sobibór, and Crematorium IV at Auschwitz-Birkenau.',
-    },
-    {
-      num: 9,
-      enquiryNum: 6,
-      date: 'Oct 1943',
-      title: 'Rescue in Denmark & Righteous Among the Nations',
-      clue: 'Danish citizens spontaneously ferry 7,200 Jews across the Øresund to neutral Sweden; diplomats like Chiune Sugihara and villagers of Le Chambon risk their lives to provide life-saving transit.',
-    },
-    {
-      num: 10,
-      enquiryNum: 7,
-      date: '1945–1948',
-      title: 'Liberation, DP Camps, Nuremberg & Genocide Convention',
-      clue: 'Allied forces liberate Bergen-Belsen and Auschwitz; 250,000 survivors endure DP camps and the SS Exodus voyage; Nuremberg convicts perpetrators, and Raphael Lemkin crafts the UN Genocide Convention.',
-    },
-  ];
-
-  const leftMilestones = milestones.slice(0, 5);
-  const rightMilestones = milestones.slice(5, 10);
-
-  function renderMilestoneBlock(m) {
-    return `
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0; padding: 2px 0;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">
-              Milestone ${m.num}
-            </span>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 800; color: #000000;">
-              ${m.date}
-            </span>
-            <strong style="font-family: 'Playfair Display', serif; font-size: 9.8pt; font-weight: 900; color: #000000; line-height: 1.2;">
-              ${m.title}
-            </strong>
-          </div>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px; background: #ffffff; color: #000000;">
-            Enquiry ${m.enquiryNum}
-          </span>
-        </div>
-        <p style="font-family: 'Georgia', serif; font-size: 8.0pt; line-height: 1.25; color: #1e293b; margin: 0 0 3px 0;">
-          ${m.clue}
-        </p>
-        <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-        <div style="flex: 1; min-height: 20mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-          <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-            [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-          </div>
-        </div>
-      </div>`;
-  }
-
   const leftHtml = `
-  <!-- PAGE ${pLeftNum}: CENTREFOLD PART I -->
+  <!-- PAGE ${pLeftNum}: CENTREFOLD PART I • SIX LIVES MICRO-HISTORIES -->
   <div class="page page-container verso-page" id="page-${pLeftNum}" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 2px 8px; border-radius: 2px;">
+    <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+      
+      <!-- Top Spread Masthead -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2.5px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
             CENTREFOLD SPREAD &bull; PART I
           </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            THE LIVING CHRONOLOGY TIMELINE (1933–1940)
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            SIX LIVES: MICRO-HISTORIES OF THE HOLOCAUST (1933–1945)
           </span>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.5pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900;">
-          The Escalation of Persecution: From Ancient Roots to the Ghetto Walls
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.0pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.16;">
+          Diversity, Persecution &amp; The Enclosed Ghettos
         </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 2.5px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Choice:</strong> For each milestone, choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, dramatic scenes, or visual metaphors; OR <strong>(B) Mind Map:</strong> create a central concept bubble with 3 key historical facts.
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2.5px 6px; font-family: 'Inter', sans-serif; font-size: 8.2pt; color: #000000; line-height: 1.22;">
+          <strong style="text-transform: uppercase;">Disciplinary Anchor:</strong> Six million is not a statistic; it was six million individual human lives. By investigating real micro-histories across diverse regions, pupils trace how state persecution dismantled individual worlds.
         </div>
       </div>
 
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-bottom: 3px;">
-        ${leftMilestones.map(renderMilestoneBlock).join('')}
+      <!-- 3 Case Study Cards on Left Page -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; gap: 4px; margin-bottom: 2px;">
+        
+        <!-- Case Study 1: Richard Stern (Cologne, Germany) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3.5px 6px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase;">
+                Case Study 1: Richard Stern &bull; Cologne, Germany
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase;">
+                German-Jewish Veteran
+              </span>
+            </div>
+            <p style="font-family: 'Georgia', serif; font-size: 8.5pt; line-height: 1.26; color: #000000; margin: 0 0 2px 0;">
+              A decorated German-Jewish soldier awarded the Iron Cross in the First World War, Richard ran a business in Cologne. On 1 April 1933, when SA stormtroopers launched the nationwide anti-Jewish boycott outside his shop, Richard pinned his Iron Cross to his chest and stood defiantly beside the stormtrooper, handing out leaflets protesting the regime's betrayal. He escaped to America in 1939 and enlisted in the US Army at age 43 to fight Hitler.
+            </p>
+            <div style="border-left: 2.5px solid #000000; padding-left: 5px; margin: 2px 0; background: #fbfbfb;">
+              <div style="font-family: 'Georgia', serif; font-size: 8.0pt; font-style: italic; color: #000000; line-height: 1.2;">
+                &ldquo;I do not fight for revenge. I fight for the honour of those who believed in a free Germany and were betrayed by criminals.&rdquo;
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+                &mdash; Richard Stern, letter from Camp Ritchie training depot (1942)
+              </div>
+            </div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.0pt; color: #000000; line-height: 1.2; margin-top: 1px;">
+              <strong>Historical Significance:</strong> Proves German Jews were deeply integrated, patriotic citizens who actively protested Nazi injustice from the earliest days of the regime.
+            </div>
+          </div>
+          <div style="border-top: 1px dashed #000000; padding-top: 2px; margin-top: 2px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; color: #000000; margin-bottom: 1.5px; display: flex; justify-content: space-between;">
+              <span><strong>PUPIL ANALYSIS:</strong> Why was Richard Stern wearing his Iron Cross an act of profound political defiance?</span>
+              <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 1 &bull; 2</span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Heinz Salvator Kounio (Thessaloniki, Greece) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3.5px 6px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase;">
+                Case Study 2: Heinz Salvator Kounio &bull; Thessaloniki, Greece
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase;">
+                Sephardic Greek Jewry
+              </span>
+            </div>
+            <p style="font-family: 'Georgia', serif; font-size: 8.5pt; line-height: 1.26; color: #000000; margin: 0 0 2px 0;">
+              Born in 1927 in Thessaloniki, Greece—the historic heart of Sephardic Jewry where over 50,000 people spoke Ladino (Judeo-Spanish). In March 1943, Nazi forces enclosed the community in the Baron Hirsch ghetto before deporting 45,000 people in 19 transports to Auschwitz-Birkenau. Over 96% were murdered. 15-year-old Heinz survived on the selection ramp because he spoke fluent German and was ordered to interpret for arriving Greek transports.
+            </p>
+            <div style="border-left: 2.5px solid #000000; padding-left: 5px; margin: 2px 0; background: #fbfbfb;">
+              <div style="font-family: 'Georgia', serif; font-size: 8.0pt; font-style: italic; color: #000000; line-height: 1.2;">
+                &ldquo;In one hour, five people became two. My mother and sister disappeared into the smoke. I had to interpret orders for the SS.&rdquo;
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+                &mdash; Heinz Salvator Kounio, A Liter of Soup and 60 Grams of Bread
+              </div>
+            </div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.0pt; color: #000000; line-height: 1.2; margin-top: 1px;">
+              <strong>Historical Significance:</strong> Demonstrates that the Holocaust was not confined to Eastern Europe; it destroyed ancient Mediterranean Sephardic communities thousands of miles away.
+            </div>
+          </div>
+          <div style="border-top: 1px dashed #000000; padding-top: 2px; margin-top: 2px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; color: #000000; margin-bottom: 1.5px; display: flex; justify-content: space-between;">
+              <span><strong>PUPIL ANALYSIS:</strong> How does Heinz Kounio's experience prove the continent-wide reach of Nazi extermination?</span>
+              <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 1 &bull; 5</span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3: Dawid Sierakowiak (Łódź Ghetto, Poland) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3.5px 6px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase;">
+                Case Study 3: Dawid Sierakowiak &bull; Łódź Ghetto, Poland
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase;">
+                Ghetto Youth & Diarist
+              </span>
+            </div>
+            <p style="font-family: 'Georgia', serif; font-size: 8.5pt; line-height: 1.26; color: #000000; margin: 0 0 2px 0;">
+              A 15-year-old high school student in Łódź, Poland, Dawid kept five detailed notebooks after 160,000 Jews were trapped behind barbed wire in 1940. He recorded the daily agony of starvation rations, slave labour in ghetto workshops, and the horrific September 1942 Gehsperre roundup when the SS deported 15,000 children and elderly people—including his mother—to Chełmno gas vans. Dawid died of starvation and tuberculosis in August 1943 at age 19.
+            </p>
+            <div style="border-left: 2.5px solid #000000; padding-left: 5px; margin: 2px 0; background: #fbfbfb;">
+              <div style="font-family: 'Georgia', serif; font-size: 8.0pt; font-style: italic; color: #000000; line-height: 1.2;">
+                &ldquo;Hunger, only hunger. My poor mother was taken away before my eyes. In the ghetto, tears do not flow; they freeze in your heart.&rdquo;
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+                &mdash; Dawid Sierakowiak, Łódź Ghetto Diary (September 1942)
+              </div>
+            </div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.0pt; color: #000000; line-height: 1.2; margin-top: 1px;">
+              <strong>Historical Significance:</strong> Provides an authentic contemporary record of how enclosed ghettos were engineered as deliberate instruments of physical exhaustion and slow starvation.
+            </div>
+          </div>
+          <div style="border-top: 1px dashed #000000; padding-top: 2px; margin-top: 2px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; color: #000000; margin-bottom: 1.5px; display: flex; justify-content: space-between;">
+              <span><strong>PUPIL ANALYSIS:</strong> How do Dawid's diary entries reveal the physical and emotional cruelty of the ghetto system?</span>
+              <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 3</span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      ${renderFooterStrip(pLeftNum, 'The Living Timeline spans across the centrefold staple line (Milestones 1–5).', totalPages)}
+      ${renderFooterStrip(pLeftNum, 'Six Lives &bull; Part I: Pre-War Integration, Sephardic Heritage &amp; Ghettoisation.', totalPages)}
     </div>
   </div>`;
 
   const rightHtml = `
-  <!-- PAGE ${pRightNum}: CENTREFOLD PART II -->
+  <!-- PAGE ${pRightNum}: CENTREFOLD PART II • RESISTANCE, WITNESS & RENEWAL -->
   <div class="page page-container recto-page" id="page-${pRightNum}" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            THE LIVING CHRONOLOGY TIMELINE (1941–1948)
+    <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+      
+      <!-- Top Spread Masthead -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2.5px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            SIX LIVES: MICRO-HISTORIES OF THE HOLOCAUST (1933–1945)
           </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 2px 8px; border-radius: 2px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
             CENTREFOLD SPREAD &bull; PART II
           </span>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.5pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900;">
-          From Mass Murder to Resistance, Liberation &amp; Universal Justice
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.0pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.16;">
+          Resistance, Moral Witness &amp; Rebuilding Life
         </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 2.5px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Choice:</strong> For each milestone, choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, dramatic scenes, or visual metaphors; OR <strong>(B) Mind Map:</strong> create a central concept bubble with 3 key historical facts.
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2.5px 6px; font-family: 'Inter', sans-serif; font-size: 8.2pt; color: #000000; line-height: 1.22;">
+          <strong style="text-transform: uppercase;">Disciplinary Anchor:</strong> Across concentration camps, transit depots, and post-war Europe, individuals asserted agency: through clandestine armed revolt, unyielding moral witness, and the courageous determination to rebuild life.
         </div>
       </div>
 
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-bottom: 3px;">
-        ${rightMilestones.map(renderMilestoneBlock).join('')}
+      <!-- 3 Case Study Cards on Right Page -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; gap: 4px; margin-bottom: 2px;">
+        
+        <!-- Case Study 4: Roza Robota (Ciechanów / Auschwitz-Birkenau) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3.5px 6px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase;">
+                Case Study 4: Roza Robota &bull; Ciechanów / Auschwitz-Birkenau
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase;">
+                Camp Armed Resistance
+              </span>
+            </div>
+            <p style="font-family: 'Georgia', serif; font-size: 8.5pt; line-height: 1.26; color: #000000; margin: 0 0 2px 0;">
+              Born in Ciechanów, Poland, 21-year-old Roza joined the underground youth movement before deportation to Auschwitz-Birkenau in 1942. Working under armed SS guard in the Weichsel-Union munitions factory, Roza and a clandestine network of young Jewish women smuggled gunpowder in matchboxes to the Sonderkommando prisoners. This explosive enabled them to blow up Crematorium IV on 7 October 1944. Tortured brutally by the Gestapo, Roza never betrayed her comrades.
+            </p>
+            <div style="border-left: 2.5px solid #000000; padding-left: 5px; margin: 2px 0; background: #fbfbfb;">
+              <div style="font-family: 'Georgia', serif; font-size: 8.0pt; font-style: italic; color: #000000; line-height: 1.2;">
+                &ldquo;Her final whispered message from the torture bunker was 'Hazak V'Amatz'—Be strong and of good courage.&rdquo;
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+                &mdash; Noah Zabludowicz, Auschwitz underground resistance record (January 1945)
+              </div>
+            </div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.0pt; color: #000000; line-height: 1.2; margin-top: 1px;">
+              <strong>Historical Significance:</strong> Shatters the misconception of Jewish passivity, proving that prisoners organized clandestine armed sabotage inside the deadliest extermination camp on earth.
+            </div>
+          </div>
+          <div style="border-top: 1px dashed #000000; padding-top: 2px; margin-top: 2px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; color: #000000; margin-bottom: 1.5px; display: flex; justify-content: space-between;">
+              <span><strong>PUPIL ANALYSIS:</strong> Why was Roza Robota's smuggling network inside Auschwitz an act of extraordinary courage?</span>
+              <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 5</span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 5: Etty Hillesum (Amsterdam & Westerbork Transit Camp) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3.5px 6px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase;">
+                Case Study 5: Etty Hillesum &bull; Amsterdam / Westerbork
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase;">
+                Spiritual Witness
+              </span>
+            </div>
+            <p style="font-family: 'Georgia', serif; font-size: 8.5pt; line-height: 1.26; color: #000000; margin: 0 0 2px 0;">
+              A 27-year-old Dutch Jewish writer and intellectual in occupied Amsterdam, Etty volunteered at Westerbork transit camp to support families facing cattle-truck deportation to the East. Her diaries document the weekly terror of deportation lists while maintaining an unshakeable belief in human decency. On 7 September 1943, Etty and her family were deported to Auschwitz; she threw a postcard from the train window reading: 'We left the camp singing.' She was murdered on 30 November 1943.
+            </p>
+            <div style="border-left: 2.5px solid #000000; padding-left: 5px; margin: 2px 0; background: #fbfbfb;">
+              <div style="font-family: 'Georgia', serif; font-size: 8.0pt; font-style: italic; color: #000000; line-height: 1.2;">
+                &ldquo;I want to be the thinking heart of the barracks. If nothing else is saved from this time, let it be that we did not lose our humanity.&rdquo;
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+                &mdash; Etty Hillesum, Westerbork Letters (August 1943)
+              </div>
+            </div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.0pt; color: #000000; line-height: 1.2; margin-top: 1px;">
+              <strong>Historical Significance:</strong> Exemplifies spiritual and intellectual resistance—asserting human dignity, compassion, and moral witness against the dehumanising machinery of genocide.
+            </div>
+          </div>
+          <div style="border-top: 1px dashed #000000; padding-top: 2px; margin-top: 2px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; color: #000000; margin-bottom: 1.5px; display: flex; justify-content: space-between;">
+              <span><strong>PUPIL ANALYSIS:</strong> How did Etty Hillesum use writing and compassion to resist Nazi attempts to dehumanise victims?</span>
+              <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 3 &bull; 5</span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 6: Arek Hersh MBE (Sieradz, Poland & Windermere, UK) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3.5px 6px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; text-transform: uppercase;">
+                Case Study 6: Arek Hersh MBE &bull; Poland & The Windermere Children
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5.5px; border-radius: 2px; text-transform: uppercase;">
+                Child Survivor & Renewal
+              </span>
+            </div>
+            <p style="font-family: 'Georgia', serif; font-size: 8.5pt; line-height: 1.26; color: #000000; margin: 0 0 2px 0;">
+              Born in Sieradz, Poland in 1928, Arek was 11 when war broke out. He survived the Łódź Ghetto, slave labour camps, Auschwitz-Birkenau (surviving selection by pretending to be an adult tailor), and the freezing death march to Theresienstadt. Liberated by the Red Army in May 1945 weighing just four stone, Arek was one of 300 child survivors flown to the British Lake District (The Windermere Children) to heal and rebuild life. He settled in Leeds, dedicating his life to education.
+            </p>
+            <div style="border-left: 2.5px solid #000000; padding-left: 5px; margin: 2px 0; background: #fbfbfb;">
+              <div style="font-family: 'Georgia', serif; font-size: 8.0pt; font-style: italic; color: #000000; line-height: 1.2;">
+                &ldquo;When we landed in England and saw the mountains of Windermere, we felt we had entered paradise. We learned to laugh again, to trust human beings.&rdquo;
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+                &mdash; Arek Hersh MBE, A Detail of History (Windermere survivor testimony)
+              </div>
+            </div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.0pt; color: #000000; line-height: 1.2; margin-top: 1px;">
+              <strong>Historical Significance:</strong> Connects Holocaust survival directly to Britain’s post-war humanitarian response, child trauma rehabilitation, and lifelong educational testimony.
+            </div>
+          </div>
+          <div style="border-top: 1px dashed #000000; padding-top: 2px; margin-top: 2px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; color: #000000; margin-bottom: 1.5px; display: flex; justify-content: space-between;">
+              <span><strong>PUPIL ANALYSIS:</strong> What challenges did child survivors face after liberation when attempting to rebuild their lives?</span>
+              <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 7</span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      ${renderFooterStrip(pRightNum, 'The Living Timeline spans across the centrefold staple line (Milestones 6–10).', totalPages)}
+      ${renderFooterStrip(pRightNum, 'Six Lives &bull; Part II: Camp Revolt, Moral Witness &amp; The Windermere Children.', totalPages)}
     </div>
   </div>`;
 
   return leftHtml + '\n' + rightHtml;
 }
 
-// ============================================================================
-// FRONT COVER (PAGE 1) & BACK COVER (PAGE 20)
-// ============================================================================
 function renderCoverPage() {
   const heroImageBase64 = getBase64Image('/images/shoah_cover.jpg');
 
@@ -1673,244 +1727,229 @@ function renderCoverPage() {
 }
 
 function renderBackCover() {
-  const qrCodes = [
-    {
-      num: 1,
-      title: 'L1: Pre-War Life',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&quiz=lesson_1',
-    },
-    {
-      num: 2,
-      title: 'L2: Stripping Rights',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&quiz=lesson_2',
-    },
-    {
-      num: 3,
-      title: 'L3: Ghettos & War',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&quiz=lesson_3',
-    },
-    {
-      num: 4,
-      title: 'L4: Holocaust by Bullets',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&quiz=lesson_4',
-    },
-    {
-      num: 5,
-      title: 'L5: Final Solution',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&quiz=lesson_5',
-    },
-    {
-      num: 6,
-      title: 'L6: Complicity & Rescue',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&quiz=lesson_6',
-    },
-    {
-      num: 7,
-      title: 'L7: Legacy & Memory',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&quiz=lesson_7',
-    },
-  ];
+  const shoahTableRowsHtml = enquiryConfigs.map((enq) => {
+    const url = `https://the-history-revision-hub.netlify.app/?unit=the_shoah&lesson=${enq.lessonNum}&quiz=true`;
+    const qrSvg = generateQrSvg(url);
+      return `
+        <tr style="border-bottom: 1.5px solid #000000;">
+          <!-- Column 1: HW Dates & QR Code (Medicine Standard 21mm) -->
+          <td style="padding: 2px 2px 2px 2px; border-right: 1.5px solid #000000; vertical-align: top; width: 21mm;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100%; min-height: 25mm; box-sizing: border-box;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; white-space: nowrap; margin-top: 1px;">
+                SET: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 11mm;">&nbsp;</span>
+              </div>
+              <div style="width: 14mm; height: 14mm; margin: auto 0; display: flex; align-items: center; justify-content: center;">
+                ${qrSvg}
+              </div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; white-space: nowrap; margin-bottom: 1px;">
+                DUE: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 11mm;">&nbsp;</span>
+              </div>
+            </div>
+          </td>
 
-  const qrCardsHtml = qrCodes
-    .map(
-      (q) => `
-      <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2px 4px; background: #ffffff; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-        <div style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 900; color: #000000; margin-bottom: 1px;">
-          ${q.title}
-        </div>
-        <div style="width: 20mm; height: 20mm; margin: 1px 0;">
-          ${generateQrSvg(q.url)}
-        </div>
-        <div style="font-family: 'Inter', sans-serif; font-size: 5.8pt; color: #000000; font-weight: 700;">
-          Self-Marking Drill
-        </div>
-      </div>`,
-    )
-    .join('');
+          <!-- Column 2: Enquiry & Homework Passport -->
+          <td style="padding: 3px 6px; border-right: 1.5px solid #000000; vertical-align: top;">
+            <div style="display: flex; flex-direction: column; height: 100%; justify-content: space-between; box-sizing: border-box;">
+              <div>
+                <div style="font-weight: 900; color: #000000; font-size: 10.2pt; line-height: 1.22;">
+                  Enquiry ${enq.lessonNum}: ${enq.title}
+                </div>
+                <div style="font-size: 8.0pt; color: #1e293b; font-style: italic; margin-top: 2px; line-height: 1.25;">
+                  &ldquo;${enq.enquiryQuestion}&rdquo;
+                </div>
+              </div>
+
+              <!-- Homework Passport Strip (Clean Borderless Format) -->
+              <div style="padding-top: 2px; margin-top: 2px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 7.2pt; font-family: 'Inter', sans-serif; font-weight: 800; color: #000000; white-space: nowrap;">
+                  <span><span style="font-size: 8.0pt;">&#9633;</span> <strong>Read Aloud / Audio Tracked</strong></span>
+                  <span style="margin-left: 6px;"><strong>5-Q Online Quiz:</strong> <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 10mm; margin: 0 2px;">&nbsp;</span><strong style="font-size: 8.6pt;">/ 5</strong></span>
+                </div>
+                <div style="display: flex; align-items: flex-end; font-size: 7.2pt; font-family: 'Inter', sans-serif; font-weight: 900; color: #000000; margin-top: 1px;">
+                  <span style="white-space: nowrap; margin-right: 6px;">Parent / Carer Signature:</span>
+                  <div style="flex: 1; border-bottom: 1.4px solid #000000; height: 13px;"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+
+          <!-- Column 3: In-Class Do Now (Recall) -->
+          <td style="padding: 2px 2px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 18mm; white-space: nowrap;">
+            <span style="font-size: 9.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.5px solid #000; width: 10mm; margin-right: 2px;">&nbsp;</span><strong>/ 5</strong></span>
+          </td>
+
+          <!-- Column 4: KS3 Level / Effort (Open Cell for Teacher Hand-Marking) -->
+          <td style="padding: 4px 4px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 22mm;">
+            &nbsp;
+          </td>
+
+          <!-- Column 5: Spellings / Feedback (Clean Writing Lines for the Teacher) -->
+          <td style="padding: 3px 5px; vertical-align: middle; width: 34mm;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; height: 23mm; box-sizing: border-box; padding: 1px 0;">
+              <div style="border-bottom: 1px dashed #cbd5e1; height: 6.5mm;"></div>
+              <div style="border-bottom: 1px dashed #cbd5e1; height: 6.5mm;"></div>
+              <div style="border-bottom: 1px dashed #cbd5e1; height: 6.5mm;"></div>
+            </div>
+          </td>
+        </tr>
+      `;
+    })
+    .join('\n');
 
   return `
   <!-- PAGE 20: OUTSIDE BACK COVER (COLOR COVERS) -->
-  <div class="page page-container recto-page" id="page-20" style="padding: 5mm 7mm; background: #ffffff;">
-    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px;">
+  <div class="page page-container recto-page" id="page-20" style="padding: 4mm 6mm; background: #ffffff;">
+    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box;">
       
-      <!-- Back Cover Masthead -->
-      <div style="border-bottom: 2.5px solid #1e3a8a; padding-bottom: 3px; display: flex; justify-content: space-between; align-items: baseline;">
-        <div style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; color: #1e3a8a; letter-spacing: 1px; text-transform: uppercase;">
-          The History Revision Hub &bull; Assessment &amp; Independent Retrieval
-        </div>
-        <span style="background: #1e3a8a; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 900; padding: 1.5px 6px; border-radius: 2px;">
-          KS3 LEDGER
-        </span>
-      </div>
-
-      <!-- Pupil Details & Target Level Strip -->
-      <div style="border: 1.5px solid #1e3a8a; border-radius: 3px; padding: 6px 10px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1.3fr; gap: 12px; align-items: center;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #1e3a8a; text-transform: uppercase; margin-right: 6px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.2px solid #1e3a8a; height: 12px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #1e3a8a; text-transform: uppercase; margin-right: 6px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.2px solid #1e3a8a; height: 12px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #1e3a8a; text-transform: uppercase; margin-right: 6px;">Target Level:</strong>
-          <div style="flex: 1; border-bottom: 1.2px solid #1e3a8a; height: 12px;"></div>
+      <!-- Top Departmental Header Bar -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 3px;" data-department-name="The History Department">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="school-brand-target" style="font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;">The History Department</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #000000;">
+            Key Stage 3 Progress &amp; Homework Passport
+          </span>
         </div>
       </div>
 
-      <!-- KS3 Level Assessment Pathways -->
-      <div style="border: 1.5px solid #1e3a8a; border-radius: 3px; padding: 5px 8px; background: #f8fafc;">
-        <div style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 900; color: #1e3a8a; text-transform: uppercase; margin-bottom: 3px;">
-          KS3 Disciplinary Historical Writing Progression Standard
+      <!-- Pupil Information & Target Level Strip -->
+      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 4px 10px; background: #ffffff; display: grid; grid-template-columns: 2.2fr 1fr 1.6fr; gap: 12px; align-items: center; margin-bottom: 3px;">
+        <div style="display: flex; align-items: baseline; gap: 6px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; text-transform: uppercase;">Pupil Name:</span>
+          <div style="border-bottom: 1.4px solid #000000; flex: 1; height: 14px;"></div>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 4px; font-size: 6.8pt; font-family: 'Georgia', serif;">
-          <div style="border: 1px solid #cbd5e1; padding: 3px 5px; background: #ffffff; border-radius: 2px;">
-            <strong style="color: #000000; font-family: 'Inter', sans-serif;">Emerging (1–3):</strong> Identifies simple facts and descriptions; relies on simple descriptive sentences.
-          </div>
-          <div style="border: 1px solid #cbd5e1; padding: 3px 5px; background: #ffffff; border-radius: 2px;">
-            <strong style="color: #000000; font-family: 'Inter', sans-serif;">Developing (4–5):</strong> Explains causes and consequences using historical connectives and accurate dates.
-          </div>
-          <div style="border: 1px solid #cbd5e1; padding: 3px 5px; background: #ffffff; border-radius: 2px;">
-            <strong style="color: #000000; font-family: 'Inter', sans-serif;">Securing (6–7):</strong> Constructs balanced, multi-causal arguments supported by specific empirical evidence.
-          </div>
-          <div style="border: 1px solid #cbd5e1; padding: 3px 5px; background: #ffffff; border-radius: 2px;">
-            <strong style="color: #000000; font-family: 'Inter', sans-serif;">Greater Depth (8–9):</strong> Evaluates criteria, analyzes provenance forensic utility, and reaches nuanced judgments.
-          </div>
+        <div style="display: flex; align-items: baseline; gap: 6px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; text-transform: uppercase;">Class:</span>
+          <div style="border-bottom: 1.4px solid #000000; flex: 1; height: 14px;"></div>
+        </div>
+        <div style="display: flex; align-items: baseline; gap: 6px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; text-transform: uppercase;">Target KS3 Level:</span>
+          <div style="border-bottom: 1.4px solid #000000; flex: 1; height: 14px;"></div>
         </div>
       </div>
 
-      <!-- Formal Marking & Progress Ledger -->
-      <div style="border: 1.5px solid #000000; border-radius: 3px; overflow: hidden; background: #ffffff; flex: 1; display: flex; flex-direction: column;">
-        <div style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8pt; font-weight: 900; padding: 3px 8px; text-transform: uppercase; letter-spacing: 0.5px;">
-          Formal Enquiry Assessment Ledger &bull; Teacher &amp; Pupil Voice
+      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
+      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
+          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
+            Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
+          </strong>
+          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
+            Years 7–9 Standards
+          </span>
         </div>
-        <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 7.3pt; text-align: left; height: 100%;">
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 6.6pt; line-height: 1.25;">
+          
+          <!-- Emerging (1–2) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
+                Emerging (1–2)
+              </div>
+              Recalls key facts, dates, and people; describes what happened using simple sentences or writing frames.
+            </div>
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Remembers basic names, dates, and keywords when supported with prompts.
+            </div>
+          </div>
+
+          <!-- Emerging+ (3) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
+                Emerging+ (3)
+              </div>
+              Explains reasons why events happened; begins to describe causes and consequences using clear historical examples.
+            </div>
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Remembers why events happened; explains causes and consequences using clear examples.
+            </div>
+          </div>
+
+          <!-- Expected (4–5) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
+                Expected (4–5)
+              </div>
+              Explains multiple causes and consequences in clear paragraphs using precise historical vocabulary.
+            </div>
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Securely recalls vocabulary, dates, and multi-step causes from previous weeks.
+            </div>
+          </div>
+
+          <!-- Expected+ (6–7) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
+                Expected+ (6–7)
+              </div>
+              Weighs up different causes and historical viewpoints; explains why certain factors mattered more using evidence.
+            </div>
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Independently retrieves detailed evidence and connects factors across the whole unit.
+            </div>
+          </div>
+
+          <!-- Greater Depth (8–9) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
+                Greater Depth (8–9)
+              </div>
+              Reaches a convincing, well-argued overall judgement; explains how long-term causes and turning points connect.
+            </div>
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Effortlessly retrieves long-term schema; connects prior units and eras to present topics.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Main Assessment Ledger Table (Medicine Style, Zero Mark Tallying) -->
+      <div style="border: 1.5px solid #000000; border-radius: 4px; overflow: hidden; margin-bottom: 3px; flex: 1; display: flex; flex-direction: column;">
+        <table style="width: 100%; height: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; flex: 1;">
           <thead>
-            <tr style="background: #f1f5f9; border-bottom: 1.2px solid #000000;">
-              <th style="padding: 4px 6px; border-right: 1px solid #000000;">Enquiry</th>
-              <th style="padding: 4px 6px; border-right: 1px solid #000000;">Disciplinary Skill Focus</th>
-              <th style="padding: 4px 6px; border-right: 1px solid #000000; width: 55px; text-align: center;">Tariff</th>
-              <th style="padding: 4px 6px; border-right: 1px solid #000000; width: 55px; text-align: center;">Do Now (/5)</th>
-              <th style="padding: 4px 6px; border-right: 1px solid #000000; width: 45px; text-align: center;">Score</th>
-              <th style="padding: 4px 6px; border-right: 1px solid #000000; width: 45px; text-align: center;">Effort</th>
-              <th style="padding: 4px 6px;">Teacher Signature / Feedback Stamp</th>
+            <tr style="border-bottom: 1.5px solid #000000; background: #f8fafc; height: 7.5mm;">
+              <th style="padding: 2px 2px; width: 21mm; text-align: center; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
+                HW &amp; QR
+              </th>
+              <th style="padding: 2px 6px; text-align: left; font-size: 7.6pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
+                Enquiry / Disciplinary Inquiry Focus
+              </th>
+              <th style="padding: 2px 2px; width: 18mm; text-align: center; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
+                Do Now (/5)
+              </th>
+              <th style="padding: 2px 2px; width: 22mm; text-align: center; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
+                KS3 Level / Effort
+              </th>
+              <th style="padding: 2px 5px; width: 34mm; text-align: left; font-size: 7.4pt; font-weight: 900; text-transform: uppercase;">
+                Spellings / Feedback
+              </th>
             </tr>
           </thead>
           <tbody>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Enquiry 1</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Pre-War Diversity &amp; Racial Antisemitism</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">4m + 4m</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; font-weight: 800;"><span style="color: #64748b;">/ 5</span></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Enquiry 2</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Nuremberg Laws &amp; Kristallnacht Escalation</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">8m Narrative</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; font-weight: 800;"><span style="color: #64748b;">/ 5</span></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Enquiry 3</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Warsaw Ghetto &amp; Ringelblum Archive</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">8m Utility</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; font-weight: 800;"><span style="color: #64748b;">/ 5</span></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Enquiry 4</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Barbarossa &amp; The Holocaust by Bullets</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">12m Essay</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; font-weight: 800;"><span style="color: #64748b;">/ 5</span></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Enquiry 5</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Final Solution &amp; Armed Resistance</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">4m + 8m</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; font-weight: 800;"><span style="color: #64748b;">/ 5</span></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Enquiry 6</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Complicity, Bystanders &amp; The Righteous</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">8m Narrative</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; font-weight: 800;"><span style="color: #64748b;">/ 5</span></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Enquiry 7</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Liberation, Aftermath &amp; Genocide Law</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">12m Essay</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; font-weight: 800;"><span style="color: #64748b;">/ 5</span></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-bottom: 1px solid #000000; background: #f8fafc;">
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Portfolio</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">Pages 18–19 Notes &amp; Retrieval Portfolio</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">Formative</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; color: #94a3b8;">—</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; font-weight: 700;">Summative</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;">End-of-Unit Disciplinary Assessment</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center;">Synoptic</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #000000; text-align: center; font-size: 8pt; color: #94a3b8;">—</td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px; border-right: 1px solid #000000;"></td>
-<td style="padding: 8px 6px;"></td>
-            </tr>
-            <tr style="border-top: 1.5px solid #000000; background: #f8fafc;">
-              <td style="padding: 6px 6px; border-right: 1px solid #000000; font-weight: 900; text-align: center;">★</td>
-              <td style="padding: 6px 6px; border-right: 1px solid #000000; font-weight: 900; font-size: 7.5pt; text-transform: uppercase;">
-                Unit Retrieval Starter Total:
+            ${shoahTableRowsHtml}
+            <!-- Formative Unit Sign-off Row (Zero Mark Tallying) -->
+            <tr style="background: #f8fafc; border-top: 1.8px solid #000000;">
+              <td colspan="2" style="padding: 4px 8px; border-right: 1.5px solid #000000; font-size: 7.8pt; font-weight: 900; text-transform: uppercase;">
+                Unit Overall Outcome: &nbsp;&nbsp;
+                <span style="font-weight: 700; color: #475569; font-size: 7.2pt;">[ Emerging &bull; Emerging+ &bull; Expected &bull; Expected+ &bull; Greater Depth ]</span>
               </td>
-              <td style="padding: 6px 6px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 7.5pt;">Synoptic</td>
-              <td style="padding: 6px 6px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 8pt;">
-                <span style="color: #64748b;">/ 35</span>
-              </td>
-              <td colspan="3" style="padding: 6px 6px; font-size: 6.8pt; color: #475569;">
-                Overall Retrieval Grade: &nbsp;&nbsp; [ Emerging &bull; Expected &bull; Greater Depth ]
+              <td colspan="3" style="padding: 4px 8px; font-size: 7.4pt; font-weight: 800; color: #000000;">
+                Teacher Signature: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 30mm; margin-right: 8px;">&nbsp;</span> 
+                Date: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 18mm;">&nbsp;</span>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 7 Interactive Digital Retrieval QR Codes -->
-      <div style="border: 1.5px solid #1e3a8a; border-radius: 3px; padding: 4px 6px; background: #f8fafc;">
-        <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; color: #1e3a8a; text-transform: uppercase; margin-bottom: 3px; display: flex; justify-content: space-between;">
-          <span>Digital Knowledge Retrieval Engine &bull; Instant Mobile Practice</span>
-          <span>7 Enquiries &bull; 70 Interactive Questions</span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;">
-          ${qrCardsHtml}
-        </div>
-      </div>
-
-      <!-- Running Back Cover Footer -->
-      <div class="page-footer-strip" style="display: flex; justify-content: space-between; align-items: center; border-top: 1.2px solid #000000; padding-top: 2px; font-family: 'Inter', sans-serif; font-size: 7.0pt; color: #000000; font-weight: 700;">
-        <span class="footer-quip">The History Revision Hub &bull; Single-Source Disciplinary Architecture</span>
-        <span class="footer-page-num">Page 20 / 20</span>
+      <!-- Reprographics Running Footer -->
+      <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; color: #475569; display: flex; justify-content: space-between; border-top: 1.2px solid #000000; padding-top: 2px;">
+        <span>The History Revision Hub &bull; Key Stage 3 Master Curriculum Series &bull; Retain for Parent Consultations</span>
+        <span>Page 20 / 20</span>
       </div>
 
     </div>
@@ -1959,11 +1998,11 @@ async function compileTheShoahWorkbook() {
   pagesHtml += renderSpinePage(enquiryConfigs[6], 16, 20) + '\n';
   pagesHtml += renderRightPage(enquiryConfigs[6], 17, 20) + '\n';
 
-  // Page 18: Disciplinary Writing Scaffolding & Master Model Answers (Questions 1–3)
-  pagesHtml += renderModelAnswersPage(18, 20) + '\n';
+  // Page 18: Notes & Extended Writing Canvas (Exercise Book Standard - Zero Model Answers)
+  pagesHtml += renderNotesPage(18, 'Evidence, Chronology & Contextual Analysis', 20) + '\n';
 
-  // Page 19: Extended Evaluative Essay Model Answer & Archival Provenance (Question 5)
-  pagesHtml += renderEvaluativeEssayModelPage(19, 20) + '\n';
+  // Page 19: Notes & Extended Writing Canvas (Exercise Book Standard - Zero Model Answers)
+  pagesHtml += renderNotesPage(19, 'Historical Judgment, Significance & Disciplinary Synthesis', 20) + '\n';
 
   // Page 20: Outside Back Cover
   pagesHtml += renderBackCover() + '\n';
@@ -2022,44 +2061,51 @@ async function compileTheShoahWorkbook() {
       min-height: 0;
     }
     .task-line {
-      height: 7.8mm;
-      border-bottom: 1.2px solid #000000;
+      height: 8.0mm;
+      border-bottom: 0.85px solid #000000;
       width: 100%;
       box-sizing: border-box;
       margin: 0;
     }
-    .stage-trigger-col {
-      width: 26mm;
-      flex-shrink: 0;
-      background: #f8fafc;
+    .spine-stage-block {
       display: flex;
       flex-direction: column;
-      border-right: 1.2px solid #000000;
+      width: 100%;
+      border: none !important;
+      background: transparent !important;
       box-sizing: border-box;
     }
-    .trigger-fact-cell {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      padding: 0 3px;
+    .evaluative-stage-block {
+      border: none !important;
     }
-    .stage-writing-col {
-      flex: 1;
+    .stage-writing-canvas {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      background: #ffffff;
+      background: transparent;
       box-sizing: border-box;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    .evaluative-banner {
+      background: #000000 !important;
+      color: #ffffff !important;
+    }
+    .cornell-note-line {
+      height: 8.0mm;
+      border-bottom: 0.85px solid #000000;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
     }
     .ruled-line {
-      height: 8.2mm;
-      border-bottom: 0.8px solid #000000;
+      height: 7.8mm;
+      border-bottom: 0.9px solid #000000 !important;
+      width: 100%;
       box-sizing: border-box;
+      margin: 0;
     }
-    .ruled-line:last-child {
-      border-bottom: none;
-    }
-    .ruled-lines-block {
+.ruled-lines-block {
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -2142,14 +2188,6 @@ ${pagesHtml}
     });
     await browser.close();
     console.log(`🎉 Successfully rendered 20-Page Gold Standard PDF to: ${pdfOutPath}`);
-    const pdfCompatPath = path.join(
-      ROOT_DIR,
-      'public',
-      'pdfs',
-      'the_shoah_pupil_workbook_FINAL_V17.pdf',
-    );
-    fs.copyFileSync(pdfOutPath, pdfCompatPath);
-    console.log(`✅ Also synchronized PDF to: ${pdfCompatPath}`);
   } catch (err) {
     console.warn(`⚠️ Puppeteer PDF generation failed or skipped: ${err.message}`);
     console.log(

@@ -407,8 +407,11 @@ function renderDisciplinaryLexiconHTML(items) {
 }
 
 function renderHomeworkStationHTML(readingData, unitId) {
+  const doNowItems = readingData.do_now_preview || [];
   const questions = readingData.questions || [];
   const lessonNum = readingData.lesson_index + 1;
+  const enquiryBadge = readingData.lesson_label || (readingData.lesson_key ? `KT ${readingData.lesson_key}` : `Enquiry ${lessonNum}`);
+  const hasDoNow = doNowItems.length > 0;
 
   return `
     <div class="reading-hw-station">
@@ -417,67 +420,109 @@ function renderHomeworkStationHTML(readingData, unitId) {
       <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #ffffff; padding: 22px 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
         <div style="display: flex; align-items: center; gap: 14px;">
           <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(255,255,255,0.12); border: 1.5px solid rgba(255,255,255,0.2); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">
-            <i class="fa-solid fa-book-open-reader"></i>
+            <i class="fa-solid fa-bullseye"></i>
           </div>
           <div>
             <div style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #38bdf8; margin-bottom: 2px;">
-              Oral Home Reading & Knowledge Retrieval
+              ${hasDoNow ? 'Priming Next Lesson’s Retrieval Starter • Zero Teacher Workload' : 'Oral Home Reading & Knowledge Retrieval'}
             </div>
             <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #ffffff;">
-              Enquiry ${lessonNum} Disciplinary Oral Reading & Discussion Task
+              ${hasDoNow ? `🎯 Next Lesson’s "Do Now" Starter Priming (10 Recall Questions)` : `${enquiryBadge} Disciplinary Oral Reading & Discussion Task`}
             </h3>
           </div>
         </div>
 
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <button type="button" id="btn-hw-qr-share-${readingData.lesson_index}" class="btn" style="background: #0284c7; color: #ffffff; border: 1px solid #38bdf8; font-weight: 700; font-size: 0.85rem; padding: 8px 14px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(2,132,199,0.3);">
-            <i class="fa-solid fa-qrcode"></i> <span>Mobile QR & Parent Link</span>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+          <button type="button" onclick="if(window.startQuiz) { window.startQuiz('${readingData.lesson_id || readingData.lesson_index}', true); }" class="btn" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); color: #ffffff; border: 1.5px solid #34d399; font-weight: 800; font-size: 0.88rem; padding: 8px 16px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(16,185,129,0.35);">
+            <i class="fa-solid fa-play"></i> <span>Take 10-Q Online Quiz</span>
           </button>
-          <a href="/?view=marking&unit=${unitId}" class="btn" style="background: #10b981; color: #ffffff; border: 1px solid #34d399; font-weight: 700; font-size: 0.85rem; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(16,185,129,0.3);">
-            <i class="fa-solid fa-clipboard-check"></i> <span>Self-Check: Marking Bank ↗</span>
-          </a>
+          <button type="button" id="btn-hw-qr-share-${readingData.lesson_index}" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.85rem; padding: 8px 14px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-qrcode"></i> <span>Mobile QR</span>
+          </button>
         </div>
       </div>
 
       <!-- Instruction Strip -->
       <div style="padding: 16px 26px; background: #f8fafc; border-bottom: 1.5px solid #e2e8f0; font-size: 0.9rem; color: #334155; line-height: 1.55; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-        <div style="display: flex; align-items: flex-start; gap: 10px; max-width: 820px;">
-          <i class="fa-solid fa-volume-high" style="color: #0284c7; font-size: 1.15rem; margin-top: 2px;"></i>
+        <div style="display: flex; align-items: flex-start; gap: 10px; max-width: 860px;">
+          <i class="fa-solid fa-graduation-cap" style="color: #2563eb; font-size: 1.25rem; margin-top: 2px;"></i>
           <span>
-            <strong>Pupil Homework Instructions (100% Oral Task — No Writing Required):</strong> Read the extract aloud (or listen along with the natural audio voice) with a parent, carer, or peer. Talk through the oral discussion prompt together, then answer each retrieval question aloud in complete sentences. When finished, tap <strong>Self-Check: Marking Bank</strong> to review model answers together!
+            ${
+              hasDoNow
+                ? '<strong>Next Lesson’s Starter Priming:</strong> These 10 recall questions test what you learned in this lesson and will appear on the board at the start of next lesson. Review and answer them aloud, check the model answers, and tap <strong>Take 10-Q Online Quiz</strong> to test yourself and record your score in your printed workbook passport!'
+                : '<strong>Pupil Homework Instructions:</strong> Read the extract aloud with a parent, carer, or peer. Talk through the oral discussion prompt together, then answer each retrieval question aloud in complete sentences.'
+            }
           </span>
         </div>
         <span style="font-size: 0.74rem; font-weight: 800; color: #0369a1; background: #e0f2fe; padding: 4px 10px; border-radius: 6px; border: 1px solid #bae6fd; white-space: nowrap;">
-          <i class="fa-solid fa-comments"></i> 100% Oral Discussion • Zero Writing Required
+          <i class="fa-solid fa-brain"></i> Previous Lesson Recall
         </span>
       </div>
 
       <!-- Question Cards Grid -->
-      <div style="padding: 24px 26px; display: flex; flex-direction: column; gap: 16px;">
+      <div style="padding: 24px 26px; display: flex; flex-direction: column; gap: 14px;">
         ${
-          questions.length > 0
+          hasDoNow
+            ? doNowItems
+                .map((item) => {
+                  const tagText = 'PREVIOUS LESSON';
+                  const tagColor = '#2563eb';
+                  const tagBg = '#eff6ff';
+                  const tagBorder = '#bfdbfe';
+
+                  return `
+            <div class="reading-question-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 16px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 0.78rem; font-weight: 900; background: #1e3a8a; color: #ffffff; padding: 3px 10px; border-radius: 6px;">
+                    Question ${item.num}
+                  </span>
+                  <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: ${tagColor}; background: ${tagBg}; border: 1px solid ${tagBorder}; padding: 2px 8px; border-radius: 4px;">
+                    ${tagText}
+                  </span>
+                </div>
+                <span style="font-size: 0.74rem; font-weight: 700; color: #059669; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
+                  <i class="fa-solid fa-check-double"></i> Next Lesson’s Starter
+                </span>
+              </div>
+              <div style="font-size: 1.02rem; font-weight: 700; color: #0f172a; line-height: 1.45; margin-top: 2px;">
+                ${item.question}
+              </div>
+              <details style="margin-top: 6px; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 12px; cursor: pointer;">
+                <summary style="font-size: 0.8rem; font-weight: 700; color: #2563eb; outline: none; user-select: none; display: flex; align-items: center; gap: 6px;">
+                  <i class="fa-solid fa-key" style="color: #3b82f6;"></i> <span>Check Model Answer</span>
+                </summary>
+                <div style="font-size: 0.88rem; color: #0f172a; margin-top: 6px; line-height: 1.45; font-weight: 600; padding-top: 6px; border-top: 1px dashed #e2e8f0;">
+                  ${item.answer}
+                </div>
+              </details>
+            </div>
+          `;
+                })
+                .join('')
+            : questions.length > 0
             ? questions
                 .map(
                   (qText, qIdx) => `
-          <div class="reading-question-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 16px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); display: flex; flex-direction: column; gap: 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <span style="font-size: 0.78rem; font-weight: 900; background: #1e3a8a; color: #ffffff; padding: 3px 10px; border-radius: 6px;">
-                  Question ${qIdx + 1}
-                </span>
-                <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: #64748b; background: #f1f5f9; padding: 2px 8px; border-radius: 4px;">
-                  Oral Retrieval
+            <div class="reading-question-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 16px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 0.78rem; font-weight: 900; background: #1e3a8a; color: #ffffff; padding: 3px 10px; border-radius: 6px;">
+                    Question ${qIdx + 1}
+                  </span>
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: #64748b; background: #f1f5f9; padding: 2px 8px; border-radius: 4px;">
+                    Oral Retrieval
+                  </span>
+                </div>
+                <span style="font-size: 0.74rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
+                  <i class="fa-solid fa-comment-dots"></i> Discuss Aloud
                 </span>
               </div>
-              <span style="font-size: 0.74rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
-                <i class="fa-solid fa-comment-dots"></i> Discuss & Answer Aloud
-              </span>
+              <div style="font-size: 1.04rem; font-weight: 700; color: #0f172a; line-height: 1.45; margin-top: 2px;">
+                ${qText}
+              </div>
             </div>
-            <div style="font-size: 1.04rem; font-weight: 700; color: #0f172a; line-height: 1.45; margin-top: 2px;">
-              ${qText}
-            </div>
-          </div>
-        `
+          `
                 )
                 .join('')
             : `
@@ -490,17 +535,17 @@ function renderHomeworkStationHTML(readingData, unitId) {
 
       <!-- Bottom Action Strip -->
       <div style="padding: 14px 26px; background: #f1f5f9; border-top: 1.5px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <button type="button" id="btn-copy-hw-questions-${readingData.lesson_index}" class="btn" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; padding: 7px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-copy"></i> <span id="copy-hw-btn-text-${readingData.lesson_index}">Copy Discussion Questions</span>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+          <button type="button" onclick="if(window.startQuiz) { window.startQuiz('${readingData.lesson_id || readingData.lesson_index}', true); }" class="btn" style="background: #059669; color: #ffffff; border: none; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-circle-check"></i> <span>Launch 10-Q Online Quiz</span>
           </button>
           <button type="button" id="btn-hw-qr-bottom-${readingData.lesson_index}" class="btn" style="background: #ffffff; color: #0284c7; border: 1px solid #bfdbfe; padding: 7px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
             <i class="fa-solid fa-mobile-screen"></i> <span>Show Mobile QR</span>
           </button>
         </div>
-        <a href="/?view=marking&unit=${unitId}" style="color: #1e3a8a; font-weight: 700; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-          <span>Open Full Enquiry Marking Bank</span> <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        <div style="font-size: 0.82rem; font-weight: 700; color: #64748b;">
+          Record score in printed workbook passport (Score: [ &nbsp; ] / 10)
+        </div>
       </div>
 
     </div>
@@ -530,7 +575,38 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   }
 
   // Find the initial reading
-  let activeIndex = guidedReadingData.findIndex((d) => d.lesson_index === currentLessonIndex);
+  const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+  const rawLesson = globalState.rawLesson || (urlParams ? urlParams.get('lesson') : null);
+
+  let activeIndex = -1;
+  if (rawLesson !== null) {
+    const rawLower = String(rawLesson).trim().toLowerCase();
+    // 1. Match by exact lesson_id (e.g. 'lesson_5_1')
+    activeIndex = guidedReadingData.findIndex((d) => d.lesson_id && d.lesson_id.toLowerCase() === rawLower);
+    // 2. Match by lesson_key (e.g. '5.1' or '5_1')
+    if (activeIndex === -1) {
+      activeIndex = guidedReadingData.findIndex((d) => d.lesson_key && (d.lesson_key.toLowerCase() === rawLower || `kt ${d.lesson_key}`.toLowerCase() === rawLower || `kt${d.lesson_key}`.toLowerCase() === rawLower));
+    }
+    // 3. Match by lesson_label
+    if (activeIndex === -1) {
+      activeIndex = guidedReadingData.findIndex((d) => d.lesson_label && d.lesson_label.toLowerCase() === rawLower);
+    }
+    // 4. Numeric match
+    if (activeIndex === -1) {
+      const parsedNum = parseInt(rawLower.replace(/[^0-9]/g, ''), 10);
+      if (!isNaN(parsedNum)) {
+        // match lesson_index
+        activeIndex = guidedReadingData.findIndex((d) => d.lesson_index === parsedNum || d.lesson_index === parsedNum - 1);
+        // match array index if between 1 and guidedReadingData.length
+        if (activeIndex === -1 && parsedNum >= 1 && parsedNum <= guidedReadingData.length) {
+          activeIndex = parsedNum - 1;
+        }
+      }
+    }
+  }
+  if (activeIndex === -1) {
+    activeIndex = guidedReadingData.findIndex((d) => d.lesson_index === currentLessonIndex);
+  }
   if (activeIndex === -1) activeIndex = 0;
   let activeReading = guidedReadingData[activeIndex];
 
@@ -560,7 +636,23 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     bookletUrl = '/pdfs/industrialisation_and_empire_pupil_workbook.pdf';
     bookletLabel = 'Pupil Booklet (PDF)';
     isBookletPdf = true;
+  } else if (unitId === 'edexcel_medicine') {
+    bookletUrl = '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf';
+    bookletLabel = 'Western Front Workbook (PDF)';
+    isBookletPdf = true;
   }
+
+  const isGcseCourse = Boolean(
+    (globalState.unitData && (globalState.unitData.keyStage === 'Key Stage 4' || globalState.unitData.key_stage === 'GCSE' || globalState.unitData.keyStage === 'GCSE')) ||
+    unitId.startsWith('edexcel_') ||
+    unitId === 'usa' ||
+    unitId === 'cme_new' ||
+    unitId === 'weimar_nazi_germany' ||
+    unitId === 'cold_war'
+  );
+  const stageBadge = isGcseCourse
+    ? 'Edexcel GCSE (9–1) History • Disciplinary Literacy & Oral Reading Companion'
+    : 'Key Stage 3 • Disciplinary Literacy & Oral Reading Companion';
 
   masthead.className = 'reading-masthead';
   masthead.style.cssText = `
@@ -579,7 +671,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   masthead.innerHTML = `
     <div>
       <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #f59e0b; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
-        <i class="fa-solid fa-feather-pointed"></i> <span>Key Stage 3 • Disciplinary Literacy & Oral Reading Companion</span>
+        <i class="fa-solid fa-feather-pointed"></i> <span>${stageBadge}</span>
       </div>
       <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.85rem; font-weight: 900; line-height: 1.2; color: #ffffff;">
         Literary Companion & Audio Read-Aloud Studio
@@ -589,18 +681,46 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       </p>
     </div>
     <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <button type="button" id="btn-masthead-back-lesson" class="btn" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 1.5px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; transition: background 0.15s ease;" onmouseover="this.style.background='rgba(255,255,255,0.25)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';" title="Return to Lesson">
+        <i class="fa-solid fa-arrow-left" style="color: #38bdf8;"></i> <span>Back to Lesson</span>
+      </button>
       <button type="button" id="btn-masthead-qr-share" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer;">
         <i class="fa-solid fa-qrcode" style="color: #38bdf8;"></i> <span>Mobile QR & Link</span>
       </button>
       <a href="${bookletUrl}" target="_blank" rel="noopener noreferrer" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
         <i class="fa-solid ${isBookletPdf ? 'fa-file-pdf' : 'fa-book-open'}" style="color: ${isBookletPdf ? '#f87171' : '#38bdf8'};"></i> <span>${bookletLabel}</span>
       </a>
-      <a href="/?view=marking&unit=${unitId}" class="btn" style="background: #2563eb; color: #ffffff; border: 1px solid #3b82f6; font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+      <button type="button" id="btn-masthead-marking-answers" class="btn" style="background: #2563eb; color: #ffffff; border: 1px solid #3b82f6; font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer;">
         <i class="fa-solid fa-clipboard-check"></i> <span>Self-Check Answers</span>
-      </a>
+      </button>
     </div>
   `;
   outerWrapper.appendChild(masthead);
+
+  // Wire Masthead Back to Lesson Button
+  const backToLessonBtn = masthead.querySelector('#btn-masthead-back-lesson');
+  if (backToLessonBtn) {
+    backToLessonBtn.onclick = () => {
+      const targetLessonIndex = activeReading && typeof activeReading.lesson_index === 'number' ? activeReading.lesson_index : 0;
+      if (typeof window.switchView === 'function') {
+        window.switchView('lessons', unitId, false, { lessonIndex: targetLessonIndex });
+      } else {
+        window.location.href = `/?unit=${unitId}&lesson=${activeReading ? (activeReading.lesson_key || activeReading.lesson_id || targetLessonIndex + 1) : 1}`;
+      }
+    };
+  }
+
+  // Wire Masthead Marking Answers Button
+  const markingAnswersBtn = masthead.querySelector('#btn-masthead-marking-answers');
+  if (markingAnswersBtn) {
+    markingAnswersBtn.onclick = () => {
+      if (typeof window.switchView === 'function') {
+        window.switchView('marking', unitId);
+      } else {
+        window.location.href = `/?view=marking&unit=${unitId}`;
+      }
+    };
+  }
 
   // Wire Masthead QR Share Button
   const mastheadQrBtn = masthead.querySelector('#btn-masthead-qr-share');
@@ -619,6 +739,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     const btn = document.createElement('button');
     btn.type = 'button';
     const isSelected = i === activeIndex;
+    const tabLabel = data.lesson_label || (data.lesson_key ? `KT ${data.lesson_key}` : `Enquiry ${data.lesson_index + 1}`);
     btn.style.cssText = `
       padding: 9px 15px;
       font-size: 0.88rem;
@@ -635,7 +756,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
           : 'background: #ffffff; color: #334155; border: 1.5px solid #cbd5e1;'
       }
     `;
-    btn.innerHTML = `<i class="fa-solid fa-book-bookmark" style="${isSelected ? 'color: #93c5fd;' : 'color: #64748b;'}"></i> <span>Enquiry ${data.lesson_index + 1}: ${data.book_title || 'Extract ' + (i + 1)}</span>`;
+    btn.innerHTML = `<i class="fa-solid fa-book-bookmark" style="${isSelected ? 'color: #93c5fd;' : 'color: #64748b;'}"></i> <span>${tabLabel}: ${data.book_title || 'Extract ' + (i + 1)}</span>`;
     btn.onclick = () => {
       cancelReadingSpeech();
       activeIndex = i;
@@ -656,7 +777,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
         const url = new URL(window.location);
         url.searchParams.set('view', 'reading');
         url.searchParams.set('unit', unitId);
-        url.searchParams.set('lesson', data.lesson_index + 1);
+        url.searchParams.set('lesson', data.lesson_key || data.lesson_id || (data.lesson_index + 1));
         window.history.replaceState({ view: 'reading', unit: unitId, lesson: data.lesson_index }, '', url);
       }
     };
@@ -690,40 +811,60 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     const glossaryItems = extractGlossaryItems(rawExtract, readingData.vocabVault);
     const lexiconHtml = renderDisciplinaryLexiconHTML(glossaryItems);
 
+    const isPrimary = readingData.is_primary === true;
+    const sourceBadgeLabel = readingData.source_type_label || (
+      isPrimary ? 'Eyewitness Primary Source' : 'Curated Literature & Scholarship'
+    );
+    let badgeIcon = 'fa-solid fa-book-open';
+    let badgeBg = '#f0fdfa';
+    let badgeColor = '#0f766e';
+    let badgeBorder = '#99f6e4';
+
+    if (isPrimary) {
+      badgeIcon = 'fa-solid fa-scroll';
+      badgeBg = '#ecfdf5';
+      badgeColor = '#065f46';
+      badgeBorder = '#a7f3d0';
+    } else if (readingData.source_type === 'historical_scholarship' || readingData.source_type === 'historiographical_debate') {
+      badgeIcon = 'fa-solid fa-graduation-cap';
+      badgeBg = '#f5f3ff';
+      badgeColor = '#5b21b6';
+      badgeBorder = '#ddd6fe';
+    } else if (readingData.source_type === 'historical_fiction' || readingData.source_type === 'classic_literature') {
+      badgeIcon = 'fa-solid fa-feather-pointed';
+      badgeBg = '#eff6ff';
+      badgeColor = '#1e40af';
+      badgeBorder = '#bfdbfe';
+    }
+
     target.innerHTML = `
       <div class="guided-reading-card" style="background: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1.5px solid #e2e8f0; overflow: hidden;">
         
         <!-- Top Hero Section: Book Cover, Metadata, Author Context, and Audio Studio -->
-        <div class="reading-hero-grid" style="padding: 28px; background: #f8fafc; border-bottom: 1.5px solid #e2e8f0; display: grid; grid-template-columns: 240px 1fr; gap: 28px; align-items: start;">
+        <div class="reading-hero-grid" style="padding: 24px 28px; background: #f8fafc; border-bottom: 1.5px solid #e2e8f0; display: grid; grid-template-columns: 280px 1fr; gap: 24px; align-items: start;">
           
           <!-- Left Column: Front Cover Artwork Plate -->
-          <div class="reading-hero-cover-col" style="display: flex; flex-direction: column; gap: 12px;">
-            <div style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 2px solid #cbd5e1; background: #0f172a;">
-              <img src="${getAssetUrl(readingData.cover_image)}" alt="${readingData.book_title}" style="width: 100%; height: auto; display: block; object-fit: cover;">
-              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(15,23,42,0.92) 0%, transparent 100%); padding: 12px 10px 8px 10px; color: #ffffff;">
-                <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #f59e0b;">
-                  Enquiry ${readingData.lesson_index + 1}
-                </div>
-                <div style="font-size: 0.82rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                  ${readingData.book_title}
-                </div>
+          <div class="reading-hero-cover-col" style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.06);">
+              <div style="position: relative; background: #0f172a;">
+                <img src="${getAssetUrl(readingData.cover_image)}" alt="${readingData.book_title}" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                <span style="position: absolute; top: 8px; left: 8px; background: rgba(15,23,42,0.85); color: #f59e0b; font-size: 0.68rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.5px; text-transform: uppercase;">
+                  ${readingData.lesson_label || (readingData.lesson_key ? `KT ${readingData.lesson_key}` : `Enquiry ${readingData.lesson_index + 1}`)} Plate
+                </span>
               </div>
+              ${
+                readingData.cover_caption
+                  ? `
+                <div style="padding: 10px 12px; background: #ffffff; border-top: 1px solid #e2e8f0; font-size: 0.78rem; color: #475569; line-height: 1.4;">
+                  <strong style="color: #1e3a8a; display: block; margin-bottom: 2px; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.4px;">
+                    <i class="fa-solid fa-camera"></i> Archival Record:
+                  </strong>
+                  ${readingData.cover_caption}
+                </div>
+              `
+                  : ''
+              }
             </div>
-
-            <!-- Source Provenance Button & Accordion -->
-            ${
-              readingData.cover_caption
-                ? `
-              <button type="button" class="btn" id="btn-provenance-toggle-${readingData.lesson_index}" style="width: 100%; padding: 7px 10px; font-size: 0.82rem; font-weight: 700; background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; border-radius: 6px; display: inline-flex; justify-content: center; align-items: center; gap: 6px; cursor: pointer;">
-                <i class="fa-solid fa-magnifying-glass"></i> <span>Source Provenance</span>
-              </button>
-              <div id="provenance-drawer-${readingData.lesson_index}" style="display: none; padding: 12px; background: #eff6ff; border-left: 3px solid #3b82f6; border-radius: 0 6px 6px 0; font-size: 0.84rem; color: #1e3a8a; line-height: 1.45;">
-                <strong style="display: block; margin-bottom: 4px; color: #1e40af;">Archival Accession & Caption:</strong>
-                ${readingData.cover_caption}
-              </div>
-            `
-                : ''
-            }
           </div>
 
           <!-- Right Column: Metadata, Author Bio, and Audio Read-Aloud Studio -->
@@ -731,10 +872,10 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
             <div>
               <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px;">
                 <span style="font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 4px; border: 1px solid #fde68a;">
-                  Enquiry ${readingData.lesson_index + 1} Reading Homework
+                  ${readingData.lesson_label || (readingData.lesson_key ? `KT ${readingData.lesson_key}` : `Enquiry ${readingData.lesson_index + 1}`)} Reading Homework
                 </span>
-                <span style="font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; background: #ecfdf5; color: #065f46; padding: 3px 10px; border-radius: 4px; border: 1px solid #a7f3d0;">
-                  <i class="fa-solid fa-certificate"></i> Eyewitness Primary Source
+                <span style="font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; background: ${badgeBg}; color: ${badgeColor}; padding: 3px 10px; border-radius: 4px; border: 1px solid ${badgeBorder}; display: inline-flex; align-items: center; gap: 6px;">
+                  <i class="${badgeIcon}"></i> ${sourceBadgeLabel}
                 </span>
               </div>
               <h2 class="reading-book-title" style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 2.1rem; font-weight: 900; color: #0f172a; line-height: 1.2;">
@@ -809,19 +950,6 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
               </div>
             </div>
 
-            <!-- Parent & Scholar Discussion Guide Card -->
-            <div class="reading-discussion-card" style="background: #ffffff; border: 2px solid #bfdbfe; border-left: 5px solid #1e40af; border-radius: 8px; padding: 16px 20px;">
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; color: #1e3a8a;">
-                <i class="fa-solid fa-comments" style="font-size: 1.15rem; color: #2563eb;"></i>
-                <h3 style="margin: 0; font-size: 1.02rem; font-weight: 800; font-family: 'Playfair Display', Georgia, serif;">
-                  Parent & Scholar Oral Discussion Guide
-                </h3>
-              </div>
-              <div style="font-size: 0.95rem; color: #1e293b; line-height: 1.55;">
-                ${readingData.hinge_question || 'Discuss the central dilemma raised in this extract with your parent or guardian.'}
-              </div>
-            </div>
-
           </div>
         </div>
 
@@ -830,7 +958,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px; flex-wrap: wrap; gap: 12px;">
             <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
               <div style="font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #64748b; display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-align-left"></i> <span>Unabridged Wartime Reading Extract</span>
+                <i class="fa-solid fa-align-left"></i> <span>Curated Disciplinary Reading Extract</span>
               </div>
               <span style="font-size: 0.75rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 3px 10px; border-radius: 6px; border: 1px solid #bae6fd; display: inline-flex; align-items: center; gap: 6px;">
                 <i class="fa-solid fa-hand-pointer"></i> <span>Click any sentence to listen from there</span>
@@ -854,6 +982,63 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
 
           <!-- Embedded Disciplinary Lexicon & Tier 3 Vocabulary Vault -->
           ${lexiconHtml}
+
+          <!-- 3-Minute Parent & Scholar Reading Discussion Card (Post-Reading Reflection) -->
+          <div class="reading-discussion-card" style="margin-top: 28px; background: #ffffff; border: 2px solid #bfdbfe; border-left: 5px solid #1e40af; border-radius: 10px; padding: 20px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 10px; color: #1e3a8a;">
+                <div style="width: 32px; height: 32px; border-radius: 8px; background: #eff6ff; border: 1.5px solid #bfdbfe; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: #2563eb;">
+                  <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div>
+                  <h3 style="margin: 0; font-size: 1.12rem; font-weight: 800; color: #0f172a; font-family: 'Playfair Display', Georgia, serif;">
+                    👨‍👩‍👧 3-Minute Parent & Scholar Reading Discussion
+                  </h3>
+                  <div style="font-size: 0.80rem; color: #64748b;">
+                    Oral Comprehension Check • Discuss together after reading or listening
+                  </div>
+                </div>
+              </div>
+              <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; padding: 4px 12px; border-radius: 4px;">
+                ${(readingData.parent_discussion || []).length || 3} Oral Questions
+              </span>
+            </div>
+            <p style="margin: 0 0 16px 0; font-size: 0.90rem; color: #334155; line-height: 1.45;">
+              <strong>Parents & Carers:</strong> Ask your child these questions aloud to check their understanding of the reading extract. What to listen for is provided in the guide below each question!
+            </p>
+            ${
+              readingData.parent_discussion && readingData.parent_discussion.length > 0
+                ? `
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                ${readingData.parent_discussion
+                  .map(
+                    (item, idx) => `
+                  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 16px;">
+                    <div style="display: flex; align-items: flex-start; gap: 10px; font-weight: 700; font-size: 0.96rem; color: #0f172a; line-height: 1.4;">
+                      <span style="background: #1e3a8a; color: #ffffff; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.74rem; flex-shrink: 0; margin-top: 1px;">${idx + 1}</span>
+                      <span>${item.question}</span>
+                    </div>
+                    <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; margin-top: 8px; margin-left: 32px;">
+                      <div style="font-size: 0.74rem; font-weight: 800; color: #166534; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 5px; margin-bottom: 2px;">
+                        <i class="fa-solid fa-lightbulb"></i> <span>Parent Guide (What to listen for):</span>
+                      </div>
+                      <div style="font-size: 0.88rem; color: #14532d; line-height: 1.45;">
+                        ${item.answer}
+                      </div>
+                    </div>
+                  </div>
+                `
+                  )
+                  .join('')}
+              </div>
+            `
+                : `
+              <div style="font-size: 0.95rem; color: #1e293b; line-height: 1.55;">
+                ${readingData.hinge_question || 'Discuss the central dilemma raised in this extract with your parent or guardian.'}
+              </div>
+            `
+            }
+          </div>
 
           <!-- Digital Homework & Knowledge Retrieval Station -->
           ${renderHomeworkStationHTML(readingData, unitId)}

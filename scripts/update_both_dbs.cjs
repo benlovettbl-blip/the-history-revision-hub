@@ -25,3 +25,4 @@ const sbeData = JSON.parse(fs.readFileSync('data/second_british_empire.json', 'u
     console.log(`Updated database: ${filePath}`);
   }
 });
+

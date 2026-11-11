@@ -1761,70 +1761,83 @@ function compileIndustrialisationWorkbook() {
         </div>
       </div>
 
-      <!-- KS3 History Progress Pathways & Descriptors -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 6px 8px; background: #ffffff; margin-bottom: 5px; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #0f284e; background: #f0f4f9; padding: 3px 6px; margin-bottom: 4px; border-radius: 2px;">
-          <strong style="font-size: 8pt; text-transform: uppercase; letter-spacing: 0.5px; color: #0f284e;">
+      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
+      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
+          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
             Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
           </strong>
-          <span style="font-size: 7.2pt; font-weight: 800; color: #0f284e;">YEAR 8 STANDARDS</span>
+          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
+            Years 7–9 Standards
+          </span>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; font-size: 7pt; line-height: 1.3;">
-          <div style="border: 1px solid #cbd5e1; border-radius: 3px; padding: 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 6.6pt; line-height: 1.25;">
+          
+          <!-- Emerging (1–2) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="font-weight: 900; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px; margin-bottom: 3px; font-size: 7.2pt; text-transform: uppercase; color: #0f284e;">
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
                 Emerging (1–2)
               </div>
-              Recalls key historical narrative facts; describes basic industrial events using guided sentence starters.
+              Recalls key facts, dates, and people; describes what happened using simple sentences or writing frames.
             </div>
-            <div style="margin-top: 4px; font-size: 6.4pt; font-style: italic; border-top: 1px dashed #cbd5e1; padding-top: 2px; color: #475569;">
-              <strong style="color: #0f284e;">Focus:</strong> Add dates &amp; key vocabulary.
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Remembers basic names, dates, and keywords when supported with prompts.
             </div>
           </div>
-          <div style="border: 1px solid #cbd5e1; border-radius: 3px; padding: 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+
+          <!-- Emerging+ (3) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="font-weight: 900; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px; margin-bottom: 3px; font-size: 7.2pt; text-transform: uppercase; color: #0f284e;">
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
                 Emerging+ (3)
               </div>
-              Identifies reasons for events; begins to describe causes of industrialisation, urban slums, and democratic protest with structured paragraphs.
+              Explains reasons why events happened; begins to describe causes and consequences using clear historical examples.
             </div>
-            <div style="margin-top: 4px; font-size: 6.4pt; font-style: italic; border-top: 1px dashed #cbd5e1; padding-top: 2px; color: #475569;">
-              <strong style="color: #0f284e;">Focus:</strong> Explain *why*, not just *what*.
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Remembers why events happened; explains causes and consequences using clear examples.
             </div>
           </div>
-          <div style="border: 1px solid #cbd5e1; border-radius: 3px; padding: 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+
+          <!-- Expected (4–5) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="font-weight: 900; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px; margin-bottom: 3px; font-size: 7.2pt; text-transform: uppercase; color: #0f284e;">
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
                 Expected (4–5)
               </div>
-              Explains multiple causes &amp; consequences; writes structured causal paragraphs using precise dates, technical terms, and primary source details.
+              Explains multiple causes and consequences in clear paragraphs using precise historical vocabulary.
             </div>
-            <div style="margin-top: 4px; font-size: 6.4pt; font-style: italic; border-top: 1px dashed #cbd5e1; padding-top: 2px; color: #475569;">
-              <strong style="color: #0f284e;">Focus:</strong> Compare relative importance.
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Securely recalls vocabulary, dates, and multi-step causes from previous weeks.
             </div>
           </div>
-          <div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 5px; background: #f0f4f9; display: flex; flex-direction: column; justify-content: space-between;">
+
+          <!-- Expected+ (6–7) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="font-weight: 900; border-bottom: 1px solid #0f284e; padding-bottom: 2px; margin-bottom: 3px; font-size: 7.2pt; text-transform: uppercase; color: #0f284e;">
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
                 Expected+ (6–7)
               </div>
-              Analyses causal significance; evaluates competing historical interpretations and weighs counter-arguments with detailed primary evidence.
+              Weighs up different causes and historical viewpoints; explains why certain factors mattered more using evidence.
             </div>
-            <div style="margin-top: 4px; font-size: 6.4pt; font-style: italic; border-top: 1px dashed #93c5fd; padding-top: 2px; color: #1e293b;">
-              <strong style="color: #0f284e;">Focus:</strong> Sustained historical criteria.
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Independently retrieves detailed evidence and connects factors across the whole unit.
             </div>
           </div>
-          <div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 5px; background: #f0f4f9; display: flex; flex-direction: column; justify-content: space-between;">
+
+          <!-- Greater Depth (8–9) -->
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="font-weight: 900; border-bottom: 1px solid #0f284e; padding-bottom: 2px; margin-bottom: 3px; font-size: 7.2pt; text-transform: uppercase; color: #0f284e;">
+              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
                 Greater Depth (8–9)
               </div>
-              Sustained, nuanced evaluative judgement; synthesises technological innovation, human exploitation, and political struggle across 1750–1901.
+              Reaches a convincing, well-argued overall judgement; explains how long-term causes and turning points connect.
             </div>
-            <div style="margin-top: 4px; font-size: 6.4pt; font-style: italic; border-top: 1px dashed #93c5fd; padding-top: 2px; color: #1e293b;">
-              <strong style="color: #0f284e;">Focus:</strong> Nuanced historical judgement.
+            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
+              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Effortlessly retrieves long-term schema; connects prior units and eras to present topics.
             </div>
           </div>
+
         </div>
       </div>
 

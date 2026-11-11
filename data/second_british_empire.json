@@ -4970,7 +4970,7 @@
       "cover_image": "/images/hms_warrior.jpg",
       "cover_caption": "HMS Warrior (1860) at Portsmouth, symbol of British industrial and naval supremacy.",
       "author_context": "Scottish moral philosopher Adam Smith criticized mercantilism, arguing that monopolies and colonial restrictions harmed both colonies and the mother country.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"The monopoly of the colony trade, like all other mean and malignant expedients of the mercantile system, depresses the industry of all other countries, but chiefly that of the colonies, without in the least increasing, but on the contrary diminishing, that of the country in whose favour it is established... High tariffs and trade restrictions are an encouragement to bad management.\"",
       "hinge_question": "<strong>Think:</strong> What does Adam Smith claim is the real effect of colonial trade monopolies?<br><br><strong>Pair:</strong> Why did the British state maintain mercantilist trade policies despite Smith’s warnings?<br><br><strong>Share:</strong> How did maritime naval supremacy at Portsmouth enforce this commercial monopoly?",
       "audio_file": "/assets/second_empire_reading_l1.mp3",
@@ -4978,7 +4978,10 @@
         "What term does Smith use to describe colonial trade monopolies?",
         "Who does Smith argue is most harmed by mercantilist trade restrictions?",
         "Why did British merchants favour trade monopolies despite economic criticisms?"
-      ]
+      ],
+      "source_type": "economic_treatise",
+      "source_type_label": "Foundational Economic Treatise (1776)",
+      "is_primary": true
     },
     {
       "lesson_index": 1,
@@ -4987,7 +4990,7 @@
       "cover_image": "/images/shah_alam_clive.jpg",
       "cover_caption": "Shah Alam II conveying the Diwani of Bengal to Robert Clive (1765).",
       "author_context": "Primary archival records documenting the fiscal extraction of Bengal and the economic destruction of India's handloom weaving industry under British colonial rule.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "<em>Robert Clive to the Court of Directors (1765):</em><br>\"The acquisition of the Diwani of Bengal, Bihar, and Orissa places in your hands the richest province of the empire. The revenues alone will amount to two hundred and fifty lakhs of rupees. After defraying all military and civil expenses, there will remain an immense clear surplus of clear treasure. We shall no longer need to send out silver from England to purchase our goods, for the revenues of Bengal will abundantly purchase all our investments.\"<br><br><em>Governor-General Lord William Bentinck (1834):</em><br>\"The misery hardly finds a parallel in the history of commerce. The bones of the cotton-weavers are bleaching the plains of India. The cotton-weaving of India, which for centuries clothed the world, has been utterly broken by the steam looms of Great Britain. Dacca, once the Manchester of India, has shrunk to a shadow of its former grandeur, its population starved into the jungle by our one-way tariffs.\"",
       "hinge_question": "<strong>Think:</strong> How did the 1765 Diwani eliminate Britain's need to export silver to India, and what metaphor did Bentinck use to describe the ruined weavers?<br><br><strong>Pair:</strong> Compare Clive's triumphant financial calculation in 1765 with Bentinck's tragic reflection in 1834. Discuss: was the de-industrialisation of India an accidental side effect of steam power, or the deliberate consequence of colonial fiscal policy?<br><br><strong>Share:</strong> Why did the destruction of handloom weaving leave the Indian peasantry so vulnerable to future agricultural famines?",
       "audio_file": "/assets/second_empire_reading_l2.mp3",
@@ -4995,7 +4998,10 @@
         "What financial benefit did Robert Clive claim the 1765 Diwani brought to the East India Company?",
         "What phrase did Lord William Bentinck use to describe the fate of India's cotton-weavers in 1834?",
         "Which historic Bengali textile city shrank dramatically as its weaving industry collapsed?"
-      ]
+      ],
+      "source_type": "official_dispatch",
+      "source_type_label": "Official Colonial Dispatches (1765–1834)",
+      "is_primary": true
     },
     {
       "lesson_index": 2,
@@ -5004,7 +5010,7 @@
       "cover_image": "/images/rani_of_jhansi.jpg",
       "cover_caption": "Rani Lakshmibai of Jhansi, heroic leader of the 1857 Indian Rebellion.",
       "author_context": "Contrasting primary manifestos: the revolutionary proclamation of the 1857 insurgent leadership calling for the overthrow of British tyranny, versus Queen Victoria’s royal declaration establishing the British Raj.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "<em>The Azamgarh Proclamation (August 1857):</em><br>\"It is well known to all that in this age the people of Hindostan, both Hindoos and Mohammedans, are being ruined under the tyranny and the oppression of the treacherous English. They have dispossessed the ancient zamindars, heavily taxed the peasantry, ruined our native weavers with cheap English cloth, and subverted our sacred religions with greased cartridges. We urge all chiefs, sepoys, and artisans to unite under our imperial standard to purge our land of foreign rule!\"<br><br><em>Queen Victoria's Royal Proclamation (1 November 1858):</em><br>\"We hereby announce that all treaties made with native princes by the East India Company are accepted and confirmed. We disclaim alike the right and the desire to impose our religious convictions on any of our subjects. The government of our territories in India is hereby assumed directly by the Crown, and all our subjects shall enjoy equal and impartial protection of the law.\"",
       "hinge_question": "<strong>Think:</strong> What four grievances did the Azamgarh Proclamation identify, and what two promises did Queen Victoria make to pacify India?<br><br><strong>Pair:</strong> Compare the fiery anti-colonial rhetoric of the 1857 rebels with the diplomatic assurances of Queen Victoria's proclamation. Discuss: did the creation of the British Raj genuinely address the grievances that provoked the rebellion?<br><br><strong>Share:</strong> Why was Rani Lakshmibai of Jhansi remembered as a heroic freedom fighter in India while initially demonized in Victorian British newspapers?",
       "audio_file": "/assets/second_empire_reading_l3.mp3",
@@ -5012,7 +5018,10 @@
         "What religious grievance contributed directly to the outbreak of the 1857 rebellion?",
         "What major change in the government of India did Queen Victoria's 1858 proclamation enact?",
         "Who was the widowed queen of Jhansi celebrated for leading the defense of her fortress?"
-      ]
+      ],
+      "source_type": "state_proclamation",
+      "source_type_label": "Imperial Proclamation & Rebel Manifesto",
+      "is_primary": true
     },
     {
       "lesson_index": 3,
@@ -5021,7 +5030,7 @@
       "cover_image": "/images/berlin_conference_1884.jpg",
       "cover_caption": "The Berlin Conference (1884), where European powers partitioned Africa.",
       "author_context": "A side-by-side reading contrasting Rudyard Kipling’s moral civilising mission with E. D. Morel’s archival exposure of corporate resource plunder.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "<em>Rudyard Kipling (1899):</em><br>\"Take up the White Man's burden—<br>Send forth the best ye breed—<br>Go bind your sons to exile<br>To serve your captives' need;<br>To wait in heavy harness,<br>On fluttered folk and wild—<br>Your new-caught, sullen peoples,<br>Half-devil and half-child.<br>Take up the White Man's burden—<br>The savage wars of peace—<br>Fill full the mouth of Famine<br>And bid the sickness cease...\"<br><br><em>E. D. Morel (1920):</em><br>\"It is the Africans who carry the true burden. What has modern European imperialism brought to their ancestral lands? It was not the desire to 'fill the mouth of famine' that drove British and European syndicates into Africa, but the insatiable lust for rubber, ivory, palm oil, and gold.<br><br>Under the mask of a 'civilising mission', the capitalist powers have dispossessed ancient peoples of their soil, forced them into slave-like labour through military terror, and disrupted tribal systems that had endured for a thousand years. The European trader returns home laden with fortune and honours; the African remains stripped of his freedom, his heritage, and his land.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Paternalism:</strong> The patronizing belief that colonial peoples were like children who required European rulers to control and discipline them.</li><li><strong>Capitalist Syndicate:</strong> A commercial consortium or chartered company formed to extract natural resources and maximize financial profit.</li><li><strong>Historiography:</strong> The study of how different historians and contemporaries interpret the same historical events from contrasting political perspectives.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What phrase does Kipling use to describe colonized peoples, and what phrase does Morel use to describe the true motive of European powers?<br><br><strong>Pair:</strong> Compare Kipling's view of empire as a selfless moral sacrifice (\"bind your sons to exile... to serve your captives' need\") with Morel's view of empire as armed commercial theft (\"insatiable lust for rubber, ivory, and gold\"). Discuss: which interpretation best explains Britain's 19th-century imperial expansion?<br><br><strong>Share:</strong> How does the debate between Kipling and Morel mirror the wider historical debate between \"Optimist\" and \"Pessimist\" historians of the Industrial Revolution?",
       "audio_file": "/assets/second_empire_reading_l4.mp3",
@@ -5029,7 +5038,10 @@
         "How does Rudyard Kipling characterize non-European colonized peoples in his 1899 poem?",
         "According to E.D. Morel, what was the real motive that drove European syndicates into Africa?",
         "What term describes the patronizing attitude that treated colonized adults as \"half-children\"?"
-      ]
+      ],
+      "source_type": "polemical_treatise",
+      "source_type_label": "Imperial Verse & Anti-Imperial Exposé",
+      "is_primary": true
     },
     {
       "lesson_index": 4,
@@ -5038,7 +5050,7 @@
       "cover_image": "/images/capital_labour.jpg",
       "cover_caption": "Capital and Labour (1843), illustrating imperial wealth and domestic inequality.",
       "author_context": "The classic historical debate between \"Optimist\" economic historians who emphasize long-term wealth, technology, and railways, versus \"Pessimist\" social historians who emphasize human exploitation, inequality, and colonial dispossession.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"The Great Exhibition of 1851 at the Crystal Palace celebrated Britain as the undisputed Workshop of the World. Six million visitors marvelled at hydraulic presses, electric telegraphs, and Indian diamonds. Yet in the shadows of this imperial triumph lay two starkly contrasting balance sheets.<br><br>To the Optimists, the 19th-century transformation was a triumphant march of progress: real wages eventually rose, railways united continents, cholera was conquered by clean sewers, and parliamentary democracy expanded from rotten boroughs to mass secret ballots.<br><br>To the Pessimists and anti-colonial scholars, that glittering wealth came at an intolerable moral price: three generations of British factory children worked to exhaustion in unventilated mills, unsewered industrial cellars killed labourers before the age of twenty, and across India and Africa, ancient cultures and artisanal industries were dismantled to feed European industrial syndicates.\"",
       "hinge_question": "<strong>Think:</strong> Identify two key arguments made by the Optimist school and two made by the Pessimist school.<br><br><strong>Pair:</strong> Can an historian reach a single verdict on the British Empire, or was it simultaneously an era of extraordinary technological progress and catastrophic human exploitation?<br><br><strong>Share:</strong> How does understanding both perspectives make you a more rigorous disciplinary historian?",
       "audio_file": "/assets/second_empire_reading_l5.mp3",
@@ -5046,7 +5058,10 @@
         "How many visitors attended the 1851 Great Exhibition at the Crystal Palace?",
         "What positive achievements do Optimist historians point to?",
         "What human costs do Pessimist and anti-colonial historians highlight?"
-      ]
+      ],
+      "source_type": "historiographical_debate",
+      "source_type_label": "Historiographical Academic Debate",
+      "is_primary": false
     }
   ],
   "edition": "2026.1",

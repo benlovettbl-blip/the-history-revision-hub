@@ -607,12 +607,30 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
   const prevLesson = lessons[currentIndex - 1];
   const pool = [];
 
-  // 1. Pull from prevLesson.quiz (20 questions testing prevLesson)
-  if (Array.isArray(prevLesson.quiz)) {
+  // 1. If currentLesson has dedicated do_now items specifically written for this starter, prioritize them for exact homework parity!
+  const currentDoNowItems =
+    currentLesson.do_now?.items ||
+    currentLesson.do_now?.questions ||
+    currentLesson.do_now?.tasks ||
+    (Array.isArray(currentLesson.do_now) ? currentLesson.do_now : []);
+
+  if (Array.isArray(currentDoNowItems) && currentDoNowItems.length >= count) {
+    currentDoNowItems.forEach((it) => {
+      const stage = findMatchingBlockIndex(it, prevLesson.narrative_blocks);
+      const qa = extractCleanQA(it, 'Last Lesson', currentIndex, prevLesson.title, activeUnit?.id, stage);
+      if (qa && !pool.some((p) => p.question === qa.question)) {
+        qa.unitId = activeUnit?.id || '';
+        pool.push(qa);
+      }
+    });
+  }
+
+  // 2. Otherwise, pull from prevLesson.quiz (20 questions testing prevLesson)
+  if (pool.length < count && Array.isArray(prevLesson.quiz)) {
     prevLesson.quiz.forEach((q) => {
       const stage = findMatchingBlockIndex(q, prevLesson.narrative_blocks);
       const qa = extractCleanQA(q, 'Last Lesson', currentIndex, prevLesson.title, activeUnit?.id, stage);
-      if (qa) {
+      if (qa && !pool.some((p) => p.question === qa.question)) {
         qa.unitId = activeUnit?.id || '';
         pool.push(qa);
       }

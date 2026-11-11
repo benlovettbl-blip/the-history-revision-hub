@@ -54,3 +54,4 @@ applyCalibrations('data/usa.json', 'USA', usa4m, usa8m, usa16m);
 
 console.log('Applying Germany calibrations...');
 applyCalibrations('data/weimar_nazi_germany.json', 'GERMANY', ger4m, ger8m, ger16m);
+

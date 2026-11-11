@@ -70,3 +70,4 @@ console.log(`Created backup at temp_backups/mock_exam_bank_data_backup_${timesta
 
 fs.writeFileSync('src/engine/mock_exam_bank_data.js', serialized, 'utf8');
 console.log('Successfully wrote updated mock_exam_bank_data.js!');
+

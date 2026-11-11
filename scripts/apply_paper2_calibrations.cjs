@@ -167,3 +167,4 @@ cw.lessons.forEach(l => {
 
 fs.writeFileSync('data/cold_war.json', JSON.stringify(cw, null, 2), 'utf8');
 console.log(`[Cold War] Applied: ${cw4mCount} 4m consequences, ${cwNarrativeCount} 8m narratives, ${cwImportanceCount} 8m importance.`);
+

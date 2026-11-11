@@ -66,3 +66,4 @@ const puppeteer = require('puppeteer');
   await browser.close();
   console.log('\n🎉 ALL LIVE INTERACTIVE PAPER 2 TIER TESTS PASSED AND VERIFIED!');
 })();
+

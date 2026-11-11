@@ -127,7 +127,7 @@ const modernConfigs = [
         'One way methods differed was... &bull; In the late nineteenth century... &bull; In contrast, by the late twentieth century...',
     },
     leftPageQuip:
-      'Franklin’s 62-hour X-ray exposure revealed the double helix; Watson and Crick celebrated in The Eagle pub.',
+      'Franklin’s 62-hour X-ray exposure provided the decisive physical evidence that DNA was a double helix.',
     rightPageQuip:
       'Sequencing 3 billion base pairs in the human genome took 13 years; now geneticists can read our biological code.',
     linedLeftQuip:

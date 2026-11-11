@@ -42,3 +42,4 @@ files.forEach(f => {
 });
 
 console.log(`\nTotal scholar tiers stripped across all units: ${totalStripped}`);
+

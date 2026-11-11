@@ -442,3 +442,4 @@ updateDbFile(path.join(ROOT, 'database.json'));
 updateDbFile(path.join(ROOT, 'public/database.json'));
 
 console.log('ALL 5 USA STORES SYNCHRONIZED SUCCESSFULLY!');
+

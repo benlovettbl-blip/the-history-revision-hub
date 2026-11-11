@@ -38,3 +38,4 @@ console.log(`Updated ${updated12mCount} / 16 12m questions in Germany.`);
 
 fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
 console.log(`Saved ${filePath} successfully.`);
+

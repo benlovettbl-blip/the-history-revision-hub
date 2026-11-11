@@ -862,31 +862,31 @@ const EEE_ENQUIRY_CONFIGS = {
           dates: '1577–1580',
           title: 'Drake’s Circumnavigation',
           bullets: [
-            'Cacafuego Surrenders £140,000 Treasure',
+            'Five Ships Sail from Plymouth (1577)',
             'Uncharted Pacific Raids on Peru',
-            'Golden Hind Knighthood Defiance',
+            'Cacafuego Surrenders £140,000 Treasure',
           ],
           focusClue:
             'Why did Drake’s circumnavigation represent a direct challenge to the Spanish Empire?',
         },
         {
-          dates: '1581–1584',
-          title: 'Escalation & Elizabeth’s Defiance',
+          dates: '1580–1581',
+          title: 'The Deptford Knighting & Royal Defiance',
           bullets: [
-            'Philip II Inherits Portuguese Crown',
-            'Assassination of William of Orange',
-            'French Catholic Guise League Accord',
+            'Boarding Golden Hind at Deptford (1581)',
+            'French Ambassador Confers Knighthood',
+            '£10,000 Royal Reward & Spanish Fury',
           ],
           focusClue:
-            'How did events in Europe between 1580 and 1584 increase the threat of a Spanish invasion?',
+            'Why did Elizabeth’s decision to knight Drake aboard the Golden Hind outrage Philip II?',
         },
         {
           dates: '1584–1585',
           title: 'The Treaties of Joinville & Nonsuch',
           bullets: [
+            'Assassination of William of Orange (1584)',
             'Secret Treaty of Joinville (Dec 1584)',
-            '7,400 English Troops under Dudley',
-            'Direct Military Confrontation Declared',
+            '7,400 English Troops under Dudley (1585)',
           ],
           focusClue:
             'Why did the Treaty of Nonsuch mark the point of no return for war between England and Spain?',

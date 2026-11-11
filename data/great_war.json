@@ -7241,7 +7241,10 @@
         "How did the existence of inflexible military strategies, such as the Schlieffen Plan, affect the power of politicians and diplomats during the July Crisis?"
       ],
       "hinge_question": "If the European leaders were truly just 'sleepwalkers' who didn't want war, does that mean they are innocent of causing it? Why or why not?",
-      "is_adapted": true
+      "is_adapted": true,
+      "source_type": "historical_scholarship",
+      "source_type_label": "Modern Historical Scholarship",
+      "is_primary": false
     },
     {
       "lesson_index": 1,
@@ -7256,8 +7259,11 @@
         "How does the author describe the true motivations of the imperialists?",
         "Why do you think this text was considered highly controversial when it was published in 1899?"
       ],
-      "is_adapted": false,
-      "hinge_question": "How does Conrad use the image of the French warship 'firing into a continent' to expose the absurdity and violence of the 'civilizing mission' in Africa?"
+      "is_adapted": true,
+      "hinge_question": "How does Conrad use the image of the French warship 'firing into a continent' to expose the absurdity and violence of the 'civilizing mission' in Africa?",
+      "source_type": "classic_literature",
+      "source_type_label": "Classic Imperial Literature",
+      "is_primary": false
     },
     {
       "lesson_index": 2,
@@ -7272,8 +7278,11 @@
         "According to the extract, why was the German Empire building its fleet?",
         "How would reading a popular thriller like this have affected the British public's attitude toward Germany?"
       ],
-      "is_adapted": false,
-      "hinge_question": "If 'The Riddle of the Sands' was a fictional novel, why do you think it caused such real-world panic and paranoia among the British public regarding the German Navy?"
+      "is_adapted": true,
+      "hinge_question": "If 'The Riddle of the Sands' was a fictional novel, why do you think it caused such real-world panic and paranoia among the British public regarding the German Navy?",
+      "source_type": "classic_literature",
+      "source_type_label": "Edwardian Invasion Literature (1903)",
+      "is_primary": false
     },
     {
       "lesson_index": 3,
@@ -7289,7 +7298,10 @@
         "According to the text, why were the diplomats unable to stop the war once it started?"
       ],
       "is_adapted": true,
-      "hinge_question": "How did the sheer speed and rigid timing of military mobilization plans like the Schlieffen Plan make a diplomatic solution almost impossible during the July Crisis?"
+      "hinge_question": "How did the sheer speed and rigid timing of military mobilization plans like the Schlieffen Plan make a diplomatic solution almost impossible during the July Crisis?",
+      "source_type": "historical_scholarship",
+      "source_type_label": "Classic Historical Scholarship",
+      "is_primary": false
     },
     {
       "lesson_index": 4,
@@ -7305,7 +7317,10 @@
         "How does this extract help explain the incredible surge of Nationalism and volunteering at the outbreak of the war?"
       ],
       "is_adapted": true,
-      "hinge_question": "Why does the narrator argue that the older generation and teachers like Kantorek betrayed the 'Iron Youth' of Germany?"
+      "hinge_question": "Why does the narrator argue that the older generation and teachers like Kantorek betrayed the 'Iron Youth' of Germany?",
+      "source_type": "classic_literature",
+      "source_type_label": "Classic Anti-War Literature (Adapted)",
+      "is_primary": false
     }
   ],
   "assessments": [

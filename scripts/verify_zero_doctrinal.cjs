@@ -37,3 +37,4 @@ if (matches.length > 0) {
 } else {
   console.log('SUCCESS: ZERO ACTIVE FILES CONTAIN "doctrinal control"!');
 }
+

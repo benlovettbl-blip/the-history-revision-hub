@@ -4343,9 +4343,9 @@ export function renderLesson(lesson) {
     (l) => l.title === lesson.title || (lesson.id && l.id === lesson.id),
   );
   const grEntry =
-    (activeUnit.guided_reading || []).find((gr) => gr.lesson_index === currentIndex) ||
+    (activeUnit.guided_reading || []).find((gr) => gr.lesson_index === currentIndex || (lesson && gr.lesson_id === lesson.id)) ||
     ((window.currentUnitData && window.currentUnitData.guided_reading) || []).find(
-      (gr) => gr.lesson_index === currentIndex,
+      (gr) => gr.lesson_index === currentIndex || (lesson && gr.lesson_id === lesson.id),
     );
 
   const isTeacherActive =
@@ -4407,15 +4407,7 @@ export function renderLesson(lesson) {
         : ''
       }
               ${grEntry
-        ? `<a href="/?view=reading&unit=${unitId}&lesson=${currentIndex + 1}" target="_blank" rel="noopener noreferrer" class="btn btn-guided-reading-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; text-decoration: none;" title="Open Literary Companion & Audio Read-Aloud: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> <span>📖 Reading HW: ${grEntry.book_title} ↗</span></a>`
-        : ''
-      }
-              ${unitId === 'edexcel_medicine' && currentIndex >= 0
-        ? `<a href="/units/edexcel_medicine/visual_revision_guide.html#spread-${currentIndex + 1}" target="_blank" class="btn" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Jump directly to this lesson's visual revision spread and exam model in the Masterclass Guide"><i class="fa-solid fa-book-open"></i> Revision Masterclass (Spread ${currentIndex + 1})</a>`
-        : ''
-      }
-              ${unitId === 'cme_new' && currentIndex >= 0
-        ? `<a href="/units/cme_new/visual_revision_guide.html#page_${6 + currentIndex}" target="_blank" class="btn" style="padding: 6px 12px; font-size: 0.88rem; background: #f0f9ff; color: #0369a1; border: 1.5px solid #bae6fd; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Jump directly to this lesson's 1-page Specification Cheat Sheet in the Revision Guide"><i class="fa-solid fa-file-lines"></i> Specification Cheat Sheet (Page ${6 + currentIndex})</a>`
+        ? `<button type="button" class="btn btn-guided-reading-launcher" onclick="if(window.switchView){ window.switchView('reading', '${unitId}', false, { rawLesson: '${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}', lessonIndex: ${currentIndex} }); } else { window.location.href = '/?view=reading&unit=${unitId}&lesson=${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}'; }" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#fce7f3';" onmouseout="this.style.background='#fdf2f8';" title="Open Literary Companion & Audio Read-Aloud: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> <span>📖 Reading HW: ${grEntry.book_title}</span></button>`
         : ''
       }
               ${unitId === 'cme_new' || isCme

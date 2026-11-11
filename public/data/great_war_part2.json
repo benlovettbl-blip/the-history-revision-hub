@@ -5328,7 +5328,7 @@
       "cover_image": "/images/siegfried_sassoon.jpg",
       "cover_caption": "Captain Siegfried Sassoon CBE MC, Royal Welch Fusiliers. Decorated frontline officer and war poet.",
       "author_context": "Siegfried Sassoon was an English poet and officer in the Royal Welch Fusiliers who was awarded the Military Cross for extraordinary bravery. In his celebrated wartime memoirs, he records the naive, sporting enthusiasm with which young British men volunteered in August 1914 and the sudden, chilling encounter with the realities of the casualty lists.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"I was sitting in the pavilion at the village cricket ground on an idyllic August afternoon when the extraordinary news arrived... To me, as an irresponsible young gentleman with nothing better to do than hunt foxes and score occasional runs, the sudden prospect of European war seemed like a grand adventure, a chivalric crusade that had arrived just in time to rescue our generation from the dull routine of modern peacetime.<br><br>Everyone around me was swept along by the same strange fever. In the market towns and city recruiting stations, young clerks, schoolboys, shop assistants, and farm labourers queued for hours in the stifling August heat. Brass bands marched through the high streets playing patriotic anthems, church bells rang, and proud mothers pinned ribbons to their sons' lapels. We were assured by politicians and newspapers that the conflict would be settled within six months, that the Kaiser would be humbled, and that we should all return home before Christmas crowned with laurels of victory.<br><br>...It was only later, when the transport trains rolled into midnight stations and the first battalion casualty lists appeared in the Times, that the terrible silence descended. The names of boys I had played cricket against at school and shared benches with at university were printed row upon row in tiny black letters, grouped under the brutal heading: \\'Killed in Action.\\' The heroic romance had vanished in an instant; the chivalric tournament was an illusion. We were not entering an adventure—we were being fed into an unrelenting industrial factory of death.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Chivalry:</strong> The medieval knightly code of honour, bravery, and self-sacrifice.</li><li><strong>Laurels:</strong> A traditional Roman symbol of military victory and triumphant return.</li><li><strong>Battalion:</strong> A military unit of roughly 1,000 soldiers.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What metaphor does Sassoon use at the end of the extract to describe what the war truly became?<br><br><strong>Pair:</strong> Contrast Sassoon\\'s initial feelings at the cricket ground in August 1914 with his reaction to the first casualty lists. Why did the British government find it so easy to recruit over a million volunteers before conscription was introduced?<br><br><strong>Share:</strong> If so many volunteers believed the war would be a \"grand adventure\" that would be \"home by Christmas\", who bore the moral responsibility for misleading an entire generation?",
       "audio_file": "/assets/great_war_reading_gw2_l0.mp3",
@@ -5336,7 +5336,10 @@
         "What was the author doing when the news of war arrived in August 1914?",
         "What phrase does Sassoon use to describe the popular expectation of when the war would end?",
         "How did Sassoon’s attitude change once he saw the battalion casualty lists in The Times?"
-      ]
+      ],
+      "source_type": "primary_memoir",
+      "source_type_label": "Eyewitness Frontline Memoir",
+      "is_primary": true
     },
     {
       "lesson_index": 1,
@@ -5345,7 +5348,7 @@
       "cover_image": "/images/gw_flooded_trench.jpg",
       "cover_caption": "Soldiers standing in waterlogged mud in a frontline trench on the Western Front • Imperial War Museums (IWM Q 51551).",
       "author_context": "Ernst Jünger was a German frontline officer wounded fourteen times who fought continuously on the Western Front from 1914 to 1918. His 1920 memoir Storm of Steel (In Stahlgewittern) provides an astonishing, unromanticized German eyewitness account of technological industrial bombardment in the trenches.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"The earth shook, the sky was a raging cauldron of black smoke and blinding fire, and the deafening roar of the heavy artillery stunned our senses until conscious thought itself became impossible. We huddled packed together in deep subterranean dugouts carved thirty feet into the damp chalk, listening with racing hearts to the relentless pounding of the high-explosive shells detonating overhead. Every direct hit sent shockwaves rippling through the rock, extinguishing our candles and showering our steel helmets in suffocating chalk dust.<br><br>When the bombardment finally lifted, we scrambled up the shattered steps into the daylight. The trench was no longer a trench; it had been violently obliterated into a chaotic lunar wilderness of craters filled with foul stagnant water, tangled coils of severed barbed wire, and unburied corpses. Machine guns from the opposing ridges swept the ruined parapet with rapid metallic chatter, spraying deadly streams of lead that cut down any soldier who dared raise his head even an inch above the rim.<br><br>...In this monstrous landscape of pulverized chalk and iron, individual human courage counted for almost nothing against the mechanical supremacy of modern industrial war. The machine gunner did not need personal bravery or martial skill; he merely depressed the cold firing button to mow down an entire advancing company in minutes. It was no longer a contest of man against man, but the brutal annihilation of fragile human flesh by unfeeling machinery.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Traverse:</strong> A right-angled bend in a trench designed to stop shrapnel or bullets travelling along its full length.</li><li><strong>Parapet:</strong> The protective front wall of a trench, reinforced with sandbags.</li><li><strong>Industrial War:</strong> Warfare where victory is determined by mass-produced machinery, artillery, and chemical ammunition rather than individual hand-to-hand combat.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What does Jünger mean when he writes that the conflict was \"not man against man, but flesh against iron\"?<br><br><strong>Pair:</strong> Jünger was a German officer, yet his description of frontline trenches mirrors British soldiers\\' diaries almost word-for-word. Discuss with your partner: how did modern industrial weaponry erase national differences between soldiers enduring the trenches?<br><br><strong>Share:</strong> If modern military technology created a total defensive stalemate, was the slaughter of the Western Front the fault of general incompetence, or the inevitable result of machine-age weapons?",
       "audio_file": "/assets/great_war_reading_gw2_l1.mp3",
@@ -5353,7 +5356,10 @@
         "Where did the soldiers shelter during the heavy artillery bombardment?",
         "Why does Jünger say that individual human courage counted for almost nothing on the Western Front?",
         "How does Jünger describe the transformation of the trench landscape after bombardment?"
-      ]
+      ],
+      "source_type": "primary_memoir",
+      "source_type_label": "Eyewitness Combat Memoir",
+      "is_primary": true
     },
     {
       "lesson_index": 2,
@@ -5362,7 +5368,7 @@
       "cover_image": "/images/gw_indian_army.jpg",
       "cover_caption": "Troops of the Indian Army Expeditionary Force on the Western Front, autumn 1914.",
       "author_context": "Over 1.3 million Indian soldiers served in the British Armed Forces during the First World War. Censors carefully examined all outgoing mail to British India. Historian David Omissi compiled these extraordinary, translated primary letters, revealing how Indian sepoys viewed the Western Front, their pride, and the racial restrictions placed upon them.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"<em>(Letter from a Garhwali Subadar, Kitchener Indian Hospital, Brighton, to his brother in India, 1915):</em><br>\\'Do not think that this is a war. It is not war; it is the destruction of the world. Just as a fire burns dry wood, so the cannon balls and bombs consume men. The bullets fly thicker than drops of rain in the monsoon. Those who survive can only do so by the mercy of God.<br><br>We arrived here in the cold mud when the British lines were on the verge of breaking. Our soldiers stood firm in the water up to their chests. Yet in this country, the care taken of the wounded in hospitals is beyond description. The King-Emperor himself visited our beds and spoke kindly to us.<br><br>...And yet, though we fight alongside the white soldiers, our officers are not permitted to command European troops, and we are guarded behind iron gates when we recover. We shed our blood on the same earth, but we return home to an India that is still not free.\\'\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Sepoy:</strong> An Indian infantry soldier serving in the British Indian Army.</li><li><strong>Subadar:</strong> A senior Indian non-commissioned officer ranking below British commissioned officers.</li><li><strong>King-Emperor:</strong> King George V, who held the dual titles of King of the United Kingdom and Emperor of India.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What metaphor does the Indian officer use to describe the intensity of the cannon fire and bullets?<br><br><strong>Pair:</strong> The writer notes both that the King-Emperor visited his hospital bed and that Indian soldiers were kept behind locked gates and barred from commanding European troops. Discuss the contradiction between imperial praise and imperial inequality.<br><br><strong>Share:</strong> 130,000 Indian troops served in Flanders, yet their contributions were largely omitted from British popular memory for nearly a century. Why do you think Empire contributions were marginalized after 1918?",
       "audio_file": "/assets/great_war_reading_gw2_l2.mp3",
@@ -5370,7 +5376,10 @@
         "What monsoon metaphor does the soldier use to describe the bullet fire on the Western Front?",
         "According to the letter, what critical action did Indian troops perform upon arriving in France in 1914?",
         "What racial restriction does the soldier highlight regarding Indian officers commanding European soldiers?"
-      ]
+      ],
+      "source_type": "primary_correspondence",
+      "source_type_label": "Eyewitness Wartime Correspondence",
+      "is_primary": true
     },
     {
       "lesson_index": 3,
@@ -5379,7 +5388,7 @@
       "cover_image": "/images/vera_brittain.jpg",
       "cover_caption": "Vera Brittain (1893–1970) in her Voluntary Aid Detachment (VAD) nursing uniform.",
       "author_context": "Vera Brittain abandoned her studies at Oxford University in 1915 to volunteer as a nurse (VAD) treating wounded soldiers in London, Malta, and France. Having lost her fiancé, brother, and closest friends, her 1933 memoir Testament of Youth became the definitive account of women\\'s wartime service and the grief of the \"Lost Generation\".",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"The hospital wards in London and Etaples were an endless river of suffering. Day and night, ambulance convoys brought us young men with shattered limbs, gangrenous wounds, and eyes blinded by mustard gas. We were middle-class daughters who had never before seen a naked man or cleaned a wound, yet within weeks we were bandaging stumps and holding the hands of dying eighteen-year-olds.<br><br>Across Britain, women stepped into every sphere of life previously barred to them. In Portsmouth Dockyard and the armaments works at Priddy’s Hard, women filled high-explosive TNT shells until their skin turned bright canary yellow and their teeth rotted from toxic dust. They drove buses, operated railway signals, and harvested the grain to keep Britain from starving under the German U-boat blockade.<br><br>...We were told that our sacrifice had earned us our citizenship. Yet when the Armistice bells finally chimed in November 1918, the victory felt hollow. We were a generation of surplus women whose brothers, fiancés, and husbands lay buried beneath French mud. And within months, the men returning from France demanded their jobs back, and thousands of women were dismissed from the factories without a second thought.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>VAD (Voluntary Aid Detachment):</strong> A civilian volunteer nursing organization that provided medical support in military hospitals.</li><li><strong>Mustard Gas:</strong> A blister-agent chemical weapon that caused severe chemical burns to the skin, eyes, and lungs.</li><li><strong>Canary Girls:</strong> Female munitions factory workers whose skin turned yellow from handling toxic TNT explosive compounds.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> Why were British female munitions factory workers nicknamed \"Canary Girls\"?<br><br><strong>Pair:</strong> Vera Brittain describes both the immense expansion of women\\'s work during the war and the sudden dismissal of female workers in 1919. Discuss: did the First World War represent permanent liberation for women, or merely temporary emergency exploitation?<br><br><strong>Share:</strong> Look at the 1918 Representation of the People Act, which granted the vote only to women over 30 who owned property. Why did Parliament exclude the young working-class women under 30 who had risked their lives in the munitions factories?",
       "audio_file": "/assets/great_war_reading_gw2_l3.mp3",
@@ -5387,7 +5396,10 @@
         "What types of chemical injuries did Vera Brittain treat in the military hospital wards?",
         "Why did women working in the munitions factories at Priddy’s Hard have skin that turned bright yellow?",
         "What happened to female factory workers once the war ended in 1918–1919?"
-      ]
+      ],
+      "source_type": "primary_memoir",
+      "source_type_label": "Eyewitness VAD Nursing Memoir",
+      "is_primary": true
     },
     {
       "lesson_index": 4,
@@ -5396,7 +5408,7 @@
       "cover_image": "/images/gw_big_three_versailles.jpg",
       "cover_caption": "The Council of Four at Versailles, May 1919: David Lloyd George, Vittorio Orlando, Georges Clemenceau, and Woodrow Wilson.",
       "author_context": "John Maynard Keynes was a brilliant British Treasury economist who attended the 1919 Paris Peace Conference as an official delegate. Disgusted by the vindictive terms imposed on Germany, he resigned in protest and published The Economic Consequences of the Peace (1919), warning that crushing the German economy would lead to economic catastrophe and future war.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"The Council of Four assembled in the glittering Hall of Mirrors at Versailles, surrounded by gold and glass, but they were blind to the economic realities of the desperate continent they presumed to govern. Georges Clemenceau sat with his gloved hands folded across his chest, burning with an unrelenting desire to crush Germany permanently so that France might never again be invaded. Lloyd George pursued the fleeting demands of British electoral politics, promising angry voters that he would \\'squeeze the German lemon until the pips squeak\\'. And President Woodrow Wilson, armed with noble principles of self-determination, proved tragically incapable of mastering the practical European negotiations.<br><br>Together, they drafted an ultimatum that treated Germany as a moral outlaw, compelling her delegates to sign Article 231—the War Guilt clause—under the imminent threat of renewed Allied invasion and starvation naval blockade. They demanded astronomical reparations running into billions of pounds, stripped the defeated nation of her merchant fleet, coalfields, and iron ore, yet demanded that she somehow generate vast surpluses of gold to pay her victors.<br><br>...I believe that the campaign for securing out of Germany the general costs of the war was one of the most serious acts of political unwisdom for which European statesmen have ever been responsible. If we aim deliberately at the impoverishment of Central Europe, vengeance, I dare predict, will not limp. By reducing seventy million people to perpetual poverty and humiliation, we are sowing dragon\\'s teeth across the soil of Europe. Nothing can then delay that final civil war between the despairing forces of Reaction and Revolution, before which the horrors of the late German war will pale into insignificance.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Council of Four:</strong> The leaders of Britain, France, the USA, and Italy who dictated the terms of the Treaty of Versailles.</li><li><strong>Article 231 (War Guilt Clause):</strong> The legal clause forcing Germany to accept sole responsibility for causing all Allied damage.</li><li><strong>Reparations:</strong> Massive financial compensation demanded from Germany to pay for Allied civilian war damages.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What warning does Keynes issue in the final sentence about what will happen if Germany is deliberately impoverished?<br><br><strong>Pair:</strong> Contrast Clemenceau\\'s desire to permanently weaken Germany against Keynes\\'s warning that an economically ruined Germany would threaten the stability of all of Europe. Which leader had the more realistic long-term vision?<br><br><strong>Share:</strong> In light of the rise of fascism in the 1930s, was Keynes\\'s prophecy completely accurate, or did the Treaty of Versailles fail because Britain and France refused to enforce its terms when Hitler began rearming?",
       "audio_file": "/assets/great_war_reading_gw2_l4.mp3",
@@ -5404,7 +5416,10 @@
         "Why did John Maynard Keynes resign from the British Treasury delegation at Versailles?",
         "According to Keynes, what contradiction existed between stripping Germany of coal and iron while demanding billions in reparations?",
         "What dark prediction did Keynes make about the long-term consequence of impoverishing Central Europe?"
-      ]
+      ],
+      "source_type": "contemporary_treatise",
+      "source_type_label": "Contemporary Diplomatic Critique (1919)",
+      "is_primary": true
     }
   ],
   "edition": "2026.1",

@@ -402,3 +402,4 @@ rights.total_sources = grandTotal;
 
 fs.writeFileSync(rightsDbPath, JSON.stringify(rights, null, 2), 'utf8');
 console.log(`✅ Updated ${rightsDbPath} (Total registered sources: ${grandTotal})`);
+

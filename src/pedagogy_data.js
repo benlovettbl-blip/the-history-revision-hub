@@ -717,4 +717,53 @@ export const PEDAGOGY_RESEARCH_BANK = [
       },
     ],
   },
+  {
+    id: 'ks4_dual_coding_read_aloud_homework_passport',
+    author: 'Alex Quigley, Christopher Such & Daniel Willingham',
+    affiliation: 'Education Endowment Foundation (EEF) / University of Virginia',
+    category: 'Disciplinary Literacy & Workload Architecture',
+    categoryBadge: 'badge-purple',
+    title: 'KS4 Disciplinary Read-Aloud & The Zero-Teacher-Workload Homework Passport',
+    subtitle:
+      'Overcoming the "Fluency Fallacy" at GCSE via Dual-Coding Audio Narration & Closed-Loop Recall Accountability',
+    overview:
+      'Secondary educators frequently abandon reading aloud at Key Stage 4 under the erroneous assumption that 14–16 year old pupils are fully fluent, autonomous readers. However, GCSE History texts feature high academic Lexile ratings packed with polysyllabic domain vocabulary, complex passive syntax, and archaic terminology. Combining Paivio’s Dual Coding Theory with cognitive load theory and Rosenshine’s principles of spaced retrieval, the Homework & Assessment Passport replaces unsustainable written marking with a closed-loop audio read-aloud and self-marking retrieval cycle that requires zero hours of teacher grading at home.',
+    analysisHeading: 'The Classroom Dilemma (The Homework Marking Trap & The Fluency Fallacy)',
+    analysisText:
+      'Traditional GCSE history homework creates an acute teacher workload crisis: teachers assign written comprehension or 12-mark exam questions, collect 30 booklets, and spend 3–4 hours grading them over weekends, only to return feedback days later when the memory trace has faded. Conversely, pupils reading dense GCSE texts silently at home stumble over unfamiliar terms, miss sentence rhythms, or skim superficially without retention. Parents simultaneously feel alienated from GCSE revision because they lack specialist syllabus knowledge.',
+    evidenceHeading: 'What the Evidence Proves (Dual-Coding, Prosody & Working Memory)',
+    evidenceText:
+      'Alex Quigley (2020) and Christopher Such (2021) demonstrate that hearing fluent expressive reading (prosody) while simultaneously tracking printed text reduces phonological decoding strain, freeing working memory for deep causal comprehension and semantic encoding. Dual-coding the auditory narration alongside the physical text allows pupils to internalize complex vocabulary without cognitive overload. Furthermore, Roediger and Karpicke (2006) prove that immediate retrieval practice (testing effect) cements long-term schema retention far more effectively than passive reading or delayed teacher marking.',
+    applicationHeading: 'Revision Hub Architecture: Closed-Loop Homework Passport Standard',
+    implementation: [
+      'Permanent QR-Linked Narration: Each lesson row on the outside back cover embeds a 15.5mm permanent vector QR code linking directly to the interactive lesson, browser-narrated audio read-aloud, and 10-question self-marking quiz.',
+      'Explicit 3-Step Homework Protocol: The passport header establishes an unambiguous routine: "1. Scan QR to read aloud / track audio narration • 2. Complete 10-Q online quiz • 3. Parent verifies & signs".',
+      'Zero-Teacher-Workload Marking Loop: The digital platform provides instant automated grading and model answers. Pupils record their score out of 10, and parents verify and sign the generous 80mm signature line at home.',
+      'Closed-Loop In-Class Retrieval Starter: The subsequent lesson begins with a 10-mark In-Class Do Now starter retrieving the exact knowledge from the homework. Pupils self-mark in green pen, immediately validating their home study without any teacher marking burden.',
+    ],
+    protocolHeading: 'Practical Classroom Protocol for History Teachers',
+    teacherProtocols: [
+      '1. 30-Second Homework Verification Scan: At the start of the lesson during the register, conduct a visual perimeter scan of the outside back covers to check for the parent signature and home score (tick in register).',
+      '2. In-Class Accountability via Do Now: Immediately project the 10-question Do Now starter. Pupils complete it independently and mark in green pen. Discrepancies between home quiz scores and in-class recall instantly highlight pupils needing targeted support.',
+      '3. Empower Parents as Reading Partners: Instruct parents at curriculum evenings that their role is purely to listen to their child read aloud for 5 minutes or watch them track the audio player, verify the score displayed on the phone, and sign the booklet.',
+    ],
+    citations: [
+      'Quigley, A. (2020). Closing the Reading Gap. Routledge.',
+      'Such, C. (2021). The Art and Science of Teaching Primary Reading. Corwin.',
+      'Willingham, D. T. (2009). Why Don’t Students Like School? A Cognitive Scientist Answers Questions About How the Mind Works. Jossey-Bass.',
+      'Education Endowment Foundation (2019). Improving Literacy in Secondary Schools. Guidance Report.',
+    ],
+    links: [
+      {
+        title: 'EEF: Improving Literacy in Secondary Schools',
+        url: 'https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/literacy-ks3-ks4',
+        displayText: 'educationendowmentfoundation.org.uk/education-evidence/guidance-reports/literacy-ks3-ks4',
+      },
+      {
+        title: 'Alex Quigley: The Reading Gap & Disciplinary Literacy',
+        url: 'https://www.theconfidentteacher.co.uk/',
+        displayText: 'www.theconfidentteacher.co.uk',
+      },
+    ],
+  },
 ];

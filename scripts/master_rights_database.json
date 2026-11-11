@@ -4227,7 +4227,7 @@
       "key_stage": "GCSE (Edexcel Paper 1)",
       "unit_title": "Medicine in Britain, c.1250–present & The Western Front",
       "total_lessons": 26,
-      "total_sources": 125,
+      "total_sources": 128,
       "sources": [
         {
           "lesson_num": 1,
@@ -5678,16 +5678,16 @@
         {
           "lesson_num": 26,
           "lesson_title": "KT5.6 Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
-          "source_id": "Source C (Printed Title Page)",
-          "artifact_title": "Printed Title Page to Major Harold Gillies' 'Plastic Surgery of the Face'",
-          "date": "1920",
-          "creator": "Major Harold Delf Gillies / Oxford Medical Publications",
-          "repository": "The Wellcome Collection, London",
-          "accession_id": "Wellcome Collection L0050400",
-          "rights_status": "CC BY 4.0 / Public Domain",
+          "source_id": "Guided Reading Homework Cover Plate",
+          "artifact_title": "Pioneering Facial Reconstruction by Sir Harold Gillies: Petty Officer Walter Yeo Tubed Pedicle Flap",
+          "date": "1917",
+          "creator": "Sir Harold Delf Gillies, FRCS / Royal Navy Medical Service",
+          "repository": "The Gillies Archives / Queen Mary's Hospital, Sidcup / Royal College of Surgeons of England",
+          "accession_id": "RCSEng / BAPRAS Gillies Archives MS0513",
+          "rights_status": "Public Domain (Crown Copyright Expired / Published Clinical Record >100 Years)",
           "commercial_use_permitted": true,
-          "source_url": "https://wellcomecollection.org/works/b7ungfaq",
-          "asset_path": "/images/gillies_plastic_surgery_titlepage.jpg"
+          "source_url": "https://commons.wikimedia.org/wiki/File:Walter_Yeo_skin_graft.jpg",
+          "asset_path": "/images/gillies_tubed_pedicle.jpg"
         },
         {
           "lesson_num": 6,
@@ -5946,13 +5946,13 @@
           "lesson_title": "KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
           "source_id": "Narrative Plate 4",
           "artifact_title": "Sir Harold Gillies' 'Tubed Pedicle' Technique (Queen's Hospital, Sidcup)",
-          "date": "c. 19th–20th Century",
-          "creator": "Official Archival Record / Contemporary Artist",
-          "repository": "British Library, London",
-          "accession_id": "BL Add MS / Maps Collection",
-          "rights_status": "Public Domain (British Library Open Access)",
+          "date": "1917",
+          "creator": "Sir Harold Delf Gillies, FRCS / Royal Navy Medical Service",
+          "repository": "The Gillies Archives / Queen Mary's Hospital, Sidcup / Royal College of Surgeons of England",
+          "accession_id": "RCSEng / BAPRAS Gillies Archives MS0513",
+          "rights_status": "Public Domain (Crown Copyright Expired / Published Clinical Record >100 Years)",
           "commercial_use_permitted": true,
-          "source_url": "https://www.bl.uk",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Walter_Yeo_skin_graft.jpg",
           "asset_path": "/images/gillies_tubed_pedicle.jpg"
         },
         {
@@ -6012,10 +6012,24 @@
           "commercial_use_permitted": true,
           "source_url": "https://www.npg.org.uk/collections/search/portrait/mw132470",
           "asset_path": "/images/watson_and_crick_1953.jpg"
+        },
+        {
+          "lesson_num": 21,
+          "lesson_title": "KT5.1: The Theatre of War: The British Sector, Trench Geography & Battles (1914–1918)",
+          "source_id": "Literary Companion Plate (Birdsong)",
+          "artifact_title": "An Underground Casualty Clearing Station, Arras",
+          "date": "1918",
+          "creator": "Henry Tonks (Lieutenant, Royal Army Medical Corps / Official War Artist)",
+          "repository": "Imperial War Museums, London",
+          "accession_id": "IWM ART 1653",
+          "rights_status": "Public Domain (UK Crown Copyright Expired — CDPA 1988 s.163 / Artist died 1937)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.iwm.org.uk/collections/item/object/1653",
+          "asset_path": "/images/arras_underground_hospital_tonks_1918.jpg"
         }
       ],
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 11",
-      "total_registered_sources": 74
+      "total_registered_sources": 128
     },
     "eee": {
       "unit_title": "Paper 2: Early Elizabethan England, 1558-88",

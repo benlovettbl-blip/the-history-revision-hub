@@ -2033,7 +2033,7 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
 
   const wfQrLessons = wfConfigs.map((cfg) => ({
     label: `KT 5.${cfg.lessonNum}`,
-    url: `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
+    url: `https://the-history-revision-hub.netlify.app/?view=reading&unit=edexcel_medicine&lesson=5.${cfg.lessonNum}`,
   }));
 
   html += renderStandardBackCover({

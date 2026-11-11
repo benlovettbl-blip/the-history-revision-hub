@@ -204,3 +204,4 @@ if (oldLoopRegex.test(code)) {
 
 fs.writeFileSync(file, code, 'utf8');
 console.log('Saved patched render_standard_textbook_water_and_sanitation.cjs');
+

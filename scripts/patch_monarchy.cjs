@@ -138,3 +138,4 @@ if (oldLoopRegex.test(code)) {
 
 fs.writeFileSync(file, code, 'utf8');
 console.log('Saved patched render_monarchy_religion_power_8page_textbook.cjs');
+

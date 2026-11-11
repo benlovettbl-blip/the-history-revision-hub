@@ -42,3 +42,4 @@ const pubDbFile = 'public/database.json';
 fs.writeFileSync(pubDbFile, JSON.stringify(dbObj, null, 2), 'utf8');
 
 console.log('✅ Cleaned CME Lesson 3 video across all 6 data stores!');
+

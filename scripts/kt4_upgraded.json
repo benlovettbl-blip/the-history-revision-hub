@@ -141,7 +141,7 @@
       },
       {
         "title": "Act 4: The Historical Verdict & Historiographical Debate",
-        "text": "<span class=\"para-ref\">[4.1]</span> The genetic revolution fundamentally transformed modern clinical practice from reactive symptom management into predictive, personalized medicine. Armed with genomic sequencing, contemporary doctors no longer rely on standardized treatments; instead, individuals carrying faulty hereditary mutations can undergo preventative blood screening, enabling life-saving prophylactic surgery such as double mastectomies decades before malignant tumors form. Furthermore, the twenty-first century witnessed the emergence of synthetic gene therapy and CRISPR-Cas9 molecular editing, allowing clinical geneticists to repair defective cystic fibrosis genes and treat sickle cell disease at the cellular level.<br><br><span class=\"para-ref\">[4.2]</span> Historiographers and medical ethicists actively debate the clinical reality versus the therapeutic hype of genetics. Medical historians emphasize the persistent \"Diagnostic-Therapeutic Lag\": while sequencing a patient’s genome is now rapid and inexpensive, developing safe, effective gene therapies remains extraordinarily complex, costly, and ethically contested. Furthermore, the historiographical narrative surrounding the discovery of DNA has undergone profound revision: while Watson, Crick, and Wilkins received the 1962 Nobel Prize in Physiology or Medicine, Rosalind Franklin tragically passed away from ovarian cancer in 1958 at age 37, unacknowledged during her lifetime for generating the foundational experimental evidence that made the double helix model possible."
+        "text": "<span class=\"para-ref\">[4.1]</span> The genetic revolution fundamentally transformed modern clinical practice from reactive symptom management into predictive, personalized medicine. Armed with genomic sequencing, contemporary doctors no longer rely on standardized treatments; instead, individuals carrying faulty hereditary mutations can undergo preventative blood screening, enabling life-saving preventative monitoring and surgery decades before malignant tumors form. Furthermore, the twenty-first century witnessed the emergence of synthetic gene therapy and gene therapy, allowing clinical geneticists to repair defective cystic fibrosis genes and treat sickle cell disease at the cellular level.<br><br><span class=\"para-ref\">[4.2]</span> Historiographers and medical ethicists actively debate the clinical reality versus the therapeutic hype of genetics. Medical historians emphasize the persistent \"Treatment Gap\": while sequencing a patient’s genome is now rapid and inexpensive, developing safe, effective gene therapies remains extraordinarily complex, costly, and ethically contested. Furthermore, the historiographical narrative surrounding the discovery of DNA has undergone profound revision: while Watson, Crick, and Wilkins received the 1962 Nobel Prize in Physiology or Medicine, Rosalind Franklin tragically passed away from ovarian cancer in 1958 at age 37, unacknowledged during her lifetime for generating the foundational experimental evidence that made the double helix model possible."
       }
     ],
     "tasks": [
@@ -367,7 +367,7 @@
         "hint": "Personalized medicine."
       },
       {
-        "front": "What is the Diagnostic-Therapeutic Lag in genetics?",
+        "front": "What is the Treatment Gap in genetics?",
         "back": "We can diagnose thousands of genetic conditions, but developing safe, effective gene therapy cures remains very difficult.",
         "hint": "Knowing vs curing."
       }
@@ -834,7 +834,7 @@
       "objectives": [
         {
           "objective": "Explain Paul Ehrlich’s concept of \"magic bullets\" and how Sahachiro Hata discovered Salvarsan 606.",
-          "primer": "Direct students to paragraphs [1.1]–[2.1]. Emphasize the Diagnostic-Therapeutic Lag and how chemical dyes were engineered into selective arsenic derivatives to destroy Treponema pallidum without killing the patient.",
+          "primer": "Direct students to paragraphs [1.1]–[2.1]. Emphasize the Treatment Gap and how chemical dyes were engineered into selective arsenic derivatives to destroy Treponema pallidum without killing the patient.",
           "question": "Why was Salvarsan 606 described as a \"magic bullet\" compared to older chemical antiseptics like carbolic acid or mercury?"
         },
         {
@@ -902,7 +902,7 @@
     ],
     "guided_reading": [
       {
-        "question": "According to paragraph [1.1], what was the \"Diagnostic-Therapeutic Lag\"?",
+        "question": "According to paragraph [1.1], what was the \"Treatment Gap\"?",
         "answer": "The historical gap where doctors could identify bacteria under a microscope but had no safe medicines to kill them inside living patients."
       },
       {
@@ -921,7 +921,7 @@
     "narrative_blocks": [
       {
         "title": "Act 1: Context & Catalyst (Paul Ehrlich & The Quest for \"Magic Bullets\")",
-        "text": "<span class=\"para-ref\">[1.1]</span> By the opening decade of the twentieth century, bacteriology had successfully unmasked the microbial culprits behind tuberculosis, cholera, and diphtheria. Yet physicians found themselves crippled by an agonizing limitation known as the *Diagnostic-Therapeutic Lag*: while a doctor could place a sputum slide under a microscope and diagnose a bacterial infection with scientific precision, they possessed zero medicines to kill the invading pathogens inside the human body. Existing chemical antiseptics like carbolic acid, mercury, and arsenic were blunt, indiscriminate poisons that destroyed human blood cells, liver tissue, and kidneys just as swiftly as they destroyed bacteria.<br><br><span class=\"para-ref\">[1.2]</span> A brilliant German physician named Paul Ehrlich, who had previously worked with Robert Koch staining bacteria with synthetic chemical dyes, proposed an audacious hypothesis: the *Zauberkugel*, or \"magic bullet.\" Ehrlich noticed that certain synthetic aniline dyes attached themselves selectively to specific bacterial cells while leaving surrounding human cells completely unstained. Ehrlich reasoned that if a lethal toxin could be chemically bonded to a selective dye molecule, it would behave like a guided missile—hunting down and annihilating the targeted pathogen inside the bloodstream without inflicting harm upon the patient."
+        "text": "<span class=\"para-ref\">[1.1]</span> By the opening decade of the twentieth century, bacteriology had successfully unmasked the microbial culprits behind tuberculosis, cholera, and diphtheria. Yet physicians found themselves crippled by an agonizing limitation known as the *Treatment Gap*: while a doctor could place a sputum slide under a microscope and diagnose a bacterial infection with scientific precision, they possessed zero medicines to kill the invading pathogens inside the human body. Existing chemical antiseptics like carbolic acid, mercury, and arsenic were blunt, indiscriminate poisons that destroyed human blood cells, liver tissue, and kidneys just as swiftly as they destroyed bacteria.<br><br><span class=\"para-ref\">[1.2]</span> A brilliant German physician named Paul Ehrlich, who had previously worked with Robert Koch staining bacteria with synthetic chemical dyes, proposed an audacious hypothesis: the *Zauberkugel*, or \"magic bullet.\" Ehrlich noticed that certain synthetic aniline dyes attached themselves selectively to specific bacterial cells while leaving surrounding human cells completely unstained. Ehrlich reasoned that if a lethal toxin could be chemically bonded to a selective dye molecule, it would behave like a guided missile—hunting down and annihilating the targeted pathogen inside the bloodstream without inflicting harm upon the patient."
       },
       {
         "title": "Act 2: Escalation & Conflict (Salvarsan 606, Prontosil & Interwar Injustice)",
@@ -1572,7 +1572,7 @@
       {
         "front": "Why did Fleming abandon penicillin research after 1929?",
         "back": "He was a bacteriologist who could not chemically isolate or stabilize the unstable active substance.",
-        "hint": "Diagnostic-Therapeutic Lag."
+        "hint": "Treatment Gap."
       },
       {
         "front": "Who were the core leaders of the Oxford research team?",

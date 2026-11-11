@@ -71,6 +71,22 @@ function cleanProse(text) {
     .trim();
 }
 
+// Format block paragraphs into clean <p class="prose-p"> tags
+function formatBlockParas(htmlText) {
+  if (!htmlText) return '';
+  const matches = htmlText.match(/<p>([\s\S]*?)<\/p>/gi);
+  if (matches && matches.length > 0) {
+    return matches
+      .map((m) => {
+        let inner = m.replace(/<\/?p>/gi, '');
+        inner = cleanProse(inner);
+        return `<p class="prose-p">${inner}</p>`;
+      })
+      .join('\n');
+  }
+  return `<p class="prose-p">${cleanProse(htmlText)}</p>`;
+}
+
 // Load canonical data dynamically from units/great_war/data.js (Single Source of Truth)
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'great_war', 'data.js');
@@ -427,7 +443,7 @@ function buildHtml() {
 
     .cover-hero-wrap {
       width: 100%;
-      height: 78mm;
+      height: 89mm;
       border: 1.5px solid #0f172a;
       position: relative;
       background: #0f172a;
@@ -537,7 +553,7 @@ function buildHtml() {
     }
 
     .cover-directory-table td {
-      padding: 4.5px 8px;
+      padding: 5.5px 8px;
       vertical-align: middle;
     }
 
@@ -849,23 +865,31 @@ function buildHtml() {
 
     .block-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 9.6pt;
-      line-height: 1.44;
       color: #1e293b;
       margin: 0;
     }
 
-    .block-prose strong {
+    .block-prose .prose-p {
+      font-family: 'Lora', Georgia, serif;
+      color: #1e293b;
+      margin: 0 0 5px 0;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    .block-prose .prose-p:last-child {
+      margin-bottom: 0;
+    }
+
+    .block-prose strong, .block-prose .prose-p strong {
       font-weight: 700;
       color: #0f172a;
     }
 
-    /* Calibrated base styling per enquiry */
-    .page-lesson-1 .block-prose { font-size: 9.5pt; line-height: 1.43; }
-    .page-lesson-2 .block-prose { font-size: 9.6pt; line-height: 1.44; }
-    .page-lesson-3 .block-prose { font-size: 9.55pt; line-height: 1.43; }
-    .page-lesson-4 .block-prose { font-size: 9.7pt; line-height: 1.45; }
-    .page-lesson-5 .block-prose { font-size: 9.35pt; line-height: 1.42; }
+    /* Calibrated typography: dynamically calibrated in Puppeteer */
+    .block-section { margin-bottom: 6px; }
+    .block-prose .prose-p { font-size: 11.2pt; line-height: 1.50; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1133,7 +1157,9 @@ function buildHtml() {
               <span class="block-title">${b.title || `Act ${bi + 1}`}</span>
             </div>
             ${qText ? `<div class="block-workbook-question">${qText}</div>` : ''}
-            <p class="block-prose">${cleanProse(b.text)}</p>
+            <div class="block-prose">
+              ${formatBlockParas(b.text)}
+            </div>
           </div>
         `;
           })
@@ -1231,32 +1257,51 @@ async function run() {
     const lessonPages = document.querySelectorAll('.page-lesson');
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
-      const proseEls = p.querySelectorAll('.block-prose');
-      const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer) return;
+      const footerTop = footer ? footer.getBoundingClientRect().top : p.clientHeight - 30;
+      const prose = p.querySelector('.prose-columns');
+      const proseEls = Array.from(p.querySelectorAll('.block-prose .prose-p, .block-prose p'));
+      const sections = Array.from(p.querySelectorAll('.block-section'));
+      if (!prose || !proseEls.length || !footer) return;
 
-      let size = 9.8;
-      let lh = 1.45;
-      let secMargin = 5;
+      let best = null;
+      for (let s = 9.8; s <= 12.6; s += 0.05) {
+        const lh = (1.40 + (s - 9.8) * 0.045).toFixed(2);
+        const mb = (3.5 + (s - 9.8) * 1.4).toFixed(1);
+        const pMb = (3.0 + (s - 9.8) * 0.8).toFixed(1);
 
-      const getOverlap = () => {
-        const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(
+        proseEls.forEach((el) => {
+          el.style.fontSize = s.toFixed(2) + 'pt';
+          el.style.lineHeight = lh;
+          el.style.marginBottom = pMb + 'px';
+        });
+        sections.forEach((sec) => {
+          sec.style.marginBottom = mb + 'px';
+        });
+
+        const bDiff = p.scrollHeight - p.clientHeight;
+        const colDiff = prose.scrollHeight - prose.clientHeight;
+        const allChildren = Array.from(
           p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
         );
-        const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
-        return maxB - fTop;
-      };
+        const maxChildB = allChildren.length ? Math.max(...allChildren.map((c) => c.getBoundingClientRect().bottom)) : 0;
+        const proseB = prose.getBoundingClientRect().bottom;
+        const maxB = Math.max(maxChildB, proseB);
+        const clearance = Math.round(footerTop - maxB);
 
-      while (getOverlap() > -15 && size > 8.5) {
-        size -= 0.1;
-        lh -= 0.01;
-        secMargin = Math.max(3, secMargin - 0.1);
+        if (bDiff <= 0 && colDiff <= 0 && clearance >= 35) {
+          best = { s, lh, mb, pMb, clearance };
+        }
+      }
+
+      if (best) {
         proseEls.forEach((el) => {
-          el.style.fontSize = size.toFixed(2) + 'pt';
-          el.style.lineHeight = lh.toFixed(2);
+          el.style.fontSize = best.s.toFixed(2) + 'pt';
+          el.style.lineHeight = best.lh;
+          el.style.marginBottom = best.pMb + 'px';
         });
-        sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        sections.forEach((sec) => {
+          sec.style.marginBottom = best.mb + 'px';
+        });
       }
     });
   });

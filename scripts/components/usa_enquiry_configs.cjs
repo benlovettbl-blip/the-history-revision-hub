@@ -580,9 +580,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "1966",
           "title": "Dr King's Chicago Freedom Movement",
           "bullets": [
-            "Detroit & Newark riots (1967)",
-            "Federal paratroopers deployed",
-            "Urban ghetto frustration"
+            "Chicago Freedom Movement (1966)",
+            "Slum housing & redlining protest",
+            "Marquette Park violent backlash"
           ],
           "focusClue": "What did Dr King's campaign in Chicago reveal about the entrenched nature of northern de facto segregation?"
         },
@@ -590,9 +590,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "July 1967",
           "title": "The Detroit & Newark Rebellions",
           "bullets": [
-            "Kerner Commission (1968)",
-            "'Two societies: separate, unequal'",
-            "White institutional racism"
+            "Detroit & Newark riots (1967)",
+            "43 dead in Detroit violence",
+            "Federal airborne paratroopers"
           ],
           "focusClue": "How did the violent urban rebellions in Newark and Detroit in 1967 demonstrate the failure of Great Society antipoverty programs?"
         },
@@ -600,9 +600,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "February–March 1968",
           "title": "The Kerner Commission Report",
           "bullets": [
-            "Martin Luther King assassinated",
-            "Lorraine Motel Memphis",
-            "100-city nationwide riots"
+            "1968 Kerner Commission report",
+            "'Two societies: separate, unequal'",
+            "White institutional racism blamed"
           ],
           "focusClue": "Why did the Kerner Commission Report conclude that white racism was the primary cause of urban riots?"
         },
@@ -610,9 +610,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "4–11 April 1968",
           "title": "King's Assassination & The 1968 Civil Rights Act",
           "bullets": [
-            "1968 Fair Housing Act",
-            "Housing discrimination outlawed",
-            "Civil rights coalition fracture"
+            "King assassinated in Memphis",
+            "Nationwide 100-city uprisings",
+            "1968 Fair Housing Act passed"
           ],
           "focusClue": "How did the assassination of Dr Martin Luther King Jr. and the passage of the 1968 Fair Housing Act reshape the movement?"
         }
@@ -726,9 +726,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "1963–1964",
           "title": "ARVN Deterioration & Vietcong Expansion",
           "bullets": [
-            "USS Maddox patrol",
-            "Gulf of Tonkin incident",
-            "Disputed second torpedo attack"
+            "Saigon military instability",
+            "Chronic ARVN desertions",
+            "Vietcong rural expansion"
           ],
           "focusClue": "Why did the military collapse of the ARVN in 1963–64 convince US leaders that direct intervention was unavoidable?"
         },
@@ -736,9 +736,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "2–4 August 1964",
           "title": "The Gulf of Tonkin Incident",
           "bullets": [
-            "Gulf of Tonkin Resolution",
-            "Congress 'blank check'",
-            "Presidential war powers"
+            "USS Maddox patrol",
+            "Gulf of Tonkin incident",
+            "Disputed second torpedo attack"
           ],
           "focusClue": "What occurred during the August 1964 Gulf of Tonkin incident, and how did Johnson use it politically?"
         },
@@ -746,9 +746,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "7 August 1964",
           "title": "The Gulf of Tonkin Resolution Passes Congress",
           "bullets": [
-            "Vietcong raid on Pleiku",
-            "Eight US soldiers killed",
-            "Operation Rolling Thunder launched"
+            "Gulf of Tonkin Resolution",
+            "Congress 'blank check'",
+            "Presidential war powers"
           ],
           "focusClue": "Why was the Gulf of Tonkin Resolution described by critics as a 'blank check' for presidential war-making?"
         },
@@ -756,9 +756,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "February–March 1965",
           "title": "Operation Rolling Thunder Bombing Offensive",
           "bullets": [
-            "Da Nang beach landing",
-            "3,500 US Marines arrive",
-            "First US combat troops"
+            "Vietcong raid on Pleiku",
+            "Eight US soldiers killed",
+            "Operation Rolling Thunder launched"
           ],
           "focusClue": "What were the strategic objectives of Operation Rolling Thunder, and why did it fail to halt northern infiltration?"
         },
@@ -766,9 +766,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "8 March 1965",
           "title": "First US Ground Combat Troops Land at Da Nang",
           "bullets": [
-            "General William Westmoreland",
-            "Troop surge to 184,000",
-            "Search and destroy strategy"
+            "Da Nang beach landing",
+            "3,500 US Marines arrive",
+            "General Westmoreland escalation"
           ],
           "focusClue": "How did the landing of 3,500 Marines at Da Nang in March 1965 mark the permanent Americanization of the war?"
         }
@@ -803,9 +803,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "1965–1968",
           "title": "Vietcong Asymmetric Guerrilla Tactics",
           "bullets": [
-            "Cu Chi tunnel systems",
-            "Booby traps & punji stakes",
-            "'Hanging on US belt buckles'"
+            "General Vo Nguyen Giap strategy",
+            "'Hanging on US belt buckles'",
+            "Vanishing into peasant villages"
           ],
           "focusClue": "How did the Vietcong tactic of 'hanging onto the belts' neutralize superior American firepower and technology?"
         },
@@ -813,9 +813,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "1960–1975",
           "title": "Underground Tunnels of Cu Chi & Booby Traps",
           "bullets": [
-            "Ho Chi Minh Trail network",
-            "Laos & Cambodia jungle routes",
-            "Soviet & Chinese weapons"
+            "Cu Chi 250km tunnel networks",
+            "Punji sticks & booby traps",
+            "Subterranean supply rooms"
           ],
           "focusClue": "Why did the Cu Chi tunnel complex and deadly booby traps severely undermine American military morale?"
         },
@@ -823,9 +823,9 @@ const USA_ENQUIRY_CONFIGS = {
           "dates": "1959–1975",
           "title": "The Ho Chi Minh Trail Supply Lifeline",
           "bullets": [
-            "Operation Rolling Thunder",
-            "B-52 heavy carpet-bombing",
-            "Million tons of ordnance"
+            "Ho Chi Minh Trail network",
+            "Laos & Cambodia border routes",
+            "Soviet & Chinese arms pipeline"
           ],
           "focusClue": "How did the Ho Chi Minh Trail enable North Vietnam to sustain the southern insurgency despite continuous US bombing?"
         },

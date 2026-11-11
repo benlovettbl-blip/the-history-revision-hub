@@ -64,6 +64,22 @@ function cleanProse(text) {
     .trim();
 }
 
+// Format block paragraphs into clean <p class="prose-p"> tags
+function formatBlockParas(htmlText) {
+  if (!htmlText) return '';
+  const matches = htmlText.match(/<p>([\s\S]*?)<\/p>/gi);
+  if (matches && matches.length > 0) {
+    return matches
+      .map((m) => {
+        let inner = m.replace(/<\/?p>/gi, '');
+        inner = cleanProse(inner);
+        return `<p class="prose-p">${inner}</p>`;
+      })
+      .join('\n');
+  }
+  return `<p class="prose-p">${cleanProse(htmlText)}</p>`;
+}
+
 // Load canonical data from units/medieval_england/data.js
 function loadUnitData() {
   const dbPath = path.join(ROOT_DIR, 'public', 'database.json');
@@ -392,7 +408,7 @@ function buildHtml() {
 
     .cover-hero-wrap {
       width: 100%;
-      height: 80mm;
+      height: 91mm;
       border: 1.5px solid #0f172a;
       position: relative;
       background: #0f172a;
@@ -420,7 +436,7 @@ function buildHtml() {
       border: 1.5px solid #e2d9cc;
       border-left: 4.5px solid #1e3a8a;
       border-radius: 4px;
-      padding: 10px 14px;
+      padding: 12px 14px;
       margin: 4px 0 7px 0;
     }
 
@@ -493,7 +509,7 @@ function buildHtml() {
     }
 
     .cover-directory-table td {
-      padding: 4.5px 8px;
+      padding: 6px 8px;
       vertical-align: middle;
     }
 
@@ -817,26 +833,27 @@ function buildHtml() {
       margin: 0;
     }
 
-    .block-prose strong {
+    .block-prose .prose-p {
+      font-family: 'Lora', Georgia, serif;
+      color: #1e293b;
+      margin: 0 0 5px 0;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    .block-prose .prose-p:last-child {
+      margin-bottom: 0;
+    }
+
+    .block-prose strong, .block-prose .prose-p strong {
       font-weight: 700;
       color: #0f172a;
     }
 
-    /* Calibrated typography: guarantees positive clearance, 0px overflow, zero spillover */
-    .page-lesson-1 .block-section { margin-bottom: 4.5px; }
-    .page-lesson-1 .block-prose { font-size: 10.35pt; line-height: 1.45; }
-
-    .page-lesson-2 .block-section { margin-bottom: 4px; }
-    .page-lesson-2 .block-prose { font-size: 9.95pt; line-height: 1.41; }
-
-    .page-lesson-3 .block-section { margin-bottom: 4px; }
-    .page-lesson-3 .block-prose { font-size: 9.85pt; line-height: 1.40; }
-
-    .page-lesson-4 .block-section { margin-bottom: 4.5px; }
-    .page-lesson-4 .block-prose { font-size: 10.35pt; line-height: 1.45; }
-
-    .page-lesson-5 .block-section { margin-bottom: 3.5px; }
-    .page-lesson-5 .block-prose { font-size: 9.55pt; line-height: 1.38; }
+    /* Calibrated typography: baseline values dynamically calibrated in Puppeteer */
+    .block-section { margin-bottom: 6px; }
+    .block-prose .prose-p { font-size: 11.2pt; line-height: 1.50; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1125,7 +1142,9 @@ function buildHtml() {
             </div>`
                 : ''
             }
-            <p class="block-prose">${cleanProse(b.text)}</p>
+            <div class="block-prose">
+              ${formatBlockParas(b.text)}
+            </div>
           </div>
         `;
           })
@@ -1216,7 +1235,7 @@ async function run() {
   await page.setContent(html, { waitUntil: 'domcontentloaded' });
   await page.evaluateHandle('document.fonts.ready');
 
-  // Dynamic in-browser auto-calibration for zero spillover
+  // Dynamic in-browser auto-calibration for zero spillover & complete page budget utilization
   await page.evaluate(() => {
     document.querySelectorAll('.page-lesson').forEach((p) => {
       const footer = p.querySelector('.running-footer');
@@ -1224,29 +1243,49 @@ async function run() {
       const prose = p.querySelector('.prose-columns');
       if (!prose) return;
 
-      const paragraphs = Array.from(p.querySelectorAll('.block-prose'));
+      const proseEls = Array.from(p.querySelectorAll('.block-prose .prose-p, .block-prose p'));
       const sections = Array.from(p.querySelectorAll('.block-section'));
-      if (!paragraphs.length) return;
+      if (!proseEls.length) return;
 
-      let fs = parseFloat(window.getComputedStyle(paragraphs[0]).fontSize) * 0.75;
-      let mb = parseFloat(window.getComputedStyle(sections[0]).marginBottom) || 5;
-      let iterations = 0;
+      let best = null;
+      for (let s = 9.8; s <= 12.6; s += 0.05) {
+        const lh = (1.40 + (s - 9.8) * 0.045).toFixed(2);
+        const mb = (3.5 + (s - 9.8) * 1.4).toFixed(1);
+        const pMb = (3.0 + (s - 9.8) * 0.8).toFixed(1);
 
-      while (
-        (p.scrollHeight > p.clientHeight || prose.getBoundingClientRect().bottom > footerTop - 6) &&
-        fs > 8.5 &&
-        iterations < 45
-      ) {
-        fs -= 0.15;
-        mb = Math.max(1.5, mb - 0.2);
-        paragraphs.forEach((el) => {
-          el.style.fontSize = fs.toFixed(2) + 'pt';
-          el.style.lineHeight = (fs * 0.138 + 0.04).toFixed(2);
+        proseEls.forEach((el) => {
+          el.style.fontSize = s.toFixed(2) + 'pt';
+          el.style.lineHeight = lh;
+          el.style.marginBottom = pMb + 'px';
         });
-        sections.forEach((s) => {
-          s.style.marginBottom = mb.toFixed(1) + 'px';
+        sections.forEach((sec) => {
+          sec.style.marginBottom = mb + 'px';
         });
-        iterations++;
+
+        const bDiff = p.scrollHeight - p.clientHeight;
+        const colDiff = prose.scrollHeight - prose.clientHeight;
+        const allChildren = Array.from(
+          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+        );
+        const maxChildB = allChildren.length ? Math.max(...allChildren.map((c) => c.getBoundingClientRect().bottom)) : 0;
+        const proseB = prose.getBoundingClientRect().bottom;
+        const maxB = Math.max(maxChildB, proseB);
+        const clearance = Math.round(footerTop - maxB);
+
+        if (bDiff <= 0 && colDiff <= 0 && clearance >= 40) {
+          best = { s, lh, mb, pMb, clearance };
+        }
+      }
+
+      if (best) {
+        proseEls.forEach((el) => {
+          el.style.fontSize = best.s.toFixed(2) + 'pt';
+          el.style.lineHeight = best.lh;
+          el.style.marginBottom = best.pMb + 'px';
+        });
+        sections.forEach((sec) => {
+          sec.style.marginBottom = best.mb + 'px';
+        });
       }
     });
   });

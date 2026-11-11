@@ -1,4 +1,4 @@
-export default {
+window.unitData = {
   "synopsis": "Before the catastrophic rupture of the Second World War, over nine million Jewish people inhabited every corner of Europe, speaking dozens of languages and enriching the intellectual, artistic, and political fabric of the continent. Trace how Adolf Hitler and the Nazi regime systematically weaponized racial antisemitism to strip German Jews of civil rights and legal personhood, before exploiting the smoke and chaos of total war to engineer the continent-wide annihilation of six million human beings. From the claustrophobic terror of the Warsaw Ghetto and the secret chronicle of the Ringelblum Archive to the mass shootings of the Einsatzgruppen in the killing fields of Ukraine, the industrial extermination machinery of Auschwitz-Birkenau, and the armed heroism of ghetto fighters and righteous rescuers—confront the deepest moral questions of complicity, indifference, human resistance, and the enduring obligation to remember.",
   "synopsis_tags": [
     "Pre-War Jewish Life & Culture",
@@ -48,39 +48,51 @@ export default {
   ],
   "key_individuals": [
     {
-      "name": "Emanuel Ringelblum",
-      "group": "Historian & Chronicler of the Warsaw Ghetto",
-      "bio": "A Polish-Jewish historian who created the secret underground archive \"Oneg Shabbat\" in the Warsaw Ghetto, burying milk cans filled with eyewitness diaries, underground newspapers, and artwork to ensure the truth survived.",
+      "name": "Richard Stern",
+      "group": "German-Jewish Veteran & Anti-Boycott Resister",
+      "bio": "A decorated German-Jewish soldier awarded the Iron Cross in WWI. On 1 April 1933, when SA stormtroopers launched the nationwide anti-Jewish boycott, Richard pinned his Iron Cross to his jacket and stood defiantly outside his shop beside the stormtrooper, handing out leaflets protesting the Nazi betrayal of German-Jewish patriots. He escaped to America in 1939 and enlisted in the US Army at age 43 to fight Hitler.",
+      "quote": "I do not fight for revenge. I fight for the honour of those who believed in a free Germany and were betrayed by criminals.",
+      "citation": "Letter from Camp Ritchie training depot (1942)",
       "image": "/images/default_person.svg"
     },
     {
-      "name": "Victor Klemperer",
-      "group": "German Jewish Diarist & Scholar",
-      "bio": "A professor of literature living in Dresden whose meticulous personal diaries documented the suffocating, day-by-day escalation of anti-Jewish decrees and social ostracism under the Nazi regime.",
+      "name": "Heinz Salvator Kounio",
+      "group": "Sephardic Greek Jewry & Auschwitz Survivor",
+      "bio": "Born into the historic Sephardic Jewish community of Thessaloniki where over 50,000 Jews spoke Ladino. In March 1943, Nazi authorities rounded up the entire community into the Baron Hirsch ghetto before deporting 45,000 people to Auschwitz-Birkenau. Over 96% were murdered. 15-year-old Heinz survived on the selection ramp because he spoke fluent German and was ordered to interpret orders for arriving Greek transports.",
+      "quote": "In one hour, five people became two. My mother and sister disappeared into the smoke. I had to interpret orders for the SS.",
+      "citation": "A Liter of Soup and 60 Grams of Bread (Yad Vashem Memoir)",
       "image": "/images/default_person.svg"
     },
     {
-      "name": "Jan Karski",
-      "group": "Polish Resistance Courier & Eyewitness",
-      "bio": "An officer in the Polish underground who was smuggled into the Warsaw Ghetto and a transit camp, subsequently travelling to London and Washington to deliver personal eyewitness testimony of the mass extermination to Allied leaders.",
+      "name": "Dawid Sierakowiak",
+      "group": "Łódź Ghetto Youth & Eyewitness Diarist",
+      "bio": "A 15-year-old high school student in Łódź, Poland, Dawid kept five detailed diary notebooks after 160,000 Jews were trapped behind barbed wire in 1940. He recorded the daily agony of starvation rations, slave labour in ghetto workshops, and the horrific September 1942 Gehsperre roundup when the SS deported 15,000 children and elderly people—including his mother—to Chełmno gas vans. Dawid died of starvation and tuberculosis in August 1943 at age 19.",
+      "quote": "Hunger, only hunger. My poor mother was taken away before my eyes. In the ghetto, tears do not flow; they freeze in your heart.",
+      "citation": "Łódź Ghetto Diary (September 1942 entry)",
       "image": "/images/default_person.svg"
     },
     {
-      "name": "Mordechai Anielewicz",
-      "group": "Commander of the Warsaw Ghetto Uprising",
-      "bio": "The 23-year-old leader of the Jewish Combat Organization (ŻOB) who led the desperate armed resistance against SS troops in the Warsaw Ghetto in April–May 1943.",
+      "name": "Roza Robota",
+      "group": "Auschwitz-Birkenau Underground Resistance Leader",
+      "bio": "Born in Ciechanów, Poland, 21-year-old Roza joined the Hashomer Hatzair youth movement before deportation to Auschwitz-Birkenau in 1942. Working under armed SS guard in the Weichsel-Union munitions factory, Roza and a clandestine network of young Jewish women smuggled gunpowder in matchboxes to the Sonderkommando prisoners. This explosive enabled them to blow up Crematorium IV on 7 October 1944. Tortured brutally by the Gestapo, Roza never betrayed her comrades.",
+      "quote": "Her final whispered message from the torture bunker was \"Hazak V'Amatz\"—Be strong and of good courage.",
+      "citation": "Noah Zabludowicz, Auschwitz Underground Resistance Record (January 1945)",
       "image": "/images/default_person.svg"
     },
     {
-      "name": "Sophie Scholl",
-      "group": "White Rose Student Resistance",
-      "bio": "A Munich university student who, along with her brother Hans, distributed clandestine leaflets exposing Nazi mass murder and calling for civil resistance, for which she was executed by the Gestapo in 1943.",
-      "image": "/images/sophie_scholl_gestapo.jpg"
+      "name": "Etty Hillesum",
+      "group": "Westerbork Transit Camp Diarist & Spiritual Witness",
+      "bio": "A 27-year-old Dutch Jewish writer and intellectual in occupied Amsterdam, Etty volunteered at Westerbork transit camp to support families facing cattle-truck deportation to the East. Her diaries document the weekly terror of deportation lists while maintaining an unshakeable belief in human decency. On 7 September 1943, Etty and her family were deported to Auschwitz; she threw a postcard from the train window reading: \"We left the camp singing.\" She was murdered on 30 November 1943.",
+      "quote": "I want to be the thinking heart of the barracks. If nothing else is saved from this time, let it be that we did not lose our humanity.",
+      "citation": "Etty Hillesum, Westerbork Letters (August 1943)",
+      "image": "/images/default_person.svg"
     },
     {
-      "name": "Raphael Lemkin",
-      "group": "Legal Scholar & Father of the Genocide Convention",
-      "bio": "A Polish-Jewish jurist who coined the term \"genocide\" in 1944 and successfully campaigned for the United Nations to adopt the 1948 Convention on the Prevention and Punishment of the Crime of Genocide.",
+      "name": "Arek Hersh MBE",
+      "group": "Child Survivor of Auschwitz & Windermere Child",
+      "bio": "Born in Sieradz, Poland in 1928, Arek was 11 when war broke out. He survived the Łódź Ghetto, slave labour camps, Auschwitz-Birkenau (surviving selection by pretending to be an adult tailor), and the freezing death march to Theresienstadt. Liberated by the Red Army in May 1945 weighing just four stone, Arek was one of 300 child survivors flown to the British Lake District (The Windermere Children) to heal and rebuild life. He settled in Leeds, dedicating his life to education.",
+      "quote": "When we landed in England and saw the mountains of Windermere, we felt we had entered paradise. We learned to laugh again, to trust human beings.",
+      "citation": "Arek Hersh MBE, A Detail of History (Windermere Survivor Memoir)",
       "image": "/images/default_person.svg"
     }
   ],
@@ -114,7 +126,7 @@ export default {
     {
       "id": "lesson_1",
       "title": "Enquiry 1: Who were the Jews of Europe before the Second World War?",
-      "subtitle": "Diversity, Culture, and Everyday Life across European Jewry before 1939",
+      "subtitle": "Enquiry 1: Pre-War Diversity & Antisemitism",
       "enquiryQuestion": "Why is it impossible to understand the magnitude of the Shoah without first understanding the vibrant richness of pre-war European Jewish life?",
       "skill": "Historical Significance: Humanisation & Cultural Context",
       "card_image": "/images/shoah_cover.jpg",
@@ -1330,7 +1342,7 @@ export default {
           "step": 1,
           "date": "c. 1930s",
           "heading": "The European Mosaic: 9.5 Million Lives (c. 1930s)",
-          "focus_clue": "What made European Jewish life before 1939 so geographically diverse?",
+          "focus_clue": "Where did most of Europe's 9.5 million Jewish people live before 1939?",
           "words": [
             {
               "term": "9.5 million Jewish people",
@@ -1367,7 +1379,7 @@ export default {
           "step": 2,
           "date": "Pre-1939",
           "heading": "Yiddishland: The Cultural Heartland of Eastern Europe",
-          "focus_clue": "Why was Vilna known as the \"Jerusalem of the North\"?",
+          "focus_clue": "What was daily life and culture like in the Jewish towns (shtetls) of Eastern Europe?",
           "words": [
             {
               "term": "shtetls",
@@ -1404,7 +1416,7 @@ export default {
           "step": 3,
           "date": "1871–1933",
           "heading": "Integration, Patriotism, and Civic Life in Central Europe",
-          "focus_clue": "How does the First World War service of German Jews refute Nazi stereotypes?",
+          "focus_clue": "How did German Jews show their loyalty to Germany during the First World War?",
           "words": [
             {
               "term": "assimilated",
@@ -1441,7 +1453,7 @@ export default {
           "step": 4,
           "date": "Centuries to 1930s",
           "heading": "The Sephardic World: Heritage of Southern Europe",
-          "focus_clue": "What distinguished the Sephardic Jewish experience in Southern Europe?",
+          "focus_clue": "What made the Sephardic Jewish community in Thessaloniki unique?",
           "words": [
             {
               "term": "Sephardic Jewish communities",
@@ -1478,7 +1490,7 @@ export default {
           "step": 5,
           "date": "Late 19th Century",
           "heading": "The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism",
-          "focus_clue": "Why was the invention of racial antisemitism so deadly?",
+          "focus_clue": "Why was Nazi hatred based on 'blood' and race far deadlier than older religious hatred?",
           "words": [
             {
               "term": "religious anti-Judaism",
@@ -1511,12 +1523,13 @@ export default {
           "title": "The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism",
           "dates": "Late 19th Century"
         }
-      ]
+      ],
+      "enquiry": "Who were the Jews of Europe before the Second World War?"
     },
     {
       "id": "lesson_2",
-      "title": "Enquiry 2: How were German Jews progressively stripped of citizenship and rights (1933–1939)?",
-      "subtitle": "Legal Isolation, The Nuremberg Laws, Kristallnacht, and the Refugee Crisis",
+      "title": "Enquiry 2: How were German Jews progressively stripped of citizenship and rights?",
+      "subtitle": "Enquiry 2: Stripping Rights & Kristallnacht (1933–1939)",
       "enquiryQuestion": "How did the Nazi state use the law, state terror, and economic exclusion to turn German Jews into outcasts in their own country?",
       "skill": "Causation & Consequence: Escalation of State Persecution",
       "card_image": "/images/kristallnacht_shop.jpg",
@@ -2714,7 +2727,7 @@ export default {
           "step": 1,
           "date": "April 1933",
           "heading": "The Boycott and the Civil Service Purge (1933)",
-          "focus_clue": "Why did the Nazis begin their persecution with economic boycotts and civil service laws?",
+          "focus_clue": "Why did the Nazis start their persecution by boycotting Jewish shops and firing workers?",
           "words": [
             {
               "term": "nationwide anti-Jewish boycott (1 April 1933)",
@@ -2737,7 +2750,7 @@ export default {
           "step": 2,
           "date": "September 1935",
           "heading": "The 1935 Nuremberg Laws: Redefining Citizenship",
-          "focus_clue": "How did the Nuremberg Laws fundamentally redefine German citizenship?",
+          "focus_clue": "How did the 1935 Nuremberg Laws take away German citizenship from Jewish people?",
           "words": [
             {
               "term": "Nuremberg Laws",
@@ -2774,7 +2787,7 @@ export default {
           "step": 3,
           "date": "1935–1938",
           "heading": "Daily Exclusion and \"Social Death\" (1935–1938)",
-          "focus_clue": "What does Victor Klemperer’s diary reveal about the psychological impact of daily decrees?",
+          "focus_clue": "How did daily Nazi bans and rules cut Jewish people off from their neighbours?",
           "words": [
             {
               "term": "400 separate anti-Jewish decrees",
@@ -2811,7 +2824,7 @@ export default {
           "step": 4,
           "date": "9–10 Nov 1938",
           "heading": "The November Pogrom (\"Kristallnacht\", 9–10 November 1938)",
-          "focus_clue": "Why was the November Pogrom a decisive turning point in Nazi anti-Jewish policy?",
+          "focus_clue": "Why was the violence of Kristallnacht (the November Pogrom) a major turning point?",
           "words": [
             {
               "term": "9–10 November 1938",
@@ -2834,7 +2847,7 @@ export default {
           "step": 5,
           "date": "1938–1939",
           "heading": "The Refugee Crisis: Closed Doors and the Kindertransport",
-          "focus_clue": "Why did the Evian Conference fail to rescue European Jews?",
+          "focus_clue": "What was the Kindertransport, and why were borders closed to adult Jewish refugees?",
           "words": [
             {
               "term": "Évian Conference (1938)",
@@ -2867,12 +2880,13 @@ export default {
           "title": "The Refugee Crisis: Closed Doors and the Kindertransport",
           "dates": "1938–1939"
         }
-      ]
+      ],
+      "enquiry": "How were German Jews progressively stripped of citizenship and rights?"
     },
     {
       "id": "lesson_3",
-      "title": "Enquiry 3: How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
-      "subtitle": "Invasion of Poland, Forced Segregation, and the Warsaw Ghetto Archive",
+      "title": "Enquiry 3: How did the outbreak of WWII transform Nazi anti-Jewish policy?",
+      "subtitle": "Enquiry 3: WWII Outbreak & Ghettoisation (1939–1941)",
       "enquiryQuestion": "How did confinement in sealed ghettos create a struggle for physical survival and spiritual resistance?",
       "skill": "Source Utility & Historical Empathy: Ghetto Life & The Ringelblum Archive",
       "card_image": "/images/warsaw_ghetto_wall_1941.jpg",
@@ -3499,44 +3513,47 @@ export default {
           "type": "extended_writing",
           "tariff": "Question 3: Source Utility [8 marks • 12 mins]",
           "title": "Question 3: Source Utility [8 marks • 12 mins]",
-          "question": "How useful is Source A for an enquiry into the living conditions and physical confinement of Jews in the Warsaw Ghetto? [8 marks]",
+          "badge": "FORENSIC SOURCE EVALUATION",
+          "question": "Study Sources A and B on the digital portal. How useful are Sources A and B for an enquiry into living conditions and physical confinement in the Warsaw Ghetto? Explain your answer using Sources A and B and your knowledge of the historical context. [8 marks]",
           "hints": [
-            "Content: Analyze evidence of starvation rations (180 calories/day), overcrowding (7–8 people per room), typhus epidemics, and the brick boundary wall [3.1, 3.2].",
-            "Provenance: Examine Emmanuel Ringelblum’s clandestine Oneg Shabbat archive, buried in milk cans to preserve the truth for future generations [3.3].",
-            "Limitations: Recognize that while it documents daily suffering and communal resistance, it captures the ghetto before mass deportations to Treblinka."
+            "Source A (Mary Berg Diary): Analyze evidence of starvation rations (180 calories/day), claustrophobic brick boundary walls, and secret underground classes [3.1, 3.2].",
+            "Source B (Emanuel Ringelblum Oneg Shabbat Archive): Examine the underground reports buried in aluminium milk cans documenting typhus mortality and child food smugglers [3.4, 3.5].",
+            "Synthesis: Explain how together they provide both visceral personal experience and systematic clandestine historical evidence free from Nazi censorship."
           ],
           "scaffolding": {
             "structure_strip": [
-              "Content & Inferences: Analyze what Source A reveals about overcrowding, typhus, and deliberate starvation policies [3.1, 3.2].",
-              "Provenance & Motive: Evaluate Emmanuel Ringelblum’s Oneg Shabbat archive and its exceptional historical reliability [3.3].",
-              "Judgment: Synthesize the source’s value for understanding how the Nazi ghetto was designed as a mechanism of attrition."
+              "Source A Content & Provenance: Analyze what Mary Berg's secret diary reveals about starvation, walls, and spiritual resistance [3.1, 3.2].",
+              "Source B Content & Provenance: Evaluate Emanuel Ringelblum's Oneg Shabbat archive and its exceptional historical reliability [3.5].",
+              "Judgment: Synthesize the sources' value for understanding both the physical attrition and the spiritual resilience inside the ghetto."
             ],
             "sentence_starters": [
-              "Source A is immensely valuable for investigating conditions in the Warsaw Ghetto because it provides eyewitness evidence of...",
-              "From the text, it can be inferred that the Nazi authorities deliberately engineered conditions of...",
-              "The utility of this source is exceptionally high due to its provenance, as it was compiled by...",
-              "Ringelblum’s clandestine Oneg Shabbat archive was created specifically to...",
-              "In conclusion, Source A is indispensable for historians because it documents..."
+              "Source A is immensely valuable for investigating living conditions in the Warsaw Ghetto because it provides eyewitness evidence of...",
+              "From Mary Berg's diary, it can be inferred that the Nazi authorities deliberately engineered conditions of...",
+              "The utility of Source B is exceptionally high due to its clandestine provenance, as it was compiled by...",
+              "Ringelblum’s Oneg Shabbat archive was buried in aluminium milk cans specifically to...",
+              "Together, Sources A and B are indispensable for historians because they document..."
             ],
             "connective_bank": [
               "Source A is valuable for investigating... because...",
               "For example, the extract describes...",
               "This demonstrates that living conditions were...",
-              "The reliability is reinforced by its provenance as...",
-              "Taken as a whole, the source provides..."
+              "The reliability of Source B is reinforced by its provenance as...",
+              "Taken as a whole, both sources provide..."
             ],
             "word_bank": [
               "Warsaw Ghetto",
+              "Mary Berg",
               "Oneg Shabbat",
-              "Emmanuel Ringelblum",
+              "Emanuel Ringelblum",
               "brick boundary wall",
               "starvation rations (180 kcal)",
               "typhus epidemic",
-              "Judenrat",
-              "smuggling"
+              "child food smugglers",
+              "aluminium milk cans",
+              "spiritual resistance"
             ]
           },
-          "model_answer": "Source A is useful because it records the extreme starvation, overcrowding, and typhus epidemics inside the Warsaw Ghetto, where over 400,000 Jews were trapped behind brick walls on starvation rations. Source B is useful because it provides evidence of Jewish spiritual resistance and underground education. Together, both sources are highly valuable for showing how ghetto inhabitants fought for physical and cultural survival.",
+          "model_answer": "Sources A and B are both exceptionally useful for investigating living conditions and physical confinement in the Warsaw Ghetto.<br><br>Source A (Mary Berg’s secret diary) is highly useful for revealing the claustrophobic physical confinement and psychological defiance inside the Warsaw Ghetto from the intimate, contemporaneous perspective of a 16-year-old resident. Her firsthand record of towering brick walls, freezing children, and the 180-calorie daily starvation regime confirms the severe deprivation engineered by Nazi authorities, while her account of secret underground classes in cellars proves the persistence of spiritual resistance. As a personal diary written under mortal terror, its utility lies in its authentic reflection of daily trauma, though its scope is limited to her immediate observations.<br><br>Source B (the Oneg Shabbat archival records) is exceptionally useful as an underground, systematic documentary testament compiled by Emanuel Ringelblum's clandestine team. Buried in sealed aluminium milk cans beneath the ghetto rubble, it provides corroborated factual data on typhus epidemics, child food smuggling, and escalating mortality, completely free from Nazi censorship. Its provenance gives it supreme historical reliability.<br><br>Together, Sources A and B are profoundly useful: Source A captures the visceral, emotional reality of youth trapped behind walls, while Source B provides forensic historical evidence of collective resilience and documentation under mortal danger.",
           "topic": "Question 3: Source Utility [8 marks • 12 mins]"
         }
       ],
@@ -4069,7 +4086,7 @@ export default {
           "step": 1,
           "date": "September 1939",
           "heading": "The Conquest of Poland and Heydrich’s Plan (1939)",
-          "focus_clue": "How did the conquest of Poland fundamentally alter the scale of the Jewish population under Nazi control?",
+          "focus_clue": "How did the invasion of Poland bring two million more Jewish people under Nazi rule?",
           "words": [
             {
               "term": "invasion of Poland (1 September 1939)",
@@ -4092,7 +4109,7 @@ export default {
           "step": 2,
           "date": "Autumn 1939",
           "heading": "Stigmatisation, Forced Labour, and the Yellow Star",
-          "focus_clue": "Why was the mandatory wearing of the Star of David such a devastating psychological weapon?",
+          "focus_clue": "Why did the Nazis force Jewish people to wear the Yellow Star badge and do slave labour?",
           "words": [
             {
               "term": "Hans Frank (General Government)",
@@ -4129,7 +4146,7 @@ export default {
           "step": 3,
           "date": "1940–1941",
           "heading": "The Walls Go Up: The Warsaw and Łódź Ghettos (1940)",
-          "focus_clue": "What physical and demographic conditions defined life inside the Warsaw Ghetto?",
+          "focus_clue": "How were the Warsaw and Łódź ghettos created, and how were they cut off from the world?",
           "words": [
             {
               "term": "urban ghettos",
@@ -4166,7 +4183,7 @@ export default {
           "step": 4,
           "date": "1940–1942",
           "heading": "Starvation, Typhus, and the Child Smugglers",
-          "focus_clue": "How did food rationing function as an instrument of slow mass murder in the ghettos?",
+          "focus_clue": "What hardships did families face inside the ghettos, and how did children smuggle food?",
           "words": [
             {
               "term": "180 to 220 calories a day",
@@ -4203,7 +4220,7 @@ export default {
           "step": 5,
           "date": "1940–1943",
           "heading": "Spiritual Resistance: The Secret Oneg Shabbat Archive",
-          "focus_clue": "Why was the creation of the Oneg Shabbat archive an extraordinary act of spiritual resistance?",
+          "focus_clue": "How did Emanuel Ringelblum and the Oneg Shabbat archive secretly preserve the truth?",
           "words": [
             {
               "term": "Emanuel Ringelblum",
@@ -4236,12 +4253,13 @@ export default {
           "title": "Spiritual Resistance: The Secret Oneg Shabbat Archive",
           "dates": "1940–1943"
         }
-      ]
+      ],
+      "enquiry": "How did the outbreak of WWII transform Nazi anti-Jewish policy?"
     },
     {
       "id": "lesson_4",
-      "title": "Enquiry 4: How and why did persecution turn into systematic mass murder (1941–1942)?",
-      "subtitle": "Operation Barbarossa, The Einsatzgruppen, and the Massacres of Eastern Europe",
+      "title": "Enquiry 4: How and why did persecution turn into systematic mass murder?",
+      "subtitle": "Enquiry 4: Barbarossa & The Holocaust by Bullets (1941–1942)",
       "enquiryQuestion": "Why did the Nazi invasion of the Soviet Union in June 1941 mark the fatal transition into total genocide?",
       "skill": "Causation & Turning Points: The \"Holocaust by Bullets\"",
       "card_image": "/images/shoah_cover.jpg",
@@ -4865,58 +4883,54 @@ export default {
       ],
       "tasks": [
         {
-          "id": "shoah_l4_evaluative_essay_barbarossa",
+          "id": "shoah_l4_interpretations_perpetrator_motivation",
           "type": "extended_writing",
-          "tariff": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "title": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "question": "‘The invasion of the Soviet Union in June 1941 was the main turning point in the development of the Holocaust.’ How far do you agree? [12 marks]",
-          "stimulus": [
-            "Operation Barbarossa, Vernichtungskrieg (\"war of annihilation\"), and the Einsatzgruppen mass shootings",
-            "The Wannsee Conference (January 1942) and the industrial death camps of Operation Reinhard"
-          ],
+          "tariff": "Question 4: Historical Interpretations [8 marks • 12 mins]",
+          "title": "Question 4: Historical Interpretations [8 marks • 12 mins]",
+          "badge": "HISTORIOGRAPHICAL DEBATE",
+          "question": "Study Interpretations 1 and 2 on the digital portal. How do Interpretations 1 and 2 differ about why ordinary German policemen participated in mass shootings during the Holocaust? Explain your answer using both interpretations and your own knowledge. [8 marks]",
           "hints": [
-            "Point: Explain how Operation Barbarossa transformed anti-Jewish policy from forced emigration/ghettoisation into systematic mass murder [4.1, 4.2].",
-            "Evidence: Cite Einsatzgruppen death squads executing over 1.5 million people in \"Holocaust by Bullets\" at sites like Babi Yar (33,771 killed in 2 days) [4.2].",
-            "Explanation: Contrast this with the Wannsee Conference in January 1942, which coordinated European-wide industrial extermination via gas chambers [4.4, 4.5].",
-            "Link: Weigh whether the ideological decision to murder Soviet Jews was the decisive turning point that made universal genocide inevitable."
+            "Interpretation 1 (Browning): Focus on situational peer pressure, group conformity, fear of isolation, and Commander Trapp allowing men to step out [4.2].",
+            "Interpretation 2 (Goldhagen): Focus on deeply ingrained cultural antisemitism, ideological conviction, and willing executioners [4.2].",
+            "Synthesis: Explain that while Browning views killers as ordinary men corrupted by obedience, Goldhagen views them as ideologically committed antisemitic believers."
           ],
           "scaffolding": {
             "structure_strip": [
-              "PEEL 1 (Operation Barbarossa & The Holocaust by Bullets): Vernichtungskrieg, Einsatzgruppen A-D, and mass murder at Babi Yar and Ponary [4.1, 4.2].",
-              "PEEL 2 (The Transition to Industrial Annihilation - Wannsee 1942): Heydrich, Eichmann, railway logistics, and Operation Reinhard death camps [4.4, 4.5].",
-              "PEEL 3 (Earlier Policies of Ghettoisation & Starvation): 1939–1940 ghettos as testing grounds for physical destruction [4.3].",
-              "Conclusion: Reach a definitive historical judgment on which moment represented the true point of no return."
+              "Interpretation 1 Argument: Explain Browning's view that conformity, peer pressure, and fear of seeming cowardly drove ordinary reservists to shoot [4.2].",
+              "Interpretation 2 Argument: Contrast with Goldhagen's view that deeply rooted eliminationist antisemitism caused them to kill willingly [4.2].",
+              "Historiographical Comparison: Synthesize how the two historians disagree on whether perpetrators were ordinary men in extraordinary circumstances or willing ideologues."
             ],
             "sentence_starters": [
-              "One decisive reason was that Operation Barbarossa in June 1941 was the decisive turning point because...",
-              "Hitler framed the invasion of the Soviet Union as an ideological Vernichtungskrieg (\"war of annihilation\"), unleashing...",
-              "At sites like Babi Yar in September 1941, the Einsatzgruppen carried out...",
-              "However, an alternative perspective is that the decisive turning point occurred at the Wannsee Conference in January 1942, where...",
-              "At Wannsee, Reinhard Heydrich and Adolf Eichmann coordinated government ministries to transition from open-air shootings to...",
-              "In conclusion, Barbarossa was the primary turning point because it crossed the moral threshold from persecution to systematic physical annihilation."
+              "Interpretations 1 and 2 offer contrasting explanations for why ordinary German policemen took part in...",
+              "Interpretation 1, written by historian Christopher Browning, argues that the primary motivation was...",
+              "Browning emphasizes that Commander Trapp gave the men an explicit choice to step out, yet...",
+              "In sharp contrast, Interpretation 2 by Daniel Goldhagen argues that the killers were driven by...",
+              "Goldhagen rejects the idea of peer pressure, asserting instead that deeply ingrained...",
+              "In conclusion, the fundamental difference between the two interpretations is that Browning sees..."
             ],
             "connective_bank": [
-              "One decisive reason was that...",
-              "On the one hand, Operation Barbarossa was decisive because...",
-              "In particular, this meant that...",
-              "On the other hand, an alternative view is that...",
-              "In conclusion, the primary turning point was... because..."
+              "Interpretations 1 and 2 differ significantly regarding...",
+              "According to Interpretation 1, the decisive factor was...",
+              "For example, Browning points out that...",
+              "In direct contrast, Interpretation 2 contends that...",
+              "Goldhagen argues that perpetrators killed because...",
+              "Consequently, while Interpretation 1 focuses on situational psychology, Interpretation 2 emphasizes..."
             ],
             "word_bank": [
-              "Operation Barbarossa",
-              "Vernichtungskrieg",
-              "Einsatzgruppen",
-              "Babi Yar (33,771 dead)",
-              "Ponary",
+              "Reserve Police Battalion 101",
+              "Major Wilhelm Trapp",
+              "Józefów massacre",
               "Christopher Browning",
               "Ordinary Men",
-              "Wannsee Conference (1942)",
-              "Reinhard Heydrich",
-              "Chełmno gas vans"
+              "peer pressure",
+              "conformity",
+              "Daniel Goldhagen",
+              "Hitler’s Willing Executioners",
+              "eliminationist antisemitism"
             ]
           },
-          "model_answer": "On the one hand, the January 1942 Wannsee Conference was a decisive turning point because it coordinated the bureaucratic logistics of the 'Final Solution'. Chaired by Reinhard Heydrich, top Nazi officials and civil servants agreed to systematically deport 11 million European Jews to industrial death camps in occupied Poland, using poison gas (Zyklon B) for mass extermination.<br><br>On the other hand, systematic mass murder had already begun in June 1941 following the invasion of the Soviet Union. Mobile killing squads (Einsatzgruppen) had already shot over one million Jewish men, women, and children. Therefore, Wannsee did not initiate mass murder, but transformed it into a continent-wide, factory-style industrial genocide.",
-          "topic": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]"
+          "model_answer": "Interpretations 1 and 2 offer sharply contrasting historical explanations for the motivations of ordinary German perpetrators during the Holocaust by bullets.<br><br>Interpretation 1, by historian Christopher Browning, argues that situational peer pressure, group conformity, and institutional obedience drove the men of Reserve Police Battalion 101 to commit mass murder. Browning highlights that Commander Major Trapp explicitly gave his men the option to step aside without punishment at Józefów, yet eighty percent chose to shoot because they feared seeming cowardly and did not want to leave the gruesome work to their comrades. Browning therefore portrays them as 'ordinary men' whose moral compass was broken by war and peer solidarity.<br><br>In direct contrast, Interpretation 2, by Daniel Goldhagen, argues that ordinary Germans killed willingly and enthusiastically because they were motivated by a deeply rooted, culturally ingrained 'eliminationist antisemitism.' Goldhagen rejects peer pressure as an excuse, contending that generations of antisemitic education had convinced ordinary Germans that Jewish people were mortal enemies who had to be exterminated.<br><br>Therefore, the fundamental difference is that Browning attributes perpetration to situational psychology and peer conformity, whereas Goldhagen attributes it to active ideological hatred and willing belief.",
+          "topic": "Question 4: Historical Interpretations [8 marks • 12 mins]"
         }
       ],
       "quiz": [
@@ -5448,7 +5462,7 @@ export default {
           "step": 1,
           "date": "22 June 1941",
           "heading": "Operation Barbarossa: Ideological Annihilation (June 1941)",
-          "focus_clue": "Why did the invasion of the Soviet Union differ fundamentally from the earlier campaigns in Western Europe?",
+          "focus_clue": "Why was the German invasion of the Soviet Union treated as a war of total destruction?",
           "words": [
             {
               "term": "22 June 1941",
@@ -5471,7 +5485,7 @@ export default {
           "step": 2,
           "date": "Summer 1941",
           "heading": "The Einsatzgruppen and Order Police Battalions",
-          "focus_clue": "How did the Einsatzgruppen’s killing mandate radicalise between June and August 1941?",
+          "focus_clue": "How did the Einsatzgruppen mobile death squads carry out the 'Holocaust by Bullets'?",
           "words": [
             {
               "term": "SS Einsatzgruppen",
@@ -5508,7 +5522,7 @@ export default {
           "step": 3,
           "date": "29–30 Sept 1941",
           "heading": "The Massacre at Babi Yar (Kyiv, September 1941)",
-          "focus_clue": "What made the massacre at Babi Yar such a terrifying manifestation of industrialised face-to-face murder?",
+          "focus_clue": "What happened during the mass shooting at Babi Yar ravine outside Kyiv?",
           "words": [
             {
               "term": "Babyn Yar ravine massacre",
@@ -5545,7 +5559,7 @@ export default {
           "step": 4,
           "date": "1941–1942",
           "heading": "Massacres Across the Baltics and Local Collaboration",
-          "focus_clue": "What role did local auxiliary collaborators play in the mass shootings across the Baltic States and Ukraine?",
+          "focus_clue": "How did local helpers in the Baltic states and Ukraine assist Nazi death squads?",
           "words": [
             {
               "term": "Ponary Forest massacres",
@@ -5582,7 +5596,7 @@ export default {
           "step": 5,
           "date": "Late 1941",
           "heading": "Perpetrator Strain and the Shift toward Industrial Murder",
-          "focus_clue": "Why did the psychological strain on German shooters drive the transition toward mobile and stationary gas chambers?",
+          "focus_clue": "Why did Nazi leaders switch from face-to-face shootings to using poison gas vans at Chełmno?",
           "words": [
             {
               "term": "mass shooting psychological strain",
@@ -5615,12 +5629,29 @@ export default {
           "title": "Perpetrator Strain and the Shift toward Industrial Murder",
           "dates": "Late 1941"
         }
-      ]
+      ],
+      "interpretations": [
+        {
+          "id": "shoah_l4_interpretation_1_browning",
+          "author": "Christopher Browning",
+          "work": "Ordinary Men: Reserve Police Battalion 101 and the Final Solution in Poland (1992)",
+          "focus": "Situational Conformity & Peer Pressure",
+          "extract": "What is clear is that the men of Reserve Police Battalion 101 were not forced to kill under threat of death. At Józefów, Major Wilhelm Trapp explicitly gave them the option to step out if they felt not up to the task. Yet over eighty percent chose to shoot. They were ordinary middle-aged working-class reservists from Hamburg, not fanatical SS ideologues. They were driven primarily by group conformity, situational peer pressure, the desire not to leave the dirty work to their comrades, and fear of seeming cowardly. In the brutalized wartime environment, the authority of the uniform and solidarity with their peers overcame their moral conscience."
+        },
+        {
+          "id": "shoah_l4_interpretation_2_goldhagen",
+          "author": "Daniel Goldhagen",
+          "work": "Hitler's Willing Executioners: Ordinary Germans and the Holocaust (1996)",
+          "focus": "Cultural & Eliminationist Antisemitism",
+          "extract": "The perpetrators of Battalion 101 did not shoot because of peer pressure or administrative obedience. They shot because they believed it was right. For generations, German political culture had been saturated with a virulent, deeply rooted 'eliminationist antisemitism' that viewed Jewish people as demonic enemies of the German nation. Ordinary Germans killed Jewish men, women, and children willingly, enthusiastically, and without moral remorse because they genuinely believed that the extermination of the Jewish people was necessary for Germany's survival. Ideological conviction, not peer pressure, was the decisive driving force."
+        }
+      ],
+      "enquiry": "How and why did persecution turn into systematic mass murder?"
     },
     {
       "id": "lesson_5",
       "title": "Enquiry 5: How did the \"Final Solution\" operate, and how did Jews resist?",
-      "subtitle": "The Wannsee Conference, Industrial Death Camps, and Armed Uprisings",
+      "subtitle": "Enquiry 5: The \"Final Solution\" & Armed Resistance (1942–1944)",
       "enquiryQuestion": "How was the industrial machinery of extermination coordinated by the state, and in what ways did victims resist?",
       "skill": "Historical Evidence & Agency: Industrialised Murder vs Armed Resistance",
       "card_image": "/images/warsaw_ghetto_uprising_1943.jpg",
@@ -6875,7 +6906,7 @@ export default {
           "step": 1,
           "date": "20 January 1942",
           "heading": "The Wannsee Conference: The Bureaucracy of Murder (1942)",
-          "focus_clue": "Why was the Wannsee Conference a meeting of coordination rather than decision-making?",
+          "focus_clue": "What was the purpose of the 1942 Wannsee Conference, and what did leaders coordinate?",
           "words": [
             {
               "term": "20 January 1942",
@@ -6898,7 +6929,7 @@ export default {
           "step": 2,
           "date": "1942–1943",
           "heading": "Operation Reinhard: The Pure Death Camps (1942–1943)",
-          "focus_clue": "What distinguished the Operation Reinhard camps from traditional concentration camps like Dachau?",
+          "focus_clue": "What made the three Operation Reinhard camps (Belzec, Sobibor, Treblinka) pure death camps?",
           "words": [
             {
               "term": "Operation Reinhard",
@@ -6935,7 +6966,7 @@ export default {
           "step": 3,
           "date": "1942–1944",
           "heading": "Auschwitz-Birkenau: The Factory of Industrial Death",
-          "focus_clue": "How did the dual function of Auschwitz-Birkenau operate in practice?",
+          "focus_clue": "How did Auschwitz-Birkenau combine slave labour with industrial gas chambers?",
           "words": [
             {
               "term": "Auschwitz-Birkenau",
@@ -6972,7 +7003,7 @@ export default {
           "step": 4,
           "date": "April–May 1943",
           "heading": "The Warsaw Ghetto Uprising (April–May 1943)",
-          "focus_clue": "Why was the Warsaw Ghetto Uprising such a monumental act of moral and physical defiance?",
+          "focus_clue": "How did young Jewish fighters resist Nazi forces in the 1943 Warsaw Ghetto Uprising?",
           "words": [
             {
               "term": "ŻOB",
@@ -6995,7 +7026,7 @@ export default {
           "step": 5,
           "date": "1943–1944",
           "heading": "Revolts in the Death Camps and the Partisans",
-          "focus_clue": "How do uprisings inside the death camps disprove the myth of passive Jewish acceptance?",
+          "focus_clue": "How did revolts at Treblinka, Sobibór, and Auschwitz prove that prisoners fought back?",
           "words": [
             {
               "term": "Treblinka revolt",
@@ -7028,12 +7059,13 @@ export default {
           "title": "Revolts in the Death Camps and the Partisans",
           "dates": "1943–1944"
         }
-      ]
+      ],
+      "enquiry": "How did the \"Final Solution\" operate, and how did Jews resist?"
     },
     {
       "id": "lesson_6",
       "title": "Enquiry 6: Who was responsible, who collaborated, and who tried to save?",
-      "subtitle": "Perpetrators, Ordinary Bystanders, Collaborators, and the Righteous",
+      "subtitle": "Enquiry 6: Responsibility, Complicity & Rescue across Europe",
       "enquiryQuestion": "To what extent was the Holocaust an all-European event requiring the complicity of thousands, and what motivated the few who resisted?",
       "skill": "Historical Interpretation: Complicity, Collaboration & The Righteous",
       "card_image": "/images/sophie_scholl_gestapo.jpg",
@@ -7656,49 +7688,53 @@ export default {
       ],
       "tasks": [
         {
-          "id": "shoah_l6_narrative_account_allied_response",
-          "type": "narrative_account",
-          "tariff": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "title": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "question": "Write a narrative account analysing how the international community and Allied powers responded to the Holocaust between 1938 and 1944. [8 marks]",
+          "id": "shoah_l6_source_utility_collaboration_and_rescue",
+          "type": "extended_writing",
+          "tariff": "Question 6: Source Utility [8 marks • 12 mins]",
+          "title": "Question 6: Source Utility [8 marks • 12 mins]",
+          "badge": "FORENSIC SOURCE EVALUATION",
+          "question": "Study Sources C and D on the digital portal. How useful are Sources C and D for an enquiry into the responses of ordinary people and authorities to Nazi persecution and deportations? Explain your answer using Sources C and D and your knowledge of the historical context. [8 marks]",
           "hints": [
-            "Beginning (1938–1939): Evian Conference failure to open refugee borders; SS St. Louis turned away; British Kindertransport rescuing 10,000 children [6.1, 6.2].",
-            "Middle (1942): Polish courier Jan Karski delivering eyewitness reports to Churchill and Roosevelt; Joint Allied Declaration condemning extermination [6.3].",
-            "End (1944): US War Refugee Board created; debates over bombing railway lines to Auschwitz rejected in favour of total military victory [6.4, 6.5]."
+            "Source C (Danish Rescuer Eyewitness): Analyse what the testimony reveals about the October 1943 civilian boatlift across the Øresund to neutral Sweden, saving 7,200 Jews [6.4].",
+            "Source D (Paris Police Circular No. 173-42): Analyse what the administrative circular proves about French police carrying out the Vél' d'Hiv roundup of 13,000 Jews without German SS involvement [6.2].",
+            "Comparative Synthesis: Weigh how the sources contrast active rescue with foreign bureaucratic collaboration across occupied Europe."
           ],
           "scaffolding": {
             "structure_strip": [
-              "Stage 1 (Pre-War Indifference - 1938 Evian & Refugees): Failure of 32 nations to raise quotas; SS St. Louis voyage [6.1, 6.2].",
-              "Stage 2 (Wartime Discovery - 1942 Jan Karski & Joint Declaration): Intelligence leaks, Karski in London/Washington, December 1942 declaration [6.3].",
-              "Stage 3 (Paralysis & Debate - 1944 Auschwitz Bombing Debate): War Refugee Board rescue vs Allied refusal to bomb death camp gas chambers [6.4, 6.5]."
+              "Source C Content & Provenance: Evaluate the eyewitness testimony of Danish fishermen rescuing Jewish neighbours to Sweden [6.4].",
+              "Source D Content & Provenance: Evaluate the official Paris police circular ordering the arrest and internment of 13,000 Jews at the Vélodrome d'Hiver [6.2].",
+              "Judgment on Utility: Synthesize how together they illustrate the full moral spectrum between active rescue and foreign state complicity."
             ],
             "sentence_starters": [
-              "International responses began with reluctance in July 1938 at the Evian Conference, where...",
-              "This failure to accept refugees was tragically highlighted in 1939 when the SS St. Louis was...",
-              "Following the outbreak of war, Polish underground courier Jan Karski provided verified intelligence to...",
-              "In December 1942, Britain, the US, and the USSR issued a joint declaration warning that...",
-              "However, in 1944, despite pleas to bomb the railway lines leading to Auschwitz-Birkenau, the Allies decided that..."
+              "Source C is exceptionally useful for an enquiry into rescue efforts because it provides eyewitness evidence of...",
+              "The utility of Source C is reinforced by its provenance as a contemporaneous account from...",
+              "In contrast, Source D is highly valuable for investigating European collaboration because it shows that...",
+              "As an official administrative directive from the Paris Prefecture of Police, Source D reveals...",
+              "Together, Sources C and D provide a profoundly useful contrast because while Source C proves that...",
+              "Source D demonstrates that Nazi extermination policies depended fundamentally upon..."
             ],
             "connective_bank": [
-              "The response began with diplomatic failure when...",
-              "This was followed by growing awareness as...",
-              "In response to verified reports of extermination...",
-              "However, military priorities dictated that...",
-              "Ultimately, the Allied strategy remained focused on..."
+              "Source C is valuable for investigating... because...",
+              "In particular, it provides evidence that ordinary citizens...",
+              "On the other hand, Source D is useful because it documents...",
+              "Its provenance as an official police document makes it...",
+              "Taken together, both sources are indispensable for historians because..."
             ],
             "word_bank": [
-              "Evian Conference (1938)",
-              "SS St. Louis",
-              "Kindertransport",
-              "Jan Karski",
-              "Joint Allied Declaration (1942)",
-              "War Refugee Board",
-              "Auschwitz bombing debate",
-              "military victory first"
+              "Danish boatlift (Oct 1943)",
+              "Øresund crossing",
+              "neutral Sweden",
+              "7,200 rescued",
+              "Righteous Among the Nations",
+              "Vichy France",
+              "Vél' d'Hiv roundup (July 1942)",
+              "Paris Prefecture of Police",
+              "Opération Vent Printanier",
+              "Drancy transit camp"
             ]
           },
-          "model_answer": "Initially, the international response before the outbreak of war was characterized by diplomatic inaction and closed borders. At the July 1938 Évian Conference, convened to address the growing Jewish refugee crisis from Nazi Germany and Austria, 31 of the 32 participating nations (including the US and Britain) refused to raise their immigration quotas, stranding hundreds of thousands of desperate Jews under Nazi control.<br><br>As a result, when systematic mass extermination began following the 1941 invasion of the USSR, verified intelligence smuggled out by Polish resistance courier Jan Karski and the Riegner Telegram reached Allied governments. In December 1942, the Allied powers issued a joint declaration publicly condemning Nazi extermination and promising postwar prosecution. However, despite urgent appeals from Jewish leaders, Allied military commanders consistently refused to divert bombers to destroy the railway lines to Auschwitz-Birkenau, arguing that rapid military victory against the German army was the only effective way to save remaining prisoners.<br><br>Finally, intense political pressure forced US President Franklin D. Roosevelt to create the War Refugee Board in January 1944. Working with Swedish diplomat Raoul Wallenberg in Budapest, the Board funded relief efforts, issued protective passports, and successfully rescued an estimated 200,000 European Jews from deportation in the final eighteen months of the war.",
-          "topic": "Question 2: Narrative Account [8 marks • 12 mins]"
+          "model_answer": "Source C and Source D are both highly useful for investigating the contrasting responses of ordinary people and authorities to Nazi persecution and deportations across occupied Europe.<br><br>Source C (eyewitness testimony of a Danish fisherman) is extraordinarily useful for showing how civilian solidarity could frustrate Nazi extermination orders. Its content describes the clandestine October 1943 boatlift across the Øresund, which ferried over 7,200 Danish Jews (99% of the community) to safety in neutral Sweden. Its provenance as a firsthand account gives it high reliability for understanding the logistics, courage, and collective motivation of ordinary citizens who risked their lives without financial gain. However, as an individual perspective, it focuses on the success of the crossing rather than the high-level diplomatic leak that alerted Danish leaders.<br><br>In contrast, Source D (the Paris Prefecture of Police secret circular) is exceptionally useful as an official administrative document proving the active complicity of European collaborators. Issued in July 1942, it proves that over 4,500 French police officers enthusiastically executed Opération Vent Printanier, rounding up 13,152 Jewish people—including 4,115 children—at the Vélodrome d'Hiver with zero German SS involvement. The provenance provides unvarnished, official evidence of how foreign bureaucracies enabled the Holocaust.<br><br>Together, both sources are profoundly useful: Source C proves that rescue was possible when communities took collective moral action, while Source D proves that Nazi genocide was continent-wide and depended upon foreign collaboration.",
+          "topic": "Question 6: Source Utility [8 marks • 12 mins]"
         }
       ],
       "quiz": [
@@ -8230,7 +8266,7 @@ export default {
           "step": 1,
           "date": "1941–1945",
           "heading": "The Bureaucracy of Destruction: Ordinary Professionals",
-          "focus_clue": "How did civil servants and railway schedulers contribute to the machinery of the Holocaust?",
+          "focus_clue": "How did railway planners, clerks, and civil servants help make the Holocaust happen?",
           "words": [
             {
               "term": "Raul Hilberg's analysis",
@@ -8267,7 +8303,7 @@ export default {
           "step": 2,
           "date": "1940–1944",
           "heading": "European Collaboration: An All-European Catastrophe",
-          "focus_clue": "Why was collaboration by foreign governments like Vichy France and Hungary indispensable to the Nazis?",
+          "focus_clue": "How did foreign police and governments (like Vichy France and Hungary) help the Nazis?",
           "words": [
             {
               "term": "437,000 Hungarian Jews deported",
@@ -8304,7 +8340,7 @@ export default {
           "step": 3,
           "date": "1933–1945",
           "heading": "The Bystanders: Silence, Fear, and Complicity",
-          "focus_clue": "To what extent does looking away in silence make a bystander morally complicit in state persecution?",
+          "focus_clue": "Why did so many ordinary people across Europe remain silent bystanders?",
           "words": [
             {
               "term": "bystander complicity",
@@ -8341,7 +8377,7 @@ export default {
           "step": 4,
           "date": "1940–1944",
           "heading": "Righteous Among the Nations: Courage Defying Death",
-          "focus_clue": "What factors enabled the Danish people to rescue over 95% of their Jewish population?",
+          "focus_clue": "How did rescuers in Denmark and the village of Le Chambon risk their lives to save Jewish people?",
           "words": [
             {
               "term": "Rescue of the Danish Jews",
@@ -8378,7 +8414,7 @@ export default {
           "step": 5,
           "date": "1942–1944",
           "heading": "Allied Knowledge, Dilemmas, and the Question of Action",
-          "focus_clue": "Why did the Allied powers decide against bombing the railway tracks leading to Auschwitz?",
+          "focus_clue": "What did Allied leaders know about the death camps, and why did they not bomb the railway tracks?",
           "words": [
             {
               "term": "Allied inaction dilemmas",
@@ -8411,12 +8447,13 @@ export default {
           "title": "Allied Knowledge, Dilemmas, and the Question of Action",
           "dates": "1942–1944"
         }
-      ]
+      ],
+      "enquiry": "Who was responsible, who collaborated, and who tried to save?"
     },
     {
       "id": "lesson_7",
       "title": "Enquiry 7: What was lost, and what does survivor testimony teach us?",
-      "subtitle": "Liberation, Displaced Persons, Nuremberg Trials, and Preserving Memory",
+      "subtitle": "Enquiry 7: Liberation, Aftermath & Legacy of Memory (1944–1948)",
       "enquiryQuestion": "What was the human, cultural, and moral cost of the Shoah, and what is our ethical responsibility to history?",
       "skill": "Historical Significance & Legacy: Bearing Witness & Genocide Law",
       "card_image": "/images/buchenwald_liberation_1945.jpg",
@@ -9626,7 +9663,7 @@ export default {
           "step": 1,
           "date": "Winter 1944–1945",
           "heading": "The Death Marches: The Final Spasm of Terror (1944–1945)",
-          "focus_clue": "Why did the Nazi authorities force starving prisoners onto death marches in the final months of the war?",
+          "focus_clue": "Why did the SS force starving prisoners onto freezing death marches at the end of the war?",
           "words": [
             {
               "term": "evacuation death marches (1944–45)",
@@ -9663,7 +9700,7 @@ export default {
           "step": 2,
           "date": "Jan–May 1945",
           "heading": "Liberation: The World Confronts the Unimaginable",
-          "focus_clue": "How did the liberation of Bergen-Belsen shatter any remaining doubt about the scale of Nazi crimes?",
+          "focus_clue": "What terrible conditions did British and Allied soldiers find when liberating Bergen-Belsen?",
           "words": [
             {
               "term": "27 January 1945",
@@ -9686,7 +9723,7 @@ export default {
           "step": 3,
           "date": "1945–1948",
           "heading": "The Painful Aftermath: Displaced Persons and Windermere",
-          "focus_clue": "What challenges did survivors face when trying to rebuild their lives in post-war Europe?",
+          "focus_clue": "What challenges did survivors face in Displaced Persons (DP) camps after liberation?",
           "words": [
             {
               "term": "Displaced Persons (DP) camps",
@@ -9723,7 +9760,7 @@ export default {
           "step": 4,
           "date": "1945–1948",
           "heading": "Justice and International Law: Nuremberg and Lemkin",
-          "focus_clue": "How did Raphael Lemkin transform international law following the Holocaust?",
+          "focus_clue": "How did the Nuremberg Trials and Raphael Lemkin establish new laws against genocide?",
           "words": [
             {
               "term": "International Military Tribunal (IMT)",
@@ -9760,7 +9797,7 @@ export default {
           "step": 5,
           "date": "Post-War to Present",
           "heading": "What Was Lost? The Imperative of Memory",
-          "focus_clue": "What is our ethical and historical responsibility to the memory of the Shoah today?",
+          "focus_clue": "What human and cultural life was destroyed in the Shoah, and why must we remember?",
           "words": [
             {
               "term": "Shoah historical memory",
@@ -9793,12 +9830,240 @@ export default {
           "title": "What Was Lost? The Imperative of Memory",
           "dates": "Post-War to Present"
         }
-      ]
+      ],
+      "enquiry": "What was lost, and what does survivor testimony teach us?"
     }
   ],
   "keyStage": "KS3",
   "yearGroup": "Year 9",
   "year_group": "Year 9",
   "category": "KS3",
-  "key_stage": "KS3"
+  "key_stage": "KS3",
+  "micro_histories": [
+    {
+      "id": "richard_stern",
+      "name": "Richard Stern",
+      "group": "German-Jewish Veteran & Anti-Boycott Resister",
+      "birthplace": "Cologne, Germany",
+      "dates": "1899–1967",
+      "region": "Western Europe (Germany)",
+      "bio": "A decorated German-Jewish soldier awarded the Iron Cross in WWI. On 1 April 1933, when SA stormtroopers launched the nationwide anti-Jewish boycott, Richard pinned his Iron Cross to his jacket and stood defiantly outside his shop beside the stormtrooper, handing out leaflets protesting the Nazi betrayal of German-Jewish patriots. He escaped to America in 1939 and enlisted in the US Army at age 43 to fight Hitler.",
+      "quote": "I do not fight for revenge. I fight for the honour of those who believed in a free Germany and were betrayed by criminals.",
+      "citation": "Letter from Camp Ritchie training depot (1942)",
+      "enquiries": [
+        1,
+        2
+      ],
+      "journey": [
+        {
+          "stage": "1. Pre-War Life (1914–1932)",
+          "text": "Served patriotically in the German Imperial Army in WWI, awarded the Iron Cross 2nd Class for bravery under fire. Fully integrated into Cologne civic life running a textile business."
+        },
+        {
+          "stage": "2. Nazi Boycott Defiance (April 1933)",
+          "text": "Refused to hide during the 1 April 1933 Nazi boycott. Stood on the pavement in uniform with his Iron Cross, handing out protest pamphlets to customers."
+        },
+        {
+          "stage": "3. Stripping of Rights (1935–1938)",
+          "text": "Stripped of German citizenship under the 1935 Nuremberg Laws. Faced increasing economic aryanisation and harassment in Cologne."
+        },
+        {
+          "stage": "4. Escape to America (1939)",
+          "text": "Fled Nazi Germany via Belgium to New York in 1939, arriving with almost nothing after property confiscation."
+        },
+        {
+          "stage": "5. Fighting Back in US Army (1942–1945)",
+          "text": "Volunteered for the US Army at age 43. Served in the military intelligence and psychological warfare service at Camp Ritchie, helping defeat Nazi Germany."
+        }
+      ],
+      "image": "/images/default_person.svg"
+    },
+    {
+      "id": "heinz_kounio",
+      "name": "Heinz Salvator Kounio",
+      "group": "Sephardic Greek Jewry & Auschwitz Survivor",
+      "birthplace": "Thessaloniki, Greece",
+      "dates": "1927–Living",
+      "region": "Southern Europe (Balkans / Mediterranean)",
+      "bio": "Born into the historic Sephardic Jewish community of Thessaloniki where over 50,000 Jews spoke Ladino. In March 1943, Nazi authorities rounded up the entire community into the Baron Hirsch ghetto before deporting 45,000 people to Auschwitz-Birkenau. Over 96% were murdered. 15-year-old Heinz survived on the selection ramp because he spoke fluent German and was ordered to interpret orders for arriving Greek transports.",
+      "quote": "In one hour, five people became two. My mother and sister disappeared into the smoke. I had to interpret orders for the SS.",
+      "citation": "A Liter of Soup and 60 Grams of Bread (Yad Vashem Memoir)",
+      "enquiries": [
+        1,
+        5
+      ],
+      "journey": [
+        {
+          "stage": "1. Pre-War Sephardic World (1927–1941)",
+          "text": "Grew up in Thessaloniki (the \"Jerusalem of the Balkans\"), speaking Ladino at home and Greek at school. His father was a prominent photographer and printer."
+        },
+        {
+          "stage": "2. German Occupation (1941–1943)",
+          "text": "German forces occupied northern Greece in April 1941. In July 1942 (Black Shabbat), 9,000 Jewish men were publicly tortured on Liberty Square."
+        },
+        {
+          "stage": "3. Baron Hirsch Ghetto & Deportation (March 1943)",
+          "text": "Enclosed in the Baron Hirsch transit ghetto beside the railway station; crammed into freight trains for the 7-day journey to Poland."
+        },
+        {
+          "stage": "4. Auschwitz Selection & Translation (1943–1945)",
+          "text": "Arrived at Birkenau on 20 March 1943. Because he and his father spoke fluent German, the SS assigned them as camp interpreters and photographic technicians, sparing their lives."
+        },
+        {
+          "stage": "5. Death March & Liberation (1945)",
+          "text": "Surviving the January 1945 death march from Auschwitz to Mauthausen and Ebensee, Heinz was liberated by American troops in May 1945, returning to Thessaloniki to rebuild Jewish communal memory."
+        }
+      ],
+      "image": "/images/default_person.svg"
+    },
+    {
+      "id": "dawid_sierakowiak",
+      "name": "Dawid Sierakowiak",
+      "group": "Łódź Ghetto Youth & Eyewitness Diarist",
+      "birthplace": "Łódź, Poland",
+      "dates": "1924–1943",
+      "region": "Eastern Europe (Poland)",
+      "bio": "A 15-year-old high school student in Łódź, Poland, Dawid kept five detailed diary notebooks after 160,000 Jews were trapped behind barbed wire in 1940. He recorded the daily agony of starvation rations, slave labour in ghetto workshops, and the horrific September 1942 Gehsperre roundup when the SS deported 15,000 children and elderly people—including his mother—to Chełmno gas vans. Dawid died of starvation and tuberculosis in August 1943 at age 19.",
+      "quote": "Hunger, only hunger. My poor mother was taken away before my eyes. In the ghetto, tears do not flow; they freeze in your heart.",
+      "citation": "Łódź Ghetto Diary (September 1942 entry)",
+      "enquiries": [
+        3
+      ],
+      "journey": [
+        {
+          "stage": "1. Intellectual Pre-War Youth (1924–1939)",
+          "text": "A brilliant pupil at the Jewish Gymnasium in Łódź, Dawid was fluent in Polish, Yiddish, German, French, and Hebrew, passionate about literature and Marxist philosophy."
+        },
+        {
+          "stage": "2. Enclosure in the Ghetto (February 1940)",
+          "text": "Forced from his home into the Bałuty district of Łódź, sealed off with wooden fences and barbed wire by German decree."
+        },
+        {
+          "stage": "3. Slave Labour & Starvation (1941–1942)",
+          "text": "Worked in ghetto workshops producing uniforms for the Wehrmacht in exchange for meager food rations of bread and turnip soup."
+        },
+        {
+          "stage": "4. The Gehsperre Deportation (September 1942)",
+          "text": "Witnessed the SS demand all children under 10 and adults over 65 be handed over. Dawid watched helplessly as his mother was taken to the Chełmno death camp."
+        },
+        {
+          "stage": "5. Death from Starvation (8 August 1943)",
+          "text": "His final diary entry ends abruptly with exhaustion. He succumbed to tuberculosis and starvation at age 19, leaving behind an irreplaceable historical record."
+        }
+      ],
+      "image": "/images/default_person.svg"
+    },
+    {
+      "id": "roza_robota",
+      "name": "Roza Robota",
+      "group": "Auschwitz-Birkenau Underground Resistance Leader",
+      "birthplace": "Ciechanów, Poland",
+      "dates": "1921–1945",
+      "region": "Eastern Europe (Camp Underground Resistance)",
+      "bio": "Born in Ciechanów, Poland, 21-year-old Roza joined the Hashomer Hatzair youth movement before deportation to Auschwitz-Birkenau in 1942. Working under armed SS guard in the Weichsel-Union munitions factory, Roza and a clandestine network of young Jewish women smuggled gunpowder in matchboxes to the Sonderkommando prisoners. This explosive enabled them to blow up Crematorium IV on 7 October 1944. Tortured brutally by the Gestapo, Roza never betrayed her comrades.",
+      "quote": "Her final whispered message from the torture bunker was \"Hazak V'Amatz\"—Be strong and of good courage.",
+      "citation": "Noah Zabludowicz, Auschwitz Underground Resistance Record (January 1945)",
+      "enquiries": [
+        5
+      ],
+      "journey": [
+        {
+          "stage": "1. Zionist Youth Activism (1921–1939)",
+          "text": "Active leader in the Hashomer Hatzair youth movement in Ciechanów, emphasizing self-reliance, community solidarity, and socialist Zionism."
+        },
+        {
+          "stage": "2. Ghetto Liquidation & Deportation (1942)",
+          "text": "Her entire family was rounded up during the liquidation of the Ciechanów ghetto; all were gassed upon arrival at Birkenau except Roza, selected for slave labour."
+        },
+        {
+          "stage": "3. The Gunpowder Smuggling Network (1943–1944)",
+          "text": "Assigned to the Union munitions factory, Roza organized young women workers (including Ala Gertner, Regina Safirsztajn, and Ester Wajcblum) to secretly scrape explosive gunpowder into tins and matchboxes."
+        },
+        {
+          "stage": "4. The Crematorium IV Uprising (7 October 1944)",
+          "text": "The smuggled gunpowder was detonated by Sonderkommando fighters, destroying Crematorium IV and killing three SS guards in the only armed revolt inside Birkenau."
+        },
+        {
+          "stage": "5. Torture & Martyrdom (6 January 1945)",
+          "text": "Arrested and subjected to months of brutal torture in the Gestapo bunker of Block 11, Roza never gave up a single name. She was publicly hanged on 6 January 1945, just 21 days before Soviet liberation."
+        }
+      ],
+      "image": "/images/default_person.svg"
+    },
+    {
+      "id": "etty_hillesum",
+      "name": "Etty Hillesum",
+      "group": "Westerbork Transit Camp Diarist & Spiritual Witness",
+      "birthplace": "Middelburg / Amsterdam, Netherlands",
+      "dates": "1914–1943",
+      "region": "Western Europe (The Netherlands)",
+      "bio": "A 27-year-old Dutch Jewish writer and intellectual in occupied Amsterdam, Etty volunteered at Westerbork transit camp to support families facing cattle-truck deportation to the East. Her diaries document the weekly terror of deportation lists while maintaining an unshakeable belief in human decency. On 7 September 1943, Etty and her family were deported to Auschwitz; she threw a postcard from the train window reading: \"We left the camp singing.\" She was murdered on 30 November 1943.",
+      "quote": "I want to be the thinking heart of the barracks. If nothing else is saved from this time, let it be that we did not lose our humanity.",
+      "citation": "Etty Hillesum, Westerbork Letters (August 1943)",
+      "enquiries": [
+        3,
+        5
+      ],
+      "journey": [
+        {
+          "stage": "1. Bohemian Intellectual Life in Amsterdam (1914–1940)",
+          "text": "Studied law and Slavic languages at the University of Amsterdam, deeply engaged in psychology, literature, and philosophical study."
+        },
+        {
+          "stage": "2. The Net Closes in the Netherlands (1941–1942)",
+          "text": "As anti-Jewish decrees banned Jews from public parks, trams, and universities, Etty began her intimate diaries recording inner spiritual resilience."
+        },
+        {
+          "stage": "3. Westerbork Transit Camp Volunteer (1942–1943)",
+          "text": "Refused offers to go into hiding; chose to accompany deportees at Camp Westerbork as a member of the Jewish Council, caring for sick and terrified children."
+        },
+        {
+          "stage": "4. Chronicling the Cattle Trains (Summer 1943)",
+          "text": "Wrote devastating letters describing the weekly Tuesday morning trains departing for Auschwitz and Sobibór, resolving to bear moral witness to human suffering."
+        },
+        {
+          "stage": "5. Deportation to Auschwitz & Postcard (September 1943)",
+          "text": "Deported to Auschwitz with her parents and brother Mischa on 7 September 1943. Threw a final postcard from the train window, discovered by Dutch farmers. Murdered in Auschwitz on 30 November 1943."
+        }
+      ],
+      "image": "/images/default_person.svg"
+    },
+    {
+      "id": "arek_hersh",
+      "name": "Arek Hersh MBE",
+      "group": "Child Survivor of Auschwitz & Windermere Child",
+      "birthplace": "Sieradz, Poland",
+      "dates": "1928–Living",
+      "region": "Eastern Europe / British Humanitarian Sanctuary",
+      "bio": "Born in Sieradz, Poland in 1928, Arek was 11 when war broke out. He survived the Łódź Ghetto, slave labour camps, Auschwitz-Birkenau (surviving selection by pretending to be an adult tailor), and the freezing death march to Theresienstadt. Liberated by the Red Army in May 1945 weighing just four stone, Arek was one of 300 child survivors flown to the British Lake District (The Windermere Children) to heal and rebuild life. He settled in Leeds, dedicating his life to education.",
+      "quote": "When we landed in England and saw the mountains of Windermere, we felt we had entered paradise. We learned to laugh again, to trust human beings.",
+      "citation": "Arek Hersh MBE, A Detail of History (Windermere Survivor Memoir)",
+      "enquiries": [
+        7
+      ],
+      "journey": [
+        {
+          "stage": "1. Childhood in Sieradz (1928–1939)",
+          "text": "Grew up in a religious Jewish family in central Poland, the son of a bootmaker. Was 11 years old when the German army invaded in September 1939."
+        },
+        {
+          "stage": "2. Łódź Ghetto & Otoczno Slave Labour (1940–1942)",
+          "text": "Interned in the Sieradz and Łódź ghettos; sent to the brutal Otoczno labour camp cleaning railway tracks, where 1,800 of the 2,000 boys died."
+        },
+        {
+          "stage": "3. Auschwitz Ramp Selection (1944)",
+          "text": "Deported to Auschwitz-Birkenau in 1944. During selection, an older prisoner whispered to him: \"Run to the men's line!\" He claimed to be an 18-year-old tailor, escaping immediate gassing."
+        },
+        {
+          "stage": "4. Death March to Theresienstadt (January–May 1945)",
+          "text": "Forced on a freezing death march across Poland and Germany in open coal wagons; liberated in Theresienstadt on 8 May 1945 weighing only 28kg."
+        },
+        {
+          "stage": "5. The Windermere Children & Life in Britain (August 1945–Present)",
+          "text": "Flown by the RAF to Calgarth Estate at Lake Windermere as one of the 300 orphaned survivors. Learned English, trained as an electrician in Leeds, and received an MBE for Holocaust education."
+        }
+      ],
+      "image": "/images/default_person.svg"
+    }
+  ]
 };

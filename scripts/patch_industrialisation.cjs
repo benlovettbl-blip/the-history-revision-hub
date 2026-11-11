@@ -79,3 +79,4 @@ if (oldLoopRegex.test(code)) {
 
 fs.writeFileSync(file, code, 'utf8');
 console.log('Saved patched render_standard_textbook_industrialisation.cjs');
+
