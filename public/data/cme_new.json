@@ -2824,7 +2824,7 @@
         "lesson_3",
         "lesson_1_3"
       ],
-      "specification_anchor": "The birth of the state of Israel and the 1948–49 War: the Arab-Israeli War of 1948–49; Arab disunity, Israeli military mobilisation, the 1949 Armistice Agreements, the Palestinian refugee crisis (Nakba), UNRWA, and the Law of Return.",
+      "specification_anchor": "The birth of the state of Israel and the 1948–49 War: the declaration of the State of Israel (14 May 1948), the invasion by Arab states, Israeli military mobilisation, the first UN truce and Czech arms resupply, the 1949 Armistice Agreements (Green Line), the Palestinian refugee crisis (Nakba), UNRWA, and the Law of Return (1950).",
       "key_individual": {
         "anchor_act": 2,
         "anchor_title": "West Bank Annexation & Absorption of Palestinian Refugees",
@@ -2840,32 +2840,32 @@
         ],
         "significance": "Hussein steered Jordan through the catastrophic demographic and geopolitical fallout of the 1948 War, absorbing the largest concentration of Palestinian refugees while fighting to ensure the survival of the Hashemite crown."
       },
-      "title": "KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
-      "learning_objective": "To understand the consequences of the 1948-49 war for Palestinians, Israelis, and regional borders.",
+      "title": "KT 1.2: The Creation of Israel, the 1948–49 War & The Palestinian Refugee Crisis",
+      "learning_objective": "To explain the declaration of the State of Israel, the outbreak and outcome of the 1948–49 War, and its consequences for Palestinians, Israelis, and regional borders.",
       "vocab": [
         {
+          "term": "Declaration of the State of Israel",
+          "definition": "14 May 1948 proclamation by David Ben-Gurion in Tel Aviv establishing sovereign Jewish statehood as the British Mandate expired."
+        },
+        {
+          "term": "First Truce",
+          "definition": "June 1948 four-week UN ceasefire enabling Israel to import clandestine Czech arms, mobilize recruits, and unify the IDF."
+        },
+        {
+          "term": "Al-Nakba",
+          "definition": "Arabic for \"The Catastrophe\", referring to the mass displacement of over 700,000 Palestinian Arabs during the 1948–49 War."
+        },
+        {
           "term": "Green Line",
-          "definition": "The 1949 armistice borders drawn in green ink, giving Israel 79% of mandate Palestine."
+          "definition": "Demarcation boundaries established by the 1949 Rhodes Armistice Agreements, leaving Israel in control of 78% of Mandatory Palestine."
         },
         {
           "term": "UNRWA",
-          "definition": "United Nations agency created in 1949 to provide relief for Palestinian refugees."
+          "definition": "United Nations Relief and Works Agency, founded in December 1949 to provide emergency food, relief, and shelter to Palestinian refugees."
         },
         {
           "term": "Law of Return",
-          "definition": "1950 Israeli law granting any Jew the right to immigrate to Israel and receive automatic citizenship."
-        },
-        {
-          "term": "Fedayeen",
-          "definition": "Palestinian guerrilla fighters who launched cross-border raids into Israel from the Gaza Strip."
-        },
-        {
-          "term": "Armistice Agreements",
-          "definition": "1949 bilateral agreements between Israel and Egypt, Lebanon, Jordan, and Syria formally ending the 1948 war hostilities."
-        },
-        {
-          "term": "Resolution 194",
-          "definition": "1948 UN General Assembly resolution asserting the right of Palestinian refugees to return to their homes or receive compensation."
+          "definition": "1950 Israeli Knesset legislation granting every Jewish person worldwide the inherent legal right to settle in Israel and receive citizenship."
         }
       ],
       "vocab_cloze_text": "Following the 1948–49 Arab-Israeli War, formal fighting ended with bilateral [Armistice Agreements], establishing temporary borders known as the [Green Line]. To manage the humanitarian crisis of hundreds of thousands of displaced persons, the UN passed [Resolution 194] and founded [UNRWA] to operate refugee camps. Inside the new state, Israel passed the [Law of Return] to absorb global Jewish immigration, while displaced Palestinians formed armed [Fedayeen] groups to raid across the frontier.",
@@ -2939,316 +2939,146 @@
         "source_context": "Photographic evidence of Palestinian refugees evacuating Galilee in late 1948 alongside Ben-Gurion's formal proclamation of Israeli independence on 14 May 1948. **Hinge Question:** How does the profound contrast between Jewish national celebration and Palestinian refugee catastrophe in 1948 explain why a permanent peace treaty proved impossible to negotiate?"
       },
       "causal_domino_spine": {
-        "title": "Aftermath of the 1948–49 War & The Refugee Crisis: 5-Stage Causal Domino Chain",
+        "title": "The Creation of Israel, The 1948–49 War & The Nakba: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 2 Exam Strategy for Q1 Consequence [4m] & Q2 Narrative Account [8m]",
         "exam_strategy": "Paper 2 tests chronological progression and causal consequence: Event A provoked Decision B, which triggered Action C.",
         "stages": [
           {
             "step": 1,
-            "date": "June–July 1948",
-            "title": "The UN Ceasefire & The Czech Arms Supply",
-            "actor": "Israel & The Czech Arms Supply",
-            "tag": "The Military Turning Point",
-            "trigger": "During a four-week UN truce, Israel reorganises its forces into the Israeli Defence Forces (IDF) and imports large shipments of rifles, machine guns, and fighter planes from Czechoslovakia.",
-            "because": "Israel was initially short of heavy equipment and needed modern arms to resist five invading Arab armies.",
-            "therefore": "Decisively shifted the military balance in Israel’s favor, allowing the newly organized IDF to launch successful counter-offensives and win the war.",
-            "connective": "As the fighting swept through towns and villages, hundreds of thousands of civilians were forced from their homes...",
-            "exam_link": "Q2 Narrative Account: Explains how Israel used the UN truce to rearm and overcome Arab numerical superiority.",
-            "question": "How did the 4-week UN truce enable Israel to decisively shift military momentum?"
+            "date": "14–15 May 1948",
+            "title": "The Declaration of the State of Israel & The Pan-Arab Invasion",
+            "actor": "David Ben-Gurion & Five Arab League Armies",
+            "tag": "The Outbreak of War",
+            "trigger": "David Ben-Gurion proclaims the State of Israel beneath Theodor Herzl’s portrait in Tel Aviv; at dawn the following day, five Arab League armies invade across multiple fronts.",
+            "because": "Zionist leaders asserted the moral and legal right to self-determination as the British Mandate ended, while Arab leaders viewed partition as an illegitimate imperial imposition.",
+            "therefore": "Triggered the first full-scale regional Arab-Israeli war, forcing outnumbered Israeli defenders to fight for immediate survival against five invading regular armies.",
+            "connective": "Desperately short of heavy ammunition and weapons, Israeli forces urgently needed an international ceasefire to regroup and rearm...",
+            "exam_link": "Q2 Narrative Account: Explains the causal trigger for the outbreak of regular interstate warfare in May 1948.",
+            "question": "Why did Ben-Gurion declare statehood on 14 May, and why did five Arab armies invade?"
           },
           {
             "step": 2,
+            "date": "June–July 1948",
+            "title": "The First UN Truce & The Czech Arms Supply",
+            "actor": "Israel, Count Bernadotte & Czechoslovakia",
+            "tag": "The Military Turning Point",
+            "trigger": "During a four-week UN truce negotiated by Count Folke Bernadotte, Israel reorganises its forces into the unified IDF and airlifts massive shipments of weapons from Czechoslovakia.",
+            "because": "Israel faced an acute shortage of heavy weaponry and exploited the ceasefire far more effectively than the politically divided Arab coalition.",
+            "therefore": "Decisively shifted the military balance in Israel’s favour, enabling the reinforced IDF to launch victorious counter-offensives and seize the initiative permanently.",
+            "connective": "As intense combat swept through towns and agricultural villages, hundreds of thousands of civilians were caught in the crossfire...",
+            "exam_link": "Q2 Narrative Account: Explains how the first UN truce and Czech weaponry transformed the military balance of power.",
+            "question": "How did the 4-week UN truce enable Israel to decisively shift military momentum?"
+          },
+          {
+            "step": 3,
             "date": "1948–1949",
             "title": "The Palestinian Refugee Crisis (The Nakba)",
             "actor": "Palestinian Refugees & The UN (UNRWA)",
             "tag": "Mass Dispossession",
-            "trigger": "Around 700,000 Palestinian Arabs flee or are expelled from their homes, ending up in emergency refugee camps in Gaza, the West Bank, Jordan, Syria, and Lebanon.",
-            "because": "Palestinians fled due to intense battlefield shelling, panic caused by atrocities such as the Deir Yassin massacre, and direct expulsions by Israeli forces.",
-            "therefore": "Created a permanent refugee population reliant on UN food and shelter; Palestinians refer to this disaster as the Nakba (\"The Catastrophe\").",
-            "connective": "The active fighting was halted by temporary ceasefire agreements that completely redrew the borders...",
-            "exam_link": "Q1 Consequence: Created the lasting Palestinian refugee crisis that became one of the main obstacles to Middle East peace.",
+            "trigger": "Over 700,000 Palestinian Arabs flee or are expelled from their homes as Plan Dalet is implemented, depopulating over 400 Arab villages.",
+            "because": "Civilian panic was triggered by military assaults, artillery shelling, psychological warfare, and atrocities such as the Deir Yassin massacre.",
+            "therefore": "Created a permanent, unresolved refugee crisis across the Levant, leaving hundreds of thousands confined to squalid UNRWA camps without a right of return.",
+            "connective": "Active battlefield combat was formally concluded by separate bilateral armistice agreements signed on the island of Rhodes...",
+            "exam_link": "Q1 Consequence: Created the enduring refugee dilemma (Al-Nakba) that remains central to Arab-Israeli conflict.",
             "question": "Why is the cause of the 1948 Palestinian refugee flight (Al-Nakba) contested?"
           },
           {
-            "step": 3,
+            "step": 4,
             "date": "1949",
             "title": "The 1949 Armistice Agreements (The Green Line)",
-            "actor": "Israel, Egypt, Jordan, Syria, Lebanon",
+            "actor": "Ralph Bunche, Israel, Egypt, Jordan, Syria, Lebanon",
             "tag": "The Redrawn Borders",
-            "trigger": "The UN brokers separate ceasefire agreements establishing temporary armistice borders known as the \"Green Line\".",
-            "because": "Arab armies had suffered heavy battlefield defeats and needed to halt the advancing Israeli military.",
-            "therefore": "Israel expanded its territory to 78% of Palestine; Jordan took control of the West Bank and East Jerusalem, while Egypt occupied the Gaza Strip, leaving no independent Palestinian state.",
-            "connective": "With its new borders secured, the Israeli government passed laws to rapidly build up its population...",
-            "exam_link": "Q1 Consequence: Wiped the proposed Arab state off the map and established borders that left Israel with narrow, vulnerable frontiers.",
+            "trigger": "UN mediator Ralph Bunche negotiates four bilateral armistices on Rhodes, demarcating the Green Line borders that expanded Israel to 78% of Palestine.",
+            "because": "Arab armies suffered decisive battlefield defeats and sought to halt further Israeli territorial advances without granting formal diplomatic recognition.",
+            "therefore": "Left Israel in control of far more territory than UN Resolution 181 allocated, while Jordan annexed the West Bank and Egypt occupied Gaza, erasing an independent Palestine.",
+            "connective": "With armistice borders established, Israel moved swiftly to populate vulnerable frontier zones with arriving immigrants...",
+            "exam_link": "Q1 Consequence: Established the geopolitical map and borders of the Middle East that persisted until the 1967 Six-Day War.",
             "question": "How did the 1949 Green Line transform the territory allocated by the UN?"
           },
           {
-            "step": 4,
-            "date": "July 1950",
-            "title": "The Israeli Law of Return",
-            "actor": "The Israeli Parliament (Knesset)",
-            "tag": "Building the Population",
-            "trigger": "Israel passes the Law of Return, granting every Jewish person in the world the automatic right to move to Israel and become an Israeli citizen.",
-            "because": "Israel wanted to provide a permanent refuge for world Jewry and rapidly build up its workforce and armed forces.",
-            "therefore": "Doubled Israel’s population within four years as European survivors and Jews expelled from Arab countries arrived, while Palestinian refugees were barred from returning to their homes.",
-            "connective": "Border friction grew intense as displaced Palestinians began staging raids back across the armistice lines...",
-            "exam_link": "Q1 Consequence: Transformed Israeli society and cemented the policy of barring displaced Palestinians from reclaiming their land.",
-            "question": "How did the Law of Return transform Israel’s demographics and economy by 1953?"
-          },
-          {
             "step": 5,
-            "date": "1950–1955",
-            "title": "Fedayeen Border Raids & Israeli Reprisals",
-            "actor": "Palestinian Fedayeen & Israeli Forces",
-            "tag": "The Cycle of Violence",
-            "trigger": "Armed Palestinian guerrillas (Fedayeen) carry out cross-border raids into Israel; Israel responds with large-scale, destructive military reprisal attacks.",
-            "because": "Displaced Palestinians sought to strike back at Israel, while Israeli leaders adopted a policy of disproportionate retaliation to deter future attacks.",
-            "therefore": "Created a vicious cycle of violence and border tension that led directly to the 1955 Gaza Raid and the 1956 Suez Crisis.",
-            "connective": "Rising border violence and Egyptian support for the Fedayeen convinced Israeli leaders to seek a military showdown with Egypt...",
-            "exam_link": "Q2 Narrative Account: Demonstrates how post-1949 border raids created the military escalation that sparked the 1956 Suez Crisis.",
-            "question": "Why did cross-border infiltration trigger Sharon’s Unit 101 raid on Qibya?"
+            "date": "July 1950",
+            "title": "The Israeli Law of Return & Demographic Surge",
+            "actor": "David Ben-Gurion & The Israeli Knesset",
+            "tag": "State Consolidation",
+            "trigger": "The Knesset passes the Law of Return, guaranteeing every Jewish person worldwide automatic citizenship and launching massive airborne rescue operations.",
+            "because": "Israel required a rapid population influx to build a large standing army reserve, settle frontier borders, and fulfill its Zionist mission as a Jewish sanctuary.",
+            "therefore": "Doubled Israel’s population to 1.4 million by 1952, transforming national demographics while permanently excluding displaced Palestinian refugees from returning.",
+            "connective": "The demographic consolidation of Israel and ongoing border tensions set the stage for escalating confrontation with Egypt...",
+            "exam_link": "Q3 Explain the Importance: Crucial for understanding how demographic growth and military conscription secured Israel’s survival.",
+            "question": "How did the Law of Return transform Israel’s demographics and security by 1952?"
           }
         ]
       },
       "flashcards": [
         {
+          "term": "Declaration of the State of Israel",
+          "definition": "14 May 1948 proclamation by David Ben-Gurion in Tel Aviv establishing sovereign Jewish statehood as the British Mandate expired."
+        },
+        {
+          "term": "First Truce",
+          "definition": "June 1948 four-week UN ceasefire enabling Israel to import clandestine Czech arms, mobilize recruits, and unify the IDF."
+        },
+        {
+          "term": "Al-Nakba",
+          "definition": "Arabic for \"The Catastrophe\", referring to the mass displacement of over 700,000 Palestinian Arabs during the 1948–49 War."
+        },
+        {
           "term": "Green Line",
-          "definition": "The 1949 armistice borders drawn in green ink, giving Israel 79% of mandate Palestine."
+          "definition": "Demarcation boundaries established by the 1949 Rhodes Armistice Agreements, leaving Israel in control of 78% of Mandatory Palestine."
         },
         {
           "term": "UNRWA",
-          "definition": "United Nations agency created in 1949 to provide relief for Palestinian refugees."
+          "definition": "United Nations Relief and Works Agency, founded in December 1949 to provide emergency food, relief, and shelter to Palestinian refugees."
         },
         {
           "term": "Law of Return",
-          "definition": "1950 Israeli law granting any Jew the right to immigrate to Israel and receive automatic citizenship."
-        },
-        {
-          "term": "Fedayeen",
-          "definition": "Palestinian guerrilla fighters who launched cross-border raids into Israel from the Gaza Strip."
-        },
-        {
-          "term": "Armistice Agreements",
-          "definition": "1949 bilateral agreements between Israel and Egypt, Lebanon, Jordan, and Syria formally ending the 1948 war hostilities."
-        },
-        {
-          "term": "Resolution 194",
-          "definition": "1948 UN General Assembly resolution asserting the right of Palestinian refugees to return to their homes or receive compensation."
+          "definition": "1950 Israeli Knesset legislation granting every Jewish person worldwide the inherent legal right to settle in Israel and receive citizenship."
         }
       ],
       "narrative_blocks": [
         {
-          "title": "The UN Ceasefire & The Czech Arms Supply",
-          "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> Following Israel's declaration of independence on 14 May 1948, five Arab armies invaded the new state. Hard-pressed Israeli forces suffered severe ammunition and weapon shortages during the initial weeks of intense fighting across multiple fronts. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire intended to halt combat and allow peace negotiations under UN mediator Count Folke Bernadotte.",
-            "<span class=\"para-ref\">[1.2]</span> Israel utilized the pause decisively by securing a major clandestine **Czech arms deal** arranged with Soviet approval, importing thousands of rifles, machine guns, and fighter aircraft. Reorganizing disparate militias into the unified **IDF** (Israel Defense Forces), Israeli commanders launched powerful counter-offensives when fighting resumed in July, breaking Arab supply lines and seizing the military initiative permanently across all battlefronts."
-          ],
-          "act": 1,
-          "act_title": "Stage 1: The UN Ceasefire & The Czech Arms Supply — How did the 4-week UN truce enable Israel to decisively shift military momentum?",
-          "theme_heading": "The UN Ceasefire & The Czech Arms Supply",
-          "text": "<span class=\"para-ref\">[1.1]</span> Following Israel's declaration of independence on 14 May 1948, five Arab armies invaded the new state. Hard-pressed Israeli forces suffered severe ammunition and weapon shortages during the initial weeks of intense fighting across multiple fronts. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire intended to halt combat and allow peace negotiations under UN mediator Count Folke Bernadotte.\n\n<span class=\"para-ref\">[1.2]</span> Israel utilized the pause decisively by securing a major clandestine **Czech arms deal** arranged with Soviet approval, importing thousands of rifles, machine guns, and fighter aircraft. Reorganizing disparate militias into the unified **IDF** (Israel Defense Forces), Israeli commanders launched powerful counter-offensives when fighting resumed in July, breaking Arab supply lines and seizing the military initiative permanently across all battlefronts.",
-          "sources": [
-            {
-              "id": "cme_l3_source_a",
-              "letter": "A",
-              "title": "Source A: UN Ad Hoc Committee Draft Partition Proposals (1947)",
-              "src": "/units/cme_new/assets/cme_un_palestine_partition_versions_1947.jpg",
-              "image": "/units/cme_new/assets/cme_un_palestine_partition_versions_1947.jpg",
-              "source": "/units/cme_new/assets/cme_un_palestine_partition_versions_1947.jpg",
-              "caption": "Cartographic comparison of the UNSCOP Majority Plan (partition with economic union) versus the Minority Plan (federal single state with autonomous cantons).",
-              "desc": "Official United Nations draft maps showing alternative constitutional models for Palestine.",
-              "provenance": "United Nations Ad Hoc Committee on the Palestinian Question (A/AC.14/32), October 1947.",
-              "citation": "United Nations Archives, Geneva / New York.",
-              "hinge_question": "Why did the UN reject the federal single-state model in favor of full partition in November 1947?",
-              "source_context": "In 1947, the UN considered two solutions: a majority plan proposing two independent states joined by economic union, and a minority plan proposing a single federal state with Jewish and Arab internal cantons. The federal model was rejected by both sides as unworkable given the intense nationalist animosity. **Hinge Question:** Why did the UN reject the federal single-state model in favor of full partition in November 1947?",
-              "context": "In 1947, the UN considered two solutions: full partition versus a single federal state.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source A for understanding the international diplomatic debate surrounding Palestine's constitutional future in 1947?",
-              "model_answer": "Source A is extremely reliable as an official United Nations legal record showing the actual legislative alternatives debated by member states; it demonstrates that partition was chosen not because it was ideal, but because shared binational governance was judged completely unattainable.",
-              "provenance_clues": {
-                "author": "UN Ad Hoc Secretariat cartographic drafting division.",
-                "audience": "UN General Assembly delegates and diplomatic legal advisors.",
-                "motive": "To present clear territorial alternatives for the formal plenary vote on Palestine's future.",
-                "hinge_question": "Why did the UN reject the federal single-state model in favor of full partition in November 1947?"
-              },
-              "teacher_notes": {
-                "source_context": "In 1947, the UN considered two solutions: a majority plan proposing two independent states joined by economic union, and a minority plan proposing a single federal state with Jewish and Arab internal cantons. The federal model was rejected by both sides as unworkable given the intense nationalist animosity. **Hinge Question:** Why did the UN reject the federal single-state model in favor of full partition in November 1947?"
-              }
-            }
-          ]
+          "title": "The Declaration of the State of Israel & The Pan-Arab Invasion",
+          "theme_heading": "The Declaration of the State of Israel & The Pan-Arab Invasion",
+          "act": "ACT 1",
+          "act_title": "The Declaration & The Outbreak of War",
+          "image": "/images/cme_bengurion_declaration_1948.jpg",
+          "image_alt": "David Ben-Gurion declaring Israeli statehood at the Tel Aviv Museum on 14 May 1948",
+          "caption": "David Ben-Gurion reading the Declaration of the Establishment of the State of Israel beneath a portrait of Theodor Herzl at the Tel Aviv Museum on 14 May 1948.",
+          "isReversed": false,
+          "text": "<span class=\"para-ref\">[1.1]</span> On **14 May 1948**, hours before the British Mandate officially terminated at midnight, **David Ben-Gurion** stood beneath a portrait of Theodor Herzl in the Tel Aviv Museum to read the Declaration of the Establishment of the State of Israel. Asserting the historic and moral right of the Jewish people to sovereign self-determination, Ben-Gurion proclaimed the birth of the Jewish state, prompting immediate de facto recognition from US President Harry S. Truman.\n\n<span class=\"para-ref\">[1.2]</span> The declaration fulfilled Zionism but ignited immediate regional war. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed the borders into Palestine to crush the nascent state. Facing acute shortages of artillery, combat aircraft, and heavy armour, outnumbered Israeli defenders mounted a desperate multi-front defence to prevent their settlements and fledgling nation from being overrun in its opening weeks."
+        },
+        {
+          "title": "The First UN Truce & The Czech Arms Supply",
+          "theme_heading": "The First UN Truce & The Czech Arms Supply",
+          "act": "ACT 2",
+          "act_title": "The Military Turning Point",
+          "text": "<span class=\"para-ref\">[2.1]</span> Hard-pressed Israeli forces suffered severe ammunition shortages during the opening month of combat. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire negotiated by UN mediator Count **Folke Bernadotte** to halt fighting. Both sides agreed to pause hostilities, but Israel utilized the four-week interlude far more effectively than the fractured Arab coalition to reorganize and rearm.\n\n<span class=\"para-ref\">[2.2]</span> During the truce, Israel broke the international arms embargo by securing a massive clandestine **Czech arms deal** with Soviet approval, airlifting thousands of rifles, machine guns, and Avia S-199 fighter aircraft. Prime Minister Ben-Gurion simultaneously consolidated disparate militias into the unified **IDF** (Israel Defense Forces). When combat resumed in July, heavily reinforced Israeli divisions broke Egyptian lines and seized the military initiative across all operational fronts."
         },
         {
           "title": "The Palestinian Refugee Crisis (The Nakba)",
-          "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> The 1948 war caused the catastrophic collapse and displacement of Palestinian Arab society, an event Palestinians commemorate as the **Nakba** (\"The Catastrophe\"). In April 1948, the Haganah enacted **Plan Dalet**, a military strategy aimed at securing roads and Jewish settlements by clearing hostile villages along vital transport corridors. Violent encounters, including the Deir Yassin massacre, spread intense panic, causing whole communities to abandon their homes.",
-            "<span class=\"para-ref\">[2.2]</span> By the war's end, over **700,000 Palestinian Arabs** had fled or been expelled from territories that became the State of Israel. Most became impoverished refugees living in camps across the West Bank, Gaza, Jordan, Syria, and Lebanon. The newly formed UN agency UNRWA established emergency relief, while UN Resolution 194 declared refugees should be permitted to return, a right Israel permanently denied on security grounds."
-          ],
-          "act": 2,
-          "act_title": "Stage 2: The Palestinian Refugee Crisis (The Nakba) — Why is the cause of the 1948 Palestinian refugee flight (Al-Nakba) contested?",
           "theme_heading": "The Palestinian Refugee Crisis (The Nakba)",
-          "text": "<span class=\"para-ref\">[2.1]</span> The 1948 war caused the catastrophic collapse and displacement of Palestinian Arab society, an event Palestinians commemorate as the **Nakba** (\"The Catastrophe\"). In April 1948, the Haganah enacted **Plan Dalet**, a military strategy aimed at securing roads and Jewish settlements by clearing hostile villages along vital transport corridors. Violent encounters, including the Deir Yassin massacre, spread intense panic, causing whole communities to abandon their homes.\n\n<span class=\"para-ref\">[2.2]</span> By the war's end, over **700,000 Palestinian Arabs** had fled or been expelled from territories that became the State of Israel. Most became impoverished refugees living in camps across the West Bank, Gaza, Jordan, Syria, and Lebanon. The newly formed UN agency UNRWA established emergency relief, while UN Resolution 194 declared refugees should be permitted to return, a right Israel permanently denied on security grounds.",
-          "sources": [
-            {
-              "id": "cme_l3_source_b",
-              "letter": "B",
-              "title": "Source B: Displaced Palestinian Families in Khan Yunis Camp (1948–1949)",
-              "src": "/images/nakba_unrwa_khan_younis_1948.jpg",
-              "image": "/images/nakba_unrwa_khan_younis_1948.jpg",
-              "source": "/images/nakba_unrwa_khan_younis_1948.jpg",
-              "caption": "UNRWA archival photograph of a displaced Palestinian mother and young child standing outside makeshift tent shelters in the Khan Yunis refugee camp in Gaza (1948–1949).",
-              "desc": "Documentary photograph of displaced Palestinian families in Khan Yunis refugee camp, Gaza (1948–1949).",
-              "provenance": "UNRWA Photographic Archive (Gaza-1948-KY), 1948–1949.",
-              "citation": "UNRWA Photographic Archive.",
-              "hinge_question": "How did the permanence of refugee tent camps undermine Arab hopes of an immediate return to their villages?",
-              "source_context": "Following the 1948 war, over 200,000 Palestinian refugees flooded into the narrow Gaza Strip, tripling its resident population overnight. Families lived in canvas tents with open sewers and severe food shortages under Egyptian military administration. **Hinge Question:** How did the permanence of refugee tent camps undermine Arab hopes of an immediate return to their villages?",
-              "context": "Over 200,000 Palestinian refugees flooded into the narrow Gaza Strip following the 1948 war.",
-              "question_badge": "Historical Utility",
-              "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source B for an enquiry into the humanitarian consequences of the 1948 Palestinian exodus (Nakba)?",
-              "model_answer": "Source B is profoundly useful because it captures the squalid, dehumanizing conditions endured by hundreds of thousands of displaced non-combatants, illustrating how the war permanently transformed thriving agrarian communities into destitute refugees dependent on international charity.",
-              "provenance_clues": {
-                "author": "International humanitarian relief photographer working with the Red Cross and UN.",
-                "audience": "United Nations donor nations, Western charitable organizations, and the global public.",
-                "motive": "To expose the catastrophic scale of the refugee emergency and secure urgent financial relief.",
-                "hinge_question": "How did the permanence of refugee tent camps undermine Arab hopes of an immediate return to their villages?"
-              },
-              "teacher_notes": {
-                "source_context": "Following the 1948 war, over 200,000 Palestinian refugees flooded into the narrow Gaza Strip, tripling its resident population overnight. Families lived in canvas tents with open sewers and severe food shortages under Egyptian military administration. **Hinge Question:** How did the permanence of refugee tent camps undermine Arab hopes of an immediate return to their villages?"
-              }
-            }
-          ],
+          "act": "ACT 3",
+          "act_title": "Mass Dispossession & The Refugee Crisis",
           "image": "/images/cme_palestinian_refugees_1948.jpg",
-          "image_alt": "Displaced Palestinian refugees carrying possessions along rural roads in 1948",
-          "caption": "The Nakba ('The Catastrophe', 1948): Over 700,000 Palestinian Arabs were expelled or fled from their homes during the military campaigns of 1948.",
-          "isReversed": false
+          "image_alt": "Displaced Palestinian refugees evacuating with belongings during the 1948 Nakba",
+          "caption": "A column of displaced Palestinian refugees evacuating their ancestral village along a rural highway during the 1948 war, an event commemorated in Arabic as Al-Nakba ('The Catastrophe').",
+          "isReversed": true,
+          "text": "<span class=\"para-ref\">[3.1]</span> The 1948 war caused the catastrophic displacement of Palestinian Arab society, an event Palestinians commemorate as the **Nakba** (\"The Catastrophe\"). In April 1948, Zionist forces implemented **Plan Dalet**, a military operational strategy aimed at securing roads and Jewish enclaves by capturing hostile villages along vital transport corridors. Violent encounters, such as the Deir Yassin massacre, spread intense civilian panic, causing whole communities to flee.\n\n<span class=\"para-ref\">[3.2]</span> By the war's conclusion, over **700,000 Palestinian Arabs** had fled or been expelled from territories that fell under Israeli sovereignty, leaving over 400 villages depopulated. Most refugees were forced into squalid camps across Gaza, the West Bank, Lebanon, Syria, and Jordan. While the UN established **UNRWA** for humanitarian relief and passed Resolution 194 urging refugee return, Israel permanently barred repatriation to preserve a Jewish demographic majority."
         },
         {
           "title": "The 1949 Armistice Agreements (The Green Line)",
-          "paragraphs": [
-            "<span class=\"para-ref\">[3.1]</span> Between February and July 1949, UN mediator Dr **Ralph Bunche** conducted separate bilateral armistice talks between Israel and Egypt, Lebanon, Jordan, and Syria on the Mediterranean island of **Rhodes**. Bunche utilized patient shuttle diplomacy, moving between delegations seated in separate hotel suites, to successfully negotiate formal armistice agreements without requiring Arab states to extend official diplomatic recognition to Israel.",
-            "<span class=\"para-ref\">[3.2]</span> The armistice demarcation lines established in 1949 became known as the **Green Line**, defining Israel's borders until 1967. Israel now controlled 78% of Mandatory Palestine—far more than the 55% allocated by UN partition. Jordan annexed the West Bank and East Jerusalem, while Egypt militarily administered the Gaza Strip. The armistices ended active warfare but left deep Arab grievances and no permanent peace."
-          ],
-          "act": 3,
-          "act_title": "Stage 3: The 1949 Armistice Agreements (The Green Line) — How did the 1949 Green Line transform the territory allocated by the UN?",
           "theme_heading": "The 1949 Armistice Agreements (The Green Line)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Between February and July 1949, UN mediator Dr **Ralph Bunche** conducted separate bilateral armistice talks between Israel and Egypt, Lebanon, Jordan, and Syria on the Mediterranean island of **Rhodes**. Bunche utilized patient shuttle diplomacy, moving between delegations seated in separate hotel suites, to successfully negotiate formal armistice agreements without requiring Arab states to extend official diplomatic recognition to Israel.\n\n<span class=\"para-ref\">[3.2]</span> The armistice demarcation lines established in 1949 became known as the **Green Line**, defining Israel's borders until 1967. Israel now controlled 78% of Mandatory Palestine—far more than the 55% allocated by UN partition. Jordan annexed the West Bank and East Jerusalem, while Egypt militarily administered the Gaza Strip. The armistices ended active warfare but left deep Arab grievances and no permanent peace.",
-          "sources": [
-            {
-              "id": "cme_l3_source_c",
-              "letter": "C",
-              "title": "Source C: The 1949 Armistice Green Line Boundaries Map",
-              "src": "/units/cme_new/assets/palestine_1949_map.png",
-              "image": "/units/cme_new/assets/palestine_1949_map.png",
-              "source": "/units/cme_new/assets/palestine_1949_map.png",
-              "caption": "Map depicting the 1949 Armistice Agreements (Green Line) following the war: Israel expanded to 78% of Mandate territory; Jordan annexed the West Bank; Egypt administered the Gaza Strip.",
-              "desc": "Cartographic map of the 1949 Rhodes Armistice ceasefire demarcation lines.",
-              "provenance": "United Nations Truce Supervision Organization (UNTSO), Rhodes, 1949.",
-              "citation": "UNTSO / United Nations Archives.",
-              "hinge_question": "Why did the 1949 armistice agreements fail to create permanent, recognized international borders?",
-              "source_context": "Following nineteen months of warfare, bilateral armistice agreements were signed in Rhodes between Israel and Egypt, Lebanon, Jordan, and Syria. The resulting Green Line granted Israel 22% more territory than the UN partition plan, while no independent Palestinian state was established. **Hinge Question:** Why did the 1949 armistice agreements fail to create permanent, recognized international borders?",
-              "context": "Bilateral armistice agreements were signed in Rhodes in 1949, establishing the Green Line.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source C for demonstrating the geopolitical outcome of the 1948–49 Arab-Israeli War?",
-              "model_answer": "Source C is highly reliable because it records the precise military armistice lines negotiated under UN supervision; however, it reflects a temporary cessation of hostilities rather than a de jure peace treaty recognized by neighboring Arab states.",
-              "provenance_clues": {
-                "author": "UNTSO military surveyors and diplomatic negotiators.",
-                "audience": "Signatory states (Israel, Egypt, Jordan, Syria, Lebanon) and UN Security Council.",
-                "motive": "To codify military ceasefire positions without prejudicing final territorial claims.",
-                "hinge_question": "Why did the 1949 armistice agreements fail to create permanent, recognized international borders?"
-              },
-              "teacher_notes": {
-                "source_context": "Following nineteen months of warfare, bilateral armistice agreements were signed in Rhodes between Israel and Egypt, Lebanon, Jordan, and Syria. The resulting Green Line granted Israel 22% more territory than the UN partition plan, while no independent Palestinian state was established. **Hinge Question:** Why did the 1949 armistice agreements fail to create permanent, recognized international borders?"
-              }
-            }
-          ]
+          "act": "ACT 4",
+          "act_title": "The Rhodes Armistices & Redrawn Frontiers",
+          "text": "<span class=\"para-ref\">[4.1]</span> Between February and July 1949, United Nations acting mediator Dr **Ralph Bunche** convened separate bilateral peace negotiations between Israel and Egypt, Lebanon, Jordan, and Syria on the Greek island of **Rhodes**. Conducting delicate shuttle diplomacy between delegates housed in separate suites, Bunche successfully brokered four armistice agreements that officially ended military combat without forcing Arab states to extend formal diplomatic recognition to Israel.\n\n<span class=\"para-ref\">[4.2]</span> Demarcated with green grease-pencils on military maps, these ceasefire borders became known as the **Green Line**, defining Israel's frontiers until 1967. Israel secured **78% of Mandatory Palestine**—a dramatic expansion beyond the 55% allocated by UN Resolution 181. Meanwhile, Jordan annexed the West Bank and East Jerusalem, and Egypt occupied the Gaza Strip, leaving Palestinians without a sovereign state and cementing unresolved regional hostility."
         },
         {
-          "title": "The Israeli Law of Return",
-          "paragraphs": [
-            "<span class=\"para-ref\">[4.1]</span> In July 1950, the Israeli Knesset passed the landmark **Law of Return**, declaring that every Jewish person worldwide held the legal right to settle in Israel and receive immediate citizenship. Prime Minister **David Ben-Gurion** viewed mass immigration as both a moral imperative to rescue persecuted Jews and an essential strategic requirement to populate empty border areas and build a powerful national reserve army.",
-            "<span class=\"para-ref\">[4.2]</span> Israel orchestrated dramatic airborne rescue operations, including **Operation Magic Carpet** (airlifting 49,000 Yemenite Jews) and Operation Ezra and Nehemiah (transporting 120,000 Iraqi Jews). Between 1948 and 1953, Israel's Jewish population doubled from 650,000 to over 1.4 million. This influx created severe housing shortages in temporary transit camps (ma'abarot) while transforming Israel into a predominantly Middle Eastern (Mizrahi) society."
-          ],
-          "act": 4,
-          "act_title": "Stage 4: The Israeli Law of Return — How did the Law of Return transform Israel’s demographics and economy by 1953?",
-          "theme_heading": "The Israeli Law of Return",
-          "text": "<span class=\"para-ref\">[4.1]</span> In July 1950, the Israeli Knesset passed the landmark **Law of Return**, declaring that every Jewish person worldwide held the legal right to settle in Israel and receive immediate citizenship. Prime Minister **David Ben-Gurion** viewed mass immigration as both a moral imperative to rescue persecuted Jews and an essential strategic requirement to populate empty border areas and build a powerful national reserve army.\n\n<span class=\"para-ref\">[4.2]</span> Israel orchestrated dramatic airborne rescue operations, including **Operation Magic Carpet** (airlifting 49,000 Yemenite Jews) and Operation Ezra and Nehemiah (transporting 120,000 Iraqi Jews). Between 1948 and 1953, Israel's Jewish population doubled from 650,000 to over 1.4 million. This influx created severe housing shortages in temporary transit camps (ma'abarot) while transforming Israel into a predominantly Middle Eastern (Mizrahi) society.",
-          "sources": [
-            {
-              "id": "cme_l3_source_d",
-              "letter": "D",
-              "title": "Source D: Jewish Immigrants Arriving in Haifa Port (February 1949)",
-              "src": "/units/cme_new/assets/jewish_immigrants_haifa_1949.jpg",
-              "image": "/units/cme_new/assets/jewish_immigrants_haifa_1949.jpg",
-              "source": "/units/cme_new/assets/jewish_immigrants_haifa_1949.jpg",
-              "caption": "Thousands of Jewish immigrants arriving at Haifa Port aboard the Pan Yorkshire (February 1949) greeted by crowds beneath a Hebrew banner reading \"ברוכים הבאים\" (Welcome).",
-              "desc": "Archival photograph of Jewish immigrants arriving at the Port of Haifa (February 1949).",
-              "provenance": "Israel Government Press Office (GPO 997008136796005171), February 1949.",
-              "citation": "Israel Government Press Office, Jerusalem.",
-              "hinge_question": "How did the rapid influx of nearly 700,000 Jewish immigrants explain Israel's refusal to permit Palestinian refugees to return?",
-              "source_context": "Between May 1948 and 1951, Israel doubled its Jewish population by absorbing nearly 700,000 immigrants, including European Holocaust survivors and Jewish communities fleeing persecution and expulsion across Arab states (Iraq, Yemen, North Africa). Abandoned Arab properties and villages were quickly resettled. **Hinge Question:** How did the rapid influx of nearly 700,000 Jewish immigrants explain Israel's refusal to permit Palestinian refugees to return?",
-              "context": "Between May 1948 and 1951, Israel doubled its Jewish population by absorbing nearly 700,000 immigrants.",
-              "question_badge": "Cross-Referencing",
-              "question_type": "Cross-Referencing",
-              "enquiry_question": "How does Source D cross-reference with the Palestinian refugee experience shown in Source D to explain why the conflict became intractable?",
-              "model_answer": "Source D demonstrates that as hundreds of thousands of Jewish refugees were resettled into vacant homes and lands across Israel, the physical reality on the ground was irrevocably altered, rendering the physical return of Palestinian refugees in Source D politically and demographically impossible for Israel.",
-              "provenance_clues": {
-                "author": "Official photographer for the Ministry of Immigrant Absorption.",
-                "audience": "Israeli citizenry and the international Jewish diaspora fundraising campaigns.",
-                "motive": "To celebrate the ingathering of exiles and highlight Israel's humanitarian rescue mission.",
-                "hinge_question": "How did the rapid influx of nearly 700,000 Jewish immigrants explain Israel's refusal to permit Palestinian refugees to return?"
-              },
-              "teacher_notes": {
-                "source_context": "Between May 1948 and 1951, Israel doubled its Jewish population by absorbing nearly 700,000 immigrants, including European Holocaust survivors and Jewish communities fleeing persecution and expulsion across Arab states (Iraq, Yemen, North Africa). Abandoned Arab properties and villages were quickly resettled. **Hinge Question:** How did the rapid influx of nearly 700,000 Jewish immigrants explain Israel's refusal to permit Palestinian refugees to return?"
-              }
-            }
-          ],
-          "image": "/images/cme_palestinian_refugees_leaving_gaza.webp",
-          "image_alt": "Stateless Palestinian refugees gathered in emergency encampments in Gaza, 1949",
-          "caption": "Refugee Dispersal (1949): Stateless Palestinian populations concentrated in sprawling camps across Gaza, the West Bank, Jordan, Syria, and Lebanon.",
-          "isReversed": true
-        },
-        {
-          "title": "Fedayeen Border Raids & Israeli Reprisals",
-          "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> Following the 1949 armistices, thousands of displaced Palestinians in Gaza and the West Bank attempted to cross the Green Line to harvest crops, visit relatives, or retrieve abandoned property. Gradually, armed Palestinian guerrilla groups known as **Fedayeen** (\"self-sacrificers\") launched organized cross-border raids into Israel, carrying out ambushes, sabotage, and civilian attacks backed by Egyptian military intelligence.",
-            "<span class=\"para-ref\">[5.2]</span> Israel adopted an aggressive deterrence doctrine, launching severe cross-border military retaliations against Arab border villages to compel neighboring governments to halt infiltrations. In 1953, Major Ariel Sharon formed **Unit 101**, a specialized commando unit tasked with executing high-impact reprisal operations. In October 1953, Unit 101 conducted the **Qibya raid** in the Jordanian West Bank, blowing up 45 houses and killing 69 civilians, drawing international condemnation and escalating regional tensions."
-          ],
-          "act": 5,
-          "act_title": "Stage 5: Fedayeen Border Raids & Israeli Reprisals — Why did cross-border infiltration trigger Sharon’s Unit 101 raid on Qibya?",
-          "theme_heading": "Fedayeen Border Raids & Israeli Reprisals",
-          "text": "<span class=\"para-ref\">[5.1]</span> Following the 1949 armistices, thousands of displaced Palestinians in Gaza and the West Bank attempted to cross the Green Line to harvest crops, visit relatives, or retrieve abandoned property. Gradually, armed Palestinian guerrilla groups known as **Fedayeen** (\"self-sacrificers\") launched organized cross-border raids into Israel, carrying out ambushes, sabotage, and civilian attacks backed by Egyptian military intelligence.\n\n<span class=\"para-ref\">[5.2]</span> Israel adopted an aggressive deterrence doctrine, launching severe cross-border military retaliations against Arab border villages to compel neighboring governments to halt infiltrations. In 1953, Major Ariel Sharon formed **Unit 101**, a specialized commando unit tasked with executing high-impact reprisal operations. In October 1953, Unit 101 conducted the **Qibya raid** in the Jordanian West Bank, blowing up 45 houses and killing 69 civilians, drawing international condemnation and escalating regional tensions.",
-          "sources": [
-            {
-              "id": "cme_l3_source_e",
-              "letter": "E",
-              "title": "Source E: UNRWA Emergency Bread & Ration Distribution to Displaced Palestinian Refugees (c. 1949)",
-              "src": "/images/nakba_unrwa_women_bread_1948.jpg",
-              "image": "/images/nakba_unrwa_women_bread_1948.jpg",
-              "source": "/images/nakba_unrwa_women_bread_1948.jpg",
-              "caption": "Archival photograph from the UNRWA Film & Photo Archive showing Palestinian refugee women and children in a temporary tent camp queuing to receive emergency flour and daily bread rations under UN General Assembly Resolution 302.",
-              "desc": "Archival photograph of Palestinian refugee women and children receiving emergency UNRWA rations in a tent encampment.",
-              "provenance": "Official documentary photograph by the United Nations Relief and Works Agency (UNRWA), c. 1949–1950. UN Archives.",
-              "citation": "UNRWA Film & Photo Archive, Gaza / West Bank (UN Archive ID UNRWA-HIST-1949-042).",
-              "hinge_question": "Why did Arab states insist on creating a dedicated agency (UNRWA) rather than folding Palestinian refugees into the UN High Commissioner for Refugees (UNHCR)?",
-              "source_context": "UNRWA was created to carry out direct relief and public works programs for Palestine refugees. Unlike the standard UN refugee agency (UNHCR), UNRWA has a specific mandate covering only Palestine refugees, defining them as persons whose normal place of residence was Palestine between 1 June 1946 and 15 May 1948 and who lost both home and means of livelihood. **Hinge Question:** Why did Arab states insist on creating a dedicated agency (UNRWA) rather than folding Palestinian refugees into the UN High Commissioner for Refugees (UNHCR)?",
-              "context": "UNRWA was established by UN Resolution 302 to provide relief for Palestinian refugees.",
-              "question_badge": "Source Inference",
-              "question_type": "Source Inference",
-              "enquiry_question": "What does Source E reveal about the daily living conditions and survival needs of Palestinian refugees following the 1948 Nakba?",
-              "model_answer": "Source E reveals that displaced Palestinian refugees lived in severe destitution in tent encampments, completely dependent on emergency international aid and daily UNRWA bread distributions for their basic survival.",
-              "provenance_clues": {
-                "author": "United Nations General Assembly.",
-                "audience": "Member states, donor governments, and displaced Palestinian communities.",
-                "motive": "To avert starvation and stabilize the Middle East through humanitarian aid while permanent political solutions were sought.",
-                "hinge_question": "Why did Arab states insist on creating a dedicated agency (UNRWA) rather than folding Palestinian refugees into the UN High Commissioner for Refugees (UNHCR)?"
-              },
-              "teacher_notes": {
-                "source_context": "UNRWA was created to carry out direct relief and public works programs for Palestine refugees. Unlike the standard UN refugee agency (UNHCR), UNRWA has a specific mandate covering only Palestine refugees, defining them as persons whose normal place of residence was Palestine between 1 June 1946 and 15 May 1948 and who lost both home and means of livelihood. **Hinge Question:** Why did Arab states insist on creating a dedicated agency (UNRWA) rather than folding Palestinian refugees into the UN High Commissioner for Refugees (UNHCR)?"
-              }
-            }
-          ]
+          "title": "The Israeli Law of Return & Demographic Surge",
+          "theme_heading": "The Israeli Law of Return & Demographic Surge",
+          "act": "ACT 5",
+          "act_title": "State Consolidation & Mass Immigration",
+          "text": "<span class=\"para-ref\">[5.1]</span> On 5 July 1950, the Israeli Knesset passed the landmark **Law of Return**, declaring that every Jewish person worldwide held the inherent legal right to settle in Israel and receive immediate citizenship. Prime Minister **David Ben-Gurion** viewed unrestricted immigration as both a moral imperative to rescue Holocaust survivors and an urgent strategic necessity to populate frontier borders and build a formidable national reserve army.\n\n<span class=\"para-ref\">[5.2]</span> To evacuate endangered diaspora populations, Israel launched massive state-run airborne rescues, including **Operation Magic Carpet**, which airlifted 49,000 Yemenite Jews, and Operation Ezra and Nehemiah from Iraq. Between 1948 and 1952, Israel's Jewish population surged from 650,000 to over **1.4 million citizens**. Although this influx created severe food rationing and crowded canvas transit camps (ma'abarot), it permanently cemented Israel’s demographic survival."
         }
       ],
       "quiz": [
@@ -3344,43 +3174,43 @@
           "explanation": "Begin and the Herut party led violent protests outside the Knesset, arguing that taking reparations from Germany was an intolerable insult to the memory of Holocaust victims. The aid, however, saved Israel's economy."
         },
         {
-          "question": "What term was used to describe armed Palestinian guerrilla raiders who crossed armistice lines to launch cross-border attacks against Israeli targets in the 1950s?",
-          "q": "What term was used to describe armed Palestinian guerrilla raiders who crossed armistice lines to launch cross-border attacks against Israeli targets in the 1950s?",
+          "question": "On what date did David Ben-Gurion read the Declaration of the Establishment of the State of Israel in Tel Aviv?",
+          "q": "On what date did David Ben-Gurion read the Declaration of the Establishment of the State of Israel in Tel Aviv?",
           "options": [
-            "Phalangists",
-            "Peshmerga",
-            "Mujahedeen",
-            "Fedayeen"
+            "29 November 1947",
+            "14 May 1948",
+            "15 May 1948",
+            "22 July 1948"
           ],
-          "answer": "Fedayeen",
-          "a": "Fedayeen",
-          "explanation": "Fedayeen ('self-sacrificers') operated primarily from the Egyptian-administered Gaza Strip and Jordan. Israel viewed them as terrorists and responded with large-scale military reprisal raids."
+          "answer": "14 May 1948",
+          "a": "14 May 1948",
+          "explanation": "Ben-Gurion read the declaration at the Tel Aviv Museum on 14 May 1948, hours before the British Mandate officially terminated at midnight."
         },
         {
-          "question": "What was the primary goal of Israel's military 'reprisal policy' developed during the 1950s under Moshe Dayan and David Ben-Gurion?",
-          "q": "What was the primary goal of Israel's military 'reprisal policy' developed during the 1950s under Moshe Dayan and David Ben-Gurion?",
+          "question": "Which five Arab League nations invaded Palestine on 15 May 1948 following Israel's declaration of independence?",
+          "q": "Which five Arab League nations invaded Palestine on 15 May 1948 following Israel's declaration of independence?",
           "options": [
-            "To deter future infiltration by launching disproportionately severe military counter-strikes against Arab border villages and bases",
-            "To conquer Damascus and Amman through gradual territorial acquisition",
-            "To assassinate foreign diplomats in European capitals",
-            "To force the United Nations to withdraw its observer forces from the border"
+            "Egypt, Transjordan, Syria, Lebanon, and Iraq",
+            "Egypt, Saudi Arabia, Kuwait, Libya, and Sudan",
+            "Iran, Turkey, Iraq, Jordan, and Syria",
+            "Egypt, Tunisia, Algeria, Morocco, and Yemen"
           ],
-          "answer": "To deter future infiltration by launching disproportionately severe military counter-strikes against Arab border villages and bases",
-          "a": "To deter future infiltration by launching disproportionately severe military counter-strikes against Arab border villages and bases",
-          "explanation": "Israel believed Arab governments would only stop cross-border fedayeen infiltration if the punitive cost to their territory and prestige was unbearable. The policy was criticized internationally for collective punishment."
+          "answer": "Egypt, Transjordan, Syria, Lebanon, and Iraq",
+          "a": "Egypt, Transjordan, Syria, Lebanon, and Iraq",
+          "explanation": "Regular armed forces from Egypt, Transjordan, Syria, Lebanon, and Iraq launched a coordinated invasion across multiple fronts at dawn on 15 May 1948."
         },
         {
-          "question": "Which controversial Israeli commando raid in October 1953, led by Major Ariel Sharon and Unit 101, resulted in the dynamiting of houses and 69 civilian deaths in a West Bank village?",
-          "q": "Which controversial Israeli commando raid in October 1953, led by Major Ariel Sharon and Unit 101, resulted in the dynamiting of houses and 69 civilian deaths in a West Bank village?",
+          "question": "Which United Nations mediator negotiated the four-week First Truce in June 1948 before being assassinated by Lehi in September?",
+          "q": "Which United Nations mediator negotiated the four-week First Truce in June 1948 before being assassinated by Lehi in September?",
           "options": [
-            "The Samu Raid",
-            "The Qibya Raid",
-            "The Gaza Raid",
-            "The Karameh Operation"
+            "Ralph Bunche",
+            "Count Folke Bernadotte",
+            "Trygve Lie",
+            "Dag Hammarskjöld"
           ],
-          "answer": "The Qibya Raid",
-          "a": "The Qibya Raid",
-          "explanation": "Unit 101 attacked Qibya in Jordanian-held territory following a fedayeen grenade attack in Yehud. The high civilian death toll brought worldwide condemnation, including from the US State Department."
+          "answer": "Count Folke Bernadotte",
+          "a": "Count Folke Bernadotte",
+          "explanation": "Swedish diplomat Count Folke Bernadotte brokered the crucial four-week truce in June 1948. He was later assassinated in Jerusalem by the militant group Lehi in September 1948."
         },
         {
           "question": "Why was King Abdullah I of Jordan assassinated by a Palestinian gunman outside the Al-Aqsa Mosque in Jerusalem in July 1951?",
@@ -3396,17 +3226,17 @@
           "explanation": "Palestinian nationalists accused Abdullah of treason and collusion with Zionists to annex the West Bank and partition Palestine between Jordan and Israel at the expense of Palestinian statehood."
         },
         {
-          "question": "What was the significance of the Israeli raid on Gaza on 28 February 1955?",
-          "q": "What was the significance of the Israeli raid on Gaza on 28 February 1955?",
+          "question": "From which country did Israel clandestinely purchase thousands of rifles, machine guns, and fighter aircraft to rearm during the First Truce?",
+          "q": "From which country did Israel clandestinely purchase thousands of rifles, machine guns, and fighter aircraft to rearm during the First Truce?",
           "options": [
-            "It humiliated Nasser and directly prompted Egypt to conclude the Czech Arms Deal with the Soviet bloc",
-            "It resulted in the immediate capture of the Sinai Peninsula by Israeli forces",
-            "It prompted the United Nations to withdraw all peacekeepers from the armistice line",
-            "It forced Great Britain to cancel its plans to evacuate the Suez Canal zone"
+            "The United States",
+            "Great Britain",
+            "Czechoslovakia",
+            "France"
           ],
-          "answer": "It humiliated Nasser and directly prompted Egypt to conclude the Czech Arms Deal with the Soviet bloc",
-          "a": "It humiliated Nasser and directly prompted Egypt to conclude the Czech Arms Deal with the Soviet bloc",
-          "explanation": "The raid killed 38 Egyptian soldiers and exposed Egypt's military weakness, convincing Nasser to turn to the Soviet bloc for modern armaments in the September 1955 Czech Arms Deal."
+          "answer": "Czechoslovakia",
+          "a": "Czechoslovakia",
+          "explanation": "With Soviet approval, Czechoslovakia provided thousands of Mauser rifles, machine guns, and Avia S-199 fighter aircraft (Operation Balak), breaking the UN arms embargo and tipping the tactical balance to Israel."
         },
         {
           "question": "What was the 'Tzena' regime in Israel between 1949 and 1953?",
@@ -3435,17 +3265,17 @@
           "explanation": "Until 1966, Israeli Arabs were subject to military governance, requiring army permits to travel between towns, facing curfews, and having land expropriated under emergency defence regulations."
         },
         {
-          "question": "What was the impact of the February 1955 Israeli raid on Gaza (Operation Black Arrow) that killed 38 Egyptian soldiers?",
-          "q": "What was the impact of the February 1955 Israeli raid on Gaza (Operation Black Arrow) that killed 38 Egyptian soldiers?",
+          "question": "What national military organisation was created by David Ben-Gurion during the 1948 war by merging the Haganah, Irgun, and Lehi into a single force?",
+          "q": "What national military organisation was created by David Ben-Gurion during the 1948 war by merging the Haganah, Irgun, and Lehi into a single force?",
           "options": [
-            "It led to the immediate deployment of 10,000 British troops to guard Cairo",
-            "It forced Egypt to sign an unconditional peace treaty with Israel",
-            "It shattered Egyptian military pride and directly convinced President Nasser to seek modern weapons from the Soviet bloc",
-            "It caused the United Nations to expel Israel from the General Assembly"
+            "Palmach",
+            "The Israeli Defence Forces (IDF)",
+            "Tenuat HaMeri",
+            "The Jewish Legion"
           ],
-          "answer": "It shattered Egyptian military pride and directly convinced President Nasser to seek modern weapons from the Soviet bloc",
-          "a": "It shattered Egyptian military pride and directly convinced President Nasser to seek modern weapons from the Soviet bloc",
-          "explanation": "The humiliation of the Egyptian garrison demonstrated Egypt's military inferiority, prompting Nasser to conclude the September 1955 Czechoslovak arms deal, which shifted the regional Cold War balance."
+          "answer": "The Israeli Defence Forces (IDF)",
+          "a": "The Israeli Defence Forces (IDF)",
+          "explanation": "Ben-Gurion established the IDF (Tzahal) on 26 May 1948 and ordered the dissolution of separate underground militias to establish unified state command and control."
         },
         {
           "question": "Which demographic group of Jewish immigrants faced significant discrimination, poor tent encampments (Ma'abarot), and social marginalization upon arrival in 1950s Israel?",
@@ -3474,17 +3304,17 @@
           "explanation": "Jordan annexed the West Bank in 1950 and granted Jordanian citizenship to all resident Palestinians. Other Arab nations refused citizenship to preserve their refugee status and collective right of return."
         },
         {
-          "question": "What regional defense treaty, organized by Britain in 1955 to contain Soviet influence, was fiercely opposed by Egypt's Gamal Abdel Nasser as Western neo-colonialism?",
-          "q": "What regional defense treaty, organized by Britain in 1955 to contain Soviet influence, was fiercely opposed by Egypt's Gamal Abdel Nasser as Western neo-colonialism?",
+          "question": "What percentage of Mandatory Palestine did Israel control following the 1949 Rhodes Armistice Agreements (the Green Line)?",
+          "q": "What percentage of Mandatory Palestine did Israel control following the 1949 Rhodes Armistice Agreements (the Green Line)?",
           "options": [
-            "NATO",
-            "The Baghdad Pact",
-            "The Warsaw Pact",
-            "The Arab League Defense Treaty"
+            "55%",
+            "65%",
+            "78%",
+            "90%"
           ],
-          "answer": "The Baghdad Pact",
-          "a": "The Baghdad Pact",
-          "explanation": "The Baghdad Pact united Britain, Iraq, Turkey, Pakistan, and Iran. Nasser viewed Iraq's pro-Western monarchy as a traitor to Arab independence and launched a fierce propaganda war against it."
+          "answer": "78%",
+          "a": "78%",
+          "explanation": "Under the 1949 armistices negotiated by Ralph Bunche at Rhodes, Israel secured 78% of Mandatory Palestine, expanding significantly beyond the 55% allocated by UN Resolution 181."
         },
         {
           "question": "How did the United States support the young State of Israel economically in its immediate post-independence years?",
@@ -3522,7 +3352,7 @@
           "Analyze Israel’s relations with Egypt in the aftermath of the war."
         ]
       },
-      "enquiry": "What were the territorial, human, and geopolitical consequences of the 1948–49 War?",
+      "enquiry": "How was the State of Israel established and defended during the 1948–49 War, and what were its lasting consequences?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice",
@@ -4144,24 +3974,29 @@
       },
       "timeline_anchor": [
         {
+          "date": "14–15 May 1948",
+          "title": "Declaration of Israel & The Pan-Arab Invasion",
+          "desc": "David Ben-Gurion proclaims the State of Israel; hours later the British Mandate terminates at midnight and five Arab League armies invade."
+        },
+        {
+          "date": "June–July 1948",
+          "title": "The First UN Truce & Czech Arms Resupply",
+          "desc": "A four-week UN ceasefire enables Israel to import modern Czech aircraft and weaponry, consolidating the unified IDF."
+        },
+        {
           "date": "1948–1949",
           "title": "The Palestinian Nakba",
           "desc": "Between 700,000 and 750,000 Arab Palestinians are displaced from their homes, fleeing into refugee camps across Gaza, the West Bank, Lebanon, Syria, and Jordan."
         },
         {
-          "date": "Dec 1948 – Dec 1949",
-          "title": "UN Resolutions 194 & 302 (UNRWA)",
-          "desc": "UN Resolution 194 resolves that refugees wishing to return should be permitted; UNRWA is established to manage emergency refugee camps, healthcare, and schooling."
+          "date": "1949",
+          "title": "Rhodes Armistice Agreements & The Green Line",
+          "desc": "UN mediator Ralph Bunche brokers bilateral armistices establishing the Green Line, expanding Israeli control to 78% of Palestine."
         },
         {
           "date": "July 1950",
           "title": "Israel Enacts the Law of Return",
-          "desc": "The Israeli Knesset grants every Jewish person worldwide the right to immigrate to Israel and receive automatic citizenship, absorbing 680,000 immigrants in three years."
-        },
-        {
-          "date": "Oct 1953",
-          "title": "Unit 101 & The Qibya Massacre",
-          "desc": "In retaliation for cross-border Fedayeen guerrilla attacks, Ariel Sharon’s commando Unit 101 dynamites 45 houses in the West Bank village of Qibya, killing 69 civilians."
+          "desc": "The Israeli Knesset grants every Jewish person worldwide the right to immigrate to Israel and receive automatic citizenship, doubling the population."
         }
       ],
       "video": [
@@ -4211,118 +4046,138 @@
       "workbook_stages": [
         {
           "step": 1,
-          "date": "June–July 1948",
-          "heading": "The UN Ceasefire & The Czech Arms Supply",
-          "focus_clue": "How did the 4-week UN truce enable Israel to decisively shift military momentum?",
+          "date": "14–15 May 1948",
+          "heading": "The Declaration of the State of Israel & The Pan-Arab Invasion",
+          "title": "The Declaration of the State of Israel & The Pan-Arab Invasion",
+          "focus_clue": "Why did Ben-Gurion declare statehood on 14 May, and why did five Arab armies invade?",
           "words": [
             {
-              "term": "11 June 1948",
-              "clue": "On 11 June 1948, UN mediator Count Folke Bernadotte negotiated a four-week truce."
+              "term": "14 May 1948",
+              "clue": "On 14 May 1948, David Ben-Gurion read the Declaration of Independence in Tel Aviv hours before the British Mandate officially expired at midnight."
             },
             {
-              "term": "Count Folke Bernadotte",
-              "clue": "On 11 June 1948, UN mediator Count Folke Bernadotte negotiated a four-week truce."
+              "term": "David Ben-Gurion",
+              "clue": "Prime Minister David Ben-Gurion proclaimed the birth of the State of Israel, securing immediate de facto recognition from US President Harry S. Truman."
             },
             {
-              "term": "Israel Defense Forces",
-              "clue": "While the Arab League respected the truce and suffered from a British arms embargo, David Ben-Gurion utilized the pause to reorganize disparate paramilitary militias into a unified, disciplined national army: the Israel Defense Forces (IDF)."
+              "term": "Arab League",
+              "clue": "At dawn on 15 May 1948, regular armies from five Arab League nations (Egypt, Transjordan, Syria, Lebanon, and Iraq) invaded to crush the new state."
             }
           ],
-          "model_sentence": "During the temporary truce declared on <strong>11 June 1948</strong>, UN mediator <strong>Count Folke Bernadotte</strong> attempted peace negotiations while the newly organized <strong>Israel Defense Forces</strong> secretly imported Czech armaments to secure military superiority.",
-          "title": "The UN Ceasefire & The Czech Arms Supply",
-          "dates": "June–July 1948"
+          "bullets": [
+            "14 May 1948",
+            "David Ben-Gurion",
+            "Arab League invasion"
+          ],
+          "model_sentence": "On <strong>14 May 1948</strong>, Prime Minister <strong>David Ben-Gurion</strong> declared the State of Israel, provoking an immediate full-scale invasion by five <strong>Arab League</strong> armies."
         },
         {
           "step": 2,
-          "date": "1948–1949",
-          "heading": "The Palestinian Refugee Crisis (The Nakba)",
-          "focus_clue": "Why is the cause of the 1948 Palestinian refugee flight (Al-Nakba) contested?",
+          "date": "June–July 1948",
+          "heading": "The First UN Truce & The Czech Arms Supply",
+          "title": "The First UN Truce & The Czech Arms Supply",
+          "focus_clue": "How did the 4-week UN truce enable Israel to decisively shift military momentum?",
           "words": [
             {
-              "term": "Al-Nakba",
-              "clue": "The 1948–49 War resulted in an unprecedented humanitarian catastrophe for Palestinian Arab society, an event known in Arabic as Al-Nakba (\"The Catastrophe\")."
+              "term": "First Truce",
+              "clue": "In June 1948, UN mediator Count Folke Bernadotte negotiated a vital four-week ceasefire that halted combat across all fronts."
             },
             {
-              "term": "700,000 Palestinian Arabs",
-              "clue": "Between December 1947 and the 1949 armistices, over 700,000 Palestinian Arabs—representing over 80% of the Arab population living within the borders of what became Israel—fled or were expelled from their ancestral towns and villages."
+              "term": "Czech arms deal",
+              "clue": "Israel utilized the pause to break the arms embargo, importing thousands of rifles, machine guns, and fighter aircraft from Czechoslovakia with Soviet approval."
             },
             {
-              "term": "400 Arab villages",
-              "clue": "Over 400 Arab villages were systematically evacuated, abandoned, or razed."
+              "term": "IDF",
+              "clue": "Ben-Gurion unified disparate militias into the IDF, doubling troop numbers to 108,000 and launching victorious counter-offensives."
             }
           ],
-          "model_sentence": "The catastrophic displacement of <strong>Al-Nakba</strong> forced over <strong>700,000 Palestinian Arabs</strong> into permanent exile as approximately <strong>400 Arab villages</strong> were depopulated and destroyed.",
-          "title": "The Palestinian Refugee Crisis (The Nakba)",
-          "dates": "1948–1949"
+          "bullets": [
+            "First Truce",
+            "Czech arms deal",
+            "IDF"
+          ],
+          "model_sentence": "During the <strong>First Truce</strong>, Israel broke the embargo through a clandestine <strong>Czech arms deal</strong>, equipping the newly unified <strong>IDF</strong> to seize the military initiative."
         },
         {
           "step": 3,
+          "date": "1948–1949",
+          "heading": "The Palestinian Refugee Crisis (The Nakba)",
+          "title": "The Palestinian Refugee Crisis (The Nakba)",
+          "focus_clue": "Why is the cause of the 1948 Palestinian refugee flight (Al-Nakba) contested?",
+          "words": [
+            {
+              "term": "Nakba",
+              "clue": "The 1948 war caused the catastrophic displacement of Palestinian Arab society, an event remembered in Arabic as Al-Nakba ('The Catastrophe')."
+            },
+            {
+              "term": "Plan Dalet",
+              "clue": "In April 1948, Zionist forces executed Plan Dalet to secure key transport corridors, triggering widespread panic and evacuation."
+            },
+            {
+              "term": "700,000 Palestinian Arabs",
+              "clue": "Over 700,000 Palestinian Arabs fled or were expelled into refugee camps, with over 400 villages depopulated."
+            }
+          ],
+          "bullets": [
+            "Nakba",
+            "Plan Dalet",
+            "700,000 Palestinian Arabs"
+          ],
+          "model_sentence": "Known as the <strong>Nakba</strong>, the war and <strong>Plan Dalet</strong> forced over <strong>700,000 Palestinian Arabs</strong> into permanent exile across neighbouring Arab territories."
+        },
+        {
+          "step": 4,
           "date": "1949",
           "heading": "The 1949 Armistice Agreements (The Green Line)",
+          "title": "The 1949 Armistice Agreements (The Green Line)",
           "focus_clue": "How did the 1949 Green Line transform the territory allocated by the UN?",
           "words": [
             {
               "term": "Ralph Bunche",
-              "clue": "In early 1949, on the Mediterranean island of Rhodes, UN acting mediator Ralph Bunche brokered separate bilateral armistice agreements between Israel and Egypt, Lebanon, Jordan, and Syria."
+              "clue": "UN mediator Ralph Bunche conducted patient bilateral shuttle diplomacy on the island of Rhodes to secure separate armistices."
+            },
+            {
+              "term": "Rhodes",
+              "clue": "The Mediterranean island of Rhodes hosted the 1949 armistice negotiations between Israel and Egypt, Lebanon, Jordan, and Syria."
             },
             {
               "term": "Green Line",
-              "clue": "The resulting demarcation boundaries were drawn with green grease-pencils on military maps, becoming internationally known as the Green Line."
-            },
-            {
-              "term": "78% of Mandatory Palestine",
-              "clue": "Israel secured 78% of Mandatory Palestine—a 22% increase over the territorial allocation granted by UN Resolution 181."
+              "clue": "Drawn with green pencil, the armistice borders left Israel in control of 78% of Mandatory Palestine until 1967."
             }
           ],
-          "model_sentence": "Under UN mediator <strong>Ralph Bunche</strong>, the 1949 armistice established the <strong>Green Line</strong>, leaving Israel in control of <strong>78% of Mandatory Palestine</strong>.",
-          "title": "The 1949 Armistice Agreements (The Green Line)",
-          "dates": "1949"
-        },
-        {
-          "step": 4,
-          "date": "July 1950",
-          "heading": "The Israeli Law of Return",
-          "focus_clue": "How did the Law of Return transform Israel’s demographics and economy by 1953?",
-          "words": [
-            {
-              "term": "5 July 1950",
-              "clue": "On 5 July 1950, the Israeli Knesset enacted the historic Law of Return, declaring that every Jewish person anywhere in the world possessed the inherent legal right to settle in Israel and receive automatic citizenship."
-            },
-            {
-              "term": "Law of Return",
-              "clue": "On 5 July 1950, the Israeli Knesset enacted the historic Law of Return, declaring that every Jewish person anywhere in the world possessed the inherent legal right to settle in Israel and receive automatic citizenship."
-            },
-            {
-              "term": "1.4 million by 1952",
-              "clue": "Within four years of statehood, Israel’s Jewish population more than doubled, surging from 650,000 in May 1948 to over 1.4 million by 1952."
-            }
+          "bullets": [
+            "Ralph Bunche",
+            "Rhodes",
+            "Green Line"
           ],
-          "model_sentence": "Passed on <strong>5 July 1950</strong>, the historic <strong>Law of Return</strong> granted universal immigration rights to Jewish refugees worldwide, driving the population to <strong>1.4 million by 1952</strong>.",
-          "title": "The Israeli Law of Return",
-          "dates": "July 1950"
+          "model_sentence": "Brokered on the island of <strong>Rhodes</strong> by UN mediator <strong>Ralph Bunche</strong>, the 1949 armistices established the <strong>Green Line</strong>, giving Israel 78% of Mandatory Palestine."
         },
         {
           "step": 5,
-          "date": "1950–1955",
-          "heading": "Fedayeen Border Raids & Israeli Reprisals",
-          "focus_clue": "Why did cross-border infiltration trigger Sharon’s Unit 101 raid on Qibya?",
+          "date": "July 1950",
+          "heading": "The Israeli Law of Return & Demographic Surge",
+          "title": "The Israeli Law of Return & Demographic Surge",
+          "focus_clue": "How did the Law of Return transform Israel’s demographics and security by 1952?",
           "words": [
             {
-              "term": "fedayeen",
-              "clue": "By 1953, Egyptian military intelligence in Gaza began organizing, arming, and financing these infiltrators into organized guerrilla squads known as fedayeen (\"self-sacrificers\"), who carried out sabotage, planted landmines, and attacked Israeli border settlements."
+              "term": "Law of Return",
+              "clue": "Enacted on 5 July 1950, the Law of Return guaranteed every Jewish person worldwide the inherent right to settle in Israel and gain citizenship."
             },
             {
-              "term": "Unit 101",
-              "clue": "In August 1953, the IDF formed Unit 101, an elite commando unit commanded by Major Ariel Sharon."
+              "term": "David Ben-Gurion",
+              "clue": "Prime Minister David Ben-Gurion prioritised mass immigration to populate borders, rescue refugees, and build a massive army reserve."
             },
             {
-              "term": "Ariel Sharon",
-              "clue": "In August 1953, the IDF formed Unit 101, an elite commando unit commanded by Major Ariel Sharon."
+              "term": "Operation Magic Carpet",
+              "clue": "A dramatic airborne airlift that transported 49,000 Yemenite Jews to Israel, helping the Jewish population surge to 1.4 million."
             }
           ],
-          "model_sentence": "In response to cross-border infiltrations by Palestinian <strong>fedayeen</strong>, Prime Minister Ben-Gurion deployed <strong>Unit 101</strong> under Major <strong>Ariel Sharon</strong> to execute aggressive retaliatory raids such as the Qibya massacre.",
-          "title": "Fedayeen Border Raids & Israeli Reprisals",
-          "dates": "1950–1955"
+          "bullets": [
+            "Law of Return",
+            "David Ben-Gurion",
+            "Operation Magic Carpet"
+          ],
+          "model_sentence": "Passed under Prime Minister <strong>David Ben-Gurion</strong>, the historic <strong>Law of Return</strong> and airlifts like <strong>Operation Magic Carpet</strong> doubled the nation's population to 1.4 million."
         }
       ]
     },
