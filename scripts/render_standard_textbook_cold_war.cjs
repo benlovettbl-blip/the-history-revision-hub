@@ -82,10 +82,10 @@ function cleanProse(text) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'cold_war', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw =
-    raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '') +
-    '\n; cold_war_data;';
-  return vm.runInNewContext(raw);
+  const sandbox = { window: {} };
+  vm.createContext(sandbox);
+  vm.runInContext(raw, sandbox);
+  return sandbox.window.cold_war_data || sandbox.cold_war_data;
 }
 
 // Canonical unit narrative synopsis from src/unit_synopses.js

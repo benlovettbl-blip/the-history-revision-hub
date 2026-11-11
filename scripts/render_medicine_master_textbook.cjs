@@ -120,16 +120,16 @@ function cleanLessonTitle(title) {
     .trim();
 }
 
-// Load Medicine Unit Data from units/edexcel_medicine/data.js
+// Load Medicine Unit Data from data/edexcel_medicine.json or units/edexcel_medicine/data.js
 async function loadMedicineData() {
-  const dataPath = path.join(ROOT_DIR, 'units', 'edexcel_medicine', 'data.js');
-  if (!fs.existsSync(dataPath)) {
-    console.error('Data file not found:', dataPath);
-    process.exit(1);
+  const jsonPath = path.join(ROOT_DIR, 'data', 'edexcel_medicine.json');
+  if (fs.existsSync(jsonPath)) {
+    return JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
   }
-  const fileUrl = 'file:///' + dataPath.replace(/\\/g, '/');
-  const mod = await import(fileUrl);
-  return mod.default || mod.edexcel_medicine_data || mod;
+  const dataPath = path.join(ROOT_DIR, 'units', 'edexcel_medicine', 'data.js');
+  let raw = fs.readFileSync(dataPath, 'utf8');
+  raw = raw.replace(/^window\.unitData\s*=\s*/, '').replace(/;\s*$/, '');
+  return JSON.parse(raw);
 }
 
 // Narrative Overview Synopses for each Era Cover
