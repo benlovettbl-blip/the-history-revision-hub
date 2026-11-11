@@ -195,6 +195,12 @@ function ensureModalElement() {
           <span class="btn-text-desktop">Fit</span>
         </button>
 
+        <!-- Questions & Practice Sidebar Toggle -->
+        <button type="button" id="infographic-btn-toggle-drawer" style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;" title="Toggle Questions &amp; Practice Sidebar">
+          <i class="fa-solid fa-circle-question" style="color: #fde047;"></i>
+          <span class="btn-text-desktop">Questions &amp; Practice</span>
+        </button>
+
         <!-- Projector Fullscreen (F11 requestFullscreen) -->
         <button type="button" id="infographic-btn-fullscreen" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; background: #1e293b; color: #f1f5f9; border: 1px solid #334155; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;" title="Toggle Projector Fullscreen Mode">
           <i class="fa-solid fa-expand" id="infographic-fullscreen-icon"></i>
@@ -217,16 +223,16 @@ function ensureModalElement() {
         <button type="button" id="infographic-btn-prev" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(15, 23, 42, 0.8); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 5;" title="Previous (Left Arrow)"><i class="fa-solid fa-chevron-left"></i></button>
         <button type="button" id="infographic-btn-next" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(15, 23, 42, 0.8); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 5;" title="Next (Right Arrow)"><i class="fa-solid fa-chevron-right"></i></button>
 
-        <!-- Floating Quick-Toggle Button for Questions & Practice on Right Edge -->
-        <button type="button" id="infographic-floating-questions-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: #0284c7; color: #ffffff; padding: 14px 10px; border-radius: 8px 0 0 8px; border: 1.5px solid #38bdf8; border-right: none; cursor: pointer; font-weight: 700; font-size: 0.78rem; display: flex; flex-direction: column; align-items: center; gap: 8px; box-shadow: -4px 0 15px rgba(0,0,0,0.5); z-index: 6; transition: all 0.2s ease;" title="Click to open Questions & Practice sidebar">
+        <!-- Floating Quick-Toggle Button for Questions & Practice on Right Edge (Auto-shut / hidden by default) -->
+        <button type="button" id="infographic-floating-questions-btn" style="display: none !important; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: #0284c7; color: #ffffff; padding: 14px 10px; border-radius: 8px 0 0 8px; border: 1.5px solid #38bdf8; border-right: none; cursor: pointer; font-weight: 700; font-size: 0.78rem; align-items: center; gap: 8px; box-shadow: -4px 0 15px rgba(0,0,0,0.5); z-index: 6; transition: all 0.2s ease;" title="Click to open Questions & Practice sidebar">
           <i class="fa-solid fa-circle-question" style="font-size: 1.15rem; color: #fde047;"></i>
           <span style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.5px; font-family: 'Inter', sans-serif;">Questions &amp; Practice</span>
           <i class="fa-solid fa-chevron-left" style="font-size: 0.75rem;"></i>
         </button>
       </div>
 
-      <!-- Collapsible Questions & Practice Drawer -->
-      <aside id="infographic-drawer" style="width: 420px; max-width: 92vw; background: #080e1d; border-left: 1px solid #1e293b; display: flex; flex-direction: column; z-index: 8; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
+      <!-- Collapsible Questions & Practice Drawer (Auto-shut / closed by default so infographic is 100% full screen) -->
+      <aside id="infographic-drawer" style="display: none; width: 420px; max-width: 92vw; background: #080e1d; border-left: 1px solid #1e293b; flex-direction: column; z-index: 8; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
         <div style="padding: 12px 16px; background: #0f172a; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;">
           <div style="font-weight: 700; font-size: 0.9rem; color: #f8fafc; display: flex; align-items: center; gap: 8px;">
             <i class="fa-solid fa-circle-question" style="color: #fde047;"></i>
@@ -428,11 +434,11 @@ function setupModalEvents(modal) {
       if (btnToggleDrawer) {
         btnToggleDrawer.style.background = '#1e293b';
         btnToggleDrawer.style.color = '#f8fafc';
-        btnToggleDrawer.style.borderColor = '#38bdf8';
+        btnToggleDrawer.style.borderColor = '#334155';
         btnToggleDrawer.style.boxShadow = 'none';
       }
       if (drawerChevron) drawerChevron.style.transform = 'rotate(0deg)';
-      if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'flex';
+      if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'none';
     }
     setTimeout(() => {
       if (typeof window.__hubApplyWhiteboardFit === 'function') {
@@ -685,6 +691,9 @@ function setupModalEvents(modal) {
 function navigateInfographic(direction) {
   if (!currentList.length) return;
   currentIndex = (currentIndex + direction + currentList.length) % currentList.length;
+  currentItem = currentList[currentIndex];
+  // Default to poster view when cycling mats so new visual plate is immediately shown
+  currentRequestedMode = (currentItem && currentItem.image && currentItem.image.trim().length > 0) ? 'poster' : 'interactive';
   renderCurrentItem();
 }
 
@@ -755,66 +764,84 @@ function renderCurrentItem() {
   if (multiTabs) {
     if (currentList.length > 1) {
       multiTabs.style.display = 'inline-flex';
-      multiTabs.innerHTML = '';
-      currentList.forEach((item, idx) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        const isActive = idx === currentIndex;
-        btn.style.cssText = `
-          padding: 3.5px 8px;
-          font-size: 0.72rem;
-          font-weight: 700;
-          border-radius: 6px;
-          border: none;
-          cursor: pointer;
-          white-space: nowrap;
-          transition: all 0.15s ease;
-          background: ${isActive ? '#0284c7' : 'transparent'};
-          color: ${isActive ? '#ffffff' : '#94a3b8'};
-          box-shadow: ${isActive ? '0 1px 4px rgba(2, 132, 199, 0.4)' : 'none'};
-        `;
-        if (!isActive) {
+      const existingButtons = multiTabs.querySelectorAll('.infographic-switcher-tab');
+      if (existingButtons.length === currentList.length) {
+        existingButtons.forEach((btn, idx) => {
+          const isActive = idx === currentIndex;
+          btn.classList.toggle('active', isActive);
+          btn.style.background = isActive ? '#0284c7' : 'transparent';
+          btn.style.color = isActive ? '#ffffff' : '#94a3b8';
+          btn.style.boxShadow = isActive ? '0 1px 4px rgba(2, 132, 199, 0.4)' : 'none';
+        });
+      } else {
+        multiTabs.innerHTML = '';
+        currentList.forEach((item, idx) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'infographic-switcher-tab';
+          const isActive = idx === currentIndex;
+          btn.style.cssText = `
+            padding: 3.5px 8px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.15s ease;
+            background: ${isActive ? '#0284c7' : 'transparent'};
+            color: ${isActive ? '#ffffff' : '#94a3b8'};
+            box-shadow: ${isActive ? '0 1px 4px rgba(2, 132, 199, 0.4)' : 'none'};
+          `;
           btn.addEventListener('mouseenter', () => {
-            btn.style.color = '#f1f5f9';
-            btn.style.background = 'rgba(255, 255, 255, 0.06)';
+            if (!btn.classList.contains('active')) {
+              btn.style.color = '#f1f5f9';
+              btn.style.background = 'rgba(255, 255, 255, 0.08)';
+            }
           });
           btn.addEventListener('mouseleave', () => {
-            btn.style.color = '#94a3b8';
-            btn.style.background = 'transparent';
+            if (!btn.classList.contains('active')) {
+              btn.style.color = '#94a3b8';
+              btn.style.background = 'transparent';
+            }
           });
-        }
 
-        let label = `Mat ${idx + 1}`;
-        if (item.type === 'thematic_deep_dive') label = 'Depth Study';
-        else if (item.type === 'thematic_timeline') label = 'Timeline';
-        else if (item.title) {
-          let clean = item.title.split(/[:(]/)[0].replace(/^The\s+/i, '').trim();
-          if (/medical revolutions/i.test(clean)) clean = 'Revolutions';
-          else if (/public health/i.test(clean)) clean = 'Public Health';
-          else if (clean.length > 14) {
-            clean = clean.split(/\s+/).slice(0, 2).join(' ');
-            if (clean.length > 14) clean = clean.split(/\s+/)[0];
+          let label = `Mat ${idx + 1}`;
+          if (item.type === 'thematic_deep_dive') label = 'Depth Study';
+          else if (item.type === 'thematic_timeline') label = 'Timeline';
+          else if (item.title) {
+            let clean = item.title.split(/[:(]/)[0].replace(/^The\s+/i, '').trim();
+            if (/medical revolutions/i.test(clean)) clean = 'Revolutions';
+            else if (/public health/i.test(clean)) clean = 'Public Health';
+            else if (clean.length > 14) {
+              clean = clean.split(/\s+/).slice(0, 2).join(' ');
+              if (clean.length > 14) clean = clean.split(/\s+/)[0];
+            }
+            if (clean) label = clean;
           }
-          if (clean) label = clean;
-        }
 
-        btn.innerHTML = `<span style="opacity: ${isActive ? 1 : 0.65}; margin-right: 4px;">${idx + 1}.</span> ${label}`;
-        btn.title = item.title || `Switch to Mat ${idx + 1}`;
-        btn.addEventListener('click', () => {
-          currentIndex = idx;
-          currentItem = currentList[currentIndex];
-          renderCurrentItem();
+          btn.innerHTML = `<span style="opacity: 0.7; margin-right: 4px;">${idx + 1}.</span> ${label}`;
+          btn.title = item.title || `Switch to Mat ${idx + 1}`;
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentIndex === idx) return;
+            currentIndex = idx;
+            currentItem = currentList[currentIndex];
+            currentRequestedMode = (currentItem && currentItem.image && currentItem.image.trim().length > 0) ? 'poster' : 'interactive';
+            renderCurrentItem();
+          });
+          multiTabs.appendChild(btn);
         });
-        multiTabs.appendChild(btn);
-      });
+      }
     } else {
       multiTabs.style.display = 'none';
+      multiTabs.innerHTML = '';
     }
   }
 
   // Set download href if button exists
   if (downloadBtn) {
-    downloadBtn.href = currentItem.image;
+    downloadBtn.href = currentItem.image || '#';
     downloadBtn.setAttribute('download', `${currentItem.slug || 'infographic'}.webp`);
   }
 
@@ -831,11 +858,16 @@ function renderCurrentItem() {
     keyPointsList.innerHTML = '<li style="color: #94a3b8; font-style: italic;">Visual summary for classroom revision and dual-coding.</li>';
   }
 
-  // Reset transforms
+  // Reset transforms & panning state
+  isPanning = false;
   zoomLevel = 1;
   panX = 0;
   panY = 0;
+  lastPanX = 0;
+  lastPanY = 0;
   img.style.transform = `translate(0px, 0px) scale(1)`;
+  const stage = modal.querySelector('#infographic-stage');
+  if (stage) stage.style.cursor = 'grab';
   const zoomLabel = modal.querySelector('#infographic-zoom-label');
   if (zoomLabel) zoomLabel.textContent = '100%';
 
@@ -844,7 +876,6 @@ function renderCurrentItem() {
   const btnModePoster = modal.querySelector('#infographic-btn-mode-poster');
   const btnModeInteractive = modal.querySelector('#infographic-btn-mode-interactive');
   const iframe = modal.querySelector('#infographic-frame');
-  const stage = modal.querySelector('#infographic-stage');
   const zoomControls = modal.querySelector('#infographic-zoom-controls');
   const tabBtn = modal.querySelector('#infographic-btn-tab');
   const drawer = modal.querySelector('#infographic-drawer');
@@ -902,6 +933,9 @@ function renderCurrentItem() {
       if (btnModeInteractive) {
         btnModeInteractive.style.background = 'transparent';
         btnModeInteractive.style.color = '#94a3b8';
+      }
+      if (drawer && drawer.style.display !== 'flex') {
+        drawer.style.display = 'none';
       }
       stage.style.cursor = 'grab';
     }
@@ -1824,21 +1858,42 @@ export async function openInfographicModal(options) {
   const modal = ensureModalElement();
   const manifest = await getInfographicsManifest();
 
+  // Auto-shut drawer & blur bar on opening so infographic is 100% full screen
+  if (typeof window.__hubUpdateDrawerStateUI === 'function') {
+    window.__hubUpdateDrawerStateUI(false);
+  } else {
+    const drawer = modal.querySelector('#infographic-drawer');
+    if (drawer) drawer.style.display = 'none';
+    const floatingQuestionsBtn = modal.querySelector('#infographic-floating-questions-btn');
+    if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'none';
+  }
+
   currentRequestedMode =
     options && typeof options === 'object'
       ? options.initialMode || options.mode || null
       : null;
 
-  if (typeof options === 'string') {
-    // If slug passed
+  if (typeof options === 'string' || (options && options.slug && !options.items)) {
+    const slugStr = typeof options === 'string' ? options : options.slug;
     const all = Object.values(manifest).filter(Array.isArray).flat();
-    const found = all.find((i) => i.slug === options || i.image === options || (Array.isArray(i.aliases) && i.aliases.includes(options)));
+    const found = all.find((i) => i.slug === slugStr || i.image === slugStr || (Array.isArray(i.aliases) && i.aliases.includes(slugStr)));
     if (found) {
-      currentList = [found];
-      currentIndex = 0;
-      currentItem = found;
+      let siblingItems = [];
+      if (found.unit && found.lessonId) {
+        siblingItems = await getLessonInfographics(found.unit, found.lessonId);
+      }
+      if (siblingItems && siblingItems.length > 1) {
+        currentList = siblingItems;
+        const matchIdx = siblingItems.findIndex((i) => i.slug === found.slug);
+        currentIndex = matchIdx >= 0 ? matchIdx : 0;
+        currentItem = currentList[currentIndex];
+      } else {
+        currentList = [found];
+        currentIndex = 0;
+        currentItem = found;
+      }
     } else {
-      console.warn('[Infographics] Item not found for slug:', options);
+      console.warn('[Infographics] Item not found for slug:', slugStr);
       return;
     }
   } else if (Array.isArray(options)) {
@@ -1853,20 +1908,12 @@ export async function openInfographicModal(options) {
     currentList = [options.item];
     currentIndex = 0;
     currentItem = options.item;
-  } else if (options && options.slug) {
-    const all = Object.values(manifest).filter(Array.isArray).flat();
-    const found = all.find((i) => i.slug === options.slug);
-    if (found) {
-      currentList = options.items || [found];
-      currentIndex = currentList.indexOf(found) >= 0 ? currentList.indexOf(found) : 0;
-      currentItem = found;
-    }
   } else if (options && options.unitId && options.lessonId) {
     const lessonItems = await getLessonInfographics(options.unitId, options.lessonId);
     if (lessonItems.length > 0) {
       currentList = lessonItems;
-      currentIndex = 0;
-      currentItem = lessonItems[0];
+      currentIndex = options.startIndex || 0;
+      currentItem = currentList[currentIndex] || lessonItems[0];
     } else {
       console.warn('[Infographics] No items found for lesson:', options.lessonId);
       return;

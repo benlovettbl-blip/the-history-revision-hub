@@ -5,6 +5,8 @@ const puppeteer = require('puppeteer');
 const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
+const SHOAH_DATA_PATH = path.join(ROOT_DIR, 'data', 'the_shoah.json');
+const SHOAH_DATA = fs.existsSync(SHOAH_DATA_PATH) ? JSON.parse(fs.readFileSync(SHOAH_DATA_PATH, 'utf8')) : null;
 
 function getBase64Image(relPath) {
   if (!relPath) return null;
@@ -483,6 +485,20 @@ const enquiryConfigs = [
       'Raphael Lemkin lost 49 family members in the Shoah; he devoted his life to ensuring international law recognized the crime of Genocide.',
   },
 ];
+
+// Single Source of Truth: automatically sync titles, enquiry questions, and 5 stages from data/the_shoah.json
+if (SHOAH_DATA && Array.isArray(SHOAH_DATA.lessons)) {
+  enquiryConfigs.forEach((cfg) => {
+    const lesson = SHOAH_DATA.lessons.find((l) => l.id === cfg.id);
+    if (lesson) {
+      if (lesson.title) cfg.title = lesson.title;
+      if (lesson.enquiry || lesson.enquiryQuestion) cfg.enquiryQuestion = lesson.enquiry || lesson.enquiryQuestion;
+      if (Array.isArray(lesson.workbook_stages) && lesson.workbook_stages.length > 0) {
+        cfg.stages = lesson.workbook_stages;
+      }
+    }
+  });
+}
 
 // ============================================================================
 // HELPER RENDERERS
@@ -1310,7 +1326,6 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
             </div>
           </div>
         </div>
@@ -1351,7 +1366,6 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
             </div>
           </div>
         </div>
@@ -1388,7 +1402,6 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 3</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
@@ -1465,7 +1478,6 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
             </div>
           </div>
         </div>
@@ -1506,7 +1518,6 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
             </div>
           </div>
         </div>
@@ -1543,7 +1554,6 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 7</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
               <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
@@ -1837,70 +1847,55 @@ function renderBackCover() {
             Years 7–9 Standards
           </span>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 6.6pt; line-height: 1.25;">
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
           
           <!-- Emerging (1–2) -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
-                Emerging (1–2)
-              </div>
-              Recalls key facts, dates, and people; describes what happened using simple sentences or writing frames.
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
+            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
+              Emerging (1–2)
             </div>
-            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
-              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Remembers basic names, dates, and keywords when supported with prompts.
+            <div style="color: #000000;">
+              Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
             </div>
           </div>
 
           <!-- Emerging+ (3) -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
-                Emerging+ (3)
-              </div>
-              Explains reasons why events happened; begins to describe causes and consequences using clear historical examples.
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
+            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
+              Emerging+ (3)
             </div>
-            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
-              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Remembers why events happened; explains causes and consequences using clear examples.
+            <div style="color: #000000;">
+              Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
             </div>
           </div>
 
           <!-- Expected (4–5) -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
-                Expected (4–5)
-              </div>
-              Explains multiple causes and consequences in clear paragraphs using precise historical vocabulary.
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
+            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
+              Expected (4–5)
             </div>
-            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
-              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Securely recalls vocabulary, dates, and multi-step causes from previous weeks.
+            <div style="color: #000000;">
+              Constructs structured paragraphs explaining multiple causes and consequences; substantiates arguments with precise historical dates, key terms, and named figures.
             </div>
           </div>
 
           <!-- Expected+ (6–7) -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
-                Expected+ (6–7)
-              </div>
-              Weighs up different causes and historical viewpoints; explains why certain factors mattered more using evidence.
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
+            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
+              Expected+ (6–7)
             </div>
-            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
-              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Independently retrieves detailed evidence and connects factors across the whole unit.
+            <div style="color: #000000;">
+              Weighs competing factors and perspectives; explains why certain causes were more decisive than others using detailed, accurate evidence across the unit.
             </div>
           </div>
 
           <!-- Greater Depth (8–9) -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="font-weight: 900; font-size: 6.8pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2.5px;">
-                Greater Depth (8–9)
-              </div>
-              Reaches a convincing, well-argued overall judgement; explains how long-term causes and turning points connect.
+          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
+            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
+              Greater Depth (8–9)
             </div>
-            <div style="margin-top: 3px; font-size: 6.1pt; font-style: italic; border-top: 1px dashed #000000; padding-top: 2px; color: #000000;">
-              <strong style="color: #000000; font-style: normal;">Recall &amp; Retention:</strong> Effortlessly retrieves long-term schema; connects prior units and eras to present topics.
+            <div style="color: #000000;">
+              Crafts sustained, analytically rigorous arguments reaching a substantiated historical judgement; masterfully synthesizes evidence across the unit to evaluate complex turning points and long-term significance.
             </div>
           </div>
 

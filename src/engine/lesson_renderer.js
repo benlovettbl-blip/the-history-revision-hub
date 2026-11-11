@@ -2158,19 +2158,30 @@ if (typeof window !== 'undefined') {
   };
 
   window.switchLaunchpadMat = function (btn, lessonId, matIndex) {
-    const container = btn.closest('.launchpad-infographic-panel-content');
+    if (!btn) return;
+    const targetBtn = btn.closest('.launchpad-mat-switch-btn') || btn;
+    const container = targetBtn.closest('.launchpad-infographic-panel-content') || document.querySelector('.launchpad-infographic-panel-content');
     if (!container) return;
+    const targetIndex = typeof matIndex === 'number' ? matIndex : parseInt(targetBtn.getAttribute('data-mat-index') || '0', 10);
     const allBtns = container.querySelectorAll('.launchpad-mat-switch-btn');
     const allPanels = container.querySelectorAll('.launchpad-mat-item');
     allBtns.forEach((b, idx) => {
-      const active = idx === matIndex;
+      const active = idx === targetIndex;
       b.classList.toggle('active', active);
       b.style.background = active ? '#0284c7' : '#ffffff';
       b.style.color = active ? '#ffffff' : '#334155';
       b.style.borderColor = active ? '#0284c7' : '#cbd5e1';
+      b.style.boxShadow = active ? '0 1px 4px rgba(2, 132, 199, 0.35)' : 'none';
     });
     allPanels.forEach((p, idx) => {
-      p.style.display = idx === matIndex ? 'block' : 'none';
+      const isTarget = idx === targetIndex;
+      p.style.display = isTarget ? 'block' : 'none';
+      if (isTarget) {
+        const iframe = p.querySelector('iframe[data-src]');
+        if (iframe && (!iframe.src || iframe.src === 'about:blank')) {
+          iframe.src = iframe.getAttribute('data-src');
+        }
+      }
     });
   };
 }
@@ -2861,6 +2872,8 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
               data-mat-index="${idx}"
               data-lesson-id="${lessonId}"
               onclick="if(window.switchLaunchpadMat){window.switchLaunchpadMat(this, '${lessonId}', ${idx});}"
+              onmouseenter="if(!this.classList.contains('active')){this.style.background='#f0f9ff'; this.style.borderColor='#38bdf8';}"
+              onmouseleave="if(!this.classList.contains('active')){this.style.background='#ffffff'; this.style.borderColor='#cbd5e1';}"
               style="padding: 5px 12px; font-size: 0.78rem; font-weight: 700; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border: 1.2px solid ${idx === 0 ? '#0284c7' : '#cbd5e1'}; background: ${idx === 0 ? '#0284c7' : '#ffffff'}; color: ${idx === 0 ? '#ffffff' : '#334155'}; transition: all 0.15s ease; white-space: nowrap;">
               <i class="fa-solid fa-image" style="font-size: 0.74rem;"></i>
               <span>Mat ${idx + 1}: ${cleanTitle}</span>
@@ -2898,7 +2911,7 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
                 </a>
                 <button type="button"
-                  onclick="if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
+                  onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lessonId}', '${effectiveUnitId}', { startIndex: ${idx} });}else if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
                   style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;"
                   title="Open in expanded modal viewer">
                   <i class="fa-solid fa-expand"></i> Fullscreen
@@ -2936,7 +2949,7 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; align-items: start;">
             <!-- Visual Plate -->
             <div style="display: flex; flex-direction: column; gap: 8px;">
-              <div onclick="if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
+              <div onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lessonId}', '${effectiveUnitId}', { startIndex: ${idx} });}else if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
                 title="Click to view full-resolution interactive lightbox with zoom & pan"
                 style="cursor: zoom-in; position: relative; border-radius: 8px; overflow: hidden; border: 1.5px solid #cbd5e1; background: #0b1120; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: all 0.2s ease;"
                 onmouseover="this.style.borderColor='#38bdf8'; this.style.boxShadow='0 6px 20px rgba(2,132,199,0.2)';"
@@ -2975,7 +2988,7 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
               </div>
 
               <button type="button"
-                onclick="if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
+                onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lessonId}', '${effectiveUnitId}', { startIndex: ${idx} });}else if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
                 style="width: 100%; padding: 10px 16px; background: linear-gradient(135deg, #0284c7 0%, #1e40af 100%); color: #ffffff; border: none; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25); transition: all 0.15s ease;"
                 onmouseover="this.style.boxShadow='0 4px 12px rgba(2, 132, 199, 0.4)'; this.style.transform='translateY(-1px)';"
                 onmouseout="this.style.boxShadow='0 2px 8px rgba(2, 132, 199, 0.25)'; this.style.transform='translateY(0)';">
