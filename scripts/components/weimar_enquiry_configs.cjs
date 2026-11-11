@@ -560,9 +560,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "1930–1932",
           "title": "The Communist Threat & Polarisation",
           "bullets": [
-            "Joseph Goebbels propaganda",
-            "'Hitler over Germany' flights",
-            "Radio & mass posters"
+            "Fear of Communist revolution",
+            "Mittelstand small-business appeal",
+            "Industrialist financial backing"
           ],
           "focusClue": "How did fear of a Communist revolution drive middle-class voters toward the Nazis?"
         },
@@ -570,9 +570,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "1930–1932",
           "title": "Goebbels & Modern Propaganda Campaigns",
           "bullets": [
-            "Mittelstand small-business appeal",
-            "Fear of Communist revolution",
-            "Industrialist financial backing"
+            "Joseph Goebbels propaganda",
+            "'Hitler over Germany' flights",
+            "Radio & mass posters"
           ],
           "focusClue": "What innovative propaganda methods created an impression of dynamic national movement?"
         },
@@ -708,7 +708,7 @@ const WEIMAR_ENQUIRY_CONFIGS = {
       "stages": [
         {
           "dates": "27 Feb 1933",
-          "title": "The Reichstag Fire & Emergency Decree",
+          "title": "The Reichstag Fire (Feb 1933)",
           "bullets": [
             "Reichstag Fire (Feb 1933)",
             "Marinus van der Lubbe",
@@ -717,24 +717,24 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "focusClue": "How was the arson used as a pretext to destroy constitutional rights?"
         },
         {
-          "dates": "23 Mar 1933",
-          "title": "The Enabling Act",
+          "dates": "28 Feb 1933",
+          "title": "The Reichstag Fire Decree (Feb 1933)",
           "bullets": [
             "Reichstag Fire Decree",
             "Habeas corpus suspended",
             "Mass Communist arrests"
           ],
-          "focusClue": "Why did the Enabling Act effectively end parliamentary democracy in Germany?"
+          "focusClue": "How did the emergency decree suspend civil liberties and destroy opposition?"
         },
         {
-          "dates": "May–Jul 1933",
-          "title": "Gleichschaltung (Co-ordination of State & Society)",
+          "dates": "23 Mar 1933",
+          "title": "The Enabling Act (Mar 1933)",
           "bullets": [
             "1933 Enabling Act",
             "Kroll Opera House vote",
             "Reichstag powers surrendered"
           ],
-          "focusClue": "How did Gleichschaltung dismantle independent social and political bodies?"
+          "focusClue": "Why did the Enabling Act effectively end parliamentary democracy in Germany?"
         },
         {
           "dates": "30 Jun 1934",
