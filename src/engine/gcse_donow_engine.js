@@ -1152,6 +1152,25 @@ export function renderGcseDoNowPanelHTML({
 
   return `
     <div class="donow-panel-content gcse-3mode-donow" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}" data-is-ks3="${isKs3Effective ? 'true' : 'false'}">
+      <!-- Fullscreen Whiteboard Presentation Top Bar (Active only in Whiteboard mode) -->
+      <div class="donow-presentation-top-bar">
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <span class="donow-pres-badge"><i class="fa-solid fa-chalkboard-user"></i> Whiteboard Mode</span>
+          <span style="font-size: 0.78rem; color: #cbd5e1; font-weight: 600;" id="donow-pres-subtitle-mirror">${result.subtitle}</span>
+        </div>
+        <div class="donow-pres-center">
+          <span class="donow-pres-hint"><kbd>Space</kbd> or <kbd>&rarr;</kbd> Clicker: Reveal Next &bull; <kbd>R</kbd>: Reveal All &bull; <kbd>Esc</kbd>: Exit</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button type="button" class="btn-donow-pres-reveal-all" onclick="event.stopPropagation(); window.toggleDoNowAllAnswers();" title="Toggle reveal/hide all answers (Key 'R')">
+            <i class="fa-solid fa-eye"></i> Reveal All
+          </button>
+          <button type="button" class="btn-donow-pres-exit" onclick="event.stopPropagation(); window.toggleDoNowPresentationMode(false);" title="Exit Whiteboard Mode (Esc)">
+            <i class="fa-solid fa-compress"></i> Exit (Esc)
+          </button>
+        </div>
+      </div>
+
       ${headerHtml}
 
       <!-- Scope Control Deck with Timer on the Right -->
@@ -1237,6 +1256,15 @@ export function renderGcseDoNowPanelHTML({
             title="Roll a fresh randomized set of questions for this scope"
             style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0369a1; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
             <i class="fa-solid fa-arrows-rotate" style="color: #0284c7;"></i> Shuffle
+          </button>
+
+          <button type="button"
+            class="btn-donow-presentation"
+            id="btn-donow-presentation-toggle"
+            onclick="event.stopPropagation(); window.toggleDoNowPresentationMode();"
+            title="Full-Screen Whiteboard Presentation Mode (Press 'P' or 'F')"
+            style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0f172a; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
+            <i class="fa-solid fa-expand" style="color: #0284c7;"></i> Whiteboard
           </button>
         </div>
 
@@ -1506,6 +1534,10 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       const subTextEl = document.getElementById('donow-mode-subtitle-text');
       if (subTextEl) subTextEl.innerHTML = result.subtitle;
 
+      // Update subtitle mirror in presentation top bar
+      const presSubMirror = document.getElementById('donow-pres-subtitle-mirror');
+      if (presSubMirror) presSubMirror.innerHTML = result.subtitle;
+
       // Update rows container
       const rowsContainer = document.getElementById('donow-rows-container');
       if (rowsContainer) {
@@ -1519,4 +1551,202 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       }
     }
   };
+
+  window.revealNextDoNowAnswer = function () {
+    if (typeof document === 'undefined') return false;
+    const panel = document.querySelector('.donow-panel-content');
+    if (!panel) return false;
+    const rows = panel.querySelectorAll('.donow-sentence-row');
+    for (let i = 0; i < rows.length; i++) {
+      const row = rows[i];
+      const ans = row.querySelector('.answer');
+      const isHidden = !row.classList.contains('revealed') || (ans && (ans.style.display === 'none' || !ans.style.display));
+      if (isHidden) {
+        row.classList.add('revealed');
+        if (ans) ans.style.display = 'block';
+        row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        return true;
+      }
+    }
+    return false;
+  };
+
+  window.hidePreviousDoNowAnswer = function () {
+    if (typeof document === 'undefined') return false;
+    const panel = document.querySelector('.donow-panel-content');
+    if (!panel) return false;
+    const rows = panel.querySelectorAll('.donow-sentence-row');
+    for (let i = rows.length - 1; i >= 0; i--) {
+      const row = rows[i];
+      const ans = row.querySelector('.answer');
+      const isRevealed = row.classList.contains('revealed') || (ans && ans.style.display !== 'none');
+      if (isRevealed) {
+        row.classList.remove('revealed');
+        if (ans) ans.style.display = 'none';
+        row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        return true;
+      }
+    }
+    return false;
+  };
+
+  window.toggleDoNowAllAnswers = function () {
+    if (typeof document === 'undefined') return;
+    const panel = document.querySelector('.donow-panel-content');
+    if (!panel) return;
+    const rows = panel.querySelectorAll('.donow-sentence-row');
+    if (rows.length === 0) return;
+
+    const anyUnrevealed = Array.from(rows).some((r) => {
+      const ans = r.querySelector('.answer');
+      return !r.classList.contains('revealed') || (ans && (ans.style.display === 'none' || !ans.style.display));
+    });
+
+    rows.forEach((r) => {
+      const ans = r.querySelector('.answer');
+      if (anyUnrevealed) {
+        r.classList.add('revealed');
+        if (ans) ans.style.display = 'block';
+      } else {
+        r.classList.remove('revealed');
+        if (ans) ans.style.display = 'none';
+      }
+    });
+
+    const presRevealBtn = panel.querySelector('.btn-donow-pres-reveal-all');
+    if (presRevealBtn) {
+      presRevealBtn.innerHTML = anyUnrevealed
+        ? '<i class="fa-solid fa-eye-slash"></i> Hide All'
+        : '<i class="fa-solid fa-eye"></i> Reveal All';
+    }
+
+    const mainRevealBtn = document.querySelector('[data-action="toggle-all-answers"]');
+    if (mainRevealBtn) {
+      mainRevealBtn.innerHTML = anyUnrevealed
+        ? '<i class="fa-solid fa-eye-slash" style="color: #0284c7; font-size: 0.72rem;"></i> <span>Hide All Answers</span>'
+        : '<i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i> <span>Reveal All Answers</span>';
+    }
+  };
+
+  window.toggleDoNowPresentationMode = function (forceState = null) {
+    if (typeof document === 'undefined') return;
+    const panel = document.querySelector('.donow-panel-content');
+    if (!panel) return;
+
+    const isCurrentlyPres = panel.classList.contains('donow-presentation-mode');
+    const enable = forceState !== null ? forceState : !isCurrentlyPres;
+
+    const btn = document.getElementById('btn-donow-presentation-toggle');
+
+    if (enable) {
+      panel.classList.add('donow-presentation-mode');
+      if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-compress" style="color: #ffffff;"></i> Exit (Esc)';
+        btn.classList.add('active');
+        btn.style.background = '#0284c7';
+        btn.style.color = '#ffffff';
+      }
+
+      // Try native browser fullscreen if supported
+      try {
+        if (!document.fullscreenElement) {
+          if (panel.requestFullscreen) {
+            panel.requestFullscreen().catch(() => {});
+          } else if (panel.webkitRequestFullscreen) {
+            panel.webkitRequestFullscreen();
+          }
+        }
+      } catch (e) {}
+    } else {
+      panel.classList.remove('donow-presentation-mode');
+      if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-expand" style="color: #0284c7;"></i> Whiteboard';
+        btn.classList.remove('active');
+        btn.style.background = 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)';
+        btn.style.color = '#0f172a';
+      }
+
+      // Exit native browser fullscreen if active
+      try {
+        if (document.fullscreenElement) {
+          if (document.exitFullscreen) {
+            document.exitFullscreen().catch(() => {});
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          }
+        }
+      } catch (e) {}
+    }
+  };
+
+  if (typeof window !== 'undefined' && !window._donowKeyHandlerAttached) {
+    window._donowKeyHandlerAttached = true;
+
+    window.addEventListener('keydown', (e) => {
+      const target = e.target;
+      const tag = target?.tagName?.toLowerCase();
+      if (tag === 'input' || tag === 'textarea' || tag === 'select' || target?.isContentEditable) {
+        return;
+      }
+
+      const panel = document.querySelector('.donow-panel-content');
+      if (!panel) return;
+
+      const isPresMode = panel.classList.contains('donow-presentation-mode');
+      const rect = panel.getBoundingClientRect();
+      const isVisibleOnScreen = isPresMode || (rect.top < window.innerHeight && rect.bottom > 0);
+      if (!isVisibleOnScreen) return;
+
+      const key = e.key;
+      const code = e.code;
+
+      // Presenter Clicker Next: Space, PageDown, ArrowRight, ArrowDown
+      if (code === 'Space' || key === 'PageDown' || key === 'ArrowRight' || key === 'ArrowDown') {
+        if (code === 'Space' || key === 'PageDown') {
+          e.preventDefault();
+        }
+        window.revealNextDoNowAnswer();
+        return;
+      }
+
+      // Presenter Clicker Back: PageUp, ArrowLeft, ArrowUp
+      if (key === 'PageUp' || key === 'ArrowLeft' || key === 'ArrowUp') {
+        if (key === 'PageUp') {
+          e.preventDefault();
+        }
+        window.hidePreviousDoNowAnswer();
+        return;
+      }
+
+      // Reveal All toggle: 'r' or 'R'
+      if ((key === 'r' || key === 'R') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        window.toggleDoNowAllAnswers();
+        return;
+      }
+
+      // Presentation Mode toggle: 'p' or 'P' or 'f' or 'F'
+      if ((key === 'p' || key === 'P' || key === 'f' || key === 'F') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        window.toggleDoNowPresentationMode();
+        return;
+      }
+
+      // Escape key to exit presentation mode
+      if (key === 'Escape' && isPresMode) {
+        e.preventDefault();
+        window.toggleDoNowPresentationMode(false);
+        return;
+      }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+      const panel = document.querySelector('.donow-panel-content');
+      if (!panel) return;
+      const isFs = !!document.fullscreenElement;
+      if (!isFs && panel.classList.contains('donow-presentation-mode')) {
+        window.toggleDoNowPresentationMode(false);
+      }
+    });
+  }
 }
