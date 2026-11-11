@@ -10359,7 +10359,7 @@ export function renderLesson(lesson) {
             </div>
           `;
         } else if (isCausation12) {
-          const causationPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q4' : unitId === 'eee' ? 'Paper 2 Q2' : 'Paper 3 Q2';
+          const causationPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q5/Q6' : unitId === 'eee' ? 'Paper 2 Q2' : 'Paper 3 Q2';
           stampHtml = `
             <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #0369a1; border-radius: 8px; background: #f0f9ff; padding: 12px 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #bae6fd; padding-bottom: 6px;">
@@ -10390,37 +10390,78 @@ export function renderLesson(lesson) {
           `;
         } else if (isVerdict16) {
           const isThematicEssay = unitId === 'edexcel_medicine' || unitId === 'eee';
-          const verdictPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q5/Q6' : unitId === 'eee' ? 'Paper 2 Q3/Q4' : 'Paper 3 Q3d';
-          stampHtml = `
-            <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #7c3aed; border-radius: 8px; background: #faf5ff; padding: 12px 16px;">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #e9d5ff; padding-bottom: 6px;">
-                <span style="font-weight: 800; font-size: 0.92rem; color: #6b21a8; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-scale-unbalanced-flip" style="margin-right: 6px;"></i> Edexcel 16-Mark Evaluative Verdict Structure Strip (${verdictPaperLabel})</span>
-                <span style="background: #7c3aed; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[${unitId === 'eee' ? '16 marks' : '16+4 SPaG'} &bull; 25 mins]</span>
-              </div>
-              <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
-                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V1</span>
-                <div><strong>Interpretation 2 (Core Focus):</strong> Evaluate the named interpretation’s claim, citing specific details from the extract and deploying precise contextual knowledge to test its validity.</div>
-                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V2</span>
-                <div><strong>Interpretation 1 (Counter-Perspective):</strong> Evaluate the alternative interpretation, deploying supporting evidence from the text and precise contextual knowledge to provide balance.</div>
-                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V3</span>
-                <div><strong>How Views Are Conveyed (Level 4 Key):</strong> Analyse <em>how</em> the authors convey different views through tone, emphasis, or selection of historical evidence.</div>
-                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V4</span>
-                <div><strong>Substantiated Historical Verdict:</strong> Provide a sustained overall judgement based on reasoned criteria (e.g. short-term vs long-term, scale of impact). Deploy specialist terminology for the full 4 marks SPaG.</div>
-                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #f3e8ff; border-left: 3px solid #7c3aed; border-radius: 4px; font-size: 0.8rem; color: #6b21a8; font-weight: 600;">
-                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (Level 4 Discriminator):</strong> Top marks require explicitly showing <em>how</em> the different views are conveyed (tone/language/selection). Use specialist vocabulary (e.g. <em>hyperinflation, putsch, Reichstag, segregation</em>) to secure 4/4 SPaG.
+          if (isThematicEssay) {
+            const verdictPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q7/Q8' : 'Paper 2 Q3/Q4';
+            const marksLabel = unitId === 'eee' ? '16 marks &bull; 25 mins' : '16+4 SPaG &bull; 25 mins';
+            const examinerTipHtml =
+              unitId === 'edexcel_medicine'
+                ? `You <strong>CANNOT</strong> reach Level 4 without bringing in substantial historical evidence from beyond the stimulus points! Zero marks are awarded for pure narrative storytelling; your conclusion must weigh the factors against clear criteria rather than simply stating "both were equally important". Deploy precise medical terminology (e.g. <em>laparotomy, computed tomography, epidemiology, non-invasive, carcinogens</em>) to secure the full 4/4 SPaG.`
+                : `Level 4 requires evaluating both sides and introducing precise own knowledge beyond the stimulus points. Reach a justified conclusion showing which factor was most decisive. Use precise Tudor terminology (e.g. <em>Privy Council, royal prerogative, recusancy, vestments, privateering</em>).`;
+
+            stampHtml = `
+              <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #7c3aed; border-radius: 8px; background: #faf5ff; padding: 12px 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #e9d5ff; padding-bottom: 6px;">
+                  <span style="font-weight: 800; font-size: 0.92rem; color: #6b21a8; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-scale-unbalanced-flip" style="margin-right: 6px;"></i> Edexcel 16-Mark Evaluative Essay Structure Strip (${verdictPaperLabel})</span>
+                  <span style="background: #7c3aed; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[${marksLabel}]</span>
                 </div>
-                ${
-                  q.examiner_tip
-                    ? `
-                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
-                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E1</span>
+                  <div><strong>Named Factor (Statement Focus) [PEEL]:</strong> Evaluate the specific factor named in the prompt using the first stimulus point and detailed historical evidence. Explain the mechanism and extent of its impact.</div>
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E2</span>
+                  <div><strong>Counter-Factor (Alternative View) [PEEL]:</strong> Evaluate an alternative or contrasting factor using the second stimulus point and precise contextual knowledge to provide a balanced argument.</div>
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E3</span>
+                  <div><strong>Own-Knowledge Factor (Level 4 Ceiling Requirement) [PEEL]:</strong> Introduce and analyze a third distinct historical factor entirely from own knowledge (essential ceiling requirement to access Level 4!).</div>
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E4</span>
+                  <div><strong>Criteria-Led Historical Verdict:</strong> Reach a sustained, nuanced judgment answering <em>"How far do you agree?"</em> using explicit weighing criteria (e.g. immediate acute clinical treatment vs long-term population-wide prevention; scale vs durability of impact).</div>
+                  <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #f3e8ff; border-left: 3px solid #7c3aed; border-radius: 4px; font-size: 0.8rem; color: #6b21a8; font-weight: 600;">
+                    <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (Level 4 Discriminator):</strong> ${examinerTipHtml}
                   </div>
-                `
-                    : ''
-                }
+                  ${
+                    q.examiner_tip
+                      ? `
+                    <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                      <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                    </div>
+                  `
+                      : ''
+                  }
+                </div>
               </div>
-            </div>
-          `;
+            `;
+          } else {
+            // Paper 3 Q3(d) Interpretations Evaluative Essay (Weimar Germany & USA 1954–1975)
+            const verdictPaperLabel = 'Paper 3 Q3d';
+            stampHtml = `
+              <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #7c3aed; border-radius: 8px; background: #faf5ff; padding: 12px 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #e9d5ff; padding-bottom: 6px;">
+                  <span style="font-weight: 800; font-size: 0.92rem; color: #6b21a8; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-scale-unbalanced-flip" style="margin-right: 6px;"></i> Edexcel 16-Mark Evaluative Verdict Structure Strip (${verdictPaperLabel})</span>
+                  <span style="background: #7c3aed; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[16+4 SPaG &bull; 25 mins]</span>
+                </div>
+                <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V1</span>
+                  <div><strong>Interpretation 2 (Core Focus):</strong> Evaluate the named interpretation’s claim, citing specific details from the extract and deploying precise contextual knowledge to test its validity.</div>
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V2</span>
+                  <div><strong>Interpretation 1 (Counter-Perspective):</strong> Evaluate the alternative interpretation, deploying supporting evidence from the text and precise contextual knowledge to provide balance.</div>
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V3</span>
+                  <div><strong>How Views Are Conveyed (Level 4 Key):</strong> Analyse <em>how</em> the authors convey different views through tone, emphasis, or selection of historical evidence.</div>
+                  <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V4</span>
+                  <div><strong>Substantiated Historical Verdict:</strong> Provide a sustained overall judgement based on reasoned criteria (e.g. short-term vs long-term, scale of impact). Deploy specialist terminology for the full 4 marks SPaG.</div>
+                  <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #f3e8ff; border-left: 3px solid #7c3aed; border-radius: 4px; font-size: 0.8rem; color: #6b21a8; font-weight: 600;">
+                    <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (Level 4 Discriminator):</strong> Top marks require explicitly showing <em>how</em> the different views are conveyed (tone/language/selection). Use specialist vocabulary (e.g. <em>hyperinflation, putsch, Reichstag, segregation</em>) to secure 4/4 SPaG.
+                  </div>
+                  ${
+                    q.examiner_tip
+                      ? `
+                    <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                      <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                    </div>
+                  `
+                      : ''
+                  }
+                </div>
+              </div>
+            `;
+          }
         } else if (isInterpDiff) {
           stampHtml = `
             <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #8b5cf6; border-radius: 8px; background: #f5f3ff; padding: 12px 16px;">
