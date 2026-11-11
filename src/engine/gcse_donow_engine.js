@@ -533,42 +533,6 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
 
   const isCme = activeUnit?.id === 'cme_new' || currentLesson?.unitId === 'cme_new';
 
-  // CME Special Case: Lesson 1 (KT 1.0) is a pre-1945 intro lesson.
-  // The actual GCSE 1945–1995 specification begins on Lesson 2 (KT 1.1).
-  // Therefore, for Lesson 2 in CME, treat it as the foundational specification baseline (do NOT pull from intro lesson 1).
-  if (isCme && currentIndex === 1) {
-    const baseItems =
-      currentLesson.do_now?.items ||
-      currentLesson.do_now?.questions ||
-      currentLesson.do_now?.tasks ||
-      (Array.isArray(currentLesson.do_now) ? currentLesson.do_now : []);
-    const items = baseItems
-      .map((it) => {
-        const stage = findMatchingBlockIndex(it, currentLesson.narrative_blocks);
-        return extractCleanQA(it, 'Foundational', 2, currentLesson.title, activeUnit?.id, stage);
-      })
-      .filter(Boolean);
-
-    if (items.length < count && Array.isArray(currentLesson.quiz)) {
-      currentLesson.quiz.forEach((q) => {
-        const stage = findMatchingBlockIndex(q, currentLesson.narrative_blocks);
-        const qa = extractCleanQA(q, 'Foundational', 2, currentLesson.title, activeUnit?.id, stage);
-        if (qa && !items.some((it) => it.question === qa.question)) {
-          qa.unitId = activeUnit?.id || '';
-          items.push(qa);
-        }
-      });
-    }
-
-    const finalItems = (seed !== null ? shuffleArray(items, seed) : items).slice(0, count);
-    return {
-      mode: 'previous',
-      subtitle: `Lesson 2: Specification Baseline • ${finalItems.length} Core Baseline Questions`,
-      questions: finalItems,
-      isLessonOne: true,
-    };
-  }
-
   // Lesson 1 edge case: No prior lesson in unit. Fallback to foundational baseline items.
   if (currentIndex <= 0) {
     const baseItems =

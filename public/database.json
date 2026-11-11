@@ -16356,44 +16356,44 @@
           "instructions": "Answer these questions in full sentences.",
           "items": [
             {
-              "question": "Approximately how many European Holocaust survivors were living in Displaced Persons camps in 1945 seeking refuge in Palestine?",
-              "answer": "Over 250,000 survivors"
+              "q": "Which major collapsing empire ruled Palestine and the Middle East for over 400 years until its defeat in the First World War?",
+              "a": "The Ottoman Empire"
             },
             {
-              "question": "Why was the British post-war government under Clement Attlee desperate to end its military commitments in Palestine by 1947?",
-              "answer": "Britain was virtually bankrupt after World War Two and faced severe economic rationing at home"
+              "q": "In the 1915–16 McMahon-Hussein Correspondence, what did the British High Commissioner promise to Sharif Hussein of Mecca in exchange for an Arab revolt against the Turks?",
+              "a": "British support for independent Arab states across the Middle East"
             },
             {
-              "question": "Which main Jewish underground defence militia, founded in 1920, cooperated in armed resistance against British forces after 1945?",
-              "answer": "The Haganah"
+              "q": "Which secret 1916 treaty between Britain and France planned to carve up Ottoman Arab territories into imperial spheres of influence?",
+              "a": "The Sykes-Picot Agreement"
             },
             {
-              "question": "Which militant Zionist underground group led by Menachem Begin carried out armed attacks against British administration targets?",
-              "answer": "The Irgun (Etzel)"
+              "q": "In which November 1917 public declaration did the British government express official support for the establishment of a 'national home for the Jewish people' in Palestine?",
+              "a": "The Balfour Declaration"
             },
             {
-              "question": "In July 1946, which Jerusalem building housing British military and administrative headquarters was bombed by the Irgun?",
-              "answer": "The King David Hotel"
+              "q": "Which international organization officially assigned Britain the Mandate to administer Palestine in 1922?",
+              "a": "The League of Nations"
             },
             {
-              "question": "How many British, Arab, and Jewish administrative personnel were killed in the July 1946 King David Hotel bombing?",
-              "answer": "91 people"
+              "q": "What political ideology and movement, founded by Theodor Herzl in the late 19th century, campaigned for a sovereign Jewish homeland in Palestine?",
+              "a": "Zionism"
             },
             {
-              "question": "Which immigrant ship carrying 4,500 Holocaust survivors was intercepted by the Royal Navy in 1947 and forcibly returned to Europe?",
-              "answer": "The SS Exodus"
+              "q": "What major 1936–1939 uprising was launched by Palestinian Arabs against British rule and growing Jewish immigration?",
+              "a": "The Arab Revolt (The Great Revolt)"
             },
             {
-              "question": "In February 1947, which international body did British Foreign Secretary Ernest Bevin hand the Palestine problem over to?",
-              "answer": "The United Nations (UN)"
+              "q": "Which 1937 British royal commission first recommended partitioning Palestine into separate Arab and Jewish states with a British corridor to Jerusalem?",
+              "a": "The Peel Commission"
             },
             {
-              "question": "What was the number of the UN General Assembly resolution passed in November 1947 that voted to partition Palestine?",
-              "answer": "UN Resolution 181"
+              "q": "What British policy document, published in May 1939, strictly limited Jewish immigration to 75,000 over five years and restricted land sales to Arabs?",
+              "a": "The 1939 British White Paper (MacDonald White Paper)"
             },
             {
-              "question": "Under the 1947 UN Partition Plan, what special international status was designated for the city of Jerusalem?",
-              "answer": "An international zone (corpus separatum) administered by the UN"
+              "q": "Which vital international maritime canal, opened in 1869, did Britain consider the strategic 'lifeline of the British Empire'?",
+              "a": "The Suez Canal"
             }
           ]
         },
@@ -21993,20 +21993,20 @@
               "answer": "UNEF (UN Emergency Force)"
             },
             {
-              "question": "What narrow strait did President Nasser close to Israeli shipping on 22 May 1967?",
-              "answer": "The Straits of Tiran"
+              "q": "What major Israeli civil engineering infrastructure project, completed in 1964, transferred fresh water from the Sea of Galilee to the arid Negev Desert?",
+              "a": "The National Water Carrier"
             },
             {
-              "question": "Which coastal outpost at the entrance of the Gulf of Aqaba was fortified by Egyptian guns?",
-              "answer": "Sharm el-Sheikh"
+              "q": "How did the Arab League attempt to block Israel's water extraction in 1964?",
+              "a": "By attempting to divert the headwaters of the River Jordan (Hasbani and Banias) away from Lake Tiberias"
             },
             {
-              "question": "Which monarch of Jordan flew to Cairo on 30 May 1967 to sign a joint defence pact with Nasser?",
-              "answer": "King Hussein"
+              "q": "In November 1966, which Jordanian West Bank village was targeted by a massive Israeli reprisal raid that killed 15 Jordanian soldiers and destroyed over 100 homes?",
+              "a": "As-Samu (The Samu Raid)"
             },
             {
-              "question": "Who was appointed Israeli Minister of Defence on 1 June 1967 on the eve of war?",
-              "answer": "Moshe Dayan"
+              "q": "Which two European colonial powers secretly colluded with Israel at Sèvres in October 1956 to attack Egypt and seize the Suez Canal?",
+              "a": "Britain and France"
             }
           ]
         },
@@ -23230,16 +23230,16 @@
               "answer": "Between 300,000 and 350,000"
             },
             {
-              "question": "What city in Sudan hosted the Arab League summit in August–September 1967?",
-              "answer": "Khartoum"
+              "q": "What was the codename of the pre-emptive Israeli air strike launched at 07:45 on 5 June 1967 that destroyed Egypt's air force on the ground?",
+              "a": "Operation Focus (Mivtza Moked)"
             },
             {
-              "question": "What famous formula summarized the Arab League position at the Khartoum Summit?",
-              "answer": "The \"Three Noes\" (no peace, no recognition, no negotiations)"
+              "q": "Approximately how many Egyptian military aircraft were destroyed on the tarmac within the first three hours of Operation Focus?",
+              "a": "Approximately 300 aircraft (wiping out nearly the entire Egyptian combat air force)"
             },
             {
-              "question": "What core diplomatic formula was introduced by UN Security Council Resolution 242?",
-              "answer": "\"Land for Peace\""
+              "q": "Which charismatic former military general was appointed Israeli Minister of Defence on 1 June 1967 on the eve of the Six-Day War?",
+              "a": "Moshe Dayan"
             }
           ]
         },
@@ -25673,44 +25673,44 @@
           "instructions": "Answer these questions in full sentences.",
           "items": [
             {
-              "question": "What Israeli hostage crisis occurred at an international sporting event in September 1972?",
-              "answer": "The Munich Olympics massacre"
+              "q": "What Israeli hostage crisis occurred at an international sporting event in September 1972?",
+              "a": "The Munich Olympics massacre"
             },
             {
-              "question": "What covert Mossad retaliation operation was authorized by Golda Meir following Munich?",
-              "answer": "Operation Wrath of God"
+              "q": "What covert Mossad retaliation operation was authorized by Golda Meir following the Munich massacre?",
+              "a": "Operation Wrath of God"
             },
             {
-              "question": "Which desert airstrip in Jordan was used by the PFLP in 1970 to blow up hijacked airliners?",
-              "answer": "Dawson’s Field"
+              "q": "Which desert airstrip in Jordan was used by the PFLP in September 1970 to blow up three hijacked international airliners?",
+              "a": "Dawson’s Field"
             },
             {
-              "question": "Which country became the main headquarters for the PLO after being expelled from Jordan in 1971?",
-              "answer": "Lebanon"
+              "q": "Which neighbouring country became the primary military headquarters for the PLO after being expelled from Jordan in 1971?",
+              "a": "Lebanon (southern Lebanon / Beirut)"
             },
             {
-              "question": "What static artillery border conflict was fought along the Suez Canal in 1969–70?",
-              "answer": "The War of Attrition"
+              "q": "In March 1968, at which Jordanian town did Palestinian Fatah guerrillas fiercely resist an Israeli armored assault, creating a major recruitment surge for the PLO?",
+              "a": "The Battle of Karameh"
             },
             {
-              "question": "Who succeeded Gamal Abdel Nasser as President of Egypt following Nasser’s death in 1970?",
-              "answer": "Anwar Sadat"
+              "q": "Which radical Marxist Palestinian faction, led by George Habash, pioneered international aircraft hijackings to publicize the Palestinian cause?",
+              "a": "The PFLP (Popular Front for the Liberation of Palestine)"
             },
             {
-              "question": "What fortified sand-rampart defensive line did Israel construct along the Suez Canal?",
-              "answer": "The Bar-Lev Line"
+              "q": "What term is given to the bloody September 1970 civil war in which King Hussein’s army crushed and expelled Palestinian armed militias from Jordan?",
+              "a": "Black September"
             },
             {
-              "question": "What method did Egyptian engineers use to blast through the sand ramparts of the Bar-Lev Line?",
-              "answer": "High-pressure water monitors (water cannons)"
+              "q": "Who was the Prime Minister of Israel between 1969 and 1974 who authorized targeted assassinations of Munich conspirators?",
+              "a": "Golda Meir"
             },
             {
-              "question": "On what Jewish holy day did Egypt and Syria launch their coordinated surprise attack in 1973?",
-              "answer": "Yom Kippur (Day of Atonement)"
+              "q": "What core diplomatic formula was established by UN Security Council Resolution 242 in November 1967?",
+              "a": "\"Land for Peace\""
             },
             {
-              "question": "Which vital international waterway remained closed to shipping between 1967 and 1975?",
-              "answer": "The Suez Canal"
+              "q": "What famous 'Three Noes' were agreed by Arab leaders at the August 1967 Khartoum Summit?",
+              "a": "No peace, no recognition, and no negotiations with Israel"
             }
           ]
         },
@@ -27176,44 +27176,44 @@
           "instructions": "Answer these questions in full sentences.",
           "items": [
             {
-              "question": "On what Jewish holy day did Egypt and Syria launch their surprise attack in 1973?",
-              "answer": "Yom Kippur (Day of Atonement)"
+              "q": "On what Jewish holy day and during which Muslim sacred month did Egypt and Syria launch their coordinated surprise attack in October 1973?",
+              "a": "Yom Kippur (Day of Atonement) and Ramadan"
             },
             {
-              "question": "What cartel of Arab oil-producing nations imposed the October 1973 oil embargo?",
-              "answer": "OPEC (Organization of the Petroleum Exporting Countries)"
+              "q": "What was the codename of Egypt’s military crossing of the Suez Canal on 6 October 1973?",
+              "a": "Operation Badr"
             },
             {
-              "question": "By how much did the price of crude oil increase per barrel following the 1973 oil embargo?",
-              "answer": "It quadrupled (from $3 to $12 a barrel)"
+              "q": "What ingenious engineering method did Egyptian forces use to breach the massive sand ramparts of the Israeli Bar-Lev Line in October 1973?",
+              "a": "High-pressure water monitors (water cannons)"
             },
             {
-              "question": "Who served as US Secretary of State and pioneered \"shuttle diplomacy\" between 1974 and 1975?",
-              "answer": "Henry Kissinger"
+              "q": "Which strategic plateau in south-western Syria was attacked by hundreds of Syrian tanks on 6 October 1973, nearly overrunning Israeli defenders?",
+              "a": "The Golan Heights"
             },
             {
-              "question": "Which vital international waterway, closed since June 1967, was reopened by Egypt in June 1975?",
-              "answer": "The Suez Canal"
+              "q": "What was the codename of the massive emergency US military airlift of weapons and ammunition ordered by President Richard Nixon to resupply Israel in October 1973?",
+              "a": "Operation Nickel Grass"
             },
             {
-              "question": "Which right-wing Israeli political party won the May 1977 election, ending 29 years of Labour rule?",
-              "answer": "Likud"
+              "q": "Which aggressive Israeli general led the counter-offensive that crossed to the west bank of the Suez Canal and encircled Egypt’s Third Army?",
+              "a": "General Ariel Sharon"
             },
             {
-              "question": "Who became Prime Minister of Israel in May 1977 having formerly commanded the Irgun?",
-              "answer": "Menachem Begin"
+              "q": "What was the number of the United Nations Security Council Resolution, passed on 22 October 1973, that called for an immediate ceasefire based on Resolution 242?",
+              "a": "UN Resolution 338"
             },
             {
-              "question": "On what date did Egyptian President Anwar Sadat land in Israel to address the Knesset in Jerusalem?",
-              "answer": "19 November 1977"
+              "q": "What cartel of Arab oil-producing nations imposed a punitive oil embargo against the US and Western nations supporting Israel in October 1973?",
+              "a": "OPEC (Organization of the Petroleum Exporting Countries / OAPEC)"
             },
             {
-              "question": "What foundational diplomatic principle did UN Resolution 242 establish in November 1967?",
-              "answer": "\"Land for Peace\""
+              "q": "By how much did the global price of crude oil increase per barrel following the 1973 OPEC oil embargo?",
+              "a": "It quadrupled (from approximately $3 to nearly $12 per barrel)"
             },
             {
-              "question": "In which Egyptian city did Menachem Begin meet Sadat on Christmas Day 1977 for reciprocal talks?",
-              "answer": "Ismailia"
+              "q": "What static artillery border conflict was fought between Egyptian and Israeli forces along the Suez Canal between 1969 and 1970?",
+              "a": "The War of Attrition"
             }
           ]
         },
