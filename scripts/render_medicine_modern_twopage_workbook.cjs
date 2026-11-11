@@ -46,7 +46,7 @@ function generateQrSvg(url) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" shape-rendering="crispEdges" style="width: 100%; height: 100%;"><path fill="#ffffff" d="M0,0h${size}v${size}H0z"/><path fill="#000000" d="${pathD.trim()}"/></svg>`;
 }
 
-function renderFooterStrip(pageNum, quip, totalPages = 20) {
+function renderFooterStrip(pageNum, quip, totalPages = 16) {
   const isEven = pageNum % 2 === 0;
   if (isEven) {
     return `
@@ -63,7 +63,7 @@ function renderFooterStrip(pageNum, quip, totalPages = 20) {
   }
 }
 
-function renderNotesPage(pageNum, quip, totalPages = 20) {
+function renderNotesPage(pageNum, quip, totalPages = 16) {
   const isEven = pageNum % 2 === 0;
   const pageClass = isEven ? 'verso-page' : 'recto-page';
   const numLines = 32;
@@ -599,7 +599,7 @@ const modernConfigs = [
 ];
 
 function renderSpinePage(cfg) {
-  const { pageNum, lessonNum, keyTopicBadge, enquiryQuestion, specAnchor, stages, leftPageQuip } =
+  const { pageNum, lessonNum, keyTopicBadge, enquiryQuestion, specAnchor, stages, leftPageQuip, totalPages = 16 } =
     cfg;
 
   const stagesHtml = stages
@@ -690,7 +690,7 @@ function renderSpinePage(cfg) {
         </div>
       </div>
 
-      ${renderFooterStrip(pageNum, leftPageQuip, 20)}
+      ${renderFooterStrip(pageNum, leftPageQuip, totalPages)}
     </div>
   </div>`;
 }
@@ -863,7 +863,7 @@ function buildModernTwoPageWorkbook(unitData, period) {
       heightMm: 88,
     },
     footerQuip: 'Notes: Key Topic 4 Specification Framework &bull; Retain for revision.',
-    totalPageCount: 20,
+    totalPageCount: 16,
     renderFooterStrip,
   });
 
@@ -964,7 +964,7 @@ function buildModernTwoPageWorkbook(unitData, period) {
           .join('')}
       </div>
 
-      ${renderFooterStrip(2, 'The 20th century transformed pharmacology from toxic general poisons into targeted magic bullets.', 20)}
+      ${renderFooterStrip(2, 'The 20th century transformed pharmacology from toxic general poisons into targeted magic bullets.', 16)}
     </div>
   </div>
 `;
@@ -1009,33 +1009,32 @@ function buildModernTwoPageWorkbook(unitData, period) {
           .join('')}
       </div>
 
-      ${renderFooterStrip(3, 'From the birth of the NHS to the sequencing of the human genome, state action and high-tech science transformed health.', 20)}
+      ${renderFooterStrip(3, 'From the birth of the NHS to the sequencing of the human genome, state action and high-tech science transformed health.', 16)}
     </div>
   </div>
 `;
 
   // ====================================================================
-  // PAGES 4–18: 5 DEDICATED THREE-PAGE ENQUIRY MODULES (15 PAGES TOTAL)
-  // Page 1: Chronological Inquiry Spine & Exposition Notes (Verso)
-  // Page 2: Extended Writing Part 1 (18 task lines, stimulus, writing frames & vocab @ 8.2pt) (Recto)
-  // Page 3: Extended Writing Part 2 (16 continuation lines + Question 3 Similarity/Difference [4 marks]) (Verso)
+  // ====================================================================
+  // PAGES 4–13: 5 DEDICATED TWO-PAGE DOUBLE-PAGE SPREADS (10 PAGES TOTAL)
+  // Page 1 (Verso, Left): Chronological Inquiry Spine & Exposition Notes (pp. 4, 6, 8, 10, 12)
+  // Page 2 (Recto, Right): Extended Writing & Scaffolding (pp. 5, 7, 9, 11, 13)
   // ====================================================================
   modernConfigs.forEach((cfg, idx) => {
-    const spinePageNum = 4 + idx * 3; // 4, 7, 10, 13, 16
-    const questionPart1PageNum = spinePageNum + 1; // 5, 8, 11, 14, 17
-    const questionPart2PageNum = spinePageNum + 2; // 6, 9, 12, 15, 18
+    const spinePageNum = 4 + idx * 2; // 4, 6, 8, 10, 12 (Verso / Left)
+    const questionPageNum = spinePageNum + 1; // 5, 7, 9, 11, 13 (Recto / Right)
 
-    // PAGE 1 OF ENQUIRY: CHRONOLOGICAL INQUIRY SPINE
-    html += renderSpinePage({ ...cfg, pageNum: spinePageNum });
+    // PAGE 1 OF ENQUIRY: CHRONOLOGICAL INQUIRY SPINE (VERSO)
+    html += renderSpinePage({ ...cfg, pageNum: spinePageNum, totalPages: 16 });
 
-    // PAGE 2 OF ENQUIRY: EXAM QUESTION PART 1 (26 FLEX TASK LINES, TIMELINE MISSION, PROMINENT TYPOGRAPHY)
+    // PAGE 2 OF ENQUIRY: EXAM QUESTION (RECTO - 26 FLEX TASK LINES, TIMELINE MISSION, PROMINENT TYPOGRAPHY)
     const part1TaskLines = Array.from(
       { length: 26 },
       () => '<div class="task-line-flex"></div>',
     ).join('');
 
     html += `
-  <div class="page page-container recto-page" id="page-${questionPart1PageNum}">
+  <div class="page page-container recto-page" id="page-${questionPageNum}">
     <div class="page-body-full">
       <div>
         <!-- Exam Header -->
@@ -1061,16 +1060,21 @@ function buildModernTwoPageWorkbook(unitData, period) {
           </div>
         </div>
 
-        <!-- Analytical Connectives (Full Width Scaffolding Standard) -->
+        <!-- Analytical Connectives & Key Vocabulary Bank -->
         <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 6px; background: #ffffff; margin-bottom: 3px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">${cfg.connectives}</span>
+          <div style="margin-bottom: 2px;">
+            <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+            <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">${cfg.connectives}</span>
+          </div>
+          <div>
+            <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Key Vocabulary Bank:</strong>
+            <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 600; color: #111111; line-height: 1.2;">${cfg.wordBank}</span>
+          </div>
         </div>
 
         <!-- Ruled Task Lines Prompt -->
         <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-style: italic; color: #222222; margin: 2px 0 2px 0; display: flex; justify-content: space-between;">
           <span><strong>Write your response in the space provided below:</strong></span>
-          <span style="font-size: 7.0pt; color: #555555; font-weight: 600;">(Response continues on facing page)</span>
         </div>
       </div>
 
@@ -1094,83 +1098,28 @@ ${part1TaskLines}
         </div>
       </div>
 
-      ${renderFooterStrip(questionPart1PageNum, cfg.rightPageQuip, 20)}
-    </div>
-  </div>
-`;
-
-    // PAGE 3 OF ENQUIRY: EXAM QUESTION PART 2 (23 CONTINUATION LINES + QUESTION 3 [4 MARKS] AT BOTTOM)
-    const part2ContinuationLines = Array.from(
-      { length: 23 },
-      () => '<div class="task-line-flex"></div>',
-    ).join('');
-
-    const q3TaskLines = Array.from(
-      { length: 6 },
-      () => '<div class="task-line" style="height: 7.8mm;"></div>',
-    ).join('');
-
-    html += `
-  <div class="page page-container verso-page" id="page-${questionPart2PageNum}">
-    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 10.5pt; color: #000000; margin: 0; font-weight: 800;">
-            ${cfg.title}
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-            ${cfg.tariff.split(':')[0]} Continued
-          </span>
-        </div>
-
-        <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-style: italic; color: #333333; margin-bottom: 2px;">
-          Continue your response to ${cfg.tariff.split(':')[0]} below:
-        </div>
-      </div>
-
-      <!-- 23 Continuation Lines (Full Height to Question 3) -->
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 1px 0 4px 0;">
-        ${part2ContinuationLines}
-      </div>
-
-      <!-- Question 3: Similarity / Difference [4 marks] At Bottom of Page -->
-      <div style="border-top: 2px solid #000000; padding-top: 4px; margin-top: 2px; display: flex; flex-direction: column;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; letter-spacing: 0.5px;">
-            &bull; Question 3: Explain One ${cfg.fourMark.type} [4 marks]
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px; text-transform: uppercase;">
-            Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4 ] &bull; 5 Mins
-          </span>
-        </div>
-        <p style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 800; color: #000000; margin: 0 0 2px 0; line-height: 1.25;">
-          ${cfg.fourMark.question}
-        </p>
-        <div style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-style: italic; color: #475569; margin-bottom: 2px;">
-          ${cfg.fourMark.hint}
-        </div>
-        <div style="display: flex; flex-direction: column; margin: 1px 0 0 0;">
-          ${q3TaskLines}
-        </div>
-      </div>
-
-      ${renderFooterStrip(questionPart2PageNum, cfg.linedRightQuip, 20)}
+      ${renderFooterStrip(questionPageNum, cfg.rightPageQuip, 16)}
     </div>
   </div>
 `;
   });
 
   // ====================================================================
-  // PAGE 19: DEDICATED BRITISH EXERCISE NOTES & REVISION STRATEGY PAGE
+  // PAGES 14–15: DEDICATED BRITISH EXERCISE NOTES SPREAD (2 PAGES)
   // ====================================================================
   html += renderNotesPage(
-    19,
+    14,
     'Notes: Record key causal links, essay plans, and teacher feedback for this unit.',
-    20,
+    16,
+  );
+  html += renderNotesPage(
+    15,
+    'Key Topic 4: Modern Britain • The History Department • Retain in exercise folder for final revision.',
+    16,
   );
 
   // ====================================================================
-  // PAGE 20: MASTER BACK COVER (Student Assessment Record & Digital Quizzing Hub)
+  // PAGE 16: MASTER BACK COVER (Student Assessment Record & Digital Quizzing Hub)
   // ====================================================================
   const modernEnquiries = modernConfigs.map((cfg, idx) => ({
     num: cfg.lessonNum,
@@ -1198,7 +1147,7 @@ ${part1TaskLines}
     enquiries: modernEnquiries,
     qrLessons: modernQrLessons,
     footerQuip: 'Retain this student assessment record for parent consultations and GCSE revision monitoring.',
-    totalPageCount: 20,
+    totalPageCount: 16,
     renderFooterStrip,
   });
 
@@ -1212,7 +1161,7 @@ ${part1TaskLines}
 
 async function main() {
   console.log(
-    'Rendering 20-Page A4 Pupil Workbook (Dual QR & Assessment Portfolio): Key Topic 4: Modern Britain (c1900–present)...',
+    'Rendering 16-Page A4 Pupil Workbook (Dual QR & Assessment Portfolio): Key Topic 4: Modern Britain (c1900–present)...',
   );
   const puppeteer = require('puppeteer');
   const customHtml = buildModernTwoPageWorkbook({}, {});
