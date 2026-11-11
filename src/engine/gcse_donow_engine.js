@@ -3,7 +3,7 @@
  *
  * Implements the 3-tier cognitive retrieval architecture:
  * 1. "Previous": 10 questions strictly from the immediate previous lesson (Lesson N-1).
- *    - Lesson 1 edge case: Foundational baseline prior knowledge.
+ *    - Lesson 1 edge case: Lesson 1 baseline prior knowledge.
  * 2. "Unit": 10 questions interleaved across all prior lessons in the current unit (Lessons 1 to N-1).
  * 3. "All": 10 synoptic questions sampled across user-selected completed GCSE units.
  *    - Inline 1-click unit toggle chips with zero hidden menus and instant local storage persistence.
@@ -540,7 +540,7 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
 
   const isCme = activeUnit?.id === 'cme_new' || currentLesson?.unitId === 'cme_new';
 
-  // Lesson 1 edge case: No prior lesson in unit. Fallback to foundational baseline items.
+  // Lesson 1 edge case: No prior lesson in unit. Fallback to Lesson 1 items.
   if (currentIndex <= 0) {
     const baseItems =
       currentLesson.do_now?.items ||
@@ -550,7 +550,7 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
     const items = baseItems
       .map((it) => {
         const stage = findMatchingBlockIndex(it, currentLesson.narrative_blocks);
-        return extractCleanQA(it, 'Foundational', 1, currentLesson.title, activeUnit?.id, stage);
+        return extractCleanQA(it, 'Lesson 1', 1, currentLesson.title, activeUnit?.id, stage);
       })
       .filter(Boolean);
 
@@ -558,7 +558,7 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
     if (items.length < count && Array.isArray(currentLesson.quiz)) {
       currentLesson.quiz.forEach((q) => {
         const stage = findMatchingBlockIndex(q, currentLesson.narrative_blocks);
-        const qa = extractCleanQA(q, 'Foundational', 1, currentLesson.title, activeUnit?.id, stage);
+        const qa = extractCleanQA(q, 'Lesson 1', 1, currentLesson.title, activeUnit?.id, stage);
         if (qa && !items.some((it) => it.question === qa.question)) {
           qa.unitId = activeUnit?.id || '';
           items.push(qa);
@@ -569,7 +569,7 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
     const finalItems = (seed !== null ? shuffleArray(items, seed) : items).slice(0, count);
     return {
       mode: 'previous',
-      subtitle: `Lesson 1: Foundational Baseline • ${finalItems.length} Core Questions`,
+      subtitle: `Lesson 1 • ${finalItems.length} Core Questions`,
       questions: finalItems,
       isLessonOne: true,
     };
@@ -925,7 +925,7 @@ export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
     html += `
       <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" title="Tap row to reveal answer • Tap answer badge for explanation" style="display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 8px 14px; min-height: 40px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
         <div style="display: flex; align-items: flex-start; gap: 10px; flex: 1 1 auto; min-width: 0;">
-          <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1; margin-top: 1px;">${index + 1}</span>
+          <span class="donow-num-badge" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1; margin-top: 1px;">${index + 1}</span>
           <div style="display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 0;">
             <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px;">
               ${originBadge}
