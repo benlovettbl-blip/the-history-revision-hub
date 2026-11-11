@@ -2,100 +2,8 @@
   {
     "unit": "edexcel_medicine.json",
     "lessonCount": 26,
-    "totalVideos": 85,
-    "deadVideos": [
-      {
-        "lessonId": "lesson_1_3",
-        "lessonTitle": "KT1.3: Approaches to Prevention & Treatment: Rituals, Bleeding & Purging (c1250–c1500)",
-        "id": "HdQYQ7d_hss",
-        "status": 404,
-        "claimedTitle": "Cinematic: The Physician (2013) – Ibn Sina & The Contrast with European Barber-Surgery"
-      },
-      {
-        "lessonId": "lesson_1_5",
-        "lessonTitle": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
-        "id": "aG043nN5c-I",
-        "status": 404,
-        "claimedTitle": "Cinematic: Black Death (2010) – The Terror, Miasma & Religious Panic of 1348"
-      },
-      {
-        "lessonId": "lesson_2_5",
-        "lessonTitle": "KT2.5: Continuity in Treatment & The Great Plague of London (1665)",
-        "id": "2T1sZphI1Qk",
-        "status": 404,
-        "claimedTitle": "Cinematic: The Great Plague of London (1665) – Watchmen, Red Crosses & City Orders"
-      },
-      {
-        "lessonId": "lesson_3_1",
-        "lessonTitle": "KT3.1: Ideas on Causes: Pasteur’s Germ Theory & Koch’s Microbe Hunters (c.1861–c.1883)",
-        "id": "34wK9H9kU9Y",
-        "status": 404,
-        "claimedTitle": "Simple History: Edward Jenner & The Smallpox Vaccine (1796) – Inoculation to Vaccination"
-      },
-      {
-        "lessonId": "lesson_3_2",
-        "lessonTitle": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
-        "id": "0Z4tE6-z8W4",
-        "status": 404,
-        "claimedTitle": "Simple History: Louis Pasteur vs Robert Koch – The Dawn of Modern Germ Theory"
-      },
-      {
-        "lessonId": "lesson_3_3",
-        "lessonTitle": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
-        "id": "F3Gq22q5u-w",
-        "status": 404,
-        "claimedTitle": "Simple History: Florence Nightingale & Mary Seacole – The Crimean War & Modern Nursing"
-      },
-      {
-        "lessonId": "lesson_3_4",
-        "lessonTitle": "KT3.4: The Surgical Revolution: Simpson, Lister & The Conquest of Pain and Sepsis (1847–1870s)",
-        "id": "1D_sE5m6qF8",
-        "status": 404,
-        "claimedTitle": "Cinematic: The Knick (HBO) – The Pre-Antiseptic Surgical Amphitheatre"
-      },
-      {
-        "lessonId": "lesson_4_1",
-        "lessonTitle": "KT4.1: Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
-        "id": "1b-3_Ea3m0o",
-        "status": 404,
-        "claimedTitle": "Simple History: Crick, Watson & Franklin – The Discovery of the Structure of DNA (1953)"
-      },
-      {
-        "lessonId": "lesson_4_2",
-        "lessonTitle": "KT4.2: Lifestyle Factors & The Technological Revolution in Diagnosis (c.1900–present)",
-        "id": "0Z4tE6-z8W4",
-        "status": 404,
-        "claimedTitle": "Simple History: Magic Bullets – Paul Ehrlich, Salvarsan 606 & Prontosil"
-      },
-      {
-        "lessonId": "lesson_5_3",
-        "lessonTitle": "KT5.3: Battlefield Trauma: High Explosive Shrapnel, Gas Attacks & Infection (1914–1918)",
-        "id": "jWpU1gEcwqQ",
-        "status": 404,
-        "claimedTitle": "Simple History: Weapons of the Western Front – Artillery, Shrapnel & Gas Attacks"
-      },
-      {
-        "lessonId": "lesson_5_3",
-        "lessonTitle": "KT5.3: Battlefield Trauma: High Explosive Shrapnel, Gas Attacks & Infection (1914–1918)",
-        "id": "XW-aN1Uf-r8",
-        "status": 404,
-        "claimedTitle": "Dan Snow: WW1 Uncut – Shrapnel Helmets & Gas Masks"
-      },
-      {
-        "lessonId": "lesson_5_4",
-        "lessonTitle": "KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS (1914–1918)",
-        "id": "EHYRfukHToc",
-        "status": 404,
-        "claimedTitle": "Cinematic: Peter Jackson's \"They Shall Not Grow Old\" (2018) – Stretcher Bearers & Field Casualties"
-      },
-      {
-        "lessonId": "lesson_5_6",
-        "lessonTitle": "KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
-        "id": "0Z4tE6-z8W4",
-        "status": 404,
-        "claimedTitle": "Simple History: Blood Transfusions on the Western Front – Blood Depots & Sodium Citrate"
-      }
-    ],
+    "totalVideos": 62,
+    "deadVideos": [],
     "repeatedIds": {
       "nVJV8iEAm88": [
         {
@@ -134,11 +42,6 @@
           "lessonId": "lesson_1_4",
           "title": "KT1.4: Medical Care Providers & Monastic Hospitals: ‘Care Not Cure’ (c1250–c1500)",
           "claimedTitle": "The Physician (2013) | Official Movie Trailer (Ben Kingsley as Ibn Sina / Avicenna)"
-        },
-        {
-          "lessonId": "lesson_1_5",
-          "title": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
-          "claimedTitle": "The Physician (2013) | Official Movie Trailer (Ben Kingsley as Ibn Sina / Avicenna)"
         }
       ],
       "2Nl7a3ORYvw": [
@@ -153,18 +56,8 @@
           "claimedTitle": "Blood and Guts: A History of Surgery – Bloody Beginnings | BBC / Michael Mosley"
         },
         {
-          "lessonId": "lesson_1_3",
-          "title": "KT1.3: Approaches to Prevention & Treatment: Rituals, Bleeding & Purging (c1250–c1500)",
-          "claimedTitle": "Blood and Guts: A History of Surgery – Bloody Beginnings | BBC / Michael Mosley"
-        },
-        {
           "lessonId": "lesson_1_4",
           "title": "KT1.4: Medical Care Providers & Monastic Hospitals: ‘Care Not Cure’ (c1250–c1500)",
-          "claimedTitle": "Blood and Guts: A History of Surgery – Bloody Beginnings | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_1_5",
-          "title": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
           "claimedTitle": "Blood and Guts: A History of Surgery – Bloody Beginnings | BBC / Michael Mosley"
         },
         {
@@ -210,11 +103,6 @@
           "lessonId": "lesson_2_4",
           "title": "KT2.4: William Harvey & The Circulation of the Blood (1628)",
           "claimedTitle": "Restoration (1995) | 17th-Century Medicine & The Great Plague Trailer"
-        },
-        {
-          "lessonId": "lesson_2_5",
-          "title": "KT2.5: Continuity in Treatment & The Great Plague of London (1665)",
-          "claimedTitle": "Restoration (1995) | 17th-Century Medicine & The Great Plague Trailer"
         }
       ],
       "w6q50_qNMoA": [
@@ -237,153 +125,13 @@
           "lessonId": "lesson_2_4",
           "title": "KT2.4: William Harvey & The Circulation of the Blood (1628)",
           "claimedTitle": "Royal College of Physicians: Ceaseless Motion – William Harvey & Blood Circulation"
-        },
-        {
-          "lessonId": "lesson_2_5",
-          "title": "KT2.5: Continuity in Treatment & The Great Plague of London (1665)",
-          "claimedTitle": "William Harvey & The Circulation of Blood | Royal College of Physicians"
-        }
-      ],
-      "z9rKY8MLWTU": [
-        {
-          "lessonId": "lesson_3_1",
-          "title": "KT3.1: Ideas on Causes: Pasteur’s Germ Theory & Koch’s Microbe Hunters (c.1861–c.1883)",
-          "claimedTitle": "The Knick | Surgery in the Era of Discovery (Cinemax / HBO)"
-        },
-        {
-          "lessonId": "lesson_3_2",
-          "title": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
-          "claimedTitle": "The Knick | Surgery in the Era of Discovery (Cinemax / HBO)"
-        },
-        {
-          "lessonId": "lesson_3_3",
-          "title": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
-          "claimedTitle": "The Knick | Surgery in the Era of Discovery (Cinemax / HBO)"
-        },
-        {
-          "lessonId": "lesson_3_4",
-          "title": "KT3.4: The Surgical Revolution: Simpson, Lister & The Conquest of Pain and Sepsis (1847–1870s)",
-          "claimedTitle": "The Knick | Surgery in the Era of Discovery (Cinemax / HBO)"
-        },
-        {
-          "lessonId": "lesson_3_5",
-          "title": "KT3.5: Public Health & Cholera: John Snow, The Broad Street Pump & The 1875 Public Health Act (1854–1875)",
-          "claimedTitle": "The Knick | Surgery in the Era of Discovery (Cinemax / HBO)"
-        },
-        {
-          "lessonId": "lesson_4_1",
-          "title": "KT4.1: Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
-          "claimedTitle": "The Knick | Surgery in the Era of Discovery (Cinemax / HBO)"
-        }
-      ],
-      "2hTZNDyLPLk": [
-        {
-          "lessonId": "lesson_3_1",
-          "title": "KT3.1: Ideas on Causes: Pasteur’s Germ Theory & Koch’s Microbe Hunters (c.1861–c.1883)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 1 (Pain) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_3_2",
-          "title": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 1 (Pain) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_3_3",
-          "title": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 1 (Pain) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_3_4",
-          "title": "KT3.4: The Surgical Revolution: Simpson, Lister & The Conquest of Pain and Sepsis (1847–1870s)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 1 (Pain) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_3_5",
-          "title": "KT3.5: Public Health & Cholera: John Snow, The Broad Street Pump & The 1875 Public Health Act (1854–1875)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 1 (Pain) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_4_1",
-          "title": "KT4.1: Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 1 (Pain) | BBC / Michael Mosley"
-        }
-      ],
-      "0Z4tE6-z8W4": [
-        {
-          "lessonId": "lesson_3_2",
-          "title": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
-          "claimedTitle": "Simple History: Louis Pasteur vs Robert Koch – The Dawn of Modern Germ Theory"
-        },
-        {
-          "lessonId": "lesson_4_2",
-          "title": "KT4.2: Lifestyle Factors & The Technological Revolution in Diagnosis (c.1900–present)",
-          "claimedTitle": "Simple History: Magic Bullets – Paul Ehrlich, Salvarsan 606 & Prontosil"
-        },
-        {
-          "lessonId": "lesson_5_6",
-          "title": "KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
-          "claimedTitle": "Simple History: Blood Transfusions on the Western Front – Blood Depots & Sodium Citrate"
-        }
-      ],
-      "UclKFAQ0eJQ": [
-        {
-          "lessonId": "lesson_4_2",
-          "title": "KT4.2: Lifestyle Factors & The Technological Revolution in Diagnosis (c.1900–present)",
-          "claimedTitle": "Something the Lord Made (2004) | Official Trailer (Alan Rickman / Mos Def)"
-        },
-        {
-          "lessonId": "lesson_4_3",
-          "title": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
-          "claimedTitle": "Something the Lord Made (2004) | Official Trailer (Alan Rickman / Mos Def)"
-        },
-        {
-          "lessonId": "lesson_4_4",
-          "title": "KT4.4: Case Study 1: The Antibiotic Revolution: Fleming, Florey & Chain and Penicillin (1928–1945)",
-          "claimedTitle": "Something the Lord Made (2004) | Official Trailer (Alan Rickman / Mos Def)"
-        },
-        {
-          "lessonId": "lesson_4_5",
-          "title": "KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer (c.1950–present)",
-          "claimedTitle": "Something the Lord Made (2004) | Official Trailer (Alan Rickman / Mos Def)"
-        },
-        {
-          "lessonId": "lesson_5_1",
-          "title": "KT5.1: The Theatre of War: The British Sector, Trench Geography & Battles (1914–1918)",
-          "claimedTitle": "Something the Lord Made (2004) | Official Trailer (Alan Rickman / Mos Def)"
-        }
-      ],
-      "mlDO-uKMNWk": [
-        {
-          "lessonId": "lesson_4_2",
-          "title": "KT4.2: Lifestyle Factors & The Technological Revolution in Diagnosis (c.1900–present)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 2 (Pus) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_4_3",
-          "title": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 2 (Pus) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_4_4",
-          "title": "KT4.4: Case Study 1: The Antibiotic Revolution: Fleming, Florey & Chain and Penicillin (1928–1945)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 2 (Pus) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_4_5",
-          "title": "KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer (c.1950–present)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 2 (Pus) | BBC / Michael Mosley"
-        },
-        {
-          "lessonId": "lesson_5_1",
-          "title": "KT5.1: The Theatre of War: The British Sector, Trench Geography & Battles (1914–1918)",
-          "claimedTitle": "Pain, Pus and Poison: Episode 2 (Pus) | BBC / Michael Mosley"
         }
       ],
       "YqNYrYUiMfg": [
         {
           "lessonId": "lesson_5_1",
           "title": "KT5.1: The Theatre of War: The British Sector, Trench Geography & Battles (1914–1918)",
-          "claimedTitle": "Cinematic: Sam Mendes's \"1917\" (2019) – Frontline Trenches, Traverses & No Man's Land"
+          "claimedTitle": "1917 (2019) | Official Feature Trailer (Sam Mendes / Universal Pictures)"
         },
         {
           "lessonId": "lesson_5_2",
@@ -394,48 +142,6 @@
           "lessonId": "lesson_5_3",
           "title": "KT5.3: Battlefield Trauma: High Explosive Shrapnel, Gas Attacks & Infection (1914–1918)",
           "claimedTitle": "1917 (2019) | Official Feature Trailer (Sam Mendes / Universal Pictures)"
-        },
-        {
-          "lessonId": "lesson_5_4",
-          "title": "KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS (1914–1918)",
-          "claimedTitle": "1917 (2019) | Official Feature Trailer (Sam Mendes / Universal Pictures)"
-        },
-        {
-          "lessonId": "lesson_5_5",
-          "title": "KT5.5: Surgical Breakthroughs: The Thomas Splint, Wound Debridement & Mobile X-Rays (1914–1918)",
-          "claimedTitle": "1917 (2019) | Official Feature Trailer (Sam Mendes / Universal Pictures)"
-        },
-        {
-          "lessonId": "lesson_5_6",
-          "title": "KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
-          "claimedTitle": "1917 (2019) | Official Feature Trailer (Sam Mendes / Universal Pictures)"
-        }
-      ],
-      "YfxRhLsAAk8": [
-        {
-          "lessonId": "lesson_5_2",
-          "title": "KT5.2: The Trench Environment: Mud, Vermin & Non-Combat Illnesses (1914–1918)",
-          "claimedTitle": "Medicine in the First World War: Chain of Evacuation | Imperial War Museums"
-        },
-        {
-          "lessonId": "lesson_5_3",
-          "title": "KT5.3: Battlefield Trauma: High Explosive Shrapnel, Gas Attacks & Infection (1914–1918)",
-          "claimedTitle": "Medicine in the First World War: Chain of Evacuation | Imperial War Museums"
-        },
-        {
-          "lessonId": "lesson_5_4",
-          "title": "KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS (1914–1918)",
-          "claimedTitle": "Medicine in the First World War: Chain of Evacuation | Imperial War Museums"
-        },
-        {
-          "lessonId": "lesson_5_5",
-          "title": "KT5.5: Surgical Breakthroughs: The Thomas Splint, Wound Debridement & Mobile X-Rays (1914–1918)",
-          "claimedTitle": "Medicine in the First World War: Chain of Evacuation | Imperial War Museums"
-        },
-        {
-          "lessonId": "lesson_5_6",
-          "title": "KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
-          "claimedTitle": "Medicine in the First World War: Chain of Evacuation | Imperial War Museums"
         }
       ]
     },
@@ -452,16 +158,8 @@
   {
     "unit": "cme_new.json",
     "lessonCount": 12,
-    "totalVideos": 51,
-    "deadVideos": [
-      {
-        "lessonId": "lesson_3",
-        "lessonTitle": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
-        "id": "43DqkyuItH8",
-        "status": 403,
-        "claimedTitle": "France Télévisions / Best Documentary: Nasser: From Dream to Disaster"
-      }
-    ],
+    "totalVideos": 50,
+    "deadVideos": [],
     "repeatedIds": {},
     "allVideos": []
   },
@@ -484,74 +182,9 @@
   {
     "unit": "usa.json",
     "lessonCount": 16,
-    "totalVideos": 64,
-    "deadVideos": [
-      {
-        "lessonId": "lesson_2_1",
-        "lessonTitle": "KT 2.1: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
-        "id": "yFPydEXeCus",
-        "status": 403,
-        "claimedTitle": "Freedom Riders: The Brutal Attack in Anniston | Feature Recreation"
-      },
-      {
-        "lessonId": "lesson_2_1",
-        "lessonTitle": "KT 2.1: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
-        "id": "Fym2q-Jajnc",
-        "status": 404,
-        "claimedTitle": "Eyes on the Prize: Ain't Scared of Your Jails (1960–1961) | PBS"
-      },
-      {
-        "lessonId": "lesson_2_2",
-        "lessonTitle": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
-        "id": "5EI_VNORoe8",
-        "status": 403,
-        "claimedTitle": "Eyes on the Prize: No Easy Walk (1961–1963) | PBS Landmark Series"
-      }
-    ],
-    "repeatedIds": {
-      "k_O7bD8Swxk": [
-        {
-          "lessonId": "lesson_3_1",
-          "title": "KT 3.1: Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
-          "claimedTitle": "The Vietnam War: Roots of Conflict & The Domino Theory | PBS Archive"
-        },
-        {
-          "lessonId": "lesson_3_2",
-          "title": "KT 3.2: Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
-          "claimedTitle": "The Fog of War (2003) | Official Trailer (Errol Morris / Robert McNamara)"
-        },
-        {
-          "lessonId": "lesson_3_3",
-          "title": "KT 3.3: Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
-          "claimedTitle": "Air Cavalry, Napalm & The Cu Chi Tunnels | Vietnam Tactical Deep Dive"
-        },
-        {
-          "lessonId": "lesson_3_4",
-          "title": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
-          "claimedTitle": "Operation Menu: The Secret Bombing of Cambodia & Vietnamization | PBS"
-        },
-        {
-          "lessonId": "lesson_4_1",
-          "title": "KT 4.1: Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
-          "claimedTitle": "My Lai & Kent State: The Moral Crisis of Vietnam | Documentary Archive"
-        },
-        {
-          "lessonId": "lesson_4_2",
-          "title": "KT 4.2: Why did some Americans support the Vietnam War and the 'Silent Majority'?",
-          "claimedTitle": "Nixon's Silent Majority Speech (November 1969) | Historical Masterclass"
-        },
-        {
-          "lessonId": "lesson_4_3",
-          "title": "KT 4.3: How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
-          "claimedTitle": "The Fall of Saigon: Operation Frequent Wind | Archival Masterclass"
-        },
-        {
-          "lessonId": "lesson_4_4",
-          "title": "KT 4.4: What were the main reasons why the US failed to win the war in Vietnam?",
-          "claimedTitle": "Hearts and Minds (1974) | Academy Award-Winning Documentary Trailer"
-        }
-      ]
-    },
+    "totalVideos": 55,
+    "deadVideos": [],
+    "repeatedIds": {},
     "allVideos": []
   },
   {

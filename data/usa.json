@@ -6841,46 +6841,35 @@
         {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=1zBY6gkpbTg",
+          "id": "1zBY6gkpbTg",
           "title": "The Freedom Riders History | Smithsonian Magazine",
           "duration": "2 mins 13 secs",
           "pathway": "Starter Hook",
           "teacher_guidance": "Archival newsreels and survivor testimony from the May 1961 CORE and SNCC Freedom Rides, testing Supreme Court desegregation of interstate bus terminals. Recommended Watch Window: 00:00–02:10 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, dramatic archival footage showing white supremacist mob violence.",
           "viewing_task": "<ol><li><strong>[00:40] Quick Check:</strong> In which Alabama town was a Greyhound bus carrying integrated Freedom Riders firebombed by a Ku Klux Klan mob on Mother's Day, 14 May 1961?</li><li><strong>[01:30] Hinge Question:</strong> Why did the Freedom Riders deliberately provoke arrests and endure violent beatings across the Deep South rather than relying solely on gradual courtroom litigation?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Anniston, Alabama.</li><li><strong>Hinge Question:</strong> The riders (led by James Farmer and John Lewis) understood that Southern state authorities were openly flouting the 1960 <em>Boynton v. Virginia</em> Supreme Court ruling banning terminal segregation. By physically placing their bodies in harm's way and filling Southern jails, they forced national television networks to broadcast white police and mob brutality into Northern living rooms, compelling Attorney General Robert F. Kennedy and the Interstate Commerce Commission (ICC) to strictly enforce federal desegregation.</li></ol>",
-          "id": "1zBY6gkpbTg"
+          "model_answer": "<ol><li><strong>Quick Check:</strong> Anniston, Alabama.</li><li><strong>Hinge Question:</strong> The riders (led by James Farmer and John Lewis) understood that Southern state authorities were openly flouting the 1960 <em>Boynton v. Virginia</em> Supreme Court ruling banning terminal segregation. By physically placing their bodies in harm's way and filling Southern jails, they forced national television networks to broadcast white police and mob brutality into Northern living rooms, compelling Attorney General Robert F. Kennedy and the Interstate Commerce Commission (ICC) to strictly enforce federal desegregation.</li></ol>"
         },
         {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=F624q1jBd0Y",
+          "id": "F624q1jBd0Y",
           "title": "Student Civil Rights Activism: Crash Course Black American History #37 | CrashCourse",
           "duration": "11 mins 53 secs",
           "pathway": "Enquiry Evidence",
           "teacher_guidance": "Clint Smith analyzes the transition from legalism to mass direct-action youth protest: the Greensboro Four, Diane Nash, the Nashville workshops on non-violent direct action, and the founding of SNCC. Recommended Watch Window: 01:10–07:45 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Engaging, analytically deep examination of non-violent tactical discipline.",
           "viewing_task": "<ol><li><strong>[02:00] Recall:</strong> Name the department store lunch counter in Greensboro, North Carolina where four Black college students staged the first famous sit-in on 1 February 1960.</li><li><strong>[04:30] Explain:</strong> Describe the rigorous non-violent direct-action training developed by James Lawson in Nashville: why were students trained to endure physical assault and insults without retaliating?</li><li><strong>[07:15] Challenge:</strong> Evaluate how the creation of the Student Nonviolent Coordinating Committee (SNCC) in April 1960 marked a decisive generational shift away from the traditional NAACP and SCLC leadership styles.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> F.W. Woolworth store in Greensboro.</li><li><strong>Explain:</strong> Rev. James Lawson organized workshops where students role-played being spat upon, shoved, having hot coffee poured on them, and hearing racial slurs. This psychological hardening ensured that during actual sit-ins, students remained totally peaceful, dignified, and silent. Televised contrasts between well-dressed, polite Black students studying at counters and vicious white mobs beating them stripped segregation of any moral defense.</li><li><strong>Challenge:</strong> Under the guidance of Ella Baker, SNCC rejected the hierarchical, preacher-dominated top-down model of Martin Luther King Jr.'s SCLC and the slow legalism of Roy Wilkins' NAACP. SNCC championed grassroots \"group-centered leadership\", empowering youth and local rural Southern communities to organize their own voter registration drives, despite extreme danger.</li></ol>",
-          "id": "F624q1jBd0Y"
+          "model_answer": "<ol><li><strong>Recall:</strong> F.W. Woolworth store in Greensboro.</li><li><strong>Explain:</strong> Rev. James Lawson organized workshops where students role-played being spat upon, shoved, having hot coffee poured on them, and hearing racial slurs. This psychological hardening ensured that during actual sit-ins, students remained totally peaceful, dignified, and silent. Televised contrasts between well-dressed, polite Black students studying at counters and vicious white mobs beating them stripped segregation of any moral defense.</li><li><strong>Challenge:</strong> Under the guidance of Ella Baker, SNCC rejected the hierarchical, preacher-dominated top-down model of Martin Luther King Jr.'s SCLC and the slow legalism of Roy Wilkins' NAACP. SNCC championed grassroots \"group-centered leadership\", empowering youth and local rural Southern communities to organize their own voter registration drives, despite extreme danger.</li></ol>"
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=yFPydEXeCus",
-          "id": "yFPydEXeCus",
-          "title": "Freedom Riders: The Brutal Attack in Anniston | Feature Recreation",
-          "duration": "2 mins 45 secs",
+          "url": "https://www.youtube.com/watch?v=dJqA6PQRh3U",
+          "id": "dJqA6PQRh3U",
+          "title": "Sound Smart: The Freedom Rides | HISTORY",
+          "duration": "2 mins 30 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:45 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Visceral dramatisation of the firebombing of the Greyhound bus outside Anniston, Alabama, on Mother's Day 1961.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the dramatisation depict the willingness of young student activists to endure lethal violence to expose federal inaction?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows Klansmen slashing tires and hurling a firebomb through the window while holding the bus doors shut, capturing the terrifying physical courage of multiracial students testing federal law."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Fym2q-Jajnc",
-          "id": "Fym2q-Jajnc",
-          "title": "Eyes on the Prize: Ain't Scared of Your Jails (1960–1961) | PBS",
-          "duration": "55 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 10:00–35:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Definitive documentary on the student sit-ins and Freedom Rides.",
-          "viewing_task": "[14:00] Recall: What pledge did SNCC students take when sitting at segregated lunch counters in Greensboro?\n[26:30] Explain: How did CORE's Freedom Rides test the enforcement of the Supreme Court's Boynton v. Virginia ruling?\n[38:00] Challenge: How did televised footage of firebombed buses outside Anniston force Attorney General Robert Kennedy to dispatch 400 federal marshals to Alabama?",
-          "model_answer": "Recall: To remain peaceful, polite, quiet, and not strike back when assaulted, verbally abused, or covered in hot coffee.\nExplain: Boynton outlawed segregation in interstate transit terminals, but Southern states ignored it; multiracial riders deliberately rode buses to force federal intervention.\nChallenge: Front-page newspaper photos of the burning bus shocked the world; Kennedy realized local police had abandoned riders to KKK mobs and sent federal marshals to restore order."
+          "teacher_guidance": "Concise archival summary from The HISTORY Channel of the May 1961 integrated bus journeys through the Deep South, the violent attacks in Anniston and Montgomery, and the federal Interstate Commerce Commission desegregation order.",
+          "viewing_task": "<ol><li><strong>[00:45] Quick Check:</strong> What was the specific objective of the Congress of Racial Equality (CORE) when organizing the Freedom Rides in 1961?</li><li><strong>[01:50] Hinge Question:</strong> How did televised images of burned buses and beaten riders force Attorney General Robert F. Kennedy and the Interstate Commerce Commission (ICC) to enforce desegregation?</li></ol>",
+          "model_answer": "<ol><li><strong>Quick Check:</strong> To test whether Southern states were obeying the Supreme Court's ruling (Boynton v. Virginia) banning segregation in interstate bus terminals, waiting rooms, and lunch counters.</li><li><strong>Hinge Question:</strong> The riders anticipated white violent retaliation; when national television broadcast local police complicity and mob brutality, the Kennedy administration was internationally humiliated on the Cold War stage, compelling the ICC to ban all segregation in interstate travel by November 1961.</li></ol>"
         }
       ],
       "banner": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg",
@@ -7092,7 +7081,8 @@
           "question": "Using paragraph [4.2], what government regulation resulted from the Freedom Rides in November 1961?",
           "answer": "The Interstate Commerce Commission (ICC) ordered all racial segregation signs removed from interstate bus and rail stations."
         }
-      ]
+      ],
+      "extra_videos": []
     },
     {
       "id": "lesson_2_2",
@@ -8137,47 +8127,36 @@
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=x6t7vVTxaic",
-          "title": "Selma (2014, dir. Ava DuVernay) Theatrical Trailer | Paramount Pictures",
-          "duration": "2 mins 32 secs",
-          "pathway": "Cinematic Focus",
-          "teacher_guidance": "Hollywood historical dramatization of the 1965 Selma-to-Montgomery voting rights campaign, starring David Oyelowo as Martin Luther King Jr., illustrating the standoff at Edmund Pettus Bridge and White House pressure on LBJ. Recommended Watch Window: 00:00–02:30 • Lesson Phase: Cinematic Starter Hook (0–3m). Tone Alert: Powerful, cinematic dramatization capturing voter disenfranchisement, moral confrontation, and political negotiation.",
-          "viewing_task": "<strong>Cinematic Discussion Focus:</strong> How does Ava DuVernay's portrayal of the Selma campaign depict the strategic friction between Dr. Martin Luther King Jr.'s non-violent moral confrontation and President Lyndon B. Johnson's political reluctance to pass a voting rights bill before resolving other domestic issues?",
-          "model_answer": "The trailer and film dramatically contrast King's insistence that voting is the foundational right without which Black Americans remain helpless against police violence and poverty, against LBJ's initial desire to delay voting rights legislation to focus on his \"War on Poverty.\" King's strategy is depicted not simply as moral prayer, but as calculated political theatre designed to provoke Selma Sheriff Jim Clark into public violence on television, thereby creating an unstoppable moral crisis that forces the federal government into legislative action.",
-          "id": "x6t7vVTxaic"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=TLberHUJgHY",
-          "title": "The Fight Against Segregation in Birmingham | Black American Heroes | HISTORY",
-          "duration": "3 mins 47 secs",
+          "id": "TLberHUJgHY",
+          "title": "The Children's Crusade: How 1963 Birmingham Kids Changed America | History",
+          "duration": "4 mins 30 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Traces Project C (Confrontation) in Birmingham, Alabama (April–May 1963), the Children's Crusade, Bull Connor's high-pressure fire hoses and attack dogs, and the 16th Street Baptist Church bombing. Recommended Watch Window: 00:30–03:30 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Graphic historical footage of state police violence against young demonstrators.",
-          "viewing_task": "<ol><li><strong>[01:15] Quick Check:</strong> Which notorious Birmingham Commissioner of Public Safety ordered police attack dogs and high-pressure fire hoses to be turned on marching school children during the May 1963 Children's Crusade?</li><li><strong>[02:45] Hinge Question:</strong> How did televised imagery of Bull Connor's brutality directly compel President John F. Kennedy to introduce the landmark Civil Rights Act on national television in June 1963?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Eugene \"Bull\" Connor.</li><li><strong>Hinge Question:</strong> The international broadcast of 100-pound water pressure tearing the clothes off Black teenagers and German Shepherds biting children sickened the American public and deeply embarrassed the Kennedy administration on the Cold War world stage (Soviet propaganda weaponized Birmingham to mock US claims of leading the \"free world\"). JFK delivered a historic address stating that civil rights was a moral issue as old as the scriptures, committing his presidency to a comprehensive federal civil rights bill.</li></ol>",
-          "id": "TLberHUJgHY"
+          "teacher_guidance": "High-impact archival overview of the May 1963 Birmingham Campaign (\"Project C\"), SCLC's deployment of student marchers, Police Commissioner Bull Connor's police dogs and firehoses, and JFK's federal intervention. Recommended Watch Window: 00:00–04:15 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Powerful, emotive archival footage showing the moral courage of child marchers.",
+          "viewing_task": "<ol><li><strong>[01:10] Quick Check:</strong> Which Birmingham Commissioner of Public Safety directed police to unleash attack dogs and high-pressure firehoses on peaceful student marchers in Kelly Ingram Park in May 1963?</li><li><strong>[03:20] Hinge Question:</strong> How did televised imagery of Bull Connor's brutality directly compel President John F. Kennedy to introduce the landmark Civil Rights Act on national television in June 1963?</li></ol>",
+          "model_answer": "<ol><li><strong>Quick Check:</strong> Eugene \"Bull\" Connor.</li><li><strong>Hinge Question:</strong> The international broadcast of 100-pound water pressure tearing the clothes off Black teenagers and German Shepherds biting children sickened the American public and deeply embarrassed the Kennedy administration on the Cold War world stage (Soviet propaganda weaponized Birmingham to mock US claims of leading the \"free world\"). JFK delivered a historic address stating that civil rights was a moral issue as old as the scriptures, committing his presidency to a comprehensive federal civil rights bill.</li></ol>"
         },
         {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=Vd6D64Ai49I",
+          "id": "Vd6D64Ai49I",
           "title": "The Story of Bloody Sunday | Black American Heroes | HISTORY",
           "duration": "4 mins 14 secs",
           "pathway": "Enquiry Evidence",
           "teacher_guidance": "Archival analysis of the 7 March 1965 \"Bloody Sunday\" march across the Edmund Pettus Bridge in Selma, Alabama, Alabama State Troopers' tear gas attack, and the passage of the Voting Rights Act. Recommended Watch Window: 00:30–03:50 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Compelling archival narrative detailing the brutal repression of non-violent voting rights marchers.",
           "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> What was the bridge named in Selma, Alabama, where 600 civil rights marchers led by John Lewis and Hosea Williams were ambushed by mounted state troopers on 7 March 1965?</li><li><strong>[02:30] Explain:</strong> Explain the key enforcement mechanisms introduced by the Voting Rights Act of 1965 that permanently dismantled Southern voter suppression.</li><li><strong>[03:30] Challenge:</strong> Evaluate why Selma was the political catalyst for the Voting Rights Act: why was legislative action on voting rights impossible to delay after ABC interrupted its movie broadcast to show the footage?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Edmund Pettus Bridge (named after a Confederate general and Grand Dragon of the Alabama Ku Klux Klan).</li><li><strong>Explain:</strong> The 1965 Act outlawed all discriminatory literacy tests and voter comprehension devices across the United States. Crucially, Section 5 empowered federal examiners to travel into Southern counties where registration was below 50% to directly register Black voters under federal protection, while requiring Southern states with histories of discrimination to obtain federal \"preclearance\" before changing any voting laws.</li><li><strong>Challenge:</strong> ABC interrupted its prime-time national broadcast of the film <em>Judgment at Nuremberg</em> (about Nazi war crimes) to air raw footage of Alabama troopers beating peaceful American citizens with nightsticks and tear gas. The moral shock of seeing Nazi atrocities juxtaposed with American state violence sparked nationwide protests, giving President Lyndon B. Johnson the political capital to address a joint session of Congress with the words \"And we shall overcome\", passing the act within five months.</li></ol>",
-          "id": "Vd6D64Ai49I"
+          "model_answer": "<ol><li><strong>Recall:</strong> The Edmund Pettus Bridge (named after a Confederate general and Grand Dragon of the Alabama Ku Klux Klan).</li><li><strong>Explain:</strong> The 1965 Act outlawed all discriminatory literacy tests and voter comprehension devices across the United States. Crucially, Section 5 empowered federal examiners to travel into Southern counties where registration was below 50% to directly register Black voters under federal protection, while requiring Southern states with histories of discrimination to obtain federal \"preclearance\" before changing any voting laws.</li><li><strong>Challenge:</strong> ABC interrupted its prime-time national broadcast of the film <em>Judgment at Nuremberg</em> (about Nazi war crimes) to air raw footage of Alabama troopers beating peaceful American citizens with nightsticks and tear gas. The moral shock of seeing Nazi atrocities juxtaposed with American state violence sparked nationwide protests, giving President Lyndon B. Johnson the political capital to address a joint session of Congress with the words \"And we shall overcome\", passing the act within five months.</li></ol>"
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5EI_VNORoe8",
-          "id": "5EI_VNORoe8",
-          "title": "Eyes on the Prize: No Easy Walk (1961–1963) | PBS Landmark Series",
-          "duration": "55 mins 00 secs",
+          "url": "https://www.youtube.com/watch?v=6x0l_vkjozc",
+          "id": "6x0l_vkjozc",
+          "title": "The Civil Rights Act Of 1964 Explained | This Day Forward | MSNBC",
+          "duration": "4 mins 20 secs",
           "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 18:00–45:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Bull Connor, the Children's Crusade, and the March on Washington.",
-          "viewing_task": "[22:00] Recall: Why did Martin Luther King Jr and SCLC target Birmingham, Alabama ('Bombingham') for Project C in May 1963?\n[32:30] Explain: How did Bull Connor's deployment of high-pressure firehoses and snarling German Shepherd dogs against teenage school marchers shock the world?\n[41:15] Challenge: How did the Birmingham campaign directly compel President John F. Kennedy to introduce the landmark Civil Rights Act on national television on 11 June 1963?",
-          "model_answer": "Recall: Because Commissioner of Public Safety Bull Connor was notoriously volatile and guaranteed to provide dramatic televised violence that would provoke national intervention.\nExplain: Firehoses tore bark off trees and stripped clothes off children; evening network news broadcast the horrific images into millions of living rooms, galvanizing international outrage.\nChallenge: Kennedy realized racial apartheid had become an urgent moral crisis and national security embarrassment; he announced sweeping civil rights legislation outlawing public segregation."
+          "teacher_guidance": "Concise legislative and historical breakdown of the 1964 Civil Rights Act signed by President Lyndon B. Johnson, outlawing segregation in public accommodations and banning employment discrimination.",
+          "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> What major legislative breakthrough did President Lyndon B. Johnson sign into law on 2 July 1964 following the Birmingham campaign and the March on Washington?</li><li><strong>[02:30] Explain:</strong> Explain how Title II and Title VII of the 1964 Civil Rights Act dismantled Jim Crow segregation in private businesses and public employment.</li><li><strong>[03:40] Challenge:</strong> Why was the Civil Rights Act of 1964 alone insufficient to guarantee full democratic equality for African Americans in the Deep South, necessitating the Selma campaign and the 1965 Voting Rights Act?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> The Civil Rights Act of 1964.</li><li><strong>Explain:</strong> Title II outlawed racial discrimination in hotels, restaurants, theatres, and public accommodations, while Title VII banned employment discrimination and established the Equal Employment Opportunity Commission (EEOC).</li><li><strong>Challenge:</strong> While the 1964 Act desegregated public spaces, Southern sheriffs and registrars still used discriminatory literacy tests, poll taxes, and white violence to prevent over 95% of Black citizens from registering to vote in counties like Dallas County (Selma), Alabama; true political power required federal voting rights protection.</li></ol>"
         }
       ],
       "banner": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
@@ -8389,7 +8368,8 @@
           "question": "Using paragraph [4.1], what happened to peaceful marchers on 'Bloody Sunday' (7 March 1965) at Edmund Pettus Bridge in Selma, Alabama?",
           "answer": "Alabama state troopers fired tear gas and savagely beat marchers with clubs and bullwhips on horseback."
         }
-      ]
+      ],
+      "extra_videos": []
     },
     {
       "id": "lesson_2_3",
@@ -12155,17 +12135,6 @@
           "teacher_guidance": "Recommended Watch Window: 00:00–02:18 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts early 1950s CIA covert operations in Saigon and the roots of American military entanglement.",
           "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film contrast European cynical experience with American naive idealism about engineering a 'Third Force' in Vietnam?",
           "model_answer": "Cinematic Discussion Focus: The trailer shows CIA operative Pyle genuinely believing he can save Vietnam with Western democracy, yet blind to the fact that his covert bombs are slaughtering ordinary civilians in Saigon squares."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "The Vietnam War: Roots of Conflict & The Domino Theory | PBS Archive",
-          "duration": "15 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–13:00 | Lesson Phase: Geopolitical Strategy | Tone Alert: Explores Eisenhower's Domino Theory, the Geneva Accords, and Diem's Catholic nepotism.",
-          "viewing_task": "[02:30] Recall: What was Eisenhower's 'Domino Theory' regarding Southeast Asia articulated in April 1954?\n[06:00] Explain: Why did the US support Ngo Dinh Diem's refusal to hold the 1956 nationwide elections mandated by the Geneva Accords?\n[10:15] Challenge: How did Diem's harsh repression of South Vietnam's Buddhist majority culminate in Thich Quang Duc's self-immolation in June 1963?",
-          "model_answer": "Recall: If Vietnam fell to communism, neighboring nations (Laos, Cambodia, Thailand, Burma) would topple one after another like a row of dominoes.\nExplain: US intelligence acknowledged that North Vietnamese leader Ho Chi Minh would win over 80% of the vote due to his heroic reputation defeating French colonialism.\nChallenge: Diem gave top government jobs exclusively to Catholic relatives and banned Buddhist flags; monk Thich Quang Duc set himself on fire at a busy Saigon intersection, producing photographs that destroyed Diem's international legitimacy."
         }
       ],
       "banner": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg",
@@ -14799,17 +14768,6 @@
           "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> Name two common booby traps manufactured by the Vietcong from discarded US artillery shells, scrap metal, and bamboo stakes.</li><li><strong>[02:15] Explain:</strong> Describe the engineering features of the 150-mile Cu Chi tunnel complex (hospitals, kitchens, sleeping quarters) and why US chemical defoliants (Agent Orange) and napalm failed to destroy them.</li><li><strong>[03:40] Challenge:</strong> Evaluate why General William Westmoreland's strategy of \"attrition\" (measuring military success by \"body count\") proved a fatal strategic error in Vietnam.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Punji stake pits (sharpened bamboo stakes smeared with human excrement to cause gangrene) and \"bouncing betty\" landmines or toe-popper explosive cartridges.</li><li><strong>Explain:</strong> The Cu Chi tunnels featured multi-level labyrinthine engineering with airtight trapdoors, U-shaped water locks to block tear gas, and disguised smoke vents that filtered cooking smoke miles away in the jungle. They were dug up to 30 feet underground through dense clay, rendering them virtually immune to conventional bombing. While Agent Orange stripped foliage and napalm incinerated the surface, Vietcong fighters survived safely underground, emerging behind US patrols to stage devastating ambushes.</li><li><strong>Challenge:</strong> Westmoreland assumed that superior American firepower could kill Vietcong and North Vietnamese soldiers faster than North Vietnam could replace them. However, Ho Chi Minh correctly understood that North Vietnam was fighting a total war for national survival and was willing to accept massive casualties (famously declaring: \"You can kill ten of my men for every one I kill of yours, yet even at those odds, you will lose and I will win\"). The \"body count\" metric led to fabricated casualty reports, masked political defeat, and destroyed the morale of US troops who captured hills only to abandon them days later.</li></ol>",
           "id": "XsLE6EtrvhM"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "Air Cavalry, Napalm & The Cu Chi Tunnels | Vietnam Tactical Deep Dive",
-          "duration": "14 mins 10 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Detailed tactical comparison between US high-tech firepower and NLF guerrilla warfare.",
-          "viewing_task": "[02:30] Recall: What was General Westmoreland's strategy of 'attrition' and measuring progress via 'body counts'?\n[06:00] Explain: How did the Vietcong's 250km Cu Chi tunnel network protect guerrillas from B-52 carpet bombing and napalm defoliation?\n[10:15] Challenge: Why did chemical defoliants like Agent Orange fail to break enemy logistics while creating a catastrophic legacy of cancer and birth defects?",
-          "model_answer": "Recall: Believing superior firepower could kill enemy troops faster than North Vietnam could replace them, using daily published enemy casualty counts as the metric of victory.\nExplain: Multi-level subterranean complexes contained hospitals, sleeping chambers, weapon factories, and water wells; guerrillas emerged to ambush patrols and disappeared underground before artillery could strike.\nChallenge: It poisoned 5 million acres of jungle and crops without halting the Ho Chi Minh Trail, alienating peasant farmers whose livelihoods were destroyed and creating lasting ecological and health disasters."
         }
       ],
       "banner": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
@@ -16166,17 +16124,6 @@
           "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts the leak and publication of the top-secret Pentagon Papers in 1971.",
           "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film capture the constitutional showdown between freedom of the press and the Nixon administration's attempts to cover up decades of presidential deception?",
           "model_answer": "Cinematic Discussion Focus: The trailer shows the Washington Post risking criminal prosecution to publish the secret history of Vietnam, revealing that four successive administrations lied about war progress while privately knowing the war was unwinnable."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "Operation Menu: The Secret Bombing of Cambodia & Vietnamization | PBS",
-          "duration": "13 mins 20 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–11:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Explores Nixon's 'madman theory', secret B-52 strikes, and the Cambodian genocide.",
-          "viewing_task": "[02:00] Recall: What was President Richard Nixon's policy of 'Vietnamization' announced in 1969?\n[05:45] Explain: Why did Nixon and Henry Kissinger keep the B-52 bombing of neutral Cambodia (Operation Menu) secret from Congress and the American public?\n[09:30] Challenge: How did the destabilization of Cambodia caused by 500,000 tons of US bombs directly pave the way for Pol Pot and the Khmer Rouge genocide?",
-          "model_answer": "Recall: Gradually withdrawing 500,000 US combat troops while transferring ground combat responsibility to the South Vietnamese ARVN, backed by intense US air power.\nExplain: Bombing a sovereign neutral country without congressional approval was an unconstitutional act of war that would trigger explosive domestic anti-war protests.\nChallenge: Massive carpet bombing shattered the rural social fabric and killed an estimated 100,000 civilians, driving radicalized peasants into the ranks of the extremist Khmer Rouge, who seized power and murdered over 1.7 million people."
         }
       ],
       "banner": "/units/usa/assets/sources/nixon-visiting-troops.jpg",
@@ -17455,17 +17402,6 @@
           "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Aaron Sorkin's courtroom drama depicting anti-war leaders put on trial following the 1968 Chicago DNC riots.",
           "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film portray the government's attempt to criminalize political dissent against the Vietnam War?",
           "model_answer": "Cinematic Discussion Focus: The trailer dramatises how federal prosecutors charged protest leaders under anti-riot conspiracy laws, framing democratic protest as treason while police violently clubbed demonstrators in front of television cameras."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "My Lai & Kent State: The Moral Crisis of Vietnam | Documentary Archive",
-          "duration": "14 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Investigates the March 1968 massacre of 504 unarmed Vietnamese villagers and the May 1970 shootings.",
-          "viewing_task": "[02:30] Recall: What actions did helicopter pilot Hugh Thompson take to halt the massacre of civilians by Charlie Company at My Lai?\n[06:15] Explain: How did journalist Seymour Hersh's investigative reporting expose the military cover-up of My Lai in November 1969?\n[10:00] Challenge: How did the killing of four unarmed students by the Ohio National Guard at Kent State University trigger a nationwide campus strike of over 4 million students?",
-          "model_answer": "Recall: Thompson landed his helicopter between rampaging US soldiers and terrified villagers, ordering his crew to train their machine guns on American troops if they fired again.\nExplain: Army commanders covered up the massacre for 18 months as a 'battle with 128 enemy dead'; Hersh interviewed Lieutenant William Calley and broke the story, shattering the myth of American moral righteousness.\nChallenge: When soldiers shot American college students on their own campus during protests against the invasion of Cambodia, hundreds of universities closed down, polarizing the nation between anti-war youth and pro-Nixon conservatives."
         }
       ],
       "banner": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg",
@@ -18744,17 +18680,6 @@
           "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Working-Class Conservatism | Tone Alert: Visual record of New York construction workers attacking anti-war students in May 1970.",
           "viewing_task": "[01:10] Cinematic Discussion Focus: Why did blue-collar working-class Americans feel alienated and enraged by privileged college student protesters?",
           "model_answer": "Cinematic Discussion Focus: Working-class families could not afford college draft deferments; their sons were dying in Vietnam while affluent university students burned American flags and called soldiers baby-killers, provoking fierce patriotic counter-reactions."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "Nixon's Silent Majority Speech (November 1969) | Historical Masterclass",
-          "duration": "11 mins 45 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:30–10:30 | Lesson Phase: Political Strategy | Tone Alert: Detailed breakdown of Nixon's landmark televised address and polling shift.",
-          "viewing_task": "[01:45] Recall: What phrase did Nixon use to appeal to the millions of Americans who did not protest in streets ('the great silent majority')?\n[04:30] Explain: How did Nixon argue that a precipitous US withdrawal would cause a 'bloodbath' in South Vietnam and destroy American global credibility?\n[08:15] Challenge: How did Nixon's silent majority strategy mobilize conservative suburban voters and shatter the Democratic New Deal coalition?",
-          "model_answer": "Recall: 'And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support.'\nExplain: He argued that abandoning an ally would invite communist aggression worldwide, destroy faith in US treaty commitments, and dishonor the sacrifice of 31,000 Americans who had died.\nChallenge: Nixon received an unprecedented 77% approval rating for the speech, cementing a conservative political realignment that dominated American presidential elections for the next two decades."
         }
       ],
       "banner": "/units/usa/assets/sources/hard-hat-riot-1970.jpg",
@@ -20068,17 +19993,6 @@
           "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Academy Award-nominated documentary chronicling the chaotic April 1975 evacuation of Saigon.",
           "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film capture the moral anguish of American officers defying orders to evacuate thousands of South Vietnamese allies before the city fell?",
           "model_answer": "Cinematic Discussion Focus: The trailer shows helicopters pushed off aircraft carrier decks into the South China Sea to make room for more fleeing refugees, capturing the desperate panic and heartbreak as an allied nation was abandoned to its fate."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "The Fall of Saigon: Operation Frequent Wind | Archival Masterclass",
-          "duration": "15 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Comprehensive examination of the 1973 Paris Peace Accords, Watergate, and the 1975 North Vietnamese offensive.",
-          "viewing_task": "[02:30] Recall: What terms did the January 1973 Paris Peace Accords establish (complete US withdrawal, release of POWs, North Vietnamese troops remaining in the South)?\n[06:15] Explain: How did the Watergate scandal and Nixon's resignation in August 1974 prevent President Gerald Ford from providing promised air support when the North invaded?\n[10:45] Challenge: How did the iconic photograph of refugees climbing a ladder to a CIA helicopter atop a Saigon apartment building become the defining symbol of American imperial defeat?",
-          "model_answer": "Recall: All US forces left within 60 days, while 150,000 North Vietnamese PAVN soldiers were permitted to keep control of conquered areas in South Vietnam.\nExplain: An anti-war Congress passed the War Powers Act (1973) over Nixon's veto and slashed military aid to Saigon; when North Vietnamese tanks struck, Congress refused Ford's desperate request for emergency funds.\nChallenge: It provided a permanent visual rebuke to American global omnipotence: a superpower that possessed nuclear weapons and spent $140 billion was reduced to scrambling for the skids of a helicopter on an apartment roof."
         }
       ],
       "banner": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
@@ -21394,17 +21308,6 @@
           "viewing_task": "<ol><li><strong>[02:30] Recall:</strong> How did the Soviet Union and Communist China provide vital military support to North Vietnam without committing their own combat armies directly?</li><li><strong>[05:15] Explain:</strong> Explain why the US military policy of 1-year tours of duty (\"short-timer syndrome\") and the \"ticket-punching\" system for officers destroyed squad cohesion and combat effectiveness in the jungle.</li><li><strong>[07:45] Challenge:</strong> Historiographical Synthesis: Assess the view that the United States lost the Vietnam War not on the battlefields of Southeast Asia, but on the home front in America.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> The USSR supplied sophisticated surface-to-air missile systems (SAM-2), radar, heavy artillery, and MiG-21 fighter jets, while China provided hundreds of thousands of engineering, railway, and logistics personnel to keep the supply lines running, freeing the North Vietnamese Army to focus entirely on combat.</li><li><strong>Explain:</strong> Enlisted soldiers served only a 365-day tour (13 months for Marines). Just as a soldier gained jungle survival instincts, he was sent home, replaced by raw, inexperienced recruits (\"cherries\"). Officers rotated through frontline commands every six months to \"punch their ticket\" for promotion, leading to inexperienced commanders who took reckless risks or were mistrusted by their men, leading to high rates of desertion, drug abuse, and even \"fragging\" (murdering unpopular officers with fragmentation grenades).</li><li><strong>Challenge:</strong> While the US military won virtually every major tactical battle (including decisively crushing the 1968 Tet Offensive and the 1972 Easter Offensive), military dominance could never substitute for political victory. Because the US could not invade North Vietnam without risking World War III with China/USSR, and could not build a legitimate democratic government in Saigon, the war became an unwinnable war of attrition where communist patience inevitably outlasted American domestic political willpower.</li></ol>",
           "id": "zAq6MrYgLr0"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "Hearts and Minds (1974) | Academy Award-Winning Documentary Trailer",
-          "duration": "2 mins 30 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Landmark cinematic critique contrasting military hubris with the reality of Vietnamese suffering.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film contrast General Westmoreland's claim that 'the Oriental doesn't put the same high price on life as a Westerner' with weeping Vietnamese mothers at graves?",
-          "model_answer": "Cinematic Discussion Focus: The film's juxtaposition exposed the deep-seated racism and moral blindness of US military leadership, demonstrating why the American campaign to 'win hearts and minds' failed so catastrophically."
         },
         {
           "type": "youtube",
