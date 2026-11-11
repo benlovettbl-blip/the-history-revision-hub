@@ -1890,7 +1890,7 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
 
     if (speedRunPace <= 0) {
       bar.style.strokeDashoffset = '0';
-      bar.className = 'speedrun-timer-bar';
+      bar.setAttribute('class', 'speedrun-timer-bar');
       num.innerHTML = '<i class="fa-solid fa-infinity" style="font-size: 1.2rem; color: #38bdf8;"></i>';
       return;
     }
@@ -1901,11 +1901,11 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
     num.textContent = String(speedRunTimeLeft);
 
     if (speedRunTimeLeft <= 3) {
-      bar.className = 'speedrun-timer-bar urgent';
+      bar.setAttribute('class', 'speedrun-timer-bar urgent');
     } else if (speedRunTimeLeft <= 5) {
-      bar.className = 'speedrun-timer-bar warning';
+      bar.setAttribute('class', 'speedrun-timer-bar warning');
     } else {
-      bar.className = 'speedrun-timer-bar';
+      bar.setAttribute('class', 'speedrun-timer-bar');
     }
   }
 

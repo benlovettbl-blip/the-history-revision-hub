@@ -11949,6 +11949,213 @@ body.search-modal-open {
   line-height: 1.35;
 }
 
+/* Mobile Responsive Optimization for Rapid Fire Showdown */
+@media (max-width: 640px) {
+  /* Top Command Bar */
+  .speedrun-top-bar {
+    padding: 8px 12px !important;
+    gap: 8px !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    align-items: center !important;
+  }
+
+  .speedrun-brand {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .speedrun-unit-title {
+    display: none !important;
+  }
+
+  .speedrun-bolt-badge {
+    font-size: 0.72rem !important;
+    padding: 3px 8px !important;
+  }
+
+  .speedrun-top-actions {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .btn-speedrun-sound,
+  .btn-speedrun-pause-top,
+  .btn-speedrun-close {
+    padding: 5px 9px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .speedrun-pace-group {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+    padding: 2px !important;
+  }
+
+  .speedrun-pace-btn {
+    flex: 1 1 0 !important;
+    text-align: center !important;
+    padding: 4px 6px !important;
+    font-size: 0.72rem !important;
+  }
+
+  /* Central Stage */
+  .speedrun-stage {
+    width: 94% !important;
+    padding: 8px 0 !important;
+  }
+
+  .speedrun-meta-row {
+    gap: 6px !important;
+    margin-bottom: 8px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .speedrun-q-counter {
+    font-size: 0.74rem !important;
+    padding: 2px 10px !important;
+  }
+
+  .speedrun-origin-tag {
+    font-size: 0.72rem !important;
+    padding: 2px 8px !important;
+  }
+
+  .speedrun-question-text {
+    font-size: clamp(1.15rem, 4.5vw, 1.45rem) !important;
+    line-height: 1.35 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .speedrun-timer-circle-wrap {
+    width: 76px !important;
+    height: 76px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .speedrun-timer-num {
+    font-size: 1.45rem !important;
+  }
+
+  .speedrun-answer-card {
+    padding: 12px 14px !important;
+    border-radius: 12px !important;
+    margin-top: 6px !important;
+  }
+
+  .speedrun-answer-header {
+    font-size: 0.72rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  .speedrun-answer-text {
+    font-size: clamp(1.05rem, 4.2vw, 1.35rem) !important;
+    line-height: 1.3 !important;
+  }
+
+  .speedrun-explanation-text {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+    margin-top: 6px !important;
+    padding-top: 6px !important;
+  }
+
+  /* Bottom Actions Bar */
+  .speedrun-bottom-bar {
+    padding: 10px 14px !important;
+    gap: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .speedrun-clicker-hint {
+    display: none !important;
+  }
+
+  .btn-speedrun-action {
+    padding: 12px 16px !important;
+    font-size: 0.92rem !important;
+  }
+
+  .btn-speedrun-action.prev {
+    flex: 0 0 auto !important;
+    padding: 12px 14px !important;
+  }
+
+  .btn-speedrun-action.reveal,
+  .btn-speedrun-action.next {
+    flex: 1 1 auto !important;
+    justify-content: center !important;
+  }
+
+  /* Results Screen */
+  .speedrun-results-card {
+    width: 96% !important;
+    padding: 14px 12px 12px 12px !important;
+    margin: 6px auto !important;
+    max-height: calc(100vh - 70px) !important;
+    border-radius: 14px !important;
+  }
+
+  .speedrun-results-header {
+    margin-bottom: 8px !important;
+  }
+
+  .speedrun-results-header > div:first-child {
+    font-size: 1.8rem !important;
+    margin-bottom: 2px !important;
+  }
+
+  .speedrun-results-title {
+    font-size: 1.35rem !important;
+    margin-bottom: 2px !important;
+  }
+
+  .speedrun-results-subtitle {
+    font-size: 0.74rem !important;
+  }
+
+  .speedrun-results-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    max-height: 52vh !important;
+    padding: 2px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .speedrun-result-item {
+    padding: 8px 10px !important;
+  }
+
+  .speedrun-result-item .item-q {
+    font-size: 0.78rem !important;
+  }
+
+  .speedrun-result-item .item-a {
+    font-size: 0.8rem !important;
+  }
+
+  .speedrun-results-footer {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  .speedrun-results-footer .btn-speedrun-action {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 10px 14px !important;
+    font-size: 0.86rem !important;
+  }
+}
+
 /* ==========================================================================
    VOCABULARY MATCHING GAME (OPTION 1: ASYMMETRIC GRID & BALANCED CARDS)
    ========================================================================== */
