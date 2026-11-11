@@ -1150,6 +1150,12 @@ export function renderGcseDoNowPanelHTML({
   const rowsHtml = renderDoNowRowsHTML(result.questions, activeMode, currentUnitId);
   const chipsHtml = renderGcseUnitChipsHTML(currentTarget, isKs3Effective);
 
+  if (typeof window !== 'undefined') {
+    window.currentDoNowQuestions = result.questions;
+    window.currentDoNowSubtitle = result.subtitle;
+    window.currentDoNowUnitMeta = { unitId: currentUnitId, lessonId: lesson?.id || '', lessonNum: lesson?.number || '' };
+  }
+
   return `
     <div class="donow-panel-content gcse-3mode-donow" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}" data-is-ks3="${isKs3Effective ? 'true' : 'false'}">
       <!-- Fullscreen Whiteboard Presentation Top Bar (Active only in Whiteboard mode) -->
@@ -1162,6 +1168,9 @@ export function renderGcseDoNowPanelHTML({
           <span class="donow-pres-hint"><kbd>Space</kbd> or <kbd>&rarr;</kbd> Clicker: Reveal Next &bull; <kbd>R</kbd>: Reveal All &bull; <kbd>Esc</kbd>: Exit</span>
         </div>
         <div style="display: flex; align-items: center; gap: 8px;">
+          <button type="button" class="btn-donow-speedrun" onclick="event.stopPropagation(); window.startDoNowSpeedRun();" title="Start Rapid-Fire Showdown (Whiteboard Drill)" style="padding: 5px 12px; font-size: 0.78rem; font-weight: 800; border-radius: 999px; border: 1px solid #eab308; background: linear-gradient(135deg, #fef08a 0%, #fde047 100%); color: #713f12; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(234, 179, 8, 0.4);">
+            <i class="fa-solid fa-bolt" style="color: #ca8a04;"></i> Rapid Fire
+          </button>
           <button type="button" class="btn-donow-pres-reveal-all" onclick="event.stopPropagation(); window.toggleDoNowAllAnswers();" title="Toggle reveal/hide all answers (Key 'R')">
             <i class="fa-solid fa-eye"></i> Reveal All
           </button>
@@ -1265,6 +1274,14 @@ export function renderGcseDoNowPanelHTML({
             title="Full-Screen Whiteboard Presentation Mode (Press 'P' or 'F')"
             style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0f172a; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
             <i class="fa-solid fa-expand" style="color: #0284c7;"></i> Whiteboard
+          </button>
+
+          <button type="button"
+            class="btn-donow-speedrun"
+            onclick="event.stopPropagation(); window.startDoNowSpeedRun();"
+            title="Start 90-Second Rapid-Fire Showdown (Whiteboard Drill)"
+            style="padding: 4px 11px; font-size: 0.74rem; font-weight: 800; border-radius: 999px; border: 1px solid #facc15; background: linear-gradient(180deg, #fef9c3 0%, #fef08a 100%); color: #854d0e; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(202,138,4,0.15); transition: all 0.15s ease;">
+            <i class="fa-solid fa-bolt" style="color: #ca8a04;"></i> Rapid Fire
           </button>
         </div>
 
@@ -1529,6 +1546,11 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       result = getPreviousLessonQuestions(activeUnit, lesson, seed, count);
     }
 
+    if (typeof window !== 'undefined') {
+      window.currentDoNowQuestions = result.questions;
+      window.currentDoNowSubtitle = result.subtitle;
+    }
+
     if (typeof document !== 'undefined') {
       // Update subtitle
       const subTextEl = document.getElementById('donow-mode-subtitle-text');
@@ -1679,6 +1701,536 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
     }
   };
 
+  /* ==========================================================================
+     90-SECOND RAPID-FIRE SHOWDOWN (WHITEBOARD DRILL ENGINE)
+     ========================================================================== */
+  let speedRunQuestions = [];
+  let speedRunCurrentIndex = 0;
+  let speedRunIsRevealed = false;
+  let speedRunTimeLeft = 10;
+  let speedRunTimerInterval = null;
+  let speedRunAutoAdvanceTimer = null;
+  let speedRunIsPaused = false;
+  let speedRunPace = 10;
+
+  function playSpeedRunSound(type) {
+    if (typeof window === 'undefined' || window._speedRunMuted) return;
+    try {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (!AudioCtx) return;
+      if (!window._speedRunAudioCtx) {
+        window._speedRunAudioCtx = new AudioCtx();
+      }
+      const ctx = window._speedRunAudioCtx;
+      if (ctx.state === 'suspended') {
+        ctx.resume().catch(() => {});
+      }
+
+      if (type === 'tick') {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(800, ctx.currentTime);
+        gain.gain.setValueAtTime(0.04, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.04);
+      } else if (type === 'urgent') {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(1200, ctx.currentTime);
+        gain.gain.setValueAtTime(0.09, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.08);
+      } else if (type === 'reveal') {
+        [523.25, 659.25].forEach((freq, idx) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.05);
+          gain.gain.setValueAtTime(0.12, ctx.currentTime + idx * 0.05);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.05 + 0.35);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(ctx.currentTime + idx * 0.05);
+          osc.stop(ctx.currentTime + idx * 0.05 + 0.35);
+        });
+      } else if (type === 'complete') {
+        [523.25, 659.25, 783.99, 1046.5].forEach((freq, idx) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.09);
+          gain.gain.setValueAtTime(0.14, ctx.currentTime + idx * 0.09);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.09 + 0.5);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(ctx.currentTime + idx * 0.09);
+          osc.stop(ctx.currentTime + idx * 0.09 + 0.5);
+        });
+      }
+    } catch (e) {}
+  }
+
+  function renderSpeedRunCurrentQuestionDOM() {
+    if (typeof document === 'undefined') return;
+    const stage = document.getElementById('speedrun-stage');
+    const bottomBar = document.getElementById('speedrun-bottom-bar');
+    if (!stage || !bottomBar) return;
+
+    if (speedRunCurrentIndex >= speedRunQuestions.length) {
+      renderSpeedRunResultsDOM();
+      return;
+    }
+
+    const q = speedRunQuestions[speedRunCurrentIndex];
+    const qText = q.question || q.q || '';
+    const aText = q.answer || q.a || '';
+    const expText = q.explanation || (q.hasSubstantiveExplanation ? q.explanation : '');
+
+    let originHtml = '';
+    if (q.unitLabel) {
+      originHtml = `<span class="speedrun-origin-tag" style="background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.3); color: #cbd5e1;"><i class="fa-solid fa-tag" style="font-size: 0.7rem; color: #38bdf8;"></i> ${q.unitLabel}${q.lessonNum ? ` • L${q.lessonNum}` : ''}</span>`;
+    }
+
+    stage.innerHTML = `
+      <div class="speedrun-meta-row">
+        <span class="speedrun-q-counter">Question ${speedRunCurrentIndex + 1} of ${speedRunQuestions.length}</span>
+        ${originHtml}
+      </div>
+
+      <h2 class="speedrun-question-text">${qText}</h2>
+
+      <div class="speedrun-timer-circle-wrap" id="speedrun-timer-wrap">
+        <svg class="speedrun-timer-svg" viewBox="0 0 100 100">
+          <circle class="speedrun-timer-bg" cx="50" cy="50" r="44"></circle>
+          <circle class="speedrun-timer-bar" id="speedrun-timer-bar" cx="50" cy="50" r="44"></circle>
+        </svg>
+        <div class="speedrun-timer-num" id="speedrun-timer-num">
+          ${speedRunPace > 0 ? speedRunTimeLeft : '<i class="fa-solid fa-infinity" style="font-size: 1.2rem; color: #38bdf8;"></i>'}
+        </div>
+      </div>
+
+      <div class="speedrun-answer-card" id="speedrun-answer-card" style="display: ${speedRunIsRevealed ? 'block' : 'none'};">
+        <div class="speedrun-answer-header">
+          <i class="fa-solid fa-circle-check"></i> Model Recall Answer
+        </div>
+        <div class="speedrun-answer-text">${aText}</div>
+        ${expText ? `<div class="speedrun-explanation-text"><i class="fa-solid fa-lightbulb" style="color: #6ee7b7; margin-right: 5px;"></i> ${expText}</div>` : ''}
+      </div>
+    `;
+
+    // Bottom action bar
+    const isLast = speedRunCurrentIndex >= speedRunQuestions.length - 1;
+    bottomBar.innerHTML = `
+      <button type="button" class="btn-speedrun-action prev" onclick="window.speedRunPrevQuestion();" ${speedRunCurrentIndex === 0 ? 'disabled style="opacity: 0.35; cursor: not-allowed; background: #334155; color: #94a3b8;"' : 'style="background: #334155; color: #f1f5f9;"'} title="Previous Question (Arrow Left / PageUp)">
+        <i class="fa-solid fa-arrow-left"></i> Back
+      </button>
+
+      <div class="speedrun-clicker-hint">
+        <kbd>Space</kbd> or <kbd>&rarr;</kbd> Clicker: ${!speedRunIsRevealed ? 'Reveal Answer' : 'Next Question'} &bull; <kbd>P</kbd>: Pause &bull; <kbd>Esc</kbd>: Exit
+      </div>
+
+      ${!speedRunIsRevealed ? `
+        <button type="button" class="btn-speedrun-action reveal" onclick="window.speedRunRevealNow();" title="Reveal Answer (Spacebar / Clicker)">
+          <i class="fa-solid fa-eye"></i> Reveal Answer
+        </button>
+      ` : `
+        <button type="button" class="btn-speedrun-action next" onclick="window.speedRunNextQuestion();" title="${isLast ? 'Finish Drill & View Results' : 'Advance to Next Question (Spacebar / Clicker)'}">
+          <span>${isLast ? 'View Results 🏁' : 'Next Question'}</span>
+          <i class="fa-solid ${isLast ? 'fa-flag-checkered' : 'fa-arrow-right'}"></i>
+        </button>
+      `}
+    `;
+  }
+
+  function startSpeedRunCountdown() {
+    clearInterval(speedRunTimerInterval);
+    clearTimeout(speedRunAutoAdvanceTimer);
+
+    if (speedRunPace <= 0) {
+      speedRunTimeLeft = 0;
+      updateSpeedRunTimerDisplay();
+      return;
+    }
+
+    speedRunTimeLeft = speedRunPace;
+    updateSpeedRunTimerDisplay();
+
+    speedRunTimerInterval = setInterval(() => {
+      if (speedRunIsPaused || !window._speedRunIsActive) return;
+
+      speedRunTimeLeft--;
+      updateSpeedRunTimerDisplay();
+
+      if (speedRunTimeLeft > 3) {
+        playSpeedRunSound('tick');
+      } else if (speedRunTimeLeft <= 3 && speedRunTimeLeft > 0) {
+        playSpeedRunSound('urgent');
+      }
+
+      if (speedRunTimeLeft <= 0) {
+        clearInterval(speedRunTimerInterval);
+        window.speedRunRevealNow(true);
+      }
+    }, 1000);
+  }
+
+  function updateSpeedRunTimerDisplay() {
+    if (typeof document === 'undefined') return;
+    const bar = document.getElementById('speedrun-timer-bar');
+    const num = document.getElementById('speedrun-timer-num');
+    if (!bar || !num) return;
+
+    if (speedRunPace <= 0) {
+      bar.style.strokeDashoffset = '0';
+      bar.className = 'speedrun-timer-bar';
+      num.innerHTML = '<i class="fa-solid fa-infinity" style="font-size: 1.2rem; color: #38bdf8;"></i>';
+      return;
+    }
+
+    const fraction = Math.max(0, speedRunTimeLeft / speedRunPace);
+    const offset = 276.46 * (1 - fraction);
+    bar.style.strokeDashoffset = String(offset);
+    num.textContent = String(speedRunTimeLeft);
+
+    if (speedRunTimeLeft <= 3) {
+      bar.className = 'speedrun-timer-bar urgent';
+    } else if (speedRunTimeLeft <= 5) {
+      bar.className = 'speedrun-timer-bar warning';
+    } else {
+      bar.className = 'speedrun-timer-bar';
+    }
+  }
+
+  function renderSpeedRunResultsDOM() {
+    clearInterval(speedRunTimerInterval);
+    clearTimeout(speedRunAutoAdvanceTimer);
+    playSpeedRunSound('complete');
+
+    const overlay = document.getElementById('donow-speedrun-overlay');
+    if (!overlay) return;
+
+    const itemsHtml = speedRunQuestions.map((q, idx) => {
+      const qText = q.question || q.q || '';
+      const aText = q.answer || q.a || '';
+      return `
+        <div class="speedrun-result-item">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+            <span style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase;">Q${idx + 1}${q.unitLabel ? ` &bull; ${q.unitLabel}` : ''}</span>
+          </div>
+          <div class="item-q">${qText}</div>
+          <div class="item-a"><i class="fa-solid fa-circle-check" style="font-size: 0.76rem; margin-right: 4px;"></i>${aText}</div>
+        </div>
+      `;
+    }).join('');
+
+    overlay.innerHTML = `
+      <div class="speedrun-top-bar">
+        <div class="speedrun-brand">
+          <span class="speedrun-bolt-badge"><i class="fa-solid fa-bolt"></i> Rapid Fire</span>
+          <span class="speedrun-unit-title">Summary &amp; Green Pen Check</span>
+        </div>
+        <button type="button" class="btn-speedrun-close" onclick="window.stopDoNowSpeedRun();">
+          <i class="fa-solid fa-xmark"></i> Close (Esc)
+        </button>
+      </div>
+
+      <div class="speedrun-stage" style="justify-content: flex-start; padding-top: 10px;">
+        <div class="speedrun-results-card">
+          <div class="speedrun-results-header">
+            <div style="font-size: 2.5rem; margin-bottom: 6px;">⚡🏆</div>
+            <h2 class="speedrun-results-title">Drill Complete!</h2>
+            <div class="speedrun-results-subtitle">
+              Retrieved ${speedRunQuestions.length} specification recall items &bull; Check your answers with a green pen
+            </div>
+          </div>
+
+          <div class="speedrun-results-grid">
+            ${itemsHtml}
+          </div>
+
+          <div class="speedrun-results-footer">
+            <button type="button" class="btn-speedrun-action next" onclick="window.startDoNowSpeedRun(false);" style="background: #0284c7;">
+              <i class="fa-solid fa-rotate-left"></i> Re-run Drill
+            </button>
+            <button type="button" class="btn-speedrun-action next" onclick="window.startDoNowSpeedRun(true);" style="background: #eab308; color: #713f12;">
+              <i class="fa-solid fa-shuffle"></i> Shuffle &amp; Re-run
+            </button>
+            <button type="button" class="btn-speedrun-action" onclick="window.stopDoNowSpeedRun();" style="background: #334155; color: #ffffff;">
+              <i class="fa-solid fa-check"></i> Return to Lesson
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  window.startDoNowSpeedRun = function (forceShuffle = false) {
+    if (typeof document === 'undefined') return;
+
+    // Load active questions or generate from current scope or DOM
+    let questions = Array.isArray(window.currentDoNowQuestions) && window.currentDoNowQuestions.length > 0
+      ? [...window.currentDoNowQuestions]
+      : [];
+
+    if (questions.length === 0 && typeof window.refreshCurrentGcseDoNow === 'function') {
+      window.refreshCurrentGcseDoNow(false);
+      questions = Array.isArray(window.currentDoNowQuestions) ? [...window.currentDoNowQuestions] : [];
+    }
+
+    if (questions.length === 0) {
+      const rows = document.querySelectorAll('.donow-sentence-row');
+      rows.forEach((row, idx) => {
+        const qEl = row.querySelector('.donow-q-text');
+        const aEl = row.querySelector('.donow-answer-badge span') || row.querySelector('.answer');
+        const expEl = row.querySelector('.donow-exp-text');
+        const badgeEl = row.querySelector('.donow-source-badge');
+        if (qEl && aEl) {
+          questions.push({
+            question: qEl.textContent.trim(),
+            answer: aEl.textContent.trim(),
+            explanation: expEl ? expEl.textContent.trim() : '',
+            unitLabel: badgeEl ? badgeEl.textContent.trim() : '',
+            lessonNum: idx + 1
+          });
+        }
+      });
+    }
+
+    if (questions.length === 0) {
+      alert('No recall questions available for the current scope.');
+      return;
+    }
+
+    if (forceShuffle) {
+      questions = shuffleArray(questions, Date.now());
+    }
+
+    // Load saved preferences
+    try {
+      const savedPace = localStorage.getItem('donow_speedrun_pace');
+      speedRunPace = savedPace !== null ? parseInt(savedPace, 10) : 10;
+      if (isNaN(speedRunPace)) speedRunPace = 10;
+      window._speedRunMuted = localStorage.getItem('donow_speedrun_muted') === 'true';
+    } catch (e) {
+      speedRunPace = 10;
+      window._speedRunMuted = false;
+    }
+
+    speedRunQuestions = questions;
+    speedRunCurrentIndex = 0;
+    speedRunIsRevealed = false;
+    speedRunIsPaused = false;
+    window._speedRunIsActive = true;
+
+    // Create or reset overlay
+    let overlay = document.getElementById('donow-speedrun-overlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'donow-speedrun-overlay';
+      overlay.className = 'donow-speedrun-overlay';
+      document.body.appendChild(overlay);
+    }
+
+    const subtitle = window.currentDoNowSubtitle || 'Rapid-Fire Retrieval Drill';
+
+    overlay.innerHTML = `
+      <div class="speedrun-top-bar">
+        <div class="speedrun-brand">
+          <span class="speedrun-bolt-badge"><i class="fa-solid fa-bolt"></i> Rapid Fire</span>
+          <span class="speedrun-unit-title" id="speedrun-top-subtitle">${subtitle}</span>
+        </div>
+
+        <div class="speedrun-pace-group">
+          <button type="button" class="speedrun-pace-btn ${speedRunPace === 8 ? 'active' : ''}" onclick="window.setSpeedRunPace(8);">8s</button>
+          <button type="button" class="speedrun-pace-btn ${speedRunPace === 10 ? 'active' : ''}" onclick="window.setSpeedRunPace(10);">10s</button>
+          <button type="button" class="speedrun-pace-btn ${speedRunPace === 15 ? 'active' : ''}" onclick="window.setSpeedRunPace(15);">15s</button>
+          <button type="button" class="speedrun-pace-btn ${speedRunPace === 0 ? 'active' : ''}" onclick="window.setSpeedRunPace(0);">Manual</button>
+        </div>
+
+        <div class="speedrun-top-actions">
+          <button type="button" class="btn-speedrun-sound" onclick="window.toggleSpeedRunMute();" id="btn-speedrun-sound-top">
+            ${window._speedRunMuted ? '<i class="fa-solid fa-volume-xmark" style="color: #ef4444;"></i> Muted' : '<i class="fa-solid fa-volume-high" style="color: #38bdf8;"></i> Sound On'}
+          </button>
+          <button type="button" class="btn-speedrun-pause-top" onclick="window.toggleSpeedRunPause();" id="btn-speedrun-pause-top">
+            <i class="fa-solid fa-pause"></i> Pause (P)
+          </button>
+          <button type="button" class="btn-speedrun-close" onclick="window.stopDoNowSpeedRun();" title="Exit Rapid Fire (Esc)">
+            <i class="fa-solid fa-xmark"></i> Exit (Esc)
+          </button>
+        </div>
+      </div>
+
+      <div class="speedrun-stage" id="speedrun-stage"></div>
+
+      <div class="speedrun-bottom-bar" id="speedrun-bottom-bar"></div>
+    `;
+
+    renderSpeedRunCurrentQuestionDOM();
+    if (speedRunPace > 0) {
+      startSpeedRunCountdown();
+    }
+  };
+
+  window.speedRunRevealNow = function (fromTimer = false) {
+    if (speedRunIsRevealed) return;
+    speedRunIsRevealed = true;
+    clearInterval(speedRunTimerInterval);
+    playSpeedRunSound('reveal');
+
+    const card = document.getElementById('speedrun-answer-card');
+    if (card) card.style.display = 'block';
+
+    const bottomBar = document.getElementById('speedrun-bottom-bar');
+    const isLast = speedRunCurrentIndex >= speedRunQuestions.length - 1;
+    if (bottomBar) {
+      const prevDisabled = speedRunCurrentIndex === 0;
+      bottomBar.innerHTML = `
+        <button type="button" class="btn-speedrun-action prev" onclick="window.speedRunPrevQuestion();" ${prevDisabled ? 'disabled style="opacity: 0.35; cursor: not-allowed; background: #334155; color: #94a3b8;"' : 'style="background: #334155; color: #f1f5f9;"'} title="Previous Question (Arrow Left / PageUp)">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+
+        <div class="speedrun-clicker-hint">
+          <kbd>Space</kbd> or <kbd>&rarr;</kbd> Clicker: ${isLast ? 'View Results' : 'Next Question'} &bull; <kbd>P</kbd>: Pause &bull; <kbd>Esc</kbd>: Exit
+        </div>
+
+        <button type="button" class="btn-speedrun-action next" onclick="window.speedRunNextQuestion();" title="${isLast ? 'Finish Drill & View Results' : 'Advance to Next Question (Spacebar / Clicker)'}">
+          <span>${isLast ? 'View Results 🏁' : 'Next Question'}</span>
+          <i class="fa-solid ${isLast ? 'fa-flag-checkered' : 'fa-arrow-right'}"></i>
+        </button>
+      `;
+    }
+
+    // Auto-advance if timer expired and pace is active
+    if (fromTimer && speedRunPace > 0) {
+      speedRunAutoAdvanceTimer = setTimeout(() => {
+        if (window._speedRunIsActive && !speedRunIsPaused) {
+          window.speedRunNextQuestion();
+        }
+      }, 3500);
+    }
+  };
+
+  window.speedRunNextQuestion = function () {
+    clearInterval(speedRunTimerInterval);
+    clearTimeout(speedRunAutoAdvanceTimer);
+
+    if (!speedRunIsRevealed) {
+      window.speedRunRevealNow();
+      return;
+    }
+
+    if (speedRunCurrentIndex >= speedRunQuestions.length - 1) {
+      renderSpeedRunResultsDOM();
+      return;
+    }
+
+    speedRunCurrentIndex++;
+    speedRunIsRevealed = false;
+    renderSpeedRunCurrentQuestionDOM();
+
+    if (speedRunPace > 0) {
+      startSpeedRunCountdown();
+    }
+  };
+
+  window.speedRunPrevQuestion = function () {
+    if (speedRunCurrentIndex <= 0) return;
+    clearInterval(speedRunTimerInterval);
+    clearTimeout(speedRunAutoAdvanceTimer);
+
+    speedRunCurrentIndex--;
+    speedRunIsRevealed = false;
+    renderSpeedRunCurrentQuestionDOM();
+
+    if (speedRunPace > 0) {
+      startSpeedRunCountdown();
+    }
+  };
+
+  window.speedRunClickerAdvance = function () {
+    if (!speedRunIsRevealed) {
+      window.speedRunRevealNow();
+    } else {
+      window.speedRunNextQuestion();
+    }
+  };
+
+  window.setSpeedRunPace = function (seconds) {
+    speedRunPace = seconds;
+    try {
+      localStorage.setItem('donow_speedrun_pace', String(seconds));
+    } catch (e) {}
+
+    // Update pace buttons
+    if (typeof document !== 'undefined') {
+      const paceBtns = document.querySelectorAll('.speedrun-pace-btn');
+      paceBtns.forEach((btn) => {
+        const text = btn.textContent.trim().toLowerCase();
+        if (seconds === 0 && text === 'manual') {
+          btn.classList.add('active');
+        } else if (seconds > 0 && text === `${seconds}s`) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+
+    if (!speedRunIsRevealed) {
+      if (speedRunPace > 0) {
+        startSpeedRunCountdown();
+      } else {
+        clearInterval(speedRunTimerInterval);
+        updateSpeedRunTimerDisplay();
+      }
+    }
+  };
+
+  window.toggleSpeedRunMute = function () {
+    window._speedRunMuted = !window._speedRunMuted;
+    try {
+      localStorage.setItem('donow_speedrun_muted', window._speedRunMuted ? 'true' : 'false');
+    } catch (e) {}
+
+    const soundBtn = document.getElementById('btn-speedrun-sound-top');
+    if (soundBtn) {
+      soundBtn.innerHTML = window._speedRunMuted
+        ? '<i class="fa-solid fa-volume-xmark" style="color: #ef4444;"></i> Muted'
+        : '<i class="fa-solid fa-volume-high" style="color: #38bdf8;"></i> Sound On';
+    }
+  };
+
+  window.toggleSpeedRunPause = function () {
+    speedRunIsPaused = !speedRunIsPaused;
+    const pauseBtn = document.getElementById('btn-speedrun-pause-top');
+    if (pauseBtn) {
+      pauseBtn.innerHTML = speedRunIsPaused
+        ? '<i class="fa-solid fa-play" style="color: #10b981;"></i> Resume'
+        : '<i class="fa-solid fa-pause"></i> Pause (P)';
+    }
+  };
+
+  window.stopDoNowSpeedRun = function () {
+    clearInterval(speedRunTimerInterval);
+    clearTimeout(speedRunAutoAdvanceTimer);
+    window._speedRunIsActive = false;
+
+    if (typeof document !== 'undefined') {
+      const overlay = document.getElementById('donow-speedrun-overlay');
+      if (overlay) {
+        overlay.remove();
+      }
+    }
+  };
+
   if (typeof window !== 'undefined' && !window._donowKeyHandlerAttached) {
     window._donowKeyHandlerAttached = true;
 
@@ -1686,6 +2238,48 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       const target = e.target;
       const tag = target?.tagName?.toLowerCase();
       if (tag === 'input' || tag === 'textarea' || tag === 'select' || target?.isContentEditable) {
+        return;
+      }
+
+      // 1. Rapid-Fire Speedrun Overlay Shortcuts
+      if (window._speedRunIsActive) {
+        const key = e.key;
+        const code = e.code;
+
+        // Next/Advance: Space, Enter, PageDown, ArrowRight, ArrowDown
+        if (code === 'Space' || key === 'Enter' || key === 'PageDown' || key === 'ArrowRight' || key === 'ArrowDown') {
+          e.preventDefault();
+          window.speedRunClickerAdvance();
+          return;
+        }
+
+        // Back: PageUp, ArrowLeft, ArrowUp
+        if (key === 'PageUp' || key === 'ArrowLeft' || key === 'ArrowUp') {
+          e.preventDefault();
+          window.speedRunPrevQuestion();
+          return;
+        }
+
+        // Pause/Resume toggle: 'p' or 'P'
+        if ((key === 'p' || key === 'P') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+          e.preventDefault();
+          window.toggleSpeedRunPause();
+          return;
+        }
+
+        // Mute toggle: 'm' or 'M'
+        if ((key === 'm' || key === 'M') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+          e.preventDefault();
+          window.toggleSpeedRunMute();
+          return;
+        }
+
+        // Exit: Escape
+        if (key === 'Escape') {
+          e.preventDefault();
+          window.stopDoNowSpeedRun();
+          return;
+        }
         return;
       }
 

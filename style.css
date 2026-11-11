@@ -11510,6 +11510,446 @@ body.search-modal-open {
 }
 
 /* ==========================================================================
+   RAPID-FIRE SHOWDOWN (WHITEBOARD DRILL OVERLAY)
+   ========================================================================== */
+.btn-donow-speedrun {
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.btn-donow-speedrun:hover {
+  background: #fef08a !important;
+  border-color: #eab308 !important;
+  color: #713f12 !important;
+  transform: translateY(-0.5px);
+  box-shadow: 0 2px 6px rgba(202, 138, 4, 0.25) !important;
+}
+
+/* Fullscreen Speedrun Overlay */
+.donow-speedrun-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1000000 !important;
+  background: radial-gradient(circle at 50% 20%, #1e293b 0%, #0f172a 100%) !important;
+  color: #f8fafc !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
+  overflow-y: auto !important;
+  animation: speedrunFadeIn 0.2s ease-out forwards;
+}
+
+@keyframes speedrunFadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Speedrun Top Command Bar */
+.speedrun-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  background: rgba(15, 23, 42, 0.85);
+  border-bottom: 1.5px solid #334155;
+  backdrop-filter: blur(8px);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.speedrun-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.speedrun-bolt-badge {
+  background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+  color: #0f172a;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 0 12px rgba(234, 179, 8, 0.4);
+}
+
+.speedrun-unit-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.speedrun-pace-group {
+  display: inline-flex;
+  align-items: center;
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 2px;
+  border-radius: 999px;
+  gap: 2px;
+}
+
+.speedrun-pace-btn {
+  padding: 3px 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.speedrun-pace-btn.active {
+  background: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.4);
+}
+
+.speedrun-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-speedrun-sound,
+.btn-speedrun-pause-top,
+.btn-speedrun-close {
+  background: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.btn-speedrun-sound:hover,
+.btn-speedrun-pause-top:hover {
+  background: #334155;
+  color: #ffffff;
+}
+
+.btn-speedrun-close:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #ffffff;
+}
+
+/* Speedrun Central Stage */
+.speedrun-stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Question Header Meta */
+.speedrun-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.speedrun-q-counter {
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 4px 14px;
+  border-radius: 999px;
+}
+
+.speedrun-origin-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+/* Big Question Text */
+.speedrun-question-text {
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+}
+
+/* Circular Timer */
+.speedrun-timer-circle-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px auto;
+}
+
+.speedrun-timer-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.speedrun-timer-bg {
+  fill: none;
+  stroke: #1e293b;
+  stroke-width: 8;
+}
+
+.speedrun-timer-bar {
+  fill: none;
+  stroke: #38bdf8;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 276.46;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.25s linear, stroke 0.25s ease;
+}
+
+.speedrun-timer-bar.warning {
+  stroke: #f59e0b;
+}
+
+.speedrun-timer-bar.urgent {
+  stroke: #ef4444;
+  animation: speedrunPulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes speedrunPulse {
+  from { filter: drop-shadow(0 0 2px #ef4444); }
+  to { filter: drop-shadow(0 0 10px #ef4444); }
+}
+
+.speedrun-timer-num {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.85rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  color: #ffffff;
+}
+
+/* Answer Card */
+.speedrun-answer-card {
+  width: 100%;
+  max-width: 850px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.25) 100%);
+  border: 2px solid #10b981;
+  border-radius: 16px;
+  padding: 20px 28px;
+  margin-top: 10px;
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.2);
+  animation: speedrunAnswerSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes speedrunAnswerSlideUp {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.speedrun-answer-header {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #6ee7b7;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.speedrun-answer-text {
+  font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.speedrun-explanation-text {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(110, 231, 183, 0.3);
+  font-size: 0.95rem;
+  color: #d1fae5;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+/* Bottom Actions Bar */
+.speedrun-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 36px;
+  background: rgba(15, 23, 42, 0.9);
+  border-top: 1.5px solid #334155;
+  backdrop-filter: blur(8px);
+}
+
+.btn-speedrun-action {
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: all 0.15s ease;
+}
+
+.btn-speedrun-action.reveal {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+}
+.btn-speedrun-action.reveal:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+  transform: translateY(-1px);
+}
+
+.btn-speedrun-action.next {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+.btn-speedrun-action.next:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-1px);
+}
+
+.speedrun-clicker-hint {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.speedrun-clicker-hint kbd {
+  background: #1e293b;
+  color: #f1f5f9;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 1px solid #475569;
+}
+
+/* Results Screen */
+.speedrun-results-card {
+  max-width: 950px;
+  width: 92%;
+  background: #1e293b;
+  border: 1.5px solid #334155;
+  border-radius: 20px;
+  padding: 20px 28px 16px 28px;
+  margin: 12px auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.speedrun-results-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.speedrun-results-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fbbf24;
+  margin: 0 0 2px 0;
+}
+.speedrun-results-subtitle {
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+
+.speedrun-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 10px;
+  max-height: 64vh;
+  overflow-y: auto;
+  padding: 4px 6px 4px 4px;
+  margin-bottom: 14px;
+}
+
+.speedrun-results-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 2px;
+}
+
+.speedrun-results-grid::-webkit-scrollbar {
+  width: 6px;
+}
+.speedrun-results-grid::-webkit-scrollbar-track {
+  background: #0f172a;
+  border-radius: 999px;
+}
+.speedrun-results-grid::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
+.speedrun-results-grid::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.speedrun-result-item {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.speedrun-result-item .item-q {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  line-height: 1.35;
+}
+.speedrun-result-item .item-a {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: #34d399;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
    VOCABULARY MATCHING GAME (OPTION 1: ASYMMETRIC GRID & BALANCED CARDS)
    ========================================================================== */
 .vocab-match-asymmetric {
