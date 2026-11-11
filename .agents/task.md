@@ -31,10 +31,17 @@
   - Completed and sandbox PDF copied to user desktop (`C:\Users\fives\Desktop\the_shoah_pupil_workbook_SANDBOX.pdf`).
 
 ## Quality Gates Verified:
-- **Medicine Video Health:** `node scripts/audit_medicine_videos.cjs` -> **0 dead links out of 62 YouTube videos** (100% active HTTP 200 OK).
+- **Zero Dead Videos Across All Flagship Units:** Verified via `scripts/audit_all_units_videos.cjs`:
+  - `edexcel_medicine.json`: 62 videos, **0 dead**
+  - `the_shoah.json`: 28 videos, **0 dead**
+  - `cme_new.json`: 50 videos, **0 dead**
+  - `cold_war.json`: 28 videos, **0 dead**
+  - `weimar_nazi_germany.json`: 48 videos, **0 dead**
+  - `usa.json`: 55 videos, **0 dead, 0 cloned loops**
+  - `medieval_england.json`: 20 videos, **0 dead**
 - **Writing Studio Task Integrity:** `npm run audit:tasks` -> 100% Passed (0 errors, 0 warnings across all 372 tasks).
-- **Commercial Neutrality & Sanitization:** `node scripts/verify_sanitization.cjs` -> 0 violations across 6,972 files.
-- **Git Commit:** `f53b023e` cleanly applied.
+- **Commercial Neutrality & Sanitization:** `node scripts/verify_sanitization.cjs` -> 0 violations across 6,974 files.
+- **Git Commits:** `f53b023e` (Medicine overhaul) and `6d59915f` (USA & CME fixes) cleanly applied.
 
 ## Recommended Next Step:
-- Review the other minor unit findings (e.g. 3 dead links in `usa.json` or 1 in `cme_new.json`), or continue with the remaining revisions for the Shoah workbook.
+- Return to the **Shoah** 20-page pupil workbook to review or finalize any remaining page elements.
