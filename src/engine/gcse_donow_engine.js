@@ -409,7 +409,13 @@ export function getSelectedRetrievalTarget(isKs3 = false) {
     if (typeof localStorage !== 'undefined') {
       const key = isKs3 ? LOCAL_STORAGE_KEY_SELECTED_KS3_TARGET : LOCAL_STORAGE_KEY_SELECTED_TARGET;
       const stored = localStorage.getItem(key);
-      if (stored) return stored;
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed)) return parsed;
+        } catch (e) {}
+        return stored;
+      }
     }
   } catch (e) {}
   return isKs3 ? 'all_ks3' : 'all_gcse';
@@ -422,7 +428,8 @@ export function saveSelectedRetrievalTarget(targetId, isKs3 = false) {
   try {
     if (typeof localStorage !== 'undefined') {
       const key = isKs3 ? LOCAL_STORAGE_KEY_SELECTED_KS3_TARGET : LOCAL_STORAGE_KEY_SELECTED_TARGET;
-      localStorage.setItem(key, targetId);
+      const valToSave = typeof targetId === 'string' ? targetId : JSON.stringify(targetId);
+      localStorage.setItem(key, valToSave);
     }
   } catch (e) {}
 }
@@ -734,8 +741,23 @@ export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target =
     }
   } else if (Array.isArray(resolvedTarget)) {
     selectedUnitIds = resolvedTarget;
+    if (selectedUnitIds.length === GCSE_RETRIEVAL_UNITS.length && GCSE_RETRIEVAL_UNITS.every((u) => selectedUnitIds.includes(u.id))) {
+      isAllGcse = true;
+    } else if (selectedUnitIds.length === KS3_RETRIEVAL_UNITS.length && KS3_RETRIEVAL_UNITS.every((u) => selectedUnitIds.includes(u.id))) {
+      isAllKs3 = true;
+    }
   } else if (typeof resolvedTarget === 'string') {
     selectedUnitIds = [resolvedTarget];
+  }
+
+  if (selectedUnitIds.length === 0) {
+    if (isKs3) {
+      isAllKs3 = true;
+      selectedUnitIds = KS3_RETRIEVAL_UNITS.map((u) => u.id);
+    } else {
+      isAllGcse = true;
+      selectedUnitIds = GCSE_RETRIEVAL_UNITS.map((u) => u.id);
+    }
   }
 
   // Resolve unit objects
@@ -752,8 +774,8 @@ export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target =
   }
 
   // Allocate target question counts across selected units
-  let collected = [];
   const qPerUnit = Math.max(1, Math.ceil(count / validUnits.length));
+  const perUnitPools = [];
 
   validUnits.forEach(({ unitData, meta }) => {
     const isCurrent = meta.id === currentUnitId;
@@ -799,10 +821,21 @@ export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target =
     }
 
     const sampled = seed !== null ? shuffleArray(unitPool, seed).slice(0, qPerUnit) : unitPool.slice(0, qPerUnit);
-    collected.push(...sampled);
+    perUnitPools.push(sampled);
   });
 
-  const finalQuestions = (seed !== null ? shuffleArray(collected, seed) : collected).slice(0, count);
+  // Interleave questions evenly across selected units for optimal synoptic variety
+  let interleaved = [];
+  const maxPoolLen = Math.max(...perUnitPools.map((p) => p.length), 0);
+  for (let i = 0; i < maxPoolLen; i++) {
+    for (let u = 0; u < perUnitPools.length; u++) {
+      if (i < perUnitPools[u].length && interleaved.length < count) {
+        interleaved.push(perUnitPools[u][i]);
+      }
+    }
+  }
+
+  const finalQuestions = (seed !== null ? shuffleArray(interleaved, seed) : interleaved).slice(0, count);
   
   let subtitleText = '';
   if (validUnits.length === 1) {
@@ -974,112 +1007,108 @@ export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
  */
 export function renderGcseUnitChipsHTML(activeTarget = '', isKs3 = false) {
   const currentTarget = activeTarget || getSelectedRetrievalTarget(isKs3);
+  const allStageUnits = isKs3 ? KS3_RETRIEVAL_UNITS : GCSE_RETRIEVAL_UNITS;
+  const allUnitIds = allStageUnits.map((u) => u.id);
+  const otherStageUnits = isKs3 ? GCSE_RETRIEVAL_UNITS : KS3_RETRIEVAL_UNITS;
+  const stageAllKey = isKs3 ? 'all_ks3' : 'all_gcse';
 
-  if (isKs3) {
-    const isAll = !currentTarget || currentTarget === 'all_ks3';
-    const ks3Chips = KS3_RETRIEVAL_UNITS.map((u) => {
-      const isSelected = currentTarget === u.id;
-      return `
-        <button type="button"
-          class="btn-donow-unit-chip ${isSelected ? 'selected' : ''}"
-          data-unit-id="${u.id}"
-          onclick="event.stopPropagation(); window.selectGcseDoNowTarget('${u.id}');"
-          title="Retrieve questions from ${u.title}">
-          <i class="fa-solid ${isSelected ? 'fa-check' : 'fa-book-bookmark'}" style="font-size: 0.65rem;"></i>
-          <span>${u.label}</span>
-        </button>
-      `;
-    }).join('');
+  const isAll = !currentTarget ||
+    currentTarget === stageAllKey ||
+    (Array.isArray(currentTarget) && allUnitIds.every((id) => currentTarget.includes(id)));
 
-    const gcseOptions = GCSE_RETRIEVAL_UNITS.map((g) => {
-      const isSelected = currentTarget === g.id;
-      return `<option value="${g.id}" ${isSelected ? 'selected' : ''}>${g.label}</option>`;
-    }).join('');
+  const selectedIds = new Set(
+    isAll
+      ? []
+      : Array.isArray(currentTarget)
+        ? currentTarget
+        : typeof currentTarget === 'string' && currentTarget
+          ? [currentTarget]
+          : []
+  );
 
-    return `
-      <div class="donow-unit-chips-bar" style="margin: 0 0 10px 0; padding: 10px 14px; background: #f0fdf4; border: 1.2px solid #bbf7d0; border-radius: 8px;">
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-bottom: 8px;">
-          <span style="font-size: 0.72rem; font-weight: 800; color: #166534; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-graduation-cap" style="color: #16a34a; font-size: 0.82rem;"></i> Choose Starter Era / Unit:
-          </span>
-          <span style="font-size: 0.7rem; color: #15803d; font-weight: 600;">
-            Select any Key Stage 3 topic to load retrieval questions
-          </span>
-        </div>
-        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
-          <button type="button"
-            class="btn-donow-unit-chip ${isAll ? 'selected' : ''}"
-            data-unit-id="all_ks3"
-            onclick="event.stopPropagation(); window.selectGcseDoNowTarget('all_ks3');"
-            title="Questions synoptically sampled across all KS3 units">
-            <i class="fa-solid ${isAll ? 'fa-check' : 'fa-sparkles'}" style="font-size: 0.65rem;"></i>
-            <span>✨ All KS3 (Synoptic Mix)</span>
-          </button>
-          ${ks3Chips}
-          <div style="display: inline-flex; align-items: center; margin-left: 2px;">
-            <select class="donow-ks3-select"
-              onchange="event.stopPropagation(); if (this.value) window.selectGcseDoNowTarget(this.value);"
-              title="Retrieve questions from cross-phase GCSE units"
-              style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 12px; border: 1.2px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer; outline: none; transition: all 0.15s ease;">
-              <option value="" style="background: #ffffff; color: #475569;">Cross-Phase GCSE Units ▾</option>
-              ${gcseOptions}
-            </select>
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  // GCSE Mode
-  const isAllGcse = !currentTarget || currentTarget === 'all_gcse';
-  const isKs3Active = KS3_RETRIEVAL_UNITS.some((k) => k.id === currentTarget);
-
-  const gcseChips = GCSE_RETRIEVAL_UNITS.map((u) => {
-    const isSelected = currentTarget === u.id;
+  const stageChips = allStageUnits.map((u) => {
+    const isSelected = selectedIds.has(u.id);
     return `
       <button type="button"
         class="btn-donow-unit-chip ${isSelected ? 'selected' : ''}"
         data-unit-id="${u.id}"
         onclick="event.stopPropagation(); window.selectGcseDoNowTarget('${u.id}');"
-        title="Retrieve questions from ${u.title}">
+        title="${isSelected ? 'Click to deselect ' + u.title : 'Click to add ' + u.title + ' to starter mix'}">
         <i class="fa-solid ${isSelected ? 'fa-check' : 'fa-book-bookmark'}" style="font-size: 0.65rem;"></i>
         <span>${u.label}</span>
       </button>
     `;
   }).join('');
 
-  const ks3Options = KS3_RETRIEVAL_UNITS.map((k) => {
-    const isSelected = currentTarget === k.id;
-    return `<option value="${k.id}" ${isSelected ? 'selected' : ''}>${k.label}</option>`;
+  // Selected cross-phase units (from the other key stage)
+  const crossPhaseChips = otherStageUnits
+    .filter((o) => selectedIds.has(o.id))
+    .map((o) => `
+      <button type="button"
+        class="btn-donow-unit-chip selected"
+        data-unit-id="${o.id}"
+        onclick="event.stopPropagation(); window.selectGcseDoNowTarget('${o.id}');"
+        title="Click to remove ${o.title} from starter mix"
+        style="background: #0284c7; color: #ffffff; border-color: #0284c7;">
+        <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+        <span>${o.label}</span>
+        <i class="fa-solid fa-xmark" style="font-size: 0.65rem; margin-left: 3px; opacity: 0.85;"></i>
+      </button>
+    `)
+    .join('');
+
+  const hasCrossPhaseSelected = otherStageUnits.some((o) => selectedIds.has(o.id));
+
+  const otherOptions = otherStageUnits.map((o) => {
+    const isSelected = selectedIds.has(o.id);
+    return `<option value="${o.id}">${isSelected ? '✓ ' : ''}${o.label}</option>`;
   }).join('');
+
+  const stageAllTitle = isKs3 ? 'All KS3 (Synoptic Mix)' : 'All GCSE (Synoptic Mix)';
+  const stageAllDesc = isKs3
+    ? 'Questions synoptically sampled across all KS3 units'
+    : 'Questions synoptically sampled across all GCSE units';
+  const otherDropdownTitle = isKs3 ? 'Cross-Phase GCSE Units ▾' : 'Prior KS3 Units ▾';
+  const otherDropdownHelp = isKs3
+    ? 'Retrieve questions from cross-phase GCSE units'
+    : 'Retrieve questions from prior Key Stage 3 units';
+
+  let statusText = '';
+  if (isAll) {
+    statusText = 'All units active &bull; Click any unit to start a custom mix';
+  } else {
+    const count = selectedIds.size;
+    statusText = `${count} unit${count === 1 ? '' : 's'} selected &bull; Click to toggle units on/off`;
+  }
 
   return `
     <div class="donow-unit-chips-bar" style="margin: 0 0 10px 0; padding: 10px 14px; background: #f0fdf4; border: 1.2px solid #bbf7d0; border-radius: 8px;">
       <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-bottom: 8px;">
         <span style="font-size: 0.72rem; font-weight: 800; color: #166534; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-graduation-cap" style="color: #16a34a; font-size: 0.82rem;"></i> Choose Starter Unit:
+          <i class="fa-solid fa-graduation-cap" style="color: #16a34a; font-size: 0.82rem;"></i> Choose Starter Era / Unit:
         </span>
         <span style="font-size: 0.7rem; color: #15803d; font-weight: 600;">
-          Select any unit to load recall questions
+          ${statusText}
         </span>
       </div>
       <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
         <button type="button"
-          class="btn-donow-unit-chip ${isAllGcse ? 'selected' : ''}"
-          data-unit-id="all_gcse"
-          onclick="event.stopPropagation(); window.selectGcseDoNowTarget('all_gcse');"
-          title="Questions synoptically sampled across all GCSE units">
-          <i class="fa-solid ${isAllGcse ? 'fa-check' : 'fa-sparkles'}" style="font-size: 0.65rem;"></i>
-          <span>✨ All GCSE (Synoptic Mix)</span>
+          class="btn-donow-unit-chip ${isAll ? 'selected' : ''}"
+          data-unit-id="${stageAllKey}"
+          onclick="event.stopPropagation(); window.selectGcseDoNowTarget('${stageAllKey}');"
+          title="${stageAllDesc}">
+          <i class="fa-solid ${isAll ? 'fa-check' : 'fa-sparkles'}" style="font-size: 0.65rem;"></i>
+          <span>✨ ${stageAllTitle}</span>
         </button>
-        ${gcseChips}
+        ${stageChips}
+        ${crossPhaseChips}
         <div style="display: inline-flex; align-items: center; margin-left: 2px;">
           <select class="donow-ks3-select"
-            onchange="event.stopPropagation(); if (this.value) window.selectGcseDoNowTarget(this.value);"
-            title="Retrieve questions from prior Key Stage 3 units"
-            style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 12px; border: 1.2px solid ${isKs3Active ? '#0284c7' : '#cbd5e1'}; background: ${isKs3Active ? '#0284c7' : '#ffffff'}; color: ${isKs3Active ? '#ffffff' : '#475569'}; cursor: pointer; outline: none; transition: all 0.15s ease;">
-            <option value="" style="background: #ffffff; color: #475569;">Prior KS3 Units ▾</option>
-            ${ks3Options}
+            onchange="event.stopPropagation(); if (this.value) { window.selectGcseDoNowTarget(this.value); this.value = ''; }"
+            title="${otherDropdownHelp}"
+            style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 12px; border: 1.2px solid ${hasCrossPhaseSelected ? '#0284c7' : '#cbd5e1'}; background: ${hasCrossPhaseSelected ? '#eff6ff' : '#ffffff'}; color: ${hasCrossPhaseSelected ? '#0284c7' : '#475569'}; cursor: pointer; outline: none; transition: all 0.15s ease;">
+            <option value="" style="background: #ffffff; color: #475569;">${otherDropdownTitle}</option>
+            ${otherOptions}
           </select>
         </div>
       </div>
@@ -1103,7 +1132,7 @@ export function renderGcseDoNowPanelHTML({
   const isKs3Effective = isKs3 !== null ? isKs3 : isKs3Unit(activeUnit, currentUnitId);
   // Default mode for a lesson starter is ALWAYS 'previous' so teachers and pupils are always in sync on lesson load
   const activeMode = 'previous';
-  const currentTarget = isKs3Effective ? 'all_ks3' : 'all_gcse';
+  const currentTarget = getSelectedRetrievalTarget(isKs3Effective);
   const activeCount = isKs3Effective ? 5 : 10;
 
   // Compute initial questions for active mode
@@ -1254,20 +1283,22 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
 
   window.setDoNowQuestionCount = function (count) {
     saveQuestionCount(count);
-    document.querySelectorAll('.btn-donow-count').forEach((btn) => {
-      const isCur = parseInt(btn.dataset.donowCount, 10) === count;
-      if (isCur) {
-        btn.classList.add('active');
-        btn.style.background = '#0284c7';
-        btn.style.color = '#ffffff';
-        btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
-      } else {
-        btn.classList.remove('active');
-        btn.style.background = 'transparent';
-        btn.style.color = '#475569';
-        btn.style.boxShadow = 'none';
-      }
-    });
+    if (typeof document !== 'undefined') {
+      document.querySelectorAll('.btn-donow-count').forEach((btn) => {
+        const isCur = parseInt(btn.dataset.donowCount, 10) === count;
+        if (isCur) {
+          btn.classList.add('active');
+          btn.style.background = '#0284c7';
+          btn.style.color = '#ffffff';
+          btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
+        } else {
+          btn.classList.remove('active');
+          btn.style.background = 'transparent';
+          btn.style.color = '#475569';
+          btn.style.boxShadow = 'none';
+        }
+      });
+    }
     window.refreshCurrentGcseDoNow(false);
   };
 
@@ -1275,45 +1306,52 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
     const cleanMode = mode === 'all' ? 'other' : mode;
     saveDoNowMode(cleanMode);
 
-    // 1. Update button active states and inline styles
-    document.querySelectorAll('.btn-donow-mode').forEach((btn) => {
-      const isCur = btn.dataset.donowMode === cleanMode || (cleanMode === 'other' && btn.dataset.donowMode === 'all');
-      if (isCur) {
-        btn.classList.add('active');
-        btn.style.background = '#0284c7';
-        btn.style.color = '#ffffff';
-        btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
-      } else {
-        btn.classList.remove('active');
-        btn.style.background = 'transparent';
-        btn.style.color = '#475569';
-        btn.style.boxShadow = 'none';
-      }
-    });
-
-    // 2. Toggle unit chips visibility
-    const chipsWrapper = document.getElementById('donow-gcse-unit-chips-wrapper');
-    if (chipsWrapper) {
-      chipsWrapper.style.display = cleanMode === 'other' ? 'block' : 'none';
-    }
-
-    // 3. Sync count button active states (in case smart default adjusted)
     const isCurKs3 = !!window.isCurrentUnitKs3;
-    const curCount = getSavedQuestionCount(isCurKs3, cleanMode);
-    document.querySelectorAll('.btn-donow-count').forEach((btn) => {
-      const isCur = parseInt(btn.dataset.donowCount, 10) === curCount;
-      if (isCur) {
-        btn.classList.add('active');
-        btn.style.background = '#0284c7';
-        btn.style.color = '#ffffff';
-        btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
-      } else {
-        btn.classList.remove('active');
-        btn.style.background = 'transparent';
-        btn.style.color = '#475569';
-        btn.style.boxShadow = 'none';
+
+    if (typeof document !== 'undefined') {
+      // 1. Update button active states and inline styles
+      document.querySelectorAll('.btn-donow-mode').forEach((btn) => {
+        const isCur = btn.dataset.donowMode === cleanMode || (cleanMode === 'other' && btn.dataset.donowMode === 'all');
+        if (isCur) {
+          btn.classList.add('active');
+          btn.style.background = '#0284c7';
+          btn.style.color = '#ffffff';
+          btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
+        } else {
+          btn.classList.remove('active');
+          btn.style.background = 'transparent';
+          btn.style.color = '#475569';
+          btn.style.boxShadow = 'none';
+        }
+      });
+
+      // 2. Toggle unit chips visibility and refresh chips HTML
+      const chipsWrapper = document.getElementById('donow-gcse-unit-chips-wrapper');
+      if (chipsWrapper) {
+        chipsWrapper.style.display = cleanMode === 'other' ? 'block' : 'none';
+        if (cleanMode === 'other') {
+          const curTarget = getSelectedRetrievalTarget(isCurKs3);
+          chipsWrapper.innerHTML = renderGcseUnitChipsHTML(curTarget, isCurKs3);
+        }
       }
-    });
+
+      // 3. Sync count button active states (in case smart default adjusted)
+      const curCount = getSavedQuestionCount(isCurKs3, cleanMode);
+      document.querySelectorAll('.btn-donow-count').forEach((btn) => {
+        const isCur = parseInt(btn.dataset.donowCount, 10) === curCount;
+        if (isCur) {
+          btn.classList.add('active');
+          btn.style.background = '#0284c7';
+          btn.style.color = '#ffffff';
+          btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
+        } else {
+          btn.classList.remove('active');
+          btn.style.background = 'transparent';
+          btn.style.color = '#475569';
+          btn.style.boxShadow = 'none';
+        }
+      });
+    }
 
     // 4. Re-generate questions in canonical deterministic order
     window.refreshCurrentGcseDoNow(false);
@@ -1321,12 +1359,63 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
 
   window.selectGcseDoNowTarget = function (targetId) {
     const isCurKs3 = !!window.isCurrentUnitKs3;
-    saveSelectedRetrievalTarget(targetId, isCurKs3);
+    const allStageUnits = isCurKs3 ? KS3_RETRIEVAL_UNITS : GCSE_RETRIEVAL_UNITS;
+    const allUnitIds = allStageUnits.map((u) => u.id);
+    const stageAllKey = isCurKs3 ? 'all_ks3' : 'all_gcse';
+
+    const currentTarget = getSelectedRetrievalTarget(isCurKs3);
+
+    let nextTarget;
+
+    if (targetId === 'all_gcse' || targetId === 'all_ks3') {
+      nextTarget = stageAllKey;
+    } else {
+      const wasAll = !currentTarget ||
+        currentTarget === stageAllKey ||
+        (Array.isArray(currentTarget) && allUnitIds.every((id) => currentTarget.includes(id)));
+
+      if (wasAll) {
+        // From "All", clicking a specific unit isolates that unit so teacher can build a custom mix
+        nextTarget = [targetId];
+      } else {
+        // Teacher has an active custom subset
+        let currentList = [];
+        if (Array.isArray(currentTarget)) {
+          currentList = [...currentTarget];
+        } else if (typeof currentTarget === 'string' && currentTarget) {
+          currentList = [currentTarget];
+        }
+
+        if (currentList.includes(targetId)) {
+          // Deselect targetId
+          const remaining = currentList.filter((id) => id !== targetId);
+          if (remaining.length === 0) {
+            // Revert to all if none remaining
+            nextTarget = stageAllKey;
+          } else {
+            nextTarget = remaining;
+          }
+        } else {
+          // Add targetId
+          const updated = [...currentList, targetId];
+          // If all stage units are now included, convert to stageAllKey
+          if (allUnitIds.every((id) => updated.includes(id))) {
+            nextTarget = stageAllKey;
+          } else {
+            nextTarget = updated;
+          }
+        }
+      }
+    }
+
+    saveSelectedRetrievalTarget(nextTarget, isCurKs3);
 
     // Update chips HTML
-    const chipsWrapper = document.getElementById('donow-gcse-unit-chips-wrapper');
-    if (chipsWrapper) {
-      chipsWrapper.innerHTML = renderGcseUnitChipsHTML(targetId, isCurKs3);
+    if (typeof document !== 'undefined') {
+      const chipsWrapper = document.getElementById('donow-gcse-unit-chips-wrapper');
+      if (chipsWrapper) {
+        chipsWrapper.innerHTML = renderGcseUnitChipsHTML(nextTarget, isCurKs3);
+      }
     }
 
     // Re-generate questions in canonical deterministic order
@@ -1412,20 +1501,22 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       result = getPreviousLessonQuestions(activeUnit, lesson, seed, count);
     }
 
-    // Update subtitle
-    const subTextEl = document.getElementById('donow-mode-subtitle-text');
-    if (subTextEl) subTextEl.innerHTML = result.subtitle;
+    if (typeof document !== 'undefined') {
+      // Update subtitle
+      const subTextEl = document.getElementById('donow-mode-subtitle-text');
+      if (subTextEl) subTextEl.innerHTML = result.subtitle;
 
-    // Update rows container
-    const rowsContainer = document.getElementById('donow-rows-container');
-    if (rowsContainer) {
-      rowsContainer.innerHTML = renderDoNowRowsHTML(result.questions, mode, curUnitId);
-    }
+      // Update rows container
+      const rowsContainer = document.getElementById('donow-rows-container');
+      if (rowsContainer) {
+        rowsContainer.innerHTML = renderDoNowRowsHTML(result.questions, mode, curUnitId);
+      }
 
-    // Reset Reveal All button state if present
-    const revealAllBtn = document.querySelector('[data-action="toggle-all-answers"]');
-    if (revealAllBtn) {
-      revealAllBtn.innerHTML = '<i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i> <span>Reveal All Answers</span>';
+      // Reset Reveal All button state if present
+      const revealAllBtn = document.querySelector('[data-action="toggle-all-answers"]');
+      if (revealAllBtn) {
+        revealAllBtn.innerHTML = '<i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i> <span>Reveal All Answers</span>';
+      }
     }
   };
 }
