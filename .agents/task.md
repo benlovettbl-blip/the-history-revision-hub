@@ -1,6 +1,19 @@
 # Department Rollout Staged State & Recommendations
 
 ## Last Completed Session:
+- **Repository-Wide Pupil Workbook & Mirror PDF Synchronization (Commit `7abe04c6`):**
+  - Audited all 71 publications across KS2, KS3, and GCSE in `src/workbooks_zone.js` and all PDF directories.
+  - Eliminated legacy continuous monoliths from August 2026 across `public/units/` (e.g. 211-page medicine workbook, 61-page EEE workbook, 34-page Weimar workbook, unparsed `${periodName}` template string filename).
+  - Merged and verified authentic Gold Standard Master Volumes:
+    - `cme_new_pupil_workbook_master.pdf` (**68 pages**)
+    - `eee_pupil_workbook_master.pdf` (**48 pages**)
+    - `weimar_nazi_germany_pupil_workbook_master.pdf` (**80 pages**)
+    - `usa_pupil_workbook_master.pdf` (**80 pages**)
+    - `edexcel_medicine_pupil_workbook_master.pdf` (**104 pages**)
+  - Re-aligned `eee_pupil_workbook_KT1.pdf` (16p) and `KT3.pdf` (16p) to `FINAL_V17` Gold Standard builds.
+  - Corrected all UI badges and link resolvers in `src/workbooks_zone.js`, `src/engine/modals.js`, and `src/verified_pdf_manifest.js`.
+  - Pushed to `origin/main` (Netlify live auto-deploy).
+
 - **Medicine in Modern Britain Workbook Converted to 16-Page True Double-Page Standard (Commit `c740d938`):**
   - Converted `scripts/render_medicine_modern_twopage_workbook.cjs` to exactly 16 pages ($4 \times \text{A3 folded sheets}$, saddle-stitch reprographics compatible).
   - Fixed page-turn anomaly: all 5 lessons now sit on flat facing double-page spreads (Left Verso Spine + Right Recto Writing Task on pp. 4–5, 6–7, 8–9, 10–11, 12–13).
