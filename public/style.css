@@ -2416,13 +2416,19 @@ img::after {
   }
 
   .menu-toggle {
-    display: inline-block !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     background: transparent;
     border: none;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     cursor: pointer;
-    padding: 0 10px;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    padding: 8px !important;
+    border-radius: 8px !important;
+    touch-action: manipulation;
   }
 }
 
@@ -2604,13 +2610,19 @@ img::after {
     touch-action: manipulation;
   }
 
-  /* Make header tool buttons ultra-compact on mobile: icons only, minimal padding */
+  /* Make header tool buttons comfortable on mobile touchscreens: min-38px tap target */
   .header-tool-btn,
   #theme-toggle-btn {
-    padding: 6px 8px !important;
-    font-size: 0.78rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    padding: 7px 9px !important;
+    font-size: 0.95rem !important;
     gap: 4px !important;
-    border-radius: 6px !important;
+    border-radius: 8px !important;
+    touch-action: manipulation;
   }
 
   #header-overlay-toggle .fa-chevron-down {
