@@ -1,585 +1,87 @@
-## Strict School Anonymity & Commercial Neutrality Policy
+# The History Revision Hub — Master Workspace Rules (`AGENTS.md`)
+
+> **Architecture Note:** Keep this file concise (`< 20 KB`) so 100% of workspace rules remain loaded without truncation on every turn. Detailed reprographic and compilation runbooks live in `.agents/skills/*/SKILL.md` and load progressively on demand.
+
+---
+
+## 1. Strict School Anonymity & Commercial Neutrality Policy
 STRICT RULE: You are STRICTLY FORBIDDEN from using the name of the user's school ("Meoncross", "Meoncross School") in ANY user-facing text, page titles, document headers, footers, meta tags, printed booklets, worksheets, PDFs, PowerPoint presentations, mark schemes, teacher notes, audio scripts, or curriculum files (`data.js`, `index.html`, etc.).
-
-## Autonomous Execution & Cognitive Accessibility Protocol
-STRICT DIRECTIVE: The user has explicitly stated that they have a bad memory and will not be able to remember terminal commands, multi-file database sync procedures, or validation steps.
-1. **Zero Memory Burden on the User**: NEVER expect or instruct the user to remember command-line syntax, database sync steps, or file locations.
-2. **Autonomous End-to-End Execution**: Whenever the user requests a change to any lesson, workbook, task, question, starter, or tariff:
-   - Perform the full end-to-end synchronization automatically across all data stores (`data/*.json`, `public/data/*.json`, `database.json`, `public/database.json`, `units/*/data.js`, and `pupil_workbook.html`).
-   - Automatically execute the validation test suite (`npm run audit:tasks`) in the background to ensure 100% integrity.
-   - Report back cleanly with simple confirmations and browser verification links, without overwhelming the user with technical procedures.
-3. **Fast Git Commits & On-Demand Auditing**: The git pre-commit hook is kept lightweight (running only mandatory sanitization). The 372-task simulation audit (`npm run audit:tasks`) is run on-demand by the assistant during major updates or upon request, ensuring fast commits on all devices.
-4. **Zero-Prompt Tablet Handoff & Automatic Resumption**: The user must NEVER have to remember what to type when switching devices (e.g. tablet) or opening a new chat. Whenever the user starts a session with "hi", "hey", "where are we?", "continue", or any brief greeting:
-   - You MUST NOT wait for the user to explain what they were doing or remember commands.
-   - Immediately read `.agents/task.md` and the latest git commit.
-   - Greet the user with a concise 3-bullet briefing: (a) Exact status of the project, (b) What was completed in the last session, and (c) The single recommended next step, asking only for a simple confirmation or choice.
-
-## Strict 1-to-1 Narrative Block to Workbook Stage Alignment Invariant
-STRICT RULE: In every lesson across all 19 units, `lesson.narrative_blocks` and `lesson.workbook_stages` MUST maintain an exact 1-to-1 correspondence (both containing exactly 5 items).
-1. **Zero Orphan Intro Blocks:** `narrative_blocks[0]` must NEVER be a general scene-setting introduction that shifts the topic sequence. Block 1 must correspond directly to Stage 1, Block 2 to Stage 2, ..., and Block 5 to Stage 5. Overarching enquiry context belongs in `lesson.enquiry` or `lesson.overview`.
-2. **Trigger Term & Topic Fidelity:** The title and prose of `narrative_blocks[i]` must directly explain and incorporate the 3 Trigger Terms present in `workbook_stages[i]`.
-3. **Automated Verification:** Any change to lesson narratives or workbook stages must be verified by running `npm run audit:stages` (`node scripts/detailed_stage_inspection.cjs`).
-
-## Universal Curricular Lexile, Word Budget & Readability Standard Across All Key Stages
-STRICT RULE: The narrative prose in digital lesson blocks, master textbooks, and pupil workbooks is designed for whole-class teacher reading, paired pupil tracking, and independent revision. It must strictly adhere to the following age-calibrated word budgets and readability standards:
-1. **Key Stage 2 (Years 5–6 / Ages 9–11): 50–80 words per block**
-   - Sensory storytelling, clear concrete nouns, short sentences, and explicit in-context vocabulary scaffolding.
-2. **Key Stage 3 (Years 7–9 / Ages 11–14): 80–110 words per block (Strict cap: 120w)**
-   - Structure: Exactly 2 punchy paragraphs (`[X.1]`, `[X.2]`), ~40–55 words each.
-   - Cognitive Load: Designed for a 45–60 second classroom read-aloud. Zero post-16 academic fluff or syntactical bloat.
-   - Workbook Fidelity: Must seamlessly incorporate the 3 Trigger Terms from `workbook_stages[i]` so pupils can easily identify and transcribe them into their 5-stage note-taking lines.
-3. **Key Stage 4 / GCSE (Years 10–11 / Ages 14–16): 110–140 words per block (Strict cap: 150w)**
-   - Structure: Exactly 2 balanced paragraphs (`[X.1]`, `[X.2]`), ~55–70 words each.
-   - Examination Specificity: Concrete historical mechanisms, causal turning points, key individuals, dates, and named legislation/treaties matching Pearson Edexcel specification points.
-   - Zero Jargon Inflation: STRICTLY FORBIDDEN from including university-level biochemistry, pathology, or political theory jargon (e.g. *pharmacogenomics*, *CRISPR*, *monoclinic space groups*, *barium platinocyanide*, *prophylactic double mastectomies*). All essential concepts must be explained in clear, authentic secondary school prose.
-4. **Zero Dangling Text Tails:** Never append trigger lists, summary sentences, or metadata outside closing `</p>` tags. All trigger terms must be naturally and grammatically embedded inside the paragraph sentences.
-1. **Commercial Independence:** The platform is an independent commercial educational product intended for wider sale and multi-school adoption. It must maintain 100% strict institutional neutrality.
-2. **Approved Branding Terminology:** Always use the platform's public title ("The History Revision Hub" / "GCSE History Revision Hub") or generic departmental designations ("The History Department", "The History Portal", "Fieldwork Primary Record", "Fieldwork Archive").
-3. **No Associated School Identifiers:** Never include school-specific email domains (`@meoncross.co.uk`), school telephone numbers, school archive seals, teacher surname nameplates (render pupil/teacher fields with blank lines `<span class="line"></span>`), or student family links that identify the school.
-4. **Mandatory Sanitization Audit:** Before completing any work or deploying, run `node scripts/verify_sanitization.cjs` to guarantee 0 instances of the school name in the repository.
-5. **Git Pre-Commit Sanitization Guardrail:** `node scripts/verify_sanitization.cjs` is strictly enforced in `npm run test:qa` and `.husky/pre-commit`. Any attempt to commit code or documents containing prohibited school or teacher identifiers will exit with code 1 and immediately abort the commit.
-6. **Commercial School Cover Customizer Standard:** All printed booklets, pupil workbooks, and revision packs must follow the customizer pattern: `data-department-name="The History Department"` on the cover banner enclosing `<span class="school-brand-target">The History Department</span>`. Purchasing schools can seamlessly stamp their own school or department name on the cover via pure CSS (`[data-department-name]::after`), browser query parameter (`?school=School+Name`), or CLI/PDF environment variable (`SCHOOL_NAME="School Name" node scripts/export_pdfs.cjs`), keeping our source repository 100% institutional-neutral.
-
-## Curricular Pillar Naming & Publication Classification Standard
-STRICT RULE: All learning and assessment publications across the platform must strictly adhere to the official 4-tier taxonomy and naming convention:
-1. **Master Textbook:** Pure narrative classroom reading anthologies (zero source boxes, zero vocab ribbons, zero exam rubrics, 2-column Lora serif). Examples: `cme_new_textbook_UNIFIED.pdf`, `usa_textbook_UNIFIED.pdf`.
-2. **Pupil Workbook:** Consumable lesson-by-lesson inquiry companions featuring the 5-Stage Chronological Inquiry Spine, lecture note-taking lines, and calibrated Part A/B disciplinary writing tasks. Examples: `medieval_england_pupil_workbook.pdf`, `monarchy_religion_power_pupil_workbook.pdf`.
-3. **Mastery Exam Pack:** Dedicated summative examination practice compendiums containing complete timed mock papers, alternative depth question practice, official exam board mark schemes, and Grade 8/9 WAGOLL exemplars (strictly zero lesson note-taking spines or timeline sketches). In UI badges and launchpad pills, these MUST always be labeled **"Mastery Exam Pack"** (e.g. `Mastery Exam Pack (36 Pages)` for CME, `Mastery Exam Pack (48 Pages)` for USA). Examples: `cme_mastery_pack_FULL.pdf`, `usa_mastery_pack_FULL.pdf`.
-4. **Master Knowledge Retrieval Companion:** High-density, spaced retrieval quiz and marking bank booklets (KS2 4-Page, KS3 8-Page, GCSE 16–28 Page) with zero-spillover physical print architecture. Examples: `Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf`, `USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf`.
-
-## Strict Ban on Legacy Workbook/Textbook Monoliths & Mandatory Gold Standard Architecture
-STRICT RULE: You are STRICTLY FORBIDDEN from running or generating workbooks or textbooks using the deprecated monolithic scripts `scripts/generate_pupil_workbooks.cjs` or `scripts/generate_textbooks.cjs`.
-1. **Mandatory Gold Standard Double-Page Workbook Architecture:** Every active or newly created KS3 unit MUST use a dedicated compiler (`scripts/render_<unit_id>_workbook.cjs`) adhering to the 16-Page or 20-Page Gold Standard format established in `medieval_england`, `monarchy_religion_power`, and `great_war_part2`:
-   - Page 1: Color Master Cover with 110–118mm primary plate, 4 Core Features, 3-Pillar Decoding Matrix, disciplinary significance, targeted Hinge Question, and student enrollment grid.
-   - Pages 2–13 (or 2–17): Pure `#000000` monochrome interior (zero navy/gray fill dithering).
-   - Verso (Left Page): 5-Stage Chronological Inquiry Spine with 44mm trigger spine and prominent decimal badges (`[1.1]`–`[5.5]`).
-   - Recto (Right Page): Disciplinary writing tasks with calibrated `~7.8mm–8.1mm` handwriting pitch.
-   - Centrefold: Panoramic Dual-Coding Living Timeline laying flat across the saddle-stitch.
-   - Exercise Notes Spread: Authentic British exercise book layout with 26mm margin rule and 32 full-width handwriting lines per page.
-   - Back Cover: KS3 Level Assessment Pathways (Emerging to Greater Depth), formal Progress Tracking Ledger, and interactive Dual-QR code badges linking directly to online retrieval quizzes.
-2. **Mandatory Pure Narrative Classroom Textbook Architecture:** Every companion classroom textbook MUST use the dedicated zero-clutter narrative compiler (`scripts/render_standard_textbook_<unit_id>.cjs`) adhering to the KS3 Classroom Textbook Engine skill (zero source boxes, zero vocab ribbons, zero exam rubrics, 2-column Lora serif text $\ge 10.15\text{pt}$, 0px overflow, and 25/35-question Master Knowledge Retrieval Quiz back cover).
-3. **Automated Audit Requirement:** Every compiled workbook and textbook must pass `node scripts/audit_page_budget.cjs` with 0px overflow and $\ge 95\%$ space utilization (`✅ OPTIMAL`).
-
-## Layout Checks & Universal Page Budget Standardization
-Always proactively audit documents for page overflows, spilling text, and dead underflow space using `node scripts/check_overflows.cjs <unit_id>`.
-1. **Container Architecture:** All discrete printable page containers (`.a5-page`, `.page`, `.page-container`) must enforce rigid page limits (`overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;`).
-2. **Universal Flex Distribution:** Standard utility classes:
-   - `.page-flex-full`: Forces full container height flex column with space-between justification.
-   - `.page-body-stretch`: Applied to central content sections (`flex: 1; display: flex; flex-direction: column; justify-content: space-between;`) to ensure even vertical distribution and eliminate dead bottom gaps.
-   - `.content-stretch`: Flex child expanding to absorb available vertical room.
-3. **Automated Audit Pipeline:** All PDF compilation pipelines (`scripts/export_pdfs.cjs`, `scripts/generate_all_standalone_cover_packs.cjs`) and unit sync workflows (`scripts/sync_unit.cjs`) automatically execute `scripts/audit_page_budget.cjs` to guarantee 0px overflow and optimal (>85%) space utilization.
-4. **Mandatory In-Memory Layout & Typographical Balancing Engine:** All master textbook, booklet, and workbook PDF compilation pipelines MUST automatically execute `scripts/auto_calibrate_engine.cjs` inside Puppeteer before running `scripts/audit_page_budget.cjs` and capturing the PDF. Never manually tweak text strings, word counts, or paragraph counts to resolve micro-clipping or column voids; the automated balancing engine must automatically self-heal containers, baseline flex distributions, and typographical budgets in memory.
-
-## New Unit Creation
-When the user asks to build, add, or create a new unit:
-1. DO NOT ask the user to follow the manual steps. You must do it for them automatically.
-2. Duplicate the "great_war" folder and rename it to the new unit's ID.
-3. Help the user insert their new content into the new "index.html".
-4. Automatically update the "tabMappings" in the new unit's "app.js" to match the new page structure.
-5. Automatically run "node extract_units.js <new_unit_id>" to compile the new unit.
-6. Automatically use "node check_overflows.js" (pointed to the new unit) to ensure there are zero layout bugs before finishing.
-
-## Curriculum & Pedagogical Validation
-When creating or modifying curriculum data (such as `data.js`), you must automatically perform the following consistency and pedagogical checks before finishing:
-1. **Source Consistency:** Ensure that any visual source provided (the image file) perfectly matches its title, caption, and the specific tasks/questions asked about it. Proactively spot and fix mismatched descriptions.
-2. **Pedagogical Recall (Do Nows):** Ensure that all "Do Now" or bell-ringer activities *strictly* ask recall questions from *previous* lessons. They must never ask about content from the current lesson.
-3. **Model Answers:** Verify that all generic placeholder model answers are replaced with historically accurate, detailed models.
-
-## Zero AI Educational Jargon & Authentic Classroom Standard
-STRICT RULE: You are STRICTLY FORBIDDEN from generating or including AI-generated corporate buzzwords, educational marketing puffery, or synthetic filler in ANY master textbooks, pupil workbooks, lesson materials, revision guides, cover pages, or back cover spreads.
-1. **Prohibited Jargon & Buzzwords:** Never use terms such as:
-   - "Specification Mastery & Synthesis"
-   - "Disciplinary Synthesis" / "Holistic Framework" / "Four Core Pillars" / "Analytical Framework"
-   - "Timeline Mastery" / "Mastery Quizzes"
-   - "Synergistic Learning" / "Deep-Dive Paradigm" / "Pedagogical Ecosystem"
-2. **Approved Classroom & Exam Terminology:** Always use clear, authentic, and subject-specific terminology used in secondary classrooms and exam boards:
-   - Use: "Revision Spine: Core Knowledge & Exam Strategy" instead of "Mastery & Synthesis".
-   - Use: "Key Chronology & Causal Turning Points" instead of "Timeline Mastery".
-   - Use: "Core Specification Themes" instead of "4 Core Pillars" or "Disciplinary Synthesis".
-   - Use: "Historiographical Debate & Edexcel Paper 3 Examination Strategy" (with specific exam codes like Q1 Inference, Q2 Causation, Q3(a) Utility, Q3(b/c) Views, Q3(d) Verdict).
-   - Use: "Synoptic Assessment & Historical Verdict" instead of corporate evaluation labels.
-   - Use: "20-Question Practice Quizzes" instead of "Instant 20-Question Mastery Quizzes".
-3. **Classroom Authenticity Principle:** Every heading, badge, label, and instructional stem must sound as if written by a veteran classroom teacher and experienced examiner preparing students for real historical thinking and authentic exam papers, completely devoid of corporate AI fluff.
-
-## Prevent Data Loss
-Before running destructive commands (like `git reset --hard` or `git clean`) or running automated parsing scripts (like `extract_units.js`) that will completely overwrite major curriculum files (such as `app.js`, `index.html`, or `data.js`), you MUST:
-1. Stop and ask the user for explicit permission to overwrite their files.
-2. If approved, automatically create a timestamped backup copy of the target file in a `temp_backups` folder before executing the overwrite.
-
-
-## Copyright Checks
-Whenever generating new features or content (especially visual sources or text), you MUST always double-check for copyright issues. Ensure visual sources are copyright-free or explicitly note if they require licensing. Notify the user before adding potentially copyrighted material, as the software is intended for commercial sale.
-
-## Teacher Notes & Pedagogical Priming
-Whenever you are asked to generate or modify lesson content (e.g., adding a new lesson to `data.js`), you MUST automatically include a detailed, structured `teacher_notes` property at the root of the lesson object.
-The `teacher_notes` property MUST be an object following this exact schema:
-1. `primer`: A high-level paragraph explaining the overarching pedagogical goal of the lesson.
-2. `objectives`: An array of objects, one for each learning objective. Each object must contain:
-    - `objective`: The specific learning objective text.
-    - `primer`: Actionable instructions for the teacher on how to achieve this objective, referencing specific paragraphs or tasks in the narrative.
-    - `question`: A "Hinge Question" designed to check student understanding of this specific objective.
-
-## Automated Pedagogical Research Bank Protocol
-Whenever you (the AI agent) and the user discuss or develop pedagogical strategies, cognitive science findings, SEND accommodations, disciplinary literacy techniques, or curriculum mechanisms:
-1. **Automatic Synthesis Without Prompting:** Proactively capture and synthesize the pedagogical principle into `src/pedagogy_data.js` (`PEDAGOGY_RESEARCH_BANK`) so it immediately appears in the in-app Department Portal.
-2. **Pragmatic Grounding for Teachers:** Each entry must contain:
-   - The Classroom Dilemma / Problem (why traditional teaching fails).
-   - What the Evidence Proves (academic or cognitive finding).
-   - Revision Hub Implementation (exact tools, typography, or booklet features used).
-   - Practical Classroom Protocol (actionable takeaway for busy teachers).
-   - Direct Academic Citations & Verified External Web Links (with clear URLs so teachers can research further).
-3. **Synchronized Guidance Manuals:** Keep `Guide_04_Disciplinary_Pedagogy_and_Research_Evidence.pdf` (and `scripts/generate_guidance_manuals.cjs`) in sync with new pedagogical bank entries, ensuring all web links are explicitly printed on the page for reprographics.
-
-## High-Signal Output Standard (Zero Clutter Policy)
-Act as an experienced app builder and an experienced history teacher. Maintain a high-signal, zero-clutter conversational standard:
-1. **Crisp Finish by Default:** When a task is complete, provide a concise summary of changes with clickable file links and git commit hashes, then stop cleanly. Never generate synthetic filler or generic advice.
-2. **Strict Ban on Rollout Compass Churn:** Do NOT churn out the large 'Workbook Rollout Compass' block in conversational responses. Master progress tracking belongs strictly in `WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md`.
-3. **Genuine Architectural Forks:** Only pose questions or options when a technical, layout, or pedagogical fork genuinely requires the user's decision or preference.
-4. **Milestones & Strategic Backlog:** Strategic milestones, reprint reminders, and pedagogical standards belong in `DEPARTMENT_MASTER_PLAN_AND_TRACKER.md` and `WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md`, not as per-response conversational boilerplate.
-5. **Strict Ban on 3-Recommendation Dumps (Single Next Step Standard):** Strictly ban dumping multi-paragraph 3-recommendation essay blocks at the end of turns. Conclude with a single, clear, actionable next step or decision in plain English.
-
-## Strict Ban on In-Workbook "Do Now" Tasks & Standalone Vocab Fillers
-STRICT RULE: Modern Gold Standard printed pupil workbooks must NEVER contain "Do Now" retrieval starters or standalone vocabulary tasks (such as cloze summaries, vocabulary mapping, odd-one-out, or Frayer models).
-1. **Separation of Interactive Starters vs Printed Workbooks:** "Do Now" retrieval starter tasks belong strictly in the digital interactive web application or front-of-class starter slides. Printing them in workbooks wastes valuable physical page budget that must be dedicated to chronological note-taking and extended disciplinary writing.
-2. **Zero Standalone Vocab Drills:** Standalone vocabulary exercises (cloze passages, definition copying, match-ups) are strictly prohibited in printed pupil workbooks.
-3. **Clean Vocabulary Banks on Writing Pages:** Key terminology must appear ONLY as a clean, concise `Key Terms:` or `Key Vocabulary Bank:` alongside extended writing prompts on the right-hand page (Recto), giving students active lexical support as they write their analytical arguments.
-
-## Zero Knowledge Giveaways in Printed Workbook Scaffolds (Workbook vs Web App Separation)
-STRICT RULE: Sentence stems, analytical connectives, and writing frames in printed pupil workbooks must provide purely structural, cognitive, and disciplinary scaffolding—NEVER factual historical knowledge, specific answers, or prescribed paragraph points.
-1. **The Core Pedagogical Principle:** Detailed model answers, exemplar paragraphs, and knowledge reveals belong in the interactive web application, NOT in printed pupil workbooks. Workbooks are designed to make pupils think for themselves and retrieve historical knowledge from their own memory and analysis; providing answers or factual hints in sentence stems reduces extended writing to thoughtless transcription.
-2. **Approved Analytical Connectives & Stems:**
-   - Vocabulary Banks: Specific historical key terms are fully approved and encouraged (e.g. `Article 231 (War Guilt) • £6.6 billion reparations • Diktat • Georges Clemenceau`).
-   - Bare-Bones Analytical Connectives: Connectives must be generic, purely structural transitions (e.g., `To a large extent, it can be argued that... • In particular, a decisive factor was... • Furthermore, this created severe consequences because... • On the other hand, an alternative perspective is that... • In conclusion, the decisive reason why...`).
-3. **Strictly Prohibited Knowledge Giveaways:**
-   - Never embed factual clues, dates, specific historical events, named treaty clauses, or pre-chewed conclusions into sentence stems or connectives (e.g., FORBIDDEN: `In particular, Article 231 and reparations caused...`, `Furthermore, the creation of the League of Nations...`, `In response, David Lloyd George established...`, or `In conclusion, the fatal weakness of Versailles was not just its harshness, but...`).
-   - Keep all stems and connectives content-free so the pupil must supply the evidence, causal connections, and historical reasoning themselves.
-
-## The Revision Guide Vocabulary Constraint ("Spec-Anchored Triad" for Left-Spine Triggers)
-STRICT RULE: The 3 trigger keywords on the left of any chronological enquiry stage (e.g. in 2-page pupil workbooks) MUST be drawn directly from the approved unit revision guide (such as `public/content/gcse/gcse_middle_east_1945_1995.md`).
-1. **Mandatory Single Source of Truth:** All 3 trigger keywords must be high-yield, accessible specification concepts extracted directly from the revision guide text.
-2. **Zero A-Level / Niche Creep:** Strictly forbid introducing peripheral, off-specification academic terms (e.g. *Gush Emunim*, *DEFCON 3*, *Operation Nickel Grass*, *Kilometer 101*) that do not appear in the revision guide. Lower-attaining GCSE pupils must not be burdened with extraneous academic jargon.
-3. **The Zero-Echo Filter:** Words extracted from the revision guide must NEVER duplicate names, dates, or phrases already printed in the Stage Question Banner or Date Badge (e.g. if the banner asks about *Kissinger's shuttle diplomacy*, neither *Kissinger* nor *Shuttle Diplomacy* may appear in the triggers).
-4. **The Triad Functional Architecture:** The 3 trigger slots must provide 3 complementary explanatory levers:
-   - **Trigger 1 (Concrete Evidence):** A specific treaty, statistic, or geographic location (e.g. *Quadrupled Oil Prices*, *Eight-Year Closure Ends*).
-   - **Trigger 2 (Causal Friction / Catalyst):** The obstacle, conflict point, or pressure trigger (e.g. *Western Energy Shortages*, *Arab Refusal to Meet*).
-   - **Trigger 3 (Significance / Outcome):** The conceptual turning point or long-term consequence (e.g. *Exclude Soviet Influence*, *Direct Economic Lifeline*).
-
-## Universal KS3 Workbook Typography, Scaffolding & Single-PDF Standard
-STRICT RULE: All Key Stage 3 printed pupil workbooks and PDF compilation scripts must enforce the following typographical, scaffolding, and naming standards:
-1. **Zero Adult Specification Clutter:** Never render the dense, semicolon-delimited `Core Specification Focus` strip on the left-hand pages of pupil workbooks. That syllabus audit data belongs strictly in teacher documentation (`SCHEME_OF_WORK.md` and the Department Portal). Removing it guarantees clean vertical headroom and eliminates pupil intimidation.
-2. **Single Clean Scaffolding (No Duplicate Stems):** Never present both `Sentence Stems:` and `Analytical Connectives:` stacked together in Part B tasks. Provide ONLY a single, clean `Analytical Connectives:` row alongside the `Key Terms:` vocabulary bank.
-3. **Authentic KS3 Phrasing (Zero Corporate / A-Level Jargon):** Connectives must be natural, accessible sentence builders suited to 11–14 year olds (e.g. `One key consequence was that... • For example, this meant that... • This directly led to... • As a result...`), completely avoiding pompous A-level filler like `To a large extent, it can be argued that...` or `Consequently, the overall outcome was...`.
-4. **High-Legibility Typographical Baselines:**
-   - Enquiry Question Title: `13.0pt` (Playfair Display, bold 900)
-   - Stage Question Prompt: `9.2pt` (Inter, bold 800)
-   - Left Trigger Keywords: `8.8pt–9.0pt` (Inter, bold 800)
-   - Task Question Stems: `9.8pt` (Playfair Display, bold 900)
-   - Scaffolding & Connectives Box: `8.4pt` (Inter, italic / regular)
-5. **Calibrated Exercise Book Line Pitch:** Ruled handwriting lines must enforce standard British exercise book / GCSE answer pitch (`~8.8mm–9.8mm`). Never allow lines to stretch beyond the `10.5mm` distortion gate in `audit_page_budget.cjs`.
-6. **Strict Single Canonical PDF Standard (Zero Alias Clones):** All compilers must generate ONLY one canonical PDF file: `<unit_id>_pupil_workbook.pdf` (and `<unit_id>_textbook.pdf`). Strictly forbid copying or cloning files into redundant aliases (`_16p_workbook.pdf`, `_FINAL_V17.pdf`, etc.). All web app links in `department_portal.js`, `scheme_of_work_data.js`, `hero_launchpad.js`, and `workbooks_zone.js` must link directly to the canonical PDF filename.
-
-
-
-
-
-## Automated Database Sync (Safe Unit Mode)
-Whenever you (the AI agent) make structural changes to any unit's curriculum files (such as `data.js`), modify lesson titles, add a new unit, OR when the user explicitly asks you to "sync", you MUST automatically run the unified safe unit sync command:
-`node scripts/sync_unit.cjs <unit_id>` (or `npm run sync:unit <unit_id>`)
-This single unified pipeline automatically executes in sequence:
-1. Syntax validation of the modified `data.js`
-2. Database refresh (`node scripts/build_database.cjs`) to update `public/database.json` for the web app
-3. Fresh PDF compilation with Puppeteer (`node scripts/export_pdfs.cjs <unit_id>`, automatically skipped for digital-only `trip_ypres`)
-4. Page map alignment (`node scripts/generate_workbook_page_map.cjs`) so app page links match printed booklets
-5. Page layout overflow audit (`node scripts/check_overflows.cjs <unit_id>`) to guarantee 0 layout bugs
-Do NOT run `npm run sync` globally unless explicitly requested, as this risks breaking other units. You must run this safe unit-targeted pipeline proactively so the user never has to remember or type the commands themselves.
-
-## Video Injection Metadata
-Whenever injecting a new ERA or YouTube video link into a lesson, you MUST automatically fetch the URL's metadata and accurately determine its exact duration (e.g., '5 mins 11 secs') rather than using placeholder text like 'Short clip'.
-## "How Useful" Scaffolding (Provenance Clues)
-Whenever you create or modify a "How useful" source assessment question **specifically for the Medicine Through Time (Paper 1) unit**, you MUST provide scaffolding clues for provenance. Students find provenance very difficult, so the scaffolding box must include specific hints (e.g., using a `provenance_clue` property) that prompt them to consider the author, audience, and motive of the source. Do not apply this rule to other units unless explicitly asked.
-
-
-## Wikimedia Image Thumbnails
-Whenever you need to add an image from Wikimedia Commons for a historical figure or source, ALWAYS use the Wikimedia API to fetch the embeddable 500px thumbnail URL (e.g. `https://en.wikipedia.org/w/api.php?action=query&titles=X&prop=pageimages&format=json&pithumbsize=500`) instead of guessing the raw `.jpg` file path, as raw paths often lead to 404 errors due to Wikimedia's hotlinking restrictions.
-
-
-## Edexcel GCSE Exam Specification: Feature Questions
-Whenever generating or evaluating Edexcel GCSE History exam questions specifically for Paper 1 (Medicine) or Early Elizabethan England, remember the question structure and format changes:
-1. **Paper 1 (Medicine):** The 'feature' questions appear **ONLY in Section A (The British Sector of the Western Front, 1914–18)**, structured as two separate 2-mark questions: Q1(a) 'Describe one feature of...' [2 marks] and Q1(b) 'Describe one feature of...' [2 marks]. Section B (the thematic study: Medieval to Modern) does NOT have feature questions (it consists of Q3 similarity/difference [4 marks], Q4 explain why [12 marks], and Q5/Q6 essay [16 marks]).
-2. **Early Elizabethan England (Paper 2):** 'Describe one feature of...' appears twice as two separate 2-mark questions (Q1(a) [2m] and Q1(b) [2m]).
-3. **Paper 1 (Medicine) Western Front Follow-Up Question:** In Section A of Paper 1, question Q2(b) is ALWAYS the 4-mark follow-up question: 'How could you follow up Source X to find out more about...' [4 marks], structured across the 4 official Edexcel prompts (Detail in Source X, Question I would ask, Type of source I would use, How this would help me find out more). Never omit this follow-up question when generating Paper 1 assessment blueprints.
-Ensure all exam practice forms, UI templates, and generated assessments reflect this specification.
-
-### Fallback for Hotlink-Protected Images
-If a Wikimedia Commons URL works via the API (or curl) but returns a 403 Forbidden broken image icon in the browser (due to Wikimedia's hotlinking protection on high-traffic images), you MUST completely bypass hotlinking. Download the 500px thumbnail image directly into the `public/images/` directory using a Node script or curl, and update the JSON curriculum data to reference the local file path (e.g., `/images/vesalius.jpg`). This guarantees the image will always load flawlessly in the web app.
-
-## Edexcel GCSE Paper 2 Period Study Exam Architecture (Option P5: Conflict in the Middle East, 1945–95)
-STRICT RULE: Pearson Edexcel Paper 2 Period Study (Option P5: Conflict in the Middle East, 1945–95) has a total of 32 marks across strictly THREE question types. It contains STRICTLY ZERO 12-mark questions.
-1. **Q1(a) & Q1(b): Two Consequence Questions [4 marks each = 8 marks total]:**
-   - 'Explain one consequence of...' [4 marks each]. Requires 1 identified consequence and supporting historical detail/explanation. (Spend ~6 mins each).
-2. **Q2: One Analytical Narrative Question [8 marks]:**
-   - 'Write an analytical narrative explaining...' [8 marks]. Requires a clear chronological sequence showing causation and consequence (2 stimulus points provided + required own knowledge). (Spend ~15 mins).
-3. **Q3: Two Importance / Explanation Questions from a Choice of Three [8 marks each = 16 marks total]:**
-   - Choice of two questions from three: 'Explain the importance of X for Y' [8 marks each]. (Spend ~15 mins each).
-4. **Total Marks:** Strictly 32 marks. (There are NO 12-mark explanation questions on Paper 2 Period Study. 12-mark questions belong strictly to Paper 1 Medicine, Paper 2 Section A Early Elizabethan England, and Paper 3 Modern Depth Studies USA/Weimar).
-
-## Auto-Git Checkpoint
-Before running any automated extraction scripts, rebuilding the database, or making large structural refactors to curriculum files, you MUST automatically run `git add .` and `git commit -m "Auto-backup checkpoint before <task>"` if the workspace is clean and has untracked or modified files. This ensures a robust version history that can be instantly restored if anything breaks.
-
-## Data Syntax Validator
-Before running `node extract_units.js` or `node build_database.cjs`, you MUST quickly validate the syntax of any `data.js` or `data.json` files you just modified to ensure they do not contain trailing commas, missing brackets, or JavaScript syntax errors that could crash the extraction process.
-
-## Strict Containment
-Unless the user explicitly asks you to work globally or sync all units, you are STRICTLY FORBIDDEN from viewing, opening, or modifying files in any unit folders other than the specific unit the user is currently focused on.
-Furthermore, when fixing a bug or adding a feature that requires modifying a **global script** (e.g., PDF generators like `generate_workbooks.js` or `core_app.js` that apply to all units), you MUST wrap your code changes in an explicit unit check (e.g., `if (unitId === 'great_war')`) to isolate the new behavior to the current unit ONLY. You must never change the default behavior for other units without explicit permission, as this risks breaking older units (especially due to the heavy structural variation between KS3 and GCSE formats).
-This completely isolates your workflow and guarantees you cannot accidentally alter other units.
-
-## Automated Image Verification (Anti-Corruption)
-Before pushing any code to GitHub or triggering a Netlify deployment, you MUST automatically run `node verify_images.cjs`. This script physically checks the `public/images/` directory to ensure no Wikipedia downloads have silently failed (e.g. 403 HTML error pages masquerading as `.jpg` files). If the script flags any broken files, you must halt the deployment, fix the broken files using the updated `fetch_wikimedia_images.js` script or manual fallback, and re-run the verification until it passes cleanly.
-
-
-## Automatic Visual Source Inspection
-Whenever you fetch, download, or add a new visual source (image) to a lesson, you MUST automatically use your iew_file tool to visually inspect the downloaded image. You must verify that the image content perfectly matches the intended historical subject, caption, and alt text. If the image is incorrect, you must re-fetch a correct image or update the descriptive text to accurately reflect the source (e.g., specifying if it is a painting rather than a photograph). This must be done proactively before completing the task.
-
-
-## No AI Images
-STRICT RULE: Do NOT generate or use AI images (e.g., via generate_image tool) for any historical content, curriculum data, or cover images. You MUST ONLY use authentic, historical photographs or primary source illustrations. This app is for educational purposes and strictly forbids AI-generated historical imagery.
-
-## Global Iconography Policy for Educational Content
-Restrict FontAwesome / decorative icon usage strictly to high-level UI controls (such as the main sidebar navigation, view switchers, modal triggers, print buttons, and audio read-aloud controls). Keep all historical source presentations, reading boxes, and teacher commentary strictly typography-driven (using small-caps `.archival-meta-tag`, classical serif headings `.archival-source-title`, `.archival-shelfmark-stamp`, and structured tabular/footnote data). Never inject colored, playful, or decorative icons (e.g. quote-left, magnifying-glass, bullseye, image icons) inside historical excerpts or academic commentary to preserve an authentic, museum-archive feel throughout all units.
-
-## Archival Watermark & Seal Styling
-In place of colored icons, use a faint, subtle monochrome archival shelfmark stamp (`.archival-shelfmark-stamp`) or simple hairline dividers (`.archival-hairline`) for official school documentation boxes, family archives, and provenance containers to give them an understated, authentic institutional look. For official institutional provenance, use the `.archival-seal` micro-stamp badge.
-
-## Primary Source Citation Box Standard (Zero Archival Clutter Policy)
-Formalize all primary historical excerpts across all units (including Medicine Through Time, Weimar Germany, and the Great War) into the clean, accessible `.archival-source-box` pattern. Each citation box must feature:
-1. An `.archival-source-header` with an `.archival-meta-tag` category label (e.g. `SOURCE A • Official Proclamation`) on the left and a clean, concise historical date/origin (e.g. `9 November 1918`) on the right.
-2. An `.archival-source-title` with clear serif styling.
-3. An `.archival-source-body` rendering verbatim primary text in an authentic historical serif face (`Newsreader`, `Georgia`, or `Playfair Display`) with subtle warm archival parchment background.
-4. An `.archival-context-box` providing concise contextual grounding and concluding with a targeted Hinge Question to spark historical enquiry.
-5. **Zero Mock Accession Clutter:** STRICT RULE: Never inject fake or obscure archival accession shelfmarks, document references, or museum codes (`FO 93/36/78`, `RS-1918-SCH`, `BA 183-B0527`, etc.) into student-facing documents or source footers. Provenance must remain clean, authentic, and pedagogically focused for secondary school pupils and teachers.
-
-## Family Archive Hero Banners: Aspect Ratio & Artifact Standard
-Whenever generating, selecting, or updating hero banners for pupil family heroes (such as local soldiers researched by pupils, the Crummack archive, or the Lowry brothers at Manor Way Grange):
-1. **16:4 / 4:1 Panoramic Aspect Ratio**: Standardize on a wide 16:4 / 4:1 panoramic hero aspect ratio (e.g., 1600x400px or 1600x360px).
-2. **Physical Primary Artifacts Over Portrait Headshots**: Hero banners MUST feature physical primary artifacts (such as mounted combat medals, original trench caps, medals displays, field letters, wartime journals, or trench maps laid horizontally) aligned cleanly to the right (`banner_position: 'center right'`), rather than portrait headshots. Portrait headshots inevitably suffer from extreme zoom distortion, pixelation, and vertical clipping when stretched across wide full-bleed CSS banners (`.lesson-hero`).
-3. **Headshot Placement**: Portrait headshots of soldiers must strictly be placed within dedicated biographical profile cards, narrative sidebar figures, or archival citation boxes in the lesson body, never as the full-bleed hero background.
-
-## Master Pedagogical Blueprint & Lesson Architecture
-Whenever authoring or refactoring lesson content across KS3 and GCSE units, you MUST adhere to the following standards:
-1. **Four-Act Dramatic Structure**:
-   - **Act 1: Context & Catalyst (The Outpost / Setting the Stage):** Establishes baseline reality and geopolitical mindset before the crisis (`Source A`).
-   - **Act 2: Escalation & Conflict (The Boiling Point):** Core historical mechanism, geopolitical maneuver, or military clash (`Source B`).
-   - **Act 3: Primary Sources & Forensic Evidence (The Archival Core):** Immersive primary dispatches, intercepted letters, or courtroom confessions (`Source C` & `Source D`).
-   - **Act 4: The Historical Verdict & Historiographical Debate:** Competing academic interpretations (e.g., Fraser vs Edwards, Seeley vs Tharoor) and 3-Tier scaffolded extended writing.
-2. **Pure Paragraph Indexing Standard (`[Act.Paragraph]` Notation)**:
-   - Index **paragraphs only** using `<span class="para-ref">[1.1]</span>`, `<span class="para-ref">[2.1]</span>`, `<span class="para-ref">[3.1]</span>`.
-   - NEVER index individual sentences (`[1.1]`, `[1.2]`, `[1.3]`), as this causes cognitive clutter.
-   - All tasks must explicitly signpost pupils to exact paragraphs (e.g., *"Using paragraphs [3.1]–[3.3], explain how..."* or `(P4)`).
-3. **Universal Source Lettering & Zero Sub-Indices**:
-   - Sources within every lesson must follow a strictly sequential single-letter sequence: `Source A`, `Source B`, `Source C`...
-   - Sub-indices (`Source A1`, `Source A2`, `Source B2`) are STRICTLY FORBIDDEN.
-   - Zero duplicate letters and zero skips per lesson.
-   - Geographical reference maps must be labeled `Reference Map: ...` or `Map A: ...` to avoid colliding with primary sources.
-4. **Structured Writing Scaffolding**:
-   - Model sentence starters and evidence stems to support initial access and recall.
-   - Analytical causal connectives (`Consequently`, `Furthermore`, `This directly resulted in...`) to develop historical explanation.
-   - Evaluative criteria prompts to structure high-level judgements and historiographical balance.
-   - Every task must include a rigorous, detailed model answer (zero placeholders).
-5. **Pedagogical Recall Isolation ("Do Now" Bell-Ringers)**:
-   - "Do Now" activities must strictly test recall from *prior* lessons or units. They must NEVER test content from the current lesson.
-
-## Edexcel GCSE Paper 3 Visual Revision Guides: The 4-4-4-4 Question Matrix
-Whenever generating, updating, or refactoring a 16-spread (36-page) Edexcel GCSE Paper 3 Visual Revision & Exam Guide (such as for USA 1954–75, and crucially when authoring the future **Weimar and Nazi Germany** guide):
-1. **The 4-4-4-4 Matrix Standard**: The 16 double-page spreads across the 4 Key Topics MUST strictly follow an even 4-4-4-4 question distribution:
-   - **4x `inference_causation`**: Section A: Q1 Inference [4m] + Q2 Explain Why [12m] (1 per Key Topic)
-   - **4x `source_utility`**: Section B: Q3(a) Utility of Sources B and C [8m] (1 per Key Topic)
-   - **4x `interpretation_diff_why`**: Section B: Q3(b) Differences in Views [4m] + Q3(c) Suggest Reasons for Difference [4m] (1 per Key Topic)
-   - **4x `interpretation_eval`**: Section B: Q3(d) Evaluative Essay with Criteria Judgement [16+4m] (1 per Key Topic)
-2. Every single Key Topic (KT1, KT2, KT3, KT4) must contain exactly one spread dedicated to each of the four exam question formats, guaranteeing completely balanced, high-yield exam mastery across Section A and Section B.
-3. **Weimar & Nazi Germany Note**: Do NOT build the Weimar and Nazi Germany guide until the user explicitly requests it. When built, it must enforce this exact 4-4-4-4 architecture.
-
-## GCSE Depth of Knowledge (DoK) Calibration & Specification Guardrails
-Whenever authoring, enriching, or refactoring curriculum data, revision guides, timelines, or flashcards for Edexcel GCSE units (such as Paper 2 Conflict in the Middle East, Paper 1 Medicine, Paper 2 Early Elizabethan England, Paper 3 USA, or Weimar & Nazi Germany):
-1. **Strict Specification Anchoring:** Content must strictly adhere to the official Pearson Edexcel GCSE History specification bullet points and standard GCSE textbooks (e.g. Pearson / Hodder).
-2. **Eliminate University-Level / Peripheral Over-Detail:** NEVER inject obscure historical trivia, secondary political figures (e.g. Hosni Mubarak), specific extremist cell factions (e.g. Egyptian Islamic Jihad), or niche diplomatic terminology (e.g. "cold peace") that are not in the GCSE specification or textbooks.
-3. **The 2-to-3 High-Yield Points Rule:** For any historical event, cause, or consequence, provide strictly 2 or 3 high-yield, punchy points that directly support the specification bullet points. This prevents pupil cognitive overload, avoids confusing teachers, and ensures revision materials directly maximize exam marks.
-
-## Strict Anti-Hallucination & Fact Grounding Protocol
-When authoring, enriching, or refactoring historical content, biographies, archival citations, or exam resources across all units:
-1. **The Primary Anchor Mandate:** You are STRICTLY FORBIDDEN from inventing, inferring, or generating biographical facts (such as medal classes, service numbers, spouse/relative names, professions, birth/death dates, or regimental battalions) from model memory or statistical likelihood. All asserted facts must be extracted verbatim or directly grounded in verified primary documents or the unit's `data/curriculum_facts_manifest.json`.
-2. **The "Cite-or-Silence" Law:** If an exact historical detail (e.g. class of a medal, cause of death, maiden name) is missing from the provided sources, you MUST state that it is "unrecorded in surviving primary archives" or omit the attribute entirely. Never interpolate plausible or statistically common alternatives.
-3. **No Hollywood Embellishment ("Dramatic Fluff"):** Maintain a strict archival, juridical register. Do NOT invent dramatic combat maneuvers, cellar-bombing dashes, or sentimental motives that do not exist in official citations, dispatches, or war diaries.
-4. **Mandatory Step 0 Fact Audit:** Whenever compiling or modifying curriculum data, you must run `node scripts/verify_curriculum_facts.cjs <unit_id>` (enforced automatically in `scripts/sync_unit.cjs`). Any detected hallucination regression, placeholder, or specification violation must be resolved immediately before deploying or committing.
-
-## Permanent Departmental Reference Shelf & Specification Safeguard
-The directory `G:\My Drive\TEXTBOOKS` is our permanent departmental reference library for subject content enrichment across all KS3 and GCSE units (e.g. Weimar Germany, Early Elizabethan England, Medicine, Middle East, USA, and Medieval England).
-When referencing or extracting information from these textbooks, you MUST strictly adhere to the following guardrails:
-1. **Content Knowledge Only:** Use textbooks strictly for historical narrative depth, chronological precision, primary source excerpts, key statistics, and historical figures.
-2. **ZERO Exam Technique from Textbooks:** NEVER use textbooks to determine exam question formats, mark allocations, question stems, or exam technique. Many textbooks in the shelf are from different exam boards (AQA, Cambridge iGCSE, OCR, ISEB) or outdated legacy specifications.
-3. **Specification Authority:** All exam question structures, mark schemes, and assessment scaffolds must strictly follow our verified Pearson Edexcel specification rules (e.g. 4-mark consequence questions for Middle East Paper 2, Section A 2-mark feature questions for Medicine / Elizabethan, the 4-4-4-4 matrix for Paper 3, and `data/curriculum_facts_manifest.json`).
-
-## Exam Question Provenance & Past Paper Session Tagging
-Whenever generating, editing, or evaluating GCSE exam practice questions (in revision guides, mastery exam packs, workbooks, or the interactive web app), you MUST include past-paper provenance metadata for every question:
-1. **Official Past Exam Questions:** If a question (or a close variant) has appeared on an official Edexcel past exam, explicitly tag it with the exact series session (e.g. `Edexcel June 2018`, `Edexcel June 2019`, `Edexcel June 2022`, `Edexcel June 2023`, `Edexcel November 2020`, `Edexcel June 2024`, or `Sample Assessment Material`). Render this prominently as an `.exam-provenance-pill.past` badge.
-2. **Forecast & Unexamined Targets:** If a question has not yet appeared on an official past paper, label it accurately using our standard taxonomy:
-   - `★ High-Yield Forecast` (`.exam-provenance-pill.forecast`): for core specification bullet points with high statistical probability of appearing in upcoming series.
-   - `Unexamined Spec Target` (`.exam-provenance-pill.unexamined`): for specification points that Edexcel has never yet examined.
-3. **App & PDF Parity:** Ensure this provenance indicator is visible to students and teachers in both the printed booklets and the interactive online exam modules.
-
-## GCSE Revision Material Typography & Readability Calibration Standard
-All GCSE revision materials (Visual Revision Guides, Mastery Exam Practice Packs, and Knowledge Retrieval Quiz Packs) must adhere strictly to our unified departmental typography and readability calibration:
-1. **Font Hierarchy**:
-   - Primary Interface & Analytical Body: `Inter`, `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif` for maximum legibility.
-   - Document Titles & Primary Historical Excerpts: `Playfair Display`, `Georgia`, or authentic serif faces.
-   - Metadata, Shelfmarks & Category Tags: Uppercase monospace (`Courier New`, letter-spacing 0.5–1px).
-2. **Strict Font Size Thresholds (Zero Micro-Text)**:
-   - Title 1 (Main Unit / Document Title): `16.5pt`–`21pt` bold.
-   - Heading 2 (Major Sections / SOW Headings): `12.5pt`–`14pt` bold.
-   - Subheading / Card Title / Factor Box: `10pt`–`10.5pt` bold.
-   - Standard Analytical Body / Case Studies: `9.5pt` (line-height 1.36–1.38).
-   - Captions, Word Bank Pills, Metadata & Footers: `8.5pt` (line-height 1.28–1.30).
-   - **Absolute Minimum Floor:** Nothing under `8.5pt` (completely eliminate 5.5pt–7.5pt micro-text across all booklets).
-3. **High-Contrast Monochrome & Photocopier Safety**:
-   - Strictly pure monochrome styling (`#000000` text, `1.5px` to `2px` solid black borders, `#ffffff` card backgrounds, subtle `#f8fafc` tinting).
-   - Eliminate colored inks (no `#1e3a8a` navy headers, no green answer panels, no amber warnings) so documents photocopy and duplex-print with razor-sharp contrast.
-4. **Strict Three Pillars Volume Consolidation (Zero Split PDFs)**:
-   - Every GCSE unit must produce strictly **ONE canonical master PDF per pillar**:
-     - **Pillar 1:** Visual Revision Guide (`<unit>_revision_guide.pdf`)
-     - **Pillar 2:** Mastery Exam Practice Pack (`<unit>_mastery_pack_FULL.pdf`)
-     - **Pillar 3:** Knowledge Retrieval Quiz Pack (`<unit>_recall_quiz_FULL.pdf` / `<unit>_recall_quiz_pack_FULL.pdf`)
-   - Split PDFs (by Key Topic or section) are strictly forbidden in public distributions.
-
-## Universal 3-Tier Cognitive Difficulty Ramp for Quiz Packs (The "Quiz Pack Standard")
-STRICT RULE: All knowledge retrieval booklets MUST be termed **"Quiz Packs"** and MUST strictly implement the **3-Tier Cognitive Difficulty Ramp**:
-1. **Universal Naming Convention:** Always refer to and title these resources as **"Quiz Packs"** (never "quiz booklets" or "recall packs").
-2. **Mandatory 3-Tier Cognitive Progression:** Every enquiry question set (typically 8–10 questions) must progress systematically through three difficulty tiers with color-coded symbol pips:
-   - **Tier 1 (Q1–Q4 • 1 Green Pip `▸` `#047857`):** *Core Substantive Recall (Foundation / Level 4).* Direct specification retrieval: names, dates, key acts, treaties, named individuals, definitions.
-   - **Tier 2 (Q5–Q7 • 2 Amber Pips `▸▸` `#b45309`):** *Causal Mechanism & Explanation (Intermediate / Grades 5–7).* Historical causation and consequence: motives, why policies were adopted, tensions, reactions.
-   - **Tier 3 (Q8–Q10 • 3 Crimson Pips `▸▸▸` `#b91c1c`):** *Synoptic Significance & Historical Evaluation (Higher / Grades 8–9).* Long-term turning points, relative significance, precedent, historical verdicts.
-3. **Discreet Header Legend:** Every question page must feature a compact progression legend strip (`[ ▸ Tier 1 (Q1–4): Core Recall • ▸▸ Tier 2 (Q5–7): Causal Mechanism • ▸▸▸ Tier 3 (Q8–10): Synoptic Significance ]`) positioned above the question block so pupils clearly understand the cognitive hierarchy without reducing handwriting space.
-4. **Synchronized Marking Banks:** Every model answer in the rear Marking Bank must display the identical color-coded pip badge (`.mb-pip`) to facilitate targeted DIRT triage and student self-diagnosis.
-5. **Universal Conversion Mandate:** All existing and newly developed Quiz Packs across both KS3 and GCSE must be upgraded/converted to this 3-tier pip standard.
-
-## Classroom Delivery Roadmap Standard (2-Lesson Enquiry Choreography)
-Whenever authoring, enriching, or refactoring curriculum data (`data.js` or `data.json`) for any lesson across Key Stage 3 and GCSE:
-1. **Mandatory `delivery_plan` in `teacher_notes`:** You MUST automatically include a structured `delivery_plan` object inside `teacher_notes`.
-2. **Schema & Phasing:** The `delivery_plan` must follow this standard:
-   - `format`: `"2-Lesson Sequence (50 mins each)"`
-   - `lesson_1`: `{ title: "Lesson 1: Immersion, Context & Shared Reading (50 mins)", phases: [...] }`
-     - Phase 1 (00:00–05:00): Hook & Prior Knowledge Retrieval
-     - Phase 2 (05:00–22:00): Whole-Class Shared Reading & Prosody Modelling (Acts 1–3, with assistive speech tracking)
-     - Phase 3 (22:00–35:00): Forensic Evidence & Primary Source Analysis
-     - Phase 4 (35:00–47:00): Analytical Application & Task 1 (Vocabulary / Distinction)
-     - Phase 5 (47:00–50:00): Hinge Question Plenary
-   - `lesson_2`: `{ title: "Lesson 2: Historiographical Debate & Workbook Mastery (50 mins)", phases: [...] }`
-     - Phase 1 (00:00–05:00): Prior-Lesson Recall Retrieval
-     - Phase 2 (05:00–18:00): Act 4 Historiographical Debate & Forensic Dissection
-     - Phase 3 (18:00–38:00): 2-Page Workbook Enquiry Essay Output (Verso evidence launch & Recto independent writing)
-     - Phase 4 (38:00–46:00): Live Exemplar Critique & Peer Moderation
-     - Phase 5 (46:00–50:00): Consolidation Exit Ticket
-3. **Parity Across Media:** Ensure this delivery plan is rendered in the web app's Teacher Mode, printed in the departmental Scheme of Work (SOW), and documented in `DEPARTMENTAL_ROADMAP.md`.
-
-## Departmental Roadmap Tracking & Perpetual Reminder Protocol
-To ensure that large-scale curriculum improvements and delivery rollouts are never lost or forgotten across working sessions:
-1. **Central Progress Ledger:** The project maintains an official status tracker in `DEPARTMENTAL_ROADMAP.md` documenting the audit and implementation status of all units across our core pedagogical pillars (5-Stage Chronological Spine, Reading Age Calibration, `delivery_plan`, 2-Page Workbook, and SOW Sync).
-2. **Mandatory Per-Turn Proactive Roadmap Prompt:** At the conclusion of EVERY agent turn (in your proactive recommendations), you MUST:
-   - Inspect `DEPARTMENTAL_ROADMAP.md`.
-   - Identify the current active unit and the exact next incomplete lesson or milestone in the rollout.
-   - Provide a clear, actionable reminder stating exactly where we are in the departmental rollout and what needs to be done next, so the user never has to remember or track project status manually.
-
-## Permanent Departmental Milestone Memory: Medicine & Middle East KT2 Completed
-STRICT DEPARTMENTAL RECORD & ACTIVE MEMORY:
-1. **Edexcel Paper 1 (Medicine in Britain & Western Front):**
-   - **Status: COMPLETED (GREEN).** All lessons across the thematic eras (Medieval, Renaissance, 18th/19th Century, Modern) and Section A Western Front are fully authored, enriched with 5-Stage Chronological Inquiry Spines, and compiled.
-2. **Edexcel Paper 2 (Conflict in the Middle East, 1945–1995 - `cme_new`):**
-   - **Key Topic 2 (The Escalating Conflict, 1964–1973):** **COMPLETED (GREEN).** All 5 enquiry lessons (KT 2.1 to KT 2.5) are authored in canonical 5-Stage structure. The flagship **16-Page Double-Page Spread Pupil Workbook** (`pupil_workbook_KT2.html`) is 100% finalized, featuring the publisher-grade cover (108mm portrait photographic plate, docked 66mm editorial suite), 5 double-page enquiry spreads, living timeline, master knowledge organiser, Grade 9 masterclass, and assessment tracker.
-   - **Key Topic 1 & Key Topic 3 (`cme_new`):** **PRIORITY #1 TO FINISH SOON (AMBER).** These units must be converted to this newly established 16-page double-page booklet template moving forward.
-
-## Universal 16-Page Double-Page Pupil Workbook Standard
-All future GCSE key topic workbooks and KS3 enquiry booklets moving forward MUST adopt the newly proven 16-page architecture established in `cme_new` KT2:
-1. **Page 1: Publisher-Grade Front Cover:**
-   - Left Column (108mm wide): Massive portrait photographic plate with base64 embedded historical source + Archival Primary Record caption plate citing repository accession shelfmarks (e.g. `GPO-D388-052`).
-   - Right Column (66mm wide): Docked editorial panels with zero dead space: Pupil Portfolio card (Name, Class, Teacher, 5-enquiry tracking table), Section A Exam Architecture & Tariffs, Section B Specification Enquiry Sequence (with titles, dates, enquiry questions, specification bullets, concepts, and exam tariffs), Section C 10-Milestone Chronological Anchors, and Section D PFC Writing Technique with 4/4 benchmark model answer.
-2. **Pages 2–3: Living Timeline & Panoramic Dual-Coding Spread:** 6 milestones across the period with 48mm sketch canvases for dual-coding.
-3. **Pages 4–13: 5x Double-Page Enquiry Spreads (2 Pages per Enquiry):**
-   - Verso (Left Page): 5-Stage Chronological Inquiry Spine with decimal badges ([X.1]–[X.5]), high-impact banners, 44mm spec-anchored 3-keyword trigger spine, and 6 ruled note-taking lines per stage (strictly ZERO Do Now starters and ZERO standalone vocab tasks).
-   - Recto (Right Page): Disciplinary Writing Practice (Part A/B or Single 8m/16m Extended Writing) with calibrated handwriting pitch (~7.8mm–9.4mm British exercise book pitch), single clean Analytical Connectives row, concise Key Terms vocabulary bank, and Timeline Mission signpost.
-4. **Page 14: Master Knowledge Organiser:** Bilingual Hebrew & Arabic / specialized terminology glossary, high-yield thematic tables, cause & consequence matrices.
-5. **Page 15: Grade 9 Extended Writing Masterclass & Band 4 Rubric:** Point-Fact-Consequence model, analytical connectives, evaluative criteria prompts, sustained judgment.
-6. **Page 16: Outside Back Cover:** Assessment Tracker, WWW/EBI Teacher Feedback Grid, and Mobile QR Quiz Matrix.
-
-## Publisher-Standard Textbook Engineering & Disciplinary Architecture
-Whenever authoring, compiling, or refactoring publisher-standard textbooks (such as `great_war_textbook_PUBLISHER.pdf` or `cme_new_textbook_KT1_PUBLISHER.pdf`):
-1. **Front Cover Branding & Subtitles:**
-   - Series Masthead: Always use the approved series title: `Key Stage 3 Master Curriculum Series` or `GCSE Visual Revision & Exam Guide`.
-   - Publisher Imprint: At the bottom, render `The History Revision Hub • Student Textbook Edition`.
-   - Never use obscure, awkward jargon like "Disciplinary Standard Edition".
-   - Maintain poetic, dramatic thematic subtitles (e.g., *"From the Hall of Mirrors to the Guns of August: How Decades of Imperial Rivalry and Fear Culminated in Thirty Days of Madness"*).
-2. **PEEL Paragraph Referencing Standard (`[Act.Paragraph]` / `[Section.Paragraph]`):**
-   - Every paragraph in the core prose must feature explicit bracketed PEEL tags: `<span class="para-ref">[1.1]</span>`, `<span class="para-ref">[1.2]</span>`, `<span class="para-ref">[2.1]</span>`, etc.
-   - Never index individual sentences; only index discrete paragraphs.
-3. **Historical Portrait Authenticity vs Hardware/Artworks:**
-   - When presenting a historical person (e.g., Otto von Bismarck, Helmuth von Moltke, Admiral Sir John Fisher, Kaiser Wilhelm II), you MUST use an authentic, historical photograph of that specific person.
-   - Never substitute an oil painting when an authentic photograph exists.
-   - Never substitute a warship, artillery piece, or technical blueprint for a person's biographical card (e.g., Jackie Fisher's portrait card must show Admiral Fisher, never a ship photo).
-4. **Pupil-Centric Disciplinary Headings:**
-   - Avoid abstract, intimidating academic jargon for component tags (e.g., do NOT use `GEOPOLITICAL MECHANISM`).
-   - Use clear, pupil-friendly disciplinary banners: `HISTORICAL DEEP DIVE: CRITICAL MECHANISM` or `HISTORICAL SPOTLIGHT: KEY TURNING POINT`.
-5. **Facing-Page Anti-Duplication Rule:**
-   - Never display the same historical person or image on facing pages (verso and recto).
-   - If a historical figure is featured on the right-hand page (e.g., Gavrilo Princip on Page 13), the facing left-hand page (Page 12) MUST use a different primary source (such as an archival crime scene map, a satirical cartoon, or a written constitutional oath), never a duplicate portrait photo.
-6. **Primary Source Archival Context & Hinge Question Standard:**
-   - Every primary source card on left-hand pages must feature:
-     - Verified archival metadata: accession shelfmark, category badge, and repository footer.
-     - A structured `archival-context-box` explaining the historical background of the document/image.
-     - A targeted, italicized **Hinge Question** (`archival-hinge-q`) to ignite critical historical debate.
-7. **SVG Print Rendering Integrity (`opacity: 1 !important`):**
-   - Animated or interactive SVGs (such as causal domino flowcharts or alliance matrices) must have explicit CSS print overrides: `.domino-group, .arrow-group, svg g { opacity: 1 !important; }`.
-   - When compiled with headless Puppeteer, animations do not trigger at $t=0$; without static print overrides, the diagram will render 100% blank.
-8. **Master Revision Back Cover ($\ge 90\%$ Page Budget):**
-   - The outside back cover must never suffer from dead underflow space or half-empty layouts.
-   - Back covers must be engineered as comprehensive master revision summaries:
-     - Visual period chronology (16–18 event milestone badges).
-     - Analytical framework matrix (e.g., M-A-I-N Causes: Militarism, Alliances, Imperialism, Nationalism).
-     - Historiographical debate box highlighting conflicting academic interpretations (e.g., Fritz Fischer vs Christopher Clark vs Margaret MacMillan).
-     - Disciplinary PEEL writing scaffold with model criteria stems.
-9. **Automated Verification Pipeline:**
-   - All textbooks must be audited using `node scripts/auto_balance_textbook.cjs <topicId>` to enforce 0px overflow and pass the automated Disciplinary Quality & Anti-Duplication Gate.
-
-## Key Stage 3 Universal Publishing Standard: Master Textbook & Declarative Workbook Pipeline
-All Key Stage 3 units (Years 7, 8, and 9: `early_modern_world`, `industrialisation_and_empire`, `great_war`, `great_war_part2`, `water_and_sanitation`, `medieval_england`, `the_shoah`, `cold_war`, `post_war_britain`, `australia`) must strictly adhere to the unified publisher-grade standard established in *Causes of the Great War* and *The Early Modern World*:
-1. **Retirement of Legacy Multi-Page Scripts:** The legacy 4-page workbook generator (`generate_pupil_workbooks.cjs`) is permanently retired for all KS3 units. All KS3 workbooks must be generated strictly via the Universal KS3 Declarative Workbook Engine (`scripts/ks3_workbook_engine.cjs` / `scripts/generate_ks3_workbook.cjs <unit_id>`).
-2. **20-Page A4 Double-Page Spread Architecture (Exact 5 A3 Folded Spreads):**
-   - **Page 1: Master Front Cover:** Customizer `data-department-name="The History Department"` enclosing `<span class="school-brand-target">The History Department</span>`, pupil info strip (`Name`, `Class`, `Teacher` — strictly NO target grade fields on KS3 covers), 52mm primary image plate with archival shelfmark, 8-enquiry roadmap grid, and "How to Write Like a Historian" anchor box.
-   - **Pages 2–3: Living Timeline & Panoramic Dual-Coding Spread:** 8 milestone anchors with 48mm sketch canvases and retrieval check questions.
-   - **Pages 4–19: 8x Double-Page Enquiry Spreads:**
-     - **Verso (Left Page):** 5-Stage Chronological Inquiry Spine with prominent decimal badges (`[1.1]`–`[1.5]`), high-impact question banners, 44mm spec-anchored 3-keyword trigger spine, and 6 ruled note-taking lines per stage (strictly ZERO Do Now starters and ZERO standalone vocab tasks).
-     - **Recto (Right Page):** Disciplinary Writing Practice (Part A/B or Single 12m/16m Essay) with calibrated handwriting pitch (~7.8mm–9.4mm British exercise book pitch), single clean `Analytical Connectives:` row, concise `Key Terms:` vocabulary bank, and Timeline Mission signpost.
-   - **Page 20: Universal KS3 Outside Back Cover:** Comprehensive pupil assessment record and mobile QR quizzing matrix linking directly to app lessons.
-3. **Master Publisher Companion Textbook Standard:**
-   - **Front Cover:** Series masthead `Key Stage 3 Master Curriculum Series`, poetic subtitle, authentic historical artwork, and publisher imprint `The History Revision Hub • Student Textbook Edition`.
-   - **Verso (Left Pages):** Curated Archival Core with 2x primary sources, repository shelfmark stamps, category meta-tags, `.archival-context-box`, and targeted italicized `.archival-hinge-q` (Hinge Question).
-   - **Recto (Right Pages):** Section A: Key Disciplinary Terminology; Section B: Key Individual Profile with **authentic, non-AI primary portrait**; Section C: Core Historical Prose with Pure PEEL paragraph numbering (`<span class="para-ref">[1.1]</span>`, `<span class="para-ref">[1.2]</span>`, `<span class="para-ref">[2.1]</span>`); Section D: Historiographical Spotlight / Disciplinary Mechanism.
-   - **Zero Facing-Page Duplications:** Never display duplicate portraits or images on facing verso/recto pages.
-   - **Back Cover ($\ge 90\%$ Page Budget):** 16–18 event visual chronology, analytical framework matrix, historiographical debate summary, and PEEL criteria writing scaffold.
-4. **Mandatory Automated Verification Pipeline:**
-   Whenever modifying, developing, or syncing any KS3 unit, you MUST automatically run:
-   - `node scripts/auto_balance_textbook.cjs <unit_id>` (guarantees 0 duplicate images, 100% context blurbs & hinge questions, 100% PEEL indexing, 0px overflow).
-   - `node scripts/generate_ks3_workbook.cjs <unit_id>` (compiles declarative workbook and synchronizes to `public/pdfs/`, `dist/pdfs/`, and `G:\My Drive\AAMX\Dep File\Year <N>\<Unit Name>\`).
-   - `node scripts/sync_unit.cjs <unit_id>` (executes full safe sync pipeline).
-
-## KS3 Age-Appropriate Disciplinary Phrasing (14-Year-Old Friendly)
-In KS3 workbooks, pupil tasks, and classroom worksheets (Years 7–9 / 11–14 year olds):
-1. **No Intimidating Academic Jargon in Pupil Prompts:** Strictly avoid overly dense, abstract historiographical labels such as "orthodox critique" and "revisionist defense" in pupil-facing prompts, badges, and structure strips.
-2. **Ground in Accessible Terminology:** Model historiographical debates on the pupil-friendly phrasing established in Year 8 (e.g., use "The Traditional Criticism / The Traditional View" vs "The Modern Defence / The Modern View").
-3. **Preserve Disciplinary Rigor:** Keep the high-level historical arguments, causal reasoning, and primary evidence fully intact while ensuring that the framing language is clear, accessible, and motivating for 11–14 year old pupils.
-
-## Edexcel GCSE Paper 2: Early Elizabethan England Exam Architecture (100% Factual Recall)
-For Edexcel GCSE Paper 2, Section B (Early Elizabethan England, 1558–88):
-1. **100% Factual Recall & Explanation (AO1 & AO2):** There are **ZERO contemporary primary sources** and **ZERO historical interpretations** on this paper (unlike Paper 1 Western Front or Paper 3 Weimar/USA). All questions assess pure historical recall, causation, and evaluation.
-2. **Three Question Types Only:**
-   - **Q1(a) & Q1(b): Two 2-Mark Feature Questions:** `Describe one key feature of...` [2 marks each = 4 marks total]. Requires 1 specific identified feature [1 mark] and 1 supporting factual detail [1 mark].
-   - **Q2: One 12-Mark Causation Question:** `Explain why...` [12 marks]. Requires 3 detailed PEEL paragraphs explaining distinct causes (2 provided stimulus points + 1 required own-knowledge point).
-   - **Q3: One 16-Mark Evaluative Essay:** Choice of Q3(a) or Q3(b): `"Statement." How far do you agree? Explain your answer.` [16 marks + 4 marks SPaG = 20 marks]. Requires a balanced, criteria-led argument weighing factors with a sustained, justified conclusion (2 provided stimulus points + additional own knowledge).
-3. **Consolidated 16-Page Double-Page Spread Architecture:** All Early Elizabethan England revision and pupil workbooks must follow the unified 16-page double-page architecture established in `cme_new` KT2 (Cover, Living Timeline, 5 Double-Page Enquiry Spreads, Master Knowledge Organiser, Grade 9 Masterclass, and Assessment Tracker / Back Cover).
-
-## Universal Archival Source Framing Standard (Zero-Crop Primary Evidence Standard)
-STRICT RULE: All primary historical sources rendered with `.archival-image` or inside archival citation boxes across all master textbooks, workbooks, and curriculum pages MUST strictly use `object-fit: contain;` (NEVER `object-fit: cover;`).
-1. **Zero-Crop Primary Evidence Standard:** Primary historical sources (tapestries, illuminated manuscripts, frescoes, charters, treaties, photographs) represent irreplaceable forensic visual evidence. They must NEVER be cropped, sliced, or zoomed in a manner that truncates historical figures, inscriptions, marginal annotations, or context.
-2. **Archival Mounting Backing:** All `.archival-image` containers must enforce a neutral archival backing (`background: #f8fafc;` with `border: 1px solid #e2e8f0;` and calibrated `height: 100px;`) so that letterboxing or pillarboxing appears intentional, dignified, and museum-grade.
-3. **Primary Source Sizing Tiers & Aspect Ratio Hints:**
-   - **Baseline (Default):** Standard `.archival-image` (`height: 100px; object-fit: contain;`) for standard 60–80 word narrative acts.
-   - **Expanded Single-Column (`.expand-md` / `.expand-lg`):** Applied to `.archival-source-box` (`height: 125px` / `height: 145px`) when primary sources have vertical portrait aspect ratios or when surrounding prose is concise, absorbing internal page voids cleanly.
-   - **Cross-Column Panoramic (`.panoramic-source`):** For unusually wide panoramas (e.g. the Bayeux Tapestry, Great Fire panoramas, or panoramic trench maps), apply `.panoramic-source` to `.archival-source-box` (`column-span: all; margin: 4px 0 5px 0;`) with `.archival-image` (`height: 115px; width: 100%; object-fit: contain;`). This breaks across both columns to give wide sources magnificent full-page measure without disrupting vertical column flow.
-4. **Automated Audit Enforcement:** `scripts/audit_page_budget.cjs` and `scripts/check_overflows.cjs` automatically inspect every `.archival-image` element. Any computed `object-fit: cover` will immediately fail the build with a hard `isCroppedSource` violation.
-
-## Key Historical Individual Portrait Standard (Portrait-Only or Wax Seal Monogram Policy)
-STRICT RULE: In the `.key-figure-box` component (`.kf-portrait` container, 40x48px or 44x54px):
-1. **Head-and-Shoulders Portrait Mandate:** Only authentic head-and-shoulders portraits, illuminated portrait busts, or close-up coin/seal profiles of the named individual (e.g. William I, Thomas Becket, King John, Richard III, Edward I) may be displayed in `.kf-portrait`.
-2. **No Landscapes, Castles, Battles, or Text Folios:** Never inject castle photos, battlefield panoramas, multi-figure crowd paintings, or full manuscript pages into the 40x48px thumbnail. In a 40x48px container, wide scenes are completely illegible and visually counterproductive.
-3. **Wax Seal Monogram Typographic Standard for Abstract or Composite Figures:**
-   - For abstract, composite historical archetypes (such as "The Tudor Yeoman", "The Industrial Mill Overseer", or figures where no contemporary likeness survives), STRICTLY FORBIDDEN from using modern stock models or landscape photographs.
-   - Render the deliberate visual badge or wax seal monogram: `<div class="kf-portrait kf-monogram" title="${name}"><span class="kf-monogram-initials">${initials}</span><span class="kf-monogram-tag">RECORD</span></div>`.
-   - Styled with a deep archival wax seal gradient (`radial-gradient(circle at 35% 35%, #1e293b 0%, #0f172a 100%)`), classical serif monogram (`Playfair Display`), and micro archival tag (`RECORD` or `ARCHIVE`), creating a distinguished museum-grade identity without anachronisms.
-
-## Master Pupil Workbook Publisher Standard (16-Page KS3 Architecture)
-STRICT RULE: All 16-page saddle-stitch pupil workbooks must enforce the following permanent layout and pedagogical standards:
-1. **Notes Pages (Pages 14 & 15):**
-   - Page 14 must have a simple, uncluttered header titled "General Notes". Never include "Protocol" instructional boxes or flashcard/cues sidebars.
-   - Page 15 must have NO heading at all—a pure, full-page blank ruled lines canvas with red margin for flexible teacher and student use.
-   - Ruled lines (27–29 rows) must fill the full printable page down to the footer strip with zero dead underflow space.
-2. **Outside Back Cover (Page 16) Marking Grid:**
-   - The marking grid contains exactly 6 rows: 5 Enquiries + 1 "Teacher-Designated Assessment Task" (Row 6).
-   - NEVER include an "Independent Study & Notes Portfolio" row in the marking grid.
-   - Grid rows must be evenly distributed with balanced cell padding (e.g. 20.5px–21px) to absorb vertical space without overflow.
-3. **Scaffolding Separation (Workbook vs Web App):**
-   - Printed workbook right pages must remain clean, authentic examination workspaces: exam stem, stimulus boxes, key terms bank, generic bare-bones connectives, and ruled writing lines.
-   - Extensive scaffolding (sentence starters, 3-column planning boxes, step-by-step hints, model answers) belongs strictly in the interactive web application, NOT in the printed workbook.
-4. **Bare-Bones Generic Analytical Connectives:**
-   - Connectives printed in workbook question boxes must be generic, purely structural transitions (e.g., `A decisive factor was...`, `This led directly to...`, `Furthermore...`, `As a direct result...`, `Ultimately, this meant that...`).
-   - NEVER embed factual clues, dates, or specific historical answers into the connectives list.
-5. **GCSE Statement Essay Question Format (Enquiry 5 / Synoptic Task):**
-   - Must follow authentic GCSE history statement format:
-     `"[Statement]." How far do you agree? Explain your answer. [12 marks]`
-   - Stimulus bullets must strictly provide:
-     - Bullet 1: A factor agreeing with/supporting the statement.
-     - Bullet 2: An alternative/counter-factor disagreeing with the statement.
-     - Followed by: `(You must also use information of your own)`.
-6. **Chronological Spine Stage Question Variety:**
-   - Left-page chronological spine stages (5 stages per enquiry) must strictly rotate question stems across the unit. Avoid repeating "Why did..." or "How did..." on consecutive stages; use varied high-cognitive stems (`What factors led to...`, `In what ways did...`, `Explain why...`, `What forced [X] to...`, `To what extent did...`, `Evaluate why...`).
-
-## Dual-Pathway Living Timeline Standard (Choice A: Dual-Coding vs Choice B: Concept Mind Map)
-STRICT RULE: All Key Stage 3 double-page pupil workbooks (both newly authored and retrospectively upgraded) MUST implement the Dual-Pathway Living Timeline architecture established in `the_shoah`.
-1. **The Core Pedagogical Rationale (Autonomy & Neurodiversity):**
-   - Forcing all pupils to sketch/draw historical events creates acute cognitive friction, drawing anxiety, and off-task avoidance for pupils with fine-motor dysgraphia or strong verbal/analytical preferences.
-   - Grounded in Universal Design for Learning (UDL: Multiple Means of Action and Expression), Paivio & Caviglioli's Dual-Coding Theory, and Novak & Ausubel's Concept Mapping schema theory: pupils must be provided with autonomous agency to select their cognitive representation method.
-   - **Pathway A (Visual Dual-Coding):** Visual storytelling symbols, timeline icons, and dates for visual processors.
-   - **Pathway B (Concept Mind Map):** Central conceptual node branching out to 3 concrete historical evidence stems for analytical and neurodiverse thinkers.
-2. **The 3 Mandatory Reprographic Touchpoints in Every Workbook:**
-   - **Touchpoint 1: Centrefold Protocol Banner (Pages 8–9 or 10–11):**
-     `<strong style="color: #000000;">Living Timeline Dual-Pathway Protocol:</strong> For each milestone, pupils choose either <strong>Pathway A (Visual Dual-Coding):</strong> sketch non-graphic historical symbols &amp; dates; OR <strong>Pathway B (Concept Mind Map):</strong> draw a central concept node branching to 3 specific evidence stems.`
-   - **Touchpoint 2: Centrefold Milestone Canvas Footer:**
-     Every milestone sketch canvas must render the discreet identifier:
-     `<div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">[ Choice A: Visual Dual-Code Icon &bull; OR &bull; Choice B: 3-Branch Concept Mind Map ]</div>`
-   - **Touchpoint 3: Right-Page Lesson Tasks (Bottom Timeline Mission Box):**
-     Every right-page timeline mission banner MUST offer both pathways explicitly:
-     `<strong>Milestone X ([Title] &bull; [Date]):</strong> Annotate [core fact/statistic]. <em>Choose:</em> <strong>[A] Dual-Code:</strong> sketch [symbol 1] &amp; [symbol 2] &bull; OR &bull; <strong>[B] Mind Map:</strong> node <em>"[Concept Name]"</em> branching to [Branch 1], [Branch 2] &amp; [Branch 3].`
-
-## Ruled Lines Gap-Free Reprographic Standard (Vertical Headroom & Space Allocation)
-STRICT RULE: In all printed workbook right-hand writing pages, ruled response lines must cluster directly underneath their scaffolding strip with zero dead gaps or artificial spacing voids.
-1. **Root Cause Avoidance:** Never rely on `justify-content: space-between` across discrete sibling elements in `.page-body-full` when line counts are low; this creates unsightly 15–20mm voids between the question box, scaffolding strip, and ruled lines.
-2. **Unified Flex Layout:** Group the Exam Header, Question Prompt, Scaffolding Strip, and Ruled Lines inside a unified vertical flex container (`gap: 2px`). Attach the Ruled Lines directly below the scaffolding box with a clean 1mm margin.
-3. **Full Line Budget Absorption:** Response lines must absorb the full vertical page height down to the bottom mission box:
-   - Full-Page Extended Writing (`narrative_8`, `single_12`, `essay`): 22–23 lines (`~7.8mm–8.1mm` pitch).
-   - Split Drill Pages (e.g. 4m Feature + 4m Consequence): 8 lines (Part A) + 14 lines (Part B) seamlessly absorbing the layout with zero footer gaps.
-
-
-
-## GCSE 28-Page Master Classroom Textbook Publishing Standard
-Whenever authoring, updating, or compiling a GCSE (Key Stage 4) or in-depth companion classroom textbook (e.g. `cme_new` Conflict in the Middle East, `cold_war`, `weimar_nazi_germany`, `eee` Early Elizabethan England, `edexcel_medicine` Medicine Through Time):
-1. **Mandatory 28-Page Reprographic Architecture:** Exactly 28 pages (7 folded A3 sheets, saddle-stitch booklet), 0 blank pages, 0px overflow.
-2. **Page 1 (Master Cover):** Top masthead (`The History Revision Hub • Master Curriculum Series`), date range pill, hero artwork plate ($82\text{mm} \times 76\text{mm}$) with archival caption, 2-paragraph narrative overview blurb (`HISTORICAL OVERVIEW • [DATES]`), enlarged 12-Enquiry Table of Contents directory ($2 \times 6$) with browser auto-fit scaler (`autoFitCoverEnquiries()`), zero core concepts strip, zero double-headers.
-3. **Page 2 (Milestone Spine):** 15-event chronological turning points highway with connecting vertical spine, circular node dots, and paragraph cross-references (`Ref [X.Y]`).
-4. **Page 3 (Dual Cartographic Theater & 4 Strategic Flashpoints):** Two side-by-side maps (Map 1: Regional Theater + Map 2: Conflict Corridor / Occupied Territories, calibrated $94\text{mm}$ height, `object-fit: contain`) + $2 \times 2$ grid of Four Defining Strategic Geopolitical Flashpoints (topography, water, chokepoints, strategic depth). Sized via `autoFitPage3Flashpoints()`. Zero curriculum duplication with Page 1.
-5. **Pages 4–27 (12 Double-Page Spreads):** 100% pure narrative historical text (0 primary sources, 0 vocab boxes, 0 exam rubrics). Body font strictly $\ge 11.5\text{pt}$ Lora serif, 1.58 line height, 2 balanced columns. STRICTLY ZERO in-prose paragraph numbering pills (`[1.3]`). STRICTLY ZERO archaic symbols (`§`, `Δ`). Only clean block section headers `[X.Y] Date Range Title`. Verso banner has `KEY ENQUIRY QUESTION` badge; Recto banner has `DECISIVE HISTORICAL MECHANISM` badge.
-6. **Page 28 (Master Retrieval Quiz):** 60 essential recall questions across 6 topic cards (10 questions each, Qs 1–60) cross-referenced to paragraph ranges (`pp. X–Y • Ref [A.B]–[C.D]`). Instructions banner for Partner Quiz or Solo Practice. Zero answers printed.
-7. **Automated Reprographics Quality Gates:** Must run `node scripts/audit_page_budget.cjs` to enforce 0px overflow across all 28 pages, footer gaps $\le 25\text{px}$, and $\ge 95\%$ space utilization (`✅ OPTIMAL`).
-8. **Strict Anonymity:** 100% institutional neutrality under *"The History Revision Hub"*, zero school names.
-9. **Turnkey Engine:** Synchronize HTML to `public/units/<unit_id>/textbook_UNIFIED.html` and export print-ready PDF to `public/pdfs/<unit_id>_textbook_UNIFIED_FINAL.pdf`.
-
-## Edexcel GCSE Paper 3 Disciplinary Source Diversity Standard (Germany & GCSE Units)
-STRICT RULE: Across all Key Topics in Weimar & Nazi Germany (Key Topics 1 to 4) and all GCSE curriculum units:
-1. **Mandatory Disciplinary Media Blend:** Layer 3 Rotated Disciplinary Sources (Sources A–E in collapsible drawers) must never rely primarily on photographs. Every lesson must systematically blend across multiple authentic disciplinary media types to prepare pupils directly for Pearson Edexcel Paper 3 Question 3(a) (8-mark Source Utility) and Question 1 (Inference):
-   - **Contemporary Written Primary Extracts:** Eyewitness diaries, contemporary memoirs, confidential diplomatic letters, keynote parliamentary/convention speeches, feminist or cultural essays, and trial testimonies. Formatted with `type: 'written'`, clean serif italic blockquote box, audio read-aloud support, 3-part provenance breakdown (Author, Audience, Motive), and targeted Paper 3 Utility questions.
-   - **Archival Photographs:** High-resolution photographs capturing concrete historical events (proclamations, street fighting, barricades, troop deployments, diplomatic conferences, municipal architecture).
-   - **Satirical Political Cartoons & Caricatures:** Contemporary cartoons from satirical publications (*Simplicissimus*, *Kladderadatsch*, *Punch*) evaluating nationalist, communist, or foreign perspectives.
-   - **Propaganda Campaign Posters & Postcards:** Political party election posters, plebiscite banners (e.g. Young Plan referendum), or ideological postcards (e.g. *Dolchstoßlegende*).
-   - **Official State Documents & Charters:** Promulgated constitutional pages (*Reichsgesetzblatt*), abdication decrees, police arrest warrants, or diplomatic treaty instruments.
-   - **Material Culture & Numismatic Artefacts:** Authentic currency banknotes (hyperinflation denominations, Rentenmark), sovereign gold bonds, and physical tokens.
-   - **Avant-Garde Fine Art:** Critical contemporary paintings (e.g. Otto Dix, George Grosz) exposing post-war social trauma and militarism.
-2. **Zero Redundant Portrait Placeholders:** Strictly eliminate static headshot portrait photos from source slots. If an individual is examined (e.g. Friedrich Ebert, Gustav Stresemann, Rosa Luxemburg, Adolf Hitler), provide their authentic written words or a dynamic historical document rather than a passive portrait.
-3. **Rigorous Quality Gates:** All written and visual sources must remain synchronized across `data/<unit_id>.json`, `units/<unit_id>/data.js`, `database.json`, and `scripts/master_rights_database.json`, with zero broken links, zero intra-lesson duplicate files, and zero school identifiers.
-
-
-
+1. **Commercial Independence:** All software and curriculum publications are independent commercial products intended for multi-school adoption.
+2. **Approved Branding Terminology:** Always use **"The History Revision Hub"** (`the-history-revision-hub.netlify.app`) or generic designations (`"The History Department"`, `"The History Portal"`, `"Fieldwork Primary Record"`, `"Fieldwork Archive"`).
+3. **No Associated School Identifiers:** Never include school-specific email domains (`@meoncross.co.uk`), telephone numbers, school archive seals, teacher surname nameplates (render blank lines `<span class="line"></span>`), or student family links. Never reference the decommissioned legacy Netlify domain.
+4. **Commercial School Cover Customizer:** Enclose `<span class="school-brand-target">The History Department</span>` inside `data-department-name="The History Department"` on booklet covers (`?school=School+Name` / `SCHOOL_NAME`).
+5. **Mandatory Sanitization Gate:** Run `node scripts/verify_sanitization.cjs` before completing work or committing (enforced in `.husky/pre-commit` and `npm run test:qa`).
+
+---
+
+## 2. Autonomous Execution, Containment & High-Signal Communication
+1. **Zero Memory Burden on the User:** Never expect the user to remember CLI syntax, database sync steps, or file paths. Execute full end-to-end synchronization across `data/*.json`, `public/data/*.json`, `database.json`, `public/database.json`, `units/*/data.js`, and `pupil_workbook.html`, validate (`npm run audit:tasks` / `npm run sync:unit <unit_id>`), and report back cleanly.
+2. **Zero-Prompt Tablet Handoff:** Whenever the user opens with `"hi"`, `"hey"`, `"where are we?"`, or `"continue"`, immediately read `.agents/task.md` and the latest git commit, then reply with a concise 3-bullet briefing: (a) Exact project status, (b) Last completed work, and (c) Single recommended next step.
+3. **High-Signal Output Standard (Zero Clutter):**
+   - Finish turns with a concise summary, clickable `file://` links, and **at most ONE single, clear next step** (1–2 sentences).
+   - **Strict Ban on Rollout Compass Churn & 3-Recommendation Dumps:** Never paste the "Workbook Rollout Compass" block or multi-option essay dumps at the end of turns unless the user explicitly asks for strategy/options. Progress lives in `WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md` and `.agents/task.md`.
+4. **Strict Unit Containment & Data Loss Prevention:**
+   - Unless asked to work globally, do NOT modify files in units outside the user's current target unit. Wrap shared-script unit overrides in explicit `unitId` checks when needed.
+   - Before destructive commands (`git reset --hard`, `git clean`) or full-file overwrite parsers, ask explicit user permission, create a timestamped backup in `temp_backups/`, and checkpoint clean Git state when refactoring. Always validate JS/JSON syntax before running `build_database.cjs` or `sync_unit.cjs`.
+   - Use unit-scoped `npm run sync:unit <unit_id>` (`node scripts/sync_unit.cjs <unit_id>`) rather than global `npm run sync` unless explicitly requested.
+
+---
+
+## 3. Specialized Skill Routing (Mandatory Progressive Disclosure)
+Before executing any specialized publishing or generation workflow, read the matching `SKILL.md` in `.agents/skills/`:
+- **KS2 Textbooks (8p / 16p Single Wide-Margin Column):** `.agents/skills/ks2-classroom-textbook-engine/SKILL.md`
+- **KS3 Textbooks (8p / 12p Pure Narrative Anthology):** `.agents/skills/ks3-classroom-textbook-engine/SKILL.md`
+- **GCSE 28-Page Master Textbooks (Zero Maps on Page 3):** `.agents/skills/gcse-classroom-textbook-engine/SKILL.md`
+- **KS3 Unit Orchestration & Stage Sync:** `.agents/skills/ks3-publishing-engine/SKILL.md`
+- **KS3 & GCSE Pupil Workbooks + Edexcel Tariffs:** `.agents/skills/pupil-workbook-engine/SKILL.md`
+- **Master Knowledge Retrieval Companions ("Quiz Packs"):** `.agents/skills/retrieval-companion-engine/SKILL.md`
+- **Quiz & Vocab Injection:** `.agents/skills/auto-quiz-generator/SKILL.md` & `.agents/skills/auto-vocab-generator/SKILL.md`
+- **Pre-Production Security, Bundle & Asset Hygiene:** `.agents/skills/production-release-gate/SKILL.md`
+
+---
+
+## 4. Curricular Pillar Taxonomy & Universal Prose Standards
+1. **Official 4-Tier Publication Taxonomy:**
+   - **Master Textbook:** Pure narrative classroom reading anthologies (zero source boxes, zero vocab ribbons, zero exam rubrics, zero in-prose `[1.3]` pills).
+   - **Pupil Workbook:** Consumable double-page inquiry companions (Verso 5-Stage Chronological Spine + Recto calibrated writing tasks, pure `#000000` monochrome interior, zero Do Nows, zero standalone vocab drills, zero knowledge giveaways in stems). Never use deprecated `generate_pupil_workbooks.cjs` or `generate_textbooks.cjs`.
+   - **Mastery Exam Pack:** Summative timed mock papers, mark schemes, and Grade 8/9 WAGOLLs (UI label strictly `"Mastery Exam Pack"`).
+   - **Master Knowledge Retrieval Companion ("Quiz Pack"):** Spaced retrieval booklets (KS2 `4p`, KS3 `8p`, GCSE `16–28p`) verified via `pdf-parse` for zero Skia spillover and 3-tier `▸`/`▸▸`/`▸▸▸` cognitive pips.
+2. **Strict 1-to-1 Narrative Block to Workbook Stage Invariant:**
+   - Across all units, `lesson.narrative_blocks` and `lesson.workbook_stages` MUST both contain **exactly 5 items** in 1-to-1 correspondence (Block 1 <-> Stage 1 ... Block 5 <-> Stage 5; zero orphan intro blocks).
+   - `narrative_blocks[i]` must naturally embed the 3 Trigger Terms from `workbook_stages[i]` inside `<p>` tags (zero dangling text tails). Verify via `npm run audit:stages`.
+3. **Age-Calibrated Word Budgets & Readability:**
+   - **KS2 (Years 5–6 / Ages 9–11):** `50–80` words per block. Sensory storytelling, concrete nouns, short sentences.
+   - **KS3 (Years 7–9 / Ages 11–14):** `80–110` words per block (strict cap `120w`). Exactly 2 paragraphs (`[X.1]`, `[X.2]`, ~40–55w each). Use accessible framing (*"The Traditional View"* vs *"The Modern View"*).
+   - **GCSE (Years 10–11 / Ages 14–16):** `110–140` words per block (strict cap `150w`). Exactly 2 paragraphs (`[X.1]`, `[X.2]`, ~55–70w each). Anchor strictly to Pearson Edexcel specification points (2–3 high-yield points per event; zero university-level jargon inflation).
+4. **Zero AI Corporate Jargon:** Never use phrases like *"Specification Mastery & Synthesis"*, *"Holistic Framework"*, *"Synergistic Learning"*, or *"Pedagogical Ecosystem"*. Write in authentic veteran history-teacher and examiner language.
+
+---
+
+## 5. Pedagogical Lesson Architecture, Sources & Fact Grounding
+1. **Strict Spaced-Retrieval Law for Do Now Starters:**
+   - Do Now starters MUST NEVER test new content from the current lesson. Retrieve strictly from: (a) Immediate Previous Lesson, (b) Earlier in Current Unit, and (c) Synoptic Prior Topics.
+2. **3-Layer Digital Lesson Architecture:**
+   - **Layer 1:** 5 structured narrative blocks with paragraph indexing (`[Act.Para]`—index paragraphs only, never individual sentences) and audio read-aloud support.
+   - **Layer 2:** 2–3 authentic visual support plates flanking narrative prose (`.narrative-visual-row`, alternating left/right, caption + alt text only, zero `image_context` clutter).
+   - **Layer 3:** 5 rotated primary archival sources (`Source A`–`Source E`, sequential single letters, zero `A1`/`A2` sub-indices; maps labeled `Reference Map:` / `Map A:`) in collapsible drawers across varied media, rotating disciplinary badges, natural 1–2 sentence model answers, and targeted **Hinge Questions**. Zero formulaic 3-part provenance boxes (exception: Medicine Paper 1 `"How useful"` questions include `provenance_clue` scaffolding).
+   - **Layer 4 (Zero Intra-Lesson Duplication):** Never reuse a Layer 2 image inside Layer 3 within the same lesson.
+3. **Teacher Notes, 2-Lesson Delivery Plan & Pedagogy Bank:**
+   - Every lesson in `data.js` MUST include root `teacher_notes`: `{ primer, objectives: [{ objective, primer, question }], delivery_plan }` following the `"2-Lesson Sequence (50 mins each)"` 5-phase choreography, with every `source_context` ending in a Hinge Question.
+   - Whenever pedagogical/SEND/cognitive strategies are developed, proactively synthesize them into `src/pedagogy_data.js` (`PEDAGOGY_RESEARCH_BANK`) with academic citations/URLs and keep `Guide_04_Disciplinary_Pedagogy_and_Research_Evidence.pdf` (`scripts/generate_guidance_manuals.cjs`) synchronized.
+4. **Strict Anti-Hallucination ("Cite-or-Silence") & Reference Shelf Guardrail:**
+   - Never invent biographical details, service numbers, medal classes, or dramatic combat embellishments; ground strictly in primary records or `data/curriculum_facts_manifest.json` (`node scripts/verify_curriculum_facts.cjs <unit_id>`).
+   - When consulting `G:\My Drive\TEXTBOOKS`, extract historical content ONLY—never adopt exam question formats or mark allocations from non-Edexcel or legacy textbooks.
+
+---
+
+## 6. Visual Provenance, Archival Styling & Reprographic Quality Gates
+1. **Eyes-First Visual Pre-Flight & Master Rights Register:**
+   - Always run `read_file` on EVERY visual asset before captioning or authoring questions to verify literal depicted figures, printed mastheads/dates, and medium.
+   - **Zero AI Images:** Strictly forbidden from generating AI historical imagery. Use authentic archival photographs/artworks (download Wikimedia 500px thumbnails locally to `public/images/` if hotlink-protected; verify via `node scripts/verify_images.cjs`; fetch exact runtimes on ERA/YouTube video links).
+   - Immediately register/update every visual asset in `scripts/master_rights_database.json` and run `node scripts/generate_rights_register_pdf.cjs`.
+2. **Museum-Grade Archival Presentation:**
+   - Restrict FontAwesome icons to high-level UI controls—never inside historical source excerpts. Zero fake/mock accession shelfmarks in student-facing source boxes.
+   - Enforce `object-fit: contain;` on `.archival-image` (zero cropping of primary evidence). Family archive hero banners (`16:4` / `4:1`) must use horizontal physical artifacts (medals, trench maps, letters), keeping portrait headshots inside profile cards (`.kf-portrait`, or `.kf-monogram` wax seal for composite archetypes).
+   - Print SVGs must include static overrides (`svg g { opacity: 1 !important; }`) so headless Chromium never renders blank animated frames.
+3. **Automated Layout & Page-Budget Engine:**
+   - Every PDF compiler must run `scripts/auto_calibrate_engine.cjs` in Puppeteer before `scripts/audit_page_budget.cjs` / `scripts/check_overflows.cjs` (`0px` overflow, `>= 95%` optimal space utilization) rather than manually hacking prose strings.

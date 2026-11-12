@@ -116,13 +116,13 @@ To systematically perfect the entire KS3 curriculum without omitting any unit:
 
 ---
 
-## 🔔 Permanent AI Assistant Rollout Compass Protocol
+## 🔔 Rollout Ledger Governance (Zero Conversational Clutter)
 
-**Built-In Requirement:**  
-In **every turn and recommendation**, regardless of the specific topic being worked on, the agent must include the **Workbook Rollout Compass**:
-> 🧭 **Chronology Spine & Workbook Rollout Compass:**  
-> **GCSE Track:** Edexcel Medicine (5x 20p Workbooks, 130 stages) 🟢 • Middle East (60 stages) 🟢 • Weimar Germany (16 lessons / 80 stages) 🟢 • Early Elizabeth (12 lessons / 60 stages) 🟢 • USA 1954–75 (16 lessons) 🟢  
-> **KS3 Track (100% Perfected & App-Integrated):** All 11 Key Stage 3 Units Complete in Print & Web App 🌟 (Medieval England • Crown, Church & Parliament • First British Empire • Second British Empire • Industrialisation & Empire • Australia • Causes of Great War • Great War Part 2 • The Shoah • Water & Sanitation • Post-War Britain) — Zero "Digital Extension" mislabeling, zero "GCSE" phrasing on KS3, 100% authentic recto writing tasks with physical booklet page mapping (`[ In Pupil Workbook • Page X ]`).  
+**Single Source of Truth:**  
+Per `.agents/AGENTS.md` (*High-Signal Output Standard*), this file and `.agents/task.md` serve as the master curriculum rollout ledger—agents must **NOT** paste the "Workbook Rollout Compass" boilerplate into conversational replies unless explicitly requested:
+> 🧭 **Current Curriculum State Snapshot:**  
+> **GCSE Track:** Edexcel Medicine (100% Complete) 🟢 • Middle East (100% Complete) 🟢 • Weimar Germany (100% Complete) 🟢 • Early Elizabeth (100% Complete) 🟢 • USA 1954–75 (100% Complete) 🟢 • Cold War (100% Complete) 🟢  
+> **KS3 Track (100% Perfected & App-Integrated):** All Key Stage 3 Units Complete in Print & Web App 🌟 (Medieval England • Crown, Church & Parliament • First British Empire • Second British Empire • Industrialisation & Empire • Australia • Causes of Great War • Great War Part 2 • The Shoah • Water & Sanitation • Post-War Britain).  
 
 ---
 

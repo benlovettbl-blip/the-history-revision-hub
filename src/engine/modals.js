@@ -7,6 +7,7 @@ import {
 } from './lesson_renderer.js';
 import { getAssetUrl } from './assets.js';
 import { WORKBOOK_PAGE_MAP, getWorkbookPageAnchor } from './workbook_page_map.js';
+import { verifyStaffPasskeySync } from './staff_auth.js';
 
 window.WORKBOOK_PAGE_MAP = WORKBOOK_PAGE_MAP;
 window.getWorkbookPageAnchor = getWorkbookPageAnchor;
@@ -3189,10 +3190,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
 
   if (!isLocal && !hasStoredAuth) {
     const entered = prompt('History Department Staff Verification: Enter Passkey:');
-    if (
-      entered &&
-      (entered.trim().toLowerCase() === 'drake.30' || entered.trim().toLowerCase() === 'drake.30!')
-    ) {
+    if (entered && verifyStaffPasskeySync(entered)) {
       localStorage.setItem('history_hub_teacher_mode', 'true');
       window.isTeacherMode = true;
       const headerBtn = document.getElementById('btn-cover-modal');

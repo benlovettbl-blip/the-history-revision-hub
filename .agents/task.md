@@ -1,6 +1,15 @@
 # Department Rollout Staged State & Recommendations
 
 ## Last Completed Session:
+- **Pre-Production Phase 1: Security, Skills & `AGENTS.md` Alignment Pass:**
+  - **Serverless & Client Passkey Hardening:** Removed stale un-scrubbed `netlify/functions/chess_sync.mjs`, upgraded `netlify/functions/chess_sync.js` with `process.env.CHESS_TEACHER_PASSKEY` support, salted SHA-256 verification, origin-checked CORS, and `?room=`/`?school=` multi-school blob scoping. Added `src/engine/staff_auth.js` and scrubbed all 6 plaintext passkey leaks (including button tooltips and input placeholders) across `src/`.
+  - **Workspace Skills Ecosystem Reconciled (9 Git-Tracked Skills in `.agents/skills/`):**
+    - Migrated `ks2-classroom-textbook-engine` from local `~/.gemini/config/` into `.agents/skills/` for full cross-device portability.
+    - Resolved textbook contradictions in `ks3-publishing-engine` and `gcse-classroom-textbook-engine` (Page 2 Spec Directory + Page 3 Zero-Maps Milestone Spine), and fixed CLI commands/age-calibration in `auto-vocab-generator` & `auto-quiz-generator`.
+    - Added 3 missing production skills: `pupil-workbook-engine`, `retrieval-companion-engine`, and `production-release-gate`.
+  - **Un-Truncated `.agents/AGENTS.md` (`84.4 KB` -> `~10 KB`, `0%` truncated):** Backed up original files to `temp_backups/` and distilled core always-on invariants into `.agents/AGENTS.md` while routing specialized blueprints cleanly to `.agents/skills/`.
+  - **Trackers Reconciled:** Synchronized `DEPARTMENT_MASTER_PLAN_AND_TRACKER.md` and `WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md` (removed contradictory per-turn Rollout Compass mandate).
+
 - **Repository-Wide Pupil Workbook & Mirror PDF Synchronization (Commit `7abe04c6`):**
   - Audited all 71 publications across KS2, KS3, and GCSE in `src/workbooks_zone.js` and all PDF directories.
   - Eliminated legacy continuous monoliths from August 2026 across `public/units/` (e.g. 211-page medicine workbook, 61-page EEE workbook, 34-page Weimar workbook, unparsed `${periodName}` template string filename).

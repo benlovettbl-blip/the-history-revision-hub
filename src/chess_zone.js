@@ -24,6 +24,7 @@ import {
   isAirgapModeActive,
   setAirgapMode,
 } from './chess_realtime.js';
+import { verifyStaffPasskeySync } from './engine/staff_auth.js';
 import QRCode from 'qrcode';
 
 export function isChessViewActive() {
@@ -553,12 +554,10 @@ function getInitialRole() {
     }
     const teacherParam = (params.get('teacher') || '').toLowerCase();
     const passkeyParam = (params.get('passkey') || '').toLowerCase();
-    const validPasskeys = ['drake.30!', 'drake.30'];
-    if (
-      params.get('role') === 'teacher' ||
-      validPasskeys.includes(teacherParam) ||
-      validPasskeys.includes(passkeyParam)
-    ) {
+    const validUrlAuth =
+      (teacherParam && verifyStaffPasskeySync(teacherParam)) ||
+      (passkeyParam && verifyStaffPasskeySync(passkeyParam));
+    if (params.get('role') === 'teacher' || validUrlAuth) {
       localStorage.setItem('history_chess_teacher_auth', 'true');
       return 'teacher';
     }
@@ -1297,7 +1296,7 @@ export function renderChessHubView() {
             </button>
           `
               : `
-            <button type="button" onclick="window.openTeacherUnlockModal()" style="background: transparent; color: #94a3b8; border: 1px solid #cbd5e1; font-weight: 600; font-size: 0.72rem; padding: 4px 9px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s;" title="Teacher administrative access (passkey: drake.30)">
+            <button type="button" onclick="window.openTeacherUnlockModal()" style="background: transparent; color: #94a3b8; border: 1px solid #cbd5e1; font-weight: 600; font-size: 0.72rem; padding: 4px 9px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s;" title="Teacher administrative access">
               <span>🔒</span> Teacher
             </button>
           `
@@ -4847,7 +4846,7 @@ window.openTeacherUnlockModal = function () {
               type="password"
               autofocus
               autocomplete="off"
-              placeholder="Enter passkey (e.g. drake.30)"
+              placeholder="Enter staff passkey"
               style="width: 100%; box-sizing: border-box; background: #0c0a09; border: 1.5px solid #57534e; border-radius: 8px; padding: 12px 14px; color: #ffffff; font-size: 1.05rem; font-family: monospace; outline: none; transition: border-color 0.2s;"
               onfocus="this.style.borderColor='#d4af37'"
               onblur="this.style.borderColor='#57534e'"
@@ -4883,9 +4882,8 @@ window.handleTeacherUnlockSubmit = function (e) {
   if (!inp) return false;
 
   const val = inp.value.trim().toLowerCase();
-  const validPasskeys = ['drake.30', 'drake.30!'];
 
-  if (validPasskeys.includes(val)) {
+  if (verifyStaffPasskeySync(val)) {
     localStorage.setItem('history_chess_teacher_auth', 'true');
     chessState.userRole = 'teacher';
     chessState.isPupilPreview = false;

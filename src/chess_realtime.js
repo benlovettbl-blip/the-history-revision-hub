@@ -4,6 +4,11 @@
  */
 
 import { CALLSIGN_TO_FIRST_NAME, DEFAULT_LOCAL_NAME_MAP } from './chess_zone.js';
+import {
+  getStaffSyncAuthHeader,
+  clearStaffSyncAuthDigest,
+  getScopedChessEndpoint,
+} from './engine/staff_auth.js';
 
 const SYNC_ENDPOINT = '/.netlify/functions/chess_sync';
 const POLL_INTERVAL_MS = 3000;
@@ -165,14 +170,34 @@ export async function broadcastStateToCloud(chessState, showToast = false) {
           knockoutBracket: chessState.knockoutBracket || null,
         };
 
-        const res = await fetch(SYNC_ENDPOINT, {
+        const authHeader = getStaffSyncAuthHeader();
+        const res = await fetch(getScopedChessEndpoint(SYNC_ENDPOINT), {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'x-teacher-passkey': 'Drake.30!',
+            'x-teacher-passkey': authHeader,
           },
           body: JSON.stringify(payload),
         });
+
+        if (res.status === 401) {
+          clearStaffSyncAuthDigest();
+          currentSyncStatus = 'offline';
+          updateSyncStatusUI();
+          if (typeof window !== 'undefined') {
+            if (window.showChessToast) {
+              window.showChessToast(
+                '🔒 Please enter your Teacher Passkey once to authorize live cloud broadcast.',
+                'info',
+              );
+            }
+            if (typeof window.openTeacherUnlockModal === 'function') {
+              window.openTeacherUnlockModal();
+            }
+          }
+          resolve(false);
+          return;
+        }
 
         if (res.ok) {
           const json = await res.json();
@@ -225,7 +250,7 @@ export function startPupilRealtimeSync(onUpdateReceived) {
     if (!isChessActive) return;
 
     try {
-      const res = await fetch(SYNC_ENDPOINT, {
+      const res = await fetch(getScopedChessEndpoint(SYNC_ENDPOINT), {
         method: 'GET',
         cache: 'no-store',
       });

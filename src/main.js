@@ -11,6 +11,8 @@ import { state } from './state.js';
 import { initEventDelegation } from './engine/events.js';
 import { initSpeech, cancelSpeech } from './engine/speech.js';
 import { initGlossaryPopover } from './engine/modals.js';
+import * as staffAuthModule from './engine/staff_auth.js';
+if (typeof window !== 'undefined') window.__staffAuthModule = staffAuthModule;
 import {
   initKeywordSearch,
   openKeywordSearch,
@@ -75,23 +77,27 @@ function purgeGDPRHistoricalCache() {
 
 export function initTeacherMode() {
   try {
+    const { verifyStaffPasskeySync } = window.__staffAuthModule || {};
     const isLocal =
       window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     const params = new URLSearchParams(window.location.search);
     const passkey = (params.get('passkey') || params.get('staff') || params.get('teacher') || '')
       .toLowerCase()
       .trim();
-    const validPasskeys = ['drake.30', 'drake.30!', 'true'];
 
     const hasStoredAuth =
       localStorage.getItem('history_hub_teacher_mode') === 'true' ||
       localStorage.getItem('history_chess_teacher_auth') === 'true';
 
+    const passkeyValid =
+      passkey === 'true' ||
+      (passkey && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(passkey));
+
     const isAuthorized =
       isLocal ||
       hasStoredAuth ||
       params.get('role') === 'teacher' ||
-      validPasskeys.includes(passkey);
+      passkeyValid;
 
     if (isAuthorized) {
       localStorage.setItem('history_hub_teacher_mode', 'true');
@@ -126,10 +132,8 @@ export function initTeacherMode() {
           }
         } else {
           const code = prompt('History Department Staff Verification: Enter Passkey:');
-          if (
-            code &&
-            (code.trim().toLowerCase() === 'drake.30' || code.trim().toLowerCase() === 'drake.30!')
-          ) {
+          const { verifyStaffPasskeySync } = window.__staffAuthModule || {};
+          if (code && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(code)) {
             localStorage.setItem('history_hub_teacher_mode', 'true');
             window.isTeacherMode = true;
             const headerBtn = document.getElementById('btn-cover-modal');
