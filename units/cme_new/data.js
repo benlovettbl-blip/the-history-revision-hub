@@ -7800,8 +7800,8 @@ window.cme_newData = {
           "explanation": "Israel attacked at 7:45 am Israeli time (8:45 am Egyptian time), catching air bases unawares."
         },
         {
-          "question": "How did Israeli fighter jets avoid Egyptian radar detection during their approach?",
-          "q": "How did Israeli fighter jets avoid Egyptian radar detection during their approach?",
+          "question": "In the opening hours of the 1967 Six-Day War, how did Israeli fighter jets avoid Egyptian radar detection?",
+          "q": "In the opening hours of the 1967 Six-Day War, how did Israeli fighter jets avoid Egyptian radar detection?",
           "options": [
             "Flying at extreme high altitude above 50,000 feet",
             "Skimming thirty feet above the waves of the Mediterranean Sea",
@@ -7813,8 +7813,8 @@ window.cme_newData = {
           "explanation": "Israeli jets flew extremely low over the sea beneath radar beams."
         },
         {
-          "question": "Approximately how many Egyptian combat aircraft were destroyed on the first morning of the war?",
-          "q": "Approximately how many Egyptian combat aircraft were destroyed on the first morning of the war?",
+          "question": "In the 1967 Six-Day War, approximately how many Egyptian combat aircraft were destroyed on the first morning?",
+          "q": "In the 1967 Six-Day War, approximately how many Egyptian combat aircraft were destroyed on the first morning?",
           "options": [
             "50",
             "150",
@@ -8242,11 +8242,11 @@ window.cme_newData = {
             "answer": "The Sinai Peninsula"
           },
           {
-            "question": "Which territory along the Mediterranean coast was captured from Egyptian military administration?",
+            "question": "In the 1967 Six-Day War, which territory along the Mediterranean coast was captured from Egypt?",
             "answer": "The Gaza Strip"
           },
           {
-            "question": "Which territory on the west bank of the River Jordan was captured from the Kingdom of Jordan?",
+            "question": "In the 1967 Six-Day War, which territory on the west bank of the River Jordan was captured from Jordan?",
             "answer": "The West Bank"
           },
           {
@@ -8254,7 +8254,7 @@ window.cme_newData = {
             "answer": "East Jerusalem (including the Old City)"
           },
           {
-            "question": "Which strategic volcanic plateau was captured by Israeli troops from Syria on 9–10 June?",
+            "question": "In the 1967 Six-Day War, which strategic volcanic plateau was captured by Israeli troops from Syria?",
             "answer": "The Golan Heights"
           },
           {
@@ -8266,7 +8266,7 @@ window.cme_newData = {
             "a": "the pre-emptive air strike (Mivtza Moked)"
           },
           {
-            "q": "Approximately how many Egyptian military aircraft were destroyed on the tarmac within the first three hours of the pre-emptive air strike?",
+            "q": "During Operation Focus in the 1967 Six-Day War, approximately how many Egyptian military aircraft were destroyed on the tarmac?",
             "a": "Approximately 300 aircraft (wiping out nearly the entire Egyptian combat air force)"
           },
           {
