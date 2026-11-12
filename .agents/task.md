@@ -1,6 +1,16 @@
 # Department Rollout Staged State & Recommendations
 
 ## Last Completed Session:
+- **Pre-Production Phase 4: Script Hygiene, Archiving & Headless Chrome Smoke Gate:**
+  - **Archived 1,117 Legacy Patch Scripts & 34 Screenshots (`scripts/execute_phase4_archive.cjs`):** Moved unreferenced one-off historical migrations from August–October 2026 and test screenshots into git-ignored `archive/scripts_legacy/` with a complete backup in `temp_backups/phase4_scripts_backup_20261112_094700/`. Preserved all 474 active compilers, tests, linters, and transitive dependencies in `scripts/`.
+  - **Headless Chrome UI Smoke Check Passed (`scripts/run_ui_smoke_test.cjs`):** Validated on isolated local HTTP server serving `dist/` with Puppeteer. Verified Homepage, Workbooks Zone, Department Portal (lazy route), Chess Hub (lazy route), and Dashboard switch back with **0 runtime/console errors**.
+  - **Pre-Production Quality Gate Certified:**
+    - `verify_sanitization.cjs`: 0 violations across 6,847 files.
+    - `verify_images.cjs`: 100% clean, 0 missing or broken images.
+    - `npm run audit:stages`: 100% stage harmony across all 19 units.
+    - `npm run audit:links`: 0 broken links across 1,124 links.
+    - `npm run build`: built in **16.31s** (down from 51.5s — 68% faster).
+
 - **Pre-Production Phase 3: Static Asset Diet, Image Optimization & Link Audit:**
   - **Quarantined Non-Production Previews & Mockups to `archive/public_previews/`:** Moved `~43 MB` of test screenshot folders (`laptop_previews`, `previews_medicine`, and 11 `previews_ks3_*` directories) plus loose mockup files (`lesson_card_cleanup_mockup.html` 12.4 MB, `lesson_card_cleanup_comparison.png` 3.3 MB, `ks3_backcover_test.*`, `cover_grid_hybrid_mockup.html`) and 14 `page20_preview*.png` files out of `public/` into git-ignored `archive/public_previews/`.
   - **Quarantined Unreferenced Media:** Safely quarantined `public/images/Henry Cort.zip` (154.2 MB), unreferenced raw camera excursion files `public/images/Henry Cort/` (~150 MB), and `funtley_weir_hydraulic_flow.mp4` (16.1 MB).
