@@ -12,7 +12,6 @@ export const VERIFIED_PDFS = new Set([
   "/images/un_resolution_242_1967.pdf",
   "/images/un_resolution_302_1949.pdf",
   "/images/usa_specification_extract.pdf",
-  "/ks3_backcover_test.pdf",
   "/pdfs/assembly_beyond_the_single_story_pupil_script.pdf",
   "/pdfs/australia/australia_source_bibliography.pdf",
   "/pdfs/australia_answer_key.pdf",
