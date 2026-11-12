@@ -17,11 +17,6 @@ import {
   renderReadingView,
   renderMarkingView,
 } from './views.js'; // Trigger HMR
-import { renderCompetitionsView } from './competitions_zone.js';
-import { renderChessHubView } from './chess_zone.js';
-
-import { renderCurriculumMap } from './curriculum_map.js';
-import { renderDepartmentPortal } from './department_portal.js';
 
 // Subscribe to state changes to handle DOM updates independently of the router
 export function initNavigationUI() {
@@ -640,18 +635,22 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       }
     }
   } else if (viewName === 'curriculum') {
+    const { renderCurriculumMap } = await import('./curriculum_map.js');
     await renderCurriculumMap();
   } else if (viewName === 'department-portal') {
+    const { renderDepartmentPortal } = await import('./department_portal.js');
     if (param && typeof window !== 'undefined' && typeof window.switchPortalTab === 'function') {
       window.switchPortalTab(param);
     }
-    renderDepartmentPortal();
+    await renderDepartmentPortal();
   } else if (viewName === 'competitions') {
+    const { renderCompetitionsView } = await import('./competitions_zone.js');
     renderCompetitionsView();
   } else if (viewName === 'chess') {
+    const { renderChessHubView } = await import('./chess_zone.js');
     renderChessHubView();
   } else if (viewName === 'masterpiece' || viewName === 'gallery') {
-    renderMasterpieceView();
+    await renderMasterpieceView();
   } else if (viewName === 'reader' || viewName === 'textbook-reader') {
     const unitTarget =
       (param && typeof param === 'string' && param.split(':')[0]) ||

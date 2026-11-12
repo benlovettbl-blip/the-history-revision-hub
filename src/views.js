@@ -32,12 +32,6 @@ import {
   startDiagnosticBenchmark,
   sampleDiagnosticQuestions,
 } from './diagnostic_benchmark.js';
-import {
-  getMasterpieceStarterStripHtml,
-  attachStarterStripEvents,
-  getMasterpieceStudioHtml,
-  attachStudioEvents,
-} from './masterpiece_studio.js';
 
 export function getUnits() {
   if (!window.db) return [];
@@ -427,7 +421,9 @@ export function renderDashboard() {
 
   const stripRoot = document.getElementById('masterpiece-starter-strip-root');
   if (stripRoot) {
-    attachStarterStripEvents(stripRoot);
+    import('./masterpiece_studio.js').then(({ attachStarterStripEvents }) => {
+      attachStarterStripEvents(stripRoot);
+    });
   }
 
   // Attach Stage Filter interactivity
@@ -627,10 +623,12 @@ function attachDashboardStageFilter(container) {
   }
 }
 
-export function renderMasterpieceView() {
+export async function renderMasterpieceView() {
   const container = document.getElementById('main-content');
   const contentArea = document.getElementById('content-area');
   if (contentArea) contentArea.style.paddingTop = '1.5rem';
+
+  const { getMasterpieceStudioHtml, attachStudioEvents } = await import('./masterpiece_studio.js');
 
   container.innerHTML = `
     <div style="max-width: 1180px; margin: 0 auto; padding: 0 24px 60px 24px;">

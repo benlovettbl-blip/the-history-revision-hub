@@ -173,7 +173,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   initData();
 
   try {
-    const res = await fetch(`/database.json?v=${Date.now()}`);
+    const res = await fetch('/database.json');
     state.db = await res.json();
     // Keep window.db temporarily for files not yet refactored
     window.db = state.db;

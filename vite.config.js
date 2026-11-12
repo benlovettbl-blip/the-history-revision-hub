@@ -116,9 +116,31 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    rollupOptions: {
+    rolldownOptions: {
       input: {
         main: 'index.html',
+      },
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: 'vendor',
+              test: /node_modules/,
+            },
+            {
+              name: 'exam-bank',
+              test: /src[\\/]engine[\\/](mock_exam_bank_data|lesson_exam_practice_panel|gcse_donow_engine|ks2_guidance)\.js/,
+            },
+            {
+              name: 'arena-curriculum',
+              test: /src[\\/]engine[\\/](arena_corners|arena_standoffs|workbook_timeline_data)/,
+            },
+            {
+              name: 'lesson-engine',
+              test: /src[\\/](engine[\\/](lesson_renderer|lesson_consolidate_station|disciplinary_glossary)|infographic_viewer|key_individuals|guided_reading)\.js/,
+            },
+          ],
+        },
       },
     },
   },

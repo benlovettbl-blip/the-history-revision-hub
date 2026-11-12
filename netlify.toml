@@ -6,57 +6,7 @@
   directory = "netlify/functions"
 
 [[headers]]
-  # Service worker: strictly no-cache, anti-indexing
-  for = "/sw.js"
-  [headers.values]
-    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-    Pragma = "no-cache"
-    Expires = "0"
-    Surrogate-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
-
-[[headers]]
-  # Root entrypoint: strictly no-cache, anti-indexing
-  for = "/"
-  [headers.values]
-    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-    Pragma = "no-cache"
-    Expires = "0"
-    Surrogate-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
-
-[[headers]]
-  # HTML index: strictly no-cache, anti-indexing
-  for = "/index.html"
-  [headers.values]
-    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-    Pragma = "no-cache"
-    Expires = "0"
-    Surrogate-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
-
-[[headers]]
-  # Netlify Functions (Chess Sync & Live API State)
-  for = "/.netlify/functions/*"
-  [headers.values]
-    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-    Pragma = "no-cache"
-    Expires = "0"
-    Surrogate-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
-
-[[headers]]
-  # API proxy route
-  for = "/api/*"
-  [headers.values]
-    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-    Pragma = "no-cache"
-    Expires = "0"
-    Surrogate-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
-
-[[headers]]
-  # Global fallback for app routes: strict no-cache, anti-indexing
+  # Global baseline fallback for HTML/app routes: strict no-cache, anti-indexing
   for = "/*"
   [headers.values]
     Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
@@ -66,8 +16,106 @@
     X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
 
 [[headers]]
-  # Hashed Vite JS/CSS assets in /assets/ folder
+  # Service worker: strictly no-cache so updates propagate immediately
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Pragma = "no-cache"
+    Expires = "0"
+    Surrogate-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  # Root & HTML entrypoint: strictly no-cache
+  for = "/"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Pragma = "no-cache"
+    Expires = "0"
+    Surrogate-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Pragma = "no-cache"
+    Expires = "0"
+    Surrogate-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  # Netlify Functions & API routes: strictly no-cache
+  for = "/.netlify/functions/*"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Pragma = "no-cache"
+    Expires = "0"
+    Surrogate-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Pragma = "no-cache"
+    Expires = "0"
+    Surrogate-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  # Curriculum JSON payloads: ETag conditional revalidation (instant freshness on deploy + fast 304 when unchanged)
+  for = "/database.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Pragma = ""
+    Expires = ""
+    Surrogate-Control = ""
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Pragma = ""
+    Expires = ""
+    Surrogate-Control = ""
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  # Archival images, audio narrations, and compiled PDFs: 24h edge/browser cache + 7d background revalidation
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+    Pragma = ""
+    Expires = ""
+    Surrogate-Control = ""
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  for = "/pdfs/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+    Pragma = ""
+    Expires = ""
+    Surrogate-Control = ""
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  for = "/audio/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+    Pragma = ""
+    Expires = ""
+    Surrogate-Control = ""
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+
+[[headers]]
+  # Hashed Vite JS/CSS assets in /assets/ folder: 1-year immutable cache
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+    Pragma = ""
+    Expires = ""
+    Surrogate-Control = ""
     X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"

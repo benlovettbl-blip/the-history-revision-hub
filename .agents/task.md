@@ -1,6 +1,11 @@
 # Department Rollout Staged State & Recommendations
 
 ## Last Completed Session:
+- **Pre-Production Phase 2: Bundle Split, Service Worker Storm Fix & CDN Edge Caching:**
+  - **Eliminated `26.02 MB` Service Worker Precache Storm (`public/sw.js` & `src/main.js`):** Removed `'/database.json'` from `CORE_ASSETS` install precache so classroom devices never double-download `52 MB` on every deploy; fixed `responseToCache.clone()` stream reuse bug; switched `fetch('/database.json')` to conditional HTTP `ETag` (`304 Not Modified`) revalidation with Network-First offline fallback in `DYNAMIC_CACHE`.
+  - **Route Lazy-Loading & Vite 8 Rolldown Chunking (`src/navigation.js`, `src/views.js`, `vite.config.js`):** Converted `chess_zone`, `department_portal`, `masterpiece_studio`, `competitions_zone`, and `curriculum_map` to async `import()` chunks (`744 kB` deferred until visited), and split core curriculum/lesson modules into dedicated immutable chunks (`vendor`, `arena-curriculum`, `exam-bank`, `lesson-engine`), cutting `main-*.js` from `4,025.93 kB` (`1,013.68 kB` gzip) down to `651.12 kB` (`150.84 kB` gzip).
+  - **Netlify CDN Edge Caching (`netlify.toml`):** Enabled `stale-while-revalidate` edge caching for `/images/*`, `/pdfs/*`, and `/audio/*`, `immutable` caching for `/assets/*`, `must-revalidate` ETag caching for `/database.json` and `/data/*`, and strict `no-store` on `/`, `/index.html`, `/sw.js`, and `/.netlify/functions/*`.
+
 - **Pre-Production Phase 1: Security, Skills & `AGENTS.md` Alignment Pass:**
   - **Serverless & Client Passkey Hardening:** Removed stale un-scrubbed `netlify/functions/chess_sync.mjs`, upgraded `netlify/functions/chess_sync.js` with `process.env.CHESS_TEACHER_PASSKEY` support, salted SHA-256 verification, origin-checked CORS, and `?room=`/`?school=` multi-school blob scoping. Added `src/engine/staff_auth.js` and scrubbed all 6 plaintext passkey leaks (including button tooltips and input placeholders) across `src/`.
   - **Workspace Skills Ecosystem Reconciled (9 Git-Tracked Skills in `.agents/skills/`):**

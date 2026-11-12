@@ -8,7 +8,6 @@ const CORE_ASSETS = [
   '/icon-192.svg',
   '/icon-512.svg',
   '/style.css',
-  '/database.json',
   '/knowledge_bank.js',
   // Key Ypres Battlefield Tour images for offline coach use in Belgium
   '/images/stubbington_memorial.jpg',
@@ -143,27 +142,33 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 2. Network-First for database.json: always fetch fresh live curriculum data when online; fallback to cache offline
-  if (url.pathname.includes('database.json')) {
+  // 2. Network-First for curriculum JSON (database.json & /data/*.json):
+  // Always revalidate live curriculum data when online (supports fast 304 ETag); fallback to cache offline.
+  if (url.pathname.includes('database.json') || url.pathname.startsWith('/data/')) {
     event.respondWith(
       fetch(event.request)
         .then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
-            const responseToCache = networkResponse.clone();
+            const cloneForReq = networkResponse.clone();
+            const cloneForDb = url.pathname.includes('database.json')
+              ? networkResponse.clone()
+              : null;
             caches.open(DYNAMIC_CACHE).then((cache) => {
-              cache.put(event.request, responseToCache);
-              cache.put('/database.json', responseToCache.clone());
+              cache.put(event.request, cloneForReq);
+              if (cloneForDb) {
+                cache.put('/database.json', cloneForDb);
+              }
             });
           }
           return networkResponse;
         })
         .catch(async () => {
-          console.warn('[Service Worker] Offline fallback for database.json');
+          console.warn('[Service Worker] Offline fallback for curriculum JSON:', url.pathname);
           const cached =
-            (await caches.match('/database.json')) ||
-            (await caches.match(event.request, { ignoreSearch: true }));
+            (await caches.match(event.request, { ignoreSearch: true })) ||
+            (url.pathname.includes('database.json') ? await caches.match('/database.json') : null);
           if (cached) return cached;
-          throw new Error('Offline and no database.json found in cache');
+          throw new Error(`Offline and no cached curriculum JSON found for ${url.pathname}`);
         }),
     );
     return;
