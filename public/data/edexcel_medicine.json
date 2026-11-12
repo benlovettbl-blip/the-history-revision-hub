@@ -1123,7 +1123,7 @@
           "explanation": "Monasteries were the sole centers of manuscript copying, giving the Catholic Church total control over what medical texts were read and taught."
         },
         {
-          "question": "Why was sudden illness viewed as a spiritual condition rather than a biological infection?",
+          "question": "In medieval Britain, why was sudden illness viewed as a spiritual condition rather than a biological infection?",
           "options": [
             "Physicians believed germs spontaneously generated inside blood.",
             "The government legally outlawed physical medical treatments.",
@@ -1200,7 +1200,7 @@
           "explanation": "The professor (Lector) read Galen’s text; if the corpse disagreed, the body was dismissed as malformed."
         },
         {
-          "question": "What religious punishment was self-inflicted by penitents during epidemics to appease God’s wrath?",
+          "question": "During medieval epidemics, what religious punishment was self-inflicted by penitents to appease God’s wrath?",
           "options": [
             "Drinking mercury solutions.",
             "Exile into royal forests.",
@@ -1639,7 +1639,7 @@
           "explanation": "Monasteries were the sole centers of manuscript copying, giving the Catholic Church total control over what medical texts were read and taught."
         },
         {
-          "question": "Why was sudden illness viewed as a spiritual condition rather than a biological infection?",
+          "question": "In medieval Britain, why was sudden illness viewed as a spiritual condition rather than a biological infection?",
           "options": [
             "Physicians believed germs spontaneously generated inside blood.",
             "People believed sickness was sent by God to punish sin or test religious faith.",
@@ -1716,7 +1716,7 @@
           "explanation": "The professor (Lector) read Galen’s text; if the corpse disagreed, the body was dismissed as malformed."
         },
         {
-          "question": "What religious punishment was self-inflicted by penitents during epidemics to appease God’s wrath?",
+          "question": "During medieval epidemics, what religious punishment was self-inflicted by penitents to appease God’s wrath?",
           "options": [
             "Drinking mercury solutions.",
             "Fasting and self-flagellation with iron-tipped whips.",
@@ -1902,7 +1902,7 @@
             "answer": "The Catholic Church and monastic scriptoria."
           },
           {
-            "question": "Why was sudden illness viewed as a spiritual condition rather than a biological infection?",
+            "question": "In medieval Britain, why was sudden illness viewed as a spiritual condition rather than a biological infection?",
             "answer": "People believed sickness was sent by God to punish sin or test religious faith."
           },
           {
@@ -1930,7 +1930,7 @@
             "answer": "They sat high in a chair reading Galen aloud while a barber-surgeon did the cutting."
           },
           {
-            "question": "What religious punishment was self-inflicted by penitents during epidemics to appease God’s wrath?",
+            "question": "During medieval epidemics, what religious punishment was self-inflicted by penitents to appease God’s wrath?",
             "answer": "Fasting and self-flagellation with iron-tipped whips."
           },
           {
@@ -3396,7 +3396,7 @@
           "explanation": "Bloodletting was used to lower internal body temperature and remove excess hot blood."
         },
         {
-          "question": "Which instrument was commonly used to open a patient’s vein during bloodletting?",
+          "question": "In medieval bloodletting, which instrument was commonly used to open a patient’s vein?",
           "options": [
             "A cautery iron.",
             "A fleam or lancet blade.",
@@ -3407,7 +3407,7 @@
           "explanation": "A fleam was a small, sharp surgical knife pressed into a surface vein to drain blood."
         },
         {
-          "question": "What method of bloodletting involved creating a warm vacuum over scratched skin?",
+          "question": "In medieval medicine, what method of bloodletting involved creating a warm vacuum over scratched skin?",
           "options": [
             "Cauterisation.",
             "Amputation.",
@@ -3429,7 +3429,7 @@
           "explanation": "Theriac was a famous ancient electuary believed to cure poisons, bites, and fevers."
         },
         {
-          "question": "Why did physicians prescribe emetics and violent laxatives to patients?",
+          "question": "Under medieval humoral theory, why did physicians prescribe emetics and violent laxatives to patients?",
           "options": [
             "To clean dental cavities and cure toothaches.",
             "To purge and evacuate corrupt humours like yellow and black bile from the digestive system.",
@@ -3451,7 +3451,7 @@
           "explanation": "The Regimen Sanitatis outlined the rules of daily hygiene and humoural moderation."
         },
         {
-          "question": "Why did routine bloodletting and purging often result in patient death?",
+          "question": "In medieval medicine, why did routine bloodletting and purging often result in patient death?",
           "options": [
             "Patients refused to eat any food for three weeks following treatment.",
             "Church law prohibited patients from sleeping after being bled.",
@@ -3462,7 +3462,7 @@
           "explanation": "Draining blood and inducing severe diarrhoea physically exhausted weakened bodies."
         },
         {
-          "question": "What religious practice did sick people perform at shrines like Thomas Becket at Canterbury?",
+          "question": "In medieval England, what religious practice did sick pilgrims perform at shrines like Canterbury?",
           "options": [
             "Touching holy relics and praying for miraculous healing.",
             "Receiving university medical degrees.",
@@ -3901,7 +3901,7 @@
           "explanation": "Bloodletting was used to lower internal body temperature and remove excess hot blood."
         },
         {
-          "question": "Which instrument was commonly used to open a patient’s vein during bloodletting?",
+          "question": "In medieval bloodletting, which instrument was commonly used to open a patient’s vein?",
           "options": [
             "A cautery iron.",
             "A fleam or lancet blade.",
@@ -3912,7 +3912,7 @@
           "explanation": "A fleam was a small, sharp surgical knife pressed into a surface vein to drain blood."
         },
         {
-          "question": "What method of bloodletting involved creating a warm vacuum over scratched skin?",
+          "question": "In medieval medicine, what method of bloodletting involved creating a warm vacuum over scratched skin?",
           "options": [
             "Cauterisation.",
             "Amputation.",
@@ -3934,7 +3934,7 @@
           "explanation": "Theriac was a famous ancient electuary believed to cure poisons, bites, and fevers."
         },
         {
-          "question": "Why did physicians prescribe emetics and violent laxatives to patients?",
+          "question": "Under medieval humoral theory, why did physicians prescribe emetics and violent laxatives to patients?",
           "options": [
             "To clean dental cavities and cure toothaches.",
             "To test whether the patient was possessed by evil spirits.",
@@ -3956,7 +3956,7 @@
           "explanation": "The Regimen Sanitatis outlined the rules of daily hygiene and humoural moderation."
         },
         {
-          "question": "Why did routine bloodletting and purging often result in patient death?",
+          "question": "In medieval medicine, why did routine bloodletting and purging often result in patient death?",
           "options": [
             "Patients refused to eat any food for three weeks following treatment.",
             "They caused severe blood loss, dehydration, and weakened immune defenses in already sick patients.",
@@ -3967,7 +3967,7 @@
           "explanation": "Draining blood and inducing severe diarrhoea physically exhausted weakened bodies."
         },
         {
-          "question": "What religious practice did sick people perform at shrines like Thomas Becket at Canterbury?",
+          "question": "In medieval England, what religious practice did sick pilgrims perform at shrines like Canterbury?",
           "options": [
             "Touching holy relics and praying for miraculous healing.",
             "Receiving university medical degrees.",
@@ -4164,11 +4164,11 @@
             "answer": "Phlebotomy (bloodletting)."
           },
           {
-            "question": "Which instrument was commonly used to open a patient’s vein during bloodletting?",
+            "question": "In medieval bloodletting, which instrument was commonly used to open a patient’s vein?",
             "answer": "A fleam or lancet blade."
           },
           {
-            "question": "What method of bloodletting involved creating a warm vacuum over scratched skin?",
+            "question": "In medieval medicine, what method of bloodletting involved creating a warm vacuum over scratched skin?",
             "answer": "Cupping."
           },
           {
@@ -4176,7 +4176,7 @@
             "answer": "A complex universal herbal remedy containing over 60 ingredients, including crushed viper flesh."
           },
           {
-            "question": "Why did physicians prescribe emetics and violent laxatives to patients?",
+            "question": "Under medieval humoral theory, why did physicians prescribe emetics and violent laxatives to patients?",
             "answer": "To purge and evacuate corrupt humours like yellow and black bile from the digestive system."
           },
           {
@@ -4184,11 +4184,11 @@
             "answer": "A personalized lifestyle guide advising moderation in diet, sleep, exercise, and baths."
           },
           {
-            "question": "Why did routine bloodletting and purging often result in patient death?",
+            "question": "In medieval medicine, why did routine bloodletting and purging often result in patient death?",
             "answer": "They caused severe blood loss, dehydration, and weakened immune defenses in already sick patients."
           },
           {
-            "question": "What religious practice did sick people perform at shrines like Thomas Becket at Canterbury?",
+            "question": "In medieval England, what religious practice did sick pilgrims perform at shrines like Canterbury?",
             "answer": "Touching holy relics and praying for miraculous healing."
           },
           {
@@ -4528,7 +4528,7 @@
           "explanation": "Physicians studied ancient Latin treatises for nearly a decade; hands-on dissection was rare."
         },
         {
-          "question": "Why were university-trained physicians socially superior to barber-surgeons?",
+          "question": "In medieval England, why were university-trained physicians socially superior to barber-surgeons?",
           "options": [
             "They were personally appointed by the Pope.",
             "They performed all major abdominal surgeries in hospitals.",
@@ -4539,7 +4539,7 @@
           "explanation": "Medieval intellectual hierarchy valued theoretical book-learning far above manual craftsmanship."
         },
         {
-          "question": "What manual procedures did guild-trained barber-surgeons perform?",
+          "question": "In medieval towns, what manual procedures did barber-surgeons perform?",
           "options": [
             "Pulling teeth, bloodletting, stitching wounds, and lancing boils.",
             "Preaching sermons and administering holy communion.",
@@ -5044,7 +5044,7 @@
           "explanation": "Physicians studied ancient Latin treatises for nearly a decade; hands-on dissection was rare."
         },
         {
-          "question": "Why were university-trained physicians socially superior to barber-surgeons?",
+          "question": "In medieval England, why were university-trained physicians socially superior to barber-surgeons?",
           "options": [
             "They were personally appointed by the Pope.",
             "They performed all major abdominal surgeries in hospitals.",
@@ -5055,7 +5055,7 @@
           "explanation": "Medieval intellectual hierarchy valued theoretical book-learning far above manual craftsmanship."
         },
         {
-          "question": "What manual procedures did guild-trained barber-surgeons perform?",
+          "question": "In medieval towns, what manual procedures did barber-surgeons perform?",
           "options": [
             "Pulling teeth, bloodletting, stitching wounds, and lancing boils.",
             "Preaching sermons and administering holy communion.",
@@ -5308,11 +5308,11 @@
             "answer": "At universities like Oxford, Paris, and Bologna studying Latin texts for 7–10 years."
           },
           {
-            "question": "Why were university-trained physicians socially superior to barber-surgeons?",
+            "question": "In medieval England, why were university-trained physicians socially superior to barber-surgeons?",
             "answer": "They were educated in Latin, studied classical theory, and did not perform manual labor."
           },
           {
-            "question": "What manual procedures did guild-trained barber-surgeons perform?",
+            "question": "In medieval towns, what manual procedures did barber-surgeons perform?",
             "answer": "Pulling teeth, bloodletting, stitching wounds, and lancing boils."
           },
           {
@@ -5670,7 +5670,7 @@
           "explanation": "Yersinia pestis was the bacterium carried in the gut of black rat fleas (Xenopsylla cheopis)."
         },
         {
-          "question": "What were the agonizing, swollen lymph glands in the groin and armpits called?",
+          "question": "During the Black Death (1348), what were the agonizing swollen lymph glands called?",
           "options": [
             "Miasmas.",
             "Vademecums.",
@@ -5681,7 +5681,7 @@
           "explanation": "Buboes were swollen, inflamed lymph nodes that blackened and oozed pus."
         },
         {
-          "question": "How was the pneumonic form of the plague transmitted between humans?",
+          "question": "During the Black Death, how was the pneumonic form of the plague transmitted between humans?",
           "options": [
             "Through drinking infected well water.",
             "Through coughs, sneezes, and breath directly through the air.",
@@ -5725,7 +5725,7 @@
           "explanation": "Historians estimate between one-third and one-half of the population perished in 1348–1350."
         },
         {
-          "question": "Why did emergency mass burial pits have to be dug outside city walls at East Smithfield in London?",
+          "question": "During the 1348 Black Death in London, why did emergency mass burial pits have to be dug at East Smithfield?",
           "options": [
             "The King passed a law requiring all deaths to be buried in the River Thames.",
             "The Catholic Church refused to bury plague victims in consecrated ground.",
@@ -6175,7 +6175,7 @@
           "explanation": "Yersinia pestis was the bacterium carried in the gut of black rat fleas (Xenopsylla cheopis)."
         },
         {
-          "question": "What were the agonizing, swollen lymph glands in the groin and armpits called?",
+          "question": "During the Black Death (1348), what were the agonizing swollen lymph glands called?",
           "options": [
             "Miasmas.",
             "Buboes.",
@@ -6186,7 +6186,7 @@
           "explanation": "Buboes were swollen, inflamed lymph nodes that blackened and oozed pus."
         },
         {
-          "question": "How was the pneumonic form of the plague transmitted between humans?",
+          "question": "During the Black Death, how was the pneumonic form of the plague transmitted between humans?",
           "options": [
             "Through drinking infected well water.",
             "Through eating rotten meat.",
@@ -6230,7 +6230,7 @@
           "explanation": "Historians estimate between one-third and one-half of the population perished in 1348–1350."
         },
         {
-          "question": "Why did emergency mass burial pits have to be dug outside city walls at East Smithfield in London?",
+          "question": "During the 1348 Black Death in London, why did emergency mass burial pits have to be dug at East Smithfield?",
           "options": [
             "Parish churchyards overflowed with corpses within weeks of the outbreak.",
             "The King passed a law requiring all deaths to be buried in the River Thames.",
@@ -6433,11 +6433,11 @@
             "answer": "Yersinia pestis."
           },
           {
-            "question": "What were the agonizing, swollen lymph glands in the groin and armpits called?",
+            "question": "During the Black Death (1348), what were the agonizing swollen lymph glands called?",
             "answer": "Buboes."
           },
           {
-            "question": "How was the pneumonic form of the plague transmitted between humans?",
+            "question": "During the Black Death, how was the pneumonic form of the plague transmitted between humans?",
             "answer": "Through coughs, sneezes, and breath directly through the air."
           },
           {
@@ -6453,7 +6453,7 @@
             "answer": "Between 30% and 50% (over 1.5 million people)."
           },
           {
-            "question": "Why did emergency mass burial pits have to be dug outside city walls at East Smithfield in London?",
+            "question": "During the 1348 Black Death in London, why did emergency mass burial pits have to be dug at East Smithfield?",
             "answer": "Parish churchyards overflowed with corpses within weeks of the outbreak."
           },
           {
@@ -11296,7 +11296,7 @@
           "explanation": "Over 100,000 Londoners died in 1665, representing approximately one-fifth of the entire capital’s population."
         },
         {
-          "question": "What was painted on the doors of quarantined plague houses in London?",
+          "question": "During the 1665 Great Plague in London, what was painted on the doors of quarantined plague houses?",
           "options": [
             "A red cross and \"Lord have mercy upon us\"",
             "A black skull and crossbones",
@@ -11556,7 +11556,7 @@
           "explanation": "Over 100,000 Londoners died in 1665, representing approximately one-fifth of the entire capital’s population."
         },
         {
-          "question": "What was painted on the doors of quarantined plague houses in London?",
+          "question": "During the 1665 Great Plague in London, what was painted on the doors of quarantined plague houses?",
           "options": [
             "A black skull and crossbones",
             "A yellow star",
@@ -12123,7 +12123,7 @@
             "answer": "Over 100,000 (roughly 20%)"
           },
           {
-            "question": "What was painted on the doors of quarantined plague houses in London?",
+            "question": "During the 1665 Great Plague in London, what was painted on the doors of quarantined plague houses?",
             "answer": "A red cross and \"Lord have mercy upon us\""
           },
           {
@@ -14599,7 +14599,7 @@
           "explanation": "Nightingale was stationed at the Barrack Hospital at Scutari, opposite Constantinople."
         },
         {
-          "question": "By how much did mortality fall at Scutari following sanitary improvements and sewer flushing?",
+          "question": "During the Crimean War (1854), by how much did mortality fall at Scutari Hospital following sanitary improvements?",
           "options": [
             "From approximately 42% down to 2%.",
             "From 90% down to 50%.",
@@ -15164,7 +15164,7 @@
           "explanation": "Nightingale was stationed at the Barrack Hospital at Scutari, opposite Constantinople."
         },
         {
-          "question": "By how much did mortality fall at Scutari following sanitary improvements and sewer flushing?",
+          "question": "During the Crimean War (1854), by how much did mortality fall at Scutari Hospital following sanitary improvements?",
           "options": [
             "From 90% down to 50%.",
             "From 20% down to 15%.",
@@ -15411,7 +15411,7 @@
             "answer": "Scutari Barrack Hospital."
           },
           {
-            "question": "By how much did mortality fall at Scutari following sanitary improvements and sewer flushing?",
+            "question": "During the Crimean War (1854), by how much did mortality fall at Scutari Hospital following sanitary improvements?",
             "answer": "From approximately 42% down to 2%."
           },
           {
