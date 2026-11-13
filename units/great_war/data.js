@@ -1232,13 +1232,13 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5y8DZUShVis",
-          "title": "Cinematic: Imperial Clashes & The European Scramble",
-          "duration": "2 mins 56 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Dramatizes the hubris and military power projection of European colonial empires in Africa and Asia. Recommended Watch Window: 00:00–02:56 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Imperial Competition. Tone Alert: Grand historical drama on colonial ambition.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the sheer military confidence and racial superiority projected by European colonial administrations in the late 19th century. How does this film capture why imperial competition in Africa and Asia heightened national rivalries in Europe, convincing each power that retreating from a colonial crisis was a humiliation they could not endure?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer illustrates how European imperial powers treated overseas territories as chessboard pawns for national prestige. Clashes like the 1898 Fashoda incident and the 1905/1911 Moroccan Crises proved that imperial brinkmanship was directly tied to domestic patriotic pride, creating explosive geopolitical friction that carried over into Europe.</p>"
+          "url": "https://www.youtube.com/watch?v=9MOWg2YWo9o",
+          "title": "Crisis in Morocco (1905 & 1911): How Imperial Rivalry Helped Start WW1",
+          "duration": "5 mins 02 secs",
+          "pathway": "Strategic Analysis",
+          "teacher_guidance": "Focused breakdown of Kaiser Wilhelm II's 1905 Tangier speech, the Algeciras Conference, and the 1911 Agadir gunboat crisis (SMS Panther), demonstrating how German Weltpolitik backfired by driving Britain and France closer together. Recommended Watch Window: 00:00–05:02 • Lesson Phase: Core Case Study.",
+          "viewing_task": "<ol><li><strong>[00:50] Recall:</strong> Why did Kaiser Wilhelm II visit Tangier in 1905 and send the gunboat SMS Panther to Agadir in 1911?</li><li><strong>[02:30] Explain:</strong> Explain how Germany's attempt to split the 1904 Entente Cordiale between Britain and France completely backfired.</li><li><strong>[04:10] Challenge:</strong> Why did colonial clashes in North Africa make a European war more likely by 1914 even though neither Moroccan Crisis caused immediate war?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> To challenge French expansion in Morocco, demand 'a place in the sun' for German Weltpolitik, and test whether Britain would stand by France.</li><li><strong>Explain:</strong> Instead of breaking the Entente Cordiale, German bullying alarmed London (especially Lloyd George's Mansion House speech in 1911) and led Britain and France into secret joint naval and military staff talks.</li><li><strong>Challenge:</strong> Each humiliation left Berlin feeling encircled and determined not to back down in the next diplomatic crisis, turning rival alliances into hair-trigger military blocs before July 1914.</li></ol>"
         },
         {
           "type": "youtube",
@@ -2295,13 +2295,13 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=YlDA8cquOcU",
-          "title": "Cinematic: Dreadnoughts & The Steel Leviathans of the North Sea",
-          "duration": "3 mins 10 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Epic archival reconstruction of early 20th-century dreadnought battleships firing 12-inch main turrets. Recommended Watch Window: 00:00–03:10 • Lesson Phase: Cinematic Starter Hook & Naval Arms Race. Tone Alert: Thunderous naval gunnery and industrial maritime engineering.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the colossal scale of dreadnought armor plating, steam turbines, and 12-inch rifled guns that rendered all previous warships obsolete overnight. How does the sight of these floating steel fortresses illustrate why Britain viewed Kaiser Wilhelm II's High Seas Fleet as an existential threat to the British Empire?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The sequence captures the awe and terror of modern naval technology. Britain depended entirely on merchant shipping for food and raw materials; an enemy fleet capable of defeating the Royal Navy in the North Sea could starve the British population within six weeks. The naval race was not a mere arms build-up, but a life-or-death struggle for national survival.</p>"
+          "url": "https://www.youtube.com/watch?v=zesiF-TAS30",
+          "title": "Drachinifel: HMS Dreadnought (1906) – The Battleship That Changed Naval History",
+          "duration": "7 mins 05 secs",
+          "pathway": "Technical & Strategic",
+          "teacher_guidance": "Naval historian Drachinifel explains Admiral Jackie Fisher's revolutionary 1906 HMS Dreadnought design—all-big-gun 12-inch armament and steam-turbine propulsion—and why rendering every pre-dreadnought obsolete reset the Anglo-German naval race. Recommended Watch Window: 00:00–05:30 • Lesson Phase: Technical Hook.",
+          "viewing_task": "<ol><li><strong>[01:05] Recall:</strong> Which two technological innovations made HMS Dreadnought (1906) faster and far more powerful than every existing battleship?</li><li><strong>[03:15] Explain:</strong> Explain the paradox of why launching HMS Dreadnought secured Britain a technological leap yet simultaneously gave Admiral Tirpitz a chance to catch up.</li><li><strong>[05:10] Challenge:</strong> How did public obsession with building Dreadnoughts ('We want eight and we won't wait!') poison Anglo-German relations before 1914?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Uniform 'all-big-gun' 12-inch main batteries (ten 12-inch guns) and high-speed Parsons steam-turbine engines (21 knots).</li><li><strong>Explain:</strong> Because HMS Dreadnought instantly made Britain's huge fleet of older pre-dreadnought battleships obsolete too, both Britain and Germany effectively restarted battleship construction from a near-standing count.</li><li><strong>Challenge:</strong> As an island empire dependent on sea lanes, Britain viewed Germany's North Sea fleet purely as an offensive threat, turning naval budgets and newspaper navy leagues into engines of popular anti-German hostility.</li></ol>"
         },
         {
           "type": "youtube",
@@ -6290,13 +6290,13 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=y-TmbOy4Jwg",
-          "title": "6 Key Steps to World War One | History Hit",
-          "duration": "24 mins 26 secs",
+          "url": "https://www.youtube.com/watch?v=Cd2ch4XV84s",
+          "title": "CrashCourse World History: How World War I Started – Structural & Trigger Causes",
+          "duration": "9 mins 09 secs",
           "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Structured analytical breakdown synthesizing the six structural causal steps to war: imperial friction, naval competition, military alliances, the Balkan powder keg, Sarajevo, and the July cascade. Recommended Watch Window: 02:00–08:15 • Lesson Phase: Summative Assessment Masterclass & Synoptic Synthesis. Tone Alert: Clear, engaging presenter-led synthesis for formal assessment writing.",
-          "viewing_task": "<ol><li><strong>[03:00] Recall:</strong> What are the four traditional \"MAIN\" long-term causes of the First World War evaluated in Key Stage 3 historical assessments?</li><li><strong>[05:15] Explain:</strong> How did Germany's decision to issue Austria-Hungary the unconditional \"Blank Cheque\" (<em>Blankoscheck</em>) on 5 July 1914 transform a localized Balkan regional conflict into a European world war?</li><li><strong>[07:30] Challenge:</strong> Historiographical Synthesis: Assess the contrasting historical arguments regarding war guilt: does the evidence support Fritz Fischer's thesis of German aggression or Christopher Clark's conclusion that Europe's leaders were \"sleepwalkers\"?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Militarism, Alliances, Imperialism, and Nationalism (MAIN).</li><li><strong>Explain:</strong> Kaiser Wilhelm II and Chancellor Bethmann-Hollweg promised unconditional German military backing to Emperor Franz Joseph, even if attacking Serbia provoked Tsarist Russia into war. This reckless guarantee gave Austro-Hungarian hawks the confidence to issue an impossible ultimatum to Serbia, knowing the German army would protect them from Russian military intervention.</li><li><strong>Challenge:</strong> Fischer argued that imperial Germany deliberately orchestrated the crisis to launch a pre-emptive strike before Russia completed its strategic military modernization in 1917, seeking European hegemony (the <em>Septemberprogramm</em>). In contrast, Clark argues that all major European powers shared responsibility: complex alliance commitments, unverified intelligence, rigid railway mobilization timetables, and misjudged risks caused leaders to blunder into catastrophe without foreseeing the industrial slaughter that would follow.</li></ol>"
+          "teacher_guidance": "John Green weighs the July 1914 Sarajevo trigger against long-term structural causes (alliances, militarism, imperialism, nationalism, and rigid railway mobilisation timetables) to support pupils planning their summative causation essay. Recommended Watch Window: 00:00–07:30 • Lesson Phase: Essay Synthesis.",
+          "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> Why had earlier Balkan crises in 1908 and 1912–13 stopped short of a general European war whereas June–July 1914 did not?</li><li><strong>[04:15] Explain:</strong> Explain how Germany's 'Blank Cheque' to Austria-Hungary and Russia's general mobilisation turned a regional Balkan dispute into a continental war.</li><li><strong>[07:10] Challenge:</strong> For your summative essay, was war in 1914 caused mainly by long-term structural pressures (M.A.I.N.) or by reckless decisions made by leaders in July 1914?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> In 1914 Austria-Hungary was determined to crush Serbia permanently with full German backing, while Russia refused to suffer another diplomatic humiliation after the Bosnian Crisis.</li><li><strong>Explain:</strong> Berlin's unconditional guarantee emboldened Vienna to issue an unacceptable ultimatum to Serbia, triggering Russian mobilisation—which in turn activated Germany's two-front Schlieffen Plan through neutral Belgium.</li><li><strong>Challenge:</strong> Structural rivalries (alliances, naval race, Balkan nationalism) piled up the gunpowder, but war was not automatic—statesmen in Vienna, Berlin, and St Petersburg made calculated, high-risk choices in July 1914.</li></ol>"
         },
         {
           "type": "youtube",

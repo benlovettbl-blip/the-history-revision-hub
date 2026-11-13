@@ -2416,8 +2416,8 @@ async function main() {
   }
 
   console.log('5. Rendering PDF publication...');
-  const pdfPath = path.join(pdfOutputDir, 'eee_textbook_UNIFIED_FINAL.pdf');
-  const pdfPathLegacy = path.join(pdfOutputDir, 'eee_textbook_UNIFIED.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'eee_textbook.pdf');
+  const pdfPathLegacy = path.join(pdfOutputDir, 'eee_textbook.pdf');
 
   await page.pdf({
     path: pdfPath,
@@ -2427,10 +2427,10 @@ async function main() {
     margin: { top: 0, right: 0, bottom: 0, left: 0 },
   });
 
-  fs.copyFileSync(pdfPath, pdfPathLegacy);
+  if (path.resolve(pdfPath) !== path.resolve(pdfPathLegacy)) fs.copyFileSync(pdfPath, pdfPathLegacy);
   const canonicalPdfPath = path.join(pdfOutputDir, 'eee_textbook.pdf');
   try {
-    fs.copyFileSync(pdfPath, canonicalPdfPath);
+    if (path.resolve(pdfPath) !== path.resolve(canonicalPdfPath)) fs.copyFileSync(pdfPath, canonicalPdfPath);
   } catch (e) {}
   console.log(`   Compiled Master PDF: ${pdfPath}`);
 

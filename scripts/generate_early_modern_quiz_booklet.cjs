@@ -1894,7 +1894,7 @@ async function buildEarlyModernQuizBooklet() {
     console.log('✅ Layout & Space Audit Passed: 100% clean across all 16 pages!');
   }
 
-  const primaryPdfPath = path.join(PDFS_DIR, 'early_modern_world_quiz_pack_FINAL_V1.pdf');
+  const primaryPdfPath = path.join(PDFS_DIR, 'early_modern_world_quiz_pack.pdf');
   const aliasPdfPath = path.join(PDFS_DIR, 'early_modern_world_quiz_pack.pdf');
 
   await page.pdf({
@@ -1907,7 +1907,7 @@ async function buildEarlyModernQuizBooklet() {
   console.log(`✅ Generated Master 16-Page A5 PDF: ${primaryPdfPath}`);
 
   // Also write alias
-  fs.copyFileSync(primaryPdfPath, aliasPdfPath);
+  if (path.resolve(primaryPdfPath) !== path.resolve(aliasPdfPath)) fs.copyFileSync(primaryPdfPath, aliasPdfPath);
   console.log(`✅ Updated PDF alias: ${aliasPdfPath}`);
 
   await browser.close();
@@ -1950,7 +1950,7 @@ async function buildEarlyModernQuizBooklet() {
       if (!fs.existsSync(parent)) {
         fs.mkdirSync(parent, { recursive: true });
       }
-      fs.copyFileSync(primaryPdfPath, dest);
+      if (path.resolve(primaryPdfPath) !== path.resolve(dest)) fs.copyFileSync(primaryPdfPath, dest);
       console.log(`  ✅ Synced to: ${dest}`);
     });
   } else {

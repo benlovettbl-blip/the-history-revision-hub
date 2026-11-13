@@ -2898,7 +2898,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
         else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT3.pdf';
-        else pdfUrl = '/pdfs/cme_new_pupil_workbook_master.pdf';
+        else pdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
       } else if (url.includes('retrieval') || url.includes('companion')) {
         pdfUrl = '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf';
       } else if (url.includes('textbook')) {
@@ -2915,7 +2915,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         else if (url.includes('KT2')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf';
         else if (url.includes('KT4')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf';
-        else pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf';
+        else pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf';
       } else if (url.includes('mastery')) {
         pdfUrl = '/pdfs/weimar_nazi_germany_mastery_pack_KT1.pdf';
       } else if (url.includes('retrieval') || url.includes('companion')) {
@@ -2935,7 +2935,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_pupil_workbook_KT3.pdf';
         else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_pupil_workbook_KT4.pdf';
-        else pdfUrl = '/pdfs/usa_pupil_workbook_master.pdf';
+        else pdfUrl = '/pdfs/usa_pupil_workbook_KT1.pdf';
       } else if (url.includes('mastery')) {
         if (url.includes('KT1')) pdfUrl = '/pdfs/usa_mastery_pack_KT1.pdf';
         else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_mastery_pack_KT2.pdf';
@@ -2958,7 +2958,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         if (url.includes('KT1')) pdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
         else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_pupil_workbook_KT3.pdf';
-        else pdfUrl = '/pdfs/eee_pupil_workbook_master.pdf';
+        else pdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
       } else if (url.includes('mastery')) {
         if (url.includes('KT1')) pdfUrl = '/pdfs/eee_mastery_pack_KT1.pdf';
         else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_mastery_pack_KT2.pdf';
@@ -2981,7 +2981,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         else if (url.includes('18th_19th')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_18th_19th.pdf';
         else if (url.includes('modern')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_modern.pdf';
         else if (url.includes('western_front')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf';
-        else pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_master.pdf';
+        else pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf';
       } else if (url.includes('textbook')) {
         if (url.includes('medieval')) pdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
         else if (url.includes('renaissance')) pdfUrl = '/pdfs/edexcel_medicine_textbook_renaissance.pdf';

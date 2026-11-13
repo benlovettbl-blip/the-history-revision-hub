@@ -684,8 +684,37 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     renderDashboard();
   }
 
-  // Update dynamic breadcrumbs
+  // Update dynamic breadcrumbs & browser document.title (unless a specific lesson already set its title)
   updateBreadcrumbs();
+  if (typeof document !== 'undefined') {
+    const hasOpenLesson =
+      viewName === 'lessons' &&
+      options &&
+      typeof options.lessonIndex === 'number' &&
+      state.activeUnitData &&
+      state.activeUnitData.lessons &&
+      state.activeUnitData.lessons[options.lessonIndex];
+
+    if (!hasOpenLesson) {
+      const unitTitleClean =
+        state.activeUnitData && state.activeUnitData.title
+          ? state.activeUnitData.title.replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '').trim()
+          : '';
+      if (viewName === 'dashboard') {
+        document.title = 'The History Revision Hub';
+      } else if (viewName === 'mock-exams' || viewName === 'exam-practice') {
+        document.title = unitTitleClean
+          ? `Mock Exams & Mark Schemes — ${unitTitleClean}`
+          : 'Mock Exams & Mark Schemes — The History Revision Hub';
+      } else if (viewName === 'timeline') {
+        document.title = unitTitleClean
+          ? `Chronological Timeline — ${unitTitleClean}`
+          : 'Chronological Timeline — The History Revision Hub';
+      } else if (viewName === 'lessons' && unitTitleClean) {
+        document.title = `${unitTitleClean} — The History Revision Hub`;
+      }
+    }
+  }
 
   // Attach safe draft preservation to newly rendered container
   const mainContent = document.getElementById('main-content');

@@ -52,12 +52,13 @@ Every lesson Verso page pairs 1-to-1 with the 5 `narrative_blocks` (`[X.1]`–`[
 
 ---
 
-## 4. Dual-Pathway Living Timeline, Exercise Notes & Back Cover
-1. **Dual-Pathway Living Timeline (UDL Choice A vs Choice B):**
-   Enforce all 3 touchpoints so neurodiverse and analytical pupils are never forced to draw:
-   - **Centrefold Banner:** Explains *Pathway A (Visual Dual-Coding symbols & dates)* vs *Pathway B (Central Concept Node branching to 3 evidence stems)*.
-   - **Canvas Footer:** `[ Choice A: Visual Dual-Code Icon • OR • Choice B: 3-Branch Concept Mind Map ]`.
-   - **Recto Bottom Mission Box:** Binary prompt offering both `[A] Dual-Code` and `[B] Mind Map` explicitly.
+## 4. Center-Spine Specification Mind-Map Canvas, Exercise Notes & Back Cover
+1. **Pages 2–3 Center-Spine Specification Mind-Map Canvas (Zero Giveaways, Edge-to-Edge):**
+   - **Continuous Vertical Spine:** Render a continuous `2.5px` `#000000` vertical center line down the middle of Pages 2 and 3 (`left: 50%; transform: translateX(-50%)`).
+   - **Centered Executive Specification Pills:** Solid `#000000` rounded pills (`box-shadow: 0 0 0 6px #ffffff` halo over the spine) containing a `#ffffff` date badge, exact Pearson Edexcel specification turning point title, and `(Key Topic X.Y)` tag (3–4 nodes per page).
+   - **Zero Giveaways & Zero Lined Boxing:** Strictly NO summary paragraphs under pills, NO AI jargon labels (*"Decisive Mechanism"*), and NO dashed or solid enclosing boxes—leave 100% open white paper edge-to-edge so pupils can branch mind-maps freely to the margins.
+   - **Specification Branch Cues & Web App Synergy:** Flank each pill with concise uppercase directional cues (`◂ Left Spec Theme` / `Right Spec Theme ▸`) rendered in **100% pure `#000000` black** (zero `#777`/`#888` grey text or `opacity` knockouts that dither or drop out on school photocopiers), and direct pupils in the top masthead + lesson bottom mission strip to use the app's **Consolidate Station** to retrieve keywords and populate their mind-map at the end of each lesson.
+   - **Ethical Exception (*The Shoah*):** `public/units/the_shoah/pupil_workbook.html` retains its *"Six Lives: Micro-Histories of the Holocaust"* centrefold untouched.
 2. **British Exercise Notes Spread (Pages `N-2` & `N-1`, e.g. P14–15):**
    - Left notes page: Clean header `"General Notes"` (or Key Topic Notes) + `26mm` vertical margin rule + `28–32` full-width ruled lines.
    - Right notes page: Uncluttered full-page blank ruled lines canvas with `26mm` margin and zero instructional clutter boxes.

@@ -45,97 +45,89 @@ export const WORKBOOK_PAGE_MAP = {
   "cme_new": {
     "lesson_1": {
       "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 1 Booklet",
-      "unitId": "cme_new",
-      "lessonIndex": 0
-    },
-    "lesson_2": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 1 Booklet",
+      "endPage": 3,
+      "spread": "Pages 2–3",
+      "booklet": "Key Topic 1 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 1
     },
-    "lesson_3": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 1 Booklet",
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "Pages 4–5",
+      "booklet": "Key Topic 1 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 2
     },
-    "lesson_4": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 1 Booklet",
+    "lesson_3": {
+      "page": 8,
+      "endPage": 9,
+      "spread": "Pages 8–9",
+      "booklet": "Key Topic 1 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 3
     },
-    "lesson_6": {
+    "lesson_4": {
       "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 2 Booklet",
+      "endPage": 3,
+      "spread": "Pages 2–3",
+      "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 4
     },
-    "lesson_7": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 2 Booklet",
+    "lesson_5": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "Pages 4–5",
+      "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 5
     },
-    "lesson_8": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 2 Booklet",
+    "lesson_6": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "Pages 6–7",
+      "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 6
     },
-    "lesson_9": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 2 Booklet",
+    "lesson_7": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "Pages 10–11",
+      "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 7
     },
-    "lesson_10": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 2 Booklet",
+    "lesson_8": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "Pages 12–13",
+      "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 8
     },
-    "lesson_11": {
+    "lesson_9": {
       "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 3 Booklet",
+      "endPage": 3,
+      "spread": "Pages 2–3",
+      "booklet": "Key Topic 3 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 9
     },
-    "lesson_12": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 3 Booklet",
+    "lesson_10": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "Pages 4–5",
+      "booklet": "Key Topic 3 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 10
     },
-    "lesson_13": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 3 Booklet",
+    "lesson_11": {
+      "page": 8,
+      "endPage": 9,
+      "spread": "Pages 8–9",
+      "booklet": "Key Topic 3 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 11
     }

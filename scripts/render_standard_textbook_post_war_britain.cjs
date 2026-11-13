@@ -1419,7 +1419,7 @@ async function main() {
   const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
 
-  const pdfPath = path.join(pdfOutputDir, 'post_war_britain_textbook_FINAL_V17.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'post_war_britain_textbook.pdf');
   await page.pdf({
     path: pdfPath,
     format: 'A4',
@@ -1431,9 +1431,9 @@ async function main() {
 
   // Duplicate to canonical filename
   const canonicalPdfPath = path.join(pdfOutputDir, 'post_war_britain_textbook.pdf');
-  fs.copyFileSync(pdfPath, canonicalPdfPath);
-  const legacyPdfPath = path.join(pdfOutputDir, 'post_war_britain_textbook_FINAL.pdf');
-  fs.copyFileSync(pdfPath, legacyPdfPath);
+  if (path.resolve(pdfPath) !== path.resolve(canonicalPdfPath)) fs.copyFileSync(pdfPath, canonicalPdfPath);
+  const legacyPdfPath = path.join(pdfOutputDir, 'post_war_britain_textbook.pdf');
+  if (path.resolve(pdfPath) !== path.resolve(legacyPdfPath)) fs.copyFileSync(pdfPath, legacyPdfPath);
   console.log(`[OK] Mirrored to: ${canonicalPdfPath} and ${legacyPdfPath}`);
 
   await browser.close();

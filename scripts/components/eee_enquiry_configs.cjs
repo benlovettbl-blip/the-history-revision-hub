@@ -25,7 +25,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Catherine of Aragon &bull; Anne Boleyn &bull; Papal Annulment &bull; 1536 Succession Act &bull; Henry VIII &bull; Anointed Monarch &bull; Privy Council &bull; William Cecil &bull; £300,000 Debt',
       timelineMission:
-        "Turn to Pages 2–3 (Milestone 1). In Milestone 1, sketch the Tudor Rose crown and note Elizabeth’s £300,000 inherited debt alongside William Cecil's appointment.",
+        "Turn to Pages 2–3 and branch out the Nov 1558 Accession & Government and Legitimacy & Foreign Threat nodes using Consolidate Station keywords.",
       stages: [
         {
           dates: '17 NOV 1558',
@@ -164,7 +164,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Catherine of Aragon &bull; Anne Boleyn &bull; Papal Annulment &bull; 1536 Succession Act &bull; Henry VIII &bull; Anointed Monarch &bull; Privy Council &bull; William Cecil &bull; £300,000 Debt',
         timelineMission:
-          "Turn to Pages 2–3 (Milestone 1). In Milestone 1, sketch the Tudor Rose crown and note Elizabeth’s £300,000 inherited debt alongside William Cecil's appointment.",
+          "Turn to Pages 2–3 and branch out the Nov 1558 Accession & Government and Legitimacy & Foreign Threat nodes using Consolidate Station keywords.",
       },
     },
     {
@@ -187,7 +187,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Supreme Governor &bull; Book of Common Prayer &bull; Via Media (Middle Way) &bull; Royal Injunctions &bull; 1 Shilling Recusancy Fine &bull; Marian Bishops Deprived &bull; Communion in Both Kinds &bull; Vestments &bull; Parish Visitations',
       timelineMission:
-        'Turn to Pages 2–3 (Milestone 2). In Milestone 2, sketch the open English Book of Common Prayer and note the 1 shilling recusancy fine.',
+        'Turn to Pages 2–3 and branch out the May 1559 Supremacy & Uniformity and Royal Injunctions nodes using Consolidate Station keywords.',
       stages: [
         {
           dates: 'NOV 1558–JAN 1559',
@@ -326,7 +326,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Supreme Governor &bull; Book of Common Prayer &bull; Via Media (Middle Way) &bull; Royal Injunctions &bull; 1 Shilling Recusancy Fine &bull; Marian Bishops Deprived &bull; Communion in Both Kinds &bull; Vestments &bull; Parish Visitations',
         timelineMission:
-          'Turn to Pages 2–3 (Milestone 2). In Milestone 2, sketch the open English Book of Common Prayer and note the 1 shilling recusancy fine.',
+          'Turn to Pages 2–3 and branch out the May 1559 Supremacy & Uniformity and Royal Injunctions nodes using Consolidate Station keywords.',
       },
     },
     {
@@ -348,7 +348,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Puritan Clergy &bull; Matthew Parker &bull; Book of Advertisements &bull; 37 Vicars Deprived &bull; Surplice and Tippet &bull; Papal Idolatry &bull; Geneva Bible &bull; Crucifix Symbols &bull; Marian Exiles',
       timelineMission:
-        "Turn to Pages 2–3 (Milestone 5). In Milestone 5, sketch the plain Puritan surplice alongside Archbishop Parker's Book of Advertisements.",
+        "Turn to Pages 2–3 and branch out the Puritan Vestments Crisis, Catholic Recusancy & Foreign Threat nodes using Consolidate Station keywords.",
       stages: [
         {
           dates: '1559–1563',
@@ -487,7 +487,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Puritan Clergy &bull; Matthew Parker &bull; Book of Advertisements &bull; 37 Vicars Deprived &bull; Surplice and Tippet &bull; Papal Idolatry &bull; Geneva Bible &bull; Crucifix Symbols &bull; Marian Exiles',
         timelineMission:
-          "Turn to Pages 2–3 (Milestone 5). In Milestone 5, sketch the plain Puritan surplice alongside Archbishop Parker's Book of Advertisements.",
+          "Turn to Pages 2–3 and branch out the Puritan Vestments Crisis, Catholic Recusancy & Foreign Threat nodes using Consolidate Station keywords.",
       },
     },
     {
@@ -510,7 +510,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Mary Stuart &bull; Anointed Queen &bull; Catholic Figurehead &bull; Casket Letters Inquiry &bull; Workington Fishing Boat &bull; House Arrest &bull; Earls of Northumberland and Westmorland &bull; Succession Crisis &bull; Treaty of Edinburgh',
       timelineMission:
-        'Turn to Pages 2–3 (Milestone 6). In Milestone 6, sketch Carlisle Castle where Mary Stuart was first held under armed house arrest in 1568.',
+        'Turn to Pages 2–3 and branch out the 1568–69 Mary, Queen of Scots in England node on your mind-map using Consolidate Station keywords.',
       stages: [
         {
           dates: '1560–1565',
@@ -649,7 +649,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Mary Stuart &bull; Anointed Queen &bull; Catholic Figurehead &bull; Casket Letters Inquiry &bull; Workington Fishing Boat &bull; House Arrest &bull; Earls of Northumberland and Westmorland &bull; Succession Crisis &bull; Treaty of Edinburgh',
         timelineMission:
-          'Turn to Pages 2–3 (Milestone 6). In Milestone 6, sketch Carlisle Castle where Mary Stuart was first held under armed house arrest in 1568.',
+          'Turn to Pages 2–3 and branch out the 1568–69 Mary, Queen of Scots in England node on your mind-map using Consolidate Station keywords.',
       },
     },
   ],
@@ -672,7 +672,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Anthony Babington &bull; Francis Walsingham &bull; Thomas Phelippes &bull; Decoded Cipher Letters &bull; Beer Barrel Courier &bull; Bond of Association (1584) &bull; Fotheringhay Castle &bull; High Treason &bull; Regnans in Excelsis',
       timelineMission:
-        'Turn to Pages 2–3 (Milestone 5). In Milestone 5, sketch the beer barrel with hidden cipher letters and the execution block at Fotheringhay.',
+        'Turn to Pages 2–3 and branch out the 1569 Northern Earls, 1570–86 Catholic Plots, and 1587 Mary Execution nodes using Consolidate Station keywords.',
       stages: [
         {
           dates: 'NOV 1569–JAN 1570',
@@ -811,7 +811,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Anthony Babington &bull; Francis Walsingham &bull; Thomas Phelippes &bull; Decoded Cipher Letters &bull; Beer Barrel Courier &bull; Bond of Association (1584) &bull; Fotheringhay Castle &bull; High Treason &bull; Regnans in Excelsis',
         timelineMission:
-          'Turn to Pages 2–3 (Milestone 5). In Milestone 5, sketch the beer barrel with hidden cipher letters and the execution block at Fotheringhay.',
+          'Turn to Pages 2–3 and branch out the 1569 Northern Earls, 1570–86 Catholic Plots, and 1587 Mary Execution nodes using Consolidate Station keywords.',
       },
     },
     {
@@ -834,7 +834,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Privateering &bull; Francis Drake &bull; Golden Hind &bull; Cacafuego Treasure (£140,000) &bull; Spanish Monopoly &bull; New World Silver &bull; King Philip II &bull; Papal Excommunication &bull; Atlantic Trade',
       timelineMission:
-        "Turn to Pages 2–3 (Milestone 2). In Milestone 2, sketch Francis Drake's Golden Hind carrying Spanish silver into Plymouth harbour.",
+        "Turn to Pages 2–3 and branch out the 1572–80 Spanish Rivalry & Drake Privateering node on your mind-map using Consolidate Station keywords.",
       stages: [
         {
           dates: '1570–1577',
@@ -973,7 +973,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Privateering &bull; Francis Drake &bull; Golden Hind &bull; Cacafuego Treasure (£140,000) &bull; Spanish Monopoly &bull; New World Silver &bull; King Philip II &bull; Papal Excommunication &bull; Atlantic Trade',
         timelineMission:
-          "Turn to Pages 2–3 (Milestone 2). In Milestone 2, sketch Francis Drake's Golden Hind carrying Spanish silver into Plymouth harbour.",
+          "Turn to Pages 2–3 and branch out the 1572–80 Spanish Rivalry & Drake Privateering node on your mind-map using Consolidate Station keywords.",
       },
     },
     {
@@ -995,7 +995,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Treaty of Nonsuch (1585) &bull; Robert Dudley (Earl of Leicester) &bull; 7,400 English Troops &bull; Duke of Parma &bull; Spanish Netherlands &bull; Deep-Water Ports &bull; French Catholic League &bull; Protestant Rebels &bull; Flushing and Brill',
       timelineMission:
-        'Turn to Pages 2–3 (Milestone 3). In Milestone 3, sketch English troops landing at Flushing with the flags of the Dutch Protestant rebels.',
+        'Turn to Pages 2–3 and branch out the 1585 Treaty of Nonsuch & Dutch War and 1587 Raid on Cadiz nodes using Consolidate Station keywords.',
       stages: [
         {
           dates: 'DEC 1585–1586',
@@ -1134,7 +1134,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Treaty of Nonsuch (1585) &bull; Robert Dudley (Earl of Leicester) &bull; 7,400 English Troops &bull; Duke of Parma &bull; Spanish Netherlands &bull; Deep-Water Ports &bull; French Catholic League &bull; Protestant Rebels &bull; Flushing and Brill',
         timelineMission:
-          'Turn to Pages 2–3 (Milestone 3). In Milestone 3, sketch English troops landing at Flushing with the flags of the Dutch Protestant rebels.',
+          'Turn to Pages 2–3 and branch out the 1585 Treaty of Nonsuch & Dutch War and 1587 Raid on Cadiz nodes using Consolidate Station keywords.',
       },
     },
     {
@@ -1157,7 +1157,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         "Duke of Medina Sidonia &bull; Crescent Formation &bull; Calais Roads Midnight &bull; 8 English Fireships &bull; Battle of Gravelines &bull; Race-Built Galleons &bull; Rapid-Fire Culverins &bull; Parma's Invasion Barges &bull; Protestant Wind",
       timelineMission:
-        'Turn to Pages 2–3 (Milestone 4). In Milestone 4, sketch the English fireships drifting into the Spanish fleet at Calais Roads.',
+        'Turn to Pages 2–3 and branch out the Jul–Aug 1588 Defeat of the Spanish Armada node on your mind-map using Consolidate Station keywords.',
       stages: [
         {
           dates: 'JULY 1588',
@@ -1296,7 +1296,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           "Duke of Medina Sidonia &bull; Crescent Formation &bull; Calais Roads Midnight &bull; 8 English Fireships &bull; Battle of Gravelines &bull; Race-Built Galleons &bull; Rapid-Fire Culverins &bull; Parma's Invasion Barges &bull; Protestant Wind",
         timelineMission:
-          'Turn to Pages 2–3 (Milestone 4). In Milestone 4, sketch the English fireships drifting into the Spanish fleet at Calais Roads.',
+          'Turn to Pages 2–3 and branch out the Jul–Aug 1588 Defeat of the Spanish Armada node on your mind-map using Consolidate Station keywords.',
       },
     },
   ],
@@ -1320,7 +1320,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Grammar Schools &bull; Latin &amp; Humanist Curriculum &bull; Petty Schools &bull; Dame Schools &bull; Gentry and Yeomanry &bull; Printing Press Literacy &bull; Oxford &amp; Cambridge &bull; Social Mobility &bull; Protestant Bible Reading',
       timelineMission:
-        "Turn to Pages 2–3 (Milestone 2). In Milestone 2, sketch James Burbage's 'The Theatre' with groundlings in the pit and nobility in the galleries.",
+        "Turn to Pages 2–3 and branch out the 1558–88 Schools and Sport, Pastimes & Public Theatre nodes using Consolidate Station keywords.",
       stages: [
         {
           dates: '1558–1580s',
@@ -1459,7 +1459,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Grammar Schools &bull; Latin &amp; Humanist Curriculum &bull; Petty Schools &bull; Dame Schools &bull; Gentry and Yeomanry &bull; Printing Press Literacy &bull; Oxford &amp; Cambridge &bull; Social Mobility &bull; Protestant Bible Reading',
         timelineMission:
-          "Turn to Pages 2–3 (Milestone 2). In Milestone 2, sketch James Burbage's 'The Theatre' with groundlings in the pit and nobility in the galleries.",
+          "Turn to Pages 2–3 and branch out the 1558–88 Schools and Sport, Pastimes & Public Theatre nodes using Consolidate Station keywords.",
       },
     },
     {
@@ -1482,7 +1482,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Population Rose (3m to 4m) &bull; Enclosure of Common Land &bull; Sheep Farming Conversion &bull; Debasement of Coinage &bull; 1572 Vagabonds Act &bull; Impotent Poor vs Sturdy Beggars &bull; 1576 Poor Act &bull; Houses of Correction (Bridewells) &bull; Compulsory Poor Rates',
       timelineMission:
-        'Turn to Pages 2–3 (Milestone 1). In Milestone 1, sketch the branding iron of the 1572 Vagabonds Act alongside the wool stockpiles of the 1576 Poor Act.',
+        'Turn to Pages 2–3 and branch out the Population, Enclosure & Poor and 1563–76 Poor Acts nodes using Consolidate Station keywords.',
       stages: [
         {
           dates: '1558–1580s',
@@ -1621,7 +1621,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Population Rose (3m to 4m) &bull; Enclosure of Common Land &bull; Sheep Farming Conversion &bull; Debasement of Coinage &bull; 1572 Vagabonds Act &bull; Impotent Poor vs Sturdy Beggars &bull; 1576 Poor Act &bull; Houses of Correction (Bridewells) &bull; Compulsory Poor Rates',
         timelineMission:
-          'Turn to Pages 2–3 (Milestone 1). In Milestone 1, sketch the branding iron of the 1572 Vagabonds Act alongside the wool stockpiles of the 1576 Poor Act.',
+          'Turn to Pages 2–3 and branch out the Population, Enclosure & Poor and 1563–76 Poor Acts nodes using Consolidate Station keywords.',
       },
     },
     {
@@ -1643,7 +1643,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Francis Drake &bull; Circumnavigation &bull; Pacific Coast Raids &bull; Nova Albion (California Claim) &bull; Spice Islands (Moluccas) &bull; Astrolabe and Magnetic Compass &bull; Galleon Ship Design &bull; 4,700% Investment Return &bull; Knighthood at Deptford',
       timelineMission:
-        "Turn to Pages 2–3 (Milestone 4). In Milestone 4, sketch Drake's route through the Straits of Magellan up to Nova Albion and around the Cape of Good Hope.",
+        "Turn to Pages 2–3 and branch out the Trade & Navigation and 1577–80 Drake's Circumnavigation nodes using Consolidate Station keywords.",
       stages: [
         {
           dates: '1558–1575',
@@ -1782,7 +1782,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Francis Drake &bull; Circumnavigation &bull; Pacific Coast Raids &bull; Nova Albion (California Claim) &bull; Spice Islands (Moluccas) &bull; Astrolabe and Magnetic Compass &bull; Galleon Ship Design &bull; 4,700% Investment Return &bull; Knighthood at Deptford',
         timelineMission:
-          "Turn to Pages 2–3 (Milestone 4). In Milestone 4, sketch Drake's route through the Straits of Magellan up to Nova Albion and around the Cape of Good Hope.",
+          "Turn to Pages 2–3 and branch out the Trade & Navigation and 1577–80 Drake's Circumnavigation nodes using Consolidate Station keywords.",
       },
     },
     {
@@ -1805,7 +1805,7 @@ const EEE_ENQUIRY_CONFIGS = {
       wordBank:
         'Walter Raleigh &bull; Richard Grenville &bull; Flagship Tiger Seawater Ruin &bull; Ralph Lane &bull; Chief Wingina &bull; Roanoke Island &bull; Algonquian Hostility &bull; Late Relief Fleets &bull; Abandonment with Drake',
       timelineMission:
-        'Turn to Pages 2–3 (Milestone 5). In Milestone 5, sketch the grounded flagship Tiger losing its seed grain and gunpowder on the Outer Banks.',
+        'Turn to Pages 2–3 and branch out the 1584–85 Raleigh Charter and 1585–86 Failure of First Roanoke Colony nodes using Consolidate Station keywords.',
       stages: [
         {
           dates: '1584',
@@ -1944,7 +1944,7 @@ const EEE_ENQUIRY_CONFIGS = {
         wordBank:
           'Walter Raleigh &bull; Richard Grenville &bull; Flagship Tiger Seawater Ruin &bull; Ralph Lane &bull; Chief Wingina &bull; Roanoke Island &bull; Algonquian Hostility &bull; Late Relief Fleets &bull; Abandonment with Drake',
         timelineMission:
-          'Turn to Pages 2–3 (Milestone 5). In Milestone 5, sketch the grounded flagship Tiger losing its seed grain and gunpowder on the Outer Banks.',
+          'Turn to Pages 2–3 and branch out the 1584–85 Raleigh Charter and 1585–86 Failure of First Roanoke Colony nodes using Consolidate Station keywords.',
       },
     },
   ],

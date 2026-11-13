@@ -1228,7 +1228,7 @@ async function run() {
 
   console.log('🎉 Audit Passed: 100% clean across all 8 pages with ZERO overflow!');
 
-  const pdfPathFinal = path.join(PDFS_DIR, 'great_war_quiz_pack_FINAL_V1.pdf');
+  const pdfPathFinal = path.join(PDFS_DIR, 'great_war_quiz_pack.pdf');
   const pdfPathAlias = path.join(PDFS_DIR, 'great_war_quiz_pack.pdf');
 
   await page.pdf({
@@ -1243,7 +1243,7 @@ async function run() {
     },
   });
 
-  fs.copyFileSync(pdfPathFinal, pdfPathAlias);
+  if (path.resolve(pdfPathFinal) !== path.resolve(pdfPathAlias)) fs.copyFileSync(pdfPathFinal, pdfPathAlias);
   await browser.close();
 
   console.log(`✅ Generated Master 8-Page Saddle-Stitch PDF: ${pdfPathFinal}`);

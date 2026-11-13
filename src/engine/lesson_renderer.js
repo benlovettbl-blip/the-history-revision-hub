@@ -1347,7 +1347,15 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
 
         const url = new URL(window.location);
         url.searchParams.set('view', 'lessons');
-        url.searchParams.set('lesson', index + 1);
+        const hasLessonZero =
+          appStore.state.activeUnitData.lessons[0] &&
+          (appStore.state.activeUnitData.lessons[0].id === 'lesson_0' ||
+            (appStore.state.activeUnitData.lessons[0].title &&
+              appStore.state.activeUnitData.lessons[0].title.includes('KT 1.0')));
+        url.searchParams.set(
+          'lesson',
+          lesson.slug || (hasLessonZero ? (index === 0 ? '0' : index) : index + 1),
+        );
         if (unitId) url.searchParams.set('unit', unitId);
         window.history.pushState(
           {
@@ -1362,6 +1370,14 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
       } catch (e) {
         console.warn('History routing disabled (e.g. file:// protocol):', e);
       }
+    }
+
+    if (typeof document !== 'undefined') {
+      const unitTitleRaw = appStore.state.activeUnitData.title || 'The History Revision Hub';
+      const cleanUnitName = unitTitleRaw
+        .replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '')
+        .trim();
+      document.title = `${(lesson.title || `Lesson ${index + 1}`).trim()} — ${cleanUnitName}`;
     }
 
     if (typeof window.updateBreadcrumbs === 'function') {
@@ -7558,49 +7574,8 @@ export function renderLesson(lesson) {
         'edexcel_medicine',
       ].includes(window.currentUnitId || unitId);
 
-      // Extract 3 Pupil Workbook Trigger Terms and Model Sentence for Live Classroom Teaching
-      let triggerTerms = [];
-      if (matchedWbStage) {
-        if (Array.isArray(matchedWbStage.bullets) && matchedWbStage.bullets.length > 0) {
-          triggerTerms = matchedWbStage.bullets;
-        } else if (Array.isArray(matchedWbStage.words) && matchedWbStage.words.length > 0) {
-          triggerTerms = matchedWbStage.words.map((w) =>
-            typeof w === 'string' ? w : w.term || w.word || '',
-          );
-        } else if (Array.isArray(matchedWbStage.keywords) && matchedWbStage.keywords.length > 0) {
-          triggerTerms = matchedWbStage.keywords.map((k) =>
-            typeof k === 'string' ? k : k.term || k.word || '',
-          );
-        }
-      }
-      triggerTerms = triggerTerms.filter(Boolean);
-
-      let workbookAnchorHtml = '';
-      if (triggerTerms.length > 0) {
-        const chipsHtml = triggerTerms
-          .map((term, tIdx) => {
-            return `
-              <span class="stage-trigger-chip no-print" style="background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(56, 189, 248, 0.35); color: #f8fafc; font-family: 'Inter', sans-serif; font-size: 0.73rem; font-weight: 600; padding: 3px 9px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px; cursor: default; pointer-events: none; user-select: none;">
-                <span style="color: #38bdf8; font-weight: 900; font-size: 0.70rem;">${tIdx + 1}.</span>
-                <span>${term}</span>
-              </span>
-            `;
-          })
-          .join('');
-
-        workbookAnchorHtml = `
-          <div class="stage-workbook-anchor-row" style="margin-top: 10px; padding-top: 9px; border-top: 1px solid rgba(148, 163, 184, 0.2); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <div class="stage-triggers-container" style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; flex: 1 1 auto;">
-              <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px; margin-right: 2px;">
-                <i class="fa-solid fa-pen-nib"></i> Workbook Triggers:
-              </span>
-              ${chipsHtml}
-            </div>
-          </div>
-        `;
-      }
-
-      const isHeaderUnified = Boolean(stageQ || workbookAnchorHtml);
+      // Workbook Trigger chip bars retired across all narratives so stage headers display only the clean Stage Enquiry
+      const isHeaderUnified = Boolean(stageQ);
 
       let headerBlockHtml = '';
       if (isHeaderUnified) {
@@ -7648,7 +7623,6 @@ export function renderLesson(lesson) {
             `
                 : ''
             }
-            ${workbookAnchorHtml}
           </div>
         `;
       } else {

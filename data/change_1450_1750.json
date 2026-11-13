@@ -735,15 +735,17 @@
         "title": "Did the Alliance System protect Europe or guarantee a global war?",
         "sources": [
           {
-            "title": "Diagram A: The Alliance System (1914)",
+            "title": "Source A: Diagram of the Alliance System (1914)",
             "src": "/assets/change_1450_1750_alliance_system.svg",
-            "caption": "The complex web of treaties that dragged Europe into a global war."
+            "caption": "The complex web of treaties that dragged Europe into a global war.",
+            "letter": "A"
           },
           {
-            "title": "Map A: European Military Alliance Blocs (1914)",
+            "title": "Source B (Reference Map): European Military Alliance Blocs (1914)",
             "src": "/assets/change_1450_1750_map_lesson4.png",
             "caption": "",
-            "question": "Enquiry: Look at the geographical position of Germany and Austria-Hungary. Why would they feel encircled by the Triple Entente?"
+            "question": "Enquiry: Look at the geographical position of Germany and Austria-Hungary. Why would they feel encircled by the Triple Entente?",
+            "letter": "B"
           }
         ],
         "vocab": [
@@ -979,19 +981,22 @@
         "title": "Why did a single assassination in Sarajevo ignite a World War?",
         "sources": [
           {
-            "title": "Diagram A: The July Crisis Domino Effect",
+            "title": "Source A: Diagram of the July Crisis Domino Effect (1914)",
             "src": "/assets/change_1450_1750_july_crisis.svg",
-            "caption": "How a single assassination in the Balkans escalated into a world war within a month."
+            "caption": "How a single assassination in the Balkans escalated into a world war within a month.",
+            "letter": "A"
           },
           {
-            "title": "Map A: The Balkan Peninsula (1914)",
+            "title": "Source B (Reference Map): The Balkan Peninsula (1914)",
             "src": "/assets/change_1450_1750_balkans_1914_simple_map.png",
-            "caption": "Simplified map of the highly unstable Balkan Peninsula in 1914."
+            "caption": "Simplified map of the highly unstable Balkan Peninsula in 1914.",
+            "letter": "B"
           },
           {
-            "title": "Map B: Inset - Sarajevo, 28 June 1914: The Fatal Route",
+            "title": "Source C (Inset Map): Sarajevo, 28 June 1914 — The Fatal Route",
             "src": "/assets/change_1450_1750_map_sarajevo_route.jpg",
-            "caption": ""
+            "caption": "",
+            "letter": "C"
           }
         ],
         "vocab": [

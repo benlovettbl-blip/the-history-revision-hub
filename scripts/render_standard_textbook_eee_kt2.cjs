@@ -2,7 +2,7 @@
  * History Revision Hub — Publisher-Level Standard Textbook Engine
  *
  * Target: Early Elizabethan England, 1558–1588 (Key Topic 2)
- * Output: public/pdfs/eee_textbook_KT2_PUBLISHER.pdf
+ * Output: public/pdfs/eee_textbook_KT2.pdf
  * HTML:   public/units/eee/textbook_KT2_PUBLISHER.html
  *
  * Architectural Standards Enforced:
@@ -2236,9 +2236,9 @@ async function runKT2() {
 
   const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
-  const pdfPublisherPath = path.join(pdfOutputDir, 'eee_textbook_KT2_PUBLISHER.pdf');
+  const pdfPublisherPath = path.join(pdfOutputDir, 'eee_textbook_KT2.pdf');
   const pdfLegacyPath = path.join(pdfOutputDir, 'eee_textbook_KT2.pdf');
-  const pdfFinalV17Path = path.join(pdfOutputDir, 'eee_textbook_KT2_FINAL_V17.pdf');
+  const pdfFinalV17Path = path.join(pdfOutputDir, 'eee_textbook_KT2.pdf');
 
   console.log('🚀 Launching Puppeteer for A4 PDF compilation & layout audit...');
   const browser = await puppeteer.launch({
@@ -2284,8 +2284,8 @@ async function runKT2() {
   console.log('✅ Master Publisher PDF generated:', pdfPublisherPath);
 
   // Sync to standard alias so all links in web app and drive update seamlessly
-  fs.copyFileSync(pdfPublisherPath, pdfLegacyPath);
-  fs.copyFileSync(pdfPublisherPath, pdfFinalV17Path);
+  if (path.resolve(pdfPublisherPath) !== path.resolve(pdfLegacyPath)) fs.copyFileSync(pdfPublisherPath, pdfLegacyPath);
+  if (path.resolve(pdfPublisherPath) !== path.resolve(pdfFinalV17Path)) fs.copyFileSync(pdfPublisherPath, pdfFinalV17Path);
   console.log('✅ Synchronized active aliases:');
   console.log('   -', pdfLegacyPath);
   console.log('   -', pdfFinalV17Path);
@@ -2294,7 +2294,7 @@ async function runKT2() {
   const driveDest =
     'G:\\My Drive\\AAMX\\Dep File\\Year 11 (GCSE)\\Paper 2 - Early Elizabethan England\\Early Elizabethan England Master Textbook (KT2).pdf';
   if (fs.existsSync(path.dirname(driveDest))) {
-    fs.copyFileSync(pdfPublisherPath, driveDest);
+    if (path.resolve(pdfPublisherPath) !== path.resolve(driveDest)) fs.copyFileSync(pdfPublisherPath, driveDest);
     console.log('✅ Synchronized directly to Google Drive Department File:');
     console.log('   -', driveDest);
   }

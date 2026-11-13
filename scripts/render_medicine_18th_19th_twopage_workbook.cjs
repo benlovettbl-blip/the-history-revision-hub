@@ -117,7 +117,7 @@ const eighteenthNineteenthConfigs = [
     wordBank:
       'swan-neck flask &bull; Germ Theory (1861) &bull; spontaneous generation &bull; Robert Koch &bull; agar jelly &bull; methyl violet dye &bull; tuberculosis (1882) &bull; microphotography',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 3.1). In the drawing box, sketch Pasteur’s swan-neck flask experiment and Koch’s agar plate. Annotate how identifying specific bacteria ended miasma theory forever!',
+      'Open the Consolidate Station in the app and branch out KT3.1 on Pages 2–3: map spontaneous generation and British scepticism (left) against Pasteur’s Germ Theory and Koch’s staining methods (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -216,7 +216,7 @@ const eighteenthNineteenthConfigs = [
     wordBank:
       'Edward Jenner (1796) &bull; cowpox &bull; James Phipps &bull; smallpox &bull; variolation &bull; inoculation &bull; compulsory vaccination (1852) &bull; Anti-Vaccination League',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 3.2). In the drawing box, sketch Jenner inoculating James Phipps with cowpox. Annotate how this empirical experiment laid the foundation for modern immunology!',
+      'Open the Consolidate Station in the app and branch out KT3.2 on Pages 2–3: map variolation risks and anti-vaccine opposition (left) against Jenner’s 1796 cowpox trial and 1852 compulsory vaccination (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -315,7 +315,7 @@ const eighteenthNineteenthConfigs = [
     wordBank:
       "Florence Nightingale &bull; Scutari (1854) &bull; Notes on Nursing (1859) &bull; pavilion plan &bull; cross-ventilation &bull; St Thomas' Hospital &bull; trained nurses &bull; sanitation",
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 3.3). In the drawing box, sketch the Pavilion Hospital plan with its separate, ventilated pavilions. Annotate how cross-ventilation prevented hospital gangrene!',
+      'Open the Consolidate Station in the app and branch out KT3.3 on Pages 2–3: map Scutari squalor and septic wards (left) against Nightingale’s pavilion wards and St Thomas’ training school (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -417,7 +417,7 @@ const eighteenthNineteenthConfigs = [
     wordBank:
       'James Simpson &bull; chloroform (1847) &bull; Black Period &bull; Joseph Lister &bull; carbolic acid spray (1865) &bull; antiseptics &bull; steam sterilisation &bull; aseptic surgery',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 3.4). In the drawing box, sketch Lister’s carbolic donkey engine spraying mist over an open wound. Annotate the difference between antiseptic and aseptic surgery!',
+      'Open the Consolidate Station in the app and branch out KT3.4 on Pages 2–3: map the surgical ‘Black Period’ and sepsis (left) against Simpson’s chloroform, Lister’s carbolic spray, and aseptic theatres (right).',
     fourMark: {
       type: 'Similarity',
       question:
@@ -516,7 +516,7 @@ const eighteenthNineteenthConfigs = [
     wordBank:
       'John Snow (1854) &bull; Broad Street pump &bull; waterborne cholera &bull; Edwin Chadwick (1842) &bull; Great Stink (1858) &bull; Joseph Bazalgette &bull; Public Health Act (1875) &bull; laissez-faire',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 3.5). In the drawing box, sketch John Snow’s Broad Street pump map and Bazalgette’s sewer network. Annotate how cholera forced Parliament to abandon laissez-faire!',
+      'Open the Consolidate Station in the app and branch out KT3.5 on Pages 2–3: map laissez-faire and the 1848 Act’s limits (left) against Snow’s 1854 Broad Street proof, Bazalgette’s sewers, and the 1875 Act (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -864,161 +864,158 @@ function build18th19thTwoPageWorkbook(unitData, period) {
   });
 
   // ====================================================================
-  // PAGES 2 & 3: LIVING UNIT TIMELINE SPREAD (1700–1900)
-  // OPEN DRAWING CANVAS (ZERO ENCLOSING BOX BORDERS)
+  // PAGES 2–3: CHRONOLOGY REVISION ANCHOR & CENTER-SPINE MIND-MAP CANVAS
+  // (Pure Specification Headings, Zero Giveaways, Edge-to-Edge Open Space)
   // ====================================================================
+  const industrialSpineLeft = [
+    {
+      date: '1796',
+      title: 'Edward Jenner &amp; Smallpox Vaccine',
+      kt: 'KT 3.2',
+      leftCue: '◂ Variolation Risk &amp; Opposition',
+      rightCue: 'Cowpox Trial &amp; 1852 Law ▸',
+    },
+    {
+      date: '1847',
+      title: 'James Simpson &amp; Chloroform',
+      kt: 'KT 3.4',
+      leftCue: '◂ Dosage Fear &amp; Black Period',
+      rightCue: 'Pain-Free Invasive Surgery ▸',
+    },
+    {
+      date: '1848',
+      title: 'First Public Health Act (Permissive)',
+      kt: 'KT 3.5',
+      leftCue: '◂ Laissez-Faire &amp; Ratepayers',
+      rightCue: 'Chadwick Report &amp; Voluntary Act ▸',
+    },
+    {
+      date: '1854',
+      title: 'John Snow &amp; Broad Street Pump',
+      kt: 'KT 3.5',
+      leftCue: '◂ Soho Cholera &amp; Miasma Doubt',
+      rightCue: 'Spot Map &amp; Pump Handle Proof ▸',
+    },
+  ];
+
+  const industrialSpineRight = [
+    {
+      date: '1854–59',
+      title: 'Florence Nightingale &amp; Nursing',
+      kt: 'KT 3.3',
+      leftCue: '◂ Scutari Squalor &amp; Mortality',
+      rightCue: 'Pavilion Wards &amp; Nurse School ▸',
+    },
+    {
+      date: '1861',
+      title: 'Louis Pasteur’s Germ Theory',
+      kt: 'KT 3.1',
+      leftCue: '◂ Spontaneous Generation Myth',
+      rightCue: 'Swan-Neck Flasks &amp; Microbes ▸',
+    },
+    {
+      date: '1865',
+      title: 'Joseph Lister &amp; Carbolic Spray',
+      kt: 'KT 3.4',
+      leftCue: '◂ Sepsis &amp; Surgeon Resistance',
+      rightCue: 'Antiseptics to Aseptic Theatre ▸',
+    },
+    {
+      date: '1875–82',
+      title: '1875 Health Act &amp; Robert Koch',
+      kt: 'KT 3.5 &bull; 3.1',
+      leftCue: '◂ Koch Stains Specific Bacteria',
+      rightCue: 'Compulsory Sewers &amp; Clean Water ▸',
+    },
+  ];
+
+  const renderSpineNodes = (nodes) =>
+    nodes
+      .map(
+        (n) => `
+        <div style="position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 0; padding: 6px 0;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;">
+            <div style="flex: 1; text-align: right; font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 700; color: #000000; text-transform: uppercase; letter-spacing: 0.25px; white-space: nowrap;">
+              ${n.leftCue}
+            </div>
+            <div style="background: #000000; color: #ffffff; padding: 4.5px 14px; border-radius: 20px; font-family: 'Inter', sans-serif; font-size: 8.3pt; font-weight: 900; text-align: center; white-space: nowrap; display: inline-flex; align-items: center; gap: 7px; box-shadow: 0 0 0 6px #ffffff; border: 1.5px solid #000000;">
+              <span style="background: #ffffff; color: #000000; padding: 1.5px 6.5px; border-radius: 10px; font-size: 7.1pt; font-weight: 900;">${n.date}</span>
+              <span>${n.title}</span>
+              <span style="font-size: 6.8pt; font-weight: 700; color: #ffffff;">(${n.kt})</span>
+            </div>
+            <div style="flex: 1; text-align: left; font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 700; color: #000000; text-transform: uppercase; letter-spacing: 0.25px; white-space: nowrap;">
+              ${n.rightCue}
+            </div>
+          </div>
+        </div>`,
+      )
+      .join('');
+
   html += `
+  <!-- PAGE 2: CHRONOLOGY REVISION ANCHOR PART 1 -->
   <div class="page page-container verso-page" id="page-2" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11pt; color: #000000; margin: 0; font-weight: 800;">
-            Living Timeline &bull; Part 1: Vaccines, Anaesthetics &amp; Early Sanitation (1700–1854)
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-            Chronological Inquiry &bull; Milestones 1–4
+    <div class="page-body-full" style="position: relative;">
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+            CHRONOLOGY SPREAD &bull; PART 1
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            18TH &amp; 19TH CENTURY &bull; SPECIFICATION ANCHORS (1796–1854)
           </span>
         </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 3px 6px; margin-bottom: 5px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Complete each milestone sketchpad using dual-coding (combining visual storytelling symbols, causal arrows, and dates) to master the chronological spine across the centre-fold.
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+          Vaccination, Anaesthetics &amp; Early Public Health Battles
+        </h2>
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
+          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Problems &amp; Opposition to the left &bull; Breakthroughs &amp; Impact to the right).
         </div>
       </div>
 
-      <!-- 4 Milestones with Open Drawing Area (Zero Box Lines) -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 1: 1796 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1796 &bull; Edward Jenner: Smallpox Vaccination &amp; Immunology
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.2</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Jenner inoculates James Phipps with cowpox pus from Sarah Nelmes, proving cowpox confers immunity against smallpox. Publishes findings in 1798. Despite initial Royal Society scepticism, vaccination eradicates inoculator infection risks and founds immunology.
-          </p>
-        </div>
+      <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
+        <div style="position: absolute; left: 50%; top: 15px; bottom: 15px; width: 2.5px; background: #000000; transform: translateX(-50%); z-index: 1;"></div>
+        ${renderSpineNodes(industrialSpineLeft)}
+      </div>
 
-        <!-- Milestone 2: 1847 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1847 &bull; James Young Simpson: Chloroform &amp; Anaesthesia
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.4</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Simpson discovers the potent anaesthetic properties of chloroform in Edinburgh, ending agony during surgery. Queen Victoria’s use of chloroform during childbirth (1853) popularises it, enabling complex operations despite the initial ‘Black Period’ of surgery.
-          </p>
-        </div>
-
-        <!-- Milestone 3: 1848 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1848 &bull; First Public Health Act &amp; The General Board of Health
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.5</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Spurred by Chadwick’s 1842 report and epidemic cholera, Parliament passes the permissive 1848 Act. Towns can create local boards of health to supply clean water and drainage, though lack of compulsion leaves most cities vulnerable to filth and contagion.
-          </p>
-        </div>
-
-        <!-- Milestone 4: 1854 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1854 &bull; John Snow: Broad Street Pump &amp; Waterborne Cholera
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.5</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            During the Soho epidemic, Snow compiles his famous spot map linking 500+ fatal cholera cases to the Broad Street pump. Removing the handle immediately halts the outbreak, mathematically disproving the miasma theory seven years before Pasteur’s Germ Theory.
-          </p>
-        </div>
-
+      <div style="display: flex; justify-content: flex-end; align-items: center; padding: 0 2px 1px 0;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000; text-transform: uppercase;">
+          Specification Spine Continues to Germ Theory, Lister &amp; 1875 Act (Page 3) ➔
+        </span>
       </div>
 
       ${renderFooterStrip(2, 'The 18th century relied on empirical observation; the 19th century unlocked the laboratory.', 20)}
     </div>
   </div>
 
-  <!-- PAGE 3: LIVING TIMELINE PART 2 -->
+  <!-- PAGE 3: CHRONOLOGY REVISION ANCHOR PART 2 -->
   <div class="page page-container recto-page" id="page-3" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11pt; color: #000000; margin: 0; font-weight: 800;">
-            Living Timeline &bull; Part 2: Nursing, Microbes &amp; Antiseptics (1854–1875)
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-            Chronological Inquiry &bull; Milestones 5–8
+    <div class="page-body-full" style="position: relative;">
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+            CHRONOLOGY SPREAD &bull; PART 2
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            18TH &amp; 19TH CENTURY &bull; SPECIFICATION ANCHORS (1854–1882)
           </span>
         </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 3px 6px; margin-bottom: 5px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Draw visual symbols for Crimean hospital sanitation, swan-neck flasks, Lister carbolic sprays, and municipal sewers across the timeline below.
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+          Hospital Reform, Bacteriology, Antisepsis &amp; Compulsory Public Health
+        </h2>
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
+          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Scientific Discovery to the left &bull; Clinical &amp; State Reform to the right).
         </div>
       </div>
 
-      <!-- 4 Milestones with Open Drawing Area (Zero Box Lines) -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 5: 1854–56 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1854–56 &bull; Florence Nightingale: Hospital Sanitation at Scutari
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.3</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            During the Crimean War, Nightingale enforces rigorous cleanliness, ventilation, and fresh nutrition at Scutari hospital, slashing soldier death rates from 40% to 2%. Returns to Britain to establish the Nightingale Training School and author Notes on Nursing (1859).
-          </p>
-        </div>
+      <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
+        <div style="position: absolute; left: 50%; top: 15px; bottom: 15px; width: 2.5px; background: #000000; transform: translateX(-50%); z-index: 1;"></div>
+        ${renderSpineNodes(industrialSpineRight)}
+      </div>
 
-        <!-- Milestone 6: 1861 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1861 &bull; Louis Pasteur: Germ Theory &amp; Swan-Neck Flask Experiments
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.1</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Commissioned by Lille brewers, Pasteur disproves spontaneous generation using swan-neck flasks, demonstrating that airborne microbes cause fermentation and decay. In 1861, he publishes Germ Theory, proving microscopic germs cause specific diseases in living organisms.
-          </p>
-        </div>
-
-        <!-- Milestone 7: 1865–67 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1865–67 &bull; Joseph Lister: Carbolic Acid Spray &amp; Antiseptic Surgery
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.4</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Applying Pasteur’s Germ Theory to wound sepsis, Lister uses carbolic acid sprays, dressings, and hand-washing during surgery at Glasgow Infirmary. His antiseptic techniques reduce amputee mortality from 46% to 15%, paving the way for modern aseptic operating theatres.
-          </p>
-        </div>
-
-        <!-- Milestone 8: 1875 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1875 &bull; The Second Public Health Act: End of Laissez-Faire
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.5</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            The 1875 Public Health Act ends laissez-faire by making public health compulsory. Municipal councils are legally required to provide clean piped water, subterranean sewer drainage, street lighting, and medical officers of health, transforming urban life expectancy.
-          </p>
-        </div>
-
+      <div style="display: flex; justify-content: flex-end; align-items: center; padding: 0 2px 1px 0;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000; text-transform: uppercase;">
+          Key Topic 3 Specification Spine Complete ➔
+        </span>
       </div>
 
       ${renderFooterStrip(3, 'Pasteur and Koch unlocked microbiology; Joseph Bazalgette engineered the sewers that saved millions.', 20)}
@@ -1095,7 +1092,7 @@ ${part1TaskLines}
       <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 4px 8px; background: #ffffff; display: flex; justify-content: space-between; align-items: center; margin-top: 2px;">
         <div style="display: flex; align-items: center; gap: 8px;">
           <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; white-space: nowrap;">
-            Timeline Mission
+            Mind-Map Mission
           </span>
           <span style="font-family: 'Georgia', serif; font-size: 7.4pt; line-height: 1.25; color: #000000;">
             ${cfg.timelineMission}

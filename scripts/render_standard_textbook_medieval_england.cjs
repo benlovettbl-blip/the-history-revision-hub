@@ -1516,7 +1516,7 @@ async function run() {
     fs.mkdirSync(pdfOutputDir, { recursive: true });
   }
 
-  const pdfPath = path.join(pdfOutputDir, 'medieval_england_textbook_FINAL_V17.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'medieval_england_textbook.pdf');
   await page.pdf({
     path: pdfPath,
     format: 'A4',

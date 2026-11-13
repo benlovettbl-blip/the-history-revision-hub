@@ -280,10 +280,9 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/cme_new_textbook.pdf',
     },
     workbook: {
-      title: 'Conflict in the Middle East 68-Page Complete Master Pupil Workbook',
-      label: 'Pupil Workbook (68 Pages)',
-      htmlUrl: '/units/cme_new/pupil_workbook_KT1.html',
-      pdfUrl: '/pdfs/cme_new_pupil_workbook_master.pdf',
+      title: 'Conflict in the Middle East Pupil Workbooks (KT1, KT2 & KT3)',
+      label: 'Pupil Workbooks (KT1–KT3)',
+      openHub: true,
       icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
@@ -307,10 +306,9 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/usa_textbook.pdf',
     },
     workbook: {
-      title: 'USA, 1954–1975 80-Page Complete Master Pupil Workbook',
-      label: 'Pupil Workbook (80 Pages)',
-      htmlUrl: '/units/usa/pupil_workbook_KT1.html',
-      pdfUrl: '/pdfs/usa_pupil_workbook_master.pdf',
+      title: 'USA, 1954–1975 Pupil Workbooks (KT1–KT4)',
+      label: 'Pupil Workbooks (KT1–KT4)',
+      openHub: true,
       icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
@@ -334,10 +332,9 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
     },
     workbook: {
-      title: 'Medicine Through Time 104-Page Complete Master Pupil Workbook',
-      label: 'Pupil Workbook (104 Pages)',
-      htmlUrl: '/units/edexcel_medicine/pupil_workbook_medieval.html',
-      pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_master.pdf',
+      title: 'Medicine Through Time & Western Front Pupil Workbooks (5 Booklets)',
+      label: 'Pupil Workbooks (5 Booklets)',
+      openHub: true,
       icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
@@ -361,10 +358,9 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/weimar_nazi_germany_textbook.pdf',
     },
     workbook: {
-      title: 'Weimar & Nazi Germany 80-Page Complete Master Pupil Workbook',
-      label: 'Pupil Workbook (80 Pages)',
-      htmlUrl: '/units/weimar_nazi_germany/pupil_workbook_KT1.html',
-      pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf',
+      title: 'Weimar & Nazi Germany Pupil Workbooks (KT1–KT4)',
+      label: 'Pupil Workbooks (KT1–KT4)',
+      openHub: true,
       icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
@@ -382,10 +378,9 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/eee_textbook.pdf',
     },
     workbook: {
-      title: 'Early Elizabethan England 48-Page Complete Master Pupil Workbook',
-      label: 'Pupil Workbook (48 Pages)',
-      htmlUrl: '/units/eee/pupil_workbook_KT1.html',
-      pdfUrl: '/pdfs/eee_pupil_workbook_master.pdf',
+      title: 'Early Elizabethan England Pupil Workbooks (KT1–KT3)',
+      label: 'Pupil Workbooks (KT1–KT3)',
+      openHub: true,
       icon: 'fa-solid fa-pen-to-square',
     },
     retrieval: {
@@ -490,7 +485,16 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const wbDownloadTooltip = isExamPack ? `Download ${wb.label} PDF` : 'Download Pupil Workbook PDF';
 
   const workbookPill = wb
-    ? `
+    ? wb.openHub
+      ? `
+        <!-- Pillar 2: Individual Key Topic / Era Pupil Workbooks Hub -->
+        <div class="${wbPillClass}">
+          <button type="button" class="launchpad-pill-btn" onclick="window.switchView && window.switchView('booklet', '${unitId}')" title="Open Workbooks Hub to view or print individual Key Topic booklets & Mark Schemes">
+            <i class="${wbIcon}"></i>
+            <span>${wb.label}</span>
+          </button>
+        </div>`
+      : `
         <!-- Pillar 2: Pupil Workbook / Mastery Exam Pack -->
         <div class="${wbPillClass}">
           <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${wb.htmlUrl}', '${cleanWbTitle}', '${wb.pdfUrl}', '${wbAction}')" title="${wbTooltip}">
@@ -507,6 +511,26 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
           }
         </div>`
     : '';
+
+  const workbookMarkSchemePill =
+    wb && wb.markSchemeHtmlUrl
+      ? `
+        <!-- Pillar 2b: Page-Matched Workbook Teacher Mark Scheme & WAGOLLs -->
+        <div class="launchpad-pill-group pill-workbook">
+          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${wb.markSchemeHtmlUrl}', '${(wb.markSchemeTitle || 'Workbook Mark Scheme').replace(/'/g, "\\'")}', '${wb.markSchemePdfUrl || ''}', 'MARK_SCHEME')" title="Open Page-Matched Printed Workbook Mark Scheme & Grade 9 WAGOLLs">
+            <i class="fa-solid fa-check-double"></i>
+            <span>${wb.markSchemeLabel || 'Workbook Mark Scheme'}</span>
+          </button>
+          ${
+            wb.markSchemePdfUrl && isVerifiedPdf(wb.markSchemePdfUrl)
+              ? `
+          <a href="${wb.markSchemePdfUrl}" target="_blank" download title="Download Page-Matched Workbook Mark Scheme PDF" class="launchpad-pill-pdf">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>`
+              : ''
+          }
+        </div>`
+      : '';
 
   const retrievalPill = rc
     ? `
@@ -562,6 +586,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
       <div class="hero-launchpad-capsule">
         ${textbookPill}
         ${workbookPill}
+        ${workbookMarkSchemePill}
         ${retrievalPill}
         ${combinedPill}
         ${overviewPill}

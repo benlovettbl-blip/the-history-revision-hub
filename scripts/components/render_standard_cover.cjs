@@ -73,6 +73,260 @@ function renderStandardFrontCover({
   const isMedicine = unitId === 'edexcel_medicine';
   const isWesternFront = isMedicine && keyTopicNum === 5;
   const isMedicineThematic = isMedicine && !isWesternFront;
+  const isCME = unitId === 'cme_new';
+
+  if (isCME) {
+    let canonicalSpec = specBox;
+    if (UNIT_SPEC_MAP[unitId]) {
+      try {
+        const canonical = getCanonicalGCSESpec(unitId, keyTopicNum);
+        if (canonical) {
+          canonicalSpec = {
+            title: canonical.boxTitle,
+            subtopics: canonical.subtopics,
+          };
+        }
+      } catch (e) {
+        console.warn(`[renderStandardFrontCover] CME spec load warning: ${e.message}`);
+      }
+    }
+
+    const hubUrl =
+      heroImage.hubUrl ||
+      `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=${
+        keyTopicNum === 2 ? 'kt2.1-water-wars' : keyTopicNum === 3 ? 'kt3.1-shuttle-diplomacy' : 'kt1.1-end-of-mandate'
+      }`;
+    const hubQrSvg = generateQrSvg(hubUrl);
+
+    const clues = Array.isArray(heroImage.clues) && heroImage.clues.length
+      ? heroImage.clues
+      : [
+          'Identify the key historical figures and symbols visible in the frame.',
+          'Notice the physical setting and body language of the participants.',
+          'Consider how international audiences reacted to this photograph.',
+        ];
+    const hingeQuestion =
+      heroImage.hingeQuestion ||
+      'Why did this moment become a defining turning point in the Middle East conflict?';
+
+    // Flatten official Pearson Edexcel subtopics + points into a crisp Personal Learning Checklist
+    const allSubtopics = canonicalSpec.subtopics || [];
+    const totalSpecRows = allSubtopics.reduce((acc, s) => acc + (s.items ? s.items.length : 0), 0);
+    const isDensePlc = totalSpecRows >= 10;
+    const plcRowPad = isDensePlc ? '1.8px 6px' : '2.8px 7px';
+    const plcFont = isDensePlc ? '6.75pt' : '7.1pt';
+    const plcLh = isDensePlc ? '1.14' : '1.20';
+    const heroHeightMm = heroImage.cmeHeroHeightMm || (isDensePlc ? 64 : 70);
+
+    const plcRowsHtml = allSubtopics
+      .map((sub, sIdx) => {
+        const cleanSubTitle = (sub.title || '').replace(/^\d+[\.\s]+/, '').trim();
+        const headerRow = `
+          <tr style="background: #f1f5f9; border-bottom: 1px solid #cbd5e1; border-top: ${sIdx > 0 ? '1.2px solid #0f172a' : 'none'};">
+            <td colspan="3" style="padding: 2px 7px; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.4px; color: #0f172a;">
+              ${keyTopicNum}.${sIdx + 1} &bull; ${cleanSubTitle}
+            </td>
+          </tr>`;
+        const itemRows = (sub.items || [])
+          .map(
+            (item) => `
+          <tr style="border-bottom: 0.8px solid #e2e8f0; background: #ffffff;">
+            <td style="padding: ${plcRowPad}; font-family: 'Inter', sans-serif; font-size: ${plcFont}; line-height: ${plcLh}; color: #0f172a; border-right: 1px solid #cbd5e1;">
+              ${item}
+            </td>
+            <td style="width: 14mm; text-align: center; vertical-align: middle; border-right: 1px solid #cbd5e1; padding: 1px;">
+              <span style="display: inline-block; width: 10px; height: 10px; border: 1.3px solid #0f172a; border-radius: 1.5px; background: #ffffff;"></span>
+            </td>
+            <td style="width: 14mm; text-align: center; vertical-align: middle; padding: 1px;">
+              <span style="display: inline-block; width: 10px; height: 10px; border: 1.3px solid #0f172a; border-radius: 1.5px; background: #ffffff;"></span>
+            </td>
+          </tr>`,
+          )
+          .join('');
+        return headerRow + itemRows;
+      })
+      .join('');
+
+    const footerHtml = renderFooterStrip
+      ? renderFooterStrip(1, footerQuip, totalPageCount)
+      : `
+        <div class="page-footer-strip">
+          <span class="footer-quip" style="text-align: left; flex: 1; margin-right: 8px;">${footerQuip}</span>
+          <span class="footer-page-num">Page 1 of ${totalPageCount}</span>
+        </div>`;
+
+    return `
+  <!-- ====================================================================
+       PAGE 1: OUTSIDE FRONT COVER (CME Curatorial Split Hero + Official Spec PLC)
+       ==================================================================== -->
+  <div class="page page-container recto-page" id="page-1" style="padding: 4mm 6mm;">
+    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; gap: 3px;">
+
+      <!-- 1. Top Neutral Department Strip -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px;" data-department-name="The History Department">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="school-brand-target" style="font-family: 'Inter', sans-serif; font-size: 10.8pt; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; color: #000000;">The History Department</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; color: #0f172a;">The History Revision Hub &bull; GCSE Pupil Workbook</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1px; border-top: 1px solid #000000; padding-top: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 800; letter-spacing: 0.4px; text-transform: uppercase; color: #1e293b;">Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Conflict in the Middle East, 1945–95</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 900; color: #000000;">Option P5 (1HI0/P5)</span>
+        </div>
+      </div>
+
+      <!-- 2. Pupil Identification Bar -->
+      <div style="border: 1.4px solid #000000; border-radius: 3px; padding: 4px 12px; background: #ffffff;">
+        <div style="display: grid; grid-template-columns: 2.3fr 1fr 1.3fr; gap: 14px; font-family: 'Inter', sans-serif; font-size: 7.8pt;">
+          <div style="display: flex; align-items: baseline; gap: 5px;">
+            <strong style="text-transform: uppercase; font-size: 7.4pt; color: #000000; font-weight: 900;">Name:</strong>
+            <div style="flex: 1; border-bottom: 1.3px solid #000000; height: 14px;"></div>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 5px;">
+            <strong style="text-transform: uppercase; font-size: 7.4pt; color: #000000; font-weight: 900;">Class:</strong>
+            <div style="flex: 1; border-bottom: 1.3px solid #000000; height: 14px;"></div>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 5px;">
+            <strong style="text-transform: uppercase; font-size: 7.4pt; color: #000000; font-weight: 900;">Teacher:</strong>
+            <div style="flex: 1; border-bottom: 1.3px solid #000000; height: 14px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Key Topic Title Banner + Hub QR -->
+      <div style="border: 1.6px solid #0f172a; border-radius: 4px; padding: 4px 9px; background: #0f172a; color: #ffffff; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; align-items: center; gap: 7px; margin-bottom: 1.5px;">
+            <span style="background: #b91c1c; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 1px 6px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.7px;">
+              Key Topic ${keyTopicNum} &bull; ${dateRange}
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 6.6pt; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.4px;">
+              ${totalPageCount}-Page Booklet &bull; Notes, Timeline &amp; Mini-Mock
+            </span>
+          </div>
+          <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 13.2pt; margin: 0; font-weight: 900; line-height: 1.14; color: #ffffff;">
+            ${title}
+          </h1>
+          <div style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #e2e8f0; font-style: italic; line-height: 1.18; margin-top: 1px;">
+            ${subtitle}
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; background: #ffffff; padding: 2px 3px; border-radius: 3px; flex-shrink: 0;">
+          <div style="width: 13.5mm; height: 13.5mm;">${hubQrSvg}</div>
+          <span style="font-family: 'Inter', sans-serif; font-size: 4.8pt; font-weight: 900; color: #0f172a; text-transform: uppercase; margin-top: 1px; letter-spacing: 0.2px;">Audio &bull; Quiz Hub</span>
+        </div>
+      </div>
+
+      <!-- 4. Uncropped Split Archival Hero Plate + Curatorial Source Panel -->
+      <div style="border: 1.6px solid #0f172a; border-radius: 4px; overflow: hidden; background: #ffffff; display: grid; grid-template-columns: 1.12fr 0.88fr; height: ${heroHeightMm}mm; flex-shrink: 0;">
+        <!-- Left: Uncropped Authentic Archival Frame -->
+        <div style="background: #0b1120; display: flex; flex-direction: column; justify-content: space-between; height: 100%; overflow: hidden; border-right: 1.5px solid #0f172a;">
+          <div style="flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 3px; overflow: hidden;">
+            <img src="${heroImage.src}" alt="${heroImage.alt}" class="archival-image" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block;">
+          </div>
+          <div style="background: #020617; color: #e2e8f0; padding: 2px 7px; font-family: 'Inter', sans-serif; font-size: 5.9pt; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #1e293b; flex-shrink: 0;">
+            <span style="font-weight: 700;">${heroImage.photographer || heroImage.sourceTag || 'Archival Photograph'} (${heroImage.date})</span>
+            <span style="font-weight: 800; color: #94a3b8;">${heroImage.repository || heroImage.shelfmark}</span>
+          </div>
+        </div>
+
+        <!-- Right: Curatorial Investigation Panel -->
+        <div style="padding: 5px 8px; display: flex; flex-direction: column; justify-content: space-between; background: #f8fafc; height: 100%; box-sizing: border-box; overflow: hidden;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; color: #b91c1c;">
+                Cover Source Study
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; background: #e2e8f0; color: #0f172a; padding: 0.5px 4px; border-radius: 2px;">
+                ${heroImage.date}
+              </span>
+            </div>
+            <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 8.6pt; font-weight: 900; color: #0f172a; line-height: 1.14; margin-bottom: 2px;">
+              ${heroImage.title}
+            </div>
+            <div style="font-family: 'Georgia', serif; font-size: 6.7pt; color: #1e293b; line-height: 1.22; margin-bottom: 3px;">
+              ${heroImage.caption}
+            </div>
+            <div style="border-top: 1px solid #cbd5e1; padding-top: 2.5px;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 5.9pt; font-weight: 900; text-transform: uppercase; color: #0f172a; margin-bottom: 1.5px;">
+                3 Details to Spot in This Photograph:
+              </div>
+              ${clues
+                .map(
+                  (c, idx) => `
+              <div style="font-family: 'Inter', sans-serif; font-size: 6.3pt; color: #1e293b; line-height: 1.18; margin-bottom: 1px; display: flex; gap: 4px;">
+                <strong style="color: #b91c1c; flex-shrink: 0;">${idx + 1}.</strong>
+                <span>${c}</span>
+              </div>`,
+                )
+                .join('')}
+            </div>
+          </div>
+
+          <div style="background: #ffffff; border: 1px solid #cbd5e1; border-left: 3px solid #b91c1c; border-radius: 2px; padding: 2.5px 5px; margin-top: 2px;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 6.2pt; line-height: 1.18; color: #0f172a;">
+              <strong style="text-transform: uppercase; color: #b91c1c; font-size: 5.8pt;">Class Discussion:</strong> <em>${hingeQuestion}</em>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Paper 2 Exam Question Guide Strip -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; flex-shrink: 0;">
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0284c7; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q1 &bull; Two Consequences</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #e0f2fe; color: #0369a1; padding: 0.5px 4px; border-radius: 2px;">8m (2&times;4m)</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            Two separate 4-mark consequences. State each consequence, give a specific date/fact, and explain what it led to (10 mins).
+          </div>
+        </div>
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0f766e; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q2 &bull; Narrative Account</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #ccfbf1; color: #0f766e; padding: 0.5px 4px; border-radius: 2px;">8 Marks</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            3 chronological paragraphs (Beginning &rarr; Key Developments &rarr; Outcome) linked by causal phrases + own knowledge (12 mins).
+          </div>
+        </div>
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #b91c1c; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q3 &bull; Explain Importance</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #fee2e2; color: #b91c1c; padding: 0.5px 4px; border-radius: 2px;">16m (2&times;8m)</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            Answer 2 of 3 choices. For each 8-mark choice, write <strong>two</strong> paragraphs explaining why X was important <em>for Y</em> (25 mins).
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Official Pearson Edexcel Specification Personal Learning Checklist (Taught / Revised) -->
+      <div style="border: 1.5px solid #0f172a; border-radius: 4px; overflow: hidden; background: #ffffff; flex: 1; min-height: 0; display: flex; flex-direction: column;">
+        <table style="width: 100%; height: 100%; border-collapse: collapse;">
+          <thead>
+            <tr style="background: #0f172a; color: #ffffff; border-bottom: 1.5px solid #0f172a;">
+              <th style="padding: 3px 7px; text-align: left; font-family: 'Inter', sans-serif; font-size: 7.1pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.4px; border-right: 1px solid #334155;">
+                Official Pearson Edexcel Specification Checklist &bull; Key Topic ${keyTopicNum}
+              </th>
+              <th style="width: 14mm; padding: 3px 2px; text-align: center; font-family: 'Inter', sans-serif; font-size: 6.1pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">
+                Taught
+              </th>
+              <th style="width: 14mm; padding: 3px 2px; text-align: center; font-family: 'Inter', sans-serif; font-size: 6.1pt; font-weight: 900; text-transform: uppercase;">
+                Revised
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            ${plcRowsHtml}
+          </tbody>
+        </table>
+      </div>
+
+      ${footerHtml}
+    </div>
+  </div>`;
+  }
 
   if (isEee) {
     const defaultPhotoHeight = 102;
@@ -855,6 +1109,194 @@ function renderStandardBackCover({
   const isCME = unitId === 'cme_new';
   const isEEE = unitId === 'eee';
   const isColdWar = unitId === 'cold_war';
+
+  if (isCME) {
+    const commentLineHeightMm = enquiries.length <= 3 ? '7.4' : '6.3';
+    const cmeRowsHtml = enquiries
+      .map((enq, idx) => {
+        const qrUrl =
+          enq.qrUrl ||
+          (qrLessons && qrLessons[idx] && qrLessons[idx].url) ||
+          null;
+        const qrSvg = qrUrl ? generateQrSvg(qrUrl) : '';
+        const isWorkout = Boolean(enq.isWorkout);
+        const rowBorder = idx < enquiries.length - 1 ? 'border-bottom: 1.4px solid #000000;' : '';
+
+        if (isWorkout) {
+          return `
+            <div style="display: grid; grid-template-columns: 22mm 1fr 19mm 18mm 22mm; flex: 1; min-height: 0; ${rowBorder} background: #f8fafc;">
+              <div style="padding: 3px 3px; border-right: 1.4px solid #000000; display: flex; align-items: center; justify-content: center; text-align: center;">
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 900; text-transform: uppercase; color: #0f172a; line-height: 1.15;">
+                  Revision<br>Spread<br><span style="font-size: 6.0pt; color: #475569;">${enq.pages || 'pp. 12–13'}</span>
+                </div>
+              </div>
+              <div style="padding: 4px 7px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; min-height: 0; overflow: hidden;">
+                <div style="flex-shrink: 0;">
+                  <div style="font-family: 'Inter', sans-serif; font-weight: 900; color: #000000; font-size: 8.2pt; line-height: 1.18;">
+                    ${enq.code ? `${enq.code}: ` : ''}${enq.title}
+                  </div>
+                  <div style="font-family: 'Georgia', serif; font-size: 6.8pt; color: #334155; font-style: italic; margin-top: 1px; line-height: 1.15;">
+                    ${enq.enquiryQuestion || 'Chronological sequencing, cause-to-consequence matrix &amp; two 4-mark consequence drills.'}
+                  </div>
+                </div>
+                <div style="flex: 1; min-height: 0; display: flex; flex-direction: column; margin-top: 3px;">
+                  <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.3px; color: #334155; flex-shrink: 0; line-height: 1.1;">
+                    Teacher Comments:
+                  </div>
+                  <div data-auto-lines data-line-height="${commentLineHeightMm}" style="flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-evenly;"></div>
+                </div>
+              </div>
+              <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
+                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">Chronology</div>
+                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span>
+              </div>
+              <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
+                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">Drill 1</div>
+                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ 4</strong></span>
+              </div>
+              <div style="padding: 3px 2px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
+                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">Drill 2</div>
+                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ 4</strong></span>
+              </div>
+            </div>`;
+        }
+
+        return `
+            <div style="display: grid; grid-template-columns: 22mm 1fr 19mm 18mm 22mm; flex: 1; min-height: 0; ${rowBorder} background: #ffffff;">
+              <!-- Col 1: HW Set/Due + 13.5mm Lesson QR -->
+              <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2.5px;">
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; color: #000000; white-space: nowrap;">
+                  SET: <span style="display: inline-block; border-bottom: 1.2px solid #000000; width: 11.5mm;">&nbsp;</span>
+                </div>
+                <div style="width: 13.5mm; height: 13.5mm; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  ${qrSvg}
+                </div>
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; color: #000000; white-space: nowrap;">
+                  DUE: <span style="display: inline-block; border-bottom: 1.2px solid #000000; width: 11.5mm;">&nbsp;</span>
+                </div>
+              </div>
+
+              <!-- Col 2: Top Lesson Focus + Homework/Parent Sign-Off, with Teacher Comment Lines Underneath -->
+              <div style="padding: 4px 7px 4px 7px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; min-height: 0; overflow: hidden;">
+                <div style="flex-shrink: 0;">
+                  <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 6px;">
+                    <span style="font-family: 'Inter', sans-serif; font-weight: 900; color: #000000; font-size: 8.3pt; line-height: 1.16;">
+                      ${enq.code || `KT${keyTopicNum}.${enq.num}`}: ${enq.title}
+                    </span>
+                    ${enq.pages ? `<span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 800; color: #334155; background: #f1f5f9; border: 0.8px solid #cbd5e1; padding: 0.5px 4px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">${enq.pages}</span>` : ''}
+                  </div>
+                  ${enq.enquiryQuestion ? `<div style="font-family: 'Georgia', serif; font-size: 6.8pt; color: #334155; font-style: italic; margin-top: 1px; line-height: 1.14;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                </div>
+
+                <div style="border-top: 1px dashed #94a3b8; border-bottom: 1px dashed #94a3b8; padding: 2px 0 2.5px 0; margin-top: 2px; display: flex; flex-direction: column; gap: 2px; flex-shrink: 0;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000;">
+                    <span><span style="font-size: 8.0pt;">&#9633;</span> Audio / Textbook Read</span>
+                    <span>Online Quiz: <span style="display: inline-block; border-bottom: 1.3px solid #000000; width: 10mm; margin: 0 2px;">&nbsp;</span><strong>/ 10</strong></span>
+                  </div>
+                  <div style="display: flex; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 6.9pt; font-weight: 900; color: #000000;">
+                    <span style="white-space: nowrap; margin-right: 5px;">Parent / Carer Sign:</span>
+                    <div style="flex: 1; border-bottom: 1.3px solid #000000; height: 11px;"></div>
+                  </div>
+                </div>
+
+                <div style="flex: 1; min-height: 0; display: flex; flex-direction: column; margin-top: 2.5px;">
+                  <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.3px; color: #334155; flex-shrink: 0; line-height: 1.1;">
+                    Teacher Comments:
+                  </div>
+                  <div data-auto-lines data-line-height="${commentLineHeightMm}" style="flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-evenly;"></div>
+                </div>
+              </div>
+
+              <!-- Col 3: Do Now Starter -->
+              <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 2px;">Do Now</div>
+                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span>
+              </div>
+
+              <!-- Col 4: Q1 Consequence [4m] -->
+              <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 2px;">Q1 Conseq</div>
+                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1aMarks || 4}</strong></span>
+              </div>
+
+              <!-- Col 5: Q2 Narrative or Q3 Importance [8m] -->
+              <div style="padding: 3px 2px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #0f172a; margin-bottom: 2px;">${enq.extLabel || (enq.extType === 'Q2' ? 'Q2 Narr' : 'Q3 Imp')}</div>
+                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8.5mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || 8}</strong></span>
+              </div>
+            </div>`;
+      })
+      .join('\n');
+
+    const cmeFooterHtml = renderFooterStrip
+      ? renderFooterStrip(totalPageCount, footerQuip, totalPageCount)
+      : `
+        <div class="page-footer-strip">
+          <span class="footer-page-num" style="margin-right: 8px;">Page ${totalPageCount} of ${totalPageCount}</span>
+          <span class="footer-quip" style="text-align: right; flex: 1;">${footerQuip}</span>
+        </div>`;
+
+    return `
+  <!-- ====================================================================
+       PAGE ${totalPageCount}: OUTSIDE BACK COVER (CME Marking, Homework QR & Parent Record)
+       ==================================================================== -->
+  <div class="page page-container verso-page" id="page-${totalPageCount}" style="padding: 4mm 6mm;">
+    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; gap: 3px;">
+
+      <!-- 1. Top Neutral Department Header -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px;" data-department-name="The History Department">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="school-brand-target" style="font-family: 'Inter', sans-serif; font-size: 10.6pt; font-weight: 900; letter-spacing: 1.6px; text-transform: uppercase; color: #000000;">The History Department</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; letter-spacing: 0.4px; text-transform: uppercase; color: #000000;">
+            Key Topic ${keyTopicNum} &bull; Marking, Homework &amp; Parent Record
+          </span>
+        </div>
+      </div>
+
+      <!-- 2. Pupil Name, Target Grade & Cold Mini-Mock Headline Bar -->
+      <div style="border: 1.5px solid #000000; border-radius: 3px; padding: 4px 8px; background: #ffffff; display: grid; grid-template-columns: 1.75fr 0.65fr 0.85fr 1.55fr; gap: 8px; align-items: center; flex-shrink: 0;">
+        <div style="display: flex; align-items: baseline; gap: 5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase;">Name:</span>
+          <div style="border-bottom: 1.3px solid #000000; flex: 1; height: 13px;"></div>
+        </div>
+        <div style="display: flex; align-items: baseline; gap: 4px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase;">Class:</span>
+          <div style="border-bottom: 1.3px solid #000000; flex: 1; height: 13px;"></div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 4px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.9pt; font-weight: 900; text-transform: uppercase;">Target:</span>
+          <div style="border: 1.4px solid #000000; border-radius: 2px; width: 24px; height: 18px;"></div>
+        </div>
+        <div style="background: #f8fafc; border: 1.4px solid #000000; border-radius: 2.5px; padding: 2px 6px; display: flex; align-items: center; justify-content: space-between; gap: 5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; color: #000000; white-space: nowrap;">Mini-Mock (pp. ${totalPageCount - 2}–${totalPageCount - 1}):</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; white-space: nowrap;"><span style="display: inline-block; border-bottom: 1.3px solid #000000; width: 8mm; margin-right: 2px;">&nbsp;</span>/ 16</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; white-space: nowrap;">Gr: <span style="display: inline-block; border: 1.2px solid #000000; width: 18px; height: 15px; vertical-align: middle; background: #ffffff;"></span></span>
+        </div>
+      </div>
+
+      <!-- 3. Per-Lesson Homework QR, Parent Sign-Off, Teacher Comments & Exam Practice Marking Grid -->
+      <div style="border: 1.5px solid #000000; border-radius: 3px; overflow: hidden; flex: 1; min-height: 0; display: flex; flex-direction: column; font-family: 'Inter', sans-serif;">
+        <!-- Grid Header -->
+        <div style="display: grid; grid-template-columns: 22mm 1fr 19mm 18mm 22mm; border-bottom: 1.5px solid #000000; background: #0f172a; color: #ffffff; flex-shrink: 0;">
+          <div style="padding: 3.5px 2px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">HW &amp; QR</div>
+          <div style="padding: 3.5px 7px; border-right: 1px solid #334155;">
+            <div style="font-size: 7.2pt; font-weight: 900; text-transform: uppercase; line-height: 1.12;">Lesson Focus, Homework Sign-Off &amp; Teacher Comments</div>
+            <div style="font-size: 5.7pt; font-weight: 600; color: #cbd5e1; line-height: 1.1;">Scan QR for lesson audio &amp; 10-question recall quiz &bull; Parent/Carer signs when complete</div>
+          </div>
+          <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">Do Now<span style="font-size: 5.7pt; color: #cbd5e1;">(/10)</span></div>
+          <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">Q1<span style="font-size: 5.7pt; color: #cbd5e1;">(/4)</span></div>
+          <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase;">Q2 / Q3<span style="font-size: 5.7pt; color: #cbd5e1;">(/8)</span></div>
+        </div>
+        <!-- Grid Body -->
+        <div style="display: flex; flex-direction: column; flex: 1; min-height: 0;">
+          ${cmeRowsHtml}
+        </div>
+      </div>
+
+      ${cmeFooterHtml}
+    </div>
+  </div>`;
+  }
   const qrSvgSize = (isWesternFront || isColdWar) ? '13mm' : (isWeimar || isEEE) ? '16mm' : '14mm';
   const teacherLineHeight = isWesternFront ? '4.8mm' : isWeimar ? '5.4mm' : '6.8mm';
   const teacherLineCount = isWesternFront ? 3 : isWeimar ? 3 : 3;
@@ -1074,6 +1516,24 @@ function renderStandardBackCover({
             </tr>`,
       )
       .join('\n');
+  } else if (isCME && enquiries.every((enq) => !enq.q1bMarks)) {
+    enquiriesRowsHtml = enquiries
+      .map(
+        (enq) => `
+            <tr style="border-bottom: 1px solid #000000;">
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">${enq.num}</td>
+              <td style="padding: 5px 10px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.30;">
+                <div style="font-weight: 800; color: #000; font-size: 9.0pt;">${enq.code || `KT${keyTopicNum}.${enq.num}`}: ${enq.title}</div>
+                ${enq.enquiryQuestion ? `<div style="font-size: 7.2pt; color: #475569; font-style: italic; margin-top: 1px; line-height: 1.20;">&ldquo;${enq.enquiryQuestion}&rdquo;</div>` : ''}
+                ${renderHwPassportStrip()}
+              </td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 11mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.2pt; font-weight: 800;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1aMarks || 4}</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.6pt;"><span style="font-size: 8.8pt; font-weight: 800;">${enq.extType || 'Q2'}: <span style="display: inline-block; border-bottom: 1.2px solid #000; width: 10mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || 8}</strong></span></td>
+              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.2px solid #000; width: 12mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.totalMarks || 22}</strong></span></td>
+            </tr>`,
+      )
+      .join('\n');
   } else {
     enquiriesRowsHtml = enquiries
       .map(
@@ -1224,6 +1684,16 @@ function renderStandardBackCover({
               <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 70</strong></span></td>
               <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.4pt;">Tasks: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 68</strong></span></td>
               <td style="padding: 4px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 138</strong></span></td>
+            </tr>`
+                : isCME && enquiries.every((enq) => !enq.q1bMarks)
+                ? `
+            <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 8.0mm;">
+              <th style="padding: 3px 4px; width: 26px; text-align: center; font-size: 8.5pt; font-weight: 900; border-right: 1px solid #000000;">#</th>
+              <th style="padding: 3px 10px; text-align: left; font-size: 8.2pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Enquiry / Lesson Assessment</th>
+              <th style="padding: 3px 4px; width: 88px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Do Now (10m)</th>
+              <th style="padding: 3px 4px; width: 92px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q1 Conseq (4m)</th>
+              <th style="padding: 3px 4px; width: 100px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Extended (8m)</th>
+              <th style="padding: 3px 6px; width: 92px; text-align: center; font-size: 8.5pt; font-weight: 900; text-transform: uppercase;">Lesson Total</th>
             </tr>`
                 : `
             <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 8.0mm;">

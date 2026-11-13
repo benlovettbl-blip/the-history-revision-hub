@@ -1229,7 +1229,7 @@ async function run() {
   }
 
   // Primary PDF: A5 size (148mm x 210mm) formatted for A4 saddle-stitch printing
-  const primaryPdf = path.join(PDFS_DIR, 'second_british_empire_quiz_pack_FINAL_V1.pdf');
+  const primaryPdf = path.join(PDFS_DIR, 'second_british_empire_quiz_pack.pdf');
   const aliasPdf = path.join(PDFS_DIR, 'second_british_empire_quiz_pack.pdf');
 
   await page.pdf({
@@ -1241,7 +1241,7 @@ async function run() {
   });
   console.log(`✅ Generated Master 8-Page Saddle-Stitch PDF: ${primaryPdf}`);
 
-  fs.copyFileSync(primaryPdf, aliasPdf);
+  if (path.resolve(primaryPdf) !== path.resolve(aliasPdf)) fs.copyFileSync(primaryPdf, aliasPdf);
   console.log(`✅ Updated PDF alias: ${aliasPdf}`);
 
   await browser.close();

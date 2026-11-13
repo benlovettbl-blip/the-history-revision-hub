@@ -334,12 +334,14 @@ window.addEventListener('DOMContentLoaded', async () => {
     flushDraftState();
   });
 
-  const targetInitialLessonIndex =
-    initialLesson !== null && !isNaN(parseInt(initialLesson, 10))
-      ? parseInt(initialLesson, 10) > 0
-        ? parseInt(initialLesson, 10) - 1
-        : 0
-      : undefined;
+  const isPureNumericInitialLesson =
+    initialLesson !== null && /^\d+$/.test(String(initialLesson).trim());
+
+  const targetInitialLessonIndex = isPureNumericInitialLesson
+    ? parseInt(initialLesson, 10) > 0
+      ? parseInt(initialLesson, 10) - 1
+      : 0
+    : undefined;
 
   switchView(view, unit, true, { lessonIndex: targetInitialLessonIndex }).then(() => {
     const resolveLessonTarget = (paramLesson, unitData) => {
@@ -363,9 +365,14 @@ window.addEventListener('DOMContentLoaded', async () => {
             return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
           }
         }
-        // 2. Direct exact ID match (e.g. 'lesson_3_1', 'lesson_1_1', 'lesson_5_1')
+        // 2. Direct exact ID, readable slug, or alias_ids match (e.g. 'kt2.1-water-wars', 'lesson_3_1')
+        const lowerRaw = rawStr.toLowerCase();
         let idx = unitData.lessons.findIndex(
-          (l) => l.id && l.id.toLowerCase() === rawStr.toLowerCase(),
+          (l) =>
+            (l.id && l.id.toLowerCase() === lowerRaw) ||
+            (l.slug && l.slug.toLowerCase() === lowerRaw) ||
+            (Array.isArray(l.alias_ids) &&
+              l.alias_ids.some((a) => String(a).toLowerCase() === lowerRaw)),
         );
         if (idx !== -1) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
@@ -416,8 +423,12 @@ window.addEventListener('DOMContentLoaded', async () => {
         window.currentUnitData ||
         (window.appStore && window.appStore.state && window.appStore.state.activeUnitData);
       const resolved = resolveLessonTarget(initialLesson, unitDataObj);
-      if (resolved.index !== -1 && typeof window.renderLessonByIndex === 'function') {
-        window.renderLessonByIndex(resolved.index, true);
+      if (resolved.index !== -1) {
+        if (typeof window.viewLessonDetail === 'function') {
+          window.viewLessonDetail(resolved.index, null, true);
+        } else if (typeof window.renderLessonByIndex === 'function') {
+          window.renderLessonByIndex(resolved.index, true);
+        }
         const stageParam = urlParams.get('stage');
         if (stageParam && typeof window.jumpToNarrativeBlock === 'function') {
           setTimeout(() => {

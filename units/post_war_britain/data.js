@@ -3255,7 +3255,7 @@ export default {
           "id": "MbNH4JBQiSY",
           "url": "https://www.youtube.com/watch?v=MbNH4JBQiSY",
           "title": "HMT Empire Windrush: The Arrival at Tilbury (1948) | BBC Archive",
-          "duration": "4 mins 20 secs",
+          "duration": "59 mins 59 secs",
           "pathway": "Starter Hook",
           "teacher_guidance": "BBC archival coverage of the arrival of 492 Jamaican and Caribbean passengers at Tilbury Docks, Essex, on 22 June 1948. Features iconic interviews with Lord Kitchener singing 'London is the place for me'. Recommended Watch Window: 00:00–03:45 • Lesson Phase: Historical Catalyst & Cultural Introduction. Tone Alert: Historic news footage capturing Caribbean optimism confronting post-war British austerity.",
           "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> What British passenger ship docked at Tilbury on 22 June 1948, bringing Caribbean immigrants to help rebuild post-war Britain?</li><li><strong>[02:15] Explain:</strong> Why did calypsonian Lord Kitchener compose and sing 'London is the place for me' upon stepping onto British soil?</li><li><strong>[03:30] Challenge:</strong> How did the 1948 British Nationality Act confer full British citizenship on subjects of the Commonwealth, and why did this legal reality clash with racial prejudice on the ground?</li></ol>",

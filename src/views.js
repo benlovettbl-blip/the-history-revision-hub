@@ -1788,7 +1788,8 @@ export async function renderLessonsView() {
         url.searchParams.set('view', 'lessons');
         url.searchParams.set('unit', unitId);
         const hasLessonZero = (lessonsList[0] && (lessonsList[0].id === 'lesson_0' || (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0'))));
-        const lessonQueryVal = hasLessonZero ? (index === 0 ? '0' : index) : (index + 1);
+        const lessonQueryVal =
+          sub.slug || (hasLessonZero ? (index === 0 ? '0' : index) : index + 1);
         url.searchParams.set('lesson', lessonQueryVal);
         window.history.pushState(
           {
@@ -1801,6 +1802,15 @@ export async function renderLessonsView() {
           url,
         );
       } catch (err) {}
+    }
+
+    // Update document.title so copied/shared browser links display the exact lesson & unit name
+    if (typeof document !== 'undefined') {
+      const cleanUnitName = data.title
+        ? data.title.replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '').trim()
+        : 'The History Revision Hub';
+      const cleanLessonTitle = (sub.title || `Lesson ${index + 1}`).trim();
+      document.title = `${cleanLessonTitle} — ${cleanUnitName}`;
     }
 
     // Update breadcrumbs to show Dashboard > Unit > Lesson Title
@@ -3060,17 +3070,21 @@ export async function renderMockExamsView() {
       mock.title.includes('Radar') ||
       mock.title.includes('Heat Map') ||
       mock.title.includes('Forecast');
-    const badgeText = mock.title.includes('NotebookLM')
-      ? 'PREDICTION MODEL'
-      : isRadarMock
-        ? 'RADAR SPEC GAP'
-        : `MOCK PAPER ${idx + 1}`;
+    const isWorkbookMiniMock = Boolean(mock.workbook_badge);
+    const badgeText = isWorkbookMiniMock
+      ? mock.workbook_badge
+      : mock.title.includes('NotebookLM')
+        ? 'PREDICTION MODEL'
+        : isRadarMock
+          ? 'RADAR SPEC GAP'
+          : `MOCK PAPER ${idx + 1}`;
+    const badgeBg = isWorkbookMiniMock ? '#047857' : '#000000';
 
     html += `
-      <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 14px;">
+      <div style="background: #ffffff; border: 2px solid ${isWorkbookMiniMock ? '#047857' : '#000000'}; border-radius: 4px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 14px;">
         <div>
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-            <span style="font-size: 0.7rem; font-weight: 800; background: #000000; color: #ffffff; padding: 3px 8px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px;">
+            <span style="font-size: 0.7rem; font-weight: 800; background: ${badgeBg}; color: #ffffff; padding: 3px 8px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px;">
               ${badgeText}
             </span>
             <span style="font-size: 0.8rem; font-weight: 800; color: #000000;">

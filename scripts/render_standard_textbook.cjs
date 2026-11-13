@@ -1609,7 +1609,7 @@ async function runKT2() {
   // Compile PDF with Puppeteer
   const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
-  const pdfPath = path.join(pdfOutputDir, 'cme_new_textbook_KT2_PUBLISHER.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'cme_new_textbook_KT2.pdf');
   const pilotPdfPath = path.join(pdfOutputDir, 'cme_new_textbook_KT2_PUBLISHER_PILOT.pdf');
 
   const browser = await puppeteer.launch({
@@ -1628,7 +1628,7 @@ async function runKT2() {
   });
 
   // Also copy to pilot path for backwards compatibility
-  fs.copyFileSync(pdfPath, pilotPdfPath);
+  if (path.resolve(pdfPath) !== path.resolve(pilotPdfPath)) fs.copyFileSync(pdfPath, pilotPdfPath);
 
   console.log(`🎉 Masterpiece PDF Textbook KT2 successfully compiled!`);
   console.log(`📄 PDF Output: ${pdfPath}`);

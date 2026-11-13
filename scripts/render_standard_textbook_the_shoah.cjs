@@ -1906,7 +1906,7 @@ async function main() {
 
   const publicHtmlPath = path.join(ROOT_DIR, 'public', 'units', 'the_shoah', 'textbook.html');
   const unitsHtmlPath = path.join(ROOT_DIR, 'units', 'the_shoah', 'textbook.html');
-  const pdfOutPath = path.join(ROOT_DIR, 'public', 'pdfs', 'the_shoah_textbook_FINAL.pdf');
+  const pdfOutPath = path.join(ROOT_DIR, 'public', 'pdfs', 'the_shoah_textbook.pdf');
   const pdfCompatPath = path.join(ROOT_DIR, 'public', 'pdfs', 'the_shoah_textbook.pdf');
 
   fs.writeFileSync(publicHtmlPath, html, 'utf8');
@@ -2006,9 +2006,9 @@ async function main() {
       printBackground: true,
       margin: { top: 0, right: 0, bottom: 0, left: 0 },
     });
-    fs.copyFileSync(pdfOutPath, pdfCompatPath);
-    const pdfV17Path = path.join(ROOT_DIR, 'public', 'pdfs', 'the_shoah_textbook_FINAL_V17.pdf');
-    fs.copyFileSync(pdfOutPath, pdfV17Path);
+    if (path.resolve(pdfOutPath) !== path.resolve(pdfCompatPath)) fs.copyFileSync(pdfOutPath, pdfCompatPath);
+    const pdfV17Path = path.join(ROOT_DIR, 'public', 'pdfs', 'the_shoah_textbook.pdf');
+    if (path.resolve(pdfOutPath) !== path.resolve(pdfV17Path)) fs.copyFileSync(pdfOutPath, pdfV17Path);
     console.log(`🎉 Successfully generated 12-Page Master Textbook PDF at: ${pdfOutPath}`);
     console.log(`📄 Copied to: ${pdfCompatPath} and ${pdfV17Path}`);
   } catch (err) {

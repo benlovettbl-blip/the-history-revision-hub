@@ -135,3 +135,4 @@ console.log(`✓ Archived ${archivedCount} legacy one-off scripts to archive/scr
 console.log(`✓ Archived ${screenshotCount} test screenshots to archive/scripts_legacy/screenshots/.`);
 console.log(`✓ Backup saved to ${BACKUP_ROOT}.`);
 console.log('=== PHASE 4 SCRIPTS ARCHIVING COMPLETED SUCCESSFULLY ===');
+

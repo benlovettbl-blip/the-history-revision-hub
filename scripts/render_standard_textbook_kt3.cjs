@@ -2,7 +2,7 @@
  * History Revision Hub — Publisher-Level Standard Textbook Engine
  *
  * Target: units/cme_new (Key Topic 3: The Search for Peace, 1974–1995)
- * Output: public/pdfs/cme_new_textbook_KT3_PUBLISHER.pdf
+ * Output: public/pdfs/cme_new_textbook_KT3.pdf
  * HTML:   public/units/cme_new/textbook_KT3_PUBLISHER.html
  *
  * Architectural Standards Enforced:
@@ -2617,7 +2617,7 @@ async function runKT3() {
   // Compile PDF with Puppeteer
   const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
-  const pdfPath = path.join(pdfOutputDir, 'cme_new_textbook_KT3_PUBLISHER.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'cme_new_textbook_KT3.pdf');
   const pilotPdfPath = path.join(pdfOutputDir, 'cme_new_textbook_KT3_PUBLISHER_PILOT.pdf');
 
   const browser = await puppeteer.launch({
@@ -2662,15 +2662,15 @@ async function runKT3() {
   });
 
   // Sync to standard aliases so all links in web app and drive update seamlessly
-  fs.copyFileSync(pdfPath, pilotPdfPath);
-  const aliasLegacy1 = path.join(pdfOutputDir, 'cme_textbook_KT3_PUBLISHER.pdf');
+  if (path.resolve(pdfPath) !== path.resolve(pilotPdfPath)) fs.copyFileSync(pdfPath, pilotPdfPath);
+  const aliasLegacy1 = path.join(pdfOutputDir, 'cme_textbook_KT3.pdf');
   const aliasLegacy2 = path.join(pdfOutputDir, 'cme_new_textbook_KT3.pdf');
   const aliasLegacy3 = path.join(pdfOutputDir, 'cme_textbook_KT3.pdf');
-  const aliasFinalV17 = path.join(pdfOutputDir, 'cme_new_textbook_KT3_FINAL_V17.pdf');
-  fs.copyFileSync(pdfPath, aliasLegacy1);
-  fs.copyFileSync(pdfPath, aliasLegacy2);
-  fs.copyFileSync(pdfPath, aliasLegacy3);
-  fs.copyFileSync(pdfPath, aliasFinalV17);
+  const aliasFinalV17 = path.join(pdfOutputDir, 'cme_new_textbook_KT3.pdf');
+  if (path.resolve(pdfPath) !== path.resolve(aliasLegacy1)) fs.copyFileSync(pdfPath, aliasLegacy1);
+  if (path.resolve(pdfPath) !== path.resolve(aliasLegacy2)) fs.copyFileSync(pdfPath, aliasLegacy2);
+  if (path.resolve(pdfPath) !== path.resolve(aliasLegacy3)) fs.copyFileSync(pdfPath, aliasLegacy3);
+  if (path.resolve(pdfPath) !== path.resolve(aliasFinalV17)) fs.copyFileSync(pdfPath, aliasFinalV17);
 
   console.log(`🎉 Masterpiece PDF Textbook KT3 successfully compiled!`);
   console.log(`📄 PDF Output: ${pdfPath}`);

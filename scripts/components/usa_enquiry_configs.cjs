@@ -23,7 +23,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The Ku Klux Klan (KKK) and white supremacist terror"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 1.1). In the drawing box, sketch a segregated bus or municipal waiting room sign alongside the scales of justice to symbolize the Plessy v. Ferguson doctrine.",
+      "timelineMission": "Turn to Page 2 (Key Topic 1.1). Use the Consolidate Station keywords to branch out 'Jim Crow, Plessy & Early Groups' and 'NAACP Legal & CORE Action' with disenfranchisement and Thurgood Marshall.",
       "stages": [
         {
           "dates": "1896",
@@ -100,7 +100,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The role of the NAACP and Thurgood Marshall"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 1.2). In the drawing box, sketch the 101st Airborne paratrooper escorting the Little Rock Nine past hostile crowds into Central High School.",
+      "timelineMission": "Turn to Page 2 (Key Topic 1.2). Use the Consolidate Station keywords to branch out 'Brown v. Topeka Ruling' and 'Little Rock Nine Crisis' with Chief Justice Warren, Orval Faubus, and the 101st Airborne.",
       "stages": [
         {
           "dates": "May 1954",
@@ -177,7 +177,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The Supreme Court ruling in Browder v. Gayle (1956)"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 1.3). In the drawing box, sketch Rosa Parks on the Montgomery city bus alongside domestic workers walking on foot during the 381-day boycott.",
+      "timelineMission": "Turn to Page 3 (Key Topic 1.3). Use the Consolidate Station keywords to branch out 'Montgomery Bus Boycott' and 'Browder v. Gayle & SCLC' with Rosa Parks, the 381-day MIA carpool, and Dr King.",
       "stages": [
         {
           "dates": "1 December 1955",
@@ -254,7 +254,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The 'Southern Manifesto' and state governors"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 1.4). In the drawing box, sketch the Capitol dome with 101 Southern congressmen signing the Southern Manifesto alongside a White Citizens’ Council placard.",
+      "timelineMission": "Turn to Page 3 (Key Topic 1.4). Use the Consolidate Station keywords to branch out 'White Citizens' Councils & Till' and 'Southern Manifesto & 1957 Act' with KKK terror and Dixiecrats.",
       "stages": [
         {
           "dates": "July 1954",
@@ -333,7 +333,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The Freedom Rides and the Interstate Commerce Commission (ICC)"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 2.1). In the drawing box, sketch the Greensboro Four sitting peacefully at the Woolworth’s lunch counter amidst angry white onlookers.",
+      "timelineMission": "Turn to Page 2 (Key Topic 2.1). Use the Consolidate Station keywords to branch out 'Greensboro Sit-Ins & SNCC' and 'Freedom Rides & Ole Miss' with Anniston, the ICC order, and James Meredith.",
       "stages": [
         {
           "dates": "February 1960",
@@ -410,7 +410,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The assassination of President John F. Kennedy (November 1963)"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 2.2). In the drawing box, sketch the Edmund Pettus Bridge in Selma alongside Dr King delivering his address before the Lincoln Memorial.",
+      "timelineMission": "Turn to Page 2 (Key Topic 2.2). Use the Consolidate Station keywords to branch out 'Birmingham, DC & 1964 Act' and 'Selma March & 1965 Voting Act' with Bull Connor and Edmund Pettus Bridge.",
       "stages": [
         {
           "dates": "April–May 1963",
@@ -487,7 +487,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The Mississippi Freedom Summer and the murder of civil rights workers (1964)"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 2.3). In the drawing box, sketch the raised clenched-fist salute of Tommie Smith and John Carlos at the 1968 Mexico City Olympic Games.",
+      "timelineMission": "Turn to Page 3 (Key Topic 2.3). Use the Consolidate Station keywords to branch out 'Malcolm X & Black Power' and 'Black Panthers & 1968 Salute' with Stokely Carmichael and survival programmes.",
       "stages": [
         {
           "dates": "1952–1964",
@@ -564,7 +564,7 @@ const USA_ENQUIRY_CONFIGS = {
         "Frustration with the limitations of non-violent civil rights laws in northern cities"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 2.4). In the drawing box, sketch smoke billowing from the Detroit riots of 1967 alongside the Kerner Commission Report on urban segregation.",
+      "timelineMission": "Turn to Page 3 (Key Topic 2.4). Use the Consolidate Station keywords to branch out 'Urban Riots & Kerner Report' and 'Chicago, MLK Murder & 1968 Act' with Watts, Detroit, and Fair Housing.",
       "stages": [
         {
           "dates": "11–17 August 1965",
@@ -643,7 +643,7 @@ const USA_ENQUIRY_CONFIGS = {
         "US support for Ngo Dinh Diem and the growth of the Vietcong"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 3.1). In the drawing box, sketch falling dominoes marked Vietnam, Laos, and Cambodia alongside a map of the 17th parallel partition line.",
+      "timelineMission": "Turn to Page 2 (Key Topic 3.1). Use the Consolidate Station keywords to branch out 'Geneva Accords & Diem Regime' and 'Vietcong & Strategic Hamlets' with Domino Theory and the 1963 Saigon coup.",
       "stages": [
         {
           "dates": "May–July 1954",
@@ -720,7 +720,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The attack on the US base at Pleiku (February 1965)"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 3.2). In the drawing box, sketch the destroyer USS Maddox in the Gulf of Tonkin alongside US Marines splashing ashore on Red Beach Two at Da Nang.",
+      "timelineMission": "Turn to Page 2 (Key Topic 3.2). Use the Consolidate Station keywords to branch out 'Gulf of Tonkin Resolution' and 'Rolling Thunder & Da Nang' with USS Maddox and US combat escalation.",
       "stages": [
         {
           "dates": "1963–1964",
@@ -797,7 +797,7 @@ const USA_ENQUIRY_CONFIGS = {
         "US Search and Destroy missions and chemical defoliants (Agent Orange)"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 3.3). In the drawing box, sketch a \"Huey\" helicopter over dense jungle canopy alongside an intricate underground Vietcong tunnel entrance.",
+      "timelineMission": "Turn to Page 3 (Key Topic 3.3). Use the Consolidate Station keywords to branch out 'Vietcong Tunnels & Guerrillas' and 'US Search & Destroy & Defoliants' with Ho Chi Minh Trail and Agent Orange.",
       "stages": [
         {
           "dates": "1965–1968",
@@ -874,7 +874,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The 'credibility gap' and Walter Cronkite's television report"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 3.4). In the drawing box, sketch television news cameras broadcasting the Tet Offensive battle inside the US Embassy courtyard in Saigon.",
+      "timelineMission": "Turn to Page 3 (Key Topic 3.4). Use the Consolidate Station keywords to branch out '1968 Tet Offensive Shock' and 'Nixon & Vietnamization Policy' with Walter Cronkite and phased troop withdrawals.",
       "stages": [
         {
           "dates": "31 January 1968",
@@ -953,7 +953,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The Kent State University shootings (May 1970)"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 4.1). In the drawing box, sketch the peace sign and a draft-card burning on a college campus alongside the Kent State memorial.",
+      "timelineMission": "Turn to Page 2 (Key Topic 4.1). Use the Consolidate Station keywords to branch out 'Media, Draft & Anti-War Wave' and 'My Lai Massacre & Kent State' with Lt Calley and Pentagon Papers.",
       "stages": [
         {
           "dates": "1965–1968",
@@ -1030,7 +1030,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The aim of achieving 'peace with honour'"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 4.2). In the drawing box, sketch President Nixon delivering his \"Silent Majority\" speech flanked by construction workers waving American flags.",
+      "timelineMission": "Turn to Page 2 (Key Topic 4.2). Use the Consolidate Station keywords to branch out 'Nixon's Silent Majority Speech' and 'Hard Hat Riots & War Hawks' with anti-communist patriotism and 1972 vote.",
       "stages": [
         {
           "dates": "1965–1969",
@@ -1107,7 +1107,7 @@ const USA_ENQUIRY_CONFIGS = {
         "The diplomatic rapprochement between the US, China, and the Soviet Union"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 4.3). In the drawing box, sketch the signing table at the Paris Peace Accords alongside American POWs stepping off the plane at Operation Homecoming.",
+      "timelineMission": "Turn to Page 3 (Key Topic 4.3). Use the Consolidate Station keywords to branch out 'Cambodia, Laos & Linebacker II' and '1973 Paris Peace Accords' with Kissinger, POWs, and War Powers Act.",
       "stages": [
         {
           "dates": "1969–1972",
@@ -1184,7 +1184,7 @@ const USA_ENQUIRY_CONFIGS = {
         "US congressional cuts to military and economic aid"
       ],
       "connectives": "One decisive reason was that... &bull; For example, this meant that... &bull; This directly triggered... &bull; Therefore, this was critical because... &bull; On the other hand, another factor was... &bull; Consequently, the ultimate result was...",
-      "timelineMission": "Turn to Pages 2–3 (Key Topic 4.4). In the drawing box, sketch an overloaded Huey helicopter evacuating personnel from the US Embassy rooftop during the Fall of Saigon.",
+      "timelineMission": "Turn to Page 3 (Key Topic 4.4). Use the Consolidate Station keywords to branch out 'Fall of Saigon (April 1975)' and 'Why the US Failed in Vietnam' with ARVN collapse, Congress aid cuts, and tactics.",
       "stages": [
         {
           "dates": "January–March 1975",

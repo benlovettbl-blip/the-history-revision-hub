@@ -268,7 +268,7 @@ async function runSync() {
         });
       }
       if (unitId === 'cme_new') {
-        console.log(`\n📚 Compiling KT1, KT2, and KT3 pupil workbooks for [cme_new]...`);
+        console.log(`\n📚 Compiling KT1, KT2, KT3, 48-page Master & Mark Schemes for [cme_new]...`);
         execSync(`node scripts/render_cme_kt1_twopage_workbook.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
@@ -278,6 +278,14 @@ async function runSync() {
           cwd: ROOT_DIR,
         });
         execSync(`node scripts/render_cme_kt3_twopage_workbook.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+        execSync(`node scripts/merge_cme_master_workbook.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+        execSync(`node scripts/render_cme_workbook_markschemes.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });

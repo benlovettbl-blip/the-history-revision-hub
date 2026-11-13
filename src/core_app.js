@@ -884,14 +884,21 @@ export function initializeApp(unitData) {
     // Render Lesson Content
     window.renderLessonByIndex = function (index, skipHistory = false) {
       if (unitData && unitData.lessons && unitData.lessons[index]) {
+        const activeLes = unitData.lessons[index];
         if (!skipHistory) {
           try {
             const url = new URL(window.location);
-            url.searchParams.set('lesson', index + 1);
+            url.searchParams.set('lesson', activeLes.slug || index + 1);
             history.pushState({ lessonIndex: index }, '', url);
           } catch (e) {
             console.warn('History routing disabled (e.g. file:// protocol):', e);
           }
+        }
+        if (typeof document !== 'undefined') {
+          const cleanUnitName = (unitData.title || 'The History Revision Hub')
+            .replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '')
+            .trim();
+          document.title = `${(activeLes.title || `Lesson ${index + 1}`).trim()} — ${cleanUnitName}`;
         }
         document.querySelectorAll('.lesson-link').forEach((l) => l.classList.remove('active'));
         // Try to activate the corresponding sidebar link

@@ -28,19 +28,19 @@ const TEXTBOOK_CONFIGS = [
     id: 'kt1',
     name: 'Key Topic 1: The Creation of the State of Israel (1945–1956)',
     htmlPath: path.join(ROOT_DIR, 'public', 'units', 'cme_new', 'textbook_KT1_PUBLISHER.html'),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT1_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT1.pdf'),
   },
   {
     id: 'kt2',
     name: 'Key Topic 2: The Escalating Conflict (1964–1973)',
     htmlPath: path.join(ROOT_DIR, 'public', 'units', 'cme_new', 'textbook_KT2_PUBLISHER.html'),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT2_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT2.pdf'),
   },
   {
     id: 'kt3',
     name: 'Key Topic 3: The Search for Peace (1974–1995)',
     htmlPath: path.join(ROOT_DIR, 'public', 'units', 'cme_new', 'textbook_KT3_PUBLISHER.html'),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT3_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT3.pdf'),
   },
 ];
 

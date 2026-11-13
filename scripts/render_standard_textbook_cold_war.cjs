@@ -1923,8 +1923,8 @@ async function main() {
     'textbook_PUBLISHER.html',
   );
   const unitsHtmlPath = path.join(ROOT_DIR, 'units', 'cold_war', 'textbook.html');
-  const pdfOutPath = path.join(ROOT_DIR, 'public', 'pdfs', 'cold_war_textbook_FINAL_V17.pdf');
-  const pdfCompatFinal = path.join(ROOT_DIR, 'public', 'pdfs', 'cold_war_textbook_FINAL.pdf');
+  const pdfOutPath = path.join(ROOT_DIR, 'public', 'pdfs', 'cold_war_textbook.pdf');
+  const pdfCompatFinal = path.join(ROOT_DIR, 'public', 'pdfs', 'cold_war_textbook.pdf');
   const pdfCompatBasic = path.join(ROOT_DIR, 'public', 'pdfs', 'cold_war_textbook.pdf');
 
   fs.writeFileSync(publicHtmlPath, html, 'utf8');
@@ -2034,8 +2034,8 @@ async function main() {
       printBackground: true,
       margin: { top: 0, right: 0, bottom: 0, left: 0 },
     });
-    fs.copyFileSync(pdfOutPath, pdfCompatFinal);
-    fs.copyFileSync(pdfOutPath, pdfCompatBasic);
+    if (path.resolve(pdfOutPath) !== path.resolve(pdfCompatFinal)) fs.copyFileSync(pdfOutPath, pdfCompatFinal);
+    if (path.resolve(pdfOutPath) !== path.resolve(pdfCompatBasic)) fs.copyFileSync(pdfOutPath, pdfCompatBasic);
     console.log(`🎉 Successfully generated 12-Page Master Textbook PDF at: ${pdfOutPath}`);
     console.log(`📄 Copied to: ${pdfCompatFinal} and ${pdfCompatBasic}`);
   } catch (err) {

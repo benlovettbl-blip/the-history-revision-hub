@@ -1644,7 +1644,7 @@
             <!-- 3 High-Visibility Workbook Word Boxes (Verbatim from Pupil Workbook) -->
             <div>
               <div class="workbook-spine-header">
-                <span id="pres-words-header-label"><i class="fa-solid fa-pen-fancy"></i> Left Workbook Page &bull; 3 Trigger Words:</span>
+                <span id="pres-words-header-label"><i class="fa-solid fa-book-open"></i> Key Historical Evidence:</span>
                 <div style="display: flex; align-items: center; gap: 8px;">
                   <span style="font-size: 0.68rem; color: #94a3b8; font-style: italic;">
                     (Tap card to reveal clue &amp; check off)
@@ -2886,12 +2886,12 @@
       document.getElementById('pres-enquiry-q').textContent = data.question;
       document.getElementById('pres-narrative-text').innerHTML = `<p class="pres-narrative-prose">${formatNarrativeWithHighlights(data.narrative, data.words)}</p>`;
 
-      // Dynamic Header Label (KS2: Key Terms & Vocabulary, KS3/GCSE: 3 Trigger Words)
+      // Dynamic Header Label (KS2: Key Terms & Vocabulary, GCSE/KS3: Key Historical Evidence)
       const wordsLabel = document.getElementById('pres-words-header-label');
       if (wordsLabel) {
         wordsLabel.innerHTML = window.currentIsKs2
-          ? `<i class="fa-solid fa-book-open"></i> Left Workbook Page &bull; Key Terms &amp; Vocabulary:`
-          : `<i class="fa-solid fa-pen-fancy"></i> Left Workbook Page &bull; 3 Trigger Words:`;
+          ? `<i class="fa-solid fa-book-open"></i> Key Terms &amp; Vocabulary:`
+          : `<i class="fa-solid fa-book-open"></i> Key Historical Evidence:`;
       }
 
       // Words / Key Terms (Default unrevealed, tap to reveal clue & check)

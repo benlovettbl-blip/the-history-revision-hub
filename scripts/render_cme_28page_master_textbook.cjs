@@ -362,8 +362,8 @@ const ENQUIRY_EDITORIAL = [
     shortTitle: 'The Course of the Six-Day War',
     enquiryQuestion:
       'Why was the Six-Day War decided in three hours, and did Nasser intend to fight?',
-    versoSubtitle: 'Part I: The May Crisis, Miscalculation & Operation Focus',
-    rectoSubtitle: 'Part II: Lightning Assault Across Three Fronts & The New Map',
+    versoSubtitle: 'Part I: The May Crisis, Straits of Tiran & Arab Encirclement',
+    rectoSubtitle: 'Part II: Operation Focus & Lightning Victory Across Three Fronts',
     rectoAnchor:
       'Total pre-emptive air dominance achieved in Operation Focus neutralized Arab numerical superiority, allowing rapid Israeli armored columns to shatter three armies on three fronts.',
     densityClass: 'spread-density-ultra-light',
@@ -797,7 +797,7 @@ function buildCmeHtml() {
     { num: 2, range: 'pp. 8–11 • Ref [3.1]–[4.8]', title: 'REFUGEES & SUEZ CRISIS', qKey: 'card2' },
     {
       num: 3,
-      range: 'pp. 12–15 • Ref [5.1]–[6.4]',
+      range: 'pp. 12–15 • Ref [5.1]–[6.5]',
       title: 'SIX-DAY WAR & ESCALATION',
       qKey: 'card3',
     },

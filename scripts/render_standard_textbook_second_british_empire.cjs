@@ -1369,8 +1369,8 @@ async function run() {
   console.log(`[OK] Master 8-Page Textbook PDF compiled to: ${canonicalPdfPath}`);
 
   // Mirror PDF to legacy alias if needed
-  const legacyPdfPath = path.join(pdfOutputDir, 'second_british_empire_textbook_FINAL_V17.pdf');
-  fs.copyFileSync(canonicalPdfPath, legacyPdfPath);
+  const legacyPdfPath = path.join(pdfOutputDir, 'second_british_empire_textbook.pdf');
+  if (path.resolve(canonicalPdfPath) !== path.resolve(legacyPdfPath)) fs.copyFileSync(canonicalPdfPath, legacyPdfPath);
   console.log(`[OK] Mirrored PDF to: ${legacyPdfPath}`);
 
   await browser.close();

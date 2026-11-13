@@ -32,8 +32,7 @@ console.log('=== SYNCHRONIZING ALL UNIT WORKBOOK MIRRORS ===\n');
 // 1. Edexcel Medicine
 remove('public/units/edexcel_medicine/workbook_${periodName}.pdf');
 remove('public/units/edexcel_medicine/workbook_key_individuals.pdf');
-copy('public/pdfs/edexcel_medicine_pupil_workbook_master.pdf', 'public/units/edexcel_medicine/workbook.pdf');
-copy('public/pdfs/edexcel_medicine_pupil_workbook_master.pdf', 'public/units/edexcel_medicine/pupil_workbook_master.pdf');
+remove('public/units/edexcel_medicine/pupil_workbook_master.pdf');
 copy('public/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf', 'public/units/edexcel_medicine/pupil_workbook_medieval.pdf');
 copy('public/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf', 'public/units/edexcel_medicine/workbook_KT1.pdf');
 copy('public/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf', 'public/units/edexcel_medicine/workbook_medieval.pdf');
@@ -48,9 +47,7 @@ copy('public/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf', 'public/un
 copy('public/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf', 'public/units/edexcel_medicine/workbook_western_front.pdf');
 
 // 2. Early Elizabethan England (eee)
-copy('public/pdfs/eee_pupil_workbook_master.pdf', 'public/units/eee/workbook.pdf');
-copy('public/pdfs/eee_pupil_workbook_master.pdf', 'public/units/eee/pupil_workbook.pdf');
-copy('public/pdfs/eee_pupil_workbook_master.pdf', 'public/units/eee/pupil_workbook_master.pdf');
+remove('public/units/eee/pupil_workbook_master.pdf');
 copy('public/pdfs/eee_pupil_workbook_KT1.pdf', 'public/units/eee/pupil_workbook_kt1.pdf');
 copy('public/pdfs/eee_pupil_workbook_KT1.pdf', 'public/units/eee/workbook_KT1.pdf');
 copy('public/pdfs/eee_pupil_workbook_KT2.pdf', 'public/units/eee/pupil_workbook_kt2.pdf');
@@ -59,16 +56,14 @@ copy('public/pdfs/eee_pupil_workbook_KT3.pdf', 'public/units/eee/pupil_workbook_
 copy('public/pdfs/eee_pupil_workbook_KT3.pdf', 'public/units/eee/workbook_KT3.pdf');
 
 // 3. Weimar & Nazi Germany
-copy('public/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf', 'public/units/weimar_nazi_germany/workbook.pdf');
-copy('public/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf', 'public/units/weimar_nazi_germany/pupil_workbook_master.pdf');
+remove('public/units/weimar_nazi_germany/pupil_workbook_master.pdf');
 copy('public/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf', 'public/units/weimar_nazi_germany/workbook_KT1.pdf');
 copy('public/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf', 'public/units/weimar_nazi_germany/workbook_KT2.pdf');
 copy('public/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf', 'public/units/weimar_nazi_germany/workbook_KT3.pdf');
 copy('public/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf', 'public/units/weimar_nazi_germany/workbook_KT4.pdf');
 
 // 4. USA (1954–1975)
-copy('public/pdfs/usa_pupil_workbook_master.pdf', 'public/units/usa/workbook.pdf');
-copy('public/pdfs/usa_pupil_workbook_master.pdf', 'public/units/usa/pupil_workbook_master.pdf');
+remove('public/units/usa/pupil_workbook_master.pdf');
 copy('public/pdfs/usa_pupil_workbook_KT1.pdf', 'public/units/usa/workbook_KT1.pdf');
 copy('public/pdfs/usa_pupil_workbook_KT2.pdf', 'public/units/usa/workbook_KT2.pdf');
 copy('public/pdfs/usa_pupil_workbook_KT3.pdf', 'public/units/usa/workbook_KT3.pdf');

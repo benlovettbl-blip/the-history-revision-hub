@@ -30,28 +30,28 @@ const TOPIC_CONFIGS = {
     title: 'Key Topic 1: The Creation of the State of Israel (1945–1956)',
     compilerScript: path.join(__dirname, 'render_standard_textbook_kt1.cjs'),
     htmlPath: path.join(ROOT_DIR, 'public', 'units', 'cme_new', 'textbook_KT1_PUBLISHER.html'),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT1_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT1.pdf'),
   },
   kt2: {
     id: 'kt2',
     title: 'Key Topic 2: The Escalating Conflict (1964–1973)',
     compilerScript: path.join(__dirname, 'render_standard_textbook_kt2.cjs'),
     htmlPath: path.join(ROOT_DIR, 'public', 'units', 'cme_new', 'textbook_KT2_PUBLISHER.html'),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT2_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT2.pdf'),
   },
   kt3: {
     id: 'kt3',
     title: 'Key Topic 3: The Search for Peace (1974–1995)',
     compilerScript: path.join(__dirname, 'render_standard_textbook_kt3.cjs'),
     htmlPath: path.join(ROOT_DIR, 'public', 'units', 'cme_new', 'textbook_KT3_PUBLISHER.html'),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT3_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'cme_new_textbook_KT3.pdf'),
   },
   great_war: {
     id: 'great_war',
     title: 'KS3: Causes of the Great War (1871–1914)',
     compilerScript: path.join(__dirname, 'render_standard_textbook_great_war.cjs'),
     htmlPath: path.join(ROOT_DIR, 'public', 'units', 'great_war', 'textbook_PUBLISHER.html'),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'great_war_textbook_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'great_war_textbook.pdf'),
   },
   early_modern_world: {
     id: 'early_modern_world',
@@ -64,7 +64,7 @@ const TOPIC_CONFIGS = {
       'early_modern_world',
       'textbook_PUBLISHER.html',
     ),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'early_modern_world_textbook_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'early_modern_world_textbook.pdf'),
   },
   industrialisation_and_empire: {
     id: 'industrialisation_and_empire',
@@ -81,7 +81,7 @@ const TOPIC_CONFIGS = {
       ROOT_DIR,
       'public',
       'pdfs',
-      'industrialisation_and_empire_textbook_PUBLISHER.pdf',
+      'industrialisation_and_empire_textbook.pdf',
     ),
   },
   water_and_sanitation: {
@@ -95,7 +95,7 @@ const TOPIC_CONFIGS = {
       'water_and_sanitation',
       'textbook_PUBLISHER.html',
     ),
-    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'water_and_sanitation_textbook_PUBLISHER.pdf'),
+    pdfPath: path.join(ROOT_DIR, 'public', 'pdfs', 'water_and_sanitation_textbook.pdf'),
   },
 };
 

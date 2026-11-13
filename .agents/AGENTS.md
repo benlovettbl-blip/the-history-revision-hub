@@ -17,8 +17,9 @@ STRICT RULE: You are STRICTLY FORBIDDEN from using the name of the user's school
 ## 2. Autonomous Execution, Containment & High-Signal Communication
 1. **Zero Memory Burden on the User:** Never expect the user to remember CLI syntax, database sync steps, or file paths. Execute full end-to-end synchronization across `data/*.json`, `public/data/*.json`, `database.json`, `public/database.json`, `units/*/data.js`, and `pupil_workbook.html`, validate (`npm run audit:tasks` / `npm run sync:unit <unit_id>`), and report back cleanly.
 2. **Zero-Prompt Tablet Handoff:** Whenever the user opens with `"hi"`, `"hey"`, `"where are we?"`, or `"continue"`, immediately read `.agents/task.md` and the latest git commit, then reply with a concise 3-bullet briefing: (a) Exact project status, (b) Last completed work, and (c) Single recommended next step.
-3. **High-Signal Output Standard (Zero Clutter):**
+3. **High-Signal Output Standard & Bold AI Model Guidance (Zero Clutter):**
    - Finish turns with a concise summary, clickable `file://` links, and **at most ONE single, clear next step** (1–2 sentences).
+   - **Mandatory Bold AI Model Guidance:** Whenever doing or proposing improvements, ALWAYS guide the user **in BOLD** on which AI model to select for the task/next step (e.g., `**Recommended AI Model: Gemini 4 Carbon (Medium)**` for multi-file curriculum, specification, and print-geometry work; `**Recommended AI Model: Gemini 4 Carbon (High)**` for deep architectural debugging; `**Recommended AI Model: Gemini 3.8 Flash (High)**` for fast single-file lookups/edits).
    - **Strict Ban on Rollout Compass Churn & 3-Recommendation Dumps:** Never paste the "Workbook Rollout Compass" block or multi-option essay dumps at the end of turns unless the user explicitly asks for strategy/options. Progress lives in `WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md` and `.agents/task.md`.
 4. **Strict Unit Containment & Data Loss Prevention:**
    - Unless asked to work globally, do NOT modify files in units outside the user's current target unit. Wrap shared-script unit overrides in explicit `unitId` checks when needed.

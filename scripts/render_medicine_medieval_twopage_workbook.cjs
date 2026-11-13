@@ -118,7 +118,7 @@ const medievalConfigs = [
     wordBank:
       'divine punishment &bull; original sin &bull; flagellants &bull; tithes &bull; pilgrimage &bull; Canterbury &bull; Galen &bull; Theory of the Four Humours &bull; miasma &bull; foul vapours &bull; astrology &bull; 1345 planetary conjunction',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 1.1). In the drawing box, sketch a monk copying Galen’s medical book in a scriptorium. Add two speech bubbles explaining why the Church banned new medical experiments and imprisoned Roger Bacon in 1277.',
+      'Open the Consolidate Station in the app and branch out KT1.1 on Pages 2–3: map Church manuscript control and Roger Bacon’s arrest (left) against pilgrimage and prayer (right).',
     fourMark: {
       type: 'Similarity',
       question:
@@ -217,7 +217,7 @@ const medievalConfigs = [
     wordBank:
       'Theory of the Four Humours &bull; Theory of Opposites &bull; Claudius Galen &bull; Catholic Church &bull; papal authority &bull; heresy &bull; Roger Bacon &bull; monastery hospitals &bull; care not cure &bull; lack of dissection',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 1.2). In the drawing box, sketch a four-part diagram of the Four Humours (Blood, Phlegm, Yellow Bile, Black Bile) showing their seasons and qualities. Annotate Galen’s Theory of Opposites alongside a flask of urine.',
+      'Open the Consolidate Station in the app and branch out KT1.2 on Pages 2–3: map humoral imbalance and miasma (left) against Galen’s Theory of Opposites and uroscopy charts (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -316,7 +316,7 @@ const medievalConfigs = [
     wordBank:
       'Claudius Galen &bull; Theory of Opposites &bull; phlebotomy (bloodletting) &bull; fleam &bull; leeches &bull; purging &bull; emetics &bull; laxatives &bull; clysters &bull; monastic hospitals &bull; care not cure &bull; religious penance &bull; herbal theriac',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 1.3). In the drawing box, sketch a barber-surgeon using a fleam and pewter bleeding bowl, alongside a flagellant whip. Label how one treated the body and the other treated the soul.',
+      'Open the Consolidate Station in the app and branch out KT1.3 on Pages 2–3: map Zodiac Man bloodletting and purging (left) against herbal theriac and Regimen Sanitatis rules (right).',
     fourMark: {
       type: 'Similarity',
       question:
@@ -418,7 +418,7 @@ const medievalConfigs = [
     wordBank:
       'care not cure &bull; monastic hospitals &bull; St Bartholomew’s (1123) &bull; infirmarer &bull; prayer and salvation &bull; exclusion of infectious disease &bull; Lazar houses &bull; university physicians &bull; apothecaries &bull; barber-surgeons &bull; wise women',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 1.4). In the drawing box, sketch the interior of a monastic hospital ward showing rows of beds facing a chapel altar. Annotate why monks prioritized prayer over medical surgery.',
+      'Open the Consolidate Station in the app and branch out KT1.4 on Pages 2–3: map university physicians vs wise women and explain why monastic hospitals practiced ‘care not cure’.',
     fourMark: {
       type: 'Difference',
       question:
@@ -520,7 +520,7 @@ const medievalConfigs = [
     wordBank:
       'Black Death (1348) &bull; Great Plague (1665) &bull; divine punishment &bull; flagellants &bull; miasma &bull; sweet pomanders &bull; Yersinia pestis &bull; Four Humours &bull; Thomas Sydenham &bull; Observationes Medicae &bull; species of disease',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 1.5). In the drawing box, sketch the arrival of a trading cog at Melcombe Regis carrying rats and fleas, alongside an emergency mass burial pit at East Smithfield.',
+      'Open the Consolidate Station in the app and branch out KT1.5 on Pages 2–3: map 1348 plague causes and symptoms (left) against flagellants, quarantine, and Edward III’s street-cleaning order (right).',
     fourMark: {
       type: 'Similarity',
       question:
@@ -869,160 +869,158 @@ function buildMedievalTwoPageWorkbook(unitData, period) {
   });
 
   // ====================================================================
-  // PAGES 2–3: PANORAMIC LIVING TIMELINE (8 HISTORICAL MILESTONES)
+  // PAGES 2–3: CHRONOLOGY REVISION ANCHOR & CENTER-SPINE MIND-MAP CANVAS
+  // (Pure Specification Headings, Zero Giveaways, Edge-to-Edge Open Space)
   // ====================================================================
+  const medievalSpineLeft = [
+    {
+      date: 'c.1250',
+      title: 'Church Control &amp; Galenic Dogma',
+      kt: 'KT 1.1',
+      leftCue: '◂ Sin, Astrology &amp; Censorship',
+      rightCue: 'Pilgrimage, Prayer &amp; Galen ▸',
+    },
+    {
+      date: 'c.1280',
+      title: 'Four Humours &amp; Theory of Opposites',
+      kt: 'KT 1.2',
+      leftCue: '◂ Imbalance &amp; Bad Air (Miasma)',
+      rightCue: 'Opposites &amp; Uroscopy Charts ▸',
+    },
+    {
+      date: 'c.1300',
+      title: 'Phlebotomy, Purging &amp; Regimens',
+      kt: 'KT 1.3',
+      leftCue: '◂ Zodiac Man &amp; Bloodletting',
+      rightCue: 'Herbal Theriac &amp; Regimen Rules ▸',
+    },
+    {
+      date: 'c.1320',
+      title: 'Physicians, Apothecaries &amp; Barbers',
+      kt: 'KT 1.4',
+      leftCue: '◂ Elite University Physicians',
+      rightCue: 'Barbers, Apothecaries &amp; Women ▸',
+    },
+  ];
+
+  const medievalSpineRight = [
+    {
+      date: 'c.1340',
+      title: 'Monastic Hospitals: ‘Care Not Cure’',
+      kt: 'KT 1.4',
+      leftCue: '◂ Infectious Patients Excluded',
+      rightCue: 'Hospitality, Warmth &amp; Prayer ▸',
+    },
+    {
+      date: '1345',
+      title: 'Planetary Alignment &amp; Miasma Fears',
+      kt: 'KT 1.1 &bull; 1.5',
+      leftCue: '◂ Mars, Jupiter &amp; Saturn Align',
+      rightCue: 'Corrupted Air &amp; Divine Wrath ▸',
+    },
+    {
+      date: '1348',
+      title: 'The Black Death Hits England',
+      kt: 'KT 1.5',
+      leftCue: '◂ Bubonic &amp; Pneumonic Plague',
+      rightCue: 'Flagellants, Lancing &amp; Herbs ▸',
+    },
+    {
+      date: '1349',
+      title: 'Edward III’s Cleanliness &amp; Quarantine',
+      kt: 'KT 1.5',
+      leftCue: '◂ Overflowing Burial Trenches',
+      rightCue: 'Street Cleaning &amp; Quarantine ▸',
+    },
+  ];
+
+  const renderSpineNodes = (nodes) =>
+    nodes
+      .map(
+        (n) => `
+        <div style="position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 0; padding: 6px 0;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;">
+            <div style="flex: 1; text-align: right; font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 700; color: #000000; text-transform: uppercase; letter-spacing: 0.25px; white-space: nowrap;">
+              ${n.leftCue}
+            </div>
+            <div style="background: #000000; color: #ffffff; padding: 4.5px 14px; border-radius: 20px; font-family: 'Inter', sans-serif; font-size: 8.3pt; font-weight: 900; text-align: center; white-space: nowrap; display: inline-flex; align-items: center; gap: 7px; box-shadow: 0 0 0 6px #ffffff; border: 1.5px solid #000000;">
+              <span style="background: #ffffff; color: #000000; padding: 1.5px 6.5px; border-radius: 10px; font-size: 7.1pt; font-weight: 900;">${n.date}</span>
+              <span>${n.title}</span>
+              <span style="font-size: 6.8pt; font-weight: 700; color: #ffffff;">(${n.kt})</span>
+            </div>
+            <div style="flex: 1; text-align: left; font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 700; color: #000000; text-transform: uppercase; letter-spacing: 0.25px; white-space: nowrap;">
+              ${n.rightCue}
+            </div>
+          </div>
+        </div>`,
+      )
+      .join('');
+
   html += `
+  <!-- PAGE 2: CHRONOLOGY REVISION ANCHOR PART 1 -->
   <div class="page page-container verso-page" id="page-2" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11pt; color: #000000; margin: 0; font-weight: 800;">
-            Living Timeline &bull; Part 1: Medieval Ideas &amp; Medical Hierarchy (c1250–c1350)
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-            Chronological Inquiry &bull; Milestones 1–4
+    <div class="page-body-full" style="position: relative;">
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+            CHRONOLOGY SPREAD &bull; PART 1
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            MEDIEVAL BRITAIN &bull; SPECIFICATION ANCHORS (c1250–c1340)
           </span>
         </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 3px 6px; margin-bottom: 5px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Complete each milestone sketchpad using dual-coding (combining visual storytelling symbols, causal arrows, and dates) to master the chronological spine across the centre-fold.
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+          Supernatural Dogma, Humoral Theory &amp; Medieval Medical Care
+        </h2>
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
+          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Continuity &amp; Church Control to the left &bull; Treatments &amp; Care to the right).
         </div>
       </div>
 
-      <!-- 4 Milestones with Open Drawing Area (Zero Box Lines) -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 1: c. 1250 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              c. 1250 &bull; The Church &amp; The Monopoly on Medical Learning
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.1</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            The Catholic Church controls all English universities (Oxford, Cambridge) and hospital foundations. Monks hand-copy medical manuscripts in scriptoria, preserving Galen’s anatomical writings because his teleological view—that the body had a single divine Creator—aligned with Christian dogma.
-          </p>
-        </div>
+      <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
+        <div style="position: absolute; left: 50%; top: 15px; bottom: 15px; width: 2.5px; background: #000000; transform: translateX(-50%); z-index: 1;"></div>
+        ${renderSpineNodes(medievalSpineLeft)}
+      </div>
 
-        <!-- Milestone 2: 1277 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1277 &bull; The Imprisonment of Roger Bacon
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.1</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Franciscan friar and Oxford scholar Roger Bacon is imprisoned by church leaders for heresy after writing that physicians should conduct original scientific experiments rather than blindly copying Galen. This imprisonment effectively halts independent anatomical inquiry for over two centuries.
-          </p>
-        </div>
-
-        <!-- Milestone 3: c. 1300 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              c. 1300 &bull; The Diagnostic Tools: Matula Flasks &amp; The Zodiac Man
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.2</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Physicians practice uroscopy using glass matula flasks, comparing urine colour, density, and smell against 20-shade charts to diagnose humoral imbalance. They carry Vademecum pocketbooks containing the Zodiac Man to determine safe planetary alignments for phlebotomy (bloodletting).
-          </p>
-        </div>
-
-        <!-- Milestone 4: c. 1320 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              c. 1320 &bull; The Medical Hierarchy: Physicians, Barber-Surgeons &amp; Apothecaries
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.4</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            A rigid division of medical labour establishes in England. Fewer than 100 elite university-trained physicians diagnose wealthy nobility. Town apothecaries mix theriac and herbal compounds, while lower-status barber-surgeons perform tooth-pulling, wound-cautery, and bloodletting.
-          </p>
-        </div>
-
+      <div style="display: flex; justify-content: flex-end; align-items: center; padding: 0 2px 1px 0;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000; text-transform: uppercase;">
+          Specification Spine Continues to Hospitals &amp; The Black Death (Page 3) ➔
+        </span>
       </div>
 
       ${renderFooterStrip(2, 'Roger Bacon spent years in a prison cell for suggesting doctors should actually test things. Remember that when your teacher asks you to write an extra paragraph!', 20)}
     </div>
   </div>
 
-  <!-- PAGE 3: LIVING TIMELINE PART 2 -->
+  <!-- PAGE 3: CHRONOLOGY REVISION ANCHOR PART 2 -->
   <div class="page page-container recto-page" id="page-3" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11pt; color: #000000; margin: 0; font-weight: 800;">
-            Living Timeline &bull; Part 2: Hospitals, Planetary Conjunctions &amp; The Black Death (c1345–1350)
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-            Chronological Inquiry &bull; Milestones 5–8
+    <div class="page-body-full" style="position: relative;">
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+            CHRONOLOGY SPREAD &bull; PART 2
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            MEDIEVAL BRITAIN &bull; SPECIFICATION ANCHORS (c1340–1350)
           </span>
         </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 3px 6px; margin-bottom: 5px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Complete each milestone sketchpad using dual-coding (combining visual storytelling symbols, causal arrows, and dates) to master the chronological spine across the centre-fold.
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+          ‘Care Not Cure’ Hospitals &amp; The Black Death Crisis (1348–1349)
+        </h2>
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
+          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Perceived Causes &amp; Limits to the left &bull; Responses &amp; Action to the right).
         </div>
       </div>
 
-      <!-- 4 Milestones with Open Drawing Area (Zero Box Lines) -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 5: c. 1350 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              c. 1350 &bull; Monastic Hospitals: The Era of ‘Care Not Cure’
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.4</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Over 1,200 hospitals run by monks and nuns operate in England (e.g. St Bartholomew’s, 1123). Patients receive clean bedding, warmth, food, and continuous prayer facing a chapel altar. Zero surgery or medical cure is attempted; lepers and plague victims are strictly barred.
-          </p>
-        </div>
+      <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
+        <div style="position: absolute; left: 50%; top: 15px; bottom: 15px; width: 2.5px; background: #000000; transform: translateX(-50%); z-index: 1;"></div>
+        ${renderSpineNodes(medievalSpineRight)}
+      </div>
 
-        <!-- Milestone 6: 1345 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1345 &bull; The Great Planetary Conjunction in Aquarius
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.5</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            In March 1345, Mars, Jupiter, and Saturn align in Aquarius. University of Paris physicians state this celestial conjunction drew up poisonous vapours from the earth, corrupting the air with deadly miasma, preparing Europe for the Black Death.
-          </p>
-        </div>
-
-        <!-- Milestone 7: 1348 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1348 &bull; The Black Death Reaches Melcombe Regis, Dorset
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.5</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            In June 1348, the pestilence arrives on trade ships carrying black rats and fleas. The dual epidemic—bubonic plague (flea bites, agonizing buboes) and pneumonic plague (airborne coughing droplets)—kills 30–50% of England’s population within 18 months.
-          </p>
-        </div>
-
-        <!-- Milestone 8: 1349 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1349 &bull; King Edward III’s Cleanliness Order &amp; East Smithfield Mass Pits
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 1.5</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Alarmed by rotting waste and stench, Edward III orders London streets cleared of dung to remove miasma. Churchyards overflow; emergency mass burial trenches are dug outside city walls at East Smithfield to bury hundreds of corpses daily.
-          </p>
-        </div>
-
+      <div style="display: flex; justify-content: flex-end; align-items: center; padding: 0 2px 1px 0;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000; text-transform: uppercase;">
+          Key Topic 1 Specification Spine Complete ➔
+        </span>
       </div>
 
       ${renderFooterStrip(3, 'King Edward III ordered Londoners to clean human filth off the streets in 1349. Outstanding for civic smell, totally useless against Yersinia pestis fleas.', 20)}
@@ -1099,7 +1097,7 @@ ${part1TaskLines}
       <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 4px 8px; background: #ffffff; display: flex; justify-content: space-between; align-items: center; margin-top: 2px;">
         <div style="display: flex; align-items: center; gap: 8px;">
           <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; white-space: nowrap;">
-            Timeline Mission
+            Mind-Map Mission
           </span>
           <span style="font-family: 'Georgia', serif; font-size: 7.4pt; line-height: 1.25; color: #000000;">
             ${cfg.timelineMission}

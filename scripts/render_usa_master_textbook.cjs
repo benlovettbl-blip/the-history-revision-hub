@@ -2554,7 +2554,7 @@ async function compileUsaTextbook(targetKt = 'kt1') {
 
   printSpaceAuditReport(auditReport, `textbook_${ktUpper}_PUBLISHER.html`);
 
-  const pdfName = `usa_textbook_${ktUpper}_FINAL_V17.pdf`;
+  const pdfName = `usa_textbook_${ktUpper}.pdf`;
   const targetPdfPath = path.join(ROOT_DIR, 'public', 'pdfs', pdfName);
   const pubUnitPdfPath = path.join(outDir, `textbook_${ktUpper}_PUBLISHER.pdf`);
 
@@ -2567,7 +2567,7 @@ async function compileUsaTextbook(targetKt = 'kt1') {
   });
 
   // Mirror PDF
-  fs.copyFileSync(targetPdfPath, pubUnitPdfPath);
+  if (path.resolve(targetPdfPath) !== path.resolve(pubUnitPdfPath)) fs.copyFileSync(targetPdfPath, pubUnitPdfPath);
   const publicPdfsDir = path.join(ROOT_DIR, 'public', 'pdfs', 'usa');
   if (!fs.existsSync(publicPdfsDir)) fs.mkdirSync(publicPdfsDir, { recursive: true });
   fs.copyFileSync(targetPdfPath, path.join(publicPdfsDir, pdfName));

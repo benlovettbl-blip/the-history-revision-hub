@@ -1436,7 +1436,7 @@ async function run() {
   const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
 
-  const pdfPath = path.join(pdfOutputDir, 'australia_textbook_FINAL_V17.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'australia_textbook.pdf');
   await page.pdf({
     path: pdfPath,
     format: 'A4',
@@ -1448,7 +1448,7 @@ async function run() {
 
   // Mirror PDF
   const standardPdfPath = path.join(pdfOutputDir, 'australia_textbook.pdf');
-  fs.copyFileSync(pdfPath, standardPdfPath);
+  if (path.resolve(pdfPath) !== path.resolve(standardPdfPath)) fs.copyFileSync(pdfPath, standardPdfPath);
   console.log(`[OK] Mirrored PDF to: ${standardPdfPath}`);
 
   await browser.close();

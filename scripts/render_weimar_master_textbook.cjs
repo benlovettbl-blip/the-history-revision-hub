@@ -2310,7 +2310,7 @@ async function renderTextbookPdf(targetKt = 'kt1') {
     ROOT_DIR,
     'public',
     'pdfs',
-    `weimar_nazi_germany_textbook_${targetKt.toUpperCase()}_FINAL_V17.pdf`,
+    `weimar_nazi_germany_textbook_${targetKt.toUpperCase()}.pdf`,
   );
 
   fs.writeFileSync(htmlPathUnit, htmlContent, 'utf8');
@@ -2433,9 +2433,9 @@ async function renderTextbookPdf(targetKt = 'kt1') {
     margin: { top: 0, right: 0, bottom: 0, left: 0 },
   });
 
-  fs.copyFileSync(pdfPathUnit, pdfPathPdfs);
-  fs.copyFileSync(pdfPathUnit, pdfPathLegacy);
-  fs.copyFileSync(pdfPathUnit, pdfPathFinalV17);
+  if (path.resolve(pdfPathUnit) !== path.resolve(pdfPathPdfs)) fs.copyFileSync(pdfPathUnit, pdfPathPdfs);
+  if (path.resolve(pdfPathUnit) !== path.resolve(pdfPathLegacy)) fs.copyFileSync(pdfPathUnit, pdfPathLegacy);
+  if (path.resolve(pdfPathUnit) !== path.resolve(pdfPathFinalV17)) fs.copyFileSync(pdfPathUnit, pdfPathFinalV17);
   console.log(`✅ Compiled Master PDF: ${pdfPathUnit}`);
   console.log(`✅ Mirrored to Public PDFs:`);
   console.log(`   - ${pdfPathPdfs}`);
@@ -2446,7 +2446,7 @@ async function renderTextbookPdf(targetKt = 'kt1') {
   const driveDest = `G:\\My Drive\\AAMX\\Dep File\\02. GCSE (Years 10-11)\\Paper 3 - Weimar and Nazi Germany\\Weimar and Nazi Germany Master Textbook (${targetKt.toUpperCase()}).pdf`;
   if (fs.existsSync(path.dirname(driveDest))) {
     try {
-      fs.copyFileSync(pdfPathUnit, driveDest);
+      if (path.resolve(pdfPathUnit) !== path.resolve(driveDest)) fs.copyFileSync(pdfPathUnit, driveDest);
       console.log(`✅ Synchronized directly to Google Drive Department File: ${driveDest}`);
     } catch (e) {
       console.warn(`  ⚠️ Could not copy to Drive: ${e.message}`);

@@ -2,7 +2,7 @@
  * History Revision Hub — Publisher-Level Master Textbook Engine
  *
  * Target: units/early_modern_world (KS3 Year 8: The Early Modern World, 1450–1750)
- * Output: public/pdfs/early_modern_world_textbook_PUBLISHER.pdf
+ * Output: public/pdfs/early_modern_world_textbook.pdf
  * HTML:   public/units/early_modern_world/textbook_PUBLISHER.html
  *
  * Architectural Standards Enforced:
@@ -1812,7 +1812,7 @@ async function runEarlyModernWorld() {
     ROOT_DIR,
     'public',
     'pdfs',
-    'early_modern_world_textbook_PUBLISHER.pdf',
+    'early_modern_world_textbook.pdf',
   );
 
   fs.mkdirSync(path.dirname(publicHtmlPath), { recursive: true });
@@ -1882,22 +1882,22 @@ async function runEarlyModernWorld() {
     ROOT_DIR,
     'public',
     'pdfs',
-    'early_modern_world_textbook_FINAL_V17.pdf',
+    'early_modern_world_textbook.pdf',
   );
   const prodPdf = path.join(ROOT_DIR, 'public', 'pdfs', 'early_modern_world_textbook.pdf');
   const distPdfV17 = path.join(
     ROOT_DIR,
     'dist',
     'pdfs',
-    'early_modern_world_textbook_FINAL_V17.pdf',
+    'early_modern_world_textbook.pdf',
   );
   const distPdf = path.join(ROOT_DIR, 'dist', 'pdfs', 'early_modern_world_textbook.pdf');
 
   fs.mkdirSync(path.dirname(distPdfV17), { recursive: true });
-  fs.copyFileSync(outPdfPath, prodPdfV17);
-  fs.copyFileSync(outPdfPath, prodPdf);
-  fs.copyFileSync(outPdfPath, distPdfV17);
-  fs.copyFileSync(outPdfPath, distPdf);
+  if (path.resolve(outPdfPath) !== path.resolve(prodPdfV17)) fs.copyFileSync(outPdfPath, prodPdfV17);
+  if (path.resolve(outPdfPath) !== path.resolve(prodPdf)) fs.copyFileSync(outPdfPath, prodPdf);
+  if (path.resolve(outPdfPath) !== path.resolve(distPdfV17)) fs.copyFileSync(outPdfPath, distPdfV17);
+  if (path.resolve(outPdfPath) !== path.resolve(distPdf)) fs.copyFileSync(outPdfPath, distPdf);
   console.log(`✅ Synchronized to production V17 PDF: ${prodPdfV17}`);
   console.log(`✅ Synchronized to dist PDF: ${distPdfV17}`);
 
@@ -1906,7 +1906,7 @@ async function runEarlyModernWorld() {
   if (fs.existsSync(gDriveFolder)) {
     try {
       const gDriveMaster = path.join(gDriveFolder, 'Early Modern World Master Textbook.pdf');
-      fs.copyFileSync(outPdfPath, gDriveMaster);
+      if (path.resolve(outPdfPath) !== path.resolve(gDriveMaster)) fs.copyFileSync(outPdfPath, gDriveMaster);
       console.log(`✅ Synchronized to Google Drive: ${gDriveMaster}`);
     } catch (gErr) {
       console.warn(

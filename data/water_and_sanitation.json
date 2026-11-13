@@ -928,7 +928,7 @@
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=7QBbM5kb7YY",
           "title": "The Engineering Genius of the Roman Aqueducts | Grand Structures",
-          "duration": "4 mins 15 secs",
+          "duration": "5 mins 26 secs",
           "pathway": "Starter Hook",
           "teacher_guidance": "Recommended Watch Window: 00:20–04:00 | Lesson Phase: Lesson Hook | Tone Alert: Explores gravity flow, inverted siphons, and Roman hydraulic engineering.",
           "viewing_task": "[01:00] Quick Check: How did Roman engineers use a slight, continuous downward gradient (1:200 to 1:1000) to transport millions of gallons of mountain water across miles into cities?\n[03:15] Hinge Question: Were Roman aqueducts built primarily to safeguard public health, or as political prestige projects to showcase imperial wealth and pacify citizens with luxuries?",
@@ -939,7 +939,7 @@
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=5XgyIg5QKgE",
           "title": "The Amazing Engineering of Roman Sewers: The Cloaca Maxima",
-          "duration": "5 mins 20 secs",
+          "duration": "6 mins 39 secs",
           "pathway": "Core Enquiry",
           "teacher_guidance": "Recommended Watch Window: 00:30–04:50 | Lesson Phase: Infrastructure Analysis | Tone Alert: Explores the Great Sewer of ancient Rome and communal multiseat latrines.",
           "viewing_task": "[01:15] Recall: What was the original purpose of the Cloaca Maxima in ancient Rome (draining local marshland between hills)?\n[02:45] Explain: How did Roman communal latrines operate, and what hygiene hazards were caused by the shared sponge on a stick ('tersorium')?\n[04:10] Challenge: Despite aqueducts and sewers, why does modern palaeopathology reveal high rates of whipworm and gut parasites among Roman urban populations?",
@@ -950,9 +950,9 @@
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=P5ieIbInFpg",
           "title": "Gladiator (2000) | Official Movie Trailer (Paramount / Ridley Scott)",
-          "duration": "2 mins 20 secs",
+          "duration": "1 min 35 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning cinematic depiction of ancient Rome's grand architecture and social hierarchy.",
+          "teacher_guidance": "Recommended Watch Window: 00:00–01:35 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning cinematic depiction of ancient Rome's grand architecture and social hierarchy.",
           "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film visually contrast the marble monuments, fountains, and orderly streets of Rome with the gritty, disease-ridden reality of the Roman urban mob?",
           "model_answer": "Cinematic Discussion Focus: The trailer contrasts grand Colosseum spectacles and imperial marble palaces with the crowded, volatile tenements (insulae) of the ordinary plebeians, illustrating the stark divide between Roman imperial propaganda and daily life."
         },
@@ -2320,25 +2320,25 @@
       },
       "video": [
         {
-          "id": "NBxLWTyUJ0w",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=NBxLWTyUJ0w",
-          "title": "Medieval Sanitation, Gong Farmers & Street Filth | Explainer",
-          "duration": "3 mins 02 secs",
+          "id": "ey7vvsxmkhk",
+          "url": "https://www.youtube.com/watch?v=ey7vvsxmkhk",
+          "title": "Simple History: Gong Farmer – Medieval Cesspits, Privies & Urban Sanitation",
+          "duration": "4 mins 59 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:00–03:02 | Lesson Phase: Lesson Hook | Tone Alert: Humorous yet historically rigorous examination of medieval cesspits and nightsoil men.",
-          "viewing_task": "[00:50] Quick Check: Who were 'gong farmers' in medieval towns, and at what time of night were they legally allowed to work?\n[02:15] Hinge Question: Why were medieval towns so filthy when town councils repeatedly passed fines against throwing butchery waste and human feces into streets?",
-          "model_answer": "Quick Check: Men hired to shovel out human waste from privies and cesspits, restricted to working only between 9pm and 5am ('nightsoil').\nHinge Question: Town councils had no permanent police force or municipal street cleaners to enforce laws; populations grew faster than primitive infrastructure could cope with, so residents ignored fines."
+          "teacher_guidance": "Engaging animated Simple History study of medieval gong farmers—night-soil workers legally restricted to working after curfew to dig out overflowing urban cesspits—and how borough councils tried (and struggled) to police street waste. Recommended Watch Window: 00:00–04:59 • Lesson Phase: Starter Hook (0–5m).",
+          "viewing_task": "<ol><li><strong>[00:45] Recall:</strong> What was a medieval 'gong farmer' paid to dig out, and why were they only allowed to work at night?</li><li><strong>[02:15] Explain:</strong> Explain two dangers gong farmers faced from asphyxiating gases and collapsing cesspits—and why they were paid relatively high wages despite low status.</li><li><strong>[03:50] Challenge:</strong> Does the existence of paid gong farmers and town fines prove medieval people cared about cleanliness, or show why medieval infrastructure failed?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> They emptied human waste from household privies and stone-lined cesspits, working strictly at night (often 9 p.m. to 5 a.m.) to spare townspeople the foul smell and miasma.</li><li><strong>Explain:</strong> Workers risked suffocating on toxic methane/ammonia fumes or drowning if rotten floorboards collapsed (like Richard the Raker in 1326), so boroughs had to pay high wages to attract workers.</li><li><strong>Challenge:</strong> It proves medieval townspeople disliked filth and passed laws to manage waste, but without Roman-style pressurized sewers, porous cesspits still leaked sewage straight into nearby drinking wells.</li></ol>"
         },
         {
           "id": "nVJV8iEAm88",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=nVJV8iEAm88",
           "title": "Medieval Monasteries: Engineering Water and Cleanliness | BBC Bitesize",
-          "duration": "9 mins 15 secs",
+          "duration": "5 mins 13 secs",
           "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:30–08:00 | Lesson Phase: Exceptional Cleanliness | Tone Alert: Explores monastic water systems at Canterbury and Fountains Abbey.",
-          "viewing_task": "[01:30] Recall: Why were medieval Christian monasteries so much cleaner and healthier than nearby towns?\n[04:15] Explain: How did monastic water systems separate incoming clean spring water for drinking from outflowing water used to flush the reredorter (latrines)?\n[07:00] Challenge: Why were the sophisticated sanitary engineering techniques developed in wealthy monasteries not adopted in ordinary medieval cities?",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:13 | Lesson Phase: Exceptional Cleanliness | Tone Alert: Explores monastic water systems at Canterbury and Fountains Abbey.",
+          "viewing_task": "[01:18] Recall: Why were medieval Christian monasteries so much cleaner and healthier than nearby towns?\n[02:36] Explain: How did monastic water systems separate incoming clean spring water for drinking from outflowing water used to flush the reredorter (latrines)?\n[03:54] Challenge: Why were the sophisticated sanitary engineering techniques developed in wealthy monasteries not adopted in ordinary medieval cities?",
           "model_answer": "Recall: Monks valued physical cleanliness as a sign of spiritual purity ('cleanliness is next to godliness') and possessed the wealth, land, and literacy to design hydraulic systems.\nExplain: Water was channeled from uphill springs through lead pipes and settling tanks, supplying drinking water first, then kitchens, laundry, and finally flushing latrines out to the river.\nChallenge: Towns lacked unified ownership and single wealthy authorities; narrow streets were congested with private properties, and town burgesses were unwilling to levy heavy taxes for collective infrastructure."
         },
         {
@@ -2346,9 +2346,9 @@
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=JkOwLCib1Tk",
           "title": "Black Death (2010) | Medieval Living Conditions & Pestilence Trailer",
-          "duration": "2 mins 18 secs",
+          "duration": "1 min 12 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:18 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Visceral, authentic depiction of 14th-century village life, mud, isolation, and plague fear.",
+          "teacher_guidance": "Recommended Watch Window: 00:00–01:12 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Visceral, authentic depiction of 14th-century village life, mud, isolation, and plague fear.",
           "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film visually portray the vulnerability of medieval communities with no knowledge of bacteria or microscopic vectors of disease?",
           "model_answer": "Cinematic Discussion Focus: The trailer shows terrified villagers burning pitch barrels and carrying smoking herbs to ward off 'corrupt air' (miasma), illustrating how medieval medical theory left populations utterly defenceless against Yersinia pestis."
         },
@@ -2357,10 +2357,10 @@
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=YhsPPBGtquo",
           "title": "The Black Death (1348): Causes, Symptoms & Medieval Responses | Timelines.tv",
-          "duration": "11 mins 40 secs",
+          "duration": "6 mins 33 secs",
           "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–11:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Rigorous documentary examining contemporary primary chronicles and archaeology.",
-          "viewing_task": "[02:15] Recall: What symptoms characterized bubonic plague (painful buboes in armpits and groin) and pneumonic plague?\n[05:30] Explain: How did the medieval Church interpret the Black Death as divine punishment for sinful mankind, leading to flagellant processions?\n[08:45] Challenge: How did the complete failure of both Galenic herbal medicine and Church prayer to stop the plague begin to undermine blind medieval faith in traditional authorities?",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:33 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Rigorous documentary examining contemporary primary chronicles and archaeology.",
+          "viewing_task": "[01:38] Recall: What symptoms characterized bubonic plague (painful buboes in armpits and groin) and pneumonic plague?\n[03:16] Explain: How did the medieval Church interpret the Black Death as divine punishment for sinful mankind, leading to flagellant processions?\n[04:54] Challenge: How did the complete failure of both Galenic herbal medicine and Church prayer to stop the plague begin to undermine blind medieval faith in traditional authorities?",
           "model_answer": "Recall: High fever, vomiting, agonizing black swellings (buboes), followed by internal bleeding and dark blotches beneath the skin.\nExplain: Priests preached that human sin had brought God's righteous wrath; brotherhoods of flagellants whipped themselves with iron-tipped cords to appease God's anger.\nChallenge: Because holy priests died at the same horrifying rate as ordinary sinners, and doctors reciting Galen were useless, educated people began to question whether ancient authorities held all the answers, sowing early seeds of scientific inquiry."
         }
       ],
@@ -3726,15 +3726,15 @@
       },
       "video": [
         {
-          "id": "LBvOZO1gmOE",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=LBvOZO1gmOE",
-          "title": "Sir John Harington and the Early Flush Toilet | History Explainer",
-          "duration": "4 mins 52 secs",
+          "id": "V0fN3LHLux8",
+          "url": "https://www.youtube.com/watch?v=V0fN3LHLux8",
+          "title": "Sir John Harington & The Early Flush Toilet (1596) | Heroes of Progress",
+          "duration": "2 mins 26 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–04:15 | Lesson Phase: Lesson Hook | Tone Alert: Explores Queen Elizabeth I's godson Sir John Harington and his 1596 water closet.",
-          "viewing_task": "[01:15] Quick Check: What invention did Sir John Harington design in 1596 called the 'Ajax'?\n[03:45] Hinge Question: Why did it take nearly 250 years for Harington's flush toilet to be widely adopted across British homes?",
-          "model_answer": "Quick Check: The first valve-operated flush toilet, complete with an overhead water cistern and discharge pipe.\nHinge Question: Flush toilets required continuous running piped water and sewer drainage to function; without municipal water mains and underground sewers, flush toilets simply dumped sewage into indoor cesspits, making smells and filth far worse."
+          "teacher_guidance": "Explains how Queen Elizabeth I's godson Sir John Harington invented the 'Ajax' valve-flush water closet at Kelston in 1596—and why a brilliant mechanical invention failed to transform Early Modern towns without mains water pipes or underground sewers. Recommended Watch Window: 00:00–02:26 • Lesson Phase: Starter Hook (0–5m).",
+          "viewing_task": "<ol><li><strong>[00:35] Recall:</strong> Who invented the 'Ajax' flushable water closet in 1596, and which monarch had one installed at Richmond Palace?</li><li><strong>[01:20] Explain:</strong> Explain how Harington's cistern-and-valve mechanism flushed waste out of the pan.</li><li><strong>[01:55] Challenge:</strong> Why couldn't Harington's 1596 flush toilet improve public health for ordinary families in Stuart London?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Sir John Harington invented the 'Ajax' in 1596, installing one for his godmother, Queen Elizabeth I, at Richmond Palace.</li><li><strong>Explain:</strong> Pulling a handle opened a brass valve at the bottom of the pan while releasing stored water from an overhead cistern to wash waste away.</li><li><strong>Challenge:</strong> An isolated invention cannot work without public infrastructure: Early Modern towns lacked piped mains water pressure and underground sewers, so most households continued using chamber pots and cesspits.</li></ol>"
         },
         {
           "id": "6cMhO7JpaYE",
@@ -3752,22 +3752,22 @@
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=IwB1ha70dRA",
           "title": "The Great Plague (1665) | Timeline Documentary",
-          "duration": "48 mins 00 secs",
+          "duration": "1 hr 17 mins",
           "pathway": "Documentary Depth",
           "teacher_guidance": "Recommended Watch Window: 10:00–35:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: In-depth historical investigation into the last major bubonic plague outbreak in England.",
           "viewing_task": "[14:00] Recall: What public health quarantine measures did the Mayor of London enforce in 1665 when a house became infected?\n[24:00] Explain: How did wealthy elites (including King Charles II and physicians) flee the capital, abandoning the impoverished working class to perish in locked houses?\n[36:00] Challenge: In what ways did the 1665 plague reveal that public health responses had barely improved since the 1348 Black Death 300 years earlier?",
           "model_answer": "Recall: Watchmen were posted outside bolted doors 24 hours a day with red crosses and the words 'Lord have mercy on us', locking healthy family members inside with the dying.\nExplain: The wealthy fled to country estates; poor workers had no savings and were trapped in crowded parishes like St Giles-in-the-Fields, suffering over 100,000 deaths.\nChallenge: Authorities still blamed corrupt air (miasma), slaughtered 40,000 harmless domestic dogs and cats (which allowed the true vector—fleas on black rats—to multiply exponentially), and relied on bloodletting and useless herbal pomanders."
         },
         {
-          "id": "oHhqzoqFqew",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=oHhqzoqFqew",
-          "title": "Living Conditions in Early Modern Towns | History Explainer",
-          "duration": "4 mins 17 secs",
+          "id": "LBvOZO1gmOE",
+          "url": "https://www.youtube.com/watch?v=LBvOZO1gmOE",
+          "title": "Simple History: The Great Plague of London (1665–66) – Early Modern Urban Filth & Orders",
+          "duration": "3 mins 01 sec",
           "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–04:00 | Lesson Phase: Urban Realities | Tone Alert: Detailed analysis of wooden overhanging jetties, open kennels, and polluted town pumps.",
-          "viewing_task": "[01:10] Recall: What were 'overhanging jetties', and how did they block sunlight and ventilation in early modern streets?\n[02:30] Explain: How did town brewers, tanners, and dyers dump industrial poisons and animal carcasses directly into urban rivers?\n[03:45] Challenge: How did the Great Fire of London (1666) inadvertently provide an opportunity to modernize streets with wider brick construction and cleaner drainage?",
-          "model_answer": "Recall: Upper stories of timber houses built jutting out over the street, nearly touching across narrow alleys and trapping foul stenches.\nExplain: Tanners soaked hides in animal urine and dog feces while butchers slaughtered animals in open streets, washing blood directly into surface gutters ('kennels') that emptied into drinking streams.\nChallenge: The fire destroyed over 13,000 crowded wooden houses; Parliament passed the Rebuilding of London Act 1667, banning timber jetties and mandating wider streets paved with stone and brick buildings with deeper cellars."
+          "teacher_guidance": "Animated study of overcrowded, timber-framed 17th-century London streets during the 1665 Great Plague, showing overflowing kennels, rat-infested rubbish heaps, and Mayor Lawrence's civic Plague Orders (watchmen, red crosses, dead-carts, and street fires). Recommended Watch Window: 00:00–03:01 • Lesson Phase: Core Enquiry Evidence.",
+          "viewing_task": "<ol><li><strong>[00:40] Recall:</strong> Why had Early Modern London become far more overcrowded and filthy by 1665 than medieval towns?</li><li><strong>[01:35] Explain:</strong> Explain two civic emergency rules enforced by London authorities during the 1665 Great Plague to try to stop the epidemic spreading.</li><li><strong>[02:25] Challenge:</strong> Why did burning coal fires in the streets and killing stray dogs and cats fail to stop the 1665 Plague?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Rapid population growth crammed hundreds of thousands of people into narrow, unsewered timber tenements where chamber pots and butcher waste piled up in open street gutters ('kennels').</li><li><strong>Explain:</strong> Infected houses were locked in 40-day quarantine guarded by watchmen with a painted red cross, nightly dead-carts buried victims in mass plague pits, and public gatherings were banned.</li><li><strong>Challenge:</strong> Driven by belief in miasma (bad air), Londoners burned tar barrels and slaughtered 40,000 dogs and 200,000 cats—unwittingly killing the very predators that hunted the flea-carrying black rats spreading Yersinia pestis.</li></ol>"
         }
       ],
       "quick_quiz": [

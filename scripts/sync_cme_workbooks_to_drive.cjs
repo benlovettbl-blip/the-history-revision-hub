@@ -13,7 +13,7 @@ if (!fs.existsSync(DRIVE_BASE)) {
 const copyList = [
   // 1. Year 10 (GCSE) -> Paper 2 - Conflict in the Middle East
   {
-    src: 'cme_new_pupil_workbook_KT1_FINAL_V17.pdf',
+    src: 'cme_new_pupil_workbook_KT1.pdf',
     dest: path.join(
       DRIVE_BASE,
       'Year 10 (GCSE)',
@@ -22,7 +22,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_pupil_workbook_KT2_FINAL_V17.pdf',
+    src: 'cme_new_pupil_workbook_KT2.pdf',
     dest: path.join(
       DRIVE_BASE,
       'Year 10 (GCSE)',
@@ -31,7 +31,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_pupil_workbook_KT3_FINAL_V17.pdf',
+    src: 'cme_new_pupil_workbook_KT3.pdf',
     dest: path.join(
       DRIVE_BASE,
       'Year 10 (GCSE)',
@@ -40,7 +40,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_textbook_KT1_FINAL_V17.pdf',
+    src: 'cme_new_textbook_KT1.pdf',
     dest: path.join(
       DRIVE_BASE,
       'Year 10 (GCSE)',
@@ -49,7 +49,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_textbook_KT2_FINAL_V17.pdf',
+    src: 'cme_new_textbook_KT2.pdf',
     dest: path.join(
       DRIVE_BASE,
       'Year 10 (GCSE)',
@@ -58,7 +58,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_textbook_KT3_FINAL_V17.pdf',
+    src: 'cme_new_textbook_KT3.pdf',
     dest: path.join(
       DRIVE_BASE,
       'Year 10 (GCSE)',
@@ -123,7 +123,7 @@ const copyList = [
 
   // 2. 02. GCSE (Years 10-11) -> Paper 2 - Conflict in the Middle East -> 01. Pupil Workbooks
   {
-    src: 'cme_new_pupil_workbook_KT1_FINAL_V17.pdf',
+    src: 'cme_new_pupil_workbook_KT1.pdf',
     dest: path.join(
       DRIVE_BASE,
       '02. GCSE (Years 10-11)',
@@ -133,7 +133,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_pupil_workbook_KT2_FINAL_V17.pdf',
+    src: 'cme_new_pupil_workbook_KT2.pdf',
     dest: path.join(
       DRIVE_BASE,
       '02. GCSE (Years 10-11)',
@@ -143,7 +143,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_pupil_workbook_KT3_FINAL_V17.pdf',
+    src: 'cme_new_pupil_workbook_KT3.pdf',
     dest: path.join(
       DRIVE_BASE,
       '02. GCSE (Years 10-11)',
@@ -175,7 +175,7 @@ const copyList = [
 
   // 3. 02. GCSE (Years 10-11) -> Paper 2 - Conflict in the Middle East -> 02. Master Textbooks
   {
-    src: 'cme_new_textbook_KT1_FINAL_V17.pdf',
+    src: 'cme_new_textbook_KT1.pdf',
     dest: path.join(
       DRIVE_BASE,
       '02. GCSE (Years 10-11)',
@@ -185,7 +185,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_textbook_KT2_FINAL_V17.pdf',
+    src: 'cme_new_textbook_KT2.pdf',
     dest: path.join(
       DRIVE_BASE,
       '02. GCSE (Years 10-11)',
@@ -195,7 +195,7 @@ const copyList = [
     ),
   },
   {
-    src: 'cme_new_textbook_KT3_FINAL_V17.pdf',
+    src: 'cme_new_textbook_KT3.pdf',
     dest: path.join(
       DRIVE_BASE,
       '02. GCSE (Years 10-11)',

@@ -2,7 +2,7 @@
  * History Revision Hub — Publisher-Level Standard Textbook Engine
  *
  * Target: units/great_war (KS3: Causes of the Great War, 1871–1914)
- * Output: public/pdfs/great_war_textbook_PUBLISHER.pdf
+ * Output: public/pdfs/great_war_textbook.pdf
  * HTML:   public/units/great_war/textbook_PUBLISHER.html
  *
  * Architectural & Pedagogical Standards Enforced:
@@ -2441,7 +2441,7 @@ async function runGreatWar() {
   // Compile PDF with Puppeteer
   const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
-  const pdfPath = path.join(pdfOutputDir, 'great_war_textbook_PUBLISHER.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'great_war_textbook.pdf');
 
   let browser;
   try {

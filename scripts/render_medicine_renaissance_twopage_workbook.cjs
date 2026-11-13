@@ -119,7 +119,7 @@ const renaissanceConfigs = [
     wordBank:
       'Gutenberg press (c1440) &bull; William Caxton (1476) &bull; clerical monopoly &bull; vernacular translations &bull; Royal Society (1660) &bull; Royal Charter (1662) &bull; Nullius in Verba &bull; Philosophical Transactions (1665) &bull; peer review &bull; animalcules &bull; Robert Hooke (1665)',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 2.1). In the drawing box, sketch Caxton’s printing press beside the Royal Society’s coat of arms (motto: Nullius in Verba). Annotate how printing removed the Church’s control over book production.',
+      'Open the Consolidate Station in the app and branch out KT2.1 on Pages 2–3: map Gutenberg’s press and humanism (left) against the Royal Society’s peer review and Hooke’s Micrographia (right).',
     fourMark: {
       type: 'Similarity',
       question:
@@ -220,7 +220,7 @@ const renaissanceConfigs = [
     wordBank:
       'Thomas Sydenham &bull; English Hippocrates &bull; bedside clinical observation &bull; Observationes Medicae (1676) &bull; species of disease &bull; scarlet fever vs. measles &bull; Cinchona bark (quinine) &bull; cool therapy for smallpox &bull; laudanum',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 2.2). In the drawing box, sketch Sydenham taking clinical bedside notes beside a patient with cool fresh air flowing through an open window. Annotate why his classification of diseases was revolutionary.',
+      'Open the Consolidate Station in the app and branch out KT2.2 on Pages 2–3: map Sydenham’s bedside symptom notes (left) against Observationes Medicae and Peruvian bark for malaria (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -323,7 +323,7 @@ const renaissanceConfigs = [
     wordBank:
       'Andreas Vesalius &bull; Padua University &bull; human dissection &bull; De Humani Corporis Fabrica (1543) &bull; anatomical woodcuts &bull; jawbone (mandible) &bull; breastbone segments &bull; Barbary apes vs. humans &bull; Thomas Geminus',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 2.3). In the drawing box, sketch Vesalius standing over an anatomical dissection table holding a scalpel. Annotate two specific errors of Galen that he disproved.',
+      'Open the Consolidate Station in the app and branch out KT2.3 on Pages 2–3: map Vesalius’s human dissections at Padua (left) against Galen’s corrected errors and practical treatment limits (right).',
     fourMark: {
       type: 'Similarity',
       question:
@@ -423,7 +423,7 @@ const renaissanceConfigs = [
     wordBank:
       'William Harvey &bull; De Motu Cordis (1628) &bull; circulation of the blood &bull; mechanical pump &bull; one-way pocket valves &bull; tied-arm ligature experiment &bull; quantitative calculation &bull; Marcello Malpighi (1661) &bull; capillaries',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 2.4). In the drawing box, sketch Harvey’s tied-arm ligature experiment showing blood pooling at the valves. Annotate his mathematical calculation proving Galen’s liver-blood theory was impossible.',
+      'Open the Consolidate Station in the app and branch out KT2.4 on Pages 2–3: map Harvey’s refutation of Galen’s liver theory (left) against his mechanical pump proof and Malpighi’s capillaries (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -525,7 +525,7 @@ const renaissanceConfigs = [
     wordBank:
       'Great Plague of London (1665) &bull; Lord Mayor’s orders &bull; searchers of the dead &bull; red crosses &bull; "Lord have mercy upon us" &bull; quarantine &bull; pest houses &bull; slaughter of 40,000 dogs and cats &bull; smoking tar barrels &bull; dead carts',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 2.5). In the drawing box, sketch a London front door marked with a red cross and guarded by a watchman. Annotate two continuities and two differences between 1348 and 1665.',
+      'Open the Consolidate Station in the app and branch out KT2.5 on Pages 2–3: map 1665 continuities with 1348 (left) against the Lord Mayor’s quarantine orders, pest houses, and watchmen (right).',
     fourMark: {
       type: 'Difference',
       question:
@@ -875,161 +875,158 @@ function buildRenaissanceTwoPageWorkbook(unitData, period) {
   });
 
   // ====================================================================
-  // PAGES 2–3: PANORAMIC LIVING TIMELINE (8 HISTORICAL MILESTONES)
-  // OPEN DRAWING CANVAS (ZERO ENCLOSING BOX BORDERS)
+  // PAGES 2–3: CHRONOLOGY REVISION ANCHOR & CENTER-SPINE MIND-MAP CANVAS
+  // (Pure Specification Headings, Zero Giveaways, Edge-to-Edge Open Space)
   // ====================================================================
+  const renaissanceSpineLeft = [
+    {
+      date: 'c.1440',
+      title: 'Printing Press &amp; Humanist Enquiry',
+      kt: 'KT 2.1',
+      leftCue: '◂ Church Monopoly Broken',
+      rightCue: 'Mass-Printed Medical Texts ▸',
+    },
+    {
+      date: '1543',
+      title: 'Andreas Vesalius: De Fabrica',
+      kt: 'KT 2.3',
+      leftCue: '◂ Human Dissection vs Galen',
+      rightCue: '300+ Errors Corrected &amp; Limits ▸',
+    },
+    {
+      date: '1628',
+      title: 'William Harvey: Blood Circulation',
+      kt: 'KT 2.4',
+      leftCue: '◂ Galen’s Liver Myth Refuted',
+      rightCue: 'Heart Pump &amp; One-Way Valves ▸',
+    },
+    {
+      date: '1660',
+      title: 'The Royal Society &amp; Nullius in Verba',
+      kt: 'KT 2.1',
+      leftCue: '◂ Charles II Royal Charter',
+      rightCue: 'Peer Review &amp; Transactions ▸',
+    },
+  ];
+
+  const renaissanceSpineRight = [
+    {
+      date: '1661–65',
+      title: 'Malpighi’s Capillaries &amp; Hooke',
+      kt: 'KT 2.1 &bull; 2.4',
+      leftCue: '◂ Early Compound Microscopes',
+      rightCue: 'Capillaries &amp; Micrographia ▸',
+    },
+    {
+      date: '1665',
+      title: 'Great Plague: Continuity of Ideas',
+      kt: 'KT 2.5',
+      leftCue: '◂ Miasma, Sin &amp; Astrology',
+      rightCue: 'Transference, Herbs &amp; Fires ▸',
+    },
+    {
+      date: '1665',
+      title: 'Lord Mayor’s Orders &amp; Quarantine',
+      kt: 'KT 2.5',
+      leftCue: '◂ Watchmen &amp; Red Cross Doors',
+      rightCue: 'Pest Houses &amp; Animal Culls ▸',
+    },
+    {
+      date: '1676',
+      title: 'Thomas Sydenham: Observationes',
+      kt: 'KT 2.2',
+      leftCue: '◂ Clinical Bedside Symptoms',
+      rightCue: 'Disease Species &amp; Quinine ▸',
+    },
+  ];
+
+  const renderSpineNodes = (nodes) =>
+    nodes
+      .map(
+        (n) => `
+        <div style="position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 0; padding: 6px 0;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;">
+            <div style="flex: 1; text-align: right; font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 700; color: #000000; text-transform: uppercase; letter-spacing: 0.25px; white-space: nowrap;">
+              ${n.leftCue}
+            </div>
+            <div style="background: #000000; color: #ffffff; padding: 4.5px 14px; border-radius: 20px; font-family: 'Inter', sans-serif; font-size: 8.3pt; font-weight: 900; text-align: center; white-space: nowrap; display: inline-flex; align-items: center; gap: 7px; box-shadow: 0 0 0 6px #ffffff; border: 1.5px solid #000000;">
+              <span style="background: #ffffff; color: #000000; padding: 1.5px 6.5px; border-radius: 10px; font-size: 7.1pt; font-weight: 900;">${n.date}</span>
+              <span>${n.title}</span>
+              <span style="font-size: 6.8pt; font-weight: 700; color: #ffffff;">(${n.kt})</span>
+            </div>
+            <div style="flex: 1; text-align: left; font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 700; color: #000000; text-transform: uppercase; letter-spacing: 0.25px; white-space: nowrap;">
+              ${n.rightCue}
+            </div>
+          </div>
+        </div>`,
+      )
+      .join('');
+
   html += `
+  <!-- PAGE 2: CHRONOLOGY REVISION ANCHOR PART 1 -->
   <div class="page page-container verso-page" id="page-2" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11pt; color: #000000; margin: 0; font-weight: 800;">
-            Living Timeline &bull; Part 1: Scientific Breakthroughs &amp; Anatomy (c1440–1628)
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-            Chronological Inquiry &bull; Milestones 1–4
+    <div class="page-body-full" style="position: relative;">
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+            CHRONOLOGY SPREAD &bull; PART 1
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            MEDICAL RENAISSANCE &bull; SPECIFICATION ANCHORS (c1440–1660)
           </span>
         </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 3px 6px; margin-bottom: 5px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Complete each milestone sketchpad using dual-coding (combining visual storytelling symbols, causal arrows, and dates) to master the chronological spine across the centre-fold.
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+          New Spirit of Enquiry, Human Dissection &amp; Blood Circulation
+        </h2>
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
+          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Challenges to Tradition to the left &bull; Breakthroughs &amp; Limits to the right).
         </div>
       </div>
 
-      <!-- 4 Milestones with Open Drawing Area (Zero Box Lines) -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 1: c. 1440–1476 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              c. 1440–1476 &bull; The Printing Press: Gutenberg &amp; William Caxton
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.1</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Johannes Gutenberg invents movable metal type in Mainz; William Caxton establishes England’s first press at Westminster in 1476. Medical texts can now be mass-produced with identical diagrams, shattering the Catholic Church’s clerical monopoly on manuscript copying.
-          </p>
-        </div>
+      <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
+        <div style="position: absolute; left: 50%; top: 15px; bottom: 15px; width: 2.5px; background: #000000; transform: translateX(-50%); z-index: 1;"></div>
+        ${renderSpineNodes(renaissanceSpineLeft)}
+      </div>
 
-        <!-- Milestone 2: 1543 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1543 &bull; Andreas Vesalius Publishes De Humani Corporis Fabrica
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.3</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            At the University of Padua, professor Andreas Vesalius carries out human dissections personally. The Fabric of the Human Body features precise woodcuts disproving over 200 of Galen’s errors, proving the human jawbone is one piece and the breastbone has three segments.
-          </p>
-        </div>
-
-        <!-- Milestone 3: 1628 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1628 &bull; William Harvey Publishes De Motu Cordis
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.4</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Royal physician William Harvey publishes On the Motion of the Heart. Through dissection of cold-blooded reptiles and mathematical calculations, he proves that the heart acts as a mechanical pump recirculating blood continuously through one-way pocket valves.
-          </p>
-        </div>
-
-        <!-- Milestone 4: 1660 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1660 &bull; Foundation of the Royal Society &amp; Nullius in Verba
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.1</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            The Royal Society is founded at Gresham College, London, receiving a royal charter from Charles II in 1662. Adopting the motto Nullius in Verba (‘Take nobody’s word for it’), it launches Philosophical Transactions in 1665 to publish and peer-review scientific experiments.
-          </p>
-        </div>
-
+      <div style="display: flex; justify-content: flex-end; align-items: center; padding: 0 2px 1px 0;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000; text-transform: uppercase;">
+          Specification Spine Continues to Sydenham &amp; 1665 Great Plague (Page 3) ➔
+        </span>
       </div>
 
       ${renderFooterStrip(2, 'Vesalius proved Galen had been dissecting pigs, dogs, and apes for 1,300 years. The human jawbone is one piece, not two.', 20)}
     </div>
   </div>
 
-  <!-- PAGE 3: LIVING TIMELINE PART 2 -->
+  <!-- PAGE 3: CHRONOLOGY REVISION ANCHOR PART 2 -->
   <div class="page page-container recto-page" id="page-3" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11pt; color: #000000; margin: 0; font-weight: 800;">
-            Living Timeline &bull; Part 2: Observation, Plagues &amp; Microscopic Discoveries (1661–1676)
-          </h2>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-            Chronological Inquiry &bull; Milestones 5–8
+    <div class="page-body-full" style="position: relative;">
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+            CHRONOLOGY SPREAD &bull; PART 2
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            MEDICAL RENAISSANCE &bull; SPECIFICATION ANCHORS (1661–1676)
           </span>
         </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 3px 6px; margin-bottom: 5px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Dual-Coding Protocol:</strong> Draw visual symbols for clinical bedside observation, London pest houses, microscope animalcules, and Sydenham’s disease classification across the timeline below.
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+          Optical Proof, Bedside Observation &amp; The Great Plague of London (1665)
+        </h2>
+        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
+          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Continuity in Ideas to the left &bull; Change in Practice to the right).
         </div>
       </div>
 
-      <!-- 4 Milestones with Open Drawing Area (Zero Box Lines) -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 5: 1661 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1661 &bull; Marcello Malpighi Observes Capillaries Under the Microscope
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.4</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Using an early compound microscope, Italian biologist Marcello Malpighi observes blood passing through microscopic capillaries connecting arteries to veins in a frog’s lungs. This provides the definitive optical proof for William Harvey’s circulatory model.
-          </p>
-        </div>
+      <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
+        <div style="position: absolute; left: 50%; top: 15px; bottom: 15px; width: 2.5px; background: #000000; transform: translateX(-50%); z-index: 1;"></div>
+        ${renderSpineNodes(renaissanceSpineRight)}
+      </div>
 
-        <!-- Milestone 6: 1665 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1665 &bull; The Great Plague of London: Red Crosses &amp; Pest Houses
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.5</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Bubonic plague strikes London, killing approximately 100,000 people (20% of the city). The Lord Mayor orders watchmen to lock infected families inside houses marked with red crosses and ‘Lord have mercy upon us’. Over 40,000 stray dogs and cats are slaughtered.
-          </p>
-        </div>
-
-        <!-- Milestone 7: 1665 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1665 &bull; Robert Hooke Publishes Micrographia
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.1</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Robert Hooke presents detailed microscopic drawings of fleas, cork cells, and fly eyes to the Royal Society. While microscopes prove the existence of an invisible world, lenses are too weak to reveal bacteria or germs, leaving medical treatments largely unchanged.
-          </p>
-        </div>
-
-        <!-- Milestone 8: 1676 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-            <strong style="font-family: 'Inter', sans-serif; font-size: 9.6pt; font-weight: 900; color: #000000;">
-              1676 &bull; Thomas Sydenham Publishes Observationes Medicae
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 2.2</span>
-          </div>
-          <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Known as the ‘English Hippocrates’, Thomas Sydenham urges doctors to base treatments on bedside clinical observation. In Observationes Medicae, he classifies illnesses into distinct species, distinguishes measles from scarlet fever, and popularises cinchona bark (quinine) for malaria.
-          </p>
-        </div>
-
+      <div style="display: flex; justify-content: flex-end; align-items: center; padding: 0 2px 1px 0;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000; text-transform: uppercase;">
+          Key Topic 2 Specification Spine Complete ➔
+        </span>
       </div>
 
       ${renderFooterStrip(3, 'Nullius in Verba: "Take nobody’s word for it." A brilliant motto for science, and a great rule for evaluating historical sources.', 20)}
@@ -1106,7 +1103,7 @@ ${part1TaskLines}
       <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 4px 8px; background: #ffffff; display: flex; justify-content: space-between; align-items: center; margin-top: 2px;">
         <div style="display: flex; align-items: center; gap: 8px;">
           <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; white-space: nowrap;">
-            Timeline Mission
+            Mind-Map Mission
           </span>
           <span style="font-family: 'Georgia', serif; font-size: 7.4pt; line-height: 1.25; color: #000000;">
             ${cfg.timelineMission}

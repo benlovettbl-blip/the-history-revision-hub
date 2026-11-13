@@ -45,7 +45,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT3.pdf';
-        else resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_master.pdf';
+        else resolvedPdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
       } else if (url.includes('retrieval') || url.includes('companion')) {
         resolvedPdfUrl = '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf';
       } else if (url.includes('textbook')) {
@@ -62,7 +62,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf';
         else if (url.includes('KT4')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf';
-        else resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf';
+        else resolvedPdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf';
       } else if (url.includes('mastery')) {
         resolvedPdfUrl = '/pdfs/weimar_nazi_germany_mastery_pack_KT1.pdf';
       } else if (url.includes('retrieval') || url.includes('companion')) {
@@ -82,7 +82,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT3.pdf';
         else if (url.includes('KT4')) resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT4.pdf';
-        else resolvedPdfUrl = '/pdfs/usa_pupil_workbook_master.pdf';
+        else resolvedPdfUrl = '/pdfs/usa_pupil_workbook_KT1.pdf';
       } else if (url.includes('mastery')) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/usa_mastery_pack_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/usa_mastery_pack_KT2.pdf';
@@ -105,7 +105,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT3.pdf';
-        else resolvedPdfUrl = '/pdfs/eee_pupil_workbook_master.pdf';
+        else resolvedPdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
       } else if (url.includes('mastery')) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/eee_mastery_pack_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/eee_mastery_pack_KT2.pdf';
@@ -128,7 +128,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         else if (url.includes('18th_19th')) resolvedPdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_18th_19th.pdf';
         else if (url.includes('modern')) resolvedPdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_modern.pdf';
         else if (url.includes('western_front')) resolvedPdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf';
-        else resolvedPdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_master.pdf';
+        else resolvedPdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf';
       } else if (url.includes('textbook')) {
         if (url.includes('medieval')) resolvedPdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
         else if (url.includes('renaissance')) resolvedPdfUrl = '/pdfs/edexcel_medicine_textbook_renaissance.pdf';
@@ -197,10 +197,14 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
 
   currentPreviewState = {
     activeTab: options.activeTab || 'qp',
-    qpUrl: options.qpUrl || (options.isMockPaper ? url : null),
+    qpUrl: options.qpUrl || (options.msUrl ? url : null),
     msUrl: options.msUrl || null,
+    qpPdfUrl: resolvedPdfUrl,
+    msPdfUrl: options.msPdfUrl || null,
+    qpTabLabel: options.qpTabLabel || (options.isMockPaper ? 'Question Paper' : 'Pupil Workbook'),
+    msTabLabel: options.msTabLabel || (options.isMockPaper ? 'Mark Scheme' : 'Mark Scheme & WAGOLLs'),
     title: options.title || title,
-    pdfUrl: resolvedPdfUrl,
+    pdfUrl: options.activeTab === 'ms' && options.msPdfUrl ? options.msPdfUrl : resolvedPdfUrl,
     url: url,
     isMockPaper: Boolean(options.isMockPaper),
   };
@@ -212,16 +216,26 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
       : options.badge || 'Document Viewer';
   }
 
-  if (options.isMockPaper && options.qpUrl && options.msUrl) {
+  const btnQP = document.getElementById('btnTabQP');
+  const btnMS = document.getElementById('btnTabMS');
+  if (btnQP) {
+    btnQP.innerHTML = `<i class="fa-solid fa-file-lines"></i> ${currentPreviewState.qpTabLabel}`;
+  }
+  if (btnMS) {
+    btnMS.innerHTML = `<i class="fa-solid fa-check-double"></i> ${currentPreviewState.msTabLabel}`;
+  }
+
+  if (currentPreviewState.qpUrl && currentPreviewState.msUrl) {
     if (tabsEl) tabsEl.style.display = 'inline-flex';
     window.updatePreviewConsoleTabs(options.activeTab || 'qp');
   } else {
     if (tabsEl) tabsEl.style.display = 'none';
   }
 
+  const activePdfUrl = currentPreviewState.pdfUrl;
   if (downloadBtn) {
-    if (isVerifiedPdf(resolvedPdfUrl)) {
-      downloadBtn.href = resolvedPdfUrl;
+    if (isVerifiedPdf(activePdfUrl)) {
+      downloadBtn.href = activePdfUrl;
       downloadBtn.target = '_blank';
       downloadBtn.onclick = null;
       downloadBtn.innerHTML = '<i class="fa-solid fa-file-pdf"></i> Download PDF';
@@ -238,8 +252,11 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
     }
   }
 
+  const initialTargetUrl =
+    options.activeTab === 'ms' && currentPreviewState.msUrl ? currentPreviewState.msUrl : url;
+
   if (fullTabBtn) {
-    fullTabBtn.href = url;
+    fullTabBtn.href = initialTargetUrl;
   }
 
   const bustUrl = (u) => {
@@ -248,7 +265,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
     return `${u}${sep}v=${Date.now()}`;
   };
 
-  iframe.src = bustUrl(url);
+  iframe.src = bustUrl(initialTargetUrl);
 
   consoleEl.style.display = 'flex';
   setTimeout(() => {
@@ -261,6 +278,7 @@ window.switchPreviewConsoleTab = function (tab) {
   const iframe = document.getElementById('inpagePreviewIframe');
   const titleEl = document.getElementById('previewConsoleTitle');
   const fullTabBtn = document.getElementById('btnPreviewFullTab');
+  const downloadBtn = document.getElementById('btnPreviewDownload');
 
   const bustUrl = (u) => {
     if (!u) return u;
@@ -268,17 +286,39 @@ window.switchPreviewConsoleTab = function (tab) {
     return `${u}${sep}v=${Date.now()}`;
   };
 
+  const syncDownloadBtn = (targetPdf) => {
+    if (!downloadBtn) return;
+    if (targetPdf && isVerifiedPdf(targetPdf)) {
+      downloadBtn.href = targetPdf;
+      downloadBtn.target = '_blank';
+      downloadBtn.onclick = null;
+      downloadBtn.innerHTML = '<i class="fa-solid fa-file-pdf"></i> Download PDF';
+    } else {
+      downloadBtn.href = '#';
+      downloadBtn.target = '';
+      downloadBtn.onclick = (e) => {
+        e.preventDefault();
+        window.printInPagePreview();
+      };
+      downloadBtn.innerHTML = '<i class="fa-solid fa-print"></i> Print / Save PDF';
+    }
+  };
+
   if (tab === 'qp' && currentPreviewState.qpUrl) {
     currentPreviewState.activeTab = 'qp';
     if (iframe) iframe.src = bustUrl(currentPreviewState.qpUrl);
-    if (titleEl) titleEl.textContent = currentPreviewState.title + ' (Question Paper)';
+    if (titleEl)
+      titleEl.textContent = `${currentPreviewState.title} (${currentPreviewState.qpTabLabel || 'Question Paper'})`;
     if (fullTabBtn) fullTabBtn.href = currentPreviewState.qpUrl;
+    syncDownloadBtn(currentPreviewState.qpPdfUrl);
     window.updatePreviewConsoleTabs('qp');
   } else if (tab === 'ms' && currentPreviewState.msUrl) {
     currentPreviewState.activeTab = 'ms';
     if (iframe) iframe.src = bustUrl(currentPreviewState.msUrl);
-    if (titleEl) titleEl.textContent = currentPreviewState.title + ' (Mark Scheme)';
+    if (titleEl)
+      titleEl.textContent = `${currentPreviewState.title} (${currentPreviewState.msTabLabel || 'Mark Scheme'})`;
     if (fullTabBtn) fullTabBtn.href = currentPreviewState.msUrl;
+    syncDownloadBtn(currentPreviewState.msPdfUrl || currentPreviewState.qpPdfUrl);
     window.updatePreviewConsoleTabs('ms');
   }
 };
@@ -408,40 +448,37 @@ const UNIT_PUBLICATIONS = {
       tags: ['Enquiry Spreads', 'Stepped Scaffolds', 'Photocopier Ready'],
       editions: [
         {
-          id: 'all',
-          label: 'Complete Unit Master Volume (KT1–KT3 Combined)',
-          title: 'Conflict in the Middle East 68-Page Complete Master Pupil Workbook',
-          pages: '68 Pages (A4)',
-          desc: 'Complete 68-page classroom pupil workbook binding KT1 (Creation of Israel), KT2 (Escalating Conflict), and KT3 (Search for Peace). 12 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
-          readUrl: '/units/cme_new/pupil_workbook_KT1.html',
-          pdfUrl: '/pdfs/cme_new_pupil_workbook_master.pdf',
-        },
-        {
           id: 'KT1',
-          label: 'Key Topic 1: Creation of Israel (1945–56)',
-          title: 'KT1 Pupil Consumable Workbook (1945–56)',
-          pages: '20 Pages',
-          desc: 'Photocopier-ready classroom workbook for KT1. Guided recall, enquiry spreads, source analysis, and stepped exam ladders.',
+          label: 'Key Topic 1: Birth of the State of Israel (1945–63)',
+          title: 'KT1 Pupil Consumable Workbook (1945–63)',
+          pages: '12 Pages',
+          desc: 'Photocopier-ready 12-page (3 folded A3 sheets) workbook for KT1. Ben-Gurion cover source & PLC, 3 two-page enquiry spreads (KT1.1–KT1.3), centrefold timeline (pp. 6–7), closed-book 16-mark Mini-Mock (pp. 10–11), and teacher marking back cover (p. 12).',
           readUrl: '/units/cme_new/pupil_workbook_KT1.html',
           pdfUrl: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
+          msUrl: '/units/cme_new/pupil_workbook_KT1_markscheme.html',
+          msPdfUrl: '/pdfs/cme_new_pupil_workbook_KT1_markscheme.pdf',
         },
         {
           id: 'KT2',
-          label: 'Key Topic 2: The Escalating Conflict (1964–73)',
-          title: 'KT2 Pupil Consumable Workbook (1964–73)',
-          pages: '24 Pages',
-          desc: 'Photocopier-ready classroom workbook for KT2. Six-Day War analysis, military tactics, Resolution 242 evaluation, and 12-mark causation scaffolds.',
+          label: 'Key Topic 2: The Escalating Conflict (1963–73)',
+          title: 'KT2 Pupil Consumable Workbook (1963–73)',
+          pages: '16 Pages',
+          desc: 'Photocopier-ready 16-page (4 folded A3 sheets) workbook for KT2. Uncropped Rubinger Western Wall cover & PLC, 5 two-page enquiry spreads (KT2.1–KT2.5), centrefold timeline (pp. 8–9), closed-book 16-mark Mini-Mock (pp. 14–15), and teacher marking back cover (p. 16).',
           readUrl: '/units/cme_new/pupil_workbook_KT2.html',
           pdfUrl: '/pdfs/cme_new_pupil_workbook_KT2.pdf',
+          msUrl: '/units/cme_new/pupil_workbook_KT2_markscheme.html',
+          msPdfUrl: '/pdfs/cme_new_pupil_workbook_KT2_markscheme.pdf',
         },
         {
           id: 'KT3',
-          label: 'Key Topic 3: The Search for Peace (1974–95)',
+          label: 'Key Topic 3: Attempts at a Solution (1974–95)',
           title: 'KT3 Pupil Consumable Workbook (1974–95)',
-          pages: '24 Pages',
-          desc: 'Photocopier-ready classroom workbook for KT3. Camp David treaties, First Intifada timeline, Oslo Accords peace process, and 16-mark essays.',
+          pages: '12 Pages',
+          desc: 'Photocopier-ready 12-page (3 folded A3 sheets) workbook for KT3. Full-colour Oslo Handshake cover & PLC, 3 two-page enquiry spreads (KT3.1–KT3.3), centrefold timeline (pp. 6–7), closed-book 16-mark Mini-Mock (pp. 10–11), and teacher marking back cover (p. 12).',
           readUrl: '/units/cme_new/pupil_workbook_KT3.html',
           pdfUrl: '/pdfs/cme_new_pupil_workbook_KT3.pdf',
+          msUrl: '/units/cme_new/pupil_workbook_KT3_markscheme.html',
+          msPdfUrl: '/pdfs/cme_new_pupil_workbook_KT3_markscheme.pdf',
         },
         {
           id: 'mastery',
@@ -551,15 +588,6 @@ const UNIT_PUBLICATIONS = {
       color: '#d97706',
       tags: ['Interpretation Drills', 'Stepped Scaffolds', 'Photocopier Ready'],
       editions: [
-        {
-          id: 'all',
-          label: 'Complete Unit Master Volume (KT1–KT4 Combined)',
-          title: 'USA (1954–1975) 80-Page Complete Master Pupil Workbook',
-          pages: '80 Pages (A4)',
-          desc: 'Complete 80-page classroom pupil workbook binding KT1 (Civil Rights), KT2 (Black Power), KT3 (Peace & Protest), and KT4 (Vietnam). 16 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
-          readUrl: '/units/usa/pupil_workbook_KT1.html',
-          pdfUrl: '/pdfs/usa_pupil_workbook_master.pdf',
-        },
         {
           id: 'KT1',
           label: 'Key Topic 1: Civil Rights (1954–65)',
@@ -687,15 +715,6 @@ const UNIT_PUBLICATIONS = {
       tags: ['Enquiry Spreads', 'Exam Scaffolds', 'Photocopier Ready'],
       editions: [
         {
-          id: 'all',
-          label: 'Complete Course (104-Page All-in-One Bound Master)',
-          title: 'Paper 1: Master All-in-One Consumable Pupil Workbook (104 Pages)',
-          pages: '104 Pages',
-          desc: 'The definitive photocopier-ready classroom workbook binding Section A (Western Front) and all four Section B chronological eras together.',
-          readUrl: '/units/edexcel_medicine/booklets/medicine_mastery_compendium_32page.html',
-          pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_master.pdf',
-        },
-        {
           id: 'medieval',
           label: 'Era 1: Medieval Britain (c1250–c1500)',
           title: 'Medieval Britain Pupil Consumable Workbook',
@@ -804,15 +823,6 @@ const UNIT_PUBLICATIONS = {
       tags: ['Enquiry Spreads', 'Stepped Scaffolds', 'Photocopier Ready'],
       editions: [
         {
-          id: 'all',
-          label: 'Complete Unit Master Volume (KT1–KT3 Combined)',
-          title: 'Early Elizabethan England (1558–1588) 48-Page Complete Master Pupil Workbook',
-          pages: '48 Pages (A4)',
-          desc: 'Complete 48-page classroom pupil workbook binding KT1 (Queen & Government), KT2 (Plots & Armada), and KT3 (Society & Exploration). 12 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
-          readUrl: '/units/eee/pupil_workbook_KT1.html',
-          pdfUrl: '/pdfs/eee_pupil_workbook_master.pdf',
-        },
-        {
           id: 'KT1',
           label: 'Key Topic 1: Queen, Government & Religion',
           title: 'KT1 Pupil Workbook: Queen, Government & Religion',
@@ -902,15 +912,6 @@ const UNIT_PUBLICATIONS = {
       color: '#d97706',
       tags: ['Enquiry Spreads', 'Interpretation Drills', 'Photocopier Ready'],
       editions: [
-        {
-          id: 'all',
-          label: 'Complete Unit Master Volume (KT1–KT4 Combined)',
-          title: 'Weimar & Nazi Germany (1918–1939) 80-Page Complete Master Pupil Workbook',
-          pages: '80 Pages (A4)',
-          desc: 'Complete 80-page classroom pupil workbook binding KT1 (Weimar Republic), KT2 (Hitler’s Rise), KT3 (Nazi Control), and KT4 (Life in Nazi Germany). 16 two-page enquiry spreads, living timelines, and calibrated writing tasks.',
-          readUrl: '/units/weimar_nazi_germany/pupil_workbook_KT1.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_master.pdf',
-        },
         {
           id: 'KT1',
           label: 'Key Topic 1: The Weimar Republic (1918–29)',
@@ -1375,6 +1376,7 @@ window.onPillarEditionChange = function (selectEl, unitId, pillarKey) {
   const descEl = cardEl.querySelector('.pillar-dynamic-desc');
   const btnRead = cardEl.querySelector('.pillar-btn-read');
   const btnPdf = cardEl.querySelector('.pillar-btn-pdf');
+  const btnMs = cardEl.querySelector('.pillar-btn-ms');
 
   if (titleEl) titleEl.textContent = edition.title;
   if (pagesEl) {
@@ -1405,8 +1407,32 @@ window.onPillarEditionChange = function (selectEl, unitId, pillarKey) {
     btnRead.onclick = () => {
       window.openInPagePreview(edition.readUrl, cleanTitle, edition.pdfUrl, {
         badge: pillar.badge,
+        qpUrl: edition.msUrl ? edition.readUrl : null,
+        msUrl: edition.msUrl || null,
+        msPdfUrl: edition.msPdfUrl || null,
+        qpTabLabel: 'Pupil Workbook',
+        msTabLabel: 'Mark Scheme & WAGOLLs',
       });
     };
+  }
+  if (btnMs) {
+    if (edition.msUrl) {
+      const cleanTitle = (edition.title || '').replace(/'/g, "\\'");
+      btnMs.style.display = 'flex';
+      btnMs.onclick = () => {
+        window.openInPagePreview(edition.readUrl, cleanTitle, edition.pdfUrl, {
+          badge: pillar.badge,
+          activeTab: 'ms',
+          qpUrl: edition.readUrl,
+          msUrl: edition.msUrl,
+          msPdfUrl: edition.msPdfUrl || null,
+          qpTabLabel: 'Pupil Workbook',
+          msTabLabel: 'Mark Scheme & WAGOLLs',
+        });
+      };
+    } else {
+      btnMs.style.display = 'none';
+    }
   }
 };
 
@@ -1418,6 +1444,12 @@ function renderMasterPillarCard(unitId, pillar) {
   const defaultEdition = pillar.editions[0];
   const cleanTitle = (defaultEdition.title || '').replace(/'/g, "\\'");
   const hasMultipleEditions = pillar.editions.length > 1;
+  const previewOptsStr = defaultEdition.msUrl
+    ? `{ badge: '${pillar.badge}', qpUrl: '${defaultEdition.readUrl}', msUrl: '${defaultEdition.msUrl}', msPdfUrl: '${defaultEdition.msPdfUrl || ''}', qpTabLabel: 'Pupil Workbook', msTabLabel: 'Mark Scheme & WAGOLLs' }`
+    : `{ badge: '${pillar.badge}' }`;
+  const msOptsStr = defaultEdition.msUrl
+    ? `{ badge: '${pillar.badge}', activeTab: 'ms', qpUrl: '${defaultEdition.readUrl}', msUrl: '${defaultEdition.msUrl}', msPdfUrl: '${defaultEdition.msPdfUrl || ''}', qpTabLabel: 'Pupil Workbook', msTabLabel: 'Mark Scheme & WAGOLLs' }`
+    : `{ badge: '${pillar.badge}' }`;
 
   // Only render edition select if there are multiple editions to choose from
   const editionSelectHtml = hasMultipleEditions
@@ -1457,22 +1489,27 @@ function renderMasterPillarCard(unitId, pillar) {
         </p>
       </div>
 
-      <!-- Strictly 2 Primary Actions -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: auto; padding-top: 14px; border-top: 1px solid #f1f5f9;">
-        <button type="button" class="pillar-btn-read" onclick="window.openInPagePreview('${defaultEdition.readUrl}', '${cleanTitle}', '${defaultEdition.pdfUrl}', { badge: '${pillar.badge}' })" style="background: #ffffff; color: #0f172a; border: 1.5px solid #cbd5e1; border-left: 3.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.borderColor='${pillar.color}'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.borderLeftColor='${pillar.color}'; this.style.boxShadow='none';">
-          <i class="fa-solid fa-book-open-reader" style="color: ${pillar.color};"></i> Read Online
+      <!-- Primary Actions + Optional Page-Matched Teacher Mark Scheme -->
+      <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; flex-direction: column; gap: 7px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+          <button type="button" class="pillar-btn-read" onclick="window.openInPagePreview('${defaultEdition.readUrl}', '${cleanTitle}', '${defaultEdition.pdfUrl}', ${previewOptsStr})" style="background: #ffffff; color: #0f172a; border: 1.5px solid #cbd5e1; border-left: 3.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.borderColor='${pillar.color}'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.borderLeftColor='${pillar.color}'; this.style.boxShadow='none';">
+            <i class="fa-solid fa-book-open-reader" style="color: ${pillar.color};"></i> Read Online
+          </button>
+          ${
+            isVerifiedPdf(defaultEdition.pdfUrl)
+              ? `
+          <a href="${defaultEdition.pdfUrl}" target="_blank" class="pillar-btn-pdf" title="Open ${cleanTitle} PDF in new tab" style="background: ${pillar.color}; color: #ffffff; border: 1.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease; box-shadow: 0 2px 6px ${pillar.color}40;" onmouseover="this.style.opacity='0.92';" onmouseout="this.style.opacity='1';">
+            <i class="fa-solid fa-file-pdf"></i> Download PDF
+          </a>`
+              : `
+          <button type="button" class="pillar-btn-pdf" onclick="window.openTeacherPrintPreview('${defaultEdition.readUrl}', '${cleanTitle}')" title="Open print preview & save as PDF" style="background: ${pillar.color}; color: #ffffff; border: 1.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease; box-shadow: 0 2px 6px ${pillar.color}40;" onmouseover="this.style.opacity='0.92';" onmouseout="this.style.opacity='1';">
+            <i class="fa-solid fa-print"></i> Print Edition
+          </button>`
+          }
+        </div>
+        <button type="button" class="pillar-btn-ms" onclick="window.openInPagePreview('${defaultEdition.readUrl}', '${cleanTitle}', '${defaultEdition.pdfUrl}', ${msOptsStr})" style="display: ${defaultEdition.msUrl ? 'flex' : 'none'}; width: 100%; background: #f0fdf4; color: #065f46; border: 1.5px solid #86efac; padding: 6px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; cursor: pointer; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#dcfce7';" onmouseout="this.style.background='#f0fdf4';">
+          <i class="fa-solid fa-check-double" style="color: #059669;"></i> Page-Matched Teacher Mark Scheme &amp; WAGOLLs
         </button>
-        ${
-          isVerifiedPdf(defaultEdition.pdfUrl)
-            ? `
-        <a href="${defaultEdition.pdfUrl}" target="_blank" class="pillar-btn-pdf" title="Open ${cleanTitle} PDF in new tab" style="background: ${pillar.color}; color: #ffffff; border: 1.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease; box-shadow: 0 2px 6px ${pillar.color}40;" onmouseover="this.style.opacity='0.92';" onmouseout="this.style.opacity='1';">
-          <i class="fa-solid fa-file-pdf"></i> Download PDF
-        </a>`
-            : `
-        <button type="button" class="pillar-btn-pdf" onclick="window.openTeacherPrintPreview('${defaultEdition.readUrl}', '${cleanTitle}')" title="Open print preview & save as PDF" style="background: ${pillar.color}; color: #ffffff; border: 1.5px solid ${pillar.color}; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s ease; box-shadow: 0 2px 6px ${pillar.color}40;" onmouseover="this.style.opacity='0.92';" onmouseout="this.style.opacity='1';">
-          <i class="fa-solid fa-print"></i> Print Edition
-        </button>`
-        }
       </div>
     </div>
   `;

@@ -42,12 +42,8 @@ KS3_UNITS.forEach((u) => {
   const masterPdf = path.join(PDFS_DIR, `${u.title}_Master_Knowledge_Retrieval_Companion.pdf`);
   if (fs.existsSync(masterPdf)) {
     const alias1 = path.join(PDFS_DIR, `${u.key}_quiz_pack.pdf`);
-    const alias2 = path.join(PDFS_DIR, `${u.key}_quiz_pack_FINAL_V1.pdf`);
-    const alias3 = path.join(PDFS_DIR, `${u.key}_quiz_pack_FINAL_V17.pdf`);
     fs.copyFileSync(masterPdf, alias1);
-    fs.copyFileSync(masterPdf, alias2);
-    fs.copyFileSync(masterPdf, alias3);
-    console.log(`✅ Synced PDF aliases for: ${u.key}`);
+    console.log(`✅ Synced PDF alias for: ${u.key}`);
   }
 });
 
@@ -86,15 +82,7 @@ const cwMasterPdf = path.join(
 );
 if (fs.existsSync(cwMasterPdf)) {
   fs.copyFileSync(cwMasterPdf, path.join(PDFS_DIR, 'cold_war_quiz_pack.pdf'));
-  fs.copyFileSync(cwMasterPdf, path.join(PDFS_DIR, 'cold_war_quiz_pack_FINAL_V17.pdf'));
-  console.log('✅ Synced Cold War PDF aliases');
-}
-
-// KS2 aliases
-const ks2MasterPdf = path.join(PDFS_DIR, 'ks2_ww2_quiz_pack.pdf');
-if (fs.existsSync(ks2MasterPdf)) {
-  fs.copyFileSync(ks2MasterPdf, path.join(PDFS_DIR, 'ks2_ww2_quiz_pack_FINAL_V17.pdf'));
-  console.log('✅ Synced KS2 PDF alias: ks2_ww2_quiz_pack_FINAL_V17.pdf');
+  console.log('✅ Synced Cold War PDF alias');
 }
 
 // 2. Update src/engine/hero_launchpad.js

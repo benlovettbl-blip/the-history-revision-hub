@@ -2338,8 +2338,8 @@ async function main() {
   const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
 
-  const pdfPath = path.join(pdfOutputDir, 'weimar_nazi_germany_textbook_UNIFIED_FINAL.pdf');
-  const pdfPathLegacy = path.join(pdfOutputDir, 'weimar_textbook_UNIFIED.pdf');
+  const pdfPath = path.join(pdfOutputDir, 'weimar_nazi_germany_textbook.pdf');
+  const pdfPathLegacy = path.join(pdfOutputDir, 'weimar_nazi_germany_textbook.pdf');
   const canonicalPdfPath = path.join(pdfOutputDir, 'weimar_nazi_germany_textbook.pdf');
 
   await page.pdf({
@@ -2350,9 +2350,9 @@ async function main() {
     margin: { top: 0, right: 0, bottom: 0, left: 0 },
   });
 
-  fs.copyFileSync(pdfPath, pdfPathLegacy);
+  if (path.resolve(pdfPath) !== path.resolve(pdfPathLegacy)) fs.copyFileSync(pdfPath, pdfPathLegacy);
   try {
-    fs.copyFileSync(pdfPath, canonicalPdfPath);
+    if (path.resolve(pdfPath) !== path.resolve(canonicalPdfPath)) fs.copyFileSync(pdfPath, canonicalPdfPath);
   } catch (e) {}
 
   console.log(`\n📄 Generated PDF: ${pdfPath}`);

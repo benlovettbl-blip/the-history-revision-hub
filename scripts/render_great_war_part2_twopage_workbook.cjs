@@ -3,6 +3,10 @@ const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
 const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
+const {
+  renderKs3CentrefoldSpine,
+  assertPdfPageCount,
+} = require('./components/render_ks3_centrefold_spine.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -129,9 +133,9 @@ const enquiryConfigs = [
         'One primary reason was... &bull; This encouraged enlistment because... &bull; Furthermore, social pressure contributed to... &bull; Crucially, shared identity ensured that... &bull; In consequence, this resulted in...',
       wordBank:
         'Pals Battalions &bull; Lord Kitchener &bull; Treaty of London &bull; Pompey Pals &bull; King’s Shilling &bull; White Feather &bull; voluntary enlistment &bull; civic patriotism &bull; 750,000 recruits',
-      timelineMissionTitle: 'Timeline Task &bull; pp. 8–9',
+      timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestone 1 (August 1914):</strong> Choose <strong>(A) Creative Sketch:</strong> Lord Kitchener pointing finger and voluntary recruitment queues outside town halls [👉 pointing finger &bull; 📜 enlistment papers &bull; 🚶‍♂️ queue of volunteers] &bull; OR &bull; <strong>(B) Mind Map:</strong> "1914 Voluntary Mobilisation" (750,000 recruits in 8 weeks, civic Pals Battalions e.g. Pompey Pals, King’s Shilling &amp; white feather pressure)',
+        '<strong>Milestone 1 (August 1914):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out Lord Kitchener&rsquo;s recruiting appeal, 750,000 volunteers in eight weeks, and civic Pals Battalions.',
     },
     leftPageQuip:
       'In August and September 1914 alone, over 750,000 British men volunteered—creating the largest citizen army in British history.',
@@ -222,9 +226,9 @@ const enquiryConfigs = [
         wordBank:
           'General Sir Douglas Haig &bull; 7-day bombardment &bull; uncut barbed wire &bull; concrete dugouts &bull; Spandau Maxim machine guns &bull; No Man’s Land &bull; 57,470 casualties',
       },
-      timelineMissionTitle: 'Timeline Task &bull; pp. 8–9',
+      timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestones 3 &amp; 4 (1916):</strong> Choose <strong>(A) Creative Sketch:</strong> German Maxim machine-gun redoubt firing across uncut wire, or rhomboid Mark I tank crushing trenches [🧱 concrete bunker &bull; ⚙️ Maxim gun &bull; 🚜 rhomboid tank] &bull; OR &bull; <strong>(B) Mind Map:</strong> "Somme &amp; Armoured Breakthrough" (1 July 57,470 casualties, failure of 7-day bombardment, September 1916 first tank deployment at Flers-Courcelette)',
+        '<strong>Milestones 3 &amp; 4 (1916):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out 1 July 1916 on the Somme (57,470 casualties, intact wire) and September 1916 Mark I tanks at Flers-Courcelette.',
     },
     leftPageQuip:
       'On 1 July 1916, the British Army suffered 57,470 casualties—including 19,240 dead—the bloodiest single day in British military history.',
@@ -318,9 +322,9 @@ const enquiryConfigs = [
         'Task B: Suggest one reason why Interpretations 1 and 2 differ about the role of empire soldiers. [4 marks]',
       stemsC:
         'One reason why Interpretations 1 and 2 differ is because they have a different focus... &bull; Specifically, Interpretation 1 focuses primarily on... &bull; In contrast, Interpretation 2 focuses more on... &bull; As a result, the authors reach different conclusions because...',
-      timelineMissionTitle: 'Timeline Task &bull; pp. 8–9',
+      timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestones 2 &amp; 6 (1915 &amp; 1917–18):</strong> Choose <strong>(A) Creative Sketch:</strong> Indian cavalry and ANZAC troops landing on steep cliffs under fire, or troopships crossing oceans with Victoria Cross [🌊 landing boat &bull; ⛰️ Gallipoli cliffs &bull; 👳‍♂️ Indian turban &amp; slouch hat &bull; 🎖️ Victoria Cross] &bull; OR &bull; <strong>(B) Mind Map:</strong> "Global Empire Mobilisation" (1.5 million Indian soldiers in Flanders/Mesopotamia, ANZAC Gallipoli forge, 4 million non-white troops/labourers)',
+        '<strong>Milestones 2 &amp; 6 (1915 &amp; 1917–18):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the April 1915 Gallipoli ANZAC landings alongside 1.5 million Indian troops and 4 million Empire personnel.',
     },
     leftPageQuip:
       'Over 1.5 million Indian soldiers served in the Great War; Sepoy Khudadad Khan was the first South Asian recipient of the Victoria Cross.',
@@ -425,9 +429,9 @@ const enquiryConfigs = [
         wordBank:
           'Canary Girls &bull; TNT poisoning &bull; Silvertown explosion &bull; Ministry of Munitions &bull; Representation of the People Act 1918',
       },
-      timelineMissionTitle: 'Timeline Task &bull; pp. 8–9',
+      timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestone 5 (1916–1917):</strong> Choose <strong>(A) Creative Sketch:</strong> "Canary Girls" loading heavy artillery shells beside a queue holding ration books [🏭 munitions factory &bull; 💣 artillery shell &bull; 📕 ration book] &bull; OR &bull; <strong>(B) Mind Map:</strong> "Home Front &amp; Total War" (1916 Military Service Act conscription, 1 million female munitions workers producing 80% shells, German U-boat blockade rationing)',
+        '<strong>Milestone 5 (1916–1917):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 1916 Military Service Act conscription, 1 million female munitions workers (&ldquo;Canary Girls&rdquo;), and U-boat rationing.',
     },
     leftPageQuip:
       'Under DORA, it was illegal to buy rounds of drinks in pubs, feed bread to pigeons, ring church bells, or fly a kite in Britain.',
@@ -537,9 +541,9 @@ const enquiryConfigs = [
         'A compelling argument supporting this statement is that... &bull; In particular, economic factors were significant because... &bull; On the other hand, an alternative perspective is that... &bull; Crucially, geopolitical balance demonstrated that... &bull; In conclusion, the decisive reason was... because...',
       wordBank:
         'Article 231 &bull; £6.6 billion reparations &bull; Diktat &bull; Georges Clemenceau &bull; David Lloyd George &bull; Woodrow Wilson &bull; Polish Corridor &bull; John Maynard Keynes &bull; League of Nations',
-      timelineMissionTitle: 'Timeline Task &bull; pp. 8–9',
+      timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestones 7 &amp; 8 (1918 &amp; 1919):</strong> Choose <strong>(A) Creative Sketch:</strong> Foch’s railway carriage at 11:00 am, or signing the treaty under arched mirrors in the Hall of Mirrors [🚂 railway carriage &bull; ⏰ 11:00 am &bull; 🏛️ Hall of Mirrors &bull; 📜 Article 231] &bull; OR &bull; <strong>(B) Mind Map:</strong> "Armistice &amp; Treaty of Versailles" (11 Nov 1918 Hundred Days &amp; Hindenburg Line, Article 231 War Guilt &amp; £6.6bn reparations, Keynes "Carthaginian Peace" warning)',
+        '<strong>Milestones 7 &amp; 8 (1918 &amp; 1919):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 1918 Hundred Days Offensive &amp; Armistice alongside Article 231 War Guilt and £6.6bn reparations at Versailles.',
     },
     leftPageQuip:
       'John Maynard Keynes resigned from the British delegation in protest, warning the treaty would reduce Germany to starvation and bring down European civilization.',
@@ -753,7 +757,7 @@ function renderRightPage(cfg, pageNum) {
       <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 4px 7px; background: #ffffff; margin-top: 2px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; border-bottom: 1px solid #000000; padding-bottom: 1.5px;">
           <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; background: #ffffff; color: #000000; border: 1.2px solid #000000; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.3px;">
-            🎨 ${rp.timelineMissionTitle || 'Timeline Mission'}
+            ${rp.timelineMissionTitle || 'Mind-Map Mission'}
           </span>
           <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 800; color: #000000;">
             Turn to Centrefold &bull; Pages 8–9 &rarr;
@@ -850,7 +854,7 @@ function renderRightPage(cfg, pageNum) {
       <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 3px 6px; background: #ffffff; margin-top: 2px; margin-bottom: 2px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; border-bottom: 1px solid #000000; padding-bottom: 1.5px;">
           <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.3px;">
-            🎨 ${rp.timelineMissionTitle || 'Timeline Mission'}
+            ${rp.timelineMissionTitle || 'Mind-Map Mission'}
           </span>
           <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
             Turn to Centrefold &bull; Pages 8–9 &rarr;
@@ -963,7 +967,7 @@ function renderRightPage(cfg, pageNum) {
         <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 3px 6px; background: #ffffff; margin-top: 2px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; border-bottom: 1px solid #000000; padding-bottom: 1.5px;">
             <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.3px;">
-              🎨 ${rp.timelineMissionTitle || 'Timeline Mission'}
+              ${rp.timelineMissionTitle || 'Mind-Map Mission'}
             </span>
             <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
               Turn to Centrefold &bull; Pages 8–9 &rarr;
@@ -1064,7 +1068,7 @@ function renderRightPage(cfg, pageNum) {
         <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 3px 6px; background: #ffffff; margin-top: 2px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; border-bottom: 1px solid #000000; padding-bottom: 1.5px;">
             <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.3px;">
-              🎨 ${rp.timelineMissionTitle || 'Timeline Mission'}
+              ${rp.timelineMissionTitle || 'Mind-Map Mission'}
             </span>
             <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
               Turn to Centrefold &bull; Pages 8–9 &rarr;
@@ -1565,241 +1569,84 @@ function compileGreatWarPart2Workbook() {
   html += renderRightPage(enquiryConfigs[2], 7);
 
   // ====================================================================
-  // PAGES 8–9: THE LIVING TIMELINE IN THE EXACT PHYSICAL CENTREFOLD!
+  // PAGES 8–9: CENTREFOLD CURRICULUM MIND-MAP CANVAS
   // ====================================================================
-  html += `
-  <!-- PAGE 8: LIVING TIMELINE PART 1 (MILESTONES 1–4) -->
-  <div class="page page-container verso-page" id="page-8" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-              CENTREFOLD LIVING TIMELINE &bull; PART 1
-            </span>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-              YEAR 9 &bull; THE GREAT WAR: 1914–1916
-            </span>
-          </div>
-          <h2 style="margin: 2px 0 0 0; font-family: 'Inter', sans-serif; font-size: 11pt; color: #000000; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px;">
-            Living Timeline &bull; Part 1: Enlistment, Empire Mobilisation &amp; The Somme (1914–1916)
-          </h2>
-        </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 2.5px 6px; margin-bottom: 4px; font-family: 'Inter', sans-serif; font-size: 7.6pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Choice:</strong> For each milestone, choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, dramatic scenes, or visual metaphors; OR <strong>(B) Mind Map:</strong> create a central concept bubble with 3 key historical facts.
-        </div>
-      </div>
-
-      <!-- 4 Milestones with Open Drawing Area Across Full A4 Page -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 1: August 1914 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; margin-bottom: 4px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                August 1914 &bull; The Rush to the Colours &amp; Lord Kitchener’s Appeal
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 1</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              Following the German invasion of Belgium, Lord Kitchener issues his recruiting appeal; over 750,000 volunteers enlist in eight weeks, creating the civic Pals Battalions across Britain.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 2: April 1915 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; margin-bottom: 4px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                April 1915 &bull; The Gallipoli Landings &amp; ANZAC Mobilisation
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 3</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              British, French, Indian, and Australian/New Zealand (ANZAC) forces land on Gallipoli to knock the Ottoman Empire out of the war; eight months of bloody stalemate forge Australian national consciousness.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 3: 1 July 1916 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; margin-bottom: 4px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                1 July 1916 &bull; The First Day on the Somme &amp; Destruction of the Pals
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 2</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              Following a seven-day artillery bombardment, 100,000 British infantry assault intact German wire; 19,240 men are killed in hours, devastating entire towns and wiping out civic volunteer battalions.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 4: September 1916 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                September 1916 &bull; First Tank Deployment at Flers-Courcelette
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 2</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              Britain unveils the Mark I tank on the Somme, driving over trenches and crushing barbed wire; while mechanically unreliable, it inaugurates modern combined-arms armoured warfare.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      ${renderFooterStrip(8, 'Centrefold timeline: Dual-coding sketches and dates turns narrative history into permanent long-term memory.', 16)}
-    </div>
-  </div>
-
-  <!-- PAGE 9: LIVING TIMELINE PART 2 (MILESTONES 5–8) -->
-  <div class="page page-container recto-page" id="page-9" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <div>
-        <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-              CENTREFOLD LIVING TIMELINE &bull; PART 2
-            </span>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-              YEAR 9 &bull; THE GREAT WAR: 1916–1919
-            </span>
-          </div>
-          <h2 style="margin: 2px 0 0 0; font-family: 'Inter', sans-serif; font-size: 11pt; color: #000000; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px;">
-            Living Timeline &bull; Part 2: Conscription, Total War &amp; The Flawed Peace (1916–1919)
-          </h2>
-        </div>
-
-        <div style="border: 1.2px solid #000000; border-radius: 3px; background: #ffffff; padding: 2.5px 6px; margin-bottom: 4px; font-family: 'Inter', sans-serif; font-size: 7.6pt; color: #000000;">
-          <strong style="color: #000000;">Living Timeline Choice:</strong> For each milestone, choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, dramatic scenes, or visual metaphors; OR <strong>(B) Mind Map:</strong> create a central concept bubble with 3 key historical facts.
-        </div>
-      </div>
-
-      <!-- 4 Milestones with Open Drawing Area Across Full A4 Page -->
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between; min-height: 0;">
-        
-        <!-- Milestone 5: 1916–1917 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; margin-bottom: 4px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                1916–1917 &bull; Conscription, "Canary Girls" &amp; Total War Mobilisation
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 4</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              Parliament enforces military conscription for all eligible men while 1 million women enter munitions factories ("Canary Girls") and transport; German U-boat attacks bring Britain within weeks of starvation.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 6: 1917–1918 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; margin-bottom: 4px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                1917–1918 &bull; Global Empire Mobilisation &amp; 4 Million Troops
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 3</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              Over 1.5 million Indian soldiers and hundreds of thousands of African, Caribbean, and Dominion troops fight across Europe, Africa, and the Middle East, sustaining the Allied war effort.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 7: 11 November 1918 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; margin-bottom: 4px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                11 November 1918 &bull; The Hundred Days Offensive &amp; Armistice
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 5</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              Allied combined-arms offensives break the Hindenburg Line; facing revolution and starvation at home, Germany signs the Armistice in Marshal Foch’s railway carriage, ending active combat.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 8: 28 June 1919 -->
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 8.8pt; color: #000000;">
-                28 June 1919 &bull; The Signing of the Treaty of Versailles
-              </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Enquiry 5</span>
-            </div>
-            <p style="font-family: 'Georgia', serif; font-size: 7.6pt; color: #000000; margin: 0; line-height: 1.22;">
-              In the Hall of Mirrors at Versailles, Allied powers force Germany to accept Article 231 (War Guilt), pay £6.6 billion in reparations, and surrender 13% of its territory, creating a fragile peace.
-            </p>
-          </div>
-          <!-- Open Dual-Coding / Concept Web Drawing Canvas for Pupils -->
-          <div style="flex: 1; min-height: 22mm; background: #ffffff; border-bottom: 1px solid #cbd5e1; margin-top: 3px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-end;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3px; text-align: right; padding-right: 4px; padding-bottom: 1px;">
-              [ Choice A: Creative Sketch &bull; OR &bull; Choice B: Mind Map ]
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      ${renderFooterStrip(9, 'Between 1914 and 1919, the Great War destroyed historic empires and fundamentally remade the political map of Europe.', 16)}
-    </div>
-  </div>
-`;
+  html += renderKs3CentrefoldSpine({
+    leftPageNum: 8,
+    rightPageNum: 9,
+    totalPages: 16,
+    part1KickerRight: 'YEAR 9 &bull; THE GREAT WAR: 1914–1916',
+    part1Heading: 'Enlistment, Empire Landings &amp; The Somme (1914–1916)',
+    part1ContinueLabel: 'Continue to Part 2 (1916–1919) on Facing Page',
+    part1FooterQuip:
+      'Centrefold Mind-Map Canvas: Connecting enlistment, trench attrition, and armoured innovation builds durable historical memory.',
+    part2KickerRight: 'YEAR 9 &bull; THE GREAT WAR: 1916–1919',
+    part2Heading: 'Conscription, Total War &amp; The Flawed Peace (1916–1919)',
+    part2CompleteLabel: 'Spine Complete (1914–1919)',
+    part2FooterQuip:
+      'Between 1914 and 1919, the Great War destroyed historic empires and fundamentally remade the political map of Europe.',
+    spineLeft: [
+      {
+        date: 'Aug 1914',
+        title: 'Rush to the Colours &amp; Pals Battalions',
+        enq: 'Enq 1',
+        leftCue: '← Invasion of Belgium',
+        rightCue: '750,000 Volunteers in 8 Weeks →',
+      },
+      {
+        date: 'Apr 1915',
+        title: 'Gallipoli &amp; ANZAC Landings',
+        enq: 'Enq 3',
+        leftCue: '← Knock Out Ottoman Front',
+        rightCue: '8-Month Trench Stalemate →',
+      },
+      {
+        date: '1 Jul 1916',
+        title: 'First Day on the Somme',
+        enq: 'Enq 2',
+        leftCue: '← 7-Day Shelling &amp; Wire',
+        rightCue: '19,240 Killed &amp; Pals Losses →',
+      },
+      {
+        date: 'Sep 1916',
+        title: 'Mark I Tanks at Flers-Courcelette',
+        enq: 'Enq 2',
+        leftCue: '← Trench Deadlock',
+        rightCue: 'Combined-Arms Breakthrough →',
+      },
+    ],
+    spineRight: [
+      {
+        date: '1916–17',
+        title: 'Conscription &amp; Canary Girls',
+        enq: 'Enq 4',
+        leftCue: '← U-Boat Starvation Threat',
+        rightCue: '1m Women in Munitions →',
+      },
+      {
+        date: '1917–18',
+        title: 'Global Empire Mobilisation',
+        enq: 'Enq 3',
+        leftCue: '← 1.5m Indian Soldiers',
+        rightCue: '4m Empire Personnel Fight →',
+      },
+      {
+        date: '11 Nov 1918',
+        title: 'Hundred Days &amp; Armistice',
+        enq: 'Enq 5',
+        leftCue: '← Hindenburg Line Broken',
+        rightCue: 'Foch’s Carriage Ceasefire →',
+      },
+      {
+        date: '28 Jun 1919',
+        title: 'Signing of Treaty of Versailles',
+        enq: 'Enq 5',
+        leftCue: '← Article 231 War Guilt',
+        rightCue: '£6.6bn Reparations &amp; Fragile Peace →',
+      },
+    ],
+    renderFooterStrip,
+  });
 
   // ====================================================================
   // PAGES 10–11: ENQUIRY 4 (THE HOME FRONT & WOMEN'S TOTAL WAR)
@@ -2191,25 +2038,8 @@ async function main() {
     },
   });
 
-  const coverElem = await page.$('#page-1');
-  if (coverElem) {
-    const previewPath = path.join(
-      ROOT_DIR,
-      'public',
-      'images',
-      'great_war_part2_cover_redesign_preview.png',
-    );
-    await coverElem.screenshot({ path: previewPath });
-    const artifactDest = path.join(
-      'C:\\Users\\fives\\.gemini\\antigravity-ide\\brain\\3b641322-c353-4e66-858d-2203cdb22b36',
-      'great_war_part2_cover_redesign_preview.png',
-    );
-    try {
-      fs.copyFileSync(previewPath, artifactDest);
-    } catch (_) {}
-  }
-
   await browser.close();
+  await assertPdfPageCount(outPdfPath, 16);
   console.log(`[OK] Single canonical PDF compiled: ${outPdfPath}`);
 }
 

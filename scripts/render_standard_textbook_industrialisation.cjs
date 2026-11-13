@@ -1396,9 +1396,9 @@ async function run() {
   // Mirror PDF to legacy alias if needed
   const legacyPdfPath = path.join(
     pdfOutputDir,
-    'industrialisation_and_empire_textbook_FINAL_V17.pdf',
+    'industrialisation_and_empire_textbook.pdf',
   );
-  fs.copyFileSync(canonicalPdfPath, legacyPdfPath);
+  if (path.resolve(canonicalPdfPath) !== path.resolve(legacyPdfPath)) fs.copyFileSync(canonicalPdfPath, legacyPdfPath);
   console.log(`[OK] Mirrored PDF to: ${legacyPdfPath}`);
 
   await browser.close();

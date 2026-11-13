@@ -172,3 +172,4 @@ export function getScopedChessEndpoint(baseEndpoint = '/.netlify/functions/chess
   } catch (e) {}
   return baseEndpoint;
 }
+

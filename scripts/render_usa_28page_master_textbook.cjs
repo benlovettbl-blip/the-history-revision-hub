@@ -2480,7 +2480,7 @@ async function runUsaUnified() {
 
   const publicHtmlPath = path.join(ROOT_DIR, 'public', 'units', 'usa', 'textbook_UNIFIED.html');
   const rootHtmlPath = path.join(ROOT_DIR, 'units', 'usa', 'textbook_UNIFIED.html');
-  const pdfFinalPath = path.join(ROOT_DIR, 'public', 'pdfs', 'usa_textbook_UNIFIED_FINAL.pdf');
+  const pdfFinalPath = path.join(ROOT_DIR, 'public', 'pdfs', 'usa_textbook.pdf');
   const pdfMirrorPath = path.join(ROOT_DIR, 'public', 'pdfs', 'usa_textbook.pdf');
 
   fs.writeFileSync(publicHtmlPath, html, 'utf8');
@@ -2609,7 +2609,7 @@ async function runUsaUnified() {
   });
 
   // Mirror PDF
-  fs.copyFileSync(pdfFinalPath, pdfMirrorPath);
+  if (path.resolve(pdfFinalPath) !== path.resolve(pdfMirrorPath)) fs.copyFileSync(pdfFinalPath, pdfMirrorPath);
   console.log('\nMaster 28-Page Textbook PDF compiled to:');
   console.log(' - ' + pdfFinalPath);
   console.log(' - ' + pdfMirrorPath);

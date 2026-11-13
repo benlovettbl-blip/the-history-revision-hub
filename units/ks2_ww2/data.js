@@ -388,7 +388,7 @@ export default {
           "title": "Neville Chamberlain: Declaration of War (3 September 1939)",
           "duration": "50 secs",
           "pathway": "Primary Archive",
-          "teacher_guidance": "Recommended Watch Window: 00:00–00:50 | Lesson Phase: Starter Hook & Primary Listening | Tone Alert: Historic radio broadcast; grave and solemn tone. Prepare pupils for the momentous silence of 11:15 am on Sunday 3 September 1939.",
+          "teacher_guidance": "Recommended Watch Window: 00:00–00:49 | Lesson Phase: Starter Hook & Primary Listening | Tone Alert: Historic radio broadcast; grave and solemn tone. Prepare pupils for the momentous silence of 11:15 am on Sunday 3 September 1939.",
           "viewing_task": "[00:15] Quick Check: What country had German forces invaded, breaking Adolf Hitler's promises and forcing Britain to declare war?\n[00:35] Hinge Question: Listen to the tone of Prime Minister Chamberlain's voice. Does he sound excited, angry, or deeply sorrowful, and why?",
           "model_answer": "Quick Check: Germany invaded Poland on 1 September 1939, breaking international treaties and ignoring Britain's ultimatum to withdraw.\nHinge Question: Chamberlain's voice sounds grave, quiet, and deeply sorrowful. Having worked tirelessly to avoid another world war through his policy of appeasement, he realized that all his peaceful efforts had failed and that Britain was now entering another catastrophic conflict."
         },
@@ -419,7 +419,7 @@ export default {
           "url": "https://www.youtube.com/watch?v=LtJ60u7SUSw",
           "id": "LtJ60u7SUSw",
           "title": "Darkest Hour (2017) | Official Trailer (Gary Oldman / Focus Features)",
-          "duration": "2 mins 28 secs",
+          "duration": "2 mins 46 secs",
           "pathway": "Cinematic",
           "teacher_guidance": "Recommended Watch Window: 00:00–02:28 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning performance showing Winston Churchill taking leadership in May 1940.",
           "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film portray Winston Churchill's determination to resist Hitler when others urged negotiation?",
@@ -1143,7 +1143,7 @@ export default {
           "url": "https://www.youtube.com/watch?v=32wyLEBf60c",
           "id": "32wyLEBf60c",
           "title": "Hope and Glory (1987) | Official Movie Trailer (John Boorman)",
-          "duration": "2 mins 10 secs",
+          "duration": "2 mins 59 secs",
           "pathway": "Cinematic",
           "teacher_guidance": "Recommended Watch Window: 00:00–02:10 | Lesson Phase: Child's Perspective | Tone Alert: Celebrated semi-autobiographical depiction of a young boy experiencing the London Blitz as an adventure.",
           "viewing_task": "[01:05] Cinematic Discussion Focus: How does experiencing the Blitz through the eyes of a child differ from adult perspectives of terror and destruction?",
@@ -1846,7 +1846,7 @@ export default {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=-KkElrPdA_I",
           "title": "Trude’s Story: Escaping Nazi-Occupied Czechoslovakia | BBC Teach",
-          "duration": "3 mins 40 secs",
+          "duration": "5 mins 32 secs",
           "pathway": "Primary Archive",
           "teacher_guidance": "Recommended Watch Window: 00:15–03:25 | Lesson Phase: Individual Case Study | Tone Alert: Animated survivor testimony. Extremely moving account of Nicholas Winton's rescue trains.",
           "viewing_task": "[01:00] Recall: What precious possession did Trude's mother pack for her before she boarded the rescue train in Prague?\n[02:15] Explain: How did Nicholas Winton organize foster families and travel permits in Britain to rescue children from Prague?\n[03:00] Challenge: What did Trude discover about her parents after the war ended in 1945?",
@@ -1868,7 +1868,7 @@ export default {
           "url": "https://www.youtube.com/watch?v=b6Q7uHQTlmA",
           "id": "b6Q7uHQTlmA",
           "title": "Goodnight Mister Tom (1998) | ITV Feature Drama Extract (John Thaw)",
-          "duration": "3 mins 15 secs",
+          "duration": "1 hr 41 mins",
           "pathway": "Cinematic",
           "teacher_guidance": "Recommended Watch Window: 00:00–03:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Acclaimed drama depicting London evacuee William Beech arriving in the Dorset countryside.",
           "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film portray the cultural shock experienced by inner-city evacuee children sent to rural villages?",
@@ -2590,14 +2590,14 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5Cc4LaSRiSc",
-          "id": "5Cc4LaSRiSc",
-          "title": "The Home Front: Rationing & The Kitchen Front | BBC Archive",
-          "duration": "8 mins 30 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:30–07:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Primary Ministry of Food propaganda films and ration book analysis.",
-          "viewing_task": "[01:30] Recall: What foods were strictly rationed from January 1940 (bacon, butter, sugar)?\n[03:45] Explain: How did 'Dig for Victory' convert public parks, flowerbeds, and bomb craters into vegetable allotments?\n[06:00] Challenge: Why was the British civilian diet during wartime rationing actually healthier than before the war?",
-          "model_answer": "Recall: Butter, sugar, bacon, meat, cheese, tea, and eggs.\nExplain: With U-boats sinking Atlantic merchant convoys, Britain had to produce its own food, turning lawns into potato patches.\nChallenge: Rationing guaranteed fair distribution of wholemeal 'National Loaf', root vegetables, and milk for children, reducing saturated fats and eliminating malnutrition among the poorest families."
+          "id": "clKxrDza1d8",
+          "url": "https://www.youtube.com/watch?v=clKxrDza1d8",
+          "title": "London's Biggest Blitz & Brave Firefighters (1941) | British Pathé",
+          "duration": "2 mins 52 secs",
+          "pathway": "Primary Archive",
+          "teacher_guidance": "Authentic 1941 British Pathé newsreel showing Auxiliary Fire Service crews tackling blazing warehouses and ARP wardens rescuing civilians after an overnight Luftwaffe air raid on London. Recommended Watch Window: 00:00–02:51 • Lesson Phase: Primary Newsreel Analysis.",
+          "viewing_task": "<ol><li><strong>[00:35] Recall:</strong> Which emergency workers can you spot fighting fires and clearing rubble in the London streets?</li><li><strong>[01:30] Explain:</strong> Why was this 1941 cinema newsreel upbeat and proud in tone even though buildings had been bombed?</li><li><strong>[02:20] Challenge:</strong> What does this film show us about how ordinary Londoners worked together during the Blitz?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Firefighters (Auxiliary Fire Service), Air Raid Precaution (ARP) wardens, and rescue crews with hoses and ladders.</li><li><strong>Explain:</strong> Wartime newsreels were shown in cinemas to keep British spirits ('Blitz Spirit') high and reassure families that Britain would not give in.</li><li><strong>Challenge:</strong> Neighbours, wardens, and volunteer firefighters risked their lives through smoke and falling masonry to protect homes and keep essential city streets open.</li></ol>"
         }
       ],
       "causal_domino_spine": {
@@ -3307,7 +3307,7 @@ export default {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=DuO1CYsPf_M",
           "title": "A Soldier's Daughter: Rationing & The Home Front | BBC Teach",
-          "duration": "9 mins 30 secs",
+          "duration": "9 mins 37 secs",
           "pathway": "Documentary Depth",
           "teacher_guidance": "Recommended Watch Window: 01:00–08:30 | Lesson Phase: Daily Life Investigation | Tone Alert: Domestic reflections on shortages, queues, and 'make do and mend'.",
           "viewing_task": "[02:00] Recall: What substitute ingredients did families use to bake birthday cakes when butter and eggs were almost impossible to find?\n[04:40] Explain: What did the government campaign 'Make Do and Mend' ask families to do with old clothes and worn-out blankets?\n[07:15] Challenge: Why did queuing at the grocer or butcher become one of the most time-consuming jobs for women during the war?",
@@ -3315,14 +3315,14 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=nuPZUUED5uk",
-          "id": "nuPZUUED5uk",
-          "title": "Women Codebreakers & Secret Operations | Cinematic Trailer",
-          "duration": "2 mins 30 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts women operating complex machinery and breaking codes.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film highlight the vital, top-secret intellectual contributions of women in wartime intelligence?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows how women made up over 75% of the workforce at Bletchley Park, operating the Bombe decoders and intercepting enemy radio messages."
+          "id": "t4S4Yx7p3NI",
+          "url": "https://www.youtube.com/watch?v=t4S4Yx7p3NI",
+          "title": "Clothes Rationing & Make Do and Mend ('Rationed Rags', 1941) | British Pathé",
+          "duration": "1 min 35 secs",
+          "pathway": "Primary Archive",
+          "teacher_guidance": "Original June 1941 British Pathé newsreel explaining how wartime rationing extended beyond food to clothing coupons, showing families counting coupons to save fabric and shipping space for the war effort. Recommended Watch Window: 00:00–01:35 • Lesson Phase: Primary Archive Hook.",
+          "viewing_task": "<ol><li><strong>[00:25] Recall:</strong> Besides money, what did British shoppers have to hand over in 1941 to buy a new coat, dress, or pair of shoes?</li><li><strong>[00:55] Explain:</strong> Why did the government need to ration clothes as well as food during the Second World War?</li><li><strong>[01:20] Challenge:</strong> How did 'Make Do and Mend' make rationing fair for rich and poor families alike?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Clothing ration coupons from their government ration book.</li><li><strong>Explain:</strong> Factories and cloth were needed for military uniforms and parachutes, while merchant ships bringing cotton and wool across the Atlantic were targeted by U-boats.</li><li><strong>Challenge:</strong> Even wealthy shoppers could not buy up all the clothes in the shops without coupons, encouraging everyone to patch, repair, and hand down garments fairly.</li></ol>"
         }
       ],
       "causal_domino_spine": {
@@ -4040,14 +4040,14 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=JkOwLCib1Tk",
-          "id": "JkOwLCib1Tk",
-          "title": "Spitfires in the Skies & Radar Defense | Primary Archive",
-          "duration": "4 mins 10 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–04:10 | Lesson Phase: Aerial Warfare | Tone Alert: Authentic aerial footage of Supermarine Spitfires and Hawker Hurricanes in dogfights.",
-          "viewing_task": "[01:20] Cinematic Discussion Focus: How does the footage capture the speed, danger, and tension experienced by Fighter Command pilots during the summer of 1940?",
-          "model_answer": "Cinematic Discussion Focus: The footage captures the frantic dogfights over southern England, illustrating how 'The Few' scrambled multiple times a day guided by Dowding's radar network to deny Hitler air supremacy."
+          "id": "MSo6gb-eeFs",
+          "url": "https://www.youtube.com/watch?v=MSo6gb-eeFs",
+          "title": "Training Women for Munitions Factories (1941) | British Pathé",
+          "duration": "1 min 59 secs",
+          "pathway": "Primary Archive",
+          "teacher_guidance": "1941 British Pathé archival newsreel showing women learning precision lathe engineering, welding, and shell-making to keep Britain's factories running while millions of men served overseas. Recommended Watch Window: 00:00–01:59 • Lesson Phase: Primary Source Evidence.",
+          "viewing_task": "<ol><li><strong>[00:30] Recall:</strong> What kinds of skilled engineering machines are women learning to operate in this 1941 workshop?</li><li><strong>[01:05] Explain:</strong> Why did British factories urgently need millions of women to step into engineering and munitions jobs by 1941?</li><li><strong>[01:40] Challenge:</strong> How did mastering skilled factory work change attitudes toward what women could achieve?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Metal lathes, precision measuring tools, drills, and welding equipment.</li><li><strong>Explain:</strong> With millions of men fighting in the armed forces, Britain could not build enough aircraft, tanks, or shells without conscripting and training women for industrial war work.</li><li><strong>Challenge:</strong> Women proved they could perform complex heavy engineering just as accurately as men, challenging pre-war stereotypes that women belonged only in domestic roles.</li></ol>"
         }
       ],
       "causal_domino_spine": {
@@ -4766,14 +4766,14 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=YhsPPBGtquo",
-          "id": "YhsPPBGtquo",
-          "title": "London Firefighters in the Blitz | Fire Service Archive",
-          "duration": "7 mins 45 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:30–07:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Archival footage of the Auxiliary Fire Service fighting infernos during Blitz raids.",
-          "viewing_task": "[01:30] Recall: What hazards did Auxiliary Fire Service volunteers face when mains water pipes were ruptured by bombs?\n[03:45] Explain: How did ARP wardens enforce the blackout and guide civilians to Anderson and Morrison shelters?\n[06:00] Challenge: Why were civilian defense volunteers called 'heroes without guns'?",
-          "model_answer": "Recall: Ruptured water mains forced firefighters to pump mud and sewage from the Thames while incendiary bombs rained down around them.\nExplain: Wardens patrolled streets to ensure not a chink of light guided German bombers, reported unexploded bombs, and administered first aid.\nChallenge: They risked their lives unarmed every night to rescue trapped neighbors and extinguish firestorms, sustaining the nation's morale and infrastructure."
+          "id": "J7WLk-KVYM4",
+          "url": "https://www.youtube.com/watch?v=J7WLk-KVYM4",
+          "title": "Glimpses of Jewish Life in Europe Before the Holocaust | Yad Vashem",
+          "duration": "4 mins 38 secs",
+          "pathway": "Primary Archive",
+          "teacher_guidance": "Age-appropriate Yad Vashem archival film using rare 1930s family home movies and photographs—schools, seaside holidays, music, and market towns—so pupils see Jewish communities as vibrant everyday families before Nazi persecution stripped away their rights. Recommended Watch Window: 00:00–04:38 • Lesson Phase: Empathy & Pre-War Context.",
+          "viewing_task": "<ol><li><strong>[00:45] Recall:</strong> What everyday family and school activities can you see in these 1930s home movies from across Europe?</li><li><strong>[02:15] Explain:</strong> Why do historians begin studying this period by looking at ordinary Jewish family life before 1933 rather than starting with Nazi laws?</li><li><strong>[03:45] Challenge:</strong> What makes personal family photographs and home films such precious historical evidence today?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Children playing in snow and at the seaside, attending school lessons, riding bicycles, celebrating festivals, and walking with parents through busy town squares.</li><li><strong>Explain:</strong> Seeing vibrant schools, friendships, and communities helps us understand that Jewish people were ordinary neighbours whose rights, homes, and futures were unjustly taken away step by step.</li><li><strong>Challenge:</strong> Each photograph preserves the real names, faces, and joyful memories of families before war broke out, ensuring they are remembered as individuals rather than statistics.</li></ol>"
         }
       ],
       "causal_domino_spine": {
@@ -5495,7 +5495,7 @@ export default {
           "title": "The Imitation Game (2014) | Official Trailer (Benedict Cumberbatch)",
           "duration": "2 mins 32 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:32 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning drama depicting Alan Turing and the cracking of Nazi naval Enigma.",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:31 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning drama depicting Alan Turing and the cracking of Nazi naval Enigma.",
           "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film portray the race against time to design the electromechanical Bombe machine to decipher millions of German military codes?",
           "model_answer": "Cinematic Discussion Focus: The trailer dramatises how human mathematicians could never check millions of daily cipher variations by hand; Turing realized that only an electro-mechanical thinking machine could defeat another machine."
         }
@@ -6215,14 +6215,14 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=w5gC3ySGGTI",
-          "id": "w5gC3ySGGTI",
-          "title": "The Kindertransport & Holocaust Survivors: In Their Own Words | Archive",
-          "duration": "5 mins 12 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:30–05:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Primary survivor oral testimony detailing arrival in Britain.",
-          "viewing_task": "[01:15] Recall: What emotions did refugee children experience leaving parents behind on railway platforms?\n[02:45] Explain: How did British volunteer host families welcome refugee children?\n[04:15] Challenge: Why was Sir Nicholas Winton's rescue mission kept completely secret for fifty years until his wife found his scrapbook?",
-          "model_answer": "Recall: Deep fear, confusion, and grief as parents waved goodbye through train windows, often for the very last time.\nExplain: Volunteers met trains at Liverpool Street Station, providing hot food, shelter, and fostering children in British homes.\nChallenge: Winton never sought praise or fame; he believed he had simply done what was necessary, packing away his notebooks until his wife Grete discovered them in the attic in 1988."
+          "id": "qQaySHue7Xo",
+          "url": "https://www.youtube.com/watch?v=qQaySHue7Xo",
+          "title": "Who Are the Righteous Among the Nations? | Yad Vashem Animated Explainer",
+          "duration": "2 mins 45 secs",
+          "pathway": "Enquiry Evidence",
+          "teacher_guidance": "Clear, sensitive Yad Vashem animated explainer introducing ordinary non-Jewish rescuers—diplomats, neighbours, farmers, and teachers—who risked their own freedom and lives to hide, feed, or smuggle Jewish children and families to safety. Recommended Watch Window: 00:00–02:45 • Lesson Phase: Core Enquiry Evidence.",
+          "viewing_task": "<ol><li><strong>[00:35] Recall:</strong> What special title is awarded by Yad Vashem to non-Jewish people who risked their lives to save Jewish people during the Holocaust?</li><li><strong>[01:25] Explain:</strong> Name two ways ordinary rescuers helped Jewish neighbours or children escape danger.</li><li><strong>[02:15] Challenge:</strong> Why did choosing to become a rescuer require extraordinary moral courage when most bystanders stayed silent?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> 'Righteous Among the Nations'.</li><li><strong>Explain:</strong> Rescuers hid families in secret attics or cellars, shared scarce food rations, forged safe identity papers, or arranged transport across borders to safety.</li><li><strong>Challenge:</strong> Helping Jewish people under Nazi occupation carried severe punishment—imprisonment or execution—yet rescuers chose kindness and human decency over fear.</li></ol>"
         }
       ],
       "causal_domino_spine": {
@@ -6940,14 +6940,14 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=LtJ60u7SUSw",
-          "id": "LtJ60u7SUSw",
-          "title": "Winston Churchill's VE Day Broadcast & The End of War | BBC Archive",
-          "duration": "2 mins 28 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:28 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Historic radio broadcast announcing the unconditional surrender of Nazi Germany.",
-          "viewing_task": "[01:00] Cinematic Discussion Focus: How does Churchill's address balance triumphant celebration of victory with solemn remembrance of the fallen?",
-          "model_answer": "Cinematic Discussion Focus: Churchill declares 'This is your victory!', celebrating the endurance of the British people while somberly reminding the nation of the immense human cost and the ongoing struggle in the Pacific."
+          "id": "niR9qJjrJ5U",
+          "url": "https://www.youtube.com/watch?v=niR9qJjrJ5U",
+          "title": "Winston Churchill's 'This Is Your Victory' VE Day Speech (8 May 1945) | National Churchill Museum",
+          "duration": "1 min 50 secs",
+          "pathway": "Primary Archive",
+          "teacher_guidance": "Original archival recording from 8 May 1945 as Prime Minister Winston Churchill addresses cheering crowds in Whitehall, thanking ordinary British citizens across the Home Front and armed forces: 'This is your victory!' Recommended Watch Window: 00:00–01:50 • Lesson Phase: Primary Speech Analysis.",
+          "viewing_task": "<ol><li><strong>[00:25] Recall:</strong> When Churchill told the cheering crowd in London, 'This is your victory!', how did the crowd reply?</li><li><strong>[01:00] Explain:</strong> Why did Churchill insist that victory belonged to the whole British people rather than just politicians or generals?</li><li><strong>[01:35] Challenge:</strong> Even on a joyful day like 8 May 1945, why was VE Day also a moment of quiet remembrance for many British families?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> The crowd shouted back, 'No—it is yours!'</li><li><strong>Explain:</strong> Every group on the Home Front and overseas—evacuees, factory workers, firefighters, Land Girls, codebreakers, and service personnel—had endured six years of sacrifice together.</li><li><strong>Challenge:</strong> Hundreds of thousands of loved ones had lost their lives, bombed cities lay in ruins, ration books remained in place, and war in Asia had not yet ended.</li></ol>"
         }
       ],
       "causal_domino_spine": {
@@ -7696,9 +7696,9 @@ export default {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=b3XaiHLObk8",
           "title": "After the War: Official Book Trailer | Tom Palmer",
-          "duration": "1 min 05 secs",
+          "duration": "56 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:05 | Lesson Phase: Book Hook / Literary Introduction | Tone Alert: Features award-winning children's author Tom Palmer introducing his novel about the 300 child survivors brought to the Lake District.",
+          "teacher_guidance": "Recommended Watch Window: 00:00–00:56 | Lesson Phase: Book Hook / Literary Introduction | Tone Alert: Features award-winning children's author Tom Palmer introducing his novel about the 300 child survivors brought to the Lake District.",
           "viewing_task": "[00:20] Quick Check: In August 1945, how many child survivors of the Holocaust were flown by the RAF from Prague to a former flying-boat factory in the English Lake District?\n[00:50] Hinge Question: Why was Lake Windermere in Cumbria chosen as the sanctuary for these traumatized children to begin rebuilding their lives?",
           "model_answer": "Quick Check: 300 children (part of the 732 young survivors known as 'The Boys') were flown by RAF Stirling bombers to Crosby-on-Eden and brought to the Calgarth Estate by Lake Windermere.\nHinge Question: The quiet beauty of the mountains and water provided a peaceful, healing sanctuary far from bombed cities and barbed wire, where children could receive medical care, warm food, clean beds of their own, and learn to swim, ride bicycles, and trust people again."
         },
@@ -7707,9 +7707,9 @@ export default {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=BZgeEbYuWP8",
           "title": "Turning Fact into Fiction: Interviewing Real Survivors | Tom Palmer",
-          "duration": "3 mins 42 secs",
+          "duration": "3 mins 17 secs",
           "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Recommended Watch Window: 00:25–03:25 | Lesson Phase: Historical Craft & Testimony | Tone Alert: Tom Palmer discusses interviewing survivors Arek Hersh, Minia Jay, and Mala Tribich.",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:17 | Lesson Phase: Historical Craft & Testimony | Tone Alert: Tom Palmer discusses interviewing survivors Arek Hersh, Minia Jay, and Mala Tribich.",
           "viewing_task": "[01:00] Recall: Which real-life Holocaust survivors did Tom Palmer interview while researching his novel 'After the War'?\n[02:15] Explain: Why did the children hide bread under their pillows and in their pockets when they first arrived at the Calgarth Estate?\n[03:10] Challenge: How does historical fiction based on real survivor testimony help young readers connect with events that occurred eighty years ago?",
           "model_answer": "Recall: Tom Palmer interviewed survivors including Arek Hersh, Minia Jay, Mala Tribich, and Sam Laskier.\nExplain: Having endured years of starvation and cruelty in ghettos and concentration camps where missing a scrap of food meant death, the children could not believe that food was now plentiful. Hoarding bread under their pillows was an instinctive survival mechanism born of deep trauma.\nChallenge: Historical fiction gives emotional life to names and statistics, allowing pupils to walk in the shoes of young characters (Yossi, Leo, Mordecai), feeling their fears, friendships, and hope, making the lessons of the Holocaust unforgettable."
         },
@@ -7718,7 +7718,7 @@ export default {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=L-nPGLmpAJU",
           "title": "After the War: On Location at Lake Windermere | Tom Palmer",
-          "duration": "4 mins 27 secs",
+          "duration": "32 mins 32 secs",
           "pathway": "Documentary Depth",
           "teacher_guidance": "Recommended Watch Window: 00:30–04:00 | Lesson Phase: Geographical / Fieldwork Connection | Tone Alert: On-location report from the shores of Lake Windermere and the Lake District Holocaust Project.",
           "viewing_task": "[01:15] Recall: What specific sports and activities helped the Windermere children regain their physical strength and childhood joy?\n[02:40] Explain: How did Dr Oskar Friedman and the team of social workers care for the psychological trauma of the child survivors?\n[03:50] Challenge: What does the story of the Windermere Children teach us about human resilience and the power of welcoming refugees?",
@@ -7729,10 +7729,10 @@ export default {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=w5gC3ySGGTI",
           "title": "The Windermere Children: Mayer Hersh's True Story | LDHP",
-          "duration": "5 mins 12 secs",
+          "duration": "2 mins 01 sec",
           "pathway": "Primary Archive",
-          "teacher_guidance": "Recommended Watch Window: 00:40–04:45 | Lesson Phase: Primary Eyewitness Testimony | Tone Alert: Authentic survivor testimony from Mayer Hersh MBE. Listen with deep respect.",
-          "viewing_task": "[01:20] Recall: What did Mayer Hersh think when the RAF aircraft landed in England and he saw the lush green countryside?\n[02:45] Explain: How did Mayer describe the feeling of sleeping between clean white sheets and having a room of his own for the first time in six years?\n[04:10] Challenge: Why did Mayer Hersh dedicate his entire retirement to speaking in British schools about tolerance and combating hatred?",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:01 | Lesson Phase: Primary Eyewitness Testimony | Tone Alert: Authentic survivor testimony from Mayer Hersh MBE. Listen with deep respect.",
+          "viewing_task": "[00:30] Recall: What did Mayer Hersh think when the RAF aircraft landed in England and he saw the lush green countryside?\n[01:00] Explain: How did Mayer describe the feeling of sleeping between clean white sheets and having a room of his own for the first time in six years?\n[01:30] Challenge: Why did Mayer Hersh dedicate his entire retirement to speaking in British schools about tolerance and combating hatred?",
           "model_answer": "Recall: Mayer remembered looking out of the aircraft windows at the rolling green English hills, thinking he had arrived in paradise after the smoke and ash of the camps.\nExplain: He described weeping tears of disbelief at the clean white bed linen, the soft mattress, and having his own towel, contrasting it with sleeping crammed five to a wooden bunk on lice-ridden straw in Auschwitz.\nChallenge: Mayer spoke to tens of thousands of school pupils because he believed that education is the ultimate antidote to prejudice. Having lost his entire family except his brother Arek, he wanted every child to recognize that all human beings bleed the same blood and that hatred must never be allowed to divide people."
         },
         {
