@@ -476,7 +476,7 @@ const ENQUIRY_EDITORIAL = [
     decisiveMechanism:
       'Cultural Democratisation &bull; The Growth of Vernacular Literacy and Commercial Mass Entertainment',
     rectoAnchor:
-      'The rapid rise of grammar schools and open-air commercial playhouses like The Globe created a common cultural language uniting nobility and groundlings across social divides.',
+      'The rapid rise of grammar schools and open-air commercial playhouses like The Theatre and The Rose created a common cultural language uniting nobility and groundlings across social divides.',
     lessonIdx: 8, // lesson_3_1
   },
   {

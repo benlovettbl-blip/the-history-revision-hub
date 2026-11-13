@@ -2279,17 +2279,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 2–3 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain what this directly led to (Explanation).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of the bombing of the King David Hotel was... • Specifically, the Irgun detonated explosives that killed 91 people, which caused... • As a result, the British public and government..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the bombing of the King David Hotel (1946) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -2300,43 +2295,38 @@
             "question": "1(b). Explain one consequence of UN Resolution 181 (November 1947). [4 marks]",
             "prompt": "Explain how turning 4,500 Holocaust survivors back to Europe caused an international public relations disaster for Britain, severely alienating US President Truman and global opinion.",
             "examiner_tip": "Cite the 4,500 Holocaust survivors and the diplomatic rift it caused with US President Truman.",
-            "model": "",
+            "model": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the United Nations voted to partition Palestine into separate Jewish and Arab states with Jerusalem under international control, the Jewish Agency accepted the plan while the Arab Higher Committee and neighbouring Arab states rejected it as unjust. Armed clashes erupted the next day along roads and mixed towns, accelerating British withdrawal ahead of May 1948.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence of the Exodus was that Jewish refugees were sent back to Germany and people were angry.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion with zero supporting historical knowledge."
+                "text": "One consequence of UN Resolution 181 was that Jewish and Arab groups immediately started fighting each other across Palestine.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Identifies conflict breaking out, but gives zero specific detail on partition terms or the rival reactions."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the SS Exodus affair was that Britain forced 4,500 Holocaust survivors back to Europe, which made the United States criticise Britain's actions.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies the 4,500 refugees and US criticism, but lacks causal explanation of how this impacted the Mandate."
+                "text": "One consequence of UN Resolution 181 in November 1947 was that the UN voted to divide Palestine into separate Jewish and Arab states, which Arab leaders rejected and fighting broke out.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate knowledge of partition and Arab rejection, but needs fuller explanation of the communal civil war and collapse of British rule."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
-                "badge": "Printed Workbook WAGOLL",
-                "text": "",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Pairs specific historical evidence (4,500 survivors returned to Germany, Royal Navy blockade) with diplomatic consequence (US pressure from Truman)."
+                "badge": "Edexcel Benchmark",
+                "text": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the United Nations voted to partition Palestine into separate Jewish and Arab states with Jerusalem under international control, the Jewish Agency accepted the plan while the Arab Higher Committee and neighbouring Arab states rejected it as unjust. Armed clashes erupted the next day along roads and mixed towns, accelerating British withdrawal ahead of May 1948.",
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs precise detail (29 November 1947 partition vote, international Jerusalem, Jewish Agency acceptance vs Arab Higher Committee rejection) with direct causal impact (communal civil war)."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 2–3 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of the SS Exodus affair was... • In particular, British warships boarded the ship and returned refugees to Germany, causing... • Consequently, international and US pressure on Britain to..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of UN Resolution 181 (November 1947) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -2348,18 +2338,18 @@
             "model": "First, irreconcilable Jewish and Arab demands over immigration and statehood made any peaceful British political settlement impossible after 1945. With 250,000 Holocaust survivors stranded in European DP camps, the Jewish Agency and US President Harry S. Truman urged Britain to admit 100,000 refugees immediately and establish a Jewish state, whereas the Arab Higher Committee demanded an immediate halt to Jewish immigration and Arab majority independence. Caught between American pressure and Foreign Secretary Ernest Bevin’s fear of an Arab uprising threatening British Middle Eastern oil supplies, Britain enforced the 1939 White Paper cap of 1,500 migrants a month and alienated both sides.<br><br>Second, these conflicting nationalist goals escalated into armed Zionist insurgency that exhausted war-weary Britain militarily and morally. Outraged by immigration limits, the Haganah, Irgun, and Lehi sabotaged railways and bridges, bombed the King David Hotel in July 1946 (killing 91 people), and hanged two kidnapped British sergeants in July 1947, while the Royal Navy’s forced return of 4,500 SS Exodus survivors to Germany caused worldwide outrage. Stationing 100,000 soldiers in Palestine while financially exhausted after World War Two proved unsustainable, forcing Britain to hand the Mandate to the United Nations in 1947.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Basic Statements",
+                "title": "2/8 Simple Statement",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 (Simple Statements)",
-                "text": "Offers isolated descriptive statements without chronological linkage or analytical focus.",
-                "verdict": "AO1/AO2 Level 1 (1–2 marks)."
+                "level": "Level 1 Top (Basic Statement)",
+                "text": "Conflicting Jewish and Arab demands were important because both groups wanted control of Palestine after the Second World War and disagreed fiercely over Jewish immigration. Because violent attacks kept happening against British troops and neither side accepted British compromises, Britain decided to hand Palestine to the United Nations in 1947.",
+                "verdict": "AO1 Level 1 (1 mark) • AO2 Level 1 (1 mark). Valid general point about rival claims and violence, but lacks specific factual evidence (quotas, DP camps, King David Hotel, 100,000 troops)."
               },
               "tier_4m": {
                 "title": "4/8 Descriptive",
                 "score": "4 / 8 Marks",
                 "level": "Level 2 (Implicit Links)",
-                "text": "Includes accurate factual material across the period, but describes events rather than explaining causal links or importance.",
-                "verdict": "AO1/AO2 Level 2 (3–5 marks)."
+                "text": "After 1945, 250,000 Jewish survivors remained in European DP camps and US President Truman urged Britain to issue 100,000 immigration visas, whereas the Arab Higher Committee demanded an immediate halt to Jewish immigration and Arab majority rule. Foreign Secretary Ernest Bevin kept the 1939 White Paper cap of 1,500 migrants a month.<br><br>In response, Zionist groups including the Haganah, Irgun, and Lehi sabotaged railways, bombed the King David Hotel in July 1946 killing 91 people, and hanged two British sergeants in July 1947, while the Royal Navy turned back the SS Exodus.",
+                "verdict": "AO1 Level 2 (2 marks) • AO2 Level 2 (2 marks). Accurate factual detail across both rival diplomacy and insurgency, but describes events rather than explicitly explaining why each factor made keeping the Mandate unsustainable for Britain."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
@@ -2371,22 +2361,32 @@
               }
             },
             "scaffolding": {
-              "acronym": "Two-Paragraph Importance Framework",
-              "acronym_title": "Question 3: Explain the Importance [8 marks • 12 mins]",
-              "guidance": "Write two distinct analytical paragraphs. In each paragraph, state one clear way X was important for Y, support with precise dates/facts, and link directly back to the question focus.",
-              "steps": [
-                {
-                  "letter": "P1",
-                  "name": "FIRST WAY IT WAS IMPORTANT",
-                  "prompt": "Point + specific dates/facts + explain why this mattered for the question focus.",
-                  "starter": ""
-                },
-                {
-                  "letter": "P2",
-                  "name": "SECOND WAY IT WAS IMPORTANT",
-                  "prompt": "Second distinct reason + specific evidence + direct link back to the question stem.",
-                  "starter": ""
-                }
+              "acronym": "2 PEEL Paragraphs Showing How X Changed Y • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the conflicting interests and demands of Jews and Arabs within the British Mandate were important for Britain’s decision to withdraw from Palestine in 1947 because...",
+                "Second, the conflicting interests and demands of Jews and Arabs within the British Mandate also transformed Britain’s decision to withdraw from Palestine in 1947 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "This was crucial for",
+                "Consequently",
+                "Furthermore",
+                "This transformed",
+                "As a direct result",
+                "Significantly"
+              ],
+              "vocab_bank": [
+                "Displaced Persons (DP) camps",
+                "Harry S. Truman",
+                "Ernest Bevin",
+                "1939 White Paper",
+                "Haganah & Irgun",
+                "King David Hotel (July 1946)",
+                "Sergeants Affair (July 1947)",
+                "SS Exodus 1947",
+                "UNSCOP",
+                "UN Resolution 181 (Nov 1947)"
               ]
             }
           }
@@ -3434,17 +3434,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 2–3 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain what this directly led to (Explanation).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of the 1948–49 War for Palestinian Arabs was... • Specifically, over 700,000 Palestinians fled or were expelled, resulting in... • Consequently, generations of Palestinians were forced to live in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the refugee status of Palestinian Arabs following the 1948–49 war was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -3481,17 +3476,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 2–3 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain what this directly led to (Explanation).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of the Law of Return was a massive demographic explosion in Israel. In particular, the law granted every Jewish person the right to settle, causing... This directly resulted in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the Israeli Law of Return (1950) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -3504,18 +3494,18 @@
             "model": "On 14 May 1948, hours before the British Mandate expired, David Ben-Gurion proclaimed the State of Israel in Tel Aviv and won immediate recognition from the USA and USSR. This directly triggered a multi-front invasion at dawn on 15 May by five Arab League armies — Egypt, Transjordan, Syria, Lebanon, and Iraq — forcing outnumbered Israeli defenders lacking heavy artillery and aircraft into a desperate battle for survival.<br><br>However, the divided Arab armies lacked a single command, allowing Israel to hold out until UN mediator Count Folke Bernadotte brokered the four-week First Truce in June 1948. Israel used this pause decisively: Ben-Gurion merged Zionist militias into a unified Israel Defense Forces (IDF) and imported thousands of rifles, machine guns, and fighter aircraft through a Soviet-approved Czech arms deal, enabling reinforced Israeli divisions to break Arab lines when fighting resumed in July.<br><br>As Israeli offensives expanded control and over 700,000 Palestinian Arabs fled or were expelled in the Nakba, UN mediator Ralph Bunche brokered separate bilateral armistice agreements on Rhodes between February and July 1949. These Rhodes Armistices drew the Green Line leaving Israel with 78% of Mandatory Palestine while Jordan annexed the West Bank and East Jerusalem and Egypt occupied Gaza — ending open combat without formal peace treaties as Egypt continued barring Israeli ships from the Suez Canal.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Statement",
+                "title": "2/8 Simple Narrative",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Basic Statement)",
-                "text": "The Law of Return was important because it allowed any Jewish person in the world to move to Israel. This was good for Israel because lots of people moved there and helped build the new country after the war.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Simple statement regarding immigration, but contains zero specific figures or explanation of how this helped national development."
+                "level": "Level 1 Top (Basic Story)",
+                "text": "On 14 May 1948, David Ben-Gurion declared the State of Israel and five Arab countries invaded the next day. After months of fighting and a UN truce where Israel brought in more weapons, Israel won more land and signed armistice agreements in 1949.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Basic chronological story, but lacks specific detail and causal links explaining how the June 1948 truce turned the tide toward the 1949 Rhodes Armistices."
               },
               "tier_5m": {
-                "title": "5/8 Descriptive Narrative",
+                "title": "5/8 Sequenced Account",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Descriptive Account)",
-                "text": "The Law of Return was important for Israel because it doubled the population within a few years. Thousands of Holocaust survivors arrived from European displaced persons camps, alongside Jewish refugees fleeing from Arab countries like Iraq and Yemen.<br><br>This was important for the state because it fulfilled the Zionist promise of a Jewish homeland. However, it caused big problems with housing shortages and food rationing, so people had to live in temporary tent camps called Ma'abarot.",
-                "verdict": "AO2 Level 2 (2–3 marks) • AO1 Level 2 (2–3 marks). Good descriptive knowledge of immigration and hardship (Ma'abarot, rationing), but largely describes the event rather than directly analysing its contribution to state security and border development."
+                "level": "Level 2 Top (Sequenced Narrative)",
+                "text": "The war began after David Ben-Gurion proclaimed the State of Israel on 14 May 1948 and five Arab League armies—Egypt, Transjordan, Syria, Lebanon, and Iraq—invaded at dawn on 15 May.<br><br>In June 1948, the United Nations arranged the four-week First Truce. During this pause, Israel merged its militias into the Israel Defense Forces (IDF) and imported rifles and fighter aircraft from Czechoslovakia.<br><br>When fighting resumed, Israel expanded its territory while over 700,000 Palestinians became refugees. Between February and July 1949, UN mediator Ralph Bunche brokered the Rhodes Armistices establishing the Green Line with Israel holding 78% of Mandatory Palestine.",
+                "verdict": "AO2 Level 2 (2–3 marks) • AO1 Level 2 (2–3 marks). Clear Beginning–Middle–Outcome sequence with strong own knowledge, needing tighter causal links showing how Arab disunity and Czech arms directly reversed the military balance."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
@@ -3527,31 +3517,40 @@
               }
             },
             "scaffolding": {
-              "acronym": "Chronological Narrative Framework",
-              "acronym_title": "Question 2: Narrative Account [8 marks • 12 mins]",
-              "guidance": "Organise chronologically from Beginning -> Key Developments -> Outcome, using causal linkers between every phase and adding own knowledge beyond the two stimulus bullets.",
-              "steps": [
-                {
-                  "letter": "1",
-                  "name": "BEGINNING",
-                  "prompt": "Opening event / trigger in chronological order.",
-                  "starter": ""
-                },
-                {
-                  "letter": "2",
-                  "name": "KEY DEVELOPMENTS",
-                  "prompt": "How and why this led to the main turning point.",
-                  "starter": ""
-                },
-                {
-                  "letter": "3",
-                  "name": "OUTCOME",
-                  "prompt": "Final result and how the sequence ended.",
-                  "starter": ""
-                }
+              "acronym": "Start → Middle → Outcome • Own Knowledge Required (Cap 4/8) • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the crisis began when...",
+                "This directly led to the next stage, when...",
+                "Consequently, the final outcome was..."
+              ],
+              "connectives_label": "Chronological & Causal Links",
+              "connectives_bank": [
+                "First",
+                "This directly led to",
+                "In response",
+                "Consequently",
+                "This escalated into",
+                "As a final result"
+              ],
+              "vocab_bank": [
+                "14 May 1948 Proclamation",
+                "David Ben-Gurion",
+                "Arab League Invasion",
+                "First UN Truce (June 1948)",
+                "Czech Arms Deal (1948)",
+                "Israel Defense Forces (IDF)",
+                "Plan Dalet & Al-Nakba",
+                "UNRWA Refugee Camps",
+                "1949 Rhodes Armistices (Green Line)",
+                "Law of Return (1950)"
               ]
             },
             "stimulus": [
+              "The creation of Israel (May 1948)",
+              "Arab invasion and armistice agreements"
+            ],
+            "bullet_points": [
               "The creation of Israel (May 1948)",
               "Arab invasion and armistice agreements"
             ]
@@ -5097,8 +5096,8 @@
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the Israeli raid on Gaza was that 37 Egyptian soldiers were killed, which made President Nasser buy weapons from the Soviet Union.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Contains accurate basic facts (37 soldiers, Soviet weapons), but lacks causal explanation of the Czech arms deal and regional Cold War escalation."
+                "text": "One consequence of the Israeli raid on Gaza was that 38 Egyptian soldiers were killed, which made President Nasser buy weapons from the Soviet Union.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Contains accurate basic facts (38 soldiers, Soviet weapons), but lacks causal explanation of the Czech arms deal and regional Cold War escalation."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -5106,21 +5105,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of the Israeli attack on Gaza on 28 February 1955 (Operation Black Arrow) was Egypt’s pivot to Soviet weaponry via the Czech arms deal. Because Israeli paratroopers killed 38 Egyptian soldiers and humiliated President Gamal Abdel Nasser while Western powers tied weapons sales to Cold War alliances, Nasser signed the September 1955 Czech arms deal for 200 Soviet MiG-15 jets and 300 tanks. This ended the Western arms monopoly in the Middle East and escalated border tension as Nasser tightened the blockade of the Straits of Tiran.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Pairs precise facts (37 Egyptian casualties, Operation Black Arrow, MiG-15s) with causal explanation (September 1955 Czech arms deal)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Pairs precise facts (38 Egyptian casualties, Operation Black Arrow, MiG-15s) with causal explanation (September 1955 Czech arms deal)."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 2–3 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain what this directly led to (Explanation).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of the Israeli raid on Gaza was Nasser’s decision to rearm Egypt with Soviet weapons. In particular, Israeli paratroopers killed 37 Egyptian soldiers, which humiliated Nasser and proved Egyptian weakness. Consequently, Nasser turned to the Soviet bloc and signed the September 1955 Czech arms deal..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the Israeli attack on Gaza in February 1955 was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -5157,17 +5151,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of the Suez Crisis was the collapse of British and French imperial prestige. Specifically, US President Eisenhower threatened to collapse the British pound unless forces withdrew immediately. This directly resulted in the humiliation of Britain and France, proving that they were no longer..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the 1956 Suez Crisis for Britain and France as global powers was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -5207,30 +5196,39 @@
               }
             },
             "scaffolding": {
-              "acronym": "Chronological Narrative Framework",
-              "acronym_title": "Question 2: Narrative Account [8 marks • 12 mins]",
-              "guidance": "Organise chronologically from Beginning -> Key Developments -> Outcome, using causal linkers between every phase and adding own knowledge beyond the two stimulus bullets.",
-              "steps": [
-                {
-                  "letter": "1",
-                  "name": "BEGINNING",
-                  "prompt": "Opening event / trigger in chronological order.",
-                  "starter": ""
-                },
-                {
-                  "letter": "2",
-                  "name": "KEY DEVELOPMENTS",
-                  "prompt": "How and why this led to the main turning point.",
-                  "starter": ""
-                },
-                {
-                  "letter": "3",
-                  "name": "OUTCOME",
-                  "prompt": "Final result and how the sequence ended.",
-                  "starter": ""
-                }
+              "acronym": "Start → Middle → Outcome • Own Knowledge Required (Cap 4/8) • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the crisis began when...",
+                "This directly led to the next stage, when...",
+                "Consequently, the final outcome was..."
+              ],
+              "connectives_label": "Chronological & Causal Links",
+              "connectives_bank": [
+                "First",
+                "This directly led to",
+                "In response",
+                "Consequently",
+                "This escalated into",
+                "As a final result"
+              ],
+              "vocab_bank": [
+                "Gamal Abdel Nasser",
+                "Operation Black Arrow (Feb 1955)",
+                "Czech Arms Deal (Sept 1955)",
+                "Straits of Tiran Blockade",
+                "Aswan High Dam",
+                "Suez Canal Nationalisation (July 1956)",
+                "Secret Sèvres Agreement (Oct 1956)",
+                "Dwight D. Eisenhower",
+                "UNEF Peacekeepers",
+                "United Arab Republic (1958)"
               ]
-            }
+            },
+            "bullet_points": [
+              "Nasser’s nationalisation of the Suez Canal (July 1956)",
+              "Israeli attack on Sinai (October 1956)"
+            ]
           }
         ]
       },
@@ -6246,15 +6244,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence was that Arab leaders met and decided to help Palestine.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion identifying general support, but gives zero specific historical detail."
+                "text": "One consequence of Israel’s raid on Samu was violent protests in Jordan and greater anger towards Israel.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion of anger with zero specific detail on casualties, West Bank riots, or King Hussein."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the Cairo Conference was that the Arab League agreed to create the Palestine Liberation Organisation (PLO) to fight Israel.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies the creation of the PLO, but lacks explanation of how this institutionalized armed fedayeen attacks."
+                "text": "One consequence of Israel’s November 1966 raid on Samu was that IDF tanks destroyed over 100 houses and killed 15 Jordanian soldiers, sparking angry riots against King Hussein in the West Bank.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual support, but stops short of explaining how domestic unrest forced King Hussein to harden his policy toward Israel."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -6262,21 +6260,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of Israel’s massive reprisal raid on Samu in the Jordanian West Bank on 13 November 1966 was violent anti-government rioting that destabilised King Hussein’s monarchy. Because 4,000 IDF soldiers supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers in retaliation for a Fatah landmine, West Bank Palestinians rioted accusing Hussein of failing to defend them. To survive politically, King Hussein had to abandon secret moderation and harden his public stance toward Israel.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 50 words. Accurately links specific historical facts (PLO, Palestinian National Charter, Fatah) with the causal outcome (institutionalized fedayeen guerrilla warfare)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Directly links specific factual detail (4,000 IDF troops, over 100 houses demolished, 15 Jordanian soldiers killed) to political destabilisation forcing King Hussein into a harder stance."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, following the Cairo Conference in 1964... • Consequently, this led directly to..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of Israel’s raid on Samu in November 1966 was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -6313,17 +6306,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, during the aerial clash on 7 April 1967... • Consequently, this directly triggered..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the events of 7 April 1967 was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -6336,18 +6324,18 @@
             "model": "First, the January 1964 Arab League Summit in Cairo turned water disputes and Palestinian nationalism into coordinated Arab policy against Israel. Alarmed by Israel’s completion of the National Water Carrier pumping water from the Sea of Galilee to the Negev, Arab leaders launched the Headwater Diversion Plan in Syria and Jordan and established the Palestine Liberation Organisation (PLO) committed to armed struggle. Between 1965 and 1966, Israeli tank and air strikes bombed Syrian earth-moving equipment, making armed border clashes routine.<br><br>Second, the growth of Yasser Arafat’s Fatah movement drove a relentless cycle of guerrilla sabotage and massive Israeli reprisals that destabilised Israel’s neighbours. Launching raids from January 1965 and backed from 1966 by Syria’s radical military regime alongside Golan Heights artillery shelling, Fatah landmines provoked Israel’s November 1966 assault on Samu in Jordan and contributed to the 7 April 1967 dogfight in which Israeli Mirage jets shot down six Syrian MiG-21s over Damascus — pushing Syria to demand Egyptian military action.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Narrative",
+                "title": "2/8 Simple Statement",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Basic Story)",
-                "text": "Before the war, Syria supported Palestinian fighters who attacked Israel. Then President Nasser moved Egyptian soldiers into the Sinai desert and closed the Straits of Tiran to Israeli ships. In June 1967, Israel attacked Egyptian airbases and started the Six-Day War.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Simple chronological sequence, but lacks analysis of causal linkages explaining how Syrian actions forced Nasser's moves or why the blockade prompted Israel's pre-emptive strike."
+                "level": "Level 1 Top (Basic Statement)",
+                "text": "The 1964 Cairo Conference and Fatah were important because Arab leaders agreed to divert Israel’s water supplies and set up the PLO, while Fatah fighters launched guerrilla attacks across Israel’s borders. This caused constant border clashes with Israel between 1964 and 1967.",
+                "verdict": "AO1 Level 1 (1 mark) • AO2 Level 1 (1 mark). Identifies water disputes and raids broadly, without specific dates, targets, or analytical development."
               },
               "tier_5m": {
-                "title": "5/8 Sequenced Account",
+                "title": "5/8 Descriptive Analysis",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Sequenced Narrative)",
-                "text": "The conflict began with border clashes because Syria supported Fatah guerrillas who raided northern Israel. In response, Israeli jets shot down six Syrian fighter planes on 7 April 1967, which caused great embarrassment in the Arab world.<br><br>Following this, President Nasser of Egypt took action in May 1967. He moved 100,000 troops into the Sinai desert, expelled the UN peacekeepers, and closed the Straits of Tiran, which stopped ships reaching Israel's port of Eilat.<br><br>Finally, Jordan signed a defence pact with Egypt which surrounded Israel. Believing an attack was coming, Israel launched a surprise air attack on 5 June 1967 and destroyed the Egyptian air force on the ground.",
-                "verdict": "AO2 Level 2 (2–3 marks) • AO1 Level 2 (2–3 marks). Covers three distinct aspects in clear sequence with accurate facts, but lacks explicit causal connectives showing how each development directly compelled the next strategic response."
+                "level": "Level 2 Top (Implicit Importance)",
+                "text": "First, at the January 1964 Cairo Summit, Arab League leaders responded to Israel’s National Water Carrier by planning the Headwaters Diversion Plan in Syria and Jordan and creating the Palestine Liberation Organisation (PLO). Israeli tanks and aircraft bombed Syrian diversion works between 1965 and 1966.<br><br>Second, Yasser Arafat’s Fatah group launched armed sabotage raids into Israel from January 1965 with Syrian backing. These attacks led to Israel’s major reprisal raid on Samu in Jordan in November 1966 and the 7 April 1967 air battle in which Israeli Mirage jets shot down six Syrian MiG-21s.",
+                "verdict": "AO1 Level 2 (2–3 marks) • AO2 Level 2 (2–3 marks). Strong factual coverage of both elements, but describes the sequence of clashes rather than explicitly analysing how each widened regional tension."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
@@ -6359,22 +6347,32 @@
               }
             },
             "scaffolding": {
-              "acronym": "Two-Paragraph Importance Framework",
-              "acronym_title": "Question 3: Explain the Importance [8 marks • 12 mins]",
-              "guidance": "Write two distinct analytical paragraphs. In each paragraph, state one clear way X was important for Y, support with precise dates/facts, and link directly back to the question focus.",
-              "steps": [
-                {
-                  "letter": "P1",
-                  "name": "FIRST WAY IT WAS IMPORTANT",
-                  "prompt": "Point + specific dates/facts + explain why this mattered for the question focus.",
-                  "starter": ""
-                },
-                {
-                  "letter": "P2",
-                  "name": "SECOND WAY IT WAS IMPORTANT",
-                  "prompt": "Second distinct reason + specific evidence + direct link back to the question stem.",
-                  "starter": ""
-                }
+              "acronym": "2 PEEL Paragraphs Showing How X Changed Y • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the Cairo Conference (1964) and the growth of Fatah were important for escalating tension in the Middle East in the years 1964–67 because...",
+                "Second, the Cairo Conference (1964) and the growth of Fatah also transformed escalating tension in the Middle East in the years 1964–67 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "This was crucial for",
+                "Consequently",
+                "Furthermore",
+                "This transformed",
+                "As a direct result",
+                "Significantly"
+              ],
+              "vocab_bank": [
+                "National Water Carrier",
+                "Cairo Arab League Summit (Jan 1964)",
+                "Headwaters Diversion Plan",
+                "Palestine Liberation Organisation (PLO)",
+                "Yasser Arafat & Fatah",
+                "Syrian Neo-Ba’athist Regime (1966)",
+                "Golan Heights Shelling",
+                "Samu Raid (Nov 1966)",
+                "King Hussein of Jordan",
+                "7 April 1967 Aerial Clash"
               ]
             }
           }
@@ -7474,15 +7472,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence of Nasser's actions was that Israel was threatened and decided to fight.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion regarding conflict with zero supporting historical evidence."
+                "text": "One consequence of 7 April 1967 was that Syria was humiliated in the air and asked its allies for help against Israel.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Generalised assertion lacking specific aircraft losses, dates, or how Egypt and the USSR responded."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of Nasser's actions was that he closed the Straits of Tiran to Israeli ships, which cut off Israel's oil supply and made Israel attack.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies the blockade of the Straits of Tiran, but lacks causal explanation of the pre-emptive strike mechanism."
+                "text": "One consequence of the events of 7 April 1967 was that Israeli Mirage fighters shot down six Syrian MiG-21s over Damascus, prompting Syria to demand Egyptian support.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail (six Syrian MiG-21s), but needs causal explanation of how Soviet warnings then drew Nasser into Sinai."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -7490,21 +7488,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of the aerial battle of 7 April 1967 was military humiliation for Syria that drew the Soviet Union and Egypt into the May 1967 crisis. Because Israeli Mirage jets shot down six Syrian MiG-21 fighters without loss and chased planes over Damascus, Syrian leaders pressed Cairo for help under their defence pact. Fearing for its Syrian ally, the Soviet Union passed a false intelligence warning to Nasser on 13 May claiming Israeli brigades were massing on Syria’s border, prompting Egypt to mobilise 100,000 troops into Sinai.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 58 words. Accurately links specific facts (expelling UNEF, blockading Straits of Tiran at Sharm el-Sheikh) to the causal outcome (the pre-emptive air strike pre-emptive strike)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Accurately links specific facts (six Syrian MiG-21s downed over Damascus) to the 13 May false Soviet warning and Nasser’s 100,000-troop Sinai deployment."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, when President Nasser took the decision to... • Consequently, this resulted in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the events of 7 April 1967 was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -7541,17 +7534,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, when war broke out on 5 June 1967... • Consequently, this transformed the region because..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the outbreak of the Six-Day War (1967) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -7564,18 +7552,18 @@
             "model": "On 13 May 1967, a false Soviet intelligence warning alleging an Israeli troop buildup against Syria prompted Egyptian President Nasser to march 100,000 troops into Sinai and expel UNEF peacekeepers on 16 May. Escalating further, Nasser closed the Straits of Tiran to Israeli shipping on 22 May and signed a Joint Defence Pact with Jordan’s King Hussein on 30 May; when US President Lyndon B. Johnson failed to reopen Tiran by sea, Israel appointed Moshe Dayan Defence Minister to prepare a pre-emptive strike.<br><br>At 07:45 on 5 June 1967, the Israeli Air Force launched Operation Focus, flying beneath radar to crater Egyptian runways and destroy over 300 Egyptian aircraft on the ground within three hours. Shielded by total air supremacy between 5 and 8 June, Israeli armoured divisions under Tal, Yoffe, and Sharon routed Egyptian forces through the Mitla Pass to the Suez Canal, while Jordanian shelling of West Jerusalem triggered an Israeli counter-attack that captured East Jerusalem’s Old City and the West Bank by 7 June.<br><br>With Egypt and Jordan defeated, Dayan ordered a final assault on 9 June up the fortified Syrian Golan Heights, seizing Quneitra before a UN Security Council ceasefire took effect on 10 June 1967. In six days Israel tripled the territory under its control—occupying Sinai, Gaza, the West Bank, East Jerusalem, and the Golan Heights—placing over one million Palestinians under military occupation.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Statement",
+                "title": "2/8 Simple Narrative",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Basic Statement)",
-                "text": "The Golan Heights were important for Israeli security because Syrian soldiers used to shoot down at Israeli farms from the hills. Taking the heights protected Israeli farmers from being bombed.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Simple statement identifying border shelling, but contains zero specific geographical terms, dates, or wider defensive analysis."
+                "level": "Level 1 Top (Basic Story)",
+                "text": "In May 1967, President Nasser sent Egyptian troops into Sinai, removed UN peacekeepers, and closed the Straits of Tiran to Israeli ships. On 5 June 1967, Israel launched a surprise air strike that destroyed Egypt’s air force and went on to capture Sinai, the West Bank, and the Golan Heights in six days.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Simple chronological overview with limited own knowledge beyond the stimulus bullets."
               },
               "tier_5m": {
-                "title": "5/8 Descriptive Narrative",
+                "title": "5/8 Sequenced Account",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Descriptive Account)",
-                "text": "The Golan Heights were important for Israel because they were high ground overlooking northern Israel. Between 1948 and 1967, Syrian artillery had constantly shelled Israeli kibbutzim in the Hula Valley, which disrupted farming and terrorised civilians.<br><br>During the Six-Day War, Israeli soldiers scaled the steep cliffs and captured the plateau from Syria. Holding this area was important because it gave Israel a natural border and put their troops close to Damascus, making it much harder for Syria to attack.",
-                "verdict": "AO2 Level 2 (2–3 marks) • AO1 Level 2 (2–3 marks). Good descriptive knowledge of the 1948–67 shelling and the capture of the plateau, but largely descriptive rather than analysing specific security mechanisms (radar, Yom Kippur defense)."
+                "level": "Level 2 Top (Sequenced Narrative)",
+                "text": "The crisis began in May 1967 after a false Soviet report led Nasser to march 100,000 troops into Sinai, expel UNEF peacekeepers on 16 May, and close the Straits of Tiran on 22 May, before signing a Joint Defence Pact with King Hussein of Jordan on 30 May.<br><br>Next, at 07:45 on 5 June 1967, Israel launched Operation Focus, destroying over 300 Egyptian aircraft on the ground in three hours. Israeli armoured divisions then crossed Sinai to the Suez Canal while paratroopers captured East Jerusalem and the West Bank by 7 June.<br><br>Finally, Israeli troops stormed the Syrian Golan Heights on 9 June before a UN ceasefire took effect on 10 June 1967, tripling the territory under Israeli control.",
+                "verdict": "AO2 Level 2 (2–3 marks) • AO1 Level 2 (2–3 marks). Clear three-part chronological sequence with strong own knowledge, needing more explicit causal explanation of why US diplomatic failure and air supremacy decided each front."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
@@ -7587,31 +7575,40 @@
               }
             },
             "scaffolding": {
-              "acronym": "Chronological Narrative Framework",
-              "acronym_title": "Question 2: Narrative Account [8 marks • 12 mins]",
-              "guidance": "Organise chronologically from Beginning -> Key Developments -> Outcome, using causal linkers between every phase and adding own knowledge beyond the two stimulus bullets.",
-              "steps": [
-                {
-                  "letter": "1",
-                  "name": "BEGINNING",
-                  "prompt": "Opening event / trigger in chronological order.",
-                  "starter": ""
-                },
-                {
-                  "letter": "2",
-                  "name": "KEY DEVELOPMENTS",
-                  "prompt": "How and why this led to the main turning point.",
-                  "starter": ""
-                },
-                {
-                  "letter": "3",
-                  "name": "OUTCOME",
-                  "prompt": "Final result and how the sequence ended.",
-                  "starter": ""
-                }
+              "acronym": "Start → Middle → Outcome • Own Knowledge Required (Cap 4/8) • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the crisis began when...",
+                "This directly led to the next stage, when...",
+                "Consequently, the final outcome was..."
+              ],
+              "connectives_label": "Chronological & Causal Links",
+              "connectives_bank": [
+                "First",
+                "This directly led to",
+                "In response",
+                "Consequently",
+                "This escalated into",
+                "As a final result"
+              ],
+              "vocab_bank": [
+                "13 May 1967 Soviet Warning",
+                "UNEF Expulsion (16 May 1967)",
+                "Closure of Straits of Tiran (22 May 1967)",
+                "Egypt-Jordan Joint Defence Pact (30 May)",
+                "Moshe Dayan",
+                "Operation Focus (5 June 1967)",
+                "Mitla Pass & Sinai Peninsula",
+                "East Jerusalem & West Bank",
+                "Golan Heights (9–10 June 1967)",
+                "UN Ceasefire (10 June 1967)"
               ]
             },
             "stimulus": [
+              "The closure of the Straits of Tiran (22 May 1967)",
+              "Israel’s pre-emptive air strike (5 June 1967)"
+            ],
+            "bullet_points": [
               "The closure of the Straits of Tiran (22 May 1967)",
               "Israel’s pre-emptive air strike (5 June 1967)"
             ]
@@ -8740,15 +8737,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence of UN Resolution 242 was that the countries did not make peace.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion identifying a lack of peace, but contains zero supporting historical knowledge (names no countries, land, or terms)."
+                "text": "One consequence of the continued dispute over the Suez Canal after June 1967 was that ships could not pass through and fighting continued.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion without naming the Bar-Lev Line, lost Egyptian toll revenue, or the War of Attrition."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of UN Resolution 242 was that Israel kept the land it won in the Six-Day War and there was no peace with the Arab countries.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies the consequence with basic period knowledge (Six-Day War), but does not analyse terms or explain how 242 caused the stalemate."
+                "text": "One consequence of the Suez Canal dispute after June 1967 was that Israel built the fortified Bar-Lev Line along the east bank while the canal remained blocked by sunken ships.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail (blocked canal, Bar-Lev Line), but needs causal link to Nasser launching the 1969–70 War of Attrition."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -8756,21 +8753,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of the continued dispute over the Suez Canal after June 1967 was the prolonged closure of the waterway and the outbreak of the War of Attrition (1969–70). Because the Suez Canal remained blocked by sunken wrecks while Israel constructed the 20-metre sand ramparts and bunkers of the Bar-Lev Line along the east bank, Egypt lost vital canal revenues and feared Sinai’s occupation becoming permanent. From March 1969, Nasser launched heavy artillery bombardments and commando raids across the canal to wear down Israeli resolve.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 44 words (2 clear sentences). Pairs specific terms ('Land for Peace', occupied lands, Arab recognition) with causal outcome (War of Attrition)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs precise detail (sunken wrecks, 20-metre Bar-Lev Line sand ramparts, lost canal tolls) with direct outcome (Nasser’s 1969–70 War of Attrition)."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 2–3 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain what this directly led to (Explanation).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of UN Resolution 242 was... • Specifically, the resolution called for... • Consequently, this resulted in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the continued dispute over the Suez Canal after June 1967 was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             },
             "examiner_tip": "Award 1–2 marks for a simple statement of a consequence; award 3–4 marks for a specific factual detail explained to show a direct historical outcome."
@@ -8807,17 +8799,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 2–3 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain what this directly led to (Explanation).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One consequence of the dispute over the Suez Canal was... • Specifically, with the canal closed as a hostile frontline... • Consequently, this resulted in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the continued dispute over the Suez Canal was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -8830,18 +8817,18 @@
             "model": "First, UN Security Council Resolution 242 (22 November 1967) was important because it established the enduring \"Land for Peace\" diplomatic framework for future Middle East negotiations. Passed unanimously after Arab leaders issued the Khartoum Summit’s uncompromising \"Three Noes\" (1 September 1967), British-drafted Resolution 242 linked Israeli military withdrawal from conquered territory to Arab recognition of every regional state’s right to live in peace within secure and recognised borders, creating the benchmark later used in Egyptian, Jordanian, and Palestinian peace talks.<br><br>Second, deliberate ambiguity in Resolution 242’s wording entrenched diplomatic deadlock with Arab states and alienated the PLO. Calling in English for withdrawal from \"territories occupied\" rather than \"the territories\" allowed Israel to argue for defensible border adjustments while building the Bar-Lev Line and Allon Plan settlements, whereas Arab governments demanded total pre-war withdrawal; meanwhile, referring to Palestinians merely as a \"refugee problem\" ignored Palestinian statehood, prompting the PLO to reject Resolution 242 and escalate armed struggle.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Narrative",
+                "title": "2/8 Simple Statement",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Basic Story)",
-                "text": "After the Six-Day War in June 1967, Israel took control of East Jerusalem, the West Bank, and the Sinai desert. Arab leaders then met at Khartoum in Sudan and said they would not make peace with Israel. Later on, the United Nations passed Resolution 242 to try to stop the fighting.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Simple chronological story with basic knowledge, but contains zero causal linkages explaining how one development forced or triggered the next."
+                "level": "Level 1 Top (Basic Statement)",
+                "text": "UN Resolution 242 was important because it introduced the idea of \"Land for Peace\", asking Israel to withdraw from captured land in return for peace with Arab states. However, Israel and the Arab states disagreed over what it meant, so no peace deal was signed.",
+                "verdict": "AO1 Level 1 (1 mark) • AO2 Level 1 (1 mark). Valid basic point on \"Land for Peace\" and disagreement, lacking specific wording details or PLO reaction."
               },
               "tier_5m": {
-                "title": "5/8 Sequenced Account",
+                "title": "5/8 Descriptive Analysis",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Sequenced Narrative)",
-                "text": "The aftermath began when Israel occupied Sinai, Gaza, the West Bank, and the Golan Heights in June 1967, which caused 300,000 Palestinian refugees to flee across the River Jordan into neighbouring states.<br><br>Following this, Arab leaders met at the Khartoum Summit in August 1967. They issued the 'Three Noes'—no peace, no recognition, and no negotiation with Israel—because they refused to accept military defeat.<br><br>Finally, the United Nations passed Resolution 242 in November 1967. This set out the idea of 'Land for Peace', but both sides disagreed on what 'occupied territories' meant, so no lasting peace was achieved.",
-                "verdict": "AO2 Level 2 (2–3 marks) • AO1 Level 2 (2–3 marks). Covers three distinct aspects in clear sequence with accurate AO1 knowledge, but lacks explicit causal links demonstrating how each phase directly compelled the next."
+                "level": "Level 2 Top (Implicit Importance)",
+                "text": "First, UN Resolution 242 in November 1967 set out the \"Land for Peace\" formula after the Arab League’s Khartoum \"Three Noes\", calling for Israeli withdrawal alongside secure and recognised borders for every state in the region.<br><br>Second, the English text called for withdrawal from \"territories occupied\" rather than \"the territories\", and referred only to a \"refugee problem\" without mentioning Palestinian statehood. Israel kept building the Bar-Lev Line and Allon Plan settlements while the PLO rejected Resolution 242.",
+                "verdict": "AO1 Level 2 (2–3 marks) • AO2 Level 2 (2–3 marks). Accurate knowledge of both diplomatic principles and textual ambiguity, needing sharper analytical focus on long-term Arab-Israeli relations."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
@@ -8853,22 +8840,32 @@
               }
             },
             "scaffolding": {
-              "acronym": "Two-Paragraph Importance Framework",
-              "acronym_title": "Question 3: Explain the Importance [8 marks • 12 mins]",
-              "guidance": "Write two distinct analytical paragraphs. In each paragraph, state one clear way X was important for Y, support with precise dates/facts, and link directly back to the question focus.",
-              "steps": [
-                {
-                  "letter": "P1",
-                  "name": "FIRST WAY IT WAS IMPORTANT",
-                  "prompt": "Point + specific dates/facts + explain why this mattered for the question focus.",
-                  "starter": ""
-                },
-                {
-                  "letter": "P2",
-                  "name": "SECOND WAY IT WAS IMPORTANT",
-                  "prompt": "Second distinct reason + specific evidence + direct link back to the question stem.",
-                  "starter": ""
-                }
+              "acronym": "2 PEEL Paragraphs Showing How X Changed Y • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, UN Resolution 242 (November 1967) was important for Arab-Israeli relations after the Six Day War because...",
+                "Second, UN Resolution 242 (November 1967) also transformed Arab-Israeli relations after the Six Day War because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "This was crucial for",
+                "Consequently",
+                "Furthermore",
+                "This transformed",
+                "As a direct result",
+                "Significantly"
+              ],
+              "vocab_bank": [
+                "Occupied Territories (1967)",
+                "East Jerusalem & Western Wall",
+                "300,000 Refugees",
+                "Khartoum Resolution (\"Three Noes\")",
+                "UN Resolution 242 (Nov 1967)",
+                "\"Land for Peace\" Principle",
+                "Blocked Suez Canal",
+                "Bar-Lev Line",
+                "War of Attrition (1969–70)",
+                "Allon Plan & Settlements"
               ]
             }
           }
@@ -9950,15 +9947,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence was that Palestinian fighters hijacked planes and King Hussein was angry.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion with zero supporting historical evidence or named events."
+                "text": "One consequence of the expulsion of the PLO from Jordan was that PLO fighters moved their bases to Lebanon.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion of relocation without specific detail on Black September or northern border conflict."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the PFLP airplane hijacks was that King Hussein sent the Jordanian army to fight the Palestinian militias in the Black September civil war.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies Black September, but lacks explanation of Dawson's Field or the sovereign threat that triggered the war."
+                "text": "One consequence of King Hussein expelling the PLO from Jordan in 1970–71 was that thousands of PLO fighters moved to Beirut and southern Lebanon and formed the Black September group.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail, needing explanation of how this shifted cross-border raids and Israeli retaliation onto Lebanon."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -9966,21 +9963,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan during Black September (1970–71) was the relocation of the PLO’s political leadership and thousands of armed fighters to Beirut and southern Lebanon. Driven out of Jordan after tank battles in Amman claimed thousands of lives, the PLO established a new armed base in Lebanese refugee camps while forming the underground Black September faction to avenge its defeat. This shifted cross-border raids and Israeli retaliation onto Israel’s northern border with Lebanon.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 57 words. Directly connects specific factual evidence (Dawson's Field, PFLP, blowing up planes on TV) with the causal outcome (King Hussein declaring martial law and launching Black September)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects the 1970–71 Amman expulsion directly to PLO relocation into Lebanese camps, the creation of Black September, and northern border warfare."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, when the PFLP hijacked Western airliners to Dawson’s Field... • Consequently, this provoked King Hussein to..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the expulsion of the PLO from Jordan (1970) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -10017,17 +10009,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, following the expulsion of the PLO from Jordan... • Consequently, this forced the movement to..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the expulsion of the PLO from Jordan (1970) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -10063,22 +10050,32 @@
               }
             },
             "scaffolding": {
-              "acronym": "Two-Paragraph Importance Framework",
-              "acronym_title": "Question 3: Explain the Importance [8 marks • 12 mins]",
-              "guidance": "Write two distinct analytical paragraphs. In each paragraph, state one clear way X was important for Y, support with precise dates/facts, and link directly back to the question focus.",
-              "steps": [
-                {
-                  "letter": "P1",
-                  "name": "FIRST WAY IT WAS IMPORTANT",
-                  "prompt": "Point + specific dates/facts + explain why this mattered for the question focus.",
-                  "starter": ""
-                },
-                {
-                  "letter": "P2",
-                  "name": "SECOND WAY IT WAS IMPORTANT",
-                  "prompt": "Second distinct reason + specific evidence + direct link back to the question stem.",
-                  "starter": ""
-                }
+              "acronym": "2 PEEL Paragraphs Showing How X Changed Y • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, Black September and the Munich Olympics (1972) were important for international attitudes towards the Palestine issue because...",
+                "Second, Black September and the Munich Olympics (1972) also transformed international attitudes towards the Palestine issue because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "This was crucial for",
+                "Consequently",
+                "Furthermore",
+                "This transformed",
+                "As a direct result",
+                "Significantly"
+              ],
+              "vocab_bank": [
+                "Battle of Karameh (March 1968)",
+                "Yasser Arafat (PLO Chairman, 1969)",
+                "George Habash & PFLP",
+                "Dawson’s Field Hijackings (Sept 1970)",
+                "King Hussein of Jordan",
+                "Black September Civil War (1970–71)",
+                "PLO Relocation to Lebanon (\"Fatahland\")",
+                "Munich Olympics Massacre (Sept 1972)",
+                "Golda Meir",
+                "Operation Wrath of God"
               ]
             }
           }
@@ -11184,15 +11181,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence was that Israel kept building in the captured land and the Arabs wanted it back.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion with zero supporting historical knowledge."
+                "text": "One consequence of the Yom Kippur War was that Israel realised its army could be surprised and agreed to enter peace talks.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). General statement lacking specific military detail (Bar-Lev Line, Golan, Resolution 338)."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of consolidating control was that Israel built the Bar-Lev Line along the Suez Canal, which made Egypt plan an attack.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies the Bar-Lev Line, but lacks explanation of Sadat's strategic reasoning or the resulting 1973 war."
+                "text": "One consequence of the October 1973 Yom Kippur War was that Egyptian troops breached the Bar-Lev Line and inflicted heavy Israeli losses, ending the myth of Israeli invincibility.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies the breach of the Bar-Lev Line and heavy losses, needing explicit link to US-led negotiations after UN Resolution 338."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -11200,21 +11197,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of the Yom Kippur War (October 1973) was the shattering of the myth of Israeli military invulnerability, creating the conditions for US-led peace talks. Because Egyptian troops breached the Bar-Lev Line and Syrian tanks broke into the Golan Heights while inflicting heavy Israeli losses, Anwar Sadat restored Arab pride even after Israel counter-crossed the Suez Canal. Combined with OPEC’s oil embargo and UN Resolution 338, this shock forced Israel and the USA into serious negotiations.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 58 words. Directly links specific historical evidence (Bar-Lev Line along Suez Canal, civilian settlements) with the causal outcome (Sadat planning the 1973 Yom Kippur War)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs specific military shock (breaching the Bar-Lev Line, Golan fighting, OPEC embargo, Resolution 338) with the diplomatic shift toward US-brokered talks."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, as Israel consolidated control by building the Bar-Lev Line... • Consequently, this convinced Arab leaders that..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the Yom Kippur War (1973) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -11251,17 +11243,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, the initial surprise attack on 6 October 1973... • Consequently, the aftermath of the war resulted in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the Yom Kippur War (1973) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -11301,30 +11288,39 @@
               }
             },
             "scaffolding": {
-              "acronym": "Chronological Narrative Framework",
-              "acronym_title": "Question 2: Narrative Account [8 marks • 12 mins]",
-              "guidance": "Organise chronologically from Beginning -> Key Developments -> Outcome, using causal linkers between every phase and adding own knowledge beyond the two stimulus bullets.",
-              "steps": [
-                {
-                  "letter": "1",
-                  "name": "BEGINNING",
-                  "prompt": "Opening event / trigger in chronological order.",
-                  "starter": ""
-                },
-                {
-                  "letter": "2",
-                  "name": "KEY DEVELOPMENTS",
-                  "prompt": "How and why this led to the main turning point.",
-                  "starter": ""
-                },
-                {
-                  "letter": "3",
-                  "name": "OUTCOME",
-                  "prompt": "Final result and how the sequence ended.",
-                  "starter": ""
-                }
+              "acronym": "Start → Middle → Outcome • Own Knowledge Required (Cap 4/8) • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the crisis began when...",
+                "This directly led to the next stage, when...",
+                "Consequently, the final outcome was..."
+              ],
+              "connectives_label": "Chronological & Causal Links",
+              "connectives_bank": [
+                "First",
+                "This directly led to",
+                "In response",
+                "Consequently",
+                "This escalated into",
+                "As a final result"
+              ],
+              "vocab_bank": [
+                "War of Attrition (1969–70)",
+                "Bar-Lev Line",
+                "Anwar Sadat",
+                "Expulsion of Soviet Advisers (July 1972)",
+                "6 October 1973 Surprise Attack",
+                "Suez Canal & Golan Heights",
+                "Operation Nickel Grass (US Airlift)",
+                "Ariel Sharon & Third Army Encirclement",
+                "1973 OPEC Oil Embargo",
+                "UN Resolution 338"
               ]
-            }
+            },
+            "bullet_points": [
+              "The War of Attrition (1969–70)",
+              "The Yom Kippur War (October 1973)"
+            ]
           }
         ]
       },
@@ -12780,15 +12776,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence was that oil became expensive and America had to get involved in the Middle East.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion with zero supporting historical knowledge."
+                "text": "One consequence of the Treaty of Washington was that other Arab countries were angry at Egypt for making peace with Israel.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion without naming the Arab League suspension, Cairo-to-Tunis move, or Sadat’s assassination."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the OPEC oil embargo was that petrol prices quadrupled in the US, which made Henry Kissinger fly between capitals to try and make peace.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies quadrupled prices and Kissinger, but lacks causal explanation of the foreign policy shift."
+                "text": "One consequence of the March 1979 Treaty of Washington was that the Arab League suspended Egypt and moved its headquarters from Cairo to Tunis.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual support, needing wider explanation of why Egypt was boycotted and how anger fuelled Sadat’s 1981 assassination."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -12796,21 +12792,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of the Treaty of Washington (signed on 26 March 1979 as the formal Egypt-Israel Peace Treaty) was Egypt’s immediate diplomatic suspension and boycott by the Arab world alongside lasting peace on Israel’s southern border. While Israel withdrew from the entire Sinai Peninsula in return for diplomatic recognition and US aid, Arab states accused Anwar Sadat of betraying Palestinian rights, suspended Egypt from the Arab League, and moved League headquarters from Cairo to Tunis. Domestic Islamist anger at the separate peace also led to Sadat’s assassination in Cairo on 6 October 1981.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Accurately links specific economic evidence (OPEC embargo, quadrupled oil prices, stagflation) to the foreign policy outcome (Kissinger's shuttle diplomacy and disengagement pacts)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects the 26 March 1979 separate peace directly to Egypt’s Arab League suspension, HQ relocation to Tunis, and Sadat’s October 1981 assassination."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, the OPEC embargo quadrupled oil prices, which caused... • Consequently, this compelled the US government to..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the Treaty of Washington (1979) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -12821,43 +12812,38 @@
             "question": "1(b). Explain one consequence of the Treaty of Washington (1979). [4 marks]",
             "prompt": "Point (Shattered thirty years of psychological taboos and opened direct bilateral peace negotiations) • Fact (Sadat addressed the Knesset directly, declaring \"No more war, no more bloodshed\", offering full diplomatic peace in return for Arab land) • Consequence (Bypassed multilateral stalemates and laid the direct foundation for the 1978 Camp David summit).",
             "examiner_tip": "Focus on the psychological breakthrough: addressing the Knesset directly paved the way for the 1978 Camp David Accords.",
-            "model": "",
+            "model": "One consequence of the Treaty of Washington on 26 March 1979 was Israel’s complete phased withdrawal from the Sinai Peninsula in exchange for full diplomatic relations and peace on its southern border. Israel dismantled Jewish settlements including Yamit and returned Sinai oil fields to Egypt, while Egypt demilitarised Sinai and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran. Backed by billions of dollars in annual US economic and military aid, this permanently removed the Arab world’s strongest military power from any coalition against Israel.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence was that Sadat visited Israel and spoke about making peace.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion with zero supporting historical knowledge."
+                "text": "One consequence of the Treaty of Washington was that Israel gave back the Sinai desert to Egypt and ended thirty years of war between them.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Basic statement of withdrawal and peace without specific treaty terms or strategic impact."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of Sadat’s visit to Jerusalem was that he gave a speech in the Israeli Knesset saying there should be no more war, which surprised the world.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies the Knesset speech, but lacks causal explanation of how this produced the Camp David Accords."
+                "text": "One consequence of the March 1979 Treaty of Washington was that Israel withdrew its troops and settlers from the Sinai Peninsula in return for diplomatic recognition and free shipping through the Suez Canal.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate terms identified, needing causal explanation of how US aid and removing Egypt transformed Israel’s strategic security."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
-                "badge": "Printed Workbook WAGOLL",
-                "text": "",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 57 words. Directly connects specific historical evidence (landing at Ben Gurion Airport, Knesset speech, 'no more war') with the causal outcome (Camp David summit under Jimmy Carter)."
+                "badge": "Edexcel Benchmark",
+                "text": "One consequence of the Treaty of Washington on 26 March 1979 was Israel’s complete phased withdrawal from the Sinai Peninsula in exchange for full diplomatic relations and peace on its southern border. Israel dismantled Jewish settlements including Yamit and returned Sinai oil fields to Egypt, while Egypt demilitarised Sinai and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran. Backed by billions of dollars in annual US economic and military aid, this permanently removed the Arab world’s strongest military power from any coalition against Israel.",
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs precise treaty terms (Sinai withdrawal, Yamit dismantled, Suez/Tiran navigation, US aid) with strategic transformation (removing Egypt from Arab war coalitions)."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Fact), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, on 19 November 1977, Sadat landed at Ben Gurion Airport and... • Consequently, this historic gesture directly resulted in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the Treaty of Washington (1979) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -12870,18 +12856,18 @@
             "model": "First, President Jimmy Carter’s personal mediation at Camp David in September 1978 rescued Egyptian-Israeli diplomacy when direct talks between Anwar Sadat and Menachem Begin had deadlocked after their 1977 Jerusalem and Ismailia visits. Sequestering both delegations for thirteen days at Camp David in Maryland, Carter shuttled tirelessly between their cabins to draft compromise wording when Begin and Sadat refused to speak face to face, backing his diplomacy with generous promises of annual US economic and military aid.<br><br>Second, the Camp David Accords signed on 17 September 1978 created the direct \"Land for Peace\" blueprint for the March 1979 Treaty of Washington — the first peace treaty between Israel and an Arab nation. By separating a concrete bilateral framework for complete Israeli withdrawal from the Sinai Peninsula and free navigation through Suez and Tiran from a vaguer five-year Palestinian autonomy plan, Camp David ended thirty years of war with Egypt and permanently removed the Arab world’s strongest military power from the coalition against Israel.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Simple Narrative",
+                "title": "2/8 Simple Statement",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 Top (Basic Story)",
-                "text": "After the 1973 war, Henry Kissinger flew back and forth between Egypt and Israel to stop the fighting. Later, in 1977, President Anwar Sadat flew to Jerusalem and gave a speech in the Knesset saying he wanted peace. This led to peace talks between the two countries.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Simple chronological sequence, but contains zero causal linkages explaining why Kissinger intervened or why Sadat took his gamble."
+                "level": "Level 1 Top (Basic Statement)",
+                "text": "President Carter and Camp David were important because Carter brought Sadat and Begin together in America in 1978 when their talks had broken down, helping them agree a plan that led to the 1979 peace treaty.",
+                "verdict": "AO1 Level 1 (1 mark) • AO2 Level 1 (1 mark). Valid basic statement on mediation, lacking specific details of the 13-day summit, US aid, or Sinai terms."
               },
               "tier_5m": {
-                "title": "5/8 Sequenced Account",
+                "title": "5/8 Descriptive Analysis",
                 "score": "5 / 8 Marks",
-                "level": "Level 2 Top (Sequenced Narrative)",
-                "text": "The diplomatic process began in 1974 when Henry Kissinger conducted shuttle diplomacy between Egypt and Israel. This led to the Sinai disengagement agreements and the reopening of the Suez Canal in 1975.<br><br>However, in May 1977, Menachem Begin's Likud party won the Israeli election, creating fears that peace talks would collapse because Begin was opposed to giving back land.<br><br>To break the deadlock, President Sadat made a surprise visit to Jerusalem in November 1977. He spoke to the Israeli parliament and offered peace in exchange for Egyptian land, which created the trust needed for the Camp David Accords.",
-                "verdict": "AO2 Level 2 (2–3 marks) • AO1 Level 2 (2–3 marks). Covers three distinct aspects in clear sequence with accurate facts, but lacks explicit causal connectives explaining how the Likud election crisis directly compelled Sadat's radical initiative."
+                "level": "Level 2 Top (Implicit Importance)",
+                "text": "First, President Jimmy Carter invited Anwar Sadat and Menachem Begin to Camp David in September 1978 after direct talks following Jerusalem and Ismailia had stalled. Over thirteen days, Carter shuttled personally between their cabins and promised generous US economic and military aid to reach a compromise.<br><br>Second, the Camp David Accords signed on 17 September 1978 agreed a \"Land for Peace\" framework for complete Israeli withdrawal from the Sinai Peninsula in exchange for diplomatic recognition, providing the blueprint for the March 1979 Treaty of Washington.",
+                "verdict": "AO1 Level 2 (2–3 marks) • AO2 Level 2 (2–3 marks). Good factual detail across both paragraphs, needing stronger analytical focus on how separating Sinai from Palestinian autonomy unlocked bilateral peace."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
@@ -12893,22 +12879,32 @@
               }
             },
             "scaffolding": {
-              "acronym": "Two-Paragraph Importance Framework",
-              "acronym_title": "Question 3: Explain the Importance [8 marks • 12 mins]",
-              "guidance": "Write two distinct analytical paragraphs. In each paragraph, state one clear way X was important for Y, support with precise dates/facts, and link directly back to the question focus.",
-              "steps": [
-                {
-                  "letter": "P1",
-                  "name": "FIRST WAY IT WAS IMPORTANT",
-                  "prompt": "Point + specific dates/facts + explain why this mattered for the question focus.",
-                  "starter": ""
-                },
-                {
-                  "letter": "P2",
-                  "name": "SECOND WAY IT WAS IMPORTANT",
-                  "prompt": "Second distinct reason + specific evidence + direct link back to the question stem.",
-                  "starter": ""
-                }
+              "acronym": "2 PEEL Paragraphs Showing How X Changed Y • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, US President Carter and Camp David (1978) were important for peace between Israel and Egypt because...",
+                "Second, US President Carter and Camp David (1978) also transformed peace between Israel and Egypt because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "This was crucial for",
+                "Consequently",
+                "Furthermore",
+                "This transformed",
+                "As a direct result",
+                "Significantly"
+              ],
+              "vocab_bank": [
+                "Henry Kissinger’s Shuttle Diplomacy",
+                "Sinai I & II Disengagement (1974–75)",
+                "Menachem Begin & Likud (1977)",
+                "Sadat’s Visit to Jerusalem (Nov 1977)",
+                "Ismailia Summit (Dec 1977)",
+                "President Jimmy Carter",
+                "Camp David Accords (Sept 1978)",
+                "Treaty of Washington (March 1979)",
+                "Sinai Withdrawal & US Aid",
+                "Arab League Suspension & 1981 Assassination"
               ]
             }
           }
@@ -14315,15 +14311,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence of Operation Litani was that the Israeli army invaded Lebanon and the United Nations got involved.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion identifying an invasion, but contains zero specific details or terms."
+                "text": "One consequence of Arafat’s 1988 UN speech renouncing terrorism was that the United States agreed to start official talks with the PLO.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Identifies US talks broadly without naming Geneva, Resolution 242, or President Reagan."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of Operation Litani was that Israeli troops marched to the Litani River to push PLO fighters back, which led to the United Nations sending UNIFIL soldiers to keep the peace.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies Litani River and UNIFIL, but lacks causal explanation of how Israel secured its northern border via proxy forces."
+                "text": "One consequence of Arafat’s December 1988 UN speech in Geneva was that by renouncing terrorism and accepting UN Resolution 242, he persuaded President Reagan’s administration to lift its ban on talking to the PLO.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual knowledge, needing fuller explanation of how US-PLO dialogue paved the way for 1990s peace talks."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -14331,21 +14327,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva renouncing terrorism was the immediate opening of official diplomatic dialogue between the United States and the PLO. By explicitly rejecting terrorism in all forms, accepting UN Resolutions 242 and 338, and confirming Israel’s right to exist in peace and security, Arafat satisfied Washington’s strict diplomatic conditions. President Reagan’s administration lifted its ban on official contact with the PLO, paving the way for Palestinian involvement in the 1990s peace process.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly links the Israeli military advance (25,000 troops, Litani River) to the causal outcome (UN Resolution 425, UNIFIL deployment, South Lebanon Army buffer zone)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects specific Geneva declarations (renouncing terrorism, Resolutions 242 and 338, Israel’s right to exist) to Reagan lifting the US diplomatic ban ahead of 1990s negotiations."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, during Operation Litani in March 1978, the IDF... • Consequently, this led directly to..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of Arafat’s renunciation of terrorism in a speech at the UN (1988) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -14356,43 +14347,38 @@
             "question": "1(b). Explain one consequence of Arafat’s renunciation of terrorism in a speech at the UN (1988). [4 marks]",
             "prompt": "Point (A spontaneous grassroots uprising ignited across the Gaza Strip and West Bank against 20 years of military occupation) • Fact (On 8 December 1987, an IDF tank transporter crashed into Palestinian cars in the Gaza Strip, killing four workers from Jabalia camp; rumors of deliberate retaliation triggered widespread strikes, barricades, and stone-throwing) • Consequence (Shattered Israeli complacency that the occupied territories were docile and created a new form of mass civil resistance).",
             "examiner_tip": "Focus on the shift in the balance of power: the emergence of grassroots civil resistance that shattered Israel's belief that the occupied territories could be peacefully managed.",
-            "model": "",
+            "model": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva renouncing terrorism and accepting UN Resolutions 242 and 338 was a decisive shift by the PLO toward two-state diplomacy that sharpened divisions with Palestinian rejectionists. While recognising Israel’s right to exist in peace positioned the mainstream PLO as an internationally credible partner for future peace negotiations, rival Islamist movement Hamas — founded in Gaza by Sheikh Ahmed Yassin — condemned diplomatic compromise and vowed continued armed struggle across all of historic Palestine.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence was that Palestinians started throwing stones and Israeli soldiers had to fight them.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simplistic statement identifying stone-throwing without historical precision or causal outcome."
+                "text": "One consequence of Arafat’s 1988 UN speech was that the PLO moved towards peaceful two-state talks, while extremist groups opposed him.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion lacking specific names (Geneva, Resolution 242, Hamas)."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the First Intifada was that Palestinian youths in Gaza and the West Bank organized general strikes and threw stones at Israeli troops, proving they rejected the military occupation.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies stone-throwing and strikes in Gaza/West Bank, but lacks causal explanation of the strategic collapse of Israeli occupation policy."
+                "text": "One consequence of Arafat renouncing terrorism and accepting UN Resolution 242 in December 1988 was a split with militant Palestinian groups like Hamas, which rejected any two-state compromise with Israel.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies Resolution 242 and Hamas opposition, needing deeper explanation of the divide between PLO diplomacy and Islamist armed struggle."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
-                "badge": "Printed Workbook WAGOLL",
-                "text": "",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly links the catalyst (Jabalia incident) and civil disobedience (strikes, boycotts) to the strategic outcome (shattering Israeli complacency over military occupation)."
+                "badge": "Edexcel Benchmark",
+                "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva renouncing terrorism and accepting UN Resolutions 242 and 338 was a decisive shift by the PLO toward two-state diplomacy that sharpened divisions with Palestinian rejectionists. While recognising Israel’s right to exist in peace positioned the mainstream PLO as an internationally credible partner for future peace negotiations, rival Islamist movement Hamas — founded in Gaza by Sheikh Ahmed Yassin — condemned diplomatic compromise and vowed continued armed struggle across all of historic Palestine.",
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs specific diplomatic shifts (Geneva speech, Resolutions 242 & 338, two-state recognition) with ideological division against Sheikh Ahmed Yassin’s Hamas."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, following the Jabalia checkpoint incident, Palestinian communities... • Consequently, this uprising proved that..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of Arafat’s renunciation of terrorism in a speech at the UN (1988) was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -14404,18 +14390,18 @@
             "model": "First, the First Intifada shattered Israeli confidence that military occupation of Gaza and the West Bank could be maintained indefinitely without political compromise. Sparked in December 1987 after twenty years of military rule and coordinated by the underground UNLU through strikes, tax boycotts, and stone-throwing youths, the grassroots uprising exposed the limits of Defence Minister Yitzhak Rabin’s \"Iron Fist\" beatings and curfews. Global television images of heavily armed soldiers confronting unarmed teenagers damaged Israel’s international standing and convinced leaders like Rabin that a political settlement was necessary.<br><br>Second, the Intifada transformed Palestinian and regional diplomacy so two-state negotiations could begin. Pressured by local uprising leaders inside the occupied territories, the rise of rival Islamist group Hamas in Gaza, and Jordan dropping its claim to the West Bank in July 1988, Tunis-based Yasser Arafat proclaimed Palestinian independence alongside Israel in November 1988 and addressed the UN in Geneva in December 1988 to renounce terrorism and accept Resolution 242. This unlocked official US-PLO dialogue and laid the foundation for the Oslo Accords.",
             "model_tiers": {
               "tier_2m": {
-                "title": "2/8 Basic Statements",
+                "title": "2/8 Simple Statement",
                 "score": "2 / 8 Marks",
-                "level": "Level 1 (Simple Statements)",
-                "text": "Offers isolated descriptive statements without chronological linkage or analytical focus.",
-                "verdict": "AO1/AO2 Level 1 (1–2 marks)."
+                "level": "Level 1 Top (Basic Statement)",
+                "text": "The First Intifada was important because mass Palestinian protests and stone-throwing in Gaza and the West Bank showed Israel and the world that military occupation could not carry on forever, pushing leaders towards peace negotiations.",
+                "verdict": "AO1 Level 1 (1 mark) • AO2 Level 1 (1 mark). Valid general point about pressure for peace, but lacks specific factual detail (UNLU, Rabin’s \"Iron Fist\", Hamas, 1988 Algiers/Geneva shifts)."
               },
               "tier_4m": {
                 "title": "4/8 Descriptive",
                 "score": "4 / 8 Marks",
                 "level": "Level 2 (Implicit Links)",
-                "text": "Includes accurate factual material across the period, but describes events rather than explaining causal links or importance.",
-                "verdict": "AO1/AO2 Level 2 (3–5 marks)."
+                "text": "From December 1987, Palestinians across Gaza and the West Bank organised strikes, tax boycotts, and demonstrations through the underground UNLU, while Defence Minister Yitzhak Rabin’s harsh \"Iron Fist\" beatings and curfews damaged Israel’s image on international television.<br><br>During the uprising, Sheikh Ahmed Yassin founded Hamas in Gaza, King Hussein dropped Jordan’s claim to the West Bank in July 1988, and Yasser Arafat declared Palestinian independence in November 1988 before renouncing terrorism at the UN in Geneva in December 1988.",
+                "verdict": "AO1 Level 2 (2 marks) • AO2 Level 2 (2 marks). Strong factual recall across both Israeli and Palestinian developments, but describes events rather than explicitly explaining how they unlocked two-state negotiations."
               },
               "tier_8m": {
                 "title": "8/8 Grade 9 Exam ★",
@@ -14427,22 +14413,32 @@
               }
             },
             "scaffolding": {
-              "acronym": "Two-Paragraph Importance Framework",
-              "acronym_title": "Question 3: Explain the Importance [8 marks • 12 mins]",
-              "guidance": "Write two distinct analytical paragraphs. In each paragraph, state one clear way X was important for Y, support with precise dates/facts, and link directly back to the question focus.",
-              "steps": [
-                {
-                  "letter": "P1",
-                  "name": "FIRST WAY IT WAS IMPORTANT",
-                  "prompt": "Point + specific dates/facts + explain why this mattered for the question focus.",
-                  "starter": ""
-                },
-                {
-                  "letter": "P2",
-                  "name": "SECOND WAY IT WAS IMPORTANT",
-                  "prompt": "Second distinct reason + specific evidence + direct link back to the question stem.",
-                  "starter": ""
-                }
+              "acronym": "2 PEEL Paragraphs Showing How X Changed Y • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the First Palestinian Intifada (1987–93) was important for attempts to find a solution in the Middle East because...",
+                "Second, the First Palestinian Intifada (1987–93) also transformed attempts to find a solution in the Middle East because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "This was crucial for",
+                "Consequently",
+                "Furthermore",
+                "This transformed",
+                "As a direct result",
+                "Significantly"
+              ],
+              "vocab_bank": [
+                "1974 UN Observer Status",
+                "Operation Litani (1978) & UNIFIL",
+                "Operation Peace for Galilee (1982)",
+                "Sabra & Shatila Massacre (Sept 1982)",
+                "Kahan Commission & Hezbollah",
+                "First Intifada (Dec 1987)",
+                "Unified National Leadership (UNLU)",
+                "Yitzhak Rabin’s \"Iron Fist\" Policy",
+                "Sheikh Ahmed Yassin & Hamas",
+                "Arafat’s Geneva UN Speech (Dec 1988)"
               ]
             }
           }
@@ -15751,15 +15747,15 @@
                 "title": "1/4 Assertion",
                 "score": "1 / 4 Marks",
                 "level": "Level 1 Bottom (Assertion)",
-                "text": "One consequence of the secret Oslo talks was that Israel and the PLO agreed to talk to each other and make peace.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion lacking specific historical names, agreements, or terms."
+                "text": "One consequence of setting up the Palestinian National Authority in 1994 was that Palestinians gained control over running local areas for the first time.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). General statement lacking specific locations (Gaza and Jericho), Arafat’s return, or unresolved final-status limits."
               },
               "tier_2m": {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the secret Oslo negotiations was that Yitzhak Rabin and Yasser Arafat signed Letters of Mutual Recognition in 1993, meaning Israel and the PLO finally officially recognized each other.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies Rabin, Arafat, and mutual recognition, but lacks causal explanation of the terms (renunciation of terrorism, representation of Palestinians)."
+                "text": "One consequence of setting up the Palestinian National Authority in 1994 was that Yasser Arafat returned from exile in Tunis to run civil affairs and local policing in Gaza and Jericho.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail, needing fuller explanation of Israeli troop withdrawal from those enclaves and the limits of interim self-rule."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
@@ -15767,21 +15763,16 @@
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of setting up the Palestinian National Authority (PNA) in 1994 under the Oslo I framework was the first Palestinian self-government over civil affairs and internal policing in the Gaza Strip and Jericho. Yasser Arafat returned from exile in Tunis to lead the PNA administration over schools, health, and local security as Israeli troops withdrew from those enclaves. However, core final-status issues — Jerusalem, permanent borders, refugees, and Israeli settlements — remained unresolved.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly links the secret talks to the specific diplomatic outcome (Letters of Mutual Recognition, PLO recognized as representative, Israel's right to exist recognized, terrorism renounced)."
+                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects the 1994 PNA handover in Gaza and Jericho (Arafat’s return, civil administration, policing) with the ongoing deferral of final-status issues."
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, the secret talks in Norway resulted in Letters of Mutual Recognition where... • Consequently, this breakthrough paved the way for..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the setting up of the Palestinian National Authority in 1994 was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -15818,17 +15809,12 @@
               }
             },
             "scaffolding": {
-              "acronym": "PEE (Point • Evidence • Explanation)",
-              "acronym_title": "The Edexcel 4-Mark Consequence Formula (1 Concise Paragraph)",
-              "guidance": "Write 1 concise paragraph (approx. 3–4 sentences). State one clear consequence (Point), support with accurate historical facts (Evidence), and explain the causal link to the event (Consequence Link).",
+              "acronym": "1 Consequence + Specific Detail + Impact • 5m",
+              "button_label": "Sentence Starters",
               "sentence_starters": [
-                "One major consequence was... • Specifically, following Rabin’s murder by Yigal Amir at a peace rally... • Consequently, this traumatic loss resulted in..."
-              ],
-              "connectives_bank": [
-                "One consequence was",
-                "Specifically, this meant that",
-                "Consequently, this directly led to",
-                "As a result of this"
+                "One important consequence of the assassination of Yitzhak Rabin on 4 November 1995 was...",
+                "Specifically, ...",
+                "Consequently, this led to..."
               ]
             }
           },
@@ -15869,30 +15855,39 @@
               }
             },
             "scaffolding": {
-              "acronym": "Chronological Narrative Framework",
-              "acronym_title": "Question 2: Narrative Account [8 marks • 12 mins]",
-              "guidance": "Organise chronologically from Beginning -> Key Developments -> Outcome, using causal linkers between every phase and adding own knowledge beyond the two stimulus bullets.",
-              "steps": [
-                {
-                  "letter": "1",
-                  "name": "BEGINNING",
-                  "prompt": "Opening event / trigger in chronological order.",
-                  "starter": ""
-                },
-                {
-                  "letter": "2",
-                  "name": "KEY DEVELOPMENTS",
-                  "prompt": "How and why this led to the main turning point.",
-                  "starter": ""
-                },
-                {
-                  "letter": "3",
-                  "name": "OUTCOME",
-                  "prompt": "Final result and how the sequence ended.",
-                  "starter": ""
-                }
+              "acronym": "Start → Middle → Outcome • Own Knowledge Required (Cap 4/8) • 12m",
+              "button_label": "Starters & Word Bank",
+              "sentence_starters": [
+                "First, the crisis began when...",
+                "This directly led to the next stage, when...",
+                "Consequently, the final outcome was..."
+              ],
+              "connectives_label": "Chronological & Causal Links",
+              "connectives_bank": [
+                "First",
+                "This directly led to",
+                "In response",
+                "Consequently",
+                "This escalated into",
+                "As a final result"
+              ],
+              "vocab_bank": [
+                "End of Cold War & 1991 Gulf War",
+                "Madrid Peace Conference (Oct 1991)",
+                "Yitzhak Rabin & Secret Oslo Talks",
+                "Letters of Mutual Recognition (Sept 1993)",
+                "Oslo I Accord / Declaration of Principles",
+                "Palestinian National Authority (1994)",
+                "Israel-Jordan Peace Treaty (Oct 1994)",
+                "Oslo II (Areas A, B & C, Sept 1995)",
+                "Hebron Massacre & Hamas Bombings",
+                "Assassination of Yitzhak Rabin (Nov 1995)"
               ]
-            }
+            },
+            "bullet_points": [
+              "The Oslo Accords (1993)",
+              "Oslo II (1995)"
+            ]
           }
         ]
       },

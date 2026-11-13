@@ -782,35 +782,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source A about the condition of Germany in November 1918.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>German civilians suffered from severe malnutrition and starvation.<br><strong>Details in the source that tell me this:</strong><br>'silent, emaciated crowds' with faces 'yellow from starvation'.</p><p><strong>(ii) What I can infer:</strong><br>Government authority had completely collapsed into revolution.<br><strong>Details in the source that tell me this:</strong><br>'red flags hang from government windows while soldiers sit begging'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source A about the condition of Germany in November 1918 is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about the condition of Germany in November 1918 is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -845,15 +828,43 @@
               "Military defeat in the First World War",
               "The Kiel Mutiny and German Revolution"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "Military defeat in the First World War",
+              "The Kiel Mutiny and German Revolution"
+            ],
             "model": "<p>One decisive reason for the Weimar Republic was <strong>military collapse and revolutionary unrest in late 1918</strong>. By October 1918, Germany faced inevitable defeat, prompting sailors at Kiel to mutiny rather than launch a suicidal assault against the British fleet. Mutiny spread across major cities, with workers' councils demanding the Kaiser’s abdication. Therefore, this established the Weimar Republic because mutiny and civil rebellion shattered the imperial regime's authority, forcing Kaiser Wilhelm II to abdicate on 9 November 1918 to prevent total state collapse.</p><p>Furthermore, the republic was created to <strong>preempt a violent Bolshevik-style communist takeover</strong>. With armed left-wing revolutionaries forming councils in Berlin, moderate SPD leader Friedrich Ebert moved quickly to proclaim a parliamentary democracy. Ebert secured the Ebert-Groener Pact with the army to crush radical extremism and preserve constitutional order. Therefore, this established the republic because moderate socialist politicians instituted a parliamentary democracy to satisfy popular demands for peace while preventing a violent Russian-style revolution.</p><p>Finally, a democratic republic was necessitated by <strong>Allied conditions for an immediate armistice</strong>. US President Woodrow Wilson stated the Allies would only negotiate peace with a democratic government representing the German people. Desperate to end the British naval blockade starving German cities, imperial commanders urged the transition to a civilian government. Therefore, this created the republic because creating a democratic constitution was the mandatory prerequisite for securing an armistice and halting catastrophic civilian starvation.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the Weimar Republic was established in Germany in 1918–1919 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Kiel Mutiny",
+                "Turnip Winter",
+                "Allied naval blockade",
+                "Kaiser Wilhelm II",
+                "Philipp Scheidemann",
+                "Armistice (11 Nov 1918)",
+                "Friedrich Ebert",
+                "Ebert-Groener Pact",
+                "Weimar National Assembly",
+                "Universal suffrage",
+                "Proportional Representation",
+                "Article 48"
               ]
             },
             "model_tiers": {
@@ -2080,35 +2091,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source B about German public reactions to the Treaty of Versailles.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Germany rejected sole moral responsibility for the war.<br><strong>Details in the source that tell me this:</strong><br>'confessions of guilt on our lips would be a lie'.</p><p><strong>(ii) What I can infer:</strong><br>Germans viewed the Allied naval blockade as an atrocity.<br><strong>Details in the source that tell me this:</strong><br>'hundreds of thousands of non-combatants perished through the blockade'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source B about German public reactions to the Treaty of Versailles is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about German public reactions to the Treaty of Versailles is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -2143,15 +2137,43 @@
               "The Treaty of Versailles (1919)",
               "The Spartacist Uprising (1919)"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The Treaty of Versailles (1919)",
+              "The Spartacist Uprising (1919)"
+            ],
             "model": "<p>One decisive reason for challenges to Weimar was <strong>right-wing nationalist fury over the Treaty of Versailles and the 'stab-in-the-back' myth (Dolchstoßlegende)</strong>. Nationalists, military elites, and Freikorps paramilitaries viewed the war guilt clause (Article 231) and £6.6 billion reparations as national humiliations, branding democratic politicians 'November Criminals'. Therefore, this caused right-wing challenges because right-wing militarists refused to accept military defeat, launching putsches like the 1920 Kapp Putsch to overthrow the democratic system they despised.</p><p>Furthermore, challenges erupted from <strong>radical left-wing communists inspired by the 1917 Russian Bolshevik Revolution</strong>. The Spartacist League (KPD), led by Rosa Luxemburg and Karl Liebknecht, rejected parliamentary democracy, demanding that power belong to workers' councils. In January 1919, 100,000 workers staged armed uprisings in Berlin, seizing railway stations and newspaper offices. Therefore, this caused left-wing challenges because radical communists actively attempted to overthrow Ebert’s moderate regime through armed urban revolution.</p><p>Finally, challenges escalated due to <strong>the catastrophic economic ruin triggered by the 1923 French occupation of the Ruhr and hyperinflation</strong>. When French troops occupied the industrial Ruhr after Germany defaulted on timber and coal payments, the government ordered passive resistance and printed vast amounts of unbacked paper marks. This caused hyperinflation, wiping out the life savings of the middle class. Therefore, this provoked severe challenges because economic devastation destroyed public confidence in democracy, encouraging uprisings like Hitler's Munich Putsch in November 1923.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why there were challenges to the Weimar Republic from both the left and right in the years 1919–1923 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Spartacist Uprising",
+                "Rosa Luxemburg",
+                "Freikorps",
+                "Article 231 (War Guilt)",
+                "£6.6 billion reparations",
+                "Dolchstoß (stab-in-the-back)",
+                "Kapp Putsch (1920)",
+                "General von Seeckt",
+                "Organisation Consul",
+                "Walther Rathenau",
+                "Occupation of the Ruhr",
+                "Hyperinflation (1923)"
               ]
             },
             "model_tiers": {
@@ -2183,30 +2205,40 @@
             "tariff": "8 marks",
             "type": "utility_8m",
             "question": "How useful are Sources B and C for an enquiry into challenges facing the Weimar Republic in the years 1920–1923?",
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Kapp Putsch, Freikorps, Hyperinflation), and Provenance (Nature, Origin, Purpose).",
             "model": "<p>Source B is highly useful for investigating German hostility to Versailles because it shows Count Brockdorff-Rantzau repudiating War Guilt, declaring that 'confessions of guilt would be a lie'. German delegates were excluded from negotiations and presented with a non-negotiable 'Diktat', forced to accept £6.6 billion reparations and military reduction to 100,000 men. As an official diplomatic speech delivered before the Paris Peace Conference in May 1919, its purpose was formal protest, providing reliable evidence of German outrage over Article 231.</p><p>Source C is equally useful because it exposes Allied determination to punish Germany. The British cartoon depicts the Allies forcing Germany to swallow the peace terms, reflecting Prime Minister Lloyd George's public promise to 'squeeze Germany until the pips squeak'. French Premier Georges Clemenceau sought to permanently crush Germany militarily to guarantee French border security. As contemporary political satire from *Punch*, its purpose was British public commentary, capturing the victor powers' uncompromising and punitive posture.</p><p>Together, both sources illustrate the irreconcilable divide between Allied retribution and German resentment.</p>",
             "scaffolding": {
-              "acronym": "Two-Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE B",
-                  "name": "1. Source B (Kapp Putsch Freikorps)",
-                  "prompt": "Analyse content on armed military revolt; corroborate with facts on Seeckt's refusal to fire and the General Strike."
-                },
-                {
-                  "letter": "SOURCE C",
-                  "name": "2. Source C (Trillion-Mark Banknote)",
-                  "prompt": "Analyse content on currency collapse; corroborate with 4.2 trillion marks exchange rate and wiped-out savings."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Comparative Judgment",
-                  "prompt": "Weigh both sources: conclude how Source B covers the political/military crisis and Source C covers the economic crisis."
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source B is useful for an enquiry into challenges facing the Weimar Republic in the years 1920–1923 because its content shows...",
+                "Historically, at this time, ... Furthermore, Source B’s provenance makes it useful because...",
+                "Similarly, Source C is useful for an enquiry into challenges facing the Weimar Republic in the years 1920–1923 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "Spartacist Uprising",
+                "Rosa Luxemburg",
+                "Freikorps",
+                "Article 231 (War Guilt)",
+                "£6.6 billion reparations",
+                "Dolchstoß (stab-in-the-back)",
+                "Kapp Putsch (1920)",
+                "General von Seeckt",
+                "Organisation Consul",
+                "Walther Rathenau",
+                "Occupation of the Ruhr",
+                "Hyperinflation (1923)"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes/visual details: Quote 1 anchors what the source literally says/shows; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -3360,35 +3392,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source C about the impact of the Rentenmark and economic recovery in Germany after 1924.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Paper currency lost all practical purchasing power.<br><strong>Details in the source that tell me this:</strong><br>'carried cash in laundry baskets to buy a single loaf of bread'.</p><p><strong>(ii) What I can infer:</strong><br>Middle-class families had their lifetime savings wiped out.<br><strong>Details in the source that tell me this:</strong><br>'savings accumulated over decades were destroyed in a matter of hours'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source C about the impact of the Rentenmark and economic recovery in Germany after 1924 is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about the impact of the Rentenmark and economic recovery in Germany after 1924 is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -3423,15 +3438,43 @@
               "The introduction of the Rentenmark",
               "The Dawes Plan (1924)"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The introduction of the Rentenmark",
+              "The Dawes Plan (1924)"
+            ],
             "model": "<p>One decisive reason for economic recovery was <strong>Gustav Stresemann’s decisive monetary stabilization through the Rentenmark in late 1923</strong>. As Chancellor, Stresemann halted passive resistance in the Ruhr and abolished the ruined paper mark, replacing it with the Rentenmark backed by agricultural land before introducing the Reichsmark. Therefore, this led to economic recovery because strict fiscal control permanently halted hyperinflation, restoring public and business confidence in the currency and encouraging capital investment.</p><p>Furthermore, recovery was powered by <strong>the 1924 Dawes Plan and American financial capital</strong>. Brokered by US banker Charles Dawes, reparations were restructured and US banks provided an initial 800 million gold mark loan. Over five years, nearly $3 billion in American loans flowed into German municipal infrastructure, modernizing chemical, electrical, and coal manufacturing. Therefore, this caused economic recovery because massive foreign capital injection modernized industrial production, returning German manufacturing output to pre-war 1913 levels by 1928.</p><p>Finally, international standing recovered through <strong>Stresemann’s brilliant foreign policy of diplomatic reconciliation ('fulfillment')</strong>. By signing the 1925 Locarno Treaties, Germany accepted its western borders with France and Belgium, reassuring European powers. Consequently, Germany was admitted to the League of Nations as a permanent council member in 1926 and signed the Young Plan in 1929, reducing reparations to £2 billion. Therefore, this restored international standing because peaceful diplomacy normalized relations with former enemies, restoring Germany as a respected European power.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the German economy and international standing recovered in the years 1924–1929 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Gustav Stresemann",
+                "Rentenmark (1923)",
+                "Reichsmark (1924)",
+                "Dawes Plan (1924)",
+                "800 million gold marks",
+                "Locarno Treaties (1925)",
+                "Rhineland demilitarisation",
+                "League of Nations (1926)",
+                "Kellogg-Briand Pact (1928)",
+                "Young Plan (1929)",
+                "£2 billion reparations",
+                "Fulfilment policy"
               ]
             },
             "model_tiers": {
@@ -3465,33 +3508,40 @@
             "marks": 8,
             "question": "How useful are Sources B and C for an enquiry into the recovery of Germany's international position in the years 1924–1929?",
             "stimulus": [],
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Locarno, League of Nations, Kellogg-Briand), and Provenance.",
             "model": "<p>Source B is highly useful for investigating the impact of hyperinflation because it provides stark visual proof of the mark's total collapse, showing children building pyramids with worthless bundles of cash. Following the French occupation of the Ruhr and the Weimar government's passive resistance strike, unbacked currency printing caused bread prices to surge to 201 billion marks by November 1923. As an authentic contemporary press photograph from Berlin, its purpose was photojournalism, offering indisputable evidence of how hyperinflation destroyed the monetary system.</p><p>Source C is equally useful because it articulates the psychological trauma inflicted upon the middle classes. The memoir recalls how a lifetime of savings was 'wiped out overnight, reducing respectable families to begging'. While workers' wages adjusted and debtors cleared mortgages cheaply, pensioners and civil servants lost everything. As reflective personal testimony written by a German schoolteacher, its purpose was recording private tragedy, giving deeply authentic insight into the bitterness that undermined Weimar democracy.</p><p>Together, both sources capture the economic absurdity and lasting social trauma of 1923.</p>",
             "scaffolding": {
-              "acronym": "Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE B",
-                  "name": "1. Source B Content & Context",
-                  "prompt": "Analyse what Source B reveals about diplomatic equality at Locarno; substantiate using facts on border guarantees and the Nobel Peace Prize.",
-                  "starter": ""
-                },
-                {
-                  "letter": "SOURCE C",
-                  "name": "2. Source C Content & Context",
-                  "prompt": "Analyse Source C on the League of Nations Council seat; substantiate using Stresemann's fulfillment policy and minority protections.",
-                  "starter": ""
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Provenance & Synthesis",
-                  "prompt": "Interrogate official diplomatic photography: evaluate how international prestige contrasted with domestic nationalist opposition.",
-                  "starter": ""
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source B is useful for an enquiry into the recovery of Germany's international position in the years 1924–1929 because its content shows...",
+                "Historically, at this time, ... Furthermore, Source B’s provenance makes it useful because...",
+                "Similarly, Source C is useful for an enquiry into the recovery of Germany's international position in the years 1924–1929 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "Gustav Stresemann",
+                "Rentenmark (1923)",
+                "Reichsmark (1924)",
+                "Dawes Plan (1924)",
+                "800 million gold marks",
+                "Locarno Treaties (1925)",
+                "Rhineland demilitarisation",
+                "League of Nations (1926)",
+                "Kellogg-Briand Pact (1928)",
+                "Young Plan (1929)",
+                "£2 billion reparations",
+                "Fulfilment policy"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes/details: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -4727,35 +4777,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source D about changes in the lives of German women during the 1920s.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Young women gained financial independence in white-collar jobs.<br><strong>Details in the source that tell me this:</strong><br>'earned independent wages as typists and crowded cinemas unchaperoned'.</p><p><strong>(ii) What I can infer:</strong><br>Women embraced modern fashions, rejecting traditional Victorian attire.<br><strong>Details in the source that tell me this:</strong><br>'wearing practical short-bobbed hair and simple modern dresses'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source D about changes in the lives of German women during the 1920s is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about changes in the lives of German women during the 1920s is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -4790,15 +4823,43 @@
               "The growth of the 'New Woman'",
               "The Bauhaus movement in design and architecture"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The growth of the 'New Woman'",
+              "The Bauhaus movement in design and architecture"
+            ],
             "model": "<p>One decisive reason for cultural change was <strong>the removal of imperial censorship and constitutional protection of free expression</strong>. Article 118 of the constitution abolished censorship, granting artists total intellectual freedom. Avant-garde painters like Otto Dix and George Grosz developed 'New Objectivity' (Neue Sachlichkeit), producing hard-hitting art that satirized militarism and capitalist greed. Therefore, this caused cultural changes because democratic freedom empowered radical artists to challenge traditional conservative aesthetics and expose social realities.</p><p>Furthermore, cultural transformation was driven by <strong>revolutionary architectural and design innovation through the Bauhaus movement</strong>. Founded by Walter Gropius in Weimar in 1919, Bauhaus championed the principle 'form follows function', rejecting elaborate imperial ornamentation in favor of geometric, clean steel-and-glass structures. Bauhaus typography, furniture, and affordable municipal housing transformed urban design across Germany. Therefore, this transformed culture because modern industrial design replaced traditional aristocratic architecture with functional, accessible living environments for ordinary citizens.</p><p>Finally, social changes were propelled by <strong>the emergence of the 'New Woman' (Neue Frau) and female emancipation</strong>. The 1919 constitution granted women universal suffrage and equal civic rights, bringing over 100 female Reichstag deputies by 1926. Young urban women entered teaching, clerical, and shop work, adopting short bobbed haircuts, wearing looser clothing, and enjoying vibrant Berlin nightlife. Therefore, this drove social change because financial independence and legal equality allowed women to challenge rigid patriarchal traditions and redefine modern female identity.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why there were significant cultural and social changes in Weimar Germany in the years 1924–1929 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "1927 Unemployment Insurance Act",
+                "Municipal housing",
+                "Weimar 'New Woman'",
+                "Female Reichstag deputies",
+                "Walter Gropius",
+                "Bauhaus movement",
+                "Neue Sachlichkeit",
+                "Otto Dix",
+                "George Grosz",
+                "Fritz Lang (Metropolis)",
+                "UFA film studios",
+                "Conservative backlash"
               ]
             },
             "model_tiers": {
@@ -4832,33 +4893,40 @@
             "marks": 16,
             "question": "How far do you agree with Interpretation 2 about the position of women in the Weimar Republic? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
             "model": "<p>Interpretation 2 presents a compelling argument that the concept of the liberated 'New Woman' was largely an exaggerated media illusion, and that structural continuity dominated women's lives in Weimar Germany. The historian rightly points out that entrenched social conservatism and legal double standards persisted. While single urban women embraced modern fashions, working women earned on average 33% less than men. Furthermore, the 1900 Civil Code kept husbands in legal control of finances, while female civil servants were dismissed upon marriage. Conservative churches and right-wing parties fiercely condemned working women as threats to family life. Therefore, Interpretation 2 is supported because economic inequality and domestic expectations remained the daily reality for the vast majority of German women.</p><p>However, Interpretation 1 provides an indispensable counter-argument by highlighting the profound, unprecedented constitutional and political rights granted to women after 1918. Article 109 of the Weimar Constitution declared complete legal equality between the sexes and granted universal female suffrage. Women exercised this right enthusiastically, maintaining an average turnout of nearly 90% in national elections, and by 1926 female deputies comprised almost 10% of the Reichstag—a far higher proportion than in Britain or the USA. Additionally, female employment expanded in white-collar sectors, with over 100,000 female teachers and 3,000 doctors by 1930. Therefore, Interpretation 1 is valid because women achieved unprecedented civic representation and professional careers.</p><p>In conclusion, I agree with Interpretation 2 to a large extent. While constitutional enfranchisement and political presence were revolutionary milestones (Interpretation 1), the cultural liberation of the 'New Woman' was confined to a small, affluent urban minority, leaving working-class and rural women bound by severe economic inequality and conservative domestic burdens.</p>",
             "scaffolding": {
-              "acronym": "Interpretation Verdict Framework",
-              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
-              "steps": [
-                {
-                  "letter": "INTERP 1",
-                  "name": "1. Support Interpretation 1",
-                  "prompt": "Deploy evidence supporting liberation: equal voting rights in Article 109, rising female Reichstag deputies, and the urban 'New Woman'.",
-                  "starter": ""
-                },
-                {
-                  "letter": "INTERP 2",
-                  "name": "2. Support Interpretation 2",
-                  "prompt": "Deploy evidence supporting limitations: lower pay for women, conservative backlash against working wives, and the persistence of Kinder, Küche, Kirche.",
-                  "starter": ""
-                },
-                {
-                  "letter": "EVALUATION",
-                  "name": "3. Criteria & Sustained Verdict",
-                  "prompt": "Weigh legal breakthroughs against social reality: conclude whether constitutional equality genuinely transformed women's lives outside major cities.",
-                  "starter": ""
-                }
+              "acronym": "Interp 2 + Interp 1 + Own Knowledge + Verdict • +4 SPaG • 25m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "On the one hand, Interpretation 2 convincingly argues that...",
+                "However, on the other hand, Interpretation 1 challenges this view by emphasising...",
+                "In conclusion, I agree with Interpretation 2 to a large / limited extent because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Interpretation 2 argues that",
+                "This is supported by my own knowledge",
+                "However, Interpretation 1 counters this",
+                "Crucially, the author’s tone",
+                "In conclusion, I agree to a"
+              ],
+              "vocab_bank": [
+                "1927 Unemployment Insurance Act",
+                "Municipal housing",
+                "Weimar 'New Woman'",
+                "Female Reichstag deputies",
+                "Walter Gropius",
+                "Bauhaus movement",
+                "Neue Sachlichkeit",
+                "Otto Dix",
+                "George Grosz",
+                "Fritz Lang (Metropolis)",
+                "UFA film studios",
+                "Conservative backlash"
               ]
             },
-            "examiner_tip": "Level 4 Discriminator: Indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 (limits to progress, wage inequality, traditional backlash) against Interpretation 1 (Article 109 equality, female Reichstag deputies, 'New Woman' cultural freedom). Deploy specialist terminology for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
                 "title": "4/16 Basic Description",
@@ -5997,35 +6065,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source A about Adolf Hitler's speechmaking in Munich beer halls in 1921.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Hitler attempted an armed overthrow of the government.<br><strong>Details in the source that tell me this:</strong><br>'Hitler fired a pistol into the ceiling, declaring a national revolution'.</p><p><strong>(ii) What I can infer:</strong><br>State authorities resisted the Putsch with lethal armed force.<br><strong>Details in the source that tell me this:</strong><br>'state police opened fire on the marching stormtroopers'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source A about Adolf Hitler's speechmaking in Munich beer halls in 1921 is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about Adolf Hitler's speechmaking in Munich beer halls in 1921 is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -6060,15 +6111,43 @@
               "Hitler’s personal oratory and speeches",
               "The creation of the SA (Sturmabteilung)"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "Hitler’s personal oratory and speeches",
+              "The creation of the SA (Sturmabteilung)"
+            ],
             "model": "<p>One decisive reason the Nazi Party grew rapidly was <strong>Adolf Hitler’s extraordinary oratorical talent and charismatic appeal</strong>. Joining the German Workers' Party (DAP) in 1919, Hitler transformed meetings into theatrical spectacles in Munich beer halls. His impassioned speeches scapegoated Jews, communists, and the 'November Criminals' for Germany's defeat in 1918, tapping into deep popular grievance. Therefore, this drove rapid Nazi development because Hitler’s mesmerizing oratory electrified embittered veterans and nationalists, driving party membership from under 100 in 1919 to over 3,000 by late 1920.</p><p>Furthermore, party expansion was accelerated by <strong>the popular appeal of the 25-Point Programme and clever party branding</strong>. Co-authored by Hitler and Drexler in February 1920, the manifesto cleverly combined extreme nationalism (demanding Versailles's abolition and union with Austria) with socialist promises (profit-sharing and old-age pensions) to appeal to both workers and middle-class nationalists. Adopting the NSDAP name and red swastika banner provided striking visual identity. Therefore, this caused rapid development because a broad populist manifesto and striking iconography created immediate brand recognition.</p><p>Finally, growth was propelled by <strong>the paramilitary violence and discipline of the SA (Sturmabteilung)</strong>. Formed in 1921 under Ernst Röhm, brownshirt stormtroopers protected Nazi speakers while violently breaking up rival KPD and SPD rallies. Their military marching and banners conveyed order in an era of street chaos. Therefore, this propelled party growth because organized paramilitary intimidation projected an aura of decisive strength that appealed to disillusioned nationalists.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the Nazi Party (NSDAP) developed rapidly in the years 1920–1922 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Anton Drexler",
+                "German Workers' Party (DAP)",
+                "25-Point Programme (1920)",
+                "NSDAP",
+                "Swastika emblem",
+                "Völkischer Beobachter",
+                "Führerprinzip",
+                "Munich beer halls",
+                "Sturmabteilung (SA)",
+                "Brownshirts",
+                "Ernst Röhm",
+                "Treaty of Versailles"
               ]
             },
             "model_tiers": {
@@ -7541,35 +7620,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source B about the Munich Putsch trial in 1924.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Nazi propaganda promised economic relief to unemployed voters.<br><strong>Details in the source that tell me this:</strong><br>'election posters promised Work and Bread to millions of unemployed'.</p><p><strong>(ii) What I can infer:</strong><br>Hitler used air travel to project dynamic nationwide leadership.<br><strong>Details in the source that tell me this:</strong><br>'flew by aeroplane to speak at four mass rallies in a day'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source B about the Munich Putsch trial in 1924 is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about the Munich Putsch trial in 1924 is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -7604,15 +7666,43 @@
               "The failure of the Munich Putsch (1923)",
               "The Bamberg Conference (1926)"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The failure of the Munich Putsch (1923)",
+              "The Bamberg Conference (1926)"
+            ],
             "model": "<p>One decisive reason the Nazis changed strategy was <strong>the catastrophic failure of the Munich Putsch in November 1923</strong>. Hitler’s armed putsch was crushed by Bavarian police, resulting in sixteen deaths and Hitler's imprisonment at Landsberg. While writing <em>Mein Kampf</em>, Hitler recognized that armed insurrection against the German army and police was impossible. Therefore, this changed Nazi strategy because military defeat forced Hitler to adopt the 'legal route' (Legalitätsprinzip), resolving to seek power democratically through Reichstag elections.</p><p>Furthermore, strategic reorientation was driven by <strong>the need to enforce ideological unity under Hitler's absolute authority</strong>. Northern party leaders like Gregor Strasser had promoted socialist policies that alienated wealthy donors. At the Bamberg Conference in February 1926, Hitler crushed the socialist faction and established the <em>Führerprinzip</em> (leader principle), demanding unconditional obedience to himself. Therefore, this changed party strategy because centralizing authority under Hitler eliminated factional divisions and allowed the party to court middle-class and rural conservative voters.</p><p>Finally, strategy shifted toward <strong>systematic nationwide party reorganization and targeted electoral propaganda</strong>. Hitler divided Germany into 35 party regions (Gaue) under loyal Gauleiters, establishing specialist bodies like the Hitler Youth and SS. Joseph Goebbels refined propaganda to target specific grievances. Therefore, this altered party strategy because building a disciplined, nationwide grassroots organization ensured that the Nazi electoral machine was perfectly primed for rapid electoral breakthrough once economic crisis struck.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the Nazi Party changed its strategy during the 'Lean Years' (1924–1929) was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Bürgerbräukeller Beer Hall",
+                "General Erich Ludendorff",
+                "Munich Putsch (Nov 1923)",
+                "Munich treason trial",
+                "Landsberg Prison",
+                "Mein Kampf",
+                "Lebensraum",
+                "Legal strategy",
+                "Bamberg Conference (1926)",
+                "Gauleiters",
+                "1928 election (12 seats)",
+                "Gregor Strasser"
               ]
             },
             "model_tiers": {
@@ -7644,30 +7734,40 @@
             "tariff": "8 marks",
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into the consequences of the Munich Putsch for Hitler and the Nazi Party?",
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Treason Trial, Landsberg, Mein Kampf, Legal Strategy), and Provenance.",
             "model": "<p>Source B is highly useful for investigating Nazi electoral appeal because it shows how propaganda exploited economic despair, featuring desperate faces under the slogan 'Our Last Hope: Hitler'. Following the 1929 Wall Street Crash, unemployment reached six million by 1932, and Heinrich Brüning's welfare cuts caused mass destitution. As an official Reichstag election poster from July 1932 produced by Goebbels, its purpose was emotional persuasion, providing direct evidence of how the NSDAP framed Hitler as a providential saviour to win 230 seats.</p><p>Source C is equally useful because it explains why the middle classes and farmers abandoned moderate parties. The diary records a shopkeeper's fear that 'communists will seize our businesses unless we back Hitler'. The SA's street violence against communists appealed to terrified smallholders (*Mittelstand*). As private, unvarnished diary entries from 1931, the author had no propaganda motive, offering highly reliable insight into how anti-Marxist dread drove ordinary voters into the Nazi coalition.</p><p>Together, both sources reveal how visual propaganda and anti-communist panic combined to build mass electoral support.</p>",
             "scaffolding": {
-              "acronym": "Two-Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE A",
-                  "name": "1. Source A (Treason Trial with Ludendorff)",
-                  "prompt": "Analyse what the trial photograph reveals; corroborate with sympathetic judges and national press publicity."
-                },
-                {
-                  "letter": "SOURCE B",
-                  "name": "2. Source B (Hitler in Landsberg Fortress)",
-                  "prompt": "Analyse the comfortable fortress conditions; corroborate with dictating Mein Kampf and adopting the legal path."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Comparative Judgment",
-                  "prompt": "Synthesize both sources: evaluate how the trial and imprisonment transformed Hitler into a national political figure."
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source A is useful for an enquiry into the consequences of the Munich Putsch for Hitler and the Nazi Party because its content shows...",
+                "Historically, at this time, ... Furthermore, Source A’s provenance makes it useful because...",
+                "Similarly, Source B is useful for an enquiry into the consequences of the Munich Putsch for Hitler and the Nazi Party because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "Bürgerbräukeller Beer Hall",
+                "General Erich Ludendorff",
+                "Munich Putsch (Nov 1923)",
+                "Munich treason trial",
+                "Landsberg Prison",
+                "Mein Kampf",
+                "Lebensraum",
+                "Legal strategy",
+                "Bamberg Conference (1926)",
+                "Gauleiters",
+                "1928 election (12 seats)",
+                "Gregor Strasser"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source A, then Source B). In each paragraph, weave 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -9103,35 +9203,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source C about why ordinary Germans turned to the Nazi Party during the Great Depression.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>The SA physically intimidated citizens at polling booths.<br><strong>Details in the source that tell me this:</strong><br>'armed stormtroopers stood over ballot boxes inspecting voting slips'.</p><p><strong>(ii) What I can infer:</strong><br>Opposition parties were systematically suppressed before voting began.<br><strong>Details in the source that tell me this:</strong><br>'communist candidates were arrested and socialist newspapers banned'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source C about why ordinary Germans turned to the Nazi Party during the Great Depression is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about why ordinary Germans turned to the Nazi Party during the Great Depression is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -9166,15 +9249,43 @@
               "The Wall Street Crash and mass unemployment",
               "Nazi propaganda under Joseph Goebbels"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The Wall Street Crash and mass unemployment",
+              "Nazi propaganda under Joseph Goebbels"
+            ],
             "model": "<p>One decisive reason Nazi support increased was <strong>the devastating economic misery caused by the Wall Street Crash of October 1929</strong>. As US banks recalled short-term Dawes loans, German businesses collapsed, driving unemployment to six million by 1932. Democratic coalitions paralyzed by division failed, while Chancellor Brüning slashed benefits and raised taxes. Therefore, this surged Nazi support because widespread poverty and democratic paralysis drove millions of disillusioned, impoverished voters toward radical political alternatives promising decisive national salvation.</p><p>Furthermore, Nazi popularity surged due to <strong>middle-class and business fear of communist revolution</strong>. Votes for the Communist Party (KPD) soared to 17% in 1932. Middle-class shopkeepers and industrialists terrified of property confiscation viewed the Nazis as the only force capable of stopping Bolshevism. Industrialists like Fritz Thyssen funded the party, while the SA battled communists in streets. Therefore, this increased Nazi support because conservative Germans embraced the party as an indispensable patriotic defense against the imminent threat of communist revolution.</p><p>Finally, electoral success was propelled by <strong>Hitler’s charismatic campaigning and Goebbels’s modern propaganda machine</strong>. Slogans were tailored to specific audiences: promising farmers fair prices, workers jobs, and the middle class order. In 1932, Hitler chartered airplanes for his 'Hitler over Germany' tour, speaking to hundreds of thousands in dozens of cities within weeks. Therefore, this expanded Nazi support because modern, dynamic propaganda presented Hitler as an energetic, unifying leader, enabling the NSDAP to win 230 Reichstag seats in July 1932.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why support for the Nazi Party increased in the years 1929–1932 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Wall Street Crash (1929)",
+                "6 million unemployed",
+                "Heinrich Brüning",
+                "'Hunger Chancellor'",
+                "Joseph Goebbels",
+                "'Hitler over Germany'",
+                "'Work and Bread'",
+                "Mittelstand",
+                "Communist Party (KPD)",
+                "Industrialist funding",
+                "July 1932 election (37.3%)",
+                "230 Reichstag seats"
               ]
             },
             "model_tiers": {
@@ -9206,30 +9317,40 @@
             "tariff": "8 marks",
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into the reasons for the growth of Nazi support in the years 1929–1932?",
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Wall Street Crash, 6 million unemployed, Brüning, Goebbels, Hitler Cult), and Provenance.",
             "model": "<p>Source B is highly useful for investigating how the Nazis secured victory in March 1933 because it shows the state's legal suppression of civil rights, decreeing 'restrictions on personal liberty and freedom of speech'. Following the Reichstag Fire of 27 February, Hitler persuaded Hindenburg to sign the Emergency Decree, enabling the arrest of 4,000 communist leaders and banning anti-Nazi newspapers. As an official statutory emergency decree, its purpose was legal coercion, providing unimpeachable evidence of how the state apparatus silenced political rivals.</p><p>Source C is equally useful because it exposes the physical terror on the streets. The British correspondent notes that 'uniformed stormtroopers stood over ballot boxes, checking voters' slips'. Hermann Göring enrolled 50,000 SA men as auxiliary police, terrorising SPD and KPD candidates. As reportage by an independent British journalist in Berlin, the author had no reason to flatter Hitler, giving the account high reliability in capturing the climate of fear during polling.</p><p>Together, both sources demonstrate how state emergency decrees and street-level SA violence combined to manipulate the election.</p>",
             "scaffolding": {
-              "acronym": "Two-Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE A",
-                  "name": "1. Source A (Berlin Unemployment Queue)",
-                  "prompt": "Analyse the visual evidence of unemployment; corroborate with Wall Street Crash facts, 6m jobless, and Brüning's austerity."
-                },
-                {
-                  "letter": "SOURCE B",
-                  "name": "2. Source B ('Our Last Hope: Hitler' Poster)",
-                  "prompt": "Analyse the propaganda slogan and imagery; corroborate with Goebbels' propaganda techniques and the Hitler Cult."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Comparative Judgment",
-                  "prompt": "Synthesize both sources: evaluate how economic misery and targeted propaganda combined to create mass support."
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source A is useful for an enquiry into the reasons for the growth of Nazi support in the years 1929–1932 because its content shows...",
+                "Historically, at this time, ... Furthermore, Source A’s provenance makes it useful because...",
+                "Similarly, Source B is useful for an enquiry into the reasons for the growth of Nazi support in the years 1929–1932 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "Wall Street Crash (1929)",
+                "6 million unemployed",
+                "Heinrich Brüning",
+                "'Hunger Chancellor'",
+                "Joseph Goebbels",
+                "'Hitler over Germany'",
+                "'Work and Bread'",
+                "Mittelstand",
+                "Communist Party (KPD)",
+                "Industrialist funding",
+                "July 1932 election (37.3%)",
+                "230 Reichstag seats"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source A, then Source B). In each paragraph, weave 2 direct quotes/visual details: Quote 1 anchors what the source literally says/shows; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -10690,35 +10811,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source D about Franz von Papen’s scheme to appoint Hitler as Chancellor.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>The decree abolished fundamental constitutional civil rights.<br><strong>Details in the source that tell me this:</strong><br>'suspended rights of free speech, assembly, and privacy of letters'.</p><p><strong>(ii) What I can infer:</strong><br>The state targeted communist leaders with arbitrary imprisonment.<br><strong>Details in the source that tell me this:</strong><br>'police arrested over four thousand communist officials without trial'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source D about Franz von Papen’s scheme to appoint Hitler as Chancellor is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about Franz von Papen’s scheme to appoint Hitler as Chancellor is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -10753,15 +10857,43 @@
               "The political intrigue of Franz von Papen",
               "The November 1932 election results"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The political intrigue of Franz von Papen",
+              "The November 1932 election results"
+            ],
             "model": "<p>One decisive reason Hitler was appointed Chancellor was <strong>the collapse of parliamentary democracy and heavy reliance on Article 48 presidential decrees</strong>. Following the 1930 collapse of the Grand Coalition, chancellors Brüning, Papen, and Schleicher lacked Reichstag majorities. Governing by Hindenburg’s emergency decrees under Article 48, these chancellors accustomed the public to authoritarian rule. Therefore, this led to Hitler's appointment because the breakdown of parliamentary democracy created a constitutional vacuum that required an authoritarian leader with mass popular support.</p><p>Furthermore, Hitler's appointment was necessitated by <strong>the massive electoral strength and grassroots mobilization of the Nazi Party</strong>. Despite losing seats in November 1932, the NSDAP remained Germany's largest party with 196 seats and 400,000 SA stormtroopers. Elites realized no stable right-wing coalition could govern without the Nazis. Therefore, this resulted in Hitler's appointment because conservative elites recognized that only Hitler possessed the electoral mandate and popular backing needed to restore governing stability and crush the communist movement.</p><p>Finally, the immediate catalyst was <strong>the backstairs political intrigue orchestrated by Franz von Papen and the conservative camarilla</strong>. Desperate for revenge against Schleicher, Papen persuaded President Hindenburg that appointing Hitler with Papen as Vice-Chancellor would allow conservatives to control him. Papen believed that with only three Nazis in a twelve-man cabinet, conservatives held real power. Therefore, this forced Hitler's appointment because conservative elites fatally miscalculated that they could use Hitler's mass appeal as a puppet for their own authoritarian agenda.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why Adolf Hitler was appointed Chancellor of Germany in January 1933 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "President Hindenburg",
+                "Article 48 decrees",
+                "Heinrich Brüning",
+                "Franz von Papen",
+                "'Cabinet of Barons'",
+                "Nov 1932 election (196 seats)",
+                "Kurt von Schleicher",
+                "Oskar von Hindenburg",
+                "Backstairs intrigue",
+                "'Boxed in' cabinet",
+                "30 January 1933",
+                "Torchlight parade"
               ]
             },
             "model_tiers": {
@@ -10795,33 +10927,40 @@
             "marks": 16,
             "question": "How far do you agree with Interpretation 2 about how Hitler became Chancellor in 1932–33? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
             "model": "<p>Interpretation 2 argues that Hitler's appointment as Chancellor in January 1933 was primarily the result of the Nazi Party's mass electoral breakthrough, powered by the economic devastation of the Great Depression. This argument is strongly supported by historical context: the Wall Street Crash caused US loans to be recalled, driving German unemployment to over six million by 1932 and destroying middle-class faith in the Weimar Republic. Joseph Goebbels' modern propaganda and Hitler's charismatic rallies promising 'Work and Bread' transformed the NSDAP from 12 seats in 1928 into the Reichstag's largest party with 230 seats in July 1932, as fear of communism drove middle-class voters toward the Nazis. Therefore, Interpretation 2 is supported because mass electoral popularity made Hitler an unavoidable national force that democratic institutions could no longer ignore.</p><p>However, Interpretation 1 provides an indispensable counter-argument by demonstrating that mass popularity alone did not hand Hitler power; rather, he was appointed through the backroom intrigues of aristocratic conservative elites. In the November 1932 election, Nazi support dropped to 196 seats, leaving the party demoralised. Hitler was rescued by Franz von Papen, who conspired with Oskar von Hindenburg to depose Chancellor Schleicher. Papen foolishly believed he could 'box Hitler in' with eight conservative cabinet ministers. Therefore, Interpretation 1 is valid because backroom intrigue opened the doors of the Chancellery when Hitler's democratic momentum was visibly receding.</p><p>In conclusion, I agree with Interpretation 2 to a moderate extent, but Interpretation 1 provides the decisive causal mechanism. While mass electoral support (Interpretation 2) made Hitler a viable candidate, it was Papen's fatal miscalculation and conservative scheming (Interpretation 1) that ultimately installed him as Chancellor on 30 January 1933.</p>",
             "scaffolding": {
-              "acronym": "Interpretation Verdict Framework (AO4)",
-              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
-              "steps": [
-                {
-                  "letter": "INTERP 2",
-                  "name": "1. Support Interpretation 2 (Intrigue & Miscalculation)",
-                  "prompt": "Deploy evidence of Papen's intrigue, November 1932 Nazi seat loss (230 down to 196), and the 'pushed into a corner' boast.",
-                  "starter": ""
-                },
-                {
-                  "letter": "INTERP 1",
-                  "name": "2. Support Interpretation 1 (Economic Collapse & Mass Appeal)",
-                  "prompt": "Deploy evidence of 6m unemployed, Article 48 destruction of democracy, and July 1932 230 seats making Hitler unavoidable.",
-                  "starter": ""
-                },
-                {
-                  "letter": "VERDICT",
-                  "name": "3. Sustained Historical Conclusion",
-                  "prompt": "Weigh both interpretations: judge whether elite intrigue was the indispensable trigger that rescued a waning Nazi movement.",
-                  "starter": ""
-                }
+              "acronym": "Interp 2 + Interp 1 + Own Knowledge + Verdict • +4 SPaG • 25m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "On the one hand, Interpretation 2 convincingly argues that...",
+                "However, on the other hand, Interpretation 1 challenges this view by emphasising...",
+                "In conclusion, I agree with Interpretation 2 to a large / limited extent because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Interpretation 2 argues that",
+                "This is supported by my own knowledge",
+                "However, Interpretation 1 counters this",
+                "Crucially, the author’s tone",
+                "In conclusion, I agree to a"
+              ],
+              "vocab_bank": [
+                "President Hindenburg",
+                "Article 48 decrees",
+                "Heinrich Brüning",
+                "Franz von Papen",
+                "'Cabinet of Barons'",
+                "Nov 1932 election (196 seats)",
+                "Kurt von Schleicher",
+                "Oskar von Hindenburg",
+                "Backstairs intrigue",
+                "'Boxed in' cabinet",
+                "30 January 1933",
+                "Torchlight parade"
               ]
             },
-            "examiner_tip": "Level 4 Discriminator: Indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 (mass electoral popularity, July 1932 peak, democratic breakdown) against Interpretation 1 (backroom political intrigue, von Papen, Schleicher, Hindenburg's inner circle). Deploy specialist terminology for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
                 "title": "4/16 Basic Description",
@@ -12244,35 +12383,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source A about the effect of the Reichstag Fire Decree on German political life.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Germans feared speaking openly due to private informers.<br><strong>Details in the source that tell me this:</strong><br>'people lowered their voices in public, fearing denunciations by neighbours'.</p><p><strong>(ii) What I can infer:</strong><br>The Gestapo relied heavily on voluntary tip-offs from ordinary citizens.<br><strong>Details in the source that tell me this:</strong><br>'most investigations began from letters written by private citizens'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source A about the effect of the Reichstag Fire Decree on German political life is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about the effect of the Reichstag Fire Decree on German political life is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -12307,15 +12429,43 @@
               "The Reichstag Fire (February 1933)",
               "The Night of the Long Knives (June 1934)"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The Reichstag Fire (February 1933)",
+              "The Night of the Long Knives (June 1934)"
+            ],
             "model": "<p>One decisive reason dictatorship was established was <strong>the Reichstag Fire of February 1933 and the resulting Emergency Decree</strong>. When Marinus van der Lubbe was arrested at the burning Reichstag, Hitler claimed it was a communist uprising. Hitler persuaded Hindenburg to sign the Reichstag Fire Decree, suspending civil liberties, legalizing detention without trial, and arresting 4,000 communists. Therefore, this established a dictatorship because state-sponsored emergency powers destroyed the KPD and eliminated legal protections for political opponents before the March 1933 election.</p><p>Furthermore, dictatorship was achieved through <strong>the passage of the Enabling Act (March 1933) and Gleichschaltung ('coordination')</strong>. Intimidating parliament with armed SA guards, Hitler passed the Enabling Act, transferring full legislative power to his cabinet and destroying democracy. Hitler abolished trade unions in May 1933, outlawed rival parties in July, and coordinated regional state parliaments. Therefore, this created a dictatorship because it systematically dismantled all constitutional and institutional opposition.</p><p>Finally, absolute control was consolidated by <strong>the Night of the Long Knives (June 1934) and the army's personal oath of loyalty</strong>. Fearing Ernst Röhm’s SA threatened his army alliance, Hitler had the SS murder Röhm and top SA leaders. This ruthless purge secured the German army's unconditional loyalty. When Hindenburg died in August 1934, Hitler became Führer, forcing all soldiers to swear a personal oath of unconditional loyalty. Therefore, this finalized the dictatorship because it bound the armed forces directly to Hitler personally.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the Nazi regime was able to establish a one-party dictatorship by August 1934 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Reichstag Fire (Feb 1933)",
+                "Marinus van der Lubbe",
+                "Reichstag Fire Decree",
+                "Enabling Act (March 1933)",
+                "Kroll Opera House",
+                "Gleichschaltung",
+                "Trade unions banned",
+                "Night of the Long Knives",
+                "Ernst Röhm",
+                "Hindenburg’s death (Aug 1934)",
+                "Der Führer",
+                "Army oath of loyalty"
               ]
             },
             "model_tiers": {
@@ -13535,35 +13685,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source B about public fear of the Gestapo in Nazi Germany.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Prisoners were detained indefinitely without trial or judicial oversight.<br><strong>Details in the source that tell me this:</strong><br>'held under protective custody with no judicial review or release date'.</p><p><strong>(ii) What I can infer:</strong><br>Guards subjected inmates to brutal physical violence and labour.<br><strong>Details in the source that tell me this:</strong><br>'inmates endured forced labour, severe beatings, and malnutrition'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source B about public fear of the Gestapo in Nazi Germany is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about public fear of the Gestapo in Nazi Germany is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -13598,15 +13731,43 @@
               "The role of the Gestapo and SS",
               "The Concordat with the Catholic Church (1933)"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The role of the Gestapo and SS",
+              "The Concordat with the Catholic Church (1933)"
+            ],
             "model": "<p>One decisive reason the police state was effective was <strong>the pervasive terror of the Gestapo and public denunciation</strong>. Under Heinrich Himmler and Reinhard Heydrich, the Gestapo had sweeping powers to tap phones, open mail, and arrest suspects without trial. Because the Gestapo was small, it relied heavily on voluntary denunciations by ordinary citizens denouncing colleagues, neighbors, and rivals. Therefore, this made the police state effective because the terrifying psychological perception of an omnipresent surveillance network deterred citizens from voicing open criticism or organizing underground resistance.</p><p>Furthermore, control was enforced by <strong>the SS apparatus, concentration camps, and Nazi subversion of the judicial system</strong>. The SS ran concentration camps like Dachau for political prisoners, subjecting inmates to brutal forced labor. Judges joined the Nazi legal league, while the People's Court (Volksgerichtshof) tried treason cases without juries or appeals. Therefore, this enforced the police state because the total destruction of judicial independence stripped citizens of legal protection against arbitrary state violence.</p><p>Finally, control was reinforced by <strong>the systematic neutralization and coordination of Christian churches</strong>. In 1933, Hitler neutralized Catholics by signing the Concordat with the Pope, promising church autonomy in exchange for political non-intervention. Protestants were unified into the pro-Nazi Reich Church under Bishop Ludwig Müller, while dissenting Confessional Church pastors like Martin Niemöller were imprisoned. Therefore, this enforced church control because compromising treaties and selective terror prevented Christian churches from becoming organized centers of anti-Nazi resistance.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the Nazi police state and control over the churches was effective in the years 1933–1939 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Heinrich Himmler",
+                "Schutzstaffel (SS)",
+                "SD (Sicherheitsdienst)",
+                "Gestapo",
+                "Dachau (1933)",
+                "Protective custody",
+                "National Socialist League of Jurists",
+                "People's Court",
+                "Concordat (July 1933)",
+                "Reich Church",
+                "Pastor Martin Niemöller",
+                "Confessional Church"
               ]
             },
             "model_tiers": {
@@ -13638,30 +13799,40 @@
             "tariff": "8 marks",
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into methods used by the Nazi regime to control German society between 1933 and 1939?",
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (SS, Dachau, Concentration Camps, Reichskonkordat, Catholic Church), and Provenance (Nature, Origin, Purpose).",
             "model": "<p>Source B is highly useful for investigating Gestapo terror because it exposes civilian complicity, detailing how a neighbour denounced a worker for 'listening to foreign broadcasts and insulting the Führer'. In reality, the Gestapo was remarkably small, with only 28 officers policing a city like Frankfurt, meaning the apparatus relied on voluntary citizen denunciations for 80% of cases. As a confidential internal Gestapo case file from 1936, its purpose was routine administrative record-keeping, providing objective, unvarnished proof of how civilian informers enabled state surveillance.</p><p>Source C is equally useful because it reveals the pervasive climate of paranoia among ordinary citizens. An eyewitness recalls the infamous 'German glance'—looking nervously over both shoulders before speaking to avoid arrest. Fear of *Schutzhaft* (indefinite protective custody) without judicial trial in Dachau deterred open public dissent. As personal testimony from an ordinary German civilian, its purpose was to describe daily life under totalitarianism, giving authentic insight into how psychological terror enforced self-censorship.</p><p>Together, both sources show how real terror combined with public informers to maintain totalitarian control.</p>",
             "scaffolding": {
-              "acronym": "Two-Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE A",
-                  "name": "1. Source A (Dachau Roll Call & SS Terror)",
-                  "prompt": "Analyse visual evidence of armed SS guards and prisoners; corroborate with protective custody and Eicke's brutal regime."
-                },
-                {
-                  "letter": "SOURCE B",
-                  "name": "2. Source B (Reichskonkordat with Vatican)",
-                  "prompt": "Analyse diplomatic treaty signing; corroborate with neutralizing Catholic politics and later treaty violations."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Comparative Judgment",
-                  "prompt": "Weigh both sources: evaluate how violent physical coercion combined with institutional co-optation."
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source A is useful for an enquiry into methods used by the Nazi regime to control German society between 1933 and 1939 because its content shows...",
+                "Historically, at this time, ... Furthermore, Source A’s provenance makes it useful because...",
+                "Similarly, Source B is useful for an enquiry into methods used by the Nazi regime to control German society between 1933 and 1939 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "Heinrich Himmler",
+                "Schutzstaffel (SS)",
+                "SD (Sicherheitsdienst)",
+                "Gestapo",
+                "Dachau (1933)",
+                "Protective custody",
+                "National Socialist League of Jurists",
+                "People's Court",
+                "Concordat (July 1933)",
+                "Reich Church",
+                "Pastor Martin Niemöller",
+                "Confessional Church"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source A, then Source B). In each paragraph, weave 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -14866,35 +15037,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source C about how Nazi propaganda was used to influence public opinion.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>The regime engineered cheap radios restricted to Nazi broadcasts.<br><strong>Details in the source that tell me this:</strong><br>'subsidised People's Receivers that could only receive German stations'.</p><p><strong>(ii) What I can infer:</strong><br>The Propaganda Ministry exercised total censorship over daily media.<br><strong>Details in the source that tell me this:</strong><br>'daily directive sheets dictated what music, speeches, and news could air'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source C about how Nazi propaganda was used to influence public opinion is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about how Nazi propaganda was used to influence public opinion is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -14929,15 +15083,43 @@
               "The use of radio and the Volksempfänger",
               "Censorship of newspapers and the arts"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The use of radio and the Volksempfänger",
+              "Censorship of newspapers and the arts"
+            ],
             "model": "<p>One decisive reason the regime controlled attitudes was <strong>total state monopoly over mass media and radio broadcasting</strong>. Goebbels’s Propaganda Ministry controlled newspapers through daily directives telling editors exact headlines to publish. The regime mass-produced the cheap 'People's Receiver' (Volksempfänger); by 1939, over 70% of households owned radios tuned only to state broadcasts. Therefore, this controlled attitudes because universal state radio broadcasting subjected citizens to continuous, unfiltered indoctrination in their own homes.</p><p>Furthermore, attitudes were influenced by <strong>monopoly control over German cultural life through the Reich Chamber of Culture (Reichskulturkammer)</strong>. All writers, musicians, and artists had to join this chamber to work legally. 'Degenerate' Jewish or modern art was banned, books by communist and Jewish authors were burned in public bonfires, and cinema was strictly censored. Films like Leni Riefenstahl's <em>Triumph of the Will</em> glorified the Führer. Therefore, this controlled attitudes because banning independent artistic expression left the German public with no intellectual alternative to Nazi racial doctrine.</p><p>Finally, compliance was reinforced by <strong>carefully orchestrated mass spectacles that cultivated the 'Führer Myth'</strong>. The annual Nuremberg Rallies used cathedral-of-light searchlights and synchronized marching to overwhelm spectators, while the 1936 Berlin Olympics projected national prestige. Hitler was portrayed as a selfless, infallible national savior. Therefore, this shaped public attitudes because collective mass emotion and leader worship united millions of citizens in emotional devotion to the Nazi state.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the Nazi regime was able to control and influence attitudes in Germany in the years 1933–1939 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Joseph Goebbels",
+                "Ministry of Propaganda",
+                "Reich Chamber of Culture",
+                "Volksempfänger (People's Receiver)",
+                "Nuremberg Rallies",
+                "Leni Riefenstahl",
+                "Berlin Olympics (1936)",
+                "Jesse Owens",
+                "May 1933 Book Burnings",
+                "'Degenerate Art' (Entartete Kunst)",
+                "Albert Speer",
+                "Press censorship"
               ]
             },
             "model_tiers": {
@@ -14969,30 +15151,40 @@
             "tariff": "8 marks",
             "type": "utility_8m",
             "question": "How useful are Sources B and C for an enquiry into Nazi methods of controlling and influencing attitudes in the years 1933–1939?",
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Goebbels, Nuremberg Rallies, Albert Speer, Berlin Olympics, Jesse Owens), and Provenance.",
             "model": "<p>Source B is highly useful for investigating Nazi propaganda because it shows how technology was monopolised, proclaiming that 'All Germany hears the Führer with the People's Receiver'. By subsidising the radio to 76 Reichsmarks, Goebbels ensured ownership surged from 25% to 70% by 1939, while technical limits prevented listening to foreign broadcasts. As an official commercial poster from 1933, its purpose was mass dissemination, providing authentic proof of how the regime prioritised acoustic control of German homes.</p><p>Source C is equally useful because it documents the hypnotic power of mass rallies. American correspondent William Shirer observed that 'Hitler is restoring pageantry, colour, and mystical excitement to a drab people', with Albert Speer's 'Cathedral of Light' inducing collective ecstasy. As a contemporary diary entry by an accredited foreign journalist in 1934, Shirer had no motive to flatter the regime, offering highly reliable evidence of how theatrical choreography bypassed rational thought to forge fanatical devotion.</p><p>Together, both sources illustrate how domestic broadcasting and public spectacles engineered total ideological compliance.</p>",
             "scaffolding": {
-              "acronym": "Two-Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE B",
-                  "name": "1. Source B (Nuremberg Rallies & Cathedral of Light)",
-                  "prompt": "Analyse visual spectacle; corroborate with Goebbels' mass psychology, Speer's staging, and Triumph of the Will."
-                },
-                {
-                  "letter": "SOURCE C",
-                  "name": "2. Source C (Berlin Olympics & Jesse Owens)",
-                  "prompt": "Analyse international prestige; corroborate with 100,000-seat stadium, facade of moderation, and Owens' 4 gold medals."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Comparative Judgment",
-                  "prompt": "Weigh both sources: contrast total domestic thought control with the ideological limits of global sporting events."
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source B is useful for an enquiry into Nazi methods of controlling and influencing attitudes in the years 1933–1939 because its content shows...",
+                "Historically, at this time, ... Furthermore, Source B’s provenance makes it useful because...",
+                "Similarly, Source C is useful for an enquiry into Nazi methods of controlling and influencing attitudes in the years 1933–1939 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "Joseph Goebbels",
+                "Ministry of Propaganda",
+                "Reich Chamber of Culture",
+                "Volksempfänger (People's Receiver)",
+                "Nuremberg Rallies",
+                "Leni Riefenstahl",
+                "Berlin Olympics (1936)",
+                "Jesse Owens",
+                "May 1933 Book Burnings",
+                "'Degenerate Art' (Entartete Kunst)",
+                "Albert Speer",
+                "Press censorship"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -16216,35 +16408,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source D about the activities and attitudes of the Edelweiss Pirates.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Youths defied state regimentation through forbidden clothing.<br><strong>Details in the source that tell me this:</strong><br>'refused to attend drills, wearing checked shirts and flower badges'.</p><p><strong>(ii) What I can infer:</strong><br>Pirate groups engaged in direct attacks on Hitler Youth.<br><strong>Details in the source that tell me this:</strong><br>'ambushed Hitler Youth patrols and painted anti-Nazi slogans'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source D about the activities and attitudes of the Edelweiss Pirates is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about the activities and attitudes of the Edelweiss Pirates is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -16279,15 +16454,43 @@
               "The Gestapo and concentration camps",
               "Economic recovery and Nazi social policies"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The Gestapo and concentration camps",
+              "Economic recovery and Nazi social policies"
+            ],
             "model": "<p>One decisive reason active opposition was limited was <strong>the destruction of independent political institutions and fear of police terror</strong>. In 1933, the regime abolished trade unions, outlawed rival parties, and sent left-wing leaders to Dachau. With the Gestapo, SS, and local Block Wardens (Blockleiter) watching neighborhoods, any resistance risked torture or execution. Therefore, this limited active opposition because the complete dismantling of civil society deprived potential resisters of political organizations, communication networks, and safe spaces to organize coordinated opposition.</p><p>Furthermore, resistance was muted because <strong>Hitler enjoyed genuine, widespread popularity due to economic recovery and foreign policy triumphs</strong>. By 1939, Nazi work creation and rearmament programs had virtually eliminated the six million unemployment crisis of the Depression, providing stable wages and social perks like 'Strength Through Joy' (KdF) holidays. Concurrently, Hitler overturned Versailles without war by remilitarizing the Rhineland (1936) and annexing Austria (1938). Therefore, this restricted opposition because millions of patriotic citizens genuinely admired Hitler for restoring national prosperity and international pride.</p><p>Finally, opposition was restricted by <strong>the localized, fragmented nature of youth and religious dissent</strong>. Groups like the Edelweiss Pirates engaged in cultural defiance, while church leaders like Bishop von Galen criticized specific policies like euthanasia rather than attempting to overthrow the state. Therefore, this limited opposition because dissenters lacked the military weapons, cohesive ideology, and army backing required to mount a serious challenge to the regime.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why active opposition to the Nazi regime was limited in the years 1933–1939 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "SPD in exile (Sopade)",
+                "KPD underground cells",
+                "Edelweiss Pirates",
+                "Swing Youth",
+                "Pastor Martin Niemöller",
+                "Dietrich Bonhoeffer",
+                "Confessional Church",
+                "Mit brennender Sorge (1937)",
+                "Pope Pius XI",
+                "Bishop von Galen",
+                "Block Wardens",
+                "Passive non-conformity"
               ]
             },
             "model_tiers": {
@@ -16321,33 +16524,40 @@
             "marks": 16,
             "question": "How far do you agree with Interpretation 2 about religious opposition to the Nazi regime? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
             "model": "<p>Interpretation 2 presents a compelling argument that the Christian churches in Nazi Germany primarily engaged in institutional compromise and accommodation rather than broad opposition to the regime. Fearful of godless Soviet communism and desperate to safeguard their traditions, church hierarchies sought co-existence. In July 1933, the Vatican signed the *Reichskonkordat*, agreeing that Catholic clergy would withdraw from politics in exchange for religious freedom. Similarly, Protestant churches established the pro-Nazi 'German Christians', displaying swastikas on altars and hailing Hitler as a saviour. Crucially, neither church leadership mounted official protests against the Nuremberg Laws or *Kristallnacht*. Therefore, Interpretation 2 is supported because institutional self-preservation and ideological overlap repeatedly superseded moral resistance.</p><p>However, Interpretation 1 provides a vital counter-balance by highlighting that courageous factions and individual churchmen mounted principled, perilous resistance. In 1934, pastors Martin Niemöller and Dietrich Bonhoeffer established the Confessing Church (*Bekennende Kirche*), rallying 6,000 clergy against Nazi paganisation under the Barmen Declaration; Niemöller spent seven years in Sachsenhausen and Dachau concentration camps for his defiance. Furthermore, in 1937 Pope Pius XI issued the encyclical *Mit brennender Sorge* condemning Nazi racial idolatry, and in 1941 Catholic Bishop von Galen led courageous public sermons that forced Hitler to temporarily halt the Action T4 euthanasia programme. Therefore, Interpretation 1 is valid because individual church leaders displayed profound moral courage against totalitarian control.</p><p>In conclusion, I agree with Interpretation 2 to a substantial extent. While courageous figures like Niemöller and Galen proved individual heroism (Interpretation 1), ecclesiastical resistance was almost entirely defensive and aimed at preserving religious independence (*Selbstbehauptung*), rather than overthrowing the Nazi dictatorship or defending persecuted minorities.</p>",
             "scaffolding": {
-              "acronym": "Interpretation Verdict Framework (AO4)",
-              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
-              "steps": [
-                {
-                  "letter": "INTERP 2",
-                  "name": "1. Support Interpretation 2 (Conformity & Limited Aims)",
-                  "prompt": "Deploy evidence of the 1933 Concordat, the German Christians, and church silence during the Nuremberg Laws and Kristallnacht.",
-                  "starter": ""
-                },
-                {
-                  "letter": "INTERP 1",
-                  "name": "2. Support Interpretation 1 (Brave Spiritual Resistance)",
-                  "prompt": "Deploy evidence of Niemöller's Confessing Church, the Barmen Declaration, Mit Brennender Sorge, and Bishop Galen.",
-                  "starter": ""
-                },
-                {
-                  "letter": "VERDICT",
-                  "name": "3. Sustained Historical Conclusion",
-                  "prompt": "Weigh both interpretations: judge whether defending church independence was enough to constitute true resistance against totalitarianism.",
-                  "starter": ""
-                }
+              "acronym": "Interp 2 + Interp 1 + Own Knowledge + Verdict • +4 SPaG • 25m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "On the one hand, Interpretation 2 convincingly argues that...",
+                "However, on the other hand, Interpretation 1 challenges this view by emphasising...",
+                "In conclusion, I agree with Interpretation 2 to a large / limited extent because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Interpretation 2 argues that",
+                "This is supported by my own knowledge",
+                "However, Interpretation 1 counters this",
+                "Crucially, the author’s tone",
+                "In conclusion, I agree to a"
+              ],
+              "vocab_bank": [
+                "SPD in exile (Sopade)",
+                "KPD underground cells",
+                "Edelweiss Pirates",
+                "Swing Youth",
+                "Pastor Martin Niemöller",
+                "Dietrich Bonhoeffer",
+                "Confessional Church",
+                "Mit brennender Sorge (1937)",
+                "Pope Pius XI",
+                "Bishop von Galen",
+                "Block Wardens",
+                "Passive non-conformity"
               ]
             },
-            "examiner_tip": "Level 4 Discriminator: Indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 (institutional compromise, 1933 Concordat, silence on the Holocaust) against Interpretation 1 (Confessing Church, Martin Niemöller, Dietrich Bonhoeffer, Pope Pius XI's Mit brennender Sorge, Bishop von Galen). Deploy specialist terminology for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
                 "title": "4/16 Basic Description",
@@ -17592,35 +17802,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source A about Nazi propaganda aimed at German mothers.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Motherhood was treated as military service on the home front.<br><strong>Details in the source that tell me this:</strong><br>'described German mothers as soldiers fighting the battle for births'.</p><p><strong>(ii) What I can infer:</strong><br>The regime rewarded high birth rates with national honours.<br><strong>Details in the source that tell me this:</strong><br>'gold medals awarded to mothers of eight or more children'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source A about Nazi propaganda aimed at German mothers is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about Nazi propaganda aimed at German mothers is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -17655,15 +17848,43 @@
               "The slogan Kinder, Küche, Kirche",
               "The demands of the rearmament economy after 1937"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The slogan Kinder, Küche, Kirche",
+              "The demands of the rearmament economy after 1937"
+            ],
             "model": "<p>One decisive reason early policies restricted women was <strong>the ideological obsession with increasing the Aryan birth rate</strong>. Alarmed by declining birth rates during the Weimar era, the regime emphasized traditional gender roles: <em>Kinder, Küche, Kirche</em> (Children, Kitchen, Church). The 1933 Marriage Law offered 1,000-mark loans to newlyweds, with 250 marks forgiven per child born. Women were barred from civil service and judicial careers. Therefore, this shaped early policies because the state prioritized biological reproduction over economic contribution.</p><p>Furthermore, early policies promoted motherhood through <strong>social prestige, welfare incentives, and honors like the Mother's Cross</strong>. The Honour Cross of the German Mother was awarded for large families, while the Lebensborn program encouraged single Aryan women to have children with SS officers. Concurrently, female appearance was strictly regulated, discouraging makeup, dyed hair, and smoking. Therefore, this restricted women because the state systematically elevated motherhood to an essential patriotic duty equivalent to military service.</p><p>However, policies radically changed from 1937 due to <strong>severe industrial labor shortages caused by Hermann Göring’s Four-Year Plan and rearmament</strong>. As men were conscripted into the Wehrmacht and armaments plants expanded, Germany faced severe labor shortages. The regime reversed its anti-work stance, introducing a compulsory 'Duty Year' for unmarried women in 1937; by 1939, female employment reached 14.6 million. Therefore, this forced policy changes because military rearmament compelled the regime to subordinate its domestic racial ideology to the urgent industrial demands of preparing for war.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why Nazi policies towards women changed in the years 1933–1939 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Kinder, Küche, Kirche",
+                "Gertrud Scholtz-Klink",
+                "German Women's Enterprise (DFW)",
+                "1933 Marriage Loan Act",
+                "1,000-mark loans",
+                "Mother's Cross",
+                "Lebensborn programme",
+                "1933 Sterilisation Law",
+                "Divorce Law (1938)",
+                "Rearmament labour shortage",
+                "Duty Year (Pflichtjahr)",
+                "14.6 million women working"
               ]
             },
             "model_tiers": {
@@ -18752,35 +18973,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source B about physical training in the Hitler Youth.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Youth drills prioritised combat skills over academic schooling.<br><strong>Details in the source that tell me this:</strong><br>'drills focused on route marches, grenade throwing, and rifle practice'.</p><p><strong>(ii) What I can infer:</strong><br>Boys were conditioned for uncomplaining endurance in battle.<br><strong>Details in the source that tell me this:</strong><br>'trained to suffer privation without complaint to become hard as steel'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source B about physical training in the Hitler Youth is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about physical training in the Hitler Youth is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -18815,15 +19019,43 @@
               "The Hitler Youth and BDM",
               "Changes to the school curriculum"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The Hitler Youth and BDM",
+              "Changes to the school curriculum"
+            ],
             "model": "<p>One decisive reason the regime controlled youth was <strong>the long-term imperative to ensure the survival of the 'Thousand-Year Reich'</strong>. Hitler recognized that adults raised under Weimar held lingering democratic loyalties that could not easily be eradicated. By indoctrinating impressionable children from early childhood, the regime sought to cultivate fanatical obedience to the Führer. Therefore, this prioritized youth control because brainwashing young generations ensured that future citizens would blindly obey Nazi ideology without questioning totalitarian rule.</p><p>Furthermore, youth control was vital to <strong>prepare boys for military combat and girls for maternal reproduction</strong>. In the compulsory Hitler Youth, boys practiced military field drills, rifle shooting, and strenuous hiking for the Wehrmacht. In the League of German Girls (BDM), girls performed gymnastics and learned racial hygiene and mothercraft. Therefore, this enforced youth control because the regime required a steady conveyor belt of physically hardened soldiers for territorial expansion and healthy Aryan mothers to sustain the population.</p><p>Finally, control was enforced through <strong>the systematic Nazification of school curricula and teachers</strong>. All teachers had to swear loyalty oaths and join the Nazi Teachers’ League. School curricula were rewritten: biology taught racial purity and eugenics, history promoted the 'stab-in-the-back' myth, and physical education consumed 15% of timetables. Filling evenings with youth rallies broke parental and church influence. Therefore, this ensured youth control because controlling education alienated children from family authority, securing their absolute loyalty to the state.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the Nazi regime placed such high importance on controlling the youth in the years 1933–1939 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Hitler Youth (Hitlerjugend)",
+                "Baldur von Schirach",
+                "League of German Girls (BDM)",
+                "1936 Hitler Youth Law",
+                "Compulsory membership (1939)",
+                "Catholic Youth banned",
+                "National Socialist Teachers' League",
+                "Bernhard Rust",
+                "Eugenics & Race Studies",
+                "Rewritten textbooks",
+                "Napolas cadet schools",
+                "Military field drills"
               ]
             },
             "model_tiers": {
@@ -18855,30 +19087,40 @@
             "tariff": "8 marks",
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into the methods used by the Nazi regime to control and train young people between 1933 and 1939?",
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Hitler Youth, BDM, militarism, physical fitness, indoctrination), and Provenance (Nature, Origin, Purpose).",
             "model": "<p>Source A is highly useful for investigating Nazi youth control because it reveals the legal monopolisation of childhood, decreeing that 'all youths between 10 and 18 are obliged to serve in the Hitler Youth'. This statute subordinated parents and churches to the state, requiring children to be 'educated physically, intellectually, and morally in National Socialism'. As an official legislative decree issued in March 1939, its purpose was statutory conscription, providing unimpeachable legal evidence of the regime forcing eight million adolescents into ideological obedience.</p><p>Source B is equally useful because it exposes the militaristic ideals drilled into boys, with Hitler declaring that the German youth must be 'swift as a greyhound, tough as leather, and hard as Krupp steel'. This Spartan training prioritized combat readiness over academic study to prepare boys for the Wehrmacht. Delivered before 54,000 youths at the Nuremberg rally, Hitler’s purpose was inspirational indoctrination, offering direct evidence of martial conditioning.</p><p>Together, both sources demonstrate the statutory compulsion and physical militarisation used to control young Germans.</p>",
             "scaffolding": {
-              "acronym": "Two-Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE A",
-                  "name": "1. Source A (Hitler Youth & Militarization)",
-                  "prompt": "Analyse visual evidence of uniform marching, drums, and swastikas; corroborate with military drills and Wehrmacht preparation."
-                },
-                {
-                  "letter": "SOURCE B",
-                  "name": "2. Source B (BDM & Physical Conditioning)",
-                  "prompt": "Analyse visual evidence of synchronized gymnastics; corroborate with training girls for motherhood and racial fitness."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Comparative Judgment",
-                  "prompt": "Weigh both sources: evaluate how gender-segregated training prepared boys for war and girls for motherhood."
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source A is useful for an enquiry into the methods used by the Nazi regime to control and train young people between 1933 and 1939 because its content shows...",
+                "Historically, at this time, ... Furthermore, Source A’s provenance makes it useful because...",
+                "Similarly, Source B is useful for an enquiry into the methods used by the Nazi regime to control and train young people between 1933 and 1939 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "Hitler Youth (Hitlerjugend)",
+                "Baldur von Schirach",
+                "League of German Girls (BDM)",
+                "1936 Hitler Youth Law",
+                "Compulsory membership (1939)",
+                "Catholic Youth banned",
+                "National Socialist Teachers' League",
+                "Bernhard Rust",
+                "Eugenics & Race Studies",
+                "Rewritten textbooks",
+                "Napolas cadet schools",
+                "Military field drills"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source A, then Source B). In each paragraph, weave 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -20150,35 +20392,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source C about the conditions experienced by German workers under the Nazi regime.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>Workers lost the legal right to strike or negotiate wages.<br><strong>Details in the source that tell me this:</strong><br>'trade unions were abolished and strikes banned under penalty of arrest'.</p><p><strong>(ii) What I can infer:</strong><br>The regime used subsidized trips to quell worker discontent.<br><strong>Details in the source that tell me this:</strong><br>'Strength Through Joy organised subsidised holidays, trips, and sports'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source C about the conditions experienced by German workers under the Nazi regime is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about the conditions experienced by German workers under the Nazi regime is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -20213,15 +20438,43 @@
               "The German Labour Front (DAF) and KdF",
               "The impact of rearmament and public works"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The German Labour Front (DAF) and KdF",
+              "The impact of rearmament and public works"
+            ],
             "model": "<p>One decisive reason living standards changed was <strong>the abolition of independent trade unions and the creation of the German Labour Front (DAF)</strong>. In May 1933, the Nazis banned all trade unions, replacing them with the state-run DAF under Robert Ley. While the DAF guaranteed jobs through Autobahns and rearmament, workers lost the right to strike, negotiate wages, or change jobs. Therefore, this altered living standards because they gained stable employment at the cost of losing all personal liberty and collective bargaining power.</p><p>Furthermore, living standards were altered by <strong>state-subsidized leisure programs like Strength Through Joy (Kraft durch Freude, KdF)</strong>. To maintain morale without raising wages, the DAF offered subsidized cruise holidays, cheap theatre tickets, and factory upgrades through 'Beauty of Labour'. Workers also paid into a savings scheme for the Volkswagen car. Therefore, this boosted living standards because extensive recreational benefits created a subjective feeling of social mobility and contentment among ordinary workers.</p><p>However, living standards deteriorated due to <strong>longer working hours, wage restrictions, and consumer shortages</strong>. Average weekly working hours climbed from 43 hours in 1933 to 47 hours in 1939 (and over 60 in arms plants). Real wages lagged behind 1928 levels when DAF dues and food costs were counted, with shortages of butter and meat. Therefore, this lowered living standards because workers endured longer, more grueling workdays with lower purchasing power to sustain the rearmament drive.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the standard of living for German workers changed in the years 1933–1939 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "German Labour Front (DAF)",
+                "Dr Robert Ley",
+                "Reich Labour Service (RAD)",
+                "Autobahn construction",
+                "Conscription (1935)",
+                "'Invisible unemployment'",
+                "Strength Through Joy (KdF)",
+                "Beauty of Labour (SdA)",
+                "Volkswagen savings scheme",
+                "Four-Year Plan (1936)",
+                "Autarky",
+                "Hermann Göring"
               ]
             },
             "model_tiers": {
@@ -20253,30 +20506,40 @@
             "tariff": "8 marks",
             "type": "utility_8m",
             "question": "How useful are Sources B and C for an enquiry into the effects of Nazi economic policies on German workers between 1933 and 1939?",
-            "prompt": "Evaluate both sources using Content, Contextual Knowledge (DAF, RAD, KdF, Beauty of Labour, wages, hours), and Provenance (Nature, Origin, Purpose).",
             "model": "<p>Source B is highly useful for investigating Nazi economic policies because it shows how public works were used for propaganda, celebrating the Autobahn as 'our primary weapon in conquering unemployment'. Todt framed manual construction as an honourable duty that restored national pride, even though only 125,000 men were directly employed on motorways. As an official progress report by the Inspector of Highways in 1936, its purpose was to glorify state infrastructure, providing authentic evidence of how the regime manufactured consent through engineering triumphs.</p><p>Source C is equally useful because it exposes the increased exploitation behind official employment figures, recording that 'weekly working hours increased from 43 in 1933 to 49 by 1939'. With trade unions banned and replaced by Robert Ley's German Labour Front (DAF), wage bargaining was outlawed and take-home pay was eroded by compulsory deductions. As an internal statistical payroll survey, its purpose was industrial planning, providing unvarnished proof of falling real living standards.</p><p>Together, both sources contrast official propaganda triumphs with the reality of working-class regimentation.</p>",
             "scaffolding": {
-              "acronym": "Two-Source Utility Framework",
-              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
-              "steps": [
-                {
-                  "letter": "SOURCE B",
-                  "name": "1. Source B (Worker's Letter on Wages & Hours)",
-                  "prompt": "Analyse 54-hour workweeks, wage deductions, and loss of right to strike; corroborate with DAF and Arbeitsbuch restrictions."
-                },
-                {
-                  "letter": "SOURCE C",
-                  "name": "2. Source C (SOPADE Report on KdF & Discontent)",
-                  "prompt": "Analyse food inflation and loss of unions vs KdF leisure; corroborate with Wilhelm Gustloff cruises and generational differences."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "3. Comparative Judgment",
-                  "prompt": "Weigh both sources: evaluate how material exploitation and loss of rights were masked by state leisure."
-                }
+              "acronym": "BOTH Sources: Content + Context + Provenance (NOP) • 12m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "Source B is useful for an enquiry into the effects of Nazi economic policies on German workers between 1933 and 1939 because its content shows...",
+                "Historically, at this time, ... Furthermore, Source B’s provenance makes it useful because...",
+                "Similarly, Source C is useful for an enquiry into the effects of Nazi economic policies on German workers between 1933 and 1939 because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Specifically, the source reveals",
+                "From my own knowledge",
+                "Furthermore, its purpose/origin",
+                "However, a limitation is",
+                "Taken together, both sources"
+              ],
+              "vocab_bank": [
+                "German Labour Front (DAF)",
+                "Dr Robert Ley",
+                "Reich Labour Service (RAD)",
+                "Autobahn construction",
+                "Conscription (1935)",
+                "'Invisible unemployment'",
+                "Strength Through Joy (KdF)",
+                "Beauty of Labour (SdA)",
+                "Volkswagen savings scheme",
+                "Four-Year Plan (1936)",
+                "Autarky",
+                "Hermann Göring"
               ]
             },
-            "examiner_tip": "The '2-Quote Dual Anchor' Rule (10–12 Mins): Write exactly TWO short paragraphs (Source B, then Source C). In each paragraph, weave 2 direct quotes/data points: Quote 1 anchors what the source literally says/shows; Quote 2 bridges into your historical validation and ONE aspect of provenance. Zero wasted intro, comparison, or conclusion.",
             "model_tiers": {
               "tier_2m": {
                 "title": "2/8 Simple Comment",
@@ -21466,35 +21729,18 @@
             "type": "4-mark",
             "marks": 4,
             "question": "Give two things you can infer from Source D about the destruction caused during Kristallnacht in November 1938.",
-            "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from the source.",
             "model": "<p><strong>(i) What I can infer:</strong><br>The pogrom caused catastrophic destruction of Jewish property.<br><strong>Details in the source that tell me this:</strong><br>'shattered glass covered pavements while ancient synagogues burned'.</p><p><strong>(ii) What I can infer:</strong><br>Emergency services actively colluded by protecting only German buildings.<br><strong>Details in the source that tell me this:</strong><br>'fire brigades stood by merely protecting adjacent German buildings'.</p>",
             "scaffolding": {
-              "acronym": "Inference + Detail Formula (AO3)",
-              "acronym_title": "Deduction & Quote Framework",
-              "steps": [
-                {
-                  "letter": "I1",
-                  "name": "First Inference",
-                  "prompt": "State what you can deduce from the source."
-                },
-                {
-                  "letter": "Q1",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your first inference."
-                },
-                {
-                  "letter": "I2",
-                  "name": "Second Inference",
-                  "prompt": "State a second, different deduction about the topic."
-                },
-                {
-                  "letter": "Q2",
-                  "name": "Supporting Quote",
-                  "prompt": "Quote the exact detail from the source that supports your second inference."
-                }
+              "acronym": "2 × (Valid Inference [1m] + Supporting Quote/Detail [1m]) • 5m",
+              "button_label": "Sentence Starters",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "One thing I can infer from Source D about the destruction caused during Kristallnacht in November 1938 is that...",
+                "Details in the source that tell me this are \"...\"",
+                "A second thing I can infer about the destruction caused during Kristallnacht in November 1938 is that..."
               ]
             },
-            "examiner_tip": "Beware the 'Dealt vs. Felt' trap: do not simply write about emotions. Focus on what was actively happening. State two distinct inferences backed by different source details.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -21529,15 +21775,43 @@
               "The Nuremberg Laws (1935)",
               "The events of Kristallnacht (1938)"
             ],
-            "prompt": "Explain at least three distinct causal factors using specific historical evidence (including both stimulus points and your own knowledge), and link each paragraph back to the question stem.",
+            "bullet_points": [
+              "The Nuremberg Laws (1935)",
+              "The events of Kristallnacht (1938)"
+            ],
             "model": "<p>One decisive reason persecution escalated was <strong>the transition from informal discrimination to statutory racial laws via the Nuremberg Laws (1935)</strong>. While early persecution featured street violence and the April 1933 shop boycott, the 1935 Nuremberg Laws codified antisemitism into law. The Reich Citizenship Law stripped Jews of German citizenship, while the Law for the Protection of German Blood and Honour criminalized marriage and sexual relations between Jews and Aryans. Therefore, this escalated persecution because statutory laws legally isolated Jews as racial outcasts, legitimizing systematic discrimination.</p><p>Furthermore, persecution escalated into <strong>state-organized physical violence during the nationwide pogrom of Kristallnacht in November 1938</strong>. Following the shooting of diplomat Ernst vom Rath in Paris, Goebbels unleashed the SA and SS in orchestrated violence. Over 1,000 synagogues were burned, 7,500 shops trashed, 91 Jews murdered, and 30,000 sent to concentration camps, with a 1 billion mark fine imposed. Therefore, this escalated persecution because Kristallnacht marked the terrifying shift from legal exclusion to state-sponsored terror and mass destruction.</p><p>Finally, escalation was accelerated by <strong>the policy of total economic exclusion ('Aryanization') to force Jewish emigration</strong>. From late 1938, Jewish children were expelled from schools, Jews were barred from public spaces, and businesses were confiscated. Persecution also expanded to Romani people and the disabled through compulsory sterilization. Therefore, this intensified persecution because stripping civil rights and property was designed to force their complete exodus from the Reich.</p>",
             "scaffolding": {
-              "acronym": "P-E-E-L",
-              "acronym_title": "12-Mark Causation Formula: Point, Evidence, Explanation, Link",
+              "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
               "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, another decisive factor was...",
-                "Finally, an underlying driver was..."
+                "First, one major reason why the persecution of Jews and other minorities escalated in Nazi Germany in the years 1933–1939 was...",
+                "Second, another key reason was...",
+                "Finally, a third reason was..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Consequently",
+                "This meant that",
+                "Furthermore",
+                "As a result",
+                "In addition",
+                "Crucially"
+              ],
+              "vocab_bank": [
+                "Herrenvolk & Untermenschen",
+                "April 1933 shop boycott",
+                "1933 Civil Service Law",
+                "Nuremberg Laws (1935)",
+                "Reich Citizenship Law",
+                "Blood Protection Law",
+                "Roma & Sinti persecution",
+                "Kristallnacht (9–10 Nov 1938)",
+                "Ernst vom Rath",
+                "30,000 sent to camps",
+                "1 billion mark fine",
+                "'Aryanisation' of property"
               ]
             },
             "model_tiers": {
@@ -21571,30 +21845,40 @@
             "marks": 16,
             "question": "How far do you agree with Interpretation 2 about the events of Kristallnacht? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
             "model": "<p>Interpretation 2 presents a compelling and historically unimpeachable argument that the violence of *Kristallnacht* (9–10 November 1938) was a calculated, centrally orchestrated state pogrom rather than an uncontrollable public outburst. Following the assassination of diplomat Ernst vom Rath in Paris, Joseph Goebbels gave an incendiary speech in Munich signalling that anti-Jewish demonstrations should not be prevented. This was taken as a direct order. Security Police chief Reinhard Heydrich sent midnight telegrams ordering police not to intervene while SA men burned synagogues, but merely to protect German property. Over 91 Jews were murdered, 1,000 synagogues torched, and 30,000 Jewish men deported to camps. Therefore, Interpretation 2 is supported because secret police telegrams and coordinated SA arson prove systematic state orchestration.</p><p>However, Interpretation 1 provides a vital perspective by examining the regime's pretext and the pervasive atmosphere of radical antisemitic incitement that allowed the pogrom to occur. Vom Rath's murder provoked genuine fury among committed Nazis and radicalised youths. Five years of propaganda and the tabloid *Der Stürmer* had deeply dehumanised Jews. While most Germans watched in shocked silence, substantial numbers of off-duty SA men and Hitler Youth eagerly looted 7,500 businesses. Therefore, Interpretation 1 is valid because relentless ideological radicalisation created the public compliance necessary to execute the pogrom.</p><p>In conclusion, I agree with Interpretation 2 to a very large extent. While the assassination provided the pretext (Interpretation 1), plainclothes stormtroopers carried out the arson, fire brigades were ordered to stand down, and Göring imposed a punitive one billion mark fine, proving *Kristallnacht* was a state-directed pogrom.</p>",
             "scaffolding": {
-              "acronym": "Interpretation Verdict Framework",
-              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
-              "steps": [
-                {
-                  "letter": "INTERP 2",
-                  "name": "1. Support Interpretation 2 (Public Disapproval & Fear)",
-                  "prompt": "Deploy evidence of middle-class alarm, SOPADE reports, foreign consul dispatches, and fear of Gestapo/Dachau."
-                },
-                {
-                  "letter": "INTERP 1",
-                  "name": "2. Support Interpretation 1 (Planned State Pogrom)",
-                  "prompt": "Deploy evidence of Goebbels' Munich speech, SA/SS orders, police ordered not to intervene, 1,000 synagogues burned, 1 billion RM fine."
-                },
-                {
-                  "letter": "EVALUATION",
-                  "name": "3. Criteria & Sustained Historical Verdict",
-                  "prompt": "Weigh top-down state coordination against public silence: conclude how state terror enabled violent escalation."
-                }
+              "acronym": "Interp 2 + Interp 1 + Own Knowledge + Verdict • +4 SPaG • 25m",
+              "button_label": "Starters & Word Bank",
+              "acronym_title": "",
+              "guidance": "",
+              "sentence_starters": [
+                "On the one hand, Interpretation 2 convincingly argues that...",
+                "However, on the other hand, Interpretation 1 challenges this view by emphasising...",
+                "In conclusion, I agree with Interpretation 2 to a large / limited extent because..."
+              ],
+              "connectives_label": "Connectives",
+              "connectives_bank": [
+                "Interpretation 2 argues that",
+                "This is supported by my own knowledge",
+                "However, Interpretation 1 counters this",
+                "Crucially, the author’s tone",
+                "In conclusion, I agree to a"
+              ],
+              "vocab_bank": [
+                "Herrenvolk & Untermenschen",
+                "April 1933 shop boycott",
+                "1933 Civil Service Law",
+                "Nuremberg Laws (1935)",
+                "Reich Citizenship Law",
+                "Blood Protection Law",
+                "Roma & Sinti persecution",
+                "Kristallnacht (9–10 Nov 1938)",
+                "Ernst vom Rath",
+                "30,000 sent to camps",
+                "1 billion mark fine",
+                "'Aryanisation' of property"
               ]
             },
-            "examiner_tip": "Level 4 Discriminator: Indicate HOW the different views are conveyed (tone, emphasis, language). Balance Interpretation 2 (state-orchestrated pogrom, Goebbels, SA instructions, Reinhard Heydrich's telex) against Interpretation 1 (provocation of vom Rath murder, public antisemitic radicalization, participation of some civilians). Deploy specialist terminology for 4/4 SPaG.",
             "model_tiers": {
               "tier_4m": {
                 "title": "4/16 Basic Description",

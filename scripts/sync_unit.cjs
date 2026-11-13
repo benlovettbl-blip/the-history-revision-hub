@@ -261,8 +261,12 @@ async function runSync() {
         });
       }
       if (unitId === 'eee') {
-        console.log(`\n📚 Compiling 16-page double-page workbooks for [eee]...`);
+        console.log(`\n📚 Compiling 16-page Golden double-page workbooks & mark schemes for [eee]...`);
         execSync(`node scripts/render_eee_twopage_workbook.cjs all`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+        execSync(`node scripts/render_eee_workbook_markschemes.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });

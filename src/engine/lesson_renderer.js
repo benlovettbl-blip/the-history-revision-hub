@@ -9774,12 +9774,15 @@ export function renderLesson(lesson) {
           return `${prefix}${typeof formatBold !== 'undefined' ? formatBold(cleanStr) : cleanStr}`;
         }
 
-        // 3. Feature drills (Edexcel Paper 1 Q1)
+        // 3. Feature drills (Edexcel Paper 1 Q1 combined 4-mark card; standalone 2-mark cards format as Q1(a)/Q1(b) [2 marks])
+        const isStandalone2mFeature =
+          qObj?.marks === 2 || qType === 'feature_2m' || /^2\s*marks?$/i.test(qTariff);
         if (
-          qType.includes('features') ||
-          /feature_drills/i.test(qType) ||
-          str.startsWith('(a) Describe one feature') ||
-          /Describe one feature/i.test(str)
+          !isStandalone2mFeature &&
+          (qType.includes('features') ||
+            /feature_drills/i.test(qType) ||
+            str.startsWith('(a) Describe one feature') ||
+            /Describe one feature/i.test(str))
         ) {
           let cleanStr = str.replace(/^(?:Q\d+[\.:\s]+|Question\s+\d+[\.:\s]+)*/i, '');
           cleanStr = cleanStr.replace(/\n/g, '<br><br>');
@@ -9895,33 +9898,27 @@ export function renderLesson(lesson) {
           }
         }
 
-        // 2. EARLY ELIZABETHAN ENGLAND (eee)
+        // 2. EARLY ELIZABETHAN ENGLAND (eee — 16-page Golden KT1/KT2/KT3 Booklets)
         if (unitId === 'eee') {
-          const startPg = 2 + lNum * 2;
-          const endPg = startPg + 1;
+          if (qObj?.workbook_badge) {
+            return { inWorkbook: true, label: qObj.workbook_badge };
+          }
+          const mapEntry =
+            WORKBOOK_PAGE_MAP?.eee?.[lessonId] ||
+            WORKBOOK_PAGE_MAP?.eee?.[`lesson_${ktNum}_${lNum}`];
+          const examPg = mapEntry?.endPage || (lNum === 4 ? 11 : 1 + lNum * 2);
+          const booklet = mapEntry?.booklet || `Key Topic ${ktNum} Booklet (16p)`;
 
-          if (
-            type.includes('feature') ||
-            text.includes('describe two features') ||
-            tariff.includes('4 mark') ||
-            type.includes('2m')
-          ) {
-            return { inWorkbook: true, label: `In Printed Workbook • Page ${endPg}` };
-          }
-          if (type.includes('explain_why') || tariff.includes('12 mark') || type.includes('12')) {
-            return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}` };
-          }
-          if (type.includes('essay') || tariff.includes('16 mark') || type.includes('16')) {
-            if (lNum >= 5) {
-              return { inWorkbook: true, label: `In Printed Workbook • Pages 14–15` };
-            }
+          if (qIdx === 1 && (type.includes('feature') || type.includes('2m') || tariff.includes('2 mark'))) {
             return {
-              inWorkbook: false,
-              label: 'Digital Extension • Not in Printed Workbook',
-              note: 'This 16-mark evaluative essay is provided as an optional digital extension. In the printed workbook, 16-mark essay mastery is practiced on the Key Topic Assessment spread (Pages 14–15).',
+              inWorkbook: true,
+              label: `In Printed Workbook • Page 13 (${booklet})`,
             };
           }
-          return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}` };
+          return {
+            inWorkbook: true,
+            label: `In Printed Workbook • Page ${examPg} (${booklet})`,
+          };
         }
 
         // 3. WEIMAR & NAZI GERMANY (weimar_nazi_germany)
@@ -10042,6 +10039,14 @@ export function renderLesson(lesson) {
         const qText = (q.question || '').toLowerCase();
         const qTariff = (q.tariff || '').toLowerCase();
         const qType = (q.type || '').toLowerCase();
+        const isGcseCleanExam = [
+          'eee',
+          'edexcel_medicine',
+          'cme_new',
+          'cold_war',
+          'weimar_nazi_germany',
+          'usa',
+        ].includes(unitId);
 
         const isConsequence =
           !isPaper3Weimar &&
@@ -10065,6 +10070,7 @@ export function renderLesson(lesson) {
           (q.prompt || '').includes('Point (') ||
           (q.prompt || '').includes('Fact (') ||
           isConsequence;
+        const showSpoilerPromptInDrawer = !isGcseCleanExam && isSpoilerPrompt && q.prompt;
 
         let scaffoldHtml = '';
         if (q.scaffolding) {
@@ -10084,11 +10090,17 @@ export function renderLesson(lesson) {
             )
             .join('');
 
+          const hasHeaderAboveStarters = !!(
+            sc.acronym_title ||
+            sc.guidance ||
+            showSpoilerPromptInDrawer ||
+            (sc.steps && sc.steps.length > 0)
+          );
           const startersHtml =
             sc.sentence_starters && sc.sentence_starters.length > 0
               ? `
-            <div style="margin-top: 10px;">
-              <strong style="font-size: 0.85rem; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-pen-fancy" style="color: #3b82f6;"></i> Model Sentence Starters:</strong>
+            <div style="margin-top: ${hasHeaderAboveStarters ? '10px' : '0'};">
+              <strong style="font-size: 0.85rem; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-pen-fancy" style="color: #3b82f6;"></i> Sentence Starters:</strong>
               <ul style="margin: 6px 0 0 0; padding-left: 20px; font-size: 0.9rem; color: #334155; line-height: 1.5;">
                 ${sc.sentence_starters.map((st) => `<li><em>"${st}"</em></li>`).join('')}
               </ul>
@@ -10100,8 +10112,18 @@ export function renderLesson(lesson) {
             sc.connectives_bank && sc.connectives_bank.length > 0
               ? `
             <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-              <span style="font-size: 0.8rem; font-weight: bold; color: #64748b; text-transform: uppercase;">Causal Connective Bank:</span>
+              <span style="font-size: 0.8rem; font-weight: bold; color: #64748b; text-transform: uppercase;">${sc.connectives_label || 'Causal Connective Bank'}:</span>
               ${sc.connectives_bank.map((conn) => `<span style="background: #e2e8f0; color: #1e293b; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; border-radius: 12px;">${conn}</span>`).join('')}
+            </div>
+          `
+              : '';
+
+          const vocabBankHtml =
+            sc.vocab_bank && sc.vocab_bank.length > 0
+              ? `
+            <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+              <span style="font-size: 0.8rem; font-weight: bold; color: #0f766e; text-transform: uppercase;">Specification Word Bank:</span>
+              ${sc.vocab_bank.map((term) => `<span style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">${term}</span>`).join('')}
             </div>
           `
               : '';
@@ -10132,10 +10154,11 @@ export function renderLesson(lesson) {
 
           const hasDetailedScaffold = !!(
             sc.guidance ||
-            (isSpoilerPrompt && q.prompt) ||
+            showSpoilerPromptInDrawer ||
             (sc.steps && sc.steps.length > 0) ||
             (sc.sentence_starters && sc.sentence_starters.length > 0) ||
             (sc.connectives_bank && sc.connectives_bank.length > 0) ||
+            (sc.vocab_bank && sc.vocab_bank.length > 0) ||
             (sc.red_flags && sc.red_flags.length > 0) ||
             (sc.checklist && sc.checklist.length > 0)
           );
@@ -10143,18 +10166,18 @@ export function renderLesson(lesson) {
           scaffoldHtml = `
             <div style="margin: 12px 0 16px 0;">
               <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                ${isConsequence
+                ${isConsequence && !isGcseCleanExam
                   ? ''
                   : `
-                <span style="background: #eff6ff; border: 1px solid #93c5fd; color: #1e40af; font-size: 0.85rem; font-weight: 700; padding: 4px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.5px;">
-                  <i class="fa-solid fa-layer-group" style="margin-right: 6px;"></i> ${sc.acronym || 'PEE/PEEL Structure Strip'}
+                <span style="background: #eff6ff; border: 1px solid #93c5fd; color: #1e40af; font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.35px;">
+                  <i class="fa-solid fa-layer-group" style="margin-right: 5px;"></i> ${sc.acronym || 'PEE/PEEL Structure Strip'}
                 </span>
                 `
                 }
                 ${hasDetailedScaffold
               ? `
                 <button class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-scaffold-${qIdx}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600;">
-                  <i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Structure Strip &amp; Tips
+                  <i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> ${sc.button_label || 'Structure Strip &amp; Tips'}
                 </button>
                 `
               : ''
@@ -10162,15 +10185,14 @@ export function renderLesson(lesson) {
               </div>
               ${hasDetailedScaffold
               ? `
-              <div id="ep-scaffold-${qIdx}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 16px; margin-top: 8px;">
-                <div style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
-                  <i class="fa-solid fa-sitemap" style="color: #3b82f6;"></i> ${sc.acronym_title || 'Exam Technique Formula'}
-                </div>
-                ${sc.guidance ? `<p style="font-size: 0.9rem; color: #475569; margin: 0 0 12px 0; font-style: italic;">${sc.guidance}</p>` : ''}
-                ${isSpoilerPrompt && q.prompt ? `<div style="font-size: 0.88rem; color: #334155; margin: 0 0 12px 0; background: #ffffff; border: 1px solid #cbd5e1; border-left: 3px solid #64748b; padding: 8px 12px; border-radius: 4px;"><strong><i class="fa-solid fa-circle-info" style="color: #3b82f6;"></i> Guidance:</strong> ${q.prompt}</div>` : ''}
+              <div id="ep-scaffold-${qIdx}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 14px 16px; margin-top: 8px;">
+                ${sc.acronym_title ? `<div style="font-weight: 700; color: #1e3a8a; font-size: 0.98rem; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-sitemap" style="color: #3b82f6;"></i> ${sc.acronym_title}</div>` : ''}
+                ${sc.guidance ? `<p style="font-size: 0.88rem; color: #475569; margin: 0 0 10px 0; font-style: italic;">${sc.guidance}</p>` : ''}
+                ${showSpoilerPromptInDrawer ? `<div style="font-size: 0.88rem; color: #334155; margin: 0 0 12px 0; background: #ffffff; border: 1px solid #cbd5e1; border-left: 3px solid #64748b; padding: 8px 12px; border-radius: 4px;"><strong><i class="fa-solid fa-circle-info" style="color: #3b82f6;"></i> Guidance:</strong> ${q.prompt}</div>` : ''}
                 ${stepsHtml}
                 ${startersHtml}
                 ${connectivesHtml}
+                ${vocabBankHtml}
                 ${redFlagsHtml}
                 ${checklistHtml}
               </div>
@@ -10334,21 +10356,37 @@ export function renderLesson(lesson) {
           `;
         } else if (isCausation12) {
           const causationPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q5/Q6' : unitId === 'eee' ? 'Paper 2 Q2' : 'Paper 3 Q2';
+          const p1Copy =
+            unitId === 'eee'
+              ? `<strong>Paragraph 1 — First Analytical Reason [PEEL]:</strong> State a clear historical reason (you may use Stimulus 1), support with precise names and dates, and explain <em>how</em> it caused the outcome in the question.`
+              : `<strong>Aspect 1 (Content &amp; Cause 1) [PEEL]:</strong> Point stating cause &bull; Specific historical evidence (names, dates, data) &bull; Explanation of mechanism &bull; Link directly back to question stem.`;
+          const p2Copy =
+            unitId === 'eee'
+              ? `<strong>Paragraph 2 — Second Analytical Reason [PEEL]:</strong> Develop a second distinct reason (you may use Stimulus 2) with specific Tudor detail and explicit causal explanation.`
+              : `<strong>Aspect 2 (Content &amp; Cause 2) [PEEL]:</strong> Second distinct historical cause with precise own knowledge, analysing how it generated change.`;
+          const p3Copy =
+            unitId === 'eee'
+              ? `<strong>Paragraph 3 — Own Knowledge Beyond Stimulus [PEEL]:</strong> Explain a third distinct reason entirely from <strong>your own knowledge</strong> (mandatory to break the Level 2 cap at 6/12 and reach Level 4!).`
+              : `<strong>Aspect 3 (Content &amp; Cause 3) [PEEL]:</strong> Third distinct historical aspect (crucial ceiling requirement to access Level 4!).`;
+          const tipCopy12 =
+            unitId === 'eee'
+              ? `Under Pearson Edexcel Paper 2 rules, answers relying solely on the two printed stimulus prompts are <strong>capped at Level 2 (max 6/12)</strong>. Explain 3 distinct reasons (including independent own knowledge) to access Level 4 (10–12 marks). Skip intros and conclusions!`
+              : `You MUST cover at least 3 distinct aspects of content to access Level 4 (10–12 marks). Answers with only 2 aspects are capped at 8 marks. Causes do NOT need to be prioritized or linked together, and zero marks are awarded for intros/conclusions!`;
           stampHtml = `
             <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #0369a1; border-radius: 8px; background: #f0f9ff; padding: 12px 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #bae6fd; padding-bottom: 6px;">
-                <span style="font-weight: 800; font-size: 0.92rem; color: #075985; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-sitemap" style="margin-right: 6px;"></i> Edexcel 12-Mark Causation PEEL Structure Strip (${causationPaperLabel})</span>
+                <span style="font-weight: 800; font-size: 0.92rem; color: #075985; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-sitemap" style="margin-right: 6px;"></i> Edexcel 12-Mark ‘Explain Why’ Structure Strip (${causationPaperLabel})</span>
                 <span style="background: #0284c7; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[12 marks &bull; 15 mins]</span>
               </div>
               <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                 <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">P1</span>
-                <div><strong>Aspect 1 (Content &amp; Cause 1) [PEEL]:</strong> Point stating cause &bull; Specific historical evidence (names, dates, data) &bull; Explanation of mechanism &bull; Link directly back to question stem.</div>
+                <div>${p1Copy}</div>
                 <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">P2</span>
-                <div><strong>Aspect 2 (Content &amp; Cause 2) [PEEL]:</strong> Second distinct historical cause with precise own knowledge, analysing how it generated change.</div>
+                <div>${p2Copy}</div>
                 <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">P3</span>
-                <div><strong>Aspect 3 (Content &amp; Cause 3) [PEEL]:</strong> Third distinct historical aspect (crucial ceiling requirement to access Level 4!).</div>
+                <div>${p3Copy}</div>
                 <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #e0f2fe; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.8rem; color: #0369a1; font-weight: 600;">
-                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (The 3 Aspects Rule):</strong> You MUST cover at least 3 distinct aspects of content to access Level 4 (10–12 marks). Answers with only 2 aspects are capped at 8 marks. Causes do NOT need to be prioritized or linked together, and zero marks are awarded for intros/conclusions!
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip:</strong> ${tipCopy12}
                 </div>
                 ${
                   q.examiner_tip
@@ -10366,11 +10404,15 @@ export function renderLesson(lesson) {
           const isThematicEssay = unitId === 'edexcel_medicine' || unitId === 'eee';
           if (isThematicEssay) {
             const verdictPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q7/Q8' : 'Paper 2 Q3/Q4';
-            const marksLabel = unitId === 'eee' ? '16 marks &bull; 25 mins' : '16+4 SPaG &bull; 25 mins';
+            const marksLabel = unitId === 'eee' ? '16 marks • Zero SPaG • 25 mins' : '16+4 SPaG &bull; 25 mins';
+            const criteriaExample =
+              unitId === 'eee'
+                ? `(e.g. underlying root cause vs short-term trigger; scale of domestic vs foreign threat; breadth of impact across social ranks)`
+                : `(e.g. immediate acute clinical treatment vs long-term population-wide prevention; scale vs durability of impact)`;
             const examinerTipHtml =
               unitId === 'edexcel_medicine'
                 ? `You <strong>CANNOT</strong> reach Level 4 without bringing in substantial historical evidence from beyond the stimulus points! Zero marks are awarded for pure narrative storytelling; your conclusion must weigh the factors against clear criteria rather than simply stating "both were equally important". Deploy precise medical terminology (e.g. <em>laparotomy, computed tomography, epidemiology, non-invasive, carcinogens</em>) to secure the full 4/4 SPaG.`
-                : `Level 4 requires evaluating both sides and introducing precise own knowledge beyond the stimulus points. Reach a justified conclusion showing which factor was most decisive. Use precise Tudor terminology (e.g. <em>Privy Council, royal prerogative, recusancy, vestments, privateering</em>).`;
+                : `Answers confined strictly to the two stimulus bullets are <strong>capped at Level 2 (max 8/16)</strong>. Level 4 requires weighing both sides, integrating independent own knowledge beyond the stimulus, and reaching a criteria-led judgement (note: Paper 2 Option B4 carries <strong>zero SPaG marks</strong>).`;
 
             stampHtml = `
               <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #7c3aed; border-radius: 8px; background: #faf5ff; padding: 12px 16px;">
@@ -10380,13 +10422,13 @@ export function renderLesson(lesson) {
                 </div>
                 <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                   <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E1</span>
-                  <div><strong>Named Factor (Statement Focus) [PEEL]:</strong> Evaluate the specific factor named in the prompt using the first stimulus point and detailed historical evidence. Explain the mechanism and extent of its impact.</div>
+                  <div><strong>Case For the Statement [PEEL]:</strong> Analyse the stated factor in the question using precise dates, figures, and mechanisms to show why it was significant.</div>
                   <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E2</span>
-                  <div><strong>Counter-Factor (Alternative View) [PEEL]:</strong> Evaluate an alternative or contrasting factor using the second stimulus point and precise contextual knowledge to provide a balanced argument.</div>
+                  <div><strong>Counter-Argument (Rival Factor) [PEEL]:</strong> Weigh a strong rival factor (using the second stimulus prompt if helpful) to construct a balanced argument.</div>
                   <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E3</span>
-                  <div><strong>Own-Knowledge Factor (Level 4 Ceiling Requirement) [PEEL]:</strong> Introduce and analyze a third distinct historical factor entirely from own knowledge (essential ceiling requirement to access Level 4!).</div>
+                  <div><strong>Independent Own Knowledge [PEEL]:</strong> Introduce and evaluate a third distinct factor entirely from <strong>your own knowledge</strong> (mandatory to unlock Level 3/4 above 8/16!).</div>
                   <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E4</span>
-                  <div><strong>Criteria-Led Historical Verdict:</strong> Reach a sustained, nuanced judgment answering <em>"How far do you agree?"</em> using explicit weighing criteria (e.g. immediate acute clinical treatment vs long-term population-wide prevention; scale vs durability of impact).</div>
+                  <div><strong>Criteria-Led Historical Verdict:</strong> Reach a sustained judgement answering <em>"How far do you agree?"</em> using explicit weighing criteria ${criteriaExample}.</div>
                   <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #f3e8ff; border-left: 3px solid #7c3aed; border-radius: 4px; font-size: 0.8rem; color: #6b21a8; font-weight: 600;">
                     <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (Level 4 Discriminator):</strong> ${examinerTipHtml}
                   </div>
@@ -10765,22 +10807,45 @@ export function renderLesson(lesson) {
           }
         }
 
+        const isPaper3InterpVerdict =
+          /how far do you agree with interpretation/i.test(q.question || '') ||
+          (['weimar_nazi_germany', 'usa'].includes(unitId) && isVerdict16);
+
+        const bulletItems =
+          Array.isArray(q.bullet_points) && q.bullet_points.length > 0
+            ? q.bullet_points
+            : isGcseCleanExam &&
+                !isPaper3InterpVerdict &&
+                Array.isArray(q.stimulus) &&
+                q.stimulus.length > 0 &&
+                q.stimulus.every(
+                  (s) =>
+                    typeof s === 'string' &&
+                    s.length < 120 &&
+                    !/^(?:\*\*)?(?:Source|Interpretation)\b/i.test(s.trim()),
+                )
+              ? q.stimulus
+              : null;
+
         let bulletHtml = '';
-        if (q.bullet_points && Array.isArray(q.bullet_points) && q.bullet_points.length > 0) {
+        if (bulletItems) {
           bulletHtml = `
             <div class="edexcel-stimulus-bullet-box" style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #1e3a8a; border-radius: 6px; padding: 12px 16px; margin: 12px 0 16px 0;">
               <div style="font-size: 0.88rem; font-weight: 700; color: #1e3a8a; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
                 <i class="fa-solid fa-list-check" style="margin-right: 6px;"></i> You may use the following in your answer:
               </div>
               <ul style="margin: 0; padding-left: 24px; font-size: 0.95rem; color: #0f172a; font-weight: 600; line-height: 1.6;">
-                ${q.bullet_points.map((b) => `<li>${b}</li>`).join('')}
+                ${bulletItems.map((b) => `<li>${b}</li>`).join('')}
               </ul>
-              <div style="font-size: 0.85rem; color: #64748b; margin-top: 8px; font-style: italic;">
+              <div style="font-size: 0.85rem; color: #334155; font-weight: 600; margin-top: 8px; font-style: italic;">
                 You must also use information of your own.
               </div>
             </div>
           `;
         }
+
+        const effectiveStampHtml = isGcseCleanExam ? '' : stampHtml;
+        const effectivePromptHtml = isGcseCleanExam ? '' : promptHtml;
 
         return `
           <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 20px;">
@@ -10793,8 +10858,8 @@ export function renderLesson(lesson) {
             </div>
             ${wbNoticeHtml}
             ${bulletHtml}
-            ${stampHtml}
-            ${promptHtml}
+            ${effectiveStampHtml}
+            ${effectivePromptHtml}
             ${scaffoldHtml}
             <textarea class="student-answer-input" placeholder="Write your response here..." oninput="window.updateProgress()"></textarea>
             ${modelBoxHtml}

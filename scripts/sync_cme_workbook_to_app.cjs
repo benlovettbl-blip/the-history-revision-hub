@@ -42,6 +42,206 @@ function setBlockParagraphs(lesson, blockIdx, p1Body, p2Body) {
   }
 }
 
+const LESSON_VOCAB_BANKS = {
+  lesson_1: [
+    'Displaced Persons (DP) camps',
+    'Harry S. Truman',
+    'Ernest Bevin',
+    '1939 White Paper',
+    'Haganah & Irgun',
+    'King David Hotel (July 1946)',
+    'Sergeants Affair (July 1947)',
+    'SS Exodus 1947',
+    'UNSCOP',
+    'UN Resolution 181 (Nov 1947)',
+  ],
+  lesson_2: [
+    '14 May 1948 Proclamation',
+    'David Ben-Gurion',
+    'Arab League Invasion',
+    'First UN Truce (June 1948)',
+    'Czech Arms Deal (1948)',
+    'Israel Defense Forces (IDF)',
+    'Plan Dalet & Al-Nakba',
+    'UNRWA Refugee Camps',
+    '1949 Rhodes Armistices (Green Line)',
+    'Law of Return (1950)',
+  ],
+  lesson_3: [
+    'Gamal Abdel Nasser',
+    'Operation Black Arrow (Feb 1955)',
+    'Czech Arms Deal (Sept 1955)',
+    'Straits of Tiran Blockade',
+    'Aswan High Dam',
+    'Suez Canal Nationalisation (July 1956)',
+    'Secret Sèvres Agreement (Oct 1956)',
+    'Dwight D. Eisenhower',
+    'UNEF Peacekeepers',
+    'United Arab Republic (1958)',
+  ],
+  lesson_4: [
+    'National Water Carrier',
+    'Cairo Arab League Summit (Jan 1964)',
+    'Headwaters Diversion Plan',
+    'Palestine Liberation Organisation (PLO)',
+    'Yasser Arafat & Fatah',
+    'Syrian Neo-Ba’athist Regime (1966)',
+    'Golan Heights Shelling',
+    'Samu Raid (Nov 1966)',
+    'King Hussein of Jordan',
+    '7 April 1967 Aerial Clash',
+  ],
+  lesson_5: [
+    '13 May 1967 Soviet Warning',
+    'UNEF Expulsion (16 May 1967)',
+    'Closure of Straits of Tiran (22 May 1967)',
+    'Egypt-Jordan Joint Defence Pact (30 May)',
+    'Moshe Dayan',
+    'Operation Focus (5 June 1967)',
+    'Mitla Pass & Sinai Peninsula',
+    'East Jerusalem & West Bank',
+    'Golan Heights (9–10 June 1967)',
+    'UN Ceasefire (10 June 1967)',
+  ],
+  lesson_6: [
+    'Occupied Territories (1967)',
+    'East Jerusalem & Western Wall',
+    '300,000 Refugees',
+    'Khartoum Resolution ("Three Noes")',
+    'UN Resolution 242 (Nov 1967)',
+    '"Land for Peace" Principle',
+    'Blocked Suez Canal',
+    'Bar-Lev Line',
+    'War of Attrition (1969–70)',
+    'Allon Plan & Settlements',
+  ],
+  lesson_7: [
+    'Battle of Karameh (March 1968)',
+    'Yasser Arafat (PLO Chairman, 1969)',
+    'George Habash & PFLP',
+    'Dawson’s Field Hijackings (Sept 1970)',
+    'King Hussein of Jordan',
+    'Black September Civil War (1970–71)',
+    'PLO Relocation to Lebanon ("Fatahland")',
+    'Munich Olympics Massacre (Sept 1972)',
+    'Golda Meir',
+    'Operation Wrath of God',
+  ],
+  lesson_8: [
+    'War of Attrition (1969–70)',
+    'Bar-Lev Line',
+    'Anwar Sadat',
+    'Expulsion of Soviet Advisers (July 1972)',
+    '6 October 1973 Surprise Attack',
+    'Suez Canal & Golan Heights',
+    'Operation Nickel Grass (US Airlift)',
+    'Ariel Sharon & Third Army Encirclement',
+    '1973 OPEC Oil Embargo',
+    'UN Resolution 338',
+  ],
+  lesson_9: [
+    'Henry Kissinger’s Shuttle Diplomacy',
+    'Sinai I & II Disengagement (1974–75)',
+    'Menachem Begin & Likud (1977)',
+    'Sadat’s Visit to Jerusalem (Nov 1977)',
+    'Ismailia Summit (Dec 1977)',
+    'President Jimmy Carter',
+    'Camp David Accords (Sept 1978)',
+    'Treaty of Washington (March 1979)',
+    'Sinai Withdrawal & US Aid',
+    'Arab League Suspension & 1981 Assassination',
+  ],
+  lesson_10: [
+    '1974 UN Observer Status',
+    'Operation Litani (1978) & UNIFIL',
+    'Operation Peace for Galilee (1982)',
+    'Sabra & Shatila Massacre (Sept 1982)',
+    'Kahan Commission & Hezbollah',
+    'First Intifada (Dec 1987)',
+    'Unified National Leadership (UNLU)',
+    'Yitzhak Rabin’s "Iron Fist" Policy',
+    'Sheikh Ahmed Yassin & Hamas',
+    'Arafat’s Geneva UN Speech (Dec 1988)',
+  ],
+  lesson_11: [
+    'End of Cold War & 1991 Gulf War',
+    'Madrid Peace Conference (Oct 1991)',
+    'Yitzhak Rabin & Secret Oslo Talks',
+    'Letters of Mutual Recognition (Sept 1993)',
+    'Oslo I Accord / Declaration of Principles',
+    'Palestinian National Authority (1994)',
+    'Israel-Jordan Peace Treaty (Oct 1994)',
+    'Oslo II (Areas A, B & C, Sept 1995)',
+    'Hebron Massacre & Hamas Bombings',
+    'Assassination of Yitzhak Rabin (Nov 1995)',
+  ],
+};
+
+function buildConsequenceScaffolding(questionText) {
+  const m = String(questionText || '').match(
+    /Explain\s+one\s+consequence\s+of\s+(.+?)\.\s*(?:\[\d+\s*marks\])?\s*$/i,
+  );
+  const topicX = m ? m[1].trim() : 'this development';
+  return {
+    acronym: '1 Consequence + Specific Detail + Impact • 5m',
+    button_label: 'Sentence Starters',
+    sentence_starters: [
+      `One important consequence of ${topicX} was...`,
+      'Specifically, ...',
+      'Consequently, this led to...',
+    ],
+  };
+}
+
+function buildNarrativeScaffolding(vocabBank = []) {
+  return {
+    acronym: 'Start → Middle → Outcome • Own Knowledge Required (Cap 4/8) • 12m',
+    button_label: 'Starters & Word Bank',
+    sentence_starters: [
+      'First, the crisis began when...',
+      'This directly led to the next stage, when...',
+      'Consequently, the final outcome was...',
+    ],
+    connectives_label: 'Chronological & Causal Links',
+    connectives_bank: [
+      'First',
+      'This directly led to',
+      'In response',
+      'Consequently',
+      'This escalated into',
+      'As a final result',
+    ],
+    vocab_bank: [...vocabBank],
+  };
+}
+
+function buildImportanceScaffolding(questionText, vocabBank = []) {
+  const m = String(questionText || '').match(
+    /Explain\s+the\s+importance\s+of\s+(.+?)\s+for\s+(.+?)\.\s*(?:\[\d+\s*marks\])?\s*$/i,
+  );
+  const partX = m ? m[1].trim() : 'this factor';
+  const partY = m ? m[2].trim() : 'developments in the Middle East';
+  const verb = /\band\b/i.test(partX) ? 'were' : 'was';
+  return {
+    acronym: '2 PEEL Paragraphs Showing How X Changed Y • 12m',
+    button_label: 'Starters & Word Bank',
+    sentence_starters: [
+      `First, ${partX} ${verb} important for ${partY} because...`,
+      `Second, ${partX} also transformed ${partY} because...`,
+    ],
+    connectives_label: 'Connectives',
+    connectives_bank: [
+      'This was crucial for',
+      'Consequently',
+      'Furthermore',
+      'This transformed',
+      'As a direct result',
+      'Significantly',
+    ],
+    vocab_bank: [...vocabBank],
+  };
+}
+
 function make4MarkQuestionObj(prefixLabel, qObj, existingObj = null) {
   const cleanStem = qObj.question.replace(/^\d+(\([a-z]\))?\.?\s*/i, '');
   const questionText = `${prefixLabel} ${cleanStem}`;
@@ -52,6 +252,8 @@ function make4MarkQuestionObj(prefixLabel, qObj, existingObj = null) {
   base.type = '4-mark';
   base.marks = 4;
   base.question = questionText;
+  delete base.stimulus;
+  delete base.bullet_points;
   base.prompt =
     base.prompt ||
     'State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.';
@@ -59,34 +261,9 @@ function make4MarkQuestionObj(prefixLabel, qObj, existingObj = null) {
     base.examiner_tip ||
     'Award 1–2 marks for a simple statement of a consequence; award 3–4 marks for a specific factual detail explained to show a direct historical outcome.';
   base.model = modelHtml;
+  base.scaffolding = buildConsequenceScaffolding(questionText);
 
-  if (!base.model_tiers) {
-    base.model_tiers = {
-      tier_1m: {
-        title: '1/4 Assertion',
-        score: '1 / 4 Marks',
-        level: 'Level 1 Bottom (Assertion)',
-        text: 'States a general outcome without specific historical detail.',
-        verdict: 'AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Generalised assertion only.',
-      },
-      tier_2m: {
-        title: '2/4 Basic Knowledge',
-        score: '2 / 4 Marks',
-        level: 'Level 1 Top (Supported Statement)',
-        text: 'Identifies a valid consequence with one basic fact, but does not explain the wider impact.',
-        verdict: 'AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Valid point but underdeveloped causal link.',
-      },
-      tier_4m: {
-        title: '4/4 Grade 9 Exam ★',
-        score: '4 / 4 Marks',
-        level: 'Level 2 Top (Pearson Exam Standard)',
-        badge: 'Printed Workbook WAGOLL',
-        text: modelHtml,
-        verdict:
-          'AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Precise factual evidence directly linked to a clear historical consequence.',
-      },
-    };
-  } else if (base.model_tiers.tier_4m) {
+  if (base.model_tiers && base.model_tiers.tier_4m) {
     base.model_tiers.tier_4m.text = modelHtml;
     base.model_tiers.tier_4m.badge = 'Printed Workbook WAGOLL';
   }
@@ -94,7 +271,7 @@ function make4MarkQuestionObj(prefixLabel, qObj, existingObj = null) {
   return base;
 }
 
-function make8MarkQuestionObj(prefixLabel, extObj, existingObj = null) {
+function make8MarkQuestionObj(prefixLabel, extObj, existingObj = null, vocabBank = []) {
   const cleanStem = extObj.stem.replace(/^\d+(\([a-z]\))?\.?\s*/i, '');
   const questionText = `${prefixLabel} ${cleanStem}`;
   const modelHtml = toBrProse(extObj.wagoll || extObj.modelAnswer);
@@ -107,39 +284,14 @@ function make8MarkQuestionObj(prefixLabel, extObj, existingObj = null) {
   base.question = questionText;
   if (isNarrative && Array.isArray(extObj.stimulus)) {
     base.stimulus = extObj.stimulus;
+    base.bullet_points = [...extObj.stimulus];
   } else {
     delete base.stimulus;
+    delete base.bullet_points;
   }
   base.model = modelHtml;
 
-  if (!base.model_tiers) {
-    base.model_tiers = {
-      tier_2m: {
-        title: '2/8 Basic Statements',
-        score: '2 / 8 Marks',
-        level: 'Level 1 (Simple Statements)',
-        text: 'Offers isolated descriptive statements without chronological linkage or analytical focus.',
-        verdict: 'AO1/AO2 Level 1 (1–2 marks).',
-      },
-      tier_4m: {
-        title: '4/8 Descriptive',
-        score: '4 / 8 Marks',
-        level: 'Level 2 (Implicit Links)',
-        text: 'Includes accurate factual material across the period, but describes events rather than explaining causal links or importance.',
-        verdict: 'AO1/AO2 Level 2 (3–5 marks).',
-      },
-      tier_8m: {
-        title: '8/8 Grade 9 Exam ★',
-        score: '8 / 8 Marks',
-        level: 'Level 3 Top (Pearson Exam Standard)',
-        badge: 'Printed Workbook WAGOLL',
-        text: modelHtml,
-        verdict: isNarrative
-          ? 'AO1 Level 3 (4 marks) • AO2 Level 3 (4 marks). Organised beginning–developments–outcome narrative with explicit causal links and own knowledge beyond the stimulus.'
-          : 'AO1 Level 3 (4 marks) • AO2 Level 3 (4 marks). Two distinct, factually evidenced analytical paragraphs directly explaining importance for the second half of the question stem.',
-      },
-    };
-  } else if (base.model_tiers.tier_8m) {
+  if (base.model_tiers && base.model_tiers.tier_8m) {
     base.model_tiers.tier_8m.text = modelHtml;
     base.model_tiers.tier_8m.badge = 'Printed Workbook WAGOLL';
     base.model_tiers.tier_8m.verdict = isNarrative
@@ -148,27 +300,8 @@ function make8MarkQuestionObj(prefixLabel, extObj, existingObj = null) {
   }
 
   base.scaffolding = isNarrative
-    ? {
-        acronym: 'Chronological Narrative Framework',
-        acronym_title: 'Question 2: Narrative Account [8 marks • 12 mins]',
-        guidance:
-          'Organise chronologically from Beginning -> Key Developments -> Outcome, using causal linkers between every phase and adding own knowledge beyond the two stimulus bullets.',
-        steps: [
-          { letter: '1', name: 'BEGINNING', prompt: 'Opening event / trigger in chronological order.', starter: '' },
-          { letter: '2', name: 'KEY DEVELOPMENTS', prompt: 'How and why this led to the main turning point.', starter: '' },
-          { letter: '3', name: 'OUTCOME', prompt: 'Final result and how the sequence ended.', starter: '' },
-        ],
-      }
-    : {
-        acronym: 'Two-Paragraph Importance Framework',
-        acronym_title: 'Question 3: Explain the Importance [8 marks • 12 mins]',
-        guidance:
-          'Write two distinct analytical paragraphs. In each paragraph, state one clear way X was important for Y, support with precise dates/facts, and link directly back to the question focus.',
-        steps: [
-          { letter: 'P1', name: 'FIRST WAY IT WAS IMPORTANT', prompt: 'Point + specific dates/facts + explain why this mattered for the question focus.', starter: '' },
-          { letter: 'P2', name: 'SECOND WAY IT WAS IMPORTANT', prompt: 'Second distinct reason + specific evidence + direct link back to the question stem.', starter: '' },
-        ],
-      };
+    ? buildNarrativeScaffolding(vocabBank)
+    : buildImportanceScaffolding(questionText, vocabBank);
 
   return base;
 }
@@ -742,13 +875,18 @@ function run() {
 
     // Sync printed Workbook Q1 [4m] + Q2/Q3 [8m] + Grade 9 WAGOLLs onto exam_practice
     const oldQs = (les.exam_practice && les.exam_practice.questions) || [];
+    const vocabBank = LESSON_VOCAB_BANKS[les.id] || [];
     const extNum = wb.extended.type === 'narrative_8' ? '2.' : '3.';
     const updatedQs = [make4MarkQuestionObj('1(a).', wb.q1, oldQs[0])];
     if (oldQs[1] && oldQs[1].marks === 4) {
-      updatedQs.push(oldQs[1]);
+      const q1b = JSON.parse(JSON.stringify(oldQs[1]));
+      delete q1b.stimulus;
+      delete q1b.bullet_points;
+      q1b.scaffolding = buildConsequenceScaffolding(q1b.question);
+      updatedQs.push(q1b);
     }
     const oldExt = oldQs.find((q) => q.marks === 8) || null;
-    updatedQs.push(make8MarkQuestionObj(extNum, wb.extended, oldExt));
+    updatedQs.push(make8MarkQuestionObj(extNum, wb.extended, oldExt, vocabBank));
 
     les.exam_practice = les.exam_practice || {};
     les.exam_practice.type = 'consequence_and_extended';
@@ -799,13 +937,17 @@ function run() {
   );
   unit.mock_exams.push(...workbookMiniMocks);
 
-  // 6. Write out all 5 synchronized data files cleanly
+  // 6. Write out synchronized data files cleanly
   const unitJsonStr = JSON.stringify(unit, null, 2) + '\n';
   fs.writeFileSync(cmeDataPath, unitJsonStr, 'utf8');
   fs.writeFileSync(publicCmeDataPath, unitJsonStr, 'utf8');
 
   const unitDataJsContent = `window.cme_newData = ${JSON.stringify(unit, null, 2)};\n`;
   fs.writeFileSync(unitDataJsPath, unitDataJsContent, 'utf8');
+  const publicUnitDataJsPath = path.join(ROOT_DIR, 'public', 'units', 'cme_new', 'data.js');
+  if (fs.existsSync(publicUnitDataJsPath)) {
+    fs.writeFileSync(publicUnitDataJsPath, unitDataJsContent, 'utf8');
+  }
 
   for (const dbPath of [rootDbPath, publicDbPath]) {
     const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));

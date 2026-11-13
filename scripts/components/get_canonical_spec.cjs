@@ -89,9 +89,15 @@ const KEY_TERMS_TO_BOLD = [
   'Reichstag Fire', 'Enabling Act', 'Night of the Long Knives', 'Gestapo',
   'SS', 'Nuremberg Laws', 'Kristallnacht',
   // EEE
-  'Religious settlement', 'Act of Supremacy', 'Act of Uniformity',
-  'Mary, Queen of Scots', 'Revolt of the Northern Earls', 'Ridolfi Plot',
-  'Throckmorton Plot', 'Babington Plot', 'Francis Drake', 'Armada', 'colonisation of Virginia',
+  'society and government', 'legitimacy, gender, marriage', 'financial weaknesses', 'religious divisions', 'French threat',
+  'religious settlement (1559)', 'Religious settlement', 'Church of England', 'Puritan challenge', 'Catholic challenge',
+  'Act of Supremacy', 'Act of Uniformity',
+  'Mary, Queen of Scots', 'Mary Queen of Scots’ execution in 1587', 'Revolt of the Northern Earls', 'Ridolfi',
+  'Throckmorton', 'Babington', 'Walsingham and the use of spies', 'privateering', 'activities of Drake', 'Francis Drake',
+  'English direct involvement in the Netherlands', 'Robert Dudley', 'raid on Cadiz', 'Spanish invasion plans', 'Spanish Armada', 'Armada',
+  'Education in the home and schools', 'Sport, pastimes and the theatre', 'poverty and vagabondage',
+  'attitudes and policies towards the poor', 'new technology on ships and sailing', 'expand trade',
+  'Drake’s circumnavigation', 'colonisation of Virginia', 'significance of Raleigh', 'first settlement in Virginia',
   // USA
   'Brown v. Topeka (1954)', 'Little Rock High School (1957)', 'Montgomery Bus Boycott',
   'Rosa Parks', 'Martin Luther King', 'SCLC', 'SNCC', 'Greensboro sit-ins',

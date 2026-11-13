@@ -75,7 +75,7 @@ function renderStandardFrontCover({
   const isMedicineThematic = isMedicine && !isWesternFront;
   const isCME = unitId === 'cme_new';
 
-  if (isCME) {
+  if (isCME || isEee) {
     let canonicalSpec = specBox;
     if (UNIT_SPEC_MAP[unitId]) {
       try {
@@ -87,15 +87,26 @@ function renderStandardFrontCover({
           };
         }
       } catch (e) {
-        console.warn(`[renderStandardFrontCover] CME spec load warning: ${e.message}`);
+        console.warn(`[renderStandardFrontCover] ${unitId} spec load warning: ${e.message}`);
       }
     }
 
-    const hubUrl =
-      heroImage.hubUrl ||
-      `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=${
-        keyTopicNum === 2 ? 'kt2.1-water-wars' : keyTopicNum === 3 ? 'kt3.1-shuttle-diplomacy' : 'kt1.1-end-of-mandate'
-      }`;
+    const defaultHubUrl = isEee
+      ? `https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=${
+          keyTopicNum === 2
+            ? 'kt2.1-plots-and-revolts'
+            : keyTopicNum === 3
+              ? 'kt3.1-education-and-leisure'
+              : 'kt1.1-accession-1558'
+        }`
+      : `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=${
+          keyTopicNum === 2
+            ? 'kt2.1-water-wars'
+            : keyTopicNum === 3
+              ? 'kt3.1-shuttle-diplomacy'
+              : 'kt1.1-end-of-mandate'
+        }`;
+    const hubUrl = heroImage.hubUrl || defaultHubUrl;
     const hubQrSvg = generateQrSvg(hubUrl);
 
     const clues = Array.isArray(heroImage.clues) && heroImage.clues.length
@@ -103,16 +114,19 @@ function renderStandardFrontCover({
       : [
           'Identify the key historical figures and symbols visible in the frame.',
           'Notice the physical setting and body language of the participants.',
-          'Consider how international audiences reacted to this photograph.',
+          'Consider how audiences reacted to this visual source.',
         ];
     const hingeQuestion =
       heroImage.hingeQuestion ||
-      'Why did this moment become a defining turning point in the Middle East conflict?';
+      (isEee
+        ? 'What does this contemporary source reveal about power, crisis, and ambition in Early Elizabethan England?'
+        : 'Why did this moment become a defining turning point in the Middle East conflict?');
 
     // Flatten official Pearson Edexcel subtopics + points into a crisp Personal Learning Checklist
     const allSubtopics = canonicalSpec.subtopics || [];
     const totalSpecRows = allSubtopics.reduce((acc, s) => acc + (s.items ? s.items.length : 0), 0);
-    const isDensePlc = totalSpecRows >= 10;
+    const totalTableRows = allSubtopics.length + totalSpecRows;
+    const isDensePlc = totalSpecRows >= 10 || totalTableRows >= 12;
     const plcRowPad = isDensePlc ? '1.8px 6px' : '2.8px 7px';
     const plcFont = isDensePlc ? '6.75pt' : '7.1pt';
     const plcLh = isDensePlc ? '1.14' : '1.20';
@@ -147,6 +161,78 @@ function renderStandardFrontCover({
       })
       .join('');
 
+    const paperHeaderLeft = isEee
+      ? 'Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Early Elizabethan England, 1558–88'
+      : 'Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Conflict in the Middle East, 1945–95';
+    const paperHeaderRight = isEee ? 'Option B4 (1HI0/B4)' : 'Option P5 (1HI0/P5)';
+    const detailsHeading = isEee
+      ? '3 Details to Spot in This Source:'
+      : '3 Details to Spot in This Photograph:';
+
+    const questionGuideStripHtml = isEee
+      ? `
+      <!-- 5. Paper 2 Option B4 (1HI0/B4) Exam Question Guide Strip -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; flex-shrink: 0;">
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0284c7; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q1 &bull; Two Features</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #e0f2fe; color: #0369a1; padding: 0.5px 4px; border-radius: 2px;">4m (2&times;2m)</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            Two separate 2-mark features (1a &amp; 1b). Identify a valid feature (1m) + add 1 sentence of specific factual detail (1m) (5 mins).
+          </div>
+        </div>
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0f766e; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q2 &bull; Explain Why</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #ccfbf1; color: #0f766e; padding: 0.5px 4px; border-radius: 2px;">12 Marks</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            3 PEEL causation paragraphs explaining <em>why</em>. Include own knowledge beyond the 2 stimulus points &mdash; zero storytelling (18 mins).
+          </div>
+        </div>
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #b91c1c; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q3 / Q4 &bull; How Far Agree</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #fee2e2; color: #b91c1c; padding: 0.5px 4px; border-radius: 2px;">16 Marks</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            Choose Q3 OR Q4 (zero SPaG). Write 3 balanced paragraphs (for &amp; against + own knowledge) and a clear judgement (27 mins).
+          </div>
+        </div>
+      </div>`
+      : `
+      <!-- 5. Paper 2 Exam Question Guide Strip -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; flex-shrink: 0;">
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0284c7; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q1 &bull; Two Consequences</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #e0f2fe; color: #0369a1; padding: 0.5px 4px; border-radius: 2px;">8m (2&times;4m)</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            Two separate 4-mark consequences. State each consequence, give a specific date/fact, and explain what it led to (10 mins).
+          </div>
+        </div>
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0f766e; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q2 &bull; Narrative Account</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #ccfbf1; color: #0f766e; padding: 0.5px 4px; border-radius: 2px;">8 Marks</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            3 chronological paragraphs (Beginning &rarr; Key Developments &rarr; Outcome) linked by causal phrases + own knowledge (12 mins).
+          </div>
+        </div>
+        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #b91c1c; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
+            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q3 &bull; Explain Importance</strong>
+            <span style="font-size: 6.0pt; font-weight: 900; background: #fee2e2; color: #b91c1c; padding: 0.5px 4px; border-radius: 2px;">16m (2&times;8m)</span>
+          </div>
+          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
+            Answer 2 of 3 choices. For each 8-mark choice, write <strong>two</strong> paragraphs explaining why X was important <em>for Y</em> (25 mins).
+          </div>
+        </div>
+      </div>`;
+
     const footerHtml = renderFooterStrip
       ? renderFooterStrip(1, footerQuip, totalPageCount)
       : `
@@ -157,7 +243,7 @@ function renderStandardFrontCover({
 
     return `
   <!-- ====================================================================
-       PAGE 1: OUTSIDE FRONT COVER (CME Curatorial Split Hero + Official Spec PLC)
+       PAGE 1: OUTSIDE FRONT COVER (Curatorial Split Hero + Official Spec PLC)
        ==================================================================== -->
   <div class="page page-container recto-page" id="page-1" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; gap: 3px;">
@@ -169,8 +255,8 @@ function renderStandardFrontCover({
           <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; color: #0f172a;">The History Revision Hub &bull; GCSE Pupil Workbook</span>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1px; border-top: 1px solid #000000; padding-top: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 800; letter-spacing: 0.4px; text-transform: uppercase; color: #1e293b;">Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Conflict in the Middle East, 1945–95</span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 900; color: #000000;">Option P5 (1HI0/P5)</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 800; letter-spacing: 0.4px; text-transform: uppercase; color: #1e293b;">${paperHeaderLeft}</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.7pt; font-weight: 900; color: #000000;">${paperHeaderRight}</span>
         </div>
       </div>
 
@@ -224,7 +310,7 @@ function renderStandardFrontCover({
             <img src="${heroImage.src}" alt="${heroImage.alt}" class="archival-image" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block;">
           </div>
           <div style="background: #020617; color: #e2e8f0; padding: 2px 7px; font-family: 'Inter', sans-serif; font-size: 5.9pt; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #1e293b; flex-shrink: 0;">
-            <span style="font-weight: 700;">${heroImage.photographer || heroImage.sourceTag || 'Archival Photograph'} (${heroImage.date})</span>
+            <span style="font-weight: 700;">${heroImage.photographer || heroImage.sourceTag || 'Archival Source'} (${heroImage.date})</span>
             <span style="font-weight: 800; color: #94a3b8;">${heroImage.repository || heroImage.shelfmark}</span>
           </div>
         </div>
@@ -248,7 +334,7 @@ function renderStandardFrontCover({
             </div>
             <div style="border-top: 1px solid #cbd5e1; padding-top: 2.5px;">
               <div style="font-family: 'Inter', sans-serif; font-size: 5.9pt; font-weight: 900; text-transform: uppercase; color: #0f172a; margin-bottom: 1.5px;">
-                3 Details to Spot in This Photograph:
+                ${detailsHeading}
               </div>
               ${clues
                 .map(
@@ -270,36 +356,7 @@ function renderStandardFrontCover({
         </div>
       </div>
 
-      <!-- 5. Paper 2 Exam Question Guide Strip -->
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; flex-shrink: 0;">
-        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0284c7; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
-          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
-            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q1 &bull; Two Consequences</strong>
-            <span style="font-size: 6.0pt; font-weight: 900; background: #e0f2fe; color: #0369a1; padding: 0.5px 4px; border-radius: 2px;">8m (2&times;4m)</span>
-          </div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
-            Two separate 4-mark consequences. State each consequence, give a specific date/fact, and explain what it led to (10 mins).
-          </div>
-        </div>
-        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #0f766e; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
-          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
-            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q2 &bull; Narrative Account</strong>
-            <span style="font-size: 6.0pt; font-weight: 900; background: #ccfbf1; color: #0f766e; padding: 0.5px 4px; border-radius: 2px;">8 Marks</span>
-          </div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
-            3 chronological paragraphs (Beginning &rarr; Key Developments &rarr; Outcome) linked by causal phrases + own knowledge (12 mins).
-          </div>
-        </div>
-        <div style="border: 1.2px solid #0f172a; border-top: 2.5px solid #b91c1c; border-radius: 3px; padding: 3px 6px; background: #ffffff;">
-          <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; margin-bottom: 1px;">
-            <strong style="font-size: 6.6pt; color: #0f172a; text-transform: uppercase;">Q3 &bull; Explain Importance</strong>
-            <span style="font-size: 6.0pt; font-weight: 900; background: #fee2e2; color: #b91c1c; padding: 0.5px 4px; border-radius: 2px;">16m (2&times;8m)</span>
-          </div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 6.1pt; color: #334155; line-height: 1.18;">
-            Answer 2 of 3 choices. For each 8-mark choice, write <strong>two</strong> paragraphs explaining why X was important <em>for Y</em> (25 mins).
-          </div>
-        </div>
-      </div>
+      ${questionGuideStripHtml}
 
       <!-- 6. Official Pearson Edexcel Specification Personal Learning Checklist (Taught / Revised) -->
       <div style="border: 1.5px solid #0f172a; border-radius: 4px; overflow: hidden; background: #ffffff; flex: 1; min-height: 0; display: flex; flex-direction: column;">
@@ -1110,8 +1167,18 @@ function renderStandardBackCover({
   const isEEE = unitId === 'eee';
   const isColdWar = unitId === 'cold_war';
 
-  if (isCME) {
+  if (isCME || isEEE) {
     const commentLineHeightMm = enquiries.length <= 3 ? '7.4' : '6.3';
+    const q1ColHeader = isEEE
+      ? `Q1<span style="font-size: 5.7pt; color: #cbd5e1;">(/2)</span>`
+      : `Q1<span style="font-size: 5.7pt; color: #cbd5e1;">(/4)</span>`;
+    const extColHeader = isEEE
+      ? `Q2 / Q3<span style="font-size: 5.7pt; color: #cbd5e1;">(/12&bull;16)</span>`
+      : `Q2 / Q3<span style="font-size: 5.7pt; color: #cbd5e1;">(/8)</span>`;
+    const q1RowLabel = isEEE ? 'Q1 Feat' : 'Q1 Conseq';
+    const defaultQ1Marks = isEEE ? 2 : 4;
+    const defaultExtMarks = isEEE ? 12 : 8;
+
     const cmeRowsHtml = enquiries
       .map((enq, idx) => {
         const qrUrl =
@@ -1123,6 +1190,12 @@ function renderStandardBackCover({
         const rowBorder = idx < enquiries.length - 1 ? 'border-bottom: 1.4px solid #000000;' : '';
 
         if (isWorkout) {
+          const wCol1Label = enq.wCol1Label || 'Chronology';
+          const wCol1Marks = enq.wCol1Marks || enq.doNowMarks || (isEEE ? 8 : 10);
+          const wCol2Label = enq.wCol2Label || (isEEE ? 'Causal' : 'Drill 1');
+          const wCol2Marks = enq.wCol2Marks || 4;
+          const wCol3Label = enq.wCol3Label || (isEEE ? '4&times;Q1' : 'Drill 2');
+          const wCol3Marks = enq.wCol3Marks || (isEEE ? 8 : 4);
           return `
             <div style="display: grid; grid-template-columns: 22mm 1fr 19mm 18mm 22mm; flex: 1; min-height: 0; ${rowBorder} background: #f8fafc;">
               <div style="padding: 3px 3px; border-right: 1.4px solid #000000; display: flex; align-items: center; justify-content: center; text-align: center;">
@@ -1136,7 +1209,7 @@ function renderStandardBackCover({
                     ${enq.code ? `${enq.code}: ` : ''}${enq.title}
                   </div>
                   <div style="font-family: 'Georgia', serif; font-size: 6.8pt; color: #334155; font-style: italic; margin-top: 1px; line-height: 1.15;">
-                    ${enq.enquiryQuestion || 'Chronological sequencing, cause-to-consequence matrix &amp; two 4-mark consequence drills.'}
+                    ${enq.enquiryQuestion || (isEEE ? '8-event chronological order, 4-row cause-to-consequence matrix &amp; four 2-mark Q1 feature drills.' : 'Chronological sequencing, cause-to-consequence matrix &amp; two 4-mark consequence drills.')}
                   </div>
                 </div>
                 <div style="flex: 1; min-height: 0; display: flex; flex-direction: column; margin-top: 3px;">
@@ -1147,19 +1220,23 @@ function renderStandardBackCover({
                 </div>
               </div>
               <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
-                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">Chronology</div>
-                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span>
+                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">${wCol1Label}</div>
+                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${wCol1Marks}</strong></span>
               </div>
               <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
-                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">Drill 1</div>
-                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ 4</strong></span>
+                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">${wCol2Label}</div>
+                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ ${wCol2Marks}</strong></span>
               </div>
               <div style="padding: 3px 2px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
-                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">Drill 2</div>
-                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ 4</strong></span>
+                <div style="font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 1.5px;">${wCol3Label}</div>
+                <span style="font-size: 8.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ ${wCol3Marks}</strong></span>
               </div>
             </div>`;
         }
+
+        const fallbackExtLabel = isEEE
+          ? (enq.extType === 'Q2' ? 'Q2 Why' : 'Q3 Agree')
+          : (enq.extType === 'Q2' ? 'Q2 Narr' : 'Q3 Imp');
 
         return `
             <div style="display: grid; grid-template-columns: 22mm 1fr 19mm 18mm 22mm; flex: 1; min-height: 0; ${rowBorder} background: #ffffff;">
@@ -1213,16 +1290,16 @@ function renderStandardBackCover({
                 <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 9mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.doNowMarks || 10}</strong></span>
               </div>
 
-              <!-- Col 4: Q1 Consequence [4m] -->
+              <!-- Col 4: Q1 -->
               <div style="padding: 3px 2px; border-right: 1.4px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
-                <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 2px;">Q1 Conseq</div>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1aMarks || 4}</strong></span>
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 2px;">${q1RowLabel}</div>
+                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.q1aMarks || defaultQ1Marks}</strong></span>
               </div>
 
-              <!-- Col 5: Q2 Narrative or Q3 Importance [8m] -->
+              <!-- Col 5: Q2 / Q3 -->
               <div style="padding: 3px 2px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; white-space: nowrap;">
-                <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #0f172a; margin-bottom: 2px;">${enq.extLabel || (enq.extType === 'Q2' ? 'Q2 Narr' : 'Q3 Imp')}</div>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8.5mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || 8}</strong></span>
+                <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; text-transform: uppercase; color: #0f172a; margin-bottom: 2px;">${enq.extLabel || fallbackExtLabel}</div>
+                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.3px solid #000; width: 8.5mm; margin-right: 2px;">&nbsp;</span><strong>/ ${enq.extMarks || defaultExtMarks}</strong></span>
               </div>
             </div>`;
       })
@@ -1238,7 +1315,7 @@ function renderStandardBackCover({
 
     return `
   <!-- ====================================================================
-       PAGE ${totalPageCount}: OUTSIDE BACK COVER (CME Marking, Homework QR & Parent Record)
+       PAGE ${totalPageCount}: OUTSIDE BACK COVER (Marking, Homework QR & Parent Record)
        ==================================================================== -->
   <div class="page page-container verso-page" id="page-${totalPageCount}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; gap: 3px;">
@@ -1284,8 +1361,8 @@ function renderStandardBackCover({
             <div style="font-size: 5.7pt; font-weight: 600; color: #cbd5e1; line-height: 1.1;">Scan QR for lesson audio &amp; 10-question recall quiz &bull; Parent/Carer signs when complete</div>
           </div>
           <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">Do Now<span style="font-size: 5.7pt; color: #cbd5e1;">(/10)</span></div>
-          <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">Q1<span style="font-size: 5.7pt; color: #cbd5e1;">(/4)</span></div>
-          <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase;">Q2 / Q3<span style="font-size: 5.7pt; color: #cbd5e1;">(/8)</span></div>
+          <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">${q1ColHeader}</div>
+          <div style="padding: 3.5px 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 6.7pt; font-weight: 900; text-transform: uppercase;">${extColHeader}</div>
         </div>
         <!-- Grid Body -->
         <div style="display: flex; flex-direction: column; flex: 1; min-height: 0;">
