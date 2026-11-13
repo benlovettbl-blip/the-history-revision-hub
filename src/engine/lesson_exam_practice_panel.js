@@ -1,23 +1,187 @@
 /**
  * src/engine/lesson_exam_practice_panel.js
  *
- * Dedicated Official GCSE Exam Question Practice Station.
- * Renders directly beneath the Check & Consolidate Hub for GCSE units,
- * presenting authentic Pearson Edexcel mock questions mapped strictly
- * to the syllabus knowledge taught up to the current lesson.
+ * Unified GCSE Exam Practice Utilities, De-Duplication Merger, Live Countdown Timer,
+ * and Front-of-Class Projector Mode Controller.
+ *
+ * All GCSE exam questions (both Green Printed Workbook strips from `lesson.exam_practice`
+ * and Blue Extra Practice strips from `mock_exam_bank_data.js`) now render inside
+ * the single unified Thin-Strip Workbook & Exam Practice Station in `lesson_renderer.js`
+ * and register into `window.unifiedLessonExamRegistry` so every question supports
+ * Timed Practice and Projector Mode.
  */
 
 import { getLessonMockQuestions } from './mock_exam_bank_data.js';
 
 // Timer tracking state keyed by question id
-window.examQuestionTimers = window.examQuestionTimers || {};
+if (typeof window !== 'undefined') {
+  window.examQuestionTimers = window.examQuestionTimers || {};
+  window.unifiedLessonExamRegistry = window.unifiedLessonExamRegistry || {};
+}
+
+export function getCanonicalGcsePaperCode(unitId) {
+  switch (unitId) {
+    case 'cme_new':
+      return 'Option P4 (1HI0/P4)';
+    case 'cold_war':
+      return 'Option P4 (1HI0/P4)';
+    case 'eee':
+      return 'Option B4 (1HI0/B4)';
+    case 'edexcel_medicine':
+      return 'Option 11 (1HI0/11)';
+    case 'weimar_nazi_germany':
+      return 'Option 31 (1HI0/31)';
+    case 'usa':
+      return 'Option 33 (1HI0/33)';
+    default:
+      return 'Pearson Edexcel GCSE (9–1)';
+  }
+}
+
+export function getRecommendedExamMins(marks, qType = '') {
+  const m = parseInt(marks, 10) || 4;
+  const t = String(qType || '').toLowerCase();
+  if (m <= 2) return 3;
+  if (m <= 4) return t.includes('infer') || t.includes('interp') ? 6 : 5;
+  if (m <= 8) return 12;
+  if (m <= 12) return 18;
+  return 25;
+}
+
+export function registerUnifiedExamQuestion(qId, qData) {
+  if (typeof window === 'undefined' || !qId || !qData) return;
+  window.unifiedLessonExamRegistry = window.unifiedLessonExamRegistry || {};
+  window.unifiedLessonExamRegistry[qId] = qData;
+}
+
+const STEM_BOILERPLATE_PATTERNS = [
+  /^(?:q(?:uestion)?\s*\d+(?:\s*\([a-d]\))?[\.:\s-]*)+/gi,
+  /^(?:\d+\s*\([a-d]\)[\.:\s-]*)+/gi,
+  /\[\s*\d+\s*marks?(?:\s*\+\s*4\s*spag)?\s*\]/gi,
+  /\(\s*\d+\s*marks?\s*\)/gi,
+  /\bexplain\s+one\s+consequence\s+of\b/gi,
+  /\bexplain\s+two\s+consequences\s+of\b/gi,
+  /\bwrite\s+a\s+narrative\s+account\s+analysing\s+(?:the\s+)?(?:key\s+events\s+of\s+)?/gi,
+  /\bexplain\s+the\s+importance\s+of\b/gi,
+  /\bexplain\s+why\b/gi,
+  /\bdescribe\s+(?:one|two)\s+features?\s+of\b/gi,
+  /\bgive\s+two\s+things\s+you\s+can\s+infer\s+from\s+source\s+[a-d]\s+about\b/gi,
+  /\bhow\s+useful\s+(?:is|are)\s+sources?\s+[a-d](?:\s+and\s+[a-d])?\s+for\s+an\s+enquiry\s+into\b/gi,
+  /\bexplain\s+your\s+answer,?\s+using\s+sources?\s+[a-d](?:\s+and\s+[a-d])?\s+and\s+your\s+knowledge\s+of\s+the\s+historical\s+context\.?/gi,
+  /\bstudy\s+interpretations?\s+1\s+and\s+2\.?\s*they\s+give\s+different\s+views\s+about\b/gi,
+  /\bwhat\s+is\s+the\s+main\s+difference\s+between\s+(?:these|the)\s+views\??/gi,
+  /\bsuggest\s+one\s+reason\s+why\s+interpretations?\s+1\s+and\s+2\s+give\s+different\s+views\s+about\b/gi,
+  /\bhow\s+far\s+do\s+you\s+agree\s+with\s+interpretation\s+[12]\s+about\b/gi,
+  /\bhow\s+far\s+do\s+you\s+agree\s+with\s+this\s+statement\??/gi,
+  /\bexplain\s+one\s+way\s+in\s+which\b/gi,
+];
+
+const STOPWORDS = new Set([
+  'the', 'a', 'an', 'of', 'in', 'on', 'at', 'to', 'for', 'and', 'or', 'by', 'with',
+  'from', 'during', 'between', 'years', 'year', 'period', 'early', 'late', 'how',
+  'what', 'why', 'was', 'were', 'is', 'are', 'that', 'this', 'these', 'their', 'its',
+]);
+
+function extractCoreQuestionTokens(rawText) {
+  if (!rawText) return [];
+  let s = String(rawText).replace(/<[^>]+>/g, ' ').toLowerCase();
+  for (const rx of STEM_BOILERPLATE_PATTERNS) {
+    s = s.replace(rx, ' ');
+  }
+  return s
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => w.length > 2 && !STOPWORDS.has(w));
+}
+
+function classifyQuestionFamily(qText = '', qType = '', marks = 0) {
+  const combined = `${qType} ${qText}`.toLowerCase();
+  if (combined.includes('infer')) return 'inference';
+  if (combined.includes('follow up') || combined.includes('follow_up')) return 'followup';
+  if (combined.includes('how useful') || combined.includes('utility')) return 'utility';
+  if (combined.includes('main difference') || combined.includes('3(b)') || combined.includes('interp_diff')) return 'interp_diff';
+  if (combined.includes('one reason why interpretations') || combined.includes('3(c)') || combined.includes('interp_why')) return 'interp_why';
+  if (combined.includes('agree with interpretation') || combined.includes('3(d)')) return 'interp_verdict';
+  if (combined.includes('narrative account') || combined.includes('narrative')) return 'narrative';
+  if (combined.includes('importance of') || combined.includes('importance')) return 'importance';
+  if (combined.includes('consequence')) return 'consequence';
+  if (combined.includes('feature')) return 'features';
+  if (combined.includes('similar') || combined.includes('differ')) return 'comparison';
+  if (combined.includes('explain why') || combined.includes('causation') || marks === 12) return 'causation';
+  if (combined.includes('agree') || combined.includes('verdict') || marks >= 16) return 'verdict';
+  return `m${marks}`;
+}
+
+/**
+ * Returns non-duplicate Extra Unseen Mock Questions from `mock_exam_bank_data.js`
+ * for the given unit and lesson, filtering out any question whose stem & question family
+ * already appear in `lesson.exam_practice`.
+ */
+export function getNonDuplicateExtraMockQuestions(unitId, lesson, existingQuestions = []) {
+  if (!unitId || !lesson || !lesson.id) return [];
+  const rawMocks = getLessonMockQuestions(unitId, lesson.id) || [];
+  if (rawMocks.length === 0) return [];
+
+  const existingProfiles = existingQuestions.map((eq) => {
+    const text = eq.question || eq.prompt || eq.questionText || '';
+    const marks = parseInt(eq.marks, 10) ||
+      ((eq.tariff || '').match(/(\d+)/) ? parseInt(RegExp.$1, 10) : 0);
+    return {
+      rawClean: text.replace(/<[^>]+>/g, ' ').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(),
+      tokens: new Set(extractCoreQuestionTokens(text)),
+      family: classifyQuestionFamily(text, eq.type || eq.tariff || '', marks),
+    };
+  });
+
+  const seenMockProfiles = [];
+  const extras = [];
+
+  for (const mq of rawMocks) {
+    const mqText = mq.questionText || mq.question || '';
+    const mqClean = mqText.replace(/<[^>]+>/g, ' ').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const mqTokens = extractCoreQuestionTokens(mqText);
+    const mqFamily = classifyQuestionFamily(mqText, mq.type || '', mq.marks || 0);
+
+    const isDup = [...existingProfiles, ...seenMockProfiles].some((prof) => {
+      if (prof.rawClean === mqClean) return true;
+      // Paper 3 bare "How far do you agree with Interpretation 2?" with 0 topic tokens:
+      // if existing already has an interp_verdict in this lesson, only treat as dup if stimulus/extract matches or bare stem
+      if (prof.family !== mqFamily) return false;
+      if (mqTokens.length === 0 && prof.tokens.size === 0) return true;
+      if (mqTokens.length === 0 || prof.tokens.size === 0) return false;
+
+      let overlap = 0;
+      for (const t of mqTokens) {
+        if (prof.tokens.has(t)) overlap++;
+      }
+      const minLen = Math.min(mqTokens.length, prof.tokens.size);
+      const maxLen = Math.max(mqTokens.length, prof.tokens.size);
+      const containment = minLen > 0 ? overlap / minLen : 0;
+      const jaccard = (mqTokens.length + prof.tokens.size - overlap) > 0
+        ? overlap / (mqTokens.length + prof.tokens.size - overlap)
+        : 0;
+
+      return containment >= 0.72 || jaccard >= 0.55 || (overlap >= 3 && maxLen <= 5);
+    });
+
+    if (!isDup) {
+      extras.push(mq);
+      seenMockProfiles.push({
+        rawClean: mqClean,
+        tokens: new Set(mqTokens),
+        family: mqFamily,
+      });
+    }
+  }
+
+  return extras;
+}
 
 function playTimerChime() {
   try {
     const ctx = new (window.AudioContext || window.webkitAudioContext)();
     const now = ctx.currentTime;
-    
-    // First tone (587.33 Hz)
+
     const osc1 = ctx.createOscillator();
     const gain1 = ctx.createGain();
     osc1.type = 'sine';
@@ -29,7 +193,6 @@ function playTimerChime() {
     osc1.start(now);
     osc1.stop(now + 0.8);
 
-    // Second chime (880 Hz)
     const osc2 = ctx.createOscillator();
     const gain2 = ctx.createGain();
     osc2.type = 'sine';
@@ -46,323 +209,60 @@ function playTimerChime() {
 }
 
 /**
- * Renders the HTML markup for the dedicated Exam Practice panel.
- * Returns empty string if no exam questions exist for this lesson.
+ * Legacy standalone panel renderer now returns empty string because all GCSE exam questions
+ * (Printed Workbook + Non-Duplicate Extra Mock Questions) are unified inside the compact
+ * Thin-Strip Workbook & Exam Practice station in `lesson_renderer.js`.
  */
-export function renderLessonExamPracticeHTML(unitId, lesson) {
-  if (!unitId || !lesson || !lesson.id) return '';
-  const questions = getLessonMockQuestions(unitId, lesson.id);
-  if (!questions || questions.length === 0) return '';
-
-  const qCardsHtml = questions.map((q, idx) => {
-    // Stimulus box
-    let stimulusHtml = '';
-    if (q.stimulus && q.stimulus.length > 0) {
-      stimulusHtml = `
-        <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">
-          <div style="font-weight: 700; font-size: 0.88rem; color: #334155; margin-bottom: 6px;">
-            You may use the following in your answer:
-          </div>
-          <ul style="margin: 0 0 8px 22px; padding: 0; color: #0f172a; font-size: 0.95rem; line-height: 1.5;">
-            ${q.stimulus.map(s => `<li><strong>${s}</strong></li>`).join('')}
-          </ul>
-          <div style="font-weight: 700; font-size: 0.88rem; color: #334155;">
-            You must also use information of your own.
-          </div>
-        </div>
-      `;
-    }
-
-    // Source extract box
-    let sourceHtml = '';
-    if (q.sourceExtract) {
-      sourceHtml = `
-        <div style="background: #fdfbf7; border: 1.5px solid #e2d9cc; border-left: 4px solid #b45309; border-radius: 8px; padding: 14px 18px; margin: 16px 0; font-size: 0.95rem; color: #1c1917; line-height: 1.55;">
-          ${q.sourceExtract}
-        </div>
-      `;
-    }
-
-    return `
-      <div class="exam-practice-card" id="exam-card-${q.id}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04); transition: border-color 0.2s ease;">
-        <!-- Card Header Meta -->
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding-bottom: 12px; border-bottom: 1px solid #f1f5f9; margin-bottom: 14px;">
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <span style="background: #1e293b; color: #ffffff; font-size: 0.76rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; letter-spacing: 0.05em; text-transform: uppercase;">
-              Question ${q.qCode}
-            </span>
-            <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 6px;">
-              ${q.type} (${q.marks} Marks)
-            </span>
-            <span style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 6px;">
-              <i class="fa-regular fa-clock"></i> Recommended: ${q.targetMins} Mins
-            </span>
-          </div>
-
-          <div style="font-size: 0.8rem; color: #64748b; font-weight: 600;">
-            <i class="fa-solid fa-file-lines"></i> ${q.mockTitle}
-          </div>
-        </div>
-
-        <!-- Question Prompt -->
-        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #0f172a; line-height: 1.45; margin-bottom: 12px;">
-          ${q.questionText}
-        </div>
-
-        <!-- Source Extract (if present) -->
-        ${sourceHtml}
-
-        <!-- Stimulus Box (if present) -->
-        ${stimulusHtml}
-
-        <!-- Interactive Countdown Bar (hidden by default) -->
-        <div id="exam-timer-bar-${q.id}" style="display: none; background: #0f172a; color: #ffffff; border-radius: 8px; padding: 12px 18px; margin: 16px 0; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-          <div style="display: flex; align-items: center; gap: 14px;">
-            <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8; font-weight: 700;">Timed Practice:</span>
-            <span id="exam-timer-display-${q.id}" style="font-family: 'Courier New', monospace; font-size: 1.4rem; font-weight: 800; color: #38bdf8; min-width: 75px;">
-              ${String(q.targetMins).padStart(2, '0')}:00
-            </span>
-          </div>
-          <div style="display: flex; gap: 8px;">
-            <button type="button" id="exam-timer-toggle-btn-${q.id}" onclick="window.toggleExamCardTimer('${q.id}', ${q.targetMins})" style="background: #2563eb; color: #ffffff; border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;">
-              Pause
-            </button>
-            <button type="button" onclick="window.resetExamCardTimer('${q.id}', ${q.targetMins})" style="background: #334155; color: #ffffff; border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;">
-              Reset
-            </button>
-          </div>
-        </div>
-
-        <!-- Action Control Buttons -->
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px solid #f1f5f9;">
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <button type="button" onclick="window.toggleExamCardTimer('${q.id}', ${q.targetMins})" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 6px 14px; border-radius: 7px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
-              <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Time this Question (${q.targetMins}m)
-            </button>
-
-            <button type="button" id="exam-model-btn-${q.id}" onclick="window.toggleExamCardModelAnswer('${q.id}')" style="background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; padding: 6px 14px; border-radius: 7px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
-              <i class="fa-regular fa-eye" style="color: #16a34a;"></i> Reveal Model Answer &amp; Mark Scheme
-            </button>
-          </div>
-
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <a href="${q.pdfUrl}" target="_blank" rel="noopener noreferrer" style="background: #ffffff; color: #475569; border: 1px solid #cbd5e1; padding: 6px 12px; border-radius: 7px; font-size: 0.8rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
-              <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> Full Mock PDF
-            </a>
-            <button type="button" onclick="window.openExamCardProjector('${q.id}')" style="background: #ffffff; color: #475569; border: 1px solid #cbd5e1; padding: 6px 12px; border-radius: 7px; font-size: 0.8rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
-              <i class="fa-solid fa-desktop" style="color: #0284c7;"></i> Projector Mode
-            </button>
-          </div>
-        </div>
-
-        <!-- Model Answer Drawer (hidden by default) -->
-        <div id="exam-model-drawer-${q.id}" class="exam-model-drawer" style="display: none; margin-top: 18px; padding: 18px 20px; background: #ffffff; border: 1.5px solid #10b981; border-radius: 12px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);">
-          ${
-            q.model_tiers
-              ? (() => {
-                  const tiers = q.model_tiers;
-                  const tierKeys = Object.keys(tiers);
-                  const defaultKey = tiers.tier_16m
-                    ? 'tier_16m'
-                    : tiers.tier_12m
-                    ? 'tier_12m'
-                    : tiers.tier_8m
-                    ? 'tier_8m'
-                    : tiers.tier_4m
-                    ? 'tier_4m'
-                    : tierKeys[0];
-
-                  const tabButtonsHtml = tierKeys
-                    .map((key) => {
-                      const t = tiers[key];
-                      const isActive = key === defaultKey;
-                      const btnBg = isActive ? '#0f172a' : '#ffffff';
-                      const btnColor = isActive ? '#ffffff' : '#334155';
-                      const btnBorder = isActive ? '#0f172a' : '#cbd5e1';
-                      const btnWeight = isActive ? '700' : '600';
-                      const badgeIcon =
-                        key === 'tier_4m' || key === 'tier_8m' || key === 'tier_12m' || key === 'tier_16m'
-                          ? 'fa-star'
-                          : key === 'tier_5m' || key === 'tier_6m' || key === 'tier_9m'
-                          ? 'fa-list-check'
-                          : key === 'tier_2m' || key === 'tier_3m'
-                          ? 'fa-pen-to-square'
-                          : 'fa-lightbulb';
-                      return `
-                        <button type="button" class="btn exam-tier-tab-btn-${q.id} ${isActive ? 'active' : ''}" onclick="window.switchExamCardModelTier('${q.id}', '${key}')" data-tier-btn="${key}" style="padding: 6px 12px; font-size: 0.8rem; font-weight: ${btnWeight}; border-radius: 6px; border: 1.5px solid ${btnBorder}; background: ${btnBg}; color: ${btnColor}; cursor: pointer; transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 5px;">
-                          <i class="fa-solid ${badgeIcon}"></i> ${t.title || key}
-                        </button>
-                      `;
-                    })
-                    .join('');
-
-                  const panesHtml = tierKeys
-                    .map((key) => {
-                      const t = tiers[key];
-                      const isActive = key === defaultKey;
-                      const wordCount = (t.text || '').replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length;
-
-                      let themeBorder = '#cbd5e1';
-                      let themeBadgeBg = '#e2e8f0';
-                      let themeBadgeColor = '#334155';
-                      let verdictBorder = '#94a3b8';
-                      let verdictBg = '#f1f5f9';
-                      let verdictColor = '#1e293b';
-
-                      if (key === 'tier_1m') {
-                        themeBorder = '#fed7aa';
-                        themeBadgeBg = '#ffedd5';
-                        themeBadgeColor = '#c2410c';
-                        verdictBorder = '#f97316';
-                        verdictBg = '#fffaf5';
-                        verdictColor = '#9a3412';
-                      } else if (key === 'tier_2m' || key === 'tier_3m') {
-                        themeBorder = '#fde68a';
-                        themeBadgeBg = '#fef3c7';
-                        themeBadgeColor = '#b45309';
-                        verdictBorder = '#eab308';
-                        verdictBg = '#fefce8';
-                        verdictColor = '#854d0e';
-                      } else if (key === 'tier_4m' || key === 'tier_8m' || key === 'tier_12m' || key === 'tier_16m') {
-                        themeBorder = '#a7f3d0';
-                        themeBadgeBg = '#d1fae5';
-                        themeBadgeColor = '#065f46';
-                        verdictBorder = '#10b981';
-                        verdictBg = '#f0fdf4';
-                        verdictColor = '#064e3b';
-                      }
-
-                      return `
-                        <div id="exam-tier-pane-${q.id}-${key}" class="exam-tier-pane-${q.id}" style="display: ${isActive ? 'block' : 'none'};">
-                          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid ${themeBorder};">
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                              <span style="background: ${themeBadgeBg}; color: ${themeBadgeColor}; font-weight: 800; font-size: 0.78rem; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.5px; text-transform: uppercase;">
-                                ${t.score || t.level}
-                              </span>
-                              <span style="font-size: 0.8rem; font-weight: 600; color: #64748b;">
-                                ${t.level || ''}
-                              </span>
-                            </div>
-                            <span style="font-size: 0.78rem; font-weight: 700; color: #64748b; background: #ffffff; padding: 2px 8px; border-radius: 12px; border: 1px solid #e2e8f0;">
-                              ${wordCount} words
-                            </span>
-                          </div>
-                          <div style="font-size: 0.96rem; line-height: 1.65; color: #0f172a; margin-bottom: 14px;">
-                            ${t.text}
-                          </div>
-                          ${
-                            t.verdict
-                              ? `
-                            <div style="background: ${verdictBg}; border-left: 3.5px solid ${verdictBorder}; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: 0.86rem; line-height: 1.5; color: ${verdictColor};">
-                              <strong style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.4px;">
-                                <i class="fa-solid fa-clipboard-check"></i> Official Examiner Assessment Verdict:
-                              </strong>
-                              <div>${t.verdict}</div>
-                            </div>
-                          `
-                              : ''
-                          }
-                        </div>
-                      `;
-                    })
-                    .join('');
-
-                  return `
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
-                      <span style="font-weight: 800; font-size: 0.82rem; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
-                        <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> Pearson Edexcel ${tierKeys.length}-Tier Mark Scheme Ladder
-                      </span>
-                      <span style="font-size: 0.74rem; font-weight: 600; color: #64748b;">
-                        Toggle rungs to analyze mark boundaries
-                      </span>
-                    </div>
-                    <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px; border-radius: 8px;">
-                      ${tabButtonsHtml}
-                    </div>
-                    <div class="exam-tier-panes-container">
-                      ${panesHtml}
-                    </div>
-                  `;
-                })()
-              : `
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-                  <div style="font-weight: 800; font-size: 0.88rem; color: #15803d; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
-                    <i class="fa-solid fa-award"></i> Grade 8/9 Official Mark Scheme Model Answer
-                  </div>
-                  <span style="font-size: 0.78rem; background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 4px; font-weight: 700;">
-                    Full Marks (${q.marks}/${q.marks})
-                  </span>
-                </div>
-                <div style="font-size: 0.95rem; line-height: 1.65; color: #1e293b; ${q.modelAnswer && q.modelAnswer.includes('<div') ? '' : 'white-space: pre-line;'}">
-                  ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(q.modelAnswer) : q.modelAnswer}
-                </div>
-              `
-          }
-        </div>
-      </div>
-    `;
-  }).join('');
-
-  return `
-    <div class="phase-card no-print gcse-exam-practice-station" id="exam-practice-station-${lesson.id}" style="margin: 35px 0 40px 0; background: #f8fafc; border: 2px solid #cbd5e1; border-radius: 16px; box-shadow: 0 6px 24px rgba(15, 23, 42, 0.05); overflow: hidden; max-width: 100%; box-sizing: border-box;">
-      <!-- Panel Masthead -->
-      <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <div style="width: 46px; height: 46px; border-radius: 12px; background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #f59e0b; flex-shrink: 0;">
-            🎓
-          </div>
-          <div>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <h3 style="margin: 0; color: #ffffff; font-size: 1.25rem; font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: 0.02em;">
-                Official GCSE Exam Practice
-              </h3>
-              <span style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); padding: 2px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">
-                ${questions[0]?.paperCode || 'Pearson Edexcel'}
-              </span>
-            </div>
-            <p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.85rem;">
-              Authentic exam questions testing syllabus knowledge taught up to this lesson &bull; Includes Grade 8/9 Mark Scheme models
-            </p>
-          </div>
-        </div>
-
-        <div style="background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 700; color: #e2e8f0;">
-          <i class="fa-solid fa-list-check" style="color: #38bdf8;"></i> ${questions.length} Question${questions.length > 1 ? 's' : ''} Ready
-        </div>
-      </div>
-
-      <!-- Question Cards List -->
-      <div style="padding: 24px;">
-        ${qCardsHtml}
-      </div>
-    </div>
-  `;
+export function renderLessonExamPracticeHTML() {
+  return '';
 }
 
 /**
- * Initializes global handlers for model answer toggles, in-card timers, and front-of-class projection.
+ * Initializes global handlers for model answer toggles, in-card timers,
+ * bulk strip expand/collapse, and front-of-class Projector Mode.
  */
 export function initLessonExamPractice(unitId, lesson) {
-  if (!unitId || !lesson || !lesson.id) return;
+  if (typeof window === 'undefined') return;
 
-  // Toggle model answer accordion
-  window.toggleExamCardModelAnswer = function(qId) {
-    const drawer = document.getElementById(`exam-model-drawer-${qId}`);
+  // Expand / Collapse all thin strips inside a Workbook & Exam Practice station
+  window.toggleAllWorkbookStrips = function (btn) {
+    const container = btn ? btn.closest('.wb-unified-station') : document.querySelector('.wb-unified-station');
+    if (!container) return;
+    const strips = Array.from(container.querySelectorAll('details.wb-question-strip'));
+    if (strips.length === 0) return;
+    const anyClosed = strips.some((d) => !d.open);
+    strips.forEach((d) => {
+      d.open = anyClosed;
+    });
+    if (btn) {
+      btn.innerHTML = anyClosed
+        ? '<i class="fa-solid fa-compress"></i> Collapse All'
+        : '<i class="fa-solid fa-expand"></i> Expand All';
+    }
+  };
+
+  // Toggle model answer drawer inside any unified GCSE question strip
+  window.toggleExamCardModelAnswer = function (qId) {
+    const drawer = document.getElementById(`exam-model-drawer-${qId}`) || document.getElementById(`ep-model-${qId}`);
     const btn = document.getElementById(`exam-model-btn-${qId}`);
     if (!drawer) return;
 
-    const isOpen = drawer.style.display !== 'none';
+    const isOpen = drawer.style.display !== 'none' && window.getComputedStyle(drawer).display !== 'none';
     if (isOpen) {
       drawer.style.display = 'none';
-      if (btn) btn.innerHTML = '<i class="fa-regular fa-eye" style="color: #16a34a;"></i> Reveal Model Answer &amp; Mark Scheme';
+      if (btn) {
+        btn.innerHTML = '<i class="fa-regular fa-eye" style="color: #16a34a;"></i> Reveal Model Answer &amp; Mark Scheme';
+      }
     } else {
       drawer.style.display = 'block';
-      if (btn) btn.innerHTML = '<i class="fa-regular fa-eye-slash" style="color: #16a34a;"></i> Hide Model Answer';
+      if (btn) {
+        btn.innerHTML = '<i class="fa-regular fa-eye-slash" style="color: #16a34a;"></i> Hide Model Answer';
+      }
     }
   };
 
   // Switch active model tier rung inside exam card
-  window.switchExamCardModelTier = function(qId, targetTier) {
+  window.switchExamCardModelTier = function (qId, targetTier) {
     const btns = document.querySelectorAll(`.exam-tier-tab-btn-${qId}`);
     btns.forEach((btn) => {
       const isTarget = btn.getAttribute('data-tier-btn') === targetTier;
@@ -382,35 +282,34 @@ export function initLessonExamPractice(unitId, lesson) {
     }
   };
 
-  // Toggle countdown timer
-  window.toggleExamCardTimer = function(qId, targetMins) {
+  // Toggle countdown timer on any unified GCSE question strip
+  window.toggleExamCardTimer = function (qId, targetMins) {
+    const minsNum = parseInt(targetMins, 10) || 5;
     const bar = document.getElementById(`exam-timer-bar-${qId}`);
     const display = document.getElementById(`exam-timer-display-${qId}`);
     const toggleBtn = document.getElementById(`exam-timer-toggle-btn-${qId}`);
     if (!bar || !display) return;
 
-    if (bar.style.display === 'none') {
+    if (bar.style.display === 'none' || window.getComputedStyle(bar).display === 'none') {
       bar.style.display = 'flex';
     }
 
     let tState = window.examQuestionTimers[qId];
     if (!tState) {
       tState = {
-        remainingSeconds: targetMins * 60,
+        remainingSeconds: minsNum * 60,
         intervalId: null,
-        isRunning: false
+        isRunning: false,
       };
       window.examQuestionTimers[qId] = tState;
     }
 
     if (tState.isRunning) {
-      // Pause
       clearInterval(tState.intervalId);
       tState.intervalId = null;
       tState.isRunning = false;
       if (toggleBtn) toggleBtn.textContent = 'Resume';
     } else {
-      // Start
       tState.isRunning = true;
       if (toggleBtn) toggleBtn.textContent = 'Pause';
 
@@ -435,34 +334,39 @@ export function initLessonExamPractice(unitId, lesson) {
   };
 
   // Reset timer
-  window.resetExamCardTimer = function(qId, targetMins) {
+  window.resetExamCardTimer = function (qId, targetMins) {
+    const minsNum = parseInt(targetMins, 10) || 5;
     const tState = window.examQuestionTimers[qId];
     if (tState && tState.intervalId) {
       clearInterval(tState.intervalId);
     }
     window.examQuestionTimers[qId] = {
-      remainingSeconds: targetMins * 60,
+      remainingSeconds: minsNum * 60,
       intervalId: null,
-      isRunning: false
+      isRunning: false,
     };
 
     const display = document.getElementById(`exam-timer-display-${qId}`);
     const toggleBtn = document.getElementById(`exam-timer-toggle-btn-${qId}`);
     if (display) {
-      display.textContent = `${String(targetMins).padStart(2, '0')}:00`;
+      display.textContent = `${String(minsNum).padStart(2, '0')}:00`;
       display.style.color = '#38bdf8';
     }
     if (toggleBtn) toggleBtn.textContent = 'Start';
   };
 
-  // Projector mode launcher (modal)
-  window.openExamCardProjector = function(qId) {
-    const questions = getLessonMockQuestions(unitId, lesson.id);
-    const q = questions.find(item => item.id === qId);
+  // Projector mode launcher (works for BOTH Green Printed Workbook & Blue Extra Practice questions)
+  window.openExamCardProjector = function (qId) {
+    const regItem = window.unifiedLessonExamRegistry && window.unifiedLessonExamRegistry[qId];
+    const fallbackList = unitId && lesson && lesson.id ? getLessonMockQuestions(unitId, lesson.id) : [];
+    const q = regItem || (fallbackList || []).find((item) => item.id === qId);
     if (!q) return;
 
-    let existingModal = document.getElementById('exam-projector-modal');
+    const existingModal = document.getElementById('exam-projector-modal');
     if (existingModal) existingModal.remove();
+
+    const targetMins = parseInt(q.targetMins, 10) || getRecommendedExamMins(q.marks, q.type);
+    const paperCode = q.paperCode || getCanonicalGcsePaperCode(unitId);
 
     let stimulusHtml = '';
     if (q.stimulus && q.stimulus.length > 0) {
@@ -472,7 +376,7 @@ export function initLessonExamPractice(unitId, lesson) {
             You may use the following in your answer:
           </div>
           <ul style="margin: 0 0 12px 28px; padding: 0; font-size: 1.25rem; line-height: 1.6; color: #0f172a;">
-            ${q.stimulus.map(s => `<li><strong>${s}</strong></li>`).join('')}
+            ${q.stimulus.map((s) => `<li><strong>${s}</strong></li>`).join('')}
           </ul>
           <div style="font-weight: 700; font-size: 1.15rem; color: #334155;">
             You must also use information of your own.
@@ -484,29 +388,33 @@ export function initLessonExamPractice(unitId, lesson) {
     let sourceHtml = '';
     if (q.sourceExtract) {
       sourceHtml = `
-        <div style="background: #fdfbf7; border: 2px solid #e2d9cc; border-left: 6px solid #b45309; border-radius: 10px; padding: 22px 26px; margin: 24px 0; font-size: 1.25rem; color: #1c1917; line-height: 1.6;">
+        <div style="background: #fdfbf7; border: 2px solid #e2d9cc; border-left: 6px solid #b45309; border-radius: 10px; padding: 22px 26px; margin: 24px 0; font-size: 1.15rem; color: #1c1917; line-height: 1.65;">
           ${q.sourceExtract}
         </div>
       `;
     }
 
+    const isWorkbook = Boolean(q.inWorkbook);
+    const originPill = isWorkbook
+      ? `<span style="background: #ecfdf5; color: #065f46; border: 1.5px solid #10b981; font-size: 0.92rem; font-weight: 800; padding: 5px 12px; border-radius: 8px;"><i class="fa-solid fa-book-open"></i> ${q.mockTitle || 'In Printed Workbook'}</span>`
+      : `<span style="background: #eff6ff; color: #1e40af; border: 1.5px solid #93c5fd; font-size: 0.92rem; font-weight: 700; padding: 5px 12px; border-radius: 8px;"><i class="fa-solid fa-layer-group"></i> ${q.mockTitle || 'Extra Exam Practice'}</span>`;
+
     const modal = document.createElement('div');
     modal.id = 'exam-projector-modal';
-    modal.style.cssText = 'position: fixed; inset: 0; z-index: 999999; background: #ffffff; color: #0f172a; overflow-y: auto; padding: clamp(20px, 4vw, 50px); display: flex; flex-direction: column; justify-content: space-between; font-family: "Inter", sans-serif;';
+    modal.style.cssText =
+      'position: fixed; inset: 0; z-index: 999999; background: #ffffff; color: #0f172a; overflow-y: auto; padding: clamp(20px, 4vw, 50px); display: flex; flex-direction: column; justify-content: space-between; font-family: "Inter", sans-serif;';
 
     modal.innerHTML = `
       <!-- Top Projector Bar -->
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 18px; margin-bottom: 28px;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <span style="background: #0f172a; color: #ffffff; font-size: 1rem; font-weight: 800; padding: 6px 14px; border-radius: 8px; letter-spacing: 0.05em; text-transform: uppercase;">
-            Question ${q.qCode}
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 18px; margin-bottom: 28px;">
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <span style="background: #0f172a; color: #ffffff; font-size: 0.98rem; font-weight: 800; padding: 6px 14px; border-radius: 8px; letter-spacing: 0.05em; text-transform: uppercase;">
+            ${q.qCode ? `Question ${q.qCode}` : 'Exam Question'}
           </span>
-          <span style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; font-size: 1rem; font-weight: 700; padding: 6px 14px; border-radius: 8px;">
-            ${q.type} (${q.marks} Marks)
+          <span style="background: #f1f5f9; color: #0f172a; border: 1.5px solid #cbd5e1; font-size: 0.98rem; font-weight: 700; padding: 5px 14px; border-radius: 8px;">
+            ${q.type || 'Edexcel Assessment'} (${q.marks || 4} Marks)
           </span>
-          <span style="color: #64748b; font-size: 0.95rem; font-weight: 600;">
-            ${q.mockTitle}
-          </span>
+          ${originPill}
         </div>
 
         <button type="button" onclick="window.closeExamCardProjector()" style="background: #f1f5f9; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 8px 18px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
@@ -516,7 +424,7 @@ export function initLessonExamPractice(unitId, lesson) {
 
       <!-- Main Question Display -->
       <div style="max-width: 1000px; margin: 0 auto; width: 100%;">
-        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.6rem, 3.2vw, 2.3rem); font-weight: 700; color: #0f172a; line-height: 1.4; margin-bottom: 20px;">
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #0f172a; line-height: 1.4; margin-bottom: 20px;">
           ${q.questionText}
         </div>
 
@@ -524,18 +432,18 @@ export function initLessonExamPractice(unitId, lesson) {
         ${stimulusHtml}
 
         <!-- Big Center Projector Timer -->
-        <div style="background: #0f172a; color: #ffffff; border-radius: 16px; padding: 24px 32px; margin-top: 36px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-          <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; font-weight: 700; margin-bottom: 8px;">
-            Silent Timed Writing
+        <div style="background: #0f172a; color: #ffffff; border-radius: 16px; padding: 24px 32px; margin-top: 32px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+          <div style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; font-weight: 700; margin-bottom: 8px;">
+            Silent Timed Writing &bull; Recommended ${targetMins} Mins
           </div>
           <div id="projector-timer-display" style="font-family: 'Courier New', monospace; font-size: clamp(3rem, 7vw, 5rem); font-weight: 900; color: #38bdf8; line-height: 1;">
-            ${String(q.targetMins).padStart(2, '0')}:00
+            ${String(targetMins).padStart(2, '0')}:00
           </div>
           <div style="margin-top: 18px; display: flex; justify-content: center; gap: 12px;">
-            <button type="button" id="projector-timer-start-btn" onclick="window.toggleProjectorTimer(${q.targetMins})" style="background: #2563eb; color: #ffffff; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; cursor: pointer;">
+            <button type="button" id="projector-timer-start-btn" onclick="window.toggleProjectorTimer(${targetMins})" style="background: #2563eb; color: #ffffff; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; cursor: pointer;">
               Start Timer
             </button>
-            <button type="button" onclick="window.resetProjectorTimer(${q.targetMins})" style="background: #334155; color: #ffffff; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; cursor: pointer;">
+            <button type="button" onclick="window.resetProjectorTimer(${targetMins})" style="background: #334155; color: #ffffff; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; cursor: pointer;">
               Reset
             </button>
           </div>
@@ -544,13 +452,16 @@ export function initLessonExamPractice(unitId, lesson) {
 
       <!-- Footer Note -->
       <div style="text-align: center; color: #94a3b8; font-size: 0.85rem; padding-top: 24px; margin-top: 24px; border-top: 1px solid #e2e8f0;">
-        Pearson Edexcel GCSE History &bull; ${q.paperCode} &bull; The History Revision Hub
+        Pearson Edexcel GCSE History &bull; ${paperCode} &bull; The History Revision Hub
       </div>
     `;
 
     document.body.appendChild(modal);
 
-    // Escape key handler
+    let projRemaining = targetMins * 60;
+    let projInterval = null;
+    let projRunning = false;
+
     const escHandler = (e) => {
       if (e.key === 'Escape') {
         window.closeExamCardProjector();
@@ -559,12 +470,7 @@ export function initLessonExamPractice(unitId, lesson) {
     };
     window.addEventListener('keydown', escHandler);
 
-    // Projector timer local state
-    let projRemaining = q.targetMins * 60;
-    let projInterval = null;
-    let projRunning = false;
-
-    window.toggleProjectorTimer = function(targetMins) {
+    window.toggleProjectorTimer = function (minsArg) {
       const pDisplay = document.getElementById('projector-timer-display');
       const pBtn = document.getElementById('projector-timer-start-btn');
       if (!pDisplay) return;
@@ -597,24 +503,31 @@ export function initLessonExamPractice(unitId, lesson) {
       }
     };
 
-    window.resetProjectorTimer = function(targetMins) {
+    window.resetProjectorTimer = function (minsArg) {
+      const mReset = parseInt(minsArg, 10) || targetMins;
       if (projInterval) clearInterval(projInterval);
       projInterval = null;
       projRunning = false;
-      projRemaining = targetMins * 60;
+      projRemaining = mReset * 60;
       const pDisplay = document.getElementById('projector-timer-display');
       const pBtn = document.getElementById('projector-timer-start-btn');
       if (pDisplay) {
-        pDisplay.textContent = `${String(targetMins).padStart(2, '0')}:00`;
+        pDisplay.textContent = `${String(mReset).padStart(2, '0')}:00`;
         pDisplay.style.color = '#38bdf8';
       }
       if (pBtn) pBtn.textContent = 'Start Timer';
     };
+
+    modal._cleanupInterval = () => {
+      if (projInterval) clearInterval(projInterval);
+    };
   };
 
-  window.closeExamCardProjector = function() {
+  window.closeExamCardProjector = function () {
     const modal = document.getElementById('exam-projector-modal');
-    if (modal) modal.remove();
+    if (modal) {
+      if (typeof modal._cleanupInterval === 'function') modal._cleanupInterval();
+      modal.remove();
+    }
   };
 }
-

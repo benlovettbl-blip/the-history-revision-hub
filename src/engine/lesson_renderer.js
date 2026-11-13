@@ -14,7 +14,14 @@ import {
 } from './video_utils.js';
 import './ks2_guidance.js';
 import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
-import { renderLessonExamPracticeHTML, initLessonExamPractice } from './lesson_exam_practice_panel.js';
+import {
+  renderLessonExamPracticeHTML,
+  initLessonExamPractice,
+  registerUnifiedExamQuestion,
+  getNonDuplicateExtraMockQuestions,
+  getCanonicalGcsePaperCode,
+  getRecommendedExamMins,
+} from './lesson_exam_practice_panel.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
 import { getLessonInfographicCount, getLessonInfographicsSync } from '../infographic_viewer.js';
@@ -46,6 +53,226 @@ export const GCSE_CANONICAL_UNITS = [
 
 export const isGCSEInteractiveUnit = (uId) =>
   GCSE_CANONICAL_UNITS.includes(uId);
+
+export function getWbThinStripStylesHTML() {
+  return `
+    <style id="wb-thin-strip-styles">
+      .wb-unified-station {
+        margin: 18px 0 !important;
+        border: 1.5px solid #cbd5e1 !important;
+        border-radius: 12px !important;
+        background: #ffffff !important;
+        overflow: hidden !important;
+        box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04) !important;
+        padding: 0 !important;
+      }
+      .wb-station-header {
+        padding: 11px 18px;
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        border-bottom: 1px solid #e2e8f0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .wb-strips-stack {
+        padding: 10px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        background: #f8fafc;
+      }
+      details.wb-question-strip {
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0;
+        background: #ffffff;
+        transition: box-shadow 0.15s ease, border-color 0.15s ease;
+      }
+      details.wb-question-strip > summary {
+        list-style: none;
+        cursor: pointer;
+        user-select: none;
+        padding: 7px 12px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        outline: none;
+        transition: background 0.15s ease;
+      }
+      details.wb-question-strip > summary::-webkit-details-marker {
+        display: none;
+      }
+      details.wb-question-strip.wb-strip-green {
+        border: 1.5px solid #a7f3d0;
+        border-left: 4.5px solid #10b981;
+      }
+      details.wb-question-strip.wb-strip-green > summary {
+        background: #f0fdf4;
+      }
+      details.wb-question-strip.wb-strip-green > summary:hover {
+        background: #dcfce7;
+      }
+      details.wb-question-strip.wb-strip-green[open] > summary {
+        background: #ecfdf5;
+        border-bottom: 1px solid #bbf7d0;
+      }
+      details.wb-question-strip.wb-strip-blue {
+        border: 1.5px solid #bfdbfe;
+        border-left: 4.5px solid #2563eb;
+      }
+      details.wb-question-strip.wb-strip-blue > summary {
+        background: #eff6ff;
+      }
+      details.wb-question-strip.wb-strip-blue > summary:hover {
+        background: #dbeafe;
+      }
+      details.wb-question-strip.wb-strip-blue[open] > summary {
+        background: #eff6ff;
+        border-bottom: 1px solid #bfdbfe;
+      }
+      .wb-strip-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      .wb-origin-pill {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.35px;
+        padding: 2.5px 8px;
+        border-radius: 9999px;
+        white-space: nowrap;
+      }
+      .wb-origin-green {
+        background: #d1fae5;
+        color: #065f46;
+        border: 1px solid #6ee7b7;
+      }
+      .wb-origin-blue {
+        background: #dbeafe;
+        color: #1e40af;
+        border: 1px solid #93c5fd;
+      }
+      .wb-tariff-pill {
+        flex-shrink: 0;
+        background: #0f172a;
+        color: #ffffff;
+        font-size: 0.72rem;
+        font-weight: 800;
+        padding: 2.5px 8px;
+        border-radius: 5px;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+      }
+      .wb-stem-preview {
+        flex: 1 1 auto;
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.89rem;
+        font-weight: 600;
+        color: #0f172a;
+        line-height: 1.3;
+      }
+      .wb-strip-right {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .wb-mins-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.73rem;
+        font-weight: 700;
+        color: #475569;
+        background: #ffffff;
+        border: 1px solid #cbd5e1;
+        padding: 2px 7px;
+        border-radius: 9999px;
+        white-space: nowrap;
+      }
+      .wb-strip-toggle-txt {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.76rem;
+        font-weight: 700;
+        color: #334155;
+        white-space: nowrap;
+      }
+      .wb-strip-caret {
+        font-size: 0.72rem;
+        transition: transform 0.2s ease;
+      }
+      details.wb-question-strip .wb-lbl-open {
+        display: none;
+      }
+      details.wb-question-strip[open] .wb-lbl-closed {
+        display: none;
+      }
+      details.wb-question-strip[open] .wb-lbl-open {
+        display: inline;
+      }
+      details.wb-question-strip[open] .wb-strip-caret {
+        transform: rotate(180deg);
+      }
+      .wb-strip-body {
+        padding: 16px 18px;
+        background: #ffffff;
+      }
+      @media (max-width: 680px) {
+        .wb-stem-preview {
+          white-space: normal;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .wb-mins-pill {
+          display: none;
+        }
+      }
+    </style>
+  `;
+}
+
+export function cleanStemForStripSummary(rawText) {
+  if (!rawText) return 'Click to open question';
+  let s = String(rawText)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\*\*/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  s = s
+    .replace(/^(?:Enquiry:|Task\s*\d+[\.:\s-]*|Question\s*\d+(?:\s*\([a-d]\))?[\.:\s-]*|Q\d+(?:\s*\([a-d]\))?[\.:\s-]*|\d+\s*\([a-d]\)[\.:\s-]*|\d+[\.:\s-]+)/i, '')
+    .replace(/(?:\s*[\.\,]?\s*(?:\[\s*\d+\s*marks?(?:\s*(?:•|\+)\s*[^\]]+)?\s*\]|\(\s*\d+\s*marks?\s*\)))+\s*$/gi, '')
+    .trim();
+  return s || String(rawText).replace(/<[^>]+>/g, ' ').trim();
+}
+
+export function shortenWorkbookOriginLabel(label, inWorkbook = true) {
+  if (!inWorkbook) return 'Extra Practice';
+  if (!label) return 'Workbook';
+  const pagesMatch = String(label).match(/Pages?\s+([0-9]+(?:[–-][0-9]+)?)/i);
+  if (pagesMatch) {
+    const pg = pagesMatch[1];
+    return pg.includes('–') || pg.includes('-') ? `Workbook • pp. ${pg}` : `Workbook • p. ${pg}`;
+  }
+  return 'Workbook';
+}
 
 export function checkIsKs2(unitId, unitObj) {
   if (unitId === 'ks2_ww2' || (typeof unitId === 'string' && unitId.startsWith('ks2_')))
@@ -4137,6 +4364,9 @@ export function renderLesson(lesson) {
   const isKs2 = checkIsKs2(unitId, activeUnit);
   const isKs3 = checkIsKs3(unitId, activeUnit);
   const isGCSE = checkIsGCSE(unitId, activeUnit);
+  if (typeof window !== 'undefined') {
+    window.unifiedLessonExamRegistry = {};
+  }
 
   const hasInlineNarrativeSources =
     (Array.isArray(lesson.narrative_blocks) &&
@@ -8687,41 +8917,19 @@ export function renderLesson(lesson) {
 
     if (!isTrip && !isKs2) {
       if (lesson.tasks && lesson.tasks.length > 0) {
-        let hasModels = false;
-        if (lesson.tasks) {
-          hasModels = lesson.tasks.some((t) => !!t.model);
-        }
+        const hasModels = lesson.tasks.some(
+          (t) =>
+            !!(
+              t.model ||
+              t.model_answer ||
+              t.answer ||
+              (t.feature_1 && t.feature_1.model) ||
+              (t.because && t.because.model)
+            ),
+        );
 
         const revealBtn = hasModels
-          ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="reveal-all-models"><i class="fa-solid fa-magnifying-glass"></i> Reveal All Models</button>`
-          : '';
-
-        const ks2WorksheetBanner = isKs2
-          ? `
-            <div class="ks2-inlesson-worksheet-banner" style="background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border: 1.5px solid #bfdbfe; border-left: 5px solid #2563eb; border-radius: 8px; padding: 14px 18px; margin-bottom: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; box-shadow: 0 2px 8px rgba(37,99,235,0.06);">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 38px; height: 38px; border-radius: 8px; background: #2563eb; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0; box-shadow: 0 2px 6px rgba(37,99,235,0.3);">
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-                <div>
-                  <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.5px;">Enquiry Companion Resources &bull; Key Stage 2</div>
-                  <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #0f172a;">A4 Companion Worksheet &amp; Pupil Workbook</div>
-                  <div style="font-size: 0.82rem; color: #475569; margin-top: 1px;">Printable 2-page enquiry worksheet, source detective tasks, and 24-page pupil workbook.</div>
-                </div>
-              </div>
-              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <button type="button" class="btn btn-ks2-inlesson-worksheet" onclick="window.openKs2WorksheetModal('${lesson.id}', ${currentIndex})" style="background: #2563eb; color: #ffffff; font-weight: 700; font-size: 0.82rem; padding: 7px 14px; border-radius: 6px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 5px rgba(37,99,235,0.25);">
-                  <i class="fa-solid fa-file-pdf"></i> Open Lesson Worksheet (2pp)
-                </button>
-                <button type="button" class="btn btn-ks2-inlesson-teacher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="background: #ffffff; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; font-size: 0.82rem; padding: 6px 12px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-                  <i class="fa-solid fa-chalkboard-user"></i> Teacher Guidance
-                </button>
-                <a href="/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf" target="_blank" style="background: #ffffff; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; font-size: 0.82rem; padding: 6px 12px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-                  <i class="fa-solid fa-book-bookmark"></i> Pupil Workbook (PDF)
-                </a>
-              </div>
-            </div>
-          `
+          ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="reveal-all-models" style="padding: 5px 10px; font-size: 0.78rem;"><i class="fa-solid fa-magnifying-glass"></i> Reveal Models</button>`
           : '';
 
         const isWorkbookTask =
@@ -8735,60 +8943,41 @@ export function renderLesson(lesson) {
                   (t.question && t.question.includes('Explain why')),
               )));
 
-        const tasksCategoryBadge = isWorkbookTask
-          ? `<span style="background: #dbeafe; color: #1e40af; padding: 1.5px 7px; border-radius: 4px; font-weight: 800;"><i class="fa-solid fa-book-open" style="margin-right: 4px;"></i> PUPIL WORKBOOK ACTIVITY</span>`
-          : `<span style="background: #e0f2fe; color: #0369a1; padding: 1.5px 7px; border-radius: 4px; font-weight: 800;"><i class="fa-solid fa-pen-nib" style="margin-right: 4px;"></i> DIGITAL EXTENSION</span>`;
+        const stationTitle = isKs3
+          ? 'Pupil Workbook Activities &bull; Key Stage 3'
+          : 'Pupil Workbook Activities';
 
-        const tasksSecondaryBadge = isWorkbookTask
-          ? `RIGHT-HAND SPREAD (RECTO)`
-          : `DISCIPLINARY WRITING PRACTICE`;
-
-        const tasksHeading = isWorkbookTask
-          ? isKs3
-            ? 'Pupil Workbook Activity &bull; Key Stage 3 Disciplinary Writing'
-            : 'Pupil Workbook Activity &bull; Disciplinary Writing Practice'
-          : 'Disciplinary Writing Tasks &bull; Classroom Extension';
-
-        const tasksCountLabel = isWorkbookTask
-          ? `${lesson.tasks.length} Workbook Task${lesson.tasks.length > 1 ? 's' : ''}`
-          : `${lesson.tasks.length} Extension Task${lesson.tasks.length > 1 ? 's' : ''}`;
-
-        const iconBg = isWorkbookTask ? '#2563eb' : '#0284c7';
+        const wbPageNum = isKs3 ? (currentIndex < 3 ? 3 + currentIndex * 2 : 5 + currentIndex * 2) : null;
 
         htmlTasks += `
-            <details class="lesson-tasks-accordion phase-card" open style="margin-top: 32px; border: 1.5px solid #cbd5e1; border-radius: 12px; background: #ffffff; overflow: hidden; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); padding: 0;">
-              <summary class="lesson-tasks-summary" style="cursor: pointer; padding: clamp(12px, 3vw, 16px) clamp(14px, 3.5vw, 22px); background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; user-select: none; border-bottom: 1px solid #e2e8f0; list-style: none; outline: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 auto;">
-                  <div style="width: 38px; height: 38px; border-radius: 8px; background: ${iconBg}; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0; box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);">
-                    <i class="fa-solid fa-book-open"></i>
-                  </div>
-                  <div style="min-width: 0;">
-                    <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
-                      ${tasksCategoryBadge}
-                      <span style="color: #94a3b8;">&bull;</span>
-                      <span>${tasksSecondaryBadge}</span>
-                    </div>
-                    <div style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(0.95rem, 3.5vw, 1.15rem); font-weight: 700; color: #0f172a; word-break: break-word;">${tasksHeading}</div>
-                  </div>
+          ${getWbThinStripStylesHTML()}
+          <div class="wb-unified-station phase-card">
+            <div class="wb-station-header">
+              <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto;">
+                <div style="width: 34px; height: 34px; border-radius: 8px; background: #10b981; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 0.98rem; flex-shrink: 0; box-shadow: 0 2px 5px rgba(16, 185, 129, 0.25);">
+                  <i class="fa-solid fa-book-open"></i>
                 </div>
-                <div class="lesson-tasks-summary-actions" style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
-                  <span style="font-size: 0.78rem; font-weight: 700; background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 14px; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;">
-                    <i class="fa-solid fa-layer-group"></i> ${tasksCountLabel}
-                  </span>
-                  <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;">
-                    <span class="accordion-expand-hint">Click to Collapse/Expand</span>
-                    <i class="fa-solid fa-chevron-down accordion-arrow" style="transition: transform 0.2s ease;"></i>
-                  </span>
+                <div style="min-width: 0;">
+                  <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 800; color: #0f172a; line-height: 1.2;">${stationTitle}</div>
+                  <div style="font-size: 0.73rem; color: #64748b; font-weight: 600;">Select any workbook task strip below to open writing space &amp; scaffolding</div>
                 </div>
-              </summary>
-              <div style="padding: 22px 24px;">
-                ${ks2WorksheetBanner}
-                <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 20px;">
-                  ${revealBtn}
-                </div>
-          `;
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex-shrink: 0;">
+                <span class="wb-origin-pill wb-origin-green">
+                  <i class="fa-solid fa-book-open"></i> ${lesson.tasks.length} in Workbook
+                </span>
+                ${revealBtn}
+                <button type="button" onclick="window.toggleAllWorkbookStrips && window.toggleAllWorkbookStrips(this)" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 6px; padding: 5px 10px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-solid fa-expand"></i> Expand All
+                </button>
+              </div>
+            </div>
+            <div class="wb-strips-stack">
+        `;
 
-        lesson.tasks.forEach((task, tIdx) => {
+        const renderSingleKs3TaskBody = (task, tIdx) => {
+          let htmlTasks = '';
+          (() => {
           if (task.type === 'because_but_so' || task.type === 'sentence_expansion') {
             htmlTasks += renderBecauseButSoTaskHTML(task, currentIndex, tIdx, unitId);
             return;
@@ -9099,7 +9288,14 @@ export function renderLesson(lesson) {
             `;
             return;
           }
-          if (task.type === 'extended_writing' || task.type === 'narrative_account') {
+          if (
+            task.type === 'extended_writing' ||
+            task.type === 'narrative_account' ||
+            task.type === 'narrative_account_8m' ||
+            task.type === 'causation_12m' ||
+            task.type === 'consequence_4m' ||
+            task.type === 'evaluative_essay_12m'
+          ) {
             const hasTaskPrefix = task.topic && /^Task\s*\d+/i.test(task.topic);
             const isLocalKs2 = checkIsKs2(unitId, activeUnit);
             const isLocalKs3 = checkIsKs3(unitId, activeUnit);
@@ -9471,9 +9667,54 @@ export function renderLesson(lesson) {
               ${task.model || task.model_answer || task.answer ? `<div id="model-${tIdx}" class="scaffold-box model-box" style="display:none;">${formatBold(task.model || task.model_answer || task.answer)}</div>` : ''}
             </div>
           `;
+          })();
+          return htmlTasks;
+        };
+
+        lesson.tasks.forEach((task, tIdx) => {
+          const bodyHtml = renderSingleKs3TaskBody(task, tIdx);
+          const rawHeader = String(task.tariff || task.title || task.topic || '');
+          const marksMatch =
+            rawHeader.match(/(\d+)\s*marks?/i) ||
+            String(task.question || task.text || '').match(/\[\s*(\d+)\s*marks?\s*\]/i);
+          const minsMatch = rawHeader.match(/(\d+)\s*mins?/i);
+          const tariffTag = marksMatch
+            ? `Task ${tIdx + 1} • ${marksMatch[1]}m`
+            : `Task ${tIdx + 1}`;
+          const minsPillHtml = minsMatch
+            ? `<span class="wb-mins-pill"><i class="fa-regular fa-clock"></i> ${minsMatch[1]}m</span>`
+            : '';
+          const originShort = wbPageNum ? `Workbook • p. ${wbPageNum}` : 'Workbook';
+          const stemPreview = cleanStemForStripSummary(
+            task.question || task.stem || task.text || task.title || task.topic || `Workbook Activity ${tIdx + 1}`,
+          );
+
+          htmlTasks += `
+            <details class="wb-question-strip wb-strip-green">
+              <summary>
+                <div class="wb-strip-left">
+                  <span class="wb-origin-pill wb-origin-green" title="${isWorkbookTask ? 'Printed in Pupil Workbook' : 'Workbook Activity'}">
+                    <i class="fa-solid fa-book-open"></i> ${originShort}
+                  </span>
+                  <span class="wb-tariff-pill">${tariffTag}</span>
+                  <span class="wb-stem-preview">${stemPreview}</span>
+                </div>
+                <div class="wb-strip-right">
+                  ${minsPillHtml}
+                  <span class="wb-strip-toggle-txt">
+                    <span class="wb-lbl-closed">Answer</span><span class="wb-lbl-open">Close</span>
+                    <i class="fa-solid fa-chevron-down wb-strip-caret"></i>
+                  </span>
+                </div>
+              </summary>
+              <div class="wb-strip-body">
+                ${bodyHtml}
+              </div>
+            </details>
+          `;
         });
 
-        htmlTasks += `</div></details>`;
+        htmlTasks += `</div></div>`;
       }
     }
 
@@ -9629,17 +9870,47 @@ export function renderLesson(lesson) {
   // In KS3 units, lesson.tasks already renders the canonical Pupil Workbook Activity (Recto) accordion.
   // We only render htmlExamPractice for KS3 if lesson.tasks is absent or empty as a fallback.
   const hasRenderableTasks = Array.isArray(lesson.tasks) && lesson.tasks.length > 0;
-  if (lesson.exam_practice && (!isKs3 || !hasRenderableTasks)) {
+  const preFetchedExtraMocks =
+    isGCSE && (!isKs3 || !hasRenderableTasks)
+      ? getNonDuplicateExtraMockQuestions(
+          unitId,
+          lesson,
+          Array.isArray(lesson.exam_practice)
+            ? lesson.exam_practice
+            : lesson.exam_practice?.questions || [],
+        )
+      : [];
+
+  if ((lesson.exam_practice || preFetchedExtraMocks.length > 0) && (!isKs3 || !hasRenderableTasks)) {
     let epQuestions = [];
     let epStimulus = [];
     if (Array.isArray(lesson.exam_practice)) {
       epQuestions = lesson.exam_practice;
-    } else {
+    } else if (lesson.exam_practice) {
       epQuestions = lesson.exam_practice.questions || [];
       epStimulus = lesson.exam_practice.stimulus || [];
     }
 
-    if (epQuestions.length > 0 || epStimulus.length > 0) {
+    const normalizedExtraMocks = preFetchedExtraMocks.map((mq, mIdx) => ({
+      ...mq,
+      _isExtraMock: true,
+      id: mq.id || `extra_${lesson?.id || 'l'}_${mIdx}`,
+      question: mq.questionText || mq.question || '',
+      tariff: mq.type ? `${mq.type} [${mq.marks || 4} marks]` : `${mq.marks || 4} marks`,
+      type: mq.type || '',
+      marks: mq.marks || 4,
+      targetMins: mq.targetMins || getRecommendedExamMins(mq.marks, mq.type),
+      stimulus: Array.isArray(mq.stimulus) ? mq.stimulus : [],
+      sourceExtract: mq.sourceExtract || '',
+      model: mq.modelAnswer || mq.model || '',
+      model_tiers: mq.model_tiers || null,
+      mockTitle: mq.mockTitle || 'Extra Unseen Mock Question',
+      paperCode: mq.paperCode || getCanonicalGcsePaperCode(unitId),
+      qCode: mq.qCode || '',
+      pdfUrl: mq.pdfUrl || '',
+    }));
+
+    if (epQuestions.length > 0 || normalizedExtraMocks.length > 0) {
       const isKs3Unit =
         unitId === 'great_war' ||
         unitId === 'great_war_part2' ||
@@ -9654,27 +9925,35 @@ export function renderLesson(lesson) {
         (typeof unit !== 'undefined' && unit && unit.is_ks3);
 
       const practiceHeading = isKs3Unit
-        ? 'Pupil Workbook Activity &bull; Key Stage 3 Disciplinary Practice'
-        : 'Pupil Workbook Activity &bull; GCSE Examination Practice';
+        ? 'Pupil Workbook Activities &bull; Key Stage 3'
+        : 'Pupil Workbook &amp; GCSE Exam Practice';
       const practiceIcon = isKs3Unit ? 'fa-book-open-reader' : 'fa-graduation-cap';
+      const paperCodeSub = isGCSE
+        ? `Pearson Edexcel GCSE &bull; ${getCanonicalGcsePaperCode(unitId)} &bull; Select any strip to answer, time, or project`
+        : 'Select any workbook strip below to open writing space &amp; model answers';
 
       htmlExamPractice += `
-          <div class="phase-card" style="margin-top: 30px; border: 2px solid #3b82f6; border-radius: 8px;">
-            <div style="background: #eff6ff; padding: 16px 20px; border-bottom: 2px solid #bfdbfe; border-radius: 6px 6px 0 0; margin: -20px -20px 20px -20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-              <div>
-                <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
-                  <span style="background: #dbeafe; color: #1e40af; padding: 1.5px 7px; border-radius: 4px; font-weight: 800;"><i class="fa-solid fa-book-open" style="margin-right: 4px;"></i> PUPIL WORKBOOK COMPANION</span>
-                  <span style="color: #94a3b8;">&bull;</span>
-                  <span>RIGHT-HAND SPREAD (RECTO)</span>
+          ${getWbThinStripStylesHTML()}
+          <div class="wb-unified-station phase-card">
+            <div class="wb-station-header">
+              <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto;">
+                <div style="width: 34px; height: 34px; border-radius: 8px; background: #10b981; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 0.98rem; flex-shrink: 0; box-shadow: 0 2px 5px rgba(16, 185, 129, 0.25);">
+                  <i class="fa-solid ${practiceIcon}"></i>
                 </div>
-                <h3 style="margin: 0; color: #1e3a8a; font-size: 1.25rem; font-family: 'Playfair Display', Georgia, serif; display: flex; align-items: center; gap: 8px;">
-                  <i class="fa-solid ${practiceIcon}" style="color: #2563eb;"></i> ${practiceHeading}
-                </h3>
+                <div style="min-width: 0;">
+                  <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 800; color: #0f172a; line-height: 1.2;">${practiceHeading}</div>
+                  <div style="font-size: 0.73rem; color: #64748b; font-weight: 600;">${paperCodeSub}</div>
+                </div>
               </div>
-              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="reveal-all-models"><i class="fa-solid fa-magnifying-glass"></i> Reveal All Models</button>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex-shrink: 0;">
+                __WB_COUNT_PILLS_PLACEHOLDER__
+                <button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="reveal-all-models" style="padding: 5px 10px; font-size: 0.78rem;"><i class="fa-solid fa-magnifying-glass"></i> Reveal Models</button>
+                <button type="button" onclick="window.toggleAllWorkbookStrips && window.toggleAllWorkbookStrips(this)" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 6px; padding: 5px 10px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-solid fa-expand"></i> Expand All
+                </button>
               </div>
             </div>
+            <div class="wb-strips-stack">
         `;
       const isPaper3Weimar =
         (typeof unitId !== 'undefined' &&
@@ -10035,7 +10314,429 @@ export function renderLesson(lesson) {
         return null;
       };
 
-      const renderQuestion = (q, qIdx) => {
+      const WEIMAR_WORKBOOK_INTERPRETATIONS = {
+        lesson_1_4: [
+          {
+            title: 'Interpretation 1 (The Social Liberation View):',
+            content:
+              'The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles.',
+          },
+          {
+            title: 'Interpretation 2 (The Traditionalist Backlash View):',
+            content:
+              "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic.",
+          },
+        ],
+        lesson_2_4: [
+          {
+            title: 'Interpretation 1 (The Democratic Collapse View):',
+            content:
+              'Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament.',
+          },
+          {
+            title: 'Interpretation 2 (The Political Intrigue View):',
+            content:
+              'Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals.',
+          },
+        ],
+        lesson_3_4: [
+          {
+            title: 'Interpretation 1 (The Brave Resistance View):',
+            content:
+              "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control.",
+          },
+          {
+            title: 'Interpretation 2 (The Limited Conformity View):',
+            content:
+              'Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy.',
+          },
+        ],
+        lesson_4_4: [
+          {
+            title: 'Interpretation 1 (The Planned State Pogrom View):',
+            content:
+              'The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation.',
+          },
+          {
+            title: 'Interpretation 2 (The Public Fear/Isolation View):',
+            content:
+              "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest.",
+          },
+        ],
+      };
+
+      const renderSingleStimulus = (stim, sIdx, uidSuffix = '') => {
+        let stimTitle = '';
+        let stimContent = '';
+        if (typeof stim === 'string') {
+          const parts = stim.split('**:');
+          if (parts.length > 1) {
+            stimTitle = parts[0].replace(/\*\*/g, '').trim();
+            stimContent = parts.slice(1).join('**:').trim();
+          } else {
+            stimTitle = `Interpretation ${sIdx + 1}`;
+            stimContent = stim;
+          }
+        } else {
+          stimTitle = stim.title || stim.id || `Interpretation ${sIdx + 1}`;
+          stimContent = stim.content || stim.text || '';
+        }
+
+        const isInterp = /Interpretation\s+([0-9]+)/i.test(stimTitle);
+        const interpMatch = stimTitle.match(/Interpretation\s+([0-9]+)/i);
+        const interpNum = interpMatch ? interpMatch[1] : `${sIdx + 1}`;
+
+        const srcMatch = stimTitle.match(/Source\s+([A-Z0-9]+)/i);
+        const srcLetter = srcMatch ? srcMatch[1].toUpperCase() : String.fromCharCode(65 + sIdx);
+
+        if (isInterp) {
+          const cleanInterpTitle = stimTitle
+            .replace(/^Interpretation\s+[0-9]+[:\s-]*/i, '')
+            .replace(/^\(([^)]+)\)[:\s-]*/i, '$1: ')
+            .trim();
+          const interpCardId = uidSuffix
+            ? `interpretation-card-${interpNum}-${uidSuffix}`
+            : `interpretation-card-${interpNum}`;
+
+          return `
+            <details class="cme-source-drawer weimar-source-drawer weimar-interpretation-drawer archival-drawer gcse-source-container archival-source-box" id="${interpCardId}" data-interpretation-num="${interpNum}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+              <summary style="min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span class="archival-meta-tag" style="background: #9a3412; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">INTERPRETATION ${interpNum}</span>
+                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanInterpTitle || 'Historical View'}</span>
+                </div>
+                <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
+                  Historiographical View &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
+                </span>
+              </summary>
+              <div class="weimar-interpretation-content" style="padding: 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
+                <div class="archival-source-body" style="font-family: 'Georgia', serif; font-style: italic; font-size: 1.0rem; line-height: 1.7; color: #1e293b; background: #fffdfa; padding: 12px 16px; border-left: 4px solid #ea580c; border-radius: 4px;">
+                  ${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}
+                </div>
+                <div class="archival-citation-footer" style="font-size: 0.78rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 10px; display: flex; justify-content: space-between; align-items: center;">
+                  <span><strong>Historical Analysis:</strong> Pearson Edexcel GCSE Paper 3 Section B Historical Interpretation</span>
+                  <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.72rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">INTERP ${interpNum}</span>
+                </div>
+              </div>
+            </details>
+          `;
+        } else {
+          const cleanSourceTitle = stimTitle.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim();
+          const sourceCardId = uidSuffix
+            ? `exam-source-card-${srcLetter}-${uidSuffix}`
+            : `exam-source-card-${srcLetter}`;
+          const stimImg =
+            typeof stim === 'object' && stim !== null
+              ? stim.image || stim.src || stim.image_url || stim.asset_path || ''
+              : '';
+          const stimImgUrl = stimImg ? getAssetUrl(stimImg) : '';
+          const stimCaption = typeof stim === 'object' && stim !== null ? stim.caption || '' : '';
+          const stimProvenance =
+            typeof stim === 'object' && stim !== null
+              ? stim.provenance ||
+                stim.citation ||
+                cleanSourceTitle ||
+                'Contemporary Written Record'
+              : cleanSourceTitle || 'Contemporary Written Record';
+
+          return `
+            <details class="cme-source-drawer weimar-source-drawer usa-source-drawer gcse-source-drawer exam-stimulus-drawer archival-drawer gcse-source-container archival-source-box" id="${sourceCardId}" data-source-letter="${srcLetter}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+              <summary style="min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">SOURCE ${srcLetter}</span>
+                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanSourceTitle || 'Archival Primary Record'}</span>
+                </div>
+                <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
+                  Archival Evidence &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
+                </span>
+              </summary>
+              <div class="weimar-source-content" style="padding: 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
+                ${
+                  stimImgUrl
+                    ? `
+                  <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 12px;">
+                    <div style="flex: 0 0 280px; max-width: 320px; position: relative; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+                      <img src="${stimImgUrl}" alt="${cleanSourceTitle || 'Source ' + srcLetter}" data-action="open-modal" data-src="${stimImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: 240px; object-fit: contain; display: block; margin: 0 auto; border-radius: 4px;">
+                    </div>
+                    <div style="flex: 1 1 300px;">
+                      ${
+                        stimContent
+                          ? renderArchivalSourceBody(stimContent, stim, {
+                              maxHeight: 'none',
+                              fontSize: '1.0rem',
+                              lineHeight: '1.68',
+                              padding: '12px 16px',
+                              marginBottom: '10px',
+                              accentColor: '#1e40af',
+                            })
+                          : ''
+                      }
+                      ${
+                        stimCaption
+                          ? `
+                        <div style="font-size: 0.86rem; color: #475569; line-height: 1.45; margin-bottom: 8px;">
+                          <strong style="color: #1e3a8a;">Archival Caption:</strong> ${stimCaption}
+                        </div>
+                      `
+                          : ''
+                      }
+                    </div>
+                  </div>
+                `
+                    : renderArchivalSourceBody(stimContent, stim, {
+                        maxHeight: 'none',
+                        fontSize: '1.02rem',
+                        lineHeight: '1.7',
+                        padding: '12px 16px',
+                        accentColor: '#1e40af',
+                      })
+                }
+                <div class="archival-citation-footer" style="font-size: 0.78rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 10px; display: flex; justify-content: space-between; align-items: center;">
+                  <span><strong>Provenance:</strong> ${stimProvenance}</span>
+                  <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.72rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">SOURCE ${srcLetter}</span>
+                </div>
+              </div>
+            </details>
+          `;
+        }
+      };
+
+      const validEpStimulus = (epStimulus || []).filter((s) => {
+        if (!s) return false;
+        const txt = typeof s === 'string' ? s : s.content || s.text || '';
+        const hasImg = typeof s === 'object' && !!(s.image || s.src || s.image_url || s.asset_path);
+        if (/^contemporary archival extract\.?$/i.test(String(txt).trim())) return false;
+        return Boolean(String(txt).trim() || hasImg);
+      });
+
+      const formatStimulusForProjector = (stimList) => {
+        if (!Array.isArray(stimList) || stimList.length === 0) return '';
+        return stimList
+          .map((stim, idx) => {
+            if (typeof stim === 'string') {
+              const parts = stim.split('**:');
+              if (parts.length > 1) {
+                const t = parts[0].replace(/\*\*/g, '').trim();
+                const c = parts.slice(1).join('**:').trim();
+                return `<div style="margin-bottom:12px;"><strong>${t}:</strong><div style="margin-top:4px;font-style:italic;">${c}</div></div>`;
+              }
+              return `<div style="margin-bottom:12px;">${stim}</div>`;
+            }
+            const t = stim.title || stim.id || `Stimulus ${idx + 1}`;
+            const c = stim.content || stim.text || stim.caption || '';
+            const imgRaw = stim.image || stim.src || stim.image_url || stim.asset_path || '';
+            const imgHtml = imgRaw
+              ? `<div style="margin:8px 0;"><img src="${getAssetUrl(imgRaw)}" alt="${t}" style="max-height:260px;max-width:100%;object-fit:contain;border-radius:6px;border:1px solid #cbd5e1;"></div>`
+              : '';
+            const prov = stim.provenance || stim.citation || '';
+            return `<div style="margin-bottom:14px;"><strong>${t}</strong>${imgHtml}${c ? `<div style="margin-top:4px;font-style:italic;">${c}</div>` : ''}${prov ? `<div style="margin-top:4px;font-size:0.9rem;color:#475569;"><strong>Provenance:</strong> ${prov}</div>` : ''}</div>`;
+          })
+          .join('');
+      };
+
+      const findSourceItemByLetter = (letter) => {
+        const L = String(letter || '').toUpperCase();
+        if (!L) return null;
+
+        // 1. Check validEpStimulus by explicit Source L title
+        const fromEp = validEpStimulus.find((s) => {
+          const t = typeof s === 'string' ? s : s.title || s.id || '';
+          return new RegExp(`^Source\\s+${L}\\b`, 'i').test(String(t).trim());
+        });
+        if (fromEp) return fromEp;
+
+        // 2. Check lesson.exam_practice.sources
+        const epSrcList = Array.isArray(lesson?.exam_practice?.sources)
+          ? lesson.exam_practice.sources
+          : [];
+        const fromEpSrcs = epSrcList.find((s) => {
+          const t = s.title || s.id || '';
+          return new RegExp(`^Source\\s+${L}\\b`, 'i').test(String(t).trim());
+        });
+        if (fromEpSrcs) {
+          return {
+            ...fromEpSrcs,
+            title: fromEpSrcs.title || fromEpSrcs.id || `Source ${L}`,
+            content: fromEpSrcs.content || fromEpSrcs.text || '',
+          };
+        }
+
+        // 3. Check lesson.sources by explicit Source L title/label, then positional fallback
+        const lSrcs = Array.isArray(lesson?.sources) ? lesson.sources : [];
+        const byTitle = lSrcs.find((s) => {
+          const t = s.title || s.label || '';
+          return new RegExp(`^Source\\s+${L}\\b`, 'i').test(String(t).trim());
+        });
+        if (byTitle) return byTitle;
+
+        const posIdx = L.charCodeAt(0) - 65;
+        if (posIdx >= 0 && posIdx < lSrcs.length) {
+          const candidate = lSrcs[posIdx];
+          const candTitle = String(candidate?.title || candidate?.label || '').trim();
+          if (!/^Source\s+[A-Z]\b/i.test(candTitle) || new RegExp(`^Source\\s+${L}\\b`, 'i').test(candTitle)) {
+            return {
+              ...candidate,
+              title: candTitle
+                ? /^Source\s+/i.test(candTitle)
+                  ? candTitle
+                  : `Source ${L}: ${candTitle}`
+                : `Source ${L}`,
+            };
+          }
+        }
+        return null;
+      };
+
+      const resolveEmbeddedQuestionStimulus = (q, qIdx, qUid) => {
+        const qRaw = String(q.question || q.prompt || '');
+        const qLower = qRaw.toLowerCase();
+        const qTypeLower = String(q.type || '').toLowerCase();
+
+        // Extra Mock Question with pre-rendered HTML sourceExtract
+        if (q._isExtraMock && q.sourceExtract && String(q.sourceExtract).trim()) {
+          const cleanedExtract = String(q.sourceExtract).replace(
+            /https?:\/\/localhost:\d+\/images\//gi,
+            '/images/',
+          );
+          return {
+            html: `
+              <div class="embedded-mock-source-box" style="background: #fdfbf7; border: 1.5px solid #cbd5e1; border-left: 4px solid #1e40af; border-radius: 8px; padding: 14px 18px; margin: 10px 0 14px 0; font-size: 0.94rem; color: #1e293b; line-height: 1.65;">
+                <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #1e40af; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                  <i class="fa-solid fa-scroll"></i> Source / Interpretation Extract
+                </div>
+                ${cleanedExtract}
+              </div>
+            `,
+            projectorHtml: cleanedExtract,
+          };
+        }
+
+        // 1. Interpretation Questions (3b, 3c, 3d)
+        const needsInterps =
+          /\binterpretation[s]?\s*[12]\b/i.test(qRaw) ||
+          qTypeLower.includes('interp') ||
+          (['weimar_nazi_germany', 'usa'].includes(unitId) &&
+            (qTypeLower.includes('verdict') || /how far do you agree with interpretation/i.test(qRaw)));
+
+        if (needsInterps) {
+          let interps = [];
+          if (
+            Array.isArray(q.stimulus) &&
+            q.stimulus.some((s) =>
+              /interpretation/i.test(typeof s === 'string' ? s : s.title || ''),
+            )
+          ) {
+            interps = q.stimulus;
+          } else {
+            const epInterps = validEpStimulus.filter((s) =>
+              /interpretation/i.test(typeof s === 'string' ? s : s.title || ''),
+            );
+            if (epInterps.length > 0) {
+              interps = epInterps;
+            } else if (
+              unitId === 'weimar_nazi_germany' &&
+              lesson?.id &&
+              WEIMAR_WORKBOOK_INTERPRETATIONS[lesson.id]
+            ) {
+              interps = WEIMAR_WORKBOOK_INTERPRETATIONS[lesson.id];
+            }
+          }
+
+          if (interps.length > 0) {
+            return {
+              html: `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0 14px 0;">${interps
+                .map((st, sIdx) => renderSingleStimulus(st, sIdx, qUid))
+                .join('')}</div>`,
+              projectorHtml: formatStimulusForProjector(interps),
+            };
+          }
+        }
+
+        // 2. Primary Source Questions (Source A, Sources B and C, Follow-up, Inference, Utility)
+        const requestedLetters = [];
+        const addLetter = (ch) => {
+          const up = String(ch || '').toUpperCase();
+          if (up && !requestedLetters.includes(up)) requestedLetters.push(up);
+        };
+        const pairMatches = [...qRaw.matchAll(/\bSources\s+([A-E])\s+and\s+([A-E])\b/gi)];
+        pairMatches.forEach((m) => {
+          addLetter(m[1]);
+          addLetter(m[2]);
+        });
+        const singleMatches = [...qRaw.matchAll(/\bSource\s+([A-E])\b/gi)];
+        singleMatches.forEach((m) => addLetter(m[1]));
+
+        if (requestedLetters.length > 0) {
+          const resolvedSrcs = requestedLetters
+            .map((ltr) => findSourceItemByLetter(ltr))
+            .filter(Boolean);
+          if (resolvedSrcs.length > 0) {
+            return {
+              html: `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0 14px 0;">${resolvedSrcs
+                .map((st, sIdx) => renderSingleStimulus(st, sIdx, qUid))
+                .join('')}</div>`,
+              projectorHtml: formatStimulusForProjector(resolvedSrcs),
+            };
+          }
+        }
+
+        // Fallback if a source-based question doesn't name a letter explicitly
+        const isUnnamedSourceQuestion =
+          qTypeLower.includes('inference') ||
+          qTypeLower.includes('utility') ||
+          qTypeLower.includes('follow_up') ||
+          qLower.includes('how useful') ||
+          qLower.includes('follow up');
+        if (isUnnamedSourceQuestion && validEpStimulus.length > 0) {
+          return {
+            html: `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0 14px 0;">${validEpStimulus
+              .map((st, sIdx) => renderSingleStimulus(st, sIdx, qUid))
+              .join('')}</div>`,
+            projectorHtml: formatStimulusForProjector(validEpStimulus),
+          };
+        }
+
+        return { html: '', projectorHtml: '' };
+      };
+
+      const inferQuestionMarksAndCode = (q, qIdx) => {
+        const qRaw = String(q.question || '');
+        const qTariff = String(q.tariff || '');
+        const qType = String(q.type || '');
+        const combined = `${qTariff} ${qType} ${qRaw}`;
+
+        let marks = parseInt(q.marks, 10) || 0;
+        if (!marks) {
+          if (/16\s*(?:\+|\(\+)\s*4|verdict_16m|16\s*marks?/i.test(combined)) marks = 16;
+          else if (/12\s*marks?|12m|causation|explain\s+why/i.test(combined)) marks = 12;
+          else if (/8\s*marks?|8m|utility|narrative\s+account|importance\s+of/i.test(combined)) marks = 8;
+          else if (/^2\s*marks?$|feature_2m/i.test(qTariff) || qType === 'feature_2m') marks = 2;
+          else marks = 4;
+        }
+        const hasSpag = /16\s*(?:\+|\(\+)\s*4|verdict_16m/i.test(combined) || (marks === 16 && ['eee', 'edexcel_medicine', 'weimar_nazi_germany', 'usa'].includes(unitId));
+        const marksDisplay = hasSpag ? '16+4m' : `${marks}m`;
+
+        let qCode = q.qCode || '';
+        if (!qCode) {
+          const m3 = qRaw.match(/(?:^|\b)(3\s*\([a-d]\))/i);
+          const m2 = qRaw.match(/(?:^|\b)(2\s*\([a-b]\))/i);
+          const m1 = qRaw.match(/(?:^|\b)(1\s*\([a-b]\))/i);
+          const mQ = qRaw.match(/^(?:Question|Q)\s*(\d+(?:\([a-d]\))?)/i);
+          if (m3) qCode = m3[1].replace(/\s+/g, '');
+          else if (m2) qCode = m2[1].replace(/\s+/g, '');
+          else if (m1) qCode = m1[1].replace(/\s+/g, '');
+          else if (mQ) qCode = mQ[1];
+          else if (!q._isExtraMock) qCode = `${qIdx + 1}`;
+        }
+
+        const pillLabel = qCode ? `Q${qCode} • ${marksDisplay}` : marksDisplay;
+        return { marks, marksDisplay, qCode, pillLabel };
+      };
+
+      const renderQuestion = (q, qIdx, wbMetaOverride = null) => {
+        const qUid = q._isExtraMock
+          ? String(q.id || `extra_${qIdx}`).replace(/[^a-zA-Z0-9_-]/g, '_')
+          : `ep_${String(lesson?.id || 'l').replace(/[^a-zA-Z0-9_-]/g, '_')}_${qIdx}`;
         const qText = (q.question || '').toLowerCase();
         const qTariff = (q.tariff || '').toLowerCase();
         const qType = (q.type || '').toLowerCase();
@@ -10176,7 +10877,7 @@ export function renderLesson(lesson) {
                 }
                 ${hasDetailedScaffold
               ? `
-                <button class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-scaffold-${qIdx}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600;">
+                <button class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-scaffold-${qUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600;">
                   <i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> ${sc.button_label || 'Structure Strip &amp; Tips'}
                 </button>
                 `
@@ -10185,7 +10886,7 @@ export function renderLesson(lesson) {
               </div>
               ${hasDetailedScaffold
               ? `
-              <div id="ep-scaffold-${qIdx}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 14px 16px; margin-top: 8px;">
+              <div id="ep-scaffold-${qUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 14px 16px; margin-top: 8px;">
                 ${sc.acronym_title ? `<div style="font-weight: 700; color: #1e3a8a; font-size: 0.98rem; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-sitemap" style="color: #3b82f6;"></i> ${sc.acronym_title}</div>` : ''}
                 ${sc.guidance ? `<p style="font-size: 0.88rem; color: #475569; margin: 0 0 10px 0; font-style: italic;">${sc.guidance}</p>` : ''}
                 ${showSpoilerPromptInDrawer ? `<div style="font-size: 0.88rem; color: #334155; margin: 0 0 12px 0; background: #ffffff; border: 1px solid #cbd5e1; border-left: 3px solid #64748b; padding: 8px 12px; border-radius: 4px;"><strong><i class="fa-solid fa-circle-info" style="color: #3b82f6;"></i> Guidance:</strong> ${q.prompt}</div>` : ''}
@@ -10682,7 +11383,7 @@ export function renderLesson(lesson) {
                 ? 'fa-list-check'
                 : 'fa-pen-to-square';
               return `
-              <button type="button" class="btn model-tier-tab-btn ${isActive ? 'active' : ''}" data-action="switch-model-tier" data-target-tier="tier-${key}-${qIdx}" style="padding: 6px 12px; font-size: 0.8rem; font-weight: ${btnWeight}; border-radius: 6px; border: 1.5px solid ${btnBorder}; background: ${btnBg}; color: ${btnColor}; cursor: pointer; transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 5px;">
+              <button type="button" class="btn model-tier-tab-btn ${isActive ? 'active' : ''}" data-action="switch-model-tier" data-target-tier="tier-${key}-${qUid}" style="padding: 6px 12px; font-size: 0.8rem; font-weight: ${btnWeight}; border-radius: 6px; border: 1.5px solid ${btnBorder}; background: ${btnBg}; color: ${btnColor}; cursor: pointer; transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid ${badgeIcon}"></i> ${t.title || key}
               </button>
             `;
@@ -10693,8 +11394,9 @@ export function renderLesson(lesson) {
             .map((key, idx) => {
               const t = tiers[key];
               const isActive = key === defaultKey;
-              const isTop = (key === defaultKey);
-              const isMiddle = (!isTop && idx > 0);
+              const isTop = key === defaultKey;
+              const isMiddle = !isTop && idx > 0;
+              const hasDualOptions = Array.isArray(t.options) && t.options.length > 0;
               const wordCount = (t.text || '').trim().split(/\s+/).filter(Boolean).length;
 
               let themeBorder = '#fed7aa';
@@ -10720,8 +11422,58 @@ export function renderLesson(lesson) {
                 verdictColor = '#075985';
               }
 
+              const dualOptionsBodyHtml = hasDualOptions
+                ? `
+                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 12px;">
+                    ${t.options
+                      .map((opt, oIdx) => {
+                        const optWords = String(opt.text || '')
+                          .trim()
+                          .split(/\s+/)
+                          .filter(Boolean).length;
+                        return `
+                          <div style="background: #f8fafc; border: 1.5px solid #bbf7d0; border-top: 3.5px solid #10b981; border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                              <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #dcfce7;">
+                                <span style="font-size: 0.76rem; font-weight: 800; color: #065f46; text-transform: uppercase; letter-spacing: 0.3px;">
+                                  ${opt.label || `Option ${String.fromCharCode(65 + oIdx)} (4/4)`}
+                                </span>
+                                <span style="font-size: 0.72rem; font-weight: 700; color: #047857; background: #ecfdf5; padding: 1.5px 7px; border-radius: 9999px; border: 1px solid #a7f3d0; white-space: nowrap;">
+                                  ${optWords} words
+                                </span>
+                              </div>
+                              <div style="font-size: 0.94rem; line-height: 1.58; color: #0f172a;">
+                                ${typeof formatBold !== 'undefined' ? formatBold(opt.text) : opt.text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+                      })
+                      .join('')}
+                  </div>
+                `
+                : `
+                  <div style="font-size: 0.98rem; line-height: 1.6; color: #0f172a; margin-bottom: 12px;">
+                    ${typeof formatBold !== 'undefined' ? formatBold(t.text) : t.text}
+                  </div>
+                `;
+
+              const wordCountPillText = hasDualOptions
+                ? `${t.options.length} Full-Mark Angles (~${Math.round(
+                    t.options.reduce(
+                      (acc, o) =>
+                        acc +
+                        String(o.text || '')
+                          .trim()
+                          .split(/\s+/)
+                          .filter(Boolean).length,
+                      0,
+                    ) / t.options.length,
+                  )}w each)`
+                : `${wordCount} words`;
+
               return `
-              <div id="tier-${key}-${qIdx}" class="model-tier-pane" style="display: ${isActive ? 'block' : 'none'};">
+              <div id="tier-${key}-${qUid}" class="model-tier-pane" style="display: ${isActive ? 'block' : 'none'};">
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid ${themeBorder};">
                   <div style="display: flex; align-items: center; gap: 8px;">
                     <span style="background: ${themeBadgeBg}; color: ${themeBadgeColor}; font-weight: 800; font-size: 0.78rem; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.5px; text-transform: uppercase;">
@@ -10732,12 +11484,10 @@ export function renderLesson(lesson) {
                     </span>
                   </div>
                   <span style="font-size: 0.78rem; font-weight: 700; color: #64748b; background: #ffffff; padding: 2px 8px; border-radius: 12px; border: 1px solid #e2e8f0;">
-                    ${wordCount} words
+                    ${wordCountPillText}
                   </span>
                 </div>
-                <div style="font-size: 0.98rem; line-height: 1.6; color: #0f172a; margin-bottom: 12px;">
-                  ${typeof formatBold !== 'undefined' ? formatBold(t.text) : t.text}
-                </div>
+                ${dualOptionsBodyHtml}
                 ${
                   t.verdict
                     ? `
@@ -10756,7 +11506,7 @@ export function renderLesson(lesson) {
             .join('');
 
           modelBoxHtml = `
-            <div id="ep-model-${qIdx}" class="scaffold-box model-box model-tier-container" style="display:none; margin-top: 15px; background: #ffffff; border: 1.5px solid #10b981; border-radius: 10px; padding: 16px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);">
+            <div id="ep-model-${qUid}" class="scaffold-box model-box model-tier-container" style="display:none; margin-top: 15px; background: #ffffff; border: 1.5px solid #10b981; border-radius: 10px; padding: 16px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);">
               <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
                 <span style="font-weight: 800; font-size: 0.82rem; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
                   <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> Pearson Edexcel ${tierKeys.length}-Tier Mark Scheme Ladder
@@ -10772,34 +11522,56 @@ export function renderLesson(lesson) {
             </div>
           `;
         } else if (modelAns) {
+          const flatWordCount = String(modelAns)
+            .replace(/<[^>]+>/g, ' ')
+            .trim()
+            .split(/\s+/)
+            .filter(Boolean).length;
           modelBoxHtml = `
-            <div id="ep-model-${qIdx}" class="scaffold-box model-box" style="display:none; margin-top: 15px;">
-              ${typeof formatBold !== 'undefined' ? formatBold(modelAns) : modelAns}
+            <div id="ep-model-${qUid}" class="scaffold-box model-box" style="display:none; margin-top: 15px; background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 10px; padding: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #bbf7d0;">
+                <span style="background: #16a34a; color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 3px 9px; border-radius: 5px; letter-spacing: 0.04em; text-transform: uppercase;">
+                  <i class="fa-solid fa-star"></i> Examiner Model Answer (Grade 8/9)
+                </span>
+                <span style="font-size: 0.76rem; font-weight: 700; color: #065f46; background: #ffffff; padding: 2px 8px; border-radius: 12px; border: 1px solid #a7f3d0;">
+                  ${flatWordCount} words
+                </span>
+              </div>
+              <div style="font-size: 0.96rem; line-height: 1.65; color: #14532d;">
+                ${typeof formatBold !== 'undefined' ? formatBold(String(modelAns).replace(/\n/g, '<br>')) : String(modelAns).replace(/\n/g, '<br>')}
+              </div>
             </div>
           `;
         }
 
-        const wbMeta = getWorkbookTaskMeta(unitId, lesson?.id, q, q.question, qIdx, lesson);
+        const wbMeta = q._isExtraMock
+          ? {
+              inWorkbook: false,
+              label: `Extra Exam Practice • ${q.mockTitle || 'Unseen Mock Bank'}`,
+            }
+          : wbMetaOverride || getWorkbookTaskMeta(unitId, lesson?.id, q, q.question, qIdx, lesson);
+
+        const inWorkbook = !wbMeta || wbMeta.inWorkbook !== false;
         let wbBadgeHtml = '';
         let wbNoticeHtml = '';
         if (wbMeta) {
-          if (wbMeta.inWorkbook) {
+          if (inWorkbook) {
             wbBadgeHtml = `
-              <div style="display: inline-flex; align-items: center; gap: 6px; background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 4px 10px; border-radius: 9999px; margin-bottom: 12px;">
-                <i class="fa-solid fa-book-open" style="font-size: 0.8rem; color: #059669;"></i>
+              <div style="display: inline-flex; align-items: center; gap: 6px; background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.45px; padding: 3.5px 10px; border-radius: 9999px;">
+                <i class="fa-solid fa-book-open" style="font-size: 0.78rem; color: #059669;"></i>
                 <span>${wbMeta.label}</span>
               </div>
             `;
           } else {
             wbBadgeHtml = `
-              <div style="display: inline-flex; align-items: center; gap: 6px; background: #f8fafc; border: 1.5px solid #94a3b8; color: #334155; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 4px 10px; border-radius: 9999px; margin-bottom: 12px;">
-                <i class="fa-solid fa-laptop-code" style="font-size: 0.8rem; color: #64748b;"></i>
+              <div style="display: inline-flex; align-items: center; gap: 6px; background: #eff6ff; border: 1.5px solid #93c5fd; color: #1e40af; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.45px; padding: 3.5px 10px; border-radius: 9999px;">
+                <i class="fa-solid fa-layer-group" style="font-size: 0.78rem; color: #2563eb;"></i>
                 <span>${wbMeta.label}</span>
               </div>
             `;
             if (wbMeta.note) {
               wbNoticeHtml = `
-                <div style="font-size: 0.88rem; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-left: 4px solid #3b82f6; border-radius: 6px; padding: 10px 14px; margin-bottom: 14px; line-height: 1.5;">
+                <div style="font-size: 0.86rem; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-left: 4px solid #3b82f6; border-radius: 6px; padding: 9px 13px; margin-bottom: 12px; line-height: 1.5;">
                   <strong><i class="fa-solid fa-circle-info" style="color: #2563eb; margin-right: 6px;"></i> Workbook Navigation:</strong> ${wbMeta.note}
                 </div>
               `;
@@ -10830,14 +11602,14 @@ export function renderLesson(lesson) {
         let bulletHtml = '';
         if (bulletItems) {
           bulletHtml = `
-            <div class="edexcel-stimulus-bullet-box" style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #1e3a8a; border-radius: 6px; padding: 12px 16px; margin: 12px 0 16px 0;">
-              <div style="font-size: 0.88rem; font-weight: 700; color: #1e3a8a; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            <div class="edexcel-stimulus-bullet-box" style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #1e3a8a; border-radius: 6px; padding: 12px 16px; margin: 10px 0 14px 0;">
+              <div style="font-size: 0.86rem; font-weight: 700; color: #1e3a8a; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
                 <i class="fa-solid fa-list-check" style="margin-right: 6px;"></i> You may use the following in your answer:
               </div>
-              <ul style="margin: 0; padding-left: 24px; font-size: 0.95rem; color: #0f172a; font-weight: 600; line-height: 1.6;">
+              <ul style="margin: 0; padding-left: 24px; font-size: 0.94rem; color: #0f172a; font-weight: 600; line-height: 1.55;">
                 ${bulletItems.map((b) => `<li>${b}</li>`).join('')}
               </ul>
-              <div style="font-size: 0.85rem; color: #334155; font-weight: 600; margin-top: 8px; font-style: italic;">
+              <div style="font-size: 0.84rem; color: #334155; font-weight: 600; margin-top: 6px; font-style: italic;">
                 You must also use information of your own.
               </div>
             </div>
@@ -10847,338 +11619,193 @@ export function renderLesson(lesson) {
         const effectiveStampHtml = isGcseCleanExam ? '' : stampHtml;
         const effectivePromptHtml = isGcseCleanExam ? '' : promptHtml;
 
-        return `
-          <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-            ${wbBadgeHtml}
-            <div style="font-weight: 700; margin-bottom: 12px; font-size: 1.1rem; color: #0f172a; line-height: 1.5;">
-              ${formatExamQuestionTitle(q.question, qIdx, q)}
-              <span style="display: inline-flex; vertical-align: middle; margin-left: 8px;">
-                ${modelAns ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="ep-model-${qIdx}"><i class="fa-solid fa-eye"></i></button>` : ''}
-              </span>
+        const embeddedStim = resolveEmbeddedQuestionStimulus(q, qIdx, qUid);
+        const { marks, pillLabel, qCode } = inferQuestionMarksAndCode(q, qIdx);
+        const targetMins =
+          parseInt(q.targetMins, 10) || getRecommendedExamMins(marks, q.type || q.question || '');
+        const paperCode = q.paperCode || getCanonicalGcsePaperCode(unitId);
+
+        if (isGCSE) {
+          registerUnifiedExamQuestion(qUid, {
+            id: qUid,
+            qCode,
+            type: q.type || q.tariff || 'Edexcel Exam Question',
+            marks,
+            targetMins,
+            paperCode,
+            inWorkbook,
+            mockTitle: inWorkbook ? wbMeta?.label || 'In Printed Workbook' : q.mockTitle || wbMeta?.label || 'Extra Exam Practice',
+            questionText: String(q.question || '').replace(/\n/g, '<br>'),
+            stimulus: bulletItems || [],
+            sourceExtract: embeddedStim.projectorHtml || '',
+          });
+        }
+
+        const originShort = inWorkbook
+          ? shortenWorkbookOriginLabel(wbMeta?.label, true)
+          : q._isExtraMock
+            ? 'Extra Mock'
+            : 'Extension';
+        const stemPreview = cleanStemForStripSummary(q.question);
+        const hasAnyModel = Boolean(modelAns || q.model_tiers);
+
+        const timerBarHtml = isGCSE
+          ? `
+            <div id="exam-timer-bar-${qUid}" style="display: none; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: #0f172a; color: #ffffff; padding: 10px 16px; border-radius: 8px; margin-top: 12px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-stopwatch" style="color: #38bdf8; font-size: 1.05rem;"></i>
+                <span style="font-size: 0.84rem; font-weight: 600; color: #cbd5e1;">Timed Exam Mode:</span>
+                <span id="exam-timer-display-${qUid}" style="font-family: 'Courier New', monospace; font-size: 1.2rem; font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">
+                  ${String(targetMins).padStart(2, '0')}:00
+                </span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <button type="button" id="exam-timer-toggle-btn-${qUid}" onclick="window.toggleExamCardTimer('${qUid}', ${targetMins})" style="background: #2563eb; color: #ffffff; border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; font-size: 0.78rem; cursor: pointer;">
+                  Pause
+                </button>
+                <button type="button" onclick="window.resetExamCardTimer('${qUid}', ${targetMins})" style="background: #334155; color: #e2e8f0; border: none; padding: 5px 10px; border-radius: 6px; font-weight: 600; font-size: 0.78rem; cursor: pointer;">
+                  Reset
+                </button>
+              </div>
             </div>
-            ${wbNoticeHtml}
-            ${bulletHtml}
-            ${effectiveStampHtml}
-            ${effectivePromptHtml}
-            ${scaffoldHtml}
-            <textarea class="student-answer-input" placeholder="Write your response here..." oninput="window.updateProgress()"></textarea>
-            ${modelBoxHtml}
+          `
+          : '';
+
+        const mockPdfLinkHtml =
+          q._isExtraMock && q.pdfUrl && String(q.pdfUrl).includes('/mocks/')
+            ? `
+              <a href="${getAssetUrl(q.pdfUrl)}" target="_blank" rel="noopener noreferrer" style="background: #ffffff; color: #334155; border: 1.5px solid #cbd5e1; padding: 6px 12px; border-radius: 7px; font-weight: 600; font-size: 0.81rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-left: auto;">
+                <i class="fa-regular fa-file-pdf" style="color: #dc2626;"></i> Mock Booklet PDF
+              </a>
+            `
+            : '';
+
+        const actionBarHtml = `
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #f1f5f9;">
+            ${
+              hasAnyModel
+                ? `
+              <button type="button" id="exam-model-btn-${qUid}" onclick="window.toggleExamCardModelAnswer('${qUid}')" style="background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; padding: 6px 13px; border-radius: 7px; font-weight: 700; font-size: 0.81rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+                <i class="fa-regular fa-eye" style="color: #16a34a;"></i> Reveal Model Answer &amp; Mark Scheme
+              </button>
+            `
+                : ''
+            }
+            ${
+              isGCSE
+                ? `
+              <button type="button" onclick="window.toggleExamCardTimer('${qUid}', ${targetMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 6px 12px; border-radius: 7px; font-weight: 700; font-size: 0.81rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+                <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Time this Question (${targetMins}m)
+              </button>
+              <button type="button" onclick="window.openExamCardProjector('${qUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 6px 12px; border-radius: 7px; font-weight: 700; font-size: 0.81rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+                <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector Mode
+              </button>
+            `
+                : ''
+            }
+            ${mockPdfLinkHtml}
           </div>
+        `;
+
+        return `
+          <details class="wb-question-strip ${inWorkbook ? 'wb-strip-green' : 'wb-strip-blue'}">
+            <summary>
+              <div class="wb-strip-left">
+                <span class="wb-origin-pill ${inWorkbook ? 'wb-origin-green' : 'wb-origin-blue'}" title="${wbMeta?.label || ''}">
+                  <i class="fa-solid ${inWorkbook ? 'fa-book-open' : 'fa-layer-group'}"></i> ${originShort}
+                </span>
+                <span class="wb-tariff-pill">${pillLabel}</span>
+                <span class="wb-stem-preview">${stemPreview}</span>
+              </div>
+              <div class="wb-strip-right">
+                <span class="wb-mins-pill"><i class="fa-regular fa-clock"></i> ${targetMins}m</span>
+                <span class="wb-strip-toggle-txt">
+                  <span class="wb-lbl-closed">Answer</span><span class="wb-lbl-open">Close</span>
+                  <i class="fa-solid fa-chevron-down wb-strip-caret"></i>
+                </span>
+              </div>
+            </summary>
+            <div class="wb-strip-body">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+                ${wbBadgeHtml}
+                ${
+                  isGCSE
+                    ? `<span style="font-size: 0.74rem; font-weight: 700; color: #64748b; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2.5px 8px; border-radius: 5px;">${paperCode}</span>`
+                    : ''
+                }
+              </div>
+              <div style="font-weight: 700; margin-bottom: 10px; font-size: 1.06rem; color: #0f172a; line-height: 1.5;">
+                ${formatExamQuestionTitle(q.question, qIdx, q)}
+              </div>
+              ${wbNoticeHtml}
+              ${embeddedStim.html}
+              ${bulletHtml}
+              ${effectiveStampHtml}
+              ${effectivePromptHtml}
+              ${scaffoldHtml}
+              <textarea class="student-answer-input" style="min-height: ${marks >= 12 ? '180px' : '110px'};" placeholder="Write your response here..." oninput="window.updateProgress && window.updateProgress()"></textarea>
+              ${timerBarHtml}
+              ${actionBarHtml}
+              ${modelBoxHtml}
+            </div>
+          </details>
         `;
       };
 
-      const renderSingleStimulus = (stim, sIdx) => {
-        let stimTitle = '';
-        let stimContent = '';
-        if (typeof stim === 'string') {
-          const parts = stim.split('**:');
-          if (parts.length > 1) {
-            stimTitle = parts[0].replace(/\*\*/g, '').trim();
-            stimContent = parts.slice(1).join('**:').trim();
-          } else {
-            stimTitle = `Interpretation ${sIdx + 1}`;
-            stimContent = stim;
-          }
+      const greenQuestionEntries = [];
+      const blueQuestionEntries = [];
+
+      epQuestions.forEach((q, qIdx) => {
+        const meta = getWorkbookTaskMeta(
+          unitId,
+          lesson?.id,
+          q,
+          q.question || q.prompt || '',
+          qIdx,
+          lesson,
+        );
+        if (meta && meta.inWorkbook === false) {
+          blueQuestionEntries.push({ q, qIdx, meta });
         } else {
-          stimTitle = stim.title || `Interpretation ${sIdx + 1}`;
-          stimContent = stim.content || stim.text || '';
+          greenQuestionEntries.push({ q, qIdx, meta });
         }
+      });
 
-        const isInterp = /Interpretation\s+([0-9]+)/i.test(stimTitle);
-        const interpMatch = stimTitle.match(/Interpretation\s+([0-9]+)/i);
-        const interpNum = interpMatch ? interpMatch[1] : `${sIdx + 1}`;
-
-        const srcMatch = stimTitle.match(/Source\s+([A-Z0-9]+)/i);
-        const srcLetter = srcMatch ? srcMatch[1].toUpperCase() : String.fromCharCode(65 + sIdx);
-
-        if (isInterp) {
-          const cleanInterpTitle = stimTitle
-            .replace(/^Interpretation\s+[0-9]+[:\s-]*/i, '')
-            .replace(/^\(([^)]+)\)[:\s-]*/i, '$1: ')
-            .trim();
-          const interpCardId = `interpretation-card-${interpNum}`;
-
-          return `
-            <details class="cme-source-drawer weimar-source-drawer weimar-interpretation-drawer archival-drawer gcse-source-container archival-source-box" id="${interpCardId}" data-interpretation-num="${interpNum}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-              <summary style="padding: 5px 12px; min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                  <span class="archival-meta-tag" style="background: #9a3412; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">INTERPRETATION ${interpNum}</span>
-                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanInterpTitle || 'Historical View'}</span>
-                </div>
-                <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
-                  Historiographical View &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
-                </span>
-              </summary>
-              <div class="weimar-interpretation-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
-                <div class="archival-source-body" style="font-family: 'Georgia', serif; font-style: italic; font-size: 1.02rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #ea580c; border-radius: 4px;">
-                  ${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}
-                </div>
-                <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
-                  <span><strong>Historical Analysis:</strong> Pearson Edexcel GCSE Paper 3 Section B Historical Interpretation</span>
-                  <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.72rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">INTERP ${interpNum}</span>
-                </div>
-              </div>
-            </details>
-          `;
-        } else {
-          const cleanSourceTitle = stimTitle.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim();
-          const sourceCardId = `exam-source-card-${srcLetter}`;
-          const stimImg =
-            typeof stim === 'object' && stim !== null
-              ? stim.image || stim.src || stim.image_url || stim.asset_path || ''
-              : '';
-          const stimImgUrl = stimImg ? getAssetUrl(stimImg) : '';
-          const stimCaption = typeof stim === 'object' && stim !== null ? stim.caption || '' : '';
-          const stimProvenance =
-            typeof stim === 'object' && stim !== null
-              ? stim.provenance ||
-              stim.citation ||
-              cleanSourceTitle ||
-              'Contemporary Written Record'
-              : cleanSourceTitle || 'Contemporary Written Record';
-
-          return `
-            <details class="cme-source-drawer weimar-source-drawer usa-source-drawer gcse-source-drawer exam-stimulus-drawer archival-drawer gcse-source-container archival-source-box" id="${sourceCardId}" data-source-letter="${srcLetter}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-              <summary style="padding: 5px 12px; min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                  <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">SOURCE ${srcLetter}</span>
-                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanSourceTitle || 'Archival Primary Record'}</span>
-                </div>
-                <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
-                  Archival Evidence &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
-                </span>
-              </summary>
-              <div class="weimar-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
-                ${stimImgUrl
-              ? `
-                  <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 12px;">
-                    <div style="flex: 0 0 280px; max-width: 320px; position: relative; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-                      <img src="${stimImgUrl}" alt="${cleanSourceTitle || 'Source ' + srcLetter}" data-action="open-modal" data-src="${stimImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: 240px; object-fit: contain; display: block; margin: 0 auto; border-radius: 4px;">
-                    </div>
-                    <div style="flex: 1 1 300px;">
-                      ${stimContent
-                ? renderArchivalSourceBody(stimContent, stim, { maxHeight: 'none', fontSize: '1.02rem', lineHeight: '1.7', padding: '12px 16px', marginBottom: '10px', accentColor: '#1e40af' })
-                : ''
-              }
-                      ${stimCaption
-                ? `
-                        <div style="font-size: 0.86rem; color: #475569; line-height: 1.45; margin-bottom: 8px;">
-                          <strong style="color: #1e3a8a;">Archival Caption:</strong> ${stimCaption}
-                        </div>
-                      `
-                : ''
-              }
-                    </div>
-                  </div>
-                `
-              : renderArchivalSourceBody(stimContent, stim, { maxHeight: 'none', fontSize: '1.05rem', lineHeight: '1.75', padding: '14px 18px', accentColor: '#1e40af' })
-            }
-                <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
-                  <span><strong>Provenance:</strong> ${stimProvenance}</span>
-                  <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.72rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">SOURCE ${srcLetter}</span>
-                </div>
-              </div>
-            </details>
-          `;
-        }
-      };
-
-      if (isPaper3Weimar) {
-        const secAQuestions = [];
-        const secBQuestions = [];
-
-        epQuestions.forEach((q, idx) => {
-          const type = (q.type || '').toLowerCase();
-          const tariff = (q.tariff || '').toLowerCase();
-          if (
-            type.includes('inference') ||
-            type.includes('causation') ||
-            type.includes('explain_why') ||
-            tariff.includes('12')
-          ) {
-            secAQuestions.push({ q, idx });
-          } else {
-            secBQuestions.push({ q, idx });
-          }
+      normalizedExtraMocks.forEach((mq, mIdx) => {
+        blueQuestionEntries.push({
+          q: mq,
+          qIdx: epQuestions.length + mIdx,
+          meta: {
+            inWorkbook: false,
+            label: `Extra Exam Practice • ${mq.mockTitle || 'Unseen Mock Bank'}`,
+          },
         });
+      });
 
-        // 1. Lessons with BOTH Section A and Section B (Lessons 2, 6, 10, 14):
-        if (secAQuestions.length > 0 && secBQuestions.length > 0) {
-          // Render Section A (Causation Essay) - ZERO SOURCES HERE!
-          htmlExamPractice += `
-            <div class="exam-section-wrapper exam-section-a-wrapper" style="margin-bottom: 28px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">
-                <span style="font-weight: 800; font-size: 0.95rem; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px;">
-                  <i class="fa-solid fa-file-pen" style="margin-right: 6px; color: #2563eb;"></i> Pearson Edexcel Paper 3 &bull; Section A: Causation Essay
-                </span>
-                <span style="font-size: 0.76rem; font-weight: 700; color: #475569; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 2px 8px; border-radius: 4px;">
-                  Knowledge &amp; Explanation &bull; No Sources Required
-                </span>
-              </div>
-          `;
-          secAQuestions.forEach(({ q, idx }) => {
-            htmlExamPractice += renderQuestion(q, idx);
-          });
-          htmlExamPractice += `</div>`;
+      const countPillsHtml = [
+        greenQuestionEntries.length > 0
+          ? `<span class="wb-origin-pill wb-origin-green"><i class="fa-solid fa-book-open"></i> ${greenQuestionEntries.length} in Workbook</span>`
+          : '',
+        blueQuestionEntries.length > 0
+          ? `<span class="wb-origin-pill wb-origin-blue"><i class="fa-solid fa-layer-group"></i> ${blueQuestionEntries.length} Extra Practice</span>`
+          : '',
+      ]
+        .filter(Boolean)
+        .join('');
 
-          // Render Section B (Source Utility) - ARCHIVAL SOURCES GO HERE!
-          htmlExamPractice += `
-            <div class="exam-section-wrapper exam-section-b-wrapper" style="margin-bottom: 20px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">
-                <span style="font-weight: 800; font-size: 0.95rem; color: #9a3412; text-transform: uppercase; letter-spacing: 0.5px;">
-                  <i class="fa-solid fa-box-archive" style="margin-right: 6px; color: #ea580c;"></i> Pearson Edexcel Paper 3 &bull; Section B: Primary Source Enquiry
-                </span>
-                <span style="font-size: 0.76rem; font-weight: 700; color: #9a3412; background: #fff7ed; border: 1px solid #fed7aa; padding: 2px 8px; border-radius: 4px;">
-                  Archival Evidence &bull; Question 3(a)
-                </span>
-              </div>
-          `;
-          if (epStimulus.length > 0) {
-            htmlExamPractice += `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;">`;
-            epStimulus.forEach((stim, sIdx) => {
-              htmlExamPractice += renderSingleStimulus(stim, sIdx);
-            });
-            htmlExamPractice += `</div>`;
-          }
-          secBQuestions.forEach(({ q, idx }) => {
-            htmlExamPractice += renderQuestion(q, idx);
-          });
-          htmlExamPractice += `</div>`;
-        }
-        // 2. Lessons with ONLY Section A (Lessons 1, 5, 9, 13):
-        else if (secAQuestions.length > 0) {
-          htmlExamPractice += `
-            <div class="exam-section-wrapper exam-section-a-wrapper" style="margin-bottom: 20px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">
-                <span style="font-weight: 800; font-size: 0.95rem; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px;">
-                  <i class="fa-solid fa-file-pen" style="margin-right: 6px; color: #2563eb;"></i> Pearson Edexcel Paper 3 &bull; Section A: Historical Explanation &amp; Inference
-                </span>
-                <span style="font-size: 0.76rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px;">
-                  Questions 1 &amp; 2
-                </span>
-              </div>
-          `;
-          if (epStimulus.length > 0) {
-            htmlExamPractice += `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">`;
-            epStimulus.forEach((stim, sIdx) => {
-              htmlExamPractice += renderSingleStimulus(stim, sIdx);
-            });
-            htmlExamPractice += `</div>`;
-          }
-          secAQuestions.forEach(({ q, idx }) => {
-            htmlExamPractice += renderQuestion(q, idx);
-          });
-          htmlExamPractice += `</div>`;
-        }
-        // 3. Lessons with ONLY Section B (Lessons 3, 4, 7, 8, 11, 12, 15, 16):
-        else {
-          const isInterpUnit = epStimulus.some((s) =>
-            /Interpretation/i.test(typeof s === 'string' ? s : s.title || ''),
-          );
-          const secTitle = isInterpUnit
-            ? 'Section B: Historiographical Interpretations'
-            : 'Section B: Historical Enquiry & Source Utility';
-          const hasQ3bc = secBQuestions.some(
-            ({ q }) =>
-              /3\(b\)|3\(c\)|difference|reason/i.test(q.type || '') ||
-              /difference|reason/i.test(q.question || ''),
-          );
-          const hasQ3d = secBQuestions.some(
-            ({ q }) =>
-              /verdict|3\(d\)/i.test(q.type || '') ||
-              /how far do you agree/i.test(q.question || ''),
-          );
-          let secBadge = 'Question 3(a)';
-          if (hasQ3bc && hasQ3d) {
-            secBadge = 'Questions 3(b) & 3(d)';
-          } else if (hasQ3bc) {
-            secBadge = 'Questions 3(b) & 3(c)';
-          } else if (hasQ3d) {
-            secBadge = 'Question 3(d)';
-          }
-          htmlExamPractice += `
-            <div class="exam-section-wrapper exam-section-b-wrapper" style="margin-bottom: 20px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">
-                <span style="font-weight: 800; font-size: 0.95rem; color: #9a3412; text-transform: uppercase; letter-spacing: 0.5px;">
-                  <i class="fa-solid fa-box-archive" style="margin-right: 6px; color: #ea580c;"></i> Pearson Edexcel Paper 3 &bull; ${secTitle}
-                </span>
-                <span style="font-size: 0.76rem; font-weight: 700; color: #9a3412; background: #fff7ed; border: 1px solid #fed7aa; padding: 2px 8px; border-radius: 4px;">
-                  ${secBadge}
-                </span>
-              </div>
-          `;
-          if (epStimulus.length > 0) {
-            htmlExamPractice += `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;">`;
-            epStimulus.forEach((stim, sIdx) => {
-              htmlExamPractice += renderSingleStimulus(stim, sIdx);
-            });
-            htmlExamPractice += `</div>`;
-          }
-          secBQuestions.forEach(({ q, idx }) => {
-            htmlExamPractice += renderQuestion(q, idx);
-          });
-          htmlExamPractice += `</div>`;
-        }
-        htmlExamPractice += `</div>`;
-      } else {
-        if (lesson.exam_practice.sources && lesson.exam_practice.sources.length > 0) {
-          htmlExamPractice += `<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 20px;">`;
-          lesson.exam_practice.sources.forEach((src, sIdx) => {
-            htmlExamPractice += `
-              <div class="archival-source-box" style="margin-bottom: 0; background: #fffcf8; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px 18px;">
-                <div class="archival-source-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px;">
-                  <span class="archival-meta-tag" style="font-weight: 700; color: #1e3a8a; font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">${src.id || 'Source ' + String.fromCharCode(65 + sIdx)}</span>
-                  <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.75rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">ARCHIVAL RECORD</span>
-                </div>
-                <div class="archival-source-body" style="font-family: Georgia, 'Playfair Display', serif; font-size: 0.95rem; line-height: 1.6; color: #1e293b; margin-bottom: 10px; font-style: italic;">
-                  "${src.text || src.content || ''}"
-                </div>
-                <div class="archival-citation-footer" style="font-size: 0.82rem; color: #475569; border-top: 1px solid #e2e8f0; padding-top: 8px; line-height: 1.4;">
-                  <div><strong>Provenance:</strong> ${src.provenance || ''}</div>
-                  ${src.provenance_clue ? `<div style="margin-top: 4px; color: #b45309; font-style: italic;"><strong>Provenance Clue:</strong> ${src.provenance_clue}</div>` : ''}
-                </div>
-              </div>
-            `;
-          });
-          htmlExamPractice += `</div>`;
-        }
+      htmlExamPractice = htmlExamPractice.replace(
+        '__WB_COUNT_PILLS_PLACEHOLDER__',
+        countPillsHtml,
+      );
 
-        if (epStimulus.length > 0) {
-          htmlExamPractice += `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 22px;">`;
-          epStimulus.forEach((stim, sIdx) => {
-            htmlExamPractice += renderSingleStimulus(stim, sIdx);
-          });
-          htmlExamPractice += `</div>`;
-        }
+      greenQuestionEntries.forEach(({ q, qIdx, meta }) => {
+        htmlExamPractice += renderQuestion(q, qIdx, meta);
+      });
+      blueQuestionEntries.forEach(({ q, qIdx, meta }) => {
+        htmlExamPractice += renderQuestion(q, qIdx, meta);
+      });
 
-        if (epQuestions.length > 0) {
-          const inWbQuestions = [];
-          const digExtQuestions = [];
-          epQuestions.forEach((q, qIdx) => {
-            const meta = getWorkbookTaskMeta(
-              unitId,
-              lesson.id,
-              q,
-              q.question || q.prompt || '',
-              qIdx,
-              lesson,
-            );
-            if (meta && meta.inWorkbook === false) {
-              digExtQuestions.push({ q, qIdx });
-            } else {
-              inWbQuestions.push({ q, qIdx });
-            }
-          });
-
-          inWbQuestions.forEach(({ q, qIdx }) => {
-            htmlExamPractice += renderQuestion(q, qIdx);
-          });
-          digExtQuestions.forEach(({ q, qIdx }) => {
-            htmlExamPractice += renderQuestion(q, qIdx);
-          });
-        }
-        htmlExamPractice += `</div>`;
-      }
+      htmlExamPractice += `</div></div>`;
     }
   }
 
@@ -11409,22 +12036,8 @@ export function renderLesson(lesson) {
     (!isKs3 && lesson.extended && lesson.extended.question) ||
     extractedExamTasks.length > 0
   ) {
-    let gcseHtml = `
-        <div class="phase-card">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
-            <div>
-              <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #b45309; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
-                <span style="background: #fef3c7; color: #92400e; padding: 1.5px 7px; border-radius: 4px; font-weight: 800;"><i class="fa-solid fa-book-open" style="margin-right: 4px;"></i> PUPIL WORKBOOK COMPANION</span>
-                <span style="color: #94a3b8;">&bull;</span>
-                <span>RIGHT-HAND SPREAD (RECTO)</span>
-              </div>
-              <div class="phase-title" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0; color: #b45309;">${lesson.extended && lesson.extended.title ? lesson.extended.title : 'Pupil Workbook Activity &bull; GCSE Assessment Practice'}</div>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              <button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="reveal-all-models"><i class="fa-solid fa-magnifying-glass"></i> Reveal Models</button>
-            </div>
-          </div>
-      `;
+    const gcseStripItems = [];
+    let gcseHtml = '';
 
     if (lesson.extended && lesson.extended.question) {
       let hintsHtml = '';
@@ -11555,9 +12168,17 @@ export function renderLesson(lesson) {
         }
       }
 
-      gcseHtml += `
-          <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-            <div style="font-weight: 700; margin-bottom: 12px; font-size: 1.1rem; color: #0f172a;">
+      gcseStripItems.push({
+        tariffTag:
+          lesson.extended.title && /map\s*task/i.test(lesson.extended.title)
+            ? 'Map Task 1'
+            : 'Task 1',
+        stemPreview: cleanStemForStripSummary(
+          lesson.extended.title || lesson.extended.question || 'Workbook Activity 1',
+        ),
+        bodyHtml: `
+          <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 0;">
+            <div style="font-weight: 700; margin-bottom: 12px; font-size: 1.06rem; color: #0f172a;">
               ${lesson.extended.qNum ? `Q${lesson.extended.qNum}. ` : ''}${formatQuestion(lesson.extended.question, !lesson.extended.qNum)}
               <span style="display: inline-flex; vertical-align: middle; gap: 6px;">
                 ${lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="extended-model-${lesson.id}"><i class="fa-solid fa-eye"></i></button>` : ''}
@@ -11572,7 +12193,7 @@ export function renderLesson(lesson) {
             ${hintsHtml}
             ${lesson.extended.answer_image
           ? `
-              <div id="extended-map-answer-${lesson.id}" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
+              <div id="extended-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                   <strong style="color: #166534; font-size: 1.05rem;"><i class="fa-solid fa-circle-check"></i> Authoritative Reference Map (CIA World Factbook):</strong>
                   <a href="https://www.google.com/maps/@31.2,35.2,6z" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #166534; font-weight: 600; text-decoration: none; background: #dcfce7; padding: 3px 8px; border-radius: 4px; border: 1px solid #86efac;">
@@ -11603,10 +12224,11 @@ export function renderLesson(lesson) {
             `
           : ''
         }
-            <textarea class="student-answer-input" style="min-height: 200px;" placeholder="Write your extended response here..." oninput="window.updateProgress()"></textarea>
+            <textarea class="student-answer-input" style="min-height: 160px;" placeholder="Write your extended response here..." oninput="window.updateProgress && window.updateProgress()"></textarea>
             ${lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer ? `<div id="extended-model-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 15px;">${formatBold(lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer)}</div>` : ''}
           </div>
-        `;
+        `,
+      });
     }
 
     if (lesson.secondary_map) {
@@ -11620,10 +12242,13 @@ export function renderLesson(lesson) {
       if (sm.hints && sm.hints.length > 0) {
         smHints = `<div style="margin-top: 15px; padding: 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px;"><strong style="color: #d97706;">Hints:</strong><ul style="margin: 5px 0 0 0; padding-left: 20px; color: #92400e;">${sm.hints.map((h) => `<li>${formatBold(h)}</li>`).join('')}</ul></div>`;
       }
-      gcseHtml += `
-        <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 20px; margin-top: 25px;">
+      gcseStripItems.push({
+        tariffTag: 'Map Task 2',
+        stemPreview: cleanStemForStripSummary(sm.title || sm.instructions || sm.question || 'Map Task 2'),
+        bodyHtml: `
+        <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 0;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-            <div style="font-weight: 700; font-size: 1.15rem; color: #1e3a8a;">
+            <div style="font-weight: 700; font-size: 1.08rem; color: #1e3a8a;">
               ${sm.title}
             </div>
             ${sm.answer_image ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="secondary-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
@@ -11640,7 +12265,7 @@ export function renderLesson(lesson) {
           ${smHints}
           ${sm.answer_image
           ? `
-            <div id="secondary-map-answer-${lesson.id}" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
+            <div id="secondary-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                 <strong style="color: #166534; font-size: 1rem;"><i class="fa-solid fa-circle-check"></i> Model Answer & Reference Maps</strong>
               </div>
@@ -11672,7 +12297,8 @@ export function renderLesson(lesson) {
           : ''
         }
         </div>
-      `;
+      `,
+      });
     }
 
     if (shouldRenderGcseTask) {
@@ -12054,8 +12680,80 @@ export function renderLesson(lesson) {
           `;
       });
     }
-    gcseHtml += `</div>`;
-    html += gcseHtml;
+    if (gcseHtml.trim()) {
+      gcseStripItems.push({
+        tariffTag: `Task ${gcseStripItems.length + 1}`,
+        stemPreview: cleanStemForStripSummary(
+          lesson.gcse_task?.question ||
+            lesson.gcse_task?.prompt ||
+            lesson.gcse_task?.topic ||
+            extractedExamTasks[0]?.question ||
+            'Workbook Assessment Practice',
+        ),
+        bodyHtml: gcseHtml,
+      });
+    }
+
+    if (gcseStripItems.length > 0) {
+      const stationHeading =
+        lesson.extended && lesson.extended.title && /map\s*task/i.test(lesson.extended.title)
+          ? 'Pupil Workbook Activities &bull; Geographical Foundation'
+          : 'Pupil Workbook Activities &bull; Assessment Practice';
+
+      html += `
+        ${getWbThinStripStylesHTML()}
+        <div class="wb-unified-station phase-card">
+          <div class="wb-station-header">
+            <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto;">
+              <div style="width: 34px; height: 34px; border-radius: 8px; background: #10b981; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 0.98rem; flex-shrink: 0; box-shadow: 0 2px 5px rgba(16, 185, 129, 0.25);">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div style="min-width: 0;">
+                <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 800; color: #0f172a; line-height: 1.2;">${stationHeading}</div>
+                <div style="font-size: 0.73rem; color: #64748b; font-weight: 600;">Select any workbook strip below to open interactive maps, writing space &amp; reference keys</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex-shrink: 0;">
+              <span class="wb-origin-pill wb-origin-green">
+                <i class="fa-solid fa-book-open"></i> ${gcseStripItems.length} in Workbook
+              </span>
+              <button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="reveal-all-models" style="padding: 5px 10px; font-size: 0.78rem;"><i class="fa-solid fa-magnifying-glass"></i> Reveal Models</button>
+              <button type="button" onclick="window.toggleAllWorkbookStrips && window.toggleAllWorkbookStrips(this)" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 6px; padding: 5px 10px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                <i class="fa-solid fa-expand"></i> Expand All
+              </button>
+            </div>
+          </div>
+          <div class="wb-strips-stack">
+            ${gcseStripItems
+              .map(
+                (st) => `
+              <details class="wb-question-strip wb-strip-green">
+                <summary>
+                  <div class="wb-strip-left">
+                    <span class="wb-origin-pill wb-origin-green">
+                      <i class="fa-solid fa-book-open"></i> Workbook
+                    </span>
+                    <span class="wb-tariff-pill">${st.tariffTag}</span>
+                    <span class="wb-stem-preview">${st.stemPreview}</span>
+                  </div>
+                  <div class="wb-strip-right">
+                    <span class="wb-strip-toggle-txt">
+                      <span class="wb-lbl-closed">Open</span><span class="wb-lbl-open">Close</span>
+                      <i class="fa-solid fa-chevron-down wb-strip-caret"></i>
+                    </span>
+                  </div>
+                </summary>
+                <div class="wb-strip-body">
+                  ${st.bodyHtml}
+                </div>
+              </details>
+            `,
+              )
+              .join('')}
+          </div>
+        </div>
+      `;
+    }
   }
 
   // Extension Task
@@ -12097,7 +12795,6 @@ export function renderLesson(lesson) {
   // --- EMBEDDED CHECK & CONSOLIDATE STATION (Quick Check 5 Qs / Deep Challenge 20 Qs / Vocab Flip Cards) ---
   if (appStore.state.activeUnitData.type !== 'trip') {
     html += renderConsolidateStationHTML(lesson);
-    html += renderLessonExamPracticeHTML(unitId, lesson);
   }
 
   // Note: Exit Ticket is now unified directly into the Consolidate Station terminal above.

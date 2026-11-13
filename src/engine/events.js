@@ -851,22 +851,36 @@ export function initEventDelegation() {
         break;
       }
 
-      case 'reveal-all-models':
-        target
-          .closest('.phase-card')
-          .querySelectorAll('.model-box, .answer')
-          .forEach((c) => {
-            const isCurrentlyHidden =
-              window.getComputedStyle(c).display === 'none' || c.style.display === 'none';
-            if (isCurrentlyHidden) {
-              c.classList.add('revealed');
-              c.style.display = 'block';
-            } else {
-              c.classList.remove('revealed');
-              c.style.display = 'none';
-            }
-          });
+      case 'reveal-all-models': {
+        const cardContainer = target.closest('.wb-unified-station') || target.closest('.phase-card');
+        if (!cardContainer) break;
+        const modelBoxes = Array.from(cardContainer.querySelectorAll('.model-box, .answer'));
+        const anyHidden = modelBoxes.some(
+          (c) => window.getComputedStyle(c).display === 'none' || c.style.display === 'none',
+        );
+        if (anyHidden) {
+          cardContainer
+            .querySelectorAll('details.wb-question-strip, details.model-paragraph-reveal')
+            .forEach((d) => {
+              d.open = true;
+            });
+        }
+        modelBoxes.forEach((c) => {
+          if (anyHidden) {
+            c.classList.add('revealed');
+            c.style.display = 'block';
+          } else {
+            c.classList.remove('revealed');
+            c.style.display = 'none';
+          }
+        });
+        cardContainer.querySelectorAll('[id^="exam-model-btn-"]').forEach((mBtn) => {
+          mBtn.innerHTML = anyHidden
+            ? '<i class="fa-regular fa-eye-slash" style="color: #16a34a;"></i> Hide Model Answer'
+            : '<i class="fa-regular fa-eye" style="color: #16a34a;"></i> Reveal Model Answer &amp; Mark Scheme';
+        });
         break;
+      }
 
       case 'reveal-hinge':
         const hingeContent = document.getElementById(target.dataset.target);

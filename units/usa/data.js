@@ -928,25 +928,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the position of Black Americans in the Southern states in the early 1950s? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From an NAACP legal report written by Thurgood Marshall in 1953, detailing court actions against segregated public facilities.",
-          "content": "\"We are taking our cases directly to the federal courts, challenging the legal base of Jim Crow. Southern registrars and school boards claim state sovereignty shields them, but the Constitution guarantees equal protection. Through litigation, we are showing that separate facilities are never equal.\""
-        },
-        "source_b": {
-          "provenance": "Source B: A photograph of a segregation sign over a terminal entrance, taken in the Southern United States in the early 1950s.",
-          "content": "/units/usa/assets/sources/colored-waiting-room-sign.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for demonstrating the legal litigation strategy of the NAACP. The content outlines Marshall's defense of the Constitution's equal protection clause to challenge the legal basis of Jim Crow. This content is highly useful because it is supported by my knowledge that <strong>the NAACP Legal Defense Fund, led by Thurgood Marshall, spent the early 1950s systematically challenging segregation in courts, winning key rulings like Sweatt v. Painter in 1950</strong>, which confirms that their legal strategy successfully targeted segregation's constitutional framework. <em>The provenance makes the source extremely useful because it is an internal report written in 1953 by Thurgood Marshall himself, providing a reliable, direct account of NAACP legal tactics and their legal confidence just before their major victories. However, it is limited because it represents a top-down legal perspective, failing to show the daily experiences of ordinary Black citizens on the ground.</em>\n\nSource B is highly useful for demonstrating the systemic, official nature of segregation in public facilities in the 1950s. The photograph shows a wooden sign reading \"COLORED WAITING ROOM\" hanging above a public entrance. This content's utility is supported by my knowledge that <strong>Jim Crow laws in the Southern states officially enforced segregation in transit, waiting rooms, and restaurants, creating separate and unequal conditions</strong>, which confirms that the sign is an accurate representation of how segregation was physically and legally enforced in Southern public spaces. <em>The provenance, taken in the Southern United States in the early 1950s, makes the source extremely useful because it provides direct, unedited evidence of state-sanctioned segregation infrastructure. However, it is less useful because it only shows the sign itself, failing to document the personal experiences of the Black passengers who suffered under segregation or the active resistance against it.</em>"
-      },
       "pair_share": {
         "prompt": "How does John Lewis's childhood experience illustrate the difference between the physical enforcement of segregation and its psychological impact on young Black Americans?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -2240,25 +2221,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the levels of opposition to integration at Little Rock Central High School in 1957? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From a photograph of white protestors gathered outside Central High School in September 1957.",
-          "content": "/units/usa/assets/sources/little-rock-protest-1957.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing soldiers of the 101st Airborne Division guarding a station wagon escorting Black students at Central High School, Little Rock, September 1957.",
-          "content": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the intense social opposition and grassroots white resistance to school integration. The photograph depicts an \"angry white crowd\" of protesters carrying signs reading \"RACE MIXING IS COMMUNISM\" and \"STOP THE RACE MIXING\". This content is highly useful because it is supported by my contextual knowledge that <strong>when the Little Rock Nine attempted to integrate Central High School in September 1957, they faced violent, threatening white mobs who surrounded the school</strong>, which confirms that the source is an extremely useful record of the deep-seated racial hostility and active resistance to integration in the South. <em>The provenance, taken outside Central High in September 1957, makes the source highly useful because it captures the raw, authentic hostility of the segregationists at the exact moment of the crisis. However, it is less useful because it only represents the vocal extremist protesters, failing to show the moderate white citizens or the experiences of the Black students inside the school.</em>\n\nSource B is highly useful for showing the scale of the state and military conflict required to override this local segregationist opposition. The photograph shows \"soldiers of the 101st Airborne Division in a military jeep guarding a station wagon\" as Black students enter it. This content's usefulness is supported by my knowledge that <strong>Governor Orval Faubus used the National Guard to block the Black students, forcing President Eisenhower to send 1,000 soldiers of the 101st Airborne Division to enforce integration</strong>, which explains why such heavy military presence was necessary to protect the students. <em>The provenance of late September 1957 makes the source extremely useful because it documents the historic federal intervention needed to uphold the Constitution. However, it is slightly less useful because it portrays a controlled escort moment, which hides the constant, daily psychological harassment the students endured inside the classrooms.</em>"
-      },
       "pair_share": {
         "prompt": "Elizabeth Eckford was just 15 years old. Why do you think school desegregation provoked such intense personal anger from ordinary white citizens?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -3550,25 +3512,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the methods and leadership of the Montgomery Bus Boycott? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: A photograph of Martin Luther King Jr. addressing boycotters in a crowded church during the Montgomery Bus Boycott, 1956.",
-          "content": "/units/usa/assets/sources/mlk_boycott_mass_meeting_1956.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing Rosa Parks being fingerprinted by police in Montgomery, Alabama, February 1956.",
-          "content": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the spiritual leadership and religious solidarity that sustained the boycott. The photograph shows Martin Luther King Jr. \"speaking passionately from a pulpit\" to a packed church of Black citizens. This content is highly useful because it is supported by my contextual knowledge that <strong>the Montgomery Improvement Association (MIA) held regular mass meetings in local churches to coordinate strategy, maintain non-violent discipline, and raise funds for the boycott</strong>, which confirms that the source is an accurate representation of the central role the church played as the movement's organizational and spiritual hub. <em>The provenance of 1956 makes the source highly useful because it captures the central role of the Black church during the boycott. However, it is less useful because it focuses solely on Dr. King's charismatic leadership, omitting the crucial organizing work of figures like Jo Ann Robinson and the Women's Political Council.</em>\n\nSource B is highly useful for showing the direct police criminalization of peaceful protestors and the individual courage of boycott leaders. The photograph depicts \"Rosa Parks standing calmly\" while a police officer in uniform applies ink to her fingers for fingerprinting. This content is highly useful because it is supported by my contextual knowledge that <strong>the local authorities in Montgomery attempted to break the boycott by indicting and arresting over 80 leaders, including Rosa Parks and MLK, under an old anti-conspiracy law in February 1956</strong>, which confirms that the photograph is an accurate representation of the state's efforts to legally harass and intimidate civil rights activists. <em>The provenance, taken on 22 February 1956 during the height of the Montgomery Bus Boycott, strengthens its utility because it captures a real-time record of state-level intimidation. However, it is slightly limited because it is a staged publicity photo taken for the press, failing to represent the daily grassroots efforts of thousands of ordinary boycotters who walked or carpooled.</em>"
-      },
       "pair_share": {
         "prompt": "Rosa Parks's arrest is famous, but Jo Ann Robinson's account shows the massive organization behind the scenes. How does this source challenge the idea that the boycott was just a spontaneous event?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -4919,16 +4862,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 12-Mark Explanation Assessment",
-        "question": "Explain why there was widespread Southern white opposition to desegregation in the years 1954–57. (12 marks)\n\nYou may use the following in your answer:\n- The Ku Klux Klan (KKK)\n- The 'Southern Manifesto' (1956)\nYou must also use information of your own.",
-        "hints": [
-          "Explain three distinct, fully developed causes using PEEL paragraphs (Point, Evidence, Explanation, Link).",
-          "Analyze political resistance (Southern Manifesto / Dixiecrats), economic coercion (White Citizens' Councils), and violent intimidation (KKK / murder of Emmett Till).",
-          "Ensure you directly explain WHY each factor motivated Southern white resistance to federal authority."
-        ],
-        "model": "<h3>Model Answer (Level 4 — 12/12 marks):</h3>\n<p><strong>One major reason for widespread Southern white opposition to desegregation was organized political resistance led by Southern elected officials, epitomized by the 1956 'Southern Manifesto'.</strong> In 1956, 101 Southern congressmen and senators signed the manifesto, openly condemning the Supreme Court's <em>Brown v. Board of Education</em> decision as a 'clear abuse of judicial power' and pledging to use 'all lawful means' to resist integration. Southern state governments, led by 'Dixiecrats', embraced the strategy of 'Massive Resistance', passing state laws to cut funding from integrated schools and even shutting down public schools entirely (as Governor Faubus did in Little Rock during the 'Lost Year' of 1958–59). This political leadership legitimized popular defiance by framing segregation as a constitutional defense of 'states' rights' against federal tyranny, encouraging ordinary white citizens to disobey federal court orders.</p>\n<p><strong>A second crucial reason was the rise of middle-class economic coercion through White Citizens' Councils.</strong> Formed in Mississippi in 1954 following the <em>Brown</em> ruling, the White Citizens' Councils grew to over 250,000 members across the South, attracting doctors, lawyers, bankers, and business owners who branded themselves as 'respectable' segregationists. Rather than using overt physical violence, the Councils used devastating economic warfare against Black activists and integration supporters. Black parents who signed petitions to integrate local schools had their mortgages foreclosed, bank loans canceled, and employment terminated, while Black sharecroppers were evicted from white-owned land. This systematic economic terror made supporting desegregation financially ruinous for Black families, effectively paralyzing local integration efforts without needing open street violence.</p>\n<p><strong>Finally, extreme racial opposition was enforced through violent domestic terrorism and intimidation by the Ku Klux Klan (KKK).</strong> The <em>Brown</em> decision triggered a violent resurgence of the KKK across the Deep South, marked by cross burnings, firebombings of Black churches and homes, and brutal lynchings. The horrific murder of 14-year-old Emmett Till in Mississippi in August 1955 and the subsequent acquittal of his white murderers by an all-white jury demonstrated that white violence was protected by the Southern legal system. This unchecked brutality was designed to terrify Black communities into submission and demonstrate that any challenge to the racial hierarchy would carry fatal consequences. Therefore, Southern white opposition succeeded in delaying integration through a coordinated combination of political obstruction, economic ruin, and physical terror.</p>"
-      },
       "pair_share": {
         "prompt": "Why was Mose Wright's action in court—openly accusing and pointing at white men in Mississippi—considered a revolutionary act of bravery in 1955?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -6290,25 +6223,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the tactics of direct action and the response of Southern white opposition? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: A photograph of the preserved Greensboro Woolworth's lunch counter and stools on display as an historical exhibit at the Smithsonian National Museum of American History.",
-          "content": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing James Meredith walking to class at the University of Mississippi, October 1962.",
-          "content": "/units/usa/assets/sources/james-meredith-walking.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the non-violent direct action tactics used by student activists to challenge retail segregation. The photograph shows the \"empty, preserved section of the Greensboro Woolworth's lunch counter and four stools\" on display inside the Smithsonian Museum. This content is highly useful because it is supported by my knowledge that <strong>the Greensboro sit-in of February 1960 at Woolworth's was a turning point that sparked sit-ins across the South, and this preserved counter stands as a significant material artifact representing that struggle</strong>, which confirms that the preserved counter stands as a significant material artifact representing that struggle. <em>The provenance, showing the counter preserved at the Smithsonian, makes the source highly useful as it demonstrates the national historical significance and public recognition of the sit-ins. However, it is limited because it shows an empty museum exhibit rather than the actual 1960 protest, failing to capture the student activists, the hostile white crowds, or the harassment they endured.</em>\n\nSource B is highly useful for showing the extreme level of state resistance to university integration and the federal intervention needed to override it. The photograph depicts James Meredith walking \"flanked by several tall, serious US Marshals\" wearing helmets. This content's utility is supported by my knowledge that <strong>Governor Ross Barnett defied federal orders, prompting President Kennedy to send 30,000 troops and US Marshals to force the integration of the University of Mississippi in October 1962, sparking riots that killed two people</strong>, which explains the military necessity of using armed guards to protect a single Black student. <em>The provenance of October 1962 makes the source extremely useful because it visually documents the armed federal power needed to protect Black rights. However, it is less useful because it depicts a controlled walk, failing to capture the chaos and violence of the Ole Miss riot itself.</em>"
-      },
       "pair_share": {
         "prompt": "How can sitting quietly at a lunch counter be a powerful form of protest? Why was the police officer unable to stop them?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -7593,25 +7507,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the impact of non-violent campaigns on federal civil rights legislation in the 1960s? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From a photograph of Martin Luther King Jr. addressing the March on Washington from the Lincoln Memorial, 28 August 1963.",
-          "content": "/units/usa/assets/sources/mlk-waving-washington-1963.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing President Johnson signing the Voting Rights Act into law, 6 August 1965.",
-          "content": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the massive scale, unity, and public impact of non-violent civil rights campaigns. The photograph depicts Martin Luther King Jr. \"looking out over a massive crowd of over 250,000 demonstrators\" surrounding the reflecting pool. This content's utility is supported by my knowledge that <strong>the March on Washington in August 1963 was a key moment of multi-racial unity that put pressure on the Kennedy administration to pass civil rights laws</strong>, which confirms the effectiveness of non-violent mobilization in capturing national attention. <em>The provenance of 28 August 1963 makes the source highly useful because it captures the peak of the movement's public mobilization. However, it is less useful because it highlights a single speech, obscuring the deep strategic disagreements between SNCC, SCLC, and other coalition members behind the scenes.</em>\n\nSource B is highly useful for showing the political and legislative outcomes of grassroots non-violent campaigns. The photograph shows President Johnson \"handing a commemorative pen to Martin Luther King Jr.\" and other leaders at the desk. This content is highly useful because it is supported by my knowledge that <strong>the legislative alliance between LBJ and civil rights leaders led to the passage of the Voting Rights Act of 1965, which banned literacy tests and authorized federal registrars</strong>, which proves that grassroots moral pressure successfully forced federal reform. <em>The provenance of 6 August 1965 makes the source extremely useful because it documents the formal signing of this landmark act. However, it is less useful because it portrays a harmonious political consensus, hiding the intense pressure, political caution, and FBI surveillance that Johnson's administration directed at civil rights leaders.</em>"
-      },
       "pair_share": {
         "prompt": "Given the extreme danger, why do you think civil rights leaders allowed children to march? How did the public reaction to this violence change federal policy?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -8902,25 +8797,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the shift from non-violence to Black nationalism and self-defense in the mid-1960s? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: A photograph of Malcolm X holding a newspaper showing a headline about self-defense, 1964.",
-          "content": "/units/usa/assets/sources/malcolm-x-newspaper.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing members of the Black Panther Party marching in uniform, Oakland, California, 1968.",
-          "content": "/units/usa/assets/sources/black-panthers-marching.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for understanding the intellectual shift toward self-defense and militancy. The photograph shows Malcolm X holding a newspaper with the prominent headline \"OUR FREEDOM CAN'T WAIT!\". This content is highly useful because it is supported by my knowledge that <strong>Malcolm X rejected SCLC's non-violent integration, advocating Black nationalism, economic self-reliance, and self-defense 'by any means necessary' to appeal to Northern urban Black communities</strong>, which confirms that the source is an accurate representation of his teachings and his rejection of MLK's non-violent approach. <em>The provenance of 1964 makes the source highly useful because it documents how Malcolm X used print media to directly challenge MLK's traditional non-violent approach. However, it is less useful because it is a posed, strategic media photograph designed to project militancy, rather than showing Malcolm's complex intellectual evolution.</em>\n\nSource B is highly useful for showing how Black Power and militancy were institutionalized by student groups in the late 1960s. The photograph depicts a \"column of Black Panther members wearing black leather jackets, black berets\" marching in formation. This content's usefulness is supported by my knowledge that <strong>the Black Panther Party, founded in 1966 in Oakland, California, rejected integration and police brutality, calling for armed patrols and community self-reliance</strong>, which validates the source as a visual representation of their militant discipline and rejection of pacifism. <em>The provenance of 1968 makes the source extremely useful because it visually captures the disciplined, militaristic style of Black Power. However, it is less useful because it focuses on their armed, militant appearance, ignoring their extensive community welfare programs, such as free breakfasts for children.</em>"
-      },
       "pair_share": {
         "prompt": "How did the Black Power philosophy shift the goal of the movement from 'integration' to 'self-determination'? What were the potential benefits and risks of this new approach?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -10290,16 +10166,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 12-Mark Explanation Assessment",
-        "question": "Explain why violent riots broke out in American cities between 1965 and 1968. (12 marks)\n\nYou may use the following in your answer:\n- The Watts Riot (1965)\n- The Kerner Commission Report (1968)\nYou must also use information of your own.",
-        "hints": [
-          "Focus on systemic causes rather than just immediate triggers.",
-          "Contrast de jure segregation in the South with de facto economic and housing segregation in Northern ghettos.",
-          "Examine police brutality, economic despair, and the catalytic shock of Martin Luther King Jr.'s assassination."
-        ],
-        "model": "<h3>Model Answer (Level 4 — 12/12 marks):</h3>\n<p><strong>One fundamental reason for the outbreak of urban riots between 1965 and 1968 was severe de facto segregation and economic deprivation in Northern and Western inner-city ghettos.</strong> While federal legislation like the 1964 Civil Rights Act outlawed legal (de jure) segregation in the South, it did nothing to address economic hardship in northern cities like Los Angeles, Chicago, and Detroit. Black Americans were trapped in substandard inner-city housing due to discriminatory practices like 'redlining' by banks. Unemployment among young Black urban men was up to three times higher than national averages, and ghetto schools were chronically underfunded. This created an atmosphere of deep despair, as Black urban populations felt excluded from the American economic dream despite civil rights victories in the South.</p>\n<p><strong>A second direct cause was pervasive police brutality and racial friction with virtually all-white police forces.</strong> In August 1965, the arrest of Marquette Frye in the Watts district of Los Angeles by California Highway Patrol sparked six days of rioting that left 34 dead and over 1,000 injured. Similar confrontations ignited riots in Newark and Detroit in 1967. The federal Kerner Commission Report, published in 1968 by President Johnson's National Advisory Commission on Civil Disorders, famously concluded that America was 'moving toward two societies, one black, one white—separate and unequal.' The Kerner Report explicitly identified aggressive, heavy-handed policing in Black neighborhoods as the immediate spark that detonated urban anger.</p>\n<p><strong>Finally, urban violence was catalyzed by rising frustration with the limitations of non-violence and the catastrophic shock of Martin Luther King Jr.'s assassination in April 1968.</strong> Many young urban Black Americans felt that the SCLC's non-violent Christian marches had failed to improve the material conditions of the northern working class, leading them to embrace more assertive Black Power rhetoric. When King was assassinated on April 4, 1968, in Memphis, the devastating news triggered violent uprisings in more than 100 American cities within hours, including Washington D.C., Chicago, and Baltimore. The assassination destroyed faith in peaceful reform among millions of Black Americans, unleashing a wave of grief and fury that required tens of thousands of federal troops to suppress. Therefore, systemic economic exclusion, discriminatory policing, and the death of non-violent leadership combined to ignite the urban rebellions of the late 1960s.</p>"
-      },
       "pair_share": {
         "prompt": "According to this resident, why did federal laws like the Civil Rights Act fail to prevent urban riots? What does this tell us about the limits of legal rights when economic misery remains?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -11697,25 +11563,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the unpopularity and collapse of Ngo Dinh Diem's regime in South Vietnam? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: A photograph showing President Ngo Dinh Diem reviewing a military parade in Saigon, October 1957.",
-          "content": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: A photograph of Buddhist demonstrations in Saigon against President Diem's government, June 1963.",
-          "content": "/units/usa/assets/sources/buddhist-protests-1963.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing President Diem's authoritarian methods and his reliance on military forces to maintain power. The photograph shows President Diem reviewing rows of South Vietnamese soldiers in Saigon carrying US-supplied weapons. This content is highly useful because it is supported by my knowledge that <strong>the US supported Diem's anti-communist regime with massive military aid and advisors from 1955, despite his corruption, nepotism, and lack of peasant support</strong>, which explains the militaristic nature of Diem's control. <em>The provenance of October 1957 makes the source highly useful because it illustrates how the regime projected military authority to hide its internal weaknesses. However, it is less useful because it shows a highly staged state event in Saigon, concealing the lack of peasant support and the growing communist insurgency in the countryside.</em>\n\nSource B is highly useful for showing the scale of religious opposition that undermined Diem's regime. The photograph shows South Vietnamese armed forces confronting Buddhist protestors and attacking a pagoda during the Buddhist Crisis of 1963. This content's utility is supported by my knowledge that <strong>Diem's favoritism toward the Catholic minority and suppression of the Buddhist majority sparked the Buddhist Crisis of 1963, including self-immolations that destroyed the regime's international legitimacy</strong>, which confirms that the source represents the broad civil opposition that made the regime collapse-prone. <em>The provenance of June 1963 makes the source extremely useful because it captures the public crisis that forced the US to support a military coup against Diem in November 1963. However, it is less useful because it only captures the confrontation at the pagoda, omitting the peaceful protests across the country.</em>"
-      },
       "pair_share": {
         "prompt": "What does this extreme act of protest reveal about the intensity of Buddhist opposition to Diem? How did this impact US support for Diem?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -13006,25 +12853,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the escalation of US involvement and the deployment of combat troops to Vietnam? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From a photograph of the destroyer USS Maddox sailing in the Gulf of Tonkin, August 1964.",
-          "content": "/units/usa/assets/sources/uss_maddox_dd731_underway.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph of US Marines landing at Da Nang beach, South Vietnam, 8 March 1965.",
-          "content": "/units/usa/assets/sources/marines_landing_beach_danang_1965.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the US naval presence that served as the trigger for direct combat escalation. The photograph shows the \"USS Maddox traveling through calm seas\" with gun turrets aimed toward the horizon. This content is highly useful because it is supported by my knowledge that <strong>the Gulf of Tonkin incidents of August 1964 led Congress to pass the Gulf of Tonkin Resolution, giving President Johnson a 'blank check' to escalate US military involvement</strong>, which confirms the naval buildup that preceded the congressional mandate. <em>The provenance of August 1964 makes the source highly useful because it documents the actual vessel involved in the clashes. However, it is less useful because it shows a calm, routine patrol, failing to clarify the disputed and confusing details of the attacks.</em>\n\nSource B is highly useful for showing the transition to full combat operations and the deployment of ground troops. The photograph shows US Marines of the 9th Marine Expeditionary Brigade marching ashore on Da Nang beach carrying full combat packs and rifles. This content's utility is supported by my knowledge that <strong>the landing of the 9th Marine Expeditionary Brigade in March 1965 marked the official start of the US ground war, with troop levels rising to 184,000 by the end of 1965</strong>, which confirms that the photograph captures the historic landing that marked the end of the advisory phase. <em>The provenance of 8 March 1965 makes the source extremely useful because it captures the historical moment of transition to direct combat. However, it is less useful because it captures the orderly arrival on the beach, hiding the hostile, muddy guerrilla warfare the Marines would soon face inland.</em>"
-      },
       "pair_share": {
         "prompt": "If the second Gulf of Tonkin attack was a 'ghost' event, how does this affect the moral and political justification for the US escalation of the war?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -14347,25 +14175,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the tactics used by the US military in the Vietnam War? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From a photograph showing a US soldier patrolling on foot in a swampy jungle, 1967.",
-          "content": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing US Air Force C-123 planes spraying defoliants over a forest, 1966.",
-          "content": "/units/usa/assets/sources/agent-orange-spraying-c123.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the tactical and physical challenges that US combat patrols faced. The photograph shows a US soldier \"wading waist-deep through muddy swamp water in dense jungle\" holding his rifle high. This content's utility is supported by my knowledge that <strong>US Search and Destroy tactics designed to find the Vietcong faced terrain problems and ambush vulnerability, as the Vietcong used booby traps and the jungle environment to neutralize US technology</strong>, which explains the physical and psychological exhaustion depicted. <em>The provenance of 1967 makes the source highly useful because it offers a realistic, gritty look at the brutal environmental conditions. However, it is less useful because it focuses on a single soldier's exhaustion, failing to show the high civilian casualties and destruction of villages that search-and-destroy missions often caused.</em>\n\nSource B is highly useful for showing the chemical warfare tactics used by the US to counter these environmental challenges. The photograph shows \"C-123 military transport planes... releasing thick white chemical trails of Agent Orange\" over dense forest. This content is highly useful because it is supported by my knowledge that <strong>Operation Ranch Hand sprayed millions of gallons of herbicides to strip jungle cover and destroy crops, which poisoned food supplies and alienated the peasant population</strong>, which confirms the systemic scale of environmental destruction that alienated the local population. <em>The provenance of 1966 makes the source extremely useful because it documents the systematic, industrial scale of chemical defoliation. However, it is less useful because it presents a clean, aerial view of the spraying, omitting the devastating health consequences, birth defects, and political backlash among Vietnamese peasants.</em>"
-      },
       "pair_share": {
         "prompt": "How did the Vietcong use the tunnels and hit-and-run tactics to render the US military's technological superiority ineffective?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -15737,25 +15546,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the effectiveness of Nixon's policy of Vietnamization? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From an official photograph of President Richard Nixon visiting US troops of the 1st Infantry Division at Di An, South Vietnam, July 1969.",
-          "content": "/units/usa/assets/sources/nixon-visiting-troops.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From an official US military photograph of South Vietnamese ARVN troops conducting an armed patrol during joint combat operations, 1967.",
-          "content": "/units/usa/assets/sources/arvn-troops-combat.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the public relations campaign used to justify Vietnamization. The photograph shows \"Nixon standing in a crowd of smiling US soldiers\" in combat uniforms. This content's utility is supported by my knowledge that <strong>President Nixon introduced 'Vietnamization' in 1969 to gradually withdraw US combat troops while shifting responsibility to the ARVN, seeking 'peace with honor' to satisfy the public</strong>, which explains the positive, supportive image projected by the President. <em>The provenance of July 1969 makes the source highly useful because it illustrates the presidential photo opportunity used to project troop support. However, it is less useful because it is a carefully managed event, masking the low morale, drug use, and growing anti-war sentiment among the soldiers in the field.</em>\n\nSource B is highly useful for showing that Vietnamization actually expanded the geographical scope of the war. The photograph shows \"ARVN soldiers running past a burning tank on a dirt road in Cambodia\" with helicopters overhead. This content is highly useful because it is supported by my knowledge that <strong>Nixon ordered the invasion of Cambodia in May 1970 to destroy communist sanctuaries and supply lines, which failed to secure South Vietnam and sparked massive protests at Kent State</strong>, which confirms that ARVN relied heavily on US air support and regional incursions rather than independent ground strength. <em>The provenance of May 1970 makes the source extremely useful because it shows ARVN troops in active combat. However, it is less useful because it portrays a successful tactical advance, failing to show the strategic failure of the campaign or the ARVN's heavy reliance on US air power.</em>"
-      },
       "pair_share": {
         "prompt": "What does the military failure in Laos and Cambodia reveal about the practical limits of Nixon's 'Vietnamisation' strategy?",
         "think": "Reflect on ARVN's heavy dependence on US air power, domestic morale, and supply line interdiction.",
@@ -17119,25 +16909,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the anti-war movement and the response of the government? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From a photograph showing U.S. Marshals carrying away an anti-war demonstrator outside the Pentagon, October 1967.",
-          "content": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing student demonstrators facing the National Guard at Kent State University, May 1970.",
-          "content": "/units/usa/assets/sources/kent-state-protests-1970.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the direct confrontation and physical arrest of anti-war protestors by federal authorities. The photograph shows \"two U.S. Marshals wearing white helmets carrying away a civilian demonstrator\". This content's utility is supported by my knowledge that <strong>the Pentagon protest of October 1967 reflected the rapid growth of the anti-war movement as the draft escalated, with draft card burning and peaceful marches becoming common</strong>, which confirms the growing polarization and student involvement at this time. <em>The provenance of October 1967 makes the source highly useful because it captures the direct, physical conflict and state response to anti-war protestors. However, it is less useful because it focuses on a single demonstration in Washington D.C., failing to show the wider, working-class opposition or moderate critics of the war.</em>\n\nSource B is highly useful for showing the lethal escalation of state suppression of student protests on campus. The photograph shows a line of National Guard soldiers deployed across the campus lawn firing tear gas canisters at scattering students at Kent State. This content is highly useful because it is supported by my knowledge that <strong>the Kent State shootings of May 1970, where National Guardsmen killed four students protesting the invasion of Cambodia, triggered a strike of 4 million students nationwide</strong>, which validates the high tension and physical danger student protesters faced. <em>The provenance of May 1970 makes the source extremely useful because it documents the tense standoff just before the shooting. However, it is less useful because it captures the standoff, failing to explain the panic, chaos, and nationwide student strike that followed.</em>"
-      },
       "pair_share": {
         "prompt": "Why did testimonies from returning veterans like Ron Kovic have such a powerful emotional and political impact on the American public compared to student protests?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -18422,25 +18193,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the views of the 'Silent Majority' and support for the Vietnam War? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From a photograph showing President Richard Nixon at his Oval Office desk surrounded by stacks of letters and telegrams sent by the 'Silent Majority' supporting his Vietnam policy, 4 November 1969.",
-          "content": "/units/usa/assets/sources/nixon_telegrams_silent_majority_1969.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From an official White House photograph showing construction hard hats presented to President Nixon by union leaders on the Cabinet Room table following the Hard Hat Riot, May 1970.",
-          "content": "/units/usa/assets/sources/hard_hat_riot_cabinet_table_1970.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the overwhelming volume of public support for President Nixon's Vietnam strategy following his direct appeal to the American people. The photograph shows President Nixon smiling at his Oval Office desk, which is completely covered with massive stacks of telegrams and letters of support. This content's usefulness is supported by my knowledge that <strong>President Nixon's November 1969 speech appealed directly to the 'Silent Majority'—the millions of moderate, patriotic Americans who did not participate in anti-war demonstrations—to counter the vocal protest movement</strong>, which generated hundreds of thousands of supportive messages and gave Nixon the political capital to continue the war. <em>The provenance of 4 November 1969 makes the source highly useful because it documents the immediate White House public relations victory the day after the speech. However, it is less useful because it is an official staged photograph from inside the White House, meaning it cannot prove how widespread or representative this silent support was across the entire nation.</em>\n\nSource B is highly useful for showing the tangible backing Nixon received from blue-collar trade unions and the deep social polarization between working-class Americans and student anti-war protesters. The photograph shows union construction hard hats displayed across the Cabinet Room table, including one inscribed \"NIXON\" with a miniature American flag. This content is highly useful because it is supported by my knowledge that <strong>the Hard Hat Riot of May 1970 in Lower Manhattan, where construction workers violently attacked college students demonstrating against the Kent State shootings, demonstrated fierce working-class patriotism and loyalty to Nixon's policies</strong>, which led union leaders to present Nixon with an honorary hard hat at the White House. <em>The provenance of May 1970 makes the source extremely useful because it directly records the political alliance forged between the Nixon administration and conservative labour leaders. However, it is less useful because it only shows the symbolic helmets in the White House, concealing the physical violence and street clashes in New York City that produced this endorsement.</em>"
-      },
       "pair_share": {
         "prompt": "How did the anti-war movement create deep social and class divisions in American society? How did Nixon capitalize on these divisions?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -19723,25 +19475,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
-        "question": "How useful are Sources A and B for an enquiry into the peace process and the final withdrawal of the US from Vietnam? (8 marks)",
-        "source_a": {
-          "provenance": "Source A: From a photograph showing the signing of the Paris Peace Accords in Paris, 27 January 1973.",
-          "content": "/units/usa/assets/sources/paris-peace-accords-signing.jpg"
-        },
-        "source_b": {
-          "provenance": "Source B: From a photograph showing American officials and South Vietnamese evacuees boarding a helicopter from a rooftop during the Fall of Saigon, 29 April 1975.",
-          "content": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg"
-        },
-        "hints": [
-          "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
-          "Provenance (Author, Motive, Date): Who created the source, why did they produce it, and does this increase or limit its utility?",
-          "Comparative Judgment: Clearly weigh up the relative strengths and limitations of both sources to reach a balanced conclusion."
-        ],
-        "provenance_clue": "Scaffolding Clue: Evaluate the author, audience, and motive for both sources. For written accounts, consider if the author has political reasons to justify their actions. For photographs, consider what may be excluded outside the camera's frame.",
-        "model": "Source A is highly useful for showing the formal, diplomatic conclusion of US military involvement in Vietnam. The photograph shows diplomats sitting around the treaty table in Paris signing the official accords. This content's utility is supported by my knowledge that <strong>the signing of the Paris Peace Accords in January 1973 ended direct US military involvement, securing the withdrawal of US troops and the return of POWs</strong>, which confirms the diplomatic settlement that allowed a face-saving exit for the US. <em>The provenance of 27 January 1973 makes the source highly useful because it documents the formal legal conclusion of the war. However, it is less useful because it portrays a polished, peaceful diplomatic consensus, ignoring the secret negotiations, pressure on South Vietnamese President Thieu, and the fact that fighting continued between North and South.</em>\n\nSource B is highly useful for showing the chaotic, real-world failure of the peace treaty and the collapse of Vietnamization. The photograph shows a line of evacuees climbing a rooftop ladder to board an Air America helicopter during the final evacuation of Saigon. This content is highly useful because it is supported by my knowledge that <strong>the Fall of Saigon in April 1975, when North Vietnamese forces captured the capital and South Vietnam surrendered, marked the final failure of US containment policy in Indochina</strong>, which explains why the evacuation had to be conducted in such a panic. <em>The provenance of 29 April 1975 makes the source extremely useful because it provides a raw, iconic visual record of defeat. However, it is less useful because it focuses on the panic at the evacuation point, failing to capture the military campaigns and political decisions that led to the final collapse.</em>"
-      },
       "pair_share": {
         "prompt": "How does this eyewitness account challenge the idea that the US exit from Vietnam was an orderly, honorable retreat? What was the human cost of the sudden withdrawal?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
@@ -21091,17 +20824,6 @@ window.usaData = {
       ],
       "primary_source": null,
       "utility_starters": null,
-      "extended": {
-        "title": "Edexcel GCSE Paper 3: 16-Mark Judgment Essay",
-        "question": "'The main reason the United States failed to win the Vietnam War was the military effectiveness of Vietcong guerrilla tactics.' How far do you agree with this statement? (16 marks + 4 SPaG)\n\nYou may use the following in your answer:\n- Vietcong guerrilla tactics and tunnel networks\n- The domestic anti-war movement and the 'credibility gap'\nYou must also use information of your own.",
-        "hints": [
-          "Formulate a clear thesis in your introduction that directly answers the question.",
-          "Examine Vietcong guerrilla tactics (ambushes, booby traps, Cu Chi tunnels, blending with peasants) vs US tactical failures (search-and-destroy, firepower reliance).",
-          "Examine alternative factors: US home front collapse (anti-war protests, media coverage, Tet Offensive), ARVN weakness and political corruption in Saigon, and North Vietnamese resolve (Ho Chi Minh trail, Soviet/Chinese aid).",
-          "Provide a sustained, justified judgment in your conclusion."
-        ],
-        "model": "<h3>Model Answer (Level 4 — 16/16 marks + 4 SPaG):</h3>\n<p><strong>Introduction:</strong> The US failure to achieve military victory in Vietnam between 1965 and 1973 was a multifaceted catastrophe. While Vietcong guerrilla tactics were exceptionally effective in neutralizing American technological superiority and inflicting continuous attrition, they were not the sole cause of defeat. The war was equally lost due to the domestic collapse of political support on the American home front, the deep corruption and military weakness of the South Vietnamese government (ARVN), and the unwavering resilience of North Vietnam backed by Soviet and Chinese aid. Ultimately, Vietcong tactics were decisive because they prolonged the war to the point where the American public and political system refused to sustain it.</p>\n<p><strong>Arguments supporting the statement (Vietcong Tactics):</strong> There is strong evidence that Vietcong guerrilla tactics were the primary operational reason for US failure. Guided by General Vo Nguyen Giap, the Vietcong avoided set-piece battles where US air superiority and artillery could destroy them. Instead, they adopted 'hanging onto American belts'—fighting at close range so US forces could not call in air strikes without hitting their own troops. Their extensive underground tunnel networks, such as at Cu Chi, allowed them to launch surprise ambushes, store supplies, and disappear undetected. Furthermore, booby traps (like punji stake pits and tripwire mines) caused 11% of all US deaths and 17% of wounds, inflicting devastating psychological trauma on American conscripts. By dressing as ordinary peasants, the Vietcong denied US troops a visible enemy, rendering search-and-destroy missions deeply frustrating and often counterproductive.</p>\n<p><strong>Alternative Factor 1 (US Tactical and Strategic Errors):</strong> Conversely, it can be argued that US failure stemmed from flawed American military strategies rather than Vietcong brilliance alone. General Westmoreland pursued a war of attrition measured by 'body counts', mistakenly believing US firepower would force the enemy to a breaking point. Instead, tactics like search-and-destroy, heavy napalm bombing, and Agent Orange defoliation alienated the South Vietnamese peasantry whose 'hearts and minds' were essential to win. The massacre of hundreds of unarmed civilians at My Lai in 1968 demonstrated how strategic frustration led to atrocities that destroyed the moral legitimacy of the American mission both in Vietnam and internationally.</p>\n<p><strong>Alternative Factor 2 (Home Front Opposition & The Credibility Gap):</strong> Crucially, the war was lost on the American home front as domestic political consensus collapsed. Vietnam was the world's first 'television war', bringing graphic footage of combat, wounded soldiers, and burning villages into American living rooms every night. The shock of the January 1968 Tet Offensive shattered government claims that victory was near, creating a vast 'credibility gap' between official statements and battlefield reality. Following Tet, influential news anchor Walter Cronkite declared the war an unwinnable stalemate. Massive anti-war demonstrations, university strikes (culminating in the Kent State shootings of 1970), and veteran protests made continuing the war politically impossible, compelling President Nixon to pursue 'Vietnamization' and diplomatic withdrawal.</p>\n<p><strong>Conclusion:</strong> In conclusion, while Vietcong guerrilla tactics were essential in preventing a rapid American victory, they were not the sole reason the US lost. The decisive factor was the interplay between guerrilla warfare and the American home front. Asymmetric guerrilla tactics succeeded because they turned the war into a prolonged war of attrition. North Vietnam and the Vietcong were fighting an existential war of national liberation and were willing to absorb staggering casualties, whereas the United States was fighting a limited Cold War engagement. Once the American public recognized that no amount of bombing or troop deployment could break the enemy's will, political support evaporated. Therefore, Vietcong tactics succeeded primarily because they created the conditions that forced America's domestic withdrawal.</p>"
-      },
       "pair_share": {
         "prompt": "Why is it possible to win every military battle but still lose a war? How does this sum up the core failure of the US intervention in Vietnam?",
         "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",

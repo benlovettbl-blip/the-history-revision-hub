@@ -2253,7 +2253,7 @@
             "question": "1(a). Explain one consequence of the bombing of the King David Hotel (1946). [4 marks]",
             "prompt": "Focus on the 91 deaths, the destruction of British military headquarters, and the hardening of British domestic public opinion demanding troop withdrawal from Palestine.",
             "examiner_tip": "Focus on the reaction of the British government or public, citing the 91 casualties and the demand to 'bring our boys home'.",
-            "model": "One consequence of the bombing of the King David Hotel on 22 July 1946 was a sharp collapse in British public and political support for keeping the Mandate. Because the Irgun explosion demolished the six-floor British military and civil headquarters in Jerusalem and killed 91 people, British MPs and newspapers questioned why 100,000 troops were policing an ungovernable conflict during post-war economic exhaustion. Shock at the civilian toll also led the Haganah to end its formal alliance with the Irgun while pushing Britain closer to handing Palestine to the UN in February 1947.",
+            "model": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to withdraw from Palestine.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -2274,8 +2274,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the bombing of the King David Hotel on 22 July 1946 was a sharp collapse in British public and political support for keeping the Mandate. Because the Irgun explosion demolished the six-floor British military and civil headquarters in Jerusalem and killed 91 people, British MPs and newspapers questioned why 100,000 troops were policing an ungovernable conflict during post-war economic exhaustion. Shock at the civilian toll also led the Haganah to end its formal alliance with the Irgun while pushing Britain closer to handing Palestine to the UN in February 1947.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 51 words. Directly pairs specific terms (Irgun, 91 personnel killed) with clear causal mechanism (public outrage forcing Attlee's cabinet to withdraw)."
+                "text": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to withdraw from Palestine.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either British domestic outrage over the 91 deaths pushing Attlee’s cabinet toward withdrawal (Option A) or Ben-Gurion’s Haganah dissolving the United Resistance Movement with Begin’s Irgun (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Collapse of British Support",
+                    "text": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to withdraw from Palestine."
+                  },
+                  {
+                    "label": "Option B (4/4): Split in Zionist Resistance",
+                    "text": "One consequence of the bombing of the King David Hotel on 22 July 1946 was the fracturing of the united Zionist insurgency. Appalled that Menachem Begin’s Irgun had demolished six floors of the headquarters and killed 91 people, David Ben-Gurion ordered the mainstream Haganah to dissolve the United Resistance Movement coalition."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -2295,7 +2305,7 @@
             "question": "1(b). Explain one consequence of UN Resolution 181 (November 1947). [4 marks]",
             "prompt": "Explain how turning 4,500 Holocaust survivors back to Europe caused an international public relations disaster for Britain, severely alienating US President Truman and global opinion.",
             "examiner_tip": "Cite the 4,500 Holocaust survivors and the diplomatic rift it caused with US President Truman.",
-            "model": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the United Nations voted to partition Palestine into separate Jewish and Arab states with Jerusalem under international control, the Jewish Agency accepted the plan while the Arab Higher Committee and neighbouring Arab states rejected it as unjust. Armed clashes erupted the next day along roads and mixed towns, accelerating British withdrawal ahead of May 1948.",
+            "model": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the Jewish Agency accepted the UN partition into separate Jewish and Arab states while the Arab Higher Committee rejected it as unjust, armed clashes erupted immediately across mixed towns and key roads.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -2316,8 +2326,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the United Nations voted to partition Palestine into separate Jewish and Arab states with Jerusalem under international control, the Jewish Agency accepted the plan while the Arab Higher Committee and neighbouring Arab states rejected it as unjust. Armed clashes erupted the next day along roads and mixed towns, accelerating British withdrawal ahead of May 1948.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs precise detail (29 November 1947 partition vote, international Jerusalem, Jewish Agency acceptance vs Arab Higher Committee rejection) with direct causal impact (communal civil war)."
+                "text": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the Jewish Agency accepted the UN partition into separate Jewish and Arab states while the Arab Higher Committee rejected it as unjust, armed clashes erupted immediately across mixed towns and key roads.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either communal civil war sparked by rival Jewish Agency and Arab Higher Committee reactions to partition (Option A) or Britain’s refusal to enforce partition ahead of its May 1948 withdrawal (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Outbreak of Civil War",
+                    "text": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the Jewish Agency accepted the UN partition into separate Jewish and Arab states while the Arab Higher Committee rejected it as unjust, armed clashes erupted immediately across mixed towns and key roads."
+                  },
+                  {
+                    "label": "Option B (4/4): Accelerated British Withdrawal",
+                    "text": "One consequence of UN Resolution 181 in November 1947 was Britain’s decision to accelerate its final military withdrawal from Palestine without enforcing partition. Refusing to impose a settlement rejected by Palestinian Arab leaders amid escalating violence, London fixed the Mandate’s termination for May 1948, leaving rival communities to fight for territorial control."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -3408,7 +3428,7 @@
             "question": "1(a). Explain one consequence of the refugee status of Palestinian Arabs following the 1948–49 war. [4 marks]",
             "prompt": "Focus on the displacement of approximately 700,000 people, the loss of land, exile into squalid refugee camps in Gaza, the West Bank, Lebanon, and Syria, and their denial of a right of return.",
             "examiner_tip": "Cite the Nakba, the 700,000 displaced refugees, and their exile into UNRWA camps with no right of return.",
-            "model": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was long-term displacement in overcrowded camps across neighbouring Arab territories. Because over 400 villages were depopulated during Plan Dalet and Israel permanently barred repatriation to preserve a Jewish majority, the UN established UNRWA to provide emergency relief in Gaza, the West Bank, Jordan, Syria, and Lebanon. Statelessness in these border camps directly fuelled cross-border fedayeen guerrilla raids and Israeli military reprisals during the early 1950s.",
+            "model": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -3429,8 +3449,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was long-term displacement in overcrowded camps across neighbouring Arab territories. Because over 400 villages were depopulated during Plan Dalet and Israel permanently barred repatriation to preserve a Jewish majority, the UN established UNRWA to provide emergency relief in Gaza, the West Bank, Jordan, Syria, and Lebanon. Statelessness in these border camps directly fuelled cross-border fedayeen guerrilla raids and Israeli military reprisals during the early 1950s.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Integrates specific terminology (Nakba, 700,000 refugees, UNRWA camps) and explains the permanent humanitarian and political consequence."
+                "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 55w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either long-term statelessness of 700,000 refugees in UNRWA camps after Israel barred return (Option A) or cross-border fedayeen guerrilla raids and IDF reprisals along the Green Line (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): UNRWA Refugee Camps",
+                    "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon."
+                  },
+                  {
+                    "label": "Option B (4/4): Cross-Border Fedayeen Raids",
+                    "text": "One consequence of Palestinian refugee statelessness after 1949 was an escalating cycle of cross-border guerrilla infiltration and Israeli military reprisals. Displaced Palestinians trapped in destitute camps in Egyptian-held Gaza and the Jordanian West Bank launched armed fedayeen raids into Israel, directly provoking severe IDF retaliatory strikes along the fragile Green Line borders."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -3450,7 +3480,7 @@
             "question": "1(b). Explain one consequence of the Israeli Law of Return (1950). [4 marks]",
             "prompt": "Explain how guaranteeing automatic citizenship to any Jewish immigrant doubled Israel’s population within four years, creating severe housing shortages but securing manpower for national defence.",
             "examiner_tip": "Do NOT confuse the Law of Return (1950, for Jewish immigration) with the Palestinian 'Right of Return' to abandoned homes.",
-            "model": "One consequence of the 1950 Law of Return was a rapid demographic transformation that doubled Israel’s population within four years. By granting every Jewish person automatic citizenship, over 680,000 European Holocaust survivors and Middle Eastern Jewish refugees arrived, directly securing vital manpower for national defence and the Israeli Defense Forces (IDF).",
+            "model": "One consequence of the 1950 Law of Return was a rapid demographic surge that strengthened Israel’s military defence. By granting every Jewish immigrant automatic citizenship, Israel doubled its population to over 1.4 million by 1952 through European survivors and airlifts from Iraq and Yemen, providing vital recruits for compulsory IDF service.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -3471,8 +3501,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the 1950 Law of Return was a rapid demographic transformation that doubled Israel’s population within four years. By granting every Jewish person automatic citizenship, over 680,000 European Holocaust survivors and Middle Eastern Jewish refugees arrived, directly securing vital manpower for national defence and the Israeli Defense Forces (IDF).",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 51 words. Pairs specific historical data (doubling population, 680,000 arrivals, Holocaust survivors) with causal military outcome (manpower for IDF)."
+                "text": "One consequence of the 1950 Law of Return was a rapid demographic surge that strengthened Israel’s military defence. By granting every Jewish immigrant automatic citizenship, Israel doubled its population to over 1.4 million by 1952 through European survivors and airlifts from Iraq and Yemen, providing vital recruits for compulsory IDF service.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 54w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either doubling Israel’s population to over 1.4 million to expand IDF defence manpower (Option A) or acute housing shortages requiring ma’abarot transit camps, food rationing, and US loans (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Demographic and Military Surge",
+                    "text": "One consequence of the 1950 Law of Return was a rapid demographic surge that strengthened Israel’s military defence. By granting every Jewish immigrant automatic citizenship, Israel doubled its population to over 1.4 million by 1952 through European survivors and airlifts from Iraq and Yemen, providing vital recruits for compulsory IDF service."
+                  },
+                  {
+                    "label": "Option B (4/4): Rationing and Transit Camps",
+                    "text": "One consequence of the 1950 Law of Return was acute economic strain and severe housing shortages across the young Israeli state. Absorbing hundreds of thousands of immigrants within four years forced David Ben-Gurion’s government to impose strict food rationing, house families in canvas transit camps (ma’abarot), and rely on $100 million in US loans."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -5083,7 +5123,7 @@
             "question": "1(a). Explain one consequence of the Israeli attack on Gaza in February 1955. [4 marks]",
             "prompt": "Explain how the death of 37 Egyptian soldiers shattered Nasser’s illusion of military strength, prompting him to seek Soviet weapons through the 1955 Czech arms deal.",
             "examiner_tip": "Focus on the Egyptian response: Nasser's humiliation over 37 dead soldiers and the resulting 1955 Czech arms deal.",
-            "model": "One consequence of the Israeli attack on Gaza on 28 February 1955 (Operation Black Arrow) was Egypt’s pivot to Soviet weaponry via the Czech arms deal. Because Israeli paratroopers killed 38 Egyptian soldiers and humiliated President Gamal Abdel Nasser while Western powers tied weapons sales to Cold War alliances, Nasser signed the September 1955 Czech arms deal for 200 Soviet MiG-15 jets and 300 tanks. This ended the Western arms monopoly in the Middle East and escalated border tension as Nasser tightened the blockade of the Straits of Tiran.",
+            "model": "One consequence of the Israeli attack on Gaza on 28 February 1955 was Egypt’s decisive pivot toward Soviet weaponry. After Operation Black Arrow killed 38 Egyptian soldiers and exposed Cairo’s military weakness, President Nasser bypassed Western arms conditions by signing the September 1955 Czech arms deal for 200 Soviet MiG-15 jets and 300 tanks.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -5104,8 +5144,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the Israeli attack on Gaza on 28 February 1955 (Operation Black Arrow) was Egypt’s pivot to Soviet weaponry via the Czech arms deal. Because Israeli paratroopers killed 38 Egyptian soldiers and humiliated President Gamal Abdel Nasser while Western powers tied weapons sales to Cold War alliances, Nasser signed the September 1955 Czech arms deal for 200 Soviet MiG-15 jets and 300 tanks. This ended the Western arms monopoly in the Middle East and escalated border tension as Nasser tightened the blockade of the Straits of Tiran.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Pairs precise facts (38 Egyptian casualties, Operation Black Arrow, MiG-15s) with causal explanation (September 1955 Czech arms deal)."
+                "text": "One consequence of the Israeli attack on Gaza on 28 February 1955 was Egypt’s decisive pivot toward Soviet weaponry. After Operation Black Arrow killed 38 Egyptian soldiers and exposed Cairo’s military weakness, President Nasser bypassed Western arms conditions by signing the September 1955 Czech arms deal for 200 Soviet MiG-15 jets and 300 tanks.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 53w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Nasser’s humiliation over 38 dead soldiers triggering the September 1955 Soviet-backed Czech arms deal (Option A) or intensified fedayeen raids and the tightened Straits of Tiran blockade (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): The Czech Arms Deal",
+                    "text": "One consequence of the Israeli attack on Gaza on 28 February 1955 was Egypt’s decisive pivot toward Soviet weaponry. After Operation Black Arrow killed 38 Egyptian soldiers and exposed Cairo’s military weakness, President Nasser bypassed Western arms conditions by signing the September 1955 Czech arms deal for 200 Soviet MiG-15 jets and 300 tanks."
+                  },
+                  {
+                    "label": "Option B (4/4): Escalating Border Blockade",
+                    "text": "One consequence of the February 1955 Gaza raid was a sharp escalation in Egyptian hostility along Israel’s southern frontier. Publicly humiliated before his army officers by the loss of 38 soldiers, President Nasser expanded armed Palestinian fedayeen raids from Gaza and tightened Egypt’s naval blockade of the Straits of Tiran against Israeli shipping."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -5125,7 +5175,7 @@
             "question": "1(b). Explain one consequence of the 1956 Suez Crisis for Britain and France as global powers. [4 marks]",
             "prompt": "Detail how US financial pressure forced an ignominious retreat, proving that European imperial powers could no longer act independently on the world stage without US approval.",
             "examiner_tip": "Focus strictly on 1956—do not drift into the 1967 Six-Day War or 1970s. Focus on the loss of superpower status under US financial pressure.",
-            "model": "One consequence of the 1956 Suez Crisis was the permanent destruction of Britain and France’s status as independent global superpowers. When US President Eisenhower threatened to trigger a collapse of the British pound unless forces withdrew immediately, London capitulated, proving that European imperial powers could never again launch major military operations without American approval.",
+            "model": "One consequence of the 1956 Suez Crisis was the end of Britain and France’s status as independent global powers. When US President Eisenhower threatened to block IMF loans and collapse the British pound, London and Paris accepted a humiliating 6 November ceasefire, proving European empires could not act militarily without American approval.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -5146,8 +5196,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the 1956 Suez Crisis was the permanent destruction of Britain and France’s status as independent global superpowers. When US President Eisenhower threatened to trigger a collapse of the British pound unless forces withdrew immediately, London capitulated, proving that European imperial powers could never again launch major military operations without American approval.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Directly pairs specific terms (Eisenhower, sterling crisis, British pound) with clear causal explanation of the loss of imperial independence."
+                "text": "One consequence of the 1956 Suez Crisis was the end of Britain and France’s status as independent global powers. When US President Eisenhower threatened to block IMF loans and collapse the British pound, London and Paris accepted a humiliating 6 November ceasefire, proving European empires could not act militarily without American approval.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 53w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either US financial pressure on sterling forcing ceasefire and ending independent Anglo-French superpower action (Option A) or shattered regional prestige after the exposed Sèvres plot left Nasser holding the canal (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Loss of Superpower Independence",
+                    "text": "One consequence of the 1956 Suez Crisis was the end of Britain and France’s status as independent global powers. When US President Eisenhower threatened to block IMF loans and collapse the British pound, London and Paris accepted a humiliating 6 November ceasefire, proving European empires could not act militarily without American approval."
+                  },
+                  {
+                    "label": "Option B (4/4): Collapse of Regional Prestige",
+                    "text": "One consequence of the 1956 Suez Crisis was the collapse of British and French imperial prestige across the Middle East. Exposing their secret Sèvres collusion with Israel and forcing an Anglo-French troop withdrawal left Egypt holding the nationalised Suez Canal, inspiring anti-colonial Arab nationalism that rapidly eroded remaining European influence in the region."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -6238,7 +6298,7 @@
             "question": "1(a). Explain one consequence of Israel’s raid on Samu in November 1966. [4 marks]",
             "prompt": "Point (Creation of the Palestine Liberation Organisation and unified Arab command) • Fact (Arab League heads of state authorized the Palestinian National Charter and water diversion) • Consequence (United Arab resistance and established armed fedayeen factions like Fatah to actively challenge Israel).",
             "examiner_tip": "Focus on the founding of the Palestine Liberation Organisation (PLO) and the launch of armed fedayeen resistance against Israel.",
-            "model": "One consequence of Israel’s massive reprisal raid on Samu in the Jordanian West Bank on 13 November 1966 was violent anti-government rioting that destabilised King Hussein’s monarchy. Because 4,000 IDF soldiers supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers in retaliation for a Fatah landmine, West Bank Palestinians rioted accusing Hussein of failing to defend them. To survive politically, King Hussein had to abandon secret moderation and harden his public stance toward Israel.",
+            "model": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -6259,8 +6319,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of Israel’s massive reprisal raid on Samu in the Jordanian West Bank on 13 November 1966 was violent anti-government rioting that destabilised King Hussein’s monarchy. Because 4,000 IDF soldiers supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers in retaliation for a Fatah landmine, West Bank Palestinians rioted accusing Hussein of failing to defend them. To survive politically, King Hussein had to abandon secret moderation and harden his public stance toward Israel.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Directly links specific factual detail (4,000 IDF troops, over 100 houses demolished, 15 Jordanian soldiers killed) to political destabilisation forcing King Hussein into a harder stance."
+                "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 54w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either West Bank anti-monarchy riots after 4,000 IDF troops demolished over 100 houses and killed 15 Jordanian soldiers (Option A) or King Hussein abandoning secret moderation toward his May 1967 pact with Nasser (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): West Bank Riots Against Hussein",
+                    "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them."
+                  },
+                  {
+                    "label": "Option B (4/4): Hardening of Jordanian Policy",
+                    "text": "One consequence of the November 1966 Samu raid was the alienation of Israel’s most moderate Arab neighbour, pushing Jordan into Egypt’s military camp. Deeply humiliated by the daylight assault on his territory, King Hussein abandoned quiet restraint and hardened his anti-Israeli stance, paving the way for his May 1967 Joint Defence Pact with Nasser."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -6280,7 +6350,7 @@
             "question": "1(b). Explain one consequence of the events of 7 April 1967. [4 marks]",
             "prompt": "Point (Humiliating defeat for the Syrian Air Force and sharp escalation towards war) • Fact (Israeli Mirage jets shot down six Syrian MiG-21s and flew victory passes over Damascus) • Consequence (Provoked false Soviet intelligence reports in May 1967, pressuring Nasser to mobilise in Sinai).",
             "examiner_tip": "Cite the shooting down of six Syrian MiG-21 jets and explain how this humiliated Syria and forced Nasser to mobilise.",
-            "model": "One consequence of the aerial clashes on 7 April 1967 was a sharp military escalation between Israel and Syria that dragged Egypt towards war. After Israeli Mirage jets shot down six Syrian MiG-21 fighters and buzzed Damascus, Syria publicly accused Egypt of failing to honour their mutual defence treaty, directly pressuring President Nasser to mobilise troops in Sinai.",
+            "model": "One consequence of the aerial battle on 7 April 1967 was intense Syrian political pressure on Egypt to honour their mutual defence pact. After Israeli Mirage fighters shot down six Syrian MiG-21 jets without loss and flew over Damascus, humiliated Syrian leaders accused President Nasser of inaction, dragging Cairo toward military confrontation.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -6301,8 +6371,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the aerial clashes on 7 April 1967 was a sharp military escalation between Israel and Syria that dragged Egypt towards war. After Israeli Mirage jets shot down six Syrian MiG-21 fighters and buzzed Damascus, Syria publicly accused Egypt of failing to honour their mutual defence treaty, directly pressuring President Nasser to mobilise troops in Sinai.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Directly pairs specific factual knowledge (six Syrian MiG-21s, Mirage jets, buzz over Damascus) with causal consequence (Syrian pressure forcing Nasser to mobilise under their mutual defence pact)."
+                "text": "One consequence of the aerial battle on 7 April 1967 was intense Syrian political pressure on Egypt to honour their mutual defence pact. After Israeli Mirage fighters shot down six Syrian MiG-21 jets without loss and flew over Damascus, humiliated Syrian leaders accused President Nasser of inaction, dragging Cairo toward military confrontation.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either six downed Syrian MiG-21s over Damascus pressuring Nasser to honour Egypt’s defence pact (Option A) or exposing Syrian air weakness and alarming Damascus and Moscow (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Syrian Pressure on Egypt",
+                    "text": "One consequence of the aerial battle on 7 April 1967 was intense Syrian political pressure on Egypt to honour their mutual defence pact. After Israeli Mirage fighters shot down six Syrian MiG-21 jets without loss and flew over Damascus, humiliated Syrian leaders accused President Nasser of inaction, dragging Cairo toward military confrontation."
+                  },
+                  {
+                    "label": "Option B (4/4): Exposed Syrian Air Weakness",
+                    "text": "One consequence of the clashes on 7 April 1967 was the stark exposure of Syrian military vulnerability against the Israeli Air Force. Losing six Soviet-built MiG-21 fighters in dogfights triggered by Golan artillery fire panicked the Damascus regime and its Soviet patrons, convincing both that Syria could not withstand Israel alone."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -7466,7 +7546,7 @@
             "question": "1(a). Explain one consequence of the events of 7 April 1967. [4 marks]",
             "prompt": "Point (Forced Israel into launching a pre-emptive strike) • Fact (Nasser mobilized troops in Sinai, expelled UNEF, and blockaded the Straits of Tiran at Sharm el-Sheikh) • Consequence (Convinced Israeli leaders that war was imminent, prompting the surprise destruction of Arab air forces on 5 June 1967).",
             "examiner_tip": "Focus on the closing of the Straits of Tiran or expelling UNEF, and how this directly convinced Israel to launch a pre-emptive strike.",
-            "model": "One consequence of the aerial battle of 7 April 1967 was military humiliation for Syria that drew the Soviet Union and Egypt into the May 1967 crisis. Because Israeli Mirage jets shot down six Syrian MiG-21 fighters without loss and chased planes over Damascus, Syrian leaders pressed Cairo for help under their defence pact. Fearing for its Syrian ally, the Soviet Union passed a false intelligence warning to Nasser on 13 May claiming Israeli brigades were massing on Syria’s border, prompting Egypt to mobilise 100,000 troops into Sinai.",
+            "model": "One consequence of the 7 April 1967 air battle was Soviet diplomatic alarm that triggered the May 1967 crisis. After Israeli Mirage jets downed six Syrian MiG-21s and buzzed Damascus, Moscow feared for its Syrian ally and passed a false warning to Cairo on 13 May alleging Israeli brigades were massing to invade Syria.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -7487,8 +7567,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the aerial battle of 7 April 1967 was military humiliation for Syria that drew the Soviet Union and Egypt into the May 1967 crisis. Because Israeli Mirage jets shot down six Syrian MiG-21 fighters without loss and chased planes over Damascus, Syrian leaders pressed Cairo for help under their defence pact. Fearing for its Syrian ally, the Soviet Union passed a false intelligence warning to Nasser on 13 May claiming Israeli brigades were massing on Syria’s border, prompting Egypt to mobilise 100,000 troops into Sinai.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Accurately links specific facts (six Syrian MiG-21s downed over Damascus) to the 13 May false Soviet warning and Nasser’s 100,000-troop Sinai deployment."
+                "text": "One consequence of the 7 April 1967 air battle was Soviet diplomatic alarm that triggered the May 1967 crisis. After Israeli Mirage jets downed six Syrian MiG-21s and buzzed Damascus, Moscow feared for its Syrian ally and passed a false warning to Cairo on 13 May alleging Israeli brigades were massing to invade Syria.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either the 13 May false Soviet intelligence warning to Cairo following Syria’s loss of six MiG-21s (Option A) or Nasser marching 100,000 troops into Sinai and expelling UNEF (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Soviet False Intelligence Warning",
+                    "text": "One consequence of the 7 April 1967 air battle was Soviet diplomatic alarm that triggered the May 1967 crisis. After Israeli Mirage jets downed six Syrian MiG-21s and buzzed Damascus, Moscow feared for its Syrian ally and passed a false warning to Cairo on 13 May alleging Israeli brigades were massing to invade Syria."
+                  },
+                  {
+                    "label": "Option B (4/4): Egyptian Mobilisation in Sinai",
+                    "text": "One consequence of Syria’s humiliation on 7 April 1967 was President Nasser’s decision to remilitarise the Sinai Peninsula in mid-May. Stung by Arab criticism that he was hiding behind UN peacekeepers while Damascus faced Israeli jets, Nasser marched 100,000 Egyptian troops into Sinai and expelled UNEF to restore his Pan-Arab leadership."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -7508,7 +7598,7 @@
             "question": "1(b). Explain one consequence of the outbreak of the Six-Day War (1967). [4 marks]",
             "prompt": "Point (Total Israeli military victory and capture of strategic territory) • Fact (Israel destroyed Arab air forces within three hours, capturing the Sinai, Gaza Strip, West Bank, East Jerusalem, and Golan Heights) • Consequence (Tripled the land under Israeli control and placed over 1 million Palestinian Arabs under military occupation).",
             "examiner_tip": "Do NOT confuse the Six-Day War (1967) with the Yom Kippur War (1973). Focus on the territorial conquests (Sinai, Gaza, West Bank, Golan).",
-            "model": "One consequence of the outbreak of the Six-Day War was a total Israeli military victory that radically transformed the borders of the Middle East. By destroying Arab air forces on 5 June, Israel rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights, tripling the territory under its control and placing over one million Palestinian Arabs under military occupation.",
+            "model": "One consequence of the outbreak of the Six-Day War in June 1967 was a decisive Israeli victory that tripled the territory under Israel’s control. After Operation Focus destroyed over 300 Egyptian aircraft on the ground on 5 June, IDF forces rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -7529,8 +7619,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the outbreak of the Six-Day War was a total Israeli military victory that radically transformed the borders of the Middle East. By destroying Arab air forces on 5 June, Israel rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights, tripling the territory under its control and placing over one million Palestinian Arabs under military occupation.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 58 words. Deploys precise geographical knowledge (Sinai, Gaza, West Bank, East Jerusalem, Golan) and explains the profound causal transformation (tripling territory, military occupation of 1 million Palestinians)."
+                "text": "One consequence of the outbreak of the Six-Day War in June 1967 was a decisive Israeli victory that tripled the territory under Israel’s control. After Operation Focus destroyed over 300 Egyptian aircraft on the ground on 5 June, IDF forces rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Operation Focus and the capture of Sinai, Gaza, the West Bank, East Jerusalem, and Golan tripling territory (Option A) or placing over one million Palestinians under Israeli military occupation (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Tripling of Israeli Territory",
+                    "text": "One consequence of the outbreak of the Six-Day War in June 1967 was a decisive Israeli victory that tripled the territory under Israel’s control. After Operation Focus destroyed over 300 Egyptian aircraft on the ground on 5 June, IDF forces rapidly captured the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights."
+                  },
+                  {
+                    "label": "Option B (4/4): Occupation of One Million Palestinians",
+                    "text": "One consequence of the Six-Day War was the placement of over one million Palestinian Arabs under direct Israeli military occupation. By driving Jordanian troops from the West Bank and East Jerusalem and seizing Gaza from Egypt within six days, Israel gained strategic depth while acquiring an acute long-term demographic and security dilemma."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -8731,7 +8831,7 @@
             "marks": 4,
             "question": "1(a). Explain one consequence of the continued dispute over the Suez Canal after June 1967. [4 marks]",
             "prompt": "Focus on the diplomatic principle of 'Land for Peace', the disagreement over withdrawal from occupied territories, or the lack of mutual recognition.",
-            "model": "One consequence of the continued dispute over the Suez Canal after June 1967 was the prolonged closure of the waterway and the outbreak of the War of Attrition (1969–70). Because the Suez Canal remained blocked by sunken wrecks while Israel constructed the 20-metre sand ramparts and bunkers of the Bar-Lev Line along the east bank, Egypt lost vital canal revenues and feared Sinai’s occupation becoming permanent. From March 1969, Nasser launched heavy artillery bombardments and commando raids across the canal to wear down Israeli resolve.",
+            "model": "One consequence of the continued dispute over the Suez Canal after June 1967 was the prolonged closure of the waterway, crippling Egypt’s economy. Blocked by sunken wrecks and naval mines along the new Israeli-held frontline, the canal remained shut to shipping for eight years, depriving Cairo of vital transit toll revenues.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -8752,8 +8852,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the continued dispute over the Suez Canal after June 1967 was the prolonged closure of the waterway and the outbreak of the War of Attrition (1969–70). Because the Suez Canal remained blocked by sunken wrecks while Israel constructed the 20-metre sand ramparts and bunkers of the Bar-Lev Line along the east bank, Egypt lost vital canal revenues and feared Sinai’s occupation becoming permanent. From March 1969, Nasser launched heavy artillery bombardments and commando raids across the canal to wear down Israeli resolve.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs precise detail (sunken wrecks, 20-metre Bar-Lev Line sand ramparts, lost canal tolls) with direct outcome (Nasser’s 1969–70 War of Attrition)."
+                "text": "One consequence of the continued dispute over the Suez Canal after June 1967 was the prolonged closure of the waterway, crippling Egypt’s economy. Blocked by sunken wrecks and naval mines along the new Israeli-held frontline, the canal remained shut to shipping for eight years, depriving Cairo of vital transit toll revenues.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either sunken wrecks and mines closing the canal and depriving Egypt of vital toll revenues (Option A) or Israel constructing the 20-metre Bar-Lev Line fortifications along the east bank (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Canal Closure and Lost Revenue",
+                    "text": "One consequence of the continued dispute over the Suez Canal after June 1967 was the prolonged closure of the waterway, crippling Egypt’s economy. Blocked by sunken wrecks and naval mines along the new Israeli-held frontline, the canal remained shut to shipping for eight years, depriving Cairo of vital transit toll revenues."
+                  },
+                  {
+                    "label": "Option B (4/4): Construction of Bar-Lev Line",
+                    "text": "One consequence of the Suez Canal dispute after June 1967 was Israel’s fortification of the east bank through the Bar-Lev Line. Between 1968 and 1969, Chief of Staff Haim Bar-Lev constructed a 20-metre sand rampart backed by concrete bunkers and minefields, turning the closed waterway into an entrenched military frontier."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -8773,7 +8883,7 @@
             "marks": 4,
             "question": "1(b). Explain one consequence of the continued dispute over the Suez Canal. [4 marks]",
             "prompt": "Focus on the closure of the canal to international shipping, the construction of the Bar-Lev Line, or the outbreak of the War of Attrition.",
-            "model": "One consequence of the dispute over the Suez Canal was the outbreak of the War of Attrition. Because the canal was closed as a fortified frontline, Israel built the Bar-Lev Line along the east bank, which prompted continuous Egyptian artillery shelling and commando raids until the 1970 ceasefire.",
+            "model": "One consequence of the continued dispute over the Suez Canal was the outbreak of the War of Attrition between March 1969 and August 1970. Determined to prevent Israel’s Bar-Lev Line along the closed east bank becoming a permanent border, President Nasser launched sustained artillery bombardments and commando raids to wear down Israeli resolve.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -8794,8 +8904,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the dispute over the Suez Canal was the outbreak of the War of Attrition. Because the canal was closed as a fortified frontline, Israel built the Bar-Lev Line along the east bank, which prompted continuous Egyptian artillery shelling and commando raids until the 1970 ceasefire.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 43 words (2 clear sentences). Pairs specific specification terms (War of Attrition, Bar-Lev Line, 1970 ceasefire) with direct causal outcome."
+                "text": "One consequence of the continued dispute over the Suez Canal was the outbreak of the War of Attrition between March 1969 and August 1970. Determined to prevent Israel’s Bar-Lev Line along the closed east bank becoming a permanent border, President Nasser launched sustained artillery bombardments and commando raids to wear down Israeli resolve.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 53w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Nasser launching the 1969–70 War of Attrition against the Bar-Lev Line (Option A) or Soviet SAM and pilot deployments triggering an American-brokered August 1970 ceasefire (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Outbreak of War of Attrition",
+                    "text": "One consequence of the continued dispute over the Suez Canal was the outbreak of the War of Attrition between March 1969 and August 1970. Determined to prevent Israel’s Bar-Lev Line along the closed east bank becoming a permanent border, President Nasser launched sustained artillery bombardments and commando raids to wear down Israeli resolve."
+                  },
+                  {
+                    "label": "Option B (4/4): Superpower Escalation on Canal",
+                    "text": "One consequence of the entrenched fighting along the disputed Suez Canal was dangerous Cold War escalation in Egypt. When Israel countered Egyptian canal shelling with deep air raids during the War of Attrition, Moscow deployed Soviet surface-to-air missiles and pilots to defend Cairo, prompting an American-brokered ceasefire in August 1970."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -9941,7 +10061,7 @@
             "question": "1(a). Explain one consequence of the expulsion of the PLO from Jordan (1970). [4 marks]",
             "prompt": "Point (Directly triggered King Hussein’s military crackdown against Palestinian militias in Jordan) • Fact (PFLP militants blew up three hijacked Western airliners at Dawson’s Field in front of international TV cameras) • Consequence (King Hussein declared martial law in September 1970, launching the Black September civil war to expel armed Palestinian groups).",
             "examiner_tip": "Focus on the reaction of King Hussein of Jordan: declaring martial law and launching 'Black September' to expel armed militias.",
-            "model": "One consequence of King Hussein’s expulsion of the PLO from Jordan during Black September (1970–71) was the relocation of the PLO’s political leadership and thousands of armed fighters to Beirut and southern Lebanon. Driven out of Jordan after tank battles in Amman claimed thousands of lives, the PLO established a new armed base in Lebanese refugee camps while forming the underground Black September faction to avenge its defeat. This shifted cross-border raids and Israeli retaliation onto Israel’s northern border with Lebanon.",
+            "model": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla leadership to Lebanon. Driven out after fierce Amman tank battles, Yasser Arafat moved thousands of PLO fighters into Beirut and southern Lebanese refugee camps, shifting armed conflict onto Israel’s northern border.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -9962,8 +10082,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan during Black September (1970–71) was the relocation of the PLO’s political leadership and thousands of armed fighters to Beirut and southern Lebanon. Driven out of Jordan after tank battles in Amman claimed thousands of lives, the PLO established a new armed base in Lebanese refugee camps while forming the underground Black September faction to avenge its defeat. This shifted cross-border raids and Israeli retaliation onto Israel’s northern border with Lebanon.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects the 1970–71 Amman expulsion directly to PLO relocation into Lebanese camps, the creation of Black September, and northern border warfare."
+                "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla leadership to Lebanon. Driven out after fierce Amman tank battles, Yasser Arafat moved thousands of PLO fighters into Beirut and southern Lebanese refugee camps, shifting armed conflict onto Israel’s northern border.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 50w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Arafat relocating PLO fighters to Beirut and southern Lebanon after Amman tank battles (Option A) or the formation of the Black September group that carried out the 1972 Munich massacre (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Relocation to Southern Lebanon",
+                    "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla leadership to Lebanon. Driven out after fierce Amman tank battles, Yasser Arafat moved thousands of PLO fighters into Beirut and southern Lebanese refugee camps, shifting armed conflict onto Israel’s northern border."
+                  },
+                  {
+                    "label": "Option B (4/4): Rise of Black September Faction",
+                    "text": "One consequence of the PLO’s defeat in Jordan during September 1970 was the creation of the militant underground Black September organisation. Determined to avenge their expulsion and force global attention onto Palestinian statelessness, radical operatives turned to international terrorism, culminating in the hostage massacre of 11 Israelis at the 1972 Munich Olympics."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -9983,7 +10113,7 @@
             "question": "1(b). Explain one consequence of the expulsion of the PLO from Jordan (1970). [4 marks]",
             "prompt": "Point (Relocation of PLO headquarters to southern Lebanon and rise of clandestine terror cells) • Fact (Jordanian forces crushed PLO resistance and expelled armed guerrillas to Lebanon by 1971) • Consequence (The PLO lost its direct border with Israel, created \"Fatahland\" in Lebanon, and radical elements formed the \"Black September\" terror group).",
             "examiner_tip": "Focus on the relocation of the PLO to Lebanon ('Fatahland') and the creation of the Black September terror faction.",
-            "model": "One consequence of the expulsion of the PLO from Jordan was the relocation of Palestinian guerrilla bases to southern Lebanon. After being forced out of Jordan by July 1971, Yasser Arafat's PLO established an autonomous armed enclave ('Fatahland') in Lebanon, which destabilised Lebanon's delicate political balance and directly led to cross-border Israeli invasions in 1978 and 1982.",
+            "model": "One consequence of the expulsion of the PLO from Jordan by July 1971 was the destabilisation of Lebanon through an autonomous armed enclave. Operating from southern Lebanon ('Fatahland'), PLO cross-border attacks upset Lebanon’s fragile sectarian balance and provoked major Israeli retaliatory air strikes and subsequent military incursions.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -10004,8 +10134,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the expulsion of the PLO from Jordan was the relocation of Palestinian guerrilla bases to southern Lebanon. After being forced out of Jordan by July 1971, Yasser Arafat's PLO established an autonomous armed enclave ('Fatahland') in Lebanon, which destabilised Lebanon's delicate political balance and directly led to cross-border Israeli invasions in 1978 and 1982.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 54 words. Combines specific historical knowledge (Arafat, Fatahland, southern Lebanon) with clear causal consequence (destabilizing Lebanon leading to the 1978 and 1982 Israeli invasions)."
+                "text": "One consequence of the expulsion of the PLO from Jordan by July 1971 was the destabilisation of Lebanon through an autonomous armed enclave. Operating from southern Lebanon ('Fatahland'), PLO cross-border attacks upset Lebanon’s fragile sectarian balance and provoked major Israeli retaliatory air strikes and subsequent military incursions.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 47w • Option B: 47w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either PLO bases in southern Lebanon ('Fatahland') destabilising Lebanon and provoking Israeli incursions (Option A) or King Hussein’s Bedouin army dismantling the PLO’s state-within-a-state in Jordan (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Destabilisation of Lebanon",
+                    "text": "One consequence of the expulsion of the PLO from Jordan by July 1971 was the destabilisation of Lebanon through an autonomous armed enclave. Operating from southern Lebanon ('Fatahland'), PLO cross-border attacks upset Lebanon’s fragile sectarian balance and provoked major Israeli retaliatory air strikes and subsequent military incursions."
+                  },
+                  {
+                    "label": "Option B (4/4): Restoration of Hashemite Authority",
+                    "text": "One consequence of expelling the PLO from Jordan was the restoration of King Hussein’s sovereign authority over Amman and the Jordanian state. By deploying his loyal Bedouin army to dismantle Palestinian checkpoints and crush the PLO’s state-within-a-state, Hussein ended cross-border guerrilla raids into Israel from Jordanian territory."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -11175,7 +11315,7 @@
             "question": "1(a). Explain one consequence of the Yom Kippur War (1973). [4 marks]",
             "prompt": "Point (Deepened Arab determination to launch a military attack to reclaim occupied lands) • Fact (Israel constructed the Bar-Lev Line along the Suez Canal and established permanent settlements in Sinai, Golan, and the West Bank) • Consequence (Convinced Egyptian President Anwar Sadat that diplomacy had failed, leading directly to the coordinated surprise attack on Yom Kippur 1973).",
             "examiner_tip": "Focus on the construction of the Bar-Lev Line and Israeli settlements, and how this convinced Sadat to launch the Yom Kippur War.",
-            "model": "One consequence of the Yom Kippur War (October 1973) was the shattering of the myth of Israeli military invulnerability, creating the conditions for US-led peace talks. Because Egyptian troops breached the Bar-Lev Line and Syrian tanks broke into the Golan Heights while inflicting heavy Israeli losses, Anwar Sadat restored Arab pride even after Israel counter-crossed the Suez Canal. Combined with OPEC’s oil embargo and UN Resolution 338, this shock forced Israel and the USA into serious negotiations.",
+            "model": "One consequence of the Yom Kippur War in October 1973 was the shattering of the myth of Israeli military invulnerability. Because Egyptian troops breached the Bar-Lev Line and inflicted heavy Israeli tank and aircraft losses, President Anwar Sadat restored Arab pride and broke the post-1967 stalemate, making future peace negotiations politically possible.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -11196,8 +11336,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the Yom Kippur War (October 1973) was the shattering of the myth of Israeli military invulnerability, creating the conditions for US-led peace talks. Because Egyptian troops breached the Bar-Lev Line and Syrian tanks broke into the Golan Heights while inflicting heavy Israeli losses, Anwar Sadat restored Arab pride even after Israel counter-crossed the Suez Canal. Combined with OPEC’s oil embargo and UN Resolution 338, this shock forced Israel and the USA into serious negotiations.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs specific military shock (breaching the Bar-Lev Line, Golan fighting, OPEC embargo, Resolution 338) with the diplomatic shift toward US-brokered talks."
+                "text": "One consequence of the Yom Kippur War in October 1973 was the shattering of the myth of Israeli military invulnerability. Because Egyptian troops breached the Bar-Lev Line and inflicted heavy Israeli tank and aircraft losses, President Anwar Sadat restored Arab pride and broke the post-1967 stalemate, making future peace negotiations politically possible.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either breaching the Bar-Lev Line shattering Israeli invulnerability and restoring Arab pride for talks (Option A) or Operation Nickel Grass and encirclement of Egypt’s Third Army forcing UN Resolution 338 (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): End of Israeli Invulnerability Myth",
+                    "text": "One consequence of the Yom Kippur War in October 1973 was the shattering of the myth of Israeli military invulnerability. Because Egyptian troops breached the Bar-Lev Line and inflicted heavy Israeli tank and aircraft losses, President Anwar Sadat restored Arab pride and broke the post-1967 stalemate, making future peace negotiations politically possible."
+                  },
+                  {
+                    "label": "Option B (4/4): Superpower Crisis and Ceasefire",
+                    "text": "One consequence of the October 1973 Yom Kippur War was an acute superpower confrontation that forced urgent UN diplomatic intervention. After America’s Operation Nickel Grass airlift enabled Ariel Sharon’s forces to encircle Egypt’s Third Army, Soviet intervention threats and a brief US nuclear alert produced the UN Resolution 338 ceasefire."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -11217,7 +11367,7 @@
             "question": "1(b). Explain one consequence of the Yom Kippur War (1973). [4 marks]",
             "prompt": "Point (Shattered the myth of Israeli invincibility and triggered the global energy crisis) • Fact (Arab states launched an oil embargo quadrupling crude oil prices; Israel suffered heavy casualties before counter-crossing the canal) • Consequence (Forced the United States and Israel to recognise that military superiority alone could not guarantee security, paving the way for peace negotiations).",
             "examiner_tip": "Focus on the OPEC oil embargo quadrupling oil prices or the shattering of Israeli military invincibility.",
-            "model": "One major consequence of the Yom Kippur War was the 1973 OPEC oil embargo, which quadrupled global crude oil prices. By cutting petroleum production and embargoing Western nations that supported Israel, Arab oil states triggered severe economic recessions, directly forcing US Secretary of State Henry Kissinger to intervene and launch 'shuttle diplomacy' to negotiate disengagement.",
+            "model": "One consequence of the Yom Kippur War was the October 1973 OPEC oil embargo, which quadrupled global crude oil prices within months. By cutting oil production and halting exports to the United States and Western allies supporting Israel, Arab oil ministers triggered severe fuel shortages and economic recession across Western economies.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -11238,8 +11388,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One major consequence of the Yom Kippur War was the 1973 OPEC oil embargo, which quadrupled global crude oil prices. By cutting petroleum production and embargoing Western nations that supported Israel, Arab oil states triggered severe economic recessions, directly forcing US Secretary of State Henry Kissinger to intervene and launch 'shuttle diplomacy' to negotiate disengagement.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 53 words. Integrates specific terminology (OPEC embargo, quadrupled oil prices, Henry Kissinger, shuttle diplomacy) and explains the international economic and diplomatic consequence."
+                "text": "One consequence of the Yom Kippur War was the October 1973 OPEC oil embargo, which quadrupled global crude oil prices within months. By cutting oil production and halting exports to the United States and Western allies supporting Israel, Arab oil ministers triggered severe fuel shortages and economic recession across Western economies.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 47w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either the October 1973 OPEC oil embargo quadrupling oil prices and triggering Western recession (Option A) or Henry Kissinger’s 1974–75 Shuttle Diplomacy disengagement agreements (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): The OPEC Oil Embargo",
+                    "text": "One consequence of the Yom Kippur War was the October 1973 OPEC oil embargo, which quadrupled global crude oil prices within months. By cutting oil production and halting exports to the United States and Western allies supporting Israel, Arab oil ministers triggered severe fuel shortages and economic recession across Western economies."
+                  },
+                  {
+                    "label": "Option B (4/4): Kissinger’s Shuttle Diplomacy",
+                    "text": "One consequence of the 1973 Yom Kippur War was direct American mediation through Secretary of State Henry Kissinger’s Shuttle Diplomacy. Alarmed by the OPEC oil shock and near-collision with Moscow, Washington abandoned diplomatic passivity to broker step-by-step military disengagement agreements between Israel, Egypt, and Syria during 1974–75."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -12770,7 +12930,7 @@
             "question": "1(a). Explain one consequence of the Treaty of Washington (1979). [4 marks]",
             "prompt": "Point (Forced the United States to actively mediate in the Middle East to prevent future wars) • Fact (Quadrupling oil prices and domestic fuel queues caused stagflation, proving Western economic survival depended on Arab oil) • Consequence (Convinced Secretary of State Henry Kissinger that the US could not afford a frozen status quo, launching intense shuttle diplomacy).",
             "examiner_tip": "Focus on the shift in American policy: the domestic economic crisis forced Henry Kissinger to launch 'shuttle diplomacy'.",
-            "model": "One consequence of the Treaty of Washington (signed on 26 March 1979 as the formal Egypt-Israel Peace Treaty) was Egypt’s immediate diplomatic suspension and boycott by the Arab world alongside lasting peace on Israel’s southern border. While Israel withdrew from the entire Sinai Peninsula in return for diplomatic recognition and US aid, Arab states accused Anwar Sadat of betraying Palestinian rights, suspended Egypt from the Arab League, and moved League headquarters from Cairo to Tunis. Domestic Islamist anger at the separate peace also led to Sadat’s assassination in Cairo on 6 October 1981.",
+            "model": "One consequence of the Treaty of Washington on 26 March 1979 was Egypt’s immediate diplomatic isolation and boycott across the Arab world. Condemning Anwar Sadat for signing a separate peace that betrayed Palestinian statehood, the Arab League suspended Egypt’s membership, imposed economic sanctions, and relocated its headquarters from Cairo to Tunis.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -12791,8 +12951,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the Treaty of Washington (signed on 26 March 1979 as the formal Egypt-Israel Peace Treaty) was Egypt’s immediate diplomatic suspension and boycott by the Arab world alongside lasting peace on Israel’s southern border. While Israel withdrew from the entire Sinai Peninsula in return for diplomatic recognition and US aid, Arab states accused Anwar Sadat of betraying Palestinian rights, suspended Egypt from the Arab League, and moved League headquarters from Cairo to Tunis. Domestic Islamist anger at the separate peace also led to Sadat’s assassination in Cairo on 6 October 1981.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects the 26 March 1979 separate peace directly to Egypt’s Arab League suspension, HQ relocation to Tunis, and Sadat’s October 1981 assassination."
+                "text": "One consequence of the Treaty of Washington on 26 March 1979 was Egypt’s immediate diplomatic isolation and boycott across the Arab world. Condemning Anwar Sadat for signing a separate peace that betrayed Palestinian statehood, the Arab League suspended Egypt’s membership, imposed economic sanctions, and relocated its headquarters from Cairo to Tunis.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 48w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either the Arab League suspending Egypt, imposing boycotts, and moving its headquarters from Cairo to Tunis (Option A) or Egyptian Islamic Jihad assassinating Sadat on 6 October 1981 (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Arab League Boycott of Egypt",
+                    "text": "One consequence of the Treaty of Washington on 26 March 1979 was Egypt’s immediate diplomatic isolation and boycott across the Arab world. Condemning Anwar Sadat for signing a separate peace that betrayed Palestinian statehood, the Arab League suspended Egypt’s membership, imposed economic sanctions, and relocated its headquarters from Cairo to Tunis."
+                  },
+                  {
+                    "label": "Option B (4/4): Assassination of President Sadat",
+                    "text": "One consequence of signing the March 1979 Treaty of Washington was fierce domestic Islamist backlash inside Egypt culminating in Anwar Sadat’s murder. Branding Sadat a traitor for formally recognising Israel, soldiers belonging to Egyptian Islamic Jihad assassinated the president during a Cairo military parade on 6 October 1981."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -12812,7 +12982,7 @@
             "question": "1(b). Explain one consequence of the Treaty of Washington (1979). [4 marks]",
             "prompt": "Point (Shattered thirty years of psychological taboos and opened direct bilateral peace negotiations) • Fact (Sadat addressed the Knesset directly, declaring \"No more war, no more bloodshed\", offering full diplomatic peace in return for Arab land) • Consequence (Bypassed multilateral stalemates and laid the direct foundation for the 1978 Camp David summit).",
             "examiner_tip": "Focus on the psychological breakthrough: addressing the Knesset directly paved the way for the 1978 Camp David Accords.",
-            "model": "One consequence of the Treaty of Washington on 26 March 1979 was Israel’s complete phased withdrawal from the Sinai Peninsula in exchange for full diplomatic relations and peace on its southern border. Israel dismantled Jewish settlements including Yamit and returned Sinai oil fields to Egypt, while Egypt demilitarised Sinai and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran. Backed by billions of dollars in annual US economic and military aid, this permanently removed the Arab world’s strongest military power from any coalition against Israel.",
+            "model": "One consequence of the March 1979 Treaty of Washington was Israel’s complete phased withdrawal from the Sinai Peninsula after twelve years of occupation. Israel dismantled Jewish settlements including Yamit and returned Sinai oil fields, while Egypt demilitarised the peninsula and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -12833,8 +13003,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the Treaty of Washington on 26 March 1979 was Israel’s complete phased withdrawal from the Sinai Peninsula in exchange for full diplomatic relations and peace on its southern border. Israel dismantled Jewish settlements including Yamit and returned Sinai oil fields to Egypt, while Egypt demilitarised Sinai and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran. Backed by billions of dollars in annual US economic and military aid, this permanently removed the Arab world’s strongest military power from any coalition against Israel.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs precise treaty terms (Sinai withdrawal, Yamit dismantled, Suez/Tiran navigation, US aid) with strategic transformation (removing Egypt from Arab war coalitions)."
+                "text": "One consequence of the March 1979 Treaty of Washington was Israel’s complete phased withdrawal from the Sinai Peninsula after twelve years of occupation. Israel dismantled Jewish settlements including Yamit and returned Sinai oil fields, while Egypt demilitarised the peninsula and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Israel dismantling Yamit and returning Sinai in exchange for demilitarisation and Suez/Tiran shipping rights (Option A) or US-backed peace removing Egypt from future Arab war coalitions (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Phased Return of Sinai",
+                    "text": "One consequence of the March 1979 Treaty of Washington was Israel’s complete phased withdrawal from the Sinai Peninsula after twelve years of occupation. Israel dismantled Jewish settlements including Yamit and returned Sinai oil fields, while Egypt demilitarised the peninsula and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran."
+                  },
+                  {
+                    "label": "Option B (4/4): Strategic Security on Southern Border",
+                    "text": "One consequence of the 1979 Treaty of Washington was a decisive transformation in Israel’s strategic security by ending thirty years of war with Egypt. Underwritten by billions of dollars in annual US aid to both nations, full diplomatic recognition permanently removed the strongest Arab army from any military coalition against Israel."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -14305,7 +14485,7 @@
             "question": "1(a). Explain one consequence of Arafat’s renunciation of terrorism in a speech at the UN (1988). [4 marks]",
             "prompt": "Point (Established a permanent UN buffer zone and proxy security belt in southern Lebanon) • Fact (Over 25,000 IDF troops pushed PLO fighters north of the Litani River; UN passed Resolution 425 creating UNIFIL while Israel armed Major Haddad’s Christian South Lebanon Army) • Consequence (Failed to stop rocket fire and laid the groundwork for the wider 1982 invasion).",
             "examiner_tip": "Focus on the geopolitical outcome: the deployment of UNIFIL peacekeepers and Israel's creation of a southern Lebanese proxy security belt.",
-            "model": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva renouncing terrorism was the immediate opening of official diplomatic dialogue between the United States and the PLO. By explicitly rejecting terrorism in all forms, accepting UN Resolutions 242 and 338, and confirming Israel’s right to exist in peace and security, Arafat satisfied Washington’s strict diplomatic conditions. President Reagan’s administration lifted its ban on official contact with the PLO, paving the way for Palestinian involvement in the 1990s peace process.",
+            "model": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the immediate opening of official diplomatic dialogue between Washington and the PLO. By explicitly renouncing terrorism in all forms and accepting UN Resolutions 242 and 338, Arafat met strict American preconditions, prompting President Reagan’s administration to end its ban on PLO contact.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -14326,8 +14506,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva renouncing terrorism was the immediate opening of official diplomatic dialogue between the United States and the PLO. By explicitly rejecting terrorism in all forms, accepting UN Resolutions 242 and 338, and confirming Israel’s right to exist in peace and security, Arafat satisfied Washington’s strict diplomatic conditions. President Reagan’s administration lifted its ban on official contact with the PLO, paving the way for Palestinian involvement in the 1990s peace process.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects specific Geneva declarations (renouncing terrorism, Resolutions 242 and 338, Israel’s right to exist) to Reagan lifting the US diplomatic ban ahead of 1990s negotiations."
+                "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the immediate opening of official diplomatic dialogue between Washington and the PLO. By explicitly renouncing terrorism in all forms and accepting UN Resolutions 242 and 338, Arafat met strict American preconditions, prompting President Reagan’s administration to end its ban on PLO contact.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Arafat accepting Resolutions 242 and 338 in Geneva so Reagan lifted the US ban on PLO talks (Option A) or legitimising the PLO in Western capitals for 1990s peace negotiations (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Opening of US-PLO Dialogue",
+                    "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the immediate opening of official diplomatic dialogue between Washington and the PLO. By explicitly renouncing terrorism in all forms and accepting UN Resolutions 242 and 338, Arafat met strict American preconditions, prompting President Reagan’s administration to end its ban on PLO contact."
+                  },
+                  {
+                    "label": "Option B (4/4): Diplomatic Credibility in the West",
+                    "text": "One consequence of Arafat’s December 1988 Geneva address was the transformation of the PLO’s international standing from pariah guerrilla movement to recognised negotiating partner. Confirming Israel’s right to exist in peace and security legitimised Palestinian diplomatic representation in Western capitals, laying essential foundations for involvement in the 1990s peace process."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -14347,7 +14537,7 @@
             "question": "1(b). Explain one consequence of Arafat’s renunciation of terrorism in a speech at the UN (1988). [4 marks]",
             "prompt": "Point (A spontaneous grassroots uprising ignited across the Gaza Strip and West Bank against 20 years of military occupation) • Fact (On 8 December 1987, an IDF tank transporter crashed into Palestinian cars in the Gaza Strip, killing four workers from Jabalia camp; rumors of deliberate retaliation triggered widespread strikes, barricades, and stone-throwing) • Consequence (Shattered Israeli complacency that the occupied territories were docile and created a new form of mass civil resistance).",
             "examiner_tip": "Focus on the shift in the balance of power: the emergence of grassroots civil resistance that shattered Israel's belief that the occupied territories could be peacefully managed.",
-            "model": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva renouncing terrorism and accepting UN Resolutions 242 and 338 was a decisive shift by the PLO toward two-state diplomacy that sharpened divisions with Palestinian rejectionists. While recognising Israel’s right to exist in peace positioned the mainstream PLO as an internationally credible partner for future peace negotiations, rival Islamist movement Hamas — founded in Gaza by Sheikh Ahmed Yassin — condemned diplomatic compromise and vowed continued armed struggle across all of historic Palestine.",
+            "model": "One consequence of Arafat’s December 1988 UN speech renouncing terrorism was a sharp ideological split within Palestinian politics. While Arafat’s acceptance of UN Resolution 242 committed the secular PLO to two-state diplomacy, Sheikh Ahmed Yassin’s Islamist movement Hamas rejected any territorial compromise and vowed armed jihad across all of historic Palestine.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -14368,8 +14558,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva renouncing terrorism and accepting UN Resolutions 242 and 338 was a decisive shift by the PLO toward two-state diplomacy that sharpened divisions with Palestinian rejectionists. While recognising Israel’s right to exist in peace positioned the mainstream PLO as an internationally credible partner for future peace negotiations, rival Islamist movement Hamas — founded in Gaza by Sheikh Ahmed Yassin — condemned diplomatic compromise and vowed continued armed struggle across all of historic Palestine.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Pairs specific diplomatic shifts (Geneva speech, Resolutions 242 & 338, two-state recognition) with ideological division against Sheikh Ahmed Yassin’s Hamas."
+                "text": "One consequence of Arafat’s December 1988 UN speech renouncing terrorism was a sharp ideological split within Palestinian politics. While Arafat’s acceptance of UN Resolution 242 committed the secular PLO to two-state diplomacy, Sheikh Ahmed Yassin’s Islamist movement Hamas rejected any territorial compromise and vowed armed jihad across all of historic Palestine.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either sharpening the divide between PLO two-state diplomacy and Sheikh Ahmed Yassin’s rejectionist Hamas (Option A) or increasing international pressure on Israel after US-PLO talks opened (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Ideological Split with Hamas",
+                    "text": "One consequence of Arafat’s December 1988 UN speech renouncing terrorism was a sharp ideological split within Palestinian politics. While Arafat’s acceptance of UN Resolution 242 committed the secular PLO to two-state diplomacy, Sheikh Ahmed Yassin’s Islamist movement Hamas rejected any territorial compromise and vowed armed jihad across all of historic Palestine."
+                  },
+                  {
+                    "label": "Option B (4/4): Pressure on Israeli Refusal",
+                    "text": "One consequence of Arafat’s 1988 UN speech in Geneva was mounting international diplomatic pressure on Israel to engage in peace negotiations. Once Arafat publicly accepted Resolutions 242 and 338 alongside the Reagan administration’s opening of talks, Israel could less easily dismiss the PLO internationally as merely an uncompromising terrorist organisation."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -15741,7 +15941,7 @@
             "question": "1(a). Explain one consequence of the setting up of the Palestinian National Authority in 1994. [4 marks]",
             "prompt": "Point (Produced the historic breakthrough of mutual recognition between Israel and the PLO) • Fact (Rabin officially recognized the PLO as the representative of the Palestinian people; Arafat recognized Israel's right to exist in peace and renounced terrorism) • Consequence (Ended decades of non-recognition, leading directly to the signing of Oslo I on the White House lawn).",
             "examiner_tip": "Focus on the diplomatic breakthrough: the exchange of Letters of Mutual Recognition that officially ended 45 years of mutual denial between Israel and the PLO.",
-            "model": "One consequence of setting up the Palestinian National Authority (PNA) in 1994 under the Oslo I framework was the first Palestinian self-government over civil affairs and internal policing in the Gaza Strip and Jericho. Yasser Arafat returned from exile in Tunis to lead the PNA administration over schools, health, and local security as Israeli troops withdrew from those enclaves. However, core final-status issues — Jerusalem, permanent borders, refugees, and Israeli settlements — remained unresolved.",
+            "model": "One consequence of setting up the Palestinian National Authority in May 1994 was the first Palestinian self-government inside the occupied territories. Following Israeli troop withdrawals from Gaza and Jericho under Oslo I, Yasser Arafat returned from exile in Tunis to direct Palestinian civil administration, taxation, and internal policing.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -15762,8 +15962,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of setting up the Palestinian National Authority (PNA) in 1994 under the Oslo I framework was the first Palestinian self-government over civil affairs and internal policing in the Gaza Strip and Jericho. Yasser Arafat returned from exile in Tunis to lead the PNA administration over schools, health, and local security as Israeli troops withdrew from those enclaves. However, core final-status issues — Jerusalem, permanent borders, refugees, and Israeli settlements — remained unresolved.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). Connects the 1994 PNA handover in Gaza and Jericho (Arafat’s return, civil administration, policing) with the ongoing deferral of final-status issues."
+                "text": "One consequence of setting up the Palestinian National Authority in May 1994 was the first Palestinian self-government inside the occupied territories. Following Israeli troop withdrawals from Gaza and Jericho under Oslo I, Yasser Arafat returned from exile in Tunis to direct Palestinian civil administration, taxation, and internal policing.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 48w • Option B: 53w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Arafat returning from Tunis to run PNA civil administration and policing in Gaza and Jericho (Option A) or phased expansion into Oslo II Areas A and B while Israel held Area C (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Palestinian Self-Rule in Gaza and Jericho",
+                    "text": "One consequence of setting up the Palestinian National Authority in May 1994 was the first Palestinian self-government inside the occupied territories. Following Israeli troop withdrawals from Gaza and Jericho under Oslo I, Yasser Arafat returned from exile in Tunis to direct Palestinian civil administration, taxation, and internal policing."
+                  },
+                  {
+                    "label": "Option B (4/4): Expansion Under Oslo II Zones",
+                    "text": "One consequence of establishing the PNA in 1994 was a phased framework that extended limited Palestinian self-rule into West Bank towns under Oslo II in 1995. While the PNA gained civil authority in Areas A and B, Israel retained full control over Area C (60% of the West Bank) and deferred final-status issues."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -15783,7 +15993,7 @@
             "question": "1(b). Explain one consequence of the assassination of Yitzhak Rabin on 4 November 1995. [4 marks]",
             "prompt": "Point (Derailment of the peace process and the election of a right-wing Likud government opposed to Oslo) • Fact (Right-wing Jewish extremist Yigal Amir shot Rabin at a Tel Aviv peace rally; subsequent Hamas bus bombings eroded public confidence in peace) • Consequence (Led directly to the narrow election of Benjamin Netanyahu in May 1996, who halted further territorial handovers).",
             "examiner_tip": "Topic Trap Alert: Remember that Rabin was killed by an Israeli Jewish religious extremist (Yigal Amir), not a Palestinian militant. Focus on the political consequence: shattering the peace momentum and enabling the 1996 election of Likud's Benjamin Netanyahu.",
-            "model": "One consequence of the assassination of Yitzhak Rabin was the severe derailment of the peace process and the election of a right-wing Israeli government opposed to Oslo. In May 1996, Likud leader Benjamin Netanyahu won the premiership on a hardline security platform, subsequently halting further territorial handovers to the Palestinian National Authority.",
+            "model": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was the derailment of Oslo momentum and the election of a hardline Likud government. After extremist Yigal Amir murdered Rabin in Tel Aviv amid Hamas bus bombings, Benjamin Netanyahu won the May 1996 election and halted further territorial handovers to the PNA.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -15804,8 +16014,18 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of the assassination of Yitzhak Rabin was the severe derailment of the peace process and the election of a right-wing Israeli government opposed to Oslo. In May 1996, Likud leader Benjamin Netanyahu won the premiership on a hardline security platform, subsequently halting further territorial handovers to the Palestinian National Authority.",
-                "verdict": "AO2 Level 2 (2 marks) • AO1 Level 2 (2 marks). 48 words. Directly connects the assassination to the political consequence (electoral shift to Likud under Netanyahu, freeze on territorial handovers to the PNA)."
+                "text": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was the derailment of Oslo momentum and the election of a hardline Likud government. After extremist Yigal Amir murdered Rabin in Tel Aviv amid Hamas bus bombings, Benjamin Netanyahu won the May 1996 election and halted further territorial handovers to the PNA.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Rabin’s murder by Yigal Amir and Hamas bombings leading to Netanyahu’s May 1996 election and halted handovers (Option A) or deep Israeli domestic polarisation slowing Oslo implementation (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Slowdown of Oslo Peace Process",
+                    "text": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was the derailment of Oslo momentum and the election of a hardline Likud government. After extremist Yigal Amir murdered Rabin in Tel Aviv amid Hamas bus bombings, Benjamin Netanyahu won the May 1996 election and halted further territorial handovers to the PNA."
+                  },
+                  {
+                    "label": "Option B (4/4): Deepened Polarisation in Israel",
+                    "text": "One consequence of Prime Minister Rabin’s murder by Jewish law student Yigal Amir in November 1995 was profound political trauma and polarisation inside Israeli society. Removing the respected war hero capable of persuading skeptical Israelis to trade land for peace left public trust fractured and permanently slowed implementation of the Oslo accords."
+                  }
+                ]
               }
             },
             "scaffolding": {

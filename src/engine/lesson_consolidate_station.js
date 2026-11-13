@@ -1,15 +1,16 @@
 /**
  * Lesson Consolidate Station
  * 
- * Embedded, zero-click interactive retrieval & consolidation station
- * rendered directly at the bottom of every lesson page across all units.
+ * Embedded, auto-collapsed 1-Click 6-Pill Launcher Bar & interactive consolidation hub
+ * rendered directly at the bottom of every lesson page across all Key Stages (KS2, KS3, GCSE).
  * 
- * 5 Unified Terminal Modes (Sequential Plenary Flow):
- * 1. Living Timeline (Default First Tab) — Centrefold workbook milestone (pp. 8–9) & Dual-Pathway guide
+ * 6 Unified Plenary & Retrieval Modes:
+ * 1. Living Timeline — Centrefold workbook milestone (pp. 8–9) & Dual-Pathway guide
  * 2. Lesson Quiz (10–20 Qs) — Instant closed-book multiple-choice factual retrieval
  * 3. Vocab Cards (5–8 Terms) — Interactive 3D flip-cards for disciplinary terminology
  * 4. Chrono Domino (3–5 Milestones) — Tap-to-order causal sequence & turning points challenge
  * 5. Exit Ticket — Rotating disciplinary synthesis (Golden Sentence / Causal Scale / Misconception / Hinge Verdict)
+ * 6. Classroom Arena — Whole-class active plenaries (Hot Seat Taboo / Four Corners / 60s Standoff / Lightning Chain)
  */
 
 import { appStore } from './store.js';
@@ -317,6 +318,21 @@ function clearAllArenaTimers(state) {
     }
     a[`${key}TimerRunning`] = false;
   });
+}
+
+function stopAllArenaTimers(state) {
+  clearAllArenaTimers(state);
+  if (state && state.arena) {
+    state.arena.isWhiteboardMode = false;
+  }
+  if (typeof document !== 'undefined') {
+    const portal = document.getElementById('arena-projector-portal');
+    if (portal) portal.remove();
+  }
+  if (typeof window !== 'undefined' && window._arenaEscKeyHandler) {
+    window.removeEventListener('keydown', window._arenaEscKeyHandler);
+    window._arenaEscKeyHandler = null;
+  }
 }
 
 function tickArenaTimer(lessonId, gameKey, totalDuration) {
@@ -877,64 +893,67 @@ export function renderConsolidateStationHTML(lesson) {
   } catch (e) { }
 
   return `
-    <div class="phase-card no-print consolidate-station" id="consolidate-station-${lesson.id}" style="margin: 35px 0 30px 0; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 16px; box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06); overflow: hidden; max-width: 100%; box-sizing: border-box;">
-      <!-- Masthead & Tab Controller -->
-      <div style="background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-bottom: 2px solid #e2e8f0; padding: clamp(12px, 3.5vw, 18px) clamp(14px, 4vw, 24px); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <div style="width: 44px; height: 44px; border-radius: 12px; background: #eff6ff; border: 1.5px solid #bfdbfe; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; color: #2563eb; flex-shrink: 0; box-shadow: 0 2px 8px rgba(37,99,235,0.12);">
+    <div class="phase-card no-print consolidate-station" id="consolidate-station-${lesson.id}" style="margin: 18px 0 24px 0; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05); overflow: hidden; max-width: 100%; box-sizing: border-box;">
+      <!-- Sleek 1-Click 6-Pill Launcher Masthead -->
+      <div id="station-masthead-${lesson.id}" style="background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-bottom: none; padding: 12px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <div onclick="window.toggleConsolidateStation('${lesson.id}', event)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.toggleConsolidateStation('${lesson.id}', event);}" title="Click to expand or collapse Check &amp; Consolidate Hub" style="display: flex; align-items: center; gap: 11px; cursor: pointer; user-select: none;">
+          <div style="width: 36px; height: 36px; border-radius: 9px; background: #eff6ff; border: 1.5px solid #bfdbfe; display: flex; align-items: center; justify-content: center; font-size: 1.12rem; color: #2563eb; flex-shrink: 0; box-shadow: 0 1px 4px rgba(37,99,235,0.1);">
             🎯
           </div>
           <div>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <h3 style="margin: 0; color: #0f172a; font-size: 1.3rem; font-family: 'Playfair Display', Georgia, serif; font-weight: 700;">
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <h3 style="margin: 0; color: #0f172a; font-size: 1.12rem; line-height: 1.2; font-family: 'Playfair Display', Georgia, serif; font-weight: 700;">
                 Check &amp; Consolidate Hub
               </h3>
+              <i id="station-title-chevron-${lesson.id}" class="fa-solid fa-chevron-down" style="font-size: 0.74rem; color: #64748b; transition: transform 0.2s ease; transform: rotate(0deg);"></i>
               ${savedScoreBadge}
             </div>
-            <p style="margin: 3px 0 0 0; color: #64748b; font-size: 0.85rem;">
-              ${isKs2
-      ? 'Lesson Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Primary Exit Ticket &bull; Classroom Arena'
-      : 'Centrefold Timeline &bull; Retrieval Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Exit Ticket &bull; Classroom Arena'}
+            <p style="margin: 2px 0 0 0; color: #64748b; font-size: 0.78rem; line-height: 1.25;">
+              <span id="station-status-hint-${lesson.id}">Select any activity tab to expand &bull; Plenary &amp; Retrieval</span>
             </p>
           </div>
         </div>
 
-        <!-- Mode Select Tabs (Living Timeline FIRST) -->
-        <div class="station-tabs" style="display: flex; gap: 4px; background: #e2e8f0; padding: 4px; border-radius: 10px; flex-wrap: wrap;">
+        <!-- 1-Click Mode Launcher Pills & Collapse Toggle -->
+        <div class="station-tabs" style="display: flex; align-items: center; gap: 5px; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 4px; border-radius: 10px; flex-wrap: wrap;">
           ${hasTimeline ? `
-            <button type="button" class="station-tab-btn active" id="tab-btn-timeline-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'timeline')" style="padding: 6px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);">
-              <i class="fa-solid fa-map" style="color: #0284c7;"></i> Living Timeline
+            <button type="button" class="station-tab-btn" data-mode="timeline" id="tab-btn-timeline-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'timeline', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+              <i class="fa-solid fa-map" data-default-color="#0284c7" data-active-color="#38bdf8" style="color: #0284c7;"></i> Living Timeline
             </button>
           ` : ''}
           ${quizCount > 0 ? `
-            <button type="button" class="station-tab-btn ${!hasTimeline ? 'active' : ''}" id="tab-btn-quiz-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'quiz')" style="padding: 6px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; ${!hasTimeline ? 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);' : 'background: transparent; color: #475569;'}">
-              <i class="fa-solid fa-circle-check" style="color: #2563eb;"></i> Lesson Quiz (${quizCount})
+            <button type="button" class="station-tab-btn" data-mode="quiz" id="tab-btn-quiz-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'quiz', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+              <i class="fa-solid fa-circle-check" data-default-color="#2563eb" data-active-color="#60a5fa" style="color: #2563eb;"></i> Lesson Quiz (${quizCount})
             </button>
           ` : ''}
           ${vocabCount > 0 ? `
-            <button type="button" class="station-tab-btn" id="tab-btn-vocab-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'vocab')" style="padding: 6px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; background: transparent; color: #475569;">
-              <i class="fa-solid fa-layer-group" style="color: #10b981;"></i> Vocab Cards (${vocabCount})
+            <button type="button" class="station-tab-btn" data-mode="vocab" id="tab-btn-vocab-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'vocab', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+              <i class="fa-solid fa-layer-group" data-default-color="#10b981" data-active-color="#34d399" style="color: #10b981;"></i> Vocab Cards (${vocabCount})
             </button>
           ` : ''}
           ${dominoCount > 0 ? `
-            <button type="button" class="station-tab-btn" id="tab-btn-domino-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'domino')" style="padding: 6px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; background: transparent; color: #475569;">
-              <i class="fa-solid fa-timeline" style="color: #8b5cf6;"></i> Chrono Domino (${dominoCount})
+            <button type="button" class="station-tab-btn" data-mode="domino" id="tab-btn-domino-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'domino', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+              <i class="fa-solid fa-timeline" data-default-color="#8b5cf6" data-active-color="#a78bfa" style="color: #8b5cf6;"></i> Chrono Domino (${dominoCount})
             </button>
           ` : ''}
           ${hasExitTicket ? `
-            <button type="button" class="station-tab-btn" id="tab-btn-exit-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'exit')" style="padding: 6px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; background: transparent; color: #475569;">
-              <i class="fa-solid fa-ticket" style="color: #f59e0b;"></i> Exit Ticket
+            <button type="button" class="station-tab-btn" data-mode="exit" id="tab-btn-exit-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'exit', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+              <i class="fa-solid fa-ticket" data-default-color="#f59e0b" data-active-color="#fbbf24" style="color: #f59e0b;"></i> Exit Ticket
             </button>
           ` : ''}
-          <button type="button" class="station-tab-btn" id="tab-btn-arena-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'arena')" style="padding: 6px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; background: transparent; color: #475569;">
-            <i class="fa-solid fa-bolt" style="color: #f59e0b;"></i> Classroom Arena
+          <button type="button" class="station-tab-btn" data-mode="arena" id="tab-btn-arena-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'arena', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+            <i class="fa-solid fa-bolt" data-default-color="#f59e0b" data-active-color="#fbbf24" style="color: #f59e0b;"></i> Classroom Arena
+          </button>
+          <button type="button" id="station-collapse-btn-${lesson.id}" aria-expanded="false" title="Expand Check &amp; Consolidate Hub" onclick="window.toggleConsolidateStation('${lesson.id}', event)" style="padding: 5px 9px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #e2e8f0; color: #334155;">
+            <span>Expand</span>
+            <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; transition: transform 0.2s ease; transform: rotate(0deg);"></i>
           </button>
         </div>
       </div>
 
-      <!-- Main Interactive Viewport -->
-      <div id="station-body-${lesson.id}" class="station-body-container" style="padding: clamp(12px, 3.5vw, 24px); min-height: 270px; background: #ffffff; box-sizing: border-box; overflow-x: hidden; max-width: 100%;">
-        <!-- Injected via JavaScript controller -->
+      <!-- Main Interactive Viewport (Auto-Collapsed on Initial Load) -->
+      <div id="station-body-${lesson.id}" class="station-body-container" style="display: none; padding: clamp(12px, 3.5vw, 24px); min-height: 270px; background: #ffffff; box-sizing: border-box; overflow-x: hidden; max-width: 100%;">
+        <!-- Injected lazily or on demand via JavaScript controller -->
       </div>
     </div>
   `;
@@ -955,15 +974,22 @@ export function initConsolidateStation(lesson) {
 
   const livingTimeline = isKs2 ? null : extractLivingTimelineMilestone(lesson, currentIdx);
   const exitTicket = extractExitTicket(lesson, currentIdx);
+  const hasArena = (rawVocab.length > 0 || (lesson.causal_domino_spine && lesson.causal_domino_spine.stages && lesson.causal_domino_spine.stages.length > 0));
 
-  if (rawQuiz.length === 0 && rawVocab.length === 0 && milestones.length === 0 && !livingTimeline && !exitTicket) return;
+  if (rawQuiz.length === 0 && rawVocab.length === 0 && milestones.length === 0 && !livingTimeline && !exitTicket && !hasArena) return;
 
   const allQuestions = normalizeQuestions(rawQuiz);
   const allVocab = normalizeVocab(rawVocab);
   const shuffledMilestones = shuffleDominoMilestones(milestones);
 
-  // Living Timeline is the DEFAULT tab for KS3/GCSE, but KS2 defaults to Lesson Quiz (or Domino)
-  let initialMode = livingTimeline ? 'timeline' : (allQuestions.length > 0 ? 'quiz' : (milestones.length > 0 ? 'domino' : 'vocab'));
+  // Default mode when expanded via title/chevron (Living Timeline for KS3/GCSE; Quiz/Domino/Vocab for KS2)
+  let initialMode = livingTimeline
+    ? 'timeline'
+    : (allQuestions.length > 0
+      ? 'quiz'
+      : (milestones.length > 0
+        ? 'domino'
+        : (allVocab.length > 0 ? 'vocab' : (exitTicket ? 'exit' : 'arena'))));
 
   // Load saved exit ticket text
   let savedExitText = '';
@@ -996,6 +1022,7 @@ export function initConsolidateStation(lesson) {
   const state = {
     lessonId: lesson.id,
     isKs2,
+    isOpen: false, // Auto-collapsed on initial lesson load across KS2, KS3 & GCSE
     mode: initialMode, // 'timeline' | 'quiz' | 'vocab' | 'domino' | 'exit' | 'arena'
     totalLessons: lessonsList.length || 5,
     allQuestions,
@@ -1067,7 +1094,7 @@ export function initConsolidateStation(lesson) {
   };
 
   window.consolidateStations[lesson.id] = state;
-  renderStationContent(lesson.id);
+  syncStationOpenUI(lesson.id);
 }
 
 function renderStationContent(lessonId) {
@@ -2396,47 +2423,155 @@ function renderArenaLightningView(state, arenaData, isWhiteboard) {
 }
 
 // -------------------------------------------------------------
-// GLOBAL ACTION HANDLERS
+// STATION OPEN/COLLAPSE UI SYNCHRONIZATION & GLOBAL HANDLERS
 // -------------------------------------------------------------
-window.switchConsolidateTab = function (lessonId, mode) {
+function syncStationOpenUI(lessonId) {
   const state = window.consolidateStations[lessonId];
   if (!state) return;
 
-  clearAllArenaTimers(state);
-  const portal = document.getElementById('arena-projector-portal');
-  if (portal) portal.remove();
-  state.mode = mode;
+  const isOpen = Boolean(state.isOpen);
 
-  if (mode === 'quiz') {
-    state.questions = state.allQuestions;
-    state.currentIndex = 0;
-    state.score = 0;
-    state.answered = false;
-    state.selectedOption = null;
-  } else if (mode === 'vocab') {
-    state.vocabIndex = 0;
-    state.vocabFlipped = false;
+  const bodyEl = document.getElementById(`station-body-${lessonId}`);
+  if (bodyEl) {
+    bodyEl.style.display = isOpen ? 'block' : 'none';
   }
 
-  // Update tab button styles
+  const mastheadEl = document.getElementById(`station-masthead-${lessonId}`);
+  if (mastheadEl) {
+    mastheadEl.style.borderBottom = isOpen ? '2px solid #e2e8f0' : 'none';
+  }
+
+  const hintEl = document.getElementById(`station-status-hint-${lessonId}`);
+  if (hintEl) {
+    hintEl.innerHTML = isOpen
+      ? 'Click active tab or Collapse to close &bull; Plenary &amp; Retrieval'
+      : 'Select any activity tab to expand &bull; Plenary &amp; Retrieval';
+  }
+
+  const titleChevron = document.getElementById(`station-title-chevron-${lessonId}`);
+  if (titleChevron) {
+    titleChevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+  }
+
+  const collapseBtn = document.getElementById(`station-collapse-btn-${lessonId}`);
+  if (collapseBtn) {
+    collapseBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    collapseBtn.title = isOpen
+      ? 'Collapse Check & Consolidate Hub'
+      : 'Expand Check & Consolidate Hub';
+    collapseBtn.style.background = isOpen ? '#ffffff' : '#e2e8f0';
+    collapseBtn.innerHTML = isOpen
+      ? '<span>Collapse</span> <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; transition: transform 0.2s ease; transform: rotate(180deg);"></i>'
+      : '<span>Expand</span> <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; transition: transform 0.2s ease; transform: rotate(0deg);"></i>';
+  }
+
   const card = document.getElementById(`consolidate-station-${lessonId}`);
   if (card) {
     card.querySelectorAll('.station-tab-btn').forEach((btn) => {
-      btn.style.background = 'transparent';
-      btn.style.color = '#475569';
-      btn.style.boxShadow = 'none';
-      btn.classList.remove('active');
+      const icon = btn.querySelector('i');
+      if (!isOpen) {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+        btn.style.background = '#ffffff';
+        btn.style.color = '#1e293b';
+        btn.style.border = '1px solid #cbd5e1';
+        btn.style.boxShadow = '0 1px 2px rgba(0,0,0,0.04)';
+        if (icon && icon.dataset.defaultColor) {
+          icon.style.color = icon.dataset.defaultColor;
+        }
+      } else {
+        const isActive =
+          (btn.dataset.mode && btn.dataset.mode === state.mode) ||
+          btn.id === `tab-btn-${state.mode}-${lessonId}`;
+        if (isActive) {
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          btn.style.background = '#0f172a';
+          btn.style.color = '#ffffff';
+          btn.style.border = '1px solid #0f172a';
+          btn.style.boxShadow = '0 2px 6px rgba(15,23,42,0.18)';
+          if (icon && icon.dataset.activeColor) {
+            icon.style.color = icon.dataset.activeColor;
+          }
+        } else {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+          btn.style.background = 'transparent';
+          btn.style.color = '#475569';
+          btn.style.border = '1px solid transparent';
+          btn.style.boxShadow = 'none';
+          if (icon && icon.dataset.defaultColor) {
+            icon.style.color = icon.dataset.defaultColor;
+          }
+        }
+      }
     });
-    const targetTabId = `tab-btn-${mode}-${lessonId}`;
-    const activeBtn = document.getElementById(targetTabId);
-    if (activeBtn) {
-      activeBtn.style.background = '#ffffff';
-      activeBtn.style.color = '#0f172a';
-      activeBtn.style.boxShadow = '0 1px 4px rgba(0,0,0,0.1)';
-      activeBtn.classList.add('active');
-    }
+  }
+}
+
+window.toggleConsolidateStation = function (lessonId, evt) {
+  const e = evt || (typeof window !== 'undefined' ? window.event : null);
+  if (e && typeof e.stopPropagation === 'function') {
+    e.stopPropagation();
   }
 
+  const state = window.consolidateStations[lessonId];
+  if (!state) return;
+
+  if (state.isOpen) {
+    stopAllArenaTimers(state);
+    state.isOpen = false;
+    syncStationOpenUI(lessonId);
+  } else {
+    state.isOpen = true;
+    syncStationOpenUI(lessonId);
+    renderStationContent(lessonId);
+  }
+};
+
+window.switchConsolidateTab = function (lessonId, newMode, evt) {
+  const e = evt || (typeof window !== 'undefined' ? window.event : null);
+  if (e && typeof e.stopPropagation === 'function') {
+    e.stopPropagation();
+  }
+
+  const state = window.consolidateStations[lessonId];
+  if (!state) return;
+
+  if (!state.isOpen) {
+    state.isOpen = true;
+    state.mode = newMode;
+    if (newMode === 'quiz' && (!state.questions || state.questions.length === 0)) {
+      state.questions = state.allQuestions;
+    } else if (newMode === 'vocab') {
+      state.vocabFlipped = false;
+    }
+    syncStationOpenUI(lessonId);
+    renderStationContent(lessonId);
+    return;
+  }
+
+  if (state.mode === newMode) {
+    stopAllArenaTimers(state);
+    state.isOpen = false;
+    syncStationOpenUI(lessonId);
+    return;
+  }
+
+  if (state.mode === 'arena') {
+    stopAllArenaTimers(state);
+  } else {
+    clearAllArenaTimers(state);
+  }
+
+  state.mode = newMode;
+  if (newMode === 'quiz' && (!state.questions || state.questions.length === 0)) {
+    state.questions = state.allQuestions;
+  } else if (newMode === 'vocab') {
+    state.vocabFlipped = false;
+  }
+
+  syncStationOpenUI(lessonId);
   renderStationContent(lessonId);
 };
 
@@ -2488,7 +2623,17 @@ window.nextStationQuestion = function (lessonId) {
 };
 
 window.restartStationQuiz = function (lessonId) {
-  window.switchConsolidateTab(lessonId, 'quiz');
+  const state = window.consolidateStations[lessonId];
+  if (!state) return;
+  state.isOpen = true;
+  state.mode = 'quiz';
+  state.questions = state.allQuestions;
+  state.currentIndex = 0;
+  state.score = 0;
+  state.answered = false;
+  state.selectedOption = null;
+  syncStationOpenUI(lessonId);
+  renderStationContent(lessonId);
 };
 
 // Vocab handlers

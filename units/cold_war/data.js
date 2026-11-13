@@ -1490,7 +1490,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(a). Explain one consequence of the ideological differences between the USA and the Soviet Union in 1945. [4 marks]",
-            "model": "<p>One significant consequence of ideological differences was the emergence of deep post-war mistrust between the superpowers. While the USA championed liberal democracy, free-market capitalism, and individual liberty, the Soviet Union was a Marxist-Leninist dictatorship enforcing state command economics. Once Nazi Germany was defeated in 1945, this fundamental ideological clash resurfaced. Therefore, this had a major consequence because it destroyed wartime cooperation and convinced both powers that peaceful coexistence was impossible.</p>",
+            "model": "One consequence of ideological differences in 1945 was the rapid collapse of wartime cooperation into deep superpower mistrust. Once Nazi Germany was defeated, the clash between American free-market liberal democracy and Soviet one-party command communism resurfaced, convincing Washington and Moscow that each other’s post-war security aims threatened their survival.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -1511,8 +1511,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of ideological differences was the emergence of deep post-war mistrust between the superpowers. While the USA championed liberal democracy, free-market capitalism, and individual liberty, the Soviet Union was a Marxist-Leninist dictatorship enforcing state command economics. Once Nazi Germany was defeated in 1945, this fundamental ideological clash resurfaced. Therefore, this had a major consequence because it destroyed wartime cooperation and convinced both powers that peaceful coexistence was impossible.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of ideological differences in 1945 was the rapid collapse of wartime cooperation into deep superpower mistrust. Once Nazi Germany was defeated, the clash between American free-market liberal democracy and Soviet one-party command communism resurfaced, convincing Washington and Moscow that each other’s post-war security aims threatened their survival.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 49w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either the clash between liberal capitalism and one-party command communism destroying wartime cooperation after 1945 (Option A) or rival security models dividing liberated Eastern Europe (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Collapse of Wartime Cooperation",
+                    "text": "One consequence of ideological differences in 1945 was the rapid collapse of wartime cooperation into deep superpower mistrust. Once Nazi Germany was defeated, the clash between American free-market liberal democracy and Soviet one-party command communism resurfaced, convincing Washington and Moscow that each other’s post-war security aims threatened their survival."
+                  },
+                  {
+                    "label": "Option B (4/4): Rival Spheres in Europe",
+                    "text": "One consequence of incompatible US and Soviet ideologies in 1945 was the division of liberated Europe into competing political and economic spheres. Because Stalin believed Soviet security required communist regimes along his borders while America championed democratic elections and open markets, both superpowers clashed immediately over the governance of Eastern Europe."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -1532,7 +1542,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(b). Explain one consequence of the Tehran Conference (1943) for relations within the Grand Alliance. [4 marks]",
-            "model": "<p>One significant consequence of the Tehran Conference was the formal agreement to open a second front in Western Europe. Churchill and Roosevelt agreed to launch Operation Overlord across the English Channel in May 1944, easing military pressure on the Soviet Red Army. Therefore, this had a vital consequence for the Grand Alliance because fulfilling Stalin’s long-standing demand established temporary strategic unity and boosted Soviet trust in Western military commitments.</p>",
+            "model": "One consequence of the Tehran Conference in 1943 was strengthened unity within the Grand Alliance after Britain and America committed to opening a Western second front. By agreeing to launch Operation Overlord across the English Channel in 1944 to relieve pressure on the Red Army, Roosevelt and Churchill satisfied Stalin’s central wartime demand.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -1553,8 +1563,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the Tehran Conference was the formal agreement to open a second front in Western Europe. Churchill and Roosevelt agreed to launch Operation Overlord across the English Channel in May 1944, easing military pressure on the Soviet Red Army. Therefore, this had a vital consequence for the Grand Alliance because fulfilling Stalin’s long-standing demand established temporary strategic unity and boosted Soviet trust in Western military commitments.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the Tehran Conference in 1943 was strengthened unity within the Grand Alliance after Britain and America committed to opening a Western second front. By agreeing to launch Operation Overlord across the English Channel in 1944 to relieve pressure on the Red Army, Roosevelt and Churchill satisfied Stalin’s central wartime demand.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 53w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either agreeing to launch Operation Overlord in 1944 to relieve the Red Army and boost Grand Alliance unity (Option A) or Roosevelt backing Stalin against Churchill’s Balkan plan, leaving Eastern Europe to the Red Army (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Agreement on Second Front",
+                    "text": "One consequence of the Tehran Conference in 1943 was strengthened unity within the Grand Alliance after Britain and America committed to opening a Western second front. By agreeing to launch Operation Overlord across the English Channel in 1944 to relieve pressure on the Red Army, Roosevelt and Churchill satisfied Stalin’s central wartime demand."
+                  },
+                  {
+                    "label": "Option B (4/4): Red Army Influence in East",
+                    "text": "One consequence of the 1943 Tehran Conference was the rejection of Winston Churchill’s plan for an Allied invasion through the Balkans, shifting power within the Grand Alliance. Because President Roosevelt backed Stalin’s preference for invading northern France instead, Churchill was sidelined and the Red Army was left to liberate Eastern Europe alone."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -1644,73 +1664,6 @@ window.cold_war_data = {
           }
         ]
       },
-      "tasks": [
-        {
-          "id": "cold_war_l1_two_features_ideology",
-          "type": "two_features",
-          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "title": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "question": "Describe two features of the ideological differences between the USA and the USSR in 1945. [4 marks]",
-          "feature_1": {
-            "prompt": "Feature 1: Identify one fundamental political or economic characteristic of the American system in 1945.",
-            "starter": "One key ideological feature was that the United States operated on... Specifically, this meant that...",
-            "model": "One key ideological feature was that the United States was a liberal democracy founded upon free-market capitalism [1.1]. Specifically, citizens elected multiple political parties through open elections, and economic production was driven by private enterprise, the profit motive, and individual liberty."
-          },
-          "feature_2": {
-            "prompt": "Feature 2: Identify a second fundamental characteristic regarding the Soviet Marxist-Leninist system.",
-            "starter": "A second fundamental feature was that the Soviet Union was based on... In particular, this meant that...",
-            "model": "A second fundamental feature was that the Soviet Union was a Marxist-Leninist one-party dictatorship with a command economy [1.1]. In particular, all political opposition was suppressed by the state, and the government owned and planned all factories, farmland, and resources in the name of the proletariat."
-          },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "model_answer": "One key ideological feature was that the United States was a liberal democracy founded upon free-market capitalism [1.1]. Specifically, citizens elected multiple political parties through open elections, and economic production was driven by private enterprise, the profit motive, and individual liberty. A second fundamental feature was that the Soviet Union was a Marxist-Leninist one-party dictatorship with a command economy [1.1]. In particular, all political opposition was suppressed by the state, and the government owned and planned all factories, farmland, and resources in the name of the proletariat.",
-          "model": "One key ideological feature was that the United States was a liberal democracy founded upon free-market capitalism [1.1]. Specifically, citizens elected multiple political parties through open elections, and economic production was driven by private enterprise, the profit motive, and individual liberty. A second fundamental feature was that the Soviet Union was a Marxist-Leninist one-party dictatorship with a command economy [1.1]. In particular, all political opposition was suppressed by the state, and the government owned and planned all factories, farmland, and resources in the name of the proletariat."
-        },
-        {
-          "id": "cold_war_l1_consequence_atomic_bomb",
-          "type": "extended_writing",
-          "tariff": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "title": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "question": "Explain one consequence of the American development of the atomic bomb for superpower relations in 1945. [4 marks]",
-          "hints": [
-            "Point: State how Truman’s nuclear monopoly created acute Soviet insecurity and accelerated an atomic arms race [1.5].",
-            "Evidence: Reference the Trinity test, Hiroshima (6 August 1945), and Truman informing Stalin at Potsdam.",
-            "Explanation: Explain how this shattered wartime trust and motivated Stalin to construct a defensive satellite empire."
-          ],
-          "scaffolding": {
-            "structure_strip": [
-              "Point: State the consequence—the introduction of an atomic monopoly that transformed diplomatic negotiations into nuclear intimidation [1.5].",
-              "Evidence: Cite the Trinity nuclear test (July 1945), the detonation at Hiroshima, and Klaus Fuchs' spy network.",
-              "Explanation: Explain why this compelled Stalin to launch an immediate crash nuclear programme and harden control over Eastern Europe."
-            ],
-            "sentence_starters": [
-              "One significant consequence of the American development of the atomic bomb was...",
-              "At the Potsdam Conference in July 1945, President Truman attempted to use...",
-              "However, instead of intimidating Moscow, this development caused Stalin to...",
-              "Consequently, this accelerated a dangerous nuclear arms race and directly led to..."
-            ],
-            "connective_bank": [
-              "One significant consequence was that...",
-              "In particular, this meant that...",
-              "As a direct result...",
-              "Consequently, the impact was..."
-            ],
-            "word_bank": [
-              "atomic monopoly",
-              "Trinity test",
-              "Hiroshima (1945)",
-              "Harry S. Truman",
-              "Joseph Stalin",
-              "Potsdam Conference",
-              "Klaus Fuchs",
-              "arms race",
-              "buffer zone"
-            ]
-          },
-          "model_answer": "One consequence of the American atomic bomb was the breakdown of post-war trust and the start of a nuclear arms race. Specifically, when President Truman revealed the atomic bomb at Potsdam and deployed it against Hiroshima, Stalin viewed it as capitalist intimidation. Consequently, Stalin accelerated the Soviet crash nuclear programme, successfully testing their first atomic weapon in August 1949.",
-          "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "model": "One consequence of the American atomic bomb was the breakdown of post-war trust and the start of a nuclear arms race. Specifically, when President Truman revealed the atomic bomb at Potsdam and deployed it against Hiroshima, Stalin viewed it as capitalist intimidation. Consequently, Stalin accelerated the Soviet crash nuclear programme, successfully testing their first atomic weapon in August 1949."
-        }
-      ],
       "workbook_stages": [
         {
           "step": 1,
@@ -3125,7 +3078,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(a). Explain one consequence of the Yalta Conference (February 1945). [4 marks]",
-            "model": "<p>One significant consequence of the Yalta Conference was the agreement to divide post-war Germany and Berlin into four occupation zones. The Big Three allocated zones to Britain, the USA, the USSR, and France, managed through the Allied Control Council. Therefore, this was a decisive consequence because physically dividing German territory institutionalised superpower rivalry in the heart of Europe, creating the geographic fault line for future Cold War confrontation.</p>",
+            "model": "One consequence of the Yalta Conference in February 1945 was the agreement to partition post-war Germany and Berlin into four Allied occupation zones. Allocating zones to the USA, Britain, France, and the Soviet Union created the direct geographic fault line across which Cold War tensions over German recovery soon erupted.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -3146,8 +3099,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the Yalta Conference was the agreement to divide post-war Germany and Berlin into four occupation zones. The Big Three allocated zones to Britain, the USA, the USSR, and France, managed through the Allied Control Council. Therefore, this was a decisive consequence because physically dividing German territory institutionalised superpower rivalry in the heart of Europe, creating the geographic fault line for future Cold War confrontation.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the Yalta Conference in February 1945 was the agreement to partition post-war Germany and Berlin into four Allied occupation zones. Allocating zones to the USA, Britain, France, and the Soviet Union created the direct geographic fault line across which Cold War tensions over German recovery soon erupted.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 50w • Option B: 49w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either partitioning Germany and Berlin into four Allied occupation zones (Option A) or Soviet backing for the communist Lublin Poles undermining Yalta’s free-election pledges before Potsdam (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Four-Zone Division of Germany",
+                    "text": "One consequence of the Yalta Conference in February 1945 was the agreement to partition post-war Germany and Berlin into four Allied occupation zones. Allocating zones to the USA, Britain, France, and the Soviet Union created the direct geographic fault line across which Cold War tensions over German recovery soon erupted."
+                  },
+                  {
+                    "label": "Option B (4/4): Dispute Over Polish Elections",
+                    "text": "One consequence of the February 1945 Yalta Conference was bitter diplomatic friction over the future governance of Poland. Although Stalin signed the Declaration on Liberated Europe promising free democratic elections, Moscow installed the pro-Soviet Lublin communists at the expense of the exiled London Poles, eroding Western trust before Potsdam."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -3167,7 +3130,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(b). Explain one consequence of the American development of the atomic bomb in 1945. [4 marks]",
-            "model": "<p>One significant consequence of American development of the atomic bomb was the dramatic escalation of nuclear rivalry. The successful Trinity test in July 1945 gave President Truman immense diplomatic confidence at Potsdam, while the bombings of Hiroshima and Nagasaki alarmed Stalin. Therefore, this had a major consequence because it convinced Stalin that the USA intended nuclear intimidation, forcing the Soviet Union to accelerate its own atomic bomb programme by August 1949.</p>",
+            "model": "One consequence of the American development of the atomic bomb in 1945 was the launch of a dangerous superpower nuclear arms race. Alarmed by America’s nuclear monopoly after the July 1945 Trinity test and Hiroshima bombing, Joseph Stalin ordered Soviet scientists to accelerate their own atomic programme, culminating in the first Soviet test in 1949.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -3188,8 +3151,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of American development of the atomic bomb was the dramatic escalation of nuclear rivalry. The successful Trinity test in July 1945 gave President Truman immense diplomatic confidence at Potsdam, while the bombings of Hiroshima and Nagasaki alarmed Stalin. Therefore, this had a major consequence because it convinced Stalin that the USA intended nuclear intimidation, forcing the Soviet Union to accelerate its own atomic bomb programme by August 1949.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the American development of the atomic bomb in 1945 was the launch of a dangerous superpower nuclear arms race. Alarmed by America’s nuclear monopoly after the July 1945 Trinity test and Hiroshima bombing, Joseph Stalin ordered Soviet scientists to accelerate their own atomic programme, culminating in the first Soviet test in 1949.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 55w • Option B: 49w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either the Trinity and Hiroshima detonations prompting Stalin to accelerate the Soviet atomic bomb tested in 1949 (Option A) or Truman’s assertive nuclear diplomacy deepening suspicion at Potsdam (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Nuclear Arms Race Ignited",
+                    "text": "One consequence of the American development of the atomic bomb in 1945 was the launch of a dangerous superpower nuclear arms race. Alarmed by America’s nuclear monopoly after the July 1945 Trinity test and Hiroshima bombing, Joseph Stalin ordered Soviet scientists to accelerate their own atomic programme, culminating in the first Soviet test in 1949."
+                  },
+                  {
+                    "label": "Option B (4/4): Tougher Diplomacy at Potsdam",
+                    "text": "One consequence of developing the atomic bomb in July 1945 was heightened diplomatic tension between President Truman and Stalin at the Potsdam Conference. Informed of the successful Trinity detonation, Truman adopted a far more assertive stance over Eastern Europe and reparations, which Stalin interpreted as deliberate American nuclear intimidation."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -3279,60 +3252,6 @@ window.cold_war_data = {
           }
         ]
       },
-      "tasks": [
-        {
-          "id": "cold_war_l2_narrative_account_1945",
-          "type": "narrative_account",
-          "tariff": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "title": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "question": "Write a narrative account analysing how relations between the Grand Alliance deteriorated between February and August 1945. [8 marks]",
-          "stimulus": [
-            "The agreements reached at the Yalta Conference (February 1945)",
-            "The successful Trinity nuclear test and the Potsdam Conference (July–August 1945)"
-          ],
-          "hints": [
-            "Beginning: Explain the high point of wartime cooperation and compromise at Yalta (4 zones, UN Charter, Declaration on Liberated Europe) [2.1].",
-            "Escalation: Detail the death of Roosevelt, Truman’s aggressive stance, Soviet arrest of non-communist Poles, and installation of the Lublin committee [2.2, 2.3].",
-            "Climax & Outcome: Explain how the Trinity test, Clement Attlee replacing Churchill, and disputes over reparations and borders at Potsdam cemented permanent division [2.4, 2.5]."
-          ],
-          "scaffolding": {
-            "structure_strip": [
-              "Phase 1 (Yalta Consensus & Compromise): Four occupation zones, UN Charter, and free election pledges in the Declaration on Liberated Europe [2.1].",
-              "Phase 2 (The Polish Dispute & Leadership Changes): Death of FDR, Truman’s hardline diplomacy, and Soviet installation of the Lublin puppet regime [2.2, 2.3].",
-              "Phase 3 (Potsdam Deadlock & Atomic Leverage): Trinity test, Attlee replaces Churchill, and bitter deadlock over German reparations and Polish borders [2.4, 2.5]."
-            ],
-            "sentence_starters": [
-              "Initially, at the Yalta Conference in February 1945, the Big Three reached broad agreement on...",
-              "Following this, relations began to sour rapidly over the political future of Poland when...",
-              "A decisive turning point occurred in April 1945 with the death of Roosevelt and the accession of...",
-              "Consequently, by the time the leaders assembled at Potsdam in July 1945, the atmosphere had become...",
-              "This breakdown culminated in bitter deadlock over German reparations, confirming that..."
-            ],
-            "connective_bank": [
-              "Initially, at Yalta...",
-              "Following this initial compromise...",
-              "A decisive shift occurred when...",
-              "Consequently, at Potsdam...",
-              "This ultimately culminated in..."
-            ],
-            "word_bank": [
-              "Yalta Conference (Feb 1945)",
-              "Big Three",
-              "Four Zones",
-              "Declaration on Liberated Europe",
-              "Lublin Poles",
-              "Harry S. Truman",
-              "Clement Attlee",
-              "Trinity atomic test",
-              "Potsdam Conference",
-              "industrial reparations"
-            ]
-          },
-          "model_answer": "Initially, at the Yalta Conference in February 1945, the Grand Alliance maintained cooperation. Churchill, Roosevelt, and Stalin agreed to divide Germany and Berlin into four zones, establish the United Nations, and signed the Declaration on Liberated Europe promising free elections.<br><br>However, relations deteriorated over Poland. Stalin broke his promise by arresting non-communist leaders and installing the pro-Soviet Lublin government. Tensions worsened when Roosevelt died in April 1945 and was replaced by Harry S. Truman, who adopted a confrontational stance toward Soviet expansion in Eastern Europe.<br><br>Finally, relations collapsed at the Potsdam Conference in July–August 1945. Truman informed Stalin of the successful Trinity atomic test, refusing Soviet demands for $10 billion in German reparations. With atomic monopoly, the US resisted Soviet demands, ending the conference without agreement and cementing the ideological division of Europe.",
-          "topic": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "model": "Initially, at the Yalta Conference in February 1945, the Grand Alliance maintained cooperation. Churchill, Roosevelt, and Stalin agreed to divide Germany and Berlin into four zones, establish the United Nations, and signed the Declaration on Liberated Europe promising free elections.<br><br>However, relations deteriorated over Poland. Stalin broke his promise by arresting non-communist leaders and installing the pro-Soviet Lublin government. Tensions worsened when Roosevelt died in April 1945 and was replaced by Harry S. Truman, who adopted a confrontational stance toward Soviet expansion in Eastern Europe.<br><br>Finally, relations collapsed at the Potsdam Conference in July–August 1945. Truman informed Stalin of the successful Trinity atomic test, refusing Soviet demands for $10 billion in German reparations. With atomic monopoly, the US resisted Soviet demands, ending the conference without agreement and cementing the ideological division of Europe."
-        }
-      ],
       "workbook_stages": [
         {
           "step": 1,
@@ -4745,7 +4664,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(a). Explain one consequence of Churchill’s 'Iron Curtain' speech (March 1946). [4 marks]",
-            "model": "<p>One significant consequence of Churchill’s 'Iron Curtain' speech in March 1946 was the public hardening of ideological hostility between East and West. Speaking in Fulton, Missouri, Churchill declared that an 'iron curtain has descended across the Continent', warning against Soviet expansion. Therefore, this had a major consequence because Stalin responded aggressively in *Pravda*, comparing Churchill to Hitler and framing the speech as Western warmongering that justified Soviet satellite domination.</p>",
+            "model": "One consequence of Winston Churchill’s March 1946 Iron Curtain speech at Fulton, Missouri was a sharp escalation in public hostility from Moscow. Outraged by Churchill’s warning alongside President Truman that Soviet rule had divided Europe, Joseph Stalin denounced Churchill in Pravda as a warmonger comparable to Hitler, deepening East-West distrust.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -4766,8 +4685,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of Churchill’s 'Iron Curtain' speech in March 1946 was the public hardening of ideological hostility between East and West. Speaking in Fulton, Missouri, Churchill declared that an 'iron curtain has descended across the Continent', warning against Soviet expansion. Therefore, this had a major consequence because Stalin responded aggressively in *Pravda*, comparing Churchill to Hitler and framing the speech as Western warmongering that justified Soviet satellite domination.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of Winston Churchill’s March 1946 Iron Curtain speech at Fulton, Missouri was a sharp escalation in public hostility from Moscow. Outraged by Churchill’s warning alongside President Truman that Soviet rule had divided Europe, Joseph Stalin denounced Churchill in Pravda as a warmonger comparable to Hitler, deepening East-West distrust.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 50w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Stalin’s furious Pravda response comparing Churchill to Hitler and escalating East-West hostility (Option A) or rallying Western opinion alongside Truman toward containment of Soviet control (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Furious Soviet Backlash",
+                    "text": "One consequence of Winston Churchill’s March 1946 Iron Curtain speech at Fulton, Missouri was a sharp escalation in public hostility from Moscow. Outraged by Churchill’s warning alongside President Truman that Soviet rule had divided Europe, Joseph Stalin denounced Churchill in Pravda as a warmonger comparable to Hitler, deepening East-West distrust."
+                  },
+                  {
+                    "label": "Option B (4/4): Hardening Western Opinion",
+                    "text": "One consequence of Churchill’s March 1946 Fulton speech was the popularisation of the idea that wartime cooperation with Moscow was dead. By publicly exposing Soviet police-state domination across Eastern European capitals with President Truman seated beside him, Churchill prepared Western public and political opinion for a firmer policy of containment."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -4787,7 +4716,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(b). Explain one consequence of the Truman Doctrine (March 1947). [4 marks]",
-            "model": "<p>One significant consequence of the Truman Doctrine in March 1947 was the official commitment of the United States to a global policy of containment. Truman pledged $400 million in economic and military aid to resist communist subversion in Greece and Turkey. Therefore, this was a decisive consequence because it ended American peacetime isolationism and committed the US government to actively resisting Soviet expansionism anywhere in the world.</p>",
+            "model": "One consequence of the Truman Doctrine in March 1947 was the permanent end of American peacetime isolationism in favour of global containment. By pledging $400 million in military and economic aid to defend Greece and Turkey from communist takeover, President Truman committed the United States to actively resisting Soviet expansion worldwide.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -4808,8 +4737,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the Truman Doctrine in March 1947 was the official commitment of the United States to a global policy of containment. Truman pledged $400 million in economic and military aid to resist communist subversion in Greece and Turkey. Therefore, this was a decisive consequence because it ended American peacetime isolationism and committed the US government to actively resisting Soviet expansionism anywhere in the world.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the Truman Doctrine in March 1947 was the permanent end of American peacetime isolationism in favour of global containment. By pledging $400 million in military and economic aid to defend Greece and Turkey from communist takeover, President Truman committed the United States to actively resisting Soviet expansion worldwide.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Truman’s $400 million Greece and Turkey aid package ending US isolationism in favour of containment (Option A) or Stalin creating Cominform in September 1947 to enforce bloc obedience (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): End of US Isolationism",
+                    "text": "One consequence of the Truman Doctrine in March 1947 was the permanent end of American peacetime isolationism in favour of global containment. By pledging $400 million in military and economic aid to defend Greece and Turkey from communist takeover, President Truman committed the United States to actively resisting Soviet expansion worldwide."
+                  },
+                  {
+                    "label": "Option B (4/4): Creation of Soviet Cominform",
+                    "text": "One consequence of the March 1947 Truman Doctrine was Joseph Stalin’s decision to tighten ideological control across Eastern Europe. Viewing American containment and the accompanying Marshall Plan as dollar imperialism aimed at undermining Moscow’s buffer zone, Stalin established Cominform in September 1947 to enforce strict Kremlin obedience among European communist parties."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -4963,85 +4902,6 @@ window.cold_war_data = {
           }
         ]
       },
-      "tasks": [
-        {
-          "id": "cold_war_l3_source_utility_berlin_blockade",
-          "type": "source_utility",
-          "tariff": "Question 3: Forensic Source Utility [8 marks • 10 mins]",
-          "title": "Question 3: Forensic Source Utility [8 marks • 10 mins]",
-          "question": "How useful are Sources A and B for an enquiry into the reasons for the Berlin Blockade and the Allied response (1948–1949)? [8 marks]",
-          "stimulus": [
-            "Source A: Extract from a speech by British Foreign Secretary Ernest Bevin to the House of Commons, 30 June 1948.",
-            "Source B: British political cartoon by David Low in the Evening Standard, July 1948, depicting the Berlin Airlift."
-          ],
-          "hints": [
-            "Content & Context: Evaluate Source A for Bevin’s statement of Allied resolve and the decision to supply 2.5 million West Berliners by air [3.4].",
-            "Corroborate with historical facts: Operation Vittles, 278,000 flights, Deutsche Mark introduction, and Stalin’s aim to force Allies out.",
-            "Provenance & Purpose: Analyse Bevin’s political motive to maintain parliamentary and civilian morale vs cartoon commentary in Source B."
-          ],
-          "scaffolding": {
-            "structure_strip": [
-              "Source A Content & Context: Bevin’s identification of Soviet starvation tactics and Allied determination to sustain Berlin via air [3.4].",
-              "Source A Provenance: Authoritative statement of British foreign policy in Parliament vs need to project public confidence.",
-              "Source B Content & Context: Low’s visual depiction of Soviet frustration at the endless skyway of cargo planes landing at Tempelhof.",
-              "Overall Judgment: Synthesize how both sources together provide valuable insight into Allied political resolve and logistical triumph."
-            ],
-            "sentence_starters": [
-              "Source A is highly useful because its content reveals the British government’s official resolve to...",
-              "From my own historical knowledge, I know that Stalin severed all road and rail access because...",
-              "Furthermore, the provenance of Source A adds significant value because it was delivered by...",
-              "However, a historian must recognize its limitations, such as...",
-              "Source B complements Source A by visually demonstrating...",
-              "In conclusion, both sources are extremely valuable for understanding how the airlift defeated Soviet coercion."
-            ],
-            "connective_bank": [
-              "Source A is useful for showing...",
-              "This is corroborated by historical facts because...",
-              "Regarding provenance, Source A is valuable because...",
-              "Source B provides a complementary perspective by...",
-              "In conclusion, both sources are highly useful because..."
-            ],
-            "word_bank": [
-              "Berlin Blockade (1948–49)",
-              "Operation Vittles",
-              "Ernest Bevin",
-              "Tempelhof Airport",
-              "Deutsche Mark",
-              "Trizonia",
-              "Gail Halvorsen",
-              "David Low cartoon",
-              "NATO (1949)"
-            ]
-          },
-          "model_answer": "Source A is useful because it provides official evidence of the Western Allies' resolve to resist Soviet pressure in Berlin. Foreign Secretary Ernest Bevin states Britain's determination to supply 2.5 million West Berliners by air rather than surrender the city. This matches my knowledge of Operation Vittles, which flew over 2.3 million tons of supplies into Berlin. However, as a parliamentary speech aimed at rallying domestic morale, Bevin downplays the terrifying risk of war with the USSR.<br><br>Source B is useful because it reveals the Soviet motive for the blockade: anger over Western economic unification and the introduction of the Deutsche Mark. From my knowledge, Stalin closed all road, rail, and canal routes on 24 June 1948 to force the Western powers out of Berlin. Overall, both sources are highly useful for showing the causes of the blockade and the Allied determination to fly supplies into West Berlin.",
-          "topic": "Question 3: Forensic Source Utility [8 marks • 10 mins]",
-          "model": "Source A is useful because it provides official evidence of the Western Allies' resolve to resist Soviet pressure in Berlin. Foreign Secretary Ernest Bevin states Britain's determination to supply 2.5 million West Berliners by air rather than surrender the city. This matches my knowledge of Operation Vittles, which flew over 2.3 million tons of supplies into Berlin. However, as a parliamentary speech aimed at rallying domestic morale, Bevin downplays the terrifying risk of war with the USSR.<br><br>Source B is useful because it reveals the Soviet motive for the blockade: anger over Western economic unification and the introduction of the Deutsche Mark. From my knowledge, Stalin closed all road, rail, and canal routes on 24 June 1948 to force the Western powers out of Berlin. Overall, both sources are highly useful for showing the causes of the blockade and the Allied determination to fly supplies into West Berlin.",
-          "source_a": {
-            "title": "Source A: Speech by Foreign Secretary Ernest Bevin to the House of Commons (30 June 1948)",
-            "badge": "Official Parliamentary Record • 1948",
-            "author": "Ernest Bevin, British Foreign Secretary, addressing Parliament (30 June 1948)",
-            "text": "The House will be aware of the grave situation which has arisen in Berlin. The Soviet authorities have cut off all rail and road traffic between the Western zones and Berlin. His Majesty's Government cannot be forced out of Berlin by starvation or coercion. We have put into operation an organized air service to carry essential flour, wheat, and coal into the British and American sectors. We are determined to prevent the 2.5 million inhabitants of West Berlin from being starved into political surrender."
-          },
-          "source_b": {
-            "title": "Source B: Political Cartoon by David Low, Evening Standard (July 1948)",
-            "badge": "British Political Cartoon • 1948",
-            "author": "David Low, Evening Standard, London (July 1948)",
-            "text": "[Visual Cartoon: Depicts a massive Soviet barricade across the land highway to Berlin, while overhead, an unbroken stream of British and American cargo aircraft flies directly over the blockade carrying coal, flour, and medical supplies into Tempelhof Airport, leaving Soviet guards watching helplessly below.]"
-          },
-          "sourceA": {
-            "title": "Source A: Speech by Foreign Secretary Ernest Bevin to the House of Commons (30 June 1948)",
-            "badge": "Official Parliamentary Record • 1948",
-            "author": "Ernest Bevin, British Foreign Secretary, addressing Parliament (30 June 1948)",
-            "text": "The House will be aware of the grave situation which has arisen in Berlin. The Soviet authorities have cut off all rail and road traffic between the Western zones and Berlin. His Majesty's Government cannot be forced out of Berlin by starvation or coercion. We have put into operation an organized air service to carry essential flour, wheat, and coal into the British and American sectors. We are determined to prevent the 2.5 million inhabitants of West Berlin from being starved into political surrender."
-          },
-          "sourceB": {
-            "title": "Source B: Political Cartoon by David Low, Evening Standard (July 1948)",
-            "badge": "British Political Cartoon • 1948",
-            "author": "David Low, Evening Standard, London (July 1948)",
-            "text": "[Visual Cartoon: Depicts a massive Soviet barricade across the land highway to Berlin, while overhead, an unbroken stream of British and American cargo aircraft flies directly over the blockade carrying coal, flour, and medical supplies into Tempelhof Airport, leaving Soviet guards watching helplessly below.]"
-          }
-        }
-      ],
       "workbook_stages": [
         {
           "step": 1,
@@ -6459,7 +6319,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(a). Explain one consequence of the Cuban Revolution of 1959. [4 marks]",
-            "model": "<p>One significant consequence of the 1959 Cuban Revolution was the establishment of a pro-Soviet communist ally on the USA’s doorstep. After Fidel Castro seized power, he nationalised $1 billion of American-owned businesses and sugar refineries. Following the US sugar embargo, Castro turned to Moscow, securing Soviet oil and economic subsidies. Therefore, this had a profound consequence because it gave the USSR a strategic military foothold just ninety miles from Florida.</p>",
+            "model": "One consequence of the 1959 Cuban Revolution was the creation of a pro-Soviet ally just ninety miles from the coast of Florida. After Fidel Castro nationalised American-owned sugar refineries and Washington imposed a crippling trade embargo, Castro turned to Nikita Khrushchev for Soviet oil purchases, economic subsidies, and military protection.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -6480,8 +6340,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the 1959 Cuban Revolution was the establishment of a pro-Soviet communist ally on the USA’s doorstep. After Fidel Castro seized power, he nationalised $1 billion of American-owned businesses and sugar refineries. Following the US sugar embargo, Castro turned to Moscow, securing Soviet oil and economic subsidies. Therefore, this had a profound consequence because it gave the USSR a strategic military foothold just ninety miles from Florida.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the 1959 Cuban Revolution was the creation of a pro-Soviet ally just ninety miles from the coast of Florida. After Fidel Castro nationalised American-owned sugar refineries and Washington imposed a crippling trade embargo, Castro turned to Nikita Khrushchev for Soviet oil purchases, economic subsidies, and military protection.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 50w • Option B: 53w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either US embargoes pushing Castro into trade, oil, and military alignment with Khrushchev 90 miles from Florida (Option A) or Castro nationalising $1 billion of US assets triggering embargoes and CIA exile plots (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Cuban-Soviet Strategic Alliance",
+                    "text": "One consequence of the 1959 Cuban Revolution was the creation of a pro-Soviet ally just ninety miles from the coast of Florida. After Fidel Castro nationalised American-owned sugar refineries and Washington imposed a crippling trade embargo, Castro turned to Nikita Khrushchev for Soviet oil purchases, economic subsidies, and military protection."
+                  },
+                  {
+                    "label": "Option B (4/4): Breakdown of US-Cuban Relations",
+                    "text": "One consequence of Fidel Castro’s overthrow of Fulgencio Batista in January 1959 was the rapid collapse of diplomatic and economic relations with the United States. Outraged by Castro’s seizure of $1 billion in American corporate assets, Washington imposed sweeping trade embargoes and authorised covert CIA plans by Cuban exiles to topple his regime."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -6501,7 +6371,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(b). Explain one consequence of the Bay of Pigs invasion (April 1961). [4 marks]",
-            "model": "<p>One significant consequence of the disastrous Bay of Pigs invasion in April 1961 was the direct deployment of Soviet nuclear weapons to Cuba. The botched CIA landing by 1,400 Cuban exiles publicly humiliated President Kennedy and exposed American aggression. Convinced another invasion was imminent, Castro appealed to Khrushchev for military protection. Therefore, this was a decisive consequence because it led Khrushchev to secretly install medium-range nuclear missiles in Cuba in 1962.</p>",
+            "model": "One consequence of the failed Bay of Pigs invasion in April 1961 was Cuba’s request for Soviet military protection that led to Operation Anadyr. Convinced after defeating 1,400 CIA-backed Cuban exiles that Washington would invade again, Fidel Castro allowed Nikita Khrushchev to secretly deploy medium-range nuclear missiles in Cuba in 1962.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -6522,8 +6392,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the disastrous Bay of Pigs invasion in April 1961 was the direct deployment of Soviet nuclear weapons to Cuba. The botched CIA landing by 1,400 Cuban exiles publicly humiliated President Kennedy and exposed American aggression. Convinced another invasion was imminent, Castro appealed to Khrushchev for military protection. Therefore, this was a decisive consequence because it led Khrushchev to secretly install medium-range nuclear missiles in Cuba in 1962.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the failed Bay of Pigs invasion in April 1961 was Cuba’s request for Soviet military protection that led to Operation Anadyr. Convinced after defeating 1,400 CIA-backed Cuban exiles that Washington would invade again, Fidel Castro allowed Nikita Khrushchev to secretly deploy medium-range nuclear missiles in Cuba in 1962.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either defeating 1,400 CIA-backed exiles prompting Castro and Khrushchev to deploy nuclear missiles in 1962 (Option A) or humiliating Kennedy while consolidating Castro’s socialist rule (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Deployment of Soviet Missiles",
+                    "text": "One consequence of the failed Bay of Pigs invasion in April 1961 was Cuba’s request for Soviet military protection that led to Operation Anadyr. Convinced after defeating 1,400 CIA-backed Cuban exiles that Washington would invade again, Fidel Castro allowed Nikita Khrushchev to secretly deploy medium-range nuclear missiles in Cuba in 1962."
+                  },
+                  {
+                    "label": "Option B (4/4): Humiliation of President Kennedy",
+                    "text": "One consequence of the April 1961 Bay of Pigs fiasco was severe international humiliation for President Kennedy alongside strengthened support for Castro inside Cuba. Crushing the CIA-sponsored exile brigade within days allowed Castro to rally Cuban nationalism, declare Cuba a socialist state, and convince Khrushchev that Kennedy was inexperienced and weak."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -6677,64 +6557,6 @@ window.cold_war_data = {
           }
         ]
       },
-      "tasks": [
-        {
-          "id": "cold_war_l4_evaluative_essay_cuban_crisis",
-          "type": "evaluative_essay",
-          "tariff": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "title": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "question": "‘President Kennedy’s decisive leadership and naval quarantine were the main reasons the Cuban Missile Crisis was resolved peacefully.’ How far do you agree? [12 marks]",
-          "stimulus": [
-            "The US naval blockade (quarantine) and secret deal over Jupiter missiles in Turkey",
-            "Khrushchev’s decision to dismantle Soviet missile sites and the Moscow-Washington hotline"
-          ],
-          "hints": [
-            "Argument (Kennedy's Leadership): Explain how Kennedy resisted military pressure from ExComm hawks for airstrikes and chose a calibrated naval quarantine [4.3].",
-            "Counter-Argument (Soviet Concessions & Secret Diplomacy): Explain Khrushchev’s willingness to de-escalate and the secret removal of US Jupiter missiles from Turkey [4.4, 4.5].",
-            "Counter-Argument (Structural Fear of Nuclear Annihilation): Explain how Mutually Assured Destruction (MAD) and near-catastrophes (Submarine B-59) forced compromise.",
-            "Conclusion: Reach a balanced, sustained historical verdict."
-          ],
-          "scaffolding": {
-            "structure_strip": [
-              "PEEL 1 (Kennedy’s Measured Crisis Management): Resisting airstrike hawks in ExComm, establishing the quarantine, and buying time for diplomacy [4.3].",
-              "PEEL 2 (Soviet Pragmatism & The Secret Jupiter Deal): Khrushchev’s letters, backchannel negotiations, and Robert Kennedy’s secret swap of Turkey missiles [4.4, 4.5].",
-              "PEEL 3 (The Shared Terror of Nuclear Annihilation): DEFCON 2, U-2 shootdown, and the realisation that conventional military escalation would cause global suicide.",
-              "Conclusion: Balanced judgment synthesising individual presidential leadership with mutual structural terror."
-            ],
-            "sentence_starters": [
-              "To a significant extent, it can be argued that Kennedy’s leadership was crucial because...",
-              "Within the secret ExComm meetings, Kennedy resisted intense pressure from the Joint Chiefs of Staff who demanded...",
-              "Instead, Kennedy opted for a calibrated naval quarantine, which successfully bought time for...",
-              "On the other hand, the peaceful resolution was equally dependent on Khrushchev’s willingness to...",
-              "Furthermore, backchannel diplomacy negotiated by Robert Kennedy and Soviet Ambassador Dobrynin resolved the crisis by secretly...",
-              "In conclusion, while Kennedy’s restraint averted an immediate invasion, the decisive factor was..."
-            ],
-            "connective_bank": [
-              "To a large extent, it can be argued that...",
-              "On the one hand, Kennedy’s leadership was decisive because...",
-              "However, an alternative crucial factor was...",
-              "Furthermore, backchannel diplomacy proved essential when...",
-              "In conclusion, the primary reason was... because..."
-            ],
-            "word_bank": [
-              "Cuban Missile Crisis (1962)",
-              "ExComm",
-              "naval quarantine",
-              "Operation Anadyr",
-              "Nikita Khrushchev",
-              "Jupiter missiles (Turkey)",
-              "Robert Kennedy",
-              "Anatoly Dobrynin",
-              "Vasili Arkhipov (B-59)",
-              "DEFCON 2",
-              "Moscow-Washington Hotline"
-            ]
-          },
-          "model_answer": "On the one hand, American aggression was a primary catalyst for the crisis. Following Fidel Castro's 1959 revolution, the CIA orchestrated the disastrous April 1961 Bay of Pigs invasion to overthrow the Cuban government. When this failed, Operation Mongoose launched continuous sabotage and assassination attempts against Castro. Furthermore, the US deployed nuclear Jupiter missiles to Turkey, directly threatening the Soviet border. Nikita Khrushchev placed missiles in Cuba partly to defend a socialist ally from another US invasion.<br><br>On the other hand, the reckless secret actions of Nikita Khrushchev were equally responsible for triggering the crisis. By secretly shipping nuclear warheads and ballistic missiles 90 miles from Florida, Khrushchev attempted to dramatically shift the nuclear balance of power in one stroke. Deploying offensive weapons in secret violated established superpower norms, forcing President Kennedy to impose a naval blockade ('quarantine') on 22 October 1962.<br><br>In conclusion, while American hostility drove Cuba into the Soviet camp, Khrushchev's decision to secretly deploy offensive nuclear missiles was the decisive spark that brought the world to the brink of nuclear war.",
-          "topic": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "model": "On the one hand, American aggression was a primary catalyst for the crisis. Following Fidel Castro's 1959 revolution, the CIA orchestrated the disastrous April 1961 Bay of Pigs invasion to overthrow the Cuban government. When this failed, Operation Mongoose launched continuous sabotage and assassination attempts against Castro. Furthermore, the US deployed nuclear Jupiter missiles to Turkey, directly threatening the Soviet border. Nikita Khrushchev placed missiles in Cuba partly to defend a socialist ally from another US invasion.<br><br>On the other hand, the reckless secret actions of Nikita Khrushchev were equally responsible for triggering the crisis. By secretly shipping nuclear warheads and ballistic missiles 90 miles from Florida, Khrushchev attempted to dramatically shift the nuclear balance of power in one stroke. Deploying offensive weapons in secret violated established superpower norms, forcing President Kennedy to impose a naval blockade ('quarantine') on 22 October 1962.<br><br>In conclusion, while American hostility drove Cuba into the Soviet camp, Khrushchev's decision to secretly deploy offensive nuclear missiles was the decisive spark that brought the world to the brink of nuclear war."
-        }
-      ],
       "workbook_stages": [
         {
           "step": 1,
@@ -8151,7 +7973,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(a). Explain one consequence of the Korean War (1950–1953) for the Cold War. [4 marks]",
-            "model": "<p>One significant consequence of the Korean War (1950–1953) was the globalisation and militarisation of the Cold War. Following North Korea’s invasion, the USA committed troops under the UN flag and implemented NSC-68, quadrupling American military spending. America also formed regional anti-communist alliances like SEATO. Therefore, this had a profound consequence because it transformed containment from a European economic policy into an aggressive worldwide armed confrontation across Asia.</p>",
+            "model": "One consequence of the Korean War (1950–53) was the globalisation and rapid militarisation of American containment policy. Following North Korea’s June 1950 invasion across the 38th Parallel, Washington implemented NSC-68 to quadruple US defence spending and established anti-communist alliances such as SEATO, turning the Cold War into a worldwide military confrontation.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -8172,8 +7994,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the Korean War (1950–1953) was the globalisation and militarisation of the Cold War. Following North Korea’s invasion, the USA committed troops under the UN flag and implemented NSC-68, quadrupling American military spending. America also formed regional anti-communist alliances like SEATO. Therefore, this had a profound consequence because it transformed containment from a European economic policy into an aggressive worldwide armed confrontation across Asia.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the Korean War (1950–53) was the globalisation and rapid militarisation of American containment policy. Following North Korea’s June 1950 invasion across the 38th Parallel, Washington implemented NSC-68 to quadruple US defence spending and established anti-communist alliances such as SEATO, turning the Cold War into a worldwide military confrontation.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either quadrupling US defence spending under NSC-68 and forming SEATO to globalise containment (Option A) or Chinese intervention producing three million deaths and permanent partition at the 38th Parallel (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Globalisation and US Rearmament",
+                    "text": "One consequence of the Korean War (1950–53) was the globalisation and rapid militarisation of American containment policy. Following North Korea’s June 1950 invasion across the 38th Parallel, Washington implemented NSC-68 to quadruple US defence spending and established anti-communist alliances such as SEATO, turning the Cold War into a worldwide military confrontation."
+                  },
+                  {
+                    "label": "Option B (4/4): Permanent Partition and Sino-US Hostility",
+                    "text": "One consequence of the Korean War was entrenched military hostility between the United States and Communist China alongside a permanently armed Korean border. After massive Chinese intervention fought UN forces to a July 1953 armistice along the 38th Parallel with three million dead, Korea remained divided into hostile capitalist and communist states."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -8193,7 +8025,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(b). Explain one consequence of the Gulf of Tonkin incident (August 1964). [4 marks]",
-            "model": "<p>One significant consequence of the Gulf of Tonkin incident in August 1964 was the dramatic escalation of direct US military intervention in Vietnam. Following alleged North Vietnamese torpedo attacks on US destroyers, Congress passed the Gulf of Tonkin Resolution, granting President Johnson authority to wage undeclared war. Therefore, this was a vital consequence because it authorised Operation Rolling Thunder bombing and committed over 500,000 American combat troops by 1968.</p>",
+            "model": "One consequence of the Gulf of Tonkin incident in August 1964 was the rapid escalation of direct American warfare in Vietnam. After alleged North Vietnamese torpedo attacks on US destroyers, Congress passed the Gulf of Tonkin Resolution, empowering President Johnson to launch Operation Rolling Thunder bombing and deploy over 500,000 US troops by 1968.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -8214,8 +8046,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the Gulf of Tonkin incident in August 1964 was the dramatic escalation of direct US military intervention in Vietnam. Following alleged North Vietnamese torpedo attacks on US destroyers, Congress passed the Gulf of Tonkin Resolution, granting President Johnson authority to wage undeclared war. Therefore, this was a vital consequence because it authorised Operation Rolling Thunder bombing and committed over 500,000 American combat troops by 1968.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the Gulf of Tonkin incident in August 1964 was the rapid escalation of direct American warfare in Vietnam. After alleged North Vietnamese torpedo attacks on US destroyers, Congress passed the Gulf of Tonkin Resolution, empowering President Johnson to launch Operation Rolling Thunder bombing and deploy over 500,000 US troops by 1968.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 53w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either the Gulf of Tonkin Resolution enabling Operation Rolling Thunder and over 500,000 US combat troops by 1968 (Option A) or granting Johnson undeclared war-making authority in Southeast Asia (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Full-Scale US Military Escalation",
+                    "text": "One consequence of the Gulf of Tonkin incident in August 1964 was the rapid escalation of direct American warfare in Vietnam. After alleged North Vietnamese torpedo attacks on US destroyers, Congress passed the Gulf of Tonkin Resolution, empowering President Johnson to launch Operation Rolling Thunder bombing and deploy over 500,000 US troops by 1968."
+                  },
+                  {
+                    "label": "Option B (4/4): Presidential War Powers Expanded",
+                    "text": "One consequence of the August 1964 Gulf of Tonkin incident was the congressional transfer of sweeping war-making powers to President Johnson without a formal declaration of war. By authorising all necessary military measures in Southeast Asia, the Gulf of Tonkin Resolution removed legislative restraint and locked Washington into a costly Asian land war."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -8369,62 +8211,6 @@ window.cold_war_data = {
           }
         ]
       },
-      "tasks": [
-        {
-          "id": "cold_war_l5_narrative_account_vietnam",
-          "type": "narrative_account",
-          "tariff": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "title": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "question": "Write a narrative account analysing the key events in the escalation of American involvement in the Vietnam War between 1954 and 1968. [8 marks]",
-          "stimulus": [
-            "The 1954 Geneva Accords and the division of Vietnam",
-            "The Gulf of Tonkin Incident (1964) and the launch of Operation Rolling Thunder"
-          ],
-          "hints": [
-            "Beginning: French collapse at Dien Bien Phu (1954), Geneva Accords dividing Vietnam at the 17th Parallel, and Eisenhower’s Domino Theory [5.1].",
-            "Escalation: Kennedy sending 16,000 military advisers, overthrow of Ngo Dinh Diem, and the August 1964 Gulf of Tonkin incident giving President Johnson open authority [5.2, 5.3].",
-            "Climax & Outcome: 1965 Operation Rolling Thunder aerial blitz, deployment of 500,000 ground troops, search-and-destroy tactics, and the shock of the 1968 Tet Offensive [5.4, 5.5]."
-          ],
-          "scaffolding": {
-            "structure_strip": [
-              "Phase 1 (1954–1960 Geneva Division & Domino Theory): French defeat, 17th Parallel division, and Eisenhower’s financial commitment to South Vietnam [5.1].",
-              "Phase 2 (1961–1964 Advisers & The Gulf of Tonkin Incident): Kennedy’s Green Berets, Diem assassination, Tonkin Resolution giving LBJ open war powers [5.2, 5.3].",
-              "Phase 3 (1965–1968 Operation Rolling Thunder & Ground Escalation): Air blitz, 500,000 US combat troops, search-and-destroy missions, and the 1968 Tet Offensive [5.4, 5.5]."
-            ],
-            "sentence_starters": [
-              "Initially, following the French defeat at Dien Bien Phu in 1954, the Geneva Accords divided Vietnam along...",
-              "Fearing the spread of communism under the \"Domino Theory\", President Eisenhower committed millions in aid to...",
-              "Under President Kennedy, American involvement escalated significantly through the deployment of...",
-              "The decisive turning point occurred in August 1964 with the Gulf of Tonkin Incident, which prompted Congress to...",
-              "Consequently, in 1965 President Johnson launched Operation Rolling Thunder and committed the first...",
-              "This escalation culminated in 1968 with the massive communist Tet Offensive, which proved that..."
-            ],
-            "connective_bank": [
-              "Initially, following the 1954 Geneva Accords...",
-              "Under the rationale of the Domino Theory...",
-              "A decisive turning point occurred in August 1964 when...",
-              "Consequently, in 1965...",
-              "This massive escalation ultimately culminated in..."
-            ],
-            "word_bank": [
-              "Geneva Accords (1954)",
-              "17th Parallel",
-              "Domino Theory",
-              "Dwight D. Eisenhower",
-              "Ngo Dinh Diem",
-              "military advisers",
-              "Gulf of Tonkin Incident (1964)",
-              "Lyndon B. Johnson",
-              "Operation Rolling Thunder",
-              "William Westmoreland",
-              "Tet Offensive (1968)"
-            ]
-          },
-          "model_answer": "Initially, following the French defeat at Dien Bien Phu and the 1954 Geneva Accords dividing Vietnam at the 17th parallel, the United States intervened to prevent communist expansion under President Eisenhower’s 'domino theory'. Under Presidents Eisenhower and Kennedy, the US sent financial aid and thousands of military 'advisers' (Green Berets) to support the anti-communist regime of Ngo Dinh Diem in South Vietnam.<br><br>As a result of increasing Vietcong guerrilla attacks and political instability in Saigon, the conflict escalated dramatically in August 1964 following the Gulf of Tonkin incident. President Lyndon B. Johnson used the alleged North Vietnamese torpedo boat attack to pass the Gulf of Tonkin Resolution, granting him near-unlimited authority to deploy conventional military forces. In early 1965, Johnson launched Operation Rolling Thunder, a sustained aerial bombing campaign against North Vietnam, and deployed the first US combat ground troops at Da Nang, escalating troop levels to over 500,000 soldiers by 1968.<br><br>Finally, the climax of American escalation occurred in January 1968 during the Tet Offensive, when Vietcong and North Vietnamese forces launched a coordinated surprise assault on over 100 cities, including the US Embassy in Saigon. Although militarily defeated with catastrophic communist casualties, the Tet Offensive shattered the American public’s belief that the US was winning the war, creating a profound 'credibility gap' that forced President Johnson to halt further troop increases and announce he would not seek re-election.",
-          "topic": "Question 2: Narrative Account [8 marks • 12 mins]",
-          "model": "Initially, following the French defeat at Dien Bien Phu and the 1954 Geneva Accords dividing Vietnam at the 17th parallel, the United States intervened to prevent communist expansion under President Eisenhower’s 'domino theory'. Under Presidents Eisenhower and Kennedy, the US sent financial aid and thousands of military 'advisers' (Green Berets) to support the anti-communist regime of Ngo Dinh Diem in South Vietnam.<br><br>As a result of increasing Vietcong guerrilla attacks and political instability in Saigon, the conflict escalated dramatically in August 1964 following the Gulf of Tonkin incident. President Lyndon B. Johnson used the alleged North Vietnamese torpedo boat attack to pass the Gulf of Tonkin Resolution, granting him near-unlimited authority to deploy conventional military forces. In early 1965, Johnson launched Operation Rolling Thunder, a sustained aerial bombing campaign against North Vietnam, and deployed the first US combat ground troops at Da Nang, escalating troop levels to over 500,000 soldiers by 1968.<br><br>Finally, the climax of American escalation occurred in January 1968 during the Tet Offensive, when Vietcong and North Vietnamese forces launched a coordinated surprise assault on over 100 cities, including the US Embassy in Saigon. Although militarily defeated with catastrophic communist casualties, the Tet Offensive shattered the American public’s belief that the US was winning the war, creating a profound 'credibility gap' that forced President Johnson to halt further troop increases and announce he would not seek re-election."
-        }
-      ],
       "workbook_stages": [
         {
           "step": 1,
@@ -9840,7 +9626,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(a). Explain one consequence of Mikhail Gorbachev’s policy of Glasnost. [4 marks]",
-            "model": "<p>One significant consequence of Mikhail Gorbachev’s policy of *Glasnost* ('openness') was the collapse of totalitarian state censorship across the Soviet Union. Introduced in 1986, citizens gained unprecedented freedom to read banned literature and investigate historical atrocities like Stalin’s purges. Therefore, this had a revolutionary consequence because exposing state corruption and economic dysfunction shattered public trust in the Communist Party, fueling nationalist protests in non-Russian republics.</p>",
+            "model": "One consequence of Mikhail Gorbachev’s policy of Glasnost ('openness') was the erosion of Communist Party authority across the Soviet Union. By lifting strict state censorship and allowing public criticism of Stalin’s crimes, economic failures, and party corruption, Glasnost shattered faith in communist rule and fuelled nationalist independence movements across non-Russian Soviet republics.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -9861,8 +9647,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of Mikhail Gorbachev’s policy of *Glasnost* ('openness') was the collapse of totalitarian state censorship across the Soviet Union. Introduced in 1986, citizens gained unprecedented freedom to read banned literature and investigate historical atrocities like Stalin’s purges. Therefore, this had a revolutionary consequence because exposing state corruption and economic dysfunction shattered public trust in the Communist Party, fueling nationalist protests in non-Russian republics.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of Mikhail Gorbachev’s policy of Glasnost ('openness') was the erosion of Communist Party authority across the Soviet Union. By lifting strict state censorship and allowing public criticism of Stalin’s crimes, economic failures, and party corruption, Glasnost shattered faith in communist rule and fuelled nationalist independence movements across non-Russian Soviet republics.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 49w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either lifting censorship on Stalin’s crimes and corruption to fuel nationalist unrest against Communist rule (Option A) or convincing Reagan of genuine reform to unlock superpower summit breakthroughs (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Erosion of Communist Party Authority",
+                    "text": "One consequence of Mikhail Gorbachev’s policy of Glasnost ('openness') was the erosion of Communist Party authority across the Soviet Union. By lifting strict state censorship and allowing public criticism of Stalin’s crimes, economic failures, and party corruption, Glasnost shattered faith in communist rule and fuelled nationalist independence movements across non-Russian Soviet republics."
+                  },
+                  {
+                    "label": "Option B (4/4): Improved Trust with the West",
+                    "text": "One consequence of Gorbachev’s introduction of Glasnost after 1985 was a dramatic improvement in diplomatic trust with Western democracies. Releasing political dissidents and relaxing Soviet press censorship convinced US President Ronald Reagan that Gorbachev was a genuine reformer, helping transform superpower summit diplomacy from confrontation into constructive arms negotiations."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -9882,7 +9678,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(b). Explain one consequence of the INF Treaty (December 1987). [4 marks]",
-            "model": "<p>One significant consequence of the Intermediate-Range Nuclear Forces (INF) Treaty in December 1987 was the historic elimination of an entire category of nuclear weapons. Signed by Reagan and Gorbachev, the treaty banned all ground-launched ballistic and cruise missiles with ranges of 500 to 5,500 kilometres, destroying 2,692 weapons. Therefore, this was a vital consequence because mutual on-site verification inspections established unprecedented diplomatic trust that effectively ended the nuclear arms race.</p>",
+            "model": "One consequence of the December 1987 INF Treaty was the elimination of an entire category of superpower nuclear weapons for the first time. Signed by Ronald Reagan and Mikhail Gorbachev, the treaty banned all ground-launched ballistic and cruise missiles with ranges between 500 and 5,500 kilometres, resulting in 2,692 missiles being destroyed.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -9903,8 +9699,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the Intermediate-Range Nuclear Forces (INF) Treaty in December 1987 was the historic elimination of an entire category of nuclear weapons. Signed by Reagan and Gorbachev, the treaty banned all ground-launched ballistic and cruise missiles with ranges of 500 to 5,500 kilometres, destroying 2,692 weapons. Therefore, this was a vital consequence because mutual on-site verification inspections established unprecedented diplomatic trust that effectively ended the nuclear arms race.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the December 1987 INF Treaty was the elimination of an entire category of superpower nuclear weapons for the first time. Signed by Ronald Reagan and Mikhail Gorbachev, the treaty banned all ground-launched ballistic and cruise missiles with ranges between 500 and 5,500 kilometres, resulting in 2,692 missiles being destroyed.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 48w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Reagan and Gorbachev banning 500–5,500 km ground-launched missiles and destroying 2,692 weapons (Option A) or mutual on-site verification inspections building superpower trust (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Elimination of Intermediate Nuclear Missiles",
+                    "text": "One consequence of the December 1987 INF Treaty was the elimination of an entire category of superpower nuclear weapons for the first time. Signed by Ronald Reagan and Mikhail Gorbachev, the treaty banned all ground-launched ballistic and cruise missiles with ranges between 500 and 5,500 kilometres, resulting in 2,692 missiles being destroyed."
+                  },
+                  {
+                    "label": "Option B (4/4): Breakthrough in On-Site Inspections",
+                    "text": "One consequence of the December 1987 INF Treaty was an unprecedented breakthrough in superpower diplomatic trust through strict mutual verification. Because Moscow and Washington agreed to allow intrusive on-site military inspections of missile dismantling, Cold War suspicion receded sharply and paved the way for deeper strategic arms reductions."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -10058,65 +9864,6 @@ window.cold_war_data = {
           }
         ]
       },
-      "tasks": [
-        {
-          "id": "cold_war_l6_evaluative_essay_gorbachev",
-          "type": "evaluative_essay",
-          "tariff": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "title": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "question": "‘The reform policies of Mikhail Gorbachev were the main reason for the collapse of Soviet power in Eastern Europe between 1985 and 1989.’ How far do you agree? [12 marks]",
-          "stimulus": [
-            "Glasnost, Perestroika, and the abandonment of the Brezhnev Doctrine (Sinatra Doctrine)",
-            "Economic stagnation in the USSR and the rise of Solidarity in Poland"
-          ],
-          "hints": [
-            "Argument (Gorbachev's Reforms): Explain how Glasnost (free expression) and Perestroika (economic restructuring) unleashed uncontrollable popular demands [6.1].",
-            "Argument (Renunciation of the Brezhnev Doctrine): Crucially explain the \"Sinatra Doctrine\"—Gorbachev explicitly refusing to deploy the Red Army to crush protests [6.2].",
-            "Counter-Argument (Underlying Economic & Structural Failure): Detail chronic Soviet economic bankruptcy, consumer shortages, and the military spending burden of the Afghan war and arms race [6.3].",
-            "Counter-Argument (Popular Resistance & National Movements): Explain Poland’s Solidarity union led by Lech Wałęsa and Hungary cutting the Iron Curtain fence [6.4, 6.5].",
-            "Conclusion: Reach a nuanced verdict."
-          ],
-          "scaffolding": {
-            "structure_strip": [
-              "PEEL 1 (Gorbachev’s Radical Reforms & The Sinatra Doctrine): Glasnost, Perestroika, and publicly refusing to use Soviet military force in Eastern Europe [6.1, 6.2].",
-              "PEEL 2 (Deep Structural Economic Stagnation): Chronic bankruptcy, food lines, the Afghan quagmire, and inability to match Reagan’s SDI military spending [6.3].",
-              "PEEL 3 (Grassroots Opposition & The Domino Effect): Solidarity in Poland, Hungarian border opening, and mass East German demonstrations opening the Wall [6.4, 6.5].",
-              "Conclusion: Balanced verdict arguing Gorbachev’s reforms were the indispensable catalyst that removed the military barrier holding back systemic failure."
-            ],
-            "sentence_starters": [
-              "To a large extent, it can be argued that Gorbachev’s reforms were the decisive catalyst because...",
-              "Upon becoming General Secretary in 1985, Gorbachev introduced Glasnost (\"openness\") and Perestroika (\"restructuring\") to...",
-              "Most crucially, Gorbachev repudiated the Brezhnev Doctrine, introducing what became known as the...",
-              "On the other hand, historians argue that Soviet hegemony was already doomed by decades of severe economic...",
-              "Furthermore, grassroots popular resistance—exemplified by Lech Wałęsa’s Solidarity movement in Poland—demonstrated that...",
-              "In conclusion, while economic stagnation and public dissent created the explosive material, Gorbachev was the primary cause because..."
-            ],
-            "connective_bank": [
-              "To a large extent, it can be argued that...",
-              "On the one hand, Gorbachev’s policies were transformative because...",
-              "Crucially, the abandonment of the Brezhnev Doctrine meant that...",
-              "However, underlying structural factors also contributed, such as...",
-              "In conclusion, Gorbachev was the primary reason because... without his reforms..."
-            ],
-            "word_bank": [
-              "Mikhail Gorbachev (1985)",
-              "Glasnost",
-              "Perestroika",
-              "Brezhnev Doctrine",
-              "Sinatra Doctrine",
-              "Solidarity (Solidarność)",
-              "Lech Wałęsa",
-              "Ronald Reagan",
-              "Strategic Defense Initiative (SDI)",
-              "Günter Schabowski",
-              "Fall of the Berlin Wall (9 Nov 1989)"
-            ]
-          },
-          "model_answer": "On the one hand, Mikhail Gorbachev's reforms were the primary catalyst for the collapse of Soviet control. After becoming General Secretary in 1985, Gorbachev introduced Glasnost ('openness') and Perestroika ('restructuring'). Crucially, in December 1988, he repudiated the Brezhnev Doctrine, telling the UN that Eastern European nations could decide their own futures ('Sinatra Doctrine'). By making it clear that the Red Army would no longer use tanks to crush protests, Gorbachev emboldened populations in Poland, Hungary, and East Germany to demand democracy.<br><br>On the other hand, deep economic bankruptcy and popular grassroots resistance made communist collapse inevitable. The Soviet command economy was crippled by chronic shortages, food rationing, and high military spending on the Afghan War. Concurrently, grassroots civil resistance eroded communist authority. In Poland, the trade union Solidarity forced free elections in June 1989. When Hungary opened its border with Austria, thousands of East Germans escaped, triggering mass protests that accidentally opened the Berlin Wall on 9 November 1989.<br><br>In conclusion, while economic failure provided the underlying pressure, Gorbachev's refusal to use military force was the decisive reason why Soviet power collapsed so rapidly and peacefully in 1989.",
-          "topic": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]",
-          "model": "On the one hand, Mikhail Gorbachev's reforms were the primary catalyst for the collapse of Soviet control. After becoming General Secretary in 1985, Gorbachev introduced Glasnost ('openness') and Perestroika ('restructuring'). Crucially, in December 1988, he repudiated the Brezhnev Doctrine, telling the UN that Eastern European nations could decide their own futures ('Sinatra Doctrine'). By making it clear that the Red Army would no longer use tanks to crush protests, Gorbachev emboldened populations in Poland, Hungary, and East Germany to demand democracy.<br><br>On the other hand, deep economic bankruptcy and popular grassroots resistance made communist collapse inevitable. The Soviet command economy was crippled by chronic shortages, food rationing, and high military spending on the Afghan War. Concurrently, grassroots civil resistance eroded communist authority. In Poland, the trade union Solidarity forced free elections in June 1989. When Hungary opened its border with Austria, thousands of East Germans escaped, triggering mass protests that accidentally opened the Berlin Wall on 9 November 1989.<br><br>In conclusion, while economic failure provided the underlying pressure, Gorbachev's refusal to use military force was the decisive reason why Soviet power collapsed so rapidly and peacefully in 1989."
-        }
-      ],
       "workbook_stages": [
         {
           "step": 1,
@@ -11527,7 +11274,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(a). Explain one consequence of the construction of the Berlin Wall in August 1961. [4 marks]",
-            "model": "<p>One significant consequence of the construction of the Berlin Wall in August 1961 was the immediate halt to the East German refugee crisis. Between 1949 and 1961, 2.7 million skilled citizens had escaped through West Berlin, threatening the GDR with economic collapse. The barbed wire and concrete wall sealed the border overnight. Therefore, this had a major consequence because it defused acute military crisis over Berlin while creating a permanent visual symbol of communist oppression.</p>",
+            "model": "One consequence of constructing the Berlin Wall in August 1961 was an immediate halt to East Germany’s crippling refugee crisis. After 2.7 million citizens, including skilled engineers and doctors, had fled west since 1949, sealing Berlin with barbed wire and concrete walls stabilised the East German workforce while permanently dividing families.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -11548,8 +11295,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the construction of the Berlin Wall in August 1961 was the immediate halt to the East German refugee crisis. Between 1949 and 1961, 2.7 million skilled citizens had escaped through West Berlin, threatening the GDR with economic collapse. The barbed wire and concrete wall sealed the border overnight. Therefore, this had a major consequence because it defused acute military crisis over Berlin while creating a permanent visual symbol of communist oppression.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of constructing the Berlin Wall in August 1961 was an immediate halt to East Germany’s crippling refugee crisis. After 2.7 million citizens, including skilled engineers and doctors, had fled west since 1949, sealing Berlin with barbed wire and concrete walls stabilised the East German workforce while permanently dividing families.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 49w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either halting the exodus of 2.7 million East German refugees to stabilise the GDR workforce while dividing families (Option A) or easing war tension over Berlin while creating a global symbol of communist repression (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): Halt to East German Brain Drain",
+                    "text": "One consequence of constructing the Berlin Wall in August 1961 was an immediate halt to East Germany’s crippling refugee crisis. After 2.7 million citizens, including skilled engineers and doctors, had fled west since 1949, sealing Berlin with barbed wire and concrete walls stabilised the East German workforce while permanently dividing families."
+                  },
+                  {
+                    "label": "Option B (4/4): Propaganda Blow to Communism",
+                    "text": "One consequence of building the Berlin Wall in August 1961 was a major propaganda defeat for the Soviet Union alongside reduced risk of war over Berlin. While closing the border ended Khrushchev’s ultimatums against Western troops, imprisoning citizens behind armed watchtowers became a powerful global symbol of communist repression."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -11569,7 +11326,7 @@ window.cold_war_data = {
             "type": "4-mark",
             "marks": 4,
             "question": "1(b). Explain one consequence of the dissolution of the Soviet Union in December 1991. [4 marks]",
-            "model": "<p>One significant consequence of the dissolution of the Soviet Union in December 1991 was the definitive end of the Cold War and bipolar world order. Following Gorbachev’s resignation on Christmas Day, the USSR fractured into 15 sovereign independent republics, with the Warsaw Pact dissolved. Therefore, this had a momentous consequence because it eliminated America's primary global rival, leaving the United States as the world's sole unchallenged superpower in a unipolar international system.</p>",
+            "model": "One consequence of the dissolution of the Soviet Union in December 1991 was the definitive end of the Cold War and bipolar superpower rivalry. Following Mikhail Gorbachev’s Christmas Day resignation and the collapse of Soviet rule, the United States was left as the world’s sole unchallenged superpower.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Simple Statement",
@@ -11590,8 +11347,18 @@ window.cold_war_data = {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One significant consequence of the dissolution of the Soviet Union in December 1991 was the definitive end of the Cold War and bipolar world order. Following Gorbachev’s resignation on Christmas Day, the USSR fractured into 15 sovereign independent republics, with the Warsaw Pact dissolved. Therefore, this had a momentous consequence because it eliminated America's primary global rival, leaving the United States as the world's sole unchallenged superpower in a unipolar international system.</p>",
-                "verdict": "AO1/AO2 (4 marks). Full marks awarded. Clearly identifies a consequence, provides precise factual evidence, and fully explains the resulting impact."
+                "text": "One consequence of the dissolution of the Soviet Union in December 1991 was the definitive end of the Cold War and bipolar superpower rivalry. Following Mikhail Gorbachev’s Christmas Day resignation and the collapse of Soviet rule, the United States was left as the world’s sole unchallenged superpower.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 47w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Gorbachev’s Christmas Day resignation ending bipolar rivalry and leaving the USA as sole superpower (Option A) or fracturing the USSR into 15 independent republics including Russia, Ukraine, and the Baltic states (Option B)—rather than wasting exam time listing multiple consequences.",
+                "options": [
+                  {
+                    "label": "Option A (4/4): End of Bipolar Cold War",
+                    "text": "One consequence of the dissolution of the Soviet Union in December 1991 was the definitive end of the Cold War and bipolar superpower rivalry. Following Mikhail Gorbachev’s Christmas Day resignation and the collapse of Soviet rule, the United States was left as the world’s sole unchallenged superpower."
+                  },
+                  {
+                    "label": "Option B (4/4): Creation of Fifteen Independent Republics",
+                    "text": "One consequence of the Soviet Union’s dissolution on 25 December 1991 was the breakup of the communist empire into fifteen independent sovereign states. As the Soviet flag was lowered from the Kremlin after Boris Yeltsin’s rise, nations including Russia, Ukraine, and the Baltic republics gained national independence and abandoned Marxist-Leninist command rule."
+                  }
+                ]
               }
             },
             "scaffolding": {
@@ -11736,64 +11503,6 @@ window.cold_war_data = {
           }
         ]
       },
-      "tasks": [
-        {
-          "id": "cold_war_l7_evaluative_essay_synoptic",
-          "type": "evaluative_essay",
-          "tariff": "Question 5: Synoptic Capstone Essay [12 marks • 15 mins]",
-          "title": "Question 5: Synoptic Capstone Essay [12 marks • 15 mins]",
-          "question": "‘The Cold War was characterised far more by brutal global violence than by peaceful superpower coexistence.’ How far do you agree? [12 marks]",
-          "stimulus": [
-            "Proxy wars in Korea, Vietnam, and Afghanistan, and civilian casualties across the Global South",
-            "Nuclear deterrence (MAD), arms limitation treaties (SALT, INF), and summit diplomacy"
-          ],
-          "hints": [
-            "Argument (Brutal Global Violence & Proxy Carnage): Detail the devastating proxy wars in Korea, Vietnam, and Afghanistan, civilian massacres, and CIA/KGB covert coups in the Global South [7.1, 7.2, 7.3].",
-            "Counter-Argument (The \"Long Peace\" & Superpower Deterrence): Detail how Mutually Assured Destruction (MAD), the Hotline, and arms treaties (SALT I 1972, INF 1987) averted World War Three in Europe [7.4].",
-            "Counter-Argument (Ideological & Cultural Competition): Space race, Olympics, espionage, and propaganda as non-violent arenas of competition.",
-            "Conclusion (The Eurocentric Myth): Reach a nuanced verdict demonstrating that the concept of a \"cold\" war is a Eurocentric illusion."
-          ],
-          "scaffolding": {
-            "structure_strip": [
-              "PEEL 1 (The Bloodshed of the Global South): Korea (3M dead), Vietnam (3.8M dead), Afghanistan (1.5M dead), and CIA/KGB proxy interventions [7.1, 7.2, 7.3].",
-              "PEEL 2 (Nuclear Deterrence & European Stability - The \"Long Peace\"): MAD, ExComm de-escalation, SALT I, INF Treaty, and avoiding direct superpower clashes [7.4].",
-              "PEEL 3 (Espionage, Ideological Rivalry & Covert Warfare): Propaganda, Space Race, sports boycotted, and domestic police states (Stasi, McCarthyism).",
-              "Conclusion (Deconstructing the Eurocentric Myth): Synthesising why the term \"Cold War\" is accurate only for Washington and Moscow, but completely false for the developing world."
-            ],
-            "sentence_starters": [
-              "To a large extent, the assertion is historically valid because while direct nuclear conflict between Washington and Moscow was avoided, violence was...",
-              "In peripheral theatres across the Global South, the superpowers waged intensely destructive proxy conflicts, including...",
-              "In the Korean War (1950–1953) and Vietnam War (1954–1975), over seven million civilians and combatants perished in...",
-              "On the other hand, historians of the \"Long Peace\" argue that the Cold War was fundamentally characterised by nuclear deterrence, which...",
-              "Through bilateral summit diplomacy and treaties like the 1972 SALT I and 1987 INF Treaty, the superpowers established...",
-              "In conclusion, the label \"Cold War\" is a profound Eurocentric misnomer: for populations across Asia, Africa, and Latin America, the era was defined by..."
-            ],
-            "connective_bank": [
-              "To a large extent, the assertion is valid because...",
-              "In the Global South, the Cold War was intensely hot because...",
-              "On the other hand, proponents of the \"Long Peace\" emphasize that...",
-              "Furthermore, nuclear deterrence functioned to prevent...",
-              "In conclusion, the concept of a \"Cold\" war is an illusion because... for millions of people..."
-            ],
-            "word_bank": [
-              "Eurocentric myth",
-              "Proxy wars",
-              "Korean War (3 million dead)",
-              "Vietnam War (3.8 million dead)",
-              "Soviet-Afghan War",
-              "Mutually Assured Destruction (MAD)",
-              "The Long Peace",
-              "SALT I (1972)",
-              "INF Treaty (1987)",
-              "Operation Condor",
-              "20 million proxy casualties"
-            ]
-          },
-          "model_answer": "On the one hand, proxy wars in the developing world caused catastrophic violence. Because nuclear deterrence (Mutually Assured Destruction) made direct war in Europe unthinkable, Washington and Moscow fought through regional proxies. In the Korean War (1950–1953), over three million people died. In Vietnam (1954–1975), nearly four million people were killed by napalm and bombing. Similarly, the Soviet invasion of Afghanistan (1979–1989) killed over one million civilians. In total, Cold War proxy wars and CIA/KGB covert coups claimed over twenty million lives.<br><br>On the other hand, the superpowers developed crucial diplomatic mechanisms to maintain peaceful coexistence. After the 1962 Cuban Missile Crisis, Kennedy and Khrushchev established the Washington-Moscow hotline and signed the 1963 Test Ban Treaty. In the 1970s, Détente produced the 1972 SALT I treaty, limiting nuclear weapons. Later, summit diplomacy between Reagan and Gorbachev achieved the historic 1987 INF Treaty, peacefully eliminating an entire class of nuclear missiles.<br><br>In conclusion, while nuclear deterrence successfully prevented World War Three in Europe, this stability came at the immense cost of proxy conflicts. For Asia, Africa, and Latin America, the Cold War was defined by devastating violence rather than peaceful coexistence.",
-          "topic": "Question 5: Synoptic Capstone Essay [12 marks • 15 mins]",
-          "model": "On the one hand, proxy wars in the developing world caused catastrophic violence. Because nuclear deterrence (Mutually Assured Destruction) made direct war in Europe unthinkable, Washington and Moscow fought through regional proxies. In the Korean War (1950–1953), over three million people died. In Vietnam (1954–1975), nearly four million people were killed by napalm and bombing. Similarly, the Soviet invasion of Afghanistan (1979–1989) killed over one million civilians. In total, Cold War proxy wars and CIA/KGB covert coups claimed over twenty million lives.<br><br>On the other hand, the superpowers developed crucial diplomatic mechanisms to maintain peaceful coexistence. After the 1962 Cuban Missile Crisis, Kennedy and Khrushchev established the Washington-Moscow hotline and signed the 1963 Test Ban Treaty. In the 1970s, Détente produced the 1972 SALT I treaty, limiting nuclear weapons. Later, summit diplomacy between Reagan and Gorbachev achieved the historic 1987 INF Treaty, peacefully eliminating an entire class of nuclear missiles.<br><br>In conclusion, while nuclear deterrence successfully prevented World War Three in Europe, this stability came at the immense cost of proxy conflicts. For Asia, Africa, and Latin America, the Cold War was defined by devastating violence rather than peaceful coexistence."
-        }
-      ],
       "workbook_stages": [
         {
           "step": 1,
