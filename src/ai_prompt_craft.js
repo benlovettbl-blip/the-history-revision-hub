@@ -4,9 +4,9 @@
  *
  * Routes:
  *   ?view=ai-prompt-craft              -> Year 9 AI Unit Launchpad (6-Lesson Scheme of Work)
- *   ?view=ai-prompt-craft&lesson=3     -> Lesson 3: Introduction to Prompt Craft (Observed Lesson)
- *   ?view=ai-prompt-craft&lesson=4     -> Lesson 4: Next Lesson (5-Q Retrieval Do Now on L3!)
- *   ?view=ai-prompt-craft&print=worksheet | plan | script
+ *   ?view=ai-prompt-craft&lesson=3     -> Lesson 3: Introduction to Prompt Craft
+ *   ?view=ai-prompt-craft&lesson=4     -> Lesson 4: Prompt Craft at Work
+ *   ?view=ai-prompt-craft&print=worksheet -> Lesson 3 Pupil Worksheet (2-Sided A4)
  */
 
 const UNIT_META = {
@@ -1124,6 +1124,11 @@ function renderTopBar() {
           </button>
         </div>
 
+        <button type="button" class="aiu-crumb-btn" data-aiu="open-print" data-doc="worksheet">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Pupil Worksheet</span>
+        </button>
+
         <button type="button" class="aiu-crumb-btn ${state.hideHubSidebar ? 'blue-active' : ''}" data-aiu="toggle-projector" title="Hide or restore outer portal sidebar &amp; header">
           <i class="fa-solid ${state.hideHubSidebar ? 'fa-compress' : 'fa-expand'}"></i>
           <span>${state.hideHubSidebar ? 'Restore Sidebar' : 'Full-Width View'}</span>
@@ -1153,6 +1158,10 @@ function renderUnitOverview() {
           <button type="button" class="aiu-crumb-btn" style="background:#ffffff; color:#0f172a; border-color:#ffffff; padding:8px 15px; font-size:0.84rem;" data-aiu="open-lesson" data-num="3">
             <i class="fa-solid fa-book-open" style="color:#2563eb;"></i>
             <span>Open Lesson 3: Introduction to Prompt Craft</span>
+          </button>
+          <button type="button" class="aiu-crumb-btn" style="background:rgba(255,255,255,0.12); color:#ffffff; border-color:rgba(255,255,255,0.3); padding:8px 14px; font-size:0.82rem;" data-aiu="open-print" data-doc="worksheet">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Lesson 3 Pupil Worksheet</span>
           </button>
         </div>
         <span style="font-size:0.76rem; color:#93c5fd; font-weight:600;">
@@ -1781,174 +1790,23 @@ function renderWorksheet2PageHTML() {
   `;
 }
 
-function renderPlan1PageHTML() {
-  return `
-    <div class="aiu-a4-page">
-      <div>
-        <div style="border-bottom:2px solid #0f172a; padding-bottom:6px; margin-bottom:9px; display:flex; justify-content:space-between; align-items:flex-end;">
-          <div>
-            <div style="font-size:8pt; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#334155;">Observed Lesson Plan &bull; Teacher of Artificial Intelligence</div>
-            <h1 style="margin:2px 0 0 0; font-size:14.2pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a;">Lesson 3 of 6: Introduction to Prompt Craft (R.C.T.C.)</h1>
-          </div>
-          <div style="text-align:right; font-size:8.3pt; font-weight:600; color:#334155;">
-            Year 9 &bull; 35 Minutes<br/>Double-Sided A4 Sheet, Pen &amp; Microsoft Copilot
-          </div>
-        </div>
-
-        <div class="aiu-p-box">
-          <div class="aiu-p-head"><span>1. Curricular Context &amp; Rationale</span></div>
-          <p style="margin:0; font-size:8.7pt; line-height:1.42;">
-            Situated as Lesson 3 within a six-lesson Year 9 AI sequence (following <em>L1: Tokens &amp; Prediction</em> and <em>L2: Hallucinations &amp; Verification</em>), this lesson introduces explicit prompt engineering. Because default chatbots optimise for immediate helpfulness—inducing passive cognitive offloading—pupils learn a four-part architecture, <strong>R.C.T.C. (Role, Context, Task, Constraints)</strong> (linked briefly to Microsoft's workplace <em>G.C.S.E.</em> model), applying it first to Socratic academic revision in Microsoft Copilot (Side 1) and then to four high-stakes employment case studies (Side 2).
-          </p>
-        </div>
-
-        <div class="aiu-p-box">
-          <div class="aiu-p-head"><span>2. Learning Objectives</span></div>
-          <ul style="margin:0; padding-left:18px; font-size:8.7pt; line-height:1.43;">
-            <li><strong>Deconstruct:</strong> Identify <strong>Role, Context, Task, and Constraints</strong> and explain why unstructured prompts fail long-term memory retention.</li>
-            <li><strong>Engineer &amp; Harden:</strong> Author a Socratic revision prompt in Microsoft Copilot, test its resilience against sycophancy/shortcutting, and iterate to v2.0 Constraints.</li>
-            <li><strong>Transfer to Employment:</strong> Work collaboratively to design R.C.T.C. guardrails for authentic workplace failures across Law, Healthcare, Architecture, and Finance.</li>
-          </ul>
-        </div>
-
-        <div class="aiu-p-box">
-          <div class="aiu-p-head"><span>3. 35-Minute Lesson Architecture</span></div>
-          <table style="width:100%; border-collapse:collapse; font-size:8.3pt;">
-            <thead>
-              <tr style="background:#f1f5f9; text-align:left; border-bottom:1.5px solid #0f172a;">
-                <th style="padding:5px 6px; width:12%;">Timing</th>
-                <th style="padding:5px 6px; width:22%;">Stage &amp; Mode</th>
-                <th style="padding:5px 6px; width:34%;">Teacher &amp; Unit Platform</th>
-                <th style="padding:5px 6px; width:32%;">Pupil Cognitive Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom:1px solid #cbd5e1; vertical-align:top;">
-                <td style="padding:5px 6px; font-weight:700;">0–4m</td>
-                <td style="padding:5px 6px;"><strong>5-Q Do Now</strong><br/><em>Laptops Closed</em></td>
-                <td style="padding:5px 6px;">Spaced retrieval on LLM prediction/hallucinations + cognitive science of passive reading.</td>
-                <td style="padding:5px 6px;">Starter on Side 1; oral cold-call diagnostic.</td>
-              </tr>
-              <tr style="border-bottom:1px solid #cbd5e1; vertical-align:top;">
-                <td style="padding:5px 6px; font-weight:700;">4–10m</td>
-                <td style="padding:5px 6px;"><strong>Stage 01: R.C.T.C.</strong><br/><em>Pen &amp; Side 1</em></td>
-                <td style="padding:5px 6px;">Contrast Specimen A vs B; model R.C.T.C. clauses with inclusive pen symbols &amp; colour.</td>
-                <td style="padding:5px 6px;">Annotate specimen prompt; select Y9 topic &amp; hand-draft v1.0 prompt before screen access.</td>
-              </tr>
-              <tr style="border-bottom:1px solid #cbd5e1; vertical-align:top;">
-                <td style="padding:5px 6px; font-weight:700;">10–24m</td>
-                <td style="padding:5px 6px;"><strong>Stage 02: Copilot Lab</strong><br/><em>Individual Devices</em></td>
-                <td style="padding:5px 6px;">1:1 circulation; at ~17m reveal Phase B <strong>Adversarial Sycophancy Test</strong> (probing if the bot caves to shortcuts or false authority).</td>
-                <td style="padding:5px 6px;">Complete 3 coaching turns in Copilot; execute Adversarial Sycophancy Test on own device; author &amp; test v2.0 Constraint.</td>
-              </tr>
-              <tr style="vertical-align:top;">
-                <td style="padding:5px 6px; font-weight:700;">24–35m</td>
-                <td style="padding:5px 6px;"><strong>Stage 03: Plenary</strong><br/><em>Screens Down &bull; Side 2</em></td>
-                <td style="padding:5px 6px;">Assign 4 workplace cases across pairs; chair 4-sector debrief (+ optional L4 5-Q retrieval check).</td>
-                <td style="padding:5px 6px;">Pairs diagnose workplace AI failure and pitch Role/Task shift + non-negotiable Constraint.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="aiu-p-box" style="margin-bottom:0;">
-          <div class="aiu-p-head"><span>4. Inclusion, Safeguarding &amp; Stretch</span></div>
-          <ul style="margin:0; padding-left:18px; font-size:8.4pt; line-height:1.42;">
-            <li><strong>Frictionless &amp; Safe:</strong> Pupils remain strictly on paper and school-managed Microsoft Copilot (no external logins, no device swapping).</li>
-            <li><strong>Accessible Dual Coding:</strong> Pen symbols (<code>[Box]</code>, <code>(Brackets)</code>, <code>Underline</code>, <code>||Bars||</code>) support colour-blind pupils and standard pencil cases.</li>
-            <li><strong>Stretch &amp; Real-World Horizon:</strong> Bridges GCSE preparation with career literacy across legal, clinical, engineering, and financial domains.</li>
-          </ul>
-        </div>
-      </div>
-      <div style="font-size:7.5pt; color:#64748b; text-align:right;">KS3 Year 9 Artificial Intelligence &bull; Scheme of Work Lesson 3 of 6</div>
-    </div>
-  `;
-}
-
-function renderScript1PageHTML() {
-  return `
-    <div class="aiu-a4-page">
-      <div>
-        <div style="border-bottom:2px solid #0f172a; padding-bottom:6px; margin-bottom:9px;">
-          <div style="font-size:8pt; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#1d4ed8;">Ben's 1-Page Teaching Crib Sheet</div>
-          <h1 style="margin:2px 0 0 0; font-size:14.2pt; font-weight:800; font-family:'Playfair Display', Georgia, serif;">Calm Pacing Guide — Year 9 AI (Lesson 3 + Lesson 4 Quiz Trick)</h1>
-        </div>
-
-        <div class="aiu-p-box" style="background:#f8fafc;">
-          <div class="aiu-p-head"><span>Before 11:15 (Setup in 60 Seconds)</span></div>
-          <ul style="margin:0; padding-left:18px; font-size:8.9pt; line-height:1.44;">
-            <li>Print <strong>1_Pupil_Worksheet</strong> <strong>DOUBLE-SIDED</strong> (Side 1 = R.C.T.C. &amp; Copilot Lab; Side 2 = 4 Workplace Cases).</li>
-            <li>Open your app homepage &rarr; click <strong>Year 9 AI Course</strong> tab &rarr; leave the <strong>6-Lesson Unit Launchpad</strong> on screen as they walk in, then click <strong>Lesson 3</strong>! (Click <em>Full-Width Board</em> top-right if you want the sidebar hidden.)</li>
-          </ul>
-        </div>
-
-        <div class="aiu-p-box">
-          <div class="aiu-p-head"><span>0–4 Mins &bull; 5-Question Do Now (Laptops Closed)</span></div>
-          <p style="margin:0; font-size:8.9pt; line-height:1.44;">
-            Pupils settle immediately into the Do Now on Side 1 while laptops stay shut. Cold-call Q1–Q5, clicking each row on screen to reveal (and click again anytime to re-hide). Establish the core problem: <em>default Copilot is an eager people-pleaser that hands over answers so your brain does zero retrieval.</em>
-          </p>
-        </div>
-
-        <div class="aiu-p-box">
-          <div class="aiu-p-head"><span>4–10 Mins &bull; Stage 01: R.C.T.C. Architecture (Side 1, Part 1 &amp; 2A)</span></div>
-          <p style="margin:0; font-size:8.9pt; line-height:1.44;">
-            Compare Specimen A vs B. Click <strong>R, C, T, C</strong> tiles as pupils mark Part 1 using boxes, brackets, underlines, and double-bars. Mention Microsoft's workplace <em>G.C.S.E.</em> framework in one sentence, noting that in learning, <strong>Constraints</strong> are your superpower. Give 3–4 quiet minutes to draft their v1.0 prompt in Part 2A before opening laptops.
-          </p>
-        </div>
-
-        <div class="aiu-p-box">
-          <div class="aiu-p-head"><span>10–24 Mins &bull; Stage 02: Copilot Lab &amp; Adversarial Sycophancy Test</span></div>
-          <p style="margin:0; font-size:8.9pt; line-height:1.44;">
-            <strong>10–17m:</strong> Pupils open Microsoft Copilot, type their v1.0 prompt, and complete 3 coaching turns. Circulate and praise sharp prompts.<br/>
-            <strong>17–24m:</strong> Click <strong>Reveal Phase B</strong>. Point out the definition of the <strong>Adversarial Sycophancy Test</strong> on the board: <em>deliberately feeding the AI false authority or emotional pressure to see if it caves</em>. Pupils test their bot, check if it folded, and hand-write their upgraded <strong>v2.0 Constraint</strong> in Part 2B.
-          </p>
-        </div>
-
-        <div class="aiu-p-box" style="margin-bottom:0;">
-          <div class="aiu-p-head"><span>24–35 Mins &bull; Stage 03 Verbal Plenary: Case Studies A–D + Optional L4 Quiz</span></div>
-          <p style="margin:0; font-size:8.9pt; line-height:1.44;">
-            <strong>24–27m (3-Min Huddle):</strong> <em>"Laptops shut, flip to Side 2."</em> Assign <strong>Case Study A (Law), B (NHS), C (Architecture), D (Finance)</strong> across pairs/tables. 3 minutes talking in pairs (jotting notes in the box) on two questions: <em>1. What goes wrong? 2. Better Role + 1 strict Rule?</em><br/>
-            <strong>27–33m (Verbal Debrief):</strong> Chat interactively with one pair per case study, then click <strong>Reveal Key Points</strong> on that card to confirm.<br/>
-            <strong>33–35m (If 2 Mins Spare):</strong> Click <strong>Next Lesson: L4 (5-Q Retrieval Quiz) &rarr;</strong> at the bottom of the page for a brisk oral finisher!
-          </p>
-        </div>
-      </div>
-      <div style="font-size:7.5pt; color:#64748b; text-align:right;">Zero jumping boxes &bull; Every reveal button toggles cleanly back on click</div>
-    </div>
-  `;
-}
-
 function renderPrintOverlay() {
-  const doc = state.printDoc;
-  const content =
-    doc === 'plan'
-      ? renderPlan1PageHTML()
-      : doc === 'script'
-        ? renderScript1PageHTML()
-        : renderWorksheet2PageHTML();
-
   return `
     <div class="aiu-print-wrap">
       <div class="aiu-print-toolbar no-print">
-        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
           <button type="button" class="aiu-crumb-btn" data-aiu="close-print">
             <i class="fa-solid fa-arrow-left"></i> Back to Course
           </button>
-          <button type="button" class="aiu-crumb-btn ${doc === 'worksheet' ? 'blue-active' : ''}" data-aiu="open-print" data-doc="worksheet">
-            1. Pupil Worksheet (2-Sided A4)
-          </button>
-          <button type="button" class="aiu-crumb-btn ${doc === 'plan' ? 'blue-active' : ''}" data-aiu="open-print" data-doc="plan">
-            2. Observer Lesson Plan (1p A4)
-          </button>
-          <button type="button" class="aiu-crumb-btn ${doc === 'script' ? 'blue-active' : ''}" data-aiu="open-print" data-doc="script">
-            3. Teacher Crib Sheet (1p A4)
-          </button>
+          <span style="font-size:0.84rem; font-weight:700; color:#0f172a;">
+            Lesson 3 Pupil Worksheet (2-Sided A4)
+          </span>
         </div>
         <button type="button" class="aiu-crumb-btn navy" onclick="window.print()" style="background:#059669; border-color:#10b981;">
           <i class="fa-solid fa-print"></i> Print / Save PDF
         </button>
       </div>
-      ${content}
+      ${renderWorksheet2PageHTML()}
     </div>
   `;
 }
@@ -1957,10 +1815,8 @@ function renderPrintOverlay() {
 
 function updateTimerDOM() {
   const v = document.getElementById('aiu-timer-val');
-  const t = document.getElementById('aiu-total-val');
   const b = document.getElementById('aiu-timer-box');
   if (v) v.textContent = fmtMMSS(stageTimerSec);
-  if (t) t.textContent = `${fmtMMSS(totalLessonSec)} / 35:00`;
   if (b) b.classList.toggle('running', timerRunning);
 }
 
@@ -1970,7 +1826,7 @@ function renderAll() {
 
   document.body.classList.toggle('ai-projector-clean', Boolean(state.hideHubSidebar));
 
-  if (state.printDoc) {
+  if (state.printDoc === 'worksheet') {
     container.innerHTML = renderPrintOverlay();
     return;
   }
@@ -2017,9 +1873,6 @@ function bindCourseEvents() {
       }
     } else if (act === 'toggle-projector') {
       state.hideHubSidebar = !state.hideHubSidebar;
-      renderAll();
-    } else if (act === 'toggle-notes') {
-      state.showTeacherNotes = !state.showTeacherNotes;
       renderAll();
     } else if (act === 'toggle-timer') {
       timerRunning = !timerRunning;
@@ -2088,7 +1941,7 @@ function bindCourseEvents() {
       state.casesOpen = { law: next, med: next, arch: next, fin: next };
       renderAll();
     } else if (act === 'open-print') {
-      state.printDoc = target.dataset.doc || 'worksheet';
+      state.printDoc = 'worksheet';
       renderAll();
       window.scrollTo({ top: 0, behavior: 'instant' });
     } else if (act === 'close-print') {
@@ -2116,8 +1969,8 @@ export function renderAiPromptCraftConsole() {
   const printParam = (params.get('print') || '').toLowerCase().trim();
   const lessonParam = parseInt(params.get('lesson') || '', 10);
 
-  if (printParam === 'worksheet' || printParam === 'plan' || printParam === 'script') {
-    state.printDoc = printParam;
+  if (printParam === 'worksheet') {
+    state.printDoc = 'worksheet';
   } else if (!isNaN(lessonParam) && lessonParam >= 1 && lessonParam <= 6) {
     state.subView = 'lesson';
     state.lessonNum = lessonParam;
