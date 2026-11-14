@@ -279,6 +279,12 @@ window.addEventListener('DOMContentLoaded', async () => {
       normView = 'masterpiece';
     } else if (normView === 'textbook-reader') {
       normView = 'reader';
+    } else if (
+      normView === 'ai-prompt-craft' ||
+      normView === 'prompt-craft' ||
+      normView === 'ai-lesson'
+    ) {
+      normView = 'ai-prompt-craft';
     } else if (!normView && normUnit) {
       normView = 'lessons';
     } else if (!normView) {

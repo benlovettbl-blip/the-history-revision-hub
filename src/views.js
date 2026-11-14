@@ -59,11 +59,15 @@ export function renderDashboard() {
       <div class="homepage-nav-toolbar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: var(--bg-card, #ffffff); border: 1.5px solid var(--border-glass, #e2e8f0); border-radius: 12px; padding: 8px 14px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
         
         <!-- Stage Filters -->
-        <div class="stage-filter-group" style="display: inline-flex; align-items: center; gap: 4px; background: #f1f5f9; border-radius: 8px; padding: 3px;">
+        <div class="stage-filter-group" style="display: inline-flex; align-items: center; gap: 4px; background: #f1f5f9; border-radius: 8px; padding: 3px; flex-wrap: wrap;">
           <button class="stage-filter-btn active" data-stage="all" style="background: #0f172a; color: #ffffff; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">All Syllabuses</button>
           <button class="stage-filter-btn" data-stage="ks2" style="background: transparent; color: #475569; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Key Stage 2</button>
           <button class="stage-filter-btn" data-stage="ks3" style="background: transparent; color: #475569; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Key Stage 3</button>
           <button class="stage-filter-btn" data-stage="gcse" style="background: transparent; color: #475569; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE (9–1)</button>
+          <button type="button" onclick="window.switchView('ai-prompt-craft')" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 12px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-microchip" style="font-size: 0.72rem;"></i>
+            <span>Year 9 AI Course</span>
+          </button>
         </div>
 
         <!-- Fast Year Jump Chips -->
@@ -408,6 +412,28 @@ export function renderDashboard() {
           </div>
           <button class="btn-pedagogy-primary" onclick="window.switchView('chess')" style="background: #7c3aed; border-color: #6d28d9; padding: 8px 14px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; border-radius: 6px; cursor: pointer; color: #ffffff; flex-shrink: 0;">
             <span>Strategy Hub</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Year 9 AI Curriculum Spotlight -->
+        <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1.5px solid #bfdbfe; border-radius: 14px; padding: 18px 20px; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.08); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 12px; min-width: 220px; flex: 1;">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: #1e3a8a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0; box-shadow: 0 4px 10px rgba(30, 58, 138, 0.25);">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 2px;">
+                <span style="font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; background: #1d4ed8; color: #ffffff; padding: 2px 7px; border-radius: 10px;">KS3 Year 9</span>
+                <span style="font-size: 0.72rem; font-weight: 700; color: #1e40af;">6-Lesson Enquiry Unit</span>
+              </div>
+              <div style="font-size: 0.92rem; font-weight: 700; color: #0f172a;">
+                Artificial Intelligence &amp; Prompt Craft
+              </div>
+            </div>
+          </div>
+          <button class="btn-pedagogy-primary" onclick="window.switchView('ai-prompt-craft')" style="background: #1e3a8a; border-color: #1e40af; padding: 8px 14px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; border-radius: 6px; cursor: pointer; color: #ffffff; flex-shrink: 0;">
+            <span>Open Course</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>

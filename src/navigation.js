@@ -459,6 +459,23 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName = 'masterpiece';
   } else if (rawView === 'textbook-reader') {
     viewName = 'reader';
+  } else if (
+    rawView === 'ai-prompt-craft' ||
+    rawView === 'prompt-craft' ||
+    rawView === 'ai-lesson'
+  ) {
+    viewName = 'ai-prompt-craft';
+  }
+
+  if (
+    viewName !== 'ai-prompt-craft' &&
+    typeof document !== 'undefined' &&
+    document.body &&
+    (document.body.classList.contains('ai-prompt-craft-active') ||
+      document.body.classList.contains('ai-projector-clean'))
+  ) {
+    const { unmountAiPromptCraftConsole } = await import('./ai_prompt_craft.js');
+    unmountAiPromptCraftConsole();
   }
 
   // Safeguard lockdown mode enforcement
@@ -534,7 +551,11 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       } else if (options && options.lessonIndex !== undefined) {
         url.searchParams.set('lesson', options.lessonIndex + 1);
       }
-    } else if (viewName !== 'reading' && viewName !== 'guided-reading') {
+    } else if (
+      viewName !== 'reading' &&
+      viewName !== 'guided-reading' &&
+      viewName !== 'ai-prompt-craft'
+    ) {
       url.searchParams.delete('lesson');
     }
     try {
@@ -555,6 +576,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'department-portal' ||
     viewName === 'competitions' ||
     viewName === 'chess' ||
+    viewName === 'ai-prompt-craft' ||
     viewName === 'masterpiece' ||
     viewName === 'gallery' ||
     viewName === 'gcse-tracker' ||
@@ -668,6 +690,9 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
     await loadUnit(targetUnit);
     await renderMarkingView(options);
+  } else if (viewName === 'ai-prompt-craft') {
+    const { renderAiPromptCraftConsole } = await import('./ai_prompt_craft.js');
+    renderAiPromptCraftConsole();
   } else if (
     viewName === 'gcse-tracker' ||
     viewName === 'spec-tracker' ||
