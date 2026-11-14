@@ -24,21 +24,21 @@ const RCTC_CLAUSES = [
     code: '[ R ]',
     name: 'Role',
     penMark: 'Box [ ... ]',
-    summary: 'Define the expertise, persona, and pedagogical stance of the AI.',
+    summary: 'Define who the AI should act as (e.g. a demanding Year 9 tutor or critic).',
   },
   {
     key: 'C',
     code: '( C )',
     name: 'Context',
     penMark: 'Brackets ( ... )',
-    summary: 'Specify who you are, the exact syllabus topic, and your current gap.',
+    summary: 'Give background: who you are, the exact topic, and what you find tricky.',
   },
   {
     key: 'T',
     code: '_T_',
     name: 'Task',
     penMark: 'Underline',
-    summary: 'State the exact step-by-step interaction sequence Copilot must run.',
+    summary: 'Tell Copilot the exact step-by-step job you want it to carry out.',
   },
   {
     key: 'C2',
@@ -115,7 +115,7 @@ const AI_COURSE_LESSONS = [
     badge: 'Lesson 1 · Technical Foundations',
     title: 'Inside the Black Box: Tokens, Probability & Next-Word Prediction',
     enquiry: 'Does a large language model "know" facts like a database, or predict probable sequences of tokens?',
-    duration: '35 mins',
+    duration: 'Year 9 AI',
     status: 'Prior Learning',
     summary:
       'Pupils explore how transformer models break language into tokens and calculate next-token probabilities from training distributions—explaining why AI sounds articulate even when guessing.',
@@ -166,7 +166,7 @@ const AI_COURSE_LESSONS = [
     badge: 'Lesson 2 · Epistemology & Verification',
     title: 'Fluent Fiction: Hallucinations, Training Bias & Verification',
     enquiry: 'Why do large language models state false information with total confidence, and how do scholars verify outputs?',
-    duration: '35 mins',
+    duration: 'Year 9 AI',
     status: 'Prior Learning',
     summary:
       'Building on Lesson 1, pupils investigate AI hallucinations, sycophancy, and lateral verification habits—learning never to treat unverified model prose as primary evidence.',
@@ -215,40 +215,40 @@ const AI_COURSE_LESSONS = [
     num: 3,
     id: 'l3',
     isFeaturedDemo: true,
-    badge: 'Lesson 3 · Prompt Engineering (Observed Lesson)',
+    badge: 'Lesson 3 · Prompt Engineering',
     title: 'Introduction to Prompt Craft: Engineering an AI Thinking Coach',
     enquiry:
       'How do we structure prompts using R.C.T.C. (Role, Context, Task, Constraints) so AI strengthens human memory and judgement rather than replacing it?',
-    duration: '35 mins',
-    status: 'Today\'s Lesson',
+    duration: 'Year 9 AI',
+    status: 'Core Enquiry',
     summary:
-      'Pupils learn explicit prompt architecture (R.C.T.C.) for the first time: transforming Microsoft Copilot into a disciplined Socratic revision coach, stress-testing its guardrails, and solving four real-world workplace failures.',
-    doNowTitle: 'Spaced Retrieval (Lessons 1–2) & Baseline Diagnostic (5 Questions)',
+      'Pupils learn explicit prompt architecture (R.C.T.C.): transforming Microsoft Copilot into a disciplined Socratic revision coach, stress-testing its guardrails, and solving four real-world workplace cases.',
+    doNowTitle: 'Spaced Retrieval (Lessons 1–2) & Diagnostic Check (5 Questions)',
     doNow: [
       {
         origin: 'Lesson 1',
         q: 'Does Microsoft Copilot "understand" your subject like a teacher, or predict the most probable next words?',
-        a: 'It predicts probable token sequences—meaning vague inputs trigger generic, textbook-average outputs.',
+        a: 'It predicts probable next-word tokens from patterns in its training data—so vague prompts trigger generic, average replies.',
       },
       {
         origin: 'Lesson 2',
         q: 'What do we call it when an AI model invents a plausible-sounding fact, quote, or court case that does not exist?',
-        a: 'A hallucination (confabulation) — fluency is never proof of accuracy.',
+        a: 'A hallucination — sounding confident and fluent is never proof that an AI is accurate.',
       },
       {
-        origin: 'Cognitive Science',
+        origin: 'Memory',
         q: 'Pupil A types "Explain photosynthesis for my test" and reads Copilot\'s 180-word summary twice. Why is 80% of this forgotten within 48 hours?',
-        a: 'Passive reading creates an "illusion of fluency" without active retrieval from long-term memory.',
+        a: 'Passive reading creates an "illusion of knowing" without making your brain actively retrieve from memory.',
       },
       {
-        origin: 'Pedagogy',
+        origin: 'Coaching',
         q: 'How does a skilled human tutor respond differently from default Copilot when you say "I am stuck on causes of WWI"?',
-        a: 'A tutor withholds the final answer, asks one diagnostic question first, and coaches your exact gap.',
+        a: 'A good tutor holds back the answer, asks one short question first, and coaches you to work it out yourself.',
       },
       {
-        origin: 'Habit Check',
+        origin: 'AI Design',
         q: 'Why does default Copilot immediately hand over finished paragraphs unless you instruct it otherwise?',
-        a: 'Commercial chatbots are trained to be maximally accommodating ("helpful assistant" bias), doing the cognitive lifting for you unless constrained.',
+        a: 'Chatbots are trained to be maximally helpful assistants—doing the thinking for you unless you set strict rules.',
       },
     ],
   },
@@ -260,7 +260,7 @@ const AI_COURSE_LESSONS = [
     title: 'Prompt Craft at Work: Multi-Step Workflows & Guardrails',
     enquiry:
       'How do professionals chain prompts and enforce strict verification guardrails in high-stakes careers?',
-    duration: '35 mins',
+    duration: 'Year 9 AI',
     status: 'Next Lesson (Retrieval Ready)',
     summary:
       'Directly consolidates Lesson 3\'s R.C.T.C. framework with a 5-question retrieval Do Now before examining how lawyers, clinicians, architects, and analysts build multi-step verification workflows.',
@@ -312,7 +312,7 @@ const AI_COURSE_LESSONS = [
     title: 'Subject Mastery Studio: AI Across STEM, Humanities & Languages',
     enquiry:
       'How should our prompting strategy adapt between a French conversation partner, a Maths step-checker, and a History source critic?',
-    duration: '35 mins',
+    duration: 'Year 9 AI',
     status: 'Upcoming',
     summary:
       'In partnership with academic departments, pupils tailor R.C.T.C. coaching templates to distinct disciplinary demands—from conversational MFL roleplay to step-by-step algebraic debugging.',
@@ -364,7 +364,7 @@ const AI_COURSE_LESSONS = [
     title: 'Human Agency in the 2030s: Authorship, Ethics & Judgement',
     enquiry:
       'Where must human accountability, empathy, and intellectual ownership draw a permanent line that AI does not cross?',
-    duration: '35 mins',
+    duration: 'Year 9 AI',
     status: 'Synoptic Finale',
     summary:
       'Pupils debate academic integrity, environmental compute costs, intellectual authorship, and why human judgement remains irreplaceable in leadership and public life.',
@@ -1107,12 +1107,12 @@ function renderTopBar() {
 
       <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
         <div class="aiu-timer-cluster ${timerRunning ? 'running' : ''}" id="aiu-timer-box">
-          <select id="aiu-timer-preset" style="border:none; background:transparent; font-family:inherit; font-size:0.74rem; font-weight:700; color:#475569; cursor:pointer; outline:none;" title="Select Phase Timer Preset">
-            <option value="240" ${stageTimerSec === 240 ? 'selected' : ''}>Do Now (4m)</option>
-            <option value="360" ${stageTimerSec === 360 ? 'selected' : ''}>Stage 1 (6m)</option>
-            <option value="840" ${stageTimerSec === 840 ? 'selected' : ''}>Copilot Lab (14m)</option>
-            <option value="300" ${stageTimerSec === 300 ? 'selected' : ''}>Pair Case (5m)</option>
-            <option value="660" ${stageTimerSec === 660 ? 'selected' : ''}>Plenary (11m)</option>
+          <select id="aiu-timer-preset" style="border:none; background:transparent; font-family:inherit; font-size:0.74rem; font-weight:700; color:#475569; cursor:pointer; outline:none;" title="Select Activity Timer">
+            <option value="180" ${stageTimerSec === 180 ? 'selected' : ''}>3 min</option>
+            <option value="240" ${stageTimerSec === 240 ? 'selected' : ''}>4 min</option>
+            <option value="300" ${stageTimerSec === 300 ? 'selected' : ''}>5 min</option>
+            <option value="420" ${stageTimerSec === 420 ? 'selected' : ''}>7 min</option>
+            <option value="600" ${stageTimerSec === 600 ? 'selected' : ''}>10 min</option>
           </select>
           <span class="aiu-timer-val" id="aiu-timer-val">${fmtMMSS(stageTimerSec)}</span>
           <button type="button" class="aiu-crumb-btn ${timerRunning ? '' : 'navy'}" data-aiu="toggle-timer" style="padding:3px 8px; font-size:0.72rem;">
@@ -1122,24 +1122,11 @@ function renderTopBar() {
           <button type="button" class="aiu-crumb-btn" data-aiu="reset-timer" style="padding:3px 7px; font-size:0.72rem;" title="Reset Timer">
             <i class="fa-solid fa-rotate-left"></i>
           </button>
-          <span id="aiu-total-val" style="font-size:0.71rem; color:#64748b; border-left:1px solid #cbd5e1; padding-left:6px;">
-            ${fmtMMSS(totalLessonSec)} / 35:00
-          </span>
         </div>
 
         <button type="button" class="aiu-crumb-btn ${state.hideHubSidebar ? 'blue-active' : ''}" data-aiu="toggle-projector" title="Hide or restore outer portal sidebar &amp; header">
           <i class="fa-solid ${state.hideHubSidebar ? 'fa-compress' : 'fa-expand'}"></i>
-          <span>${state.hideHubSidebar ? 'Restore Sidebar' : 'Full-Width Board'}</span>
-        </button>
-
-        <button type="button" class="aiu-crumb-btn ${state.showTeacherNotes ? 'blue-active' : ''}" data-aiu="toggle-notes">
-          <i class="fa-solid fa-clipboard-list"></i>
-          <span>Notes</span>
-        </button>
-
-        <button type="button" class="aiu-crumb-btn" data-aiu="open-print" data-doc="worksheet">
-          <i class="fa-solid fa-print"></i>
-          <span>Print Pack</span>
+          <span>${state.hideHubSidebar ? 'Restore Sidebar' : 'Full-Width View'}</span>
         </button>
       </div>
     </div>
@@ -1167,17 +1154,9 @@ function renderUnitOverview() {
             <i class="fa-solid fa-book-open" style="color:#2563eb;"></i>
             <span>Open Lesson 3: Introduction to Prompt Craft</span>
           </button>
-          <button type="button" class="aiu-crumb-btn" style="background:rgba(255,255,255,0.12); color:#ffffff; border-color:rgba(255,255,255,0.3); padding:8px 14px; font-size:0.82rem;" data-aiu="open-print" data-doc="worksheet">
-            <i class="fa-solid fa-file-pdf"></i>
-            <span>2-Sided Pupil Worksheet (L3)</span>
-          </button>
-          <button type="button" class="aiu-crumb-btn" style="background:rgba(255,255,255,0.12); color:#ffffff; border-color:rgba(255,255,255,0.3); padding:8px 14px; font-size:0.82rem;" data-aiu="open-print" data-doc="plan">
-            <i class="fa-solid fa-clipboard-check"></i>
-            <span>Observer Lesson Plan</span>
-          </button>
         </div>
         <span style="font-size:0.76rem; color:#93c5fd; font-weight:600;">
-          Every lesson includes a 5-Question Spaced-Retrieval Do Now
+          6-Lesson Key Stage 3 Curriculum Sequence
         </span>
       </div>
     </div>
@@ -1186,7 +1165,7 @@ function renderUnitOverview() {
       <h2 style="margin:0; font-family:'Playfair Display', serif; font-size:1.25rem; color:#0f172a;">
         Year 9 Scheme of Work — Enquiry Sequence (Lessons 1–6)
       </h2>
-      <span style="font-size:0.78rem; color:#64748b; font-weight:600;">Click any lesson to launch</span>
+      <span style="font-size:0.78rem; color:#64748b; font-weight:600;">Select a lesson</span>
     </div>
 
     <div class="aiu-lessons-grid">
@@ -1201,7 +1180,7 @@ function renderUnitOverview() {
             <div>
               <div style="display:flex; justify-content:space-between; align-items:center; gap:6px; margin-bottom:8px;">
                 <span style="font-size:0.68rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; padding:2px 8px; border-radius:4px; background:${l.isFeaturedDemo ? '#2563eb' : l.isPlenaryQuizTarget ? '#ecfdf5' : '#f1f5f9'}; color:${l.isFeaturedDemo ? '#ffffff' : l.isPlenaryQuizTarget ? '#065f46' : '#475569'};">
-                  ${l.isFeaturedDemo ? 'Lesson 3 · Live Lesson' : `Lesson ${l.num} of 6`}
+                  Lesson ${l.num} of 6
                 </span>
                 <span style="font-size:0.72rem; color:#64748b; font-weight:600;">${l.duration}</span>
               </div>
@@ -1309,7 +1288,7 @@ function renderLesson3Stations() {
     <section class="aiu-station">
       <header class="aiu-station-head">
         <div class="aiu-station-title-row">
-          <span class="aiu-stage-pill">Stage 01 · 4–10 Mins</span>
+          <span class="aiu-stage-pill">Stage 01</span>
           <h2 class="aiu-station-title">Prompt Architecture: The R.C.T.C. Specification</h2>
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
@@ -1343,7 +1322,7 @@ function renderLesson3Stations() {
                     <strong>Learning Result:</strong> Passive reading — zero memory retrieval by the pupil.
                   </div>`
                 : `<div style="font-size:0.86rem; color:#64748b; border:1px dashed #cbd5e1; border-radius:6px; padding:14px 12px; background:#ffffff;">
-                    Hidden — click anywhere on this card to inspect a typical lazy revision prompt and how Copilot reacts.
+                    Click to compare how Microsoft Copilot responds to a typical one-line revision prompt.
                   </div>`
             }
           </div>
@@ -1368,7 +1347,7 @@ function renderLesson3Stations() {
                     <strong>Learning Result:</strong> Active recall, error spotting, and step-by-step coaching.
                   </div>`
                 : `<div style="font-size:0.86rem; color:#64748b; border:1px dashed #cbd5e1; border-radius:6px; padding:14px 12px; background:#ffffff;">
-                    Hidden — click anywhere on this card to compare the engineered R.C.T.C. coaching prompt.
+                    Click to compare how Microsoft Copilot responds to an engineered R.C.T.C. coaching prompt.
                   </div>`
             }
           </div>
@@ -1414,7 +1393,7 @@ function renderLesson3Stations() {
         </div>
 
         <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:6px; padding:10px 14px; font-size:0.9rem; color:#1e3a8a;">
-          <strong>Paper Task Before Opening Screens (3–4 mins):</strong> On <strong>Side 1, Part 2A</strong>, tick one Year 9 revision topic and hand-write your <strong>4-sentence v1.0 Coaching Prompt</strong>.
+          <strong>Paper Task Before Opening Screens:</strong> On <strong>Side 1, Part 2A</strong>, tick one Year 9 revision topic and hand-write your <strong>4-sentence v1.0 Coaching Prompt</strong>.
         </div>
       </div>
     </section>
@@ -1423,13 +1402,13 @@ function renderLesson3Stations() {
     <section class="aiu-station">
       <header class="aiu-station-head">
         <div class="aiu-station-title-row">
-          <span class="aiu-stage-pill">Stage 02 · 10–24 Mins</span>
+          <span class="aiu-stage-pill">Stage 02</span>
           <h2 class="aiu-station-title">Microsoft Copilot Lab: Coaching &amp; Guardrail Stress-Test</h2>
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
           <span class="aiu-mode-pill open">Microsoft Copilot Open &bull; Individual Devices</span>
           <button type="button" class="aiu-crumb-btn ${state.phaseBOpen ? 'blue-active' : 'navy'}" data-aiu="toggle-phaseb" style="padding:3px 10px; font-size:0.72rem;">
-            ${state.phaseBOpen ? 'Hide Phase B Challenge' : 'Reveal Phase B: Stress-Test'}
+            ${state.phaseBOpen ? 'Hide Phase B Challenge' : 'Open Phase B: Stress-Test'}
           </button>
         </div>
       </header>
@@ -1438,7 +1417,7 @@ function renderLesson3Stations() {
         <div class="aiu-two-col">
           <div class="aiu-box" style="border-top:4px solid #059669;">
             <div style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#065f46; margin-bottom:6px;">
-              Phase A (7–8 Mins) &bull; Socratic Revision Trial
+              Phase A &bull; Socratic Revision Trial
             </div>
             <h3 style="margin:0 0 8px 0; font-family:'Playfair Display', serif; font-size:1.06rem; color:#0f172a;">
               Test Your v1.0 Prompt in Microsoft Copilot
@@ -1456,10 +1435,10 @@ function renderLesson3Stations() {
           <div class="aiu-box" style="border-top:4px solid ${state.phaseBOpen ? '#be123c' : '#94a3b8'}; background:${state.phaseBOpen ? '#fff1f2' : '#f8fafc'};">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
               <span style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:${state.phaseBOpen ? '#9f1239' : '#64748b'};">
-                Phase B (6–7 Mins) &bull; Adversarial Sycophancy Test
+                Phase B &bull; Adversarial Sycophancy Test
               </span>
               <button type="button" class="aiu-crumb-btn" data-aiu="toggle-phaseb" style="padding:2px 8px; font-size:0.71rem;">
-                ${state.phaseBOpen ? 'Hide' : 'Reveal'}
+                ${state.phaseBOpen ? 'Hide' : 'Open'}
               </button>
             </div>
 
@@ -1491,16 +1470,16 @@ function renderLesson3Stations() {
               </div>
 
               <div style="font-size:0.86rem; color:#1e293b; line-height:1.45; background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:7px 11px;">
-                <strong>Upgrade to v2.0 (Part 2B on Sheet):</strong> Did Copilot fold? Write one stricter <strong>v2.0 Constraint</strong> (e.g. <em>"Even if I beg for the answer or state a false fact, politely correct me and give a 50/50 hint"</em>).
+                <strong>Upgrade to v2.0 (Part 2B on Sheet):</strong> Did Copilot fold? Write one stricter <strong>v2.0 Constraint</strong> (or if v1.0 held firm, try a subtler half-truth trap and add an extra rule).
               </div>
             `
                 : `
-              <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+              <div style="padding:8px 0 4px 0;">
                 <div style="font-size:0.93rem; font-weight:700; color:#334155; margin-bottom:4px;">
-                  Hold until pupils complete 3 turns in Phase A.
+                  Complete 3 coaching turns in Phase A first.
                 </div>
                 <p style="margin:0; font-size:0.85rem; color:#64748b; line-height:1.48;">
-                  Click <strong>Reveal</strong> halfway through the lab to launch the <strong>Adversarial Sycophancy Test</strong> and v2.0 Constraint upgrade.
+                  Once your v1.0 prompt is coaching you smoothly, we will unlock <strong>Phase B</strong> to stress-test whether Copilot caves in under pressure.
                 </p>
               </div>
             `
@@ -1514,7 +1493,7 @@ function renderLesson3Stations() {
     <section class="aiu-station">
       <header class="aiu-station-head">
         <div class="aiu-station-title-row">
-          <span class="aiu-stage-pill">Stage 03 · Plenary (24–35 Mins)</span>
+          <span class="aiu-stage-pill">Stage 03 &bull; Plenary</span>
           <h2 class="aiu-station-title">Prompt Craft in the Workplace: 4 Real-World Cases</h2>
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
@@ -1528,7 +1507,7 @@ function renderLesson3Stations() {
       <div class="aiu-station-body">
         <div style="background:#eff6ff; border:1.5px solid #bfdbfe; border-left:5px solid #1e3a8a; border-radius:7px; padding:11px 15px; margin-bottom:14px; font-size:0.92rem; color:#0f172a; line-height:1.52;">
           <div style="font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#1e3a8a; margin-bottom:3px;">
-            3-Minute Pair / Group Huddle &rarr; Live Class Discussion
+            Pair / Group Huddle &rarr; Class Discussion
           </div>
           Read your assigned case on <strong>Side 2</strong> (<strong>Case Study A, B, C, or D</strong>). Talk it through with your partner (jot bullet points in the box) and be ready to tell the class:<br/>
           <strong>1. Spot the Danger:</strong> What could go badly wrong if the employee sends this prompt? &nbsp;&bull;&nbsp;
@@ -1622,27 +1601,11 @@ function renderActiveLesson() {
       <p class="aiu-hero-enquiry"><strong>Enquiry Question:</strong> ${lesson.enquiry}</p>
     </header>
 
-    ${
-      state.showTeacherNotes
-        ? `
-      <div class="aiu-station no-print" style="border-color:#fcd34d; border-left:5px solid #d97706; background:#fffbeb;">
-        <div class="aiu-station-body" style="padding:13px 18px; font-size:0.87rem; color:#78350f; line-height:1.5;">
-          <strong>Teacher Pacing Reminder (35 Mins):</strong>
-          <strong>0–4m</strong> 5-Q Do Now (click rows to reveal/re-hide) &rarr;
-          <strong>4–10m</strong> Stage 01 R.C.T.C. annotation &amp; v1.0 paper draft &rarr;
-          <strong>10–24m</strong> Stage 02 Copilot Lab + Phase B Stress-Test &rarr;
-          <strong>24–35m</strong> Stage 03 Side-2 Workplace Case Studies (and if 2 mins spare at the end, click <strong>Next Lesson: Lesson 4 &rarr;</strong> below to test them live on Lesson 4's 5-Question R.C.T.C. Retrieval Do Now!).
-        </div>
-      </div>
-    `
-        : ''
-    }
-
     ${renderLessonDoNowStation(lesson)}
 
     ${lesson.num === 3 ? renderLesson3Stations() : renderShellLessonStations(lesson)}
 
-    <!-- Bottom Lesson Navigation (Prev / Unit Overview / Next Lesson!) -->
+    <!-- Bottom Lesson Navigation (Prev / Unit Overview / Next Lesson) -->
     <footer class="aiu-lesson-footer-nav no-print">
       <div>
         ${
@@ -1667,7 +1630,7 @@ function renderActiveLesson() {
         ${
           nextLesson
             ? `<button type="button" class="aiu-next-lesson-btn" data-aiu="open-lesson" data-num="${nextLesson.num}">
-                <span>Next Lesson: L${nextLesson.num} ${nextLesson.num === 4 ? '(5-Q Retrieval Quiz on Prompt Craft)' : nextLesson.title.split(':')[0]}</span>
+                <span>Next Lesson: Lesson ${nextLesson.num} — ${nextLesson.title.split(':')[0]}</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>`
             : `<button type="button" class="aiu-crumb-btn navy" data-aiu="open-unit" style="padding:9px 16px; font-size:0.84rem;">
@@ -1696,8 +1659,8 @@ function renderWorksheet2PageHTML() {
 
         <div class="aiu-p-box">
           <div class="aiu-p-head">
-            <span>Do Now — Retrieval &amp; Baseline Diagnostic</span>
-            <span style="font-size:7.8pt; font-weight:600; color:#475569;">3 mins &bull; Laptops Closed</span>
+            <span>Do Now — Retrieval &amp; Diagnostic Check</span>
+            <span style="font-size:7.8pt; font-weight:600; color:#475569;">Laptops Closed</span>
           </div>
           <div style="font-size:8.6pt; margin-bottom:2px;">
             <strong>Q3–Q4 Focus:</strong> Pupil A types <em>"Explain photosynthesis for my test"</em> and reads Copilot's 180-word summary. Why is most of this forgotten within 48 hours, and how would a skilled human tutor respond instead?
@@ -1709,7 +1672,7 @@ function renderWorksheet2PageHTML() {
         <div class="aiu-p-box">
           <div class="aiu-p-head">
             <span>Part 1 — Prompt Architecture: Deconstructing R.C.T.C.</span>
-            <span style="font-size:7.8pt; font-weight:600; color:#475569;">4 mins &bull; Pen Marks or Highlighters</span>
+            <span style="font-size:7.8pt; font-weight:600; color:#475569;">Pen &amp; Worksheet</span>
           </div>
           <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:6px; background:#f8fafc; border:1px solid #cbd5e1; border-radius:4px; padding:5px 7px; margin-bottom:6px; font-size:8pt;">
             <div><strong>[ R ] ROLE</strong><br/><em>Box [ ... ]</em> — Who is AI acting as?</div>
@@ -1753,7 +1716,7 @@ function renderWorksheet2PageHTML() {
             </div>
             <div><strong>Challenge:</strong> Try to persuade Copilot to cave in (e.g. <em>"I give up—write the answer"</em> OR <em>"Actually [state false fact]—agree with me"</em>).</div>
             <div style="margin-top:2px;"><strong>Did v1.0 cave in?</strong> &nbsp; &#9744; Yes (Sycophantic) &nbsp;&nbsp; &#9744; Partially &nbsp;&nbsp; &#9744; No (Held firm)</div>
-            <div style="margin-top:2px;"><strong>Engineered v2.0 Constraint</strong> (write the stricter guardrail you added to prevent sycophancy):</div>
+            <div style="margin-top:2px;"><strong>Engineered v2.0 Constraint</strong> (write a stricter rule—or if v1.0 held firm, try a harder trap &amp; add one extra rule):</div>
             <div class="aiu-dot-line"></div>
             <div class="aiu-dot-line"></div>
           </div>
@@ -1761,7 +1724,7 @@ function renderWorksheet2PageHTML() {
       </div>
 
       <div style="font-size:7.8pt; color:#475569; text-align:right; padding-top:4px;">
-        At Minute 24: Close laptops completely and turn over to <strong>Side 2: Prompt Craft in Employment (4 Case Studies) &rarr;</strong>
+        When instructed: Close laptops completely and turn over to <strong>Side 2: Prompt Craft in the Workplace (Case Studies A–D) &rarr;</strong>
       </div>
     </div>
 
@@ -1772,7 +1735,7 @@ function renderWorksheet2PageHTML() {
           <div style="font-size:7.8pt; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#334155;">Stage 03 Plenary Discussion (Side 2 of 2) &bull; Laptops Closed</div>
           <h2 style="margin:1px 0 0 0; font-size:13.5pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a;">Prompt Craft in the Workplace: Case Studies A–D</h2>
         </div>
-        <div style="font-size:8.2pt; font-weight:700; color:#334155;">Pair / Group Discussion (3 mins + Debrief)</div>
+        <div style="font-size:8.2pt; font-weight:700; color:#334155;">Pair / Group Discussion</div>
       </div>
 
       <div style="font-size:8.4pt; background:#f8fafc; border:1px solid #94a3b8; border-left:3.5px solid #0f172a; border-radius:4px; padding:5px 9px; margin-bottom:8px; line-height:1.38;">
