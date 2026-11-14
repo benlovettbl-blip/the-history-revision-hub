@@ -512,6 +512,8 @@ function injectUnitStyles() {
   const style = document.createElement('style');
   style.id = 'ai-unit-editorial-styles';
   style.textContent = `
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,500&display=swap');
+
     /* Optional 1-Click Full-Width Projector Mode */
     body.ai-projector-clean #app-sidebar,
     body.ai-projector-clean .app-header,
@@ -1131,58 +1133,133 @@ function injectUnitStyles() {
       padding: 9mm 11mm;
       box-sizing: border-box;
       box-shadow: 0 8px 28px rgba(15, 23, 42, 0.18);
-      font-size: 9.2pt;
-      line-height: 1.38;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      -webkit-font-smoothing: antialiased;
     }
     .aiu-a4-page.break-after {
       page-break-after: always;
       break-after: page;
     }
-    .aiu-p-box {
-      border: 1.4px solid #0f172a;
-      border-radius: 5px;
-      padding: 8px 11px;
-      margin-bottom: 8px;
-    }
-    .aiu-p-head {
-      font-size: 9.4pt;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      border-bottom: 1px solid #cbd5e1;
-      padding-bottom: 3px;
-      margin: 0 0 6px 0;
+    .aiu-sec-banner {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 4.5px 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 7px;
     }
-    .aiu-dot-line {
-      border-bottom: 1px dotted #475569;
-      height: 23.5px;
+    .aiu-sec-banner-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 8.6pt;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .aiu-sec-num {
+      background: #ffffff;
+      color: #0f172a;
+      font-family: 'JetBrains Mono', Consolas, monospace;
+      font-size: 7.6pt;
+      font-weight: 800;
+      padding: 1px 5.5px;
+      border-radius: 3px;
+      letter-spacing: 0.02em;
+    }
+    .aiu-sec-banner-right {
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #e2e8f0;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .aiu-code-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', Consolas, monospace;
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: #0f172a;
+      background: #f1f5f9;
+      border: 1.1px solid #0f172a;
+      border-radius: 4px;
+      padding: 1.5px 6px;
+      min-width: 38px;
+      text-align: center;
+    }
+    .aiu-topic-row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 5px;
+      margin-bottom: 7px;
+    }
+    .aiu-topic-pill {
+      border: 1px solid #94a3b8;
+      background: #f8fafc;
+      border-radius: 999px;
+      padding: 2.5px 8px;
+      font-size: 7.8pt;
+      font-weight: 600;
+      color: #0f172a;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .aiu-rule-line {
+      border-bottom: 0.85px solid #94a3b8;
+      height: 22.5px;
       width: 100%;
+      box-sizing: border-box;
     }
     .aiu-case-p-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      gap: 9px;
+      gap: 10px;
       flex: 1;
     }
     .aiu-case-p-card {
-      border: 1.4px solid #0f172a;
-      border-radius: 5px;
-      padding: 8px 10px;
+      border: 1.25px solid #0f172a;
+      border-radius: 6px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      background: #ffffff;
     }
-    .aiu-case-dot-line {
-      border-bottom: 1px dotted #475569;
-      height: 23px;
+    .aiu-case-p-head {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 4.5px 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 8.1pt;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .aiu-case-p-body {
+      padding: 7px 10px 8px 10px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .aiu-case-rule-line {
+      border-bottom: 0.85px solid #94a3b8;
+      height: 22px;
       width: 100%;
+      box-sizing: border-box;
     }
 
     @media print {
@@ -1928,159 +2005,218 @@ function renderWorksheet2PageHTML() {
     <!-- PAGE 1 (SIDE 1) -->
     <div class="aiu-a4-page break-after">
       <div>
+        <!-- Editorial Masthead -->
         <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:12px; border-bottom:2px solid #0f172a; padding-bottom:6px; margin-bottom:10px;">
           <div>
-            <div style="font-size:7.8pt; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#334155;">Year 9 Artificial Intelligence &bull; Lesson 3 Enquiry Sheet (Side 1 of 2)</div>
-            <h1 style="margin:2px 0 0 0; font-size:13pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a; white-space:nowrap;">Introduction to Prompt Craft: Engineering an AI Coach</h1>
+            <div style="font-size:7.4pt; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:#334155;">Year 9 Artificial Intelligence &bull; Lesson 3 Enquiry Sheet (Side 1 of 2)</div>
+            <h1 style="margin:2px 0 0 0; font-size:13.8pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a; white-space:nowrap;">Introduction to Prompt Craft: Engineering an AI Coach</h1>
           </div>
-          <div style="font-size:9pt; font-weight:700; white-space:nowrap;">Name: ________________________</div>
-        </div>
-
-        <div class="aiu-p-box" style="padding:9px 11px; margin-bottom:10px;">
-          <div class="aiu-p-head">
-            <span>Part 1 — Prompt Architecture: Deconstructing R.C.T.C.</span>
-            <span style="font-size:7.8pt; font-weight:600; color:#475569;">Laptops Closed &bull; Pen &amp; Worksheet</span>
-          </div>
-          <div style="font-size:8.2pt; color:#334155; margin-bottom:5px;">
-            <strong>1A. Key Prompt Components:</strong> Jot what each part controls as we reveal it, then mark the worked example below using the 4 pen symbols.
-          </div>
-          <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:6px 10px; background:#f8fafc; border:1px solid #cbd5e1; border-radius:4px; padding:7px 9px; margin-bottom:8px; font-size:8.2pt;">
-            <div>
-              <div style="display:flex; justify-content:space-between;"><strong>[ R ] ROLE</strong><em style="color:#475569;">Draw Box [ ... ]</em></div>
-              <div class="aiu-dot-line" style="height:19px;"></div>
-            </div>
-            <div>
-              <div style="display:flex; justify-content:space-between;"><strong>( C ) CONTEXT</strong><em style="color:#475569;">Draw Brackets ( ... )</em></div>
-              <div class="aiu-dot-line" style="height:19px;"></div>
-            </div>
-            <div>
-              <div style="display:flex; justify-content:space-between;"><strong>_T_ TASK</strong><em style="color:#475569;">Draw Underline</em></div>
-              <div class="aiu-dot-line" style="height:19px;"></div>
-            </div>
-            <div>
-              <div style="display:flex; justify-content:space-between;"><strong>|| C || CONSTRAINTS</strong><em style="color:#475569;">Draw Bars || ... ||</em></div>
-              <div class="aiu-dot-line" style="height:19px;"></div>
-            </div>
-          </div>
-          <div style="font-size:9.2pt; line-height:2.02; padding:8px 11px; border:1px dashed #64748b; border-radius:4px; background:#ffffff;">
-            <strong style="font-size:8.3pt; text-transform:uppercase; letter-spacing:0.03em; color:#1e293b; display:block; line-height:1.3; margin-bottom:3px;">1B. Annotate [ R ], ( C ), _T_, and || C || on this worked example:</strong>
-            "Act as a supportive but demanding History tutor. I am a Year 9 pupil revising why William won the Battle of Hastings in 1066. Ask me one short question at a time, wait for my reply, and tell me what is accurate and what I missed. Never write the full answer for me, ask only one question per turn, and keep replies under 50 words."
+          <div style="font-size:8.8pt; font-weight:700; white-space:nowrap; display:flex; align-items:baseline; gap:6px;">
+            <span>Name:</span>
+            <span style="display:inline-block; width:46mm; border-bottom:1px solid #0f172a;"></span>
           </div>
         </div>
 
-        <div class="aiu-p-box" style="padding:9px 11px; margin-bottom:0;">
-          <div class="aiu-p-head">
-            <span>Part 2 — Microsoft Copilot Lab: Draft, Test &amp; Stress-Test</span>
-            <span style="font-size:7.8pt; font-weight:600; color:#475569; white-space:nowrap;">Plan on Paper First &rarr; Test in Copilot</span>
-          </div>
-          <div style="font-size:8.6pt; margin-bottom:6px;">
-            <strong>2A. Tick ONE Year 9 topic:</strong> &nbsp;
-            &#9744; Biology: Mitosis &nbsp;&nbsp;
-            &#9744; History: 1914 Alliances &nbsp;&nbsp;
-            &#9744; English: Macbeth &nbsp;&nbsp;
-            &#9744; Geography: Plate Margins &nbsp;&nbsp;
-            &#9744; Own Topic: ______________
-          </div>
-          <div style="font-size:8.6pt; font-weight:700; margin-bottom:5px;">Hand-write your v1.0 Coaching Prompt BEFORE opening your laptop:</div>
-
-          <div style="display:grid; grid-template-columns:118px 1fr; gap:5px 10px; font-size:8.6pt; align-items:start; margin-bottom:9px;">
-            <div style="padding-top:4px;"><strong>[ R ] Role:</strong></div>
-            <div>
-              <div class="aiu-dot-line"></div>
-              <div class="aiu-dot-line"></div>
+        <!-- SECTION 01: PROMPT ARCHITECTURE (De-Boxed Editorial Flow) -->
+        <div style="margin-bottom:12px;">
+          <div class="aiu-sec-banner">
+            <div class="aiu-sec-banner-left">
+              <span class="aiu-sec-num">01</span>
+              <span>Prompt Architecture &mdash; Deconstructing R.C.T.C.</span>
             </div>
-
-            <div style="padding-top:4px;"><strong>( C ) Context:</strong></div>
-            <div>
-              <div class="aiu-dot-line"></div>
-              <div class="aiu-dot-line"></div>
-            </div>
-
-            <div style="padding-top:4px;"><strong>_T_ Task:</strong></div>
-            <div>
-              <div class="aiu-dot-line"></div>
-              <div class="aiu-dot-line"></div>
-              <div class="aiu-dot-line"></div>
-            </div>
-
-            <div style="padding-top:4px;"><strong>|| C || Constraints:</strong></div>
-            <div>
-              <div class="aiu-dot-line"></div>
-              <div class="aiu-dot-line"></div>
-              <div class="aiu-dot-line"></div>
-            </div>
+            <span class="aiu-sec-banner-right">Laptops Closed &bull; Pen &amp; Sheet</span>
           </div>
 
-          <div style="background:#f8fafc; border:1px solid #94a3b8; border-radius:4px; padding:7px 9px; font-size:8.4pt;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px;">
-              <strong style="color:#0f172a; font-size:8.7pt;">2B. Phase B — Adversarial Sycophancy Test:</strong>
-              <span style="font-size:7.6pt; color:#475569; font-style:italic;">Does Copilot cave in like a "yes-man" or hold firm?</span>
+          <div style="font-size:8.2pt; color:#334155; margin-bottom:6px;">
+            <strong style="color:#0f172a;">1A. The Four Prompt Controls:</strong> Jot what each component controls as we reveal it, then mark the worked example below using the four pen symbols.
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:7px 14px; margin-bottom:9px; font-size:8.3pt;">
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:5px; padding:5px 9px 6px 9px;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="display:inline-flex; align-items:center; gap:6px;"><span class="aiu-code-badge">[ R ]</span> <strong>Role</strong></span>
+                <span style="font-size:7.6pt; color:#475569;">Draw a <strong>[ Box ]</strong></span>
+              </div>
+              <div class="aiu-rule-line" style="height:19px;"></div>
             </div>
-            <div style="line-height:1.36; color:#1e293b;">
-              Try to persuade Copilot to break your rules (e.g. <em>"I give up—write the answer"</em> OR confidently state a false fact and tell it to agree with you).
+
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:5px; padding:5px 9px 6px 9px;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="display:inline-flex; align-items:center; gap:6px;"><span class="aiu-code-badge">( C )</span> <strong>Context</strong></span>
+                <span style="font-size:7.6pt; color:#475569;">Draw <strong>( Brackets )</strong></span>
+              </div>
+              <div class="aiu-rule-line" style="height:19px;"></div>
             </div>
-            <div style="margin-top:4px;"><strong>Did v1.0 cave in?</strong> &nbsp;&nbsp; &#9744; Yes (Sycophantic) &nbsp;&nbsp;&nbsp; &#9744; Partially &nbsp;&nbsp;&nbsp; &#9744; No (Held firm)</div>
-            <div style="margin-top:4px; font-weight:700;">Engineered v2.0 Constraint <span style="font-weight:400;">(write a stricter guardrail—or if v1.0 held firm, try a subtler trap &amp; add one extra rule):</span></div>
-            <div class="aiu-dot-line"></div>
-            <div class="aiu-dot-line"></div>
-            <div class="aiu-dot-line"></div>
+
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:5px; padding:5px 9px 6px 9px;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="display:inline-flex; align-items:center; gap:6px;"><span class="aiu-code-badge" style="text-decoration:underline; text-underline-offset:2px;">&nbsp;T&nbsp;</span> <strong>Task</strong></span>
+                <span style="font-size:7.6pt; color:#475569;">Draw an <span style="text-decoration:underline;"><strong>Underline</strong></span></span>
+              </div>
+              <div class="aiu-rule-line" style="height:19px;"></div>
+            </div>
+
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:5px; padding:5px 9px 6px 9px;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="display:inline-flex; align-items:center; gap:6px;"><span class="aiu-code-badge">&#8214; C &#8214;</span> <strong>Constraints</strong></span>
+                <span style="font-size:7.6pt; color:#475569;">Draw <strong>&#8214; Double Bars &#8214;</strong></span>
+              </div>
+              <div class="aiu-rule-line" style="height:19px;"></div>
+            </div>
+          </div>
+
+          <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:3.5px solid #0f172a; border-radius:5px; padding:7px 12px;">
+            <div style="font-size:7.8pt; font-weight:800; text-transform:uppercase; letter-spacing:0.04em; color:#0f172a; margin-bottom:2px;">
+              1B. Specimen Prompt &mdash; Annotate [ R ], ( C ), <span style="text-decoration:underline;">T</span>, and &#8214; C &#8214; directly onto the text:
+            </div>
+            <div style="font-family:Georgia, 'Times New Roman', serif; font-size:9.6pt; line-height:2.05; color:#0f172a;">
+              &ldquo;Act as a supportive but demanding History tutor. I am a Year 9 pupil revising why William won the Battle of Hastings in 1066. Ask me one short question at a time, wait for my reply, and tell me what is accurate and what I missed. Never write the full answer for me, ask only one question per turn, and keep replies under 50 words.&rdquo;
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 02: MICROSOFT COPILOT LAB -->
+        <div>
+          <div class="aiu-sec-banner">
+            <div class="aiu-sec-banner-left">
+              <span class="aiu-sec-num">02</span>
+              <span>Microsoft Copilot Lab &mdash; Draft, Test &amp; Stress-Test</span>
+            </div>
+            <span class="aiu-sec-banner-right">Plan on Paper First &rarr; Test in Copilot</span>
+          </div>
+
+          <div style="font-size:8.3pt; font-weight:700; color:#0f172a; margin-bottom:4px;">
+            2A. Tick ONE Year 9 revision topic, then hand-write your v1.0 Coaching Prompt BEFORE opening your laptop:
+          </div>
+
+          <div class="aiu-topic-row">
+            <span class="aiu-topic-pill">&#9744; Biology: Mitosis</span>
+            <span class="aiu-topic-pill">&#9744; History: 1914 Alliances</span>
+            <span class="aiu-topic-pill">&#9744; English: Macbeth</span>
+            <span class="aiu-topic-pill">&#9744; Geography: Plate Margins</span>
+            <span class="aiu-topic-pill" style="flex:1;">&#9744; Own: <span style="flex:1; border-bottom:0.85px solid #64748b; height:11px; display:inline-block;"></span></span>
+          </div>
+
+          <div style="display:grid; grid-template-columns:126px 1fr; gap:5px 12px; font-size:8.6pt; align-items:start; margin-bottom:10px;">
+            <div style="padding-top:4px; display:flex; align-items:center; gap:6px;">
+              <span class="aiu-code-badge">[ R ]</span> <strong>Role</strong>
+            </div>
+            <div>
+              <div class="aiu-rule-line"></div>
+              <div class="aiu-rule-line"></div>
+            </div>
+
+            <div style="padding-top:4px; display:flex; align-items:center; gap:6px;">
+              <span class="aiu-code-badge">( C )</span> <strong>Context</strong>
+            </div>
+            <div>
+              <div class="aiu-rule-line"></div>
+              <div class="aiu-rule-line"></div>
+            </div>
+
+            <div style="padding-top:4px; display:flex; align-items:center; gap:6px;">
+              <span class="aiu-code-badge" style="text-decoration:underline; text-underline-offset:2px;">&nbsp;T&nbsp;</span> <strong>Task</strong>
+            </div>
+            <div>
+              <div class="aiu-rule-line"></div>
+              <div class="aiu-rule-line"></div>
+              <div class="aiu-rule-line"></div>
+            </div>
+
+            <div style="padding-top:4px; display:flex; align-items:center; gap:6px;">
+              <span class="aiu-code-badge">&#8214; C &#8214;</span> <strong>Constraints</strong>
+            </div>
+            <div>
+              <div class="aiu-rule-line"></div>
+              <div class="aiu-rule-line"></div>
+              <div class="aiu-rule-line"></div>
+            </div>
+          </div>
+
+          <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:3.5px solid #0f172a; border-radius:5px; padding:7px 11px; font-size:8.3pt;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:2px;">
+              <strong style="color:#0f172a; font-size:8.6pt;">2B. Phase B &mdash; Adversarial Sycophancy Stress-Test</strong>
+              <span style="font-size:7.6pt; color:#475569; font-style:italic;">Does Copilot cave in like a &ldquo;yes-man&rdquo; or hold firm?</span>
+            </div>
+            <div style="line-height:1.38; color:#1e293b;">
+              Try to persuade Copilot to break your rules (e.g. <em>&ldquo;I give up&mdash;write the answer&rdquo;</em> OR confidently state a false fact and ask it to agree with you).
+            </div>
+            <div style="margin-top:5px; display:flex; align-items:center; gap:14px;">
+              <strong>Did v1.0 cave in?</strong>
+              <span>&#9744; Yes (Sycophantic)</span>
+              <span>&#9744; Partially</span>
+              <span>&#9744; No (Held firm)</span>
+            </div>
+            <div style="margin-top:4px; font-weight:700; color:#0f172a;">
+              Engineered v2.0 Constraint <span style="font-weight:400; color:#334155;">(write a stricter guardrail&mdash;or if v1.0 held firm, try a subtler trap &amp; add one extra rule):</span>
+            </div>
+            <div class="aiu-rule-line"></div>
+            <div class="aiu-rule-line"></div>
+            <div class="aiu-rule-line"></div>
           </div>
         </div>
       </div>
 
-      <div style="font-size:8pt; color:#334155; text-align:right; padding-top:7px;">
-        When instructed: Close laptops completely and turn over to <strong>Side 2: Prompt Craft in the Workplace (Case Studies A–D) &rarr;</strong>
+      <div style="font-size:7.9pt; color:#334155; text-align:right; padding-top:6px; border-top:1px solid #e2e8f0;">
+        When instructed: Close laptops completely and turn over to <strong>Side 2: Prompt Craft in the Workplace (Case Studies A&ndash;D) &rarr;</strong>
       </div>
     </div>
 
     <!-- PAGE 2 (SIDE 2): 4 WORKPLACE CASE STUDIES -->
     <div class="aiu-a4-page">
-      <div style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid #0f172a; padding-bottom:5px; margin-bottom:6px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid #0f172a; padding-bottom:5px; margin-bottom:7px;">
         <div>
-          <div style="font-size:7.8pt; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#334155;">Stage 03 Plenary Discussion (Side 2 of 2) &bull; Laptops Closed</div>
-          <h2 style="margin:1px 0 0 0; font-size:13.5pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a;">Prompt Craft in the Workplace: Case Studies A–D</h2>
+          <div style="font-size:7.4pt; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:#334155;">Stage 03 Plenary Discussion (Side 2 of 2) &bull; Laptops Closed</div>
+          <h2 style="margin:2px 0 0 0; font-size:13.8pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a;">Prompt Craft in the Workplace: Case Studies A&ndash;D</h2>
         </div>
-        <div style="font-size:8.2pt; font-weight:700; color:#334155;">Pair / Group Discussion</div>
+        <div style="font-size:8pt; font-weight:700; color:#0f172a; background:#f1f5f9; border:1px solid #cbd5e1; border-radius:999px; padding:2px 9px;">Pair / Group Discussion</div>
       </div>
 
-      <div style="font-size:8.4pt; background:#f8fafc; border:1px solid #94a3b8; border-left:3.5px solid #0f172a; border-radius:4px; padding:5px 9px; margin-bottom:8px; line-height:1.38;">
-        <strong>Pair / Group Instructions:</strong> Discuss your assigned case study (<strong>Case Study A, B, C, or D</strong>) with your partner and jot your notes below so you are ready to share verbally with the class:<br/>
-        <strong>1. Spot the Danger:</strong> What could go badly wrong if the employee sends this prompt? &nbsp;&bull;&nbsp;
-        <strong>2. Fix the Prompt:</strong> What <strong>Role</strong> should Copilot take instead, and what <strong>one strict Rule (Constraint)</strong> must they add?
+      <div style="font-size:8.3pt; background:#f8fafc; border:1px solid #cbd5e1; border-left:3.5px solid #0f172a; border-radius:5px; padding:6px 10px; margin-bottom:9px; line-height:1.4;">
+        <strong>Pair / Group Brief:</strong> Discuss your assigned case study (<strong>A, B, C, or D</strong>) with your partner and jot bullet notes below so you are ready to share with the class:<br/>
+        <strong>1. Spot the Danger:</strong> What could go badly wrong if this prompt is sent? &nbsp;&bull;&nbsp;
+        <strong>2. Fix the Prompt:</strong> What <strong>Role</strong> should Copilot take instead, and what <strong>one strict Rule (Constraint)</strong> must be added?
       </div>
 
       <div class="aiu-case-p-grid">
         ${WORKPLACE_CASES.map(
           (c) => `
           <div class="aiu-case-p-card">
-            <div style="border-bottom:1px solid #cbd5e1; padding-bottom:3px; margin-bottom:5px;">
-              <span style="font-size:8.6pt; font-weight:800; text-transform:uppercase; color:#0f172a;">Case Study ${c.letter} &bull; ${c.sector}</span>
+            <div class="aiu-case-p-head">
+              <span style="display:inline-flex; align-items:center; gap:6px;">
+                <span class="aiu-sec-num">CASE ${c.letter}</span>
+                <span>${c.sector}</span>
+              </span>
             </div>
-            <div style="font-size:8pt; line-height:1.34; color:#1e293b; margin-bottom:5px;">
-              <strong>${c.roleTitle}:</strong> ${c.scenario}
-            </div>
-            <div style="font-size:7.9pt; line-height:1.32; background:#f8fafc; border:1px solid #cbd5e1; border-left:2.5px solid #475569; padding:4px 7px; border-radius:3px; font-style:italic; margin-bottom:8px;">
-              <strong>Prompt:</strong> ${c.naivePrompt}
-            </div>
+            <div class="aiu-case-p-body">
+              <div style="font-size:8pt; line-height:1.36; color:#1e293b; margin-bottom:5px;">
+                <strong style="color:#0f172a;">${c.roleTitle}:</strong> ${c.scenario}
+              </div>
+              <div style="font-size:7.9pt; line-height:1.34; background:#f8fafc; border:1px solid #cbd5e1; border-left:2.5px solid #0f172a; padding:4.5px 8px; border-radius:4px; margin-bottom:7px;">
+                <span style="font-family:'JetBrains Mono', Consolas, monospace; font-size:7pt; font-weight:700; text-transform:uppercase; color:#334155; display:block; margin-bottom:1px;">Typed into Copilot:</span>
+                <span style="font-family:Georgia, 'Times New Roman', serif; font-style:italic; font-size:8.4pt; color:#0f172a;">${c.naivePrompt}</span>
+              </div>
 
-            <div style="font-size:8pt; flex:1; display:flex; flex-direction:column;">
-              <div style="font-weight:700; margin-bottom:1px;">1. Spot the Danger (what could go wrong?):</div>
-              <div class="aiu-case-dot-line"></div>
-              <div class="aiu-case-dot-line"></div>
-              <div class="aiu-case-dot-line"></div>
-              <div style="font-weight:700; margin-top:7px; margin-bottom:1px;">2. Fix the Prompt (Better Role + One Strict Rule):</div>
-              <div class="aiu-case-dot-line"></div>
-              <div class="aiu-case-dot-line"></div>
-              <div class="aiu-case-dot-line"></div>
-              <div class="aiu-case-dot-line"></div>
+              <div style="font-size:8pt; flex:1; display:flex; flex-direction:column;">
+                <div style="font-weight:700; color:#0f172a;">1. Spot the Danger <span style="font-weight:500; color:#475569;">(what could go wrong?):</span></div>
+                <div class="aiu-case-rule-line"></div>
+                <div class="aiu-case-rule-line"></div>
+                <div class="aiu-case-rule-line"></div>
+                <div style="font-weight:700; color:#0f172a; margin-top:7px;">2. Fix the Prompt <span style="font-weight:500; color:#475569;">(Better Role + One Strict Rule):</span></div>
+                <div class="aiu-case-rule-line"></div>
+                <div class="aiu-case-rule-line"></div>
+                <div class="aiu-case-rule-line"></div>
+                <div class="aiu-case-rule-line"></div>
+              </div>
             </div>
           </div>
         `,
         ).join('')}
       </div>
 
-      <div style="margin-top:7px; padding-top:5px; border-top:1.5px solid #0f172a; font-size:8.2pt;">
-        <strong>Key Takeaway:</strong> Never outsource human judgement—use <strong>R.C.T.C.</strong> so AI challenges, checks, and sharpens your thinking.
+      <div style="margin-top:8px; padding-top:5px; border-top:1.5px solid #0f172a; font-size:7.9pt; display:flex; justify-content:space-between; align-items:center; gap:10px;">
+        <span><strong>Key Takeaway:</strong> Never outsource human judgement&mdash;use <strong>R.C.T.C.</strong> so AI challenges, checks, and sharpens your thinking.</span>
+        <span style="font-size:7.4pt; color:#475569; font-weight:600; white-space:nowrap;">KS3 Artificial Intelligence</span>
       </div>
     </div>
   `;
