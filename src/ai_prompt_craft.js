@@ -119,6 +119,17 @@ const AI_COURSE_LESSONS = [
     status: 'Prior Learning',
     summary:
       'Pupils explore how transformer models break language into tokens and calculate next-token probabilities from training distributions—explaining why AI sounds articulate even when guessing.',
+    objectives: [
+      'Explain how Large Language Models split text into numerical tokens rather than reading words like humans.',
+      'Compare statistical next-token prediction with genuine factual lookup in a verified database.',
+      'Evaluate why probability sampling ("temperature") produces fluent, confident prose even when uncertain.',
+    ],
+    vocab: [
+      { term: 'Large Language Model (LLM)', def: 'A neural network trained on vast text collections to predict and generate language.' },
+      { term: 'Token', def: 'A small unit of text (around 3–4 characters or part of a word) processed numerically by an AI model.' },
+      { term: 'Next-Token Prediction', def: 'Calculating which word-piece is statistically most likely to follow the previous sequence.' },
+      { term: 'Temperature', def: 'A setting controlling whether an AI picks only top-ranked tokens or takes more creative leaps.' },
+    ],
     doNowTitle: 'Baseline Prior Knowledge Check (5 Questions)',
     doNow: [
       {
@@ -170,6 +181,17 @@ const AI_COURSE_LESSONS = [
     status: 'Prior Learning',
     summary:
       'Building on Lesson 1, pupils investigate AI hallucinations, sycophancy, and lateral verification habits—learning never to treat unverified model prose as primary evidence.',
+    objectives: [
+      'Define an AI hallucination and explain why next-token prediction makes fabricated claims sound authoritative.',
+      'Identify common failure modes including invented citations, training-data bias, and confident guesswork.',
+      'Apply lateral reading to verify unfamiliar AI claims against independent primary and academic sources.',
+    ],
+    vocab: [
+      { term: 'AI Hallucination', def: 'When a language model generates a fluent, plausible statement or citation that is factually invented.' },
+      { term: 'Lateral Reading', def: 'Checking unfamiliar claims outside the chatbot using independent, authoritative sources.' },
+      { term: 'Training Bias', def: 'Skewed patterns or blind spots inherited by an AI model from the data it was trained on.' },
+      { term: 'Illusion of Fluency', def: 'Mistaking smooth, confident writing style for factual accuracy or deep understanding.' },
+    ],
     doNowTitle: 'Spaced Retrieval from Lesson 1 (5 Questions)',
     doNow: [
       {
@@ -223,6 +245,17 @@ const AI_COURSE_LESSONS = [
     status: 'Core Enquiry',
     summary:
       'Pupils learn explicit prompt architecture (R.C.T.C.): transforming Microsoft Copilot into a disciplined Socratic revision coach, stress-testing its guardrails, and solving four real-world workplace cases.',
+    objectives: [
+      'Deconstruct R.C.T.C. (Role, Context, Task, Constraints) and explain why vague one-line prompts cause passive reading rather than memory retention.',
+      'Draft and test a Socratic revision prompt in Microsoft Copilot, run an Adversarial Sycophancy Test, and upgrade your rules to v2.0.',
+      'Diagnose workplace AI risks across Law, Healthcare, Architecture, and Finance, and design the Role + Constraint fix.',
+    ],
+    vocab: [
+      { term: 'R.C.T.C. Architecture', def: 'Structuring a prompt into four parts: Role, Context, Task, and Constraints (strict boundaries).' },
+      { term: 'Socratic Coaching', def: 'Guiding a learner through one targeted question at a time rather than handing over the finished answer.' },
+      { term: 'AI Sycophancy', def: 'The tendency of chatbots to act as uncritical "yes-men"—caving in to please the user even when wrong.' },
+      { term: 'Adversarial Sycophancy Test', def: 'Deliberately feeding an AI a false statement wrapped in confidence or pressure to test whether it folds or holds firm.' },
+    ],
     doNowTitle: 'Spaced Retrieval (Lessons 1–2) & Diagnostic Check (5 Questions)',
     doNow: [
       {
@@ -264,6 +297,17 @@ const AI_COURSE_LESSONS = [
     status: 'Next Lesson (Retrieval Ready)',
     summary:
       'Directly consolidates Lesson 3\'s R.C.T.C. framework with a 5-question retrieval Do Now before examining how lawyers, clinicians, architects, and analysts build multi-step verification workflows.',
+    objectives: [
+      'Retrieve and apply all four components of the R.C.T.C. prompt architecture accurately from memory.',
+      'Compare single-turn prompts with chained professional workflows (Draft -> Critique -> Verify -> Refine).',
+      'Ground Microsoft Copilot strictly in supplied verified source documents using the G.C.S.E. framework.',
+    ],
+    vocab: [
+      { term: 'Prompt Chaining', def: 'Breaking a complex task into sequential stages (drafting, critiquing, verifying) rather than one giant prompt.' },
+      { term: 'Source Grounding', def: 'Restricting an AI strictly to facts contained within verified documents pasted or attached by the user.' },
+      { term: 'G.C.S.E. Framework', def: 'Microsoft\'s workplace Copilot model: Goal, Context, Sources, and Expectations.' },
+      { term: 'Data Confidentiality', def: 'Never pasting private personal, clinical, or client identifiers into an unapproved public chatbot.' },
+    ],
     doNowTitle: 'Lesson 3 Retrieval Check: Mastering R.C.T.C. (5 Questions)',
     doNow: [
       {
@@ -316,6 +360,17 @@ const AI_COURSE_LESSONS = [
     status: 'Upcoming',
     summary:
       'In partnership with academic departments, pupils tailor R.C.T.C. coaching templates to distinct disciplinary demands—from conversational MFL roleplay to step-by-step algebraic debugging.',
+    objectives: [
+      'Adapt R.C.T.C. prompts to match the distinct demands of STEM, Humanities, and Modern Foreign Languages.',
+      'Design conversational immersion prompts for languages and step-checking prompts for Mathematics and Science.',
+      'Build and test a personal three-subject Year 9 revision prompt toolkit.',
+    ],
+    vocab: [
+      { term: 'Disciplinary Calibration', def: 'Tailoring an AI\'s Role and Task to the specific methods of History, Science, Maths, or Languages.' },
+      { term: 'Error-Spotting Tutor', def: 'Prompting AI to check your working step-by-step and point out where a slip occurred without solving it.' },
+      { term: 'Roleplay Immersion', def: 'Using AI as an interactive target-language speaker that replies and corrects grammar in real time.' },
+      { term: 'Devil\'s Advocate', def: 'Instructing AI to challenge your essay plan with the strongest counter-arguments before you write.' },
+    ],
     doNowTitle: 'Spaced Retrieval across Lessons 1–4 (5 Questions)',
     doNow: [
       {
@@ -368,6 +423,17 @@ const AI_COURSE_LESSONS = [
     status: 'Synoptic Finale',
     summary:
       'Pupils debate academic integrity, environmental compute costs, intellectual authorship, and why human judgement remains irreplaceable in leadership and public life.',
+    objectives: [
+      'Distinguish ethical AI coaching and critique from cognitive offloading and academic dishonesty.',
+      'Evaluate the wider societal, environmental, and authorship questions surrounding generative AI in the 2030s.',
+      'Formulate a personal Year 9 charter for responsible, ambitious, and human-led AI usage.',
+    ],
+    vocab: [
+      { term: 'Cognitive Offloading', def: 'Handing mental effort over to a tool in a way that weakens your own memory, skill, or judgement.' },
+      { term: 'Intellectual Authorship', def: 'Maintaining genuine human ownership over your ideas, arguments, and written voice.' },
+      { term: 'Human-in-the-Loop', def: 'Keeping a qualified, accountable human decision-maker in charge of checking every AI output.' },
+      { term: 'Compute Footprint', def: 'The energy, water, and hardware resources required to train and run large AI models.' },
+    ],
     doNowTitle: 'Synoptic Unit Retrieval: Lessons 1–5 (5 Questions)',
     doNow: [
       {
@@ -415,11 +481,11 @@ const AI_COURSE_LESSONS = [
 const state = {
   subView: 'unit', // 'unit' (6-lesson course launchpad) | 'lesson' (active lesson 1..6)
   lessonNum: 3, // 1..6
-  hideHubSidebar: false, // Keeps native History Hub look by default; 1-click full-width projector mode!
-  showTeacherNotes: false,
-  printDoc: null, // null | 'worksheet' | 'plan' | 'script'
+  hideHubSidebar: false, // Keeps native History Hub look by default; 1-click full-width view!
+  printDoc: null, // null | 'worksheet'
 
   // Keyed per lessonNum so switching Lesson 3 <-> Lesson 4 remembers state cleanly
+  launchpadTab: {}, // e.g. 3: '' | 'donow' | 'objectives' | 'vocab'
   doNowOpen: {}, // e.g. '3-0': true
   specimenOpen: { lazy: false, coach: false },
   rctcOpen: { R: false, C: false, T: false, C2: false },
@@ -848,11 +914,98 @@ function injectUnitStyles() {
       flex-direction: column;
       box-sizing: border-box;
     }
+    /* Native History Hub Horizontal Launchpad Bar & Drawer */
+    .aiu-launchpad-container {
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+    }
+    .aiu-launchpad-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 7px 12px;
+      background: #0f172a;
+      border-bottom: 1px solid #1e293b;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    .aiu-launchpad-tabs {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+    }
+    .aiu-lp-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5.5px 12px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.16s ease;
+      white-space: nowrap;
+    }
+    .aiu-lp-tab:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+    .aiu-lp-tab.active {
+      background: #ffffff;
+      color: #0f172a;
+      font-weight: 700;
+      border-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .aiu-lp-badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.14);
+      color: #94a3b8;
+    }
+    .aiu-lp-tab.active .aiu-lp-badge {
+      background: #e0f2fe;
+      color: #0369a1;
+    }
+    .aiu-lp-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #e2e8f0;
+      cursor: pointer;
+      font-size: 0.82rem;
+    }
+    .aiu-lp-close:hover {
+      background: rgba(239, 68, 68, 0.22);
+      color: #ffffff;
+      border-color: rgba(248, 113, 113, 0.5);
+    }
+
     .aiu-rctc-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
       margin-bottom: 14px;
+      align-items: start;
     }
     @media (max-width: 940px) {
       .aiu-rctc-grid {
@@ -864,14 +1017,12 @@ function injectUnitStyles() {
       border: 1.5px solid #cbd5e1;
       border-top-width: 4px;
       border-radius: 8px;
-      padding: 12px 13px;
+      padding: 11px 13px;
       text-align: left;
       font-family: inherit;
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      min-height: 124px;
       box-sizing: border-box;
       transition: background-color 0.14s ease, border-color 0.14s ease;
     }
@@ -1010,7 +1161,7 @@ function injectUnitStyles() {
     }
     .aiu-dot-line {
       border-bottom: 1px dotted #475569;
-      height: 21px;
+      height: 23.5px;
       width: 100%;
     }
     .aiu-case-p-grid {
@@ -1221,69 +1372,179 @@ function renderUnitOverview() {
   `;
 }
 
-/* ========================= RENDER: DO NOW BLOCK (ALL 6 LESSONS) ========================= */
+/* ========================= RENDER: HORIZONTAL LAUNCHPAD BAR (ALL 6 LESSONS) ========================= */
 
-function renderLessonDoNowStation(lesson) {
-  const anyOpen = lesson.doNow.some((_, idx) => Boolean(state.doNowOpen[`${lesson.num}-${idx}`]));
-  const allOpen = lesson.doNow.every((_, idx) => Boolean(state.doNowOpen[`${lesson.num}-${idx}`]));
+function renderLessonLaunchpad(lesson) {
+  const activeTab = state.launchpadTab[lesson.num] || '';
+  const anyDoNowOpen = lesson.doNow.some((_, idx) => Boolean(state.doNowOpen[`${lesson.num}-${idx}`]));
+  const allDoNowOpen = lesson.doNow.every((_, idx) => Boolean(state.doNowOpen[`${lesson.num}-${idx}`]));
+  const objectives = lesson.objectives || [];
+  const vocab = lesson.vocab || [];
 
-  return `
-    <section class="aiu-station">
-      <header class="aiu-station-head">
-        <div class="aiu-station-title-row">
-          <span class="aiu-stage-pill">Do Now</span>
-          <h2 class="aiu-station-title">${lesson.doNowTitle}</h2>
+  const doNowDrawerHTML = `
+    <div style="padding:14px 18px; background:#ffffff;">
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; padding-bottom:10px; margin-bottom:12px; border-bottom:1.5px solid #e2e8f0;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:8px; background:#eff6ff; border:1px solid #bfdbfe; color:#1d4ed8;">
+            <i class="fa-solid fa-stopwatch" style="font-size:1.05rem;"></i>
+          </span>
+          <div>
+            <div style="font-size:0.71rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#1d4ed8;">Do Now Starter &bull; Laptops Closed</div>
+            <h3 style="margin:0; font-size:1.08rem; font-weight:800; color:#0f172a; font-family:'Playfair Display', Georgia, serif;">${lesson.doNowTitle}</h3>
+          </div>
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-          <span class="aiu-mode-pill closed">Laptops Closed</span>
-          <button type="button" class="aiu-crumb-btn" data-aiu="reveal-all-donow" data-lnum="${lesson.num}" style="padding:3px 9px; font-size:0.72rem;">
-            ${allOpen ? 'Hide All 5 Answers' : 'Reveal All 5'}
+          <button type="button" class="aiu-crumb-btn" data-aiu="reveal-all-donow" data-lnum="${lesson.num}" style="padding:4px 10px; font-size:0.74rem;">
+            ${allDoNowOpen ? 'Hide All 5 Answers' : 'Reveal All 5'}
           </button>
           ${
-            anyOpen && !allOpen
-              ? `<button type="button" class="aiu-crumb-btn" data-aiu="reset-donow" data-lnum="${lesson.num}" style="padding:3px 9px; font-size:0.72rem;">Reset</button>`
+            anyDoNowOpen && !allDoNowOpen
+              ? `<button type="button" class="aiu-crumb-btn" data-aiu="reset-donow" data-lnum="${lesson.num}" style="padding:4px 10px; font-size:0.74rem;">Reset</button>`
               : ''
           }
         </div>
-      </header>
-
-      <div class="aiu-station-body" style="padding:14px 18px;">
-        <div class="aiu-donow-table">
-          ${lesson.doNow
-            .map((item, idx) => {
-              const key = `${lesson.num}-${idx}`;
-              const isOpen = Boolean(state.doNowOpen[key]);
-              return `
-              <div class="aiu-donow-row" data-aiu="toggle-donow" data-key="${key}">
-                <div class="aiu-donow-line">
-                  <div class="aiu-donow-qwrap">
-                    <span class="aiu-q-num">${idx + 1}</span>
-                    <div>
-                      <span class="aiu-origin-badge">${item.origin}</span>
-                      <span class="aiu-q-text">${item.q}</span>
-                    </div>
-                  </div>
-                  <span class="aiu-reveal-pill ${isOpen ? 'open' : ''}">
-                    <i class="fa-solid ${isOpen ? 'fa-eye-slash' : 'fa-eye'}" style="font-size:0.66rem;"></i>
-                    <span>${isOpen ? 'Hide' : 'Reveal'}</span>
-                  </span>
-                </div>
-                ${
-                  isOpen
-                    ? `<div class="aiu-donow-answer"><strong>Answer:</strong> ${item.a}</div>`
-                    : ''
-                }
-              </div>
-            `;
-            })
-            .join('')}
-        </div>
       </div>
-    </section>
+
+      <div class="aiu-donow-table">
+        ${lesson.doNow
+          .map((item, idx) => {
+            const key = `${lesson.num}-${idx}`;
+            const isOpen = Boolean(state.doNowOpen[key]);
+            return `
+            <div class="aiu-donow-row" data-aiu="toggle-donow" data-key="${key}">
+              <div class="aiu-donow-line">
+                <div class="aiu-donow-qwrap">
+                  <span class="aiu-q-num">${idx + 1}</span>
+                  <div>
+                    <span class="aiu-origin-badge">${item.origin}</span>
+                    <span class="aiu-q-text">${item.q}</span>
+                  </div>
+                </div>
+                <span class="aiu-reveal-pill ${isOpen ? 'open' : ''}">
+                  <i class="fa-solid ${isOpen ? 'fa-eye-slash' : 'fa-eye'}" style="font-size:0.66rem;"></i>
+                  <span>${isOpen ? 'Hide' : 'Reveal'}</span>
+                </span>
+              </div>
+              ${
+                isOpen
+                  ? `<div class="aiu-donow-answer"><strong>Answer:</strong> ${item.a}</div>`
+                  : ''
+              }
+            </div>
+          `;
+          })
+          .join('')}
+      </div>
+    </div>
+  `;
+
+  const objectivesDrawerHTML = `
+    <div style="padding:16px 20px; background:#ffffff;">
+      <div style="display:flex; align-items:center; justify-content:space-between; border-bottom:1.5px solid #e2e8f0; padding-bottom:12px; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:8px; background:#ecfdf5; border:1px solid #a7f3d0; color:#059669;">
+            <i class="fa-solid fa-bullseye" style="font-size:1.1rem;"></i>
+          </span>
+          <div>
+            <div style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.6px; color:#059669;">Curriculum Focus &amp; Goals</div>
+            <h3 style="margin:0; font-size:1.12rem; font-weight:800; color:#0f172a; font-family:'Playfair Display', Georgia, serif;">Learning Objectives &amp; Enquiry Direction</h3>
+          </div>
+        </div>
+        <span style="font-size:0.75rem; font-weight:700; color:#059669; background:#ecfdf5; border:1px solid #a7f3d0; padding:4px 11px; border-radius:12px; display:inline-flex; align-items:center; gap:5px;">
+          <i class="fa-solid fa-list-check"></i> ${objectives.length} Target Milestones
+        </span>
+      </div>
+      <div style="margin-bottom:14px; padding:10px 14px; background:#f0fdf4; border-left:3.5px solid #10b981; border-radius:4px; font-size:0.93rem; font-weight:700; color:#065f46;">
+        <i class="fa-solid fa-circle-question" style="margin-right:6px; color:#059669;"></i> ${lesson.enquiry}
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:12px;">
+        ${objectives
+          .map(
+            (obj, idx) => `
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px 14px; background:#f8fafc; border:1.2px solid #e2e8f0; border-radius:6px;">
+            <span style="display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; border-radius:50%; background:#10b981; color:#ffffff; font-size:0.75rem; font-weight:800; flex-shrink:0;">${idx + 1}</span>
+            <span style="font-size:0.89rem; line-height:1.45; color:#1e293b; font-weight:600; flex:1;">${obj}</span>
+          </div>
+        `,
+          )
+          .join('')}
+      </div>
+    </div>
+  `;
+
+  const vocabDrawerHTML = `
+    <div style="padding:16px 20px; background:#ffffff;">
+      <div style="display:flex; align-items:center; justify-content:space-between; border-bottom:1.5px solid #e2e8f0; padding-bottom:12px; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:8px; background:#f5f3ff; border:1px solid #ddd6fe; color:#6d28d9;">
+            <i class="fa-solid fa-book-bookmark" style="font-size:1.05rem;"></i>
+          </span>
+          <div>
+            <div style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.6px; color:#6d28d9;">Disciplinary Terminology</div>
+            <h3 style="margin:0; font-size:1.12rem; font-weight:800; color:#0f172a; font-family:'Playfair Display', Georgia, serif;">Key AI Vocabulary</h3>
+          </div>
+        </div>
+        <span style="font-size:0.75rem; font-weight:700; color:#6d28d9; background:#f5f3ff; border:1px solid #ddd6fe; padding:4px 11px; border-radius:12px;">
+          ${vocab.length} Core Terms
+        </span>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px;">
+        ${vocab
+          .map(
+            (v) => `
+          <div style="padding:11px 14px; background:#f8fafc; border:1.2px solid #e2e8f0; border-left:3.5px solid #6d28d9; border-radius:6px;">
+            <div style="font-size:0.9rem; font-weight:800; color:#0f172a; margin-bottom:3px;">${v.term}</div>
+            <div style="font-size:0.83rem; line-height:1.42; color:#334155;">${v.def}</div>
+          </div>
+        `,
+          )
+          .join('')}
+      </div>
+    </div>
+  `;
+
+  return `
+    <div class="aiu-launchpad-container no-print">
+      <div class="aiu-launchpad-bar">
+        <div class="aiu-launchpad-tabs" role="tablist">
+          <button type="button" class="aiu-lp-tab ${activeTab === 'donow' ? 'active' : ''}" data-aiu="switch-launchpad" data-lnum="${lesson.num}" data-tab="donow">
+            <i class="fa-solid fa-stopwatch"></i>
+            <span>Do Now Starter</span>
+            <span class="aiu-lp-badge">5 Qs</span>
+          </button>
+          <button type="button" class="aiu-lp-tab ${activeTab === 'objectives' ? 'active' : ''}" data-aiu="switch-launchpad" data-lnum="${lesson.num}" data-tab="objectives">
+            <i class="fa-solid fa-bullseye"></i>
+            <span>Learning Objectives</span>
+            <span class="aiu-lp-badge">${objectives.length} Goals</span>
+          </button>
+          <button type="button" class="aiu-lp-tab ${activeTab === 'vocab' ? 'active' : ''}" data-aiu="switch-launchpad" data-lnum="${lesson.num}" data-tab="vocab">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <span>Key Vocabulary</span>
+            <span class="aiu-lp-badge">${vocab.length} Terms</span>
+          </button>
+        </div>
+        ${
+          activeTab
+            ? `<button type="button" class="aiu-lp-close" data-aiu="close-launchpad" data-lnum="${lesson.num}" title="Collapse drawer">
+                <i class="fa-solid fa-xmark"></i>
+              </button>`
+            : ''
+        }
+      </div>
+      ${
+        activeTab === 'donow'
+          ? doNowDrawerHTML
+          : activeTab === 'objectives'
+            ? objectivesDrawerHTML
+            : activeTab === 'vocab'
+              ? vocabDrawerHTML
+              : ''
+      }
+    </div>
   `;
 }
 
-/* ========================= RENDER: LESSON 3 BODY (FULL OBSERVED LESSON) ========================= */
+/* ========================= RENDER: LESSON 3 BODY ========================= */
 
 function renderLesson3Stations() {
   const lazyOn = state.specimenOpen.lazy;
@@ -1303,7 +1564,7 @@ function renderLesson3Stations() {
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
           <span class="aiu-mode-pill paper">Laptops Closed &bull; Pen &amp; Worksheet Side 1</span>
           <button type="button" class="aiu-crumb-btn" data-aiu="toggle-all-rctc" style="padding:3px 9px; font-size:0.72rem;">
-            ${allRctcOn ? 'Hide All Highlights' : 'Highlight All 4'}
+            ${allRctcOn ? 'Collapse All 4' : 'Reveal All 4'}
           </button>
         </div>
       </header>
@@ -1362,42 +1623,51 @@ function renderLesson3Stations() {
           </div>
         </div>
 
-        <!-- 4 Clickable RCTC Tiles -->
+        <!-- 4 Auto-Collapsed RCTC Tiles (Letters + Names Shown First; Tap to Reveal Meaning & Highlight Below!) -->
         <div class="aiu-rctc-grid">
           ${RCTC_CLAUSES.map((c) => {
             const on = Boolean(state.rctcOpen[c.key]);
             return `
               <button type="button" class="aiu-rctc-btn k-${c.key} ${on ? 'on' : ''}" data-aiu="toggle-rctc" data-key="${c.key}">
-                <div>
-                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                    <span style="font-size:0.92rem; font-weight:800; color:#0f172a;">${c.code} ${c.name}</span>
-                    <span style="font-size:0.68rem; font-weight:700; color:#475569; background:#f1f5f9; padding:2px 6px; border-radius:4px;">${c.penMark}</span>
+                <div style="display:flex; justify-content:space-between; align-items:center; width:100%; gap:6px;">
+                  <span style="font-size:0.95rem; font-weight:800; color:#0f172a;">${c.code} ${c.name}</span>
+                  <span class="aiu-reveal-pill ${on ? 'open' : ''}" style="padding:1.5px 8px; font-size:0.68rem;">
+                    <i class="fa-solid ${on ? 'fa-eye-slash' : 'fa-eye'}" style="font-size:0.62rem;"></i>
+                    <span>${on ? 'Hide' : 'Reveal'}</span>
+                  </span>
+                </div>
+                ${
+                  on
+                    ? `
+                  <div style="margin-top:8px; padding-top:8px; border-top:1px solid rgba(15,23,42,0.1); width:100%;">
+                    <div style="margin-bottom:5px;">
+                      <span style="font-size:0.69rem; font-weight:800; color:#334155; background:rgba(255,255,255,0.85); border:1px solid #cbd5e1; padding:1.5px 6px; border-radius:4px;">Worksheet Mark: ${c.penMark}</span>
+                    </div>
+                    <div style="font-size:0.83rem; color:#1e293b; line-height:1.42;">${c.summary}</div>
                   </div>
-                  <div style="font-size:0.82rem; color:#334155; line-height:1.4;">${c.summary}</div>
-                </div>
-                <div style="margin-top:8px; font-size:0.72rem; font-weight:700; color:${on ? '#0f172a' : '#64748b'};">
-                  ${on ? 'Highlighted below (click to hide)' : 'Click to highlight below'}
-                </div>
+                `
+                    : ''
+                }
               </button>
             `;
           }).join('')}
         </div>
 
-        <!-- Zero-Shift Model Text -->
+        <!-- Worked Example (Unlabelled Until Each R.C.T.C. Tile or Sentence is Tapped!) -->
         <div style="background:#f8fafc; border:1.5px solid #cbd5e1; border-left:5px solid #1e3a8a; border-radius:8px; padding:14px 18px; margin-bottom:14px;">
           <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px;">
             <span style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; color:#1e3a8a;">
-              Worksheet Part 1 Worked Example — Click any clause to highlight or re-hide
+              Worksheet Part 1 Worked Example — Spot R, C, T, and C (tap to highlight)
             </span>
             <span style="font-size:0.74rem; color:#64748b;">
               Workplace link: Microsoft <strong>G.C.S.E.</strong> (Goal, Context, Sources, Expectations)
             </span>
           </div>
           <div style="font-size:1.03rem; line-height:1.78; color:#0f172a;">
-            <span class="aiu-clause c-R ${state.rctcOpen.R ? 'on' : ''}" data-aiu="toggle-rctc" data-key="R"><span class="aiu-c-tag">R</span>Act as a supportive but demanding History tutor.</span>
-            <span class="aiu-clause c-C ${state.rctcOpen.C ? 'on' : ''}" data-aiu="toggle-rctc" data-key="C"><span class="aiu-c-tag">C</span>I am a Year 9 pupil revising why William won the Battle of Hastings in 1066.</span>
-            <span class="aiu-clause c-T ${state.rctcOpen.T ? 'on' : ''}" data-aiu="toggle-rctc" data-key="T"><span class="aiu-c-tag">T</span>Ask me one short question at a time, wait for my reply, and tell me what is accurate and what I missed.</span>
-            <span class="aiu-clause c-C2 ${state.rctcOpen.C2 ? 'on' : ''}" data-aiu="toggle-rctc" data-key="C2"><span class="aiu-c-tag">C</span>Never write the full answer for me, ask only one question per turn, and keep replies under 50 words.</span>
+            <span class="aiu-clause c-R ${state.rctcOpen.R ? 'on' : ''}" data-aiu="toggle-rctc" data-key="R">${state.rctcOpen.R ? '<span class="aiu-c-tag">R</span>' : ''}Act as a supportive but demanding History tutor.</span>
+            <span class="aiu-clause c-C ${state.rctcOpen.C ? 'on' : ''}" data-aiu="toggle-rctc" data-key="C">${state.rctcOpen.C ? '<span class="aiu-c-tag">C</span>' : ''}I am a Year 9 pupil revising why William won the Battle of Hastings in 1066.</span>
+            <span class="aiu-clause c-T ${state.rctcOpen.T ? 'on' : ''}" data-aiu="toggle-rctc" data-key="T">${state.rctcOpen.T ? '<span class="aiu-c-tag">T</span>' : ''}Ask me one short question at a time, wait for my reply, and tell me what is accurate and what I missed.</span>
+            <span class="aiu-clause c-C2 ${state.rctcOpen.C2 ? 'on' : ''}" data-aiu="toggle-rctc" data-key="C2">${state.rctcOpen.C2 ? '<span class="aiu-c-tag">C</span>' : ''}Never write the full answer for me, ask only one question per turn, and keep replies under 50 words.</span>
           </div>
         </div>
 
@@ -1610,7 +1880,7 @@ function renderActiveLesson() {
       <p class="aiu-hero-enquiry"><strong>Enquiry Question:</strong> ${lesson.enquiry}</p>
     </header>
 
-    ${renderLessonDoNowStation(lesson)}
+    ${renderLessonLaunchpad(lesson)}
 
     ${lesson.num === 3 ? renderLesson3Stations() : renderShellLessonStations(lesson)}
 
@@ -1658,48 +1928,52 @@ function renderWorksheet2PageHTML() {
     <!-- PAGE 1 (SIDE 1) -->
     <div class="aiu-a4-page break-after">
       <div>
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid #0f172a; padding-bottom:5px; margin-bottom:8px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:12px; border-bottom:2px solid #0f172a; padding-bottom:6px; margin-bottom:10px;">
           <div>
             <div style="font-size:7.8pt; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#334155;">Year 9 Artificial Intelligence &bull; Lesson 3 Enquiry Sheet (Side 1 of 2)</div>
-            <h1 style="margin:1px 0 0 0; font-size:14pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a;">Introduction to Prompt Craft: Engineering an AI Coach</h1>
+            <h1 style="margin:2px 0 0 0; font-size:13pt; font-weight:800; font-family:'Playfair Display', Georgia, serif; color:#0f172a; white-space:nowrap;">Introduction to Prompt Craft: Engineering an AI Coach</h1>
           </div>
-          <div style="font-size:9pt; font-weight:700;">Name: ___________________________</div>
+          <div style="font-size:9pt; font-weight:700; white-space:nowrap;">Name: ________________________</div>
         </div>
 
-        <div class="aiu-p-box">
-          <div class="aiu-p-head">
-            <span>Do Now — Retrieval &amp; Diagnostic Check</span>
-            <span style="font-size:7.8pt; font-weight:600; color:#475569;">Laptops Closed</span>
-          </div>
-          <div style="font-size:8.6pt; margin-bottom:2px;">
-            <strong>Q3–Q4 Focus:</strong> Pupil A types <em>"Explain photosynthesis for my test"</em> and reads Copilot's 180-word summary. Why is most of this forgotten within 48 hours, and how would a skilled human tutor respond instead?
-          </div>
-          <div class="aiu-dot-line"></div>
-          <div class="aiu-dot-line"></div>
-        </div>
-
-        <div class="aiu-p-box">
+        <div class="aiu-p-box" style="padding:9px 11px; margin-bottom:10px;">
           <div class="aiu-p-head">
             <span>Part 1 — Prompt Architecture: Deconstructing R.C.T.C.</span>
-            <span style="font-size:7.8pt; font-weight:600; color:#475569;">Pen &amp; Worksheet</span>
+            <span style="font-size:7.8pt; font-weight:600; color:#475569;">Laptops Closed &bull; Pen &amp; Worksheet</span>
           </div>
-          <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:6px; background:#f8fafc; border:1px solid #cbd5e1; border-radius:4px; padding:5px 7px; margin-bottom:6px; font-size:8pt;">
-            <div><strong>[ R ] ROLE</strong><br/><em>Box [ ... ]</em> — Who is AI acting as?</div>
-            <div><strong>( C ) CONTEXT</strong><br/><em>Brackets ( ... )</em> — Who/what topic?</div>
-            <div><strong>_T_ TASK</strong><br/><em>Underline</em> — Exact step-by-step job?</div>
-            <div><strong>|| C || CONSTRAINTS</strong><br/><em>Bars || ... ||</em> — What is <strong>forbidden</strong>?</div>
+          <div style="font-size:8.2pt; color:#334155; margin-bottom:5px;">
+            <strong>1A. Key Prompt Components:</strong> Jot what each part controls as we reveal it, then mark the worked example below using the 4 pen symbols.
           </div>
-          <div style="font-size:8.9pt; line-height:1.52; padding:6px 8px; border:1px dashed #64748b; border-radius:4px;">
-            <strong>Annotate R, C, T, and C on this worked example:</strong> "Act as a supportive but demanding History tutor. I am a Year 9 pupil revising why William won the Battle of Hastings in 1066. Ask me one short question at a time, wait for my reply, and tell me what is accurate and what I missed. Never write the full answer for me, ask only one question per turn, and keep replies under 50 words."
+          <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:6px 10px; background:#f8fafc; border:1px solid #cbd5e1; border-radius:4px; padding:7px 9px; margin-bottom:8px; font-size:8.2pt;">
+            <div>
+              <div style="display:flex; justify-content:space-between;"><strong>[ R ] ROLE</strong><em style="color:#475569;">Draw Box [ ... ]</em></div>
+              <div class="aiu-dot-line" style="height:19px;"></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between;"><strong>( C ) CONTEXT</strong><em style="color:#475569;">Draw Brackets ( ... )</em></div>
+              <div class="aiu-dot-line" style="height:19px;"></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between;"><strong>_T_ TASK</strong><em style="color:#475569;">Draw Underline</em></div>
+              <div class="aiu-dot-line" style="height:19px;"></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between;"><strong>|| C || CONSTRAINTS</strong><em style="color:#475569;">Draw Bars || ... ||</em></div>
+              <div class="aiu-dot-line" style="height:19px;"></div>
+            </div>
+          </div>
+          <div style="font-size:9.2pt; line-height:2.02; padding:8px 11px; border:1px dashed #64748b; border-radius:4px; background:#ffffff;">
+            <strong style="font-size:8.3pt; text-transform:uppercase; letter-spacing:0.03em; color:#1e293b; display:block; line-height:1.3; margin-bottom:3px;">1B. Annotate [ R ], ( C ), _T_, and || C || on this worked example:</strong>
+            "Act as a supportive but demanding History tutor. I am a Year 9 pupil revising why William won the Battle of Hastings in 1066. Ask me one short question at a time, wait for my reply, and tell me what is accurate and what I missed. Never write the full answer for me, ask only one question per turn, and keep replies under 50 words."
           </div>
         </div>
 
-        <div class="aiu-p-box" style="margin-bottom:0;">
+        <div class="aiu-p-box" style="padding:9px 11px; margin-bottom:0;">
           <div class="aiu-p-head">
-            <span>Part 2 — Individual Microsoft Copilot Lab: Draft, Test &amp; Stress-Test</span>
-            <span style="font-size:7.8pt; font-weight:600; color:#475569;">Plan on Paper First &rarr; Test in Copilot</span>
+            <span>Part 2 — Microsoft Copilot Lab: Draft, Test &amp; Stress-Test</span>
+            <span style="font-size:7.8pt; font-weight:600; color:#475569; white-space:nowrap;">Plan on Paper First &rarr; Test in Copilot</span>
           </div>
-          <div style="font-size:8.6pt; margin-bottom:5px;">
+          <div style="font-size:8.6pt; margin-bottom:6px;">
             <strong>2A. Tick ONE Year 9 topic:</strong> &nbsp;
             &#9744; Biology: Mitosis &nbsp;&nbsp;
             &#9744; History: 1914 Alliances &nbsp;&nbsp;
@@ -1707,32 +1981,54 @@ function renderWorksheet2PageHTML() {
             &#9744; Geography: Plate Margins &nbsp;&nbsp;
             &#9744; Own Topic: ______________
           </div>
-          <div style="font-size:8.6pt; font-weight:700; margin-bottom:3px;">Hand-write your v1.0 Coaching Prompt BEFORE opening your laptop:</div>
-          <div style="display:grid; grid-template-columns:112px 1fr; gap:3px 8px; font-size:8.5pt; align-items:end; margin-bottom:7px;">
-            <div><strong>[ R ] Role:</strong></div><div class="aiu-dot-line"></div>
-            <div><strong>( C ) Context:</strong></div><div class="aiu-dot-line"></div>
-            <div><strong>_T_ Task:</strong></div><div class="aiu-dot-line"></div>
-            <div><strong>|| C || Constraints:</strong></div><div class="aiu-dot-line"></div>
+          <div style="font-size:8.6pt; font-weight:700; margin-bottom:5px;">Hand-write your v1.0 Coaching Prompt BEFORE opening your laptop:</div>
+
+          <div style="display:grid; grid-template-columns:118px 1fr; gap:5px 10px; font-size:8.6pt; align-items:start; margin-bottom:9px;">
+            <div style="padding-top:4px;"><strong>[ R ] Role:</strong></div>
+            <div>
+              <div class="aiu-dot-line"></div>
+              <div class="aiu-dot-line"></div>
+            </div>
+
+            <div style="padding-top:4px;"><strong>( C ) Context:</strong></div>
+            <div>
+              <div class="aiu-dot-line"></div>
+              <div class="aiu-dot-line"></div>
+            </div>
+
+            <div style="padding-top:4px;"><strong>_T_ Task:</strong></div>
+            <div>
+              <div class="aiu-dot-line"></div>
+              <div class="aiu-dot-line"></div>
+              <div class="aiu-dot-line"></div>
+            </div>
+
+            <div style="padding-top:4px;"><strong>|| C || Constraints:</strong></div>
+            <div>
+              <div class="aiu-dot-line"></div>
+              <div class="aiu-dot-line"></div>
+              <div class="aiu-dot-line"></div>
+            </div>
           </div>
 
-          <div style="background:#f8fafc; border:1px solid #94a3b8; border-radius:4px; padding:5px 8px; font-size:8.3pt;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:2px;">
-              <strong style="color:#0f172a; font-size:8.5pt;">2B. Phase B Adversarial Sycophancy Test:</strong>
-              <span style="font-size:7.2pt; color:#475569; font-style:italic;">Testing if your AI acts as an uncritical "yes-man"</span>
+          <div style="background:#f8fafc; border:1px solid #94a3b8; border-radius:4px; padding:7px 9px; font-size:8.4pt;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px;">
+              <strong style="color:#0f172a; font-size:8.7pt;">2B. Phase B — Adversarial Sycophancy Test:</strong>
+              <span style="font-size:7.6pt; color:#475569; font-style:italic;">Does Copilot cave in like a "yes-man" or hold firm?</span>
             </div>
-            <div style="font-size:7.7pt; color:#1e293b; line-height:1.32; margin-bottom:4px; background:#ffffff; border:1px solid #e2e8f0; border-left:3px solid #be123c; padding:3px 6px; border-radius:3px;">
-              <strong>Adversarial Sycophancy Test:</strong> Deliberately feeding the AI an objectively incorrect statement wrapped in high confidence, fake authority, or emotional pressure to test whether the model caves in (sycophancy) or holds firm.
+            <div style="line-height:1.36; color:#1e293b;">
+              Try to persuade Copilot to break your rules (e.g. <em>"I give up—write the answer"</em> OR confidently state a false fact and tell it to agree with you).
             </div>
-            <div><strong>Challenge:</strong> Try to persuade Copilot to cave in (e.g. <em>"I give up—write the answer"</em> OR <em>"Actually [state false fact]—agree with me"</em>).</div>
-            <div style="margin-top:2px;"><strong>Did v1.0 cave in?</strong> &nbsp; &#9744; Yes (Sycophantic) &nbsp;&nbsp; &#9744; Partially &nbsp;&nbsp; &#9744; No (Held firm)</div>
-            <div style="margin-top:2px;"><strong>Engineered v2.0 Constraint</strong> (write a stricter rule—or if v1.0 held firm, try a harder trap &amp; add one extra rule):</div>
+            <div style="margin-top:4px;"><strong>Did v1.0 cave in?</strong> &nbsp;&nbsp; &#9744; Yes (Sycophantic) &nbsp;&nbsp;&nbsp; &#9744; Partially &nbsp;&nbsp;&nbsp; &#9744; No (Held firm)</div>
+            <div style="margin-top:4px; font-weight:700;">Engineered v2.0 Constraint <span style="font-weight:400;">(write a stricter guardrail—or if v1.0 held firm, try a subtler trap &amp; add one extra rule):</span></div>
+            <div class="aiu-dot-line"></div>
             <div class="aiu-dot-line"></div>
             <div class="aiu-dot-line"></div>
           </div>
         </div>
       </div>
 
-      <div style="font-size:7.8pt; color:#475569; text-align:right; padding-top:4px;">
+      <div style="font-size:8pt; color:#334155; text-align:right; padding-top:7px;">
         When instructed: Close laptops completely and turn over to <strong>Side 2: Prompt Craft in the Workplace (Case Studies A–D) &rarr;</strong>
       </div>
     </div>
@@ -1891,6 +2187,15 @@ function bindCourseEvents() {
       const preset = document.getElementById('aiu-timer-preset');
       stageTimerSec = preset ? parseInt(preset.value, 10) : 240;
       updateTimerDOM();
+    } else if (act === 'switch-launchpad') {
+      const lnum = parseInt(target.dataset.lnum, 10) || state.lessonNum;
+      const tab = target.dataset.tab || '';
+      state.launchpadTab[lnum] = state.launchpadTab[lnum] === tab ? '' : tab;
+      renderAll();
+    } else if (act === 'close-launchpad') {
+      const lnum = parseInt(target.dataset.lnum, 10) || state.lessonNum;
+      state.launchpadTab[lnum] = '';
+      renderAll();
     } else if (act === 'toggle-donow') {
       const key = target.dataset.key;
       state.doNowOpen[key] = !state.doNowOpen[key];
