@@ -15,7 +15,7 @@ const UNIT_META = {
   enquiry:
     'How do we move from passive users of artificial intelligence to disciplined thinkers who direct, verify, and challenge it across academic study and modern employment?',
   synopsis:
-    'A six-lesson Year 9 curriculum sequence introducing pupils to how large language models generate text, why hallucinations and sycophancy occur, how structured prompt engineering (R.C.T.C.) transforms Microsoft Copilot into a Socratic coach, and how professionals deploy guardrails in law, medicine, architecture, and finance.',
+    'A six-lesson Year 9 curriculum sequence exploring how large language models generate text, why hallucinations and sycophancy occur, how structured prompt engineering (R.C.T.C.) transforms Microsoft Copilot into a Socratic coach, and how professionals deploy guardrails across academic disciplines and modern careers.',
 };
 
 const RCTC_CLAUSES = [
@@ -116,9 +116,9 @@ const AI_COURSE_LESSONS = [
     title: 'Inside the Black Box: Tokens, Probability & Next-Word Prediction',
     enquiry: 'Does a large language model "know" facts like a database, or predict probable sequences of tokens?',
     duration: 'Year 9 AI',
-    status: 'Prior Learning',
+    status: 'Core Enquiry',
     summary:
-      'Pupils explore how transformer models break language into tokens and calculate next-token probabilities from training distributions—explaining why AI sounds articulate even when guessing.',
+      'Explore how language models split text into numerical tokens and calculate next-token probabilities—explaining why AI sounds fluent even when guessing.',
     objectives: [
       'Explain how Large Language Models split text into numerical tokens rather than reading words like humans.',
       'Compare statistical next-token prediction with genuine factual lookup in a verified database.',
@@ -158,18 +158,114 @@ const AI_COURSE_LESSONS = [
         a: 'Keyboard autocomplete / next-word suggestions in messaging and email apps.',
       },
     ],
-    stages: [
-      {
-        code: 'STAGE 01',
-        title: 'From Words to Tokens',
-        text: 'Interactive demonstration showing how sentences split into sub-word tokens and probability rankings.',
+    deck: {
+      stage1Title: 'Mechanism: Database Lookup vs Next-Token Prediction',
+      specA: {
+        label: 'Specimen A · Verified Database (e.g. School Register)',
+        hint: 'Click to inspect how a traditional computer database answers a factual question.',
+        inputLabel: 'Query',
+        input: 'SELECT date_of_battle FROM history_table WHERE event = "Battle of Hastings"',
+        output: 'Looks up one stored cell ("14 October 1066"). If no record exists, it returns "0 results found" — it never guesses.',
+        result: 'Exact stored retrieval — zero invention, zero guesswork.',
       },
-      {
-        code: 'STAGE 02',
-        title: 'Fluency vs Understanding',
-        text: 'Analysing why statistical fluency is not the same thing as human comprehension or lived experience.',
+      specB: {
+        label: 'Specimen B · Large Language Model (Microsoft Copilot)',
+        hint: 'Click to inspect how an AI language model generates a sentence token by token.',
+        inputLabel: 'Prompt',
+        input: '"In October 1066, King Harold marched south to fight at..."',
+        output: 'Calculates next-token probabilities from billions of training sentences: "Hastings" (92%), "Battle" (5%), "Senlac" (2%).',
+        result: 'Statistical prediction — sounds remarkably fluent, even on topics where it is uncertain.',
       },
-    ],
+      tiles: [
+        {
+          code: '[ 01 ]',
+          name: 'Tokenisation',
+          tag: 'Step 1 · Splitting Text',
+          summary: 'Copilot chops sentences into ~3–4 character chunks called tokens (e.g. "un" + "believ" + "able") and converts each into an ID number.',
+        },
+        {
+          code: '[ 02 ]',
+          name: 'Context Weighing',
+          tag: 'Step 2 · Attention',
+          summary: 'The model compares every token in your prompt against every other token so it tells "river bank" apart from "Barclays bank".',
+        },
+        {
+          code: '[ 03 ]',
+          name: 'Probability Rank',
+          tag: 'Step 3 · Scoring Next Words',
+          summary: 'For the very next slot, the model scores tens of thousands of candidate tokens from most probable to least probable.',
+        },
+        {
+          code: '[ 04 ]',
+          name: 'Temperature',
+          tag: 'Step 4 · Picking & Repeating',
+          summary: 'Instead of picking #1 robotically every time, sampling ("temperature") allows slight variety—then repeats the loop for the next token.',
+        },
+      ],
+      workedTitle: 'Inside a Single Next-Token Step — How Copilot Completes a Sentence',
+      workedNote: 'Key Insight: Fluency comes from probability, not human understanding',
+      workedBody:
+        'Prompt so far: <strong>"Photosynthesis takes place inside plant cell structures called..."</strong> &rarr; Candidate Rank: <strong>chloroplasts (94%)</strong> &bull; <em>leaves (3%)</em> &bull; <em>cells (2%)</em> &bull; <em>mitochondria (1%)</em>. Once <strong>chloroplasts</strong> is chosen, it gets added to the sentence and the whole probability loop runs again for the next word.',
+      stage2Title: 'Microsoft Copilot Lab: Testing Prediction & Temperature',
+      phaseATitle: 'Phase A · Same Prompt, Two Fresh Chats',
+      phaseAIntro: 'Open Microsoft Copilot and test next-token sampling directly:',
+      phaseASteps: [
+        'Type: <em>"Explain in exactly two sentences why volcanoes erupt."</em> Read the wording carefully.',
+        'Open a <strong>brand-new chat</strong> and paste the <strong>exact same prompt</strong> a second time.',
+        'Compare both replies: spot the high-probability scientific terms that stayed identical (e.g. <em>magma, pressure, plates</em>) versus the connecting phrases that changed.',
+      ],
+      phaseBTitle: 'Phase B · The Nonsense Completion Trap',
+      phaseBTag: 'Does next-token prediction keep talking when a premise makes no sense?',
+      phaseBPrompt:
+        'Type into Copilot: <em>"Complete this famous medieval proverb and explain its meaning: Never trust a baker who counts the rain."</em> (Note: we just made this proverb up!)',
+      phaseBCheck:
+        'Check the output: Did Copilot spot that the proverb does not exist, or did next-token prediction smoothly invent a plausible-sounding medieval backstory? Now add a rule: <em>"If this proverb is not historically real, say so plainly."</em>',
+      stage3Title: 'Prediction in Action: 4 Everyday AI Scenarios',
+      plenaryPrompt:
+        'Discuss your assigned scenario with your partner: <strong>1. Spot the Risk:</strong> Why could next-token prediction mislead the user here? &bull; <strong>2. Smart Habit:</strong> How should the user handle this task instead?',
+      cases: [
+        {
+          id: 'l1a',
+          letter: 'A',
+          sector: 'Maths Homework',
+          roleTitle: 'Year 9 Pupil — Mental Arithmetic vs LLM',
+          scenario: 'Instead of using a calculator, a pupil types a messy 5-step decimal calculation into a chatbot and copies down the final number.',
+          naivePrompt: '"What is (487.6 × 19.4) divided by 3.72, rounded to 2 decimal places?"',
+          danger: 'Predicting likely digit tokens is not the same as running a calculator circuit (unless the bot writes and runs code); a single slipped digit ruins the answer.',
+          promptFix: 'Use a proper calculator or spreadsheet for arithmetic; use Copilot to ask: "Explain the method for rounding to 2 decimal places."',
+        },
+        {
+          id: 'l1b',
+          letter: 'B',
+          sector: 'English Creative Writing',
+          roleTitle: 'Story Competition — Opening Paragraph',
+          scenario: 'Thirty pupils all ask Copilot for a "spooky gothic story opening set in an abandoned manor" the night before a competition.',
+          naivePrompt: '"Write a dramatic opening paragraph for a spooky Year 9 gothic story."',
+          danger: 'High-probability tokens pull every story toward the exact same clichés ("flickering candlelight", "shiver down my spine", "creaking floorboards").',
+          promptFix: 'Write your own original opening image first; only use Copilot afterwards to check spelling or suggest three sharper verbs.',
+        },
+        {
+          id: 'l1c',
+          letter: 'C',
+          sector: 'Live Local Events',
+          roleTitle: 'School Newspaper — Yesterday\'s Cup Match',
+          scenario: 'A pupil asks an offline AI model (with no live web search) who scored the winning goal in yesterday\'s local school cup final.',
+          naivePrompt: '"Write a match report on yesterday\'s Under-14 County Cup final."',
+          danger: 'Without live search data, next-token prediction will still generate an exciting, realistic-sounding match report—with completely invented goalscorers!',
+          promptFix: 'Never ask an ungrounded model for unrecorded local facts; paste your own verified match notes first and ask it to check clarity.',
+        },
+        {
+          id: 'l1d',
+          letter: 'D',
+          sector: 'Science Revision',
+          roleTitle: 'Confident Tone Trap — Physics Definitions',
+          scenario: 'A pupil asks for a tricky GCSE-extension physics explanation and assumes it must be 100% accurate because the grammar is flawless.',
+          naivePrompt: '"Explain how quantum tunnelling works inside the Sun."',
+          danger: 'Polished grammar comes automatically from token probabilities—even if the model oversimplifies or muddles a key physics step.',
+          promptFix: 'Treat fluent AI prose as a starting explanation, then cross-check key scientific steps against BBC Bitesize or your class notes.',
+        },
+      ],
+    },
   },
   {
     num: 2,
@@ -178,9 +274,9 @@ const AI_COURSE_LESSONS = [
     title: 'Fluent Fiction: Hallucinations, Training Bias & Verification',
     enquiry: 'Why do large language models state false information with total confidence, and how do scholars verify outputs?',
     duration: 'Year 9 AI',
-    status: 'Prior Learning',
+    status: 'Core Enquiry',
     summary:
-      'Building on Lesson 1, pupils investigate AI hallucinations, sycophancy, and lateral verification habits—learning never to treat unverified model prose as primary evidence.',
+      'Investigate why next-token prediction produces confident hallucinations and training-data bias, and practise lateral reading to verify claims independently.',
     objectives: [
       'Define an AI hallucination and explain why next-token prediction makes fabricated claims sound authoritative.',
       'Identify common failure modes including invented citations, training-data bias, and confident guesswork.',
@@ -220,18 +316,114 @@ const AI_COURSE_LESSONS = [
         a: 'Lateral reading: check independent, authoritative primary or academic sources outside the chat.',
       },
     ],
-    stages: [
-      {
-        code: 'STAGE 01',
-        title: 'Anatomy of a Hallucination',
-        text: 'Case study of fabricated historical quotations and invented bibliography entries.',
+    deck: {
+      stage1Title: 'Verification Habits: Vertical Reading vs Lateral Reading',
+      specA: {
+        label: 'Specimen A · Vertical Reading (Staying Inside the Chat)',
+        hint: 'Click to see what happens when you ask a chatbot to verify its own claim.',
+        inputLabel: 'Pupil Follow-Up',
+        input: '"Are you 100% sure Winston Churchill said that exact quote in 1941?"',
+        output: 'Copilot replies: "Yes, Churchill delivered that line in his autumn 1941 broadcast..." — smoothly inventing a date to support the fake quote!',
+        result: 'Unreliable — asking an AI "Are you sure?" stays trapped inside the same prediction engine.',
       },
-      {
-        code: 'STAGE 02',
-        title: 'The Verification Protocol',
-        text: 'Practising lateral source checking and grounding Copilot in supplied reference extracts.',
+      specB: {
+        label: 'Specimen B · Lateral Reading (Checking Outside the Chat)',
+        hint: 'Click to see how historians and fact-checkers verify an unfamiliar AI claim.',
+        inputLabel: 'Scholar Habit',
+        input: 'Open a separate tab -> search Churchill Archive / Britannica / BBC Bitesize for the exact phrase.',
+        output: 'Zero archive matches found. You spot in 20 seconds that the quote is a modern internet misattribution.',
+        result: 'Verified proof — independent primary sources always outrank chatbot confidence.',
       },
-    ],
+      tiles: [
+        {
+          code: '[ H ]',
+          name: 'Hallucination',
+          tag: 'Failure Mode 1 · Confident Invention',
+          summary: 'Blending real names and dates with invented quotes, books, or court cases because the words sound statistically plausible together.',
+        },
+        {
+          code: '[ B ]',
+          name: 'Training Bias',
+          tag: 'Failure Mode 2 · Skewed Data',
+          summary: 'Models learn from internet text—so over-represented stereotypes or English-language blind spots get repeated unless challenged.',
+        },
+        {
+          code: '[ F ]',
+          name: 'Fluency Trap',
+          tag: 'Failure Mode 3 · Human Psychology',
+          summary: 'Humans naturally trust confident, polite speakers—making it easy to overlook a quiet factual error hidden inside smooth prose.',
+        },
+        {
+          code: '[ L ]',
+          name: 'Lateral Reading',
+          tag: 'The Cure · Leave the Tab',
+          summary: 'Never verify inside the chat alone: cross-check specific dates, statistics, and quotations in a trusted external source.',
+        },
+      ],
+      workedTitle: 'Spot the Hidden Hallucination — Three True Facts & One Invention',
+      workedNote: 'Rule of Thumb: Specific quotes, book titles, and URLs carry the highest hallucination risk',
+      workedBody:
+        '"RMS <em>Titanic</em> struck an iceberg on the night of 14 April 1912 during her maiden voyage from Southampton. Over 1,500 passengers and crew lost their lives. <strong>As Captain Edward Smith famously wrote in his surviving leather pocket diary washed ashore in Halifax, \'No ocean built by nature can sink steel built by man.\'</strong>" &rarr; <em>(First two sentences = True. Bold diary quote = 100% Hallucinated!)</em>',
+      stage2Title: 'Microsoft Copilot Lab: Fact-Checking & Hallucination Hunting',
+      phaseATitle: 'Phase A · The Three-Claim Verification Audit',
+      phaseAIntro: 'Test your Lateral Reading speed on a real Year 9 subject topic:',
+      phaseASteps: [
+        'Ask Copilot for <strong>three specific historical or scientific facts (including one named scientist/historian and date)</strong> on a topic you study.',
+        'Open a second browser tab (BBC Bitesize, Britannica, or an official museum/archive site) and check all three claims.',
+        'Record whether each detail is <strong>Verified</strong>, <strong>Slightly Oversimplified</strong>, or <strong>Hallucinated</strong>—and click any numbered citation links Copilot provides to check if the source page actually says what Copilot claimed!',
+      ],
+      phaseBTitle: 'Phase B · The Fictional Event Trap',
+      phaseBTag: 'Testing whether Copilot admits ignorance or invents history',
+      phaseBPrompt:
+        'Test Copilot with a plausible-sounding fake event: <em>"Give me three key causes of the 1847 Portsmouth Steam-Tram Strike."</em> (This strike never happened!)',
+      phaseBCheck:
+        'Did Copilot politely correct your premise—or did it invent Victorian tram drivers and wage cuts? Now test adding a verification guardrail: <em>"If you cannot verify that this exact event occurred, state \'Unverified premise\' and do not invent details."</em>',
+      stage3Title: 'Hallucinations & Bias in the Real World: Case Studies A–D',
+      plenaryPrompt:
+        'Discuss your assigned case in pairs: <strong>1. Spot the Failure:</strong> Is this Hallucination, Training Bias, or Vertical Reading? &bull; <strong>2. Verification Fix:</strong> What independent check stops the mistake?',
+      cases: [
+        {
+          id: 'l2a',
+          letter: 'A',
+          sector: 'History Coursework',
+          roleTitle: 'Invented Primary Source Quotation',
+          scenario: 'Revising the Industrial Revolution, a pupil asks AI for "two short eyewitness quotes from 1842 child coal-miners" and copies both into their essay.',
+          naivePrompt: '"Give me two eyewitness quotes with names and ages from the 1842 Mines Report."',
+          danger: 'Hallucination — even though the 1842 Mines Report is real, chatbots frequently invent composite names and wordings if they do not have the exact transcript open.',
+          promptFix: 'Look up the real 1842 Children\'s Employment Commission extracts on the National Archives website first, then quote directly from the primary source.',
+        },
+        {
+          id: 'l2b',
+          letter: 'B',
+          sector: 'Hiring & Careers',
+          roleTitle: 'Automated CV Screening Bias',
+          scenario: 'A tech firm trains an AI tool on 15 years of past company CVs (90% male engineers) and asks it to score 500 new job applicants.',
+          naivePrompt: '"Rank these 500 graduate CVs based on who best matches our past successful hires."',
+          danger: 'Training Bias — the model penalises applicants from women\'s colleges or different backgrounds because it copies historical imbalance as its "ideal pattern".',
+          promptFix: 'Audit training data for bias, strip demographic clues, and keep human interviewers responsible for shortlisting criteria.',
+        },
+        {
+          id: 'l2c',
+          letter: 'C',
+          sector: 'Health & First Aid',
+          roleTitle: 'Plausible-Sounding Myth',
+          scenario: 'Someone burns their hand cooking, asks a fast chatbot what household item to put on it, and asks "Are you sure?" inside the same chat.',
+          naivePrompt: '"Can I put butter on a kitchen burn to cool the skin? Are you sure?"',
+          danger: 'Vertical Reading & Old Internet Myths — butter traps heat and risks infection; asking "Are you sure?" inside the chat is never safe medical verification.',
+          promptFix: 'Check the official NHS website directly (cool running water for 20 minutes) — never verify safety-critical health steps inside an unverified chat.',
+        },
+        {
+          id: 'l2d',
+          letter: 'D',
+          sector: 'Travel & Geography',
+          roleTitle: 'The Non-Existent Museum Guide',
+          scenario: 'A tourist blog publishes AI-written weekend itineraries without checking them; families turn up at the "Royal Brighton Clockwork Museum" in the rain.',
+          naivePrompt: '"Write a fun 1-day family itinerary with five quirky museums on the south coast."',
+          danger: 'Confabulation — combining real town names ("Brighton") with plausible tourist nouns ("Clockwork Museum") produces convincing fictional venues.',
+          promptFix: 'Verify every physical venue, map pin, and opening hour on official council or venue websites before publishing.',
+        },
+      ],
+    },
   },
   {
     num: 3,
@@ -244,7 +436,7 @@ const AI_COURSE_LESSONS = [
     duration: 'Year 9 AI',
     status: 'Core Enquiry',
     summary:
-      'Pupils learn explicit prompt architecture (R.C.T.C.): transforming Microsoft Copilot into a disciplined Socratic revision coach, stress-testing its guardrails, and solving four real-world workplace cases.',
+      'Master explicit prompt architecture (R.C.T.C.): transforming Microsoft Copilot into a disciplined Socratic revision coach, stress-testing its guardrails, and solving four real-world workplace cases.',
     objectives: [
       'Deconstruct R.C.T.C. (Role, Context, Task, Constraints) and explain why vague one-line prompts cause passive reading rather than memory retention.',
       'Draft and test a Socratic revision prompt in Microsoft Copilot, run an Adversarial Sycophancy Test, and upgrade your rules to v2.0.',
@@ -294,9 +486,9 @@ const AI_COURSE_LESSONS = [
     enquiry:
       'How do professionals chain prompts and enforce strict verification guardrails in high-stakes careers?',
     duration: 'Year 9 AI',
-    status: 'Next Lesson (Retrieval Ready)',
+    status: 'Core Enquiry',
     summary:
-      'Directly consolidates Lesson 3\'s R.C.T.C. framework with a 5-question retrieval Do Now before examining how lawyers, clinicians, architects, and analysts build multi-step verification workflows.',
+      'Consolidate R.C.T.C. from memory, then examine how professionals chain step-by-step prompts and ground Microsoft Copilot strictly in verified source texts.',
     objectives: [
       'Retrieve and apply all four components of the R.C.T.C. prompt architecture accurately from memory.',
       'Compare single-turn prompts with chained professional workflows (Draft -> Critique -> Verify -> Refine).',
@@ -336,18 +528,114 @@ const AI_COURSE_LESSONS = [
         a: 'Never input confidential personal data (Healthcare) and restrict citations strictly to supplied verified texts so AI cannot invent cases (Law).',
       },
     ],
-    stages: [
-      {
-        code: 'STAGE 01',
-        title: 'From Single Prompts to Chained Workflows',
-        text: 'Breaking complex professional problems into Draft -> Critique -> Verify -> Refine stages rather than one giant prompt.',
+    deck: {
+      stage1Title: 'Workplace Architecture: One-Shot Gamble vs Source-Grounded Chaining',
+      specA: {
+        label: 'Specimen A · One-Shot "Mega-Prompt" Gamble',
+        hint: 'Click to see what happens when an employee dumps five jobs into one ungrounded prompt.',
+        inputLabel: 'Employee Prompt',
+        input: '"Research our coastal flood defences, summarise the budget, spot engineering risks, and write a 500-word council press release."',
+        output: 'Copilot guesses missing local figures, blurs engineering warnings into upbeat PR language, and hides unverified assumptions.',
+        result: 'High risk — mixing research, critique, and final drafting in one turn invites quiet errors.',
       },
-      {
-        code: 'STAGE 02',
-        title: 'Source-Grounded Prompting ("S" in G.C.S.E.)',
-        text: 'Supplying verified primary documents inside the prompt and constraining Copilot strictly to evidence in the text.',
+      specB: {
+        label: 'Specimen B · Source-Grounded Chained Workflow (G.C.S.E.)',
+        hint: 'Click to see how professionals split the job into safe, source-locked stages.',
+        inputLabel: '3-Step Chain',
+        input: 'Turn 1: Paste verified inspection notes -> extract key figures ONLY. Turn 2: Act as sceptical engineer -> list gaps. Turn 3: Draft calm summary.',
+        output: 'Every number comes strictly from the pasted report, missing data is flagged "[NOT IN SOURCE]", and a human checks each turn.',
+        result: 'Audit-ready — Source Grounding + Prompt Chaining keeps human experts in control.',
       },
-    ],
+      tiles: [
+        {
+          code: '[ G ]',
+          name: 'Goal',
+          tag: 'Microsoft G.C.S.E. · Part 1',
+          summary: 'State the exact single outcome needed in this turn (matches Task in our classroom R.C.T.C. model).',
+        },
+        {
+          code: '( C )',
+          name: 'Context',
+          tag: 'Microsoft G.C.S.E. · Part 2',
+          summary: 'Explain who the reader is, why the task matters, and what stage of the project you are working on.',
+        },
+        {
+          code: '{ S }',
+          name: 'Sources',
+          tag: 'Microsoft G.C.S.E. · Part 3',
+          summary: 'Paste or attach the exact verified notes, data, or extracts Copilot must stick to—zero outside guessing!',
+        },
+        {
+          code: '‖ E ‖',
+          name: 'Expectations',
+          tag: 'Microsoft G.C.S.E. · Part 4',
+          summary: 'Set strict format, tone, confidentiality, and "[NOT IN SOURCE]" guardrails (matches Constraints in R.C.T.C.).',
+        },
+      ],
+      workedTitle: 'Source-Grounded Prompt — Locking Copilot to Verified Evidence',
+      workedNote: 'Golden Rule: Anonymise private names first, then lock AI to your pasted text',
+      workedBody:
+        '"<strong>[Goal]</strong> Extract a 3-bullet safety summary from the lab notes below. <strong>(Context)</strong> Preparing a Year 9 Science briefing. <strong>{Sources}</strong> Use ONLY the six lines pasted inside triple quotes below. <strong>‖Expectations‖</strong> Do not use outside knowledge; if any detail is missing from the notes, write <strong>[NOT IN SOURCE]</strong>."',
+      stage2Title: 'Microsoft Copilot Lab: Source Grounding & Prompt Chaining',
+      phaseATitle: 'Phase A · The "[NOT IN SOURCE]" Grounding Trial',
+      phaseAIntro: 'Test whether you can lock Microsoft Copilot strictly inside a short text extract:',
+      phaseASteps: [
+        'Choose a 5–6 line paragraph from your own class notes or textbook (History, Geography, or Science) and paste it into Copilot.',
+        'Add a <strong>G.C.S.E.</strong> instruction above it: <em>"Answer questions using ONLY the pasted extract. If a fact is not explicitly stated in those lines, reply [NOT IN SOURCE]."</em>',
+        'Run a 2-step chain: <strong>Turn 1</strong> ask for 3 bullet points with exact quotes; <strong>Turn 2</strong> ask Copilot to act as a critical editor checking its own 3 bullets against your extract.',
+      ],
+      phaseBTitle: 'Phase B · The Famous Outside-Fact Temptation',
+      phaseBTag: 'Can you tempt Copilot into sneaking in outside knowledge?',
+      phaseBPrompt:
+        'Ask Copilot a follow-up question whose answer is <strong>famous in real life</strong> (e.g. a well-known date or name on that topic) that was <strong>NOT mentioned in your 5-line extract</strong>.',
+      phaseBCheck:
+        'Did Copilot hold firm and output <strong>[NOT IN SOURCE]</strong>, or did its training memory leak the famous fact anyway? Tighten your Expectation rule until it refuses every outside detail!',
+      stage3Title: 'Multi-Step Workflows in Action: Case Studies A–D',
+      plenaryPrompt:
+        'Discuss your assigned case in pairs: <strong>1. Workflow Flaw:</strong> Why did this single prompt fail? &bull; <strong>2. Chained Fix:</strong> How should they split the steps and ground the source?',
+      cases: [
+        {
+          id: 'l4a',
+          letter: 'A',
+          sector: 'Civil Engineering',
+          roleTitle: 'Bridge Inspection Summary',
+          scenario: 'An engineer pastes 3 pages of raw bridge sensor notes and asks for a finished public safety sign-off letter in a single turn.',
+          naivePrompt: '"Turn these rough inspection notes into a reassuring public letter confirming the bridge is completely safe."',
+          danger: 'Leading the Goal ("confirming it is safe") causes AI to bury two minor crack warnings mentioned halfway down page 2.',
+          promptFix: 'Chain it: Turn 1 extract ONLY defects & risk ratings verbatim -> Engineer reviews -> Turn 2 draft accurate maintenance notice.',
+        },
+        {
+          id: 'l4b',
+          letter: 'B',
+          sector: 'Journalism & Media',
+          roleTitle: 'Interview Transcript Edit',
+          scenario: 'A student journalist pastes notes from a headteacher interview and asks Copilot to "make the quotes punchier and more dramatic".',
+          naivePrompt: '"Rewrite this interview into an exciting article and make the quotes sound sharper."',
+          danger: 'Fabricated Quotes — altering words inside quotation marks misrepresents a real person and breaks journalistic ethics.',
+          promptFix: 'Expectation rule: "Summarise themes, but NEVER alter a single word inside direct quotation marks; flag unclear notes."',
+        },
+        {
+          id: 'l4c',
+          letter: 'C',
+          sector: 'Environmental Science',
+          roleTitle: 'River Pollution Dataset',
+          scenario: 'A council officer asks Copilot why nitrate levels rose in their local river without pasting the lab table.',
+          naivePrompt: '"Explain the main reasons why nitrate levels rose in our local river this spring."',
+          danger: 'Ungrounded Guessing — Copilot writes a generic textbook answer about farm fertiliser when the real local cause was a broken pipe.',
+          promptFix: 'Paste the anonymised lab table under {Sources} and ask Copilot only to compare the measured dates and stations.',
+        },
+        {
+          id: 'l4d',
+          letter: 'D',
+          sector: 'Software Engineering',
+          roleTitle: 'Fixing a Website Bug',
+          scenario: 'A junior developer pastes 200 lines of code containing a secret database password and asks AI to rewrite the whole file at once.',
+          naivePrompt: '"Fix the login bug in this code and rewrite the whole file for me."',
+          danger: 'Data Leak & Blind Overwrite — secret credentials were exposed, and rewriting 200 lines in one go introduces hidden new bugs.',
+          promptFix: 'Strip all passwords/keys first! Chain it: Turn 1 diagnose which line fails -> Developer checks -> Turn 2 test a minimal 5-line fix.',
+        },
+      ],
+    },
   },
   {
     num: 5,
@@ -357,9 +645,9 @@ const AI_COURSE_LESSONS = [
     enquiry:
       'How should our prompting strategy adapt between a French conversation partner, a Maths step-checker, and a History source critic?',
     duration: 'Year 9 AI',
-    status: 'Upcoming',
+    status: 'Core Enquiry',
     summary:
-      'In partnership with academic departments, pupils tailor R.C.T.C. coaching templates to distinct disciplinary demands—from conversational MFL roleplay to step-by-step algebraic debugging.',
+      'Tailor R.C.T.C. coaching prompts to the distinct demands of Modern Languages, Mathematics, Sciences, and Essay Humanities to build a personal revision toolkit.',
     objectives: [
       'Adapt R.C.T.C. prompts to match the distinct demands of STEM, Humanities, and Modern Foreign Languages.',
       'Design conversational immersion prompts for languages and step-checking prompts for Mathematics and Science.',
@@ -399,18 +687,114 @@ const AI_COURSE_LESSONS = [
         a: 'Assign Copilot the Role of a sceptical examiner instructed to find counter-evidence and gaps in your draft rather than praising it.',
       },
     ],
-    stages: [
-      {
-        code: 'STAGE 01',
-        title: 'Disciplinary Prompt Calibration',
-        text: 'Comparing conversational immersion prompts (Languages) with error-spotting Socratic prompts (Mathematics & Sciences).',
+    deck: {
+      stage1Title: 'Disciplinary Calibration: Generic Revision vs Subject-Specific Coaching',
+      specA: {
+        label: 'Specimen A · One-Size-Fits-All Generic Prompt',
+        hint: 'Click to see why using the same vague prompt fails across different subjects.',
+        inputLabel: 'Pupil Prompt',
+        input: '"Help me revise simultaneous equations / Macbeth / French past tense."',
+        output: 'Dumps a wall of solved equations, pre-written English paragraphs, or English grammar tables—zero speaking or problem-solving by you.',
+        result: 'Passive across every subject — ignores how linguists, mathematicians, and historians actually practise.',
       },
-      {
-        code: 'STAGE 02',
-        title: 'Building Your Personal Year 9 Exam Toolkit',
-        text: 'Curating three verified, reusable R.C.T.C. coaching prompts tailored to pupils\' own Summer examination subjects.',
+      specB: {
+        label: 'Specimen B · Subject-Calibrated R.C.T.C. Coach',
+        hint: 'Click to see how changing Role + Task transforms practice in each discipline.',
+        inputLabel: 'Calibrated Roles',
+        input: 'French: Café Waiter roleplay | Maths: Line-by-line Step-Checker | History/English: Devil\'s Advocate Examiner.',
+        output: 'Forces live French recall, spots which line of algebra has a minus-sign slip without solving x, and challenges weak essay arguments.',
+        result: 'Targeted mastery — every subject practises the exact skill tested in real exams.',
       },
-    ],
+      tiles: [
+        {
+          code: '[ MFL ]',
+          name: 'Roleplay Partner',
+          tag: 'Languages · French / Spanish / German',
+          summary: 'Role: Native speaker in a real scenario (train station, café). Constraint: Reply in Year 9 target language + 1-line grammar tip at the bottom.',
+        },
+        {
+          code: '[ STEM ]',
+          name: 'Step-Checker',
+          tag: 'Maths & Physics · Working Out',
+          summary: 'Task: Inspect my numbered lines of working and name the FIRST line with an error. Constraint: Never reveal the final numerical answer.',
+        },
+        {
+          code: '[ HUM ]',
+          name: 'Devil\'s Advocate',
+          tag: 'History, English & RS · Essays',
+          summary: 'Task: Read my 3-bullet essay thesis and challenge me with the strongest counter-evidence or alternative interpretation.',
+        },
+        {
+          code: '[ SCI ]',
+          name: 'Chain Quizzer',
+          tag: 'Biology, Chemistry & Geography',
+          summary: 'Task: Test multi-step processes (mitosis, osmosis, plate margins) one link in the chain at a time, asking "What happens next and why?"',
+        },
+      ],
+      workedTitle: 'Worked Example — Year 9 Maths "Step-Checker" Prompt',
+      workedNote: 'Notice how Constraints stop Copilot from solving the equation for you',
+      workedBody:
+        '"<strong>[Role]</strong> Act as a patient Year 9 Maths tutor. <strong>(Context)</strong> I am practising linear equations and keep making negative-sign slips. Here is my working: <em>Line 1: 3x - 6 = 15 | Line 2: 3x = 9 | Line 3: x = 3</em>. <strong>_Task_</strong> Tell me which line first goes wrong and ask me one guiding question so I fix it myself. <strong>‖Constraints‖</strong> Do NOT tell me the final value of x."',
+      stage2Title: 'Microsoft Copilot Lab: Building Your Cross-Curricular Toolkit',
+      phaseATitle: 'Phase A · Trial Two Distinct Subject Coaches',
+      phaseAIntro: 'Test two completely different disciplinary styles back-to-back in Microsoft Copilot:',
+      phaseASteps: [
+        '<strong>Trial 1 (Languages OR Essay Humanities):</strong> Run a 3-turn foreign-language café/station roleplay OR paste a 2-sentence History/English argument and ask a <em>Devil\'s Advocate</em> to challenge your weakest point.',
+        '<strong>Trial 2 (Maths OR Science):</strong> Paste 3 lines of working (or a 3-step science explanation) containing one deliberate mistake and use a <em>Step-Checker</em> prompt.',
+        'Verify that Copilot pinpoints the exact slip and asks you to correct it—without blurting out the finished answer!',
+      ],
+      phaseBTitle: 'Phase B · The Premature Praise Trap',
+      phaseBTag: 'Stopping Copilot from saying "Great essay plan!" when your evidence is thin',
+      phaseBPrompt:
+        'Paste a deliberately vague, evidence-free History or English point (e.g. <em>"Macbeth is ambitious and does bad things because of the witches"</em>) and ask Copilot for feedback.',
+      phaseBCheck:
+        'Did default Copilot flatter you ("Good start!")? Engineer a strict examiner Constraint: <em>"Ban generic praise; identify missing quotations, imprecise vocabulary, and unanswered counter-arguments."</em>',
+      stage3Title: 'Subject Mastery Clinic: Case Studies A–D',
+      plenaryPrompt:
+        'Discuss your assigned subject clinic case in pairs: <strong>1. Why It Fails:</strong> Why will this pupil struggle in the real exam? &bull; <strong>2. Calibrated Fix:</strong> Design the sharp Role + Constraint.',
+      cases: [
+        {
+          id: 'l5a',
+          letter: 'A',
+          sector: 'Modern Languages',
+          roleTitle: 'French Speaking Test Prep',
+          scenario: 'Revising for a French speaking assessment on holidays, a pupil asks Copilot to translate their English paragraph into French and tries to memorise it.',
+          naivePrompt: '"Translate my 120-word paragraph about my holiday in Spain into GCSE French."',
+          danger: 'Uses idioms above Year 9 grammar that collapse the moment the teacher asks an unplanned follow-up question.',
+          promptFix: 'Role: French oral examiner. Task: Ask me 4 surprise questions in simple French one at a time, then correct ONLY mistakes in my own replies.',
+        },
+        {
+          id: 'l5b',
+          letter: 'B',
+          sector: 'Mathematics',
+          roleTitle: 'Simultaneous Equations Homework',
+          scenario: 'Stuck on Question 6, a pupil pastes the equation into Copilot, copies down the 5 lines of working, and ticks it off.',
+          naivePrompt: '"Solve 4x + 2y = 22 and 2x - y = 5 showing all steps."',
+          danger: 'Illusion of Competence — copying someone else\'s algebra builds zero independent problem-solving fluency for closed-book tests.',
+          promptFix: 'Role: Maths Step-Checker. Task: Give me ONE hint on how to eliminate y first, then wait for me to type Line 1.',
+        },
+        {
+          id: 'l5c',
+          letter: 'C',
+          sector: 'English Literature',
+          roleTitle: 'Macbeth Character Essay',
+          scenario: 'Before writing an essay on Lady Macbeth, a pupil asks Copilot for "three PEEL paragraphs on guilt in Act 5".',
+          naivePrompt: '"Write three analytical paragraphs on Lady Macbeth\'s guilt with quotes."',
+          danger: 'Replaces the pupil\'s own analytical voice with generic phrasing and risks misquoted lines.',
+          promptFix: 'Role: Sceptical Literature critic. Task: Here are MY 3 chosen quotes and thesis—ask me 3 probing questions about Shakespeare\'s imagery.',
+        },
+        {
+          id: 'l5d',
+          letter: 'D',
+          sector: 'Biology & Chemistry',
+          roleTitle: 'Practical Method Evaluation',
+          scenario: 'After an osmosis potato practical, a pupil asks Copilot to write their evaluation of experimental errors.',
+          naivePrompt: '"Write an evaluation of sources of error in a Year 9 osmosis experiment."',
+          danger: 'Lists generic textbook errors that didn\'t actually happen in their classroom beaker setup.',
+          promptFix: 'Role: Lab technician quizzer. Context: Paste OUR actual method & table. Task: Ask me 2 questions to help me spot our biggest measurement flaw.',
+        },
+      ],
+    },
   },
   {
     num: 6,
@@ -422,7 +806,7 @@ const AI_COURSE_LESSONS = [
     duration: 'Year 9 AI',
     status: 'Synoptic Finale',
     summary:
-      'Pupils debate academic integrity, environmental compute costs, intellectual authorship, and why human judgement remains irreplaceable in leadership and public life.',
+      'Examine intellectual authorship, human-in-the-loop accountability, environmental compute costs, and why human judgement remains irreplaceable.',
     objectives: [
       'Distinguish ethical AI coaching and critique from cognitive offloading and academic dishonesty.',
       'Evaluate the wider societal, environmental, and authorship questions surrounding generative AI in the 2030s.',
@@ -462,18 +846,114 @@ const AI_COURSE_LESSONS = [
         a: 'Asking Copilot to challenge your thesis with the strongest historical or scientific counter-arguments before you write.',
       },
     ],
-    stages: [
-      {
-        code: 'STAGE 01',
-        title: 'The Authorship Boundary',
-        text: 'Distinguishing legitimate AI coaching and critique from academic dishonesty and voice erosion.',
+    deck: {
+      stage1Title: 'The Agency Line: Cognitive Offloading vs Human-Led Mastery',
+      specA: {
+        label: 'Specimen A · Cognitive Offloading (AI Replaces the Thinker)',
+        hint: 'Click to see what happens over time when a user outsources thinking and voice.',
+        inputLabel: 'Habit',
+        input: 'Letting AI generate ideas, first drafts, personal messages, and judgements without mental struggle.',
+        output: 'Short-term speed, but long-term skill atrophy: writing sounds interchangeable, memory weakens, and you cannot defend the work aloud.',
+        result: 'Loss of agency — the tool drives the human instead of the human directing the tool.',
       },
-      {
-        code: 'STAGE 02',
-        title: 'Designing the Year 9 AI Charter',
-        text: 'Drafting a personal protocol for creative, responsible, and intellectually ambitious AI usage.',
+      specB: {
+        label: 'Specimen B · Human-Led Agency (AI Sharpens the Thinker)',
+        hint: 'Click to see how disciplined thinkers use AI across study and leadership.',
+        inputLabel: 'Habit',
+        input: 'Thinking and drafting independently first -> using R.C.T.C. to quiz, critique, and stress-test -> verifying every fact.',
+        output: 'Your own voice, creativity, and subject knowledge grow stronger while blind spots get caught early.',
+        result: 'Authentic authorship — 100% human accountability, empathy, and intellectual ownership.',
       },
-    ],
+      tiles: [
+        {
+          code: '[ 01 ]',
+          name: 'Authorship',
+          tag: 'Pillar 1 · Your Own Voice',
+          summary: 'If your name is at the top of a piece of work, the structure, reasoning, and prose must genuinely come from your own mind.',
+        },
+        {
+          code: '[ 02 ]',
+          name: 'Accountability',
+          tag: 'Pillar 2 · Human-in-the-Loop',
+          summary: 'An algorithm cannot take moral or legal responsibility in a courtroom, hospital, or cockpit—a qualified human always signs off.',
+        },
+        {
+          code: '[ 03 ]',
+          name: 'Empathy',
+          tag: 'Pillar 3 · Human Connection',
+          summary: 'Statistical text can imitate polite sympathy, but genuine care, apology, and ethical courage belong strictly to human relationships.',
+        },
+        {
+          code: '[ 04 ]',
+          name: 'Stewardship',
+          tag: 'Pillar 4 · Compute & Fairness',
+          summary: 'Data centres use real electricity, water, and creative human labour—use AI purposefully where it adds genuine value, not mindlessly.',
+        },
+      ],
+      workedTitle: 'The 3-Question Authorship Test — Green Light vs Red Light',
+      workedNote: 'Ask these three questions before using AI on any academic or professional task',
+      workedBody:
+        '<strong>1. Origin:</strong> Did my own brain generate the core ideas and first attempt before opening AI? &bull; <strong>2. Verification:</strong> Have I independently checked every factual claim and quotation outside the chat? &bull; <strong>3. Ownership:</strong> Could I close my laptop right now and explain, justify, and defend every single sentence aloud?',
+      stage2Title: 'Microsoft Copilot Lab: Devil\'s Advocate Sparring & Personal Charter',
+      phaseATitle: 'Phase A · Human Thesis First -> AI Counter-Challenge',
+      phaseAIntro: 'Practise ethical, human-led sparring where YOUR voice stays 100% in charge:',
+      phaseASteps: [
+        'Without touching Copilot, write your own <strong>2–3 sentence position</strong> on this question: <em>"Should schools ban all smartphones until age 16, or teach regulated use?"</em>',
+        'Now open Copilot and prompt it using R.C.T.C.: <em>"Act as a fair debate opponent. Read my argument below and give me the TWO strongest counter-arguments against my view in under 60 words. Do NOT rewrite my paragraph."</em>',
+        'Close Copilot and <strong>upgrade your own paragraph in your own words</strong> so it anticipates and answers the best counter-argument!',
+      ],
+      phaseBTitle: 'Phase B · Testing Moral Neutrality & Hedging',
+      phaseBTag: 'Why AI cannot make value judgements on behalf of human leaders',
+      phaseBPrompt:
+        'Ask Copilot to decide a tough leadership dilemma (e.g. <em>"A hospital has budget for either a new children\'s ward OR a cancer scanner—make the final decision and take responsibility"</em>).',
+      phaseBCheck:
+        'Notice how Copilot lists pros and cons ("On one hand... on the other hand...") and refuses moral accountability. Discuss: why must elected leaders, doctors, and citizens never hand ethical trade-offs over to an algorithm?',
+      stage3Title: 'Society & Leadership in the 2030s: Case Studies A–D',
+      plenaryPrompt:
+        'Discuss your assigned dilemma in pairs: <strong>1. Where is the Line?</strong> What human value is at stake here? &bull; <strong>2. 2030s Rule:</strong> What clear boundary should schools, employers, or laws set?',
+      cases: [
+        {
+          id: 'l6a',
+          letter: 'A',
+          sector: 'Personal Relationships',
+          roleTitle: 'The AI-Written Apology Message',
+          scenario: 'After letting down a close friend, someone asks a chatbot to write a heartfelt 150-word apology text and hits send without changing a word.',
+          naivePrompt: '"Write a sincere, emotional apology text to my best friend for missing their match."',
+          danger: 'Erodes genuine human trust — outsourcing personal honesty turns real friendship into synthetic, polished clichés.',
+          promptFix: 'Human-only zone: personal apologies, gratitude, and pastoral care should always be spoken or written in your own authentic voice.',
+        },
+        {
+          id: 'l6b',
+          letter: 'B',
+          sector: 'Hospital Triage',
+          roleTitle: 'Automated Emergency Waiting Room',
+          scenario: 'A busy hospital proposes letting an AI camera and symptom chatbot decide alone which A&E patients see a doctor first, with no nurse override.',
+          naivePrompt: '"Automatically rank incoming A&E patients from 1 to 50 with no manual review step."',
+          danger: 'Accountability & Safety Gap — unusual symptoms or quiet sepsis signs can be misread by statistical averages with life-threatening consequences.',
+          promptFix: 'Strict Human-in-the-Loop: AI may flag high-risk vitals faster, but an experienced triage nurse or doctor must examine and decide.',
+        },
+        {
+          id: 'l6c',
+          letter: 'C',
+          sector: 'Environment & Compute',
+          roleTitle: 'Energy & Water Footprint',
+          scenario: 'An office runs giant generative AI image and video models 24/7 for trivial tasks that a simple 2-second search or template could handle.',
+          naivePrompt: '"Generate 40 high-resolution AI poster variations for Friday\'s cake sale."',
+          danger: 'Compute Waste — large frontier queries consume substantially more data-centre electricity and cooling water than standard web searches.',
+          promptFix: 'Right-sized tooling: use lightweight search, calculators, and human design for simple tasks; reserve heavy AI compute for high-value problems.',
+        },
+        {
+          id: 'l6d',
+          letter: 'D',
+          sector: 'Creative Arts & Music',
+          roleTitle: 'Imitating a Living Illustrator\'s Style',
+          scenario: 'A games studio prompts an image generator to copy the exact signature style of a living children\'s book illustrator instead of commissioning them.',
+          naivePrompt: '"Create 20 game backgrounds in the exact artistic style of [living illustrator\'s name]."',
+          danger: 'Authorship & Livelihood — profiting from an individual artist\'s life\'s work without consent or credit undermines human creative careers.',
+          promptFix: 'Ethical creative charter: commission human artists, use licensed datasets, and credit human authorship transparently.',
+        },
+      ],
+    },
   },
 ];
 
@@ -491,6 +971,12 @@ const state = {
   rctcOpen: { R: false, C: false, T: false, C2: false },
   phaseBOpen: false,
   casesOpen: { law: false, med: false, arch: false, fin: false },
+
+  // Interactive station states for Lessons 1, 2, 4, 5, 6
+  courseSpecOpen: {}, // e.g. '1-A': true, '1-B': true
+  courseTileOpen: {}, // e.g. '1-0': true
+  coursePhaseBOpen: {}, // e.g. 1: true
+  courseCaseOpen: {}, // e.g. 'l1a': true
 };
 
 // Timer state for Classroom Pacing
@@ -1436,7 +1922,7 @@ function renderUnitOverview() {
             </div>
 
             <div style="padding-top:10px; border-top:1px solid #e2e8f0; display:flex; align-items:center; justify-content:space-between; font-size:0.76rem;">
-              <span style="color:#64748b; font-weight:600;">5-Q Do Now Included</span>
+              <span style="color:#64748b; font-weight:600;">3 Stages &bull; Launchpad Included</span>
               <span style="color:#2563eb; font-weight:700; display:inline-flex; align-items:center; gap:5px;">
                 <span>Open Lesson</span>
                 <i class="fa-solid fa-arrow-right" style="font-size:0.68rem;"></i>
@@ -1915,28 +2401,276 @@ function renderLesson3Stations() {
   `;
 }
 
-/* ========================= RENDER: SHELL STATIONS FOR LESSONS 1, 2, 4, 5, 6 ========================= */
+/* ========================= RENDER: FULL 3-STAGE STATIONS FOR LESSONS 1, 2, 4, 5, 6 ========================= */
 
-function renderShellLessonStations(lesson) {
+function renderCourseLessonStations(lesson) {
+  const d = lesson.deck;
+  if (!d) return '';
+
+  const lnum = lesson.num;
+  const specAOn = Boolean(state.courseSpecOpen[`${lnum}-A`]);
+  const specBOn = Boolean(state.courseSpecOpen[`${lnum}-B`]);
+  const allTilesOn = d.tiles.every((_, idx) => Boolean(state.courseTileOpen[`${lnum}-${idx}`]));
+  const phaseBOn = Boolean(state.coursePhaseBOpen[lnum]);
+  const anyCaseOn = d.cases.some((c) => Boolean(state.courseCaseOpen[c.id]));
+
+  const tileColorClasses = ['k-R', 'k-C', 'k-T', 'k-C2'];
+
   return `
-    ${(lesson.stages || [])
-      .map(
-        (st) => `
-      <section class="aiu-station">
-        <header class="aiu-station-head">
-          <div class="aiu-station-title-row">
-            <span class="aiu-stage-pill">${st.code}</span>
-            <h2 class="aiu-station-title">${st.title}</h2>
-          </div>
-          <span class="aiu-mode-pill paper">Scheme of Work Sequence</span>
-        </header>
-        <div class="aiu-station-body">
-          <p style="margin:0; font-size:0.93rem; color:#334155; line-height:1.55;">${st.text}</p>
+    <!-- STAGE 01: CONCEPT & SPECIMEN REVEAL -->
+    <section class="aiu-station">
+      <header class="aiu-station-head">
+        <div class="aiu-station-title-row">
+          <span class="aiu-stage-pill">Stage 01</span>
+          <h2 class="aiu-station-title">${d.stage1Title}</h2>
         </div>
-      </section>
-    `,
-      )
-      .join('')}
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span class="aiu-mode-pill paper">Laptops Closed &bull; Concept Comparison</span>
+          <button type="button" class="aiu-crumb-btn" data-aiu="toggle-all-c-tiles" data-lnum="${lnum}" style="padding:3px 9px; font-size:0.72rem;">
+            ${allTilesOn ? 'Collapse All 4' : 'Reveal All 4'}
+          </button>
+        </div>
+      </header>
+
+      <div class="aiu-station-body">
+        <!-- Specimen A vs Specimen B (Auto-Hidden; Click Card to Reveal/Hide) -->
+        <div class="aiu-two-col" style="margin-bottom:18px;">
+          <div class="aiu-box" data-aiu="toggle-c-spec" data-key="${lnum}-A" style="background:#f8fafc; border-top:3.5px solid #dc2626; cursor:pointer;">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#991b1b;">
+                ${d.specA.label}
+              </span>
+              <span class="aiu-reveal-pill ${specAOn ? 'open' : ''}">
+                <i class="fa-solid ${specAOn ? 'fa-eye-slash' : 'fa-eye'}" style="font-size:0.66rem;"></i>
+                <span>${specAOn ? 'Hide Specimen A' : 'Reveal Specimen A'}</span>
+              </span>
+            </div>
+            ${
+              specAOn
+                ? `<div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; padding:9px 12px; font-size:0.9rem; margin-bottom:9px;">
+                    <strong>${d.specA.inputLabel}:</strong> ${d.specA.input}
+                  </div>
+                  <div style="font-size:0.86rem; line-height:1.46; background:#fef2f2; border:1px solid #fecaca; border-radius:6px; padding:9px 12px; color:#7f1d1d;">
+                    <strong>What Happens:</strong> ${d.specA.output}<br/>
+                    <strong>Takeaway:</strong> ${d.specA.result}
+                  </div>`
+                : `<div style="font-size:0.86rem; color:#64748b; border:1px dashed #cbd5e1; border-radius:6px; padding:14px 12px; background:#ffffff;">
+                    ${d.specA.hint}
+                  </div>`
+            }
+          </div>
+
+          <div class="aiu-box" data-aiu="toggle-c-spec" data-key="${lnum}-B" style="background:#f8fafc; border-top:3.5px solid #059669; cursor:pointer;">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#065f46;">
+                ${d.specB.label}
+              </span>
+              <span class="aiu-reveal-pill ${specBOn ? 'open' : ''}">
+                <i class="fa-solid ${specBOn ? 'fa-eye-slash' : 'fa-eye'}" style="font-size:0.66rem;"></i>
+                <span>${specBOn ? 'Hide Specimen B' : 'Reveal Specimen B'}</span>
+              </span>
+            </div>
+            ${
+              specBOn
+                ? `<div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; padding:9px 12px; font-size:0.9rem; margin-bottom:9px;">
+                    <strong>${d.specB.inputLabel}:</strong> ${d.specB.input}
+                  </div>
+                  <div style="font-size:0.86rem; line-height:1.46; background:#ecfdf5; border:1px solid #a7f3d0; border-radius:6px; padding:9px 12px; color:#064e3b;">
+                    <strong>What Happens:</strong> ${d.specB.output}<br/>
+                    <strong>Takeaway:</strong> ${d.specB.result}
+                  </div>`
+                : `<div style="font-size:0.86rem; color:#64748b; border:1px dashed #cbd5e1; border-radius:6px; padding:14px 12px; background:#ffffff;">
+                    ${d.specB.hint}
+                  </div>`
+            }
+          </div>
+        </div>
+
+        <!-- 4 Auto-Collapsed Concept Tiles -->
+        <div class="aiu-rctc-grid">
+          ${d.tiles
+            .map((t, idx) => {
+              const tKey = `${lnum}-${idx}`;
+              const on = Boolean(state.courseTileOpen[tKey]);
+              const cls = tileColorClasses[idx % 4];
+              return `
+              <button type="button" class="aiu-rctc-btn ${cls} ${on ? 'on' : ''}" data-aiu="toggle-c-tile" data-key="${tKey}">
+                <div style="display:flex; justify-content:space-between; align-items:center; width:100%; gap:6px;">
+                  <span style="font-size:0.94rem; font-weight:800; color:#0f172a;">${t.code} ${t.name}</span>
+                  <span class="aiu-reveal-pill ${on ? 'open' : ''}" style="padding:1.5px 8px; font-size:0.68rem;">
+                    <i class="fa-solid ${on ? 'fa-eye-slash' : 'fa-eye'}" style="font-size:0.62rem;"></i>
+                    <span>${on ? 'Hide' : 'Reveal'}</span>
+                  </span>
+                </div>
+                ${
+                  on
+                    ? `
+                  <div style="margin-top:8px; padding-top:8px; border-top:1px solid rgba(15,23,42,0.1); width:100%;">
+                    <div style="margin-bottom:5px;">
+                      <span style="font-size:0.69rem; font-weight:800; color:#334155; background:rgba(255,255,255,0.85); border:1px solid #cbd5e1; padding:1.5px 6px; border-radius:4px;">${t.tag}</span>
+                    </div>
+                    <div style="font-size:0.83rem; color:#1e293b; line-height:1.42;">${t.summary}</div>
+                  </div>
+                `
+                    : ''
+                }
+              </button>
+            `;
+            })
+            .join('')}
+        </div>
+
+        <!-- Classroom Worked Example -->
+        <div style="background:#f8fafc; border:1.5px solid #cbd5e1; border-left:5px solid #1e3a8a; border-radius:8px; padding:14px 18px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px;">
+            <span style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; color:#1e3a8a;">
+              ${d.workedTitle}
+            </span>
+            <span style="font-size:0.74rem; color:#64748b;">
+              ${d.workedNote}
+            </span>
+          </div>
+          <div style="font-size:0.97rem; line-height:1.68; color:#0f172a;">
+            ${d.workedBody}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 02: MICROSOFT COPILOT LAB -->
+    <section class="aiu-station">
+      <header class="aiu-station-head">
+        <div class="aiu-station-title-row">
+          <span class="aiu-stage-pill">Stage 02</span>
+          <h2 class="aiu-station-title">${d.stage2Title}</h2>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span class="aiu-mode-pill open">Microsoft Copilot Open &bull; Individual Devices</span>
+          <button type="button" class="aiu-crumb-btn ${phaseBOn ? 'blue-active' : 'navy'}" data-aiu="toggle-c-phaseb" data-lnum="${lnum}" style="padding:3px 10px; font-size:0.72rem;">
+            ${phaseBOn ? 'Hide Phase B Challenge' : 'Open Phase B: Stress-Test'}
+          </button>
+        </div>
+      </header>
+
+      <div class="aiu-station-body">
+        <div class="aiu-two-col">
+          <div class="aiu-box" style="border-top:4px solid #059669;">
+            <div style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#065f46; margin-bottom:6px;">
+              ${d.phaseATitle}
+            </div>
+            <p style="margin:0 0 10px 0; font-size:0.89rem; color:#1e293b; line-height:1.48;">
+              ${d.phaseAIntro}
+            </p>
+            <ol style="margin:0; padding-left:19px; font-size:0.87rem; color:#334155; line-height:1.56;">
+              ${d.phaseASteps.map((step) => `<li style="margin-bottom:6px;">${step}</li>`).join('')}
+            </ol>
+          </div>
+
+          <div class="aiu-box" style="border-top:4px solid ${phaseBOn ? '#e11d48' : '#cbd5e1'}; background:${phaseBOn ? '#fff1f2' : '#f8fafc'};">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:6px;">
+              <span style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:${phaseBOn ? '#9f1239' : '#64748b'};">
+                ${d.phaseBTitle}
+              </span>
+              <button type="button" class="aiu-crumb-btn" data-aiu="toggle-c-phaseb" data-lnum="${lnum}" style="padding:2px 8px; font-size:0.7rem;">
+                ${phaseBOn ? 'Collapse' : 'Unlock Phase B'}
+              </button>
+            </div>
+            ${
+              phaseBOn
+                ? `
+              <div style="font-size:0.87rem; color:#881337; line-height:1.5;">
+                <div style="font-weight:700; margin-bottom:6px; color:#9f1239;">${d.phaseBTag}</div>
+                <div style="background:#ffffff; border:1px solid #fecdd3; border-left:3.5px solid #e11d48; border-radius:6px; padding:9px 11px; margin-bottom:8px; color:#0f172a;">
+                  ${d.phaseBPrompt}
+                </div>
+                <div style="font-size:0.84rem; color:#4c0519;">
+                  ${d.phaseBCheck}
+                </div>
+              </div>
+            `
+                : `
+              <div style="padding:8px 0 4px 0;">
+                <div style="font-size:0.93rem; font-weight:700; color:#334155; margin-bottom:4px;">
+                  Complete Phase A in Microsoft Copilot first.
+                </div>
+                <p style="margin:0; font-size:0.85rem; color:#64748b; line-height:1.48;">
+                  Once you have completed the initial investigation, unlock <strong>Phase B</strong> to stress-test how Copilot behaves under pressure.
+                </p>
+              </div>
+            `
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 03: PLENARY CASE STUDIES -->
+    <section class="aiu-station">
+      <header class="aiu-station-head">
+        <div class="aiu-station-title-row">
+          <span class="aiu-stage-pill">Stage 03 &bull; Plenary</span>
+          <h2 class="aiu-station-title">${d.stage3Title}</h2>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span class="aiu-mode-pill closed">Laptops Closed &bull; Pair / Group Discussion</span>
+          <button type="button" class="aiu-crumb-btn" data-aiu="toggle-all-c-cases" data-lnum="${lnum}" style="padding:3px 9px; font-size:0.72rem;">
+            ${anyCaseOn ? 'Hide All 4' : 'Reveal All 4'}
+          </button>
+        </div>
+      </header>
+
+      <div class="aiu-station-body">
+        <div style="background:#eff6ff; border:1.5px solid #bfdbfe; border-left:5px solid #1e3a8a; border-radius:7px; padding:11px 15px; margin-bottom:14px; font-size:0.91rem; color:#0f172a; line-height:1.52;">
+          <div style="font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#1e3a8a; margin-bottom:3px;">
+            Pair / Group Huddle &rarr; Class Discussion
+          </div>
+          ${d.plenaryPrompt}
+        </div>
+
+        <div class="aiu-two-col">
+          ${d.cases
+            .map((c) => {
+              const open = Boolean(state.courseCaseOpen[c.id]);
+              return `
+              <div class="aiu-box" style="border-top:3.5px solid #1e3a8a;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:5px;">
+                    <span style="font-size:0.73rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#1e3a8a;">
+                      Case Study ${c.letter} &bull; ${c.sector}
+                    </span>
+                  </div>
+                  <h3 style="margin:0 0 6px 0; font-family:'Playfair Display', serif; font-size:1rem; color:#0f172a;">
+                    ${c.roleTitle}
+                  </h3>
+                  <p style="margin:0 0 8px 0; font-size:0.85rem; color:#334155; line-height:1.45;">
+                    ${c.scenario}
+                  </p>
+                  <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:3.5px solid #64748b; border-radius:5px; padding:7px 10px; font-size:0.84rem; color:#0f172a; font-style:italic; margin-bottom:12px;">
+                    <strong>Prompt / Action:</strong> ${c.naivePrompt}
+                  </div>
+                </div>
+
+                <div>
+                  <button type="button" class="aiu-crumb-btn" data-aiu="toggle-c-case" data-id="${c.id}" style="width:100%; justify-content:space-between; padding:6px 11px;">
+                    <span>${open ? 'Hide Key Points' : 'Reveal Key Points'}</span>
+                    <i class="fa-solid ${open ? 'fa-chevron-up' : 'fa-chevron-down'}" style="font-size:0.7rem;"></i>
+                  </button>
+                  ${
+                    open
+                      ? `<div style="margin-top:9px; padding:9px 12px; background:#f0fdf4; border:1px solid #86efac; border-left:4px solid #15803d; border-radius:6px; font-size:0.84rem; color:#14532d; line-height:1.45;">
+                          <div style="margin-bottom:4px; color:#991b1b;"><strong>Risk / Flaw:</strong> ${c.danger}</div>
+                          <div><strong>Smart Fix:</strong> ${c.promptFix}</div>
+                        </div>`
+                      : ''
+                  }
+                </div>
+              </div>
+            `;
+            })
+            .join('')}
+        </div>
+      </div>
+    </section>
   `;
 }
 
@@ -1959,7 +2693,7 @@ function renderActiveLesson() {
 
     ${renderLessonLaunchpad(lesson)}
 
-    ${lesson.num === 3 ? renderLesson3Stations() : renderShellLessonStations(lesson)}
+    ${lesson.num === 3 ? renderLesson3Stations() : renderCourseLessonStations(lesson)}
 
     <!-- Bottom Lesson Navigation (Prev / Unit Overview / Next Lesson) -->
     <footer class="aiu-lesson-footer-nav no-print">
@@ -2381,6 +3115,42 @@ function bindCourseEvents() {
       const next = !anyOn;
       state.casesOpen = { law: next, med: next, arch: next, fin: next };
       renderAll();
+    } else if (act === 'toggle-c-spec') {
+      const k = target.dataset.key;
+      state.courseSpecOpen[k] = !state.courseSpecOpen[k];
+      renderAll();
+    } else if (act === 'toggle-c-tile') {
+      const k = target.dataset.key;
+      state.courseTileOpen[k] = !state.courseTileOpen[k];
+      renderAll();
+    } else if (act === 'toggle-all-c-tiles') {
+      const lnum = parseInt(target.dataset.lnum, 10);
+      const l = AI_COURSE_LESSONS.find((x) => x.num === lnum);
+      if (l && l.deck) {
+        const allOn = l.deck.tiles.every((_, idx) => Boolean(state.courseTileOpen[`${lnum}-${idx}`]));
+        l.deck.tiles.forEach((_, idx) => {
+          state.courseTileOpen[`${lnum}-${idx}`] = !allOn;
+        });
+        renderAll();
+      }
+    } else if (act === 'toggle-c-phaseb') {
+      const lnum = parseInt(target.dataset.lnum, 10);
+      state.coursePhaseBOpen[lnum] = !state.coursePhaseBOpen[lnum];
+      renderAll();
+    } else if (act === 'toggle-c-case') {
+      const id = target.dataset.id;
+      state.courseCaseOpen[id] = !state.courseCaseOpen[id];
+      renderAll();
+    } else if (act === 'toggle-all-c-cases') {
+      const lnum = parseInt(target.dataset.lnum, 10);
+      const l = AI_COURSE_LESSONS.find((x) => x.num === lnum);
+      if (l && l.deck) {
+        const anyOn = l.deck.cases.some((c) => Boolean(state.courseCaseOpen[c.id]));
+        l.deck.cases.forEach((c) => {
+          state.courseCaseOpen[c.id] = !anyOn;
+        });
+        renderAll();
+      }
     } else if (act === 'open-print') {
       state.printDoc = 'worksheet';
       renderAll();
