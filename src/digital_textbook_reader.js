@@ -330,30 +330,30 @@ export async function renderDigitalReaderView(param, targetContainer = null) {
 
   // Render Reader Shell with Rich Aesthetics
   contentArea.innerHTML = `
-    <div id="digital-reader-root" style="display: flex; flex-direction: column; width: 100%; height: calc(100vh - 65px); max-height: calc(100vh - 65px); background: #090d16; color: #f8fafc; font-family: 'Inter', system-ui, -apple-system, sans-serif; position: relative; overflow: hidden; box-sizing: border-box;">
+    <div id="digital-reader-root" style="display: flex; flex-direction: column; width: 100%; height: calc(100vh - 70px); max-height: calc(100vh - 70px); background: #090d16; color: #f8fafc; font-family: 'Inter', system-ui, -apple-system, sans-serif; position: relative; overflow: hidden; box-sizing: border-box;">
       
       <!-- Top Archival Navigation & Toolstrip -->
-      <header style="background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 8px 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; z-index: 40; box-shadow: 0 4px 20px rgba(0,0,0,0.4); flex-shrink: 0;">
+      <header style="background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 6px 14px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; z-index: 40; box-shadow: 0 4px 20px rgba(0,0,0,0.4); flex-shrink: 0;">
         
         <!-- Left: Back Button & Topic Selector -->
-        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-          <button id="reader-btn-exit" type="button" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #cbd5e1; border-radius: 6px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" title="Exit Reader & Return to Booklets">
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
+          <button id="reader-btn-exit" type="button" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #cbd5e1; border-radius: 6px; padding: 5px 10px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease; white-space: nowrap;" title="Exit Reader & Return to Booklets">
             <i class="fa-solid fa-arrow-left"></i> Booklets
           </button>
 
-          <div style="height: 24px; width: 1px; background: rgba(255, 255, 255, 0.15);"></div>
+          <div style="height: 22px; width: 1px; background: rgba(255, 255, 255, 0.15);"></div>
 
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 0.65rem; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(2, 132, 199, 0.2); color: #38bdf8; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.35);">
-              DUAL-SPREAD DIGITAL READER
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 0.62rem; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; background: rgba(2, 132, 199, 0.2); color: #38bdf8; padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.35); white-space: nowrap;">
+              DIGITAL READER
             </span>
 
             <!-- Key Topic Selector Pills -->
-            <div id="reader-topic-pills" style="display: flex; align-items: center; background: rgba(0, 0, 0, 0.35); padding: 3px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.08); gap: 4px;">
+            <div id="reader-topic-pills" style="display: flex; align-items: center; background: rgba(0, 0, 0, 0.35); padding: 2px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.08); gap: 3px;">
               ${['KT1', 'KT2', 'KT3']
                 .map(
                   (kt) => `
-                <button type="button" data-kt="${kt}" class="reader-kt-pill" style="background: ${currentReader.ktId === kt ? '#0284c7' : 'transparent'}; color: ${currentReader.ktId === kt ? '#ffffff' : '#94a3b8'}; border: none; border-radius: 4px; padding: 4px 10px; font-size: 0.75rem; font-weight: 800; cursor: pointer; transition: all 0.15s ease;">
+                <button type="button" data-kt="${kt}" class="reader-kt-pill" style="background: ${currentReader.ktId === kt ? '#0284c7' : 'transparent'}; color: ${currentReader.ktId === kt ? '#ffffff' : '#94a3b8'}; border: none; border-radius: 4px; padding: 3px 8px; font-size: 0.74rem; font-weight: 800; cursor: pointer; transition: all 0.15s ease;">
                   ${kt}
                 </button>
               `,
@@ -364,11 +364,11 @@ export async function renderDigitalReaderView(param, targetContainer = null) {
         </div>
 
         <!-- Center: Current Spread Title & Pagination -->
-        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div id="reader-spread-badge" style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.04em;">
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 0; flex: 1 1 160px;">
+          <div id="reader-spread-badge" style="font-size: 0.68rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.04em;">
             Loading Textbook...
           </div>
-          <div id="reader-spread-title" style="font-size: 0.92rem; font-weight: 800; color: #ffffff; letter-spacing: -0.01em; max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+          <div id="reader-spread-title" style="font-size: 0.86rem; font-weight: 800; color: #ffffff; letter-spacing: -0.01em; max-width: clamp(160px, 24vw, 380px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
             Preparing Archival Spread...
           </div>
         </div>

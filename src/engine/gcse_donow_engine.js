@@ -1180,21 +1180,26 @@ export function renderGcseDoNowPanelHTML({
         </div>
       </div>
 
-      ${headerHtml}
+      ${(() => {
+        const subtitlePillHtml = `<div id="donow-mode-subtitle" style="font-size: 0.71rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 9px; border-radius: 999px; display: inline-flex; align-items: center; gap: 5px; max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${result.subtitle}"><i class="fa-solid fa-bullseye" style="color: #0284c7; font-size: 0.66rem; flex-shrink: 0;"></i><span id="donow-mode-subtitle-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.subtitle}</span></div>`;
+        return headerHtml && headerHtml.includes('<!--DONOW_SUBTITLE_SLOT-->')
+          ? headerHtml.replace('<!--DONOW_SUBTITLE_SLOT-->', subtitlePillHtml)
+          : `${headerHtml || ''}`;
+      })()}
 
-      <!-- Scope Control Deck with Timer on the Right -->
-      <div class="donow-mode-deck" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 8px 0 10px 0; padding: 6px 12px; background: #f8fafc; border: 1.2px solid #e2e8f0; border-radius: 10px;">
-        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-          <span style="font-size: 0.72rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.6px; display: inline-flex; align-items: center; gap: 5px; user-select: none;">
+      <!-- Scope Control Deck -->
+      <div class="donow-mode-deck" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 5px 0 6px 0; padding: 4px 10px; background: #f8fafc; border: 1.2px solid #e2e8f0; border-radius: 9px;">
+        <div style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
+          <span style="font-size: 0.7rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 4px; user-select: none;">
             <i class="fa-solid fa-sliders" style="color: #0284c7;"></i> Scope:
           </span>
-          <div class="donow-mode-btn-group" style="display: inline-flex; align-items: center; background: #e2e8f0; padding: 3px; border-radius: 999px; gap: 2px; border: 1px solid #cbd5e1; box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); flex-wrap: wrap;">
+          <div class="donow-mode-btn-group" style="display: inline-flex; align-items: center; background: #e2e8f0; padding: 2px; border-radius: 999px; gap: 2px; border: 1px solid #cbd5e1; box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); flex-wrap: wrap;">
             <button type="button"
               class="btn-donow-mode ${activeMode === 'previous' ? 'active' : ''}"
               data-donow-mode="previous"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('previous');"
               title="Questions strictly from the immediate previous lesson"
-              style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'previous' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'previous' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'previous' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'previous' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'previous' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'previous' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-arrow-rotate-left"></i> Previous
             </button>
             <button type="button"
@@ -1202,7 +1207,7 @@ export function renderGcseDoNowPanelHTML({
               data-donow-mode="current"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('current');"
               title="Questions directly on this current lesson"
-              style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'current' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'current' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'current' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'current' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'current' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'current' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-book-open"></i> This Lesson
             </button>
             <button type="button"
@@ -1210,7 +1215,7 @@ export function renderGcseDoNowPanelHTML({
               data-donow-mode="unit"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('unit');"
               title="Questions interleaved across this unit up to now"
-              style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'unit' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'unit' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'unit' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'unit' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'unit' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'unit' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-layer-group"></i> Unit
             </button>
             <button type="button"
@@ -1218,7 +1223,7 @@ export function renderGcseDoNowPanelHTML({
               data-donow-mode="other"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('other');"
               title="Questions from another unit or synoptic mix"
-              style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'other' || activeMode === 'all' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'other' || activeMode === 'all' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: ${activeMode === 'other' || activeMode === 'all' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'other' || activeMode === 'all' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'other' || activeMode === 'all' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'other' || activeMode === 'all' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-earth-americas"></i> All
             </button>
           </div>
@@ -1230,7 +1235,7 @@ export function renderGcseDoNowPanelHTML({
               data-donow-count="5"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(5);"
               title="Set to 5 recall questions (standard 5-minute starter)"
-              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 5 ? '#0284c7' : 'transparent'}; color: ${activeCount === 5 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 5 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 5 ? '#0284c7' : 'transparent'}; color: ${activeCount === 5 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 5 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
               5 Qs
             </button>
             <button type="button"
@@ -1238,7 +1243,7 @@ export function renderGcseDoNowPanelHTML({
               data-donow-count="10"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(10);"
               title="Set to 10 recall questions (standard retrieval drill)"
-              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 10 ? '#0284c7' : 'transparent'}; color: ${activeCount === 10 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 10 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 10 ? '#0284c7' : 'transparent'}; color: ${activeCount === 10 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 10 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
               10 Qs
             </button>
             <button type="button"
@@ -1246,7 +1251,7 @@ export function renderGcseDoNowPanelHTML({
               data-donow-count="15"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(15);"
               title="Set to 15 recall questions (extended retrieval drill)"
-              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 15 ? '#0284c7' : 'transparent'}; color: ${activeCount === 15 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 15 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 15 ? '#0284c7' : 'transparent'}; color: ${activeCount === 15 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 15 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
               15 Qs
             </button>
             <button type="button"
@@ -1254,7 +1259,7 @@ export function renderGcseDoNowPanelHTML({
               data-donow-count="20"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(20);"
               title="Set to 20 recall questions (full topic mastery challenge)"
-              style="padding: 3px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 20 ? '#0284c7' : 'transparent'}; color: ${activeCount === 20 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 20 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 20 ? '#0284c7' : 'transparent'}; color: ${activeCount === 20 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 20 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
               20 Qs
             </button>
           </div>
@@ -1263,7 +1268,7 @@ export function renderGcseDoNowPanelHTML({
             class="btn-donow-shuffle"
             onclick="event.stopPropagation(); window.refreshCurrentGcseDoNow(true);"
             title="Roll a fresh randomized set of questions for this scope"
-            style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0369a1; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
+            style="padding: 3px 10px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0369a1; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
             <i class="fa-solid fa-arrows-rotate" style="color: #0284c7;"></i> Shuffle
           </button>
 
@@ -1272,7 +1277,7 @@ export function renderGcseDoNowPanelHTML({
             id="btn-donow-presentation-toggle"
             onclick="event.stopPropagation(); window.toggleDoNowPresentationMode();"
             title="Full-Screen Whiteboard Presentation Mode (Press 'P' or 'F')"
-            style="padding: 4px 11px; font-size: 0.74rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0f172a; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
+            style="padding: 3px 10px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0f172a; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
             <i class="fa-solid fa-expand" style="color: #0284c7;"></i> Whiteboard
           </button>
 
@@ -1280,20 +1285,13 @@ export function renderGcseDoNowPanelHTML({
             class="btn-donow-speedrun"
             onclick="event.stopPropagation(); window.startDoNowSpeedRun();"
             title="Start 90-Second Rapid-Fire Showdown (Whiteboard Drill)"
-            style="padding: 4px 11px; font-size: 0.74rem; font-weight: 800; border-radius: 999px; border: 1px solid #facc15; background: linear-gradient(180deg, #fef9c3 0%, #fef08a 100%); color: #854d0e; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(202,138,4,0.15); transition: all 0.15s ease;">
+            style="padding: 3px 10px; font-size: 0.73rem; font-weight: 800; border-radius: 999px; border: 1px solid #facc15; background: linear-gradient(180deg, #fef9c3 0%, #fef08a 100%); color: #854d0e; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 2px rgba(202,138,4,0.15); transition: all 0.15s ease;">
             <i class="fa-solid fa-bolt" style="color: #ca8a04;"></i> Rapid Fire
           </button>
         </div>
 
-        ${timerHtml ? `<div class="donow-mode-timer-slot" style="display: inline-flex; align-items: center;">${timerHtml}</div>` : ''}
-      </div>
-
-      <!-- Subtitle Row -->
-      <div style="margin: 4px 0 8px 0;">
-        <div id="donow-mode-subtitle" style="font-size: 0.75rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 3px 12px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-bullseye" style="color: #0284c7; font-size: 0.7rem;"></i>
-          <span id="donow-mode-subtitle-text">${result.subtitle}</span>
-        </div>
+        ${timerHtml ? `<div class="donow-mode-timer-slot" style="display: inline-flex; align-items: center; margin-left: auto;">${timerHtml}</div>` : ''}
+        ${!(headerHtml && headerHtml.includes('<!--DONOW_SUBTITLE_SLOT-->')) ? `<div id="donow-mode-subtitle" style="font-size: 0.71rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 9px; border-radius: 999px; display: inline-flex; align-items: center; gap: 5px; margin-left: auto; max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${result.subtitle}"><i class="fa-solid fa-bullseye" style="color: #0284c7; font-size: 0.66rem; flex-shrink: 0;"></i><span id="donow-mode-subtitle-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.subtitle}</span></div>` : ''}
       </div>
 
       <!-- Unit Chips Bar (Visible when 'Other Units' is active) -->

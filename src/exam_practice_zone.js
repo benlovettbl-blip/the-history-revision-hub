@@ -472,28 +472,28 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
         to { opacity: 1; transform: translateY(0); }
       }
       .epz-wrapper {
-        max-width: 900px;
+        max-width: 1060px;
         margin: 0 auto;
-        background: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.88);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         border: 1px solid rgba(255,255,255,0.4);
-        border-radius: 20px;
-        padding: 40px;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0,0,0,0.05);
-        animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        border-radius: 16px;
+        padding: 20px 26px;
+        box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0,0,0,0.05);
+        animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         position: relative;
         overflow: hidden;
       }
       .epz-title {
         font-family: 'Playfair Display', serif;
-        font-size: 2.8rem;
+        font-size: 1.9rem;
         background: linear-gradient(135deg, #1e3a8a 0%, #4f46e5 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0;
         font-weight: 800;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.4px;
       }
       .epz-btn {
         transition: all 0.2s ease;
@@ -522,11 +522,11 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
       }
       .epz-card {
         background: white;
-        border-radius: 16px;
-        padding: 30px;
-        box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+        border-radius: 14px;
+        padding: 20px 24px;
+        box-shadow: 0 8px 20px -5px rgba(0,0,0,0.05);
         border: 1px solid #f1f5f9;
-        margin-top: 30px;
+        margin-top: 16px;
         position: relative;
         overflow: hidden;
       }
@@ -580,54 +580,53 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
     </style>
     
     <div class="epz-wrapper">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; gap: 20px; flex-wrap: wrap;">
-        <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; gap: 14px; flex-wrap: wrap;">
+        <div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;">
           <h1 class="epz-title"><i class="fa-solid fa-pen-nib" style="color: #3b82f6;"></i> Exam Practice Zone</h1>
-          <p style="color: #64748b; font-size: 1.15rem; margin-top: 10px;">${examBank.length > 0 ? 'Select a question type or a specific past paper question to master.' : 'Download complete mock exams below.'}</p>
+          <p style="color: #64748b; font-size: 0.95rem; margin: 0;">${examBank.length > 0 ? 'Select a question type or past paper question to master.' : 'Download complete mock exams below.'}</p>
         </div>
-        <button id="epz-back-btn" class="main-btn epz-btn" style="display: none; background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; padding: 10px 20px; border-radius: 10px; font-weight: 600;"><i class="fa-solid fa-arrow-left"></i> Change Question</button>
+        <button id="epz-back-btn" class="main-btn epz-btn" style="display: none; background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.9rem;"><i class="fa-solid fa-arrow-left"></i> Change Question</button>
       </div>
 
       <div id="epz-controls" ${examBank.length === 0 ? 'style="display:none;"' : ''}>
         <!-- Past Paper Trends & Overdue Radar Banner -->
-        <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1.5px solid #bfdbfe; border-radius: 14px; padding: 14px 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="width: 36px; height: 36px; border-radius: 50%; background: #2563eb; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.05rem;">
+        <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1.5px solid #bfdbfe; border-radius: 12px; padding: 10px 16px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: #2563eb; color: white; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">
               <i class="fa-solid fa-chart-line"></i>
             </div>
             <div>
-              <div style="font-weight: 800; color: #1e3a8a; font-size: 0.95rem;">2018–2026 Past Paper Matrix &amp; Overdue Topic Radar</div>
-              <div style="font-size: 0.82rem; color: #1d4ed8;">Explore real exam questions, mark schemes, examiner report warnings, and syllabus gaps.</div>
+              <div style="font-weight: 800; color: #1e3a8a; font-size: 0.9rem;">2018–2026 Past Paper Matrix &amp; Overdue Topic Radar</div>
+              <div style="font-size: 0.78rem; color: #1d4ed8;">Explore real exam questions, mark schemes, examiner report warnings, and syllabus gaps.</div>
             </div>
           </div>
           <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <button type="button" id="epz-btn-view-matrix" class="main-btn epz-btn" style="background: #1e40af; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+            <button type="button" id="epz-btn-view-matrix" class="main-btn epz-btn" style="background: #1e40af; color: white; border: none; padding: 7px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
               <i class="fa-solid fa-table-cells"></i> Open Question Matrix
             </button>
-            <button type="button" class="main-btn epz-btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_paper2_exam_guide');}" style="background: #0284c7; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Open Visual Exam Technique Guide">
+            <button type="button" class="main-btn epz-btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_paper2_exam_guide');}" style="background: #0284c7; color: white; border: none; padding: 7px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Open Visual Exam Technique Guide">
               <i class="fa-solid fa-chart-pie" style="color: #fde047;"></i> Question Technique Guide
             </button>
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 20px; background: #f8fafc; padding: 25px; border-radius: 16px; border: 1px solid #e2e8f0;">
-          <div style="display: flex; flex-direction: column; gap: 10px;">
-            <label style="font-weight: 700; color: #1e293b; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px;">Target Question Type</label>
-            <div id="epz-type-pills" style="display: flex; gap: 10px; flex-wrap: wrap;">
-              <button class="epz-pill active" data-type="all">📚 All Question Types</button>
-              ${uniqueTypes.map((t) => `<button class="epz-pill" data-type="${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</button>`).join('')}
+        <div style="display: flex; flex-direction: column; gap: 12px; background: #f8fafc; padding: 14px 18px; border-radius: 12px; border: 1px solid #e2e8f0;">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <label style="font-weight: 700; color: #1e293b; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">Question Type:</label>
+            <div id="epz-type-pills" style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <button class="epz-pill active" data-type="all" style="padding: 6px 13px; font-size: 0.86rem;">📚 All Question Types</button>
+              ${uniqueTypes.map((t) => `<button class="epz-pill" data-type="${t}" style="padding: 6px 13px; font-size: 0.86rem;">${t.charAt(0).toUpperCase() + t.slice(1)}</button>`).join('')}
             </div>
           </div>
-          
-          <div style="display: flex; flex-direction: column; gap: 10px;">
-            <label style="font-weight: 700; color: #1e293b; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px;">Or Select Specific Question</label>
-            <select id="epz-specific-filter" class="epz-select" style="width: 100%; padding: 14px; border-radius: 10px; border: 2px solid #cbd5e1; font-size: 1.15rem; background: #ffffff; color: #1e293b; cursor: pointer;">
+
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <select id="epz-specific-filter" class="epz-select" style="flex: 1 1 320px; min-width: 0; padding: 10px 14px; border-radius: 9px; border: 1.5px solid #cbd5e1; font-size: 0.96rem; background: #ffffff; color: #1e293b; cursor: pointer;">
               <option value="random">🎲 Random Question (From Filters Above)</option>
             </select>
+            <button id="epz-generate-btn" class="main-btn epz-btn" style="background: linear-gradient(135deg, #3b82f6, #4f46e5); color: white; padding: 10px 22px; font-size: 0.98rem; flex-shrink: 0; border: none; border-radius: 9px; font-weight: 700; white-space: nowrap;">
+              <i class="fa-solid fa-bolt"></i> Generate Question
+            </button>
           </div>
-          <button id="epz-generate-btn" class="main-btn epz-btn" style="background: linear-gradient(135deg, #3b82f6, #4f46e5); color: white; padding: 14px 28px; font-size: 1.15rem; flex-shrink: 0; border: none; border-radius: 10px; font-weight: 600;">
-            <i class="fa-solid fa-bolt"></i> Generate Question
-          </button>
         </div>
       </div>
 

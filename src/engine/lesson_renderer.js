@@ -22,6 +22,7 @@ import {
   getCanonicalGcsePaperCode,
   getRecommendedExamMins,
 } from './lesson_exam_practice_panel.js';
+import { getLessonMockQuestions } from './mock_exam_bank_data.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
 import { getLessonInfographicCount, getLessonInfographicsSync } from '../infographic_viewer.js';
@@ -83,60 +84,71 @@ export function getWbThinStripStylesHTML() {
         gap: 7px;
         background: #f8fafc;
       }
-      details.wb-question-strip {
+      details.wb-question-strip,
+      details.wb-thin-strip {
         border-radius: 8px;
         overflow: hidden;
         margin: 0;
         background: #ffffff;
         transition: box-shadow 0.15s ease, border-color 0.15s ease;
       }
-      details.wb-question-strip > summary {
+      details.wb-question-strip > summary,
+      details.wb-thin-strip > summary {
         list-style: none;
         cursor: pointer;
         user-select: none;
-        padding: 7px 12px;
+        padding: 9px 13px;
         min-height: 40px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 10px;
         outline: none;
         transition: background 0.15s ease;
       }
-      details.wb-question-strip > summary::-webkit-details-marker {
+      details.wb-question-strip > summary::-webkit-details-marker,
+      details.wb-thin-strip > summary::-webkit-details-marker {
         display: none;
       }
-      details.wb-question-strip.wb-strip-green {
+      details.wb-question-strip.wb-strip-green,
+      details.wb-thin-strip.wb-strip-green {
         border: 1.5px solid #a7f3d0;
         border-left: 4.5px solid #10b981;
       }
-      details.wb-question-strip.wb-strip-green > summary {
+      details.wb-question-strip.wb-strip-green > summary,
+      details.wb-thin-strip.wb-strip-green > summary {
         background: #f0fdf4;
       }
-      details.wb-question-strip.wb-strip-green > summary:hover {
+      details.wb-question-strip.wb-strip-green > summary:hover,
+      details.wb-thin-strip.wb-strip-green > summary:hover {
         background: #dcfce7;
       }
-      details.wb-question-strip.wb-strip-green[open] > summary {
+      details.wb-question-strip.wb-strip-green[open] > summary,
+      details.wb-thin-strip.wb-strip-green[open] > summary {
         background: #ecfdf5;
         border-bottom: 1px solid #bbf7d0;
       }
-      details.wb-question-strip.wb-strip-blue {
+      details.wb-question-strip.wb-strip-blue,
+      details.wb-thin-strip.wb-strip-blue {
         border: 1.5px solid #bfdbfe;
         border-left: 4.5px solid #2563eb;
       }
-      details.wb-question-strip.wb-strip-blue > summary {
+      details.wb-question-strip.wb-strip-blue > summary,
+      details.wb-thin-strip.wb-strip-blue > summary {
         background: #eff6ff;
       }
-      details.wb-question-strip.wb-strip-blue > summary:hover {
+      details.wb-question-strip.wb-strip-blue > summary:hover,
+      details.wb-thin-strip.wb-strip-blue > summary:hover {
         background: #dbeafe;
       }
-      details.wb-question-strip.wb-strip-blue[open] > summary {
+      details.wb-question-strip.wb-strip-blue[open] > summary,
+      details.wb-thin-strip.wb-strip-blue[open] > summary {
         background: #eff6ff;
         border-bottom: 1px solid #bfdbfe;
       }
       .wb-strip-left {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 8px;
         flex: 1 1 auto;
         min-width: 0;
@@ -151,6 +163,7 @@ export function getWbThinStripStylesHTML() {
         text-transform: uppercase;
         letter-spacing: 0.35px;
         padding: 2.5px 8px;
+        margin-top: 1px;
         border-radius: 9999px;
         white-space: nowrap;
       }
@@ -171,26 +184,39 @@ export function getWbThinStripStylesHTML() {
         font-size: 0.72rem;
         font-weight: 800;
         padding: 2.5px 8px;
+        margin-top: 1px;
         border-radius: 5px;
         letter-spacing: 0.3px;
         white-space: nowrap;
       }
-      .wb-stem-preview {
+      .wb-stem-preview,
+      .wb-strip-stem {
         flex: 1 1 auto;
         min-width: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: normal;
+        display: block;
+        overflow: visible;
         font-size: 0.89rem;
         font-weight: 600;
         color: #0f172a;
-        line-height: 1.3;
+        line-height: 1.4;
+      }
+      details.wb-question-strip[open] .wb-stem-preview,
+      details.wb-question-strip[open] .wb-strip-stem,
+      .wb-thin-strip[open] .wb-stem-preview,
+      .wb-thin-strip[open] .wb-strip-stem {
+        display: block;
+        overflow: visible;
+        font-size: 0.96rem;
+        font-weight: 700;
+        line-height: 1.44;
       }
       .wb-strip-right {
         flex-shrink: 0;
         display: flex;
         align-items: center;
         gap: 8px;
+        padding-top: 1px;
       }
       .wb-mins-pill {
         display: inline-flex;
@@ -218,29 +244,405 @@ export function getWbThinStripStylesHTML() {
         font-size: 0.72rem;
         transition: transform 0.2s ease;
       }
-      details.wb-question-strip .wb-lbl-open {
+      details.wb-question-strip .wb-lbl-open,
+      details.wb-thin-strip .wb-lbl-open {
         display: none;
       }
-      details.wb-question-strip[open] .wb-lbl-closed {
+      details.wb-question-strip[open] .wb-lbl-closed,
+      details.wb-thin-strip[open] .wb-lbl-closed {
         display: none;
       }
-      details.wb-question-strip[open] .wb-lbl-open {
+      details.wb-question-strip[open] .wb-lbl-open,
+      details.wb-thin-strip[open] .wb-lbl-open {
         display: inline;
       }
-      details.wb-question-strip[open] .wb-strip-caret {
+      details.wb-question-strip[open] .wb-strip-caret,
+      details.wb-thin-strip[open] .wb-strip-caret {
         transform: rotate(180deg);
       }
       .wb-strip-body {
-        padding: 16px 18px;
+        padding: 12px 16px 14px 16px;
         background: #ffffff;
       }
-      @media (max-width: 680px) {
-        .wb-stem-preview {
-          white-space: normal;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
+      .exam-stimulus-single {
+        margin: 4px 0 12px 0;
+      }
+      .wb-strip-body .p3-pane-cell {
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        border: 1.5px solid #94a3b8;
+        border-radius: 8px;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-sizing: border-box !important;
+        min-width: 0 !important;
+      }
+      .wb-strip-body .p3-adjoined-pair {
+        border: 1.5px solid #94a3b8 !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        margin: 4px 0 12px 0 !important;
+        background: #ffffff !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+      }
+      .wb-strip-body .p3-adjoined-pair > .p3-pane-cell {
+        border: none !important;
+        border-radius: 0 !important;
+      }
+      @media (max-width: 767px) {
+        .wb-strip-body .p3-adjoined-pair > .p3-pane-cell + .p3-pane-cell {
+          border-top: 1px solid #cbd5e1 !important;
         }
+      }
+      @media (min-width: 768px) {
+        .wb-strip-body .p3-adjoined-pair {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+        .wb-strip-body .p3-adjoined-pair > .p3-pane-cell:nth-child(odd):not(:last-child) {
+          border-right: 1px solid #cbd5e1 !important;
+        }
+        .wb-strip-body .p3-adjoined-pair > .p3-pane-cell:nth-child(n + 3) {
+          border-top: 1px solid #cbd5e1 !important;
+        }
+      }
+      .wb-strip-body .p3-quad-matrix {
+        border: 1.5px solid #94a3b8 !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        margin: 4px 0 12px 0 !important;
+        background: #ffffff !important;
+      }
+      .wb-strip-body .p3-quad-top-row,
+      .wb-strip-body .p3-quad-bottom-row {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .wb-strip-body .p3-quad-matrix .p3-pane-cell {
+        border: none !important;
+        border-radius: 0 !important;
+      }
+      @media (max-width: 767px) {
+        .wb-strip-body .p3-quad-top-row > .p3-pane-cell + .p3-pane-cell,
+        .wb-strip-body .p3-quad-bottom-row > .p3-pane-cell + .p3-pane-cell {
+          border-top: 1px solid #cbd5e1 !important;
+        }
+      }
+      @media (min-width: 768px) {
+        .wb-strip-body .p3-quad-top-row,
+        .wb-strip-body .p3-quad-bottom-row {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+        .wb-strip-body .p3-quad-top-row > .p3-pane-cell:first-child:not(:last-child),
+        .wb-strip-body .p3-quad-bottom-row > .p3-pane-cell:first-child:not(:last-child) {
+          border-right: 1px solid #cbd5e1 !important;
+        }
+      }
+      .wb-strip-body .p3-quad-seam {
+        border-top: 1.5px solid #cbd5e1 !important;
+        border-bottom: 1px solid #cbd5e1 !important;
+        background: #eff6ff !important;
+        padding: 3px 10px !important;
+        min-height: 24px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        font-size: 0.74rem !important;
+        line-height: 1.25 !important;
+        color: #1e3a8a !important;
+      }
+      .wb-strip-body .p3-quad-seam-text {
+        font-weight: 600;
+        min-width: 0;
+        flex: 1 1 auto;
+      }
+      .wb-strip-body .p3-quad-seam-actions {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        flex-shrink: 0 !important;
+      }
+      .wb-strip-body .p3-quad-matrix.p3-quad-bottom-hidden .p3-quad-seam {
+        border-bottom: none !important;
+      }
+      .wb-strip-body .p3-quad-matrix.p3-quad-bottom-hidden .p3-quad-bottom-row {
+        display: none !important;
+      }
+      .wb-strip-body .p3-seam-btn {
+        background: #ffffff !important;
+        color: #1e3a8a !important;
+        border: 1px solid #93c5fd !important;
+        border-radius: 4px !important;
+        padding: 1.5px 7px !important;
+        font-size: 0.7rem !important;
+        font-weight: 700 !important;
+        line-height: 1.25 !important;
+        cursor: pointer !important;
+        white-space: nowrap !important;
+        transition: background 0.15s ease, border-color 0.15s ease !important;
+      }
+      .wb-strip-body .p3-seam-btn:hover {
+        background: #dbeafe !important;
+        border-color: #3b82f6 !important;
+      }
+      .wb-strip-body .p3-seam-btn.is-active {
+        background: #1e3a8a !important;
+        color: #ffffff !important;
+        border-color: #1e3a8a !important;
+      }
+      .wb-strip-body .p3-pane-header {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: flex-start !important;
+        justify-content: space-between !important;
+        padding: 5px 8px !important;
+        margin: 0 !important;
+        gap: 6px !important;
+        min-height: 26px !important;
+        box-sizing: border-box !important;
+      }
+      .wb-strip-body .p3-pane-interp > .p3-pane-header {
+        background: #fff7ed !important;
+        border-bottom: 1px solid #fed7aa !important;
+      }
+      .wb-strip-body .p3-pane-source > .p3-pane-header {
+        background: #f1f5f9 !important;
+        border-bottom: 1px solid #e2e8f0 !important;
+      }
+      .wb-strip-body .p3-pane-header-left {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+        min-width: 0 !important;
+        flex: 1 1 auto !important;
+        overflow: hidden !important;
+      }
+      .wb-strip-body .p3-pane-badge {
+        color: #ffffff !important;
+        padding: 2px 6px !important;
+        margin-top: 1px !important;
+        border-radius: 4px !important;
+        font-size: 0.64rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.35px !important;
+        line-height: 1.15 !important;
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
+        text-transform: uppercase !important;
+      }
+      .wb-strip-body .p3-pane-badge-interp {
+        background: #9a3412 !important;
+      }
+      .wb-strip-body .p3-pane-badge-source {
+        background: #1e40af !important;
+      }
+      .wb-strip-body .p3-pane-prov,
+      .p3-pane-prov.archival-source-body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+        font-size: 0.72rem !important;
+        font-weight: 600 !important;
+        line-height: 1.24 !important;
+        color: #1e293b !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+      }
+      .wb-strip-body .p3-pane-header-right {
+        flex-shrink: 0 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+      }
+      .flat-inline-audio {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 4px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        flex-shrink: 0 !important;
+      }
+      .wb-strip-body .flat-inline-audio .read-aloud-btn,
+      .wb-strip-body .flat-inline-audio .read-aloud-stop-btn,
+      .flat-inline-audio .read-aloud-btn,
+      .flat-inline-audio .read-aloud-stop-btn {
+        height: 22px !important;
+        min-height: 22px !important;
+        padding: 2px 7px !important;
+        font-size: 0.71rem !important;
+        line-height: 1 !important;
+        border-radius: 4px !important;
+        margin: 0 !important;
+      }
+      .wb-strip-body .p3-pane-body {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+        flex: 1 1 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 0 !important;
+      }
+      .wb-strip-body .p3-pane-prose {
+        padding: 8px 11px !important;
+        margin: 0 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        font-family: 'Georgia', serif !important;
+        font-style: italic !important;
+        font-size: 0.855rem !important;
+        line-height: 1.43 !important;
+        color: #1e293b !important;
+        max-height: none !important;
+        overflow-y: visible !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        white-space: pre-line;
+      }
+      .wb-strip-body .p3-quad-matrix .p3-pane-prose {
+        max-height: 215px !important;
+        overflow-y: auto !important;
+      }
+      .wb-strip-body .p3-pane-interp-prose {
+        white-space: normal;
+      }
+      .wb-strip-body .p3-pane-body.p3-pane-media-split {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+        padding: 8px 11px !important;
+        max-height: none !important;
+        overflow-y: visible !important;
+        box-sizing: border-box !important;
+      }
+      .wb-strip-body .p3-quad-matrix .p3-pane-body.p3-pane-media-split {
+        max-height: 215px !important;
+        overflow-y: auto !important;
+      }
+      .wb-strip-body .p3-pane-thumb-side {
+        width: 110px !important;
+        flex-shrink: 0 !important;
+        text-align: center !important;
+        cursor: zoom-in !important;
+      }
+      .wb-strip-body .p3-pane-thumb-side img.archival-image {
+        width: 110px !important;
+        max-width: 110px !important;
+        max-height: 115px !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 4px !important;
+        background: #f8fafc !important;
+        cursor: zoom-in !important;
+      }
+      .wb-strip-body .p3-pane-media-split .p3-pane-prose {
+        padding: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+        flex: 1 1 auto !important;
+        width: auto !important;
+        min-width: 0 !important;
+      }
+      .wb-strip-body .p3-pane-body.p3-pane-img-only {
+        padding: 6px 10px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        max-height: none !important;
+        overflow: visible !important;
+        cursor: zoom-in !important;
+        box-sizing: border-box !important;
+        flex: 1 1 auto !important;
+      }
+      .wb-strip-body .p3-quad-matrix .p3-pane-body.p3-pane-img-only {
+        max-height: 215px !important;
+        overflow: hidden !important;
+      }
+      .wb-strip-body .p3-pane-body.p3-pane-img-only img.archival-image {
+        max-height: 190px !important;
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+        border-radius: 4px !important;
+        cursor: zoom-in !important;
+      }
+      .wb-strip-body .p3-quad-matrix .p3-pane-body.p3-pane-img-only img.archival-image {
+        max-height: 135px !important;
+      }
+      .wb-strip-body .p3-pane-body.p3-pane-img-only.has-brief-caption img.archival-image {
+        max-height: 114px !important;
+      }
+      .wb-strip-body .p3-zoom-hint {
+        margin-top: 3px !important;
+        font-size: 0.68rem !important;
+        font-weight: 600 !important;
+        line-height: 1.2 !important;
+        color: #475569 !important;
+      }
+      .wb-strip-body .p3-pane-thumb-side:hover .p3-zoom-hint,
+      .wb-strip-body .p3-pane-body.p3-pane-img-only:hover .p3-zoom-hint {
+        color: #1d4ed8 !important;
+      }
+      .wb-strip-body .p3-img-caption-compact {
+        margin-top: 2px !important;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+        font-style: normal !important;
+        font-size: 0.72rem !important;
+        line-height: 1.25 !important;
+        color: #334155 !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        padding: 0 !important;
+        max-height: none !important;
+      }
+      .wb-interactive-chip {
+        cursor: pointer !important;
+        user-select: none !important;
+        transition: background-color 0.14s ease, border-color 0.14s ease, color 0.14s ease, opacity 0.14s ease !important;
+        display: inline-block !important;
+      }
+      .wb-interactive-chip:hover {
+        filter: brightness(0.96);
+      }
+      .wb-interactive-chip.is-struck {
+        text-decoration-line: line-through !important;
+        text-decoration-style: solid !important;
+        text-decoration-color: #334155 !important;
+        text-decoration-thickness: 1.5px !important;
+        opacity: 0.68 !important;
+        background: #f1f5f9 !important;
+        color: #64748b !important;
+        border-color: #cbd5e1 !important;
+      }
+      .laptop-only-response-box {
+        display: none;
+      }
+      .laptop-mode-active .laptop-only-response-box {
+        display: block;
+      }
+      @media (max-width: 680px) {
         .wb-mins-pill {
           display: none;
         }
@@ -252,15 +654,206 @@ export function getWbThinStripStylesHTML() {
 export function cleanStemForStripSummary(rawText) {
   if (!rawText) return 'Click to open question';
   let s = String(rawText)
+    .replace(/^Describe two features of[^\n:]+:\s*\n?(?=\s*\(a\))/i, '')
+    .replace(/\s*You may use the following(?:\s+in\s+your\s+answer)?\s*:[\s\S]*$/i, '')
+    .replace(/\s*You must also use information of your own\.?[\s\S]*$/i, '')
     .replace(/<[^>]+>/g, ' ')
     .replace(/\*\*/g, '')
+    .replace(
+      /\s*(?:\[\s*\d+\s*(?:\+\s*\d+\s*)?(?:marks?|m|spag)[^\]]*\]|\(\s*\d+\s*(?:\+\s*\d+\s*)?(?:marks?|spag)[^)]*\))\.?/gi,
+      '',
+    )
+    .replace(/\s*\[\s*\d+\s*(?:\+|marks?|spag)[^\]]*$/i, '')
+    .replace(/\s*\((?:P|Para\s*)\d+\)\s*\.?$/i, '')
     .replace(/\s+/g, ' ')
     .trim();
   s = s
-    .replace(/^(?:Enquiry:|Task\s*\d+[\.:\s-]*|Question\s*\d+(?:\s*\([a-d]\))?[\.:\s-]*|Q\d+(?:\s*\([a-d]\))?[\.:\s-]*|\d+\s*\([a-d]\)[\.:\s-]*|\d+[\.:\s-]+)/i, '')
-    .replace(/(?:\s*[\.\,]?\s*(?:\[\s*\d+\s*marks?(?:\s*(?:•|\+)\s*[^\]]+)?\s*\]|\(\s*\d+\s*marks?\s*\)))+\s*$/gi, '')
+    .replace(
+      /^(?:Enquiry:|Task\s*\d+[\.:\s-]*|Question\s*\d+(?:\s*\([a-d]\))?[\.:\s-]*|Q\d+(?:\s*\([a-d]\))?[\.:\s-]*|\d+\s*\([a-d]\)[\.:\s-]*|\d+\s*[\.\):]\s+)/i,
+      '',
+    )
     .trim();
+  if (s && !/[.?!:;]['"”’)\]]*$/.test(s)) {
+    s += '.';
+  }
   return s || String(rawText).replace(/<[^>]+>/g, ' ').trim();
+}
+
+export function extractEmbeddedStimulusBullets(rawText) {
+  if (!rawText) return null;
+  const match = String(rawText).match(
+    /You may use the following(?:\s+in\s+your\s+answer)?\s*:\s*([\s\S]*?)(?:You must also use information of your own\.?|$)/i,
+  );
+  if (!match || !match[1]) return null;
+  const items = match[1]
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/li>/gi, '\n')
+    .replace(/<[^>]+>/g, ' ')
+    .split(/(?:[•\u2022]|\r?\n\s*[-*•\u2022]?)+/)
+    .map((x) => x.replace(/\s+/g, ' ').replace(/^[\s\-–—:.,]+|[\s.]+$/g, '').trim())
+    .filter((x) => x.length > 1 && !/^you must also use/i.test(x));
+  return items.length > 0 ? items : null;
+}
+
+function decodeBasicHtmlEntities(str) {
+  return String(str || '')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&ldquo;/g, '“')
+    .replace(/&rdquo;/g, '”')
+    .replace(/&lsquo;/g, '‘')
+    .replace(/&rsquo;/g, '’')
+    .replace(/&ndash;/g, '–')
+    .replace(/&mdash;/g, '—')
+    .replace(/&bull;/g, '•')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&');
+}
+
+export function parseMockSourceExtractToStimuli(rawExtract) {
+  if (!rawExtract || !String(rawExtract).trim()) return [];
+  const cleaned = String(rawExtract)
+    .replace(/https?:\/\/localhost:\d+\/images\//gi, '/images/')
+    .trim();
+
+  // Split multi-item extracts across <hr>, dashed-border dividers, or sibling Source/Interpretation divs
+  const rawSegments = cleaned
+    .split(
+      /<hr\b[^>]*>|(?=<div[^>]*border-top:\s*1px\s+dashed[^>]*>)|(?<=<\/div>)\s*(?=<div[^>]*>\s*<div[^>]*>\s*(?:<strong>)?\s*(?:Source\s+[A-E]|Interpretation\s+[12])\b)/i,
+    )
+    .map((seg) => seg.trim())
+    .filter(Boolean);
+
+  return rawSegments
+    .map((seg, idx) => {
+      let work = seg;
+      let image = '';
+      let imageAlt = '';
+      const imgMatch = work.match(/<img\b[^>]*>/i);
+      if (imgMatch) {
+        const srcM = imgMatch[0].match(/\bsrc\s*=\s*["']([^"']+)["']/i);
+        const altM = imgMatch[0].match(/\balt\s*=\s*["']([^"']+)["']/i);
+        if (srcM) image = srcM[1].trim();
+        if (altM) imageAlt = decodeBasicHtmlEntities(altM[1].trim());
+        work = work.replace(/<img\b[^>]*>/gi, '\n');
+      }
+
+      // Extract trailing small-print journal/archive citation div if present (e.g. Medicine KT5)
+      let trailingCitation = '';
+      const smallCitMatch = work.match(
+        /<div[^>]*font-size:\s*0\.8rem[^>]*>([\s\S]*?)<\/div>\s*(?:<\/div>\s*)?$/i,
+      );
+      if (smallCitMatch) {
+        trailingCitation = decodeBasicHtmlEntities(
+          smallCitMatch[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(),
+        );
+        work = work.replace(smallCitMatch[0], '</div>');
+      }
+
+      const plainLines = decodeBasicHtmlEntities(
+        work
+          .replace(/<br\s*\/?>/gi, '\n')
+          .replace(/<\/(?:div|p|blockquote|li|h[1-6])>/gi, '\n')
+          .replace(/<(?:div|p|blockquote|li|h[1-6])\b[^>]*>/gi, '\n')
+          .replace(/<[^>]+>/g, '')
+          .replace(/[ \t]+/g, ' '),
+      )
+        .split(/\n+/)
+        .map((l) => l.trim())
+        .filter(Boolean);
+
+      if (plainLines.length === 0 && !image) return null;
+
+      // Drop redundant bare first line like "Source A:" or "Interpretation 1" when more lines follow
+      let headerLine = plainLines[0] || '';
+      let restLines = plainLines.slice(1);
+
+      const bareLabelRx = /^(?:Source\s+([A-E0-9]+)|Interpretation\s+([0-9]+))\s*[:.-]?\s*$/i;
+      let explicitLetter = '';
+      let explicitInterp = '';
+      const bareM = headerLine.match(bareLabelRx);
+      if (bareM) {
+        if (bareM[1]) explicitLetter = bareM[1].toUpperCase();
+        if (bareM[2]) explicitInterp = bareM[2];
+        if (restLines.length > 0) {
+          headerLine = restLines[0];
+          restLines = restLines.slice(1);
+        } else {
+          headerLine = '';
+        }
+      }
+
+      // Check prefix on headerLine (e.g. "Source B: From a confidential memo..." or "Interpretation 1: From...")
+      const prefixM = headerLine.match(
+        /^(?:Source\s+([A-E0-9]+)|Interpretation\s+([0-9]+))(?:\s*\(([^)]+)\))?\s*[:.-]?\s*(.*)$/i,
+      );
+      if (prefixM) {
+        if (prefixM[1] && !explicitLetter) explicitLetter = prefixM[1].toUpperCase();
+        if (prefixM[2] && !explicitInterp) explicitInterp = prefixM[2];
+        const parenNote = prefixM[3] ? `${prefixM[3]}: ` : '';
+        headerLine = `${parenNote}${prefixM[4] || ''}`.trim();
+      }
+
+      const isInterp = Boolean(explicitInterp);
+      const interpNum = explicitInterp || `${idx + 1}`;
+      const srcLetter = explicitLetter || String.fromCharCode(65 + idx);
+
+      let provenance = '';
+      let content = '';
+      let caption = '';
+
+      if (restLines.length > 0) {
+        provenance = headerLine;
+        content = restLines.join('\n\n');
+      } else if (image) {
+        // Single descriptive line accompanying an image
+        if (headerLine.length > 140 || /["“”]/.test(headerLine)) {
+          const firstDot = headerLine.indexOf('. ');
+          if (firstDot > 15 && firstDot < 130) {
+            provenance = headerLine.slice(0, firstDot + 1).trim();
+            content = headerLine.slice(firstDot + 2).trim();
+          } else {
+            provenance = imageAlt || `Archival Visual Source`;
+            caption = headerLine;
+          }
+        } else {
+          provenance = headerLine || imageAlt || 'Archival Visual Source';
+          caption = headerLine;
+        }
+      } else {
+        // Only 1 text line and no image (e.g. Weimar adapted Q3a Source C or Q3d summary)
+        provenance = isInterp ? 'Historical Interpretation' : 'Contemporary Primary Source';
+        content = headerLine;
+      }
+
+      if (trailingCitation) {
+        provenance = provenance ? `${provenance} (${trailingCitation})` : trailingCitation;
+      }
+
+      const labelPrefix = isInterp ? `Interpretation ${interpNum}` : `Source ${srcLetter}`;
+      return {
+        title: provenance ? `${labelPrefix}: ${provenance}` : labelPrefix,
+        provenance,
+        content,
+        image,
+        image_alt: imageAlt || provenance || labelPrefix,
+        caption,
+        isInterp,
+        interpNum,
+        letter: srcLetter,
+      };
+    })
+    .filter(Boolean);
+}
+
+if (typeof window !== 'undefined') {
+  window.toggleP3QuadSources = function (btn) {
+    const matrix = btn ? btn.closest('.p3-quad-matrix') : null;
+    if (!matrix) return;
+    const hidden = matrix.classList.toggle('p3-quad-bottom-hidden');
+    btn.textContent = hidden ? 'Show Sources B & C ▾' : 'Hide Sources B & C ▴';
+    btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+  };
 }
 
 export function shortenWorkbookOriginLabel(label, inWorkbook = true) {
@@ -1125,13 +1718,13 @@ function renderDoNowHeaderWithTimerHTML({
   includeTimer = true,
 }) {
   return `
-    <div class="donow-streamlined-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 10px;">
+    <div class="donow-streamlined-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; padding-bottom: 6px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 8px;">
       <!-- Title & Pedagogical Badge -->
-      <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-        <span style="font-weight: 800; font-size: 0.94rem; color: #0f172a; display: flex; align-items: center; gap: 7px;">
+      <div style="display: flex; align-items: center; gap: 8px; min-width: 0; flex-wrap: wrap;">
+        <span style="font-weight: 800; font-size: 0.92rem; color: #0f172a; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;">
           <i class="${icon}" style="color: #0284c7;"></i> ${title}
         </span>
-        ${badgeText ? `<span style="font-size: 0.68rem; font-weight: 700; color: #475569; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 1.5px 7px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.4px;">${badgeText}</span>` : ''}
+        ${badgeText ? `<span style="font-size: 0.68rem; font-weight: 700; color: #475569; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 1.5px 7px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.4px;">${badgeText}</span>` : '<!--DONOW_SUBTITLE_SLOT-->'}
       </div>
 
       <!-- Discreet Inline Stopwatch Timer -->
@@ -3540,7 +4133,7 @@ export function renderLessonLaunchpad({
   `;
 }
 
-export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
+export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId, lessonObj = null) {
   const taskId = task.id || `task-su-${lessonIndex}-${tIdx}`;
   const qNumPrefix = task.qNum ? `Q${task.qNum}. ` : 'Task 4. ';
   const title = task.title || 'Dual-Source Utility & Provenance Investigation';
@@ -3653,62 +4246,87 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
         ${renderSourceCard(sourceB, 'B', '#cbd5e1', '#ffffff', '#334155')}
       </div>
 
-      <!-- 3-Step Utility Planning Matrix -->
-      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px 14px; margin-bottom: 16px;">
-        <div style="font-weight: 700; font-size: 0.85rem; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-table-columns"></i> 3-Step Utility Planning Matrix: Evidence &bull; Provenance &bull; Verdict
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
-          ${matrix
-      .map(
-        (m, mIdx) => `
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 3px solid ${mIdx === 0 ? '#3b82f6' : mIdx === 1 ? '#8b5cf6' : '#10b981'}; border-radius: 6px; padding: 10px;">
-              <strong style="display: block; font-size: 0.82rem; color: #1e293b; margin-bottom: 4px; text-transform: uppercase;">
-                ${m.col || m.title || `Phase ${mIdx + 1}`}
-              </strong>
-              <div style="font-size: 0.82rem; color: #475569; line-height: 1.4;">
-                ${m.text || m.prompt || ''}
-              </div>
+      ${(() => {
+        const rawWords =
+          (Array.isArray(task?.scaffolding?.word_bank) && task.scaffolding.word_bank.length > 0
+            ? task.scaffolding.word_bank
+            : null) ||
+          (Array.isArray(task?.word_bank) && task.word_bank.length > 0 ? task.word_bank : null) ||
+          (Array.isArray(lessonObj?.vocab)
+            ? lessonObj.vocab.map((v) => (typeof v === 'object' ? v.term : v)).filter(Boolean)
+            : []);
+        const suUid = String(taskId).replace(/[^a-zA-Z0-9_-]/g, '_');
+        const wbBtnHtml =
+          rawWords.length > 0
+            ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="su-wb-${suUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
+            : '';
+        const scafBtnHtml = `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="su-scaf-${suUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Sentence Starters &amp; Matrix <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`;
+        const wbDrawerHtml =
+          rawWords.length > 0
+            ? `<div id="su-wb-${suUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
+                  <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">Core Vocabulary Bank:</span>
+                  <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                  ${rawWords.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                </div>
+              </div>`
+            : '';
+        const scafDrawerHtml = `
+          <div id="su-scaf-${suUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 12px 14px; margin-top: 8px;">
+            <div style="font-weight: 700; font-size: 0.82rem; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-table-columns"></i> 3-Step Utility Planning Matrix: Evidence &bull; Provenance &bull; Verdict
             </div>
-          `,
-      )
-      .join('')}
-        </div>
-      </div>
-
-      <!-- Analytical Connectives (Click-to-Insert) -->
-      <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center;">
-        <span style="font-size: 0.78rem; font-weight: 700; color: #1e40af; text-transform: uppercase;">Analytical Connectives (Click to Insert):</span>
-        ${connectives
-      .map(
-        (c) => `
-          <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
-        `,
-      )
-      .join('')}
-      </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-bottom: 12px;">
+              ${matrix
+                .map(
+                  (m, mIdx) => `
+                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 3px solid ${mIdx === 0 ? '#3b82f6' : mIdx === 1 ? '#8b5cf6' : '#10b981'}; border-radius: 6px; padding: 10px;">
+                  <strong style="display: block; font-size: 0.82rem; color: #1e293b; margin-bottom: 4px; text-transform: uppercase;">
+                    ${m.col || m.title || `Phase ${mIdx + 1}`}
+                  </strong>
+                  <div style="font-size: 0.82rem; color: #475569; line-height: 1.4;">
+                    ${m.text || m.prompt || ''}
+                  </div>
+                </div>
+              `,
+                )
+                .join('')}
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+              <span style="font-size: 0.78rem; font-weight: 700; color: #1e40af; text-transform: uppercase;">Analytical Connectives (Click to Insert):</span>
+              ${connectives
+                .map(
+                  (c) => `
+                <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
+              `,
+                )
+                .join('')}
+            </div>
+          </div>`;
+        const modelBtnHtml = modelAnswer
+          ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="su-model-${suUid}" title="Reveal Level 4 Target Exemplar Model Answer" style="margin-left: auto; background: #f0fdf4; color: #166534; border: 1px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> Reveal Model Answer</button>`
+          : '';
+        const modelDrawerHtml = modelAnswer
+          ? `<div id="su-model-${suUid}" class="scaffold-box model-box" style="display: none; margin-top: 8px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #2563eb; border-radius: 6px; font-size: 0.92rem; color: #1e293b; line-height: 1.6; border: 1px solid #bfdbfe;">${modelAnswer}</div>`
+          : '';
+        return `<div class="no-print" style="margin-bottom: 10px;"><div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">${wbBtnHtml}${scafBtnHtml}${modelBtnHtml}</div>${wbDrawerHtml}${scafDrawerHtml}${modelDrawerHtml}</div>`;
+      })()}
 
       <!-- Pupil Writing Workspace Area -->
-      <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 110px; padding: 12px; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate the utility of both sources: analyse specific content, evaluate author provenance and purpose, and reach a reasoned comparative judgement..."></textarea>
-
-      ${modelAnswer
-      ? `
-        <details class="model-paragraph-reveal" style="margin-top: 12px; border: 1px dashed #2563eb; border-radius: 6px; padding: 8px 12px; background: #eff6ff;">
-          <summary style="cursor: pointer; color: #1e40af; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-award"></i> [ Show Level 4 Target Exemplar Model Answer ]
-          </summary>
-          <div class="scaffold-box model-box" style="margin-top: 10px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #2563eb; border-radius: 4px; font-size: 0.92rem; color: #1e293b; line-height: 1.6; border: 1px solid #bfdbfe;">
-            ${modelAnswer}
-          </div>
-        </details>
-      `
-      : ''
-    }
+      <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 92px; padding: 10px 12px; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate the utility of both sources: analyse specific content, evaluate author provenance and purpose, and reach a reasoned comparative judgement..."></textarea>
     </div>
   `;
 }
 
-export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx, unitId) {
+export function renderHistoricalInterpretationsTaskHTML(
+  task,
+  lessonIndex,
+  tIdx,
+  unitId,
+  lessonObj = null,
+) {
   const taskId = task.id || `task-hi-${lessonIndex}-${tIdx}`;
   const qNumPrefix = task.qNum ? `Q${task.qNum}. ` : 'Task 4. ';
   const title = task.title || 'Historiographical Debate & Academic Interpretations';
@@ -3939,57 +4557,76 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
         </div>
       </div>
 
-      <!-- 3-Step Historiographical Planning Matrix -->
-      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px 14px; margin-bottom: 16px;">
-        <div style="font-weight: 700; font-size: 0.85rem; color: #6d28d9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-table-columns"></i> 3-Step Historiographical Matrix: Thesis &bull; Counter-Thesis &bull; Independent Synthesis
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
-          ${matrix
-      .map(
-        (m, mIdx) => `
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 3px solid ${mIdx === 0 ? '#8b5cf6' : mIdx === 1 ? '#ec4899' : '#059669'}; border-radius: 6px; padding: 10px;">
-              <strong style="display: block; font-size: 0.82rem; color: #1e293b; margin-bottom: 4px; text-transform: uppercase;">
-                ${m.col || m.title || `Step ${mIdx + 1}`}
-              </strong>
-              <div style="font-size: 0.82rem; color: #475569; line-height: 1.4;">
-                ${m.text || m.prompt || ''}
-              </div>
+      ${(() => {
+        const rawWords =
+          (Array.isArray(task?.scaffolding?.word_bank) && task.scaffolding.word_bank.length > 0
+            ? task.scaffolding.word_bank
+            : null) ||
+          (Array.isArray(task?.word_bank) && task.word_bank.length > 0 ? task.word_bank : null) ||
+          (Array.isArray(lessonObj?.vocab)
+            ? lessonObj.vocab.map((v) => (typeof v === 'object' ? v.term : v)).filter(Boolean)
+            : []);
+        const hiUid = String(taskId).replace(/[^a-zA-Z0-9_-]/g, '_');
+        const wbBtnHtml =
+          rawWords.length > 0
+            ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="hi-wb-${hiUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
+            : '';
+        const scafBtnHtml = `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="hi-scaf-${hiUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Sentence Starters &amp; Matrix <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`;
+        const wbDrawerHtml =
+          rawWords.length > 0
+            ? `<div id="hi-wb-${hiUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
+                  <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">Core Vocabulary Bank:</span>
+                  <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                  ${rawWords.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                </div>
+              </div>`
+            : '';
+        const scafDrawerHtml = `
+          <div id="hi-scaf-${hiUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 12px 14px; margin-top: 8px;">
+            <div style="font-weight: 700; font-size: 0.82rem; color: #6d28d9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-table-columns"></i> 3-Step Historiographical Matrix: Thesis &bull; Counter-Thesis &bull; Independent Synthesis
             </div>
-          `,
-      )
-      .join('')}
-        </div>
-      </div>
-
-      <!-- Analytical Connectives (Click-to-Insert) -->
-      <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center;">
-        <span style="font-size: 0.78rem; font-weight: 700; color: #6d28d9; text-transform: uppercase;">Historiographical Connectives (Click to Insert):</span>
-        ${connectives
-      .map(
-        (c) => `
-          <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #ddd6fe; color: #6d28d9; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
-        `,
-      )
-      .join('')}
-      </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-bottom: 12px;">
+              ${matrix
+                .map(
+                  (m, mIdx) => `
+                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 3px solid ${mIdx === 0 ? '#8b5cf6' : mIdx === 1 ? '#ec4899' : '#059669'}; border-radius: 6px; padding: 10px;">
+                  <strong style="display: block; font-size: 0.82rem; color: #1e293b; margin-bottom: 4px; text-transform: uppercase;">
+                    ${m.col || m.title || `Step ${mIdx + 1}`}
+                  </strong>
+                  <div style="font-size: 0.82rem; color: #475569; line-height: 1.4;">
+                    ${m.text || m.prompt || ''}
+                  </div>
+                </div>
+              `,
+                )
+                .join('')}
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+              <span style="font-size: 0.78rem; font-weight: 700; color: #6d28d9; text-transform: uppercase;">Historiographical Connectives (Click to Insert):</span>
+              ${connectives
+                .map(
+                  (c) => `
+                <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #ddd6fe; color: #6d28d9; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
+              `,
+                )
+                .join('')}
+            </div>
+          </div>`;
+        const modelBtnHtml = modelAnswer
+          ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="hi-model-${hiUid}" title="Reveal Level 4 Target Exemplar Model Answer" style="margin-left: auto; background: #f0fdf4; color: #166534; border: 1px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> Reveal Model Answer</button>`
+          : '';
+        const modelDrawerHtml = modelAnswer
+          ? `<div id="hi-model-${hiUid}" class="scaffold-box model-box" style="display: none; margin-top: 8px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #7c3aed; border-radius: 6px; font-size: 0.92rem; color: #1e293b; line-height: 1.6; border: 1px solid #ddd6fe;">${modelAnswer}</div>`
+          : '';
+        return `<div class="no-print" style="margin-bottom: 10px;"><div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">${wbBtnHtml}${scafBtnHtml}${modelBtnHtml}</div>${wbDrawerHtml}${scafDrawerHtml}${modelDrawerHtml}</div>`;
+      })()}
 
       <!-- Pupil Writing Workspace Area -->
-      <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 110px; padding: 12px; border: 1.5px solid #ddd6fe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate both interpretations: analyse the arguments of Interpretation 1, contrast with Interpretation 2, and weigh against specific historical knowledge to reach your sustained verdict..."></textarea>
-
-      ${modelAnswer
-      ? `
-        <details class="model-paragraph-reveal" style="margin-top: 12px; border: 1px dashed #7c3aed; border-radius: 6px; padding: 8px 12px; background: #faf5ff;">
-          <summary style="cursor: pointer; color: #6d28d9; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-award"></i> [ Show Level 4 Target Exemplar Model Answer ]
-          </summary>
-          <div class="scaffold-box model-box" style="margin-top: 10px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #7c3aed; border-radius: 4px; font-size: 0.92rem; color: #1e293b; line-height: 1.6; border: 1px solid #ddd6fe;">
-            ${modelAnswer}
-          </div>
-        </details>
-      `
-      : ''
-    }
+      <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 92px; padding: 10px 12px; border: 1.5px solid #ddd6fe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate both interpretations: analyse the arguments of Interpretation 1, contrast with Interpretation 2, and weigh against specific historical knowledge to reach your sustained verdict..."></textarea>
     </div>
   `;
 }
@@ -4587,6 +5224,12 @@ export function renderLesson(lesson) {
   if (contentArea) contentArea.style.paddingTop = '0'; // Fix gap
 
   let html = `<div class="lesson-content">`;
+  let wbStylesEmitted = false;
+  const emitWbStylesOnce = () => {
+    if (wbStylesEmitted) return '';
+    wbStylesEmitted = true;
+    return getWbThinStripStylesHTML();
+  };
 
   let headerEnquiry = lesson.enquiry || lesson.enquiry_question || lesson.inquiry_question;
   let targetText = headerEnquiry || lesson.title || '';
@@ -4749,8 +5392,8 @@ export function renderLesson(lesson) {
     }
   }
 
-  // Full-Bleed Hero Image (Calibrated Height: 185px for KS2, 140px for Secondary/GCSE)
-  const heroBannerHeight = isKs2 ? '185px' : '140px';
+  // Full-Bleed Hero Image (Calibrated Height: 165px for KS2, 116px for Secondary/GCSE)
+  const heroBannerHeight = isKs2 ? '165px' : '116px';
   const cleanLessonHeading = (lesson.title || '')
     .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
     .trim();
@@ -4818,14 +5461,14 @@ export function renderLesson(lesson) {
   }
 
   html += `
-      <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+      <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.4rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
         <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);"></div>
-        <div class="lesson-hero-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem 4rem;">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 2px;">
-            <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.78rem;">${heroEyebrow}</span>
+        <div class="lesson-hero-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 0.72rem 4rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 1px;">
+            <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.76rem;">${heroEyebrow}</span>
             ${specPillHtml}
           </div>
-          <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.6rem; margin: 0.2rem 0 0 0; line-height: 1.2; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">${cleanLessonHeading}</h2>
+          <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.5rem; margin: 0.15rem 0 0 0; line-height: 1.18; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}
         </div>
         ${bannerGalleryBtn}
@@ -4833,7 +5476,7 @@ export function renderLesson(lesson) {
     `;
 
   html += `
-      <div id="progress-container" style="background: rgba(226,232,240,0.5); height: 4px; width: 100%; margin-bottom: 12px; border-radius: 2px; overflow: hidden; backdrop-filter: blur(5px);">
+      <div id="progress-container" style="background: rgba(226,232,240,0.5); height: 4px; width: 100%; margin-bottom: 8px; border-radius: 2px; overflow: hidden; backdrop-filter: blur(5px);">
         <div id="progress-bar" style="background: #10b981; height: 100%; width: 0%; transition: width 0.3s;"></div>
       </div>
     `;
@@ -5024,7 +5667,7 @@ export function renderLesson(lesson) {
                 Archival Evidence &bull; Expand <span class="drawer-caret">&#9660;</span>
               </span>
             </summary>
-            <div class="eee-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
+            <div class="eee-source-content" style="padding: 14px 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
               ${sourceImgUrl
             ? (() => {
               const disc = getArchivalSourceDiscussionComponents(
@@ -5037,7 +5680,7 @@ export function renderLesson(lesson) {
                 <div class="archival-source-split-layout">
                   <div class="archival-source-media-col${isKs2 ? ' ks2-source-media-col' : ''}">
                     <div style="position: relative; width: 100%; display: flex; justify-content: center;">
-                      <img src="${sourceImgUrl}" alt="${displayTitle}" data-action="open-modal" data-src="${sourceImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '380px' : '280px'}; object-fit: contain; display: block; border-radius: 6px;">
+                      <img src="${sourceImgUrl}" alt="${displayTitle}" data-action="open-modal" data-src="${sourceImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '380px' : '350px'}; object-fit: contain; display: block; border-radius: 6px;">
                     </div>
                     ${sourceSpotlightBtn}
                     ${!isKs2 && citationText
@@ -5555,13 +6198,13 @@ export function renderLesson(lesson) {
   ) {
     const headerHtml = renderDoNowHeaderWithTimerHTML({
       timerId: 'donow-timer',
-      title: 'Do Now Tasks',
-      badgeText: '🧠 Prior Knowledge Retrieval',
+      title: 'Do Now',
+      badgeText: '',
       icon: 'fa-solid fa-list-check',
       showRevealAll: true,
-      includeTimer: false,
+      includeTimer: true,
     });
-    const timerHtml = renderDoNowInlineTimerHTML('donow-timer');
+    const timerHtml = '';
     const currentDb =
       typeof window !== 'undefined'
         ? window.db || (appStore && appStore.state && appStore.state.db)
@@ -6670,7 +7313,8 @@ export function renderLesson(lesson) {
                   'Consequently...',
                   'Overall...',
                 ];
-                const modelAnswer = task.model_answer || task.model || '';
+                const modelAnswer =
+              task.model_answer || task.model || task.exemplar || task.wagoll || task.answer || '';
 
                 htmlNarrative += `
                   <div class="task-box two-sided-argument-interactive" style="margin-bottom: 16px; background: #ffffff; padding: 16px; border-radius: 8px; border: 2px solid #0f766e; box-shadow: 0 3px 10px rgba(15, 118, 110, 0.08);">
@@ -7537,13 +8181,15 @@ export function renderLesson(lesson) {
               : '';
 
           sourceBodyHtml = `
-            ${sourceAudioBtnHtml ? `<div style="display: flex; justify-content: flex-end; margin-bottom: 8px;">${sourceAudioBtnHtml}</div>` : ''}
-            ${sourceText
+            <div style="position: relative;">
+              ${sourceAudioBtnHtml ? `<div style="float: right; margin: 2px 0 6px 10px; position: relative; z-index: 2;">${sourceAudioBtnHtml}</div>` : ''}
+              ${sourceText
               ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '350px', marginBottom: '6px', accentColor: '#1e3a8a' })
               : ''
             }
+            </div>
             ${provenanceHtml}
-            ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 10px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '10px')}
+            ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 8px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '8px')}
           `;
         } else {
           const rawSourceImgUrl = getAssetUrl(rawImgSrc);
@@ -7591,7 +8237,7 @@ export function renderLesson(lesson) {
             mediaColHtml = `
               <div class="archival-source-media-col${isKs2 ? ' ks2-source-media-col' : ''}">
                 <div style="position: relative; width: 100%; display: flex; justify-content: center;">
-                  <img src="${rawSourceImgUrl}" alt="${sourceTitle || 'Source'}" data-action="open-modal" data-src="${rawSourceImgUrl}" ${rawSource.default_zoom || rawSource.defaultZoom || (rawSourceImgUrl && rawSourceImgUrl.includes('vesalius_fabrica_frontispiece')) ? `data-default-zoom="${rawSource.default_zoom || rawSource.defaultZoom || '2x'}"` : ''} style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '380px' : '280px'}; object-fit: contain; display: block; border-radius: 6px;">
+                  <img src="${rawSourceImgUrl}" alt="${sourceTitle || 'Source'}" data-action="open-modal" data-src="${rawSourceImgUrl}" ${rawSource.default_zoom || rawSource.defaultZoom || (rawSourceImgUrl && rawSourceImgUrl.includes('vesalius_fabrica_frontispiece')) ? `data-default-zoom="${rawSource.default_zoom || rawSource.defaultZoom || '2x'}"` : ''} style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '380px' : '350px'}; object-fit: contain; display: block; border-radius: 6px;">
                 </div>
                 ${examSpotlightBtn}
                 ${primaryProvenanceHtml}
@@ -7664,13 +8310,8 @@ export function renderLesson(lesson) {
                   </span>
                 </div>
               </summary>
-              <div class="cme-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
+              <div class="cme-source-content" style="padding: 14px 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
                 ${sourceBodyHtml}
-                <div class="source-drawer-bottom-bar" style="display: flex; justify-content: flex-end; margin-top: 14px; padding-top: 10px; border-top: 1px solid #f1f5f9;">
-                  <button type="button" class="source-return-btn" onclick="if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${stageNum});}" title="Return to Stage ${stageNum} Narrative" style="background: #f8fafc; border: 1px solid #cbd5e1; color: #0284c7; font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;">
-                    <i class="fa-solid fa-arrow-turn-up"></i> Return to Stage ${stageNum} Narrative
-                  </button>
-                </div>
               </div>
             </details>
           `;
@@ -7888,9 +8529,9 @@ export function renderLesson(lesson) {
         const rawWordCount = rawContent.split(/\s+/).filter(Boolean).length;
         const hasMultipleParagraphs = /<br\s*\/?>\s*<br\s*\/?>|<\/p>\s*<p>/i.test(block.content || block.text || '');
         const isCompactNarrative = !hasMultipleParagraphs || rawWordCount < 165;
-        const plateMaxImgHeight = isCompactNarrative ? '195px' : '260px';
-        const plateFlexBasis = isCompactNarrative ? '300px' : '360px';
-        const plateMaxWidth = isCompactNarrative ? '340px' : '400px';
+        const plateMaxImgHeight = isCompactNarrative ? '240px' : '270px';
+        const plateFlexBasis = isCompactNarrative ? '320px' : '360px';
+        const plateMaxWidth = isCompactNarrative ? '355px' : '400px';
         const platePadding = isCompactNarrative ? '12px 14px' : '14px 16px';
         const plateClass = isCompactNarrative ? 'narrative-visual-plate plate-compact' : 'narrative-visual-plate plate-standard';
 
@@ -7902,7 +8543,7 @@ export function renderLesson(lesson) {
         `;
         topNarrativeHtml = `
           ${isHeaderUnified ? headerBlockHtml : ''}
-          <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 16px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
+          <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 12px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
             ${narrativeChunkHtml}
             ${visualPlateHtml}
           </div>
@@ -7916,7 +8557,7 @@ export function renderLesson(lesson) {
       }
 
       htmlNarrative += `
-            <div class="standard-narrative-container" style="margin-bottom: 38px;">
+            <div class="standard-narrative-container" style="margin-bottom: 24px;">
               ${topNarrativeHtml}
               ${blockSourceHtml}
             </div>
@@ -8348,7 +8989,8 @@ export function renderLesson(lesson) {
               'Consequently...',
               'Overall...',
             ];
-            const modelAnswer = task.model_answer || task.model || '';
+            const modelAnswer =
+              task.model_answer || task.model || task.exemplar || task.wagoll || task.answer || '';
 
             extrasHtml += `
               <div class="task-box two-sided-argument-interactive" style="margin-bottom: 25px; background: #ffffff; padding: 20px; border-radius: 10px; border: 2px solid #0f766e; box-shadow: 0 4px 12px rgba(15, 118, 110, 0.08);">
@@ -8950,7 +9592,7 @@ export function renderLesson(lesson) {
         const wbPageNum = isKs3 ? (currentIndex < 3 ? 3 + currentIndex * 2 : 5 + currentIndex * 2) : null;
 
         htmlTasks += `
-          ${getWbThinStripStylesHTML()}
+          ${emitWbStylesOnce()}
           <div class="wb-unified-station phase-card">
             <div class="wb-station-header">
               <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto;">
@@ -8983,14 +9625,20 @@ export function renderLesson(lesson) {
             return;
           }
           if (task.type === 'source_utility' || task.taskType === 'source_utility') {
-            htmlTasks += renderSourceUtilityTaskHTML(task, currentIndex, tIdx, unitId);
+            htmlTasks += renderSourceUtilityTaskHTML(task, currentIndex, tIdx, unitId, lesson);
             return;
           }
           if (
             task.type === 'historical_interpretations' ||
             task.taskType === 'historical_interpretations'
           ) {
-            htmlTasks += renderHistoricalInterpretationsTaskHTML(task, currentIndex, tIdx, unitId);
+            htmlTasks += renderHistoricalInterpretationsTaskHTML(
+              task,
+              currentIndex,
+              tIdx,
+              unitId,
+              lesson,
+            );
             return;
           }
           if (task.type === 'drag_drop_timeline') {
@@ -9056,7 +9704,8 @@ export function renderLesson(lesson) {
                   'Consequently...',
                   'Overall, while...',
                 ]);
-            const modelAnswer = task.model_answer || task.model || '';
+            const modelAnswer =
+              task.model_answer || task.model || task.exemplar || task.wagoll || task.answer || '';
             const targetBadge = isLocalKs2
               ? `<span style="background: #1e3a8a; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-award" style="color: #93c5fd;"></i> Key Stage 2 Historian Investigation</span>`
               : isLocalKs3
@@ -9074,18 +9723,13 @@ export function renderLesson(lesson) {
                 : 'Combine the evidence and counter-evidence above to write your complex, balanced GCSE exam paragraph...';
 
             htmlTasks += `
-              <div class="task-box two-sided-argument-interactive" style="margin-bottom: 25px; background: #ffffff; padding: 20px; border-radius: 10px; border: 2px solid #0f766e; box-shadow: 0 4px 12px rgba(15, 118, 110, 0.08);">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid #ccfbf1; padding-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-                  <h4 style="margin: 0; color: #0f766e; font-size: 1.15rem;"><i class="fa-solid fa-scale-balanced" style="margin-right: 8px;"></i> ${qNumPrefix}${task.topic || task.text || 'Two-Sided Argument Analysis'}</h4>
-                  <div style="display: flex; align-items: center; gap: 8px;">
-                    <button type="button" class="btn-reveal-all-t3 no-print" onclick="window.toggleTask3Mask && window.toggleTask3Mask(this)" style="background: #ecfdf5; border: 1.5px solid #6ee7b7; color: #065f46; font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
-                      <i class="fa-solid fa-chalkboard-user"></i> <span>Teacher Whiteboard Key</span>
-                    </button>
-                    ${targetBadge}
-                  </div>
+              <div class="task-box two-sided-argument-interactive" style="margin-bottom: 4px; background: #ffffff; padding: 4px 0 0 0;">
+                <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+                  <button type="button" class="btn-reveal-all-t3 no-print" onclick="window.toggleTask3Mask && window.toggleTask3Mask(this)" style="background: #ecfdf5; border: 1.5px solid #6ee7b7; color: #065f46; font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+                    <i class="fa-solid fa-chalkboard-user"></i> <span>Teacher Whiteboard Key</span>
+                  </button>
                 </div>
-                ${task.question ? `<div style="font-size: 1.05rem; font-weight: 700; color: #0f172a; margin-bottom: 10px; line-height: 1.5; padding: 10px 14px; background: #f0fdf4; border-left: 4px solid #0f766e; border-radius: 0 6px 6px 0;"><strong>Question:</strong> ${task.question}</div>` : ''}
-                ${task.instruction ? `<p style="font-size: 0.95rem; color: #475569; font-style: italic; margin-top: 0; margin-bottom: 15px;">${task.instruction}</p>` : ''}
+                ${task.instruction ? `<p style="font-size: 0.92rem; color: #475569; font-style: italic; margin-top: 0; margin-bottom: 12px;">${task.instruction}</p>` : ''}
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 16px;">
                   <!-- Side 1: Advancement / Progress -->
@@ -9232,21 +9876,7 @@ export function renderLesson(lesson) {
             };
 
             htmlTasks += `
-              <div class="task-box two-features-task-card" style="margin-bottom: 25px; background: #ffffff; padding: 22px; border-radius: 10px; border: 2px solid #0284c7; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.1);">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 2px solid #e0f2fe; padding-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-                  <h4 style="margin: 0; color: #0369a1; font-size: 1.15rem; font-weight: 800; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-list-check" style="color: #0284c7;"></i>
-                    <span>${taskTitle}</span>
-                  </h4>
-                  <span style="background: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
-                    <i class="fa-solid fa-clipboard-question"></i> 4 MARKS &bull; FEATURE DRILL
-                  </span>
-                </div>
-
-                <div class="two-features-prompt" style="font-size: 1.05rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.5; background: #f0f9ff; padding: 12px 16px; border-left: 4px solid #0284c7; border-radius: 0 6px 6px 0;">
-                  ${formatBold ? formatBold(task.question || '') : task.question || ''}
-                </div>
-
+              <div class="task-box two-features-task-card" style="margin-bottom: 4px; background: #ffffff;">
                 <!-- Feature 1 -->
                 <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px; margin-bottom: 14px;">
                   <div style="font-weight: 800; color: #0369a1; font-size: 0.92rem; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
@@ -9257,7 +9887,7 @@ export function renderLesson(lesson) {
                   <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 75px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.92rem; line-height: 1.5;" placeholder="${f1.starter || 'One key feature was... Specifically, this involved...'}"></textarea>
                   ${f1.model
                 ? `
-                    <details style="margin-top: 8px;">
+                    <details class="two-features-model" style="margin-top: 8px;">
                       <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> [ Reveal Feature 1 Model ]</summary>
                       <div style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f1.model) : f1.model}</div>
                     </details>
@@ -9276,7 +9906,7 @@ export function renderLesson(lesson) {
                   <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 75px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.92rem; line-height: 1.5;" placeholder="${f2.starter || 'A second key feature was... For example, this meant that...'}"></textarea>
                   ${f2.model
                 ? `
-                    <details style="margin-top: 8px;">
+                    <details class="two-features-model" style="margin-top: 8px;">
                       <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> [ Reveal Feature 2 Model ]</summary>
                       <div style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f2.model) : f2.model}</div>
                     </details>
@@ -9324,7 +9954,8 @@ export function renderLesson(lesson) {
                   : 'GCSE Analytical Masterclass');
             const questionPrompt = task.question || task.text || task.prompt || '';
             const hints = Array.isArray(task.hints) ? task.hints : [];
-            const modelAnswer = task.model_answer || task.model || '';
+            const modelAnswer =
+              task.model_answer || task.model || task.exemplar || task.wagoll || task.answer || '';
             const ks2Connectives = [
               'In the beginning, ...',
               'This was important because ...',
@@ -9346,20 +9977,43 @@ export function renderLesson(lesson) {
 
             const taskScaf = task.scaffolding || {};
             const structureStrip = Array.isArray(taskScaf.structure_strip) ? taskScaf.structure_strip : [];
-            const sentenceStarters = Array.isArray(taskScaf.sentence_starters) ? taskScaf.sentence_starters : [];
-            const wordBank = Array.isArray(taskScaf.word_bank) ? taskScaf.word_bank : [];
+            const sentenceStarters =
+              Array.isArray(taskScaf.sentence_starters) && taskScaf.sentence_starters.length > 0
+                ? taskScaf.sentence_starters
+                : Array.isArray(task.sentence_starters) && task.sentence_starters.length > 0
+                  ? task.sentence_starters
+                  : typeof task.starter === 'string' && task.starter.trim()
+                    ? [task.starter.trim()]
+                    : [];
+            const wordBank =
+              Array.isArray(taskScaf.word_bank) && taskScaf.word_bank.length > 0
+                ? taskScaf.word_bank
+                : Array.isArray(taskScaf.vocab_bank) && taskScaf.vocab_bank.length > 0
+                  ? taskScaf.vocab_bank
+                  : Array.isArray(task.word_bank) && task.word_bank.length > 0
+                    ? task.word_bank
+                    : Array.isArray(task.key_terms) && task.key_terms.length > 0
+                      ? task.key_terms
+                      : Array.isArray(lesson?.vocab) && lesson.vocab.length > 0
+                        ? lesson.vocab
+                            .map((v) => (typeof v === 'object' ? v.term : v))
+                            .filter(Boolean)
+                        : [];
             const criteria = Array.isArray(taskScaf.evaluative_criteria) ? taskScaf.evaluative_criteria : [];
-            const stimulusList = Array.isArray(task.stimulus) ? task.stimulus : [];
+            const stimulusList =
+              Array.isArray(task.stimulus) && task.stimulus.length > 0
+                ? task.stimulus
+                : extractEmbeddedStimulusBullets(questionPrompt) || [];
 
             let stimulusHtml = '';
             if (stimulusList.length > 0) {
               stimulusHtml = `
-                <div style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #bae6fd; font-size: 0.88rem; color: #0c4a6e;">
-                  <strong style="text-transform: uppercase; font-size: 0.74rem; letter-spacing: 0.5px; color: #0284c7; display: block; margin-bottom: 5px;">You may use the following in your answer:</strong>
+                <div class="edexcel-stimulus-bullet-box" style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #0284c7; border-radius: 6px; padding: 10px 14px; margin: 0 0 12px 0; font-size: 0.88rem; color: #0c4a6e;">
+                  <strong style="text-transform: uppercase; font-size: 0.74rem; letter-spacing: 0.5px; color: #0284c7; display: block; margin-bottom: 5px;"><i class="fa-solid fa-list-check" style="margin-right: 5px;"></i> You may use the following in your answer:</strong>
                   <ul style="margin: 0; padding-left: 20px; line-height: 1.5;">
                     ${stimulusList.map((st) => `<li>${formatBold ? formatBold(st) : st}</li>`).join('')}
                   </ul>
-                  <span style="display: block; font-size: 0.78rem; font-style: italic; color: #64748b; margin-top: 4px;">(You must also use information of your own.)</span>
+                  <span style="display: block; font-size: 0.78rem; font-style: italic; color: #64748b; margin-top: 4px;">You must also use information of your own.</span>
                 </div>
               `;
             }
@@ -9521,104 +10175,103 @@ export function renderLesson(lesson) {
               `;
             }
 
-            // 5. Key Vocabulary Word Bank (if present)
-            if (wordBank.length > 0) {
-              scaffoldingItemsHtml += `
-                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px 14px;">
-                  <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; color: #475569; letter-spacing: 0.5px; margin-bottom: 6px;">
-                    <i class="fa-solid fa-book-bookmark" style="color: #0284c7; margin-right: 6px;"></i> ${isKs2 ? 'Historian Word Bank' : isLocalKs3 ? 'Core Disciplinary Vocabulary Bank' : 'GCSE Key Vocabulary Bank'}
-                  </strong>
-                  <div style="display: flex; flex-wrap: wrap; gap: 5px;">
-                    ${wordBank.map((w) => `<span style="background: #e2e8f0; color: #1e293b; font-size: 0.76rem; font-weight: 600; padding: 2.5px 8px; border-radius: 4px;">${w}</span>`).join('')}
-                  </div>
-                </div>
-              `;
-            }
-
-            const scaffoldingDrawerHtml = scaffoldingItemsHtml
-              ? `
-              <details class="peel-scaffolding-drawer no-print" style="margin-bottom: 16px; background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; overflow: hidden;" closed>
-                <summary style="padding: 10px 14px; cursor: pointer; font-size: 0.88rem; font-weight: 800; color: #0369a1; background: #f1f5f9; display: flex; align-items: center; justify-content: space-between; user-select: none; transition: background 0.15s ease;">
-                  <span style="display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-lightbulb" style="color: #0284c7;"></i>
-                    <span>Writing Support &amp; Scaffolding &bull; Sentence Starters, Connectives &amp; Structure Guide</span>
-                  </span>
-                  <span style="font-size: 0.75rem; font-weight: 700; background: #e0f2fe; color: #0369a1; padding: 3px 9px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
-                    <i class="fa-solid fa-chevron-down"></i> Expand Support (Optional)
-                  </span>
-                </summary>
-                <div style="padding: 14px; background: #ffffff; display: flex; flex-direction: column; gap: 12px;">
-                  ${scaffoldingItemsHtml}
-                </div>
-              </details>
-            `
+            const ks3TaskUid = `ks3_ext_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}_${tIdx}`;
+            const wbTitleLabel = isKs2
+              ? 'Historian Word Bank'
+              : isLocalKs3
+                ? 'Core Disciplinary Vocabulary Bank'
+                : 'GCSE Key Vocabulary Bank';
+            const ks3WbBtnHtml =
+              wordBank.length > 0
+                ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ks3-wb-${ks3TaskUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
+                : '';
+            const ks3ScafBtnLabel =
+              structureStrip.length > 0 || Boolean(peelHtml)
+                ? 'Sentence Starters &amp; Structure'
+                : 'Sentence Starters';
+            const ks3ScafBtnHtml = scaffoldingItemsHtml
+              ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ks3-scaf-${ks3TaskUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> ${ks3ScafBtnLabel} <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
               : '';
+
+            const ks3WbDrawerHtml =
+              wordBank.length > 0
+                ? `<div id="ks3-wb-${ks3TaskUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
+                      <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">${wbTitleLabel}:</span>
+                      <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                      ${wordBank.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                    </div>
+                  </div>`
+                : '';
+
+            const ks3ScafDrawerHtml = scaffoldingItemsHtml
+              ? `<div id="ks3-scaf-${ks3TaskUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 14px; margin-top: 8px;">
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    ${scaffoldingItemsHtml}
+                  </div>
+                </div>`
+              : '';
+
+            const ks3ModelBtnLabel = isKs2
+              ? 'Reveal Model Historian Answer'
+              : isLocalKs3
+                ? 'Reveal Model Response'
+                : 'Reveal Examiner Model Response';
+
+            const ks3ModelBtnHtml = modelAnswer
+              ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="ks3-model-${ks3TaskUid}" title="${ks3ModelBtnLabel}" style="background: #f0fdf4; color: #166534; border: 1px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> ${ks3ModelBtnLabel}</button>`
+              : '';
+
+            const ks3ModelDrawerHtml = modelAnswer
+              ? `<div id="ks3-model-${ks3TaskUid}" class="scaffold-box model-box" style="display: none; margin-top: 8px; padding: 14px 16px; background: #f8fafc; border-left: 4px solid #0284c7; border-radius: 6px; font-size: 0.95rem; color: #1e293b; line-height: 1.65; border: 1px solid #e2e8f0; font-family: 'Georgia', serif;">
+                  ${modelAnswer.includes('\n\n')
+                    ? modelAnswer
+                        .split(/\n\s*\n/)
+                        .map(
+                          (p) =>
+                            `<p style="margin: 0 0 10px 0; line-height: 1.65;">${formatBold ? formatBold(p) : p}</p>`,
+                        )
+                        .join('')
+                    : formatBold
+                      ? formatBold(modelAnswer)
+                      : modelAnswer
+                  }
+                </div>`
+              : '';
+
+            const ks3WritingStudioBtnHtml = `<button type="button" class="btn-open-writing-studio no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToPart){window.openLessonInfographicModalToPart(3, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openWritingStudioFromTask){window.openWritingStudioFromTask();}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: none; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 5px rgba(2, 132, 199, 0.22); transition: transform 0.15s ease;" title="Open Writing Studio and Clue Ladder for right page task"><i class="fa-solid fa-pen-nib"></i> Writing Studio &amp; Clue Ladder</button>`;
 
             const customPlaceholder = isKs2
               ? 'Write your historian answer using the clues and key words above...'
               : task.type === 'narrative_account'
                 ? 'Write your 3-paragraph narrative account following the chronological sequence (Beginning: Peterloo ➔ Middle: Swing Riots ➔ End: Tolpuddle)...'
-                : 'Compose your analytical argument here. Expand the Writing Support & Scaffolding drawer above if you need sentence starters or connectives...';
+                : 'Compose your analytical argument here. Open Word Bank or Sentence Starters above if needed...';
 
             htmlTasks += `
-              <div class="task-box extended-writing-task-card" style="margin-bottom: 25px; background: #ffffff; padding: 22px; border-radius: 10px; border: 2px solid #0284c7; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.1);">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 2px solid #e0f2fe; padding-bottom: 12px;">
-                  <h4 style="margin: 0; color: #0369a1; font-size: 1.15rem; font-weight: 800; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-feather-pointed" style="color: #0284c7;"></i>
-                    <span>${qNumPrefix}${taskTitle}</span>
-                  </h4>
-                  <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
-                    <button type="button" class="btn-open-writing-studio no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToPart){window.openLessonInfographicModalToPart(3, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openWritingStudioFromTask){window.openWritingStudioFromTask();}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: none; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35); transition: transform 0.15s ease;" title="Open Writing Studio and Clue Ladder for right page task">
-                      <i class="fa-solid fa-pen-nib"></i> Open Writing Studio &amp; Clue Ladder
-                    </button>
-                    ${isLocalKs3 ? `<span style="background: #e0f2fe; color: #0369a1; font-size: 0.72rem; font-weight: 800; padding: 4px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px;"><i class="fa-solid fa-book-open"></i> In Pupil Workbook &bull; Page ${currentIndex < 3 ? 3 + currentIndex * 2 : 5 + currentIndex * 2}</span>` : ''}
-                    <span style="background: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;">
-                      <i class="fa-solid fa-graduation-cap"></i> ${badgeText}
-                    </span>
+              <div class="task-box extended-writing-task-card" style="margin-bottom: 4px; background: #ffffff;">
+                ${stimulusHtml}
+
+                <div class="peel-scaffolding-drawer no-print" style="margin-bottom: 6px;">
+                  <div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 2px;">
+                    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+                      ${ks3WbBtnHtml}
+                      ${ks3ScafBtnHtml}
+                    </div>
+                    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-left: auto;">
+                      ${ks3ModelBtnHtml}
+                      ${ks3WritingStudioBtnHtml}
+                    </div>
                   </div>
+                  ${ks3WbDrawerHtml}
+                  ${ks3ScafDrawerHtml}
+                  ${ks3ModelDrawerHtml}
                 </div>
 
-                ${questionPrompt
-                ? `
-                  <div class="extended-writing-prompt" style="font-size: 1.08rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.5; background: #f0f9ff; padding: 14px 18px; border-left: 4px solid #0284c7; border-radius: 0 6px 6px 0;">
-                    <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: #0284c7; margin-bottom: 4px; font-weight: 800;">Enquiry Question:</span>
-                    <div>${formatBold ? formatBold(questionPrompt) : questionPrompt}</div>
-                    ${stimulusHtml}
-                  </div>
-                `
-                : ''
-              }
-
-                ${scaffoldingDrawerHtml}
-
-                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 14px;">
-                  <label style="display: block; font-size: 0.85rem; font-weight: 700; color: #1e293b; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">${isKs2 ? 'Your Historian Response:' : task.type === 'narrative_account' ? 'Student Response &bull; Chronological 3-Paragraph Narrative Account (Beginning, Middle, End):' : 'Student Response &bull; Structured Historical Argument:'}</label>
-                  <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 140px; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; font-family: inherit; resize: vertical;" placeholder="${customPlaceholder}" oninput="window.updateProgress()"></textarea>
-
-                  ${modelAnswer
-                ? `
-                    <details class="model-paragraph-reveal" style="margin-top: 14px; border: 1px dashed #0284c7; border-radius: 8px; padding: 10px 14px; background: #ffffff;" closed>
-                      <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.9rem; outline: none; display: flex; align-items: center; gap: 8px;">
-                        <i class="fa-solid fa-eye"></i> ${isKs2 ? '[ Show Model Historian Answer ]' : isLocalKs3 ? '[ Show Model Analytical Response ]' : '[ Show Examiner-Grade Model Response ]'}
-                      </summary>
-                      <div class="scaffold-box model-box" style="margin-top: 12px; padding: 14px 16px; background: #f8fafc; border-left: 4px solid #0284c7; border-radius: 4px; font-size: 0.95rem; color: #1e293b; line-height: 1.65; border: 1px solid #e2e8f0; font-family: 'Georgia', serif;">
-                        ${modelAnswer.includes('\n\n')
-                  ? modelAnswer
-                    .split(/\n\s*\n/)
-                    .map(
-                      (p) =>
-                        `<p style="margin: 0 0 10px 0; line-height: 1.65;">${formatBold ? formatBold(p) : p}</p>`,
-                    )
-                    .join('')
-                  : formatBold
-                    ? formatBold(modelAnswer)
-                    : modelAnswer
-                }
-                      </div>
-                    </details>
-                  `
-                : ''
-              }
+                <div class="laptop-only-response-box" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 12px 14px; margin-top: 10px;">
+                  <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #1e293b; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">${isKs2 ? 'Your Historian Response:' : task.type === 'narrative_account' ? 'Student Response &bull; Chronological 3-Paragraph Narrative Account (Beginning, Middle, End):' : 'Student Response &bull; Structured Historical Argument:'}</label>
+                  <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 130px; padding: 10px 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; font-family: inherit; resize: vertical; margin-bottom: 0;" placeholder="${customPlaceholder}" oninput="window.updateProgress()"></textarea>
                 </div>
               </div>
             `;
@@ -9630,38 +10283,27 @@ export function renderLesson(lesson) {
           let clueParaMatch = qText.match(/\((P|Para\s*)(\d+)\)$/i);
           let clueBtn = '';
           if (clueParaMatch) {
-            qText = qText.replace(clueParaMatch[0], '').trim();
-            clueBtn = `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-clue" title="Find Evidence" data-action="scroll-to-para" data-target="para-${clueParaMatch[2]}"><i class="fa-solid fa-magnifying-glass"></i></button>`;
+            clueBtn = `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-clue" title="Find Evidence" data-action="scroll-to-para" data-target="para-${clueParaMatch[2]}"><i class="fa-solid fa-magnifying-glass"></i> Find Evidence</button>`;
           }
-
-          let match = qText.match(/^([A-Za-z0-9'\-\/ ]+):\s*([\s\S]*)/);
-          let displayHeading = '';
-          if (task.title) {
-            displayHeading = `<div style="font-size: 1.15rem; color: #0284c7; margin-bottom: 6px; font-weight: 800;">${task.title}</div>`;
-          } else if (task.topic) {
-            displayHeading = `<div style="font-size: 1.15rem; color: #0284c7; margin-bottom: 6px; font-weight: 800;">${task.topic}</div>`;
-          } else if (match && match[2] && match[2].length > 15) {
-            displayHeading = `<div style="font-size: 1.15rem; color: #0284c7; margin-bottom: 6px; font-weight: 800;">${match[1]}</div>`;
-            qText = match[2];
-          }
-          if (qText && qText.includes('\n')) {
-            qText = qText.replace(/\n/g, '<br>');
-          }
+          const hasPedagogyBtns = Boolean(
+            clueBtn || task.starter || task.clue || task.model || task.model_answer || task.answer,
+          );
 
           htmlTasks += `
-            <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-              ${displayHeading}
-              <div style="font-weight: 700; margin-bottom: 12px; font-size: 1.1rem; color: #0f172a;">
-                ${task.qNum ? `Q${task.qNum}. ` : ''}${qText}
-                <span style="display: inline-flex; vertical-align: middle;">
-                  ${clueBtn}
-                  ${task.starter ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-starter" title="Sentence Starter" data-action="toggle-element" data-target-id="starter-${tIdx}"><i class="fa-solid fa-pen"></i></button>` : ''}
-                  ${task.clue ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-clue" title="Clue" data-action="toggle-element" data-target-id="clue-${tIdx}"><i class="fa-solid fa-lightbulb"></i></button>` : ''}
-                  ${task.model || task.model_answer || task.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="model-${tIdx}"><i class="fa-solid fa-eye"></i></button>` : ''}
-                </span>
-              </div>
+            <div class="do-now-card" style="background: #ffffff; border: none; padding: 0; margin: 0;">
               <textarea class="student-answer-input" placeholder="Write your response here..." oninput="window.updateProgress()"></textarea>
-
+              ${
+                hasPedagogyBtns
+                  ? `
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+                  ${clueBtn}
+                  ${task.starter ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-starter" title="Sentence Starter" data-action="toggle-element" data-target-id="starter-${tIdx}"><i class="fa-solid fa-pen"></i> Sentence Starter</button>` : ''}
+                  ${task.clue ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-clue" title="Clue" data-action="toggle-element" data-target-id="clue-${tIdx}"><i class="fa-solid fa-lightbulb"></i> Clue</button>` : ''}
+                  ${task.model || task.model_answer || task.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="model-${tIdx}"><i class="fa-solid fa-eye"></i> Reveal Model Answer</button>` : ''}
+                </div>
+              `
+                  : ''
+              }
               ${task.starter ? `<div id="starter-${tIdx}" class="scaffold-box starter-box" style="display:none;"><strong>Sentence Starter:</strong> ${task.starter}</div>` : ''}
               ${task.clue ? `<div id="clue-${tIdx}" class="scaffold-box clue-box" style="display:none;"><strong>Clue Hint:</strong> ${task.clue}</div>` : ''}
               ${task.model || task.model_answer || task.answer ? `<div id="model-${tIdx}" class="scaffold-box model-box" style="display:none;">${formatBold(task.model || task.model_answer || task.answer)}</div>` : ''}
@@ -9690,14 +10332,14 @@ export function renderLesson(lesson) {
           );
 
           htmlTasks += `
-            <details class="wb-question-strip wb-strip-green">
+            <details class="wb-question-strip wb-thin-strip wb-strip-green">
               <summary>
                 <div class="wb-strip-left">
                   <span class="wb-origin-pill wb-origin-green" title="${isWorkbookTask ? 'Printed in Pupil Workbook' : 'Workbook Activity'}">
                     <i class="fa-solid fa-book-open"></i> ${originShort}
                   </span>
                   <span class="wb-tariff-pill">${tariffTag}</span>
-                  <span class="wb-stem-preview">${stemPreview}</span>
+                  <span class="wb-stem-preview wb-strip-stem">${stemPreview}</span>
                 </div>
                 <div class="wb-strip-right">
                   ${minsPillHtml}
@@ -9899,7 +10541,9 @@ export function renderLesson(lesson) {
       tariff: mq.type ? `${mq.type} [${mq.marks || 4} marks]` : `${mq.marks || 4} marks`,
       type: mq.type || '',
       marks: mq.marks || 4,
-      targetMins: mq.targetMins || getRecommendedExamMins(mq.marks, mq.type),
+      targetMins:
+        mq.targetMins ||
+        getRecommendedExamMins(mq.marks, `${mq.type || ''} ${mq.questionText || mq.question || ''}`),
       stimulus: Array.isArray(mq.stimulus) ? mq.stimulus : [],
       sourceExtract: mq.sourceExtract || '',
       model: mq.modelAnswer || mq.model || '',
@@ -9911,29 +10555,18 @@ export function renderLesson(lesson) {
     }));
 
     if (epQuestions.length > 0 || normalizedExtraMocks.length > 0) {
-      const isKs3Unit =
-        unitId === 'great_war' ||
-        unitId === 'great_war_part2' ||
-        unitId === 'water_and_sanitation' ||
-        unitId === 'early_modern_world' ||
-        unitId === 'medieval_england' ||
-        unitId === 'industrialisation_and_empire' ||
-        unitId === 'first_british_empire' ||
-        unitId === 'second_british_empire' ||
-        unitId === 'the_shoah' ||
-        unitId === 'monarchy_religion_power' ||
-        (typeof unit !== 'undefined' && unit && unit.is_ks3);
+      const isKs3Unit = isKs3;
 
       const practiceHeading = isKs3Unit
         ? 'Pupil Workbook Activities &bull; Key Stage 3'
         : 'Pupil Workbook &amp; GCSE Exam Practice';
       const practiceIcon = isKs3Unit ? 'fa-book-open-reader' : 'fa-graduation-cap';
       const paperCodeSub = isGCSE
-        ? `Pearson Edexcel GCSE &bull; ${getCanonicalGcsePaperCode(unitId)} &bull; Select any strip to answer, time, or project`
-        : 'Select any workbook strip below to open writing space &amp; model answers';
+        ? `Pearson Edexcel GCSE &bull; ${getCanonicalGcsePaperCode(unitId)} &bull; Select any strip to view sources, guidance, timers &amp; model answers`
+        : 'Select any workbook strip below to view scaffolding &amp; model answers';
 
       htmlExamPractice += `
-          ${getWbThinStripStylesHTML()}
+          ${emitWbStylesOnce()}
           <div class="wb-unified-station phase-card">
             <div class="wb-station-header">
               <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto;">
@@ -9969,138 +10602,36 @@ export function renderLesson(lesson) {
               (window.location.search.includes('weimar_nazi_germany') ||
                 window.location.search.includes('usa')))));
 
-      const formatExamQuestionTitle = (qText, fallbackIdx, qObj) => {
-        if (!qText) return '';
-        let str = qText.trim();
-        // Remove redundant top line like "Describe two features of battlefield trauma and protective equipment on the Western Front:"
-        str = str.replace(/^Describe two features of[^\n:]+:\s*\n?/i, '');
-
-        const qType = (qObj?.type || '').toLowerCase();
-        const qTariff = (qObj?.tariff || '').toLowerCase();
-
-        if (isPaper3Weimar) {
-          let cleanStr = str.replace(/^(?:Q\d+[\.:\s]+|Question\s+\d+[\.:\s]+)*/i, '');
-          cleanStr = cleanStr.replace(
-            /^(?:(?:\d+[\.:\s]+)*3\s*\([a-d]\)[\.:\s]*|\d+[\.:\s]+)+/i,
-            '',
-          );
-          cleanStr = cleanStr.replace(/^3\s*\([a-d]\)[\.:\s]*/i, '');
-          cleanStr = cleanStr.replace(/\s*\[\s*\d+\s*marks?(?:\s*\(\+4\s*spag\))?\s*\]\s*$/i, '');
-          cleanStr = cleanStr.replace(/\n/g, '<br>');
-
-          let badge = '';
-          if (qType.includes('inference') || /give two things you can infer/i.test(str)) {
-            badge = 'Question 1 [4 marks]: Source Inference';
-          } else if (
-            qType.includes('causation') ||
-            qType.includes('explain_why') ||
-            qTariff.includes('12')
-          ) {
-            badge = 'Question 2 [12 marks]: Causation Essay';
-          } else if (
-            qType.includes('utility_comp') ||
-            /COP Comparative/i.test(str) ||
-            /Part 1:/i.test(str)
-          ) {
-            badge = 'Question 3(a) Foundation Drill [4 marks]: Content & Provenance Analysis';
-          } else if (qType.includes('utility') || /how useful are sources/i.test(str)) {
-            badge = 'Question 3(a) [8 marks]: Source Utility';
-          } else if (qType.includes('4-mark') && /study interpretations/i.test(str)) {
-            badge = 'Question 3(b) [4 marks]: Difference in Historical Views';
-          } else if (/suggest one reason why interpretations/i.test(str)) {
-            badge = 'Question 3(c) [4 marks]: Reason for Difference in Views';
-          } else if (
-            qType.includes('verdict') ||
-            /how far do you agree with interpretation/i.test(str)
-          ) {
-            badge = 'Question 3(d) [16+4 marks]: Evaluative Historical Verdict';
-          } else {
-            badge = `Question ${fallbackIdx + 1}`;
-          }
-
-          return `
-            <div class="exam-q-header-banner" style="display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;">
-              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 800; color: #1e3a8a;">${badge}</span>
-            </div>
-            <div class="exam-q-stem-content" style="font-size: 1.02rem; font-weight: 600; color: #1e293b; line-height: 1.5;">
-              ${typeof formatBold !== 'undefined' ? formatBold(cleanStr) : cleanStr}
-            </div>
-          `;
-        }
-
-        // 1. Follow-up enquiry (Edexcel Paper 1 Q2b)
-        if (qType.includes('follow_up') || /follow up source/i.test(str)) {
-          let cleanStr = str.replace(/^(?:Q\d+[\.:\s]+|Question\s+\d+[\.:\s]+)*/i, '');
-          cleanStr = cleanStr.replace(/\n/g, '<br>');
-          return `Question 2(b) [4 marks]: ${typeof formatBold !== 'undefined' ? formatBold(cleanStr) : cleanStr}`;
-        }
-
-        // 2. Source Utility (Edexcel Paper 1 Q2a or Paper 3 Q3a)
-        if (
-          qType.includes('utility_of_sources') ||
-          (qType.includes('utility') && !qType.includes('follow_up')) ||
-          /how useful is source/i.test(str)
-        ) {
-          let cleanStr = str.replace(/^(?:Q\d+[\.:\s]+|Question\s+\d+[\.:\s]+)*/i, '');
-          cleanStr = cleanStr.replace(
-            /^(?:(?:\d+[\.:\s]+)*3\s*\([a-d]\)[\.:\s]*|\d+[\.:\s]+)+/i,
-            '',
-          );
-          cleanStr = cleanStr.replace(/\[4 marks\]/gi, '[8 marks]'); // Correct 8-mark utility tariff in stem
-          cleanStr = cleanStr.replace(/\s*\[\s*8\s*marks\s*\]\s*$/i, ''); // Strip trailing mark tag to prevent duplicate
-          cleanStr = cleanStr.replace(/\n/g, '<br>');
-          const prefix = 'Question 2(a) [8 marks]: ';
-          return `${prefix}${typeof formatBold !== 'undefined' ? formatBold(cleanStr) : cleanStr}`;
-        }
-
-        // 3. Feature drills (Edexcel Paper 1 Q1 combined 4-mark card; standalone 2-mark cards format as Q1(a)/Q1(b) [2 marks])
-        const isStandalone2mFeature =
-          qObj?.marks === 2 || qType === 'feature_2m' || /^2\s*marks?$/i.test(qTariff);
-        if (
-          !isStandalone2mFeature &&
-          (qType.includes('features') ||
-            /feature_drills/i.test(qType) ||
-            str.startsWith('(a) Describe one feature') ||
-            /Describe one feature/i.test(str))
-        ) {
-          let cleanStr = str.replace(/^(?:Q\d+[\.:\s]+|Question\s+\d+[\.:\s]+)*/i, '');
-          cleanStr = cleanStr.replace(/\n/g, '<br><br>');
-          return `Question 1: Feature Drills [4 marks]<br><div style="font-size: 0.98rem; font-weight: 600; color: #1e293b; margin-top: 8px;">${typeof formatBold !== 'undefined' ? formatBold(cleanStr) : cleanStr}</div>`;
-        }
-
-        // Clean redundant trailing mark tags (e.g. ". [4 marks]. (4 marks)")
-        str = str.replace(/(?:\s*[\.\,]?\s*(?:\[\s*\d+\s*marks?\s*\]|\(\s*\d+\s*marks?\s*\)))+\s*$/gi, '');
-
-        if (/^(?:Q?\d+[\.:\s]+)*3\s*\(([a-d])\)[\.:\s]*/i.test(str)) {
-          str = str.replace(/^(?:Q?\d+[\.:\s]+)*3\s*\(([a-d])\)[\.:\s]*/i, 'Q3($1). ');
-        } else if (/^(?:Q?\d+[\.:\s]+)*1\s*\(([a-b])\)[\.:\s]*/i.test(str)) {
-          str = str.replace(/^(?:Q?\d+[\.:\s]+)*1\s*\(([a-b])\)[\.:\s]*/i, 'Q1($1). ');
-        } else if (/^(?:Q?\s*(\d+)[\.:\s]+)+/i.test(str)) {
-          str = str.replace(/^(?:Q?\s*(\d+)[\.:\s]+)+/i, (match, p1) => {
-            return `Q${p1}. `;
-          });
-        } else if (!/^(Q\d|Question\s+\d)/i.test(str)) {
-          str = `Q${fallbackIdx + 1}. ${str}`;
-        }
-
-        // Append clean standardized mark tag if not present
-        if (!/\[\s*\d+\s*marks?\s*\]/i.test(str) && !/\(\s*\d+\s*marks?\s*\)/i.test(str)) {
-          const marksVal = qObj?.marks || (qTariff.includes('4 mark') ? 4 : (qTariff.includes('8 mark') ? 8 : (qTariff.includes('12') ? 12 : (qTariff.includes('16') ? 16 : null))));
-          if (marksVal) str = `${str} [${marksVal} marks]`;
-        }
-        str = str.replace(/\n/g, '<br>');
-        return typeof formatBold !== 'undefined' ? formatBold(str) : str;
-      };
-
       const getWorkbookTaskMeta = (unitId, lessonId, qObj, qText, qIdx, lesson) => {
+        if (qObj && qObj.inWorkbook === true && qObj.workbook_badge) {
+          return {
+            inWorkbook: true,
+            label: qObj.workbook_badge,
+            note: qObj.workbook_note || '',
+          };
+        }
+        if (qObj && qObj.inWorkbook === false) {
+          return {
+            inWorkbook: false,
+            label:
+              qObj.workbook_badge || 'Digital Interactive Extension • Not in Printed Workbook',
+            note: qObj.workbook_note || '',
+          };
+        }
+
         const type = (qObj?.type || '').toLowerCase();
         const text = (qText || '').toLowerCase();
         const tariff = (qObj?.tariff || '').toLowerCase();
 
-        // Parse lesson ID format: e.g. "lesson_1_3" -> kt=1, num=3
+        // Parse lesson ID format: e.g. "lesson_1_3" -> kt=1, num=3 or "lesson_7" -> kt=1, num=7
         const idMatch = (lessonId || '').match(/lesson_([0-9]+)_([0-9]+)/i);
+        const singleMatch = !idMatch ? (lessonId || '').match(/^lesson_([0-9]+)$/i) : null;
         const ktNum = idMatch ? parseInt(idMatch[1], 10) : 1;
-        const lNum = idMatch ? parseInt(idMatch[2], 10) : 1;
+        const lNum = idMatch
+          ? parseInt(idMatch[2], 10)
+          : singleMatch
+            ? parseInt(singleMatch[1], 10)
+            : 1;
 
         // 1. EDEXCEL MEDICINE
         if (unitId === 'edexcel_medicine') {
@@ -10216,14 +10747,30 @@ export function renderLesson(lesson) {
           ) {
             return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}` };
           }
-          if (type.includes('utility')) {
-            if (ktNum === 3 && lNum === 3) {
-              return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}` };
+          const isWeimarUtility =
+            type.includes('utility') ||
+            text.includes('how useful') ||
+            /\b3\s*\(\s*a\s*\)/i.test(text);
+          if (isWeimarUtility) {
+            const isPrintedWeimarQ3a =
+              qObj?.inWorkbook === true ||
+              (ktNum === 1 && lNum === 2) ||
+              (ktNum === 2 && lNum === 3) ||
+              (ktNum === 3 && lNum === 3) ||
+              (ktNum === 4 && lNum === 3);
+            if (isPrintedWeimarQ3a) {
+              return {
+                inWorkbook: true,
+                label: qObj?.workbook_badge || 'In Printed Workbook • Pages 16–17',
+              };
             }
             return {
               inWorkbook: false,
-              label: 'Digital Interactive Extension • Not in Printed Workbook',
-              note: 'In the printed pupil workbook, Question 2 (12 marks) is the core causation essay. This 8-mark source utility enquiry is provided as an interactive digital extension.',
+              label:
+                qObj?.workbook_badge || 'Digital Interactive Extension • Not in Printed Workbook',
+              note:
+                qObj?.workbook_note ||
+                'In the printed pupil workbook, Question 2 (12 marks) is the core causation essay. This 8-mark source utility enquiry is provided as an interactive digital extension.',
             };
           }
           if (type.includes('verdict') || tariff.includes('16 mark') || type.includes('16m')) {
@@ -10241,35 +10788,18 @@ export function renderLesson(lesson) {
             WORKBOOK_PAGE_MAP?.cme_new?.[lessonId] ||
             WORKBOOK_PAGE_MAP?.cme_new?.[`lesson_${lNum}`] ||
             WORKBOOK_PAGE_MAP?.cme_new?.[`lesson_${ktNum}_${lNum}`];
-          const examStartPg = mapEntry?.examPage || (mapEntry?.page ? mapEntry.page + 2 : 6);
-          const examEndPg = mapEntry?.examEndPage || examStartPg + 1;
+          const examStartPg =
+            mapEntry?.examPage || mapEntry?.endPage || (mapEntry?.page ? mapEntry.page + 1 : 3);
           const booklet = mapEntry?.booklet || 'Key Topic Booklet';
-
-          if (
-            tariff.includes('4 mark') ||
-            type.includes('4-mark') ||
-            type.includes('consequence') ||
-            type.includes('consequence_4')
-          ) {
+          if (mapEntry?.examEndPage && mapEntry.examEndPage > examStartPg) {
             return {
               inWorkbook: true,
-              label: `In Printed Workbook • Page ${examStartPg} (${booklet})`,
-            };
-          }
-          if (
-            tariff.includes('8 mark') ||
-            tariff.includes('12 mark') ||
-            type.includes('narrative') ||
-            type.includes('importance')
-          ) {
-            return {
-              inWorkbook: true,
-              label: `In Printed Workbook • Pages ${examStartPg}–${examEndPg} (${booklet})`,
+              label: `In Printed Workbook • Pages ${examStartPg}–${mapEntry.examEndPage} (${booklet})`,
             };
           }
           return {
             inWorkbook: true,
-            label: `In Printed Workbook • Pages ${examStartPg}–${examEndPg} (${booklet})`,
+            label: `In Printed Workbook • Page ${examStartPg} (${booklet})`,
           };
         }
 
@@ -10277,6 +10807,32 @@ export function renderLesson(lesson) {
         if (unitId === 'usa') {
           const startPg = 2 + lNum * 2;
           const endPg = startPg + 1;
+          const isUsaUtility =
+            type.includes('utility') ||
+            text.includes('how useful') ||
+            /\b3\s*\(\s*a\s*\)/i.test(text);
+          if (isUsaUtility) {
+            const isPrintedUsaQ3a =
+              qObj?.inWorkbook === true ||
+              (ktNum === 1 && lNum === 3) ||
+              (ktNum === 2 && lNum === 4) ||
+              (ktNum === 3 && lNum === 3) ||
+              (ktNum === 4 && lNum === 1);
+            if (isPrintedUsaQ3a) {
+              return {
+                inWorkbook: true,
+                label: qObj?.workbook_badge || 'In Printed Workbook • Pages 16–17',
+              };
+            }
+            return {
+              inWorkbook: false,
+              label:
+                qObj?.workbook_badge || 'Digital Interactive Extension • Not in Printed Workbook',
+              note:
+                qObj?.workbook_note ||
+                'This 8-mark source utility enquiry is provided as an interactive digital extension alongside the printed Key Topic workbook.',
+            };
+          }
           if (tariff.includes('4 mark') || type.includes('inference_4m')) {
             return { inWorkbook: true, label: `In Printed Workbook • Page ${endPg}` };
           }
@@ -10291,6 +10847,19 @@ export function renderLesson(lesson) {
         }
 
         // 6. COLD WAR & OTHER UNITS WITH COMPANION WORKBOOKS
+        if (unitId === 'cold_war') {
+          const mapEntry =
+            WORKBOOK_PAGE_MAP?.cold_war?.[lessonId] ||
+            WORKBOOK_PAGE_MAP?.cold_war?.[`lesson_${lNum}`];
+          if (mapEntry?.page) {
+            const booklet = mapEntry.booklet || 'Pupil Workbook';
+            return {
+              inWorkbook: true,
+              label: `In Printed Workbook • Page ${mapEntry.page + 1} (${booklet})`,
+            };
+          }
+        }
+
         const unitsWithWorkbooks = [
           'cold_war',
           'medieval_england',
@@ -10309,6 +10878,14 @@ export function renderLesson(lesson) {
 
         if (unitsWithWorkbooks.includes(unitId)) {
           return { inWorkbook: true, label: 'In Printed Workbook • Companion Spread' };
+        }
+
+        if (qObj && qObj.inWorkbook === true) {
+          return {
+            inWorkbook: true,
+            label: 'In Printed Workbook',
+            note: qObj.workbook_note || '',
+          };
         }
 
         return null;
@@ -10365,6 +10942,196 @@ export function renderLesson(lesson) {
         ],
       };
 
+      const buildUnifiedEdexcelSourceHeader = (stim, fallbackTitle = '') => {
+        if (!stim || typeof stim !== 'object') {
+          return String(fallbackTitle || 'Contemporary Primary Source').trim();
+        }
+        const stripSourceNoise = (val) =>
+          String(val || '')
+            .replace(
+              /^(?:Source\s+[A-Z0-9]+|Interpretation\s+[0-9]+)\s*(?:\([^)]*\))?\s*[:.-]\s*/i,
+              '',
+            )
+            .replace(/^source[_-\s]*[A-Z0-9]+[:\s-]*/i, '')
+            .replace(/^(?:Clinical|Archival|Documentary)\s+Photograph\s*:\s*/i, '')
+            .replace(/,?\s*\b(?:Art\.)?IWM\s+[A-Z0-9()/\s-]+?(?=[),.;]|$)/gi, '')
+            .replace(/,?\s*\bBundesarchiv\s+(?:Bild|R)\s+[A-Z0-9()/\s-]+?(?=[),.;]|$)/gi, '')
+            .replace(/,?\s*\bNLW\s*MS\s*[A-Z0-9-]+/gi, '')
+            .replace(/,?\s*\bMS\s+(?:Lat\.?|Nouvelle\s+acquisition\s+latine)\s*[0-9/\s]+/gi, '')
+            .replace(
+              /\s*\((?:[^()]*(?:Imperial War Museum|Bundesarchiv|Wellcome|The National Archives|National Archives,\s*Kew|Public Domain|Crown Copyright|WO\s*\d+|National Library of Wales|British Library|Bibliothèque|Presidential Library)[^()]*)\)/gi,
+              '',
+            )
+            .replace(
+              /\s*\/\s*(?:Wellcome Collection|Public Domain|Crown Copyright|Imperial War Museum|[A-Z][A-Za-z\s]+Presidential Library(?:\s+and\s+Museum)?)/gi,
+              '',
+            )
+            .replace(/\(\s*[,;/]?\s*\)/g, '')
+            .replace(/\(\s*,\s*/g, '(')
+            .replace(/,\s*\)/g, ')')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        const isPureArchiveCredit = (s) =>
+          /^(?:Bundesarchiv\b|Imperial War Museum\b|The National Archives\b|The Wellcome Collection\b|Münchner Stadtmuseum\b|Austrian National Library\b|Politisches Archiv\b|Library of Congress\b|National Archives\b|USHMM\b|Yad Vashem\b)/i.test(
+            s,
+          ) || /\bBundesarchiv\s+(?:Bild|R\s*\d)/i.test(s);
+
+        const titleClean = stripSourceNoise(
+          stim.title || stim.label || fallbackTitle || '',
+        );
+        let provClean = stripSourceNoise(
+          stim.provenance || stim.attribution || stim.citation || '',
+        );
+        if (isPureArchiveCredit(provClean)) provClean = '';
+
+        const rawCap = stripSourceNoise(stim.caption || '');
+        let capSent = '';
+        if (rawCap) {
+          const sentMatch = rawCap.match(
+            /^((?:.*?(?:Dr|Mr|Mrs|Ms|St|Gen|Col|Capt|Prof|Rev|Vol|No|c|p|pp|[A-Z])\.\s+)*?[^.!?]{35,}?[.!?])(?:\s+|$)/,
+          );
+          capSent = (sentMatch ? sentMatch[1] : rawCap).trim();
+          if (capSent.length > 225) {
+            capSent = capSent.replace(
+              /,\s*(?:clearly revealing|with Middle Welsh|mapping dozens|illustrating specialized|classifying medicinal)[\s\S]*$/,
+              '.',
+            );
+          }
+        }
+
+        const hasTxt = Boolean(String(stim.content || stim.text || stim.extract || '').trim());
+        const hasImg = Boolean(stim.image || stim.src || stim.image_url || stim.asset_path);
+
+        // Written extract accompanied by an author/subject portrait: keep the written document attribution
+        if (
+          hasTxt &&
+          hasImg &&
+          titleClean &&
+          /\b(photograph|portrait|seated|standing|pictured|robes|booking|camera)\b/i.test(capSent) &&
+          !/\b(photograph|photo|postcard|poster|cartoon)\b/i.test(titleClean)
+        ) {
+          return titleClean;
+        }
+
+        // Visual-only primary source: promote first sentence of historical caption directly into Edexcel header
+        if (!hasTxt && hasImg) {
+          return capSent || titleClean || provClean || 'Contemporary Visual Source';
+        }
+
+        // Written source where caption carries fuller Edexcel NOP attribution (author/venue/context)
+        if (
+          capSent &&
+          capSent.length > titleClean.length + 12 &&
+          (!/^From\b/i.test(titleClean) || /\bby\b/i.test(capSent))
+        ) {
+          const yrMatch = (titleClean + ' ' + provClean).match(/\b(1[0-9]{3}|20[0-2][0-9])\b/);
+          if (yrMatch && !/\b(1[0-9]{3}|20[0-2][0-9])\b/.test(capSent)) {
+            return capSent.replace(/\.?$/, ` (${yrMatch[1]}).`);
+          }
+          return capSent;
+        }
+
+        if (
+          titleClean &&
+          provClean &&
+          provClean.length < 75 &&
+          !/^from\b/i.test(provClean) &&
+          !provClean.toLowerCase().includes(titleClean.toLowerCase().slice(0, 22)) &&
+          !titleClean.toLowerCase().includes(provClean.toLowerCase().slice(0, 22))
+        ) {
+          return `${titleClean} (${provClean.replace(/\.$/, '')})`;
+        }
+
+        return titleClean || provClean || capSent || 'Contemporary Primary Source';
+      };
+
+      const isVocabTermPresentInStimulus = (term, stimHtmlBlob) => {
+        if (!term || !stimHtmlBlob) return false;
+        const norm = (str) =>
+          String(str || '')
+            .replace(/<[^>]+>/g, ' ')
+            .toLowerCase()
+            .replace(/[’‘]/g, "'")
+            .replace(/\s+/g, ' ')
+            .trim();
+        const blob = norm(stimHtmlBlob);
+        if (!blob) return false;
+
+        // If term carries an explicit acronym in parentheses like "(DAP)" or "(SA)" or "(PLO)",
+        // check if that exact acronym is absent while a longer compound (like NSDAP) is present.
+        const parenMatch = String(term).match(/\(([A-Z]{2,6})\)/);
+        const coreTerm = norm(String(term).replace(/\s*\([^)]*\)\s*/g, ' '));
+        if (parenMatch) {
+          const acr = parenMatch[1].toLowerCase();
+          const acrRegex = new RegExp(`\\b${acr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+          if (acrRegex.test(blob)) return true;
+          // Guard against "German Workers' Party (DAP)" falsely matching "...National Socialist German Workers' Party (NSDAP)"
+          if (acr === 'dap' && /\bnsdap\b/i.test(blob)) return false;
+        }
+
+        if (coreTerm.length >= 4 && blob.includes(coreTerm)) return true;
+
+        // Check distinctive multi-character proper nouns (e.g. "Hofbräuhaus" in "Hofbräuhaus rally")
+        const genericStop = new Set([
+          'german',
+          'germany',
+          'british',
+          'britain',
+          'american',
+          'america',
+          'party',
+          'workers',
+          'national',
+          'socialist',
+          'treaty',
+          'government',
+          'minister',
+          'president',
+          'chancellor',
+          'general',
+          'rally',
+          'march',
+          'crisis',
+          'policy',
+          'programme',
+          'program',
+          'act',
+          'law',
+          'plan',
+          'doctrine',
+          'munich',
+          'berlin',
+          'london',
+          'washington',
+          'soviet',
+          'western',
+          'front',
+          'medical',
+          'battle',
+          'public',
+          'church',
+          'league',
+          'council',
+          'committee',
+        ]);
+        const tokens = coreTerm
+          .split(/[\s/-]+/)
+          .map((t) => t.replace(/^[^a-z0-9äöüß]+|[^a-z0-9äöüß]+$/gi, ''))
+          .filter((t) => t.length >= 6 && !genericStop.has(t));
+
+        if (tokens.length > 0 && tokens.every((tok) => blob.includes(tok))) {
+          return true;
+        }
+        return false;
+      };
+      const escStimAttr = (val) =>
+        String(val || '')
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+
       const renderSingleStimulus = (stim, sIdx, uidSuffix = '') => {
         let stimTitle = '';
         let stimContent = '';
@@ -10377,51 +11144,81 @@ export function renderLesson(lesson) {
             stimTitle = `Interpretation ${sIdx + 1}`;
             stimContent = stim;
           }
-        } else {
-          stimTitle = stim.title || stim.id || `Interpretation ${sIdx + 1}`;
-          stimContent = stim.content || stim.text || '';
+        } else if (stim && typeof stim === 'object') {
+          stimTitle =
+            stim.title || stim.label || stim.id || `Source ${String.fromCharCode(65 + sIdx)}`;
+          stimContent = stim.content || stim.text || stim.extract || '';
         }
 
-        const isInterp = /Interpretation\s+([0-9]+)/i.test(stimTitle);
-        const interpMatch = stimTitle.match(/Interpretation\s+([0-9]+)/i);
-        const interpNum = interpMatch ? interpMatch[1] : `${sIdx + 1}`;
+        const isInterp = Boolean(
+          (typeof stim === 'object' && stim?.isInterp) ||
+            /Interpretation\s+([0-9]+)/i.test(stimTitle) ||
+            (typeof stim === 'object' && /^interp[_-\s]*[0-9]+$/i.test(String(stim?.id || ''))),
+        );
+        const interpMatch =
+          stimTitle.match(/Interpretation\s+([0-9]+)/i) ||
+          String((typeof stim === 'object' && stim?.id) || '').match(/interp[_-\s]*([0-9]+)/i);
+        const interpNum =
+          (typeof stim === 'object' && stim?.interpNum) ||
+          (interpMatch ? interpMatch[1] : `${sIdx + 1}`);
 
-        const srcMatch = stimTitle.match(/Source\s+([A-Z0-9]+)/i);
-        const srcLetter = srcMatch ? srcMatch[1].toUpperCase() : String.fromCharCode(65 + sIdx);
+        const srcMatch =
+          stimTitle.match(/Source\s+([A-Z0-9]+)/i) ||
+          String((typeof stim === 'object' && stim?.id) || '').match(/^source[_-\s]*([A-Z0-9]+)$/i);
+        const srcLetter =
+          (typeof stim === 'object' && stim?.letter
+            ? String(stim.letter).trim().toUpperCase()
+            : '') || (srcMatch ? srcMatch[1].toUpperCase() : String.fromCharCode(65 + sIdx));
 
         if (isInterp) {
           const cleanInterpTitle = stimTitle
             .replace(/^Interpretation\s+[0-9]+[:\s-]*/i, '')
-            .replace(/^\(([^)]+)\)[:\s-]*/i, '$1: ')
+            .replace(/^interp[_-\s]*[0-9]+[:\s-]*/i, '')
+            .replace(/^\(([^)]+)\)[:\s-]*/i, '$1')
+            .replace(/:$/, '')
             .trim();
+          const rawInterpProv =
+            typeof stim === 'object' && stim !== null
+              ? String(stim.provenance || stim.attribution || stim.citation || '')
+                  .replace(/^Interpretation\s+[0-9]+[:\s-]*/i, '')
+                  .trim()
+              : '';
+          const interpHeaderText =
+            rawInterpProv && cleanInterpTitle
+              ? rawInterpProv.toLowerCase().includes(cleanInterpTitle.toLowerCase())
+                ? rawInterpProv
+                : cleanInterpTitle.toLowerCase().includes(rawInterpProv.toLowerCase())
+                  ? cleanInterpTitle
+                  : `${cleanInterpTitle} — ${rawInterpProv}`
+              : rawInterpProv || cleanInterpTitle || 'Historical Interpretation';
+
           const interpCardId = uidSuffix
             ? `interpretation-card-${interpNum}-${uidSuffix}`
             : `interpretation-card-${interpNum}`;
+          const hasReadableInterp = Boolean(String(stimContent || '').trim());
+          const inlineAudioHtml = hasReadableInterp
+            ? renderAudioPlaybackBar('Listen', 'source-audio-bar flat-inline-audio')
+            : '';
 
           return `
-            <details class="cme-source-drawer weimar-source-drawer weimar-interpretation-drawer archival-drawer gcse-source-container archival-source-box" id="${interpCardId}" data-interpretation-num="${interpNum}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-              <summary style="min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                  <span class="archival-meta-tag" style="background: #9a3412; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">INTERPRETATION ${interpNum}</span>
-                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanInterpTitle || 'Historical View'}</span>
+            <div class="archival-source-box flat-stimulus-card p3-pane-cell p3-pane-interp" id="${interpCardId}" data-interpretation-num="${interpNum}">
+              <div class="flat-stimulus-header p3-pane-header">
+                <div class="p3-pane-header-left">
+                  <span class="p3-pane-badge p3-pane-badge-interp">INTERP ${interpNum}</span>
+                  <span class="p3-pane-prov" title="${escStimAttr(interpHeaderText)}">${interpHeaderText}</span>
                 </div>
-                <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
-                  Historiographical View &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
-                </span>
-              </summary>
-              <div class="weimar-interpretation-content" style="padding: 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
-                <div class="archival-source-body" style="font-family: 'Georgia', serif; font-style: italic; font-size: 1.0rem; line-height: 1.7; color: #1e293b; background: #fffdfa; padding: 12px 16px; border-left: 4px solid #ea580c; border-radius: 4px;">
-                  ${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}
-                </div>
-                <div class="archival-citation-footer" style="font-size: 0.78rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 10px; display: flex; justify-content: space-between; align-items: center;">
-                  <span><strong>Historical Analysis:</strong> Pearson Edexcel GCSE Paper 3 Section B Historical Interpretation</span>
-                  <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.72rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">INTERP ${interpNum}</span>
-                </div>
+                ${inlineAudioHtml ? `<div class="p3-pane-header-right">${inlineAudioHtml}</div>` : ''}
               </div>
-            </details>
+              <div class="p3-pane-body">
+                <div class="archival-source-body p3-pane-prose p3-pane-interp-prose">${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}</div>
+              </div>
+            </div>
           `;
         } else {
-          const cleanSourceTitle = stimTitle.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim();
+          const cleanSourceTitle = stimTitle
+            .replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '')
+            .replace(/^source[_-\s]*[A-Z0-9]+[:\s-]*/i, '')
+            .trim();
           const sourceCardId = uidSuffix
             ? `exam-source-card-${srcLetter}-${uidSuffix}`
             : `exam-source-card-${srcLetter}`;
@@ -10430,270 +11227,799 @@ export function renderLesson(lesson) {
               ? stim.image || stim.src || stim.image_url || stim.asset_path || ''
               : '';
           const stimImgUrl = stimImg ? getAssetUrl(stimImg) : '';
-          const stimCaption = typeof stim === 'object' && stim !== null ? stim.caption || '' : '';
-          const stimProvenance =
+          const rawZoomCaption =
             typeof stim === 'object' && stim !== null
-              ? stim.provenance ||
-                stim.citation ||
-                cleanSourceTitle ||
-                'Contemporary Written Record'
-              : cleanSourceTitle || 'Contemporary Written Record';
+              ? String(stim.caption || '')
+                  .replace(/^(?:Source\s+[A-Z0-9]+|Interpretation\s+[0-9]+)\s*[:.-]\s*/i, '')
+                  .trim()
+              : '';
+          const stimHeaderText = buildUnifiedEdexcelSourceHeader(stim, cleanSourceTitle);
 
-          return `
-            <details class="cme-source-drawer weimar-source-drawer usa-source-drawer gcse-source-drawer exam-stimulus-drawer archival-drawer gcse-source-container archival-source-box" id="${sourceCardId}" data-source-letter="${srcLetter}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-              <summary style="min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                  <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">SOURCE ${srcLetter}</span>
-                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanSourceTitle || 'Archival Primary Record'}</span>
+          const hasWrittenBody = Boolean(String(stimContent || '').trim());
+          const hasReadableSource = hasWrittenBody || Boolean(stimHeaderText);
+          const inlineAudioHtml = hasReadableSource
+            ? renderAudioPlaybackBar('Listen', 'source-audio-bar flat-inline-audio')
+            : '';
+
+          const imgAltText =
+            (typeof stim === 'object' && stim?.image_alt) ||
+            cleanSourceTitle ||
+            stimHeaderText ||
+            `Source ${srcLetter}`;
+          const modalCaption = rawZoomCaption || stimHeaderText || `Source ${srcLetter}`;
+          const formattedBodyHtml = hasWrittenBody
+            ? typeof formatBold !== 'undefined'
+              ? formatBold(stimContent)
+              : stimContent
+            : '';
+
+          let paneBodyHtml = '';
+          if (stimImgUrl && hasWrittenBody) {
+            paneBodyHtml = `
+              <div class="p3-pane-body p3-pane-media-split">
+                <div class="p3-pane-thumb-side" data-action="open-modal" data-src="${stimImgUrl}" data-caption="${escStimAttr(modalCaption)}">
+                  <img src="${stimImgUrl}" alt="${escStimAttr(imgAltText)}" class="archival-image" data-action="open-modal" data-src="${stimImgUrl}" data-caption="${escStimAttr(modalCaption)}">
+                  <div class="p3-zoom-hint no-print">🔍 Click to enlarge</div>
                 </div>
-                <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
-                  Archival Evidence &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
-                </span>
-              </summary>
-              <div class="weimar-source-content" style="padding: 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
-                ${
-                  stimImgUrl
-                    ? `
-                  <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 12px;">
-                    <div style="flex: 0 0 280px; max-width: 320px; position: relative; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-                      <img src="${stimImgUrl}" alt="${cleanSourceTitle || 'Source ' + srcLetter}" data-action="open-modal" data-src="${stimImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: 240px; object-fit: contain; display: block; margin: 0 auto; border-radius: 4px;">
-                    </div>
-                    <div style="flex: 1 1 300px;">
-                      ${
-                        stimContent
-                          ? renderArchivalSourceBody(stimContent, stim, {
-                              maxHeight: 'none',
-                              fontSize: '1.0rem',
-                              lineHeight: '1.68',
-                              padding: '12px 16px',
-                              marginBottom: '10px',
-                              accentColor: '#1e40af',
-                            })
-                          : ''
-                      }
-                      ${
-                        stimCaption
-                          ? `
-                        <div style="font-size: 0.86rem; color: #475569; line-height: 1.45; margin-bottom: 8px;">
-                          <strong style="color: #1e3a8a;">Archival Caption:</strong> ${stimCaption}
-                        </div>
-                      `
-                          : ''
-                      }
-                    </div>
-                  </div>
-                `
-                    : renderArchivalSourceBody(stimContent, stim, {
-                        maxHeight: 'none',
-                        fontSize: '1.02rem',
-                        lineHeight: '1.7',
-                        padding: '12px 16px',
-                        accentColor: '#1e40af',
-                      })
-                }
-                <div class="archival-citation-footer" style="font-size: 0.78rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 10px; display: flex; justify-content: space-between; align-items: center;">
-                  <span><strong>Provenance:</strong> ${stimProvenance}</span>
-                  <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.72rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">SOURCE ${srcLetter}</span>
-                </div>
+                <div class="archival-source-body p3-pane-prose">${formattedBodyHtml}</div>
               </div>
-            </details>
+            `;
+          } else if (stimImgUrl) {
+            paneBodyHtml = `
+              <div class="p3-pane-body p3-pane-img-only" data-action="open-modal" data-src="${stimImgUrl}" data-caption="${escStimAttr(modalCaption)}">
+                <img src="${stimImgUrl}" alt="${escStimAttr(imgAltText)}" class="archival-image" data-action="open-modal" data-src="${stimImgUrl}" data-caption="${escStimAttr(modalCaption)}">
+                <div class="p3-zoom-hint no-print">🔍 Click to enlarge</div>
+              </div>
+            `;
+          } else {
+            paneBodyHtml = `
+              <div class="p3-pane-body">
+                <div class="archival-source-body p3-pane-prose">${formattedBodyHtml}</div>
+              </div>
+            `;
+          }
+
+          const provSpeechClass = !hasWrittenBody ? ' archival-source-body' : '';
+          return `
+            <div class="archival-source-box flat-stimulus-card p3-pane-cell p3-pane-source" id="${sourceCardId}" data-source-letter="${srcLetter}">
+              <div class="flat-stimulus-header p3-pane-header">
+                <div class="p3-pane-header-left">
+                  <span class="p3-pane-badge p3-pane-badge-source">SOURCE ${srcLetter}</span>
+                  <span class="p3-pane-prov${provSpeechClass}" title="${escStimAttr(stimHeaderText)}">${stimHeaderText}</span>
+                </div>
+                ${inlineAudioHtml ? `<div class="p3-pane-header-right">${inlineAudioHtml}</div>` : ''}
+              </div>
+              ${paneBodyHtml}
+            </div>
           `;
         }
       };
 
       const validEpStimulus = (epStimulus || []).filter((s) => {
         if (!s) return false;
-        const txt = typeof s === 'string' ? s : s.content || s.text || '';
+        const txt = typeof s === 'string' ? s : s.content || s.text || s.extract || '';
         const hasImg = typeof s === 'object' && !!(s.image || s.src || s.image_url || s.asset_path);
         if (/^contemporary archival extract\.?$/i.test(String(txt).trim())) return false;
         return Boolean(String(txt).trim() || hasImg);
       });
 
-      const formatStimulusForProjector = (stimList) => {
-        if (!Array.isArray(stimList) || stimList.length === 0) return '';
-        return stimList
-          .map((stim, idx) => {
-            if (typeof stim === 'string') {
-              const parts = stim.split('**:');
-              if (parts.length > 1) {
-                const t = parts[0].replace(/\*\*/g, '').trim();
-                const c = parts.slice(1).join('**:').trim();
-                return `<div style="margin-bottom:12px;"><strong>${t}:</strong><div style="margin-top:4px;font-style:italic;">${c}</div></div>`;
-              }
-              return `<div style="margin-bottom:12px;">${stim}</div>`;
-            }
-            const t = stim.title || stim.id || `Stimulus ${idx + 1}`;
-            const c = stim.content || stim.text || stim.caption || '';
-            const imgRaw = stim.image || stim.src || stim.image_url || stim.asset_path || '';
-            const imgHtml = imgRaw
-              ? `<div style="margin:8px 0;"><img src="${getAssetUrl(imgRaw)}" alt="${t}" style="max-height:260px;max-width:100%;object-fit:contain;border-radius:6px;border:1px solid #cbd5e1;"></div>`
+      const renderProjectorPane = (stim, idx) => {
+        let stimTitle = '';
+        let stimContent = '';
+        if (typeof stim === 'string') {
+          const parts = stim.split('**:');
+          if (parts.length > 1) {
+            stimTitle = parts[0].replace(/\*\*/g, '').trim();
+            stimContent = parts.slice(1).join('**:').trim();
+          } else {
+            stimTitle = `Interpretation ${idx + 1}`;
+            stimContent = stim;
+          }
+        } else if (stim && typeof stim === 'object') {
+          stimTitle =
+            stim.title || stim.label || stim.id || `Source ${String.fromCharCode(65 + idx)}`;
+          stimContent = stim.content || stim.text || stim.extract || '';
+        }
+
+        const isInterp = Boolean(
+          (typeof stim === 'object' && stim?.isInterp) ||
+            /Interpretation\s+([0-9]+)/i.test(stimTitle) ||
+            (typeof stim === 'object' && /^interp[_-\s]*[0-9]+$/i.test(String(stim?.id || ''))),
+        );
+        const interpMatch =
+          stimTitle.match(/Interpretation\s+([0-9]+)/i) ||
+          String((typeof stim === 'object' && stim?.id) || '').match(/interp[_-\s]*([0-9]+)/i);
+        const interpNum =
+          (typeof stim === 'object' && stim?.interpNum) ||
+          (interpMatch ? interpMatch[1] : `${idx + 1}`);
+
+        const srcMatch =
+          stimTitle.match(/Source\s+([A-Z0-9]+)/i) ||
+          String((typeof stim === 'object' && stim?.id) || '').match(/^source[_-\s]*([A-Z0-9]+)$/i);
+        const srcLetter =
+          (typeof stim === 'object' && stim?.letter
+            ? String(stim.letter).trim().toUpperCase()
+            : '') || (srcMatch ? srcMatch[1].toUpperCase() : String.fromCharCode(65 + idx));
+
+        if (isInterp) {
+          const cleanInterpTitle = stimTitle
+            .replace(/^Interpretation\s+[0-9]+[:\s-]*/i, '')
+            .replace(/^interp[_-\s]*[0-9]+[:\s-]*/i, '')
+            .replace(/^\(([^)]+)\)[:\s-]*/i, '$1')
+            .replace(/:$/, '')
+            .trim();
+          const rawInterpProv =
+            typeof stim === 'object' && stim !== null
+              ? String(stim.provenance || stim.attribution || stim.citation || '')
+                  .replace(/^Interpretation\s+[0-9]+[:\s-]*/i, '')
+                  .trim()
               : '';
-            const prov = stim.provenance || stim.citation || '';
-            return `<div style="margin-bottom:14px;"><strong>${t}</strong>${imgHtml}${c ? `<div style="margin-top:4px;font-style:italic;">${c}</div>` : ''}${prov ? `<div style="margin-top:4px;font-size:0.9rem;color:#475569;"><strong>Provenance:</strong> ${prov}</div>` : ''}</div>`;
-          })
-          .join('');
+          const interpHeaderText =
+            rawInterpProv && cleanInterpTitle
+              ? rawInterpProv.toLowerCase().includes(cleanInterpTitle.toLowerCase())
+                ? rawInterpProv
+                : cleanInterpTitle.toLowerCase().includes(rawInterpProv.toLowerCase())
+                  ? cleanInterpTitle
+                  : `${cleanInterpTitle} — ${rawInterpProv}`
+              : rawInterpProv || cleanInterpTitle || 'Historical Interpretation';
+
+          const bodyHtml = typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent;
+          return `
+            <div class="proj-pane proj-pane-interp">
+              <div class="proj-pane-header">
+                <span class="proj-badge proj-badge-interp">INTERP ${interpNum}</span>
+                <span class="proj-prov">${interpHeaderText}</span>
+              </div>
+              <div class="proj-pane-body">${bodyHtml}</div>
+            </div>
+          `;
+        }
+
+        const cleanSourceTitle = stimTitle
+          .replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '')
+          .replace(/^source[_-\s]*[A-Z0-9]+[:\s-]*/i, '')
+          .trim();
+        const stimHeaderText = buildUnifiedEdexcelSourceHeader(stim, cleanSourceTitle);
+
+        const imgRaw =
+          typeof stim === 'object' && stim !== null
+            ? stim.image || stim.src || stim.image_url || stim.asset_path || ''
+            : '';
+        const imgUrl = imgRaw ? getAssetUrl(imgRaw) : '';
+        const hasProse = Boolean(String(stimContent || '').trim());
+        const proseText = hasProse
+          ? typeof formatBold !== 'undefined'
+            ? formatBold(stimContent)
+            : stimContent
+          : '';
+
+        let bodyInner = '';
+        if (imgUrl && proseText) {
+          bodyInner = `
+            <div class="proj-pane-media">
+              <img src="${imgUrl}" alt="${escStimAttr(stimHeaderText)}">
+              <div>${proseText}</div>
+            </div>
+          `;
+        } else if (imgUrl) {
+          bodyInner = `
+            <div style="text-align: center;">
+              <img src="${imgUrl}" alt="${escStimAttr(stimHeaderText)}" style="max-height: 190px; max-width: 100%; object-fit: contain; border-radius: 6px; border: 1px solid #cbd5e1;">
+            </div>
+          `;
+        } else {
+          bodyInner = proseText;
+        }
+
+        return `
+          <div class="proj-pane proj-pane-source">
+            <div class="proj-pane-header">
+              <span class="proj-badge proj-badge-source">SOURCE ${srcLetter}</span>
+              <span class="proj-prov">${stimHeaderText}</span>
+            </div>
+            <div class="proj-pane-body">${bodyInner}</div>
+          </div>
+        `;
       };
 
-      const findSourceItemByLetter = (letter) => {
-        const L = String(letter || '').toUpperCase();
+      const formatStimulusForProjector = (stimList, opts = {}) => {
+        if (opts && Array.isArray(opts.quadSources) && opts.quadSources.length > 0) {
+          const topInterps = (stimList || []).slice(0, 2).map(ensureInterpItem).filter(Boolean);
+          const botSources = opts.quadSources
+            .slice(0, 2)
+            .map(ensureSupportSourceItem)
+            .filter(Boolean);
+          const seamLabel =
+            opts.seamMode === 'q3c'
+              ? '🔗 Evidence Pairing: Left = Interp 1 ↔ Source B  •  Right = Interp 2 ↔ Source C'
+              : '📎 Supporting Enquiry Booklet: Left = Interp 1 ↔ Source B  •  Right = Interp 2 ↔ Source C';
+          return `
+            <div class="proj-quad-matrix">
+              <div class="proj-quad-top">
+                ${topInterps.map((st, idx) => renderProjectorPane(st, idx)).join('')}
+              </div>
+              <div class="proj-quad-seam">
+                <span>${seamLabel}</span>
+                <button type="button" onclick="window.toggleProjectorQuadSources && window.toggleProjectorQuadSources(this)" style="background: #ffffff; color: #1e3a8a; border: 1px solid #93c5fd; border-radius: 5px; padding: 2px 9px; font-size: 0.76rem; font-weight: 700; cursor: pointer;">Hide Sources B &amp; C ▴</button>
+              </div>
+              <div class="proj-quad-bottom">
+                ${botSources.map((st, idx) => renderProjectorPane(st, idx)).join('')}
+              </div>
+            </div>
+          `;
+        }
+        if (!Array.isArray(stimList) || stimList.length === 0) return '';
+        if (stimList.length >= 2) {
+          return `<div class="proj-pair-grid">${stimList
+            .map((st, idx) => renderProjectorPane(st, idx))
+            .join('')}</div>`;
+        }
+        return `<div class="proj-single-card">${renderProjectorPane(stimList[0], 0)}</div>`;
+      };
+
+      const renderStimulusCollection = (items, uid) => {
+        if (!Array.isArray(items) || items.length === 0) return '';
+        const gridClass = items.length >= 2 ? 'p3-adjoined-pair' : 'exam-stimulus-single';
+        return `<div class="${gridClass}">${items
+          .map((st, sIdx) => renderSingleStimulus(st, sIdx, uid))
+          .join('')}</div>`;
+      };
+
+      const ensureInterpItem = (item, idx) => {
+        if (!item) return null;
+        if (typeof item === 'string') {
+          return /Interpretation\s+[0-9]+/i.test(item)
+            ? item
+            : `**Interpretation ${idx + 1}**: ${item}`;
+        }
+        const m = String(item.title || item.label || item.id || '').match(
+          /(?:Interpretation|interp[_-\s]*)\s*([0-9]+)/i,
+        );
+        return {
+          ...item,
+          isInterp: true,
+          interpNum: item.interpNum || (m ? m[1] : `${idx + 1}`),
+        };
+      };
+
+      const ensureSupportSourceItem = (item, idx) => {
+        if (!item) return null;
+        const defaultLtr = idx === 0 ? 'B' : idx === 1 ? 'C' : String.fromCharCode(66 + idx);
+        if (typeof item === 'string') {
+          return /^Source\s+[A-Z]/i.test(item.replace(/^\*\*/, '').trim())
+            ? item
+            : `**Source ${defaultLtr}**: ${item}`;
+        }
+        const m = String(item.title || item.label || item.id || '').match(
+          /(?:^Source\s+|^source[_-\s]*)([A-E])\b/i,
+        );
+        const ltr =
+          (item.letter ? String(item.letter).trim().toUpperCase() : '') ||
+          (m ? m[1].toUpperCase() : defaultLtr);
+        return {
+          ...item,
+          isInterp: false,
+          letter: ltr,
+        };
+      };
+
+      const renderQuadMatrix = (interps, supportSources, seamMode, uid) => {
+        const normInterps = (interps || []).slice(0, 2).map(ensureInterpItem).filter(Boolean);
+        const normSources = (supportSources || [])
+          .slice(0, 2)
+          .map(ensureSupportSourceItem)
+          .filter(Boolean);
+        if (normInterps.length === 0 && normSources.length === 0) return '';
+        if (normSources.length === 0) {
+          return renderStimulusCollection(normInterps, `${uid}_interp`);
+        }
+        const seamText =
+          seamMode === 'q3c'
+            ? '🔗 Evidence Pairing: Left = Interp 1 ↔ Source B  •  Right = Interp 2 ↔ Source C'
+            : '📎 Supporting Enquiry Booklet: Left = Interp 1 ↔ Source B  •  Right = Interp 2 ↔ Source C (Contextual support — evaluate Interps 1 &amp; 2 + Own Knowledge)';
+        return `
+          <div class="p3-quad-matrix" data-seam-mode="${seamMode}">
+            <div class="p3-quad-top-row">
+              ${normInterps.map((st, sIdx) => renderSingleStimulus(st, sIdx, `${uid}_i${sIdx + 1}`)).join('')}
+            </div>
+            <div class="p3-quad-seam no-print">
+              <span class="p3-quad-seam-text">${seamText}</span>
+              <div class="p3-quad-seam-actions">
+                <button type="button" class="p3-seam-btn" aria-expanded="true" onclick="window.toggleP3QuadSources && window.toggleP3QuadSources(this)">Hide Sources B &amp; C ▴</button>
+              </div>
+            </div>
+            <div class="p3-quad-bottom-row">
+              ${normSources.map((st, sIdx) => renderSingleStimulus(st, sIdx, `${uid}_s${sIdx + 1}`)).join('')}
+            </div>
+          </div>
+        `;
+      };
+
+      const findSourceItemByLetter = (
+        letter,
+        { preferLessonSources = false, qObj = null } = {},
+      ) => {
+        const L = String(letter || '').trim().toUpperCase();
         if (!L) return null;
 
-        // 1. Check validEpStimulus by explicit Source L title
-        const fromEp = validEpStimulus.find((s) => {
-          const t = typeof s === 'string' ? s : s.title || s.id || '';
-          return new RegExp(`^Source\\s+${L}\\b`, 'i').test(String(t).trim());
-        });
-        if (fromEp) return fromEp;
+        const matchesLetter = (s) => {
+          if (!s) return false;
+          if (typeof s === 'object') {
+            if (s.letter && String(s.letter).trim().toUpperCase() === L) return true;
+            const rawId = String(s.id || '').trim();
+            if (
+              rawId.toUpperCase() === L ||
+              new RegExp(`^source[_\\-\\s]*${L}$`, 'i').test(rawId)
+            ) {
+              return true;
+            }
+          }
+          const t = typeof s === 'string' ? s : s.title || s.label || s.id || '';
+          return new RegExp(`^(?:\\*\\*)?Source\\s+${L}\\b`, 'i').test(String(t).trim());
+        };
 
-        // 2. Check lesson.exam_practice.sources
+        const normalizeSource = (s) => {
+          if (!s) return null;
+          if (typeof s === 'string') return s;
+          const rawTitle = String(s.title || s.label || s.id || '').trim();
+          const normalizedTitle = rawTitle
+            ? /^Source\s+/i.test(rawTitle)
+              ? rawTitle
+              : `Source ${L}: ${rawTitle}`
+            : `Source ${L}`;
+          return {
+            ...s,
+            isInterp: false,
+            letter: L,
+            title: normalizedTitle,
+            content: s.content || s.text || s.extract || '',
+            provenance: s.provenance || s.attribution || s.citation || '',
+          };
+        };
+
+        // 1. Always check question-level sources / supporting_sources / stimulus first if explicitly provided on qObj
+        if (qObj && typeof qObj === 'object') {
+          if (Array.isArray(qObj.sources)) {
+            const fromQSrcs = qObj.sources.find(matchesLetter);
+            if (fromQSrcs) return normalizeSource(fromQSrcs);
+          }
+          if (Array.isArray(qObj.supporting_sources)) {
+            const fromQSup = qObj.supporting_sources.find(matchesLetter);
+            if (fromQSup) return normalizeSource(fromQSup);
+          }
+          if (Array.isArray(qObj.stimulus)) {
+            const fromQStim = qObj.stimulus.find(matchesLetter);
+            if (fromQStim) return normalizeSource(fromQStim);
+          }
+        }
+
+        // 2. Check lesson.exam_practice.sources and lesson.exam_practice.supporting_sources
         const epSrcList = Array.isArray(lesson?.exam_practice?.sources)
           ? lesson.exam_practice.sources
           : [];
-        const fromEpSrcs = epSrcList.find((s) => {
-          const t = s.title || s.id || '';
-          return new RegExp(`^Source\\s+${L}\\b`, 'i').test(String(t).trim());
-        });
-        if (fromEpSrcs) {
-          return {
-            ...fromEpSrcs,
-            title: fromEpSrcs.title || fromEpSrcs.id || `Source ${L}`,
-            content: fromEpSrcs.content || fromEpSrcs.text || '',
-          };
+        const fromEpSrcs = epSrcList.find(matchesLetter);
+        if (fromEpSrcs) return normalizeSource(fromEpSrcs);
+
+        const epSupList = Array.isArray(lesson?.exam_practice?.supporting_sources)
+          ? lesson.exam_practice.supporting_sources
+          : [];
+        const fromEpSup = epSupList.find(matchesLetter);
+        if (fromEpSup) return normalizeSource(fromEpSup);
+
+        const lookupInLessonSources = () => {
+          const lSrcs = Array.isArray(lesson?.sources) ? lesson.sources : [];
+          const byMatch = lSrcs.find(matchesLetter);
+          if (byMatch) return normalizeSource(byMatch);
+
+          const posIdx = L.charCodeAt(0) - 65;
+          if (posIdx >= 0 && posIdx < lSrcs.length) {
+            const candidate = lSrcs[posIdx];
+            const candLetter = String(candidate?.letter || '').trim().toUpperCase();
+            const candTitle = String(candidate?.title || candidate?.label || '').trim();
+            const hasConflictingLetter =
+              (candLetter && candLetter !== L) ||
+              (/^Source\s+[A-Z]\b/i.test(candTitle) &&
+                !new RegExp(`^Source\\s+${L}\\b`, 'i').test(candTitle));
+            if (!hasConflictingLetter) {
+              return normalizeSource(candidate);
+            }
+          }
+          return null;
+        };
+
+        const lookupInEpStimulus = () => {
+          const fromEp = validEpStimulus.find(matchesLetter);
+          return fromEp ? normalizeSource(fromEp) : null;
+        };
+
+        // 3. Multi-source enquiries (Q3a / Q3c / Q3d) prefer lesson.sources BEFORE validEpStimulus;
+        //    single-source Q1 Inference checks validEpStimulus BEFORE lesson.sources.
+        if (preferLessonSources) {
+          return lookupInLessonSources() || lookupInEpStimulus();
         }
+        return lookupInEpStimulus() || lookupInLessonSources();
+      };
 
-        // 3. Check lesson.sources by explicit Source L title/label, then positional fallback
-        const lSrcs = Array.isArray(lesson?.sources) ? lesson.sources : [];
-        const byTitle = lSrcs.find((s) => {
-          const t = s.title || s.label || '';
-          return new RegExp(`^Source\\s+${L}\\b`, 'i').test(String(t).trim());
-        });
-        if (byTitle) return byTitle;
+      const extractRequestedSourceLetters = (rawStr) => {
+        const letters = [];
+        const add = (ch) => {
+          const up = String(ch || '').trim().toUpperCase();
+          if (up && !letters.includes(up)) letters.push(up);
+        };
+        const text = String(rawStr || '');
+        for (const m of text.matchAll(/\bSources\s+([A-E])\s+(?:and|&)\s+([A-E])\b/gi)) {
+          add(m[1]);
+          add(m[2]);
+        }
+        for (const m of text.matchAll(/\bSource\s+([A-E])\b/gi)) {
+          add(m[1]);
+        }
+        return letters;
+      };
 
-        const posIdx = L.charCodeAt(0) - 65;
-        if (posIdx >= 0 && posIdx < lSrcs.length) {
-          const candidate = lSrcs[posIdx];
-          const candTitle = String(candidate?.title || candidate?.label || '').trim();
-          if (!/^Source\s+[A-Z]\b/i.test(candTitle) || new RegExp(`^Source\\s+${L}\\b`, 'i').test(candTitle)) {
-            return {
-              ...candidate,
-              title: candTitle
-                ? /^Source\s+/i.test(candTitle)
-                  ? candTitle
-                  : `Source ${L}: ${candTitle}`
-                : `Source ${L}`,
-            };
+      const resolveLessonInterpretations = (qObj) => {
+        if (Array.isArray(qObj?.interpretations) && qObj.interpretations.length > 0) {
+          return qObj.interpretations.map(ensureInterpItem).filter(Boolean);
+        }
+        if (
+          Array.isArray(qObj?.stimulus) &&
+          qObj.stimulus.some((s) =>
+            /interpretation/i.test(typeof s === 'string' ? s : s.title || s.label || s.id || ''),
+          )
+        ) {
+          return qObj.stimulus
+            .filter((s) =>
+              /interpretation/i.test(typeof s === 'string' ? s : s.title || s.label || s.id || ''),
+            )
+            .map(ensureInterpItem)
+            .filter(Boolean);
+        }
+        if (
+          Array.isArray(lesson?.exam_practice?.interpretations) &&
+          lesson.exam_practice.interpretations.length > 0
+        ) {
+          return lesson.exam_practice.interpretations.map(ensureInterpItem).filter(Boolean);
+        }
+        const epInterps = validEpStimulus.filter((s) =>
+          /interpretation/i.test(typeof s === 'string' ? s : s.title || s.label || s.id || ''),
+        );
+        if (epInterps.length > 0) return epInterps.map(ensureInterpItem).filter(Boolean);
+        if (Array.isArray(lesson?.interpretations) && lesson.interpretations.length > 0) {
+          return lesson.interpretations.map(ensureInterpItem).filter(Boolean);
+        }
+        if (
+          unitId === 'weimar_nazi_germany' &&
+          lesson?.id &&
+          WEIMAR_WORKBOOK_INTERPRETATIONS[lesson.id]
+        ) {
+          return WEIMAR_WORKBOOK_INTERPRETATIONS[lesson.id].map(ensureInterpItem).filter(Boolean);
+        }
+        return [];
+      };
+
+      const resolvePaper3Q3dSupportingSources = (qObj, inlineParsedSources = []) => {
+        // 1. Inline non-interpretation blocks from qObj.sourceExtract (>= 2 sources)
+        if (inlineParsedSources.length >= 2) {
+          return inlineParsedSources.slice(0, 2).map(ensureSupportSourceItem).filter(Boolean);
+        }
+        // 2. Explicit qObj.supporting_sources or qObj.sources array on the question itself
+        if (Array.isArray(qObj?.supporting_sources) && qObj.supporting_sources.length > 0) {
+          return qObj.supporting_sources.slice(0, 2).map(ensureSupportSourceItem).filter(Boolean);
+        }
+        if (Array.isArray(qObj?.sources) && qObj.sources.length > 0) {
+          return qObj.sources.slice(0, 2).map(ensureSupportSourceItem).filter(Boolean);
+        }
+        // 3. Sibling q3a mock in getLessonMockQuestions sharing the same mockId (when qObj._isExtraMock)
+        if (qObj?._isExtraMock) {
+          const allLessonMocks = getLessonMockQuestions(unitId, lesson?.id) || [];
+          const idPrefix = String(qObj.id || '').replace(/_q3[a-d]$/i, '');
+          const isQ3aSibling = (m) =>
+            m &&
+            m.id !== qObj.id &&
+            m.sourceExtract &&
+            (/q3a$/i.test(String(m.id || '')) ||
+              /3\s*\(\s*a\s*\)/i.test(String(m.qCode || '')) ||
+              /how useful are sources/i.test(String(m.questionText || '')) ||
+              /utility/i.test(String(m.type || '')));
+          const samePaperSibling = qObj.mockId
+            ? allLessonMocks.find((m) => m.mockId === qObj.mockId && isQ3aSibling(m))
+            : idPrefix
+              ? allLessonMocks.find(
+                  (m) => String(m.id || '').startsWith(idPrefix) && isQ3aSibling(m),
+                )
+              : allLessonMocks.find(isQ3aSibling);
+          if (samePaperSibling) {
+            const sibParsed = parseMockSourceExtractToStimuli(samePaperSibling.sourceExtract).filter(
+              (it) => !it.isInterp,
+            );
+            if (sibParsed.length > 0) {
+              return sibParsed.slice(0, 2).map(ensureSupportSourceItem).filter(Boolean);
+            }
           }
         }
-        return null;
+        // 4. Sibling Q3(a) in lesson.exam_practice.questions or lesson.exam_practice.supporting_sources / sources
+        if (!qObj?._isExtraMock) {
+          const siblingQ3a = (epQuestions || []).find((cand) => {
+            if (!cand || cand === qObj) return false;
+            const cStr = `${cand.qCode || ''} ${cand.type || ''} ${cand.question || cand.prompt || ''}`;
+            return /\b3\s*\(\s*a\s*\)/i.test(cStr) || /how\s+useful\s+are\s+sources/i.test(cStr);
+          });
+          if (siblingQ3a) {
+            const sibArr =
+              (Array.isArray(siblingQ3a.supporting_sources) &&
+                siblingQ3a.supporting_sources.length > 0 &&
+                siblingQ3a.supporting_sources) ||
+              (Array.isArray(siblingQ3a.sources) &&
+                siblingQ3a.sources.length > 0 &&
+                siblingQ3a.sources) ||
+              null;
+            if (sibArr) {
+              return sibArr.slice(0, 2).map(ensureSupportSourceItem).filter(Boolean);
+            }
+          }
+          if (
+            Array.isArray(lesson?.exam_practice?.supporting_sources) &&
+            lesson.exam_practice.supporting_sources.length > 0
+          ) {
+            return lesson.exam_practice.supporting_sources
+              .slice(0, 2)
+              .map(ensureSupportSourceItem)
+              .filter(Boolean);
+          }
+          if (
+            Array.isArray(lesson?.exam_practice?.sources) &&
+            lesson.exam_practice.sources.length >= 2
+          ) {
+            const bcFromEp = ['B', 'C']
+              .map((ltr) => findSourceItemByLetter(ltr, { preferLessonSources: false, qObj }))
+              .filter(Boolean);
+            if (bcFromEp.length >= 2) return bcFromEp;
+          }
+        }
+        if (inlineParsedSources.length === 1) {
+          const singleSrc = ensureSupportSourceItem(inlineParsedSources[0], 0);
+          const missingLtr = singleSrc?.letter === 'B' ? 'C' : 'B';
+          const fallbackOther = findSourceItemByLetter(missingLtr, {
+            preferLessonSources: true,
+            qObj,
+          });
+          return fallbackOther
+            ? singleSrc?.letter === 'B'
+              ? [singleSrc, fallbackOther]
+              : [fallbackOther, singleSrc]
+            : [singleSrc];
+        }
+        // 5. Fallback to lesson.sources ('B' and 'C')
+        return ['B', 'C']
+          .map((ltr) => findSourceItemByLetter(ltr, { preferLessonSources: true, qObj }))
+          .filter(Boolean);
       };
 
       const resolveEmbeddedQuestionStimulus = (q, qIdx, qUid) => {
         const qRaw = String(q.question || q.prompt || '');
         const qLower = qRaw.toLowerCase();
         const qTypeLower = String(q.type || '').toLowerCase();
+        const codeAndText = `${q.qCode || ''} ${qRaw}`;
+        const isPaper3Unit = ['weimar_nazi_germany', 'usa'].includes(unitId);
 
-        // Extra Mock Question with pre-rendered HTML sourceExtract
-        if (q._isExtraMock && q.sourceExtract && String(q.sourceExtract).trim()) {
-          const cleanedExtract = String(q.sourceExtract).replace(
-            /https?:\/\/localhost:\d+\/images\//gi,
-            '/images/',
-          );
+        const isPaper3Q3b =
+          /main\s+difference\s+between\s+(?:these\s+|the\s+)?views/i.test(qRaw) ||
+          (isPaper3Unit &&
+            (/\b3\s*\(\s*b\s*\)/i.test(codeAndText) ||
+              qTypeLower.includes('3b') ||
+              qTypeLower.includes('diff_views') ||
+              qTypeLower.includes('interp_diff')));
+
+        const isPaper3Q3c =
+          /suggest\s+one\s+reason\s+why\s+interpretations/i.test(qRaw) ||
+          /why\s+interpretations\s+1\s+and\s+2\s+give\s+different/i.test(qRaw) ||
+          (isPaper3Unit &&
+            (/\b3\s*\(\s*c\s*\)/i.test(codeAndText) ||
+              qTypeLower.includes('3c') ||
+              qTypeLower.includes('why_differ') ||
+              qTypeLower.includes('interp_why')));
+
+        const isPaper3Q3d =
+          /how\s+far\s+do\s+you\s+agree\s+with\s+interpretation/i.test(qRaw) ||
+          (isPaper3Unit &&
+            (/\b3\s*\(\s*d\s*\)/i.test(codeAndText) ||
+              qTypeLower.includes('3d') ||
+              qTypeLower.includes('verdict') ||
+              ((parseInt(q.marks, 10) || 0) >= 16 &&
+                (qTypeLower.includes('interp') || qLower.includes('interpretation')))));
+
+        // 1. Paper 3 Q3(c) & Q3(d): Adjoined 2 × 2 Quad-Pane Matrix (Interps 1 & 2 on top + Sources B & C below)
+        if (isPaper3Q3c || isPaper3Q3d) {
+          let interps = [];
+          let inlineSources = [];
+
+          if (q._isExtraMock && q.sourceExtract && String(q.sourceExtract).trim()) {
+            const parsed = parseMockSourceExtractToStimuli(q.sourceExtract);
+            interps = parsed.filter((it) => it.isInterp);
+            inlineSources = parsed.filter((it) => !it.isInterp);
+            if (interps.length === 0 && parsed.length >= 2) {
+              interps = parsed.slice(0, 2).map((it, idx) => ({
+                ...it,
+                isInterp: true,
+                interpNum: `${idx + 1}`,
+              }));
+              inlineSources = parsed.slice(2);
+            }
+          }
+          if (interps.length === 0) {
+            interps = resolveLessonInterpretations(q);
+          }
+
+          const supportSources = resolvePaper3Q3dSupportingSources(q, inlineSources);
+          const seamMode = isPaper3Q3c ? 'q3c' : 'q3d';
+
           return {
-            html: `
-              <div class="embedded-mock-source-box" style="background: #fdfbf7; border: 1.5px solid #cbd5e1; border-left: 4px solid #1e40af; border-radius: 8px; padding: 14px 18px; margin: 10px 0 14px 0; font-size: 0.94rem; color: #1e293b; line-height: 1.65;">
-                <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #1e40af; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-                  <i class="fa-solid fa-scroll"></i> Source / Interpretation Extract
-                </div>
-                ${cleanedExtract}
-              </div>
-            `,
-            projectorHtml: cleanedExtract,
+            html: renderQuadMatrix(interps, supportSources, seamMode, qUid),
+            projectorHtml: formatStimulusForProjector(interps, {
+              quadSources: supportSources,
+              seamMode,
+            }),
           };
         }
 
-        // 1. Interpretation Questions (3b, 3c, 3d)
-        const needsInterps =
-          /\binterpretation[s]?\s*[12]\b/i.test(qRaw) ||
-          qTypeLower.includes('interp') ||
-          (['weimar_nazi_germany', 'usa'].includes(unitId) &&
-            (qTypeLower.includes('verdict') || /how far do you agree with interpretation/i.test(qRaw)));
-
-        if (needsInterps) {
+        // 2. Paper 3 Q3(b): Adjoined 1 × 2 Shared-Border Pair of Interpretations 1 & 2
+        if (isPaper3Q3b) {
           let interps = [];
-          if (
-            Array.isArray(q.stimulus) &&
-            q.stimulus.some((s) =>
-              /interpretation/i.test(typeof s === 'string' ? s : s.title || ''),
-            )
-          ) {
-            interps = q.stimulus;
-          } else {
-            const epInterps = validEpStimulus.filter((s) =>
-              /interpretation/i.test(typeof s === 'string' ? s : s.title || ''),
-            );
-            if (epInterps.length > 0) {
-              interps = epInterps;
-            } else if (
-              unitId === 'weimar_nazi_germany' &&
-              lesson?.id &&
-              WEIMAR_WORKBOOK_INTERPRETATIONS[lesson.id]
-            ) {
-              interps = WEIMAR_WORKBOOK_INTERPRETATIONS[lesson.id];
+          if (q._isExtraMock && q.sourceExtract && String(q.sourceExtract).trim()) {
+            const parsed = parseMockSourceExtractToStimuli(q.sourceExtract);
+            interps = parsed.filter((it) => it.isInterp);
+            if (interps.length === 0 && parsed.length >= 2) {
+              interps = parsed.slice(0, 2).map((it, idx) => ({
+                ...it,
+                isInterp: true,
+                interpNum: `${idx + 1}`,
+              }));
             }
           }
-
+          if (interps.length === 0) {
+            interps = resolveLessonInterpretations(q);
+          }
           if (interps.length > 0) {
             return {
-              html: `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0 14px 0;">${interps
-                .map((st, sIdx) => renderSingleStimulus(st, sIdx, qUid))
-                .join('')}</div>`,
+              html: renderStimulusCollection(interps.slice(0, 2), qUid),
+              projectorHtml: formatStimulusForProjector(interps.slice(0, 2)),
+            };
+          }
+        }
+
+        // 3. Extra Mock Question with HTML sourceExtract (strictly source/interpretation questions only)
+        const isMockStimulusQuestion =
+          /\bSources?\s+[A-E]\b/i.test(qRaw) ||
+          /\bInterpretations?\b/i.test(qRaw) ||
+          /\binfer\b|how\s+useful|follow\s+up/i.test(qRaw) ||
+          /inference|utility|follow[-_\s]?up|interp/i.test(qTypeLower);
+        if (
+          q._isExtraMock &&
+          isMockStimulusQuestion &&
+          q.sourceExtract &&
+          String(q.sourceExtract).trim()
+        ) {
+          let parsedItems = parseMockSourceExtractToStimuli(q.sourceExtract);
+          const reqLetters = extractRequestedSourceLetters(qRaw);
+          if (
+            reqLetters.length === 1 &&
+            parsedItems.length === 1 &&
+            !parsedItems[0].isInterp &&
+            parsedItems[0].letter !== reqLetters[0]
+          ) {
+            parsedItems[0] = {
+              ...parsedItems[0],
+              letter: reqLetters[0],
+              title: String(parsedItems[0].title || '').replace(
+                /^Source\s+[A-Z0-9]+/i,
+                `Source ${reqLetters[0]}`,
+              ),
+            };
+          } else if (
+            reqLetters.length >= 2 &&
+            parsedItems.filter((it) => !it.isInterp).length < reqLetters.length
+          ) {
+            const existingLetters = new Set(
+              parsedItems
+                .filter((it) => !it.isInterp)
+                .map((it) => String(it.letter || '').toUpperCase()),
+            );
+            reqLetters.forEach((ltr) => {
+              if (!existingLetters.has(ltr)) {
+                const fallbackSrc = findSourceItemByLetter(ltr, {
+                  preferLessonSources: true,
+                  qObj: q,
+                });
+                if (fallbackSrc) parsedItems.push(fallbackSrc);
+              }
+            });
+          }
+          if (parsedItems.length > 0) {
+            return {
+              html: renderStimulusCollection(parsedItems, qUid),
+              projectorHtml: formatStimulusForProjector(parsedItems),
+            };
+          }
+        }
+
+        // 4. Other Interpretation Questions
+        const needsInterps =
+          /\binterpretation[s]?\s*[12]\b/i.test(qRaw) || qTypeLower.includes('interp');
+
+        if (needsInterps) {
+          const interps = resolveLessonInterpretations(q);
+          if (interps.length > 0) {
+            return {
+              html: renderStimulusCollection(interps, qUid),
               projectorHtml: formatStimulusForProjector(interps),
             };
           }
         }
 
-        // 2. Primary Source Questions (Source A, Sources B and C, Follow-up, Inference, Utility)
-        const requestedLetters = [];
-        const addLetter = (ch) => {
-          const up = String(ch || '').toUpperCase();
-          if (up && !requestedLetters.includes(up)) requestedLetters.push(up);
-        };
-        const pairMatches = [...qRaw.matchAll(/\bSources\s+([A-E])\s+and\s+([A-E])\b/gi)];
-        pairMatches.forEach((m) => {
-          addLetter(m[1]);
-          addLetter(m[2]);
-        });
-        const singleMatches = [...qRaw.matchAll(/\bSource\s+([A-E])\b/gi)];
-        singleMatches.forEach((m) => addLetter(m[1]));
-
+        // 5. Primary Source Questions (Source A, Sources B and C, Sources A and B, Follow-up, Inference, Utility)
+        const requestedLetters = extractRequestedSourceLetters(qRaw);
         if (requestedLetters.length > 0) {
+          const preferLesson =
+            requestedLetters.length >= 2 ||
+            qTypeLower.includes('utility') ||
+            qLower.includes('how useful');
           const resolvedSrcs = requestedLetters
-            .map((ltr) => findSourceItemByLetter(ltr))
+            .map((ltr) =>
+              findSourceItemByLetter(ltr, { preferLessonSources: preferLesson, qObj: q }),
+            )
             .filter(Boolean);
           if (resolvedSrcs.length > 0) {
             return {
-              html: `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0 14px 0;">${resolvedSrcs
-                .map((st, sIdx) => renderSingleStimulus(st, sIdx, qUid))
-                .join('')}</div>`,
+              html: renderStimulusCollection(resolvedSrcs, qUid),
               projectorHtml: formatStimulusForProjector(resolvedSrcs),
+            };
+          }
+          if (Array.isArray(q.sources) && q.sources.length > 0) {
+            return {
+              html: renderStimulusCollection(q.sources, qUid),
+              projectorHtml: formatStimulusForProjector(q.sources),
+            };
+          }
+          if (Array.isArray(q.supporting_sources) && q.supporting_sources.length > 0) {
+            return {
+              html: renderStimulusCollection(q.supporting_sources, qUid),
+              projectorHtml: formatStimulusForProjector(q.supporting_sources),
             };
           }
         }
 
-        // Fallback if a source-based question doesn't name a letter explicitly
+        // 6. Fallback if a source-based question carries explicit non-bullet q.sources, q.stimulus, or validEpStimulus
         const isUnnamedSourceQuestion =
           qTypeLower.includes('inference') ||
           qTypeLower.includes('utility') ||
           qTypeLower.includes('follow_up') ||
           qLower.includes('how useful') ||
           qLower.includes('follow up');
-        if (isUnnamedSourceQuestion && validEpStimulus.length > 0) {
-          return {
-            html: `<div class="exam-stimulus-container" style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0 14px 0;">${validEpStimulus
-              .map((st, sIdx) => renderSingleStimulus(st, sIdx, qUid))
-              .join('')}</div>`,
-            projectorHtml: formatStimulusForProjector(validEpStimulus),
-          };
+        if (isUnnamedSourceQuestion) {
+          if (Array.isArray(q.sources) && q.sources.length > 0) {
+            return {
+              html: renderStimulusCollection(q.sources, qUid),
+              projectorHtml: formatStimulusForProjector(q.sources),
+            };
+          }
+          if (
+            Array.isArray(q.stimulus) &&
+            q.stimulus.length > 0 &&
+            q.stimulus.some(
+              (s) => typeof s === 'object' || /^(?:\*\*)?Source\b/i.test(String(s).trim()),
+            )
+          ) {
+            return {
+              html: renderStimulusCollection(q.stimulus, qUid),
+              projectorHtml: formatStimulusForProjector(q.stimulus),
+            };
+          }
+          if (validEpStimulus.length > 0) {
+            return {
+              html: renderStimulusCollection(validEpStimulus, qUid),
+              projectorHtml: formatStimulusForProjector(validEpStimulus),
+            };
+          }
         }
 
         return { html: '', projectorHtml: '' };
@@ -10704,33 +12030,127 @@ export function renderLesson(lesson) {
         const qTariff = String(q.tariff || '');
         const qType = String(q.type || '');
         const combined = `${qTariff} ${qType} ${qRaw}`;
+        const isPaper3Unit = ['weimar_nazi_germany', 'usa'].includes(unitId);
 
         let marks = parseInt(q.marks, 10) || 0;
         if (!marks) {
           if (/16\s*(?:\+|\(\+)\s*4|verdict_16m|16\s*marks?/i.test(combined)) marks = 16;
           else if (/12\s*marks?|12m|causation|explain\s+why/i.test(combined)) marks = 12;
-          else if (/8\s*marks?|8m|utility|narrative\s+account|importance\s+of/i.test(combined)) marks = 8;
+          else if (
+            /8\s*marks?|8m|utility|narrative\s+account|importance\s+of|explain\s+two\s+consequences/i.test(
+              combined,
+            )
+          )
+            marks = 8;
           else if (/^2\s*marks?$|feature_2m/i.test(qTariff) || qType === 'feature_2m') marks = 2;
           else marks = 4;
         }
-        const hasSpag = /16\s*(?:\+|\(\+)\s*4|verdict_16m/i.test(combined) || (marks === 16 && ['eee', 'edexcel_medicine', 'weimar_nazi_germany', 'usa'].includes(unitId));
-        const marksDisplay = hasSpag ? '16+4m' : `${marks}m`;
+        const cleanMarks = marks === 20 ? 16 : marks;
+        const hasSpag =
+          ['edexcel_medicine', 'weimar_nazi_germany', 'usa'].includes(unitId) &&
+          (/16\s*(?:\+|\(\+)\s*4|verdict_16m/i.test(combined) || marks === 16 || marks === 20);
+        const marksDisplay = hasSpag ? '16+4m' : `${cleanMarks}m`;
+        const projectorMarksLabel = hasSpag ? '16 Marks + 4 SPaG' : `${cleanMarks} Marks`;
 
-        let qCode = q.qCode || '';
+        let qCode = String(q.qCode || '').trim();
+        if (/^3([a-d])$/i.test(qCode)) {
+          qCode = `3(${qCode[1].toLowerCase()})`;
+        } else if (/^2([a-b])$/i.test(qCode)) {
+          qCode = `2(${qCode[1].toLowerCase()})`;
+        } else if (/^1([a-b])$/i.test(qCode)) {
+          qCode = `1(${qCode[1].toLowerCase()})`;
+        }
+
         if (!qCode) {
-          const m3 = qRaw.match(/(?:^|\b)(3\s*\([a-d]\))/i);
-          const m2 = qRaw.match(/(?:^|\b)(2\s*\([a-b]\))/i);
-          const m1 = qRaw.match(/(?:^|\b)(1\s*\([a-b]\))/i);
+          const m3 = qRaw.match(/^(?:(?:Question|Q)\s*)?(?:\d+[\.:\s]+)*(3\s*\([a-d]\))/i);
+          const m2 = qRaw.match(/^(?:(?:Question|Q)\s*)?(?:\d+[\.:\s]+)*(2\s*\([a-b]\))/i);
+          const m1 = qRaw.match(/^(?:(?:Question|Q)\s*)?(?:\d+[\.:\s]+)*(1\s*\([a-b]\))/i);
           const mQ = qRaw.match(/^(?:Question|Q)\s*(\d+(?:\([a-d]\))?)/i);
+          const mLeadNum = qRaw.match(/^(\d+(?:\([a-d]\))?)\.\s+/i);
+          const mTariffQ = qTariff.match(/(?:Question|Q)\s*(\d+(?:\([a-d]\))?)/i);
           if (m3) qCode = m3[1].replace(/\s+/g, '');
           else if (m2) qCode = m2[1].replace(/\s+/g, '');
           else if (m1) qCode = m1[1].replace(/\s+/g, '');
           else if (mQ) qCode = mQ[1];
-          else if (!q._isExtraMock) qCode = `${qIdx + 1}`;
+          else if (mLeadNum) qCode = mLeadNum[1];
+          else if (mTariffQ) qCode = mTariffQ[1];
+          else if (isPaper3Unit) {
+            if (
+              /main\s+difference\s+between\s+(?:these\s+|the\s+)?views/i.test(qRaw) ||
+              /3b|diff_views|interp_diff/i.test(qType)
+            ) {
+              qCode = '3(b)';
+            } else if (
+              /suggest\s+one\s+reason\s+why\s+interpretations/i.test(qRaw) ||
+              /why\s+interpretations\s+1\s+and\s+2\s+give\s+different/i.test(qRaw) ||
+              /3c|why_differ|interp_why/i.test(qType)
+            ) {
+              qCode = '3(c)';
+            } else if (
+              /how\s+far\s+do\s+you\s+agree\s+with\s+interpretation/i.test(qRaw) ||
+              /3d|verdict/i.test(qType)
+            ) {
+              qCode = '3(d)';
+            } else if (/how\s+useful\s+are\s+sources/i.test(qRaw) || /utility/i.test(qType)) {
+              qCode = '3(a)';
+            } else if (/give\s+two\s+things\s+you\s+can\s+infer/i.test(qRaw) || /inference/i.test(qType)) {
+              qCode = '1';
+            } else if (/explain\s+why/i.test(qRaw) || /causation/i.test(qType)) {
+              qCode = '2';
+            } else if (!q._isExtraMock) {
+              qCode = `${qIdx + 1}`;
+            }
+          } else if (unitId === 'edexcel_medicine') {
+            if (/describe\s+(?:two|one)\s+features?/i.test(qRaw) || /features/i.test(qType)) {
+              qCode = '1';
+            } else if (/how\s+useful/i.test(qRaw) || /utility/i.test(qType)) {
+              qCode = '2(a)';
+            } else if (/follow\s+up/i.test(qRaw) || /follow_up/i.test(qType)) {
+              qCode = '2(b)';
+            } else if (/explain\s+one\s+way\s+in\s+which/i.test(qRaw) || /similarity|difference/i.test(qType)) {
+              qCode = '3';
+            } else if (/explain\s+why/i.test(qRaw) || cleanMarks === 12) {
+              qCode = '4';
+            } else if (/how\s+far\s+do\s+you\s+agree/i.test(qRaw) || cleanMarks >= 16) {
+              qCode = '5';
+            } else if (!q._isExtraMock) {
+              qCode = `${qIdx + 1}`;
+            }
+          } else if (unitId === 'cme_new' || unitId === 'cold_war') {
+            if (/narrative\s+account/i.test(qRaw) || /narrative/i.test(qType)) {
+              qCode = '2';
+            } else if (/explain\s+the\s+importance/i.test(qRaw) || /importance/i.test(qType)) {
+              qCode = '3';
+            } else if (/consequence/i.test(qRaw) || /consequence/i.test(qType)) {
+              qCode = '1';
+            } else if (!q._isExtraMock) {
+              qCode = `${qIdx + 1}`;
+            }
+          } else if (unitId === 'eee') {
+            if (/describe\s+(?:one|two)\s+features?/i.test(qRaw) || /feature/i.test(qType)) {
+              qCode = '1';
+            } else if (/explain\s+why/i.test(qRaw) || cleanMarks === 12) {
+              qCode = '2';
+            } else if (/how\s+far\s+do\s+you\s+agree/i.test(qRaw) || cleanMarks >= 16) {
+              qCode = '3';
+            } else if (!q._isExtraMock) {
+              qCode = `${qIdx + 1}`;
+            }
+          } else if (!q._isExtraMock) {
+            qCode = `${qIdx + 1}`;
+          }
+        }
+
+        if (
+          (unitId === 'cold_war' || unitId === 'cme_new') &&
+          /^3\([ab]\)$/i.test(qCode) &&
+          (/explain\s+the\s+importance/i.test(qRaw) || /importance/i.test(qType))
+        ) {
+          qCode = '3';
         }
 
         const pillLabel = qCode ? `Q${qCode} • ${marksDisplay}` : marksDisplay;
-        return { marks, marksDisplay, qCode, pillLabel };
+        return { marks: cleanMarks, marksDisplay, projectorMarksLabel, qCode, pillLabel };
       };
 
       const renderQuestion = (q, qIdx, wbMetaOverride = null) => {
@@ -10773,7 +12193,10 @@ export function renderLesson(lesson) {
           isConsequence;
         const showSpoilerPromptInDrawer = !isGcseCleanExam && isSpoilerPrompt && q.prompt;
 
-        let scaffoldHtml = '';
+        const embeddedStim = resolveEmbeddedQuestionStimulus(q, qIdx, qUid);
+
+        let scaffoldBtnsHtml = '';
+        let scaffoldDrawersHtml = '';
         if (q.scaffolding) {
           const sc = q.scaffolding;
           const stepsHtml = (sc.steps || [])
@@ -10791,9 +12214,10 @@ export function renderLesson(lesson) {
             )
             .join('');
 
+          const cleanGuidance =
+            sc.guidance && !/[×+]|\[1m\]/i.test(String(sc.guidance)) ? sc.guidance : '';
           const hasHeaderAboveStarters = !!(
-            sc.acronym_title ||
-            sc.guidance ||
+            cleanGuidance ||
             showSpoilerPromptInDrawer ||
             (sc.steps && sc.steps.length > 0)
           );
@@ -10814,20 +12238,78 @@ export function renderLesson(lesson) {
               ? `
             <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
               <span style="font-size: 0.8rem; font-weight: bold; color: #64748b; text-transform: uppercase;">${sc.connectives_label || 'Causal Connective Bank'}:</span>
-              ${sc.connectives_bank.map((conn) => `<span style="background: #e2e8f0; color: #1e293b; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; border-radius: 12px;">${conn}</span>`).join('')}
+              ${sc.connectives_bank.map((conn) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #e2e8f0; border: 1px solid #cbd5e1; color: #1e293b; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; border-radius: 12px;">${conn}</span>`).join('')}
             </div>
           `
               : '';
 
-          const vocabBankHtml =
-            sc.vocab_bank && sc.vocab_bank.length > 0
-              ? `
-            <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-              <span style="font-size: 0.8rem; font-weight: bold; color: #0f766e; text-transform: uppercase;">Specification Word Bank:</span>
-              ${sc.vocab_bank.map((term) => `<span style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">${term}</span>`).join('')}
-            </div>
-          `
-              : '';
+          const resolvedVocabBank =
+            Array.isArray(sc.vocab_bank) && sc.vocab_bank.length > 0
+              ? sc.vocab_bank
+              : Array.isArray(sc.word_bank) && sc.word_bank.length > 0
+                ? sc.word_bank
+                : isKs3Unit
+                  ? (lesson?.tasks || []).find(
+                      (t) =>
+                        Array.isArray(t?.scaffolding?.word_bank) &&
+                        t.scaffolding.word_bank.length > 0,
+                    )?.scaffolding.word_bank ||
+                    (Array.isArray(lesson?.vocab)
+                      ? lesson.vocab
+                          .map((v) => (typeof v === 'object' ? v.term : v))
+                          .filter(Boolean)
+                      : [])
+                  : [];
+
+          const hasStimulusForVocab = Boolean(embeddedStim && embeddedStim.html);
+          const wbSectionHeading = isKs3Unit
+            ? 'Core Vocabulary Bank:'
+            : 'Specification Word Bank:';
+          let vocabBankInnerHtml = '';
+          if (resolvedVocabBank.length > 0) {
+            if (hasStimulusForVocab) {
+              const classified = resolvedVocabBank.map((term) => ({
+                term,
+                inSource: isVocabTermPresentInStimulus(term, embeddedStim.html),
+              }));
+              const ownTerms = classified.filter((x) => !x.inSource);
+              const srcTerms = classified.filter((x) => x.inSource);
+              const ordered = [...ownTerms, ...srcTerms];
+              const hasBoth = ownTerms.length > 0 && srcTerms.length > 0;
+              const legendHtml = hasBoth
+                ? `<span style="font-size: 0.72rem; font-weight: 600; color: #64748b; margin-left: 2px;"><span style="color: #0f766e; font-weight: 700;">&#9679; Own Knowledge</span> &bull; <span style="color: #1d4ed8; font-weight: 700;">&#9679; In Source</span> &bull; Tap to cross off</span>`
+                : `<span style="font-size: 0.72rem; font-weight: 600; color: #64748b; margin-left: 2px;">Tap to cross off</span>`;
+              vocabBankInnerHtml = `
+                <div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
+                    <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">${wbSectionHeading}</span>
+                    ${legendHtml}
+                  </div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                    ${ordered
+                      .map((item) =>
+                        item.inSource
+                          ? `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="In Source / Provenance (useful for quotes &amp; NOP — tap to cross off)" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${item.term}</span>`
+                          : `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="External Own Knowledge (beyond the source — tap to cross off)" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${item.term}</span>`,
+                      )
+                      .join('')}
+                  </div>
+                </div>
+              `;
+            } else {
+              vocabBankInnerHtml = `
+                <div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
+                    <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">${wbSectionHeading}</span>
+                    <span style="font-size: 0.72rem; font-weight: 600; color: #64748b; margin-left: 2px;">Tap to cross off</span>
+                  </div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                    ${resolvedVocabBank.map((term) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${term}</span>`).join('')}
+                  </div>
+                </div>
+              `;
+            }
+          }
 
           const redFlagsHtml =
             sc.red_flags && sc.red_flags.length > 0
@@ -10853,55 +12335,62 @@ export function renderLesson(lesson) {
           `
               : '';
 
-          const hasDetailedScaffold = !!(
-            sc.guidance ||
+          const hasWordBankDropdown = Boolean(vocabBankInnerHtml);
+          const hasStartersDropdown = !!(
+            cleanGuidance ||
             showSpoilerPromptInDrawer ||
             (sc.steps && sc.steps.length > 0) ||
             (sc.sentence_starters && sc.sentence_starters.length > 0) ||
             (sc.connectives_bank && sc.connectives_bank.length > 0) ||
-            (sc.vocab_bank && sc.vocab_bank.length > 0) ||
             (sc.red_flags && sc.red_flags.length > 0) ||
             (sc.checklist && sc.checklist.length > 0)
           );
 
-          scaffoldHtml = `
-            <div style="margin: 12px 0 16px 0;">
-              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                ${isConsequence && !isGcseCleanExam
-                  ? ''
-                  : `
-                <span style="background: #eff6ff; border: 1px solid #93c5fd; color: #1e40af; font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.35px;">
-                  <i class="fa-solid fa-layer-group" style="margin-right: 5px;"></i> ${sc.acronym || 'PEE/PEEL Structure Strip'}
-                </span>
-                `
-                }
-                ${hasDetailedScaffold
+          const startersBtnLabel =
+            sc.steps && sc.steps.length > 0
+              ? 'Sentence Starters &amp; Steps'
+              : 'Sentence Starters';
+
+          scaffoldBtnsHtml = [
+            hasWordBankDropdown
+              ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-wordbank-${qUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; padding: 5px 11px; border-radius: 7px; font-size: 0.8rem; font-weight: 700; display: inline-flex; align-items: center; gap: 5px; margin: 0;">
+                  <i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.66rem; opacity: 0.75;"></i>
+                </button>`
+              : '',
+            hasStartersDropdown
+              ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-scaffold-${qUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; padding: 5px 11px; border-radius: 7px; font-size: 0.8rem; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; margin: 0;">
+                  <i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> ${startersBtnLabel} <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.66rem; opacity: 0.75;"></i>
+                </button>`
+              : '',
+          ]
+            .filter(Boolean)
+            .join('');
+
+          scaffoldDrawersHtml =
+            hasWordBankDropdown || hasStartersDropdown
               ? `
-                <button class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-scaffold-${qUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600;">
-                  <i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> ${sc.button_label || 'Structure Strip &amp; Tips'}
-                </button>
-                `
-              : ''
-            }
-              </div>
-              ${hasDetailedScaffold
-              ? `
-              <div id="ep-scaffold-${qUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 14px 16px; margin-top: 8px;">
-                ${sc.acronym_title ? `<div style="font-weight: 700; color: #1e3a8a; font-size: 0.98rem; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-sitemap" style="color: #3b82f6;"></i> ${sc.acronym_title}</div>` : ''}
-                ${sc.guidance ? `<p style="font-size: 0.88rem; color: #475569; margin: 0 0 10px 0; font-style: italic;">${sc.guidance}</p>` : ''}
-                ${showSpoilerPromptInDrawer ? `<div style="font-size: 0.88rem; color: #334155; margin: 0 0 12px 0; background: #ffffff; border: 1px solid #cbd5e1; border-left: 3px solid #64748b; padding: 8px 12px; border-radius: 4px;"><strong><i class="fa-solid fa-circle-info" style="color: #3b82f6;"></i> Guidance:</strong> ${q.prompt}</div>` : ''}
-                ${stepsHtml}
-                ${startersHtml}
-                ${connectivesHtml}
-                ${vocabBankHtml}
-                ${redFlagsHtml}
-                ${checklistHtml}
-              </div>
-              `
-              : ''
-            }
-            </div>
-          `;
+              ${
+                hasWordBankDropdown
+                  ? `<div id="ep-wordbank-${qUid}" class="scaffold-box no-print" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 10px 14px; margin-top: 8px;">
+                      ${vocabBankInnerHtml}
+                    </div>`
+                  : ''
+              }
+              ${
+                hasStartersDropdown
+                  ? `<div id="ep-scaffold-${qUid}" class="scaffold-box no-print" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 12px 15px; margin-top: 8px;">
+                      ${cleanGuidance ? `<p style="font-size: 0.88rem; color: #475569; margin: 0 0 10px 0; font-style: italic;">${cleanGuidance}</p>` : ''}
+                      ${showSpoilerPromptInDrawer ? `<div style="font-size: 0.88rem; color: #334155; margin: 0 0 12px 0; background: #ffffff; border: 1px solid #cbd5e1; border-left: 3px solid #64748b; padding: 8px 12px; border-radius: 4px;"><strong><i class="fa-solid fa-circle-info" style="color: #3b82f6;"></i> Guidance:</strong> ${q.prompt}</div>` : ''}
+                      ${stepsHtml}
+                      ${startersHtml}
+                      ${connectivesHtml}
+                      ${redFlagsHtml}
+                      ${checklistHtml}
+                    </div>`
+                  : ''
+              }
+            `
+              : '';
         }
 
         const isInference =
@@ -10912,13 +12401,18 @@ export function renderLesson(lesson) {
         const isInterpDiff =
           qText.includes('difference between these views') ||
           qText.includes('difference between the views') ||
+          qType.includes('3b') ||
+          qType.includes('diff_views') ||
           qType.includes('interp_diff') ||
-          /3\(b\)/i.test(q.question || '');
+          /\b3\s*\(\s*b\s*\)/i.test(`${q.qCode || ''} ${q.question || ''}`);
 
         const isInterpWhy =
           qText.includes('reason why interpretations') ||
+          qText.includes('why interpretations 1 and 2 give different') ||
+          qType.includes('3c') ||
+          qType.includes('why_differ') ||
           qType.includes('interp_why') ||
-          /3\(c\)/i.test(q.question || '');
+          /\b3\s*\(\s*c\s*\)/i.test(`${q.qCode || ''} ${q.question || ''}`);
 
         const isFollowUp = qText.includes('follow up source') || qType.includes('follow_up');
 
@@ -11004,7 +12498,7 @@ export function renderLesson(lesson) {
             <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #059669; border-radius: 8px; background: #ecfdf5; padding: 12px 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #a7f3d0; padding-bottom: 6px;">
                 <span style="font-weight: 800; font-size: 0.92rem; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-scale-balanced" style="margin-right: 6px;"></i> Edexcel 8-Mark Importance Structure Strip (Paper 2 Q3)</span>
-                <span style="background: #059669; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[8 marks &bull; 12 mins]</span>
+                <span style="background: #059669; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[8 marks &bull; 16 mins]</span>
               </div>
               <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                 <span style="background: #059669; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">A1</span>
@@ -11031,7 +12525,7 @@ export function renderLesson(lesson) {
             <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #b45309; border-radius: 8px; background: #fffbeb; padding: 12px 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #fde68a; padding-bottom: 6px;">
                 <span style="font-weight: 800; font-size: 0.92rem; color: #92400e; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-timeline" style="margin-right: 6px;"></i> Edexcel 8-Mark Narrative Account Structure Strip (Paper 2 Q2)</span>
-                <span style="background: #b45309; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[8 marks &bull; 12 mins]</span>
+                <span style="background: #b45309; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[8 marks &bull; 16 mins]</span>
               </div>
               <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                 <span style="background: #b45309; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">N1</span>
@@ -11077,7 +12571,7 @@ export function renderLesson(lesson) {
             <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #0369a1; border-radius: 8px; background: #f0f9ff; padding: 12px 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #bae6fd; padding-bottom: 6px;">
                 <span style="font-weight: 800; font-size: 0.92rem; color: #075985; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-sitemap" style="margin-right: 6px;"></i> Edexcel 12-Mark ‘Explain Why’ Structure Strip (${causationPaperLabel})</span>
-                <span style="background: #0284c7; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[12 marks &bull; 15 mins]</span>
+                <span style="background: #0284c7; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[12 marks &bull; 18 mins]</span>
               </div>
               <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                 <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">P1</span>
@@ -11538,7 +13032,7 @@ export function renderLesson(lesson) {
                 </span>
               </div>
               <div style="font-size: 0.96rem; line-height: 1.65; color: #14532d;">
-                ${typeof formatBold !== 'undefined' ? formatBold(String(modelAns).replace(/\n/g, '<br>')) : String(modelAns).replace(/\n/g, '<br>')}
+                ${(typeof formatBold !== 'undefined' ? formatBold(String(modelAns)) : String(modelAns)).replace(/\n/g, '<br>')}
               </div>
             </div>
           `;
@@ -11552,32 +13046,6 @@ export function renderLesson(lesson) {
           : wbMetaOverride || getWorkbookTaskMeta(unitId, lesson?.id, q, q.question, qIdx, lesson);
 
         const inWorkbook = !wbMeta || wbMeta.inWorkbook !== false;
-        let wbBadgeHtml = '';
-        let wbNoticeHtml = '';
-        if (wbMeta) {
-          if (inWorkbook) {
-            wbBadgeHtml = `
-              <div style="display: inline-flex; align-items: center; gap: 6px; background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.45px; padding: 3.5px 10px; border-radius: 9999px;">
-                <i class="fa-solid fa-book-open" style="font-size: 0.78rem; color: #059669;"></i>
-                <span>${wbMeta.label}</span>
-              </div>
-            `;
-          } else {
-            wbBadgeHtml = `
-              <div style="display: inline-flex; align-items: center; gap: 6px; background: #eff6ff; border: 1.5px solid #93c5fd; color: #1e40af; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.45px; padding: 3.5px 10px; border-radius: 9999px;">
-                <i class="fa-solid fa-layer-group" style="font-size: 0.78rem; color: #2563eb;"></i>
-                <span>${wbMeta.label}</span>
-              </div>
-            `;
-            if (wbMeta.note) {
-              wbNoticeHtml = `
-                <div style="font-size: 0.86rem; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-left: 4px solid #3b82f6; border-radius: 6px; padding: 9px 13px; margin-bottom: 12px; line-height: 1.5;">
-                  <strong><i class="fa-solid fa-circle-info" style="color: #2563eb; margin-right: 6px;"></i> Workbook Navigation:</strong> ${wbMeta.note}
-                </div>
-              `;
-            }
-          }
-        }
 
         const isPaper3InterpVerdict =
           /how far do you agree with interpretation/i.test(q.question || '') ||
@@ -11597,19 +13065,21 @@ export function renderLesson(lesson) {
                     !/^(?:\*\*)?(?:Source|Interpretation)\b/i.test(s.trim()),
                 )
               ? q.stimulus
-              : null;
+              : !isPaper3InterpVerdict
+                ? extractEmbeddedStimulusBullets(q.question)
+                : null;
 
         let bulletHtml = '';
         if (bulletItems) {
           bulletHtml = `
-            <div class="edexcel-stimulus-bullet-box" style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #1e3a8a; border-radius: 6px; padding: 12px 16px; margin: 10px 0 14px 0;">
-              <div style="font-size: 0.86rem; font-weight: 700; color: #1e3a8a; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
-                <i class="fa-solid fa-list-check" style="margin-right: 6px;"></i> You may use the following in your answer:
+            <div class="edexcel-stimulus-bullet-box" style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #1e3a8a; border-radius: 6px; padding: 10px 14px; margin: 6px 0 12px 0;">
+              <div style="font-size: 0.8rem; font-weight: 700; color: #1e3a8a; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.45px;">
+                <i class="fa-solid fa-list-check" style="margin-right: 5px;"></i> You may use the following in your answer:
               </div>
-              <ul style="margin: 0; padding-left: 24px; font-size: 0.94rem; color: #0f172a; font-weight: 600; line-height: 1.55;">
+              <ul style="margin: 0; padding-left: 22px; font-size: 0.92rem; color: #0f172a; font-weight: 600; line-height: 1.5;">
                 ${bulletItems.map((b) => `<li>${b}</li>`).join('')}
               </ul>
-              <div style="font-size: 0.84rem; color: #334155; font-weight: 600; margin-top: 6px; font-style: italic;">
+              <div style="font-size: 0.8rem; color: #475569; font-weight: 600; margin-top: 5px; font-style: italic;">
                 You must also use information of your own.
               </div>
             </div>
@@ -11619,10 +13089,10 @@ export function renderLesson(lesson) {
         const effectiveStampHtml = isGcseCleanExam ? '' : stampHtml;
         const effectivePromptHtml = isGcseCleanExam ? '' : promptHtml;
 
-        const embeddedStim = resolveEmbeddedQuestionStimulus(q, qIdx, qUid);
-        const { marks, pillLabel, qCode } = inferQuestionMarksAndCode(q, qIdx);
+        const { marks, projectorMarksLabel, qCode, pillLabel } = inferQuestionMarksAndCode(q, qIdx);
         const targetMins =
-          parseInt(q.targetMins, 10) || getRecommendedExamMins(marks, q.type || q.question || '');
+          parseInt(q.targetMins, 10) ||
+          getRecommendedExamMins(marks, `${q.type || ''} ${q.tariff || ''} ${q.question || ''}`);
         const paperCode = q.paperCode || getCanonicalGcsePaperCode(unitId);
 
         if (isGCSE) {
@@ -11631,6 +13101,7 @@ export function renderLesson(lesson) {
             qCode,
             type: q.type || q.tariff || 'Edexcel Exam Question',
             marks,
+            marksDisplay: projectorMarksLabel,
             targetMins,
             paperCode,
             inWorkbook,
@@ -11641,10 +13112,16 @@ export function renderLesson(lesson) {
           });
         }
 
+        const mockNumMatch =
+          q._isExtraMock && q.mockTitle
+            ? String(q.mockTitle).match(/\bMock(?:\s+Paper)?\s+(\d+)\b/i)
+            : null;
         const originShort = inWorkbook
           ? shortenWorkbookOriginLabel(wbMeta?.label, true)
           : q._isExtraMock
-            ? 'Extra Mock'
+            ? mockNumMatch
+              ? `Extra • Mock ${mockNumMatch[1]}`
+              : 'Extra Mock'
             : 'Extension';
         const stemPreview = cleanStemForStripSummary(q.question);
         const hasAnyModel = Boolean(modelAns || q.model_tiers);
@@ -11681,72 +13158,68 @@ export function renderLesson(lesson) {
             : '';
 
         const actionBarHtml = `
-          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #f1f5f9;">
+          <div class="wb-unified-control-bar no-print" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
             ${
-              hasAnyModel
-                ? `
-              <button type="button" id="exam-model-btn-${qUid}" onclick="window.toggleExamCardModelAnswer('${qUid}')" style="background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; padding: 6px 13px; border-radius: 7px; font-weight: 700; font-size: 0.81rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fa-regular fa-eye" style="color: #16a34a;"></i> Reveal Model Answer &amp; Mark Scheme
-              </button>
-            `
+              scaffoldBtnsHtml
+                ? `<div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px;">${scaffoldBtnsHtml}</div>`
                 : ''
             }
-            ${
-              isGCSE
-                ? `
-              <button type="button" onclick="window.toggleExamCardTimer('${qUid}', ${targetMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 6px 12px; border-radius: 7px; font-weight: 700; font-size: 0.81rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Time this Question (${targetMins}m)
-              </button>
-              <button type="button" onclick="window.openExamCardProjector('${qUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 6px 12px; border-radius: 7px; font-weight: 700; font-size: 0.81rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector Mode
-              </button>
-            `
-                : ''
-            }
-            ${mockPdfLinkHtml}
+            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-left: ${scaffoldBtnsHtml ? 'auto' : '0'};">
+              ${
+                hasAnyModel
+                  ? `
+                <button type="button" id="exam-model-btn-${qUid}" onclick="window.toggleExamCardModelAnswer('${qUid}')" style="background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; padding: 5px 11px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-regular fa-eye" style="color: #16a34a;"></i> Model Answer &amp; Mark Scheme
+                </button>
+              `
+                  : ''
+              }
+              ${
+                isGCSE
+                  ? `
+                <button type="button" onclick="window.toggleExamCardTimer('${qUid}', ${targetMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Timer (${targetMins}m)
+                </button>
+                <button type="button" onclick="window.openExamCardProjector('${qUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector
+                </button>
+              `
+                  : ''
+              }
+              ${mockPdfLinkHtml}
+            </div>
           </div>
         `;
 
         return `
-          <details class="wb-question-strip ${inWorkbook ? 'wb-strip-green' : 'wb-strip-blue'}">
+          <details class="wb-question-strip wb-thin-strip ${inWorkbook ? 'wb-strip-green' : 'wb-strip-blue'}">
             <summary>
               <div class="wb-strip-left">
-                <span class="wb-origin-pill ${inWorkbook ? 'wb-origin-green' : 'wb-origin-blue'}" title="${wbMeta?.label || ''}">
+                <span class="wb-origin-pill ${inWorkbook ? 'wb-origin-green' : 'wb-origin-blue'}" title="${escStimAttr(wbMeta?.label || '')}">
                   <i class="fa-solid ${inWorkbook ? 'fa-book-open' : 'fa-layer-group'}"></i> ${originShort}
                 </span>
                 <span class="wb-tariff-pill">${pillLabel}</span>
-                <span class="wb-stem-preview">${stemPreview}</span>
+                <span class="wb-stem-preview wb-strip-stem">${stemPreview}</span>
               </div>
               <div class="wb-strip-right">
                 <span class="wb-mins-pill"><i class="fa-regular fa-clock"></i> ${targetMins}m</span>
                 <span class="wb-strip-toggle-txt">
-                  <span class="wb-lbl-closed">Answer</span><span class="wb-lbl-open">Close</span>
+                  <span class="wb-lbl-closed">Open</span><span class="wb-lbl-open">Close</span>
                   <i class="fa-solid fa-chevron-down wb-strip-caret"></i>
                 </span>
               </div>
             </summary>
             <div class="wb-strip-body">
-              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-                ${wbBadgeHtml}
-                ${
-                  isGCSE
-                    ? `<span style="font-size: 0.74rem; font-weight: 700; color: #64748b; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2.5px 8px; border-radius: 5px;">${paperCode}</span>`
-                    : ''
-                }
-              </div>
-              <div style="font-weight: 700; margin-bottom: 10px; font-size: 1.06rem; color: #0f172a; line-height: 1.5;">
-                ${formatExamQuestionTitle(q.question, qIdx, q)}
-              </div>
-              ${wbNoticeHtml}
               ${embeddedStim.html}
-              ${bulletHtml}
-              ${effectiveStampHtml}
-              ${effectivePromptHtml}
-              ${scaffoldHtml}
-              <textarea class="student-answer-input" style="min-height: ${marks >= 12 ? '180px' : '110px'};" placeholder="Write your response here..." oninput="window.updateProgress && window.updateProgress()"></textarea>
-              ${timerBarHtml}
-              ${actionBarHtml}
-              ${modelBoxHtml}
+              <div class="wb-writing-workspace">
+                ${bulletHtml}
+                ${effectiveStampHtml}
+                ${effectivePromptHtml}
+                ${actionBarHtml}
+                ${scaffoldDrawersHtml}
+                ${timerBarHtml}
+                ${modelBoxHtml}
+              </div>
             </div>
           </details>
         `;
@@ -11816,9 +13289,8 @@ export function renderLesson(lesson) {
   if (lesson.extended || lesson.debate_prep) {
     let extHtml = `
         <div class="phase-card">
-          <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 20px;">
+          <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 20px;">
             <div class="phase-title" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">Extended Scholarship</div>
-            ${lesson.extended && (lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer) ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="extended-model-${lesson.id}"><i class="fa-solid fa-eye"></i> Reveal Model Answer</button>` : ''}
           </div>
       `;
 
@@ -12187,10 +13659,40 @@ export function renderLesson(lesson) {
               </span>
             </div>
             ${sourceHtml}
-            ${wordBankHtml}
-            ${connectivesHtml}
-            ${startersHtml}
-            ${hintsHtml}
+            ${(() => {
+              const extUid = `ext_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}`;
+              const hasExtWb =
+                Array.isArray(lesson.extended.word_bank) && lesson.extended.word_bank.length > 0;
+              const extScafBody = `${startersHtml}${connectivesHtml}${hintsHtml}`.trim();
+              const hasExtScaf = Boolean(extScafBody);
+              if (!hasExtWb && !hasExtScaf) return '';
+              return `
+                <div class="no-print" style="margin: 10px 0 6px 0;">
+                  <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    ${hasExtWb ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ext-wb-${extUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>` : ''}
+                    ${hasExtScaf ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ext-scaf-${extUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Sentence Starters <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>` : ''}
+                  </div>
+                  ${
+                    hasExtWb
+                      ? `<div id="ext-wb-${extUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
+                          <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
+                            <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">Key Word Bank:</span>
+                            <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                          </div>
+                          <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                            ${lesson.extended.word_bank.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                          </div>
+                        </div>`
+                      : ''
+                  }
+                  ${
+                    hasExtScaf
+                      ? `<div id="ext-scaf-${extUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 12px 14px; margin-top: 8px;">${extScafBody}</div>`
+                      : ''
+                  }
+                </div>
+              `;
+            })()}
             ${lesson.extended.answer_image
           ? `
               <div id="extended-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
@@ -12560,73 +14062,76 @@ export function renderLesson(lesson) {
               : ''
             }
 
-            <!-- Key Disciplinary Word Bank -->
-            ${vocabList.length > 0
-              ? `
-              <div style="margin-bottom: 16px; background: #faf5ff; border: 1.2px solid #e9d5ff; border-radius: 8px; padding: 12px 16px;">
-                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #7e22ce; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-                  <i class="fa-solid fa-spell-check"></i> GCSE Key Vocabulary Bank (Incorporate into your response):
+            <!-- Word Bank & Sentence Starters Dropdowns -->
+            ${(() => {
+              const gtUid = String(cardId).replace(/[^a-zA-Z0-9_-]/g, '_');
+              const hasGtWb = vocabList.length > 0;
+              const hasGtScaf = structureStrip.length > 0 || connectives.length > 0;
+              if (!hasGtWb && !hasGtScaf) return '';
+              return `
+              <div class="no-print" style="margin-bottom: 14px;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+                  ${hasGtWb ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="gt-wb-${gtUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>` : ''}
+                  ${hasGtScaf ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="gt-scaf-${gtUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Sentence Starters &amp; Structure <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>` : ''}
                 </div>
-                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                  ${vocabList
-                .map(
-                  (w) =>
-                    `<span style="background: #ffffff; border: 1px solid #d8b4fe; color: #6b21a8; font-size: 0.85rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; box-shadow: 0 1px 2px rgba(107,33,168,0.06);">${w}</span>`,
-                )
-                .join('')}
-                </div>
-              </div>
-            `
-              : ''
-            }
-
-            <!-- Analytical Structure Strip -->
-            ${structureStrip.length > 0
-              ? `
-              <div style="margin-bottom: 16px;">
-                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #0369a1; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-                  <i class="fa-solid fa-layer-group"></i> Analytical Structure Strip (Paragraph Breakdown):
-                </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
-                  ${structureStrip
-                .map(
-                  (st, sIdx) => `
-                    <div style="background: #f0f9ff; border: 1.2px solid #bae6fd; border-radius: 6px; padding: 10px 12px;">
-                      <div style="font-size: 0.8rem; font-weight: 800; color: #0369a1; text-transform: uppercase; margin-bottom: 4px; border-bottom: 1px solid #e0f2fe; padding-bottom: 3px;">
-                        ${st.para || `Paragraph ${sIdx + 1}`}
-                      </div>
-                      <div style="font-size: 0.85rem; color: #1e293b; line-height: 1.4;">
-                        ${st.focus || st.detail || ''}
-                      </div>
-                    </div>
-                  `,
-                )
-                .join('')}
-                </div>
-              </div>
-            `
-              : ''
-            }
-
-            <!-- Causal Connectives & Sentence Starters -->
-            ${connectives.length > 0
-              ? `
-              <div style="margin-bottom: 16px; background: #f0fdf4; border: 1.2px solid #bbf7d0; border-radius: 8px; padding: 12px 16px;">
-                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #15803d; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-                  <i class="fa-solid fa-pen-fancy"></i> Causal Connective Bank &amp; Tiered Sentence Starters:
-                </div>
-                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                  ${connectives
-                .map(
-                  (c) =>
-                    `<span style="background: #ffffff; border: 1px solid #86efac; color: #166534; font-size: 0.82rem; font-style: italic; padding: 4px 10px; border-radius: 4px;">&ldquo;${c}&rdquo;</span>`,
-                )
-                .join('')}
-                </div>
-              </div>
-            `
-              : ''
-            }
+                ${
+                  hasGtWb
+                    ? `<div id="gt-wb-${gtUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
+                          <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">GCSE Key Vocabulary Bank:</span>
+                          <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                          ${vocabList.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                        </div>
+                      </div>`
+                    : ''
+                }
+                ${
+                  hasGtScaf
+                    ? `<div id="gt-scaf-${gtUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 13px 16px; margin-top: 8px;">
+                        ${
+                          structureStrip.length > 0
+                            ? `<div style="margin-bottom: ${connectives.length > 0 ? '12px' : '0'};">
+                                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #0369a1; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                                  <i class="fa-solid fa-layer-group"></i> Analytical Structure Strip (Paragraph Breakdown):
+                                </div>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
+                                  ${structureStrip
+                                    .map(
+                                      (st, sIdx) => `
+                                    <div style="background: #ffffff; border: 1.2px solid #bae6fd; border-radius: 6px; padding: 10px 12px;">
+                                      <div style="font-size: 0.8rem; font-weight: 800; color: #0369a1; text-transform: uppercase; margin-bottom: 4px; border-bottom: 1px solid #e0f2fe; padding-bottom: 3px;">
+                                        ${st.para || `Paragraph ${sIdx + 1}`}
+                                      </div>
+                                      <div style="font-size: 0.85rem; color: #1e293b; line-height: 1.4;">
+                                        ${st.focus || st.detail || ''}
+                                      </div>
+                                    </div>
+                                  `,
+                                    )
+                                    .join('')}
+                                </div>
+                              </div>`
+                            : ''
+                        }
+                        ${
+                          connectives.length > 0
+                            ? `<div>
+                                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #15803d; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                                  <i class="fa-solid fa-pen-fancy"></i> Causal Connective Bank &amp; Tiered Sentence Starters:
+                                </div>
+                                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                                  ${connectives.map((c) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #ffffff; border: 1px solid #86efac; color: #166534; font-size: 0.81rem; font-weight: 600; padding: 3px 9px; border-radius: 12px;">${c}</span>`).join('')}
+                                </div>
+                              </div>`
+                            : ''
+                        }
+                      </div>`
+                    : ''
+                }
+              </div>`;
+            })()}
 
             <!-- Student Response Textarea -->
             <div style="margin-bottom: 14px;">
@@ -12701,7 +14206,7 @@ export function renderLesson(lesson) {
           : 'Pupil Workbook Activities &bull; Assessment Practice';
 
       html += `
-        ${getWbThinStripStylesHTML()}
+        ${emitWbStylesOnce()}
         <div class="wb-unified-station phase-card">
           <div class="wb-station-header">
             <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto;">
@@ -12798,37 +14303,6 @@ export function renderLesson(lesson) {
   }
 
   // Note: Exit Ticket is now unified directly into the Consolidate Station terminal above.
-
-  // --- LESSON REFLECTION / DIRT PROMPT ---
-  // Renders a visual prompt at the end of the final lesson,
-  // directing pupils to the DIRT page in their printed workbook.
-  if (lesson.lesson_reflection) {
-    const ref = lesson.lesson_reflection;
-    let instructionsHtml = '';
-    if (ref.instructions && ref.instructions.length > 0) {
-      instructionsHtml = `<ul style="margin: 12px 0 0 0; padding-left: 20px; color: #1e40af; font-size: 1rem; line-height: 1.7;">
-        ${ref.instructions.map((i) => `<li>${i}</li>`).join('')}
-      </ul>`;
-    }
-    html += `
-      <div class="phase-card no-print" style="padding: 30px; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 2px solid #3b82f6; border-radius: 12px; margin-bottom: 30px; position: relative; overflow: hidden;">
-        <div style="position: absolute; top: -20px; right: -20px; opacity: 0.08; font-size: 12rem; color: #1e40af;"><i class="fa-solid fa-book-open-reader"></i></div>
-        <div style="position: relative; z-index: 2;">
-          <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
-            <div style="background: #3b82f6; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
-              <i class="fa-solid fa-pen-to-square"></i>
-            </div>
-            <div>
-              <h3 style="margin: 0; color: #1e3a8a; font-size: 1.3rem;">End of Unit Reflection & Pupil Voice</h3>
-              <p style="margin: 2px 0 0; color: #3b82f6; font-size: 0.9rem; font-weight: 600;">DIRT — Dedicated Improvement and Reflection Time</p>
-            </div>
-          </div>
-          <p style="color: #1e40af; font-size: 1.05rem; line-height: 1.6; margin: 0;">${ref.prompt}</p>
-          ${instructionsHtml}
-        </div>
-      </div>
-    `;
-  }
 
   // Previous / Next Lesson Navigation Buttons
   if (currentIndex !== -1) {
@@ -13051,6 +14525,7 @@ export function injectArchivalAudioButtons(container = document) {
   if (!container || !container.querySelectorAll) return;
   const sourceBoxes = container.querySelectorAll('.archival-source-box');
   sourceBoxes.forEach((box) => {
+    if (box.classList.contains('p3-pane-cell')) return;
     const body = box.querySelector('.archival-source-body');
     if (!body || !body.textContent.trim()) return;
 

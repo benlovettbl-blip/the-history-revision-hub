@@ -341,6 +341,12 @@ export function initEventDelegation() {
         break;
       }
 
+      case 'toggle-wb-chip': {
+        const isStruck = target.classList.toggle('is-struck');
+        target.setAttribute('aria-pressed', isStruck ? 'true' : 'false');
+        break;
+      }
+
       case 'toggle-element': {
         const targetId = target.dataset.targetId || target.getAttribute('data-target-id');
         const el = document.getElementById(targetId);
@@ -349,8 +355,29 @@ export function initEventDelegation() {
           const isCurrentlyHidden = currentComputed === 'none' || el.style.display === 'none';
 
           if (isCurrentlyHidden) {
+            const parentStrip = el.closest('details.wb-question-strip');
+            if (parentStrip && !parentStrip.open) parentStrip.open = true;
             el.classList.add('revealed');
             el.style.display = 'block';
+            if (
+              /^(?:ep-wordbank-|ks3-wb-|hi-wb-|su-wb-|ext-wb-|gt-wb-)/.test(String(targetId))
+            ) {
+              target.style.background = '#ccfbf1';
+              target.style.borderColor = '#14b8a6';
+              target.style.color = '#0f766e';
+              const chev = target.querySelector('.wb-dd-chevron');
+              if (chev) chev.className = 'fa-solid fa-chevron-up wb-dd-chevron';
+            } else if (
+              /^(?:ep-scaffold-|ks3-scaf-|hi-scaf-|su-scaf-|ext-scaf-|gt-scaf-)/.test(
+                String(targetId),
+              )
+            ) {
+              target.style.background = '#eff6ff';
+              target.style.borderColor = '#3b82f6';
+              target.style.color = '#1d4ed8';
+              const chev = target.querySelector('.wb-dd-chevron');
+              if (chev) chev.className = 'fa-solid fa-chevron-up wb-dd-chevron';
+            }
             const card = target.closest('.do-now-card');
             if (card) card.classList.add('revealed');
             const btn =
@@ -384,6 +411,25 @@ export function initEventDelegation() {
           } else {
             el.classList.remove('revealed');
             el.style.display = 'none';
+            if (
+              /^(?:ep-wordbank-|ks3-wb-|hi-wb-|su-wb-|ext-wb-|gt-wb-)/.test(String(targetId))
+            ) {
+              target.style.background = '#f0fdfa';
+              target.style.borderColor = '#99f6e4';
+              target.style.color = '#0f766e';
+              const chev = target.querySelector('.wb-dd-chevron');
+              if (chev) chev.className = 'fa-solid fa-chevron-down wb-dd-chevron';
+            } else if (
+              /^(?:ep-scaffold-|ks3-scaf-|hi-scaf-|su-scaf-|ext-scaf-|gt-scaf-)/.test(
+                String(targetId),
+              )
+            ) {
+              target.style.background = '#f1f5f9';
+              target.style.borderColor = '#cbd5e1';
+              target.style.color = '#1e3a8a';
+              const chev = target.querySelector('.wb-dd-chevron');
+              if (chev) chev.className = 'fa-solid fa-chevron-down wb-dd-chevron';
+            }
             const card = target.closest('.do-now-card');
             if (card) card.classList.remove('revealed');
             const btn =
@@ -854,31 +900,75 @@ export function initEventDelegation() {
       case 'reveal-all-models': {
         const cardContainer = target.closest('.wb-unified-station') || target.closest('.phase-card');
         if (!cardContainer) break;
-        const modelBoxes = Array.from(cardContainer.querySelectorAll('.model-box, .answer'));
-        const anyHidden = modelBoxes.some(
-          (c) => window.getComputedStyle(c).display === 'none' || c.style.display === 'none',
+        const modelBoxes = Array.from(
+          cardContainer.querySelectorAll('.model-box, .answer, .bbs-model-box'),
         );
+        const modelDetails = Array.from(
+          cardContainer.querySelectorAll('details.model-paragraph-reveal, details.two-features-model'),
+        );
+        const anyHidden =
+          modelBoxes.some(
+            (c) => window.getComputedStyle(c).display === 'none' || c.style.display === 'none',
+          ) || modelDetails.some((d) => !d.open);
+
         if (anyHidden) {
-          cardContainer
-            .querySelectorAll('details.wb-question-strip, details.model-paragraph-reveal')
-            .forEach((d) => {
-              d.open = true;
-            });
+          cardContainer.querySelectorAll('details.wb-question-strip').forEach((d) => {
+            d.open = true;
+          });
+          modelDetails.forEach((d) => {
+            d.open = true;
+          });
+          const expandBtn = cardContainer.querySelector('[onclick*="toggleAllWorkbookStrips"]');
+          if (expandBtn) {
+            expandBtn.innerHTML = '<i class="fa-solid fa-compress"></i> Collapse All';
+          }
+        } else {
+          modelDetails.forEach((d) => {
+            d.open = false;
+          });
         }
+
         modelBoxes.forEach((c) => {
+          const parentRevealDetails = c.closest('details.model-paragraph-reveal');
           if (anyHidden) {
             c.classList.add('revealed');
-            c.style.display = 'block';
+            c.style.display = parentRevealDetails ? '' : 'block';
           } else {
             c.classList.remove('revealed');
-            c.style.display = 'none';
+            if (parentRevealDetails) {
+              c.style.display = '';
+              parentRevealDetails.open = false;
+            } else {
+              c.style.display = 'none';
+            }
           }
         });
+
         cardContainer.querySelectorAll('[id^="exam-model-btn-"]').forEach((mBtn) => {
           mBtn.innerHTML = anyHidden
             ? '<i class="fa-regular fa-eye-slash" style="color: #16a34a;"></i> Hide Model Answer'
-            : '<i class="fa-regular fa-eye" style="color: #16a34a;"></i> Reveal Model Answer &amp; Mark Scheme';
+            : '<i class="fa-regular fa-eye" style="color: #16a34a;"></i> Model Answer &amp; Mark Scheme';
         });
+
+        cardContainer.querySelectorAll('.btn-pedagogy-model').forEach((mBtn) => {
+          const icon = mBtn.querySelector('i');
+          if (icon && (icon.classList.contains('fa-eye') || icon.classList.contains('fa-eye-slash'))) {
+            icon.className = anyHidden ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye';
+          }
+          Array.from(mBtn.childNodes).forEach((node) => {
+            if (node.nodeType === 3) {
+              if (anyHidden && node.textContent.includes('Reveal')) {
+                node.textContent = node.textContent.replace('Reveal', 'Hide');
+              } else if (!anyHidden && node.textContent.includes('Hide')) {
+                node.textContent = node.textContent.replace('Hide', 'Reveal');
+              }
+            }
+          });
+        });
+
+        target.innerHTML = anyHidden
+          ? '<i class="fa-solid fa-eye-slash"></i> Hide Models'
+          : '<i class="fa-solid fa-eye"></i> Reveal Models';
         break;
       }
 
@@ -1124,6 +1214,15 @@ export function initEventDelegation() {
       default:
         console.warn('Unhandled data-action:', action);
     }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const chip = e.target?.closest?.('[data-action="toggle-wb-chip"]');
+    if (!chip) return;
+    e.preventDefault();
+    const isStruck = chip.classList.toggle('is-struck');
+    chip.setAttribute('aria-pressed', isStruck ? 'true' : 'false');
   });
 }
 

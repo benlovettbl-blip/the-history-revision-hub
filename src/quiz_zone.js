@@ -164,14 +164,17 @@ export function renderQuizZone(container, unitData) {
 
   // --- 2. UI SHELL ---
   container.innerHTML = `
-        <div style="max-width: 800px; margin: 0 auto; padding-bottom: 50px; font-family: 'Inter', sans-serif;">
-            <div style="text-align: center; margin-bottom: 30px;">
-                <h1 style="font-size: 2.5rem; color: #ffffff; margin-bottom: 10px; font-weight: 800; letter-spacing: -0.5px; text-shadow: 0 2px 10px rgba(0,0,0,0.3);"><i class="fa-solid fa-gamepad" style="color: #60a5fa;"></i> Interactive Revision Hub</h1>
-                <p style="color: #cbd5e1; font-size: 1.1rem; text-shadow: 0 1px 3px rgba(0,0,0,0.2);">Test your recall of key historical facts!</p>
+        <style>
+          #quiz-feedback:empty { display: none !important; margin-top: 0 !important; min-height: 0 !important; }
+        </style>
+        <div style="max-width: 880px; margin: 0 auto; padding-bottom: 36px; font-family: 'Inter', sans-serif;">
+            <div style="text-align: center; margin-bottom: 16px;">
+                <h1 style="font-size: 2rem; color: #ffffff; margin: 0 0 6px 0; font-weight: 800; letter-spacing: -0.5px; text-shadow: 0 2px 10px rgba(0,0,0,0.3);"><i class="fa-solid fa-gamepad" style="color: #60a5fa;"></i> Interactive Revision Hub</h1>
+                <p style="color: #cbd5e1; font-size: 0.98rem; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.2);">Select a game mode below to test your historical recall.</p>
             </div>
 
             <!-- QUICK WEAK SPOTS BANNER -->
-            <div id="weak-spots-quick-banner" style="background: linear-gradient(135deg, #fef2f2, #fee2e2); border: 1.5px solid #fca5a5; border-radius: 12px; padding: 14px 20px; margin-bottom: 25px; display: ${initialWeakCount > 0 ? 'flex' : 'none'}; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 4px 12px rgba(220,38,38,0.12);">
+            <div id="weak-spots-quick-banner" style="background: linear-gradient(135deg, #fef2f2, #fee2e2); border: 1.5px solid #fca5a5; border-radius: 12px; padding: 12px 18px; margin-bottom: 16px; display: ${initialWeakCount > 0 ? 'flex' : 'none'}; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; box-shadow: 0 4px 12px rgba(220,38,38,0.12);">
                 <div style="display: flex; align-items: center; gap: 14px;">
                     <div style="width: 42px; height: 42px; border-radius: 50%; background: #fee2e2; display: flex; align-items: center; justify-content: center; color: #dc2626; font-size: 1.25rem; border: 2px solid #fca5a5;">
                         <i class="fa-solid fa-crosshairs"></i>
@@ -188,8 +191,7 @@ export function renderQuizZone(container, unitData) {
 
             <!-- MODE SELECT MENU -->
             <div id="mode-select-container">
-                <p style="font-size: 1.15rem; color: #cbd5e1; margin-bottom: 25px; text-align: center; text-shadow: 0 1px 3px rgba(0,0,0,0.2);">Select a game mode to test your knowledge!</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
                     <!-- TARGETED WEAKNESS MODE CARD -->
                     <div style="border: 2px solid #ef4444; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: 0.2s; background: #fff5f5; position: relative;" onmouseover="this.style.borderColor='#dc2626'; this.style.background='#fee2e2';" onmouseout="this.style.borderColor='#ef4444'; this.style.background='#fff5f5';" id="btn-mode-weak-spots">
                         <div style="position: relative; display: inline-block;">
@@ -631,26 +633,26 @@ export function renderQuizZone(container, unitData) {
       const q = sessionQuestions[currentIndex];
 
       let qHtml = `
-                <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; color: #64748b; font-size: 0.9rem;">
+                <div style="background: white; border-radius: 12px; padding: 20px 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; color: #64748b; font-size: 0.88rem;">
                         <span><strong>${title}</strong></span>
                         <span>Question ${currentIndex + 1} of ${sessionQuestions.length}</span>
                     </div>
-                    <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 30px;">${q.q}</h2>
-                    ${q.img ? `<img src="${q.img}" style="max-height: 300px; max-width: 100%; border-radius: 8px; margin-bottom: 25px; object-fit: contain; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">` : ''}
-                    <div id="quiz-options" style="display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: 0 auto;">
+                    <h2 style="font-size: 1.35rem; color: #0f172a; margin: 0 0 18px 0; line-height: 1.35;">${q.q}</h2>
+                    ${q.img ? `<img src="${q.img}" style="max-height: 210px; max-width: 100%; border-radius: 8px; margin-bottom: 16px; object-fit: contain; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">` : ''}
+                    <div id="quiz-options" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; max-width: 740px; margin: 0 auto; text-align: left;">
                         ${q.shuffledOptions
                           .map(
                             (opt, i) => `
-                            <button class="btn-quiz-option quiz-option-btn" data-answer="${opt.replace(/"/g, '&quot;')}">
-                                <span style="display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; background: #e2e8f0; border-radius: 50%; margin-right: 15px; font-weight: bold; color: #64748b;">${String.fromCharCode(65 + i)}</span>
-                                ${opt}
+                            <button class="btn-quiz-option quiz-option-btn" data-answer="${opt.replace(/"/g, '&quot;')}" style="display: flex; align-items: center; text-align: left;">
+                                <span style="display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 28px; height: 28px; background: #e2e8f0; border-radius: 50%; margin-right: 12px; font-weight: bold; color: #64748b; font-size: 0.85rem;">${String.fromCharCode(65 + i)}</span>
+                                <span>${opt}</span>
                             </button>
                         `,
                           )
                           .join('')}
                     </div>
-                    <div id="quiz-feedback" style="margin-top: 25px; min-height: 50px;"></div>
+                    <div id="quiz-feedback" style="margin-top: 16px;"></div>
                 </div>
             `;
 
