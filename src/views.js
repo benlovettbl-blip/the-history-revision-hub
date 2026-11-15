@@ -124,7 +124,7 @@ export function renderDashboard() {
     .sort((a, b) => gcseOrder.indexOf(a.id) - gcseOrder.indexOf(b.id));
 
   const unitCanonicalTitles = {
-    ks2_ww2: 'World War II & The Home Front (1939–1945)',
+    ks2_ww2: 'World War II & The Home Front (1933–1945)',
     water_and_sanitation: 'Water & Sanitation (1250–Present)',
     medieval_england: 'Medieval England (1066–1485)',
     early_modern_world: 'Early Modern World (1450–1750)',
@@ -150,7 +150,7 @@ export function renderDashboard() {
     const isUnlocked = true;
     const rawTitle = unit.title || unit.id;
     const rawImageUrl = unit.homepage_background || unit.cover_image || '';
-    const imageUrl = rawImageUrl ? getAssetUrl(rawImageUrl) : '';
+    const imageUrl = rawImageUrl ? getAssetUrl(rawImageUrl, unit.id) : '';
 
     const displayTitle =
       unitCanonicalTitles[unit.id] || rawTitle.replace(/^(KS3:\s*|Paper\s*\d+:\s*)/i, '').trim();
@@ -235,7 +235,7 @@ export function renderDashboard() {
           <div style="display: flex; align-items: center; gap: 10px;">
             <span style="background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; padding: 3px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Key Stage 2</span>
             <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a);">
-              World War II &amp; The Home Front (1939–1945)
+              World War II &amp; The Home Front (1933–1945)
             </h3>
           </div>
           <span style="font-size: 0.78rem; font-weight: 600; color: #64748b;">Key Stage 2 History</span>
@@ -243,30 +243,27 @@ export function renderDashboard() {
 
         <div class="ks2-feature-banner" style="background: linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #312e81 100%); border-radius: 12px; border: 1.5px solid rgba(199, 210, 254, 0.35); box-shadow: 0 8px 24px -4px rgba(49, 46, 129, 0.2); display: flex; align-items: stretch; overflow: hidden; position: relative;">
           <!-- Left Hero Image Column -->
-          <div class="ks2-hero-img-col" style="flex: 0 0 280px; min-height: 190px; background-image: url('${ks2Cover}'); background-size: cover; background-position: center 20%; position: relative;">
-            <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(30, 27, 75, 0.05) 0%, rgba(30, 27, 75, 0.8) 100%);"></div>
-            <span style="position: absolute; top: 12px; left: 12px; z-index: 2; background: #4f46e5; color: #ffffff; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
-              Key Stage 2 Primary
-            </span>
+          <div class="ks2-hero-img-col" style="flex: 0 0 320px; min-height: 195px; background-image: url('${ks2Cover}'); background-size: cover; background-position: center 22%; position: relative;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(30, 27, 75, 0.0) 60%, rgba(30, 27, 75, 0.72) 100%);"></div>
           </div>
 
           <!-- Right Content Column -->
           <div class="ks2-hero-content-col" style="flex: 1; padding: 18px 24px; display: flex; flex-direction: column; justify-content: space-between; z-index: 1;">
             <div>
               <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;">
-                <span style="background: rgba(224, 231, 255, 0.2); color: #c7d2fe; border: 1px solid rgba(199, 210, 254, 0.4); padding: 2px 8px; border-radius: 4px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
-                  <i class="fa-solid fa-landmark"></i> Key Stage 2 History
+                <span style="background: #4f46e5; color: #ffffff; padding: 2px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
+                  Key Stage 2 Primary (Years 5–6)
                 </span>
-                <span style="color: #cbd5e1; font-size: 0.74rem;">&bull; 7 Core Lessons &bull; Archival Sources &bull; Primary Evidence</span>
+                <span style="color: #cbd5e1; font-size: 0.76rem; font-weight: 600;">&bull; 11 Enquiry Lessons &bull; Classroom Textbook, Workbook &amp; Worksheets</span>
               </div>
               <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
-                World War II &amp; The Home Front (1939–1945)
+                World War II &amp; The Home Front (1933–1945)
               </h3>
               <p style="margin: 0 0 8px 0; color: #e0e7ff; font-size: 0.84rem; font-style: italic; line-height: 1.4;">
                 "How did World War II transform children's lives in Britain and Europe?"
               </p>
               <p style="margin: 0 0 12px 0; color: #cbd5e1; font-size: 0.82rem; line-height: 1.45; max-width: 760px;">
-                A comprehensive Key Stage 2 history curriculum exploring wartime evacuation, the Blitz, rationing, wartime diversity, codebreaking at Bletchley Park, the Holocaust, and Victory in Europe through interactive primary evidence and historical enquiries.
+                A ready-to-teach Key Stage 2 history unit exploring outbreak &amp; gas masks, evacuation, pre-war Jewish life, the Kindertransport &amp; rescuers, the Blitz, rationing, women at war, Bletchley Park, VE Day, and the Windermere Children.
               </p>
             </div>
 
@@ -462,20 +459,26 @@ function attachDashboardStageFilter(container) {
   if (!filterBtns.length) return;
 
   const urlParams = new URLSearchParams(window.location.search);
-  const portalParam = (urlParams.get('portal') || urlParams.get('stage') || '').toLowerCase();
-  if (portalParam === 'ks2') {
-    try {
-      sessionStorage.setItem('hh_portal', 'ks2');
-    } catch (e) {}
-  } else if (portalParam === 'all' || portalParam === 'reset') {
+  const portalParam = (urlParams.get('portal') || '').toLowerCase();
+  const isLockedKs2Portal =
+    portalParam === 'ks2' &&
+    (urlParams.get('locked') === 'true' ||
+      urlParams.get('mode') === 'pupil' ||
+      urlParams.get('safeguard') === 'true');
+
+  if (!isLockedKs2Portal) {
     try {
       sessionStorage.removeItem('hh_portal');
+      if (urlParams.has('portal') || urlParams.has('stage')) {
+        const cleanUrl = new URL(window.location.href);
+        cleanUrl.searchParams.delete('portal');
+        cleanUrl.searchParams.delete('stage');
+        window.history.replaceState(window.history.state || {}, '', cleanUrl);
+      }
     } catch (e) {}
   }
 
-  const isKs2Portal =
-    portalParam === 'ks2' ||
-    (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_portal') === 'ks2');
+  const isKs2Portal = isLockedKs2Portal;
 
   const ks2Blocks = container.querySelectorAll('.stage-block-ks2');
   const ks3Blocks = container.querySelectorAll('.stage-block-ks3');
@@ -634,17 +637,67 @@ function attachDashboardStageFilter(container) {
   };
 
   if (isKs2Portal) {
+    if (document.body) document.body.classList.add('ks2-mode-active');
     const ks2Btn = container.querySelector('.stage-filter-btn[data-stage="ks2"]');
     if (ks2Btn) {
       ks2Btn.click();
     }
-    if (urlParams.get('portal') === 'ks2') {
-      const allBtn = container.querySelector('.stage-filter-btn[data-stage="all"]');
-      const ks3Btn = container.querySelector('.stage-filter-btn[data-stage="ks3"]');
-      const gcseBtn = container.querySelector('.stage-filter-btn[data-stage="gcse"]');
-      if (allBtn) allBtn.style.display = 'none';
-      if (ks3Btn) ks3Btn.style.display = 'none';
-      if (gcseBtn) gcseBtn.style.display = 'none';
+    const allBtn = container.querySelector('.stage-filter-btn[data-stage="all"]');
+    const ks3Btn = container.querySelector('.stage-filter-btn[data-stage="ks3"]');
+    const gcseBtn = container.querySelector('.stage-filter-btn[data-stage="gcse"]');
+    if (allBtn) allBtn.style.display = 'none';
+    if (ks3Btn) ks3Btn.style.display = 'none';
+    if (gcseBtn) gcseBtn.style.display = 'none';
+
+    const quickJump = container.querySelector('#year-quick-jump-nav');
+    if (quickJump) quickJump.style.display = 'none';
+    const enrichmentSection = container.querySelector('#enrichment-section');
+    if (enrichmentSection) enrichmentSection.style.display = 'none';
+    const toolbar = container.querySelector('.homepage-nav-toolbar');
+    if (toolbar) toolbar.style.display = 'none';
+
+    // Hide Secondary/GCSE enrichment banners, sidebar items, non-KS2 unit links, and exam-board footer in KS2 portal mode
+    [
+      'nav-competitions',
+      'nav-chess',
+      'nav-ai-prompt-craft',
+      'app-global-footer',
+      'sidebar-units-header',
+      'sidebar-unit-links',
+      'nav-profile',
+    ].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    const navDashboardLabel = document.querySelector('#nav-dashboard span');
+    if (navDashboardLabel) navDashboardLabel.textContent = 'KS2 Junior Hub';
+    const searchPlaceholder = document.querySelector('#header-search-bar .search-placeholder');
+    if (searchPlaceholder) {
+      searchPlaceholder.textContent = 'Search WWII topics, evacuees, Blitz, Bletchley...';
+    }
+    container.querySelectorAll('[onclick*="ai-prompt-craft"]').forEach((el) => {
+      const card = el.closest('div[style*="border"]') || el.parentElement;
+      if (card) card.style.display = 'none';
+    });
+  } else {
+    if (document.body) document.body.classList.remove('ks2-mode-active');
+    [
+      'nav-competitions',
+      'nav-chess',
+      'nav-ai-prompt-craft',
+      'app-global-footer',
+      'sidebar-units-header',
+      'sidebar-unit-links',
+      'nav-profile',
+    ].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = '';
+    });
+    const navDashboardLabel = document.querySelector('#nav-dashboard span');
+    if (navDashboardLabel) navDashboardLabel.textContent = 'Dashboard';
+    const searchPlaceholder = document.querySelector('#header-search-bar .search-placeholder');
+    if (searchPlaceholder) {
+      searchPlaceholder.textContent = 'Search keywords, lessons...';
     }
   }
 }
@@ -918,7 +971,7 @@ export function extractUnitSelfQuizCards(unitData, topicFilter = 'all') {
     }
 
     const topicLabel = l.title
-      ? l.title.replace(/^lesson\s*\d+[:.]\s*/i, '').trim()
+      ? l.title.replace(/^(?:enquiry|lesson)\s*\d+[:.]\s*/i, '').trim()
       : `Lesson ${idx + 1}`;
 
     // 1. Dedicated Flashcards
@@ -1023,9 +1076,13 @@ export function renderInteractiveQuiz() {
     learningSet: new Set(),
   };
 
+  const isKs2Quiz = Boolean(
+    data.is_ks2 || unitId === 'ks2_ww2' || String(unitId || '').toLowerCase().startsWith('ks2_'),
+  );
   const catalogRetrieval = CURRICULAR_PILLARS_CATALOG[unitId]?.retrieval || {};
-  const retrievalTitle =
-    catalogRetrieval.title || `${data.title || 'Curriculum'} Master Knowledge Retrieval Companion`;
+  const retrievalTitle = isKs2Quiz
+    ? '20-Page Master Textbook, 28-Page Pupil Workbook'
+    : catalogRetrieval.title || `${data.title || 'Curriculum'} Master Knowledge Retrieval Companion`;
   const retrievalPdf = catalogRetrieval.pdfUrl || `/pdfs/${unitId}_quiz_pack.pdf`;
 
   // Build topic dropdown options
@@ -1178,10 +1235,14 @@ export function renderInteractiveQuiz() {
             <i class="fa-solid fa-graduation-cap" style="color: #fde047;"></i> ${data.title || 'Curriculum Revision'}
           </div>
           <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.1rem; font-weight: 800; color: #ffffff; margin: 0 0 8px 0; letter-spacing: -0.5px;">
-            Self-Quiz &amp; Knowledge Check
+            ${isKs2Quiz ? 'WWII Flashcards &amp; Unit Quiz Challenge' : 'Self-Quiz &amp; Knowledge Check'}
           </h1>
           <p style="color: #cbd5e1; font-size: 0.95rem; margin: 0 auto; max-width: 640px; line-height: 1.5; font-weight: 400;">
-            Master core factual recall and key vocabulary through interactive 3D flashcards, or benchmark your exam readiness with a timed diagnostic knowledge check.
+            ${
+              isKs2Quiz
+                ? 'Practise key Second World War words with interactive 3D flip cards, or test your historical detective skills in a 10-minute unit knowledge challenge!'
+                : 'Master core factual recall and key vocabulary through interactive 3D flashcards, or benchmark your exam readiness with a timed diagnostic knowledge check.'
+            }
           </p>
         </div>
       </div>
@@ -1355,10 +1416,14 @@ export function renderInteractiveQuiz() {
           </div>
 
           <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 800; color: #0f172a; margin: 0 0 6px 0;">
-            10-Minute Knowledge Diagnostic Quiz
+            ${isKs2Quiz ? '10-Minute WWII Unit Knowledge Challenge' : '10-Minute Knowledge Diagnostic Quiz'}
           </h2>
           <p style="color: #64748b; font-size: 0.9rem; max-width: 540px; margin: 0 auto 22px auto; line-height: 1.5;">
-            Sampled questions testing factual recall and chronological accuracy under timed exam conditions.
+            ${
+              isKs2Quiz
+                ? '20 questions across all 11 Second World War enquiries checking dates, primary sources, and key vocabulary.'
+                : 'Sampled questions testing factual recall and chronological accuracy under timed exam conditions.'
+            }
           </p>
 
           <!-- 3-Metric Spec Breakdown -->
@@ -1396,7 +1461,11 @@ export function renderInteractiveQuiz() {
           </div>
           <div>
             <strong style="color: #0f172a; font-size: 0.92rem; display: block;">Prefer physical printed booklets or classroom workbooks?</strong>
-            <span style="color: #64748b; font-size: 0.82rem;">${retrievalTitle} and complete pupil workbooks with full teacher mark schemes are available in Workbooks &amp; Textbooks.</span>
+            <span style="color: #64748b; font-size: 0.82rem;">${
+              isKs2Quiz
+                ? 'The 20-page illustrated textbook, 28-page pupil workbook, and printable A4 enquiry worksheets are ready in the Unit Hub.'
+                : `${retrievalTitle} and complete pupil workbooks with full teacher mark schemes are available in Workbooks &amp; Textbooks.`
+            }</span>
           </div>
         </div>
         <button type="button" onclick="window.switchView('lessons', '${unitId}')" style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #0f172a; padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#e2e8f0';" onmouseout="this.style.background='#f8fafc';">
@@ -1765,6 +1834,44 @@ export async function renderTimeline() {
   `;
 }
 
+export function renderIndividualsView() {
+  const container = document.getElementById('main-content');
+  if (!container) return;
+  const unitId = state.selectedUnitId || window.currentUnitId;
+  const data = state.activeUnitData || window.currentUnitData || {};
+  const agents = data.key_individuals || data.biographies || [];
+  const returnBtnLabel =
+    typeof window !== 'undefined' && typeof window.getReturnOriginLabel === 'function'
+      ? window.getReturnOriginLabel(unitId, 'Return to Unit Overview')
+      : 'Return to Unit Overview';
+
+  container.innerHTML = '';
+  if (!agents || agents.length === 0) {
+    container.innerHTML = `
+      <div class="card text-center" style="max-width: 680px; margin: 40px auto; padding: 32px;">
+        <h3><i class="fa-solid fa-user-tie"></i> Key Individuals &amp; Organisations</h3>
+        <p style="color: var(--text-muted);">No historical agent dossiers are listed for this unit yet.</p>
+        <button type="button" class="btn-pedagogy-primary" onclick="if(window.returnToSavedOrigin){window.returnToSavedOrigin('${unitId || ''}');}else if(window.switchView){window.switchView('lessons', '${unitId || ''}');}">${returnBtnLabel}</button>
+      </div>
+    `;
+    return;
+  }
+
+  const topBar = document.createElement('div');
+  topBar.style.maxWidth = '1220px';
+  topBar.style.margin = '0 auto';
+  topBar.style.padding = '16px 20px 0 20px';
+  topBar.innerHTML = `
+    <button type="button" id="individuals-return-btn" onclick="if(window.returnToSavedOrigin){window.returnToSavedOrigin('${unitId || ''}');}else if(window.switchView){window.switchView('lessons', '${unitId || ''}');}" style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #0f172a; border-radius: 8px; padding: 7px 14px; font-size: 0.84rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>${returnBtnLabel}</span>
+    </button>
+  `;
+  container.appendChild(topBar);
+
+  initKeyIndividualsTask(container, agents);
+}
+
 export async function renderLessonsView() {
   const container = document.getElementById('main-content');
   const unitId = state.selectedUnitId || 'gcse_usa_1954_1975';
@@ -1789,45 +1896,74 @@ export async function renderLessonsView() {
     const sub = lessonsList[index];
     if (!sub) return;
 
+    window.currentLessonIndex = index;
+    window.currentView = 'lessons';
+    if (state) state.activeLessonIndex = index;
+
     if (typeof window.highlightActiveSidebarLesson === 'function') {
       window.highlightActiveSidebarLesson(index);
     }
 
-    // Snapshot scroll on unit menu and push history state for this lesson
+    // Snapshot scroll on outgoing page and push (or merge immediate overview) history state for this lesson
     if (!skipPush && typeof window !== 'undefined' && window.history) {
       const currentScroll = window.scrollY || document.documentElement.scrollTop || 0;
       const currentState = window.history.state || {};
       try {
-        window.history.replaceState(
-          {
-            ...currentState,
-            view: 'lessons',
-            unit: unitId,
-            lessonIndex: undefined,
-            scrollY: currentScroll,
-          },
-          '',
-          window.location.href,
-        );
-
         const url = new URL(window.location);
+        const wasImmediateOverviewPush = Boolean(
+          window._lastLessonsOverviewPushTs &&
+            Date.now() - window._lastLessonsOverviewPushTs < 220 &&
+            !url.searchParams.has('lesson'),
+        );
+        window._lastLessonsOverviewPushTs = 0;
+
         url.searchParams.set('view', 'lessons');
         url.searchParams.set('unit', unitId);
+        url.searchParams.delete('stage');
+        if (url.searchParams.get('locked') !== 'true' && url.searchParams.get('mode') !== 'pupil') {
+          url.searchParams.delete('portal');
+        }
         const hasLessonZero = (lessonsList[0] && (lessonsList[0].id === 'lesson_0' || (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0'))));
         const lessonQueryVal =
           sub.slug || (hasLessonZero ? (index === 0 ? '0' : index) : index + 1);
         url.searchParams.set('lesson', lessonQueryVal);
-        window.history.pushState(
-          {
-            view: 'lessons',
-            unit: unitId,
-            lessonIndex: index,
-            scrollY: 0,
-          },
-          '',
-          url,
-        );
+
+        if (wasImmediateOverviewPush) {
+          window.history.replaceState(
+            {
+              view: 'lessons',
+              unit: unitId,
+              lessonIndex: index,
+              scrollY: 0,
+            },
+            '',
+            url,
+          );
+        } else {
+          window.history.replaceState(
+            {
+              ...currentState,
+              scrollY: currentScroll,
+            },
+            '',
+            window.location.href,
+          );
+          window.history.pushState(
+            {
+              view: 'lessons',
+              unit: unitId,
+              lessonIndex: index,
+              scrollY: 0,
+            },
+            '',
+            url,
+          );
+        }
       } catch (err) {}
+    }
+
+    if (typeof window.updateHeaderBackBtn === 'function') {
+      window.updateHeaderBackBtn('lessons');
     }
 
     // Update document.title so copied/shared browser links display the exact lesson & unit name
@@ -1857,7 +1993,7 @@ export async function renderLessonsView() {
         shortLabel = hasLessonZero && index === 0 ? 'Intro Lesson' : `Lesson ${hasLessonZero ? index : index + 1}`;
       }
       let unitTitle = data.title
-        ? data.title.replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '').trim()
+        ? data.title.replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '').trim()
         : 'Unit';
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
@@ -1896,7 +2032,7 @@ export async function renderLessonsView() {
       }
     } catch (e) {}
 
-    // Check if a target narrative block jump was requested (e.g. from GCSE Do Now)
+    // Check if a target narrative block jump was requested (one-shot; lesson_renderer also handles initial ?stage= cleanly)
     let hasNarrativeJump = false;
     try {
       const pendingJump = sessionStorage.getItem('hh_pending_narrative_jump');
@@ -1915,14 +2051,15 @@ export async function renderLessonsView() {
           };
           setTimeout(pollJump, 120);
         }
-      }
-    } catch (e) {}
-
-    if (!hasNarrativeJump) {
-      try {
-        const stageParam = new URLSearchParams(window.location.search).get('stage');
+      } else {
+        const cleanUrl = new URL(window.location.href);
+        const stageParam = cleanUrl.searchParams.get('stage');
         if (stageParam) {
           const parsedStage = parseInt(stageParam, 10);
+          cleanUrl.searchParams.delete('stage');
+          try {
+            window.history.replaceState(window.history.state || {}, '', cleanUrl);
+          } catch (err) {}
           if (!isNaN(parsedStage)) {
             hasNarrativeJump = true;
             let attempts = 0;
@@ -1936,8 +2073,8 @@ export async function renderLessonsView() {
             setTimeout(pollJump, 120);
           }
         }
-      } catch (e) {}
-    }
+      }
+    } catch (e) {}
 
     if (targetStopId) {
       setTimeout(() => {
@@ -1968,11 +2105,13 @@ export async function renderLessonsView() {
     } else if (requestedLesson.toLowerCase() === 'intro' && hasLessonZero) {
       targetIndex = 0;
     } else {
+      const reqLower = requestedLesson.toLowerCase();
       targetIndex = lessonsList.findIndex(
         (l) =>
-          l.id === requestedLesson ||
-          (l.alias_ids && l.alias_ids.includes(requestedLesson)) ||
-          (l.title && l.title.toLowerCase().includes(requestedLesson.toLowerCase())),
+          (l.id && l.id.toLowerCase() === reqLower) ||
+          (l.slug && l.slug.toLowerCase() === reqLower) ||
+          (l.alias_ids && l.alias_ids.some((a) => String(a).toLowerCase() === reqLower)) ||
+          (l.title && l.title.toLowerCase().includes(reqLower)),
       );
     }
     // Backward-compatibility alias: Water & Sanitation Summative Assessment was previously Lesson 7
@@ -1989,6 +2128,17 @@ export async function renderLessonsView() {
       window.viewLessonDetail(targetIndex, null, true);
       return;
     }
+  }
+
+  // Rendering Unit Overview (not inside a lesson)
+  window.currentLessonIndex = null;
+  window.currentView = 'lessons';
+  if (state) state.activeLessonIndex = null;
+  if (typeof window.highlightActiveSidebarLesson === 'function') {
+    window.highlightActiveSidebarLesson(null);
+  }
+  if (typeof window.updateHeaderBackBtn === 'function') {
+    window.updateHeaderBackBtn('lessons');
   }
 
   let heroImageUrl = '';
@@ -2014,7 +2164,7 @@ export async function renderLessonsView() {
   let headerHtml = '';
   if (heroImageUrl) {
     const positionFallbacks = {
-      ks2_ww2: 'center 85%',
+      ks2_ww2: 'center center',
       monarchy_religion_power: 'center 12%',
       first_british_empire: 'center 35%',
       eee: 'center 10%',
@@ -2031,9 +2181,13 @@ export async function renderLessonsView() {
       positionFallbacks[unitId] ||
       positionFallbacks[data.id] ||
       'center';
+    const heroOverlayGradient =
+      unitId === 'ks2_ww2'
+        ? 'linear-gradient(rgba(15, 23, 42, 0.44), rgba(15, 23, 42, 0.78))'
+        : 'linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.88))';
     headerHtml = `
-      <div style="position: relative; text-align: center; padding: 70px 24px 50px 24px; background-image: url('${heroImageUrl}'); background-size: cover; background-position: ${heroBgPos}; border-radius: 0;">
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.88));"></div>
+      <div style="position: relative; text-align: center; padding: 64px 24px 46px 24px; background-image: url('${heroImageUrl}'); background-size: cover; background-position: ${heroBgPos}; border-radius: 0;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: ${heroOverlayGradient};"></div>
         <div style="position: relative; z-index: 1; max-width: 1160px; margin: 0 auto;">
           <h1 class="enquiry-title" style="font-family: 'Playfair Display', serif; font-size: clamp(1.65rem, 5.2vw, 2.7rem); line-height: 1.25; color: white; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); hyphens: none; -webkit-hyphens: none; word-break: normal; overflow-wrap: normal; text-wrap: balance;">${data.enquiry_question || data.enquiry || 'Unit Enquiry'}</h1>
           <h2 style="font-size: clamp(1.05rem, 3.5vw, 1.35rem); color: #cbd5e1; font-weight: 500; margin-top: 0; margin-bottom: 0; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -2043,11 +2197,19 @@ export async function renderLessonsView() {
           ${
             unitId === 'cme_new' || unitId === 'gcse_middle_east_1945_1995'
               ? `
-          <div style="margin-top: 14px; display: flex; justify-content: center;">
+          <div style="margin-top: 14px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
             <button type="button" onclick="if(window.switchView){window.switchView('timeline', '${unitId}');}" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.95) 100%); color: #ffffff; border: 1px solid rgba(52, 211, 153, 0.6); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); backdrop-filter: blur(4px); transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 16px rgba(16,185,129,0.4)';" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';">
               <i class="fa-solid fa-clock-rotate-left"></i>
               <span>Launch Living Chronological Timeline (24 Milestones)</span>
             </button>
+            ${
+              Array.isArray(data.key_individuals) && data.key_individuals.length > 0
+                ? `<button type="button" onclick="if(window.switchView){window.switchView('individuals', '${unitId}');}" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(15, 118, 110, 0.95) 100%); color: #ffffff; border: 1px solid rgba(147, 197, 253, 0.6); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); backdrop-filter: blur(4px); transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 16px rgba(30,64,175,0.4)';" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';">
+              <i class="fa-solid fa-users-rectangle"></i>
+              <span>Key Individuals &amp; Organisations (${data.key_individuals.length} Dossiers)</span>
+            </button>`
+                : ''
+            }
           </div>`
               : ''
           }
@@ -2201,14 +2363,14 @@ export async function renderLessonsView() {
                 <i class="fa-solid fa-circle-question"></i>
               </div>
               <div>
-                <h4 style="margin: 0; font-size: 1.05rem; color: #ffffff; font-family: 'Montserrat', sans-serif;">Unit Revision: Interactive Quizzing &amp; Spaced Recall</h4>
-                <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #cbd5e1;">Ready to consolidate this unit? Test your knowledge across all unit questions with timed diagnostic quizzes, 3-Box Leitner flashcards &amp; whiteboard drills.</p>
+                <h4 style="margin: 0; font-size: 1.05rem; color: #ffffff; font-family: 'Montserrat', sans-serif;">${unitId === 'ks2_ww2' ? 'Whole-Class Knowledge Check &amp; Flashcards' : 'Unit Revision: Interactive Quizzing &amp; Spaced Recall'}</h4>
+                <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #cbd5e1;">${unitId === 'ks2_ww2' ? 'Check what your class remembers across all 11 enquiry lessons with quick quizzes, flashcards, and whiteboard questions.' : 'Ready to consolidate this unit? Test your knowledge across all unit questions with timed diagnostic quizzes, 3-Box Leitner flashcards &amp; whiteboard drills.'}</p>
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 10px;">
               <button class="btn-pedagogy-primary" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 700; border: none; padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35); transition: all 0.15s ease;" onclick="window.switchView('interactive', '${unitId}')" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
                 <i class="fa-solid fa-circle-question"></i>
-                <span>Open Quizzing Arena</span>
+                <span>${unitId === 'ks2_ww2' ? 'Open Class Quiz' : 'Open Quizzing Arena'}</span>
               </button>
             </div>
           </div>
@@ -2925,6 +3087,11 @@ export async function renderMockExamsView() {
     soundEnabled: true,
   };
 
+  const mockReturnLabel =
+    typeof window !== 'undefined' && typeof window.getReturnOriginLabel === 'function'
+      ? window.getReturnOriginLabel(unitId, 'Return to Unit Overview')
+      : 'Return to Unit Overview';
+
   let html = `
     <!-- Docked Top Invigilator Toolbar -->
     <div id="docked-invigilator-hud" style="position: sticky; top: 0; z-index: 1000; background: #000000; color: #ffffff; border-bottom: 2px solid #ffffff; box-shadow: 0 4px 20px rgba(0,0,0,0.5); padding: 12px 24px;">
@@ -3007,6 +3174,12 @@ export async function renderMockExamsView() {
     </div>
 
     <div style="max-width: 1200px; margin: 0 auto; padding: 25px 15px 40px 15px;">
+      <div style="margin-bottom: 14px;">
+        <button type="button" id="mock-exams-return-btn" onclick="if(window.returnToSavedOrigin){window.returnToSavedOrigin('${unitId}');}else if(window.switchView){window.switchView('lessons', '${unitId}');}" style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #0f172a; border-radius: 8px; padding: 7px 14px; font-size: 0.84rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>${mockReturnLabel}</span>
+        </button>
+      </div>
       <!-- Pearson Examination Official Masthead -->
       <div style="background: #ffffff; color: #000000; border: 2px solid #000000; border-radius: 4px; padding: 26px 30px; margin-bottom: 24px;">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
@@ -3222,10 +3395,10 @@ export async function renderMockExamsView() {
 
       <!-- Bottom Actions Bar -->
       <div style="margin-top: 35px; padding-top: 20px; border-top: 2px solid #000000; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-        <button class="btn" data-action="switch-view" data-view="lessons" data-unit="${unitId}" style="padding: 9px 18px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: #ffffff; color: #000000; border: 2px solid #000000;">
-          &larr; Return to Lessons
+        <button type="button" class="btn" onclick="if(window.returnToSavedOrigin){window.returnToSavedOrigin('${unitId}');}else if(window.switchView){window.switchView('lessons', '${unitId}');}" style="padding: 9px 18px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: #ffffff; color: #000000; border: 2px solid #000000;">
+          &larr; ${mockReturnLabel}
         </button>
-        <button class="btn" data-action="switch-view" data-view="lessons" data-unit="${unitId}" style="padding: 9px 18px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: #000000; color: #ffffff; border: 2px solid #000000;">
+        <button type="button" class="btn" onclick="if(window.switchView){window.switchView('lessons', '${unitId}');}" style="padding: 9px 18px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: #000000; color: #ffffff; border: 2px solid #000000;">
           View Master Textbooks &amp; Workbooks
         </button>
       </div>
@@ -3325,6 +3498,42 @@ export async function renderReadingView(options = {}) {
   const container = document.getElementById('main-content');
   const unitId = state.selectedUnitId || window.currentUnitId || 'great_war_part2';
   const unitData = state.activeUnitData || {};
+
+  if (unitId === 'ks2_ww2' && container) {
+    container.innerHTML = `
+      <div style="max-width: 1180px; margin: 0 auto; padding: 20px 16px 40px 16px; font-family: 'Inter', sans-serif;">
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; padding: 22px 26px; border-radius: 12px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 14px rgba(15,23,42,0.18);">
+          <div>
+            <div style="font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #7dd3fc; margin-bottom: 4px;">
+              <i class="fa-solid fa-book-open"></i> Key Stage 2 Classroom Reading Anthology
+            </div>
+            <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; font-weight: 800; color: #fff;">
+              World War II &amp; The Home Front (1933–1945) — 20-Page Master Textbook
+            </h1>
+            <p style="margin: 6px 0 0 0; font-size: 0.9rem; color: #cbd5e1;">
+              Read all 11 chronological enquiries, authentic primary visual sources, Chronological Turning Points Spine, 55-question Retrieval Quiz, and 44-word Vocabulary Bank.
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="/units/ks2_ww2/textbook.html" target="_blank" style="background: rgba(255,255,255,0.14); color: #fff; border: 1px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px;">
+              <i class="fa-solid fa-up-right-from-square"></i> Full-Screen Textbook
+            </a>
+            <a href="/pdfs/ks2_ww2_textbook.pdf" target="_blank" style="background: #059669; color: #fff; border: 1px solid #10b981; font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px;">
+              <i class="fa-solid fa-file-pdf"></i> Download 20-Page PDF
+            </a>
+            <button type="button" onclick="window.switchView && window.switchView('lessons', 'ks2_ww2')" style="background: #2563eb; color: #fff; border: 1px solid #3b82f6; font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
+              <i class="fa-solid fa-chalkboard-user"></i> Back to KS2 Unit
+            </button>
+          </div>
+        </div>
+        <div style="background: #fff; border: 1.5px solid #cbd5e1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(15,23,42,0.08);">
+          <iframe src="/units/ks2_ww2/textbook.html" title="KS2 WWII 20-Page Master Classroom Textbook" style="width: 100%; height: 78vh; min-height: 640px; border: none; display: block;"></iframe>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
   const guidedReadingData = unitData.guided_reading || [];
 
   const urlParams = new URLSearchParams(window.location.search);

@@ -56,8 +56,9 @@ function extractCleanSentence(text, maxChars = 280) {
     .replace(/\s+/g, ' ')
     .trim();
 
-  // Temporarily protect known abbreviations and initials with periods
+  // Temporarily protect decimals (e.g. 1.4 million, 1.5 million) and known abbreviations/initials
   const protectedText = clean
+    .replace(/(\d)\.(\d)/g, '$1_DOT_$2')
     .replace(/\b([A-Z])\.\s+/g, '$1_DOT_ ')
     .replace(/\b(Mr|Mrs|Ms|Dr|St|Lt|Gen|Capt|Col|Prof|c|vs|etc|e\.g|i\.e)\.\s+/gi, (m, g1) => g1 + '_DOT_ ');
 
@@ -415,11 +416,15 @@ function updateArenaTimerDOM(lessonId, gameKey) {
 
   if (gameKey === 'standoff') {
     const phaseBadge = document.getElementById(`standoff-phase-badge-${lessonId}`);
+    const isHistoriographical = state.arenaData?.standoffPair?.category === 'historiographical';
+    const isKs2Standoff = Boolean(state.isKs2 || state.unitId === 'ks2_ww2');
     if (phaseBadge) {
       if (a.standoffPhase === 'roleA') {
-        phaseBadge.innerHTML = '<span style="background: #2563eb; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A Defending (30s)</span>';
+        const p1Lbl = isHistoriographical ? (isKs2Standoff ? 'Viewpoint 1' : 'Interpretation') : 'Defending';
+        phaseBadge.innerHTML = `<span style="background: #2563eb; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${p1Lbl} (30s)</span>`;
       } else {
-        phaseBadge.innerHTML = '<span style="background: #dc2626; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B Rebutting (30s)</span>';
+        const p2Lbl = isHistoriographical ? (isKs2Standoff ? 'Viewpoint 2' : 'Counter-View') : 'Rebutting';
+        phaseBadge.innerHTML = `<span style="background: #dc2626; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${p2Lbl} (30s)</span>`;
       }
     }
     const cardA = document.getElementById(`standoff-card-a-${lessonId}`);
@@ -729,68 +734,145 @@ function extractExitTicket(lesson, lessonIndex = 0) {
   const activeUnitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
   const isKs2 = activeUnitId === 'ks2_ww2' || (activeUnit && activeUnit.stage === 'ks2') || Boolean(lesson && lesson.is_ks2);
 
-  // Dedicated KS2 Primary Exit Ticket Engine (Under-10 Accessible: Zero Adult Fallacy Jargon)
+  // Dedicated KS2 Primary Exit Ticket Engine (Tailored 1:1 to each of the 11 WW2 Enquiries, Years 5–6 Accessible)
   if (isKs2) {
-    const ks2Style = lessonIndex % 4;
-    if (ks2Style === 0) {
-      // KS2 Style 0: Sentence Builder with Word Bank
-      return {
-        title: 'Exit Ticket · Sentence Builder Challenge',
+    const ks2ExitMap = {
+      lesson_1: {
+        title: 'Exit Ticket · Sentence Builder',
         type_label: 'Exit Ticket · Sentence Builder',
-        prompt: `Finish this sentence in your own words to explain what you discovered today about <strong>${cleanEnquiry}</strong>:<br><div style="margin-top: 10px; padding: 12px 16px; background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 6px; font-size: 1.05rem; font-weight: 700; color: #1e3a8a;">&ldquo;Life for people in wartime Britain changed because...&rdquo;</div>`,
+        prompt: `Finish this sentence in your own words to answer today's Big Question:<br><div style="margin-top:10px;padding:12px 16px;background:#eff6ff;border-left:4px solid #3b82f6;border-radius:6px;font-size:1.05rem;font-weight:700;color:#1e3a8a;">&ldquo;In September 1939, ordinary British families prepared for war by...&rdquo;</div>`,
         options: [
-          `Word Helper: Try to use at least one key word from today (e.g. ${vocabList}).`,
-          'Detail: Give one clear reason or true fact from the lesson.',
-          'Challenge: Explain how ordinary families or children felt about this change.'
+          `Word Helper: Use at least two key words from today (${vocabList}).`,
+          'Fact Check: Include a true detail such as 38 million gas masks, 1 September Blackout, or ARP wardens.'
         ],
-        guidance: 'Write 1–2 clear sentences using your best handwriting and punctuation.',
-        model: `Sentence Starter: "Today I discovered that life on the Home Front changed because families had to adapt to new rules like the blackout and carrying gas masks everywhere to stay safe."`,
-        placeholder: 'Finish the sentence: Life for people in wartime Britain changed because...'
-      };
-    } else if (ks2Style === 1) {
-      // KS2 Style 1: Fact Detective (Myth Buster)
-      return {
-        title: 'Exit Ticket · Fact Detective',
-        type_label: 'Exit Ticket · Fact Detective',
-        prompt: `A classmate said: <em>&ldquo;During the war, ordinary people didn't need to do anything because soldiers fought the war all by themselves.&rdquo;</em><br><br>Be a <strong>History Detective</strong>! Why is this claim a <strong>MYTH</strong>?`,
+        guidance: 'Write 1–2 clear sentences in your own words.',
+        model: `Model Answer: "In September 1939, ordinary British families prepared for war by carrying one of 38 million gas masks in cardboard boxes and hanging thick blackout curtains over every window so enemy bombers could not spot towns from above."`,
+        placeholder: 'In September 1939, ordinary British families prepared for war by...'
+      },
+      lesson_2: {
+        title: 'Exit Ticket · Postcard from the Countryside',
+        type_label: 'Exit Ticket · Evacuee Postcard',
+        prompt: `Imagine you are an evacuee child who has just arrived in a country village on <strong>Operation Pied Piper</strong>. Write a 2-sentence postcard home to your family in the city.`,
         options: [
-          'Fact Check: Explain what ordinary people had to do on the Home Front (e.g. volunteers, farmers, wardens, families).',
-          'Evidence: Give one real example from today\'s lesson proving how everyday people helped the country.'
+          'What happened: Mention your cardboard luggage label, the train journey, or the Billeting Officer.',
+          'How you feel: Share one exciting country sight and one thing you miss about home.'
         ],
-        guidance: 'Write 1–2 sentences explaining why ordinary people were so important.',
-        model: `Detective Note: "This is a myth because millions of ordinary people volunteered as ARP wardens, joined the Land Army to grow food, or opened their homes to care for young evacuees."`,
-        placeholder: 'Explain why this is a myth using facts from today...'
-      };
-    } else if (ks2Style === 2) {
-      // KS2 Style 2: The 3-2-1 History Quick Check
-      return {
+        guidance: 'Write 2 clear sentences as an evacuee child in September 1939.',
+        model: `Model Answer: "Dear Mum and Dad, After a long train ride with my luggage label pinned to my coat, the Billeting Officer found me a kind host family on a Devon farm. Seeing real pigs and green fields is exciting, even though I miss you both terribly!"`,
+        placeholder: 'Dear Mum and Dad, Today I arrived in the countryside...'
+      },
+      lesson_3: {
         title: 'Exit Ticket · 3-2-1 History Check',
         type_label: 'Exit Ticket · 3-2-1 Recall',
-        prompt: `Before you pack up your books, complete this quick 3-2-1 check for today's lesson on <strong>${cleanEnquiry}</strong>:`,
+        prompt: `Complete this quick 3-2-1 check on <strong>Pre-War Jewish Life &amp; Rights Lost (1933–1938)</strong>:`,
         options: [
-          '3 Facts: Name three interesting facts you discovered today.',
-          `2 Words: Write down two historical words you used (e.g. ${vocabList}).`,
-          '1 Question: Write one question you would like to ask a child who lived through this time.'
+          '3 Facts: Name one normal pre-war detail (e.g. Schultüte, football teams) and two unfair Nazi rules.',
+          `2 Words: Use two key words from today (${vocabList}).`,
+          '1 Thought: Explain why losing rights step by step made life harder and harder for Jewish children.'
         ],
-        guidance: 'You can write in short sentences or bullet points.',
-        model: `1. Three facts: Gas masks came in cardboard boxes, streetlights were turned off, and families put up blackout curtains.\n2. Key words: Blackout and ARP Warden.\n3. My question: How did children feel when the air raid sirens started to wail?`,
-        placeholder: '1. Three facts I learned:\n2. Two key words:\n3. One question I still have:'
-      };
-    } else {
-      // KS2 Style 3: Postcard from the Past (Historical Voice)
-      return {
-        title: 'Exit Ticket · Postcard from the Past',
-        type_label: 'Exit Ticket · Historical Voice',
-        prompt: `Imagine you are living in Britain during the Second World War. Write a 2-sentence note in your diary or on a postcard to family about today's events: <strong>${cleanEnquiry}</strong>.`,
+        guidance: 'Write short sentences or clear bullet points.',
+        model: `Model Answer: "Before 1933, Jewish children in Germany played in football teams and carried Schultüte sweet cones on their first day of school. After 1933, over 400 Nazi laws stripped away their civil rights step by step until Jewish pupils were banned from all state schools in November 1938."`,
+        placeholder: 'Before 1933, Jewish children... After 1933, unfair laws...'
+      },
+      lesson_4: {
+        title: "Exit Ticket · Vera's Suitcase Reflection",
+        type_label: 'Exit Ticket · Historical Empathy',
+        prompt: `Explain in 2 sentences how the <strong>Kindertransport</strong> rescued nine-year-old Vera Löwyová, and why the journey was both hopeful and sad.`,
         options: [
-          'What happened: Describe one real thing you saw, wore, or had to do today.',
-          'How you feel: Explain how you and your community are staying brave and helping out.'
+          'Key Facts: Mention nearly 10,000 children, one small suitcase, £50 sponsors, or Liverpool Street Station.',
+          'Both Sides: Explain why Vera was safe in England, yet heartbroken at Prague station.'
         ],
-        guidance: 'Write 2 sentences from the perspective of someone living through the war.',
-        model: `Postcard Message: "Today we had another gas mask drill at school and practised walking home safely under the blackout rules. Everyone is keeping calm and doing their bit to help the Home Front."`,
-        placeholder: 'Dear family, Today was unusual because...'
-      };
-    }
+        guidance: "Write 2 clear sentences using true facts from Vera's story.",
+        model: `Model Answer: "The Kindertransport rescued nearly 10,000 unaccompanied refugee children like nine-year-old Vera, who travelled from Prague to Liverpool Street Station with just one small suitcase and her porcelain doll. It was hopeful because British foster families kept her safe, yet heartbreaking because parents were not allowed to come too."`,
+        placeholder: 'The Kindertransport rescued children like Vera by...'
+      },
+      lesson_5: {
+        title: 'Exit Ticket · Upstander vs Bystander',
+        type_label: 'Exit Ticket · Upstander Check',
+        prompt: `Finish this explanation in 2 sentences:<br><div style="margin-top:10px;padding:12px 16px;background:#eff6ff;border-left:4px solid #3b82f6;border-radius:6px;font-size:1.05rem;font-weight:700;color:#1e3a8a;">&ldquo;Nicholas Winton, Doreen Warriner, and Trevor Chadwick were upstanders rather than bystanders because...&rdquo;</div>`,
+        options: [
+          'Teamwork: Mention cancelling the Swiss skiing trip, working in Prague and London, or finding £50 sponsors.',
+          'Impact: State how many children their rescue trains saved before 1 September 1939.'
+        ],
+        guidance: 'Write 2 clear sentences explaining how their rescue chain worked.',
+        model: `Model Answer: "Nicholas Winton, Doreen Warriner, and Trevor Chadwick were upstanders because instead of looking away, they teamed up across Prague and London to organise visas, trains, and British foster sponsors. Together their eight rescue trains saved 669 children before war closed the borders."`,
+        placeholder: 'They were upstanders rather than bystanders because...'
+      },
+      lesson_6: {
+        title: 'Exit Ticket · Fact Detective (Myth Buster)',
+        type_label: 'Exit Ticket · Fact Detective',
+        prompt: `A pupil claimed: <em>&ldquo;During the Blitz, everyone in Britain hid inside the exact same type of shelter and nobody stayed above ground.&rdquo;</em><br><br>Why is this statement <strong>untrue</strong>?`,
+        options: [
+          'Different Shelters: Compare garden Anderson shelters, indoor Morrison table cages, and London Tube platforms.',
+          'Above Ground: Name one group of brave volunteers working outside during air raids (e.g. AFS firefighters, firewatchers, WVS).'
+        ],
+        guidance: 'Write 2 sentences correcting the mistake with real evidence.',
+        model: `Model Answer: "Families used different shelters depending on where they lived: families with gardens dug Anderson shelters three feet deep, families without gardens slept in steel Morrison table shelters, and 150,000 Londoners used Tube platforms. Meanwhile, brave AFS firefighters and rooftop firewatchers risked their lives above ground."`,
+        placeholder: 'This claim is untrue because during the Blitz...'
+      },
+      lesson_7: {
+        title: 'Exit Ticket · Fair Shares Challenge',
+        type_label: 'Exit Ticket · Sentence Builder',
+        prompt: `Explain in 2 sentences why Britain introduced <strong>ration books</strong> in January 1940 and how <strong>Dig for Victory</strong> helped keep children healthy.`,
+        options: [
+          'Why Rationing Started: Mention over 70% imported food and German U-boat submarines in the Atlantic.',
+          'Staying Fed: Mention coupons (e.g. one fresh egg a week), allotments, Potato Pete, or Lord Woolton Pie.'
+        ],
+        guidance: 'Write 2 clear sentences showing cause and effect.',
+        model: `Model Answer: "Because German U-boats attacked merchant ships bringing over 70% of Britain's food, the government introduced ration books so rich and poor families received fair shares such as one fresh egg a week. Families also dug 1.4 million 'Dig for Victory' vegetable allotments, helping British children grow taller and healthier!"`,
+        placeholder: 'Britain introduced ration books in January 1940 because...'
+      },
+      lesson_8: {
+        title: 'Exit Ticket · Fact Detective (Women at War)',
+        type_label: 'Exit Ticket · Fact Detective',
+        prompt: `Someone claimed: <em>&ldquo;Women only did quiet indoor jobs during World War II.&rdquo;</em><br><br>Prove this claim wrong using <strong>two examples</strong> from today's enquiry!`,
+        options: [
+          'Farms & Forests: Mention the 80,000 Land Girls or the Lumberjills felling forest timber.',
+          'Factories & Skies: Mention Canary Girls packing explosive shells or the 168 ATA women pilots flying Spitfires.'
+        ],
+        guidance: 'Write 2 clear sentences packed with specific wartime roles.',
+        model: `Model Answer: "This claim is completely wrong because after female conscription began in December 1941, over 80,000 Land Girls ploughed fields and Lumberjills felled heavy forest trees. Nearly a million 'Canary Girls' packed dangerous TNT shells, while 168 female ATA pilots flew brand-new Spitfires and bombers to RAF airfields."`,
+        placeholder: 'This claim is wrong because women worked in tough, vital roles such as...'
+      },
+      lesson_9: {
+        title: 'Exit Ticket · Station X Top-Secret Summary',
+        type_label: 'Exit Ticket · Codebreaker Check',
+        prompt: `Write a 2-sentence summary explaining how the secret team at <strong>Bletchley Park</strong> helped shorten World War II.`,
+        options: [
+          "Machines: Mention the German Enigma machine and Alan Turing's Bombe (or Colossus).",
+          'People & Secrecy: Mention that around 75% (7,500) of the 10,000 workers were women who kept silent for 30 years.'
+        ],
+        guidance: 'Write 2 clear sentences explaining both the machines and the people.',
+        model: `Model Answer: "At Bletchley Park ('Station X'), Alan Turing's Bombe machines and 10,000 secret staff — around 75% of whom were women — cracked Germany's daily Enigma codes. Their Ultra intelligence steered Allied ships away from U-boats and shortened the war by at least two years."`,
+        placeholder: 'At Bletchley Park, secret codebreakers helped shorten the war by...'
+      },
+      lesson_10: {
+        title: 'Exit Ticket · Joy and Sorrow on VE Day',
+        type_label: 'Exit Ticket · Historical Balance',
+        prompt: `Explain in 2 sentences why <strong>VE Day (8 May 1945)</strong> was a day of both joyful street parties and quiet sorrow, and how Britain remembers today.`,
+        options: [
+          'Celebration & Hardship: Contrast bunting and street parties with loved ones lost, 2 million bombed homes, and rationing until 1954.',
+          'Remembrance: Mention red poppies, the two-minute silence, The Cenotaph on Whitehall, or founding the NHS in 1948.'
+        ],
+        guidance: 'Write 2 thoughtful sentences.',
+        model: `Model Answer: "On VE Day (8 May 1945), neighbours hung bunting and held street parties because nearly six years of war in Europe had ended, yet many families mourned lost loved ones and faced over 2 million bombed homes. Today we wear red poppies and keep a two-minute silence at memorials like The Cenotaph to honour everyone from Britain and the Commonwealth who served."`,
+        placeholder: 'VE Day on 8 May 1945 brought both joy and sorrow because...'
+      },
+      lesson_11: {
+        title: 'Exit Ticket · Rebuilding Lives at Lake Windermere',
+        type_label: 'Exit Ticket · Sanctuary & Legacy',
+        prompt: `Explain in 2 sentences how the <strong>Calgarth Estate</strong> helped the 300 <strong>Windermere Children</strong> heal in 1945, and how they later thanked Britain.`,
+        options: [
+          'Arrival & Care: Mention the 10 RAF Short Stirling bombers from Prague, hiding bread under pillows, Dr Friedman, or shiny red bicycles.',
+          "Giving Back: Mention founding The '45 Aid Society in 1963 or sharing oral history memories with author Tom Palmer."
+        ],
+        guidance: 'Write 2 clear sentences connecting 1945 to their lifelong legacy.',
+        model: `Model Answer: "Flown from Prague to Cumbria aboard ten RAF Short Stirling bombers in August 1945, 300 orphaned child survivors healed at Calgarth Estate through patient care, English lessons, and shiny red bicycles. As adults, they founded The '45 Aid Society in 1963 to thank Britain and shared their memories so their story would never be forgotten."`,
+        placeholder: 'In August 1945, 300 child survivors healed beside Lake Windermere through...'
+      }
+    };
+    const lessonKey = (lesson && lesson.id) || `lesson_${lessonIndex + 1}`;
+    return ks2ExitMap[lessonKey] || ks2ExitMap.lesson_1;
   }
 
   const styleType = lessonIndex % 4;
@@ -866,7 +948,11 @@ export function renderConsolidateStationHTML(lesson) {
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
   const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
-  const isKs2 = unitId === 'ks2_ww2' || (activeUnit && activeUnit.stage === 'ks2') || Boolean(lesson && lesson.is_ks2);
+  const isKs2 =
+    unitId === 'ks2_ww2' ||
+    String(unitId).toLowerCase().startsWith('ks2_') ||
+    Boolean(activeUnit && (activeUnit.is_ks2 || activeUnit.stage === 'ks2' || activeUnit.keyStage === 'KS2')) ||
+    Boolean(lesson && lesson.is_ks2);
 
   const livingTimeline = isKs2 ? null : extractLivingTimelineMilestone(lesson, currentIdx);
   const exitTicket = extractExitTicket(lesson, currentIdx);
@@ -970,7 +1056,11 @@ export function initConsolidateStation(lesson) {
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
   const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
-  const isKs2 = unitId === 'ks2_ww2' || (activeUnit && activeUnit.stage === 'ks2') || Boolean(lesson && lesson.is_ks2);
+  const isKs2 =
+    unitId === 'ks2_ww2' ||
+    String(unitId).toLowerCase().startsWith('ks2_') ||
+    Boolean(activeUnit && (activeUnit.is_ks2 || activeUnit.stage === 'ks2' || activeUnit.keyStage === 'KS2')) ||
+    Boolean(lesson && lesson.is_ks2);
 
   const livingTimeline = isKs2 ? null : extractLivingTimelineMilestone(lesson, currentIdx);
   const exitTicket = extractExitTicket(lesson, currentIdx);
@@ -1021,6 +1111,7 @@ export function initConsolidateStation(lesson) {
 
   const state = {
     lessonId: lesson.id,
+    unitId,
     isKs2,
     isOpen: false, // Auto-collapsed on initial lesson load across KS2, KS3 & GCSE
     mode: initialMode, // 'timeline' | 'quiz' | 'vocab' | 'domino' | 'exit' | 'arena'
@@ -1059,7 +1150,7 @@ export function initConsolidateStation(lesson) {
       isWhiteboardMode: false,
       soundEnabled: true,
       // Taboo state
-      tabooDeckType: 'cumulative', // 'cumulative' | 'today'
+      tabooDeckType: isKs2 ? 'today' : 'cumulative', // Default KS2 to today's lesson key terms
       tabooIndex: 0,
       tabooRevealedDef: false,
       tabooScore: 0,
@@ -1364,6 +1455,21 @@ function renderQuestionView(state, bodyEl) {
             <span>${currentNum === total ? 'Complete &amp; View Result' : 'Next Question'}</span>
             <i class="fa-solid ${currentNum === total ? 'fa-award' : 'fa-arrow-right'}"></i>
           </button>
+        </div>
+      ` : ''}
+
+      ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? `
+        <div class="station-teacher-quiz-crib" style="margin-top: 16px; background: #f5f3ff; border: 1.5px solid #c4b5fd; border-left: 4px solid #7c3aed; border-radius: 8px; padding: 12px 16px;">
+          <div style="font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #5b21b6; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-chalkboard-user"></i> Teacher Mode &bull; Lesson Quiz Answer Key (${state.questions.length} Questions)
+          </div>
+          <ol style="margin: 0; padding-left: 18px; font-size: 0.86rem; color: #1e293b; line-height: 1.5;">
+            ${state.questions.map((item, qIdx) => {
+              const ansLetter = letters[item.answer] || String(item.answer + 1);
+              const ansText = item.options[item.answer] || '';
+              return `<li style="margin-bottom: 5px; ${qIdx === state.currentIndex ? 'font-weight: 700; color: #4c1d95;' : ''}"><strong>${ansLetter}: ${ansText}</strong>${item.explanation ? ` <span style="color: #475569; font-weight: 400;">— ${item.explanation}</span>` : ''}</li>`;
+            }).join('')}
+          </ol>
         </div>
       ` : ''}
     </div>
@@ -2173,13 +2279,18 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
 
   const isRoleA = a.standoffPhase === 'roleA';
   const isHistoriographical = pair.category === 'historiographical';
+  const isKs2Standoff = Boolean(state.isKs2 || state.unitId === 'ks2_ww2');
 
   const mastheadBadgeText = isHistoriographical
-    ? 'HISTORIOGRAPHICAL SHOULDER-PARTNER DUEL &bull; 30s INTERPRETATION 1 &bull; 30s INTERPRETATION 2'
+    ? isKs2Standoff
+      ? 'HISTORIAN DEBATE DUEL &bull; 30S VIEWPOINT 1 &bull; 30S VIEWPOINT 2'
+      : 'HISTORIOGRAPHICAL SHOULDER-PARTNER DUEL &bull; 30s INTERPRETATION 1 &bull; 30s INTERPRETATION 2'
     : 'HISTORICAL SHOULDER-PARTNER DUEL &bull; 30s DEFENSE &bull; 30s REBUTTAL';
 
   const teacherProtocolText = isHistoriographical
-    ? 'Shoulder partners analyze opposing historical arguments. Partner A presents Interpretation 1 using evidence for 30s. At the chime, Partner B presents Interpretation 2 using counter-evidence!'
+    ? isKs2Standoff
+      ? 'Shoulder partners compare two historical viewpoints using evidence! Partner A presents Viewpoint 1 for 30 seconds. At the chime, Partner B presents Viewpoint 2 using their key evidence!'
+      : 'Shoulder partners analyze opposing historical arguments. Partner A presents Interpretation 1 using evidence for 30s. At the chime, Partner B presents Interpretation 2 using counter-evidence!'
     : 'Shoulder partners turn to face each other. Partner A has 30 seconds uninterrupted to argue their stance. At the chime (30s mark), Partner B immediately launches their 30-second rebuttal using opposing historical evidence!';
 
   const keyTermsA = pair.roleA.keyTerms && pair.roleA.keyTerms.length > 0 ? `
@@ -2209,7 +2320,7 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
           </h3>
           ${pair.subtitle ? `<div style="font-size: 0.82rem; font-weight: 700; color: #8b5cf6; margin-top: 3px;">${pair.subtitle}</div>` : ''}
           <p style="margin: 3px 0 0 0; font-size: 0.82rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'};">
-            ${isHistoriographical ? 'Face your shoulder partner. Partner A defends Interpretation 1 for 30s. At the chime, Partner B counter-argues with Interpretation 2!' : 'Face your shoulder partner. Partner A defends their actions for 30s. At the chime, Partner B rebuts with evidence!'}
+            ${isHistoriographical ? (isKs2Standoff ? 'Face your shoulder partner. Partner A explains Viewpoint 1 for 30s. At the chime, Partner B explains Viewpoint 2!' : 'Face your shoulder partner. Partner A defends Interpretation 1 for 30s. At the chime, Partner B counter-argues with Interpretation 2!') : 'Face your shoulder partner. Partner A defends their actions for 30s. At the chime, Partner B rebuts with evidence!'}
           </p>
         </div>
 
@@ -2217,8 +2328,8 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; width: 100%; box-sizing: border-box;">
           <div id="standoff-phase-badge-${state.lessonId}" style="flex: 1 1 auto; min-width: 0; max-width: 100%;">
             ${isRoleA
-      ? `<span style="background: #2563eb; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${isHistoriographical ? 'Interpretation' : 'Defending'} (30s)</span>`
-      : `<span style="background: #dc2626; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${isHistoriographical ? 'Counter-View' : 'Rebutting'} (30s)</span>`}
+      ? `<span style="background: #2563eb; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${isHistoriographical ? (isKs2Standoff ? 'Viewpoint 1' : 'Interpretation') : 'Defending'} (30s)</span>`
+      : `<span style="background: #dc2626; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${isHistoriographical ? (isKs2Standoff ? 'Viewpoint 2' : 'Counter-View') : 'Rebutting'} (30s)</span>`}
           </div>
 
           <div style="display: inline-flex; align-items: center; gap: 6px; background: ${isWhiteboard ? '#0f172a' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 10px; border-radius: 8px; flex-shrink: 0; white-space: nowrap;">
@@ -2952,4 +3063,20 @@ window.toggleArenaLifeline = function (lessonId) {
   if (!state || !state.arena) return;
   state.arena.showLifeline = !state.arena.showLifeline;
   renderStationContent(lessonId);
+};
+
+window.refreshConsolidateTeacherMode = function (isActive) {
+  if (!window.consolidateStations) return;
+  Object.keys(window.consolidateStations).forEach((lessonId) => {
+    const state = window.consolidateStations[lessonId];
+    if (!state) return;
+    if (isActive && state.questions && state.questions.length > 0 && !state.isOpen) {
+      state.isOpen = true;
+      state.mode = 'quiz';
+      syncStationOpenUI(lessonId);
+    }
+    if (state.isOpen) {
+      renderStationContent(lessonId);
+    }
+  });
 };

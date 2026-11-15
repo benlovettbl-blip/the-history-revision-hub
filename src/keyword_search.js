@@ -149,6 +149,7 @@ function getCleanUnitTitle(unitId, unitData) {
  * Computes year stage badge for each unit.
  */
 function getYearStageBadge(unitId) {
+  if (unitId === 'ks2_ww2' || String(unitId || '').startsWith('ks2')) return 'Key Stage 2';
   if (['water_and_sanitation', 'medieval_england'].includes(unitId)) return 'Year 7';
   if (
     [
@@ -304,7 +305,9 @@ export function buildKeywordSearchIndex(db) {
           lessonTitle:
             ki.lessonTitle ||
             (resolvedLesson?.title
-              ? `Lesson ${resolvedLessonIdx + 1}: ${resolvedLesson.title}`
+              ? /^(?:Enquiry|Lesson|KT)\s*\d/i.test(resolvedLesson.title)
+                ? resolvedLesson.title
+                : `Lesson ${resolvedLessonIdx + 1}: ${resolvedLesson.title}`
               : unitTitle),
           enquiry: resolvedLesson?.enquiry || '',
         });
@@ -331,7 +334,9 @@ export function buildKeywordSearchIndex(db) {
           stageBadge,
           lessonIndex: resolvedLessonIdx,
           lessonTitle: resolvedLesson?.title
-            ? `Lesson ${resolvedLessonIdx + 1}: ${resolvedLesson.title}`
+            ? /^(?:Enquiry|Lesson|KT)\s*\d/i.test(resolvedLesson.title)
+              ? resolvedLesson.title
+              : `Lesson ${resolvedLessonIdx + 1}: ${resolvedLesson.title}`
             : unitTitle,
           enquiry: resolvedLesson?.enquiry || '',
         });
@@ -621,16 +626,7 @@ export function searchCurriculum(
     if (filter === 'lesson' && item.type !== 'lesson') continue;
     if (filter === 'timeline' && item.type !== 'timeline') continue;
 
-    // Safety check for KS2 Junior Portal mode (safeguarding younger pupils)
-    const isKs2PortalActive =
-      (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_portal') === 'ks2') ||
-      (typeof window !== 'undefined' &&
-        new URLSearchParams(window.location.search).get('portal') === 'ks2');
-    if (isKs2PortalActive && item.stageBadge !== 'Key Stage 2') {
-      continue;
-    }
-
-    // Safety check for locked classroom safeguard sessions
+    // Safety check for locked classroom safeguard sessions (and locked KS2 pupil portal)
     const urlParams =
       typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
     const isLocked =
@@ -638,6 +634,13 @@ export function searchCurriculum(
       (urlParams.get('locked') === 'true' ||
         urlParams.get('mode') === 'pupil' ||
         urlParams.get('safeguard') === 'true');
+    const isKs2PortalActive =
+      isLocked &&
+      ((typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_portal') === 'ks2') ||
+        (urlParams && urlParams.get('portal') === 'ks2'));
+    if (isKs2PortalActive && item.stageBadge !== 'Key Stage 2') {
+      continue;
+    }
     if (isLocked && activeUnit && item.unitId !== activeUnit) {
       continue;
     }
@@ -768,6 +771,7 @@ function ensureModalDOM() {
           <span class="search-stage-filter-label">Key Stage:</span>
           <button type="button" class="search-stage-chip active" data-stage="all">All</button>
           <button type="button" class="search-stage-chip" data-stage="this_unit"><i class="fa-solid fa-location-dot"></i> This Unit</button>
+          <button type="button" class="search-stage-chip" data-stage="Key Stage 2">KS2</button>
           <button type="button" class="search-stage-chip" data-stage="Year 7">Year 7</button>
           <button type="button" class="search-stage-chip" data-stage="Year 8">Year 8</button>
           <button type="button" class="search-stage-chip" data-stage="Year 9">Year 9</button>

@@ -203,6 +203,22 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   // Load view based on URL or fallback to dashboard
   const urlParams = new URLSearchParams(window.location.search);
+  const isLockedBoot =
+    urlParams.get('locked') === 'true' ||
+    urlParams.get('mode') === 'pupil' ||
+    urlParams.get('safeguard') === 'true';
+  if (!isLockedBoot && urlParams.has('portal')) {
+    urlParams.delete('portal');
+    try {
+      const cleanedBootUrl = new URL(window.location.href);
+      cleanedBootUrl.searchParams.delete('portal');
+      if ((cleanedBootUrl.searchParams.get('view') || 'dashboard') === 'dashboard') {
+        cleanedBootUrl.searchParams.delete('stage');
+        urlParams.delete('stage');
+      }
+      window.history.replaceState(window.history.state || {}, '', cleanedBootUrl);
+    } catch (e) {}
+  }
   let view = urlParams.get('view');
   let unit = urlParams.get('unit');
   const initialLesson = urlParams.get('lesson');
@@ -340,103 +356,130 @@ window.addEventListener('DOMContentLoaded', async () => {
     flushDraftState();
   });
 
-  const isPureNumericInitialLesson =
-    initialLesson !== null && /^\d+$/.test(String(initialLesson).trim());
-
-  const targetInitialLessonIndex = isPureNumericInitialLesson
-    ? parseInt(initialLesson, 10) > 0
-      ? parseInt(initialLesson, 10) - 1
-      : 0
-    : undefined;
-
-  switchView(view, unit, true, { lessonIndex: targetInitialLessonIndex }).then(() => {
-    const resolveLessonTarget = (paramLesson, unitData) => {
-      if (!unitData || !Array.isArray(unitData.lessons) || unitData.lessons.length === 0) {
-        return { index: -1, lesson: null, id: null };
+  // Shared URL lesson resolver (supports slugs like 'kt1.1-end-of-mandate', 'intro', hasLessonZero-aware numbers, IDs & aliases)
+  const resolveLessonTarget = (paramLesson, unitData) => {
+    if (!unitData || !Array.isArray(unitData.lessons) || unitData.lessons.length === 0) {
+      return { index: -1, lesson: null, id: null };
+    }
+    if (paramLesson !== null && paramLesson !== undefined && String(paramLesson).trim() !== '') {
+      const rawStr = String(paramLesson).trim();
+      const hasLessonZero = Boolean(
+        unitData.lessons[0] &&
+          (unitData.lessons[0].id === 'lesson_0' ||
+            (unitData.lessons[0].title && unitData.lessons[0].title.includes('KT 1.0'))),
+      );
+      if (rawStr.toLowerCase() === 'intro' && hasLessonZero) {
+        return { index: 0, lesson: unitData.lessons[0], id: unitData.lessons[0].id };
       }
-      if (paramLesson !== null && paramLesson !== undefined && String(paramLesson).trim() !== '') {
-        const rawStr = String(paramLesson).trim();
-        // 1. Pure numeric index handling (supports 1-indexed e.g. 1 -> 0, or 0-indexed 0)
-        // High priority: sequential lesson number parameter (e.g. ?lesson=10) represents the 10th lesson
-        const hasLessonZero = (unitData.lessons[0] && (unitData.lessons[0].id === 'lesson_0' || (unitData.lessons[0].title && unitData.lessons[0].title.includes('KT 1.0'))));
-        if (rawStr.toLowerCase() === 'intro' && hasLessonZero) {
-          return { index: 0, lesson: unitData.lessons[0], id: unitData.lessons[0].id };
-        }
-        if (/^\d+$/.test(rawStr)) {
-          const num = parseInt(rawStr, 10);
-          const idx = hasLessonZero
-            ? (num >= 0 && num < unitData.lessons.length ? num : -1)
-            : (num >= 1 && num <= unitData.lessons.length ? num - 1 : num === 0 ? 0 : -1);
-          if (idx !== -1 && unitData.lessons[idx]) {
-            return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
-          }
-        }
-        // 2. Direct exact ID, readable slug, or alias_ids match (e.g. 'kt2.1-water-wars', 'lesson_3_1')
-        const lowerRaw = rawStr.toLowerCase();
-        let idx = unitData.lessons.findIndex(
-          (l) =>
-            (l.id && l.id.toLowerCase() === lowerRaw) ||
-            (l.slug && l.slug.toLowerCase() === lowerRaw) ||
-            (Array.isArray(l.alias_ids) &&
-              l.alias_ids.some((a) => String(a).toLowerCase() === lowerRaw)),
-        );
-        if (idx !== -1) {
+      // 1. Pure numeric index handling (hasLessonZero-aware)
+      if (/^\d+$/.test(rawStr)) {
+        const num = parseInt(rawStr, 10);
+        const idx = hasLessonZero
+          ? num >= 0 && num < unitData.lessons.length
+            ? num
+            : -1
+          : num >= 1 && num <= unitData.lessons.length
+            ? num - 1
+            : num === 0
+              ? 0
+              : -1;
+        if (idx !== -1 && unitData.lessons[idx]) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
-        // 3. Match by lesson number in ID prefix: e.g. 'lesson_2_trenches' or 'lesson_2' -> match 'lesson_2_trenches_haig'
-        const numMatch = rawStr.match(/lesson[_-]?(\d+)/i) || rawStr.match(/^enquiry[_-]?(\d+)/i);
-        if (numMatch) {
-          const targetNum = parseInt(numMatch[1], 10);
-          if (targetNum >= 1 && targetNum <= unitData.lessons.length) {
-            const candidate = unitData.lessons[targetNum - 1];
-            if (candidate) {
-              return { index: targetNum - 1, lesson: candidate, id: candidate.id };
-            }
-          }
-          idx = unitData.lessons.findIndex(
-            (l) =>
-              l.id &&
-              (l.id.toLowerCase().startsWith(`lesson_${targetNum}_`) ||
-                l.id.toLowerCase() === `lesson_${targetNum}`),
-          );
-          if (idx !== -1) {
-            return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
-          }
-        }
-        // 4. Substring / partial match on ID
+      }
+      // 2. Direct exact ID, readable slug, or alias_ids match (e.g. 'kt1.1-end-of-mandate', 'kt2.1-water-wars', 'lesson_3_1')
+      const lowerRaw = rawStr.toLowerCase();
+      let idx = unitData.lessons.findIndex(
+        (l) =>
+          (l.id && l.id.toLowerCase() === lowerRaw) ||
+          (l.slug && l.slug.toLowerCase() === lowerRaw) ||
+          (Array.isArray(l.alias_ids) &&
+            l.alias_ids.some((a) => String(a).toLowerCase() === lowerRaw)),
+      );
+      if (idx !== -1) {
+        return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
+      }
+      // 3. Match by lesson number in ID prefix: e.g. 'lesson_2_trenches' or 'lesson_2'
+      const numMatch = rawStr.match(/lesson[_-]?(\d+)/i) || rawStr.match(/^enquiry[_-]?(\d+)/i);
+      if (numMatch) {
+        const targetNum = parseInt(numMatch[1], 10);
         idx = unitData.lessons.findIndex(
           (l) =>
             l.id &&
-            (l.id.toLowerCase().includes(rawStr.toLowerCase()) ||
-              rawStr.toLowerCase().includes(l.id.toLowerCase())),
+            (l.id.toLowerCase().startsWith(`lesson_${targetNum}_`) ||
+              l.id.toLowerCase() === `lesson_${targetNum}`),
         );
         if (idx !== -1) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
-        // 5. Title match
-        idx = unitData.lessons.findIndex(
-          (l) => l.title && l.title.toLowerCase().includes(rawStr.toLowerCase()),
-        );
-        if (idx !== -1) {
-          return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
+        const fallbackIdx = hasLessonZero ? targetNum : targetNum - 1;
+        if (fallbackIdx >= 0 && fallbackIdx < unitData.lessons.length && unitData.lessons[fallbackIdx]) {
+          return {
+            index: fallbackIdx,
+            lesson: unitData.lessons[fallbackIdx],
+            id: unitData.lessons[fallbackIdx].id,
+          };
         }
       }
-      return { index: -1, lesson: null, id: null };
-    };
+      // 4. Substring / partial match on ID or slug
+      idx = unitData.lessons.findIndex(
+        (l) =>
+          (l.id &&
+            (l.id.toLowerCase().includes(lowerRaw) || lowerRaw.includes(l.id.toLowerCase()))) ||
+          (l.slug &&
+            (l.slug.toLowerCase().includes(lowerRaw) || lowerRaw.includes(l.slug.toLowerCase()))),
+      );
+      if (idx !== -1) {
+        return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
+      }
+      // 5. Title match
+      idx = unitData.lessons.findIndex(
+        (l) => l.title && l.title.toLowerCase().includes(lowerRaw),
+      );
+      if (idx !== -1) {
+        return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
+      }
+    }
+    return { index: -1, lesson: null, id: null };
+  };
 
+  switchView(view, unit, true).then(() => {
     if (view === 'lessons' && initialLesson !== null) {
       const unitDataObj =
         window.currentUnitData ||
-        (window.appStore && window.appStore.state && window.appStore.state.activeUnitData);
+        (window.appStore && window.appStore.state && window.appStore.state.activeUnitData) ||
+        (typeof window.getUnitData === 'function' ? window.getUnitData(unit) : null);
       const resolved = resolveLessonTarget(initialLesson, unitDataObj);
       if (resolved.index !== -1) {
-        if (typeof window.viewLessonDetail === 'function') {
-          window.viewLessonDetail(resolved.index, null, true);
-        } else if (typeof window.renderLessonByIndex === 'function') {
-          window.renderLessonByIndex(resolved.index, true);
+        if (window.currentLessonIndex !== resolved.index) {
+          if (typeof window.viewLessonDetail === 'function') {
+            window.viewLessonDetail(resolved.index, null, true);
+          } else if (typeof window.renderLessonByIndex === 'function') {
+            window.renderLessonByIndex(resolved.index, true);
+          }
+        }
+        try {
+          window.history.replaceState(
+            {
+              ...(window.history.state || {}),
+              view: 'lessons',
+              unit: unit,
+              lessonIndex: resolved.index,
+            },
+            '',
+            window.location.href,
+          );
+        } catch (err) {}
+        if (typeof window.updateHeaderBackBtn === 'function') {
+          window.updateHeaderBackBtn('lessons');
         }
         const stageParam = urlParams.get('stage');
         if (stageParam && typeof window.jumpToNarrativeBlock === 'function') {
+          try {
+            const cleanStageUrl = new URL(window.location.href);
+            cleanStageUrl.searchParams.delete('stage');
+            window.history.replaceState(window.history.state || {}, '', cleanStageUrl);
+          } catch (e) {}
           setTimeout(() => {
             window.jumpToNarrativeBlock(stageParam);
           }, 220);
@@ -546,24 +589,63 @@ window.addEventListener('DOMContentLoaded', async () => {
     targetView = norm.view;
     targetUnit = norm.unit;
 
-    switchView(targetView, targetUnit, true, { skipScrollToTop: targetScrollY > 0 }).then(() => {
-      // Restore lesson view if requested
-      const lessonIdx =
-        e.state && e.state.lessonIndex !== undefined
-          ? e.state.lessonIndex
-          : urlLesson !== null && !isNaN(parseInt(urlLesson, 10))
-            ? parseInt(urlLesson, 10) >= 1
-              ? parseInt(urlLesson, 10) - 1
-              : parseInt(urlLesson, 10)
-            : null;
+    if (
+      targetView === 'timeline' &&
+      e.state &&
+      typeof e.state.timelineMilestoneIdx === 'number'
+    ) {
+      window._cmeRestoreMilestoneIdx = e.state.timelineMilestoneIdx;
+    }
 
-      if (targetView === 'lessons') {
-        if (lessonIdx !== null && typeof window.renderLessonByIndex === 'function') {
-          window.renderLessonByIndex(lessonIdx, true);
-        } else if (lessonIdx === null && typeof window.renderLessonsView === 'function') {
-          window.renderLessonsView();
+    if (targetScrollY > 0) {
+      window._suppressLessonAutoScrollTop = true;
+    }
+
+    switchView(targetView, targetUnit, true, { skipScrollToTop: true }).then(() => {
+      const unitDataObj =
+        window.currentUnitData ||
+        (window.appStore && window.appStore.state && window.appStore.state.activeUnitData) ||
+        (typeof window.getUnitData === 'function' ? window.getUnitData(targetUnit) : null);
+
+      let lessonIdx = null;
+      if (e.state && typeof e.state.lessonIndex === 'number' && e.state.lessonIndex >= 0) {
+        lessonIdx = e.state.lessonIndex;
+      } else if (urlLesson !== null && String(urlLesson).trim() !== '') {
+        const resolved = resolveLessonTarget(urlLesson, unitDataObj);
+        if (resolved.index !== -1) {
+          lessonIdx = resolved.index;
         }
       }
+
+      if (targetView === 'lessons') {
+        if (lessonIdx !== null && lessonIdx >= 0) {
+          if (window.currentLessonIndex !== lessonIdx) {
+            if (typeof window.renderLessonByIndex === 'function') {
+              window.renderLessonByIndex(lessonIdx, true);
+            } else if (typeof window.viewLessonDetail === 'function') {
+              window.viewLessonDetail(lessonIdx, null, true);
+            }
+          }
+          window.currentLessonIndex = lessonIdx;
+        } else {
+          const wasInLesson = typeof window.currentLessonIndex === 'number';
+          window.currentLessonIndex = null;
+          window._unitReturnOrigin = null;
+          if (wasInLesson && typeof window.renderLessonsView === 'function') {
+            window.renderLessonsView();
+          }
+        }
+        if (typeof window.updateHeaderBackBtn === 'function') {
+          window.updateHeaderBackBtn('lessons');
+        }
+      } else {
+        window.currentLessonIndex = null;
+        if (typeof window.updateHeaderBackBtn === 'function') {
+          window.updateHeaderBackBtn(targetView);
+        }
+      }
+
+      window._suppressLessonAutoScrollTop = false;
 
       // Restore custom tab if requested
       if (e.state && e.state.customTab) {
@@ -575,17 +657,36 @@ window.addEventListener('DOMContentLoaded', async () => {
         });
       }
 
-      // Restore scroll position smoothly
-      if (targetScrollY > 0) {
-        setTimeout(() => {
-          window.scrollTo({ top: targetScrollY, behavior: 'instant' });
-          const contentArea =
-            document.getElementById('content-area') || document.getElementById('main-content');
-          if (contentArea && contentArea.scrollTop !== undefined) {
+      // Restore scroll position reliably after view/lesson layout via rAF + 180ms timeout
+      const applyPopScroll = () => {
+        const docEl = document.documentElement;
+        const prevBehavior = docEl ? docEl.style.scrollBehavior : '';
+        if (docEl) docEl.style.scrollBehavior = 'auto';
+        try {
+          window.scrollTo({ top: targetScrollY, left: 0, behavior: 'instant' });
+        } catch (err) {
+          window.scrollTo(0, targetScrollY);
+        }
+        if (docEl) {
+          docEl.scrollTop = targetScrollY;
+          docEl.style.scrollBehavior = prevBehavior;
+        }
+        if (document.body) document.body.scrollTop = targetScrollY;
+        const contentArea =
+          document.getElementById('content-area') || document.getElementById('main-content');
+        if (contentArea && contentArea.scrollTop !== undefined && contentArea !== document.body) {
+          const style = window.getComputedStyle(contentArea);
+          if (style.overflowY === 'auto' || style.overflowY === 'scroll') {
             contentArea.scrollTop = targetScrollY;
           }
-        }, 60);
-      }
+        }
+      };
+
+      requestAnimationFrame(() => {
+        applyPopScroll();
+        requestAnimationFrame(applyPopScroll);
+      });
+      setTimeout(applyPopScroll, 180);
     });
   });
 

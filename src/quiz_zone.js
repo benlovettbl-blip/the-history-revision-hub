@@ -822,36 +822,79 @@ export function renderQuizZone(container, unitData) {
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;">
         `;
 
-    const themes = [
-      {
-        id: 'all',
-        title: 'All Units (Random)',
-        color: '#1e3a8a',
-        icon: 'fa-layer-group',
-        lessons: [],
-      },
-      {
-        id: 'trade',
-        title: 'Exploration & Trade',
-        color: '#10b981',
-        icon: 'fa-globe',
-        lessons: ['1450', 'Trade or takeover'],
-      },
-      {
-        id: 'conflict',
-        title: 'Conflict & Power',
-        color: '#ef4444',
-        icon: 'fa-gavel',
-        lessons: ['Who controlled Britain', 'enslaved Africans'],
-      },
-      {
-        id: 'religion',
-        title: 'Religion & Society',
-        color: '#8b5cf6',
-        icon: 'fa-church',
-        lessons: ['religious conflict', 'modern'],
-      },
-    ];
+    const isKs2Unit =
+      curUnit === 'ks2_ww2' ||
+      Boolean(unitData && unitData.is_ks2) ||
+      String(curUnit).toLowerCase().startsWith('ks2_');
+
+    const themes = isKs2Unit
+      ? [
+          {
+            id: 'all',
+            title: 'All Enquiries (Random)',
+            color: '#1e3a8a',
+            icon: 'fa-layer-group',
+            lessons: [],
+          },
+          {
+            id: 'homefront',
+            title: 'Outbreak & Evacuation',
+            color: '#2563eb',
+            icon: 'fa-suitcase-rolling',
+            lessons: ['Outbreak', 'Evacuation', 'Pied Piper'],
+          },
+          {
+            id: 'rescue',
+            title: 'Pre-War Life & Rescuers',
+            color: '#7c3aed',
+            icon: 'fa-train',
+            lessons: ['Pre-War', 'Kindertransport', 'Rescuers', 'Winton'],
+          },
+          {
+            id: 'blitz',
+            title: 'Blitz, Rationing & Women',
+            color: '#059669',
+            icon: 'fa-seedling',
+            lessons: ['Blitz', 'Rationing', 'Dig for Victory', 'Women'],
+          },
+          {
+            id: 'victory',
+            title: 'Codebreakers, VE Day & Healing',
+            color: '#d97706',
+            icon: 'fa-key',
+            lessons: ['Codebreakers', 'Bletchley', 'VE Day', 'Windermere'],
+          },
+        ]
+      : [
+          {
+            id: 'all',
+            title: 'All Units (Random)',
+            color: '#1e3a8a',
+            icon: 'fa-layer-group',
+            lessons: [],
+          },
+          {
+            id: 'trade',
+            title: 'Exploration & Trade',
+            color: '#10b981',
+            icon: 'fa-globe',
+            lessons: ['1450', 'Trade or takeover'],
+          },
+          {
+            id: 'conflict',
+            title: 'Conflict & Power',
+            color: '#ef4444',
+            icon: 'fa-gavel',
+            lessons: ['Who controlled Britain', 'enslaved Africans'],
+          },
+          {
+            id: 'religion',
+            title: 'Religion & Society',
+            color: '#8b5cf6',
+            icon: 'fa-church',
+            lessons: ['religious conflict', 'modern'],
+          },
+        ];
 
     themes.forEach((t) => {
       themeHtml += `
@@ -895,7 +938,10 @@ export function renderQuizZone(container, unitData) {
         let filteredBank = masterBank;
         if (themeId !== 'all') {
           filteredBank = masterBank.filter((q) =>
-            theme.lessons.some((keyword) => q.source && q.source.includes(keyword)),
+            theme.lessons.some(
+              (keyword) =>
+                q.source && q.source.toLowerCase().includes(String(keyword).toLowerCase()),
+            ),
           );
         }
 

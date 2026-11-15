@@ -27,22 +27,32 @@ if (typeof window !== 'undefined') {
 export const CURRICULAR_PILLARS_CATALOG = {
   ks2_ww2: {
     textbook: {
-      title: 'World War II & The Home Front (1939–1945) Master Classroom Textbook',
-      label: 'Master Textbook (24 Pages)',
+      title: 'World War II & The Home Front (1933–1945) Master Classroom Textbook',
+      label: 'Master Textbook (20 Pages)',
       htmlUrl: '/units/ks2_ww2/textbook.html',
       pdfUrl: '/pdfs/ks2_ww2_textbook.pdf',
     },
     workbook: {
-      title: 'World War II & The Home Front (1939–1945) Pupil Workbook',
-      label: 'Pupil Workbook (24 Pages)',
+      title: 'World War II & The Home Front (1933–1945) Pupil Workbook',
+      label: 'Pupil Workbook (28 Pages)',
       htmlUrl: '/units/ks2_ww2/pupil_workbook.html',
       pdfUrl: '/pdfs/ks2_ww2_pupil_workbook.pdf',
     },
     retrieval: {
-      title: 'World War II & The Home Front Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (40 Qs)',
+      title: 'World War II & The Home Front Retrieval Quiz Pack',
+      label: 'Quiz Pack (44 Qs)',
       htmlUrl: '/units/ks2_ww2/quiz_pack.html',
       pdfUrl: '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
+    },
+    schemeOfWork: {
+      title: 'Key Stage 2 World War II Walk-In Teacher Guide & Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      htmlUrl: '/units/ks2_ww2/ks2_ww2_scheme_of_work.html',
+      pdfUrl: '/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf',
+    },
+    timelineUrl: {
+      label: 'Timeline Slider',
+      url: '/units/ks2_ww2/timeline_slider.html',
     },
   },
   great_war: {
@@ -444,6 +454,8 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const rc = config.retrieval;
   const cb = config.combined;
   const ov = config.overviewInfographic;
+  const sow = config.schemeOfWork;
+  const tl = config.timelineUrl;
 
   const hasDistinctTextbook = tb && wb && tb.htmlUrl !== wb.htmlUrl && tb.pdfUrl !== wb.pdfUrl;
 
@@ -452,6 +464,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const cleanRcTitle = (rc?.title || '').replace(/'/g, "\\'");
   const cleanCbTitle = (cb?.title || '').replace(/'/g, "\\'");
   const cleanOvTitle = (ov?.title || ov?.label || '').replace(/'/g, "\\'");
+  const cleanSowTitle = (sow?.title || sow?.label || '').replace(/'/g, "\\'");
 
   const textbookPill = hasDistinctTextbook
     ? `
@@ -581,6 +594,36 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         </div>`
     : '';
 
+  const sowPill = sow
+    ? `
+        <!-- Optional Pillar: Teacher Guide & Scheme of Work -->
+        <div class="launchpad-pill-group pill-combined">
+          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${sow.htmlUrl}', '${cleanSowTitle}', '${sow.pdfUrl}', 'SCHEME_OF_WORK')" title="Open ${cleanSowTitle} in classroom reader">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>${sow.label}</span>
+          </button>
+          ${
+            sow.pdfUrl && isVerifiedPdf(sow.pdfUrl)
+              ? `
+          <a href="${sow.pdfUrl}" target="_blank" download title="Download ${cleanSowTitle} PDF" class="launchpad-pill-pdf">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>`
+              : ''
+          }
+        </div>`
+    : '';
+
+  const timelinePill = tl
+    ? `
+        <!-- Optional Pillar: Standalone Interactive Timeline Slider -->
+        <div class="launchpad-pill-group pill-overview">
+          <a href="${tl.url}" target="_blank" class="launchpad-pill-btn" style="text-decoration: none;" title="Open Interactive Classroom Timeline Slider">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>${tl.label}</span>
+          </a>
+        </div>`
+    : '';
+
   return `
     <div class="hero-curricular-launchpad">
       <div class="hero-launchpad-capsule">
@@ -588,6 +631,8 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         ${workbookPill}
         ${workbookMarkSchemePill}
         ${retrievalPill}
+        ${sowPill}
+        ${timelinePill}
         ${combinedPill}
         ${overviewPill}
       </div>

@@ -1,4 +1,4 @@
-export function getAssetUrl(path) {
+export function getAssetUrl(path, explicitUnitId = null) {
   if (!path) return '';
   if (typeof path === 'object' && path !== null) {
     if (typeof path.url === 'string') path = path.url;
@@ -11,8 +11,9 @@ export function getAssetUrl(path) {
   }
   if (typeof path !== 'string') return '';
   if (path.startsWith('http') || path.startsWith('/')) return path;
-  if (window.currentUnitId) {
-    return `/units/${window.currentUnitId}/${path}`;
+  const resolvedUnitId = explicitUnitId || window.currentUnitId;
+  if (resolvedUnitId) {
+    return `/units/${resolvedUnitId}/${path}`;
   }
   return path;
 }

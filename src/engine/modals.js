@@ -157,6 +157,11 @@ export function openTaskWhiteboard() {
       )
       .join(' ');
 
+    const isKs2VocabModal = Boolean(
+      unitId === 'ks2_ww2' ||
+        String(unitId || '').toLowerCase().startsWith('ks2_') ||
+        (unitDataObj && (unitDataObj.is_ks2 || unitDataObj.keyStage === 'KS2')),
+    );
     let challengeTitle = '';
     let challengePrompt = '';
     let modelAnswer = '';
@@ -164,24 +169,34 @@ export function openTaskWhiteboard() {
     if (vocabStyle === 0) {
       challengeTitle = 'The Odd One Out';
       challengePrompt = `Identify <strong>ONE</strong> term that does not belong with the others.<br><strong>Explain your reasoning:</strong> What historical connection links the other terms, and why is your chosen term different?<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`;
-      modelAnswer = `Pupils should categorize terms by conceptual theme (e.g. status vs power vs doctrine). Any choice justified with specific historical evidence from the lesson is creditworthy.`;
+      modelAnswer = isKs2VocabModal
+        ? `Pupils can group words into everyday objects, people's jobs, or big wartime rules/ideas. Any sensible choice explained using a real clue from today's lesson is great historical thinking!`
+        : `Pupils should categorize terms by conceptual theme (e.g. status vs power vs doctrine). Any choice justified with specific historical evidence from the lesson is creditworthy.`;
     } else if (vocabStyle === 1) {
       challengeTitle = 'The Golden Sentence';
-      challengePrompt = `Select <strong>TWO</strong> vocabulary terms. Write <strong>ONE</strong> sophisticated sentence connecting them using <strong>because</strong>, <strong>although</strong>, or <strong>consequently</strong>.<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`;
+      challengePrompt = isKs2VocabModal
+        ? `Pick <strong>TWO</strong> key words. Say or write <strong>ONE</strong> clear sentence joining them together with <strong>because</strong>, <strong>although</strong>, or <strong>so</strong>.<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`
+        : `Select <strong>TWO</strong> vocabulary terms. Write <strong>ONE</strong> sophisticated sentence connecting them using <strong>because</strong>, <strong>although</strong>, or <strong>consequently</strong>.<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`;
       const exemplar =
         typeof window.getGoldenSentenceExemplar === 'function'
           ? window.getGoldenSentenceExemplar(activeLesson, termsList)
           : `Although ${termsList[0]} played a pivotal role, ${termsList[1]} proved equally critical because it fundamentally altered the long-term balance of power.`;
       modelAnswer = `<strong>Model Golden Sentence:</strong> "${exemplar}"`;
     } else if (vocabStyle === 2) {
-      challengeTitle = 'Conceptual Binary Sort';
-      challengePrompt = `Sort the 6 vocabulary terms into two columns: <strong>[Power, Governance & Warfare]</strong> vs <strong>[Economy, Trade & Society]</strong>.<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`;
-      modelAnswer = `Ensure terms relating to state authority and conflict are separated from civilian, economic, and cultural developments. Discuss any terms that bridge both categories.`;
+      challengeTitle = isKs2VocabModal ? 'Two-Group Word Sort' : 'Conceptual Binary Sort';
+      challengePrompt = isKs2VocabModal
+        ? `Sort today's key words into two groups: <strong>[War, Rules &amp; Leaders]</strong> vs <strong>[Everyday Life &amp; Safety]</strong>.<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`
+        : `Sort the 6 vocabulary terms into two columns: <strong>[Power, Governance & Warfare]</strong> vs <strong>[Economy, Trade & Society]</strong>.<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`;
+      modelAnswer = isKs2VocabModal
+        ? `Separate words about government laws, leaders, and fighting from words about how ordinary families and children stayed safe in daily life—and spot any word that fits in both!`
+        : `Ensure terms relating to state authority and conflict are separated from civilian, economic, and cultural developments. Discuss any terms that bridge both categories.`;
     } else {
       challengeTitle = 'Spot the Deliberate Error!';
       const errStmt =
         activeLesson.vocab_deliberate_error ||
-        `A historical commentator claimed that ${termsList[0] || 'key concepts'} had zero effect on the outcome of this era.`;
+        (isKs2VocabModal
+          ? `Someone claimed that ${termsList[0] || 'this key idea'} did not matter to ordinary families during the Second World War.`
+          : `A historical commentator claimed that ${termsList[0] || 'key concepts'} had zero effect on the outcome of this era.`);
       challengePrompt = `Identify the misconception in this historical statement: <em style="color:#b91c1c;">"${errStmt}"</em>. Write the accurate historical correction in your workbook!<br><div style="margin-top:6px;"><strong>Word Bank:</strong> ${termsBadges}</div>`;
       modelAnswer = `<strong>Historical Correction:</strong> The claim is historically false. Pupils should contrast this misconception with specific factual evidence from the lesson narrative.`;
     }
@@ -2998,6 +3013,8 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
     } else if (url.includes('/units/ks2_ww2/')) {
       if (url.includes('pupil_workbook')) {
         pdfUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
+      } else if (url.includes('scheme_of_work')) {
+        pdfUrl = '/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf';
       } else if (
         url.includes('quiz_pack') ||
         url.includes('retrieval') ||
@@ -3116,7 +3133,13 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
       <div style="background: #1e293b; border-top: 1px solid #334155; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 0.82rem; color: #94a3b8;">
         <div style="display: flex; align-items: center; gap: 8px;">
           <i class="fa-solid fa-lightbulb" style="color: #facc15;"></i>
-          <span><strong>Teacher Tip:</strong> The print stylesheet automatically handles page sizing (A3 Landscape for Placemats, A4 Portrait for Workouts, A4 Landscape for Trifolds). Ensure <em>"Background graphics"</em> is checked in your browser's print dialog.</span>
+          <span><strong>Teacher Tip:</strong> ${
+            String(htmlUrl || '').includes('ks2_ww2') ||
+            window.currentUnitId === 'ks2_ww2' ||
+            document.body.classList.contains('ks2-mode-active')
+              ? 'All KS2 enquiry worksheets, pupil workbooks, textbooks, and schemes of work are formatted for A4 Portrait printing. Ensure <em>"Background graphics"</em> is checked in your browser\'s print dialog.'
+              : 'The print stylesheet automatically handles page sizing (A3 Landscape for Placemats, A4 Portrait for Workouts, A4 Landscape for Trifolds). Ensure <em>"Background graphics"</em> is checked in your browser\'s print dialog.'
+          }</span>
         </div>
         <div style="color: #64748b; font-size: 0.78rem;">
           Press <kbd style="background: #334155; color: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: monospace;">Esc</kbd> to close
@@ -3554,6 +3577,12 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       id: 'water_and_sanitation',
       title: 'KS3: Water & Sanitation Through Time',
       group: 'Key Stage 3',
+    },
+    // Key Stage 2
+    {
+      id: 'ks2_ww2',
+      title: 'KS2: World War II & The Home Front (1933–1945)',
+      group: 'Key Stage 2',
     },
   ];
 
@@ -4712,6 +4741,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       // Build Unit Dropdown Options with optgroups
       const gcseUnits = ALL_UNITS.filter((u) => u.group === 'GCSE History');
       const ks3Units = ALL_UNITS.filter((u) => u.group === 'Key Stage 3');
+      const ks2Units = ALL_UNITS.filter((u) => u.group === 'Key Stage 2');
 
       const unitOptionsHtml = `
         <optgroup label="GCSE History Specification">
@@ -4719,6 +4749,9 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
         </optgroup>
         <optgroup label="Key Stage 3 Curriculum">
           ${ks3Units.map((u) => `<option value="${u.id}" ${u.id === activeUnitId ? 'selected' : ''}>${u.title}</option>`).join('')}
+        </optgroup>
+        <optgroup label="Key Stage 2 Primary Curriculum">
+          ${ks2Units.map((u) => `<option value="${u.id}" ${u.id === activeUnitId ? 'selected' : ''}>${u.title}</option>`).join('')}
         </optgroup>
       `;
 

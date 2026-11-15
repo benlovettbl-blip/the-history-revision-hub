@@ -881,12 +881,15 @@ export function initEventDelegation() {
           });
 
           answers.forEach((a) => {
+            const parentCard = a.closest('.do-now-card');
             if (anyHidden) {
               a.style.display = 'block';
               a.classList.add('revealed');
+              if (parentCard) parentCard.classList.add('revealed');
             } else {
               a.style.display = 'none';
               a.classList.remove('revealed');
+              if (parentCard) parentCard.classList.remove('revealed');
             }
           });
 

@@ -53,30 +53,77 @@ const LOCAL_STORAGE_KEY_SELECTED_KS3_TARGET = 'history_hub_selected_ks3_retrieva
 const SESSION_STORAGE_KEY_COUNT_OVERRIDE = 'history_hub_donow_count_override';
 
 /**
+ * Accurately determines if a unit belongs to Key Stage 2 (Primary).
+ */
+export function isKs2Unit(unit, unitId = '') {
+  const uid = String(unitId || unit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '')).toLowerCase();
+  return Boolean(
+    unit?.is_ks2 ||
+    unit?.keyStage === 'KS2' ||
+    unit?.key_stage === 'KS2' ||
+    unit?.category === 'KS2' ||
+    uid.startsWith('ks2_')
+  );
+}
+
+/**
  * Accurately determines if a unit belongs to Key Stage 3.
  */
 export function isKs3Unit(unit, unitId = '') {
+  if (isKs2Unit(unit, unitId)) return false;
   const uid = unitId || unit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '');
   if (unit?.key_stage === 'KS3' || unit?.category === 'KS3') return true;
   if (['cme_new', 'usa', 'weimar_nazi_germany', 'edexcel_medicine', 'eee', 'cold_war'].includes(uid)) return false;
-  if (uid.startsWith('gcse_') || unit?.category === 'GCSE' || unit?.key_stage === 'KS4') return false;
+  if (String(uid).startsWith('gcse_') || unit?.category === 'GCSE' || unit?.key_stage === 'KS4' || unit?.isGCSE) return false;
   return true;
+}
+
+/**
+ * Accurately determines if a unit belongs to GCSE (Key Stage 4).
+ */
+export function isGcseUnit(unit, unitId = '') {
+  return !isKs2Unit(unit, unitId) && !isKs3Unit(unit, unitId);
+}
+
+/**
+ * Determines whether a unit defaults to a 5-question starter (KS2 and KS3).
+ */
+export function usesFiveQuestionDefault(unit, unitId = '') {
+  return isKs2Unit(unit, unitId) || isKs3Unit(unit, unitId);
+}
+
+/**
+ * Cleans a lesson title for concise Do Now subtitles without truncating "Enquiry N: Topic" to "Enquiry N".
+ */
+export function cleanLessonTopicTitle(raw, fallbackNum = 1) {
+  const str = String(raw || '').trim();
+  if (!str) return `Lesson ${fallbackNum}`;
+  if (/^(?:Enquiry|Lesson)\s*\d+\s*:/i.test(str)) {
+    const stripped = str.replace(/^(?:Enquiry|Lesson)\s*\d+\s*:\s*/i, '').trim();
+    return stripped.split(':')[0].trim() || stripped;
+  }
+  return str.split(':')[0].trim() || str;
 }
 
 /**
  * Gets active question count based on key stage and retrieval scope.
  * Smart defaults:
+ * - KS2: 5 questions across starter modes.
  * - KS3: 5 questions for 'previous', 'current', and 'unit' (5-minute lesson starter); 10 questions for 'other'/'all' (broad synoptic mix).
  * - GCSE: 10 questions across all modes.
  * User manual toggle (5 Qs | 10 Qs | 15 Qs | 20 Qs) explicitly overrides this for the current lesson session.
  */
-export function getSavedQuestionCount(isKs3 = false, activeMode = 'previous') {
+export function getSavedQuestionCount(usesFiveDefault = false, activeMode = 'previous', isKs2 = false) {
   if (typeof window !== 'undefined' && window.currentDoNowCountOverride) {
     const val = parseInt(window.currentDoNowCountOverride, 10);
     if ([5, 10, 15, 20].includes(val)) return val;
   }
 
-  if (isKs3) {
+  if (isKs2) {
+    return 5;
+  }
+
+  if (usesFiveDefault) {
     if (activeMode === 'other' || activeMode === 'all') {
       return 10;
     }
@@ -291,9 +338,9 @@ export function extractCleanQA(
     .replace(/^Which of these\b/i, 'Which')
     .trim();
 
-  // Strip leading numbering, letter markers, or 'Option X' from answers
+  // Strip leading numbering, letter markers, or 'Option X' from answers (preserving articles like "A ")
   answer = answer
-    .replace(/^(?:Option\s+[A-D][:.]?\s*|[A-D][\)\.\:\s]\s*|\([a-d]\)\s*)/i, '')
+    .replace(/^(?:Option\s+[A-D][:.]?\s*|[A-D][\)\.\:]\s*|\([a-d]\)\s*)/i, '')
     .trim();
 
   const finalUnitId = q.unitId || unitId || '';
@@ -458,8 +505,9 @@ export function saveDoNowMode(mode) {
  * Mode 0: "This Lesson" (questions directly on the active lesson for pupil self-study).
  */
 export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null, targetCount = null) {
-  const isKs3 = isKs3Unit(activeUnit);
-  const count = targetCount || getSavedQuestionCount(isKs3, 'current');
+  const isKs2 = isKs2Unit(activeUnit);
+  const usesFive = usesFiveQuestionDefault(activeUnit);
+  const count = targetCount || getSavedQuestionCount(usesFive, 'current', isKs2);
   const lessons = activeUnit?.lessons || [];
   const currentIndex = lessons.findIndex(
     (l) => (l.id && l.id === currentLesson.id) || l.title === currentLesson.title,
@@ -467,34 +515,35 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
   const lessonNum = currentIndex >= 0 ? currentIndex + 1 : 1;
   const pool = [];
 
-  // 1. Pull from currentLesson.quiz (20 questions testing currentLesson)
-  if (Array.isArray(currentLesson.quiz)) {
-    currentLesson.quiz.forEach((q) => {
-      const stage = findMatchingBlockIndex(q, currentLesson.narrative_blocks);
-      const qa = extractCleanQA(q, 'This Lesson', lessonNum, currentLesson.title, activeUnit?.id, stage);
-      if (qa) {
-        qa.unitId = activeUnit?.id || '';
-        pool.push(qa);
-      }
-    });
-  }
+  // 1. Priority 1: Dedicated current-lesson Do Now items (currentLesson.do_now.current_items)
+  const currentItems = Array.isArray(currentLesson.do_now?.current_items)
+    ? currentLesson.do_now.current_items
+    : [];
+  currentItems.forEach((it) => {
+    const stage = findMatchingBlockIndex(it, currentLesson.narrative_blocks);
+    const qa = extractCleanQA(it, 'This Lesson', lessonNum, currentLesson.title, activeUnit?.id, stage);
+    if (qa && !pool.some((p) => p.question.toLowerCase() === qa.question.toLowerCase())) {
+      qa.unitId = activeUnit?.id || '';
+      pool.push(qa);
+    }
+  });
 
-  // 2. Supplement from currentLesson.do_now if quiz had fewer than count
-  if (pool.length < count) {
-    const baseItems =
-      currentLesson.do_now?.items ||
-      currentLesson.do_now?.questions ||
-      currentLesson.do_now?.tasks ||
-      (Array.isArray(currentLesson.do_now) ? currentLesson.do_now : []);
-    baseItems.forEach((it) => {
-      const stage = findMatchingBlockIndex(it, currentLesson.narrative_blocks);
-      const qa = extractCleanQA(it, 'This Lesson', lessonNum, currentLesson.title, activeUnit?.id, stage);
-      if (qa && !pool.some((p) => p.question === qa.question)) {
-        qa.unitId = activeUnit?.id || '';
-        pool.push(qa);
-      }
-    });
-  }
+  // 2. Priority 2: Supplement from currentLesson.quiz / quick_quiz / quiz_questions (deduplicated)
+  const quizSource =
+    (Array.isArray(currentLesson.quiz) && currentLesson.quiz) ||
+    (Array.isArray(currentLesson.quick_quiz) && currentLesson.quick_quiz) ||
+    (Array.isArray(currentLesson.quiz_questions) && currentLesson.quiz_questions) ||
+    [];
+  quizSource.forEach((q) => {
+    const stage = findMatchingBlockIndex(q, currentLesson.narrative_blocks);
+    const qa = extractCleanQA(q, 'This Lesson', lessonNum, currentLesson.title, activeUnit?.id, stage);
+    if (qa && !pool.some((p) => p.question.toLowerCase() === qa.question.toLowerCase())) {
+      qa.unitId = activeUnit?.id || '';
+      pool.push(qa);
+    }
+  });
+
+  // NOTE: Never fall back to currentLesson.do_now.items here because those test the PREVIOUS lesson.
 
   // 3. Supplement from flashcards if needed
   if (pool.length < count && Array.isArray(currentLesson.flashcards)) {
@@ -508,7 +557,7 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
         activeUnit?.id,
         stage,
       );
-      if (qa && !pool.some((p) => p.question === qa.question)) {
+      if (qa && !pool.some((p) => p.question.toLowerCase() === qa.question.toLowerCase())) {
         qa.unitId = activeUnit?.id || '';
         pool.push(qa);
       }
@@ -517,7 +566,7 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
 
   // Deterministic canonical order on load (seed === null); randomized when seed provided
   const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, count);
-  const cleanTitle = (currentLesson.title || `Lesson ${lessonNum}`).split(':')[0].trim();
+  const cleanTitle = cleanLessonTopicTitle(currentLesson.title, lessonNum);
 
   return {
     mode: 'current',
@@ -531,45 +580,36 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
  * Mode 1: "Previous" (questions strictly from the immediate previous lesson).
  */
 export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = null, targetCount = null) {
-  const isKs3 = isKs3Unit(activeUnit);
-  const count = targetCount || getSavedQuestionCount(isKs3, 'previous');
+  const isKs2 = isKs2Unit(activeUnit);
+  const usesFive = usesFiveQuestionDefault(activeUnit);
+  const count = targetCount || getSavedQuestionCount(usesFive, 'previous', isKs2);
   const lessons = activeUnit?.lessons || [];
   const currentIndex = lessons.findIndex(
     (l) => (l.id && l.id === currentLesson.id) || l.title === currentLesson.title,
   );
 
-  const isCme = activeUnit?.id === 'cme_new' || currentLesson?.unitId === 'cme_new';
-
-  // Lesson 1 edge case: No prior lesson in unit. Fallback to Lesson 1 items.
+  // Lesson 1 edge case: Baseline prior knowledge starter ONLY (never pull Lesson 1 quiz spoilers).
   if (currentIndex <= 0) {
     const baseItems =
       currentLesson.do_now?.items ||
       currentLesson.do_now?.questions ||
       currentLesson.do_now?.tasks ||
       (Array.isArray(currentLesson.do_now) ? currentLesson.do_now : []);
-    const items = baseItems
-      .map((it) => {
-        const stage = findMatchingBlockIndex(it, currentLesson.narrative_blocks);
-        return extractCleanQA(it, 'Lesson 1', 1, currentLesson.title, activeUnit?.id, stage);
-      })
-      .filter(Boolean);
-
-    // If extended drill requested (10, 15, or 20 Qs), supplement from currentLesson.quiz
-    if (items.length < count && Array.isArray(currentLesson.quiz)) {
-      currentLesson.quiz.forEach((q) => {
-        const stage = findMatchingBlockIndex(q, currentLesson.narrative_blocks);
-        const qa = extractCleanQA(q, 'Lesson 1', 1, currentLesson.title, activeUnit?.id, stage);
-        if (qa && !items.some((it) => it.question === qa.question)) {
-          qa.unitId = activeUnit?.id || '';
-          items.push(qa);
-        }
-      });
-    }
+    const items = [];
+    baseItems.forEach((it) => {
+      const stage = findMatchingBlockIndex(it, currentLesson.narrative_blocks);
+      const qa = extractCleanQA(it, 'Lesson 1', 1, currentLesson.title, activeUnit?.id, stage);
+      if (qa && !items.some((existing) => existing.question.toLowerCase() === qa.question.toLowerCase())) {
+        qa.unitId = activeUnit?.id || '';
+        items.push(qa);
+      }
+    });
 
     const finalItems = (seed !== null ? shuffleArray(items, seed) : items).slice(0, count);
+    const cleanTitle = cleanLessonTopicTitle(currentLesson.title, 1);
     return {
       mode: 'previous',
-      subtitle: `Lesson 1 • ${finalItems.length} Core Questions`,
+      subtitle: `Prior Knowledge Starter • ${finalItems.length} Questions for Lesson 1: ${cleanTitle}`,
       questions: finalItems,
       isLessonOne: true,
     };
@@ -578,54 +618,42 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
   const prevLesson = lessons[currentIndex - 1];
   const pool = [];
 
-  // 1. If currentLesson has dedicated do_now items specifically written for this starter, prioritize them for exact homework parity!
+  // 1. Always push all valid dedicated starter items from currentLesson.do_now.items first
   const currentDoNowItems =
     currentLesson.do_now?.items ||
     currentLesson.do_now?.questions ||
     currentLesson.do_now?.tasks ||
     (Array.isArray(currentLesson.do_now) ? currentLesson.do_now : []);
 
-  if (Array.isArray(currentDoNowItems) && currentDoNowItems.length >= count) {
+  if (Array.isArray(currentDoNowItems) && currentDoNowItems.length > 0) {
     currentDoNowItems.forEach((it) => {
       const stage = findMatchingBlockIndex(it, prevLesson.narrative_blocks);
       const qa = extractCleanQA(it, 'Last Lesson', currentIndex, prevLesson.title, activeUnit?.id, stage);
-      if (qa && !pool.some((p) => p.question === qa.question)) {
+      if (qa && !pool.some((p) => p.question.toLowerCase() === qa.question.toLowerCase())) {
         qa.unitId = activeUnit?.id || '';
         pool.push(qa);
       }
     });
   }
 
-  // 2. Otherwise, pull from prevLesson.quiz (20 questions testing prevLesson)
-  if (pool.length < count && Array.isArray(prevLesson.quiz)) {
-    prevLesson.quiz.forEach((q) => {
+  // 2. Supplement remaining slots from prevLesson.quiz (testing Lesson N-1, never prevLesson.do_now which tests N-2)
+  const prevQuizItems =
+    (Array.isArray(prevLesson.quiz) && prevLesson.quiz) ||
+    (Array.isArray(prevLesson.quick_quiz) && prevLesson.quick_quiz) ||
+    (Array.isArray(prevLesson.quiz_questions) && prevLesson.quiz_questions) ||
+    [];
+  if (pool.length < count && prevQuizItems.length > 0) {
+    prevQuizItems.forEach((q) => {
       const stage = findMatchingBlockIndex(q, prevLesson.narrative_blocks);
       const qa = extractCleanQA(q, 'Last Lesson', currentIndex, prevLesson.title, activeUnit?.id, stage);
-      if (qa && !pool.some((p) => p.question === qa.question)) {
+      if (qa && !pool.some((p) => p.question.toLowerCase() === qa.question.toLowerCase())) {
         qa.unitId = activeUnit?.id || '';
         pool.push(qa);
       }
     });
   }
 
-  // 2. Supplement from prevLesson.do_now if quiz had fewer than count
-  if (pool.length < count) {
-    const baseItems =
-      prevLesson.do_now?.items ||
-      prevLesson.do_now?.questions ||
-      prevLesson.do_now?.tasks ||
-      (Array.isArray(prevLesson.do_now) ? prevLesson.do_now : []);
-    baseItems.forEach((it) => {
-      const stage = findMatchingBlockIndex(it, prevLesson.narrative_blocks);
-      const qa = extractCleanQA(it, 'Last Lesson', currentIndex, prevLesson.title, activeUnit?.id, stage);
-      if (qa && !pool.some((p) => p.question === qa.question)) {
-        qa.unitId = activeUnit?.id || '';
-        pool.push(qa);
-      }
-    });
-  }
-
-  // 3. Supplement from flashcards if needed
+  // 3. Supplement from prevLesson.flashcards if still needed
   if (pool.length < count && Array.isArray(prevLesson.flashcards)) {
     prevLesson.flashcards.forEach((fc) => {
       const stage = findMatchingBlockIndex(fc, prevLesson.narrative_blocks);
@@ -637,7 +665,7 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
         activeUnit?.id,
         stage,
       );
-      if (qa && !pool.some((p) => p.question === qa.question)) {
+      if (qa && !pool.some((p) => p.question.toLowerCase() === qa.question.toLowerCase())) {
         qa.unitId = activeUnit?.id || '';
         pool.push(qa);
       }
@@ -645,7 +673,7 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
   }
 
   const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, count);
-  const prevTitle = (prevLesson.title || `Lesson ${currentIndex}`).split(':')[0].trim();
+  const prevTitle = cleanLessonTopicTitle(prevLesson.title, currentIndex);
 
   return {
     mode: 'previous',
@@ -659,8 +687,9 @@ export function getPreviousLessonQuestions(activeUnit, currentLesson, seed = nul
  * Mode 2: "Unit" (questions interleaved across all prior lessons 1 to N-1).
  */
 export function getUnitInterleavedQuestions(activeUnit, currentLesson, seed = null, targetCount = null) {
-  const isKs3 = isKs3Unit(activeUnit);
-  const count = targetCount || getSavedQuestionCount(isKs3, 'unit');
+  const isKs2 = isKs2Unit(activeUnit);
+  const usesFive = usesFiveQuestionDefault(activeUnit);
+  const count = targetCount || getSavedQuestionCount(usesFive, 'unit', isKs2);
   const lessons = activeUnit?.lessons || [];
   const currentIndex = lessons.findIndex(
     (l) => (l.id && l.id === currentLesson.id) || l.title === currentLesson.title,
@@ -720,8 +749,47 @@ export function getUnitInterleavedQuestions(activeUnit, currentLesson, seed = nu
  */
 export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target = null, seed = null, targetCount = null) {
   const currentUnitId = activeUnit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '');
+  const isKs2 = isKs2Unit(activeUnit, currentUnitId);
   const isKs3 = isKs3Unit(activeUnit, currentUnitId);
-  const count = targetCount || getSavedQuestionCount(isKs3, 'other');
+  const count = targetCount || getSavedQuestionCount(isKs2 || isKs3, 'other', isKs2);
+
+  // STRICT SAFEGUARDING ISOLATION: KS2 units must NEVER sample KS3 (e.g. The Shoah) or GCSE units.
+  if (isKs2) {
+    const ks2UnitEntries = Object.entries(db || {})
+      .map(([uid, entry]) => {
+        const uObj = entry?.data || entry;
+        return uObj && isKs2Unit(uObj, uid) ? { uid, uObj } : null;
+      })
+      .filter(Boolean);
+    if (ks2UnitEntries.length < 2) {
+      return getUnitInterleavedQuestions(activeUnit, currentLesson, seed, count);
+    }
+    const pool = [];
+    const qPerUnit = Math.max(1, Math.ceil(count / ks2UnitEntries.length));
+    ks2UnitEntries.forEach(({ uid, uObj }) => {
+      const uLessons = uObj.lessons || [];
+      const uPool = [];
+      uLessons.forEach((l, idx) => {
+        (l.quiz || []).forEach((q) => {
+          const stage = findMatchingBlockIndex(q, l.narrative_blocks);
+          const qa = extractCleanQA(q, uObj.title || 'KS2 History', idx + 1, l.title, uid, stage);
+          if (qa) {
+            qa.unitId = uid;
+            uPool.push(qa);
+          }
+        });
+      });
+      pool.push(...(seed !== null ? shuffleArray(uPool, seed) : uPool).slice(0, qPerUnit));
+    });
+    const finalKs2 = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, count);
+    return {
+      mode: 'other',
+      subtitle: `KS2 History Mix • ${finalKs2.length} Questions`,
+      questions: finalKs2,
+      isLessonOne: false,
+    };
+  }
+
   const resolvedTarget = target || getSelectedRetrievalTarget(isKs3);
 
   let selectedUnitIds = [];
@@ -861,7 +929,7 @@ export function getSynopticGcseQuestions(activeUnit, currentLesson, db, target =
 /**
  * Renders the rows container HTML for a given list of questions and mode.
  */
-export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
+export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '', options = {}) {
   if (!questions || questions.length === 0) {
     return `
       <div style="padding: 20px; text-align: center; color: #64748b; font-size: 0.9rem;">
@@ -870,6 +938,10 @@ export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
       </div>
     `;
   }
+
+  const activeUnitRef = options.activeUnit || (typeof window !== 'undefined' ? window.currentGcseActiveUnit : null);
+  const isKs2 = options.isKs2 !== undefined ? Boolean(options.isKs2) : isKs2Unit(activeUnitRef, unitId);
+  const isGcse = options.isGcse !== undefined ? Boolean(options.isGcse) : isGcseUnit(activeUnitRef, unitId);
 
   let html = '';
   questions.forEach((item, index) => {
@@ -919,11 +991,11 @@ export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
     }
 
     const cleanLessonTitle = (item.lessonTitle || '')
-      .replace(/^(?:KT\s*\d+\.\d+:?|Lesson\s*\d+:?)\s*/i, '')
+      .replace(/^(?:KT\s*\d+\.\d+:?|Lesson\s*\d+:?|Enquiry\s*\d+:?)\s*/i, '')
       .trim();
 
     html += `
-      <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" title="Tap row to reveal answer • Tap answer badge for explanation" style="display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 8px 14px; min-height: 40px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
+      <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" title="Tap row to reveal answer" style="display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 8px 14px; min-height: 40px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
         <div style="display: flex; align-items: flex-start; gap: 10px; flex: 1 1 auto; min-width: 0;">
           <span class="donow-num-badge" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1; margin-top: 1px;">${index + 1}</span>
           <div style="display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 0;">
@@ -943,23 +1015,26 @@ export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
                     <span>${aText}</span>
                     <i class="fa-solid fa-chevron-down donow-exp-caret" id="${caretId}" style="font-size: 0.65rem; color: #3b82f6; margin-left: 2px;"></i>
                   </span>
+                  <button type="button"
+                          class="btn-donow-jump-pill"
+                          onclick="event.stopPropagation(); window.toggleDoNowExplanation('${expId}', '${badgeId}', '${caretId}');"
+                          title="Show or hide explanation">
+                    <i class="fa-solid fa-lightbulb" style="font-size: 0.68rem; color: #0284c7;"></i>
+                    <span>Explanation</span>
+                  </button>
                 ` : `
                   <span class="donow-answer-badge" id="${badgeId}">
                     <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem; flex-shrink: 0;"></i>
                     <span>${aText}</span>
                   </span>
+                  <button type="button"
+                          class="btn-donow-jump-pill"
+                          onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${lessonNum}, ${stageNum});"
+                          title="Jump to ${jumpLabel}">
+                    <i class="fa-solid fa-book-open" style="font-size: 0.68rem; color: #0284c7;"></i>
+                    <span>${jumpLabel}</span>
+                  </button>
                 `}
-
-                <a href="${jumpUrl}" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   class="btn-donow-jump-pill" 
-                   onclick="event.stopPropagation();" 
-                   title="Open Stage ${stageNum} narrative in Lesson ${lessonNum} in a new tab">
-                  <i class="fa-solid fa-book-open" style="font-size: 0.68rem; color: #0284c7;"></i>
-                  <span>${jumpLabel}</span>
-                  <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.6rem; opacity: 0.75;"></i>
-                </a>
               </div>
 
               ${item.hasSubstantiveExplanation ? `
@@ -970,16 +1045,15 @@ export function renderDoNowRowsHTML(questions, mode = 'previous', unitId = '') {
                     <div style="flex: 1; min-width: 0;">
                       <div class="donow-exp-text">${expText}</div>
                       <div class="donow-exp-meta">
-                        <span class="donow-exp-spec-tag">Specification Context:</span>
+                        <span class="donow-exp-spec-tag">${isGcse ? 'Specification Context:' : 'Historical Context:'}</span>
                         <span class="donow-exp-unit-lesson">${item.unitLabel} &bull; Lesson ${lessonNum} (Stage ${stageNum})${cleanLessonTitle ? `: ${cleanLessonTitle}` : ''}</span>
-                        <a href="${jumpUrl}" 
-                           target="_blank"
-                           rel="noopener noreferrer"
+                        <button type="button"
                            class="donow-exp-inline-link"
-                           onclick="event.stopPropagation();"
-                           title="Open Stage ${stageNum} narrative in a new tab">
+                           style="background: none; border: none; padding: 0; font: inherit; cursor: pointer;"
+                           onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${lessonNum}, ${stageNum});"
+                           title="Go to Stage ${stageNum} narrative in Lesson ${lessonNum}">
                            Read Stage ${stageNum} Narrative &rarr;
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1127,13 +1201,16 @@ export function renderGcseDoNowPanelHTML({
   headerHtml = '',
   timerHtml = '',
   isKs3 = null,
+  isKs2 = null,
 }) {
   const currentUnitId = unitId || activeUnit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '');
-  const isKs3Effective = isKs3 !== null ? isKs3 : isKs3Unit(activeUnit, currentUnitId);
+  const isKs2Effective = isKs2 !== null ? Boolean(isKs2) : isKs2Unit(activeUnit, currentUnitId);
+  const isKs3Effective = isKs2Effective ? false : (isKs3 !== null ? Boolean(isKs3) : isKs3Unit(activeUnit, currentUnitId));
+  const usesFiveDefault = isKs2Effective || isKs3Effective;
   // Default mode for a lesson starter is ALWAYS 'previous' so teachers and pupils are always in sync on lesson load
   const activeMode = 'previous';
   const currentTarget = getSelectedRetrievalTarget(isKs3Effective);
-  const activeCount = isKs3Effective ? 5 : 10;
+  const activeCount = usesFiveDefault ? 5 : 10;
 
   // Compute initial questions for active mode
   let result;
@@ -1141,14 +1218,18 @@ export function renderGcseDoNowPanelHTML({
     result = getCurrentLessonQuestions(activeUnit, lesson, null, activeCount);
   } else if (activeMode === 'unit') {
     result = getUnitInterleavedQuestions(activeUnit, lesson, null, activeCount);
-  } else if (activeMode === 'other' || activeMode === 'all') {
+  } else if ((activeMode === 'other' || activeMode === 'all') && !isKs2Effective) {
     result = getSynopticGcseQuestions(activeUnit, lesson, db || (typeof window !== 'undefined' ? window.db : {}), currentTarget, null, activeCount);
   } else {
     result = getPreviousLessonQuestions(activeUnit, lesson, null, activeCount);
   }
 
-  const rowsHtml = renderDoNowRowsHTML(result.questions, activeMode, currentUnitId);
-  const chipsHtml = renderGcseUnitChipsHTML(currentTarget, isKs3Effective);
+  const rowsHtml = renderDoNowRowsHTML(result.questions, activeMode, currentUnitId, {
+    activeUnit,
+    isKs2: isKs2Effective,
+    isGcse: !isKs2Effective && !isKs3Effective,
+  });
+  const chipsHtml = isKs2Effective ? '' : renderGcseUnitChipsHTML(currentTarget, isKs3Effective);
 
   if (typeof window !== 'undefined') {
     window.currentDoNowQuestions = result.questions;
@@ -1157,7 +1238,7 @@ export function renderGcseDoNowPanelHTML({
   }
 
   return `
-    <div class="donow-panel-content gcse-3mode-donow" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}" data-is-ks3="${isKs3Effective ? 'true' : 'false'}">
+    <div class="donow-panel-content gcse-3mode-donow" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}" data-is-ks3="${isKs3Effective ? 'true' : 'false'}" data-is-ks2="${isKs2Effective ? 'true' : 'false'}">
       <!-- Fullscreen Whiteboard Presentation Top Bar (Active only in Whiteboard mode) -->
       <div class="donow-presentation-top-bar">
         <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
@@ -1218,6 +1299,7 @@ export function renderGcseDoNowPanelHTML({
               style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'unit' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'unit' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'unit' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-layer-group"></i> Unit
             </button>
+            ${!isKs2Effective ? `
             <button type="button"
               class="btn-donow-mode ${activeMode === 'other' || activeMode === 'all' ? 'active' : ''}"
               data-donow-mode="other"
@@ -1226,6 +1308,7 @@ export function renderGcseDoNowPanelHTML({
               style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'other' || activeMode === 'all' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'other' || activeMode === 'all' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'other' || activeMode === 'all' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-earth-americas"></i> All
             </button>
+            ` : ''}
           </div>
 
           <!-- Question Count Pill Toggle: 5 Qs | 10 Qs | 15 Qs | 20 Qs -->
@@ -1294,10 +1377,12 @@ export function renderGcseDoNowPanelHTML({
         ${!(headerHtml && headerHtml.includes('<!--DONOW_SUBTITLE_SLOT-->')) ? `<div id="donow-mode-subtitle" style="font-size: 0.71rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 9px; border-radius: 999px; display: inline-flex; align-items: center; gap: 5px; margin-left: auto; max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${result.subtitle}"><i class="fa-solid fa-bullseye" style="color: #0284c7; font-size: 0.66rem; flex-shrink: 0;"></i><span id="donow-mode-subtitle-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.subtitle}</span></div>` : ''}
       </div>
 
-      <!-- Unit Chips Bar (Visible when 'Other Units' is active) -->
+      <!-- Unit Chips Bar (Visible when 'Other Units' is active on KS3/GCSE) -->
+      ${!isKs2Effective ? `
       <div id="donow-gcse-unit-chips-wrapper" style="display: ${activeMode === 'other' || activeMode === 'all' ? 'block' : 'none'};">
         ${chipsHtml}
       </div>
+      ` : ''}
 
       <!-- Questions Container -->
       <div class="donow-rows-container" id="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
@@ -1311,7 +1396,7 @@ export function renderGcseDoNowPanelHTML({
  * Initializes global window event handlers for dynamic mode switching, unit toggling, question count switching,
  * shuffling, explanation drawers, and direct narrative block navigation.
  */
-export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null) {
+export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null, isKs2 = null) {
   if (typeof window === 'undefined') return;
 
   // Reset session overrides to guarantee fresh canonical lesson default state on load
@@ -1321,7 +1406,9 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
   window.currentGcseLesson = currentLesson;
   window.currentGcseActiveUnit = activeUnit;
   window.currentGcseDb = db || window.db || {};
-  const isKs3Effective = isKs3 !== null ? isKs3 : isKs3Unit(activeUnit);
+  const isKs2Effective = isKs2 !== null ? Boolean(isKs2) : isKs2Unit(activeUnit);
+  const isKs3Effective = isKs2Effective ? false : (isKs3 !== null ? Boolean(isKs3) : isKs3Unit(activeUnit));
+  window.isCurrentUnitKs2 = isKs2Effective;
   window.isCurrentUnitKs3 = isKs3Effective;
 
   window.setDoNowQuestionCount = function (count) {
@@ -1346,10 +1433,13 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
   };
 
   window.setGcseDoNowMode = function (mode) {
-    const cleanMode = mode === 'all' ? 'other' : mode;
-    saveDoNowMode(cleanMode);
-
+    const isCurKs2 = !!window.isCurrentUnitKs2;
     const isCurKs3 = !!window.isCurrentUnitKs3;
+    let cleanMode = mode === 'all' ? 'other' : mode;
+    if (isCurKs2 && cleanMode === 'other') {
+      cleanMode = 'unit';
+    }
+    saveDoNowMode(cleanMode);
 
     if (typeof document !== 'undefined') {
       // 1. Update button active states and inline styles
@@ -1370,7 +1460,7 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
 
       // 2. Toggle unit chips visibility and refresh chips HTML
       const chipsWrapper = document.getElementById('donow-gcse-unit-chips-wrapper');
-      if (chipsWrapper) {
+      if (chipsWrapper && !isCurKs2) {
         chipsWrapper.style.display = cleanMode === 'other' ? 'block' : 'none';
         if (cleanMode === 'other') {
           const curTarget = getSelectedRetrievalTarget(isCurKs3);
@@ -1379,7 +1469,7 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       }
 
       // 3. Sync count button active states (in case smart default adjusted)
-      const curCount = getSavedQuestionCount(isCurKs3, cleanMode);
+      const curCount = getSavedQuestionCount(isCurKs2 || isCurKs3, cleanMode, isCurKs2);
       document.querySelectorAll('.btn-donow-count').forEach((btn) => {
         const isCur = parseInt(btn.dataset.donowCount, 10) === curCount;
         if (isCur) {
@@ -1492,7 +1582,6 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
     const targetStage = parseInt(stageNum, 10) || 1;
     const cleanUnitId = targetUnitId || window.currentGcseActiveUnit?.id || window.currentUnitId || 'cme_new';
 
-    // If the student or teacher is ALREADY viewing this lesson, jump smoothly without opening a tab
     const curUnitId = window.currentUnitId || window.currentGcseActiveUnit?.id;
     const curLessonIdx = (typeof window.currentLessonIndex === 'number')
       ? window.currentLessonIndex
@@ -1505,20 +1594,17 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       return;
     }
 
-    const targetUrl = `?view=lessons&unit=${cleanUnitId}&lesson=${lessonIdx + 1}&stage=${targetStage}`;
-    
-    // Store in sessionStorage so it is preserved across tab opening or navigation
     try {
       sessionStorage.setItem('hh_pending_narrative_jump', JSON.stringify({ stageNum: targetStage }));
     } catch (e) {}
 
-    // Always open in a separate tab so the student or teacher NEVER loses their place,
-    // countdown timer, or revealed answers on their active Do Now retrieval starter!
-    const newWin = window.open(targetUrl, '_blank');
-    if (newWin) {
-      newWin.focus();
+    // Navigate smoothly in the SAME tab without appending ?stage= to the URL or opening a new browser tab
+    if (curUnitId === cleanUnitId && typeof window.viewLessonDetail === 'function') {
+      window.viewLessonDetail(lessonIdx);
+    } else if (typeof window.switchView === 'function') {
+      window.switchView('lessons', cleanUnitId, false, { lessonIndex: lessonIdx });
     } else {
-      window.location.href = targetUrl;
+      window.location.href = `?view=lessons&unit=${cleanUnitId}&lesson=${lessonIdx + 1}`;
     }
   };
 
@@ -1527,10 +1613,14 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
     const activeUnit = window.currentGcseActiveUnit;
     const db = window.currentGcseDb || window.db || {};
     const curUnitId = activeUnit?.id || window.currentUnitId;
-    const isCurKs3 = !!window.isCurrentUnitKs3 || isKs3Unit(activeUnit, curUnitId);
-    const mode = getSavedDoNowMode();
+    const isCurKs2 = !!window.isCurrentUnitKs2 || isKs2Unit(activeUnit, curUnitId);
+    const isCurKs3 = !isCurKs2 && (!!window.isCurrentUnitKs3 || isKs3Unit(activeUnit, curUnitId));
+    let mode = getSavedDoNowMode();
+    if (isCurKs2 && (mode === 'other' || mode === 'all')) {
+      mode = 'unit';
+    }
     const target = getSelectedRetrievalTarget(isCurKs3);
-    const count = getSavedQuestionCount(isCurKs3, mode);
+    const count = getSavedQuestionCount(isCurKs2 || isCurKs3, mode, isCurKs2);
     const seed = forceShuffle ? Math.floor(Math.random() * 1000000) : null;
 
     let result;
@@ -1538,7 +1628,7 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       result = getCurrentLessonQuestions(activeUnit, lesson, seed, count);
     } else if (mode === 'unit') {
       result = getUnitInterleavedQuestions(activeUnit, lesson, seed, count);
-    } else if (mode === 'other' || mode === 'all') {
+    } else if ((mode === 'other' || mode === 'all') && !isCurKs2) {
       result = getSynopticGcseQuestions(activeUnit, lesson, db, target, seed, count);
     } else {
       result = getPreviousLessonQuestions(activeUnit, lesson, seed, count);
@@ -1561,12 +1651,19 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
       // Update rows container
       const rowsContainer = document.getElementById('donow-rows-container');
       if (rowsContainer) {
-        rowsContainer.innerHTML = renderDoNowRowsHTML(result.questions, mode, curUnitId);
+        rowsContainer.innerHTML = renderDoNowRowsHTML(result.questions, mode, curUnitId, {
+          activeUnit,
+          isKs2: isCurKs2,
+          isGcse: !isCurKs2 && !isCurKs3,
+        });
       }
 
-      // Reset Reveal All button state if present
+      // Reset Reveal All button state (unless Teacher Mode is currently active)
+      const isTeacherModeActive = document.body.classList.contains('teacher-mode-active');
       const revealAllBtn = document.querySelector('[data-action="toggle-all-answers"]');
-      if (revealAllBtn) {
+      if (isTeacherModeActive && typeof window.applyTeacherModeToLessonDOM === 'function') {
+        window.applyTeacherModeToLessonDOM(true);
+      } else if (revealAllBtn) {
         revealAllBtn.innerHTML = '<i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i> <span>Reveal All Answers</span>';
       }
     }
@@ -1946,7 +2043,7 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null)
             <div style="font-size: 2.5rem; margin-bottom: 6px;">⚡🏆</div>
             <h2 class="speedrun-results-title">Drill Complete!</h2>
             <div class="speedrun-results-subtitle">
-              Retrieved ${speedRunQuestions.length} specification recall items &bull; Check your answers with a green pen
+              Retrieved ${speedRunQuestions.length} ${isGcseUnit(window.currentGcseActiveUnit, window.currentUnitId) ? 'specification recall items' : 'historical recall items'} &bull; Check your answers with a green pen
             </div>
           </div>
 

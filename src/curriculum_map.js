@@ -12,6 +12,7 @@ const ALL_TERMS = ['Autumn 1', 'Autumn 2', 'Spring 1', 'Spring 2', 'Summer 1', '
 
 // Colour palette per year group (header accent)
 const YEAR_COLOURS = {
+  'Key Stage 2': { bg: '#0f172a', accent: '#38bdf8', badge: '#e0f2fe', badgeText: '#0369a1' },
   'Year 7': { bg: '#1b365d', accent: '#facc15', badge: '#dbeafe', badgeText: '#1e40af' },
   'Year 8': { bg: '#1b4332', accent: '#86efac', badge: '#dcfce7', badgeText: '#166534' },
   'Year 9': { bg: '#4c1d95', accent: '#c4b5fd', badge: '#ede9fe', badgeText: '#5b21b6' },
@@ -168,7 +169,11 @@ async function renderSequenceView() {
       'border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.1);';
 
     // Year header
-    const safeYearName = yearGroup.year.toLowerCase().replace(' ', '_');
+    const safeYearName = yearGroup.year.toLowerCase().replace(/\s+/g, '_');
+    const sowPdfUrl =
+      yearGroup.year === 'Key Stage 2'
+        ? '/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf'
+        : `/pdfs/${safeYearName}_sow.pdf`;
     section.innerHTML = `
       <div style="background:${colours.bg}; color:#fff; padding:14px 20px; border-bottom:3px solid ${colours.accent}; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
         <div>
@@ -177,7 +182,7 @@ async function renderSequenceView() {
         </div>
         <div style="display:flex; align-items:center; gap:10px;">
           ${isGCSE ? `<span style="background:${colours.accent}; color:${colours.bg}; padding:3px 10px; border-radius:20px; font-size:0.75rem; font-weight:700;">GCSE</span>` : ''}
-          <a href="/pdfs/${safeYearName}_sow.pdf" target="_blank"
+          <a href="${sowPdfUrl}" target="_blank"
              style="background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3); color:#fff; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;"
              onmouseover="this.style.background='rgba(255,255,255,0.28)'"
              onmouseout="this.style.background='rgba(255,255,255,0.15)'">

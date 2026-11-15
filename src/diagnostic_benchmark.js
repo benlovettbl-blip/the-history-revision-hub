@@ -46,6 +46,17 @@ function shuffleArray(arr) {
   return copy;
 }
 
+function isKs2DiagUnit(unitId, unitData) {
+  const idStr = String(unitId || unitData?.id || '').toLowerCase();
+  return Boolean(
+    unitData?.is_ks2 ||
+      unitData?.keyStage === 'KS2' ||
+      unitData?.key_stage === 'KS2' ||
+      idStr === 'ks2_ww2' ||
+      idStr.startsWith('ks2_'),
+  );
+}
+
 /**
  * Partitions lessons and extracts 20 questions evenly distributed across eras/key topics.
  */
@@ -79,6 +90,40 @@ export function sampleDiagnosticQuestions(unitId, unitData, topicFilter = null) 
         workbookId: wb.id || wb.name,
       });
     });
+  } else if (isKs2DiagUnit(unitId, unitData) && lessons.length >= 10) {
+    // KS2 WWII 11-enquiry curriculum bands
+    const ks2Bands = [
+      {
+        id: 'band_1',
+        title: 'Enquiries 1–2: Outbreak & Evacuation',
+        lessons: lessons.slice(0, 2),
+      },
+      {
+        id: 'band_2',
+        title: 'Enquiries 3–5: Pre-War Life & Rescuers',
+        lessons: lessons.slice(2, 5),
+      },
+      {
+        id: 'band_3',
+        title: 'Enquiries 6–8: Blitz, Rationing & Women',
+        lessons: lessons.slice(5, 8),
+      },
+      {
+        id: 'band_4',
+        title: 'Enquiries 9–11: Codebreakers, VE Day & Healing',
+        lessons: lessons.slice(8),
+      },
+    ];
+    ks2Bands.forEach((b) => {
+      if (b.lessons.length > 0) {
+        eras.push({
+          id: b.id,
+          title: b.title,
+          lessons: b.lessons,
+          workbookId: 'full',
+        });
+      }
+    });
   } else {
     // Single-pack unit (KS3 or unified GCSE): split lessons chronologically into 4 quarters
     const quarterSize = Math.max(1, Math.ceil(lessons.length / 4));
@@ -87,7 +132,9 @@ export function sampleDiagnosticQuestions(unitId, unitData, topicFilter = null) 
       const end = Math.min(lessons.length, (i + 1) * quarterSize);
       const eraLessons = lessons.slice(start, end);
       if (eraLessons.length > 0) {
-        const firstLessonTitle = eraLessons[0].title.replace(/^Lesson \d+:\s*/i, '').trim();
+        const firstLessonTitle = eraLessons[0].title
+          .replace(/^(?:Enquiry|Lesson)\s*\d+\s*:\s*/i, '')
+          .trim();
         const cleanTitle =
           firstLessonTitle.length > 45 ? firstLessonTitle.slice(0, 42) + '...' : firstLessonTitle;
         eras.push({
@@ -274,6 +321,14 @@ export function sampleDiagnosticQuestions(unitId, unitData, topicFilter = null) 
  * Returns the HTML for the Diagnostic Benchmark Launcher banner in the Recall Arena.
  */
 export function renderDiagnosticLauncherHTML(unitId, unitData) {
+  const isKs2 = isKs2DiagUnit(unitId, unitData);
+  const launcherBadge3 = isKs2 ? 'Spot Tricky Topics &amp; Flashcard Sync' : 'Weakness Hunting &amp; Box 1 Sync';
+  const launcherHeading = isKs2 ? 'Unit Knowledge Challenge' : 'Pre-Exam Readiness Benchmark';
+  const launcherCopy = isKs2
+    ? 'Ready to test your history detective skills? Take a 10-minute challenge sampling 5 questions evenly from each part of the unit to spot tricky topics and build a targeted flashcard practice deck.'
+    : 'Unsure which historical era you are weakest in? Take a rapid 10-minute diagnostic check sampling 5 questions evenly from each key period. Pinpoints your knowledge blind spots and creates an instant targeted Leitner Box 1 revision deck.';
+  const launcherBtnLabel = isKs2 ? 'Start 20-Question Challenge' : 'Start 10-Min Benchmark';
+
   return `
     <div style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%); border-radius: 14px; padding: 26px 30px; margin-bottom: 30px; color: white; box-shadow: 0 10px 25px rgba(49, 46, 129, 0.25); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; border: 1px solid rgba(255, 255, 255, 0.15);">
       <div style="max-width: 680px;">
@@ -285,22 +340,22 @@ export function renderDiagnosticLauncherHTML(unitId, unitData) {
             20 Balanced Questions
           </span>
           <span style="background: rgba(99, 102, 241, 0.3); color: #e0e7ff; padding: 3px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 600;">
-            Weakness Hunting &amp; Box 1 Sync
+            ${launcherBadge3}
           </span>
         </div>
 
         <h2 style="margin: 0 0 8px 0; font-size: 1.5rem; font-family: 'Montserrat', sans-serif; font-weight: 800; color: #ffffff; letter-spacing: -0.3px;">
-          Pre-Exam Readiness Benchmark
+          ${launcherHeading}
         </h2>
         <p style="margin: 0; color: #cbd5e1; font-size: 0.95rem; line-height: 1.45;">
-          Unsure which historical era you are weakest in? Take a rapid 10-minute diagnostic check sampling 5 questions evenly from each key period. Pinpoints your knowledge blind spots and creates an instant targeted Leitner Box 1 revision deck.
+          ${launcherCopy}
         </p>
       </div>
 
       <div>
         <button id="btn-launch-diagnostic" class="btn-pedagogy-primary" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; font-size: 0.98rem; padding: 14px 26px; border-radius: 10px; border: none; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 6px 18px rgba(245, 158, 11, 0.4); transition: all 0.2s ease;" onclick="window.startDiagnosticBenchmark('${unitId}')" onmouseover="this.style.filter='brightness(1.1)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.filter='brightness(1)'; this.style.transform='translateY(0)';">
           <i class="fa-solid fa-bullseye" style="font-size: 1.15rem;"></i>
-          <span>Start 10-Min Benchmark</span>
+          <span>${launcherBtnLabel}</span>
         </button>
       </div>
     </div>
@@ -623,6 +678,9 @@ function renderDiagnosticQuestion() {
   const secs = totalSecs % 60;
   const formattedTime = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
 
+  const isKs2 = isKs2DiagUnit(activeSession.unitId, activeSession.unitData);
+  const modalHeaderTitle = isKs2 ? 'Unit Knowledge Challenge' : 'Pre-Exam Benchmark';
+
   modal.innerHTML = `
     <div class="diag-benchmark-card">
       
@@ -633,8 +691,8 @@ function renderDiagnosticQuestion() {
             <i class="fa-solid fa-bullseye"></i>
           </div>
           <div style="min-width: 0;">
-            <h3 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #f8fafc; font-family: 'Montserrat', sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Pre-Exam Benchmark</h3>
-            <span class="diag-subtitle" style="font-size: 0.78rem; color: #94a3b8; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${activeSession.unitData.title || 'Curriculum Unit'} • 20 Questions</span>
+            <h3 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #f8fafc; font-family: 'Montserrat', sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${modalHeaderTitle}</h3>
+            <span class="diag-subtitle" style="font-size: 0.78rem; color: #94a3b8; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${activeSession.unitData.title || 'Curriculum Unit'} • ${totalQ} Questions</span>
           </div>
         </div>
 
@@ -934,18 +992,21 @@ function renderDiagnosticResultsReport(report) {
   const modal = document.getElementById('diagnostic-benchmark-modal');
   if (!modal) return;
 
+  const isKs2 = isKs2DiagUnit(report.unitId, activeSession && activeSession.unitData);
   const scorePct = Math.round((report.correctCount / report.totalQuestions) * 100);
 
   // Determine Readiness Band
   let readinessBadge = {
-    title: 'Exam Ready — High Recall Mastery',
+    title: isKs2 ? 'Historian Master — Top Recall!' : 'Exam Ready — High Recall Mastery',
     color: '#10b981',
     bg: '#d1fae5',
     icon: 'fa-circle-check',
   };
   if (scorePct < 50) {
     readinessBadge = {
-      title: 'Urgent Intervention Needed — Critical Knowledge Gaps',
+      title: isKs2
+        ? 'Keep Practising — Let’s Review Key Clues!'
+        : 'Urgent Intervention Needed — Critical Knowledge Gaps',
       color: '#ef4444',
       bg: '#fee2e2',
       icon: 'fa-triangle-exclamation',
@@ -959,7 +1020,9 @@ function renderDiagnosticResultsReport(report) {
     };
   } else if (scorePct < 90) {
     readinessBadge = {
-      title: 'Solid Foundation — Minor Revision Required',
+      title: isKs2
+        ? 'Strong Detective Work — Nearly Full Marks!'
+        : 'Solid Foundation — Minor Revision Required',
       color: '#3b82f6',
       bg: '#dbeafe',
       icon: 'fa-award',
@@ -973,10 +1036,10 @@ function renderDiagnosticResultsReport(report) {
       <div class="diag-header diag-results-header" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: white;">
         <div>
           <span style="background: rgba(245, 158, 11, 0.25); color: #fef08a; padding: 3px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">
-            Diagnostic Metacognition Report
+            ${isKs2 ? 'Knowledge Challenge Report' : 'Diagnostic Metacognition Report'}
           </span>
           <h2 style="margin: 6px 0 0 0; font-size: 1.4rem; font-family: 'Montserrat', sans-serif; font-weight: 800; color: #ffffff;">
-            Readiness Benchmark Results
+            ${isKs2 ? 'Unit Knowledge Challenge Results' : 'Readiness Benchmark Results'}
           </h2>
         </div>
         <button onclick="window.closeDiagnosticModal(true)" style="background: rgba(255,255,255,0.15); color: white; border: none; width: 36px; height: 36px; border-radius: 8px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center;" title="Close Report">
@@ -1009,14 +1072,14 @@ function renderDiagnosticResultsReport(report) {
             <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
               <i class="fa-solid ${report.weakestEra && report.weakestEra.pct < 70 ? 'fa-triangle-exclamation' : 'fa-circle-check'}" style="color: ${report.weakestEra && report.weakestEra.pct < 70 ? '#b45309' : '#15803d'}; font-size: 1.1rem;"></i>
               <strong style="color: ${report.weakestEra && report.weakestEra.pct < 70 ? '#92400e' : '#166534'}; font-size: 0.92rem;">
-                ${report.weakestEra && report.weakestEra.pct < 70 ? 'Knowledge Blind Spot Identified' : 'Balanced Knowledge Profile'}
+                ${report.weakestEra && report.weakestEra.pct < 70 ? (isKs2 ? 'Tricky Topic Spotted' : 'Knowledge Blind Spot Identified') : 'Balanced Knowledge Profile'}
               </strong>
             </div>
             <p style="margin: 0; font-size: 0.85rem; color: #475569; line-height: 1.4;">
               ${
                 report.weakestEra && report.weakestEra.pct < 70
-                  ? `Your lowest score was in <strong>${report.weakestEra.title}</strong> (${report.weakestEra.correct}/${report.weakestEra.total} - ${report.weakestEra.pct}%). Target this topic first during retrieval practice to prevent exam-day drops.`
-                  : `Well done! Your recall is evenly balanced across all historical periods. Continue regular Box 2 and Box 3 spaced reviews.`
+                  ? `Your lowest score was in <strong>${report.weakestEra.title}</strong> (${report.weakestEra.correct}/${report.weakestEra.total} - ${report.weakestEra.pct}%). ${isKs2 ? 'Target this topic first in Flashcards to strengthen tricky facts!' : 'Target this topic first during retrieval practice to prevent exam-day drops.'}`
+                  : `Well done! Your recall is evenly balanced across all ${isKs2 ? 'enquiries' : 'historical periods'}. Continue regular Box 2 and Box 3 spaced reviews.`
               }
             </p>
           </div>
@@ -1025,7 +1088,7 @@ function renderDiagnosticResultsReport(report) {
         <!-- Historical Era Accuracy Bars -->
         <h3 style="font-size: 1.05rem; color: #0f172a; margin: 0 0 14px 0; font-family: 'Montserrat', sans-serif; display: flex; align-items: center; gap: 8px;">
           <i class="fa-solid fa-chart-simple" style="color: #4f46e5;"></i>
-          <span>Historical Era Breakdown</span>
+          <span>${isKs2 ? 'Enquiry Phase Breakdown' : 'Historical Era Breakdown'}</span>
         </h3>
 
         <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;">
@@ -1078,7 +1141,7 @@ function renderDiagnosticResultsReport(report) {
 
             <button id="btn-sync-box1" onclick="window.injectMissedQuestionsToLeitner()" style="background: #dc2626; color: white; border: none; padding: 12px 20px; border-radius: 8px; font-weight: 800; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(220, 38, 38, 0.35); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
               <i class="fa-solid fa-bolt-lightning"></i>
-              <span>Load into Leitner Box 1 &amp; Drill</span>
+              <span>${isKs2 ? 'Practise Missed Questions in Flashcards' : 'Load into Leitner Box 1 &amp; Drill'}</span>
             </button>
           </div>
         `
@@ -1209,6 +1272,7 @@ window.injectMissedQuestionsToLeitner = function () {
     localStorage.setItem(storageKey, JSON.stringify(userBoxes));
   } catch (e) {}
 
+  const isKs2 = isKs2DiagUnit(unitId, activeSession.unitData);
   const btn = document.getElementById('btn-sync-box1');
   if (btn) {
     btn.innerHTML = `<i class="fa-solid fa-check"></i> <span>Loaded! Opening Flashcards...</span>`;
@@ -1217,6 +1281,17 @@ window.injectMissedQuestionsToLeitner = function () {
 
   setTimeout(() => {
     closeDiagnosticModal(true);
+    if (isKs2) {
+      if (
+        typeof window.selfQuizSetMode === 'function' &&
+        document.getElementById('self-quiz-flashcards-view')
+      ) {
+        window.selfQuizSetMode('flashcards');
+      } else if (typeof window.switchView === 'function') {
+        window.switchView('interactive', unitId);
+      }
+      return;
+    }
     // Open the unit's mastery pack flashcards with Box 1 filter
     const flashcardUrl = `/units/${unitId}/mastery_pack_${targetWb}.html#practice-mode&box=1`;
     window.open(flashcardUrl, '_blank');

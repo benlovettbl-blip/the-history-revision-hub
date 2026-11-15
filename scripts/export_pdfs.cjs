@@ -96,6 +96,7 @@ function getFileHash(filePath) {
         'medieval_england',
         'great_war_part2',
         'australia',
+        'ks2_ww2',
       ];
       if (dedicatedUnits.includes(unit)) {
         files = files.filter((f) => !f.startsWith('pupil_workbook') && !f.startsWith('textbook'));

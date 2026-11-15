@@ -1204,6 +1204,13 @@ export function renderArchivalSourceBody(text, source = {}, options = {}) {
     return renderArchivalVerseHtml(clean, source, options);
   }
 
+  const rawTextType = String((source && source.text_type) || '').trim().toLowerCase();
+  const hasExplicitTextType = rawTextType === 'verbatim' || rawTextType === 'summary';
+  const isSummaryText = rawTextType === 'summary';
+  const textTypeBadgeHtml = hasExplicitTextType
+    ? `<div class="source-text-type-row"><span class="perspective-type-badge ${isSummaryText ? 'is-summary' : 'is-verbatim'}">${isSummaryText ? 'Summary of stated position' : 'Extract'}</span></div>`
+    : '';
+
   const maxHeightStyle =
     options.maxHeight && options.maxHeight !== 'none'
       ? `max-height: ${options.maxHeight}; overflow-y: auto;`
@@ -1213,9 +1220,13 @@ export function renderArchivalSourceBody(text, source = {}, options = {}) {
   const fontSize = options.fontSize || '1.05rem';
   const lineHeight = options.lineHeight || '1.75';
   const marginBottom = options.marginBottom || '8px';
+  const fontFamily = isSummaryText ? "'Inter', sans-serif" : "'Georgia', serif";
+  const fontStyle = isSummaryText ? 'normal' : 'italic';
+  const bgStyle = isSummaryText ? '#f8fafc' : '#fffdfa';
 
   return `
-    <div class="archival-source-body" style="width: 100%; ${maxHeightStyle} font-family: 'Georgia', serif; font-style: italic; font-size: ${fontSize}; line-height: ${lineHeight}; color: #1e293b; background: #fffdfa; padding: ${padding}; border-left: 4px solid ${borderColor}; border-radius: 4px; margin-bottom: ${marginBottom}; white-space: pre-line;">
+    ${textTypeBadgeHtml}
+    <div class="archival-source-body${isSummaryText ? ' is-summary-position' : ''}" style="width: 100%; ${maxHeightStyle} font-family: ${fontFamily}; font-style: ${fontStyle}; font-size: ${fontSize}; line-height: ${lineHeight}; color: #1e293b; background: ${bgStyle}; padding: ${padding}; border-left: 4px solid ${borderColor}; border-radius: 4px; margin-bottom: ${marginBottom}; white-space: pre-line;">
       ${clean}
     </div>
   `;
@@ -1274,20 +1285,12 @@ export function jumpToNarrativeBlock(stageNum, targetPara = null) {
     if (parentDetails) parentDetails.open = true;
 
     target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    target.style.transition = 'all 0.4s ease';
-    target.classList.add('keyword-pulse-glow');
-    target.style.outline = '4px solid #0284c7';
-    target.style.outlineOffset = '4px';
+    target.style.transition = 'box-shadow 0.35s ease';
     target.style.borderRadius = '8px';
-    target.style.backgroundColor = '#fef9c3';
-    target.style.boxShadow = '0 0 0 6px rgba(2, 132, 199, 0.25), 0 10px 25px rgba(2, 132, 199, 0.3)';
+    target.style.boxShadow = '0 0 0 3px rgba(2, 132, 199, 0.35)';
     setTimeout(() => {
-      target.style.outline = '';
-      target.style.outlineOffset = '';
-      target.style.backgroundColor = '';
       target.style.boxShadow = '';
-      target.classList.remove('keyword-pulse-glow');
-    }, 3500);
+    }, 1500);
     return true;
   }
   return false;
@@ -1392,12 +1395,26 @@ export function getArchivalSourceDiscussionComponents(
   const hasIdeas = Array.isArray(ideas) && ideas.length > 0;
   const isSingle = hasIdeas && ideas.length === 1;
   const discussId = 'think-discuss-' + Math.random().toString(36).substring(2, 9);
+  const isExamPrompt =
+    /\[\s*\d+(?:\s*\+\s*\d+)?\s*marks?\s*\]/i.test(cleanQ) ||
+    /^(?:Study Source|How useful is Source|Give two things you can infer)/i.test(cleanQ);
 
-  const showBtnLabel = isSingle ? 'Example Answer' : 'Example Answers';
-  const hideBtnLabel = isSingle ? 'Hide Example' : 'Hide Examples';
+  const showBtnLabel = isSingle
+    ? isExamPrompt
+      ? 'Reveal Model Answer'
+      : 'Historical Analysis'
+    : 'Example Answers';
+  const hideBtnLabel = isSingle
+    ? isExamPrompt
+      ? 'Hide Model Answer'
+      : 'Hide Analysis'
+    : 'Hide Examples';
   const panelHeader = isSingle
-    ? 'Exemplar Model Answer:'
+    ? isExamPrompt
+      ? 'MODEL ANSWER:'
+      : 'HISTORICAL ANALYSIS:'
     : 'Exemplar Discussion Points &amp; Angles:';
+  const singleItemBadge = isExamPrompt ? 'Model Answer' : 'Analysis';
 
   const promptHtml = `
     <div class="archival-source-discussion-box" style="background: #eff6ff; border: 1.5px solid #bfdbfe; border-left: 5px solid #1e40af; padding: 12px 16px; border-radius: 6px; margin-top: ${marginTop}; box-shadow: 0 2px 5px rgba(30, 58, 138, 0.06); width: 100%; box-sizing: border-box;">
@@ -1408,7 +1425,7 @@ export function getArchivalSourceDiscussionComponents(
         </div>
         ${hasIdeas
       ? `
-          <button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-clue btn-think-discuss-toggle" data-action="toggle-think-discuss" data-target-id="${discussId}" onclick="if(window.toggleThinkDiscuss){window.toggleThinkDiscuss(this, '${discussId}');}event.stopPropagation();" title="Click to reveal exemplar discussion points for the class" style="padding: 5px 10px; font-size: 0.78rem; text-transform: none; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; width: 140px; min-width: 140px; gap: 6px; font-weight: 700; cursor: pointer; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex-shrink: 0; white-space: nowrap; margin-top: 1px; box-sizing: border-box;">
+          <button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-clue btn-think-discuss-toggle" data-action="toggle-think-discuss" data-target-id="${discussId}" onclick="if(window.toggleThinkDiscuss){window.toggleThinkDiscuss(this, '${discussId}');}event.stopPropagation();" title="Click to reveal exemplar discussion points for the class" style="padding: 5px 10px; font-size: 0.78rem; text-transform: none; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; min-width: 140px; gap: 6px; font-weight: 700; cursor: pointer; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex-shrink: 0; white-space: nowrap; margin-top: 1px; box-sizing: border-box;">
             <i class="fa-solid fa-lightbulb"></i> <span class="toggle-label" data-show-text="${showBtnLabel}" data-hide-text="${hideBtnLabel}">${showBtnLabel}</span>
           </button>
         `
@@ -1422,14 +1439,14 @@ export function getArchivalSourceDiscussionComponents(
     ? `
     <div id="${discussId}" class="think-discuss-exemplar-panel" style="display: none; margin-top: 14px; padding: 14px 18px; background: #ffffff; border: 1.5px solid #bfdbfe; border-radius: 6px; box-shadow: 0 2px 8px rgba(30, 64, 175, 0.08); width: 100%; box-sizing: border-box;">
       <div style="font-size: 0.74rem; font-weight: 800; color: #1e40af; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; border-bottom: 1px solid #e0f2fe; padding-bottom: 6px;">
-        <i class="fa-solid fa-graduation-cap" style="color: #2563eb; font-size: 0.85rem;"></i> ${panelHeader}
+        <i class="fa-solid ${isExamPrompt ? 'fa-graduation-cap' : 'fa-magnifying-glass-chart'}" style="color: #2563eb; font-size: 0.85rem;"></i> ${panelHeader}
       </div>
       <div style="display: ${isSingle ? 'block' : 'grid'}; ${isSingle ? '' : 'grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px;'}">
         ${ideas
       .map(
         (idea, idx) => `
           <div style="display: flex; gap: 9px; align-items: flex-start; font-size: 0.90rem; color: #1e293b; line-height: 1.45; background: #f8fafc; padding: 10px 13px; border-radius: 5px; border-left: 3.5px solid #3b82f6;">
-            <span style="font-weight: 800; color: #1d4ed8; font-size: 0.72rem; background: #dbeafe; padding: 2px 6px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.03em;">${isSingle ? 'Model Answer' : `Point ${idx + 1}`}</span>
+            <span style="font-weight: 800; color: #1d4ed8; font-size: 0.72rem; background: #dbeafe; padding: 2px 6px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.03em;">${isSingle ? singleItemBadge : `Point ${idx + 1}`}</span>
             <span style="font-weight: 500;">${idea}</span>
           </div>
         `,
@@ -1480,7 +1497,7 @@ export function getGoldenSentenceExemplar(lesson, vocabTermsList = []) {
 }
 window.getGoldenSentenceExemplar = getGoldenSentenceExemplar;
 
-export function getOddOneOutExemplars(lesson, vocabTermsList = []) {
+export function getOddOneOutExemplars(lesson, vocabTermsList = [], isKs2 = false) {
   if (
     lesson &&
     Array.isArray(lesson.vocab_odd_one_out_exemplars) &&
@@ -1488,6 +1505,11 @@ export function getOddOneOutExemplars(lesson, vocabTermsList = []) {
   ) {
     return lesson.vocab_odd_one_out_exemplars;
   }
+  const isKs2Effective = Boolean(
+    isKs2 ||
+      (lesson && lesson.is_ks2) ||
+      (typeof window !== 'undefined' && String(window.currentUnitId || '').toLowerCase().startsWith('ks2_'))
+  );
   const terms =
     vocabTermsList && vocabTermsList.length > 0
       ? vocabTermsList
@@ -1498,11 +1520,12 @@ export function getOddOneOutExemplars(lesson, vocabTermsList = []) {
   if (terms.length < 3) {
     return [
       {
-        title: 'Categorical Distinction',
+        title: isKs2Effective ? 'Different Ways to Group Words' : 'Categorical Distinction',
         trio: terms.slice(0, 3),
         odd: terms[0] || 'Term 1',
-        reason:
-          'Multiple valid historical criteria can distinguish these terms depending on whether you group by political authority, economic trade, or ideological perspective.',
+        reason: isKs2Effective
+          ? 'Historians can group words in more than one way — for example by whether they describe real objects, people, or big wartime rules!'
+          : 'Multiple valid historical criteria can distinguish these terms depending on whether you group by political authority, economic trade, or ideological perspective.',
       },
     ];
   }
@@ -1512,6 +1535,29 @@ export function getOddOneOutExemplars(lesson, vocabTermsList = []) {
   const t2 = terms[2];
   const t3 = terms[3] || terms[0];
   const last = terms[terms.length - 1];
+
+  if (isKs2Effective) {
+    return [
+      {
+        title: 'Everyday Object or Place vs Big Historical Idea',
+        trio: [t0, t1, last],
+        odd: last,
+        reason: `You could link ${t0} and ${t1} if they describe real objects, places, or roles people saw at the time, while ${last} describes a bigger rule, event, or historical idea.`,
+      },
+      {
+        title: 'People Taking Action vs Rules & Warnings',
+        trio: [t0, t1, t2],
+        odd: t2,
+        reason: `Discuss with your partner: do ${t0} and ${t1} connect to how ordinary families or helpers acted, while ${t2} connects to an official government rule, machine, or warning?`,
+      },
+      {
+        title: 'What Happened First vs What Came Next',
+        trio: [t1, t2, t3],
+        odd: t1,
+        reason: `Check the timeline: did ${t1} happen first as a starting trigger, while ${t2} and ${t3} show how people responded afterwards?`,
+      },
+    ];
+  }
 
   return [
     {
@@ -2089,6 +2135,55 @@ window.syncWhiteboardButtons = function (isActive) {
   }
 };
 
+window.applyTeacherModeToLessonDOM = function (isActive) {
+  if (typeof document === 'undefined') return;
+  const lessonRoot = document.querySelector('.lesson-content') || document;
+
+  // 1. Do Now Starter Answers
+  const doNowPanel = lessonRoot.querySelector('.donow-panel-content');
+  if (doNowPanel) {
+    doNowPanel.querySelectorAll('.answer').forEach((ans) => {
+      ans.style.display = isActive ? 'block' : 'none';
+      ans.classList.toggle('revealed', isActive);
+      const card = ans.closest('.do-now-card');
+      if (card) card.classList.toggle('revealed', isActive);
+    });
+    const revealAllBtn = document.querySelector('[data-action="toggle-all-answers"]');
+    if (revealAllBtn) {
+      revealAllBtn.innerHTML = isActive
+        ? '<i class="fa-solid fa-eye-slash"></i> Hide All'
+        : '<i class="fa-solid fa-eye"></i> Reveal All';
+    }
+  }
+
+  // 2. Primary Source Drawers & Enquiry Model Answers
+  lessonRoot.querySelectorAll('details.source-enquiry-reveal').forEach((det) => {
+    det.open = Boolean(isActive);
+  });
+  if (isActive) {
+    lessonRoot.querySelectorAll('details.cme-source-drawer').forEach((det) => {
+      det.open = true;
+    });
+  }
+  lessonRoot.querySelectorAll('.archival-discussion-model-panel').forEach((panel) => {
+    panel.style.display = isActive ? 'block' : 'none';
+  });
+
+  // 3. Digital Workbook / Historian Writing Challenges & Model Answers
+  lessonRoot.querySelectorAll('details.wb-question-strip, details.model-paragraph-reveal, details.two-features-model').forEach((det) => {
+    det.open = Boolean(isActive);
+  });
+  lessonRoot.querySelectorAll('.wb-unified-station .model-box').forEach((box) => {
+    box.style.display = isActive ? 'block' : 'none';
+    box.classList.toggle('revealed', Boolean(isActive));
+  });
+
+  // 4. Check & Consolidate Station Quiz Teacher Crib
+  if (typeof window.refreshConsolidateTeacherMode === 'function') {
+    window.refreshConsolidateTeacherMode(Boolean(isActive));
+  }
+};
+
 window.toggleTeacherMode = function (forceState) {
   const isCurrentlyActive = document.body.classList.contains('teacher-mode-active');
   const nextState = typeof forceState === 'boolean' ? forceState : !isCurrentlyActive;
@@ -2101,21 +2196,29 @@ window.toggleTeacherMode = function (forceState) {
     localStorage.setItem('teacherMode', nextState ? 'true' : 'false');
   } catch (e) { }
   window.syncTeacherButtons(nextState);
+  if (typeof window.applyTeacherModeToLessonDOM === 'function') {
+    window.applyTeacherModeToLessonDOM(nextState);
+  }
 };
 
 window.syncTeacherButtons = function (isActive) {
   const btns = document.querySelectorAll('.btn-teacher-mode-toggle');
   btns.forEach((btn) => {
+    const isKs2Btn = btn.classList.contains('btn-ks2-teacher-mode');
     if (isActive) {
       btn.classList.add('active');
-      btn.innerHTML =
-        '<i class="fa-solid fa-user-tie"></i> <span class="teacher-btn-label">Teacher Mode: ON</span>';
-      btn.title = 'Teacher Mode is ON (Click to hide teacher guidance)';
+      btn.innerHTML = isKs2Btn
+        ? '<i class="fa-solid fa-eye-slash"></i> <span class="teacher-btn-label">Teacher Mode: Answers ON</span>'
+        : '<i class="fa-solid fa-user-tie"></i> <span class="teacher-btn-label">Teacher Mode: ON</span>';
+      btn.title = 'Teacher Mode is ON — all model answers revealed (click to hide)';
     } else {
       btn.classList.remove('active');
-      btn.innerHTML =
-        '<i class="fa-solid fa-user-tie"></i> <span class="teacher-btn-label">Teacher Mode</span>';
-      btn.title = 'Click to show Teacher Guidance & Delivery Roadmap';
+      btn.innerHTML = isKs2Btn
+        ? '<i class="fa-solid fa-eye"></i> <span class="teacher-btn-label">Teacher Mode: Reveal Answers</span>'
+        : '<i class="fa-solid fa-user-tie"></i> <span class="teacher-btn-label">Teacher Mode</span>';
+      btn.title = isKs2Btn
+        ? '1-Click Teacher Mode: Reveal all Do Now, Source, Writing & Quiz answers on this page'
+        : 'Click to show Teacher Guidance & Delivery Roadmap';
     }
   });
   const teacherTags = document.querySelectorAll('.teacher-status-tag');
@@ -2144,58 +2247,104 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
     window.cancelSpeech();
   }
 
-  if (
-    appStore.state.activeUnitData &&
-    appStore.state.activeUnitData.lessons &&
-    appStore.state.activeUnitData.lessons[index]
-  ) {
-    const unitId = appStore.state.selectedUnitId || window.currentUnitId;
-    const lesson = appStore.state.activeUnitData.lessons[index];
+  const unitDataObj =
+    (appStore && appStore.state && appStore.state.activeUnitData) ||
+    (typeof window !== 'undefined' && window.currentUnitData) ||
+    (typeof window !== 'undefined' && typeof window.getUnitData === 'function'
+      ? window.getUnitData(window.currentUnitId)
+      : null);
+
+  if (unitDataObj && unitDataObj.lessons && unitDataObj.lessons[index]) {
+    const unitId =
+      (appStore && appStore.state && appStore.state.selectedUnitId) ||
+      (typeof window !== 'undefined' && window.currentUnitId) ||
+      unitDataObj.id;
+    const lesson = unitDataObj.lessons[index];
+
+    if (typeof window !== 'undefined') {
+      window.currentLessonIndex = index;
+      window.currentView = 'lessons';
+    }
+    if (appStore && appStore.state) {
+      appStore.state.activeLessonIndex = index;
+    }
 
     if (!skipHistory && typeof window !== 'undefined' && window.history) {
       try {
         const currentScroll = window.scrollY || document.documentElement.scrollTop || 0;
         const currentState = window.history.state || {};
-        window.history.replaceState(
-          {
-            ...currentState,
-            scrollY: currentScroll,
-          },
-          '',
-          window.location.href,
+        const currentUrlObj = new URL(window.location.href);
+        const shouldMergeOverviewPush = Boolean(
+          window._lastLessonsOverviewPushTs &&
+            Date.now() - window._lastLessonsOverviewPushTs < 220 &&
+            currentUrlObj.searchParams.get('view') === 'lessons' &&
+            !currentUrlObj.searchParams.get('lesson'),
         );
+
+        if (!shouldMergeOverviewPush) {
+          const recentOriginScroll =
+            window._unitReturnOriginSavedTs &&
+            Date.now() - window._unitReturnOriginSavedTs < 300 &&
+            typeof window._unitReturnOrigin?.scrollY === 'number'
+              ? window._unitReturnOrigin.scrollY
+              : null;
+          const preservedScroll =
+            recentOriginScroll !== null && currentScroll === 0
+              ? recentOriginScroll
+              : currentScroll;
+          const extraOutgoing = {};
+          if (
+            currentState.view === 'timeline' &&
+            typeof window._unitReturnOrigin?.timelineMilestoneIdx === 'number'
+          ) {
+            extraOutgoing.timelineMilestoneIdx = window._unitReturnOrigin.timelineMilestoneIdx;
+          }
+          window.history.replaceState(
+            {
+              ...currentState,
+              scrollY: preservedScroll,
+              ...extraOutgoing,
+            },
+            '',
+            window.location.href,
+          );
+        }
 
         const url = new URL(window.location);
         url.searchParams.set('view', 'lessons');
         const hasLessonZero =
-          appStore.state.activeUnitData.lessons[0] &&
-          (appStore.state.activeUnitData.lessons[0].id === 'lesson_0' ||
-            (appStore.state.activeUnitData.lessons[0].title &&
-              appStore.state.activeUnitData.lessons[0].title.includes('KT 1.0')));
+          unitDataObj.lessons[0] &&
+          (unitDataObj.lessons[0].id === 'lesson_0' ||
+            (unitDataObj.lessons[0].title &&
+              unitDataObj.lessons[0].title.includes('KT 1.0')));
         url.searchParams.set(
           'lesson',
           lesson.slug || (hasLessonZero ? (index === 0 ? '0' : index) : index + 1),
         );
         if (unitId) url.searchParams.set('unit', unitId);
-        window.history.pushState(
-          {
-            view: 'lessons',
-            unit: unitId,
-            lessonIndex: index,
-            scrollY: 0,
-          },
-          '',
-          url,
-        );
+
+        const nextState = {
+          view: 'lessons',
+          unit: unitId,
+          lessonIndex: index,
+          scrollY: 0,
+        };
+
+        if (shouldMergeOverviewPush) {
+          window._lastLessonsOverviewPushTs = 0;
+          window.history.replaceState(nextState, '', url);
+        } else {
+          window.history.pushState(nextState, '', url);
+        }
       } catch (e) {
         console.warn('History routing disabled (e.g. file:// protocol):', e);
       }
     }
 
     if (typeof document !== 'undefined') {
-      const unitTitleRaw = appStore.state.activeUnitData.title || 'The History Revision Hub';
+      const unitTitleRaw = unitDataObj.title || 'The History Revision Hub';
       const cleanUnitName = unitTitleRaw
-        .replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '')
+        .replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '')
         .trim();
       document.title = `${(lesson.title || `Lesson ${index + 1}`).trim()} — ${cleanUnitName}`;
     }
@@ -2203,21 +2352,24 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
     if (typeof window.updateBreadcrumbs === 'function') {
       const rawTitle = lesson.title || `Lesson ${index + 1}`;
       let shortLabel = rawTitle;
-      const matchPrefix = rawTitle.match(/^(Enquiry\s+\d+|Lesson\s+\d+|Stage\s+\d+)/i);
+      const matchPrefix = rawTitle.match(/^(KT\s*\d+\.\d+|Enquiry\s+\d+|Lesson\s+\d+|Stage\s+\d+)/i);
       if (matchPrefix) {
         shortLabel = matchPrefix[1];
       } else if (rawTitle.length > 25) {
         shortLabel = `Lesson ${index + 1}`;
       }
-      const activeUnit = appStore.state.activeUnitData || window.currentUnitData || {};
-      let unitTitle = activeUnit.title
-        ? activeUnit.title.replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '').trim()
+      let unitTitle = unitDataObj.title
+        ? unitDataObj.title.replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '').trim()
         : 'Unit';
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
         { label: unitTitle, view: 'lessons', unit: unitId },
         { label: shortLabel, tooltip: rawTitle },
       ]);
+    }
+
+    if (typeof window.highlightActiveSidebarLesson === 'function') {
+      window.highlightActiveSidebarLesson(index);
     }
 
     document.querySelectorAll('.lesson-link').forEach((l) => l.classList.remove('active'));
@@ -2227,8 +2379,7 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
       matchLink.classList.add('active');
     } else {
       const links = document.querySelectorAll('.lesson-link');
-      const isKS3 =
-        appStore.state.activeUnitData.title && appStore.state.activeUnitData.title.includes('KS3');
+      const isKS3 = unitDataObj.title && unitDataObj.title.includes('KS3');
       if (!isKS3 && links.length > index + 1) {
         // +1 because the first link is Unit Homepage
         links[index + 1].classList.add('active');
@@ -2236,6 +2387,10 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
     }
 
     renderLesson(lesson);
+
+    if (typeof window.updateHeaderBackBtn === 'function') {
+      window.updateHeaderBackBtn('lessons');
+    }
 
     // Auto-save student draft inputs for this lesson
     if (typeof window.initDraftPreservation === 'function') {
@@ -2248,7 +2403,7 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
     const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
     const hasStageJump = (urlParams && urlParams.get('stage')) || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_pending_narrative_jump'));
 
-    if (!hasStageJump) {
+    if (!hasStageJump && !window._suppressLessonAutoScrollTop) {
       if (window.scrollToTop) window.scrollToTop(true);
       else
         (document.getElementById('content-area') || window).scrollTo({ top: 0, behavior: 'smooth' });
@@ -3454,7 +3609,6 @@ function renderLessonVideos(videos, lesson, unitId) {
           <div class="video-shelf-play-overlay">
             <i class="fa-solid fa-play"></i>
           </div>
-          ${prominentDur ? `<span class="video-shelf-dur-pill">${shortDur || prominentDur}</span>` : ''}
         </div>
       `;
     } else if (isEra) {
@@ -3468,7 +3622,6 @@ function renderLessonVideos(videos, lesson, unitId) {
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div>
           </div>
-          ${prominentDur ? `<span class="video-shelf-dur-pill era">${shortDur || prominentDur}</span>` : ''}
         </a>
       `;
     } else {
@@ -3482,7 +3635,6 @@ function renderLessonVideos(videos, lesson, unitId) {
               <i class="fa-solid fa-play"></i>
             </div>
           </div>
-          ${prominentDur ? `<span class="video-shelf-dur-pill">${shortDur || prominentDur}</span>` : ''}
         </a>
       `;
     }
@@ -3872,6 +4024,7 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
 export function renderLessonLaunchpad({
   lesson,
   unitId,
+  lessonIndex = -1,
   videos = [],
   htmlVideo = '',
   htmlDoNowInner = '',
@@ -3884,6 +4037,27 @@ export function renderLessonLaunchpad({
   const isCme =
     unitId === 'cme_new' ||
     (typeof window !== 'undefined' && window.currentUnitId === 'cme_new');
+  const resolvedLessonIndex =
+    typeof lessonIndex === 'number' && Number.isFinite(lessonIndex) && lessonIndex >= 0
+      ? lessonIndex
+      : (() => {
+          const idStr = String((lesson && lesson.id) || '');
+          const idMatch = idStr.match(/^lesson_(\d+)$/i);
+          if (idMatch) return parseInt(idMatch[1], 10);
+          const unitLessons =
+            (typeof window !== 'undefined' &&
+              window.currentUnitData &&
+              Array.isArray(window.currentUnitData.lessons) &&
+              window.currentUnitData.lessons) ||
+            [];
+          const found = unitLessons.findIndex(
+            (l) =>
+              l &&
+              ((lesson && lesson.id && l.id === lesson.id) ||
+                (lesson && lesson.title && l.title === lesson.title)),
+          );
+          return found >= 0 ? found : 0;
+        })();
   const tabs = [];
 
   // 1. Do Now Starter Tab
@@ -4030,7 +4204,7 @@ export function renderLessonLaunchpad({
     });
   }
 
-  if (tabs.length === 0) return '';
+  if (tabs.length === 0 && !isCme) return '';
 
   // Active tab selection: only set active if defaultTab is explicitly specified and exists
   const activeTabKey = defaultTab && tabs.some((t) => t.key === defaultTab) ? defaultTab : '';
@@ -4059,11 +4233,11 @@ export function renderLessonLaunchpad({
           ${isCme
         ? `
             <button type="button"
-              class="launchpad-tab-btn"
-              onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal();"
-              title="Regional Map (Israel & Surrounding Neighbours)">
+              class="launchpad-tab-btn launchpad-atlas-btn"
+              onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal({lessonIndex: ${resolvedLessonIndex}});"
+              title="Historical Atlas (Era-Aware Regional Maps &amp; Live Terrain) [Shortcut: M]">
               <i class="fa-solid fa-map"></i>
-              <span>Regional Map</span>
+              <span>Historical Atlas</span>
             </button>
           `
         : ''
@@ -4989,6 +5163,15 @@ export function renderLesson(lesson) {
 
   const activeUnit =
     window.currentUnitData || (appStore && appStore.state && appStore.state.activeUnitData) || {};
+  if (typeof window !== 'undefined' && Array.isArray(activeUnit.lessons) && lesson) {
+    const foundLessonIdx = activeUnit.lessons.findIndex(
+      (l) => l === lesson || (l && lesson.id && l.id === lesson.id),
+    );
+    if (foundLessonIdx !== -1) {
+      window.currentLessonIndex = foundLessonIdx;
+      if (appStore && appStore.state) appStore.state.activeLessonIndex = foundLessonIdx;
+    }
+  }
   const unitId =
     activeUnit.id ||
     (typeof window !== 'undefined' && window.location && window.location.search
@@ -4997,13 +5180,363 @@ export function renderLesson(lesson) {
       : null) ||
     window.currentUnitId;
   const isEarlyModern = unitId === 'early_modern_world';
-  const isCme = unitId === 'cme_new';
+  const isCme =
+    unitId === 'cme_new' ||
+    (typeof window !== 'undefined' && window.currentUnitId === 'cme_new');
   const isKs2 = checkIsKs2(unitId, activeUnit);
   const isKs3 = checkIsKs3(unitId, activeUnit);
   const isGCSE = checkIsGCSE(unitId, activeUnit);
   if (typeof window !== 'undefined') {
     window.unifiedLessonExamRegistry = {};
+    if (typeof document !== 'undefined' && !document.getElementById('source-enquiry-mode-styles')) {
+      const modeStyleEl = document.createElement('style');
+      modeStyleEl.id = 'source-enquiry-mode-styles';
+      modeStyleEl.textContent = `
+        /* Mode A: Competing Perspectives (Indigo / Slate) */
+        details.source-enquiry-reveal.mode-perspectives {
+          border: 1.5px solid #c7d2fe !important;
+          box-shadow: 0 2px 6px rgba(79, 70, 229, 0.06) !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives > summary {
+          background: #eef2ff !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives > summary:hover {
+          background: #e0e7ff !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives[open] > summary {
+          background: #e0e7ff !important;
+          border-bottom: 1px solid #c7d2fe !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives .reveal-answer-pill {
+          color: #3730a3 !important;
+          background: #ffffff !important;
+          border: 1.5px solid #a5b4fc !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives > summary:hover .reveal-answer-pill {
+          background: #4f46e5 !important;
+          color: #ffffff !important;
+          border-color: #4f46e5 !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives > summary:hover .reveal-answer-pill i {
+          color: #e0e7ff !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives > summary .source-enquiry-prompt {
+          color: #1e1b4b !important;
+        }
+        details.source-enquiry-reveal.mode-perspectives > .source-enquiry-answer-body {
+          border-top: 1.5px solid #c7d2fe !important;
+        }
+
+        /* Mode C: Single-Source Historical Enquiry (Archival Teal / Slate) */
+        details.source-enquiry-reveal.mode-analysis {
+          border: 1.5px solid #99f6e4 !important;
+          box-shadow: 0 2px 6px rgba(15, 118, 110, 0.06) !important;
+        }
+        details.source-enquiry-reveal.mode-analysis > summary {
+          background: #f0fdfa !important;
+        }
+        details.source-enquiry-reveal.mode-analysis > summary:hover {
+          background: #ccfbf1 !important;
+        }
+        details.source-enquiry-reveal.mode-analysis[open] > summary {
+          background: #ccfbf1 !important;
+          border-bottom: 1px solid #99f6e4 !important;
+        }
+        details.source-enquiry-reveal.mode-analysis .reveal-answer-pill {
+          color: #0f766e !important;
+          background: #ffffff !important;
+          border: 1.5px solid #5eead4 !important;
+        }
+        details.source-enquiry-reveal.mode-analysis > summary:hover .reveal-answer-pill {
+          background: #0f766e !important;
+          color: #ffffff !important;
+          border-color: #0f766e !important;
+        }
+        details.source-enquiry-reveal.mode-analysis > summary:hover .reveal-answer-pill i {
+          color: #ccfbf1 !important;
+        }
+        details.source-enquiry-reveal.mode-analysis > summary .source-enquiry-prompt {
+          color: #134e4a !important;
+        }
+        details.source-enquiry-reveal.mode-analysis > .source-enquiry-answer-body {
+          border-top: 1.5px solid #99f6e4 !important;
+        }
+
+        /* Mode B: Explicit Exam-Practice Prompt (Emerald #10b981) */
+        details.source-enquiry-reveal.mode-exam {
+          border: 1.5px solid #6ee7b7 !important;
+          box-shadow: 0 2px 6px rgba(16, 185, 129, 0.07) !important;
+        }
+        details.source-enquiry-reveal.mode-exam > summary:hover .reveal-answer-pill {
+          background: #10b981 !important;
+          color: #ffffff !important;
+          border-color: #10b981 !important;
+        }
+      `;
+      document.head.appendChild(modeStyleEl);
+    }
+
+    window.syncSourceAnswerToggle = function (idx, isOpen) {
+      if (typeof document === 'undefined') return;
+      const btn = document.getElementById(`ans-btn-${idx}`);
+      if (!btn) return;
+      const openState = Boolean(isOpen);
+      btn.setAttribute('aria-expanded', openState ? 'true' : 'false');
+      btn.dataset.state = openState ? 'open' : 'closed';
+      const closedSpan = btn.querySelector('.reveal-text-closed');
+      const openSpan = btn.querySelector('.reveal-text-open');
+      if (closedSpan && btn.dataset.closedLabel) {
+        closedSpan.textContent = btn.dataset.closedLabel;
+      }
+      if (openSpan && btn.dataset.openLabel) {
+        openSpan.textContent = btn.dataset.openLabel;
+      }
+    };
+
+    window.toggleSourceAnswer = function (idx) {
+      if (typeof document === 'undefined') return false;
+      const det =
+        idx && idx.tagName === 'DETAILS'
+          ? idx
+          : document.getElementById(`source-enquiry-det-${idx}`) ||
+            document.getElementById(`ans-btn-${idx}`)?.closest('details');
+      if (!det) return false;
+      det.open = !det.open;
+      const resolvedIdx =
+        det.dataset?.enquiryIdx !== undefined ? det.dataset.enquiryIdx : idx;
+      if (typeof window.syncSourceAnswerToggle === 'function') {
+        window.syncSourceAnswerToggle(resolvedIdx, det.open);
+      }
+      return det.open;
+    };
+
+    if (!window._tpsTimerEnhanced) {
+      window._tpsTimerEnhanced = true;
+      window.startTPSTimer = function (btn, fallbackSeconds) {
+        if (!btn) return;
+        const secs = Number(btn.dataset && btn.dataset.seconds) || Number(fallbackSeconds) || 60;
+        if (btn.timerInterval) {
+          clearInterval(btn.timerInterval);
+          btn.timerInterval = null;
+          btn.classList.remove('is-running', 'is-finished');
+          if (btn.originalHTML) btn.innerHTML = btn.originalHTML;
+          if (btn.originalBg !== undefined) btn.style.background = btn.originalBg;
+          return;
+        }
+        btn.originalHTML = btn.innerHTML;
+        btn.originalBg = btn.style.background || '';
+        let timeLeft = secs;
+        btn.classList.add('is-running');
+        btn.classList.remove('is-finished');
+        const fmtTime = (s) => {
+          if (s >= 60) {
+            const m = Math.floor(s / 60);
+            const r = s % 60;
+            return `${m}:${String(r).padStart(2, '0')}`;
+          }
+          return `${s}s`;
+        };
+        btn.innerHTML = `<i class="fa-regular fa-clock"></i> ${fmtTime(timeLeft)} · Stop`;
+        btn.style.background = '#dc2626';
+        btn.timerInterval = setInterval(() => {
+          timeLeft -= 1;
+          if (timeLeft <= 0) {
+            clearInterval(btn.timerInterval);
+            btn.timerInterval = null;
+            btn.classList.remove('is-running');
+            btn.classList.add('is-finished');
+            btn.innerHTML = '<i class="fa-regular fa-bell"></i> Time!';
+            btn.style.background = '#d97706';
+            setTimeout(() => {
+              if (!btn.timerInterval) {
+                btn.classList.remove('is-finished');
+                if (btn.originalHTML) btn.innerHTML = btn.originalHTML;
+                btn.style.background = btn.originalBg || '';
+              }
+            }, 4000);
+          } else {
+            btn.innerHTML = `<i class="fa-regular fa-clock"></i> ${fmtTime(timeLeft)} · Stop`;
+          }
+        }, 1000);
+      };
+    }
   }
+
+  let sourceEnquiryCounter = 0;
+
+  const resolveSourceEnquiryMode = (srcObj, promptText) => {
+    const cleanPrompt = String(promptText || '')
+      .replace(/<[^>]*>/g, '')
+      .replace(/^\s*\*+\s*/, '')
+      .trim();
+    const hasPerspectivePair = Boolean(
+      srcObj &&
+        srcObj.perspective_pair &&
+        typeof srcObj.perspective_pair === 'object',
+    );
+    const isExplicitExamPrompt =
+      /\[\s*\d+(?:\s*\+\s*\d+)?\s*marks?\s*\]/i.test(cleanPrompt) ||
+      /^(?:Study Source|How useful is Source|Give two things you can infer)/i.test(cleanPrompt);
+
+    if (hasPerspectivePair) {
+      return {
+        mode: 'perspectives',
+        detailsClass: 'mode-perspectives',
+        closedLabel: 'Compare Both Perspectives \u25BC',
+        openLabel: 'Hide Comparison \u25B2',
+        heading: 'WEIGHING BOTH PERSPECTIVES:',
+        iconClass: 'fa-scale-balanced',
+        accent: '#4f46e5',
+        softBg: '#eef2ff',
+        border: '#c7d2fe',
+        badgeBg: '#e0e7ff',
+        badgeBorder: '#c7d2fe',
+        badgeText: '#3730a3',
+        promptColor: '#1e1b4b',
+        headingColor: '#3730a3',
+      };
+    }
+
+    if (isExplicitExamPrompt) {
+      return {
+        mode: 'exam',
+        detailsClass: 'mode-exam',
+        closedLabel: 'Reveal Model Answer \u25BC',
+        openLabel: 'Hide Model Answer \u25B2',
+        heading: 'MODEL ANSWER:',
+        iconClass: 'fa-graduation-cap',
+        accent: '#10b981',
+        softBg: '#f0fdf4',
+        border: '#86efac',
+        badgeBg: '#dcfce7',
+        badgeBorder: '#bbf7d0',
+        badgeText: '#166534',
+        promptColor: '#14532d',
+        headingColor: '#065f46',
+      };
+    }
+
+    return {
+      mode: 'analysis',
+      detailsClass: 'mode-analysis',
+      closedLabel: 'View Historical Analysis \u25BC',
+      openLabel: 'Hide Analysis \u25B2',
+      heading: 'HISTORICAL ANALYSIS:',
+      iconClass: 'fa-magnifying-glass-chart',
+      accent: '#0f766e',
+      softBg: '#f0fdfa',
+      border: '#99f6e4',
+      badgeBg: '#ccfbf1',
+      badgeBorder: '#99f6e4',
+      badgeText: '#115e59',
+      promptColor: '#134e4a',
+      headingColor: '#0f766e',
+    };
+  };
+
+  const resolveSourceEnquiryBadge = (srcObj, promptText) => {
+    if (srcObj && srcObj.perspective_pair && typeof srcObj.perspective_pair === 'object') {
+      const explicitPairBadge = String((srcObj && srcObj.question_badge) || '').trim();
+      return explicitPairBadge && !/utility|inference|reliab/i.test(explicitPairBadge)
+        ? explicitPairBadge
+        : 'Competing Perspectives';
+    }
+    const isCmeUnit =
+      isCme ||
+      unitId === 'cme_new' ||
+      (typeof window !== 'undefined' && window.currentUnitId === 'cme_new');
+    if (isCmeUnit) {
+      const explicitBadge = String((srcObj && srcObj.question_badge) || '').trim();
+      if (explicitBadge && !/utility|inference|reliab/i.test(explicitBadge)) {
+        return explicitBadge;
+      }
+      return 'Historical Insight';
+    }
+    return (
+      (srcObj && (srcObj.question_badge || srcObj.question_type)) ||
+      (() => {
+        const p = String(promptText || '');
+        if (/what can you infer|what does .* reveal|what does .* show/i.test(p))
+          return 'Source Inference';
+        if (/why was|why did|purpose|intended|motive|propaganda/i.test(p))
+          return 'Author’s Purpose';
+        if (/differ|support|challenge|corroborat|contrast|counter/i.test(p))
+          return 'Cross-Referencing';
+        if (/reliable|convincing|trustworthy|provenance|weight/i.test(p))
+          return 'Reliability & Provenance';
+        if (/how useful/i.test(p)) return 'Source Utility';
+        if (/significance|commemorat|myth/i.test(p)) return 'Historical Significance';
+        return 'Enquiry Question';
+      })()
+    );
+  };
+
+  const renderSourceEnquiryBox = ({ srcObj, promptText, contextVal = '', renderedBullets = '' }) => {
+    const enqIdx = sourceEnquiryCounter++;
+    const dynamicBadge = resolveSourceEnquiryBadge(srcObj, promptText);
+    const modeCfg = resolveSourceEnquiryMode(srcObj, promptText);
+    const fmt = (txt) =>
+      typeof window !== 'undefined' && window.formatBold ? window.formatBold(txt) : txt;
+
+    let answerContentHtml = '';
+    if (renderedBullets) {
+      answerContentHtml = `
+        <div style="margin-bottom: 12px; background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 10px 14px; border-radius: 0 4px 4px 0;">
+          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 6px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
+          <ul style="margin: 0; padding-left: 18px;">
+            ${renderedBullets}
+          </ul>
+        </div>
+      `;
+    } else if (srcObj && srcObj.model_answer) {
+      answerContentHtml = `
+        <div style="margin-bottom: 12px; background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 10px 14px; border-radius: 0 4px 4px 0;">
+          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
+          <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.6;">${fmt(srcObj.model_answer)}</div>
+        </div>
+      `;
+    } else if (
+      srcObj &&
+      Array.isArray(srcObj.discussion_ideas) &&
+      srcObj.discussion_ideas.length > 0
+    ) {
+      answerContentHtml = `
+        <div style="margin-bottom: 12px; background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 10px 14px; border-radius: 0 4px 4px 0;">
+          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
+          <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.55;">
+            ${srcObj.discussion_ideas.map((d) => `<li style="margin-bottom: 6px;">${fmt(d)}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    return `
+      <details id="source-enquiry-det-${enqIdx}" class="source-enquiry-reveal ${modeCfg.detailsClass}" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" ontoggle="if(window.syncSourceAnswerToggle){window.syncSourceAnswerToggle(${enqIdx}, this.open);}">
+        <summary style="padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; list-style: none; user-select: none; background: ${modeCfg.softBg}; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;">
+            <span class="source-enquiry-mode-badge" style="font-size: 0.70rem; font-weight: 800; text-transform: uppercase; color: ${modeCfg.badgeText}; background: ${modeCfg.badgeBg}; border: 1px solid ${modeCfg.badgeBorder}; padding: 3px 8px; border-radius: 12px; letter-spacing: 0.5px; flex-shrink: 0;">${dynamicBadge}</span>
+            <span id="ans-btn-${enqIdx}" class="reveal-answer-pill" role="button" aria-expanded="false" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" data-closed-label="${modeCfg.closedLabel}" data-open-label="${modeCfg.openLabel}" style="flex-shrink: 0;">
+              <i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent};"></i>
+              <span class="reveal-text-closed">${modeCfg.closedLabel}</span>
+              <span class="reveal-text-open">${modeCfg.openLabel}</span>
+            </span>
+          </div>
+          <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: ${modeCfg.promptColor}; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${fmt(promptText)}</div>
+        </summary>
+        <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid ${modeCfg.border};">
+          ${contextVal
+            ? `
+            <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
+              <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
+              <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${fmt(contextVal)}</div>
+            </div>
+          `
+            : ''}
+          ${answerContentHtml}
+        </div>
+      </details>
+    `;
+  };
 
   const hasInlineNarrativeSources =
     (Array.isArray(lesson.narrative_blocks) &&
@@ -5129,22 +5662,6 @@ export function renderLesson(lesson) {
         ? lesson.cover_image
         : lesson.cover_image.image ||
         (Array.isArray(lesson.cover_image) ? lesson.cover_image[0] : '');
-  }
-  if (!heroImage && lesson.sources && lesson.sources.length > 0) {
-    heroImage =
-      lesson.sources[0].src || lesson.sources[0].image_url || lesson.sources[0].image || '';
-  }
-  if (!heroImage && lesson.narrative_blocks && lesson.narrative_blocks.length > 0) {
-    for (const b of lesson.narrative_blocks) {
-      if (b.source && (b.source.image || b.source.src || b.source.image_url)) {
-        heroImage = b.source.image || b.source.src || b.source.image_url;
-        break;
-      }
-    }
-  }
-  if (!heroImage && lesson.right_page_task && lesson.right_page_task.visual_source) {
-    heroImage =
-      lesson.right_page_task.visual_source.image || lesson.right_page_task.visual_source.src || '';
   }
 
   const isTrip =
@@ -5303,17 +5820,15 @@ export function renderLesson(lesson) {
               ${isKs2
         ? `
                     <button type="button" class="btn btn-ks2-worksheet-launcher" onclick="window.openKs2WorksheetModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(30, 58, 138, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open A4 Companion Worksheet (PDF & Print)"><i class="fa-solid fa-file-pdf" style="color: #2563eb;"></i> <span>Enquiry Worksheet</span></button>
-                    <button type="button" class="btn btn-ks2-teacher-launcher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Junior School Non-Specialist Teacher Guidance & Answers"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
-                    <a href="/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete 24-page pupil workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
+                    <button type="button" class="btn btn-ks2-teacher-launcher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Walk-In Primary Teacher Guidance & Model Answers"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
+                    <button type="button" class="btn btn-ks2-teacher-mode btn-teacher-mode-toggle ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'active' : ''}" onclick="window.toggleTeacherMode()" style="padding: 6px 12px; font-size: 0.88rem; background: #f5f3ff; color: #5b21b6; border: 1.5px solid #ddd6fe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(91, 33, 182, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="1-Click Teacher Mode: Reveal all Do Now, Source, Writing & Quiz answers on this page"><i class="fa-solid ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'fa-eye-slash' : 'fa-eye'}" style="color: #7c3aed;"></i> <span class="teacher-btn-label">${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'Teacher Mode: Answers ON' : 'Teacher Mode: Reveal Answers'}</span></button>
+                    <a href="/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete 28-page Pupil Workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
+                    <button type="button" class="btn btn-ks2-quiz-jump" onclick="if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && !window.consolidateStations['${lesson.id}'].isOpen){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } else if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && window.consolidateStations['${lesson.id}'].mode !== 'quiz'){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } const qb = document.getElementById('tab-btn-quiz-${lesson.id}'); if(qb) qb.scrollIntoView({ behavior: 'smooth', block: 'start' });" style="padding: 6px 12px; font-size: 0.88rem; background: #fffbeb; color: #92400e; border: 1.5px solid #fde68a; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(146, 64, 14, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump straight to the 5-Question Lesson Quiz"><i class="fa-solid fa-circle-question" style="color: #d97706;"></i> <span>Lesson Quiz</span></button>
                   `
         : ''
       }
               ${grEntry
-        ? `<button type="button" class="btn btn-guided-reading-launcher" onclick="if(window.switchView){ window.switchView('reading', '${unitId}', false, { rawLesson: '${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}', lessonIndex: ${currentIndex} }); } else { window.location.href = '/?view=reading&unit=${unitId}&lesson=${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}'; }" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#fce7f3';" onmouseout="this.style.background='#fdf2f8';" title="Open Literary Companion & Audio Read-Aloud: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> <span>📖 Reading HW: ${grEntry.book_title}</span></button>`
-        : ''
-      }
-              ${unitId === 'cme_new' || isCme
-        ? `<button type="button" class="btn btn-cme-theater-map" onclick="window.openCmeTheaterMapModal()" style="padding: 6px 12px; font-size: 0.88rem; background: #0284c7; color: #ffffff; border: 1.5px solid #0369a1; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(2,132,199,0.3); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open High-Resolution Regional Map (Israel & Surrounding Neighbours) [Shortcut: M]"><i class="fa-solid fa-map" style="color: #ffffff;"></i> Regional Map</button>`
+        ? `<button type="button" class="btn btn-guided-reading-launcher" onclick="if(window.saveUnitReturnOrigin){window.saveUnitReturnOrigin();} if(window.switchView){ window.switchView('reading', '${unitId}', false, { rawLesson: '${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}', lessonIndex: ${currentIndex} }); } else { window.location.href = '/?view=reading&unit=${unitId}&lesson=${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}'; }" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#fce7f3';" onmouseout="this.style.background='#fdf2f8';" title="Open Literary Companion & Audio Read-Aloud: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> <span>📖 Reading HW: ${grEntry.book_title}</span></button>`
         : ''
       }
               ${(() => {
@@ -5336,28 +5851,7 @@ export function renderLesson(lesson) {
     lesson.banner_position ||
     (typeof lesson.banner === 'object' && lesson.banner ? lesson.banner.position : null);
 
-  if (
-    (!bannerPosition || bannerPosition === 'center') &&
-    (unitId === 'ks2_ww2' || window.currentUnitId === 'ks2_ww2' || isKs2)
-  ) {
-    const ks2BannerPositions = {
-      lesson_1: 'center 82%',
-      lesson_2: 'center 55%',
-      lesson_3: 'center 45%',
-      lesson_4: 'center 30%',
-      lesson_5: 'center 18%',
-      lesson_6: 'center 70%',
-      lesson_7: 'center 30%',
-      lesson_8: 'center 50%',
-      lesson_9: 'center 20%',
-      lesson_10: 'center 88%',
-      lesson_11: 'center 42%',
-    };
-    if (ks2BannerPositions[lesson.id]) {
-      bannerPosition = ks2BannerPositions[lesson.id];
-    }
-  }
-  if (!bannerPosition) bannerPosition = 'center';
+  if (!bannerPosition) bannerPosition = isKs2 ? 'center 20%' : 'center center';
   const isFamilyHero =
     lesson.id &&
     (lesson.id.startsWith('hero_') ||
@@ -5392,8 +5886,8 @@ export function renderLesson(lesson) {
     }
   }
 
-  // Full-Bleed Hero Image (Calibrated Height: 165px for KS2, 116px for Secondary/GCSE)
-  const heroBannerHeight = isKs2 ? '165px' : '116px';
+  // Full-Bleed Hero Image (Calibrated Height: 210px for KS2, 116px for Secondary/GCSE)
+  const heroBannerHeight = isKs2 ? '210px' : '116px';
   const cleanLessonHeading = (lesson.title || '')
     .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
     .trim();
@@ -5406,7 +5900,9 @@ export function renderLesson(lesson) {
     lesson.enquiryQuestion || lesson.enquiry_question || lesson.inquiry_question || lesson.enquiry || '';
 
   let enquirySubtitle = '';
-  if (isHeadingAQuestion && lesson.subtitle) {
+  if (isKs2 && enquiryText) {
+    enquirySubtitle = `<p class="lesson-hero-enquiry-sub" style="font-family: 'Lora', Georgia, serif; font-style: italic; color: #fef08a; font-size: 0.96rem; margin: 0.35rem 0 0 0; line-height: 1.35; text-shadow: 0 1px 4px rgba(0,0,0,0.85);"><i class="fa-solid fa-circle-question" style="color: #fde047; font-size: 0.82rem; margin-right: 6px;"></i>Key Enquiry: &ldquo;${enquiryText}&rdquo;</p>`;
+  } else if (isHeadingAQuestion && lesson.subtitle) {
     enquirySubtitle = `<p class="lesson-hero-subtitle" style="font-family: 'Inter', sans-serif; color: #f1f5f9; font-size: 0.9rem; font-weight: 500; margin: 0.35rem 0 0 0; line-height: 1.35; text-shadow: 0 1px 4px rgba(0,0,0,0.8);"><i class="fa-solid fa-compass" style="color: #60a5fa; font-size: 0.8rem; margin-right: 6px;"></i>${lesson.subtitle}</p>`;
   } else if (enquiryText && enquiryText !== cleanLessonHeading && !isHeadingAQuestion) {
     enquirySubtitle = `<p class="lesson-hero-enquiry-sub" style="font-family: 'Lora', Georgia, serif; font-style: italic; color: #fef08a; font-size: 0.95rem; margin: 0.35rem 0 0 0; line-height: 1.35; text-shadow: 0 1px 3px rgba(0,0,0,0.8);"><i class="fa-solid fa-circle-question" style="color: #fde047; font-size: 0.82rem; margin-right: 6px;"></i>Key Enquiry: &ldquo;${enquiryText}&rdquo;</p>`;
@@ -5417,9 +5913,18 @@ export function renderLesson(lesson) {
   const unitBadgeTitle = activeUnit?.title
     ? activeUnit.title.replace(/\s*\([\d–\-]+\)/, '').trim()
     : 'Curriculum Unit';
+  const heroLessonLabel = isLessonZero
+    ? 'Introductory Context Lesson'
+    : hasLessonZero
+      ? isGCSE
+        ? 'Lesson ' + currentIndex
+        : 'Enquiry ' + currentIndex
+      : isGCSE
+        ? 'Lesson ' + (currentIndex + 1)
+        : 'Enquiry ' + (currentIndex + 1);
   const heroEyebrow = isTrip
     ? lessonPrefix
-    : `${unitBadgeTitle} &bull; ${isGCSE ? 'Lesson ' + (currentIndex + 1) : 'Enquiry ' + (currentIndex + 1)}`;
+    : `${unitBadgeTitle} &bull; ${heroLessonLabel}`;
 
   let specPillHtml = '';
   if (lesson.specification_anchor) {
@@ -5460,15 +5965,23 @@ export function renderLesson(lesson) {
     `;
   }
 
+  const heroContainerStyle = isKs2
+    ? `position: relative; width: 100%; margin-left: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.6rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(15,23,42,0.12); box-shadow: 0 6px 18px rgba(15,23,42,0.12);`
+    : `position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.4rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 4px 16px rgba(0,0,0,0.08);`;
+  const heroOverlayStyle = isKs2
+    ? `position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.16) 0%, rgba(15,23,42,0.54) 55%, rgba(15,23,42,0.88) 100%);`
+    : `position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);`;
+  const heroContentPadding = isKs2 ? '0.9rem 1.75rem' : '0.72rem 4rem';
+
   html += `
-      <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.4rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);"></div>
-        <div class="lesson-hero-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 0.72rem 4rem;">
+      <div class="lesson-hero${heroExtraClass}" style="${heroContainerStyle}">
+        <div style="${heroOverlayStyle}"></div>
+        <div class="lesson-hero-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: ${heroContentPadding}; box-sizing: border-box;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 1px;">
-            <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.76rem;">${heroEyebrow}</span>
+            <span style="color: #e2e8f0; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.76rem; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">${heroEyebrow}</span>
             ${specPillHtml}
           </div>
-          <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.5rem; margin: 0.15rem 0 0 0; line-height: 1.18; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">${cleanLessonHeading}</h2>
+          <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.55rem; margin: 0.15rem 0 0 0; line-height: 1.18; text-shadow: 0 2px 8px rgba(0,0,0,0.75);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}
         </div>
         ${bannerGalleryBtn}
@@ -5579,70 +6092,11 @@ export function renderLesson(lesson) {
             ? (() => {
               const qPrompt =
                 source.question || source.enquiry_question || source.how_useful_question || source.prompt || source.hinge_question;
-              const dynamicBadge =
-                source.question_badge ||
-                source.question_type ||
-                (() => {
-                  if (/what can you infer|what does .* reveal|what does .* show/i.test(qPrompt))
-                    return 'Source Inference';
-                  if (/why was|why did|purpose|intended|motive|propaganda/i.test(qPrompt))
-                    return 'Author’s Purpose';
-                  if (/differ|support|challenge|corroborat|contrast|counter/i.test(qPrompt))
-                    return 'Cross-Referencing';
-                  if (/reliable|convincing|trustworthy|provenance|weight/i.test(qPrompt))
-                    return 'Reliability & Provenance';
-                  if (/how useful/i.test(qPrompt)) return 'Source Utility';
-                  if (/significance|commemorat|myth/i.test(qPrompt))
-                    return 'Historical Significance';
-                  return 'Enquiry Question';
-                })();
-
-              return `
-                <details class="source-enquiry-reveal">
-                  <summary style="padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; list-style: none; user-select: none; background: #f0fdf4; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
-                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;">
-                      <span style="font-size: 0.70rem; font-weight: 800; text-transform: uppercase; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 3px 8px; border-radius: 12px; letter-spacing: 0.5px; flex-shrink: 0;">${dynamicBadge}</span>
-                      <span class="reveal-answer-pill" style="flex-shrink: 0;">
-                        <i class="fa-solid fa-lightbulb" style="color: #16a34a;"></i>
-                        <span class="reveal-text-closed">Reveal Model Answer</span>
-                        <span class="reveal-text-open">Hide Model Answer</span>
-                        <span class="reveal-arrow">&#9660;</span>
-                      </span>
-                    </div>
-                    <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(qPrompt) : qPrompt}</div>
-                  </summary>
-                  <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
-                    ${contextText
-                  ? `
-                      <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-                        <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
-                        <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}</div>
-                      </div>
-                    `
-                  : ''}
-                    ${source.model_answer
-                  ? `
-                      <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-                        <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Answer:</strong>
-                        <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.6;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(source.model_answer) : source.model_answer}</div>
-                      </div>
-                    `
-                  : source.discussion_ideas &&
-                    Array.isArray(source.discussion_ideas) &&
-                    source.discussion_ideas.length > 0
-                    ? `
-                      <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-                        <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Disciplinary Guidance:</strong>
-                        <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.55;">
-                          ${source.discussion_ideas.map((d) => `<li style="margin-bottom: 6px;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(d) : d}</li>`).join('')}
-                        </ul>
-                      </div>
-                    `
-                    : ''
-                }
-                  </div>
-                </details>
-              `;
+              return renderSourceEnquiryBox({
+                srcObj: source,
+                promptText: qPrompt,
+                contextVal: contextText,
+              });
             })()
             : '';
 
@@ -6216,7 +6670,8 @@ export function renderLesson(lesson) {
       db: currentDb,
       headerHtml,
       timerHtml,
-      isKs3: !isGCSE,
+      isKs3: !isGCSE && !isKs2,
+      isKs2,
     });
     window.postRenderHooks.push(() => {
       initGcseDoNowEngine(
@@ -6225,7 +6680,8 @@ export function renderLesson(lesson) {
         typeof window !== 'undefined'
           ? window.db || (appStore && appStore.state && appStore.state.db)
           : null,
-        !isGCSE,
+        !isGCSE && !isKs2,
+        isKs2,
       );
     });
   }
@@ -6283,12 +6739,12 @@ export function renderLesson(lesson) {
     `;
 
     // Rotating cognitive vocabulary challenge widget
-    let currentLessonIdx = 0;
-    if (typeof unitData !== 'undefined' && unitData && Array.isArray(unitData.lessons)) {
-      currentLessonIdx = unitData.lessons.findIndex((l) =>
+    let currentLessonIdx = typeof currentIndex === 'number' && currentIndex >= 0 ? currentIndex : 0;
+    if (currentLessonIdx === 0 && activeUnit && Array.isArray(activeUnit.lessons)) {
+      const foundIdx = activeUnit.lessons.findIndex((l) =>
         l.id && lesson.id ? l.id === lesson.id : l.title === lesson.title,
       );
-      if (currentLessonIdx === -1) currentLessonIdx = 0;
+      if (foundIdx >= 0) currentLessonIdx = foundIdx;
     }
     const currentUnitId =
       (appStore && appStore.state && appStore.state.currentUnitId) || window.currentUnitId || '';
@@ -6311,7 +6767,13 @@ export function renderLesson(lesson) {
 
     if (vocabStyle === 0) {
       // Style 0: The Odd One Out
-      const oddExemplars = getOddOneOutExemplars(lesson, vocabTermsList);
+      const oddExemplars = getOddOneOutExemplars(lesson, vocabTermsList, isKs2);
+      const oddBtnShowLbl = isKs2 ? 'Show Partner Clues' : 'Show Model Debates';
+      const oddBtnHideLbl = isKs2 ? 'Hide Partner Clues' : 'Hide Model Debates';
+      const oddBoxHeading = isKs2
+        ? 'Partner Discussion Ideas (Real Objects, People &amp; Big Ideas):'
+        : 'High-Tariff Discussion Exemplars:';
+      const oddBoxPill = isKs2 ? 'Partner Talk Guide' : 'Teacher Debrief Guide';
       htmlVocabInner += `
         <div id="vocab-cognitive-challenge" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
@@ -6319,7 +6781,7 @@ export function renderLesson(lesson) {
               <span style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem;">
                 <i class="fa-solid fa-shapes" style="color: #3b82f6; margin-right: 6px;"></i> Vocabulary Challenge: The Odd One Out
               </span>
-              <span style="font-size: 0.8rem; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Conceptual Categorisation</span>
+              <span style="font-size: 0.8rem; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 12px; font-weight: 600;">${isKs2 ? 'Grouping Historical Clues' : 'Conceptual Categorisation'}</span>
             </div>
             ${wbDrillBtnHtml}
           </div>
@@ -6342,8 +6804,8 @@ export function renderLesson(lesson) {
               <button type="button" class="btn btn-primary" onclick="this.parentElement.nextElementSibling.style.display='block'; this.style.display='none';" style="font-size: 0.9rem; padding: 6px 14px; background: #1e40af; color: white; border: none; border-radius: 6px; cursor: pointer;">
                 <i class="fa-solid fa-check"></i> Submit Justification
               </button>
-              <button type="button" class="btn btn-secondary" onclick="const box = document.getElementById('odd-model-box'); const isVis = box.style.display === 'block'; box.style.display = isVis ? 'none' : 'block'; this.innerHTML = isVis ? '<i class=\\'fa-solid fa-eye\\'></i> Show Model Debates' : '<i class=\\'fa-solid fa-eye-slash\\'></i> Hide Model Debates';" style="font-size: 0.9rem; padding: 6px 14px; background: #ffffff; color: #92400e; border: 1.5px solid #fde68a; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">
-                <i class="fa-solid fa-eye"></i> Show Model Debates
+              <button type="button" class="btn btn-secondary" onclick="const box = document.getElementById('odd-model-box'); const isVis = box.style.display === 'block'; box.style.display = isVis ? 'none' : 'block'; this.innerHTML = isVis ? '<i class=\\'fa-solid fa-eye\\'></i> ${oddBtnShowLbl}' : '<i class=\\'fa-solid fa-eye-slash\\'></i> ${oddBtnHideLbl}';" style="font-size: 0.9rem; padding: 6px 14px; background: #ffffff; color: #92400e; border: 1.5px solid #fde68a; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">
+                <i class="fa-solid fa-eye"></i> ${oddBtnShowLbl}
               </button>
             </div>
             <div style="display: none; margin-top: 10px; padding: 12px; background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 6px; color: #166534; font-size: 0.95rem;">
@@ -6351,8 +6813,8 @@ export function renderLesson(lesson) {
             </div>
             <div id="odd-model-box" style="display: none; margin-top: 10px; padding: 14px 16px; background: #fefce8; border: 1.5px solid #facc15; border-radius: 8px; color: #713f12; font-size: 0.95rem; line-height: 1.6; box-shadow: 0 2px 8px rgba(234, 179, 8, 0.15);">
               <div style="font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; color: #854d0e;">
-                <span><i class="fa-solid fa-star" style="color: #eab308;"></i> High-Tariff Discussion Exemplars:</span>
-                <span style="font-size: 0.75rem; background: #fef08a; padding: 2px 8px; border-radius: 10px; text-transform: uppercase;">Teacher Debrief Guide</span>
+                <span><i class="fa-solid fa-star" style="color: #eab308;"></i> ${oddBoxHeading}</span>
+                <span style="font-size: 0.75rem; background: #fef08a; padding: 2px 8px; border-radius: 10px; text-transform: uppercase;">${oddBoxPill}</span>
               </div>
               <div style="display: flex; flex-direction: column; gap: 8px;">
                 ${oddExemplars
@@ -6360,10 +6822,10 @@ export function renderLesson(lesson) {
             (ex, idx) => `
                   <div style="background: #ffffff; border: 1px solid #fde047; border-radius: 6px; padding: 10px 14px;">
                     <div style="font-size: 0.8rem; font-weight: 800; color: #b45309; text-transform: uppercase;">
-                      Option ${String.fromCharCode(65 + idx)}: ${ex.title || 'Historical Link'}
+                      ${isKs2 ? `Idea ${idx + 1}` : `Option ${String.fromCharCode(65 + idx)}`}: ${ex.title || 'Historical Link'}
                     </div>
                     <div style="font-size: 0.92rem; color: #1e293b; margin: 3px 0;">
-                      <strong>Trio:</strong> ${Array.isArray(ex.trio) ? ex.trio.join(', ') : ex.trio} · <strong>Odd One Out:</strong> <span style="color: #b91c1c; font-weight: 700; background: #fee2e2; padding: 1px 6px; border-radius: 4px;">${ex.odd}</span>
+                      <strong>${isKs2 ? 'Words:' : 'Trio:'}</strong> ${Array.isArray(ex.trio) ? ex.trio.join(', ') : ex.trio} · <strong>Odd One Out:</strong> <span style="color: #b91c1c; font-weight: 700; background: #fee2e2; padding: 1px 6px; border-radius: 4px;">${ex.odd}</span>
                     </div>
                     <div style="font-size: 0.88rem; color: #334155;">
                       <strong>Why:</strong> ${ex.reason}
@@ -6387,12 +6849,12 @@ export function renderLesson(lesson) {
               <span style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem;">
                 <i class="fa-solid fa-pen-fancy" style="color: #3b82f6; margin-right: 6px;"></i> Vocabulary Challenge: The Golden Sentence
               </span>
-              <span style="font-size: 0.8rem; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Syntactic Precision</span>
+              <span style="font-size: 0.8rem; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 12px; font-weight: 600;">${isKs2 ? 'Connecting Clues' : 'Syntactic Precision'}</span>
             </div>
             ${wbDrillBtnHtml}
           </div>
           <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">
-            Choose <strong>TWO</strong> terms from the word bank below. Write <strong>ONE</strong> single, grammatically sophisticated historical sentence connecting them using a causal conjunction (<strong>because</strong>, <strong>although</strong>, or <strong>consequently</strong>):
+            Choose <strong>TWO</strong> terms from the word bank below. Write <strong>ONE</strong> ${isKs2 ? 'clear historical sentence connecting them using a joining word (<strong>because</strong>, <strong>although</strong>, or <strong>so that</strong>):' : 'single, grammatically sophisticated historical sentence connecting them using a causal conjunction (<strong>because</strong>, <strong>although</strong>, or <strong>consequently</strong>):'}
           </p>
           <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; background: #f8fafc; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
             ${vocabTermsList
@@ -6402,9 +6864,9 @@ export function renderLesson(lesson) {
           )
           .join('')}
           </div>
-          <textarea id="golden-sentence-input" placeholder="Write your Golden Sentence here using because, although, or consequently..." style="width: 100%; min-height: 70px; padding: 10px; border-radius: 6px; border: 1.5px solid #94a3b8; font-family: inherit; font-size: 0.95rem; box-sizing: border-box;"></textarea>
+          <textarea id="golden-sentence-input" placeholder="${isKs2 ? 'Write your Golden Sentence here using because, although, or so that...' : 'Write your Golden Sentence here using because, although, or consequently...'}" style="width: 100%; min-height: 70px; padding: 10px; border-radius: 6px; border: 1.5px solid #94a3b8; font-family: inherit; font-size: 0.95rem; box-sizing: border-box;"></textarea>
           <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <button type="button" class="btn btn-primary" onclick="const val = (document.getElementById('golden-sentence-input').value || '').toLowerCase(); const feedback = document.getElementById('golden-feedback'); feedback.style.display='block'; if (val.includes('because') || val.includes('although') || val.includes('consequently')) { feedback.style.background='#f0fdf4'; feedback.style.borderColor='#86efac'; feedback.style.color='#166534'; feedback.innerHTML='<strong>Excellent Syntactic Construction!</strong> You successfully deployed a causal conjunction to establish a sophisticated historical link.'; } else { feedback.style.background='#fffbeb'; feedback.style.borderColor='#fde68a'; feedback.style.color='#92400e'; feedback.innerHTML='<strong>Tip:</strong> Ensure you include one of the target causal conjunctions: <em>because</em>, <em>although</em>, or <em>consequently</em> to elevate your sentence.'; }" style="font-size: 0.9rem; padding: 6px 14px; background: #1e40af; color: white; border: none; border-radius: 6px; cursor: pointer;">
+            <button type="button" class="btn btn-primary" onclick="const val = (document.getElementById('golden-sentence-input').value || '').toLowerCase(); const feedback = document.getElementById('golden-feedback'); feedback.style.display='block'; if (val.includes('because') || val.includes('although') || val.includes('consequently') || val.includes('so that')) { feedback.style.background='#f0fdf4'; feedback.style.borderColor='#86efac'; feedback.style.color='#166534'; feedback.innerHTML='<strong>Great Historian Sentence!</strong> You connected two key ideas clearly using a strong joining word.'; } else { feedback.style.background='#fffbeb'; feedback.style.borderColor='#fde68a'; feedback.style.color='#92400e'; feedback.innerHTML='<strong>Tip:</strong> Include one of the joining words — <em>because</em>, <em>although</em>, or <em>${isKs2 ? 'so that' : 'consequently'}</em> — to show how your two words link together.'; }" style="font-size: 0.9rem; padding: 6px 14px; background: #1e40af; color: white; border: none; border-radius: 6px; cursor: pointer;">
               <i class="fa-solid fa-sparkles"></i> Check Sentence
             </button>
             <button type="button" class="btn btn-secondary" onclick="const box = document.getElementById('golden-model-box'); const isVis = box.style.display === 'block'; box.style.display = isVis ? 'none' : 'block'; this.innerHTML = isVis ? '<i class=\\'fa-solid fa-eye\\'></i> Show Model Sentence' : '<i class=\\'fa-solid fa-eye-slash\\'></i> Hide Model Sentence';" style="font-size: 0.9rem; padding: 6px 14px; background: #ffffff; color: #92400e; border: 1.5px solid #fde68a; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">
@@ -6420,37 +6882,39 @@ export function renderLesson(lesson) {
               "${goldenExemplar}"
             </div>
             <div style="margin-top: 6px; font-size: 0.82rem; color: #a16207;">
-              <strong>Teacher Note:</strong> Demonstrates syntactic embedding of two curriculum terms connected by a causal conjunction.
+              <strong>Teacher Note:</strong> ${isKs2 ? 'Shows pupils how to join two historical key terms in one clear sentence.' : 'Demonstrates syntactic embedding of two curriculum terms connected by a causal conjunction.'}
             </div>
           </div>
         </div>
       `;
     } else if (vocabStyle === 2) {
       // Style 2: Conceptual Binary Sort
+      const sortCat1Title = isKs2 ? 'War, Rules &amp; Leaders' : 'Power, Governance & Warfare';
+      const sortCat2Title = isKs2 ? 'Everyday Life &amp; Safety' : 'Economy, Trade & Society';
       htmlVocabInner += `
         <div id="vocab-cognitive-challenge" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem;">
-                <i class="fa-solid fa-layer-group" style="color: #3b82f6; margin-right: 6px;"></i> Vocabulary Challenge: Conceptual Classification
+                <i class="fa-solid fa-layer-group" style="color: #3b82f6; margin-right: 6px;"></i> Vocabulary Challenge: ${isKs2 ? 'Sort the Key Words' : 'Conceptual Classification'}
               </span>
-              <span style="font-size: 0.8rem; background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Conceptual Sorting</span>
+              <span style="font-size: 0.8rem; background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 12px; font-weight: 600;">${isKs2 ? 'Two-Group Sort' : 'Conceptual Sorting'}</span>
             </div>
             ${wbDrillBtnHtml}
           </div>
           <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">
-            Click on each term below to sort it into <strong>Power, Governance & Warfare</strong> or <strong>Economy, Trade & Society</strong>:
+            Click on each term below to sort it into <strong>${sortCat1Title}</strong> or <strong>${sortCat2Title}</strong>:
           </p>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px;">
             <div id="sort-cat-power" style="background: #eff6ff; border: 1.5px solid #bfdbfe; border-radius: 8px; padding: 12px; min-height: 120px;">
               <div style="font-weight: bold; color: #1e3a8a; font-size: 0.95rem; border-bottom: 1.5px solid #bfdbfe; padding-bottom: 6px; margin-bottom: 10px; text-align: center;">
-                Power, Governance & Warfare
+                ${sortCat1Title}
               </div>
               <div class="sort-bucket-items" style="display: flex; flex-direction: column; gap: 6px;"></div>
             </div>
             <div id="sort-cat-economy" style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 8px; padding: 12px; min-height: 120px;">
               <div style="font-weight: bold; color: #166534; font-size: 0.95rem; border-bottom: 1.5px solid #bbf7d0; padding-bottom: 6px; margin-bottom: 10px; text-align: center;">
-                Economy, Trade & Society
+                ${sortCat2Title}
               </div>
               <div class="sort-bucket-items" style="display: flex; flex-direction: column; gap: 6px;"></div>
             </div>
@@ -6463,14 +6927,16 @@ export function renderLesson(lesson) {
           )
           .join('')}
           </div>
-          <p style="font-size: 0.8rem; color: #64748b; margin-top: 8px; font-style: italic;">Click a term button to cycle it between Power (blue), Economy (green), and unassigned.</p>
+          <p style="font-size: 0.8rem; color: #64748b; margin-top: 8px; font-style: italic;">Click a word button to move it between Group 1 (blue), Group 2 (green), and unassigned.</p>
         </div>
       `;
     } else if (vocabStyle === 3) {
       // Style 3: Spot the Deliberate Historical Error!
       const errorStatement = lesson.vocab_deliberate_error
         ? lesson.vocab_deliberate_error
-        : `A modern historical commentator claimed that ${vocabTermsList[0] || 'the main concept'} and ${vocabTermsList[1] || 'the event'} were completely trivial, playing no role in shaping the political outcome of this era.`;
+        : isKs2
+          ? `A visitor claimed that ${vocabTermsList[0] || 'this key idea'} and ${vocabTermsList[1] || 'this wartime event'} made no difference at all to children and families during World War II.`
+          : `A modern historical commentator claimed that ${vocabTermsList[0] || 'the main concept'} and ${vocabTermsList[1] || 'the event'} were completely trivial, playing no role in shaping the political outcome of this era.`;
 
       htmlVocabInner += `
         <div id="vocab-cognitive-challenge" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1;">
@@ -6551,6 +7017,15 @@ export function renderLesson(lesson) {
   if (lesson.extra_videos && Array.isArray(lesson.extra_videos)) {
     videos = videos.concat(lesson.extra_videos);
   }
+  if (lesson.video_append && Array.isArray(lesson.video_append)) {
+    const seenVideoUrls = new Set(videos.map((v) => v && v.url).filter(Boolean));
+    lesson.video_append.forEach((v) => {
+      if (v && (!v.url || !seenVideoUrls.has(v.url))) {
+        videos.push(v);
+        if (v.url) seenVideoUrls.add(v.url);
+      }
+    });
+  }
 
   if (videos.length > 0) {
     htmlVideo = renderLessonVideos(videos, lesson, unitId);
@@ -6593,6 +7068,57 @@ export function renderLesson(lesson) {
           });
         }
       });
+    }
+
+    if (Array.isArray(lesson.contested_terms) && lesson.contested_terms.length > 0) {
+      const escCt = (val) =>
+        String(val || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      const termCount = lesson.contested_terms.length;
+      htmlNarrative += `
+        <details class="contested-terms-strip" id="contested-terms-${lesson.id || 'current'}">
+          <summary class="contested-terms-summary">
+            <div class="contested-terms-summary-left">
+              <span class="contested-terms-badge">
+                <i class="fa-solid fa-language"></i>
+                <span>One Land, Two Vocabularies</span>
+              </span>
+              <span class="contested-terms-subtitle">
+                ${termCount} paired historical ${termCount === 1 ? 'term' : 'terms'} &middot; Why historians encounter different names for the same events
+              </span>
+            </div>
+            <span class="contested-terms-toggle">
+              <span class="ct-lbl-closed">View Guide</span>
+              <span class="ct-lbl-open">Close</span>
+              <span class="ct-caret">&#9662;</span>
+            </span>
+          </summary>
+          <div class="contested-terms-body">
+            ${lesson.contested_terms
+              .map(
+                (ct) => `
+              <div class="contested-term-item">
+                <div class="contested-term-pair-grid">
+                  <div class="contested-term-box">
+                    ${ct.used_by_a ? `<span class="contested-used-by">${escCt(ct.used_by_a)}</span>` : ''}
+                    <div class="contested-term-label">${escCt(ct.term_a || '')}</div>
+                  </div>
+                  <div class="contested-term-arrow" aria-hidden="true">&harr;</div>
+                  <div class="contested-term-box">
+                    ${ct.used_by_b ? `<span class="contested-used-by">${escCt(ct.used_by_b)}</span>` : ''}
+                    <div class="contested-term-label">${escCt(ct.term_b || '')}</div>
+                  </div>
+                </div>
+                ${ct.note ? `<p class="contested-term-note">${typeof formatBold === 'function' ? formatBold(escCt(ct.note)) : escCt(ct.note)}</p>` : ''}
+              </div>
+            `,
+              )
+              .join('')}
+          </div>
+        </details>
+      `;
     }
 
     // --- UNIVERSAL TWO-BEAT CHRONOLOGY SPINE (KS2, KS3, GCSE) ---
@@ -6701,7 +7227,7 @@ export function renderLesson(lesson) {
             (window.currentUnitId === 'cme_new' ||
               window.currentUnitId === 'gcse_middle_east_1945_1995'))
           ? `
-              <button type="button" class="btn btn-timeline-jump" onclick="event.stopPropagation(); if(typeof window.switchView==='function'){window.switchView('timeline', 'cme_new');}else if(typeof window.navigateTo==='function'){window.navigateTo('timeline');}" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1.2px solid #bfdbfe; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Jump to interactive chronological Living Timeline">
+              <button type="button" class="btn btn-timeline-jump" onclick="event.stopPropagation(); if(typeof window.saveUnitReturnOrigin==='function'){window.saveUnitReturnOrigin();} if(typeof window.switchView==='function'){window.switchView('timeline', 'cme_new');}else if(typeof window.navigateTo==='function'){window.navigateTo('timeline');}" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1.2px solid #bfdbfe; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Jump to interactive chronological Living Timeline">
                 <i class="fa-solid fa-clock-rotate-left" style="color: #2563eb;"></i> Full Living Timeline &rarr;
               </button>
               `
@@ -6835,80 +7361,515 @@ export function renderLesson(lesson) {
     }
 
     let renderedKeyIndividual = false;
+    let renderedOralHinge = false;
     let visualPlateCounter = 0;
 
-    const renderInteractiveHotspotMapHTML = (mapBlock, mIndex) => {
-      const mapId = mapBlock.id || 'hotspot-map-' + mIndex;
-      const initialSpot = mapBlock.hotspots && mapBlock.hotspots[0] ? mapBlock.hotspots[0] : null;
+    const escHtmlSafe = (v) =>
+      String(v || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    const escAttrSafe = (v) => escHtmlSafe(v).replace(/"/g, '&quot;');
 
-      let mapHtml = `
-        <div class="interactive-hotspot-map-container" id="${mapId}-wrapper" style="margin: 32px 0; background: #0f172a; border: 1.5px solid #334155; border-radius: 12px; padding: 22px; color: #f8fafc; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.35);">
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
-            <div>
-              <span style="background: rgba(14, 165, 233, 0.2); border: 1px solid #0ea5e9; color: #38bdf8; padding: 2.5px 10px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">
-                <i class="fa-solid fa-map-location-dot" style="margin-right: 5px;"></i> Interactive Primary Map
-              </span>
-              <h3 style="margin: 6px 0 0 0; font-size: 1.35rem; font-family: 'Playfair Display', Georgia, serif; color: #ffffff;">${mapBlock.title}</h3>
-              ${mapBlock.subtitle ? `<div style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">${mapBlock.subtitle}</div>` : ''}
-            </div>
-            ${mapBlock.shelfmark ? `<span style="font-family: monospace; font-size: 0.70rem; color: #94a3b8; background: rgba(255,255,255,0.06); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">${mapBlock.shelfmark}</span>` : ''}
+    const bindSlideCompareInstance = (rootEl, scMeta = {}) => {
+      if (!rootEl || rootEl.dataset.scBound === '1') return;
+      rootEl.dataset.scBound = '1';
+      const stage = rootEl.querySelector('.slide-compare-stage');
+      const beforeImg = rootEl.querySelector('.slide-compare-before-img');
+      const divider = rootEl.querySelector('.slide-compare-divider');
+      const rangeInput = rootEl.querySelector('.slide-compare-range');
+      const enlargeBtn = rootEl.querySelector('.slide-compare-enlarge-btn');
+      const presetBtns = rootEl.querySelectorAll('[data-sc-preset]');
+      if (!stage || !beforeImg || !divider) return;
+
+      let currentSplit = 50;
+      const setSplit = (pct) => {
+        const clamped = Math.max(0, Math.min(100, Number.isFinite(Number(pct)) ? Number(pct) : 50));
+        currentSplit = clamped;
+        const clipVal = `inset(0 ${100 - clamped}% 0 0)`;
+        beforeImg.style.clipPath = clipVal;
+        beforeImg.style.webkitClipPath = clipVal;
+        divider.style.left = `${clamped}%`;
+        stage.setAttribute('aria-valuenow', String(Math.round(clamped)));
+        if (rangeInput) rangeInput.value = String(Math.round(clamped));
+      };
+
+      const updateFromClientX = (clientX) => {
+        const rect = stage.getBoundingClientRect();
+        if (!rect || rect.width <= 0) return;
+        const pct = ((clientX - rect.left) / rect.width) * 100;
+        setSplit(pct);
+      };
+
+      let isDragging = false;
+      const onWinMove = (ev) => {
+        if (!isDragging) return;
+        updateFromClientX(ev.clientX);
+      };
+      const onWinUp = () => {
+        if (!isDragging) return;
+        isDragging = false;
+        window.removeEventListener('pointermove', onWinMove);
+        window.removeEventListener('pointerup', onWinUp);
+        window.removeEventListener('pointercancel', onWinUp);
+      };
+
+      stage.addEventListener('pointerdown', (e) => {
+        if (e.button !== undefined && e.button !== 0) return;
+        isDragging = true;
+        updateFromClientX(e.clientX);
+        try {
+          stage.focus({ preventScroll: true });
+        } catch (_) {
+          stage.focus();
+        }
+        window.addEventListener('pointermove', onWinMove);
+        window.addEventListener('pointerup', onWinUp);
+        window.addEventListener('pointercancel', onWinUp);
+      });
+
+      let touchStartX = 0;
+      let touchStartY = 0;
+      stage.addEventListener(
+        'touchstart',
+        (e) => {
+          if (!e.touches || !e.touches[0]) return;
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+          updateFromClientX(touchStartX);
+        },
+        { passive: true },
+      );
+      stage.addEventListener(
+        'touchmove',
+        (e) => {
+          if (!e.touches || !e.touches[0]) return;
+          const dx = Math.abs(e.touches[0].clientX - touchStartX);
+          const dy = Math.abs(e.touches[0].clientY - touchStartY);
+          if (dx >= dy) {
+            if (e.cancelable) e.preventDefault();
+            updateFromClientX(e.touches[0].clientX);
+          }
+        },
+        { passive: false },
+      );
+
+      const onKey = (e) => {
+        const step = e.shiftKey ? 10 : 5;
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          setSplit(currentSplit - step);
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          setSplit(currentSplit + step);
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          setSplit(0);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          setSplit(100);
+        } else if (e.key === 'Enter' && scMeta.allowEnlarge) {
+          e.preventDefault();
+          openSlideCompareLightboxModal(scMeta);
+        }
+      };
+      stage.addEventListener('keydown', onKey);
+
+      if (rangeInput) {
+        rangeInput.addEventListener('input', () => setSplit(Number(rangeInput.value)));
+        rangeInput.addEventListener('change', () => setSplit(Number(rangeInput.value)));
+      }
+
+      presetBtns.forEach((btn) => {
+        btn.addEventListener('click', () => setSplit(Number(btn.dataset.scPreset)));
+      });
+
+      if (enlargeBtn && scMeta.allowEnlarge) {
+        enlargeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openSlideCompareLightboxModal(scMeta);
+        });
+      }
+      if (scMeta.allowEnlarge) {
+        stage.addEventListener('dblclick', () => openSlideCompareLightboxModal(scMeta));
+      }
+      setSplit(50);
+    };
+
+    const openSlideCompareLightboxModal = (scMeta) => {
+      if (typeof document === 'undefined' || !scMeta) return;
+      const existing = document.getElementById('slide-compare-lightbox');
+      if (existing) existing.remove();
+      const prevOverflow = document.body.style.overflow || '';
+      document.body.style.overflow = 'hidden';
+
+      const modal = document.createElement('div');
+      modal.id = 'slide-compare-lightbox';
+      modal.className = 'slide-compare-lightbox no-print';
+      modal.setAttribute('role', 'dialog');
+      modal.setAttribute('aria-modal', 'true');
+      modal.setAttribute('aria-label', scMeta.title || 'Slide-Across Map Comparison');
+      modal.innerHTML = `
+        <div class="sc-lightbox-header">
+          <div class="sc-lightbox-title-wrap">
+            <span class="sc-lightbox-badge"><i class="fa-solid fa-arrows-left-right"></i> Slide-Across Map Comparison</span>
+            <h2 class="sc-lightbox-title">${escHtmlSafe(scMeta.title || '')}</h2>
           </div>
+          <div class="sc-lightbox-actions">
+            <div class="sc-preset-group" role="group" aria-label="Comparison Presets">
+              <button type="button" class="sc-preset-btn" data-sc-preset="100">${escHtmlSafe(scMeta.beforeLabel || 'Before')}</button>
+              <button type="button" class="sc-preset-btn" data-sc-preset="50">50 / 50</button>
+              <button type="button" class="sc-preset-btn" data-sc-preset="0">${escHtmlSafe(scMeta.afterLabel || 'After')}</button>
+            </div>
+            <button type="button" class="sc-lightbox-close-btn" title="Close (Esc)">
+              <span>Esc</span> <span style="font-size: 1.15rem; line-height: 1;">&times;</span>
+            </button>
+          </div>
+        </div>
+        <div class="sc-lightbox-body">
+          <div class="slide-compare-viewport is-lightbox">
+            <div class="slide-compare-stage" tabindex="0" role="slider" aria-label="${escAttrSafe(scMeta.title || 'Map comparison')}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+              <img src="${scMeta.afterUrl}" alt="${escAttrSafe(scMeta.afterLabel || 'After')}" class="archival-image slide-compare-img slide-compare-after-img" draggable="false" />
+              <img src="${scMeta.beforeUrl}" alt="${escAttrSafe(scMeta.beforeLabel || 'Before')}" class="archival-image slide-compare-img slide-compare-before-img" draggable="false" style="clip-path: inset(0 50% 0 0); -webkit-clip-path: inset(0 50% 0 0);" />
+              <div class="slide-compare-divider" style="left: 50%;">
+                <div class="slide-compare-handle" title="Drag left/right or use ArrowLeft / ArrowRight keys">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-compare-controls-bar is-lightbox">
+            <span class="slide-compare-side-label is-before"><i class="fa-solid fa-arrow-left"></i> ${escHtmlSafe(scMeta.beforeLabel || 'Before')}</span>
+            <input type="range" min="0" max="100" value="50" step="1" class="slide-compare-range" aria-label="Slide curtain between ${escAttrSafe(scMeta.beforeLabel || 'Before')} and ${escAttrSafe(scMeta.afterLabel || 'After')}" />
+            <span class="slide-compare-side-label is-after">${escHtmlSafe(scMeta.afterLabel || 'After')} <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+          ${scMeta.caption ? `<p class="slide-compare-caption is-lightbox">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(scMeta.caption)) : escHtmlSafe(scMeta.caption)}</p>` : ''}
+        </div>
+      `;
+      document.body.appendChild(modal);
 
-          <!-- Map Viewport with Hotspots -->
-          <div class="hotspot-map-viewport" style="position: relative; width: 100%; min-height: 520px; background: #1e293b; border-radius: 8px; overflow: hidden; border: 1px solid #334155; margin-bottom: 16px; display: flex; justify-content: center; align-items: center; padding: 14px 10px;">
-            <div class="hotspot-map-stage" style="position: relative; display: inline-block; max-height: 520px; line-height: 0;">
-              <img src="${getAssetUrl(mapBlock.image)}" alt="${mapBlock.title}" style="max-height: 520px; max-width: 100%; width: auto; height: auto; display: block; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); filter: contrast(1.05) brightness(0.95); pointer-events: none; user-select: none;" />
-              
-              <!-- Hotspot Pins -->
-              ${(mapBlock.hotspots || [])
-          .map((spot, sIdx) => {
-            const isFirst = sIdx === 0;
-            const isLeftAligned = (spot.x || 0) > 75 || spot.align === 'left';
-            return `
-                <div class="map-hotspot-pin ${isFirst ? 'active-pin' : ''} ${isLeftAligned ? 'pin-align-left' : ''}" id="${mapId}-pin-${spot.id}" data-spot-id="${spot.id}" style="left: ${spot.x}%; top: ${spot.y}%;" title="${spot.title}">
-                  <div class="pin-pulse" style="background: ${spot.color || '#b91c1c'};"></div>
-                  <div class="pin-marker" style="background: ${spot.color || '#b91c1c'};"></div>
-                  <div class="pin-label">
-                    ${spot.label || spot.title.split(':')[0]}
+      const closeModal = () => {
+        document.removeEventListener('keydown', onEsc);
+        document.body.style.overflow = prevOverflow;
+        modal.remove();
+      };
+      const onEsc = (e) => {
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          closeModal();
+        }
+      };
+      document.addEventListener('keydown', onEsc);
+      modal.querySelector('.sc-lightbox-close-btn')?.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      bindSlideCompareInstance(modal, { ...scMeta, allowEnlarge: false });
+      const lbStage = modal.querySelector('.slide-compare-stage');
+      if (lbStage) {
+        try {
+          lbStage.focus({ preventScroll: true });
+        } catch (_) {
+          lbStage.focus();
+        }
+      }
+    };
+
+    const renderSlideCompareHTML = (scBlock, sIndex) => {
+      if (!scBlock || typeof scBlock !== 'object') return '';
+      const beforeObj = scBlock.before || {};
+      const afterObj = scBlock.after || {};
+      const rawBefore = beforeObj.image || beforeObj.src || scBlock.before_image || '';
+      const rawAfter = afterObj.image || afterObj.src || scBlock.after_image || '';
+      if (!rawBefore || !rawAfter) return '';
+
+      const beforeUrl = getAssetUrl(rawBefore);
+      const afterUrl = getAssetUrl(rawAfter);
+      const beforeLabel = beforeObj.label || scBlock.before_label || 'Before';
+      const afterLabel = afterObj.label || scBlock.after_label || 'After';
+      const scTitle = scBlock.title || `${beforeLabel} \u2194 ${afterLabel}`;
+      const scCaption = scBlock.caption || '';
+      const scId = `slide-compare-${String((lesson && lesson.id) || 'lesson').replace(/[^a-zA-Z0-9_-]/g, '-')}-${sIndex}`;
+
+      window.postRenderHooks.push(() => {
+        const el = document.getElementById(scId);
+        if (el) {
+          bindSlideCompareInstance(el, {
+            title: scTitle,
+            beforeUrl,
+            afterUrl,
+            beforeLabel,
+            afterLabel,
+            caption: scCaption,
+            allowEnlarge: true,
+          });
+        }
+      });
+
+      return `
+        <div class="slide-compare-card" id="${scId}">
+          <div class="slide-compare-header">
+            <div class="slide-compare-title-group">
+              <span class="slide-compare-eyebrow">
+                <i class="fa-solid fa-arrows-left-right"></i> Slide-Across Map Comparison
+              </span>
+              <h3 class="slide-compare-title">${escHtmlSafe(scTitle)}</h3>
+            </div>
+            <button type="button" class="hotspot-whiteboard-btn slide-compare-enlarge-btn no-print" title="Enlarge Slide-Across Comparison for Whiteboard">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              <span>Enlarge</span>
+            </button>
+          </div>
+          <div class="slide-compare-viewport">
+            <div class="slide-compare-stage" tabindex="0" role="slider" aria-label="${escAttrSafe(scTitle)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" title="Drag handle left/right or press ArrowLeft / ArrowRight">
+              <img src="${afterUrl}" alt="${escAttrSafe(afterLabel)}" class="archival-image slide-compare-img slide-compare-after-img" draggable="false" />
+              <img src="${beforeUrl}" alt="${escAttrSafe(beforeLabel)}" class="archival-image slide-compare-img slide-compare-before-img" draggable="false" style="clip-path: inset(0 50% 0 0); -webkit-clip-path: inset(0 50% 0 0);" />
+              <div class="slide-compare-divider no-print" style="left: 50%;">
+                <div class="slide-compare-handle">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-compare-controls-bar">
+            <span class="slide-compare-side-label is-before"><i class="fa-solid fa-arrow-left"></i> ${escHtmlSafe(beforeLabel)}</span>
+            <input type="range" min="0" max="100" value="50" step="1" class="slide-compare-range no-print" aria-label="Slide curtain between ${escAttrSafe(beforeLabel)} and ${escAttrSafe(afterLabel)}" />
+            <span class="slide-compare-side-label is-after">${escHtmlSafe(afterLabel)} <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+          ${scCaption ? `<p class="slide-compare-caption">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(scCaption)) : escHtmlSafe(scCaption)}</p>` : ''}
+        </div>
+      `;
+    };
+
+    const renderStopTheClockHingeHTML = (ps, afterStageNum) => {
+      if (!ps || typeof ps !== 'object') return '';
+      const timerSecs = Number(ps.timer_seconds) || 90;
+      const altSecs = timerSecs === 60 ? 90 : 60;
+      const firstSecs = Math.min(timerSecs, altSecs);
+      const secondSecs = Math.max(timerSecs, altSecs);
+      const promptText = ps.prompt || '';
+      const ds = ps.dilemma_scale && typeof ps.dilemma_scale === 'object' ? ps.dilemma_scale : null;
+      const starters = Array.isArray(ps.starters) ? ps.starters.filter(Boolean).slice(0, 2) : [];
+      const connectives = Array.isArray(ps.connectives) ? ps.connectives.filter(Boolean) : [];
+
+      return `
+        <details class="oral-hinge-strip stop-the-clock-hinge no-print" id="oral-hinge-${String((lesson && lesson.id) || 'current').replace(/[^a-zA-Z0-9_-]/g, '-')}-s${afterStageNum}" data-after-stage="${afterStageNum}">
+          <summary class="oral-hinge-summary">
+            <div class="oral-hinge-summary-main">
+              <span class="oral-hinge-badge">\uD83D\uDCAC Stop-the-Clock &middot; Turn &amp; Talk</span>
+              <span class="oral-hinge-duration-chip">${timerSecs}s</span>
+              <span class="oral-hinge-prompt">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(promptText)) : escHtmlSafe(promptText)}</span>
+            </div>
+            <span class="oral-hinge-toggle">
+              <span class="hinge-lbl-closed">Open Debate Scale</span>
+              <span class="hinge-lbl-open">Collapse</span>
+              <span class="hinge-caret">&#9662;</span>
+            </span>
+          </summary>
+          <div class="oral-hinge-body">
+            <div class="oral-hinge-toolbar">
+              <div class="oral-hinge-expanded-prompt">
+                ${typeof formatBold === 'function' ? formatBold(escHtmlSafe(promptText)) : escHtmlSafe(promptText)}
+              </div>
+              <div class="oral-hinge-timers">
+                <button type="button" class="oral-hinge-timer-btn ${timerSecs === firstSecs ? 'is-primary' : ''}" data-action="start-tps-timer" data-seconds="${firstSecs}">
+                  <i class="fa-regular fa-clock"></i> ${firstSecs}s
+                </button>
+                <button type="button" class="oral-hinge-timer-btn ${timerSecs === secondSecs ? 'is-primary' : ''}" data-action="start-tps-timer" data-seconds="${secondSecs}">
+                  <i class="fa-regular fa-clock"></i> ${secondSecs}s
+                </button>
+              </div>
+            </div>
+            ${
+              ds && ds.side_a && ds.side_b
+                ? `
+              <div class="oral-hinge-scale">
+                ${ds.title ? `<div class="oral-hinge-scale-title"><i class="fa-solid fa-scale-balanced"></i> <span>${escHtmlSafe(ds.title)}</span></div>` : ''}
+                <div class="oral-hinge-scale-grid">
+                  <div class="oral-hinge-side side-a">
+                    <div class="oral-hinge-side-hdr">
+                      <strong class="oral-hinge-actor">${escHtmlSafe(ds.side_a.actor || '')}</strong>
+                      ${ds.side_a.tag ? `<span class="oral-hinge-tag">${escHtmlSafe(ds.side_a.tag)}</span>` : ''}
+                    </div>
+                    ${
+                      Array.isArray(ds.side_a.points) && ds.side_a.points.length > 0
+                        ? `<ul class="oral-hinge-points">${ds.side_a.points.map((pt) => `<li>${typeof formatBold === 'function' ? formatBold(escHtmlSafe(pt)) : escHtmlSafe(pt)}</li>`).join('')}</ul>`
+                        : ''
+                    }
+                  </div>
+                  <div class="oral-hinge-side side-b">
+                    <div class="oral-hinge-side-hdr">
+                      <strong class="oral-hinge-actor">${escHtmlSafe(ds.side_b.actor || '')}</strong>
+                      ${ds.side_b.tag ? `<span class="oral-hinge-tag">${escHtmlSafe(ds.side_b.tag)}</span>` : ''}
+                    </div>
+                    ${
+                      Array.isArray(ds.side_b.points) && ds.side_b.points.length > 0
+                        ? `<ul class="oral-hinge-points">${ds.side_b.points.map((pt) => `<li>${typeof formatBold === 'function' ? formatBold(escHtmlSafe(pt)) : escHtmlSafe(pt)}</li>`).join('')}</ul>`
+                        : ''
+                    }
                   </div>
                 </div>
+                ${ds.pivot ? `<div class="oral-hinge-pivot"><strong>Pivot:</strong> ${typeof formatBold === 'function' ? formatBold(escHtmlSafe(ds.pivot)) : escHtmlSafe(ds.pivot)}</div>` : ''}
+              </div>
+            `
+                : ''
+            }
+            ${
+              starters.length > 0 || connectives.length > 0
+                ? `
+              <div class="oral-hinge-scaffolds">
+                ${
+                  starters.length > 0
+                    ? `
+                  <div class="oral-hinge-starters">
+                    <div class="oral-hinge-subhdr">Oral Sentence Stems</div>
+                    <ul>
+                      ${starters.map((st) => `<li>&ldquo;${typeof formatBold === 'function' ? formatBold(escHtmlSafe(st)) : escHtmlSafe(st)}&rdquo;</li>`).join('')}
+                    </ul>
+                  </div>
+                `
+                    : ''
+                }
+                ${
+                  connectives.length > 0
+                    ? `
+                  <div class="oral-hinge-connectives">
+                    <div class="oral-hinge-subhdr">Causal Connectives</div>
+                    <div class="oral-hinge-chips">
+                      ${connectives.map((c) => `<span class="oral-hinge-chip">${escHtmlSafe(c)}</span>`).join('')}
+                    </div>
+                  </div>
+                `
+                    : ''
+                }
+              </div>
+            `
+                : ''
+            }
+          </div>
+        </details>
+      `;
+    };
+
+    const renderInteractiveHotspotMapHTML = (mapBlock, mIndex, opts = {}) => {
+      const isStageHook = Boolean(opts && opts.isStageHook);
+      const escMapAttr = (v) =>
+        String(v || '')
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      const mapId = String(
+        mapBlock.id || `hotspot-map-${mIndex}${isStageHook ? '-hook' : ''}`,
+      ).replace(/[^a-zA-Z0-9_-]/g, '-');
+      const mapImgSrc = getAssetUrl(mapBlock.image || mapBlock.src || mapBlock.image_url || '');
+      const hotspots = (Array.isArray(mapBlock.hotspots) ? mapBlock.hotspots : []).map(
+        (s, sIdx) => ({
+          ...s,
+          id: String(s.id || `spot-${sIdx + 1}`),
+          num: sIdx + 1,
+          x: Number.isFinite(Number(s.x)) ? Number(s.x) : 50,
+          y: Number.isFinite(Number(s.y)) ? Number(s.y) : 50,
+          color: s.color || '#0284c7',
+          label:
+            s.label ||
+            (s.title ? String(s.title).split(':')[0].trim() : `Location ${sIdx + 1}`),
+          badge: s.badge || 'Historical Flashpoint',
+          date: s.date || '',
+          title: s.title || s.label || `Location ${sIdx + 1}`,
+          details: s.details || s.description || s.summary || '',
+          hinge: s.hinge || s.hinge_question || s.question || '',
+          align: s.align || '',
+        }),
+      );
+      const initialSpot = hotspots[0] || null;
+      const viewportMaxH = isStageHook ? '360px' : '520px';
+      const viewportMinH = isStageHook ? '200px' : '320px';
+      const stageImgMaxH = isStageHook ? '340px' : '492px';
+
+      const renderInlineIntelHtml = (spot) => {
+        if (!spot) return '';
+        const cleanHinge = spot.hinge
+          ? String(spot.hinge)
+              .replace(
+                /^(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\s*/i,
+                '',
+              )
+              .trim()
+          : '';
+        return `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 6px; margin-bottom: ${isStageHook ? '6px' : '8px'};">
+            <div style="min-width: 0; flex: 1;">
+              <div style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                <span style="background: ${spot.color}; color: #ffffff; font-size: 0.66rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px;">Pin ${spot.num} &middot; ${spot.badge}</span>
+                ${spot.date ? `<span style="font-size: 0.76rem; font-weight: 800; color: #fbbf24;">${spot.date}</span>` : ''}
+              </div>
+              <h4 style="margin: 4px 0 0 0; font-size: ${isStageHook ? '1.02rem' : '1.15rem'}; color: #ffffff; font-family: 'Playfair Display', Georgia, serif; line-height: 1.3;">${spot.title}</h4>
+            </div>
+          </div>
+          <p style="margin: 0 ${cleanHinge ? '0 8px 0' : '0'}; font-size: ${isStageHook ? '0.88rem' : '0.95rem'}; line-height: ${isStageHook ? '1.52' : '1.6'}; color: #cbd5e1;">${spot.details}</p>
+          ${cleanHinge ? `<div style="background: rgba(245, 158, 11, 0.14); border-left: 3px solid #f59e0b; padding: ${isStageHook ? '6px 10px' : '8px 12px'}; border-radius: 4px; font-size: ${isStageHook ? '0.82rem' : '0.88rem'}; color: #fde68a; line-height: 1.45;"><strong style="color: #fbbf24; font-style: normal; font-family: 'Inter', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 5px;">Hinge Question:</strong><span style="font-style: italic;">${cleanHinge}</span></div>` : ''}
+        `;
+      };
+
+      let mapHtml = `
+        <div class="interactive-hotspot-map-container${isStageHook ? ' stage-hook-map-card' : ''}" id="${mapId}-wrapper" style="margin: ${isStageHook ? '0' : '32px 0'}; background: #0f172a; border: 1.5px solid #334155; border-radius: ${isStageHook ? '10px' : '12px'}; padding: ${isStageHook ? '14px 16px' : '22px'}; color: #f8fafc; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.35);">
+          <div class="hotspot-map-header" style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: ${isStageHook ? '10px' : '12px'}; margin-bottom: ${isStageHook ? '12px' : '16px'}; flex-wrap: wrap; gap: 10px;">
+            <div style="flex: 1 1 220px; min-width: 0;">
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: rgba(14, 165, 233, 0.2); border: 1px solid #0ea5e9; color: #38bdf8; padding: 2px 9px; border-radius: 4px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">
+                <i class="fa-solid fa-map-location-dot"></i> ${isStageHook ? 'Interactive Hook Map' : 'Interactive Primary Map'}
+              </span>
+              <h3 style="margin: 5px 0 0 0; font-size: ${isStageHook ? '1.12rem' : '1.35rem'}; font-family: 'Playfair Display', Georgia, serif; color: #ffffff; line-height: 1.28;">${mapBlock.title || 'Historical Map'}</h3>
+              ${mapBlock.subtitle ? `<div style="font-size: ${isStageHook ? '0.77rem' : '0.85rem'}; color: #94a3b8; margin-top: 3px; line-height: 1.35;">${mapBlock.subtitle}</div>` : ''}
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0; flex-wrap: wrap;">
+              ${mapBlock.shelfmark ? `<span style="font-family: monospace; font-size: 0.68rem; color: #94a3b8; background: rgba(255,255,255,0.06); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">${mapBlock.shelfmark}</span>` : ''}
+              <button type="button" class="hotspot-whiteboard-btn no-print" id="${mapId}-whiteboard-btn" title="Open Fullscreen Classroom Whiteboard Mode">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                <span>Enlarge Whiteboard Map</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Map Viewport with Numbered Hotspots -->
+          <div class="hotspot-map-viewport" id="${mapId}-viewport" title="Tap a numbered pin or click map to open Classroom Whiteboard Mode" style="position: relative; width: 100%; min-height: ${viewportMinH}; max-height: ${viewportMaxH}; background: #1e293b; border-radius: 8px; overflow: hidden; border: 1px solid #334155; margin-bottom: ${isStageHook ? '12px' : '16px'}; display: flex; justify-content: center; align-items: center; padding: ${isStageHook ? '10px 8px' : '14px 10px'}; cursor: zoom-in; box-sizing: border-box;">
+            <div class="hotspot-map-stage" style="position: relative; display: inline-block; max-width: 100%; max-height: ${stageImgMaxH}; line-height: 0; cursor: zoom-in;">
+              <img src="${mapImgSrc}" alt="${escMapAttr(mapBlock.title || 'Historical Map')}" class="archival-image hotspot-stage-img" style="max-height: ${stageImgMaxH}; max-width: 100%; width: auto; height: auto; object-fit: contain; display: block; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); user-select: none; -webkit-user-drag: none;" />
+              ${hotspots
+                .map((spot, sIdx) => {
+                  const isFirst = sIdx === 0;
+                  const isLeftAligned = spot.x > 66 || spot.align === 'left';
+                  return `
+                <button type="button" class="map-hotspot-pin numbered-hotspot-pin ${isFirst ? 'active-pin' : ''} ${isLeftAligned ? 'pin-align-left' : ''}" id="${mapId}-pin-${spot.id}" data-spot-id="${escMapAttr(spot.id)}" data-spot-num="${spot.num}" aria-label="Pin ${spot.num}: ${escMapAttr(spot.label)}" style="left: ${spot.x}%; top: ${spot.y}%;" title="${escMapAttr(spot.title)}">
+                  <span class="pin-pulse" style="background: ${spot.color};"></span>
+                  <span class="pin-marker" style="background: ${spot.color};">${spot.num}</span>
+                  <span class="pin-label">${spot.label}</span>
+                </button>
                 `;
-          })
-          .join('')}
+                })
+                .join('')}
             </div>
           </div>
 
           <!-- Hotspot Dispatch Banner -->
-          <div id="${mapId}-intel-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${initialSpot ? initialSpot.color || '#38bdf8' : '#38bdf8'}; border-radius: 8px; padding: 16px 20px;">
-            ${initialSpot
-          ? `
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                <div>
-                  <span style="background: ${initialSpot.color || '#0284c7'}; color: #ffffff; font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px;">${initialSpot.badge || 'Archival Incident'}</span>
-                  <h4 style="margin: 4px 0 0 0; font-size: 1.15rem; color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">${initialSpot.title}</h4>
-                </div>
-                <span style="font-size: 0.8rem; font-weight: 700; color: #f59e0b;">${initialSpot.date || ''}</span>
-              </div>
-              <p style="margin: 0 0 10px 0; font-size: 0.95rem; line-height: 1.6; color: #cbd5e1;">${initialSpot.details}</p>
-              ${initialSpot.hinge ? `<div style="background: rgba(245, 158, 11, 0.12); border-left: 3px solid #f59e0b; padding: 8px 12px; border-radius: 4px; font-size: 0.88rem; color: #fde68a; font-style: italic;">${initialSpot.hinge.replace(/^(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\s*/i, 'Discussion Prompt: ')}</div>` : ''}
-            `
-          : ''
-        }
+          <div id="${mapId}-intel-card" class="hotspot-intel-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${initialSpot ? initialSpot.color : '#38bdf8'}; border-radius: 8px; padding: ${isStageHook ? '12px 14px' : '16px 20px'};">
+            ${renderInlineIntelHtml(initialSpot)}
           </div>
 
           <!-- Hotspot Buttons Row -->
-          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; justify-content: center;">
-            ${(mapBlock.hotspots || [])
-          .map((spot, sIdx) => {
-            const isFirst = sIdx === 0;
-            return `
-              <button type="button" class="btn btn-sm ${mapId}-nav-btn" data-spot-id="${spot.id}" style="background: ${isFirst ? spot.color || '#0284c7' : 'rgba(255,255,255,0.08)'}; color: #ffffff; border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 12px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">
-                <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background: ${spot.color || '#0284c7'}; color: #fff; text-align: center; line-height: 16px; font-size: 0.62rem; margin-right: 5px;">${sIdx + 1}</span>
-                ${spot.label || spot.title.split(':')[0]}
+          <div class="hotspot-nav-pills-row no-print" style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: ${isStageHook ? '10px' : '14px'}; justify-content: center;">
+            ${hotspots
+              .map((spot, sIdx) => {
+                const isFirst = sIdx === 0;
+                return `
+              <button type="button" class="btn btn-sm ${mapId}-nav-btn hotspot-location-pill" data-spot-id="${escMapAttr(spot.id)}" style="background: ${isFirst ? spot.color : 'rgba(255,255,255,0.08)'}; color: #ffffff; border: 1px solid ${isFirst ? '#ffffff' : 'rgba(255,255,255,0.18)'}; border-radius: 20px; padding: ${isStageHook ? '3px 10px' : '4px 12px'}; font-size: ${isStageHook ? '0.71rem' : '0.74rem'}; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;">
+                <span style="display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: ${spot.color}; color: #fff; font-size: 0.64rem; font-weight: 900; border: 1px solid rgba(255,255,255,0.75); flex-shrink: 0;">${spot.num}</span>
+                <span>${spot.label}</span>
               </button>
               `;
-          })
-          .join('')}
+              })
+              .join('')}
           </div>
         </div>
       `;
@@ -6922,42 +7883,74 @@ export function renderLesson(lesson) {
         const pins = container.querySelectorAll('.map-hotspot-pin');
         const navBtns = container.querySelectorAll(`.${mapId}-nav-btn`);
         const card = document.getElementById(`${mapId}-intel-card`);
+        const wbBtn = document.getElementById(`${mapId}-whiteboard-btn`);
+        const viewportEl = document.getElementById(`${mapId}-viewport`);
+
         const spotMap = {};
-        (mapBlock.hotspots || []).forEach((s) => {
+        hotspots.forEach((s) => {
           spotMap[s.id] = s;
         });
+
+        let activeSpotId = initialSpot ? initialSpot.id : null;
+        const exploredIds = new Set(activeSpotId ? [activeSpotId] : []);
 
         function selectSpot(spotId) {
           const spot = spotMap[spotId];
           if (!spot || !card) return;
+          activeSpotId = spotId;
+          exploredIds.add(spotId);
 
           pins.forEach((p) => p.classList.toggle('active-pin', p.dataset.spotId === spotId));
           navBtns.forEach((b) => {
             const active = b.dataset.spotId === spotId;
-            b.style.background = active ? spot.color || '#0284c7' : 'rgba(255,255,255,0.08)';
-            b.style.borderColor = active ? '#ffffff' : 'rgba(255,255,255,0.15)';
+            const bSpot = spotMap[b.dataset.spotId];
+            b.style.background = active
+              ? (bSpot ? bSpot.color : spot.color)
+              : 'rgba(255,255,255,0.08)';
+            b.style.borderColor = active ? '#ffffff' : 'rgba(255,255,255,0.18)';
           });
 
           card.style.borderLeftColor = spot.color || '#38bdf8';
-          card.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-              <div>
-                <span style="background: ${spot.color || '#0284c7'}; color: #ffffff; font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px;">${spot.badge || 'Archival Incident'}</span>
-                <h4 style="margin: 4px 0 0 0; font-size: 1.15rem; color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">${spot.title}</h4>
-              </div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: #f59e0b;">${spot.date || ''}</span>
-            </div>
-            <p style="margin: 0 0 10px 0; font-size: 0.95rem; line-height: 1.6; color: #cbd5e1;">${spot.details}</p>
-            ${spot.hinge ? `<div style="background: rgba(245, 158, 11, 0.12); border-left: 3px solid #f59e0b; padding: 8px 12px; border-radius: 4px; font-size: 0.88rem; color: #fde68a; font-style: italic;">${spot.hinge.replace(/^(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\s*/i, 'Discussion Prompt: ')}</div>` : ''}
-          `;
+          card.innerHTML = renderInlineIntelHtml(spot);
         }
 
+        const launchWhiteboard = () => {
+          openHotspotWhiteboardModal(
+            {
+              ...mapBlock,
+              id: mapId,
+              imageUrl: mapImgSrc,
+              hotspots,
+            },
+            {
+              getActiveSpotId: () => activeSpotId,
+              getExploredIds: () => exploredIds,
+              onSelectSpot: (spotId) => selectSpot(spotId),
+            },
+          );
+        };
+
         pins.forEach((p) => {
-          p.addEventListener('click', () => selectSpot(p.dataset.spotId));
+          p.addEventListener('click', (e) => {
+            e.stopPropagation();
+            selectSpot(p.dataset.spotId);
+          });
         });
         navBtns.forEach((b) => {
           b.addEventListener('click', () => selectSpot(b.dataset.spotId));
         });
+        if (wbBtn) {
+          wbBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            launchWhiteboard();
+          });
+        }
+        if (viewportEl) {
+          viewportEl.addEventListener('click', (e) => {
+            if (e.target.closest('.map-hotspot-pin')) return;
+            launchWhiteboard();
+          });
+        }
       });
 
       return mapHtml;
@@ -7079,6 +8072,21 @@ export function renderLesson(lesson) {
         `;
       }
       return sliderHtml;
+    };
+
+    const renderedSourceKeys = new Set();
+    let sequentialSourceCounter = 0;
+    const getSourceMatchKeys = (src) => {
+      if (!src) return [];
+      const keys = [];
+      if (src.id) keys.push(`id:${String(src.id).trim().toLowerCase()}`);
+      if (src.letter) keys.push(`letter:${String(src.letter).trim().toUpperCase()}`);
+      const tMatch = String(src.title || '').match(/(?:Source|Map|Diagram)\s+([A-Z0-9]+)/i);
+      if (tMatch) keys.push(`letter:${tMatch[1].toUpperCase()}`);
+      const imgKey = src.image || src.src || src.source;
+      if (imgKey) keys.push(`img:${String(imgKey).split('/').pop().toLowerCase()}`);
+      if (src.title) keys.push(`title:${String(src.title).trim().toLowerCase()}`);
+      return keys;
     };
 
     lesson.narrative_blocks.forEach((block, index) => {
@@ -7234,8 +8242,13 @@ export function renderLesson(lesson) {
       const bg = index % 2 === 0 ? '#ffffff' : '#f0f9ff';
 
       const rawKiText = block.text || block.content || '';
-      if (typeof rawKiText === 'string' && rawKiText.match(/^\[Key Individual:\s*(.+)\]$/i)) {
-        const kiMatch = rawKiText.match(/^\[Key Individual:\s*(.+)\]$/i);
+      if (
+        typeof rawKiText === 'string' &&
+        rawKiText.match(/^\[Key (?:Individual|Organisation|Organization):\s*(.+)\]$/i)
+      ) {
+        const kiMatch = rawKiText.match(
+          /^\[Key (?:Individual|Organisation|Organization):\s*(.+)\]$/i,
+        );
         const personName = kiMatch[1].trim();
         let person = null;
         if (window.db && window.currentUnitId) {
@@ -7445,26 +8458,55 @@ export function renderLesson(lesson) {
       const blockText = block.text || block.content || '';
       const isQuote = typeof blockText === 'string' && blockText.startsWith('"');
 
-      // 1. Add inline Key Individual links FIRST
-      let contentStr = blockText.replace(/\[Key Individual:\s*([^\]]+)\]/gi, (match, name) => {
-        const hasPerson =
-          appStore.state.activeUnitData &&
-          appStore.state.activeUnitData.key_individuals &&
-          appStore.state.activeUnitData.key_individuals.some(
-            (p) => p.name && p.name.toLowerCase() === name.toLowerCase(),
-          );
-        if (!hasPerson) {
-          return name;
-        }
-        return `<a href="javascript:void(0)" class="key-individual-inline-link no-print" data-action="jump-to-key-individual" data-name="${name}" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 4px; color: #2563eb; text-decoration: none; font-weight: 600; cursor: pointer; padding: 2px 6px; font-size: 0.95em; font-family: inherit; display: inline-flex; align-items: center; gap: 4px; vertical-align: baseline;"><i class="fa-solid fa-id-card-clip"></i> ${name}</a><span class="print-only" style="display:none; font-weight:bold;">${name}</span>`;
-      });
+      // 1. Add inline Key Individual & Key Organisation links FIRST
+      const resolveInlineAgent = (rawName) => {
+        const needle = String(rawName || '').trim().toLowerCase();
+        const list =
+          (appStore.state.activeUnitData && appStore.state.activeUnitData.key_individuals) ||
+          (typeof window !== 'undefined' &&
+            window.currentUnitData &&
+            window.currentUnitData.key_individuals);
+        if (!Array.isArray(list)) return null;
+        return list.find((p) => {
+          if (p?.name && p.name.toLowerCase() === needle) return true;
+          if (Array.isArray(p?.aliases) && p.aliases.some((a) => String(a).toLowerCase() === needle))
+            return true;
+          return Boolean(p?.name && p.name.toLowerCase().includes(needle));
+        });
+      };
+      const renderInlineAgentChip = (label, agentObj) => {
+        const isOrg = String(agentObj?.entity_type || agentObj?.type || '')
+          .toLowerCase()
+          .startsWith('org');
+        const chipBg = isOrg ? 'rgba(15, 118, 110, 0.1)' : 'rgba(59, 130, 246, 0.1)';
+        const chipBorder = isOrg ? 'rgba(15, 118, 110, 0.32)' : 'rgba(59, 130, 246, 0.3)';
+        const chipColor = isOrg ? '#0f766e' : '#2563eb';
+        const chipIcon = isOrg ? 'fa-landmark' : 'fa-id-card-clip';
+        const targetName = (agentObj?.name || label).replace(/"/g, '&quot;');
+        return `<a href="javascript:void(0)" class="key-individual-inline-link no-print" data-action="jump-to-key-individual" data-name="${targetName}" onclick="event.preventDefault(); event.stopPropagation(); if(window.jumpToKeyIndividual){window.jumpToKeyIndividual(this.dataset.name);}" style="background: ${chipBg}; border: 1px solid ${chipBorder}; border-radius: 4px; color: ${chipColor}; text-decoration: none; font-weight: 600; cursor: pointer; padding: 2px 6px; font-size: 0.95em; font-family: inherit; display: inline-flex; align-items: center; gap: 4px; vertical-align: baseline;"><i class="fa-solid ${chipIcon}"></i> ${label}</a><span class="print-only" style="display:none; font-weight:bold;">${label}</span>`;
+      };
 
-      // 2. Add Glossary highlighting SECOND (it will skip the <a> tags we just made)
+      const kiPlaceholders = [];
+      let contentStr = blockText.replace(
+        /\[Key (?:Individual|Organisation|Organization):\s*([^\]]+)\]/gi,
+        (match, name) => {
+          const found = resolveInlineAgent(name);
+          if (!found) return name;
+          const token = `@@KICHIP_${kiPlaceholders.length}@@`;
+          kiPlaceholders.push(renderInlineAgentChip(name, found));
+          return token;
+        },
+      );
+
+      // 2. Add Glossary highlighting SECOND (tokens protect chip HTML attributes from glossary spans)
       contentStr = isQuote
         ? `<em style="font-size:1.1rem; color:#475569;">${contentStr}</em>`
         : highlightGlossary(contentStr);
 
       contentStr = formatBold(contentStr);
+      kiPlaceholders.forEach((chipHtml, idx) => {
+        contentStr = contentStr.replace(`@@KICHIP_${idx}@@`, () => chipHtml);
+      });
       contentStr = contentStr.replace(
         /src=["'](\.\/)?assets\//g,
         'src="/units/' + window.currentUnitId + '/assets/',
@@ -7524,20 +8566,16 @@ export function renderLesson(lesson) {
 
       let l4StyledContent = '';
       if (block.level_4) {
-        // 1. Add inline Key Individual links FIRST
+        // 1. Add inline Key Individual & Key Organisation links FIRST via protected tokens
+        const l4KiPlaceholders = [];
         let l4ContentStr = block.level_4.replace(
-          /\[Key Individual:\s*([^\]]+)\]/gi,
+          /\[Key (?:Individual|Organisation|Organization):\s*([^\]]+)\]/gi,
           (match, name) => {
-            const hasPerson =
-              appStore.state.activeUnitData &&
-              appStore.state.activeUnitData.key_individuals &&
-              appStore.state.activeUnitData.key_individuals.some(
-                (p) => p.name && p.name.toLowerCase() === name.toLowerCase(),
-              );
-            if (!hasPerson) {
-              return name;
-            }
-            return `<a href="javascript:void(0)" class="key-individual-inline-link no-print" data-action="jump-to-key-individual" data-name="${name}" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 4px; color: #2563eb; text-decoration: none; font-weight: 600; cursor: pointer; padding: 2px 6px; font-size: 0.95em; font-family: inherit; display: inline-flex; align-items: center; gap: 4px; vertical-align: baseline;"><i class="fa-solid fa-id-card-clip"></i> ${name}</a><span class="print-only" style="display:none; font-weight:bold;">${name}</span>`;
+            const found = resolveInlineAgent(name);
+            if (!found) return name;
+            const token = `@@L4KICHIP_${l4KiPlaceholders.length}@@`;
+            l4KiPlaceholders.push(renderInlineAgentChip(name, found));
+            return token;
           },
         );
 
@@ -7547,6 +8585,9 @@ export function renderLesson(lesson) {
           : highlightGlossary(l4ContentStr);
 
         l4ContentStr = formatBold(l4ContentStr);
+        l4KiPlaceholders.forEach((chipHtml, idx) => {
+          l4ContentStr = l4ContentStr.replace(`@@L4KICHIP_${idx}@@`, () => chipHtml);
+        });
         l4ContentStr = formatParagraphPills(l4ContentStr, decimalRef);
 
         l4StyledContent = l4ContentStr;
@@ -7786,7 +8827,10 @@ export function renderLesson(lesson) {
              </div>
            `;
       } else if (
-        block.image &&
+        typeof block.image === 'string' &&
+        block.image.trim() &&
+        block.image.trim() !== 'undefined' &&
+        block.image.trim() !== 'null' &&
         !(window.currentUnitId === 'water_and_sanitation' && block.source_letter)
       ) {
         let containerStyle = block.image_context
@@ -7841,12 +8885,17 @@ export function renderLesson(lesson) {
         const isWrittenSource =
           rawSource.type === 'written' || (!hasImage && Boolean(sourceText)) || !hasImage;
 
+        getSourceMatchKeys(rawSource).forEach((k) => renderedSourceKeys.add(k));
         const bLetterMatch = (rawSource.title || '').match(/(?:Source|Map|Diagram)\s+([A-Z0-9]+)/i);
+        const autoLetter = String.fromCharCode(65 + sequentialSourceCounter);
+        sequentialSourceCounter += 1;
         const bLetter = bLetterMatch
           ? bLetterMatch[1].toUpperCase()
           : rawSource.letter
             ? String(rawSource.letter).toUpperCase()
-            : (['A', 'B', 'C', 'D', 'E'][index] || '');
+            : autoLetter;
+        renderedSourceKeys.add(`letter:${bLetter}`);
+
         const isInteractiveSourceUnit =
           isGCSEInteractiveUnit(window.currentUnitId || unitId) || isKs3 || isKs2;
         const bCardIdAttr =
@@ -8040,55 +9089,12 @@ export function renderLesson(lesson) {
               })
               .join('');
 
-            const dynamicBadge =
-              rawSource.question_badge ||
-              rawSource.question_type ||
-              (() => {
-                if (/what can you infer|what does .* reveal|what does .* show/i.test(uPrompt))
-                  return 'Source Inference';
-                if (/why was|why did|purpose|intended|motive|propaganda/i.test(uPrompt))
-                  return 'Author’s Purpose';
-                if (/differ|support|challenge|corroborat|contrast|counter/i.test(uPrompt))
-                  return 'Cross-Referencing';
-                if (/reliable|convincing|trustworthy|provenance|weight/i.test(uPrompt))
-                  return 'Reliability & Provenance';
-                if (/how useful/i.test(uPrompt)) return 'Source Utility';
-                if (/significance|commemorat|myth/i.test(uPrompt)) return 'Historical Significance';
-                return 'Enquiry Question';
-              })();
-
-            return `
-              <details class="source-enquiry-reveal">
-                <summary style="padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; list-style: none; user-select: none; background: #f0fdf4; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
-                  <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;">
-                    <span style="font-size: 0.70rem; font-weight: 800; text-transform: uppercase; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 3px 8px; border-radius: 12px; letter-spacing: 0.5px; flex-shrink: 0;">${dynamicBadge}</span>
-                    <span class="reveal-answer-pill" style="flex-shrink: 0;">
-                      <i class="fa-solid fa-lightbulb" style="color: #16a34a;"></i>
-                      <span class="reveal-text-closed">Reveal Model Answer</span>
-                      <span class="reveal-text-open">Hide Model Answer</span>
-                      <span class="reveal-arrow">&#9660;</span>
-                    </span>
-                  </div>
-                  <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uPrompt) : uPrompt}</div>
-                </summary>
-                <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
-                  ${cleanContextVal
-                    ? `
-                    <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-                      <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
-                      <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}</div>
-                    </div>
-                  `
-                    : ''}
-                  <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #166534; letter-spacing: 0.5px; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
-                    <i class="fa-solid fa-circle-check" style="color: #16a34a;"></i> Key Takeaways &bull; Suggested Answers
-                  </div>
-                  <ul style="margin: 0; padding-left: 18px;">
-                    ${renderedBullets}
-                  </ul>
-                </div>
-              </details>
-            `;
+            return renderSourceEnquiryBox({
+              srcObj: rawSource,
+              promptText: uPrompt,
+              contextVal: cleanContextVal,
+              renderedBullets,
+            });
           } else if (
             rawSource.question ||
             rawSource.enquiry_question ||
@@ -8096,69 +9102,11 @@ export function renderLesson(lesson) {
           ) {
             const qPrompt =
               rawSource.question || rawSource.enquiry_question || rawSource.how_useful_question;
-            const dynamicBadge =
-              rawSource.question_badge ||
-              rawSource.question_type ||
-              (() => {
-                if (/what can you infer|what does .* reveal|what does .* show/i.test(qPrompt))
-                  return 'Source Inference';
-                if (/why was|why did|purpose|intended|motive|propaganda/i.test(qPrompt))
-                  return 'Author’s Purpose';
-                if (/differ|support|challenge|corroborat|contrast|counter/i.test(qPrompt))
-                  return 'Cross-Referencing';
-                if (/reliable|convincing|trustworthy|provenance|weight/i.test(qPrompt))
-                  return 'Reliability & Provenance';
-                if (/how useful/i.test(qPrompt)) return 'Source Utility';
-                if (/significance|commemorat|myth/i.test(qPrompt)) return 'Historical Significance';
-                return 'Enquiry Question';
-              })();
-
-            return `
-              <details class="source-enquiry-reveal">
-                <summary style="padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; list-style: none; user-select: none; background: #f0fdf4; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
-                  <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;">
-                    <span style="font-size: 0.70rem; font-weight: 800; text-transform: uppercase; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 3px 8px; border-radius: 12px; letter-spacing: 0.5px; flex-shrink: 0;">${dynamicBadge}</span>
-                    <span class="reveal-answer-pill" style="flex-shrink: 0;">
-                      <i class="fa-solid fa-lightbulb" style="color: #16a34a;"></i>
-                      <span class="reveal-text-closed">Reveal Model Answer</span>
-                      <span class="reveal-text-open">Hide Model Answer</span>
-                      <span class="reveal-arrow">&#9660;</span>
-                    </span>
-                  </div>
-                  <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(qPrompt) : qPrompt}</div>
-                </summary>
-                <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
-                  ${cleanContextVal
-                    ? `
-                    <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-                      <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
-                      <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}</div>
-                    </div>
-                  `
-                    : ''}
-                  ${rawSource.model_answer
-                ? `
-                    <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-                      <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Answer:</strong>
-                      <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.6;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(rawSource.model_answer) : rawSource.model_answer}</div>
-                    </div>
-                  `
-                : rawSource.discussion_ideas &&
-                  Array.isArray(rawSource.discussion_ideas) &&
-                  rawSource.discussion_ideas.length > 0
-                  ? `
-                    <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-                      <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Disciplinary Guidance:</strong>
-                      <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.55;">
-                        ${rawSource.discussion_ideas.map((d) => `<li style="margin-bottom: 6px;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(d) : d}</li>`).join('')}
-                      </ul>
-                    </div>
-                  `
-                  : ''
-              }
-                </div>
-              </details>
-            `;
+            return renderSourceEnquiryBox({
+              srcObj: rawSource,
+              promptText: qPrompt,
+              contextVal: cleanContextVal,
+            });
           }
           return '';
         })();
@@ -8170,8 +9118,141 @@ export function renderLesson(lesson) {
           rawSource.caption ||
           '';
 
+        const ppObj =
+          rawSource &&
+          rawSource.perspective_pair &&
+          typeof rawSource.perspective_pair === 'object' &&
+          rawSource.perspective_pair.side_a &&
+          rawSource.perspective_pair.side_b
+            ? rawSource.perspective_pair
+            : null;
+        const hasPerspectivePair = Boolean(ppObj);
+
         let sourceBodyHtml = '';
-        if (isWrittenSource) {
+        if (hasPerspectivePair) {
+          const cleanSideImg = (obj) => {
+            if (!obj || typeof obj !== 'object') return '';
+            const cand = obj.image || obj.src || '';
+            return typeof cand === 'string' &&
+              cand.trim() &&
+              cand.trim() !== 'undefined' &&
+              cand.trim() !== 'null'
+              ? cand.trim()
+              : '';
+          };
+          const sideARawImg = cleanSideImg(ppObj.side_a);
+          const sideBRawImg = cleanSideImg(ppObj.side_b);
+          const sideAImgUrl = sideARawImg ? getAssetUrl(sideARawImg) : '';
+          const sideBImgUrl = sideBRawImg ? getAssetUrl(sideBRawImg) : '';
+          const rawSourceImgUrl = rawImgSrc ? getAssetUrl(rawImgSrc) : '';
+          const hasDistinctSharedImg = Boolean(
+            rawSourceImgUrl &&
+              rawSourceImgUrl !== sideAImgUrl &&
+              rawSourceImgUrl !== sideBImgUrl,
+          );
+
+          const renderPerspectiveSideCard = (side, sideSlot) => {
+            if (!side || typeof side !== 'object') return '';
+            const actorBadge = side.actor_badge || side.actor || '';
+            const sideDate = side.date || '';
+            const sideTitle = side.title || '';
+            const sideText = String(side.text || side.content || '').trim();
+            const rawType = String(side.text_type || 'summary').trim().toLowerCase();
+            const isVerbatim = rawType === 'verbatim';
+            const typeLabel = isVerbatim ? 'Extract' : 'Summary of stated position';
+            const sideProv = side.provenance || side.citation || '';
+            const sRawImg = cleanSideImg(side);
+            const sImgUrl = sRawImg ? getAssetUrl(sRawImg) : '';
+            const sAlt =
+              side.image_alt || sideTitle || actorBadge || 'Historical perspective archive plate';
+
+            return `
+              <article class="perspective-pair-card perspective-${sideSlot}">
+                <div class="perspective-card-meta-row">
+                  <div class="perspective-card-meta-left">
+                    ${actorBadge ? `<span class="perspective-actor-badge">${escHtmlSafe(actorBadge)}</span>` : ''}
+                    ${sideDate ? `<span class="perspective-date-badge">${escHtmlSafe(sideDate)}</span>` : ''}
+                  </div>
+                  <span class="perspective-type-badge ${isVerbatim ? 'is-verbatim' : 'is-summary'}">${typeLabel}</span>
+                </div>
+                ${sideTitle ? `<h5 class="perspective-card-title">${escHtmlSafe(sideTitle)}</h5>` : ''}
+                ${
+                  sImgUrl
+                    ? `
+                  <div class="perspective-card-thumb-wrap">
+                    <img src="${sImgUrl}" alt="${escAttrSafe(sAlt)}" class="archival-image perspective-card-thumb" data-action="open-modal" data-src="${sImgUrl}" />
+                  </div>
+                `
+                    : ''
+                }
+                ${
+                  sideText
+                    ? `<div class="perspective-card-text ${isVerbatim ? 'is-verbatim' : 'is-summary'}">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(sideText)) : escHtmlSafe(sideText)}</div>`
+                    : ''
+                }
+                ${
+                  sideProv
+                    ? `<div class="perspective-card-provenance"><span class="perspective-prov-label">Provenance:</span> ${escHtmlSafe(sideProv)}</div>`
+                    : ''
+                }
+              </article>
+            `;
+          };
+
+          const sharedMediaHtml = hasDistinctSharedImg
+            ? `
+              <div class="perspective-shared-media">
+                <div class="perspective-shared-img-wrap">
+                  <img src="${rawSourceImgUrl}" alt="${escAttrSafe(rawSource.image_alt || sourceTitle || 'Historical Source')}" class="archival-image perspective-shared-img" data-action="open-modal" data-src="${rawSourceImgUrl}" />
+                </div>
+                ${
+                  rawSource.caption || rawSource.citation || rawSource.provenance
+                    ? `
+                  <div class="perspective-shared-caption-wrap">
+                    ${rawSource.caption ? `<div class="perspective-shared-caption">${escHtmlSafe(rawSource.caption)}</div>` : ''}
+                    ${
+                      rawSource.citation || rawSource.provenance
+                        ? `<div class="perspective-shared-provenance"><strong>Provenance:</strong> ${escHtmlSafe(rawSource.citation || rawSource.provenance)}</div>`
+                        : ''
+                    }
+                  </div>
+                `
+                    : ''
+                }
+              </div>
+            `
+            : '';
+
+          const sharedEnquiryHtml = utilityCardHtml
+            ? `<div class="archival-source-fullwidth-enquiry perspective-shared-enquiry">${utilityCardHtml}</div>`
+            : renderArchivalSourceDiscussionBox(
+                rawSource.hinge_question || rawSource.question || rawSource.source_question,
+                rawSource,
+                isKs2,
+                '10px',
+              );
+
+          sourceBodyHtml = `
+            <div class="perspective-pair-container">
+              ${sharedMediaHtml}
+              ${
+                ppObj.framing_note
+                  ? `
+                <div class="perspective-pair-framing">
+                  <span class="perspective-framing-label">Historical Framing</span>
+                  <p class="perspective-framing-text">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(ppObj.framing_note)) : escHtmlSafe(ppObj.framing_note)}</p>
+                </div>
+              `
+                  : ''
+              }
+              <div class="perspective-pair-grid">
+                ${renderPerspectiveSideCard(ppObj.side_a, 'side-a')}
+                ${renderPerspectiveSideCard(ppObj.side_b, 'side-b')}
+              </div>
+              ${sharedEnquiryHtml}
+            </div>
+          `;
+        } else if (isWrittenSource) {
           const provenanceText = rawSource.citation || rawSource.provenance || '';
           const provenanceHtml =
             !isKs2 && provenanceText
@@ -8294,11 +9375,19 @@ export function renderLesson(lesson) {
             ? rawSource.title.replace(/^(?:Source|Map|Diagram)\s+[A-Z0-9]+[:\s-]*/i, '').trim()
             : rawSource.caption || 'Archival Primary Record';
 
+          const drawerPillLabel = hasPerspectivePair
+            ? sLetter
+              ? `SOURCE ${sLetter} \u00b7 COMPETING PERSPECTIVES`
+              : 'COMPETING PERSPECTIVES'
+            : sLetter
+              ? `SOURCE ${sLetter}`
+              : 'ARCHIVAL EVIDENCE';
+
           return `
-            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer usa-source-drawer cold-war-source-drawer gcse-source-drawer archival-drawer gcse-source-container archival-source-box" ${bCardIdAttr} style="margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer usa-source-drawer cold-war-source-drawer gcse-source-drawer archival-drawer gcse-source-container archival-source-box${hasPerspectivePair ? ' has-perspective-pair' : ''}" ${bCardIdAttr} style="margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
               <summary style="padding: 6px 12px; min-height: 38px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
                 <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 12px;">
-                  <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">${sLetter ? `SOURCE ${sLetter}` : 'ARCHIVAL EVIDENCE'}</span>
+                  <span class="archival-meta-tag${hasPerspectivePair ? ' is-competing-perspectives' : ''}" style="background: #1e40af; color: #ffffff; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">${drawerPillLabel}</span>
                   <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #1e293b; font-weight: 700; line-height: 1.35;">${displayTitle}</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
@@ -8341,6 +9430,8 @@ export function renderLesson(lesson) {
           attribution: src.attribution || matched.attribution || '',
           citation: src.citation || matched.citation || '',
           source_context: src.source_context || matched.source_context || '',
+          text_type: src.text_type || matched.text_type || '',
+          perspective_pair: src.perspective_pair || matched.perspective_pair || null,
         };
       };
 
@@ -8395,34 +9486,66 @@ export function renderLesson(lesson) {
 
       let blockSourceHtml = rawSourcesList.map((s) => renderSingleArchivalSource(s)).join('');
 
+      // Ensure ALL lesson.sources are rendered (e.g. Sources D & E when blocks 0..2 rendered inline A, B, C)
+      if (
+        index === lesson.narrative_blocks.length - 1 &&
+        Array.isArray(lesson.sources) &&
+        lesson.sources.length > 0
+      ) {
+        const remainingLessonSources = lesson.sources.filter((ls) => {
+          const keys = getSourceMatchKeys(ls);
+          return keys.length > 0 && !keys.some((k) => renderedSourceKeys.has(k));
+        });
+        if (remainingLessonSources.length > 0) {
+          const extraSourcesHtml = remainingLessonSources
+            .map((s) => renderSingleArchivalSource(s))
+            .join('');
+          blockSourceHtml += `
+            <div class="further-primary-sources-section" style="margin-top: 16px; padding-top: 12px; border-top: 1.5px dashed #cbd5e1;">
+              <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #1e40af; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                <i class="fa-solid fa-folder-open"></i> Further Primary Sources (${remainingLessonSources.length})
+              </div>
+              ${extraSourcesHtml}
+            </div>
+          `;
+        }
+      }
+
       const isSourceAfter =
         window.currentUnitId === 'monarchy_religion_power' ||
         unitId === 'monarchy_religion_power' ||
         window.currentUnitId === 'first_british_empire' ||
         unitId === 'first_british_empire';
 
-      let effectiveImage = block.image;
+      let effectiveImage =
+        typeof block.image === 'string' &&
+        block.image.trim() &&
+        block.image.trim() !== 'undefined' &&
+        block.image.trim() !== 'null'
+          ? block.image.trim()
+          : '';
       let effectiveCaption = block.caption || block.image_caption || block.image_alt || '';
       let effectiveAlt = block.image_alt || 'Archival Plate';
 
-      // Smart Visual Borrowing: If block has no image, borrow from matching visual source
-      if (!effectiveImage && Array.isArray(rawSourcesList) && rawSourcesList.length > 0) {
-        const matchingVisualSource = rawSourcesList.find(
-          (s) => s && (s.type === 'visual' || s.image || s.src) && (s.image || s.src)
-        );
-        if (matchingVisualSource) {
-          effectiveImage = matchingVisualSource.image || matchingVisualSource.src;
-          const rawCap =
-            matchingVisualSource.caption ||
-            matchingVisualSource.title ||
-            matchingVisualSource.description ||
-            '';
-          effectiveCaption = rawCap.replace(/^Source\s+[A-Z]\s*(\([^)]*\))?:?\s*/i, '').trim();
-          effectiveAlt = matchingVisualSource.title || 'Archival Evidence Plate';
-        }
-      }
-
-      const hasPureVisual = Boolean(effectiveImage && !block.image_context);
+      const hasStageHookMap = Boolean(
+        block.stage_hook_map &&
+          typeof block.stage_hook_map === 'object' &&
+          (block.stage_hook_map.image || block.stage_hook_map.src || block.stage_hook_map.image_url),
+      );
+      const hasSlideCompare = Boolean(
+        block.slide_compare &&
+          typeof block.slide_compare === 'object' &&
+          ((block.slide_compare.before &&
+            (block.slide_compare.before.image || block.slide_compare.before.src)) ||
+            block.slide_compare.before_image) &&
+          ((block.slide_compare.after &&
+            (block.slide_compare.after.image || block.slide_compare.after.src)) ||
+            block.slide_compare.after_image),
+      );
+      const hasPureVisual = Boolean(
+        !hasStageHookMap && !hasSlideCompare && effectiveImage && (!block.image_context || isCme),
+      );
+      const hasSideMedia = hasPureVisual || hasStageHookMap || hasSlideCompare;
       const isReversed = hasPureVisual ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
 
       let stageQ = stageObj ? (stageObj.question || '') : '';
@@ -8463,9 +9586,9 @@ export function renderLesson(lesson) {
                 ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
               </div>
               <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
-                <button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
+                ${isKs2 ? '' : `<button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
                   <i class="fa-solid fa-chalkboard-user"></i> <span>Present Stage ${stageNum}</span>
-                </button>
+                </button>`}
                 ${renderAudioPlaybackBar('Read Aloud Paragraph')}
               </div>
             </div>
@@ -8507,37 +9630,126 @@ export function renderLesson(lesson) {
               ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
             </div>
             <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
-              <button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
+              ${isKs2 ? '' : `<button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
                 <i class="fa-solid fa-chalkboard-user"></i> <span>Present Stage ${stageNum}</span>
-              </button>
+              </button>`}
               ${renderAudioPlaybackBar('Read Aloud Paragraph')}
             </div>
           </div>
         `;
       }
 
+      const hasHookOrSlideCol = hasStageHookMap || hasSlideCompare;
       const narrativeChunkHtml = `
-              <div id="para-${index + 1}" class="narrative-chunk ${hasPureVisual ? '' : 'standalone-narrative-chunk'}" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 18px 20px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
+              <div id="para-${index + 1}" class="narrative-chunk ${hasSideMedia ? '' : 'standalone-narrative-chunk'}${hasHookOrSlideCol ? ' stage-hook-narrative-chunk' : ''}" style="display: flex; flex-direction: column; margin-bottom: ${hasSideMedia ? '0' : '15px'}; padding: 18px 20px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: ${hasHookOrSlideCol ? '1 1 46%' : '1 1 58%'}; min-width: 0;">
                 ${isHeaderUnified ? '' : headerBlockHtml}
-                <div class="narrative-text" style="width: 100%; ${hasPureVisual ? '' : 'max-width: 880px;'} line-height: ${hasPureVisual ? '1.72' : '1.75'}; color: #0f172a; font-size: 1.15rem;">${styledContent}</div>
+                <div class="narrative-text" style="width: 100%; ${hasSideMedia ? '' : 'max-width: 880px;'} line-height: ${hasSideMedia ? '1.72' : '1.75'}; color: #0f172a; font-size: 1.15rem;">${styledContent}</div>
               </div>
       `;
 
       let topNarrativeHtml = '';
-      if (hasPureVisual) {
+      if (hasStageHookMap && hasSlideCompare) {
+        const hookMapHtml = renderInteractiveHotspotMapHTML(block.stage_hook_map, index, {
+          isStageHook: true,
+        });
+        const slideCompareHtml = renderSlideCompareHTML(block.slide_compare, index);
+        const dualHookId = `dual-stage-hook-${String((lesson && lesson.id) || 'lesson').replace(/[^a-zA-Z0-9_-]/g, '-')}-${index}`;
+
+        window.postRenderHooks.push(() => {
+          const wrap = document.getElementById(dualHookId);
+          if (!wrap || wrap.dataset.modeBound === '1') return;
+          wrap.dataset.modeBound = '1';
+          const btns = wrap.querySelectorAll('[data-hook-mode-btn]');
+          const panes = wrap.querySelectorAll('[data-hook-mode-pane]');
+          btns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const targetMode = btn.getAttribute('data-hook-mode-btn');
+              btns.forEach((b) => {
+                const active = b.getAttribute('data-hook-mode-btn') === targetMode;
+                b.classList.toggle('is-active', active);
+                b.setAttribute('aria-pressed', active ? 'true' : 'false');
+              });
+              panes.forEach((p) => {
+                const show = p.getAttribute('data-hook-mode-pane') === targetMode;
+                p.classList.toggle('is-hidden', !show);
+                if (show) {
+                  p.removeAttribute('hidden');
+                } else {
+                  p.setAttribute('hidden', 'hidden');
+                }
+              });
+              if (targetMode === 'slide') {
+                const scStage = wrap.querySelector('.slide-compare-stage');
+                if (scStage) {
+                  try {
+                    scStage.focus({ preventScroll: true });
+                  } catch (_) {
+                    scStage.focus();
+                  }
+                }
+              }
+            });
+          });
+        });
+
+        topNarrativeHtml = `
+          ${isHeaderUnified ? headerBlockHtml : ''}
+          <div class="stage-hook-map-row has-dual-hook-modes">
+            ${narrativeChunkHtml}
+            <div class="stage-hook-map-col" id="${dualHookId}">
+              <div class="stage-hook-mode-bar no-print" role="group" aria-label="Stage visual mode">
+                <button type="button" class="stage-hook-mode-btn is-active" data-hook-mode-btn="pins" aria-pressed="true">Interactive pins</button>
+                <span class="stage-hook-mode-sep" aria-hidden="true">|</span>
+                <button type="button" class="stage-hook-mode-btn" data-hook-mode-btn="slide" aria-pressed="false">Slide-across</button>
+              </div>
+              <div class="stage-hook-mode-pane" data-hook-mode-pane="pins">
+                ${hookMapHtml}
+              </div>
+              <div class="stage-hook-mode-pane is-hidden" data-hook-mode-pane="slide" hidden="hidden">
+                ${slideCompareHtml}
+              </div>
+            </div>
+          </div>
+        `;
+      } else if (hasStageHookMap) {
+        const hookMapHtml = renderInteractiveHotspotMapHTML(block.stage_hook_map, index, {
+          isStageHook: true,
+        });
+        topNarrativeHtml = `
+          ${isHeaderUnified ? headerBlockHtml : ''}
+          <div class="stage-hook-map-row">
+            ${narrativeChunkHtml}
+            <div class="stage-hook-map-col">
+              ${hookMapHtml}
+            </div>
+          </div>
+        `;
+      } else if (hasSlideCompare) {
+        const slideCompareHtml = renderSlideCompareHTML(block.slide_compare, index);
+        topNarrativeHtml = `
+          ${isHeaderUnified ? headerBlockHtml : ''}
+          <div class="stage-hook-map-row slide-compare-only-row">
+            ${narrativeChunkHtml}
+            <div class="stage-hook-map-col slide-compare-col">
+              ${slideCompareHtml}
+            </div>
+          </div>
+        `;
+      } else if (hasPureVisual) {
         const rawContent = (block.content || block.text || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
         const rawWordCount = rawContent.split(/\s+/).filter(Boolean).length;
         const hasMultipleParagraphs = /<br\s*\/?>\s*<br\s*\/?>|<\/p>\s*<p>/i.test(block.content || block.text || '');
-        const isCompactNarrative = !hasMultipleParagraphs || rawWordCount < 165;
-        const plateMaxImgHeight = isCompactNarrative ? '240px' : '270px';
-        const plateFlexBasis = isCompactNarrative ? '320px' : '360px';
-        const plateMaxWidth = isCompactNarrative ? '355px' : '400px';
+        const isSvgPlate = /\.svg(?:[?#]|$)/i.test(effectiveImage);
+        const isCompactNarrative = !isSvgPlate && (!hasMultipleParagraphs || rawWordCount < 165);
+        const plateMaxImgHeight = isSvgPlate ? '360px' : isCompactNarrative ? '240px' : '270px';
+        const plateFlexBasis = isSvgPlate ? '380px' : isCompactNarrative ? '320px' : '360px';
+        const plateMaxWidth = isSvgPlate ? '420px' : isCompactNarrative ? '355px' : '400px';
         const platePadding = isCompactNarrative ? '12px 14px' : '14px 16px';
-        const plateClass = isCompactNarrative ? 'narrative-visual-plate plate-compact' : 'narrative-visual-plate plate-standard';
+        const plateClass = `${isCompactNarrative ? 'narrative-visual-plate plate-compact' : 'narrative-visual-plate plate-standard'}${isSvgPlate ? ' plate-svg-map' : ''}`;
 
         const visualPlateHtml = `
           <div class="${plateClass}" style="flex: 0 0 ${plateFlexBasis}; max-width: ${plateMaxWidth}; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: ${platePadding}; box-shadow: 0 2px 5px rgba(0,0,0,0.04); text-align: center;">
-            <img src="${getAssetUrl(effectiveImage)}" alt="${effectiveAlt}" style="max-width: 100%; max-height: ${plateMaxImgHeight}; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(effectiveImage)}">
+            <img class="archival-image" src="${getAssetUrl(effectiveImage)}" alt="${escAttrSafe(effectiveAlt)}" style="max-width: 100%; max-height: ${plateMaxImgHeight}; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(effectiveImage)}">
             ${effectiveCaption ? `<div class="narrative-plate-caption" style="font-size: 0.80rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.4; user-select: none;">${effectiveCaption}</div>` : ''}
           </div>
         `;
@@ -9534,11 +10746,30 @@ export function renderLesson(lesson) {
         }
       }
 
-      if (block.interactive_hotspot_map) {
+      if (block.interactive_hotspot_map && !block.stage_hook_map) {
         htmlNarrative += renderInteractiveHotspotMapHTML(block.interactive_hotspot_map, index);
       }
       if (block.photo_slider) {
         htmlNarrative += renderPhotoSliderHTML(block.photo_slider);
+      }
+
+      // Stop-the-Clock Oral Hinge between narrative stage N and N+1 when lesson.pair_share.after_stage is set
+      if (
+        !renderedOralHinge &&
+        lesson.pair_share &&
+        typeof lesson.pair_share === 'object' &&
+        Number.isFinite(Number(lesson.pair_share.after_stage)) &&
+        Number(lesson.pair_share.after_stage) >= 1 &&
+        lesson.narrative_blocks.length > 1
+      ) {
+        const clampedAfterStage = Math.min(
+          Math.max(1, Math.round(Number(lesson.pair_share.after_stage))),
+          lesson.narrative_blocks.length - 1,
+        );
+        if (index + 1 === clampedAfterStage) {
+          htmlNarrative += renderStopTheClockHingeHTML(lesson.pair_share, clampedAfterStage);
+          renderedOralHinge = true;
+        }
       }
     });
     htmlNarrative += '</div>';
@@ -9557,7 +10788,7 @@ export function renderLesson(lesson) {
       `;
     }
 
-    if (!isTrip && !isKs2) {
+    if (!isTrip) {
       if (lesson.tasks && lesson.tasks.length > 0) {
         const hasModels = lesson.tasks.some(
           (t) =>
@@ -9576,7 +10807,8 @@ export function renderLesson(lesson) {
 
         const isWorkbookTask =
           !lesson.exam_practice &&
-          (isKs3 ||
+          (isKs2 ||
+            isKs3 ||
             (!isGCSE &&
               lesson.tasks.some(
                 (t) =>
@@ -9585,11 +10817,17 @@ export function renderLesson(lesson) {
                   (t.question && t.question.includes('Explain why')),
               )));
 
-        const stationTitle = isKs3
-          ? 'Pupil Workbook Activities &bull; Key Stage 3'
-          : 'Pupil Workbook Activities';
+        const stationTitle = isKs2
+          ? 'Historian Writing Challenges &bull; Key Stage 2'
+          : isKs3
+            ? 'Pupil Workbook Activities &bull; Key Stage 3'
+            : 'Pupil Workbook Activities';
 
-        const wbPageNum = isKs3 ? (currentIndex < 3 ? 3 + currentIndex * 2 : 5 + currentIndex * 2) : null;
+        const wbPageNum = isKs2
+          ? 3 + currentIndex * 2
+          : isKs3
+            ? (currentIndex < 3 ? 3 + currentIndex * 2 : 5 + currentIndex * 2)
+            : null;
 
         htmlTasks += `
           ${emitWbStylesOnce()}
@@ -9601,12 +10839,12 @@ export function renderLesson(lesson) {
                 </div>
                 <div style="min-width: 0;">
                   <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 800; color: #0f172a; line-height: 1.2;">${stationTitle}</div>
-                  <div style="font-size: 0.73rem; color: #64748b; font-weight: 600;">Select any workbook task strip below to open writing space &amp; scaffolding</div>
+                  <div style="font-size: 0.73rem; color: #64748b; font-weight: 600;">${isKs2 ? 'Click any Historian Challenge below to open your writing space, clues &amp; helpful sentence starters' : 'Select any workbook task strip below to open writing space &amp; scaffolding'}</div>
                 </div>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex-shrink: 0;">
                 <span class="wb-origin-pill wb-origin-green">
-                  <i class="fa-solid fa-book-open"></i> ${lesson.tasks.length} in Workbook
+                  <i class="fa-solid fa-book-open"></i> ${isKs2 ? `${lesson.tasks.length} Writing Challenges` : `${lesson.tasks.length} in Workbook`}
                 </span>
                 ${revealBtn}
                 <button type="button" onclick="window.toggleAllWorkbookStrips && window.toggleAllWorkbookStrips(this)" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 6px; padding: 5px 10px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
@@ -9919,12 +11157,17 @@ export function renderLesson(lesson) {
             return;
           }
           if (
+            isKs2 ||
             task.type === 'extended_writing' ||
             task.type === 'narrative_account' ||
             task.type === 'narrative_account_8m' ||
             task.type === 'causation_12m' ||
             task.type === 'consequence_4m' ||
-            task.type === 'evaluative_essay_12m'
+            task.type === 'evaluative_essay_12m' ||
+            task.type === 'source_clues' ||
+            task.type === 'historical_explanation' ||
+            task.type === 'living_history' ||
+            task.type === 'big_question'
           ) {
             const hasTaskPrefix = task.topic && /^Task\s*\d+/i.test(task.topic);
             const isLocalKs2 = checkIsKs2(unitId, activeUnit);
@@ -10021,6 +11264,12 @@ export function renderLesson(lesson) {
             let peelHtml = '';
             if (hints.length > 0) {
               const isNarrative = task.type === 'narrative_account';
+              const ks2Colors = [
+                { letter: '1', label: 'Clue 1', bg: '#eff6ff', border: '#93c5fd', text: '#1e40af' },
+                { letter: '2', label: 'Clue 2', bg: '#f0fdf4', border: '#86efac', text: '#166534' },
+                { letter: '3', label: 'Clue 3', bg: '#fefce8', border: '#fde047', text: '#854d0e' },
+                { letter: '4', label: 'Clue 4', bg: '#faf5ff', border: '#d8b4fe', text: '#6b21a8' },
+              ];
               const peelColors = [
                 { letter: 'P', label: 'Point', bg: '#eff6ff', border: '#93c5fd', text: '#1e40af' },
                 {
@@ -10062,7 +11311,7 @@ export function renderLesson(lesson) {
                   text: '#166534',
                 },
               ];
-              const cfgList = isNarrative ? narrativeColors : peelColors;
+              const cfgList = isKs2 ? ks2Colors : isNarrative ? narrativeColors : peelColors;
               peelHtml = `
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px;">
                   ${hints
@@ -10241,7 +11490,9 @@ export function renderLesson(lesson) {
                 </div>`
               : '';
 
-            const ks3WritingStudioBtnHtml = `<button type="button" class="btn-open-writing-studio no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToPart){window.openLessonInfographicModalToPart(3, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openWritingStudioFromTask){window.openWritingStudioFromTask();}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: none; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 5px rgba(2, 132, 199, 0.22); transition: transform 0.15s ease;" title="Open Writing Studio and Clue Ladder for right page task"><i class="fa-solid fa-pen-nib"></i> Writing Studio &amp; Clue Ladder</button>`;
+            const ks3WritingStudioBtnHtml = isKs2
+              ? ''
+              : `<button type="button" class="btn-open-writing-studio no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToPart){window.openLessonInfographicModalToPart(3, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openWritingStudioFromTask){window.openWritingStudioFromTask();}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: none; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 5px rgba(2, 132, 199, 0.22); transition: transform 0.15s ease;" title="Open Writing Studio and Clue Ladder for right page task"><i class="fa-solid fa-pen-nib"></i> Writing Studio &amp; Clue Ladder</button>`;
 
             const customPlaceholder = isKs2
               ? 'Write your historian answer using the clues and key words above...'
@@ -10249,8 +11500,21 @@ export function renderLesson(lesson) {
                 ? 'Write your 3-paragraph narrative account following the chronological sequence (Beginning: Peterloo ➔ Middle: Swing Riots ➔ End: Tolpuddle)...'
                 : 'Compose your analytical argument here. Open Word Bank or Sentence Starters above if needed...';
 
+            const ks2FullPromptHtml =
+              isKs2 && questionPrompt
+                ? `<div class="ks2-writing-prompt-box" style="background: #f0f9ff; border: 1.5px solid #bae6fd; border-left: 4px solid #0284c7; border-radius: 8px; padding: 12px 14px; margin: 0 0 12px 0;">
+                    <div style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #0369a1; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                      <i class="fa-solid fa-compass-drafting"></i> ${taskTitle}
+                    </div>
+                    <div style="font-size: 0.96rem; color: #0f172a; font-weight: 600; line-height: 1.55;">
+                      ${formatBold ? formatBold(questionPrompt) : questionPrompt}
+                    </div>
+                  </div>`
+                : '';
+
             htmlTasks += `
               <div class="task-box extended-writing-task-card" style="margin-bottom: 4px; background: #ffffff;">
+                ${ks2FullPromptHtml}
                 ${stimulusHtml}
 
                 <div class="peel-scaffolding-drawer no-print" style="margin-bottom: 6px;">
@@ -10326,7 +11590,11 @@ export function renderLesson(lesson) {
           const minsPillHtml = minsMatch
             ? `<span class="wb-mins-pill"><i class="fa-regular fa-clock"></i> ${minsMatch[1]}m</span>`
             : '';
-          const originShort = wbPageNum ? `Workbook • p. ${wbPageNum}` : 'Workbook';
+          const originShort = isKs2
+            ? `Mission ${String(currentIndex + 1).padStart(2, '0')}${wbPageNum ? ` • p. ${wbPageNum}` : ''}`
+            : wbPageNum
+              ? `Workbook • p. ${wbPageNum}`
+              : 'Workbook';
           const stemPreview = cleanStemForStripSummary(
             task.question || task.stem || task.text || task.title || task.topic || `Workbook Activity ${tIdx + 1}`,
           );
@@ -13434,6 +14702,7 @@ export function renderLesson(lesson) {
   const htmlLaunchpad = renderLessonLaunchpad({
     lesson,
     unitId,
+    lessonIndex: currentIndex,
     videos,
     htmlVideo,
     htmlDoNowInner,
@@ -14302,6 +15571,54 @@ export function renderLesson(lesson) {
     html += renderConsolidateStationHTML(lesson);
   }
 
+  // Further Reading Cover-Card Row ('Further reading: two narratives')
+  if (Array.isArray(lesson.reading_shelf) && lesson.reading_shelf.length > 0) {
+    const escShelf = (v) =>
+      String(v || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    const escShelfAttr = (v) => escShelf(v).replace(/"/g, '&quot;');
+    const shelfCardsHtml = lesson.reading_shelf
+      .filter((item) => item && (item.title || item.cover))
+      .map((item) => {
+        const coverUrl = item.cover ? getAssetUrl(item.cover) : '';
+        return `
+          <article class="reading-shelf-item">
+            ${
+              coverUrl
+                ? `
+              <div class="reading-shelf-cover-wrap">
+                <img src="${coverUrl}" alt="${escShelfAttr(item.title || 'Book cover')}" class="archival-image reading-shelf-cover" data-action="open-modal" data-src="${coverUrl}" />
+              </div>
+            `
+                : ''
+            }
+            <div class="reading-shelf-meta">
+              ${item.title ? `<h4 class="reading-shelf-book-title">${escShelf(item.title)}</h4>` : ''}
+              ${item.author ? `<div class="reading-shelf-author">${escShelf(item.author)}</div>` : ''}
+              ${item.perspective_note ? `<p class="reading-shelf-note">${escShelf(item.perspective_note)}</p>` : ''}
+            </div>
+          </article>
+        `;
+      })
+      .join('');
+
+    if (shelfCardsHtml) {
+      html += `
+        <section class="phase-card reading-shelf-card" aria-label="Further reading: two narratives">
+          <div class="reading-shelf-header">
+            <span class="reading-shelf-eyebrow">Historiography &amp; Memoir</span>
+            <h3 class="reading-shelf-heading">Further reading: two narratives</h3>
+          </div>
+          <div class="reading-shelf-grid">
+            ${shelfCardsHtml}
+          </div>
+        </section>
+      `;
+    }
+  }
+
   // Note: Exit Ticket is now unified directly into the Consolidate Station terminal above.
 
   // Previous / Next Lesson Navigation Buttons
@@ -14350,6 +15667,8 @@ export function renderLesson(lesson) {
         }
       }
       html += `<button class="btn-pedagogy-primary" data-action="render-lesson" data-index="${currentIndex + 1}">${nextLabel} <i class="fa-solid fa-arrow-right"></i></button>`;
+    } else if (isKs2) {
+      html += `<button type="button" class="btn-pedagogy-primary btn-ks2-complete-unit" onclick="if(window.switchView){ window.switchView('quiz', '${unitId}'); }" style="background: linear-gradient(135deg, #059669 0%, #047857 100%); border-color: #10b981;"><i class="fa-solid fa-trophy" style="color: #fde047; margin-right: 6px;"></i> Complete Unit &amp; Open Quiz Challenge <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></button>`;
     } else {
       html += `<div></div>`;
     }
@@ -14382,6 +15701,10 @@ export function renderLesson(lesson) {
 
   window.vocabMatchesFound = 0;
   if (window.resetVocabSelection) window.resetVocabSelection();
+  if (typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active')) {
+    if (typeof window.syncTeacherButtons === 'function') window.syncTeacherButtons(true);
+    if (typeof window.applyTeacherModeToLessonDOM === 'function') window.applyTeacherModeToLessonDOM(true);
+  }
   setTimeout(() => {
     if (window.mermaid) {
       try {
@@ -14395,14 +15718,18 @@ export function renderLesson(lesson) {
       window.postRenderHooks = [];
     }
 
-    // Execute pending narrative block jump if set (e.g. from GCSE Do Now or URL param)
+    // Execute pending narrative block jump if set (one-shot, immediately scrubbed from URL/sessionStorage)
     try {
       let stageToJump = null;
       if (typeof window !== 'undefined') {
-        const urlParams = new URLSearchParams(window.location.search);
-        const urlStage = urlParams.get('stage');
+        const cleanUrl = new URL(window.location.href);
+        const urlStage = cleanUrl.searchParams.get('stage');
         if (urlStage) {
           stageToJump = parseInt(urlStage, 10);
+          cleanUrl.searchParams.delete('stage');
+          try {
+            window.history.replaceState(window.history.state || {}, '', cleanUrl);
+          } catch (err) {}
         }
         const pendingJump = sessionStorage.getItem('hh_pending_narrative_jump');
         if (pendingJump) {
@@ -14578,6 +15905,425 @@ export function injectArchivalAudioButtons(container = document) {
   }
 }
 
+export function openHotspotWhiteboardModal(mapBlock, bridge = {}) {
+  if (typeof document === 'undefined' || !mapBlock) return;
+  if (!document.getElementById('crummack-interactive-styles')) {
+    initCrummackInteractiveFeatures();
+  }
+
+  const escWbAttr = (v) =>
+    String(v || '')
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+
+  const rawSpots = Array.isArray(mapBlock.hotspots) ? mapBlock.hotspots : [];
+  const hotspots = rawSpots.map((s, idx) => ({
+    ...s,
+    id: String(s.id || `spot-${idx + 1}`),
+    num: s.num || idx + 1,
+    x: Number.isFinite(Number(s.x)) ? Number(s.x) : 50,
+    y: Number.isFinite(Number(s.y)) ? Number(s.y) : 50,
+    color: s.color || '#0284c7',
+    label:
+      s.label || (s.title ? String(s.title).split(':')[0].trim() : `Location ${idx + 1}`),
+    badge: s.badge || 'Historical Flashpoint',
+    date: s.date || '',
+    title: s.title || s.label || `Location ${idx + 1}`,
+    details: s.details || s.description || s.summary || '',
+    hinge: s.hinge || s.hinge_question || s.question || '',
+    align: s.align || '',
+  }));
+
+  const mapImgUrl =
+    mapBlock.imageUrl || getAssetUrl(mapBlock.image || mapBlock.src || mapBlock.image_url || '');
+
+  if (window._activeWhiteboardKeyHandler) {
+    document.removeEventListener('keydown', window._activeWhiteboardKeyHandler);
+    window._activeWhiteboardKeyHandler = null;
+  }
+
+  let modal = document.getElementById('hotspot-whiteboard-lightbox');
+  const wasAlreadyOpen = Boolean(modal && modal.style.display !== 'none');
+  if (!wasAlreadyOpen) {
+    window._wbSavedBodyOverflow = document.body.style.overflow || '';
+  }
+  document.body.style.overflow = 'hidden';
+
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'hotspot-whiteboard-lightbox';
+    modal.className = 'no-print';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    document.body.appendChild(modal);
+  }
+
+  modal.setAttribute('aria-label', mapBlock.title || 'Interactive Whiteboard Map');
+  modal.setAttribute('aria-hidden', 'false');
+  modal.style.cssText =
+    'position: fixed; inset: 0; z-index: 100000; background: rgba(15, 23, 42, 0.96); display: flex; flex-direction: column; padding: 16px 22px; box-sizing: border-box; color: #f8fafc; font-family: "Inter", sans-serif;';
+
+  const sharedExplored =
+    bridge && typeof bridge.getExploredIds === 'function' && bridge.getExploredIds()
+      ? bridge.getExploredIds()
+      : new Set();
+
+  let activeIdx = 0;
+  const initialId =
+    bridge && typeof bridge.getActiveSpotId === 'function' ? bridge.getActiveSpotId() : null;
+  if (initialId) {
+    const foundIdx = hotspots.findIndex((h) => h.id === initialId);
+    if (foundIdx >= 0) activeIdx = foundIdx;
+  }
+  if (hotspots[activeIdx]) {
+    sharedExplored.add(hotspots[activeIdx].id);
+  }
+
+  modal.innerHTML = `
+    <div class="wb-lightbox-header" style="display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; padding-bottom: 12px; border-bottom: 1px solid rgba(148, 163, 184, 0.22); flex-shrink: 0;">
+      <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 280px; flex-wrap: wrap;">
+        <span style="background: rgba(14, 165, 233, 0.22); border: 1px solid #38bdf8; color: #7dd3fc; padding: 3px 10px; border-radius: 5px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap;">
+          <i class="fa-solid fa-chalkboard-user" style="margin-right: 5px;"></i> Whiteboard Map
+        </span>
+        <div style="min-width: 0;">
+          <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.32rem; color: #ffffff; line-height: 1.25;">${mapBlock.title || 'Historical Map'}</h2>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex-shrink: 0;">
+        <div id="wb-explored-counter" style="background: rgba(30, 41, 59, 0.9); border: 1px solid #475569; color: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 800; display: inline-flex; align-items: center; gap: 6px;">
+          <i class="fa-solid fa-location-dot" style="color: #38bdf8;"></i>
+          <span id="wb-explored-text">${sharedExplored.size} / ${hotspots.length} Locations Explored</span>
+        </div>
+
+        <div class="wb-zoom-group" role="group" aria-label="Map Zoom Controls" style="display: inline-flex; align-items: center; background: #1e293b; border: 1px solid #475569; border-radius: 7px; padding: 2px; gap: 2px;">
+          <button type="button" class="wb-zoom-btn is-active" data-zoom="1" style="background: #0284c7; color: #ffffff; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">1&times;</button>
+          <button type="button" class="wb-zoom-btn" data-zoom="1.5" style="background: transparent; color: #cbd5e1; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">1.5&times;</button>
+          <button type="button" class="wb-zoom-btn" data-zoom="2" style="background: transparent; color: #cbd5e1; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">2&times;</button>
+        </div>
+
+        <button type="button" id="wb-close-btn" title="Close Whiteboard Map (Esc)" style="background: rgba(239, 68, 68, 0.16); border: 1px solid rgba(248, 113, 113, 0.5); color: #fecaca; border-radius: 7px; padding: 5px 12px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+          <span style="font-size: 0.70rem; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.9;">Esc</span>
+          <span style="font-size: 1.15rem; line-height: 1;">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="wb-lightbox-body" style="flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.85fr); gap: 20px; margin-top: 14px;">
+      <div class="whiteboard-map-canvas" id="wb-map-canvas" style="position: relative; overflow: auto; background: #0b1120; border: 1px solid #334155; border-radius: 10px; display: flex; padding: 14px; min-height: 0;">
+        <div class="whiteboard-map-stage" id="wb-map-stage" style="position: relative; display: inline-block; margin: auto; line-height: 0; flex-shrink: 0;">
+          <img id="wb-map-img" src="${mapImgUrl}" alt="${escWbAttr(mapBlock.title || 'Historical Map')}" class="archival-image" style="max-height: calc(100vh - 170px); max-width: 100%; width: auto; height: auto; object-fit: contain; display: block; border-radius: 6px; box-shadow: 0 8px 30px rgba(0,0,0,0.65); user-select: none; -webkit-user-drag: none;" />
+          ${hotspots
+            .map((spot, sIdx) => {
+              const isActive = sIdx === activeIdx;
+              const isLeftAligned = spot.x > 66 || spot.align === 'left';
+              return `
+            <button type="button" class="map-hotspot-pin numbered-hotspot-pin wb-hotspot-pin ${isActive ? 'active-pin' : ''} ${isLeftAligned ? 'pin-align-left' : ''}" data-spot-index="${sIdx}" data-spot-id="${escWbAttr(spot.id)}" aria-label="Pin ${spot.num}: ${escWbAttr(spot.label)}" style="left: ${spot.x}%; top: ${spot.y}%;" title="${escWbAttr(spot.title)}">
+              <span class="pin-pulse" style="background: ${spot.color};"></span>
+              <span class="pin-marker" style="background: ${spot.color};">${spot.num}</span>
+              <span class="pin-label">${spot.label}</span>
+            </button>
+            `;
+            })
+            .join('')}
+        </div>
+      </div>
+
+      <div class="whiteboard-dispatch-panel" style="background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 20px 22px; display: flex; flex-direction: column; min-height: 0; overflow-y: auto; box-shadow: 0 8px 24px rgba(0,0,0,0.35);">
+        <div id="wb-dispatch-card-body"></div>
+
+        <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(148, 163, 184, 0.18);">
+          <div style="font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #94a3b8; margin-bottom: 8px;">
+            Locations on This Map
+          </div>
+          <div id="wb-quick-pills" style="display: flex; flex-wrap: wrap; gap: 7px;"></div>
+        </div>
+
+        <div style="margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(148, 163, 184, 0.2); display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+          <button type="button" id="wb-prev-pin-btn" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #f8fafc; border-radius: 7px; padding: 7px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <span>&larr;</span> <span>Prev Pin</span>
+          </button>
+          <span id="wb-pin-step-indicator" style="font-size: 0.80rem; font-weight: 800; color: #94a3b8; text-align: center;">
+            ${hotspots.length ? `Pin ${activeIdx + 1} of ${hotspots.length}` : ''}
+          </span>
+          <button type="button" id="wb-next-pin-btn" style="background: #0284c7; border: 1px solid #38bdf8; color: #ffffff; border-radius: 7px; padding: 7px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <span>Next Pin</span> <span>&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const wbImg = modal.querySelector('#wb-map-img');
+  const wbCanvas = modal.querySelector('#wb-map-canvas');
+  const wbStage = modal.querySelector('#wb-map-stage');
+  const wbPins = modal.querySelectorAll('.wb-hotspot-pin');
+  const dispatchBody = modal.querySelector('#wb-dispatch-card-body');
+  const quickPillsWrap = modal.querySelector('#wb-quick-pills');
+  const exploredTextEl = modal.querySelector('#wb-explored-text');
+  const exploredCounterEl = modal.querySelector('#wb-explored-counter');
+  const stepIndicatorEl = modal.querySelector('#wb-pin-step-indicator');
+  const zoomBtns = modal.querySelectorAll('.wb-zoom-btn');
+  const prevBtn = modal.querySelector('#wb-prev-pin-btn');
+  const nextBtn = modal.querySelector('#wb-next-pin-btn');
+  const closeBtn = modal.querySelector('#wb-close-btn');
+
+  let currentZoom = 1;
+  let baseImgWidth = 0;
+  let baseImgHeight = 0;
+
+  const captureBaseSize = () => {
+    if (!wbImg || currentZoom !== 1) return;
+    const rect = wbImg.getBoundingClientRect();
+    if (rect.width > 0 && rect.height > 0) {
+      baseImgWidth = rect.width;
+      baseImgHeight = rect.height;
+    }
+  };
+
+  if (wbImg) {
+    if (wbImg.complete) {
+      requestAnimationFrame(captureBaseSize);
+    }
+    wbImg.addEventListener('load', captureBaseSize);
+  }
+
+  const centerOnActivePin = () => {
+    if (currentZoom <= 1 || !wbCanvas || !wbStage || !hotspots[activeIdx]) return;
+    const spot = hotspots[activeIdx];
+    const targetLeft = (spot.x / 100) * wbStage.offsetWidth - wbCanvas.clientWidth / 2;
+    const targetTop = (spot.y / 100) * wbStage.offsetHeight - wbCanvas.clientHeight / 2;
+    wbCanvas.scrollTo({
+      left: Math.max(0, targetLeft),
+      top: Math.max(0, targetTop),
+      behavior: 'smooth',
+    });
+  };
+
+  const applyZoom = (zoomVal) => {
+    if (!wbImg) return;
+    if (currentZoom === 1) {
+      captureBaseSize();
+    }
+    currentZoom = zoomVal;
+
+    zoomBtns.forEach((btn) => {
+      const isAct = Number(btn.dataset.zoom) === zoomVal;
+      btn.classList.toggle('is-active', isAct);
+      btn.style.background = isAct ? '#0284c7' : 'transparent';
+      btn.style.color = isAct ? '#ffffff' : '#cbd5e1';
+    });
+
+    if (zoomVal === 1 || !baseImgWidth || !baseImgHeight) {
+      wbImg.style.width = 'auto';
+      wbImg.style.height = 'auto';
+      wbImg.style.maxHeight = 'calc(100vh - 170px)';
+      wbImg.style.maxWidth = '100%';
+      if (wbCanvas) {
+        wbCanvas.style.cursor = 'default';
+      }
+    } else {
+      wbImg.style.maxHeight = 'none';
+      wbImg.style.maxWidth = 'none';
+      wbImg.style.width = `${Math.round(baseImgWidth * zoomVal)}px`;
+      wbImg.style.height = `${Math.round(baseImgHeight * zoomVal)}px`;
+      if (wbCanvas) {
+        wbCanvas.style.cursor = 'grab';
+      }
+      requestAnimationFrame(centerOnActivePin);
+    }
+  };
+
+  const renderRightPanel = () => {
+    const spot = hotspots[activeIdx];
+    if (!spot) {
+      if (dispatchBody) dispatchBody.innerHTML = '';
+      return;
+    }
+
+    const cleanHinge = spot.hinge
+      ? String(spot.hinge)
+          .replace(/^(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\s*/i, '')
+          .trim()
+      : '';
+
+    if (dispatchBody) {
+      dispatchBody.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;">
+          <span style="background: ${spot.color}; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 3px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+            Pin ${spot.num} &middot; ${spot.badge}
+          </span>
+          ${spot.date ? `<span style="font-size: 0.84rem; font-weight: 800; color: #fbbf24; background: rgba(245, 158, 11, 0.14); border: 1px solid rgba(245, 158, 11, 0.35); padding: 2px 9px; border-radius: 4px;">${spot.date}</span>` : ''}
+        </div>
+        <h3 style="margin: 4px 0 12px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; color: #ffffff; line-height: 1.3;">
+          ${spot.title}
+        </h3>
+        <p style="margin: 0 0 16px 0; font-size: 1.08rem; line-height: 1.66; color: #e2e8f0;">
+          ${spot.details}
+        </p>
+        ${
+          cleanHinge
+            ? `
+          <div class="wb-hinge-prompt-box" style="background: rgba(245, 158, 11, 0.14); border: 1px solid rgba(245, 158, 11, 0.42); border-left: 4px solid #f59e0b; border-radius: 8px; padding: 13px 16px;">
+            <div style="font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em; color: #fbbf24; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-comments"></i> Hinge Question &middot; Discussion Prompt
+            </div>
+            <div style="font-size: 1.02rem; line-height: 1.55; color: #fef3c7; font-weight: 600;">
+              ${cleanHinge}
+            </div>
+          </div>
+        `
+            : ''
+        }
+      `;
+    }
+
+    if (quickPillsWrap) {
+      quickPillsWrap.innerHTML = hotspots
+        .map((s, idx) => {
+          const isAct = idx === activeIdx;
+          const isVisited = sharedExplored.has(s.id);
+          return `
+            <button type="button" class="wb-quick-pill-btn" data-spot-index="${idx}" style="background: ${isAct ? s.color : isVisited ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.06)'}; color: #ffffff; border: 1.5px solid ${isAct ? '#ffffff' : isVisited ? 'rgba(56, 189, 248, 0.45)' : 'rgba(255,255,255,0.16)'}; border-radius: 20px; padding: 5px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.18s ease;">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: ${s.color}; color: #fff; font-size: 0.68rem; font-weight: 900; border: 1px solid rgba(255,255,255,0.85); flex-shrink: 0;">${s.num}</span>
+              <span>${s.label}</span>
+            </button>
+          `;
+        })
+        .join('');
+
+      quickPillsWrap.querySelectorAll('.wb-quick-pill-btn').forEach((pillBtn) => {
+        pillBtn.addEventListener('click', () => {
+          setActiveIndex(Number(pillBtn.dataset.spotIndex));
+        });
+      });
+    }
+
+    if (exploredTextEl) {
+      exploredTextEl.textContent = `${sharedExplored.size} / ${hotspots.length} Locations Explored`;
+    }
+    if (exploredCounterEl) {
+      const allDone = hotspots.length > 0 && sharedExplored.size >= hotspots.length;
+      exploredCounterEl.style.borderColor = allDone ? '#10b981' : '#475569';
+    }
+    if (stepIndicatorEl) {
+      stepIndicatorEl.textContent = hotspots.length
+        ? `Pin ${activeIdx + 1} of ${hotspots.length}`
+        : '';
+    }
+  };
+
+  const setActiveIndex = (nextIdx) => {
+    if (!hotspots.length) return;
+    activeIdx = (nextIdx + hotspots.length) % hotspots.length;
+    const spot = hotspots[activeIdx];
+    sharedExplored.add(spot.id);
+
+    wbPins.forEach((p, pIdx) => {
+      p.classList.toggle('active-pin', pIdx === activeIdx);
+    });
+
+    renderRightPanel();
+
+    if (bridge && typeof bridge.onSelectSpot === 'function') {
+      bridge.onSelectSpot(spot.id);
+    }
+
+    if (currentZoom > 1) {
+      centerOnActivePin();
+    }
+  };
+
+  const closeWhiteboardModal = () => {
+    if (window._activeWhiteboardKeyHandler) {
+      document.removeEventListener('keydown', window._activeWhiteboardKeyHandler);
+      window._activeWhiteboardKeyHandler = null;
+    }
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = window._wbSavedBodyOverflow || '';
+  };
+
+  wbPins.forEach((p) => {
+    p.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setActiveIndex(Number(p.dataset.spotIndex));
+    });
+  });
+
+  zoomBtns.forEach((zBtn) => {
+    zBtn.addEventListener('click', () => {
+      applyZoom(Number(zBtn.dataset.zoom));
+    });
+  });
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => setActiveIndex(activeIdx - 1));
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => setActiveIndex(activeIdx + 1));
+  }
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeWhiteboardModal);
+  }
+
+  // Smooth drag-to-pan on zoomed canvas
+  if (wbCanvas) {
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let scrollStartLeft = 0;
+    let scrollStartTop = 0;
+
+    wbCanvas.addEventListener('mousedown', (e) => {
+      if (currentZoom <= 1 || e.target.closest('.map-hotspot-pin')) return;
+      isDragging = true;
+      startX = e.clientX;
+      startY = e.clientY;
+      scrollStartLeft = wbCanvas.scrollLeft;
+      scrollStartTop = wbCanvas.scrollTop;
+      wbCanvas.style.cursor = 'grabbing';
+    });
+    wbCanvas.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      wbCanvas.scrollLeft = scrollStartLeft - (e.clientX - startX);
+      wbCanvas.scrollTop = scrollStartTop - (e.clientY - startY);
+    });
+    const endCanvasDrag = () => {
+      if (!isDragging) return;
+      isDragging = false;
+      if (currentZoom > 1 && wbCanvas) {
+        wbCanvas.style.cursor = 'grab';
+      }
+    };
+    wbCanvas.addEventListener('mouseup', endCanvasDrag);
+    wbCanvas.addEventListener('mouseleave', endCanvasDrag);
+  }
+
+  window._activeWhiteboardKeyHandler = (e) => {
+    if (!modal || modal.style.display === 'none') return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeWhiteboardModal();
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      setActiveIndex(activeIdx - 1);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      setActiveIndex(activeIdx + 1);
+    }
+  };
+  document.addEventListener('keydown', window._activeWhiteboardKeyHandler);
+
+  renderRightPanel();
+}
+
+if (typeof window !== 'undefined') {
+  window.openHotspotWhiteboardModal = openHotspotWhiteboardModal;
+}
+
 export function initCrummackInteractiveFeatures() {
   if (!document.getElementById('crummack-interactive-styles')) {
     const styleEl = document.createElement('style');
@@ -14597,6 +16343,11 @@ export function initCrummackInteractiveFeatures() {
         0% { transform: scale(1); opacity: 0.9; }
         70% { transform: scale(3.5); opacity: 0; }
         100% { transform: scale(3.5); opacity: 0; }
+      }
+      @keyframes hotspot-numbered-pulse {
+        0% { transform: scale(1); opacity: 0.65; }
+        75% { transform: scale(2.15); opacity: 0; }
+        100% { transform: scale(2.15); opacity: 0; }
       }
 
       .map-hotspot-pin {
@@ -14691,6 +16442,85 @@ export function initCrummackInteractiveFeatures() {
       .map-hotspot-pin.active-pin .pin-label {
         border-color: #f59e0b !important;
         box-shadow: 0 0 12px rgba(245, 158, 11, 0.6) !important;
+      }
+
+      /* Numbered Circular Hotspot Pins (Stage 1 Hook Maps & Whiteboard Mode) */
+      .map-hotspot-pin.numbered-hotspot-pin {
+        width: 24px !important;
+        height: 24px !important;
+        transform: translate(-50%, -50%) !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        outline: none !important;
+        z-index: 15 !important;
+      }
+      .map-hotspot-pin.numbered-hotspot-pin:hover,
+      .map-hotspot-pin.numbered-hotspot-pin.active-pin {
+        z-index: 35 !important;
+      }
+      .map-hotspot-pin.numbered-hotspot-pin .pin-pulse {
+        left: 0 !important;
+        top: 0 !important;
+        width: 24px !important;
+        height: 24px !important;
+        transform: scale(1) !important;
+        transform-origin: center center !important;
+        opacity: 0.5 !important;
+        animation: hotspot-numbered-pulse 2.4s infinite ease-out !important;
+      }
+      .map-hotspot-pin.numbered-hotspot-pin .pin-marker {
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+        width: 24px !important;
+        height: 24px !important;
+        border-radius: 50% !important;
+        border: 2px solid #ffffff !important;
+        color: #ffffff !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 0.74rem !important;
+        font-weight: 900 !important;
+        line-height: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7) !important;
+        box-sizing: border-box !important;
+      }
+      .map-hotspot-pin.numbered-hotspot-pin:hover .pin-marker,
+      .map-hotspot-pin.numbered-hotspot-pin.active-pin .pin-marker {
+        width: 24px !important;
+        height: 24px !important;
+        transform: scale(1.16) !important;
+        border-color: #fbbf24 !important;
+        box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.35), 0 3px 10px rgba(0, 0, 0, 0.8) !important;
+      }
+      .map-hotspot-pin.numbered-hotspot-pin .pin-label {
+        left: 29px !important;
+        right: auto !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+      }
+      .map-hotspot-pin.numbered-hotspot-pin.pin-align-left .pin-label {
+        left: auto !important;
+        right: 29px !important;
+      }
+      .map-hotspot-pin.numbered-hotspot-pin:hover .pin-label,
+      .map-hotspot-pin.numbered-hotspot-pin:focus-visible .pin-label,
+      .map-hotspot-pin.numbered-hotspot-pin.active-pin .pin-label {
+        display: block !important;
+      }
+
+      @media (max-width: 960px) {
+        #hotspot-whiteboard-lightbox .wb-lightbox-body {
+          grid-template-columns: 1fr !important;
+          overflow-y: auto !important;
+        }
+        #hotspot-whiteboard-lightbox .whiteboard-map-canvas {
+          min-height: 300px !important;
+        }
       }
 
       .scribal-box {
@@ -15031,10 +16861,7 @@ export function assignQuestionNumbers(lesson, targetUnitId) {
     });
   }
 
-  // 4. Pair Share (for all units except Great War)
-  if (lesson.pair_share && !isGreatWar) {
-    lesson.pair_share.qNum = globalQNum++;
-  }
+  // 4. Pair Share is an oral classroom hinge — excluded from written question numbering
 
   // 5. Standard Tasks
   if (lesson.tasks) {
@@ -15070,12 +16897,7 @@ export function assignQuestionNumbers(lesson, targetUnitId) {
     });
   }
 
-  // 8. Pair Share (for Great War)
-  if (lesson.pair_share && isGreatWar) {
-    lesson.pair_share.qNum = globalQNum++;
-  }
-
-  // 9. Extended Writing
+  // 8. Extended Writing
   if (lesson.extended && lesson.extended.question) {
     lesson.extended.qNum = globalQNum++;
   }

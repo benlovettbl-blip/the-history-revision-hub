@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>KS2 History Worksheet • Lesson 9: Secret Codebreakers & Bletchley Park (1941–1945)</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --ink-muted: #475569;
+      --navy-primary: #1e3a8a;
+      --navy-deep: #0f172a;
+      --parchment: #fdfbf7;
+      --accent-gold: #b45309;
+      --border-gray: #cbd5e1;
+      --cut-guide: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    body {
+      background: #e2e8f0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .screen-toolbar-title {
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .screen-toolbar-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .screen-toolbar a,
+    .screen-toolbar button {
+      background: #1e3a8a;
+      color: #ffffff;
+      border: 1px solid #3b82f6;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .screen-toolbar button.print-btn {
+      background: #f59e0b;
+      color: #0f172a;
+      border-color: #f59e0b;
+    }
+
+    .worksheet-page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+      margin: 8mm auto;
+      padding: 7.5mm 8mm 6.5mm 8mm;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .worksheet-page {
+        margin: 0;
+        box-shadow: none !important;
+      }
+    }
+
+    .exercise-book-cutline {
+      width: 100%;
+      flex: 1;
+      min-height: 0;
+      border: 1.5px dashed var(--cut-guide);
+      border-radius: 6px;
+      padding: 4.5mm 5.5mm 4mm 5.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background: #ffffff;
+      overflow: visible;
+    }
+
+    .cut-indicator {
+      position: absolute;
+      top: -2.6mm;
+      left: 12mm;
+      background: #ffffff;
+      padding: 0 6px;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #64748b;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .sheet-masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--navy-deep);
+      padding-bottom: 1.8mm;
+      margin-bottom: 2mm;
+      flex-shrink: 0;
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-badge {
+      background: var(--navy-deep);
+      color: #ffffff;
+      font-family: 'Cinzel', serif;
+      font-size: 7.5pt;
+      font-weight: 800;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.05em;
+    }
+
+    .brand-text {
+      font-size: 7.6pt;
+      font-weight: 800;
+      color: var(--navy-primary);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .student-fields {
+      display: flex;
+      gap: 10px;
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--ink);
+      align-items: center;
+    }
+
+    .field-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .field-line {
+      display: inline-block;
+      width: 34mm;
+      border-bottom: 1.2px solid var(--ink);
+      height: 3.5mm;
+    }
+
+    .field-line.short {
+      width: 20mm;
+    }
+
+    .enquiry-banner {
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 2.4mm 3.5mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3mm;
+      margin-bottom: 2.2mm;
+      flex-shrink: 0;
+    }
+
+    .enquiry-title-group h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 10.6pt;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      line-height: 1.18;
+    }
+
+    .enquiry-title-group .enquiry-question {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8pt;
+      font-style: italic;
+      color: #e2e8f0;
+      margin-top: 0.6mm;
+      line-height: 1.25;
+    }
+
+    .lesson-badge {
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 1.6mm 3mm;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* STORY & SOURCE A */
+    .story-evidence-grid {
+      display: grid;
+      grid-template-columns: 64mm 1fr;
+      gap: 3mm;
+      margin-bottom: 2.2mm;
+      flex-shrink: 0;
+    }
+
+    .archival-plate-box {
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 1.6mm;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .archival-img {
+      width: 100%;
+      height: 40mm;
+      object-fit: contain;
+      background: #f8fafc;
+      border-radius: 3px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .archival-caption {
+      font-size: 7.5pt;
+      line-height: 1.24;
+      color: var(--ink-muted);
+      margin-top: 1mm;
+      text-align: center;
+    }
+
+    .story-text-box {
+      background: var(--parchment);
+      border: 1px solid #fed7aa;
+      border-left: 3.5px solid var(--accent-gold);
+      border-radius: 4px;
+      padding: 2.2mm 3mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .story-header {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 1mm;
+    }
+
+    .story-prose {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.4pt;
+      line-height: 1.42;
+      color: #1e293b;
+    }
+
+    .story-prose strong {
+      color: var(--navy-primary);
+    }
+
+    /* TASK CARDS */
+    .task-card {
+      background: #ffffff;
+      border: 1.2px solid var(--border-gray);
+      border-radius: 5px;
+      padding: 2.2mm 3mm;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2mm;
+      min-height: 0;
+    }
+
+    .task-card.last {
+      margin-bottom: 0;
+    }
+
+    .p1-task1 { flex: 1.12; }
+    .p1-task2 { flex: 1.02; }
+    .p2-task3 { flex: 1.34; }
+    .p2-task4 { flex: 0.86; }
+    .p2-task5 { flex: 0.84; }
+
+    .task-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5mm;
+      padding-bottom: 1mm;
+      border-bottom: 1px solid #e2e8f0;
+      flex-shrink: 0;
+    }
+
+    .task-num-title {
+      font-size: 8.5pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+    }
+
+    .task-tag {
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    .artifact-detective-grid {
+      display: grid;
+      grid-template-columns: 60mm 1fr;
+      gap: 3mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .artifact-container {
+      background: #fdfbf7;
+      border: 1px dashed #d97706;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.8mm;
+      min-height: 0;
+    }
+
+    .artifact-img {
+      width: 100%;
+      flex: 1;
+      min-height: 0;
+      max-height: 58mm;
+      object-fit: contain;
+      border-radius: 3px;
+      background: #ffffff;
+    }
+
+    .artifact-caption {
+      font-size: 7.5pt;
+      line-height: 1.22;
+      color: var(--ink-muted);
+      text-align: center;
+      margin-top: 1mm;
+      flex-shrink: 0;
+    }
+
+    .detective-questions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.8mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .q-block {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .q-item {
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    .ruled-lines-box {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-evenly;
+      min-height: 0;
+    }
+
+    .ruled-line {
+      height: 7.2mm;
+      border-bottom: 1.2px dashed #94a3b8;
+      width: 100%;
+    }
+
+    .ruled-lines-box .ruled-line {
+      flex: 1;
+      height: auto;
+      min-height: 5.0mm;
+      max-height: 7.8mm;
+    }
+
+    /* TASK 2: 3-STEP TIMELINE */
+    .timeline-3col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.6mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .timeline-step-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-top: 3.5px solid var(--navy-primary);
+      border-radius: 4px;
+      padding: 1.8mm 2.2mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .step-badge {
+      font-size: 7.5pt;
+      font-weight: 800;
+      color: var(--navy-primary);
+      letter-spacing: 0.03em;
+    }
+
+    .step-title {
+      font-size: 8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+      margin: 0.3mm 0;
+    }
+
+    .step-desc {
+      font-size: 7.5pt;
+      color: var(--ink-muted);
+      line-height: 1.22;
+      margin-bottom: 1mm;
+    }
+
+    .step-prompt {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      line-height: 1.2;
+      padding-top: 1mm;
+      border-top: 1px dashed #cbd5e1;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    /* PAGE 2: TASK 3 */
+    .visual-investigation-grid {
+      display: grid;
+      grid-template-columns: 60mm 1fr;
+      gap: 3mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .canvas-drawing-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1.5px dashed #b45309;
+      border-radius: 5px;
+      background: #fdfbf7;
+      padding: 2.5mm;
+    }
+
+    .craft-mini-box {
+      width: 100%;
+      border-radius: 5px;
+      padding: 3mm;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .canvas-subcaption {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #92400e;
+      text-align: center;
+      margin-top: 1.5mm;
+      line-height: 1.22;
+    }
+
+    .investigation-ledger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.4mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .ledger-row {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--navy-primary);
+      border-radius: 4px;
+      padding: 1.3mm 2.2mm;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .ledger-item-title {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+    }
+
+    .ledger-reason-prompt {
+      font-size: 7.5pt;
+      color: var(--ink-muted);
+      line-height: 1.18;
+      margin-bottom: 0.2mm;
+    }
+
+    /* TASK 4: THINKING HEADS */
+    .thinking-heads-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .head-card {
+      background: #f8fafc;
+      border: 1px solid var(--border-gray);
+      border-radius: 5px;
+      padding: 1.8mm 2.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .head-title-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0.6mm;
+      flex-shrink: 0;
+    }
+
+    .head-badge {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--navy-primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7.5pt;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .head-name {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+      line-height: 1.2;
+    }
+
+    .thought-prompt {
+      font-size: 7.5pt;
+      color: var(--navy-primary);
+      font-weight: 600;
+      line-height: 1.22;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    /* TASK 5: MISSION CHALLENGE */
+    .synthesis-container {
+      background: #fdfbf7;
+      border: 1.2px solid #fed7aa;
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 5px;
+      padding: 1.8mm 2.8mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .synthesis-header {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.2pt;
+      font-style: italic;
+      color: var(--navy-primary);
+      font-weight: 700;
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    .sheet-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.5mm;
+      margin-top: 1.5mm;
+      border-top: 1px solid #cbd5e1;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--ink-muted);
+      flex-shrink: 0;
+    }
+
+    /* PAGE 3 PORTRAIT SUITCASE CRAFT */
+    .suitcase-portrait-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5mm;
+      min-height: 0;
+    }
+
+    .suitcase-checklist-card {
+      background: #fdfbf7;
+      border: 1.2px solid #d97706;
+      border-radius: 5px;
+      padding: 2.5mm 3.5mm;
+      flex-shrink: 0;
+    }
+
+    .checklist-heading {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #78350f;
+      margin-bottom: 1.5mm;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2mm 4mm;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 7.8pt;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .tick-box {
+      width: 3.4mm;
+      height: 3.4mm;
+      border: 1.2px solid #78350f;
+      border-radius: 2px;
+      background: #ffffff;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .checklist-note {
+      margin-top: 1.8mm;
+      padding-top: 1.4mm;
+      border-top: 1px dashed #fbbf24;
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+    }
+
+    .vintage-suitcase-outer {
+      flex: 1;
+      border: 3px solid #78350f;
+      border-radius: 10px;
+      background: #fef3c7;
+      padding: 5mm 5mm 4mm 5mm;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 3mm;
+      margin-top: 3mm;
+      min-height: 0;
+    }
+
+    .suitcase-top-handle {
+      position: absolute;
+      top: -5mm;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 38mm;
+      height: 5mm;
+      border: 3px solid #78350f;
+      border-bottom: none;
+      border-radius: 6px 6px 0 0;
+      background: transparent;
+    }
+
+    .suitcase-clasp {
+      position: absolute;
+      top: -2.2mm;
+      width: 9mm;
+      height: 4.4mm;
+      background: #f59e0b;
+      border: 1.5px solid #78350f;
+      border-radius: 2px;
+    }
+    .suitcase-clasp.left { left: 26mm; }
+    .suitcase-clasp.right { right: 26mm; }
+
+    .suitcase-travel-tag {
+      background: #ffffff;
+      border: 1.5px solid #b45309;
+      border-radius: 4px;
+      padding: 1.6mm 3mm;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .tag-title {
+      font-size: 8pt;
+      font-weight: 800;
+      color: #78350f;
+      letter-spacing: 0.04em;
+    }
+
+    .tag-route {
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-top: 0.4mm;
+    }
+
+    .suitcase-canvas-area {
+      flex: 1;
+      background: #ffffff;
+      border: 2px dashed #b45309;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6mm;
+      min-height: 0;
+    }
+
+    .suitcase-watermark {
+      font-size: 9pt;
+      font-weight: 800;
+      color: rgba(120, 53, 15, 0.25);
+      text-align: center;
+      letter-spacing: 0.06em;
+      max-width: 120mm;
+      line-height: 1.4;
+    }
+
+    .suitcase-caption-box {
+      background: #ffffff;
+      border: 1px solid #d97706;
+      border-radius: 5px;
+      padding: 2mm 3mm;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="screen-toolbar">
+    <div class="screen-toolbar-title">KS2 World War II • Lesson 09 of 11: Secret Codebreakers & Bletchley Park (1941–1945)</div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&unit=ks2_ww2">← Back to KS2 Unit</a>
+      <a href="/pdfs/ks2_ww2/lesson_09_bletchley_codebreakers_worksheet.pdf" download>⬇ Download PDF</a>
+      <button class="print-btn" onclick="window.print()">🖨 Print Worksheet</button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PAGE 1: SOURCE ENQUIRY & CHRONOLOGY (SHEET 1)
+       ======================================================== -->
+  <div class="worksheet-page" id="sheet-page-1">
+    <div class="exercise-book-cutline">
+      <div class="cut-indicator">
+        ✂ Cut along dashed line to stick neatly into exercise book
+      </div>
+
+      <div class="sheet-masthead">
+        <div class="brand-left">
+          <span class="brand-badge">KS2 HISTORY</span>
+          <span class="brand-text">KS2 WORLD WAR II • LESSON 09 OF 11</span>
+        </div>
+        <div class="student-fields">
+          <div class="field-item">Name: <span class="field-line"></span></div>
+          <div class="field-item">Date: <span class="field-line short"></span></div>
+        </div>
+      </div>
+
+      <div class="enquiry-banner">
+        <div class="enquiry-title-group">
+          <h1>Secret Codebreakers & Bletchley Park (1941–1945)</h1>
+          <p class="enquiry-question">Enquiry Question: How did secret codebreakers working in wooden huts at Bletchley Park help shorten the Second World War?</p>
+        </div>
+        <div class="lesson-badge">
+          LESSON 09<br><span style="font-size: 7pt; font-weight:600;">OF 11 • KS2</span>
+        </div>
+      </div>
+
+      <div class="story-evidence-grid">
+        <div class="archival-plate-box">
+          <img src="../assets/enigma_machine_bletchley.jpg" class="archival-img" alt="Source A">
+          <p class="archival-caption"><strong>Source A (Artefact):</strong> Portable 3-rotor German Enigma cipher machine in its wooden box at Bletchley Park, showing keys, lampboard, and rotor wheels.</p>
+        </div>
+        <div class="story-text-box">
+          <div class="story-header">Historical Background • Read Together</div>
+          <p class="story-prose">At <strong>Bletchley Park ("Station X")</strong> in Buckinghamshire, Britain ran its top-secret codebreaking headquarters. German commanders scrambled radio messages using the <strong>Enigma</strong> machine, which had over <strong>158 million million million</strong> settings and reset every midnight.<br><br>Building on earlier Polish maths breakthroughs, <strong>Alan Turing</strong> and <strong>Gordon Welchman</strong> designed the <strong>Bombe</strong> machine. Around <strong>three-quarters of Bletchley’s 10,000 staff were women</strong>, and everyone kept total silence under the <strong>Official Secrets Act</strong>.</p>
+        </div>
+      </div>
+
+      <div class="task-card p1-task1">
+        <div class="task-header">
+          <span class="task-num-title">Task 1: Machine Detective • Enigma & Alan Turing's Bombe</span>
+          <span class="task-tag">Primary Evidence</span>
+        </div>
+        <div class="artifact-detective-grid">
+          <div class="artifact-container">
+            <img src="../assets/bombe_bletchley_park.jpg" class="artifact-img" alt="Source B">
+            <p class="artifact-caption"><strong>Source B (Photograph):</strong> Spinning metal drums on a Bombe machine operated by Wrens at Bletchley Park to find daily Enigma settings.</p>
+          </div>
+          <div class="detective-questions">
+            <div class="q-block">
+              <p class="q-item">1. Why couldn’t human codebreakers solve Enigma’s daily settings using only pencil and paper before the clock struck midnight?</p>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="q-block">
+              <p class="q-item">2. Looking at Source B, how did Alan Turing and Gordon Welchman’s Bombe machine help codebreakers crack German messages each morning?</p>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-card p1-task2 last">
+        <div class="task-header">
+          <span class="task-num-title">Task 2: The Secret Signal Pipeline • Radio Wave to Safe Convoy</span>
+          <span class="task-tag">Cause & Consequence</span>
+        </div>
+        <div class="timeline-3col">
+          
+          <div class="timeline-step-card">
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 1 • Y-STATIONS</div>
+              <div class="step-title">Listening to Morse Radio</div>
+              <p class="step-desc">Wireless listeners copy down scrambled 5-letter German Morse groups and rush them to Bletchley.</p>
+            </div>
+            <p class="step-prompt">Why did messages seem like nonsense letters at first?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+          <div class="timeline-step-card">
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 2 • WOODEN HUTS</div>
+              <div class="step-title">Running the Bombe</div>
+              <p class="step-desc">Mathematicians and Wrens use weather clues and Bombe drums to find that day’s Enigma key.</p>
+            </div>
+            <p class="step-prompt">Why were predictable German weather forecasts such a helpful clue?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+          <div class="timeline-step-card">
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 3 • ULTRA SECRET</div>
+              <div class="step-title">Saving Atlantic Ships</div>
+              <p class="step-desc">Decoded "Ultra" warnings steer Allied food convoys safely away from U-boat wolf packs.</p>
+            </div>
+            <p class="step-prompt">How did codebreaking in Buckinghamshire keep food on British tables?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-footer">
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 09 OF 11 • Sheet 1 of 2</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PAGE 2: INVESTIGATION, PERSPECTIVES & CHALLENGE (SHEET 2)
+       ======================================================== -->
+  <div class="worksheet-page" id="sheet-page-2">
+    <div class="exercise-book-cutline">
+      <div class="cut-indicator">
+        ✂ Cut along dashed line to stick neatly into exercise book
+      </div>
+
+      <div class="sheet-masthead">
+        <div class="brand-left">
+          <span class="brand-badge">KS2 ENQUIRY</span>
+          <span class="brand-text">Enigma Machines, Alan Turing’s Bombe & Keeping Station X Secret</span>
+        </div>
+        <div class="student-fields">
+          <div class="field-item">Name: <span class="field-line"></span></div>
+          <div class="field-item">LESSON 09 • Sheet 2 of 2</div>
+        </div>
+      </div>
+
+      <div class="task-card p2-task3">
+        <div class="task-header">
+          <span class="task-num-title">Task 3: Cipher Challenge & The 30-Year Official Secret</span>
+          <span class="task-tag">Codebreaking Enquiry</span>
+        </div>
+        <div class="visual-investigation-grid">
+          <div class="canvas-drawing-col">
+            
+        <div class="craft-mini-box" style="background:#eef2ff; border:2px solid #3730a3;">
+          <div style="font-size:8pt; font-weight:800; color:#312e81; text-transform:uppercase; margin-bottom:1.5mm; text-align:center;">Crack the +1 Letter Shift!</div>
+          <div style="font-size:7.4pt; line-height:1.55; color:#1e293b; text-align:center;">
+            Rule: Each secret letter was shifted <strong>1 step forward</strong> in the alphabet (B=A, C=B, D=C...).<br>
+            <strong>Code:</strong> <span style="font-family:monospace; font-size:8.8pt; font-weight:800; letter-spacing:0.08em;">I V U &nbsp; F J H I U</span><br>
+            <strong>Decoded:</strong> ____ ____ ____ &nbsp; ____ ____ ____ ____ ____<br>
+            <span style="font-size:7pt; color:#4338ca;">(Clue: Alan Turing's wooden office at Bletchley!)</span>
+          </div>
+        </div>
+            <p class="canvas-subcaption">Real Enigma machines changed every letter’s path on every key press!</p>
+          </div>
+          <div class="investigation-ledger">
+            
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">1. Spinning Numbered Wheels & Plugboard Wires</div>
+                <p class="ledger-reason-prompt">How did Enigma scramble a letter if you pressed the same key twice?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">2. 10,000 Staff — Around 75% Women (Wrens & Clerks)</div>
+                <p class="ledger-reason-prompt">Why was Bletchley Park a giant team effort rather than one lone inventor?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">3. Signing the Official Secrets Act</div>
+                <p class="ledger-reason-prompt">What would have happened if Germany found out Britain could read Enigma?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">4. Keeping Silent for 30 Years After 1945</div>
+                <p class="ledger-reason-prompt">Why couldn’t codebreakers tell even their parents what they had done?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-card p2-task4">
+        <div class="task-header">
+          <span class="task-num-title">Task 4: Thinking Heads • Two Historical Viewpoints</span>
+          <span class="task-tag">Perspectives</span>
+        </div>
+        <div class="thinking-heads-grid">
+          <div class="head-card">
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">1</span>
+                <span class="head-name">Alan Turing Working Against the Clock in Hut 8</span>
+              </div>
+              <p class="thought-prompt">Why is building a fast logical machine before midnight resets so urgent for sailors crossing the Atlantic?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+          <div class="head-card">
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">2</span>
+                <span class="head-name">Young Wren Operating a Clattering Bombe Machine</span>
+              </div>
+              <p class="thought-prompt">What is it like working long shifts on top-secret machines while telling your family you only do "office filing"?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-card p2-task5 last">
+        <div class="task-header">
+          <span class="task-num-title">Task 5: Historian Mission Challenge • Answering the Enquiry</span>
+          <span class="task-tag">Extended Writing</span>
+        </div>
+        <div class="synthesis-container">
+          <p class="synthesis-header">Enquiry Answer: How did secret codebreakers working at Bletchley Park help shorten the Second World War?</p>
+          <div class="ruled-lines-box">
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-footer">
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 09 OF 11 • Sheet 2 of 2</span>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -50,6 +50,10 @@ export async function getInfographicsManifest() {
  * Enforces strict, exact matching by lessonId or lessonIds array to prevent cross-lesson bleed.
  */
 export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
+  // Key Stage 2 (KS2) primary units use dedicated Enquiry Worksheets, Classroom Textbook, and Teacher Guidance — never GCSE Revision Mats.
+  if (unitId === 'ks2_ww2' || String(unitId || '').startsWith('ks2')) {
+    return [];
+  }
   const manifest = manifestCache || (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__);
   const unitList = (manifest && unitId && manifest[unitId]) ? manifest[unitId] : [];
 
@@ -76,7 +80,7 @@ export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
 
   // Universal Interactive Presentation Mat Fallback:
   // Every lesson across all KS3 & GCSE curriculum units has an interactive presentation mat at /interactive_mats/viewer.html!
-  // Key Stage 2 (KS2) primary units use their dedicated Enquiry Worksheets and 24-page primary pupil workbook.
+  // Key Stage 2 (KS2) primary units use their dedicated Enquiry Worksheets and 28-page primary pupil workbook.
   if (unitId && (targetStr || targetStr === '0')) {
     if (unitId === 'ks2_ww2' || unitId.startsWith('ks2')) {
       return [];

@@ -1,290 +1,289 @@
 /**
  * ks2_chronology_slider.js
  *
- * Interactive Key Stage 2 Milestones Chronology Slider (1938–1948)
- * Designed specifically for Key Stage 2 pupils (Years 3–6) and front-of-class interactive whiteboards.
+ * Interactive Key Stage 2 Milestones Chronology Slider (1933–1948)
+ * Designed specifically for Key Stage 2 pupils (Years 5–6) and front-of-class interactive whiteboards.
  *
  * Features:
- * - 12 Curated Landmark Home Front Milestones with child-centered narrative storytelling
+ * - 13 Curated Landmark Milestones aligned 1:1 with the 11 Canonical Enquiries & 20-Page Master Textbook
  * - Interactive horizontal highway track with synchronized range slider & clickable stepper nodes
  * - Automatic "Classroom Tour" presentation mode with smooth auto-advancing timer
- * - Filter pills (All, Evacuation & Children, Air Raids & Defence, Daily Life & Rationing, Secret War & Victory)
- * - Archival imagery with provenance tags and lightbox inspect
- * - "Life for Children" spotlights and "Think Like a Historian" hinge prompts
- * - Direct deep-links to the 24-Page Master Classroom Textbook and Pupil Worksheets
- * - Full keyboard accessibility (ArrowLeft / ArrowRight / Space)
+ * - Filter pills (All 13 Milestones, Evacuation & Children, Air Raids & Defence, Daily Life & Rationing, Secret War & Victory)
+ * - Verified archival imagery with accurate captions and provenance tags
+ * - "Life for Children" spotlights and "Historical Detective Challenge" prompts
+ * - Full keyboard accessibility (ArrowLeft / ArrowRight)
  */
 
 export const KS2_WW2_MILESTONES = [
   {
     id: 'm1',
+    year: '1933–1938',
+    month: 'January 1933 – November 1938',
+    title: 'Pre-War Jewish Life & Rights Taken Away Step by Step',
+    category: 'children',
+    categoryLabel: 'Evacuation & Children',
+    image: '/units/ks2_ww2/assets/prewar_children_holiday.jpg',
+    imageCaption:
+      'A Jewish boys’ youth football team posing proudly in numbered shirts before Nazi laws banned them from public sports pitches (1935).',
+    provenance: 'Wiener Holocaust Library / Pre-War Family Archive',
+    refTextbook: 'p. 6 • Enquiry 3',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_03_prewar_life_worksheet.html',
+    badgeColor: '#7c3aed',
+    story:
+      'Before 1933, Jewish families across Germany, Austria, and Czechoslovakia lived ordinary, settled lives as doctors, shopkeepers, musicians, and schoolchildren. Between 1933 and 1938, Adolf Hitler’s Nazi government passed hundreds of unfair laws taking away their rights step by step.',
+    significance:
+      'The 1935 Nuremberg Laws stripped Jewish people of citizenship. On 9–10 November 1938 (Kristallnacht), synagogues and Jewish shops were attacked, and days later Jewish children were banned from state schools.',
+    childrenLife:
+      'Children who had played in local football teams and studied beside friends suddenly saw "No Jews" signs on park benches, swimming pools, and cinemas, and were shut out of their own classrooms.',
+    quote:
+      '“One morning our teacher told us we could no longer sit with our friends. Overnight, our school gate was closed to us.” — Pre-War School Pupil Memory',
+    detectiveQuestion:
+      'In which month and year were Jewish children officially banned from attending German state schools?',
+    detectiveAnswer:
+      'November 1938, just days after the violent Kristallnacht attacks across Germany and Austria.',
+  },
+  {
+    id: 'm2',
     year: '1938–1939',
-    month: 'November 1938 – August 1939',
-    title: 'The Kindertransport: Saving 10,000 Child Refugees',
+    month: 'December 1938 – August 1939',
+    title: "Vera's Journey & The Kindertransport Rescue",
     category: 'children',
     categoryLabel: 'Evacuation & Children',
     image: '/units/ks2_ww2/assets/kindertransport_arrival.jpg',
     imageCaption:
-      'Young refugees arriving at London Liverpool Street Station, carrying small suitcases and cardboard travel tags (1939).',
-    provenance: 'Imperial War Museum / National Archives',
-    refTextbook: 'pp. 8–9 & pp. 20–21 • Enquiries 3 & 9',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_03_kindertransport_worksheet.html',
+      'Young unaccompanied refugee children carrying dolls and small suitcases as they arrive at Harwich Docks in Essex off the ferry from the Netherlands (December 1938).',
+    provenance: 'Imperial War Museum / Topical Press',
+    refTextbook: 'p. 7 • Enquiry 4',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_04_kindertransport_worksheet.html',
     badgeColor: '#b45309',
     story:
-      'Following the terrifying violence of the November Pogrom in Germany and Austria, British Parliament agreed to let unaccompanied Jewish child refugees under 17 find safety in Britain. British families and charities raised £50 per child (worth over £3,500 today) to sponsor their stay.',
+      'Shocked by Kristallnacht in November 1938, the British Parliament agreed to waive visa delays for unaccompanied refugee children under seventeen, provided British sponsors guaranteed £50 per child. Parents were not allowed to travel with them.',
     significance:
-      'Over 10,000 children were saved from Nazi persecution before borders slammed shut in September 1939. Volunteers like Nicholas Winton and Trevor Chadwick organized emergency trains from Prague.',
+      'Nearly 10,000 mostly Jewish children travelled by train across Europe to the Hook of Holland, sailed by ferry to Harwich, and took steam trains into London Liverpool Street Station before war closed the borders.',
     childrenLife:
-      'Children had to say goodbye to their parents on dark train platforms, clutching just one small suitcase with a change of clothes, a favourite toy, and a numbered tag hung around their necks.',
+      'Nine-year-old Vera Löwyová (later Vera Schaufeld) waved goodbye to her parents in Prague in May 1939 carrying just one small suitcase, her English porcelain doll, and a little autograph diary signed by her mother and father.',
     quote:
-      '“I remember my mother holding my hand at the station. She told me to be brave and learn English quickly.” — Vera Schaufeld, age 9',
+      '“I remember my mother holding my hand at Prague station. She told me to be brave and learn English quickly.” — Vera Löwyová (later Vera Schaufeld), age 9',
     detectiveQuestion:
-      'Why did the British government insist that child refugees must travel unaccompanied without their parents?',
+      'How much money did a British sponsor have to guarantee for each Kindertransport child?',
     detectiveAnswer:
-      'The government feared adults would take scarce British jobs, so sanctuary was strictly limited to children whose living costs were guaranteed by British sponsors.',
-  },
-  {
-    id: 'm2',
-    year: '1939',
-    month: '1–3 September 1939',
-    title: 'Outbreak of War & Operation Pied Piper Begins',
-    category: 'evacuation',
-    categoryLabel: 'Evacuation & Children',
-    image: '/units/ks2_ww2/assets/evacuees_railway_1939.jpg',
-    imageCaption:
-      'School children in London boarding steam trains with cardboard suitcases and luggage labels pinned to their coats (September 1939).',
-    provenance: 'The National Archives (AN 2/1047)',
-    refTextbook: 'pp. 4–7 • Enquiries 1 & 2',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_02_evacuation_worksheet.html',
-    badgeColor: '#1e3a8a',
-    story:
-      'On Friday 1 September 1939, German forces invaded Poland. Fearing immediate bomber attacks on London and big cities, the British government launched Operation Pied Piper. Two days later, Prime Minister Neville Chamberlain broadcast the solemn news that Britain was at war.',
-    significance:
-      'In just three days, British railways safely moved nearly 1.5 million school pupils, mothers with toddlers, and teachers into the quiet countryside without a single fatal accident.',
-    childrenLife:
-      'Pupils gathered at school before dawn, clutching brown paper luggage tags pinned to their coats, cardboard gas mask boxes, and pillowcases stuffed with spare clothes before boarding steam trains for unknown rural villages.',
-    quote:
-      '“I have to tell you now that this country is at war with Germany.” — Prime Minister Neville Chamberlain, 11:15am, 3 September 1939',
-    detectiveQuestion:
-      'How many children and mothers were evacuated across Britain during the first three days of September 1939?',
-    detectiveAnswer:
-      'Nearly 1.5 million people (1,473,000) were safely dispersed into rural reception zones like Devon, Wales, and Yorkshire.',
+      '£50 per child (worth over £3,000 today) to promise the government that the child would be cared for.',
   },
   {
     id: 'm3',
+    year: '1938–1939',
+    month: 'December 1938 – August 1939',
+    title: 'Nicholas Winton, Trevor Chadwick & The 669 Children from Prague',
+    category: 'children',
+    categoryLabel: 'Evacuation & Children',
+    image: '/units/ks2_ww2/assets/winton_prague_child_1939.jpg',
+    imageCaption:
+      'Volunteer rescuer Nicholas Winton holding a young refugee child in Prague while organising safe train transports to Britain (1939).',
+    provenance: 'Nicholas Winton Family Archive',
+    refTextbook: 'p. 8 • Enquiry 5',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_05_rescuers_winton_worksheet.html',
+    badgeColor: '#0284c7',
+    story:
+      'In December 1938, 29-year-old London office worker Nicholas Winton cancelled his skiing holiday to visit Prague. Seeing refugee families in freezing camps, he set up a desk in his hotel dining room to list endangered children.',
+    significance:
+      'While Winton and his mother Babette found British foster homes in London, schoolteacher Trevor Chadwick and Doreen Warriner organised eight trains in Prague—rescuing 669 children before war stopped the ninth train on 1 September 1939.',
+    childrenLife:
+      'Winton pasted the children’s small black-and-white identity photos into a scrapbook and kept it quietly in his attic for fifty years until 1988, never boasting about what his team had done.',
+    quote:
+      '“If something is not impossible, then there must be a way to do it.” — Sir Nicholas Winton',
+    detectiveQuestion:
+      'How many children did Nicholas Winton, Trevor Chadwick, and their volunteer team rescue on eight trains from Prague?',
+    detectiveAnswer:
+      '669 children between March and August 1939 before war broke out on 1 September 1939.',
+  },
+  {
+    id: 'm4',
     year: '1939',
-    month: 'September – October 1939',
-    title: 'Fitting 38 Million Gas Masks & The Total Blackout',
+    month: '1–3 September 1939',
+    title: 'Operation Pied Piper: 1.5 Million Evacuees Leave Cities',
+    category: 'children',
+    categoryLabel: 'Evacuation & Children',
+    image: '/units/ks2_ww2/assets/evacuees_railway_1939.jpg',
+    imageCaption:
+      'British schoolchildren walking to the railway station with gas mask boxes and brown luggage labels tied to their coats (September 1939).',
+    provenance: 'Imperial War Museum / National Archives',
+    refTextbook: 'p. 5 • Enquiry 2',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_02_evacuation_worksheet.html',
+    badgeColor: '#1e3a8a',
+    story:
+      'On Friday 1 September 1939—the day Germany invaded Poland and two days before Britain declared war—the government launched Operation Pied Piper to move children out of crowded cities before bombers could strike.',
+    significance:
+      'In just three days, nearly 1.5 million schoolchildren, teachers, and mothers with children under five travelled safely by steam train to rural reception areas such as Devon, Cornwall, Wales, and Yorkshire.',
+    childrenLife:
+      'Children wore brown paper luggage labels on their coats and waited in village halls for Billeting Officers to place them with host families. Some loved farm life; others felt terribly homesick.',
+    quote:
+      '“We walked in two straight lines behind our teacher with brown labels tied to our coats like parcels.” — London Evacuee Memory',
+    detectiveQuestion:
+      'What was the job of a Billeting Officer when evacuees arrived in a country village?',
+    detectiveAnswer:
+      'To find local host homes ("billets") with spare rooms and match every evacuated child to a household.',
+  },
+  {
+    id: 'm5',
+    year: '1939',
+    month: '1–3 September 1939',
+    title: 'Britain Declares War, 38 Million Gas Masks & The Blackout',
     category: 'defence',
     categoryLabel: 'Air Raids & Defence',
     image: '/units/ks2_ww2/assets/gas_masks_children_1939.jpg',
     imageCaption:
-      'British schoolchildren practising an emergency gas mask drill in their classroom with rubber respirators (Autumn 1939).',
+      'British schoolchildren practising a gas mask drill with their cardboard carrying boxes in autumn 1939.',
     provenance: 'Imperial War Museum (D 1511)',
-    refTextbook: 'pp. 4–5 • Enquiry 1',
+    refTextbook: 'p. 4 • Enquiry 1',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_01_outbreak_gasmasks_worksheet.html',
     badgeColor: '#0f172a',
     story:
-      'Remembering the horrors of poison gas in the First World War, the government issued 38 million rubber gas mask respirators in cardboard boxes to every man, woman, and child. At the same time, every streetlamp was extinguished and windows were covered with thick black paper.',
+      'The nationwide Blackout began at sunset on 1 September 1939. At 11:15am on Sunday 3 September 1939, Prime Minister Neville Chamberlain announced over BBC radio that Britain was at war with Germany.',
     significance:
-      'The strict Blackout prevented enemy pilots from using city lights to navigate. Air Raid Precautions (ARP) wardens patrolled pitch-black streets shouting "Put that light out!" if even a chink of candlelight escaped.',
+      'Fearing poison gas attacks like those in the First World War, the government issued 38 million rubber gas masks in cardboard boxes, taped windows against flying glass, and trained ARP wardens to patrol dark streets.',
     childrenLife:
-      'Babies had special sealed helmets with hand pumps operated by their mothers. Young children received red-and-blue "Mickey Mouse" respirators with friendly round ears to make them less frightening to wear during school drills.',
+      'Toddlers received bright red-and-blue "Mickey Mouse" masks so they would not be scared, while babies had enclosed gas helmets with hand-pumped bellows.',
     quote:
-      '“The mask smelled of cold rubber and chalk dust. When you breathed out, the little rubber valve made a funny farting noise that made everyone laugh.” — Wartime Schoolboy',
+      '“I have to tell you now that this country is at war with Germany.” — Prime Minister Neville Chamberlain, 11:15am, 3 September 1939',
     detectiveQuestion:
-      'Why did the government paint kerbs, lampposts, and tree trunks white during the blackout?',
+      'Why were kerbs, tree trunks, and lampposts painted with white stripes during the Blackout?',
     detectiveAnswer:
-      'Because all streetlights and car headlamps were blacked out, pedestrians and drivers needed white reflective paint so they did not crash in the dark!',
-  },
-  {
-    id: 'm4',
-    year: '1940',
-    month: 'May – June 1940',
-    title: 'Winston Churchill & The Miracle of Dunkirk',
-    category: 'victory',
-    categoryLabel: 'Secret War & Victory',
-    image: '/units/ks2_ww2/assets/atlantic_lifeline_map.jpg',
-    imageCaption:
-      'Allied shipping and maritime operations defending British waters and rescuing the army from French shores (1940).',
-    provenance: 'Imperial War Museum / Admiralty Records',
-    refTextbook: 'pp. 10–11 • Enquiry 4',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_04_the_blitz_shelters_worksheet.html',
-    badgeColor: '#2563eb',
-    story:
-      'In May 1940, Winston Churchill became Britain’s Prime Minister. When the German army trapped the British Expeditionary Force on the beaches of Dunkirk in northern France, an emergency armada of naval destroyers and hundreds of civilian "Little Ships"—fishing boats, pleasure cruisers, and lifeboats—set sail across the Channel.',
-    significance:
-      'Over 338,000 British and French soldiers were rescued from the beaches, preserving Britain’s army to fight on. Churchill warned that wars are not won by evacuations, but promised Britain would never surrender.',
-    childrenLife:
-      'Families gathered eagerly around battery-powered radio sets to hear Churchill’s roaring voice, while school pupils helped collect aluminium pots, pans, and railings to melt down for Spitfires.',
-    quote:
-      '“We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets... we shall never surrender!” — Winston Churchill, 4 June 1940',
-    detectiveQuestion:
-      'Why were ordinary private pleasure boats and fishing smacks able to rescue soldiers when big naval warships could not?',
-    detectiveAnswer:
-      'Large warships could not get close to the shallow Dunkirk beaches without running aground; the shallow-draught "Little Ships" ferried men directly from the surf.',
-  },
-  {
-    id: 'm5',
-    year: '1940',
-    month: 'July – October 1940',
-    title: 'The Battle of Britain: The Few Defend the Skies',
-    category: 'defence',
-    categoryLabel: 'Air Raids & Defence',
-    image: '/units/ks2_ww2/assets/womens_land_army_harvest.jpg',
-    imageCaption:
-      'Wartime countryside beneath southern skies where RAF Spitfires and Hurricanes intercepted Luftwaffe bomber waves (Summer 1940).',
-    provenance: 'Imperial War Museum Art Collection',
-    refTextbook: 'pp. 10–11 & pp. 14–15 • Enquiries 4 & 6',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_04_the_blitz_shelters_worksheet.html',
-    badgeColor: '#1d4ed8',
-    story:
-      'Hitler planned to invade Britain under Operation Sea Lion, but first the German Luftwaffe had to destroy the Royal Air Force. All summer, fighter pilots in Spitfires and Hurricanes scrambled from airfields across southern England to battle enemy Messerschmitts in the blue skies.',
-    significance:
-      'Aided by secret radar towers along the coastline and volunteer Observer Corps spotters, Fighter Command shot down over 1,700 enemy aircraft, forcing Hitler to indefinitely postpone the invasion of Britain.',
-    childrenLife:
-      'Children in fields and back gardens watched dogfights high above their heads, marvelling at swirling white vapour trails and rushing to collect shiny metal shrapnel and spent bullet casings as playground souvenirs.',
-    quote:
-      '“Never in the field of human conflict was so much owed by so many to so few.” — Winston Churchill, 20 August 1940',
-    detectiveQuestion:
-      'Which secret British invention gave Fighter Command advance warning of incoming German bomber formations?',
-    detectiveAnswer:
-      'Radar (Radio Detection and Ranging), an invisible network of tall steel coastal towers that bounced radio pulses off approaching aircraft.',
+      'With streetlamps switched off and car headlights dimmed, white stripes helped people see pavement edges in the dark!',
   },
   {
     id: 'm6',
-    year: '1940–1941',
-    month: 'September 1940 – May 1941',
-    title: 'The Blitz: 57 Consecutive Nights of Bombing',
-    category: 'defence',
-    categoryLabel: 'Air Raids & Defence',
-    image: '/units/ks2_ww2/assets/tube_station_shelter_1940.jpg',
-    imageCaption:
-      'Families camping overnight on Underground tube station platforms to stay safe from nighttime air raids (November 1940).',
-    provenance: 'Imperial War Museum Photographic Archive',
-    refTextbook: 'pp. 10–11 • Enquiry 4',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_04_the_blitz_shelters_worksheet.html',
-    badgeColor: '#991b1b',
-    story:
-      'Beginning on Saturday 7 September 1940 ("Black Saturday"), the German air force bombed London for 57 consecutive nights, targeting the docks, factories, and railway terminals. The bombardment soon spread to industrial hubs like Coventry, Liverpool, Birmingham, and Belfast.',
-    significance:
-      'Over 43,000 British civilians were killed and more than a million homes were damaged. Yet British morale did not break: volunteer firefighters, ambulance drivers, and ordinary citizens pulled neighbours from the rubble each morning.',
-    childrenLife:
-      'Families slept in cold, damp corrugated steel Anderson shelters dug into back gardens, under heavy steel indoor Morrison table shelters, or packed together along curved Underground tube station platforms.',
-    quote:
-      '“The sirens waked us with their rising and falling howl. We ran for the garden shelter just as the searchlights began criss-crossing the black sky.” — London Resident',
-    detectiveQuestion:
-      'Why were corrugated steel Anderson shelters covered with 15 inches of soil and turf on top?',
-    detectiveAnswer:
-      'The earth absorbed the blast wave and shielded the family inside from flying bomb fragments and falling debris.',
-  },
-  {
-    id: 'm7',
-    year: '1940–1941',
-    month: 'January 1940 – Throughout War',
-    title: 'Dig for Victory & Fair Shares Through Rationing',
+    year: '1940',
+    month: 'January 1940 – 1945',
+    title: 'Wartime Rationing & The "Dig for Victory" Campaign',
     category: 'rationing',
     categoryLabel: 'Daily Life & Rationing',
     image: '/units/ks2_ww2/assets/ration_book_coupons_1940.jpg',
     imageCaption:
-      'Official Ministry of Food general ration books and coupons for butter, sugar, and meat (1940).',
+      'Official Ministry of Food ration books with weekly coupons ensuring rich and poor families received fair shares (1940).',
     provenance: 'The National Archives / Ministry of Food',
-    refTextbook: 'pp. 12–13 • Enquiry 5',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_05_dig_for_victory_rationing_worksheet.html',
+    refTextbook: 'p. 10 • Enquiry 7',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_07_dig_for_victory_rationing_worksheet.html',
     badgeColor: '#15803d',
     story:
-      'Because German U-boats sank merchant ships carrying food across the Atlantic, Britain had to ration scarce supplies so everyone received a fair share. Bacon, butter, and sugar were rationed first, followed by meat, tea, eggs, and sweets.',
+      'Before the war, island Britain imported over two-thirds of its food by sea. When German U-boat submarines attacked Atlantic merchant ship convoys, the Ministry of Food introduced ration books in January 1940.',
     significance:
-      'The Ministry of Agriculture launched the famous "Dig for Victory" campaign. Parks, front gardens, golf courses, and the moat of the Tower of London were dug up to grow potatoes, carrots, and cabbages.',
+      'Coupon rationing guaranteed "fair shares for all" starting with bacon, butter, and sugar. Meanwhile, families dug up lawns, parks, and school fields to plant over 1.4 million "Dig for Victory" vegetable allotments.',
     childrenLife:
-      'Each person had a coloured paper Ration Book. Children helped tend vegetable plots, cared for backyard chickens and rabbits, and collected rosehips to make vitamin-rich syrup when oranges could not be imported.',
+      'Adults were often allowed just 1 fresh egg per week! Children weeded school carrot patches, ate Lord Woolton vegetable pie, and drank free milk and cod liver oil—growing healthier than before the war.',
     quote:
-      '“Potato Pete and Doctor Carrot became national heroes! We had carrot jam, carrot lollies, and Lord Woolton vegetable pie.” — Wartime Cook',
+      '“Grow your own food and save space in our merchant ships for vital supplies!” — Ministry of Food Campaign',
     detectiveQuestion:
-      'How many eggs per week was a British adult typically allowed under wartime rationing?',
+      'How many fresh eggs per week was a typical British adult ration book allowed?',
     detectiveAnswer:
-      'Only ONE fresh egg per week! People relied on tins of yellow powdered egg from America to make omelettes and cakes.',
+      'Usually just ONE fresh egg per week—families used tins of dried egg powder for baking and scrambled eggs!',
+  },
+  {
+    id: 'm7',
+    year: '1940',
+    month: 'Summer 1940',
+    title: 'Defending Britain: Churchill, Dunkirk & Building Spitfires',
+    category: 'defence',
+    categoryLabel: 'Air Raids & Defence',
+    image: '/units/ks2_ww2/assets/women_aircraft_workers_ww2.jpg',
+    imageCaption:
+      'British women factory workers cutting foil strips ("Window") and aircraft parts to help protect Royal Air Force crews during the war.',
+    provenance: 'Imperial War Museum Photographic Archive',
+    refTextbook: 'p. 9 & p. 11 • Enquiries 6 & 8',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_08_women_at_war_land_army_worksheet.html',
+    badgeColor: '#1d4ed8',
+    story:
+      'In May 1940, Winston Churchill became Prime Minister and "Little Ships" helped rescue 338,000 troops from Dunkirk. That summer, RAF Hurricane and Spitfire pilots fought the Battle of Britain in the skies over southern England.',
+    significance:
+      'Guided by coastal radar towers and WAAF plotters—and supplied by tireless factory workers—the Royal Air Force stopped the Luftwaffe winning control of the skies, forcing Hitler to call off plans to invade Britain.',
+    childrenLife:
+      'Families listened to Churchill’s speeches around wireless radios, and schoolchildren collected old aluminium saucepans to help Britain’s aircraft effort.',
+    quote:
+      '“Never in the field of human conflict was so much owed by so many to so few.” — Winston Churchill, August 1940',
+    detectiveQuestion:
+      'Roughly how many Allied troops were rescued from the beaches of Dunkirk in 1940, and which two RAF fighter planes defended Britain that summer?',
+    detectiveAnswer:
+      'Around 338,000 troops were rescued at Dunkirk, and RAF Hurricane and Spitfire pilots defended Britain in the Battle of Britain!',
   },
   {
     id: 'm8',
-    year: '1941',
+    year: '1940–1941',
+    month: '7 September 1940 – May 1941',
+    title: 'The Blitz: 57 Nights of Bombing & Air Raid Shelters',
+    category: 'defence',
+    categoryLabel: 'Air Raids & Defence',
+    image: '/units/ks2_ww2/assets/tube_station_shelter_1940.jpg',
+    imageCaption:
+      'London families sleeping side by side along a deep Underground station platform during night bombing in autumn 1940.',
+    provenance: 'Imperial War Museum Photographic Archive',
+    refTextbook: 'p. 9 • Enquiry 6',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_06_the_blitz_shelters_worksheet.html',
+    badgeColor: '#991b1b',
+    story:
+      'Starting on "Black Saturday" (7 September 1940), German bombers attacked London for 57 nights in a row and heavily bombed ports and factory cities across Britain including Coventry, Liverpool, Plymouth, Clydebank, Hull, and Belfast.',
+    significance:
+      'Over 43,000 British civilians died during the Blitz, yet ARP wardens, Auxiliary Firefighters, and neighbours worked through the night putting out incendiary bombs and rescuing survivors.',
+    childrenLife:
+      'Children with gardens slept in corrugated steel Anderson shelters buried under 15 inches of soil; families without gardens used indoor steel-mesh Morrison table cages or Underground Tube platforms.',
+    quote:
+      '“When the steady All Clear siren finally sounded at dawn, neighbours came outside with dusty faces and shared mugs of hot sweet tea.” — Blitz Memory',
+    detectiveQuestion:
+      'Why were corrugated steel Anderson shelters covered on top with at least 15 inches of garden soil?',
+    detectiveAnswer:
+      'The thick layer of soil cushioned blast shockwaves and protected the family inside from sharp flying shrapnel.',
+  },
+  {
+    id: 'm9',
+    year: '1941–1945',
     month: 'December 1941 – 1945',
-    title: 'Conscription of Women & The Women’s Land Army',
+    title: 'Women at War: Land Girls, Lumberjills & Canary Girls',
     category: 'rationing',
     categoryLabel: 'Daily Life & Rationing',
     image: '/units/ks2_ww2/assets/land_army_poster_1941.jpg',
     imageCaption:
-      'Ministry of Information recruitment poster: "For a healthy, happy job join the Women’s Land Army" (1941).',
+      'Official Women’s Land Army recruitment poster ("Come and help with the Victory Harvest") calling women to keep Britain’s farms producing food.',
     provenance: 'Imperial War Museum Art Collection',
-    refTextbook: 'pp. 14–15 • Enquiry 6',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_06_women_at_war_land_army_worksheet.html',
+    refTextbook: 'p. 11 • Enquiry 8',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_08_women_at_war_land_army_worksheet.html',
     badgeColor: '#047857',
     story:
-      'In December 1941, Britain became the first country in the world to conscript women for national service. Unmarried women aged 20 to 30 were called up to work in aircraft factories, join auxiliary armed services, or enlist in the Women’s Land Army.',
+      'With millions of men away fighting, Parliament passed the National Service Act in December 1941—calling up unmarried women aged 20 to 30 for essential war work on farms, in factories, or in the uniformed auxiliary services.',
     significance:
-      'Over 80,000 "Land Girls" replaced male farm workers called to the frontline. Hundreds of thousands of factory women—nicknamed "Canary Girls" because sulfur powders turned their skin and hair yellow—assembled bombs and tanks.',
+      'Over 80,000 Land Girls farmed Britain’s fields, Lumberjills in the Timber Corps felled forest trees for coal mines, and nearly a million munitions workers ("Canary Girls") packed shells.',
     childrenLife:
-      'Land Girls wore corduroy breeches, knitted green jerseys, and rubber Wellington boots, driving heavy tractors and harvesting wheat. Female ATA pilots ferried fighter planes directly from factories to airfields.',
+      'Children saw women driving tractors, conducting buses, aiming anti-aircraft searchlights in the ATS, and ferrying warplanes from factories to RAF airfields.',
     quote:
-      '“We milked cows before dawn in freezing weather and ploughed fields until our hands were blistered, but we kept Britain fed.” — Land Girl Volunteer',
+      '“We milked cows before dawn in frosty barns and ploughed heavy clay fields, proud to keep Britain fed.” — Women’s Land Army Volunteer',
     detectiveQuestion:
-      'Why were female munitions factory workers affectionately nicknamed "Canary Girls"?',
+      'Why were women working in wartime munitions shell factories nicknamed "Canary Girls"?',
     detectiveAnswer:
-      'Handling sulfur and TNT chemicals stained their hands, faces, and hair bright yellow, like a canary bird!',
+      'Because toxic TNT explosive powder stained their skin and hair bright yellow, like a canary bird!',
   },
   {
-    id: 'm9',
-    year: '1941–1943',
-    month: '1941 – 1943',
-    title: 'Bletchley Park, Alan Turing & The Bombe Machines',
+    id: 'm10',
+    year: '1941–1945',
+    month: '1941 – 1945',
+    title: 'Secret Codebreakers: Bletchley Park, Turing & The Bombe',
     category: 'victory',
     categoryLabel: 'Secret War & Victory',
     image: '/units/ks2_ww2/assets/bombe_bletchley_park.jpg',
     imageCaption:
-      'The Turing-Welchman electromechanical Bombe machine used to test thousands of Enigma combinations (1941).',
-    provenance: 'Bletchley Park Trust Archive',
-    refTextbook: 'pp. 18–19 • Enquiry 8',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_08_bletchley_codebreakers_worksheet.html',
+      'Wrens operating the spinning drums of a Turing-Welchman Bombe machine at Bletchley Park ("Station X").',
+    provenance: 'Bletchley Park Trust / IWM Archive',
+    refTextbook: 'p. 12 • Enquiry 9',
+    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_09_bletchley_codebreakers_worksheet.html',
     badgeColor: '#4f46e5',
     story:
-      'At a secluded country estate in Buckinghamshire named Bletchley Park ("Station X"), top mathematicians, crossword champions, and thousands of young women worked in total secrecy to break the German military’s "unbreakable" Enigma cipher.',
+      'At Bletchley Park in Buckinghamshire, secret codebreakers worked to crack Germany’s Enigma cipher machine, which had over 158 million million million settings and changed its key every midnight.',
     significance:
-      'Mathematician Alan Turing and Gordon Welchman built the "Bombe"—a giant electromechanical machine with 36 spinning drums that tested thousands of rotor combinations every second, decrypting secret radio orders codenamed "Ultra".',
+      'Alan Turing and Gordon Welchman designed the electromechanical Bombe machine to find daily Enigma settings rapidly. Historians estimate "Ultra" intelligence shortened the war in Europe by up to two years.',
     childrenLife:
-      'Nearly 75% of the 10,000 codebreakers at Bletchley Park were young women, many in the Women’s Royal Naval Service (Wrens). They signed the Official Secrets Act and never told their parents or children what they did.',
+      'Around three-quarters of Bletchley Park’s 10,000 workers were young women (including Wrens). All signed the Official Secrets Act and kept their work secret from their own families for thirty years!',
     quote:
-      '“They were the secret weapon that shortened the war in Europe by at least two years and saved millions of lives.” — Sir Harry Hinsley, Historian',
+      '“My parents thought I was just doing dull office typing—I could not breathe a word for thirty years.” — Bletchley Park Wren',
     detectiveQuestion:
-      'What proportion of the 10,000 secret codebreaking workers at Bletchley Park were women?',
+      'Roughly what fraction of the 10,000 workers at Bletchley Park were women?',
     detectiveAnswer:
-      'Nearly 75% (three out of every four workers) were women, operating the noisy Bombe machines and filing thousands of intercepted radio messages.',
-  },
-  {
-    id: 'm10',
-    year: '1944',
-    month: '6 June 1944',
-    title: 'D-Day: Operation Overlord & The Liberation of Europe',
-    category: 'victory',
-    categoryLabel: 'Secret War & Victory',
-    image: '/units/ks2_ww2/assets/blitz_targets_map.jpg',
-    imageCaption:
-      'Map and plotting networks for Allied logistics and cross-channel military operations (June 1944).',
-    provenance: 'Imperial War Museum / Allied Command',
-    refTextbook: 'pp. 22–23 • Enquiry 10',
-    worksheetUrl: '/units/ks2_ww2/worksheets/lesson_10_ve_day_remembrance_worksheet.html',
-    badgeColor: '#0369a1',
-    story:
-      'On the morning of 6 June 1944, the largest amphibious invasion in human history crossed the English Channel. Over 156,000 British, American, and Canadian troops landed on five beaches in Normandy, France, supported by 7,000 vessels and 11,000 aircraft.',
-    significance:
-      'Allied forces breached Hitler’s formidable "Atlantic Wall" of concrete bunkers and minefields, liberating Paris in August 1944 and beginning the final push to defeat Nazi tyranny across Western Europe.',
-    childrenLife:
-      'Towns and villages in southern England had been crowded with Allied soldiers and tanks for months. Children traded sweets for American chewing gum, while coastal skies roared day and night with transport planes.',
-    quote:
-      '“The eyes of the world are upon you. The hopes and prayers of liberty-loving people everywhere march with you.” — General Dwight D. Eisenhower, D-Day Order',
-    detectiveQuestion:
-      'What was the secret codename for the two artificial floating harbours towed across the Channel on D-Day?',
-    detectiveAnswer:
-      'The Mulberry Harbours, giant prefabricated concrete breakwaters that allowed hundreds of thousands of supply trucks to land without capturing a French port!',
+      'Around three-quarters (75%)—operating Bombe machines, listening at wireless stations, and indexing decoded signals.',
   },
   {
     id: 'm11',
@@ -293,79 +292,79 @@ export const KS2_WW2_MILESTONES = [
     title: 'VE Day: Victory in Europe & Street Celebrations',
     category: 'victory',
     categoryLabel: 'Secret War & Victory',
-    image: '/units/ks2_ww2/assets/ve_day_children_table_1945.jpg',
+    image: '/units/ks2_ww2/assets/ve_day_street_party_1945.jpg',
     imageCaption:
-      'Children enjoying a celebratory street party table lined with Union Jack bunting in London on VE Day (8 May 1945).',
-    provenance: 'Imperial War Museum (HU 49481)',
-    refTextbook: 'pp. 22–23 • Enquiry 10',
+      'Huge crowds cheering beneath Nelson’s Column in Trafalgar Square, London, on Victory in Europe (VE) Day, 8 May 1945.',
+    provenance: 'Imperial War Museum Archive',
+    refTextbook: 'p. 13 • Enquiry 10',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_10_ve_day_remembrance_worksheet.html',
     badgeColor: '#b91c1c',
     story:
-      'Following the surrender of German armed forces, Tuesday 8 May 1945 was declared Victory in Europe Day (VE Day). At 3:00pm, Prime Minister Winston Churchill broadcast to the nation, announcing that the war in Europe was finally won.',
+      'After Nazi Germany surrendered, Tuesday 8 May 1945 became Victory in Europe (VE) Day. At 3:00pm, Prime Minister Winston Churchill announced over BBC radio that the war in Europe was won, while crowds cheered outside Buckingham Palace.',
     significance:
-      'Across Great Britain, millions poured into the streets. Church bells rang freely for the first time in six years, blackout curtains were pulled down to let light flood into the night, and huge bonfires lit up village greens.',
+      'Blackout curtains came down at last and church bells rang out, though fighting in Asia and the Pacific continued until VJ Day on 15 August 1945 and over 450,000 British lives had been lost.',
     childrenLife:
-      'Neighbours pooled their precious sugar and butter rations to bake party cakes for children. Long trestle tables were laid out down the middle of roads, decorated with handmade paper bunting and Union Jack flags.',
+      'Neighbours carried tables into bombed streets, hung red-white-and-blue bunting, and pooled saved sugar and jam coupons to give children unforgettable VE Day street parties.',
     quote:
-      '“My dear friends, this is your hour. This is not victory of a party or of any class. It is a victory of the great British nation as a whole.” — Winston Churchill, 8 May 1945',
+      '“My dear friends, this is your hour... a victory of the great British nation as a whole.” — Winston Churchill, 8 May 1945',
     detectiveQuestion:
-      'Why were the street party celebrations on VE Day a time of quiet sadness as well as great joy for many families?',
+      'Why was VE Day described by many British families as a day of "laughter through tears"?',
     detectiveAnswer:
-      'Because amid the dancing and singing, many families quietly mourned fathers, brothers, and sons who had died in battle and would never return home.',
+      'People felt huge joy that bombing in Europe had ended, mixed with deep sadness for loved ones who had died and troops still fighting in Asia.',
   },
   {
     id: 'm12',
     year: '1945',
-    month: '14 August 1945',
-    title: 'The Windermere Children: 300 Child Survivors Arrive in Cumbria',
+    month: 'August 1945',
+    title: 'The Windermere Children: 300 Survivors Arrive in the Lake District',
     category: 'children',
     categoryLabel: 'Evacuation & Children',
-    image: '/units/ks2_ww2/assets/windermere_children_calgarth_1945.jpg',
+    image: '/units/ks2_ww2/assets/windermere_raf_stirling_airlift_1945.jpg',
     imageCaption:
-      'Child Holocaust survivors standing on the shore of Lake Windermere at the Calgarth Estate in August 1945, wearing donated coats and looking across the calm lake.',
-    provenance: 'Lake District Holocaust Project (LDHP) Archive',
-    refTextbook: 'Enquiry 11 (Extension) • The Windermere Children',
+      'Orphaned child camp survivors carrying small suitcases and a Czech flag across Prague airfield to board RAF Short Stirling heavy bombers bound for Carlisle and Lake Windermere (14 August 1945).',
+    provenance: 'Imperial War Museum (CH 15898)',
+    refTextbook: 'p. 14 • Enquiry 11',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_11_windermere_children_worksheet.html',
     badgeColor: '#059669',
     story:
-      'In August 1945, three months after the war in Europe ended, 10 giant RAF Stirling bombers flew 300 orphaned child survivors from Prague to Cumbria. They were housed at the Calgarth Estate by Lake Windermere to heal, recuperate, and rebuild their lives.',
+      'In August 1945—three months after VE Day—ten converted RAF Short Stirling bombers flew 300 orphaned child survivors of Nazi camps from Prague to Carlisle, before coaches brought them to the Calgarth Estate beside Lake Windermere.',
     significance:
-      "Having survived years of terror and starvation in Nazi concentration camps where over 1.5 million children died, the children were cared for by Dr Oscar Friedman and given 300 red bicycles, fresh food, and freedom, inspiring Tom Palmer's award-winning novel After the War.",
+      'Cared for by Dr Oscar Friedman, art therapist Marie Paneth, and volunteers, the children slowly recovered their strength and formed a lifelong family known as the ’45 Aid Society—inspiring Tom Palmer’s novel After the War.',
     childrenLife:
-      'At first, the children hid bread under their pillows because they feared food would disappear. Gradually, by swimming in Lake Windermere, cycling country lanes, and learning English, they learned to smile and live again.',
+      'At first, frightened children hid crusts of bread under their pillows in case food ran out. Through patient kindness, English lessons, football, swimming in the lake, and riding bicycles, they learned to laugh again.',
     quote:
       '“Arriving at Windermere was like coming from hell to heaven. For the first time in years, we were treated as human beings.” — Arek Hersh MBE, Survivor',
     detectiveQuestion:
-      'How many child survivors were brought by RAF bombers to Lake Windermere in August 1945?',
+      'How did the 300 Windermere Children travel from Prague to Carlisle in August 1945?',
     detectiveAnswer:
-      "300 child survivors (known as the Windermere Children), who formed the '45 Aid Society and built thriving new lives in Britain.",
+      'Inside 10 converted Royal Air Force (RAF) Short Stirling heavy bomber aeroplanes!',
   },
   {
     id: 'm13',
-    year: '1945–1948',
-    month: 'Post-War Rebuilding & 1948 NHS',
-    title: 'Rebuilding Britain, The NHS & The Poppy of Remembrance',
+    year: '1945–1954',
+    month: '1945 – 1954',
+    title: 'Rebuilding Britain, The 1948 NHS & National Remembrance',
     category: 'victory',
     categoryLabel: 'Secret War & Victory',
-    image: '/units/ks2_ww2/assets/vera_keepsakes.jpg',
+    image: '/units/ks2_ww2/assets/cenotaph_whitehall_remembrance.jpg',
     imageCaption:
-      'Personal keepsakes and childhood memories preserved by survivors as a lasting testament of courage and remembrance.',
-    provenance: 'Holocaust Educational Trust Archive',
-    refTextbook: 'pp. 22–23 • Enquiry 10',
+      'The Cenotaph in Whitehall, London — originally unveiled in 1920 after the First World War, with the dates 1939–1945 added after the Second World War — where Britain gathers each Remembrance Sunday.',
+    provenance: 'UK National Remembrance Archive',
+    refTextbook: 'p. 13 & p. 20 • Enquiry 10',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_10_ve_day_remembrance_worksheet.html',
     badgeColor: '#6b21a8',
     story:
-      'Britain emerged from the war victorious but physically damaged and deeply in debt. In 1948, the government founded the National Health Service (NHS), providing free doctors, dentists, and hospitals for every child and family regardless of wealth.',
+      'After six exhausting years of war, Britain set about clearing bomb sites, building new council homes and schools, and creating a fairer peacetime country. Food rationing continued until July 1954.',
     significance:
-      'Every November on Remembrance Sunday, the nation pauses for a two-minute silence. Millions wear red poppies to remember the bravery and sacrifice of soldiers, nurses, and ordinary Home Front civilians.',
+      'In July 1948, Britain founded the National Health Service (NHS) so every child and adult could see a doctor or hospital free of charge, while nations formed the United Nations to protect peace and human rights.',
     childrenLife:
-      'Post-war children lived through years of continued rationing (bread was even rationed until 1948!), played in bomb craters converted into playgrounds, and grew up in a country determined to build a fairer society for all.',
+      'Every November on Remembrance Sunday, schoolchildren and families pause for a two-minute silence and wear red poppies to honour everyone who served at home and overseas.',
     quote:
-      '“When you go home, tell them of us and say, For your tomorrow, we gave our today.” — The Kohima Epitaph',
+      '“We remember those who gave their tomorrow so that future generations could grow up in peace.”',
     detectiveQuestion:
-      'Which famous British institution was created in 1948 to ensure every child had access to free medical care?',
+      'In which year was the National Health Service (NHS) launched—and when did wartime food rationing finally end?',
     detectiveAnswer:
-      'The National Health Service (NHS), established by Health Minister Aneurin Bevan so healthcare was a right for all citizens.',
+      'The NHS opened in 1948, and the very last wartime food rationing (meat) finally ended in July 1954!',
   },
 ];
 
@@ -386,6 +385,10 @@ export function renderKs2TimelineSlider(container) {
     const list = getFilteredMilestones();
     if (activeIndex >= list.length) activeIndex = 0;
     const current = list[activeIndex] || KS2_WW2_MILESTONES[0];
+    const pageMatch = String(current.refTextbook || '').match(/p\.\s*(\d+)/i);
+    const textbookUrl = pageMatch
+      ? `/units/ks2_ww2/textbook.html#page-${pageMatch[1]}`
+      : '/units/ks2_ww2/textbook.html';
 
     container.innerHTML = `
       <style>
@@ -401,10 +404,10 @@ export function renderKs2TimelineSlider(container) {
         .ks2-slider-hero {
           background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #2563eb 100%);
           border-radius: 14px;
-          padding: 24px 28px;
+          padding: 22px 26px;
           color: #ffffff;
           box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.35);
-          margin-bottom: 22px;
+          margin-bottom: 18px;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -415,7 +418,7 @@ export function renderKs2TimelineSlider(container) {
 
         .ks2-hero-title-wrap h1 {
           font-family: 'Playfair Display', Georgia, serif;
-          font-size: 1.85rem;
+          font-size: 1.75rem;
           font-weight: 800;
           margin: 0 0 6px 0;
           letter-spacing: -0.01em;
@@ -425,11 +428,11 @@ export function renderKs2TimelineSlider(container) {
         }
 
         .ks2-hero-subtitle {
-          font-size: 0.95rem;
+          font-size: 0.94rem;
           color: #e2e8f0;
           margin: 0;
-          line-height: 1.4;
-          max-width: 680px;
+          line-height: 1.45;
+          max-width: 700px;
         }
 
         .ks2-hero-badge {
@@ -441,7 +444,7 @@ export function renderKs2TimelineSlider(container) {
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.08em;
-          color: #93c5fd;
+          color: #fde68a;
           display: inline-block;
           margin-bottom: 6px;
         }
@@ -451,7 +454,7 @@ export function renderKs2TimelineSlider(container) {
           display: flex;
           gap: 8px;
           flex-wrap: wrap;
-          margin-bottom: 18px;
+          margin-bottom: 16px;
           align-items: center;
         }
 
@@ -488,16 +491,16 @@ export function renderKs2TimelineSlider(container) {
           background: #ffffff;
           border: 1.5px solid #e2e8f0;
           border-radius: 12px;
-          padding: 20px 24px;
+          padding: 18px 22px;
           box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-          margin-bottom: 22px;
+          margin-bottom: 20px;
         }
 
         .ks2-highway-header {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 16px;
+          margin-bottom: 12px;
           flex-wrap: wrap;
           gap: 12px;
         }
@@ -557,7 +560,7 @@ export function renderKs2TimelineSlider(container) {
         /* Range Slider Track */
         .ks2-slider-container {
           position: relative;
-          padding: 24px 8px 10px 8px;
+          padding: 18px 8px 6px 8px;
         }
 
         .ks2-range-input {
@@ -596,7 +599,7 @@ export function renderKs2TimelineSlider(container) {
           display: flex;
           justify-content: space-between;
           position: relative;
-          margin-top: 14px;
+          margin-top: 12px;
         }
 
         .ks2-node-item {
@@ -652,7 +655,8 @@ export function renderKs2TimelineSlider(container) {
           overflow: hidden;
           box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
           display: grid;
-          grid-template-columns: 440px 1fr;
+          grid-template-columns: 420px 1fr;
+          align-items: stretch;
           transition: all 0.25s ease;
         }
 
@@ -666,40 +670,45 @@ export function renderKs2TimelineSlider(container) {
           background: #0f172a;
           display: flex;
           flex-direction: column;
+          justify-content: space-between;
           border-right: 1.5px solid #cbd5e1;
           position: relative;
         }
 
         .ks2-visual-img-wrap {
-          height: 340px;
+          flex: 1;
+          min-height: 310px;
+          padding: 14px;
           overflow: hidden;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #0f172a;
+          background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
           position: relative;
         }
 
         .ks2-visual-img {
           max-width: 100%;
-          max-height: 100%;
+          max-height: 340px;
           width: auto;
           height: auto;
           object-fit: contain;
+          border-radius: 6px;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
           transition: transform 0.35s ease;
         }
 
         .ks2-visual-img:hover {
-          transform: scale(1.03);
+          transform: scale(1.02);
         }
 
         .ks2-visual-caption-box {
           padding: 12px 16px;
           background: #1e293b;
           color: #f1f5f9;
-          font-size: 0.78rem;
-          line-height: 1.35;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          font-size: 0.8rem;
+          line-height: 1.4;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
         }
 
         .ks2-provenance-tag {
@@ -708,15 +717,15 @@ export function renderKs2TimelineSlider(container) {
           font-weight: 600;
           text-transform: uppercase;
           letter-spacing: 0.05em;
-          margin-top: 4px;
+          margin-top: 5px;
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 5px;
         }
 
         /* Detail Column */
         .ks2-card-detail {
-          padding: 24px 28px;
+          padding: 22px 28px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -737,14 +746,14 @@ export function renderKs2TimelineSlider(container) {
           color: #ffffff;
           font-size: 0.76rem;
           font-weight: 800;
-          padding: 3px 10px;
+          padding: 4px 10px;
           border-radius: 4px;
           text-transform: uppercase;
           letter-spacing: 0.06em;
         }
 
         .ks2-step-counter {
-          font-size: 0.75rem;
+          font-size: 0.76rem;
           font-weight: 700;
           color: #64748b;
           text-transform: uppercase;
@@ -753,10 +762,10 @@ export function renderKs2TimelineSlider(container) {
 
         .ks2-milestone-title {
           font-family: 'Playfair Display', Georgia, serif;
-          font-size: 1.55rem;
+          font-size: 1.52rem;
           font-weight: 800;
           color: #0f172a;
-          margin: 0 0 12px 0;
+          margin: 0 0 10px 0;
           line-height: 1.25;
         }
 
@@ -785,7 +794,7 @@ export function renderKs2TimelineSlider(container) {
           border: 1px solid #e2e8f0;
           border-left: 3.5px solid #2563eb;
           border-radius: 6px;
-          padding: 9px 12px;
+          padding: 10px 12px;
         }
 
         .ks2-callout-title {
@@ -797,12 +806,12 @@ export function renderKs2TimelineSlider(container) {
           margin-bottom: 4px;
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 5px;
         }
 
         .ks2-callout-text {
-          font-size: 0.82rem;
-          line-height: 1.38;
+          font-size: 0.83rem;
+          line-height: 1.42;
           color: #1e293b;
         }
 
@@ -815,7 +824,7 @@ export function renderKs2TimelineSlider(container) {
           font-style: italic;
           font-size: 0.88rem;
           color: #1e3a8a;
-          line-height: 1.4;
+          line-height: 1.42;
           margin-bottom: 14px;
         }
 
@@ -842,7 +851,7 @@ export function renderKs2TimelineSlider(container) {
         }
 
         .ks2-detective-q {
-          font-size: 0.84rem;
+          font-size: 0.85rem;
           font-weight: 700;
           color: #1e293b;
           margin-bottom: 4px;
@@ -852,15 +861,15 @@ export function renderKs2TimelineSlider(container) {
           background: #ca8a04;
           color: #ffffff;
           border: none;
-          font-size: 0.7rem;
+          font-size: 0.72rem;
           font-weight: 700;
-          padding: 2px 8px;
+          padding: 3px 9px;
           border-radius: 4px;
           cursor: pointer;
         }
 
         .ks2-detective-a {
-          font-size: 0.8rem;
+          font-size: 0.82rem;
           color: #713f12;
           background: #fffbeb;
           padding: 6px 10px;
@@ -876,7 +885,7 @@ export function renderKs2TimelineSlider(container) {
           justify-content: space-between;
           align-items: center;
           border-top: 1px solid #cbd5e1;
-          padding-top: 14px;
+          padding-top: 12px;
           flex-wrap: wrap;
           gap: 10px;
         }
@@ -924,26 +933,26 @@ export function renderKs2TimelineSlider(container) {
         <!-- Top Hero Banner -->
         <div class="ks2-slider-hero">
           <div class="ks2-hero-title-wrap">
-            <span class="ks2-hero-badge"><i class="fa-solid fa-flag"></i> Key Stage 2 Historical Enquiry</span>
-            <h1><i class="fa-solid fa-clock-rotate-left"></i> WWII Milestones Chronology Slider</h1>
+            <span class="ks2-hero-badge"><i class="fa-solid fa-flag"></i> Key Stage 2 Historical Timeline</span>
+            <h1><i class="fa-solid fa-clock-rotate-left"></i> World War II Chronology Slider (1933–1954)</h1>
             <p class="ks2-hero-subtitle">
-              Step through the defining turning points of World War II &amp; the Home Front (1938–1948). Drag the slider or click any milestone to explore how children, families, and civilians lived through the conflict.
+              Step through ${KS2_WW2_MILESTONES.length} key turning points of World War II, the British Home Front, and children's lives across Europe. Drag the slider or click any year dot to explore.
             </p>
           </div>
           <div style="display: flex; gap: 8px; flex-shrink: 0;">
             <a href="/units/ks2_ww2/textbook.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.85rem; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-book-open"></i> Read 24-Page Textbook
+              <i class="fa-solid fa-book-open"></i> 20-Page Master Textbook
             </a>
           </div>
         </div>
 
         <!-- Filter Chips Strip -->
         <div class="ks2-filter-strip">
-          <span style="font-size: 0.76rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 4px;">Filter Highway:</span>
+          <span style="font-size: 0.76rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 4px;">Filter Timeline:</span>
           <button class="ks2-filter-chip ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">
-            <i class="fa-solid fa-layer-group"></i> All 12 Milestones
+            <i class="fa-solid fa-layer-group"></i> All ${KS2_WW2_MILESTONES.length} Milestones
           </button>
-          <button class="ks2-filter-chip ${activeFilter === 'children' || activeFilter === 'evacuation' ? 'active' : ''}" data-filter="children">
+          <button class="ks2-filter-chip ${activeFilter === 'children' ? 'active' : ''}" data-filter="children">
             <i class="fa-solid fa-child"></i> Evacuation &amp; Children
           </button>
           <button class="ks2-filter-chip ${activeFilter === 'defence' ? 'active' : ''}" data-filter="defence">
@@ -953,7 +962,7 @@ export function renderKs2TimelineSlider(container) {
             <i class="fa-solid fa-seedling"></i> Daily Life &amp; Rationing
           </button>
           <button class="ks2-filter-chip ${activeFilter === 'victory' ? 'active' : ''}" data-filter="victory">
-            <i class="fa-solid fa-trophy"></i> Secret War &amp; Victory
+            <i class="fa-solid fa-trophy"></i> Secret War &amp; Peace
           </button>
         </div>
 
@@ -961,7 +970,7 @@ export function renderKs2TimelineSlider(container) {
         <div class="ks2-highway-card">
           <div class="ks2-highway-header">
             <div class="ks2-highway-label">
-              <i class="fa-solid fa-route" style="color: #2563eb;"></i> Chronological Highway (1938–1948)
+              <i class="fa-solid fa-route" style="color: #2563eb;"></i> Chronological Highway (1933–1954)
             </div>
             <div class="ks2-highway-controls">
               <button class="ks2-ctrl-btn" id="ks2-btn-prev" ${activeIndex === 0 ? 'disabled' : ''}>
@@ -1015,7 +1024,7 @@ export function renderKs2TimelineSlider(container) {
             <div>
               <div class="ks2-detail-top-row">
                 <span class="ks2-date-pill">${current.month}</span>
-                <span class="ks2-step-counter">Milestone ${activeIndex + 1} of ${list.length}</span>
+                <span class="ks2-step-counter">Milestone ${activeIndex + 1} of ${list.length} • ${current.refTextbook}</span>
               </div>
 
               <h2 class="ks2-milestone-title">${current.title}</h2>
@@ -1024,7 +1033,7 @@ export function renderKs2TimelineSlider(container) {
 
               <div class="ks2-callouts-grid">
                 <div class="ks2-callout-card">
-                  <div class="ks2-callout-title"><i class="fa-solid fa-lightbulb"></i> Why It Matters</div>
+                  <div class="ks2-callout-title"><i class="fa-solid fa-lightbulb"></i> Why It Mattered</div>
                   <div class="ks2-callout-text">${current.significance}</div>
                 </div>
                 <div class="ks2-callout-card" style="border-left-color: #059669;">
@@ -1040,8 +1049,8 @@ export function renderKs2TimelineSlider(container) {
 
               <div class="ks2-detective-box">
                 <div class="ks2-detective-header">
-                  <span><i class="fa-solid fa-magnifying-glass"></i> Historical Detective Challenge</span>
-                  <button class="ks2-reveal-btn" id="ks2-btn-reveal">Reveal Clue</button>
+                  <span><i class="fa-solid fa-magnifying-glass"></i> Quick History Check</span>
+                  <button class="ks2-reveal-btn" id="ks2-btn-reveal">Reveal Answer</button>
                 </div>
                 <div class="ks2-detective-q">${current.detectiveQuestion}</div>
                 <div class="ks2-detective-a" id="ks2-detective-answer">
@@ -1053,15 +1062,15 @@ export function renderKs2TimelineSlider(container) {
             <!-- Bottom Action Navigation -->
             <div class="ks2-actions-row">
               <div class="ks2-action-links">
-                <a href="/units/ks2_ww2/textbook.html" target="_blank" class="ks2-link-btn primary">
-                  <i class="fa-solid fa-book-open"></i> Read in Master Textbook (${current.refTextbook.split('•')[0].trim()})
+                <a href="${textbookUrl}" target="_blank" class="ks2-link-btn primary">
+                  <i class="fa-solid fa-book-open"></i> Master Textbook (${current.refTextbook.split('•')[0].trim()})
                 </a>
                 <a href="${current.worksheetUrl}" target="_blank" class="ks2-link-btn secondary">
-                  <i class="fa-solid fa-file-pen"></i> Open Worksheet
+                  <i class="fa-solid fa-file-pen"></i> Open Lesson Worksheet
                 </a>
               </div>
               <span style="font-size: 0.74rem; color: #64748b; font-weight: 600;">
-                <i class="fa-solid fa-keyboard" style="margin-right: 4px;"></i> Use &larr; &rarr; arrow keys to navigate
+                <i class="fa-solid fa-keyboard" style="margin-right: 4px;"></i> Use &larr; &rarr; arrow keys to step through
               </span>
             </div>
           </div>
@@ -1069,12 +1078,10 @@ export function renderKs2TimelineSlider(container) {
       </div>
     `;
 
-    // Attach Event Listeners
     setupEvents(list);
   }
 
   function setupEvents(list) {
-    // Range Slider Input
     const rangeSlider = container.querySelector('#ks2-range-slider');
     if (rangeSlider) {
       rangeSlider.addEventListener('input', (e) => {
@@ -1083,7 +1090,6 @@ export function renderKs2TimelineSlider(container) {
       });
     }
 
-    // Node items click
     container.querySelectorAll('.ks2-node-item').forEach((node) => {
       node.addEventListener('click', () => {
         activeIndex = parseInt(node.getAttribute('data-index'), 10);
@@ -1091,7 +1097,6 @@ export function renderKs2TimelineSlider(container) {
       });
     });
 
-    // Prev / Next Buttons
     const btnPrev = container.querySelector('#ks2-btn-prev');
     const btnNext = container.querySelector('#ks2-btn-next');
     if (btnPrev) {
@@ -1111,13 +1116,17 @@ export function renderKs2TimelineSlider(container) {
       });
     }
 
-    // Play / Pause Presentation Tour
     const btnPlay = container.querySelector('#ks2-btn-play');
     if (btnPlay) {
       btnPlay.addEventListener('click', () => {
         isPlaying = !isPlaying;
         if (isPlaying) {
           playInterval = setInterval(() => {
+            if (!document.getElementById('ks2-range-slider')) {
+              clearInterval(playInterval);
+              isPlaying = false;
+              return;
+            }
             const currentList = getFilteredMilestones();
             if (activeIndex < currentList.length - 1) {
               activeIndex++;
@@ -1133,7 +1142,6 @@ export function renderKs2TimelineSlider(container) {
       });
     }
 
-    // Filter Chips
     container.querySelectorAll('.ks2-filter-chip').forEach((chip) => {
       chip.addEventListener('click', () => {
         activeFilter = chip.getAttribute('data-filter');
@@ -1142,19 +1150,17 @@ export function renderKs2TimelineSlider(container) {
       });
     });
 
-    // Reveal Detective Answer
     const btnReveal = container.querySelector('#ks2-btn-reveal');
     const ansBox = container.querySelector('#ks2-detective-answer');
     if (btnReveal && ansBox) {
       btnReveal.addEventListener('click', () => {
         const isShown = ansBox.style.display === 'block';
         ansBox.style.display = isShown ? 'none' : 'block';
-        btnReveal.textContent = isShown ? 'Reveal Clue' : 'Hide Clue';
+        btnReveal.textContent = isShown ? 'Reveal Answer' : 'Hide Answer';
       });
     }
   }
 
-  // Keyboard Navigation Listeners
   const keyHandler = (e) => {
     if (!document.getElementById('ks2-range-slider')) {
       window.removeEventListener('keydown', keyHandler);

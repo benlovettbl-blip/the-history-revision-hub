@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>KS2 History Worksheet • Lesson 4: Vera's Journey & The Kindertransport (1938–1939)</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --ink-muted: #475569;
+      --navy-primary: #1e3a8a;
+      --navy-deep: #0f172a;
+      --parchment: #fdfbf7;
+      --accent-gold: #b45309;
+      --border-gray: #cbd5e1;
+      --cut-guide: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    body {
+      background: #e2e8f0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .screen-toolbar-title {
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .screen-toolbar-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .screen-toolbar a,
+    .screen-toolbar button {
+      background: #1e3a8a;
+      color: #ffffff;
+      border: 1px solid #3b82f6;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .screen-toolbar button.print-btn {
+      background: #f59e0b;
+      color: #0f172a;
+      border-color: #f59e0b;
+    }
+
+    .worksheet-page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+      margin: 8mm auto;
+      padding: 7.5mm 8mm 6.5mm 8mm;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .worksheet-page {
+        margin: 0;
+        box-shadow: none !important;
+      }
+    }
+
+    .exercise-book-cutline {
+      width: 100%;
+      flex: 1;
+      min-height: 0;
+      border: 1.5px dashed var(--cut-guide);
+      border-radius: 6px;
+      padding: 4.5mm 5.5mm 4mm 5.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background: #ffffff;
+      overflow: visible;
+    }
+
+    .cut-indicator {
+      position: absolute;
+      top: -2.6mm;
+      left: 12mm;
+      background: #ffffff;
+      padding: 0 6px;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #64748b;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .sheet-masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--navy-deep);
+      padding-bottom: 1.8mm;
+      margin-bottom: 2mm;
+      flex-shrink: 0;
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-badge {
+      background: var(--navy-deep);
+      color: #ffffff;
+      font-family: 'Cinzel', serif;
+      font-size: 7.5pt;
+      font-weight: 800;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.05em;
+    }
+
+    .brand-text {
+      font-size: 7.6pt;
+      font-weight: 800;
+      color: var(--navy-primary);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .student-fields {
+      display: flex;
+      gap: 10px;
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--ink);
+      align-items: center;
+    }
+
+    .field-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .field-line {
+      display: inline-block;
+      width: 34mm;
+      border-bottom: 1.2px solid var(--ink);
+      height: 3.5mm;
+    }
+
+    .field-line.short {
+      width: 20mm;
+    }
+
+    .enquiry-banner {
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 2.4mm 3.5mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3mm;
+      margin-bottom: 2.2mm;
+      flex-shrink: 0;
+    }
+
+    .enquiry-title-group h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 10.6pt;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      line-height: 1.18;
+    }
+
+    .enquiry-title-group .enquiry-question {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8pt;
+      font-style: italic;
+      color: #e2e8f0;
+      margin-top: 0.6mm;
+      line-height: 1.25;
+    }
+
+    .lesson-badge {
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 1.6mm 3mm;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* STORY & SOURCE A */
+    .story-evidence-grid {
+      display: grid;
+      grid-template-columns: 64mm 1fr;
+      gap: 3mm;
+      margin-bottom: 2.2mm;
+      flex-shrink: 0;
+    }
+
+    .archival-plate-box {
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 1.6mm;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .archival-img {
+      width: 100%;
+      height: 40mm;
+      object-fit: contain;
+      background: #f8fafc;
+      border-radius: 3px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .archival-caption {
+      font-size: 7.5pt;
+      line-height: 1.24;
+      color: var(--ink-muted);
+      margin-top: 1mm;
+      text-align: center;
+    }
+
+    .story-text-box {
+      background: var(--parchment);
+      border: 1px solid #fed7aa;
+      border-left: 3.5px solid var(--accent-gold);
+      border-radius: 4px;
+      padding: 2.2mm 3mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .story-header {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 1mm;
+    }
+
+    .story-prose {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.4pt;
+      line-height: 1.42;
+      color: #1e293b;
+    }
+
+    .story-prose strong {
+      color: var(--navy-primary);
+    }
+
+    /* TASK CARDS */
+    .task-card {
+      background: #ffffff;
+      border: 1.2px solid var(--border-gray);
+      border-radius: 5px;
+      padding: 2.2mm 3mm;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2mm;
+      min-height: 0;
+    }
+
+    .task-card.last {
+      margin-bottom: 0;
+    }
+
+    .p1-task1 { flex: 1.12; }
+    .p1-task2 { flex: 1.02; }
+    .p2-task3 { flex: 1.34; }
+    .p2-task4 { flex: 0.86; }
+    .p2-task5 { flex: 0.84; }
+
+    .task-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5mm;
+      padding-bottom: 1mm;
+      border-bottom: 1px solid #e2e8f0;
+      flex-shrink: 0;
+    }
+
+    .task-num-title {
+      font-size: 8.5pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+    }
+
+    .task-tag {
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    .artifact-detective-grid {
+      display: grid;
+      grid-template-columns: 60mm 1fr;
+      gap: 3mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .artifact-container {
+      background: #fdfbf7;
+      border: 1px dashed #d97706;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.8mm;
+      min-height: 0;
+    }
+
+    .artifact-img {
+      width: 100%;
+      flex: 1;
+      min-height: 0;
+      max-height: 58mm;
+      object-fit: contain;
+      border-radius: 3px;
+      background: #ffffff;
+    }
+
+    .artifact-caption {
+      font-size: 7.5pt;
+      line-height: 1.22;
+      color: var(--ink-muted);
+      text-align: center;
+      margin-top: 1mm;
+      flex-shrink: 0;
+    }
+
+    .detective-questions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.8mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .q-block {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .q-item {
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    .ruled-lines-box {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-evenly;
+      min-height: 0;
+    }
+
+    .ruled-line {
+      height: 7.2mm;
+      border-bottom: 1.2px dashed #94a3b8;
+      width: 100%;
+    }
+
+    .ruled-lines-box .ruled-line {
+      flex: 1;
+      height: auto;
+      min-height: 5.0mm;
+      max-height: 7.8mm;
+    }
+
+    /* TASK 2: 3-STEP TIMELINE */
+    .timeline-3col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.6mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .timeline-step-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-top: 3.5px solid var(--navy-primary);
+      border-radius: 4px;
+      padding: 1.8mm 2.2mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .step-badge {
+      font-size: 7.5pt;
+      font-weight: 800;
+      color: var(--navy-primary);
+      letter-spacing: 0.03em;
+    }
+
+    .step-title {
+      font-size: 8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+      margin: 0.3mm 0;
+    }
+
+    .step-desc {
+      font-size: 7.5pt;
+      color: var(--ink-muted);
+      line-height: 1.22;
+      margin-bottom: 1mm;
+    }
+
+    .step-prompt {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      line-height: 1.2;
+      padding-top: 1mm;
+      border-top: 1px dashed #cbd5e1;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    /* PAGE 2: TASK 3 */
+    .visual-investigation-grid {
+      display: grid;
+      grid-template-columns: 60mm 1fr;
+      gap: 3mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .canvas-drawing-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1.5px dashed #b45309;
+      border-radius: 5px;
+      background: #fdfbf7;
+      padding: 2.5mm;
+    }
+
+    .craft-mini-box {
+      width: 100%;
+      border-radius: 5px;
+      padding: 3mm;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .canvas-subcaption {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #92400e;
+      text-align: center;
+      margin-top: 1.5mm;
+      line-height: 1.22;
+    }
+
+    .investigation-ledger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.4mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .ledger-row {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--navy-primary);
+      border-radius: 4px;
+      padding: 1.3mm 2.2mm;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .ledger-item-title {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+    }
+
+    .ledger-reason-prompt {
+      font-size: 7.5pt;
+      color: var(--ink-muted);
+      line-height: 1.18;
+      margin-bottom: 0.2mm;
+    }
+
+    /* TASK 4: THINKING HEADS */
+    .thinking-heads-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .head-card {
+      background: #f8fafc;
+      border: 1px solid var(--border-gray);
+      border-radius: 5px;
+      padding: 1.8mm 2.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+
+    .head-title-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0.6mm;
+      flex-shrink: 0;
+    }
+
+    .head-badge {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--navy-primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7.5pt;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .head-name {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--navy-deep);
+      line-height: 1.2;
+    }
+
+    .thought-prompt {
+      font-size: 7.5pt;
+      color: var(--navy-primary);
+      font-weight: 600;
+      line-height: 1.22;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    /* TASK 5: MISSION CHALLENGE */
+    .synthesis-container {
+      background: #fdfbf7;
+      border: 1.2px solid #fed7aa;
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 5px;
+      padding: 1.8mm 2.8mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .synthesis-header {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.2pt;
+      font-style: italic;
+      color: var(--navy-primary);
+      font-weight: 700;
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
+
+    .sheet-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.5mm;
+      margin-top: 1.5mm;
+      border-top: 1px solid #cbd5e1;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--ink-muted);
+      flex-shrink: 0;
+    }
+
+    /* PAGE 3 PORTRAIT SUITCASE CRAFT */
+    .suitcase-portrait-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5mm;
+      min-height: 0;
+    }
+
+    .suitcase-checklist-card {
+      background: #fdfbf7;
+      border: 1.2px solid #d97706;
+      border-radius: 5px;
+      padding: 2.5mm 3.5mm;
+      flex-shrink: 0;
+    }
+
+    .checklist-heading {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #78350f;
+      margin-bottom: 1.5mm;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2mm 4mm;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 7.8pt;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .tick-box {
+      width: 3.4mm;
+      height: 3.4mm;
+      border: 1.2px solid #78350f;
+      border-radius: 2px;
+      background: #ffffff;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .checklist-note {
+      margin-top: 1.8mm;
+      padding-top: 1.4mm;
+      border-top: 1px dashed #fbbf24;
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+    }
+
+    .vintage-suitcase-outer {
+      flex: 1;
+      border: 3px solid #78350f;
+      border-radius: 10px;
+      background: #fef3c7;
+      padding: 5mm 5mm 4mm 5mm;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 3mm;
+      margin-top: 3mm;
+      min-height: 0;
+    }
+
+    .suitcase-top-handle {
+      position: absolute;
+      top: -5mm;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 38mm;
+      height: 5mm;
+      border: 3px solid #78350f;
+      border-bottom: none;
+      border-radius: 6px 6px 0 0;
+      background: transparent;
+    }
+
+    .suitcase-clasp {
+      position: absolute;
+      top: -2.2mm;
+      width: 9mm;
+      height: 4.4mm;
+      background: #f59e0b;
+      border: 1.5px solid #78350f;
+      border-radius: 2px;
+    }
+    .suitcase-clasp.left { left: 26mm; }
+    .suitcase-clasp.right { right: 26mm; }
+
+    .suitcase-travel-tag {
+      background: #ffffff;
+      border: 1.5px solid #b45309;
+      border-radius: 4px;
+      padding: 1.6mm 3mm;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .tag-title {
+      font-size: 8pt;
+      font-weight: 800;
+      color: #78350f;
+      letter-spacing: 0.04em;
+    }
+
+    .tag-route {
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-top: 0.4mm;
+    }
+
+    .suitcase-canvas-area {
+      flex: 1;
+      background: #ffffff;
+      border: 2px dashed #b45309;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6mm;
+      min-height: 0;
+    }
+
+    .suitcase-watermark {
+      font-size: 9pt;
+      font-weight: 800;
+      color: rgba(120, 53, 15, 0.25);
+      text-align: center;
+      letter-spacing: 0.06em;
+      max-width: 120mm;
+      line-height: 1.4;
+    }
+
+    .suitcase-caption-box {
+      background: #ffffff;
+      border: 1px solid #d97706;
+      border-radius: 5px;
+      padding: 2mm 3mm;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="screen-toolbar">
+    <div class="screen-toolbar-title">KS2 World War II • Lesson 04 of 11: Vera's Journey & The Kindertransport (1938–1939)</div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&unit=ks2_ww2">← Back to KS2 Unit</a>
+      <a href="/pdfs/ks2_ww2/lesson_04_kindertransport_worksheet.pdf" download>⬇ Download PDF</a>
+      <button class="print-btn" onclick="window.print()">🖨 Print Worksheet</button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PAGE 1: SOURCE ENQUIRY & CHRONOLOGY (SHEET 1)
+       ======================================================== -->
+  <div class="worksheet-page" id="sheet-page-1">
+    <div class="exercise-book-cutline">
+      <div class="cut-indicator">
+        ✂ Cut along dashed line to stick neatly into exercise book
+      </div>
+
+      <div class="sheet-masthead">
+        <div class="brand-left">
+          <span class="brand-badge">KS2 HISTORY</span>
+          <span class="brand-text">KS2 WORLD WAR II • LESSON 04 OF 11</span>
+        </div>
+        <div class="student-fields">
+          <div class="field-item">Name: <span class="field-line"></span></div>
+          <div class="field-item">Date: <span class="field-line short"></span></div>
+        </div>
+      </div>
+
+      <div class="enquiry-banner">
+        <div class="enquiry-title-group">
+          <h1>Vera's Journey & The Kindertransport (1938–1939)</h1>
+          <p class="enquiry-question">Enquiry Question: How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?</p>
+        </div>
+        <div class="lesson-badge">
+          LESSON 04<br><span style="font-size: 7pt; font-weight:600;">OF 11 • KS2</span>
+        </div>
+      </div>
+
+      <div class="story-evidence-grid">
+        <div class="archival-plate-box">
+          <img src="../assets/kindertransport_arrival.jpg" class="archival-img" alt="Source A">
+          <p class="archival-caption"><strong>Source A (Photograph, Dec 1938):</strong> Young Kindertransport refugee children arriving in Britain wearing numbered tags and holding dolls.</p>
+        </div>
+        <div class="story-text-box">
+          <div class="story-header">Historical Background • Read Together</div>
+          <p class="story-prose">Days after <strong>Kristallnacht</strong> in November 1938, Britain agreed to let unaccompanied refugee children aged under 17 enter the country quickly if sponsors promised a <strong>£50 guarantee</strong> per child. Heartbreakingly, parents were not given visas to travel with them.<br><br>Between December 1938 and August 1939, nearly <strong>10,000</strong> mostly Jewish children escaped on the <strong>Kindertransport</strong>. In May 1939, nine-year-old <strong>Vera Löwyová</strong> (later <strong>Vera Schaufeld</strong>) left Prague with one small suitcase, her porcelain doll, and a little autograph diary signed by her parents.</p>
+        </div>
+      </div>
+
+      <div class="task-card p1-task1">
+        <div class="task-header">
+          <span class="task-num-title">Task 1: Identity Tag & Route Map Detective • Crossing to Safety</span>
+          <span class="task-tag">Dual Source Enquiry</span>
+        </div>
+        <div class="artifact-detective-grid">
+          <div class="artifact-container">
+            <img src="../assets/kindertransport_route_map.jpg" class="artifact-img" alt="Source B">
+            <p class="artifact-caption"><strong>Source B (Map):</strong> Kindertransport trains across Europe via the Dutch border and Hook of Holland ferry to Harwich and London.</p>
+          </div>
+          <div class="detective-questions">
+            <div class="q-block">
+              <p class="q-item">1. Why did Kindertransport children wear numbered cardboard tags on string around their necks when arriving at Harwich and London?</p>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="q-block">
+              <p class="q-item">2. Using Source B, why did crossing the border into the Netherlands feel like the first real moment of safety on the journey?</p>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-card p1-task2 last">
+        <div class="task-header">
+          <span class="task-num-title">Task 2: Vera's Journey Timeline • Prague to Liverpool Street</span>
+          <span class="task-tag">Chronology</span>
+        </div>
+        <div class="timeline-3col">
+          
+          <div class="timeline-step-card">
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 1 • NOV 1938</div>
+              <div class="step-title">Parliament Approves Rescue</div>
+              <p class="step-desc">After Kristallnacht, Britain allows children under 17 in with a £50 sponsor guarantee, without parents.</p>
+            </div>
+            <p class="step-prompt">Why was this decision both lifesaving and heartbreaking?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+          <div class="timeline-step-card">
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 2 • MAY 1939</div>
+              <div class="step-title">Goodbye at Prague Station</div>
+              <p class="step-desc">Nine-year-old Vera waves goodbye to Mum and Dad, crossing via the Netherlands to Hook of Holland.</p>
+            </div>
+            <p class="step-prompt">How did Dutch volunteers welcome frightened children at the border?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+          <div class="timeline-step-card">
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 3 • HARWICH & LONDON</div>
+              <div class="step-title">Meeting Foster Families</div>
+              <p class="step-desc">Ferry docks at Harwich in Essex; steam trains carry children to London Liverpool Street Station.</p>
+            </div>
+            <p class="step-prompt">What challenges faced a 9-year-old who spoke no English yet?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-footer">
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 04 OF 11 • Sheet 1 of 3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PAGE 2: INVESTIGATION, PERSPECTIVES & CHALLENGE (SHEET 2)
+       ======================================================== -->
+  <div class="worksheet-page" id="sheet-page-2">
+    <div class="exercise-book-cutline">
+      <div class="cut-indicator">
+        ✂ Cut along dashed line to stick neatly into exercise book
+      </div>
+
+      <div class="sheet-masthead">
+        <div class="brand-left">
+          <span class="brand-badge">KS2 ENQUIRY</span>
+          <span class="brand-text">10,000 Unaccompanied Refugee Children Rescued to Britain</span>
+        </div>
+        <div class="student-fields">
+          <div class="field-item">Name: <span class="field-line"></span></div>
+          <div class="field-item">LESSON 04 • Sheet 2 of 3</div>
+        </div>
+      </div>
+
+      <div class="task-card p2-task3">
+        <div class="task-header">
+          <span class="task-num-title">Task 3: Vera's One Small Suitcase • Treasured Memories</span>
+          <span class="task-tag">Historical Empathy</span>
+        </div>
+        <div class="visual-investigation-grid">
+          <div class="canvas-drawing-col">
+            
+        <div class="craft-mini-box" style="background:#fdfbf7; border:2px solid #1e3a8a;">
+          <div style="width:6mm; height:6mm; border-radius:50%; border:2px solid #1e3a8a; background:#ffffff; margin:0 auto 2mm;"></div>
+          <div style="font-size:8pt; font-weight:800; color:#1e3a8a; text-align:center; border-bottom:1px solid #93c5fd; padding-bottom:1mm; margin-bottom:2mm;">KINDERTRANSPORT CARD</div>
+          <div style="font-size:7.6pt; line-height:1.7; color:#1e293b;">
+            <strong>NAME:</strong> Vera Löwyová (Age 9)<br>
+            <strong>FROM:</strong> Prague, Czechoslovakia<br>
+            <strong>PORT:</strong> Hook of Holland → Harwich<br>
+            <strong>STATION:</strong> London Liverpool Street
+          </div>
+        </div>
+            <p class="canvas-subcaption">Children were allowed only one small case and no valuables</p>
+          </div>
+          <div class="investigation-ledger">
+            
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">1. Warm Coat, Dresses & Sturdy Shoes</div>
+                <p class="ledger-reason-prompt">Why did Vera’s mother pack clothes slightly too big for a 9-year-old?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">2. Black-and-White Family Photograph</div>
+                <p class="ledger-reason-prompt">Why was a photo of Mum, Dad, and Grandmother so precious?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">3. Vera's Treasured English Porcelain Doll</div>
+                <p class="ledger-reason-prompt">How could a familiar toy comfort a young child travelling alone?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+            <div class="ledger-row">
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">4. Small Autograph Diary Signed by Mum & Dad</div>
+                <p class="ledger-reason-prompt">Why did Vera treasure her parents’ handwritten messages all her life?</p>
+              </div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-card p2-task4">
+        <div class="task-header">
+          <span class="task-num-title">Task 4: Thinking Heads • Two Historical Viewpoints</span>
+          <span class="task-tag">Perspectives</span>
+        </div>
+        <div class="thinking-heads-grid">
+          <div class="head-card">
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">1</span>
+                <span class="head-name">Nine-Year-Old Vera on the Train from Prague</span>
+              </div>
+              <p class="thought-prompt">What are you feeling as your parents wave on the platform and you hold your doll and autograph diary on the way to Britain?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+          <div class="head-card">
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">2</span>
+                <span class="head-name">British Foster Mother at Liverpool Street Station</span>
+              </div>
+              <p class="thought-prompt">How can you help a tired refugee child who speaks Czech feel safe and welcome in your home tonight?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-card p2-task5 last">
+        <div class="task-header">
+          <span class="task-num-title">Task 5: Historian Mission Challenge • Answering the Enquiry</span>
+          <span class="task-tag">Extended Writing</span>
+        </div>
+        <div class="synthesis-container">
+          <p class="synthesis-header">Enquiry Answer: Why did the Kindertransport of 1938–1939 bring both safety and heartbreak for refugee children and their families?</p>
+          <div class="ruled-lines-box">
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-footer">
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 04 OF 11 • Sheet 2 of 3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PAGE 3: OPTIONAL VINTAGE SUITCASE ACTIVITY (A4 PORTRAIT)
+       ======================================================== -->
+  <div class="worksheet-page" id="sheet-page-3">
+    <div class="exercise-book-cutline">
+      <div class="cut-indicator">
+        ✂ Cut along dashed line to stick neatly into exercise book
+      </div>
+
+      <div class="sheet-masthead">
+        <div class="brand-left">
+          <span class="brand-badge">KS2 CRAFT SHEET</span>
+          <span class="brand-text">THE HISTORY REVISION HUB • KS2 WORLD WAR II</span>
+        </div>
+        <div class="student-fields">
+          <div class="field-item">Name: <span class="field-line"></span></div>
+          <div class="field-item">LESSON 04 • Sheet 3 of 3</div>
+        </div>
+      </div>
+
+      <div class="enquiry-banner">
+        <div class="enquiry-title-group">
+          <h1>VERA'S ONE SMALL SUITCASE • THE KINDERTRANSPORT (1938–1939)</h1>
+          <p class="enquiry-question">Each child could bring only ONE small suitcase and no money or valuables. Draw, colour, and label the items Vera packed to remember home.</p>
+        </div>
+        <div class="lesson-badge">
+          LESSON 04<br><span style="font-size: 7pt; font-weight:600;">OPTIONAL CRAFT</span>
+        </div>
+      </div>
+
+      <div class="suitcase-portrait-wrap">
+        <div class="suitcase-checklist-card">
+          <div class="checklist-heading">Vera's Real Suitcase Belongings (Tick as you draw):</div>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick-box"></span><span>Warm winter coat & woollen dresses</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Sturdy shoes & knitted socks</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Family photograph of Mum, Dad & Grandmother</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Treasured English porcelain doll</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Little autograph diary signed by Mum & Dad in Czech</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Handkerchief & wash bag</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Czech-to-English pocket word book</span></div>
+          </div>
+          <div class="checklist-note">Contrast Check: Unlike British evacuees inside the UK, Kindertransport children fled persecution across borders BEFORE war started.</div>
+        </div>
+
+        <div class="vintage-suitcase-outer">
+          <div class="suitcase-top-handle"></div>
+          <div class="suitcase-clasp left"></div>
+          <div class="suitcase-clasp right"></div>
+
+          <div class="suitcase-travel-tag">
+            <div class="tag-title">KINDERTRANSPORT TRAVEL TAG • MAY 1939</div>
+            <div class="tag-route">PRAGUE → HOOK OF HOLLAND → HARWICH → LONDON</div>
+          </div>
+
+          <div class="suitcase-canvas-area">
+            <div class="suitcase-watermark">
+              DRAW, COLOUR &amp; LABEL YOUR PACKED BELONGINGS INSIDE THIS SUITCASE
+            </div>
+          </div>
+
+          <div class="suitcase-caption-box">
+            <div class="q-item">My Most Precious Item &amp; Why I Chose It:</div>
+            <div class="ruled-line" style="height:6.4mm;"></div>
+            <div class="ruled-line" style="height:6.4mm;"></div>
+            <div class="ruled-line" style="height:6.4mm;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-footer">
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 04 OF 11 • Sheet 3 of 3 (Optional Cut-Out Craft)</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

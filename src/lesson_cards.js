@@ -563,10 +563,11 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               cardPos = 'center 20%';
             }
 
+            const useCoverFit = Boolean(lesson.card_image) || unitData?.id === 'ks2_ww2' || currentUnitId === 'ks2_ww2';
             topMediaHTML = `
               <div style="position: relative; width: 100%; height: 165px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
-                <div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>
-                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));" />
+                ${useCoverFit ? '' : `<div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
+                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));'}" />
               </div>
             `;
           } else {
@@ -1160,8 +1161,13 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
 
     return lessonsHTML;
   } else {
+    const isKs2UnitCards =
+      unitData?.id === 'ks2_ww2' ||
+      currentUnitId === 'ks2_ww2' ||
+      Boolean(unitData?.is_ks2) ||
+      Boolean(currentUnitData && currentUnitData.id === 'ks2_ww2');
     lessonsHTML =
-      '<h2 style="font-family: \'Playfair Display\', serif; color: #1a237e; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 40px; margin-bottom: 24px;">Key Topic Lessons</h2><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; text-align: left;">';
+      `<h2 style="font-family: 'Playfair Display', serif; color: #1a237e; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 40px; margin-bottom: 24px;">${isKs2UnitCards ? 'Enquiry Lessons (1–11)' : 'Key Topic Lessons'}</h2><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; text-align: left;">`;
     if (unitData.lessons) {
       unitData.lessons.forEach((lesson, index) => {
         let cardBadge = `Lesson ${index + 1}`;
@@ -1195,34 +1201,13 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             cardPos = 'center 20%';
           }
 
-          if (
-            (!cardPos || cardPos === 'center') &&
-            (unitData?.id === 'ks2_ww2' ||
-              currentUnitId === 'ks2_ww2' ||
-              (currentUnitData && currentUnitData.id === 'ks2_ww2'))
-          ) {
-            const ks2CardPositions = {
-              lesson_1: 'center 82%',
-              lesson_2: 'center 55%',
-              lesson_3: 'center 45%',
-              lesson_4: 'center 32%',
-              lesson_5: 'center 22%',
-              lesson_6: 'center 70%',
-              lesson_7: 'center 32%',
-              lesson_8: 'center 50%',
-              lesson_9: 'center 20%',
-              lesson_10: 'center 88%',
-            };
-            if (ks2CardPositions[lesson.id]) {
-              cardPos = ks2CardPositions[lesson.id];
-            }
-          }
-          if (!cardPos) cardPos = 'center';
+          if (!cardPos) cardPos = 'center center';
+          const useCoverFit = Boolean(lesson.card_image) || isKs2UnitCards;
 
           topMediaHTML = `
-            <div style="position: relative; width: 100%; height: 165px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
-              <div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>
-              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));" />
+            <div style="position: relative; width: 100%; height: 175px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
+              ${useCoverFit ? '' : `<div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
+              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));'}" />
             </div>
           `;
         } else {

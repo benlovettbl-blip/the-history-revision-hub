@@ -8,6 +8,7 @@ import {
   renderDashboard,
   renderInteractiveQuiz,
   renderTimeline,
+  renderIndividualsView,
   renderBookletView,
   renderMockExamsView,
   renderProfileView,
@@ -17,27 +18,479 @@ import {
   renderReadingView,
   renderMarkingView,
 } from './views.js'; // Trigger HMR
+import { jumpToKeyIndividual } from './key_individuals.js';
+
+export { jumpToKeyIndividual };
+
+function isKs2UnitIdentifier(unitId, unitData = {}) {
+  return Boolean(
+    unitData?.is_ks2 ||
+      unitData?.keyStage === 'KS2' ||
+      unitData?.key_stage === 'KS2' ||
+      String(unitId || unitData?.id || '').toLowerCase().startsWith('ks2_'),
+  );
+}
+
+export function syncKs2PortalState(unitId = null, unitData = null, viewName = null) {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return false;
+  const urlParams = new URLSearchParams(window.location.search);
+  const portalParam = (urlParams.get('portal') || '').toLowerCase();
+  const isLockedKs2 =
+    portalParam === 'ks2' &&
+    (urlParams.get('locked') === 'true' ||
+      urlParams.get('mode') === 'pupil' ||
+      urlParams.get('safeguard') === 'true');
+
+  if (!isLockedKs2) {
+    try {
+      sessionStorage.removeItem('hh_portal');
+    } catch (e) {}
+  }
+
+  const activeView = viewName || appStore.state.currentView || state.currentView || urlParams.get('view') || 'dashboard';
+  const isGlobalHubView =
+    activeView === 'dashboard' ||
+    activeView === 'profile' ||
+    activeView === 'curriculum' ||
+    activeView === 'department-portal' ||
+    activeView === 'competitions' ||
+    activeView === 'chess' ||
+    activeView === 'ai-prompt-craft';
+
+  const unitParam = isGlobalHubView
+    ? null
+    : unitId || urlParams.get('unit') || state.selectedUnitId || window.currentUnitId;
+  const resolvedData = isGlobalHubView
+    ? {}
+    : unitData || state.activeUnitData || window.currentUnitData || {};
+
+  const isKs2UnitContext = Boolean(
+    isLockedKs2 || (!isGlobalHubView && isKs2UnitIdentifier(unitParam, resolvedData)),
+  );
+
+  if (document.body) {
+    document.body.classList.toggle('ks2-mode-active', isKs2UnitContext);
+  }
+
+  // Keep search bar placeholder contextual when inside a KS2 unit, normal everywhere else
+  const searchPlaceholder = document.querySelector('#header-search-bar .search-placeholder');
+  if (searchPlaceholder) {
+    searchPlaceholder.textContent = isKs2UnitContext
+      ? 'Search WWII topics, evacuees, Blitz, Bletchley...'
+      : 'Search keywords, lessons...';
+  }
+  const searchModalInput = document.getElementById('keyword-search-input');
+  if (searchModalInput) {
+    searchModalInput.placeholder = isKs2UnitContext
+      ? 'Search WWII topics, evacuees, Blitz, Bletchley...'
+      : 'Search keywords, lessons, concepts...';
+  }
+
+  updateHeaderBackBtn(activeView);
+
+  // Only hide Secondary/GCSE enrichment nav items when explicitly in locked KS2 pupil mode
+  ['nav-competitions', 'nav-chess', 'nav-ai-prompt-craft'].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = isLockedKs2 ? 'none' : '';
+  });
+  const footer = document.getElementById('app-global-footer');
+  if (footer) footer.style.display = isKs2UnitContext ? 'none' : '';
+
+  return isKs2UnitContext;
+}
+window.syncKs2PortalState = syncKs2PortalState;
+
+export function getUnitData(unitId) {
+  const id =
+    unitId ||
+    state.selectedUnitId ||
+    (typeof window !== 'undefined' && window.currentUnitId) ||
+    (appStore && appStore.state && appStore.state.selectedUnitId);
+  if (!id) {
+    return (
+      state.activeUnitData ||
+      (typeof window !== 'undefined' && window.currentUnitData) ||
+      {}
+    );
+  }
+  if (
+    state.selectedUnitId === id &&
+    state.activeUnitData &&
+    Array.isArray(state.activeUnitData.lessons)
+  ) {
+    return state.activeUnitData;
+  }
+  if (
+    typeof window !== 'undefined' &&
+    window.currentUnitId === id &&
+    window.currentUnitData &&
+    Array.isArray(window.currentUnitData.lessons)
+  ) {
+    return window.currentUnitData;
+  }
+  if (state.db && state.db[id]) {
+    const payload = state.db[id];
+    return payload.data || (payload.lessons ? payload : {});
+  }
+  return (
+    state.activeUnitData ||
+    (typeof window !== 'undefined' && window.currentUnitData) ||
+    {}
+  );
+}
+if (typeof window !== 'undefined') {
+  window.getUnitData = getUnitData;
+}
+
+export function saveUnitReturnOrigin(customOrigin = null) {
+  if (typeof window === 'undefined') return;
+  const currentScroll = window.scrollY || document.documentElement.scrollTop || 0;
+
+  if (window.history && typeof window.history.replaceState === 'function') {
+    try {
+      const extraHistory = {};
+      if (
+        (window.currentView === 'timeline' || customOrigin?.view === 'timeline') &&
+        typeof (customOrigin?.timelineMilestoneIdx ?? window._cmeActiveMilestoneIdx) === 'number'
+      ) {
+        extraHistory.timelineMilestoneIdx =
+          customOrigin?.timelineMilestoneIdx ?? window._cmeActiveMilestoneIdx;
+      }
+      window.history.replaceState(
+        { ...(window.history.state || {}), scrollY: currentScroll, ...extraHistory },
+        '',
+        window.location.href,
+      );
+    } catch (e) {}
+  }
+
+  if (customOrigin && typeof customOrigin === 'object') {
+    window._unitReturnOrigin = {
+      scrollY: currentScroll,
+      ...customOrigin,
+    };
+    window._unitReturnOriginSavedTs = Date.now();
+    window._unitReturnOriginCustomTs = Date.now();
+    return;
+  }
+
+  if (
+    window._unitReturnOrigin &&
+    window._unitReturnOriginCustomTs &&
+    Date.now() - window._unitReturnOriginCustomTs < 140
+  ) {
+    return;
+  }
+
+  const activeView =
+    window.currentView ||
+    (appStore && appStore.state && appStore.state.currentView) ||
+    state.currentView ||
+    'dashboard';
+  const activeUnit =
+    window.currentUnitId ||
+    state.selectedUnitId ||
+    (appStore && appStore.state && appStore.state.selectedUnitId);
+
+  if (
+    activeView === 'lessons' &&
+    typeof window.currentLessonIndex === 'number' &&
+    window.currentLessonIndex >= 0 &&
+    activeUnit
+  ) {
+    const uData = getUnitData(activeUnit);
+    const lessonsList = (uData && (uData.lessons || uData.subtopics)) || [];
+    const lesson = lessonsList[window.currentLessonIndex] || null;
+    const shortLabel =
+      (lesson?.title?.match(/^(KT\s*\d+\.\d+|Lesson\s*\d+|Enquiry\s*\d+)/i)?.[0]) || 'Lesson';
+    window._unitReturnOrigin = {
+      view: 'lessons',
+      unitId: activeUnit,
+      lessonIndex: window.currentLessonIndex,
+      slug: lesson?.slug || null,
+      shortLabel,
+      scrollY: currentScroll,
+    };
+    window._unitReturnOriginSavedTs = Date.now();
+  } else if (activeView === 'timeline' && activeUnit) {
+    window._unitReturnOrigin = {
+      view: 'timeline',
+      unitId: activeUnit,
+      timelineMilestoneIdx: window._cmeActiveMilestoneIdx ?? 0,
+      shortLabel: 'Living Chronology',
+      scrollY: currentScroll,
+    };
+    window._unitReturnOriginSavedTs = Date.now();
+  } else if (activeView === 'lessons' && activeUnit) {
+    window._unitReturnOrigin = null;
+  }
+}
+if (typeof window !== 'undefined') {
+  window.saveUnitReturnOrigin = saveUnitReturnOrigin;
+}
+
+export function getReturnOriginLabel(unitId, fallback = 'Unit Overview') {
+  const targetUnit =
+    unitId ||
+    state.selectedUnitId ||
+    (typeof window !== 'undefined' && window.currentUnitId);
+  if (
+    typeof window !== 'undefined' &&
+    window._unitReturnOrigin &&
+    window._unitReturnOrigin.unitId === targetUnit &&
+    window._unitReturnOrigin.shortLabel
+  ) {
+    return 'Back to ' + window._unitReturnOrigin.shortLabel;
+  }
+  return fallback;
+}
+if (typeof window !== 'undefined') {
+  window.getReturnOriginLabel = getReturnOriginLabel;
+}
+
+function restoreSavedScrollPosition(yVal) {
+  if (typeof window === 'undefined') return;
+  const targetTop = Math.max(0, Number(yVal) || 0);
+  const applyScroll = () => {
+    const docEl = document.documentElement;
+    const prevBehavior = docEl ? docEl.style.scrollBehavior : '';
+    if (docEl) docEl.style.scrollBehavior = 'auto';
+    try {
+      window.scrollTo({ top: targetTop, left: 0, behavior: 'instant' });
+    } catch (e) {
+      window.scrollTo(0, targetTop);
+    }
+    if (docEl) {
+      docEl.scrollTop = targetTop;
+      docEl.style.scrollBehavior = prevBehavior;
+    }
+    if (document.body) document.body.scrollTop = targetTop;
+  };
+  requestAnimationFrame(() => {
+    applyScroll();
+    requestAnimationFrame(applyScroll);
+  });
+  setTimeout(applyScroll, 150);
+  setTimeout(applyScroll, 280);
+}
+
+export function returnToSavedOrigin(unitId) {
+  const targetUnit =
+    unitId ||
+    state.selectedUnitId ||
+    (typeof window !== 'undefined' && window.currentUnitId);
+
+  if (
+    typeof window !== 'undefined' &&
+    window._unitReturnOrigin &&
+    window._unitReturnOrigin.unitId === targetUnit
+  ) {
+    const orig = { ...window._unitReturnOrigin };
+    window._unitReturnOrigin = null;
+    window._unitReturnOriginCustomTs = 0;
+
+    if (orig.view === 'lessons' && typeof orig.lessonIndex === 'number') {
+      window._suppressLessonAutoScrollTop = true;
+      switchView('lessons', orig.unitId, false, {
+        skipScrollToTop: true,
+        returningToOrigin: true,
+      }).then(() => {
+        if (typeof window.renderLessonByIndex === 'function') {
+          window.renderLessonByIndex(orig.lessonIndex);
+        } else if (typeof window.viewLessonDetail === 'function') {
+          window.viewLessonDetail(orig.lessonIndex);
+        }
+        window._suppressLessonAutoScrollTop = false;
+        updateHeaderBackBtn('lessons');
+        restoreSavedScrollPosition(orig.scrollY || 0);
+      });
+      return true;
+    }
+
+    if (orig.view === 'timeline') {
+      window._cmeRestoreMilestoneIdx = orig.timelineMilestoneIdx ?? 0;
+      switchView('timeline', orig.unitId, false, {
+        skipScrollToTop: Boolean(orig.scrollY),
+        returningToOrigin: true,
+      }).then(() => {
+        updateHeaderBackBtn('timeline');
+        restoreSavedScrollPosition(orig.scrollY || 0);
+      });
+      return true;
+    }
+  }
+
+  if (typeof window !== 'undefined') {
+    window._unitReturnOrigin = null;
+    window.currentLessonIndex = null;
+  }
+  switchView('lessons', targetUnit);
+  return false;
+}
+if (typeof window !== 'undefined') {
+  window.returnToSavedOrigin = returnToSavedOrigin;
+}
+
+export function updateHeaderBackBtn(explicitView = null) {
+  if (typeof document === 'undefined' || typeof window === 'undefined') return;
+  const backBtn = document.getElementById('header-back-btn');
+  const mobileBrand = document.getElementById('header-mobile-brand');
+  const appHeader = document.querySelector('.app-header');
+  if (!backBtn) return;
+
+  const activeView =
+    explicitView ||
+    window.currentView ||
+    (appStore && appStore.state && appStore.state.currentView) ||
+    state.currentView ||
+    'dashboard';
+  const activeUnit =
+    state.selectedUnitId ||
+    window.currentUnitId ||
+    (appStore && appStore.state && appStore.state.selectedUnitId);
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const isLocked =
+    urlParams.get('locked') === 'true' ||
+    urlParams.get('mode') === 'pupil' ||
+    urlParams.get('safeguard') === 'true';
+
+  const isInsideActiveLesson =
+    activeView === 'lessons' &&
+    typeof window.currentLessonIndex === 'number' &&
+    window.currentLessonIndex >= 0;
+
+  const isUnitOverview = activeView === 'lessons' && !isInsideActiveLesson;
+
+  if (activeView === 'dashboard' || (isUnitOverview && isLocked)) {
+    backBtn.style.display = 'none';
+    if (appHeader) appHeader.classList.remove('has-back-btn');
+    if (mobileBrand) mobileBrand.style.display = '';
+    return;
+  }
+
+  backBtn.style.display = 'flex';
+  if (appHeader) appHeader.classList.add('has-back-btn');
+  if (mobileBrand && window.innerWidth <= 768) {
+    mobileBrand.style.display = 'none';
+  }
+
+  let labelText = 'Dashboard';
+  if (isInsideActiveLesson) {
+    if (
+      activeUnit &&
+      window._unitReturnOrigin &&
+      window._unitReturnOrigin.view === 'timeline' &&
+      window._unitReturnOrigin.unitId === activeUnit
+    ) {
+      labelText = getReturnOriginLabel(activeUnit, 'Unit Overview');
+    } else {
+      labelText = 'Unit Overview';
+    }
+  } else if (isUnitOverview) {
+    labelText = 'Dashboard';
+  } else if (
+    activeUnit &&
+    (activeView === 'timeline' ||
+      activeView === 'individuals' ||
+      activeView === 'mock-exams' ||
+      activeView === 'exam-practice' ||
+      activeView === 'reading' ||
+      activeView === 'guided-reading' ||
+      activeView === 'interactive' ||
+      activeView === 'marking' ||
+      activeView === 'answers' ||
+      activeView === 'reader' ||
+      activeView === 'decisions' ||
+      activeView === 'taboo')
+  ) {
+    labelText = getReturnOriginLabel(activeUnit, 'Unit Overview');
+  } else {
+    labelText = 'Dashboard';
+  }
+
+  const labelSpan = backBtn.querySelector('span');
+  if (labelSpan) {
+    labelSpan.textContent = labelText;
+  } else {
+    backBtn.innerHTML = `<i class="fa-solid fa-arrow-left"></i> <span>${labelText}</span>`;
+  }
+  backBtn.title = `← ${labelText}`;
+}
+if (typeof window !== 'undefined') {
+  window.updateHeaderBackBtn = updateHeaderBackBtn;
+}
+
+window.handleHeaderBackClick = function () {
+  const activeView =
+    window.currentView ||
+    appStore.state.currentView ||
+    state.currentView ||
+    'dashboard';
+  const activeUnit =
+    state.selectedUnitId ||
+    window.currentUnitId ||
+    (appStore && appStore.state && appStore.state.selectedUnitId);
+
+  const isInsideActiveLesson =
+    activeView === 'lessons' &&
+    typeof window.currentLessonIndex === 'number' &&
+    window.currentLessonIndex >= 0;
+
+  if (isInsideActiveLesson && activeUnit) {
+    if (
+      window._unitReturnOrigin &&
+      window._unitReturnOrigin.view === 'timeline' &&
+      window._unitReturnOrigin.unitId === activeUnit
+    ) {
+      returnToSavedOrigin(activeUnit);
+      return;
+    }
+    window._unitReturnOrigin = null;
+    window.currentLessonIndex = null;
+    switchView('lessons', activeUnit);
+    return;
+  }
+
+  if (
+    activeUnit &&
+    (activeView === 'timeline' ||
+      activeView === 'individuals' ||
+      activeView === 'mock-exams' ||
+      activeView === 'exam-practice' ||
+      activeView === 'reading' ||
+      activeView === 'guided-reading' ||
+      activeView === 'interactive' ||
+      activeView === 'marking' ||
+      activeView === 'answers' ||
+      activeView === 'reader' ||
+      activeView === 'decisions' ||
+      activeView === 'taboo')
+  ) {
+    returnToSavedOrigin(activeUnit);
+    return;
+  }
+
+  window._unitReturnOrigin = null;
+  window.currentLessonIndex = null;
+  switchView('dashboard');
+};
 
 // Subscribe to state changes to handle DOM updates independently of the router
 export function initNavigationUI() {
+  const initialBackBtn = document.getElementById('header-back-btn');
+  if (initialBackBtn) {
+    initialBackBtn.onclick = (e) => {
+      e.preventDefault();
+      window.handleHeaderBackClick();
+    };
+  }
   appStore.subscribe('currentView', (viewName) => {
-    // Manage Back Button (suppressed on dashboard and lessons view where breadcrumbs handle navigation)
-    const backBtn = document.getElementById('header-back-btn');
-    const mobileBrand = document.getElementById('header-mobile-brand');
-    const appHeader = document.querySelector('.app-header');
-    if (backBtn) {
-      if (viewName === 'dashboard' || viewName === 'lessons') {
-        backBtn.style.display = 'none';
-        if (appHeader) appHeader.classList.remove('has-back-btn');
-        if (mobileBrand) mobileBrand.style.display = '';
-      } else {
-        backBtn.style.display = 'flex';
-        if (appHeader) appHeader.classList.add('has-back-btn');
-        if (mobileBrand && window.innerWidth <= 768) {
-          mobileBrand.style.display = 'none';
-        }
-      }
+    if (typeof window !== 'undefined') {
+      window.currentView = viewName;
     }
+    syncKs2PortalState(state.selectedUnitId || window.currentUnitId, state.activeUnitData, viewName);
+    updateHeaderBackBtn(viewName);
 
     // Header Right
     const headerRight = document.querySelector('.header-right');
@@ -186,7 +639,7 @@ export function updateBreadcrumbs(customTrail = null) {
     if (id === 'weimar_nazi_germany') return 'Weimar and Nazi Germany (1918–1939)';
     if (id === 'usa') return 'Conflict at Home and Abroad: USA (1954–75)';
     if (id === 'great_war') return 'Causes of the Great War';
-    if (id === 'ks2_ww2') return 'World War II & The Home Front (1939–1945)';
+    if (id === 'ks2_ww2') return 'World War II & The Home Front (1933–1945)';
     return id.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   };
 
@@ -227,7 +680,17 @@ export function updateBreadcrumbs(customTrail = null) {
     else if (viewName === 'chess') currentSectionLabel = 'Chess Club';
     else if (viewName === 'decisions') currentSectionLabel = 'Decisions Game';
     else if (viewName === 'taboo') currentSectionLabel = 'Taboo Recall';
-    else if (viewName === 'individuals') currentSectionLabel = 'Key Individuals';
+    else if (viewName === 'individuals') {
+      const hasOrgs = Boolean(
+        Array.isArray(unitData?.key_individuals) &&
+          unitData.key_individuals.some((x) =>
+            String(x?.entity_type || x?.type || '')
+              .toLowerCase()
+              .startsWith('org'),
+          ),
+      );
+      currentSectionLabel = hasOrgs ? 'Key Individuals & Organisations' : 'Key Individuals';
+    }
     else if (viewName === 'reading' || viewName === 'guided-reading') currentSectionLabel = 'Literary Companion';
     else if (viewName === 'marking' || viewName === 'answers') currentSectionLabel = 'Self-Checking Marking Bank';
     else if (viewName === 'masterpiece' || viewName === 'gallery')
@@ -251,20 +714,14 @@ export function updateBreadcrumbs(customTrail = null) {
     typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
   const isLocked =
     urlParams && (urlParams.get('locked') === 'true' || urlParams.get('mode') === 'pupil');
-  const isKs2Portal =
-    (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_portal') === 'ks2') ||
-    (urlParams && urlParams.get('portal') === 'ks2');
-
-  const rootLabel = isKs2Portal ? 'KS2 Junior Hub' : 'Dashboard';
 
   // Guarantee root crumb unless locked
   if (isLocked) {
     trail = trail.filter((t) => t.view !== 'dashboard');
-  } else if (
-    trail.length === 0 ||
-    (trail[0].label !== 'Dashboard' && trail[0].label !== 'KS2 Junior Hub')
-  ) {
-    trail.unshift({ label: rootLabel, view: 'dashboard' });
+  } else if (trail.length === 0 || trail[0].view !== 'dashboard') {
+    trail.unshift({ label: 'Dashboard', view: 'dashboard' });
+  } else {
+    trail[0].label = 'Dashboard';
   }
 
   const isDeepTrail = trail.length >= 3;
@@ -519,6 +976,16 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     window.cancelSpeech();
   }
 
+  // Capture outgoing view/unit/lesson context before mutating scroll or state
+  const previousView =
+    (typeof window !== 'undefined' && window.currentView) ||
+    appStore.state.currentView ||
+    state.currentView ||
+    'dashboard';
+  const previousUnit =
+    state.selectedUnitId ||
+    (typeof window !== 'undefined' && window.currentUnitId);
+
   // Snapshot current scroll position into the current state before leaving if history exists
   if (!skipHistory && typeof window !== 'undefined' && window.history) {
     const currentScroll = window.scrollY || document.documentElement.scrollTop || 0;
@@ -532,25 +999,99 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     } catch (e) {}
   }
 
+  // Auto-save return origin when transitioning from an active lesson (or timeline) into a unit tool
+  const isUnitToolTarget =
+    viewName === 'timeline' ||
+    viewName === 'individuals' ||
+    viewName === 'mock-exams' ||
+    viewName === 'exam-practice' ||
+    viewName === 'reading' ||
+    viewName === 'guided-reading' ||
+    viewName === 'interactive' ||
+    viewName === 'marking';
+
+  if (
+    !skipHistory &&
+    !options.returningToOrigin &&
+    typeof window !== 'undefined' &&
+    isUnitToolTarget
+  ) {
+    const targetUnitForTool = param || previousUnit;
+    const recentlySaved =
+      window._unitReturnOriginSavedTs && Date.now() - window._unitReturnOriginSavedTs < 150;
+    if (!recentlySaved && previousUnit && targetUnitForTool === previousUnit) {
+      if (
+        (previousView === 'lessons' &&
+          typeof window.currentLessonIndex === 'number' &&
+          window.currentLessonIndex >= 0) ||
+        (previousView === 'timeline' && viewName !== 'timeline')
+      ) {
+        saveUnitReturnOrigin();
+      } else if (previousView === 'lessons') {
+        window._unitReturnOrigin = null;
+      }
+    }
+  }
+
+  // Clear stale return origin if switching to a different unit
+  if (
+    typeof window !== 'undefined' &&
+    window._unitReturnOrigin &&
+    param &&
+    param !== 'all' &&
+    window._unitReturnOrigin.unitId &&
+    window._unitReturnOrigin.unitId !== param
+  ) {
+    window._unitReturnOrigin = null;
+  }
+
+  // Reset active lesson pointer when leaving lessons view
+  if (typeof window !== 'undefined' && viewName !== 'lessons') {
+    window.currentLessonIndex = null;
+  }
+
   // Only reset scroll if not skipping scroll reset (e.g. restoring on popstate)
   if (!options.skipScrollToTop) {
     scrollToTop(true);
   }
 
   // Update state; the subscriber will handle UI changes
+  if (typeof window !== 'undefined') {
+    window.currentView = viewName;
+  }
+  syncKs2PortalState(param || state.selectedUnitId, state.activeUnitData, viewName);
   appStore.state.currentView = viewName;
 
   if (!skipHistory) {
     const url = new URL(window.location);
     url.searchParams.set('view', viewName);
+    url.searchParams.delete('stage');
     if (param) url.searchParams.set('unit', param);
     else url.searchParams.delete('unit');
+    const isLockedSession =
+      url.searchParams.get('locked') === 'true' || url.searchParams.get('mode') === 'pupil';
+    if (!isLockedSession) {
+      url.searchParams.delete('portal');
+    }
     if (viewName === 'reading' || viewName === 'guided-reading') {
       if (options && options.rawLesson !== undefined) {
         url.searchParams.set('lesson', options.rawLesson);
       } else if (options && options.lessonIndex !== undefined) {
         url.searchParams.set('lesson', options.lessonIndex + 1);
       }
+    } else if (viewName === 'lessons' && options && typeof options.lessonIndex === 'number') {
+      const uData = getUnitData(param || previousUnit);
+      const lList = (uData && (uData.lessons || uData.subtopics)) || [];
+      const lObj = lList[options.lessonIndex];
+      const hasZero = Boolean(
+        lList[0] &&
+          (lList[0].id === 'lesson_0' ||
+            (lList[0].title && lList[0].title.includes('KT 1.0'))),
+      );
+      const lVal =
+        (lObj && lObj.slug) ||
+        (hasZero ? (options.lessonIndex === 0 ? '0' : options.lessonIndex) : options.lessonIndex + 1);
+      url.searchParams.set('lesson', lVal);
     } else if (
       viewName !== 'reading' &&
       viewName !== 'guided-reading' &&
@@ -559,7 +1100,20 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       url.searchParams.delete('lesson');
     }
     try {
-      window.history.pushState({ view: viewName, unit: param, lesson: options?.lessonIndex, scrollY: 0 }, '', url);
+      window.history.pushState(
+        {
+          view: viewName,
+          unit: param,
+          lesson: options?.lessonIndex,
+          lessonIndex: options?.lessonIndex,
+          scrollY: 0,
+        },
+        '',
+        url,
+      );
+      if (viewName === 'lessons' && ( !options || typeof options.lessonIndex !== 'number')) {
+        window._lastLessonsOverviewPushTs = Date.now();
+      }
     } catch (e) {}
   }
 
@@ -585,6 +1139,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     (viewName === 'booklet' && (!param || param === 'all'));
 
   if (isGlobalView) {
+    if (typeof window !== 'undefined') {
+      window._unitReturnOrigin = null;
+      window.currentLessonIndex = null;
+    }
     state.selectedUnitId = null;
     window.currentUnitId = null;
     state.activeUnitData = null;
@@ -634,6 +1192,14 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
     await loadUnit(targetUnit);
     renderTimeline();
+  } else if (viewName === 'individuals') {
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
+    if (targetUnit === 'ks2_ww2') {
+      await switchView('lessons', 'ks2_ww2');
+      return;
+    }
+    await loadUnit(targetUnit);
+    renderIndividualsView();
   } else if (viewName === 'booklet') {
     // Legacy booklet view decommissioned in favour of Hero Curricular Launchpads
     const targetUnit =
@@ -643,6 +1209,11 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     await switchView('lessons', targetUnit);
     return;
   } else if (viewName === 'mock-exams' || viewName === 'exam-practice') {
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId;
+    if (targetUnit === 'ks2_ww2') {
+      await switchView('lessons', 'ks2_ww2');
+      return;
+    }
     if (param) await loadUnit(param);
     renderMockExamsView();
   } else if (viewName === 'lessons') {
@@ -677,11 +1248,17 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const unitTarget =
       (param && typeof param === 'string' && param.split(':')[0]) ||
       state.selectedUnitId ||
+      window.currentUnitId ||
       'cme_new';
-    if (unitTarget && unitTarget !== state.selectedUnitId) {
-      await loadUnit(unitTarget);
+    if (unitTarget === 'ks2_ww2') {
+      await loadUnit('ks2_ww2');
+      await renderReadingView(options);
+    } else {
+      if (unitTarget && unitTarget !== state.selectedUnitId) {
+        await loadUnit(unitTarget);
+      }
+      await renderDigitalReaderView(param);
     }
-    await renderDigitalReaderView(param);
   } else if (viewName === 'reading' || viewName === 'guided-reading') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
     await loadUnit(targetUnit);
@@ -700,17 +1277,27 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'year11-tracker'
   ) {
     // Specification Tracker is temporarily paused. Gracefully redirect to GCSE dashboard.
+    state.selectedUnitId = null;
+    window.currentUnitId = null;
     appStore.state.currentView = 'dashboard';
     window.location.hash = '';
     renderDashboard();
   } else {
+    const fallbackUnit = param || state.selectedUnitId || window.currentUnitId;
+    if (fallbackUnit === 'ks2_ww2') {
+      await switchView('lessons', 'ks2_ww2');
+      return;
+    }
     console.warn(`[Router] Unrecognized view '${viewName}', gracefully falling back to dashboard.`);
+    state.selectedUnitId = null;
+    window.currentUnitId = null;
     appStore.state.currentView = 'dashboard';
     renderDashboard();
   }
 
-  // Update dynamic breadcrumbs & browser document.title (unless a specific lesson already set its title)
+  // Update dynamic breadcrumbs, header back button & browser document.title
   updateBreadcrumbs();
+  updateHeaderBackBtn(viewName);
   if (typeof document !== 'undefined') {
     const hasOpenLesson =
       viewName === 'lessons' &&
@@ -882,6 +1469,7 @@ async function loadUnit(unitId) {
 }
 
 function updateSidebarForUnit(unitId, unitData = {}) {
+  syncKs2PortalState(unitId, unitData, appStore.state.currentView || state.currentView);
   const globalNav = document.getElementById('sidebar-global-nav');
   const unitWorkspace = document.getElementById('sidebar-unit-workspace');
   if (globalNav) globalNav.style.display = 'none';
@@ -897,7 +1485,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   const isKs2Active =
     (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_portal') === 'ks2') ||
     urlParams.get('portal') === 'ks2' ||
-    unitData.is_ks2;
+    isKs2UnitIdentifier(unitId, unitData);
 
   const sidebarUnitsContainer = document.getElementById('sidebar-unit-links');
   const sidebarUnitsHeader = document.getElementById('sidebar-units-header');
@@ -932,11 +1520,11 @@ function updateSidebarForUnit(unitId, unitData = {}) {
 
     if (unitBackBtn) {
       unitBackBtn.style.display = 'flex';
-      if (isKs2Active && (unitData.is_ks2 || unitId.startsWith('ks2_'))) {
-        unitBackBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i><span>KS2 Junior Hub</span>';
-      } else {
-        unitBackBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i><span>Main Dashboard</span>';
-      }
+      unitBackBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i><span>Main Dashboard</span>';
+      unitBackBtn.onclick = (e) => {
+        if (e) e.preventDefault();
+        switchView('dashboard');
+      };
     }
     if (sidebarUnitsContainer) sidebarUnitsContainer.style.display = 'flex';
     if (sidebarUnitsHeader) sidebarUnitsHeader.style.display = 'block';
@@ -1026,9 +1614,12 @@ function updateSidebarForUnit(unitId, unitData = {}) {
 
       if (isInsideLesson || isNotLessonsView) {
         // Return to Unit Overview / Unit Homepage
+        window._unitReturnOrigin = null;
+        window.currentLessonIndex = null;
         switchView('lessons', unitId);
       } else {
         // Already on Unit Overview -> return to Main Dashboard / KS2 Junior Hub
+        window._unitReturnOrigin = null;
         switchView('dashboard');
       }
     };
@@ -1100,7 +1691,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
 
   if (navLessons) {
     navLessons.style.display = 'flex';
-    navLessons.dataset.action = 'switch-view';
+    delete navLessons.dataset.action;
     navLessons.dataset.view = 'lessons';
     navLessons.dataset.unit = unitId;
     if (navLessonsLabel)
@@ -1124,8 +1715,12 @@ function updateSidebarForUnit(unitId, unitData = {}) {
         `;
         item.addEventListener('click', (e) => {
           e.stopPropagation();
-          if (typeof window.viewLessonDetail === 'function') {
+          window._unitReturnOrigin = null;
+          const currentActiveView = appStore.state.currentView || state.currentView;
+          if (currentActiveView === 'lessons' && typeof window.viewLessonDetail === 'function') {
             window.viewLessonDetail(idx);
+          } else {
+            switchView('lessons', unitId, false, { lessonIndex: idx });
           }
           if (typeof window.highlightActiveSidebarLesson === 'function') {
             window.highlightActiveSidebarLesson(idx);
@@ -1149,7 +1744,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
       }
       if (typeof window.highlightActiveSidebarLesson === 'function') {
         const curIdx =
-          state && typeof state.activeLessonIndex === 'number' ? state.activeLessonIndex : 0;
+          state && typeof state.activeLessonIndex === 'number' ? state.activeLessonIndex : null;
         window.highlightActiveSidebarLesson(curIdx);
       }
     } else if (topTree) {
@@ -1172,11 +1767,19 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     }
 
     navLessons.onclick = (e) => {
+      if (e) e.stopPropagation();
+      window._unitReturnOrigin = null;
       const isCurrentlyLessons =
-        state && state.currentView === 'lessons' && state.selectedUnitId === unitId;
-      if (isCurrentlyLessons && topTree && topTree.children.length > 0) {
+        (appStore.state.currentView === 'lessons' || (state && state.currentView === 'lessons')) &&
+        state.selectedUnitId === unitId;
+      const isInsideActiveLesson =
+        isCurrentlyLessons &&
+        typeof window.currentLessonIndex === 'number' &&
+        window.currentLessonIndex >= 0;
+      if (isCurrentlyLessons && !isInsideActiveLesson && topTree && topTree.children.length > 0) {
         toggleTree(e);
       } else {
+        window.currentLessonIndex = null;
         switchView('lessons', unitId);
       }
     };
@@ -1192,14 +1795,18 @@ function updateSidebarForUnit(unitId, unitData = {}) {
 
   if (navTimeline && hasTimeline) {
     navTimeline.style.display = 'flex';
-    navTimeline.dataset.action = 'switch-view';
+    delete navTimeline.dataset.action;
     navTimeline.dataset.view = 'timeline';
     navTimeline.dataset.unit = unitId;
     navTimeline.innerHTML =
       unitId === 'ks2_ww2'
         ? '<i class="fa-solid fa-sliders" style="color: #3b82f6;"></i><span>Milestones Slider</span>'
         : '<i class="fa-solid fa-clock-rotate-left" style="color: #10b981;"></i><span>Living Chronology</span>';
-    navTimeline.onclick = () => switchView('timeline', unitId);
+    navTimeline.onclick = (e) => {
+      if (e) e.stopPropagation();
+      saveUnitReturnOrigin();
+      switchView('timeline', unitId);
+    };
   } else if (navTimeline) {
     navTimeline.style.display = 'none';
   }
@@ -1220,12 +1827,16 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   );
   if (navMockExams && hasMockExams) {
     navMockExams.style.display = 'flex';
-    navMockExams.dataset.action = 'switch-view';
+    delete navMockExams.dataset.action;
     navMockExams.dataset.view = 'mock-exams';
     navMockExams.dataset.unit = unitId;
     navMockExams.innerHTML =
       '<i class="fa-solid fa-file-signature" style="color: #6366f1;"></i><span>GCSE Exam Practice</span>';
-    navMockExams.onclick = () => switchView('mock-exams', unitId);
+    navMockExams.onclick = (e) => {
+      if (e) e.stopPropagation();
+      saveUnitReturnOrigin();
+      switchView('mock-exams', unitId);
+    };
   } else if (navMockExams) {
     navMockExams.style.display = 'none';
   }
@@ -1236,25 +1847,64 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   );
   if (navReading && hasGuidedReading) {
     navReading.style.display = 'flex';
-    navReading.dataset.action = 'switch-view';
+    delete navReading.dataset.action;
     navReading.dataset.view = 'reading';
     navReading.dataset.unit = unitId;
     navReading.innerHTML =
       '<i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i><span>Literary Companion</span>';
-    navReading.onclick = () => switchView('reading', unitId);
+    navReading.onclick = (e) => {
+      if (e) e.stopPropagation();
+      saveUnitReturnOrigin();
+      switchView('reading', unitId);
+    };
   } else if (navReading) {
     navReading.style.display = 'none';
   }
 
+  // Key Individuals & Organisations Dossier Gallery (shown when unit defines key_individuals and not KS2)
+  const unitAgents = Array.isArray(unitData.key_individuals) ? unitData.key_individuals : [];
+  const hasAgentsGallery = !isKs2UnitIdentifier(unitId, unitData) && unitAgents.length > 0;
+  if (navIndividuals && hasAgentsGallery) {
+    const hasOrgDossiers = unitAgents.some((p) =>
+      /^org/i.test(String(p?.entity_type || p?.entityType || p?.type || '').trim()),
+    );
+    navIndividuals.classList.add('nav-item');
+    navIndividuals.style.setProperty('display', 'flex', 'important');
+    delete navIndividuals.dataset.action;
+    navIndividuals.dataset.view = 'individuals';
+    navIndividuals.dataset.unit = unitId;
+    navIndividuals.innerHTML = hasOrgDossiers
+      ? '<i class="fa-solid fa-users-rectangle" style="color: #0d9488;"></i><span>People &amp; Organisations</span>'
+      : '<i class="fa-solid fa-user-tie" style="color: #0d9488;"></i><span>Key Individuals</span>';
+    navIndividuals.onclick = (e) => {
+      if (e) e.stopPropagation();
+      saveUnitReturnOrigin();
+      switchView('individuals', unitId);
+    };
+  } else if (navIndividuals) {
+    navIndividuals.style.setProperty('display', 'none', 'important');
+  }
+
   // Hide secondary / fragmented tabs to preserve clean hierarchy
   if (navUnitBooklet) navUnitBooklet.style.display = 'none';
-  if (navIndividuals) navIndividuals.style.display = 'none';
   if (navReading && !hasGuidedReading) navReading.style.display = 'none';
   if (navDecisions) navDecisions.style.display = 'none';
   if (navTaboo) navTaboo.style.display = 'none';
+
+  // Re-sync active sidebar item for the current view (e.g. timeline, lessons, reading)
+  const activeUnitView = appStore.state.currentView || state.currentView || 'lessons';
+  document.querySelectorAll('#sidebar-unit-workspace .nav-item').forEach((el) => {
+    el.classList.remove('active');
+  });
+  const activeUnitNavItem = document.getElementById(`nav-${activeUnitView}`);
+  if (activeUnitNavItem) activeUnitNavItem.classList.add('active');
 
   // Highlight active unit in lower sidebar tree
   if (typeof window.highlightActiveSidebarUnit === 'function') {
     window.highlightActiveSidebarUnit(unitId);
   }
+}
+
+if (typeof window !== 'undefined') {
+  window.jumpToKeyIndividual = jumpToKeyIndividual;
 }

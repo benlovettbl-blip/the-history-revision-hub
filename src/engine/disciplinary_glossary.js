@@ -683,17 +683,24 @@ export function buildComprehensiveVocabDict(lesson, unitData) {
     }
   };
 
-  // 1. Master Disciplinary Glossary (baseline concepts)
-  MASTER_DISCIPLINARY_GLOSSARY.forEach((item) => {
-    registerItem(
-      item.term,
-      item.definition,
-      item.syllables,
-      item.phonetic,
-      item.tier,
-      item.variants,
-    );
-  });
+  const isKs2Unit = Boolean(
+    (unitData && (unitData.id === 'ks2_ww2' || unitData.is_ks2 || unitData.keyStage === 'KS2' || unitData.keyStage === 'Key Stage 2')) ||
+    (lesson && lesson.is_ks2)
+  );
+
+  // 1. Master Disciplinary Glossary (Secondary/GCSE baseline concepts — skipped for KS2 so primary pupils only see age-appropriate vocabulary)
+  if (!isKs2Unit) {
+    MASTER_DISCIPLINARY_GLOSSARY.forEach((item) => {
+      registerItem(
+        item.term,
+        item.definition,
+        item.syllables,
+        item.phonetic,
+        item.tier,
+        item.variants,
+      );
+    });
+  }
 
   // 2. Unit-wide vocabulary pool from all lessons in the active unit
   if (unitData && Array.isArray(unitData.lessons)) {
@@ -774,18 +781,18 @@ export function highlightGlossaryInProse(text, vocabDict, maxPerBlock = 3) {
         if (existingVocabSpan) return existingVocabSpan;
         if (htmlTag) return htmlTag;
 
-      if (word && blockCount < maxPerBlock) {
-        didMatch = true;
-        blockCount++;
-        const safeDef = vocabItem.definition.replace(/"/g, '&quot;');
-        const safeSyllables = (vocabItem.syllables || '').replace(/"/g, '&quot;');
-        const safePhonetic = (vocabItem.phonetic || '').replace(/"/g, '&quot;');
-        const safeTier = vocabItem.tier || '2';
-        const safeTerm = vocabItem.term.replace(/"/g, '&quot;');
-        return `<span class="vocab-word vocab-lens-term" data-term="${safeTerm}" data-definition="${safeDef}" data-syllables="${safeSyllables}" data-phonetic="${safePhonetic}" data-tier="${safeTier}">${word}</span>`;
-      }
-      return match;
-    });
+        if (word && blockCount < maxPerBlock) {
+          didMatch = true;
+          blockCount++;
+          const safeDef = vocabItem.definition.replace(/"/g, '&quot;');
+          const safeSyllables = (vocabItem.syllables || '').replace(/"/g, '&quot;');
+          const safePhonetic = (vocabItem.phonetic || '').replace(/"/g, '&quot;');
+          const safeTier = vocabItem.tier || '2';
+          const safeTerm = vocabItem.term.replace(/"/g, '&quot;');
+          return `<span class="vocab-word vocab-lens-term" data-term="${safeTerm}" data-definition="${safeDef}" data-syllables="${safeSyllables}" data-phonetic="${safePhonetic}" data-tier="${safeTier}">${word}</span>`;
+        }
+        return match;
+      });
 
     if (didMatch) {
       matchedRootsInBlock.add(rootKey);

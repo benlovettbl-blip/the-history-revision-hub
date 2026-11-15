@@ -1573,64 +1573,49 @@ window.toggleMap = function (btn) {
   container.querySelector('#map-caption-display').innerHTML = btn.getAttribute('data-caption');
 };
 
-// --- Key Individual Link Global Functions ---
-window.jumpToKeyIndividual = function (name) {
-  let targetTab = 'historical_individuals'; // default
-  let linkSearchStr = 'Historical Individuals';
+// --- Key Individual & Organisation Link Global Functions ---
+window.jumpToKeyIndividual = async function (name) {
+  const unitId =
+    window.currentUnitId || (window.appStore && window.appStore.state?.selectedUnitId);
 
-  if (window.db && window.currentUnitId && window.db[window.currentUnitId]) {
-    const unitData = window.db[window.currentUnitId].data || window.db[window.currentUnitId];
-    if (unitData && unitData.key_individuals) {
-      const person = unitData.key_individuals.find(
-        (p) => p.name.toLowerCase() === name.toLowerCase(),
-      );
-      if (person && person.group === 'Historians') {
-        targetTab = 'historians';
-        linkSearchStr = 'Historians';
-      }
-    }
+  if (typeof window.switchView === 'function' && unitId) {
+    await window.switchView('individuals', unitId);
   }
 
-  const url = new URL(window.location);
-  url.searchParams.set('tab', targetTab);
-  history.pushState({ customTab: targetTab }, '', url);
-
-  // 1. Find the sidebar link and click it
-  const kiLinks = document.querySelectorAll('.lesson-link');
-  let targetLink = null;
-  kiLinks.forEach((l) => {
-    // Avoid partial match false positives (e.g. "Historical Individuals" contains "Historians" if not careful, though technically it doesn't)
-    if (l.innerText.includes(linkSearchStr)) {
-      if (linkSearchStr === 'Historians' && l.innerText.includes('Historical')) {
-        return; // skip
-      }
-      targetLink = l;
-    }
-  });
-  if (targetLink) {
-    targetLink.click();
-  }
-
-  // 2. Wait for the page to render then find and scroll to the card
   setTimeout(() => {
+    const allPill = document.querySelector('.agent-filter-pill[data-filter="all"]');
+    if (allPill) allPill.click();
+
+    const needle = String(name || '').trim().toLowerCase();
     const cards = document.querySelectorAll('.person-card');
     let targetCard = null;
     cards.forEach((card) => {
+      if (targetCard) return;
+      const cardName = (card.dataset.agentName || '').toLowerCase();
+      const aliases = (card.dataset.agentAliases || '')
+        .toLowerCase()
+        .split('|')
+        .map((s) => s.trim())
+        .filter(Boolean);
       const h3 = card.querySelector('h3');
-      if (h3 && h3.innerText.toLowerCase().includes(name.toLowerCase())) {
+      const h3Text = h3 ? h3.innerText.toLowerCase() : '';
+      if (
+        cardName === needle ||
+        aliases.includes(needle) ||
+        cardName.includes(needle) ||
+        h3Text.includes(needle)
+      ) {
         targetCard = card;
       }
     });
     if (targetCard) {
       targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      const originalBoxShadow = targetCard.style.boxShadow;
-      targetCard.style.boxShadow = '0 0 0 4px rgba(59, 130, 246, 0.5)';
-      targetCard.style.transition = 'box-shadow 0.3s ease';
+      targetCard.classList.add('flipped', 'agent-highlight-ring');
       setTimeout(() => {
-        targetCard.style.boxShadow = originalBoxShadow;
-      }, 2000);
+        targetCard.classList.remove('agent-highlight-ring');
+      }, 2400);
     }
-  }, 100);
+  }, 120);
 };
 
 // --- Debate Modal Global Functions ---

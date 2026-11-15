@@ -640,8 +640,17 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     bookletUrl = '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf';
     bookletLabel = 'Western Front Workbook (PDF)';
     isBookletPdf = true;
+  } else if (unitId === 'ks2_ww2' || unitId.startsWith('ks2')) {
+    bookletUrl = '/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf';
+    bookletLabel = 'Pupil Workbook (PDF)';
+    isBookletPdf = true;
   }
 
+  const isKs2Course = Boolean(
+    unitId === 'ks2_ww2' ||
+    unitId.startsWith('ks2') ||
+    (globalState.unitData && (globalState.unitData.is_ks2 || globalState.unitData.keyStage === 'KS2' || globalState.unitData.keyStage === 'Key Stage 2'))
+  );
   const isGcseCourse = Boolean(
     (globalState.unitData && (globalState.unitData.keyStage === 'Key Stage 4' || globalState.unitData.key_stage === 'GCSE' || globalState.unitData.keyStage === 'GCSE')) ||
     unitId.startsWith('edexcel_') ||
@@ -650,9 +659,11 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     unitId === 'weimar_nazi_germany' ||
     unitId === 'cold_war'
   );
-  const stageBadge = isGcseCourse
-    ? 'Edexcel GCSE (9–1) History • Disciplinary Literacy & Oral Reading Companion'
-    : 'Key Stage 3 • Disciplinary Literacy & Oral Reading Companion';
+  const stageBadge = isKs2Course
+    ? 'Key Stage 2 (Years 5–6) • Guided Reading & Read-Aloud Companion'
+    : isGcseCourse
+      ? 'Edexcel GCSE (9–1) History • Disciplinary Literacy & Oral Reading Companion'
+      : 'Key Stage 3 • Disciplinary Literacy & Oral Reading Companion';
 
   masthead.className = 'reading-masthead';
   masthead.style.cssText = `
@@ -668,6 +679,11 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     flex-wrap: wrap;
     gap: 16px;
   `;
+  const returnBtnLabel =
+    typeof window !== 'undefined' && typeof window.getReturnOriginLabel === 'function'
+      ? window.getReturnOriginLabel(unitId, 'Return to Unit Overview')
+      : 'Return to Unit Overview';
+
   masthead.innerHTML = `
     <div>
       <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #f59e0b; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
@@ -681,8 +697,8 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       </p>
     </div>
     <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-      <button type="button" id="btn-masthead-back-lesson" class="btn" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 1.5px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; transition: background 0.15s ease;" onmouseover="this.style.background='rgba(255,255,255,0.25)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';" title="Return to Lesson">
-        <i class="fa-solid fa-arrow-left" style="color: #38bdf8;"></i> <span>Back to Lesson</span>
+      <button type="button" id="btn-masthead-back-lesson" class="btn" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 1.5px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; transition: background 0.15s ease;" onmouseover="this.style.background='rgba(255,255,255,0.25)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';" title="${returnBtnLabel}">
+        <i class="fa-solid fa-arrow-left" style="color: #38bdf8;"></i> <span>${returnBtnLabel}</span>
       </button>
       <button type="button" id="btn-masthead-qr-share" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer;">
         <i class="fa-solid fa-qrcode" style="color: #38bdf8;"></i> <span>Mobile QR & Link</span>
@@ -697,15 +713,16 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   `;
   outerWrapper.appendChild(masthead);
 
-  // Wire Masthead Back to Lesson Button
+  // Wire Masthead Back Return Button (Smart Return Origin aware)
   const backToLessonBtn = masthead.querySelector('#btn-masthead-back-lesson');
   if (backToLessonBtn) {
     backToLessonBtn.onclick = () => {
-      const targetLessonIndex = activeReading && typeof activeReading.lesson_index === 'number' ? activeReading.lesson_index : 0;
-      if (typeof window.switchView === 'function') {
-        window.switchView('lessons', unitId, false, { lessonIndex: targetLessonIndex });
+      if (typeof window !== 'undefined' && typeof window.returnToSavedOrigin === 'function') {
+        window.returnToSavedOrigin(unitId);
+      } else if (typeof window.switchView === 'function') {
+        window.switchView('lessons', unitId);
       } else {
-        window.location.href = `/?unit=${unitId}&lesson=${activeReading ? (activeReading.lesson_key || activeReading.lesson_id || targetLessonIndex + 1) : 1}`;
+        window.location.href = `/?view=lessons&unit=${unitId}`;
       }
     };
   }

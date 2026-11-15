@@ -219,16 +219,15 @@ export const unitSynopses = {
 
   // === KEY STAGE 2 CURRICULUM UNITS ===
   ks2_ww2: {
-    period: '1939 – 1945',
+    period: '1933 – 1945',
     synopsis:
-      "When the air raid sirens wailed across Britain in September 1939, daily life changed overnight for millions of families. Step into the shoes of wartime children clutching cardboard gas mask boxes at crowded railway stations as Operation Pied Piper evacuated them to the countryside. Discover how families sheltered together during the terrifying nights of the Blitz, grew vegetables in city parks to 'Dig for Victory', and celebrated the brave Land Girls, codebreakers at Bletchley Park, and rescuers like Nicholas Winton who saved innocent lives. An inspiring, hands-on exploration of courage, community resilience, and remembering the past.",
+      "How did the Second World War transform children's lives across Britain and Europe? Step into the shoes of wartime children clutching cardboard gas mask boxes at railway stations during Operation Pied Piper, trace pre-war Jewish family life in Europe and the courage of Kindertransport rescuers like Trevor Chadwick and Nicholas Winton, shelter during the Blitz, 'Dig for Victory', crack Enigma codes at Bletchley Park, and follow the Windermere Children rebuilding their lives in 1945.",
     tags: [
       'Operation Pied Piper (Evacuation)',
-      'The Blitz & Anderson Shelters',
+      'Pre-War Life & Kindertransport',
+      'The Blitz & Air Raid Shelters',
       'Dig for Victory & Rationing',
-      'Women at War & Land Army',
-      'Bletchley Park & Alan Turing',
-      'The Kindertransport & Rescuers',
+      'Women at War & Bletchley Park',
       'VE Day & The Windermere Children',
     ],
   },

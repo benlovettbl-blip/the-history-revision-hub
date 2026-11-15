@@ -2,89 +2,35 @@
  * scripts/render_standard_textbook_ks2_ww2.cjs
  *
  * THE HISTORY REVISION HUB — KEY STAGE 2 MASTER CLASSROOM TEXTBOOK COMPILER
- * Unit: World War II & The Home Front (1939–1945) [ks2_ww2]
+ * Unit: World War II & The Home Front (1933–1945) [ks2_ww2]
  *
- * Reprographic Architecture (A3 Saddle-Stitch 16-Page Standard — Full KS3 Engine Parity):
- * - Page 1: Full-width uncropped hero plate, central enquiry banner, historical overview card,
- *           and structured 10-lesson directory table across the full width.
- * - Page 2: Inside Front Cover "Your Learning Journey" — 100% pupil-facing for 8–9 year olds with
- *           rich, child-friendly narrative blurbs and enquiry questions (zero teacher primer jargon, zero empty voids).
- * - Page 3: Master Chronological Turning Points Highway — 12 causal milestones (strictly 0 Ref tags).
- * - Pages 4–13: 10 Canonical Lessons (1 page per enquiry, Single Wide-Margin Column, pure narrative,
- *               clean "Lesson X" branding, calibrated 11.5pt–13pt Lora serif, strictly zero Extension Enquiry 11 boxes).
- * - Pages 14–15: Master Knowledge Retrieval Quiz (40 questions, 20 per page across Pages 14 & 15,
- *                large 8.8pt–9.8pt font, checkboxes, scorecard strip, zero answers printed).
- * - Page 16: Master Back Cover — The Home Front Vocabulary Bank & Core Concepts (10 rich terms with
- *            definitions, historical mechanisms, and Big Picture synthesis prompts; zero empty boxes).
- *
- * Strict Compliance:
- * - 100% Commercial Independence & Anonymity under "The History Revision Hub".
- * - Verbatim Single Source of Truth from units/ks2_ww2/data.js and data/ks2_ww2.json.
+ * Reprographic Architecture (20-Page A4 / 5 Folded A3 Saddle-Stitch Sheets):
+ * - Page 1: Master Front Cover (banner_unit_hero.jpg, plain KS2 labels, 11-Lesson Directory).
+ * - Page 2: Inside Front Cover — "Your Journey Through World War II" (11 pupil-friendly blurbs).
+ * - Page 3: Master Chronological Turning Points (12 milestones, 1933–1948, zero Ref tags).
+ * - Pages 4–14: All 11 Canonical Lessons (1 full page per lesson, Single Wide-Margin Column,
+ *               pure verbatim reading narrative from data/ks2_ww2.json, zero worksheet clutter).
+ * - Pages 15–16: Facing 2-Page Master Knowledge Retrieval Quiz (55 questions, 5 per lesson,
+ *                100% answerable from pp. 4–14, non-consumable oral/partner format, zero answers).
+ * - Pages 17–18: Facing 2-Page Master Historical Vocabulary Bank (all 44 key words with syllables
+ *                and plain KS2 definitions across Lessons 1–11).
+ * - Page 19: Big Picture Connections — Children's Journeys & Wartime Maps.
+ * - Page 20: Back Cover — Remembering World War II Today & Rebuilding Peacetime Britain.
  */
 
 const fs = require('fs');
 const path = require('path');
-const vm = require('vm');
 const puppeteer = require('puppeteer');
-const { auditPageBudget, printSpaceAuditReport } = require('./audit_page_budget.cjs');
-const { autoBalanceTextbook } = require('./engine/auto_balancer.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
-// Helper to convert local image to Base64 data URI for zero-latency offline rendering
-function getBase64Image(relativePath) {
-  try {
-    if (!relativePath) return null;
-    const cleanPath = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
-    const candidates = [
-      path.join(ROOT_DIR, 'public', cleanPath),
-      path.join(ROOT_DIR, cleanPath),
-      path.join(ROOT_DIR, 'public', 'images', path.basename(cleanPath)),
-      path.join(ROOT_DIR, 'images', path.basename(cleanPath)),
-      path.join(ROOT_DIR, 'public', 'units', 'ks2_ww2', 'assets', path.basename(cleanPath)),
-      path.join(ROOT_DIR, 'units', 'ks2_ww2', 'assets', path.basename(cleanPath)),
-    ];
-    for (const cand of candidates) {
-      if (fs.existsSync(cand) && fs.statSync(cand).isFile()) {
-        const ext = path.extname(cand).toLowerCase();
-        const mime =
-          ext === '.png'
-            ? 'image/png'
-            : ext === '.jpg' || ext === '.jpeg'
-              ? 'image/jpeg'
-              : ext === '.webp'
-                ? 'image/webp'
-                : 'image/jpeg';
-        const data = fs.readFileSync(cand).toString('base64');
-        return `data:${mime};base64,${data}`;
-      }
-    }
-    return null;
-  } catch (err) {
-    return null;
-  }
-}
-
-// Clean in-prose paragraph ref pills (e.g. <span class="para-ref">[1.1]</span>) and bracketed tags
 function cleanProse(text) {
   if (!text) return '';
-  return text
-    .replace(
-      /<span\s+class=["'](?:para-ref|para-pill|archival-meta-tag)["']>[^<]*<\/span>\s*/gi,
-      '',
-    )
+  return String(text)
+    .replace(/<span\s+class=["'](?:para-ref|para-pill|archival-meta-tag)["']>[^<]*<\/span>\s*/gi, '')
     .replace(/\[\d+\.\d+[A-Z]?\]\s*/g, '')
     .replace(/\[Key Individual:\s*([^\]]+)\]/gi, '$1')
-    .replace(
-      /\s*\((?:<strong>)?(?:Source|Interpretation|Figure)\s+[A-Z0-9]+(?:<\/strong>)?\)/gi,
-      '',
-    )
-    .replace(/<div\b[^>]*Extension Enquiry 11[\s\S]*?<\/div>/gi, '')
-    .replace(/<div\b[^>]*background:\s*linear-gradient[\s\S]*?<\/div>/gi, '')
-    .replace(/<button\b[^>]*Launch Enquiry 11[\s\S]*?<\/button>/gi, '')
-    .replace(/<div\b[^>]*style="[^"]*background:[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '')
-    .replace(/([a-zA-Z])"([a-zA-Z])/g, '$1" $2')
-    .replace(/\s*\(\s*\)/g, '')
+    .replace(/\s*\((?:<strong>)?(?:Source|Interpretation|Figure)\s+[A-Z0-9]+(?:<\/strong>)?\)/gi, '')
     .replace(/\s{2,}/g, ' ')
     .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -92,497 +38,172 @@ function cleanProse(text) {
     .trim();
 }
 
-// Load canonical data dynamically from units/ks2_ww2/data.js and merge pupil-facing blurbs from data/ks2_ww2.json
 function loadUnitData() {
   const jsonPath = path.join(ROOT_DIR, 'data', 'ks2_ww2.json');
-  let jsonData = null;
-  if (fs.existsSync(jsonPath)) {
-    try {
-      jsonData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-    } catch (e) {}
-  }
-
-  const dataPath = path.join(ROOT_DIR, 'units', 'ks2_ww2', 'data.js');
-  const mod = require(dataPath);
-  const data = JSON.parse(JSON.stringify(mod.default || mod));
-
-  if (jsonData && jsonData.lessons) {
-    data.lessons.forEach((l, i) => {
-      const jl = jsonData.lessons[i];
-      if (jl && jl.blurb) {
-        l.blurb = jl.blurb;
-      }
-      if (jl && jl.quiz && (!l.quiz || l.quiz.length === 0)) {
-        l.quiz = jl.quiz;
-      }
-    });
-  }
-
-  return data;
+  return JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 }
 
-// Page 1 Dramatic Overview Synopsis
-const canonicalOverviewP1 =
-  'Between 1939 and 1945, the Second World War touched every aspect of daily life across Great Britain. From the sudden sounding of air raid sirens and the compulsory fitting of 38 million gas masks, to the poignant exodus of 1.5 million young evacuees clutching cardboard suitcases and brown luggage tags, the civilian population stood on the front line of modern conflict.';
-
-const canonicalOverviewP2 =
-  'Discover how ordinary families sheltered through 57 consecutive nights of bombing during the Blitz, dug flowerbeds into vegetable allotments for Victory, and worked around the clock in factories and fields. Experience the humanitarian rescue of 10,000 child refugees on the Kindertransport, the secret genius of Alan Turing’s codebreakers at Bletchley Park, and the euphoric street celebrations of VE Day.';
-
-// Page 3 Chronological Milestone Spine (12 Defining Turning Points — strictly zero Ref [X.Y] tags)
-const milestones = [
+const TURNING_POINTS = [
   {
-    date: 'Nov 1938',
-    title: 'The Kindertransport Begins & Prague Rescue Network',
-    desc: 'Following Kristallnacht, the British Parliament permits 10,000 unaccompanied refugee children. Nicholas Winton and Trevor Chadwick organise rescue trains from Prague.',
+    date: '1933–1938',
+    title: 'Anti-Jewish Laws & Kristallnacht in Nazi Germany',
+    desc: 'Hitler’s Nazi regime strips Jewish families of citizenship under the 1935 Nuremberg Laws, attacks synagogues on Kristallnacht (Nov 1938), and bans Jewish children from state schools.',
+  },
+  {
+    date: 'Dec 1938–Aug 1939',
+    title: 'The Kindertransport & Prague Rescue Trains',
+    desc: 'Britain waives visa delays for nearly 10,000 unaccompanied refugee children with £50 sponsor guarantees. Nicholas Winton and Trevor Chadwick rescue 669 children from Prague.',
   },
   {
     date: '1 Sept 1939',
-    title: 'Operation Pied Piper: 1.5 Million Civilians Evacuated',
-    desc: 'In three days, British railways move nearly 1.5 million school children, mothers, and teachers from target cities to rural host families with luggage tags pinned to their coats.',
+    title: 'Operation Pied Piper & The Total Blackout Begin',
+    desc: 'Germany invades Poland. Britain launches Operation Pied Piper, moving 1.5 million children and mothers to the countryside in three days, and switches off streetlamps at sunset.',
   },
   {
     date: '3 Sept 1939',
-    title: 'Britain Enters World War II & ARP Blackout Imposed',
-    desc: 'Chamberlain announces war on wireless radios. 38 million gas masks are distributed in cardboard boxes, and strict nightly blackouts plunge cities into darkness.',
+    title: 'Britain Declares War & 38 Million Gas Masks Issued',
+    desc: 'At 11:15am, Prime Minister Neville Chamberlain announces on BBC radio that Britain is at war. Families carry cardboard gas mask boxes everywhere and tape window panes.',
   },
   {
-    date: 'May 1940',
-    title: 'Churchill Becomes Prime Minister & Dunkirk Evacuation',
-    desc: 'Winston Churchill leads a wartime coalition government. Over 338,000 Allied troops are saved from Dunkirk beaches by a flotilla of naval ships and civilian "Little Ships".',
+    date: 'Jan 1940',
+    title: 'Food Rationing & "Dig for Victory" Allotments',
+    desc: 'As U-boats attack Atlantic food ships, the Ministry of Food introduces ration coupon books for fair shares while families turn lawns and parks into 1.4 million vegetable plots.',
   },
   {
-    date: 'July–Oct 1940',
-    title: 'The Battle of Britain & Fighter Command Defense',
-    desc: 'RAF pilots in Spitfires and Hurricanes thwart the Luftwaffe above southern England, forcing Hitler to indefinitely postpone Operation Sea Lion, the planned invasion.',
+    date: 'May–Oct 1940',
+    title: 'Churchill, Dunkirk & The Battle of Britain',
+    desc: 'Winston Churchill becomes Prime Minister, "Little Ships" help rescue 338,000 troops from Dunkirk, and RAF pilots guided by coastal radar defend Britain’s skies.',
   },
   {
     date: 'Sept 1940–May 1941',
-    title: 'The Blitz Bombardment of London & Industrial Hubs',
-    desc: 'German bombers strike London for 57 consecutive nights and devastate industrial centres like Coventry. Families rely on corrugated Anderson shelters and Tube station platforms.',
-  },
-  {
-    date: 'Jan 1940–1941',
-    title: 'Food Rationing Commences & Dig for Victory Campaign',
-    desc: 'To counteract Atlantic U-boat blockades, the Ministry of Food introduces ration books. The Ministry of Agriculture converts parks, lawns, and gardens into vegetable plots.',
+    title: 'The Blitz Across British Cities',
+    desc: 'Starting on 7 September 1940, Luftwaffe bombers attack London for 57 nights in a row and strike Coventry, Liverpool, Plymouth, Clydebank, Hull, and Belfast.',
   },
   {
     date: 'Dec 1941',
-    title: 'Conscription of Women for War Work & Land Army Surge',
-    desc: 'Britain becomes the first nation to conscript women. Over 80,000 join the Women’s Land Army, while hundreds of thousands enter aircraft factories and munitions works.',
+    title: 'Women Called Up for Vital War Work',
+    desc: 'Parliament passes the National Service Act calling up unmarried women aged 20–30. Over 80,000 Land Girls, Timber Corps Lumberjills, and munitions "Canary Girls" keep Britain running.',
   },
   {
-    date: '1941–1943',
-    title: 'Turning the Tide: Turing’s Bombe & Ultra Intelligence',
-    desc: 'At Bletchley Park, Alan Turing and a predominantly female workforce operate electromechanical Bombes, breaking German Enigma military codes and shortening the war.',
-  },
-  {
-    date: '6 June 1944',
-    title: 'D-Day: Allied Amphibious Landings in Normandy',
-    desc: 'Operation Overlord launches the liberation of Western Europe. British, American, and Canadian forces breach Hitler’s Atlantic Wall, beginning the final march toward Berlin.',
+    date: '1941–1945',
+    title: 'Secret Codebreakers at Bletchley Park',
+    desc: 'Alan Turing, Gordon Welchman, and thousands of women (75% of the 10,000 staff) run spinning Bombe machines to break daily German Enigma ciphers in total secrecy.',
   },
   {
     date: '8 May 1945',
-    title: 'VE Day: Victory in Europe & Jubilant Street Celebrations',
-    desc: 'Churchill declares peace in Europe. Millions celebrate with street parties, Union Jack bunting, and bonfires, remembering the six years of sacrifice and loss.',
+    title: 'VE Day: Victory in Europe & Street Parties',
+    desc: 'Nazi Germany surrenders unconditionally. Crowds cheer Churchill and the Royal Family, tear down blackout curtains, and share rationed jam at street parties amid grief for the fallen.',
   },
   {
-    date: '1945–Present',
-    title: 'Post-War Reconstruction, NHS Founding & Remembrance',
-    desc: 'Post-war Britain establishes the National Health Service (1948) and modern welfare safety net, enshrining annual November Remembrance at the Cenotaph and local memorials.',
+    date: 'Aug 1945',
+    title: 'The Windermere Children Arrive in Cumbria',
+    desc: 'Ten RAF Short Stirling bombers fly 300 orphaned child camp survivors from Prague to Carlisle; caring staff at Calgarth Estate by Lake Windermere help them heal.',
+  },
+  {
+    date: '1948–1954',
+    title: 'Rebuilding Britain, The NHS & Remembrance',
+    desc: 'Britain rebuilds bombed neighbourhoods, opens the free National Health Service (NHS) in 1948, ends food rationing in 1954, and honours wartime sacrifice every November.',
   },
 ];
 
-// Page 16 Core Vocabulary Bank (10 Foundational KS2 Concepts — Engaging, Child-Friendly & Rigorous)
-const vocabBank = [
-  {
-    term: 'Air Raid Siren',
-    lesson: 'Lesson 1',
-    badge: 'Causation',
-    definition:
-      'A loud, undulating mechanical horn mounted on city roofs to warn families that enemy bombers were heading toward their streets.',
-    evidence:
-      'Real Wartime Clue: Over 1,000 sirens guarded London; a steady drone meant all-clear, while rising wails warned families to dash to shelters.',
-    mechanism:
-      'Why It Changed Britain: Forced 38 million civilians to carry gas masks everywhere, black out windows, and adapt to wartime life.',
-  },
-  {
-    term: 'Evacuee',
-    lesson: 'Lesson 2',
-    badge: 'Empathy',
-    definition:
-      'An urban schoolchild sent away from dangerous city targets to live with volunteer foster families in the quiet countryside.',
-    evidence:
-      'Real Wartime Clue: Operation Pied Piper moved 1.5 million children in three days; pupils wore luggage labels and carried small suitcases.',
-    mechanism:
-      'Why It Changed Britain: United city and country folk, creating lifelong friendships while challenging deep differences in wealth.',
-  },
-  {
-    term: 'Kindertransport',
-    lesson: 'Lesson 3',
-    badge: 'Humanitarian',
-    definition:
-      'The emergency rescue mission that brought nearly 10,000 unaccompanied refugee children to safety in Great Britain.',
-    evidence:
-      'Real Wartime Clue: After the Kristallnacht attacks in 1938, British families pledged £50 per child to give them a safe home.',
-    mechanism:
-      'Why It Changed Britain: Saved thousands of young Jewish lives from Nazi persecution, showing the power of international sanctuary.',
-  },
-  {
-    term: 'The Blitz',
-    lesson: 'Lesson 4',
-    badge: 'Consequence',
-    definition:
-      'The relentless German bombing offensive targeting London, Liverpool, and industrial cities between 1940 and 1941.',
-    evidence:
-      'Real Wartime Clue: London was bombed for 57 nights in a row; over 150,000 people slept safely on Tube station platforms.',
-    mechanism:
-      'Why It Changed Britain: Forged the famous "Blitz Spirit", inspiring neighbours to rescue one another and pull together through disaster.',
-  },
-  {
-    term: 'Ration Book',
-    lesson: 'Lesson 5',
-    badge: 'Evidence',
-    definition:
-      'Official government coupon booklets ensuring that scarce food, clothes, and fuel were shared out equally and fairly to all.',
-    evidence:
-      'Real Wartime Clue: Coupons strictly limited sugar, butter, and meat; children received green books with free orange juice and cod liver oil.',
-    mechanism:
-      'Why It Changed Britain: Beat Atlantic submarine blockades, inspired "Dig for Victory", and improved the health of the poorest children.',
-  },
-  {
-    term: "Women's Land Army",
-    lesson: 'Lesson 6',
-    badge: 'Significance',
-    definition:
-      'Over 80,000 civilian women ("Land Girls") who worked on British farms to feed the nation while men fought overseas.',
-    evidence:
-      'Real Wartime Clue: Recruits drove heavy tractors, ploughed fields, and looked after farm animals, increasing home food production by 50%.',
-    mechanism:
-      'Why It Changed Britain: Shattered old-fashioned stereotypes, proving women could perform tough manual labour and transforming work rights.',
-  },
-  {
-    term: 'Anti-Jewish Laws',
-    lesson: 'Lesson 7',
-    badge: 'Civil Rights',
-    definition:
-      "Cruel discriminatory laws passed by the Nazi regime that systematically took away Jewish citizens' rights and freedom.",
-    evidence:
-      'Real Wartime Clue: The 1935 Nuremberg Laws stripped German Jews of citizenship, banning children from playgrounds, pools, and schools.',
-    mechanism:
-      'Why It Changed Britain: Shows how state prejudice grows step by step, reminding us why human rights and democracy must be protected.',
-  },
-  {
-    term: 'Enigma Cipher',
-    lesson: 'Lesson 8',
-    badge: 'Technology',
-    definition:
-      'A complex rotor machine used by the German military to scramble top-secret radio messages into secret codes.',
-    evidence:
-      'Real Wartime Clue: Over 10,000 codebreakers worked in wooden huts at Bletchley Park, operating Alan Turing\'s whirring "Bombe" machines.',
-    mechanism:
-      'Why It Changed Britain: Secretly cracked enemy messages, shortening the war by up to four years and giving birth to modern computing.',
-  },
-  {
-    term: 'Upstander',
-    lesson: 'Lesson 9',
-    badge: 'Moral Courage',
-    definition:
-      'A brave individual who refuses to stand by when others are treated unfairly, risking their own safety to defend and rescue them.',
-    evidence:
-      'Real Wartime Clue: Nicholas Winton, Trevor Chadwick, and Doreen Warriner organised eight trains from Prague, saving 669 Czech children.',
-    mechanism:
-      'Why It Changed Britain: Inspires young people today to speak up against bullying and injustice, showing one person can change the world.',
-  },
-  {
-    term: 'VE Day & Remembrance',
-    lesson: 'Lesson 10',
-    badge: 'Legacy',
-    definition:
-      "Victory in Europe Day (8 May 1945), celebrating peace and honouring the wartime generation's bravery and sacrifice.",
-    evidence:
-      'Real Wartime Clue: Millions danced at street parties, while King George VI and Churchill waved to cheering crowds from Buckingham Palace.',
-    mechanism:
-      'Why It Changed Britain: Led to post-war rebuilding, the founding of the NHS in 1948, and annual November Remembrance Day traditions.',
-  },
-];
-
-// Pages 14 & 15 Master Knowledge Retrieval Bank (60 High-Yield Recall Questions across 10 Lessons)
-const MASTER_QUIZ_QUESTIONS = {
+// 55 Retrieval Questions (5 per lesson, 100% answerable from the verbatim prose on Pages 4–14)
+const TEXTBOOK_QUIZ = {
   lesson_1: [
-    {
-      q: 'At what time on Sunday 3 September 1939 did Neville Chamberlain announce war on the radio?',
-      a: '11:15am',
-    },
-    {
-      q: 'How many civilian gas masks did the British government distribute before the war broke out?',
-      a: '38 million',
-    },
-    {
-      q: "What color and letter were painted on an ARP warden's steel helmet?",
-      a: 'White letter W on black',
-    },
-    {
-      q: 'Why was the blackout strictly enforced across Britain every night?',
-      a: 'To prevent bombers seeing light',
-    },
-    {
-      q: 'Why were street corners and car bumpers painted with white strips?',
-      a: 'To prevent collisions in dark',
-    },
-    {
-      q: 'What item was inside the brown cardboard box that every schoolchild carried?',
-      a: 'A rubber gas mask',
-    },
+    'On what date did Nazi Germany invade Poland and the British Blackout begin?',
+    'At what exact time on Sunday 3 September 1939 did Neville Chamberlain speak on BBC radio?',
+    'How many rubber gas masks were handed out to civilians across Britain?',
+    'What bright mask was designed so toddlers would not feel frightened during drills?',
+    'What did ARP wardens shout if a strip of light showed behind a house curtain?',
   ],
   lesson_2: [
-    {
-      q: 'When was Operation Pied Piper officially launched across Britain?',
-      a: 'Friday 1 September 1939',
-    },
-    {
-      q: 'Approximately how many children, mothers, and teachers were evacuated in three days?',
-      a: 'Nearly 1.5 million',
-    },
-    {
-      q: 'Why were parents forbidden from accompanying children onto railway platforms?',
-      a: 'To prevent overcrowding',
-    },
-    {
-      q: "What identity item was pinned to every evacuee child's coat?",
-      a: 'A brown cardboard luggage tag',
-    },
-    {
-      q: 'Who was responsible for assigning arriving evacuees to local host families in village halls?',
-      a: 'Local billeting officers',
-    },
-    {
-      q: 'What common culture shock did many inner-city evacuees experience in the countryside?',
-      a: 'Farm animals and open fields',
-    },
+    'What was the codename for evacuating 1.5 million children and mothers from 1 September 1939?',
+    'What item was tied to every evacuee child’s coat lapel at the railway station?',
+    'Who met evacuees in country village halls and matched them with local host homes?',
+    'Name two safe rural reception areas mentioned in Lesson 2 where city children were sent.',
+    'Why did many evacuees drift back to cities by Christmas 1939?',
   ],
   lesson_3: [
-    {
-      q: 'What violent event in November 1938 prompted British politicians to permit the Kindertransport?',
-      a: 'Kristallnacht pogroms',
-    },
-    {
-      q: 'How much money did a British sponsor have to guarantee for each refugee child?',
-      a: '£50 per child',
-    },
-    {
-      q: 'Where did Vera Schaufeld live before boarding the Kindertransport train in 1939?',
-      a: 'Klatovy / Prague',
-    },
-    {
-      q: 'Which London railway station welcomed almost all Kindertransport trains?',
-      a: 'Liverpool Street Station',
-    },
-    {
-      q: 'What treasured toy did ten-year-old Vera pack in her small suitcase before leaving?',
-      a: 'Her beloved doll',
-    },
-    {
-      q: 'Approximately how many unaccompanied refugee children were rescued on the Kindertransport?',
-      a: 'Nearly 10,000 children',
-    },
+    'Roughly what fraction of Germany’s population was Jewish when Hitler took power in January 1933?',
+    'Which September 1935 laws stripped German Jewish families of their citizenship?',
+    'What happened across Germany and Austria on the night of 9–10 November 1938 (Kristallnacht)?',
+    'What unfair rule shut Jewish children out of German state schools in November 1938?',
+    'Why do historians study pre-war family photographs of sports teams and school life?',
   ],
   lesson_4: [
-    {
-      q: 'Which date marked "Black Saturday", the start of the heavy bombing Blitz on London?',
-      a: '7 September 1940',
-    },
-    {
-      q: 'For how many consecutive nights was the city of London bombed by the Luftwaffe?',
-      a: '57 consecutive nights',
-    },
-    {
-      q: "What materials were used to construct an Anderson shelter in a family's back garden?",
-      a: 'Corrugated steel sheets & soil',
-    },
-    {
-      q: 'How deep into the ground did families have to dig to install an Anderson shelter?',
-      a: 'At least 3 feet / 1 metre',
-    },
-    {
-      q: 'Where did over 150,000 Londoners shelter every night during the Blitz?',
-      a: 'Underground Tube platforms',
-    },
-    {
-      q: 'What tool did volunteer firewatchers use to extinguish burning incendiary bombs?',
-      a: 'Stirrup pumps and sand',
-    },
+    'Approximately how many unaccompanied children came to Britain on the Kindertransport?',
+    'How much money did a British sponsor have to guarantee for each refugee child?',
+    'Why could mothers and fathers not board the Kindertransport trains with their children?',
+    'Which Essex port and London station welcomed Kindertransport ferries and trains?',
+    'Which two treasured personal items did nine-year-old Vera Löwyová (Vera Schaufeld) pack in Prague?',
   ],
   lesson_5: [
-    {
-      q: "What percentage of Britain's food was imported from overseas before the war in 1939?",
-      a: 'Over 60% / nearly two-thirds',
-    },
-    {
-      q: 'In which month and year did British food rationing officially begin?',
-      a: 'January 1940',
-    },
-    {
-      q: 'What was the typical weekly ration of butter per adult during the war?',
-      a: '2 ounces / about 50 grams',
-    },
-    {
-      q: 'What famous campaign encouraged families to convert lawns into vegetable plots?',
-      a: 'Dig for Victory',
-    },
-    {
-      q: 'Which famous vegetarian dish was named after the wartime Minister of Food?',
-      a: 'Lord Woolton Pie',
-    },
-    {
-      q: 'What free nutritional supplements were given to young children during rationing?',
-      a: 'Cod liver oil & orange juice',
-    },
+    'What holiday did 29-year-old Nicholas Winton cancel in December 1938 to visit Prague?',
+    'Which British schoolteacher stayed in Prague putting children safely onto rescue trains?',
+    'How many children escaped from Prague on eight trains between March and August 1939?',
+    'Why was the ninth train from Prague stopped on 1 September 1939?',
+    'Where did Nicholas Winton’s wife Grete find his rescue scrapbook fifty years later in 1988?',
   ],
   lesson_6: [
-    {
-      q: "Approximately how many civilian women served in the Women's Land Army?",
-      a: 'Over 80,000 Land Girls',
-    },
-    {
-      q: 'Why were female munitions factory workers nicknamed "Canary Girls"?',
-      a: 'TNT turned skin and hair yellow',
-    },
-    {
-      q: "What was the uniform worn by Land Girls in the Women's Land Army?",
-      a: 'Green jumpers & corduroy breeches',
-    },
-    {
-      q: 'What vital wartime mission did female pilots of the ATA perform?',
-      a: 'Ferrying Spitfires from factories',
-    },
-    {
-      q: 'What dangerous roles did women perform in the Auxiliary Fire Service during air raids?',
-      a: 'Driving tenders & communications',
-    },
-    {
-      q: 'In which year did Britain introduce conscription for unmarried women aged 20–30?',
-      a: 'December 1941',
-    },
+    'On what date ("Black Saturday") did the Blitz begin, and for how many nights in a row was London bombed?',
+    'Name three British cities outside London that were heavily bombed during the Blitz.',
+    'How many inches of garden soil were piled on top of a corrugated steel Anderson shelter?',
+    'What indoor steel-mesh table shelter was introduced in 1941 for homes without gardens?',
+    'Where did up to 177,000 Londoners sleep on peak nights of bombing?',
   ],
   lesson_7: [
-    {
-      q: 'What gift cone filled with sweets did German children carry on their first day of school?',
-      a: 'A Schultüte',
-    },
-    {
-      q: 'Which antisemitic laws passed in 1935 stripped German Jews of their citizenship?',
-      a: 'The Nuremberg Laws',
-    },
-    {
-      q: 'In which year were Jewish children completely expelled from German state schools?',
-      a: 'November 1938',
-    },
-    {
-      q: 'What discriminatory badge were Jewish people forced to wear in Nazi-occupied Europe?',
-      a: 'A yellow Star of David',
-    },
-    {
-      q: 'Name two public places Jewish children were banned from visiting under Nazi decrees.',
-      a: 'Playgrounds, parks, pools',
-    },
-    {
-      q: 'Why is it important to study Jewish family life and traditions before the war broke out?',
-      a: 'To remember them as real people',
-    },
+    'What fraction of its food did Britain import by sea before the Second World War?',
+    'Which three foods were the first to be rationed in January 1940?',
+    'How many fresh eggs per week was a typical adult ration book allowed?',
+    'How many wartime vegetable allotments were planted across Britain by 1943?',
+    'What vegetable pie was named after the Minister of Food, Lord Woolton?',
   ],
   lesson_8: [
-    {
-      q: "Where was Britain's top-secret wartime codebreaking headquarters located?",
-      a: 'Bletchley Park in Buckinghamshire',
-    },
-    {
-      q: 'What was the name of the German cipher machine that scrambled messages with rotors?',
-      a: 'The Enigma Machine',
-    },
-    {
-      q: 'Which brilliant mathematician designed the electro-mechanical Bombe machine?',
-      a: 'Alan Turing',
-    },
-    {
-      q: 'What percentage of the 10,000 workers at Bletchley Park were civilian women?',
-      a: 'Approximately 75%',
-    },
-    {
-      q: 'What secret codename was given to intelligence decrypted at Bletchley Park?',
-      a: 'Ultra intelligence',
-    },
-    {
-      q: 'By how many years do historians estimate codebreakers at Bletchley Park shortened the war?',
-      a: 'Between 2 and 4 years',
-    },
+    'Which December 1941 law called up unmarried British women aged 20 to 30 for war work?',
+    'Why were women packing explosive shells in munitions factories nicknamed "Canary Girls"?',
+    'Over how many women worked on farms in the Women’s Land Army by 1944?',
+    'What nickname was given to women in the Women’s Timber Corps who felled forest trees?',
+    'Name two wartime jobs performed by uniformed women in the ATS or WAAF.',
   ],
   lesson_9: [
-    {
-      q: "What was Nicholas Winton's ordinary job before travelling to Prague in December 1938?",
-      a: 'A London stockbroker',
-    },
-    {
-      q: 'What organization in Prague did Trevor Chadwick lead to organize child transports?',
-      a: 'British Committee for Refugees',
-    },
-    {
-      q: 'How many rescue trains did Nicholas Winton and his team successfully dispatch from Prague?',
-      a: 'Eight trains',
-    },
-    {
-      q: 'How many children did the Prague rescue network successfully save from Nazi persecution?',
-      a: '669 Czech children',
-    },
-    {
-      q: 'What tragic event stopped the ninth rescue train from leaving Prague on 1 September 1939?',
-      a: 'The outbreak of war',
-    },
-    {
-      q: 'On which famous BBC television programme was Nicholas Winton reunited with evacuees?',
-      a: "That's Life! in 1988",
-    },
+    'What was the name of Britain’s top-secret codebreaking estate in Buckinghamshire?',
+    'Why was the German Enigma cipher machine impossible to solve quickly by hand?',
+    'Which two mathematicians designed the spinning-drum Bombe machine at Bletchley Park?',
+    'Roughly what fraction of the 10,000 workers at Bletchley Park were women?',
+    'Which law required Bletchley Park workers to keep silent for thirty years after the war?',
   ],
   lesson_10: [
-    { q: 'What does the abbreviation "VE Day" stand for?', a: 'Victory in Europe Day' },
-    {
-      q: 'On what exact date was VE Day celebrated across Britain and Europe?',
-      a: 'Tuesday 8 May 1945',
-    },
-    {
-      q: 'Where did huge crowds gather in London to cheer Winston Churchill and the Royal Family?',
-      a: 'Buckingham Palace balcony',
-    },
-    {
-      q: 'Which famous British institution offering free healthcare was founded in 1948?',
-      a: 'The NHS (National Health Service)',
-    },
-    {
-      q: 'What red flower is worn every November to remember those who died in wartime?',
-      a: 'The remembrance poppy',
-    },
-    {
-      q: 'Where does the national Remembrance Sunday service take place in London?',
-      a: 'The Cenotaph on Whitehall',
-    },
+    'On what exact date did Britain celebrate Victory in Europe (VE) Day?',
+    'Who announced on BBC radio at 3:00pm on VE Day that the war in Europe was won?',
+    'Why did fighting continue in Asia and the Pacific until VJ Day on 15 August 1945?',
+    'Which free healthcare service was launched in Britain in July 1948?',
+    'In which year did the very last wartime food rationing finally end in Britain?',
+  ],
+  lesson_11: [
+    'How many orphaned child camp survivors were flown from Prague to Carlisle in August 1945?',
+    'Which type of Royal Air Force bomber carried the children to Britain?',
+    'What was the name of the housing estate beside Lake Windermere where the children stayed?',
+    'Why did many of the children hide crusts of bread under their pillows at first?',
+    'What lifelong group did the Windermere survivors form, and which Tom Palmer novel tells their story?',
   ],
 };
 
 function buildHtml() {
   const unitData = loadUnitData();
-  const lessons = unitData.lessons.slice(0, 10);
+  const lessons = unitData.lessons; // All 11 canonical lessons
 
-  const heroImageBase64 = getBase64Image(
-    '/units/ks2_ww2/assets/kindertransport_prague_airport_1939.jpg',
-  );
+  const journeyTop10 = lessons.slice(0, 10);
+  const journeyL11 = lessons[10];
 
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>Key Stage 2: World War II &amp; The Home Front (1939–1945) — Classroom Companion Textbook</title>
+  <title>Key Stage 2 History: World War II &amp; The Home Front (1933–1945) — 20-Page Master Classroom Textbook</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700;800&display=swap');
-
     @page {
       size: A4 portrait;
       margin: 0;
@@ -598,9 +219,41 @@ function buildHtml() {
       margin: 0;
       padding: 0;
       font-family: 'Lora', Georgia, serif;
-      background: #e2e8f0;
+      background: #cbd5e1;
       color: #0f172a;
       -webkit-font-smoothing: antialiased;
+    }
+
+    .screen-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      border-bottom: 2px solid #f59e0b;
+    }
+    .screen-toolbar a, .screen-toolbar button {
+      background: #1e3a8a;
+      color: #ffffff;
+      border: 1px solid #3b82f6;
+      padding: 5px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 8.5pt;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .screen-toolbar button.gold {
+      background: #f59e0b;
+      color: #0f172a;
+      border-color: #f59e0b;
     }
 
     .page {
@@ -609,19 +262,22 @@ function buildHtml() {
       max-height: 297mm;
       position: relative;
       background: #ffffff;
-      margin: 0 auto 10mm auto;
+      margin: 8mm auto;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 10mm 15mm 9mm 15mm;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 10mm 14mm 9mm 14mm;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.16);
       page-break-after: always;
+      break-after: page;
       page-break-inside: avoid;
+      break-inside: avoid;
     }
 
     @media print {
       body { background: #ffffff; }
+      .screen-toolbar { display: none !important; }
       .page {
         margin: 0;
         box-shadow: none;
@@ -635,354 +291,266 @@ function buildHtml() {
       align-items: center;
       border-bottom: 1.5px solid #0f172a;
       padding-bottom: 2.5px;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
+      font-size: 7.2pt;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.07em;
       color: #475569;
-    }
-
-    .running-header span.tag {
-      background: #0f172a;
-      color: #ffffff;
-      padding: 1px 5px;
-      border-radius: 2px;
-      font-weight: 800;
+      flex-shrink: 0;
     }
 
     .running-footer {
       border-top: 1px solid #cbd5e1;
       padding-top: 3px;
-      margin-top: 4px;
+      margin-top: 5px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
+      font-size: 7.2pt;
       color: #64748b;
+      flex-shrink: 0;
     }
 
     .running-footer .page-pill {
       background: #1e3a8a;
       color: #ffffff;
-      padding: 1px 7px;
-      border-radius: 2px;
+      padding: 1.5px 8px;
+      border-radius: 3px;
       font-weight: 800;
-      font-size: 6.8pt;
+      font-size: 7.2pt;
     }
 
-    /* ==========================================================================
-       PAGE 1: MASTER FRONT COVER (FULL-WIDTH KS3 ENGINE PARITY)
-       ========================================================================== */
+    /* PAGE 1: FRONT COVER */
     .cover-masthead {
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid #0f172a;
-      padding-bottom: 2.5px;
-      margin-bottom: 3px;
+      padding-bottom: 3px;
+      margin-bottom: 4px;
       font-family: 'Inter', sans-serif;
-      font-size: 7.2pt;
+      font-size: 7.5pt;
       font-weight: 800;
-      letter-spacing: 0.10em;
+      letter-spacing: 0.08em;
       color: #0f172a;
       text-transform: uppercase;
     }
-
     .cover-date-pill {
       background: #1e3a8a;
       color: #ffffff;
-      padding: 1.5px 7px;
+      padding: 2px 8px;
       border-radius: 3px;
       font-weight: 800;
-      font-size: 7.2pt;
-      letter-spacing: 0.08em;
+      font-size: 7.5pt;
     }
-
     .cover-title-block {
       text-align: center;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
-
     .cover-main-title {
       font-family: 'Cinzel', serif;
       font-size: 20pt;
       font-weight: 900;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       color: #0f172a;
-      line-height: 1.10;
+      line-height: 1.1;
       margin: 0;
     }
-
     .cover-subtitle {
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 8.8pt;
+      font-size: 9.2pt;
       color: #334155;
-      margin-top: 1.5px;
+      margin-top: 2px;
     }
-
     .cover-enquiry-banner {
       background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
-      border: 2px solid #3b82f6;
+      border: 1.5px solid #3b82f6;
       border-radius: 4px;
       padding: 5px 12px;
-      margin-bottom: 3.5mm;
+      margin-bottom: 3mm;
       display: flex;
       align-items: center;
-      gap: 12px;
-      box-shadow: 0 3px 10px rgba(30, 58, 138, 0.22);
+      gap: 10px;
     }
-
     .cover-enquiry-badge {
       background: #f59e0b;
       color: #0f172a;
       font-family: 'Inter', sans-serif;
-      font-size: 7.6pt;
+      font-size: 7.4pt;
       font-weight: 900;
-      letter-spacing: 0.10em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      padding: 3px 9px;
+      padding: 2.5px 8px;
       border-radius: 3px;
       white-space: nowrap;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
-
     .cover-enquiry-text {
       font-family: 'Lora', Georgia, serif;
-      font-size: 10.5pt;
+      font-size: 10pt;
       font-weight: 700;
       font-style: italic;
       color: #ffffff;
-      margin: 0;
       line-height: 1.25;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
     }
-
-    /* FULL-WIDTH HERO PLATE (ZERO BLACK BLOCKS) */
     .cover-hero-wrap {
       width: 100%;
-      height: 75mm;
+      height: 62mm;
       border: 1.5px solid #0f172a;
-      border-radius: 3px;
-      background: #ffffff;
+      border-radius: 4px;
       overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
       margin-bottom: 1.5mm;
+      background: #0f172a;
     }
-
     .cover-hero-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 30%;
+      object-position: center center;
       display: block;
     }
-
     .cover-hero-caption {
       font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
+      font-size: 7.1pt;
       line-height: 1.25;
       color: #475569;
       font-style: italic;
       text-align: center;
-      margin-bottom: 3.5mm;
+      margin-bottom: 2.5mm;
     }
-
     .cover-overview-box {
-      flex: 1;
       background: #fdfbf7;
       border: 1.5px solid #e2d9cc;
-      border-left: 4.5px solid #1e3a8a;
-      border-radius: 3px;
-      padding: 8px 12px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 4px;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 4px;
+      padding: 7px 11px;
+      margin-bottom: 2.5mm;
     }
-
     .cover-overview-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #e2d9cc;
       padding-bottom: 2px;
-      margin-bottom: 2px;
-    }
-
-    .cover-overview-title {
+      margin-bottom: 4px;
       font-family: 'Inter', sans-serif;
       font-size: 7.4pt;
       font-weight: 800;
-      letter-spacing: 0.10em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #1e3a8a;
     }
-
-    .cover-overview-period {
-      font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
-      font-weight: 700;
-      color: #64748b;
-      letter-spacing: 0.06em;
-    }
-
     .cover-overview-text {
       font-family: 'Lora', Georgia, serif;
-      font-style: italic;
-      font-size: 10.5pt;
+      font-size: 9.4pt;
       line-height: 1.38;
       color: #1e293b;
       margin: 0;
-      text-align: justify;
     }
-
-    /* Structured 10-Lesson Directory Table (KS3 Parity, Zero Voids) */
     .cover-directory {
       border: 1.5px solid #0f172a;
-      border-radius: 3px;
+      border-radius: 4px;
       overflow: hidden;
-      margin-top: 1px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
-
     .cover-directory-head {
       background: #0f172a;
       color: #ffffff;
-      padding: 3.5px 8px;
+      padding: 4px 9px;
       font-family: 'Inter', sans-serif;
-      font-size: 7.0pt;
+      font-size: 7.3pt;
       font-weight: 800;
-      letter-spacing: 0.10em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       display: flex;
       justify-content: space-between;
     }
-
     .cover-directory-table {
       width: 100%;
       border-collapse: collapse;
       font-family: 'Inter', sans-serif;
       font-size: 7.4pt;
       background: #ffffff;
+      flex: 1;
     }
-
     .cover-directory-table tr {
       border-bottom: 0.5px solid #e2e8f0;
     }
-
-    .cover-directory-table tr:last-child {
-      border-bottom: none;
-    }
-
+    .cover-directory-table tr:last-child { border-bottom: none; }
     .cover-directory-table td {
-      padding: 3.8px 8px;
+      padding: 3.2px 7px;
       vertical-align: middle;
     }
+    .col-num { width: 56px; font-weight: 800; color: #1e3a8a; white-space: nowrap; }
+    .col-title { font-weight: 700; color: #0f172a; width: 39%; line-height: 1.18; }
+    .col-eq { font-family: 'Lora', Georgia, serif; font-style: italic; color: #475569; font-size: 7.3pt; line-height: 1.18; }
+    .col-page { width: 48px; text-align: right; font-weight: 800; color: #1e3a8a; white-space: nowrap; }
 
-    .col-num {
-      width: 60px;
-      font-weight: 800;
-      color: #1e3a8a;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-    }
-
-    .col-title {
-      font-weight: 700;
-      color: #0f172a;
-      font-size: 7.4pt;
-      width: 42%;
-      line-height: 1.20;
-    }
-
-    .col-eq {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      color: #475569;
-      font-size: 7.2pt;
-      padding-left: 6px;
-      line-height: 1.22;
-    }
-
-    .col-page {
-      width: 52px;
-      text-align: right;
-      font-weight: 800;
-      color: #1e3a8a;
-      white-space: nowrap;
-    }
-
-    /* ==========================================================================
-       PAGE 2: INSIDE FRONT COVER PUPIL-FACING LEARNING JOURNEY (ZERO VOIDS)
-       ========================================================================== */
-    .journey-header {
+    /* PAGE 2: LEARNING JOURNEY */
+    .section-page-header {
       text-align: center;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       border-bottom: 2px solid #0f172a;
-      padding-bottom: 2.5px;
+      padding-bottom: 3px;
+      flex-shrink: 0;
     }
-
-    .journey-title {
+    .section-page-title {
       font-family: 'Cinzel', serif;
       font-size: 13.5pt;
       font-weight: 800;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       color: #0f172a;
       margin: 0;
     }
-
-    .journey-subtitle {
+    .section-page-subtitle {
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 8.2pt;
+      font-size: 8.4pt;
       color: #475569;
       margin-top: 1.5px;
     }
-
     .journey-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4px 8px;
+      gap: 5px 8px;
       flex: 1;
     }
-
     .journey-card {
       background: #f8fafc;
-      border: 1.2px solid #cbd5e1;
+      border: 1px solid #cbd5e1;
       border-left: 3.5px solid #1e3a8a;
       border-radius: 3px;
-      padding: 6px 9.5px;
+      padding: 5.5px 9px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      gap: 3px;
+      gap: 2.5px;
     }
-
+    .journey-card.span-two {
+      grid-column: 1 / -1;
+      border-left-color: #059669;
+      background: #f0fdf4;
+    }
     .journey-card-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       border-bottom: 0.5px solid #e2e8f0;
       padding-bottom: 1.5px;
-      margin-bottom: 1px;
     }
-
     .journey-card-title {
       font-family: 'Inter', sans-serif;
-      font-size: 8.5pt;
+      font-size: 8.2pt;
       font-weight: 800;
       color: #0f172a;
     }
-
     .journey-card-page {
       font-family: 'Inter', sans-serif;
-      font-size: 7.0pt;
+      font-size: 7.2pt;
       font-weight: 800;
       color: #1e3a8a;
       background: #eff6ff;
@@ -990,7 +558,6 @@ function buildHtml() {
       border-radius: 2px;
       white-space: nowrap;
     }
-
     .journey-card-question {
       font-family: 'Lora', Georgia, serif;
       font-size: 7.6pt;
@@ -998,85 +565,51 @@ function buildHtml() {
       font-weight: 700;
       color: #1e3a8a;
       line-height: 1.22;
-      margin: 0;
     }
-
     .journey-card-desc {
       font-family: 'Lora', Georgia, serif;
-      font-size: 7.9pt;
-      line-height: 1.30;
+      font-size: 7.8pt;
+      line-height: 1.28;
       color: #334155;
       margin: 0;
-      text-align: justify;
     }
 
-    /* ==========================================================================
-       PAGE 3: MASTER CHRONOLOGICAL MILESTONE SPINE (ZERO REF TAGS)
-       ========================================================================== */
-    .spine-header-block {
-      text-align: center;
-      margin-bottom: 4px;
-      border-bottom: 2px solid #0f172a;
-      padding-bottom: 2.5px;
-    }
-
-    .spine-main-title {
-      font-family: 'Cinzel', serif;
-      font-size: 13.5pt;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      color: #0f172a;
-      margin: 0;
-    }
-
-    .spine-subtitle {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-size: 8.0pt;
-      color: #475569;
-      margin-top: 1.5px;
-    }
-
+    /* PAGE 3: CHRONOLOGICAL TURNING POINTS */
     .milestone-timeline {
       display: flex;
       flex-direction: column;
       position: relative;
-      margin: 1px 0;
       flex: 1;
       justify-content: space-between;
+      gap: 3px;
     }
-
     .milestone-timeline::before {
       content: '';
       position: absolute;
-      top: 5px;
-      bottom: 5px;
-      left: 74px;
+      top: 6px;
+      bottom: 6px;
+      left: 86px;
       width: 2px;
       background: #cbd5e1;
       z-index: 1;
     }
-
     .milestone-row {
       display: flex;
       align-items: flex-start;
       position: relative;
       z-index: 2;
-      margin-bottom: 1.5px;
     }
-
     .milestone-date-box {
-      width: 68px;
+      width: 80px;
       text-align: right;
-      padding-right: 7px;
+      padding-right: 8px;
       font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
+      font-size: 7.2pt;
       font-weight: 800;
       color: #1e3a8a;
-      white-space: nowrap;
-      padding-top: 2px;
+      padding-top: 3px;
+      flex-shrink: 0;
     }
-
     .milestone-node {
       width: 9px;
       height: 9px;
@@ -1084,110 +617,105 @@ function buildHtml() {
       background: #1e3a8a;
       border: 2px solid #ffffff;
       box-shadow: 0 0 0 1.5px #1e3a8a;
-      margin-top: 3px;
-      margin-right: 7px;
+      margin-top: 4px;
+      margin-right: 8px;
       flex-shrink: 0;
     }
-
     .milestone-content {
       flex: 1;
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-left: 2.5px solid #1e3a8a;
-      border-radius: 2px;
-      padding: 2.5px 7px;
+      border-left: 3px solid #1e3a8a;
+      border-radius: 3px;
+      padding: 3.5px 8px;
     }
-
-    .milestone-header-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 1px;
-    }
-
     .milestone-title {
-      font-size: 7.8pt;
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
       font-weight: 800;
       color: #0f172a;
+      display: block;
+      margin-bottom: 1px;
     }
-
     .milestone-desc {
-      font-family: 'Lora', serif;
-      font-size: 7.2pt;
-      line-height: 1.26;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 7.7pt;
+      line-height: 1.28;
       color: #334155;
       margin: 0;
     }
 
-    /* ==========================================================================
-       PAGES 4–13: TEN CANONICAL ENQUIRIES (SINGLE WIDE-MARGIN COLUMN MODEL)
-       ========================================================================== */
+    /* PAGES 4–14: ELEVEN CANONICAL LESSONS (PURE SINGLE-COLUMN READING PROSE) */
+    .lesson-page {
+      --lesson-font-size: 12.1pt;
+      --lesson-lh: 1.62;
+      --block-gap: 14px;
+    }
     .enquiry-banner {
       border-bottom: 2px solid #0f172a;
-      padding-bottom: 4px;
-      margin-bottom: 6px;
+      padding-bottom: 5px;
+      margin-bottom: 9px;
+      flex-shrink: 0;
     }
-
     .enquiry-meta-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
-
     .enquiry-pill {
       background: #0f172a;
       color: #ffffff;
-      font-size: 7.2pt;
+      font-family: 'Inter', sans-serif;
+      font-size: 7.4pt;
       font-weight: 800;
-      letter-spacing: 0.10em;
-      text-transform: uppercase;
-      padding: 1.5px 7px;
-      border-radius: 2px;
-    }
-
-    .enquiry-canon-tag {
-      font-size: 6.8pt;
-      font-weight: 700;
-      color: #64748b;
       letter-spacing: 0.08em;
       text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 3px;
     }
-
+    .enquiry-canon-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.4pt;
+      font-weight: 700;
+      color: #475569;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
     .enquiry-title {
       font-family: 'Cinzel', serif;
-      font-size: 13.5pt;
+      font-size: 14pt;
       font-weight: 800;
       color: #0f172a;
-      line-height: 1.15;
-      margin: 0 0 3px 0;
+      line-height: 1.18;
+      margin: 0 0 4px 0;
     }
-
     .enquiry-core-question {
-      background: #f1f5f9;
+      background: #eff6ff;
       border-left: 3.5px solid #1e3a8a;
-      padding: 3px 8px;
-      font-size: 8.0pt;
+      padding: 4px 9px;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.8pt;
       font-weight: 700;
+      font-style: italic;
       color: #1e3a8a;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
     }
-
     .enquiry-core-question span.label {
       background: #1e3a8a;
       color: #ffffff;
-      padding: 1px 5.5px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      padding: 1.5px 6px;
       border-radius: 2px;
-      font-size: 6.4pt;
-      font-weight: 900;
+      font-size: 6.8pt;
+      font-weight: 800;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       white-space: nowrap;
     }
-
-    /* SINGLE WIDE-MARGIN COLUMN (KS2 Fluency Measure) */
     .prose-body {
       flex: 1;
       display: flex;
@@ -1195,427 +723,400 @@ function buildHtml() {
       justify-content: flex-start;
       margin: 0 auto;
       width: 100%;
-      max-width: 162mm;
+      max-width: 146mm;
     }
-
-    .prose-single-column {
-      width: 100%;
-    }
-
     .block-section {
-      margin-bottom: 14px;
+      margin-bottom: var(--block-gap);
     }
-
     .block-section:last-child {
       margin-bottom: 0;
     }
-
     .block-header {
       display: flex;
       align-items: baseline;
-      gap: 6px;
-      margin-bottom: 1.5mm;
-      border-bottom: 0.5px solid #e2e8f0;
-      padding-bottom: 1px;
+      gap: 7px;
+      margin-bottom: 2mm;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 2px;
     }
-
-    .block-ref {
+    .block-part-badge {
       font-family: 'Inter', sans-serif;
-      font-size: 7.2pt;
+      font-size: 7.4pt;
       font-weight: 800;
       color: #1e3a8a;
       background: #eff6ff;
-      padding: 0.5px 4.5px;
+      padding: 1px 6px;
       border-radius: 2px;
+      text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-
     .block-title {
       font-family: 'Cinzel', serif;
-      font-size: 9.6pt;
+      font-size: 10.2pt;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: 0.02em;
     }
-
-    .block-workbook-question {
-      break-inside: avoid;
-      break-after: avoid;
-      background: #f8fafc;
-      border-left: 2.5px solid #1e3a8a;
-      padding: 1.5px 7px;
-      margin: 1.5px 0 3.5px 0;
-      border-radius: 0 2px 2px 0;
-      line-height: 1.25;
-    }
-
-    .block-workbook-question .bwq-text {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-weight: 600;
-      font-size: 7.6pt;
-      color: #1e3a8a;
-      line-height: 1.25;
-      display: block;
-    }
-
     .prose-p {
       font-family: 'Lora', Georgia, serif;
-      font-size: 12.0pt;
-      line-height: 1.62;
+      font-size: var(--lesson-font-size);
+      line-height: var(--lesson-lh);
       color: #1e293b;
-      text-align: justify;
-      hyphens: auto;
-      margin: 0 0 3.5px 0;
+      text-align: left;
+      margin: 0;
     }
-
-    .prose-p:last-child {
-      margin-bottom: 0;
-    }
-
     .prose-p strong {
       color: #0f172a;
       font-weight: 700;
     }
-
-    /* ==========================================================================
-       PAGES 14 & 15: MASTER KNOWLEDGE RETRIEVAL QUIZ (PARTS I & II)
-       ========================================================================== */
-    .quiz-page-masthead {
+    .lesson-words-strip {
+      margin-top: auto;
+      padding-top: 6px;
+      border-top: 1px dashed #cbd5e1;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 5px 10px;
       align-items: center;
-      border-bottom: 2px solid #0f172a;
-      padding-bottom: 2px;
-      margin-bottom: 3px;
       font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
+      font-size: 7.5pt;
+      color: #334155;
+    }
+    .lesson-words-label {
       font-weight: 800;
-      letter-spacing: 0.10em;
-      color: #0f172a;
       text-transform: uppercase;
+      color: #1e3a8a;
+      letter-spacing: 0.05em;
+      font-size: 7.2pt;
+    }
+    .lesson-word-chip {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      font-weight: 600;
     }
 
-    .quiz-page-title-block {
-      text-align: center;
-      margin-bottom: 3px;
-    }
-
-    .quiz-page-main-title {
-      font-family: 'Cinzel', serif;
-      font-size: 14pt;
-      font-weight: 800;
-      color: #0f172a;
-      margin: 0;
-      letter-spacing: 0.04em;
-    }
-
+    /* PAGES 15–16: MASTER KNOWLEDGE RETRIEVAL QUIZ (55 QUESTIONS, ZERO WRITE-IN CLUTTER) */
     .quiz-instructions {
       background: #eff6ff;
       border: 1px solid #bfdbfe;
       border-left: 4px solid #1e3a8a;
-      padding: 3px 9px;
-      border-radius: 2px;
+      padding: 4px 10px;
+      border-radius: 3px;
       font-family: 'Inter', sans-serif;
-      font-size: 7.0pt;
-      font-weight: 700;
+      font-size: 7.5pt;
+      font-weight: 600;
       color: #1e3a8a;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
+      flex-shrink: 0;
     }
-
     .quiz-stack {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 6px;
       flex: 1;
-      justify-content: flex-start;
+      justify-content: space-between;
     }
-
     .quiz-topic-card {
       background: #ffffff;
-      border: 1.5px solid #cbd5e1;
-      border-left: 4px solid #1e3a8a;
-      border-radius: 3px;
-      padding: 7.5px 12px;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid #1e3a8a;
+      border-radius: 4px;
+      padding: 6.5px 11px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-
+    .quiz-topic-card.synthesis-card {
+      background: #fdfbf7;
+      border-left-color: #d97706;
+    }
     .quiz-topic-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       border-bottom: 0.5px solid #e2e8f0;
-      padding-bottom: 2px;
-      margin-bottom: 3px;
+      padding-bottom: 2.5px;
+      margin-bottom: 3.5px;
     }
-
     .quiz-topic-title {
       font-family: 'Inter', sans-serif;
-      font-size: 9.8pt;
+      font-size: 8.7pt;
       font-weight: 800;
       color: #0f172a;
     }
-
     .quiz-topic-ref {
       font-family: 'Inter', sans-serif;
-      font-size: 7.0pt;
+      font-size: 7.2pt;
       font-weight: 800;
       color: #1e3a8a;
       background: #eff6ff;
       padding: 1px 6px;
       border-radius: 2px;
     }
-
-    .quiz-questions-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4px 14px;
+    .quiz-questions-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2.5px;
+      flex: 1;
     }
-
     .quiz-q-item {
-      font-size: 9.6pt;
-      line-height: 1.38;
+      font-family: 'Inter', sans-serif;
+      font-size: 8.05pt;
+      line-height: 1.32;
       color: #1e293b;
       display: flex;
       align-items: baseline;
       gap: 5px;
     }
-
-    .quiz-q-box {
-      width: 9px;
-      height: 9px;
-      border: 1.5px solid #1e3a8a;
-      border-radius: 2px;
-      flex-shrink: 0;
-      display: inline-block;
-      margin-top: 1.5px;
-    }
-
     .quiz-q-num {
       color: #1e3a8a;
       font-weight: 800;
-      white-space: nowrap;
+      min-width: 26px;
+      flex-shrink: 0;
     }
 
-    /* ==========================================================================
-       PAGE 16: MASTER VOCABULARY BANK & CORE CONCEPTS BACK COVER (ZERO VOIDS)
-       ========================================================================== */
-    .vocab-masthead {
+    /* PAGES 17–18: 48-WORD VOCABULARY BANK */
+    .vocab-lesson-stack {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #0f172a;
-      padding-bottom: 2px;
-      margin-bottom: 3px;
-      font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
-      font-weight: 800;
-      letter-spacing: 0.10em;
-      color: #0f172a;
-      text-transform: uppercase;
-    }
-
-    .vocab-title-block {
-      text-align: center;
-      margin-bottom: 4px;
-    }
-
-    .vocab-main-title {
-      font-family: 'Cinzel', serif;
-      font-size: 13.5pt;
-      font-weight: 800;
-      color: #0f172a;
-      margin: 0;
-      letter-spacing: 0.04em;
-    }
-
-    .vocab-subtitle {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-size: 8.0pt;
-      color: #475569;
-      margin-top: 1.5px;
-    }
-
-    .vocab-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5px 8px;
+      flex-direction: column;
+      gap: 6px;
       flex: 1;
+      justify-content: space-between;
     }
-
-    .vocab-card {
-      background: #f8fafc;
+    .vocab-lesson-group {
       border: 1px solid #cbd5e1;
       border-left: 3.5px solid #1e3a8a;
+      border-radius: 4px;
+      padding: 6px 10px;
+      background: #f8fafc;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .vocab-lesson-group.toolkit-group {
+      background: #fdfbf7;
+      border-left-color: #d97706;
+    }
+    .vocab-lesson-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.1pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+      border-bottom: 0.5px solid #e2e8f0;
+      padding-bottom: 2px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .vocab-terms-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 12px;
+    }
+    .vocab-entry {
+      font-size: 7.85pt;
+      line-height: 1.3;
+      color: #1e293b;
+    }
+    .vocab-entry-word {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .vocab-entry-syl {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.1pt;
+      color: #64748b;
+      margin-left: 3px;
+    }
+    .vocab-entry-def {
+      font-family: 'Lora', Georgia, serif;
+      display: block;
+      color: #334155;
+    }
+
+    /* PAGE 19 & PAGE 20: ATLAS, COMPARISON & BACK COVER */
+    .atlas-grid-2x2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      margin-bottom: 7px;
+    }
+    .map-plate-card {
+      border: 1.2px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 4.5px;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+    }
+    .map-plate-img {
+      width: 100%;
+      height: 59mm;
+      object-fit: contain;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
       border-radius: 3px;
-      padding: 6.5px 10px;
+      display: block;
+    }
+    .gallery-plate-img {
+      width: 100%;
+      height: 50mm;
+      object-fit: cover;
+      background: #0f172a;
+      border: 1px solid #cbd5e1;
+      border-radius: 3px;
+      display: block;
+    }
+    .map-plate-cap {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.1pt;
+      color: #1e293b;
+      line-height: 1.25;
+      margin-top: 3.5px;
+      text-align: left;
+    }
+    .themes-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      flex: 1;
+    }
+    .theme-card {
+      background: #fdfbf7;
+      border: 1px solid #e2d9cc;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 4px;
+      padding: 7px 10px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      gap: 3.5px;
+      gap: 4.5px;
     }
-
-    .vocab-card-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      border-bottom: 0.5px solid #e2e8f0;
-      padding-bottom: 2px;
-      margin-bottom: 1px;
-    }
-
-    .vocab-term {
+    .theme-card h3 {
       font-family: 'Inter', sans-serif;
-      font-size: 8.8pt;
+      font-size: 8.5pt;
       font-weight: 800;
-      color: #0f172a;
-    }
-
-    .vocab-badge {
-      font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
-      font-weight: 800;
-      color: #1e3a8a;
-      background: #eff6ff;
-      padding: 1px 5px;
-      border-radius: 2px;
-      text-transform: uppercase;
-    }
-
-    .vocab-desc {
-      font-family: 'Lora', Georgia, serif;
-      font-size: 7.8pt;
-      line-height: 1.30;
       color: #0f172a;
       margin: 0;
+      border-bottom: 0.5px solid #e2d9cc;
+      padding-bottom: 2.5px;
     }
-
-    .vocab-evidence {
+    .theme-card p {
       font-family: 'Lora', Georgia, serif;
-      font-size: 7.4pt;
-      line-height: 1.26;
+      font-size: 8pt;
+      line-height: 1.34;
       color: #334155;
       margin: 0;
     }
-
-    .vocab-evidence strong {
-      color: #475569;
-      font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .vocab-mechanism {
-      font-family: 'Lora', Georgia, serif;
-      font-size: 7.4pt;
-      line-height: 1.26;
-      color: #1e3a8a;
-      font-style: italic;
+    .theme-bullets {
       margin: 0;
-    }
-
-    .vocab-mechanism strong {
-      color: #1e3a8a;
+      padding-left: 14px;
       font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      font-style: normal;
+      font-size: 7.3pt;
+      line-height: 1.34;
+      color: #1e293b;
     }
-
-    .big-picture-card {
+    .theme-bullets li { margin-bottom: 2px; }
+    .theme-bullets li:last-child { margin-bottom: 0; }
+    .theme-meta {
+      margin-top: auto;
+      font-family: 'Inter', sans-serif;
+      font-size: 7pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      background: #eff6ff;
+      padding: 2.5px 6px;
+      border-radius: 3px;
+      border: 0.5px solid #bfdbfe;
+    }
+    .back-discussion-box {
       background: #eff6ff;
       border: 1.5px solid #bfdbfe;
       border-left: 4.5px solid #1e3a8a;
-      border-radius: 3px;
+      border-radius: 4px;
       padding: 8px 12px;
-      margin-top: 6px;
+      margin-top: 7px;
     }
-
-    .big-picture-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 2.5px;
-    }
-
-    .big-picture-title {
+    .back-discussion-title {
       font-family: 'Inter', sans-serif;
-      font-size: 7.8pt;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #1e3a8a;
-    }
-
-    .big-picture-question {
-      font-family: 'Lora', serif;
-      font-size: 8.6pt;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 3.5px;
-    }
-
-    .big-picture-prompts {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 8px;
-      font-size: 7.4pt;
-      line-height: 1.30;
-      color: #334155;
-    }
-
-    .bp-prompt strong {
-      color: #1e3a8a;
+      font-size: 8pt;
       font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #1e3a8a;
+      margin-bottom: 4px;
     }
+    .back-discussion-list {
+      margin: 0;
+      padding-left: 17px;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.15pt;
+      line-height: 1.36;
+      color: #0f172a;
+    }
+    .back-discussion-list li { margin-bottom: 2.5px; }
+    .back-discussion-list li:last-child { margin-bottom: 0; }
   </style>
 </head>
 <body>
 
-  <!-- ==========================================================================
-       PAGE 1: MASTER FRONT COVER (FULL-WIDTH KS3 ENGINE PARITY)
-       ========================================================================== -->
+  <div class="screen-toolbar">
+    <div><strong>KS2 Master Classroom Textbook (20 Pages)</strong> &bull; World War II &amp; The Home Front (1933–1945)</div>
+    <div>
+      <a href="/?unit=ks2_ww2&portal=ks2">&larr; Back to KS2 Unit Hub</a>
+      <a href="/pdfs/ks2_ww2_textbook.pdf" download>Download PDF</a>
+      <button class="gold" onclick="window.print()">Print Textbook</button>
+    </div>
+  </div>
+
+  <!-- PAGE 1: MASTER FRONT COVER -->
   <div class="page" id="page-1">
     <div class="cover-masthead">
-      <span>THE HISTORY REVISION HUB • KEY STAGE 2 MASTER COMPANION TEXTBOOK</span>
-      <span class="cover-date-pill">1939 – 1945</span>
+      <span>THE HISTORY REVISION HUB • KEY STAGE 2 CLASSROOM TEXTBOOK</span>
+      <span class="cover-date-pill">1933 – 1945</span>
     </div>
 
     <div class="cover-title-block">
       <h1 class="cover-main-title">WORLD WAR II &amp; THE HOME FRONT</h1>
-      <div class="cover-subtitle">Total Civilian Mobilisation, Evacuation, The Blitz &amp; Rebuilding Britain</div>
+      <div class="cover-subtitle">Evacuation, Kindertransport, The Blitz, Rationing &amp; Rebuilding Lives</div>
     </div>
 
     <div class="cover-enquiry-banner">
-      <span class="cover-enquiry-badge">KEY ENQUIRY QUESTION</span>
-      <span class="cover-enquiry-text">&ldquo;${unitData.enquiry_question || "How did World War II transform children's lives in Britain and Europe?"}&rdquo;</span>
+      <span class="cover-enquiry-badge">BIG QUESTION</span>
+      <span class="cover-enquiry-text">&ldquo;How did World War II change the lives of children and families across Britain and Europe?&rdquo;</span>
     </div>
 
     <div class="cover-hero-wrap">
-      <img class="cover-hero-img" src="${heroImageBase64 || ''}" alt="Czech refugee children at Prague Airport 1939" />
+      <img class="cover-hero-img" src="assets/banner_unit_hero.jpg" alt="British schoolchildren marching along a London railway station platform with gas mask boxes and luggage labels in 1940" />
     </div>
     <div class="cover-hero-caption">
-      Primary Photograph: Czech refugee children, including Peter Needham (centre foreground), waving farewell at Prague Airport on 12 January 1939 before boarding an evacuation flight to Great Britain (Imperial War Museum HU 88871 / Object 205184254).
+      Primary Photograph: British schoolchildren carrying cardboard gas mask boxes and wearing luggage labels as they walk along a London railway platform during wartime evacuation, 1940 (Imperial War Museum HU 36871).
     </div>
 
     <div class="cover-overview-box">
       <div class="cover-overview-header">
-        <span class="cover-overview-title">HISTORICAL OVERVIEW • 1939–1945</span>
-        <span class="cover-overview-period">HOME FRONT SCHEMA</span>
+        <span>ABOUT THIS UNIT</span>
+        <span>YEARS 5 &amp; 6 HISTORY</span>
       </div>
-      <p class="cover-overview-text">${canonicalOverviewP1}</p>
-      <p class="cover-overview-text" style="margin-top: 3px;">${canonicalOverviewP2}</p>
+      <p class="cover-overview-text">
+        Between 1939 and 1945, the Second World War changed everyday life for millions of families. In Britain, children carried gas masks in cardboard boxes, left cities with brown luggage labels pinned to their coats, sheltered from night air raids, and grew vegetables in back gardens. Across Europe, Jewish children lost their rights step by step before brave rescue missions brought thousands to safety in Britain—both before the war on the Kindertransport and afterwards beside Lake Windermere.
+      </p>
     </div>
 
     <div class="cover-directory">
       <div class="cover-directory-head">
-        <span>LESSON DIRECTORY • TEN CANONICAL ENQUIRIES</span>
-        <span>A3 SADDLE-STITCH COMPANION</span>
+        <span>CONTENTS • ELEVEN CLASSROOM ENQUIRIES</span>
+        <span>20-PAGE READER</span>
       </div>
       <table class="cover-directory-table">
         <tbody>
@@ -1637,31 +1138,28 @@ function buildHtml() {
     </div>
 
     <div class="running-footer">
-      <span>The History Revision Hub • Disciplinary History Series • KS2 Companion Reader</span>
+      <span>The History Revision Hub • Key Stage 2 Classroom Reader</span>
       <span class="page-pill">Page 1</span>
     </div>
   </div>
 
-  <!-- ==========================================================================
-       PAGE 2: INSIDE FRONT COVER PUPIL-FACING LEARNING JOURNEY (ZERO VOIDS)
-       ========================================================================== -->
+  <!-- PAGE 2: YOUR LEARNING JOURNEY -->
   <div class="page" id="page-2">
     <div class="running-header">
-      <span>THE HISTORY REVISION HUB • KEY STAGE 2 COMPANION TEXTBOOK</span>
-      <span>YOUR LEARNING JOURNEY &nbsp;|&nbsp; 1939–1945</span>
+      <span>THE HISTORY REVISION HUB • KEY STAGE 2 TEXTBOOK</span>
+      <span>YOUR LEARNING JOURNEY (LESSONS 1–11)</span>
     </div>
 
-    <div class="journey-header">
-      <h2 class="journey-title">Your Journey Through World War II</h2>
-      <div class="journey-subtitle">Ten Historical Enquiries into How the Second World War Changed Children's Lives</div>
+    <div class="section-page-header">
+      <h2 class="section-page-title">Your Journey Through World War II</h2>
+      <div class="section-page-subtitle">Eleven Historical Enquiries into How War Changed Children’s Lives</div>
     </div>
 
     <div class="journey-grid">
-      ${lessons
+      ${journeyTop10
         .map((lesson, idx) => {
           const pageNum = idx + 4;
           const cleanTitle = lesson.title.replace(/^Enquiry \d+:\s*/i, '');
-          const blurbText = lesson.blurb || lesson.subtitle || '';
           return `
         <div class="journey-card">
           <div class="journey-card-head">
@@ -1669,156 +1167,160 @@ function buildHtml() {
             <span class="journey-card-page">Page ${pageNum}</span>
           </div>
           <div class="journey-card-question">&ldquo;${lesson.enquiryQuestion}&rdquo;</div>
-          <p class="journey-card-desc">${blurbText}</p>
+          <p class="journey-card-desc">${lesson.blurb || ''}</p>
         </div>`;
         })
         .join('')}
+      ${
+        journeyL11
+          ? `
+        <div class="journey-card span-two">
+          <div class="journey-card-head">
+            <span class="journey-card-title">Lesson 11: ${journeyL11.title.replace(/^Enquiry \d+:\s*/i, '')}</span>
+            <span class="journey-card-page">Page 14</span>
+          </div>
+          <div class="journey-card-question">&ldquo;${journeyL11.enquiryQuestion}&rdquo;</div>
+          <p class="journey-card-desc">${journeyL11.blurb || ''}</p>
+        </div>`
+          : ''
+      }
     </div>
 
     <div class="running-footer">
-      <span>The History Revision Hub • Disciplinary Scheme of Learning &amp; Historical Concepts</span>
+      <span>The History Revision Hub • Key Stage 2 History • Eleven-Lesson Overview</span>
       <span class="page-pill">Page 2</span>
     </div>
   </div>
 
-  <!-- ==========================================================================
-       PAGE 3: MASTER CHRONOLOGICAL MILESTONE SPINE (ZERO REF TAGS)
-       ========================================================================== -->
+  <!-- PAGE 3: MASTER CHRONOLOGICAL TURNING POINTS -->
   <div class="page" id="page-3">
     <div class="running-header">
-      <span>THE HISTORY REVISION HUB • KEY STAGE 2 CHRONOLOGICAL SPINE</span>
-      <span>TURNING POINTS HIGHWAY &nbsp;|&nbsp; 1938–1945</span>
+      <span>THE HISTORY REVISION HUB • KEY STAGE 2 TIMELINE</span>
+      <span>KEY DATES &amp; TURNING POINTS (1933–1954)</span>
     </div>
 
-    <div class="spine-header-block">
-      <h2 class="spine-main-title">Chronological Turning Points Highway</h2>
-      <div class="spine-subtitle">Twelve Decisive Causal Milestones of the Second World War &amp; The Home Front</div>
+    <div class="section-page-header">
+      <h2 class="section-page-title">Key Dates &amp; Turning Points</h2>
+      <div class="section-page-subtitle">Follow How Events Unfolded Step by Step Before, During, and After the War</div>
     </div>
 
     <div class="milestone-timeline">
-      ${milestones
-        .map(
-          (m) => `
+      ${TURNING_POINTS.map(
+        (m) => `
         <div class="milestone-row">
           <div class="milestone-date-box">${m.date}</div>
           <div class="milestone-node"></div>
           <div class="milestone-content">
-            <div class="milestone-header-row">
-              <span class="milestone-title">${m.title}</span>
-            </div>
+            <span class="milestone-title">${m.title}</span>
             <p class="milestone-desc">${m.desc}</p>
           </div>
         </div>`,
-        )
-        .join('')}
+      ).join('')}
     </div>
 
     <div class="running-footer">
-      <span>The History Revision Hub • Chronological Schema Mastery • 1938–1945 Turning Points</span>
+      <span>The History Revision Hub • Key Stage 2 Timeline (1933–1954)</span>
       <span class="page-pill">Page 3</span>
     </div>
   </div>
 
-  <!-- ==========================================================================
-       PAGES 4–13: TEN CANONICAL ENQUIRIES (SINGLE WIDE-MARGIN COLUMN)
-       ========================================================================== -->
+  <!-- PAGES 4–14: ALL 11 CANONICAL LESSONS -->
   ${lessons
     .map((lesson, idx) => {
       const pageNum = idx + 4;
       const cleanTitle = lesson.title.replace(/^Enquiry \d+:\s*/i, '');
+      const vocabWords = lesson.vocab || [];
 
       return `
-  <div class="page" id="page-${pageNum}">
+  <div class="page lesson-page" id="page-${pageNum}">
     <div class="running-header">
       <span>THE HISTORY REVISION HUB • KEY STAGE 2 HISTORY</span>
-      <span>Lesson ${idx + 1} &nbsp;|&nbsp; Page ${pageNum}</span>
+      <span>Lesson ${idx + 1} of 11 &nbsp;|&nbsp; Page ${pageNum}</span>
     </div>
 
     <div class="enquiry-banner">
       <div class="enquiry-meta-row">
-        <span class="enquiry-pill">LESSON ${idx + 1} • CORE HISTORICAL NARRATIVE</span>
-        <span class="enquiry-canon-tag">${lesson.skill || 'Historical Enquiry'}</span>
+        <span class="enquiry-pill">LESSON ${idx + 1} • READING CHAPTER</span>
+        <span class="enquiry-canon-tag">${lesson.period || '1939–1945'}</span>
       </div>
       <h2 class="enquiry-title">${cleanTitle}</h2>
       <div class="enquiry-core-question">
-        <span class="label">Key Enquiry Question:</span>
+        <span class="label">Enquiry Question</span>
         <span>&ldquo;${lesson.enquiryQuestion}&rdquo;</span>
       </div>
     </div>
 
     <div class="prose-body">
-      <div class="prose-single-column">
-        ${(lesson.narrative_blocks || [])
-          .map((b, bIdx) => {
-            const blockRef = `[${idx + 1}.${bIdx + 1}]`;
-            const cleanText = cleanProse(b.text);
-            const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
-            const st =
-              stages[bIdx] ||
-              stages.find((s) => s.para_ref && s.para_ref.includes('.' + (bIdx + 1)));
-            const rawQ = (st && (st.question || st.workbook_question)) || b.question || '';
-            const cleanQ = rawQ ? rawQ.replace(/^["'“\s]+|["'”\s]+$/g, '').trim() : '';
-            return `
-          <div class="block-section">
-            <div class="block-header">
-              <span class="block-ref">${blockRef}</span>
-              <span class="block-title">${b.title || ''}</span>
-            </div>
-            ${cleanQ ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${cleanQ}&rdquo;</span></div>` : ''}
-            <p class="prose-p">${cleanText}</p>
-          </div>`;
+      ${(lesson.narrative_blocks || [])
+        .map((b, bIdx) => {
+          const cleanText = cleanProse(b.text);
+          return `
+        <div class="block-section">
+          <div class="block-header">
+            <span class="block-part-badge">Part ${bIdx + 1}</span>
+            <span class="block-title">${b.title || ''}</span>
+          </div>
+          <p class="prose-p">${cleanText}</p>
+        </div>`;
+        })
+        .join('')}
+
+      <div class="lesson-words-strip">
+        <span class="lesson-words-label">Key Words (pp. 17–18):</span>
+        ${vocabWords
+          .map((v) => {
+            const w = v.term || v.word;
+            return `<span class="lesson-word-chip">${w} (${v.syllables || w})</span>`;
           })
           .join('')}
       </div>
     </div>
 
     <div class="running-footer">
-      <span>The History Revision Hub • KS2 History • Lesson ${idx + 1} • ${cleanTitle}</span>
+      <span>The History Revision Hub • KS2 History • Lesson ${idx + 1}: ${cleanTitle}</span>
       <span class="page-pill">Page ${pageNum}</span>
     </div>
   </div>`;
     })
     .join('')}
 
-  <!-- ==========================================================================
-       PAGE 14: MASTER KNOWLEDGE RETRIEVAL QUIZ: PART I (LESSONS 1 TO 5)
-       ========================================================================== -->
-  <div class="page" id="page-14">
-    <div class="quiz-page-masthead">
-      <span>THE HISTORY REVISION HUB • KEY STAGE 2 RETRIEVAL PRACTICE</span>
-      <span>PART I: LESSONS 1 TO 5 &nbsp;|&nbsp; QUESTIONS 1–30</span>
+  <!-- PAGE 15: MASTER KNOWLEDGE RETRIEVAL QUIZ — PART I (LESSONS 1–6) -->
+  <div class="page" id="page-15">
+    <div class="running-header">
+      <span>THE HISTORY REVISION HUB • MEMORY CHECK</span>
+      <span>PART I: LESSONS 1 TO 6 &nbsp;|&nbsp; QUESTIONS 1–30</span>
     </div>
 
-    <div class="quiz-page-title-block">
-      <h2 class="quiz-page-main-title">Master Knowledge Retrieval Quiz: Part I</h2>
+    <div class="section-page-header">
+      <h2 class="section-page-title">Master Knowledge Check: Part I (Lessons 1–6)</h2>
+      <div class="section-page-subtitle">Test Yourself or Quiz a Partner Aloud — Do Not Write in This Textbook</div>
     </div>
 
     <div class="quiz-instructions">
-      <span><strong>PARTNER QUIZ OR SOLO RETRIEVAL:</strong> Close earlier pages. Take turns recalling in pairs, or practise silent solo retrieval.</span>
-      <span style="white-space: nowrap; flex-shrink: 0;"><strong>Verified on pp. 4–8</strong></span>
+      <span><strong>HOW TO USE:</strong> Take turns asking a partner these questions aloud, or write answers in your exercise book.</span>
+      <span><strong>Check answers on Pages 4–9</strong></span>
     </div>
 
     <div class="quiz-stack">
       ${lessons
-        .slice(0, 5)
+        .slice(0, 6)
         .map((lesson, idx) => {
           const pageNum = idx + 4;
           const cleanTopic = lesson.title.replace(/^Enquiry \d+:\s*/i, '');
-          const questions = MASTER_QUIZ_QUESTIONS['lesson_' + (idx + 1)] || [];
+          const qs = TEXTBOOK_QUIZ['lesson_' + (idx + 1)] || [];
           return `
         <div class="quiz-topic-card">
           <div class="quiz-topic-head">
             <span class="quiz-topic-title">Lesson ${idx + 1}: ${cleanTopic}</span>
-            <span class="quiz-topic-ref">p. ${pageNum} • Questions ${idx * 6 + 1}–${idx * 6 + 6}</span>
+            <span class="quiz-topic-ref">Read on Page ${pageNum}</span>
           </div>
-          <div class="quiz-questions-grid">
-            ${questions
+          <div class="quiz-questions-list">
+            ${qs
               .map(
-                (q, qIdx) => `
+                (qText, qIdx) => `
               <div class="quiz-q-item">
-                <span class="quiz-q-box"></span>
-                <span class="quiz-q-num">Q${idx * 6 + qIdx + 1}.</span>
-                <span>${q.q}</span>
+                <span class="quiz-q-num">Q${idx * 5 + qIdx + 1}.</span>
+                <span>${qText}</span>
               </div>`,
               )
               .join('')}
@@ -1829,121 +1331,343 @@ function buildHtml() {
     </div>
 
     <div class="running-footer">
-      <span>The History Revision Hub • Thirty Essential Recall Questions • Part I (Lessons 1–5)</span>
-      <span class="page-pill">Page 14</span>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       PAGE 15: MASTER KNOWLEDGE RETRIEVAL QUIZ: PART II (LESSONS 6 TO 10)
-       ========================================================================== -->
-  <div class="page" id="page-15">
-    <div class="quiz-page-masthead">
-      <span>THE HISTORY REVISION HUB • KEY STAGE 2 RETRIEVAL PRACTICE</span>
-      <span>PART II: LESSONS 6 TO 10 &nbsp;|&nbsp; QUESTIONS 31–60</span>
-    </div>
-
-    <div class="quiz-page-title-block">
-      <h2 class="quiz-page-main-title">Master Knowledge Retrieval Quiz: Part II</h2>
-    </div>
-
-    <div class="quiz-instructions">
-      <span><strong>PARTNER QUIZ OR SOLO RETRIEVAL:</strong> Close earlier pages. Take turns recalling in pairs, or practise silent solo retrieval.</span>
-      <span style="white-space: nowrap; flex-shrink: 0;"><strong>Verified on pp. 9–13</strong></span>
-    </div>
-
-    <div class="quiz-stack">
-      ${lessons
-        .slice(5, 10)
-        .map((lesson, offset) => {
-          const idx = offset + 5;
-          const pageNum = idx + 4;
-          const cleanTopic = lesson.title.replace(/^Enquiry \d+:\s*/i, '');
-          const questions = MASTER_QUIZ_QUESTIONS['lesson_' + (idx + 1)] || [];
-          return `
-        <div class="quiz-topic-card">
-          <div class="quiz-topic-head">
-            <span class="quiz-topic-title">Lesson ${idx + 1}: ${cleanTopic}</span>
-            <span class="quiz-topic-ref">p. ${pageNum} • Questions ${idx * 6 + 1}–${idx * 6 + 6}</span>
-          </div>
-          <div class="quiz-questions-grid">
-            ${questions
-              .map(
-                (q, qIdx) => `
-              <div class="quiz-q-item">
-                <span class="quiz-q-box"></span>
-                <span class="quiz-q-num">Q${idx * 6 + qIdx + 1}.</span>
-                <span>${q.q}</span>
-              </div>`,
-              )
-              .join('')}
-          </div>
-        </div>`;
-        })
-        .join('')}
-    </div>
-
-    <div class="running-footer">
-      <span>The History Revision Hub • Thirty Essential Recall Questions • Part II (Lessons 6–10)</span>
+      <span>The History Revision Hub • Master Knowledge Check • Questions 1–30</span>
       <span class="page-pill">Page 15</span>
     </div>
   </div>
 
-  <!-- ==========================================================================
-       PAGE 16: MASTER VOCABULARY BANK & CORE CONCEPTS BACK COVER (ZERO VOIDS)
-       ========================================================================== -->
+  <!-- PAGE 16: MASTER KNOWLEDGE RETRIEVAL QUIZ — PART II (LESSONS 7–11 + BIG PICTURE) -->
   <div class="page" id="page-16">
-    <div class="vocab-masthead">
-      <span>THE HISTORY REVISION HUB • KEY STAGE 2 HISTORICAL SCHEMATA</span>
-      <span>VOCABULARY &amp; CORE CONCEPTS</span>
+    <div class="running-header">
+      <span>THE HISTORY REVISION HUB • MEMORY CHECK</span>
+      <span>PART II: LESSONS 7 TO 11 &amp; BIG PICTURE &nbsp;|&nbsp; QUESTIONS 31–60</span>
     </div>
 
-    <div class="vocab-title-block">
-      <h2 class="vocab-main-title">The Home Front Vocabulary Bank &amp; Core Concepts</h2>
-      <div class="vocab-subtitle">Ten Essential Historical Terms for Explaining How World War II Transformed British Society</div>
+    <div class="section-page-header">
+      <h2 class="section-page-title">Master Knowledge Check: Part II (Questions 31–60)</h2>
+      <div class="section-page-subtitle">Test Yourself or Quiz a Partner Aloud — Do Not Write in This Textbook</div>
     </div>
 
-    <div class="vocab-grid">
-      ${vocabBank
-        .map(
-          (v) => `
-        <div class="vocab-card">
-          <div class="vocab-card-head">
-            <span class="vocab-term">${v.term}</span>
-            <span class="vocab-badge">${v.lesson} • ${v.badge}</span>
+    <div class="quiz-instructions">
+      <span><strong>HOW TO USE:</strong> Check Lessons 7–11 on Pages 10–14, then connect the whole unit in Questions 56–60!</span>
+      <span><strong>Check answers on Pages 4–19</strong></span>
+    </div>
+
+    <div class="quiz-stack">
+      ${lessons
+        .slice(6, 11)
+        .map((lesson, offset) => {
+          const idx = offset + 6;
+          const pageNum = idx + 4;
+          const cleanTopic = lesson.title.replace(/^Enquiry \d+:\s*/i, '');
+          const qs = TEXTBOOK_QUIZ['lesson_' + (idx + 1)] || [];
+          return `
+        <div class="quiz-topic-card">
+          <div class="quiz-topic-head">
+            <span class="quiz-topic-title">Lesson ${idx + 1}: ${cleanTopic}</span>
+            <span class="quiz-topic-ref">Read on Page ${pageNum}</span>
           </div>
-          <p class="vocab-desc">${v.definition}</p>
-          <p class="vocab-evidence"><strong>Real Wartime Clue:</strong> ${v.evidence.replace(/^Real Wartime Clue:\s*/i, '')}</p>
-          <p class="vocab-mechanism"><strong>Why It Changed Britain:</strong> ${v.mechanism.replace(/^Why It Changed Britain:\s*/i, '')}</p>
-        </div>`,
-        )
+          <div class="quiz-questions-list">
+            ${qs
+              .map(
+                (qText, qIdx) => `
+              <div class="quiz-q-item">
+                <span class="quiz-q-num">Q${idx * 5 + qIdx + 1}.</span>
+                <span>${qText}</span>
+              </div>`,
+              )
+              .join('')}
+          </div>
+        </div>`;
+        })
+        .join('')}
+
+        <div class="quiz-topic-card synthesis-card">
+          <div class="quiz-topic-head">
+            <span class="quiz-topic-title">Connecting the Whole Story: Big-Picture Questions</span>
+            <span class="quiz-topic-ref">Pages 3, 19 &amp; 20</span>
+          </div>
+          <div class="quiz-questions-list">
+            <div class="quiz-q-item"><span class="quiz-q-num">Q56.</span><span>How was a Kindertransport child’s journey across borders in 1938–39 different from a British evacuee’s journey in Sept 1939?</span></div>
+            <div class="quiz-q-item"><span class="quiz-q-num">Q57.</span><span>Why did German U-boats in the Atlantic make both Rationing (Lesson 7) and Bletchley Park codebreaking (Lesson 9) so vital?</span></div>
+            <div class="quiz-q-item"><span class="quiz-q-num">Q58.</span><span>Give three different jobs women performed between 1941 and 1945 to keep Britain’s farms, factories, and secret huts running.</span></div>
+            <div class="quiz-q-item"><span class="quiz-q-num">Q59.</span><span>Why could the 300 Windermere Children only be flown to Cumbria in August 1945 after Victory in Europe (VE) Day?</span></div>
+            <div class="quiz-q-item"><span class="quiz-q-num">Q60.</span><span>What free health service opened in July 1948 to care for every family as peacetime Britain rebuilt after the war?</span></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="running-footer">
+      <span>The History Revision Hub • Master Knowledge Check • Questions 31–60</span>
+      <span class="page-pill">Page 16</span>
+    </div>
+  </div>
+
+  <!-- PAGE 17: HISTORICAL VOCABULARY BANK — PART I (LESSONS 1–6) -->
+  <div class="page" id="page-17">
+    <div class="running-header">
+      <span>THE HISTORY REVISION HUB • KEY STAGE 2 GLOSSARY</span>
+      <span>HISTORICAL VOCABULARY BANK (LESSONS 1–6)</span>
+    </div>
+
+    <div class="section-page-header">
+      <h2 class="section-page-title">Key Words &amp; Meanings: Part I (Lessons 1–6)</h2>
+      <div class="section-page-subtitle">Practise Saying Each Historical Word Aloud Using the Syllable Clues</div>
+    </div>
+
+    <div class="vocab-lesson-stack">
+      ${lessons
+        .slice(0, 6)
+        .map((lesson, idx) => {
+          const cleanTopic = lesson.title.replace(/^Enquiry \d+:\s*/i, '');
+          return `
+        <div class="vocab-lesson-group">
+          <div class="vocab-lesson-title">
+            <span>Lesson ${idx + 1}: ${cleanTopic}</span>
+            <span>Page ${idx + 4}</span>
+          </div>
+          <div class="vocab-terms-2col">
+            ${(lesson.vocab || [])
+              .map(
+                (v) => `
+              <div class="vocab-entry">
+                <span class="vocab-entry-word">${v.term || v.word}</span>
+                <span class="vocab-entry-syl">[${v.syllables || v.term || v.word}]</span>
+                <span class="vocab-entry-def">${v.definition || v.def}</span>
+              </div>`,
+              )
+              .join('')}
+          </div>
+        </div>`;
+        })
         .join('')}
     </div>
 
-    <div class="big-picture-card">
-      <div class="big-picture-header">
-        <span class="big-picture-title">Big Picture Historical Thinking • Overarching Enquiry</span>
-        <span class="vocab-badge">Synoptic Synthesis</span>
+    <div class="running-footer">
+      <span>The History Revision Hub • Key Stage 2 Vocabulary Bank (Words 1–24)</span>
+      <span class="page-pill">Page 17</span>
+    </div>
+  </div>
+
+  <!-- PAGE 18: HISTORICAL VOCABULARY BANK — PART II (LESSONS 7–11 + HISTORIAN'S TOOLKIT) -->
+  <div class="page" id="page-18">
+    <div class="running-header">
+      <span>THE HISTORY REVISION HUB • KEY STAGE 2 GLOSSARY</span>
+      <span>HISTORICAL VOCABULARY BANK (LESSONS 7–11 &amp; TOOLKIT)</span>
+    </div>
+
+    <div class="section-page-header">
+      <h2 class="section-page-title">Key Words &amp; Meanings: Part II (Lessons 7–11 &amp; Toolkit)</h2>
+      <div class="section-page-subtitle">Twenty-Four More Important Words for Speaking and Writing Like a Historian</div>
+    </div>
+
+    <div class="vocab-lesson-stack">
+      ${lessons
+        .slice(6, 11)
+        .map((lesson, offset) => {
+          const idx = offset + 6;
+          const cleanTopic = lesson.title.replace(/^Enquiry \d+:\s*/i, '');
+          return `
+        <div class="vocab-lesson-group">
+          <div class="vocab-lesson-title">
+            <span>Lesson ${idx + 1}: ${cleanTopic}</span>
+            <span>Page ${idx + 4}</span>
+          </div>
+          <div class="vocab-terms-2col">
+            ${(lesson.vocab || [])
+              .map(
+                (v) => `
+              <div class="vocab-entry">
+                <span class="vocab-entry-word">${v.term || v.word}</span>
+                <span class="vocab-entry-syl">[${v.syllables || v.term || v.word}]</span>
+                <span class="vocab-entry-def">${v.definition || v.def}</span>
+              </div>`,
+              )
+              .join('')}
+          </div>
+        </div>`;
+        })
+        .join('')}
+
+        <div class="vocab-lesson-group toolkit-group">
+          <div class="vocab-lesson-title">
+            <span>Historian’s Toolkit: Working With Historical Evidence</span>
+            <span>All Enquiries</span>
+          </div>
+          <div class="vocab-terms-2col">
+            <div class="vocab-entry">
+              <span class="vocab-entry-word">Primary Source</span>
+              <span class="vocab-entry-syl">[pri-ma-ry source]</span>
+              <span class="vocab-entry-def">A real object, photograph, diary, letter, or poster created at the time in the past being studied.</span>
+            </div>
+            <div class="vocab-entry">
+              <span class="vocab-entry-word">Eyewitness Testimony</span>
+              <span class="vocab-entry-syl">[eye-wit-ness tes-ti-mo-ny]</span>
+              <span class="vocab-entry-def">Spoken or written memories shared by someone who personally lived through a historical event.</span>
+            </div>
+            <div class="vocab-entry">
+              <span class="vocab-entry-word">Propaganda Poster</span>
+              <span class="vocab-entry-syl">[prop-a-gan-da pos-ter]</span>
+              <span class="vocab-entry-def">An official poster designed by a government to persuade citizens to help the war effort or stay safe.</span>
+            </div>
+            <div class="vocab-entry">
+              <span class="vocab-entry-word">Chronology</span>
+              <span class="vocab-entry-syl">[chro-nol-o-gy]</span>
+              <span class="vocab-entry-def">Arranging historical events in the exact time order in which they happened, from earliest to latest.</span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="running-footer">
+      <span>The History Revision Hub • Key Stage 2 Vocabulary Bank (All 48 Words Complete)</span>
+      <span class="page-pill">Page 18</span>
+    </div>
+  </div>
+
+  <!-- PAGE 19: HISTORICAL ATLAS & COMPARING CHILDREN'S WARTIME JOURNEYS -->
+  <div class="page" id="page-19">
+    <div class="running-header">
+      <span>THE HISTORY REVISION HUB • HISTORICAL ATLAS</span>
+      <span>FOUR MAPS &amp; COMPARING CHILDREN’S JOURNEYS (1938–1945)</span>
+    </div>
+
+    <div class="section-page-header">
+      <h2 class="section-page-title">Historical Atlas: Children’s Wartime Journeys</h2>
+      <div class="section-page-subtitle">Compare Four Key Maps Across Britain and Europe (1938–1945)</div>
+    </div>
+
+    <div class="atlas-grid-2x2">
+      <div class="map-plate-card">
+        <img class="map-plate-img" src="assets/evacuation_map_ks2_pupil.png" alt="Map of Operation Pied Piper British evacuation routes" />
+        <div class="map-plate-cap"><strong>Map A • Operation Pied Piper (Sept 1939):</strong> 1.5 million British children and mothers moved from city targets to rural counties.</div>
       </div>
-      <div class="big-picture-question">
-        &ldquo;How did World War II transform children's lives in Britain and Europe?&rdquo;
+      <div class="map-plate-card">
+        <img class="map-plate-img" src="assets/kindertransport_route_map.jpg" alt="Map of Kindertransport rescue routes from Prague, Vienna and Berlin to London" />
+        <div class="map-plate-cap"><strong>Map B • Kindertransport Routes (1938–39):</strong> Nearly 10,000 unaccompanied children escaped Nazi persecution by train and ferry to Britain.</div>
       </div>
-      <div class="big-picture-prompts">
-        <div class="bp-prompt">
-          <strong>1. Disruption:</strong> How did gas masks, blackouts, and evacuation upend ordinary childhood routines and family life?
-        </div>
-        <div class="bp-prompt">
-          <strong>2. Resilience:</strong> How did communities, families, and children pull together to overcome danger, bombings, and food shortages?
-        </div>
-        <div class="bp-prompt">
-          <strong>3. Legacy:</strong> Why is it vital to preserve the stories of refugees, evacuees, codebreakers, and rescuers for future generations?
-        </div>
+      <div class="map-plate-card">
+        <img class="map-plate-img" src="assets/uk_blitz_cities_map_1940.png" alt="Map of major British port and industrial cities bombed during the Blitz" />
+        <div class="map-plate-cap"><strong>Map C • The Blitz Across Britain (1940–41):</strong> Night raids targeted London alongside docks and factories in Coventry, Liverpool, Hull &amp; Clydebank.</div>
+      </div>
+      <div class="map-plate-card">
+        <img class="map-plate-img" src="assets/windermere_rescue_flight_map_1945.png" alt="Map of the August 1945 RAF Short Stirling airlift from Prague to Carlisle and Lake Windermere" />
+        <div class="map-plate-cap"><strong>Map D • The Windermere Airlift (Aug 1945):</strong> Ten RAF Short Stirling bombers flew 300 child camp survivors from Prague to Cumbria.</div>
+      </div>
+    </div>
+
+    <div class="themes-grid-2col">
+      <div class="theme-card">
+        <h3>1. British Evacuees (1–3 September 1939)</h3>
+        <p>Travelled <strong>inside Britain</strong> before bombing started to stay safe from air raids. Children wore brown luggage labels, met the village Billeting Officer, and stayed with countryside host families.</p>
+        <ul class="theme-bullets">
+          <li><strong>Route:</strong> Big port &amp; factory cities &rarr; rural counties (Devon, Wales, Lake District).</li>
+          <li><strong>Family &amp; Language:</strong> Spoke English, wrote postcards home, and mostly reunited in 1945.</li>
+        </ul>
+        <div class="theme-meta">Scale: 1.5 million evacuees • Key Link: Lesson 2 (Page 5)</div>
+      </div>
+      <div class="theme-card">
+        <h3>2. Kindertransport Refugees (Dec 1938 – Aug 1939)</h3>
+        <p>Travelled <strong>across international borders</strong> before war closed frontiers to escape unfair Nazi anti-Jewish laws. Parents had to stay behind when children boarded trains for Britain.</p>
+        <ul class="theme-bullets">
+          <li><strong>Route:</strong> Prague, Vienna &amp; Berlin &rarr; Dutch border &rarr; Hook of Holland ferry &rarr; Harwich.</li>
+          <li><strong>Family &amp; Language:</strong> Arrived speaking Czech or German; most never saw their parents again.</li>
+        </ul>
+        <div class="theme-meta">Scale: ~10,000 children (669 from Prague) • Key Link: Lessons 4–5 (Pages 7–8)</div>
+      </div>
+      <div class="theme-card">
+        <h3>3. Children on the Home Front (1940–1945)</h3>
+        <p>Millions of British children experienced night sirens in garden Anderson shelters, indoor Morrison cages, or Tube platforms while helping tend family vegetable allotments.</p>
+        <ul class="theme-bullets">
+          <li><strong>Protection:</strong> Blackout curtains, taped glass, and 15 inches of garden soil over steel shelters.</li>
+          <li><strong>Fair Shares:</strong> Coupon ration books, school milk &amp; 1.4m allotments improved child health.</li>
+        </ul>
+        <div class="theme-meta">Scale: 38 million gas masks issued • Key Link: Lessons 1, 6 &amp; 7 (Pages 4, 9–10)</div>
+      </div>
+      <div class="theme-card">
+        <h3>4. The Windermere Survivors (August 1945)</h3>
+        <p>Orphaned Jewish teenagers and children who survived wartime ghettos and camps in occupied Europe, brought to peaceful Cumbria three months after VE Day to heal.</p>
+        <ul class="theme-bullets">
+          <li><strong>Route:</strong> Liberated Theresienstadt &rarr; Prague Airfield &rarr; 10 RAF Stirling bombers &rarr; Carlisle.</li>
+          <li><strong>Recovery:</strong> Art therapy, English classes, sport, bicycles &amp; the lifelong ’45 Aid Society.</li>
+        </ul>
+        <div class="theme-meta">Scale: 300 survivors in Cumbria • Key Link: Lesson 11 (Page 14)</div>
       </div>
     </div>
 
     <div class="running-footer">
-      <span>The History Revision Hub • Disciplinary History Series • KS2 Companion Reader</span>
-      <span class="page-pill">Page 16</span>
+      <span>The History Revision Hub • Historical Atlas &amp; Comparative Synthesis</span>
+      <span class="page-pill">Page 19</span>
+    </div>
+  </div>
+
+  <!-- PAGE 20: BACK COVER — PRIMARY SOURCE GALLERY & REMEMBERING TODAY -->
+  <div class="page" id="page-20">
+    <div class="running-header">
+      <span>THE HISTORY REVISION HUB • KEY STAGE 2 BACK COVER</span>
+      <span>PRIMARY SOURCE GALLERY &amp; REMEMBRANCE TODAY</span>
+    </div>
+
+    <div class="section-page-header">
+      <h2 class="section-page-title">Remembering World War II Today</h2>
+      <div class="section-page-subtitle">Iconic Primary Sources, Rebuilding Peacetime Britain &amp; Big Questions for Your Class</div>
+    </div>
+
+    <div class="atlas-grid-2x2">
+      <div class="map-plate-card">
+        <img class="gallery-plate-img" style="object-position: center 32%;" src="assets/st_pauls_survives_blitz_1940.jpg" alt="St Paul's Cathedral standing amidst Blitz smoke in December 1940" />
+        <div class="map-plate-cap"><strong>Courage in the Blitz (Dec 1940):</strong> Volunteer fire watchers saved St Paul’s Cathedral through ferocious night raids on London.</div>
+      </div>
+      <div class="map-plate-card">
+        <img class="gallery-plate-img" style="object-position: center 22%;" src="assets/land_girl_tractor_ww2.jpg" alt="Women's Land Army worker driving a farm tractor in wartime Britain" />
+        <div class="map-plate-cap"><strong>Women on the Home Front (1941–45):</strong> Over 80,000 Land Girls, factory workers, and Bletchley codebreakers kept Britain running.</div>
+      </div>
+      <div class="map-plate-card">
+        <img class="gallery-plate-img" style="object-position: center 22%;" src="assets/bevan_first_day_nhs_1948.jpg" alt="Aneurin Bevan visiting 13-year-old patient Sylvia Diggory on the first day of the NHS in July 1948" />
+        <div class="map-plate-cap"><strong>Launching the Free NHS (5 July 1948):</strong> Thirteen-year-old Sylvia Diggory greets Health Minister Aneurin Bevan on day one of the NHS.</div>
+      </div>
+      <div class="map-plate-card">
+        <img class="gallery-plate-img" style="object-position: center center;" src="assets/windermere_raf_stirling_airlift_1945.jpg" alt="RAF Short Stirling aircraft parked at Prague Airport during the August 1945 Windermere airlift" />
+        <div class="map-plate-cap"><strong>Aeroplanes of Peace (Aug 1945):</strong> Ten RAF Short Stirling bombers flew 300 orphaned child camp survivors from Prague to Cumbria.</div>
+      </div>
+    </div>
+
+    <div class="themes-grid-2col">
+      <div class="theme-card">
+        <h3>Rebuilding a Fairer Peacetime Britain (1945–1954)</h3>
+        <p>Having shared rations and sheltered side by side for six years, British citizens determined to build a fairer country after 1945 so every family had decent housing, schooling, and healthcare.</p>
+        <ul class="theme-bullets">
+          <li><strong>New Homes &amp; Schools:</strong> Over one million new council homes and modern schools replaced bombed streets.</li>
+          <li><strong>Free Healthcare (5 July 1948):</strong> Aneurin Bevan launched the <strong>National Health Service (NHS)</strong> free for all.</li>
+          <li><strong>Fair Shares Continued:</strong> Bread and meat rationing continued until Britain’s recovery in <strong>July 1954</strong>.</li>
+        </ul>
+        <div class="theme-meta">Key Post-War Milestones: NHS Founded (July 1948) • Rationing Ends (July 1954)</div>
+      </div>
+      <div class="theme-card">
+        <h3>Remembrance &amp; Passing Voices Forward</h3>
+        <p>Every November on Remembrance Sunday, communities gather at the Whitehall Cenotaph and local town memorials wearing red poppies to honour all who served in Britain and across the Commonwealth.</p>
+        <ul class="theme-bullets">
+          <li><strong>Commonwealth Service:</strong> Volunteers from India, the Caribbean, Africa, Canada, and ANZAC served alongside Britain.</li>
+          <li><strong>Living Testimonies:</strong> Vera Schaufeld’s suitcase, Winton’s scrapbook &amp; the ’45 Aid Society keep memories alive.</li>
+          <li><strong>Our Responsibility:</strong> Choosing to be an <strong>upstander</strong> whenever neighbours face unfair treatment.</li>
+        </ul>
+        <div class="theme-meta">Key Legacy: Being an Upstander • Protecting Fairness, Peace &amp; Human Rights</div>
+      </div>
+    </div>
+
+    <div class="back-discussion-box">
+      <div class="back-discussion-title">Big Class Discussion Questions</div>
+      <ol class="back-discussion-list">
+        <li><strong>Everyday Courage:</strong> How did ordinary citizens at home—ARP wardens, parents, Land Girls, firefighters, and secret codebreakers—help Britain survive six years of war?</li>
+        <li><strong>Being an Upstander:</strong> What can we learn today from volunteers like Nicholas Winton, Trevor Chadwick, and the British families who welcomed unaccompanied refugee children?</li>
+        <li><strong>Fairness Under Pressure:</strong> Why did coupon rationing and Dig for Victory actually leave many British children healthier during wartime than before 1939?</li>
+        <li><strong>Why History Matters:</strong> Why is it vital for Year 5 and Year 6 historians to keep sharing real eyewitness testimonies as fewer wartime survivors remain alive?</li>
+      </ol>
+    </div>
+
+    <div class="running-footer">
+      <span>The History Revision Hub • Key Stage 2 Primary Classroom Edition</span>
+      <span class="page-pill">Page 20</span>
     </div>
   </div>
 
@@ -1953,33 +1677,28 @@ function buildHtml() {
 
 async function renderKs2Ww2Textbook() {
   console.log('='.repeat(75));
-  console.log('🚀 Compiling 16-Page Master Classroom Textbook for KS2 [ks2_ww2]...');
-  console.log('   Standard: Model 1 Single Wide-Margin Column Pure Narrative Standard');
+  console.log('🚀 Compiling 20-Page Master Classroom Textbook for KS2 [ks2_ww2]...');
   console.log('='.repeat(75));
 
   const html = buildHtml();
 
   const publicDir = path.join(ROOT_DIR, 'public', 'units', 'ks2_ww2');
-  if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
-
   const rootDir = path.join(ROOT_DIR, 'units', 'ks2_ww2');
-  if (!fs.existsSync(rootDir)) fs.mkdirSync(rootDir, { recursive: true });
+  const pdfRootDir = path.join(ROOT_DIR, 'public', 'pdfs');
+  const pdfSubDir = path.join(ROOT_DIR, 'public', 'pdfs', 'ks2_ww2');
 
-  const pdfDir = path.join(ROOT_DIR, 'public', 'pdfs');
-  if (!fs.existsSync(pdfDir)) fs.mkdirSync(pdfDir, { recursive: true });
+  [publicDir, rootDir, pdfRootDir, pdfSubDir].forEach((d) => {
+    if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true });
+  });
 
-  const publicHtmlPath = path.join(publicDir, 'textbook.html');
-  const publicPublisherHtmlPath = path.join(publicDir, 'textbook_PUBLISHER.html');
-  const unitsHtmlPath = path.join(rootDir, 'textbook.html');
-  const pdfOutPath = path.join(pdfDir, 'ks2_ww2_textbook.pdf');
-  const pdfCompatPath = path.join(pdfDir, 'ks2_ww2_textbook.pdf');
+  const htmlTargets = [
+    path.join(publicDir, 'textbook.html'),
+    path.join(publicDir, 'textbook_PUBLISHER.html'),
+    path.join(rootDir, 'textbook.html'),
+    path.join(rootDir, 'textbook_PUBLISHER.html'),
+  ];
+  htmlTargets.forEach((p) => fs.writeFileSync(p, html, 'utf8'));
 
-  fs.writeFileSync(publicHtmlPath, html, 'utf8');
-  fs.writeFileSync(publicPublisherHtmlPath, html, 'utf8');
-  fs.writeFileSync(unitsHtmlPath, html, 'utf8');
-  console.log(`✅ Saved 16-Page Textbook HTML to: ${publicHtmlPath}`);
-
-  // Launch Puppeteer with Chrome
   const chromePath =
     process.env.PUPPETEER_EXECUTABLE_PATH ||
     (fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
@@ -1994,46 +1713,83 @@ async function renderKs2Ww2Textbook() {
 
   try {
     const page = await browser.newPage();
-    await page.setViewport({ width: 1200, height: 1600 });
-    await page.goto('file:///' + publicHtmlPath.replace(/\\/g, '/'), {
-      waitUntil: 'domcontentloaded',
-      timeout: 30000,
+    await page.setViewport({ width: 794, height: 1123, deviceScaleFactor: 2 });
+    const fileUrl = 'file:///' + htmlTargets[0].replace(/\\/g, '/');
+    await page.goto(fileUrl, { waitUntil: 'networkidle0', timeout: 60000 });
+    await page.evaluate(() => document.fonts.ready);
+
+    // Hide screen-only toolbar when measuring exact A4 page metrics
+    await page.evaluate(() => {
+      const tb = document.querySelector('.screen-toolbar');
+      if (tb) tb.style.display = 'none';
     });
 
-    // Dynamic In-Memory Typography Calibration with KS2 Profile
-    console.log(
-      '\n[Auto-Balancer] Dynamically calibrating font metrics (KS2 Profile: 11.5pt–13.0pt)...',
-    );
-    try {
-      await autoBalanceTextbook(page, { keyStage: 'KS2', pageSelector: '.page' });
-      const calibratedHtml = await page.content();
-      fs.writeFileSync(publicHtmlPath, calibratedHtml, 'utf8');
-      fs.writeFileSync(publicPublisherHtmlPath, calibratedHtml, 'utf8');
-      fs.writeFileSync(unitsHtmlPath, calibratedHtml, 'utf8');
-    } catch (e) {
-      console.warn('⚠️ Auto-calibrate note:', e.message);
+    // Deterministically calibrate Lesson pages (4..14) AFTER web fonts have loaded
+    await page.evaluate(() => {
+      const lessonPages = document.querySelectorAll('.lesson-page');
+      lessonPages.forEach((pg) => {
+        let fontPt = 12.4;
+        let lh = 1.64;
+        let gap = 15;
+        pg.style.setProperty('--lesson-font-size', fontPt + 'pt');
+        pg.style.setProperty('--lesson-lh', String(lh));
+        pg.style.setProperty('--block-gap', gap + 'px');
+
+        let guard = 0;
+        while (pg.scrollHeight > pg.clientHeight && guard < 35) {
+          fontPt = Math.max(10.4, +(fontPt - 0.15).toFixed(2));
+          lh = Math.max(1.40, +(lh - 0.02).toFixed(2));
+          gap = Math.max(6, gap - 1);
+          pg.style.setProperty('--lesson-font-size', fontPt + 'pt');
+          pg.style.setProperty('--lesson-lh', String(lh));
+          pg.style.setProperty('--block-gap', gap + 'px');
+          guard++;
+        }
+      });
+    });
+
+    // Verify all 20 pages for 0px overflow
+    const report = await page.evaluate(() => {
+      return Array.from(document.querySelectorAll('.page')).map((p, idx) => ({
+        page: idx + 1,
+        id: p.id,
+        clientH: p.clientHeight,
+        scrollH: p.scrollHeight,
+        overflowPx: Math.max(0, p.scrollHeight - p.clientHeight),
+      }));
+    });
+
+    // Restore screen toolbar in saved HTML (print CSS hides it automatically)
+    await page.evaluate(() => {
+      const tb = document.querySelector('.screen-toolbar');
+      if (tb) tb.style.display = '';
+    });
+
+    const calibratedHtml = '<!DOCTYPE html>\n' + (await page.evaluate(() => document.documentElement.outerHTML));
+    htmlTargets.forEach((p) => fs.writeFileSync(p, calibratedHtml, 'utf8'));
+
+    console.log('\n📐 20-Page Textbook Space & Overflow Report:');
+    let maxOverflow = 0;
+    report.forEach((r) => {
+      if (r.overflowPx > maxOverflow) maxOverflow = r.overflowPx;
+      console.log(`  Page ${String(r.page).padStart(2, ' ')} (${r.id}): scroll=${r.scrollH}px / client=${r.clientH}px | overflow=${r.overflowPx}px`);
+    });
+    if (maxOverflow > 1) {
+      throw new Error(`Textbook overflow detected (${maxOverflow}px)!`);
     }
 
-    // Run automated space budget audit
-    console.log('\n🔍 Running Automated Space Budget Audit on 16-Page KS2 Textbook...');
-    const audit = await auditPageBudget(page, {
-      underflowThresholdPx: 60,
-      pageSelector: '.page',
-    });
-    printSpaceAuditReport(audit, 'ks2_ww2_textbook.html');
-
-    // Export PDF
+    const pdfRootPath = path.join(pdfRootDir, 'ks2_ww2_textbook.pdf');
+    const pdfSubPath = path.join(pdfSubDir, 'ks2_ww2_textbook.pdf');
     await page.pdf({
-      path: pdfOutPath,
+      path: pdfRootPath,
       format: 'A4',
       printBackground: true,
+      preferCSSPageSize: true,
       margin: { top: 0, right: 0, bottom: 0, left: 0 },
     });
-    if (path.resolve(pdfOutPath) !== path.resolve(pdfCompatPath)) fs.copyFileSync(pdfOutPath, pdfCompatPath);
-    console.log(`🎉 Successfully generated 16-Page Master Textbook PDF at: ${pdfOutPath}`);
-    console.log(`📄 Copied to: ${pdfCompatPath}`);
-
-    return audit;
+    fs.copyFileSync(pdfRootPath, pdfSubPath);
+    console.log(`✅ Exported 20-Page Master Textbook PDF -> ${pdfRootPath} & ${pdfSubPath}`);
+    return report;
   } finally {
     await browser.close();
   }
@@ -2041,7 +1797,7 @@ async function renderKs2Ww2Textbook() {
 
 if (require.main === module) {
   renderKs2Ww2Textbook().catch((err) => {
-    console.error('❌ Build failed:', err);
+    console.error('❌ Textbook compilation failed:', err);
     process.exit(1);
   });
 }

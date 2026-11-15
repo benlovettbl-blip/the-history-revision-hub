@@ -1,12 +1,45 @@
 import { getAssetUrl } from './engine/assets.js';
 
+export function isOrganisationEntity(entity) {
+  if (!entity || typeof entity !== 'object') return false;
+  const raw = String(entity.entity_type || entity.entityType || entity.type || '').trim().toLowerCase();
+  return raw === 'organisation' || raw === 'organization' || raw === 'org';
+}
+
+function usesContainFit(entity, imgSrc = '') {
+  if (!entity) return false;
+  if (entity.image_fit === 'contain') return true;
+  return /\.svg(?:$|\?)/i.test(String(imgSrc || ''));
+}
+
 export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
+  const isOrg = isOrganisationEntity(person);
   const anchor = anchorTitle || person.anchor_title || '';
+  const dateLabel = person.lifespan || person.active_dates || '';
   const anchorSubtext = anchor
     ? ` &bull; Anchored to ${anchor}`
     : person.role
       ? ` &bull; ${person.role}`
       : '';
+
+  const badgeBg = isOrg ? '#0f766e' : '#1e40af';
+  const badgeLightBg = isOrg ? '#f0fdfa' : '#eff6ff';
+  const badgeLightBorder = isOrg ? '#99f6e4' : '#bfdbfe';
+  const badgeIcon = isOrg ? 'fa-landmark' : 'fa-user-tie';
+  const summaryTag = isOrg
+    ? anchor
+      ? 'KEY ORGANISATION'
+      : 'ORGANISATION DOSSIER'
+    : anchor
+      ? 'HISTORICAL AGENT'
+      : 'FIGURE DOSSIER';
+  const toggleLabel = isOrg ? 'Organisation Dossier' : 'Figure Dossier';
+  const insideBannerLabel = isOrg
+    ? 'Decisive Movement / Institution'
+    : 'Decisive Historical Agent';
+  const insidePillLabel = isOrg
+    ? 'Historical Organisation Dossier'
+    : 'Historical Figure Dossier';
 
   let imgSrcHtml = '';
   if (person.image || person.image_url) {
@@ -15,9 +48,11 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
       : typeof getAssetUrl === 'function'
         ? getAssetUrl(person.image)
         : person.image;
+    const contain = usesContainFit(person, imgSrc);
+    const objPos = person.image_position || 'center 18%';
     imgSrcHtml = `
-      <div style="flex-shrink: 0; width: 84px; height: 96px; border-radius: 6px; overflow: hidden; background: #ffffff; border: 1.5px solid #cbd5e1; box-shadow: 0 2px 5px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: center;">
-        <img src="${imgSrc}" loading="lazy" alt="${person.name}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.parentElement.style.display='none'">
+      <div style="flex-shrink: 0; width: 88px; height: 100px; border-radius: 6px; overflow: hidden; background: #ffffff; border: 1.5px solid #cbd5e1; box-shadow: 0 2px 5px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: center; ${contain ? 'padding: 6px;' : ''}">
+        <img src="${imgSrc}" loading="lazy" alt="${person.name}" style="width: 100%; height: 100%; object-fit: ${contain ? 'contain' : 'cover'}; object-position: ${objPos};" onerror="this.parentElement.style.display='none'">
       </div>
     `;
   }
@@ -32,36 +67,89 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
     actionsList = `<div style="font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${person.actions}</div>`;
   }
 
-  let achievementsList = '';
+  // Neutralised from legacy celebratory green "Impact & Achievements" -> impartial slate/navy "Key Roles & Turning Points" / "Methods & Key Actions"
+  let turningPointsList = '';
   if (person.achievements) {
     const items = Array.isArray(person.achievements) ? person.achievements : [person.achievements];
-    achievementsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #15803d; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${a}</li>`).join('')}</ul>`;
+    turningPointsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #334155; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${a}</li>`).join('')}</ul>`;
   }
+
+  const originsHtml = person.origins
+    ? `
+      <div style="margin-top: 8px; font-size: 0.88rem; color: #334155; line-height: 1.5; background: #f8fafc; border-left: 3px solid #64748b; padding: 7px 12px; border-radius: 0 4px 4px 0;">
+        <strong style="color: #0f172a;">${isOrg ? 'Origins &amp; Ideology:' : 'Origins &amp; Worldview:'}</strong> ${person.origins}
+      </div>
+    `
+    : '';
+
+  const distinctionHtml = person.key_distinction
+    ? `
+      <div style="margin-top: 8px; font-size: 0.87rem; color: #78350f; line-height: 1.48; background: #fffbeb; border-left: 3px solid #d97706; padding: 7px 12px; border-radius: 0 4px 4px 0;">
+        <strong style="color: #92400e;">Key Distinction (Exam Precision):</strong> ${person.key_distinction}
+      </div>
+    `
+    : '';
 
   const anchorBannerInside = anchor
     ? `
     <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed #e2e8f0; font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;">
-      <span style="background: #1e40af; color: #ffffff; padding: 2px 7px; border-radius: 3px; display: inline-flex; align-items: center; gap: 4px;">
-        <i class="fa-solid fa-user-tie"></i> Decisive Historical Agent
+      <span style="background: ${badgeBg}; color: #ffffff; padding: 2px 7px; border-radius: 3px; display: inline-flex; align-items: center; gap: 4px;">
+        <i class="fa-solid ${badgeIcon}"></i> ${insideBannerLabel}
       </span>
-      <span style="color: #1e3a8a;">Anchored to ${anchor}</span>
+      <span style="color: ${badgeBg};">Anchored to ${anchor}</span>
     </div>
   `
     : '';
 
+  const actionsHeading = isOrg
+    ? 'Methods &amp; Key Actions:'
+    : 'Key Strategic Decisions &amp; Actions:';
+  const secondaryHeading =
+    isOrg && !actionsList ? 'Methods &amp; Key Actions:' : 'Key Roles &amp; Turning Points:';
+
+  const safeJumpNameAttr = String(person.name || '')
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  const safeJsName = String(person.name || '')
+    .replace(/\\/g, '\\\\')
+    .replace(/'/g, "\\'")
+    .replace(/"/g, '&quot;');
+  const profileJumpLabel = isOrg
+    ? 'View in People &amp; Organisations &rarr;'
+    : 'View Full Dossier in People &amp; Organisations &rarr;';
+  const profileJumpFooterHtml = `
+    <div class="key-individual-dossier-footer no-print" style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #e2e8f0; display: flex; justify-content: flex-end; align-items: center;">
+      <button
+        type="button"
+        class="btn-dossier-profile-jump"
+        data-action="jump-to-key-individual"
+        data-name="${safeJumpNameAttr}"
+        onclick="event.preventDefault(); event.stopPropagation(); if (window.jumpToKeyIndividual) { window.jumpToKeyIndividual('${safeJsName}'); }"
+        style="background: ${badgeLightBg}; color: ${badgeBg}; border: 1.5px solid ${badgeLightBorder}; border-radius: 7px; padding: 7px 14px; font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: all 0.18s ease; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);"
+        onmouseover="this.style.background='${badgeBg}'; this.style.color='#ffffff'; this.style.borderColor='${badgeBg}';"
+        onmouseout="this.style.background='${badgeLightBg}'; this.style.color='${badgeBg}'; this.style.borderColor='${badgeLightBorder}';"
+      >
+        <i class="fa-solid ${isOrg ? 'fa-building-columns' : 'fa-id-card'}"></i>
+        <span>${profileJumpLabel}</span>
+      </button>
+    </div>
+  `;
+
   return `
-    <details class="key-individual-drawer archival-drawer gcse-source-container archival-source-box" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-      <summary style="padding: 4px 10px; min-height: 26px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
+    <details class="key-individual-drawer archival-drawer gcse-source-container archival-source-box" data-entity-type="${isOrg ? 'organisation' : 'person'}" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+      <summary style="padding: 4px 10px; min-height: 26px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; min-width: 0; flex: 1; margin-right: 8px;">
-          <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">
-            <i class="fa-solid fa-user-tie" style="margin-right: 3px;"></i>${anchor ? 'HISTORICAL AGENT' : 'FIGURE DOSSIER'}
+          <span class="archival-meta-tag" style="background: ${badgeBg}; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">
+            <i class="fa-solid ${badgeIcon}" style="margin-right: 3px;"></i>${summaryTag}
           </span>
           <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.82rem; color: #1e293b; font-weight: 700; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-            ${person.name}${person.lifespan ? ` (${person.lifespan})` : ''}${anchorSubtext}
+            ${person.name}${dateLabel ? ` (${dateLabel})` : ''}${anchorSubtext}
           </span>
         </div>
         <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0; white-space: nowrap;">
-          Figure Dossier &bull; Expand <span class="drawer-caret">&#9660;</span>
+          ${toggleLabel} &bull; Expand <span class="drawer-caret">&#9660;</span>
         </span>
       </summary>
       <div class="key-individual-dossier-card archival-drawer-content" style="padding: 16px 20px; background: #ffffff; border-top: 1px solid #e2e8f0;">
@@ -70,32 +158,34 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
           ${imgSrcHtml}
           <div style="flex: 1; min-width: 240px;">
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;">
-              <span class="archival-meta-tag accent-blue" style="font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #1e40af; background: #eff6ff; padding: 2px 7px; border-radius: 3px; border: 1px solid #bfdbfe;">
-                Historical Figure Dossier
+              <span class="archival-meta-tag accent-blue" style="font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: ${badgeBg}; background: ${badgeLightBg}; padding: 2px 7px; border-radius: 3px; border: 1px solid ${badgeLightBorder};">
+                ${insidePillLabel}
               </span>
-              ${person.lifespan ? `<span style="font-size: 0.8rem; color: #64748b; font-weight: 600;">(${person.lifespan})</span>` : ''}
+              ${dateLabel ? `<span style="font-size: 0.8rem; color: #64748b; font-weight: 600;">(${dateLabel})</span>` : ''}
             </div>
             <h3 style="margin: 0; color: #0f172a; font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; font-weight: 700; line-height: 1.3;">
               ${person.name}
             </h3>
             ${person.role ? `<div style="font-size: 0.85rem; color: #475569; font-weight: 600; margin-top: 2px;">${person.role}</div>` : ''}
+            ${originsHtml}
             ${
               person.significance || person.bio
                 ? `
-              <div style="margin-top: 8px; font-size: 0.9rem; color: #334155; line-height: 1.5; background: #f8fafc; border-left: 3px solid #3b82f6; padding: 8px 12px; border-radius: 0 4px 4px 0;">
+              <div style="margin-top: 8px; font-size: 0.9rem; color: #334155; line-height: 1.5; background: #f8fafc; border-left: 3px solid ${badgeBg}; padding: 8px 12px; border-radius: 0 4px 4px 0;">
                 <strong>Historical Significance:</strong> ${person.significance || person.bio}
               </div>
             `
                 : ''
             }
+            ${distinctionHtml}
           </div>
         </div>
         ${
           actionsList
             ? `
           <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed #e2e8f0;">
-            <strong style="color: #1e40af; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">
-              Key Strategic Decisions &amp; Actions:
+            <strong style="color: ${badgeBg}; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">
+              ${actionsHeading}
             </strong>
             ${actionsList}
           </div>
@@ -103,25 +193,32 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
             : ''
         }
         ${
-          achievementsList
+          turningPointsList
             ? `
           <div style="margin-top: 10px; padding-top: 8px; border-top: 1px dashed #e2e8f0;">
-            <strong style="color: #15803d; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">
-              Impact &amp; Achievements:
+            <strong style="color: #334155; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">
+              ${secondaryHeading}
             </strong>
-            ${achievementsList}
+            ${turningPointsList}
           </div>
         `
             : ''
         }
+        ${profileJumpFooterHtml}
       </div>
     </details>
   `;
 }
 
 export function generateKeyIndividualCardHTML(person) {
-  // FORCE hasBackData to always be true so every card flips, even if empty
-  const hasBackData = true;
+  const isOrg = isOrganisationEntity(person);
+  const entityTypeAttr = isOrg ? 'organisation' : 'person';
+  const dateLabel = person.lifespan || person.active_dates || '';
+  const pillText = isOrg ? 'Key Organisation' : 'Key Individual';
+  const pillIcon = isOrg ? 'fa-landmark' : 'fa-user-tie';
+  const pillBg = isOrg ? '#f0fdfa' : '#eff6ff';
+  const pillColor = isOrg ? '#0f766e' : '#1d4ed8';
+  const pillBorder = isOrg ? '#99f6e4' : '#bfdbfe';
 
   let frontImgHtml = '';
   if (person.image || person.image_url) {
@@ -130,102 +227,144 @@ export function generateKeyIndividualCardHTML(person) {
       : typeof getAssetUrl === 'function'
         ? getAssetUrl(person.image)
         : person.image;
-    frontImgHtml = `<div style="width: 100%; height: 280px; background: var(--bg-card, #f8fafc); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass); overflow: hidden;">
-      <img src="${imgSrc}" style="max-width: 100%; max-height: 100%; object-fit: contain; mix-blend-mode: multiply;" onerror="this.src='/images/placeholder_portrait.jpg'">
-    </div>`;
+    const contain = usesContainFit(person, imgSrc);
+    const safeAlt = (person.name || '').replace(/"/g, '&quot;');
+    const objPos = (person.image_position || 'center 22%').replace(/"/g, '');
+    if (contain) {
+      frontImgHtml = `<div style="width: 100%; height: 276px; background: #ffffff; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass, #e2e8f0); border-radius: 11px 11px 0 0; overflow: hidden; padding: 22px; box-sizing: border-box;">
+        <img src="${imgSrc}" alt="${safeAlt}" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" onerror="this.src='/images/placeholder_portrait.jpg'">
+      </div>`;
+    } else {
+      frontImgHtml = `<div style="position: relative; width: 100%; height: 276px; background: #0f172a; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass, #e2e8f0); border-radius: 11px 11px 0 0; overflow: hidden;">
+        <div class="agent-portrait-ambient" style="position: absolute; inset: -16px; background-image: url('${imgSrc}'); background-size: cover; background-position: center 25%; filter: blur(22px) brightness(0.54) saturate(0.88); transform: scale(1.12); pointer-events: none;"></div>
+        <img src="${imgSrc}" alt="${safeAlt}" data-obj-pos="${objPos}" onload="if(this.naturalWidth > this.naturalHeight * 1.12){ this.style.width='100%'; this.style.height='100%'; this.style.objectFit='cover'; this.style.objectPosition=this.dataset.objPos||'center 22%'; this.style.boxShadow='none'; if(this.previousElementSibling) this.previousElementSibling.style.display='none'; }" style="position: relative; z-index: 1; height: 100%; width: auto; max-width: 100%; object-fit: contain; box-shadow: 0 4px 20px rgba(0,0,0,0.42);" onerror="if(this.previousElementSibling)this.previousElementSibling.style.display='none'; this.src='/images/placeholder_portrait.jpg'">
+      </div>`;
+    }
   } else {
-    frontImgHtml = `<div style="width: 100%; height: 280px; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass); overflow: hidden; flex-direction: column; color: var(--text-muted);">
-      <i class="fa-solid fa-user" style="font-size: 4rem; opacity: 0.2;"></i>
+    frontImgHtml = `<div style="width: 100%; height: 260px; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass); overflow: hidden; flex-direction: column; color: var(--text-muted);">
+      <i class="fa-solid ${pillIcon}" style="font-size: 4rem; opacity: 0.2;"></i>
     </div>`;
   }
 
   let basicBio = '';
   if (person.bio) {
-    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.95rem; line-height: 1.5;">${person.bio}</div>`;
+    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;">${person.bio}</div>`;
   } else if (person.significance) {
-    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.95rem; line-height: 1.5;"><strong>Significance:</strong> ${person.significance}</div>`;
+    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;"><strong>Significance:</strong> ${person.significance}</div>`;
   }
 
   let backHtml = `
-    <h3 style="margin: 0 0 15px 0; color: var(--primary); font-family: var(--font-heading); text-align: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 10px;">${person.name}</h3>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 6px;">
+      <span style="background: ${pillBg}; color: ${pillColor}; border: 1px solid ${pillBorder}; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 999px;">
+        <i class="fa-solid ${pillIcon}" style="margin-right: 4px;"></i>${pillText}
+      </span>
+    </div>
+    <h3 style="margin: 0 0 12px 0; color: var(--primary); font-family: var(--font-heading); text-align: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 10px; font-size: 1.15rem;">${person.name}</h3>
   `;
 
   let hasDetailedContent = false;
 
+  if (person.origins) {
+    hasDetailedContent = true;
+    backHtml += `
+      <div style="background: rgba(100, 116, 139, 0.1); border-left: 3px solid #64748b; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #475569; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Origins &amp; Ideology' : 'Origins &amp; Worldview'}</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.origins}</span>
+      </div>`;
+  }
+
   if (person.actions) {
     hasDetailedContent = true;
     backHtml += `
-      <div style="background: rgba(59, 130, 246, 0.1); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #3b82f6; display: block; margin-bottom: 3px; font-size: 0.85rem; text-transform: uppercase;">Core Actions</strong>
-        <span style="font-size: 0.9rem; color: var(--text-main); display: block;">${person.actions}</span>
+      <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Core Actions'}</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.actions}</span>
       </div>`;
   }
   if (person.strategic_actions) {
     hasDetailedContent = true;
     const actionsList = Array.isArray(person.strategic_actions)
-      ? `<ul style="margin-top: 5px; padding-left: 18px; margin-bottom: 0;"><li>${person.strategic_actions.join('</li><li>')}</li></ul>`
+      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.strategic_actions.join('</li><li style="margin-top:4px;">')}</li></ul>`
       : person.strategic_actions;
     backHtml += `
-      <div style="background: rgba(59, 130, 246, 0.1); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #3b82f6; display: block; margin-bottom: 3px; font-size: 0.85rem; text-transform: uppercase;">Strategic Decisions &amp; Actions</strong>
-        <span style="font-size: 0.9rem; color: var(--text-main); display: block;">${actionsList}</span>
+      <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Strategic Decisions &amp; Actions'}</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${actionsList}</span>
       </div>`;
   }
   if (person.achievements) {
     hasDetailedContent = true;
     const achievementsList = Array.isArray(person.achievements)
-      ? `<ul style="margin-top: 5px; padding-left: 20px; margin-bottom: 0;"><li>${person.achievements.join('</li><li>')}</li></ul>`
+      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.achievements.join('</li><li style="margin-top:4px;">')}</li></ul>`
       : person.achievements;
+    const headingLabel =
+      isOrg && !person.strategic_actions && !person.actions
+        ? 'Methods &amp; Key Actions'
+        : 'Key Roles &amp; Turning Points';
     backHtml += `
-      <div style="background: rgba(34, 197, 94, 0.1); border-left: 3px solid #22c55e; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #22c55e; display: block; margin-bottom: 3px; font-size: 0.85rem; text-transform: uppercase;">Impact / Achievements</strong>
-        <span style="font-size: 0.9rem; color: var(--text-main); display: block;">${achievementsList}</span>
+      <div style="background: rgba(30, 64, 175, 0.07); border-left: 3px solid #1e40af; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #1e40af; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${headingLabel}</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${achievementsList}</span>
+      </div>`;
+  }
+  if (person.key_distinction) {
+    hasDetailedContent = true;
+    backHtml += `
+      <div style="background: rgba(217, 119, 6, 0.1); border-left: 3px solid #d97706; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #b45309; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Key Distinction (Don&rsquo;t Confuse)</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.key_distinction}</span>
       </div>`;
   }
   if (person.limitations) {
     hasDetailedContent = true;
     backHtml += `
-      <div style="background: rgba(239, 68, 68, 0.1); border-left: 3px solid #ef4444; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #ef4444; display: block; margin-bottom: 3px; font-size: 0.85rem; text-transform: uppercase;">Structural Limitations</strong>
-        <span style="font-size: 0.9rem; color: var(--text-main); display: block;">${person.limitations}</span>
+      <div style="background: rgba(239, 68, 68, 0.09); border-left: 3px solid #ef4444; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #dc2626; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Structural Limitations</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.limitations}</span>
       </div>`;
   }
 
   if (person.quotes) {
     hasDetailedContent = true;
-    let quotesHtml = Array.isArray(person.quotes)
+    const quotesHtml = Array.isArray(person.quotes)
       ? person.quotes.map((q) => `&ldquo;${q}&rdquo;`).join('<br><br>')
       : `&ldquo;${person.quotes}&rdquo;`;
     backHtml += `
-      <div style="background: rgba(168, 85, 247, 0.1); border-left: 3px solid #a855f7; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #a855f7; display: block; margin-bottom: 3px; font-size: 0.85rem; text-transform: uppercase;">Key Quotes</strong>
-        <span style="font-size: 0.9rem; color: var(--text-main); display: block; font-style: italic;">${quotesHtml}</span>
+      <div style="background: rgba(168, 85, 247, 0.09); border-left: 3px solid #a855f7; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #7e22ce; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Key Quotes</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; font-style: italic; line-height: 1.48;">${quotesHtml}</span>
       </div>`;
   }
 
   if (!hasDetailedContent) {
-    backHtml += `<div style="padding: 20px; text-align: center; color: var(--text-muted); font-style: italic; background: rgba(0,0,0,0.02); border-radius: 8px;">Detailed revision notes for this individual are currently being compiled. Check back soon!</div>`;
+    backHtml += `<div style="padding: 20px; text-align: center; color: var(--text-muted); font-style: italic; background: rgba(0,0,0,0.02); border-radius: 8px;">Detailed revision notes for this dossier are currently being compiled.</div>`;
   }
 
-  backHtml += `<div style="text-align: center; margin-top: auto; padding-top: 15px; font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-undo"></i> Tap to flip back</div>`;
+  backHtml += `<div style="text-align: center; margin-top: auto; padding-top: 12px; font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-undo"></i> Tap to flip back</div>`;
 
-  let lifespanHtml = person.lifespan
-    ? `<p style="font-size: 0.85rem; color: var(--text-muted); margin-top: -10px; margin-bottom: 10px;">${person.lifespan}</p>`
+  const lifespanHtml = dateLabel
+    ? `<p style="font-size: 0.84rem; color: var(--text-muted); margin: 0 0 8px 0; font-weight: 600;">${dateLabel}</p>`
     : '';
 
+  const aliasesStr = Array.isArray(person.aliases) ? person.aliases.join('|') : '';
   const onclickAttr = `onclick="this.classList.toggle('flipped')"`;
 
   return `
-    <div class="person-card" ${onclickAttr} style="height: 100%;">
+    <div class="person-card" data-entity-type="${entityTypeAttr}" data-agent-name="${(person.name || '').replace(/"/g, '&quot;')}" data-agent-aliases="${aliasesStr.replace(/"/g, '&quot;')}" ${onclickAttr} style="height: 100%;">
       <div class="card-inner">
         <div class="card-front">
           ${frontImgHtml}
-          <div style="padding: 20px; flex: 1; display: flex; flex-direction: column;">
-            <h3 style="margin: 0 0 5px 0; color: var(--primary); font-family: var(--font-heading);">${person.name}</h3>
+          <div style="padding: 18px 20px; flex: 1; display: flex; flex-direction: column;">
+            <div style="margin-bottom: 6px;">
+              <span style="display: inline-flex; align-items: center; gap: 4px; background: ${pillBg}; color: ${pillColor}; border: 1px solid ${pillBorder}; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 7px; border-radius: 999px;">
+                <i class="fa-solid ${pillIcon}"></i> ${pillText}
+              </span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; color: var(--primary); font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.28;">${person.name}</h3>
             ${lifespanHtml}
-            <p style="margin: 0 0 15px 0; color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">${person.role || ''}</p>
+            <p style="margin: 0 0 12px 0; color: var(--text-muted); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.35;">${person.role || ''}</p>
             ${basicBio}
-            <div style="text-align: center; margin-top: auto; padding-top: 15px; font-size: 0.85rem; color: #10b981; font-weight: bold;"><i class="fas fa-sync-alt" style="margin-right: 5px;"></i> Tap for Details</div>
+            <div style="text-align: center; margin-top: auto; padding-top: 14px; font-size: 0.83rem; color: ${pillColor}; font-weight: 700;"><i class="fas fa-sync-alt" style="margin-right: 5px;"></i> Tap to Open Dossier</div>
           </div>
         </div>
         <div class="card-back">${backHtml}</div>
@@ -242,7 +381,6 @@ export function initKeyIndividualsTask(
 ) {
   if (!keyIndividualsData || keyIndividualsData.length === 0) return;
 
-  // Pre-inject the flip-card styles into the document
   let style = document.getElementById('flip-card-styles');
   if (!style) {
     style = document.createElement('style');
@@ -254,23 +392,34 @@ export function initKeyIndividualsTask(
       background: transparent;
       cursor: pointer;
     }
+    .person-card.agent-highlight-ring .card-inner {
+      outline: 3px solid #4f46e5;
+      outline-offset: 4px;
+      border-radius: 12px;
+      box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.35), 0 12px 28px rgba(79, 70, 229, 0.28);
+      animation: agentTargetPulse 1.2s ease-in-out 2;
+    }
+    @keyframes agentTargetPulse {
+      0%, 100% { box-shadow: 0 0 0 5px rgba(245, 158, 11, 0.35), 0 12px 28px rgba(79, 70, 229, 0.28); }
+      50% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0.55), 0 16px 34px rgba(79, 70, 229, 0.4); }
+    }
     .card-inner {
       position: relative;
       height: 100%;
       perspective: 1000px;
     }
     .person-card:hover:not(.flipped) .card-inner {
-      transform: translateY(-5px);
-      -webkit-transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.14);
     }
     .card-front, .card-back {
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-      transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
-      -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
-      background: var(--bg-card, rgba(255, 255, 255, 0.05));
-      border: 1px solid var(--border-glass);
+      transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-transition: -webkit-transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+      background: var(--bg-card, #ffffff);
+      border: 1px solid var(--border-glass, #e2e8f0);
       border-radius: 12px;
       display: flex;
       flex-direction: column;
@@ -289,7 +438,7 @@ export function initKeyIndividualsTask(
       height: 100%;
       transform: rotateY(180deg);
       -webkit-transform: rotateY(180deg);
-      padding: 20px;
+      padding: 18px;
       overflow-y: auto;
       box-sizing: border-box;
     }
@@ -300,6 +449,47 @@ export function initKeyIndividualsTask(
     .person-card.flipped .card-back {
       transform: rotateY(0deg);
       -webkit-transform: rotateY(0deg);
+    }
+    .agent-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px auto 0 auto;
+    }
+    .agent-filter-pill {
+      border: 1.5px solid #cbd5e1;
+      background: #ffffff;
+      color: #334155;
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .agent-filter-pill:hover {
+      border-color: #94a3b8;
+      background: #f8fafc;
+    }
+    .agent-filter-pill.active[data-filter="all"] {
+      background: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
+    .agent-filter-pill.active[data-filter="person"] {
+      background: #1d4ed8;
+      color: #ffffff;
+      border-color: #1d4ed8;
+    }
+    .agent-filter-pill.active[data-filter="organisation"] {
+      background: #0f766e;
+      color: #ffffff;
+      border-color: #0f766e;
     }
 
     /* Premium Banner Styles */
@@ -345,28 +535,52 @@ export function initKeyIndividualsTask(
     }
   `;
 
+  const orgCount = keyIndividualsData.filter(isOrganisationEntity).length;
+  const personCount = keyIndividualsData.length - orgCount;
+  const hasOrgs = orgCount > 0;
+
   const wrapper = document.createElement('div');
   wrapper.className = 'key-individuals-wrapper fade-in';
   wrapper.style.padding = '20px';
-  wrapper.style.maxWidth = '1200px';
+  wrapper.style.maxWidth = '1220px';
   wrapper.style.margin = '0 auto';
 
   const header = document.createElement('div');
   header.style.textAlign = 'center';
-  header.style.marginBottom = '40px';
-  const title = customTitle || 'Key Individuals';
+  header.style.marginBottom = '32px';
+  const title = customTitle || (hasOrgs ? 'Key Individuals & Organisations' : 'Key Individuals');
   const desc =
-    customDescription || 'Profiles of the major historical figures who shaped these events.';
+    customDescription ||
+    (hasOrgs
+      ? 'Dossiers on the decisive leaders, movements, and institutions that shaped these events. Tap any card to inspect origins, actions, and key distinctions.'
+      : 'Profiles of the major historical figures who shaped these events. Tap any card to inspect their dossier.');
+
+  const filterBarHtml = hasOrgs
+    ? `
+      <div class="agent-filter-bar" role="tablist" aria-label="Filter historical agents">
+        <button type="button" class="agent-filter-pill active" data-filter="all">
+          <span>All Dossiers (${keyIndividualsData.length})</span>
+        </button>
+        <button type="button" class="agent-filter-pill" data-filter="person">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>People (${personCount})</span>
+        </button>
+        <button type="button" class="agent-filter-pill" data-filter="organisation">
+          <i class="fa-solid fa-landmark"></i>
+          <span>Organisations (${orgCount})</span>
+        </button>
+      </div>
+    `
+    : '';
+
   header.innerHTML = `
-    <h1 style="font-family: var(--font-heading); color: var(--primary); margin-bottom: 10px; font-size: 2.5rem;">${title}</h1>
-    <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">${desc}</p>
+    <h1 style="font-family: var(--font-heading); color: var(--primary); margin-bottom: 10px; font-size: clamp(1.8rem, 4vw, 2.45rem);">${title}</h1>
+    <p style="color: var(--text-muted); font-size: 1.02rem; max-width: 680px; margin: 0 auto; line-height: 1.5;">${desc}</p>
+    ${filterBarHtml}
   `;
   wrapper.appendChild(header);
 
-  let grouped = false;
-  if (keyIndividualsData.length > 0 && keyIndividualsData[0].group) {
-    grouped = true;
-  }
+  const grouped = Boolean(keyIndividualsData.length > 0 && keyIndividualsData[0].group);
 
   const bannerMap = {
     'Key Topic 1': {
@@ -407,12 +621,11 @@ export function initKeyIndividualsTask(
     keyIndividualsData.forEach((person) => {
       if (person.group !== currentGroup) {
         if (!isFirstGroup) {
-          htmlContent += '</div>'; // Close previous grid
+          htmlContent += '</div>';
         }
         isFirstGroup = false;
         currentGroup = person.group;
 
-        // Add Banner
         const bannerData = bannerMap[currentGroup];
         if (bannerData) {
           const bannerUrl =
@@ -420,7 +633,7 @@ export function initKeyIndividualsTask(
               ? getAssetUrl('/' + bannerData.image)
               : '/' + bannerData.image;
           htmlContent += `
-            <div style="margin-top: 40px; margin-bottom: 25px;">
+            <div class="agent-group-section" style="margin-top: 40px; margin-bottom: 25px;">
               <div class="premium-banner" style="position: relative; margin: 0; min-height: 140px;">
                 <div class="premium-banner-bg" style="background-image: url('${bannerUrl}'); background-position: center;"></div>
                 <div class="premium-banner-overlay-1"></div>
@@ -434,32 +647,30 @@ export function initKeyIndividualsTask(
             </div>
           `;
         } else {
-          // Fallback text header
           htmlContent += `
-            <h2 style="margin-top: 40px; margin-bottom: 20px; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px;">
+            <h2 class="agent-group-heading" style="margin-top: 40px; margin-bottom: 20px; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px;">
               ${currentGroup}
             </h2>
           `;
         }
 
-        // Create new grid for this group
-        htmlContent += `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; align-items: stretch;">`;
+        htmlContent += `<div class="agent-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(265px, 1fr)); gap: 20px; align-items: stretch;">`;
       }
 
       htmlContent += generateKeyIndividualCardHTML(person);
     });
 
     if (!isFirstGroup) {
-      htmlContent += '</div>'; // Close final grid
+      htmlContent += '</div>';
     }
 
     wrapper.insertAdjacentHTML('beforeend', htmlContent);
   } else {
-    // Legacy non-grouped logic
     const grid = document.createElement('div');
+    grid.className = 'agent-cards-grid';
     grid.style.display = 'grid';
-    grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(280px, 1fr))';
-    grid.style.gap = '25px';
+    grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(265px, 1fr))';
+    grid.style.gap = '20px';
     grid.style.alignItems = 'stretch';
 
     let gridHtml = '';
@@ -469,5 +680,115 @@ export function initKeyIndividualsTask(
     grid.innerHTML = gridHtml;
     wrapper.appendChild(grid);
   }
+
+  if (hasOrgs) {
+    const applyFilter = (filterVal) => {
+      wrapper.querySelectorAll('.agent-filter-pill').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.filter === filterVal);
+      });
+      wrapper.querySelectorAll('.person-card').forEach((card) => {
+        const matches = filterVal === 'all' || card.dataset.entityType === filterVal;
+        card.style.display = matches ? '' : 'none';
+      });
+    };
+    wrapper.querySelectorAll('.agent-filter-pill').forEach((btn) => {
+      btn.addEventListener('click', () => applyFilter(btn.dataset.filter || 'all'));
+    });
+  }
+
   container.appendChild(wrapper);
+}
+
+export async function jumpToKeyIndividual(personName) {
+  if (typeof window === 'undefined') return;
+
+  const cleanTarget = String(personName || '').trim();
+  if (
+    window._jumpingToAgentName === cleanTarget &&
+    window._jumpingToAgentTs &&
+    Date.now() - window._jumpingToAgentTs < 220
+  ) {
+    return;
+  }
+  window._jumpingToAgentName = cleanTarget;
+  window._jumpingToAgentTs = Date.now();
+
+  // Save exact lesson or timeline return origin FIRST before switching views
+  if (typeof window.saveUnitReturnOrigin === 'function') {
+    window.saveUnitReturnOrigin();
+  }
+
+  const targetUnit =
+    window.currentUnitId ||
+    (window.state && window.state.selectedUnitId) ||
+    (window.appStore && window.appStore.state && window.appStore.state.selectedUnitId) ||
+    'cme_new';
+
+  if (targetUnit && typeof window.switchView === 'function') {
+    await window.switchView('individuals', targetUnit);
+  }
+
+  if (typeof window.updateHeaderBackBtn === 'function') {
+    window.updateHeaderBackBtn('individuals');
+  }
+
+  setTimeout(() => {
+    const allPill = document.querySelector('.agent-filter-pill[data-filter="all"]');
+    if (allPill && !allPill.classList.contains('active')) {
+      allPill.click();
+    }
+
+    const needle = cleanTarget.toLowerCase();
+    const cards = document.querySelectorAll('.person-card');
+    let targetCard = null;
+
+    // Pass 1: exact name or exact alias match
+    cards.forEach((card) => {
+      if (targetCard) return;
+      const cardName = (card.dataset.agentName || '').trim().toLowerCase();
+      const aliases = (card.dataset.agentAliases || '')
+        .toLowerCase()
+        .split('|')
+        .map((s) => s.trim())
+        .filter(Boolean);
+      if (cardName === needle || aliases.includes(needle)) {
+        targetCard = card;
+      }
+    });
+
+    // Pass 2: substring match on card name, alias, or h3 heading
+    if (!targetCard && needle) {
+      cards.forEach((card) => {
+        if (targetCard) return;
+        const cardName = (card.dataset.agentName || '').trim().toLowerCase();
+        const aliases = (card.dataset.agentAliases || '')
+          .toLowerCase()
+          .split('|')
+          .map((s) => s.trim())
+          .filter(Boolean);
+        const h3 = card.querySelector('h3');
+        const h3Text = h3 ? h3.innerText.trim().toLowerCase() : '';
+        if (
+          cardName.includes(needle) ||
+          (cardName.length > 2 && needle.includes(cardName)) ||
+          aliases.some((a) => a.includes(needle) || (a.length > 2 && needle.includes(a))) ||
+          h3Text.includes(needle)
+        ) {
+          targetCard = card;
+        }
+      });
+    }
+
+    if (targetCard) {
+      targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      targetCard.classList.add('flipped', 'agent-highlight-ring');
+      setTimeout(() => {
+        targetCard.classList.remove('agent-highlight-ring');
+      }, 2800);
+    }
+  }, 140);
+}
+
+if (typeof window !== 'undefined') {
+  window.jumpToKeyIndividual = jumpToKeyIndividual;
 }

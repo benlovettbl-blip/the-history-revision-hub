@@ -55,9 +55,8 @@ export function renderHomepage() {
               ${appStore.state.activeUnitData.enquiry_question || appStore.state.activeUnitData.enquiry || 'Join the expedition'}
             </h2>
             
-            ${
-              prepLesson
-                ? `
+            ${prepLesson
+        ? `
             <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 25px; margin-top: 20px;">
               <h3 style="margin: 0 0 10px 0; color: #334155; font-size: 1.2rem; display: flex; align-items: center; gap: 8px;">
                 <i class="fa-solid fa-suitcase-rolling" style="color: #f59e0b;"></i> Final Preparations
@@ -70,8 +69,8 @@ export function renderHomepage() {
               </button>
             </div>
             `
-                : ''
-            }
+        : ''
+      }
 
           </div>
           
@@ -105,7 +104,7 @@ export function renderHomepage() {
 
     if (heroImageUrl) {
       const positionFallbacks = {
-        ks2_ww2: 'center 85%',
+        ks2_ww2: 'center center',
         monarchy_religion_power: 'center 12%',
         first_british_empire: 'center 35%',
         eee: 'center 10%',
@@ -122,8 +121,15 @@ export function renderHomepage() {
         positionFallbacks[appStore.state.currentUnitId] ||
         positionFallbacks[appStore.state.activeUnitData.id] ||
         'center';
+      const isKs2Hero =
+        appStore.state.currentUnitId === 'ks2_ww2' ||
+        appStore.state.activeUnitData.id === 'ks2_ww2' ||
+        appStore.state.activeUnitData.is_ks2;
+      const heroOverlay = isKs2Hero
+        ? 'linear-gradient(to bottom, rgba(15,23,42,0.46) 0%, rgba(15,23,42,0.58) 60%, rgba(15,23,42,0.82) 100%)'
+        : 'linear-gradient(to bottom, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.7) 60%, rgba(15,23,42,0.9) 100%)';
       topSectionHTML = `
-          <div class="hero-container" style="background: linear-gradient(to bottom, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.7) 60%, rgba(15,23,42,0.9) 100%), url('${heroImageUrl}') ${heroBgPos}/cover no-repeat;">
+          <div class="hero-container" style="background: ${heroOverlay}, url('${heroImageUrl}') ${heroBgPos}/cover no-repeat;">
             <h1 class="hero-title">${appStore.state.activeUnitData.enquiry_question || appStore.state.activeUnitData.enquiry || 'Unit Enquiry'}</h1>
             <h2 class="hero-subtitle">
               ${appStore.state.activeUnitData.title}
@@ -192,7 +198,7 @@ export function renderHomepage() {
         ${topSectionHTML}
         ${renderUnitSynopsis(appStore.state.activeUnitData, activeUnitId)}
         ${medicineVisualGuideBannerHTML}
-        ${isTripUnit ? '' : `<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Key Topic Lessons</h2>`}
+        ${isTripUnit ? '' : `<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">${activeUnitId === 'ks2_ww2' || appStore.state.activeUnitData?.is_ks2 ? 'Enquiry Lessons (1–11)' : 'Key Topic Lessons'}</h2>`}
         ${lessonsHTML}
       </div>
     `;

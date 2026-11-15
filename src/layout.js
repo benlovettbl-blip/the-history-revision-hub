@@ -8,13 +8,15 @@ import { switchView } from './navigation.js';
 import { renderSidebarVideoBadgeHTML } from './engine/video_utils.js';
 
 export function bindEvents() {
-  // Back button click handler
+  // Back button click handler delegates exclusively to navigation.js's unified handleHeaderBackClick
   const backBtn = document.getElementById('header-back-btn');
-  if (backBtn) {
-    backBtn.addEventListener('click', (e) => {
+  if (backBtn && !backBtn.onclick) {
+    backBtn.onclick = (e) => {
       e.preventDefault();
-      switchView('dashboard');
-    });
+      if (typeof window.handleHeaderBackClick === 'function') {
+        window.handleHeaderBackClick();
+      }
+    };
   }
 
   // Logo click handler
@@ -327,10 +329,9 @@ export function bindEvents() {
       (urlParams.get('locked') === 'true' ||
         urlParams.get('mode') === 'pupil' ||
         urlParams.get('safeguard') === 'true');
-    const isKs2Active =
-      (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_portal') === 'ks2') ||
-      (urlParams && urlParams.get('portal') === 'ks2') ||
-      (urlParams && urlParams.get('unit') && urlParams.get('unit').startsWith('ks2_'));
+    const isInitialKs2Unit = Boolean(
+      urlParams && urlParams.get('unit') && urlParams.get('unit').startsWith('ks2_'),
+    );
 
     // In Safeguard Lockdown Mode (e.g. KS2 primary pupils or teacher-locked sessions):
     // Completely hide cross-unit links and accordions so pupils cannot escape their designated unit.
@@ -417,17 +418,6 @@ export function bindEvents() {
       });
     };
 
-    // If user is in KS2 Junior Portal mode, ONLY show Key Stage 2 units
-    if (isKs2Active) {
-      if (sidebarUnitsHeader) {
-        const titleSpan = sidebarUnitsHeader.querySelector('span');
-        if (titleSpan) titleSpan.textContent = 'Key Stage 2 Units';
-      }
-      const ks2Units = getOrderedUnits(['ks2_ww2']);
-      renderAccordionGroup('Key Stage 2 (Primary)', ks2Units, true);
-      return;
-    }
-
     if (sidebarUnitsHeader) {
       const titleSpan = sidebarUnitsHeader.querySelector('span');
       if (titleSpan) titleSpan.textContent = 'Units of Study';
@@ -459,7 +449,7 @@ export function bindEvents() {
     renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
     renderAccordionGroup('GCSE (9–1)', gcseUnits, false);
     if (ks2Units.length > 0) {
-      renderAccordionGroup('Key Stage 2 (Primary)', ks2Units, false);
+      renderAccordionGroup('Key Stage 2 (Primary)', ks2Units, isInitialKs2Unit);
     }
   }
 }

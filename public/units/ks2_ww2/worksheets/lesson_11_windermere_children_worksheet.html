@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>KS2 History Worksheet • Lesson 11: After the War — The Windermere Children & Rebuilding Lives</title>
+  <title>KS2 History Worksheet • Lesson 11: After the War — The Windermere Children (1945)</title>
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
-
     :root {
-      --ink: #1e293b;
+      --ink: #0f172a;
       --ink-muted: #475569;
       --navy-primary: #1e3a8a;
       --navy-deep: #0f172a;
       --parchment: #fdfbf7;
       --accent-gold: #b45309;
       --border-gray: #cbd5e1;
-      --card-bg: #ffffff;
       --cut-guide: #94a3b8;
     }
 
@@ -28,77 +27,122 @@
       print-color-adjust: exact;
     }
 
-    body {
-      background: #f1f5f9;
-      font-family: 'Inter', sans-serif;
-      color: var(--ink);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15mm;
-      padding: 15mm 0;
-    }
-
     @page {
       size: A4 portrait;
       margin: 0;
     }
 
-    @media print {
-      body {
-        background: transparent;
-        padding: 0;
-        gap: 0;
-      }
-      .worksheet-page {
-        box-shadow: none !important;
-        page-break-after: always;
-        break-after: page;
-        margin: 0;
-      }
+    body {
+      background: #e2e8f0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .screen-toolbar-title {
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .screen-toolbar-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .screen-toolbar a,
+    .screen-toolbar button {
+      background: #1e3a8a;
+      color: #ffffff;
+      border: 1px solid #3b82f6;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .screen-toolbar button.print-btn {
+      background: #f59e0b;
+      color: #0f172a;
+      border-color: #f59e0b;
     }
 
     .worksheet-page {
       width: 210mm;
       height: 297mm;
+      max-height: 297mm;
       background: #ffffff;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      position: relative;
-      overflow: hidden;
-      padding: 6.5mm 7.5mm;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+      margin: 8mm auto;
+      padding: 7.5mm 8mm 6.5mm 8mm;
       display: flex;
       flex-direction: column;
-      box-sizing: border-box;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .worksheet-page {
+        margin: 0;
+        box-shadow: none !important;
+      }
     }
 
     .exercise-book-cutline {
       width: 100%;
-      height: 100%;
+      flex: 1;
+      min-height: 0;
       border: 1.5px dashed var(--cut-guide);
       border-radius: 6px;
-      padding: 4.5mm 5.5mm;
+      padding: 4.5mm 5.5mm 4mm 5.5mm;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       position: relative;
       background: #ffffff;
-      box-sizing: border-box;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .cut-indicator {
       position: absolute;
-      top: -3.5mm;
-      left: 14mm;
+      top: -2.6mm;
+      left: 12mm;
       background: #ffffff;
-      padding: 0 5px;
-      font-size: 6.8pt;
+      padding: 0 6px;
+      font-size: 7.5pt;
       font-weight: 700;
-      color: var(--cut-guide);
-      letter-spacing: 0.05em;
+      color: #64748b;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      line-height: 1;
     }
 
     .sheet-masthead {
@@ -106,7 +150,7 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid var(--navy-deep);
-      padding-bottom: 2mm;
+      padding-bottom: 1.8mm;
       margin-bottom: 2mm;
       flex-shrink: 0;
     }
@@ -121,7 +165,7 @@
       background: var(--navy-deep);
       color: #ffffff;
       font-family: 'Cinzel', serif;
-      font-size: 7.2pt;
+      font-size: 7.5pt;
       font-weight: 800;
       padding: 1.5px 6px;
       border-radius: 3px;
@@ -129,8 +173,8 @@
     }
 
     .brand-text {
-      font-size: 7.5pt;
-      font-weight: 700;
+      font-size: 7.6pt;
+      font-weight: 800;
       color: var(--navy-primary);
       letter-spacing: 0.03em;
       text-transform: uppercase;
@@ -138,10 +182,11 @@
 
     .student-fields {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       font-size: 8pt;
-      font-weight: 600;
+      font-weight: 700;
       color: var(--ink);
+      align-items: center;
     }
 
     .field-item {
@@ -152,7 +197,7 @@
 
     .field-line {
       display: inline-block;
-      width: 32mm;
+      width: 34mm;
       border-bottom: 1.2px solid var(--ink);
       height: 3.5mm;
     }
@@ -165,47 +210,49 @@
       background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
       color: #ffffff;
       border-radius: 5px;
-      padding: 2.2mm 3.5mm;
+      padding: 2.4mm 3.5mm;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 3mm;
       margin-bottom: 2.2mm;
       flex-shrink: 0;
     }
 
     .enquiry-title-group h1 {
       font-family: 'Cinzel', serif;
-      font-size: 11pt;
+      font-size: 10.6pt;
       font-weight: 800;
       letter-spacing: 0.02em;
-      line-height: 1.15;
+      line-height: 1.18;
     }
 
     .enquiry-title-group .enquiry-question {
-      font-family: 'Lora', serif;
-      font-size: 7.6pt;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8pt;
       font-style: italic;
-      color: #cbd5e1;
-      margin-top: 0.4mm;
+      color: #e2e8f0;
+      margin-top: 0.6mm;
+      line-height: 1.25;
     }
 
     .lesson-badge {
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.3);
-      padding: 1.5mm 3.5mm;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 1.6mm 3mm;
       border-radius: 4px;
       text-align: center;
-      font-size: 7.2pt;
+      font-size: 7.5pt;
       font-weight: 800;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       white-space: nowrap;
       flex-shrink: 0;
     }
 
-    /* SECTION 1: ARCHIVAL EVIDENCE & STORY CARD */
+    /* STORY & SOURCE A */
     .story-evidence-grid {
       display: grid;
-      grid-template-columns: 58mm 1fr;
+      grid-template-columns: 64mm 1fr;
       gap: 3mm;
       margin-bottom: 2.2mm;
       flex-shrink: 0;
@@ -214,30 +261,28 @@
     .archival-plate-box {
       border: 1px solid var(--border-gray);
       border-radius: 4px;
-      padding: 1.5mm;
+      padding: 1.6mm;
       background: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      overflow: hidden;
+      justify-content: space-between;
     }
 
     .archival-img {
       width: 100%;
-      height: 38mm;
+      height: 40mm;
       object-fit: contain;
-      background: #ffffff;
+      background: #f8fafc;
       border-radius: 3px;
       border: 1px solid #cbd5e1;
     }
 
     .archival-caption {
-      font-size: 6.2pt;
-      line-height: 1.25;
+      font-size: 7.5pt;
+      line-height: 1.24;
       color: var(--ink-muted);
       margin-top: 1mm;
-      font-style: italic;
       text-align: center;
     }
 
@@ -246,28 +291,25 @@
       border: 1px solid #fed7aa;
       border-left: 3.5px solid var(--accent-gold);
       border-radius: 4px;
-      padding: 2.2mm 2.8mm;
+      padding: 2.2mm 3mm;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .story-header {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 7.6pt;
+      font-size: 7.8pt;
       font-weight: 800;
       color: var(--navy-deep);
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      margin-bottom: 1.2mm;
+      margin-bottom: 1mm;
     }
 
     .story-prose {
-      font-family: 'Lora', serif;
-      font-size: 8.1pt;
-      line-height: 1.45;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.4pt;
+      line-height: 1.42;
       color: #1e293b;
     }
 
@@ -275,27 +317,27 @@
       color: var(--navy-primary);
     }
 
-    /* DYNAMIC EXPANDING TASK CARDS */
-    .task-card-expand {
+    /* TASK CARDS */
+    .task-card {
       background: #ffffff;
       border: 1.2px solid var(--border-gray);
       border-radius: 5px;
       padding: 2.2mm 3mm;
       display: flex;
       flex-direction: column;
+      margin-bottom: 2mm;
       min-height: 0;
-      margin-bottom: 2.2mm;
-      box-sizing: border-box;
     }
 
-    .p1-task1 {
-      flex: 1.15;
-    }
-
-    .p1-task2 {
-      flex: 1.05;
+    .task-card.last {
       margin-bottom: 0;
     }
+
+    .p1-task1 { flex: 1.12; }
+    .p1-task2 { flex: 1.02; }
+    .p2-task3 { flex: 1.34; }
+    .p2-task4 { flex: 0.86; }
+    .p2-task5 { flex: 0.84; }
 
     .task-header {
       display: flex;
@@ -308,27 +350,24 @@
     }
 
     .task-num-title {
-      font-size: 8.2pt;
+      font-size: 8.5pt;
       font-weight: 800;
       color: var(--navy-deep);
-      display: flex;
-      align-items: center;
-      gap: 5px;
     }
 
     .task-tag {
-      font-size: 6.5pt;
+      font-size: 7.5pt;
       font-weight: 700;
       text-transform: uppercase;
       background: #e0e7ff;
       color: #3730a3;
-      padding: 1px 5px;
+      padding: 1px 6px;
       border-radius: 3px;
     }
 
     .artifact-detective-grid {
       display: grid;
-      grid-template-columns: 46mm 1fr;
+      grid-template-columns: 60mm 1fr;
       gap: 3mm;
       flex: 1;
       min-height: 0;
@@ -341,25 +380,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       padding: 1.8mm;
-      overflow: hidden;
+      min-height: 0;
     }
 
     .artifact-img {
-      width: 42mm;
-      height: 38mm;
+      width: 100%;
+      flex: 1;
+      min-height: 0;
+      max-height: 58mm;
       object-fit: contain;
       border-radius: 3px;
+      background: #ffffff;
     }
 
     .artifact-caption {
-      font-size: 6.0pt;
-      line-height: 1.25;
+      font-size: 7.5pt;
+      line-height: 1.22;
       color: var(--ink-muted);
       text-align: center;
       margin-top: 1mm;
-      font-style: italic;
+      flex-shrink: 0;
     }
 
     .detective-questions {
@@ -375,116 +417,98 @@
       display: flex;
       flex-direction: column;
       flex: 1;
+      justify-content: flex-start;
       min-height: 0;
     }
 
     .q-item {
-      font-size: 7.6pt;
+      font-size: 8pt;
       font-weight: 700;
       color: var(--navy-deep);
-      line-height: 1.25;
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
-      margin-bottom: 0.6mm;
     }
 
-    .ruled-handwriting-lines {
+    .ruled-lines-box {
       display: flex;
       flex-direction: column;
       flex: 1;
-      justify-content: space-between;
+      justify-content: space-evenly;
       min-height: 0;
     }
 
     .ruled-line {
-      flex: 1;
-      min-height: 5.4mm;
+      height: 7.2mm;
       border-bottom: 1.2px dashed #94a3b8;
+      width: 100%;
     }
 
-    /* TASK 2: ACTIVE 3-STAGE CHRONOLOGY */
+    .ruled-lines-box .ruled-line {
+      flex: 1;
+      height: auto;
+      min-height: 5.0mm;
+      max-height: 7.8mm;
+    }
+
+    /* TASK 2: 3-STEP TIMELINE */
     .timeline-3col {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2.8mm;
+      gap: 2.6mm;
       flex: 1;
       min-height: 0;
-      margin-top: 0.5mm;
     }
 
     .timeline-step-card {
       background: #f8fafc;
-      border: 1px solid #e2e8f0;
+      border: 1px solid #cbd5e1;
       border-top: 3.5px solid var(--navy-primary);
       border-radius: 4px;
       padding: 1.8mm 2.2mm;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       min-height: 0;
     }
 
     .step-badge {
-      font-size: 6.4pt;
+      font-size: 7.5pt;
       font-weight: 800;
       color: var(--navy-primary);
-      margin-bottom: 0.5mm;
-      letter-spacing: 0.04em;
-      flex-shrink: 0;
+      letter-spacing: 0.03em;
     }
 
     .step-title {
-      font-size: 7.4pt;
-      font-weight: 700;
+      font-size: 8pt;
+      font-weight: 800;
       color: var(--navy-deep);
-      margin-bottom: 0.5mm;
-      flex-shrink: 0;
+      margin: 0.3mm 0;
     }
 
     .step-desc {
-      font-size: 6.6pt;
+      font-size: 7.5pt;
       color: var(--ink-muted);
-      line-height: 1.25;
+      line-height: 1.22;
       margin-bottom: 1mm;
+    }
+
+    .step-prompt {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      line-height: 1.2;
+      padding-top: 1mm;
+      border-top: 1px dashed #cbd5e1;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
 
-    .step-response-box {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 0;
-    }
-
-    .sheet-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 1.5mm;
-      border-top: 1px solid #e2e8f0;
-      font-size: 6.8pt;
-      color: var(--ink-muted);
-      flex-shrink: 0;
-      margin-top: 1.5mm;
-    }
-
-    /* PAGE 2 STYLES */
-    .p2-task3 {
-      flex: 1.32;
-    }
-
-    .p2-task4 {
-      flex: 0.95;
-    }
-
-    .p2-task5 {
-      flex: 0.95;
-      margin-bottom: 0;
-    }
-
+    /* PAGE 2: TASK 3 */
     .visual-investigation-grid {
       display: grid;
-      grid-template-columns: 66mm 1fr;
-      gap: 3.5mm;
+      grid-template-columns: 60mm 1fr;
+      gap: 3mm;
       flex: 1;
       min-height: 0;
     }
@@ -492,198 +516,338 @@
     .canvas-drawing-col {
       display: flex;
       flex-direction: column;
-      min-height: 0;
-      height: 100%;
-      box-sizing: border-box;
+      justify-content: space-between;
+      border: 1.5px dashed #b45309;
+      border-radius: 5px;
+      background: #fdfbf7;
+      padding: 2.5mm;
     }
 
-    .drawing-outer-shell {
+    .craft-mini-box {
+      width: 100%;
+      border-radius: 5px;
+      padding: 3mm;
       flex: 1;
-      min-height: 0;
-      border: 2px dashed #b45309;
-      border-radius: 6px;
-      background: #fdfbf7;
-      position: relative;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3mm;
-      box-sizing: border-box;
+      justify-content: space-evenly;
     }
 
     .canvas-subcaption {
-      font-size: 6.4pt;
+      font-size: 7.5pt;
       font-weight: 700;
       color: #92400e;
       text-align: center;
       margin-top: 1.5mm;
-      letter-spacing: 0.02em;
-      flex-shrink: 0;
+      line-height: 1.22;
     }
 
     .investigation-ledger {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 1.5mm;
+      gap: 1.4mm;
       flex: 1;
       min-height: 0;
     }
 
     .ledger-row {
       background: #ffffff;
-      border: 1px solid #e7e5e4;
+      border: 1px solid #cbd5e1;
       border-left: 3.5px solid var(--navy-primary);
       border-radius: 4px;
-      padding: 1.5mm 2.2mm;
+      padding: 1.3mm 2.2mm;
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       min-height: 0;
     }
 
-    .ledger-item-line {
-      display: flex;
-      align-items: baseline;
-      gap: 4px;
-      font-size: 7.3pt;
-      font-weight: 700;
+    .ledger-item-title {
+      font-size: 7.8pt;
+      font-weight: 800;
       color: var(--navy-deep);
     }
 
     .ledger-reason-prompt {
-      font-size: 6.6pt;
+      font-size: 7.5pt;
       color: var(--ink-muted);
-      margin-top: 0.4mm;
-      font-weight: 500;
+      line-height: 1.18;
+      margin-bottom: 0.2mm;
     }
 
-    /* THINKING HEADS */
+    /* TASK 4: THINKING HEADS */
     .thinking-heads-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3mm;
       flex: 1;
       min-height: 0;
-      margin-top: 0.5mm;
     }
 
     .head-card {
-      background: #ffffff;
+      background: #f8fafc;
       border: 1px solid var(--border-gray);
       border-radius: 5px;
-      padding: 2.2mm 2.8mm;
+      padding: 1.8mm 2.5mm;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       min-height: 0;
     }
 
     .head-title-row {
       display: flex;
       align-items: center;
-      gap: 5px;
-      margin-bottom: 1mm;
+      gap: 6px;
+      margin-bottom: 0.6mm;
       flex-shrink: 0;
     }
 
     .head-badge {
-      width: 17px;
-      height: 17px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
       background: var(--navy-primary);
       color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 6.8pt;
+      font-size: 7.5pt;
       font-weight: 800;
+      flex-shrink: 0;
     }
 
     .head-name {
-      font-size: 7.6pt;
+      font-size: 7.8pt;
       font-weight: 800;
       color: var(--navy-deep);
-    }
-
-    .thought-bubble {
-      background: #f8fafc;
-      border: 1.2px solid #cbd5e1;
-      border-radius: 5px;
-      padding: 2mm;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 0;
+      line-height: 1.2;
     }
 
     .thought-prompt {
-      font-size: 7.1pt;
+      font-size: 7.5pt;
       color: var(--navy-primary);
       font-weight: 600;
-      line-height: 1.25;
+      line-height: 1.22;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
-      margin-bottom: 1mm;
     }
 
-    .bubble-lines {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
-      min-height: 0;
-    }
-
-    .bubble-line {
-      border-bottom: 1.2px dashed #94a3b8;
-      flex: 1;
-      min-height: 5.2mm;
-    }
-
-    /* SYNTHESIS FRAME */
+    /* TASK 5: MISSION CHALLENGE */
     .synthesis-container {
       background: #fdfbf7;
       border: 1.2px solid #fed7aa;
       border-left: 4px solid var(--accent-gold);
       border-radius: 5px;
-      padding: 2.2mm 2.8mm;
+      padding: 1.8mm 2.8mm;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       flex: 1;
       min-height: 0;
     }
 
     .synthesis-header {
-      font-family: 'Lora', serif;
-      font-size: 7.6pt;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.2pt;
       font-style: italic;
       color: var(--navy-primary);
       font-weight: 700;
-      margin-bottom: 1mm;
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
 
+    .sheet-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.5mm;
+      margin-top: 1.5mm;
+      border-top: 1px solid #cbd5e1;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--ink-muted);
+      flex-shrink: 0;
+    }
+
+    /* PAGE 3 PORTRAIT SUITCASE CRAFT */
+    .suitcase-portrait-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5mm;
+      min-height: 0;
+    }
+
+    .suitcase-checklist-card {
+      background: #fdfbf7;
+      border: 1.2px solid #d97706;
+      border-radius: 5px;
+      padding: 2.5mm 3.5mm;
+      flex-shrink: 0;
+    }
+
+    .checklist-heading {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #78350f;
+      margin-bottom: 1.5mm;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2mm 4mm;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 7.8pt;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .tick-box {
+      width: 3.4mm;
+      height: 3.4mm;
+      border: 1.2px solid #78350f;
+      border-radius: 2px;
+      background: #ffffff;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .checklist-note {
+      margin-top: 1.8mm;
+      padding-top: 1.4mm;
+      border-top: 1px dashed #fbbf24;
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+    }
+
+    .vintage-suitcase-outer {
+      flex: 1;
+      border: 3px solid #78350f;
+      border-radius: 10px;
+      background: #fef3c7;
+      padding: 5mm 5mm 4mm 5mm;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 3mm;
+      margin-top: 3mm;
+      min-height: 0;
+    }
+
+    .suitcase-top-handle {
+      position: absolute;
+      top: -5mm;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 38mm;
+      height: 5mm;
+      border: 3px solid #78350f;
+      border-bottom: none;
+      border-radius: 6px 6px 0 0;
+      background: transparent;
+    }
+
+    .suitcase-clasp {
+      position: absolute;
+      top: -2.2mm;
+      width: 9mm;
+      height: 4.4mm;
+      background: #f59e0b;
+      border: 1.5px solid #78350f;
+      border-radius: 2px;
+    }
+    .suitcase-clasp.left { left: 26mm; }
+    .suitcase-clasp.right { right: 26mm; }
+
+    .suitcase-travel-tag {
+      background: #ffffff;
+      border: 1.5px solid #b45309;
+      border-radius: 4px;
+      padding: 1.6mm 3mm;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .tag-title {
+      font-size: 8pt;
+      font-weight: 800;
+      color: #78350f;
+      letter-spacing: 0.04em;
+    }
+
+    .tag-route {
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-top: 0.4mm;
+    }
+
+    .suitcase-canvas-area {
+      flex: 1;
+      background: #ffffff;
+      border: 2px dashed #b45309;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6mm;
+      min-height: 0;
+    }
+
+    .suitcase-watermark {
+      font-size: 9pt;
+      font-weight: 800;
+      color: rgba(120, 53, 15, 0.25);
+      text-align: center;
+      letter-spacing: 0.06em;
+      max-width: 120mm;
+      line-height: 1.4;
+    }
+
+    .suitcase-caption-box {
+      background: #ffffff;
+      border: 1px solid #d97706;
+      border-radius: 5px;
+      padding: 2mm 3mm;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
 
+  <div class="screen-toolbar">
+    <div class="screen-toolbar-title">KS2 World War II • Lesson 11 of 11: After the War — The Windermere Children (1945)</div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&unit=ks2_ww2">← Back to KS2 Unit</a>
+      <a href="/pdfs/ks2_ww2/lesson_11_windermere_children_worksheet.pdf" download>⬇ Download PDF</a>
+      <button class="print-btn" onclick="window.print()">🖨 Print Worksheet</button>
+    </div>
+  </div>
+
   <!-- ========================================================
-       PAGE 1: SOURCE EVIDENCE & ACTIVE CHRONOLOGY (SHEET 1)
+       PAGE 1: SOURCE ENQUIRY & CHRONOLOGY (SHEET 1)
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-1">
     <div class="exercise-book-cutline">
       <div class="cut-indicator">
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
-        Cut along dashed line to stick neatly into exercise book
+        ✂ Cut along dashed line to stick neatly into exercise book
       </div>
 
-      <!-- Masthead -->
       <div class="sheet-masthead">
         <div class="brand-left">
           <span class="brand-badge">KS2 HISTORY</span>
-          <span class="brand-text">THE HISTORY REVISION HUB • KS2 WORLD WAR II</span>
+          <span class="brand-text">KS2 WORLD WAR II • LESSON 11 OF 11</span>
         </div>
         <div class="student-fields">
           <div class="field-item">Name: <span class="field-line"></span></div>
@@ -691,60 +855,49 @@
         </div>
       </div>
 
-      <!-- Enquiry Title -->
       <div class="enquiry-banner">
         <div class="enquiry-title-group">
-          <h1>After the War • The Windermere Children</h1>
-          <p class="enquiry-question">Key Enquiry Question: How did 300 child survivors rebuild their lives by Lake Windermere in August 1945?</p>
+          <h1>After the War — The Windermere Children (1945)</h1>
+          <p class="enquiry-question">Enquiry Question: How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?</p>
         </div>
         <div class="lesson-badge">
-          LESSON 11<br><span style="font-size: 6.2pt; font-weight:600;">KEY STAGE 2</span>
+          LESSON 11<br><span style="font-size: 7pt; font-weight:600;">OF 11 • KS2</span>
         </div>
       </div>
 
-      <!-- Section 1: Archival Story & Evidence Card -->
       <div class="story-evidence-grid">
         <div class="archival-plate-box">
-          <img src="windermere_children_calgarth_1945.jpg" class="archival-img" alt="Source A (Archival Photograph)">
-          <p class="archival-caption"><strong>Source A (Archival Photograph):</strong> Child survivors at Prague airport with chalk-tagged luggage ('W 160'), boarding the RAF Stirling bomber airlift to Cumbria, 14 August 1945. ('45 Aid Society / IWM)</p>
+          <img src="../assets/windermere_raf_stirling_airlift_1945.jpg" class="archival-img" alt="Source A">
+          <p class="archival-caption"><strong>Source A (Photograph, Aug 1945):</strong> An RAF Transport Command Short Stirling aircraft on the tarmac at Prague Airport during the airlift of 300 child camp survivors. (IWM)</p>
         </div>
         <div class="story-text-box">
-          <div class="story-header">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            Historical Reading • What this tells us
-          </div>
-          <p class="story-prose">
-            In August 1945, three months after the war in Europe ended, ten RAF Stirling bombers flew 300 exhausted child survivors from Prague to Carlisle Airport. These children had survived the horrors of Nazi concentration camps after borders shut on 1 September 1939.<br><br>They were brought to the idyllic <strong>Calgarth Estate by Lake Windermere</strong>. Here, volunteers, doctors, and psychologists gave them clean beds, hot food, swimming in the lake, and red bicycles, helping them begin the long journey to rebuild their shattered lives.
-          </p>
+          <div class="story-header">Historical Background • Read Together</div>
+          <p class="story-prose">In <strong>August 1945</strong>—three months after VE Day—charity leader <strong>Leonard Montefiore</strong> arranged for orphaned Jewish child survivors from liberated camps in Europe to recover in Britain. <strong>Ten RAF Short Stirling bombers</strong> flew the first <strong>300 children</strong> from Prague to Carlisle.<br><br>Coaches drove them to the peaceful <strong>Calgarth Estate</strong> by <strong>Lake Windermere</strong>. Helped by <strong>Dr Oscar Friedman</strong> and art therapist <strong>Marie Paneth</strong>, they formed a lifelong family called the <strong>'45 Aid Society</strong>.</p>
         </div>
       </div>
 
-      <!-- Task 1: Primary Evidence Detective -->
-      <div class="task-card-expand p1-task1">
+      <div class="task-card p1-task1">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            Task 1: Artifact Detective • From Auschwitz to Ambleside • Primary & Literary Detective
-          </span>
-          <span class="task-tag">Primary Evidence</span>
+          <span class="task-num-title">Task 1: Archive & Novel Detective • Tom Palmer's After the War</span>
+          <span class="task-tag">Historical & Literary Enquiry</span>
         </div>
         <div class="artifact-detective-grid">
           <div class="artifact-container">
-            <img src="tom_palmer_after_the_war.jpg" class="artifact-img" alt="Source B (Historical Fiction Cover)">
-            <p class="artifact-caption"><strong>Source B (Historical Fiction Cover):</strong> Cover of "After the War: From Auschwitz to Ambleside" by Tom Palmer (illustrated by Violet Tobacco, Barrington Stoke), based on real survivor testimonies.</p>
+            <img src="../assets/tom_palmer_after_the_war.jpg" class="artifact-img" alt="Source B">
+            <p class="artifact-caption"><strong>Source B (Book Cover):</strong> Tom Palmer's novel <em>After the War</em>, researched with real Windermere survivors and archive records.</p>
           </div>
           <div class="detective-questions">
             <div class="q-block">
-              <p class="q-item">1. Author Tom Palmer based his novel on real survivor testimonies from the Lake District Holocaust Project. Why is historical fiction a powerful way to help us understand real historical events?</p>
-              <div class="ruled-handwriting-lines">
+              <p class="q-item">1. How did author Tom Palmer use real survivor testimonies (such as Arek Hersh and Ben Helfgott) so his novel reflects real history accurately?</p>
+              <div class="ruled-lines-box">
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
               </div>
             </div>
             <div class="q-block">
-              <p class="q-item">2. When the children first arrived at Calgarth, many hid bread under their pillows because they were terrified food would run out. What does this reveal about the severe trauma they carried?</p>
-              <div class="ruled-handwriting-lines">
+              <p class="q-item">2. Why did newly arrived children hide crusts of bread under their pillows at night, and why did kind staff never scold them for it?</p>
+              <div class="ruled-lines-box">
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
@@ -754,44 +907,50 @@
         </div>
       </div>
 
-      <!-- Task 2: Active Chronological Challenge -->
-      <div class="task-card-expand p1-task2">
+      <div class="task-card p1-task2 last">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Task 2: Active Chronological Challenge • August 1945: The Journey to Windermere
-          </span>
-          <span class="task-tag">Chronological Understanding</span>
+          <span class="task-num-title">Task 2: Prague to Lake Windermere • Journey to Recovery</span>
+          <span class="task-tag">Chronology</span>
         </div>
         <div class="timeline-3col">
+          
           <div class="timeline-step-card">
-            <span class="step-badge">STAGE 1 • PRAGUE AIRLIFT</span>
-            <span class="step-title">The Stirling Bombers</span>
-            <p class="step-desc">RAF bombers fly 300 orphaned children from Czechoslovakia to Britain. Many had never flown before.</p>
-            <div class="step-response-box">
-              <p style="font-size:6.8pt; font-weight:700; color:#1e3a8a; margin-bottom:0.5mm;">What mixture of bewilderment and relief would a child feel stepping aboard an Allied aircraft in 1945?</p>
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 1 • AUG 1945</div>
+              <div class="step-title">10 RAF Stirling Bombers</div>
+              <p class="step-desc">Warplanes built for bombing are converted into rescue aircraft flying 300 survivors from Prague to Carlisle.</p>
+            </div>
+            <p class="step-prompt">Why was flying inside RAF bombers a powerful symbol of peace?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
           </div>
           <div class="timeline-step-card">
-            <span class="step-badge">STAGE 2 • CALGARTH ESTATE</span>
-            <span class="step-title">Sanctuary by the Lake</span>
-            <p class="step-desc">Arriving at wooden chalets surrounded by fells and water. Clean sheets, hot soup, and medical examinations.</p>
-            <div class="step-response-box">
-              <p style="font-size:6.8pt; font-weight:700; color:#1e3a8a; margin-bottom:0.5mm;">Why was the tranquil, natural beauty of the Lake District chosen as an ideal setting for psychological healing?</p>
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 2 • AUTUMN 1945</div>
+              <div class="step-title">Healing at Calgarth Estate</div>
+              <p class="step-desc">Clean white sheets, hot meals, English lessons, painting with Marie Paneth, football, and bicycles.</p>
+            </div>
+            <p class="step-prompt">How did art, sport, and Lake District nature help without forcing talk?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
           </div>
           <div class="timeline-step-card">
-            <span class="step-badge">STAGE 3 • REBUILDING CHILDHOOD</span>
-            <span class="step-title">Bicycles, Swimming & Hope</span>
-            <p class="step-desc">Local residents donate 300 red bicycles. The children learn English, play football, swim, and forge lifelong bonds.</p>
-            <div class="step-response-box">
-              <p style="font-size:6.8pt; font-weight:700; color:#1e3a8a; margin-bottom:0.5mm;">How did simple activities like riding a bicycle help children rediscover what it meant to be a child?</p>
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 3 • LIFELONG BOND</div>
+              <div class="step-title">The '45 Aid Society</div>
+              <p class="step-desc">Having lost families, the survivors become brothers and sisters for life and share lessons in schools.</p>
+            </div>
+            <p class="step-prompt">How did survivors like Olympic captain Ben Helfgott give back to Britain?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -800,169 +959,159 @@
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="sheet-footer">
-        <span>The History Revision Hub • KS2 History Exercise Book Series</span>
-        <span>LESSON 11 • Sheet 1 of 2 (Trim along dashed outer cutline)</span>
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 11 OF 11 • Sheet 1 of 2</span>
       </div>
     </div>
   </div>
 
   <!-- ========================================================
-       PAGE 2: INQUIRY TASKS & MASTER SYNTHESIS (SHEET 2)
+       PAGE 2: INVESTIGATION, PERSPECTIVES & CHALLENGE (SHEET 2)
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-2">
     <div class="exercise-book-cutline">
       <div class="cut-indicator">
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
-        Cut along dashed line to stick neatly into exercise book
+        ✂ Cut along dashed line to stick neatly into exercise book
       </div>
 
-      <!-- Masthead -->
       <div class="sheet-masthead">
         <div class="brand-left">
-          <span class="brand-badge">KS2 ACTIVITY</span>
-          <span class="brand-text">The Windermere Sanctuary & Oral History</span>
+          <span class="brand-badge">KS2 ENQUIRY</span>
+          <span class="brand-text">10 RAF Stirling Bombers, The Calgarth Estate & Rebuilding Young Lives</span>
         </div>
         <div class="student-fields">
           <div class="field-item">Name: <span class="field-line"></span></div>
-          <div class="field-item">LESSON 11 • Sheet 2</div>
+          <div class="field-item">LESSON 11 • Sheet 2 of 2</div>
         </div>
       </div>
 
-      <!-- Task 3: Visual Investigation & Tactile Ledger -->
-      <div class="task-card-expand p2-task3">
+      <div class="task-card p2-task3">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            Task 3: Visual Investigation • Windermere Sanctuary Map & Calgarth Recovery Ledger
-          </span>
-          <span class="task-tag">Tactile Investigation</span>
+          <span class="task-num-title">Task 3: Comparing Rescues & Rebuilding Lives at Calgarth</span>
+          <span class="task-tag">Unit Synthesis</span>
         </div>
         <div class="visual-investigation-grid">
           <div class="canvas-drawing-col">
-            <div class="drawing-outer-shell">
-              
-      <div style="width:52mm; height:50mm; border:2px solid #047857; border-radius:5px; background:#ecfdf5; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:2mm; box-shadow:inset 0 0 8px rgba(0,0,0,0.05);">
-        <div style="width:100%; display:flex; justify-content:space-around; border-bottom:1.5px dashed #059669; padding-bottom:1mm;">
-          <span style="font-size:7pt;">🚲</span><span style="font-size:7pt;">🌲</span><span style="font-size:7pt;">🏕️</span><span style="font-size:7pt;">🌊</span><span style="font-size:7pt;">🚲</span>
+            
+        <div class="craft-mini-box" style="background:#f0fdf4; border:2px solid #047857;">
+          <div style="font-size:8pt; font-weight:800; color:#065f46; text-transform:uppercase; margin-bottom:1.5mm; text-align:center;">Two Different Rescues</div>
+          <div style="font-size:7.4pt; line-height:1.58; color:#1e293b;">
+            • <strong>Kindertransport (1938–39):</strong> 10,000 children escaped by train &amp; ferry <strong>BEFORE</strong> war began.<br>
+            • <strong>Windermere Children (Aug 1945):</strong> 300 camp survivors flown in 10 RAF Stirling bombers <strong>AFTER</strong> VE Day to heal by Lake Windermere.
+          </div>
         </div>
-        <div style="width:42mm; height:24mm; border:1.8px solid #059669; background:#ffffff; border-radius:3px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1.5mm; font-size:6.2pt; color:#065f46; font-weight:800; text-align:center;">
-          <span>CALGARTH ESTATE • 1945</span>
-          <span style="font-size:5.2pt; color:#047857; font-weight:600; margin-top:1mm;">Lake Windermere Sanctuary</span>
-          <span style="font-size:5.2pt; color:#b45309; font-weight:700; margin-top:1mm;">300 RECOVERING CHILDREN</span>
-        </div>
-        <div style="font-size:5.6pt; font-weight:700; color:#065f46; text-align:center;">TROUTBECK BRIDGE • WINDERMERE</div>
-      </div>
-    
-            </div>
-            <p class="canvas-subcaption">Draw or annotate the Calgarth chalets, Lake Windermere, and recovery activities above</p>
+            <p class="canvas-subcaption">"It was like arriving in paradise." — Windermere survivor memory</p>
           </div>
           <div class="investigation-ledger">
+            
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>1. Kindertransport vs Windermere Contrast</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">1. Clean Beds & Hiding Bread Under Pillows</div>
+                <p class="ledger-reason-prompt">How did plentiful breakfasts every morning slowly rebuild trust?</p>
               </div>
-              <p class="ledger-reason-prompt">How did the 1938–39 Kindertransport (rescued before war) differ from the 1945 Windermere arrival (survivors of camps)?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>2. The Symbol of the Red Bicycle</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">2. Art Therapy with Marie Paneth & English Classes</div>
+                <p class="ledger-reason-prompt">Why did painting and learning English help teenagers look to the future?</p>
               </div>
-              <p class="ledger-reason-prompt">Why did riding bicycles freely along country lanes represent liberation and restored childhood for these boys and girls?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>3. The '45 Aid Society & Family Bonds</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">3. Football Matches, Swimming & Donated Bicycles</div>
+                <p class="ledger-reason-prompt">Why did riding bicycles freely along country lanes mean so much?</p>
               </div>
-              <p class="ledger-reason-prompt">Having lost almost all their biological families, how did the 300 children become brothers and sisters for life?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>4. Tom Palmer & Preserving Oral History</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">4. Lifelong Friendship in the '45 Aid Society</div>
+                <p class="ledger-reason-prompt">Why did the Windermere survivors stay close friends for over 75 years?</p>
               </div>
-              <p class="ledger-reason-prompt">Why is it vital that authors and historians interview living survivors before their firsthand voices are lost?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Task 4: Thinking Heads -->
-      <div class="task-card-expand p2-task4">
+      <div class="task-card p2-task4">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Task 4: "Thinking Heads" • Contrasting Historical Perspectives
-          </span>
-          <span class="task-tag">Contrasting Perspectives</span>
+          <span class="task-num-title">Task 4: Thinking Heads • Two Historical Viewpoints</span>
+          <span class="task-tag">Perspectives</span>
         </div>
         <div class="thinking-heads-grid">
           <div class="head-card">
-            <div class="head-title-row">
-              <span class="head-badge">1</span>
-              <span class="head-name">Arek (15-Year-Old Camp Survivor)</span>
-            </div>
-            <div class="thought-bubble">
-              <p class="thought-prompt">Prompt: You have endured years of hunger and cruelty. You are handed a new red bicycle and told you are safe by the lake. What thoughts race through your mind?</p>
-              <div class="bubble-lines">
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">1</span>
+                <span class="head-name">Teenage Survivor Arriving at Lake Windermere (August 1945)</span>
               </div>
+              <p class="thought-prompt">What does it feel like sleeping in clean white sheets with no guards outside and riding a bicycle beside the quiet lake?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
           <div class="head-card">
-            <div class="head-title-row">
-              <span class="head-badge">2</span>
-              <span class="head-name">Marie Paneth (Art Therapist at Calgarth)</span>
-            </div>
-            <div class="thought-bubble">
-              <p class="thought-prompt">Prompt: You give paper and paints to children who cannot yet speak English. How does art help them express grief and begin to smile again?</p>
-              <div class="bubble-lines">
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">2</span>
+                <span class="head-name">Calgarth Care Worker / Art Therapist Marie Paneth</span>
               </div>
+              <p class="thought-prompt">Why do patience, listening, hot meals, and art matter so much when helping traumatised young people feel safe again?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Task 5: Mission Challenge -->
-      <div class="task-card-expand p2-task5">
+      <div class="task-card p2-task5 last">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-            Task 5: Mission Challenge • From Darkness to New Life
-          </span>
-          <span class="task-tag">Historian Challenge</span>
+          <span class="task-num-title">Task 5: Historian Mission Challenge • Answering the Enquiry</span>
+          <span class="task-tag">Extended Writing</span>
         </div>
         <div class="synthesis-container">
-          <p class="synthesis-header">Big Question: Sir Nicholas Winton rescued children before the war began; the Windermere team helped children rebuild after the war ended. What does the story of the Windermere Children teach us about human compassion and hope?</p>
-          <div class="bubble-lines" style="flex:1;">
-            <div class="bubble-line"></div>
-            <div class="bubble-line"></div>
-            <div class="bubble-line"></div>
-            <div class="bubble-line"></div>
+          <p class="synthesis-header">Enquiry Answer: How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?</p>
+          <div class="ruled-lines-box">
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
           </div>
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="sheet-footer">
-        <span>The History Revision Hub • KS2 History Exercise Book Series</span>
-        <span>LESSON 11 • Sheet 2 of 2 (Trim along dashed outer cutline)</span>
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 11 OF 11 • Sheet 2 of 2</span>
       </div>
     </div>
   </div>
+
 
 </body>
 </html>

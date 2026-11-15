@@ -2,18 +2,18 @@
   "yearGroups": [
     {
       "year": "Key Stage 2",
-      "ks": "Key Stage 2",
+      "ks": "Key Stage 2 Primary (Years 5–6)",
       "units": [
         {
           "uid": "ks2_ww2",
           "terms": ["Autumn 1", "Autumn 2"],
-          "shortTitle": "World War II & The Home Front",
-          "summary": "Pupils investigate how the Second World War transformed children's lives in Britain and Europe, covering the outbreak in 1939, Operation Pied Piper evacuation, the Blitz and air raid shelters, rationing, women at war, Bletchley Park codebreaking, and the Holocaust Educational Trust primary undercurrent tracing Kindertransport rescues and upstanders.",
-          "vocab": "Air Raid Siren, Gas Mask, Evacuee, Operation Pied Piper, Kindertransport, The Blitz, Anderson Shelter, Rationing, Women's Land Army, Enigma Machine, Upstander, VE Day",
-          "skills": ["Chronological Understanding", "Artifact & Primary Source Investigation", "Perspectives & Empathy", "Historical Explanation"],
-          "assessment": "Formative primary source analyses throughout. Extended enquiry: 'How did World War II transform children's lives in Britain and Europe?'",
-          "smsc": "<strong>Spiritual:</strong> Reflecting on loss, separation, and remembrance. <strong>Moral:</strong> Choices made by rescuers and upstanders (Winton, Chadwick). <strong>Social:</strong> Community resilience during the Blitz and post-war rebuilding. <strong>Cultural:</strong> Celebrating pre-war European Jewish heritage and wartime culture.",
-          "careers": "Museum Educator, Archivist, Historian, Civil Service, Journalist"
+          "shortTitle": "World War II & The Home Front (1933–1945)",
+          "summary": "An 11-enquiry primary unit investigating how the Second World War transformed children's lives across Britain and Europe: Outbreak & Gas Masks (1939), Operation Pied Piper Evacuation, Pre-War Jewish Life & Rights Lost (1933–38), Vera's Kindertransport Journey (1938–39), Rescuers & Upstanders (Chadwick & Winton), The Blitz & Shelters, Dig for Victory & Rationing, Women at War, Bletchley Park Codebreakers, VE Day & Rebuilding Britain, and The Windermere Children (1945).",
+          "vocab": "Blackout, Gas Mask, Evacuee, Operation Pied Piper, Nuremberg Laws, Kindertransport, Upstander, The Blitz, Anderson Shelter, Rationing, Women's Land Army, Enigma Machine, VE Day, Calgarth Estate",
+          "skills": ["Chronological Understanding (1933–1954)", "Artefact & Primary Source Investigation", "Perspectives & Empathy", "Historical Explanation"],
+          "assessment": "11 Lesson Worksheets, 28-Page Pupil Workbook, and 44-Question Master Retrieval Quiz Pack alongside the 20-Page Classroom Textbook. Overarching enquiry: 'How did World War II transform children's lives in Britain and Europe?'",
+          "smsc": "<strong>Spiritual:</strong> Reflecting on loss, separation, and remembrance. <strong>Moral:</strong> Choices made by rescuers and upstanders (Trevor Chadwick, Doreen Warriner, Nicholas Winton). <strong>Social:</strong> Community resilience during the Blitz, rationing, and post-war rebuilding (NHS, Windermere). <strong>Cultural:</strong> Celebrating pre-war European Jewish family heritage and wartime Home Front life.",
+          "careers": "Museum Educator, Archivist, Historian, Cryptographer, Civil Service, Journalist"
         }
       ]
     },

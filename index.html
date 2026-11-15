@@ -148,6 +148,21 @@
       <div class="curtain-text">Loading History Hub...</div>
     </div>
     <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search || '');
+          if (params.get('locked') !== 'true') {
+            sessionStorage.removeItem('hh_portal');
+          }
+          var unitParam = (params.get('unit') || '').toLowerCase();
+          var viewParam = (params.get('view') || '').toLowerCase();
+          if (viewParam !== 'dashboard' && unitParam.indexOf('ks2_') === 0) {
+            document.body.classList.add('ks2-mode-active');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script>
       // Emergency Curtain Failsafe: Guarantee curtain never permanently locks the viewport
       setTimeout(function () {
         var c = document.getElementById('page-curtain');

@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>KS2 History Worksheet • Lesson 10: VE Day, Rebuilding & Remembrance</title>
+  <title>KS2 History Worksheet • Lesson 10: VE Day, Rebuilding Britain & Remembrance (1945)</title>
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
-
     :root {
-      --ink: #1e293b;
+      --ink: #0f172a;
       --ink-muted: #475569;
       --navy-primary: #1e3a8a;
       --navy-deep: #0f172a;
       --parchment: #fdfbf7;
       --accent-gold: #b45309;
       --border-gray: #cbd5e1;
-      --card-bg: #ffffff;
       --cut-guide: #94a3b8;
     }
 
@@ -28,77 +27,122 @@
       print-color-adjust: exact;
     }
 
-    body {
-      background: #f1f5f9;
-      font-family: 'Inter', sans-serif;
-      color: var(--ink);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15mm;
-      padding: 15mm 0;
-    }
-
     @page {
       size: A4 portrait;
       margin: 0;
     }
 
-    @media print {
-      body {
-        background: transparent;
-        padding: 0;
-        gap: 0;
-      }
-      .worksheet-page {
-        box-shadow: none !important;
-        page-break-after: always;
-        break-after: page;
-        margin: 0;
-      }
+    body {
+      background: #e2e8f0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .screen-toolbar-title {
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .screen-toolbar-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .screen-toolbar a,
+    .screen-toolbar button {
+      background: #1e3a8a;
+      color: #ffffff;
+      border: 1px solid #3b82f6;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .screen-toolbar button.print-btn {
+      background: #f59e0b;
+      color: #0f172a;
+      border-color: #f59e0b;
     }
 
     .worksheet-page {
       width: 210mm;
       height: 297mm;
+      max-height: 297mm;
       background: #ffffff;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      position: relative;
-      overflow: hidden;
-      padding: 6.5mm 7.5mm;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+      margin: 8mm auto;
+      padding: 7.5mm 8mm 6.5mm 8mm;
       display: flex;
       flex-direction: column;
-      box-sizing: border-box;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .worksheet-page {
+        margin: 0;
+        box-shadow: none !important;
+      }
     }
 
     .exercise-book-cutline {
       width: 100%;
-      height: 100%;
+      flex: 1;
+      min-height: 0;
       border: 1.5px dashed var(--cut-guide);
       border-radius: 6px;
-      padding: 4.5mm 5.5mm;
+      padding: 4.5mm 5.5mm 4mm 5.5mm;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       position: relative;
       background: #ffffff;
-      box-sizing: border-box;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .cut-indicator {
       position: absolute;
-      top: -3.5mm;
-      left: 14mm;
+      top: -2.6mm;
+      left: 12mm;
       background: #ffffff;
-      padding: 0 5px;
-      font-size: 6.8pt;
+      padding: 0 6px;
+      font-size: 7.5pt;
       font-weight: 700;
-      color: var(--cut-guide);
-      letter-spacing: 0.05em;
+      color: #64748b;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      line-height: 1;
     }
 
     .sheet-masthead {
@@ -106,7 +150,7 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid var(--navy-deep);
-      padding-bottom: 2mm;
+      padding-bottom: 1.8mm;
       margin-bottom: 2mm;
       flex-shrink: 0;
     }
@@ -121,7 +165,7 @@
       background: var(--navy-deep);
       color: #ffffff;
       font-family: 'Cinzel', serif;
-      font-size: 7.2pt;
+      font-size: 7.5pt;
       font-weight: 800;
       padding: 1.5px 6px;
       border-radius: 3px;
@@ -129,8 +173,8 @@
     }
 
     .brand-text {
-      font-size: 7.5pt;
-      font-weight: 700;
+      font-size: 7.6pt;
+      font-weight: 800;
       color: var(--navy-primary);
       letter-spacing: 0.03em;
       text-transform: uppercase;
@@ -138,10 +182,11 @@
 
     .student-fields {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       font-size: 8pt;
-      font-weight: 600;
+      font-weight: 700;
       color: var(--ink);
+      align-items: center;
     }
 
     .field-item {
@@ -152,7 +197,7 @@
 
     .field-line {
       display: inline-block;
-      width: 32mm;
+      width: 34mm;
       border-bottom: 1.2px solid var(--ink);
       height: 3.5mm;
     }
@@ -165,47 +210,49 @@
       background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
       color: #ffffff;
       border-radius: 5px;
-      padding: 2.2mm 3.5mm;
+      padding: 2.4mm 3.5mm;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 3mm;
       margin-bottom: 2.2mm;
       flex-shrink: 0;
     }
 
     .enquiry-title-group h1 {
       font-family: 'Cinzel', serif;
-      font-size: 11pt;
+      font-size: 10.6pt;
       font-weight: 800;
       letter-spacing: 0.02em;
-      line-height: 1.15;
+      line-height: 1.18;
     }
 
     .enquiry-title-group .enquiry-question {
-      font-family: 'Lora', serif;
-      font-size: 7.6pt;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8pt;
       font-style: italic;
-      color: #cbd5e1;
-      margin-top: 0.4mm;
+      color: #e2e8f0;
+      margin-top: 0.6mm;
+      line-height: 1.25;
     }
 
     .lesson-badge {
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.3);
-      padding: 1.5mm 3.5mm;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 1.6mm 3mm;
       border-radius: 4px;
       text-align: center;
-      font-size: 7.2pt;
+      font-size: 7.5pt;
       font-weight: 800;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       white-space: nowrap;
       flex-shrink: 0;
     }
 
-    /* SECTION 1: ARCHIVAL EVIDENCE & STORY CARD */
+    /* STORY & SOURCE A */
     .story-evidence-grid {
       display: grid;
-      grid-template-columns: 58mm 1fr;
+      grid-template-columns: 64mm 1fr;
       gap: 3mm;
       margin-bottom: 2.2mm;
       flex-shrink: 0;
@@ -214,30 +261,28 @@
     .archival-plate-box {
       border: 1px solid var(--border-gray);
       border-radius: 4px;
-      padding: 1.5mm;
+      padding: 1.6mm;
       background: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      overflow: hidden;
+      justify-content: space-between;
     }
 
     .archival-img {
       width: 100%;
-      height: 38mm;
+      height: 40mm;
       object-fit: contain;
-      background: #ffffff;
+      background: #f8fafc;
       border-radius: 3px;
       border: 1px solid #cbd5e1;
     }
 
     .archival-caption {
-      font-size: 6.2pt;
-      line-height: 1.25;
+      font-size: 7.5pt;
+      line-height: 1.24;
       color: var(--ink-muted);
       margin-top: 1mm;
-      font-style: italic;
       text-align: center;
     }
 
@@ -246,28 +291,25 @@
       border: 1px solid #fed7aa;
       border-left: 3.5px solid var(--accent-gold);
       border-radius: 4px;
-      padding: 2.2mm 2.8mm;
+      padding: 2.2mm 3mm;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .story-header {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 7.6pt;
+      font-size: 7.8pt;
       font-weight: 800;
       color: var(--navy-deep);
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      margin-bottom: 1.2mm;
+      margin-bottom: 1mm;
     }
 
     .story-prose {
-      font-family: 'Lora', serif;
-      font-size: 8.1pt;
-      line-height: 1.45;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.4pt;
+      line-height: 1.42;
       color: #1e293b;
     }
 
@@ -275,27 +317,27 @@
       color: var(--navy-primary);
     }
 
-    /* DYNAMIC EXPANDING TASK CARDS */
-    .task-card-expand {
+    /* TASK CARDS */
+    .task-card {
       background: #ffffff;
       border: 1.2px solid var(--border-gray);
       border-radius: 5px;
       padding: 2.2mm 3mm;
       display: flex;
       flex-direction: column;
+      margin-bottom: 2mm;
       min-height: 0;
-      margin-bottom: 2.2mm;
-      box-sizing: border-box;
     }
 
-    .p1-task1 {
-      flex: 1.15;
-    }
-
-    .p1-task2 {
-      flex: 1.05;
+    .task-card.last {
       margin-bottom: 0;
     }
+
+    .p1-task1 { flex: 1.12; }
+    .p1-task2 { flex: 1.02; }
+    .p2-task3 { flex: 1.34; }
+    .p2-task4 { flex: 0.86; }
+    .p2-task5 { flex: 0.84; }
 
     .task-header {
       display: flex;
@@ -308,27 +350,24 @@
     }
 
     .task-num-title {
-      font-size: 8.2pt;
+      font-size: 8.5pt;
       font-weight: 800;
       color: var(--navy-deep);
-      display: flex;
-      align-items: center;
-      gap: 5px;
     }
 
     .task-tag {
-      font-size: 6.5pt;
+      font-size: 7.5pt;
       font-weight: 700;
       text-transform: uppercase;
       background: #e0e7ff;
       color: #3730a3;
-      padding: 1px 5px;
+      padding: 1px 6px;
       border-radius: 3px;
     }
 
     .artifact-detective-grid {
       display: grid;
-      grid-template-columns: 46mm 1fr;
+      grid-template-columns: 60mm 1fr;
       gap: 3mm;
       flex: 1;
       min-height: 0;
@@ -341,25 +380,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       padding: 1.8mm;
-      overflow: hidden;
+      min-height: 0;
     }
 
     .artifact-img {
-      width: 42mm;
-      height: 38mm;
+      width: 100%;
+      flex: 1;
+      min-height: 0;
+      max-height: 58mm;
       object-fit: contain;
       border-radius: 3px;
+      background: #ffffff;
     }
 
     .artifact-caption {
-      font-size: 6.0pt;
-      line-height: 1.25;
+      font-size: 7.5pt;
+      line-height: 1.22;
       color: var(--ink-muted);
       text-align: center;
       margin-top: 1mm;
-      font-style: italic;
+      flex-shrink: 0;
     }
 
     .detective-questions {
@@ -375,116 +417,98 @@
       display: flex;
       flex-direction: column;
       flex: 1;
+      justify-content: flex-start;
       min-height: 0;
     }
 
     .q-item {
-      font-size: 7.6pt;
+      font-size: 8pt;
       font-weight: 700;
       color: var(--navy-deep);
-      line-height: 1.25;
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
-      margin-bottom: 0.6mm;
     }
 
-    .ruled-handwriting-lines {
+    .ruled-lines-box {
       display: flex;
       flex-direction: column;
       flex: 1;
-      justify-content: space-between;
+      justify-content: space-evenly;
       min-height: 0;
     }
 
     .ruled-line {
-      flex: 1;
-      min-height: 5.4mm;
+      height: 7.2mm;
       border-bottom: 1.2px dashed #94a3b8;
+      width: 100%;
     }
 
-    /* TASK 2: ACTIVE 3-STAGE CHRONOLOGY */
+    .ruled-lines-box .ruled-line {
+      flex: 1;
+      height: auto;
+      min-height: 5.0mm;
+      max-height: 7.8mm;
+    }
+
+    /* TASK 2: 3-STEP TIMELINE */
     .timeline-3col {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2.8mm;
+      gap: 2.6mm;
       flex: 1;
       min-height: 0;
-      margin-top: 0.5mm;
     }
 
     .timeline-step-card {
       background: #f8fafc;
-      border: 1px solid #e2e8f0;
+      border: 1px solid #cbd5e1;
       border-top: 3.5px solid var(--navy-primary);
       border-radius: 4px;
       padding: 1.8mm 2.2mm;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       min-height: 0;
     }
 
     .step-badge {
-      font-size: 6.4pt;
+      font-size: 7.5pt;
       font-weight: 800;
       color: var(--navy-primary);
-      margin-bottom: 0.5mm;
-      letter-spacing: 0.04em;
-      flex-shrink: 0;
+      letter-spacing: 0.03em;
     }
 
     .step-title {
-      font-size: 7.4pt;
-      font-weight: 700;
+      font-size: 8pt;
+      font-weight: 800;
       color: var(--navy-deep);
-      margin-bottom: 0.5mm;
-      flex-shrink: 0;
+      margin: 0.3mm 0;
     }
 
     .step-desc {
-      font-size: 6.6pt;
+      font-size: 7.5pt;
       color: var(--ink-muted);
-      line-height: 1.25;
+      line-height: 1.22;
       margin-bottom: 1mm;
+    }
+
+    .step-prompt {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      line-height: 1.2;
+      padding-top: 1mm;
+      border-top: 1px dashed #cbd5e1;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
 
-    .step-response-box {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 0;
-    }
-
-    .sheet-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 1.5mm;
-      border-top: 1px solid #e2e8f0;
-      font-size: 6.8pt;
-      color: var(--ink-muted);
-      flex-shrink: 0;
-      margin-top: 1.5mm;
-    }
-
-    /* PAGE 2 STYLES */
-    .p2-task3 {
-      flex: 1.32;
-    }
-
-    .p2-task4 {
-      flex: 0.95;
-    }
-
-    .p2-task5 {
-      flex: 0.95;
-      margin-bottom: 0;
-    }
-
+    /* PAGE 2: TASK 3 */
     .visual-investigation-grid {
       display: grid;
-      grid-template-columns: 66mm 1fr;
-      gap: 3.5mm;
+      grid-template-columns: 60mm 1fr;
+      gap: 3mm;
       flex: 1;
       min-height: 0;
     }
@@ -492,198 +516,338 @@
     .canvas-drawing-col {
       display: flex;
       flex-direction: column;
-      min-height: 0;
-      height: 100%;
-      box-sizing: border-box;
+      justify-content: space-between;
+      border: 1.5px dashed #b45309;
+      border-radius: 5px;
+      background: #fdfbf7;
+      padding: 2.5mm;
     }
 
-    .drawing-outer-shell {
+    .craft-mini-box {
+      width: 100%;
+      border-radius: 5px;
+      padding: 3mm;
       flex: 1;
-      min-height: 0;
-      border: 2px dashed #b45309;
-      border-radius: 6px;
-      background: #fdfbf7;
-      position: relative;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3mm;
-      box-sizing: border-box;
+      justify-content: space-evenly;
     }
 
     .canvas-subcaption {
-      font-size: 6.4pt;
+      font-size: 7.5pt;
       font-weight: 700;
       color: #92400e;
       text-align: center;
       margin-top: 1.5mm;
-      letter-spacing: 0.02em;
-      flex-shrink: 0;
+      line-height: 1.22;
     }
 
     .investigation-ledger {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 1.5mm;
+      gap: 1.4mm;
       flex: 1;
       min-height: 0;
     }
 
     .ledger-row {
       background: #ffffff;
-      border: 1px solid #e7e5e4;
+      border: 1px solid #cbd5e1;
       border-left: 3.5px solid var(--navy-primary);
       border-radius: 4px;
-      padding: 1.5mm 2.2mm;
+      padding: 1.3mm 2.2mm;
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       min-height: 0;
     }
 
-    .ledger-item-line {
-      display: flex;
-      align-items: baseline;
-      gap: 4px;
-      font-size: 7.3pt;
-      font-weight: 700;
+    .ledger-item-title {
+      font-size: 7.8pt;
+      font-weight: 800;
       color: var(--navy-deep);
     }
 
     .ledger-reason-prompt {
-      font-size: 6.6pt;
+      font-size: 7.5pt;
       color: var(--ink-muted);
-      margin-top: 0.4mm;
-      font-weight: 500;
+      line-height: 1.18;
+      margin-bottom: 0.2mm;
     }
 
-    /* THINKING HEADS */
+    /* TASK 4: THINKING HEADS */
     .thinking-heads-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3mm;
       flex: 1;
       min-height: 0;
-      margin-top: 0.5mm;
     }
 
     .head-card {
-      background: #ffffff;
+      background: #f8fafc;
       border: 1px solid var(--border-gray);
       border-radius: 5px;
-      padding: 2.2mm 2.8mm;
+      padding: 1.8mm 2.5mm;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       min-height: 0;
     }
 
     .head-title-row {
       display: flex;
       align-items: center;
-      gap: 5px;
-      margin-bottom: 1mm;
+      gap: 6px;
+      margin-bottom: 0.6mm;
       flex-shrink: 0;
     }
 
     .head-badge {
-      width: 17px;
-      height: 17px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
       background: var(--navy-primary);
       color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 6.8pt;
+      font-size: 7.5pt;
       font-weight: 800;
+      flex-shrink: 0;
     }
 
     .head-name {
-      font-size: 7.6pt;
+      font-size: 7.8pt;
       font-weight: 800;
       color: var(--navy-deep);
-    }
-
-    .thought-bubble {
-      background: #f8fafc;
-      border: 1.2px solid #cbd5e1;
-      border-radius: 5px;
-      padding: 2mm;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 0;
+      line-height: 1.2;
     }
 
     .thought-prompt {
-      font-size: 7.1pt;
+      font-size: 7.5pt;
       color: var(--navy-primary);
       font-weight: 600;
-      line-height: 1.25;
+      line-height: 1.22;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
-      margin-bottom: 1mm;
     }
 
-    .bubble-lines {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
-      min-height: 0;
-    }
-
-    .bubble-line {
-      border-bottom: 1.2px dashed #94a3b8;
-      flex: 1;
-      min-height: 5.2mm;
-    }
-
-    /* SYNTHESIS FRAME */
+    /* TASK 5: MISSION CHALLENGE */
     .synthesis-container {
       background: #fdfbf7;
       border: 1.2px solid #fed7aa;
       border-left: 4px solid var(--accent-gold);
       border-radius: 5px;
-      padding: 2.2mm 2.8mm;
+      padding: 1.8mm 2.8mm;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       flex: 1;
       min-height: 0;
     }
 
     .synthesis-header {
-      font-family: 'Lora', serif;
-      font-size: 7.6pt;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.2pt;
       font-style: italic;
       color: var(--navy-primary);
       font-weight: 700;
-      margin-bottom: 1mm;
+      line-height: 1.24;
+      margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
 
+    .sheet-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.5mm;
+      margin-top: 1.5mm;
+      border-top: 1px solid #cbd5e1;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--ink-muted);
+      flex-shrink: 0;
+    }
+
+    /* PAGE 3 PORTRAIT SUITCASE CRAFT */
+    .suitcase-portrait-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5mm;
+      min-height: 0;
+    }
+
+    .suitcase-checklist-card {
+      background: #fdfbf7;
+      border: 1.2px solid #d97706;
+      border-radius: 5px;
+      padding: 2.5mm 3.5mm;
+      flex-shrink: 0;
+    }
+
+    .checklist-heading {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #78350f;
+      margin-bottom: 1.5mm;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2mm 4mm;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 7.8pt;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .tick-box {
+      width: 3.4mm;
+      height: 3.4mm;
+      border: 1.2px solid #78350f;
+      border-radius: 2px;
+      background: #ffffff;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .checklist-note {
+      margin-top: 1.8mm;
+      padding-top: 1.4mm;
+      border-top: 1px dashed #fbbf24;
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+    }
+
+    .vintage-suitcase-outer {
+      flex: 1;
+      border: 3px solid #78350f;
+      border-radius: 10px;
+      background: #fef3c7;
+      padding: 5mm 5mm 4mm 5mm;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 3mm;
+      margin-top: 3mm;
+      min-height: 0;
+    }
+
+    .suitcase-top-handle {
+      position: absolute;
+      top: -5mm;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 38mm;
+      height: 5mm;
+      border: 3px solid #78350f;
+      border-bottom: none;
+      border-radius: 6px 6px 0 0;
+      background: transparent;
+    }
+
+    .suitcase-clasp {
+      position: absolute;
+      top: -2.2mm;
+      width: 9mm;
+      height: 4.4mm;
+      background: #f59e0b;
+      border: 1.5px solid #78350f;
+      border-radius: 2px;
+    }
+    .suitcase-clasp.left { left: 26mm; }
+    .suitcase-clasp.right { right: 26mm; }
+
+    .suitcase-travel-tag {
+      background: #ffffff;
+      border: 1.5px solid #b45309;
+      border-radius: 4px;
+      padding: 1.6mm 3mm;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .tag-title {
+      font-size: 8pt;
+      font-weight: 800;
+      color: #78350f;
+      letter-spacing: 0.04em;
+    }
+
+    .tag-route {
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-top: 0.4mm;
+    }
+
+    .suitcase-canvas-area {
+      flex: 1;
+      background: #ffffff;
+      border: 2px dashed #b45309;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6mm;
+      min-height: 0;
+    }
+
+    .suitcase-watermark {
+      font-size: 9pt;
+      font-weight: 800;
+      color: rgba(120, 53, 15, 0.25);
+      text-align: center;
+      letter-spacing: 0.06em;
+      max-width: 120mm;
+      line-height: 1.4;
+    }
+
+    .suitcase-caption-box {
+      background: #ffffff;
+      border: 1px solid #d97706;
+      border-radius: 5px;
+      padding: 2mm 3mm;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
 
+  <div class="screen-toolbar">
+    <div class="screen-toolbar-title">KS2 World War II • Lesson 10 of 11: VE Day, Rebuilding Britain & Remembrance (1945)</div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&unit=ks2_ww2">← Back to KS2 Unit</a>
+      <a href="/pdfs/ks2_ww2/lesson_10_ve_day_remembrance_worksheet.pdf" download>⬇ Download PDF</a>
+      <button class="print-btn" onclick="window.print()">🖨 Print Worksheet</button>
+    </div>
+  </div>
+
   <!-- ========================================================
-       PAGE 1: SOURCE EVIDENCE & ACTIVE CHRONOLOGY (SHEET 1)
+       PAGE 1: SOURCE ENQUIRY & CHRONOLOGY (SHEET 1)
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-1">
     <div class="exercise-book-cutline">
       <div class="cut-indicator">
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
-        Cut along dashed line to stick neatly into exercise book
+        ✂ Cut along dashed line to stick neatly into exercise book
       </div>
 
-      <!-- Masthead -->
       <div class="sheet-masthead">
         <div class="brand-left">
           <span class="brand-badge">KS2 HISTORY</span>
-          <span class="brand-text">THE HISTORY REVISION HUB • KS2 WORLD WAR II</span>
+          <span class="brand-text">KS2 WORLD WAR II • LESSON 10 OF 11</span>
         </div>
         <div class="student-fields">
           <div class="field-item">Name: <span class="field-line"></span></div>
@@ -691,60 +855,49 @@
         </div>
       </div>
 
-      <!-- Enquiry Title -->
       <div class="enquiry-banner">
         <div class="enquiry-title-group">
-          <h1>VE Day & The End of War in Europe</h1>
-          <p class="enquiry-question">Key Enquiry Question: Why did millions celebrate with street parties on 8 May 1945, and what challenges lay ahead?</p>
+          <h1>VE Day, Rebuilding Britain & Remembrance (1945)</h1>
+          <p class="enquiry-question">Enquiry Question: Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?</p>
         </div>
         <div class="lesson-badge">
-          LESSON 10<br><span style="font-size: 6.2pt; font-weight:600;">KEY STAGE 2</span>
+          LESSON 10<br><span style="font-size: 7pt; font-weight:600;">OF 11 • KS2</span>
         </div>
       </div>
 
-      <!-- Section 1: Archival Story & Evidence Card -->
       <div class="story-evidence-grid">
         <div class="archival-plate-box">
-          <img src="ve_day_street_party_1945.jpg" class="archival-img" alt="Source A (Archival Photograph)">
-          <p class="archival-caption"><strong>Source A (Archival Photograph):</strong> A vast crowd of celebrating citizens fills Trafalgar Square beneath Nelson's Column on 8 May 1945. (Imperial War Museum)</p>
+          <img src="../assets/ve_day_trafalgar_square_1945.jpg" class="archival-img" alt="Source A">
+          <p class="archival-caption"><strong>Source A (Photograph, 8 May 1945):</strong> Jubilant crowds packed along Whitehall in London around a double-decker bus celebrating Victory in Europe (VE) Day.</p>
         </div>
         <div class="story-text-box">
-          <div class="story-header">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            Historical Reading • What this tells us
-          </div>
-          <p class="story-prose">
-            On Tuesday 8 May 1945, Prime Minister Winston Churchill announced that Nazi Germany had surrendered. After <strong>five years, eight months, and four days</strong> of air raids, blackout, and separation, the war in Europe was finally over.<br><br>Across Britain, communities dragged tables into the middle of bomb-damaged streets, decorated houses with Union flags, and shared precious saved ration sweets so children could celebrate peace.
-          </p>
+          <div class="story-header">Historical Background • Read Together</div>
+          <p class="story-prose">After Germany surrendered on 7 May 1945, <strong>Tuesday 8 May 1945</strong> was declared <strong>Victory in Europe (VE) Day</strong>. At 3:00pm, Prime Minister <strong>Winston Churchill</strong> announced on BBC radio that the war in Europe was won, and King George VI waved from Buckingham Palace balcony.<br><br>Neighbours tore down blackout curtains and shared saved ration coupons for children’s street parties. Yet over <strong>450,000 British lives</strong> had been lost, fighting continued in Asia until <strong>VJ Day (15 August 1945)</strong>, and rationing lasted until <strong>1954</strong>.</p>
         </div>
       </div>
 
-      <!-- Task 1: Primary Evidence Detective -->
-      <div class="task-card-expand p1-task1">
+      <div class="task-card p1-task1">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            Task 1: Artifact Detective • The Bomb-Damaged Street Party
-          </span>
+          <span class="task-num-title">Task 1: VE Day Photo Detective • Joy Amid Bomb Rubble</span>
           <span class="task-tag">Primary Evidence</span>
         </div>
         <div class="artifact-detective-grid">
           <div class="artifact-container">
-            <img src="ve_day_children_table_1945.jpg" class="artifact-img" alt="Source B (Archival Photograph)">
-            <p class="artifact-caption"><strong>Source B (Archival Photograph):</strong> Two young girls wave Union flags amidst the bomb rubble and ruined brickwork of Battersea, London, on VE Day, 8 May 1945. (Imperial War Museum HU 49414)</p>
+            <img src="../assets/ve_day_children_table_1945.jpg" class="artifact-img" alt="Source B">
+            <p class="artifact-caption"><strong>Source B (Photograph, May 1945):</strong> Children smiling at a neighbourhood VE Day street party table decorated with flags.</p>
           </div>
           <div class="detective-questions">
             <div class="q-block">
-              <p class="q-item">1. Look closely at Source B. Notice the rubble and ruined brickwork behind the children. What does this contrast between destruction and celebration tell us about civilian resilience?</p>
-              <div class="ruled-handwriting-lines">
+              <p class="q-item">1. Look closely at Sources A and B. How did ordinary streets and families celebrate peace in Europe on Tuesday 8 May 1945?</p>
+              <div class="ruled-lines-box">
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
               </div>
             </div>
             <div class="q-block">
-              <p class="q-item">2. Families saved sugar, margarine, and jam coupons for months to bake treats for this single afternoon. Why was giving children a street party so important to British mothers?</p>
-              <div class="ruled-handwriting-lines">
+              <p class="q-item">2. Why were many VE Day street parties held right beside bomb-damaged houses, and how could neighbours host parties while food was still rationed?</p>
+              <div class="ruled-lines-box">
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
@@ -754,44 +907,50 @@
         </div>
       </div>
 
-      <!-- Task 2: Active Chronological Challenge -->
-      <div class="task-card-expand p1-task2">
+      <div class="task-card p1-task2 last">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Task 2: Active Chronological Challenge • 8 May 1945: The Day Peace Arrived
-          </span>
-          <span class="task-tag">Chronological Understanding</span>
+          <span class="task-num-title">Task 2: Peace & Rebuilding Timeline • 1945 to 1954</span>
+          <span class="task-tag">Chronology</span>
         </div>
         <div class="timeline-3col">
+          
           <div class="timeline-step-card">
-            <span class="step-badge">STAGE 1 • 3:00 PM</span>
-            <span class="step-title">Churchill's Broadcast</span>
-            <p class="step-desc">Crowds gather around wireless sets in silence to hear Churchill proclaim: "The German war is at an end!"</p>
-            <div class="step-response-box">
-              <p style="font-size:6.8pt; font-weight:700; color:#1e3a8a; margin-bottom:0.5mm;">What emotions would sweep through a family hearing the prime minister utter those words?</p>
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 1 • 8 MAY 1945</div>
+              <div class="step-title">Victory in Europe (VE Day)</div>
+              <p class="step-desc">Churchill broadcasts at 3:00pm; streetlamps shine again and crowds cheer at Buckingham Palace.</p>
+            </div>
+            <p class="step-prompt">Why was switching streetlamps back on after six dark years magical for children?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
           </div>
           <div class="timeline-step-card">
-            <span class="step-badge">STAGE 2 • 6:00 PM</span>
-            <span class="step-title">The Street Party Feasts</span>
-            <p class="step-desc">Tables dragged onto pavements. Pianos wheeled out. Neighbours sing wartime songs and dance the conga.</p>
-            <div class="step-response-box">
-              <p style="font-size:6.8pt; font-weight:700; color:#1e3a8a; margin-bottom:0.5mm;">Why did neighbours who had sheltered together through the Blitz share such unbreakable bonds?</p>
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 2 • 15 AUG 1945</div>
+              <div class="step-title">VJ Day Ends World War II</div>
+              <p class="step-desc">Three months after VE Day, fighting in Asia and the Pacific finally ends on Victory over Japan Day.</p>
+            </div>
+            <p class="step-prompt">Why did families with soldiers in Asia still worry on VE Day in May?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
           </div>
           <div class="timeline-step-card">
-            <span class="step-badge">STAGE 3 • 10:00 PM</span>
-            <span class="step-title">Floodlights and Bonfires</span>
-            <p class="step-desc">Blackout ended. For the first time in six years, bright floodlights illuminate St Paul's Cathedral and Big Ben.</p>
-            <div class="step-response-box">
-              <p style="font-size:6.8pt; font-weight:700; color:#1e3a8a; margin-bottom:0.5mm;">Why was switching on the lights across Britain the most powerful symbol of victory?</p>
+            <div style="flex-shrink:0;">
+              <div class="step-badge">STEP 3 • 1945–1954</div>
+              <div class="step-title">Rebuilding & Remembrance</div>
+              <p class="step-desc">New homes built, the National Health Service (NHS) opens in 1948, and rationing ends in July 1954.</p>
+            </div>
+            <p class="step-prompt">Why did rebuilding bombed cities and ending rationing take nine years?</p>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -800,169 +959,162 @@
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="sheet-footer">
-        <span>The History Revision Hub • KS2 History Exercise Book Series</span>
-        <span>LESSON 10 • Sheet 1 of 2 (Trim along dashed outer cutline)</span>
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 10 OF 11 • Sheet 1 of 2</span>
       </div>
     </div>
   </div>
 
   <!-- ========================================================
-       PAGE 2: INQUIRY TASKS & MASTER SYNTHESIS (SHEET 2)
+       PAGE 2: INVESTIGATION, PERSPECTIVES & CHALLENGE (SHEET 2)
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-2">
     <div class="exercise-book-cutline">
       <div class="cut-indicator">
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
-        Cut along dashed line to stick neatly into exercise book
+        ✂ Cut along dashed line to stick neatly into exercise book
       </div>
 
-      <!-- Masthead -->
       <div class="sheet-masthead">
         <div class="brand-left">
-          <span class="brand-badge">KS2 ACTIVITY</span>
-          <span class="brand-text">Peace, Rebuilding & Remembrance</span>
+          <span class="brand-badge">KS2 ENQUIRY</span>
+          <span class="brand-text">8 May 1945 Street Parties, Mixed Emotions & Post-War Rebuilding</span>
         </div>
         <div class="student-fields">
           <div class="field-item">Name: <span class="field-line"></span></div>
-          <div class="field-item">LESSON 10 • Sheet 2</div>
+          <div class="field-item">LESSON 10 • Sheet 2 of 2</div>
         </div>
       </div>
 
-      <!-- Task 3: Visual Investigation & Tactile Ledger -->
-      <div class="task-card-expand p2-task3">
+      <div class="task-card p2-task3">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            Task 3: Visual Investigation • VE Day Street Party Planner & Community Table Canvas
-          </span>
-          <span class="task-tag">Tactile Investigation</span>
+          <span class="task-num-title">Task 3: "Laughter Through Tears" & Why We Remember</span>
+          <span class="task-tag">Historical Reflection</span>
         </div>
         <div class="visual-investigation-grid">
           <div class="canvas-drawing-col">
-            <div class="drawing-outer-shell">
-              
-      <div style="width:52mm; height:50mm; border:2px solid #1e3a8a; border-radius:5px; background:#eff6ff; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:2mm; box-shadow:inset 0 0 8px rgba(0,0,0,0.05);">
-        <div style="width:100%; display:flex; justify-content:space-around; border-bottom:1.5px dashed #dc2626; padding-bottom:1mm;">
-          <span style="font-size:7pt;">🚩</span><span style="font-size:7pt;">🇬🇧</span><span style="font-size:7pt;">🚩</span><span style="font-size:7pt;">🇬🇧</span><span style="font-size:7pt;">🚩</span>
+            
+        <div class="craft-mini-box" style="background:#eff6ff; border:2px solid #1d4ed8;">
+          <div style="font-size:8pt; font-weight:800; color:#1e3a8a; text-transform:uppercase; margin-bottom:1.5mm; text-align:center;">Key Dates to Remember</div>
+          <div style="font-size:7.5pt; line-height:1.62; color:#1e293b;">
+            • <strong>8 May 1945:</strong> VE Day (Peace in Europe)<br>
+            • <strong>15 Aug 1945:</strong> VJ Day (End of WW2)<br>
+            • <strong>450,000+:</strong> UK military &amp; civilian deaths<br>
+            • <strong>July 1948:</strong> NHS founded for free care<br>
+            • <strong>July 1954:</strong> Food rationing finally ends
+          </div>
         </div>
-        <div style="width:42mm; height:24mm; border:1.8px solid #94a3b8; background:#ffffff; border-radius:3px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1.5mm; font-size:6.2pt; color:#1e3a8a; font-weight:800; text-align:center;">
-          <span>COMMUNITY PEACE TABLE</span>
-          <span style="font-size:5.2pt; color:#64748b; font-weight:600; margin-top:1mm;">Sandwiches • Jelly • Scones • Tea</span>
-          <span style="font-size:5.2pt; color:#b91c1c; font-weight:700; margin-top:1mm;">WELCOME HOME HEROES</span>
-        </div>
-        <div style="font-size:5.6pt; font-weight:700; color:#1e3a8a; text-align:center;">STREET CELEBRATION • 8 MAY 1945</div>
-      </div>
-    
-            </div>
-            <p class="canvas-subcaption">Draw your community bunting flags and celebration table arrangement above</p>
+            <p class="canvas-subcaption">Commonwealth volunteers from India, the Caribbean, Africa, Canada & ANZAC also served</p>
           </div>
           <div class="investigation-ledger">
+            
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>1. The Pooled Ration Sweet Feast</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">1. Sharing Saved Sugar, Jam & Margarine Coupons</div>
+                <p class="ledger-reason-prompt">How did neighbours work together so every child had cake and sandwiches?</p>
               </div>
-              <p class="ledger-reason-prompt">How did children sharing saved chocolate and homemade jam tarts create a festive celebration?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>2. The Empty Chairs of Remembrance</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">2. Empty Chairs at Family Tables</div>
+                <p class="ledger-reason-prompt">Why did many adults feel quiet grief alongside relief on 8 May 1945?</p>
               </div>
-              <p class="ledger-reason-prompt">Why did many mothers and soldiers feel quiet tears of sorrow amidst the cheering crowds?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>3. Continuing Post-War Rationing</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">3. Rebuilding Bombed Homes & Founding the NHS (1948)</div>
+                <p class="ledger-reason-prompt">How did wartime teamwork inspire Britain to build a fairer peacetime society?</p>
               </div>
-              <p class="ledger-reason-prompt">Why did food and clothing rationing have to continue for years after 1945 across Britain?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
             <div class="ledger-row">
-              <div class="ledger-item-line">
-                <span>4. Rebuilding Bomb-Damaged Britain</span>
+              <div style="flex-shrink:0;">
+                <div class="ledger-item-title">4. Poppies & the Cenotaph on Remembrance Sunday</div>
+                <p class="ledger-reason-prompt">Why do communities across Britain and the Commonwealth still remember today?</p>
               </div>
-              <p class="ledger-reason-prompt">With 1 in 3 homes damaged, how did Britain begin building new prefabricated houses and schools?</p>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
+              <div class="ruled-lines-box">
+                <div class="ruled-line"></div>
+                <div class="ruled-line"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Task 4: Thinking Heads -->
-      <div class="task-card-expand p2-task4">
+      <div class="task-card p2-task4">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Task 4: "Thinking Heads" • Contrasting Historical Perspectives
-          </span>
-          <span class="task-tag">Contrasting Perspectives</span>
+          <span class="task-num-title">Task 4: Thinking Heads • Two Historical Viewpoints</span>
+          <span class="task-tag">Perspectives</span>
         </div>
         <div class="thinking-heads-grid">
           <div class="head-card">
-            <div class="head-title-row">
-              <span class="head-badge">1</span>
-              <span class="head-name">10-Year-Old London Child at the Party</span>
-            </div>
-            <div class="thought-bubble">
-              <p class="thought-prompt">Prompt: You have lived almost your entire memory in blackout, sirens, and fear. How does it feel to see the street bathed in bright light and laughter?</p>
-              <div class="bubble-lines">
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">1</span>
+                <span class="head-name">Young Child Staying Up Late at a VE Day Street Party</span>
               </div>
+              <p class="thought-prompt">What is it like seeing bright streetlamps, bonfires, and bunting for the first time without fearing the air raid siren?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
           <div class="head-card">
-            <div class="head-title-row">
-              <span class="head-badge">2</span>
-              <span class="head-name">Returning Soldier Surveying His Street</span>
-            </div>
-            <div class="thought-bubble">
-              <p class="thought-prompt">Prompt: What mixed feelings of profound joy and quiet sorrow do you feel looking at your bomb-damaged neighbourhood and missing friends?</p>
-              <div class="bubble-lines">
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
-                <div class="bubble-line"></div>
+            <div style="flex-shrink:0;">
+              <div class="head-title-row">
+                <span class="head-badge">2</span>
+                <span class="head-name">Parent Smiling at the Party While Remembering Lost Loved Ones</span>
               </div>
+              <p class="thought-prompt">Why did people call VE Day a day of "laughter through tears" as you watch the children celebrate?</p>
+            </div>
+            <div class="ruled-lines-box">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Task 5: Mission Challenge -->
-      <div class="task-card-expand p2-task5">
+      <div class="task-card p2-task5 last">
         <div class="task-header">
-          <span class="task-num-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-            Task 5: Mission Challenge • Lessons for Tomorrow
-          </span>
-          <span class="task-tag">Historian Challenge</span>
+          <span class="task-num-title">Task 5: Historian Mission Challenge • Answering the Enquiry</span>
+          <span class="task-tag">Extended Writing</span>
         </div>
         <div class="synthesis-container">
-          <p class="synthesis-header">Big Question: Why is it vital that we continue to remember the sacrifices, courage, and lessons of the Second World War generation today?</p>
-          <div class="bubble-lines" style="flex:1;">
-            <div class="bubble-line"></div>
-            <div class="bubble-line"></div>
-            <div class="bubble-line"></div>
-            <div class="bubble-line"></div>
+          <p class="synthesis-header">Enquiry Answer: Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?</p>
+          <div class="ruled-lines-box">
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
           </div>
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="sheet-footer">
-        <span>The History Revision Hub • KS2 History Exercise Book Series</span>
-        <span>LESSON 10 • Sheet 2 of 2 (Trim along dashed outer cutline)</span>
+        <span>The History Revision Hub • KS2 World War II Enquiry Series</span>
+        <span>LESSON 10 OF 11 • Sheet 2 of 2</span>
       </div>
     </div>
   </div>
+
 
 </body>
 </html>

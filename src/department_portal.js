@@ -136,12 +136,12 @@ const UNIT_HEALTH_DATA = [
     year: 'Key Stage 2',
     ks: 'Primary KS2',
     uid: 'ks2_ww2',
-    name: 'WWII & The Home Front (1939–1945)',
-    enquiries: '10 Enquiries',
-    hours: '16 Hours',
-    workbookText: '24-Page Pupil Workbook',
-    textbookText: '24-Page Master Textbook',
-    mapText: 'Evacuation & Kindertransport Atlas',
+    name: 'WWII & The Home Front (1933–1945)',
+    enquiries: '11 Enquiries',
+    hours: '11–16 Hours',
+    workbookText: '28-Page Pupil Workbook',
+    textbookText: '20-Page Master Textbook',
+    mapText: 'Evacuation, Kindertransport & Blitz Maps',
     workbookPdf: '/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf',
     textbookPdf: '/pdfs/ks2_ww2_textbook.pdf',
   },
@@ -758,10 +758,10 @@ function renderGovernanceTab(container) {
               <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">KS2 Teacher Hub</h4>
             </div>
             <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
-              Primary phase companion hub: WWII Home Front 10-enquiry unit, Kindertransport atlas, and KS2 pupil workbooks.
+              Primary phase companion hub: WWII Home Front 11-enquiry unit, Kindertransport atlas, and KS2 pupil workbooks.
             </p>
           </div>
-          <a href="/units/ks2_ww2/index.html" target="_blank" style="width: 100%; padding: 8px 12px; background: #4f46e5; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box;">
+          <a href="/ks2_portal.html" target="_blank" style="width: 100%; padding: 8px 12px; background: #4f46e5; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box;">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch KS2 Hub
           </a>
         </div>

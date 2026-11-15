@@ -2,8 +2,8 @@
   "auditedAt": "2026-10-25T16:23:53.455Z",
   "platform": "The History Revision Hub",
   "totalUnits": 19,
-  "totalSources": 576,
-  "cleanSources": 576,
+  "totalSources": 561,
+  "cleanSources": 561,
   "flaggedSources": 0,
   "globalAccuracyPct": 100,
   "units": {
@@ -2521,16 +2521,16 @@
       ]
     },
     "ks2_ww2": {
-      "title": "KS2: World War II & The Home Front (1939–1945)",
-      "totalSources": 68,
-      "cleanSources": 68,
+      "title": "KS2: World War II & The Home Front (1933–1945)",
+      "totalSources": 53,
+      "cleanSources": 53,
       "flaggedSources": 0,
-      "resolvedSources": 0,
+      "resolvedSources": 53,
       "accuracyPct": 100,
       "sources": [
         {
           "letter": "A",
-          "title": "Source A (Photograph): Schoolchildren in a Gas Mask Drill (1941)",
+          "title": "Source A: Schoolchildren in a Playground Gas Mask Drill (1941)",
           "image": "/units/ks2_ww2/assets/gas_masks_children_1939.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2538,7 +2538,7 @@
         },
         {
           "letter": "B",
-          "title": "Source B (Museum Artifact): Civilian Anti-Gas Respirator in Cardboard Carrying Box (1939)",
+          "title": "Source B: British Civilian Rubber Gas Mask and Filter Tin (1939)",
           "image": "/units/ks2_ww2/assets/gas_mask_box_1939.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2546,39 +2546,31 @@
         },
         {
           "letter": "C",
-          "title": "Source C (Photograph): An ARP Warden Reporting for Duty (August 1941)",
+          "title": "Source C: Air Raid Precautions (ARP) Warden Reporting for Duty (1941)",
           "image": "/units/ks2_ww2/assets/arp_warden_duty_1941.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
-          "letter": "A",
-          "title": "Source A (Photograph): Schoolchildren in a Gas Mask Drill (1941)",
-          "image": "/units/ks2_ww2/assets/gas_masks_children_1939.jpg",
+          "letter": "D",
+          "title": "Source D: Ministry of Information Home Front Morale Poster (September 1939)",
+          "image": "/units/ks2_ww2/assets/keep_calm_poster_1939.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
-          "letter": "B",
-          "title": "Source B (Museum Artifact): Civilian Anti-Gas Respirator in Cardboard Carrying Box (1939)",
-          "image": "/units/ks2_ww2/assets/gas_mask_box_1939.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Photograph): An ARP Warden Reporting for Duty (August 1941)",
-          "image": "/units/ks2_ww2/assets/arp_warden_duty_1941.jpg",
+          "letter": "E",
+          "title": "Source E: Slotted Blackout Headlamp Mask on a London Vehicle (1941)",
+          "image": "/units/ks2_ww2/assets/blackout_bus_london_1941.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "A",
-          "title": "Source A (Photograph): Police Officer Checking an Evacuee's Label (September 1939)",
+          "title": "Source A: London Police Sergeant Checking Evacuee Luggage Label (1939)",
           "image": "/units/ks2_ww2/assets/evacuees_railway_1939.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2586,7 +2578,7 @@
         },
         {
           "letter": "B",
-          "title": "Source B (Photograph): London Schoolchildren with Luggage Labels (1940)",
+          "title": "Source B: London Schoolchildren Marching to the Station with Evacuation Labels (1 September 1939)",
           "image": "/units/ks2_ww2/assets/evacuee_luggage_tag.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2594,39 +2586,55 @@
         },
         {
           "letter": "C",
-          "title": "Source C (Photograph): Evacuees Arriving in Rural Devon (September 1939)",
+          "title": "Source C: Evacuees Arriving at Brent Railway Station in Rural Devon (1939)",
           "image": "/units/ks2_ww2/assets/evacuees_devon_arrival.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
+          "letter": "D",
+          "title": "Source D: Large Evacuee Group Walking in Line along Railway Platform (1940)",
+          "image": "/units/ks2_ww2/assets/evacuees_station_1940_hu36871.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "E",
+          "title": "Source E: Ministry of Health Poster: 'Don't Do It, Mother — Leave the Children Where They Are' (1939)",
+          "image": "/units/ks2_ww2/assets/evacuation_poster_dont_do_it_mother_1939.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
           "letter": "A",
-          "title": "Source A (Photograph): Police Officer Checking an Evacuee's Label (September 1939)",
-          "image": "/units/ks2_ww2/assets/evacuees_railway_1939.jpg",
+          "title": "Source A: Jewish Youth Football Team in Pre-War Germany (c. 1935)",
+          "image": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "B",
-          "title": "Source B (Photograph): London Schoolchildren with Luggage Labels (1940)",
-          "image": "/units/ks2_ww2/assets/evacuee_luggage_tag.jpg",
+          "title": "Source B: Six Jewish Schoolgirls Holding First-Day 'Schultüten' in Berlin (Early 1930s)",
+          "image": "/units/ks2_ww2/assets/jewish_schoolchildren_berlin_schultuete_1930s.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "C",
-          "title": "Source C (Photograph): Evacuees Arriving in Rural Devon (September 1939)",
-          "image": "/units/ks2_ww2/assets/evacuees_devon_arrival.jpg",
+          "title": "Source C: Anti-Jewish Exclusion Sign in Germany: \"Jews Are Not Served Here\" (c. 1935–1937)",
+          "image": "/units/ks2_ww2/assets/anti_jewish_sign_germany_1935.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "A",
-          "title": "Source A (Photograph): Refugee Children Arriving on the Kindertransport (1939)",
+          "title": "Source A: Kindertransport Refugees Arriving at Harwich Port (1938)",
           "image": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2634,7 +2642,7 @@
         },
         {
           "letter": "B",
-          "title": "Source B (Photograph): Vera Löwyová with her English Doll in Holland (May 1939)",
+          "title": "Source B: Vera Löwyová Holding Her Porcelain Doll at the Dutch Border (1939)",
           "image": "/units/ks2_ww2/assets/vera_holland_doll.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2642,279 +2650,31 @@
         },
         {
           "letter": "C",
-          "title": "Source C (Historical Document): Vera Löwyová's Kindertransport Passport (1939)",
+          "title": "Source C: Vera Löwyová's Czechoslovak Republic Passport with Nazi Stamp (1939)",
           "image": "/units/ks2_ww2/assets/vera_passport_1939.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
-          "letter": "A",
-          "title": "Source A (Photograph): Czech Refugee Children Departing Prague Airport on the Kindertransport (12 January 1939)",
+          "letter": "D",
+          "title": "Source D: Refugee Children Boarding a Chartered Kindertransport Flight in Prague (1939)",
           "image": "/units/ks2_ww2/assets/kindertransport_prague_airport_1939.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
-          "letter": "B",
-          "title": "Source B (Photograph): Vera Löwyová with her English Doll in Holland (May 1939)",
-          "image": "/units/ks2_ww2/assets/vera_holland_doll.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Historical Document): Vera Löwyová's Kindertransport Passport (1939)",
-          "image": "/units/ks2_ww2/assets/vera_passport_1939.jpg",
+          "letter": "E",
+          "title": "Source E: Vera's Childhood Keepsakes: Miniature Prayer Book, Rosary & Wooden Heart from Klatovy (1939)",
+          "image": "/units/ks2_ww2/assets/vera_keepsakes.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "A",
-          "title": "Source A (Cartographic Document): London Region Bomb Density Census Map (1940–1941)",
-          "image": "/units/ks2_ww2/assets/blitz_targets_map.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Photograph): Alan and Doris Entering their Anderson Shelter (1940)",
-          "image": "/units/ks2_ww2/assets/anderson_shelter_family.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Photograph): Shelterers Sleeping on Tube Station Bunks (1940)",
-          "image": "/units/ks2_ww2/assets/tube_station_shelter_1940.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Cartographic Document): London Region Bomb Density Census Map (1940–1941)",
-          "image": "/units/ks2_ww2/assets/blitz_targets_map.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Photograph): Alan and Doris Entering their Anderson Shelter (1940)",
-          "image": "/units/ks2_ww2/assets/anderson_shelter_family.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Photograph): Shelterers Sleeping on Tube Station Bunks (1940)",
-          "image": "/units/ks2_ww2/assets/tube_station_shelter_1940.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Cartographic Map): Battle of the Atlantic: Convoy Lifelines & U-Boat Warfare",
-          "image": "/units/ks2_ww2/assets/atlantic_lifeline_map.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Historical Document): Ministry of Food Child's Ration Book (1940)",
-          "image": "/units/ks2_ww2/assets/ration_book_coupons_1940.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Wartime Poster): Dig for Victory: Young Boy Marching to the Garden (1940)",
-          "image": "/units/ks2_ww2/assets/dig_for_victory_poster.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Cartographic Map): Battle of the Atlantic: Convoy Lifelines & U-Boat Warfare",
-          "image": "/units/ks2_ww2/assets/atlantic_lifeline_map.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Historical Document): Ministry of Food Child's Ration Book (1940)",
-          "image": "/units/ks2_ww2/assets/ration_book_coupons_1940.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Wartime Poster): Dig for Victory: Young Boy Marching to the Garden (1940)",
-          "image": "/units/ks2_ww2/assets/dig_for_victory_poster.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Wartime Painting): Land Army Girls Resting at Harvest (1941)",
-          "image": "/units/ks2_ww2/assets/womens_land_army_harvest.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Wartime Poster): Come and Help with the Victory Harvest (1941)",
-          "image": "/units/ks2_ww2/assets/land_army_poster_1941.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Colour Photograph): A Woman Ferry Pilot of the Air Transport Auxiliary (1942)",
-          "image": "/units/ks2_ww2/assets/ata_women_pilots_1942.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Wartime Painting): Land Army Girls Resting at Harvest (1941)",
-          "image": "/units/ks2_ww2/assets/womens_land_army_harvest.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Wartime Poster): Come and Help with the Victory Harvest (1941)",
-          "image": "/units/ks2_ww2/assets/land_army_poster_1941.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Colour Photograph): A Woman Ferry Pilot of the Air Transport Auxiliary (1942)",
-          "image": "/units/ks2_ww2/assets/ata_women_pilots_1942.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Photograph): Boys' Sports Club Football Team (1935)",
-          "image": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Photograph): Pupils with First-Day School Cones in Berlin (1930s)",
-          "image": "/units/ks2_ww2/assets/jewish_schoolchildren_berlin_schultuete_1930s.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Historical Document): Statutory Decree Banning Jewish Pupils from State Schools (15 November 1938)",
-          "image": "/units/ks2_ww2/assets/school_ban_decree_november_1938.png",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Photograph): Boys' Sports Club Football Team (1935)",
-          "image": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Photograph): Pupils with First-Day School Cones in Berlin (1930s)",
-          "image": "/units/ks2_ww2/assets/jewish_schoolchildren_berlin_schultuete_1930s.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Historical Document): Statutory Decree Banning Jewish Pupils from State Schools (15 November 1938)",
-          "image": "/units/ks2_ww2/assets/school_ban_decree_november_1938.png",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Museum Artifact): Naval Enigma M4 Cipher Machine",
-          "image": "/units/ks2_ww2/assets/enigma_machine_bletchley.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Museum Artifact): The Turing-Welchman Bombe Machine at Hut 11",
-          "image": "/units/ks2_ww2/assets/bombe_bletchley_park.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Historical Photograph): Women Codebreakers at Work in Bletchley Park (c. 1943)",
-          "image": "/units/ks2_ww2/assets/bletchley_park_wrens.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Museum Artifact): Naval Enigma M4 Cipher Machine",
-          "image": "/units/ks2_ww2/assets/enigma_machine_bletchley.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Museum Artifact): The Turing-Welchman Bombe Machine at Hut 11",
-          "image": "/units/ks2_ww2/assets/bombe_bletchley_park.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Historical Photograph): Women Codebreakers at Work in Bletchley Park (c. 1943)",
-          "image": "/units/ks2_ww2/assets/bletchley_park_wrens.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "A",
-          "title": "Source A (Photograph): Nicholas Winton Holding a Young Czech Refugee Child (1939)",
+          "title": "Source A: Nicholas Winton Holding a Young Refugee Child in Prague (1939)",
           "image": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2922,7 +2682,7 @@
         },
         {
           "letter": "B",
-          "title": "Source B (Photograph): Trevor Chadwick Holding an Infant Refugee in Prague (1939)",
+          "title": "Source B: Volunteer Rescuer Trevor Chadwick Holding an Infant Refugee in Prague (1939)",
           "image": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2930,39 +2690,191 @@
         },
         {
           "letter": "C",
-          "title": "Source C (Historical Document): Nicholas Winton's Refugee Children Scrapbook Album (1939)",
+          "title": "Source C: Nicholas Winton's Scrapbook of Children's Photographs (1939)",
           "image": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
+          "letter": "D",
+          "title": "Source D: Newspaper Clipping in Winton's Scrapbook Appealing for British Foster Homes (1939)",
+          "image": "/units/ks2_ww2/assets/nicky_scrapbook_foster_cards.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "E",
+          "title": "Source E: British Committee for Refugees from Czechoslovakia Letterheads in Winton's Scrapbook (1939)",
+          "image": "/units/ks2_ww2/assets/nicky_scrapbook_transport_list.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
           "letter": "A",
-          "title": "Source A (Photograph): Nicholas Winton Holding a Young Czech Refugee Child (1939)",
-          "image": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
+          "title": "Source A: Ministry of Home Security Map: 'Density of Bombing — London Region (Most Secret)' (1941)",
+          "image": "/units/ks2_ww2/assets/blitz_targets_map.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "B",
-          "title": "Source B (Photograph): Trevor Chadwick Holding an Infant Refugee in Prague (1939)",
-          "image": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
+          "title": "Source B: Family Stepping into Corrugated Steel Garden Anderson Shelter (1940)",
+          "image": "/units/ks2_ww2/assets/anderson_shelter_family.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "C",
-          "title": "Source C (Historical Document): Nicholas Winton's Refugee Children Scrapbook Album (1939)",
-          "image": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
+          "title": "Source C: Londoners Sleeping on Curved Platforms of Underground Tube Station (1940)",
+          "image": "/units/ks2_ww2/assets/tube_station_shelter_1940.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "D",
+          "title": "Source D: Bomb-Damaged Peter Robinson Department Store at Oxford Circus, London (September 1940)",
+          "image": "/units/ks2_ww2/assets/blitz_bomb_damage_london_1940.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "E",
+          "title": "Source E: Women's Voluntary Services (WVS) Mobile Canteen Serving Tea (1941)",
+          "image": "/units/ks2_ww2/assets/wvs_mobile_canteen_blitz_1941.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "A",
-          "title": "Source A (Photograph): A London Street Party on VE Day (8 May 1945)",
+          "title": "Source A: Royal Navy Escort Destroyer Guarding an Atlantic Food Convoy (1943)",
+          "image": "/units/ks2_ww2/assets/atlantic_convoy_iwm_1943.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "B",
+          "title": "Source B: Ministry of Food Child's Ration Book (1940)",
+          "image": "/units/ks2_ww2/assets/ration_book_coupons_1940.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "C",
+          "title": "Source C: 'Dig for Victory' Poster Showing a Young Gardener with Hoe and Spade (c. 1942)",
+          "image": "/units/ks2_ww2/assets/dig_for_victory_poster.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "D",
+          "title": "Source D: Ministry of Food 'Our Food Today' Official Wartime Recipe Leaflet (1941)",
+          "image": "/units/ks2_ww2/assets/ministry_of_food_wartime_guide_1941.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "E",
+          "title": "Source E: Ministry of Food 'Potato Pete' Cartoon Propaganda Poster (1942)",
+          "image": "/units/ks2_ww2/assets/potato_pete_rationing_poster.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "A",
+          "title": "Source A: War Artist Painting of 'Land Girls' Resting During the Harvest (1941)",
+          "image": "/units/ks2_ww2/assets/womens_land_army_harvest.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "B",
+          "title": "Source B: Wartime Recruitment Poster: 'Come and Help with the Victory Harvest' (c. 1942)",
+          "image": "/units/ks2_ww2/assets/land_army_poster_1941.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "C",
+          "title": "Source C: Air Transport Auxiliary (ATA) Ferry Pilot Lettice Curtis in the Cockpit (c. 1942)",
+          "image": "/units/ks2_ww2/assets/ata_women_pilots_1942.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "D",
+          "title": "Source D: ATA Pilot Maureen Dunlop on the Wing of a Fleet Air Arm Barracuda (1944)",
+          "image": "/units/ks2_ww2/assets/ata_pilot_maureen_dunlop.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "E",
+          "title": "Source E: Princess Elizabeth in Auxiliary Territorial Service (ATS) Mechanic Overalls (April 1945)",
+          "image": "/units/ks2_ww2/assets/princess_elizabeth_ats_1945.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "A",
+          "title": "Source A: Three-Rotor German Enigma Cipher Machine in Its Wooden Case (Bletchley Park)",
+          "image": "/units/ks2_ww2/assets/enigma_machine_bletchley.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "B",
+          "title": "Source B: The Turing-Welchman Bombe Decryption Machine in Hut 11 (Bletchley Park)",
+          "image": "/units/ks2_ww2/assets/bombe_bletchley_park.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "C",
+          "title": "Source C: Men and Women Intelligence Staff Sorting Intercepted Messages at Bletchley Park (c. 1943)",
+          "image": "/units/ks2_ww2/assets/bletchley_park_wrens.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "D",
+          "title": "Source D: WRNS Operators Working Colossus — The World's First Programmable Electronic Computer (1944)",
+          "image": "/units/ks2_ww2/assets/colossus_computer_bletchley.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "E",
+          "title": "Source E: Close-Up of Three Enigma Cipher Rotors and Their Alphabet Rings",
+          "image": "/units/ks2_ww2/assets/enigma_rotors_detail_bletchley.jpg",
+          "status": "CLEAN",
+          "issueType": "",
+          "issueDesc": ""
+        },
+        {
+          "letter": "A",
+          "title": "Source A: Jubilant VE Day Crowds Packed Around Nelson's Column in Trafalgar Square (8 May 1945)",
           "image": "/units/ks2_ww2/assets/ve_day_street_party_1945.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2970,7 +2882,7 @@
         },
         {
           "letter": "B",
-          "title": "Source B (Photograph): Young Girls Waving Flags on Bomb Rubble (May 1945)",
+          "title": "Source B: Two Young Girls Waving Union Flags Amidst Bomb Rubble in Battersea (1945)",
           "image": "/units/ks2_ww2/assets/ve_day_children_table_1945.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -2978,39 +2890,31 @@
         },
         {
           "letter": "C",
-          "title": "Source C (Photograph): The Cenotaph in Whitehall (National Memorial of Remembrance)",
+          "title": "Source C: Unveiling of the Cenotaph War Memorial on Whitehall, London (11 November 1920)",
           "image": "/units/ks2_ww2/assets/cenotaph_whitehall_remembrance.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
-          "letter": "A",
-          "title": "Source A (Photograph): A London Street Party on VE Day (8 May 1945)",
-          "image": "/units/ks2_ww2/assets/ve_day_street_party_1945.jpg",
+          "letter": "D",
+          "title": "Source D: Prime Minister Winston Churchill Broadcasting to the Nation on VE Day (1945)",
+          "image": "/units/ks2_ww2/assets/churchill_ve_day_broadcast_1945.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
-          "letter": "B",
-          "title": "Source B (Photograph): Young Girls Waving Flags on Bomb Rubble (May 1945)",
-          "image": "/units/ks2_ww2/assets/ve_day_children_table_1945.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Photograph): The Cenotaph in Whitehall (National Memorial of Remembrance)",
-          "image": "/units/ks2_ww2/assets/cenotaph_whitehall_remembrance.jpg",
+          "letter": "E",
+          "title": "Source E: Cheering VE Day Crowds Around a London Double-Decker Bus on Whitehall (8 May 1945)",
+          "image": "/units/ks2_ww2/assets/ve_day_trafalgar_square_1945.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
           "letter": "A",
-          "title": "Source A (Photograph): The Mercy Airlift Departure at Prague (14 August 1945)",
+          "title": "Source A: Child Survivors Arriving with Chalk-Numbered Suitcases at Carlisle RAF Airfield (August 1945)",
           "image": "/units/ks2_ww2/assets/windermere_children_airlift_prague_1945.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -3018,7 +2922,7 @@
         },
         {
           "letter": "B",
-          "title": "Source B (Photograph): English Language & Rehabilitation Class at Calgarth (Autumn 1945)",
+          "title": "Source B: English Language & Rehabilitation Lesson at Calgarth Estate (1945)",
           "image": "/units/ks2_ww2/assets/windermere_children_english_lesson_1945.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -3026,7 +2930,7 @@
         },
         {
           "letter": "C",
-          "title": "Source C (Literature & Evidence): Cover of 'After the War' by Tom Palmer",
+          "title": "Source C: Cover Artwork: 'After the War: From Auschwitz to Ambleside' by Tom Palmer",
           "image": "/units/ks2_ww2/assets/tom_palmer_after_the_war.jpg",
           "status": "CLEAN",
           "issueType": "",
@@ -3034,40 +2938,16 @@
         },
         {
           "letter": "D",
-          "title": "Source D (Photograph): The Younger Survivors Outside the Calgarth Chalets (Summer 1945)",
-          "image": "/units/ks2_ww2/assets/windermere_children_calgarth_chalets_1945.jpg",
+          "title": "Source D: Ambleside & Waterhead on Lake Windermere — The Lakeland Landscape of Recovery",
+          "image": "/units/ks2_ww2/assets/ambleside_windermere_fells.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
         },
         {
-          "letter": "A",
-          "title": "Source A (Photograph): The Mercy Airlift Departure at Prague (14 August 1945)",
-          "image": "/units/ks2_ww2/assets/windermere_children_airlift_prague_1945.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "B",
-          "title": "Source B (Photograph): English Language & Rehabilitation Class at Calgarth (Autumn 1945)",
-          "image": "/units/ks2_ww2/assets/windermere_children_english_lesson_1945.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "C",
-          "title": "Source C (Literature & Evidence): Cover of 'After the War' by Tom Palmer",
-          "image": "/units/ks2_ww2/assets/tom_palmer_after_the_war.jpg",
-          "status": "CLEAN",
-          "issueType": "",
-          "issueDesc": ""
-        },
-        {
-          "letter": "D",
-          "title": "Source D (Photograph): The Younger Survivors Outside the Calgarth Chalets (Summer 1945)",
-          "image": "/units/ks2_ww2/assets/windermere_children_calgarth_chalets_1945.jpg",
+          "letter": "E",
+          "title": "Source E: RAF Transport Command Short Stirling Aircraft Airlifting Survivors from Prague (1945)",
+          "image": "/units/ks2_ww2/assets/windermere_raf_stirling_airlift_1945.jpg",
           "status": "CLEAN",
           "issueType": "",
           "issueDesc": ""
