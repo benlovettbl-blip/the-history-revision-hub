@@ -1,397 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edexcel GCSE June 2026 Live Standardised Paper (1HI0/11) - Mark Scheme - Pearson Edexcel GCSE History</title>
+  <title>Edexcel GCSE June 2026 Live Standardised Paper (1HI0/11) — Teacher Mark Scheme &amp; Grade 8/9 Exemplars — Pearson Edexcel GCSE History (1HI0/11)</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
-    
-    * {
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-    }
-    
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f0f0f0;
-      color: #000;
-    }
-
-    .page {
-      width: 210mm;
-      min-height: 297mm;
-      background: white;
-      margin: 20mm auto;
-      padding: 20mm;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      position: relative;
-      page-break-after: always;
-    }
-
+    * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { margin: 0; padding: 0; background: #f1f5f9; color: #0f172a; }
+    .page { width: 210mm; min-height: 297mm; background: #ffffff; margin: 16mm auto; padding: 18mm; box-shadow: 0 4px 14px rgba(0,0,0,0.08); page-break-after: always; }
     @media print {
-      body { background: white; }
-      .page {
-        margin: 0;
-        padding: 15mm;
-        box-shadow: none;
-        width: 100%;
-        min-height: 100%;
-        page-break-after: always;
-      }
+      body { background: #ffffff; }
+      .page { margin: 0; padding: 14mm; box-shadow: none; width: 100%; page-break-after: always; }
+      .page:last-of-type { page-break-after: avoid; }
     }
-
-    /* Cover Page Styles */
-    .cover-box {
-      border: 3px solid #000;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 20px;
-    }
-    .candidate-info {
-      display: flex;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-    .input-box {
-      border: 1px solid #000;
-      height: 40px;
-      margin-top: 5px;
-    }
-    .exam-header {
-      border: 2px solid #000;
-      border-radius: 10px;
-      padding: 15px;
-    }
-    h1 { font-size: 24px; margin: 0 0 10px 0; }
-    h2 { font-size: 20px; margin: 0 0 10px 0; }
-    h3 { font-size: 16px; margin: 0 0 10px 0; }
-    
-    .instructions { margin-top: 30px; font-size: 14px; line-height: 1.5; }
-    .instructions ul { padding-left: 20px; }
-    .instructions li { margin-bottom: 5px; }
-
-    /* Question Styles */
-    .section-header {
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-      margin: 30px 0;
-      text-transform: uppercase;
-    }
-    .question-block {
-      margin-bottom: 30px;
-    }
-    .question-text {
-      font-weight: bold;
-      font-size: 15px;
-      margin-bottom: 10px;
-      display: flex;
-    }
-    .question-num {
-      width: 40px;
-      flex-shrink: 0;
-    }
-    .marks {
-      text-align: right;
-      font-weight: normal;
-      font-size: 14px;
-      color: #333;
-      margin-top: 5px;
-    }
-
-    /* Dotted Lines */
-    .dotted-line {
-      border-bottom: 1px dotted #999;
-      height: 32px;
-      width: 100%;
-    }
-    
-    /* Follow up table */
-    .follow-up-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-    .follow-up-table td {
-      border: 1px solid #000;
-      padding: 10px;
-      height: 120px;
-      vertical-align: top;
-      font-size: 14px;
-    }
-
-    /* Sources Booklet */
-    .sources-booklet {
-      border: 2px solid #000;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    .source-block {
-      margin-bottom: 25px;
-    }
-    .source-title {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .source-content {
-      font-family: 'Times New Roman', serif;
-      font-size: 15px;
-      line-height: 1.5;
-      padding-left: 10px;
-      border-left: 3px solid #ccc;
-    }
-    
-    /* Model Answer Box */
-    .model-answer {
-      background: #f8fafc;
-      border-left: 4px solid #10b981;
-      padding: 20px;
-      margin-top: 15px;
-      font-family: 'Georgia', serif;
-      font-size: 15px;
-      line-height: 1.6;
-      color: #0f172a;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      border-radius: 4px;
-    }
-    .model-answer-title {
-      font-family: 'Arial', sans-serif;
-      font-weight: bold;
-      color: #059669;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 0.5px;
-    }
+    .exam-header { border: 2px solid #0f172a; border-radius: 10px; padding: 16px 20px; margin-bottom: 22px; }
+    .section-header { background: #0f172a; color: #ffffff; padding: 8px 14px; border-radius: 6px; font-weight: 800; font-size: 11pt; margin: 22px 0 16px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+    .question-block { margin-bottom: 24px; page-break-inside: avoid; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background: #ffffff; }
+    .q-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; font-weight: 800; font-size: 10.5pt; margin-bottom: 10px; }
+    .follow-up-stems { border: 1.5px solid #334155; border-radius: 6px; overflow: hidden; margin: 10px 0 14px 0; background: #f8fafc; }
+    .follow-up-stems div { padding: 7px 12px; border-bottom: 1px solid #cbd5e1; font-size: 9.5pt; font-weight: 700; color: #1e293b; }
+    .follow-up-stems div:last-child { border-bottom: none; }
+    .model-answer { background: #f0fdf4; border-left: 4px solid #10b981; padding: 14px 16px; border-radius: 4px; font-family: Georgia, serif; font-size: 10pt; line-height: 1.6; color: #0f172a; }
+    .model-answer-title { font-family: Arial, sans-serif; font-weight: 800; color: #047857; margin-bottom: 8px; text-transform: uppercase; font-size: 8.5pt; letter-spacing: 0.6px; }
+    .sources-panel { border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px 16px; margin-bottom: 18px; background: #f8fafc; }
+    .sources-panel img { max-width: 100%; max-height: 260px; object-fit: contain; display: block; margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 4px; }
   </style>
 </head>
 <body>
-
-  <!-- Cover Page -->
   <div class="page">
-    <div style="text-align: center; margin-bottom: 10px; font-weight: bold;">
-      Please check the examination details below before entering your candidate information
-    </div>
-    
-    <div class="cover-box">
-      <div class="candidate-info">
-        <div style="flex: 2;">
-          <div>Candidate surname</div>
-          <div class="input-box" style="border-radius: 5px;"></div>
-        </div>
-        <div style="flex: 1;">
-          <div>Other names</div>
-          <div class="input-box" style="border-radius: 5px;"></div>
-        </div>
-      </div>
-      <div class="candidate-info">
-        <div style="flex: 1;">
-          <div>Centre Number</div>
-          <div style="display:flex; gap: 5px; margin-top:5px;">
-            <div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div>
-          </div>
-        </div>
-        <div style="flex: 1;">
-          <div>Candidate Number</div>
-          <div style="display:flex; gap: 5px; margin-top:5px;">
-            <div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="exam-header">
-      <h1>Pearson Edexcel GCSE (9–1)</h1>
-      <div style="border: 1px solid #000; padding: 10px; margin-bottom: 15px; font-size: 20px; font-weight: bold;">
-        Mock Examination <span style="color:#059669;">(TEACHER MARK SCHEME & EXEMPLARS)</span>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span style="font-size:16pt; font-weight:900;">Pearson Edexcel GCSE (9–1) History</span>
+        <span style="background:#0f172a; color:#fff; padding:4px 12px; border-radius:4px; font-weight:800; font-size:10pt;">1HI0/11</span>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 15px;">
-        <div>Morning (Time: 1 hour 20 minutes)</div>
-        <div style="background: #333; color: white; padding: 5px 15px; font-weight: bold; border-radius: 5px;">Paper reference: 1HI0/11</div>
-      </div>
-      <h2>History</h2>
-      <h3>PAPER 1: Thematic study and historic environment</h3>
-      <h3>Option 11: Medicine in Britain, c1250–present and The British sector of the Western Front, 1914–18: injuries, treatment and the trenches</h3>
+      <div style="font-size:13pt; font-weight:800; color:#047857; margin-bottom:6px;">Edexcel GCSE June 2026 Live Standardised Paper (1HI0/11) — Teacher Mark Scheme &amp; Grade 8/9 Exemplar Answers</div>
+      <div style="font-size:9.5pt; color:#334155;">Option 11: Medicine in Britain, c1250–present and The British sector of the Western Front, 1914–18 &bull; Total Marks: 52 &bull; Time: 1 hour 20 minutes</div>
     </div>
 
-    <div style="border: 2px solid #000; border-radius: 10px; padding: 15px; margin-top: 15px; display: flex; justify-content: space-between;">
-      <div>
-        <strong>You must have:</strong><br>
-        Sources Booklet (enclosed)
-      </div>
-      <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 80px; height: 60px;">
-        Total<br>Marks
-      </div>
-    </div>
+    <div class="section-header">Section A: The British sector of the Western Front, 1914–18 (16 Marks)</div>
 
-    <div class="instructions">
-      <h3>Instructions</h3>
-      <ul>
-        <li>Use <strong>black</strong> ink or ball-point pen.</li>
-        <li><strong>Fill in the boxes</strong> at the top of this page with your name, centre number and candidate number.</li>
-        <li>There are two sections in this question paper. Answer all parts of Questions 1 and 2 from Section A. From Section B, answer Questions 3 and 4 and then <strong>EITHER</strong> Question 5 <strong>OR</strong> Question 6.</li>
-        <li>Answer the questions in the spaces provided – <em>there may be more space than you need.</em></li>
-      </ul>
-
-      <h3>Information</h3>
-      <ul>
-        <li>The total mark for this paper is 52.</li>
-        <li>The marks for <strong>each</strong> question are shown in brackets – <em>use this as a guide as to how much time to spend on each question.</em></li>
-        <li>The marks available for spelling, punctuation, grammar and use of specialist terminology are clearly indicated.</li>
-      </ul>
-
-      <h3>Advice</h3>
-      <ul>
-        <li>Read each question carefully before you start to answer it.</li>
-        <li>Check your answers if you have time at the end.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="page" ><div class="section-header">SECTION A: The British sector of the Western Front, 1914–18: injuries, treatment and the trenches</div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">1 (a)</div>
-    <div>Describe one feature of the clinical use and diagnostic limitations of mobile X-ray units near the frontline.</div>
-  </div><div class="marks">(2)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">1 (b)</div>
-    <div>Describe one feature of trench fever, including its symptoms, cause, or prevention.</div>
-  </div><div class="marks">(2)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">2 (a)</div>
-    <div>Study Sources A and B in the Sources Booklet.
-
-How useful are Sources A and B for an enquiry into the physical trauma and preventative treatments associated with German poison gas attacks?
-
-Explain your answer, using Sources A and B and your knowledge of the historical context.</div>
-  </div><div class="marks">(8)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-          <div class="question-num">2 (b)</div>
-          <div>Study Source B.
-
-How could you follow up Source B to find out more about the preventative treatments associated with German poison gas attacks?
-
-In your answer, you must give the question you would ask and the type of source you could use.
-
-Complete the table below.</div>
-        </div>
-        <div class="marks">(4)</div>
-        <table class="follow-up-table">
-          <tr><td>Detail in Source B that I would follow up:</td></tr>
-          <tr><td>Question I would ask:</td></tr>
-          <tr><td>What type of source I could use:</td></tr>
-          <tr><td>How this might help answer my question:</td></tr>
-        </table>
-        <div class="marks" style="font-weight:bold; margin-top:10px;">(Total for Question 2 = 12 marks)</div>
-      </div></div>
-  <div class="page" style="page-break-before: always;"><div class="section-header">SECTION B: Medicine in Britain, c1250–present</div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">3</div>
-    <div>Explain one way in which ideas about the cause of illness in the Medieval period (c1250–c1500) were similar to ideas about the cause of illness in the Renaissance period (c1500–c1700).</div>
-  </div><div class="marks">(4)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">4</div>
-    <div>Explain why there was rapid progress in the development and mass production of penicillin in the years c1938–c1945.</div>
-  </div><div style="margin-left: 40px; margin-bottom: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
-      You <strong>may</strong> use the following in your answer:
-      <ul style="margin-top: 10px; margin-bottom: 10px; padding-left: 20px;">
-        <li>Howard Florey and Ernst Chain</li><li>US Government funding and the Second World War</li>
-      </ul>
-      You <strong>must</strong> also use information of your own.
-    </div><div class="marks">(12)</div>
-        
-          <div class="model-answer">
-            <div class="model-answer-title"><i class="fa-solid fa-star"></i> Model Answer (Grade 9)</div>
-            The primary scientific driver behind the rapid progress of penicillin was the systematic biochemical work of Howard Florey and Ernst Chain at Oxford University, who succeeded in turning Alexander Fleming’s 1928 accidental laboratory observation into a purified, stable, and highly effective drug. While Fleming had discovered that the Penicillium notatum mould killed staphylococci bacteria, he lacked the chemical expertise to isolate the active substance and abandoned it as a minor local antiseptic. In 1938, Florey and Chain revived the research, and by 1940, Chain successfully purified the active compound. Consequently, they demonstrated penicillin’s curative power on infected mice, followed by successful trials on human patients, such as police officer Albert Alexander in 1941. This clinical proof demonstrated that penicillin was non-toxic and could destroy bacterial pathogens inside the bloodstream, establishing the scientific foundation necessary to justify transition to mass production.
-
-This scientific breakthrough was scaled up globally because of unprecedented US Government funding and direct state intervention under the urgent pressures of the Second World War. When Florey travelled to the USA in July 1941 to seek manufacturing aid, British chemical companies were fully occupied with munitions production. Recognizing the immense military value of an infection-killing antibiotic for treating battlefield casualties and preventing fatal gas gangrene, the US government bypassed traditional market constraints and poured millions of dollars in federal grants into pharmaceutical firms. Consequently, this state-funded mobilization allowed American factories to purchase expensive industrial infrastructure, including giant deep-fermentation tanks. This massive financial and logistical intervention led directly to a manufacturing revolution, allowing the supply of penicillin to scale up from virtually zero to over 2.3 million life-saving doses in time to treat Allied forces on D-Day in June 1944.
-
-Furthermore, progress was accelerated by international scientific collaboration and advances in agricultural technology, which provided a distinct third factor beyond the initial stimulus points. To maximize production yields, researchers at a government-backed laboratory in Peoria, Illinois, systematically searched for more productive strains of the Penicillium mould, discovering a highly potent, high-yield strain on a cantaloupe melon in 1943. By combining this new strain with the deep-fermentation technology, scientists multiplied the production rate of pure penicillin millions of times over. This meant that bacterial infections, which had previously been the leading cause of death following minor cuts or surgeries, became completely curable on a mass scale, permanently transforming modern global healthcare and establishing penicillin as the world’s first mass-produced antibiotic.
-          </div>
-        
-      </div><div class="question-block" style="page-break-before: always;">
-        <div style="font-weight: bold; margin-bottom: 20px;">Answer EITHER Question 5 OR Question 6.
-Spelling, punctuation, grammar and use of specialist terminology will be assessed in this question.</div>
-        <div style="font-weight: bold; margin-bottom: 20px;">EITHER</div>
-        <div class="question-text">
-    <div class="question-num">5</div>
-    <div>‘Edward Jenner’s discovery of the smallpox vaccination was the most significant turning point in the prevention of disease in the period c1700–c1900.’
-How far do you agree? Explain your answer.</div>
-  </div><div style="margin-left: 40px; margin-bottom: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
-      You <strong>may</strong> use the following in your answer:
-      <ul style="margin-top: 10px; margin-bottom: 10px; padding-left: 20px;">
-        <li>Inoculation</li><li>The 1875 Public Health Act</li>
-      </ul>
-      You <strong>must</strong> also use information of your own.
-    </div><div class="marks">(16)</div>
-        <div style="font-weight: bold; margin: 20px 0;">OR</div>
-        <div class="question-text">
-    <div class="question-num">6</div>
-    <div>‘The discovery of the structure of DNA was the most significant breakthrough in understanding the causes of illness in the period c1900–present.’
-How far do you agree? Explain your answer.</div>
-  </div><div style="margin-left: 40px; margin-bottom: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
-      You <strong>may</strong> use the following in your answer:
-      <ul style="margin-top: 10px; margin-bottom: 10px; padding-left: 20px;">
-        <li>James Watson and Francis Crick</li><li>Lifestyle factors (e.g., smoking and lung cancer)</li>
-      </ul>
-      You <strong>must</strong> also use information of your own.
-    </div><div class="marks">(16)</div>
-        <div class="marks">(Total for spelling, punctuation, grammar and use of specialist terminology = 4 marks)</div>
-        <div class="marks" style="font-weight:bold;">(Total for Question = 20 marks)</div>
-        
-        <div style="margin-top: 30px; border: 1px solid #000; padding: 15px;">
-           <strong>Indicate which question you are answering by marking a cross in the box [X].</strong><br><br>
-           Chosen question number: &nbsp;&nbsp;&nbsp; Question 5 [ ] &nbsp;&nbsp;&nbsp; Question 6 [ ]
-        </div>
-        
-          <div class="model-answer"><div class="model-answer-title"><i class="fa-solid fa-star"></i> Question 5 Model Answer (Grade 9)</div>To a moderate extent, I agree that Edward Jenner’s development of the smallpox vaccine in 1796 represents a monumental turning point in the prevention of disease. By utilizing empirical observation to prove that cowpox infection conferred immunity against smallpox, Jenner created the world's first secure, scientific immunisation technique. However, while his discovery was intellectually revolutionary, its practical significance was heavily limited in the short term by public conservatism and medical opposition. Ultimately, the transition to truly effective, nationwide disease prevention was only achieved when the British government abandoned its traditional laissez-faire policy and passed compulsory public health legislation, most notably the 1875 Public Health Act, which systematically tackled urban filth.
-
-On the one hand, Jenner’s 1796 smallpox vaccine was a major turning point because it provided a safe, scientific alternative to the dangerous practice of inoculation. Inoculation, which had been introduced to Britain from Turkey in the early eighteenth century, involved deliberately scratching live smallpox pus into a healthy person's skin. While this often conferred mild immunity, it was highly dangerous: it frequently caused full-blown, fatal infections and actively turned inoculated individuals into contagious vectors, sparking new epidemics. By vaccinating young James Phipps with benign cowpox and subsequently proving he was immune to smallpox, Jenner demonstrated that prevention did not require risking the patient’s life. Consequently, Jenner’s work provided a safe, reliable, and reproducible medical tool that eventually enabled the World Health Organization to eradicate smallpox globally, representing a profound milestone in immunology.
-
-However, the immediate preventative significance of Jenner's discovery was heavily undermined by deep-seated public conservatism, medical self-interest, and the absence of a scientific framework to explain how vaccines worked. Because Jenner published his findings in 1798 without being able to explain *why* cowpox prevented smallpox—as Germ Theory was not published until 1861—many doctors and citizens regarded vaccination with extreme suspicion. Anti-vaccination campaigns published satirical cartoons of people turning into cows, and the Royal Society refused to publish his research, forcing him to print it privately. Furthermore, inoculation was a highly lucrative business for professional doctors, who actively lobbied against the free adoption of Jenner's vaccine to protect their profits. As a result of this resistance, smallpox remained a major urban killer for decades after Jenner’s breakthrough, demonstrating that a scientific discovery alone is insufficient to prevent disease without administrative force.
-
-Furthermore, the primary driver of rapid, nationwide disease prevention during the nineteenth century was not medical discovery, but the British government’s complete abandonment of its laissez-faire administrative policy. Spurred by John Snow's 1854 proof that cholera was water-borne and Bazalgette's massive London sewer construction, Parliament passed the landmark 1875 Public Health Act. Unlike previous optional acts, the 1875 Act made sanitation compulsory. Local councils nationwide were legally forced to provide clean, filtered water, build modern underground drainage, clear rubbish, and employ medical officers. Consequently, by systematically removing the filthy, contaminated water and organic waste that caused water-borne epidemics, the government dramatically reduced the national mortality rates of diseases like cholera and typhoid. This administrative intervention saved far more lives than Jenner’s vaccine did in the nineteenth century, proving that state power was the true engine of prevention.
-
-In conclusion, while Jenner’s vaccine was a brilliant theoretical breakthrough that laid the foundation for modern immunology, it was only a partial turning point c1700–c1900. Without the scientific validation of Louis Pasteur’s Germ Theory (1861) and, crucially, the administrative enforcement of the compulsory 1853 Vaccination Act, Jenner's work remained underutilized. The most significant turning point in disease prevention during this era was the compulsory 1875 Public Health Act. By utilizing state power to enforce urban sanitation, the government actively addressed the environmental causes of epidemics, demonstrating that administrative intervention was far more effective at protecting public health than isolated scientific breakthroughs.</div>
-          
-        
-      </div></div>
-  
-  <div class="page" style="page-break-before: always;">
-    <div class="exam-header" style="text-align: center; margin-bottom: 30px;">
-      <h1>Sources Booklet</h1>
-      <div style="font-size: 16px;">Do not return this Booklet with the question paper.</div>
-    </div>
-    <div class="sources-booklet">
-      <h3>Sources for use with Section A.</h3>
-      <div class="source-block">
-          <div class="source-title">Source A: A clinical extract from an RAMC medical officer logbook at an Advanced Dressing Station (ADS) near Ypres, May 1915.</div>
-          <div class="source-content">
+    <div class="sources-panel">
+      <div style="font-weight:800; font-size:9.5pt; text-transform:uppercase; color:#0284c7; margin-bottom:8px;">Section A Sources Booklet Reference</div>
+      <div style="margin-bottom:12px;">
+            <div style="font-weight:700; font-size:9.5pt; margin-bottom:4px;">Source A: From the diary of Edward Munro, 7 November 1916. Munro was a stretcher bearer on the Western Front. Here he is describing his work during the Battle of the Somme.</div>
             
-            The men were brought in stumbling, clutching their throats and gasping violently for air. Their eyes were severely inflamed and streaming with tears. We immediately began washing out the blinded eyes of the chlorine gas casualties using simple bicarbonate of soda solutions. It provides some relief, but the respiratory damage is profound. Many will not survive the night.
+            <div style="font-family:Georgia,serif; font-size:9.5pt; line-height:1.5; color:#1e293b;">The Sergeant in charge ordered us to stay and help his team, as there were many casualties and he did not have enough stretcher bearers. After a short rest, we started to carry the wounded and there were a large number of them. The soldiers had made an attack on the German line the previous night and had suffered many casualties. The land over which we carried the wounded is very difficult to cross, as it has many waterlogged shell holes. We were constantly shelled by the Germans. Yesterday, two stretcher bearers had been killed. Carrying the wounded is very difficult at night. The landmarks which guide us in the daytime are not visible at night, meaning it is easy to get lost. We are covered in mud, have sore feet and are tired.</div>
+          </div><div style="margin-bottom:12px;">
+            <div style="font-weight:700; font-size:9.5pt; margin-bottom:4px;">Source B: An official war photograph published in the Daily Mail, July 1916. It shows British soldiers pushing a motorised ambulance through deep mud during the Battle of the Somme.</div>
+            <img src="/images/source_b_ambulance_somme_1916.jpg" alt="Source B">
+            <div style="font-family:Georgia,serif; font-size:9.5pt; line-height:1.5; color:#1e293b;">[Archival Photograph: British soldiers manually pushing a bogged-down motorised ambulance through deep liquid mud and cratered ruts during the Battle of the Somme, July 1916.]</div>
           </div>
-        </div><div class="source-block">
-          <div class="source-title">Source B: A photograph showing Belgian troops wearing early gas masks.</div>
-          <div class="source-content">
-            <img src="/images/mock_exams/gas_masks.jpg" style="max-width: 100%; max-height: 350px; display: block; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" alt="Visual Source" />
-            The photograph shows a group of Belgian soldiers standing outdoors, wearing early protective flannel gas hoods pulled over their heads to protect against chlorine gas attacks.
-          </div>
-        </div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>1 (a) Describe one feature of a Casualty Clearing Station (CCS) on the Western Front.</span><span>(2 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (2/2 Marks)</div><p style="margin: 0 0 10px 0;">Feature: Casualty Clearing Stations operated a strict clinical triage system to prioritise incoming wounded based on medical urgency.</p><p style="margin: 0 0 10px 0;">Detail: Medical officers divided casualties into three categories: the walking wounded, those in need of immediate surgery (to stop fatal haemorrhage or gas gangrene), and moribund cases given palliative comfort care, ensuring surgical teams operated on patients with the greatest chance of survival.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>1 (b) Describe one feature of developments in the storage of blood on the Western Front.</span><span>(2 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (2/2 Marks)</div><p style="margin: 0 0 10px 0;">Feature: Medical researchers developed chemical anticoagulants combined with glucose and refrigeration to store donor blood for up to four weeks.</p><p style="margin: 0 0 10px 0;">Detail: In 1915–1916, Francis Rous and Joseph Turner added dextrose (citrate-glucose) to sodium-citrated blood and stored the glass containers in portable ice boxes, allowing US Army doctor Oswald Hope Robertson to establish the world's first blood bank during the Battle of Cambrai in 1917, stocking 22 units to treat soldiers in severe hypovolaemic shock.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>2 (a) Study Sources A and B in the Sources Booklet.<br><br>How useful are Sources A and B for an enquiry into the problems of transporting the wounded along the chain of evacuation on the Western Front?<br><br>Explain your answer, using Sources A and B and your knowledge of the historical context.</span><span>(8 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (8/8 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Source A is exceptionally useful for an enquiry into the problems of transporting wounded soldiers because it provides direct, first-hand testimony from an RAMC stretcher bearer operating under frontline combat conditions during the Battle of the Somme in November 1916. Munro details the severe physical and environmental obstacles of evacuation, emphasising the sheer volume of casualties requiring transport, the 'waterlogged shell holes' that rendered terrain impassable, the constant danger of German artillery fire which had killed two bearers the day before, and the peril of stretcher-bearing in total darkness without visible landmarks. This aligns closely with my historical knowledge: during the 1916 Somme offensive (where the British suffered 57,000 casualties on the first day alone), stretcher bearers faced impossible logistical burdens. The pulverised clay soil turned into liquid mud that filled deep artillery craters, requiring up to six to eight bearers per stretcher rather than the standard two to four, while German counter-battery shelling inflicted heavy attrition on medical evacuation squads. Stretcher bearers also navigated under blackout conditions to avoid sniper fire, frequently suffering severe disorientation and physical exhaustion. In terms of provenance, as a private diary written on 7 November 1916, Munro had no propaganda motive to sanitise the ordeal, giving it high reliability regarding the psychological and physical exhaustion ('sore feet and are tired') of stretcher bearers at the front line.</p><p style="margin: 0 0 10px 0;">Source B is also highly useful because it provides contemporaneous photographic evidence of the mechanical and infrastructure failures that plagued motor transport during evacuation. The photograph shows an official War Office image from July 1916 depicting multiple soldiers straining with physical exertion to manually push a heavy motorised ambulance whose wheels are deeply bogged in thick liquid mud on the Somme. This is corroborated by my historical knowledge: although the British Red Cross and St John Ambulance raised funds to deploy a fleet of 512 motor ambulances funded by The Times appeal by October 1914 (after the BEF deployed in August 1914 with zero motor ambulances), the brutal terrain of the Somme in 1916 severely compromised their effectiveness. Heavy motorised ambulances regularly broke down or sank up to their axles in deep mud and waterlogged shell holes along congested supply tracks, forcing the RAMC to revert to horse-drawn wagons, hand carts, or prolonged manual carrying to reach Casualty Clearing Stations situated several miles to the rear. In terms of provenance, while published in the Daily Mail as an official war photograph—and therefore vetted by wartime press censors—the image could not conceal the stark tactical reality of impassable roads, making it highly valuable evidence for the practical limitations of modern vehicular transport along the evacuation chain.</p><p style="margin: 0 0 10px 0;">In conclusion, both sources are complementary and valuable: Source A highlights the human and geographic perils of initial stretcher transport across no-man's-land and communication trenches, while Source B illustrates the subsequent mechanical and infrastructural breakdown of vehicular evacuation further along the chain.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>2 (b) Study Source A.<br><br>How could you follow up Source A to find out more about the problems of transporting the wounded along the chain of evacuation on the Western Front?<br><br>In your answer, you must give the question you would ask and the type of source you could use.<br><br>Complete the table below.</span><span>(4 marks)</span></div>
+      <div class="follow-up-stems">
+        <div>1. Detail in Source B that I would follow up:</div>
+        <div>2. Question I would ask:</div>
+        <div>3. What type of source I could use:</div>
+        <div>4. How this might help answer my question:</div>
+      </div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (4/4 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Detail in Source A that I would follow up: 'The Sergeant in charge ordered us to stay and help his team, as there were many casualties and he did not have enough stretcher bearers.'</p><p style="margin: 0 0 10px 0;">Question I would ask: How did RAMC field commanders adapt the staffing, rotation, and equipment of stretcher-bearer squads to cope with mass casualty battles on the Somme?</p><p style="margin: 0 0 10px 0;">Type of source I could use: The official War Diary of an RAMC Field Ambulance or Battalion Medical Officer stationed on the Somme sector in November 1916.</p><p style="margin: 0 0 10px 0;">How this might help answer my question: It would record daily statistical casualty returns, bearer casualty rates, and official commanding officer reports detailing logistical shortages and how relief rotations were organised.</p></div>
     </div>
   </div>
-  
 
+  <div class="page">
+    <div class="section-header">Section B: Medicine in Britain, c1250–present (36 Marks)</div>
+
+    <div class="question-block">
+      <div class="q-head"><span>3. Explain one way in which the prevention of infectious diseases in the Renaissance period (c1500–c1700) was different from the prevention of infectious diseases in the eighteenth and nineteenth centuries (c1700–c1900).</span><span>(4 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (4/4 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">One significant difference was that disease prevention in the Renaissance relied on individual avoidance of miasma and superstitious measures, whereas prevention in the eighteenth and nineteenth centuries utilised scientific, state-regulated biological immunisation.</p><p style="margin: 0 0 10px 0;">In the Renaissance (c1500–c1700), prevention was dominated by belief in bad air and divine retribution. During epidemics like the 1665 Great Plague, individuals attempted to ward off infectious illness by carrying sweet-smelling herbs, posies, or pomanders to purify foul air, smoking tobacco, or fleeing the city, while authorities killed cats and dogs. There was no scientific understanding of the biological vectors of contagion.</p><p style="margin: 0 0 10px 0;">In contrast, in the eighteenth and nineteenth centuries (c1700–c1900), medical prevention shifted to scientifically verified biological inoculation and vaccines. In 1796, Edward Jenner discovered the smallpox vaccine by demonstrating that cowpox infection conferred immunity against smallpox. By 1853, the British government passed the Compulsory Vaccination Act, systematically vaccinating infants nationwide and creating population-level immunity. Furthermore, following Louis Pasteur's 1861 Germ Theory and Robert Koch's bacteriological discoveries, scientists developed laboratory-attenuated vaccines against anthrax, rabies, and cholera, allowing medicine to prevent specific microscopic pathogens directly rather than trying to mask foul smells.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>4. Explain why hospital care and treatment improved in the period c1700–c1900.
+
+You may use the following in your answer:
+• the Nightingale School for Nurses
+• antiseptics
+
+You must also use information of your own.</span><span>(12 marks)</span></div>
+      <div style="font-size:9pt; color:#475569; margin-bottom:10px;"><strong>Stimulus points:</strong> the Nightingale School for Nurses &bull; antiseptics</div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (12/12 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Hospital care and treatment underwent a profound transformation in the period c1700–c1900, shifting from unhygienic resting houses of last resort into modern clinical institutions governed by antiseptic discipline, professional nursing standards, and advanced surgical safety.</p><p style="margin: 0 0 10px 0;">A primary catalyst for this improvement was the revolution in professional nursing standards and hospital architecture spearheaded by Florence Nightingale. Following her work at the Scutari hospital during the Crimean War (1854–1856), where she reduced mortality from over 40% to roughly 2% through sanitation, ventilation, and clean water, Nightingale returned to Britain to publish Notes on Hospitals (1859) and Notes on Nursing (1859). In 1860, she established the Nightingale Training School for Nurses at St Thomas’ Hospital in London. This initiative established nursing as an educated, respected, and highly disciplined profession, replacing the previous stereotype of drunken, untrained nurses like Charles Dickens' fictional 'Mrs Gamp'. Nightingale also championed the 'pavilion plan' of hospital construction: large, separated wards with high ceilings, polished impermeable floors, and tall windows that maximised ventilation and cross-draughts, which dramatically lowered the risk of airborne miasmatic and cross-infection between patients.</p><p style="margin: 0 0 10px 0;">Secondly, hospital surgical treatment was revolutionised by the development of chemical antiseptics, transforming surgical wards from fatal infection traps into sterile operating environments. In the mid-nineteenth century, post-operative infections like sepsis, gangrene, and erysipelas—collectively known as 'hospital gangrene'—killed almost half of all surgical patients in an era known as the 'Black Period' of surgery. Inspired by Louis Pasteur's 1861 Germ Theory showing that airborne microbes caused putrefaction, Scottish surgeon Joseph Lister realised in 1865 that carbolic acid (used to treat sewage in Carlisle) could kill living microbes on human tissue. Lister systematically applied carbolic acid solution to open compound fractures, soaked surgical dressings, sterilised surgical instruments, and used a carbolic mist spray during operations at Glasgow Royal Infirmary. As a result, his post-operative mortality rate plunged from 46% to 15% between 1865 and 1870. Lister's antiseptic method was rapidly adopted across British hospitals and eventually evolved into aseptic surgery by the 1890s, where surgical gowns, steam-sterilised autoclaved instruments, and rubber gloves ensured operating theatres were completely germ-free before an operation began.</p><p style="margin: 0 0 10px 0;">Thirdly, a crucial third aspect of improvement—separate from nursing and antiseptics—was the introduction of effective chemical anaesthetics and the foundation of specialised voluntary hospitals. In 1847, James Simpson discovered the anaesthetic properties of chloroform, replacing inefficient ether and nitrous oxide. Although the initial adoption of chloroform caused a temporary rise in mortality due to deeper, riskier operations, John Snow's 1848 chloroform inhaler standardised dosage, ensuring operations were completely painless and allowing surgeons to take time and operate with anatomical precision rather than terrifying speed. Furthermore, the eighteenth and nineteenth centuries witnessed the rapid expansion of endowed voluntary hospitals funded by private philanthropy (such as Guy's, Westminster, and St George's in London) alongside specialised institutions like the Royal Free Hospital (1828) and Great Ormond Street Hospital for Sick Children (1852). These voluntary hospitals were staffed by university-trained physicians and surgeons who used hospitals as teaching hubs to conduct clinical research and diagnose illnesses at the bedside, ensuring patients received specialised medical treatment rather than mere custodial care.</p><p style="margin: 0 0 10px 0;">In conclusion, hospital care and treatment improved because these three developments reinforced one another: Simpson's anaesthetics allowed painless precision surgery, Lister's antiseptics eliminated lethal wound infections, and Nightingale's professional nursing regime ensured clinical cleanliness and hygiene throughout the patient's recovery.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>5. (EITHER) 'In the medieval period (c1250–c1500), ideas about the cause of illness were mainly based on religion.'<br><br>How far do you agree? Explain your answer.<br><br>You may use the following in your answer:<br>• the Church<br>• miasma<br><br>You must also use information of your own.</span><span>(16 + 4 SPaG = 20 marks)</span></div>
+      <div style="font-size:9pt; color:#475569; margin-bottom:10px;"><strong>Stimulus points:</strong> the Church &bull; miasma</div>
+      <div class="model-answer"><div class="model-answer-title">Question 5 Examiner Model Answer (20/20 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Ideas about the cause of illness in the medieval period (c1250–c1500) were heavily dominated by religious and supernatural beliefs, reflecting a deeply pious society where the Catholic Church exercised an ideological monopoly over education, healthcare, and everyday morality. However, it would be historically inaccurate to claim that medieval medical theory was solely religious. Alongside divine explanations, medieval society possessed a highly structured, rational, and naturalistic medical framework based on the Greco-Roman Theory of the Four Humours, astrological alignments, and miasmatic environmental contagion.</p><p style="margin: 0 0 10px 0;">On the one hand, religious explanations were indeed the primary framework through which ordinary people and Church authorities explained illness. The medieval Catholic Church taught that God was omnipotent and that illness was sent directly by God as a divine punishment for individual sin, a moral test of devotion, or a collective chastisement of society's wickedness. During catastrophic epidemics such as the 1348 Black Death, which killed one-third to one-half of the English population, priests preached that the plague was a manifestation of God's wrath. This supernatural diagnosis was reinforced by the popularity of religious preventative and curative rituals: thousands joined flagellant brotherhoods to whip themselves in public penance, communities organised mass religious processions, and individuals purchased indulgences, confessed their sins, and undertook pilgrimages to holy shrines like Canterbury. Furthermore, the Church strictly policed intellectual inquiry: medieval universities were ecclesiastical institutions where monks and clerical scholars treated biblical doctrine as absolute dogma, punishing any scholar—such as Roger Bacon in 1277—who advocated empirical scientific experimentation over orthodox theological acceptance.</p><p style="margin: 0 0 10px 0;">On the other hand, medieval thinkers and university-trained physicians also relied heavily on natural, secular explanations derived from ancient Greek and Roman philosophy, specifically the Theory of the Four Humours and the belief in miasma. First developed by Hippocrates and expanded by Galen in the second century AD, humoural pathology asserted that the human body contained four vital fluids: blood, phlegm, black bile, and yellow bile. Disease was not viewed as a divine curse, but as a biological imbalance caused by diet, climate, emotional state, or physical excretion. Physicians diagnosed humoural disharmony using urine charts (observing colour, smell, and sediment) and restored equilibrium through rational, physical interventions like phlebotomy (bloodletting), purging, and diet regulation. Crucially, the Catholic Church endorsed Galen's texts because Galen wrote that the intricate design of the human body proved the existence of a single divine Creator; thus, rational humoural theory was officially preserved and taught in every university alongside religious doctrine.</p><p style="margin: 0 0 10px 0;">Furthermore, medieval people possessed a widespread environmental theory of disease based on miasma (corrupt air). It was believed that rotting biological matter, stagnant marshes, open cesspits, unburied corpses, and volcanic fissures generated poisonous vapours that corrupted the atmosphere. When inhaled, this poisoned air corrupted the humours and induced fever. During the Black Death, town authorities and physicians recognised that bad air posed a physical threat: town councils across England ordered the clearing of open dung heaps, banned the dumping of butchered animal entrails in rivers, and citizens carried sweet-smelling posies and burned fragrant woods (like juniper and rosemary) to purify the atmosphere. Additionally, medieval astrology (the alignment of planets and zodiac signs) was widely regarded as a natural science; physicians used astrological tables called physician's almanacs and the 'Zodiac Man' to identify whether planetary conjunctions (such as the conjunction of Saturn, Jupiter, and Mars in 1345) had poisoned the elements.</p><p style="margin: 0 0 10px 0;">In conclusion, while religion provided the ultimate philosophical justification for existence and the spiritual cause of illness, it was not the sole foundation of medieval medical thinking. Rather, medieval medical ideas existed in a dual reality: supernatural religious causes explained why God permitted a person or community to be afflicted, but rational humoural theory, astrological physics, and miasma explained how the biological mechanisms of disease operated within the physical body. Therefore, while religion was immensely powerful, medieval medical ideas were equally grounded in ancient classical natural philosophy.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>6. (OR) 'Improvements in science and technology is the main reason why there has been progress in medicine in the modern period (c1900–present).'<br><br>How far do you agree? Explain your answer.<br><br>You may use the following in your answer:<br>• high-tech surgery<br>• the NHS<br><br>You must also use information of your own.</span><span>(16 + 4 SPaG = 20 marks)</span></div>
+      <div style="font-size:9pt; color:#475569; margin-bottom:10px;"><strong>Stimulus points:</strong> high-tech surgery &bull; the NHS</div>
+      <div class="model-answer"><div class="model-answer-title">Question 6 Examiner Model Answer (20/20 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Improvements in science and technology have undoubtedly served as a primary engine of medical progress in the modern period (c1900–present), revolutionising both the precision of internal diagnostics and the survivability of invasive clinical treatment. The twentieth century witnessed an unprecedented leap from exploratory surgery to non-invasive visualisation and micro-precision intervention. Following Röntgen’s discovery of X-rays in 1895, the mid-twentieth century developed advanced diagnostic imaging: Godfrey Hounsfield’s invention of Computerised Tomography (CT scans) in 1972 and the subsequent rollout of Magnetic Resonance Imaging (MRI) in the 1980s enabled clinicians to detect microscopic malignant tumours and cerebral haemorrhages in three dimensions without exploratory incisions. In surgical wards, technological innovation replaced traumatic open surgery with laparoscopic 'keyhole surgery' using fibre-optic endoscopes and robotic surgical systems (such as the da Vinci robotic console), drastically reducing tissue trauma, blood loss, and hospital recovery times. Concurrently, high-tech life support equipment—including Willem Kolff’s artificial dialysis kidney machine (1943), heart-lung bypass machines, and microsurgical techniques enabling Christiaan Barnard’s first human heart transplant in 1967—allowed doctors to treat previously fatal organ failures. In surgical and diagnostic terms, technological capability has fundamentally redefined the limits of human longevity.</p><p style="margin: 0 0 10px 0;">Furthermore, scientific breakthroughs in biochemistry, bacteriology, and molecular genetics provided the therapeutic weapons necessary to cure systemic infections and genetic conditions. In the early twentieth century, Paul Ehrlich developed Salvarsan 606 (1909), the first chemical 'magic bullet' to target specific syphilis microbes without poisoning the patient, followed by Gerhard Domagk’s discovery of the sulphonamide Prontosil in 1932. This chemical revolution culminated in Alexander Fleming’s 1928 discovery of penicillin and its subsequent purification and mass production by Howard Florey and Ernst Chain in 1941, which saved millions of lives from bacterial septicaemia during World War II and sparked the global antibiotic era. In the latter half of the century, pure scientific research unlocked the biological blueprint of human life: in 1953, James Watson, Francis Crick, Rosalind Franklin, and Maurice Wilkins mapped the double-helix structure of DNA. This scientific foundation culminated in the international Human Genome Project (1990–2003), which mapped all 20,000 human genes, unlocking gene therapy, synthetic monoclonal antibody therapies, and personalised genetic profiling to target hereditary conditions and cancer. Without these fundamental scientific breakthroughs, high-tech medical machines would have had no curative drugs or biological targets to administer.</p><p style="margin: 0 0 10px 0;">However, it is vital to recognise that scientific and technological breakthroughs were entirely dependent upon state action, political ideology, and the creation of universal healthcare infrastructure to achieve actual progress across society. Prior to 1948, groundbreaking medical treatments were privatised commodities accessible only to the wealthy; millions of working-class Britons suffered untreated illnesses because they could not afford doctors' consultation fees or voluntary hospital subscriptions. Guided by William Beveridge’s 1942 Report targeting the 'Five Giants' (including Disease), Labour Minister of Health Aneurin Bevan spearheaded the creation of the National Health Service (NHS) on 5 July 1948. The NHS established a universal, nationalised healthcare system funded through progressive taxation, providing medical, surgical, and dental care completely free at the point of delivery from cradle to grave. It was the vast economic purchasing power and organisational logistics of the NHS that allowed high-tech diagnostic machines, intensive care units, and expensive pharmaceutical antibiotics to be systematically deployed across every hospital in the United Kingdom. Furthermore, government public health campaigns—such as compulsory vaccination schedules eradicating polio and diphtheria, the Clean Air Acts of 1956 following the Great Smog, and aggressive twenty-first-century anti-smoking legislation (the 2006 Health Act banning smoking in enclosed public spaces)—prevented far more mortality than individual high-tech surgical procedures could ever cure.</p><p style="margin: 0 0 10px 0;">In conclusion, while improvements in science and technology provided the indispensable intellectual knowledge, pharmaceutical therapies, and surgical apparatus that made medical cures possible, they were not the sole reason for medical progress. Technological invention in isolation is sterile without political will and social distribution. Therefore, modern medical progress is best understood as a symbiotic partnership: science and technology generated the revolutionary clinical breakthroughs, but the creation of the NHS and proactive state public health policy ensured those breakthroughs became a universal human reality rather than a privileged luxury.</p></div>
+    </div>
+  </div>
 </body>
 </html>

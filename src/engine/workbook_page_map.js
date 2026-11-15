@@ -267,208 +267,208 @@ export const WORKBOOK_PAGE_MAP = {
   "edexcel_medicine": {
     "lesson_1_1": {
       "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "endPage": 6,
+      "spread": "pp. 4–6",
       "booklet": "Medieval Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 0
     },
     "lesson_1_2": {
       "page": 7,
-      "endPage": 7,
-      "spread": "Page 7",
+      "endPage": 9,
+      "spread": "pp. 7–9",
       "booklet": "Medieval Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 1
     },
     "lesson_1_3": {
       "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
+      "endPage": 12,
+      "spread": "pp. 10–12",
       "booklet": "Medieval Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 2
     },
     "lesson_1_4": {
       "page": 13,
-      "endPage": 13,
-      "spread": "Page 13",
+      "endPage": 15,
+      "spread": "pp. 13–15",
       "booklet": "Medieval Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 3
     },
     "lesson_1_5": {
       "page": 16,
-      "endPage": 16,
-      "spread": "Page 16",
+      "endPage": 18,
+      "spread": "pp. 16–18",
       "booklet": "Medieval Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 4
     },
     "lesson_2_1": {
       "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "endPage": 6,
+      "spread": "pp. 4–6",
       "booklet": "Renaissance Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 5
     },
     "lesson_2_2": {
-      "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "page": 7,
+      "endPage": 9,
+      "spread": "pp. 7–9",
       "booklet": "Renaissance Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 6
     },
     "lesson_2_3": {
       "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
+      "endPage": 12,
+      "spread": "pp. 10–12",
       "booklet": "Renaissance Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 7
     },
     "lesson_2_4": {
       "page": 13,
-      "endPage": 13,
-      "spread": "Page 13",
+      "endPage": 15,
+      "spread": "pp. 13–15",
       "booklet": "Renaissance Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 8
     },
     "lesson_2_5": {
       "page": 16,
-      "endPage": 16,
-      "spread": "Page 16",
+      "endPage": 18,
+      "spread": "pp. 16–18",
       "booklet": "Renaissance Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 9
     },
     "lesson_3_1": {
       "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "endPage": 6,
+      "spread": "pp. 4–6",
       "booklet": "18th & 19th C Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 10
     },
     "lesson_3_2": {
       "page": 7,
-      "endPage": 7,
-      "spread": "Page 7",
+      "endPage": 9,
+      "spread": "pp. 7–9",
       "booklet": "18th & 19th C Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 11
     },
     "lesson_3_3": {
-      "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "page": 10,
+      "endPage": 12,
+      "spread": "pp. 10–12",
       "booklet": "18th & 19th C Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 12
     },
     "lesson_3_4": {
       "page": 13,
-      "endPage": 13,
-      "spread": "Page 13",
+      "endPage": 15,
+      "spread": "pp. 13–15",
       "booklet": "18th & 19th C Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 13
     },
     "lesson_3_5": {
       "page": 16,
-      "endPage": 16,
-      "spread": "Page 16",
+      "endPage": 18,
+      "spread": "pp. 16–18",
       "booklet": "18th & 19th C Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 14
     },
     "lesson_4_1": {
       "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "endPage": 5,
+      "spread": "pp. 4–5",
       "booklet": "Modern Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 15
     },
     "lesson_4_2": {
-      "page": 7,
+      "page": 6,
       "endPage": 7,
-      "spread": "Page 7",
+      "spread": "pp. 6–7",
       "booklet": "Modern Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 16
     },
     "lesson_4_3": {
-      "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
+      "page": 8,
+      "endPage": 9,
+      "spread": "pp. 8–9",
       "booklet": "Modern Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 17
     },
     "lesson_4_4": {
-      "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
       "booklet": "Modern Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 18
     },
     "lesson_4_5": {
-      "page": 16,
-      "endPage": 16,
-      "spread": "Page 16",
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
       "booklet": "Modern Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 19
     },
     "lesson_5_1": {
-      "page": 6,
-      "endPage": 6,
-      "spread": "Page 6",
+      "page": 4,
+      "endPage": 7,
+      "spread": "pp. 4–7",
       "booklet": "Western Front Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 20
     },
     "lesson_5_2": {
-      "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
+      "page": 8,
+      "endPage": 11,
+      "spread": "pp. 8–11",
       "booklet": "Western Front Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 21
     },
     "lesson_5_3": {
-      "page": 14,
-      "endPage": 14,
-      "spread": "Page 14",
+      "page": 12,
+      "endPage": 15,
+      "spread": "pp. 12–15",
       "booklet": "Western Front Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 22
     },
     "lesson_5_4": {
-      "page": 18,
-      "endPage": 18,
-      "spread": "Page 18",
+      "page": 16,
+      "endPage": 19,
+      "spread": "pp. 16–19",
       "booklet": "Western Front Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 23
     },
     "lesson_5_5": {
-      "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "page": 20,
+      "endPage": 23,
+      "spread": "pp. 20–23",
       "booklet": "Western Front Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 24
     },
     "lesson_5_6": {
-      "page": 26,
-      "endPage": 26,
-      "spread": "Page 26",
+      "page": 24,
+      "endPage": 27,
+      "spread": "pp. 24–27",
       "booklet": "Western Front Booklet",
       "unitId": "edexcel_medicine",
       "lessonIndex": 25

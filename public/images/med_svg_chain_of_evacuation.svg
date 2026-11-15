@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="evac-title evac-desc">
+  <title id="evac-title">The RAMC Chain of Evacuation on the Western Front (1914–1918)</title>
+  <desc id="evac-desc">Left-to-right cross-sectional terrain and medical logistics diagram of the RAMC Chain of Evacuation on the Western Front: 1. Stretcher Bearers (12%, 58%), 2. Regimental Aid Post (30%, 52%), 3. Field Ambulance ADS and MDS (49%, 48%), 4. Casualty Clearing Station (70%, 44%), and 5. Coastal Base Hospital and Hospital Ships (89%, 40%).</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .overline { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 2px; fill: #fbbf24; }
+      .hdr-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 20.5px; font-weight: 700; fill: #f8fafc; }
+      .pill-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 0.9px; fill: #fde68a; }
+      .zone-bar { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.8px; fill: #e2e8f0; }
+      .st-kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 800; letter-spacing: 0.9px; }
+      .st-hdr { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 13.5px; font-weight: 700; fill: #0f172a; }
+      .st-body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.3px; font-weight: 500; fill: #334155; }
+      .st-bold { font-weight: 700; fill: #0f172a; }
+      .trans-lbl { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; fill: #fde68a; }
+      .trans-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.2px; font-weight: 500; fill: #e2e8f0; }
+    ]]></style>
+    <linearGradient id="skyCross" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="35%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#f0f9ff"/>
+    </linearGradient>
+    <linearGradient id="earthCross" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#856544"/>
+      <stop offset="55%" stop-color="#5c432b"/>
+      <stop offset="100%" stop-color="#3b2a1a"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0f172a" flood-opacity="0.11"/>
+    </filter>
+    <marker id="arrGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrRedCross" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect x="0" y="0" width="1200" height="750" fill="url(#skyCross)"/>
+
+  <!-- Top Header Band (y=0..64) -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="26" y="23" class="overline">EDEXCEL GCSE HISTORY · ROYAL ARMY MEDICAL CORPS (RAMC) &amp; FANY LOGISTICS</text>
+  <text x="26" y="48" class="hdr-title">The RAMC Chain of Evacuation on the Western Front (1914–1918)</text>
+  <rect x="968" y="17" width="206" height="30" rx="6" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.2"/>
+  <text x="1071" y="36" text-anchor="middle" class="pill-txt">5-STAGE TRIAGE PIPELINE</text>
+
+  <!-- Distance and Tactical Depth Strip (y=64..92) -->
+  <rect x="0" y="64" width="1200" height="28" fill="#1e293b"/>
+  <text x="128" y="82" text-anchor="middle" class="zone-bar" fill="#fca5a5" style="fill: #fca5a5;">◀ NO MAN'S LAND / TRENCH (0 m)</text>
+  <text x="360" y="82" text-anchor="middle" class="zone-bar" fill="#fde68a" style="fill: #fde68a;">~200 m BEHIND FRONT</text>
+  <text x="588" y="82" text-anchor="middle" class="zone-bar" fill="#bae6fd" style="fill: #bae6fd;">1–2 MILES BACK</text>
+  <text x="840" y="82" text-anchor="middle" class="zone-bar" fill="#a7f3d0" style="fill: #a7f3d0;">7–10 MILES BACK (RAILHEAD)</text>
+  <text x="1076" y="82" text-anchor="middle" class="zone-bar" fill="#ffffff" style="fill: #ffffff;">FRENCH COAST → UK ▶</text>
+
+  <!-- Subtle Vertical Zone Dividers -->
+  <g stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="5 5">
+    <line x1="248" y1="92" x2="248" y2="500"/>
+    <line x1="472" y1="92" x2="472" y2="480"/>
+    <line x1="712" y1="92" x2="712" y2="450"/>
+    <line x1="956" y1="92" x2="956" y2="420"/>
+  </g>
+
+  <!-- ================= UPPER 5 CLINICAL STATION CARDS (y=102..242 — CLEAR ABOVE ALL HOTSPOT PINS!) ================= -->
+  <!-- Card 1 (x=18..238) -->
+  <g filter="url(#cardShadow)">
+    <rect x="18" y="102" width="220" height="140" rx="7" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/>
+    <rect x="18" y="102" width="220" height="5" rx="2" fill="#b91c1c"/>
+    <text x="30" y="122" class="st-kicker" fill="#b91c1c">STAGE 1 · RECOVERY UNDER FIRE</text>
+    <text x="30" y="140" class="st-hdr">1. Stretcher Bearers</text>
+    <text x="30" y="158" class="st-body">• <tspan class="st-bold">16 bearers per battalion</tspan> (4 per</text>
+    <text x="30" y="173" class="st-body">  stretcher; 6–8 in deep Ypres mud).</text>
+    <text x="30" y="190" class="st-body">• Recovered wounded from craters</text>
+    <text x="30" y="205" class="st-body">  at night or under shellfire.</text>
+    <text x="30" y="222" class="st-body">• Basic field dressing &amp; tourniquet.</text>
+  </g>
+
+  <!-- Card 2 (x=252..468) -->
+  <g filter="url(#cardShadow)">
+    <rect x="252" y="102" width="216" height="140" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+    <rect x="252" y="102" width="216" height="5" rx="2" fill="#d97706"/>
+    <text x="264" y="122" class="st-kicker" fill="#b45309">STAGE 2 · DUGOUT / CELLAR</text>
+    <text x="264" y="140" class="st-hdr">2. Regimental Aid Post</text>
+    <text x="264" y="158" class="st-body">• Staffed by <tspan class="st-bold">1 Regimental Medical</tspan></text>
+    <text x="264" y="173" class="st-body">  <tspan class="st-bold">Officer (RMO)</tspan> + orderlies.</text>
+    <text x="264" y="190" class="st-body">• Patched light wounds to return</text>
+    <text x="264" y="205" class="st-body">  men to trench; gave <tspan class="st-bold">morphine</tspan>.</text>
+    <text x="264" y="222" class="st-body">• <tspan class="st-bold">No major surgery</tspan> or beds.</text>
+  </g>
+
+  <!-- Card 3 (x=480..704) -->
+  <g filter="url(#cardShadow)">
+    <rect x="480" y="102" width="224" height="140" rx="7" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="480" y="102" width="224" height="5" rx="2" fill="#0284c7"/>
+    <text x="492" y="122" class="st-kicker" fill="#0369a1">STAGE 3 · ADS &amp; MDS RELAY</text>
+    <text x="492" y="140" class="st-hdr">3. Field Ambulance</text>
+    <text x="492" y="158" class="st-body">• Mobile RAMC unit (no nurses at</text>
+    <text x="492" y="173" class="st-body">  ADS; <tspan class="st-bold">FANY &amp; RAMC</tspan> ambulances).</text>
+    <text x="492" y="190" class="st-body">• Applied <tspan class="st-bold">Thomas Splints</tspan> &amp; gave</text>
+    <text x="492" y="205" class="st-body">  <tspan class="st-bold">anti-tetanus serum</tspan> + triage.</text>
+    <text x="492" y="222" class="st-body">• Overwhelmed on Day 1 of Somme.</text>
+  </g>
+
+  <!-- Card 4 (x=718..948) -->
+  <g filter="url(#cardShadow)">
+    <rect x="718" y="102" width="230" height="140" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+    <rect x="718" y="102" width="230" height="5" rx="2" fill="#0f766e"/>
+    <text x="730" y="122" class="st-kicker" fill="#0f766e">STAGE 4 · CRITICAL SURGICAL HUB</text>
+    <text x="730" y="140" class="st-hdr">4. Casualty Clearing Stn</text>
+    <text x="730" y="158" class="st-body">• ~1,000 capacity by railway; first</text>
+    <text x="730" y="173" class="st-body">  <tspan class="st-bold">QAs / VAD female nurses</tspan>.</text>
+    <text x="730" y="190" class="st-body">• <tspan class="st-bold">3-colour triage</tspan>, Mobile X-rays,</text>
+    <text x="730" y="205" class="st-body">  blood transfusions &amp; urgent</text>
+    <text x="730" y="222" class="st-body">  <tspan class="st-bold">gas-gangrene / limb surgery</tspan>.</text>
+  </g>
+
+  <!-- Card 5 (x=962..1182) -->
+  <g filter="url(#cardShadow)">
+    <rect x="962" y="102" width="220" height="140" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <rect x="962" y="102" width="220" height="5" rx="2" fill="#1d4ed8"/>
+    <text x="974" y="122" class="st-kicker" fill="#1d4ed8">STAGE 5 · SPECIALIST RECOVERY</text>
+    <text x="974" y="140" class="st-hdr">5. Base Hospital</text>
+    <text x="974" y="158" class="st-body">• 2,500+ beds on French coast</text>
+    <text x="974" y="173" class="st-body">  (Boulogne, Calais, Étaples).</text>
+    <text x="974" y="190" class="st-body">• Specialist brain/plastic wards,</text>
+    <text x="974" y="205" class="st-body">  <tspan class="st-bold">Carrel-Dakin</tspan> chemical tubes &amp;</text>
+    <text x="974" y="222" class="st-body">  <tspan class="st-bold">Hospital Ships to Britain</tspan>.</text>
+  </g>
+
+  <!-- ================= CROSS-SECTIONAL TERRAIN PROFILE (SLOPING LEFT-TO-RIGHT) ================= -->
+  <!-- Artillery Smoke Bursts Over Front-Line Trench (Far Left) -->
+  <g fill="#64748b" fill-opacity="0.28">
+    <circle cx="76" cy="322" r="22"/><circle cx="94" cy="314" r="16"/>
+    <circle cx="204" cy="306" r="18"/>
+  </g>
+  <g stroke="#ef4444" stroke-width="1.8" stroke-linecap="round">
+    <line x1="76" y1="322" x2="64" y2="308"/><line x1="76" y1="322" x2="88" y2="306"/>
+  </g>
+
+  <!-- Channel Harbour Water at Far Right (x=1124..1200, y=336..525) -->
+  <rect x="1124" y="336" width="76" height="190" fill="#0284c7"/>
+  <line x1="1124" y1="336" x2="1200" y2="336" stroke="#bae6fd" stroke-width="2.5"/>
+
+  <!-- Continuous Cross-Sectional Earth Profile Supporting Exact Station Heights -->
+  <!-- Ground heights: x=144 -> y=458; x=360 -> y=414; x=588 -> y=384; x=840 -> y=354; x=1068 -> y=324 -->
+  <path d="M 0,456 L 44,456 L 56,476 L 92,476 L 102,456
+           Q 144,462 192,452
+           L 260,422 L 322,422 L 330,434 L 392,434 L 402,412
+           L 510,386 L 672,382
+           L 756,356 L 932,354
+           L 986,326 L 1128,326 L 1128,656 L 0,656 Z"
+        fill="url(#earthCross)" stroke="#3b2614" stroke-width="2.2"/>
+
+  <!-- Grass / Paved Road / Rail Track Surface Strips -->
+  <!-- Muddy Cratered Road (RAP -> Field Ambulance -> CCS) -->
+  <path d="M 402,412 L 510,386 L 672,382 L 756,356" fill="none" stroke="#a8a29e" stroke-width="5"/>
+  <!-- Steel Railway Track from CCS (x=760, y=354) to Base Hospital Coast (x=1124, y=326) -->
+  <path d="M 760,354 L 932,352 L 986,324 L 1124,324" fill="none" stroke="#1e293b" stroke-width="5"/>
+  <path d="M 760,354 L 932,352 L 986,324 L 1124,324" fill="none" stroke="#e2e8f0" stroke-width="2.5" stroke-dasharray="6 5"/>
+
+  <!-- ================= STATION 1 AT (144, 435) = x:12%, y:58%: STRETCHER BEARERS ================= -->
+  <g id="station-1-bearers">
+    <!-- Barbed Wire Coils and Sandbagged Trench Parapet -->
+    <path d="M 22,456 L 28,444 L 34,456 L 40,444 L 46,456" fill="none" stroke="#334155" stroke-width="1.6"/>
+    <rect x="96" y="446" width="16" height="10" rx="3" fill="#ca8a04" stroke="#78350f" stroke-width="1"/>
+    <!-- Two Khaki Stretcher Bearers Carrying Wounded Soldier Centered at (144, 435) -->
+    <circle cx="144" cy="435" r="24" fill="#ef4444" fill-opacity="0.18" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <!-- Rear Bearer (x=118) and Front Bearer (x=170) + Canvas Stretcher right through (144, 435)! -->
+    <circle cx="118" cy="418" r="6" fill="#57534e"/>
+    <path d="M 113,456 L 115,425 L 123,425 L 125,456 Z" fill="#57534e"/>
+    <circle cx="170" cy="416" r="6" fill="#57534e"/>
+    <path d="M 165,454 L 167,423 L 175,423 L 177,454 Z" fill="#57534e"/>
+    <line x1="114" y1="436" x2="174" y2="434" stroke="#78350f" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 128,433 Q 144,426 160,432" fill="none" stroke="#dc2626" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Transport 1->2: Hand Carry / Walking Wounded -->
+  <g id="transport-1-2">
+    <path d="M 196,434 L 306,406" fill="none" stroke="#f59e0b" stroke-width="2.6" stroke-dasharray="6 3" marker-end="url(#arrGold)"/>
+    <text x="252" y="396" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.2" font-weight="800" fill="#78350f">Carry / Walk →</text>
+  </g>
+
+  <!-- ================= STATION 2 AT (360, 390) = x:30%, y:52%: REGIMENTAL AID POST (RAP) ================= -->
+  <g id="station-2-rap">
+    <!-- Sandbagged Ruined Cellar / Timber-Roofed Dugout Centered at (360, 390) -->
+    <rect x="322" y="368" width="76" height="64" rx="4" fill="#44403c" stroke="#1c1917" stroke-width="2"/>
+    <!-- Sandbag Bursting Layer Roof -->
+    <rect x="318" y="360" width="84" height="10" rx="4" fill="#ca8a04" stroke="#78350f" stroke-width="1.4"/>
+    <rect x="324" y="352" width="72" height="9" rx="4" fill="#eab308" stroke="#78350f" stroke-width="1.2"/>
+    <!-- Warm Lantern Interior + Red Cross Flag -->
+    <rect x="334" y="378" width="52" height="44" rx="3" fill="#fef3c7"/>
+    <circle cx="360" cy="390" r="23" fill="#f59e0b" fill-opacity="0.20" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <path d="M 360,382 L 360,398 M 352,390 L 368,390" stroke="#dc2626" stroke-width="3.5"/>
+  </g>
+
+  <!-- Transport 2->3: Horse and FANY/RAMC Motor Ambulance -->
+  <g id="transport-2-3">
+    <!-- Khaki Motor Ambulance Silhouette at x=456..504, y=368..396 -->
+    <rect x="452" y="368" width="38" height="22" rx="2" fill="#57534e" stroke="#1c1917" stroke-width="1.4"/>
+    <rect x="490" y="376" width="14" height="14" rx="1" fill="#57534e" stroke="#1c1917" stroke-width="1.4"/>
+    <circle cx="462" cy="392" r="5" fill="#1e293b"/><circle cx="496" cy="392" r="5" fill="#1e293b"/>
+    <circle cx="471" cy="379" r="6" fill="#ffffff"/>
+    <path d="M 471,375 L 471,383 M 467,379 L 475,379" stroke="#dc2626" stroke-width="2"/>
+    <path d="M 408,386 L 446,380" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrGold)"/>
+    <text x="476" y="358" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="800" fill="#1e293b">Motor / Horse Amb →</text>
+  </g>
+
+  <!-- ================= STATION 3 AT (588, 360) = x:49%, y:48%: FIELD AMBULANCE (ADS and MDS) ================= -->
+  <g id="station-3-field-amb">
+    <!-- Twin Canvas Medical Marquee Tents on Firm Ground Centered at (588, 360) -->
+    <polygon points="536,382 536,354 568,334 600,354 600,382" fill="#f5f5f4" stroke="#475569" stroke-width="1.8"/>
+    <polygon points="584,382 584,352 618,332 652,352 652,382" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+    <!-- Target Halo and Red Cross Centered Exactly at (588, 360) -->
+    <circle cx="588" cy="360" r="24" fill="#0284c7" fill-opacity="0.18" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <circle cx="588" cy="360" r="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.6"/>
+    <path d="M 588,354 L 588,366 M 582,360 L 594,360" stroke="#dc2626" stroke-width="3"/>
+  </g>
+
+  <!-- Transport 3->4: Motor Ambulance Convoy -->
+  <g id="transport-3-4">
+    <path d="M 658,362 L 758,342" fill="none" stroke="#f59e0b" stroke-width="2.8" stroke-dasharray="6 3" marker-end="url(#arrGold)"/>
+    <text x="708" y="336" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="800" fill="#1e293b">FANY / RAMC Convoy →</text>
+  </g>
+
+  <!-- ================= STATION 4 AT (840, 330) = x:70%, y:44%: CASUALTY CLEARING STATION (CCS) ================= -->
+  <g id="station-4-ccs">
+    <!-- Large Surgical Nissen Hut / Operating Marquee Complex + Mobile X-Ray Van at Railhead (840, 330) -->
+    <rect x="774" y="324" width="38" height="24" rx="3" fill="#334155" stroke="#0f172a" stroke-width="1.4"/>
+    <circle cx="783" cy="350" r="4.5" fill="#0f172a"/><circle cx="803" cy="350" r="4.5" fill="#0f172a"/>
+    <text x="793" y="339" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="7.5" font-weight="800" fill="#38bdf8">X-RAY</text>
+
+    <!-- Main CCS Surgical Pavilion Centered at (840, 330) -->
+    <polygon points="814,352 814,318 848,298 886,318 886,352" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+    <rect x="886" y="322" width="38" height="30" fill="#f1f5f9" stroke="#0f766e" stroke-width="1.6"/>
+    <circle cx="840" cy="330" r="24" fill="#10b981" fill-opacity="0.18" stroke="#0f766e" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <path d="M 840,321 L 840,339 M 831,330 L 849,330" stroke="#dc2626" stroke-width="3.6"/>
+  </g>
+
+  <!-- Transport 4->5: Red Cross Ambulance Train and Canal Barge -->
+  <g id="transport-4-5">
+    <!-- Red Cross Ambulance Train Coach on Rail Track (x=934..1002, y=306..328) -->
+    <rect x="936" y="304" width="66" height="20" rx="3" fill="#f8fafc" stroke="#334155" stroke-width="1.6"/>
+    <circle cx="948" cy="326" r="4" fill="#0f172a"/><circle cx="988" cy="326" r="4" fill="#0f172a"/>
+    <path d="M 969,309 L 969,319 M 964,314 L 974,314" stroke="#dc2626" stroke-width="2.4"/>
+    <text x="969" y="297" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="800" fill="#0f766e">Amb Train / Barge →</text>
+  </g>
+
+  <!-- ================= STATION 5 AT (1068, 300) = x:89%, y:40%: COASTAL BASE HOSPITAL and SHIP ================= -->
+  <g id="station-5-base">
+    <!-- Multi-Storey Coastal Brick/Stone Base Hospital Centered at (1068, 300) -->
+    <rect x="1022" y="274" width="92" height="52" rx="3" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
+    <polygon points="1018,274 1068,254 1118,274" fill="#1e3a8a"/>
+    <!-- Hospital Windows -->
+    <g fill="#bae6fd" stroke="#1e3a8a" stroke-width="0.9">
+      <rect x="1030" y="282" width="10" height="12"/><rect x="1046" y="282" width="10" height="12"/>
+      <rect x="1080" y="282" width="10" height="12"/><rect x="1096" y="282" width="10" height="12"/>
+      <rect x="1030" y="302" width="10" height="12"/><rect x="1096" y="302" width="10" height="12"/>
+    </g>
+    <!-- Target Halo and Red Cross Centered Exactly at (1068, 300) -->
+    <circle cx="1068" cy="300" r="24" fill="#1d4ed8" fill-opacity="0.18" stroke="#1d4ed8" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <circle cx="1068" cy="300" r="11" fill="#ffffff" stroke="#dc2626" stroke-width="1.8"/>
+    <path d="M 1068,293 L 1068,307 M 1061,300 L 1075,300" stroke="#dc2626" stroke-width="3.2"/>
+
+    <!-- White Red Cross Hospital Ship Moored at Channel Quay (x=1130..1196, y=312..342) -->
+    <polygon points="1132,328 1196,328 1190,342 1138,342" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="1135" y1="334" x2="1193" y2="334" stroke="#10b981" stroke-width="2.5"/>
+    <rect x="1154" y="314" width="10" height="14" fill="#f59e0b" stroke="#0f172a" stroke-width="1.1"/>
+    <text x="1164" y="360" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="800" fill="#ffffff">TO UK ▶</text>
+  </g>
+
+  <!-- ================= SUB-SURFACE EVACUATION FLOW and TRANSPORT SUMMARY RIBBON (y=502..642) ================= -->
+  <rect x="20" y="504" width="1160" height="136" rx="10" fill="#1e293b" fill-opacity="0.94" stroke="#64748b" stroke-width="1.5"/>
+  <text x="40" y="528" font-family="'Inter', Arial, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#fbbf24">TRANSPORT EVOLUTION ACROSS THE EVACUATION PIPELINE (WHY SPEED SAVED LIVES AGAINST GAS GANGRENE)</text>
+
+  <!-- 4 Transport Connector Boxes Inside Sub-Surface Ribbon -->
+  <rect x="38" y="540" width="265" height="84" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+  <text x="52" y="560" class="trans-lbl">1 → 2: Stretcher Carry (Under Fire)</text>
+  <text x="52" y="577" class="trans-sub">• Shell craters, barbed wire &amp; Flanders</text>
+  <text x="52" y="592" class="trans-sub">  mud slowed carry to hours; high</text>
+  <text x="52" y="607" class="trans-sub">  casualty rate among RAMC bearers.</text>
+
+  <rect x="319" y="540" width="275" height="84" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+  <text x="333" y="560" class="trans-lbl">2 → 3 → 4: Horse &amp; Motor Ambulances</text>
+  <text x="333" y="577" class="trans-sub">• 1914: RAMC sent ZERO motor ambulances!</text>
+  <text x="333" y="592" class="trans-sub">• Public <tspan font-weight="700" fill="#ffffff">Times</tspan> appeal bought 512 motor vans;</text>
+  <text x="333" y="607" class="trans-sub">  6-horse wagons still vital in deep mud.</text>
+
+  <rect x="610" y="540" width="275" height="84" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+  <text x="624" y="560" class="trans-lbl">FANY Women Drivers (From 1916)</text>
+  <text x="624" y="577" class="trans-sub">• First Aid Nursing Yeomanry drove</text>
+  <text x="624" y="592" class="trans-sub">  night convoys under air raids, repaired</text>
+  <text x="624" y="607" class="trans-sub">  engines &amp; freed male orderlies for front.</text>
+
+  <rect x="901" y="540" width="261" height="84" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+  <text x="915" y="560" class="trans-lbl">4 → 5: Ambulance Trains &amp; Barges</text>
+  <text x="915" y="577" class="trans-sub">• 30+ custom <tspan font-weight="700" fill="#ffffff">Ambulance Trains</tspan> with</text>
+  <text x="915" y="592" class="trans-sub">  operating theatres; slow, smooth <tspan font-weight="700" fill="#ffffff">Canal</tspan></text>
+  <text x="915" y="607" class="trans-sub">  <tspan font-weight="700" fill="#ffffff">Barges</tspan> spared head/chest wounds jolting.</text>
+
+  <!-- ================= BOTTOM CLINICAL BREAKTHROUGH and TRIAGE STRIP (y=656..750) ================= -->
+  <rect x="0" y="656" width="1200" height="94" fill="#0f172a"/>
+  <line x1="0" y1="656" x2="1200" y2="656" stroke="#f59e0b" stroke-width="2.5"/>
+
+  <rect x="20" y="670" width="568" height="66" rx="7" fill="#1e293b" stroke="#10b981" stroke-width="1.4"/>
+  <text x="36" y="691" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="800" fill="#6ee7b7">KEY EXAM STAT · WHY THE CCS BECAME THE DECISIVE SURGICAL STAGE</text>
+  <text x="36" y="709" font-family="'Inter', Arial, sans-serif" font-size="10.8" fill="#f8fafc">Waiting for Base Hospitals let <tspan font-weight="700">gas gangrene</tspan> kill men in 24 hrs; moving surgery forward to</text>
+  <text x="36" y="725" font-family="'Inter', Arial, sans-serif" font-size="10.8" fill="#f8fafc">the <tspan font-weight="700">CCS</tspan> + <tspan font-weight="700" fill="#fde68a">Thomas Splints (Dec 1915)</tspan> cut compound femur mortality from <tspan font-weight="700" fill="#fca5a5">80%</tspan> to <tspan font-weight="700" fill="#6ee7b7">under 20%</tspan>!</text>
+
+  <rect x="608" y="670" width="572" height="66" rx="7" fill="#1e293b" stroke="#38bdf8" stroke-width="1.4"/>
+  <text x="624" y="691" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="800" fill="#7dd3fc">RAMC THREE-CATEGORY TRIAGE SYSTEM AT ADS / CCS</text>
+  <text x="624" y="709" font-family="'Inter', Arial, sans-serif" font-size="10.8" fill="#f8fafc"><tspan font-weight="700" fill="#86efac">1. Walking Wounded:</tspan> Patch &amp; return to unit · <tspan font-weight="700" fill="#fde047">2. Urgent Surgery:</tspan> Immediate theatre /</text>
+  <text x="624" y="725" font-family="'Inter', Arial, sans-serif" font-size="10.8" fill="#f8fafc">transfusion at CCS · <tspan font-weight="700" fill="#fca5a5">3. Moribund (Beyond Saving):</tspan> Morphine &amp; quiet comfort care.</text>
+
+  <!-- Outer Neatline -->
+  <rect x="1" y="1" width="1198" height="748" fill="none" stroke="#334155" stroke-width="1.5"/>
+</svg>

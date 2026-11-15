@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="wf-map-title wf-map-desc">
+  <title id="wf-map-title">The British Sector of the Western Front: Terrain, Battles &amp; Medical Evacuation (1914–1918)</title>
+  <desc id="wf-map-desc">Edexcel GCSE History GIS map of Flanders and Northern France showing the English Channel, Calais, Boulogne and Étaples Base Hospitals (18%, 28%), the waterlogged Ypres Salient (58%, 26%), Arras and its underground chalk caves (53%, 56%), the Somme battlefield (55%, 76%), Cambrai and Capt. Robertson's first blood bank (68%, 66%), and westward rail and canal evacuation routes.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .overline { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 2px; fill: #fbbf24; }
+      .hdr-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 19.8px; font-weight: 700; fill: #f8fafc; }
+      .pill-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 0.9px; fill: #fde68a; }
+      .sea-lbl { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 15px; font-style: italic; font-weight: 700; fill: #0369a1; letter-spacing: 1.5px; }
+      .country-lbl { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 3.5px; fill: #64748b; paint-order: stroke fill; stroke: rgba(255,255,255,0.75); stroke-width: 3px; }
+      .poi-hdr { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 11.5px; font-weight: 800; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.8px; stroke-linejoin: round; }
+      .poi-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 700; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.2px; stroke-linejoin: round; }
+      .town-lbl { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 700; fill: #1e293b; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.2px; stroke-linejoin: round; }
+      .leg-hdr { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; fill: #0f172a; }
+      .leg-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 500; fill: #475569; }
+    ]]></style>
+    <clipPath id="wfViewport">
+      <rect x="0" y="64" width="1200" height="622"/>
+    </clipPath>
+    <linearGradient id="channelWater" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#cbe8fb"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrEvacBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrTankGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#15803d"/>
+    </marker>
+  </defs>
+
+  <!-- ================= GIS MAP VIEWPORT (y=64..686) ================= -->
+  <g clip-path="url(#wfViewport)">
+    <!-- English Channel / Strait of Dover Base Water -->
+    <rect x="0" y="64" width="1200" height="622" fill="url(#channelWater)"/>
+
+    <!-- South-East England / Kent Coast (Top-Left: Dover and Folkestone) -->
+    <path d="M 0,64 L 182,64 C 176,92 152,118 122,134 C 86,152 42,158 0,164 Z"
+          fill="#e7e3d6" stroke="#0284c7" stroke-width="1.8"/>
+    <circle cx="122" cy="126" r="4.5" fill="#0f172a" stroke="#ffffff" stroke-width="1.4"/>
+    <text x="108" y="116" text-anchor="end" class="town-lbl">DOVER ("BLIGHTY")</text>
+    <text x="58" y="92" class="country-lbl" font-size="11" style="font-size: 11px;">BRITAIN</text>
+
+    <!-- Continental Landmass: Flanders (Belgium) and Artois / Picardy (Northern France) -->
+    <path d="M 604,64 L 1200,64 L 1200,686 L 132,686
+             C 146,638 168,582 192,526
+             C 202,502 184,492 208,482
+             C 220,442 228,368 230,294
+             C 232,256 222,232 216,210
+             C 208,192 202,178 216,166
+             C 238,152 262,148 286,142
+             C 348,128 408,116 462,102
+             C 518,88 564,76 604,64 Z"
+          fill="#ede8db" stroke="#0284c7" stroke-width="1.8"/>
+
+    <!-- German-Held Eastern Territory Subtle Tint (East of Allied Front Line) -->
+    <path d="M 588,68 L 636,132 L 664,158 C 718,164 742,182 738,202 C 732,222 696,236 664,252
+             L 656,282 L 642,340 L 650,384 L 642,424 L 686,476 L 748,502 L 704,548 L 692,588 L 728,686
+             L 1200,686 L 1200,64 L 588,64 Z"
+          fill="#e2dcd0" fill-opacity="0.72"/>
+
+    <!-- TERRAIN ZONE 1: WATERLOGGED LOW-LYING FLANDERS CLAY (Around Ypres and Yser) -->
+    <path d="M 488,98 C 560,82 650,82 756,118 C 792,158 784,234 724,264 C 652,278 556,262 504,218 C 476,184 472,134 488,98 Z"
+          fill="#cde0cc" fill-opacity="0.72" stroke="#65a30d" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="562" y="132" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="800" letter-spacing="0.8" fill="#365314">WATERLOGGED FLANDERS CLAY</text>
+    <text x="562" y="145" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="600" fill="#3f6212">(Flooded trenches · Trench foot · Gas gangrene)</text>
+
+    <!-- TERRAIN ZONE 2: ARTOIS and PICARDY CHALK UPLANDS (Vimy, Arras, Somme, Cambrai) -->
+    <path d="M 456,368 C 548,342 748,348 874,404 C 912,468 896,598 788,646 C 656,668 486,654 428,588 C 398,524 416,416 456,368 Z"
+          fill="#faf6eb" fill-opacity="0.78" stroke="#a16207" stroke-opacity="0.40" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="488" y="544" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="800" letter-spacing="0.8" fill="#78350f">ARTOIS &amp; PICARDY CHALK</text>
+    <text x="488" y="557" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="600" fill="#92400e">(Firm chalk · Underground caves &amp; mines)</text>
+
+    <!-- Subtle Atlas Graticule -->
+    <g stroke="#64748b" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="4 4">
+      <line x1="250" y1="64" x2="250" y2="686"/><line x1="550" y1="64" x2="550" y2="686"/><line x1="850" y1="64" x2="850" y2="686"/>
+      <line x1="0" y1="220" x2="1200" y2="220"/><line x1="0" y1="430" x2="1200" y2="430"/><line x1="0" y1="640" x2="1200" y2="640"/>
+    </g>
+
+    <!-- Major Rivers and Canals (Yser, Lys, Scarpe, Somme, Scheldt) -->
+    <g fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round">
+      <!-- Yser River (Nieuport -> Dixmude -> Ypres Canal) -->
+      <path d="M 588,72 Q 628,118 648,154 Q 662,176 672,195"/>
+      <!-- River Lys (Aire -> Armentières -> Menin) -->
+      <path d="M 462,276 Q 566,282 656,272 Q 718,248 768,218"/>
+      <!-- River Scarpe (Arras -> Douai) -->
+      <path d="M 596,422 L 636,420 Q 708,408 776,386"/>
+      <!-- River Somme (Estuary -> Abbeville -> Amiens -> Albert/Somme -> Péronne) -->
+      <path d="M 198,492 Q 292,536 392,572 Q 454,596 502,594 Q 588,584 660,570 Q 718,576 764,598"/>
+    </g>
+
+    <!-- Franco-Belgian International Border (Dashed) -->
+    <path d="M 508,90 L 566,158 L 608,224 L 664,254 L 748,272 L 856,318 L 992,356"
+          fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="8 4"/>
+    <text x="802" y="102" class="country-lbl">BELGIUM (FLANDERS)</text>
+    <text x="366" y="458" class="country-lbl">NORTHERN FRANCE</text>
+    <text x="988" y="256" class="country-lbl" fill="#7f1d1d" font-size="11.5" style="fill: #7f1d1d; font-size: 11.5px;">GERMAN-OCCUPIED</text>
+    <text x="988" y="274" class="country-lbl" fill="#7f1d1d" font-size="11.5" style="fill: #7f1d1d; font-size: 11.5px;">REAR ZONE</text>
+
+    <!-- ================= WESTWARD RAIL and CANAL MEDICAL EVACUATION LINES ================= -->
+    <g fill="none" stroke="#0369a1" stroke-width="2.8" stroke-dasharray="7 4">
+      <!-- Northern Line: Poperinghe (Ypres CCS) -> Hazebrouck -> St Omer -> Calais and Boulogne -->
+      <path d="M 614,196 L 516,228 L 398,204 L 274,148"/>
+      <path d="M 398,204 L 228,210" marker-end="url(#arrEvacBlue)"/>
+      <!-- Central Line: Bailleul / Béthune / Arras -> St Pol -> Étaples -->
+      <path d="M 624,420 L 468,382 L 246,296" marker-end="url(#arrEvacBlue)"/>
+      <path d="M 588,334 L 468,382"/>
+      <!-- Southern Line: Somme / Albert -> Amiens -> Abbeville -> Boulogne / Étaples -->
+      <path d="M 646,570 L 498,594 L 306,536 L 232,312" marker-end="url(#arrEvacBlue)"/>
+    </g>
+    <!-- Hospital Ship Sea Lanes Across English Channel to Dover and Southampton -->
+    <g fill="none" stroke="#0284c7" stroke-width="2.4" stroke-dasharray="5 4">
+      <path d="M 258,144 Q 192,134 134,128" marker-end="url(#arrEvacBlue)"/>
+      <path d="M 202,206 Q 158,168 126,136" marker-end="url(#arrEvacBlue)"/>
+      <path d="M 218,292 Q 112,312 18,296" marker-end="url(#arrEvacBlue)"/>
+    </g>
+    <text x="96" y="346" text-anchor="middle" class="sea-lbl">ENGLISH</text>
+    <text x="96" y="366" text-anchor="middle" class="sea-lbl">CHANNEL</text>
+    <text x="96" y="284" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.2" font-weight="800" fill="#0369a1">← Hospital Ships to UK</text>
+
+    <!-- ================= ALLIED WESTERN FRONT TRENCH TRACE (1914–1918) ================= -->
+    <!-- Outer Crimson Glow -->
+    <path d="M 588,68 L 636,132 L 664,158 C 718,164 742,182 738,202 C 732,222 696,236 664,252
+             L 656,282 L 642,340 L 650,384 L 636,420 L 678,478 L 726,502 L 692,538 L 660,570 L 696,634 L 724,686"
+          fill="none" stroke="#fca5a5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Main Fortified Trench Line -->
+    <path d="M 588,68 L 636,132 L 664,158 C 718,164 742,182 738,202 C 732,222 696,236 664,252
+             L 656,282 L 642,340 L 650,384 L 636,420 L 678,478 L 726,502 L 692,538 L 660,570 L 696,634 L 724,686"
+          fill="none" stroke="#b91c1c" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Supporting Sector Towns and Railhead CCS Hubs -->
+    <g fill="#1e293b" stroke="#ffffff" stroke-width="1.4">
+      <circle cx="588" cy="74" r="4"/> <!-- Nieuport -->
+      <circle cx="436" cy="108" r="4"/> <!-- Dunkirk -->
+      <circle cx="614" cy="196" r="4"/> <!-- Poperinghe CCS -->
+      <circle cx="516" cy="228" r="4"/> <!-- Hazebrouck -->
+      <circle cx="656" cy="276" r="4.5"/> <!-- Armentières -->
+      <circle cx="642" cy="340" r="4.5"/> <!-- Loos -->
+      <circle cx="650" cy="382" r="4.5"/> <!-- Vimy Ridge -->
+      <circle cx="498" cy="594" r="4.5"/> <!-- Amiens -->
+      <circle cx="716" cy="528" r="4"/> <!-- Bapaume -->
+    </g>
+    <text x="576" y="80" text-anchor="end" class="town-lbl">Nieuport</text>
+    <text x="436" y="124" text-anchor="middle" class="town-lbl">Dunkirk</text>
+    <text x="598" y="192" text-anchor="end" class="town-lbl" font-size="9.5" style="font-size: 9.5px;">Poperinghe (CCS)</text>
+    <text x="516" y="244" text-anchor="middle" class="town-lbl" font-size="9.5" style="font-size: 9.5px;">Hazebrouck</text>
+    <text x="670" y="280" class="town-lbl">Armentières</text>
+    <text x="628" y="344" text-anchor="end" class="town-lbl">Loos (1915)</text>
+    <text x="664" y="386" class="town-lbl">Vimy Ridge</text>
+    <text x="498" y="612" text-anchor="middle" class="town-lbl">Amiens (Rail Hub)</text>
+    <text x="730" y="532" class="town-lbl" font-size="9.5" style="font-size: 9.5px;">Bapaume</text>
+
+    <!-- ================= HOTSPOT 1: CALAIS, BOULOGNE and ÉTAPLES BASE HOSPITALS AT (216, 210) = x:18%, y:28% ================= -->
+    <g id="hotspot-coastal-bases">
+      <!-- Calais and Étaples Companion Red Cross Badges -->
+      <rect x="263" y="137" width="18" height="18" rx="4" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
+      <path d="M 272,141 L 272,151 M 267,146 L 277,146" stroke="#dc2626" stroke-width="2.6"/>
+      <text x="288" y="150" class="town-lbl" fill="#991b1b" style="fill: #991b1b;">Calais (Base)</text>
+
+      <rect x="221" y="285" width="18" height="18" rx="4" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
+      <path d="M 230,289 L 230,299 M 225,294 L 235,294" stroke="#dc2626" stroke-width="2.6"/>
+      <text x="246" y="298" class="town-lbl" fill="#991b1b" style="fill: #991b1b;">Étaples (20k+ beds)</text>
+
+      <!-- Main Pin 1 Target Centered Exactly at Boulogne-sur-Mer (216, 210) -->
+      <circle cx="216" cy="210" r="24" fill="#0284c7" fill-opacity="0.18" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <rect x="205" y="199" width="22" height="22" rx="5" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+      <path d="M 216,204 L 216,216 M 210,210 L 222,210" stroke="#dc2626" stroke-width="3.2"/>
+      <!-- Label Placed Cleanly Left Over Channel (x=108) so (216, 210) is 100% Unobstructed! -->
+      <text x="104" y="206" text-anchor="middle" class="poi-hdr" fill="#0c4a6e">BOULOGNE, CALAIS</text>
+      <text x="104" y="220" text-anchor="middle" class="poi-hdr" fill="#0c4a6e">&amp; ÉTAPLES BASES</text>
+      <text x="104" y="234" text-anchor="middle" class="poi-sub" fill="#0369a1">Coastal Base Hospitals</text>
+    </g>
+
+    <!-- ================= HOTSPOT 2: THE YPRES SALIENT AT (696, 195) = x:58%, y:26% ================= -->
+    <g id="hotspot-ypres">
+      <!-- 3-Sided German High-Ground Shellfire Arcs Wrapping the Salient -->
+      <path d="M 744,158 C 768,176 768,214 744,232" fill="none" stroke="#7f1d1d" stroke-width="2.2" stroke-dasharray="4 3"/>
+      <circle cx="696" cy="195" r="24" fill="#dc2626" fill-opacity="0.18" stroke="#b91c1c" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <circle cx="696" cy="195" r="7" fill="#b91c1c" stroke="#ffffff" stroke-width="1.8"/>
+      <!-- Labels Cleanly Offset Above/Right of (696, 195) -->
+      <text x="790" y="176" class="poi-hdr" fill="#991b1b">THE YPRES SALIENT</text>
+      <text x="790" y="191" class="poi-sub" fill="#7f1d1d">1914 · 1915 Chlorine Gas</text>
+      <text x="790" y="205" class="poi-sub" fill="#7f1d1d">1917 Passchendaele Mud</text>
+      <line x1="784" y1="188" x2="722" y2="193" stroke="#b91c1c" stroke-width="1.4"/>
+    </g>
+
+    <!-- ================= HOTSPOT 3: ARRAS and UNDERGROUND CHALK CAVES AT (636, 420) = x:53%, y:56% ================= -->
+    <g id="hotspot-arras">
+      <circle cx="636" cy="420" r="24" fill="#d97706" fill-opacity="0.18" stroke="#b45309" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <!-- Underground Tunnel Arch Symbol at (636, 420) -->
+      <path d="M 626,427 L 626,417 A 10,10 0 0,1 646,417 L 646,427 Z" fill="#78350f" stroke="#ffffff" stroke-width="1.8"/>
+      <!-- Labels Cleanly Offset West of (636, 420) -->
+      <text x="512" y="416" text-anchor="middle" class="poi-hdr" fill="#78350f">ARRAS &amp; CHALK CAVES</text>
+      <text x="512" y="431" text-anchor="middle" class="poi-sub" fill="#92400e">Apr 1917 · Thompson's Cave Hospital</text>
+      <line x1="588" y1="420" x2="610" y2="420" stroke="#b45309" stroke-width="1.4"/>
+    </g>
+
+    <!-- ================= HOTSPOT 4: THE SOMME AT (660, 570) = x:55%, y:76% ================= -->
+    <g id="hotspot-somme">
+      <circle cx="660" cy="570" r="24" fill="#dc2626" fill-opacity="0.18" stroke="#b91c1c" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <circle cx="660" cy="570" r="7.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.8"/>
+      <!-- Labels Cleanly Offset Below (660, 570) at y=612..627 -->
+      <text x="660" y="613" text-anchor="middle" class="poi-hdr" fill="#991b1b">THE SOMME (JULY–NOV 1916)</text>
+      <text x="660" y="628" text-anchor="middle" class="poi-sub" fill="#7f1d1d">57,470 Day-1 Casualties · Forward CCS</text>
+    </g>
+
+    <!-- ================= HOTSPOT 5: CAMBRAI AT (816, 495) = x:68%, y:66% ================= -->
+    <g id="hotspot-cambrai">
+      <!-- Nov 1917 Massed Tank Thrust Arrow Toward Cambrai -->
+      <line x1="726" y1="495" x2="788" y2="495" stroke="#15803d" stroke-width="3.2" marker-end="url(#arrTankGreen)"/>
+      <circle cx="816" cy="495" r="24" fill="#15803d" fill-opacity="0.18" stroke="#15803d" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <!-- Blood Depot Drop Badge at (816, 495) -->
+      <path d="M 816,484 C 822,492 824,497 824,501 A 8,8 0 1,1 808,501 C 808,497 810,492 816,484 Z"
+            fill="#dc2626" stroke="#ffffff" stroke-width="1.6"/>
+      <!-- Labels Cleanly Offset East/Right of (816, 495) -->
+      <text x="942" y="488" text-anchor="middle" class="poi-hdr" fill="#14532d">CAMBRAI (NOV–DEC 1917)</text>
+      <text x="942" y="503" text-anchor="middle" class="poi-sub" fill="#166534">476 Tanks · Robertson's 1st Blood Depot</text>
+      <line x1="842" y1="495" x2="862" y2="495" stroke="#15803d" stroke-width="1.4"/>
+    </g>
+
+    <!-- Bottom-Right Compass and Scale Card (x=996..1182, y=620..674) -->
+    <g filter="url(#cardShadow)">
+      <rect x="996" y="620" width="186" height="52" rx="6" fill="#ffffff" fill-opacity="0.95" stroke="#94a3b8" stroke-width="1.2"/>
+      <g transform="translate(1018, 646)">
+        <polygon points="0,-13 5.5,6 0,2.5" fill="#0f172a"/>
+        <polygon points="0,-13 -5.5,6 0,2.5" fill="#94a3b8" stroke="#0f172a" stroke-width="0.6"/>
+        <text x="0" y="16" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="800" fill="#0f172a">N</text>
+      </g>
+      <line x1="1036" y1="628" x2="1036" y2="664" stroke="#cbd5e1" stroke-width="1"/>
+      <rect x="1048" y="650" width="52" height="5.5" fill="#0f172a"/>
+      <rect x="1100" y="650" width="52" height="5.5" fill="#ffffff" stroke="#0f172a" stroke-width="0.9"/>
+      <text x="1048" y="644" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#334155">0</text>
+      <text x="1100" y="644" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#334155">15</text>
+      <text x="1152" y="644" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#0f172a">30 miles</text>
+    </g>
+  </g>
+
+  <!-- Top Header Banner (y=0..64) -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="26" y="23" class="overline">EDEXCEL GCSE HISTORY · HISTORIC ENVIRONMENT (PAPER 1 SECTION A)</text>
+  <text x="26" y="48" class="hdr-title">The British Sector of the Western Front: Terrain, Battles &amp; Medical Evacuation (1914–1918)</text>
+  <rect x="984" y="17" width="190" height="30" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1.2"/>
+  <text x="1079" y="36" text-anchor="middle" class="pill-txt">FLANDERS &amp; ARTOIS</text>
+
+  <!-- Bottom Cartographic Legend Strip (y=686..750) -->
+  <rect x="0" y="686" width="1200" height="64" fill="#f8fafc"/>
+  <line x1="0" y1="686" x2="1200" y2="686" stroke="#cbd5e1" stroke-width="1.6"/>
+
+  <!-- Swatch 1 -->
+  <line x1="24" y1="712" x2="52" y2="712" stroke="#fca5a5" stroke-width="7" stroke-linecap="round"/>
+  <line x1="24" y1="712" x2="52" y2="712" stroke="#b91c1c" stroke-width="3" stroke-linecap="round"/>
+  <text x="62" y="711" class="leg-hdr">Allied Front-Line Trench</text>
+  <text x="62" y="725" class="leg-sub">Approximate 1915–1917 trace</text>
+
+  <!-- Swatch 2 -->
+  <rect x="258" y="703" width="20" height="16" rx="3" fill="#cde0cc" stroke="#65a30d" stroke-width="1.4"/>
+  <text x="286" y="711" class="leg-hdr">Flanders Low Clay</text>
+  <text x="286" y="725" class="leg-sub">Waterlogged mud &amp; trench foot</text>
+
+  <!-- Swatch 3 -->
+  <rect x="488" y="703" width="20" height="16" rx="3" fill="#faf6eb" stroke="#a16207" stroke-width="1.4"/>
+  <text x="516" y="711" class="leg-hdr">Artois/Picardy Chalk</text>
+  <text x="516" y="725" class="leg-sub">Firm rock for Arras caves</text>
+
+  <!-- Swatch 4 -->
+  <line x1="712" y1="712" x2="742" y2="712" stroke="#0369a1" stroke-width="2.6" stroke-dasharray="6 3"/>
+  <text x="750" y="711" class="leg-hdr">Evacuation Rail / Sea</text>
+  <text x="750" y="725" class="leg-sub">Ambulance trains &amp; ships</text>
+
+  <!-- Swatch 5 -->
+  <rect x="954" y="702" width="18" height="18" rx="4" fill="#ffffff" stroke="#dc2626" stroke-width="1.8"/>
+  <path d="M 963,706 L 963,716 M 958,711 L 968,711" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="980" y="711" class="leg-hdr">Coastal Base Hospitals</text>
+  <text x="980" y="725" class="leg-sub">Calais, Boulogne &amp; Étaples</text>
+
+  <!-- Outer Neatline -->
+  <rect x="1" y="1" width="1198" height="748" fill="none" stroke="#334155" stroke-width="1.5"/>
+</svg>

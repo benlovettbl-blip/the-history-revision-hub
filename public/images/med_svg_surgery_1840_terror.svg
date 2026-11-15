@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="surg1840-title surg1840-desc">
+  <title id="surg1840-title">c.1840 Operating Theatre: Pain, Sepsis &amp; Blood Loss Unsolved</title>
+  <desc id="surg1840-desc">Architectural cross-section of an early-Victorian c.1840 operating theatre before anaesthesia and antiseptics: a conscious patient held down on a blood-stained wooden table, a surgeon in an unwashed blood-stiffened frock coat with bare hands and unsterilised bone saw, a blood-soaked sawdust box underneath, and a crowded unwashed student gallery, resulting in ~45–50% post-operative sepsis mortality.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .overline { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 2px; fill: #fca5a5; }
+      .hdr-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 20.5px; font-weight: 700; fill: #fef2f2; }
+      .pill-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 1px; fill: #fecaca; }
+      .card-kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 800; letter-spacing: 1.1px; fill: #991b1b; }
+      .card-hdr { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 13.8px; font-weight: 700; fill: #29150e; }
+      .card-body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.8px; font-weight: 500; fill: #443127; }
+      .card-bold { font-weight: 700; fill: #991b1b; }
+      .scene-tag { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.5px; }
+    ]]></style>
+    <linearGradient id="wall1840" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfd5c3"/>
+      <stop offset="100%" stop-color="#c9bba4"/>
+    </linearGradient>
+    <linearGradient id="skylightGrime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1c1917" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrRed1840" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+
+  <!-- Base Frame -->
+  <rect x="0" y="0" width="1200" height="750" fill="#ede5d5"/>
+
+  <!-- Top Header Band (Pixel-Registered y=0..72) -->
+  <rect x="0" y="0" width="1200" height="72" fill="#231210"/>
+  <line x1="0" y1="72" x2="1200" y2="72" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="28" y="25" class="overline">EDEXCEL GCSE HISTORY · EARLY VICTORIAN SURGERY (THE THREE BARRIERS)</text>
+  <text x="28" y="53" class="hdr-title">c.1840 Operating Theatre: Pain, Sepsis &amp; Blood Loss Unsolved</text>
+  <rect x="954" y="21" width="218" height="30" rx="6" fill="#450a0a" stroke="#ef4444" stroke-width="1.3"/>
+  <text x="1063" y="40" text-anchor="middle" class="pill-txt">c.1840 · "DEATH-TRAP" ERA</text>
+
+  <!-- ================= PIXEL-REGISTERED CEILING and SKYLIGHT (y=72..118) ================= -->
+  <rect x="0" y="72" width="1200" height="46" fill="#3b281e"/>
+  <!-- Skylight Window (x=240..840, y=72..112) -->
+  <polygon points="240,72 840,72 810,112 270,112" fill="url(#skylightGrime)" stroke="#1f1611" stroke-width="2"/>
+  <g stroke="#475569" stroke-width="1.8">
+    <line x1="390" y1="72" x2="405" y2="112"/>
+    <line x1="540" y1="72" x2="540" y2="112"/>
+    <line x1="690" y1="72" x2="675" y2="112"/>
+  </g>
+  <text x="540" y="96" text-anchor="middle" class="scene-tag" fill="#1e293b">SOOT-STAINED SKYLIGHT (ONLY LIGHT SOURCE — OPERATIONS HELD AT NOON)</text>
+
+  <!-- ================= PIXEL-REGISTERED ROOM ARCHITECTURE (y=118..658) ================= -->
+  <!-- Back Plaster Wall (x=0..1200, y=118..548) -->
+  <rect x="0" y="118" width="1200" height="430" fill="url(#wall1840)"/>
+  <!-- Damp / Soot Wall Stains and Floating Dust Microbe Motes -->
+  <g fill="#78716c" fill-opacity="0.22">
+    <circle cx="310" cy="295" r="24"/><circle cx="755" cy="278" r="32"/><circle cx="195" cy="332" r="18"/>
+  </g>
+  <!-- Porous Dark Timber Wainscoting Dado (y=430..548) -->
+  <rect x="0" y="430" width="860" height="118" fill="#5c4028" stroke="#3b2616" stroke-width="2"/>
+  <g stroke="#462f1c" stroke-width="1.2">
+    <line x1="80" y1="430" x2="80" y2="548"/><line x1="160" y1="430" x2="160" y2="548"/>
+    <line x1="240" y1="430" x2="240" y2="548"/><line x1="320" y1="430" x2="320" y2="548"/>
+    <line x1="400" y1="430" x2="400" y2="548"/><line x1="480" y1="430" x2="480" y2="548"/>
+    <line x1="560" y1="430" x2="560" y2="548"/><line x1="640" y1="430" x2="640" y2="548"/>
+    <line x1="720" y1="430" x2="720" y2="548"/><line x1="800" y1="430" x2="800" y2="548"/>
+  </g>
+
+  <!-- Stained Porous Wooden Floorboards (y=548..658) -->
+  <rect x="0" y="548" width="1200" height="110" fill="#6b4c35"/>
+  <line x1="0" y1="548" x2="1200" y2="548" stroke="#29190e" stroke-width="3"/>
+  <g stroke="#4d3523" stroke-width="1.2">
+    <line x1="0" y1="574" x2="1200" y2="574"/>
+    <line x1="0" y1="602" x2="1200" y2="602"/>
+    <line x1="0" y1="630" x2="1200" y2="630"/>
+  </g>
+  <!-- Old Blood Stains Seeped Into Wooden Floor -->
+  <ellipse cx="535" cy="564" rx="135" ry="12" fill="#7f1d1d" fill-opacity="0.45"/>
+
+  <!-- ================= TOP 4 CALLOUT CARDS ROW (PIXEL-REGISTERED y=126..234) ================= -->
+  <!-- Card 1: Instruments (x=24..294) -->
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="126" width="270" height="108" rx="7" fill="#fffbeb" stroke="#b91c1c" stroke-width="1.4"/>
+    <text x="38" y="145" class="card-kicker">1. SEPSIS SOURCE · INSTRUMENTS</text>
+    <text x="38" y="164" class="card-hdr">Unsterilised Knives &amp; Bone Saws</text>
+    <text x="38" y="182" class="card-body">Knives, saws &amp; silk ligatures kept in velvet</text>
+    <text x="38" y="198" class="card-body">cases, wiped on rags, <tspan class="card-bold">never boiled</tspan>; shared</text>
+    <text x="38" y="214" class="card-body">sea-sponge spread pus between patients.</text>
+  </g>
+  <!-- Card 2: Pain (x=310..580) -->
+  <g filter="url(#cardShadow)">
+    <rect x="310" y="126" width="270" height="108" rx="7" fill="#fffbeb" stroke="#b91c1c" stroke-width="1.4"/>
+    <text x="324" y="145" class="card-kicker">2. PAIN UNSOLVED · PRE-1847</text>
+    <text x="324" y="164" class="card-hdr">Conscious Agony &amp; Speed Surgery</text>
+    <text x="324" y="182" class="card-body">Before Ether (1846) &amp; Simpson's Chloroform</text>
+    <text x="324" y="198" class="card-body">(1847), <tspan class="card-bold">assistants pinned patients down</tspan>;</text>
+    <text x="324" y="214" class="card-body">Liston amputated legs in 30–90 seconds.</text>
+  </g>
+  <!-- Card 3: Surgeon Dress (x=596..866) -->
+  <g filter="url(#cardShadow)">
+    <rect x="596" y="126" width="270" height="108" rx="7" fill="#fffbeb" stroke="#b91c1c" stroke-width="1.4"/>
+    <text x="610" y="145" class="card-kicker">3. SURGEON HYGIENE · ZERO</text>
+    <text x="610" y="164" class="card-hdr">Blood-Stiffened Coat &amp; Bare Hands</text>
+    <text x="610" y="182" class="card-body">Surgeons wore <tspan class="card-bold">old street frock coats</tspan> stiff</text>
+    <text x="610" y="198" class="card-body">with dried blood &amp; pus as a badge of</text>
+    <text x="610" y="214" class="card-body">experience, operating with <tspan class="card-bold">unwashed hands</tspan>.</text>
+  </g>
+  <!-- Card 4: Crowded Gallery (x=882..1176) -->
+  <g filter="url(#cardShadow)">
+    <rect x="882" y="126" width="294" height="108" rx="7" fill="#fffbeb" stroke="#b91c1c" stroke-width="1.4"/>
+    <text x="896" y="145" class="card-kicker">4. OPEN GALLERY · AIRBORNE DIRT</text>
+    <text x="896" y="164" class="card-hdr">Crowded Unwashed Student Gallery</text>
+    <text x="896" y="182" class="card-body">Dozens of students &amp; public spectators stood</text>
+    <text x="896" y="198" class="card-body">in muddy street boots &amp; dissecting-room</text>
+    <text x="896" y="214" class="card-body">coats right over the open surgical wound.</text>
+  </g>
+
+  <!-- ================= LEFT ZONE: UNSTERILISED WOODEN TRAY and BUCKET (x=56..286) ================= -->
+  <g id="dirty-instruments-1840">
+    <!-- Street Top Hat and Coat on Wall Peg -->
+    <circle cx="88" cy="284" r="4" fill="#29190e"/>
+    <rect x="70" y="262" width="36" height="6" rx="2" fill="#1c1917"/>
+    <rect x="76" y="244" width="24" height="19" rx="2" fill="#1c1917"/>
+
+    <!-- Wooden Instrument Table (x=68..264, y=436..548) -->
+    <rect x="68" y="436" width="196" height="12" rx="2" fill="#784b2a" stroke="#3b2312" stroke-width="1.6"/>
+    <rect x="82" y="448" width="12" height="100" fill="#633d22" stroke="#3b2312" stroke-width="1.4"/>
+    <rect x="238" y="448" width="12" height="100" fill="#633d22" stroke="#3b2312" stroke-width="1.4"/>
+
+    <!-- Blood-Spotted Rag, Bone Saw and Liston Knives on Wooden Tray -->
+    <rect x="84" y="428" width="164" height="8" rx="2" fill="#e7ded0" stroke="#78553a" stroke-width="1.2"/>
+    <!-- Unsterilised Amputation Bone Saw -->
+    <rect x="96" y="410" width="68" height="14" fill="#94a3b8" stroke="#334155" stroke-width="1.3"/>
+    <line x1="96" y1="424" x2="164" y2="424" stroke="#7f1d1d" stroke-width="2.4" stroke-dasharray="3 2"/>
+    <rect x="164" y="412" width="22" height="10" rx="2" fill="#451a03"/>
+    <!-- Bloody Liston Knife -->
+    <polygon points="196,422 238,416 238,424" fill="#cbd5e1" stroke="#334155" stroke-width="1.1"/>
+    <circle cx="216" cy="421" r="3.5" fill="#b91c1c"/>
+
+    <!-- Dirty Communal Water Bucket and Pus Sponge Underneath -->
+    <polygon points="138,504 190,504 182,548 146,548" fill="#7c583b" stroke="#3b2312" stroke-width="1.5"/>
+    <ellipse cx="164" cy="504" rx="26" ry="5" fill="#991b1b"/>
+    <circle cx="158" cy="499" r="8" fill="#ca8a04" stroke="#78350f" stroke-width="1.2"/>
+
+    <rect x="64" y="366" width="204" height="24" rx="4" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.2"/>
+    <text x="166" y="382" text-anchor="middle" class="scene-tag" fill="#991b1b">UNWASHED BONE SAW &amp; SPONGE</text>
+    <line x1="166" y1="234" x2="166" y2="362" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrRed1840)"/>
+  </g>
+
+  <!-- ================= CENTRAL ZONE: WOODEN TABLE, CONSCIOUS PATIENT, SURGEON and SAWDUST ================= -->
+  <g id="central-surgery-1840">
+    <!-- Assistant 1 at Head Restraining Patient (x=336..396) -->
+    <circle cx="364" cy="348" r="18" fill="#ebd0b5" stroke="#443127" stroke-width="1.6"/>
+    <path d="M 338,456 L 342,372 C 344,364 384,364 386,372 L 392,456 Z" fill="#44403c" stroke="#1c1917" stroke-width="1.6"/>
+    <rect x="344" y="456" width="16" height="92" fill="#292524"/>
+    <rect x="366" y="456" width="16" height="92" fill="#292524"/>
+    <!-- Assistant's Bare Arms Pinning Patient's Shoulders -->
+    <path d="M 378,386 L 420,428" stroke="#ebd0b5" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Assistant 2 at Foot Restraining Patient's Legs (x=682..740) -->
+    <circle cx="712" cy="352" r="17" fill="#ebd0b5" stroke="#443127" stroke-width="1.6"/>
+    <path d="M 688,456 L 692,374 C 694,366 730,366 732,374 L 736,456 Z" fill="#57534e" stroke="#1c1917" stroke-width="1.6"/>
+    <rect x="694" y="456" width="15" height="92" fill="#292524"/>
+    <rect x="714" y="456" width="15" height="92" fill="#292524"/>
+    <path d="M 696,388 L 656,434" stroke="#ebd0b5" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- LEAD SURGEON IN UNWASHED BLOOD-STIFFENED BLACK FROCK COAT (cx=540) -->
+    <circle cx="540" cy="306" r="21" fill="#f0d5ba" stroke="#443127" stroke-width="1.7"/>
+    <!-- Sidewhiskers and Bare Head (no cap, no mask!) -->
+    <path d="M 519,302 C 519,280 561,280 561,302" fill="#44403c"/>
+    <!-- Black Street Frock Coat Encrusted with Old Dried Blood -->
+    <path d="M 498,456 L 506,332 C 512,324 568,324 574,332 L 582,456 Z" fill="#1c1917" stroke="#09090b" stroke-width="1.8"/>
+    <!-- White Street Collar + Heavy Dried Crimson Blood Splatters on Lapels and Apron -->
+    <polygon points="528,328 540,350 552,328" fill="#f5f5f4"/>
+    <path d="M 516,356 Q 536,368 528,396 Q 548,412 532,442 L 564,438 Q 558,390 566,362 Z" fill="#991b1b" fill-opacity="0.82"/>
+    <!-- Bare Unwashed Hands Holding Bloody Knife/Saw Over Limb -->
+    <path d="M 508,354 L 486,414" stroke="#1c1917" stroke-width="13" stroke-linecap="round"/>
+    <path d="M 572,354 L 592,416" stroke="#1c1917" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="484" cy="418" r="8" fill="#f0d5ba" stroke="#991b1b" stroke-width="1.5"/>
+    <circle cx="594" cy="420" r="8" fill="#f0d5ba" stroke="#991b1b" stroke-width="1.5"/>
+    <!-- Active Saw Blade Over Leg -->
+    <polygon points="596,420 638,432 634,440 592,428" fill="#cbd5e1" stroke="#7f1d1d" stroke-width="1.4"/>
+
+    <!-- Conscious, Terrified Patient Arching on Table (x=396..674, y=414..456) -->
+    <circle cx="410" cy="418" r="16" fill="#fde68a" stroke="#78350f" stroke-width="1.6"/>
+    <!-- Screaming Open Mouth and Red Agony Shock Rays -->
+    <ellipse cx="415" cy="421" rx="4.5" ry="6" fill="#7f1d1d"/>
+    <g stroke="#dc2626" stroke-width="2.4" stroke-linecap="round">
+      <line x1="392" y1="394" x2="380" y2="380"/>
+      <line x1="410" y1="390" x2="410" y2="372"/>
+      <line x1="428" y1="394" x2="440" y2="380"/>
+    </g>
+    <!-- Arching Torso and Tourniquet-Bound Leg -->
+    <path d="M 424,432 Q 496,408 564,438 L 668,442 L 668,456 L 424,456 Z" fill="#f5ebe0" stroke="#78553a" stroke-width="1.6"/>
+    <!-- Tourniquet and Severe Haemorrhage Spurt -->
+    <rect x="582" y="434" width="8" height="22" fill="#450a0a"/>
+    <circle cx="606" cy="442" r="11" fill="#dc2626"/>
+
+    <!-- Heavy Blood-Stained Wooden Operating Table (Pixel-Registered x=360..710, y=456..548) -->
+    <rect x="360" y="456" width="350" height="15" rx="2" fill="#7c3f1d" stroke="#3b1d0a" stroke-width="2"/>
+    <rect x="386" y="471" width="18" height="77" fill="#633216" stroke="#3b1d0a" stroke-width="1.6"/>
+    <rect x="666" y="471" width="18" height="77" fill="#633216" stroke="#3b1d0a" stroke-width="1.6"/>
+    <rect x="404" y="484" width="262" height="10" fill="#633216" stroke="#3b1d0a" stroke-width="1.3"/>
+    <!-- Dripping Blood Down Wooden Table Edge -->
+    <path d="M 596,471 L 596,498 M 608,471 L 608,508 M 584,471 L 584,492" stroke="#b91c1c" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- BLOOD-SOAKED SAWDUST BOX BENEATH TABLE (x=472..616, y=508..548) -->
+    <rect x="472" y="514" width="144" height="34" rx="2" fill="#784b2a" stroke="#3b1d0a" stroke-width="1.8"/>
+    <path d="M 476,514 Q 512,500 544,506 Q 582,498 612,514 Z" fill="#d97706"/>
+    <ellipse cx="556" cy="512" rx="42" ry="7" fill="#991b1b"/>
+    <text x="544" y="536" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="800" fill="#fde68a">BLOOD-SOAKED SAWDUST</text>
+
+    <!-- In-Scene Labels -->
+    <rect x="352" y="344" width="144" height="22" rx="4" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+    <text x="424" y="359" text-anchor="middle" class="scene-tag" fill="#991b1b">CONSCIOUS AGONY!</text>
+    <line x1="445" y1="234" x2="432" y2="340" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrRed1840)"/>
+
+    <rect x="572" y="256" width="212" height="22" rx="4" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+    <text x="678" y="271" text-anchor="middle" class="scene-tag" fill="#991b1b">STIFF BLOOD-STAINED COAT</text>
+    <line x1="710" y1="234" x2="574" y2="342" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrRed1840)"/>
+  </g>
+
+  <!-- ================= RIGHT ZONE: CROWDED UNWASHED STUDENT GALLERY (PIXEL-REGISTERED x=860..1200) ================= -->
+  <g id="crowded-gallery-1840">
+    <!-- 3 Stepped Wooden Gallery Tiers (Identical geometry to 1895 SVG) -->
+    <polygon points="860,468 972,468 972,408 1084,408 1084,348 1200,348 1200,548 860,548"
+             fill="#573b26" stroke="#29190e" stroke-width="2"/>
+    <!-- Open Wooden Balustrade Rail at x=860 (NO glass barrier!) -->
+    <line x1="860" y1="416" x2="860" y2="548" stroke="#3b2312" stroke-width="6"/>
+    <line x1="854" y1="416" x2="968" y2="416" stroke="#3b2312" stroke-width="5"/>
+
+    <!-- 6 Crowded Spectators / Medical Students in Top Hats and Outdoor Street Coats -->
+    <!-- Tier 1 (Front, leaning directly over rail!) -->
+    <g fill="#292524">
+      <circle cx="898" cy="378" r="14" fill="#ebd0b5"/>
+      <rect x="884" y="352" width="28" height="16" fill="#1c1917"/><rect x="878" y="366" width="40" height="4" fill="#1c1917"/>
+      <path d="M 874,468 L 880,394 L 918,394 L 924,468 Z"/>
+
+      <circle cx="944" cy="382" r="14" fill="#e5c29f"/>
+      <path d="M 922,468 L 928,398 L 962,398 L 968,468 Z" fill="#44403c"/>
+    </g>
+    <!-- Tier 2 (Middle) -->
+    <g fill="#1c1917">
+      <circle cx="1004" cy="320" r="14" fill="#ebd0b5"/>
+      <rect x="990" y="294" width="28" height="16"/><rect x="984" y="308" width="40" height="4"/>
+      <path d="M 982,408 L 988,336 L 1022,336 L 1028,408 Z" fill="#3f3f46"/>
+
+      <circle cx="1052" cy="324" r="14" fill="#e5c29f"/>
+      <path d="M 1030,408 L 1036,340 L 1068,340 L 1074,408 Z" fill="#292524"/>
+    </g>
+    <!-- Tier 3 (Upper) -->
+    <g fill="#27272a">
+      <circle cx="1116" cy="264" r="14" fill="#ebd0b5"/>
+      <rect x="1102" y="238" width="28" height="16" fill="#18181b"/><rect x="1096" y="252" width="40" height="4" fill="#18181b"/>
+      <path d="M 1094,348 L 1100,280 L 1134,280 L 1140,348 Z"/>
+
+      <circle cx="1164" cy="268" r="14" fill="#e5c29f"/>
+      <path d="M 1142,348 L 1148,284 L 1182,284 L 1188,348 Z" fill="#44403c"/>
+    </g>
+
+    <!-- Airborne Germ / Breath Drift Arrows from Open Gallery onto Patient -->
+    <path d="M 868,392 Q 760,398 648,426" fill="none" stroke="#b91c1c" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrRed1840)"/>
+    <rect x="742" y="374" width="112" height="20" rx="4" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="798" y="388" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="800" fill="#991b1b">← Street Microbes</text>
+  </g>
+
+  <!-- Floor Annotation Strip (y=580..642) -->
+  <rect x="36" y="582" width="1128" height="56" rx="8" fill="#29190e" fill-opacity="0.88" stroke="#991b1b" stroke-width="1.3"/>
+  <text x="600" y="604" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="0.8" fill="#fca5a5">THE THREE GREAT BARRIERS OF c.1840 SURGERY: PAIN (SHOCK) · INFECTION (SEPSIS / GANGRENE) · BLOOD LOSS (HAEMORRHAGE)</text>
+  <text x="600" y="624" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#fde68a">Because Germ Theory (1861) was unknown, doctors blamed "bad air" (miasma) while carrying deadly bacteria directly into open wounds on hands, knives &amp; coats.</text>
+
+  <!-- ================= BOTTOM CRIMSON METRIC BANNER (PIXEL-REGISTERED y=658..750) ================= -->
+  <rect x="0" y="658" width="1200" height="92" fill="#450a0a"/>
+  <line x1="0" y1="658" x2="1200" y2="658" stroke="#ef4444" stroke-width="3"/>
+  <rect x="28" y="673" width="545" height="62" rx="8" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.6"/>
+  <text x="300" y="700" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="900" letter-spacing="0.4" fill="#ffffff">Post-Operative Sepsis ('Hospitalism') Mortality: ~45–50%</text>
+  <text x="300" y="721" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="10.8" font-weight="600" fill="#fecaca">Nearly 1 in 2 amputation patients died of ward gangrene, pyaemia or erysipelas</text>
+
+  <text x="596" y="698" font-family="'Inter', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fca5a5">WHY HOSPITALS WERE NICKNAMED "GATEWAYS TO DEATH":</text>
+  <text x="596" y="718" font-family="'Inter', Arial, sans-serif" font-size="11.2" fill="#fef2f2">Operations were last-resort amputations; deep abdominal or chest surgery was</text>
+  <text x="596" y="735" font-family="'Inter', Arial, sans-serif" font-size="11.2" fill="#fef2f2">almost impossible when patients thrashed in agony and wounds rotted afterward.</text>
+
+  <!-- Outer Neatline -->
+  <rect x="1" y="1" width="1198" height="748" fill="none" stroke="#7f1d1d" stroke-width="1.5"/>
+</svg>

@@ -497,14 +497,14 @@ const UNIT_PUBLICATIONS = {
       key: 'pillar3',
       badge: 'PILLAR 3 • RETRIEVAL COMPANION',
       color: '#7c3aed',
-      tags: ['128 Core Questions', 'Spaced Recall', 'Teacher Marking Bank'],
+      tags: ['96 Core Questions', 'Spaced Recall', 'Teacher Marking Bank'],
       editions: [
         {
           id: 'all',
-          label: 'Complete Unit (128 Core Questions & Answers)',
-          title: 'Master Knowledge Retrieval & Homework Companion (128 Core Questions)',
-          pages: '24 Pages (A4)',
-          desc: 'All 128 knowledge recall questions across KT1, KT2, and KT3 (100% Pearson Revision Guide aligned). Immediate Page 2 retrieval quizzing, front tracking ledger, complete Marking Bank, and Paper 2 exam strategy.',
+          label: 'Complete Unit (96 Core Questions & Answers)',
+          title: 'Master Knowledge Retrieval & Homework Companion (96 Core Questions)',
+          pages: '16 Pages (A4)',
+          desc: 'All 96 knowledge recall questions across 12 enquiries in KT1, KT2, and KT3 (100% Pearson Revision Guide aligned). Immediate Page 2 retrieval quizzing, front tracking ledger, and complete Marking Bank.',
           readUrl: '/units/cme_new/cme_master_retrieval_companion.html',
           pdfUrl: '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf',
         },
@@ -704,7 +704,7 @@ const UNIT_PUBLICATIONS = {
           label: 'Hist Env: The Western Front (1914–1918)',
           title: 'The British Sector of the Western Front Historic Environment Textbook',
           pages: '16 Pages',
-          desc: '16-page publisher-grade master classroom textbook. Evacuation chain, RAMC/FANY, gas attacks, wounds, and National Archives/RAMC sources.',
+          desc: '16-page publisher-grade pure-narrative classroom textbook. Evacuation chain, RAMC/FANY, gas attacks, surgical breakthroughs, and blood storage.',
           readUrl: '/units/edexcel_medicine/textbook_western_front_PUBLISHER.html',
           pdfUrl: '/pdfs/edexcel_medicine_textbook_western_front.pdf',
         },
@@ -767,34 +767,34 @@ const UNIT_PUBLICATIONS = {
       key: 'pillar3',
       badge: 'PILLAR 3 • RETRIEVAL COMPANION',
       color: '#7c3aed',
-      tags: ['380 Core Questions', '750-Year Chronology', 'Teacher Marking Bank'],
+      tags: ['144 Core Questions', '750-Year Chronology', 'Teacher Marking Bank'],
       editions: [
-        {
-          id: 'all',
-          label: 'Complete Course (Section A & Section B Compendium)',
-          title: 'Paper 1 Complete Knowledge Retrieval Compendium (380 Questions)',
-          pages: '40 Pages',
-          desc: 'Complete retrieval volume compiling all 380 rapid recall questions across Section A and Section B with quick-marking back banks.',
-          readUrl: '/units/edexcel_medicine/med_recall_quiz_FULL.html',
-          pdfUrl: '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf',
-        },
         {
           id: 'section_b',
           label: 'Section B: Thematic Study Retrieval Companion',
-          title: 'Medicine Thematic Study Retrieval Companion (200 Questions)',
-          pages: '28 Pages',
-          desc: '20 lessons × 10 Qs, 750-year chronology flowchart, 6-factor matrix, marking bank, and Q3–Q6 model answers.',
-          readUrl: '/units/edexcel_medicine/med_recall_quiz_FULL.html',
-          pdfUrl: '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf',
+          title: 'Medicine Thematic Study Retrieval Companion (96 Core Questions)',
+          pages: '16 Pages',
+          desc: '12 thematic enquiries × 8 core recall questions across Medieval, Renaissance, 18th/19th Century, and Modern Britain with quick-marking back answer banks.',
+          readUrl: '/units/edexcel_medicine/medicine_master_retrieval_companion.html',
+          pdfUrl: '/pdfs/Medicine_Thematic_Study_Master_Knowledge_Retrieval_Companion.pdf',
         },
         {
           id: 'section_a',
           label: 'Section A: Western Front Retrieval Companion',
-          title: 'Western Front Historic Environment Retrieval Companion (72 Questions)',
-          pages: '12 Pages',
-          desc: 'Saddle-stitch companion: evacuation chain, RAMC/FANY, gas attacks, wound treatments, and Q1/Q2 follow-up strategies.',
-          readUrl: '/units/edexcel_medicine/med_recall_quiz_FULL.html',
+          title: 'Western Front Historic Environment Retrieval Companion (48 Core Questions)',
+          pages: '8 Pages',
+          desc: '8-page saddle-stitch companion covering all 6 Western Front enquiries (48 core questions): trench terrain, illnesses, trauma, evacuation chain, surgery, and blood storage.',
+          readUrl: '/units/edexcel_medicine/western_front_master_retrieval_companion.html',
           pdfUrl: '/pdfs/Western_Front_Master_Knowledge_Retrieval_Companion.pdf',
+        },
+        {
+          id: 'all',
+          label: 'Complete Course (380-Question Digital Recall Vault)',
+          title: 'Paper 1 Master Knowledge Retrieval Companion & 380-Q Digital Vault',
+          pages: '16 Pages',
+          desc: 'Complete rapid recall quiz bank across Section A and Section B with full teacher marking keys.',
+          readUrl: '/units/edexcel_medicine/med_recall_quiz_FULL.html',
+          pdfUrl: '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf',
         },
       ],
     },
@@ -1551,7 +1551,7 @@ export function renderWorkbooksZone(container, unitData) {
         </span>
         <button id="btnOpenEmergencyCover" type="button" style="background: rgba(255,255,255,0.08); color: #cbd5e1; border: 1px solid rgba(255,255,255,0.18); border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" title="Generate quick emergency replacement covers">
           <i class="fa-solid fa-file-shield" style="color: #38bdf8;"></i>
-          <span>Cover Customizer</span>
+          <span>Cover Customiser</span>
         </button>
       </div>
     </div>

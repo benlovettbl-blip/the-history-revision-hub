@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="harvey-flow-title harvey-flow-desc">
+  <title id="harvey-flow-title">William Harvey's Closed-Loop Circulation (De Motu Cordis, 1628)</title>
+  <desc id="harvey-flow-desc">Edexcel GCSE History diagram of William Harvey's 1628 closed-loop blood circulation: the heart as a mechanical muscular pump driving bright red arterial blood via the aorta to peripheral tissues, returning as dark blue venous blood via veins with one-way Fabricius pocket valves and the vena cava back to the right heart and pulmonary loop, backed by quantitative proof (~540+ lbs/hour).</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .overline { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 2px; fill: #38bdf8; }
+      .hdr-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 20px; font-weight: 700; fill: #f8fafc; }
+      .pill-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 1px; fill: #bae6fd; }
+      .card-kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 1.2px; fill: #0369a1; }
+      .card-hdr { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 14.5px; font-weight: 700; fill: #0f172a; }
+      .card-body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 11.2px; font-weight: 500; fill: #334155; }
+      .card-bold { font-weight: 700; fill: #0f172a; }
+      .card-red { font-weight: 700; fill: #b91c1c; }
+      .card-blue { font-weight: 700; fill: #1d4ed8; }
+      .organ-lbl { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 0.5px; }
+      .organ-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 600; }
+    ]]></style>
+    <linearGradient id="bgIvoryFlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f6"/>
+    </linearGradient>
+    <linearGradient id="plateIvory" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="capillaryGrad" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.09"/>
+    </filter>
+    <marker id="arrArtRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrVenBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#1d4ed8"/>
+    </marker>
+  </defs>
+
+  <!-- Crisp Museum Ivory-Slate Canvas -->
+  <rect x="0" y="0" width="1200" height="750" fill="url(#bgIvoryFlow)"/>
+
+  <!-- Top Header Band (Pixel-Registered y=0..72) -->
+  <rect x="0" y="0" width="1200" height="72" fill="#0f172a"/>
+  <line x1="0" y1="72" x2="1200" y2="72" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="28" y="25" class="overline">EDEXCEL GCSE HISTORY · RENAISSANCE EXPERIMENTAL PHYSIOLOGY (1628)</text>
+  <text x="28" y="53" class="hdr-title">William Harvey's Closed-Loop Circulation (De Motu Cordis, 1628)</text>
+  <rect x="962" y="21" width="210" height="30" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.3"/>
+  <text x="1067" y="40" text-anchor="middle" class="pill-txt">1628 · CLOSED CIRCUIT</text>
+
+  <!-- Central Vascular Frame (Pixel-Registered x=396..804, y=86..644) -->
+  <rect x="396" y="86" width="408" height="558" rx="14" fill="url(#plateIvory)" stroke="#94a3b8" stroke-width="1.8" filter="url(#cardShadow)"/>
+  <rect x="404" y="94" width="392" height="542" rx="10" fill="none" stroke="#0284c7" stroke-opacity="0.30" stroke-width="1"/>
+
+  <!-- Subtle Shared Human Torso Silhouette Inside Central Frame (100% registered to Galen) -->
+  <path d="M 564,98 L 636,98 L 648,116 C 708,124 756,148 764,196 L 760,618 L 440,618 L 436,196 C 444,148 492,124 552,116 Z"
+        fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+
+  <!-- ================= 1. PULMONARY CIRCULATION LOOP (LUNGS y=114..218) ================= -->
+  <g id="harvey-pulmonary-loop">
+    <!-- Left and Right Lung Lobes (Identical positions to Galen SVG) -->
+    <path d="M 566,124 C 526,120 492,146 490,188 C 490,210 518,218 566,210 Z" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.8"/>
+    <path d="M 634,124 C 674,120 708,146 710,188 C 710,210 682,218 634,210 Z" fill="#ffe4e6" stroke="#e11d48" stroke-width="1.8"/>
+
+    <!-- Pulmonary Artery: Right Ventricle (Blue) -> Lungs -->
+    <path d="M 570,264 L 570,226 C 570,196 528,196 528,164 C 528,136 572,134 600,134" fill="none" stroke="#1d4ed8" stroke-width="8" stroke-linecap="round"/>
+    <!-- Pulmonary Vein: Lungs -> Left Atrium (Bright Red) -->
+    <path d="M 600,134 C 628,134 672,136 672,164 C 672,196 630,196 630,226 L 630,264" fill="none" stroke="#dc2626" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Directional Pulmonary Flow Arrows -->
+    <line x1="552" y1="248" x2="552" y2="214" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrVenBlue)"/>
+    <line x1="648" y1="214" x2="648" y2="248" stroke="#dc2626" stroke-width="2" marker-end="url(#arrArtRed)"/>
+
+    <rect x="524" y="102" width="152" height="22" rx="4" fill="#0f172a"/>
+    <text x="600" y="117" text-anchor="middle" class="organ-sub" fill="#bae6fd" font-weight="800" style="font-weight: 800;">PULMONARY LOOP (LUNGS)</text>
+  </g>
+
+  <!-- ================= 2. CLOSED SYSTEMIC CIRCUIT: ARTERIES (RIGHT) and VEINS WITH VALVES (LEFT) ================= -->
+  <g id="harvey-systemic-circuit">
+    <!-- BRIGHT RED ARTERIAL HIGHWAY (Aorta -> Systemic Arteries, x=724) -->
+    <path d="M 642,262 C 656,238 724,244 724,292 L 724,554 C 724,578 704,586 680,586"
+          fill="none" stroke="#dc2626" stroke-width="11" stroke-linecap="round"/>
+    <!-- Arterial Flow Arrows Downward -->
+    <line x1="744" y1="312" x2="744" y2="412" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrArtRed)"/>
+    <line x1="744" y1="436" x2="744" y2="532" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrArtRed)"/>
+
+    <rect x="668" y="246" width="124" height="24" rx="4" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+    <text x="730" y="262" text-anchor="middle" class="organ-sub" fill="#b91c1c" font-weight="800" style="font-weight: 800;">AORTA → ARTERIES</text>
+
+    <!-- DARK BLUE VENOUS RETURN HIGHWAY (Veins -> Vena Cava, x=476) -->
+    <path d="M 520,586 C 496,586 476,578 476,554 L 476,298 L 542,298"
+          fill="none" stroke="#1d4ed8" stroke-width="13" stroke-linecap="round"/>
+    <!-- Inner lumen of vein to display white one-way Fabricius pocket valves clearly! -->
+    <line x1="476" y1="546" x2="476" y2="310" stroke="#93c5fd" stroke-width="7" stroke-linecap="round"/>
+    <!-- 3 Crisp One-Way Fabricius Pocket Valves Pointing UPWARD toward Heart -->
+    <g stroke="#0f172a" stroke-width="2.2" fill="none" stroke-linecap="round">
+      <path d="M 470,506 L 476,494 L 482,506"/>
+      <path d="M 470,436 L 476,424 L 482,436"/>
+      <path d="M 470,366 L 476,354 L 482,366"/>
+    </g>
+    <!-- Venous Return Arrows Strictly UPWARD -->
+    <line x1="454" y1="532" x2="454" y2="436" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrVenBlue)"/>
+    <line x1="454" y1="412" x2="454" y2="312" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrVenBlue)"/>
+
+    <rect x="408" y="246" width="128" height="24" rx="4" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.2"/>
+    <text x="472" y="262" text-anchor="middle" class="organ-sub" fill="#1e40af" font-weight="800" style="font-weight: 800;">VEINS → VENA CAVA ↑</text>
+
+    <!-- Valve Label Pill Inside Plate -->
+    <rect x="490" y="418" width="98" height="22" rx="4" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1"/>
+    <text x="539" y="433" text-anchor="middle" class="organ-sub" fill="#1e3a8a" font-weight="700" style="font-weight: 700;">← 1-Way Valves</text>
+  </g>
+
+  <!-- ================= 3. HEART AS MECHANICAL MUSCULAR PUMP (CENTER X=600, Y=316) ================= -->
+  <g id="harvey-heart-pump">
+    <!-- Muscular Contraction Force Arcs -->
+    <path d="M 528,288 C 520,316 520,338 528,364" fill="none" stroke="#0f766e" stroke-width="2.2" stroke-dasharray="4 3"/>
+    <path d="M 672,288 C 680,316 680,338 672,364" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="4 3"/>
+
+    <!-- Identical Heart Footprint (x=538..662, y=260..374) -->
+    <rect x="538" y="260" width="124" height="114" rx="18" fill="#9f1239" stroke="#0f172a" stroke-width="2.4"/>
+    <!-- Right Heart Chamber (Blue Deoxygenated Venous Return) -->
+    <rect x="547" y="270" width="46" height="94" rx="10" fill="#bfdbfe"/>
+    <!-- Left Heart Chamber (Red Oxygenated Systemic Pump) -->
+    <rect x="607" y="270" width="46" height="94" rx="10" fill="#fecdd3"/>
+
+    <!-- SOLID MUSCULAR SEPTUM (ZERO PORES!) -->
+    <rect x="593" y="266" width="14" height="102" rx="2" fill="#0f766e" stroke="#ccfbf1" stroke-width="1.4"/>
+
+    <!-- One-Way Intracardiac Valves -->
+    <path d="M 560,314 L 570,326 L 580,314" fill="none" stroke="#1e3a8a" stroke-width="2.2"/>
+    <path d="M 620,314 L 630,326 L 640,314" fill="none" stroke="#991b1b" stroke-width="2.2"/>
+
+    <text x="570" y="288" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="800" fill="#1e3a8a">R. PUMP</text>
+    <text x="630" y="288" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="800" fill="#991b1b">L. PUMP</text>
+    <text x="600" y="392" text-anchor="middle" class="organ-lbl" fill="#0f172a">MECHANICAL MUSCULAR PUMP</text>
+  </g>
+
+  <!-- ================= 4. INTEGRATED LIVER and PERIPHERAL TISSUE CAPILLARY BED (Y=450..616) ================= -->
+  <g id="harvey-tissues">
+    <!-- Hepatic Branch Feeding Liver Within the Closed Loop (Liver does NOT manufacture blood!) -->
+    <path d="M 724,478 L 636,478 M 536,478 L 476,478" fill="none" stroke="url(#capillaryGrad)" stroke-width="5"/>
+    <path d="M 532,462 C 538,446 594,446 638,462 C 644,476 632,498 602,504 C 568,508 536,502 532,486 Z"
+          fill="#be123c" fill-opacity="0.82" stroke="#1e293b" stroke-width="1.6"/>
+    <text x="586" y="476" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="800" fill="#ffffff">LIVER (FED BY LOOP)</text>
+    <text x="586" y="490" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="600" fill="#ffe4e6">Does NOT make blood</text>
+
+    <!-- Continuous Peripheral Tissue and Capillary Exchange Bed (x=486..714, y=556..616) -->
+    <rect x="486" y="556" width="228" height="58" rx="12" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+    <!-- Smooth Red -> Purple -> Blue Capillary Mesh Connecting Arteries to Veins -->
+    <path d="M 686,574 C 630,566 570,566 514,574" fill="none" stroke="url(#capillaryGrad)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 686,586 L 514,586" fill="none" stroke="url(#capillaryGrad)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 686,598 C 630,606 570,606 514,598" fill="none" stroke="url(#capillaryGrad)" stroke-width="5" stroke-linecap="round"/>
+    <rect x="520" y="575" width="160" height="22" rx="4" fill="#ffffff" fill-opacity="0.92" stroke="#64748b" stroke-width="1"/>
+    <text x="600" y="590" text-anchor="middle" class="organ-sub" fill="#0f172a" font-weight="800" style="font-weight: 800;">← PERIPHERAL TISSUES ←</text>
+  </g>
+
+  <!-- ================= LEFT COLUMN CALLOUT CARDS (PIXEL-REGISTERED x=24..376) ================= -->
+  <!-- Left Card 1 (y=86..256) -->
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="86" width="352" height="170" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="24" y="86" width="6" height="170" rx="3" fill="#0284c7"/>
+    <text x="42" y="108" class="card-kicker">REVOLUTIONARY MODEL · 1628</text>
+    <text x="42" y="129" class="card-hdr">One Continuous Closed-Loop Circuit</text>
+    <text x="42" y="150" class="card-body">Physician to James I &amp; Charles I, Harvey proved the same</text>
+    <text x="42" y="167" class="card-body">fixed volume of blood <tspan class="card-bold">circulates endlessly around the body</tspan>:</text>
+    <text x="42" y="188" class="card-body">• <tspan class="card-red">Arterial Outflow:</tspan> Pumped out from the left heart via</text>
+    <text x="42" y="205" class="card-body">  the aorta and arteries to nourish every organ &amp; limb.</text>
+    <text x="42" y="225" class="card-body">• <tspan class="card-blue">Venous Return:</tspan> Returns via veins &amp; vena cava to the</text>
+    <text x="42" y="242" class="card-body">  right heart, never consumed or remade by the liver.</text>
+  </g>
+
+  <!-- Left Card 2 (y=272..446) -->
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="272" width="352" height="174" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="24" y="272" width="6" height="174" rx="3" fill="#dc2626"/>
+    <text x="42" y="294" class="card-kicker">RENAISSANCE TECH ANALOGY · FIRE PUMP</text>
+    <text x="42" y="315" class="card-hdr">Heart as a Mechanical Muscular Pump</text>
+    <text x="42" y="336" class="card-body">• <tspan class="card-bold">Cold-Blooded Vivisection:</tspan> Observing slower heartbeats</text>
+    <text x="42" y="353" class="card-body">  in lizards, frogs &amp; eels let Harvey watch contraction live.</text>
+    <text x="42" y="373" class="card-body">• <tspan class="card-bold">Mechanical Analogy:</tspan> Inspired by 17th-century brass</text>
+    <text x="42" y="390" class="card-body">  water/fire pumps, he proved the heart contracts like a</text>
+    <text x="42" y="407" class="card-body">  pump — and that contraction <tspan font-style="italic">causes</tspan> the arterial pulse.</text>
+    <text x="42" y="427" class="card-body">• <tspan class="card-bold">Zero Septum Pores:</tspan> Confirmed Vesalius's solid septum.</text>
+  </g>
+
+  <!-- Left Card 3 (y=462..644) -->
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="462" width="352" height="182" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="24" y="462" width="6" height="182" rx="3" fill="#1d4ed8"/>
+    <text x="42" y="484" class="card-kicker">EXPERIMENTAL PROOF · VEIN VALVES</text>
+    <text x="42" y="505" class="card-hdr">One-Way Fabricius Pocket Valves</text>
+    <text x="42" y="526" class="card-body">• Harvey's Padua tutor <tspan class="card-bold">Girolamo Fabricius</tspan> discovered</text>
+    <text x="42" y="543" class="card-body">  pocket valves in veins (1603) without grasping their role.</text>
+    <text x="42" y="565" class="card-body">• Using iron rods on cadavers and <tspan class="card-bold">forearm tourniquet</tspan></text>
+    <text x="42" y="582" class="card-body">  experiments on living men, Harvey proved vein valves</text>
+    <text x="42" y="599" class="card-body">  let blood flow <tspan class="card-blue">ONLY toward the heart</tspan> — pushing blood</text>
+    <text x="42" y="616" class="card-body">  backward snaps the pocket valves shut!</text>
+  </g>
+
+  <!-- ================= RIGHT COLUMN CALLOUT CARDS (PIXEL-REGISTERED x=824..1176) ================= -->
+  <!-- Right Card 1 (y=86..256) -->
+  <g filter="url(#cardShadow)">
+    <rect x="824" y="86" width="352" height="170" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="824" y="86" width="6" height="170" rx="3" fill="#0f766e"/>
+    <text x="842" y="108" class="card-kicker">PULMONARY TRANSIT PROVEN</text>
+    <text x="842" y="129" class="card-hdr">Right-to-Left Transit Through the Lungs</text>
+    <text x="842" y="150" class="card-body">Building on Realdo Colombo's pulmonary observations,</text>
+    <text x="842" y="167" class="card-body">Harvey integrated the lungs into one unified double loop:</text>
+    <text x="842" y="188" class="card-body">1. <tspan class="card-blue">Right Ventricle</tspan> pumps all returning dark venous</text>
+    <text x="842" y="205" class="card-body">   blood into the lungs via the pulmonary artery.</text>
+    <text x="842" y="225" class="card-body">2. <tspan class="card-red">Pulmonary Veins</tspan> return refreshed bright red blood</text>
+    <text x="842" y="242" class="card-body">   to the Left Heart to be pumped into the aorta.</text>
+  </g>
+
+  <!-- Right Card 2: Visual Inset of Fabricius Pocket Valve (y=272..454) -->
+  <g filter="url(#cardShadow)">
+    <rect x="824" y="272" width="352" height="182" rx="8" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="842" y="294" class="card-kicker">VALVE MECHANISM ZOOM · BACKFLOW BLOCKED</text>
+    <text x="842" y="314" class="card-hdr">Fabricius One-Way Venous Pocket Valves</text>
+
+    <!-- Crisp Dual Valve Comparison Box -->
+    <rect x="842" y="326" width="316" height="82" rx="6" fill="#ffffff" stroke="#bae6fd" stroke-width="1.3"/>
+    <!-- Left sub-diagram: Open toward Heart -->
+    <rect x="862" y="336" width="32" height="62" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.8"/>
+    <path d="M 862,374 Q 872,358 874,352 M 894,374 Q 884,358 882,352" fill="none" stroke="#0f172a" stroke-width="2.2"/>
+    <line x1="878" y1="392" x2="878" y2="342" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrVenBlue)"/>
+    <text x="910" y="362" font-family="'Inter', Arial, sans-serif" font-size="10" font-weight="800" fill="#0f766e">OPEN ↑</text>
+    <text x="910" y="376" font-family="'Inter', Arial, sans-serif" font-size="9.2" fill="#334155">To Heart</text>
+
+    <line x1="992" y1="336" x2="992" y2="398" stroke="#e2e8f0" stroke-width="1.2"/>
+
+    <!-- Right sub-diagram: Shut against Backflow -->
+    <rect x="1012" y="336" width="32" height="62" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.8"/>
+    <path d="M 1012,364 Q 1020,378 1028,368 Q 1036,378 1044,364" fill="#93c5fd" stroke="#b91c1c" stroke-width="2.2"/>
+    <text x="1060" y="362" font-family="'Inter', Arial, sans-serif" font-size="10" font-weight="800" fill="#b91c1c">SHUT ✕</text>
+    <text x="1060" y="376" font-family="'Inter', Arial, sans-serif" font-size="9.2" fill="#334155">No Backflow</text>
+
+    <text x="842" y="425" class="card-body">Proved blood in veins never ebbs outward from the liver;</text>
+    <text x="842" y="442" class="card-body">valves lock tightly whenever pressed away from the heart.</text>
+  </g>
+
+  <!-- Right Card 3 (y=470..644) -->
+  <g filter="url(#cardShadow)">
+    <rect x="824" y="470" width="352" height="174" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="824" y="470" width="6" height="174" rx="3" fill="#0f766e"/>
+    <text x="842" y="492" class="card-kicker">IMPACT &amp; LIMITS · EDEXCEL EVALUATION</text>
+    <text x="842" y="513" class="card-hdr">Short-Term Resistance vs Long-Term Legacy</text>
+    <text x="842" y="534" class="card-body">• <tspan class="card-bold">Missing Piece (1661):</tspan> Without strong microscopes,</text>
+    <text x="842" y="551" class="card-body">  Harvey predicted invisible connections; <tspan class="card-bold">Marcello Malpighi</tspan></text>
+    <text x="842" y="568" class="card-body">  saw real capillaries in frog lungs in 1661.</text>
+    <text x="842" y="590" class="card-body">• <tspan class="card-bold">Foundation of Modern Medicine:</tspan> Essential for IV</text>
+    <text x="842" y="607" class="card-body">  injections, blood pressure checks &amp; blood transfusions</text>
+    <text x="842" y="624" class="card-body">  (once Landsteiner discovered ABO blood groups in 1901).</text>
+  </g>
+
+  <!-- Bottom Quantitative Proof Strip (Pixel-Registered y=660..750) -->
+  <rect x="0" y="660" width="1200" height="90" fill="#0f172a"/>
+  <line x1="0" y1="660" x2="1200" y2="660" stroke="#0284c7" stroke-width="2.5"/>
+  <rect x="24" y="674" width="1152" height="62" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.6"/>
+  <text x="46" y="698" font-family="'Inter', Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="0.6" fill="#6ee7b7">QUANTITATIVE PROOF: HEART PUMPS ~540+ LBS OF BLOOD PER HOUR — IMPOSSIBLE FOR THE LIVER TO MANUFACTURE FROM FOOD.</text>
+  <text x="46" y="720" font-family="'Inter', Arial, sans-serif" font-size="11.8" font-weight="500" fill="#ecfdf5">Harvey's calculation (~2 oz pumped per beat × ~72 beats/min × 60 min = over 3× a grown man's entire body weight every hour) proved blood MUST recycle!</text>
+
+  <!-- Outer Neatline -->
+  <rect x="1" y="1" width="1198" height="748" fill="none" stroke="#334155" stroke-width="1.5"/>
+</svg>

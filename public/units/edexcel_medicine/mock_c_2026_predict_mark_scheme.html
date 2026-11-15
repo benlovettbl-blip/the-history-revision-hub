@@ -1,409 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Predicted Mock Paper C</title>
+  <title>Predicted Mock Paper C — Teacher Mark Scheme &amp; Grade 8/9 Exemplars — Pearson Edexcel GCSE History (1HI0/11)</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
-    
-    * {
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-    }
-    
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f0f0f0;
-      color: #000;
-    }
-
-    .page {
-      width: 210mm;
-      min-height: 297mm;
-      background: white;
-      margin: 20mm auto;
-      padding: 20mm;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      position: relative;
-      page-break-after: always;
-    }
-
+    * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { margin: 0; padding: 0; background: #f1f5f9; color: #0f172a; }
+    .page { width: 210mm; min-height: 297mm; background: #ffffff; margin: 16mm auto; padding: 18mm; box-shadow: 0 4px 14px rgba(0,0,0,0.08); page-break-after: always; }
     @media print {
-      body { background: white; }
-      .page {
-        margin: 0;
-        padding: 15mm;
-        box-shadow: none;
-        width: 100%;
-        min-height: 100%;
-        page-break-after: always;
-      }
+      body { background: #ffffff; }
+      .page { margin: 0; padding: 14mm; box-shadow: none; width: 100%; page-break-after: always; }
+      .page:last-of-type { page-break-after: avoid; }
     }
-
-    /* Cover Page Styles */
-    .cover-box {
-      border: 3px solid #000;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 20px;
-    }
-    .candidate-info {
-      display: flex;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-    .input-box {
-      border: 1px solid #000;
-      height: 40px;
-      margin-top: 5px;
-    }
-    .exam-header {
-      border: 2px solid #000;
-      border-radius: 10px;
-      padding: 15px;
-    }
-    h1 { font-size: 24px; margin: 0 0 10px 0; }
-    h2 { font-size: 20px; margin: 0 0 10px 0; }
-    h3 { font-size: 16px; margin: 0 0 10px 0; }
-    
-    .instructions { margin-top: 30px; font-size: 14px; line-height: 1.5; }
-    .instructions ul { padding-left: 20px; }
-    .instructions li { margin-bottom: 5px; }
-
-    /* Question Styles */
-    .section-header {
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-      margin: 30px 0;
-      text-transform: uppercase;
-    }
-    .question-block {
-      margin-bottom: 30px;
-    }
-    .question-text {
-      font-weight: bold;
-      font-size: 15px;
-      margin-bottom: 10px;
-      display: flex;
-    }
-    .question-num {
-      width: 40px;
-      flex-shrink: 0;
-    }
-    .marks {
-      text-align: right;
-      font-weight: normal;
-      font-size: 14px;
-      color: #333;
-      margin-top: 5px;
-    }
-
-    /* Dotted Lines */
-    .dotted-line {
-      border-bottom: 1px dotted #999;
-      height: 32px;
-      width: 100%;
-    }
-    
-    /* Follow up table */
-    .follow-up-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-    .follow-up-table td {
-      border: 1px solid #000;
-      padding: 10px;
-      height: 120px;
-      vertical-align: top;
-      font-size: 14px;
-    }
-
-    /* Sources Booklet */
-    .sources-booklet {
-      border: 2px solid #000;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    .source-block {
-      margin-bottom: 25px;
-    }
-    .source-title {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .source-content {
-      font-family: 'Times New Roman', serif;
-      font-size: 15px;
-      line-height: 1.5;
-      padding-left: 10px;
-      border-left: 3px solid #ccc;
-    }
-    
-    /* Model Answer Box */
-    .model-answer {
-      background: #f8fafc;
-      border-left: 4px solid #10b981;
-      padding: 20px;
-      margin-top: 15px;
-      font-family: 'Georgia', serif;
-      font-size: 15px;
-      line-height: 1.6;
-      color: #0f172a;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      border-radius: 4px;
-    }
-    .model-answer-title {
-      font-family: 'Arial', sans-serif;
-      font-weight: bold;
-      color: #059669;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 0.5px;
-    }
+    .exam-header { border: 2px solid #0f172a; border-radius: 10px; padding: 16px 20px; margin-bottom: 22px; }
+    .section-header { background: #0f172a; color: #ffffff; padding: 8px 14px; border-radius: 6px; font-weight: 800; font-size: 11pt; margin: 22px 0 16px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+    .question-block { margin-bottom: 24px; page-break-inside: avoid; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background: #ffffff; }
+    .q-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; font-weight: 800; font-size: 10.5pt; margin-bottom: 10px; }
+    .follow-up-stems { border: 1.5px solid #334155; border-radius: 6px; overflow: hidden; margin: 10px 0 14px 0; background: #f8fafc; }
+    .follow-up-stems div { padding: 7px 12px; border-bottom: 1px solid #cbd5e1; font-size: 9.5pt; font-weight: 700; color: #1e293b; }
+    .follow-up-stems div:last-child { border-bottom: none; }
+    .model-answer { background: #f0fdf4; border-left: 4px solid #10b981; padding: 14px 16px; border-radius: 4px; font-family: Georgia, serif; font-size: 10pt; line-height: 1.6; color: #0f172a; }
+    .model-answer-title { font-family: Arial, sans-serif; font-weight: 800; color: #047857; margin-bottom: 8px; text-transform: uppercase; font-size: 8.5pt; letter-spacing: 0.6px; }
+    .sources-panel { border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px 16px; margin-bottom: 18px; background: #f8fafc; }
+    .sources-panel img { max-width: 100%; max-height: 260px; object-fit: contain; display: block; margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 4px; }
   </style>
 </head>
 <body>
-
-  <!-- Cover Page -->
   <div class="page">
-    <div style="text-align: center; margin-bottom: 10px; font-weight: bold;">
-      Please check the examination details below before entering your candidate information
-    </div>
-    
-    <div class="cover-box">
-      <div class="candidate-info">
-        <div style="flex: 2;">
-          <div>Candidate surname</div>
-          <div class="input-box" style="border-radius: 5px;"></div>
-        </div>
-        <div style="flex: 1;">
-          <div>Other names</div>
-          <div class="input-box" style="border-radius: 5px;"></div>
-        </div>
-      </div>
-      <div class="candidate-info">
-        <div style="flex: 1;">
-          <div>Centre Number</div>
-          <div style="display:flex; gap: 5px; margin-top:5px;">
-            <div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div>
-          </div>
-        </div>
-        <div style="flex: 1;">
-          <div>Candidate Number</div>
-          <div style="display:flex; gap: 5px; margin-top:5px;">
-            <div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div><div class="input-box" style="flex:1;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="exam-header">
-      <h1>Pearson Edexcel GCSE (9–1)</h1>
-      <div style="border: 1px solid #000; padding: 10px; margin-bottom: 15px; font-size: 20px; font-weight: bold;">
-        Mock Examination <span style="color:#059669;">(TEACHER MARK SCHEME & EXEMPLARS)</span>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span style="font-size:16pt; font-weight:900;">Pearson Edexcel GCSE (9–1) History</span>
+        <span style="background:#0f172a; color:#fff; padding:4px 12px; border-radius:4px; font-weight:800; font-size:10pt;">1HI0/11</span>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 15px;">
-        <div>Morning (Time: 1 hour 20 minutes)</div>
-        <div style="background: #333; color: white; padding: 5px 15px; font-weight: bold; border-radius: 5px;">Paper reference: 1HI0/11</div>
-      </div>
-      <h2>History</h2>
-      <h3>PAPER 1: Thematic study and historic environment</h3>
-      <h3>Option 11: Medicine in Britain, c1250–present and The British sector of the Western Front, 1914–18: injuries, treatment and the trenches</h3>
+      <div style="font-size:13pt; font-weight:800; color:#047857; margin-bottom:6px;">Predicted Mock Paper C — Teacher Mark Scheme &amp; Grade 8/9 Exemplar Answers</div>
+      <div style="font-size:9.5pt; color:#334155;">Option 11: Medicine in Britain, c1250–present and The British sector of the Western Front, 1914–18 &bull; Total Marks: 52 &bull; Time: 1 hour 20 minutes</div>
     </div>
 
-    <div style="border: 2px solid #000; border-radius: 10px; padding: 15px; margin-top: 15px; display: flex; justify-content: space-between;">
-      <div>
-        <strong>You must have:</strong><br>
-        Sources Booklet (enclosed)
-      </div>
-      <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 80px; height: 60px;">
-        Total<br>Marks
-      </div>
-    </div>
+    <div class="section-header">Section A: The British sector of the Western Front, 1914–18 (16 Marks)</div>
 
-    <div class="instructions">
-      <h3>Instructions</h3>
-      <ul>
-        <li>Use <strong>black</strong> ink or ball-point pen.</li>
-        <li><strong>Fill in the boxes</strong> at the top of this page with your name, centre number and candidate number.</li>
-        <li>There are two sections in this question paper. Answer all parts of Questions 1 and 2 from Section A. From Section B, answer Questions 3 and 4 and then <strong>EITHER</strong> Question 5 <strong>OR</strong> Question 6.</li>
-        <li>Answer the questions in the spaces provided – <em>there may be more space than you need.</em></li>
-      </ul>
-
-      <h3>Information</h3>
-      <ul>
-        <li>The total mark for this paper is 52.</li>
-        <li>The marks for <strong>each</strong> question are shown in brackets – <em>use this as a guide as to how much time to spend on each question.</em></li>
-        <li>The marks available for spelling, punctuation, grammar and use of specialist terminology are clearly indicated.</li>
-      </ul>
-
-      <h3>Advice</h3>
-      <ul>
-        <li>Read each question carefully before you start to answer it.</li>
-        <li>Check your answers if you have time at the end.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="page" ><div class="section-header">SECTION A: The British sector of the Western Front, 1914–18: injuries, treatment and the trenches</div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">1 (a)</div>
-    <div>Describe one feature of the work and medical duties of volunteer nurses like the First Aid Nursing Yeomanry (FANY) on the Western Front.</div>
-  </div><div class="marks">(2)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">1 (b)</div>
-    <div>Describe one feature of the medical facilities and rapid emergency treatment provided at a Regimental Aid Post (RAP).</div>
-  </div><div class="marks">(2)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">2 (a)</div>
-    <div>Study Sources A and B in the Sources Booklet.
-
-How useful are Sources A and B for an enquiry into the treatment and evacuation of casualties near the frontline on the Western Front?
-
-Explain your answer, using Sources A and B and your knowledge of the historical context.</div>
-  </div><div class="marks">(8)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-          <div class="question-num">2 (b)</div>
-          <div>Study Source B.
-
-How could you follow up Source B to find out more about the challenges of casualty evacuation near the frontline?
-
-In your answer, you must give the question you would ask and the type of source you could use.
-
-Complete the table below.</div>
-        </div>
-        <div class="marks">(4)</div>
-        <table class="follow-up-table" style="width: 100%; border-collapse: collapse; margin-top: 10px; background: #fff; border: 1.5px solid #000;">
-          <tr style="border-bottom: 1px solid #71717a;">
-            <td style="padding: 8px 12px; font-weight: bold; width: 35%; background: #f8fafc;">Detail in Source B that I would follow up:</td>
-            <td style="padding: 8px 12px; color: #b91c1c; font-weight: 600;">Stretcher bearers struggling to carry a wounded soldier on a stretcher through the thick, knee-deep mud of Passchendaele.</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #71717a;">
-            <td style="padding: 8px 12px; font-weight: bold; background: #f8fafc;">Question I would ask:</td>
-            <td style="padding: 8px 12px; color: #b91c1c; font-weight: 600;">How significantly did severe mud and destroyed terrain delay the transport of wounded soldiers to Casualty Clearing Stations?</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #71717a;">
-            <td style="padding: 8px 12px; font-weight: bold; background: #f8fafc;">What type of source I could use:</td>
-            <td style="padding: 8px 12px; color: #b91c1c; font-weight: 600;">RAMC Field Ambulance transport records and unit war diaries from the Battle of Passchendaele (August 1917).</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px 12px; font-weight: bold; background: #f8fafc;">How this might help answer my question:</td>
-            <td style="padding: 8px 12px; color: #b91c1c; font-weight: 600;">It would record the exact evacuation times from the frontline to advanced medical posts and show how transport delays contributed to wound infection and mortality.</td>
-          </tr>
-        </table>
-        <div class="marks" style="font-weight:bold; margin-top:10px;">(Total for Question 2 = 12 marks)</div>
-      </div></div>
-  <div class="page" style="page-break-before: always;"><div class="section-header">SECTION B: Medicine in Britain, c1250–present</div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">3</div>
-    <div>Explain one way in which the methods used to prevent the spread of the Great Plague in London (1665) were similar to the methods used to prevent the spread of the Black Death (1348).</div>
-  </div><div class="marks">(4)</div>
-        <div style="margin-top: 10px;"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
-      </div><div class="question-block" style="page-break-inside: avoid;">
-        <div class="question-text">
-    <div class="question-num">4</div>
-    <div>Explain why there was rapid progress in public health and the prevention of disease in the modern era (c1900–present).</div>
-  </div><div style="margin-left: 40px; margin-bottom: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
-      You <strong>may</strong> use the following in your answer:
-      <ul style="margin-top: 10px; margin-bottom: 10px; padding-left: 20px;">
-        <li>Government lifestyle campaigns</li><li>Mass vaccination programs</li>
-      </ul>
-      You <strong>must</strong> also use information of your own.
-    </div><div class="marks">(12)</div>
-        
-          <div class="model-answer">
-            <div class="model-answer-title"><i class="fa-solid fa-star"></i> Model Answer (Grade 9)</div>
-            A key factor driving rapid progress in modern disease prevention was the British government’s complete abandonment of its traditional 'laissez-faire' policy in favor of active, state-funded compulsory vaccination campaigns. In the mid-twentieth century, the government recognized that it had an institutional duty to safeguard the physical health of its citizens, a shift that was heavily accelerated by the creation of the National Health Service (NHS) in 1948. This state-directed approach first succeeded on a national scale in 1942 when the government launched the first-ever free national immunisation campaign against diphtheria, which successfully reduced child mortality from the disease from 3,000 cases a year to virtually zero. The success of this administrative model enabled the state to systematically introduce subsequent national programs against polio (1956), tetanus (1961), measles (1968), and the MMR vaccine (1988), effectively eradicating highly infectious epidemics that had plagued Britain for centuries.
-
-Concurrently, the state utilized its legislative power to prevent disease by launching national lifestyle campaigns and environmental regulations to combat chronic, non-communicable illnesses. Throughout the twentieth century, epidemiological research proved how personal choices regarding tobacco, diet, and exercise caused major killer diseases like lung cancer and heart disease. Consequently, the government abandoned optional, local public health measures and used its legal authority to force behavioral changes on a national scale. Following the catastrophic Great Smog of London in 1952, which killed thousands of vulnerable citizens, the government passed the landmark Clean Air Acts of 1956 and 1968 to legally ban coal smoke and regulate urban air quality. Furthermore, the state implemented heavy taxes on tobacco, mandated plain packaging, and passed the compulsory 2007 ban on smoking in enclosed public workplaces to prevent lung cancer, demonstrating a highly active and successful legislative approach to public health.
-
-Furthermore, this rapid progress was accelerated by groundbreaking scientific discoveries in biochemistry and virology, which provides a distinct third factor beyond the stimulus points. Throughout the twentieth century, the development of electron microscopes and advanced cell cultures allowed scientists to study viral structures and manufacture highly stable vaccines in industrial laboratories. This led directly to the creation of the Salk polio vaccine in 1955 and the MMR vaccine in 1988, giving the government the exact clinical tools required to immunize millions of children. Today, this scientific progress continues with the development of the HPV vaccine to actively prevent cervical cancer. As a result of this integration of state-funded delivery systems and advanced biotechnology, the focus of modern medicine permanently shifted from expensive hospital cures to proactive, mass disease prevention.
-          </div>
-        
-      </div><div class="question-block" style="page-break-before: always;">
-        <div style="font-weight: bold; margin-bottom: 20px;">Answer EITHER Question 5 OR Question 6.
-Spelling, punctuation, grammar and use of specialist terminology will be assessed in this question.</div>
-        <div style="font-weight: bold; margin-bottom: 20px;">EITHER</div>
-        <div class="question-text">
-    <div class="question-num">5</div>
-    <div>‘In the years c1250–c1500, the university-trained physician was the most important person providing care and treatment.’
-How far do you agree? Explain your answer.</div>
-  </div><div style="margin-left: 40px; margin-bottom: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
-      You <strong>may</strong> use the following in your answer:
-      <ul style="margin-top: 10px; margin-bottom: 10px; padding-left: 20px;">
-        <li>Academic medical training</li><li>Traditional herbal remedies</li>
-      </ul>
-      You <strong>must</strong> also use information of your own.
-    </div><div class="marks">(16)</div>
-        <div style="font-weight: bold; margin: 20px 0;">OR</div>
-        <div class="question-text">
-    <div class="question-num">6</div>
-    <div>‘The publication of Louis Pasteur's Germ Theory was the biggest turning point in understanding the causes of disease in the period c1800–present.’
-How far do you agree? Explain your answer.</div>
-  </div><div style="margin-left: 40px; margin-bottom: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
-      You <strong>may</strong> use the following in your answer:
-      <ul style="margin-top: 10px; margin-bottom: 10px; padding-left: 20px;">
-        <li>Germ Theory, 1861</li><li>James Watson and Francis Crick mapping DNA</li>
-      </ul>
-      You <strong>must</strong> also use information of your own.
-    </div><div class="marks">(16)</div>
-        <div class="marks">(Total for spelling, punctuation, grammar and use of specialist terminology = 4 marks)</div>
-        <div class="marks" style="font-weight:bold;">(Total for Question = 20 marks)</div>
-        
-        <div style="margin-top: 30px; border: 1px solid #000; padding: 15px;">
-           <strong>Indicate which question you are answering by marking a cross in the box [X].</strong><br><br>
-           Chosen question number: &nbsp;&nbsp;&nbsp; Question 5 [ ] &nbsp;&nbsp;&nbsp; Question 6 [ ]
-        </div>
-        
-          <div class="model-answer"><div class="model-answer-title"><i class="fa-solid fa-star"></i> Question 5 Model Answer (Grade 9)</div>To a very large extent, I disagree with the statement that the university-trained physician was the most important person providing healthcare in medieval England (c1250–c1500). While physicians held the highest professional and social status in medieval society, their practical impact was severely restricted to the wealthy elite. For the vast majority of the population, the actual burden of daily care and biological treatment was carried out by female family members in the home using traditional herbal remedies, supplemented by practically trained community healers like apothecaries and barber-surgeons.
-
-On the one hand, for the wealthy elite and royalty, the university-trained physician was regarded as the most important and prestigious medical figure. The significance of the physician lay in their extensive academic medical training, which lasted between seven and ten years at secular universities like Montpellier or Oxford. This training was entirely book-based, requiring students to read and memorize Latin translations of ancient Greek and Roman texts by Hippocrates and Galen, rather than gaining hands-on clinical experience. When diagnosing patients, physicians rarely touched them; instead, they checked planetary alignments using an astrological Almanac and examined the color, thickness, and smell of urine to identify internal humoural imbalances. They would then write a diagnostic brief directing lower-status manual practitioners to perform treatments. While their high fees made them inaccessible to 95% of medieval society, they were highly important in establishing a professional, 'rational' (natural) framework of medicine that moved away from purely supernatural explanations.
-
-On the other hand, for the overwhelming majority of ordinary medieval people, the most important providers of healthcare were female family members using traditional herbal remedies in the home. Because university-trained physicians were exceptionally rare and expensive, the home was the true center of medieval medicine. Women, such as mothers and wives, possessed a vast, practical knowledge of local plants, herbs, and home recipes passed down through generations. They prepared mixtures containing active natural ingredients—like garlic, onions, honey, and wine—which were highly effective. Modern scientific analysis of medieval recipes, such as those found in the Bald's Leechbook, has proven that these herbal remedies possessed genuine antibacterial properties that actively destroyed pathogens and promoted wound healing. Consequently, for the average peasant, these women were far more important than physicians because they provided both accessible daily 'care' (comfort and nutrition) and biologically active 'treatment'.
-
-Furthermore, other practically trained, affordable healers played a far more significant role in the daily treatment of the sick than university physicians. Ordinary citizens who required physical procedures directly consulted barber-surgeons and apothecaries. Apothecaries mixed and sold herbal medicines, spices, and simple chemical compounds. Because they did not attend university, they were cheap and highly accessible. For physical treatments, peasants relied on barber-surgeons. Barber-surgeons were trained through practical apprenticeships rather than books, using sharp tools to perform haircuts alongside minor surgical procedures like lancing boils, pulling teeth, and carrying out bloodletting (phlebotomy) to rebalance the humours. Additionally, the Church operated around 1,100 charity hospitals in England by 1500. Run by monks and nuns, these hospitals did not provide medical cures, but they were highly important centers of spiritual care, shelter, and hot meals for the poor, elderly, and travelers.
-
-In conclusion, I disagree with the statement because it confuses professional prestige with practical utility. The university-trained physician possessed prestigious medical training and held a monopoly over academic knowledge, but their clinical usefulness was almost non-existent due to their reliance on flawed classical texts and their high cost. The true backbone of medieval healthcare was decentralized and grassroots. For the general population, local apothecaries, barber-surgeons, and, above all, women in the home preparing herbal remedies were the most important providers of care and treatment, as they offer the only accessible, affordable, and biologically effective medicine of the Middle Ages.</div>
-          
-        
-      </div></div>
-  
-  <div class="page" style="page-break-before: always;">
-    <div class="exam-header" style="text-align: center; margin-bottom: 30px;">
-      <h1>Sources Booklet</h1>
-      <div style="font-size: 16px;">Do not return this Booklet with the question paper.</div>
-    </div>
-    <div class="sources-booklet">
-      <h3>Sources for use with Section A.</h3>
-      <div class="source-block">
-          <div class="source-title">Source A: A clinical report from Captain Oswald Hope Robertson describing the establishment of the first "blood depot" during the Battle of Cambrai in 1917.</div>
-          <div class="source-content">
+    <div class="sources-panel">
+      <div style="font-weight:800; font-size:9.5pt; text-transform:uppercase; color:#0284c7; margin-bottom:8px;">Section A Sources Booklet Reference</div>
+      <div style="margin-bottom:12px;">
+            <div style="font-weight:700; font-size:9.5pt; margin-bottom:4px;">Source A: From a clinical report by Captain Oswald Hope Robertson (US Army Medical Officer attached to the British Third Army RAMC), published in the British Medical Journal in June 1918, describing the first &quot;blood depot&quot; during the Battle of Cambrai in November 1917.</div>
             
-            To prepare for the anticipated casualties, we successfully established a forward blood depot. I collected 22 units of type O blood in advance. By adding sodium citrate, we prevented the blood from clotting, allowing it to be stored in sterilized glass jars for up to four weeks. During the offensive, we successfully transfused 20 severely wounded Canadian soldiers who were suffering from extreme shock.
+            <div style="font-family:Georgia,serif; font-size:9.5pt; line-height:1.5; color:#1e293b;">To prepare for the anticipated casualties before the Cambrai offensive, we established a forward blood depot at Casualty Clearing Station No. 48. Twenty-two units of universal Group O blood were collected in advance into sterilised glass bottles containing sodium citrate and dextrose (glucose) solution, packed in insulated wooden ammunition cases with ice and sawdust for up to twenty-six days. During the heavy fighting, we transfused twenty severely wounded British soldiers suffering from extreme haemorrhagic shock who had been judged too weak to survive surgery; eleven made a complete recovery.</div>
+          </div><div style="margin-bottom:12px;">
+            <div style="font-weight:700; font-size:9.5pt; margin-bottom:4px;">Source B: An official First World War medical photograph (National Museum of Health and Medicine / Otis Historical Archives) showing a graduated glass transfusion bottle marked &quot;500 C.C. BLOOD / 150 C.C. CITRATE&quot; beside a portable wooden &quot;TRANSFUSION SET&quot; field chest used for storing and administering citrated blood near the front in 1917–1918.</div>
+            <img src="/images/med_stage_peyton_rous_blood_storage.jpg" alt="Source B">
+            <div style="font-family:Georgia,serif; font-size:9.5pt; line-height:1.5; color:#1e293b;">[Archival Photograph: A First World War graduated glass blood-storage bottle stencilled &quot;500 C.C. BLOOD&quot; and &quot;150 C.C. CITRATE&quot; fitted with rubber delivery tubing and needle cannula, displayed alongside a compartmentalised wooden &quot;TRANSFUSION SET&quot; field carrying chest.]</div>
           </div>
-        </div><div class="source-block">
-          <div class="source-title">Source B: A photograph showing stretcher bearers operating near the front line at Passchendaele in August 1917.</div>
-          <div class="source-content">
-            <img src="/images/mock_exams/stretcher_bearers.jpg" style="max-width: 100%; max-height: 350px; display: block; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" alt="Visual Source" />
-            The source is a photograph showing stretcher bearers carrying a wounded soldier on a stretcher through the thick mud of Passchendaele, heading towards a Regimental Aid Post or Casualty Clearing Station.
-          </div>
-        </div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>1 (a) Describe one feature of the support work of the First Aid Nursing Yeomanry (FANY) on the Western Front.</span><span>(2 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (2/2 Marks)</div><p style="margin: 0 0 10px 0;">Feature: From January 1916, British women volunteers in the First Aid Nursing Yeomanry (FANY) drove and maintained motor ambulance convoys transporting wounded soldiers between railway sidings, canal barges, and coastal Base Hospitals at Calais and St Omer.</p><p style="margin: 0 0 10px 0;">Detail: Trained in motor mechanics as well as first aid, FANY volunteers repaired heavy ambulance engines in freezing blackout conditions, freeing male RAMC orderlies for frontline stretcher service, and also operated mobile bath lorries, soup kitchens, and cinema vans for troops.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>1 (b) Describe one feature of a Regimental Aid Post (RAP) on the Western Front.</span><span>(2 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (2/2 Marks)</div><p style="margin: 0 0 10px 0;">Feature: A Regimental Aid Post was the first medical post behind the firing line, typically located within 200 yards of the frontline trench inside a dugout, cellar, or ruined building.</p><p style="margin: 0 0 10px 0;">Detail: Staffed by a single Regimental Medical Officer (RMO) and stretcher bearers with no surgical theatre, the RAP patched up lightly wounded men to return to duty while giving serious casualties tourniquets, field dressings, morphine, and anti-tetanus injections before evacuation to an Advanced Dressing Station.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>2 (a) Study Sources A and B in the Sources Booklet.<br><br>How useful are Sources A and B for an enquiry into the development of techniques for blood transfusion and frontline storage?<br><br>Explain your answer, using Sources A and B and your knowledge of the historical context.</span><span>(8 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (8/8 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Source A is exceptionally useful for an enquiry into the development of blood transfusion and frontline storage because it records the world’s first pre-battle blood bank in action at the Battle of Cambrai (November 1917). Robertson details collecting 22 units of universal Group O blood (building on Karl Landsteiner’s 1901 ABO discovery) preserved in sodium citrate and Rous-Turner dextrose (glucose) inside ice-packed ammunition boxes for up to 26 days, saving 11 of 20 shock-stricken soldiers otherwise doomed to die on the operating table. Contextually, before 1915 rapid clotting forced doctors to connect a live donor vein-to-vein or via Keynes/Robertson syringe-cannulas right beside the patient—impossible during chaotic CCS surges—whereas citrate-glucose refrigeration finally separated donor from recipient in both space and time. Regarding provenance, writing in the British Medical Journal (June 1918) as the pioneering US Army researcher attached to British CCS No. 48, Robertson provides authoritative clinical data intended to persuade RAMC surgical teams to adopt resuscitation blood depots across the Western Front in 1918, though his trial sample of 20 patients at one CCS cannot show how widely depots spread by the Armistice.</p><p style="margin: 0 0 10px 0;">Source B is highly useful as corroborating material evidence of the practical field apparatus that made indirect frontline blood storage and transfusion possible in 1917–18. The photograph clearly displays a graduated glass bottle marked "500 C.C. BLOOD" and "150 C.C. CITRATE" connected to rubber tubing, rubber-bulb pressure pump, and needle cannula, housed beside a rugged compartmentalised wooden "TRANSFUSION SET" carrying case. This aligns with historical knowledge: Richard Lewisohn’s 1915 discovery of safe sodium citrate anticoagulation and Rous and Turner’s 1916 glucose preservative allowed standardised portable kits like Captain Robertson’s bottle apparatus to be carried directly into CCS resuscitation ("shock") wards. In terms of provenance, as an official wartime medical-equipment record photograph, it accurately documents exact apparatus design and measurements, though a static studio equipment photo cannot show the clinical perils of haemolysis if blood was mismatched or allowed to warm when ice ran short.</p><p style="margin: 0 0 10px 0;">In conclusion, Sources A and B work together powerfully: Source B reveals the physical anticoagulant bottle and portable kit engineering, while Source A proves its life-saving clinical impact on shock casualties at Cambrai.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>2 (b) Study Source A.<br><br>How could you follow up Source A to find out more about the effectiveness of stored blood transfusions on the Western Front?<br><br>In your answer, you must give the question you would ask and the type of source you could use.<br><br>Complete the table below.</span><span>(4 marks)</span></div>
+      <div class="follow-up-stems">
+        <div>1. Detail in Source B that I would follow up:</div>
+        <div>2. Question I would ask:</div>
+        <div>3. What type of source I could use:</div>
+        <div>4. How this might help answer my question:</div>
+      </div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (4/4 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Detail in Source A that I would follow up: 'During the heavy fighting, we transfused twenty severely wounded British soldiers suffering from extreme haemorrhagic shock... eleven made a complete recovery.'</p><p style="margin: 0 0 10px 0;">Question I would ask: How widely were stored citrate-glucose blood depots adopted across other British Casualty Clearing Stations in 1918, and how far did resuscitation ward survival rates rise?</p><p style="margin: 0 0 10px 0;">Type of source I could use: Resuscitation Ward logs and Surgical Shock Committee reports in the War Diaries of Third and Fourth Army Casualty Clearing Stations for 1918 (TNA WO 95 / Medical Research Committee Shock Reports).</p><p style="margin: 0 0 10px 0;">How this might help answer my question: Comparing pre-operative shock mortality across multiple CCS resuscitation wards in 1918 against 1916–17 units without stored blood depots would test whether Robertson's 55% survival rate among 'hopeless' shock cases was replicated across the BEF.</p></div>
     </div>
   </div>
-  
 
+  <div class="page">
+    <div class="section-header">Section B: Medicine in Britain, c1250–present (36 Marks)</div>
+
+    <div class="question-block">
+      <div class="q-head"><span>3. Explain one way in which methods used to prevent the spread of the Black Death (1348) were similar to methods used to prevent the spread of the Great Plague in London (1665).</span><span>(4 marks)</span></div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (4/4 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">One clear similarity was that during both plagues, authorities and citizens relied on public religious penance alongside clearing street filth to ward off God’s wrath and foul miasmatic air.</p><p style="margin: 0 0 10px 0;">During the 1348–49 Black Death in Medieval England, bishops ordered public fasting, barefoot prayer processions, and confession of sins to appease God, while King Edward III instructed London officials to clear human waste and butcher offal from streets and rivers to stop corrupt air spreading pestilence.</p><p style="margin: 0 0 10px 0;">Similarly, during the 1665 Great Plague in Renaissance London, King Charles II proclaimed national days of public fasting and humiliation while the Mayor’s Plague Orders employed rakers to clear street muck and lit coal fires to purify miasma—showing strong continuity in spiritual and environmental prevention before Germ Theory.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>4. Explain why there was rapid progress in public health and the prevention of disease in the modern period (c1900–present).
+
+You may use the following in your answer:
+• government lifestyle campaigns
+• mass vaccination programmes
+
+You must also use information of your own.</span><span>(12 marks)</span></div>
+      <div style="font-size:9pt; color:#475569; margin-bottom:10px;"><strong>Stimulus points:</strong> Government lifestyle campaigns &bull; Mass vaccination programmes</div>
+      <div class="model-answer"><div class="model-answer-title">Examiner Model Answer (12/12 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">A key factor driving rapid progress in modern disease prevention was the British government's complete abandonment of its traditional 'laissez-faire' policy in favour of active, state-funded compulsory vaccination campaigns. In the mid-twentieth century, the government recognised that it had an institutional duty to safeguard the physical health of its citizens, a shift that was heavily accelerated by the creation of the National Health Service (NHS) in 1948. This state-directed approach first succeeded on a national scale during the Second World War (1940–42) when the Ministry of Health launched the first free national immunisation campaign against diphtheria—fearing crowded air-raid shelters would spark epidemics—which slashed diphtheria deaths from roughly 3,000 a year (out of ~50,000–60,000 annual cases) to virtually zero within a generation. The success of this administrative model enabled the state to systematically introduce subsequent national programmes against polio (1956), tetanus (1961), measles (1968), and the MMR vaccine (1988), effectively eradicating highly infectious epidemics that had plagued Britain for centuries.</p><p style="margin: 0 0 10px 0;">Concurrently, the state utilised its legislative power to prevent disease by launching national lifestyle campaigns and environmental regulations to combat chronic, non-communicable illnesses. Throughout the twentieth century, epidemiological research proved how personal choices regarding tobacco, diet, and exercise caused major killer diseases like lung cancer and heart disease. Consequently, the government abandoned optional, local public health measures and used its legal authority to force behavioural changes on a national scale. Following the catastrophic Great Smog of London in 1952, which killed thousands of vulnerable citizens, the government passed the landmark Clean Air Acts of 1956 and 1968 to legally ban coal smoke and regulate urban air quality. Furthermore, the state implemented heavy taxes on tobacco, mandated plain packaging, and passed the compulsory 2007 ban on smoking in enclosed public workplaces to prevent lung cancer, demonstrating a highly active and successful legislative approach to public health.</p><p style="margin: 0 0 10px 0;">Furthermore, this rapid progress was accelerated by groundbreaking scientific discoveries in biochemistry and virology, which provides a distinct third factor beyond the stimulus points. Throughout the twentieth century, the development of electron microscopes and advanced cell cultures allowed scientists to study viral structures and manufacture highly stable vaccines in industrial laboratories. This led directly to the creation of the Salk polio vaccine in 1955 and the MMR vaccine in 1988, giving the government the exact clinical tools required to immunise millions of children. Today, this scientific progress continues with the development of the HPV vaccine to actively prevent cervical cancer. As a result of this integration of state-funded delivery systems and advanced biotechnology, the focus of modern medicine permanently shifted from expensive hospital cures to proactive, mass disease prevention.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>5. (EITHER) 'In the years c1250–c1500, the university-trained physician was the most important person providing care and treatment.'<br><br>How far do you agree? Explain your answer.<br><br>You may use the following in your answer:<br>• academic medical training<br>• traditional herbal remedies<br><br>You must also use information of your own.</span><span>(16 + 4 SPaG = 20 marks)</span></div>
+      <div style="font-size:9pt; color:#475569; margin-bottom:10px;"><strong>Stimulus points:</strong> Academic medical training &bull; Traditional herbal remedies</div>
+      <div class="model-answer"><div class="model-answer-title">Question 5 Examiner Model Answer (20/20 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">To a very large extent, I disagree with the statement that the university-trained physician was the most important person providing healthcare in medieval England (c1250-c1500). While physicians held the highest professional and social status in medieval society, their practical impact was severely restricted to the wealthy elite. For the vast majority of the population, the actual burden of daily care and biological treatment was carried out by female family members in the home using traditional herbal remedies, supplemented by practically trained community healers like apothecaries and barber-surgeons.</p><p style="margin: 0 0 10px 0;">On the one hand, for the wealthy elite and royalty, the university-trained physician was regarded as the most important and prestigious medical figure. The significance of the physician lay in their extensive academic medical training, which lasted between seven and ten years at Church-supervised universities such as Oxford, Cambridge, Paris, or Montpellier. This training was entirely book-based, requiring students to read and memorise Latin translations of ancient Greek and Roman texts by Hippocrates and Galen, rather than gaining hands-on clinical experience. When diagnosing patients, physicians rarely touched them; instead, they checked planetary alignments using an astrological Almanac and examined the colour, thickness, and smell of urine to identify internal humoural imbalances. They would then write a diagnostic brief directing lower-status manual practitioners to perform treatments. While their high fees made them inaccessible to 95% of medieval society, they were highly important in establishing a professional, 'rational' (natural) framework of medicine that moved away from purely supernatural explanations.</p><p style="margin: 0 0 10px 0;">On the other hand, for the overwhelming majority of ordinary medieval people, the most important providers of healthcare were female family members using traditional herbal remedies in the home. Because university-trained physicians were exceptionally rare and expensive, the home was the true centre of medieval medicine. Women, such as mothers and wives, possessed a vast, practical knowledge of local plants, herbs, and home recipes passed down through generations. They prepared mixtures containing active natural ingredients-like garlic, onions, honey, and wine-which were highly effective. Modern scientific analysis of medieval recipes, such as those found in the Bald's Leechbook, has proven that these herbal remedies possessed genuine antibacterial properties that actively destroyed pathogens and promoted wound healing. Consequently, for the average peasant, these women were far more important than physicians because they provided both accessible daily 'care' (comfort and nutrition) and biologically active 'treatment'.</p><p style="margin: 0 0 10px 0;">Furthermore, other practically trained, affordable healers played a far more significant role in the daily treatment of the sick than university physicians. Ordinary citizens who required physical procedures directly consulted barber-surgeons and apothecaries. Apothecaries mixed and sold herbal medicines, spices, and simple chemical compounds. Because they did not attend university, they were cheap and highly accessible. For physical treatments, peasants relied on barber-surgeons. Barber-surgeons were trained through practical apprenticeships rather than books, using sharp tools to perform haircuts alongside minor surgical procedures like lancing boils, pulling teeth, and carrying out bloodletting (phlebotomy) to rebalance the humours. Additionally, the Church operated around 1,100 charity hospitals in England by 1500. Run by monks and nuns, these hospitals did not provide medical cures, but they were highly important centres of spiritual care, shelter, and hot meals for the poor, elderly, and travellers.</p><p style="margin: 0 0 10px 0;">In conclusion, I disagree with the statement because it confuses professional prestige with practical utility. The university-trained physician possessed prestigious medical training and held a monopoly over academic knowledge, but their clinical usefulness was almost non-existent due to their reliance on flawed classical texts and their high cost. The true backbone of medieval healthcare was decentralised and grassroots. For the general population, local apothecaries, barber-surgeons, and, above all, women in the home preparing herbal remedies were the most important providers of care and treatment, as they offered the only accessible, affordable, and biologically effective medicine of the Middle Ages.</p></div>
+    </div>
+
+    <div class="question-block">
+      <div class="q-head"><span>6. (OR) 'The publication of Louis Pasteur's Germ Theory (1861) was the biggest turning point in understanding the causes of disease in the period c1800–present.'<br><br>How far do you agree? Explain your answer.<br><br>You may use the following in your answer:<br>• Germ Theory (1861)<br>• James Watson and Francis Crick mapping DNA (1953)<br><br>You must also use information of your own.</span><span>(16 + 4 SPaG = 20 marks)</span></div>
+      <div style="font-size:9pt; color:#475569; margin-bottom:10px;"><strong>Stimulus points:</strong> Germ Theory, 1861 &bull; James Watson and Francis Crick mapping DNA</div>
+      <div class="model-answer"><div class="model-answer-title">Question 6 Examiner Model Answer (20/20 Marks • Grade 9)</div><p style="margin: 0 0 10px 0;">Louis Pasteur’s publication of Germ Theory in 1861 has a compelling claim to be the single greatest turning point in understanding the causes of disease between c1800 and the present, because it shattered a 2,000-year dead end of humoral, miasmatic, and spontaneous-generation beliefs. Nevertheless, a nuanced judgement must recognise two crucial qualifications: first, Pasteur’s 1861 paper required Robert Koch’s bacteriological methods (1876–84) before doctors accepted specific germ causation in humans; and second, Germ Theory could only explain <em>infectious</em> illnesses, meaning the 1953 discovery of DNA and twentieth-century lifestyle epidemiology were equally vital turning points for hereditary and non-communicable diseases.</p><p style="margin: 0 0 10px 0;">In strong support of the statement, Pasteur’s 1861 swan-neck flask experiments marked the decisive watershed between pre-scientific speculation and modern microbiology. In c1800–1860, British medicine was trapped in bitter debates between miasmatists (who blamed foul-smelling air from slums) and believers in 'spontaneous generation' (who claimed decaying flesh created microbes rather than vice versa), which prevented even John Snow’s brilliant 1854 Soho cholera map from winning immediate scientific consensus. By proving that boiled broth remained sterile until exposed to dust-laden air—and showing in the late 1860s that specific microbes caused silkworm disease—Pasteur established the revolutionary principle that microscopic external organisms invade living tissue. Without this 1861 conceptual breakthrough, neither Lister’s antiseptics nor modern bacteriology and virology could have emerged.</p><p style="margin: 0 0 10px 0;">However, Pasteur’s 1861 publication was an incomplete turning point on its own until Robert Koch transformed it into practical human pathology in the late 1870s and 1880s, and twentieth-century technology extended it to viruses. Because Pasteur was a French chemist studying beer, wine, and vinegar rather than a physician, influential British doctors like Henry Charlton Bastian fiercely resisted Germ Theory throughout the 1860s and 1870s. It took Koch’s solid agar cultures, chemical aniline dyes, oil-immersion photomicrography, and 'Koch’s Postulates' to isolate the exact human bacteria causing anthrax (1876), tuberculosis (1882), and cholera (1883–84), finally silencing British miasmatists. Later, the invention of the electron microscope in the 1930s allowed scientists to visualise sub-microscopic viruses causing influenza, polio, and measles.</p><p style="margin: 0 0 10px 0;">Furthermore, in the modern period (c1900–present), two entirely separate breakthroughs—molecular genetics (DNA, 1953) and statistical lifestyle epidemiology—opened causal frontiers where Germ Theory had zero explanatory power. Microbes do not cause cystic fibrosis, sickle-cell anaemia, Huntington’s disease, or inherited BRCA breast cancer: understanding those illnesses required Rosalind Franklin and Maurice Wilkins’s X-ray crystallography and James Watson and Francis Crick’s 1953 double-helix model of DNA, culminating in the Human Genome Project (1990–2003). Equally, Richard Doll and Austin Bradford Hill’s 1950–54 epidemiological studies proving smoking caused lung cancer—alongside research into diet, alcohol, and air pollution—explained the chronic lifestyle killers that replaced infectious epidemics in post-war Britain.</p><p style="margin: 0 0 10px 0;">In conclusion, I largely agree that Pasteur’s 1861 Germ Theory was the <em>biggest</em> overarching turning point since c1800, because overturning miasma and spontaneous generation established the empirical, laboratory-driven scientific method upon which Koch, virology, and public health built. Yet it was not the <em>complete</em> answer: Koch made Germ Theory clinically specific to human bacteria, while Watson, Crick, and Franklin’s 1953 DNA breakthrough and Doll and Hill’s epidemiology were essential second-wave turning points for hereditary and lifestyle disease.</p></div>
+    </div>
+  </div>
 </body>
 </html>

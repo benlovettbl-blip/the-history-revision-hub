@@ -21,7 +21,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         label: "GALENIC DOGMA",
         title: "Unquestioned Reverence for Galen and Hippocrates",
         detail: "Physicians treated Galen's ancient texts as infallible truth, believing any discrepancy between a dead body and Galen was an error in the body, not the book.",
-        starter: "&ldquo;Our corner was decisive because medical education prioritized reciting ancient Greek books over empirical observation of real human bodies...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because medical education prioritised reciting ancient Greek books over empirical observation of real human bodies...&rdquo;"
       },
       {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
@@ -190,7 +190,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         label: "THE ROYAL SOCIETY",
         title: "Peer Review & 'Nullius in Verba' (1660)",
         detail: "The founding of the Royal Society created a scientific community committed to experimental testing and sharing results in Philosophical Transactions.",
-        starter: "&ldquo;Our corner was decisive because the Royal Society institutionalized empirical verification and eliminated blind subservience to ancient authority...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because the Royal Society institutionalised empirical verification and eliminated blind subservience to ancient authority...&rdquo;"
       },
       {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
@@ -215,7 +215,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "BEDSIDE OBSERVATION",
         title: "Prioritising Clinical Watching Over Book Theory",
-        detail: "Sydenham told doctors to 'go to the bedside and observe,' rejecting complex Latin humoral treatises in favor of taking detailed clinical notes on the live patient.",
+        detail: "Sydenham told doctors to 'go to the bedside and observe,' rejecting complex Latin humoral treatises in favour of taking detailed clinical notes on the live patient.",
         starter: "&ldquo;Our corner was decisive because Sydenham made clinical bedside observation the primary duty of the physician instead of theoretical reading...&rdquo;"
       },
       {
@@ -270,7 +270,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         label: "ENGLISH POPULARISATION",
         title: "Thomas Geminus's Plagiarised Compendium (1545)",
         detail: "Geminus copied Vesalius's illustrations into copper engravings in England, creating cheap pocketbooks for English barber-surgeons.",
-        starter: "&ldquo;Our corner was decisive because English translations brought revolutionary anatomy directly into the hands of practicing British surgeons...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because English translations brought revolutionary anatomy directly into the hands of practising British surgeons...&rdquo;"
       }
     ]
   },
@@ -431,7 +431,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
         label: "NURSE PROFESSIONALISATION",
         title: "Nightingale Training School at St Thomas' Hospital",
-        detail: "Establishing the first secular training school in 1860 turned nursing from drunken, disreputable labor (like Dickens' 'Sairey Gamp') into an educated, disciplined profession.",
+        detail: "Establishing the first secular training school in 1860 turned nursing from drunken, disreputable labour (like Dickens' 'Sairey Gamp') into an educated, disciplined profession.",
         starter: "&ldquo;Our corner was decisive because training educated, sober nurses established rigorous round-the-clock clinical care for every patient...&rdquo;"
       },
       {
@@ -472,7 +472,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         label: "ROYAL PATRONAGE",
         title: "Queen Victoria's Endorsement of Chloroform (1853)",
         detail: "When Queen Victoria used chloroform during the birth of Prince Leopold in 1853, religious opposition melted away, making anaesthetics universally acceptable.",
-        starter: "&ldquo;Our corner was decisive because royal endorsement legitimized anaesthesia and broke the religious stigma against pain relief in childbirth...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because royal endorsement legitimised anaesthesia and broke the religious stigma against pain relief in childbirth...&rdquo;"
       }
     ]
   },
@@ -489,7 +489,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
       {
         corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
         label: "THE GREAT STINK (1858)",
-        title: "The Stench of the Thames Paralyzing Parliament",
+        title: "The Stench of the Thames Paralysing Parliament",
         detail: "A scorching summer caused untreated sewage in the Thames to emit an overpowering stench that forced MPs to soak curtains in chloride of lime, forcing them to fund sewers.",
         starter: "&ldquo;Our corner was decisive because MPs only voted funds for Bazalgette's sewers when the filthy stench directly threatened their own comfort in Parliament...&rdquo;"
       },
@@ -541,19 +541,19 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
         label: "GENE THERAPY & CRISPR",
         title: "Targeted Gene Editing & Personalised Medicine",
-        detail: "Modern biotechnology allows clinicians to modify faulty DNA, develop customized cancer immunotherapy, and screen embryos before implantation.",
+        detail: "Modern biotechnology allows clinicians to modify faulty DNA, develop customised cancer immunotherapy, and screen embryos before implantation.",
         starter: "&ldquo;Our corner was decisive because gene editing transforms theoretical genetics into active cures that repair defective cellular codes...&rdquo;"
       }
     ]
   },
   lesson_4_2: {
-    enquiry: "Which technology has done the MOST to revolutionize medical diagnosis in the modern era?",
+    enquiry: "Which technology has done the MOST to revolutionise medical diagnosis in the modern era?",
     corners: [
       {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "X-RAY IMAGING",
         title: "Wilhelm Röntgen's X-Rays (1895)",
-        detail: "Röntgen's discovery revealed bones and foreign objects inside the body, eliminating exploratory bone surgery and revolutionizing trauma medicine.",
+        detail: "Röntgen's discovery revealed bones and foreign objects inside the body, eliminating exploratory bone surgery and revolutionising trauma medicine.",
         starter: "&ldquo;Our corner was decisive because X-rays opened the human interior to clinical observation without cutting flesh open...&rdquo;"
       },
       {
@@ -573,9 +573,9 @@ export const EDEXCEL_MEDICINE_CORNERS = {
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
         label: "ENDOSCOPY",
-        title: "Fiber-Optic Keyhole Internal Inspection",
+        title: "Fibre-Optic Keyhole Internal Inspection",
         detail: "Flexible cameras guided inside the digestive tract or joints allow doctors to view ulcers and tumours directly and take biopsies with minimal recovery time.",
-        starter: "&ldquo;Our corner was decisive because fiber-optic endoscopy eliminated major abdominal surgery for basic internal diagnostic investigation...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because fibre-optic endoscopy eliminated major abdominal surgery for basic internal diagnostic investigation...&rdquo;"
       }
     ]
   },
@@ -593,7 +593,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
         label: "WARTIME SOLIDARITY",
         title: "Shared Sacrifices of the Blitz & Emergency Medical Service",
-        detail: "The Emergency Medical Service (EMS) set up state-funded hospitals across Britain during the Blitz, proving that a centralized national healthcare system worked.",
+        detail: "The Emergency Medical Service (EMS) set up state-funded hospitals across Britain during the Blitz, proving that a centralised national healthcare system worked.",
         starter: "&ldquo;Our corner was decisive because wartime state hospitals proved a unified medical service was practical and broke traditional resistance...&rdquo;"
       },
       {
@@ -633,15 +633,15 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
         label: "US MASS PRODUCTION",
         title: "Peoria Fermentation & Deep-Tank Industrial Brewing",
-        detail: "Florey traveled to the US, where scientists in Peoria used corn steep liquor and cantaloupe mould in giant deep tanks to mass-produce billions of units for D-Day.",
+        detail: "Florey travelled to the US, where scientists in Peoria used corn steep liquor and cantaloupe mould in giant deep tanks to mass-produce billions of units for D-Day.",
         starter: "&ldquo;Our corner was decisive because American industrial engineering enabled mass production to supply enough penicillin for the entire Allied army...&rdquo;"
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
         label: "WARTIME GOVERNMENT FUNDING",
         title: "Allied Military Prioritisation (WW2)",
-        detail: "The British and US governments poured millions into pharmaceutical plants, recognizing penicillin as a strategic war weapon to keep wounded soldiers alive.",
-        starter: "&ldquo;Our corner was decisive because wartime military funding mobilized national industrial resources that peacetime capitalism never would have...&rdquo;"
+        detail: "The British and US governments poured millions into pharmaceutical plants, recognising penicillin as a strategic war weapon to keep wounded soldiers alive.",
+        starter: "&ldquo;Our corner was decisive because wartime military funding mobilised national industrial resources that peacetime capitalism never would have...&rdquo;"
       }
     ]
   },
@@ -659,7 +659,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
         label: "PUBLIC SMOKING BANS",
         title: "The 2007 Ban in Enclosed Public Places",
-        detail: "Banning smoking in all enclosed workplaces, pubs, and restaurants protected workers from passive smoke and denormalized smoking across British society.",
+        detail: "Banning smoking in all enclosed workplaces, pubs, and restaurants protected workers from passive smoke and denormalised smoking across British society.",
         starter: "&ldquo;Our corner was decisive because the 2007 ban removed cigarettes from social venues, drastically reducing heart attacks and encouraging millions to quit...&rdquo;"
       },
       {
@@ -755,7 +755,7 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "HIGH EXPLOSIVE ARTILLERY",
         title: "Shrapnel, Crushed Bones & 58% of All Casualties",
-        detail: "Artillery shells tore men apart with jagged metal fragments, shattered limbs into splinters, and caused massive internal hemorrhage and concussion.",
+        detail: "Artillery shells tore men apart with jagged metal fragments, shattered limbs into splinters, and caused massive internal haemorrhage and concussion.",
         starter: "&ldquo;Our corner was decisive because artillery shells caused the majority of all battlefield casualties with catastrophic, ragged wound trauma...&rdquo;"
       },
       {
@@ -770,13 +770,13 @@ export const EDEXCEL_MEDICINE_CORNERS = {
         label: "CHLORINE & PHOSGENE GAS",
         title: "Suffocation by Lung Destruction (1915)",
         detail: "Green chlorine and phosgene gas destroyed delicate lung tissue, causing men to drown in their own bodily fluids within excruciating hours of inhalation.",
-        starter: "&ldquo;Our corner was decisive because poison gases destroyed lungs invisibly, requiring oxygen equipment and specialized respiratory care...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because poison gases destroyed lungs invisibly, requiring oxygen equipment and specialised respiratory care...&rdquo;"
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
         label: "MUSTARD GAS",
         title: "Blistering Agent Burning Skin & Eyes (1917)",
-        detail: "Odorless mustard gas sank into mud, burning skin through uniforms with horrific yellow blisters, causing temporary blindness, and poisoning soldiers through touch.",
+        detail: "Odourless mustard gas sank into mud, burning skin through uniforms with horrific yellow blisters, causing temporary blindness, and poisoning soldiers through touch.",
         starter: "&ldquo;Our corner was decisive because mustard gas persisted in soil for weeks, causing excruciating skin blisters and overwhelming dressing stations...&rdquo;"
       }
     ]

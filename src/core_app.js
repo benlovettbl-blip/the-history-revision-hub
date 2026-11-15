@@ -1574,49 +1574,49 @@ window.toggleMap = function (btn) {
 };
 
 // --- Key Individual & Organisation Link Global Functions ---
-window.jumpToKeyIndividual = async function (name) {
-  const unitId =
-    window.currentUnitId || (window.appStore && window.appStore.state?.selectedUnitId);
-
-  if (typeof window.switchView === 'function' && unitId) {
-    await window.switchView('individuals', unitId);
-  }
-
-  setTimeout(() => {
-    const allPill = document.querySelector('.agent-filter-pill[data-filter="all"]');
-    if (allPill) allPill.click();
-
-    const needle = String(name || '').trim().toLowerCase();
-    const cards = document.querySelectorAll('.person-card');
-    let targetCard = null;
-    cards.forEach((card) => {
-      if (targetCard) return;
-      const cardName = (card.dataset.agentName || '').toLowerCase();
-      const aliases = (card.dataset.agentAliases || '')
-        .toLowerCase()
-        .split('|')
-        .map((s) => s.trim())
-        .filter(Boolean);
-      const h3 = card.querySelector('h3');
-      const h3Text = h3 ? h3.innerText.toLowerCase() : '';
-      if (
-        cardName === needle ||
-        aliases.includes(needle) ||
-        cardName.includes(needle) ||
-        h3Text.includes(needle)
-      ) {
-        targetCard = card;
-      }
-    });
-    if (targetCard) {
-      targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      targetCard.classList.add('flipped', 'agent-highlight-ring');
-      setTimeout(() => {
-        targetCard.classList.remove('agent-highlight-ring');
-      }, 2400);
+// Canonical jumpToKeyIndividual is registered by ./key_individuals.js (preserves return origin & header back button)
+if (typeof window.jumpToKeyIndividual !== 'function') {
+  window.jumpToKeyIndividual = async function (name) {
+    const unitId =
+      window.currentUnitId || (window.appStore && window.appStore.state?.selectedUnitId);
+    if (typeof window.switchView === 'function' && unitId) {
+      await window.switchView('individuals', unitId);
     }
-  }, 120);
-};
+    setTimeout(() => {
+      const allPill = document.querySelector('.agent-filter-pill[data-filter="all"]');
+      if (allPill) allPill.click();
+      const needle = String(name || '').trim().toLowerCase();
+      const cards = document.querySelectorAll('.person-card');
+      let targetCard = null;
+      cards.forEach((card) => {
+        if (targetCard) return;
+        const cardName = (card.dataset.agentName || '').toLowerCase();
+        const aliases = (card.dataset.agentAliases || '')
+          .toLowerCase()
+          .split('|')
+          .map((s) => s.trim())
+          .filter(Boolean);
+        const h3 = card.querySelector('h3');
+        const h3Text = h3 ? h3.innerText.toLowerCase() : '';
+        if (
+          cardName === needle ||
+          aliases.includes(needle) ||
+          cardName.includes(needle) ||
+          h3Text.includes(needle)
+        ) {
+          targetCard = card;
+        }
+      });
+      if (targetCard) {
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        targetCard.classList.add('flipped', 'agent-highlight-ring');
+        setTimeout(() => {
+          targetCard.classList.remove('agent-highlight-ring');
+        }, 2400);
+      }
+    }, 120);
+  };
+}
 
 // --- Debate Modal Global Functions ---
 window.currentDebateIndex = 0;
@@ -3303,11 +3303,14 @@ window.openGallery = function (encodedData, startIndex) {
 };
 
 window.startTPSTimer = function (btn, seconds) {
-  if (btn.timerInterval) return;
+  if (!btn || btn.timerInterval) return;
   btn.originalHTML = btn.innerHTML;
-  let timeLeft = seconds;
+  btn.originalBg = btn.style.background || '';
+  btn.originalColor = btn.style.color || '';
+  let timeLeft = Number(btn.dataset && btn.dataset.seconds) || Number(seconds) || 60;
   btn.innerHTML = '<i class="fa-regular fa-clock"></i> ' + timeLeft + 's';
   btn.style.background = '#ef4444';
+  btn.style.color = '#ffffff';
 
   btn.timerInterval = setInterval(() => {
     timeLeft--;
@@ -3317,7 +3320,8 @@ window.startTPSTimer = function (btn, seconds) {
       btn.innerHTML = '<i class="fa-regular fa-bell"></i> Time!';
       setTimeout(() => {
         btn.innerHTML = btn.originalHTML;
-        btn.style.background = '#10b981';
+        btn.style.background = btn.originalBg || '';
+        btn.style.color = btn.originalColor || '';
       }, 4000);
     } else {
       btn.innerHTML = '<i class="fa-regular fa-clock"></i> ' + timeLeft + 's';

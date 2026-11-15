@@ -98,6 +98,14 @@ export function usesFiveQuestionDefault(unit, unitId = '') {
 export function cleanLessonTopicTitle(raw, fallbackNum = 1) {
   const str = String(raw || '').trim();
   if (!str) return `Lesson ${fallbackNum}`;
+  if (/^KT\s*\d+(?:\.\d+)?\s*:/i.test(str)) {
+    const stripped = str
+      .replace(/^KT\s*\d+(?:\.\d+)?\s*:\s*/i, '')
+      .replace(/^Case\s*Study(?:\s*\d+)?\s*:\s*/i, '')
+      .replace(/\s*\([^)]*\)\s*$/, '')
+      .trim();
+    return stripped || str;
+  }
   if (/^(?:Enquiry|Lesson)\s*\d+\s*:/i.test(str)) {
     const stripped = str.replace(/^(?:Enquiry|Lesson)\s*\d+\s*:\s*/i, '').trim();
     return stripped.split(':')[0].trim() || stripped;

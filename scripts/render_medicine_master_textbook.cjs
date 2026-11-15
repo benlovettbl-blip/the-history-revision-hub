@@ -481,20 +481,30 @@ function generateEraHtml(eraKey, unitData) {
     `;
   }
 
-  // Build Back Cover Quiz Cards
+  // Build Back Cover Quiz Cards (pulling directly from each lesson's own retrieval quiz, never prior-lesson do_now)
+  const getLessonRetrievalQuestions = (lesson) => {
+    const raw = Array.isArray(lesson.quiz)
+      ? lesson.quiz
+      : (lesson.quiz && lesson.quiz.questions) ||
+        (Array.isArray(lesson.quick_quiz) ? lesson.quick_quiz : []) ||
+        (lesson.do_now && lesson.do_now.items) ||
+        [];
+    return raw.map((item) => (item && (item.question || item.q)) || '').filter(Boolean);
+  };
+
   let quizCardsHtml = '';
   if (eraKey === 'western_front') {
     // 6 Cards x 6 Questions = 36 Questions
     quizCardsHtml = lessons
       .map((lesson, lIdx) => {
-        const qItems = (lesson.do_now && lesson.do_now.items) || [];
+        const qItems = getLessonRetrievalQuestions(lesson);
         const questions = qItems
           .slice(0, 6)
           .map(
-            (item, qIdx) => `
+            (qText, qIdx) => `
         <li>
           <span class="q-num">${lIdx * 6 + qIdx + 1}.</span>
-          <span class="q-txt">${item.question}</span>
+          <span class="q-txt">${qText}</span>
         </li>
       `,
           )
@@ -504,7 +514,7 @@ function generateEraHtml(eraKey, unitData) {
         <div class="quiz-card">
           <div class="quiz-card-header">
             <span class="quiz-card-topic">Enquiry 0${lIdx + 1}: ${cleanLessonTitle(lesson.title).split('(')[0].trim()}</span>
-            <span class="quiz-card-loc">pp. ${lIdx * 2 + 3}–${lIdx * 2 + 4} &bull; Ref [${21 + lIdx}.1]–[${21 + lIdx}.5]</span>
+            <span class="quiz-card-loc">pp. ${lIdx * 2 + 3}–${lIdx * 2 + 4} &bull; Ref [${lIdx + 1}.1]–[${lIdx + 1}.5]</span>
           </div>
           <ul class="quiz-card-list">
             ${questions}
@@ -516,14 +526,14 @@ function generateEraHtml(eraKey, unitData) {
   } else {
     // Eras 1–4: 5 Enquiry Cards + 1 Synoptic Card (6 Cards x 5 Questions = 30 Questions)
     const cards = lessons.map((lesson, lIdx) => {
-      const qItems = (lesson.do_now && lesson.do_now.items) || [];
+      const qItems = getLessonRetrievalQuestions(lesson);
       const questions = qItems
         .slice(0, 5)
         .map(
-          (item, qIdx) => `
+          (qText, qIdx) => `
         <li>
           <span class="q-num">${lIdx * 5 + qIdx + 1}.</span>
-          <span class="q-txt">${item.question}</span>
+          <span class="q-txt">${qText}</span>
         </li>
       `,
         )
@@ -767,9 +777,9 @@ function generateEraHtml(eraKey, unitData) {
 
     .cover-main-title {
       font-family: 'Cinzel', serif;
-      font-size: ${eraKey === 'western_front' ? '15pt' : '16pt'};
+      font-size: ${eraKey === '18th_19th' ? '13.6pt' : eraKey === 'western_front' || eraKey === 'renaissance' ? '14.5pt' : '15.4pt'};
       font-weight: 900;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.015em;
       color: #0f172a;
       margin: 0 0 1px 0;
       line-height: 1.15;
@@ -1053,9 +1063,9 @@ function generateEraHtml(eraKey, unitData) {
     .master-exam-ribbon {
       background: #0f172a;
       color: #ffffff;
-      padding: 3.5px 10px;
-      display: grid;
-      grid-template-columns: 0.95fr 1.4fr 0.95fr;
+      padding: 3.5px 9px;
+      display: flex;
+      justify-content: space-between;
       gap: 8px;
       border-top: 2px solid #1e3a8a;
       align-items: center;
@@ -1066,14 +1076,14 @@ function generateEraHtml(eraKey, unitData) {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      overflow: hidden;
+      min-width: 0;
     }
 
     .ribbon-cell-title {
       font-family: 'Inter', sans-serif;
-      font-size: 6.6pt;
+      font-size: 6.1pt;
       font-weight: 900;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #93c5fd;
       margin-bottom: 1px;
@@ -1082,7 +1092,7 @@ function generateEraHtml(eraKey, unitData) {
 
     .ribbon-cell-content {
       font-family: 'Inter', sans-serif;
-      font-size: 6.8pt;
+      font-size: 6.35pt;
       font-weight: 700;
       color: #e2e8f0;
       line-height: 1.2;
@@ -1750,8 +1760,31 @@ function generateEraHtml(eraKey, unitData) {
       });
     }
 
+    function autoFitQuizPage() {
+      const quizPage = document.querySelector('.quiz-page');
+      if (!quizPage) return;
+      const items = Array.from(quizPage.querySelectorAll('.quiz-card-list li'));
+      const cards = Array.from(quizPage.querySelectorAll('.quiz-card'));
+      let fs = 6.6;
+      let lh = 1.22;
+      let attempts = 0;
+      while (quizPage.scrollHeight > quizPage.clientHeight && attempts < 14 && fs > 5.8) {
+        fs -= 0.08;
+        lh = Math.max(1.14, lh - 0.01);
+        items.forEach(li => {
+          li.style.fontSize = fs.toFixed(2) + 'pt';
+          li.style.lineHeight = lh.toFixed(2);
+        });
+        cards.forEach(c => {
+          c.style.padding = '3.5px 6px';
+        });
+        attempts++;
+      }
+    }
+
     window.addEventListener('load', () => {
       autoFitSpreadTypography();
+      autoFitQuizPage();
     });
   </script>
 </body>
@@ -1804,6 +1837,7 @@ async function renderEra(eraKey, unitData, browser) {
   // Evaluate auto-fit engines
   await page.evaluate(() => {
     if (typeof autoFitSpreadTypography === 'function') autoFitSpreadTypography();
+    if (typeof autoFitQuizPage === 'function') autoFitQuizPage();
   });
   await new Promise((r) => setTimeout(r, 600));
 

@@ -777,7 +777,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
   const questionRowsMedicineExpanded = [
     {
       label: 'Q1: Feature Questions',
-      sub: '2m / 4m (Western Front)',
+      sub: '2m + 2m Q1a/1b (4m total • Western Front)',
       match: (q) => q.q_number.startsWith('Q1'),
     },
     {
@@ -1506,7 +1506,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
         <div style="background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; margin-bottom: 25px;">
           <h2 style="margin: 0 0 10px 0; color: #0f172a;"><i class="fa-solid fa-book-bookmark" style="color: ${cfg.primary};"></i> Official Edexcel Exam Archive</h2>
           <p style="color: #64748b; font-size: 1rem; margin-bottom: 25px;">
-            The History Hub is synchronized directly with your local Google Drive exam repository. Below are all verified official Question Papers, Mark Schemes, and Examiner Reports.
+            The History Hub is synchronised directly with your local Google Drive exam repository. Below are all verified official Question Papers, Mark Schemes, and Examiner Reports.
           </p>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
@@ -2019,7 +2019,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
           ${q2a.topic}
         </h2>
         <p style="margin: 8px 0 0 0; color: #475569; font-size: 0.9rem; line-height: 1.45;">
-          The British sector of the Western Front, 1914–18: injuries, treatment and the trenches. Section A tests factual recall (Q1: 4m), source utility (Q2a: 8m), and historical enquiry follow-up methods (Q2b: 4m).
+          The British sector of the Western Front, 1914–18: injuries, treatment and the trenches. Section A tests factual recall (Q1a/1b: 2m + 2m = 4m), source utility (Q2a: 8m), and historical enquiry follow-up methods (Q2b: 4m).
         </p>
       </div>
 

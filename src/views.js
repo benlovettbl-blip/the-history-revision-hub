@@ -1788,6 +1788,12 @@ export async function renderTimeline() {
     return;
   }
 
+  if (unitId === 'edexcel_medicine') {
+    const { renderMedicineLivingTimeline } = await import('./medicine_living_timeline.js');
+    renderMedicineLivingTimeline(container);
+    return;
+  }
+
   if (unitId === 'ks2_ww2') {
     const { renderKs2TimelineSlider } = await import('./ks2_chronology_slider.js');
     renderKs2TimelineSlider(container);

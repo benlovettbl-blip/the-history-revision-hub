@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="snow-map-title snow-map-desc">
+  <title id="snow-map-title">Dr John Snow's Soho Cholera Spot Investigation (September 1854)</title>
+  <desc id="snow-map-desc">Edexcel GCSE History cartographic spot map of the September 1854 Soho cholera outbreak investigated by Dr John Snow, showing stacked red death tally bars clustered around the Broad Street Water Pump (50%, 52%), the leaking cesspit at 40 Broad Street (45%, 57%), anomaly survivals at the Poland Street Workhouse (54%, 27%) and Lion Brewery (68%, 50%), and the Hampstead outlier case of Widow Susannah Eley (22%, 24%).</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .overline { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 2px; fill: #38bdf8; }
+      .hdr-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 20.5px; font-weight: 700; fill: #f8fafc; }
+      .pill-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 0.9px; fill: #fde68a; }
+      .st-major { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 11.5px; font-weight: 800; letter-spacing: 2.4px; fill: #475569; }
+      .st-minor { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 700; letter-spacing: 1.4px; fill: #64748b; }
+      .poi-hdr { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 800; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.6px; stroke-linejoin: round; }
+      .poi-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 700; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.2px; stroke-linejoin: round; }
+      .leg-hdr { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; fill: #0f172a; }
+      .leg-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.6px; font-weight: 500; fill: #475569; }
+    ]]></style>
+    <clipPath id="sohoMapClip">
+      <rect x="0" y="64" width="1200" height="622"/>
+    </clipPath>
+    <filter id="cardShadow" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <radialGradient id="choleraHeat" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#f97316" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ================= SOHO URBAN BLOCKS and STREET NETWORK (y=64..686) ================= -->
+  <g clip-path="url(#sohoMapClip)">
+    <!-- Georgian Soho Urban Block Base Fill -->
+    <rect x="0" y="64" width="1200" height="622" fill="#e6dfd1"/>
+
+    <!-- Subtle Parish Block Lot Subdivisions -->
+    <g stroke="#d6ccb9" stroke-width="1">
+      <line x1="200" y1="64" x2="200" y2="686"/><line x1="360" y1="64" x2="360" y2="686"/>
+      <line x1="480" y1="64" x2="480" y2="686"/><line x1="650" y1="64" x2="650" y2="686"/>
+      <line x1="780" y1="64" x2="780" y2="686"/><line x1="930" y1="64" x2="930" y2="686"/>
+      <line x1="1060" y1="64" x2="1060" y2="686"/>
+      <line x1="0" y1="160" x2="1200" y2="160"/><line x1="0" y1="240" x2="1200" y2="240"/>
+      <line x1="0" y1="330" x2="1200" y2="330"/><line x1="0" y1="440" x2="1200" y2="440"/>
+      <line x1="0" y1="530" x2="1200" y2="530"/><line x1="0" y1="610" x2="1200" y2="610"/>
+    </g>
+
+    <!-- Cased Street Network: Outer Kerb Casing (#b5a895) -->
+    <g fill="none" stroke="#b5a895" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Major Boundary Thoroughfares -->
+      <path d="M 20,86 L 1180,82" stroke-width="30"/> <!-- Oxford Street -->
+      <path d="M 142,84 L 148,440 Q 154,575 186,680" stroke-width="30"/> <!-- Regent Street -->
+      <path d="M 986,82 L 972,680" stroke-width="24"/> <!-- Wardour Street -->
+      <path d="M 180,658 L 974,652" stroke-width="22"/> <!-- Brewer Street -->
+
+      <!-- Broad Street and New Street (Runs across y=390 at Cambridge St, angling to y=400 east) -->
+      <path d="M 420,390 L 716,390 L 892,400 L 980,402" stroke-width="24"/>
+
+      <!-- North-South Soho Streets -->
+      <path d="M 716,84 L 716,390" stroke-width="20"/> <!-- Poland Street -->
+      <path d="M 892,83 L 892,653" stroke-width="20"/> <!-- Berwick Street -->
+      <path d="M 594,296 L 594,655" stroke-width="19"/> <!-- Cambridge St -> Lexington St -->
+      <path d="M 420,276 L 420,582" stroke-width="19"/> <!-- Marshall Street -->
+      <path d="M 314,276 L 314,582" stroke-width="17"/> <!-- Carnaby / King Street -->
+      <path d="M 516,492 L 516,655" stroke-width="16"/> <!-- James St / Lower John St -->
+      <path d="M 776,400 L 776,654" stroke-width="16"/> <!-- Hopkins / Rupert St -->
+      <path d="M 1084,82 L 1084,652" stroke-width="18"/> <!-- Dean Street (East of Wardour) -->
+
+      <!-- East-West Soho Cross Streets -->
+      <path d="M 145,276 L 594,276" stroke-width="20"/> <!-- Great Marlborough Street -->
+      <path d="M 594,296 L 982,296" stroke-width="16"/> <!-- Noel Street -->
+      <path d="M 148,472 L 594,472" stroke-width="18"/> <!-- Beak St / Silver Street -->
+      <path d="M 314,582 L 594,582" stroke-width="16"/> <!-- Golden Square South / Marylebone St -->
+      <path d="M 716,202 L 984,202" stroke-width="15"/> <!-- Portland / Oxford Mews -->
+      <path d="M 594,528 L 892,528" stroke-width="15"/> <!-- Pulteney / Little Windmill -->
+    </g>
+
+    <!-- Cased Street Network: Crisp White Carriageway Fill (#fcfbf7) -->
+    <g fill="none" stroke="#fcfbf7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 20,86 L 1180,82" stroke-width="25"/>
+      <path d="M 142,84 L 148,440 Q 154,575 186,680" stroke-width="25"/>
+      <path d="M 986,82 L 972,680" stroke-width="19"/>
+      <path d="M 180,658 L 974,652" stroke-width="17"/>
+      <path d="M 420,390 L 716,390 L 892,400 L 980,402" stroke-width="19"/>
+      <path d="M 716,84 L 716,390" stroke-width="15"/>
+      <path d="M 892,83 L 892,653" stroke-width="15"/>
+      <path d="M 594,296 L 594,655" stroke-width="14"/>
+      <path d="M 420,276 L 420,582" stroke-width="14"/>
+      <path d="M 314,276 L 314,582" stroke-width="12"/>
+      <path d="M 516,492 L 516,655" stroke-width="11"/>
+      <path d="M 776,400 L 776,654" stroke-width="11"/>
+      <path d="M 1084,82 L 1084,652" stroke-width="13"/>
+      <path d="M 145,276 L 594,276" stroke-width="15"/>
+      <path d="M 594,296 L 982,296" stroke-width="11"/>
+      <path d="M 148,472 L 594,472" stroke-width="13"/>
+      <path d="M 314,582 L 594,582" stroke-width="11"/>
+      <path d="M 716,202 L 984,202" stroke-width="10"/>
+      <path d="M 594,528 L 892,528" stroke-width="10"/>
+    </g>
+
+    <!-- Golden Square Leafy Garden Block (SW of Broad St) -->
+    <rect x="432" y="486" width="74" height="84" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+    <circle cx="469" cy="528" r="22" fill="#bbf7d0" stroke="#16a34a" stroke-width="1"/>
+    <text x="469" y="526" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="800" fill="#14532d">GOLDEN</text>
+    <text x="469" y="537" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="800" fill="#14532d">SQUARE</text>
+
+    <!-- Epicentre Cholera Mortality Radial Halo and Equidistant Catchment Boundary -->
+    <circle cx="600" cy="390" r="188" fill="url(#choleraHeat)"/>
+    <circle cx="600" cy="390" r="192" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="7 5" stroke-opacity="0.65"/>
+    <text x="742" y="232" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.2" font-weight="800" fill="#b91c1c" transform="rotate(26 742 232)">SNOW'S NEAREST-WALK PUMP BOUNDARY</text>
+
+    <!-- ================= STREET LABELS (PLACED CLEANLY AWAY FROM PINS) ================= -->
+    <text x="640" y="90" text-anchor="middle" class="st-major">OXFORD STREET</text>
+    <text x="145" y="378" text-anchor="middle" class="st-major" transform="rotate(-88 145 378)">REGENT STREET</text>
+    <text x="980" y="365" text-anchor="middle" class="st-major" transform="rotate(91 980 365)">WARDOUR STREET</text>
+    <text x="560" y="660" text-anchor="middle" class="st-major">BREWER STREET</text>
+
+    <text x="486" y="394" text-anchor="middle" class="st-minor" fill="#0f172a" style="fill: #0f172a;">BROAD STREET</text>
+    <text x="716" y="142" text-anchor="middle" class="st-minor" transform="rotate(90 716 142)">POLAND ST</text>
+    <text x="892" y="252" text-anchor="middle" class="st-minor" transform="rotate(90 892 252)">BERWICK ST</text>
+    <text x="594" y="576" text-anchor="middle" class="st-minor" transform="rotate(90 594 576)">LEXINGTON ST</text>
+    <text x="420" y="336" text-anchor="middle" class="st-minor" transform="rotate(90 420 336)">MARSHALL ST</text>
+    <text x="314" y="416" text-anchor="middle" class="st-minor" transform="rotate(90 314 416)">CARNABY ST</text>
+    <text x="235" y="476" text-anchor="middle" class="st-minor">BEAK ST</text>
+    <text x="372" y="476" text-anchor="middle" class="st-minor">SILVER ST</text>
+    <text x="504" y="280" text-anchor="middle" class="st-minor">GT MARLBOROUGH ST</text>
+
+    <!-- ================= RIVAL UNCONTAMINATED PUBLIC WATER PUMPS (ZERO CLUSTERS!) ================= -->
+    <g fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6">
+      <circle cx="548" cy="98" r="6.5"/>
+      <circle cx="404" cy="276" r="6.5"/>
+      <circle cx="296" cy="492" r="6.5"/>
+      <circle cx="756" cy="653" r="6.5"/>
+      <circle cx="980" cy="248" r="6.5"/>
+    </g>
+    <g font-family="'Inter', Arial, sans-serif" font-size="8.8" font-weight="700" fill="#0369a1">
+      <text x="560" y="102">Oxford Mkt Pump (Safe)</text>
+      <text x="394" y="295" text-anchor="end">Marlborough Pump (Safe)</text>
+      <text x="206" y="496">Warwick Pump (Safe)</text>
+      <text x="768" y="646">Rupert St Pump (Safe)</text>
+    </g>
+
+    <!-- ================= SNOW'S RED CHOLERA DEATH TALLY BARS ALONG STREET FRONTAGES ================= -->
+    <g fill="#dc2626">
+      <!-- Intense Cluster Along Broad Street North Frontage (x=455..705, y=354..378) -->
+      <rect x="458" y="370" width="9" height="8"/><rect x="472" y="365" width="9" height="13"/>
+      <rect x="486" y="358" width="9" height="20"/><rect x="500" y="362" width="9" height="16"/>
+      <rect x="516" y="350" width="10" height="28"/><rect x="530" y="344" width="10" height="34"/>
+      <rect x="546" y="340" width="10" height="38"/><rect x="562" y="336" width="10" height="42"/>
+      <rect x="576" y="342" width="9" height="36"/>
+      <rect x="614" y="338" width="10" height="40"/><rect x="628" y="332" width="10" height="46"/>
+      <rect x="644" y="342" width="10" height="36"/><rect x="660" y="348" width="10" height="30"/>
+      <rect x="676" y="354" width="10" height="24"/><rect x="692" y="360" width="9" height="18"/>
+
+      <!-- Intense Cluster Along Broad Street South Frontage (x=455..745, y=402..442 — sparing 540,428 pin!) -->
+      <rect x="458" y="402" width="9" height="10"/><rect x="474" y="402" width="9" height="18"/>
+      <rect x="490" y="402" width="10" height="26"/><rect x="504" y="402" width="9" height="22"/>
+      <rect x="568" y="402" width="10" height="34"/>
+      <rect x="614" y="402" width="10" height="42"/><rect x="628" y="402" width="10" height="38"/>
+      <rect x="644" y="402" width="10" height="32"/><rect x="660" y="402" width="10" height="28"/>
+      <rect x="676" y="402" width="10" height="24"/><rect x="692" y="402" width="10" height="20"/>
+      <rect x="728" y="406" width="9" height="22"/><rect x="744" y="406" width="9" height="16"/>
+      <!-- Notice ZERO bars on Lion Brewery (x=764..868, y=342..392)! -->
+      <!-- Bars resume east of Lion Brewery near Berwick St junction! -->
+      <rect x="872" y="372" width="9" height="18"/><rect x="872" y="410" width="9" height="22"/>
+
+      <!-- Cambridge Street and Lexington Street Stacks (x=572..616, y=306..515) -->
+      <rect x="572" y="310" width="12" height="7"/><rect x="568" y="322" width="16" height="7"/>
+      <rect x="604" y="312" width="16" height="7"/><rect x="604" y="324" width="20" height="7"/>
+      <rect x="568" y="424" width="16" height="7"/><rect x="572" y="438" width="12" height="7"/><rect x="576" y="452" width="8" height="7"/>
+      <rect x="604" y="448" width="16" height="7"/><rect x="604" y="462" width="14" height="7"/><rect x="604" y="486" width="12" height="7"/>
+      <rect x="574" y="492" width="10" height="7"/><rect x="576" y="508" width="8" height="7"/>
+
+      <!-- Marshall Street, Silver Street, Poland St South and Berwick St Clusters -->
+      <rect x="430" y="352" width="14" height="7"/><rect x="430" y="366" width="18" height="7"/>
+      <rect x="430" y="412" width="20" height="7"/><rect x="430" y="426" width="16" height="7"/><rect x="430" y="442" width="12" height="7"/>
+      <rect x="396" y="378" width="14" height="7"/><rect x="398" y="408" width="12" height="7"/>
+      <rect x="524" y="454" width="8" height="9"/><rect x="542" y="452" width="8" height="11"/><rect x="558" y="454" width="8" height="9"/>
+      <rect x="726" y="318" width="12" height="7"/><rect x="726" y="334" width="16" height="7"/><rect x="726" y="350" width="20" height="7"/>
+      <rect x="692" y="286" width="14" height="7"/><rect x="694" y="316" width="12" height="7"/>
+      <rect x="868" y="338" width="14" height="7"/><rect x="866" y="352" width="16" height="7"/>
+      <rect x="902" y="356" width="14" height="7"/><rect x="902" y="372" width="18" height="7"/><rect x="902" y="414" width="16" height="7"/><rect x="902" y="430" width="12" height="7"/>
+      <rect x="760" y="452" width="10" height="7"/><rect x="786" y="446" width="12" height="7"/><rect x="786" y="468" width="9" height="7"/>
+    </g>
+
+    <!-- ================= HOTSPOT 3: POLAND STREET WORKHOUSE AT (648, 202) = x:54%, y:27% ================= -->
+    <g id="hotspot-workhouse">
+      <!-- Shaded Safe Courtyard Block Centered Exactly at (648, 202) -->
+      <rect x="594" y="160" width="108" height="84" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="2.2"/>
+      <rect x="616" y="176" width="64" height="52" rx="3" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2" stroke-dasharray="3 2"/>
+      <!-- Subtle Target Ring at (648, 202) -->
+      <circle cx="648" cy="202" r="20" fill="#10b981" fill-opacity="0.16" stroke="#059669" stroke-width="1.6" stroke-dasharray="4 3"/>
+      <circle cx="648" cy="202" r="6" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Labels Placed Cleanly Above (y=148) and Below (y=260) Pin Centre! -->
+      <text x="648" y="150" text-anchor="middle" class="poi-hdr" fill="#065f46">POLAND ST WORKHOUSE</text>
+      <text x="648" y="260" text-anchor="middle" class="poi-sub" fill="#047857">535 inmates · Private well · Only 5 deaths</text>
+    </g>
+
+    <!-- ================= HOTSPOT 4: LION BREWERY AT (816, 375) = x:68%, y:50% ================= -->
+    <g id="hotspot-brewery">
+      <!-- Shaded Safe Brewery Block on Broad St North Frontage, Containing (816, 375) -->
+      <rect x="764" y="346" width="104" height="46" rx="5" fill="#fef3c7" stroke="#059669" stroke-width="2.2"/>
+      <circle cx="816" cy="375" r="19" fill="#10b981" fill-opacity="0.18" stroke="#059669" stroke-width="1.6" stroke-dasharray="4 3"/>
+      <circle cx="816" cy="375" r="6" fill="#d97706" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Labels Placed Cleanly Above (y=336) and Below (y=428) Pin Centre! -->
+      <text x="816" y="336" text-anchor="middle" class="poi-hdr" fill="#065f46">LION BREWERY (BROAD ST)</text>
+      <text x="816" y="428" text-anchor="middle" class="poi-sub" fill="#047857">70 workers · Malt liquor · 0 deaths</text>
+    </g>
+
+    <!-- ================= HOTSPOT 2: 40 BROAD STREET LEAKING CESSPIT AT (540, 428) = x:45%, y:57% ================= -->
+    <g id="hotspot-cesspit">
+      <!-- House Plot No. 40 Broad Street Centered at (540, 428) -->
+      <rect x="516" y="404" width="48" height="48" rx="4" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+      <!-- Underground Faecal Seepage Arrow (3 feet from cesspit to Broad St pump well!) -->
+      <line x1="540" y1="428" x2="600" y2="390" stroke="#dc2626" stroke-width="3.2" stroke-dasharray="4 3"/>
+      <circle cx="540" cy="428" r="19" fill="#ef4444" fill-opacity="0.18" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="4 3"/>
+      <circle cx="540" cy="428" r="6" fill="#991b1b" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Label Placed Cleanly Below-Left (y=466) Clear of Pin! -->
+      <text x="518" y="467" text-anchor="middle" class="poi-hdr" fill="#991b1b">40 BROAD ST CESSPIT</text>
+      <text x="518" y="480" text-anchor="middle" class="poi-sub" fill="#7f1d1d">Leaking brick lining — 3 ft from well!</text>
+    </g>
+
+    <!-- ================= HOTSPOT 1: BROAD STREET WATER PUMP AT (600, 390) = x:50%, y:52% ================= -->
+    <g id="hotspot-pump">
+      <!-- Outer Concentric Pulse Rings Centered at (600, 390) -->
+      <circle cx="600" cy="390" r="26" fill="#0284c7" fill-opacity="0.18" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <circle cx="600" cy="390" r="13" fill="#0284c7" stroke="#ffffff" stroke-width="2.2"/>
+      <!-- Cast-Iron Pump Standpipe and Handle Silhouette Inside (600, 390) -->
+      <rect x="598" y="383" width="4" height="14" rx="1" fill="#ffffff"/>
+      <path d="M 602,386 L 608,390 M 598,389 L 594,391" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <!-- Label Placed Cleanly Above-Right so (600, 390) Pin Centre is 100% Unobstructed -->
+      <text x="668" y="324" text-anchor="middle" class="poi-hdr" fill="#0369a1">BROAD ST WATER PUMP</text>
+      <line x1="646" y1="330" x2="614" y2="372" stroke="#0284c7" stroke-width="1.6"/>
+    </g>
+
+    <!-- ================= HOTSPOT 5: TOP-LEFT INSET BOX — HAMPSTEAD OUTLIER AT (264, 180) = x:22%, y:24% ================= -->
+    <g id="hotspot-hampstead-inset" filter="url(#cardShadow)">
+      <rect x="166" y="102" width="232" height="156" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="2"/>
+      <rect x="166" y="102" width="232" height="26" rx="7" fill="#78350f"/>
+      <text x="282" y="119" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.8" font-weight="800" letter-spacing="0.8" fill="#fde68a">OUTLIER CASE · HAMPSTEAD (4 MILES NW)</text>
+      <text x="282" y="143" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="10.2" font-weight="800" fill="#451a03">Widow Susannah Eley &amp; Niece</text>
+
+      <!-- Target Landmark Centered Exactly at (264, 180) with Clear Margin Around It! -->
+      <circle cx="264" cy="180" r="21" fill="#f59e0b" fill-opacity="0.20" stroke="#b45309" stroke-width="1.6" stroke-dasharray="4 3"/>
+      <!-- Water Bottle / Delivery Cart Emblem at (264, 180) -->
+      <rect x="257" y="172" width="14" height="18" rx="3" fill="#0284c7" stroke="#ffffff" stroke-width="1.4"/>
+      <rect x="260" y="167" width="8" height="5" rx="1" fill="#0369a1"/>
+      <text x="338" y="178" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="800" fill="#991b1b">DIED OF</text>
+      <text x="338" y="190" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="800" fill="#991b1b">CHOLERA</text>
+
+      <text x="282" y="225" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="600" fill="#3f2b1d">Had bottled Broad St pump water</text>
+      <text x="282" y="239" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#92400e">delivered by cart · Proved water link!</text>
+    </g>
+
+    <!-- Top-Right Historical Outcome Badge (x=996..1182, y=102..224 — East of Wardour St, Away From All Pins!) -->
+    <g filter="url(#cardShadow)">
+      <rect x="998" y="102" width="184" height="128" rx="8" fill="#ffffff" fill-opacity="0.96" stroke="#334155" stroke-width="1.4"/>
+      <rect x="998" y="102" width="184" height="24" rx="7" fill="#0f172a"/>
+      <text x="1090" y="118" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.2" font-weight="800" fill="#38bdf8">8 SEPT 1854 ACTION</text>
+      <text x="1010" y="142" font-family="'Inter', Arial, sans-serif" font-size="9.8" font-weight="700" fill="#0f172a">• Pump handle removed</text>
+      <text x="1010" y="157" font-family="'Inter', Arial, sans-serif" font-size="9.5" fill="#334155">  after Snow's evidence;</text>
+      <text x="1010" y="171" font-family="'Inter', Arial, sans-serif" font-size="9.5" fill="#334155">  outbreak halted.</text>
+      <text x="1010" y="190" font-family="'Inter', Arial, sans-serif" font-size="9.8" font-weight="700" fill="#991b1b">• Miasma Resistance:</text>
+      <text x="1010" y="205" font-family="'Inter', Arial, sans-serif" font-size="9.4" fill="#334155">  Board of Health rejected</text>
+      <text x="1010" y="219" font-family="'Inter', Arial, sans-serif" font-size="9.4" fill="#334155">  water theory until 1860s–80s.</text>
+    </g>
+
+    <!-- Bottom-Right Compass and Scale Box (x=1002..1182, y=622..674) -->
+    <g filter="url(#cardShadow)">
+      <rect x="1002" y="622" width="180" height="50" rx="6" fill="#ffffff" fill-opacity="0.95" stroke="#94a3b8" stroke-width="1.2"/>
+      <g transform="translate(1024, 648)">
+        <polygon points="0,-13 5.5,6 0,2.5" fill="#0f172a"/>
+        <polygon points="0,-13 -5.5,6 0,2.5" fill="#94a3b8" stroke="#0f172a" stroke-width="0.6"/>
+        <text x="0" y="16" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="800" fill="#0f172a">N</text>
+      </g>
+      <line x1="1042" y1="630" x2="1042" y2="664" stroke="#cbd5e1" stroke-width="1"/>
+      <rect x="1054" y="650" width="52" height="5.5" fill="#0f172a"/>
+      <rect x="1106" y="650" width="52" height="5.5" fill="#ffffff" stroke="#0f172a" stroke-width="0.9"/>
+      <text x="1054" y="644" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#334155">0</text>
+      <text x="1106" y="644" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#334155">100</text>
+      <text x="1158" y="644" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#0f172a">200 yds</text>
+    </g>
+  </g>
+
+  <!-- Top Header Banner (y=0..64) -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="26" y="23" class="overline">EDEXCEL GCSE HISTORY · INDUSTRIAL EPIDEMIOLOGY &amp; PUBLIC HEALTH</text>
+  <text x="26" y="48" class="hdr-title">Dr John Snow's Soho Cholera Spot Investigation (September 1854)</text>
+  <rect x="944" y="17" width="230" height="30" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="1059" y="36" text-anchor="middle" class="pill-txt">SEPT 1854 · ~700 SOHO DEATHS</text>
+
+  <!-- Bottom Cartographic Legend Strip (y=686..750) -->
+  <rect x="0" y="686" width="1200" height="64" fill="#f8fafc"/>
+  <line x1="0" y1="686" x2="1200" y2="686" stroke="#cbd5e1" stroke-width="1.6"/>
+
+  <!-- Swatch 1 -->
+  <rect x="26" y="702" width="18" height="8" fill="#dc2626"/><rect x="26" y="712" width="14" height="8" fill="#dc2626"/>
+  <text x="52" y="711" class="leg-hdr">Cholera Death Tally Bars</text>
+  <text x="52" y="725" class="leg-sub">Stacked at victim addresses</text>
+
+  <!-- Swatch 2 -->
+  <circle cx="272" cy="712" r="9" fill="#0284c7" stroke="#ffffff" stroke-width="1.8"/>
+  <text x="290" y="711" class="leg-hdr">Broad St Pump (Infected)</text>
+  <text x="290" y="725" class="leg-sub">Contaminated by 40 Broad St</text>
+
+  <!-- Swatch 3 -->
+  <circle cx="526" cy="712" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="542" y="711" class="leg-hdr">Rival Street Pumps (Safe)</text>
+  <text x="542" y="725" class="leg-sub">Little or no cholera nearby</text>
+
+  <!-- Swatch 4 -->
+  <rect x="756" y="703" width="20" height="16" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="784" y="711" class="leg-hdr">Safe Water Anomaly Sites</text>
+  <text x="784" y="725" class="leg-sub">Workhouse well &amp; Brewery beer</text>
+
+  <!-- Swatch 5 -->
+  <line x1="1008" y1="711" x2="1034" y2="711" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="1042" y="711" class="leg-hdr">Pump Walk Boundary</text>
+  <text x="1042" y="725" class="leg-sub">Closest-pump zone</text>
+
+  <!-- Outer Neatline -->
+  <rect x="1" y="1" width="1198" height="748" fill="none" stroke="#334155" stroke-width="1.5"/>
+</svg>

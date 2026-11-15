@@ -841,31 +841,7 @@
       "image": "/images/infographics/medicine/med_medieval_era_overview.webp",
       "fileSizeKb": 585,
       "hingeQuestion": "Why was medieval hospital provision designed primarily around spiritual care rather than curative medical treatment?",
-      "modelAnswer": "Medieval Christian theology held that illness was sent by God as a test of faith or punishment for sin. Hospitals were run by monks and nuns who prioritized prayer, religious confession, and spiritual cleanliness over physical cure. Patients received warmth, food, and clean bedding, while infectious diseases, pregnant women, and terminal cases were turned away because the hospital's primary purpose was saving the patient's immortal soul rather than curing their body."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_1_2",
-      "slug": "med_kt1_1_causes_of_illness_chart",
-      "title": "Medieval Causes of Illness: God, Planets & The Four Humours",
-      "topic": "Key Topic 1.2: Rational Explanations: Hippocrates, Galen & The Four Humours",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Divine retribution: Illness sent by God to cleanse sins or test religious faith; treated with prayer and pilgrimage.",
-        "Astrological influences: Physicians checked planetary charts before bleeding patients or performing surgery.",
-        "The Four Humours balance: Illness caused by an excess or deficiency of humours; linked to seasons and temperaments.",
-        "Miasma theory: Bad air from decaying matter, stagnant water, or unburied corpses believed to corrupt the blood.",
-        "Total stagnation: Medical knowledge remained unchanged for centuries because the Church forbade dissection of human bodies."
-      ],
-      "image": "/images/infographics/medicine/med_kt1_1_causes_of_illness_chart.webp",
-      "fileSizeKb": 834,
-      "lessonIds": [
-        "lesson_1_1",
-        "lesson_1_2"
-      ],
-      "hingeQuestion": "Why did the Catholic Church actively enforce and protect the ancient medical theories of Galen and Hippocrates for over 300 years?",
-      "modelAnswer": "Galen wrote that the complex human body had been deliberately created by a single supreme Designer with a divine purpose (teleology). This aligned perfectly with Christian doctrine. Because the Church controlled university education, monastic libraries, and the licensing of physicians, questioning Galen was branded heresy, locking European medical thinking into the Theory of the Four Humours until the Renaissance."
+      "modelAnswer": "Medieval Christian theology held that illness was sent by God as a test of faith or punishment for sin. Hospitals were run by monks and nuns who prioritised prayer, religious confession, and spiritual cleanliness over physical cure. Patients received warmth, food, and clean bedding, while infectious diseases, pregnant women, and terminal cases were turned away because the hospital's primary purpose was saving the patient's immortal soul rather than curing their body."
     },
     {
       "unit": "edexcel_medicine",
@@ -884,48 +860,8 @@
       ],
       "image": "/images/infographics/medicine/med_kt1_3_medieval_prevention_treatment.webp",
       "fileSizeKb": 770,
-      "hingeQuestion": "Why was the Theory of Opposites considered a revolutionary development in humorist medical treatment despite being completely ineffective against bacterial infection?",
+      "hingeQuestion": "Why was the Theory of Opposites considered a revolutionary development in humoral medical treatment despite being completely ineffective against bacterial infection?",
       "modelAnswer": "Developed by Galen, the Theory of Opposites provided doctors with an overarching rational system for treatment rather than relying on superstition or chance. If a patient suffered from an excess of cold, wet phlegm, the doctor prescribed hot, dry remedies (such as pepper or mustard). Although useless against real pathogens, it gave medieval physicians a structured, logical diagnostic framework that gave comfort and consistency to patients."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_1_5",
-      "slug": "med_kt1_5_black_death_revision_guide",
-      "title": "The Black Death (1348–1349): Symptoms, Causes & Societal Impact",
-      "topic": "Key Topic 1.5: Case Study: The Black Death, 1348–1349",
-      "type": "lesson_summary",
-      "aspect": "portrait",
-      "keyPoints": [
-        "Arrival in England (summer 1348): Bubonic and pneumonic plague killed between 30% and 45% of the English population.",
-        "Gruesome symptoms: Painful buboes in groins and armpits, black necrotic skin blotches, high fever, and spitting blood.",
-        "Flawed contemporary explanations: Alignment of Saturn and Jupiter (1345), God's wrath, miasma, and poisonous fumes.",
-        "Futile medical responses: Lance buboes, burn sweet-smelling herbs, ring church bells, and drink crushed emeralds.",
-        "Social consequences: Severe agricultural labour shortages led to peasants demanding higher wages, weakening feudalism."
-      ],
-      "image": "/images/infographics/medicine/med_kt1_5_black_death_revision_guide.webp",
-      "fileSizeKb": 812,
-      "hingeQuestion": "Why did the 1348 Black Death produce catastrophic mortality rates compared to ordinary medieval epidemics?",
-      "modelAnswer": "The Black Death was caused by the Yersinia pestis bacterium carried by rat fleas, transmitting both bubonic plague (via flea bites causing agonizing buboes) and pneumonic plague (spread by airborne coughing). Medieval medical practitioners possessed zero understanding of contagion or bacteria, attributing the plague to divine wrath or foul miasma, leading to ineffective treatments like bloodletting and carrying posies while unhygienic, crowded towns enabled rapid vector proliferation."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_1_5",
-      "slug": "med_kt1_5_black_death_overview",
-      "title": "The Black Death (1348): Medieval Quarantine & The Flagellants",
-      "topic": "Key Topic 1.5: Case Study: The Black Death, 1348–1349",
-      "type": "thematic_deep_dive",
-      "aspect": "portrait",
-      "keyPoints": [
-        "Complete medical helplessness: Doctors had no understanding of Yersinia pestis or flea transmission on black rats.",
-        "Religious extremism: The Brotherhood of Flagellants whipped themselves publicly in town squares to appease God's anger.",
-        "Government failure: King Edward III ordered streets cleaned of human excrement, believing foul smells spread the pestilence.",
-        "Quarantine measures: Gloucester attempted to shut its town gates to outsiders, but infection spread regardless.",
-        "Breakdown of religious authority: So many parish priests died administering last rites that uneducated clergy were hastily ordained."
-      ],
-      "image": "/images/infographics/medicine/med_kt1_5_black_death_overview.webp",
-      "fileSizeKb": 875,
-      "hingeQuestion": "Why did religious responses like the Flagellants fail to halt the Black Death while unintentionally spreading the epidemic further?",
-      "modelAnswer": "Believing the plague was divine punishment for human sins, groups like the Brotherhood of the Flagellants whipped themselves in public squares to atone for God's anger. However, their open, bleeding wounds became severe vectors of infection. Furthermore, marching from town to town in large processions spread plague-carrying fleas directly into previously uninfected settlements."
     },
     {
       "unit": "edexcel_medicine",
@@ -980,12 +916,12 @@
         "Revolution in methodology: Urged doctors to sit at patient bedsides, record exact symptoms, and observe disease progression.",
         "Refusal of traditional theory: Rejected theoretical book learning and astrology; refused to bleed patients routinely.",
         "Pioneered cinchona bark (quinine) for malaria and cool air/rest treatments for smallpox rather than sweat rooms.",
-        "Causal impact: Shifted medicine away from unique individual humeral imbalances toward diagnosing specific classified illnesses."
+        "Causal impact: Shifted medicine away from unique individual humoral imbalances toward diagnosing specific classified illnesses."
       ],
       "image": "/images/infographics/medicine/med_kt2_2_thomas_sydenham.webp",
       "fileSizeKb": 684,
       "hingeQuestion": "Why was Thomas Sydenham given the title 'The English Hippocrates' for his revolution in clinical diagnosis?",
-      "modelAnswer": "Sydenham rejected the prevailing belief that every patient's illness was unique to their individual humorist balance. Instead, through meticulous bedside observation, he documented patterns of symptoms, classifying diseases into distinct species just as botanists classified plants. His 1676 book Observationes Medicae proved that specific diseases (like scarlet fever and measles) had distinct clinical courses requiring targeted treatment (such as cinchona bark for malaria)."
+      "modelAnswer": "Sydenham rejected the prevailing belief that every patient's illness was unique to their individual humoral balance. Instead, through meticulous bedside observation, he documented patterns of symptoms, classifying diseases into distinct species just as botanists classified plants. His 1676 book Observationes Medicae proved that specific diseases (like scarlet fever and measles) had distinct clinical courses requiring targeted treatment (such as cinchona bark for malaria)."
     },
     {
       "unit": "edexcel_medicine",
@@ -1029,46 +965,6 @@
     },
     {
       "unit": "edexcel_medicine",
-      "lessonId": "lesson_2_4",
-      "slug": "med_kt2_4_renaissance_harvey_plague_mat",
-      "title": "Renaissance Milestones: Harvey's Discovery & The Great Plague",
-      "topic": "Key Topics 2.4 & 2.5: Circulation & The Great Plague",
-      "type": "thematic_deep_dive",
-      "aspect": "portrait",
-      "keyPoints": [
-        "Scientific breakthrough: William Harvey proves one-way systemic circulation of blood powered by heart contraction.",
-        "The 1665 Great Plague struck London: Killed approximately 100,000 people (20% of London's population).",
-        "Government public health action: Mayor of London ordered \"Searchers\" to identify infected houses marked with red crosses.",
-        "Watchmen posted outside boarded-up homes with inscription: \"Lord Have Mercy Upon Us\".",
-        "Mass burial pits: Thousands buried in communal plague pits at night to prevent panic and contagion."
-      ],
-      "image": "/images/infographics/medicine/med_kt2_4_renaissance_harvey_plague_mat.webp",
-      "fileSizeKb": 947,
-      "hingeQuestion": "Why did public health responses to the 1665 Great Plague demonstrate far greater organized civic control than responses to the 1348 Black Death?",
-      "modelAnswer": "In 1665, the Mayor and aldermen of London enforced strict, coordinated municipal plague orders. Houses of the infected were locked for 28 days and marked with red crosses and 'Lord have mercy upon us', guarded by watchmen. Mass public gatherings were banned, over 40,000 stray dogs and cats were slaughtered, dead carts buried victims in mass pits at night, and searchers verified causes of death, showing a systematic civic attempt to contain contagion."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_2_5",
-      "slug": "med_kt2_5_renaissance_harvey_and_plague_breakthrough",
-      "title": "Harvey's Mechanical Heart & The 1665 Plague Quarantine",
-      "topic": "Key Topics 2.4 & 2.5: Circulation and The Great Plague",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "The heart as a mechanical pump: Blood flows through arteries from the heart and returns through veins.",
-        "The 1665 Plague response: Systematic slaughter of ~40,000 dogs and ~200,000 cats (which worsened the rat infestation).",
-        "Miasma prevention: Streets fumigated with burning barrels of pitch; plague doctors wore bird-beak masks filled with herbs.",
-        "Plague orders: Theatres, taverns, and public gatherings banned; curfew strictly enforced across London wards.",
-        "End of the epidemic: Cold winter of 1665 and the Great Fire of London (September 1666) helped destroy rat habitats."
-      ],
-      "image": "/images/infographics/medicine/med_kt2_5_renaissance_harvey_and_plague_breakthrough.webp",
-      "fileSizeKb": 495,
-      "hingeQuestion": "To what extent did medical understanding of the causes of the 1665 Great Plague differ from understanding of the 1348 Black Death?",
-      "modelAnswer": "Fundamentally, understanding of causation remained virtually identical: in 1665, people still blamed divine anger, planetary conjunctions, and miasma (bad air). While quarantine measures and pest houses were more rigorously enforced by civic authorities, doctors still prescribed carrying pomanders, smoking tobacco, and bloodletting, because the true bacterial vector (Yersinia pestis on fleas) remained undiscovered."
-    },
-    {
-      "unit": "edexcel_medicine",
       "lessonId": "lesson_2_5",
       "slug": "med_kt2_5_spot_difference_1348_vs_1665",
       "title": "Spot the Difference: The Black Death (1348) vs The Great Plague (1665)",
@@ -1079,53 +975,13 @@
         "Causes: In both 1348 and 1665, people still blamed God, bad planetary alignment, and miasma (300 years of continuity).",
         "Medical knowledge: Germ Theory was still 200 years away; physicians still had zero understanding of flea or bacterial contagion.",
         "Treatment continuity: Patients in both eras were bled, purged, and given herbal concoctions like Venice Treacle.",
-        "Key change in government action: In 1665, local authorities were far more organized, enforcing house quarantines and searchers.",
+        "Key change in government action: In 1665, local authorities were far more organised, enforcing house quarantines and searchers.",
         "Pest houses: Purpose-built isolation wards established outside city boundaries in 1665 to isolate the sick."
       ],
       "image": "/images/infographics/medicine/med_kt2_5_spot_difference_1348_vs_1665.webp",
       "fileSizeKb": 666,
       "hingeQuestion": "What was the most significant continuity in medical treatment between the 1348 Black Death and the 1665 Great Plague?",
-      "modelAnswer": "The primary continuity was the complete inability of physicians to cure the disease once contracted. Despite three centuries of anatomical discoveries by Vesalius and Harvey, 17th-century doctors still possessed no antibiotics. Consequently, treatments in 1665 relied on medieval remedies: strapping live ploughed chickens to buboes, cupping, lancing swellings, and praying for divine mercy."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_2_5",
-      "slug": "med_kt2_5_renaissance_prevention_treatment",
-      "title": "Renaissance Prevention & Treatment: Chemical Cures & Transference",
-      "topic": "Key Topic 2.5: Continuity in Treatment",
-      "type": "lesson_summary",
-      "aspect": "portrait",
-      "keyPoints": [
-        "Transference theory: Belief that an illness could be transferred from a patient to an animal or object (e.g. strapping a plucked chicken to buboes).",
-        "Iatrochemistry (chemical medicine): Paracelsus pioneered using mineral treatments like antimony and mercury rather than herbs.",
-        "New World remedies: Exploration brought tobacco (heralded as universal cure), cinchona bark, and sarsaparilla to Britain.",
-        "Persistent quackery: Charlatans sold patent medicines and \"sovereign remedies\" at fairs without any regulation.",
-        "Royal Touch: Believed that monarchs possessed divine healing power to cure scrofula (\"the King's Evil\") with their touch."
-      ],
-      "image": "/images/infographics/medicine/med_kt2_5_renaissance_prevention_treatment.webp",
-      "fileSizeKb": 895,
-      "hingeQuestion": "How did Paracelsus and the iatrochemists challenge traditional botanical medicine in the Renaissance?",
-      "modelAnswer": "Paracelsus rejected Galen's herbal polypharmacy, arguing that the body was a chemical system that required mineral and chemical remedies. He introduced controlled dosages of mercury, arsenic, sulfur, and antimony to treat ailments such as syphilis. While toxic in high doses, chemical pharmacology laid the earliest foundations for modern synthetic drug design."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "unit_overview",
-      "slug": "med_industrial_era_overview",
-      "title": "Industrial Medicine: The Scientific Revolution & Germs (c1700–c1900)",
-      "topic": "Key Topic 3: Medicine in Eighteenth & Nineteenth Century Britain",
-      "type": "era_overview",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Rapid urbanization: Industrial cities (Manchester, Leeds, London) suffered catastrophic overcrowding, filth, and low life expectancy.",
-        "Louis Pasteur's Germ Theory (1861): Destroyed spontaneous generation and proved microscopic bacteria cause decay and disease.",
-        "Robert Koch's bacteriology: Identified specific microbes causing anthrax, tuberculosis, and cholera; used agar jelly and dyes.",
-        "Surgical transformation: James Simpson introduced chloroform anaesthetic (1847); Joseph Lister introduced carbolic antiseptic (1867).",
-        "Public health reform: John Snow proved cholera is waterborne (1854); 1875 Public Health Act mandated sewers and clean water."
-      ],
-      "image": "/images/infographics/medicine/med_industrial_era_overview.webp",
-      "fileSizeKb": 517,
-      "hingeQuestion": "Why was the 19th century the most revolutionary century in the history of medicine?",
-      "modelAnswer": "The 19th century conquered medicine's three historical barriers: cause, pain, and infection. Louis Pasteur and Robert Koch replaced miasma with Germ Theory; James Simpson introduced chloroform anesthesia to conquer operative agony; and Joseph Lister introduced carbolic acid antisepsis, transforming surgery from a lethal ordeal into a sterile clinical discipline."
+      "modelAnswer": "The primary continuity was the complete inability of physicians to cure the disease once contracted. Despite three centuries of anatomical discoveries by Vesalius and Harvey, 17th-century doctors still possessed no antibiotics. Consequently, treatments in 1665 relied on medieval remedies: strapping live plucked chickens to buboes, cupping, lancing swellings, and praying for divine mercy."
     },
     {
       "unit": "edexcel_medicine",
@@ -1137,7 +993,7 @@
       "aspect": "landscape",
       "keyPoints": [
         "Pre-1861 orthodoxy: Spontaneous generation claimed microbes appeared out of decaying matter automatically.",
-        "Swan-neck flask experiments: Pasteur proved sterilized broth only decayed when exposed to airborne dust particles carrying germs.",
+        "Swan-neck flask experiments: Pasteur proved sterilised broth only decayed when exposed to airborne dust particles carrying germs.",
         "1861 publication: Pasteur publishes Germ Theory, though initially rejected by British doctors (e.g. Dr Henry Bastian).",
         "Anthrax and rabies vaccines: Pasteur developed attenuated (weakened) pathogen vaccines for animals and humans (1885).",
         "Decisive shift: Proved specific microscopic living organisms cause specific infections, establishing modern bacteriology."
@@ -1157,15 +1013,15 @@
       "aspect": "landscape",
       "keyPoints": [
         "French chemist hired by Lille brewing industry (1857) to explain why beer and wine soured into vinegar.",
-        "Invented \"Pasteurization\": Gentle heating to 60°C killed harmful bacteria without ruining beverage taste.",
+        "Invented \"Pasteurisation\": Gentle heating to 60°C killed harmful bacteria without ruining beverage taste.",
         "1865 Silkworm investigation: Proved pébrine disease in silkworms was caused by a living microscopic parasite.",
         "Chicken cholera breakthrough (1879): Charles Chamberland accidentally injected old cholera culture; chickens survived and gained immunity.",
         "Global triumph: In 1885, Pasteur successfully cured 9-year-old Joseph Meister of fatal rabies using attenuated spinal cord vaccine."
       ],
       "image": "/images/infographics/medicine/med_kt3_1_louis_pasteur.webp",
       "fileSizeKb": 409,
-      "hingeQuestion": "How did Louis Pasteur's discovery of the chicken cholera vaccine in 1879 unlock the principles of artificial immunization?",
-      "modelAnswer": "When his assistant Charles Chamberland accidentally injected chickens with an old, weakened culture of cholera microbes, the birds fell sick but recovered. When Pasteur reinjected them with a fresh, lethal dose, they survived. Pasteur realized that attenuated (weakened) pathogens stimulate the body's immune system to produce antibodies without killing the host, paving the way for his anthrax and rabies vaccines."
+      "hingeQuestion": "How did Louis Pasteur's discovery of the chicken cholera vaccine in 1879 unlock the principles of artificial immunisation?",
+      "modelAnswer": "When his assistant Charles Chamberland accidentally injected chickens with an old, weakened culture of cholera microbes, the birds fell sick but recovered. When Pasteur reinjected them with a fresh, lethal dose, they survived. Pasteur realised that attenuated (weakened) pathogens stimulate the body's immune system to produce antibodies without killing the host, paving the way for his anthrax and rabies vaccines."
     },
     {
       "unit": "edexcel_medicine",
@@ -1197,15 +1053,15 @@
       "aspect": "landscape",
       "keyPoints": [
         "Overturned 2,000 years of miasma theory: Proved that disease is not caused by bad air or poisonous smells.",
-        "Transformed hospital hygiene: Provided scientific justification for antiseptic surgery, clean water supply, and sterilization.",
-        "Inspired Joseph Lister: Realized carbolic acid destroyed aerial bacteria in surgical compound fractures.",
+        "Transformed hospital hygiene: Provided scientific justification for antiseptic surgery, clean water supply, and sterilisation.",
+        "Inspired Joseph Lister: Realised carbolic acid destroyed aerial bacteria in surgical compound fractures.",
         "Government public health justification: Forced British Parliament to abandon laissez-faire policy and mandate clean sewers.",
         "Modern vaccine manufacturing: Opened the door to laboratory-developed vaccines for diphtheria, tetanus, and typhoid."
       ],
       "image": "/images/infographics/medicine/med_kt3_1_germ_theory_revolution_infographic.webp",
       "fileSizeKb": 640,
       "hingeQuestion": "Why did the persistence of Miasma Theory ironically lead to significant public health improvements before Germ Theory was accepted?",
-      "modelAnswer": "Believing that foul odors and decaying organic filth generated poisonous miasmas that caused epidemics like cholera, sanitarians like Edwin Chadwick and John Simon campaigned to clean up slums, pave streets, flush cesspools, and construct municipal sewers. Although their biological theory was mistaken, their actions eliminated the stagnant water and filth where cholera and typhoid bacteria bred."
+      "modelAnswer": "Believing that foul odours and decaying organic filth generated poisonous miasmas that caused epidemics like cholera, sanitarians like Edwin Chadwick and John Simon campaigned to clean up slums, pave streets, flush cesspools, and construct municipal sewers. Although their biological theory was mistaken, their actions eliminated the stagnant water and filth where cholera and typhoid bacteria bred."
     },
     {
       "unit": "edexcel_medicine",
@@ -1229,46 +1085,6 @@
     },
     {
       "unit": "edexcel_medicine",
-      "lessonId": "lesson_3_5",
-      "slug": "med_kt3_2_medical_revolutions_1700_1900",
-      "title": "Medical Revolutions: Jenner, Snow & The 1854 Broad Street Pump (1700–1900)",
-      "topic": "Key Topic 3.5: Public Health, Snow & Cholera",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Inoculation danger: Lady Mary Wortley Montagu brought variolation from Turkey in 1721, but it killed 2–3% of patients.",
-        "Jenner's cowpox vaccine eliminated the risk of triggering active smallpox epidemics.",
-        "John Snow and the Blue Death (1854): Mapped cholera deaths to the Broad Street pump, proving water transmission before Germ Theory.",
-        "The Great Stink (1858) and 1875 Public Health Act: Ended laissez-faire; forced councils to fund Bazalgette sewers and clean water.",
-        "World Health Organization (WHO) declared smallpox totally eradicated worldwide in 1980 thanks to Jenner's technique."
-      ],
-      "image": "/images/infographics/medicine/med_kt3_2_medical_revolutions_1700_1900.webp",
-      "fileSizeKb": 811,
-      "hingeQuestion": "How did John Snow's 1854 investigation of the Broad Street pump demonstrate the power of epidemiological mapping over chemical analysis?",
-      "modelAnswer": "Snow marked the location of all 500 cholera deaths on a street map of Soho, demonstrating that the fatalities clustered directly around the Broad Street water pump, while workers at the nearby brewery (who drank only beer) remained unaffected. Although chemical analysis of the water revealed no obvious impurities under contemporary tests, Snow's statistical and geographical deduction forced the parish vestry to remove the pump handle, abruptly ending the outbreak."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_3_4",
-      "slug": "med_kt3_3_florence_nightingale",
-      "title": "The Knife's Edge: How Surgery Evolved from Horror to High-Tech (1840–Present)",
-      "topic": "Key Topic 3.4: The Surgical Revolution: Pain, Sepsis & High-Tech Precision",
-      "type": "thematic_deep_dive",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Triple surgical threats: For centuries, surgery was blocked by extreme pain, fatal wound infection, and uncontrollable blood loss.",
-        "1840–1900 Breakthroughs: James Simpson discovered Chloroform (1847); Joseph Lister introduced carbolic acid spray (1865), reducing surgical death rates from 46% to 15%.",
-        "Shift to Aseptic Surgery: By the 1890s, operating theatres moved from killing germs to keeping germs out using steam-sterilized instruments and gowns/gloves.",
-        "War and Technology: WWI accelerated the Thomas Splint (cutting femur mortality 80% to 20%), mobile X-ray vans, and sodium citrate blood depots.",
-        "Modern Robotic Precision: 20th and 21st-century micro-surgery and robotic laparoscopy allow complex internal operations through tiny incisions."
-      ],
-      "image": "/images/infographics/medicine/med_kt3_3_florence_nightingale.webp",
-      "fileSizeKb": 474,
-      "hingeQuestion": "Why did the introduction of anesthetics initially increase operative mortality during the 'Black Period' of surgery (1846–1865)?",
-      "modelAnswer": "Ether and chloroform rendered patients unconscious, eliminating operative pain and allowing surgeons to operate deeper inside the abdominal and thoracic cavities for longer periods. However, because surgeons did not yet understand Germ Theory, they operated in blood-stained frock coats with unsterilized instruments. Longer operations introduced millions of bacteria into open wounds, triggering fatal rates of gangrene, pyemia, and septicemia."
-    },
-    {
-      "unit": "edexcel_medicine",
       "lessonId": "lesson_3_4",
       "slug": "med_kt3_4_surgery_revolution_overview",
       "title": "The Surgical Revolution: Conquering Pain, Sepsis & Shock (1840–1890)",
@@ -1277,15 +1093,15 @@
       "aspect": "landscape",
       "keyPoints": [
         "The three surgical barriers: Extreme pain, massive blood loss (shock), and post-operative fatal infection (sepsis).",
-        "Humphrey Davy (nitrous oxide) and Robert Liston (ether, 1846) attempted early anaesthetics with dangerous side effects.",
+        "Humphry Davy (nitrous oxide) and Robert Liston (ether, 1846) attempted early anaesthetics with dangerous side effects.",
         "James Simpson (1847): Discovered chloroform properties during dinner party experiments; used by Queen Victoria in childbirth (1853).",
-        "The \"Black Period\" of surgery (1870s): Anaesthetics led surgeons to operate deeper inside the body, increasing infection deaths.",
+        "The \"Black Period\" of surgery (1846–1867): Anaesthetics led surgeons to operate deeper inside the body, increasing infection deaths.",
         "Joseph Lister (1867): Used carbolic acid spray and dressings, slashing surgical amputation mortality from 46% to 15%."
       ],
       "image": "/images/infographics/medicine/med_kt3_4_surgery_revolution_overview.webp",
       "fileSizeKb": 421,
       "hingeQuestion": "How did Joseph Lister's introduction of carbolic acid in 1865 conquer surgical sepsis?",
-      "modelAnswer": "Having read Pasteur's 1861 paper, Lister realized that wound sepsis was caused by airborne living microbes rather than oxygen. In August 1865, he treated eleven-year-old James Greenlees's compound fracture with lint soaked in carbolic acid (creosote). The wound healed without pus. Lister introduced carbolic hand-washing, carbolic ligatures, and carbolic spray over the operating field, reducing surgical ward mortality from 46% to 15% in three years."
+      "modelAnswer": "Having read Pasteur's 1861 paper, Lister realised that wound sepsis was caused by airborne living microbes rather than oxygen. In August 1865, he treated eleven-year-old James Greenlees's compound fracture with lint soaked in carbolic acid (creosote). The wound healed without pus. Lister introduced carbolic hand-washing, carbolic ligatures, and carbolic spray over the operating field, reducing surgical ward mortality from 46% to 15% in three years."
     },
     {
       "unit": "edexcel_medicine",
@@ -1299,94 +1115,38 @@
         "Carbolic acid spray: Joseph Lister soaked surgical catgut, dressings, and sprayed air over wounds to kill airborne microbes.",
         "Unpopular carbolic drawbacks: Irritated surgeons' lungs, dried skin, and cracked nurses' hands; slowed operations down.",
         "Transition to aseptic surgery (1890s): Moving from killing germs in the wound (antiseptic) to keeping germs out entirely (aseptic).",
-        "Autoclave steam sterilizers: Ernst von Bergmann introduced pressurized steam to sterilize surgical instruments in 1886.",
-        "Sterile apparel: William Halsted introduced sterilized rubber surgical gloves (1890); face masks and sterilized gowns followed."
+        "Autoclave steam sterilisers: Ernst von Bergmann introduced pressurised steam to sterilise surgical instruments in 1886.",
+        "Sterile apparel: William Halsted introduced sterilised rubber surgical gloves (1890); face masks and sterilised gowns followed."
       ],
       "image": "/images/infographics/medicine/med_kt3_4_conquering_operating_theatre.webp",
       "fileSizeKb": 363,
       "hingeQuestion": "What was the fundamental distinction between Lister's antiseptic surgery and the late 19th-century transition to aseptic surgery?",
-      "modelAnswer": "Antiseptic surgery aimed to kill bacteria already present in the wound using harsh chemical sprays (like carbolic acid, which cracked surgeons' hands and irritated patients' lungs). In contrast, aseptic surgery aimed to prevent any microbes from entering the operating environment in the first place, using steam autoclaves to sterilize instruments (developed by Ernst von Bergmann in 1886), rubber gloves (Halsted), sterile surgical gowns, masks, and filtered airflow."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_3_3",
-      "slug": "med_kt3_4_breakthroughs_1700_1900",
-      "title": "19th-Century Medical & Hospital Revolutions: Nightingale, Jenner & Lister (1700–1900)",
-      "topic": "Key Topic 3.3: Improvements in Hospital Care & Nursing",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Foundations of Prevention: Edward Jenner developed the smallpox vaccine in 1796 using cowpox, establishing global scientific immunization.",
-        "Florence Nightingale at Scutari (1854): Transformed military hospital hygiene and ventilation, slashing death rates from 42% to just 2%.",
-        "Professionalization of Nursing (1860): Nightingale established the first professional training school for nurses at St Thomas' Hospital.",
-        "Scientific Breakthroughs: Louis Pasteur proved Germ Theory (1861); Joseph Lister created antiseptic carbolic spray (1865–1867).",
-        "Compulsory Public Health: The 1875 Second Public Health Act forced local councils to provide clean water, sewers, and sanitary inspectors."
-      ],
-      "image": "/images/infographics/medicine/med_kt3_4_breakthroughs_1700_1900.webp",
-      "fileSizeKb": 849,
-      "hingeQuestion": "How did Florence Nightingale's reforms during and after the Crimean War (1854–1856) professionalize hospital architecture and nursing?",
-      "modelAnswer": "At Scutari hospital, Nightingale cleaned wards, unblocked latrines, organized healthy food, and washed bedding, reducing the death rate from 42% to 2%. Upon her return, her 1859 book Notes on Hospitals established the 'pavilion ward' system (large windows for light and cross-ventilation, separate fever wards, and tiled surfaces), while the Nightingale Training School at St Thomas's Hospital elevated nursing into an educated, respected profession."
+      "modelAnswer": "Antiseptic surgery aimed to kill bacteria already present in the wound using harsh chemical sprays (like carbolic acid, which cracked surgeons' hands and irritated patients' lungs). In contrast, aseptic surgery aimed to prevent any microbes from entering the operating environment in the first place, using steam autoclaves to sterilise instruments (developed by Ernst von Bergmann in 1886), rubber gloves (Halsted), sterile surgical gowns, masks, and filtered airflow."
     },
     {
       "unit": "edexcel_medicine",
       "lessonId": "lesson_3_5",
       "slug": "med_kt3_5_public_health_timeline",
-      "title": "The Public Health Evolution: Edwin Chadwick to the 1875 Act (1842–1875)",
-      "topic": "Key Topic 3.5: Public Health and Cholera",
+      "title": "From Laissez-Faire to the NHS: State Public Health Evolution (1800–Present)",
+      "topic": "Key Topics 3.5, 4.3 & 4.5: Public Health Legislation to the Modern NHS",
       "type": "lesson_summary",
       "aspect": "landscape",
       "keyPoints": [
-        "Edwin Chadwick's 1842 Report: Proved filthy living conditions caused rampant disease and premature death among workers.",
-        "1848 Public Health Act: Set up Central Board of Health; non-compulsory (permissive), so most town councils did nothing.",
-        "Dr John Snow & Cholera (1854): Removed handle from Broad Street pump, proving cholera was waterborne before Germ Theory.",
-        "The Great Stink (1858): Hot summer caused River Thames sewage smell to overwhelm Parliament, forcing MPs to fund sewers.",
-        "Joseph Bazalgette's London sewer network (1865): 1,100 miles of brick sewers carried sewage east of London.",
-        "1875 Public Health Act: Ended laissez-faire; mandated town councils provide clean water, sewers, street paving, and health inspectors."
+        "Edwin Chadwick's 1842 Sanitary Report & the permissive 1848 Public Health Act began challenging laissez-faire.",
+        "John Snow (1854 Broad Street pump), the 1858 Great Stink, and Bazalgette’s London sewers proved clean water stopped cholera.",
+        "Compulsory 1875 Public Health Act forced every local council to provide clean water, covered sewers, and Medical Officers of Health.",
+        "1911 National Insurance Act & Aneurin Bevan’s 1948 NHS expanded state duty from clean streets to universal tax-funded healthcare.",
+        "Modern state prevention targets lifestyle illnesses via the 2007 indoor smoking ban, plain packaging (2016), and NHS screening."
       ],
       "image": "/images/infographics/medicine/med_kt3_5_public_health_timeline.webp",
       "fileSizeKb": 504,
       "hingeQuestion": "Why was the 1875 Public Health Act the defining milestone of 19th-century social legislation in Britain?",
-      "modelAnswer": "The 1848 Public Health Act was optional; local boards only had to act if mortality exceeded 23 per 1,000. In contrast, Benjamin Disraeli's 1875 Act made public health compulsory for every local authority in England. Councils were legally required to appoint Medical Officers of Health, supply clean piped water, collect refuse, inspect slaughterhouses, maintain covered sewers, and enforce building regulations to prevent slum overcrowding."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "unit_overview",
-      "slug": "med_modern_era_overview",
-      "title": "Modern Medicine: The High-Tech, Genetic & Pharmaceutical Era (c1900–Present)",
-      "topic": "Key Topic 4: Medicine in Modern Britain, c1900–present",
-      "type": "era_overview",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Genetic breakthrough: Watson, Crick, Franklin & Wilkins discover the double helix structure of DNA in 1953.",
-        "The Human Genome Project (1990–2003): Mapped all 3 billion chemical base pairs in human DNA to diagnose genetic diseases.",
-        "High-tech diagnosis: X-rays, blood tests, CT scans, MRI scanners, endoscopes, and ultrasound revolutionized clinical accuracy.",
-        "Magic bullets and antibiotics: Paul Ehrlich (Salvarsan 606, 1909), Alexander Fleming (Penicillin, 1928), Domagk (Prontosil, 1932).",
-        "Welfare state and NHS: Aneurin Bevan launches National Health Service on July 5, 1948—free care at the point of delivery."
-      ],
-      "image": "/images/infographics/medicine/med_modern_era_overview.webp",
-      "fileSizeKb": 355,
-      "hingeQuestion": "How did the 20th century shift the focus of healthcare from treating acute bacterial infections to managing chronic lifestyle and genetic conditions?",
-      "modelAnswer": "The discovery of penicillin, streptomycin, and universal vaccination programs effectively conquered historic killer bacterial and viral epidemics. With human life expectancy increasing from 46 in 1900 to over 80 by 2000, medicine's primary challenge shifted toward non-communicable lifestyle and age-related conditions—coronary heart disease, diabetes, obesity, Alzheimer's, and cancer—requiring public health education, genetic therapies, and expensive long-term pharmaceutical management."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_4_2",
-      "slug": "med_kt4_1_evolution_modern_medical_science",
-      "title": "Evolution of Modern Medical Science: Lifestyle Factors & Diagnosis (c1900–Present)",
-      "topic": "Key Topic 4.2: Lifestyle Factors & Technological Revolution in Diagnosis",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Discovery of hereditary mechanisms: Shifted focus from fighting external bacteria to understanding inherited chromosomal traits.",
-        "Lifestyle disease links: Sir Richard Doll and Austin Bradford Hill proved smoking directly causes lung cancer in 1950.",
-        "Blood pressure and blood sugar monitors: Enabled early diagnosis of chronic conditions before fatal strokes or organ failure.",
-        "Shift toward preventive healthcare: Screening programs, breast cancer mammograms, and genetic testing for BRCA mutations.",
-        "Government public health legislation: Banning tobacco advertising (1965), seatbelt laws (1983), and indoor smoking bans (2007)."
-      ],
-      "image": "/images/infographics/medicine/med_kt4_1_evolution_modern_medical_science.webp",
-      "fileSizeKb": 719,
-      "hingeQuestion": "How did technological innovations transform clinical diagnosis from external symptom observation into internal cellular visualization in the 20th century?",
-      "modelAnswer": "In 1900, doctors relied on physical stethoscopes, palpation, and urine color. The 20th century developed non-invasive imaging technologies: Wilhelm Röntgen's X-rays (1895), ultrasound scanners (1950s), CT scans (Godfrey Hounsfield in 1972), and MRI scans (1970s). Combined with automated blood biochemistry analyzers and endoscopes, physicians could diagnose internal tumors and cardiovascular blockages before patients exhibited outward symptoms."
+      "modelAnswer": "The 1848 Public Health Act was optional; local boards only had to act if mortality exceeded 23 per 1,000. In contrast, Benjamin Disraeli's 1875 Act made public health compulsory for every local authority in England. Councils were legally required to appoint Medical Officers of Health, supply clean piped water, collect refuse, inspect slaughterhouses, maintain covered sewers, and enforce building regulations to prevent slum overcrowding.",
+      "lessonIds": [
+        "lesson_3_5",
+        "lesson_4_3",
+        "lesson_4_5"
+      ]
     },
     {
       "unit": "edexcel_medicine",
@@ -1400,54 +1160,13 @@
         "April 1953: James Watson and Francis Crick published double-helix model, building on Rosalind Franklin's Photo 51 X-ray crystallography.",
         "Understanding hereditary code: Revealed how genetic instructions determine human growth, cellular function, and hereditary faults.",
         "The Human Genome Project (launched 1990): Global scientific collaboration led by scientists across 6 nations to map all human DNA.",
-        "Completion in 2003: Unlocked customized medical treatments, targeted chemotherapy drugs, and pre-natal genetic disorder screening.",
+        "Completion in 2003: Unlocked customised medical treatments, targeted chemotherapy drugs, and pre-natal genetic disorder screening.",
         "Modern ethical dilemmas: Controversies over stem-cell cloning, gene editing (CRISPR), and genetic discrimination by insurers."
       ],
       "image": "/images/infographics/medicine/med_kt4_1_genomic_revolution_timeline.webp",
       "fileSizeKb": 349,
       "hingeQuestion": "Why did the mapping of the Human Genome Project (1990–2003) represent a paradigm shift in understanding human disease?",
-      "modelAnswer": "Building on Watson, Crick, and Rosalind Franklin's 1953 discovery of the double helix structure of DNA, the Human Genome Project mapped every one of the 3 billion genetic base pairs in human DNA. This enabled scientists to pinpoint specific genetic mutations causing hereditary diseases like cystic fibrosis and Huntington's chorea, opening the era of targeted gene therapy, CRISPR gene editing, and personalized pharmacogenomics."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_4_3",
-      "slug": "med_kt4_2_history_modern_medicine_timeline",
-      "title": "From Magic Bullets to the NHS: Modern Medical Breakthroughs (1900–1948)",
-      "topic": "Key Topic 4.3: Magic Bullets and the Birth of the NHS",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Paul Ehrlich & Chemical Therapy: Searched for antibodies called \"magic bullets\" that destroyed specific microbes without harming the body.",
-        "1909: Discovery of Salvarsan 606 to cure syphilis; Gerhard Domagk discovered Prontosil (first sulphonamide) for blood poisoning (1932).",
-        "Alexander Fleming discovered Penicillin mould (1928); Howard Florey and Ernst Chain mass-produced it during WWII (1941–1944).",
-        "William Beveridge Report (1942): Proposed government war on the \"Five Giant Evils\" (Want, Disease, Ignorance, Squalor, Idleness).",
-        "Launch of the NHS (July 5, 1948): Replaced uneven voluntary/private medical care with universal free healthcare for all citizens."
-      ],
-      "image": "/images/infographics/medicine/med_kt4_2_history_modern_medicine_timeline.webp",
-      "fileSizeKb": 744,
-      "hingeQuestion": "Why did Paul Ehrlich's discovery of Salvarsan 606 in 1909 mark the birth of modern chemotherapy?",
-      "modelAnswer": "Before Ehrlich, treatments attacked healthy human cells alongside pathogens. Ehrlich hypothesized that synthetic chemical dyes could act as 'magic bullets' (Zauberkugeln) that bound specifically to receptors on bacterial cells without harming human tissue. In 1909, his team discovered the 606th arsenic compound, Salvarsan 606, which effectively killed the syphilis bacterium, proving that synthetic chemistry could cure targeted infectious diseases."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_4_4",
-      "slug": "med_kt4_4_history_penicillin_guide",
-      "title": "Penicillin: The World's First True Miracle Antibiotic (1928–1945)",
-      "topic": "Key Topic 4.4: The Antibiotic Revolution: Fleming, Florey & Chain",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "September 1928: Alexander Fleming noticed Penicillium notatum mould dissolved Staphylococcus bacteria on an untidy petri dish.",
-        "Fleming published findings (1929) but could not purify the unstable mould and lacked chemical engineering expertise.",
-        "Oxford team breakthrough (1938–1940): Howard Florey and Ernst Chain purified penicillin liquid and tested it on mice.",
-        "1941 Albert Alexander trial: Policeman with severe septic scratch dramatically improved, but died when drug supply ran out.",
-        "US industrial mass production: Pearl Harbor spurred US War Production Board to mass produce penicillin in deep-fermentation corn steep vats.",
-        "D-Day (June 1944): 2.3 million doses available; saved an estimated 15% of wounded Allied soldiers from fatal infection."
-      ],
-      "image": "/images/infographics/medicine/med_kt4_4_history_penicillin_guide.webp",
-      "fileSizeKb": 795,
-      "hingeQuestion": "Why did Alexander Fleming's 1928 discovery of penicillin fail to benefit a single patient until 1941?",
-      "modelAnswer": "Although Fleming observed that Penicillium notatum mold dissolved staphylococci bacteria on a contaminated Petri dish, he was a bacteriologist, not a chemist. He was unable to extract or purify enough stable penicillin liquid to treat systemic human infections, and his 1929 published paper attracted little interest until Howard Florey and Ernst Chain assembled an Oxford team with Rockefeller Foundation funding during World War II."
+      "modelAnswer": "Building on Watson, Crick, and Rosalind Franklin's 1953 discovery of the double helix structure of DNA, the Human Genome Project mapped every one of the 3 billion genetic base pairs in human DNA. This enabled scientists to pinpoint specific genetic mutations causing hereditary diseases like cystic fibrosis and Huntington's chorea, opening the era of targeted gene therapy, CRISPR gene editing, and personalised pharmacogenomics."
     },
     {
       "unit": "edexcel_medicine",
@@ -1460,34 +1179,14 @@
       "keyPoints": [
         "Factor collaboration: Chance (Fleming's open window), Individual genius (Florey & Chain), Government & War (US funding).",
         "In 1945, Fleming, Florey, and Chain were jointly awarded the Nobel Prize in Physiology or Medicine.",
-        "Transformed global health: Penicillin cured syphilis, gonorrhea, pneumonia, gangrene, and common bacterial infections.",
+        "Transformed global health: Penicillin cured syphilis, gonorrhoea, pneumonia, gangrene, and common bacterial infections.",
         "Inspired antibiotic explosion: Spurred discovery of streptomycin (1943) for tuberculosis and tetracyclines.",
         "Modern crisis: Over-prescription and animal feed misuse created \"superbugs\" like MRSA resistant to common antibiotics."
       ],
       "image": "/images/infographics/medicine/med_kt4_4_penicillin_breakthrough_deepdive.webp",
       "fileSizeKb": 424,
       "hingeQuestion": "Why was the industrial cooperation of the United States government and pharmaceutical companies essential to the success of penicillin in D-Day 1944?",
-      "modelAnswer": "Florey and Chain proved penicillin's clinical efficacy on Albert Alexander in 1941, but wartime Britain's chemical industry was devastated by bomb damage and lacked the capacity for mass fermentation. Florey traveled to the US War Production Board, which partnered with Pfizer and Merck. Using deep-tank fermentation with corn steep liquor, US factories produced 2.3 million doses in time for the Normandy landings in June 1944, saving hundreds of thousands of Allied lives."
-    },
-    {
-      "unit": "edexcel_medicine",
-      "lessonId": "lesson_4_5",
-      "slug": "med_kt4_5_lung_cancer_case_study",
-      "title": "Case Study: The Battle Against Lung Cancer (1950–Present)",
-      "topic": "Key Topic 4.5: Public Health and Lung Cancer",
-      "type": "lesson_summary",
-      "aspect": "landscape",
-      "keyPoints": [
-        "Epidemiological evidence: In 1950, Richard Doll and Austin Bradford Hill demonstrated that 90% of lung cancer cases link to smoking.",
-        "Lethal statistics: Lung cancer is the leading cause of cancer death in Britain, killing over 35,000 people annually.",
-        "Advanced diagnosis: CT scans, bronchoscopies with miniature biopsy cameras, and PET scans pinpoint tumor stages.",
-        "Modern treatment: Targeted radiotherapy, chemotherapy cocktails, lobectomy robotic surgery, and genetic immunotherapy.",
-        "Prevention focus: Government intervention proved far more effective than treatment in reducing disease rates."
-      ],
-      "image": "/images/infographics/medicine/med_kt4_5_lung_cancer_case_study.webp",
-      "fileSizeKb": 875,
-      "hingeQuestion": "Why was the clinical link between cigarette smoking and lung cancer notoriously difficult to translate into public health policy between 1950 and 1970?",
-      "modelAnswer": "Richard Doll and Austin Bradford Hill's 1950 epidemiological study proved that smoking caused a twenty-fold increase in lung cancer. However, the tobacco industry deployed aggressive lobbying and funding for counter-research. Furthermore, smoking was deeply embedded in British culture, with over 80% of adult males smoking, and successive governments feared losing millions in tobacco tax revenues, delaying the first television advertising ban until 1965."
+      "modelAnswer": "Florey and Chain proved penicillin's clinical efficacy on Albert Alexander in 1941, but wartime Britain's chemical industry was devastated by bomb damage and lacked the capacity for mass fermentation. Florey travelled to the US War Production Board, which partnered with Pfizer and Merck. Using deep-tank fermentation with corn steep liquor, US factories produced 2.3 million doses in time for the Normandy landings in June 1944, saving hundreds of thousands of Allied lives."
     },
     {
       "unit": "edexcel_medicine",
@@ -1501,13 +1200,13 @@
         "1962 Royal College of Physicians report: Formally warned that cigarette smoking was causing a national health catastrophe.",
         "1965: British government banned cigarette advertising on television.",
         "2007: Legal smoking age raised from 16 to 18; public smoking ban introduced across all enclosed workplaces and pubs.",
-        "2016: Plain standardized cigarette packaging mandated by law with graphic pictorial health warnings.",
+        "2016: Plain standardised cigarette packaging mandated by law with graphic pictorial health warnings.",
         "Heavy taxation: Cigarette duties steadily increased to discourage youth uptake and fund NHS healthcare."
       ],
       "image": "/images/infographics/medicine/med_kt4_5_modern_lung_cancer_campaigns.webp",
       "fileSizeKb": 431,
       "hingeQuestion": "How did modern anti-smoking campaigns evolve from passive public warnings into aggressive legislative compulsion by 2007?",
-      "modelAnswer": "Early government responses in the 1960s relied on voluntary educational health warnings on cigarette packets. As cancer deaths mounted, the state adopted coercive legislative measures: banning cigarette advertising on television (1965), banning smoking on public transport, imposing punitive taxes, and ultimately enacting the 2007 Health Act banning smoking in all enclosed public places and workplaces, followed by plain standardized packaging in 2016."
+      "modelAnswer": "Early government responses in the 1960s relied on voluntary educational health warnings on cigarette packets. As cancer deaths mounted, the state adopted coercive legislative measures: banning cigarette advertising on television (1965), banning smoking on public transport, imposing punitive taxes, and ultimately enacting the 2007 Health Act banning smoking in all enclosed public places and workplaces, followed by plain standardised packaging in 2016."
     },
     {
       "unit": "edexcel_medicine",
@@ -1541,7 +1240,7 @@
         "Soil contamination: Heavily manured Belgian and French farmland harboured lethal anaerobic bacteria causing gas gangrene.",
         "Wound debridement: Surgical cutting away of all dead, infected tissue to starve bacteria of oxygen before suturing.",
         "Carrel-Dakin method: Continuous irrigation of deep wounds with sterile sodium hypochlorite antiseptic solution.",
-        "The Thomas Splint (1916): Reduced compound femur fracture mortality from 80% to just 20% by immobilizing the broken bone.",
+        "The Thomas Splint (1916): Reduced compound femur fracture mortality from 80% to just 20% by immobilising the broken bone.",
         "Mobile X-ray vans: Marie Curie and British army deployed mobile X-ray units to locate shrapnel and bullets before surgery."
       ],
       "image": "/images/infographics/medicine/med_kt5_5_wwi_medical_innovations.webp",
@@ -1551,7 +1250,7 @@
         "lesson_5_6"
       ],
       "hingeQuestion": "Why did Hugh Owen Thomas's splint reduce mortality from fractured femurs on the Western Front from 80% to 20% by 1916?",
-      "modelAnswer": "A broken thigh bone (femur) caused severed muscle spasms that drove sharp bone fragments through major arteries, causing fatal internal hemorrhaging, shock, and gas gangrene during bumpy transport in ambulances. The Thomas splint pulled the leg into rigid traction, preventing broken bone ends from moving, stabilizing the fracture, and allowing wounded soldiers to survive the evacuation journey to Casualty Clearing Stations."
+      "modelAnswer": "A broken thigh bone (femur) caused severed muscle spasms that drove sharp bone fragments through major arteries, causing fatal internal haemorrhaging, shock, and gas gangrene during bumpy transport in ambulances. The Thomas splint pulled the leg into rigid traction, preventing broken bone ends from moving, stabilising the fracture, and allowing wounded soldiers to survive the evacuation journey to Casualty Clearing Stations."
     },
     {
       "unit": "edexcel_medicine",
@@ -1571,7 +1270,12 @@
       "image": "/images/infographics/medicine/med_kt5_5_fighting_wwi_wound_infections.webp",
       "fileSizeKb": 566,
       "hingeQuestion": "Why was gas gangrene extraordinarily lethal on the Western Front compared to previous military conflicts in British history?",
-      "modelAnswer": "Flanders and northern France were intensively farmed agricultural soils rich in manure containing anaerobic bacteria (Clostridium tetani and perfringens). When jagged shrapnel fragments ripped through uniforms, they drove manure-saturated mud and fabric deep into crushed muscular tissue deprived of oxygen. Antiseptics like carbolic acid failed on deep wounds, forcing surgeons to develop wound debridement (cutting away dead tissue) and the Carrel-Dakin antiseptic irrigation technique."
+      "modelAnswer": "Flanders and northern France were intensively farmed agricultural soils rich in manure containing anaerobic bacteria (Clostridium tetani and perfringens). When jagged shrapnel fragments ripped through uniforms, they drove manure-saturated mud and fabric deep into crushed muscular tissue deprived of oxygen. Antiseptics like carbolic acid failed on deep wounds, forcing surgeons to develop wound debridement (cutting away dead tissue) and the Carrel-Dakin antiseptic irrigation technique.",
+      "lessonIds": [
+        "lesson_5_2",
+        "lesson_5_3",
+        "lesson_5_5"
+      ]
     }
   ],
   "usa": [

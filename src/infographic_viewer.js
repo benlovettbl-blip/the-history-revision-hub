@@ -62,6 +62,7 @@ export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
 
   if (unitList.length > 0 && targetStr) {
     const matched = unitList.filter((item) => {
+      if (!item || !item.image || String(item.image).trim().length === 0) return false;
       if (item.lessonId) {
         if (item.lessonId === targetStr) return true;
         if (item.lessonId === `lesson_${targetStr}`) return true;
@@ -76,28 +77,6 @@ export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
       return false;
     });
     if (matched.length > 0) return matched;
-  }
-
-  // Universal Interactive Presentation Mat Fallback:
-  // Every lesson across all KS3 & GCSE curriculum units has an interactive presentation mat at /interactive_mats/viewer.html!
-  // Key Stage 2 (KS2) primary units use their dedicated Enquiry Worksheets and 28-page primary pupil workbook.
-  if (unitId && (targetStr || targetStr === '0')) {
-    if (unitId === 'ks2_ww2' || unitId.startsWith('ks2')) {
-      return [];
-    }
-    const cleanLessonNum = normalizedTarget || '1';
-    return [
-      {
-        unit: unitId,
-        lessonId: `lesson_${cleanLessonNum}`,
-        slug: `${unitId}_lesson_${cleanLessonNum}`,
-        title: `Interactive Presentation Mat • Lesson ${cleanLessonNum}`,
-        topic: `${unitId} • Lesson ${cleanLessonNum}`,
-        type: 'lesson_summary',
-        aspect: 'landscape',
-        interactiveUrl: `/interactive_mats/viewer.html?unit=${encodeURIComponent(unitId)}&lesson=${encodeURIComponent(cleanLessonNum)}`
-      }
-    ];
   }
 
   return [];
@@ -193,14 +172,20 @@ function ensureModalElement() {
           <button type="button" id="infographic-btn-zoom-reset" style="background: none; border: none; color: #94a3b8; padding: 0 5px; height: 24px; cursor: pointer; font-size: 0.68rem; font-weight: 700; border-left: 1px solid #334155;" title="Fit / Reset (0)">FIT</button>
         </div>
 
-        <!-- Whiteboard Fit (Auto-scales mat to fit 100% on one screen with zero scrolling) -->
+        <!-- Download Poster Image -->
+        <a id="infographic-btn-download" href="#" download style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 6px; font-size: 0.74rem; font-weight: 700; text-decoration: none; cursor: pointer; transition: all 0.15s ease;" title="Save high-resolution infographic image">
+          <i class="fa-solid fa-download" style="color: #38bdf8;"></i>
+          <span class="btn-text-desktop">Save</span>
+        </a>
+
+        <!-- Whiteboard Fit (KS2 interactive only) -->
         <button type="button" id="infographic-btn-whiteboard-fit" style="display: none; align-items: center; gap: 4px; padding: 4px 8px; background: #0284c7; color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);" title="Whiteboard Mode: Automatically scales mat to fit 100% on one screen with zero scrolling">
           <i class="fa-solid fa-chalkboard-user"></i>
           <span class="btn-text-desktop">Fit</span>
         </button>
 
-        <!-- Questions & Practice Sidebar Toggle -->
-        <button type="button" id="infographic-btn-toggle-drawer" style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;" title="Toggle Questions &amp; Practice Sidebar">
+        <!-- Questions & Practice Sidebar Toggle (Hidden in pure Poster Lightbox mode) -->
+        <button type="button" id="infographic-btn-toggle-drawer" style="display: none; align-items: center; gap: 5px; padding: 4px 9px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;" title="Toggle Questions &amp; Practice Sidebar">
           <i class="fa-solid fa-circle-question" style="color: #fde047;"></i>
           <span class="btn-text-desktop">Questions &amp; Practice</span>
         </button>
@@ -710,14 +695,6 @@ function renderCurrentItem() {
   }
   if (!currentItem) return;
 
-  // Auto-link interactive revision mat if unit & lessonId exist and not already present
-  currentList.forEach((it) => {
-    if (!it.interactiveUrl && it.unit && it.lessonId && it.type !== 'unit_roadmap' && it.type !== 'roadmap') {
-      const cleanNum = String(it.lessonId).replace(/^lesson_/i, '');
-      it.interactiveUrl = `/interactive_mats/viewer.html?unit=${encodeURIComponent(it.unit)}&lesson=${encodeURIComponent(cleanNum)}`;
-    }
-  });
-
   const img = modal.querySelector('#infographic-image');
   const title = modal.querySelector('#infographic-title');
   const topicBadge = modal.querySelector('#infographic-badge-topic');
@@ -945,8 +922,19 @@ function renderCurrentItem() {
     }
   }
 
+  const isKs2Item = Boolean(
+    currentItem.unit &&
+      (currentItem.unit === 'ks2_ww2' || String(currentItem.unit).startsWith('ks2')),
+  );
   const hasPosterImage = Boolean(currentItem.image && currentItem.image.trim().length > 0);
-  const hasInteractive = Boolean(currentItem.interactiveUrl);
+  const hasInteractive = Boolean(isKs2Item && currentItem.interactiveUrl);
+
+  if (btnToggleDrawer) {
+    btnToggleDrawer.style.display = 'none';
+  }
+  if (drawer) {
+    drawer.style.display = 'none';
+  }
 
   if (hasPosterImage && hasInteractive) {
     if (modeToggle) {
@@ -964,7 +952,6 @@ function renderCurrentItem() {
         };
       }
     }
-    // Respect explicit requested mode, otherwise DEFAULT to visual infographic poster!
     if (currentRequestedMode === 'interactive') {
       setViewMode('interactive');
     } else {
@@ -978,9 +965,6 @@ function renderCurrentItem() {
     if (tabBtn) tabBtn.style.display = 'none';
     setViewMode('poster');
   }
-
-  // Render the 3 interactive pill panels
-  renderDrawerTools(modal, currentItem);
 }
 
 /**
@@ -1926,14 +1910,6 @@ export async function openInfographicModal(options) {
 
   if (!currentItem) return;
 
-  // Auto-link interactive revision mat if unit & lessonId exist and not already present
-  currentList.forEach((it) => {
-    if (!it.interactiveUrl && it.unit && it.lessonId && it.type !== 'unit_roadmap' && it.type !== 'roadmap') {
-      const cleanNum = String(it.lessonId).replace(/^lesson_/i, '');
-      it.interactiveUrl = `/interactive_mats/viewer.html?unit=${encodeURIComponent(it.unit)}&lesson=${encodeURIComponent(cleanNum)}`;
-    }
-  });
-
   renderCurrentItem();
   modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -1951,9 +1927,10 @@ export async function openLessonInfographicModal(lessonIdOrIndex, unitId, option
     lessonIdOrIndex ??
     (typeof window !== 'undefined' && (window.currentLessonId ?? window.currentLessonIndex)) ??
     0;
+  const isKs2Active = activeUnit === 'ks2_ww2' || String(activeUnit).startsWith('ks2');
 
   // If worksheet mode is explicitly requested for KS2, route to worksheet modal
-  if ((activeUnit === 'ks2_ww2' || activeUnit.startsWith('ks2')) && options.mode === 'worksheet') {
+  if (isKs2Active && options.mode === 'worksheet') {
     if (typeof window !== 'undefined' && typeof window.openKs2WorksheetModal === 'function') {
       window.openKs2WorksheetModal(targetLesson);
       return;
@@ -1966,6 +1943,7 @@ export async function openLessonInfographicModal(lessonIdOrIndex, unitId, option
     const unitList = manifest[activeUnit] || [];
     const targetStr = String(targetLesson).replace(/^lesson_/i, '');
     const matched = unitList.filter((item) => {
+      if (!item || !item.image || String(item.image).trim().length === 0) return false;
       const itemLesson = String(item.lessonId || '').replace(/^lesson_/i, '');
       return itemLesson === targetStr;
     });
@@ -1974,38 +1952,12 @@ export async function openLessonInfographicModal(lessonIdOrIndex, unitId, option
     }
   }
 
-  // Universal Presentation Mat Fallback:
-  // If no dedicated static mat exists or item lacks interactiveUrl, route to universal viewer!
-  if (!items || items.length === 0) {
-    const cleanLessonNum = String(targetLesson).replace(/^lesson_/i, '') || '1';
-    items = [
-      {
-        unit: activeUnit,
-        lessonId: targetLesson,
-        slug: `${activeUnit}_lesson_${cleanLessonNum}`,
-        title: `Interactive Presentation Mat • Lesson ${cleanLessonNum}`,
-        topic: `${activeUnit} • Lesson ${cleanLessonNum}`,
-        type: 'lesson_summary',
-        aspect: 'landscape',
-        interactiveUrl: `/interactive_mats/viewer.html?unit=${encodeURIComponent(activeUnit)}&lesson=${encodeURIComponent(targetLesson)}`
-      }
-    ];
-  } else {
-    items.forEach((it) => {
-      if (!it.interactiveUrl) {
-        it.interactiveUrl = `/interactive_mats/viewer.html?unit=${encodeURIComponent(activeUnit)}&lesson=${encodeURIComponent(targetLesson)}`;
-      }
-    });
+  if (Array.isArray(items) && !isKs2Active) {
+    items = items.filter((it) => it && it.image && String(it.image).trim().length > 0);
   }
 
-  if (items.length > 0) {
-    openInfographicModal({ items, startIndex: 0, ...options });
-  } else {
-    // Fallback: check if unit roadmaps exist
-    const roadmaps = await getUnitRoadmaps(activeUnit);
-    if (roadmaps.length > 0) {
-      openInfographicModal({ items: roadmaps, startIndex: 0, ...options });
-    }
+  if (items && items.length > 0) {
+    openInfographicModal({ items, startIndex: 0, ...options, initialMode: isKs2Active ? options.initialMode : 'poster' });
   }
 }
 

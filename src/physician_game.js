@@ -65,7 +65,7 @@ export async function initPhysicianGame(container, task) {
         name: 'John the Priest',
         symptoms:
           'His fingers and toes have turned completely black. He has a high fever and is vomiting constantly.',
-        type: 'Septicemic Plague',
+        type: 'Septicaemic Plague',
         cures: [
           {
             name: 'Bathing in urine',
@@ -77,7 +77,7 @@ export async function initPhysicianGame(container, task) {
             name: 'Eating a diet of only dry bread',
             death: true,
             explanation:
-              "You thought rich food was causing an imbalance of blood. Starving him didn't cure the septicemia. He died.",
+              "You thought rich food was causing an imbalance of blood. Starving him didn't cure the septicaemia. He died.",
           },
           {
             name: 'Tying a live chicken to him',

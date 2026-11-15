@@ -538,6 +538,30 @@ export function initLessonExamPractice(unitId, lesson) {
       'position: fixed; inset: 0; z-index: 999999; background: #ffffff; color: #0f172a; overflow-y: auto; padding: 0 clamp(16px, 3vw, 36px) clamp(12px, 2vw, 24px); display: flex; flex-direction: column; justify-content: space-between; font-family: "Inter", sans-serif; box-sizing: border-box;';
 
     const centerTimerBlockHtml = '';
+    const isProjectorFollowUp =
+      String(q.qCode || '').toUpperCase().includes('2(B)') ||
+      /\bfollow[\s-]+up\b/i.test(String(q.questionText || '')) ||
+      /follow[_\s-]*up/i.test(String(q.type || ''));
+    const projSrcMatch = String(q.questionText || '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\*\*/g, '')
+      .match(/follow[\s-]+up\s+(Source\s+[A-Z0-9]+)/i);
+    const projSrcLabel = projSrcMatch ? projSrcMatch[1] : 'the source';
+    const projectorFollowUpStemsHtml = isProjectorFollowUp
+      ? `
+        <div style="margin-top: 12px; background: #f8fafc; border: 2px solid #94a3b8; border-left: 5px solid #0d9488; border-radius: 10px; padding: 12px 18px;">
+          <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #0f766e; margin-bottom: 8px;">
+            Official Pearson Edexcel Q2(b) Answer Stems (Write All 4 in Exercise Book &bull; 1 Mark Each)
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 8px 18px; font-size: 1rem; font-weight: 700; color: #0f172a; line-height: 1.4;">
+            <div><span style="color: #0d9488;">1.</span> Detail in ${projSrcLabel} that I would follow up:</div>
+            <div><span style="color: #0d9488;">2.</span> Question I would ask:</div>
+            <div><span style="color: #0d9488;">3.</span> What type of source I could use:</div>
+            <div><span style="color: #0d9488;">4.</span> How this might help answer my question:</div>
+          </div>
+        </div>
+      `
+      : '';
 
     modal.innerHTML = `
       <style>
@@ -711,6 +735,7 @@ export function initLessonExamPractice(unitId, lesson) {
           </div>
 
           ${sourceHtml}
+          ${projectorFollowUpStemsHtml}
           ${stimulusHtml}
           ${centerTimerBlockHtml}
         </div>

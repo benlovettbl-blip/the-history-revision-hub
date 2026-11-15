@@ -828,8 +828,18 @@ export function initEventDelegation() {
         if (window.nextQuizQuestion) window.nextQuizQuestion();
         break;
       case 'start-tps-timer':
-        if (window.startTPSTimer) window.startTPSTimer(target, 60);
+        if (window.startTPSTimer)
+          window.startTPSTimer(target, Number(target.dataset.seconds) || 60);
         break;
+      case 'toggle-oral-hinge-reveal': {
+        const hingeStrip = target.closest('.oral-hinge-strip');
+        if (hingeStrip) {
+          const isNowRevealed = hingeStrip.classList.toggle('is-revealed');
+          if (isNowRevealed) hingeStrip.classList.remove('is-timer-finished');
+          target.setAttribute('aria-expanded', isNowRevealed ? 'true' : 'false');
+        }
+        break;
+      }
       case 'scroll-to-para':
         if (window.scrollToPara) window.scrollToPara(target.dataset.target);
         break;

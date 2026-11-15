@@ -308,7 +308,7 @@ const renaissanceConfigs = [
     id: 'lesson_2_3',
     keyTopicBadge: 'KEY TOPIC 2.3',
     title: 'KT2.3: Andreas Vesalius & The Anatomical Revolution',
-    enquiryQuestion: 'How did Andreas Vesalius revolutionize the study of human anatomy?',
+    enquiryQuestion: 'How did Andreas Vesalius revolutionise the study of human anatomy?',
     specAnchor:
       'Andreas Vesalius; The Fabric of the Human Body (De Humani Corporis Fabrica, 1543); human dissection; correcting Galen’s errors.',
     tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
@@ -541,7 +541,7 @@ const renaissanceConfigs = [
     linedLeftQuip:
       'Despite 150 years of Renaissance anatomy, when epidemic plague returned in 1665, treatments were virtually identical to 1348.',
     linedRightQuip:
-      'Weigh continuity versus change: while government organization improved (quarantine, pest houses), medical understanding of the cause remained 100% medieval.',
+      'Weigh continuity versus change: while government organisation improved (quarantine, pest houses), medical understanding of the cause remained 100% medieval.',
     stages: [
       {
         step: 1,
@@ -573,7 +573,7 @@ const renaissanceConfigs = [
         dates: '1665',
         title: 'Mayor’s Orders & Pest Houses',
         questionHeading:
-          'How did local government action in 1665 show greater organization than 1348?',
+          'How did local government action in 1665 show greater organisation than 1348?',
         paraBadge: '[5.3]',
         bullets: [
           'Mayor quarantine orders',
@@ -615,19 +615,6 @@ function renderSpinePage(cfg) {
 
   const stagesHtml = stages
     .map((st, sIdx) => {
-      const bullets = st.bullets || (st.keywords ? st.keywords.slice(0, 3) : []);
-      const bulletsHtml = bullets
-        .map(
-          (b, idx) => `
-            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
-                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
-              </div>
-            </div>`,
-        )
-        .join('');
-
       const questionText = st.questionHeading || st.focusClue || st.title;
 
       return `
@@ -646,15 +633,8 @@ function renderSpinePage(cfg) {
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
+          <!-- Full-Width Ruled Note-Taking Lines (Trigger-Free Golden Standard) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
-            
-            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
-            <div class="stage-trigger-col" style="width: 26mm; flex-shrink: 0; background: #f8fafc; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
-              ${bulletsHtml}
-            </div>
-
-            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
             <div class="stage-writing-col">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -662,7 +642,6 @@ function renderSpinePage(cfg) {
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
-
           </div>
         </div>`;
     })

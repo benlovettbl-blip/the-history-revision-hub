@@ -12,6 +12,14 @@ function usesContainFit(entity, imgSrc = '') {
   return /\.svg(?:$|\?)/i.test(String(imgSrc || ''));
 }
 
+function fmtInlineDossierText(val) {
+  if (val === null || val === undefined) return '';
+  return String(val)
+    .replace(/\s*->\s*/g, ' &rarr; ')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[^<a-zA-Z0-9*])\*([^*\n<]+)\*(?=[^*]|$)/g, '$1<em>$2</em>');
+}
+
 export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   const isOrg = isOrganisationEntity(person);
   const anchor = anchorTitle || person.anchor_title || '';
@@ -49,7 +57,7 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
         ? getAssetUrl(person.image)
         : person.image;
     const contain = usesContainFit(person, imgSrc);
-    const objPos = person.image_position || 'center 18%';
+    const objPos = String(person.image_position || 'center 18%').replace(/\bcentre\b/gi, 'center');
     imgSrcHtml = `
       <div style="flex-shrink: 0; width: 88px; height: 100px; border-radius: 6px; overflow: hidden; background: #ffffff; border: 1.5px solid #cbd5e1; box-shadow: 0 2px 5px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: center; ${contain ? 'padding: 6px;' : ''}">
         <img src="${imgSrc}" loading="lazy" alt="${person.name}" style="width: 100%; height: 100%; object-fit: ${contain ? 'contain' : 'cover'}; object-position: ${objPos};" onerror="this.parentElement.style.display='none'">
@@ -62,22 +70,22 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
     const items = Array.isArray(person.strategic_actions)
       ? person.strategic_actions
       : [person.strategic_actions];
-    actionsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${a}</li>`).join('')}</ul>`;
+    actionsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${fmtInlineDossierText(a)}</li>`).join('')}</ul>`;
   } else if (person.actions) {
-    actionsList = `<div style="font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${person.actions}</div>`;
+    actionsList = `<div style="font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${fmtInlineDossierText(person.actions)}</div>`;
   }
 
   // Neutralised from legacy celebratory green "Impact & Achievements" -> impartial slate/navy "Key Roles & Turning Points" / "Methods & Key Actions"
   let turningPointsList = '';
   if (person.achievements) {
     const items = Array.isArray(person.achievements) ? person.achievements : [person.achievements];
-    turningPointsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #334155; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${a}</li>`).join('')}</ul>`;
+    turningPointsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #334155; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${fmtInlineDossierText(a)}</li>`).join('')}</ul>`;
   }
 
   const originsHtml = person.origins
     ? `
       <div style="margin-top: 8px; font-size: 0.88rem; color: #334155; line-height: 1.5; background: #f8fafc; border-left: 3px solid #64748b; padding: 7px 12px; border-radius: 0 4px 4px 0;">
-        <strong style="color: #0f172a;">${isOrg ? 'Origins &amp; Ideology:' : 'Origins &amp; Worldview:'}</strong> ${person.origins}
+        <strong style="color: #0f172a;">${isOrg ? 'Origins &amp; Ideology:' : 'Origins &amp; Worldview:'}</strong> ${fmtInlineDossierText(person.origins)}
       </div>
     `
     : '';
@@ -85,9 +93,21 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   const distinctionHtml = person.key_distinction
     ? `
       <div style="margin-top: 8px; font-size: 0.87rem; color: #78350f; line-height: 1.48; background: #fffbeb; border-left: 3px solid #d97706; padding: 7px 12px; border-radius: 0 4px 4px 0;">
-        <strong style="color: #92400e;">Key Distinction (Exam Precision):</strong> ${person.key_distinction}
+        <strong style="color: #92400e;">Key Distinction (Exam Precision):</strong> ${fmtInlineDossierText(person.key_distinction)}
       </div>
     `
+    : '';
+
+  const limitationsHtml = person.limitations
+    ? `
+      <div style="margin-top: 8px; font-size: 0.87rem; color: #7f1d1d; line-height: 1.48; background: #fef2f2; border-left: 3px solid #ef4444; padding: 7px 12px; border-radius: 0 4px 4px 0;">
+        <strong style="color: #b91c1c;">Historical Limitations &amp; Constraints:</strong> ${fmtInlineDossierText(person.limitations)}
+      </div>
+    `
+    : '';
+
+  const rationaleHtml = person.anchor_rationale
+    ? `<div style="width: 100%; font-size: 0.79rem; font-weight: 500; text-transform: none; letter-spacing: 0; color: #475569; margin-top: 2px; line-height: 1.4;">${fmtInlineDossierText(person.anchor_rationale)}</div>`
     : '';
 
   const anchorBannerInside = anchor
@@ -97,6 +117,7 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
         <i class="fa-solid ${badgeIcon}"></i> ${insideBannerLabel}
       </span>
       <span style="color: ${badgeBg};">Anchored to ${anchor}</span>
+      ${rationaleHtml}
     </div>
   `
     : '';
@@ -149,7 +170,7 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
           </span>
         </div>
         <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0; white-space: nowrap;">
-          ${toggleLabel} &bull; Expand <span class="drawer-caret">&#9660;</span>
+          ${toggleLabel} &bull; <span class="drawer-state-expand">Expand</span><span class="drawer-state-collapse">Collapse</span> <span class="drawer-caret">&#9660;</span>
         </span>
       </summary>
       <div class="key-individual-dossier-card archival-drawer-content" style="padding: 16px 20px; background: #ffffff; border-top: 1px solid #e2e8f0;">
@@ -168,21 +189,20 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
             </h3>
             ${person.role ? `<div style="font-size: 0.85rem; color: #475569; font-weight: 600; margin-top: 2px;">${person.role}</div>` : ''}
             ${originsHtml}
-            ${
-              person.significance || person.bio
-                ? `
+            ${person.significance || person.bio
+      ? `
               <div style="margin-top: 8px; font-size: 0.9rem; color: #334155; line-height: 1.5; background: #f8fafc; border-left: 3px solid ${badgeBg}; padding: 8px 12px; border-radius: 0 4px 4px 0;">
-                <strong>Historical Significance:</strong> ${person.significance || person.bio}
+                <strong>Historical Significance:</strong> ${fmtInlineDossierText(person.significance || person.bio)}
               </div>
             `
-                : ''
-            }
+      : ''
+    }
             ${distinctionHtml}
+            ${limitationsHtml}
           </div>
         </div>
-        ${
-          actionsList
-            ? `
+        ${actionsList
+      ? `
           <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed #e2e8f0;">
             <strong style="color: ${badgeBg}; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">
               ${actionsHeading}
@@ -190,11 +210,10 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
             ${actionsList}
           </div>
         `
-            : ''
-        }
-        ${
-          turningPointsList
-            ? `
+      : ''
+    }
+        ${turningPointsList
+      ? `
           <div style="margin-top: 10px; padding-top: 8px; border-top: 1px dashed #e2e8f0;">
             <strong style="color: #334155; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">
               ${secondaryHeading}
@@ -202,8 +221,8 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
             ${turningPointsList}
           </div>
         `
-            : ''
-        }
+      : ''
+    }
         ${profileJumpFooterHtml}
       </div>
     </details>
@@ -229,7 +248,9 @@ export function generateKeyIndividualCardHTML(person) {
         : person.image;
     const contain = usesContainFit(person, imgSrc);
     const safeAlt = (person.name || '').replace(/"/g, '&quot;');
-    const objPos = (person.image_position || 'center 22%').replace(/"/g, '');
+    const objPos = (person.image_position || 'center 22%')
+      .replace(/"/g, '')
+      .replace(/\bcentre\b/gi, 'center');
     if (contain) {
       frontImgHtml = `<div style="width: 100%; height: 276px; background: #ffffff; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass, #e2e8f0); border-radius: 11px 11px 0 0; overflow: hidden; padding: 22px; box-sizing: border-box;">
         <img src="${imgSrc}" alt="${safeAlt}" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" onerror="this.src='/images/placeholder_portrait.jpg'">
@@ -248,9 +269,9 @@ export function generateKeyIndividualCardHTML(person) {
 
   let basicBio = '';
   if (person.bio) {
-    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;">${person.bio}</div>`;
+    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;">${fmtInlineDossierText(person.bio)}</div>`;
   } else if (person.significance) {
-    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;"><strong>Significance:</strong> ${person.significance}</div>`;
+    basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;"><strong>Significance:</strong> ${fmtInlineDossierText(person.significance)}</div>`;
   }
 
   let backHtml = `
@@ -269,7 +290,7 @@ export function generateKeyIndividualCardHTML(person) {
     backHtml += `
       <div style="background: rgba(100, 116, 139, 0.1); border-left: 3px solid #64748b; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
         <strong style="color: #475569; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Origins &amp; Ideology' : 'Origins &amp; Worldview'}</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.origins}</span>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.origins)}</span>
       </div>`;
   }
 
@@ -278,14 +299,14 @@ export function generateKeyIndividualCardHTML(person) {
     backHtml += `
       <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
         <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Core Actions'}</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.actions}</span>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.actions)}</span>
       </div>`;
   }
   if (person.strategic_actions) {
     hasDetailedContent = true;
     const actionsList = Array.isArray(person.strategic_actions)
-      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.strategic_actions.join('</li><li style="margin-top:4px;">')}</li></ul>`
-      : person.strategic_actions;
+      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.strategic_actions.map((a) => fmtInlineDossierText(a)).join('</li><li style="margin-top:4px;">')}</li></ul>`
+      : fmtInlineDossierText(person.strategic_actions);
     backHtml += `
       <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
         <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Strategic Decisions &amp; Actions'}</strong>
@@ -295,8 +316,8 @@ export function generateKeyIndividualCardHTML(person) {
   if (person.achievements) {
     hasDetailedContent = true;
     const achievementsList = Array.isArray(person.achievements)
-      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.achievements.join('</li><li style="margin-top:4px;">')}</li></ul>`
-      : person.achievements;
+      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.achievements.map((a) => fmtInlineDossierText(a)).join('</li><li style="margin-top:4px;">')}</li></ul>`
+      : fmtInlineDossierText(person.achievements);
     const headingLabel =
       isOrg && !person.strategic_actions && !person.actions
         ? 'Methods &amp; Key Actions'
@@ -312,7 +333,7 @@ export function generateKeyIndividualCardHTML(person) {
     backHtml += `
       <div style="background: rgba(217, 119, 6, 0.1); border-left: 3px solid #d97706; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
         <strong style="color: #b45309; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Key Distinction (Don&rsquo;t Confuse)</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.key_distinction}</span>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.key_distinction)}</span>
       </div>`;
   }
   if (person.limitations) {
@@ -320,7 +341,15 @@ export function generateKeyIndividualCardHTML(person) {
     backHtml += `
       <div style="background: rgba(239, 68, 68, 0.09); border-left: 3px solid #ef4444; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
         <strong style="color: #dc2626; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Structural Limitations</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${person.limitations}</span>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.limitations)}</span>
+      </div>`;
+  }
+  if (person.significance && person.bio) {
+    hasDetailedContent = true;
+    backHtml += `
+      <div style="background: rgba(16, 185, 129, 0.09); border-left: 3px solid #059669; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+        <strong style="color: #047857; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">GCSE Historical Significance</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.significance)}</span>
       </div>`;
   }
 
@@ -614,55 +643,59 @@ export function initKeyIndividualsTask(
   };
 
   if (grouped) {
-    let currentGroup = '';
-    let htmlContent = '';
-    let isFirstGroup = true;
+    const groupOrder = [];
+    const groupBuckets = new Map();
 
     keyIndividualsData.forEach((person) => {
-      if (person.group !== currentGroup) {
-        if (!isFirstGroup) {
-          htmlContent += '</div>';
-        }
-        isFirstGroup = false;
-        currentGroup = person.group;
-
-        const bannerData = bannerMap[currentGroup];
-        if (bannerData) {
-          const bannerUrl =
-            typeof getAssetUrl === 'function'
-              ? getAssetUrl('/' + bannerData.image)
-              : '/' + bannerData.image;
-          htmlContent += `
-            <div class="agent-group-section" style="margin-top: 40px; margin-bottom: 25px;">
-              <div class="premium-banner" style="position: relative; margin: 0; min-height: 140px;">
-                <div class="premium-banner-bg" style="background-image: url('${bannerUrl}'); background-position: center;"></div>
-                <div class="premium-banner-overlay-1"></div>
-                <div class="premium-banner-overlay-2" style="background: ${bannerData.gradient};"></div>
-                <div class="premium-banner-glow" style="background: radial-gradient(circle, ${bannerData.border} 0%, transparent 70%);"></div>
-                <div class="premium-banner-content" style="border-left: 6px solid ${bannerData.border};">
-                  <h3 class="premium-banner-title">${bannerData.title}</h3>
-                  <p class="premium-banner-enquiry">${bannerData.enquiry}</p>
-                </div>
-              </div>
-            </div>
-          `;
-        } else {
-          htmlContent += `
-            <h2 class="agent-group-heading" style="margin-top: 40px; margin-bottom: 20px; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px;">
-              ${currentGroup}
-            </h2>
-          `;
-        }
-
-        htmlContent += `<div class="agent-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(265px, 1fr)); gap: 20px; align-items: stretch;">`;
+      const grp = person.group || 'Other';
+      if (!groupBuckets.has(grp)) {
+        groupOrder.push(grp);
+        groupBuckets.set(grp, []);
       }
-
-      htmlContent += generateKeyIndividualCardHTML(person);
+      groupBuckets.get(grp).push(person);
     });
 
-    if (!isFirstGroup) {
-      htmlContent += '</div>';
-    }
+    let htmlContent = '';
+    groupOrder.forEach((grp) => {
+      const members = groupBuckets.get(grp) || [];
+      if (members.length === 0) return;
+
+      htmlContent += `<section class="agent-group-block" data-group="${String(grp).replace(/"/g, '&quot;')}">`;
+
+      const bannerData = bannerMap[grp];
+      if (bannerData) {
+        const bannerUrl =
+          typeof getAssetUrl === 'function'
+            ? getAssetUrl('/' + bannerData.image)
+            : '/' + bannerData.image;
+        htmlContent += `
+          <div class="agent-group-section" style="margin-top: 40px; margin-bottom: 25px;">
+            <div class="premium-banner" style="position: relative; margin: 0; min-height: 140px;">
+              <div class="premium-banner-bg" style="background-image: url('${bannerUrl}'); background-position: center;"></div>
+              <div class="premium-banner-overlay-1"></div>
+              <div class="premium-banner-overlay-2" style="background: ${bannerData.gradient};"></div>
+              <div class="premium-banner-glow" style="background: radial-gradient(circle, ${bannerData.border} 0%, transparent 70%);"></div>
+              <div class="premium-banner-content" style="border-left: 6px solid ${bannerData.border};">
+                <h3 class="premium-banner-title">${bannerData.title}</h3>
+                <p class="premium-banner-enquiry">${bannerData.enquiry}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      } else {
+        htmlContent += `
+          <h2 class="agent-group-heading" style="margin-top: 40px; margin-bottom: 20px; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px;">
+            ${grp}
+          </h2>
+        `;
+      }
+
+      htmlContent += `<div class="agent-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(265px, 1fr)); gap: 20px; align-items: stretch;">`;
+      members.forEach((person) => {
+        htmlContent += generateKeyIndividualCardHTML(person);
+      });
+      htmlContent += `</div></section>`;
+    });
 
     wrapper.insertAdjacentHTML('beforeend', htmlContent);
   } else {
@@ -689,6 +722,12 @@ export function initKeyIndividualsTask(
       wrapper.querySelectorAll('.person-card').forEach((card) => {
         const matches = filterVal === 'all' || card.dataset.entityType === filterVal;
         card.style.display = matches ? '' : 'none';
+      });
+      wrapper.querySelectorAll('.agent-group-block').forEach((groupBlock) => {
+        const hasVisibleCard = Array.from(groupBlock.querySelectorAll('.person-card')).some(
+          (card) => card.style.display !== 'none',
+        );
+        groupBlock.style.display = hasVisibleCard ? '' : 'none';
       });
     };
     wrapper.querySelectorAll('.agent-filter-pill').forEach((btn) => {

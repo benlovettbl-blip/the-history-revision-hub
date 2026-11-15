@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="vph-title vph-desc">
+  <title id="vph-title">Victorian Government &amp; Public Health (1848–1875)</title>
+  <desc id="vph-desc">Heraldic civic emblem for Victorian Government and Public Health reform (1848 and 1875 Public Health Acts), combining the Westminster Parliamentary portcullis, Sir Joseph Bazalgette's Portland-cement brick interceptor sewer arch, and clean municipal water waves.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 800; letter-spacing: 1.7px; fill: #1e3a8a; }
+      .title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 15.5px; font-weight: 700; fill: #0f172a; }
+      .motto { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1.3px; fill: #fef3c7; }
+      .sub-pill { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.3px; font-weight: 800; letter-spacing: 0.9px; fill: #0369a1; }
+    ]]></style>
+    <linearGradient id="civicBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="navyShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="60%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="goldCivic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="55%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="vphDrop" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#1e3a8a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Museum Plaque Base -->
+  <rect x="8" y="8" width="384" height="384" rx="22" fill="url(#civicBg)" stroke="#bfdbfe" stroke-width="2"/>
+  <rect x="18" y="18" width="364" height="364" rx="16" fill="none" stroke="#1e3a8a" stroke-width="1.2" stroke-opacity="0.35"/>
+
+  <!-- Top Era Overline -->
+  <text x="200" y="42" text-anchor="middle" class="kicker">FROM LAISSEZ-FAIRE TO COMPULSION · 1848–1875</text>
+
+  <!-- Central Civic Escutcheon -->
+  <g filter="url(#vphDrop)">
+    <path d="M 98 62 L 302 62 L 302 194 C 302 252 248 285 200 302 C 152 285 98 252 98 194 Z" fill="url(#navyShield)" stroke="url(#goldCivic)" stroke-width="3.5"/>
+    <path d="M 110 74 L 290 74 L 290 192 C 290 242 242 272 200 288 C 158 272 110 242 110 192 Z" fill="none" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- Upper Crest Motif: Westminster Parliamentary Portcullis and Chains -->
+  <g transform="translate(200, 114)">
+    <!-- Portcullis Grid -->
+    <g stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round">
+      <line x1="-26" y1="-22" x2="-26" y2="20"/>
+      <line x1="-13" y1="-22" x2="-13" y2="20"/>
+      <line x1="0" y1="-22" x2="0" y2="20"/>
+      <line x1="13" y1="-22" x2="13" y2="20"/>
+      <line x1="26" y1="-22" x2="26" y2="20"/>
+      <line x1="-32" y1="-16" x2="32" y2="-16"/>
+      <line x1="-32" y1="-4" x2="32" y2="-4"/>
+      <line x1="-32" y1="8" x2="32" y2="8"/>
+    </g>
+    <!-- Portcullis Spikes -->
+    <g fill="#fde68a">
+      <polygon points="-29,20 -23,20 -26,27"/><polygon points="-16,20 -10,20 -13,27"/>
+      <polygon points="-3,20 3,20 0,27"/><polygon points="10,20 16,20 13,27"/>
+      <polygon points="23,20 29,20 26,27"/>
+    </g>
+    <!-- Side Chains -->
+    <circle cx="-36" cy="-12" r="3.5" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <circle cx="-36" cy="-3" r="3.5" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <circle cx="-36" cy="6" r="3.5" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <circle cx="36" cy="-12" r="3.5" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <circle cx="36" cy="-3" r="3.5" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <circle cx="36" cy="6" r="3.5" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+  </g>
+
+  <!-- Lower Crest Motif: Bazalgette Brick Interceptor Sewer Arch and Clean Water -->
+  <g transform="translate(200, 212)">
+    <!-- Outer Brick Voussoir Arch -->
+    <path d="M -64 30 A 64 64 0 0 1 64 30 L 46 30 A 46 46 0 0 0 -46 30 Z" fill="#b45309" stroke="#fde68a" stroke-width="1.8"/>
+    <!-- Radial Brick Mortar Joints -->
+    <g stroke="#fef3c7" stroke-width="1.1">
+      <line x1="0" y1="-34" x2="0" y2="-16"/>
+      <line x1="-24" y1="-29" x2="-17" y2="-12"/>
+      <line x1="24" y1="-29" x2="17" y2="-12"/>
+      <line x1="-45" y1="-15" x2="-32" y2="-2"/>
+      <line x1="45" y1="-15" x2="32" y2="-2"/>
+      <line x1="-59" y1="6" x2="-42" y2="12"/>
+      <line x1="59" y1="6" x2="42" y2="12"/>
+    </g>
+    <!-- Tunnel Interior Vault -->
+    <path d="M -46 30 A 46 46 0 0 1 46 30 Z" fill="#0c4a6e"/>
+    <!-- Clean Water Droplet and Flowing Waves Inside Arch -->
+    <path d="M 0 -6 C 0 -6 -11 8 -11 15 A 11 11 0 0 0 11 15 C 11 8 0 -6 0 -6 Z" fill="#38bdf8" stroke="#ffffff" stroke-width="1.4"/>
+    <path d="M -52 38 Q -26 30 0 38 T 52 38" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -42 48 Q -21 40 0 48 T 42 48" fill="none" stroke="#bae6fd" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Statutory Ribbon -->
+  <rect x="64" y="294" width="272" height="28" rx="6" fill="#1e3a8a" stroke="#b45309" stroke-width="1.8"/>
+  <text x="200" y="312" text-anchor="middle" class="motto">PUBLIC HEALTH ACT · 1875</text>
+
+  <!-- Museum Title and Role Footer -->
+  <text x="200" y="346" text-anchor="middle" class="title">Victorian Public Health Reform</text>
+  <rect x="62" y="356" width="276" height="20" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1"/>
+  <text x="200" y="370" text-anchor="middle" class="sub-pill">BAZALGETTE SEWERS · CLEAN WATER · LAW</text>
+</svg>

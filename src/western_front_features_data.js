@@ -244,7 +244,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
       text: 'Consisted of multiple parallel lines of trenches: the frontline firing trench, support trench, and reserve trench, all interconnected by perpendicular communication trenches.',
     },
     feature2: {
-      heading: 'Standardized Dimensions and Firing Features',
+      heading: 'Standardised Dimensions and Firing Features',
       text: 'Typically dug 2 to 2.5 metres deep, featuring a raised fire step for shooting, a sandbagged parapet at the front, and a parados at the rear to protect from explosive blasts.',
     },
     keywords: [
@@ -292,7 +292,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
     },
     feature2: {
       heading: 'Reserve Line Depth for Major Counter-Attacks',
-      text: 'Reserve trenches were positioned hundreds of metres further back to assemble reserve battalions capable of launching organized counter-offensives.',
+      text: 'Reserve trenches were positioned hundreds of metres further back to assemble reserve battalions capable of launching organised counter-offensives.',
     },
     keywords: ['support trench', 'reserve', '100m', 'reinforcement', 'counter-attack', 'retreat'],
   },
@@ -353,7 +353,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
     category: 'Conditions & Battlefield Trauma',
     question: 'Describe one feature of gas gangrene.',
     feature1: {
-      heading: 'Bacterial Infection from Heavily Fertilized French Soil',
+      heading: 'Bacterial Infection from Heavily Fertilised French Soil',
       text: 'Intensively farmed French fields contained anaerobic Clostridium bacteria that entered wounds on dirty uniform fragments, producing gas that destroyed surrounding muscle tissue.',
     },
     feature2: {
@@ -363,7 +363,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
     keywords: [
       'gas gangrene',
       'clostridium',
-      'fertilizer',
+      'fertiliser', 'fertilizer',
       'soil',
       'carrel-dakin',
       'antiseptic',
@@ -575,7 +575,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
     },
     feature2: {
       heading: 'Massive Wartime Expansion',
-      text: 'Expanded exponentially from 9,000 personnel in 1914 to over 113,000 by 1918 to manage the unprecedented scale of industrialized combat casualties.',
+      text: 'Expanded exponentially from 9,000 personnel in 1914 to over 113,000 by 1918 to manage the unprecedented scale of industrialised combat casualties.',
     },
     keywords: [
       'ramc',
@@ -759,7 +759,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
     },
     feature2: {
       heading: 'Triage Determines Speed and Route of Transit',
-      text: 'Utilized triage at every stage to prioritize immediate surgical cases and avoid clogging forward aid posts, keeping soldiers moving towards appropriate medical facilities.',
+      text: 'Utilised triage at every stage to prioritise immediate surgical cases and avoid clogging forward aid posts, keeping soldiers moving towards appropriate medical facilities.',
     },
     keywords: [
       'chain of evacuation',
@@ -875,7 +875,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
     category: 'Surgery & Medical Innovations',
     question: 'Describe one feature of the Thomas Splint.',
     feature1: {
-      heading: 'Longitudinal Traction Stabilized Broken Femurs',
+      heading: 'Longitudinal Traction Stabilised Broken Femurs',
       text: 'Designed by Hugh Owen Thomas, the metal traction splint pulled the fractured leg lengthways, stopping jagged broken femur bones from grinding and severing the femoral artery.',
     },
     feature2: {
@@ -900,7 +900,7 @@ export const WESTERN_FRONT_FEATURES_DATABASE = [
     question: 'Describe one feature of brain surgery on the Western Front.',
     feature1: {
       heading: 'Shift from Hopeless Triage to Active Intervention',
-      text: 'In 1914, head wounds were largely deemed fatal and left untreated; by 1916, specialized neurosurgical stations were established to operate directly at selected CCSs.',
+      text: 'In 1914, head wounds were largely deemed fatal and left untreated; by 1916, specialised neurosurgical stations were established to operate directly at selected CCSs.',
     },
     feature2: {
       heading: "Harvey Cushing's Magnet and Local Anaesthesia",

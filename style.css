@@ -13615,10 +13615,63 @@ details.oral-hinge-strip[open] .hinge-caret {
   gap: 12px;
 }
 
-.oral-hinge-expanded-prompt {
+.oral-hinge-prompt-col {
   flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.oral-hinge-phase-pill {
+  display: inline-flex;
+  align-self: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
+
+.oral-hinge-phase-pill > span {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+details.oral-hinge-strip:not(.is-revealed):not(.is-counting-down):not(.is-timer-finished) .oral-hinge-phase-pill .phase-lbl-talk {
+  display: inline-flex;
+  background: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+details.oral-hinge-strip.is-counting-down:not(.is-revealed) .oral-hinge-phase-pill .phase-lbl-live {
+  display: inline-flex;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+details.oral-hinge-strip.is-timer-finished:not(.is-revealed) .oral-hinge-phase-pill .phase-lbl-timesup {
+  display: inline-flex;
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-phase-pill .phase-lbl-revealed {
+  display: inline-flex;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.oral-hinge-expanded-prompt {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.02rem;
+  font-size: 1.04rem;
   font-weight: 700;
   color: #0f172a;
   line-height: 1.45;
@@ -13653,6 +13706,11 @@ details.oral-hinge-strip[open] .hinge-caret {
   border-color: #0369a1;
 }
 
+.oral-hinge-timer-btn.is-running,
+.oral-hinge-timer-btn.is-finished {
+  color: #ffffff !important;
+}
+
 .oral-hinge-timer-btn:hover {
   filter: brightness(0.96);
 }
@@ -13667,6 +13725,14 @@ details.oral-hinge-strip[open] .hinge-caret {
   gap: 10px;
 }
 
+.oral-hinge-scale-hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .oral-hinge-scale-title {
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
@@ -13677,6 +13743,32 @@ details.oral-hinge-strip[open] .hinge-caret {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.oral-hinge-lock-chip {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.69rem;
+  font-weight: 700;
+}
+
+.oral-hinge-lock-chip > span {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+details.oral-hinge-strip:not(.is-revealed) .oral-hinge-lock-chip .lock-lbl-hidden {
+  display: inline-flex;
+  background: #e2e8f0;
+  color: #475569;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-lock-chip .lock-lbl-shown {
+  display: inline-flex;
+  background: #dcfce7;
+  color: #166534;
 }
 
 .oral-hinge-scale-grid {
@@ -13699,20 +13791,88 @@ details.oral-hinge-strip[open] .hinge-caret {
   padding: 10px 12px;
 }
 
+.oral-hinge-side.side-a {
+  border-top-color: #0284c7;
+}
+
+.oral-hinge-side.side-b {
+  border-top-color: #4f46e5;
+}
+
 .oral-hinge-side-hdr {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 6px;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-side-hdr {
+  margin-bottom: 7px;
+}
+
+.oral-hinge-side-title-group {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.oral-hinge-corner-kicker {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #e0f2fe;
+  color: #0369a1;
+  flex-shrink: 0;
+}
+
+.oral-hinge-side.side-b .oral-hinge-corner-kicker {
+  background: #e0e7ff;
+  color: #4338ca;
 }
 
 .oral-hinge-actor {
   font-family: 'Inter', sans-serif;
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 800;
   color: #0f172a;
+}
+
+.oral-hinge-think-cue {
+  margin: 5px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-think-cue {
+  display: none;
+}
+
+details.oral-hinge-strip:not(.is-revealed) .oral-hinge-reveal-item {
+  display: none !important;
+}
+
+@keyframes oralHingeRevealIn {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-reveal-item {
+  animation: oralHingeRevealIn 0.2s ease-out;
 }
 
 .oral-hinge-tag {
@@ -13740,14 +13900,123 @@ details.oral-hinge-strip[open] .hinge-caret {
 }
 
 .oral-hinge-pivot {
-  background: #ffffff;
-  border: 1px dashed #94a3b8;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-left: 4px solid #16a34a;
   border-radius: 6px;
-  padding: 8px 12px;
+  padding: 9px 12px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.83rem;
+  font-size: 0.84rem;
+  color: #14532d;
+  line-height: 1.5;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+}
+
+.oral-hinge-pivot-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #166534;
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.oral-hinge-pivot-text {
   color: #1e293b;
-  line-height: 1.45;
+  flex: 1 1 260px;
+}
+
+.oral-hinge-reveal-bar {
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+.oral-hinge-reveal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  border: 1.5px solid #0f172a;
+  border-radius: 7px;
+  padding: 8px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.1);
+}
+
+.oral-hinge-reveal-btn:hover {
+  background: #1e293b;
+  border-color: #1e293b;
+  transform: translateY(-1px);
+}
+
+.oral-hinge-reveal-btn .reveal-lbl-hide,
+.oral-hinge-reveal-btn .reveal-lbl-nudge {
+  display: none;
+}
+
+.oral-hinge-reveal-btn .reveal-lbl-show {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+details.oral-hinge-strip.is-timer-finished:not(.is-revealed) .oral-hinge-reveal-btn {
+  background: #b45309;
+  border-color: #92400e;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.28);
+}
+
+details.oral-hinge-strip.is-timer-finished:not(.is-revealed) .oral-hinge-reveal-btn .reveal-lbl-nudge {
+  display: inline-flex;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-reveal-btn {
+  background: #ffffff;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  box-shadow: none;
+  padding: 6px 13px;
+  font-size: 0.75rem;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-reveal-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  transform: none;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-reveal-btn .reveal-lbl-show,
+details.oral-hinge-strip.is-revealed .oral-hinge-reveal-btn .reveal-lbl-nudge {
+  display: none;
+}
+
+details.oral-hinge-strip.is-revealed .oral-hinge-reveal-btn .reveal-lbl-hide {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .oral-hinge-scaffolds {
@@ -13778,6 +14047,13 @@ details.oral-hinge-strip[open] .hinge-caret {
   letter-spacing: 0.45px;
   color: #475569;
   margin-bottom: 5px;
+}
+
+.oral-hinge-subhdr-note {
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #0369a1;
 }
 
 .oral-hinge-starters ul {

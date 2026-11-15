@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="ramc-title ramc-desc">
+  <title id="ramc-title">RAMC &amp; FANY Medical Services (1914–1918)</title>
+  <desc id="ramc-desc">Heraldic military-medical museum emblem for the Royal Army Medical Corps (RAMC) and First Aid Nursing Yeomanry (FANY) on the Western Front (1914-1918), featuring the Rod of Asclepius within a golden laurel wreath, a Red Cross ambulance medallion, and the motto IN ARDUIS FIDELIS.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 800; letter-spacing: 1.7px; fill: #7f1d1d; }
+      .title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 16px; font-weight: 700; fill: #1e293b; }
+      .motto { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 11px; font-weight: 700; letter-spacing: 1.8px; fill: #fde68a; }
+      .sub-pill { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.3px; font-weight: 800; letter-spacing: 0.9px; fill: #7f1d1d; }
+    ]]></style>
+    <linearGradient id="fieldBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdfbf7"/>
+      <stop offset="100%" stop-color="#f5efe6"/>
+    </linearGradient>
+    <linearGradient id="crimsonCore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="55%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+    <linearGradient id="goldWreath" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="55%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="medDrop" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#1e293b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Museum Plaque Base -->
+  <rect x="8" y="8" width="384" height="384" rx="22" fill="url(#fieldBg)" stroke="#d6cbb5" stroke-width="2"/>
+  <rect x="18" y="18" width="364" height="364" rx="16" fill="none" stroke="#7f1d1d" stroke-width="1.2" stroke-opacity="0.4"/>
+
+  <!-- Top Era Overline -->
+  <text x="200" y="42" text-anchor="middle" class="kicker">WESTERN FRONT EVACUATION · 1914–1918</text>
+
+  <!-- Central Regimental Roundel and Shield -->
+  <g filter="url(#medDrop)">
+    <circle cx="200" cy="176" r="106" fill="#1e293b" stroke="url(#goldWreath)" stroke-width="3.8"/>
+    <circle cx="200" cy="176" r="92" fill="url(#crimsonCore)" stroke="#fbbf24" stroke-width="1.8"/>
+  </g>
+
+  <!-- Golden Laurel Wreath Branches (Left and Right Arcs) -->
+  <g fill="none" stroke="#fbbf24" stroke-width="2.4" stroke-linecap="round">
+    <path d="M 192 252 C 138 242 118 196 128 136 C 134 114 150 98 168 92"/>
+    <path d="M 208 252 C 262 242 282 196 272 136 C 266 114 250 98 232 92"/>
+  </g>
+  <!-- Laurel Leaf Pairs -->
+  <g fill="#fde68a" stroke="#b45309" stroke-width="0.8">
+    <ellipse cx="132" cy="196" rx="9" ry="4.2" transform="rotate(-35 132 196)"/>
+    <ellipse cx="126" cy="168" rx="9" ry="4.2" transform="rotate(-15 126 168)"/>
+    <ellipse cx="132" cy="140" rx="9" ry="4.2" transform="rotate(15 132 140)"/>
+    <ellipse cx="146" cy="114" rx="9" ry="4.2" transform="rotate(38 146 114)"/>
+    <ellipse cx="268" cy="196" rx="9" ry="4.2" transform="rotate(35 268 196)"/>
+    <ellipse cx="274" cy="168" rx="9" ry="4.2" transform="rotate(15 274 168)"/>
+    <ellipse cx="268" cy="140" rx="9" ry="4.2" transform="rotate(-15 268 140)"/>
+    <ellipse cx="254" cy="114" rx="9" ry="4.2" transform="rotate(-38 254 114)"/>
+  </g>
+
+  <!-- Rod of Asclepius (Single Serpent Entwined Around Knotted Staff — True Medical Symbol) -->
+  <g transform="translate(200, 166)">
+    <!-- Vertical Golden Staff -->
+    <line x1="0" y1="-64" x2="0" y2="66" stroke="url(#goldWreath)" stroke-width="5.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-67" r="5.5" fill="#fde68a" stroke="#92400e" stroke-width="1.2"/>
+    <!-- Entwined Serpent -->
+    <path d="M -8 52 C -24 38, 24 24, 14 8 C 4 -6, -24 -12, -14 -28 C -4 -42, 20 -44, 8 -56" fill="none" stroke="#fde68a" stroke-width="4.2" stroke-linecap="round"/>
+    <circle cx="8" cy="-56" r="3.5" fill="#fde68a"/>
+  </g>
+
+  <!-- Geneva Red Cross FANY Ambulance Badge at Base of Wreath (cx=200, cy=252) -->
+  <g transform="translate(200, 252)">
+    <circle cx="0" cy="0" r="24" fill="#ffffff" stroke="#1e293b" stroke-width="2.2"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#dc2626" stroke-width="1"/>
+    <rect x="-5" y="-14" width="10" height="28" rx="1.5" fill="#dc2626"/>
+    <rect x="-14" y="-5" width="28" height="10" rx="1.5" fill="#dc2626"/>
+  </g>
+
+  <!-- Regimental Motto Ribbon: IN ARDUIS FIDELIS ("Faithful in Adversity") -->
+  <rect x="66" y="294" width="268" height="28" rx="6" fill="#1e293b" stroke="#b45309" stroke-width="1.8"/>
+  <text x="200" y="312" text-anchor="middle" class="motto">IN ARDUIS FIDELIS</text>
+
+  <!-- Museum Title and Role Footer -->
+  <text x="200" y="346" text-anchor="middle" class="title">RAMC &amp; FANY Medical Services</text>
+  <rect x="56" y="356" width="288" height="20" rx="10" fill="#fef2f2" stroke="#991b1b" stroke-width="1"/>
+  <text x="200" y="370" text-anchor="middle" class="sub-pill">TRIAGE · MOTOR AMBULANCES · SURGERY</text>
+</svg>

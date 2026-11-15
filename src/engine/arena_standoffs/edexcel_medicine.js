@@ -296,7 +296,7 @@ export const EDEXCEL_MEDICINE_STANDOFFS = {
       title: "The DNA Double Helix & Genetic Blueprint of Disease",
       objective: "Argue that discovering DNA's structure and mapping the Human Genome reveals the genetic root causes of hereditary illnesses, paving the way for gene therapy and personalized medicine.",
       starter: "&ldquo;Deciphering the double helix revealed the fundamental code of human life; understanding genetic mutations enables targeted screening and cures rather than guessing symptoms because...&rdquo;",
-      keyTerms: ["Photograph 51 (Franklin)", "Double Helix (1953)", "Human Genome Project (2000)", "Gene Therapy"]
+      keyTerms: ["Photograph 51 (Franklin)", "Double Helix (1953)", "Human Genome Project (1990–2003)", "Gene Therapy"]
     },
     roleB: {
       name: "Clinical Bioethicists & Practical Sceptics",
@@ -330,7 +330,7 @@ export const EDEXCEL_MEDICINE_STANDOFFS = {
     roleA: {
       name: "Aneurin Bevan (Minister of Health)",
       title: "Free Healthcare at the Point of Need: The NHS",
-      objective: "Argue that healthcare is a fundamental human right; nationalizing hospitals and funding the NHS through taxation ensures nobody is turned away because they are too poor to pay.",
+      objective: "Argue that healthcare is a fundamental human right; nationalising hospitals and funding the NHS through taxation ensures nobody is turned away because they are too poor to pay.",
       starter: "&ldquo;No society can legitimately call itself civilised if a sick person is denied medical aid through lack of means; healthcare must be free to all at the point of delivery because...&rdquo;",
       keyTerms: ["Aneurin Bevan", "National Health Service (1948)", "Free at Point of Need", "Beveridge Report (1942)"]
     },
@@ -389,7 +389,7 @@ export const EDEXCEL_MEDICINE_STANDOFFS = {
       name: "Royal Engineers & Trench Construction Officers",
       title: "Three-Tier Trench System & Under-Salient Mining (Hill 60)",
       objective: "Defend British trench engineering (front-line, support, reserve trenches linked by communication traverses and duckboards) and underground offensive mines at Messines Ridge.",
-      starter: "&ldquo;Our zigzag trenches with sandbags, duckboards, and deep traverses localize blast damage and protect infantry from lethal enfilade fire because...&rdquo;",
+      starter: "&ldquo;Our zigzag trenches with sandbags, duckboards, and deep traverses localise blast damage and protect infantry from lethal enfilade fire because...&rdquo;",
       keyTerms: ["Front Line, Support & Reserve", "Traverses & Duckboards", "Ypres Salient", "Tunnelling & Hill 60"]
     },
     roleB: {
@@ -419,10 +419,10 @@ export const EDEXCEL_MEDICINE_STANDOFFS = {
     }
   },
   lesson_5_3: {
-    title: "RAMC Chemical Defense Pioneers vs. Weapon Innovation",
+    title: "RAMC Chemical Defence Pioneers vs. Weapon Innovation",
     subtitle: "Battlefield Trauma: Artillery Shrapnel, Gas Gangrene & Chemical Warfare (1914–1918)",
     roleA: {
-      name: "RAMC Chemical Defense & Brodie Helmet Designers",
+      name: "RAMC Chemical Defence & Brodie Helmet Designers",
       title: "Protective Countermeasures: The Small Box Respirator & Steel Helmets",
       objective: "Argue that introducing the steel Brodie helmet in 1915 reduced fatal head wounds by 80%, while the 1916 Small Box Respirator completely neutralised German chlorine, phosgene, and mustard gas.",
       starter: "&ldquo;The Brodie steel helmet and the Small Box Respirator saved tens of thousands of lives by shielding soldiers from shrapnel and lethal poison gas because...&rdquo;",
@@ -450,8 +450,8 @@ export const EDEXCEL_MEDICINE_STANDOFFS = {
       name: "Stretcher Bearers & Frontline Combat Troops",
       title: "The Deadly Bottleneck: Mud, Shell Fire & Stretcher Exhaustion",
       objective: "Argue that in battles like Passchendaele, it took six men up to 12 hours to carry a single stretcher through knee-deep mud under constant sniper and shell fire, causing men to bleed to death before reaching the RAP.",
-      starter: "&ldquo;Carrying a single stretcher through knee-deep mud under shellfire takes six exhausted men over ten hours; men died of hemorrhage and shock long before ever reaching a doctor because...&rdquo;",
-      keyTerms: ["Stretcher-Bearer Peril", "12-Hour Evacuation Delay", "Passchendaele Mud Traps", "Shock and Hemorrhage"]
+      starter: "&ldquo;Carrying a single stretcher through knee-deep mud under shellfire takes six exhausted men over ten hours; men died of haemorrhage and shock long before ever reaching a doctor because...&rdquo;",
+      keyTerms: ["Stretcher-Bearer Peril", "12-Hour Evacuation Delay", "Passchendaele Mud Traps", "Shock and Haemorrhage"]
     }
   },
   lesson_5_5: {
@@ -460,12 +460,12 @@ export const EDEXCEL_MEDICINE_STANDOFFS = {
     roleA: {
       name: "Sir Robert Jones & The Thomas Splint Advocates",
       title: "The Thomas Splint: Reducing Femur Mortality from 80% to 20%",
-      objective: "Argue that stabilizing fractured thigh bones with the Thomas Splint prevents jagged bone ends tearing femoral arteries and muscles, dropping compound fracture mortality from 80% to under 20%.",
+      objective: "Argue that stabilising fractured thigh bones with the Thomas Splint prevents jagged bone ends tearing femoral arteries and muscles, dropping compound fracture mortality from 80% to under 20%.",
       starter: "&ldquo;The Thomas Splint pulled broken thigh bones straight and held them rigid, reducing compound femur mortality from 80% to 20% by preventing internal bleeding and shock because...&rdquo;",
-      keyTerms: ["Thomas Splint (1916)", "Mortality 80% to 20%", "Preventing Shock & Hemorrhage", "Compound Femur Fractures"]
+      keyTerms: ["Thomas Splint (1916)", "Mortality 80% to 20%", "Preventing Shock & Haemorrhage", "Compound Femur Fractures"]
     },
     roleB: {
-      name: "Overwhelmed Field Surgeons & Carrel-Dakin Skeptics",
+      name: "Overwhelmed Field Surgeons & Carrel-Dakin Sceptics",
       title: "Emergency Amputation vs. Time-Consuming Chemical Flushing",
       objective: "Argue that when hundreds of casualties arrive simultaneously at a CCS, surgeons cannot spend hours debriding and setting splints; rapid amputation is the only way to save a life from gangrene.",
       starter: "&ldquo;When 500 critically wounded men arrive at a CCS in four hours, a surgeon must amputate rotting limbs in ten minutes; delicate splinting and chemical flushes are a luxury combat does not allow because...&rdquo;",

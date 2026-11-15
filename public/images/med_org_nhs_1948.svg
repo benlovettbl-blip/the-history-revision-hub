@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="nhs-title nhs-desc">
+  <title id="nhs-title">The National Health Service (Founded 5 July 1948)</title>
+  <desc id="nhs-desc">Clean heritage 1948 universal healthcare museum emblem for the British National Health Service (founded 5 July 1948 by Aneurin Bevan following the 1942 Beveridge Report), featuring an NHS-blue shield, hospital cross, clinical stethoscope, and the banner FREE AT THE POINT OF DELIVERY 1948.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 800; letter-spacing: 1.7px; fill: #005eb8; }
+      .title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 15.8px; font-weight: 700; fill: #0f172a; }
+      .motto { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.6px; font-weight: 800; letter-spacing: 1.1px; fill: #ffffff; }
+      .sub-pill { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.3px; font-weight: 800; letter-spacing: 0.9px; fill: #005eb8; }
+      .crest-yr { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #ffffff; }
+    ]]></style>
+    <linearGradient id="nhsCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f7ff"/>
+    </linearGradient>
+    <linearGradient id="nhsBlueGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#005eb8"/>
+      <stop offset="55%" stop-color="#004b93"/>
+      <stop offset="100%" stop-color="#003087"/>
+    </linearGradient>
+    <filter id="nhsShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#003087" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Crisp Museum Plaque Base -->
+  <rect x="8" y="8" width="384" height="384" rx="22" fill="url(#nhsCard)" stroke="#bfdbfe" stroke-width="2"/>
+  <rect x="18" y="18" width="364" height="364" rx="16" fill="none" stroke="#005eb8" stroke-width="1.2" stroke-opacity="0.35"/>
+
+  <!-- Top Era Overline -->
+  <text x="200" y="42" text-anchor="middle" class="kicker">UNIVERSAL WELFARE STATE · 5 JULY 1948</text>
+
+  <!-- Heritage Universal Healthcare Shield -->
+  <g filter="url(#nhsShadow)">
+    <path d="M 98 60 L 302 60 L 302 192 C 302 250 248 283 200 300 C 152 283 98 250 98 192 Z" fill="#0f172a" stroke="#005eb8" stroke-width="3.2"/>
+    <path d="M 108 70 L 292 70 L 292 190 C 292 242 242 271 200 287 C 158 271 108 242 108 190 Z" fill="url(#nhsBlueGrad)" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <!-- Shield Header Date Ribbon -->
+  <text x="200" y="95" text-anchor="middle" class="crest-yr">CRADLE TO GRAVE</text>
+  <line x1="134" y1="104" x2="266" y2="104" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.7"/>
+
+  <!-- Central White Hospital and GP Cross -->
+  <g transform="translate(200, 162)">
+    <circle cx="0" cy="0" r="44" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="1.5"/>
+    <rect x="-12" y="-32" width="24" height="64" rx="4" fill="#ffffff"/>
+    <rect x="-32" y="-12" width="64" height="24" rx="4" fill="#ffffff"/>
+    <!-- Inner NHS Blue Accent Cross -->
+    <rect x="-5" y="-22" width="10" height="44" rx="2" fill="#005eb8"/>
+    <rect x="-22" y="-5" width="44" height="10" rx="2" fill="#005eb8"/>
+  </g>
+
+  <!-- Stethoscope Tubing Looping Gracefully Around Cross and Down to Diaphragm -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round">
+    <!-- Binaural Earpieces at Upper Sides -->
+    <path d="M 142 126 C 124 148, 126 198, 168 228 C 184 240, 196 248, 200 260" stroke-width="4"/>
+    <path d="M 258 126 C 276 148, 274 198, 232 228 C 216 240, 204 248, 200 260" stroke-width="4"/>
+    <circle cx="144" cy="124" r="3.8" fill="#dbeafe" stroke="#ffffff" stroke-width="1.2"/>
+    <circle cx="256" cy="124" r="3.8" fill="#dbeafe" stroke="#ffffff" stroke-width="1.2"/>
+  </g>
+  <!-- Stethoscope Chestpiece Diaphragm -->
+  <circle cx="200" cy="256" r="13" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <circle cx="200" cy="256" r="6.5" fill="#005eb8"/>
+
+  <!-- Motto Banner: FREE AT THE POINT OF DELIVERY · 1948 -->
+  <rect x="44" y="294" width="312" height="28" rx="6" fill="#005eb8" stroke="#0f172a" stroke-width="1.8"/>
+  <text x="200" y="312" text-anchor="middle" class="motto">FREE AT THE POINT OF DELIVERY · 1948</text>
+
+  <!-- Museum Title and Role Footer -->
+  <text x="200" y="346" text-anchor="middle" class="title">The National Health Service (1948)</text>
+  <rect x="48" y="356" width="304" height="20" rx="10" fill="#eff6ff" stroke="#005eb8" stroke-width="1"/>
+  <text x="200" y="370" text-anchor="middle" class="sub-pill">2,688 HOSPITALS · GP CARE · TAX-FUNDED</text>
+</svg>

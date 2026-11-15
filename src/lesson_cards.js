@@ -218,49 +218,54 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       periods = [
         {
           id: 'medieval',
-          title: 'Medieval (c1250-c1500)',
+          title: 'Medieval (c1250–c1500)',
           prefix: 'lesson_1_',
           gradient: 'linear-gradient(135deg, #7f1d1d, #dc2626)',
           border: '#dc2626',
           image: '/images/banner_medicine_medieval.jpg',
+          bgPos: 'center 42%',
           enquiry: 'How much did medicine really change in Medieval England?',
         },
         {
           id: 'renaissance',
-          title: 'Renaissance (c1500-c1700)',
+          title: 'Renaissance (c1500–c1700)',
           prefix: 'lesson_2_',
           gradient: 'linear-gradient(135deg, #064e3b, #059669)',
           border: '#059669',
-          image: '/images/banner_medicine_renaissance.jpg',
+          image: '/images/med_era_banner_renaissance_tulp.jpg',
+          bgPos: 'center 35%',
           enquiry: 'Why did the Medical Renaissance have so little impact on everyday treatments?',
         },
         {
           id: '18th_19th',
-          title: '18th & 19th C (c1700-c1900)',
+          title: '18th & 19th C (c1700–c1900)',
           prefix: 'lesson_3_',
           gradient: 'linear-gradient(135deg, #475569, #d97706)',
           border: '#d97706',
           image: '/images/banner_medicine_18th_19th.jpg',
+          bgPos: 'center 48%',
           enquiry:
             'How did the Industrial Revolution transform the understanding and prevention of disease?',
         },
         {
           id: 'modern',
-          title: 'Modern (c1900-present)',
+          title: 'Modern (c1900–present)',
           prefix: 'lesson_4_',
           gradient: 'linear-gradient(135deg, #0c4a6e, #0284c7)',
           border: '#0284c7',
           image: '/images/banner_medicine_modern.jpg',
+          bgPos: 'center 32%',
           enquiry:
-            'How did technology and government intervention revolutionize 20th-century medicine?',
+            'How did technology and government intervention revolutionise 20th-century medicine?',
         },
         {
           id: 'western_front',
-          title: 'Western Front',
+          title: 'Western Front (1914–1918)',
           prefix: 'lesson_5_',
           gradient: 'linear-gradient(135deg, #422006, #65a30d)',
           border: '#65a30d',
           image: '/images/banner_medicine_western_front.jpg',
+          bgPos: 'center 42%',
           enquiry:
             'How did the horrific conditions of trench warfare drive rapid medical innovation?',
         },
@@ -425,10 +430,14 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
     }
 
     periods.forEach((p) => {
-      // Determine workbook links for this topic
+      // Determine textbook & workbook links for this topic/era
+      let pdfTextbookUrl = '';
+      let digitalTextbookUrl = '';
       let pdfWorkbookUrl = '';
       let digitalWorkbookUrl = '';
       if (currentUnitId === 'edexcel_medicine') {
+        pdfTextbookUrl = `/pdfs/edexcel_medicine_textbook_${p.id}.pdf`;
+        digitalTextbookUrl = `/units/edexcel_medicine/textbook_${p.id}_PUBLISHER.html`;
         pdfWorkbookUrl = `/pdfs/edexcel_medicine_pupil_workbook_${p.id}.pdf`;
         digitalWorkbookUrl = `/units/edexcel_medicine/pupil_workbook_${p.id}.html`;
       } else if (currentUnitId === 'cme_new') {
@@ -467,10 +476,19 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             <p class="premium-banner-enquiry">${p.enquiry}</p>
           </div>
           ${
-            pdfWorkbookUrl || (p.infographics && p.infographics.length > 0)
+            pdfTextbookUrl || pdfWorkbookUrl || (p.infographics && p.infographics.length > 0)
               ? `
           <div class="premium-banner-actions" style="position: relative; z-index: 5; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-left: auto;">
             ${infographicBtns}
+            ${
+              pdfTextbookUrl
+                ? `
+            <a href="${pdfTextbookUrl}" target="_blank" download="${pdfTextbookUrl.split('/').pop()}" class="btn-banner-textbook-pdf" onclick="if(window.openTeacherPrintPreview && '${digitalTextbookUrl}'){ event.preventDefault(); window.openTeacherPrintPreview('${digitalTextbookUrl}', '${(p.title || '').replace(/'/g, "\\'")} Master Textbook', '${pdfTextbookUrl}'); }" title="Open or download ${p.title} pure-narrative Master Textbook" style="text-decoration: none; background: rgba(15, 23, 42, 0.82); color: #ffffff; border: 1.5px solid rgba(147, 197, 253, 0.55); padding: 9px 14px; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 7px; backdrop-filter: blur(6px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.2s ease;" onmouseover="this.style.background='rgba(30,58,138,0.95)'; this.style.borderColor='#93c5fd';" onmouseout="this.style.background='rgba(15,23,42,0.82)'; this.style.borderColor='rgba(147,197,253,0.55)';">
+              <i class="fa-solid fa-book" style="color: #60a5fa; font-size: 0.95rem;"></i>
+              <span>Master Textbook</span>
+            </a>`
+                : ''
+            }
             ${
               pdfWorkbookUrl
                 ? `
@@ -557,11 +575,12 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               lesson.banner_position ||
               'center';
 
-            if (imgUrl.includes('edward_jenner') || lesson.id === 'lesson_3_2') {
+            if (imgUrl.includes('edward_jenner')) {
               cardPos = 'center 15%';
             } else if (imgUrl.includes('oslo_handshake') || lesson.id === 'lesson_11' || lesson.id === 'lesson_13') {
               cardPos = 'center 20%';
             }
+            cardPos = String(cardPos || 'center').replace(/\bcentre\b/gi, 'center');
 
             const useCoverFit = Boolean(lesson.card_image) || unitData?.id === 'ks2_ww2' || currentUnitId === 'ks2_ww2';
             topMediaHTML = `
@@ -619,15 +638,16 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                       const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(currentUnitId, lesson.id || index) : 0;
                       if (!cnt || cnt === 0) return '';
                       const items = typeof window !== 'undefined' && window.getLessonInfographicsSync ? window.getLessonInfographicsSync(currentUnitId, lesson.id || index) : [];
-                      const hasPoster = items && items.some(it => it.image && it.image.trim().length > 0);
-                      const hasInteractive = items && items.some(it => it.interactiveUrl);
-                      if (hasPoster) {
-                        const label = cnt > 1 ? `Infographics (${cnt})` : 'Infographic';
+                      const posterItems = Array.isArray(items) ? items.filter(it => it && it.image && it.image.trim().length > 0) : [];
+                      if (posterItems.length > 0) {
+                        const label = posterItems.length > 1 ? `Infographics (${posterItems.length})` : 'Infographic';
                         return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Visual Revision Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff';" onmouseout="this.style.background='#e0f2fe'; this.style.color='#0284c7';"><i class="fa-solid fa-chart-pie" style="font-size: 0.7rem;"></i> <span>${label}</span></button>`;
                       }
-                      if (hasInteractive) {
+                      const isKs2Card = currentUnitId === 'ks2_ww2' || String(currentUnitId || '').startsWith('ks2');
+                      if (isKs2Card && items && items.some(it => it.interactiveUrl)) {
                         return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}', { initialMode: 'interactive' });}" title="Open Interactive Presentation Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#f59e0b'; this.style.color='#000000';" onmouseout="this.style.background='#fef3c7'; this.style.color='#b45309';"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: 0.7rem; color: #d97706;"></i> <span>Interactive Mat</span></button>`;
                       }
+                      return '';
                     })()}
                   </div>
                   <h3 style="margin: 0 0 8px 0; color: #0f172a; font-size: 1.02rem; font-weight: 700; line-height: 1.35; font-family: 'Playfair Display', Georgia, serif;">
@@ -1195,13 +1215,14 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               : null) ||
             lesson.banner_position;
 
-          if (imgUrl.includes('edward_jenner') || lesson.id === 'lesson_3_2') {
+          if (imgUrl.includes('edward_jenner')) {
             cardPos = 'center 15%';
           } else if (imgUrl.includes('oslo_handshake') || lesson.id === 'lesson_13') {
             cardPos = 'center 20%';
           }
 
           if (!cardPos) cardPos = 'center center';
+          cardPos = String(cardPos).replace(/\bcentre\b/gi, 'center');
           const useCoverFit = Boolean(lesson.card_image) || isKs2UnitCards;
 
           topMediaHTML = `

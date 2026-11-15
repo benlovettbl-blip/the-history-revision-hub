@@ -608,19 +608,6 @@ function renderSpinePage(cfg) {
 
   const stagesHtml = stages
     .map((st, sIdx) => {
-      const bullets = st.bullets || (st.keywords ? st.keywords.slice(0, 3) : []);
-      const bulletsHtml = bullets
-        .map(
-          (b, idx) => `
-            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
-                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
-              </div>
-            </div>`,
-        )
-        .join('');
-
       const questionText = st.questionHeading || st.focusClue || st.title;
 
       return `
@@ -639,15 +626,8 @@ function renderSpinePage(cfg) {
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
+          <!-- Full-Width Ruled Note-Taking Lines (Trigger-Free Golden Standard) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
-            
-            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
-            <div class="stage-trigger-col" style="width: 26mm; flex-shrink: 0; background: #f8fafc; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
-              ${bulletsHtml}
-            </div>
-
-            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
             <div class="stage-writing-col">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -655,7 +635,6 @@ function renderSpinePage(cfg) {
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
-
           </div>
         </div>`;
     })

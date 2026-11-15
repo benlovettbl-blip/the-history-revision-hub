@@ -305,7 +305,7 @@ export async function renderDigitalReaderView(param, targetContainer = null) {
     if (parts[0] && TEXTBOOK_CATALOG[parts[0]]) {
       initialUnit = parts[0];
     }
-    if (parts[1] && (parts[1] === 'KT1' || parts[1] === 'KT2' || parts[1] === 'KT3')) {
+    if (parts[1] && TEXTBOOK_CATALOG[initialUnit]?.keyTopics?.[parts[1]]) {
       initialKT = parts[1];
     }
     if (parts[2] !== undefined && !isNaN(parseInt(parts[2], 10))) {
@@ -350,7 +350,7 @@ export async function renderDigitalReaderView(param, targetContainer = null) {
 
             <!-- Key Topic Selector Pills -->
             <div id="reader-topic-pills" style="display: flex; align-items: center; background: rgba(0, 0, 0, 0.35); padding: 2px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.08); gap: 3px;">
-              ${['KT1', 'KT2', 'KT3']
+              ${Object.keys(TEXTBOOK_CATALOG[currentReader.unitId]?.keyTopics || { KT1: 1, KT2: 1, KT3: 1 })
                 .map(
                   (kt) => `
                 <button type="button" data-kt="${kt}" class="reader-kt-pill" style="background: ${currentReader.ktId === kt ? '#0284c7' : 'transparent'}; color: ${currentReader.ktId === kt ? '#ffffff' : '#94a3b8'}; border: none; border-radius: 4px; padding: 3px 8px; font-size: 0.74rem; font-weight: 800; cursor: pointer; transition: all 0.15s ease;">

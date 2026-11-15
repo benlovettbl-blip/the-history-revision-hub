@@ -55,7 +55,7 @@ function generateQrSvg(url) {
 const quipList = [
   'Western Front Revision Hub • The History Department', // Page 1
   'If you think your walk to period 1 is rough, try carrying a 14-stone sergeant through 4 miles of knee-deep Flanders clay.', // Page 2
-  'Living Timeline complete: 4 years of static trench warfare, mud, and rapid medical innovation summarized in 6 chronological milestones.', // Page 3
+  'Living Timeline complete: 4 years of static trench warfare, mud, and rapid medical innovation summarised in 6 chronological milestones.', // Page 3
   'Welcome to Flanders: 500 square miles of fermented pig manure, liquid mud, and artillery with terrifying accuracy.', // Page 4
   'Trench drainage tip: If your duckboards are floating, you are no longer in an infantry trench; you are commanding a submarine.', // Page 5
   'Whale oil smells like dead fish and regrets, but it beats having your toes amputated by an RAMC surgeon with a bone-saw.', // Page 6
@@ -106,8 +106,15 @@ const wfConfigs = [
       'The British sector of the Western Front: theatre of war in Flanders and northern France; Ypres, Somme, Arras, Cambrai; trench system (frontline, support, reserve, communication trenches; saps); terrain, clay, water table, mud; underground systems at Arras (Thompson’s Cave).',
     sourceIndex: 0,
     sourceBadge: 'SOURCE A',
-    sourceSubtitle: 'Contemporary Aerial Reconnaissance • Royal Flying Corps',
-    sourceDate: '1917',
+    sourceSubtitle: 'Contemporary Aerial Reconnaissance • Flanders Sector',
+    sourceDate: '3 January 1918',
+    workbookSource: {
+      src: '/images/aerial_trench_ypres.jpg',
+      caption:
+        'Belgian Military Aviation vertical aerial reconnaissance photograph of the Flanders front ("Tranchée du Cimetière", 3 January 1918, altitude 1,500m), revealing zig-zagging communication trenches, traverses, and water-filled artillery shell craters across the Ypres sector.',
+      provenance:
+        'Belgian State Archives / Aviation Militaire Belge Aerial Reconnaissance Plate Z 2842 (3 January 1918).',
+    },
     q1Features: {
       a: {
         q: 'Describe one feature of the system of communication trenches on the Western Front.',
@@ -122,15 +129,15 @@ const wfConfigs = [
     examStem:
       'Study Source A. How useful is Source A for an enquiry into the defensive layout and tactical design of trench systems on the Western Front? Explain your answer, using Source A and your knowledge of the historical context. [8 marks]',
     provenanceClue:
-      'Consider the nature of an official military aerial reconnaissance photograph taken by the Royal Flying Corps in 1917. What does an overhead view reveal about traverses, fire-steps, and saps, and what ground-level medical and mud conditions does it omit?',
+      'Consider the nature of an official military aerial reconnaissance photograph taken over the Flanders sector in January 1918. What does an overhead view reveal about traverses, communication trenches, and shell craters, and what ground-level medical and mud conditions does it omit?',
     structureStrip: [
       {
         col: '1. CONTENT & UTILITY',
-        text: 'Explain how the aerial photograph clearly shows the zig-zag traverse design, communication lines, and support saps.',
+        text: 'Explain how the aerial photograph clearly shows the zig-zag traverse design, communication lines, and water-filled craters.',
       },
       {
         col: '2. PROVENANCE & MOTIVE',
-        text: 'Evaluate the RFC photographic intelligence: highly accurate for cartography, but taken from high altitude under combat conditions.',
+        text: 'Evaluate military aerial reconnaissance: highly accurate for tactical mapping, but taken from 1,500m altitude above ground level.',
       },
       {
         col: '3. CONTEXT & LIMITATIONS',
@@ -140,7 +147,7 @@ const wfConfigs = [
     connectives:
       'Source A is useful for an enquiry into this topic because... &bull; Specifically, the source reveals... &bull; In terms of provenance, considering the author and date... &bull; However, the utility is limited because... &bull; Therefore...',
     wordBank:
-      'Royal Flying Corps &bull; zig-zag traverses &bull; communication trench &bull; Ypres Salient &bull; Messines Ridge &bull; water table &bull; duckboards &bull; parapet &bull; parados &bull; fire-step',
+      'aerial reconnaissance &bull; zig-zag traverses &bull; communication trench &bull; Ypres Salient &bull; Messines Ridge &bull; water table &bull; duckboards &bull; parapet &bull; parados &bull; fire-step',
     timelineMission:
       'Open the Consolidate Station in the app and branch out KT5.1 on Pages 2–3: map Ypres mud and zig-zag traverses (left) against Thompson’s Cave at Arras (right).',
     leftPageQuip:
@@ -217,8 +224,15 @@ const wfConfigs = [
       'Ill health arising from the trench environment: trench foot (pathology, gangrene, prevention, whale oil, sock inspection); trench fever (body lice, Pediculus humanus, delousing stations, Serbian barrels); shell shock (symptoms, NYDN, rest treatment); dysentery (water chlorination, chloride of lime, latrines); underground shelter conditions.',
     sourceIndex: 0,
     sourceBadge: 'SOURCE A',
-    sourceSubtitle: 'Contemporary Photographic Evidence • Western Front',
+    sourceSubtitle: 'Contemporary Photographic Evidence • Somme Sector',
     sourceDate: 'July 1916',
+    workbookSource: {
+      src: '/images/cheshire_regiment_trench_opt.jpg',
+      caption:
+        'Soldiers of the 1st Battalion, Cheshire Regiment occupying a captured German trench at Ovillers-la-Boisselle during the Battle of the Somme (July 1916). A sentry stands watch while exhausted infantrymen sleep huddled in waterproof groundsheets on the damp trench floor.',
+      provenance:
+        'Official British War Photographer Second Lieutenant Ernest Brooks • Imperial War Museum (IWM Q 3990), July 1916.',
+    },
     q1Features: {
       a: {
         q: 'Describe one feature of the methods used to prevent trench foot on the Western Front.',
@@ -323,10 +337,17 @@ const wfConfigs = [
       'How did high-explosive artillery trauma and chemical poison gas transform surgical treatment?',
     specAnchor:
       'Wounds, injuries and diseases: high-explosive artillery shells, shrapnel fragments; infection (gas gangrene, Clostridium welchii, tetanus); head trauma and the Brodie helmet; chemical gas attacks (chlorine, phosgene, mustard gas) and respirators.',
-    sourceIndex: 1, // Source B is PH Anti-Gas Helmet
+    sourceIndex: 4, // Source E in JSON (PH Anti-Gas Helmet, Vickers Machine Gun Crew)
     sourceBadge: 'SOURCE B',
     sourceSubtitle: 'Contemporary Photographic Evidence • Machine Gun Corps',
     sourceDate: 'July 1916',
+    workbookSource: {
+      src: '/images/british_ph_gas_helmet.jpg',
+      caption:
+        'British Vickers machine-gun crew wearing Phenate-Hexamine (PH) anti-gas helmets with glass eyepieces and exhalation valves near Ovillers during the Battle of the Somme (July 1916).',
+      provenance:
+        'Official British War Photographer Ernest Brooks • Imperial War Museum Photographic Archive (IWM Q 3995), July 1916.',
+    },
     q1Features: {
       a: {
         q: 'Describe one feature of the effects of poison gas attacks on soldiers on the Western Front.',
@@ -369,7 +390,7 @@ const wfConfigs = [
     linedLeftQuip:
       'The 1915 Brodie helmet slashed penetrating head wounds by 75%; shrapnel helmets became universal equipment.',
     linedRightQuip:
-      'Small Box Respirators with charcoal filters neutralized chlorine and phosgene, though mustard gas still blistered through clothing.',
+      'Small Box Respirators with charcoal filters neutralised chlorine and phosgene, though mustard gas still blistered through clothing.',
     stages: [
       {
         dates: '1914–1918',
@@ -474,7 +495,7 @@ const wfConfigs = [
     rightPageQuip:
       'Motor ambulances: Guaranteed to rattle every uninjured bone in your body while speeding you to the Casualty Clearing Station.',
     linedLeftQuip:
-      'From Stretcher Bearer to RAP, ADS, and CCS: the 1917 evacuation chain prioritized speed to combat wound sepsis.',
+      'From Stretcher Bearer to RAP, ADS, and CCS: the 1917 evacuation chain prioritised speed to combat wound sepsis.',
     linedRightQuip:
       'Casualty Clearing Stations performed triage and emergency abdominal surgery before infection overwhelmed damaged organs.',
     stages: [
@@ -507,7 +528,7 @@ const wfConfigs = [
           'Three-tier triage sorting',
           'Immediate life-saving surgery',
         ],
-        focusClue: 'How did the 3-tier triage system maximize survival during mass offensives?',
+        focusClue: 'How did the 3-tier triage system maximise survival during mass offensives?',
       },
       {
         dates: '1914–1918',
@@ -543,8 +564,16 @@ const wfConfigs = [
       'Medical advances on the Western Front: the Thomas Splint (Hugh Owen Thomas, Robert Jones) reducing compound femur mortality; wound debridement and delayed primary closure; the Carrel-Dakin antiseptic irrigation method; mobile X-ray units and radiology.',
     sourceIndex: 0,
     sourceBadge: 'SOURCE A',
-    sourceSubtitle: 'Contemporary Medical Artifact • Standard Issue',
+    sourceSubtitle: 'Contemporary Surgical Manual Diagram • RAMC Training',
     sourceDate: 'c.1916',
+    workbookSource: {
+      src: '/images/thomas_splint_authentic.jpg',
+      objectFit: 'contain',
+      caption:
+        'Contemporary surgical training diagram illustrating the application of the Thomas Splint to a compound femur fracture: a padded iron groin ring anchors the hip while an orderly pulls the traction bandage taut along steel side-bars to keep the broken bone ends apart.',
+      provenance:
+        'RAMC Military Surgical Instruction Manual Illustration (after Sir Robert Jones, c.1916).',
+    },
     q1Features: {
       a: {
         q: 'Describe one feature of the Thomas Splint used on the Western Front.',
@@ -559,19 +588,19 @@ const wfConfigs = [
     examStem:
       'Study Source A. How useful is Source A for an enquiry into the methods used to treat wounded soldiers with fractured limbs on the Western Front? Explain your answer, using Source A and your knowledge of the historical context. [8 marks]',
     provenanceClue:
-      'Consider the nature of an authentic instructional photograph taken in an RAMC military hospital training ward c.1916. What does it demonstrate about mechanical traction and splinting, and why might an instructional training photograph differ from emergency frontline conditions in a mud dugout?',
+      'Consider the nature of an authentic instructional diagram from an RAMC military surgical manual c.1916. What does it demonstrate about mechanical traction and splinting, and why might an idealised training diagram differ from emergency frontline conditions in a muddy aid post?',
     structureStrip: [
       {
         col: '1. CONTENT & UTILITY',
         text: 'Explain how Source A illustrates the Thomas Splint: groin ring, steel framework, and traction cord pulling the leg taut to prevent bone grinding.',
       },
       {
-        col: '2. PROVENANCE & TONE',
-        text: 'Evaluate the photograph: produced for medical training manuals, demonstrating correct surgical application under clean, controlled conditions.',
+        col: '2. PROVENANCE & PURPOSE',
+        text: 'Evaluate the diagram: produced for RAMC surgical training manuals, clearly demonstrating correct mechanical application in controlled conditions.',
       },
       {
         col: '3. CONTEXT & LIMITS',
-        text: 'Cross-reference with knowledge: Robert Jones 1915, 80% down to 20% mortality; note limitations—photograph cannot convey agony or muddy dugout application.',
+        text: 'Cross-reference with knowledge: Robert Jones Dec 1915, mortality cut from 80% to under 20%; diagram omits frontline mud and stretcher transport.',
       },
     ],
     connectives:
@@ -585,7 +614,7 @@ const wfConfigs = [
     rightPageQuip:
       'Carrel-Dakin solution: If it burns like liquid fire and smells like a Victorian washhouse, congratulations—it is killing the gas gangrene.',
     linedLeftQuip:
-      'The Thomas Splint immobilized compound femur fractures; mortality dropped from 80% to 20% in two years.',
+      'The Thomas Splint immobilised compound femur fractures; mortality dropped from 80% to 20% in two years.',
     linedRightQuip:
       'Mobile X-ray units located shrapnel; Carrel-Dakin saline irrigation prevented anaerobic gas gangrene in massive wounds.',
     stages: [
@@ -651,13 +680,21 @@ const wfConfigs = [
     keyTopicBadge: 'KEY TOPIC 5.6',
     title: 'KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction',
     enquiryQuestion:
-      'How did stored blood banks, specialized neurosurgery, and plastic reconstruction transform wartime survival?',
+      'How did stored blood banks, specialised neurosurgery, and plastic reconstruction transform wartime survival?',
     specAnchor:
-      'Medical advances on the Western Front: blood transfusions and storage (Landsteiner, Hustin, Rous and Turner, Captain Oswald Robertson and the Cambrai blood bank); specialized neurosurgery (Harvey Cushing); plastic and facial reconstruction (Harold Gillies, Queen’s Hospital Sidcup, tubed pedicle).',
-    sourceIndex: 0,
+      'Medical advances on the Western Front: blood transfusions and storage (Landsteiner, Hustin, Rous and Turner, Captain Oswald Robertson and the Cambrai blood bank); specialised neurosurgery (Harvey Cushing); plastic and facial reconstruction (Harold Gillies, Queen’s Hospital Sidcup, tubed pedicle).',
+    sourceIndex: 2,
     sourceBadge: 'SOURCE A',
-    sourceSubtitle: 'Primary Medical Artifact • Cambrai Blood Depot',
+    sourceSubtitle: 'Primary Medical Artifact • Blood Transfusion Kit',
     sourceDate: '1917',
+    workbookSource: {
+      src: '/images/robertson_blood_depot_1917.jpg',
+      objectFit: 'contain',
+      caption:
+        'Portable wooden blood transfusion and storage case used on the Western Front (1917), fitted with a graduated glass collection bottle, rubber stopper and delivery tubing, cannulae/needles, and printed War Office "Directions for Use" for citrated blood.',
+      provenance:
+        'British Army Medical Services Transfusion Kit • Science Museum / Wellcome Collection, London (c.1917).',
+    },
     q1Features: {
       a: {
         q: 'Describe one feature of Harvey Cushing’s surgical techniques in operating on head wounds on the Western Front.',
@@ -674,7 +711,7 @@ const wfConfigs = [
     q2bData: {
       sourceLetter: 'A',
       detailPrompt:
-        'Captain Oswald Robertson’s portable blood storage chest and glass transfusion bottles packed in ice.',
+        'Portable wooden blood transfusion kit containing a graduated glass bottle, tubing, and printed War Office instructions.',
       questionPrompt:
         'What percentage of severely shocked casualties survived after receiving stored blood transfusions at Cambrai?',
       sourceTypePrompt:
@@ -761,19 +798,6 @@ function renderWfSpinePage(cfg, pageNum) {
 
   const stagesHtml = stages
     .map((st, sIdx) => {
-      const bullets = st.bullets || (st.keywords ? st.keywords.slice(0, 3) : []);
-      const bulletsHtml = bullets
-        .map(
-          (b, idx) => `
-            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
-                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
-              </div>
-            </div>`,
-        )
-        .join('');
-
       const questionText = st.questionHeading || st.focusClue || st.title;
 
       return `
@@ -792,15 +816,8 @@ function renderWfSpinePage(cfg, pageNum) {
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
+          <!-- Full-Width Ruled Note-Taking Lines (Trigger-Free Golden Standard) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
-            
-            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
-            <div class="stage-trigger-col" style="width: 26mm; flex-shrink: 0; background: #f8fafc; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
-              ${bulletsHtml}
-            </div>
-
-            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
             <div class="stage-writing-col">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -808,7 +825,6 @@ function renderWfSpinePage(cfg, pageNum) {
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
-
           </div>
         </div>`;
     })
@@ -964,8 +980,8 @@ function renderWfExamQuestionPage(cfg, pageNum, primarySource, b64Img) {
             </span>
           </div>
           <div style="display: flex; gap: 7px; align-items: center;">
-            <div style="width: 42mm; height: 30mm; border: 1px solid #000000; border-radius: 2px; overflow: hidden; flex-shrink: 0; background: #f0f0f0;">
-              <img src="${b64Img}" alt="${primarySource.caption || 'Primary Source Evidence'}" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); display: block;">
+            <div style="width: 42mm; height: 30mm; border: 1px solid #000000; border-radius: 2px; overflow: hidden; flex-shrink: 0; background: ${primarySource.objectFit === 'contain' ? '#ffffff' : '#f0f0f0'};">
+              <img src="${b64Img}" alt="${primarySource.caption || 'Primary Source Evidence'}" style="width: 100%; height: 100%; object-fit: ${primarySource.objectFit || 'cover'}; filter: grayscale(100%); display: block;">
             </div>
             <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 30mm;">
               <div style="font-family: 'Georgia', serif; font-size: 7pt; line-height: 1.25; color: #000000;">
@@ -2047,18 +2063,20 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
     const linedLeftPageNum = (cfg.lessonNum - 1) * 4 + 6; // Pages 6, 10, 14, 18, 22, 26
     const linedRightPageNum = (cfg.lessonNum - 1) * 4 + 7; // Pages 7, 11, 15, 19, 23, 27
 
-    // Select primary source
+    // Select primary source (prefer explicit workbookSource so JSON array index shifts never break visual sources)
     const sIdx = cfg.sourceIndex !== undefined ? cfg.sourceIndex : 0;
     const primarySource =
-      lesson && lesson.sources && lesson.sources[sIdx]
+      cfg.workbookSource ||
+      (lesson && lesson.sources && lesson.sources[sIdx]
         ? lesson.sources[sIdx]
         : {
             caption: 'Contemporary primary visual source from the Western Front.',
             provenance: 'Imperial War Museum Photographic Archive (1914–1918).',
-          };
+          });
 
     // Resolve base64 image
-    const b64Img = primarySource.src ? getBase64Image(primarySource.src) || primarySource.src : '';
+    const rawSrc = primarySource.src || primarySource.image || primarySource.image_url || '';
+    const b64Img = rawSrc ? getBase64Image(rawSrc) || rawSrc : '';
 
     // Page 1: Environmental Inquiry Spine (5 Stages • Full Spec Coverage)
     html += renderWfSpinePage(cfg, leftPageNum);

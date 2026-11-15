@@ -390,9 +390,8 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
       </style>
       <div class="epz-wrapper" style="max-width: 900px; margin: 0 auto; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.4); border-radius: 20px; padding: 40px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; position: relative;">
         <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #1e3a8a; margin-top: 0; margin-bottom: 30px;"><i class="fa-solid fa-pen-nib" style="color: #3b82f6;"></i> Unit Assessments</h2>
-        ${
-          unitData.id === 'great_war' || window.currentUnitId === 'great_war'
-            ? `
+        ${unitData.id === 'great_war' || window.currentUnitId === 'great_war'
+        ? `
         <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border-radius: 14px; padding: 24px; color: #ffffff; margin-bottom: 24px; border: 1.5px solid #3b82f6; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.3);">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
             <div>
@@ -409,8 +408,8 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
           </div>
         </div>
         `
-            : ''
-        }
+        : ''
+      }
         <div style="display: flex; flex-direction: column; gap: 20px;">
     `;
 
@@ -447,12 +446,11 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
             <h3 style="margin-top: 0; color: #0f172a; font-size: 1.3rem; margin-bottom: 15px;">${ass.title && ass.lessonTitle !== 'End of Unit Assessment' ? ass.title + '<br>' : ''}${taskContent}</h3>
             <div style="display: flex; gap: 10px; flex-wrap: wrap;">
               ${ass.hint ? `<button class="main-btn" onclick="alert('${ass.hint.replace(/'/g, "\\'")}')" style="background: #fef3c7; color: #d97706; border: 1px solid #fde68a; padding: 8px 16px; border-radius: 8px; font-weight: 600;"><i class="fa-solid fa-lightbulb"></i> Hint</button>` : ''}
-              ${
-                ass.model_answer
-                  ? `<button class="main-btn" onclick="const a = this.nextElementSibling; a.style.display = a.style.display === 'none' ? 'block' : 'none';" style="background: #d1fae5; color: #059669; border: 1px solid #a7f3d0; padding: 8px 16px; border-radius: 8px; font-weight: 600;"><i class="fa-solid fa-star"></i> Show Model</button>
+              ${ass.model_answer
+            ? `<button class="main-btn" onclick="const a = this.nextElementSibling; a.style.display = a.style.display === 'none' ? 'block' : 'none';" style="background: #d1fae5; color: #059669; border: 1px solid #a7f3d0; padding: 8px 16px; border-radius: 8px; font-weight: 600;"><i class="fa-solid fa-star"></i> Show Model</button>
               <div style="display: none; width: 100%; margin-top: 15px; padding: 15px; background: #f0fdf4; border-left: 4px solid #10b981; color: #064e3b; border-radius: 0 8px 8px 0; white-space: pre-wrap;">${Array.isArray(ass.model_answer) ? ass.model_answer.join('\\n\\n') : ass.model_answer}</div>`
-                  : ''
-              }
+            : ''
+          }
             </div>
           </div>
         `;
@@ -655,6 +653,8 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
         
         <div id="epz-q-images" style="display: none; margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px;"></div>
 
+        <div id="epz-followup-stems" style="display: none; margin-top: 20px; background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #0d9488; border-radius: 10px; padding: 16px 20px;"></div>
+
         <div id="epz-q-provenance" style="display: none; margin-top: 15px; padding: 15px; background: #fef08a; border-left: 5px solid #ca8a04; color: #854d0e; font-size: 1.1rem; border-radius: 8px;"><i class="fa-solid fa-lightbulb"></i> <strong>PEE/PEEL Structure Strip &amp; Clues:</strong> <span id="epz-q-provenance-text"></span></div>
 
         <div style="margin-top: 35px; display: flex; gap: 15px; flex-wrap: wrap;">
@@ -715,8 +715,74 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
   const qText = document.getElementById('epz-q-text');
   const qStimulus = document.getElementById('epz-q-stimulus');
   const qImages = document.getElementById('epz-q-images');
+  const qFollowUpStems = document.getElementById('epz-followup-stems');
   const qProv = document.getElementById('epz-q-provenance');
   const qProvText = document.getElementById('epz-q-provenance-text');
+
+  const renderEpzFollowUpStems = (qObj, stemText) => {
+    if (!qFollowUpStems) return;
+    const rawQ = String(stemText || qObj?.question || '').replace(/\*\*/g, '');
+    const isFu =
+      /\bfollow[\s-]+up\b/i.test(rawQ) ||
+      /follow[_\s-]*up/i.test(String(qObj?.type || '')) ||
+      /2\(b\)/i.test(String(qObj?.q_number || qObj?.tariff || ''));
+    if (!isFu) {
+      qFollowUpStems.style.display = 'none';
+      qFollowUpStems.innerHTML = '';
+      return;
+    }
+    const srcMatch =
+      rawQ.match(/follow[\s-]+up\s+(Source\s+[A-Z0-9]+)/i) ||
+      rawQ.match(/\b(Source\s+[A-Z0-9]+)\b/i);
+    const srcLabel = srcMatch ? srcMatch[1] : 'the source';
+    const rows = [
+      {
+        n: '1',
+        label: `Detail in ${srcLabel} that I would follow up:`,
+        ph: `Quote or select one specific detail from ${srcLabel} linked to the enquiry...`,
+      },
+      {
+        n: '2',
+        label: 'Question I would ask:',
+        ph: 'Write a focused historical question directly arising from that detail...',
+      },
+      {
+        n: '3',
+        label: 'What type of source I could use:',
+        ph: 'Name a specific contemporary primary record (e.g. RAMC ward log, battalion war diary)...',
+      },
+      {
+        n: '4',
+        label: 'How this might help answer my question:',
+        ph: 'Explain specifically how that record would help answer your question...',
+      },
+    ];
+    qFollowUpStems.innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0;">
+        <span style="font-size: 0.85rem; font-weight: 800; color: #0f766e; text-transform: uppercase; letter-spacing: 0.05em;">
+          <i class="fa-solid fa-pen-to-square"></i> Official Pearson Edexcel Paper 1 Q2(b) Answer Stems
+        </span>
+        <span style="font-size: 0.78rem; font-weight: 700; color: #0f766e; background: #ccfbf1; border: 1px solid #99f6e4; padding: 2px 10px; border-radius: 999px;">
+          Complete all 4 stems before revealing Model Answer &bull; 1 mark each
+        </span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        ${rows
+        .map(
+          (r) => `
+          <div style="display: grid; grid-template-columns: minmax(230px, 35%) 1fr; gap: 8px 14px; align-items: center;">
+            <label style="font-size: 0.96rem; font-weight: 700; color: #0f172a;">
+              <span style="display: inline-block; background: #0d9488; color: #ffffff; font-size: 0.75rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">${r.n}</span>${r.label}
+            </label>
+            <input type="text" style="width: 100%; padding: 8px 12px; font-size: 0.95rem; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 7px; color: #0f172a; box-sizing: border-box;" placeholder="${r.ph}" />
+          </div>
+        `,
+        )
+        .join('')}
+      </div>
+    `;
+    qFollowUpStems.style.display = 'block';
+  };
 
   const timerContainer = document.getElementById('epz-timer-container');
   const timerDisplay = document.getElementById('epz-timer-display');
@@ -816,11 +882,11 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
       const targetUnit = initialQuestion?.unitId || window.currentUnitId || unitData.id || '';
       const defaultSeconds = currentQuestion?.marks
         ? getPacingMinutes(
-            currentQuestion.marks,
-            targetUnit,
-            currentQuestion.type,
-            currentQuestion.question,
-          ) * 60
+          currentQuestion.marks,
+          targetUnit,
+          currentQuestion.type,
+          currentQuestion.question,
+        ) * 60
         : 600;
       setTimerDuration(questionTariffSeconds || defaultSeconds);
     });
@@ -1048,6 +1114,8 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
       qImages.innerHTML += `<img src="${currentQuestion.image}" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">`;
     }
 
+    renderEpzFollowUpStems(currentQuestion, displayQText);
+
     if (currentQuestion.provenance_clue) {
       qProvText.textContent = currentQuestion.provenance_clue;
       qProv.style.display = 'block';
@@ -1060,9 +1128,19 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
       let strip = currentQuestion.structure_strip || currentQuestion.scaffolding;
       let stripHtml = `<strong>PEE/PEEL Structure Strip &amp; Causal Connective Bank:</strong><br><br>`;
       if (typeof strip === 'string') {
-        stripHtml += strip.replace(/\\n/g, '<br>');
+        stripHtml += strip
+          .replace(/\\n|\n/g, '<br>')
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\*([^*]+)\*/g, '<em>$1</em>');
       } else if (Array.isArray(strip)) {
-        stripHtml += `<ul style="padding-left: 20px;">${strip.map((s) => `<li>${s}</li>`).join('')}</ul>`;
+        stripHtml += `<ul style="padding-left: 20px;">${strip
+          .map(
+            (s) =>
+              `<li>${String(s)
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*([^*]+)\*/g, '<em>$1</em>')}</li>`,
+          )
+          .join('')}</ul>`;
       }
       hintPanel.innerHTML = stripHtml;
     } else {
@@ -1187,6 +1265,8 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
       qStimulus.style.display = 'none';
     }
 
+    renderEpzFollowUpStems(currentQuestion, currentQuestion.question);
+
     if (currentQuestion.pitfall_warning || currentQuestion.provenance_clue) {
       qProvText.innerHTML = `<strong>Pitfall Warning:</strong> ${currentQuestion.pitfall_warning || currentQuestion.provenance_clue}`;
       qProv.style.display = 'block';
@@ -1202,10 +1282,21 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
       wagollBtn.style.display = 'block';
       let ans = currentQuestion.model_answer;
       if (Array.isArray(ans)) {
-        wagollPanel.innerHTML = `<strong>MARK SCHEME INDICATIVE CONTENT:</strong><br><br><ul style="padding-left: 20px; margin: 0; line-height: 1.6;">${ans.map((pt) => `<li style="margin-bottom: 8px;">${pt}</li>`).join('')}</ul>`;
+        wagollPanel.innerHTML = `<strong>MARK SCHEME INDICATIVE CONTENT:</strong><br><br><ul style="padding-left: 20px; margin: 0; line-height: 1.6;">${ans
+          .map(
+            (pt) =>
+              `<li style="margin-bottom: 8px;">${String(pt)
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*([^*]+)\*/g, '<em>$1</em>')}</li>`,
+          )
+          .join('')}</ul>`;
       } else {
         wagollPanel.innerHTML =
-          `<strong>MARK SCHEME INDICATIVE CONTENT:</strong><br><br>` + ans.replace(/\n/g, '<br>');
+          `<strong>MARK SCHEME INDICATIVE CONTENT:</strong><br><br>` +
+          String(ans)
+            .replace(/\\n|\n/g, '<br>')
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*([^*]+)\*/g, '<em>$1</em>');
       }
     } else {
       wagollBtn.style.display = 'none';
@@ -1227,8 +1318,8 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
         <p style="color: #111827; font-size: 1rem; margin-bottom: 24px; line-height: 1.5;">Authentic past-paper replicas featuring source booklets, question papers, and teacher mark schemes for exam conditions.</p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
           ${unitData.mock_exams
-            .map(
-              (mock) => `
+        .map(
+          (mock) => `
             <div style="border: 2px solid #000000; border-radius: 4px; padding: 20px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; gap: 14px;">
               <div>
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
@@ -1240,46 +1331,44 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
                   </span>
                 </div>
                 <h3 style="margin: 0 0 10px 0; color: #000000; font-size: 1.2rem; font-weight: 800; font-family: 'Outfit', sans-serif;">${mock.title}</h3>
-                ${
-                  mock.paper_reference || mock.time_minutes
-                    ? `<div style="background: #f4f4f5; border: 1px solid #d1d5db; border-radius: 3px; padding: 8px 12px; font-size: 0.82rem; color: #000000; margin-bottom: 15px; font-weight: 600; display: flex; justify-content: space-between;">
+                ${mock.paper_reference || mock.time_minutes
+              ? `<div style="background: #f4f4f5; border: 1px solid #d1d5db; border-radius: 3px; padding: 8px 12px; font-size: 0.82rem; color: #000000; margin-bottom: 15px; font-weight: 600; display: flex; justify-content: space-between;">
                   <span><strong>Time:</strong> ${mock.time_minutes || 80} mins</span>
                   <span><strong>Marks:</strong> ${mock.total_marks || 52} marks</span>
                 </div>`
-                    : ''
-                }
+              : ''
+            }
               </div>
               <div style="display: flex; flex-direction: column; gap: 8px;">
                 <a href="units/${unitData.id || window.currentUnitId}/${mock.id}.html" target="_blank" style="display: block; text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 11px 16px; font-size: 0.9rem; border-radius: 4px; font-weight: 800; transition: background 0.15s ease;">
                   Open Question Paper
                 </a>
-                ${
-                  mock.has_mark_scheme ||
-                  (mock.section_b &&
-                    mock.section_b.questions &&
-                    mock.section_b.questions.some(
-                      (q) =>
-                        q.model_answer ||
-                        (q.type === 'either_or' && (q.q5?.model_answer || q.q6?.model_answer)),
-                    )) ||
-                  (mock.questions &&
-                    mock.questions.some(
-                      (q) =>
-                        q.model_answer ||
-                        (q.type === 'essay_choice' && q.options?.some((opt) => opt.model_answer)),
-                    ))
-                    ? `
+                ${mock.has_mark_scheme ||
+              (mock.section_b &&
+                mock.section_b.questions &&
+                mock.section_b.questions.some(
+                  (q) =>
+                    q.model_answer ||
+                    (q.type === 'either_or' && (q.q5?.model_answer || q.q6?.model_answer)),
+                )) ||
+              (mock.questions &&
+                mock.questions.some(
+                  (q) =>
+                    q.model_answer ||
+                    (q.type === 'essay_choice' && q.options?.some((opt) => opt.model_answer)),
+                ))
+              ? `
                 <a href="units/${unitData.id || window.currentUnitId}/${mock.id}_mark_scheme.html" target="_blank" style="display: block; text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 16px; font-size: 0.88rem; border-radius: 4px; font-weight: 800; transition: background 0.15s ease;">
                   Teacher Mark Scheme
                 </a>
                 `
-                    : ''
-                }
+              : ''
+            }
               </div>
             </div>
           `,
-            )
-            .join('')}
+        )
+        .join('')}
         </div>
       </div>
     `;

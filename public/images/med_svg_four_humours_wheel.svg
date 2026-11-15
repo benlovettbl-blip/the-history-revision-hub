@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="humours-title humours-desc">
+  <title id="humours-title">Hippocrates &amp; Galen: The Four Humours and the Theory of Opposites</title>
+  <desc id="humours-desc">Educational museum diagram showing Hippocrates' Four Humours wheel (Blood: Spring, Air, Hot and Wet, Heart/Liver, Sanguine; Yellow Bile: Summer, Fire, Hot and Dry, Gallbladder, Choleric; Black Bile: Autumn, Earth, Cold and Dry, Spleen, Melancholic; Phlegm: Winter, Water, Cold and Wet, Brain/Lungs, Phlegmatic) alongside Galen's Theory of Opposites (Contraria Contrariis Curantur) clinical rebalancing examples.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .overline { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 2px; fill: #fbbf24; }
+      .hdr-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 20.5px; font-weight: 700; fill: #f8fafc; }
+      .pill-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 0.9px; fill: #fde68a; }
+      .panel-hdr { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 15.5px; font-weight: 700; fill: #0f172a; }
+      .panel-kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 1.4px; fill: #92400e; }
+      .quad-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 14.5px; font-weight: 700; }
+      .quad-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 700; }
+      .qual-pill { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 1.2px; fill: #ffffff; }
+      .plaque-kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 800; letter-spacing: 1px; }
+      .plaque-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 13px; font-weight: 700; fill: #0f172a; }
+      .body-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.6px; font-weight: 500; fill: #334155; }
+      .body-bold { font-weight: 700; fill: #0f172a; }
+      .latin-it { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-style: italic; font-weight: 700; }
+    ]]></style>
+
+    <linearGradient id="parchmentBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdfbf7"/>
+      <stop offset="100%" stop-color="#f6f0e2"/>
+    </linearGradient>
+    <linearGradient id="bloodGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fee2e2"/>
+      <stop offset="100%" stop-color="#fecaca"/>
+    </linearGradient>
+    <linearGradient id="yellowGrad" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="phlegmGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="blackGrad" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#b45309"/>
+    </marker>
+    <marker id="arrTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect x="0" y="0" width="1200" height="750" fill="url(#parchmentBg)"/>
+
+  <!-- Top Header Band -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#d97706" stroke-width="2.5"/>
+  <text x="26" y="23" class="overline">EDEXCEL GCSE HISTORY · CLASSICAL &amp; MEDIEVAL AETIOLOGY (c.400 BC – c.1700)</text>
+  <text x="26" y="48" class="hdr-title">Hippocrates &amp; Galen: The Four Humours and the Theory of Opposites</text>
+  <rect x="954" y="17" width="220" height="30" rx="6" fill="#78350f" stroke="#fbbf24" stroke-width="1.2"/>
+  <text x="1064" y="36" text-anchor="middle" class="pill-txt">1,500-YEAR MEDICAL DOGMA</text>
+
+  <!-- =================================================================== -->
+  <!-- LEFT PANEL: THE ILLUMINATED WHEEL OF THE FOUR HUMOURS               -->
+  <!-- =================================================================== -->
+  <rect x="22" y="80" width="686" height="602" rx="10" fill="#fffdf9" stroke="#d6cbb5" stroke-width="1.5" filter="url(#softShadow)"/>
+  <text x="42" y="102" class="panel-kicker">PART I · HIPPOCRATES OF KOS (c.400 BC) — NATURALISTIC HUMORAL BALANCE</text>
+  <text x="42" y="121" class="panel-hdr">The Wheel of the Four Humours, Seasons, Elements &amp; Qualities</text>
+  <line x1="42" y1="130" x2="688" y2="130" stroke="#e7dfd0" stroke-width="1.2"/>
+
+  <!-- Decorative Manuscript Outer Ring (cx=365, cy=404, r=196) -->
+  <circle cx="365" cy="404" r="196" fill="#faf3e3" stroke="#b45309" stroke-width="2"/>
+  <circle cx="365" cy="404" r="189" fill="none" stroke="#d97706" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 4 Wheel Quadrants (cx=365, cy=404, r=178) -->
+  <!-- Top-Left: BLOOD (Hot and Wet) -->
+  <path d="M 365 404 L 187 404 A 178 178 0 0 1 365 226 Z" fill="url(#bloodGrad)" stroke="#b91c1c" stroke-width="1.8"/>
+  <!-- Top-Right: YELLOW BILE (Hot and Dry) -->
+  <path d="M 365 404 L 365 226 A 178 178 0 0 1 543 404 Z" fill="url(#yellowGrad)" stroke="#b45309" stroke-width="1.8"/>
+  <!-- Bottom-Right: BLACK BILE (Cold and Dry) -->
+  <path d="M 365 404 L 543 404 A 178 178 0 0 1 365 582 Z" fill="url(#blackGrad)" stroke="#334155" stroke-width="1.8"/>
+  <!-- Bottom-Left: PHLEGM (Cold and Wet) -->
+  <path d="M 365 404 L 365 582 A 178 178 0 0 1 187 404 Z" fill="url(#phlegmGrad)" stroke="#0369a1" stroke-width="1.8"/>
+
+  <!-- Axis Crosshair Dividers -->
+  <line x1="176" y1="404" x2="554" y2="404" stroke="#0f172a" stroke-width="2.2"/>
+  <line x1="365" y1="215" x2="365" y2="593" stroke="#0f172a" stroke-width="2.2"/>
+
+  <!-- Quadrant Interior Icons and Labels -->
+  <!-- 1. Blood (Top-Left centroid ~ 286, 326) -->
+  <path d="M 286 280 C 286 280 272 298 272 307 A 14 14 0 0 0 300 307 C 300 298 286 280 286 280 Z" fill="#dc2626" stroke="#7f1d1d" stroke-width="1.5"/>
+  <path d="M 281 305 A 5 5 0 0 1 286 300" fill="none" stroke="#fecaca" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="286" y="338" text-anchor="middle" class="quad-title" fill="#7f1d1d">BLOOD</text>
+  <text x="286" y="354" text-anchor="middle" class="quad-sub" fill="#991b1b">Hot &amp; Wet</text>
+  <text x="286" y="370" text-anchor="middle" class="body-txt" fill="#7f1d1d" style="fill: #7f1d1d;">Spring · Air</text>
+
+  <!-- 2. Yellow Bile (Top-Right centroid ~ 444, 326) -->
+  <path d="M 444 278 C 454 292 459 301 455 311 C 453 317 449 320 444 320 C 439 320 434 316 433 310 C 431 301 438 294 444 278 Z" fill="#f59e0b" stroke="#92400e" stroke-width="1.5"/>
+  <path d="M 444 294 C 448 301 449 306 447 311 C 446 314 442 314 441 311 C 439 306 441 301 444 294 Z" fill="#fef3c7"/>
+  <text x="444" y="338" text-anchor="middle" class="quad-title" fill="#78350f">YELLOW BILE</text>
+  <text x="444" y="354" text-anchor="middle" class="quad-sub" fill="#92400e">Hot &amp; Dry</text>
+  <text x="444" y="370" text-anchor="middle" class="body-txt" fill="#78350f" style="fill: #78350f;">Summer · Fire</text>
+
+  <!-- 3. Phlegm (Bottom-Left centroid ~ 286, 482) -->
+  <circle cx="286" cy="452" r="14" fill="#0284c7" fill-opacity="0.18" stroke="#0369a1" stroke-width="1.5"/>
+  <path d="M 276 452 Q 281 445 286 452 T 296 452" fill="none" stroke="#0369a1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 276 458 Q 281 451 286 458 T 296 458" fill="none" stroke="#0284c7" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="286" y="486" text-anchor="middle" class="quad-title" fill="#0c4a6e">PHLEGM</text>
+  <text x="286" y="502" text-anchor="middle" class="quad-sub" fill="#0369a1">Cold &amp; Wet</text>
+  <text x="286" y="518" text-anchor="middle" class="body-txt" fill="#0c4a6e" style="fill: #0c4a6e;">Winter · Water</text>
+
+  <!-- 4. Black Bile (Bottom-Right centroid ~ 444, 482) -->
+  <polygon points="444,437 458,451 452,465 436,465 430,451" fill="#475569" stroke="#1e293b" stroke-width="1.5"/>
+  <polyline points="436,451 444,456 452,451" fill="none" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="444" y="486" text-anchor="middle" class="quad-title" fill="#1e293b">BLACK BILE</text>
+  <text x="444" y="502" text-anchor="middle" class="quad-sub" fill="#334155">Cold &amp; Dry</text>
+  <text x="444" y="518" text-anchor="middle" class="body-txt" fill="#334155">Autumn · Earth</text>
+
+  <!-- Central Medallion: Balanced Health (Eukrasia) -->
+  <circle cx="365" cy="404" r="48" fill="#0f172a" stroke="#fbbf24" stroke-width="2.5"/>
+  <circle cx="365" cy="404" r="42" fill="none" stroke="#fde68a" stroke-width="0.9" stroke-dasharray="3 2"/>
+  <text x="365" y="396" text-anchor="middle" class="overline" font-size="9.5" style="font-size: 9.5px;">EUKRASIA</text>
+  <text x="365" y="411" text-anchor="middle" class="body-txt" fill="#f8fafc" font-weight="700" style="fill: #f8fafc; font-weight: 700;">4 Humours</text>
+  <text x="365" y="424" text-anchor="middle" class="body-txt" fill="#cbd5e1" font-size="9.5" style="fill: #cbd5e1; font-size: 9.5px;">in Balance</text>
+
+  <!-- 4 Cardinal Quality Axis Badges -->
+  <!-- TOP: HOT -->
+  <rect x="325" y="196" width="80" height="26" rx="13" fill="#dc2626" stroke="#7f1d1d" stroke-width="1.5"/>
+  <text x="365" y="213" text-anchor="middle" class="qual-pill">HOT</text>
+  <!-- BOTTOM: COLD -->
+  <rect x="323" y="586" width="84" height="26" rx="13" fill="#0369a1" stroke="#0c4a6e" stroke-width="1.5"/>
+  <text x="365" y="603" text-anchor="middle" class="qual-pill">COLD</text>
+  <!-- LEFT: WET -->
+  <rect x="136" y="391" width="74" height="26" rx="13" fill="#0284c7" stroke="#075985" stroke-width="1.5"/>
+  <text x="173" y="408" text-anchor="middle" class="qual-pill">WET</text>
+  <!-- RIGHT: DRY -->
+  <rect x="520" y="391" width="74" height="26" rx="13" fill="#b45309" stroke="#78350f" stroke-width="1.5"/>
+  <text x="557" y="408" text-anchor="middle" class="qual-pill">DRY</text>
+
+  <!-- 4 Corner Museum Detail Plaques (Zero Overlap with r=196 Circle) -->
+  <!-- Top-Left Plaque: Blood -->
+  <rect x="36" y="142" width="194" height="96" rx="7" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.4"/>
+  <text x="48" y="160" class="plaque-kicker" fill="#b91c1c">BLOOD · SANGUINE</text>
+  <text x="48" y="177" class="plaque-title">Heart &amp; Liver</text>
+  <text x="48" y="194" class="body-txt">Season/Element: <tspan class="body-bold">Spring · Air</tspan></text>
+  <text x="48" y="210" class="body-txt">Qualities: <tspan class="body-bold">Hot &amp; Wet</tspan></text>
+  <text x="48" y="226" class="body-txt">Excess: Fever, flushed skin</text>
+  <line x1="230" y1="220" x2="258" y2="255" stroke="#b91c1c" stroke-width="1.3" stroke-dasharray="3 2"/>
+
+  <!-- Top-Right Plaque: Yellow Bile -->
+  <rect x="500" y="142" width="194" height="96" rx="7" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.4"/>
+  <text x="512" y="160" class="plaque-kicker" fill="#b45309">YELLOW BILE · CHOLERIC</text>
+  <text x="512" y="177" class="plaque-title">Gallbladder</text>
+  <text x="512" y="194" class="body-txt">Season/Element: <tspan class="body-bold">Summer · Fire</tspan></text>
+  <text x="512" y="210" class="body-txt">Qualities: <tspan class="body-bold">Hot &amp; Dry</tspan></text>
+  <text x="512" y="226" class="body-txt">Excess: Jaundice, biliousness</text>
+  <line x1="500" y1="220" x2="472" y2="255" stroke="#b45309" stroke-width="1.3" stroke-dasharray="3 2"/>
+
+  <!-- Bottom-Left Plaque: Phlegm -->
+  <rect x="36" y="568" width="194" height="98" rx="7" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.4"/>
+  <text x="48" y="586" class="plaque-kicker" fill="#0369a1">PHLEGM · PHLEGMATIC</text>
+  <text x="48" y="603" class="plaque-title">Brain &amp; Lungs</text>
+  <text x="48" y="620" class="body-txt">Season/Element: <tspan class="body-bold">Winter · Water</tspan></text>
+  <text x="48" y="636" class="body-txt">Qualities: <tspan class="body-bold">Cold &amp; Wet</tspan></text>
+  <text x="48" y="652" class="body-txt">Excess: Catarrh, chills, cough</text>
+  <line x1="230" y1="582" x2="258" y2="552" stroke="#0369a1" stroke-width="1.3" stroke-dasharray="3 2"/>
+
+  <!-- Bottom-Right Plaque: Black Bile -->
+  <rect x="500" y="568" width="194" height="98" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="512" y="586" class="plaque-kicker" fill="#334155">BLACK BILE · MELANCHOLIC</text>
+  <text x="512" y="603" class="plaque-title">Spleen</text>
+  <text x="512" y="620" class="body-txt">Season/Element: <tspan class="body-bold">Autumn · Earth</tspan></text>
+  <text x="512" y="636" class="body-txt">Qualities: <tspan class="body-bold">Cold &amp; Dry</tspan></text>
+  <text x="512" y="652" class="body-txt">Excess: Melancholy, lethargy</text>
+  <line x1="500" y1="582" x2="472" y2="552" stroke="#334155" stroke-width="1.3" stroke-dasharray="3 2"/>
+
+  <!-- =================================================================== -->
+  <!-- RIGHT PANEL: GALEN'S THEORY OF OPPOSITES                            -->
+  <!-- =================================================================== -->
+  <rect x="724" y="80" width="454" height="602" rx="10" fill="#fffdf9" stroke="#d6cbb5" stroke-width="1.5" filter="url(#softShadow)"/>
+  <text x="744" y="102" class="panel-kicker">PART II · CLAUDIUS GALEN (2ND CENTURY AD) — CLINICAL REBALANCING</text>
+  <text x="744" y="121" class="panel-hdr">Theory of Opposites (<tspan class="latin-it">Contraria Contrariis Curantur</tspan>)</text>
+  <line x1="744" y1="130" x2="1158" y2="130" stroke="#e7dfd0" stroke-width="1.2"/>
+
+  <!-- Core Mechanism Banner -->
+  <rect x="744" y="142" width="414" height="58" rx="7" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="758" y="161" class="body-txt"><tspan class="body-bold">Galen's Rule:</tspan> Illness (<tspan class="latin-it">dyskrasia</tspan>) occurs when one humour becomes</text>
+  <text x="758" y="177" class="body-txt">excessive. Physicians restore balance by prescribing a remedy with the</text>
+  <text x="758" y="193" class="body-txt"><tspan class="body-bold">exact opposite temperature &amp; moisture</tspan> — or evacuating excess fluid.</text>
+
+  <!-- Clinical Example 1: Excess Cold and Wet Phlegm -->
+  <rect x="744" y="214" width="414" height="142" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="744" y="214" width="414" height="26" rx="8" fill="#0c4a6e"/>
+  <rect x="744" y="228" width="414" height="12" fill="#0c4a6e"/>
+  <text x="758" y="231" class="overline" fill="#bae6fd" font-size="9.8" style="fill: #bae6fd; font-size: 9.8px;">CLINICAL CASE 1 · WINTER CONGESTION &amp; SHIVERING CHILLS</text>
+
+  <!-- Left Diagnosis Box -->
+  <rect x="756" y="250" width="166" height="94" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.2"/>
+  <text x="839" y="268" text-anchor="middle" class="plaque-kicker" fill="#0369a1">DIAGNOSIS (UROSCOPY)</text>
+  <text x="839" y="286" text-anchor="middle" class="plaque-title" fill="#0c4a6e" style="fill: #0c4a6e;">Excess Phlegm</text>
+  <text x="839" y="303" text-anchor="middle" class="body-txt"><tspan class="body-bold">Cold &amp; Wet</tspan> overload</text>
+  <text x="839" y="319" text-anchor="middle" class="body-txt">Thin, pale watery urine;</text>
+  <text x="839" y="334" text-anchor="middle" class="body-txt">chest phlegm &amp; lethargy</text>
+
+  <!-- Opposite Arrow -->
+  <line x1="928" y1="297" x2="968" y2="297" stroke="#b45309" stroke-width="2.4" marker-end="url(#arrAmber)"/>
+  <text x="948" y="287" text-anchor="middle" class="plaque-kicker" fill="#b45309" font-size="8.5" style="font-size: 8.5px;">OPPOSITE</text>
+
+  <!-- Right Remedy Box -->
+  <rect x="976" y="250" width="170" height="94" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.2"/>
+  <text x="1061" y="268" text-anchor="middle" class="plaque-kicker" fill="#b45309">COUNTER-TREATMENT</text>
+  <text x="1061" y="286" text-anchor="middle" class="plaque-title" fill="#78350f" style="fill: #78350f;">Hot &amp; Dry Regimen</text>
+  <text x="1061" y="303" text-anchor="middle" class="body-txt"><tspan class="body-bold">Cayenne / black pepper</tspan>,</text>
+  <text x="1061" y="319" text-anchor="middle" class="body-txt">mustard plaster, hot bath</text>
+  <text x="1061" y="334" text-anchor="middle" class="body-txt">&amp; roasted warming meats</text>
+
+  <!-- Clinical Example 2: Excess Hot and Wet Blood -->
+  <rect x="744" y="370" width="414" height="142" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="744" y="370" width="414" height="26" rx="8" fill="#7f1d1d"/>
+  <rect x="744" y="384" width="414" height="12" fill="#7f1d1d"/>
+  <text x="758" y="387" class="overline" fill="#fecaca" font-size="9.8" style="fill: #fecaca; font-size: 9.8px;">CLINICAL CASE 2 · SANGUINE BURNING FEVER &amp; PLETHORA</text>
+
+  <!-- Left Diagnosis Box -->
+  <rect x="756" y="406" width="166" height="94" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="839" y="424" text-anchor="middle" class="plaque-kicker" fill="#b91c1c">DIAGNOSIS (PULSE &amp; URINE)</text>
+  <text x="839" y="442" text-anchor="middle" class="plaque-title" fill="#7f1d1d" style="fill: #7f1d1d;">Excess Blood</text>
+  <text x="839" y="459" text-anchor="middle" class="body-txt"><tspan class="body-bold">Hot &amp; Wet</tspan> overload</text>
+  <text x="839" y="475" text-anchor="middle" class="body-txt">Thick red urine, bounding</text>
+  <text x="839" y="490" text-anchor="middle" class="body-txt">pulse &amp; hot flushed skin</text>
+
+  <!-- Opposite Arrow -->
+  <line x1="928" y1="453" x2="968" y2="453" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arrTeal)"/>
+  <text x="948" y="443" text-anchor="middle" class="plaque-kicker" fill="#0f766e" font-size="8.5" style="font-size: 8.5px;">OPPOSITE</text>
+
+  <!-- Right Remedy Box -->
+  <rect x="976" y="406" width="170" height="94" rx="6" fill="#ecfdf5" stroke="#0d9488" stroke-width="1.2"/>
+  <text x="1061" y="424" text-anchor="middle" class="plaque-kicker" fill="#0f766e">COOLING &amp; EVACUATION</text>
+  <text x="1061" y="442" text-anchor="middle" class="plaque-title" fill="#115e59" style="fill: #115e59;">Cucumber &amp; Bleeding</text>
+  <text x="1061" y="459" text-anchor="middle" class="body-txt"><tspan class="body-bold">Cooling cucumber</tspan> / lettuce</text>
+  <text x="1061" y="475" text-anchor="middle" class="body-txt">+ <tspan class="body-bold">phlebotomy</tspan> (venesection</text>
+  <text x="1061" y="490" text-anchor="middle" class="body-txt">lancet, cupping or leeches)</text>
+
+  <!-- Continuity and Church Endorsement Box -->
+  <rect x="744" y="526" width="414" height="140" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="758" y="546" class="plaque-kicker" fill="#1e293b">WHY HUMORAL THEORY DOMINATED EUROPE UNTIL c.1700</text>
+  <text x="758" y="566" class="body-txt">1. <tspan class="body-bold">Church Endorsement:</tspan> Galen wrote that the body was designed by</text>
+  <text x="772" y="582" class="body-txt">one Creator — fitting Christian doctrine; Church-controlled universities</text>
+  <text x="772" y="598" class="body-txt">taught Galen's texts as infallible truth and discouraged human dissection.</text>
+  <text x="758" y="618" class="body-txt">2. <tspan class="body-bold">Diagnostic Authority:</tspan> Combining <tspan class="body-bold">uroscopy wheels</tspan> (urine colour,</text>
+  <text x="772" y="634" class="body-txt">smell &amp; taste), zodiac charts and herbal <tspan class="latin-it">materia medica</tspan> gave trained</text>
+  <text x="772" y="650" class="body-txt">physicians a complete, rational-looking explanation for every illness.</text>
+
+  <!-- Bottom Summary Strip -->
+  <rect x="22" y="692" width="1156" height="46" rx="8" fill="#1e293b"/>
+  <text x="42" y="711" class="body-txt" fill="#f8fafc" style="fill: #f8fafc;"><tspan fill="#fbbf24" font-weight="800">GCSE SIGNIFICANCE:</tspan> Hippocrates separated medicine from supernatural gods via <tspan fill="#fde68a" font-weight="700">clinical observation</tspan>, while Galen locked the</text>
+  <text x="42" y="728" class="body-txt" fill="#f8fafc" style="fill: #f8fafc;">humoral <tspan fill="#fde68a" font-weight="700">Theory of Opposites</tspan> into a 1,500-year Church-backed orthodoxy that blocked germ pathology until the 19th century.</text>
+</svg>

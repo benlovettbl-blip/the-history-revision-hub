@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="dna-title dna-desc">
+  <title id="dna-title">Unlocking the Blueprint of Life: From DNA (1953) to Genomic Medicine</title>
+  <desc id="dna-desc">Four-stage scientific progression diagram for Edexcel GCSE Medicine: 1. 1952 X-Ray Crystallography (Rosalind Franklin and Maurice Wilkins, Photo 51 at King's College London), 2. 1953 Double Helix Model (James Watson and Francis Crick at Cambridge, A-T and C-G base pairs), 3. 1990-2003 Human Genome Project (~3 billion base pairs and ~20,000 genes), and 4. Modern Clinical Impact and Limits (BRCA1/BRCA2 screening, cystic fibrosis, Down's syndrome, pharmacogenomics, and gene therapy), plus an Edexcel exam distinction banner clarifying DNA applies to hereditary/genetic disorders, not infectious bacterial diseases.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .overline { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 2px; fill: #38bdf8; }
+      .hdr-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 20.5px; font-weight: 700; fill: #f8fafc; }
+      .pill-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; letter-spacing: 0.9px; fill: #bae6fd; }
+      .stage-kicker { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 800; letter-spacing: 1.1px; }
+      .stage-title { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 14.8px; font-weight: 700; fill: #0f172a; }
+      .stage-sub { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.3px; font-weight: 700; fill: #475569; }
+      .body-txt { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.4px; font-weight: 500; fill: #334155; }
+      .body-bold { font-weight: 700; fill: #0f172a; }
+      .mono-code { font-family: 'Consolas', 'Courier New', monospace; font-size: 10px; font-weight: 700; }
+      .exam-hdr { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; font-size: 14.5px; font-weight: 700; fill: #7f1d1d; }
+    ]]></style>
+
+    <linearGradient id="labBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f6"/>
+    </linearGradient>
+    <filter id="cardDrop" x="-5%" y="-5%" width="110%" height="114%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.09"/>
+    </filter>
+    <marker id="arrBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect x="0" y="0" width="1200" height="750" fill="url(#labBg)"/>
+
+  <!-- Top Header Band -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="26" y="23" class="overline">EDEXCEL GCSE HISTORY · MODERN MEDICINE &amp; GENETIC AETIOLOGY (c.1900–PRESENT)</text>
+  <text x="26" y="48" class="hdr-title">Unlocking the Blueprint of Life: From DNA (1953) to Genomic Medicine</text>
+  <rect x="946" y="17" width="228" height="30" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="1060" y="36" text-anchor="middle" class="pill-txt">SCIENCE · TECH · TEAMWORK</text>
+
+  <!-- Timeline Progression Bar (y=76..102) -->
+  <line x1="156" y1="89" x2="1044" y2="89" stroke="#cbd5e1" stroke-width="3"/>
+  <circle cx="156" cy="89" r="7" fill="#0369a1"/>
+  <circle cx="452" cy="89" r="7" fill="#0d9488"/>
+  <circle cx="748" cy="89" r="7" fill="#4f46e5"/>
+  <circle cx="1044" cy="89" r="7" fill="#059669"/>
+
+  <!-- =================================================================== -->
+  <!-- STAGE 1 CARD (x=24..288): 1952 X-RAY CRYSTALLOGRAPHY                 -->
+  <!-- =================================================================== -->
+  <rect x="24" y="108" width="264" height="486" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#cardDrop)"/>
+  <rect x="24" y="108" width="264" height="6" rx="3" fill="#0369a1"/>
+  <text x="40" y="132" class="stage-kicker" fill="#0369a1">STAGE 1 · MAY 1952 (LONDON)</text>
+  <text x="40" y="151" class="stage-title">X-Ray Crystallography</text>
+  <text x="40" y="168" class="stage-sub">Rosalind Franklin &amp; Maurice Wilkins</text>
+
+  <!-- Visual Box: Photo 51 X-Ray Cross Pattern -->
+  <rect x="40" y="180" width="232" height="162" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <!-- X-Ray Emitter -->
+  <rect x="48" y="246" width="34" height="24" rx="4" fill="#334155"/>
+  <text x="65" y="261" text-anchor="middle" class="mono-code" fill="#f8fafc" font-size="8.5" style="font-size: 8.5px;">X-RAY</text>
+  <line x1="82" y1="258" x2="112" y2="258" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 2"/>
+  <!-- Hydrated DNA Fibre Sample -->
+  <rect x="112" y="238" width="8" height="40" rx="3" fill="#0284c7"/>
+  <!-- Photo 51 Circular Film Plate -->
+  <circle cx="192" cy="258" r="56" fill="#fef9ee" stroke="#475569" stroke-width="2"/>
+  <circle cx="192" cy="258" r="48" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 3"/>
+  <!-- Characteristic Photo 51 'X' Layer-Line Smears -->
+  <g fill="#0f172a">
+    <!-- Arm 1 (Top-Left to Bottom-Right) -->
+    <ellipse cx="164" cy="230" rx="6" ry="2.8" transform="rotate(42 164 230)"/>
+    <ellipse cx="172" cy="238" rx="5.5" ry="2.5" transform="rotate(42 172 238)"/>
+    <ellipse cx="180" cy="246" rx="4.5" ry="2.2" transform="rotate(42 180 246)"/>
+    <ellipse cx="204" cy="270" rx="4.5" ry="2.2" transform="rotate(42 204 270)"/>
+    <ellipse cx="212" cy="278" rx="5.5" ry="2.5" transform="rotate(42 212 278)"/>
+    <ellipse cx="220" cy="286" rx="6" ry="2.8" transform="rotate(42 220 286)"/>
+    <!-- Arm 2 (Bottom-Left to Top-Right) -->
+    <ellipse cx="164" cy="286" rx="6" ry="2.8" transform="rotate(-42 164 286)"/>
+    <ellipse cx="172" cy="278" rx="5.5" ry="2.5" transform="rotate(-42 172 278)"/>
+    <ellipse cx="180" cy="270" rx="4.5" ry="2.2" transform="rotate(-42 180 270)"/>
+    <ellipse cx="204" cy="246" rx="4.5" ry="2.2" transform="rotate(-42 204 246)"/>
+    <ellipse cx="212" cy="238" rx="5.5" ry="2.5" transform="rotate(-42 212 238)"/>
+    <ellipse cx="220" cy="230" rx="6" ry="2.8" transform="rotate(-42 220 230)"/>
+    <!-- Meridian Arcs -->
+    <rect x="183" y="210" width="18" height="4" rx="2"/>
+    <rect x="183" y="302" width="18" height="4" rx="2"/>
+  </g>
+  <circle cx="192" cy="258" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.2"/>
+  <text x="192" y="331" text-anchor="middle" class="stage-kicker" fill="#0f172a" font-size="9" style="font-size: 9px;">"PHOTO 51" DIFFRACTION CROSS</text>
+
+  <!-- Stage 1 Notes -->
+  <text x="40" y="365" class="body-txt">• <tspan class="body-bold">King's College London:</tspan> Fired</text>
+  <text x="48" y="381" class="body-txt">narrow X-ray beams through</text>
+  <text x="48" y="397" class="body-txt">hydrated B-form DNA fibres for</text>
+  <text x="48" y="413" class="body-txt">over 60 hours onto film.</text>
+
+  <text x="40" y="437" class="body-txt">• <tspan class="body-bold">Crucial Evidence:</tspan> Franklin &amp;</text>
+  <text x="48" y="453" class="body-txt">Gosling's sharp <tspan class="body-bold">'X' pattern</tspan> proved</text>
+  <text x="48" y="469" class="body-txt">DNA was a <tspan class="body-bold">regular helix</tspan> with</text>
+  <text x="48" y="485" class="body-txt">phosphates on the outside.</text>
+
+  <text x="40" y="509" class="body-txt">• <tspan class="body-bold">Friction &amp; Sharing:</tspan> Wilkins</text>
+  <text x="48" y="525" class="body-txt">showed Photo 51 to Watson in</text>
+  <text x="48" y="541" class="body-txt">Jan 1953 — the missing geometric</text>
+  <text x="48" y="557" class="body-txt">clue needed at Cambridge.</text>
+
+  <rect x="40" y="566" width="232" height="19" rx="4" fill="#e0f2fe"/>
+  <text x="156" y="579" text-anchor="middle" class="stage-kicker" fill="#0369a1" font-size="8.8" style="font-size: 8.8px;">FACTOR: IMAGING TECHNOLOGY</text>
+
+  <!-- Connector Arrow 1 -> 2 -->
+  <line x1="291" y1="261" x2="316" y2="261" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+
+  <!-- =================================================================== -->
+  <!-- STAGE 2 CARD (x=320..584): 1953 DOUBLE HELIX MODEL                  -->
+  <!-- =================================================================== -->
+  <rect x="320" y="108" width="264" height="486" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#cardDrop)"/>
+  <rect x="320" y="108" width="264" height="6" rx="3" fill="#0d9488"/>
+  <text x="336" y="132" class="stage-kicker" fill="#0f766e">STAGE 2 · FEB–APR 1953 (CAMBRIDGE)</text>
+  <text x="336" y="151" class="stage-title">The Double Helix Model</text>
+  <text x="336" y="168" class="stage-sub">James Watson &amp; Francis Crick</text>
+
+  <!-- Visual Box: Double Helix and Base Pairs -->
+  <rect x="336" y="180" width="232" height="162" rx="8" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.2"/>
+  <!-- Base-Pair Rungs -->
+  <g stroke-width="4" stroke-linecap="round">
+    <line x1="392" y1="204" x2="418" y2="204" stroke="#059669"/>
+    <line x1="418" y1="204" x2="444" y2="204" stroke="#d97706"/>
+    <line x1="398" y1="224" x2="418" y2="224" stroke="#0284c7"/>
+    <line x1="418" y1="224" x2="438" y2="224" stroke="#e11d48"/>
+    <line x1="392" y1="266" x2="418" y2="266" stroke="#d97706"/>
+    <line x1="418" y1="266" x2="444" y2="266" stroke="#059669"/>
+    <line x1="398" y1="286" x2="418" y2="286" stroke="#e11d48"/>
+    <line x1="418" y1="286" x2="438" y2="286" stroke="#0284c7"/>
+    <line x1="394" y1="318" x2="418" y2="318" stroke="#059669"/>
+    <line x1="418" y1="318" x2="442" y2="318" stroke="#d97706"/>
+  </g>
+  <!-- Helical Sugar-Phosphate Backbones -->
+  <path d="M 388 192 C 452 215, 452 248, 388 272 C 368 284, 368 308, 446 330" fill="none" stroke="#0f172a" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 448 192 C 384 215, 384 248, 448 272 C 468 284, 468 308, 390 330" fill="none" stroke="#0d9488" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Base-Pair Key inside Visual Box -->
+  <rect x="468" y="196" width="90" height="128" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="513" y="213" text-anchor="middle" class="stage-kicker" fill="#0f172a" font-size="8.8" style="font-size: 8.8px;">BASE PAIRS</text>
+  <rect x="476" y="222" width="32" height="18" rx="3" fill="#059669"/>
+  <text x="492" y="235" text-anchor="middle" class="mono-code" fill="#ffffff">A</text>
+  <rect x="518" y="222" width="32" height="18" rx="3" fill="#d97706"/>
+  <text x="534" y="235" text-anchor="middle" class="mono-code" fill="#ffffff">T</text>
+  <line x1="508" y1="231" x2="518" y2="231" stroke="#334155" stroke-width="1.5"/>
+
+  <rect x="476" y="250" width="32" height="18" rx="3" fill="#0284c7"/>
+  <text x="492" y="263" text-anchor="middle" class="mono-code" fill="#ffffff">C</text>
+  <rect x="518" y="250" width="32" height="18" rx="3" fill="#e11d48"/>
+  <text x="534" y="263" text-anchor="middle" class="mono-code" fill="#ffffff">G</text>
+  <line x1="508" y1="259" x2="518" y2="259" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="513" y="287" text-anchor="middle" class="body-txt" font-size="9.2" style="font-size: 9.2px;">Sugar-phosphate</text>
+  <text x="513" y="300" text-anchor="middle" class="body-txt" font-size="9.2" style="font-size: 9.2px;">outer rails;</text>
+  <text x="513" y="313" text-anchor="middle" class="body-txt" font-size="9.2" style="font-size: 9.2px;">code in rungs</text>
+
+  <!-- Stage 2 Notes -->
+  <text x="336" y="365" class="body-txt">• <tspan class="body-bold">Cavendish Lab (Cambridge):</tspan></text>
+  <text x="344" y="381" class="body-txt">Combined physics &amp; molecular</text>
+  <text x="344" y="397" class="body-txt">biology using 3D metal scale</text>
+  <text x="344" y="413" class="body-txt">models &amp; Chargaff's ratios.</text>
+
+  <text x="336" y="437" class="body-txt">• <tspan class="body-bold">Complementary Rungs:</tspan> Specific</text>
+  <text x="344" y="453" class="body-txt"><tspan class="body-bold">A–T</tspan> and <tspan class="body-bold">C–G</tspan> hydrogen-bonded</text>
+  <text x="344" y="469" class="body-txt">rungs connect two antiparallel</text>
+  <text x="344" y="485" class="body-txt">sugar-phosphate chains.</text>
+
+  <text x="336" y="509" class="body-txt">• <tspan class="body-bold">Secret of Heredity:</tspan> Published</text>
+  <text x="344" y="525" class="body-txt">in <tspan font-style="italic">Nature</tspan> (April 1953) — proved</text>
+  <text x="344" y="541" class="body-txt">how cells copy &amp; pass genetic</text>
+  <text x="344" y="557" class="body-txt">instructions across generations.</text>
+
+  <rect x="336" y="566" width="232" height="19" rx="4" fill="#ccfbf1"/>
+  <text x="452" y="579" text-anchor="middle" class="stage-kicker" fill="#0f766e" font-size="8.8" style="font-size: 8.8px;">FACTOR: INTERDISCIPLINARY TEAM</text>
+
+  <!-- Connector Arrow 2 -> 3 -->
+  <line x1="587" y1="261" x2="612" y2="261" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+
+  <!-- =================================================================== -->
+  <!-- STAGE 3 CARD (x=616..880): 1990–2003 HUMAN GENOME PROJECT           -->
+  <!-- =================================================================== -->
+  <rect x="616" y="108" width="264" height="486" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#cardDrop)"/>
+  <rect x="616" y="108" width="264" height="6" rx="3" fill="#4f46e5"/>
+  <text x="632" y="132" class="stage-kicker" fill="#4338ca">STAGE 3 · 1990–2003 (GLOBAL)</text>
+  <text x="632" y="151" class="stage-title">Human Genome Project</text>
+  <text x="632" y="168" class="stage-sub">18+ Countries · UK Sanger &amp; US NIH</text>
+
+  <!-- Visual Box: Supercomputer Sequence Readout -->
+  <rect x="632" y="180" width="232" height="162" rx="8" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.2"/>
+  <rect x="644" y="192" width="208" height="82" rx="6" fill="#0f172a"/>
+  <!-- Chromatogram Peaks -->
+  <path d="M 652 258 Q 660 212 668 258 Q 676 226 684 258 Q 692 204 700 258 Q 708 232 716 258 Q 724 214 732 258" fill="none" stroke="#34d399" stroke-width="1.8"/>
+  <path d="M 732 258 Q 740 220 748 258 Q 756 208 764 258 Q 772 228 780 258 Q 788 214 796 258 Q 804 224 812 258 Q 824 210 836 258" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+  <text x="748" y="210" text-anchor="middle" class="mono-code" fill="#fde68a">A T G C C G T A T G C A G T</text>
+  <text x="748" y="269" text-anchor="middle" class="mono-code" fill="#94a3b8" font-size="8.5" style="font-size: 8.5px;">CHROMOSOME 17 · LOCUS 17q21.31</text>
+
+  <!-- HGP Metric Pills -->
+  <rect x="644" y="284" width="100" height="46" rx="5" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.2"/>
+  <text x="694" y="304" text-anchor="middle" class="stage-title" fill="#4338ca" font-size="14" style="fill: #4338ca; font-size: 14px;">~3 Billion</text>
+  <text x="694" y="320" text-anchor="middle" class="body-txt" font-size="9.3" style="font-size: 9.3px;">DNA Base Pairs</text>
+
+  <rect x="752" y="284" width="100" height="46" rx="5" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.2"/>
+  <text x="802" y="304" text-anchor="middle" class="stage-title" fill="#4338ca" font-size="14" style="fill: #4338ca; font-size: 14px;">~20,000</text>
+  <text x="802" y="320" text-anchor="middle" class="body-txt" font-size="9.3" style="font-size: 9.3px;">Human Genes</text>
+
+  <!-- Stage 3 Notes -->
+  <text x="632" y="365" class="body-txt">• <tspan class="body-bold">Big-Science Computing:</tspan> Over 13</text>
+  <text x="640" y="381" class="body-txt">years, labs in the USA, UK, France,</text>
+  <text x="640" y="397" class="body-txt">Germany, Japan &amp; China decoded</text>
+  <text x="640" y="413" class="body-txt">the entire human genome.</text>
+
+  <text x="632" y="437" class="body-txt">• <tspan class="body-bold">Open-Access Atlas:</tspan> Published</text>
+  <text x="640" y="453" class="body-txt">freely online in <tspan class="body-bold">April 2003</tspan> (50</text>
+  <text x="640" y="469" class="body-txt">years after Watson &amp; Crick) at</text>
+  <text x="640" y="485" class="body-txt">a public cost of ~$2.7 billion.</text>
+
+  <text x="632" y="509" class="body-txt">• <tspan class="body-bold">Fault-Finding Map:</tspan> Allowed</text>
+  <text x="640" y="525" class="body-txt">clinicians to compare healthy DNA</text>
+  <text x="640" y="541" class="body-txt">against specific mutations causing</text>
+  <text x="640" y="557" class="body-txt">over 4,000 inherited conditions.</text>
+
+  <rect x="632" y="566" width="232" height="19" rx="4" fill="#e0e7ff"/>
+  <text x="748" y="579" text-anchor="middle" class="stage-kicker" fill="#4338ca" font-size="8.8" style="font-size: 8.8px;">FACTOR: GOVT FUNDING &amp; COMPUTING</text>
+
+  <!-- Connector Arrow 3 -> 4 -->
+  <line x1="883" y1="261" x2="908" y2="261" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+
+  <!-- =================================================================== -->
+  <!-- STAGE 4 CARD (x=912..1176): CLINICAL IMPACT and LIMITS                -->
+  <!-- =================================================================== -->
+  <rect x="912" y="108" width="264" height="486" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#cardDrop)"/>
+  <rect x="912" y="108" width="264" height="6" rx="3" fill="#059669"/>
+  <text x="928" y="132" class="stage-kicker" fill="#047857">STAGE 4 · MODERN GENOMIC ERA</text>
+  <text x="928" y="151" class="stage-title">Clinical Impact &amp; Limits</text>
+  <text x="928" y="168" class="stage-sub">Screening · Prevention · Therapy</text>
+
+  <!-- Visual Box: BRCA Screening and Targeted Medicine -->
+  <rect x="928" y="180" width="232" height="162" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.2"/>
+  <!-- Chromosome Locus Illustration -->
+  <g transform="translate(944, 196)">
+    <rect x="8" y="6" width="12" height="46" rx="6" fill="#6ee7b7" stroke="#047857" stroke-width="1.5"/>
+    <rect x="24" y="6" width="12" height="46" rx="6" fill="#6ee7b7" stroke="#047857" stroke-width="1.5"/>
+    <ellipse cx="20" cy="26" rx="14" ry="4" fill="#047857"/>
+    <line x1="6" y1="40" x2="38" y2="40" stroke="#dc2626" stroke-width="2.8"/>
+  </g>
+  <text x="996" y="213" class="body-txt"><tspan class="body-bold" fill="#991b1b" style="fill: #991b1b;">BRCA1 / BRCA2</tspan></text>
+  <text x="996" y="228" class="body-txt" font-size="9.6" style="font-size: 9.6px;">Faulty tumour-suppressor</text>
+  <text x="996" y="242" class="body-txt" font-size="9.6" style="font-size: 9.6px;">gene (up to 85% risk)</text>
+
+  <rect x="940" y="260" width="208" height="32" rx="5" fill="#ffffff" stroke="#6ee7b7" stroke-width="1.2"/>
+  <text x="1044" y="274" text-anchor="middle" class="stage-kicker" fill="#047857" font-size="8.8" style="font-size: 8.8px;">PREVENTATIVE ACTION</text>
+  <text x="1044" y="287" text-anchor="middle" class="body-txt" font-size="9.5" style="font-size: 9.5px;">Early screening / mastectomy</text>
+
+  <rect x="940" y="299" width="208" height="32" rx="5" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.2"/>
+  <text x="1044" y="313" text-anchor="middle" class="stage-kicker" fill="#92400e" font-size="8.8" style="font-size: 8.8px;">CURRENT CLINICAL LIMITATION</text>
+  <text x="1044" y="326" text-anchor="middle" class="body-txt" font-size="9.5" style="font-size: 9.5px;">Identifies risk &gt; outright cure</text>
+
+  <!-- Stage 4 Notes -->
+  <text x="928" y="365" class="body-txt">• <tspan class="body-bold">Genetic Screening:</tspan> Blood/saliva</text>
+  <text x="936" y="381" class="body-txt">tests detect <tspan class="body-bold">BRCA1/BRCA2</tspan> (breast</text>
+  <text x="936" y="397" class="body-txt">&amp; ovarian cancer — e.g. Angelina</text>
+  <text x="936" y="413" class="body-txt">Jolie), <tspan class="body-bold">cystic fibrosis</tspan> &amp; <tspan class="body-bold">Down's</tspan>.</text>
+
+  <text x="928" y="437" class="body-txt">• <tspan class="body-bold">Pharmacogenomics:</tspan> Tailors</text>
+  <text x="936" y="453" class="body-txt">targeted cancer therapies (e.g.</text>
+  <text x="936" y="469" class="body-txt">Herceptin) &amp; embryonic/stem-cell</text>
+  <text x="936" y="485" class="body-txt">research to a patient's DNA.</text>
+
+  <text x="928" y="509" class="body-txt">• <tspan class="body-bold">Unfinished Treatment Gap:</tspan></text>
+  <text x="936" y="525" class="body-txt">Gene therapy is advancing, yet</text>
+  <text x="936" y="541" class="body-txt">conditions like Huntington's or</text>
+  <text x="936" y="557" class="body-txt">Down's still have no genetic cure.</text>
+
+  <rect x="928" y="566" width="232" height="19" rx="4" fill="#d1fae5"/>
+  <text x="1044" y="579" text-anchor="middle" class="stage-kicker" fill="#047857" font-size="8.8" style="font-size: 8.8px;">IMPACT: DIAGNOSIS &amp; PREVENTION</text>
+
+  <!-- =================================================================== -->
+  <!-- BOTTOM EDEXCEL EXAM DISTINCTION CALLOUT BOX                         -->
+  <!-- =================================================================== -->
+  <rect x="24" y="610" width="1152" height="122" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2" filter="url(#cardDrop)"/>
+  <rect x="24" y="610" width="12" height="122" rx="4" fill="#dc2626"/>
+  <text x="52" y="635" class="exam-hdr">Exam Distinction: Discovering DNA transformed diagnosis and screening of hereditary/genetic disorders, NOT infectious bacterial diseases.</text>
+
+  <!-- Comparison Left Pill (DNA = Hereditary) -->
+  <rect x="52" y="648" width="542" height="68" rx="7" fill="#ffffff" stroke="#86efac" stroke-width="1.4"/>
+  <text x="68" y="667" class="stage-kicker" fill="#047857">✓ WHAT DNA &amp; GENOMICS EXPLAINED (INTERNAL HEREDITARY CODE)</text>
+  <text x="68" y="685" class="body-txt"><tspan class="body-bold">Inherited / Genetic Disorders:</tspan> Cystic fibrosis, Huntington's disease, sickle-cell</text>
+  <text x="68" y="702" class="body-txt">anaemia, Down's syndrome &amp; inherited <tspan class="body-bold">BRCA1/2</tspan> cancer susceptibility.</text>
+
+  <!-- Comparison Right Pill (NOT Infectious Bacteria) -->
+  <rect x="614" y="648" width="542" height="68" rx="7" fill="#ffffff" stroke="#fca5a5" stroke-width="1.4"/>
+  <text x="630" y="667" class="stage-kicker" fill="#b91c1c">✗ COMMON EXAM TRAP — NOT CAUSED OR CURED BY DNA</text>
+  <text x="630" y="685" class="body-txt"><tspan class="body-bold">Infectious Pathogens:</tspan> Cholera, tuberculosis, sepsis &amp; MRSA are caused by</text>
+  <text x="630" y="702" class="body-txt">external microbes (<tspan class="body-bold">Germ Theory</tspan>) and treated with <tspan class="body-bold">antibiotics / vaccines</tspan>, not DNA.</text>
+</svg>
