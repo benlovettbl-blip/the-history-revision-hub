@@ -16149,6 +16149,8 @@ export function openHotspotWhiteboardModal(mapBlock, bridge = {}) {
           .trim()
       : '';
 
+    const spotPhotoUrl = spot.photo ? getAssetUrl(spot.photo) : '';
+
     if (dispatchBody) {
       dispatchBody.innerHTML = `
         <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;">
@@ -16157,10 +16159,20 @@ export function openHotspotWhiteboardModal(mapBlock, bridge = {}) {
           </span>
           ${spot.date ? `<span style="font-size: 0.84rem; font-weight: 800; color: #fbbf24; background: rgba(245, 158, 11, 0.14); border: 1px solid rgba(245, 158, 11, 0.35); padding: 2px 9px; border-radius: 4px;">${spot.date}</span>` : ''}
         </div>
-        <h3 style="margin: 4px 0 12px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; color: #ffffff; line-height: 1.3;">
+        <h3 style="margin: 4px 0 10px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.32rem; color: #ffffff; line-height: 1.28;">
           ${spot.title}
         </h3>
-        <p style="margin: 0 0 16px 0; font-size: 1.08rem; line-height: 1.66; color: #e2e8f0;">
+        ${
+          spotPhotoUrl
+            ? `
+          <div style="margin: 0 0 12px 0; border: 1px solid rgba(148, 163, 184, 0.32); border-radius: 8px; overflow: hidden; background: #0b1120;">
+            <img src="${spotPhotoUrl}" alt="${escWbAttr(spot.title)}" style="width: 100%; height: 155px; object-fit: cover; object-position: ${spot.photo_pos || 'center 35%'}; display: block;" />
+            ${spot.photo_caption ? `<div style="padding: 5px 10px; font-size: 0.74rem; color: #cbd5e1; background: rgba(15, 23, 42, 0.9); border-top: 1px solid rgba(148, 163, 184, 0.2);">${spot.photo_caption}</div>` : ''}
+          </div>
+        `
+            : ''
+        }
+        <p style="margin: 0 0 14px 0; font-size: 1.02rem; line-height: 1.6; color: #e2e8f0;">
           ${spot.details}
         </p>
         ${

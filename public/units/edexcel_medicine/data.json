@@ -29946,78 +29946,93 @@
             "<p><span class=\"para-ref\">[1.1]</span> Battlefield survival on the Western Front depended on the Chain of Evacuation, beginning with battalion stretcher bearers. Sixteen dedicated men per infantry battalion worked in **four-man stretcher-bearer squads**, carrying heavy canvas stretchers into No Man's Land under heavy machine-gun and artillery fire to recover fallen soldiers from muddy shell craters and barbed wire entanglements across active sectors.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Bearers hauled casualties while **traversing shell-cratered mud** and clogged communication ditches to reach relative safety. Achieving successful **frontline retrieval under fire** was exhausting physical work; bearers administered morphine, applied basic field dressings, and carried wounded men two hundred yards behind frontline trenches to the battalion medical officer waiting at the frontline Regimental Aid Post for urgent assessment.</p>"
           ],
-          "image": "/images/med_svg_chain_of_evacuation.svg",
+          "image": "/images/med_plate_chain_of_evacuation_photos.jpg",
           "stage_hook_map": {
-            "map_image": "/images/med_svg_chain_of_evacuation.svg",
+            "map_image": "/images/med_plate_chain_of_evacuation_photos.jpg",
             "kicker": "RAMC & FANY Logistics • Paper 1 Section A",
             "title": "The Five-Stage Chain of Evacuation (No Man’s Land to Coastal Base)",
-            "subtitle": "Click each stage along the cross-section to compare distance, transport, staff, and exact medical treatment.",
+            "subtitle": "Click each stage across the five wartime Imperial War Museum photographs to compare distance, transport, staff, and surgical care.",
             "hotspots": [
               {
                 "id": "evac-1",
-                "x": 12,
-                "y": 58,
+                "x": 6,
+                "y": 18,
                 "color": "#dc2626",
                 "label": "1. Bearers",
                 "badge": "0m • Front Line",
                 "date": "16 Bearers / Battalion",
                 "title": "Stage 1: Regimental Stretcher Bearers (Recovery Under Fire)",
                 "details": "Only 16 stretcher bearers per 1,000-man infantry battalion (4 men per stretcher, rising to 6–8 in Passchendaele mud). Working under shellfire or at night, they applied shell dressings and basic tourniquets to stop fatal bleeding.",
-                "hinge": "Why did a battalion with 300 casualties immediately face a dangerous stretcher-bearer shortage?"
+                "hinge": "Why did a battalion with 300 casualties immediately face a dangerous stretcher-bearer shortage?",
+                "photo": "/images/stretcher_bearers_passchendaele_1917.jpg",
+                "photo_pos": "center 35%",
+                "photo_caption": "IWM Q 5935: Seven mud-splattered stretcher-bearers wading knee-deep at Passchendaele (16 Aug 1917)."
               },
               {
                 "id": "evac-2",
-                "x": 30,
-                "y": 52,
+                "x": 38,
+                "y": 18,
                 "color": "#d97706",
                 "label": "2. RAP",
                 "badge": "~200m Back",
                 "date": "1 RMO + Orderlies",
                 "title": "Stage 2: Regimental Aid Post (RAP) in Dugout or Ruined Cellar",
                 "details": "Staffed by a single Regimental Medical Officer (RMO) and stretcher-orderlies. No beds or major surgery: the RMO bandaged lightly wounded men to return straight to the trench, gave morphine for pain, and labelled serious cases for relay back.",
-                "hinge": "Why was major abdominal or limb surgery impossible inside a Regimental Aid Post?"
+                "hinge": "Why was major abdominal or limb surgery impossible inside a Regimental Aid Post?",
+                "photo": "/images/med_stage_ww1_operating_theatre.jpg",
+                "photo_pos": "center 32%",
+                "photo_caption": "IWM Archive: Regimental Medical Officer & orderlies bandaging a casualty inside a vaulted cellar aid post."
               },
               {
                 "id": "evac-3",
-                "x": 49,
-                "y": 48,
+                "x": 80,
+                "y": 18,
                 "color": "#0284c7",
                 "label": "3. ADS / MDS",
                 "badge": "1–2 Miles Back",
                 "date": "Field Ambulance (RAMC)",
                 "title": "Stage 3: Field Ambulance — Advanced & Main Dressing Stations",
                 "details": "Mobile RAMC medical units in tents or abandoned buildings (no female nurses at the ADS until late-war exceptions). Orderlies and doctors gave anti-tetanus injections, applied Thomas Splints to fractured femurs, stabilised shock, and loaded horse or motor ambulances.",
-                "hinge": "Why did Field Ambulances sometimes choke when designed for 150 men while 1,000+ wounded arrived?"
+                "hinge": "Why did Field Ambulances sometimes choke when designed for 150 men while 1,000+ wounded arrived?",
+                "photo": "/images/source_b_ambulance_somme_1916.jpg",
+                "photo_pos": "center 55%",
+                "photo_caption": "IWM Archive: RAMC orderlies loading stretcher cases into a motor ambulance wagon on the Somme (1916)."
               },
               {
                 "id": "evac-4",
-                "x": 70,
-                "y": 44,
+                "x": 6,
+                "y": 63,
                 "color": "#0f766e",
                 "label": "4. CCS",
                 "badge": "7–10 Miles Back",
                 "date": "Critical Surgical Hub",
                 "title": "Stage 4: Casualty Clearing Station (CCS) by the Railway",
                 "details": "The decisive life-saving hub (~1,000 casualties at once; first stage with trained QAs/VAD female nurses). Divided into 3 triage zones (Walking Wounded, Need Urgent Life-Saving Surgery, Moribund/Dying), equipped with operating theatres, mobile X-rays, and blood transfusions.",
-                "hinge": "Why did moving urgent surgery forward from coastal Base Hospitals to the CCS save thousands from gas gangrene?"
+                "hinge": "Why did moving urgent surgery forward from coastal Base Hospitals to the CCS save thousands from gas gangrene?",
+                "photo": "/images/casualty_clearing_station_ww1.jpg",
+                "photo_pos": "center 52%",
+                "photo_caption": "IWM Archive: Whitewashed Casualty Clearing Station surgical hut with overhead electric lighting."
               },
               {
                 "id": "evac-5",
-                "x": 89,
-                "y": 40,
+                "x": 54,
+                "y": 63,
                 "color": "#1d4ed8",
                 "label": "5. Base Hospital",
                 "badge": "French Coast -> UK",
                 "date": "2,500+ Beds & Ships",
                 "title": "Stage 5: Coastal Base Hospitals (Boulogne, Calais, Étaples)",
                 "details": "Reached via purpose-built Red Cross Ambulance Trains (and smooth-gliding canal barges for head/chest wounds). Base Hospitals housed specialist neurosurgery, orthopaedic, and Carrel-Dakin wards, stabilised men for Blighty hospital ships, and returned recovered soldiers to duty.",
-                "hinge": "Why were slow canal barges sometimes preferred over jolting lorries or trains for fractured skulls and chests?"
+                "hinge": "Why were slow canal barges sometimes preferred over jolting lorries or trains for fractured skulls and chests?",
+                "photo": "/images/ramc_canal_barge.jpg",
+                "photo_pos": "center 52%",
+                "photo_caption": "IWM Archive: QAIMNS military nursing sisters tending a casualty aboard a converted hospital canal barge (c.1917)."
               }
             ],
-            "image": "/images/med_svg_chain_of_evacuation.svg"
+            "image": "/images/med_plate_chain_of_evacuation_photos.jpg"
           },
-          "caption": "Tactical diagram of the RAMC Chain of Evacuation on the Western Front: Stretcher Bearers → Regimental Aid Post (RAP) → Dressing Stations (ADS/MDS) → Casualty Clearing Station (CCS) → Coastal Base Hospital.",
-          "image_caption": "Tactical diagram of the RAMC Chain of Evacuation on the Western Front: Stretcher Bearers → Regimental Aid Post (RAP) → Dressing Stations (ADS/MDS) → Casualty Clearing Station (CCS) → Coastal Base Hospital."
+          "caption": "Wartime Imperial War Museum photographic sequence of the RAMC Five-Stage Chain of Evacuation: Stretcher Bearers (Passchendaele, 1917) → Regimental Aid Post Cellar → Field Ambulance Motor Convoy (Somme, 1916) → Casualty Clearing Station Operating Hut → Hospital Canal Barge & Coastal Base.",
+          "image_caption": "Wartime Imperial War Museum photographic sequence of the RAMC Five-Stage Chain of Evacuation: Stretcher Bearers (Passchendaele, 1917) → Regimental Aid Post Cellar → Field Ambulance Motor Convoy (Somme, 1916) → Casualty Clearing Station Operating Hut → Hospital Canal Barge & Coastal Base."
         },
         {
           "act": 2,

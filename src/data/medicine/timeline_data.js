@@ -1645,8 +1645,8 @@ export const MED_ERAS = [
           'RAMC stretcher-bearers struggling knee-deep through shell-cratered liquid mud at Passchendaele (August 1917) to carry a wounded soldier toward a Regimental Aid Post.',
         imageCaption:
           'RAMC stretcher-bearers struggling knee-deep through shell-cratered liquid mud at Passchendaele (August 1917) to carry a wounded soldier toward a Regimental Aid Post.',
-        diagramUrl: '/images/med_svg_chain_of_evacuation.svg',
-        diagramLabel: 'RAMC Chain of Evacuation Diagram',
+        diagramUrl: '/images/med_plate_chain_of_evacuation_photos.jpg',
+        diagramLabel: 'RAMC Chain of Evacuation (Archival Photographs)',
         factors: ['war', 'institutions'],
         keyAgents: ['The RAMC & FANY', 'Pat Beauchamp'],
         keyTerms: [
