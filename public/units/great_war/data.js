@@ -3382,12 +3382,12 @@ export default {
         {
           "type": "era",
           "url": "https://era.org.uk/streaming-service-resource/1-the-approach-of-war-history-file/",
-          "title": "BBC / ERA: History File – The Approach of War",
-          "duration": "20 mins 00 secs",
+          "title": "BBC Two / ERA: History File – The First World War, Ep. 1: The Approach of War",
+          "duration": "18 mins 26 secs",
           "pathway": "Archival Documentary",
-          "teacher_guidance": "Classic BBC educational documentary examining the diplomatic road to war: militarism, the naval race, arms budgets, and the fatal July Crisis. Recommended Watch Window: 01:30–07:45 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Scholarly BBC educational documentary with primary newsreels.",
-          "viewing_task": "<ol><li><strong>[02:15] Recall:</strong> What percentage did military spending among the major European powers increase between 1870 and 1914?</li><li><strong>[04:30] Explain:</strong> How did universal conscription and the growth of standing peacetime armies of millions of men create a momentum towards war that civilian politicians could not halt?</li><li><strong>[06:45] Challenge:</strong> Evaluate the role of the press and public opinion in 1914: did bellicose newspaper headlines force politicians into aggressive stances?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Military spending increased by over 300%.</li><li><strong>Explain:</strong> European powers (except Britain) maintained compulsory peacetime conscription, training millions of young men into reserves. Once a government ordered mobilization, millions of men reported to railheads within 24 hours. Because halting mobilization would leave a country completely defenseless against an advancing enemy, the military mobilization process effectively took decision-making away from diplomats and placed it in the hands of railway generals.</li><li><strong>Challenge:</strong> Cheap mass-circulation newspapers (\"the gutter press\") sensationalized international crises to boost sales, printing xenophobic cartoons and exaggerating foreign threats. This whipped up patriotic war hysteria among urban populations, making it politically suicidal for leaders like Bethmann-Hollweg or Sazonov to appear weak or propose compromise.</li></ol>"
+          "teacher_guidance": "Classic BBC Two History File documentary asking who was to blame for the outbreak of the First World War—examining militarism, alliance commitments, imperial rivalry, and the July 1914 crisis. Recommended Watch Window: 01:30–08:30 • Lesson Phase: Guided Instruction & Historiographical Debate.",
+          "viewing_task": "<ol><li><strong>[02:15] Recall:</strong> How did accelerating military and naval budgets among the European Great Powers between 1870 and 1914 heighten mutual suspicion?</li><li><strong>[05:00] Explain:</strong> Why did rigid mobilisation timetables and alliance pledges make it so difficult for diplomats to halt the slide to war in July 1914?</li><li><strong>[14:00] Hinge Question:</strong> Does primary evidence from 1914 support blaming one single aggressor, or did all the Great Powers share responsibility for the catastrophe?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Arms spending surged dramatically (by over 300% across the Great Powers), turning diplomatic crises into tests of military readiness.</li><li><strong>Explain:</strong> Once conscript armies began railway mobilisation, generals warned that pausing would leave borders defenceless—handing initiative from civilian diplomats to military planners.</li><li><strong>Hinge Question:</strong> While Germany’s \"Blank Cheque\" and Schlieffen Plan escalated a Balkan crisis into continental war, Austro-Hungarian brinkmanship, Russian general mobilisation, and French revanchism all contributed to a shared failure of European statesmanship.</li></ol>"
         },
         {
           "type": "youtube",
@@ -6317,6 +6317,16 @@ export default {
           "teacher_guidance": "Peter Jackson’s groundbreaking restored, colorized, and speed-corrected Imperial War Museums archival documentary, utilizing lip-read original footage and BBC sound recordings of veterans. Recommended Watch Window: 00:00–02:24 (Full Trailer). Lesson Phase: In-Depth Documentary Investigation & Archival Grounding. Tone Alert: Revolutionary historical documentary bringing primary archival film to lifelike vibrancy.",
           "viewing_task": "<ol><li><strong>[00:45] Recall:</strong> What cutting-edge restoration techniques did director Peter Jackson use on 100-year-old silent, black-and-white Imperial War Museums archival film?</li><li><strong>[01:30] Explain:</strong> How does hearing authentic voice recordings of First World War soldiers narrating their own experiences transform our historical understanding of 1914?</li><li><strong>[02:00] Challenge:</strong> Evaluate why restoring archival footage into color and 24-frames-per-second lifelike speed changes students' emotional connection to historical events compared to grainy black-and-white silent newsreels.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Digital hand-colorization, speed correction from variable hand-cranked frame rates to smooth 24fps, forensic lip-reading by deaf experts to reconstruct dialogue, and authentic sound effects recorded using period weapons and equipment.</li><li><strong>Explain:</strong> By discarding celebrity voiceover and relying exclusively on BBC audio interviews recorded with real veterans in the 1960s, the film lets soldiers speak for themselves, capturing their dry humor, terror, endurance, and quiet grief without modern moral judgment.</li><li><strong>Challenge:</strong> Black-and-white, sped-up footage makes past historical figures look comical, jerky, and alien, creating psychological distance. Transforming the footage into full color and natural speed bridges the century-long divide, forcing modern viewers to recognize that the soldiers shivering in muddy trenches were teenagers and young men identical to themselves today.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/1-the-approach-of-war-history-file/",
+          "title": "BBC Two / ERA: History File – The First World War, Ep. 1: The Approach of War",
+          "duration": "18 mins 26 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Classic BBC Two History File documentary asking who was to blame for the outbreak of the First World War—examining militarism, alliance commitments, imperial rivalry, and the July 1914 crisis. Recommended Watch Window: 01:30–08:30 • Lesson Phase: Guided Instruction & Historiographical Debate.",
+          "viewing_task": "<ol><li><strong>[02:15] Recall:</strong> How did accelerating military and naval budgets among the European Great Powers between 1870 and 1914 heighten mutual suspicion?</li><li><strong>[05:00] Explain:</strong> Why did rigid mobilisation timetables and alliance pledges make it so difficult for diplomats to halt the slide to war in July 1914?</li><li><strong>[14:00] Hinge Question:</strong> Does primary evidence from 1914 support blaming one single aggressor, or did all the Great Powers share responsibility for the catastrophe?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Arms spending surged dramatically (by over 300% across the Great Powers), turning diplomatic crises into tests of military readiness.</li><li><strong>Explain:</strong> Once conscript armies began railway mobilisation, generals warned that pausing would leave borders defenceless—handing initiative from civilian diplomats to military planners.</li><li><strong>Hinge Question:</strong> While Germany’s \"Blank Cheque\" and Schlieffen Plan escalated a Balkan crisis into continental war, Austro-Hungarian brinkmanship, Russian general mobilisation, and French revanchism all contributed to a shared failure of European statesmanship.</li></ol>"
         }
       ],
       "sources": [
@@ -7241,7 +7251,10 @@ export default {
         "How did the existence of inflexible military strategies, such as the Schlieffen Plan, affect the power of politicians and diplomats during the July Crisis?"
       ],
       "hinge_question": "If the European leaders were truly just 'sleepwalkers' who didn't want war, does that mean they are innocent of causing it? Why or why not?",
-      "is_adapted": true
+      "is_adapted": true,
+      "source_type": "historical_scholarship",
+      "source_type_label": "Modern Historical Scholarship",
+      "is_primary": false
     },
     {
       "lesson_index": 1,
@@ -7256,8 +7269,11 @@ export default {
         "How does the author describe the true motivations of the imperialists?",
         "Why do you think this text was considered highly controversial when it was published in 1899?"
       ],
-      "is_adapted": false,
-      "hinge_question": "How does Conrad use the image of the French warship 'firing into a continent' to expose the absurdity and violence of the 'civilizing mission' in Africa?"
+      "is_adapted": true,
+      "hinge_question": "How does Conrad use the image of the French warship 'firing into a continent' to expose the absurdity and violence of the 'civilizing mission' in Africa?",
+      "source_type": "classic_literature",
+      "source_type_label": "Classic Imperial Literature",
+      "is_primary": false
     },
     {
       "lesson_index": 2,
@@ -7272,8 +7288,11 @@ export default {
         "According to the extract, why was the German Empire building its fleet?",
         "How would reading a popular thriller like this have affected the British public's attitude toward Germany?"
       ],
-      "is_adapted": false,
-      "hinge_question": "If 'The Riddle of the Sands' was a fictional novel, why do you think it caused such real-world panic and paranoia among the British public regarding the German Navy?"
+      "is_adapted": true,
+      "hinge_question": "If 'The Riddle of the Sands' was a fictional novel, why do you think it caused such real-world panic and paranoia among the British public regarding the German Navy?",
+      "source_type": "classic_literature",
+      "source_type_label": "Edwardian Invasion Literature (1903)",
+      "is_primary": false
     },
     {
       "lesson_index": 3,
@@ -7289,7 +7308,10 @@ export default {
         "According to the text, why were the diplomats unable to stop the war once it started?"
       ],
       "is_adapted": true,
-      "hinge_question": "How did the sheer speed and rigid timing of military mobilization plans like the Schlieffen Plan make a diplomatic solution almost impossible during the July Crisis?"
+      "hinge_question": "How did the sheer speed and rigid timing of military mobilization plans like the Schlieffen Plan make a diplomatic solution almost impossible during the July Crisis?",
+      "source_type": "historical_scholarship",
+      "source_type_label": "Classic Historical Scholarship",
+      "is_primary": false
     },
     {
       "lesson_index": 4,
@@ -7305,7 +7327,10 @@ export default {
         "How does this extract help explain the incredible surge of Nationalism and volunteering at the outbreak of the war?"
       ],
       "is_adapted": true,
-      "hinge_question": "Why does the narrator argue that the older generation and teachers like Kantorek betrayed the 'Iron Youth' of Germany?"
+      "hinge_question": "Why does the narrator argue that the older generation and teachers like Kantorek betrayed the 'Iron Youth' of Germany?",
+      "source_type": "classic_literature",
+      "source_type_label": "Classic Anti-War Literature (Adapted)",
+      "is_primary": false
     }
   ],
   "assessments": [

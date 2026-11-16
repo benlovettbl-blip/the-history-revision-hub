@@ -272,38 +272,6 @@ export const INITIAL_PLAYERS = [
     "byesReceived": 1,
     "lastRoundBye": false,
     "username": "BarLevDefender"
-  },
-  {
-    "id": "p_1794496895101",
-    "name": "Jensen W.",
-    "nickname": "Jensen W.",
-    "realName": "Jensen W.",
-    "house": "dreadnought",
-    "rating": 1000,
-    "games": 3,
-    "won": 1,
-    "drawn": 1,
-    "lost": 1,
-    "rank": 14,
-    "username": "JensenW.",
-    "byesReceived": 0,
-    "lastRoundBye": false
-  },
-  {
-    "id": "p_1794498328039",
-    "name": "Harry M.",
-    "nickname": "Harry M.",
-    "realName": "Harry M.",
-    "house": "warrior",
-    "rating": 985,
-    "games": 1,
-    "won": 0,
-    "drawn": 0,
-    "lost": 1,
-    "rank": 15,
-    "username": "HarryM.",
-    "byesReceived": 0,
-    "lastRoundBye": false
   }
 ];
 
@@ -324,20 +292,6 @@ export const INITIAL_MATCHES = [
     "opening": "Period 6 Match"
   },
   {
-    "id": "m_1794498650955",
-    "date": "Thursday Period 6",
-    "timestamp": 1794498650955,
-    "round": "Period 6 Match",
-    "white": "Jensen W.",
-    "black": "The Golden Stresemann",
-    "whiteId": "p_1794496895101",
-    "blackId": "p_1789653983357",
-    "whiteHouse": "dreadnought",
-    "blackHouse": "invincible",
-    "result": "1-0",
-    "opening": "Period 6 Match"
-  },
-  {
     "id": "m_1794498618311",
     "date": "Thursday Period 6",
     "timestamp": 1794498618311,
@@ -348,20 +302,6 @@ export const INITIAL_MATCHES = [
     "blackId": "p_1789653887768",
     "whiteHouse": "invincible",
     "blackHouse": "victory",
-    "result": "½-½",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1794498606976",
-    "date": "Thursday Period 6",
-    "timestamp": 1794498606976,
-    "round": "Period 6 Match",
-    "white": "The Golden Stresemann",
-    "black": "Jensen W.",
-    "whiteId": "p_1789653983357",
-    "blackId": "p_1794496895101",
-    "whiteHouse": "invincible",
-    "blackHouse": "dreadnought",
     "result": "½-½",
     "opening": "Period 6 Match"
   },
@@ -390,20 +330,6 @@ export const INITIAL_MATCHES = [
     "blackId": "p_1789653816754",
     "whiteHouse": "dreadnought",
     "blackHouse": "warrior",
-    "result": "0-1",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1794498354766",
-    "date": "Thursday Period 6",
-    "timestamp": 1794498354766,
-    "round": "Period 6 Match",
-    "white": "Harry M.",
-    "black": "William Harvey",
-    "whiteId": "p_1794498328039",
-    "blackId": "p_1789653960520",
-    "whiteHouse": "warrior",
-    "blackHouse": "dreadnought",
     "result": "0-1",
     "opening": "Period 6 Match"
   },
@@ -517,20 +443,6 @@ export const INITIAL_MATCHES = [
     "whiteHouse": "invincible",
     "blackHouse": "victory",
     "result": "0-1",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1794496907405",
-    "date": "Thursday Period 6",
-    "timestamp": 1794496907405,
-    "round": "Period 6 Match",
-    "white": "Sir Francis Drake",
-    "black": "Jensen W.",
-    "whiteId": "p_1789653842949",
-    "blackId": "p_1794496895101",
-    "whiteHouse": "dreadnought",
-    "blackHouse": "dreadnought",
-    "result": "1-0",
     "opening": "Period 6 Match"
   },
   {
@@ -1220,17 +1132,6 @@ export const INITIAL_MATCHES = [
     "opening": "Period 6 Match"
   },
   {
-    "id": "m_1789654858552",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Board 4",
-    "white": "Jacob",
-    "black": "Harry M.",
-    "whiteHouse": "invincible",
-    "blackHouse": "warrior",
-    "result": "1-0",
-    "opening": "Period 6 Match"
-  },
-  {
     "id": "m_1789654899677",
     "date": "Thursday Period 6",
     "round": "Period 6 Board 5",
@@ -1264,17 +1165,6 @@ export const INITIAL_MATCHES = [
     "opening": "Period 6 Match"
   },
   {
-    "id": "m_1789655420741",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Session",
-    "white": "Harry C.",
-    "black": "Will",
-    "whiteHouse": "warrior",
-    "blackHouse": "victory",
-    "result": "0-1",
-    "opening": "Open Game"
-  },
-  {
     "id": "m_1789655455233",
     "date": "Thursday Period 6",
     "round": "Period 6 Session",
@@ -1286,45 +1176,12 @@ export const INITIAL_MATCHES = [
     "opening": "Open Game"
   },
   {
-    "id": "m_1789655472335",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Session",
-    "white": "Tadhg",
-    "black": "Harry M.",
-    "whiteHouse": "invincible",
-    "blackHouse": "warrior",
-    "result": "1-0",
-    "opening": "Open Game"
-  },
-  {
-    "id": "m_1789656137925",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Board 6",
-    "white": "Jake",
-    "black": "Harry M.",
-    "whiteHouse": "warrior",
-    "blackHouse": "warrior",
-    "result": "1-0",
-    "opening": "Period 6 Match"
-  },
-  {
     "id": "m_1789656285605",
     "date": "Thursday Period 6",
     "round": "Period 6 Board 4",
     "white": "Tadhg",
     "black": "Alex",
     "whiteHouse": "invincible",
-    "blackHouse": "warrior",
-    "result": "½-½",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1789656418198",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Board 5",
-    "white": "Woody",
-    "black": "Harry C.",
-    "whiteHouse": "warrior",
     "blackHouse": "warrior",
     "result": "½-½",
     "opening": "Period 6 Match"
@@ -1374,17 +1231,6 @@ export const INITIAL_MATCHES = [
     "opening": "Adjudicated Time Draw"
   },
   {
-    "id": "adj_m_1789656473874_1",
-    "date": "Thursday Period 6 Final Adjudication",
-    "round": "Casual Rapid Match",
-    "white": "Austen",
-    "black": "Harry C.",
-    "whiteHouse": "dreadnought",
-    "blackHouse": "warrior",
-    "result": "½-½",
-    "opening": "Adjudicated Time Draw"
-  },
-  {
     "id": "adj_m_1789656473874_2",
     "date": "Thursday Period 6 Final Adjudication",
     "round": "Casual Rapid Match",
@@ -1414,17 +1260,6 @@ export const INITIAL_MATCHES = [
     "black": "Tadhg",
     "whiteHouse": "warrior",
     "blackHouse": "invincible",
-    "result": "½-½",
-    "opening": "Adjudicated Time Draw"
-  },
-  {
-    "id": "adj_m_1789656473874_5",
-    "date": "Thursday Period 6 Final Adjudication",
-    "round": "Casual Rapid Match",
-    "white": "Woody",
-    "black": "Harry M.",
-    "whiteHouse": "warrior",
-    "blackHouse": "warrior",
     "result": "½-½",
     "opening": "Adjudicated Time Draw"
   },
@@ -1459,17 +1294,6 @@ export const INITIAL_MATCHES = [
     "whiteHouse": "dreadnought",
     "blackHouse": "invincible",
     "result": "0-1",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1791469465525",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Board 5",
-    "white": "Woody",
-    "black": "Harry C.",
-    "whiteHouse": "warrior",
-    "blackHouse": "warrior",
-    "result": "1-0",
     "opening": "Period 6 Match"
   },
   {
@@ -1514,39 +1338,6 @@ export const INITIAL_MATCHES = [
     "whiteHouse": "dreadnought",
     "blackHouse": "warrior",
     "result": "½-½",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1791470453948",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Board 4",
-    "white": "Austen",
-    "black": "Harry C.",
-    "whiteHouse": "dreadnought",
-    "blackHouse": "warrior",
-    "result": "1-0",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1791470510001",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Board 6",
-    "white": "Harry M.",
-    "black": "Coach Practice",
-    "whiteHouse": "warrior",
-    "blackHouse": "coach",
-    "result": "1-0",
-    "opening": "Period 6 Match"
-  },
-  {
-    "id": "m_1791470510002",
-    "date": "Thursday Period 6",
-    "round": "Period 6 Board 6",
-    "white": "Harry M.",
-    "black": "Coach Practice",
-    "whiteHouse": "warrior",
-    "blackHouse": "coach",
-    "result": "1-0",
     "opening": "Period 6 Match"
   }
 ];

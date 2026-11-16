@@ -935,6 +935,18 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     unmountAiPromptCraftConsole();
   }
 
+  if (
+    viewName !== 'lessons' &&
+    typeof document !== 'undefined' &&
+    document.body &&
+    document.body.classList.contains('lesson-full-width')
+  ) {
+    document.body.classList.remove('lesson-full-width');
+    try {
+      sessionStorage.removeItem('hh_lesson_full_width');
+    } catch (e) {}
+  }
+
   // Safeguard lockdown mode enforcement
   const urlParams =
     typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;

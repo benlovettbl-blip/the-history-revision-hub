@@ -2711,6 +2711,16 @@
           "teacher_guidance": "Official BBC Select extract from 'Elizabeth I's Secret Agents', showing how spymaster Sir Francis Walsingham used cipher-breakers, double agents, and surveillance to defend the 1559 Religious Settlement against Catholic plots. Recommended Watch Window: 00:00–02:41 • Lesson Phase: Plenary / Threat & Survival.",
           "viewing_task": "<ol><li><strong>[00:30] Recall:</strong> Who ran Elizabeth I's intelligence network to uncover Catholic assassination plots against the Protestant throne?</li><li><strong>[01:20] Explain:</strong> Explain why Elizabeth's 'Middle Way' (1559) increasingly relied on surveillance and secret agents after 1570.</li><li><strong>[02:10] Challenge:</strong> Does the growth of Walsingham's spy state suggest Elizabeth's Religious Settlement was secure, or constantly under threat?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Sir Francis Walsingham, Elizabeth's Principal Secretary and spymaster.</li><li><strong>Explain:</strong> Once the Pope excommunicated Elizabeth in 1570 and seminary priests and plotters rallied around Mary, Queen of Scots, intercepting coded letters became vital to prevent regicide and Spanish invasion.</li><li><strong>Challenge:</strong> Most ordinary English parishioners conformed outwardly to the Settlement, yet foreign-backed Catholic conspiracies (Ridolfi, Throckmorton, Babington) forced the Tudor state to build Europe's most sophisticated intelligence network to survive.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/the-making-of-the-united-kingdom-01-elizabeth-and-her-people-history-file/",
+          "title": "BBC Two / ERA: History File – Making of the UK, Ep. 1: Elizabeth and Her People",
+          "duration": "19 mins 17 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: Royal Image, Portraits & Governing Tudor England | Tone Alert: BBC Two History File exploring how Elizabeth I projected royal authority through portraits and progresses while managing religious and social tensions.",
+          "viewing_task": "[02:30] Quick Check: How did Queen Elizabeth I use royal progresses and symbolic portraits to project strength across Tudor England?\n[10:30] Hinge Question: Why was maintaining religious and social stability (\"the Middle Way\") essential for an unmarried female monarch without a standing army?",
+          "model_answer": "Quick Check: Summer tours (progresses) let subjects see Gloriana in person while nobles paid for her court, and carefully controlled portraits used symbols (globes, pearls, sieves) to show wisdom and imperial power.\nHinge Question: Without a modern police force or army, Elizabeth depended on the loyalty of local Protestant and moderate gentry JPs to enforce laws and prevent Catholic or Puritan rebellion."
         }
       ],
       "quick_quiz": [
@@ -5415,6 +5425,26 @@
           "teacher_guidance": "In-depth biographical documentary tracing Charles I's belief in the Divine Right of Kings, the Eleven Years' Tyranny (1629–1640), Ship Money, the outbreak of Civil War in 1642, the New Model Army, and the 1649 trial at Westminster Hall. Recommended Watch Window: 00:00–08:30 (or homework extension) • Lesson Phase: Documentary Extension.",
           "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> What religious and political doctrine convinced Charles I that he answered only to God and not to Parliament?</li><li><strong>[04:30] Explain:</strong> Explain how disputes over Ship Money and William Laud's religious reforms united MPs and Scottish Covenanters against Charles I by 1640.</li><li><strong>[07:45] Challenge:</strong> At what point between 1642 and January 1649 did compromise with Charles I become impossible for Oliver Cromwell and the New Model Army?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> The Divine Right of Kings.</li><li><strong>Explain:</strong> Levying Ship Money inland without Parliamentary consent alarmed property owners over arbitrary taxation, while Laud's ceremonial church changes provoked fears of a secret return to Catholicism.</li><li><strong>Challenge:</strong> Even after defeat in the First Civil War, Charles secretly negotiated with Scottish forces to restart bloodshed in the Second Civil War (1648), convincing army leaders he was 'Charles Stuart, that man of blood' who could never be trusted on the throne.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/the-making-of-the-united-kingdom-03-the-political-divide-history-file/",
+          "title": "BBC Two / ERA: History File – Making of the UK, Ep. 3: The Political Divide (Charles I vs Parliament)",
+          "duration": "19 mins 21 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Divine Right, Personal Rule & Outbreak of Civil War (1642) | Tone Alert: BBC Two History File tracing why King Charles I and Parliament went to war over Ship Money, Personal Rule, religion, and control of the army.",
+          "viewing_task": "[03:00] Quick Check: Why did King Charles I’s belief in the \"Divine Right of Kings\" and collection of Ship Money during his 11 Years’ Personal Rule anger MPs?\n[11:30] Hinge Question: Was the English Civil War in 1642 triggered more by political disputes over taxation and parliamentary power, or by religious fear of Popery?",
+          "model_answer": "Quick Check: Charles believed he answered to God alone, ruling from 1629 to 1640 without calling Parliament and extending coastal Ship Money tax inland without parliamentary consent.\nHinge Question: Both fused together: MPs distrusted Charles’s arbitrary taxes, but it was Archbishop Laud’s Catholic-looking church reforms and the 1641 Irish Rebellion that made Puritan MPs refuse to trust Charles with an army."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/the-making-of-the-united-kingdom-04-oliver-cromwell-hero-or-villain-history-file/",
+          "title": "BBC Two / ERA: History File – Making of the UK, Ep. 4: Oliver Cromwell – Hero or Villain?",
+          "duration": "19 mins 16 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–15:00 | Lesson Phase: Historical Interpretations of Cromwell | Tone Alert: Classic BBC Two History File interpretations enquiry weighing Cromwell’s New Model Army, regicide, Protectorate, Puritan rule, and brutal campaign in Ireland (Drogheda, 1649).",
+          "viewing_task": "[03:00] Quick Check: List one achievement praised by admirers of Oliver Cromwell and one action condemned by his critics.\n[12:00] Hinge Question: Why has Oliver Cromwell been remembered simultaneously as a champion of parliamentary liberty in England and a ruthless conqueror in Ireland?",
+          "model_answer": "Quick Check: Admirers point to building the meritocratic New Model Army, defeating royal absolutism, and readmitting Jews to England; critics condemn dissolving Parliament by force, military rule by Major-Generals, and the 1649 massacres at Drogheda and Wexford.\nHinge Question: Different communities experienced Cromwell starkly differently—Puritan parliamentarians saw a godly general defending liberty of conscience, whereas Irish Catholics suffered slaughter and mass land confiscation."
         }
       ],
       "quick_quiz": [
@@ -6795,6 +6825,16 @@
           "teacher_guidance": "Synthesises the constitutional climax of the unit (1688–1689): why Parliament invited William of Orange and Mary to replace James II, and how the 1689 Bill of Rights permanently subordinated the Crown to Parliamentary law and taxation. Recommended Watch Window: 00:00–06:44 • Lesson Phase: Synoptic Plenary.",
           "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> Why did leading English nobles and bishops invite William of Orange and Mary to intervene against King James II in 1688?</li><li><strong>[03:20] Explain:</strong> Explain two legal limits placed permanently on royal power by the 1689 Bill of Rights.</li><li><strong>[05:30] Challenge:</strong> Looking across 1517–1689 (Henry VIII's Royal Supremacy, 1649 Regicide, and 1689 Bill of Rights), who ultimately won the struggle between Crown, Church, and Parliament?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> James II suspended Parliamentary laws, promoted Catholics to high office, and the birth of a Catholic male heir in June 1688 threatened a permanent Catholic dynasty.</li><li><strong>Explain:</strong> Monarchs could no longer suspend laws, levy taxes without Parliamentary grant, or maintain a peacetime standing army without Parliament's consent, while regular free elections and parliamentary free speech were guaranteed.</li><li><strong>Challenge:</strong> Whereas Henry VIII concentrated supreme spiritual and political power in the Crown in 1534, by 1689 Parliament emerged decisively sovereign—creating a constitutional monarchy where kings ruled only through Parliamentary statute.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/the-making-of-the-united-kingdom-05-the-settlement-history-file/",
+          "title": "BBC Two / ERA: History File – Making of the UK, Ep. 5: The Settlement (1688–1689)",
+          "duration": "19 mins 20 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Restoration, Glorious Revolution & 1689 Bill of Rights | Tone Alert: BBC Two History File concluding the 1500–1700 sequence by examining how the 1688 Glorious Revolution and 1689 Bill of Rights permanently shifted sovereignty to Parliament.",
+          "viewing_task": "[03:00] Quick Check: Why did English Protestant nobles invite William of Orange and Mary to replace King James II in 1688?\n[11:30] Hinge Question: How did the 1689 Bill of Rights resolve the century-long struggle over whether Crown or Parliament held ultimate power in Britain?",
+          "model_answer": "Quick Check: James II was an open Catholic whose suspending of Parliament’s laws and birth of a Catholic male heir in June 1688 raised fears of permanent Catholic absolutism.\nHinge Question: William and Mary only received the crown by accepting the 1689 Bill of Rights—outlawing taxation or a peacetime army without Parliament’s consent and establishing a permanent constitutional monarchy."
         }
       ],
       "quick_quiz": [

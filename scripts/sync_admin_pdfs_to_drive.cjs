@@ -162,14 +162,6 @@ const UNIT_FOLDER_CONFIG = {
     ),
     prefix: 'Industrialisation and Empire',
   },
-  early_modern_world: {
-    folder: path.join(
-      '01_Curriculum_and_Key_Stages',
-      'KS3 (Years 7-9)',
-      'Year 8 - Early Modern World',
-    ),
-    prefix: 'Early Modern World',
-  },
   monarchy_religion_power: {
     folder: path.join(
       '01_Curriculum_and_Key_Stages',
@@ -538,13 +530,26 @@ function buildDynamicPillarsMappings() {
     const entry = catalog[unitId];
     if (!entry) continue;
 
-    // Pillar 1: Master Textbook
+    // Pillar 1: Master Textbook(s) (Single Booklet or Multi-KT/Era Editions)
     if (entry.textbook && entry.textbook.pdfUrl) {
       mappings.push({
         folder: cfg.folder,
         src: path.basename(entry.textbook.pdfUrl),
         dest: `${cfg.prefix} Master Textbook.pdf`,
         category: 'Textbook',
+      });
+    } else if (entry.textbook && Array.isArray(entry.textbook.editions)) {
+      entry.textbook.editions.forEach((ed, idx) => {
+        if (!ed.pdfUrl) return;
+        const base = path.basename(ed.pdfUrl);
+        const tagMatch = base.match(/_textbook_(.+)\.pdf$/i);
+        const suffix = tagMatch ? tagMatch[1] : `Part ${idx + 1}`;
+        mappings.push({
+          folder: cfg.folder,
+          src: base,
+          dest: `${cfg.prefix} Master Textbook (${suffix}).pdf`,
+          category: 'Textbook',
+        });
       });
     }
 

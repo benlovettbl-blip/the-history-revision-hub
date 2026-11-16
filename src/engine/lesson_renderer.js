@@ -41,7 +41,6 @@ export const KS3_CANONICAL_UNITS = [
   'post_war_britain',
   'the_shoah',
   'water_and_sanitation',
-  'early_modern_world',
 ];
 export const GCSE_CANONICAL_UNITS = [
   'cme_new',
@@ -2080,6 +2079,54 @@ window.toggleDoNowTimer = function (timerId, action) {
     timer.totalSeconds += 300;
     if (timer.totalSeconds > timer.initialSeconds) timer.initialSeconds = timer.totalSeconds;
     updateDisplay();
+  }
+};
+
+window.toggleLessonFullWidth = function (forceState) {
+  if (typeof document === 'undefined' || !document.body) return;
+  const isCurrentlyActive = document.body.classList.contains('lesson-full-width');
+  const nextState = typeof forceState === 'boolean' ? forceState : !isCurrentlyActive;
+  document.body.classList.toggle('lesson-full-width', nextState);
+  try {
+    if (nextState) {
+      sessionStorage.setItem('hh_lesson_full_width', 'true');
+    } else {
+      sessionStorage.removeItem('hh_lesson_full_width');
+    }
+  } catch (e) { }
+  if (typeof window.syncLessonFullWidthButtons === 'function') {
+    window.syncLessonFullWidthButtons(nextState);
+  }
+};
+
+window.syncLessonFullWidthButtons = function (isActive) {
+  if (typeof document === 'undefined') return;
+  const btns = document.querySelectorAll('.btn-fullwidth-toggle');
+  btns.forEach((btn) => {
+    btn.classList.toggle('active', Boolean(isActive));
+    btn.innerHTML = isActive
+      ? '<i class="fa-solid fa-compress"></i> <span class="fw-btn-label">Restore Sidebar</span>'
+      : '<i class="fa-solid fa-expand"></i> <span class="fw-btn-label">Full-Width View</span>';
+    btn.title = isActive
+      ? 'Restore outer sidebar and top bar'
+      : 'Hide outer sidebar and top bar for full-width classroom view';
+  });
+};
+
+window.exitFullWidthToUnit = function () {
+  if (typeof document !== 'undefined' && document.body) {
+    document.body.classList.remove('lesson-full-width');
+  }
+  try {
+    sessionStorage.removeItem('hh_lesson_full_width');
+  } catch (e) { }
+  const targetUnit =
+    (appStore && appStore.state && appStore.state.selectedUnitId) ||
+    (typeof window !== 'undefined' && window.currentUnitId);
+  if (typeof window !== 'undefined' && typeof window.switchView === 'function' && targetUnit) {
+    window.switchView('lessons', targetUnit);
+  } else if (typeof window !== 'undefined' && typeof window.renderLessonsView === 'function') {
+    window.renderLessonsView();
   }
 };
 
@@ -5179,7 +5226,6 @@ export function renderLesson(lesson) {
       new URLSearchParams(window.location.search).get('unit')
       : null) ||
     window.currentUnitId;
-  const isEarlyModern = unitId === 'early_modern_world';
   const isCme =
     unitId === 'cme_new' ||
     (typeof window !== 'undefined' && window.currentUnitId === 'cme_new');
@@ -5808,11 +5854,27 @@ export function renderLesson(lesson) {
     stickyAnchorText = `<span class="sticky-lesson-enquiry-count" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${stickyCountLabel}</span>`;
   }
 
+  let isFullWidth = false;
+  if (typeof document !== 'undefined' && document.body) {
+    try {
+      if (sessionStorage.getItem('hh_lesson_full_width') === 'true') {
+        document.body.classList.add('lesson-full-width');
+      }
+    } catch (e) { }
+    isFullWidth = document.body.classList.contains('lesson-full-width');
+  }
+
   html += `
       <div class="sticky-lesson-header">
-          <h4 class="sticky-lesson-title" title="${(lesson.title || '').replace(/"/g, '&quot;')}">
-            ${stickyAnchorText}
-          </h4>
+          <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 0 1 auto;">
+            <button type="button" class="btn-fullwidth-unit-back no-print" onclick="window.exitFullWidthToUnit()" title="Return to Unit Overview">
+              <i class="fa-solid fa-arrow-left" style="font-size: 0.74rem; color: #2563eb;"></i>
+              <span>Unit</span>
+            </button>
+            <h4 class="sticky-lesson-title" title="${(lesson.title || '').replace(/"/g, '&quot;')}">
+              ${stickyAnchorText}
+            </h4>
+          </div>
           <div class="sticky-lesson-actions">
           ${isTrip
       ? ''
@@ -5844,6 +5906,10 @@ export function renderLesson(lesson) {
 
             `
     }
+          <button type="button" class="btn-fullwidth-toggle no-print ${isFullWidth ? 'active' : ''}" onclick="window.toggleLessonFullWidth()" title="${isFullWidth ? 'Restore outer sidebar and top bar' : 'Hide outer sidebar and top bar for full-width classroom view'}">
+            <i class="fa-solid ${isFullWidth ? 'fa-compress' : 'fa-expand'}"></i>
+            <span class="fw-btn-label">${isFullWidth ? 'Restore Sidebar' : 'Full-Width View'}</span>
+          </button>
         </div>
       </div>
     `;
@@ -8536,27 +8602,19 @@ export function renderLesson(lesson) {
         !(block.title && block.title.toLowerCase().includes('lesson reflection')),
       );
 
-      // Symmetrical Option A Paragraph Numbering: Clean modern pill without brackets for ALL paragraphs
+      // Unified Stage 1–5 Architecture: Strip legacy [X.Y] / para-ref decimals so App, Textbook & Workbook all align on Stage 1–5
       const formatParagraphPills = (str, fallbackRef) => {
         if (!str || typeof str !== 'string') return str;
-        // 1. Transform <span class="para-ref">...</span> into clean .narrative-para-pill
+        // 1. Strip <span class="para-ref">[3.1]</span> while preserving an invisible anchor for deep links
         str = str.replace(
-          /<span\s+class=["']para-ref["']>\s*\[?\s*([\d\.]+)\s*\]?\s*<\/span>/gi,
-          (match, num) => {
-            return `<span class="narrative-para-pill" id="para-${num.replace('.', '-')}" data-para="${num}">${num}</span>`;
-          },
+          /<span\s+class=["']para-ref["']>\s*\[?\s*([\d\.]+)\s*\]?\s*<\/span>\s*/gi,
+          (match, num) => `<span id="para-${num.replace('.', '-')}" data-para="${num}" style="display:none;"></span>`,
         );
-        // 2. Transform raw [X.Y] bracket numbers into clean .narrative-para-pill
+        // 2. Strip raw [X.Y] bracket numbers at the start of paragraphs/tags
         str = str.replace(
-          /(^|>|\s)\[\s*(\d+\.\d+)\s*\]/g,
-          (match, prefix, num) => {
-            return `${prefix}<span class="narrative-para-pill" id="para-${num.replace('.', '-')}" data-para="${num}">${num}</span>`;
-          },
+          /(^|>|\s)\[\s*(\d+\.\d+)\s*\]\s*/g,
+          (match, prefix, num) => `${prefix}<span id="para-${num.replace('.', '-')}" data-para="${num}" style="display:none;"></span>`,
         );
-        // 3. Prepend fallbackRef if the narrative block has no paragraph pill and showParaNumber is true
-        if (showParaNumber && fallbackRef && !str.includes('narrative-para-pill')) {
-          str = `<span class="narrative-para-pill" id="para-${fallbackRef.replace('.', '-')}" data-para="${fallbackRef}">${fallbackRef}</span> ` + str;
-        }
         return str;
       };
 
@@ -9586,9 +9644,6 @@ export function renderLesson(lesson) {
                 ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
               </div>
               <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
-                ${isKs2 ? '' : `<button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
-                  <i class="fa-solid fa-chalkboard-user"></i> <span>Present Stage ${stageNum}</span>
-                </button>`}
                 ${renderAudioPlaybackBar('Read Aloud Paragraph')}
               </div>
             </div>
@@ -9630,9 +9685,6 @@ export function renderLesson(lesson) {
               ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
             </div>
             <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
-              ${isKs2 ? '' : `<button type="button" class="stage-mat-step-btn no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToStep){window.openLessonInfographicModalToStep(${index}, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: rgba(2, 132, 199, 0.18); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Present Stage ${stageNum} in fullscreen Presentation View">
-                <i class="fa-solid fa-chalkboard-user"></i> <span>Present Stage ${stageNum}</span>
-              </button>`}
               ${renderAudioPlaybackBar('Read Aloud Paragraph')}
             </div>
           </div>
@@ -12138,7 +12190,6 @@ export function renderLesson(lesson) {
           'monarchy_religion_power',
           'first_british_empire',
           'second_british_empire',
-          'early_modern_world',
           'water_and_sanitation',
           'australia',
           'ks2_ww2',
@@ -14729,7 +14780,6 @@ export function renderLesson(lesson) {
     unitId === 'great_war' ||
     unitId === 'great_war_part2' ||
     unitId === 'water_and_sanitation' ||
-    unitId === 'early_modern_world' ||
     unitId === 'medieval_england' ||
     unitId === 'industrialisation_and_empire' ||
     Boolean(typeof unit !== 'undefined' && unit && unit.is_ks3)

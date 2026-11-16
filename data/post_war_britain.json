@@ -665,6 +665,16 @@
           "teacher_guidance": "Rare original 1913 newsreel footage of the Epsom Derby, showing Emily Wilding Davison stepping out in front of King George V's horse, Anmer. Recommended Watch Window: 01:00–05:00 • Lesson Phase: Primary Evidence & Historiographical Investigation. Tone Alert: Sombre primary archive recording a fatal turning point.",
           "viewing_task": "<ol><li><strong>[01:45] Primary Evidence:</strong> What does the literal camera footage show Emily Davison doing at Tattenham Corner during the 1913 Epsom Derby?</li><li><strong>[03:30] Historical Debate:</strong> What evidence found in Davison's possession (a return train ticket, a helper's badge for a victory rally) challenges the historical accusation that she intended to commit suicide?</li></ol>",
           "model_answer": "<ol><li><strong>Primary Evidence:</strong> Davison ducks under the track railings onto the racecourse and reaches up toward the bridle of King George V's charging horse, which collides with her at full gallop, flipping jockey and horse onto her.</li><li><strong>Historical Debate:</strong> The return railway ticket, racecard with winning bets, and purse receipts strongly suggest she intended to survive, planning to attach the purple, white, and green WSPU suffragette flag to the King's horse to secure global news coverage.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/20th-century-wrap-2-1910s-why-didnt-suffragettes-win-the-vote-history-file/",
+          "title": "BBC Two / ERA: History File – 20th Century Wrap: Why Didn't Suffragettes Win the Vote Before 1914?",
+          "duration": "24 mins 3 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–15:00 | Lesson Phase: NUWSS vs WSPU Militancy & 1918 Vote | Tone Alert: Sharp BBC Two History File historical interpretation debate examining whether WSPU militancy publicised the cause or handed Prime Minister Asquith an excuse to delay votes for women until 1918.",
+          "viewing_task": "[03:00] Quick Check: Contrast the peaceful constitutional methods of Millicent Fawcett’s Suffragists (NUWSS) with Emmeline Pankhurst’s Suffragettes (WSPU) between 1903 and 1914.\n[12:00] Hinge Question: Did WSPU militant direct action (arson, window-smashing, hunger strikes) accelerate women winning the vote, or alienate moderate MPs until women’s WWI home-front service changed minds in 1918?",
+          "model_answer": "Quick Check: The NUWSS used peaceful petitions, marches, and lobbying MPs, whereas the WSPU (\"Deeds, not words\") used heckling, chaining to railings, window-smashing, arson, and hunger strikes.\nHinge Question: WSPU militancy kept suffrage on front pages and exposed government brutality (\"Cat and Mouse Act\"), yet escalating arson after 1912 cost parliamentary votes—whereas suspending militancy in 1914 and proving indispensable in wartime munitions gave MPs a face-saving reason to pass the 1918 Act."
         }
       ],
       "tasks": [
@@ -1979,6 +1989,16 @@
           "teacher_guidance": "Examines Clement Attlee's Labour administration (1945–1951) and Minister of Health Aneurin Bevan's fierce battle with the British Medical Association to establish the NHS on 5 July 1948. Recommended Watch Window: 02:00–09:30 • Lesson Phase: High-Attainer Extension & Political Struggle. Tone Alert: Analytical documentary examining Bevan's political triumph.",
           "viewing_task": "<ol><li><strong>[03:15] Recall:</strong> On what date was the National Health Service officially launched in Britain?</li><li><strong>[05:40] Explain:</strong> Why did the British Medical Association (BMA) and private doctors fiercely oppose the creation of a state-run health service?</li><li><strong>[08:10] Challenge:</strong> How did Aneurin Bevan famously overcome doctor opposition ('stuffing their mouths with gold'), and what did this compromise cost the Treasury?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> 5 July 1948 (Park Hospital, Davyhulme, Manchester).</li><li><strong>Explain:</strong> Doctors feared becoming salaried civil servants under state control, losing clinical independence, and forfeiting lucrative private consulting fees.</li><li><strong>Challenge:</strong> Bevan allowed hospital consultants to continue treating private fee-paying patients alongside NHS beds and granted generous salary caps; while it won doctors' consent, it built private profit directly into state hospitals.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/20th-century-world-05-poverty-in-the-20th-century-history-file/",
+          "title": "BBC Two / ERA: History File – 20th Century World, Ep. 5: Poverty & the Welfare State",
+          "duration": "19 mins 7 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 04:00–15:30 | Lesson Phase: From 1930s Means Test to Beveridge & the 1948 NHS | Tone Alert: BBC Two History File tracing British attitudes toward poverty from pre-war unemployment and wartime evacuation to the 1942 Beveridge Report and Attlee’s \"Cradle to Grave\" Welfare State.",
+          "viewing_task": "[05:30] Quick Check: What were the \"Five Giants\" identified in William Beveridge’s bestselling 1942 report?\n[11:30] Hinge Question: Why did the shared experience of the Second World War (evacuation, rationing, and the Blitz) convince British voters in 1945 to support universal, tax-funded healthcare free at the point of use?",
+          "model_answer": "Quick Check: Want (poverty), Disease, Ignorance, Squalor, and Idleness.\nHinge Question: Evacuation exposed rural hosts to shocking urban child poverty, while wartime state planning and emergency hospitals proved government intervention worked—creating a national consensus that Britons who sacrificed together in war deserved universal social security and the NHS in peace."
         }
       ],
       "tasks": [
@@ -3293,6 +3313,16 @@
           "teacher_guidance": "Examines the racist street violence in Notting Hill in late August 1958 fueled by Teddy Boys, and Claudia Jones' creation of the Caribbean Carnival in 1959. Recommended Watch Window: 00:30–03:30 • Lesson Phase: Racial Conflict & Cultural Triumph. Tone Alert: Frank historical examination of racial violence and cultural resilience.",
           "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> What fascist street gangs ('Teddy Boys') attacked black residents in Notting Hill, London, in late August 1958?</li><li><strong>[02:30] Explain:</strong> How did Trinidadian activist Claudia Jones respond to the riots by establishing the London Caribbean Carnival in January 1959?</li><li><strong>[03:20] Challenge:</strong> How did the 1958 riots expose the myth of British racial tolerance and pave the way for Britain's first Race Relations Acts?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Working-class youth gangs known as 'Teddy Boys', incited by Oswald Mosley's far-right Union Movement chanting 'Keep Britain White'.</li><li><strong>Explain:</strong> She organized an indoor carnival in St Pancras Town Hall to celebrate Caribbean art, music, and steelpan culture, using joyful cultural expression to bridge community divides and defy racism.</li><li><strong>Challenge:</strong> The violence shattered Britain's claim to moral superiority over American segregation, proving state legislation was needed to outlaw racial discrimination in public venues.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/20th-century-wrap-4-1950s-britain-a-time-of-change-history-file/",
+          "title": "BBC Two / ERA: History File – 20th Century Wrap: 1950s Britain – A Time of Change?",
+          "duration": "23 mins 57 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:30 | Lesson Phase: Post-War Reconstruction, Commonwealth Migration & 1950s Society | Tone Alert: BBC Two History File investigating post-war labour shortages, Windrush and Commonwealth migration, consumer affluence (\"Never had it so good\"), and racial prejudice in 1950s Britain.",
+          "viewing_task": "[03:30] Quick Check: Why did post-war British public services like London Transport and the newly created NHS actively recruit workers from the Caribbean in the late 1940s and 1950s?\n[11:30] Hinge Question: Why was 1950s Britain simultaneously an era of rising prosperity and opportunity yet deeply challenging for newly arrived Windrush-generation citizens?",
+          "model_answer": "Quick Check: Rebuilding bombed cities, running railways/buses, and staffing NHS hospitals created acute labour shortages, and under the 1948 British Nationality Act Commonwealth citizens held full legal rights to live and work in Britain.\nHinge Question: While full employment and consumer goods boosted living standards, Caribbean migrants who answered the \"Mother Country’s\" call frequently encountered discriminatory \"colour bars\" in private housing, pubs, and workplace promotion."
         }
       ],
       "tasks": [

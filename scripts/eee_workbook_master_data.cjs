@@ -527,7 +527,7 @@ const EEE_BOOKLETS = {
         slug: 'kt2.1-plots-and-revolts',
         aliases: ['kt2.1-plots-and-revolts', 'kt2.1', 'lesson_2_1'],
         pages: 'pp. 2–3',
-        textbookSpread: 'Textbook pp. 12–13',
+        textbookSpread: 'Textbook pp. 4–5',
         title: 'Plots and Revolts at Home, 1569–87',
         enquiryQuestion:
           'Why did escalating assassination conspiracies compel Elizabeth to take the unprecedented step of executing an anointed monarch?',
@@ -591,7 +591,7 @@ const EEE_BOOKLETS = {
         slug: 'kt2.2-relations-with-spain',
         aliases: ['kt2.2-relations-with-spain', 'kt2.2', 'lesson_2_2'],
         pages: 'pp. 4–5',
-        textbookSpread: 'Textbook pp. 14–15',
+        textbookSpread: 'Textbook pp. 6–7',
         title: 'Relations with Spain, 1569–85',
         enquiryQuestion:
           'How did maritime raiding and covert proxy intervention escalate an undeclared cold war into direct military conflict with Spain?',
@@ -655,7 +655,7 @@ const EEE_BOOKLETS = {
         slug: 'kt2.3-outbreak-of-war',
         aliases: ['kt2.3-outbreak-of-war', 'kt2.3', 'lesson_2_3'],
         pages: 'pp. 6–7',
-        textbookSpread: 'Textbook pp. 16–17',
+        textbookSpread: 'Textbook pp. 8–9',
         title: 'Outbreak of War with Spain, 1585–88',
         enquiryQuestion:
           'Why did direct English military intervention in the Low Countries and the raid on Cadiz lead directly to the Spanish Armada?',
@@ -719,7 +719,7 @@ const EEE_BOOKLETS = {
         slug: 'kt2.4-spanish-armada',
         aliases: ['kt2.4-spanish-armada', 'kt2.4', 'lesson_2_4'],
         pages: 'pp. 10–11',
-        textbookSpread: 'Textbook pp. 18–19',
+        textbookSpread: 'Textbook pp. 10–11',
         title: 'The Armada, 1588',
         enquiryQuestion:
           'Was the defeat of the Spanish Armada primarily the result of superior English naval tactics or flawed Spanish planning and Atlantic storms?',
@@ -1002,7 +1002,7 @@ const EEE_BOOKLETS = {
         slug: 'kt3.1-education-and-leisure',
         aliases: ['kt3.1-education-and-leisure', 'kt3.1', 'lesson_3_1'],
         pages: 'pp. 2–3',
-        textbookSpread: 'Textbook pp. 20–21',
+        textbookSpread: 'Textbook pp. 4–5',
         title: 'Education and Leisure, 1558–88',
         enquiryQuestion:
           'How did educational expansion and popular theatrical culture reflect both social change and strict Tudor hierarchy?',
@@ -1066,7 +1066,7 @@ const EEE_BOOKLETS = {
         slug: 'kt3.2-poverty-and-vagabondage',
         aliases: ['kt3.2-poverty-and-vagabondage', 'kt3.2', 'lesson_3_2'],
         pages: 'pp. 4–5',
-        textbookSpread: 'Textbook pp. 22–23',
+        textbookSpread: 'Textbook pp. 6–7',
         title: 'The ‘Problem’ of the Poor, 1558–88',
         enquiryQuestion:
           'Why did poverty and vagabondage surge, and why did Tudor policy shift from harsh punishment toward parish work relief?',
@@ -1130,7 +1130,7 @@ const EEE_BOOKLETS = {
         slug: 'kt3.3-exploration-and-drake',
         aliases: ['kt3.3-exploration-and-drake', 'kt3.3', 'lesson_3_3'],
         pages: 'pp. 6–7',
-        textbookSpread: 'Textbook pp. 24–25',
+        textbookSpread: 'Textbook pp. 8–9',
         title: 'Exploration and Voyages of Discovery, 1558–88',
         enquiryQuestion:
           'How did navigational science, galleon engineering, and Drake’s circumnavigation turn England into an oceanic sea power?',
@@ -1194,7 +1194,7 @@ const EEE_BOOKLETS = {
         slug: 'kt3.4-virginia-roanoke',
         aliases: ['kt3.4-virginia-roanoke', 'kt3.4', 'lesson_3_4'],
         pages: 'pp. 10–11',
-        textbookSpread: 'Textbook pp. 26–27',
+        textbookSpread: 'Textbook pp. 10–11',
         title: 'Attempted Colonisation of Virginia, 1584–90',
         enquiryQuestion:
           'Why did Sir Walter Raleigh promote Virginia, and why did both the 1585 and 1587 Roanoke settlements fail?',

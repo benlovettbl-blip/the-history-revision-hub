@@ -28,7 +28,7 @@ export const CURRICULAR_PILLARS_CATALOG = {
   ks2_ww2: {
     textbook: {
       title: 'World War II & The Home Front (1933–1945) Master Classroom Textbook',
-      label: 'Master Textbook (20 Pages)',
+      label: 'Master Textbook (16 Pages)',
       htmlUrl: '/units/ks2_ww2/textbook.html',
       pdfUrl: '/pdfs/ks2_ww2_textbook.pdf',
     },
@@ -284,10 +284,29 @@ export const CURRICULAR_PILLARS_CATALOG = {
   },
   cme_new: {
     textbook: {
-      title: 'Conflict in the Middle East (1945–1995) 28-Page Master Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/cme_new/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/cme_new_textbook.pdf',
+      title: 'Conflict in the Middle East Classroom Textbooks (KT1, KT2 & KT3)',
+      label: 'Textbooks (KT1–KT3)',
+      openHub: true,
+      editions: [
+        {
+          label: 'Key Topic 1: Birth of the State of Israel (1945–63)',
+          pages: '12 Pages',
+          htmlUrl: '/units/cme_new/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/cme_new_textbook_KT1.pdf',
+        },
+        {
+          label: 'Key Topic 2: The Escalating Conflict (1963–73)',
+          pages: '16 Pages',
+          htmlUrl: '/units/cme_new/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/cme_new_textbook_KT2.pdf',
+        },
+        {
+          label: 'Key Topic 3: Attempts at a Solution (1974–95)',
+          pages: '12 Pages',
+          htmlUrl: '/units/cme_new/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/cme_new_textbook_KT3.pdf',
+        },
+      ],
     },
     workbook: {
       title: 'Conflict in the Middle East Pupil Workbooks (KT1, KT2 & KT3)',
@@ -316,10 +335,35 @@ export const CURRICULAR_PILLARS_CATALOG = {
   },
   usa: {
     textbook: {
-      title: 'The USA, 1954–1975: Conflict at Home and Abroad 28-Page Master Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/usa/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/usa_textbook.pdf',
+      title: 'USA, 1954–1975 Classroom Textbooks (KT1–KT4)',
+      label: 'Textbooks (KT1–KT4)',
+      openHub: true,
+      editions: [
+        {
+          label: 'Key Topic 1: Development of Civil Rights (1954–60)',
+          pages: '12 Pages',
+          htmlUrl: '/units/usa/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT1.pdf',
+        },
+        {
+          label: 'Key Topic 2: Protest, Progress & Radicalism (1960–75)',
+          pages: '12 Pages',
+          htmlUrl: '/units/usa/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT2.pdf',
+        },
+        {
+          label: 'Key Topic 3: US Involvement in the Vietnam War (1954–75)',
+          pages: '12 Pages',
+          htmlUrl: '/units/usa/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT3.pdf',
+        },
+        {
+          label: 'Key Topic 4: Reactions & End of US Involvement (1964–75)',
+          pages: '12 Pages',
+          htmlUrl: '/units/usa/textbook_KT4_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT4.pdf',
+        },
+      ],
     },
     workbook: {
       title: 'USA, 1954–1975 Pupil Workbooks (KT1–KT4)',
@@ -342,10 +386,41 @@ export const CURRICULAR_PILLARS_CATALOG = {
   },
   edexcel_medicine: {
     textbook: {
-      title: 'Medicine Through Time (c1250–present) Master Textbooks',
-      label: 'Master Textbook (5 Eras)',
-      htmlUrl: '/units/edexcel_medicine/textbook_medieval_PUBLISHER.html',
-      pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
+      title: 'Medicine Through Time & Western Front Classroom Textbooks (5 Eras)',
+      label: 'Textbooks (5 Eras)',
+      openHub: true,
+      editions: [
+        {
+          label: 'Era 1: Medieval Britain (c1250–c1500)',
+          pages: '16 Pages',
+          htmlUrl: '/units/edexcel_medicine/textbook_medieval_PUBLISHER.html',
+          pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
+        },
+        {
+          label: 'Era 2: The Medical Renaissance (c1500–c1700)',
+          pages: '16 Pages',
+          htmlUrl: '/units/edexcel_medicine/textbook_renaissance_PUBLISHER.html',
+          pdfUrl: '/pdfs/edexcel_medicine_textbook_renaissance.pdf',
+        },
+        {
+          label: 'Era 3: 18th & 19th Century Britain (c1700–c1900)',
+          pages: '16 Pages',
+          htmlUrl: '/units/edexcel_medicine/textbook_18th_19th_PUBLISHER.html',
+          pdfUrl: '/pdfs/edexcel_medicine_textbook_18th_19th.pdf',
+        },
+        {
+          label: 'Era 4: Modern Britain (c1900–present)',
+          pages: '16 Pages',
+          htmlUrl: '/units/edexcel_medicine/textbook_modern_PUBLISHER.html',
+          pdfUrl: '/pdfs/edexcel_medicine_textbook_modern.pdf',
+        },
+        {
+          label: 'Historic Env: The British Sector of the Western Front (1914–18)',
+          pages: '16 Pages',
+          htmlUrl: '/units/edexcel_medicine/textbook_western_front_PUBLISHER.html',
+          pdfUrl: '/pdfs/edexcel_medicine_textbook_western_front.pdf',
+        },
+      ],
     },
     workbook: {
       title: 'Medicine Through Time & Western Front Pupil Workbooks (5 Booklets)',
@@ -368,10 +443,35 @@ export const CURRICULAR_PILLARS_CATALOG = {
   },
   weimar_nazi_germany: {
     textbook: {
-      title: 'Weimar and Nazi Germany (1918–1939) 28-Page Master Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/weimar_nazi_germany/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/weimar_nazi_germany_textbook.pdf',
+      title: 'Weimar & Nazi Germany Classroom Textbooks (KT1–KT4)',
+      label: 'Textbooks (KT1–KT4)',
+      openHub: true,
+      editions: [
+        {
+          label: 'Key Topic 1: The Weimar Republic (1918–29)',
+          pages: '12 Pages',
+          htmlUrl: '/units/weimar_nazi_germany/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT1.pdf',
+        },
+        {
+          label: 'Key Topic 2: Hitler’s Rise to Power (1919–33)',
+          pages: '12 Pages',
+          htmlUrl: '/units/weimar_nazi_germany/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT2.pdf',
+        },
+        {
+          label: 'Key Topic 3: Nazi Control & Dictatorship (1933–39)',
+          pages: '12 Pages',
+          htmlUrl: '/units/weimar_nazi_germany/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT3.pdf',
+        },
+        {
+          label: 'Key Topic 4: Life in Nazi Germany (1933–39)',
+          pages: '12 Pages',
+          htmlUrl: '/units/weimar_nazi_germany/textbook_KT4_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT4.pdf',
+        },
+      ],
     },
     workbook: {
       title: 'Weimar & Nazi Germany Pupil Workbooks (KT1–KT4)',
@@ -388,10 +488,29 @@ export const CURRICULAR_PILLARS_CATALOG = {
   },
   eee: {
     textbook: {
-      title: 'Early Elizabethan England (1558–1588) 28-Page Master Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/eee/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/eee_textbook.pdf',
+      title: 'Early Elizabethan England Classroom Textbooks (KT1–KT3)',
+      label: 'Textbooks (KT1–KT3)',
+      openHub: true,
+      editions: [
+        {
+          label: 'Key Topic 1: Queen, Government & Religion (1558–69)',
+          pages: '12 Pages',
+          htmlUrl: '/units/eee/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/eee_textbook_KT1.pdf',
+        },
+        {
+          label: 'Key Topic 2: Challenges at Home & Abroad (1569–88)',
+          pages: '12 Pages',
+          htmlUrl: '/units/eee/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/eee_textbook_KT2.pdf',
+        },
+        {
+          label: 'Key Topic 3: Elizabethan Society & Exploration (1558–88)',
+          pages: '12 Pages',
+          htmlUrl: '/units/eee/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/eee_textbook_KT3.pdf',
+        },
+      ],
     },
     workbook: {
       title: 'Early Elizabethan England Pupil Workbooks (KT1–KT3)',
@@ -464,7 +583,9 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const tl = config.timelineUrl;
   const rg = config.revisionGuide;
 
-  const hasDistinctTextbook = tb && wb && tb.htmlUrl !== wb.htmlUrl && tb.pdfUrl !== wb.pdfUrl;
+  const hasDistinctTextbook = Boolean(
+    tb && (tb.openHub || !wb || tb.htmlUrl !== wb.htmlUrl || tb.pdfUrl !== wb.pdfUrl),
+  );
 
   const cleanTbTitle = (tb?.title || '').replace(/'/g, "\\'");
   const cleanWbTitle = (wb?.title || '').replace(/'/g, "\\'");
@@ -475,17 +596,26 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const cleanSowTitle = (sow?.title || sow?.label || '').replace(/'/g, "\\'");
 
   const textbookPill = hasDistinctTextbook
-    ? `
+    ? tb.openHub
+      ? `
+        <!-- Pillar 1: Individual Key Topic / Era Classroom Textbooks Picker -->
+        <div class="launchpad-pill-group pill-textbook">
+          <button type="button" class="launchpad-pill-btn" onclick="if(window.openTextbookEditionPicker){window.openTextbookEditionPicker('${unitId}');}else if(window.switchView){window.switchView('booklet', '${unitId}');}" title="Select an Era or Key Topic Classroom Textbook to read or download">
+            <i class="fa-solid fa-book-open"></i>
+            <span>${tb.label}</span>
+          </button>
+        </div>`
+      : `
         <!-- Pillar 1: Master Textbook -->
         <div class="launchpad-pill-group pill-textbook">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${tb.htmlUrl}', '${cleanTbTitle}', '${tb.pdfUrl}', 'TEXTBOOK')" title="Open Master Textbook in classroom reader">
+          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${tb.htmlUrl}', '${cleanTbTitle}', '${tb.pdfUrl}', 'TEXTBOOK')" title="Open Classroom Textbook in reader">
             <i class="fa-solid fa-book-open"></i>
             <span>${tb.label}</span>
           </button>
           ${
             isVerifiedPdf(tb.pdfUrl)
               ? `
-          <a href="${tb.pdfUrl}" target="_blank" download title="Download Master Textbook PDF" class="launchpad-pill-pdf">
+          <a href="${tb.pdfUrl}" target="_blank" download title="Download Classroom Textbook PDF" class="launchpad-pill-pdf">
             <i class="fa-solid fa-file-pdf"></i>
           </a>`
               : ''
@@ -666,4 +796,74 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
       </div>
     </div>
   `;
+}
+
+/**
+ * Opens an instant Key Topic / Era Textbook Picker Modal so GCSE courses
+ * present slim individual Era / KT booklets directly instead of giant 28-page books.
+ */
+export function openTextbookEditionPicker(unitId) {
+  const cfg = CURRICULAR_PILLARS_CATALOG[unitId]?.textbook;
+  if (!cfg || !Array.isArray(cfg.editions) || cfg.editions.length === 0) {
+    if (window.switchView) window.switchView('booklet', unitId);
+    return;
+  }
+
+  const existing = document.getElementById('textbook-edition-picker-modal');
+  if (existing) existing.remove();
+
+  const rowsHtml = cfg.editions
+    .map((ed) => {
+      const safeTitle = (ed.label || '').replace(/'/g, "\\'");
+      const hasPdf = isVerifiedPdf(ed.pdfUrl);
+      return `
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; background:#f8fafc; border:1.5px solid #e2e8f0; border-left:4px solid #0284c7; border-radius:8px; flex-wrap:wrap;">
+          <div style="flex:1 1 240px; min-width:0;">
+            <div style="font-size:0.92rem; font-weight:800; color:#0f172a; line-height:1.3;">${ed.label}</div>
+            ${ed.pages ? `<div style="font-size:0.74rem; font-weight:700; color:#64748b; margin-top:2px;">${ed.pages} &bull; Pure Narrative Classroom Booklet</div>` : ''}
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; flex-shrink:0;">
+            <button type="button" onclick="document.getElementById('textbook-edition-picker-modal')?.remove(); window.openCurricularPillar('${ed.htmlUrl}', '${safeTitle}', '${ed.pdfUrl}', 'TEXTBOOK');" style="background:#ffffff; color:#0f172a; border:1.5px solid #cbd5e1; padding:7px 12px; border-radius:6px; font-size:0.78rem; font-weight:800; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+              <i class="fa-solid fa-book-open-reader" style="color:#0284c7;"></i> Read Online
+            </button>
+            ${
+              hasPdf
+                ? `<a href="${ed.pdfUrl}" target="_blank" download onclick="document.getElementById('textbook-edition-picker-modal')?.remove();" style="background:#0284c7; color:#ffffff; border:1.5px solid #0284c7; padding:7px 12px; border-radius:6px; font-size:0.78rem; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+                    <i class="fa-solid fa-file-pdf"></i> Download PDF
+                  </a>`
+                : ''
+            }
+          </div>
+        </div>
+      `;
+    })
+    .join('');
+
+  const modal = document.createElement('div');
+  modal.id = 'textbook-edition-picker-modal';
+  modal.style.cssText =
+    'position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.72); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; padding:16px; font-family:Inter,system-ui,sans-serif;';
+  modal.onclick = (e) => {
+    if (e.target === modal) modal.remove();
+  };
+
+  modal.innerHTML = `
+    <div style="width:100%; max-width:640px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 24px 48px rgba(0,0,0,0.35); border:1px solid #334155;">
+      <div style="background:#0f172a; color:#ffffff; padding:16px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; border-bottom:3px solid #0284c7;">
+        <div>
+          <div style="font-size:0.68rem; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; color:#38bdf8;">Pillar 1 &bull; Classroom Textbooks</div>
+          <div style="font-size:1.08rem; font-weight:800; margin-top:2px;">${cfg.title}</div>
+        </div>
+        <button type="button" onclick="document.getElementById('textbook-edition-picker-modal')?.remove();" aria-label="Close" style="background:rgba(255,255,255,0.1); color:#e2e8f0; border:1px solid rgba(255,255,255,0.2); width:32px; height:32px; border-radius:6px; font-size:1rem; font-weight:800; cursor:pointer;">&times;</button>
+      </div>
+      <div style="padding:16px 20px; display:flex; flex-direction:column; gap:10px; max-height:72vh; overflow-y:auto;">
+        ${rowsHtml}
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+
+if (typeof window !== 'undefined') {
+  window.openTextbookEditionPicker = openTextbookEditionPicker;
 }

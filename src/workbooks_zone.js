@@ -54,9 +54,9 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/cme_new_textbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/cme_new_textbook_KT3.pdf';
-        else resolvedPdfUrl = '/pdfs/cme_new_textbook.pdf';
+        else resolvedPdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
       } else {
-        resolvedPdfUrl = '/pdfs/cme_new_textbook.pdf';
+        resolvedPdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/weimar_nazi_germany/')) {
       if (url.includes('pupil_workbook')) {
@@ -74,9 +74,9 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT3.pdf';
         else if (url.includes('KT4')) resolvedPdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT4.pdf';
-        else resolvedPdfUrl = '/pdfs/weimar_nazi_germany_textbook.pdf';
+        else resolvedPdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
       } else {
-        resolvedPdfUrl = '/pdfs/weimar_nazi_germany_textbook.pdf';
+        resolvedPdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/usa/')) {
       if (url.includes('pupil_workbook')) {
@@ -98,9 +98,9 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/usa_textbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/usa_textbook_KT3.pdf';
         else if (url.includes('KT4')) resolvedPdfUrl = '/pdfs/usa_textbook_KT4.pdf';
-        else resolvedPdfUrl = '/pdfs/usa_textbook.pdf';
+        else resolvedPdfUrl = '/pdfs/usa_textbook_KT1.pdf';
       } else {
-        resolvedPdfUrl = '/pdfs/usa_textbook.pdf';
+        resolvedPdfUrl = '/pdfs/usa_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/eee/')) {
       if (url.includes('pupil_workbook')) {
@@ -119,9 +119,9 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/eee_textbook_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/eee_textbook_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/eee_textbook_KT3.pdf';
-        else resolvedPdfUrl = '/pdfs/eee_textbook.pdf';
+        else resolvedPdfUrl = '/pdfs/eee_textbook_KT1.pdf';
       } else {
-        resolvedPdfUrl = '/pdfs/eee_textbook.pdf';
+        resolvedPdfUrl = '/pdfs/eee_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/edexcel_medicine/')) {
       if (url.includes('pupil_workbook')) {
@@ -430,18 +430,36 @@ const UNIT_PUBLICATIONS = {
     specTitle: 'Paper 2: Conflict in the Middle East, 1945–1995 (1HI0/21)',
     pillar1: {
       key: 'pillar1',
-      badge: 'PILLAR 1 • MASTER TEXTBOOK',
+      badge: 'PILLAR 1 • CLASSROOM TEXTBOOKS',
       color: '#0284c7',
-      tags: ['Reading Narrative', '28-Page Master Textbook', '0% Writing Lines'],
+      tags: ['Key Topic Booklets', 'Pure Narrative', '0% Writing Lines'],
       editions: [
         {
-          id: 'all',
-          label: 'Complete 28-Page Master Classroom Textbook',
-          title: 'Conflict in the Middle East (1945–1995) 28-Page Master Textbook',
-          pages: '28 Pages',
-          desc: 'Complete 28-page pure narrative classroom textbook. 12 Enquiry Spreads, Chronological Milestone Spine, Dual Cartographic Perspectives & Master 60-Question Retrieval Quiz.',
-          readUrl: '/units/cme_new/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/cme_new_textbook.pdf',
+          id: 'KT1',
+          label: 'Key Topic 1: Birth of the State of Israel (1945–63)',
+          title: 'KT1 Classroom Textbook: Birth of the State of Israel (1945–63)',
+          pages: '12 Pages',
+          desc: 'Slim 12-page classroom reading booklet covering KT1 enquiries, Chronological Spine, and Retrieval Quiz.',
+          readUrl: '/units/cme_new/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/cme_new_textbook_KT1.pdf',
+        },
+        {
+          id: 'KT2',
+          label: 'Key Topic 2: The Escalating Conflict (1963–73)',
+          title: 'KT2 Classroom Textbook: The Escalating Conflict (1963–73)',
+          pages: '16 Pages',
+          desc: 'Slim 16-page full-colour classroom reading booklet covering all 5 KT2 enquiries (Six-Day War, Occupied Territories, PLO, Black September, Yom Kippur War), Chronological Spine, Glossary, and 30-Question Retrieval Quiz.',
+          readUrl: '/units/cme_new/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/cme_new_textbook_KT2.pdf',
+        },
+        {
+          id: 'KT3',
+          label: 'Key Topic 3: Attempts at a Solution (1974–95)',
+          title: 'KT3 Classroom Textbook: Attempts at a Solution (1974–95)',
+          pages: '12 Pages',
+          desc: 'Slim 12-page classroom reading booklet covering Camp David, Lebanon, First Intifada, and Oslo Accords.',
+          readUrl: '/units/cme_new/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/cme_new_textbook_KT3.pdf',
         },
       ],
     },
@@ -588,18 +606,45 @@ const UNIT_PUBLICATIONS = {
     specTitle: 'Paper 3: USA, 1954–75: Conflict at Home and Abroad (1HI0/33)',
     pillar1: {
       key: 'pillar1',
-      badge: 'PILLAR 1 • MASTER TEXTBOOK',
+      badge: 'PILLAR 1 • CLASSROOM TEXTBOOKS',
       color: '#0284c7',
-      tags: ['Reading Narrative', '28-Page Master Textbook', '0% Writing Lines'],
+      tags: ['Key Topic Booklets', 'Pure Narrative', '0% Writing Lines'],
       editions: [
         {
-          id: 'textbook_master',
-          label: 'Complete 28-Page Master Classroom Textbook',
-          title: 'The USA, 1954–1975: Conflict at Home and Abroad 28-Page Master Textbook',
-          pages: '28 Pages',
-          desc: 'Complete 28-page pure narrative classroom textbook. 12 Canonical Disciplinary Enquiries, Chronological Milestone Spine, Geopolitical Theater Atlas & 4 Strategic Flashpoints, and Master 60-Question Retrieval Quiz.',
-          readUrl: '/units/usa/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/usa_textbook.pdf',
+          id: 'KT1',
+          label: 'Key Topic 1: Development of Civil Rights (1954–60)',
+          title: 'KT1 Classroom Textbook: Civil Rights Movement (1954–60)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 1 classroom textbook: Segregation, Brown v. Topeka, Little Rock, Montgomery, and Civil Rights Acts.',
+          readUrl: '/units/usa/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT1.pdf',
+        },
+        {
+          id: 'KT2',
+          label: 'Key Topic 2: Protest, Progress & Radicalism (1960–75)',
+          title: 'KT2 Classroom Textbook: Protest, Progress & Radicalism (1960–75)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 2 classroom textbook: Sit-ins, Freedom Rides, Selma, Malcolm X, Black Power, and Urban Riots.',
+          readUrl: '/units/usa/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT2.pdf',
+        },
+        {
+          id: 'KT3',
+          label: 'Key Topic 3: US Involvement in the Vietnam War (1954–75)',
+          title: 'KT3 Classroom Textbook: US Involvement in Vietnam (1954–75)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 3 classroom textbook: Dien Bien Phu, Gulf of Tonkin, Vietcong Tactics, US Escalation, and Tet Offensive.',
+          readUrl: '/units/usa/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT3.pdf',
+        },
+        {
+          id: 'KT4',
+          label: 'Key Topic 4: Reactions & End of US Involvement (1964–75)',
+          title: 'KT4 Classroom Textbook: Reactions & US Withdrawal (1964–75)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 4 classroom textbook: Media & Anti-War Protest, My Lai, Kent State, Vietnamisation, and Paris Peace Accords.',
+          readUrl: '/units/usa/textbook_KT4_PUBLISHER.html',
+          pdfUrl: '/pdfs/usa_textbook_KT4.pdf',
         },
       ],
     },
@@ -686,8 +731,8 @@ const UNIT_PUBLICATIONS = {
           id: 'textbook_medieval',
           label: 'Era 1: Medieval Britain (c1250–c1500)',
           title: 'Medieval Britain Master Classroom Textbook',
-          pages: '12 Pages',
-          desc: '12-page publisher-grade master classroom textbook. Dual-column narrative, Four Humours, Medieval Church, and the Black Death.',
+          pages: '16 Pages',
+          desc: '16-page full-colour classroom textbook. 5 two-page narrative spreads, Key Figures Dossier, Chronological Spine, Glossary, and 30-Question Retrieval Quiz.',
           readUrl: '/units/edexcel_medicine/textbook_medieval_PUBLISHER.html',
           pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
         },
@@ -695,8 +740,8 @@ const UNIT_PUBLICATIONS = {
           id: 'textbook_renaissance',
           label: 'Era 2: Medical Renaissance (c1500–c1700)',
           title: 'The Medical Renaissance Master Classroom Textbook',
-          pages: '12 Pages',
-          desc: '12-page publisher-grade master classroom textbook. Vesalius, William Harvey, Thomas Sydenham, and the Great Plague of 1665.',
+          pages: '16 Pages',
+          desc: '16-page full-colour classroom textbook. 5 two-page spreads covering Humanism, Sydenham, Vesalius, Harvey, and the 1665 Great Plague.',
           readUrl: '/units/edexcel_medicine/textbook_renaissance_PUBLISHER.html',
           pdfUrl: '/pdfs/edexcel_medicine_textbook_renaissance.pdf',
         },
@@ -704,8 +749,8 @@ const UNIT_PUBLICATIONS = {
           id: 'textbook_18th_19th',
           label: 'Era 3: 18th & 19th Century Britain',
           title: '18th & 19th Century Britain Master Classroom Textbook',
-          pages: '12 Pages',
-          desc: '12-page publisher-grade master classroom textbook. Jenner, Germ Theory, Florence Nightingale, Joseph Lister, and Public Health.',
+          pages: '16 Pages',
+          desc: '16-page full-colour classroom textbook. 5 two-page spreads covering Pasteur & Koch, Jenner, Nightingale, Simpson & Lister, and Public Health.',
           readUrl: '/units/edexcel_medicine/textbook_18th_19th_PUBLISHER.html',
           pdfUrl: '/pdfs/edexcel_medicine_textbook_18th_19th.pdf',
         },
@@ -713,8 +758,8 @@ const UNIT_PUBLICATIONS = {
           id: 'textbook_modern',
           label: 'Era 4: Modern Britain (c1900–present)',
           title: 'Modern Britain Master Classroom Textbook',
-          pages: '12 Pages',
-          desc: '12-page publisher-grade master classroom textbook. Antibiotics, NHS, High-Technology Medicine, DNA, and Lung Cancer.',
+          pages: '16 Pages',
+          desc: '16-page full-colour classroom textbook. 5 two-page spreads covering DNA, High-Tech Diagnosis, Magic Bullets & NHS, Penicillin, and Lung Cancer.',
           readUrl: '/units/edexcel_medicine/textbook_modern_PUBLISHER.html',
           pdfUrl: '/pdfs/edexcel_medicine_textbook_modern.pdf',
         },
@@ -822,18 +867,36 @@ const UNIT_PUBLICATIONS = {
     specTitle: 'Paper 2: Early Elizabethan England, 1558–1588 (1HI0/B4)',
     pillar1: {
       key: 'pillar1',
-      badge: 'PILLAR 1 • MASTER TEXTBOOK',
+      badge: 'PILLAR 1 • CLASSROOM TEXTBOOKS',
       color: '#0284c7',
-      tags: ['Reading Narrative', '28-Page Master Textbook', '0% Writing Lines'],
+      tags: ['Key Topic Booklets', 'Pure Narrative', '0% Writing Lines'],
       editions: [
         {
-          id: 'textbook_master',
-          label: 'Complete 28-Page Master Classroom Textbook',
-          title: 'Early Elizabethan England (1558–1588) 28-Page Master Textbook',
-          pages: '28 Pages',
-          desc: 'Complete 28-page pure narrative classroom textbook. 12 Canonical Disciplinary Enquiries, Chronological Milestone Spine, Dual Cartographic Perspectives & 4 Strategic Flashpoints, and Master 60-Question Retrieval Quiz.',
-          readUrl: '/units/eee/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/eee_textbook.pdf',
+          id: 'KT1',
+          label: 'Key Topic 1: Queen, Government & Religion (1558–69)',
+          title: 'KT1 Classroom Textbook: Queen, Government & Religion (1558–69)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 1 classroom textbook: 1558 Succession, 1559 Religious Settlement, Puritan & Catholic Challenges, and Mary, Queen of Scots.',
+          readUrl: '/units/eee/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/eee_textbook_KT1.pdf',
+        },
+        {
+          id: 'KT2',
+          label: 'Key Topic 2: Challenges at Home & Abroad (1569–88)',
+          title: 'KT2 Classroom Textbook: Challenges at Home & Abroad (1569–88)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 2 classroom textbook: Revolt of the Northern Earls, Ridolfi/Throckmorton/Babington Plots, Anglo-Spanish Rivalry, and the 1588 Armada.',
+          readUrl: '/units/eee/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/eee_textbook_KT2.pdf',
+        },
+        {
+          id: 'KT3',
+          label: 'Key Topic 3: Elizabethan Society & Exploration (1558–88)',
+          title: 'KT3 Classroom Textbook: Society in the Age of Exploration (1558–88)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 3 classroom textbook: Education & Leisure, Poverty & Vagabondage, Drake’s Circumnavigation, and Raleigh’s Virginia Voyages.',
+          readUrl: '/units/eee/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/eee_textbook_KT3.pdf',
         },
       ],
     },
@@ -918,18 +981,45 @@ const UNIT_PUBLICATIONS = {
     specTitle: 'Paper 3: Weimar and Nazi Germany, 1918–1939 (1HI0/31)',
     pillar1: {
       key: 'pillar1',
-      badge: 'PILLAR 1 • MASTER TEXTBOOK',
+      badge: 'PILLAR 1 • CLASSROOM TEXTBOOKS',
       color: '#0284c7',
-      tags: ['Reading Narrative', '28-Page Master Textbook', '0% Writing Lines'],
+      tags: ['Key Topic Booklets', 'Pure Narrative', '0% Writing Lines'],
       editions: [
         {
-          id: 'textbook_master',
-          label: 'Complete 28-Page Master Classroom Textbook',
-          title: 'Weimar and Nazi Germany (1918–1939) 28-Page Master Textbook',
-          pages: '28 Pages',
-          desc: 'Complete 28-page pure narrative classroom textbook. 12 Canonical Disciplinary Enquiries, Chronological Milestone Spine, Dual Cartographic Perspectives & 4 Strategic Flashpoints, and Master 60-Question Retrieval Quiz.',
-          readUrl: '/units/weimar_nazi_germany/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_textbook.pdf',
+          id: 'KT1',
+          label: 'Key Topic 1: The Weimar Republic (1918–29)',
+          title: 'KT1 Classroom Textbook: The Weimar Republic (1918–29)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 1 classroom textbook: Origins of the Republic, Treaty of Versailles, 1923 Crises & Hyperinflation, and Stresemann Recovery.',
+          readUrl: '/units/weimar_nazi_germany/textbook_KT1_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT1.pdf',
+        },
+        {
+          id: 'KT2',
+          label: 'Key Topic 2: Hitler’s Rise to Power (1919–33)',
+          title: 'KT2 Classroom Textbook: Hitler’s Rise to Power (1919–33)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 2 classroom textbook: Early NSDAP & SA, Munich Putsch, Wall Street Crash & Mass Unemployment, and Appointment as Chancellor.',
+          readUrl: '/units/weimar_nazi_germany/textbook_KT2_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT2.pdf',
+        },
+        {
+          id: 'KT3',
+          label: 'Key Topic 3: Nazi Control & Dictatorship (1933–39)',
+          title: 'KT3 Classroom Textbook: Nazi Control & Dictatorship (1933–39)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 3 classroom textbook: Reichstag Fire, Enabling Act, Night of the Long Knives, SS/Gestapo Police State, Propaganda, and Opposition.',
+          readUrl: '/units/weimar_nazi_germany/textbook_KT3_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT3.pdf',
+        },
+        {
+          id: 'KT4',
+          label: 'Key Topic 4: Life in Nazi Germany (1933–39)',
+          title: 'KT4 Classroom Textbook: Life in Nazi Germany (1933–39)',
+          pages: '12 Pages',
+          desc: 'Slim Key Topic 4 classroom textbook: Women & Family, Hitler Youth & Education, Employment & Living Standards, and Persecution of Minorities.',
+          readUrl: '/units/weimar_nazi_germany/textbook_KT4_PUBLISHER.html',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT4.pdf',
         },
       ],
     },
@@ -1024,9 +1114,9 @@ const UNIT_PUBLICATIONS = {
         {
           id: 'part2',
           label: 'Part 2: The Great War (1914–1919)',
-          title: 'The Great War (1914–1919) 12-Page Master Saddle-Stitch Edition',
-          pages: '12 Pages',
-          desc: '12-page pure narrative classroom textbook. Trench warfare, Somme, Passchendaele, Russian withdrawal, Ludendorff Offensive, and Armistice.',
+          title: 'The Great War (1914–1919) 8-Page Master Anthology',
+          pages: '8 Pages',
+          desc: '8-page pure narrative classroom textbook. Rush to the Colours, Trench Warfare & Haig, Global Empire, Home Front, and Treaty of Versailles.',
           readUrl: '/units/great_war_part2/textbook.html',
           pdfUrl: '/pdfs/great_war_part2_textbook.pdf',
         },
@@ -1091,14 +1181,14 @@ const UNIT_PUBLICATIONS = {
       key: 'pillar1',
       badge: 'PILLAR 1 • MASTER TEXTBOOK & TEACHER GUIDE',
       color: '#0284c7',
-      tags: ['20-Page Master Textbook', '11 Canonical Enquiries', 'Teacher Guide & SOW'],
+      tags: ['16-Page Master Textbook', '11 Canonical Lessons', 'Teacher Guide & SOW'],
       editions: [
         {
           id: 'textbook',
-          label: 'Master 20-Page Classroom Textbook (Reading Anthology)',
+          label: 'Master 16-Page Classroom Textbook (Reading Anthology)',
           title: 'World War II & The Home Front (1933–1945) Master Classroom Textbook',
-          pages: '20 Pages (A4)',
-          desc: 'Complete 20-page pure reading classroom textbook (5 folded A3 saddle-stitch sheets). Covers all 11 chronological enquiries, authentic primary visual sources, Chronological Turning Points Spine, 55-question Master Retrieval Quiz, and 44-word Illustrated Vocabulary Bank.',
+          pages: '16 Pages (A4)',
+          desc: 'Complete 16-page full-colour pure reading classroom textbook (4 folded A3 saddle-stitch sheets). Covers all 11 chronological lessons in a wide-margin single column, Chronological Turning Points Spine, 55-question Master Retrieval Quiz, and Illustrated Vocabulary Bank.',
           readUrl: '/units/ks2_ww2/textbook.html',
           pdfUrl: '/pdfs/ks2_ww2_textbook.pdf',
         },
@@ -1251,16 +1341,16 @@ const UNIT_PUBLICATIONS = {
     specTitle: 'Paper P4: Superpower Relations & Cold War, 1945–1991',
     pillar1: {
       key: 'pillar1',
-      badge: 'PILLAR 1 • MASTER TEXTBOOK',
+      badge: 'PILLAR 1 • CLASSROOM TEXTBOOK',
       color: '#0284c7',
-      tags: ['Reading Narrative', '12-Page Master Textbook', '0% Writing Lines'],
+      tags: ['Reading Narrative', '16-Page Spread Edition', '0% Writing Lines'],
       editions: [
         {
           id: 'textbook_master',
-          label: 'Complete 12-Page Master Classroom Textbook',
-          title: 'The Cold War & Global Flashpoints (1945–1991) Master Textbook',
-          pages: '12 Pages',
-          desc: '12-page pure narrative companion textbook. 7 Canonical Enquiries, Chronological Milestone Spine, Cartographic Theater & 4 Strategic Flashpoints, Disciplinary Historiography, and Master 35-Question Retrieval Quiz.',
+          label: 'Complete 16-Page Classroom Textbook',
+          title: 'The Cold War & Superpower Relations (1945–1991) 16-Page Textbook',
+          pages: '16 Pages',
+          desc: '16-page full-colour pure narrative classroom textbook. 6 Two-Page Enquiry Spreads, Chronological Spine, Key Leaders & Doctrines Dossier, and 30-Question Retrieval Quiz.',
           readUrl: '/units/cold_war/textbook.html',
           pdfUrl: '/pdfs/cold_war_textbook.pdf',
         },
@@ -1310,34 +1400,35 @@ const UNIT_PUBLICATIONS = {
 function getGenericUnitPublications(unitId, unitData) {
   const title = (unitData && unitData.title) || unitId;
   const hasTextbook = [
-    'the_shoah',
+    'medieval_england',
     'monarchy_religion_power',
-    'water_and_sanitation',
+    'first_british_empire',
     'industrialisation_and_empire',
+    'second_british_empire',
+    'water_and_sanitation',
+    'australia',
     'post_war_britain',
+    'the_shoah',
   ].includes(unitId);
 
   let pillar1 = null;
   if (hasTextbook) {
-    const textbookHtml =
-      unitId === 'industrialisation_and_empire'
-        ? `/units/${unitId}/textbook_PUBLISHER.html`
-        : `/units/${unitId}/textbook.html`;
-    const textbookPdf =
-      unitId === 'the_shoah' ? `/pdfs/${unitId}_textbook.pdf` : `/pdfs/${unitId}_textbook.pdf`;
+    const textbookHtml = `/units/${unitId}/textbook.html`;
+    const textbookPdf = `/pdfs/${unitId}_textbook.pdf`;
+    const pageBadge = unitId === 'the_shoah' ? '12 Pages' : '8 Pages';
 
     pillar1 = {
       key: 'pillar1',
-      badge: 'PILLAR 1 • MASTER TEXTBOOK',
+      badge: 'PILLAR 1 • CLASSROOM TEXTBOOK',
       color: '#0284c7',
-      tags: ['Reading Narrative', 'Master Textbook', '0% Writing Lines'],
+      tags: ['Full-Colour Narrative', `${pageBadge} Booklet`, '0% Writing Lines'],
       editions: [
         {
           id: 'textbook_master',
-          label: 'Master Companion Textbook',
-          title: `${title} Master Companion Textbook`,
-          pages: '12 Pages',
-          desc: `Complete pure narrative master classroom companion textbook for ${title}. Canonical Enquiries, Milestone Spine, and Knowledge Retrieval Quiz.`,
+          label: `Complete ${pageBadge} Classroom Textbook`,
+          title: `${title} — ${pageBadge} Classroom Textbook`,
+          pages: pageBadge,
+          desc: `Full-colour pure narrative classroom textbook for ${title}. 100% verbatim Stage 1–5 curriculum narrative, Chronological Spine, and Knowledge Retrieval Quiz.`,
           readUrl: textbookHtml,
           pdfUrl: textbookPdf,
         },

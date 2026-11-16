@@ -1490,6 +1490,16 @@ window.unitData = {
           "teacher_guidance": "Recommended Watch Window: 00:00–03:49 | Lesson Phase: Economic Crisis | Tone Alert: Documents the French occupation of the Ruhr, passive resistance, endless paper money printing, and the total collapse of the Mark.",
           "viewing_task": "[01:10] Cause: Why did French and Belgian troops occupy the Ruhr in January 1923?\n[02:30] Consequence: Which social class suffered the most devastating economic loss during the 1923 hyperinflation, and why?",
           "model_answer": "France and Belgium invaded the industrial Ruhr because Germany failed to deliver promised timber and coal reparations installments. The German middle class (Mittelstand) suffered worst because lifelong savings, war bonds, and fixed pension incomes became completely worthless overnight, while debts and mortgages held by big industrialists were wiped out."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/6-making-germany-pay-history-file/",
+          "title": "BBC Two / ERA: History File – Making Germany Pay (Weimar Crisis & Recovery, 1918–1929)",
+          "duration": "19 mins 53 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Ruhr Occupation & 1923 Hyperinflation | Tone Alert: BBC Two History File archival documentary tracing Versailles reparations, 1919–23 political violence, the 1923 Ruhr invasion, hyperinflation, and Weimar stabilisation.",
+          "viewing_task": "[02:00] Recall: Why did right-wing nationalists label Weimar leaders the \"November Criminals\"?\n[07:30] Cause & Consequence: Explain how the 1923 French and Belgian occupation of the Ruhr and \"passive resistance\" caused hyperinflation, and identify one group who suffered and one who benefited.",
+          "model_answer": "Nationalists blamed democratic politicians for signing the 1918 Armistice and the hated 1919 Treaty of Versailles (\"stab-in-the-back\" myth). In January 1923, when French and Belgian troops occupied the industrial Ruhr to seize goods in lieu of unpaid reparations, the Weimar government printed trillions of marks to pay striking workers; pensioners and middle-class savers saw life savings wiped out overnight, whereas borrowers and big industrialists paid off fixed debts effortlessly."
         }
       ],
       "learning_objectives": {
@@ -10652,6 +10662,16 @@ window.unitData = {
           "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Appeal of the Nazis | Tone Alert: Explores Goebbels' propaganda campaigns, the Hitler Flight over Germany, and targeted promises to workers, farmers, and big business.",
           "viewing_task": "[01:50] Broad Appeal: How did Nazi propaganda tailor different messages to win over German farmers, the middle class, and industrialists?\n[03:45] SA Role: What role did the brownshirt SA play on the streets during the 1930–1932 election campaigns?",
           "model_answer": "The Nazis promised farmers higher agricultural tariffs and debt relief, promised the middle class protection against communism and big department stores, and promised industrialists that trade unions and communists would be crushed. The SA presented an image of disciplined order while violently brawling with communist Red Front fighters, convincing anxious citizens that only Hitler could restore stability."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/1-the-rise-of-hitler-history-file/",
+          "title": "BBC Two / ERA: History File – Nazi Germany, Ep. 1: The Rise of Hitler",
+          "duration": "23 mins 10 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:30 | Lesson Phase: Great Depression & Nazi Electoral Surge (1929–33) | Tone Alert: Acclaimed Andrew Chater BBC Two documentary using five eyewitness accounts to explain why millions of Germans turned to Hitler after 1929.",
+          "viewing_task": "[03:30] Recall: How did the 1929 Wall Street Crash and mass unemployment (6 million by 1932) shatter confidence in Weimar coalition governments?\n[11:00] Hinge Question: Did Hitler come to power primarily through popular enthusiasm for Nazi promises (\"Work and Bread\"), or through the backstairs intrigue of conservative elites like Von Papen and Hindenburg?",
+          "model_answer": "American banks recalled Dawes/Young loans, factories closed, and Chancellor Brüning’s benefit cuts via Article 48 drove desperate voters toward political extremes (KPD and NSDAP). Mass electoral support made the Nazis the largest Reichstag party (37% in July 1932), yet Hitler never won a majority—he only became Chancellor in January 1933 because Von Papen and Hindenburg foolishly believed they could \"tame\" him."
         }
       ],
       "pair_share": {
@@ -15543,6 +15563,16 @@ window.unitData = {
           "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Protestant Schism & Niemöller | Tone Alert: Details the struggle between the German Christians ('Gottgläubig') and Martin Niemöller's Confessing Church.",
           "viewing_task": "[02:00] Protestant Division: Why did Protestant pastors like Martin Niemöller and Dietrich Bonhoeffer break away to form the Confessing Church in 1934?\n[04:40] Persecution: What happened to Pastor Martin Niemöller when he refused to stop preaching against Nazi state control?",
           "model_answer": "They opposed Nazi attempts to nazify Protestant Christianity by removing the Old Testament and banning converted Jews under the 'Aryan Paragraph'. Niemöller was arrested in 1937 and imprisoned in Sachsenhausen and Dachau concentration camps as Hitler's 'personal prisoner' until 1945."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/2-life-in-hitlers-germany-history-file/",
+          "title": "BBC Two / ERA: History File – Nazi Germany, Ep. 2: Life in Hitler's Germany",
+          "duration": "23 mins 10 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Police State Surveillance vs Everyday Conformity | Tone Alert: BBC Two History File exploring daily life under the Gestapo, block wardens, propaganda, and Nazi economic programmes through eyewitness testimonies.",
+          "viewing_task": "[03:00] Recall: How did the Gestapo rely on ordinary German neighbours and local Block Wardens (Blockleiter) despite having relatively few officers?\n[10:30] Hinge Question: Was conformity in Nazi Germany maintained more by terror (SS, Gestapo, concentration camps) or by propaganda and perceived material improvements (full employment, Strength Through Joy)?",
+          "model_answer": "Because citizens feared anyone could be a denunciator reporting anti-Nazi jokes or foreign radio listening to the Block Warden, Germans policed themselves (\"self-surveillance\"). Terror crushed active political opponents early on, allowing Goebbels’ propaganda and DAF programmes like KdF (\"Strength Through Joy\") to win widespread passive consent from non-persecuted Germans."
         }
       ],
       "pair_share": {
@@ -18996,6 +19026,16 @@ window.unitData = {
           "teacher_guidance": "Recommended Watch Window: 00:00–03:23 | Lesson Phase: Church Resistance & Conformity | Tone Alert: Explores Pastor Martin Niemöller's courageous public stand, the psychology of bystander complicity, and his famous post-war poem.",
           "viewing_task": "[01:10] Resistance Message: What is the core warning of Niemöller's poem 'First they came for the socialists...'?\n[02:30] Historical Assessment: Why did the vast majority of ordinary Germans conform to the Nazi regime between 1933 and 1939 rather than actively resist?",
           "model_answer": "Niemöller warned that remaining silent when minorities are persecuted ensures that when tyranny turns on you, there will be no one left to speak out. Most ordinary Germans conformed due to fear of the Gestapo terror apparatus, genuine appreciation for economic recovery, jobs, and national pride, and effective propaganda."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/5-opposition-to-hitler-history-file/",
+          "title": "BBC Two / ERA: History File – Nazi Germany, Ep. 5: Opposition to Hitler",
+          "duration": "23 mins 53 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–15:00 | Lesson Phase: Youth, Church & Civilian Dissent | Tone Alert: BBC Two History File dramatizing the secret diaries of anti-Nazi writer Fritz Reck-Malleczewen alongside youth non-conformity (Swing Youth / Edelweiss Pirates) and Church dissent.",
+          "viewing_task": "[03:30] Recall: Name two forms of everyday grumbling, cultural non-conformity, or religious dissent that persisted inside Nazi Germany between 1933 and 1939.\n[12:00] Hinge Question: Why did widespread private grumbling and youth non-conformity never coalesce into a successful mass movement capable of overthrowing Hitler?",
+          "model_answer": "Examples include Edelweiss Pirates and Swing Youth rejecting Hitler Youth uniformity, and pastors like Martin Niemöller founding the Confessing Church against the Reich Church. Opposition remained fragmented because trade unions and rival parties had been banned in 1933, the Gestapo infiltrated underground cells, and pervasive fear prevented isolated critics from uniting."
         }
       ],
       "pair_share": {
@@ -21628,6 +21668,16 @@ window.unitData = {
           "teacher_guidance": "Recommended Watch Window: 00:00–02:48 | Lesson Phase: Visual Archival Footage | Tone Alert: Superb archival newsreel footage showing Hitler Youth assemblies, Nuremberg rally parades, and the militarisation of childhood.",
           "viewing_task": "[00:45] Visual Evidence: How do the archival images demonstrate the physical regimentation of German children under the Nazi regime?\n[01:50] Evaluation: Why did some young Germans find the outdoor adventures of the Hitler Youth thrilling while others felt suffocated?",
           "model_answer": "Newsreels show massive synchronized parades, uniform brown shirts, drum cadences, and military camp formations, instilling unquestioning obedience. Many working-class boys loved the camping, hiking, shooting, and escape from strict schooling, but others detested the harsh bullying, mindless repetitive drills, and loss of free weekends."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/4-youth-in-hitlers-germany-history-file/",
+          "title": "BBC Two / ERA: History File – Nazi Germany, Ep. 4: Youth in Hitler's Germany",
+          "duration": "23 mins 14 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:30 | Lesson Phase: Nazi Curriculum, Hitler Youth & BDM | Tone Alert: Features powerful firsthand testimony from former Hitler Youth member Henry Metelmann on school indoctrination, militarised camping, and generational division.",
+          "viewing_task": "[02:45] Recall: How did Nazi control of school textbooks (e.g. Biology/ Eugenics, History, and Maths) reinforce the ideological aims of the Hitler Youth and League of German Girls (BDM)?\n[10:30] Hinge Question: Why did eyewitness Henry Metelmann initially find the Hitler Youth so exciting even when his working-class parents opposed Hitler?",
+          "model_answer": "Schools rewrote curricula to teach racial hierarchy (\"Rassenkunde\"), military fitness for boys, and motherhood (\"Kinder, Küche, Kirche\") for girls, echoed after school in HJ war-games and BDM domestic training. Metelmann recalls how uniforms, campfires, marching songs, and feeling superior to adults seduced teenagers before they realised they were being conditioned as cannon fodder."
         }
       ],
       "pair_share": {
@@ -25093,6 +25143,16 @@ window.unitData = {
           "teacher_guidance": "Recommended Watch Window: 00:00–04:04 | Lesson Phase: Culmination & Aftermath | Tone Alert: Documents the 1 billion mark fine levied on the Jewish community, the confiscation of insurance payouts, and forced emigration.",
           "viewing_task": "[01:30] State Extortion: How did Hermann Göring punish the victimised Jewish community following the destruction of Kristallnacht?\n[03:10] Turning Point: Why does Kristallnacht mark the decisive turning point from legislative discrimination to open violent terror?",
           "model_answer": "Göring imposed a collective collective fine of 1 billion marks on the Jewish community for 'damage to the German economy' and confiscated all insurance payouts. It showed the world that the Nazi state would openly unleash mob violence, mass arrests without trial, and concentration camp deportation in broad daylight, marking the end of any secure Jewish existence in Germany."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/3-the-master-race-history-file/",
+          "title": "BBC Two / ERA: History File – Nazi Germany, Ep. 3: The Master Race",
+          "duration": "23 mins 25 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–15:00 | Lesson Phase: Aryan Ideology, 1935 Nuremberg Laws & Kristallnacht (1938) | Tone Alert: Sensitive historical testimony examining Nazi racial pseudoscience, sterilisation of disabled Germans, anti-Jewish boycotts, the Nuremberg Laws, and Kristallnacht.",
+          "viewing_task": "[03:15] Recall: Which groups alongside German Jews were targeted by Nazi \"racial hygiene\" laws (such as the 1933 Sterilisation Law) because they did not fit the regime’s Volksgemeinschaft ideal?\n[11:30] Hinge Question: How did persecution escalate step-by-step from the April 1933 shop boycott and 1935 Nuremberg Laws to the state-orchestrated violence of Kristallnacht in November 1938?",
+          "model_answer": "People with hereditary disabilities, Roma and Sinti, gay men, Black Germans, and \"asocials\" were systematically persecuted. Persecution escalated progressively: 1933 civil-service purges and boycotts isolated Jews socially, the 1935 Nuremberg Laws stripped Reich citizenship and banned intermarriage legally, and November 1938 Kristallnacht unleashed nationwide synagogue burnings, arrests of 30,000 Jewish men, and a 1 billion mark fine."
         }
       ],
       "pair_share": {

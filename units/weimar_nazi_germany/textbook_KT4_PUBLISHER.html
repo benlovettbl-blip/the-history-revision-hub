@@ -1,0 +1,1969 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Life in Nazi Germany (1933–1939) · Classroom Textbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&amp;family=Inter:wght@400;500;600;700;800;900&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4 portrait; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    :root {
+      --acc: #991b1b;
+      --acc-dark: #7f1d1d;
+      --acc-soft: #fee2e2;
+      --acc-tint: #fef2f2;
+      --sec: #0f766e;
+      --navy: #0f172a;
+      --ink: #1e293b;
+    }
+    html, body { background: #cbd5e1; font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: var(--navy); }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      margin: 0 auto 8mm auto;
+      padding: 9.5mm 12.5mm 8.5mm 12.5mm;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .page:last-of-type {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    @media print {
+      html, body { background: #ffffff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+
+    .ftr {
+      height: 19px;
+      flex: 0 0 19px;
+      border-top: 1.5px solid var(--navy);
+      padding-top: 3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      color: #475569;
+      font-weight: 600;
+    }
+    .ftr > span:first-child { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ftr .pg { font-weight: 800; color: var(--navy); white-space: nowrap; flex-shrink: 0; margin-left: 10px; }
+
+    /* ================= PAGE 1: COVER ================= */
+    .cover-body-wrap { min-height: 0; }
+    .cover-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.2pt;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--acc-dark);
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 4px;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+    .cover-hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 11px;
+      height: 92mm;
+      margin-bottom: 11px;
+    }
+    .cover-wide-title {
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 11px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 4px solid var(--acc);
+      margin-bottom: 8px;
+    }
+    .cover-wide-art {
+      background: var(--navy);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1.5px solid var(--navy);
+      margin-bottom: 10px;
+    }
+    .cover-wide-img-wrap {
+      width: 100%;
+      height: 68mm;
+      background: #0b1120;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .cover-wide-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center center;
+      display: block;
+    }
+    .cover-title-card {
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 15px 17px 13px 17px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom: 4px solid var(--acc);
+    }
+    .cover-kicker {
+      font-size: 7.4pt;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      color: #fbbf24;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .cover-h1 {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 22pt;
+      font-weight: 900;
+      line-height: 1.08;
+      color: #ffffff;
+    }
+    .cover-period {
+      font-size: 15pt;
+      font-weight: 900;
+      color: #38bdf8;
+      margin-top: 4px;
+    }
+    .cover-sub {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 9.6pt;
+      line-height: 1.36;
+      color: #e2e8f0;
+      margin-top: 7px;
+    }
+    .cover-meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 8px;
+    }
+    .meta-chip {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: #f8fafc;
+      font-size: 6.9pt;
+      font-weight: 700;
+      padding: 3px 7px;
+      border-radius: 4px;
+    }
+    .cover-art-card {
+      background: var(--navy);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1.5px solid var(--navy);
+    }
+    .cover-art-frame {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .cover-art-frame img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .cover-art-cap {
+      background: var(--navy);
+      color: #e2e8f0;
+      font-size: 6.9pt;
+      line-height: 1.32;
+      padding: 5.5px 9px;
+      border-top: 2px solid var(--acc);
+    }
+
+    .cover-synopsis-card {
+      background: #fdfbf7;
+      border: 1.5px solid #e2d9cc;
+      border-left: 4.5px solid var(--acc);
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+    }
+    .syn-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .syn-kicker {
+      font-size: 7.6pt;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      color: var(--acc-dark);
+      text-transform: uppercase;
+    }
+    .syn-tag { font-size: 7.1pt; font-weight: 700; color: #64748b; }
+    .syn-body {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 10.6pt;
+      line-height: 1.5;
+      color: var(--ink);
+      text-align: justify;
+    }
+
+    .cover-dir-wrap {
+      border: 1.5px solid var(--navy);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .dir-banner {
+      background: var(--navy);
+      color: #ffffff;
+      padding: 6px 11px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.6pt;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+    .dir-sub-note { font-size: 7.0pt; font-weight: 600; letter-spacing: 0; color: #cbd5e1; }
+
+    .dir-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+    .dir-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 7.1pt;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      padding: 5.5px 10px;
+      text-align: left;
+      border-bottom: 1.5px solid #cbd5e1;
+    }
+    .dir-table td {
+      padding: 11px 10px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: middle;
+    }
+    .dir-table.dir-table-dense td { padding: 7px 9px; }
+    .dir-table tr:last-child td { border-bottom: none; }
+    .dir-table tr:nth-child(even) td { background: #f8fafc; }
+    .code-pill {
+      display: inline-block;
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 7.2pt;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      padding: 2.5px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .dir-title {
+      font-size: 9.5pt;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.24;
+    }
+    .dir-table-dense .dir-title { font-size: 8.9pt; }
+    .dir-eq {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 8.5pt;
+      color: #475569;
+      margin-top: 2px;
+      line-height: 1.28;
+    }
+    .dir-table-dense .dir-eq { font-size: 8.0pt; }
+    .dir-date {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      white-space: nowrap;
+    }
+    .dir-pg {
+      font-size: 8.6pt;
+      font-weight: 900;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    /* Compact 2-Column TOC for 11-Lesson KS2 */
+    .dir-compact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #ffffff;
+    }
+    .dir-compact-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 10px;
+      border-bottom: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+    }
+    .dir-compact-item:nth-child(2n) { border-right: none; }
+    .dir-compact-tt {
+      flex: 1;
+      font-size: 8.4pt;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    .dir-compact-pg {
+      font-size: 8.0pt;
+      font-weight: 900;
+      color: var(--acc-dark);
+      white-space: nowrap;
+    }
+
+    /* ================= SUBPAGE HEADERS ================= */
+    .subpage-hdr {
+      display: flex;
+      align-items: stretch;
+      gap: 9px;
+      margin-bottom: 6px;
+    }
+    .subpage-num {
+      width: 60px;
+      background: var(--acc);
+      color: #ffffff;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 2px;
+      flex-shrink: 0;
+    }
+    .subpage-num small { font-size: 6.1pt; font-weight: 800; letter-spacing: 0.08em; opacity: 0.92; }
+    .subpage-num span { font-size: 16.5pt; font-weight: 900; line-height: 1.1; }
+    .subpage-tt {
+      flex: 1;
+      border-bottom: 3px solid var(--acc);
+      padding-bottom: 3px;
+    }
+    .subpage-kicker {
+      font-size: 7.1pt;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--acc-dark);
+      text-transform: uppercase;
+    }
+    .subpage-tt h2 {
+      font-size: 13.8pt;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.18;
+      margin-top: 1px;
+    }
+    .subpage-pill {
+      align-self: center;
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 8.0pt;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* ================= PAGE 2: CHRONOLOGY SPINE ================= */
+    .spine-main, .ref-main, .quiz-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .spine-lead {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 8.9pt;
+      color: #475569;
+      margin-bottom: 7px;
+    }
+    .ms-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      min-height: 0;
+      padding: 2px 0;
+    }
+    .ms-line {
+      position: absolute;
+      left: 108px;
+      top: 12px;
+      bottom: 12px;
+      width: 2.5px;
+      background: var(--acc);
+      z-index: 1;
+    }
+    .ms-row {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .ms-date-col {
+      width: 96px;
+      text-align: right;
+      padding-right: 8px;
+      flex-shrink: 0;
+    }
+    .ms-date-pill {
+      display: inline-block;
+      background: var(--acc-soft);
+      color: var(--acc-dark);
+      font-size: 7.0pt;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--acc);
+    }
+    .ms-dot-col {
+      width: 26px;
+      display: flex;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ms-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 7.0pt;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 0 1.5px var(--acc);
+    }
+    .ms-card {
+      flex: 1;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 6px 10px;
+      margin-left: 6px;
+    }
+    .ms-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+    .ms-title { font-size: 9.3pt; font-weight: 800; color: var(--navy); }
+    .ms-stage-tag {
+      font-size: 6.9pt;
+      font-weight: 800;
+      color: var(--sec);
+      background: #e0f2fe;
+      padding: 1px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .ms-desc {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 9.0pt;
+      line-height: 1.35;
+      color: #334155;
+    }
+
+    /* ================= LESSON PAGES ================= */
+    .lesson-top { flex: 0 0 auto; margin-bottom: 8px; }
+    .hdr { display: flex; align-items: stretch; gap: 9px; }
+    .hdr-num {
+      width: 54px;
+      border-radius: 6px;
+      background: var(--acc);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 0;
+      flex-shrink: 0;
+    }
+    .hdr-num small { font-size: 6.1pt; letter-spacing: 0.1em; font-weight: 800; opacity: 0.92; }
+    .hdr-num span { font-size: 18pt; font-weight: 900; line-height: 1.1; }
+    .hdr-tt {
+      flex: 1;
+      min-width: 0;
+      border-bottom: 3px solid var(--acc);
+      padding-bottom: 3px;
+    }
+    .hdr-kt {
+      font-size: 6.9pt;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--acc-dark);
+    }
+    .hdr-h2 {
+      font-size: 13.8pt;
+      line-height: 1.16;
+      font-weight: 900;
+      color: var(--navy);
+      margin-top: 1px;
+    }
+    .hdr-dt {
+      align-self: center;
+      font-size: 8.0pt;
+      font-weight: 800;
+      background: var(--acc);
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .flow {
+      display: grid;
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .flow-st {
+      background: #f1f5f9;
+      border-top: 2.8px solid var(--acc);
+      border-radius: 3px;
+      padding: 4px 6px 4.5px 6px;
+      min-width: 0;
+    }
+    .flow-st:nth-child(even) { background: #e8eef6; }
+    .flow-kicker {
+      font-size: 6.1pt;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      color: var(--acc-dark);
+      text-transform: uppercase;
+      line-height: 1.18;
+    }
+    .flow-lbl {
+      font-size: 7.0pt;
+      font-weight: 700;
+      line-height: 1.22;
+      color: var(--navy);
+      margin-top: 1.5px;
+    }
+
+    .eq-bar {
+      margin-top: 5px;
+      background: var(--acc-tint);
+      border: 1px solid var(--acc-soft);
+      border-left: 3.5px solid var(--acc);
+      border-radius: 4px;
+      padding: 3.5px 8px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .eq-pill {
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 6.3pt;
+      font-weight: 900;
+      letter-spacing: 0.07em;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .eq-txt {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 9.0pt;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+
+    .prose-wrap {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .prose-columns {
+      column-count: 2;
+      column-gap: 18px;
+      column-rule: 1px solid #e2e8f0;
+      column-fill: balance;
+    }
+    /* KS2 Single Wide-Margin Column Standard */
+    .prose-single-wide {
+      width: 100%;
+      max-width: 164mm;
+      margin: 2px auto 0 auto;
+    }
+    .block-section {
+      break-inside: auto;
+      margin-bottom: 8px;
+    }
+    .block-hdr {
+      break-after: avoid;
+      break-inside: avoid;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1.2px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-bottom: 3.5px;
+    }
+    .stage-pill {
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 6.8pt;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .block-title {
+      font-size: 8.6pt;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.18;
+      flex: 1;
+    }
+    .page-lesson-ks2 .block-title { font-size: 10.0pt; }
+    .block-date {
+      font-size: 6.8pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      background: var(--acc-soft);
+      padding: 1px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .spread-stage-q {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 9.2pt;
+      color: var(--acc-dark);
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+    .block-prose .prose-p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 11.2pt;
+      line-height: 1.52;
+      color: var(--ink);
+      margin-bottom: 5px;
+      text-align: justify;
+      hyphens: auto;
+    }
+    .page-lesson-ks2 .block-prose .prose-p { text-align: left; hyphens: none; }
+    .block-prose .prose-p:last-child { margin-bottom: 0; }
+    .block-prose strong { font-weight: 700; color: #0b1324; }
+
+    /* ================= REFERENCE DOSSIER & VOCAB PAGES ================= */
+    .ref-sec-label {
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 7.4pt;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 7px;
+      margin-top: 4px;
+    }
+    .ref-figs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .ref-fig-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 8px 10px;
+    }
+    .ref-fig-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+    .ref-fig-name { font-size: 9.2pt; font-weight: 800; color: var(--navy); }
+    .ref-fig-role {
+      font-size: 6.9pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      background: var(--acc-soft);
+      padding: 1px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .ref-fig-desc {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.8pt;
+      line-height: 1.38;
+      color: #334155;
+    }
+    .ref-terms-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      flex: 1;
+      align-content: start;
+    }
+    .ref-term-row {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 2.5px solid var(--sec);
+      border-radius: 4px;
+      padding: 7px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .ref-term-k { font-size: 8.8pt; font-weight: 800; color: var(--navy); }
+    .ref-term-v { font-family: 'Lora', Georgia, serif; font-size: 8.5pt; line-height: 1.35; color: #334155; }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .vocab-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 7.5px 10px;
+    }
+    .vocab-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+    .vocab-word { font-size: 9.6pt; font-weight: 800; color: var(--navy); }
+    .vocab-loc {
+      font-size: 7.0pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      background: var(--acc-soft);
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+    .vocab-def {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 9.0pt;
+      line-height: 1.36;
+      color: var(--ink);
+    }
+
+    /* ================= QUIZ PAGES ================= */
+    .quiz-inst {
+      background: var(--acc-tint);
+      border: 1px solid var(--acc-soft);
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 6px 10px;
+      font-size: 8.0pt;
+      line-height: 1.38;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .quiz-grid {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 9px;
+    }
+    .quiz-grid.quiz-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .quiz-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 4px solid var(--acc);
+      border-radius: 5px;
+      padding: 9px 12px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .quiz-card-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3.5px;
+      margin-bottom: 5px;
+    }
+    .quiz-card-tt {
+      font-size: 9.0pt;
+      font-weight: 800;
+      color: var(--navy);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .quiz-e-pill {
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 7.0pt;
+      font-weight: 900;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .quiz-card-loc {
+      font-size: 7.4pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      white-space: nowrap;
+    }
+    .quiz-ol {
+      padding-left: 19px;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 10.2pt;
+      line-height: 1.46;
+      color: var(--ink);
+    }
+    .quiz-ol li { margin-bottom: 3px; }
+    .quiz-ol li:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <section class="page textbook-page page-cover" id="page-1" data-page="1">
+    <div class="cover-body-wrap">
+      <div class="cover-top-bar">
+        <span>THE HISTORY REVISION HUB · <span class="school-brand-target" data-department-name="The History Department">The History Department</span></span>
+        <span>PURE NARRATIVE CLASSROOM TEXTBOOK · STAGE 1–5 EDITION</span>
+      </div>
+
+      
+      <div class="cover-hero-grid" style="height: 106mm;">
+        <div class="cover-title-card">
+          <div>
+            <div class="cover-kicker">PEARSON EDEXCEL GCSE (9–1) · PAPER 3 MODERN DEPTH · KEY TOPIC 4</div>
+            <h1 class="cover-h1">Life in Nazi Germany</h1>
+            <div class="cover-period">1933–1939</div>
+            <p class="cover-sub">Women &amp; Family, Hitler Youth &amp; Education, Invisible Unemployment &amp; Persecution of Minorities</p>
+          </div>
+          <div class="cover-meta-pills">
+            <span class="meta-chip">4 Canonical Enquiries</span>
+            <span class="meta-chip">Stage 1–5 Aligned</span>
+            <span class="meta-chip">20 Recall Qs</span>
+          </div>
+        </div>
+
+        <div class="cover-art-card">
+          <div class="cover-art-frame" style="background:#0b1120;">
+            <img src="data:image/jpeg;base64,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" alt="Life in Nazi Germany" style="object-fit:cover; object-position:center center;">
+          </div>
+          <div class="cover-art-cap">Completed dual-carriageway Reichsautobahn in 1930s Germany — centrepiece of Nazi public-works propaganda and rearmament infrastructure.</div>
+        </div>
+      </div>
+
+      <div class="cover-synopsis-card">
+        <div class="syn-head">
+          <span class="syn-kicker">HISTORICAL OVERVIEW · 1933–1939</span>
+          <span class="syn-tag">100% Verbatim Curriculum Narrative</span>
+        </div>
+        <p class="syn-body" style="font-size: 11.4pt;">Examine how Nazi Volksgemeinschaft ("People’s Community") reshaped daily life inside every home, classroom, factory, and street between 1933 and 1939. Assess Kinder, Küche, Kirche policies toward women, compulsory Hitler Youth and eugenic school curricula, RAD/Autobahn job creation and "Strength Through Joy" living standards, and the escalating persecution of Jews, Roma, disabled people, and minorities culminating in Kristallnacht.</p>
+      </div>
+
+      
+      <div class="cover-dir-wrap">
+        <div class="dir-banner">
+          <span>CANONICAL ENQUIRY TABLE OF CONTENTS</span>
+          <span class="dir-sub-note">Two-Page Spreads · Stage 1–5 Narrative Architecture</span>
+        </div>
+        <table class="dir-table ">
+          <thead>
+            <tr>
+              <th style="width:86px;">ENQUIRY</th>
+              <th>ENQUIRY TITLE &amp; KEY HISTORICAL QUESTION</th>
+              <th style="width:98px;">PERIOD</th>
+              <th style="width:66px; text-align:right;">PAGES</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td class="dir-code" style="padding: 20px 10px;"><span class="code-pill">ENQUIRY 01</span></td>
+            <td class="dir-main" style="padding: 20px 10px;">
+              <div class="dir-title">Nazi Policies Towards Women</div>
+              <div class="dir-eq">How did the Nazis attempt to reverse the freedoms of Weimar women, and why did their policies ultimately contradict their own economic goals?</div>
+            </td>
+            <td class="dir-date" style="padding: 20px 10px;">1933–1939</td>
+            <td class="dir-pg" style="text-align: right; padding: 20px 10px;">pp. 4–5</td>
+          </tr>
+
+          <tr>
+            <td class="dir-code" style="padding: 20px 10px;"><span class="code-pill">ENQUIRY 02</span></td>
+            <td class="dir-main" style="padding: 20px 10px;">
+              <div class="dir-title">Nazi Policies Towards the Young</div>
+              <div class="dir-eq">How did the Nazis use the education system and youth movements to indoctrinate the next generation, and how successful were they?</div>
+            </td>
+            <td class="dir-date" style="padding: 20px 10px;">1933–1939</td>
+            <td class="dir-pg" style="text-align: right; padding: 20px 10px;">pp. 6–7</td>
+          </tr>
+
+          <tr>
+            <td class="dir-code" style="padding: 20px 10px;"><span class="code-pill">ENQUIRY 03</span></td>
+            <td class="dir-main" style="padding: 20px 10px;">
+              <div class="dir-title">Employment and Living Standards</div>
+              <div class="dir-eq">How did the Nazis achieve the 'economic miracle' of full employment, and did the standard of living actually improve for German workers?</div>
+            </td>
+            <td class="dir-date" style="padding: 20px 10px;">1933–1939</td>
+            <td class="dir-pg" style="text-align: right; padding: 20px 10px;">pp. 8–9</td>
+          </tr>
+
+          <tr>
+            <td class="dir-code" style="padding: 20px 10px;"><span class="code-pill">ENQUIRY 04</span></td>
+            <td class="dir-main" style="padding: 20px 10px;">
+              <div class="dir-title">The Persecution of Minorities</div>
+              <div class="dir-eq">How and why did the Nazis persecute minorities, and how did the persecution of Jewish people escalate between 1933 and 1939?</div>
+            </td>
+            <td class="dir-date" style="padding: 20px 10px;">1933–1939</td>
+            <td class="dir-pg" style="text-align: right; padding: 20px 10px;">pp. 10–11</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Life in Nazi Germany (1933–1939) · Classroom Textbook</span>
+      <span class="pg">Page 1 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-ref" id="page-2" data-page="2">
+    <div class="ref-main">
+      <div class="subpage-hdr">
+        <div class="subpage-num">
+          <small>DOSSIER</small>
+          <span>REF</span>
+        </div>
+        <div class="subpage-tt">
+          <div class="subpage-kicker">SPECIFICATION DOSSIER · KEY INDIVIDUALS &amp; CORE TERMINOLOGY (KT4)</div>
+          <h2>Key Historical Actors &amp; Essential Concepts (1933–1939)</h2>
+        </div>
+        <div class="subpage-pill">1933–1939</div>
+      </div>
+
+      <div class="ref-sec-label">KEY HISTORICAL INDIVIDUALS &amp; ACTORS</div>
+      <div class="ref-figs-grid">
+        
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Gertrud Scholtz-Klink (1902–1999)</span>
+          <span class="ref-fig-role">Reich Women’s Leader</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Headed the Nazi Women’s Enterprise (NSF) and German Women’s Bureau promoting motherhood, domestic classes, and "German" fashion.</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Baldur von Schirach (1907–1974)</span>
+          <span class="ref-fig-role">Reich Youth Leader</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Commanded the Hitler Youth (HJ) for boys and League of German Maidens (BDM), reaching over 7–8 million members by 1939.</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Bernhard Rust (1883–1945)</span>
+          <span class="ref-fig-role">Education Minister</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Purged non-compliant teachers via the National Socialist Teachers’ League (97% membership) and founded elite Napolas schools.</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Hjalmar Schacht &amp; Hermann Göring</span>
+          <span class="ref-fig-role">Economic Architects</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Schacht’s New Plan &amp; Mefo bills financed early recovery; Göring’s 1936 Four-Year Plan prioritised autarky and rearmament.</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Robert Ley (1890–1945)</span>
+          <span class="ref-fig-role">Head of the DAF</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Controlled wages and workplace discipline through the German Labour Front, Beauty of Labour (SdA), and Strength Through Joy (KdF).</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Julius Streicher (1885–1946)</span>
+          <span class="ref-fig-role">Editor of Der Stürmer</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Published virulent antisemitic caricatures and children’s books (The Poisonous Mushroom) conditioning racial hatred.</p>
+      </div>
+      </div>
+
+      <div class="ref-sec-label" style="margin-top:10px;">ESSENTIAL DISCIPLINARY CONCEPTS &amp; TERMINOLOGY</div>
+      <div class="ref-terms-grid">
+        
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Kinder, Küche, Kirche &amp; Mother’s Cross</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">"Children, Kitchen, Church"; Bronze (4), Silver (6), and Gold (8 children) medals awarded each 12 August.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">HJ &amp; BDM</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Hitler Youth (military drill, camping, rifle practice) and League of German Maidens (domestic skills, fitness for motherhood).</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">RAD (Reich Labour Service)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Compulsory 6-month uniformed manual labour for men aged 18–25 on drainage, farming, and autobahns for pocket money.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Invisible Unemployment</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Excluded Jews, married women, RAD conscripts, soldiers, and concentration camp inmates from official jobless totals.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">KdF &amp; Volkswagen Swindle</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Workers paid 5 marks a week toward a "People’s Car", but zero civilian cars were delivered before factories switched to war production.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Volksgemeinschaft</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Nazi ideal of a classless, racially pure "People’s Community" excluding Slavs, Roma/Sinti, homosexuals, disabled people, and Jews.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Aryanisation (1937–38)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Compulsory seizure or cut-price forced sale of Jewish businesses, property, and medical/legal practices to non-Jewish Germans.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Kristallnacht (9–10 Nov 1938)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Turning point from legal discrimination to open, state-orchestrated physical violence and mass concentration camp internment.</span>
+      </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Life in Nazi Germany · Key Figures &amp; Terminology Dossier</span>
+      <span class="pg">Page 2 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-spine" id="page-3" data-page="3">
+    <div class="spine-main">
+      <div class="subpage-hdr">
+        <div class="subpage-num">
+          <small>TIMELINE</small>
+          <span>10</span>
+        </div>
+        <div class="subpage-tt">
+          <div class="subpage-kicker">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939)</div>
+          <h2>Ten Defining Developments of Key Topic 4 (1933–1939)</h2>
+        </div>
+        <div class="subpage-pill">1933–1939</div>
+      </div>
+      <p class="spine-lead">From marriage loans and Hitler Youth to rearmament, KDF leisure, the Nuremberg Laws, and Kristallnacht.</p>
+
+      <div class="ms-list">
+        <div class="ms-line"></div>
+        
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Apr–Jul 1933</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">1</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">SA Shop Boycott, Civil Service Purge &amp; Sterilisation Law</span>
+            <span class="ms-stage-tag">Enquiry 4</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">1 April boycott of Jewish shops, dismissal of Jewish/female civil servants, and compulsory sterilisation of 350,000+ people with hereditary conditions.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">May–Nov 1933</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">2</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">German Labour Front (DAF) &amp; Strength Through Joy (KdF)</span>
+            <span class="ms-stage-tag">Enquiry 3</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Robert Ley’s DAF replaces trade unions (banning strikes and lengthening hours) while KdF promises cheap theatre tickets, cruises, and Volkswagens.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Jun 1933</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">3</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Law for the Encouragement of Marriage (1,000 RM Loans)</span>
+            <span class="ms-stage-tag">Enquiry 1</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Newlywed couples receive 1,000-mark loans if the bride leaves employment, with 25% of the loan cancelled for each child born.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">1933–1935</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">4</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Autobahns, Compulsory RAD &amp; Conscription Slash Unemployment</span>
+            <span class="ms-stage-tag">Enquiry 3</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Compulsory 6-month Reich Labour Service (RAD), 1935 military conscription (1.4m troops by 1939), and "invisible unemployment" cut official joblessness.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">1934–1936</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">5</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Nazified Curriculum &amp; First Hitler Youth Law (Dec 1936)</span>
+            <span class="ms-stage-tag">Enquiry 2</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Bernhard Rust rewrites textbooks around Race Science (Eugenics) and 15% PE; Baldur von Schirach’s HJ and BDM displace rival youth clubs.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">15 Sept 1935</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">6</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">The Nuremberg Laws (Reich Citizenship &amp; Blood Laws)</span>
+            <span class="ms-stage-tag">Enquiry 4</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">German Jews are stripped of Reich citizenship, political rights, and legal protection, and forbidden to marry or have relations with "Aryans".</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Dec 1935</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">7</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Lebensborn ("Fountain of Life") Programme Launched</span>
+            <span class="ms-stage-tag">Enquiry 1</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Himmler’s SS establishes maternity homes encouraging racially selected unmarried women to bear children with SS officers.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">1936–1937</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">8</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Göring’s Four-Year Plan ("Guns Before Butter")</span>
+            <span class="ms-stage-tag">Enquiry 3</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Rearmament demand forces Nazis to lure women back into factory work (female employment rises from 4.8m in 1933 to 7.1m in 1939).</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">9–10 Nov 1938</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">9</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Kristallnacht (Night of Broken Glass)</span>
+            <span class="ms-stage-tag">Enquiry 4</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Goebbels and SA/SS unleash nationwide pogroms burning synagogues, smashing 7,500 shops, killing ~100 Jews, arresting 30,000, and fining Jews 1bn RM.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Jan–Sept 1939</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">10</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Second Hitler Youth Law, Reich Emigration Office &amp; Action T4</span>
+            <span class="ms-stage-tag">Enquiry 4</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">HJ service becomes strictly mandatory; Heydrich accelerates forced Jewish emigration as secret euthanasia murders of disabled children begin.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Life in Nazi Germany · Master Chronological Spine</span>
+      <span class="pg">Page 3 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-4" data-page="4">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>01</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">Nazi Policies Towards Women</h2>
+        </div>
+        <div class="hdr-dt">1933–1939</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · 1933</div>
+          <div class="flow-lbl">Domestic Ideal: Kinder, Küche, Kirche and the Anti-Feminist Reaction</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · Jun 1933</div>
+          <div class="flow-lbl">Law for the Encouragement of Marriage: Subsidies and Childbirth Loans</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · 1935–1938</div>
+          <div class="flow-lbl">Mother's Cross and the Lebensborn Racial Breeding Program</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · 1933–1935</div>
+          <div class="flow-lbl">Forced Sterilisation and Eugenic Hygiene: The Hereditary Health Law</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · 1937–1939</div>
+          <div class="flow-lbl">Policy Reversal: Four-Year Plan Rearmament and the Duty Year</div>
+        </div>
+      </div>
+
+      
+      <div class="eq-bar">
+        <span class="eq-pill">KEY ENQUIRY</span>
+        <span class="eq-txt">“How did the Nazis attempt to reverse the freedoms of Weimar women, and why did their policies ultimately contradict their own economic goals?”</span>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">The Domestic Ideal: Kinder, Küche, Kirche and the Anti-Feminist Reaction</span>
+              <span class="block-date">1933</span>
+            </div>
+            <div class="spread-stage-q">“How did the regime attempt to remove women from public professions?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">During the Weimar Republic, German women experienced unprecedented emancipation, gaining voting rights and entering medicine, teaching, and commerce. However, Adolf Hitler and the Nazi Party viewed female liberation as a decadent social disease that had caused annual birth rates to plummet. They demanded the complete <strong>rejection of Weimar 'New Woman'</strong> culture, condemning female independence as a threat to racial survival.
+
+Nazi ideology promoted the famous slogan <strong>'Kinder, Küche, Kirche'</strong> (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace <strong>traditional domestic roles</strong>. Under Reich Women's Leader Gertrud Scholtz-Klink, all female associations were centralized into the Nazi Women's League, training young women in home economics and infant care to serve the national racial community as self-sacrificing mothers.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">The Law for the Encouragement of Marriage: Subsidies and Childbirth Loans</span>
+              <span class="block-date">1933</span>
+            </div>
+            <div class="spread-stage-q">“How were financial loans used to encourage childbearing and lower unemployment?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Confronted by declining birth rates, the Nazi regime introduced aggressive financial subsidies to encourage early marriage and large families. In June 1933, the government enacted the landmark <strong>1933 Marriage Loan Act</strong>, providing young newlywed Aryan couples with substantial financial support. Eligible couples were issued <strong>1,000-mark marriage coupons</strong>, equivalent to nine months of an average industrial worker's wages, redeemable for household furniture and domestic goods.
+
+To stimulate population growth directly, the legislation included an inventive debt-relief mechanism providing <strong>25% loan forgiveness per child</strong> born. Having four children completely cancelled the initial debt, effectively paying couples to produce Aryan offspring. This financial incentive sparked an immediate surge in marriages, rewarding couples who embraced early parenthood while the state penalized childless families through heavy income tax surcharges.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 01 (Part I): Nazi Policies Towards Women · Stages 1–2</span>
+      <span class="pg">Page 4 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-5" data-page="5">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>01</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">Nazi Policies Towards Women — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 9.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">The Mother's Cross and the Lebensborn Racial Breeding Program</span>
+              <span class="block-date">1935–1938</span>
+            </div>
+            <div class="spread-stage-q">“How did honors and breeding centres aim to expand the Aryan population?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.15pt; line-height: 1.49; margin-bottom: 0px;">To glorify prolific motherhood, the regime established prestigious national honours for fertile women. In 1938, Hitler instituted <strong>Mother's Cross medals</strong>, awarded annually on his mother's birthday. Medals were graded into bronze for four children, silver for six, and the revered <strong>gold cross (8 children)</strong> or more. Recipients received public salutes from the Hitler Youth, preferential shopping queues, and seats of honour at state ceremonies.
+
+Beyond conventional family units, Heinrich Himmler's SS founded the secretive <strong>Lebensborn maternity program</strong> in 1935. Initially established to provide confidential maternity homes for unmarried women of pure Nordic ancestry, Lebensborn evolved into a selective breeding experiment. Unmarried Aryan women were actively encouraged to mate with SS officers in state clinics to produce genetically pure children, prioritizing demographic expansion over traditional Christian moral values.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 9.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">Forced Sterilisation and Eugenic Hygiene: The Hereditary Health Law</span>
+              <span class="block-date">1933</span>
+            </div>
+            <div class="spread-stage-q">“How did eugenics legislation enforce biological selection on German families?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.15pt; line-height: 1.49; margin-bottom: 0px;">Nazi demographic engineering was ruthlessly governed by biological eugenics, restricting reproduction strictly to citizens deemed genetically valuable. In July 1933, the regime enacted the sweeping <strong>1933 Hereditary Health Act</strong>, formally known as the Law for the Prevention of Hereditarily Diseased Offspring. This statute established specialized Genetic Health Courts empowered to mandate compulsory surgical operations on individuals diagnosed with alleged genetic defects.
+
+Under this draconian <strong>forced sterilization law</strong>, over <strong>400,000 citizens sterilized</strong> against their will, targeting individuals suffering from hereditary blindness, deafness, epilepsy, physical deformities, schizophrenia, and severe alcoholism. The overwhelming majority of victims were young working-class women. Furthermore, the 1935 Marital Health Law required couples to obtain medical certificates of genetic fitness before marriage, enforcing state control over human reproduction.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">The Policy Reversal: Four-Year Plan Rearmament and the Duty Year</span>
+              <span class="block-date">1937–1939</span>
+            </div>
+            <div class="spread-stage-q">“Why did the Four-Year Plan force the regime to abandon its domestic ideology?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.15pt; line-height: 1.49; margin-bottom: 0px;">By the late 1930s, Nazi policies towards women encountered severe economic contradictions. As Hermann Göring’s <strong>Four-Year Plan rearmament</strong> accelerated armaments production and military conscription depleted industrial factory workforces, severe labor shortages threatened war preparations. Despite years of domestic propaganda, the regime was forced to reverse its ideological stance and recruit women back into the industrial labor market.
+
+In 1937, the requirement that marriage-loan recipients remain unemployed was revoked, and in 1938 a compulsory <strong>Duty Year labour service</strong> was imposed on young unmarried women in agriculture and textiles. Consequently, <strong>women factory workers expand</strong> rapidly, pushing female employment to 14.6 million by May 1939. Women constituted 37% of Germany’s workforce on the eve of war, demonstrating how military mobilization shattered domestic propaganda ideals.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 01 (Part II): Nazi Policies Towards Women · Stages 3–5</span>
+      <span class="pg">Page 5 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-6" data-page="6">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>02</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">Nazi Policies Towards the Young</h2>
+        </div>
+        <div class="hdr-dt">1933–1939</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · 1933–1936</div>
+          <div class="flow-lbl">Hitler Youth (Hitlerjugend): Military Drill and Battlefield Preparation</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · 1933–1936</div>
+          <div class="flow-lbl">League of German Girls: Bund Deutscher Mädel and Motherhood Training</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · 1936–1939</div>
+          <div class="flow-lbl">Compulsory Indoctrination: The 1936 Youth Law and Banning Independent Clubs</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · 1933–1937</div>
+          <div class="flow-lbl">Purging the Staffroom: The National Socialist Teachers' League</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · 1933–1939</div>
+          <div class="flow-lbl">Nazified Curriculum: Racial Biology and the Napolas Elite Cadet Schools</div>
+        </div>
+      </div>
+
+      
+      <div class="eq-bar">
+        <span class="eq-pill">KEY ENQUIRY</span>
+        <span class="eq-txt">“How did the Nazis use the education system and youth movements to indoctrinate the next generation, and how successful were they?”</span>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">The Hitler Youth (Hitlerjugend): Military Drill and Battlefield Preparation</span>
+              <span class="block-date">1933–1939</span>
+            </div>
+            <div class="spread-stage-q">“How did the Hitler Youth prepare boys for future military service and total obedience?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">For German adolescent boys aged fourteen to eighteen, social life was dominated by the <strong>Hitlerjugend for boys</strong>. Operating under Baldur von Schirach, the organization was designed to toughen boys into fearless, obedient soldiers for the Third Reich. Physical conditioning was prioritized above intellect, with boys spending long afternoons running obstacle courses, boxing, and participating in small-bore rifle marksmanship.
+
+Weekend activities focused on rigorous <strong>military drill &amp; camping</strong>, where boys undertook multi-day marches carrying heavy knapsacks and practiced trench navigation, signaling, and compass reading. Through rigorous <strong>preparation for armed forces</strong>, boys passed demanding physical fitness tests before receiving an engraved Hitler Youth dagger bearing the motto <em>Blood and Honour</em>, instilling unquestioning personal devotion to Adolf Hitler.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">The League of German Girls: Bund Deutscher Mädel and Motherhood Training</span>
+              <span class="block-date">1933–1939</span>
+            </div>
+            <div class="spread-stage-q">“How did the BDM train adolescent girls for motherhood and domestic duty?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">While boys were drilled for warfare, German girls aged fourteen to eighteen joined the <strong>Bund Deutscher Mädel (BDM)</strong>. Dressed identically in dark blue skirts, white blouses, and brown vests, girls engaged in gymnastics, calisthenics, and long-distance running. Physical fitness was not designed for athletics, but to develop robust, healthy bodies capable of bearing multiple children for the German Volk.
+
+Activities centered on extensive <strong>motherhood &amp; domestic training</strong>, teaching girls cooking, meal planning, needlework, and infant healthcare. Alongside domestic skills, members received intensive <strong>racial hygiene instruction</strong>, memorizing genealogical charts to identify suitable Aryan marriage partners and reject racial intermarriage. Evening campfire gatherings reinforced ideological conformity through folk songs celebrating the national racial community (<em>Volksgemeinschaft</em>).</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 02 (Part I): Nazi Policies Towards the Young · Stages 1–2</span>
+      <span class="pg">Page 6 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-7" data-page="7">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>02</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">Nazi Policies Towards the Young — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 10.8px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">Compulsory Indoctrination: The 1936 Youth Law and Banning Independent Clubs</span>
+              <span class="block-date">1933–1939</span>
+            </div>
+            <div class="spread-stage-q">“Why did the regime make youth group attendance legally compulsory in 1939?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.45pt; line-height: 1.52; margin-bottom: 0px;">To achieve total ideological control over the younger generation, the Nazi state systematically dismantled independent youth organizations. Independent scouting associations and sports teams were banned, while independent <strong>church youth organizations banned</strong> following relentless Gestapo intimidation. In December 1936, Hitler enacted the landmark <strong>1936 Hitler Youth Act</strong>, giving the organization exclusive responsibility for all physical and ideological training outside school.
+
+In March 1939, the state issued a second decree establishing <strong>compulsory membership (1939)</strong> for all eligible German children aged ten to eighteen. By the outbreak of the Second World War, over eight million boys and girls were enrolled in uniform. Although millions embraced the camaraderie and outdoor activities, rebellious youths formed dissident underground groups like the Edelweiss Pirates to escape regimentation.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 10.8px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">Purging the Staffroom: The National Socialist Teachers' League</span>
+              <span class="block-date">1933–1939</span>
+            </div>
+            <div class="spread-stage-q">“How did the regime ensure that school teachers actively delivered propaganda?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.45pt; line-height: 1.52; margin-bottom: 0px;">Transforming German schools into ideological factories required total control over teaching staff. Under the April 1933 Civil Service Law, the regime commenced <strong>Jewish teachers sacked (1933)</strong> alongside suspected socialist and democratic educators. Teachers were compelled to join the <strong>National Socialist Teachers League</strong> (NSLB), with over ninety-seven percent of all German educators enrolling by 1937 to protect their professional livelihoods.
+
+The league organized mandatory <strong>ideological summer camps</strong> during school holidays, forcing teachers to participate in military drills, physical fitness courses, and lectures on Nazi racial biology. In the classroom, teachers were required to begin and end every lesson with the Nazi salute, while those failing to display sufficient political enthusiasm were denounced by students or dismissed by party inspectors.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">The Nazified Curriculum: Racial Biology and the Napolas Elite Cadet Schools</span>
+              <span class="block-date">1933–1939</span>
+            </div>
+            <div class="spread-stage-q">“How were academic subjects rewritten to reinforce racial theory and militarism?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.45pt; line-height: 1.52; margin-bottom: 0px;">The academic curriculum was thoroughly reconstructed to serve military preparation and racial fanaticism. Traditional learning was displaced by <strong>rewritten school textbooks</strong> across all subjects: history was rewritten to portray German history as an endless struggle against Jewish enemies, while mathematics problems calculated bombing trajectories, artillery flight times, and the financial cost of caring for the disabled.
+
+Compulsory courses in <strong>racial biology &amp; Eugenics</strong> taught children to measure facial skull shapes and classify races into Aryan masters and subhuman parasites. For promising future leaders, the regime established elite <strong>Napolas elite cadet schools</strong> (National Political Educational Institutes), residential boarding academies overseen by the SS where boys underwent brutal military training to produce ruthless future commanders.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 02 (Part II): Nazi Policies Towards the Young · Stages 3–5</span>
+      <span class="pg">Page 7 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-8" data-page="8">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>03</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">Employment and Living Standards</h2>
+        </div>
+        <div class="hdr-dt">1933–1939</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · May 1933</div>
+          <div class="flow-lbl">Smashed Unions: Robert Ley and the German Labour Front (DAF)</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · 1933–1935</div>
+          <div class="flow-lbl">Labour Army: Konstantin Hierl and the Reich Labour Service (RAD)</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · 1935–1939</div>
+          <div class="flow-lbl">Rearmament and Conscription: The Reality of 'Invisible Unemployment'</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · 1933–1939</div>
+          <div class="flow-lbl">Strength Through Joy (KdF): Subsidized Leisure and the People's Car</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · 1936–1939</div>
+          <div class="flow-lbl">Guns vs Butter: The Four-Year Plan and Falling Living Standards</div>
+        </div>
+      </div>
+
+      
+      <div class="eq-bar">
+        <span class="eq-pill">KEY ENQUIRY</span>
+        <span class="eq-txt">“How did the Nazis achieve the 'economic miracle' of full employment, and did the standard of living actually improve for German workers?”</span>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">Smashed Unions: Robert Ley and the German Labour Front (DAF)</span>
+              <span class="block-date">May 1933</span>
+            </div>
+            <div class="spread-stage-q">“How did the DAF destroy independent collective bargaining for wages?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Upon seizing power, Hitler moved swiftly to crush the organized working-class movement. On 2 May 1933, the day after celebrating May Day as a national holiday, SA and SS stormtroopers raided union offices nationwide, arresting officials and confiscating bank assets. Through this decisive assault, independent <strong>trade unions abolished (May 1933)</strong> overnight, removing the primary institutional defender of workers' wages and employment rights.
+
+In their place, Dr. Robert Ley established the compulsory <strong>German Labour Front (DAF)</strong>, which absorbed all workers and employers into a single state-controlled corporation. Under the DAF, <strong>strikes banned &amp; wages frozen</strong>, while factory councils were abolished. In 1935, the DAF introduced compulsory workbooks (<em>Arbeitsbuch</em>), preventing workers from changing jobs without written permission and binding laborers directly to armaments factories.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">The Labour Army: Konstantin Hierl and the Reich Labour Service (RAD)</span>
+              <span class="block-date">1933–1935</span>
+            </div>
+            <div class="spread-stage-q">“How did public works and motorway construction artificially reduce jobless figures?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">To combat massive youth unemployment and foster national solidarity, the regime established the <strong>Reich Labour Service (RAD)</strong> under Konstantin Hierl. Converted into a compulsory state program in July 1935, the law mandated <strong>six months compulsory labour</strong> for all unmarried young men aged eighteen to twenty-five prior to their military conscription, removing hundreds of thousands of men from unemployment figures.
+
+Conscripts lived in communal barracks, wore militaristic uniforms, and drilled with spades instead of rifles. Workers drained peat bogs, planted forests, and carried out extensive <strong>Autobahn highway construction</strong>, building arterial dual carriageways designed for rapid military troop transit. While working hours were grueling and wages nominal, the RAD successfully instilled physical endurance, military discipline, and state obedience into German youth.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 03 (Part I): Employment and Living Standards · Stages 1–2</span>
+      <span class="pg">Page 8 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-9" data-page="9">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>03</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">Employment and Living Standards — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 10.5px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">Rearmament and Conscription: The Reality of 'Invisible Unemployment'</span>
+              <span class="block-date">1935–1939</span>
+            </div>
+            <div class="spread-stage-q">“Why was the Nazi claim of full employment statistically misleading?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.4pt; line-height: 1.52; margin-bottom: 0px;">Nazi propaganda loudly celebrated an economic "miracle", claiming registered unemployment plummeted from six million in 1933 to under three hundred thousand by 1939. This dramatic recovery was heavily driven when <strong>military conscription reintroduced</strong> in March 1935, drafting five hundred thousand young men into the Wehrmacht and stimulating massive heavy industrial orders for aircraft, tanks, artillery, and synthetic petroleum fuel.
+
+However, historians emphasize that these figures masked extensive <strong>'invisible unemployment' stats</strong> through statistical manipulation. Crucially, <strong>women and Jews excluded</strong> from official unemployment registers after being purged from civil service, medical, and teaching roles. Furthermore, young men serving in the compulsory RAD and political dissidents imprisoned in concentration camps were omitted, concealing hundreds of thousands of jobless citizens from public records.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 10.5px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">Strength Through Joy (KdF): Subsidized Leisure and the People's Car</span>
+              <span class="block-date">1933–1939</span>
+            </div>
+            <div class="spread-stage-q">“How did leisure schemes compensate workers for lost political rights?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.4pt; line-height: 1.52; margin-bottom: 0px;">To reconcile workers to lost trade union rights and long hours, Robert Ley established <strong>Kraft durch Freude (KdF)</strong>, or Strength Through Joy. Subsidized by the DAF, KdF became the world’s largest leisure provider, organizing affordable concerts, sporting events, hiking excursions, and popular <strong>subsidized cruises &amp; theater</strong> voyages to Norway and the Mediterranean aboard purpose-built luxury liners for working-class families.
+
+To provide affordable private transport, KdF launched the ambitious <strong>Volkswagen Beetle savings scheme</strong>, allowing workers to purchase an automobile by saving five marks weekly. However, no German worker ever received a civilian car; when war broke out in 1939, factory machinery was converted to military vehicles, and workers’ personal savings deposits were confiscated to finance military rearmament production.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">Guns vs Butter: The Four-Year Plan and Falling Living Standards</span>
+              <span class="block-date">1936–1939</span>
+            </div>
+            <div class="spread-stage-q">“How did total rearmament erode real worker purchasing power by 1939?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.4pt; line-height: 1.52; margin-bottom: 0px;">In 1936, Hermann Göring took control of the economy under the ambitious <strong>Four-Year Plan (1936)</strong>, designed to prepare the military and economy for total European war within four years. Göring prioritized <strong>autarky economic self-sufficiency</strong>, attempting to eliminate dependence on imported foreign raw materials by manufacturing expensive domestic synthetic rubber (<em>Buna</em>), synthetic oil from coal, and low-grade German iron ore.
+
+This aggressive rearmament produced the famous "guns or butter" dilemma, sacrificing civilian living standards for military production. Workers endured <strong>longer hours &amp; food rationing</strong>, with average weekly working hours rising from forty-three to forty-nine by 1939. Shortages of butter, meat, and consumer goods grew acute, and real wages barely matched 1928 levels, proving that ordinary German living standards remained severely strained.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 03 (Part II): Employment and Living Standards · Stages 3–5</span>
+      <span class="pg">Page 9 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-10" data-page="10">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>04</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">The Persecution of Minorities</h2>
+        </div>
+        <div class="hdr-dt">1933–1939</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · 1933</div>
+          <div class="flow-lbl">Racial Hierarchy: Aryan 'Herrenvolk' Ideology and the April Boycott</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · Sep 1935</div>
+          <div class="flow-lbl">Nuremberg Laws: Reich Citizenship and the Protection of German Blood</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · 1933–1938</div>
+          <div class="flow-lbl">Biological Purity: Persecuting Roma, Homosexuals and the Disabled</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · 9–10 Nov 1938</div>
+          <div class="flow-lbl">Kristallnacht: The Night of Broken Glass and State-Sponsored Terror</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · 1938–1939</div>
+          <div class="flow-lbl">Economic Destruction: Aryanisation, Collective Fines and Forced Flight</div>
+        </div>
+      </div>
+
+      
+      <div class="eq-bar">
+        <span class="eq-pill">KEY ENQUIRY</span>
+        <span class="eq-txt">“How and why did the Nazis persecute minorities, and how did the persecution of Jewish people escalate between 1933 and 1939?”</span>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">Racial Hierarchy: Aryan 'Herrenvolk' Ideology and the April Boycott</span>
+              <span class="block-date">1933</span>
+            </div>
+            <div class="spread-stage-q">“How did the regime initiate public state-sponsored antisemitic discrimination?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Nazi domestic policy was driven by fanatical biological racism, placing the Nordic <strong>Aryan 'Herrenvolk' ideology</strong> at the peak of a pseudo-scientific racial hierarchy. Hitler portrayed Jews, Roma, and Slavs as subhuman parasites (<em>Untermenschen</em>) allegedly threatening to poison German blood. The regime viewed the elimination of Jewish influence as the essential prerequisite for national rebirth and European conquest.
+
+On 1 April 1933, the state launched its first coordinated anti-Semitic assault with the <strong>April 1933 shop boycott</strong>. Armed SA stormtroopers stood outside Jewish-owned shops, law firms, and medical clinics, painting yellow Stars of David on windows and intimidating customers. Six days later, thousands of <strong>Jewish civil servants purged</strong> from government administration, schools, and university faculties under the Civil Service Restoration Act.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">The Nuremberg Laws: Reich Citizenship and the Protection of German Blood</span>
+              <span class="block-date">Sep 1935</span>
+            </div>
+            <div class="spread-stage-q">“Why did the Nuremberg Laws turn antisemitism into legal statute?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In September 1935, anti-Semitic persecution was codified into constitutional law at the annual Nuremberg rally through the <strong>Nuremberg Laws (1935)</strong>. The first statute, the <strong>Reich Citizenship Act</strong>, stripped German Jews of full citizenship, demoting them to subjects without voting rights or the right to hold public office, legally transforming German Jews into stateless aliens inside their own homeland.
+
+The companion statute, the <strong>German Blood Protection Law</strong>, outlawed marriage and sexual relations between Jewish citizens and people of German blood, criminalizing violations as "racial defilement" punishable by imprisonment. Crucially, Jewish identity was defined not by religious belief, but biologically by ancestry: having three or four Jewish grandparents classified an individual as fully Jewish regardless of their personal faith.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 04 (Part I): The Persecution of Minorities · Stages 1–2</span>
+      <span class="pg">Page 10 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-11" data-page="11">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>04</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">The Persecution of Minorities — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 10.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">Biological Purity: Persecuting Roma, Homosexuals and the Disabled</span>
+              <span class="block-date">1933–1939</span>
+            </div>
+            <div class="spread-stage-q">“How did racial hygiene theories target groups outside the racial community?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.35pt; line-height: 1.51; margin-bottom: 0px;">The racial state targeted all minority groups deemed biologically inferior or socially unproductive. Systematic <strong>Roma Gypsy persecution</strong> escalated rapidly, with hundreds deported to enclosed municipal internment camps like Marzahn before transfer to concentration camps. Under Paragraph 175, thousands endured <strong>pink triangle homosexual arrests</strong>, resulting in over fifteen thousand men being imprisoned in concentration camps, where they were subjected to forced labor and medical experiments.
+
+The disabled and mentally ill suffered the most murderous persecution. Under the 1933 Sterilisation Law, four hundred thousand individuals were forcibly sterilized. In 1939, this culminated in the <strong>Euthanasia T4 program origins</strong>, where Hitler authorized doctors to murder mentally and physically disabled children and adults by lethal injection and carbon monoxide gas chambers, pioneering industrial killing methods later used in the Holocaust.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 10.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">Kristallnacht: The Night of Broken Glass and State-Sponsored Terror</span>
+              <span class="block-date">Nov 1938</span>
+            </div>
+            <div class="spread-stage-q">“How did the November pogrom mark a decisive shift toward violent state terror?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.35pt; line-height: 1.51; margin-bottom: 0px;">On 9–10 November 1938, anti-Semitic violence escalated into murderous state-orchestrated terror during the infamous <strong>Kristallnacht pogrom (1938)</strong>. Following the assassination of a German diplomat in Paris by a young Polish Jew, Joseph Goebbels unleashed plainclothes SA and SS mobs across Germany, launching coordinated attacks against Jewish communities while police and fire brigades were ordered not to intervene.
+
+Across the Reich, over one thousand <strong>synagogues burnt &amp; shops looted</strong>, as rioters smashed windows of seven thousand Jewish businesses and ransacked homes. Ninety-one Jews were murdered, and <strong>30,000 Jewish men sent to camps</strong> such as Dachau, Buchenwald, and Sachsenhausen, enduring brutal abuse until families agreed to surrender their property and emigrate. Kristallnacht marked the transition from legal discrimination to physical violence.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">Economic Destruction: Aryanisation, Collective Fines and Forced Flight</span>
+              <span class="block-date">1938–1939</span>
+            </div>
+            <div class="spread-stage-q">“How did the regime eliminate all remaining Jewish participation in economic life?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.35pt; line-height: 1.51; margin-bottom: 0px;">In the wake of Kristallnacht, the Nazi state moved to completely eliminate Jews from economic life. Perversely blaming Jewish victims for the destruction, Göring imposed an astronomical <strong>1 billion mark collective fine</strong> on the Jewish community and confiscated all insurance payouts. Soon afterward, decrees banned Jews from attending public theaters, concerts, parks, and swimming pools, while Jewish children were expelled from state schools.
+
+Through forced "Aryanisation", all remaining <strong>Jewish businesses 'Aryanized'</strong>, compelled to sell their shops and factories to Nazi party members at fraction of their true value. Under Reinhard Heydrich, the <strong>Central Emigration Office expulsions</strong> stripped emigrants of their assets before forcing them into foreign exile. Over half of Germany’s Jewish population fled before borders closed in September 1939.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 04 (Part II): The Persecution of Minorities · Stages 3–5</span>
+      <span class="pg">Page 11 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-quiz" id="page-12" data-page="12">
+    <div class="quiz-main">
+      <div class="subpage-hdr">
+        <div class="subpage-num">
+          <small>QUIZ BANK</small>
+          <span>20</span>
+        </div>
+        <div class="subpage-tt">
+          <div class="subpage-kicker">WEIMAR &amp; NAZI GERMANY · KT4: LIFE IN NAZI GERMANY (1933–1939) · ACTIVE RECALL</div>
+          <h2>Master Knowledge Retrieval Quiz (Questions 1–20)</h2>
+        </div>
+        <div class="subpage-pill">Partner / Solo</div>
+      </div>
+
+      <div class="quiz-inst">
+        <b>Classroom &amp; Homework Retrieval Protocol:</b> Test your partner aloud or write full-sentence answers in your exercise book using the page references shown. Zero answers are printed so this classroom textbook remains reusable all year.
+      </div>
+
+      <div class="quiz-grid " style="gap: 10.3px;">
+        
+        <div class="quiz-card" style="padding: 11.1px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.62pt;"><span class="quiz-e-pill">E1</span> Enquiry 01: Nazi Policies Towards Women</span>
+            <span class="quiz-card-loc">pp. 4–5</span>
+          </div>
+          <ol class="quiz-ol" start="1" style="font-size: 11.25pt; line-height: 1.48;">
+            <li style="margin-bottom: 4.9px;">What three German words (starting with K) summarised the traditional Nazi ideal for women?</li><li style="margin-bottom: 4.9px;">Translate those three words into English.</li><li style="margin-bottom: 4.9px;">What was the name of the 1933 law that gave couples 1,000 marks to marry?</li><li style="margin-bottom: 4.9px;">What was the condition placed on the wife for the couple to receive this loan?</li><li style="margin-bottom: 0px;">How much of the marriage loan was forgiven for each child born?</li>
+          </ol>
+        </div>
+
+        <div class="quiz-card" style="padding: 11.1px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.62pt;"><span class="quiz-e-pill">E2</span> Enquiry 02: Nazi Policies Towards the Young</span>
+            <span class="quiz-card-loc">pp. 6–7</span>
+          </div>
+          <ol class="quiz-ol" start="6" style="font-size: 11.25pt; line-height: 1.48;">
+            <li style="margin-bottom: 4.9px;">Who was the Nazi Minister of Education?</li><li style="margin-bottom: 4.9px;">What was the name of the compulsory union that 97% of teachers had joined by 1939?</li><li style="margin-bottom: 4.9px;">What percentage of the school curriculum timetable was mandated for physical education and fitness?</li><li style="margin-bottom: 4.9px;">What new compulsory school subject taught children pseudo-scientific racial theory and skull measurement?</li><li style="margin-bottom: 0px;">What youth organization was established for German boys aged ten to fourteen?</li>
+          </ol>
+        </div>
+
+        <div class="quiz-card" style="padding: 11.1px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.62pt;"><span class="quiz-e-pill">E3</span> Enquiry 03: Employment and Living Standards</span>
+            <span class="quiz-card-loc">pp. 8–9</span>
+          </div>
+          <ol class="quiz-ol" start="11" style="font-size: 11.25pt; line-height: 1.48;">
+            <li style="margin-bottom: 4.9px;">How many registered unemployed workers were there in Germany when Hitler became Chancellor in January 1933?</li><li style="margin-bottom: 4.9px;">To what official figure had unemployment fallen by 1939, heralded by Nazi propaganda as an economic miracle?</li><li style="margin-bottom: 4.9px;">What do the initials RAD stand for in English?</li><li style="margin-bottom: 4.9px;">In what year did the RAD become compulsory for all young men aged 18–25?</li><li style="margin-bottom: 0px;">How long did young men have to serve in the RAD?</li>
+          </ol>
+        </div>
+
+        <div class="quiz-card" style="padding: 11.1px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.62pt;"><span class="quiz-e-pill">E4</span> Enquiry 04: The Persecution of Minorities</span>
+            <span class="quiz-card-loc">pp. 10–11</span>
+          </div>
+          <ol class="quiz-ol" start="16" style="font-size: 11.25pt; line-height: 1.48;">
+            <li style="margin-bottom: 4.9px;">What twisted biological theory underpinned Hitler's racial ideology?</li><li style="margin-bottom: 4.9px;">What German term meaning 'subhuman' was used by Nazi racial theory to brand Jews and Roma?</li><li style="margin-bottom: 4.9px;">What nationwide action did the Nazi regime organize on 1 April 1933 against Jewish businesses and doctors?</li><li style="margin-bottom: 4.9px;">What two landmark racial laws were enacted at the Nuremberg party rally in September 1935?</li><li style="margin-bottom: 0px;">Roughly how many people were forcibly sterilised under this law?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Life in Nazi Germany · Knowledge Retrieval Quiz</span>
+      <span class="pg">Page 12 / 12</span>
+    </footer>
+  </section>
+
+</body></html>

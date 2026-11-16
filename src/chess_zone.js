@@ -37,7 +37,8 @@ export function isChessViewActive() {
   if (typeof document !== 'undefined') {
     if (
       document.getElementById('chess-hub-root') ||
-      document.getElementById('projector-whiteboard-root')
+      document.getElementById('projector-whiteboard-root') ||
+      document.getElementById('ko-fullscreen-arena')
     ) {
       return true;
     }
@@ -180,8 +181,6 @@ export const DEFAULT_LOCAL_NAME_MAP = {
   p_1789653960520: 'William Harvey',
   p_1789653940195: 'The Bar Lev Defender',
   p_1791467946326: 'The Armada Fireship',
-  p_1794496895101: 'Jensen W.',
-  p_1794498328039: 'Harry M.',
 };
 
 // Pupil Username Handles (@username)
@@ -199,8 +198,6 @@ export const PLAYER_USERNAMES = {
   p_1789653960520: 'WilliamHarvey',
   p_1789653940195: 'BarLevDefender',
   p_1791467946326: 'ArmadaFireship',
-  p_1794496895101: 'JensenW.',
-  p_1794498328039: 'HarryM.',
 };
 
 export const CALLSIGN_MAP = {
@@ -535,6 +532,44 @@ export function getPlayerSelectLabel(player) {
   return `${clean} (${houseName} - Rtg ${player.rating})`;
 }
 
+// Concise, non-ambiguous short handle for compact match/bracket buttons (prevents "The Wins" / "Sir Wins")
+export function getPlayerButtonShortName(playerOrName) {
+  const raw =
+    typeof playerOrName === 'string'
+      ? playerOrName
+      : (playerOrName && (playerOrName.name || playerOrName.nickname || playerOrName.realName)) ||
+        'Player';
+  const stripped = raw
+    .trim()
+    .replace(/^(?:The|Sir|Lord|Lady|Dame|Dr\.?|Admiral|General|Captain|Field Marshal)\s+/i, '')
+    .trim();
+  if (!stripped) return raw.trim() || 'Player';
+  const words = stripped.split(/\s+/);
+  // Keep "First L." pupil format intact (e.g. "Leo B.")
+  if (words.length === 2 && /^[A-Za-z]\.?$/.test(words[1])) {
+    return stripped;
+  }
+  // Concise 2-word handle for 3+ word callsigns (e.g. "Bar Lev Defender" -> "Bar Lev", "RAMC Field Medic" -> "RAMC Medic")
+  if (words.length >= 3) {
+    if (words[0].toUpperCase() === 'RAMC') return `RAMC ${words[words.length - 1]}`;
+    return `${words[0]} ${words[1]}`;
+  }
+  // Shorten 2-word scholar/historical names so "[Name] Wins" always stays single-line on bracket buttons
+  if (words.length === 2) {
+    if (/^Golden$/i.test(words[0])) return words[1];
+    if (/^(William|Joseph|Andreas|Alexander|Francis)$/i.test(words[0])) {
+      return `${words[0].charAt(0)}. ${words[1]}`;
+    }
+    if (stripped.length > 14 && !/^(Thomas|White|Tudor)$/i.test(words[0])) {
+      return words[0];
+    }
+  }
+  return stripped;
+}
+if (typeof window !== 'undefined') {
+  window.getPlayerButtonShortName = getPlayerButtonShortName;
+}
+
 // Helper: Inspect emergency recovery backup
 function getBackupInfo() {
   try {
@@ -607,6 +642,9 @@ let chessState = {
   showAdjudicationModal: false,
   whiteboardMode: false,
   whiteboardFitMode: true,
+  bracketFullscreen: false,
+  bracketZoom: 100,
+  bracketTierFilter: 'all',
   adjudicationCalc: { white: 0, black: 0 },
   autoRePairEnabled: true,
   sessionActive: false,
@@ -761,9 +799,48 @@ if (typeof window !== 'undefined' && !window.__historyKeydownBound) {
 
     const isChessActive =
       document.getElementById('chess-hub-root') ||
+      document.getElementById('ko-fullscreen-arena') ||
       (window.state && window.state.currentView === 'chess') ||
       (window.appStore && window.appStore.state && window.appStore.state.currentView === 'chess');
     if (!isChessActive) return;
+
+    if (e.key === 'Escape' && chessState && chessState.bracketFullscreen) {
+      if (typeof window.toggleBracketFullscreen === 'function') {
+        window.toggleBracketFullscreen(false);
+      }
+      return;
+    }
+
+    if (
+      (e.key === 'f' || e.key === 'F') &&
+      chessState &&
+      (chessState.activeTab === 'knockout' || chessState.bracketFullscreen) &&
+      chessState.knockoutBracket
+    ) {
+      if (typeof window.toggleBracketFullscreen === 'function') {
+        window.toggleBracketFullscreen();
+      }
+      return;
+    }
+
+    if (
+      chessState &&
+      (chessState.activeTab === 'knockout' || chessState.bracketFullscreen) &&
+      chessState.knockoutBracket &&
+      !e.ctrlKey &&
+      !e.metaKey
+    ) {
+      if (e.key === '+' || e.key === '=') {
+        if (typeof window.adjustBracketZoom === 'function') window.adjustBracketZoom(10);
+        return;
+      } else if (e.key === '-' || e.key === '_') {
+        if (typeof window.adjustBracketZoom === 'function') window.adjustBracketZoom(-10);
+        return;
+      } else if (e.key === '0') {
+        if (typeof window.setBracketZoom === 'function') window.setBracketZoom(100);
+        return;
+      }
+    }
 
     if (e.key === 'w' || e.key === 'W') {
       if (typeof window.toggleChessWhiteboardMode === 'function') {
@@ -778,6 +855,14 @@ if (typeof window !== 'undefined' && !window.__historyKeydownBound) {
       if (typeof window.toggleChessWhiteboardMode === 'function') {
         window.toggleChessWhiteboardMode(false);
       }
+    }
+  });
+
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement && chessState && chessState.bracketFullscreen && chessState.__nativeFsRequested) {
+      chessState.__nativeFsRequested = false;
+      chessState.bracketFullscreen = false;
+      if (isChessViewActive()) renderChessHubView();
     }
   });
 }
@@ -1186,6 +1271,12 @@ export function renderChessHubView() {
   });
   const individualLeader = chessState.players.find((p) => p.rank === 1) || sortedByPoints[0];
   const individualLeaderPts = individualLeader ? calculatePlayerPoints(individualLeader) : 0;
+
+  // Full-Screen Tournament Bracket Arena
+  if (chessState.bracketFullscreen && chessState.knockoutBracket) {
+    container.innerHTML = renderKnockoutFullscreenArena(sortedHouses);
+    return;
+  }
 
   // Whiteboard Projector Mode View (Clean, High-Contrast Classroom Display)
   if (chessState.whiteboardMode) {
@@ -4130,31 +4221,160 @@ function renderKnockoutAttendanceBar() {
   `;
 }
 
-// 5. Digital Knockout Cup (Single-Elimination Bracket) (Audio 3)
-function renderKnockoutTab() {
-  const bracket = chessState.knockoutBracket;
-
-  if (!bracket) {
-    return `
-      ${renderKnockoutAttendanceBar()}
-      <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 40px 24px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-        <div style="width: 60px; height: 60px; border-radius: 50%; background: #fef3c7; color: #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 16px;">
-          <i class="fa-solid fa-trophy"></i>
-        </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #0f172a; margin: 0 0 10px 0;">
-          Thursday Period 6 Knockout Cup
-        </h2>
-        <p style="color: #64748b; max-width: 580px; margin: 0 auto 24px; font-size: 0.95rem; line-height: 1.6;">
-          Keep it fully digital! Mark attending pupils above as they arrive, then tap <strong>Auto-Populate Seeded Bracket</strong>. The app automatically balances the draw by official player rankings and awards Round 1 Byes to top seeds!
-        </p>
-        <button onclick="window.generateKnockoutTournament()" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; font-size: 1rem; padding: 12px 26px; border-radius: 8px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);">
-          <i class="fa-solid fa-sitemap"></i> Auto-Populate Seeded Bracket
-        </button>
-      </div>
-    `;
+// Interactive Zoom, Fit-to-Screen, Drag-Pan & Full-Screen Helpers for Knockout Bracket
+function applyBracketZoomInPlace(nextZoom) {
+  const clamped = Math.max(50, Math.min(175, Math.round(nextZoom)));
+  chessState.bracketZoom = clamped;
+  const stage = document.getElementById('ko-bracket-zoom-stage');
+  if (stage) {
+    stage.style.zoom = (clamped / 100).toFixed(3);
   }
+  document.querySelectorAll('.ko-zoom-readout').forEach((el) => {
+    el.textContent = `${clamped}%`;
+  });
+}
 
-  // Render Visual Bracket Tree
+if (typeof window !== 'undefined') {
+  window.adjustBracketZoom = function (delta) {
+    const cur = typeof chessState.bracketZoom === 'number' ? chessState.bracketZoom : 100;
+    applyBracketZoomInPlace(cur + delta);
+  };
+
+  window.setBracketZoom = function (val) {
+    applyBracketZoomInPlace(val);
+  };
+
+  window.fitKnockoutBracket = function () {
+    const wrap = document.getElementById('ko-bracket-scroll-wrap');
+    const stage = document.getElementById('ko-bracket-zoom-stage');
+    const goldTree = document.getElementById('ko-gold-tree');
+    if (!wrap || !stage) {
+      applyBracketZoomInPlace(100);
+      return;
+    }
+    stage.style.zoom = '1';
+    const targetEl = goldTree || stage;
+    const naturalW = targetEl.scrollWidth || 940;
+    const availW = Math.max(320, wrap.clientWidth - 12);
+    const fitPct = Math.max(55, Math.min(135, Math.floor((availW / naturalW) * 100)));
+    applyBracketZoomInPlace(fitPct);
+  };
+
+  window.setBracketTierFilter = function (tier) {
+    chessState.bracketTierFilter = tier || 'all';
+    renderChessHubView();
+  };
+
+  window.toggleBracketFullscreen = function (forceState) {
+    const next =
+      typeof forceState === 'boolean' ? forceState : !Boolean(chessState.bracketFullscreen);
+    chessState.bracketFullscreen = next;
+
+    if (next) {
+      chessState.activeTab = 'knockout';
+      if (
+        document.documentElement &&
+        document.documentElement.requestFullscreen &&
+        !document.fullscreenElement
+      ) {
+        chessState.__nativeFsRequested = true;
+        document.documentElement.requestFullscreen().catch(() => {
+          chessState.__nativeFsRequested = false;
+        });
+      }
+    } else if (document.fullscreenElement && document.exitFullscreen) {
+      chessState.__nativeFsRequested = false;
+      document.exitFullscreen().catch(() => {});
+    }
+
+    renderChessHubView();
+    if (next) {
+      setTimeout(() => {
+        if (typeof window.fitKnockoutBracket === 'function') {
+          const wrap = document.getElementById('ko-bracket-scroll-wrap');
+          const tree = document.getElementById('ko-gold-tree');
+          if (wrap && tree && tree.scrollWidth > wrap.clientWidth) {
+            window.fitKnockoutBracket();
+          }
+        }
+      }, 60);
+    }
+  };
+
+  if (!window.__koZoomPanBound) {
+    window.__koZoomPanBound = true;
+    let isDraggingBracket = false;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    let startScrollLeft = 0;
+    let startScrollTop = 0;
+
+    window.addEventListener(
+      'wheel',
+      (e) => {
+        const wrap = e.target && e.target.closest && e.target.closest('#ko-bracket-scroll-wrap');
+        if (!wrap) return;
+        if (e.ctrlKey || e.metaKey) {
+          e.preventDefault();
+          window.adjustBracketZoom(e.deltaY < 0 ? 8 : -8);
+        }
+      },
+      { passive: false },
+    );
+
+    window.addEventListener('mousedown', (e) => {
+      const wrap = e.target && e.target.closest && e.target.closest('#ko-bracket-scroll-wrap');
+      if (!wrap) return;
+      if (e.target.closest('button, a, select, input')) return;
+      isDraggingBracket = true;
+      dragStartX = e.clientX;
+      dragStartY = e.clientY;
+      startScrollLeft = wrap.scrollLeft;
+      startScrollTop = wrap.scrollTop;
+      wrap.style.cursor = 'grabbing';
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDraggingBracket) return;
+      const wrap = document.getElementById('ko-bracket-scroll-wrap');
+      if (!wrap) {
+        isDraggingBracket = false;
+        return;
+      }
+      wrap.scrollLeft = startScrollLeft - (e.clientX - dragStartX);
+      wrap.scrollTop = startScrollTop - (e.clientY - dragStartY);
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (!isDraggingBracket) return;
+      isDraggingBracket = false;
+      const wrap = document.getElementById('ko-bracket-scroll-wrap');
+      if (wrap) wrap.style.cursor = 'grab';
+    });
+  }
+}
+
+function renderBracketZoomControlsHTML(isFullscreen = false) {
+  const z = typeof chessState.bracketZoom === 'number' ? chessState.bracketZoom : 100;
+  const dark = isFullscreen;
+  const pillBg = dark ? '#1e293b' : '#f8fafc';
+  const pillBorder = dark ? '#475569' : '#cbd5e1';
+  const btnColor = dark ? '#f8fafc' : '#1e293b';
+
+  return `
+    <div style="display: inline-flex; align-items: center; gap: 4px; background: ${pillBg}; border: 1px solid ${pillBorder}; border-radius: 7px; padding: 3px 6px;" title="Zoom Bracket (+ / - or Ctrl + Scroll)">
+      <button type="button" onclick="window.adjustBracketZoom(-10)" style="background: transparent; border: none; color: ${btnColor}; font-weight: 900; font-size: 0.9rem; width: 24px; height: 24px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="Zoom Out (-)">−</button>
+      <button type="button" onclick="window.setBracketZoom(100)" class="ko-zoom-readout" style="background: ${dark ? '#0f172a' : '#ffffff'}; border: 1px solid ${pillBorder}; color: ${btnColor}; font-family: monospace; font-weight: 800; font-size: 0.74rem; padding: 2px 7px; border-radius: 4px; min-width: 46px; cursor: pointer;" title="Click to reset to 100%">${z}%</button>
+      <button type="button" onclick="window.adjustBracketZoom(10)" style="background: transparent; border: none; color: ${btnColor}; font-weight: 900; font-size: 0.9rem; width: 24px; height: 24px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="Zoom In (+)">+</button>
+      <button type="button" onclick="window.fitKnockoutBracket()" style="background: ${dark ? '#334155' : '#e2e8f0'}; border: none; color: ${btnColor}; font-weight: 800; font-size: 0.7rem; padding: 3px 8px; border-radius: 4px; cursor: pointer;" title="Fit entire bracket width onto screen">Fit</button>
+    </div>
+  `;
+}
+
+function renderKnockoutBracketStagesHTML(bracket, options = {}) {
+  const isFullscreen = Boolean(options.isFullscreen);
+  const tierFilter = isFullscreen ? chessState.bracketTierFilter || 'all' : 'all';
+
   let grandWinner = null;
   const finalMatch = bracket.rounds[bracket.rounds.length - 1][0];
   if (finalMatch && finalMatch.winner) grandWinner = finalMatch.winner;
@@ -4198,16 +4418,478 @@ function renderKnockoutTab() {
     woodenSpoonWinner = bracket.woodenSpoonMatch.winner;
   }
 
-  let bronzeWinner = null;
-  if (bracket.cupBronzeMatch && bracket.cupBronzeMatch.winner) {
-    bronzeWinner = bracket.cupBronzeMatch.winner;
+  const z = typeof chessState.bracketZoom === 'number' ? chessState.bracketZoom : 100;
+  const showCup = tierFilter === 'all' || tierFilter === 'cup';
+  const showPlate = tierFilter === 'all' || tierFilter === 'plate';
+  const showSpoon = tierFilter === 'all' || tierFilter === 'spoon';
+
+  return `
+    <div id="ko-bracket-scroll-wrap" style="overflow: auto; cursor: grab; padding: 2px 2px 10px 2px;">
+      <div id="ko-bracket-zoom-stage" style="zoom: ${(z / 100).toFixed(3)}; transform-origin: top left;">
+        ${
+          showCup
+            ? `
+          <!-- SECTION 1: 🏆 Championship Cup (Gold Tier) -->
+          ${
+            grandWinner
+              ? `
+            <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 18px; margin-bottom: 20px; text-align: center; box-shadow: 0 6px 18px rgba(245, 158, 11, 0.25); animation: zoomIn 0.3s ease-out;">
+              <div style="font-size: 2rem; color: #d97706; margin-bottom: 4px;"><i class="fa-solid fa-crown"></i></div>
+              <h3 style="margin: 0 0 4px 0; font-family: 'Playfair Display', serif; font-size: 1.55rem; color: #78350f; font-weight: 900;">
+                🏆 TOURNAMENT CHAMPION: ${grandWinner.name}!
+              </h3>
+              <div style="font-size: 0.98rem; font-weight: 800; color: ${HOUSES[grandWinner.house]?.color || '#78350f'}; text-transform: uppercase;">
+                ${HOUSES[grandWinner.house]?.name || grandWinner.house} House (+3 House Points Awarded)
+              </div>
+              <div style="font-size: 0.84rem; color: #92400e; margin-top: 4px;">
+                Brilliant strategic mastery throughout all rounds of Period 6!
+              </div>
+            </div>
+          `
+              : ''
+          }
+
+          <div style="margin-bottom: 10px;">
+            <div style="display: inline-flex; align-items: center; gap: 6px; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; padding: 3px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">
+              🏆 Gold Tier · Championship Cup Bracket
+            </div>
+          </div>
+
+          <!-- Championship Bracket Tree Row -->
+          <div id="ko-gold-tree" style="display: flex; gap: 16px; align-items: stretch; padding: 6px 0 16px;">
+            ${bracket.rounds
+              .map((round, rIdx) => {
+                const roundTitle = bracket.roundNames[rIdx] || `Round ${rIdx + 1}`;
+                return `
+                <div style="min-width: 212px; flex: 1 1 0;">
+                  <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 10px; text-align: center; letter-spacing: 0.05em; white-space: nowrap;">
+                    ${roundTitle}
+                  </div>
+                  <div style="display: flex; flex-direction: column; justify-content: space-around; height: calc(100% - 28px); min-height: 330px; gap: 14px;">
+                    ${round
+                      .map((m, mIdx) => {
+                        const p1 = m.p1;
+                        const p2 = m.p2;
+                        const h1 = p1 ? HOUSES[p1.house] : null;
+                        const h2 = p2 ? HOUSES[p2.house] : null;
+
+                        return `
+                        <div style="background: #f8fafc; border: 1.5px solid ${m.isBye ? '#86efac' : m.winner ? '#10b981' : '#cbd5e1'}; border-radius: 8px; padding: 9px 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); position: relative;">
+                          
+                          <!-- P1 Slot -->
+                          <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#dcfce7' : '#ffffff'}; margin-bottom: 4px;">
+                            <span style="font-weight: 700; font-size: 0.82rem; color: #0f172a; line-height: 1.2; display: flex; align-items: center; gap: 5px; min-width: 0;">
+                              ${p1?.seed ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.64rem; font-weight: 800; padding: 1px 5px; border-radius: 4px; flex-shrink: 0;">#${p1.seed}</span>` : ''}
+                              <span style="word-break: break-word;">${p1 ? p1.name : 'TBD'}</span>
+                            </span>
+                            ${h1 && !p1?.isBye ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h1.color}; flex-shrink: 0;">${h1.name}</span>` : ''}
+                          </div>
+
+                          <!-- P2 Slot -->
+                          <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p2 && p2.id) ? '#dcfce7' : p2?.isBye ? '#f1f5f9' : '#ffffff'};">
+                            <span style="font-weight: 700; font-size: 0.82rem; color: ${p2?.isBye ? '#94a3b8' : '#0f172a'}; line-height: 1.2; display: flex; align-items: center; gap: 5px; min-width: 0;">
+                              ${p2?.seed && !p2?.isBye ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.64rem; font-weight: 800; padding: 1px 5px; border-radius: 4px; flex-shrink: 0;">#${p2.seed}</span>` : ''}
+                              <span style="word-break: break-word;">${p2 ? (p2.isBye ? '— [BYE] —' : p2.name) : 'TBD'}</span>
+                            </span>
+                            ${h2 && !p2?.isBye ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h2.color}; flex-shrink: 0;">${h2.name}</span>` : ''}
+                          </div>
+
+                          <!-- Action Button -->
+                          ${
+                            p1 && p2 && !m.winner && !m.isBye && chessState.userRole === 'teacher'
+                              ? `
+                            <div style="display: flex; gap: 5px; margin-top: 7px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
+                              <button onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Advance ${p1.name}">
+                                ${getPlayerButtonShortName(p1)} Wins
+                              </button>
+                              <button onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Advance ${p2.name}">
+                                ${getPlayerButtonShortName(p2)} Wins
+                              </button>
+                            </div>
+                          `
+                              : ''
+                          }
+                          ${
+                            m.isBye
+                              ? `
+                            <div style="font-size: 0.7rem; font-weight: 800; color: #059669; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #dcfce7;">
+                              <i class="fa-solid fa-forward"></i> Auto-Advanced (Top-Seed Bye)
+                            </div>
+                          `
+                              : m.winner
+                                ? `
+                            <div style="font-size: 0.7rem; font-weight: 800; color: #15803d; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #dcfce7;">
+                              <i class="fa-solid fa-check"></i> Winner: ${m.winner.name} (+3 pts)
+                            </div>
+                          `
+                                : ''
+                          }
+                        </div>
+                      `;
+                      })
+                      .join('')}
+                  </div>
+                </div>
+              `;
+              })
+              .join('')}
+
+            <!-- 🥉 3rd Place Bronze Medal Playoff -->
+            ${
+              bracket.cupBronzeMatch
+                ? `
+              <div style="min-width: 208px; flex: 1 1 0; border-left: 2px dashed #fcd34d; padding-left: 14px;">
+                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #b45309; margin-bottom: 10px; text-align: center; letter-spacing: 0.04em; white-space: nowrap;">
+                  🥉 3rd Place Playoff
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center; height: calc(100% - 28px); min-height: 330px;">
+                  <div style="background: #fffbeb; border: 1.5px solid ${bracket.cupBronzeMatch.winner ? '#f59e0b' : '#fcd34d'}; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+                    <div style="font-size: 0.68rem; font-weight: 800; color: #92400e; text-transform: uppercase; margin-bottom: 6px; text-align: center;">
+                      Cup Semi-Final Losers
+                    </div>
+                    <!-- P1 -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${bracket.cupBronzeMatch.winner && bracket.cupBronzeMatch.winner.id === bracket.cupBronzeMatch.p1?.id ? '#fef3c7' : '#ffffff'}; margin-bottom: 4px;">
+                      <span style="font-weight: 700; font-size: 0.82rem; color: #0f172a; line-height: 1.2;">
+                        ${bracket.cupBronzeMatch.p1 ? bracket.cupBronzeMatch.p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting SF 1 Loser</span>'}
+                      </span>
+                      ${bracket.cupBronzeMatch.p1 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p1.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.cupBronzeMatch.p1.house]?.name || ''}</span>` : ''}
+                    </div>
+                    <!-- P2 -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${bracket.cupBronzeMatch.winner && bracket.cupBronzeMatch.winner.id === bracket.cupBronzeMatch.p2?.id ? '#fef3c7' : '#ffffff'};">
+                      <span style="font-weight: 700; font-size: 0.82rem; color: #0f172a; line-height: 1.2;">
+                        ${bracket.cupBronzeMatch.p2 ? bracket.cupBronzeMatch.p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting SF 2 Loser</span>'}
+                      </span>
+                      ${bracket.cupBronzeMatch.p2 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p2.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.cupBronzeMatch.p2.house]?.name || ''}</span>` : ''}
+                    </div>
+                    <!-- Actions -->
+                    ${
+                      bracket.cupBronzeMatch.p1 &&
+                      bracket.cupBronzeMatch.p2 &&
+                      !bracket.cupBronzeMatch.winner &&
+                      chessState.userRole === 'teacher'
+                        ? `
+                      <div style="display: flex; gap: 5px; margin-top: 7px; border-top: 1px dashed #fcd34d; padding-top: 6px;">
+                        <button onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
+                          ${getPlayerButtonShortName(bracket.cupBronzeMatch.p1)} Wins
+                        </button>
+                        <button onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
+                          ${getPlayerButtonShortName(bracket.cupBronzeMatch.p2)} Wins
+                        </button>
+                      </div>
+                    `
+                        : ''
+                    }
+                    ${
+                      bracket.cupBronzeMatch.winner
+                        ? `
+                      <div style="font-size: 0.72rem; font-weight: 800; color: #b45309; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #fcd34d;">
+                        🥉 3rd Place Bronze: ${bracket.cupBronzeMatch.winner.name} (+2 pts)
+                      </div>
+                    `
+                        : ''
+                    }
+                  </div>
+                </div>
+              </div>
+            `
+                : ''
+            }
+          </div>
+        `
+            : ''
+        }
+
+        <!-- SECTION 2: 🥈 The Challenger Plate (Silver Tier) -->
+        ${
+          showPlate && bracket.plateRounds && bracket.plateRounds.length > 0
+            ? `
+          <div style="margin-top: ${showCup ? '22px' : '4px'}; ${showCup ? 'border-top: 2px dashed #cbd5e1; padding-top: 20px;' : ''}">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <div style="display: inline-flex; align-items: center; gap: 6px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 3px 10px; border-radius: 12px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase;">
+                  🥈 Silver Tier · Second Chance Championship
+                </div>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; color: #1e293b; margin: 4px 0 0 0;">
+                  The Challenger Plate
+                </h3>
+                <div style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">
+                  Round 1 Quarter-Final non-advancers advance here! Winners of the Plate Semi-Finals contest the Challenger Plate Final (+2 House Points)!
+                </div>
+              </div>
+            </div>
+
+            ${
+              plateWinner
+                ? `
+              <div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border: 2px solid #94a3b8; border-radius: 12px; padding: 16px; margin-bottom: 18px; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.06);">
+                <div style="font-size: 1.7rem; color: #334155; margin-bottom: 4px;">🥈</div>
+                <h3 style="margin: 0 0 4px 0; font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #1e293b; font-weight: 900;">
+                  CHALLENGER PLATE CHAMPION: ${plateWinner.name}!
+                </h3>
+                <div style="font-size: 0.92rem; font-weight: 800; color: ${HOUSES[plateWinner.house]?.color || '#475569'}; text-transform: uppercase;">
+                  ${HOUSES[plateWinner.house]?.name || plateWinner.house} House (+2 House Points Awarded)
+                </div>
+              </div>
+            `
+                : ''
+            }
+
+            <div style="display: flex; gap: 18px; padding: 6px 0 14px;">
+              ${bracket.plateRounds
+                .map((round, rIdx) => {
+                  const roundTitle =
+                    bracket.plateRoundNames[rIdx] ||
+                    (rIdx === 0 ? 'Plate Semi-Finals' : 'Challenger Plate Final');
+                  return `
+                  <div style="min-width: 220px; flex: 1 1 0;">
+                    <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 10px; text-align: center; letter-spacing: 0.04em;">
+                      ${roundTitle}
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: space-around; height: calc(100% - 28px); min-height: 190px; gap: 14px;">
+                      ${round
+                        .map((m, mIdx) => {
+                          const p1 = m.p1;
+                          const p2 = m.p2;
+                          const h1 = p1 ? HOUSES[p1.house] : null;
+                          const h2 = p2 ? HOUSES[p2.house] : null;
+
+                          return `
+                          <div style="background: #ffffff; border: 1.5px solid ${m.winner ? '#64748b' : '#cbd5e1'}; border-radius: 8px; padding: 9px 11px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#f1f5f9' : '#fafafa'}; margin-bottom: 4px;">
+                              <span style="font-weight: 700; font-size: 0.83rem; color: #0f172a; line-height: 1.2;">
+                                ${p1 ? p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting R1 Loser</span>'}
+                              </span>
+                              ${h1 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h1.color}; flex-shrink: 0;">${h1.name}</span>` : ''}
+                            </div>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p2 && p2.id) ? '#f1f5f9' : '#fafafa'};">
+                              <span style="font-weight: 700; font-size: 0.83rem; color: #0f172a; line-height: 1.2;">
+                                ${p2 ? p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting R1 Loser</span>'}
+                              </span>
+                              ${h2 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h2.color}; flex-shrink: 0;">${h2.name}</span>` : ''}
+                            </div>
+
+                            ${
+                              p1 && p2 && !m.winner && chessState.userRole === 'teacher'
+                                ? `
+                              <div style="display: flex; gap: 5px; margin-top: 7px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
+                                <button onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Plate Win for ${p1.name}">
+                                  ${getPlayerButtonShortName(p1)} Wins
+                                </button>
+                                <button onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Plate Win for ${p2.name}">
+                                  ${getPlayerButtonShortName(p2)} Wins
+                                </button>
+                              </div>
+                            `
+                                : ''
+                            }
+                            ${
+                              m.winner
+                                ? `
+                              <div style="font-size: 0.71rem; font-weight: 800; color: #475569; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #e2e8f0;">
+                                <i class="fa-solid fa-check"></i> Plate Winner: ${m.winner.name} (+2 pts)
+                              </div>
+                            `
+                                : ''
+                            }
+                          </div>
+                        `;
+                        })
+                        .join('')}
+                    </div>
+                  </div>
+                `;
+                })
+                .join('')}
+            </div>
+          </div>
+        `
+            : ''
+        }
+
+        <!-- SECTION 3: 🥄 The Wooden Spoon Shield -->
+        ${
+          showSpoon && bracket.woodenSpoonMatch
+            ? `
+          <div style="margin-top: ${showCup || showPlate ? '22px' : '4px'}; ${showCup || showPlate ? 'border-top: 2px dashed #e2e8f0; padding-top: 20px;' : ''}">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <div style="display: inline-flex; align-items: center; gap: 6px; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 3px 10px; border-radius: 12px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase;">
+                  🥄 Consolation Tier · Resilience &amp; Determination
+                </div>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; color: #78350f; margin: 4px 0 0 0;">
+                  The Wooden Spoon Shield
+                </h3>
+                <div style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">
+                  Non-advancers from the Plate Semi-Finals face off head-to-head here. The winner claims the Wooden Spoon Shield (+1 House Point)!
+                </div>
+              </div>
+            </div>
+
+            ${
+              woodenSpoonWinner
+                ? `
+              <div style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 2px solid #b45309; border-radius: 12px; padding: 16px; margin-bottom: 18px; text-align: center; box-shadow: 0 4px 14px rgba(180, 83, 9, 0.15);">
+                <div style="font-size: 1.9rem; margin-bottom: 4px;">🥄</div>
+                <h3 style="margin: 0 0 4px 0; font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #78350f; font-weight: 900;">
+                  WOODEN SPOON SHIELD CHAMPION: ${woodenSpoonWinner.name}!
+                </h3>
+                <div style="font-size: 0.92rem; font-weight: 800; color: ${HOUSES[woodenSpoonWinner.house]?.color || '#b45309'}; text-transform: uppercase;">
+                  ${HOUSES[woodenSpoonWinner.house]?.name || woodenSpoonWinner.house} House (+1 House Point Awarded)
+                </div>
+              </div>
+            `
+                : ''
+            }
+
+            <div style="max-width: 480px; margin: 0 auto; background: #ffffff; border: 1.5px solid ${bracket.woodenSpoonMatch.winner ? '#b45309' : '#cbd5e1'}; border-radius: 10px; padding: 14px 16px; box-shadow: 0 3px 8px rgba(0,0,0,0.03);">
+              <div style="font-size: 0.74rem; font-weight: 800; color: #92400e; text-transform: uppercase; margin-bottom: 8px; text-align: center;">
+                🥄 Wooden Spoon Shield Final
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p1?.id ? '#fef3c7' : '#fafafa'}; margin-bottom: 6px;">
+                <span style="font-weight: 700; font-size: 0.86rem; color: #0f172a;">
+                  ${bracket.woodenSpoonMatch.p1 ? bracket.woodenSpoonMatch.p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting Plate SF 1 Loser</span>'}
+                </span>
+                ${bracket.woodenSpoonMatch.p1 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p1.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.woodenSpoonMatch.p1.house]?.name || ''}</span>` : ''}
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p2?.id ? '#fef3c7' : '#fafafa'};">
+                <span style="font-weight: 700; font-size: 0.86rem; color: #0f172a;">
+                  ${bracket.woodenSpoonMatch.p2 ? bracket.woodenSpoonMatch.p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting Plate SF 2 Loser</span>'}
+                </span>
+                ${bracket.woodenSpoonMatch.p2 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p2.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.woodenSpoonMatch.p2.house]?.name || ''}</span>` : ''}
+              </div>
+
+              ${
+                bracket.woodenSpoonMatch.p1 &&
+                bracket.woodenSpoonMatch.p2 &&
+                !bracket.woodenSpoonMatch.winner &&
+                chessState.userRole === 'teacher'
+                  ? `
+                <div style="display: flex; gap: 8px; margin-top: 10px; border-top: 1px dashed #cbd5e1; padding-top: 8px;">
+                  <button onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p1.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.74rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p1.name}">
+                    ${getPlayerButtonShortName(bracket.woodenSpoonMatch.p1)} Wins Spoon
+                  </button>
+                  <button onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p2.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.74rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p2.name}">
+                    ${getPlayerButtonShortName(bracket.woodenSpoonMatch.p2)} Wins Spoon
+                  </button>
+                </div>
+              `
+                  : ''
+              }
+              ${
+                bracket.woodenSpoonMatch.winner
+                  ? `
+                <div style="font-size: 0.76rem; font-weight: 800; color: #78350f; text-align: center; margin-top: 8px; padding-top: 6px; border-top: 1px solid #fef3c7;">
+                  🥄 Wooden Spoon Shield Winner: ${bracket.woodenSpoonMatch.winner.name} (+1 pt)
+                </div>
+              `
+                  : ''
+              }
+            </div>
+          </div>
+        `
+            : ''
+        }
+      </div>
+    </div>
+  `;
+}
+
+function renderKnockoutFullscreenArena(sortedHouses) {
+  const bracket = chessState.knockoutBracket;
+  if (!bracket) return '';
+  const tier = chessState.bracketTierFilter || 'all';
+  const tierBtnStyle = (active) =>
+    `background: ${active ? '#f59e0b' : '#1e293b'}; color: ${active ? '#0f172a' : '#cbd5e1'}; border: 1px solid ${active ? '#fbbf24' : '#475569'}; font-weight: 800; font-size: 0.74rem; padding: 4px 10px; border-radius: 6px; cursor: pointer;`;
+
+  return `
+    <div id="ko-fullscreen-arena" style="position: fixed; inset: 0; z-index: 99995; background: #f8fafc; display: flex; flex-direction: column; overflow: hidden; font-family: 'Outfit', sans-serif;">
+      <!-- Sticky Single-Row Top Full-Screen Command Bar -->
+      <div style="background: #0f172a; color: #ffffff; padding: 7px 16px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; border-bottom: 2px solid #f59e0b; box-shadow: 0 4px 16px rgba(0,0,0,0.22); flex-shrink: 0;">
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 7px;">
+            <span style="font-size: 1.15rem;">🏆</span>
+            <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.98rem; font-weight: 800; color: #ffffff; white-space: nowrap;">
+              Tournament Bracket
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 4px; align-items: center; flex-wrap: wrap;">
+            ${(sortedHouses || [])
+              .map((hStats) => {
+                const h = HOUSES[hStats.id];
+                if (!h) return '';
+                return `<span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 2px 7px; border-radius: 12px; font-size: 0.68rem; font-weight: 800; color: #f8fafc; white-space: nowrap;">${h.name}: <strong style="color: #fbbf24;">${hStats.points}</strong></span>`;
+              })
+              .join('')}
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
+          <button type="button" onclick="window.setBracketTierFilter('all')" style="${tierBtnStyle(tier === 'all')}">All Tiers</button>
+          <button type="button" onclick="window.setBracketTierFilter('cup')" style="${tierBtnStyle(tier === 'cup')}">🏆 Cup</button>
+          <button type="button" onclick="window.setBracketTierFilter('plate')" style="${tierBtnStyle(tier === 'plate')}">🥈 Plate</button>
+          <button type="button" onclick="window.setBracketTierFilter('spoon')" style="${tierBtnStyle(tier === 'spoon')}">🥄 Spoon</button>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+          ${renderBracketZoomControlsHTML(true)}
+          ${
+            chessState.userRole === 'teacher'
+              ? `
+            <button type="button" onclick="window.generateKnockoutTournament()" style="background: #1e293b; color: #e2e8f0; border: 1px solid #475569; padding: 5px 9px; border-radius: 6px; font-weight: 700; font-size: 0.72rem; cursor: pointer; white-space: nowrap;" title="Re-seed bracket">
+              <i class="fa-solid fa-rotate"></i> Re-Seed
+            </button>
+          `
+              : ''
+          }
+          <button type="button" onclick="window.toggleBracketFullscreen(false)" style="background: #dc2626; color: #ffffff; border: 1px solid #f87171; padding: 5px 10px; border-radius: 6px; font-weight: 800; font-size: 0.74rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;" title="Exit Full Screen (Esc)">
+            <i class="fa-solid fa-compress"></i> Exit (Esc)
+          </button>
+        </div>
+      </div>
+
+      <!-- Full-Screen Scroll & Zoom Canvas -->
+      <div style="flex: 1; overflow-y: auto; padding: 18px 24px 32px 24px;">
+        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 14px; padding: 20px 22px; box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);">
+          ${renderKnockoutBracketStagesHTML(bracket, { isFullscreen: true })}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// 5. Digital Knockout Cup (Single-Elimination Bracket) (Audio 3)
+function renderKnockoutTab() {
+  const bracket = chessState.knockoutBracket;
+
+  if (!bracket) {
+    return `
+      ${renderKnockoutAttendanceBar()}
+      <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 40px 24px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+        <div style="width: 60px; height: 60px; border-radius: 50%; background: #fef3c7; color: #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 16px;">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #0f172a; margin: 0 0 10px 0;">
+          Thursday Period 6 Knockout Cup
+        </h2>
+        <p style="color: #64748b; max-width: 580px; margin: 0 auto 24px; font-size: 0.95rem; line-height: 1.6;">
+          Keep it fully digital! Mark attending pupils above as they arrive, then tap <strong>Auto-Populate Seeded Bracket</strong>. The app automatically balances the draw by official player rankings and awards Round 1 Byes to top seeds!
+        </p>
+        <button onclick="window.generateKnockoutTournament()" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; font-size: 1rem; padding: 12px 26px; border-radius: 8px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);">
+          <i class="fa-solid fa-sitemap"></i> Auto-Populate Seeded Bracket
+        </button>
+      </div>
+    `;
   }
 
   return `
     ${renderKnockoutAttendanceBar()}
-    <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+    <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 20px 20px 24px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
       
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
         <div>
           <div style="display: inline-flex; align-items: center; gap: 6px; background: #fef3c7; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">
             <i class="fa-solid fa-trophy"></i> Single-Elimination Knockout
@@ -4220,396 +4902,24 @@ function renderKnockoutTab() {
           </div>
         </div>
 
-        <div style="display: flex; gap: 8px;">
-          <button onclick="window.generateKnockoutTournament()" style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer;" title="Re-seed bracket using currently arrived pupils">
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          ${renderBracketZoomControlsHTML(false)}
+          <button type="button" onclick="window.toggleBracketFullscreen(true)" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #ffffff; border: 1px solid #1e3a8a; padding: 7px 13px; border-radius: 6px; font-weight: 800; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.18);" title="Expand Tournament Bracket to Full Screen (Shortcut: F)">
+            <i class="fa-solid fa-expand"></i> Full Screen
+          </button>
+          <button onclick="window.generateKnockoutTournament()" style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 7px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;" title="Re-seed bracket using currently arrived pupils">
             <i class="fa-solid fa-rotate"></i> Re-Seed Bracket
           </button>
-          <button onclick="window.resetKnockoutTournament()" style="background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer;">
+          <button onclick="window.resetKnockoutTournament()" style="background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; padding: 7px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;">
             Clear Tournament
           </button>
         </div>
       </div>
 
-      <!-- SECTION 1: 🏆 Championship Cup (Gold Tier) -->
-      ${
-        grandWinner
-          ? `
-        <!-- Champion Glory Banner -->
-        <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 20px; margin-bottom: 24px; text-align: center; box-shadow: 0 6px 18px rgba(245, 158, 11, 0.25); animation: zoomIn 0.3s ease-out;">
-          <div style="font-size: 2rem; color: #d97706; margin-bottom: 6px;"><i class="fa-solid fa-crown"></i></div>
-          <h3 style="margin: 0 0 4px 0; font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #78350f; font-weight: 900;">
-            🏆 TOURNAMENT CHAMPION: ${grandWinner.name}!
-          </h3>
-          <div style="font-size: 1rem; font-weight: 800; color: ${HOUSES[grandWinner.house]?.color || '#78350f'}; text-transform: uppercase;">
-            ${HOUSES[grandWinner.house]?.name || grandWinner.house} House (+3 House Points Awarded)
-          </div>
-          <div style="font-size: 0.85rem; color: #92400e; margin-top: 6px;">
-            Brilliant strategic mastery throughout all rounds of Period 6!
-          </div>
-        </div>
-      `
-          : ''
-      }
+      ${renderKnockoutBracketStagesHTML(bracket, { isFullscreen: false })}
 
-      <div style="margin-bottom: 12px;">
-        <div style="display: inline-flex; align-items: center; gap: 6px; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; padding: 3px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">
-          🏆 Gold Tier · Championship Cup Bracket
-        </div>
-      </div>
-
-      <!-- Championship Bracket Tree Horizontal Scroll Container -->
-      <div style="display: flex; gap: 28px; overflow-x: auto; padding: 10px 0 20px;">
-        ${bracket.rounds
-          .map((round, rIdx) => {
-            const roundTitle = bracket.roundNames[rIdx] || `Round ${rIdx + 1}`;
-            return `
-            <div style="min-width: 250px; flex: 1;">
-              <div style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 12px; text-align: center; letter-spacing: 0.05em;">
-                ${roundTitle}
-              </div>
-              <div style="display: flex; flex-direction: column; justify-content: space-around; height: 100%; min-height: 340px; gap: 16px;">
-                ${round
-                  .map((m, mIdx) => {
-                    const p1 = m.p1;
-                    const p2 = m.p2;
-                    const h1 = p1 ? HOUSES[p1.house] : null;
-                    const h2 = p2 ? HOUSES[p2.house] : null;
-
-                    return `
-                    <div style="background: #f8fafc; border: 1.5px solid ${m.isBye ? '#86efac' : m.winner ? '#10b981' : '#cbd5e1'}; border-radius: 8px; padding: 10px 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); position: relative;">
-                      
-                      <!-- P1 Slot -->
-                      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#dcfce7' : '#ffffff'}; margin-bottom: 4px;">
-                        <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 4px;">
-                          ${p1?.seed ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.65rem; font-weight: 800; padding: 1px 5px; border-radius: 4px;">#${p1.seed}</span>` : ''}
-                          <span>${p1 ? p1.name : 'TBD'}</span>
-                        </span>
-                        ${h1 && !p1?.isBye ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h1.color};">${h1.name}</span>` : ''}
-                      </div>
-
-                      <!-- P2 Slot -->
-                      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${m.winner && m.winner.id === (p2 && p2.id) ? '#dcfce7' : p2?.isBye ? '#f1f5f9' : '#ffffff'};">
-                        <span style="font-weight: 700; font-size: 0.85rem; color: ${p2?.isBye ? '#94a3b8' : '#0f172a'}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 4px;">
-                          ${p2?.seed && !p2?.isBye ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.65rem; font-weight: 800; padding: 1px 5px; border-radius: 4px;">#${p2.seed}</span>` : ''}
-                          <span>${p2 ? (p2.isBye ? '— [BYE] —' : p2.name) : 'TBD'}</span>
-                        </span>
-                        ${h2 && !p2?.isBye ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h2.color};">${h2.name}</span>` : ''}
-                      </div>
-
-                      <!-- Action Button -->
-                      ${
-                        p1 && p2 && !m.winner && !m.isBye && chessState.userRole === 'teacher'
-                          ? `
-                        <div style="display: flex; gap: 6px; margin-top: 8px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
-                          <button onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Advance ${p1.name}">
-                            ${p1.name.split(' ')[0]} Wins
-                          </button>
-                          <button onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Advance ${p2.name}">
-                            ${p2.name.split(' ')[0]} Wins
-                          </button>
-                        </div>
-                      `
-                          : ''
-                      }
-                      ${
-                        m.isBye
-                          ? `
-                        <div style="font-size: 0.72rem; font-weight: 800; color: #059669; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #dcfce7;">
-                          <i class="fa-solid fa-forward"></i> Auto-Advanced (Top-Seed Bye)
-                        </div>
-                      `
-                          : m.winner
-                          ? `
-                        <div style="font-size: 0.72rem; font-weight: 800; color: #15803d; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #dcfce7;">
-                          <i class="fa-solid fa-check"></i> Winner: ${m.winner.name} (+3 pts)
-                        </div>
-                      `
-                          : ''
-                      }
-                    </div>
-                  `;
-                  })
-                  .join('')}
-              </div>
-            </div>
-          `;
-          })
-          .join('')}
-
-        <!-- 🥉 3rd Place Bronze Medal Playoff (Optional for 8-player Cup SF Losers) -->
-        ${
-          bracket.cupBronzeMatch
-            ? `
-          <div style="min-width: 250px; flex: 1; border-left: 2px dashed #fcd34d; padding-left: 18px;">
-            <div style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: #b45309; margin-bottom: 12px; text-align: center; letter-spacing: 0.05em;">
-              🥉 3rd Place Bronze Playoff
-            </div>
-            <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; min-height: 340px;">
-              <div style="background: #fffbeb; border: 1.5px solid ${bracket.cupBronzeMatch.winner ? '#f59e0b' : '#fcd34d'}; border-radius: 8px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
-                <div style="font-size: 0.7rem; font-weight: 800; color: #92400e; text-transform: uppercase; margin-bottom: 6px; text-align: center;">
-                  Cup Semi-Final Non-Advancers
-                </div>
-                <!-- P1 -->
-                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${bracket.cupBronzeMatch.winner && bracket.cupBronzeMatch.winner.id === bracket.cupBronzeMatch.p1?.id ? '#fef3c7' : '#ffffff'}; margin-bottom: 4px;">
-                  <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a;">
-                    ${bracket.cupBronzeMatch.p1 ? bracket.cupBronzeMatch.p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting SF 1 Loser</span>'}
-                  </span>
-                  ${bracket.cupBronzeMatch.p1 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p1.house]?.color || '#94a3b8'};">${HOUSES[bracket.cupBronzeMatch.p1.house]?.name || ''}</span>` : ''}
-                </div>
-                <!-- P2 -->
-                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${bracket.cupBronzeMatch.winner && bracket.cupBronzeMatch.winner.id === bracket.cupBronzeMatch.p2?.id ? '#fef3c7' : '#ffffff'};">
-                  <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a;">
-                    ${bracket.cupBronzeMatch.p2 ? bracket.cupBronzeMatch.p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting SF 2 Loser</span>'}
-                  </span>
-                  ${bracket.cupBronzeMatch.p2 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p2.house]?.color || '#94a3b8'};">${HOUSES[bracket.cupBronzeMatch.p2.house]?.name || ''}</span>` : ''}
-                </div>
-                <!-- Actions -->
-                ${
-                  bracket.cupBronzeMatch.p1 &&
-                  bracket.cupBronzeMatch.p2 &&
-                  !bracket.cupBronzeMatch.winner
-                    ? `
-                  <div style="display: flex; gap: 6px; margin-top: 8px; border-top: 1px dashed #fcd34d; padding-top: 6px;">
-                    <button onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.72rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
-                      ${bracket.cupBronzeMatch.p1.name.split(' ')[0]} Wins
-                    </button>
-                    <button onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.72rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
-                      ${bracket.cupBronzeMatch.p2.name.split(' ')[0]} Wins
-                    </button>
-                  </div>
-                `
-                    : ''
-                }
-                ${
-                  bracket.cupBronzeMatch.winner
-                    ? `
-                  <div style="font-size: 0.75rem; font-weight: 800; color: #b45309; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #fcd34d;">
-                    🥉 3rd Place Bronze: ${bracket.cupBronzeMatch.winner.name} (+2 pts)
-                  </div>
-                `
-                    : ''
-                }
-              </div>
-            </div>
-          </div>
-        `
-            : ''
-        }
-      </div>
-
-      <!-- SECTION 2: 🥈 The Challenger Plate (Silver Tier) -->
-      ${
-        bracket.plateRounds && bracket.plateRounds.length > 0
-          ? `
-        <div style="margin-top: 28px; border-top: 2px dashed #cbd5e1; padding-top: 22px;">
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
-            <div>
-              <div style="display: inline-flex; align-items: center; gap: 6px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">
-                🥈 Silver Tier · Second Chance Championship
-              </div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #1e293b; margin: 4px 0 0 0;">
-                The Challenger Plate
-              </h3>
-              <div style="font-size: 0.84rem; color: #64748b; margin-top: 2px;">
-                Round 1 Quarter-Final non-advancers advance here! Winners of the Plate Semi-Finals contest the Challenger Plate Final (+2 House Points)!
-              </div>
-            </div>
-          </div>
-
-          ${
-            plateWinner
-              ? `
-            <div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border: 2px solid #94a3b8; border-radius: 12px; padding: 18px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.06); animation: zoomIn 0.3s ease-out;">
-              <div style="font-size: 1.8rem; color: #334155; margin-bottom: 4px;">🥈</div>
-              <h3 style="margin: 0 0 4px 0; font-family: 'Playfair Display', serif; font-size: 1.45rem; color: #1e293b; font-weight: 900;">
-                CHALLENGER PLATE CHAMPION: ${plateWinner.name}!
-              </h3>
-              <div style="font-size: 0.95rem; font-weight: 800; color: ${HOUSES[plateWinner.house]?.color || '#475569'}; text-transform: uppercase;">
-                ${HOUSES[plateWinner.house]?.name || plateWinner.house} House (+2 House Points Awarded)
-              </div>
-              <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">
-                Fought back with grit and determination through the Challenger Plate rounds!
-              </div>
-            </div>
-          `
-              : ''
-          }
-
-          <div style="display: flex; gap: 28px; overflow-x: auto; padding: 10px 0 16px;">
-            ${bracket.plateRounds
-              .map((round, rIdx) => {
-                const roundTitle =
-                  bracket.plateRoundNames[rIdx] ||
-                  (rIdx === 0 ? 'Plate Semi-Finals' : 'Challenger Plate Final');
-                return `
-                <div style="min-width: 250px; flex: 1;">
-                  <div style="font-size: 0.82rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 10px; text-align: center; letter-spacing: 0.04em;">
-                    ${roundTitle}
-                  </div>
-                  <div style="display: flex; flex-direction: column; justify-content: space-around; height: 100%; min-height: 200px; gap: 14px;">
-                    ${round
-                      .map((m, mIdx) => {
-                        const p1 = m.p1;
-                        const p2 = m.p2;
-                        const h1 = p1 ? HOUSES[p1.house] : null;
-                        const h2 = p2 ? HOUSES[p2.house] : null;
-
-                        return `
-                        <div style="background: #ffffff; border: 1.5px solid ${m.winner ? '#64748b' : '#cbd5e1'}; border-radius: 8px; padding: 10px 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-                          
-                          <!-- P1 Slot -->
-                          <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#f1f5f9' : '#fafafa'}; margin-bottom: 4px;">
-                            <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                              ${p1 ? p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting R1 Loser</span>'}
-                            </span>
-                            ${h1 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h1.color};">${h1.name}</span>` : ''}
-                          </div>
-
-                          <!-- P2 Slot -->
-                          <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${m.winner && m.winner.id === (p2 && p2.id) ? '#f1f5f9' : '#fafafa'};">
-                            <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                              ${p2 ? p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting R1 Loser</span>'}
-                            </span>
-                            ${h2 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h2.color};">${h2.name}</span>` : ''}
-                          </div>
-
-                          <!-- Action Button -->
-                          ${
-                            p1 && p2 && !m.winner
-                              ? `
-                            <div style="display: flex; gap: 6px; margin-top: 8px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
-                              <button onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 700; padding: 5px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Plate Win for ${p1.name}">
-                                ${p1.name.split(' ')[0]} Wins
-                              </button>
-                              <button onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 700; padding: 5px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Plate Win for ${p2.name}">
-                                ${p2.name.split(' ')[0]} Wins
-                              </button>
-                            </div>
-                          `
-                              : ''
-                          }
-                          ${
-                            m.winner
-                              ? `
-                            <div style="font-size: 0.72rem; font-weight: 800; color: #475569; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #e2e8f0;">
-                              <i class="fa-solid fa-check"></i> Plate Winner: ${m.winner.name} (+2 pts)
-                            </div>
-                          `
-                              : ''
-                          }
-                        </div>
-                      `;
-                      })
-                      .join('')}
-                  </div>
-                </div>
-              `;
-              })
-              .join('')}
-          </div>
-
-        </div>
-      `
-          : ''
-      }
-
-      <!-- SECTION 3: 🥄 The Wooden Spoon Shield (Consolation Tier for Plate SF Losers) -->
-      ${
-        bracket.woodenSpoonMatch
-          ? `
-        <div style="margin-top: 28px; border-top: 2px dashed #e2e8f0; padding-top: 22px;">
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
-            <div>
-              <div style="display: inline-flex; align-items: center; gap: 6px; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">
-                🥄 Consolation Tier · Resilience &amp; Determination
-              </div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #78350f; margin: 4px 0 0 0;">
-                The Wooden Spoon Shield
-              </h3>
-              <div style="font-size: 0.84rem; color: #64748b; margin-top: 2px;">
-                Non-advancers from the Plate Semi-Finals face off head-to-head here. Nobody gets eliminated! The winner claims the proud Wooden Spoon Shield (+1 House Point for perseverance)!
-              </div>
-            </div>
-          </div>
-
-          ${
-            woodenSpoonWinner
-              ? `
-            <div style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 2px solid #b45309; border-radius: 12px; padding: 18px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 14px rgba(180, 83, 9, 0.15); animation: zoomIn 0.3s ease-out;">
-              <div style="font-size: 2rem; margin-bottom: 4px;">🥄</div>
-              <h3 style="margin: 0 0 4px 0; font-family: 'Playfair Display', serif; font-size: 1.45rem; color: #78350f; font-weight: 900;">
-                WOODEN SPOON SHIELD CHAMPION: ${woodenSpoonWinner.name}!
-              </h3>
-              <div style="font-size: 0.95rem; font-weight: 800; color: ${HOUSES[woodenSpoonWinner.house]?.color || '#b45309'}; text-transform: uppercase;">
-                ${HOUSES[woodenSpoonWinner.house]?.name || woodenSpoonWinner.house} House (+1 House Point Awarded)
-              </div>
-              <div style="font-size: 0.82rem; color: #92400e; margin-top: 4px;">
-                Fought with grit and determination right to the end! True chess spirit!
-              </div>
-            </div>
-          `
-              : ''
-          }
-
-          <!-- Wooden Spoon Shield Match Card -->
-          <div style="max-width: 480px; margin: 0 auto; background: #ffffff; border: 1.5px solid ${bracket.woodenSpoonMatch.winner ? '#b45309' : '#cbd5e1'}; border-radius: 10px; padding: 14px 16px; box-shadow: 0 3px 8px rgba(0,0,0,0.03);">
-            <div style="font-size: 0.75rem; font-weight: 800; color: #92400e; text-transform: uppercase; margin-bottom: 8px; text-align: center;">
-              🥄 Wooden Spoon Shield Final
-            </div>
-
-            <!-- P1 Slot -->
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p1?.id ? '#fef3c7' : '#fafafa'}; margin-bottom: 6px;">
-              <span style="font-weight: 700; font-size: 0.88rem; color: #0f172a;">
-                ${bracket.woodenSpoonMatch.p1 ? bracket.woodenSpoonMatch.p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting Plate SF 1 Loser</span>'}
-              </span>
-              ${bracket.woodenSpoonMatch.p1 ? `<span style="font-size: 0.72rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p1.house]?.color || '#94a3b8'};">${HOUSES[bracket.woodenSpoonMatch.p1.house]?.name || ''}</span>` : ''}
-            </div>
-
-            <!-- P2 Slot -->
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p2?.id ? '#fef3c7' : '#fafafa'};">
-              <span style="font-weight: 700; font-size: 0.88rem; color: #0f172a;">
-                ${bracket.woodenSpoonMatch.p2 ? bracket.woodenSpoonMatch.p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting Plate SF 2 Loser</span>'}
-              </span>
-              ${bracket.woodenSpoonMatch.p2 ? `<span style="font-size: 0.72rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p2.house]?.color || '#94a3b8'};">${HOUSES[bracket.woodenSpoonMatch.p2.house]?.name || ''}</span>` : ''}
-            </div>
-
-            <!-- Action Buttons -->
-            ${
-              bracket.woodenSpoonMatch.p1 &&
-              bracket.woodenSpoonMatch.p2 &&
-              !bracket.woodenSpoonMatch.winner
-                ? `
-              <div style="display: flex; gap: 8px; margin-top: 10px; border-top: 1px dashed #cbd5e1; padding-top: 8px;">
-                <button onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p1.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.76rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p1.name}">
-                  ${bracket.woodenSpoonMatch.p1.name.split(' ')[0]} Wins Spoon
-                </button>
-                <button onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p2.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.76rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p2.name}">
-                  ${bracket.woodenSpoonMatch.p2.name.split(' ')[0]} Wins Spoon
-                </button>
-              </div>
-            `
-                : ''
-            }
-            ${
-              bracket.woodenSpoonMatch.winner
-                ? `
-              <div style="font-size: 0.78rem; font-weight: 800; color: #78350f; text-align: center; margin-top: 8px; padding-top: 6px; border-top: 1px solid #fef3c7;">
-                🥄 Wooden Spoon Shield Winner: ${bracket.woodenSpoonMatch.winner.name} (+1 pt)
-              </div>
-            `
-                : ''
-            }
-          </div>
-
-        </div>
-      `
-          : ''
-      }
-
-      <!-- SECTION 3: ⚡ Instant Re-Pairing for Idle Pupils (Casual Rapid Games) -->
-      <div style="margin-top: 28px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px 20px;">
+      <!-- SECTION 4: ⚡ Instant Re-Pairing for Idle Pupils (Casual Rapid Games) -->
+      <div style="margin-top: 24px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">
@@ -4652,10 +4962,10 @@ function renderKnockoutTab() {
                       ? `
                     <div style="display: flex; gap: 6px;">
                       <button onclick="window.advanceCasualMatch('${cm.id}', '${cm.p1.id}')" style="flex: 1; background: #f1f5f9; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer;">
-                        ${cm.p1.name.split(' ')[0]} Won
+                        ${getPlayerButtonShortName(cm.p1)} Won
                       </button>
                       <button onclick="window.advanceCasualMatch('${cm.id}', '${cm.p2.id}')" style="flex: 1; background: #f1f5f9; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer;">
-                        ${cm.p2.name.split(' ')[0]} Won
+                        ${getPlayerButtonShortName(cm.p2)} Won
                       </button>
                     </div>
                   `
@@ -7759,7 +8069,7 @@ export function renderWhiteboardModeView(sortedHouses) {
                       <button onclick="window.recordBoardResult('${m.type}', ${m.rIdx}, ${m.mIdx}, '${m.p1.id}', '${m.id}')"
                               style="background: #ffffff; color: #0f172a; border: 1px solid #e2e8f0; border-radius: 6px; padding: 5px 2px; font-weight: 800; font-size: 0.7rem; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 1px;"
                               title="White wins (+3 House pts)">
-                        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">♔ ${m.p1.name.split(' ')[0]}</span>
+                        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">♔ ${getPlayerButtonShortName(m.p1)}</span>
                         <span style="font-size: 0.58rem; color: #16a34a; font-weight: 900; font-family: monospace;">+3 PTS</span>
                       </button>
                       <button onclick="window.recordBoardResult('${m.type}', ${m.rIdx}, ${m.mIdx}, 'draw', '${m.id}')"
@@ -7771,7 +8081,7 @@ export function renderWhiteboardModeView(sortedHouses) {
                       <button onclick="window.recordBoardResult('${m.type}', ${m.rIdx}, ${m.mIdx}, '${m.p2.id}', '${m.id}')"
                               style="background: #0f172a; color: #ffffff; border: 1px solid #334155; border-radius: 6px; padding: 5px 2px; font-weight: 800; font-size: 0.7rem; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 1px;"
                               title="Black wins (+3 House pts)">
-                        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">♚ ${m.p2.name.split(' ')[0]}</span>
+                        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">♚ ${getPlayerButtonShortName(m.p2)}</span>
                         <span style="font-size: 0.58rem; color: #16a34a; font-weight: 900; font-family: monospace;">+3 PTS</span>
                       </button>
                     </div>

@@ -14615,7 +14615,85 @@ details.oral-hinge-strip.is-revealed .oral-hinge-reveal-btn .reveal-lbl-hide {
   .slide-compare-before-img {
     order: -1;
   }
+
+  .btn-fullwidth-toggle,
+  .btn-fullwidth-unit-back {
+    display: none !important;
+  }
 }
+
+/* =============================================================================
+   FULL-WIDTH CLASSROOM LESSON VIEW (ALL UNITS: KS2, KS3, GCSE)
+   ============================================================================= */
+body.lesson-full-width #app-sidebar,
+body.lesson-full-width .app-header,
+body.lesson-full-width #app-global-footer,
+body.lesson-full-width #mobile-bottom-nav {
+  display: none !important;
+}
+
+body.lesson-full-width .app-layout,
+body.lesson-full-width .app-body {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.btn-fullwidth-unit-back {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  color: #1e293b;
+  padding: 5px 11px;
+  border-radius: 6px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-fullwidth-unit-back:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+body.lesson-full-width .btn-fullwidth-unit-back {
+  display: inline-flex;
+}
+
+.btn-fullwidth-toggle {
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  color: #1e293b;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-fullwidth-toggle:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+body.lesson-full-width .btn-fullwidth-toggle,
+.btn-fullwidth-toggle.active {
+  background: #eff6ff !important;
+  border-color: #3b82f6 !important;
+  color: #1d4ed8 !important;
+}
+
 
 
 

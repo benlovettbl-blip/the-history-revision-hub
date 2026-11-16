@@ -2669,6 +2669,16 @@
           "teacher_guidance": "Dr Adam Rutherford examines Galen's animal dissections and why nobody overturned his anatomical mistakes for over 1,300 years. Recommended Watch Window: 00:15–04:55 • Lesson Phase: Enquiry Evidence.",
           "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> Which animals did Galen dissect because Roman law forbade human dissection?</li><li><strong>[02:30] Explain:</strong> Identify two anatomical mistakes Galen made when applying animal anatomy to humans.</li><li><strong>[04:00] Challenge:</strong> Why did medieval university dissections reinforce Galen's texts rather than expose his mistakes?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Barbary macaques (apes), pigs, and dogs.</li><li><strong>Explain:</strong> He claimed the human lower jaw was two joined bones rather than one solid mandible, and that blood passed through invisible pores in the heart's septum.</li><li><strong>Challenge:</strong> Professors read Galen aloud from a high lectern while barber-surgeons cut below simply to illustrate—never to test—the ancient text.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/1-medicine-religion-and-natural-causes-history-file/",
+          "title": "BBC Two / ERA: History File – Medicine, Religion and Natural Causes",
+          "duration": "19 mins 0 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 04:00–15:30 | Lesson Phase: Hippocratic & Galenic Theory vs Church Authority | Tone Alert: BBC Two History File tracing the shift from supernatural explanations to Hippocrates’ Four Humours, Galen, and how Christian and Islamic scholars preserved classical medicine.",
+          "viewing_task": "[05:00] Recall: How did Hippocrates’ theory of the Four Humours challenge purely supernatural explanations of illness?\n[11:30] Hinge Question: Why did the medieval Catholic Church champion Galen’s writings for over 1,000 years while discouraging doctors from questioning his anatomical errors?",
+          "model_answer": "Hippocrates argued disease had natural physical causes rooted in an imbalance of blood, phlegm, yellow bile, and black bile, encouraging clinical observation rather than blaming angry gods. The medieval Church endorsed Galen because his belief that the human body was designed by a single Creator fitted Christian theology, turning Galenic texts into unquestionable dogma."
         }
       ],
       "workbook_stages": [
@@ -6542,6 +6552,16 @@
           "teacher_guidance": "Andrew Chater's on-location documentary tracing the plague's entry at Melcombe Regis in Dorset (June 1348), bubonic symptoms, flagellants, and demographic collapse. Recommended Watch Window: 00:00–06:20 • Lesson Phase: Historical Synthesis.",
           "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> Roughly what proportion of England's population perished during the 1348–1349 Black Death outbreak?</li><li><strong>[04:30] Challenge:</strong> Why were King Edward III's orders to clear filthy London streets unable to save the capital despite improving cleanliness?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Between one-third and one-half of England's population (around 1.5 to 2 million people).</li><li><strong>Challenge:</strong> Town bailiffs lacked manpower as rakers died, and because the council targeted foul smells (miasma) rather than rats and fleas, bubonic and pneumonic transmission continued unchecked.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/2-medicine-public-health-and-government-history-file/",
+          "title": "BBC Two / ERA: History File – Medicine, Public Health and Government",
+          "duration": "18 mins 57 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–11:30 | Lesson Phase: Roman Collapse to Medieval Plague Towns | Tone Alert: BBC Two History File comparing Roman aqueducts and sewers with medieval urban sanitation, cesspits, and royal/municipal responses to plague.",
+          "viewing_task": "[02:00] Recall: Why did Britain’s Roman public health infrastructure (aqueducts, bathhouses, stone sewers) collapse after the 5th century?\n[08:30] Hinge Question: Were medieval town councils completely indifferent to filth during the Black Death, or crippled by a lack of Germ Theory and tax revenue?",
+          "model_answer": "Fragmented Saxon and medieval kingdoms lacked the centralized imperial taxation, slave labour, and engineering administration needed to maintain Roman stone infrastructure. Medieval authorities did pass muck-raking bylaws and King Edward III ordered London’s streets cleaned in 1349 to disperse \"miasma\", proving they cared about filth even without understanding bacteria."
         }
       ],
       "workbook_stages": [
@@ -7989,6 +8009,16 @@
           "teacher_guidance": "Visual explainer on the mechanics of oil-based ink, metal movable type, and screw presses, showing why Renaissance humanism flourished alongside cheap print. Recommended Watch Window: 00:30–04:30 • Lesson Phase: Extension.",
           "viewing_task": "<ol><li><strong>[01:20] Recall:</strong> Around what decade did Johannes Gutenberg develop his mechanical movable-type press in Mainz, Germany?</li><li><strong>[03:30] Challenge:</strong> Why did better communication of ideas in c.1500–c.1700 transform medical knowledge of anatomy long before it improved everyday treatments?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Around 1440 (mid-15th century).</li><li><strong>Challenge:</strong> Printing spread accurate anatomical drawings and debate, but without microscopes powerful enough to link germs to disease, physicians still relied on humoral bleeding and herbal remedies.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/2-medicine-and-science-history-file/",
+          "title": "BBC Two / ERA: History File – Medicine and Science (Renaissance Enquiry to Germ Theory)",
+          "duration": "24 mins 8 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–11:00 | Lesson Phase: Renaissance Scientific Enquiry | Tone Alert: BBC Two History File (1998) examining how Renaissance dissection, printing, microscopy, and experimental science challenged ancient authority.",
+          "viewing_task": "[02:30] Recall: How did Johannes Gutenberg’s printing press and Renaissance anatomical illustrations help Andreas Vesalius challenge Galen?\n[08:30] Hinge Question: Why did groundbreaking Renaissance discoveries in anatomy and blood circulation produce almost zero improvement in everyday patient survival before 1700?",
+          "model_answer": "Printing allowed Vesalius’s detailed woodcuts in De Humani Corporis Fabrica (1543) to be copied identically across European universities, letting doctors verify Galen’s errors through human dissection. Yet knowing how blood circulated or what organs looked like could not cure infectious disease when physicians still lacked knowledge of microbes or antibiotics."
         }
       ],
       "workbook_stages": [
@@ -14439,6 +14469,16 @@
           "teacher_guidance": "Verified 5-minute BBC Four clip exploring why British doctors like Henry Charlton Bastian initially resisted Germ Theory until Robert Koch's stained agar cultures made specific bacteria undeniable, leading to John Tyndall's lectures. Recommended Watch Window: 00:00–05:00 • Lesson Phase: Enquiry Evidence.",
           "viewing_task": "<ol><li><strong>[01:30] Explain:</strong> Why were British doctors reluctant to accept Pasteur's 1861 beer-and-silkworm experiments as proof of human disease?</li><li><strong>[03:45] Challenge:</strong> Why do historians call Robert Koch 'the father of bacteriology' even though Pasteur published Germ Theory first?</li></ol>",
           "model_answer": "<ol><li><strong>Explain:</strong> Pasteur was a French chemist studying food spoilage, not a physician, and healthy humans carried harmless bacteria, leading critics like Bastian to doubt germs caused illness.</li><li><strong>Challenge:</strong> Koch created the practical laboratory toolkit—agar jelly in Petri dishes, aniline chemical stains, and microphotography—that enabled scientists worldwide to hunt down individual human pathogens.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/5-medicine-technology-and-the-individual-history-file/",
+          "title": "BBC Two / ERA: History File – Medicine, Technology and the Individual (Pasteur & Koch)",
+          "duration": "19 mins 13 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Factors Driving Germ Theory | Tone Alert: BBC Two History File investigating how individual genius (Pasteur and Koch), improved microscopes, and Franco-German rivalry combined to overthrow Spontaneous Generation.",
+          "viewing_task": "[03:15] Recall: What experiment did Louis Pasteur use in 1861 to prove that airborne microbes—not spontaneous generation—caused decay?\n[10:30] Hinge Question: Could individual geniuses like Pasteur and Robert Koch have proved Germ Theory without 19th-century industrial technology such as high-powered Joseph Jackson Lister microscopes and chemical dyes?",
+          "model_answer": "Pasteur used swan-necked glass flasks showing boiled broth stayed sterile until tilted to touch trapped dust and microbes. Individual brilliance depended heavily on technology: without distortion-free glass lenses, solid agar culture plates, industrial aniline dyes, and micro-photography, Koch could never have isolated specific bacteria like anthrax (1876) and tuberculosis (1882)."
         }
       ],
       "workbook_stages": [
@@ -19749,6 +19789,16 @@
           "teacher_guidance": "BBC Two historical drama-documentary bringing to life Victorian Soho, the 1858 Great Stink, pumping stations at Crossness and Abbey Mills, and the 1866 East London cholera proof where only the one district not yet connected to Bazalgette's sewers suffered an outbreak. Recommended Watch Window: 02:00–10:00 • Lesson Phase: Extension.",
           "viewing_task": "<ol><li><strong>[03:30] Recall:</strong> How did Bazalgette future-proof London's brick intercepting sewers for population growth?</li><li><strong>[08:15] Explain:</strong> How did the final 1866 East London cholera outbreak vindicate both John Snow's theory and Bazalgette's engineering?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> He doubled the pipe diameters beyond maximum projected Victorian waste volumes and used waterproof Portland cement.</li><li><strong>Explain:</strong> Cholera struck exclusively in the single East End zone not yet linked into Bazalgette's new sewer network, proving beyond doubt that sewage-contaminated water spread the disease.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/3-medicine-and-government-history-file/",
+          "title": "BBC Two / ERA: History File – Medicine and Government (Laissez-Faire to the NHS)",
+          "duration": "24 mins 4 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: 1848 vs 1875 Public Health Acts | Tone Alert: BBC Two History File (1998) tracing why Victorian governments abandoned laissez-faire non-intervention to pass the compulsory 1875 Public Health Act and build modern welfare.",
+          "viewing_task": "[03:00] Recall: Why was the 1848 Public Health Act largely ineffective compared with the compulsory 1875 Public Health Act?\n[10:00] Hinge Question: Which factor forced Parliament to abandon laissez-faire in 1875 more decisively: Pasteur’s 1861 Germ Theory, or the 1867 Reform Act enfranchising working-class male voters?",
+          "model_answer": "The 1848 Act was permissive (optional), allowing ratepayer-dominated councils to ignore sanitary reform to save money, whereas the 1875 Act forced every local authority to provide clean water, sewers, and Medical Officers of Health. Both combined: working-class voters gave Disraeli’s government political motivation, while Germ Theory and John Snow’s cholera evidence destroyed miasma excuses."
         }
       ],
       "workbook_stages": [

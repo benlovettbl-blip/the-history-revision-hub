@@ -46,37 +46,6 @@ const UNIT_THEMATIC_STRANDS = {
   // -------------------------------------------------------------
   // KEY STAGE 3 UNITS
   // -------------------------------------------------------------
-  early_modern_world: [
-    {
-      id: 'sovereignty_state_power',
-      title: 'Sovereignty & Power',
-      color: '#1e3a8a',
-      trajectory: 'Divine Right Absolutism → Civil War, Regicide & 1689 Settlement (L4–L6)',
-      lessonsCovered: [4, 5, 6],
-    },
-    {
-      id: 'trade_technology_empire',
-      title: 'Exploration & Trade',
-      color: '#0369a1',
-      trajectory: 'Ottoman fall → Tordesillas → East India Co & Mughal trade (L1–L3)',
-      lessonsCovered: [1, 2, 3],
-    },
-    {
-      id: 'ideology_faith_causation',
-      title: 'Religious Volatility',
-      color: '#b91c1c',
-      trajectory: 'Reformation zeal → Gunpowder Plot & Jacobean Puritan state (L2, L4, L5)',
-      lessonsCovered: [2, 4, 5],
-    },
-    {
-      id: 'resistance_agency_rights',
-      title: 'Enslaved Resistance',
-      color: '#15803d',
-      trajectory: 'Triangular Trade → The Brookes → Jamaican Maroons & Nanny (L7, L8)',
-      lessonsCovered: [7, 8],
-    },
-  ],
-
   water_and_sanitation: [
     {
       id: 'sovereignty_state_power',

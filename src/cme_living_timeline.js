@@ -351,21 +351,38 @@ function deriveShortDate(dateStr) {
 }
 
 function deriveShortTitle(titleStr) {
-  const clean = stripCleanPlain(titleStr)
-    .replace(/^Imperial Contradictions:\s*/i, '')
-    .replace(/^The Bombing of the\s*/i, '')
-    .replace(/^The Results of the\s*/i, '')
-    .replace(/^Declaration of the State of Israel.*$/i, 'Israeli Statehood & 1948 War')
-    .replace(/^UN Resolution 181:\s*The\s*/i, 'UN ')
-    .replace(/^UN Security Council\s*/i, 'UN ')
-    .replace(/^President Anwar Sadat’s Historic\s*/i, 'Sadat’s ')
-    .replace(/^Outbreak of the First Intifada.*$/i, 'First Intifada Outbreak')
-    .replace(/^The Washington Treaty:.*$/i, 'Egypt-Israel Peace Treaty');
-
+  const clean = stripCleanPlain(titleStr);
+  const exactMap = [
+    [/Sykes-Picot/i, 'Sykes-Picot & Balfour'],
+    [/King David Hotel/i, 'King David Hotel Bombing'],
+    [/SS Exodus/i, 'SS Exodus & Sergeants Affair'],
+    [/Resolution 181|Partition Plan/i, 'UN Partition Plan (Res 181)'],
+    [/Declaration of the State of Israel/i, 'Israeli Statehood & 1948 War'],
+    [/1949 Armistice/i, '1949 Armistices & The Nakba'],
+    [/Suez Crisis/i, 'Nasser & The Suez Crisis'],
+    [/Cairo Summit/i, 'Cairo Summit, Water & PLO'],
+    [/Six-Day War/i, 'Six-Day War & Conquests'],
+    [/Khartoum|Resolution 242/i, 'Khartoum & UN Resolution 242'],
+    [/Dawson’s Field|Black September/i, 'Black September & Munich'],
+    [/Yom Kippur|October War/i, 'Yom Kippur War & Oil Shock'],
+    [/Shuttle Diplomacy/i, 'Kissinger’s Shuttle Diplomacy'],
+    [/UN General Assembly|Addresses the UN/i, 'Arafat’s UN Olive Branch'],
+    [/Visit to Jerusalem/i, 'Sadat’s Visit to Jerusalem'],
+    [/Camp David Accords/i, 'The Camp David Accords'],
+    [/Treaty of Washington|Peace Treaty Signed/i, 'Egypt–Israel Peace Treaty'],
+    [/Arab League Boycott|Assassination of Anwar Sadat/i, 'Arab Boycott & Sadat’s Murder'],
+    [/Invasion of Lebanon/i, '1982 Invasion of Lebanon'],
+    [/Sabra and Shatila/i, 'Sabra, Shatila & Kahan Inquiry'],
+    [/First Intifada/i, 'First Intifada Outbreak'],
+    [/Madrid Conference|Renounces Terrorism/i, 'Geneva Speech & Madrid Talks'],
+    [/Oslo I Accords/i, 'Oslo I Accords Handshake'],
+    [/Oslo II|Assassination of Rabin/i, 'Oslo II & Rabin’s Murder'],
+  ];
+  for (const [rx, label] of exactMap) {
+    if (rx.test(clean)) return label;
+  }
   const colonSplit = clean.split(':')[0].trim();
-  const base = colonSplit.length >= 10 && colonSplit.length <= 32 ? colonSplit : clean;
-  if (base.length <= 30) return base;
-  return base.slice(0, 28).replace(/\s+\S*$/, '') + '…';
+  return colonSplit.length >= 10 && colonSplit.length <= 36 ? colonSplit : clean;
 }
 
 function normalizeEraKey(raw, idx) {
@@ -1191,12 +1208,12 @@ export function renderCMELivingTimeline(container) {
       .cme-rail-node {
         position: relative;
         flex: 0 0 auto;
-        width: 146px;
+        width: 162px;
         background: #f8fafc;
         border: 1.5px solid #e2e8f0;
         border-top: 3px solid var(--era-color, #1e3a8a);
         border-radius: 8px;
-        padding: 7px 9px 7px 9px;
+        padding: 7px 10px 8px 10px;
         text-align: left;
         cursor: pointer;
         transition: all 0.18s ease;
@@ -1257,22 +1274,16 @@ export function renderCMELivingTimeline(container) {
         font-size: 0.67rem;
         font-weight: 800;
         color: var(--era-color, #1e3a8a);
-        letter-spacing: 0.02em;
+        letter-spacing: 0.01em;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
       }
 
       .cme-rail-title {
-        font-size: 0.73rem;
+        font-size: 0.74rem;
         font-weight: 700;
         color: #1e293b;
-        line-height: 1.24;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        min-height: 1.8em;
+        line-height: 1.26;
+        min-height: 2.45em;
       }
 
       /* Range Scrubber Bar */

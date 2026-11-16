@@ -2920,9 +2920,9 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
         else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_textbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_textbook_KT3.pdf';
-        else pdfUrl = '/pdfs/cme_new_textbook.pdf';
+        else pdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
       } else {
-        pdfUrl = '/pdfs/cme_new_textbook.pdf';
+        pdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/weimar_nazi_germany/')) {
       if (url.includes('pupil_workbook')) {
@@ -2940,9 +2940,9 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         else if (url.includes('KT2')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT3.pdf';
         else if (url.includes('KT4')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT4.pdf';
-        else pdfUrl = '/pdfs/weimar_nazi_germany_textbook.pdf';
+        else pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
       } else {
-        pdfUrl = '/pdfs/weimar_nazi_germany_textbook.pdf';
+        pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/usa/')) {
       if (url.includes('pupil_workbook')) {
@@ -2964,9 +2964,9 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_textbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_textbook_KT3.pdf';
         else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_textbook_KT4.pdf';
-        else pdfUrl = '/pdfs/usa_textbook.pdf';
+        else pdfUrl = '/pdfs/usa_textbook_KT1.pdf';
       } else {
-        pdfUrl = '/pdfs/usa_textbook.pdf';
+        pdfUrl = '/pdfs/usa_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/eee/')) {
       if (url.includes('pupil_workbook')) {
@@ -2985,9 +2985,9 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         if (url.includes('KT1')) pdfUrl = '/pdfs/eee_textbook_KT1.pdf';
         else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_textbook_KT2.pdf';
         else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_textbook_KT3.pdf';
-        else pdfUrl = '/pdfs/eee_textbook.pdf';
+        else pdfUrl = '/pdfs/eee_textbook_KT1.pdf';
       } else {
-        pdfUrl = '/pdfs/eee_textbook.pdf';
+        pdfUrl = '/pdfs/eee_textbook_KT1.pdf';
       }
     } else if (url.includes('/units/edexcel_medicine/')) {
       if (url.includes('pupil_workbook')) {
@@ -3553,11 +3553,6 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     },
     // Key Stage 3
     { id: 'medieval_england', title: 'KS3: Medieval England (1066–1485)', group: 'Key Stage 3' },
-    {
-      id: 'early_modern_world',
-      title: 'KS3: Early Modern World & Encounters (1450–1750)',
-      group: 'Key Stage 3',
-    },
     {
       id: 'industrialisation_and_empire',
       title: 'KS3: Industrialisation, Empire & Power (1750–1900)',

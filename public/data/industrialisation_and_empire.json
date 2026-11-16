@@ -741,6 +741,16 @@
           "teacher_guidance": "Historian Professor David Olusoga traces the direct economic supply chain connecting Lancashire's booming cotton mills and Victorian commercial wealth to enslaved African labour on American and Caribbean plantations. Recommended Watch Window: 00:00–06:00 • Lesson Phase: Global Empire & Supply-Chain Enquiry.",
           "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> Where did the raw cotton spun inside Manchester ('Cottonopolis') and Lancashire mills overwhelmingly come from in the early 19th century?</li><li><strong>[03:30] Explain:</strong> Explain why Professor David Olusoga argues that Britain's domestic Industrial Revolution cannot be separated from the history of transatlantic slavery—even after Britain abolished its own slave trade in 1807.</li><li><strong>[05:45] Challenge:</strong> How does following raw materials from American plantations to British factories change the traditional textbook story of industrialisation?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> From slave plantations across the American Deep South (and earlier the Caribbean).</li><li><strong>Explain:</strong> Even after Parliament abolished slavery in British colonies (1833), Lancashire textile mills imported up to 80% of their raw cotton from enslaved plantations in the southern United States, enriching British merchants, banks, and factory owners.</li><li><strong>Challenge:</strong> It proves industrialisation was not a purely British island story of steam and coal; global imperial trade and coerced plantation labour supplied the cheap raw materials that made factory mass production profitable.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/1-migration-and-emigration-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 1: Migration and Emigration",
+          "duration": "18 mins 54 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: Rural-to-Urban Shift & Steam Industrialisation | Tone Alert: BBC Two History File exploring how agricultural change, steam power, and railways drew millions from the countryside (and Ireland) into booming industrial towns.",
+          "viewing_task": "[02:30] Quick Check: What \"push\" and \"pull\" factors drove millions of rural families to move into industrial towns between 1750 and 1850?\n[10:30] Hinge Question: How did steam-powered factories and railways transform where British people lived and worked within just three generations?",
+          "model_answer": "Quick Check: Enclosure and farm machinery reduced rural jobs (push), while regular cash wages in textile mills, ironworks, and coal mines drew workers to towns (pull).\nHinge Question: In 1750 most Britons lived in villages working by daylight and seasons; by 1851 over half the population lived in towns and cities governed by factory clocks and linked by steam railways."
         }
       ],
       "vocab": [
@@ -2351,6 +2361,16 @@
           "teacher_guidance": "Recommended Watch Window: 00:30–09:00 | Lesson Phase: In-Depth Historical Evidence | Tone Alert: Economic historian Jane Humphries uses working-class autobiographies to expose child labour.",
           "viewing_task": "[02:15] Recall: How many child workers were employed across British factories, mines, and workshops at the peak of the Industrial Revolution?\n[05:00] Explain: How did the 'parish apprentice' system legally transfer pauper orphans from London workhouses directly into northern cotton mills?\n[08:15] Challenge: Why does Professor Humphries argue that Britain's industrial ascendancy was built literally upon the backs and bones of child labourers?",
           "model_answer": "Recall: Over a million child workers, accounting for up to 15% of the total industrial labor force.\nExplain: London parishes saved money by signing binding indenture papers transferring destitute orphan children hundreds of miles north to mill owners who housed them in apprentice houses.\nChallenge: Cheap, compliant child labor provided the vital profit margins that enabled British factories to undercut international competitors and fund further industrial expansion."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/4-work-and-wages-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 4: Work and Wages",
+          "duration": "18 mins 11 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Factory Discipline, Child Labour & 1833/1842 Reforms | Tone Alert: BBC Two History File investigating factory clocks, fines, child scavengers/trappers, and parliamentary investigations into industrial working conditions.",
+          "viewing_task": "[03:00] Quick Check: How did work inside a steam-powered cotton mill or coal mine differ from earlier cottage-industry spinning at home?\n[11:00] Hinge Question: Did industrialisation ultimately raise working-class living standards through cheaper goods and later wages, or inflict severe human misery on the first factory generations?",
+          "model_answer": "Quick Check: Instead of setting their own pace at home, workers—including young children—faced 12–14 hour shifts, relentless machine speed, deafening noise, unguarded belts, and strict fines.\nHinge Question: Early generations (1780–1840) endured dangerous conditions and overcrowded slums before Factory and Mines Acts (1833, 1842) and trade unions helped secure safer hours and rising real wages after 1850."
         }
       ],
       "sources": [
@@ -3580,6 +3600,16 @@
           "teacher_guidance": "Recommended Watch Window: 01:00–11:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Fascinating engineering history of Joseph Bazalgette and the London sewer network.",
           "viewing_task": "[02:30] Recall: What caused the 'Great Stink' of London in the blazing summer of 1858?\n[06:00] Explain: How did Chief Engineer Joseph Bazalgette design and build an interconnected underground brick sewer system to divert waste away from the Thames?\n[09:45] Challenge: How did Bazalgette's Victorian sewers permanently eradicate waterborne cholera from London even before Germ Theory was accepted?",
           "model_answer": "Recall: Over 2 million people's untreated sewage flowed directly into the River Thames, which baked in extreme heat, producing an unbearable stench that disrupted Parliament.\nExplain: He constructed 82 miles of massive brick-lined intercepting sewers parallel to the river using Portland cement, intercepting sewage and carrying it eastward to the Thames estuary.\nChallenge: Although built on the mistaken belief that disease spread via bad smells ('miasma'), diverting sewage away from the river simultaneously eliminated the cholera bacterium from London's drinking water."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/3-health-and-housing-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 3: Health and Housing",
+          "duration": "19 mins 1 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Back-to-Back Slums, King Cholera & Sanitary Reform | Tone Alert: BBC Two History File examining speculative back-to-back housing, shared privies, contaminated water pumps, Edwin Chadwick, and Victorian public health.",
+          "viewing_task": "[02:30] Quick Check: Why were rapidly built industrial \"back-to-back\" terraced houses such breeding grounds for tuberculosis, typhus, and cholera?\n[11:00] Hinge Question: Why did Victorian governments initially resist forcing landlords and councils to build sewers and clean water supplies before the 1875 Public Health Act?",
+          "model_answer": "Quick Check: Built cheaply without building regulations, back-to-back houses lacked through-ventilation, crammed whole families into damp cellars, and shared overflowing privies next to drinking-water pumps.\nHinge Question: Laissez-faire ideology held that government should not interfere in private property, and wealthy ratepayers (\"the Dirty Party\") resented paying higher local taxes for sewers."
         }
       ],
       "sources": [
@@ -6102,6 +6132,16 @@
           "teacher_guidance": "Recommended Watch Window: 00:00–03:53 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Comprehensive constitutional analysis using original Hansard debates and petitions.",
           "viewing_task": "[00:58] Recall: How close did Britain come to violent civil war during the 'Days of May' in 1832?\n[01:56] Explain: How did King William IV finally force the aristocratic House of Lords to stop blocking the Reform Bill?\n[02:54] Challenge: How did the subsequent Reform Acts of 1867, 1884, 1918, and 1928 step-by-step complete the transition to universal adult suffrage?",
           "model_answer": "Recall: Protesters ran on the banks ('Stop the Duke, go for gold'), refused taxes, and gathered in armed mobs when the Duke of Wellington tried to form an anti-reform government.\nExplain: Grey persuaded the King to threaten to create dozens of new pro-reform Whig peers in the House of Lords, forcing conservative peers to back down.\nChallenge: 1867 enfranchised skilled urban workers; 1884 enfranchised agricultural labourers; 1918 gave the vote to all men over 21 and women over 30; and 1928 achieved full democratic equality for all women at 21."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/5-reform-and-recreation-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 5: Reform and Recreation",
+          "duration": "18 mins 25 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: Franchise Extension, Saturday Half-Days & Victorian Society | Tone Alert: BBC Two History File exploring how political reform (1832, 1867, 1884), shorter working hours, railways, seaside trips, and Saturday football transformed working-class life by 1900.",
+          "viewing_task": "[03:00] Quick Check: How did railway excursions, the Saturday half-day holiday, and professional football clubs change working-class leisure in late Victorian Britain?\n[11:00] Hinge Question: By 1900, how far had Britain genuinely progressed toward democracy—and who was still excluded from the parliamentary vote?",
+          "model_answer": "Quick Check: Cheap third-class rail tickets let factory families visit seaside resorts like Blackpool, while Saturday afternoons off fuelled mass spectator crowds at local football matches and music halls.\nHinge Question: Reform Acts in 1832, 1867, and 1884 expanded the male electorate dramatically, yet 100% of women and roughly 40% of poorer adult men still had no parliamentary vote in 1900."
         }
       ],
       "sources": [

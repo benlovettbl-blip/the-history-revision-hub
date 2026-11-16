@@ -966,6 +966,16 @@
           "teacher_guidance": "Recommended Watch Window: 01:00–12:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: On-site archaeological investigation into the Thermae, hypocaust underfloor heating, and strigils.",
           "viewing_task": "[02:30] Recall: What was the sequential routine of rooms in a Roman bathhouse (apodyterium, tepidarium, caldarium, frigidarium)?\n[06:15] Explain: How did Roman hypocaust systems heat floors and pool water using underground slave-tended furnaces and hollow wall flues?\n[11:00] Challenge: In assessing Roman public health, how did the collapse of the Western Roman Empire in 476 AD cause an immediate, catastrophic regression in urban sanitation across Europe?",
           "model_answer": "Recall: Changing room (apodyterium), warm room (tepidarium), hot steam room (caldarium), and plunge pool (frigidarium).\nExplain: Wood-burning furnaces forced superheated air through brick pillars beneath suspended tile floors and through terracotta pipes lining walls.\nChallenge: Without centralized Roman taxes, legionary engineers, and municipal administration, aqueducts were cut by invaders, lead pipes were looted, sewers silted up, and cities reverted to cesspits."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/the-roman-empire-05-roman-britain-history-file/",
+          "title": "BBC Two / ERA: History File – The Roman Empire, Ep. 5: Roman Britain (Towns, Baths & Aqueducts)",
+          "duration": "19 mins 12 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 02:00–13:00 | Lesson Phase: Roman Urban Water Engineering | Tone Alert: BBC Two History File examining archaeological evidence from Roman Britain—forts, bathhouses, lead/ceramic water pipes, latrines, and urban planning.",
+          "viewing_task": "[03:00] Quick Check: Identify three features of Roman engineering in Britain that supplied clean water and removed waste from forts and towns.\n[10:30] Hinge Question: Did everyone in Roman Britain enjoy clean piped water and stone sewers equally, or were the best facilities concentrated in army forts and wealthy villas/towns?",
+          "model_answer": "Quick Check: Aqueducts/water channels, public bathhouses, multi-seat stone latrines flushed by running water, and underground drains.\nHinge Question: Roman engineering primarily served legionary soldiers (keeping the army fighting-fit) and Romanised town elites, whereas most native Britons in rural roundhouses still drew water from streams and wells."
         }
       ],
       "quick_quiz": [
@@ -2362,6 +2372,16 @@
           "teacher_guidance": "Recommended Watch Window: 00:00–06:33 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Rigorous documentary examining contemporary primary chronicles and archaeology.",
           "viewing_task": "[01:38] Recall: What symptoms characterized bubonic plague (painful buboes in armpits and groin) and pneumonic plague?\n[03:16] Explain: How did the medieval Church interpret the Black Death as divine punishment for sinful mankind, leading to flagellant processions?\n[04:54] Challenge: How did the complete failure of both Galenic herbal medicine and Church prayer to stop the plague begin to undermine blind medieval faith in traditional authorities?",
           "model_answer": "Recall: High fever, vomiting, agonizing black swellings (buboes), followed by internal bleeding and dark blotches beneath the skin.\nExplain: Priests preached that human sin had brought God's righteous wrath; brotherhoods of flagellants whipped themselves with iron-tipped cords to appease God's anger.\nChallenge: Because holy priests died at the same horrifying rate as ordinary sinners, and doctors reciting Galen were useless, educated people began to question whether ancient authorities held all the answers, sowing early seeds of scientific inquiry."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/2-medicine-public-health-and-government-history-file/",
+          "title": "BBC Two / ERA: History File – Medicine, Public Health and Government (Roman Collapse to Medieval Towns)",
+          "duration": "18 mins 57 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–11:30 | Lesson Phase: Post-Roman Collapse & Medieval Sanitation | Tone Alert: BBC Two History File contrasting Roman water systems with medieval town cesspits, river pollution, monastic lavatoria, and guild/council regulations.",
+          "viewing_task": "[02:00] Quick Check: Why did Roman aqueducts and bathhouses fall into ruin after the Roman army left Britain around AD 410?\n[08:30] Hinge Question: Why did medieval monasteries like Fountains Abbey enjoy clean piped water and stone latrines (reredorters) while neighbouring medieval towns struggled with overflowing cesspits?",
+          "model_answer": "Quick Check: Without Roman tax collection, central government, and specialist engineers, stone pipes and baths were neglected or quarried for building stone.\nHinge Question: Monasteries were wealthy, disciplined, isolated communities built beside fresh rivers where cleanliness was part of monastic routine, whereas crowded walled towns lacked central tax funding and dumped butchers’ and tanners’ waste into shared streams."
         }
       ],
       "quick_quiz": [
@@ -4583,6 +4603,16 @@
           "teacher_guidance": "Comprehensive architectural and sanitary exploration of London's Victorian wastewater network and the Abbey Mills / Crossness cathedral pumping stations. Recommended Watch Window: 04:00–12:30 | Lesson Phase: High-Attainer Stretch & Industrial Archaeology. Tone Alert: Architectural documentary celebrating Victorian civil engineering.",
           "viewing_task": "[05:10] Recall: What ornate nickname was given to the Crossness and Abbey Mills beam engine pumping stations?\n[08:30] Explain: How did giant steam-powered beam engines lift millions of gallons of sewage up to river discharge levels during high tide?\n[11:45] Challenge: To what extent did Bazalgette's sewer network permanently conquer cholera in London before doctors fully understood bacterial contagion?",
           "model_answer": "Recall: 'Cathedrals of Sewage' due to their magnificent Italianate and Byzantine ironwork and brass architecture.\nExplain: Low-level interceptors brought sewage deep underground; immense steam-driven beam pumps raised the liquid into vast covered reservoirs to release on the ebb tide downriver at Erith and Beckton.\nChallenge: When cholera struck London again in 1866, the only area with high deaths was East London, which was not yet linked to Bazalgette's system; areas connected experienced virtually zero deaths, demonstrating that isolating waste from drinking water eradicated cholera empirically."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/3-health-and-housing-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 3: Health and Housing",
+          "duration": "19 mins 1 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Industrial Slums, Chadwick & Sewer Reform | Tone Alert: BBC Two History File investigating industrial overcrowding, contaminated water, cholera epidemics, and Victorian sanitary engineering.",
+          "viewing_task": "[02:30] Quick Check: How did overflowing cesspits and shared privies contaminate drinking water in rapidly growing industrial cities?\n[11:00] Hinge Question: Why did the 1858 \"Great Stink\" alongside Chadwick and Bazalgette achieve action from MPs when earlier cholera outbreaks in poor districts had not?",
+          "model_answer": "Quick Check: Unlined cesspits leaked human sewage directly into porous soil and shallow wells or rivers used for drinking water.\nHinge Question: When the summer heatwave of 1858 turned the sewage-choked River Thames directly outside the Houses of Parliament into an unbearable stench, MPs feared miasma would kill lawmakers themselves—voting £3 million in 18 days for Joseph Bazalgette’s intercepting sewers."
         }
       ],
       "sources": [

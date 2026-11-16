@@ -25,190 +25,55 @@ export const TEXTBOOK_CATALOG = {
     keyTopics: {
       KT1: {
         id: 'KT1',
-        title: 'Key Topic 1: The Creation of the State of Israel (1945–56)',
-        shortTitle: 'KT1: Creation of Israel',
-        period: '1945–1956',
+        title: 'Key Topic 1: Birth of Israel & Suez (1945–63)',
+        shortTitle: 'KT1: Birth of Israel',
+        period: '1945–1963',
         htmlUrl: '/units/cme_new/textbook_KT1_PUBLISHER.html',
         pdfUrl: '/pdfs/cme_new_textbook_KT1.pdf',
         spreads: [
-          {
-            index: 0,
-            pages: [1],
-            label: 'Front Cover',
-            subtitle: 'Course Overview & Specification Matrix',
-            isCover: true,
-          },
-          {
-            index: 1,
-            pages: [2, 3],
-            label: 'Enquiry 1.1',
-            subtitle: 'Broken Promises & Imperial Borders (1915–1945)',
-            topic: 'Ottoman Collapse, McMahon, Sykes-Picot, Balfour & 1939 White Paper',
-          },
-          {
-            index: 2,
-            pages: [4, 5],
-            label: 'Enquiry 1.2',
-            subtitle: 'Post-War Crisis & UN Partition (1945–1947)',
-            topic: 'Jewish Insurgency, King David Hotel, SS Exodus & UN Resolution 181',
-          },
-          {
-            index: 3,
-            pages: [6, 7],
-            label: 'Enquiry 1.3',
-            subtitle: 'The 1948–49 War & Armistices (1948–1949)',
-            topic:
-              'Declaration of Independence, Five Arab Armies, UN Truce, Czech Arms & Green Line',
-          },
-          {
-            index: 4,
-            pages: [8, 9],
-            label: 'Enquiry 1.4',
-            subtitle: 'The Palestinian Refugee Catastrophe (1948–1950)',
-            topic:
-              'The Nakba (700,000 Displaced), Plan Dalet, UN Resolution 194, UNRWA & Law of Return',
-          },
-          {
-            index: 5,
-            pages: [10, 11],
-            label: 'Enquiry 1.5',
-            subtitle: 'The Suez Crisis & Superpowers (1955–1956)',
-            topic: 'Rise of Nasser, Canal Nationalisation, Secret Tripartite Collusion & UNEF',
-          },
-          {
-            index: 6,
-            pages: [12],
-            label: 'Back Cover',
-            subtitle: 'Chronological Master Matrix & Tariffs',
-            isBackCover: true,
-          },
+          { index: 0, pages: [1], label: 'Front Cover', subtitle: 'Overview & Canonical TOC', isCover: true },
+          { index: 1, pages: [2, 3], label: 'Dossier & Spine', subtitle: 'Key Actors & Chronological Turning Points' },
+          { index: 2, pages: [4, 5], label: 'Enquiry 01', subtitle: 'Broken Promises & Imperial Borders (1915–39)' },
+          { index: 3, pages: [6, 7], label: 'Enquiry 02', subtitle: 'End of the Mandate & Partition (1945–49)' },
+          { index: 4, pages: [8, 9], label: 'Enquiry 03', subtitle: '1948–49 War & Palestinian Refugee Crisis' },
+          { index: 5, pages: [10, 11], label: 'Enquiry 04', subtitle: 'Nasser & the 1956 Suez Crisis' },
+          { index: 6, pages: [12], label: 'Back Cover', subtitle: '20-Question Retrieval Quiz', isBackCover: true },
         ],
       },
       KT2: {
         id: 'KT2',
-        title: 'Key Topic 2: The Escalating Conflict (1964–73)',
+        title: 'Key Topic 2: The Escalating Conflict (1963–73)',
         shortTitle: 'KT2: Escalating Conflict',
-        period: '1964–1973',
+        period: '1963–1973',
         htmlUrl: '/units/cme_new/textbook_KT2_PUBLISHER.html',
         pdfUrl: '/pdfs/cme_new_textbook_KT2.pdf',
         spreads: [
-          {
-            index: 0,
-            pages: [1],
-            label: 'Front Cover',
-            subtitle: 'Course Overview & Specification Matrix',
-            isCover: true,
-          },
-          {
-            index: 1,
-            pages: [2, 3],
-            label: 'Enquiry 2.1',
-            subtitle: 'Escalation to the Six-Day War (1964–1967)',
-            topic:
-              'Cairo Summit, Water Wars, Samu Raid, April Air Battle, UNEF Expulsion & Tiran Blockade',
-          },
-          {
-            index: 2,
-            pages: [4, 5],
-            label: 'Enquiry 2.2',
-            subtitle: 'The Six-Day Blitz (5–10 June 1967)',
-            topic:
-              'Pre-emptive Dawn Airstrike, Sinai, Gaza, West Bank, East Jerusalem & Golan Heights',
-          },
-          {
-            index: 3,
-            pages: [6, 7],
-            label: 'Enquiry 2.3',
-            subtitle: 'Aftermath of 1967: The Three Noes (1967–1968)',
-            topic:
-              'Khartoum Arab Summit, UN Resolution 242 (Land for Peace) & Strategic Buffer Settlements',
-          },
-          {
-            index: 4,
-            pages: [8, 9],
-            label: 'Enquiry 2.4',
-            subtitle: 'Palestinian Resistance & Terror (1968–1972)',
-            topic:
-              'Battle of Karameh, Dawson’s Field Hijackings, Black September in Jordan & Munich 1972',
-          },
-          {
-            index: 5,
-            pages: [10, 11],
-            label: 'Enquiry 2.5',
-            subtitle: 'Yom Kippur War & OPEC Embargo (1969–1973)',
-            topic:
-              'War of Attrition, Bar-Lev Breach, Coordinated Surprise Strike, Sharon Crossing & Oil Weapon',
-          },
-          {
-            index: 6,
-            pages: [12],
-            label: 'Back Cover',
-            subtitle: 'Chronological Master Matrix & Tariffs',
-            isBackCover: true,
-          },
+          { index: 0, pages: [1], label: 'Front Cover', subtitle: 'Overview & Canonical TOC', isCover: true },
+          { index: 1, pages: [2, 3], label: 'Dossier & Spine', subtitle: 'Key Actors & Chronological Turning Points' },
+          { index: 2, pages: [4, 5], label: 'Enquiry 01', subtitle: 'Water, Raids & Road to 1967 (1964–67)' },
+          { index: 3, pages: [6, 7], label: 'Enquiry 02', subtitle: 'The Six-Day War (May–June 1967)' },
+          { index: 4, pages: [8, 9], label: 'Enquiry 03', subtitle: 'Occupied Territories & UN Resolution 242' },
+          { index: 5, pages: [10, 11], label: 'Enquiry 04', subtitle: 'PLO, Black September & Munich (1968–72)' },
+          { index: 6, pages: [12, 13], label: 'Enquiry 05', subtitle: 'War of Attrition & Yom Kippur War (1969–73)' },
+          { index: 7, pages: [14, 15], label: 'Glossary & Quiz I', subtitle: 'Specification Terms & Recall Qs 1–18' },
+          { index: 8, pages: [16], label: 'Back Cover', subtitle: 'Recall Quiz Part II (Qs 19–30)', isBackCover: true },
         ],
       },
       KT3: {
         id: 'KT3',
-        title: 'Key Topic 3: The Search for Peace (1974–95)',
-        shortTitle: 'KT3: Search for Peace',
+        title: 'Key Topic 3: Attempts at a Solution (1974–95)',
+        shortTitle: 'KT3: Attempts at a Solution',
         period: '1974–1995',
         htmlUrl: '/units/cme_new/textbook_KT3_PUBLISHER.html',
         pdfUrl: '/pdfs/cme_new_textbook_KT3.pdf',
         spreads: [
-          {
-            index: 0,
-            pages: [1],
-            label: 'Front Cover',
-            subtitle: 'Course Overview & Specification Matrix',
-            isCover: true,
-          },
-          {
-            index: 1,
-            pages: [2, 3],
-            label: 'Enquiry 3.1',
-            subtitle: 'Shuttle Diplomacy to Jerusalem (1974–1978)',
-            topic:
-              '1973 Oil Shock, Kissinger Shuttle Diplomacy, Suez Canal Reopened & Begin Elected',
-          },
-          {
-            index: 2,
-            pages: [4, 5],
-            label: 'Enquiry 3.2',
-            subtitle: 'Camp David to Washington (1977–1979)',
-            topic:
-              'Sadat’s Knesset Speech, Carter’s Camp David Accords, Peace Treaty & Arab League Expulsion',
-          },
-          {
-            index: 3,
-            pages: [6, 7],
-            label: 'Enquiry 3.3',
-            subtitle: 'The Lebanon War & Sabra-Shatila (1982)',
-            topic:
-              'Coastal Road, Operation Peace for Galilee, Siege of Beirut, Refugee Massacres & Kahan Inquiry',
-          },
-          {
-            index: 4,
-            pages: [8, 9],
-            label: 'Enquiry 3.4',
-            subtitle: 'The First Intifada & Rise of Hamas (1987–1993)',
-            topic: 'Gaza Incident, UNLU Civil Disobedience, IDF Iron Fist & Formation of Hamas',
-          },
-          {
-            index: 5,
-            pages: [10, 11],
-            label: 'Enquiry 3.5',
-            subtitle: 'Madrid to Oslo: Peace & Assassination (1988–1995)',
-            topic:
-              'Arafat Renounces Terror, 1991 Madrid Conference, Oslo I & II Handshake & Rabin Assassination',
-          },
-          {
-            index: 6,
-            pages: [12],
-            label: 'Back Cover',
-            subtitle: 'Chronological Master Matrix & Tariffs',
-            isBackCover: true,
-          },
+          { index: 0, pages: [1], label: 'Front Cover', subtitle: 'Overview & Canonical TOC', isCover: true },
+          { index: 1, pages: [2, 3], label: 'Dossier & Spine', subtitle: 'Key Actors & Chronological Turning Points' },
+          { index: 2, pages: [4, 5], label: 'Enquiry 01', subtitle: 'Shuttle Diplomacy to Camp David (1974–79)' },
+          { index: 3, pages: [6, 7], label: 'Enquiry 02', subtitle: 'Lebanon, Sabra-Shatila & First Intifada' },
+          { index: 4, pages: [8, 9], label: 'Enquiry 03', subtitle: 'Madrid to the Oslo Accords (1988–95)' },
+          { index: 5, pages: [10, 11], label: 'Glossary & Quiz I', subtitle: 'Specification Terms & Recall Qs 1–12' },
+          { index: 6, pages: [12], label: 'Back Cover', subtitle: 'Recall Quiz Part II (Qs 13–24)', isBackCover: true },
         ],
       },
     },
@@ -686,13 +551,13 @@ function navigateSpread(direction) {
   const maxSpread = ktData.spreads.length - 1;
 
   if (currentReader.viewMode === 'single') {
-    // Single page step
+    const cacheKey = `${currentReader.unitId}_${currentReader.ktId}`;
+    const maxPages = parsedBookCache.get(cacheKey)?.pageCount || ktData.spreads[maxSpread].pages[0] || 12;
     const newPage = currentReader.singlePageIndex + direction;
-    if (newPage >= 1 && newPage <= 12) {
+    if (newPage >= 1 && newPage <= maxPages) {
       currentReader.singlePageIndex = newPage;
-      // Also update spreadIndex to match
       if (newPage === 1) currentReader.spreadIndex = 0;
-      else if (newPage === 12) currentReader.spreadIndex = maxSpread;
+      else if (newPage === maxPages) currentReader.spreadIndex = maxSpread;
       else currentReader.spreadIndex = Math.floor(newPage / 2);
       renderSpreadInIframe();
     }
@@ -827,7 +692,7 @@ function renderSpreadInIframe(preloadedBundle = null) {
   if (btnNext) {
     const isLast =
       currentReader.viewMode === 'single'
-        ? currentReader.singlePageIndex >= 12
+        ? currentReader.singlePageIndex >= bundle.pageCount
         : currentReader.spreadIndex >= ktData.spreads.length - 1;
     btnNext.style.opacity = isLast ? '0.3' : '1';
     btnNext.style.pointerEvents = isLast ? 'none' : 'auto';
@@ -858,8 +723,8 @@ function renderSpreadInIframe(preloadedBundle = null) {
       rightPageContent = bundle.pagesHtml[0] || '';
       isSingleCover = true;
     } else if (currentSpread.isBackCover) {
-      // Back Cover (Page 12) centered alone
-      rightPageContent = bundle.pagesHtml[11] || '';
+      // Back Cover centered alone
+      rightPageContent = bundle.pagesHtml[bundle.pageCount - 1] || '';
       isSingleCover = true;
     } else {
       // Enquiry Spreads: Left page (e.g. 2, 4, 6) and Right page (e.g. 3, 5, 7)
@@ -912,11 +777,14 @@ function renderSpreadInIframe(preloadedBundle = null) {
           height: 297mm;
           max-height: 297mm;
           background: #ffffff;
-          padding: 12mm 14mm 12mm 14mm;
+          padding: 9.5mm 12.5mm 8.5mm 12.5mm;
           position: relative;
           overflow: hidden;
           flex-shrink: 0;
           box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
         }
 
         /* Authentic 3D Book Page Shadow & Spine Cleft Gradient */

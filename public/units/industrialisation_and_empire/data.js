@@ -741,6 +741,16 @@ export default {
           "teacher_guidance": "Historian Professor David Olusoga traces the direct economic supply chain connecting Lancashire's booming cotton mills and Victorian commercial wealth to enslaved African labour on American and Caribbean plantations. Recommended Watch Window: 00:00–06:00 • Lesson Phase: Global Empire & Supply-Chain Enquiry.",
           "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> Where did the raw cotton spun inside Manchester ('Cottonopolis') and Lancashire mills overwhelmingly come from in the early 19th century?</li><li><strong>[03:30] Explain:</strong> Explain why Professor David Olusoga argues that Britain's domestic Industrial Revolution cannot be separated from the history of transatlantic slavery—even after Britain abolished its own slave trade in 1807.</li><li><strong>[05:45] Challenge:</strong> How does following raw materials from American plantations to British factories change the traditional textbook story of industrialisation?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> From slave plantations across the American Deep South (and earlier the Caribbean).</li><li><strong>Explain:</strong> Even after Parliament abolished slavery in British colonies (1833), Lancashire textile mills imported up to 80% of their raw cotton from enslaved plantations in the southern United States, enriching British merchants, banks, and factory owners.</li><li><strong>Challenge:</strong> It proves industrialisation was not a purely British island story of steam and coal; global imperial trade and coerced plantation labour supplied the cheap raw materials that made factory mass production profitable.</li></ol>"
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/1-migration-and-emigration-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 1: Migration and Emigration",
+          "duration": "18 mins 54 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: Rural-to-Urban Shift & Steam Industrialisation | Tone Alert: BBC Two History File exploring how agricultural change, steam power, and railways drew millions from the countryside (and Ireland) into booming industrial towns.",
+          "viewing_task": "[02:30] Quick Check: What \"push\" and \"pull\" factors drove millions of rural families to move into industrial towns between 1750 and 1850?\n[10:30] Hinge Question: How did steam-powered factories and railways transform where British people lived and worked within just three generations?",
+          "model_answer": "Quick Check: Enclosure and farm machinery reduced rural jobs (push), while regular cash wages in textile mills, ironworks, and coal mines drew workers to towns (pull).\nHinge Question: In 1750 most Britons lived in villages working by daylight and seasons; by 1851 over half the population lived in towns and cities governed by factory clocks and linked by steam railways."
         }
       ],
       "vocab": [
@@ -2351,6 +2361,16 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:30–09:00 | Lesson Phase: In-Depth Historical Evidence | Tone Alert: Economic historian Jane Humphries uses working-class autobiographies to expose child labour.",
           "viewing_task": "[02:15] Recall: How many child workers were employed across British factories, mines, and workshops at the peak of the Industrial Revolution?\n[05:00] Explain: How did the 'parish apprentice' system legally transfer pauper orphans from London workhouses directly into northern cotton mills?\n[08:15] Challenge: Why does Professor Humphries argue that Britain's industrial ascendancy was built literally upon the backs and bones of child labourers?",
           "model_answer": "Recall: Over a million child workers, accounting for up to 15% of the total industrial labor force.\nExplain: London parishes saved money by signing binding indenture papers transferring destitute orphan children hundreds of miles north to mill owners who housed them in apprentice houses.\nChallenge: Cheap, compliant child labor provided the vital profit margins that enabled British factories to undercut international competitors and fund further industrial expansion."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/4-work-and-wages-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 4: Work and Wages",
+          "duration": "18 mins 11 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Factory Discipline, Child Labour & 1833/1842 Reforms | Tone Alert: BBC Two History File investigating factory clocks, fines, child scavengers/trappers, and parliamentary investigations into industrial working conditions.",
+          "viewing_task": "[03:00] Quick Check: How did work inside a steam-powered cotton mill or coal mine differ from earlier cottage-industry spinning at home?\n[11:00] Hinge Question: Did industrialisation ultimately raise working-class living standards through cheaper goods and later wages, or inflict severe human misery on the first factory generations?",
+          "model_answer": "Quick Check: Instead of setting their own pace at home, workers—including young children—faced 12–14 hour shifts, relentless machine speed, deafening noise, unguarded belts, and strict fines.\nHinge Question: Early generations (1780–1840) endured dangerous conditions and overcrowded slums before Factory and Mines Acts (1833, 1842) and trade unions helped secure safer hours and rising real wages after 1850."
         }
       ],
       "sources": [
@@ -3580,6 +3600,16 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 01:00–11:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Fascinating engineering history of Joseph Bazalgette and the London sewer network.",
           "viewing_task": "[02:30] Recall: What caused the 'Great Stink' of London in the blazing summer of 1858?\n[06:00] Explain: How did Chief Engineer Joseph Bazalgette design and build an interconnected underground brick sewer system to divert waste away from the Thames?\n[09:45] Challenge: How did Bazalgette's Victorian sewers permanently eradicate waterborne cholera from London even before Germ Theory was accepted?",
           "model_answer": "Recall: Over 2 million people's untreated sewage flowed directly into the River Thames, which baked in extreme heat, producing an unbearable stench that disrupted Parliament.\nExplain: He constructed 82 miles of massive brick-lined intercepting sewers parallel to the river using Portland cement, intercepting sewage and carrying it eastward to the Thames estuary.\nChallenge: Although built on the mistaken belief that disease spread via bad smells ('miasma'), diverting sewage away from the river simultaneously eliminated the cholera bacterium from London's drinking water."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/3-health-and-housing-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 3: Health and Housing",
+          "duration": "19 mins 1 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Back-to-Back Slums, King Cholera & Sanitary Reform | Tone Alert: BBC Two History File examining speculative back-to-back housing, shared privies, contaminated water pumps, Edwin Chadwick, and Victorian public health.",
+          "viewing_task": "[02:30] Quick Check: Why were rapidly built industrial \"back-to-back\" terraced houses such breeding grounds for tuberculosis, typhus, and cholera?\n[11:00] Hinge Question: Why did Victorian governments initially resist forcing landlords and councils to build sewers and clean water supplies before the 1875 Public Health Act?",
+          "model_answer": "Quick Check: Built cheaply without building regulations, back-to-back houses lacked through-ventilation, crammed whole families into damp cellars, and shared overflowing privies next to drinking-water pumps.\nHinge Question: Laissez-faire ideology held that government should not interfere in private property, and wealthy ratepayers (\"the Dirty Party\") resented paying higher local taxes for sewers."
         }
       ],
       "sources": [
@@ -6102,6 +6132,16 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:00–03:53 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Comprehensive constitutional analysis using original Hansard debates and petitions.",
           "viewing_task": "[00:58] Recall: How close did Britain come to violent civil war during the 'Days of May' in 1832?\n[01:56] Explain: How did King William IV finally force the aristocratic House of Lords to stop blocking the Reform Bill?\n[02:54] Challenge: How did the subsequent Reform Acts of 1867, 1884, 1918, and 1928 step-by-step complete the transition to universal adult suffrage?",
           "model_answer": "Recall: Protesters ran on the banks ('Stop the Duke, go for gold'), refused taxes, and gathered in armed mobs when the Duke of Wellington tried to form an anti-reform government.\nExplain: Grey persuaded the King to threaten to create dozens of new pro-reform Whig peers in the House of Lords, forcing conservative peers to back down.\nChallenge: 1867 enfranchised skilled urban workers; 1884 enfranchised agricultural labourers; 1918 gave the vote to all men over 21 and women over 30; and 1928 achieved full democratic equality for all women at 21."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/5-reform-and-recreation-history-file/",
+          "title": "BBC Two / ERA: History File – Britain 1750–1900, Ep. 5: Reform and Recreation",
+          "duration": "18 mins 25 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: Franchise Extension, Saturday Half-Days & Victorian Society | Tone Alert: BBC Two History File exploring how political reform (1832, 1867, 1884), shorter working hours, railways, seaside trips, and Saturday football transformed working-class life by 1900.",
+          "viewing_task": "[03:00] Quick Check: How did railway excursions, the Saturday half-day holiday, and professional football clubs change working-class leisure in late Victorian Britain?\n[11:00] Hinge Question: By 1900, how far had Britain genuinely progressed toward democracy—and who was still excluded from the parliamentary vote?",
+          "model_answer": "Quick Check: Cheap third-class rail tickets let factory families visit seaside resorts like Blackpool, while Saturday afternoons off fuelled mass spectator crowds at local football matches and music halls.\nHinge Question: Reform Acts in 1832, 1867, and 1884 expanded the male electorate dramatically, yet 100% of women and roughly 40% of poorer adult men still had no parliamentary vote in 1900."
         }
       ],
       "sources": [
@@ -6439,7 +6479,7 @@ export default {
       "cover_image": "/images/coalbrookdale_by_night.jpg",
       "cover_caption": "Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801), Science Museum, London. Blast furnaces illuminating the Severn Gorge.",
       "author_context": "Daniel Defoe (c. 1660–1731), celebrated author and perceptive economic traveller, journeyed across 18th-century Britain recording its nascent industrial and metallurgical energy. Later observers of Abraham Darby's Coalbrookdale and Matthew Boulton's Soho Manufactory recorded the astonishing sight of coal and iron transforming ancient woodlands into subterranean cauldrons of steam and fire.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"...The approach to Coalbrookdale appeared like a vision of subterranean fire. As night fell upon the Severn valley, dense columns of black smoke curled into the heavens, illuminated from below by the blinding crimson glare of the blast furnaces. The ground beneath our feet trembled with the rhythmic thud of colossal iron hammers driven by water and steam.<br><br>Here, night and day, the roaring bellows urge the fire to an intolerable fury. Rivers of liquid iron pour from the stone hearths into the casting beds of sand, casting a lurid, unearthly glow across the swarthy figures of the workmen who guide the molten metal with long iron rods.<br><br>It seemed to the traveller as if the bowels of the earth had broken open, and that Vulcan with all his Cyclopes had established his empire upon the hills of Shropshire. What was once quiet English woodland is now an unceasing foundry of national wealth.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Blast Furnace:</strong> A towering stone furnace where iron ore, coke (purified coal), and limestone are blasted with air to produce molten iron.</li><li><strong>Bellows:</strong> A mechanical device used to pump strong blasts of air into a furnace to reach extreme smelting temperatures.</li><li><strong>Vulcan:</strong> The ancient Roman god of fire, metalworking, and volcanoes.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What mythic comparison does the observer use to describe the blast furnaces of Coalbrookdale?<br><br><strong>Pair:</strong> Notice how the text describes both \"a lurid, unearthly glow\" and an \"unceasing foundry of national wealth.\" Discuss with your partner: did 18th-century Britons view industrial ironworks as frightening destruction of nature, or thrilling technological progress?<br><br><strong>Share:</strong> How did the transition from wood timber to coal-fired furnaces make Britain the world's leading producer of iron by 1800?",
       "audio_file": "/assets/industrialisation_reading_l0.mp3",
@@ -6447,7 +6487,10 @@ export default {
         "What powered the colossal iron hammers at Coalbrookdale?",
         "Where was the molten iron poured when it left the furnace hearths?",
         "Which Roman god of fire is invoked to describe the industrial scene?"
-      ]
+      ],
+      "source_type": "contemporary_travelogue",
+      "source_type_label": "Contemporary 18th-Century Travelogue",
+      "is_primary": true
     },
     {
       "lesson_index": 1,
@@ -6456,7 +6499,7 @@ export default {
       "cover_image": "/images/child_labour.jpg",
       "cover_caption": "Young child labourers working underneath spinning mules in a 19th-century cotton factory.",
       "author_context": "Robert Blincoe (c. 1792–1860) was a London workhouse orphan apprenticed at age seven to work in northern cotton mills in Nottinghamshire and Derbyshire. His published testimony before parliamentary commissioners shocked Victorian Britain and directly spurred Lord Shaftesbury's factory reform campaigns.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"The children were aroused from their beds at five o'clock in the morning by the ringing of the factory bell. If any boy or girl was late by even two minutes, the heavy leather strap was laid unmercifully across their shoulders by the overlooker.<br><br>Our work as scavengers was to creep beneath the revolving machinery while the cotton mules were in full, rapid motion, sweeping up the flying dust and loose cotton fibres. The deafening roar of hundreds of whirling spindles filled the air, and the heat in the spinning rooms was kept at eighty degrees so that the threads would not snap.<br><br>...Many a time have I seen a poor child, overcome by utter fatigue, drop his head against the frame and fall asleep while standing. In an instant, the iron cog would seize his fingers or hair, and a limb would be torn away before the engine could be halted. We were fed on coarse oatcakes and pig porridge, working fourteen hours a day without respite.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Scavenger:</strong> A young child employed to crawl under moving factory looms and spinning machines to clean out waste dust and cotton lint.</li><li><strong>Overlooker:</strong> A factory supervisor appointed to enforce speed, output, and discipline, often using corporal punishment.</li><li><strong>Spinning Mule:</strong> A large steam-driven machine that spun cotton fibres into yarn simultaneously on hundreds of spindles.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What was the specific task of a \"scavenger\" in a cotton mill?<br><br><strong>Pair:</strong> Discuss why mill owners preferred to hire workhouse orphans like Robert Blincoe rather than adult men. What economic and physical advantages did children offer to factory masters?<br><br><strong>Share:</strong> If factory masters knew that children were being maimed and exhausted, why did it take Parliament decades of campaigning by reformers like Lord Shaftesbury to pass effective Factory Acts?",
       "audio_file": "/assets/industrialisation_reading_l1.mp3",
@@ -6464,7 +6507,10 @@ export default {
         "At what time were the orphan apprentice children woken for work?",
         "Why was the temperature in the cotton spinning rooms kept at eighty degrees?",
         "What punishment was administered if a child arrived late to the mill?"
-      ]
+      ],
+      "source_type": "primary_memoir",
+      "source_type_label": "Eyewitness Child Labour Memoir (1832)",
+      "is_primary": true
     },
     {
       "lesson_index": 2,
@@ -6473,7 +6519,7 @@ export default {
       "cover_image": "/images/chadwick.jpg",
       "cover_caption": "Sir Edwin Chadwick KCB (1800–1890), pioneering public health reformer whose data forced Britain to build modern sewers.",
       "author_context": "Edwin Chadwick was Secretary to the Poor Law Commission. His landmark 1842 report utilized empirical statistics and medical interviews to prove that life expectancy in industrial slums had collapsed due to contaminated water, unpaved alleys, and rotting cesspools.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"...In the crowded courts and cellar dwellings of Manchester, Liverpool, and Leeds, the primary source of pestilence is the total absence of drainage and clean water. The privies are universally foul, overflowing into the courtyards where children play barefoot in stagnant pools of excrement and putrid refuse.<br><br>In one narrow alley in Leeds, thirty-four houses with over two hundred inhabitants were found to possess but a single privy, which had not been emptied for three years. The air is so thick with noxious miasma and decaying animal matter that the inhabitants suffer from continual typhus, cholera, and consumption.<br><br>The statistical evidence proves beyond contradiction that the average age at death of a labourer in Manchester is but seventeen years, compared to thirty-eight years for an agricultural worker in rural Rutland. More lives are destroyed annually in England by filth and preventable disease than were lost in any war in which the country has been engaged in modern times.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Privy:</strong> An outdoor latrine or toilet consisting of a seat placed over an open pit or cesspool.</li><li><strong>Miasma:</strong> The widely held 19th-century medical theory that epidemic diseases were caused by breathing poisonous air generated by rotting filth.</li><li><strong>Typhus / Consumption:</strong> Deadly infectious diseases; typhus was spread by body lice and consumption (tuberculosis) attacked the lungs in damp, overcrowded housing.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What shocking statistical comparison does Chadwick make between a Manchester labourer and a Rutland agricultural worker?<br><br><strong>Pair:</strong> Chadwick claims that filth killed more Britons each year than any foreign war. Discuss with your partner: why did private landlords and town councils resist spending money on clean water mains and underground sewers?<br><br><strong>Share:</strong> How did Chadwick's report overturn the Victorian belief that poverty and disease were simply the moral fault of the poor themselves?",
       "audio_file": "/assets/industrialisation_reading_l2.mp3",
@@ -6481,7 +6527,10 @@ export default {
         "How many houses shared a single privy in the Leeds court visited by inspectors?",
         "What was the average age at death for a labourer in industrial Manchester according to Chadwick?",
         "What medical theory did contemporaries use to explain why decaying matter caused epidemics?"
-      ]
+      ],
+      "source_type": "official_report",
+      "source_type_label": "Official Parliamentary Sanitary Report (1842)",
+      "is_primary": true
     },
     {
       "lesson_index": 3,
@@ -6490,7 +6539,7 @@ export default {
       "cover_image": "/images/indian_rebellion_1857.jpg",
       "cover_caption": "Contemporary print depicting the fierce clashes of the 1857 Indian Rebellion across northern India.",
       "author_context": "In August 1857, as Indian insurgents held Delhi against the British East India Company, Prince Firoz Shah published the Azamgarh Proclamation. Written in Urdu and Persian, it systematically catalogued how British corporate rule had dispossessed Indian rulers, ruined native artisans, and violated religious faith.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"It is well known to all, that in this age the people of Hindostan, both Hindoos and Mahommedans, are being ruined under the tyranny and oppression of the treacherous English. It is therefore the bounden duty of all wealthy men and princes to risk their life and property for the common good.<br><br><em>Section I: Regarding the Zamindars.</em> The British Government has dispossessed the ancient landlords, imposing exorbitant land taxes and selling off ancestral estates at public auction upon the slightest delay in payment... Under our royal government, their hereditary honours and estates shall be confirmed forever.<br><br><em>Section II: Regarding the Merchants.</em> The British have monopolized all valuable trade—indigo, opium, cloth, and salt—leaving only petty commerce to native merchants. Furthermore, by importing cheap machine-made goods from England, they have impoverished millions of native weavers and craftsmen.<br><br><em>Section III: Regarding the Sepoys.</em> The British have broken their most sacred oaths, dishonouring the religious caste and faith of both Hindoos and Muslims by their defiled cartridges. Let all brave soldiers unite to expel the foreign rulers.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Hindostan:</strong> The historical name used across northern India for the Indian subcontinent.</li><li><strong>Zamindar:</strong> A hereditary landowner or aristocratic estate holder responsible for collecting local agricultural revenue.</li><li><strong>Defiled Cartridges:</strong> Paper rifle cartridges greased with animal fat (tallow from cows, sacred to Hindus, and lard from pigs, forbidden to Muslims) that soldiers had to bite open.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> Name two specific groups (e.g. zamindars, merchants, sepoys) addressed in the proclamation and identify one complaint made by each.<br><br><strong>Pair:</strong> British textbooks often labelled the 1857 conflict merely a \"Sepoy Mutiny\" caused by bullet grease. Discuss with your partner: how does the Azamgarh Proclamation prove that the rebellion was a much broader national uprising against economic and political exploitation?<br><br><strong>Share:</strong> Why was the unity between Hindus and Muslims so terrifying to the British East India Company and Crown authorities?",
       "audio_file": "/assets/industrialisation_reading_l4.mp3",
@@ -6498,7 +6547,10 @@ export default {
         "How does the proclamation say the British treated Indian merchants and native weavers?",
         "What happened to ancestral zamindar estates when tax payments were delayed?",
         "Why did the greased cartridges offend both Hindu and Muslim soldiers?"
-      ]
+      ],
+      "source_type": "revolutionary_proclamation",
+      "source_type_label": "Revolutionary Resistance Proclamation (1857)",
+      "is_primary": true
     },
     {
       "lesson_index": 4,
@@ -6507,7 +6559,7 @@ export default {
       "cover_image": "/images/chartist_demo.jpg",
       "cover_caption": "Contemporary print of working-class political reform demonstrations demanding the right to vote.",
       "author_context": "Samuel Bamford (1788–1872) was a Lancashire weaver and radical reformer who organized the Middleton contingent of 6,000 peaceful men, women, and children marching to St Peter's Field in Manchester on 16 August 1819 to demand parliamentary reform.",
-      "is_adapted": false,
+      "is_adapted": true,
       "extract": "\"It was a bright, sunny morning. We assembled in the market square at Middleton, six thousand strong, dressed in our clean Sunday suits, with sprigs of laurel and rosemary in our buttonholes. We carried banners of green and white silk bearing the words: 'Annual Parliaments' and 'Liberty and Fraternity'. Before marching, I strictly commanded that not a single stick or weapon should be borne; our weapon was the moral righteousness of our cause.<br><br>When we reached St. Peter's Field, over sixty thousand souls were gathered in peaceful order, listening with bated breath to Mr. Henry Hunt as he stepped upon the hustings.<br><br>Suddenly, a heavy clatter of hooves echoed down the street. The Manchester Yeomanry Cavalry rode into the crowd at a fierce trot, their sabres drawn and glittering in the midday sun. 'Forward!' shouted their commander. In a moment they were hacking right and left at the defenceless throng. Shrieks of terror and groans of agony rose from the crushed multitude. Women and children were trampled beneath the charging horses. Within ten minutes, the field was a shambles of blood, torn banners, and groaning wounded.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Hustings:</strong> A raised temporary wooden platform from which political candidates and speakers addressed the public.</li><li><strong>Yeomanry Cavalry:</strong> A volunteer military force composed of wealthy local businessmen, cotton masters, and pub owners, known for their fierce anti-radical hostility.</li><li><strong>Annual Parliaments:</strong> The radical demand that elections be held every twelve months to make MPs strictly accountable to the voters.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What specific instructions did Samuel Bamford give to his followers before they marched to St Peter's Field?<br><br><strong>Pair:</strong> The crowd at Peterloo was unarmed and included thousands of women and children in their best clothes. Discuss with your partner: why were the Manchester magistrates and factory owners so terrified of working-class people gathering peacefully to demand the vote?<br><br><strong>Share:</strong> Why was the massacre named \"Peterloo\" by contemporary newspapers, and how did it mock the British victory at Waterloo four years earlier?",
       "audio_file": "/assets/industrialisation_reading_l5.mp3",
@@ -6515,7 +6567,10 @@ export default {
         "What words were stitched onto the silk banners carried by the Middleton contingent?",
         "Who commanded the volunteer cavalry force that charged into the peaceful crowd?",
         "Why did Samuel Bamford strictly forbid his marchers from carrying sticks or weapons?"
-      ]
+      ],
+      "source_type": "primary_memoir",
+      "source_type_label": "Eyewitness Peterloo Reform Memoir",
+      "is_primary": true
     }
   ],
   "edition": "2026.1",

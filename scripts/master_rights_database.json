@@ -16,8 +16,22 @@
       "key_stage": "Key Stage 2 (Years 5–6)",
       "exam_board": "KS2 National Curriculum & Holocaust Educational Trust",
       "total_lessons": 11,
-      "total_sources": 86,
+      "total_sources": 87,
       "sources": [
+        {
+          "lesson_num": 0,
+          "lesson_title": "Unit Cover: World War II & The Home Front (1933–1945)",
+          "source_id": "Cover Plate",
+          "artifact_title": "Operation Pied Piper: British schoolchildren carrying gas-mask boxes and suitcases at a London railway station during the September 1939 evacuation.",
+          "date": "September 1939",
+          "creator": "Ministry of Information / Official Press Photographer",
+          "repository": "Imperial War Museums (IWM)",
+          "accession_id": "IWM HU 36219 / Ministry of Information Evacuation Series",
+          "rights_status": "Public Domain / Crown Copyright Expired (Section 163 CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.iwm.org.uk/collections",
+          "asset_path": "/units/ks2_ww2/assets/banner_unit_hero.jpg"
+        },
         {
           "lesson_num": 1,
           "lesson_title": "Enquiry 1: Outbreak 1939 & Home Front Mobilisation",
@@ -5844,8 +5858,22 @@
       "key_stage": "GCSE (Edexcel Paper 1)",
       "unit_title": "Medicine in Britain, c.1250–present & The Western Front",
       "total_lessons": 26,
-      "total_sources": 189,
+      "total_sources": 190,
       "sources": [
+        {
+          "lesson_num": 19,
+          "lesson_title": "KT4.4: Case Study 1: The Antibiotic Revolution — Fleming, Florey & Chain",
+          "source_id": "Era 4 Cover Plate",
+          "artifact_title": "Sir Alexander Fleming working with culture plates in his laboratory at St Mary’s Hospital, Paddington, London.",
+          "date": "c.1943",
+          "creator": "Ministry of Information Official Photographer",
+          "repository": "Imperial War Museums (IWM)",
+          "accession_id": "IWM TR 1468",
+          "rights_status": "Public Domain / Crown Copyright Expired (Section 163 CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.iwm.org.uk/collections/item/object/205188713",
+          "asset_path": "/images/penicillin_mould.jpg"
+        },
         {
           "lesson_num": 1,
           "lesson_title": "KT1.1: Supernatural & Religious Explanations of Disease (c1250–c1500)",
@@ -12010,6 +12038,20 @@
       "total_lessons": 7,
       "sources": [
         {
+          "lesson_num": 0,
+          "lesson_title": "Unit Cover: The Shoah (1933–1948)",
+          "source_id": "Cover Plate",
+          "artifact_title": "Pre-war studio portrait of a multi-generational Jewish family in Eastern Europe prior to the Second World War.",
+          "date": "c.1925–1935",
+          "creator": "Unknown Studio Photographer",
+          "repository": "United States Holocaust Memorial Museum (USHMM) / YIVO Archive",
+          "accession_id": "USHMM Pre-War Jewish Life Photographic Collection",
+          "rights_status": "Public Domain / Educational Fair Dealing (Section 32 CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://collections.ushmm.org/",
+          "asset_path": "/images/shoah_cover.jpg"
+        },
+        {
           "lesson_num": 1,
           "lesson_title": "Who were the Jews of Europe before the Second World War?",
           "source_id": "Cover Plate",
@@ -12685,7 +12727,7 @@
           "asset_path": "/images/holocaust_railway_deportation_europe_map.png"
         }
       ],
-      "total_sources": 48
+      "total_sources": 49
     },
     "cold_war": {
       "unit_id": "cold_war",
@@ -12694,6 +12736,20 @@
       "exam_board": "Edexcel / AQA / OCR",
       "total_lessons": 7,
       "sources": [
+        {
+          "lesson_num": 0,
+          "lesson_title": "Unit Cover: Superpower Relations & The Cold War (1945–1991)",
+          "source_id": "Cover Plate",
+          "artifact_title": "The Berlin Wall at Bethaniendamm (1986), showing West Berlin murals facing the floodlit East German \"death strip\" and border patrol.",
+          "date": "1986",
+          "creator": "Thierry Noir / Wikimedia Commons (Noir / GFDL / CC BY-SA 3.0)",
+          "repository": "Wikimedia Commons Historical Archive",
+          "accession_id": "Commons: Berlinermauer.jpg",
+          "rights_status": "Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Berlinermauer.jpg",
+          "asset_path": "/images/cold_war_cover.jpg"
+        },
         {
           "lesson_num": 1,
           "lesson_title": "Ideological Clash",
@@ -13437,16 +13493,30 @@
           "asset_path": "/images/cold_war/david_low_iron_curtain_1946.jpg"
         }
       ],
-      "total_sources": 53
+      "total_sources": 54
     },
     "great_war": {
       "unit_id": "great_war",
       "key_stage": "Key Stage 3",
       "unit_title": "Causes of the Great War (1871–1914)",
       "total_lessons": 6,
-      "total_sources": 28,
+      "total_sources": 29,
       "exam_board": "Key Stage 3 National Curriculum / Modern World",
       "sources": [
+        {
+          "lesson_num": 0,
+          "lesson_title": "Unit Cover: Causes of the Great War (1871–1914)",
+          "source_id": "Cover Plate",
+          "artifact_title": "American satirical lithograph \"Peace\" by Udo J. Keppler (Puck magazine, 29 March 1905) depicting the European naval and military arms race.",
+          "date": "29 March 1905",
+          "creator": "Udo J. Keppler (1872–1956)",
+          "repository": "Library of Congress Prints and Photographs Division",
+          "accession_id": "LC-DIG-ppmsca-25951",
+          "rights_status": "Public Domain (Published in the United States prior to 1929)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.loc.gov/pictures/item/2011645562/",
+          "asset_path": "/images/great_war_cover.jpg"
+        },
         {
           "lesson_num": 1,
           "lesson_title": "German Unification, Franco-Prussian War & Bismarck (1871–1890)",
@@ -16567,6 +16637,20 @@
       "curriculum_tier": "Key Stage 3 (Year 8)",
       "sources": [
         {
+          "lesson_num": 0,
+          "lesson_title": "Unit Cover: The Second British Empire (1783–1914)",
+          "source_id": "Cover Plate",
+          "artifact_title": "Imperial Federation — Map of the World Showing the Extent of the British Empire in 1886 (Supplement to The Graphic, 24 July 1886).",
+          "date": "24 July 1886",
+          "creator": "Walter Crane (1845–1915) & Captain J. C. R. Colomb",
+          "repository": "British Library / Norman B. Leventhal Map Center",
+          "accession_id": "G3201.F3 1886 .C65",
+          "rights_status": "Public Domain (Creator died > 70 years ago; CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Imperial_Federation,_Map_of_the_World_Showing_the_Extent_of_the_British_Empire_in_1886_(levelled).jpg",
+          "asset_path": "/images/imperial_federation_map.jpg"
+        },
+        {
           "lesson_num": 1,
           "lesson_title": "How was the British Empire built and sustained?",
           "source_id": "Source A",
@@ -16973,7 +17057,7 @@
           "asset_path": "/images/rhodes_colossus.png"
         }
       ],
-      "total_sources": 29
+      "total_sources": 30
     },
     "industrialisation_and_empire": {
       "unit_id": "industrialisation_and_empire",
@@ -17355,8 +17439,22 @@
       "key_stage": "Key Stage 3 (Year 9)",
       "exam_board": "KS3 National Curriculum & British Social History",
       "total_lessons": 5,
-      "total_sources": 25,
+      "total_sources": 26,
       "sources": [
+        {
+          "lesson_num": 0,
+          "lesson_title": "Unit Cover: Rights, Protest & Post-War Britain (1900–Present)",
+          "source_id": "Cover Plate",
+          "artifact_title": "Official Festival of Britain 1951 South Bank Exhibition guide cover featuring the \"Festival Star\" emblem.",
+          "date": "May 1951",
+          "creator": "Abram Games (1914–1996) / His Majesty’s Stationery Office",
+          "repository": "The National Archives, Kew / Victoria and Albert Museum",
+          "accession_id": "HMSO Festival of Britain 1951 Official Guide",
+          "rights_status": "Crown Copyright Expired (Published > 50 years ago under Section 163 CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/Category:Festival_of_Britain",
+          "asset_path": "/images/post_war_britain_cover.jpg"
+        },
         {
           "lesson_num": 1,
           "lesson_title": "Enquiry 1: Votes for Women: Suffragists vs Suffragettes (1897–1918)",
@@ -18215,8 +18313,8 @@
     }
   },
   "total_units": 19,
-  "total_sources": 1230,
+  "total_sources": 1244,
   "total_lessons": 159,
-  "total_registered_sources": 1230,
-  "last_audit": "2026-11-02"
+  "total_registered_sources": 1244,
+  "last_audit": "2026-11-16"
 }

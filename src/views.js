@@ -127,7 +127,6 @@ export function renderDashboard() {
     ks2_ww2: 'World War II & The Home Front (1933–1945)',
     water_and_sanitation: 'Water & Sanitation (1250–Present)',
     medieval_england: 'Medieval England (1066–1485)',
-    early_modern_world: 'Early Modern World (1450–1750)',
     monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
     first_british_empire: 'The First British Empire (1600–1783)',
     industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
@@ -172,7 +171,6 @@ export function renderDashboard() {
       edexcel_medicine: 'center 32%',
       cme_new: 'center 20%',
       great_war_part2: 'center 18%',
-      early_modern_world: 'center 25%',
       australia: 'center 70%',
       weimar_nazi_germany: 'center 20%',
       usa: 'center 25%',
@@ -1081,7 +1079,7 @@ export function renderInteractiveQuiz() {
   );
   const catalogRetrieval = CURRICULAR_PILLARS_CATALOG[unitId]?.retrieval || {};
   const retrievalTitle = isKs2Quiz
-    ? '20-Page Master Textbook, 28-Page Pupil Workbook'
+    ? '16-Page Master Textbook, 28-Page Pupil Workbook'
     : catalogRetrieval.title || `${data.title || 'Curriculum'} Master Knowledge Retrieval Companion`;
   const retrievalPdf = catalogRetrieval.pdfUrl || `/pdfs/${unitId}_quiz_pack.pdf`;
 
@@ -1463,7 +1461,7 @@ export function renderInteractiveQuiz() {
             <strong style="color: #0f172a; font-size: 0.92rem; display: block;">Prefer physical printed booklets or classroom workbooks?</strong>
             <span style="color: #64748b; font-size: 0.82rem;">${
               isKs2Quiz
-                ? 'The 20-page illustrated textbook, 28-page pupil workbook, and printable A4 enquiry worksheets are ready in the Unit Hub.'
+                ? 'The 16-page full-colour textbook, 28-page pupil workbook, and printable A4 enquiry worksheets are ready in the Unit Hub.'
                 : `${retrievalTitle} and complete pupil workbooks with full teacher mark schemes are available in Workbooks &amp; Textbooks.`
             }</span>
           </div>
@@ -2136,6 +2134,14 @@ export async function renderLessonsView() {
     }
   }
 
+  // Ensure Unit Overview always restores sidebar & header if returning from a Full-Width lesson
+  if (typeof document !== 'undefined' && document.body && document.body.classList.contains('lesson-full-width')) {
+    document.body.classList.remove('lesson-full-width');
+    try {
+      sessionStorage.removeItem('hh_lesson_full_width');
+    } catch (e) {}
+  }
+
   // Rendering Unit Overview (not inside a lesson)
   window.currentLessonIndex = null;
   window.currentView = 'lessons';
@@ -2177,7 +2183,6 @@ export async function renderLessonsView() {
       edexcel_medicine: 'center 32%',
       cme_new: 'center 20%',
       great_war_part2: 'center 18%',
-      early_modern_world: 'center 25%',
       australia: 'center 70%',
       weimar_nazi_germany: 'center 20%',
       usa: 'center 25%',
@@ -3556,10 +3561,10 @@ export async function renderReadingView(options = {}) {
               <i class="fa-solid fa-book-open"></i> Key Stage 2 Classroom Reading Anthology
             </div>
             <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; font-weight: 800; color: #fff;">
-              World War II &amp; The Home Front (1933–1945) — 20-Page Master Textbook
+              World War II &amp; The Home Front (1933–1945) — 16-Page Master Textbook
             </h1>
             <p style="margin: 6px 0 0 0; font-size: 0.9rem; color: #cbd5e1;">
-              Read all 11 chronological enquiries, authentic primary visual sources, Chronological Turning Points Spine, 55-question Retrieval Quiz, and 44-word Vocabulary Bank.
+              Read all 11 chronological lessons in a high-legibility single-column layout, Chronological Spine, 55-question Partner Retrieval Quiz, and Essential Vocabulary Bank.
             </p>
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap;">
@@ -3567,7 +3572,7 @@ export async function renderReadingView(options = {}) {
               <i class="fa-solid fa-up-right-from-square"></i> Full-Screen Textbook
             </a>
             <a href="/pdfs/ks2_ww2_textbook.pdf" target="_blank" style="background: #059669; color: #fff; border: 1px solid #10b981; font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px;">
-              <i class="fa-solid fa-file-pdf"></i> Download 20-Page PDF
+              <i class="fa-solid fa-file-pdf"></i> Download 16-Page PDF
             </a>
             <button type="button" onclick="window.switchView && window.switchView('lessons', 'ks2_ww2')" style="background: #2563eb; color: #fff; border: 1px solid #3b82f6; font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
               <i class="fa-solid fa-chalkboard-user"></i> Back to KS2 Unit
@@ -3575,7 +3580,7 @@ export async function renderReadingView(options = {}) {
           </div>
         </div>
         <div style="background: #fff; border: 1.5px solid #cbd5e1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(15,23,42,0.08);">
-          <iframe src="/units/ks2_ww2/textbook.html" title="KS2 WWII 20-Page Master Classroom Textbook" style="width: 100%; height: 78vh; min-height: 640px; border: none; display: block;"></iframe>
+          <iframe src="/units/ks2_ww2/textbook.html" title="KS2 WWII 16-Page Master Classroom Textbook" style="width: 100%; height: 78vh; min-height: 640px; border: none; display: block;"></iframe>
         </div>
       </div>
     `;

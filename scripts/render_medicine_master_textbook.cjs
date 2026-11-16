@@ -272,7 +272,7 @@ function generateEraHtml(eraKey, unitData) {
             block1.title
               ? `
           <div class="block-section">
-            <h3 class="block-header">[${lIdx + 1}.1] ${cleanBlockTitle(block1.title)}</h3>
+            <h3 class="block-header">Stage 1 &mdash; ${cleanBlockTitle(block1.title)}</h3>
             ${q1 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q1}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block1, 1)}
           </div>`
@@ -283,7 +283,7 @@ function generateEraHtml(eraKey, unitData) {
             block2.title
               ? `
           <div class="block-section">
-            <h3 class="block-header">[${lIdx + 1}.2] ${cleanBlockTitle(block2.title)}</h3>
+            <h3 class="block-header">Stage 2 &mdash; ${cleanBlockTitle(block2.title)}</h3>
             ${q2 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q2}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block2, 2)}
           </div>`
@@ -324,7 +324,7 @@ function generateEraHtml(eraKey, unitData) {
             block3.title
               ? `
           <div class="block-section">
-            <h3 class="block-header">[${lIdx + 1}.3] ${cleanBlockTitle(block3.title)}</h3>
+            <h3 class="block-header">Stage 3 &mdash; ${cleanBlockTitle(block3.title)}</h3>
             ${q3 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q3}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block3, 3)}
           </div>`
@@ -335,7 +335,7 @@ function generateEraHtml(eraKey, unitData) {
             block4.title
               ? `
           <div class="block-section">
-            <h3 class="block-header">[${lIdx + 1}.4] ${cleanBlockTitle(block4.title)}</h3>
+            <h3 class="block-header">Stage 4 &mdash; ${cleanBlockTitle(block4.title)}</h3>
             ${q4 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q4}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block4, 4)}
           </div>`
@@ -346,7 +346,7 @@ function generateEraHtml(eraKey, unitData) {
             block5.title
               ? `
           <div class="block-section">
-            <h3 class="block-header">[${lIdx + 1}.5] ${cleanBlockTitle(block5.title)}</h3>
+            <h3 class="block-header">Stage 5 &mdash; ${cleanBlockTitle(block5.title)}</h3>
             ${q5 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q5}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block5, 5)}
           </div>`
@@ -514,7 +514,7 @@ function generateEraHtml(eraKey, unitData) {
         <div class="quiz-card">
           <div class="quiz-card-header">
             <span class="quiz-card-topic">Enquiry 0${lIdx + 1}: ${cleanLessonTitle(lesson.title).split('(')[0].trim()}</span>
-            <span class="quiz-card-loc">pp. ${lIdx * 2 + 3}–${lIdx * 2 + 4} &bull; Ref [${lIdx + 1}.1]–[${lIdx + 1}.5]</span>
+            <span class="quiz-card-loc">pp. ${lIdx * 2 + 3}–${lIdx * 2 + 4} &bull; Stages 1–5</span>
           </div>
           <ul class="quiz-card-list">
             ${questions}
@@ -543,7 +543,7 @@ function generateEraHtml(eraKey, unitData) {
         <div class="quiz-card">
           <div class="quiz-card-header">
             <span class="quiz-card-topic">Enquiry 0${lIdx + 1}: ${cleanLessonTitle(lesson.title).split('(')[0].trim()}</span>
-            <span class="quiz-card-loc">pp. ${lIdx * 2 + 2}–${lIdx * 2 + 3} &bull; Ref [${lIdx + 1}.1]–[${lIdx + 1}.5]</span>
+            <span class="quiz-card-loc">pp. ${lIdx * 2 + 2}–${lIdx * 2 + 3} &bull; Stages 1–5</span>
           </div>
           <ul class="quiz-card-list">
             ${questions}

@@ -1,0 +1,1943 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Protest, Progress &amp; Radicalism (1960–1975) · Classroom Textbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&amp;family=Inter:wght@400;500;600;700;800;900&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4 portrait; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    :root {
+      --acc: #1e3a8a;
+      --acc-dark: #172554;
+      --acc-soft: #dbeafe;
+      --acc-tint: #eff6ff;
+      --sec: #b45309;
+      --navy: #0f172a;
+      --ink: #1e293b;
+    }
+    html, body { background: #cbd5e1; font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: var(--navy); }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      margin: 0 auto 8mm auto;
+      padding: 9.5mm 12.5mm 8.5mm 12.5mm;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .page:last-of-type {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    @media print {
+      html, body { background: #ffffff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+
+    .ftr {
+      height: 19px;
+      flex: 0 0 19px;
+      border-top: 1.5px solid var(--navy);
+      padding-top: 3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      color: #475569;
+      font-weight: 600;
+    }
+    .ftr > span:first-child { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ftr .pg { font-weight: 800; color: var(--navy); white-space: nowrap; flex-shrink: 0; margin-left: 10px; }
+
+    /* ================= PAGE 1: COVER ================= */
+    .cover-body-wrap { min-height: 0; }
+    .cover-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.2pt;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--acc-dark);
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 4px;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+    .cover-hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 11px;
+      height: 92mm;
+      margin-bottom: 11px;
+    }
+    .cover-wide-title {
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 11px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 4px solid var(--acc);
+      margin-bottom: 8px;
+    }
+    .cover-wide-art {
+      background: var(--navy);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1.5px solid var(--navy);
+      margin-bottom: 10px;
+    }
+    .cover-wide-img-wrap {
+      width: 100%;
+      height: 68mm;
+      background: #0b1120;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .cover-wide-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center center;
+      display: block;
+    }
+    .cover-title-card {
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 15px 17px 13px 17px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom: 4px solid var(--acc);
+    }
+    .cover-kicker {
+      font-size: 7.4pt;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      color: #fbbf24;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .cover-h1 {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 22pt;
+      font-weight: 900;
+      line-height: 1.08;
+      color: #ffffff;
+    }
+    .cover-period {
+      font-size: 15pt;
+      font-weight: 900;
+      color: #38bdf8;
+      margin-top: 4px;
+    }
+    .cover-sub {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 9.6pt;
+      line-height: 1.36;
+      color: #e2e8f0;
+      margin-top: 7px;
+    }
+    .cover-meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 8px;
+    }
+    .meta-chip {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: #f8fafc;
+      font-size: 6.9pt;
+      font-weight: 700;
+      padding: 3px 7px;
+      border-radius: 4px;
+    }
+    .cover-art-card {
+      background: var(--navy);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1.5px solid var(--navy);
+    }
+    .cover-art-frame {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .cover-art-frame img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .cover-art-cap {
+      background: var(--navy);
+      color: #e2e8f0;
+      font-size: 6.9pt;
+      line-height: 1.32;
+      padding: 5.5px 9px;
+      border-top: 2px solid var(--acc);
+    }
+
+    .cover-synopsis-card {
+      background: #fdfbf7;
+      border: 1.5px solid #e2d9cc;
+      border-left: 4.5px solid var(--acc);
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+    }
+    .syn-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .syn-kicker {
+      font-size: 7.6pt;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      color: var(--acc-dark);
+      text-transform: uppercase;
+    }
+    .syn-tag { font-size: 7.1pt; font-weight: 700; color: #64748b; }
+    .syn-body {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 10.6pt;
+      line-height: 1.5;
+      color: var(--ink);
+      text-align: justify;
+    }
+
+    .cover-dir-wrap {
+      border: 1.5px solid var(--navy);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .dir-banner {
+      background: var(--navy);
+      color: #ffffff;
+      padding: 6px 11px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.6pt;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+    .dir-sub-note { font-size: 7.0pt; font-weight: 600; letter-spacing: 0; color: #cbd5e1; }
+
+    .dir-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+    .dir-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 7.1pt;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      padding: 5.5px 10px;
+      text-align: left;
+      border-bottom: 1.5px solid #cbd5e1;
+    }
+    .dir-table td {
+      padding: 11px 10px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: middle;
+    }
+    .dir-table.dir-table-dense td { padding: 7px 9px; }
+    .dir-table tr:last-child td { border-bottom: none; }
+    .dir-table tr:nth-child(even) td { background: #f8fafc; }
+    .code-pill {
+      display: inline-block;
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 7.2pt;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      padding: 2.5px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .dir-title {
+      font-size: 9.5pt;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.24;
+    }
+    .dir-table-dense .dir-title { font-size: 8.9pt; }
+    .dir-eq {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 8.5pt;
+      color: #475569;
+      margin-top: 2px;
+      line-height: 1.28;
+    }
+    .dir-table-dense .dir-eq { font-size: 8.0pt; }
+    .dir-date {
+      font-size: 7.8pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      white-space: nowrap;
+    }
+    .dir-pg {
+      font-size: 8.6pt;
+      font-weight: 900;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    /* Compact 2-Column TOC for 11-Lesson KS2 */
+    .dir-compact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #ffffff;
+    }
+    .dir-compact-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 10px;
+      border-bottom: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+    }
+    .dir-compact-item:nth-child(2n) { border-right: none; }
+    .dir-compact-tt {
+      flex: 1;
+      font-size: 8.4pt;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    .dir-compact-pg {
+      font-size: 8.0pt;
+      font-weight: 900;
+      color: var(--acc-dark);
+      white-space: nowrap;
+    }
+
+    /* ================= SUBPAGE HEADERS ================= */
+    .subpage-hdr {
+      display: flex;
+      align-items: stretch;
+      gap: 9px;
+      margin-bottom: 6px;
+    }
+    .subpage-num {
+      width: 60px;
+      background: var(--acc);
+      color: #ffffff;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 2px;
+      flex-shrink: 0;
+    }
+    .subpage-num small { font-size: 6.1pt; font-weight: 800; letter-spacing: 0.08em; opacity: 0.92; }
+    .subpage-num span { font-size: 16.5pt; font-weight: 900; line-height: 1.1; }
+    .subpage-tt {
+      flex: 1;
+      border-bottom: 3px solid var(--acc);
+      padding-bottom: 3px;
+    }
+    .subpage-kicker {
+      font-size: 7.1pt;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--acc-dark);
+      text-transform: uppercase;
+    }
+    .subpage-tt h2 {
+      font-size: 13.8pt;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.18;
+      margin-top: 1px;
+    }
+    .subpage-pill {
+      align-self: center;
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 8.0pt;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* ================= PAGE 2: CHRONOLOGY SPINE ================= */
+    .spine-main, .ref-main, .quiz-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .spine-lead {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 8.9pt;
+      color: #475569;
+      margin-bottom: 7px;
+    }
+    .ms-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      min-height: 0;
+      padding: 2px 0;
+    }
+    .ms-line {
+      position: absolute;
+      left: 108px;
+      top: 12px;
+      bottom: 12px;
+      width: 2.5px;
+      background: var(--acc);
+      z-index: 1;
+    }
+    .ms-row {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .ms-date-col {
+      width: 96px;
+      text-align: right;
+      padding-right: 8px;
+      flex-shrink: 0;
+    }
+    .ms-date-pill {
+      display: inline-block;
+      background: var(--acc-soft);
+      color: var(--acc-dark);
+      font-size: 7.0pt;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--acc);
+    }
+    .ms-dot-col {
+      width: 26px;
+      display: flex;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ms-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 7.0pt;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 0 1.5px var(--acc);
+    }
+    .ms-card {
+      flex: 1;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 6px 10px;
+      margin-left: 6px;
+    }
+    .ms-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+    .ms-title { font-size: 9.3pt; font-weight: 800; color: var(--navy); }
+    .ms-stage-tag {
+      font-size: 6.9pt;
+      font-weight: 800;
+      color: var(--sec);
+      background: #e0f2fe;
+      padding: 1px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .ms-desc {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 9.0pt;
+      line-height: 1.35;
+      color: #334155;
+    }
+
+    /* ================= LESSON PAGES ================= */
+    .lesson-top { flex: 0 0 auto; margin-bottom: 8px; }
+    .hdr { display: flex; align-items: stretch; gap: 9px; }
+    .hdr-num {
+      width: 54px;
+      border-radius: 6px;
+      background: var(--acc);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 0;
+      flex-shrink: 0;
+    }
+    .hdr-num small { font-size: 6.1pt; letter-spacing: 0.1em; font-weight: 800; opacity: 0.92; }
+    .hdr-num span { font-size: 18pt; font-weight: 900; line-height: 1.1; }
+    .hdr-tt {
+      flex: 1;
+      min-width: 0;
+      border-bottom: 3px solid var(--acc);
+      padding-bottom: 3px;
+    }
+    .hdr-kt {
+      font-size: 6.9pt;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--acc-dark);
+    }
+    .hdr-h2 {
+      font-size: 13.8pt;
+      line-height: 1.16;
+      font-weight: 900;
+      color: var(--navy);
+      margin-top: 1px;
+    }
+    .hdr-dt {
+      align-self: center;
+      font-size: 8.0pt;
+      font-weight: 800;
+      background: var(--acc);
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .flow {
+      display: grid;
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .flow-st {
+      background: #f1f5f9;
+      border-top: 2.8px solid var(--acc);
+      border-radius: 3px;
+      padding: 4px 6px 4.5px 6px;
+      min-width: 0;
+    }
+    .flow-st:nth-child(even) { background: #e8eef6; }
+    .flow-kicker {
+      font-size: 6.1pt;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      color: var(--acc-dark);
+      text-transform: uppercase;
+      line-height: 1.18;
+    }
+    .flow-lbl {
+      font-size: 7.0pt;
+      font-weight: 700;
+      line-height: 1.22;
+      color: var(--navy);
+      margin-top: 1.5px;
+    }
+
+    .eq-bar {
+      margin-top: 5px;
+      background: var(--acc-tint);
+      border: 1px solid var(--acc-soft);
+      border-left: 3.5px solid var(--acc);
+      border-radius: 4px;
+      padding: 3.5px 8px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .eq-pill {
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 6.3pt;
+      font-weight: 900;
+      letter-spacing: 0.07em;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .eq-txt {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 9.0pt;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+
+    .prose-wrap {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .prose-columns {
+      column-count: 2;
+      column-gap: 18px;
+      column-rule: 1px solid #e2e8f0;
+      column-fill: balance;
+    }
+    /* KS2 Single Wide-Margin Column Standard */
+    .prose-single-wide {
+      width: 100%;
+      max-width: 164mm;
+      margin: 2px auto 0 auto;
+    }
+    .block-section {
+      break-inside: auto;
+      margin-bottom: 8px;
+    }
+    .block-hdr {
+      break-after: avoid;
+      break-inside: avoid;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1.2px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-bottom: 3.5px;
+    }
+    .stage-pill {
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 6.8pt;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .block-title {
+      font-size: 8.6pt;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.18;
+      flex: 1;
+    }
+    .page-lesson-ks2 .block-title { font-size: 10.0pt; }
+    .block-date {
+      font-size: 6.8pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      background: var(--acc-soft);
+      padding: 1px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .spread-stage-q {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 9.2pt;
+      color: var(--acc-dark);
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+    .block-prose .prose-p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 11.2pt;
+      line-height: 1.52;
+      color: var(--ink);
+      margin-bottom: 5px;
+      text-align: justify;
+      hyphens: auto;
+    }
+    .page-lesson-ks2 .block-prose .prose-p { text-align: left; hyphens: none; }
+    .block-prose .prose-p:last-child { margin-bottom: 0; }
+    .block-prose strong { font-weight: 700; color: #0b1324; }
+
+    /* ================= REFERENCE DOSSIER & VOCAB PAGES ================= */
+    .ref-sec-label {
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 7.4pt;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 7px;
+      margin-top: 4px;
+    }
+    .ref-figs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .ref-fig-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 8px 10px;
+    }
+    .ref-fig-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+    .ref-fig-name { font-size: 9.2pt; font-weight: 800; color: var(--navy); }
+    .ref-fig-role {
+      font-size: 6.9pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      background: var(--acc-soft);
+      padding: 1px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .ref-fig-desc {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8.8pt;
+      line-height: 1.38;
+      color: #334155;
+    }
+    .ref-terms-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      flex: 1;
+      align-content: start;
+    }
+    .ref-term-row {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 2.5px solid var(--sec);
+      border-radius: 4px;
+      padding: 7px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .ref-term-k { font-size: 8.8pt; font-weight: 800; color: var(--navy); }
+    .ref-term-v { font-family: 'Lora', Georgia, serif; font-size: 8.5pt; line-height: 1.35; color: #334155; }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .vocab-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 7.5px 10px;
+    }
+    .vocab-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+    .vocab-word { font-size: 9.6pt; font-weight: 800; color: var(--navy); }
+    .vocab-loc {
+      font-size: 7.0pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      background: var(--acc-soft);
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+    .vocab-def {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 9.0pt;
+      line-height: 1.36;
+      color: var(--ink);
+    }
+
+    /* ================= QUIZ PAGES ================= */
+    .quiz-inst {
+      background: var(--acc-tint);
+      border: 1px solid var(--acc-soft);
+      border-left: 3.5px solid var(--acc);
+      border-radius: 5px;
+      padding: 6px 10px;
+      font-size: 8.0pt;
+      line-height: 1.38;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .quiz-grid {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 9px;
+    }
+    .quiz-grid.quiz-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .quiz-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 4px solid var(--acc);
+      border-radius: 5px;
+      padding: 9px 12px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .quiz-card-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3.5px;
+      margin-bottom: 5px;
+    }
+    .quiz-card-tt {
+      font-size: 9.0pt;
+      font-weight: 800;
+      color: var(--navy);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .quiz-e-pill {
+      background: var(--acc);
+      color: #ffffff;
+      font-size: 7.0pt;
+      font-weight: 900;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .quiz-card-loc {
+      font-size: 7.4pt;
+      font-weight: 800;
+      color: var(--acc-dark);
+      white-space: nowrap;
+    }
+    .quiz-ol {
+      padding-left: 19px;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 10.2pt;
+      line-height: 1.46;
+      color: var(--ink);
+    }
+    .quiz-ol li { margin-bottom: 3px; }
+    .quiz-ol li:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <section class="page textbook-page page-cover" id="page-1" data-page="1">
+    <div class="cover-body-wrap">
+      <div class="cover-top-bar">
+        <span>THE HISTORY REVISION HUB · <span class="school-brand-target" data-department-name="The History Department">The History Department</span></span>
+        <span>PURE NARRATIVE CLASSROOM TEXTBOOK · STAGE 1–5 EDITION</span>
+      </div>
+
+      
+      <div class="cover-hero-grid" style="height: 102mm;">
+        <div class="cover-title-card">
+          <div>
+            <div class="cover-kicker">PEARSON EDEXCEL GCSE (9–1) · PAPER 3 MODERN DEPTH · KEY TOPIC 2</div>
+            <h1 class="cover-h1">Protest, Progress &amp; Radicalism</h1>
+            <div class="cover-period">1960–1975</div>
+            <p class="cover-sub">Greensboro Sit-Ins, Freedom Rides, Birmingham, Selma, Civil &amp; Voting Rights Acts, Black Power &amp; Urban Riots</p>
+          </div>
+          <div class="cover-meta-pills">
+            <span class="meta-chip">4 Canonical Enquiries</span>
+            <span class="meta-chip">Stage 1–5 Aligned</span>
+            <span class="meta-chip">20 Recall Qs</span>
+          </div>
+        </div>
+
+        <div class="cover-art-card">
+          <div class="cover-art-frame" style="background:#1c1917;">
+            <img src="data:image/jpeg;base64,/9j/2wBDAAUEBAQEAwUEBAQGBQUGCA0ICAcHCBALDAkNExAUExIQEhIUFx0ZFBYcFhISGiMaHB4fISEhFBkkJyQgJh0gISD/2wBDAQUGBggHCA8ICA8gFRIVICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICD/wAARCAHcAfQDASIAAhEBAxEB/8QAHQAAAQQDAQEAAAAAAAAAAAAABAIDBQYAAQcICf/EAFEQAAIBAwIDBQUFBQYDBQQKAwECEQADBBIhBTFBBhMiUWEHcYGRoRQyscHRFSNCUvAkM2JyguEIkvEWQ6KywhclY2QmJzQ1U3N0g5Oj0rPD/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALt7NbYt+2DiwPiKZXEBP+qxVqxML7L2O4kJlVws1p9Cl0/nVf7AIp9s3HyilV+3Z6qPLxWKuJYXewuSwWGbh2XPv0XRP0oPDl2/atDCtXLotO+OpDaoEbDeik+1DxDTeXmWUc6l+GcGwuJ8Kt3Mzh6ZXdqiKSDKgqCQCOXOlN2O4Vbg465WIRyNq8wA+BoIYXLf/eKyNziKVCspNvS2+2kzUt/2cyVtnuuKXLigQFv21b6iDUZkcE4pZLFUsXCBOpSyGKAS7ZkHbSecmiuHcT4jj4r8GXKK8Pyrtu5csQCpZWBVgeYO3Shls8T70WjYJLEKobxTJjmPfVk4n2E7Q9nxbzuI2LH2e3eS3ce1d1aWZtKgiPOg2yW2dtM85UsY232plVkEchMmR0pxnYuy6NQUaSenpvTBLExJ8jPUA7UG1YLcaTyGwPI+tIJDNBaSoEHzrYE3NxJPKOvpSVJ3YLuPlHWgdUTA5nkDROKCrXFUszBRA3O//Sg1ueIyRMkzReMzKHiTJBJHP50BI1Kp0klRtz5jmK2qjUqwGAgGmS7MxImJAnoKcW3ccnmNyQDPOgdQEMx5dQTyHvrYUEFiCCpEg/lSzj3iJhiWkmAfOtjEy21Tj3GGxjQTPkKDUAKRuGMRp5A06EQwrA6Qdt9xz/OsXA4iwLDCvmD/ACEUvIx8nEs9/lY72ULBAzggFoOx+AmKDQPiYFC0COUT5VoslqUe4iMu5UtB2O9R+VxK7ayO7x8cZB0K7vrAKMTyC9dhPTmKExbtu/kXS5ZmZW1d4PFqI6ignQskqZLNsY25nY+VE+FiLZX7zQTyA84qBXvsUa0uMUUSrLvBjkR5VKYmT9pTUbTd4oBZV8zO/uO1A/ckIdQ1eGVgbsN/rtS+JaEzLIBU6bVrVHNYUfSmGW49htCkNoIGoxvyorNx8q7dAKrtatqzyBrYKJg+VBV9ROp951E7++kkgtvIBPQUSLBDNbZgGWZMysjnuKDkhTt16/SKDRnWDvy686bYArI25UokTBPnMU2TMQZHL/egRdGlHDDYDcip7t9Yt4/ZzhFkKFb7OGaPUVAsoKmeRWozifGe0HGrFu3xDIxLwxkW2VtrpIXkD6+vvoLfw6+b/DMS8ratVpZPrEH61UM6w1/jmb+9VdV9goYnzj8akuzGQRZvcOf71o94n+UmGHwO/wAaj824bfaO8QZYXWj/AJvKgTb4cpuaGyEDCdlUyADQ9u79ntrdtE3EvodJgKVIMR7qOsl7nELh19wLgi2x8Ss/8S/EAVD3f3ODbW54WVrqeLaPEKCc7M4lzi/FcPDutNm1qgDkBJYmnMVkt8T4hZLoFVtQLmBsSKsfsxxbevinEHiMfEfSZnciKot1sfI4jk/a1ZlYNpjlqnr8KCxHNw7fiuZNhR18U09j5WPm27gxctLgtFS8CCAZj8Kh0xuC94tkh1BdgCwEHYR+FL7P+LL4mjyCVUmBz8Rigs2DqXHYOQ0GZnnTOXm3bGSqWdJ0LqYMJDE9PTlRGKy27BZxpVRrJ+f6VV8zLzBmXLyQbat+8Vlnn+kgUE3wlTl9o+zVxrYVr3E7bnbzuDaje2DN+1eJyN/2xd0n0BamuzKLc492RgRr4laIA6eKaf7XMGzL7KR4+J3v/M9BAk7mCPOYoQiQ0dW3jpRB3DM2889opkEANqmAT7iZ50GNtBPQTuesmhL7TIBgztRl2SFJPJATHvNA3DufU7elBhKxH+E0BliUQf4jv60cY8W/uoDMJItgErMiJ50AYWA0wTGwnnSjsxA3BE0iSYk0styWZ3/Og2DKldjHKOfvrRMncEMenrWD3bfjWwoM7bRuTQJkEmSBB5cjWxuSCD/vWaQAJaaxdWkzCjluDQLCwTMgREetZMcyCOu/5VgJgEbEef61omNJ5xQJmTud/dzpHOSOQG+9K3CmW2mRSB8J8hQaaJPn1pskknluIilsxiNRAA2poglhtsBzI9aBO/8ADMe//asrCFnkflWUHtnsAJ9r3aBtz/7yzo9AVsmrSCT2SyBG37PyVYD/AC3KrPYIFfa52itTJ/aeb0iPDY/WrZpCdk8g81PD8iI2/huUHmTsivCLHCGt8RtiWKMtwoxCjQJGpeXuqyLw/srmH9zxQWmHIJlx9HFVTs3edOFFUt2bywhm7Ph8I2EUffQ5ClWxcZZHMBj+NBO3ey628d7+JxUXEQair2lfr5qaAyeF31xdZtY11SYGhmQ9fMGoU8JV7mxS3rMN3YI6e+pNOCLb422GudmdyuA18J3zQrgqJ+poIvheDdvdocW5j4TXBbuq5QMpOkMCT9K6H7SVC+yriT2llmzsQhyP/jTNVTEwLOH9lysLPum/Yv47Xi/jF5LjKrL6aSy7j1q0+0C63/syzrDHVqyMRh6AXhQcYazk92xOUBtHhtiSN/Wuj4HZbGzuG4OR3djSMCzfu3rgLFmbYwBy6Vz5tg5iQNQ93Pl513HsI1k8OwQ9sN3nDsdCpEg79RQVf/sjgAtpOMYE/wBwwn61lrsohUkdyAQd1sGPqaE4Z9gyuH2ftPE8trviDf2l13DMAImOQqxZvDeGWcJ1xeI4aXLlqz3b5OZJUz4iQW5UEUnZEqQTctIvmMdf1pzH4FYxUuzmKdwYFpB09aj+EYvD04vfyuNcc4JkYbo2ixbyWYqxIIMTyAmrUP8A2fi34Rw1t99Ks3Imgr74mOjR9sIjyFsb1qcFCD+0GnVz7xBHrVxsHsVatKo4fjELAJ+yM3n/AIaQ2b2UVg1jhAYHkV4ftG++4oKguRwtSNeeZnf+0KKOt5PA9ILcTmOf9rEH5VMXeI8ECto4QwEwP7HbWN/WmxxbhSlWOGtqIG62l86BjCThHEeIphYuWLuQ4LBFyWJCjctA6AVC+0TKweD9lcfBxQWReKsVZ2LFm7gGZPq2womz2gwcjtbZXFtKjWcfIcuCu40gdOm9UH2kcQ784SatNm1xK5dbUfvabC7fMgUEQbqhC99gLl5tbmZ3J5R1iPpTlvHuXryq1vuEdYVn3efNQOXxNDcPv4hdbhurcvHZnIOw8l8h+NTfg1LDKdO4HXnQNYnDhkZFrh+u9evXPBbFxyA7dAAo5k7cudR+Ri2hZDJb0OoiUchl57TOxqdtXbVjMs5LNIx7i3QVIJBUyI35yKisw2HyHu46vpdtRUjkx3MekmglcW533D7Fy5Da7ChnI5sBB+MijeIKDksvIdzZHP8AwL+tRXCGH7Ku2wTqt3WUb8ttX5kVL56qcm4V1L+7tQeYHgX86CsGQWXVOljBBjcbTSQ1z+FvgRP0pamGZAIg8ifrSCw1SehnrQIYMSCVTylRFDuEAJGvY8x+lEN6AU224AiB0gUDK7sF1KAVgkjlUbYx0W45e9btqGayy6dzI5Ee40c4YKVXc7AD15VvI+z4164990LMd1G7eh9KCMxGuYWcmU6kLYud3daYkcmj8af4m32ftDlXLN5LbWrrffXUCDBBFZb4XncZuNctobWOTPeXNlBgCR58hU5f4bwPBxLT8SIa4CFa8xM3CBHL4UFcyci1k3MdjkgmwNTME0nURG3Sgmv27Q0NpymhmLOJhmI6fCrtgYfAspDexMbHvW9wSRqg+o6UWLGNanRi2FAHS2NqCC7O4ePd4K1xe9svduOlw2rjJqWZggcxQXEeFW7RVsFLsm8yMCxYxAj86tg0934QF3+6BHv2oY43f3TcN3SIAIAoKta4be1h7mMzRGnU0b+/5VM8MxWsNlsRbNxkAHiHiIJO4HIVKnh+MygXdTiRz2py3iYtkE2rQUtsY5xQRty9ct8PRctFtNcJe4F5BVM/Xao85C3cxcUabgvg3Aw6rvt75FTGZg3ruR31l0YhdGhunuNRL27eFfa9dxmtuQVLAQBI3I6UFj7KWtXazsYoAUNnJAjyJNM9qAdaE834hkHfr4m3+tSfYvHL9r+wQDFtWWG3HkpP5UF2rRe8xFiNeXkNJMiN6CtPCq0r0odQdBneZI26Typ9iNPQ77jzFDRtA8SgGI99Aq4SAvUhViOpk0G/Mg7mTNF3N9iZOlR/vQZIJO4HODQbYwBMGB1HrQGZMpJ2AP4ijS0KdgCBzj1pk/eIYBjHXf12oIwwT03O9KiJgRJo5VAI8A8yRFbYAmG6eQHrQAgzyBmdjSlMgSGIjp50WANpCkdNqWIB3HLnNAFuSIBmZIA3rcEBiQwjlINGrqII35bmKVDbbjcxy6e6gjxzAALUrum0kEifIb1IhQGaBt/XShrgGtokbwJFAEysDupA6eVNnkYjyHpT14qFaD1pjczv76BLAlST5/OmxJY7ELPQUpjz2G1IU+KQYkyB6f0aBxA2nmeflWVhif8AasoPbHs/Pee17tExO54pmgdB92xzq1WWa72JvOwg/s/KJ38luD8qrPYO33ftd7RL5cTzZEf4Mc1bbdtU7J5CdBw/J2/0OaDxtwniWNi2MfHvXGtNetoUY/dnSBBPQmpwuw+8zQJESap9y7ZTh+KmRaS5i3LCi4NRGknSAfdy36c6sHBrzXMW9i3iWvYhCa3+86ESjH1jb4UErjvOVaEt94A+I1byhHappEg8JIAH+ZZFVDGsu+dZVSSxYAKBTvaT2idnez/ad+6Z+LZFrB+ysmMQEt3ZUkFzsYA30z5UE+WdThcN+zo125l2bS5CSCVRrbLqXlqOwJ9Kl+3jBuwuUbjKunIx5lwDAu84+Xzrz7xztl2m7U3/AOzIeHYyNrSxjvpIJABZrhgkkKOUAVA2+EcXaWNi7eYDcd+HPOTtNB0fvbeUrXMa9buBSVIRgY+Vdo7EsRw/h5LFdOHjiB03ryYMPLsXHt3Ma9Y1DUPCV/D3VfOxPtU452ZvWMXIUcY4UGUGzcYLctqDzR/SPunb3UF+4faBx7TMfDLHn5sxmfjSlx1t5/D7qY9ohVu27pa0rElmVlO4/wALD4+tI4HlY2bwLEzMR9Vi5qjUIKmWlWHmNpqTNhWUpcUFS3L86A8Wr9tlAtlWYCCqovPUpOw6MFHxFL+1/uAddzSw2/fwd1DAbdSVce8Go44dm6dLKzTtu3KTJ/AUWmPYQHTbQSZkKP5ifx3oCjxe0mSqsyMmqC7XiRp5g8/5WDfPypC5uGFVDZxWcQI1lt91+QYAe4zSAqqT4V2O2w5f1+NYtqyzkm2pYQQQKDd3iVhQ6rh48adS/uySdpjlz+8D6haDzONG0inHsWmjUpKWuW2x5ciN/eDUtatY7Bg1qRq6k0Jxezj28VgllUDTvv5UFT4LxDJz+2xtXECqcK+WhQvilf1+VVr2ikdxiMSIXiV4GeQ/dJVl7KWlvdvHFscsS7vP+Wq57QeGXl+05y5DOuFlOr4wQMpRiodzO8gaBPSaCrcJz+GpfH2rJKrJkIsiN+tdn4LhcB4hwY5tniFk2bVrvLj3AZVZg7VTOyNjI4Xx6zn2kazexcxMm0Sq/u9LSVKlSDJg78iBUVk4S8T4F2m7VYl3ItW7vEW7rHS6dLYguy66RzBlmn0oJXjuT2ebISzwjjCZRYFgtq2TJnltvPXaqk2QbhvrbvHvLRbVoJBVt+Y866rwvhy8ItLxns1YHC8pMa9YIRlZ2F1GCsCV2WGgFTJAG4M1zfjHFOMcY7PY3CuJ8U73F4XkX7WIyWlW6wZpbVdA1OoYvAMxJ3oJvsyb/wCwsg3mZme6x1EgfdVQPqT/AEKsfEABktqkhbaGZ5nQsg/11qH4dgnhHD7eFZZxi2LbaTdH717jAOzHyB1dfKpnihJ4jetrMArpjkRpXeKCqIYAYgECDufWksoABDAHyilAgLqO+/I+daY/wiBOwgcooGjIYAwYpJG+8+cDalkxJmVNI3GqeooB7olDuAXEDrHv+dENw7C4Zdxnybb52VfvLYQMYQMQSCZ6bdaGuc1G58Sxt60dxkluJcFTaTnAn1hWoCjxDiBlBwW/C7CXULHpULn4HFOK8XXKvcNKWbVrRaRroOlpksffU3m51vCwmybis6IwELsdzUSe1eNsBh3m+I50C+G2OIcMN5bfCLem8wb++AiBEGn71zj2RaNuzh2bDMdn74GB7qAftXYnbh933FgJpH/a5QIXh7+7WKA8J2oayyH7EpIAV1cyD5+uw+tNC72gs8Sw8O9dxma+rEMgJ2XSTPwp7g/Gxxa/fQY5s90qtJYNqkxHpWZ4uXe0PDls3O7ufZsgqw3g+ECgeFvi698gvWtGpjaPXdpE/Wl27XELnFGvXboSzbcoEG2pZoS1j5t3IvAcXW49nShCruh5j8aftYXFLtpC3EDZcJpKhQd5O/yIoJcc2B58/hW10sNDBWVgSVO8j3VHDh2e15rq8RdFEICwBlR/uTTZ4ZmLhrbTPZL1lHQMJ8SzKj3bTQW7sKgbtr7P18IAvO8egRjUP2rJL8MB/iu5DbVO9gwx7b9hVJMpbuuesRaNV/tUR9p4Sqk7rfYyJ3lf1oKu0EElo6+VMLsAwEAAmaeYkBiF1ehptTCEMAPMEc6DVxYZdv4Vn1250Ed2YatyTBo+4CTsCQQsNHSKj2A1PyEkwBQaJBBkajA61oAmF5BN+XU+dbbrO2w9aUmpiSTJmDQKSyIaAOUe+mzaIkjoedEKSJjcgRJ86bbckRPXyoBtJEGNXXekgAlpI2M/0KW2qDBiaZBhtxPrFA8CBICzuJk0tSdcdY50yDC7dPrTlvcmCBM86B4AErp3kjb0oS7Et90gmi0MkHYb7yKEugyCR5jfqZoBLphDtBkA+6mCRJ258qKurqnc8wDvy9KGNpo3H+1AhlBjznzpuSpYCfeBUhg8IzeI3bCWQjC+zoCx28K62n0ihsiw2Pk3sa5Gqy5QldxI8qAUvvzFZTvcoTLATWUHubsKpPtb7RMxkjieYNx/8PGq1W0P/Zi+W5jAylnzGh6rfYY//Wz2kEb/ALVyh/8A04/6VaUDDsnkdQcLJ+HguD8qDwbnFTh4KORpfGKkeYhaluzOcmRm4id4DefDa1eWI8SMCjesiaic1UfA4f3gAXut2PMeFdhUdw3LOFxW1cW4YRXQsBz2I+s0Ft7a52ThdnVTh942r+TkLYZ1PiVCrEx5Tpj3T51z3Cx1Z9KHSqKWZ2EQBuf+g86ncvIv8av28BTFy5cXQzHbUJj9PjVfCX7eWcHIsvj5SXlS5ZuDSVM8iT060Fy4FwDh/EnAyWYhukwRVj4n7Ouz7Yy2/wBsJi5QXUBcGsT5AiDFC9nMvh/C8exdzuGase62hMm3cLIWH8MxznpVq41xzG4RkX8YcLwmskTcv5Ktda2NIYwE8l3O9BxvOwuK8Au3bd7WLRELcQl7Vwb9TuJFRTXUY67ad0wIJUGQT5g+VdZ7QYysXOFlJeUW1vGybDWtSsJDKDMqelcy4jj2cXNYImg231FACdQI+6BQdA9mPEDlWOLcPZgNAtZaodoYsUYj0ICmukq2oIxkgnmPSuV+y3Av/tPi3FntNj2beOuMqMpXU7sHPvhVH/MK6hZhrGkkSp0jbnQF2jOqSQCOlOKIAYgQdpiKbtPKO0Ejpt8aUZBA58usTQYDJgtInpWJpVd5HXbpSSPDtv76xQsANyjn5GgkMd5RpIAJkfKovjuQtu0LQIad5HmaOx47rcTJ33qB4/bdbTMu+24FAF2AbvO3uRsfDgXiDy/iWq57Sb/dcSVS5RL2Vl22ImGGm2QD6Soqw+zJZ7dZW0/+7ru0/wCNKq/tUGrKxiTJ/aGZ/wCVKArstY7ONYuZHGLTNFp/B3rlbjlTplQdxqIkcjvUhwrK4RZ7HLhLhlXsMysRcXTc2A06fXVP0qicHyEu2whYiVKxO0x+tW7Fa0nBmsDMtoHOk45x9RIB23+vOgttzh3BrvYDCyVzco5WOqYr2UzGRQFUDTpHIDzETXMb2jM49g8Nsd3ZsoZVVGwCgsBHrED1NSnEMw4mPbt98rsBDFBA9AfdVf4ZlHH44vEmsXL1vHUs4QSVX7pY+gLKPiKC/wCvJycM38sa77IFZWgQAIUR/lAovicjiWWukjxbDnyUUCt6xlYoyse8tyy4lDO5I20nyI9aL4rI4jnMGCxccMAffy+FBVQRpPMnnWn5xJgGtKQbW++2wmIrTcidveaBDM2knz8hHnSATP8Av8KXyJiJ8xTfKQDsdvfQNs0aC33QwJA8p/2pzLzEzeOcGVUZdORccq3+Q9f650gBSVXbSWUGeoncU9l49m12l4MmPbCg9+0DfkoANBvjoL8G0jf98p/H6VWhYiABvVp4yhODaUCT3oOx6aTUG+izftJcEI4aX6DSNX4TQA91DEFTzk+lIa1ttuIiaJbJtEY3dtqF9oBG+lRzJBpK5eJcy3sW3BUcnbkxmIFBJdlbOjKzdxPdLHSPEaL4rcuWuO4ndAi42JfVT/KxZY5U7wC0y5GZqAUlFHL1NOZF0J224XaaGW/jXbY9DMg/NaCO4Wl2zmWLq2bi2mJW7dkeJYncdd/jU19rwsXvs3KyLiqzDu7RboqxsvrvQuc93CzMXAUhrt8G49yIFsHaFHrE71GixbthUu2bmZmsoIAkgyTJP0oJvH41evcWTFfF7rHuEojzvq06vwqK41m5eNxHPt2rz7rAAJ8IZRy+dG4+HkWMi3xDit1LRtk93YHQkRJ9Yoy9l45xGulQC9pmAZfEIBAn6UFv7FL3fbnsYoEBcHIffpFk71XO0x/tfCEWGJx7jc45sv6VZexqE9vOyykRo4RkOf8A+E1Vu00jiHClEADBZh8WH6UFbaRqIIkbfWkKrG3PI7nnW3MAkLM7zSQYtwxEjpz9KBTvdlrStGmAFHUETUWxLFm2md5FSd/a+VIEkAlp6Ry9KjSoCsB4oO8j8aBQASGbY7SRvtNaW4AI1SI5HatXBIIHkByoZ2hoB2gdOXnQHK4IjYkiYn303ceJPTqaENwhTB2jz+taF3SZYT6RQOE6ZDNHKQKQSpHiJYztFNPdCyRBJjnvvSNbuhBfcSNKj+vSgKGw3ADc4mnbe2xIMD3dabGEyk61ZV2gwQTzJ/GkaHUyrnmB96JoDkI1Dw7AcyaDcbDlMbyaet3S1td1JA309edDXAQwKwRAgc9vfyoGwWgjy3ptiBuNzSpJ1bzPQCP9qQw56p2+NBauyqaruCSdAf7ZHWD3QH51WeIknjGdqP8A37gHzOqKtPZNWa9ibCUsZjSP9K/nVUzyTxHJYCNd64YJ/wARoA5Xqd6yljlsNvdWUHuzsguj2xdpEHL9rZH/APosGrZpU9jLzA7NhZJHxS5VY7Ipo9s/aZfLi2Qd/XGxzVqNo2uwdyBt9iySPilw/nQeDnNu3wjHe4wZzaRUSPvGBMfKq0y6bzvqBH3QQNiZkkVZVxMjOXh1jFADGwCXjdFgbzTXFOCPi6SolFEA9DQRnCwTx7BAEFryx9a6J7WeF4l7jfCb122EvtZQG6Ni4CqAGjnEn13qg8Itj/tJw0EEk315+411D2zo9u9gFRGjCZ4iPEEU/lQV+1a4hm/sbsraYtivnHLKSFQORBYDlLaQPhVjweH2MzjuXg5TAamZne3cVlLRBBg7eE8uoNc94dfzOM5eOO/azYCrpVFJNzSevkAevOrA44pwq/ZOJcybrmCEuWgpXqfu8gYHOgvfaXF4cbX283w+V3S2iHaSttQQAPJYGwG1c/7FY+Pf7SZ3GGycbFWyq2VuZC6gqkM7Mo84QCfJj50/xTiWTn3b73CyKFCsD0kSRQfYVWu8UzrGo/ZHtqLqDlcBuKoU+n3vfQXbCZrjZmULfcpk5D3LdsDZFk6QPQDYegFSNoFQRESs0Mgi3aVAIhgIHIAmBRaNFlWI8XMCIoHrRi2ZneZ91KJ3DqNuv6UlAWRgBzO/xpQIGqDvO3rQaJgAKI6D/ekAkEkkNyMVssykkaRyiRWtbMAW0z6CgMtH92ZB3J3FC8Ttd7ituORoizIskiBv5UxxXOxOH8NOTxTLsYlljs90xqP+Ecz7hPOgiPZtYa12+zlj7vDrnXp3iVTfagNebi2kALftDNneSJKRPlSbXtNt8E4/m5vAMMZWTdxGxrV2+ulLZZlbVp5tGnYGJJE1T+8y8vKuXs/Ia/lXSXuXWO7O0kn50ErY4G+P2RxO0mLqu27ufdw8q1OyAIj2mHkW/efIVaOG9qRj4DY9vg6X1ZSNT2SWViIkMDVq9l+VwPH7M8bwu1Fuzc4DkWO/uPdkC33arq3G4aCCsbyABVf7O8M7N8f7dYvZ/g/G87Fw8++Ux3ycfRcmCQp306iBAJ5kjaaCGscCzuK5Vu0tu4zXmlLCAtdusfJRuBV/4p2Px/Zz7IO0HEOMd3c7QdobScJsY6EMuOrOGZQerBVLMRsNKgevcuz/AGc4H2UxmxeE4SpkMhN3JvENdIHMtcPIQJgQBFeYvab20Xtr22NzAvG9wXhmrHwWH3bxJ/eXv9RAC/4VHnQU3Bzcnh2Q9/EjU5IuI58FwDz9fWr2eK4vGhkcQxwyhiWe2whkY9D+vKueudV0gEKu878q2ly7jxfs5DY76dOsHmJPhI5GaCwAwoJg7czWEBiP5QeVQmPxq7bCjOxtSgx3tv8ANalbGRYyE1415bgjfz+I6UCmJ6n3/CkSIMGNxypTGAYJiYpBMT03iSaDSkd/a1RHeL/5qIvX7V3ttw+yjhms4+QXXyJgChf3gKtaUPc1DShMamnYfGt4hv3u2du5lYQxLi4dxmA31ywE/jQTGfa7y3YQD+It7oG9VLi+bZuYiY4sFmvMChMhiJ5qB5gn4Gp3tH9pGHjnGyDZYMwJ/mXT92qxYvXbWYjkabunSrEAysERPQwB86Ae1e4jas3bZsXWW/aKKr2phREFTEgx1qX7N4a3eHZV1rMjvggLruIX6GTQ1/jPHLWSLuNkKyhQoZralrax92fStYvE8rHw2vrxI2sm+zPdtm2HUspAk+UiKC38LtCzdyDJllXn72qB7UZF7F49g5Vhwl23Z1I0bhtR3qS7O8Qu8TsX7t06rqFUMDSJ3O3pVW41lHO45k3VabaN3Nv/ACrtPxMn40Aq3L1241y9ee5cPN3Ykmjbd+8hW5avXF8MSHIMdKDtrz3gCDvTisCSIMjlFBMYnELrMpuO1zTMFiSR5kVNtfnGyLox9Km0y65mAFO09d4qs4iL3skkKKlbl3iC4F+zi29VkKz3ARuoiCflQdR7Hbdv+CTsLPAMt/8A+o1UO0zn9s4G0Rw4GYjctV37NWms9vbQf/u+zOQyxsIKGqP2uVrXaHFV41Lw62YHSWMD6UFcYyrA9AK0JNswSQBHLrWjIkmBsZ99aBDCF+6fxig3lHTkOsAwQQT7qiy0LAkiOtSWWf3tzVGofpUaNkIBiRMRQauk7iZ6fSpXhOLj3OHm5cxL1462AZbRYfMeXlUVckKZ/mia7V7MvahxTsv2AxOCWOFcPyrVm9fZbl6Q7anLbxz3mKDnAwsTxE8Pvkb79yf0pQxsIbnh94AiP7kyPKu9r7buKnc9nuFHfcSR+VZZ9uGd3qM3ZfhTBSCSpPQ+6g8zXsJcztDexrFtkRGVSp2PLcHyroHCuyeGttVZEZiI+lVrh/7Rze0HGeI4nDlc3s/IusTdCpbLXGYqpO5jVFXrgmXl38n9n5OI+PlSqC3uSZMcuZoNt2ZldZVDbQEbEbR0iqpxfglm3rU2oUnb0+NXbiTueI3OH8PzMdSHCNfvylu3JgzvJIioLj/DuLcNy72PcysLiVmzcAZ8QkH12PMUHMsicfJa2AIVuREyPM0OzlgGKaQQDtUlxi0BlC4hADAcunmPrUWSpIIMiNietAgjmAOe56VptljqOdLUTJAPKCKQ2xPJh+NBcex6w9gnpg5DD43UXaqZkb5N1juS7Gf9Rq9dkLTMlu4CxVeFsRykE5Cj8qoLsSWJ3Mn/AMxoEECfE0HyisrcDyHyrKD3n2Tke2jtNqB24te3jp9mx6thFwezq9rEFcDJ9/3bkfSq12WQD2y9qWMT+07uw/8A0mL+VWzIDH2e5WqJHD8jb/S8UHiHsyxbhYkQQluNv8NHcUtkcPcm3KgeXT0qJ7NZOPbx7eIzxeu20e2v8wVRPxE1aGFnJw7tu5GyyD8qDnfBobtrw22FZT9oWAfca6h7dl7vIwNo1YNwFSP8K/SqfwrhNtfaDwe8WO+SuxHoYront04dlcR45wPhfD7Bv5mTjXLdpF5sxVQJ8htJNBw7s5lm2io0lVfQNLaSoJma6TYvWjZe5b0EFYZ3ctG/Ik+gqj8U4BZ4B2lfgmJmi9lYllUyL67i5kQC408tKkhV67E9ak+B4Jy8dvtbXrjuQAoOlCI57dZoGcq7ezbt7HxS2hmJu3gu0eX0+FTHZBcaxm8SsK6LeY4otoW8TKrsWIHvIqS/YycP4W9++6W7UeK45gKCdgP091R/Y/hN7intY4YMJlZMU97kalkCyJDhvLVqVQOcx5UFxYgs07aVbntzY/pT4Ym0q7z4fjtUxn9mcvE1XiHuWXXd0WSsTM/PnQJw7aWFHeMZIVYjpQNWnItE9WM8q0Lg36cvWnFxItEg3dI5+EeZjanP2cAxVr90Selv0oBbhOgkcxzjat2+8u3kS1qa47BVVRvPuo4cN7y2wW+yhRpLNbjpvUNd4li8I47grcum8pLl9MKVAVt5+NBrtJx+52N4apzMBnzMkMuJYYR3jLsWbyVSRJ+AriWW/EuM8UbP45l3Mm8wInVITzCjko9AKl+0XF8jtDx/I4nfZyp/d2Fdie7tLuqiffJjmTUcAe5LL/CY+fU0CLeNbxkZQAdBkkiSzeX4fOnLdhbN2wJ1O7Fmj+FQCfqTTF3Xdtxbcqrk6Xncb7H5z86ecsLdlVEXbjAEdUUDcfIb+80HWPZ8vDLvsx7c3eLFXtcOwL4NsrJPeJCt79aoB6moz2PcL4Hxnt59m48j3r+Pi/a8C2jlVe/bdSzMRudKywHKR6VV8Tjd7h3ZztFwa3blOONhW3aYCLbvG423qVVfjS+zHaPI7J9qLXHsG0l7Nx8bItWA4lFe5bZFZh1Ck6o6wBQdi9tntHezYudheC5AOdkqV4zkof7pGH9whH8Tgy38o8PU1wc2hbtG3bBhfDsOUGm7Ru/aLl69ea/fdjcuXLh1NcdjLMx6kkkmn3Fu2SbV3Uph/Vecg/GgHBI1soAnqYmirBt27ZuXyAg6HcT+u9bZLdwXG6gqAVHPbyrdu1pZS27KPeF9R60GFPtCnWvcqSCo/jj8poS7w9ldbuOzB5gMjQw99HCdJnYKwAEehNbGlrpEkCPEJ60DePm3l7uxmwzNIDoIn3ijWAgb6hI5VG5DAXpVRpSJAHLzoy202FYeLnv5b8hQE2D/AG2wYj94ux2jxUXbIu9sWuKQVTh+kkHkTdP6VGFlUqWYsgYBo58+lOYWdhWOPZF7XosvipbBYmdYYkiKCb4hgYPEEs2s3VpViyaW0mYgyaH/AOzvBCQFVySel08xTh41wsqpOQrKTAJUkT74rbcY4YEJt3VZgCwVFJb1oBLnBOA2l8Qbxb7XCSaCvcM7Po83bbbmBNw0/f4/inUEuBd53TcVXsziOTcyBkW2146sYBEEfnQT+Jk8O4XjXl4cO7DnXzLeKIBjn61GY+Bwe3j/ALzQ90qIN+8d2LLuwTkNOueu6+tIt5Vm5YdzcYr3bwsbq2k6ZH+aKl+B4lxmvX7HBLuXj2I1XE0xHXY7tQbFrso10+GzbtTf27whtMfuASTEzOrpHLet/sbgt62oxrttruiwCEyBpa4xi7E/wqIIJ3PKK6/2YscF4ph2Ly42EoUspS9jqSsbb7b9KrnHrHZ/ifEL2Bwjs6nE71nxXb+NZFpVM7gEx5UHObnBRj3CtrKJl2Ci8mnWq3BbDBhtDFlKzEg+lNX7rY9hmuKV1BQCADr8Sgx8CafyuGSLz4j38FrLiLTuWAIOxHl76rbHMXVaWWVDGwkAxO3w/Cg792fsjG7a5VtVdVsdk8jSr3CxVZOkFjuedUTtwxHbBluAqVwLSgf6mihuw3bTjN3tutjPxn4re4hw+7wpmRAr2bTDV3hAEELEsT0neivaCpt+0DMssxLLiWASB/m2oKq+ptjux2FZpJUzyBg9eW1Y33Z57bidhWre7Abbkbx60C81R310qNW+5jmajZlT7ttuVH5P37222o89upqODGBPJTQJusde0yDEA9f6/CrDwa53fBLIOlRLMZMbajVfLST0G5Mf16Ui7xK9Z4cmFYDWnXVqcwdiSYHnsaCU4nx+8tvuMdmt3SratQMqOkT586gf2nnqxb7ddUTIIblQ1/Lycq81/Kum7dcKpdjuVVQoG3SAB8KHZokwOUUHQeG8JzcvgVu/bvurG0XDBysXWYNqgfeEAiPWrm1rM4v2jxTwvht602Fiq90o5L3GC7uzdNRUtHIRUN2R4jZHA8a1fAASFYEcgOu/pRuNnZ3EeNZWXwnAyDZuWmQi3dNvvgQPD02IX7w5TFBmPw88Vwb+Jf0MGdka5cXx2WYqSd9pGkQT0J86luIdnBw+8MjHS33KY6WV0D+80je45BIZmMknb3UXwXKysO3ct5WFdWzcZQ1q8pJUqpA8XMmDBPoKZ4txe23CWFpyqoGi3q2EnkKDna8IbjvaT7BayFxbbW2c3nBIQcojz32FQ/aDgt3gWdYxrl5Lq3bHeK0QdIZk3HvU1eOx+vh/B+IdqLuNbvWrV42w9wgi2dJgxz/ikeqiqH2j4u/G+0ubxNiRbdyLSQAFSSdh0klmj1oI1TzI8J50lv6nnWISQdJ25ExSSQRJ22oL/wBlFjAyHkju+E2en82Qx/8ATXOv4VmAGAgRzrqnZu7ct8LvhVTSnBMcEkDcFrr7+u1cqUaraQf4F/Cgxjv0rK1u3w26VlB737Nhj7bO1uxkcTaB5/2PG/2q335b2dZs7EcPyRt08NwVTuzhC+3PtR40BPEiYkz/APY8erZdafZpnsSR/YMv8LtB4CxL3dYNq+rxexrFq/aXrKkaiP8ASYPvrodu4TkLZt2muM7aVRZlj0AFcqOPczcjgeLaBLXVS2ANpZtKgfWvUvYjs1ZwLNrid9FfKvEsHYf3dsA6dPlMAz1mgr/BPZnlX+K4nGeM5v7PtYtwZAx7ahnMT94nYczVx4h9s4hlJx5kRhat91j2iD3rWjzdT0Ow2P3hPLabOli1kBBkAtj6td22p/vEGwU+hJ390UBw03cvh+YmcFXiOLduY2QLa+EsPEjrPJWQoQOm46UHlvjfCzw/thxWzevNbzLedca60eG4WbVvPQgrRnDuLXOH4LJj2ke8T4XceDc7yOdSXtMuW8L2pces6C5uNYv6idoawh/Grp7MvZ52c7Sdkl7TdobuQ6ZGXdsWsZL3cpptkAkkbklg0DyFBzNcXi/azjVnEylbMvPdBx7NtiqWyNtRUfwiZ9TXobs/2ZwOyPZ61jYzi9lZFwXM3MZQGvMDO8fdUHkvvPOpDgfZbs5wbi+Rk8C4Xbw1uC3bVlZmLKrSTqYnm25jyFWDiGDZukKgVb2n95P3W1GIb4TvQAOqrh5IM96ilUgnckQNvjVEzOx9zFzDmY6a+7VoVTCkMpBJHoSd6v8Aj4mTaxLiZBhralFJIJccgZHpRL2BbvALcZrbrrQnaAeakfDb30HCMbs9kW2bGbiWm4gUPbdWVhpI6E7/AHYkURi38bE47g8Ju8RByXwbmAg0MFa7u0gzAMefVSBvXWuKcG4fxZO6y8cMy7LdU6WT/VVVzuzH7OJv8RVs3DUEWslIDIeelyNwOoI291BzfjOPxPhVgWhxfvn+6WNxl1fdB+QB+dc5zeKZNzuEuMS9nHe2zltWs7LqB6z61du23F1cMLVtWL+Ab7Bd5+PKuc5J/s1sbhiN4PSTFApVDKoafCBG+5kEflTdpirsp3DCD0/rlTmP/e2iT4XkfrSbiG3cYTIB2IoEsBq0kxIg+o35UtCbieI+JQAx6sszPxgD5+dIJJII8oBpWylXA5qdIiPePjQEudSNJCiN5PUEOPqCPjWgP3utokbx5DetWyDL7G2IInz/ANq2AxOwhgOdBuzBJbmzDYedOpb3BdixHSIE1iDQgiJO5pYbUCG0ydyZ5UC0SYC7kmeX9eVLgmRsRzJHXzNJVgAIaCekxFYXCiS0E9AOXpQa1BWUfwwW+Iik2J7guYJcliT+NNG5COVOoxE+rHb8KeCwgUtKqANxE0A9wAKRHMwTFO43isso5jcfH/pSGA8TrJg+dbxyIZehVZnzn/egLxygzcVnaFF1JMjzp5l+0cWe7nXrDK94r3SDkCBuCOgj5maEFu7fupasiXdgqhV1T8OvKi/2Xxhl1dzeZTuG+ymKAjPi3irhYT46W/tILsxUhZA+OncyfSl8PXHx8M5WO1hsm0rIC7BdRiJg9N5oVeDZ4UlrbKAOuMRTDcIvszBk1BBqJNpgYnrQRGSbiWRcuXkuXWkEdQJPP1NRb5F2TLkFucR5f7VJ5QspfNlrdtQqkliGn70CBUPeIVjpKkEwIBE0B3BbVvM4jet5DFguJeuKCY1MqyoPn1+VX/G4flo5Wxn3LFtriw9tyoRdLBgVHMksCD6VzPFyGxMpMhQSFDAjzVlKn6Guy9muIYePjW8q/bF51XWofeTtt6DrQaxc9rFztLf4ZebFtF+5x7TnUVUndiT1jrTn2DPudmRc4Zn5WLkakZglzSCukq6lY3YsQwY7RtS8bOL9ncrHXHw7ivlrefIuKS7SDr0xzmTvNTuNn4K9lMa0+nv7IFvURv1gz18qCi5Fm7j8JyruVe724urSW3YLJgMepAjeojO4Fdw+zuA7O9q9dYXHZ1IDNcZVMDqFXTHp76leO5X2nXj2W0redVYjbmY/OmeLcQfiOXbsd674+PkW7a7yIDKAB5wBFB0XsJ2a4f2a4t2os4l18m8Oz4NzJuqFcs9xdQUDZV2G3XrVE7fPr9oHEGEs3cWd/Mw1dX4KNXGu3FzVqe3wfHQnpBuLXJO25L+0Hijkknu7WrbedMn8aCtHkYgCevWsTYrMwCOvPesYgSPwrVsDvFUjmw5++g3ksA97UwY6jBAjzqPCmQBzJijMgnxkDUZO8e+gVuixfRjuXDKPQx19In6UEk3DbYxSwuamHMhdo3Jj1qFyuH3bV6y8a7N0yCOYHLcVZ/2xaTAttbx7jBi1spp0xH+1CZF0sVtPb7tmdWUcyVZTPz8qCq5NpUcaREhhuZFDndVA2WCN5ovLfXf0lSNBZD86FMtA2EDpQWXs7xEsjWL7atBXTP8AEgAXT8IiuhcItulwWVsJkawz6XushTrpAHIdPhXH+HB24pZtKxV3bmN4HmR5V1PhfGkwsyxlM/c5q21S5adTpbSIkeYPOgncsXEb7Vbe7Y1Kw+zC5qVJBHPrVe4plaOF92gLPdhVXz/o1L8S4tdzuGomFhuxBPe3gCF5mAGMbbjbmYoHC4JcbHGflfvrrr4FH3bY/M+tBSs+0cULid44Asl3AJh2J5kTBjpNQbbXG+XvrqPD+zWH2g49l8GymexlZGOpw8lQSLbqSSrL1Vhz6iKoPaDgXFezvFGwuL43csSe6uKJS4PNT+XMUEWpgGPQVp2BViQNhz5VoEwffSLp02XK9AQD57UHT+EHRwXiVySrJwrGtj39xdb8DXL0EW1E/wAI6eldZtG3a4Bx86j4OHY6gx/F9kb/APyrkwEAD0FBsAESQJ99ZSQzdFEVlB7t4A3/ANfXabT14iwIj/5PH/SrZn3xY9mPE9tl4ZmMRHkt01UOzjavbh2kbnHEjAjocOxU3x6+P/ZJx9jsw4RxGI9FvD8qDxR7N8F+P+0Hs7wxQDCm67g7W0W34m+AJ+MV7AvW+6z84W0C2ltoEAH8Rd10j3Kv1FeeP+Gng32vtBxzi9xQLWNwpeH22PS7dZXb4hbY/wCavQVy++RluP4na0GH+MqQR/zEn4UBBDDHVR966VAMfwjYfmfjQ1kDG49ZvDZOJWmxbnrcty9s+8qbi/BaMYq2Yiruq8o6dB9AaHv475OMtu34bupu6b+W4rFkPzAHuJoPOntlxWx/aWhMD7RwvFMnqV1pPyUV272TWLWB7GuzDXEUF8e5lnUsnVcvXGEDzgiuS+21bN/tTwvPXUFfg5bS55ablwx8JIrvHZnh54d2M7PYQWPsvC8S2dR3nulJj1knegksXHtWUfIuILOpjcZRutsRyA6fqTWodiXu+G4zB2Hl5D4CKeKd5cW2SzKpDOWPONwvz/CkKe9drjblmPwoE3QxtPG+xkedNgFsezO2m2G3/wAzD9KIKEo0bkDfyplGiwzyAEUKAOoJ/wB6DIWyAqidjHWZIUfiaTiLbc3cS+ou2rqaXRhsy7gj5UtFDXCxBKhto8lBE/8AMx+VNWPDxQbgCI+FB5O9qnC8jsn26yeCvqu47It/Bf8AnssSFB/xKQVPuFU28P3zqNgo08/hXoT/AIieF4uRgdmOMsyrk4mbcx9B53LbIzkf6Wtqf9VeeoLMxH3jzoHMeAjEwVBDCekU7lgreaDKsZG9atgLauWyojmYrLuq5j2mAh+7BP4fkKAT7rkTMQKcZi+MXWNaDceYpraGkyT1FOWLROm6xJ2OxP1NATYXZLI8SoIYzzbyp1iQR4iSTBpCardksV0sBqI9TMVpN9SnYrAJHnFA9yAB323jrW1WSRIloPvrUkCDG1bEB4BmKBwmGYDY9fnTF1gqsNz5CacLSSqxI2J86GYl7sbBZ5k0DiqVsSR4i0hR1gc/rT1ttVvWxmfStWirsNUkqrKQOm4/I0i0SrFBuFMGfpQbu6VSN9zMzymk2Zll1BpBielbuAMIHv50nHEu4aYiT60Cr1+/jgXsO69m8rr3To2llYsACD0O9SXBu3HFcHhnEBm5ufmNZuKwBv76WOkge4ifjQNtca5k2UzRqx2de8gkQOm/vAqqW0XKybdnGcBsplRQ0/uyzlVUnrAjeg67Z7bG4OJo13P7vAx1y2cXAdYJUaQPMFiP9Jppe2SZF3GxhfyUbMxTlg3VnSkMTJ58lPzFc34xg5HBeO3sC+4Vktq5Fq4SjKy7b9eRMHzpzjXDszDxuHX79p7CvY+zK/ehiWXdgIOwhl29aAriHELHEM58ixmM5NouH0kSBz2qDu5TX4BcsOhiKSEv27iXAGtreUi20RqUGG+EikaAlwS0AnpQbDblTy5QOVXXs7xAZWH9ma5puqgtmeRHT5gRVOsYuTlkizblVO7nZV/ryq/cB7LHL7GcY4xw+2zZ3CMvGdn3JbHuLdViR/KHFuT0BnzoLTi5/DF4NfsXr1uxkrb0qWFzWWVpBCgFSSDp8gFmo6/fuDBKXLgKs2tFVdJA9R61vhvHEtWyBiutyCj2zb1AMdiJ/OktZfLuqWIx7KiWI5/WgjDvmYlss1tRdVnc9IM/lQmF4rlgNLM2Xbkk7nxjeuvdhvZtk8bt5vF83GbH4Vc4fkYeGLqkHIu3kKd4Bz0qCTqPNiI5GuOY/wD7u4vYxspgv2fKVbjOfuMjw0/I/Kg7fwS8P2l7QizBh+z8NJXYEtdXpXKu1zm5264vcEkjulHrCCukcHcrkdvoaS1vBQNPObiR8K5l2lbX2w4ydv71Ry22VaCDcbzy99aRf36Sd9QM+W9bKkgSZAPQda3a2yU6+LcR1oGb8C0Z5jfY/jUbfbQbd5t1Rhq36cj+Xyo+6IsEeggj+vWobKzkVXtLbDEiCx5UFww7oS4xGMw0jn/AD+tB37lteL3c69cC27ShF3gFwCCv50Pwlc9bWLivdUBlW84cwFRhILHptvQ3D+E8a7X8X/ZfZrhOTxG8xLMqcpJPjdj4UWOpNBCZLWzdu3FI0Tq1TG3Wr/2H9kXHu2Nm1xHJY8G4NcPgyLqFruQP/hJzI/xGB5TXVexnsJ4PwLueKdsblrjfFAVZMC2JxbLD+af7wjzPh9DXYLdrujcuX20sFOp42RQNoHQRsBQch7WdnOyvs79mfEeE8A4eBlcRVce/mXgLl66NSu8seQAUbLAlo6VQXxRdxrOVaMtjspjrpbY/rV+9peT+1ePfsxhGPw6yltl/xv43n1C6PrVR4fjhGtIxbQzFGJ+QNBL3bGbl4TWrzi4qW10NtEefvqQNi1jYKW1C+FRO3WOfqaVc4fdxmVWADFgoI5N5E1I8L4WOJ8VXEv3CqsNdzfe3aB8R9J2A9TQHeznsuqte7U5qReyFNvCR1+4k+J/ex2HoPWrL2g7N8K7T8Fv8M4nw23es31Muhh7bAbMvkwO8++p9U02rQtWhbtKAEQfwKBttWrilbguq5UP4mSP4uooPIHa32d8c7KcTyraY13O4apDW8tBJ0kSA4HJhuD0ql3CGsXNJ6EHpXuTKxmuAXrYBIMsNodTsQR9aofan2VdnOPm5cuYRxcqCVycOFY/5l+6340HG8niOHa7OcdRsm2l26q2ltkiWjHQD8656YmDvvzFXrtB7JOMcCS/lj/3xi2wWa7ZH7xR/iQ77ek1Q7WoCdJhmhQwg+6KDcnzrKUqmDAPPesoPbvZO+L/tj4/dA+/nqef/AMnZFTPHnU+yTtAQfCOE8TE/6b9VD2c5gyPahxi6TP8AbdUx5YlmpPO4gbvsT41fJ58K4oSOhhsj9KCg/wDD/wANbB9gycXtoDkZfEbud6vbthbWn3aUePfXSwyN2lItbreNvJnzHdEAj4kH41F+ynEXA9jXY/DKwH4ZbuMsRJuAuZ/5qe4IzXO0FuwSScXAFs//AMzqv0X6UErbBXiXdztz58t6Ww090dwPtRWfLn+lBcQu5NrJ4icKO/XHV7YI1EQ3QdTGqPdT2Ffu5XBsTJyLfd3Xuo7AjTuzETHSZG3rQcM9ui2x2rxcVSFDYFwKoHR7zER8WNejrypYvd0kKtpVtjb+VQo+UV5s9uDLd9ofARBY9yoj0+0qgHulWr0pnADPytJBJusJYTHiPKgaRmIPiZmYbltoHU1qwQbCtEAiRv0J2rLsi1cEkBhuTzIpSwBp2CxyoFiAOuwJk8jQgj7OqiNTNb6dNIP5UWRNpp2GhvwoUsls2rjbKiLcK+5W/QUCgdVy5JOm3CfLn9SflQl9jbyy/S3pJPpJp5tVvGtWzJdzDe87n60i8NOa8wVIgg8qDi//ABFZTh+ydjnae1mXlA/m1WUn4KW+dcJAW2Ax9ABXTPblxd872j2+Dowa1wTDt4g//Mf96/xGpB/prmLnxMp3EiIPpQKt6u5uODvPn0FOo39mc9VtLBPv/wB6aUxhMSd4J2pSS1i7bU7m4qDryoBVjTuxA07/AAolFLIls7yo297f7UNcKKLib8ysRP8AXKiFBIKjVqKhd+g0xPyage/vUVSZa4Z8vCDTaks7OAZk/jRExOkEM2yz0Api1DZE8wvP1NARcWTI5TuKb7wKbznfSdIgdadDL3xUkEgATHOhQ2m28gkNc5Dn6/jQOISqMSYLGSaTablcgE9BHM+fwpLXQ3hU7E7nyFa1ANBEFRJ8gKBywxF1pPib6+EUppF9R05zTaEd4pHPUoG3+EU68wrMNgfOgVcUNa2B2HQU3jFtdzqYDCBPXenCNWO0DwgAjamcYm25IkgrsfeYoNsofQptNdkqQoMEwZ51MYvCezXB8PC41fu5GO9l7dxAhDnWralhSNwDvvtFRVsuuTaNoFmnZfWDS+I2L73MC+rOLNu4BeUNsFaASfhIPvoLNf4d2c7acZGZ2gz8ixxXiuq1jqmhVuWkACsQohWIJjzINQnbji+TxzjNvEy8exo4M9zGtHGsLZ1KSviYD7zeEb1oNd4z2j4bjcMxbWLiYT2icmwNIOjTLEnmWIBjzJigrpV+0PE77+Im+x1RzM0AFnhmTdt2+9As27YbTqO8M2o7e/3UbZ4ZgLdLraN1iBBuGR6mP186fNwtPjmW5HpToLKjkqxYiBtyFA3fKKBb0BbSLIUDYD4etd29h+FdxuC8R401tXs5WX3IQiVZLaBHRl5EENy91cIuANju6gxpCmRt/W9ervY/w1U9jnZpbQGq/wDa865JiQ+QVXf/ACqPlQVnjPs07LZftG4fwLs12jt8IyeM2LmaeHX7T3AEUkM1lhsfut4SZEeVdC4J7KOxfZ25buXce9x3OUghsohkU+Ytjw/Oa5X2T7Xr2m9vnDb1i0r4lvKbhvCnCBntoi3ne4zcyHDOSekr5V6NtC3bsAibzASSg3c+7pQV/tRxzD7M9m8ztFxtwmFgqH7q3Ba68gJZXzZmhQBsNzyBrw5m3b2dxK7m5ITvcm7dv3FBkB3YuVHoC0fCuq+2L2gf9te1Q4Jwm8p4BwW4Qro3gy8qCrXAf4lUSqnqSzdRXMSmvSTp2GrZT60Fq7I9qMbg2BxfhvFjd1cRXHFnJ+8qd24bS/WNMQekVC8afve1HFriMHV7qsrqZUjSNxUd3Xe2BpMMVkHpq5ifgYNNK727bXLA06drtnnp9R6UDzJqAg8uk1i7XFdxuhJO/od6bt5YuMQGjqE8/wBaetMVvKCARB8PwP1oAeIo2Phu4BAVNpNViwusEmSFEkASWmrdc7rPy8bh+VkMn224LZ08xM7x8IotMXG4fntj4OOjKj6AjeIuI3mfdQQ/Es0/aMrCxpNlwis6/wDeIv3APTz9wrofsl4L2rtjK4jidoc7gvBLw7y/axmA+1aFI1MCD4V3A8zVcwOHZXFOMY/CuHW1u3864thIG1tWbdv9Kyfga9KYXCcXAxLPCcVF7kd3bK/4S2hFPuVXY+tBIYPAuHraw8zNXJvZxtJc1vfdnDQCV5xzkREc6ksq5bVkxCdKmMi/1CW1J0qfViAfcDRbPZx7V7MugQoLGOg5wJ5TVS7S8Q/ZvZLKzspiuRxK9asCOeq84RVHuUk/A0HD8/ttYv8AaK69y24sZGYz5uS6lmtqzb6FkSVEDc9KsnDMfhWTxfEscXvPi4ouLNxRultuVxZ2K7gke+qN204X+ze1V8rbjHzF+0W5EAnk4HuNTvZLKHEuDNw65pbK4cddvXyuWmP3fgdvSRQeh7nsj4dddLnFO0+Zex7H7wdzbW2NIBOotvtG8ihOFcA4JY4ndyOA4jYmPpFpjdZne5pMqzEmdREsfKVHQ0xwLi/Fcn2fY2JkWnOlhj4rXGOq8pju1YeS7knqqjzqfxrSYuHbx7TFoGgO3NzMsx9SZ+dAPdXIUuFtd+o56YM/DnUXezrli6tk2r7IzKoBQkgkwAfnzqfU/wBpcA7Hyp0uwDwxAEbTyoALaRYxYIJ0lD6wSPyrL1pu670DUFYaum1OIpW3aXcabrLB26mircMrK24B08uYNBE5vCLeXbYiFvKJVhzrgntQ7B3zwzO49wnB1XcZS2ZZtLD245XlUcxIho99eikJS1G+0KPnQHF1+y8Ss8UtojKSbd9IlbinZgR1lT9KDxl2mxbbcWTIxGCDIsW7txVGwcjfr1ifjWV0TtlwTF7H9t+LcOuYZysPIujLwXA5WHVYX/SwYfCsoOmezK/3PbrjzaoKZjbn/wDSWakdZuf8N3F7syz8F4sVJ6Etkiq92LYY/bXtN0AzNunPEtVNdmozP+HS2bpgX+G56EcpVr99fzoLxwOwuDwHgOAogY/D8e2B5abar+VBcBtR2n7QXDyS7ZxV2/lVnb63alLYY8UxcXr3CgeU7Cg+zbi+OIZwG2VxHJuLtzVbptr/AOG2KDVtv/pDnaob9whVf9TU8yi3wi8VXUbTKwBPVWBj6UCzxxp7sxpItsR1BDN+QqUuJq4dkKNyykiOXnQecvbAz3/axi92dS4uPhA79WvNdP8A5h869O5u/E7+kE/vW3OwBk15b9p5dvavxbeNFzCXccgLdox9a9TZYP2/IIJgXGMepJoBiBG42ALGevkKeXYoTueZ2pq5CqBEM31pxhAUA9R8KBRWLd3eIDbfA1H5DRcwbZMi6ugj0A1H8I+NSFwfub0EyUb8DUblGH4U5JA1kcuYKt+lA9fOriWLbBmSz+mw/U0i5b7/ADlt7y9xU39TE/WsO/GbMxKWrjz72UD8KetqTxK0Tz7xD8m50HjbtZxD9sdueOcWJhMriOTcGo76e9ZF/wDCoqCugGeRAFEZdpbjXcpXHd3ci61sTvpa4xB90EUwtgCNTMZoMvQuESDsAOlbxm03RG8XGblyj/rWrtsnGcTCgHr1prxJadxtDMp26Ej8qBa2Ve8ztItAayRz0yfr0oixc1h7xXZ5Cn0nb8KGPgsKhUjvJJj30/jq32e0W2VU5+p6/KaB0kQY5tJPmfOtWhDHkSQJA5AdK2xHdO2+6+cCKbUd3YZ2U8hQbXxM948iYH+UdabAjFV2/iMx7zTrrosFW8MLy8qRcYG0u5Zm+6sbe/3UDKKFIdtwGAAPnNaQsbd68/MwvzNZcaSCeUkj38qWAFsWbI/juAtHlNBjsVzGgmBcEeuwFE3F/dMAACo5AxQLlft9tiD4gx+RBAo8xO4GwiOlAlTpxnPIadQ3pmwx0ukCSJXz3O4+tEIv7soTC7gkDmKZxtPfN1IiBG53FAp3vXddrWxLAlXVipRhybbmR5HnNHXuIuLTNiIbN8iA7mUB/wAv5UFat2LuYtu+oa2VZiuojfpypdzGwC8i2VEbgXW3+tAfg8eXCyVH2FVw+6tA2kukt3qqBceSPus2pgv8MgdKEslL/EL91bZQXS18IxkhS2wnrUFkBDxLuLFxwupQFDluYk1YnU2OK4x0aVa01k7dQCQPpQNYIRj3lxQQ5JjoRNZigLivJZu6drcz/DPhn4EU3Zbu7QUcwmkH4041hlYWtW19FuMPcdMfICgVeb+xgExqYHy616p7L8VHBv8Aht4Zm47f2g8Gs4OMFPifIus6KF9dTk/6a8r5zeBIAGplBA94H5V1jjXaJeFf8PPsrQW2uovGL2ZdVLhtvcGK93SoYSV8TLvG21AR7FOA2OA+1jM/aeXasYXZTg2Rk3spjFvx6UW7P8pt62n1qpdt/abxrtpxPOvYPGeL8P4D3ndWMC3c7m0+OqgKz6TqNx21MwOwBUdKF7Tdr7nF+Cfszh9lbH7Yt2LnENDS2m29xkxTtuq3HZvVdAPKqv3KtcXFT7iHU7D+JutA3YQWEQ6dIub6FEBFAiRREkWEg6ttx89vjWOJ7wgCDFlY8utO37aogAJG+0egNAnHWLIWSSgCkxzIABpbWAbq3rRC3htPRx5GnbKqgYDYKxEg+gmlQveMm+3I+s0EXl4UHvLIKy0lR0Pp6VrFuEsQx8SBgQR6GpC+SwIXw6oj3xQwCliQNLgQxI5r60ES3FP2T2jsZRwcfLFtFbTdmYkmVPRqtHD+Pdmcg5GL+x7mFc7hcq1k3LpLOumXU+v3oI51TeNWwHtXwNJIKMfOOVCXcg5vcpdCW2tILaug2KiYB900HdPYlYwuO9usriNi3FjhOKumDIF2+/dr8QouEV2vhwZ8nHu3PvXbxJ6wVssfxauZf8PXCjhdg8zicKLvFOOASu82sdNIH/MzGupWytrJxdEMDkZrrttAXSPpQL4pd7+/i8Jtlmu5bF7p5d3aXdtuk7D51QPapxG2rdjsAtpOXx23dA/wWVO/u1XFq48PY38jO4sz6jeYYtlxsCi/eYehaQPRa4r7WeLBva1wrGViLHBLOMpjo73O9c+/To+VAT7QeHnI7N2eIAN3uDdBZ+ptsdJHukg/Cq/7MuFZXGfaZw7GxyUsol29lkf/AICrDKf8zMij3+ldR4hw1M7HzMJ2JS8ly2xO8BgQDUd7EeE3eEcZ7aXMpV+2YIx8BXiZku+oe/ShoOtMEOSSu1rFU2bKjkWP3m+gUegotFVTAWWRQs+XU/U0NZUW4tj7toSSeZ9/409abVZ13ROogmPU0CVZjlvsYApwb6wCBty6Gm7Qm/caSCJ6cqdtgFmG8Rt8qBq2viII+7cZvoD+dEKNNsE/xKpkedNrIa6BElVcfKPypRB7u2COSigZuiLbBeciBTPGBPCr7Kv92FuDboOf0okgNcUAdSx+HKk3176zesj7r2WT6UEbmcK4bxH7PezMRMh1tBVZhuFkkD61lO8OIvcKxH0790oO/UCKyg49wrJGJ2s7WtBBTJtEknzxLfKp3sg2v/ht7PqH03L1pbK/4tfEGU/QmqVxDIbE7Tdtjqkq2Ow+OLbH51dfZ/YF72Ldg7DGQ+WY6bLkZD/+kUHSsvKtYXHcXNutptWUe4x8gqlj9FNA9jLb2uyHCBdBDtiJcadyGYazPxY0H2+W+vY3iF3HJF447Y6x0N2LX/qqxYNtbVrubcKlvwDbkoED6Cgr9s95czSTB7/wnyYKP1qeWWx1XfU+xHrVT4RYy27QZt25dLYVy+zr4phlYqV09BEb9Zq2HIGNZu5lze3i22yGX0RS/wD6aDyd7R+MDK9pXabKtgG3a4gbKEcotaUmf9Jr19ky2bdloBYkwOdeEcq5fzOFZWZdl7+QtzIcgzLPLk/+I17rFzvCt0kHXbS4I8mUH86BDSCsmSZilMNTWxHWfpTbk60O4Oo7Glg/2hRP3Y+tA9cM2bviiVbp6VD8RDHh+G1sAtba3cAPoZP0mplv7u4D5EVF3rZu4FhBzZFAM9eVBuzDcWyHMkKiWxv/AJmP4j5VG9reNP2a7J8d4/asC/d4dhXMi3bJgM0aVn0BYE+gNFcNuG41+8d+8yGgeYWE/wDSajPaBZW/7Ou1tpiqq3B8oS3IEWyV/wDEB8TQeOLazaHfP/drpmfhAFOi6QQpmCBvyFMAAqNQ3Ik+nupapqZnZdSrsB5/7UDrvbW1DEszjbSJn4VpZdVRgWBuDb1An9KYZmGQLSASV2E7DnvRGLc7zHskiGLM8+a7r+Q+dAPdaYZgZWZPxM0WCRaS2NvAs7+QoC6GZLnkpaI6zNSJChoCknYE+6g3cWbJUCZ236kmksZ7tA0yZY9AB0rVwlbLFgDBXYe+t2wSmrYxsPSgy6Zts3+ICT5Vo6UBZm20wB5AcgKy6JVUM7t8PL86bvsWuEqohenrQMzrBb7pPIDzMxW9Ra6pB0qikk+sflPzJrYUkKywAOXvn+vnSLls2ywB8KqFgepmgSrFriEnxKjGJ5kkDn7hUjaaVWZJI50ACEdjsCbRAB6wy/qaNX1ZiDzoFyfPemSFXKUqfEeY8qWzaLTNElelM2QzMzu3iIkyN/8AagbvXGslXUhTMUHk57BCRH3RIG009xMqEGnfbY1C3b5KDwhWGx35befnQH8IXveIvegqUXqJIYmPwmrVfICvP3rTah7/ALy/mKr3Z21/ZRcYktfuliP8KnT+tT2WV0v1/dkGOo6H4GgGx1L3EQbghZ9BRmY5GXiXOSlja58tQ/UChrB0LcvAamkIg9ep+tIyLzXMqwlqAtttQPMFh1+YoF55/u5O22w99Wjigv8AF/Y7wG1Y1snZ7Nz/ALQBvCX7iOCf8ulSfRqqeWxvMh26GR051Odn+NDhKcTxbqNdscSwbmOqA7LdPhVyDsREqw8iPKgj8de4S5kXZDAALO+/KiMSybWP3j/ebc7dK0LYuXVtCe7tkFiep6Cim8VpmPMk6fTyoBlAFyzbB2lnNKcFbmrkVGrboeVKUn7Y4XkiD13rZ8UiAZKxt0mfyoNWz3eOjMAJJYmPia0raiHIbUxWB8yfpWZQ8LbwAFUD1J3rbb3QoP3jpjyHUmgHuEsrEfwXOhpu6q94eY5x+NOAnRf5r4539DSLhI0sx5A7e7+hQRPFERwoIkqZHxFQzKFY9FG0xzqb4gsMh3iAdvSagMhmGLeZSC2hiPfBig9h+yDB+weyfsjYIKl7Ry2B6tduM8/JhUhxO/eNjhNjEE5F+1lupjZNTqoY+4kx6ipPgGJ+zez/AAfBRf8A7Ng49pQNt1tKPxobh47/AP8AeCeKzbt28bH35hQdR+NxmPwFBJY9m2nc4GOuq1Z02UMczyJ9/U++vKXaXObjHb3jvEZLfaOJ3Ah5+FbmhPhpUV6ru5Nvhlq9l3Sxt4dtrhjzVSxJ+I+cV5Fs2XwuMJj3wSbOYpuT/EBcB+oM0Hoe9K5d06oYXGWfMg1YeyK2u641fZAj3Mm0txo++VSRPnGo1CXnP2y9qM/vGMAebVNdlrR/ZGbrkC/nXTE7lRoUbf6SKCwLqOMzkgNc8ZJ6KeQ98RRAH7oEHckfKmCwYbEEE7D3f9KeaFtWwRIO5Ye6g1YgtcMbyOfWl2yYdidt4nlTVqDqYTufOOlKtybTETBbnQavnS6sP5dHvp24YRRz8IG9DZAbVAafeOW9PuWCWpHQAkGgUp0tdMwFUAbeZ/2rVtiSxYdNgRTWrVkPsSJGx26U6F0r4WPLegi+EFBgtadtPc3XtgT0DGsoG3kNYycxR/FfZvmBWUHn3tZmae03bJUJBufYwB/+zZH5V032ZMt7sN7M8QtstriOUy+YF10X5G4a4l2vyo7Zdpbc6lZsbb3Wrf6V1z2SLdyeEdgMm20WuHcOybd8dGW9k3Tv6yqmg6J24yAnAhh6gGv3lO56W1ZyfmqfOrDgtqsWnjdrasR5ErJql9pr327tLatc7WJZAcR/E7CR/wAu3wq746lO+afDq291BXOz1trqcRckhkyryLI8nJP6Vvjd68vYztFaG9xOGZQQ6t/7po+hovs/b0NxNRtGdeHvkhvzpziOKL9vKtgArfxrtlgeupGX5+Kg8gvdtfsl9LKFFggGQJ8NezOGXRkcB4VlKAe9wce5APObKmvE+Pwy4/CVQ3UJNoIdZA/hg7c69i9jrpvezvsrcc+JuE4k+Ui0o/KgmrgEJE7MZjelW5OU23KBt12ptt+60k7uRt1G9KURmkHk4HPoRQFoJOmZLDYTzqKU6sbFIIBAX5z/ALVKEEKxElkBIqHd2t2MYqRqNpWA6CT/AL0APB3VcbFFvc3Wa4OshnZ//VVB9vnHrvDuxuFwKw2m7xvJbvT5WLOlmX/UzIPcDV84QAON5WIsaMK2qiOUlmj3bCuYf8RNzEup2Ww9DHOVsq+CByssqIfm6iP8poPP/wDEwJDQ3lyrZZFxmAbT4gu2/nv9KdS2puENDKpMFeppF/uLeOwbwsRKgRMjlQD21IuKVY6piZ3M7D8aMs6dVkDZURhvtyY0PiKpPfEGVbUTH9elO3f3Ny8IEaRsDPnP1oEqrKrEAAbdORJ5fWi2GnUSxA5g86HUfvWU/wAV0D5R+lPga1UtvG8edAm8B3JgfeM7tvSre1sAjcD51l3TcCD+GSQT6UnVqLswhUWRtQa3e8hH83yG/wClM3GCq0DVJG3L40tG037YJOoDff0P60zdZmbSviJIAjp60DiLBloPdKSSRzO8Vq/4pAJABUsf9NLU6bTGQSQY9dzvSLol2BBAkTtu0CgZVWa8sKWCS3mSDtH9eVHL3gXxLqYcx0oPvW1OACquBJXYADffrT+hTpcKZ85M/jQbe8SzKxEkbgmKbUOp8cqXEa130k0T3SFdLOCBzVt6FRVW+Ftxp1Dly50APEnNuyJJ1DZifjUFcabbMfvE9B6VO5wF97gcggkt6iouzZ7/AIguKssveAkx05n8PrQWrhNnucWyhEdzbWff/wBTReWpawCYWGg9IBPWmralcK+wEtKn4AzWsi6PsVy4vJwAB60Dtjw/Yi3K4dZgebT+lR+GwbMBu5Fu3aS8qad2dizc1HkJE+k+VSdyFzLFuIFq2snyIH+1RXCwr5y618IY3CD0gUBt0KMxrLSoBaQvnJ0/Wn8a2DkYzTJUmRHwoSy5u3jdYDxGT8ST+Bo/H1JdNtWhd9QHWNx9d6Au0Aqtq8Ikxt1PWngGa0IJM/CmwJGmdvOacnTbZiCNEmY99APjtrv5Fzf7wHPyp4mWtjlqYny/hNNYpK2DcDQS2xp5iBcXlKqxBJ2oGsjcIpH37ikn3CaZsPqy4jdm3PLbyrMi4ri2VkqG2Mcz1rMJV1F+p2HmKDDJGQvmSf8AetDSU0695b8JpJYG+8Qd95E1oSDKn+HYRQRPFHhFnbwkjp1NRWPjnLzMXDAlsi/asgerOq/nUnxltN1VEEgDf4k0X2DxVzfaZ2XxGWQ/E7LERMhW1n/y0HszLvphLk5LQFxrb3I/yqSPwHzoC1gW14Pw3g93IvWfsePaJey+lw6xJnrLB5B5zSuIst9VsOpK5D+If4FIdtvWAv8AqpeNbyMy/duWrmhmP97pnu1/mj+JjvpHQGetBHdr3Fvsvnoqkm8VtMeRCsw1T8Aa8t52c/Eb+bxS54LmSTcVV2CrHhHwAFejPaLxHE4HwK3g48vcLreuh5ZmBdUUH1LMf+WvPHGOGPwfiOZwtwdKLqtP/NbYErPw2+FB6B70XSl5WMXLauGjcyoO/wA6t3Zy2F4FZaAocM5IO8sxqjYF21kcJwcmydaXca04aY20LtXQeCQvAsVQQWNpST7yTQEsoW6AJGlSd+s7URcgm2v+Enb30MfEzkzuRHumiHP79AAPuGT8RQZaEq2+07eu1Kst+7JB686btMvdk7nfelWiosLvA1H8KBq80sZG0E86fuEaU22G+1C6gyieojbrRL/3SH0iTNA0XIz3QgBSoIY9TMEfhTxPhI3EbyT8KF3/AGg0mAJAB6k6T+VPFtzMEqPrQVnOtqc+8W5z51la4naJziVOxAPX9ayg8q9q7hPbLjxLT4rXM9O7Su8ewTIsZ/s/s8K7tlzMXxFydntM7BSD5hgwI9R515449k972n41d2Oo2ifcEX9BXpz2M8MTgfsqxuJMoW7dwjkM0QSoDOPqaA3HYZ3azMuglhczIDRs1tRsPgV+tX+3tYST76oXZmy37UugSVtotxjPJn8X4NV/PhtqJ6DbaaCH4Qw/aPFrHP8AepfA6+JdJ+q1JsmnLtsB4QyyCJ2Jgiq1wc5Q7YZH2gsbN60wtuFgFViF/wAysD8/WrSd0hiPCYBPOaDxrestjcV4hgBF1YeVdssSdiVusogfCvUfYG4X9lnZMnl+y7SwB/LK/lXnftrYGJ7V+11hRC/tFmHlDQ8/+I16A9ml3vfZH2WgmUxGtknnK3rgoLYwJFkMI0sY+VLJC5Vs+o50hj/dz/OR9KU4PeoRAgrudqAxRJZeUqahLpP7Psvv4bSAtH9eVTikC/6kx8udQdxY4ZizuGtqD7xtQAcJthO0PaC94ipu442HIm1rI+TL8688e2Dj+bxf2o8YS6qWsfhJbhdhE592hZizHqzM7E/AdK9PYq2vt7HI0WcZD314hgBCqNTMfIKv0rxfx/i9vjnaTifGDqVM7LvZYESSLlxmE/AgfCgj7aOp5ctjQ1yw7XiW0jbpvtRKs1zVpZraxzPSmNdxC4a5qESSOuxoHMVgGZQxCyAJPT+hWZAm8hBks2mPiDSLI06tPMMJ9YH/AEpep2A7zSxU6lYHf40G7JBym1bqLjv9NvhvROoiIkLHwplATcZZEhB4o2kn68qePiG+wgAgeUUDThma3DSIMjzrYA7oRtqPPzrbhWubbtAC+6laptKTIkgR8aBoA/ar1zkUUgEj0oe0jO6qZWOZHWTsKfWBauso1MzcprIFm3bUNqYMXYk82oNE6LDcgxXYb+Zpu8oW61xzIY6QPcN62CotFyu+kGeUbmmMpi19gNoO09KBy0GuXH0nVqB+Ao23bFu2UDagDPxoXh5PeOZiBvHlT9stdPeyyrMCTtFBt8e2i94TqU7mffTVpFa6ukaVVg0k7/Kt37pLCzaVmuTuF3j1pAsXIguFurDwN4Pl8udBDcSutavfu9JIuEQ3WnODBMji7XCgXSjNsPuy3IUJxBxdYuwDSxMVKdlrQW5evQIYFVH+Uf70FgNsizeQSA6wBHWo9TrxrVuQS15QfqT+FSbCR4Aeh2qP7h7fFLMgqjFnK+RkL+dAbkQOJXOc920eQ8JqBwW0OCpIJUiY5g1YLoniN47mEbp/hIqv4w05AAJI5SaCUVYUHZWmJnrU3YzrDcEHDlwrIdr5vrk794FVWBX3NKz5aRHM1B2yRpjYgao+H6xUljLouLuYCsB8tzQFgxq0iQAB75M0jIbRjOWMhjpAFLHlIBUz76GzG/dKpPMyfUUC7YC4yiem3vpOWwkLuSRHwkfpSlEWrajc0nJnvVAMbCIO/M0DeSCLSCAIiBzI3inbDIt63bgKQpJg86avn97bB3GoD61uyouZjPIgaoA25UGk8Vxk23YkbxJpEeEN11EGR0/o1lv77SBJ3pQAKPDFiGHxoILjTRnqAN1QVafY7ji/7YuDMxlcdMjIP+myyg/NhVR4sS3Frwj7gVSJ/wAM1f8A2HDT7R8nLK6jjcNukCObM6KB8YI+NB6PY3LmdcWx4rq6cayB0Y+Jm9w2/wCWp2xatYti3jWJNu0PvE7k/wAxPmTUbw6x3Fh8l31Og7tWG4LMZZvf0+NO8Zy24f2dzMm2y98E0WyTsXbwqPr9KCjdq8m3ncV7nJwnLjIRkd1DLcCqTz6b7+8+lcU7cZuNkdrb32VtS4mOmO7g7F1Dao84kCfMGuvdpuKXcV+OXlKu/DxdyLbL5aHVQB/mX6GuCYuK19rGKSWa+6Wy07kswEk+pP1oO68EsXMPs1wmzf8AC9rCtIwJ5HTJ+UgV0vg4K9nMI/8Ay1rYrESs1R8wJbN5FKqiBlUEbAKIH0EVfcQaOA44JUBbNoAT/hBoNoRoG8mR+PKn7hIy1kSRb+pambIPhUcgBBjnNO3JbOYERCT9eVBiFhaZQJE86Srf2VTzB1SeXSlW0PdiN5n3U3McPTY7q34xQJUyhPPw8jRJOrFt+WodaHjShM/wgCn7IU4SgiYg0Ancas+9fN5jpuKAgOy7Df40+4JuOs+I+nnUPgH/AOkfGXOTqV7y21tnfu2UDf0kGpbIYrdnVExy2oIbMRTkEmZgVlFXYNye71eu1ZQeI1uNxTtDdtWrTPczLlq2qLuxJIEeuwNe4eE8P+wdhrXDFVFa3w5bOlRsD3MED47V5T9hvDG4j7Xu9u4ovYeJh32vu3K0z22VCP8AEWJj4npXrzCU4/DMWxcYsbKaCx5lVnTJ89MfKgqvZBVuYBzRA78WoPPwxAH0Pzq53G8IA5yIiqh2JgdleHwCFKIonpC7/iattxtgW5DnQQ3DAr51q4P4WyE84lgR9BU4BGoEchMA1B8DA02SZUspudTM71PDbUCOnzoPKPtHuAe2ntaDLf26NI5Ed2kj613D2TP3vsf4EV/gu5Vv5ZFz8iK4h7RQD7Xe2TMSzDiLdf8AAv8AtXafYuQ3sjxVP3V4jmKsdBrB/EmgvpUi0hBlu9B3686UzeM6pmQV9aSuo2lBOysPjFPXACymBz+dA+sNcBESTsfhUWylsDHnkCwPpDGpHHMHQZOmCPX+ooK5b1YF9RH7vIurPl4ifzFBRPaPxS7w32V9qsiw5W7kW/slsgxBuslsx66WavKrKLQZY8KkqB5jkK9O+0nBHGvZ/wAWwQcgXse7az7dvGt62vaLrArA6ANqn/DXnvh/D8fid8TZ7tC5GstqYjlNBFqYxQCAdXKaEufcImGchBB8yKm+NcNPDchbdtWfHVSxcfetqDEleo6yOVQV5nXJtWrvhZHBaN5E8x76Ai2VCtAkAkk+8/8ASkKYc6t12HupGrTaZRsWOn3DqK0ulizgwJ1QB03oCbSgteZWnZQDPqaKBWJJiPPYDegsJtFu8GAAZ9InoQoP50TaDNdZ3GpZ8IO3Sg2F1XC4kMdhIiBWid7cqQCdW/SJp2Ztn5701c2TVBGlTsPftQIxNIskmTLGfShrju9/vJGxgD0miLEW8dvDsZiOZ9aGaRcLctRB5UCiw7pRc8/u+ZE1lxC11rpOhVJBnrFZ9oGoeAnnEjzNMu3ewSxPXcfOgJxVNxWDEramSBzbkYJ+NEXmICqCVUDku077c6Zw01WypLCGO39ddqJFtQ5hAWJHiO5oGVBt45a2AgHUDbn67k++m2YriXXkyynfrJgA/jRbAd2wZpUHr50Hkk/Z3Gk6dI3j1mPfQV3LgQzSImN6s/ArBsrjL/ERJnzO9QTWO+yLNmJ7xwp9fOrVgqGyiQIC78+XlQZbvK1oG6xJLRAFIW53uagVdrdsRJnmxP4KPnSXtFcq4glQWMVvBthc28ZJAZV1T10jb6mgJe5bXOvK76XuKEtrO7MxAAA6molLLW8y+jqVa07IVjkQSIPxkVIZ1lGvXL4hbyIqqzAtoWfEY89tj051H2JNudRbUQdR3J9/rQGW9mkECAKOxyxyFO2wYbVrgVnhWRnX7fGM67h2Bj3Gsvat6i94Ad2jTyUktJ9BT9y1jY/GWs4mYM6yneAXkUqtwDTDCd/dQPEGSDyAEgdTQmUddxU5weookyCIjyoUsGa9c5lWgEeVA8phrS7AaoEHrv8ApTOQV+1J7gf/ABGt2DqayQYhuvuNN3mP2pgBMaYPU86DL7blv5COvr/vWYTCbpkSqcz0JpjJVktF58Qhj7g1O4R1JeLASVAoMtSzKRJjlOxp60pC3YBkCaZtmbiseUbCOtE2p724eZK7j4UFU4g2rimWw/8AxCB8Nvyrrv8Aw98NfL7T8ezCB3OLi2AzHq7OxVfkpb/TXIM5dHFMtYgd8x+BM16k9gfZ/wDZXsrt8UvIi3uO5L5x1bt3Sju7I+Su3+qg6PeQolrGtkDTuYECZmovtdcngyqttmjIx10qZJZro394H0qUDG7nGCGG4AqC7T3WXG4TbVgGyeM2Dv8AyqrPH0HzoKnxRcfi/aXKt3Md0S4Cblt1C611MsbcxDH51wS/eTh3Hr1zh7m/iYeYXtGZLIlyV+gro3tD7TX+Fdq+Hg23bvMTLRmtNpIW5CBt/Ign4VzLHt2bly3jIjhHdbQZNmAZgsx5weVB31uJY2Vg38zHbVav2TdSRp8LKWBHzFdMtqi8Osrp2W2oJI8lA+Nc3zMfFxeGvh46lbOLYNi2GI1aVXSA3y/GulMyriWmPRVAJ/yjegywZlhI0xCjfr5U4w/tzKBMWwd/eabxwAGKGSTu3n6Utj/7wMsdrY+U0G7caACTt1pq5AwtJ8RGobf5qXOlSSpiR0nrTN06bDKTt3hH5/nQL/7rSNy3OnrENhoo3J0j60yQFtOTzUbU/isq20kE6dBO9BFvj42VbXimOpW6zEll21gMRv58qOzJIlfQwaj+HJes8Hw0nURbhh72LfnUlkAFS09OcUETcN3WYaKyt91sNzyrKDin/DRw97o7Z5vdnTrwrKtHIhbjH8RXoHOOnAv80KWHII5zpbl868IcE45xvgPE8m/wPjWdwxyisxxrzJrIH8SjZviK7f7PO2fbvjPaHs7w3jfaPIzsXiGWiXVu2kll3YrqCg/dWg652O1W+yeGx8QVmI/y7Va2IZW6gjb5Gqr2UUr2F4SDMi0QfeGYflVkBAtjrqED50AHAgTZa0T47B0DyiT/ALVODVzkR1MVD8LXRnZiLIYXdZ9xUR+dS40g7NufrQeVPaddSz7Ye1urk2dHnJCJI+tdj9it7V7J8UXCAF4jmLsI5Ou1cP8AaeS3tj7V3Adl4pdUzykKo/Guz+w5+89kyeKCvF81RI572z+dB0+1Kg9N+URzpbCVU7TJ28q1b/u9hz86VIMkiY8zQbtsBcU7CRvvTRA1Z6RsL6mPRlU/rW9luKVHTz9TSri/23LH89m1cj/mU/8AlFBV8TLPBeHca7TXy6XcC3kPYkD92ltWgierNJ9xArzV2etMqWwwl1UFidhq8/nXcu2t3u/Zx2yN5iQmObVtQYC67qqPjvXF+EMqWmIBZi2kqBMHfaga7SI7cObJsNpvWJJ2nUIMiueW7jXcy07bSVUADYACAPlV44hkPc4PxNmLMQ11QOZQLAj486o2KA2XbA3EnbzhTQOsAbskmAZO/wDXlSQdJDA7xuI5isfn90AiZg0u2ne3lRZMkbg8qAnCkWCSNnuOSRvvMA/SiwzbienSmMNV7hIJKkMw+LMflT6goCIhue9BtXLKQduW8Um+he2yjad62CVMEVsmWhdgTNA2VASWjYRzoO/dVlFtBKzJ2iY/o0q/ce5ca2qnSOg6+tNuoVdMeJV3g9ZoEKWDEHdgN6SSu3QAnf8AGsAJLchI51omEUn30BvDyzFralBdYyFclQw35HlPpUnj4WVlKxt2yuhtLhgTv6ETVeILqLa/eYhR6GRH410TgtlbWIotIzKG3Y8vIfh9aCr38LL8QNtWU89BGxH1ofNtIcI9SHG3UHfb6Va+KgF7lxWUi3CMRzWdw3z2qo50/abiv5yfjQCcPsG5nl1AJsrrH+bkKncCe/uC4IcCRtzFRfCEPf37jDwuNI+G9S1myUualZhpVlOrluKBjJDDKfSfdB9KTw4NFy5J8V5pM+RgfhSWVC4LuVCCWI8qc4ZbJww0AMNyCf5iW/OgRxRineQT4lUR6at6EsrChB/Dz/OjOLLJsAICGYLzkkUwkhOe8c6BwICGVDIWCfmaJw2DZSso/wC7YEnryoWyJvPqMAou/rPP60bjgDLWDMq2/wBaAwAC2SdmjaTQd5dFpxA8TQY268qMICozGCeRkz1oa/qZikadM8+pNBrHAkQdwxPOlpb1Z90RqAA2mN4prGCq69CTy+Jpy3ci/kyACWkE+W9AOxDXclH5G0yx6j/es4Y02rhPMqJ6xSRvnXIjS+pQfKQaVw4jQ4AiVBgUGWtIYk/d3n+v6507aYi4VMgFTI5dKYE6yo2jl6U8hLOdRkqCBNBW8vHyOI8buYOGpOTmZS4tlRz1OwRfqwr3bbwcbgvCsbhOGgTH4dYTEsgctNtQgPx0z8a8s+ybga8W9veDcdNVjhaPxW4NMjUqqtuf/wBx1P8Apr1Bl3u8K2wx1MS3w86BNpX+zm4p8TDQDyiTuajOP3ETivBbb2Wur9te4AiaoC2xv9am1SO6tg7KJgdCdh+dQ3Fcs2+0lgAB+6s5FwmYidKj56TQcT9pK8E4ji3uIPZf7Zj9zYsMhK6C7Mzal6+FSapXZnBTI7WcKxje0qcpGDFeqnWBHqVA+NWX2lcQ+0cTs44AtqHDMAQSzKpUfDxNUJ2NsDI7bcI0wwt3+9Y6uehWfl8IoOv5rtdtZRuaWZ1ZiY85J/Gukm2j46ArMqN5nYqPlXN8l7jYt0aVYlGErt0PnXSLR1cPsNv4rakT18IigftLCgDYcjNMuY4grAiGTf506sqsbkkcp60zdlcm36pHxBoF/wAbW/8ADzodm1lVO6lgTHXkKIMaxG8yBvz9ai81clEx8zHINu3vfQj7ydSPUbH3TQSLtOKx/mIA+U1u1cGplBMC0CT5bfSmrzqcAuu++0H0/Q01lq4S/bsXCHuroViJ2Cn6UDmCS1i0pWQQvXmIo7IUd10GowJ6UDws97w7HLbaraEmY/hFSFwTbPPYefpQQ72WVyPL1FZSxbt76pmayg8MY9tF41ctvLW2KI2nbaYrvXZHBt8L9qnZPDL3GuWrt1oAGhSMa6ZJ+G3urgdpmGffe2V71bQdZ5agJE+k11b2X8ZftJ/xBYOUU028Xhl0tDSr3VxwlxwBsJZmiOhoPQ/ZxBb7KY1oRCNdXb0uttUqjEOigjclpjkBsajOBll4IltgFbvbpjy1XWMenOpOQLyqCICEAzzO0ig3g6ftty8B94lfeOk1LKC1xVPUif6+VRuKmh3keEGBJo/Hug5FrUNQDLy99B439pTM3tQ7W5TDXaXjOQxZQdlD6T8oru/sMUL7J7iAagnFsrcc/EtppHwNcE7b3GTtp2ta4G1ftPMYj+Yd6wru/sEDL7NOIWdUaOM3Uk//AJFkig6raIa3sffIpwchP0pCMVmQATz6x60oL/EPET0NAzfItMrRty+vOlKxOdaJO9zGZI8yrA/+qhc5LuVkWLNrdZ1Hpy5/hRZs9xl8PJIOo3UafMqGA/8ADQefPaLmcaycHthwfF4ldS2t17q2FVQri0y3NJ2kzp86qnZ2xdvZV047rozMZsm3IkqzLsR7iD86s3ay7ex/anxK8LDvhjiD411wpZFZwFVWPTUQwHurnuFxMdkuNLwfiDuG4dcuY9tGMG7YJ1W2UnY+EgHeglM7CuXuHdssrCwXs4OPn3CVYBe7V1QK3uZtUHkTNc8wjOUhJnwt/wCWu38P4jFy/wAS4YU47iZ2COH5tjIvBTZUahbbSR95GYkRtHka4mcRuG8bfBZxc+z32sa1YMGUEgGRsZHlQaI0tDEDYgSDH6UTYJtozKJYCd9+W8/CtlSuQiAalYSFP1FN8Qx4s3MjHdlY+FlUwrSdM/WgLw104tu0dQ02VBI/yiZ+Zp66dbTExAB6mlKDLESygws7QBsKUQOvKgaCnzhvKZrI3B6HrSidXLb4VpTOxnYbxQRpbTfeFJJ6imbjhhykhhv509eOp2AY6RzPnQ5EiQRsOvOg0GIOw3nafKlHl94fPlSQJgjlFLVSZ3POBFA5iCz+1MTv2C22voGMTHi/WK6RiXLnDMi9wvKsXMfKx7mllcaTB3BI9QRzqM9lnC7XE+3Yl7ffYeK+RaS4upQ0hdbdIUEx11MsVf8At9h3X47h8VUO63bl3BuOxmSoDIwPPTswBPkfOgpvGSt5bmQIVbirbOkRLAmDt7xVI4wO6yttILAgidwQSKsz2bpxDYuZBt41m4124ep0NsPnv8qouTkHIuPcAIDGQCZIHrQT3DnCY2CtwKoChuX3gzMTPzqXZdDso3ts0f5T+lRYt2xbsoCQwtqBA5QKkGfS3fQWS4BqKmCjDYmKCKyELFrIUhWYqduk/pUhjgI2oKQt0bb+XT5UPcK/aLhBLCNQ8pIEUWARh2SN2RVJ+VAJxQBmsxsVbUfXY0Nat3L1y3YsDVduMEUEwCSQBv0G9G5drv71rTdVQykF26ACairZ7y3vJBiQetAVjtOSFERcRjuNwoKx89zR+OJy1G8DVtEdKjbDD9o2t/unu5/0kH61KrcuG4mpyyiZUe40DzAs6oV1GdRHkeVD3x4mG2uZBj8aIDQW0wSf4vSaEvt+/fVHMx6wKBNrZlIMQOcD+utIY6sx1UnUzFYmOp/OlWpa+JgSRy94rGtJcRryg60Y6vNhP9Ggbi3aVbro6w4MEVnDyVS7vyT5GaVkM12y5J1SARJ9abxz+7yCoPiVfduTQLtrKFiOk77+dLV1DsRPKZ50lQzWAijYcz6VgQhmVTO3yoO0+wnhIsW+0/aW4ul8h8fh1hyP4UXW8H1Z1/5a6ziM1+894iFdoWeekctvWSfhVG9lTD/2UcPtIArZGVkHbr++IJ98LHxroIi3bYqATEKv4UDhuBUF6Dvque5V2/r31VeI5GLjcR4jczbZm1hogYqYBuMeo6yTVldSWNkEABlsD3Lu31mqd2t4oMQ3sG2ne3uI5ioFU7hVUDly8vrQed+2l21l9qrgVtdtLK6eo8TMfwj51EcMz8jg/FcfieGZvWGaEfdWBBBHxBNZxq+G7UcWRTPdZTogj7yqdP5UEJKkW1DAjcdR5zQdQwvaRw2/iXk4jYuYt02y0kShgTEj3V3/AIRe+09nOFZQgd9i2LsTy1WlaN/fXjJ7iHHdW025tsN9zyNeyOzLauw3ZxgpZX4ZiQTt/wBytBKISXAiAOZNM5UC/bIkSpiffTy7keFlLTvTGSWGjSskKwMHnyoNltViZ35b1looyQeQGw+hrFM4zGdp8qbtsAVnYwRNABZU42S3DLhdrazctP8AzJy0+9eVGZY/stu4ASUAJPLl0rd5Q5IbcKZB5Ee40Nds3GteDMvIjGChAPQjnHqKAjgxNvheKANWm0qMOuwEGpN9lIJ3I2oDhAZeHY4c+IWxPn60XdMW5IIoI9kYO0RuZrKcMztbEVlB4TxDHELxBki2sEiuw+w3htpeNZnG7VpVu4+NcsawPEzXLgnf0VfrXILxXA4vfss2pwvdkqdQkKZ3H416I9iOEMfsAmVdQq2Zfu3AeRKhiqn5Cg6fay1xsZWK+FSZIHr/AL1IY+RaybjJo1OLRuIpO55/p9ajkRLdu+l1gU094reY5MP686XbwLIWzkY9x7bKoKsG5A78vfQTOGL4wLbvaRbzqrMk6grdVmnUymF5QLTKw57gCnLJPhna5HjAGzHzFacF1Ny34WWRt1oPIXtJtJj+0HtkrORPE7xE8oZg0f8AiruPsChvZ1xkshhuNP1/+Xs1xb2rY+r2sdrknxPk61B/xWVauy/8Pri77MeJunib9tOR8cawaDq6yHEnVB6npNKNtQpZbpRuZ3251pWDy6SGH3krR2HmI+NAyxUOpYh1mCQYkGmmKWeKYdsXLlxtXejWxaFKsD8jA+NKdFDakMdSPOh8ssM3hOS9oKWW7a2M+HwsJ+IJoOW+1Pht7G4jxrJtoy2eJXOFqroPCmQuQWLEdfCpHvYetU7s/wBmsLtp7RcHgXE7YzsXK4g4ylIgDGs29dyCNxqZkWZG5FdV9qPZPivae/wJ+BviWMi091bmTkswWypUEMqgHUwIIHlJqS7AdhOHdiC1y1n3+KcSzFW3dyri6FRNWtlRd/vNDMxJJ0qNgAKDxlka7eVc0uyslxlBViOTFRy9BScNQc2ygkANIgcyAT+Vbyx/ab0wP3jdf8RrMFivFMcjc6iJG/8ACaCUuE92swrWW/l3IJilZILW7KEzrv2+W0gMW+XhpOUqNeDKwUNE+kU21wvl4q6NKgvcEnc6VI3+LUBtlibahhJ3O4399YWUExuxEQelJQeGCoJ2G9bKgkBYHxoMaIgmTyiK0NtWoyAOXKkuIYJ03M+YpIGoDnHMb/SgjSjKWBkaRFaGyaQeRijbtoM/eJBbpI50KyqIIG3lHLflQMqIKnxbkTFOgxyMkn6GkR4iefIHanVABA5Deg6H7HWuDt/nWrSM1y5wm4qqFJB/fWjvHQCavPtB4th2bGFaxHdla6t4TGyIrKzCOrMxHuUiqL7J8ex+3OM8QysgYtrDwrZF8sYB7zWVgbsWCgAdab7UcYvcc4pn8Tv3xiIi6MewE1BQG8FoEddzJ99BV+M8VDDMs2V2vsFZmBDKOZAHSdqrlpRczbVsiVZhIovKEBZI8wOZPrQNu6tnLS8V1BGk7b8ooLVjKURWulnXbc/wz1o++gSx3Ykc+XmDuaRaxbyWbORcxriWbh8LMpg9YpOdeRLz6yNKiWJ6AbmgEVh3l7r4huP8oNSBWVZBsNK/Egc6g+H5hy828p8Jcqbanov3fwip8mcllAgQZn6UEdlDvOHqSQQJBkenKg1XSw5EA6j7hvUi6hsW8uqVVxBqNvlVxbpHiZgBPvMUDFlu703T/Ayt6AzJ3+dWBATdAEQCenoarCkHHuAyIKjb1EVZMS6btvHukn94ok+oXf8ACgfJbVoYA+IGY6etMtbLG9fk84UR0p+8viWTKkCek0m+o+xtpiSdvMmgFx0Iv29t9Q/GlYzMCw9Q3z2/StWSRkIyk+Ez9DWrQOtBq+8mknqTvFA2cfvbrFSFYncA0ixbLJetqxJa6FG8iBJn60UDpuMYlRvM0xi2mfDUKTDM2pgfU/pQEDRattoOqPIc6FBILFti2xGn1orRatyxGlQJ9AKEDd4GcwNR1b7RQej/AGPKbvsywXVdrWVlW03G83Z6etXhriWLwY3BcuQALa76mnb4etcE9jPaPi+P2/sdm1zHfhOVg5DnGb7tq4qlxcXyJIIPnNd6x7ZDEFh4CqjqeXX50BVq2ENsMV1IC7GdizHc/jXIu03FsNuPZ3EGuMrcOxA9oMCsXWLCYPMgEfOusZV0W8LJuMWgeECNzOw/WvP/AG84wl7hvFsm5bVR3JuITvqZmZLaz6ai3wFBx7WMoPkvIN1muaifFJJJ+O9O20Z20MSwAA1dR8aHsgWj3Y2BMKec0dbEuxZRHOBQM3VvW7Thh3iwTBHptXsjshLezzs0RCs3CMOFmY/crXj28SMd2khgGgnlEbfnXsbsooXsB2aReY4ViRB69ytBLqS2oiB6EUJkKVK9OcDyoq3sST/FvQ18zpmIBMTz3B2oNW97bgjYwSKZXYSN+sGtI+lLvIACZpOuWJ2geKgduMSpggjVG1NZDE47qIACmPiKU4B8JjlIMxFCZeQlvGZ7txVRSNRJjSJEk/CglLCi3aQKAoCqAR/Xxpd0+EldXlsfSgsXLxsgqcfLs3lOw0XFYEeexoy6CU2D8gRsd96AdlOxW40ETyFZWhIRRHSsoPAOcVZ710WzqRSQ58MEDb8K9kdhOGnhPYrgOA+7phWlcgRDMoLH/mNePrVluJ8WxMFz4svJtWYnbxOq/DY17le13V29iFNKq2lCP4Y2EfACgH4hdNvhptgeJyEU8iNRAj51NW7YQqm4XwosHlAiq9mP3ubZDbqMlCfLaW/EirMLZCvpIMN3gHofL4zQGyXQIzEECNufwpSoAgAMcgqkTWBpTvB93T7orAGQB+7DaoAg/Kg8we1vHFn2xcZLKf3trGuwOuqyqn6qa6L/AMORI9nHG7XNrXHWSC0Aj7NZj8KpXtwQ2vaet0eFr/C8d5B56Wdf/TVw/wCHi6H7Ndr8WARb4tj3YnlrxR//AI0HZCq3SSJtuoMMNj7qQTd1FVQaupjY1jWmYmbjEAbbwZ99bF27bA1MLlvo0QaBAU+EMOe3LnQvHAbdnhzHkmRp26FlI/KimuKxVgTzoftApPCWcMfAy3BH+FqBfEGnh1m8AP3dxZPkD4T+NOYvhyLKux8DAGOsf9KSFGVwW/Y6MpA0/jQdrJLWVunY90Xf0IUk/gaDwvktqvOY3LN0/wARpzhqluIq+mdCM4I5SB/vTd2DpYHdlVpnz3p3hQjPaelm5157UBt46bKkiSzSTTVtteaCu+i05G/8zKPyNKurNpULAeLkdprWLJzLzEEaLaJM/wCJifwoDkMhiN18z9aUI3B5A1sgBy+/iO46RSSNpG/WKBq5DNJ5BflSVkACZBFKuKd2UzvSEnpJiBFAsLG+7RAoBzJYEEaWlYNSAgKfOo27HekTyO8DlQaA8xG/lPxpQ5gGTyn19KQJMs2r19KWsq2+5JjY0F67E2AvD8/JZdWp1ks3hUKOZ8+bVA8RyDdfuwYUMXO/8Rk/QVYsVjw72fd6HQNl3O7tqG8TFfvGPL186rN5StgM0ajuTM7mgr+W0Xio5LyrXBrVm/x7Bt35Np7okDrG4H0pGXIuv0Bprh902uJYt/l3N1GLe5hP0oO48fuJgDFwsewf3C2rruDsuptABHx+lc+7eXQvGbWPbtJa12A90INn8RA/CumdolxssLxEWFWxm2sc2ctTqUNaZS3Ll4S2x/lBqu+0Ds/wXCx+JDiHFrRy7Nq19gyQGPeNp1NZhZB1TsTyiaDm3BvFx3HA3ClmO/OFP+1WZXP2xlJJ2B5VWOBT+2rJEiAxIJ9KsLkjiMk7NyoHAFIyVHKJ8qhr4Jx2WNy8DaeQ22+NS1shci7O0kAjpURkFlutbHhKn9ZoBTut1dZjUvP41NcFuNcxltMd7dwg+mxP4GoMQXcEiCBE+YNS/CGVeINb5Iy6hPMlZ/I/SgnmQlQV0hXiSaBymACrJ5zAij3bTaJUk7byZoC8s2TOwBjboKBm0sXVAO8nl5wa03huK0gaSsGKy2T3qKfMcvWlm0WLOefMDoOkUDjrq70KeUn6Go7HOTaC6HlG8RVuX+1GNdt2rFwO83LmqFHMSIigwzJaZ1UlQQCQeXrvQGXmW5b7tWYBj1FDyNLH7oETJpVu6zYK3EZtYco2rcjnSb1xji3hAZtLaQBudp50Hoz2YdnOF8J7I8I4vd4aqcazsZrr5NxSXW27HSq/yrpCn1mav+OSWWdyTJ981EcLRl7NcJtCEaziWrLCJ0lVCkfCKlVbwMBAAUmeXSgiu0fErfDuzV+/dUuXdbagKT4mnxQPICfhXBPaFZxr3ZK7e4dka7NprT3EBJJAeJPkBq6+YrtHbHObF4E3dhGbTbaXmJNweXXSGqjdtca1d7K3eF28dVyctL1po5FtOvY+jIg9/voOBhS1sCeXL0oiywZDPPlJH1oTHbwrMqGG3WP6NE6LmpijCTt5fSg3cKjGvFnLDSRAHkCRXsfstA7C9nF8SsvCsQj/APhWvGt0O2LdhWRijCRuG2NezuzhKdiOzoYEr+y8STHI9wsUEkFEEklip3k0PksNYPWetEFA3iK6WHUGg8hlB0kxpjnvQB3yyYOQFWXYACB1LAfKnHhXjTIkTJpSoHuMjwFdSpgTB6flQNy65ZiSee4PQ0BJyAVOnbpy3+FVPtrxC5h9ks5rL6WvBMcNE/faGj/TqqdUtIMwJPrVK7cA3b3Asa14mfLuOUYGCqpG/wAW+tBS8THtW1Nu3ZRTP8PhI25CKguN8X4/gNdtcM7QcQwmBAXu8hgF59DPWrDayruPxi8960Fs5Fxu48Ulwp0lo6bzFQfajBvrxjIstbCD7Ob4EySFgbfE0E7a9snDMe0ts43aVGCrqDZ9pvEFAJBKzBIJ+NZXJLiRdcQv3m/E1lAF2Hxft/tJ7PYzHwtn23266ZYfVa9n4mcuZaV3JJgMzfCf1rxn2Bv917UOzDkgf+8LS7gfxSI+terbV18S6LlojumUqQehk/rFBMJbW4O8AAJYOTHXYfhVrW1qtgKdLIJVhvM9DVT4bk272ZbtTs5AG8eoq3WnKg77AbkjmaDdrwoVcRBnSelOKQBy5T8fdQl7KRiSdK+vn5VF3My+L8r+7O/iZtqDj3tzxL+f7SuzmJg2zdys7hwxbFv+d+/YD4CZJ6AE1YvYlgLwPtf7T+zWPknJHD83AUXSIDkWrqswHQEjb0ip29xbszZ9r3D8PiNsntFe4Ppwcu63gW211y6Kp+65gmf5RAPOov2cvbT2+e1m3aHgvJg319QJWf8AxUHWVuq6spfR8KQVcsdUwB8SP1rboG32kdaaZ7isLVtgW6k7xQa2LAjVuetb4uofhGQk8l8qULd1ml3V1mNtqeybYbGe30ZSDQA8Iud7igEyGWCRtQF0Lj4vFWJKizYu3PgbTHf4g05wJ48BAhWIkUP2ob7N2d45fJ0q3CswH3raZhv7poPB65DWktGCyi2pPmNhUpwy8HylFs/fVlYEb/dPSoK4xhAUK+FQRPpRPB7q2+NYmokBrqq3rO0UFiumbY85/h50rEGq5eIXkyIevJSfxatZCm3ca2o1BWMHzFOY66Uv3G5d6wJHTSqr+VAYWJt8q2AI2I5CfSkrpKAqwaQCDOxrS8ypgL19KBq7IMExBnakIRJBHh6xzp+6mreBNMAETMg8/fQOQumFI95qMuEE/wBfhUjtpI+XpUe6zdbbryigQFJaTPTaRRCINasdzy+dNhBIJ8THbl9aJxwWvKeYO+w8v6FBJB71+xYs3GizYUoijYSWJLepJJpGVAtgHkYMiiEUwo6ASTG39frQ+aCFEbyDP/Sgq+awLsx3UH6VvFtawiAjmST603mKwZl56TRGA4DK7DbpFBP8G7Rcf7Nq1vhOUoxmgtYv2xdtE9SFPIx5RTfGu1/HeNcPu8Oybtq3w97q3xjWLSqquOoP3ue8TQbDUjMskERFR1zz9fnQE8H/APvNTsYX57gVYcqQ6vInmAD+NQHBwRmMdPhCgTHrViy0LKfCPBv5CgxiJ1gESQeXSo/NtgXQ4U/eEnzBH60bbJezudwINMZhHdXIG4UchHWghGnviNQAYx8KkuE//eVl2JgBzy/wmo28o3IPTxVIcHac1Qx3S24JHM+HY/WgtLEi0STIIHSaGyE0Y7NyA3ing2q0srz5Rv8A1yofKaLDDVuxAEigDVYvooMrrHx3pZthi4AkjlJ5ViSbloty7yCD0px4F27AH3ulBH5Nu0tu0xZrai4slTECQp+EGrx2dxOF2sq9Zu4ti7e060LSw0kHcAmqXkWu+tfZtDM1wFVA5ljy2+VWzh9vIxMLD4obZVkVrLmIDMviB9xhooBON8NsHMvZGA3crcK60VRp1cpA6c6huC4Vzi/bThnZUMi3s++uP30ytvUCzE+5VO1ZxTtGMcZ2Lbt6r164CkmRaHPf9Kf9lAfK9tXZ12Oq61+/dZj1YY90z86D1Hwm531zLQSLRKunpIO30+tSmpQrINwBA9TMVC8JcNZ+0KoHfhD7/CAQPrUuzQkK2mGACnl7qCodqcyyGxsE2Gd7maqSLZYKqWmaB66mWoPIv4Wbm5XF2lV4e32VbB//ABWPj8J3kED6VJ8T4pcyeOWStte6xEa4pBI1OwO8+ix9aB4lkYH27ieBlY6pcu3WzMe4izJZT18wwAn1FBwDjOA/D+0/FuHZFg2Gs5T6bZ5qpOpR8moVGZX0XQrBuTVdvarjx2xweMhQq8V4fbd4GwuWxob6aKpLaXkGW8j50CcgkYt4qNICN7hsf0r2dwJWHYrgKgEgcLxNwd/7lYNeMbwixdBPK2wjnPhNezuz7Adjez/iJJ4XiTt/8FaA1SXOp3YbCViJPU0PdHiaSWg/9KN8WoER7/TyoG+IWdyZ/OgbtEqZ2JG+/vobNRbWVc28LDWAPX+vrRDHQxn7rr1HIzyrWcveWrN7yYKZ8j1oI1iq/dO+wO/IVTe3eLkrgYXaDCvFMjh7NZe04lXtXSAWHkwYLvyINW4vcbUbSamnYkbb/pTdywMkNYyES9afZ1dQwfzBB6UHKgMW7ltlWj+5xkGTj3pGkJp8a+ZlgPrXNe03E+M2823eul7NviWOblpiN7losVJG+wLA/IV2XjvYDhV7iNu9w3iN3hNnIuxl4doard1CdTaAfuExG229UL2s4iHifZ+5athEGLftqqiAqre2UDyAMUFBsKe5WJUeVZW0QBYMyDH3qygr3ZO6bPbrs9dOwXieOWPWDcA/OvXt/HcXb1u6nhJJDhpkH8D1rxnhXfs/FcK8Cym3k2XBbpDg17dv2W+0XioXS7EQDyaT+ME0FbtXL2Pn8NCvqvfbbSITtMuBv8Jrq7OAXkwCfDArmFhCe3XAsfkFu3Mk7TsiED6sK6TdYadBnkORoBcjIskaBetFiIggigEF43Ar90VXmwMtz5D+utN3wWvHYFRyIFat37dp+8vBgBEeGST0FBwX2z3rx9rCHHuGzeweHYvduDBVpZwZ6bmrd7GOOjj/ALZO3XFETurd/hmOioeY0PaBJ85Oo/GqP7Ybs+1Xi0mWWxiL7h3K/rUr/wAOGQtv2ndo7JH99wlz7it2w34MaD0urkTsIJjYVs5FxZC2dTMI1QBNLJBG87enKmlttrOoaVXrPKgVbUlwbrAsSDA6UTdkKRMjmKYQoC3dLtO5PnRF0zIJMk7Ggr+CO44nesmRDah7jTnbLBvcR7D8excQasm9w7IW0PNjaYR8eXxpi6Db46rH7twAT6if9qsdpwArmGCkEjnIB5UHztvhAEcSVZFIE+lN4IjiuIoUkd+u8c4NWbt3wM9nO2vGuCKulMLNu202/wC7LakP/Ky1XcVjbzsa5okrcXwjqdQoLVfU3MpQVUF4YD3mlYUNjl9xrd2+bN+lYrzl3bh2CcjPQCtYB0YWKjCC1pTPntJ+O9AoKLTlRBRjK7Rp9PdW4JckDlvPMRTrDUeUyY2pIYMsyNSny99AogFZk7maaYAcjJn+tqwEcz1ravAJgbelAzdItgE8is7VGqdyZ3HOpHKcFDHP5SaACiD0MwBQOIQBAGk/iaMwkN28x0yVEfM0MCAdX3m6R51K4VtlwmSdBc6iQN/KKB5rq2hGoQBvPWhbpe8hUDaDB60QbKqpMbnruaUAgAiOkeu9BA3+Hl2M/e6yKTj8Ouq4BMRygc6sQAkyCRvEgb0pbSEgx4vWghmtMoYGPlUXfICysb8jVlywBygah8qq+SDLTvvt86A3g/iymBBiVH41Y8gmSZ26mKrfBv79iTzZQflVjugQSCscpoBVAs5KzOluvlPKtZq6bLFQT4lBI98/rW7sMqrp8Uc/Kh8tu8xFUkSbgEnqACZoIrMCi27EmVUnYVIcHWOJPMj903P4VG5QY2bqqpYaSB6CKluDLqvoxkFrJ5/CgnLIBJSJ1AkQevnQ2U4LqGO43ImiEBWVMiBtUffY9/ciYO9A/YGruyJMEnnS7xJuuOpgz761jr/Z1Y/D5mtX2VLytPQmPdvQTfYfhx4r27xLJOm1a1XLrx9xFEE/LUZq451zH4ZwnjWBnW1vY+Bi93ZQgq9u6cd7qH1E3NM/4Qah/ZRZT9rcWybp1KuIlpUn75ZyCD5Dzo3tNefJ4hxz7QwufbH8S7wAtlkEfDT8qDiF282Tk3MlwFa4xcg76Z6VcPZO/de1zgt0gtpt5RiJn+y3TVabFW1jAkyxAkVMezy53ftJ4IVnvHu3LS6ectZuLtQerOH2hbwreMo0m1bUFjsAQNz6b0ZmsEwe+YFwqkqEElmO2w+NRuHxRMnvrefkhL1pmQKyaVaBOqeUkEU9lswKq+vTKzBkMoHp0nnQV1se9xPNtNj4lixj3WVC1wkPchQJAHISPjFRL4uVeD5nHAiWO7vWcZlYkorHSC3vKiBUvwzLyrnE8c96xD3i3LYLJgAD0ihblzLfgV7JsNdnCy7tu6pEyquSOfkGig5p7Vrq5GLwFlUrYTKzbGO7feZQtpjI8tRMe+uc2DIAMAda7J7SuF5PEfZ7icSt47u3Dcq9c18tKswD++QPpXGLbBh4dlMRQP5B/d31UzqU9PQ7+leyOz92exPZ5zLKeF4ksN9+4WvGzCdSqPvKQenOvYPYy99o9mfZW8WB18Jx5HPkgH5UE0Lqso0jTJ5daFynWGKyAwEgfjRBUrd8LL4oknyoe8pZGAG4EUDbANa0spIjnFYV+0cNZGJ1FZ2NOWRqxiGILKIBAprCYS9sCIJoIgnTZWV++Nx5DlA9dqUzlLQW2rtkXWhUQSQP0ohUVMi+NILAhl25A9ZrWReTGtlccj7Td8Cx97/pQRfErC4XZviucf3mVi2wqsviIcldQXz5gE1yL2vWicHs8bJ8IbISVMSItsSPPea7L2ksNi9gsq1j7OzW7YcGGLNcUE/EzNcf9olp37Ddmsi6yvctZDWiymdU2tyP+UfWg5pb7hE0uPF18NZWt/X51lBzq7B1W43PKPfXVuEe3ntnhBbXEsLA4qiaPEym07BSdyRIJIMTFV+72NTx3bN2JM6SJ3NQeVw5sK/3V1dRBA5xQemvZf2kPbjiacdOG2H9nU4i22bVLAa3IPlOkfCuv3VPfFTBLqsAb9YrxR2P7d9oew+d9p4HcsXbZ1FsfKXVb1EETsQRznnvUx2g9s/tB7Qqts8VXhNgqF7vhds2iw/xOZb6ig9I8Z7V9nezueycf4xYw1QNosbvduGY2RZbz3IqjcQ9ufAMW8q8F7MZmey8ruVcWwkeceJvoK81Y+W1jN+1sGuu5BuM5LM/nLEyT76sYNu7bV1AYMAZ86CQ7Tdos/tR2s4h2j4latY97NZT3NgErbVVCKoJ3IAXnzJJq1ewXIFn23rbWQuTw7KQR1PdK/8A/wA6oukidgw/GrR7I8tMH24cBvXG0i7n/ZDJja7jMi/NmX50Hrlmyi0JZMzJJ3nnSRlvbOnKsMo/mG4onWwTmVMSSelLFuLTNeYBBGpmhVUeZJ2oNWblnIOm2/3SJhduvWnyNTgHY9D5Gqhne0X2ccGt3P2h2u4Vaa2NZS3cN1p35hAd6r49vvsla4FPai4wEBnGBf0z6HTQW7iahM6ywn+8KN7+dTmK2q0AAVDCCK57he0DsZ2xzFs9nO0WPm5AvMVsEG1dICzqCuAWEg8qv2Lqm2SGGpQ0FY+dB5d/4huFjE9o1jiKpC8UwrbsfO5bJtt8dISuN4z27efZuXW020bWduUbj616d/4k+EG52R4PxpEJbCzWss0QSl5T+DIvzryyTJPU8ooLC/EcJcW9pyQzurAKo3JIIH1IqXFju7CWWWQqqkeREAGqIYGrUDsYmdqUM2+GkZd2QOesn86C8hiNXTbcEbc6QXKg6V3JAHzqD4eeIZWM13E4uXZJ1WryTHqDzp/v+OW7RuPhWcxUIB7locf6TzoJRgAhPKORpKNDFTMhQeXnQONxazllx9ky7ZQ6WVrRbRt6UV9otXCSBcBbztMNo91A1fuS+kRykflTSCWI5gECAInypxrV67bW/bssUJKCVjkf0omzw3JuIWZUtAifGd/kKBi2qteBHiI6nzOwFTaju0VAfCBpn3UJiYQXOInvO7WTtpGrkPzNSRUAGBty3HPegYgloAJjpWxbkAkAeQG1LKhl8I+IEUpVUDfrQaVIJnceUTTo3BBCkg9BWKoPLafSKdUKSFkkfKgj8y0SpMQCJO3KqjljxHrvP1q7Zf8AdyFJJ+IqmZo8ZBOxMCaB7hJYMGG4LiNt9gKsd1gCZUEATy2qu8KUlRB/iM/Sp7ILaVkAFgPkKAZiy3tiQIg/pTGQFSzYWQAzsZMmYA/WnlR7pCqdJPMzvFD8SIRcZV5AMT8x+lAxfZBZFtSZuEJ8J3P0NSHDB/bNK8hbaJ+G1QaavttliSdmafdt+dTnCSVzXYQSLbRI9RQTDBSkgmB9PSo27LXGYDfcEVIOTHfIJEgXFHX1qPyECsxX7pGxoDLAJxkgbke6msgghXMATBJ6DlS1cm0gC6VCg8+dZkgGwwEAwI26igunYJGx7eVbP7u4QisSdyDqefqtaz8gZycZ4o6+Du2dPIqo0r8SzA/GorB4obQa9bYlmsraumN0aCJ+QG/rRvFrgTsu1q0QEybttJB5qupyPmq0HPM9QiOp6AUHwTib8D7R8N40lnv2wMlMg2iY7wLzWfUSPfUtxO3BYqAARzquAQGBG4kRQesuD8c4P2qwLGbwLiFvKsqwe9a271V0kMjodwehO/LapRcK5jX7dzByXx1kB7dwalgjSSk7g/pXji01zGyBlY157GQo2uWnKuP9Q3q4YftZ9ouCgt2+0j30UaQMmylyRvuZAJ586D1ll4S3MLGfgmMmPk45RwHuHTcXVLA+RiYNVrG4d2pXC49h2+H2Lq5F+41s/aABDWl+oaK4pi/8QfbjHspbfhvBb7IAveNbdS0TzAaOtVTjvtN7c9oc+5l3eNX+GK9tbZxuHXGsWjHMkSSWPUz0FB0Ptb2+4hw/DzuyGbwNrPEUYNdL3VZFFxFaRHPb8a5OiG2midgBvHlQuHeu3clruReuX7rt4rl1yzt72O/IVJm3KgyB0HrQakMw3iY38t969aezm8t32R9kWnURw5EI07jSzL/6a8mBfCpHMjaRXqv2UP3nsX7NHTDJj3U2/wAN+4OdBbVML4N5PMjyphjNu80mS0AHaBRTbGf4RsdtulB3Q/duqkHS2oT5f1NBqwNJZdQKmCDQyHuuJMNiDvSh3quw7tgUYgGRyprIJbLt3LamGSSD0MxQN8TZ7DC/aTWz/uwF6sfu/WkYli3iNrufvspp1Nzj0FP5ivdwDGzIAwj6VvCW5cCXFSVdQR0BJgk0EH7SchcL2XZV++/cr9qxNTqJa2DfUkgdYia5X2/Wxa7FcLtYuYmdi3c4XbOQsBSptsYA9DNdF9r7Wk9keaLl5FZ8vFS2NQLXD3skfIE/CvPaZxXgj8MZCytlrkoS093CMhUDpJYH4UAuofxJv6HaspUgc11E7ztWUFoQWlLJbsEaeesbVCca7PDiVzvluBXgSZG9TzagskRv4Z/PrSfFAkydl2NBUMbshYtmb90ufdzovL7OY17BNqwoW4vI+fxqyNJBIgARJnzpIOkxIgnkBQchy8W9h5D2byMGU9etHcIyLltu4eO5ZgFafuk+nlV841wWzxbHY6At8CVYCPnXOcjHysG+2LdlCp1Hb70cj8KCyCF5lpkwANqFx2v4/Gr92xcNm9byLN+3cT7yMqqwYH0Kg1vheQuVim3cdGvqII3BG20z8a3jWy3Fc25Eae7UDl4tInbziPnQdXzPbt26y8IWcVeGYF1li7kWsc3HZupUOdK/I1RuJcX472guNf45xvN4m07jIvsUkc4UQo+VAoCWVRAYEyKKELbYydJ5bdN6CH4pjt9ivWbSAM6hQFAHP/aq1cxsixqF206bcmBFXm3ZFzjGLbaCoJuNvM6VJ/GpTIwMTJtsl2yh22YDcmg5cdKuLgJVl8SupIYHlsRuD7q6X2T9oPa/uVxx2u4qO6Xu1m/q0joBqmo09lsFpZCRv0JE7+VOYnB8XBJaypLyJA3nf6UEn2gvcW7SOtzi3Fs3iLIdS/aL7MEJ5lVmB8BVRz+z920Ga2oafECW5R/Rq3It1nIFsLtyJAp5rCAsLm4PSPpQcwu8Py18XcsAOZoF7ZRmS5sRuQK68+JisSe7DLG87EVXON9mEey2ThrAUeIT1oKZhZV3Ay1yceQyndQdnXyq6W7tu9at8RwJCuBqWd58qo9y09m61u6p1A8ialOA8U+xZnc3WJxr50kDkjefuoLbiXUu8RvFDp12bbnfkQzj8KkkuxaZTcYqATOqPWahrdlrHGQ9sq1p7EEeRLEr+DVI3FYoUt7m4wRT7+vwE0DF52a3jrsxJd5I5y2350chGhWChYG8UKy6uK3VH3bem2OmwG/1mnr7abLaSFaNo60GYCG5bv3vvBrhHwAopUIBIMavXnTPDNP7LQKwaGYtB3kty9KLVjuOUHeR93p8aBOlmmSPIADethQGLACZJ91PbHdV2I5T0rGUKdQlVIJmDyoGtIgkrE9aUoJkSRJEGJpQUFv7wlgepjanArmZhl9TvQB5iE2lcNG0GD1FUfiIi8w32bf510DJWLJhfukb9aoXFhpyGBMDVEH30D3CAv7onSZY8/KanchQ1vYhiDzmJqD4QP8A7PI2YkbdRNTt+ShQCSdh6b0A4C6pVQQpE+VR/EypuWlBAlDEcvvGpNLaKrMxkgHb3CoLiF3Xn6TAi2oJjrz/ADoGbYBzGhtRS0PhqP8AtU3wknv7zAhYthRv1Jn8qgMZtF3KIBkFVHqYmrDwpAA6L1VSdvf+lBIhv7Uybf3Qn1oIoxOnmQNIgb07kubeapjYAAeRG/WnraBRIXST16UGIv7xlkQABz8hFKugNYbnGn41luC92DtFaMCzvJkQTy91AFbZlzQ9tyraVGx+lWC5kPdxLVllgIxuNvsTEAx86g8RdeSgkbAj371LLLbqCYESRQA5uO1xHIXSeY9aq+RjXLZYMnXyq8ESQGI90eVNviWbikmD5k0FBILdJ91J0iNyauF3g1hz4Rqk8hTJ4DbOrSIJHQzQVQWyTsSY35VmgxBg/Herlb4NbRSXYMY5Ac6guKY648BAANUUAeIsJ1JDdOVTNsakBadtpNQ+KASymeUipTHYBWRiJAketAtiFRQdiOXzNdS7Ie2Ox2T7E4PZ272dv5z4XehbyZCorKzs4EET/FFctYkkrtz8Q5zTBeeUgmg7Vc/4jcK27K/YzMgzuuYhgdOlEWv+Ijs1dA7/ALN8YsSTqK92+07cmHSvPWSuplZvCzCdz60zP8wI2n4UHpe17d+xNwg3LPFccmAdeITG2/InrTo9tns/yL6huIZWKqqYa/iuonVtvB6TXmu24IEtBMbdKwk6oViQOs0HqG/7YfZtZw3e72osOSo0pZtu7EjcDSBz9DXnztp2jbtH2xzc/gudxXH4bdKi1Yu32QSqgFtAaFk9KrZkE+YaSafxCRlW/ItB686BzCs3VyFFx7jxy1uzdee551NhGJkkbdKw46BgV85miebeZPXpQICACARFZT2q2uzHSfKKygsgEKVP3Y6HcUgq+5B2kbn9Kw7AQSTswPT1rQuAsT1Bg+6gR3aEtqDEHfad60A3UwefM+VbDEljpQKY/i/qaTqcqxA0yRtP1oNgFQdx0HnNR/GeBWOM2SGhLy7BjsCJ6npRoJBKvMEhgeW9FIFKbMZiCp6UHIL6XuEcZ0spV0YalUMd+XM7nz9asHD4uWjfZo+0O95pG4ltp+AFEe0KxbC4lw2wt9wV1DmwE86Tj2+6xbSKAVFpQOu/qPWKAvHBBBgQRBNPsNiAxBAEjl02H1FbtBVtxymJ3gxJj6Ukk7agAoIbYSSelBmCFPaAdQqNsOXIfrUwyXTJRQASPEx2mongsnit51BJS02wE7FhvVk7qVVyI8xH9edBH/ZrpY6iXHKNUD0pS4xW1pUaQR/DR/cEACec+4isKSmkEhgY5/KgGWxpALEN13WDWhYJkAMDMgzE0Wq6HlhLcx7orbNIOlwJ6eVANbtqXHe3Aschyk+U0tUtoTEEkbnVtFJa2lwst1AzEQVP40tLSW4W2iqoIhV5AUFU7RdnbeSj5OMmlhuVG+9c/vWrlq4yMkEc/DXbtJgyoZTyEDlVB7aYOPYb7RbXSSfEg26TQPdm+9yuBXsi+ZdnW0j89re4PzY1L4q68tXMxYAAMc2PP6fjTPDcf7FwLEx9OkpZDMPNm8R+pom2e64fcucmZWaJ6tsPyoB8MM+q6ZlyzSPfNKzDARVMsxCqg2k07joLdlQJAAEbRQGRkau8vEkIinSPxigF7H5T3+L5toBjZbXcESY8UD8qtwtu2zFgrbSd/hUH2L4Y+Lwq9nX7YS5kkoqnoqn9YHwqy92S5UbwIMH8KAYKpGxLEbkA0oK0mFJXluZ2p4osj+EmYgdPWsjwkjxDnuOdAxpUHxACdxAG9KMKoJ2E7sKd1EkKAvIggjz9awAwTA0+YNANkMGsMoPIggkfnXPuNHTmOBsQ3lXRbqlrLALJKz7q55x+2wzGIkbg79B50GcIzse21tchzbCAxIME/Cpi5xTh5GpMu0GLCIY1UArbAEAHlJ39aXZtF7qgwVJoLHe4piaGIyVfVIhZMjb5VBteN+9dutCljqA8l6D6UZf4TdtYgvaSFiTt8qi7Z03RIiGgn0oDcKbl27tJF2SCfICrBgsWuZKoJZQsemzVX+Dli13Yf3jbAVOYRVXyXOxBWCOoGxmgMyB3l8LEssDbqOhom3tbg7GRJnY01kWWFy3fsFGKgrAncdIrVm4WSGkMDG/qDQLQgd8d9iBtt0pRHg0weUfCmzJW4QuzXFSPgKcJ1QFM7c6BPCV1ZDr/ACqWHWN6lm3YhQB5g/rUTwoAcWVDIW4GQH4f7VOMhQAAb/xH7xoGdyWCkBQfKsaCzALO3nTkqATp1AdTtNalT91GAHKDFAghiviB1EH0mtaUUEEzA8ppxtpIDLsQfI71uQdP3Y/xCgaKKE5MfnHvqs8eQqGJ2AII26Va2XwDyjb/AKVCcasd5jlupWORkmgqeMxF6QYgdOu9SWvS8k6eRJ8+dRmKoAuEjSREipAhLqK4iSImKB97g+9zJA91CsxYkc2mfnWtcWVIO5n8a1bH7tjurN90nagayVLIzqIVdKkUFqEeLdeUVYuH4v2zAzQyk6GUb7mYP+1V3KtHHyGtwRHIxQLtnwzBMiOdbbeYJEEQKRbP7sAwW6++lyYgCSPxoElyCdQMneYonAU3eI49tRqJuD02G80KSOpJjoakeArq4tIgi3aYj4wPzoLGNmmfCdvSlbJ4iCGO6g+Xn+Fb06UJ33IJrWqbjNMs2xDeVAmLbbtMmsp42iIDXAp8orKCdJJaAYMbyDWG2YKkAqRud9+lPhkJ8LGRy93nWaFO0ET1oGPs6lQojbkY5UoWgASWBG/3h7t627W1ChyQTsN6xXLqe5tgAEySDQMhW1amYQREtWd/aQi2qaiSAWOwHrRDWNYVnGoDlG/9GlDH8ciArAQPdQUP2ha3Xhx0lVZmAI5f1vTlm3LG2ARp3B8hFGduMcXMrgNsyrNdZjIiQBy+lC4L24ZLp03LZiYiQek+dAeAdehQUIUAwD/XKmWZvDsD59BPOn2ZSgdSJZgCfPfagrupVYE6VUGY+JoJDs0hORm3FbUdCJ75Zj+VWRiSGgbjnUF2WTvLOeVlW1W4kRI0tvVg0kyS0eHoKBsBjBAHPkdhWaNtTHSSd/KnAoWQGMwOW1bKiILknlMUCFt7EA7+k1o24GkptPOKdW2z+LTJiDvH1pwWVKSGLe/egFWxJZnQLvJERNL0sAQEA33PnTsQ5ATVHypYeSAVVWnoNzQBLbAHPSZA8IkVQe2AXK4/j4CEnvbqoRuYGrf6Culc3A1QAPEDtXL+IXTe9omOGiUu9B/hNBY741v3a7hiJj+UdK1kgnGFuNOt1B6dST+FLtjUxdTIPIjoK1eIN5eiqWYmesRQC5d1raLbtzqcQPQef9edN4+Jezs21i2I0k63I2hF58/gPjTmrvLj5BjSoIAmZjb8aM7PMv2/NYklktKo9xb/AGoLC62Vti1bVlCjYR0FNd2rQykD1PWnWUmSQx6GtC3CkDlyII6UDTW2KASAV+75RSO7gjrH8J5D/aiI0p4zA6CsAndCZjcUAhUgggCZkgnaPOnAgLgmSoE+o8/jT5bU3i0wu425Ughgd7GqZAOrbagaAkGCA3Mt6UJlcLw8yFuIJjfSOe/Ojx3TDddLc9+ZpwohQvrVhHWdqCCHZfhpY6j15aRTtrs1w622oQSRttUuFtz4T4eZBrenYkDpyjpQBZPD7F3BbHRDuOZMkxXMeJ4b4ec1uOu23IeddaK6rZLDwkdDVD7WWlW9vudI3NBC8KBAYxAJJP0qVxna3DKJZgZExAMzUTw2AGkzvIBqRv3CtsWxKk7GgkxxjGtQt9n1DbZf0ppuLYCwV76QeQtEmKhAgZt4JJ+fnWwge8qTKgz76CSvdouH27yrcW/bIKsVNvlvvT+Lx3huRcTHS8yPcOkM6lVknlPrUTZ4U/FOKqiXChkW5gATvFWa37O7NzNt4n7QlbkkuR90aon8TQH2OF3bWVayLjqBbYtpUSWMnafdUmwBPht7ciAJNOWbiXcdWEsvIMTzA2BrDqMmBA2AjrNAydAkMYHQfjWgygnRpPn60t7c7squOYnnFZoVVBKBYGqOfyigbUK0ypHWehrGKWiYAiABImllQQR90CDIHSklFZgWIkHY+fnQJCsRqdkP1PpURxY93iOTBEE89+W9TAtbBpXqRJqE4+AvDGO5EnkaCnYB1m6diD0I99Ehu7Z1/h6frQGCGa007tM7+6jxuon+IzNAgtIRTyUGd/WiLY8O3UbUNvrXYr0+tGKIVv4jsZHSgmuzqn9n5LagFa+Y9dKiar/aKytvLVgAVLEbbc6snACDwVup+0OD0/lqI7WWyiq4mAw3j1igryxogROw32FLBkbbHlTVsgpAhj1Hwp1TDAASYoEsIMR7vWpvs4ias64x0qBbTlI3JO3yqEPoYnz3qxdmEU8Nym0gzfA3E8lG/wBaCYGonVKsV5byIpQCk6nVQfOK3oQsxTqZ3G9KRSwGkEkdN6DBy6/OsrDbuNuCAPetZQWIOuubW4EETyNaHeXAWZ9MkEgDai1t2gFA5AcwJnypwJbCEaw0chyM0ACYyDUykapBJPX3U6LahjJ36CBFFQSCBEcgJ+k0lV20q0nbkYoEaG2kgkj7prasULKW0jmxkbbbmlKLgDbzEkgCaWDbSy968yJaQFnYjYAcz/XnQUHthcXK4xwnIxb6McUXEYMQQysR4gZ5RyJoKxnYCWz9pvJabV4dY28tj1FMdoONY+Xxcvw7GsWbWOdCEgQFHTTy6bmq7xK5cu6fBpD6nCiNIfSB4fIEdOXKguq5fB7iymfYEcvGIPUUJk8T4at8pby1a40aUtgszDlsBPOqTZxz4kNpmvHdVUcj6+tdy7HcJXh3ZXhzfZrIv3LZuG4qDWFYkqpaJ2H40A/Z7hd7E4Ub15GS9kMt1kdYa2oBAU+sSaljbEkeJQd4G8ijGtExNuSJk770gq5bxSgXcbes0AhtmG8Mgnmwg7Hp6U8tq22xDMeonkPfRJBZgq7EkkAdPnSiiBCCPFsQJ2n0+dAEEkAQZAiB0pSqo1AiW2jpNPnulYmYPn5VsKpUkEx5nc0A7BUkbsCCQeg99JCW21adyfPy9KJ0+Hc6T6kVs2QTIt6Sdvd8KAM2FZzpGozET9K5Hm2ja9o6oATF1vDEbaTXZRaUvtqILSDyM1y3jFof+1S4pABS2WG/M6fx3oJzHUbn7sc/0oTJnVoUeJhC+knepC0oVDtMiAI50Mtofb77XPEqeCAPQAxQDsFtqwCgqsAD3f8AWkdkrty72gzgCAr3GQeUKqnn7z9aXmOEV2XxNDaEUfeP8IHvJFS3YrhSY3Dr+c0FXH2e0437wAzccHyZtgfJRQTT2373SZIIjblNa7phuDp8uoFGSxBtvyGwLDY79TTbgEsF8uQP1oGAoJh13I5VpgIGgaYEeLzp7lJIGxkTvWwFkiBABJAnnQMFSJER5QBv/tSWBj/DyHuooISpC+EDkOk+W9Mtb8QZ4B6auQ3oGGV4ENIYbyedaW0SDpWFPOd6NKXVCkHUADuIM0kBmJChoI90UDAto267logAf1FAZHE8XDfuHyHdyY0W1kk+VSYtuQ2lipIKzMc9jv051EHg93Ey/tmIq5SKdRVj4+UfOgxc+9cKlcG8qnk1xlWR7qp3au5cYk3FVRBjeev+9XHv8d9X7xldokXRpI+dUztKe8y7NqZDECBvtPnQA4ihFgLpIVV57g08yMfvQB0A6/1FKt2wFLc9R6jyFavyAQZPLc8hQMsZHhgqN5ApeMoCXb7CAAYJ8qSqzbgbMx6iYqUxMZb+Zh4bSFv30Ryp30zLHf0mgmOC8Mu4Yx8y8q6iRcCttswJ/DarljkWODX7lxR319UZUIlghLBY/wCUn5Ui5jWL+RFgFrWoAO66SB6iagO0HaDBx8viNgHW6fZrQRGKMoUNsreY1AmgPuLdWxGNbRmUAKjnSPdNNWDl3NIy8RLRgldF3VG/u/qagOHdpeF2Lfc33zmZm3a6Q/PlEb1PW+IYdxAUyVK6ZBcFZ9BQERuTyJ2I89qSSSDsQPoKWoJSRBMbMIINYQ0kRC/zc6BsESQdthBikMmqWDdNgBThLgHS+or1NJJUW2DbkjqOe9AwysQSVInYrMgRUVx4G3wtjP3dh8qm4ttIWA0CP0qI7Q21t8DvkhSYO4M9DQc8wgVxfDsdTb0YSyHSJH50Lw8TigAkmSffuaLA1Ixjccz+NBoXNboSBBkN60aSQDJEDeZ2oFWCx1hvjERR/MFZ1SInlQTfZvS/DctNILJkTuY2Kjn8jS+P8Pu5fCLndeJkhgBsR5im+y4UPxJCY2tuPkw/KrALRJJYEiOhE0HJbSurMCIgbztBp4bEHmeceVSXaHFGH2iurpGi6NajkCN52qNkg6fDMTQYYYCRHv6Crd2Zx7i8F7zUSL11mVZ6ABfrFVMlghkgb852q7cCNy5wDDIEaVZQZ6BjvQGm0wQ+EAEecxTDG6SBqYy0kkzRLEiQGJkyY3+lB517u8dbagFzsCtBGZPELq3ytm3qQbAxWUvH7lbChgS3X31lB0SCH1sAoBEkL16UlFl4CgAb+LYe6aMFlQhKrAB3mTFbXHUDwkkeu1AOyjRp8JXoZ/WlFCqjTbOk7c+fwozuxsoXZeoHP507atAqrIgEnkdzQB27EDxhWYkH3/CqZ267QYio3AbOQEZCrZYS3rYkkwg6SB4iPdXSbaOjLcB1MCJB6b9aqWP2RGK3EyMjvb/EUdL95dKm4GMsdLAgchyMjoaDkRysUMthbquByZkC6p91NF00OGsaiIIAMAb/AHh610V/ZKpum4OId2pYELz0/GjsX2WYyw2ZxUNHhIt2ySYPqY+lBXex3ZJuL8M4hnPeNh7hFtHA8Sg7kj1gH511W3j2rGHZxbCk2rFtUUkbkKI/KnsHAwuF8PTDw0KWbZ/iEszRuSfWnltgn7g0iBLUAotqSAN995P0rVxSwKKuk9CetEizCnSCIBEHz86RdUECRLTInbagYKlrPiUM2w3EQaQLYUQbXiO4J8ulE6T4gdpM+c70pbLKviYsW5gdD7qATuyW/hE7SRPqZpK29vERznwiKOFtBcnVAJnzpWtNLAwd4E7AUAJtk8g2+/n7q0trSpA3Xn4gZnnR6rJ1KQSBAk1prRCjwkTymaAIp4p5Hz51y3jFkr7WcjYn+z69/IgV1sWtekADfY6jy+Ncv7QZGDje1fI+1Xlss2EiqX2AaZIJ6bCgPWVCySATBKmeZoYMe7cidTEktMEkk0aoRpYOjDTuVIPnJ2qhv2jz8e93F7JtONRCgpMCTAJ8xQWzA4Vf41xH7LbvnHsouvIvKYZLfIhf8R5T03NXsWbFnHSxYtIli0gt20AgW1GwEVXfZ/lW8/gedkiFyhkd3dKfdKgakj5tNWuNeollLEbg0AhUAadLFvMjlTRtR90AEmRpBO1Hi3cYeBZUcx0NIuI4gNMctKjePOgC7lRALkTsZ860JkKzwJ2k86JhPKSOQB+tJUwoB0sNX16UFSzePZNq8uL3K2LxI1bHUQSQOe1LHDrZcDMyLl5kP3ZlR5xO9Tubw/B4jP2hArAHSytBmP6+VRS4HF8a1KNZykUbLcOlgJ/mHOgQmHhqgCa5mQRcYQN6JViAVS9cVh/8Q/jTBGXa1G9g3khgCyQ6x57b9aWt+wNSs4tSNtSlZ+fWgKS7kd239ocyRzgz9KV9ovbamRliSNOkz8KatkStxArACRtKmlAKAwKCSSVYH7u+9As3XujTcwlvIwIMMDvHkfQVzzji479pAmLZ7tVJJERyETFdDP2dVMM6sRMkjSBBmevOPrXNsorc7QZlwyyp4QY5kn8KBwDTbXaBBMfGmCup9xJ5ATT7kSwkCNvdW7KjY7mDQYtmArQNUTzqwdk8G3lcXu5mRbLY2KBbaerPz+Sgn5VDPCIxJgLG0dKv/ZvCucP7PYveIC2V/aLoI38X3QfOF0/Wgk7VsWMDuw+pw7gXCfvr5+Uxz9a5xxns7mZHafiN8BTau3yVk7hYHPy5V0q4oW6bYQIFOt1jwgxyn4Com9id5kNcW7dUuSDBkE+e425UFcwOAYePab7RZFxgepo63g4tpFW3ZGgAiJ5z6VKHFYyxvFdO/hUb00cS4wZFy7okQYVZ58586CFy1PD7tr7OX1OxBtzyjr+VSWDltl2mF86XQjYCJn09Kct8LspLF7jMDJLNuY+vWiRZRbYVEhVECBv1/SgaNt4MQfXzNIKtBYgQeUH+tqfCgEwTBHKT/U0hV1Ek8ukjlQM922lhpgLykfhUT2gt6uA5EndVBieY3qc0mSJMHnUZxjHVuCZa6ZItkjzHpQc04eAmKCxk8go679aNKypgDcErHIH3VHcPH9j5wFcipBQSo8OwO0bk0CFBUowXbSGBnn5b0+t5ixEzJhfOay2AcWyhAmD97bkTtSPu7jxECQR+NBY+zB1ZmeANxatz79TVYACqhtWlQeoiarnZExd4lB1FUtNB26tVkXSIiWZuU9P96Cq9rl7ziuFKg6LbHTqALCQInpO9V3IsNjXzZZgYAcEeR6H186lOMs+Vx24FYXbiKLdvSmnSoJ3J896AvrdZUS6wV7IIGoySv8o/KgDb7rTCwJPh99dJwbC4/CsOyrSUsL4Qs7kSfjuaoOEovZ9jH0kBrqK4cQQpYA7ct+VdMfIsW77nIY2rSqxDc994HvmBQRebfOCgDEd6+4SenmTURe1XbgJJOkEKB0PMmishXzM0uwJJKk7iBtSXW0bzFrgCSTIGwA/GgHVXRdIYbc/fWVC5OnIyXvM/eajKmdMDoI91ZQdzS1cMkwAKf7hQo2B8WwB60+irzILDkBTgCi0VJlv8I3jlNAxbsLCqwnyaIiacW0LZKjUAP1p8WxtrBZeYMQf96WBGqB93ciOXrQCrbfQI0gvynpS7dpyzMSIO3vjbanUbxR4dBHh1gDxU4qMwXxBSecA0CbdsAnUQVmPr+NIbcEhC0ExFPRpJhVWNxvSAiqsGJHkfnQJ0jURuzdQDtTRttEbcoG0UXG233Y2O3nSWQbXGERvBYGfKgFIUkyxXaZHX+jSRaKg62LKZmT9aNMMrOF1MAYGmYPOKYABBBULA3RTvz+lA2bQXSEAg84PKtwSpUHeBMCZpyGFo6dmZZiIkGsXYktKxtyigb0C5tpBaD1gjyrQsFidQCjny2Pr6UX3YUMQwI5TEbxSOatLQY3ETB3oGUtaQNJ1N6Dl0rIHJgxI5GnWCqphHnqZ5xSGU7oGUgc4PKgauBAdiBJ6Db1rmHtTtYJucNKY9s5923dts6r42tmAs+YEMa6lcxxfZVDaSDKjr5VxLtbnni3ajKfEZrtuwxxrVy3/Ei84J5AtqO3nQQrYf2TRcDNa6toJB8zO8HnHwqBuWS+SxY+IEbHl/UzU4gbHiHLKGlku7qRuIleW1NDGWXKLpmIJOuB5T1+PnQXj2ULdW5xiwgIslLVwCNtWphHymulLaZd+70xzLeEVzLhn2/gPAkxLUi5xEjJBQQdAEKfdJIj31NYfDMzNsJmcRzrq2nAZbStuy7iTvt1oLcblhdZZ0VOX3wI333odsu2QwW9bYRIHeCoMcO4an7u1j94Ijx3GYtPmCee1abCwlYquBY8Xg3STEz5/Wgm0dDaUlrbEn+Fh+vupTWQ+rVbGodAOR9/Kq/dwMMOVfAtSxkQIXz/r1pxcNccsmNlX8Zgf4LhZRHLnM7fCgme5AWSSG6FgCKxQeRhgee8VEi9xSy7EZlnIUcxetFd/KVrY4plgK+Rwkuo2P2e6G8/P+t6CXKQRKd2OewkH30wVVmFu5ouJBJBGoUGOM8M1h7r5GIxA2vW2Uj0qTs3sbJt68TIS/yOzKYnlQRz8OxLklsa2qlpASV36nam24WCP3GXkW1JMnUGA29RUs9l5OqyrMR7ppsWlhkOtTIHhbagi24ZkaGuJcsXFCn76lTPwrl1kTn5TMPvXyCOYgf9K7HkPbtYOTdNwwlpmjTygGuM8PJe2bk7sGaZ8yaAtF1FmO4n4URa0hdhuTzptQVAg7e6lK+hBPqQaAnEx1zuK4eEXVUv3VDk7AL/F9BHxrqV9WUgIpUgAa7hhba+m9U7sHw61lX+IcRvorLaC2LeoAjU3iYj1gAfGrkbFoKEW2oWZ5co/oUERnXci/aGFw4PdVie9u8pHkCfPzp6yb9vDspdANxVUXCpkTympAI5MB5EHltNINtyRpAUGeXl5UAhVtSiPDO59POtCzCkyvh2kA70SUAAMnz2FYNAVYmZBjzHWgFKyI8RYxvO0b9KTpHQyROx3okaUBJkxuAOdMOqwWbY8iefPyoBzLAwDtsPTzrAIad4A2jbzp2UVQANQnqOlNEBi0GSOnp/QoGzusbRzjnTF+2b9i7bMyyMN+uxomDO0GeccqSoZnUAAGevlQcf4fbKplWzyW4wI8oMUQJtyoO5AHUzSBNrN4ijGIymETtIpShiSdWn1nb3UDtp9ViykL4dQBiDBJO/upZUm3t92AIFIW2LlhtMeFiR57gfpWrdwklXiaCy9jrYX9pMdyO6WPgxqwlWNu46CX0sVESC0GPqKhuyVvVg8QdQIe+o3/AMK/qasVtDbdSu2lg2x3oOc8Ldb+Qhu4wv3biLpQ7h2KxBHoelKXGx0YW7gvW7g2ZApDBuUQalOHHK4B2gyreNwyxnZNq+3dJdXUApJZGA67fUVL9oO33F+0CL+3cTBTSxbXZx1t3CSI06gJIJoILCs2svi+Dj2S50MLrliNkU6j/wCL8amsq+MjIeAQkDS388MRP9eVDcJ4bfwsNnygFy8zStxSd7VvmF955n4CjrioO68OwAEKdiATH4UDCEJuCpZ13Efd6VAZeUt26bCAmysatJ+9BmKlc3NGLcLjRcdt9LkrAg7/ADiorDz+4wxauYiXlSCXQ6XSfI7gmfOgHbCvXT3lq2VRtwGXlWVMXOKcPUJbGLfy9Cx3lyFPMmIjpNZQdpVJA0lgTyM0tVGklmIYkSYBmsW2oYdQTuRzp1RqEBSfQco6GgSANtzEEc6w622YkgmJIPPy/CnAFIgrDA7zsKUArOGgyASByoEIqqniQjcSefpW/ENUM0cthFb1EtIDKA3M9fd9a2BqUCACCDE9f+tBpgGaGDL6kRE+nWlvsCnIlSAxE/GsACqQx1GZYc6dBHiCKG93lQMLA/dy7GInl+FYul1lfugfxCI8xTxZjqbYtExP9RWjbtkAEMBB+PpQNKNOkG6CWHONvnSLlvTLyv3oOnqfKlrYRJVQQGjwgSAN+lLYadJMARAUjmR1nzoGGtyCWcBdUqo5kGtwS+6uxaREbHnNbti3cskgIwPKPP8AWnVVmVdAE7giTy60DIKaWX7pBMgnce731sDSNlDMQPSB5fSiO7GpmJ8JgiBIkbVp1JcEwoXkFX16mgaKqVOzMV5fMzSSFWBbhN5nkeVLVAp0sGVvPnt/X40oWtY8MdCYgAen4UFZ7X8T/YXZLOztSteZTatLMa2aRHyn51xjhvC+0PaTh3FszBthrPCcMZ2Z41RLVnVpmDBO/QSdjXceL4PAONW8fG4veS69i4SmgyFYxOqPCdgOdV/I4Z2VxEvY9u3hgOhtsWtESuxmQ3mNtqDg5zbyttaVQTz39aOx7eXdt6wCisN52VY6k9K6Y3Y7geRbNwXsmyytIVELBlJAiSPfv61P8L7Ndk+H3UuX+HZufcQlv7WfChG2yxBoGMXhp4n2Q4TmCxca+LbKrwQCAzaTHPoD9aHx7/EOG6cfifDnuWllVe2JNtecevXar22ZwqGD5fdSVYqwCqvSK2v2e8rLbyEuKQSCNwevM0FPXL4bdIa1lIrEiAzBWHlsaJZHY+I79DpBkflU7d4JhZat32HbuBhuWSdzvzHnUc3Znh6tOI13FZRACXGA8pjl6RQRdy0QYCkHzAnatJbvqGlVZGUsAZnrAEchPM0bc4VxawrDH4gl4Bp0XgCdukj4bUwtviauRl8NIU83sXJ36bH86BTC3pZ2fZVBAAk7AbQfMkx6Vu5aa2GNpg6K0AxBJH5UkZGMub3DC7ZvTA75SvTzO1PNjfe7q4HkGCvIjyG/L0oBHt3hdKXAoYEyp32H9bflQ13CwWWWxrbH0XS0j3e+j2F22VYKVZJZTEmCADB67AegoZlDMzqdTNDEk8/eevv5eVAMlp8cn7JxDKsyeRfUon0blv8ACnVzOLrbJZsbKYEbG2UY9JkGBRC46hdUGNtwdjW1tdF2CmIHMT5/1NAi5xbVgZFriGBds67TqrKwKgaT1rk/ClDYMQCQAoJ95/Suy49lnIRzqQyh8pPQj8h8TVI7Ndhs/Kwcw3cm3i28fNu4+orqHhIH5mgggAQpBII3imXIAIkHbr0q4jsRl3AzWM1HAMAMhDHyP9edaxvZ/kZttLo4ki23YqSEMoJjf1jegsfZLEt4vY3ADLLZIbJZlPMsdp9ygVNd0pYmWBEbdBsYp61h28TEt4WMNFnHQWVEyQF2rTC4NK+IhdjKyIoBjaUaYZSAehpsWGB2X7pmRRotFwdgBzifOmtLgExA5mOpFAMx28KhQOerYmthdS6QAJ8qfhgN9yTtvz/qKQWYqVa2FXpyFBH3LTAkA7GeYmDSGQcmJETB5Daj9aMAGXxDkAPzrXd22BU3CZ6ECaCMa2TbBJnf+hSBbIAIg+c/hUw2KunYwwG45EHlTDY7aWBjSSD4aCNYMNQLS3Sm95XUAwBG/lvRr40hWkDV1Owmmu7YKWPKd/fvQcjzrS2u1HGrLgqFzGaI81BFM6UdoJIJPLTU520xUsdr0vkMPtmGrsJ2ZlYpI9YK1FW7anfxK3MRzmgaRe7dl1tyBkDlvSbyrrlfKSOtPlUa3LAiYAIMbz1pi4gQMJMDrzoLt2RSOzZuiP3uRcJ9IgflU4ACNUBuo8O43qK7I47W+yth5J7+5cuKBzA1aYH/ACzU2oIWFC7GDPM0Al7Gx8hla7b8aE926nS48xI6elDWuF8KxLzZtzG724sFGdi0Geg99SLXlsY7XnCyOU9TUGbzvOTfBYs0wD92ekUDrM75T3brKNYFzbfTuCPjzmgMvLtWUDEa2UCFXYsST/vR9427Vs29OpjMnlBiD8oqt8RuJczQLJTTjsBrnfUPvDyigCLPcdnyWbU/LqAPKKSGdLY03EUFQxBXdl5bUdl43D14bhZONmF790ML1ll0m2RER5iZFCBA20AKBqBPL3UGXECkb2b8idQ/P1rKcCpHg8S+c1lB6BQFWJXTI3Hv91L1uPvkQOXQ+6tlGZtiTO3Lma2LDj+8hvNuZFAkOoA0QJG4PMGl23IkKEaRAYmJpXdam1Bd+fPbatGyTq0iTIkg7igzUwYjRqIH8PIVoEEANb3HVq33FxHWdX+YHnTh1AgA6mB+tBu2SVKhgqnptuazu4QsrLDEmR7+daVGZpubAHnFOC3BOgFgBzmI3oNrb2MGB12kD9axbStsg1KZjrApR1qSQW08wAZH+9Jl5gHTG2nlQZbUKWJQGenvpLyTqCyu2wMHmYPwpLG6SNIIPWfSnFDuhlirDbxeVA21tST3akE7kjaKy0raId0Ox3SnNZIAfccgPMVoAuqqkSeUiBQaI0v4UBkjYmt91CsQdpCnYilKH0kMApB2kbSNjH60u4jd14pYUA3dXGuaFBRdxLdPhVd4/dv2i1lXYpbAUoCV7xmBgsfIAbDrNWdlKFgRIOwAPL3VHcS4cc+3LBWZVCsjAqLq/wApbpHSgqeDwi3nWjfy77JZRggsWPCrMBO7dRuKnbGNh2QUtWkQEclAMfE7kxQNjgHEOGFn4a4uWNgca+0mPMMOcefOnmvX7BAzeGZOOuoanVdaj4jpQHvrgNaZgsCGP8VIF27bVZdgx2677n160Fa4hj3nC2c602kyULFSJJHI+u3ntRHdtcQEOzE8mEN/X+9AguryzkMI0nVB5ncGaQcXDuwt20iBdwySpHSNo299EIBqXSqMwM6HWRsPr1/WnJRi3fKGVtTgEyFYjcz1/AUAn2ZbKMLGffRAwIC3J09BE05ayOJIkXcqxkHl+8tlT6cprYXE7u2NeplYhj1YQdgOQHr+NbOOQEHeKxI3hg0eEsfXpEUGPm5NuQmBbyTP3rV0SfnzocdocIW2XKsZmKogMz2SVE+vSttbYIHhrZFtbjKT4l1QQD6/hS1YsADOmQT7vcfz+VAtc3h+bb0Wsixe6Mrc/PeaYbguBkrNzEUMVIm0xWB6adq1excO5cbvcZLzKNOopBjrv/RocYNi3qXFvX7LQdLI58J9xnb050GN2ccWz9k4pk2VIB0XIuIY5c9xQr8O43j3Gj7LmKDzUaW85I86KGTxzAl1dOJY4Ed2F03R5RvBPoKI4TxrC4mhCq9q4ghrb7Eee3WKCGNrtCrqh4Sjy0kK5AjzB6E1oNxwvH7IRBJ8QJA36f1zq4taKltI0hl6da0bSHYOxDiI5b9aCkZFntGLF6+YxrVu21xn06RpAnYn3dKsOHw1eF8JscLxzIAa85LSblxyXdj8W2HlRnEbVxsH7MzPdtEqgts0hULAtHlt+NODOQW2N7HcTsGZZAJ399ARgXcZENslQwOwYTBnnNPLjWLF+9bsJFm6C4C8tRJJAoZVxrqlmRYA2ZCRHvFO9/YVUtqDpUwpg7E7A/WgFUrcOphLONRnaKSw8REDTyAmijaAJBXlsI5nek6PNRJ2Ejl5RQMMNSBNOnfn6e+km0+w57zJ+NLFqCw2JmDHurZBPIsB01cyDQD3rQU7GSRO3KD0poIRszSRECi7lsCdQ1bbb0xIII2LbTPnQMadQ+9EnfaPlWmQggyCVn0n4URIB1eJQNx76aJ3E6ZJHPegGbQCSdR67Hes0jxQxCjkIgj0p5lJZQYI9Og+FIa0p1EyzRIg0DSsd1Hlp3poq6sCgR12lTzmiNDBRB5nqPfzoXPyPsPCszNFgumPaLn1gwD8zQVjtrgYWRjYGTfvNZvYdxrmlRJe0RDL8W0x8fKudhrpdjaAZWJKrO4U1ZLmdxztBdVrlg5IVVtBbVqY5wAo59TQXdGxe0BUDKd4XSZnqDyoI46mwb10IpCXFVo6TyNAM7XTcKgyAW93lNT6Wv2hxSzi40C9muMdltnwvvJYjppiatJ9nNm5esoc5bOKg/ehd2uGTuD0EUE1wjEOD2e4fiXbWlrdhS2kzDMNTH5miDZZgzAHQCZPOCOtSMC7cIACqpgGZ2G1R2bkhbjWgnJd4PXfaflQQfEbpu3ktsdKrMxuD5TTBsTAg6XGlQDtsedLSwGuMS2rxQSR186LAAZrzjSLatpBEbASSPkaCA4zkmxcGJYabt0sS++y9Y9Z2qCAtpbW2qwpifU1YuF4WRxq+1zEwL9vHu5NpLl4Kbosd4fE23IDnFQ2fgXsLMbCuW3XLssUvW3EFGDHb/lg0Apt3CoYW3KIBMiQBT1nFu39KKpBVSx3iAfwpa3si1ba1bcIGBVxuJH8vupzHyb7KMe1dhZmIG55bmgKs8PtpaAu3G1820naaytsOIWmKjNEHeYG/rWUHeQQo0iTtzHKlqV1ESzLM6p60pRBUSSIHOnEsoLciZMzvQMlF+8dzESRG1KCgFYQEFpkVqI8QJncfSnBJ3kyB50CYEyx6zWOQy6Z1EGPQetamSinkYmnltqjoFEaudA0oOk9Cu0nkfSnAwUECCZgDntSkAJ8W8xz99IXZzG0co99BoIW2MDpBEVvuhqAJOoc45TW9Z0u38QaA3WK2OTnrAPxoNC2p30hZM85ArR8RJYBgf4ZgUpiQTHTlWBzPIc/L0oGtIDnSPUxSg7gEliZEyY2ohlALMOc0gIpEEbSaBALQAW1KDENvFaVRJV/CAIKdG+NL2VTAB8PWnNIe2NW8jegGKkt4SNUGZ5R76WoI+9LTsTO0zT+le8ZdIgKIpoqIf8ArzoEuLZJDKFJ5yYpxHILSG3UdZIpCgePy326dac7pBj23iWPMn40AeRgYuQXGRjpfUkE60BMeY2nY1G3ey3CijNjNlYbMB/dXCo/5eVTF9RavWrYlln+IzTzAW0hQInrQVu5wPiNqHxuMi8QDKZOOCT5GV32pp8PjWOni4fayQVO+NfEj3q8b8qsmgOW1Enbz9KQLSqbbbkld5M0FOuZ2Piyc6xk4TEAFXsMVB/zCR8fpSbOZw/IuPax87Huso7zSLgDTtv58ztO9XkOxITUQNI5UFf4NwjOvTlcLxrjQ3iNsA/Sgr4VwxLMWCsN+q+71+u/ShxccqGbGe0ZKlXZWn1BHKfLnRuT2XwMfCe/g5WbhNpL6bN86ZJ32aaqXE+JcS4bea2mfcviAk3lQmJ9AKCxFglvUkyvLxQR8vwrYW6q6SjLp2AiR7tvToN6q47QcQZH/uh+7ERbG2/SiG4tnOzIt7u1PIIANPLl5UFiKBVZ2hVQAEt4QB7+nuHxqqcZuY+VxqMI670KhNs6S7cidvfE+lSmJw/9rNozs3KuJ/KHAHM+Qq28N4PgcOx3ONZhjHjYyw36GgaxWvWsFAbTsFULJPUcz8/wp8XUuSQCpI3BFFY5JZ0Ylt9MnnEVpNyQfTfrQDm2rOumFe22pTBIMiGBHkQadW87WmxsjF7zHcckYGPnTsBSeu5571q74WgbbCgZXFxrMtYt3VX/ABKOU7Csi1cZmtJpYGTPPbp5UQ/g8I6gSTz5ilIAyN0g7R8aAfuyzavCPMzyHpSUtgFYcELPXnRehe8UQIYCfXc0gga2X+GTt050AbBCCFIIA8tvfTUsCu0gCIIneDFG3QFbQoAXxbAUzAL6iNwB+dAGysRqXbYASOe+9MtaA1eEIxMT/wBaMbdWbqp2+tN6tOM3hU8+Ymgaa3ZZNKuysOoGxFDGwWJJ0qTvHlRBEFoJ5D8DTqopdVI2NBHtaIdgohRttSBauAkggFZgnnUretogRVECeVA3NpjodqBkC5A6LEHf47UxdVcjEu2bqk2Litbugc2BBED4U+PEu/Wfht0pbWkG6yDA5UEBw/gFzh2MtnHv3XUMWV1vG26kdZiKrvGux2ZkZLX8W4fGDJvXQT67iuiaR3c9aTOwEDxDf50FL7M9k73C+MWuKZlywBj2mthEYsxZgV1ExAO9W06IJViAQABHPnWPceQJ5zJ60hGPd3WndZj60DOVctYeC1xY71iEtmZgdTFQhtt3YNyZLaj1nyoi+7XclFuHUB5+o3pg73Sx5gbfWgCy3t2MS/kABSil9/TkPTeKp1m5fy0sWrl9iQAFZ2hCSYInyqf4zfuWvsSqQUbVdZSJDkEQCOo9KhmAF67bXZFLaVHJYJiKA0ZXFsLh7WrGTlYeI91nKWbmlXZfC0xuSJHzmok981xma4wJGrUSWLD1J3M0tgCiuQC3dlpPnIpm5dY6iQp26jy5UG7YV1dGUqwBOrUdiD0pKXLcs4YlkX7x5zI5CkM7G5EwGImK2gL2pLES2nbyk0Fhx377HRkYsAImBWUJj4dh7epgZ26+grKD/9k=" alt="Protest, Progress &amp; Radicalism" style="object-fit:contain; object-position:center;">
+          </div>
+          <div class="cover-art-cap">North Carolina A&amp;T students leaving Woolworth’s in Greensboro during the February 1960 lunch-counter sit-ins (Jack Moebes).</div>
+        </div>
+      </div>
+
+      <div class="cover-synopsis-card">
+        <div class="syn-head">
+          <span class="syn-kicker">HISTORICAL OVERVIEW · 1960–1975</span>
+          <span class="syn-tag">100% Verbatim Curriculum Narrative</span>
+        </div>
+        <p class="syn-body" style="font-size: 11.25pt;">Follow the dramatic crest and fracturing of the Civil Rights Movement across the 1960s. Trace how Greensboro sit-ins, SNCC, Freedom Rides, Birmingham’s Children’s Crusade, the 1963 March on Washington, and Selma’s "Bloody Sunday" compelled LBJ to sign the 1964 Civil Rights Act and 1965 Voting Rights Act—and examine why Northern poverty sparked Watts/Detroit riots, Malcolm X, Stokely Carmichael’s Black Power, and the Black Panthers.</p>
+      </div>
+
+      
+      <div class="cover-dir-wrap">
+        <div class="dir-banner">
+          <span>CANONICAL ENQUIRY TABLE OF CONTENTS</span>
+          <span class="dir-sub-note">Two-Page Spreads · Stage 1–5 Narrative Architecture</span>
+        </div>
+        <table class="dir-table ">
+          <thead>
+            <tr>
+              <th style="width:86px;">ENQUIRY</th>
+              <th>ENQUIRY TITLE &amp; KEY HISTORICAL QUESTION</th>
+              <th style="width:98px;">PERIOD</th>
+              <th style="width:66px; text-align:right;">PAGES</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td class="dir-code" style="padding: 17px 10px;"><span class="code-pill">ENQUIRY 01</span></td>
+            <td class="dir-main" style="padding: 17px 10px;">
+              <div class="dir-title">How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?</div>
+              <div class="dir-eq">Greensboro Lunch Counter Sit-Ins · Founding of SNCC · Launch of the Freedom Rides</div>
+            </td>
+            <td class="dir-date" style="padding: 17px 10px;">1960–1961</td>
+            <td class="dir-pg" style="text-align: right; padding: 17px 10px;">pp. 4–5</td>
+          </tr>
+
+          <tr>
+            <td class="dir-code" style="padding: 17px 10px;"><span class="code-pill">ENQUIRY 02</span></td>
+            <td class="dir-main" style="padding: 17px 10px;">
+              <div class="dir-title">How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?</div>
+              <div class="dir-eq">Project C &amp; The Children's Crusade in Birmingham · March on Washington for Jobs and Freedom · Passage of the Civil Rights Act of 1964</div>
+            </td>
+            <td class="dir-date" style="padding: 17px 10px;">1963–1965</td>
+            <td class="dir-pg" style="text-align: right; padding: 17px 10px;">pp. 6–7</td>
+          </tr>
+
+          <tr>
+            <td class="dir-code" style="padding: 17px 10px;"><span class="code-pill">ENQUIRY 03</span></td>
+            <td class="dir-main" style="padding: 17px 10px;">
+              <div class="dir-title">What was the Black Power movement, and how did it differ from non-violent protests?</div>
+              <div class="dir-eq">Malcolm X &amp; The Nation of Islam · Meredith March &amp; The Cry of 'Black Power' · Founding of the Black Panther Party in Oakland</div>
+            </td>
+            <td class="dir-date" style="padding: 17px 10px;">1952–1968</td>
+            <td class="dir-pg" style="text-align: right; padding: 17px 10px;">pp. 8–9</td>
+          </tr>
+
+          <tr>
+            <td class="dir-code" style="padding: 17px 10px;"><span class="code-pill">ENQUIRY 04</span></td>
+            <td class="dir-main" style="padding: 17px 10px;">
+              <div class="dir-title">Why did riots break out in American cities between 1965 and 1968?</div>
+              <div class="dir-eq">Watts Rebellion in Los Angeles · Dr King's Chicago Freedom Movement · Detroit &amp; Newark Rebellions</div>
+            </td>
+            <td class="dir-date" style="padding: 17px 10px;">1965–1968</td>
+            <td class="dir-pg" style="text-align: right; padding: 17px 10px;">pp. 10–11</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Protest, Progress &amp; Radicalism (1960–1975) · Classroom Textbook</span>
+      <span class="pg">Page 1 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-ref" id="page-2" data-page="2">
+    <div class="ref-main">
+      <div class="subpage-hdr">
+        <div class="subpage-num">
+          <small>DOSSIER</small>
+          <span>REF</span>
+        </div>
+        <div class="subpage-tt">
+          <div class="subpage-kicker">SPECIFICATION DOSSIER · KEY INDIVIDUALS &amp; CORE TERMINOLOGY (KT2)</div>
+          <h2>Key Historical Actors &amp; Essential Concepts (1960–1975)</h2>
+        </div>
+        <div class="subpage-pill">1960–1975</div>
+      </div>
+
+      <div class="ref-sec-label">KEY HISTORICAL INDIVIDUALS &amp; ACTORS</div>
+      <div class="ref-figs-grid">
+        
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">John F. Kennedy &amp; Lyndon B. Johnson</span>
+          <span class="ref-fig-role">US Presidents (1961–69)</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">JFK proposed civil rights legislation after Birmingham; Texan master-legislator LBJ passed the landmark 1964, 1965, and 1968 Acts.</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">James Farmer &amp; John Lewis</span>
+          <span class="ref-fig-role">CORE &amp; SNCC Leaders</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Organised integrated Freedom Rides, voter registration drives, and frontline marches at Washington (1963) and Selma (1965).</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Eugene "Bull" Connor &amp; Jim Clark</span>
+          <span class="ref-fig-role">Segregationist Lawmen</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Birmingham Public Safety Commissioner and Selma Sheriff whose televised violence shocked white moderates into backing reform.</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Malcolm X (1925–1965)</span>
+          <span class="ref-fig-role">Nation of Islam &amp; OAAU Leader</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Critiqued King’s integrationism, advocating Black pride, economic self-reliance, and self-defence "by any means necessary".</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Stokely Carmichael (1941–1998)</span>
+          <span class="ref-fig-role">SNCC Chairman (1966)</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Shifted SNCC toward Black nationalism and coined the "Black Power" slogan during the June 1966 March Against Fear.</p>
+      </div>
+
+      <div class="ref-fig-card" style="padding: 12px 10px;">
+        <div class="ref-fig-top">
+          <span class="ref-fig-name">Huey P. Newton &amp; Bobby Seale</span>
+          <span class="ref-fig-role">Black Panther Co-Founders</span>
+        </div>
+        <p class="ref-fig-desc" style="font-size: 10.6pt; line-height: 1.48;">Founded the BPP in Oakland (Oct 1966), combining armed police patrols with Free Breakfast for Children and community clinics.</p>
+      </div>
+      </div>
+
+      <div class="ref-sec-label" style="margin-top:10px;">ESSENTIAL DISCIPLINARY CONCEPTS &amp; TERMINOLOGY</div>
+      <div class="ref-terms-grid">
+        
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">SNCC (Student Nonviolent Coord. Cttee)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Youth-led activist movement founded in April 1960 driving sit-ins, Freedom Rides, and Freedom Summer.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Albany Movement (1961–62)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Unsuccessful SCLC campaign where Police Chief Laurie Pritchett quietly jailed marchers without media violence.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Civil Rights Act (July 1964)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Banned segregation in all public accommodations, allowed federal funding cuts, and created the EEOC.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Voting Rights Act (August 1965)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Outlawed literacy tests and sent federal registrars South; Black registration in Mississippi leapt from 6.7% to ~60%.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Nation of Islam (NOI)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Elijah Muhammad’s movement preaching Black separatism, strict moral discipline, and independent Black businesses.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Black Panther Ten-Point Programme</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">1966 manifesto demanding decent housing, full employment, fair juries, end to police brutality, and community control.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Chicago Campaign (1966)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">King’s first major Northern housing campaign, met with fierce white mobs in Cicero and Mayor Daley’s empty promises.</span>
+      </div>
+
+      <div class="ref-term-row" style="padding: 12px 10px;">
+        <span class="ref-term-k">Kerner Commission Report (1968)</span>
+        <span class="ref-term-v" style="font-size: 10.6pt; line-height: 1.48;">Presidential inquiry attributing 1965–67 urban riots to white institutional racism, ghetto poverty, and policing.</span>
+      </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Protest, Progress &amp; Radicalism · Key Figures &amp; Terminology Dossier</span>
+      <span class="pg">Page 2 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-spine" id="page-3" data-page="3">
+    <div class="spine-main">
+      <div class="subpage-hdr">
+        <div class="subpage-num">
+          <small>TIMELINE</small>
+          <span>10</span>
+        </div>
+        <div class="subpage-tt">
+          <div class="subpage-kicker">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975)</div>
+          <h2>Ten Defining Turning Points of Key Topic 2 (1960–1968)</h2>
+        </div>
+        <div class="subpage-pill">1960–1975</div>
+      </div>
+      <p class="spine-lead">From Greensboro and the Freedom Rides to the 1964–65 Acts, Black Power, and King’s assassination.</p>
+
+      <div class="ms-list">
+        <div class="ms-line"></div>
+        
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Feb–Apr 1960</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">1</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Greensboro Woolworth’s Sit-Ins &amp; Founding of SNCC</span>
+            <span class="ms-stage-tag">Enquiry 1</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Four Black college students spark sit-ins by 70,000 protesters across 55 cities; Ella Baker helps students launch SNCC.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">May–Nov 1961</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">2</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">CORE &amp; SNCC Freedom Rides Force ICC Desegregation</span>
+            <span class="ms-stage-tag">Enquiry 1</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">James Farmer’s integrated riders survive Anniston bus firebombing and Birmingham beatings, forcing RFK to enforce interstate terminal integration.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Sept 1962</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">3</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">James Meredith Integrates "Ole Miss" (University of Mississippi)</span>
+            <span class="ms-stage-tag">Enquiry 1</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">President Kennedy deploys 500 federal marshals and thousands of troops after deadly white riots greet Meredith’s enrolment.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Apr–May 1963</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">4</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Project C in Birmingham &amp; The Children’s Crusade</span>
+            <span class="ms-stage-tag">Enquiry 2</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Police chief "Bull" Connor’s attack dogs and high-pressure fire hoses against schoolchildren on national TV prompt JFK to draft a Civil Rights Bill.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">28 Aug 1963</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">5</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">March on Washington for Jobs and Freedom</span>
+            <span class="ms-stage-tag">Enquiry 2</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">250,000 marchers gather at the Lincoln Memorial where Martin Luther King Jr. delivers his iconic "I Have a Dream" address.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">2 Jul 1964</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">6</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Civil Rights Act (1964) &amp; Freedom Summer Murders</span>
+            <span class="ms-stage-tag">Enquiry 2</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">President Lyndon B. Johnson outlaws public segregation and job discrimination (EEOC) as KKK murder three Freedom Summer workers in Mississippi.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Mar–Aug 1965</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">7</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Selma "Bloody Sunday" &amp; Voting Rights Act (1965)</span>
+            <span class="ms-stage-tag">Enquiry 2</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Televised state trooper brutality on Edmund Pettus Bridge enables LBJ to abolish literacy tests and send federal voter examiners.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Aug 1965–1967</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">8</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Watts (1965), Newark &amp; Detroit Urban Riots &amp; Kerner Report</span>
+            <span class="ms-stage-tag">Enquiry 4</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Police brutality, ghetto unemployment, and poor housing trigger 300+ urban uprisings; Kerner warns of "two societies, one black, one white".</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">1966–1968</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">9</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Meredith March "Black Power", Black Panthers &amp; Mexico Olympics</span>
+            <span class="ms-stage-tag">Enquiry 3</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">Stokely Carmichaelpopularises "Black Power"; Newton and Seale found the Black Panther Party (10-Point Plan); Smith and Carlos raise gloved fists.</p>
+        </div>
+      </div>
+
+      <div class="ms-row">
+        <div class="ms-date-col">
+          <span class="ms-date-pill">Apr 1968</span>
+        </div>
+        <div class="ms-dot-col">
+          <span class="ms-dot">10</span>
+        </div>
+        <div class="ms-card" style="padding: 4px 9px;">
+          <div class="ms-card-top">
+            <span class="ms-title">Assassination of Martin Luther King Jr. &amp; Fair Housing Act</span>
+            <span class="ms-stage-tag">Enquiry 4</span>
+          </div>
+          <p class="ms-desc" style="font-size: 7.2pt;">After failing to end Chicago slums (1966) and launching the Poor People’s Campaign, King is shot in Memphis; Congress passes the 1968 Civil Rights Act.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Protest, Progress &amp; Radicalism · Master Chronological Spine</span>
+      <span class="pg">Page 3 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-4" data-page="4">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>01</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?</h2>
+        </div>
+        <div class="hdr-dt">1960–1961</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · Feb 1960</div>
+          <div class="flow-lbl">Greensboro Lunch Counter Sit-Ins</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · Apr 1960</div>
+          <div class="flow-lbl">Founding of SNCC</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · May 1961</div>
+          <div class="flow-lbl">Launch of the Freedom Rides</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · May 1961</div>
+          <div class="flow-lbl">Anniston &amp; Montgomery Ambush</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · Nov 1961</div>
+          <div class="flow-lbl">ICC Desegregation Order</div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">The Greensboro Lunch Counter Sit-Ins</span>
+              <span class="block-date">February 1960</span>
+            </div>
+            <div class="spread-stage-q">“How did the Greensboro lunch counter sit-ins spark a spontaneous, youth-led wave of direct action across the South?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">On 1 February 1960, four Black freshmen from North Carolina A&amp;T College—known as the <strong>Greensboro Four</strong>—sat down at an all-white lunch counter inside a local Woolworth store. When staff refused them service, they remained seated politely until closing time. The <strong>Woolworth lunch counter sit-in</strong> triggered an immediate regional wave of <strong>student direct action</strong>, expanding within days to dozens of lunch counters across southern retail stores.
+
+Facing verbal abuse, burning cigarettes, and food poured over their heads, student demonstrators adhered strictly to non-violent discipline. By August 1960, sustained economic boycotts and sit-ins had desegregated lunch counters in over one hundred southern cities. The campaign proved that direct, student-led commercial disruption could dismantle Jim Crow downtown facilities faster than prolonged legal courtroom challenges.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">The Founding of SNCC</span>
+              <span class="block-date">April 1960</span>
+            </div>
+            <div class="spread-stage-q">“Why was the creation of SNCC critical in mobilizing young students into the front line of civil rights protest?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In April 1960, veteran activist <strong>Ella Baker</strong> organized a historic conference of student sit-in leaders at Shaw University in Raleigh, North Carolina. Baker warned young activists against subservience to cautious adult organizations like the NAACP and SCLC, urging them to build an independent radical movement. Her visionary guidance led directly to the <strong>SNCC founding</strong> (Student Nonviolent Coordinating Committee) to coordinate direct-action campaigns across the South.
+
+Embodying <strong>grassroots student leadership</strong>, SNCC firmly rejected top-down hierarchical leadership in favor of participatory democracy, empowering local rural communities to demand their constitutional rights. Field secretaries traveled into the most dangerous counties of Mississippi and Georgia, enduring beatings and imprisonment to establish local freedom schools, register disenfranchised voters, and confront entrenched white supremacy directly.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 01 (Part I): How did peaceful protests (like sit-ins and Freedom Rides) force the government to act? · Stages 1–2</span>
+      <span class="pg">Page 4 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-5" data-page="5">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>01</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">How did peaceful protests (like sit-ins and Freedom Rides) force the government to act? — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">The Launch of the Freedom Rides</span>
+              <span class="block-date">May 1961</span>
+            </div>
+            <div class="spread-stage-q">“What was the primary goal of the 1961 Freedom Rides organized by CORE across the interstate South?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.55pt; line-height: 1.53; margin-bottom: 0px;"><strong>Testing Federal Law: The CORE Freedom Rides:</strong> On 4 May 1961, James Farmer and the Congress of Racial Equality (CORE) launched the "Freedom Rides". Interracial teams of Black and white activists boarded Greyhound and Trailways buses in Washington, D.C., bound for New Orleans, determined to test whether Southern authorities would obey the Supreme Court ruling banning segregation in interstate bus terminals.<br><br><strong>The Anniston Firebomb &amp; Birmingham Ambush:</strong> On 14 May 1961, a Ku Klux Klan mob intercepted the Greyhound bus outside Anniston, Alabama, slashing its tires and firebombing the vehicle. In Birmingham, Police Commissioner "Bull" Connor allowed Klansmen fifteen minutes to beat the riders with iron pipes. Shocking international photographs of the burning bus forced the federal government to intervene.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">The Anniston &amp; Montgomery Ambush</span>
+              <span class="block-date">May 1961</span>
+            </div>
+            <div class="spread-stage-q">“How did televised violence against Freedom Riders in Anniston and Montgomery force federal intervention?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.55pt; line-height: 1.53; margin-bottom: 0px;"><strong>Robert Kennedy Deploys Federal Marshals:</strong> The violence in Alabama embarrassed President John F. Kennedy during the Cold War. Attorney General Robert Kennedy deployed 400 federal marshals to protect riders in Montgomery, Alabama, after local police abandoned them to another violent white mob at the bus terminal.<br><br><strong>The ICC Desegregation Order (Nov 1961):</strong> Robert Kennedy petitioned the Interstate Commerce Commission (ICC) to enforce compliance. On 1 November 1961, the ICC issued strict nationwide regulations ordering the removal of all "whites only" signs in interstate bus and train terminals, proving that non-violent direct action could force the federal government to act.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">The ICC Desegregation Order</span>
+              <span class="block-date">November 1961</span>
+            </div>
+            <div class="spread-stage-q">“Why did the ICC's November 1961 desegregation order represent a decisive victory for direct action protest?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.55pt; line-height: 1.53; margin-bottom: 0px;">Confronting intense international embarrassment during the Cold War, the Kennedy administration intervened decisively in southern interstate transit. In September 1961, under direct federal pressure from Attorney General Robert Kennedy, the <strong>Interstate Commerce Commission (ICC)</strong> issued strict regulations ordering comprehensive <strong>federal transit desegregation</strong>, mandating that all interstate buses, trains, and terminal waiting rooms display signs declaring racial integration.
+
+By November 1961, Jim Crow signs had been removed from terminals across the South, demonstrating remarkable <strong>freedom rider resilience</strong> against state-sanctioned violence and intimidation. Over four hundred citizens had joined the rides, proving that non-violent mass direct action could force reluctant federal authorities to intervene aggressively to uphold constitutional civil rights and dismantle regional segregation once and for all.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 01 (Part II): How did peaceful protests (like sit-ins and Freedom Rides) force the government to act? · Stages 3–5</span>
+      <span class="pg">Page 5 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-6" data-page="6">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>02</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?</h2>
+        </div>
+        <div class="hdr-dt">1963–1965</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · Apr–May 1963</div>
+          <div class="flow-lbl">Project C &amp; The Children's Crusade in Birmingham</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · 28 Aug 1963</div>
+          <div class="flow-lbl">March on Washington for Jobs and Freedom</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · 2 July 1964</div>
+          <div class="flow-lbl">Passage of the Civil Rights Act of 1964</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · 7 Mar 1965</div>
+          <div class="flow-lbl">'Bloody Sunday' at Edmund Pettus Bridge in Selma</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · 6 Aug 1965</div>
+          <div class="flow-lbl">Enactment of the Voting Rights Act of 1965</div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">Project C &amp; The Children's Crusade in Birmingham</span>
+              <span class="block-date">April–May 1963</span>
+            </div>
+            <div class="spread-stage-q">“How did Bull Connor's violent suppression of the Children's Crusade in Birmingham transform national opinion?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;"><strong>Project C in Birmingham (April 1963):</strong> In April 1963, Dr Martin Luther King Jr., the SCLC, and Rev. Fred Shuttlesworth launched "Project C" (Confrontation) in Birmingham, Alabama—one of America's most segregated cities. Activists boycotted downtown stores and held sit-ins. When arrested, King penned his famous <em>Letter from Birmingham Jail</em>, declaring that "justice too long delayed is justice denied."<br><br><strong>The Children's Crusade &amp; Televised Outrage:</strong> In May, thousands of schoolchildren joined the protests. Police Commissioner "Bull" Connor unleashed snarling police attack dogs and high-pressure fire hoses on the young marchers. Televised footage of children being knocked down by water jets horrified the world, forcing Birmingham business leaders to agree to desegregate downtown facilities.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">The March on Washington for Jobs and Freedom</span>
+              <span class="block-date">28 August 1963</span>
+            </div>
+            <div class="spread-stage-q">“Why was the 1963 March on Washington a pivotal moment in generating momentum for federal civil rights laws?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Capitalizing on the Birmingham victory, civil rights organizations united to stage the historic <strong>March on Washington for Jobs and Freedom</strong> on 28 August 1963. Over 250,000 Black and white demonstrators gathered peacefully before the Lincoln Memorial, demonstrating unprecedented interracial solidarity and applying irresistible public pressure on the United States Congress to enact comprehensive federal civil rights legislation.
+
+The march was coordinated by the <strong>Big Six civil rights leaders</strong>, including King, Roy Wilkins, and John Lewis, showcasing powerful cross-movement unity. King delivered his immortal <strong>'I Have a Dream' speech</strong>, articulating a transcendent moral vision of racial brotherhood and constitutional equality that transformed the civil rights struggle into the central moral imperative of modern American political life.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 02 (Part I): How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts? · Stages 1–2</span>
+      <span class="pg">Page 6 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-7" data-page="7">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>02</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts? — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">Passage of the Civil Rights Act of 1964</span>
+              <span class="block-date">2 July 1964</span>
+            </div>
+            <div class="spread-stage-q">“How did the Civil Rights Act of 1964 dismantle the legal foundations of Southern Jim Crow segregation?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Following the tragic assassination of President Kennedy in November 1963, <strong>President Lyndon B. Johnson</strong> harnessed national grief to steer the sweeping <strong>Civil Rights Act of 1964</strong> through a divided Congress. Johnson utilized formidable legislative skill and personal arm-twisting to defeat a fifty-four-day southern filibuster in the Senate, signing the landmark bill into federal law on 2 July 1964.
+
+The statute decisively outlawed racial segregation in all public accommodations, including hotels, restaurants, theaters, and parks, legally abolishing southern Jim Crow practices. It authorized the Department of Justice to desegregate public schools and established the <strong>Equal Employment Opportunity Commission (EEOC)</strong> to prohibit racial and gender discrimination in hiring, marking a monumental victory for the movement.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">'Bloody Sunday' at Edmund Pettus Bridge in Selma</span>
+              <span class="block-date">7 March 1965</span>
+            </div>
+            <div class="spread-stage-q">“Why did the violent clash on Edmund Pettus Bridge in Selma create irresistible momentum for federal voting rights?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Despite the 1964 Act, southern Black citizens remained disenfranchised, with only two percent registered in <strong>Dallas County voter registration</strong> rolls in Selma, Alabama. In early 1965, the SCLC joined local activists in Selma to demand unobstructed voting rights. On 7 March 1965, six hundred peaceful marchers led by John Lewis set out toward the state capital of Montgomery.
+
+As marchers crossed the <strong>Edmund Pettus Bridge</strong>, Alabama state troopers and sheriff's posses attacked with tear gas, bullwhips, and nightsticks in the infamous <strong>Bloody Sunday in Selma</strong>. Televised footage of helpless marchers being clubbed unconscious provoked national outrage, leading King to issue an urgent national call for religious leaders and citizens to join the Selma voting campaign.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">Enactment of the Voting Rights Act of 1965</span>
+              <span class="block-date">6 August 1965</span>
+            </div>
+            <div class="spread-stage-q">“In what ways did the Voting Rights Act of 1965 revolutionize political participation for Black Americans in the South?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;"><strong>Enactment of the Voting Rights Act (6 Aug 1965):</strong> Shocked by the televised brutality at Selma, President Lyndon B. Johnson addressed Congress, declaring that "we shall overcome". On 6 August 1965, Johnson signed the historic Voting Rights Act. The law banned all discriminatory literacy tests and empowered federal examiners to directly register Black voters in Southern counties where registration fell below 50%.<br><br><strong>Transformative Impact &amp; New Challenges:</strong> The Voting Rights Act transformed Southern politics: within three years, Black voter registration in Mississippi jumped from 7% to over 60%. However, while federal legislation abolished <em>de jure</em> legal barriers in the South, it did not solve urban poverty, substandard ghetto housing, or police brutality in Northern cities.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 02 (Part II): How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts? · Stages 3–5</span>
+      <span class="pg">Page 7 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-8" data-page="8">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>03</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">What was the Black Power movement, and how did it differ from non-violent protests?</h2>
+        </div>
+        <div class="hdr-dt">1952–1968</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · 1952–1964</div>
+          <div class="flow-lbl">Malcolm X &amp; The Nation of Islam</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · June 1966</div>
+          <div class="flow-lbl">Meredith March &amp; The Cry of 'Black Power'</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · Oct 1966</div>
+          <div class="flow-lbl">Founding of the Black Panther Party in Oakland</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · 1968–1969</div>
+          <div class="flow-lbl">Black Panther Community Survival Programs</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · 16 Oct 1968</div>
+          <div class="flow-lbl">Mexico City Olympics Black Power Salute</div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">Malcolm X &amp; The Nation of Islam</span>
+              <span class="block-date">1952–1964</span>
+            </div>
+            <div class="spread-stage-q">“Why did Malcolm X reject non-violent integrationism in favor of Black nationalism and self-defense?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">While Martin Luther King Jr. advocated integration and non-violence in the South, <strong>Malcolm X</strong> gave powerful voice to the anger of northern urban ghettos. Serving as the chief national minister of the <strong>Nation of Islam (NOI)</strong>, Malcolm rejected racial integration, preaching Black nationalism, economic independence, and racial pride while condemning white society as irredeemably racist and oppressive.
+
+Malcolm fiercely criticized King's non-violent philosophy as defenseless, arguing instead for <strong>armed self-defense</strong> "by any means necessary" against racist attacks. After breaking with Elijah Muhammad and completing the Hajj to Mecca in 1964, Malcolm adopted an orthodox Sunni Islamic perspective, founding the Organization of Afro-American Unity before his tragic assassination by NOI rivals in February 1965.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">The Meredith March &amp; The Cry of 'Black Power'</span>
+              <span class="block-date">June 1966</span>
+            </div>
+            <div class="spread-stage-q">“How did Stokely Carmichael's call for 'Black Power' during the 1966 Meredith March divide the civil rights movement?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In June 1966, James Meredith was shot and wounded while conducting a solo <strong>March Against Fear</strong> across Mississippi. Major civil rights leaders converged to continue the march, but sharp ideological divisions quickly surfaced between King's non-violent SCLC and militant SNCC activists led by their newly elected chairman, <strong>Stokely Carmichael</strong>, who rejected traditional non-violent submission and interracial compromise.
+
+After being arrested in Greenwood, Carmichael addressed an electrified rally, famously popularizing the <strong>'Black Power' slogan</strong> and rejecting racial integration in favor of self-determination, Black economic solidarity, and racial dignity. The slogan captivated younger, frustrated activists but alienated white moderates and older civil rights leaders, formally fracturing the civil rights movement into integrationist and nationalist factions.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 03 (Part I): What was the Black Power movement, and how did it differ from non-violent protests? · Stages 1–2</span>
+      <span class="pg">Page 8 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-9" data-page="9">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>03</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">What was the Black Power movement, and how did it differ from non-violent protests? — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">Founding of the Black Panther Party in Oakland</span>
+              <span class="block-date">October 1966</span>
+            </div>
+            <div class="spread-stage-q">“What were the primary aims and methods outlined in the Black Panther Party's Ten-Point Program?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.55pt; line-height: 1.53; margin-bottom: 0px;">In October 1966, in Oakland, California, young community activists <strong>Huey P. Newton &amp; Bobby Seale</strong> founded the militant <strong>Black Panther Party</strong> for Self-Defense. Wearing black leather jackets and berets, the Panthers rejected middle-class non-violence, organizing armed citizen patrols to follow police cars and protect Black residents from chronic, systemic municipal police brutality and racial harassment.
+
+The Panthers articulated their revolutionary Marxist and nationalist ideology in a radical <strong>Ten-Point Program</strong>, demanding full employment, decent housing, quality education, exemption from military service, and freedom for Black prisoners. In May 1967, armed Panthers entered the California State Capitol to protest a gun-control bill, creating an electrifying media sensation that projected Black militant defiance across the entire nation.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">Black Panther Community Survival Programs</span>
+              <span class="block-date">1968–1969</span>
+            </div>
+            <div class="spread-stage-q">“How did the Panthers' community survival programs challenge mainstream media portrayals of the party as merely violent?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.55pt; line-height: 1.53; margin-bottom: 0px;">Beyond dramatic media portrayals of paramilitary militancy, the Black Panther Party organized extensive mutual aid initiatives known as survival programs. Their celebrated <strong>Free Breakfast for Children Program</strong> fed tens of thousands of impoverished inner-city children daily, while party volunteers established free medical clinics, clothing distribution drives, and community education centers that addressed severe urban poverty neglected by municipal authorities.
+
+Despite these social initiatives, their open <strong>armed citizen patrols</strong> provoked intense state repression. FBI Director J. Edgar Hoover branded the Panthers the greatest threat to national security, unleashing aggressive <strong>FBI COINTELPRO surveillance</strong> involving wiretaps, forged factional correspondence, armed police raids, and covert assassinations—including the lethal predawn shooting of Illinois chairman Fred Hampton in December 1969.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">The Mexico City Olympics Black Power Salute</span>
+              <span class="block-date">16 October 1968</span>
+            </div>
+            <div class="spread-stage-q">“Why was the silent protest by Tommie Smith and John Carlos at the 1968 Olympics such a powerful cultural statement?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.55pt; line-height: 1.53; margin-bottom: 0px;">The Black Power ethos reached an international television audience of hundreds of millions during the <strong>1968 Mexico City Olympics</strong>. African American sprinters <strong>Tommie Smith &amp; John Carlos</strong> won gold and bronze medals in the 200 meters. Taking the medal podium barefoot to symbolize Black poverty, they wore civil rights badges and black gloves during the American national anthem.
+
+As "The Star-Spangled Banner" played, both athletes raised clenched fists with bowed heads in the famous <strong>Olympic podium black fist salute</strong>, protesting continuing racial oppression in America. The International Olympic Committee suspended both sprinters from the Olympic Village, but their defiant gesture became an enduring global icon of Black pride, sacrifice, and international resistance against entrenched racial inequality.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 03 (Part II): What was the Black Power movement, and how did it differ from non-violent protests? · Stages 3–5</span>
+      <span class="pg">Page 9 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-10" data-page="10">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num">
+          <small>ENQUIRY</small>
+          <span>04</span>
+        </div>
+        <div class="hdr-tt">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART I (STAGES 1–2)</div>
+          <h2 class="hdr-h2">Why did riots break out in American cities between 1965 and 1968?</h2>
+        </div>
+        <div class="hdr-dt">1965–1968</div>
+      </div>
+
+      <div class="flow" style="grid-template-columns: repeat(5, 1fr);">
+        
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 1 · 11–17 Aug 1965</div>
+          <div class="flow-lbl">Watts Rebellion in Los Angeles</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 2 · 1966</div>
+          <div class="flow-lbl">Dr King's Chicago Freedom Movement</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 3 · July 1967</div>
+          <div class="flow-lbl">Detroit &amp; Newark Rebellions</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 4 · Feb–Mar 1968</div>
+          <div class="flow-lbl">Kerner Commission Report</div>
+        </div>
+
+        <div class="flow-st">
+          <div class="flow-kicker">STAGE 5 · 4–11 Apr 1968</div>
+          <div class="flow-lbl">Assassination of Dr Martin Luther King Jr</div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 1</span>
+              <span class="block-title">The Watts Rebellion in Los Angeles</span>
+              <span class="block-date">11–17 August 1965</span>
+            </div>
+            <div class="spread-stage-q">“Why did a routine traffic arrest in Watts ignite six days of violent urban rebellion in August 1965?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In August 1965, only days after the Voting Rights Act was signed, explosive racial violence erupted in the Black neighborhood of Watts, Los Angeles. The <strong>Watts riot Los Angeles (1965)</strong> was ignited by a <strong>Police brutality catalyst</strong> during the aggressive traffic arrest of a young Black motorist, Marquette Frye, triggering six days of intense civil insurrection against entrenched racial discrimination.
+
+Over fourteen thousand National Guardsmen were deployed to quell the uprising, which left <strong>34 dead &amp; $40m damage</strong>, alongside over one thousand injuries and four thousand arrests. The rebellion stunned white Americans, exposing that northern and western Black communities suffered from chronic police harassment, dilapidated housing, and severe economic deprivation that southern civil rights laws could not fix.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 2</span>
+              <span class="block-title">Dr King's Chicago Freedom Movement</span>
+              <span class="block-date">1966</span>
+            </div>
+            <div class="spread-stage-q">“What did Dr King's campaign in Chicago reveal about the entrenched nature of northern de facto segregation?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Recognizing that southern civil rights victories had not alleviated northern ghetto squalor, Dr King moved into a dilapidated West Side tenement in 1966. Leading the <strong>Chicago Freedom Movement (1966)</strong>, King organized mass non-violent protests against pervasive northern <strong>Slum housing &amp; redlining protest</strong>, demanding open housing ordinances, fair employment practices, and an end to racist banking discrimination.
+
+When King led peaceful integration marches into all-white neighborhoods, he encountered a vicious <strong>Marquette Park violent backlash</strong>, where thousands of white residents threw bricks, bottles, and firecrackers, striking King in the head. King admitted he had never seen mobs as hostile as in Chicago, securing only vague promises from Mayor Richard Daley and discovering the intractable nature of northern de facto segregation.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 04 (Part I): Why did riots break out in American cities between 1965 and 1968? · Stages 1–2</span>
+      <span class="pg">Page 10 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-lesson page-spread" id="page-11" data-page="11">
+    <div class="lesson-top">
+      <div class="hdr">
+        <div class="hdr-num" style="background: var(--navy);">
+          <small>ENQUIRY</small>
+          <span>04</span>
+        </div>
+        <div class="hdr-tt" style="border-bottom-color: var(--navy);">
+          <div class="hdr-kt">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · PART II (STAGES 3–5)</div>
+          <h2 class="hdr-h2">Why did riots break out in American cities between 1965 and 1968? — Escalation &amp; Consequences</h2>
+        </div>
+        <div class="hdr-dt" style="background: var(--navy);">Stages 3–5</div>
+      </div>
+    </div>
+
+    <div class="prose-wrap">
+      <div class="prose-columns">
+        
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 3</span>
+              <span class="block-title">The Detroit &amp; Newark Rebellions</span>
+              <span class="block-date">July 1967</span>
+            </div>
+            <div class="spread-stage-q">“How did the violent urban rebellions in Newark and Detroit in 1967 demonstrate the failure of Great Society antipoverty programs?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">The urban crisis peaked during the "Long Hot Summer" of 1967, when major <strong>Detroit &amp; Newark riots (1967)</strong> exploded across industrial cities. In Newark, twenty-six people died following the police beating of a Black cab driver. In Detroit, an early morning police raid on an unlicenced drinking club sparked five days of catastrophic street warfare, looting, and arson.
+
+The devastation resulted in <strong>43 dead in Detroit violence</strong>, two thousand injuries, and seven thousand arrests, prompting President Lyndon Johnson to dispatch <strong>Federal airborne paratroopers</strong> with armored tanks to suppress the rebellion. The scale of destruction proved that inner-city African Americans felt completely abandoned by mainstream American society, turning to destructive urban rebellions as a desperate cry for social justice.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 4</span>
+              <span class="block-title">The Kerner Commission Report</span>
+              <span class="block-date">February–March 1968</span>
+            </div>
+            <div class="spread-stage-q">“Why did the Kerner Commission Report conclude that white racism was the primary cause of urban riots?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In July 1967, President Johnson established the National Advisory Commission on Civil Disorders to investigate the deep causes of urban unrest. Released in February 1968, the landmark <strong>1968 Kerner Commission report</strong> issued a devastating constitutional warning, stating that America was moving inexorably toward <strong>'Two societies: separate, unequal'</strong>—one white, one Black, divided by wealth, opportunity, and privilege.
+
+The report shocked the nation by explicitly identifying <strong>White institutional racism blamed</strong> as the primary catalyst for ghetto misery, poverty, and police violence, rather than organized communist conspiracies. The commission urged sweeping federal investment in jobs, public housing, and integrated schools, but Johnson ignored its expensive recommendations, focusing federal financial resources on the escalating war in Vietnam.</p>
+            </div>
+          </div>
+
+          <div class="block-section spread-block" style="margin-bottom: 0px;">
+            <div class="block-hdr">
+              <span class="stage-pill">STAGE 5</span>
+              <span class="block-title">The Assassination of Dr Martin Luther King Jr</span>
+              <span class="block-date">4 April 1968</span>
+            </div>
+            <div class="spread-stage-q">“How did the assassination of Dr Martin Luther King Jr. and the passage of the 1968 Fair Housing Act reshape the movement?”</div>
+            <div class="block-prose">
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;"><strong>The Assassination of Dr King (4 April 1968):</strong> In April 1968, Dr Martin Luther King Jr. visited Memphis, Tennessee, to support striking Black sanitation workers. On 4 April 1968, while standing on the balcony of the Lorraine Motel, King was shot and assassinated by James Earl Ray. King's murder ignited the greatest wave of social unrest in modern American history.<br><br><strong>Nationwide Riots &amp; The Fair Housing Act:</strong> Riots erupted across more than 125 cities, leaving 46 dead and requiring 45,000 national guardsmen to restore order. In response to the crisis, President Lyndon B. Johnson signed the Civil Rights Act of 1968 (the Fair Housing Act), banning racial discrimination in the sale and rental of housing.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Enquiry 04 (Part II): Why did riots break out in American cities between 1965 and 1968? · Stages 3–5</span>
+      <span class="pg">Page 11 / 12</span>
+    </footer>
+  </section>
+
+  <section class="page textbook-page page-quiz" id="page-12" data-page="12">
+    <div class="quiz-main">
+      <div class="subpage-hdr">
+        <div class="subpage-num">
+          <small>QUIZ BANK</small>
+          <span>20</span>
+        </div>
+        <div class="subpage-tt">
+          <div class="subpage-kicker">THE USA, 1954–1975 · KT2: PROTEST, PROGRESS &amp; RADICALISM (1960–1975) · ACTIVE RECALL</div>
+          <h2>Master Knowledge Retrieval Quiz (Questions 1–20)</h2>
+        </div>
+        <div class="subpage-pill">Partner / Solo</div>
+      </div>
+
+      <div class="quiz-inst">
+        <b>Classroom &amp; Homework Retrieval Protocol:</b> Test your partner aloud or write full-sentence answers in your exercise book using the page references shown. Zero answers are printed so this classroom textbook remains reusable all year.
+      </div>
+
+      <div class="quiz-grid " style="gap: 9.6px;">
+        
+        <div class="quiz-card" style="padding: 10.2px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.44pt;"><span class="quiz-e-pill">E1</span> Enquiry 01: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?</span>
+            <span class="quiz-card-loc">pp. 4–5</span>
+          </div>
+          <ol class="quiz-ol" start="1" style="font-size: 10.8pt; line-height: 1.46;">
+            <li style="margin-bottom: 4.4px;">In which city did the famous 1960 lunch counter sit-ins begin?</li><li style="margin-bottom: 4.4px;">What does the abbreviation SNCC stand for?</li><li style="margin-bottom: 4.4px;">Which tactic was used by activists in 1961 to test the desegregation of interstate bus terminals?</li><li style="margin-bottom: 4.4px;">What was the primary goal of the Freedom Riders in 1961?</li><li style="margin-bottom: 0px;">Which civil rights organization organized the first Freedom Rides in 1961?</li>
+          </ol>
+        </div>
+
+        <div class="quiz-card" style="padding: 10.2px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.44pt;"><span class="quiz-e-pill">E2</span> Enquiry 02: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?</span>
+            <span class="quiz-card-loc">pp. 6–7</span>
+          </div>
+          <ol class="quiz-ol" start="6" style="font-size: 10.8pt; line-height: 1.46;">
+            <li style="margin-bottom: 4.4px;">Who was the segregationist Police Commissioner of Birmingham who ordered the brutal response to protesters?</li><li style="margin-bottom: 4.4px;">What was the name of the famous document written by Martin Luther King Jr. while imprisoned in Alabama in 1963?</li><li style="margin-bottom: 4.4px;">What was the main purpose of the March on Washington in 1963?</li><li style="margin-bottom: 4.4px;">What was the title of Martin Luther King Jr.'s famous speech delivered at the March on Washington?</li><li style="margin-bottom: 0px;">Which US president originally proposed the Civil Rights Bill in June 1963 before his assassination?</li>
+          </ol>
+        </div>
+
+        <div class="quiz-card" style="padding: 10.2px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.44pt;"><span class="quiz-e-pill">E3</span> Enquiry 03: What was the Black Power movement, and how did it differ from non-violent protests?</span>
+            <span class="quiz-card-loc">pp. 8–9</span>
+          </div>
+          <ol class="quiz-ol" start="11" style="font-size: 10.8pt; line-height: 1.46;">
+            <li style="margin-bottom: 4.4px;">Which radical civil rights slogan was popularized by Stokely Carmichael during a 1966 march in Mississippi?</li><li style="margin-bottom: 4.4px;">Who were the two co-founders of the Black Panther Party for Self-Defense, created in Oakland in 1966?</li><li style="margin-bottom: 4.4px;">Which leader of the Nation of Islam (the Black Muslims) did Malcolm X clash with before breaking away in 1964?</li><li style="margin-bottom: 4.4px;">How did Malcolm X's views on civil rights change after his pilgrimage to Mecca in 1964?</li><li style="margin-bottom: 0px;">What was the main purpose of the Black Panther Party's Ten-Point Program?</li>
+          </ol>
+        </div>
+
+        <div class="quiz-card" style="padding: 10.2px 12px;">
+          <div class="quiz-card-hdr">
+            <span class="quiz-card-tt" style="font-size: 9.44pt;"><span class="quiz-e-pill">E4</span> Enquiry 04: Why did riots break out in American cities between 1965 and 1968?</span>
+            <span class="quiz-card-loc">pp. 10–11</span>
+          </div>
+          <ol class="quiz-ol" start="16" style="font-size: 10.8pt; line-height: 1.46;">
+            <li style="margin-bottom: 4.4px;">Which district of Los Angeles was the site of massive, destructive race riots in August 1965?</li><li style="margin-bottom: 4.4px;">What was the name of the federal commission appointed by Johnson that blamed white racism for the 1960s riots?</li><li style="margin-bottom: 4.4px;">What was a major consequence of the assassination of Martin Luther King Jr. in 1968?</li><li style="margin-bottom: 4.4px;">In which Southern city was Martin Luther King Jr. assassinated in 1968?</li><li style="margin-bottom: 0px;">What was the name of the 1966 campaign where MLK moved into a slum to highlight poor housing in the North?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <footer class="ftr">
+      <span>The History Revision Hub · Protest, Progress &amp; Radicalism · Knowledge Retrieval Quiz</span>
+      <span class="pg">Page 12 / 12</span>
+    </footer>
+  </section>
+
+</body></html>

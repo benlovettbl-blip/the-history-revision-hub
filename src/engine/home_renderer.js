@@ -111,7 +111,6 @@ export function renderHomepage() {
         edexcel_medicine: 'center 32%',
         cme_new: 'center 20%',
         great_war_part2: 'center 18%',
-        early_modern_world: 'center 25%',
         australia: 'center 70%',
         weimar_nazi_germany: 'center 20%',
         usa: 'center 25%',
@@ -419,7 +418,6 @@ export function renderSidebar() {
   if (
     appStore.state.activeUnitData.type !== 'trip' &&
     window.currentUnitId !== 'medieval_england' &&
-    window.currentUnitId !== 'early_modern_world' &&
     window.currentUnitId !== 'industrialisation_and_empire' &&
     window.currentUnitId !== 'australia'
   ) {
@@ -494,7 +492,6 @@ export function renderSidebar() {
     appStore.state.activeUnitData.type !== 'trip' &&
     window.currentUnitId !== 'medieval_england' &&
     window.currentUnitId !== 'water_and_sanitation' &&
-    window.currentUnitId !== 'early_modern_world' &&
     window.currentUnitId !== 'edexcel_medicine' &&
     window.currentUnitId !== 'great_war' &&
     window.currentUnitId !== 'great_war_part2' &&

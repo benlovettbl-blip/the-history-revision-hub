@@ -125,7 +125,6 @@ function getCleanUnitTitle(unitId, unitData) {
   const titles = {
     water_and_sanitation: 'Water and Sanitation Through Time',
     medieval_england: 'Medieval England & The Norman Conquest',
-    early_modern_world: 'The Early Modern World & Renaissance',
     monarchy_religion_power: 'Monarchy, Religion & Power (1509–1745)',
     first_british_empire: 'The First British Empire & Atlantic World',
     industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
@@ -153,7 +152,6 @@ function getYearStageBadge(unitId) {
   if (['water_and_sanitation', 'medieval_england'].includes(unitId)) return 'Year 7';
   if (
     [
-      'early_modern_world',
       'monarchy_religion_power',
       'first_british_empire',
       'industrialisation_and_empire',

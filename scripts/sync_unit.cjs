@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { TEXTBOOK_UNIT_REGISTRY } = require('./components/master_textbook_registry.cjs');
 
 const unitId = process.argv[2];
 const isWatch = process.argv.includes('--watch') || process.argv.includes('-w');
@@ -114,7 +115,6 @@ async function runSync() {
   const KS3_UNITS = [
     'great_war_part2',
     'great_war',
-    'early_modern_world',
     'industrialisation_and_empire',
     'medieval_england',
     'monarchy_religion_power',
@@ -185,25 +185,13 @@ async function runSync() {
     console.log(`\n[Step 3/6] 📄 Compiling fresh HTML workbooks & PDFs with Puppeteer...`);
     try {
       if (unitId === 'great_war') {
-        console.log(
-          `\n📚 Compiling 8-page pure narrative master textbook & workbook for [great_war]...`,
-        );
-        execSync(`node scripts/render_great_war_8page_textbook.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
+        console.log(`\n📚 Compiling Pupil Workbook for [great_war]...`);
         execSync(`node scripts/render_great_war_twopage_workbook.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
       } else if (unitId === 'water_and_sanitation') {
-        console.log(
-          `\n📚 Compiling 14-page publisher-grade textbook & V2 workbook for [water_and_sanitation]...`,
-        );
-        execSync(`node scripts/render_standard_textbook_water_and_sanitation.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
+        console.log(`\n📚 Compiling V2 Pupil Workbook for [water_and_sanitation]...`);
         execSync(`node scripts/render_water_and_sanitation_twopage_workbook.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
@@ -212,49 +200,15 @@ async function runSync() {
         // For unmigrated units, fallback to standard PDF export without regenerating legacy continuous files
       }
       execSync(`node scripts/export_pdfs.cjs ${unitId}`, { stdio: 'inherit', cwd: ROOT_DIR });
-      if (unitId === 'industrialisation_and_empire') {
-        console.log(
-          `\n📚 Compiling 18-page publisher-grade textbook for [industrialisation_and_empire]...`,
-        );
-        execSync(`node scripts/render_standard_textbook_industrialisation.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
-      }
       if (unitId === 'medieval_england') {
-        console.log(
-          `\n📚 Compiling 18-page publisher textbook & 16-page pupil workbook for [medieval_england]...`,
-        );
-        execSync(`node scripts/render_standard_textbook_medieval_england.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
+        console.log(`\n📚 Compiling 16-page Pupil Workbook for [medieval_england]...`);
         execSync(`node scripts/render_medieval_england_workbook.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
       }
-      if (unitId === 'early_modern_world') {
-        console.log(
-          `\n📚 Compiling 20-page publisher textbook & universal KS3 engine workbook for [early_modern_world]...`,
-        );
-        execSync(`node scripts/render_standard_textbook_early_modern_world.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
-        execSync(`node scripts/generate_ks3_workbook.cjs early_modern_world`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
-      }
       if (unitId === 'great_war_part2') {
-        console.log(
-          `\n📚 Compiling 8-page pure narrative master textbook & 16-page workbook for [great_war_part2]...`,
-        );
-        execSync(`node scripts/render_standard_textbook_great_war_part2.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
+        console.log(`\n📚 Compiling 16-page Pupil Workbook for [great_war_part2]...`);
         execSync(`node scripts/render_great_war_part2_twopage_workbook.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
@@ -300,13 +254,6 @@ async function runSync() {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
-        console.log(
-          `\n📚 Compiling 8-page pure narrative master textbook for [monarchy_religion_power]...`,
-        );
-        execSync(`node scripts/render_monarchy_religion_power_8page_textbook.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
       }
       if (unitId === 'first_british_empire') {
         console.log(`\n📚 Compiling 16-page pupil workbook for [first_british_empire]...`);
@@ -314,24 +261,10 @@ async function runSync() {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
-        console.log(
-          `\n📚 Compiling 8-page pure narrative master textbook for [first_british_empire]...`,
-        );
-        execSync(`node scripts/render_first_british_empire_8page_textbook.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
       }
       if (unitId === 'second_british_empire') {
         console.log(`\n📚 Compiling 16-page pupil workbook for [second_british_empire]...`);
         execSync(`node scripts/render_second_british_empire_workbook.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
-        console.log(
-          `\n📚 Compiling 12-page pure narrative master textbook for [second_british_empire]...`,
-        );
-        execSync(`node scripts/render_standard_textbook_second_british_empire.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
@@ -349,25 +282,28 @@ async function runSync() {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
-        console.log(`\n📚 Compiling 8-page pure narrative master textbook for [australia]...`);
-        execSync(`node scripts/render_australia_8page_textbook.cjs`, {
-          stdio: 'inherit',
-          cwd: ROOT_DIR,
-        });
       }
       if (unitId === 'the_shoah') {
-        console.log(
-          `\n📚 Compiling 20-page pupil workbook & 12-page publisher textbook for [the_shoah]...`,
-        );
+        console.log(`\n📚 Compiling 20-page pupil workbook for [the_shoah]...`);
         execSync(`node scripts/render_the_shoah_workbook.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
-        execSync(`node scripts/render_standard_textbook_the_shoah.cjs`, {
+      }
+
+      // Unified Full-Colour Textbook Auto-Sync: Any unit (or multi-KT GCSE unit) registered in
+      // master_textbook_registry.cjs automatically recompiles its live HTML + PDF + Drive copies!
+      const hasRegisteredTextbook =
+        Boolean(TEXTBOOK_UNIT_REGISTRY[unitId]) ||
+        Object.values(TEXTBOOK_UNIT_REGISTRY).some((c) => c.unitId === unitId);
+      if (hasRegisteredTextbook) {
+        console.log(`\n📘 Auto-compiling Unified Full-Colour Textbook(s) for [${unitId}]...`);
+        execSync(`node scripts/compile_master_textbook.cjs ${unitId}`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
       }
+
       console.log(`✅ Pupil workbooks and PDFs exported and verified in public/pdfs/.`);
     } catch (err) {
       console.error(`❌ PDF export failed:`, err.message);

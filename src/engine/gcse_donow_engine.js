@@ -41,7 +41,6 @@ export const KS3_RETRIEVAL_UNITS = [
   { id: 'post_war_britain', label: 'Post-War Britain', title: 'Post-War Britain, 1945–1997', bg: '#fdf2f8', border: '#fce7f3', text: '#9d174d' },
   { id: 'australia', label: 'Australia', title: 'Indigenous & Colonial Australia', bg: '#fffbeb', border: '#fef3c7', text: '#92400e' },
   { id: 'water_and_sanitation', label: 'Water & Sanitation', title: 'Water & Sanitation Through Time', bg: '#f0fdfa', border: '#ccfbf1', text: '#0f766e' },
-  { id: 'early_modern_world', label: 'Early Modern', title: 'The Early Modern World, c1450–1750', bg: '#faf5ff', border: '#f3e8ff', text: '#6b21a8' },
 ];
 
 export const ALL_RETRIEVAL_UNITS = [...GCSE_RETRIEVAL_UNITS, ...KS3_RETRIEVAL_UNITS];

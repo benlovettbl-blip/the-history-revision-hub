@@ -1183,12 +1183,12 @@ export function renderMedicineLivingTimeline(container) {
       .med-rail-node {
         position: relative;
         flex: 0 0 auto;
-        width: 152px;
+        width: 164px;
         background: #f8fafc;
         border: 1.5px solid #e2e8f0;
         border-top: 3px solid var(--era-color, #7f1d1d);
         border-radius: 8px;
-        padding: 7px 9px;
+        padding: 7px 10px 8px 10px;
         text-align: left;
         cursor: pointer;
         transition: all 0.18s ease;
@@ -1248,22 +1248,16 @@ export function renderMedicineLivingTimeline(container) {
         font-size: 0.67rem;
         font-weight: 800;
         color: var(--era-color, #7f1d1d);
-        letter-spacing: 0.02em;
+        letter-spacing: 0.01em;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
       }
 
       .med-rail-title {
-        font-size: 0.73rem;
+        font-size: 0.74rem;
         font-weight: 700;
         color: #1e293b;
-        line-height: 1.24;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        min-height: 1.8em;
+        line-height: 1.26;
+        min-height: 2.45em;
       }
 
       /* Range Scrubber Bar */

@@ -107,7 +107,10 @@ const lessonConfigs = canonicalLessons.map((l, idx) => {
       structureStrip: scaffolding.structure_strip
         ? scaffolding.structure_strip.map((s) => ({
             col: s.col || 'ANALYSIS',
-            text: s.prompt || '',
+            text: String(s.prompt || '')
+              .replace(/\s*\[\d+\.\d+(?:[,–\-\s]*\d+\.\d+)*\]/g, '')
+              .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+              .replace(/\*([^*]+)\*/g, '<em>$1</em>'),
           }))
         : [
             {

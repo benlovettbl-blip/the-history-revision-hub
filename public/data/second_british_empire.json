@@ -4408,6 +4408,16 @@
           "teacher_guidance": "Recommended Watch Window: 04:00–15:30 | Lesson Phase: The Moral Balance Sheet of Empire | Tone Alert: Thought-provoking historical evaluation weighing imperial infrastructure (railways, law) against famine, racism, and colonial violence.",
           "viewing_task": "[09:30] Historical Verdict: How does Paxman evaluate the claim that the British Empire was an unselfish 'civilizing mission'?",
           "model_answer": "Paxman argues that while Britain built railways, legal systems, and schools, these were primarily engineered to extract wealth, enforce military control, and maintain racial hierarchies, disproving the Victorian myth of purely benevolent rule."
+        },
+        {
+          "type": "era",
+          "url": "https://era.org.uk/streaming-service-resource/20th-century-world-02-the-british-empire-history-file/",
+          "title": "BBC Two / ERA: History File – 20th Century World, Ep. 2: The British Empire",
+          "duration": "19 mins 14 secs",
+          "pathway": "Archival Documentary",
+          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Synoptic Imperial Balance Sheet | Tone Alert: BBC Two History File using archival film to contrast British imperial pride and trade wealth with the experiences of colonised peoples and the rise of anti-colonial nationalism.",
+          "viewing_task": "[02:45] Quick Check: How did schools, Empire Day parades, and advertisements encourage ordinary British people around 1900 to take pride in the Empire?\n[11:30] Hinge Question: Why do historians reach such sharply contrasting verdicts on the British Empire depending on whether they examine British industrial cities or colonised societies in India and Africa?",
+          "model_answer": "Quick Check: Pink-shaded world maps, Empire Day flag ceremonies, and packaging on tea, cocoa, and soap portrayed empire as a civilising family bringing prosperity.\nHinge Question: Britain gained cheap raw materials, captive markets, and global naval prestige, whereas colonised populations experienced land seizure, de-industrialisation, famine, and denial of democratic self-government."
         }
       ],
       "sources": [
