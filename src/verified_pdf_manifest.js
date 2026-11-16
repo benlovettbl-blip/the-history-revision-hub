@@ -473,8 +473,6 @@ export const VERIFIED_PDFS = new Set([
   "/pdfs/ypres_tour_leader_pocket_guide.pdf",
   "/Research Dossier - 2nd Lt Ernest Crummack (AI Case Study).pdf",
   "/units/cme_new/cme_new_timeline.pdf",
-  "/units/cme_new/edexcel_cme_revision_guide.pdf",
-  "/units/cme_new/edexcel_cme_visual_revision_and_exam_guide.pdf",
   "/units/cme_new/workbook_KT1.pdf",
   "/units/cme_new/workbook_KT2.pdf",
   "/units/cme_new/workbook_KT3.pdf",

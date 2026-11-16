@@ -36,7 +36,9 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
   ) {
     // 1. Conflict in the Middle East (cme_new)
     if (url.includes('/units/cme_new/')) {
-      if (url.includes('mastery')) {
+      if (url.includes('revision')) {
+        resolvedPdfUrl = '/pdfs/cme_revision_guide.pdf';
+      } else if (url.includes('mastery')) {
         if (url.includes('KT1')) resolvedPdfUrl = '/pdfs/cme_new_mastery_pack_KT1.pdf';
         else if (url.includes('KT2')) resolvedPdfUrl = '/pdfs/cme_new_mastery_pack_KT2.pdf';
         else if (url.includes('KT3')) resolvedPdfUrl = '/pdfs/cme_new_mastery_pack_KT3.pdf';
@@ -504,9 +506,26 @@ const UNIT_PUBLICATIONS = {
           label: 'Complete Unit (96 Core Questions & Answers)',
           title: 'Master Knowledge Retrieval & Homework Companion (96 Core Questions)',
           pages: '16 Pages (A4)',
-          desc: 'All 96 knowledge recall questions across 12 enquiries in KT1, KT2, and KT3 (100% Pearson Revision Guide aligned). Immediate Page 2 retrieval quizzing, front tracking ledger, and complete Marking Bank.',
+          desc: 'All 96 knowledge recall questions across 12 enquiries in KT1, KT2, and KT3. Immediate Page 2 retrieval quizzing, front tracking ledger, and complete Marking Bank.',
           readUrl: '/units/cme_new/cme_master_retrieval_companion.html',
           pdfUrl: '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf',
+        },
+      ],
+    },
+    pillar4: {
+      key: 'pillar4',
+      badge: 'PILLAR 4 • REVISION GUIDE',
+      color: '#0d9488',
+      tags: ['14 Pages', 'Ultra-Condensed', 'Zero Fluff'],
+      editions: [
+        {
+          id: 'all',
+          label: '14-Page Ultra-Condensed Revision Guide',
+          title: 'Conflict in the Middle East (1945–1995) 14-Page Revision Guide',
+          pages: '14 Pages',
+          desc: 'Official 14-page visual revision architecture. 1 page per lesson across all 12 lessons, bold dates/stats, causal flow strips, key treaties table & key figures dossiers. Zero model answers, 100% core knowledge.',
+          readUrl: '/units/cme_new/revision_guide.html',
+          pdfUrl: '/pdfs/cme_revision_guide.pdf',
         },
       ],
     },
@@ -1619,8 +1638,8 @@ export function renderWorkbooksZone(container, unitData) {
       </div>
     `;
 
-    // Render the Master Publications Grid (3 Pillars for CME/Medieval/KS2, 2-3 for others)
-    const activePillars = [unitPubs.pillar1, unitPubs.pillar2, unitPubs.pillar3].filter(Boolean);
+    // Render the Master Publications Grid (3-4 Pillars)
+    const activePillars = [unitPubs.pillar1, unitPubs.pillar2, unitPubs.pillar3, unitPubs.pillar4].filter(Boolean);
     html += `
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-bottom: 12px;">
         ${activePillars.map((p) => renderMasterPillarCard(activeUnitId, p)).join('')}

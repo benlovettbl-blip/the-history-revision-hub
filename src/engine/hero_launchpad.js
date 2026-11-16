@@ -301,10 +301,16 @@ export const CURRICULAR_PILLARS_CATALOG = {
       htmlUrl: '/units/cme_new/cme_master_retrieval_companion.html',
       pdfUrl: '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf',
     },
+    revisionGuide: {
+      title: 'Conflict in the Middle East (1945–1995) 14-Page Ultra-Condensed Revision Guide',
+      label: 'Revision Guide (14p)',
+      htmlUrl: '/units/cme_new/revision_guide.html',
+      pdfUrl: '/pdfs/cme_revision_guide.pdf',
+    },
     overviewInfographic: {
       slug: 'cme_edexcel_spec_roadmap',
       label: 'Specification Roadmap (1945–1995)',
-      title: 'Edexcel GCSE (9–1) Conflict in the Middle East Specification Roadmap',
+      title: 'GCSE (9–1) Conflict in the Middle East Specification Roadmap',
       icon: 'fa-solid fa-route',
     },
   },
@@ -456,12 +462,14 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const ov = config.overviewInfographic;
   const sow = config.schemeOfWork;
   const tl = config.timelineUrl;
+  const rg = config.revisionGuide;
 
   const hasDistinctTextbook = tb && wb && tb.htmlUrl !== wb.htmlUrl && tb.pdfUrl !== wb.pdfUrl;
 
   const cleanTbTitle = (tb?.title || '').replace(/'/g, "\\'");
   const cleanWbTitle = (wb?.title || '').replace(/'/g, "\\'");
   const cleanRcTitle = (rc?.title || '').replace(/'/g, "\\'");
+  const cleanRgTitle = (rg?.title || '').replace(/'/g, "\\'");
   const cleanCbTitle = (cb?.title || '').replace(/'/g, "\\'");
   const cleanOvTitle = (ov?.title || ov?.label || '').replace(/'/g, "\\'");
   const cleanSowTitle = (sow?.title || sow?.label || '').replace(/'/g, "\\'");
@@ -564,6 +572,25 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         </div>`
     : '';
 
+  const revisionGuidePill = rg
+    ? `
+        <!-- Optional Pillar: 14-Page Ultra-Condensed Revision Guide -->
+        <div class="launchpad-pill-group pill-revision-guide" style="border-color: rgba(45, 212, 191, 0.45);">
+          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${rg.htmlUrl}', '${cleanRgTitle}', '${rg.pdfUrl}', 'REVISION_GUIDE')" title="Open 14-Page Revision Guide in classroom reader">
+            <i class="fa-solid fa-book-bookmark" style="color: #2dd4bf;"></i>
+            <span>${rg.label}</span>
+          </button>
+          ${
+            isVerifiedPdf(rg.pdfUrl)
+              ? `
+          <a href="${rg.pdfUrl}" target="_blank" download title="Download 14-Page Revision Guide PDF" class="launchpad-pill-pdf" style="background: rgba(13, 148, 136, 0.25); color: #2dd4bf;">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>`
+              : ''
+          }
+        </div>`
+    : '';
+
   const combinedPill = cb
     ? `
         <!-- Optional Pillar: Combined Master Scholar Workbook -->
@@ -631,6 +658,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         ${workbookPill}
         ${workbookMarkSchemePill}
         ${retrievalPill}
+        ${revisionGuidePill}
         ${sowPill}
         ${timelinePill}
         ${combinedPill}

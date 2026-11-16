@@ -2261,12 +2261,16 @@ export async function renderLessonsView() {
             <div>
               <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
-                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">Edexcel Specification</span>
+                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">GCSE Specification</span>
               </div>
               <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">Conflict in the Middle East: Specification Roadmaps &amp; Visual Overviews</h4>
             </div>
           </div>
           <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East 14-Page Ultra-Condensed Revision Guide', '/pdfs/cme_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0f766e; color: #ffffff; border: 1px solid #2dd4bf; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(15,118,110,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-book-bookmark"></i>
+              <span>14-Page Revision Guide</span>
+            </button>
             <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_edexcel_spec_roadmap');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0284c7; color: #ffffff; border: 1px solid #38bdf8; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
               <i class="fa-solid fa-route"></i>
               <span>Specification Roadmap (1945–1995)</span>
@@ -2348,6 +2352,43 @@ export async function renderLessonsView() {
     return '';
   }
 
+  function renderCmeRevisionGuideBanner(uId) {
+    if (uId !== 'cme_new' && uId !== 'gcse_middle_east_1945_1995') return '';
+    return `
+      <div class="cme-revision-guide-banner" style="margin: 0 0 24px 0; background: linear-gradient(135deg, #091322 0%, #0f2744 50%, #0a192f 100%); border-radius: 12px; padding: 22px 26px; color: #ffffff; box-shadow: 0 8px 24px -4px rgba(10, 25, 47, 0.35); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; border: 1.5px solid rgba(45, 212, 191, 0.4); position: relative; overflow: hidden;">
+        <div style="position: absolute; right: -15px; top: -25px; font-size: 11rem; color: rgba(45, 212, 191, 0.04); pointer-events: none; z-index: 0;">
+          <i class="fa-solid fa-book-bookmark"></i>
+        </div>
+        <div style="flex: 1; min-width: 290px; position: relative; z-index: 1;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(13, 148, 136, 0.25); border: 1px solid rgba(45, 212, 191, 0.5); padding: 3px 10px; border-radius: 20px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; color: #2dd4bf;">
+            <i class="fa-solid fa-star"></i> Sole Official GCSE Revision Guide &bull; 14 Pages A4
+          </div>
+          <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.45rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
+            Conflict in the Middle East (1945–1995): Ultra-Condensed Revision Guide
+          </h3>
+          <p style="margin: 0 0 10px 0; color: #cbd5e1; font-size: 0.88rem; line-height: 1.45; max-width: 720px;">
+            The definitive visual revision guide across all 12 lessons: Master Timeline &amp; RAG checklist (p.1), 1 page per lesson with bold dates/stats and causal flow strips (pp.2–13), and Key Treaties &amp; Historical Figures summary (p.14). Pure high-density notes &bull; zero model answers &bull; zero exam lines.
+          </p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; font-size: 0.74rem;">
+            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-file-pdf" style="color: #2dd4bf; margin-right: 4px;"></i>14 Pages A4 Portrait</span>
+            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-book-open" style="color: #38bdf8; margin-right: 4px;"></i>12 Condensed Lessons</span>
+            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-timeline" style="color: #fbbf24; margin-right: 4px;"></i>40 Timeline Milestones</span>
+            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-scale-balanced" style="color: #a78bfa; margin-right: 4px;"></i>14 Treaties &amp; Accords</span>
+            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-users" style="color: #f472b6; margin-right: 4px;"></i>8 Key Figure Dossiers</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; position: relative; z-index: 1;">
+          <button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East 14-Page Ultra-Condensed Revision Guide', '/pdfs/cme_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid #2dd4bf; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+            <i class="fa-solid fa-book-open-reader"></i> Read Online
+          </button>
+          <a href="/pdfs/cme_revision_guide.pdf" target="_blank" download="cme_revision_guide.pdf" style="background: rgba(255,255,255,0.1); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.25); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.18)';" onmouseout="this.style.background='rgba(255,255,255,0.1)';">
+            <i class="fa-solid fa-file-pdf" style="color: #f87171;"></i> Download PDF (A4)
+          </a>
+        </div>
+      </div>
+    `;
+  }
+
   const isTrip = data && data.type === 'trip';
 
   container.innerHTML = `
@@ -2357,6 +2398,7 @@ export async function renderLessonsView() {
       <div class="lessons-view-body" style="padding: 30px; border-top: 1px solid #e2e8f0; max-width: 100%; box-sizing: border-box;">
         ${renderUnitSynopsis(data, unitId)}
         ${renderUnitRoadmapBar(unitId)}
+        ${renderCmeRevisionGuideBanner(unitId)}
         ${renderKeyTopicLessonsHTML(data, unitId, data)}
 
         ${
