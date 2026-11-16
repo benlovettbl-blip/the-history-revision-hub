@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Key Topic 2: The Escalating Conflict, 1964–73 — GCSE (9–1) Exam Practice Pack</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Key Topic 2: The Escalating Conflict, 1964–73 — GCSE Exam Question Practice Booklet</title>
     <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
 
   @page {
     size: A4 portrait;
@@ -23,13 +20,13 @@
     margin: 0;
     padding: 0;
     background: #ffffff;
-    color: #000000;
+    color: #0f172a;
     -webkit-font-smoothing: antialiased;
   }
   .page {
     width: 210mm;
     height: 297mm;
-    padding: 11mm 13mm 11mm 13mm;
+    padding: 12mm 14mm 11mm 14mm;
     page-break-after: always;
     position: relative;
     background: #ffffff;
@@ -38,662 +35,227 @@
     flex-direction: column;
     justify-content: space-between;
   }
-
-  /* Authentic Pearson Edexcel Cover Headers */
-  .cover-warning {
-    font-size: 8.0pt;
-    font-weight: 800;
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 5px;
-    border-bottom: 1.5px solid #000000;
-    padding-bottom: 3px;
+  .page:last-child {
+    page-break-after: avoid;
   }
-  .candidate-box {
-    border: 1.5px solid #000000;
-    padding: 6px 10px;
-    margin-bottom: 8px;
-    background: #ffffff;
-  }
-  .candidate-row {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 4px;
-  }
-  .candidate-row:last-child {
-    margin-bottom: 0;
-  }
-  .field-label {
-    font-size: 8.0pt;
-    font-weight: 800;
-    color: #000000;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-  }
-  .field-input {
-    border-bottom: 1.5px solid #000000;
-    height: 18px;
-  }
-  .char-cell {
-    display: inline-block;
-    width: 17px;
-    height: 19px;
-    border: 1.2px solid #000000;
-    margin-right: 3px;
-    vertical-align: middle;
-  }
-
-  .edexcel-banner {
-    font-size: 13pt;
-    font-weight: 900;
-    color: #000000;
-    letter-spacing: -0.2px;
-    margin-bottom: 4px;
-    text-transform: uppercase;
-  }
-  .exam-header-box {
-    border: 2px solid #000000;
-    display: flex;
-    margin-bottom: 7px;
-    background: #ffffff;
-  }
-  .exam-header-left {
-    flex: 3.8;
-    padding: 6px 10px;
-    border-right: 2px solid #000000;
-  }
-  .exam-header-right {
-    flex: 1.2;
-    padding: 6px 8px;
-    background: #f8fafc;
+  .page-main {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    min-height: 0;
+  }
+
+  /* Cover Page */
+  .cover-top-bar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    border-bottom: 2px solid #0f172a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
   }
-  .exam-date {
-    font-size: 8pt;
+  .cover-board {
+    font-size: 8.5pt;
     font-weight: 800;
-    color: #000000;
     text-transform: uppercase;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.6px;
+    color: #0f172a;
   }
-  .exam-time {
+  .cover-ref {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #334155;
+    border: 1px solid #94a3b8;
+    padding: 2px 8px;
+    border-radius: 3px;
+    background: #f8fafc;
+  }
+
+  .cover-hero-box {
+    border: 1.5px solid #0f172a;
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+  }
+  .cover-kicker {
     font-size: 8pt;
     font-weight: 700;
-    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #475569;
     margin-bottom: 3px;
   }
-  .exam-subject {
+  .cover-unit-title {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 12.5pt;
-    font-weight: 900;
-    color: #000000;
+    font-size: 16pt;
+    font-weight: 800;
+    color: #0f172a;
     line-height: 1.15;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
+    margin: 0 0 4px 0;
   }
-  .exam-booklet {
-    font-size: 9.5pt;
-    font-weight: 800;
-    color: #000000;
+  .cover-kt-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px 0;
   }
-  .exam-subtopic {
-    font-size: 8.0pt;
-    color: #000000;
-    font-style: italic;
-  }
-  .ref-label {
-    font-size: 7.2pt;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #000000;
-  }
-  .ref-code {
-    font-size: 12pt;
-    font-weight: 900;
-    color: #000000;
-    letter-spacing: 0.5px;
-  }
-
-  /* Internal Page Headers */
-  .page-header {
-    border-bottom: 2px solid #000000;
-    padding-bottom: 4px;
-    margin-bottom: 7px;
+  .cover-meta-row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-  }
-  .header-left h2 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 11.5pt;
-    font-weight: 900;
-    margin: 0;
-    color: #000000;
-    letter-spacing: -0.1px;
-    text-transform: uppercase;
-  }
-  .header-left p {
-    font-size: 8.2pt;
-    margin: 1px 0 0 0;
-    color: #000000;
-  }
-  .header-tag {
-    font-size: 7.8pt;
-    font-weight: 800;
-    color: #ffffff;
-    background: #000000;
-    padding: 2.5px 8px;
-    border-radius: 2px;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    white-space: nowrap;
-  }
-
-  /* Question Containers */
-  .question-container {
-    margin-bottom: 5px;
-  }
-  .question-prompt {
-    font-size: 9.2pt;
-    font-weight: 700;
-    line-height: 1.35;
-    margin-bottom: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    color: #000000;
-  }
-  .q-num {
-    font-size: 10pt;
-    font-weight: 900;
-    margin-right: 4px;
-    color: #000000;
-  }
-  .q-marks {
-    font-size: 9.2pt;
-    font-weight: 900;
-    color: #000000;
-    white-space: nowrap;
-    margin-left: 8px;
-  }
-
-  /* Discrete 4-Tier Provenance Badges (Monochrome Laser-Safe) */
-  .exam-provenance-pill {
-    font-size: 7pt;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    padding: 1px 5px;
-    border-radius: 2px;
-    margin-right: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.25;
-    border: 1.2px solid #000000;
-  }
-  .exam-provenance-pill.past {
-    background: #000000;
-    color: #ffffff;
-  }
-  .exam-provenance-pill.specimen {
-    background: #f8fafc;
-    color: #000000;
-  }
-  .exam-provenance-pill.unexamined {
-    background: #f8fafc;
-    color: #000000;
-  }
-  .exam-provenance-pill.forecast {
-    background: #f8fafc;
-    color: #000000;
-  }
-
-  /* Stimulus Box */
-  .stimulus-card {
-    border: 1.5px solid #000000;
-    border-radius: 2px;
-    background: #f8fafc;
-    padding: 5px 9px;
-    margin-bottom: 5px;
-    font-size: 8.2pt;
-    line-height: 1.3;
-    color: #000000;
-  }
-  .stimulus-card ul {
-    margin: 2px 0 2px 18px;
-    padding: 0;
-  }
-  .stimulus-card li {
-    margin-bottom: 1px;
-  }
-
-  .focus-guidance {
-    font-size: 8.2pt;
-    color: #000000;
-    font-style: italic;
-    margin-bottom: 5px;
-    line-height: 1.3;
-  }
-
-  /* Ruled Lines for Handwriting (Authentic Pearson Edexcel 7.4mm Spacing - Photocopier Safe) */
-  .dotted-line {
-    border-bottom: 1.2px solid #000000;
-    height: 7.4mm;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Pearson Professional Monochrome Scaffolding Containers */
-  .scaffold-bar {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    background: #f8fafc;
-    padding: 4px 8px;
-    margin-bottom: 6px;
-    font-size: 8.4pt;
-    line-height: 1.3;
-    display: flex;
-    gap: 8px;
-    color: #000000;
-  }
-  .scaffold-col {
-    border-right: 1px solid #cbd5e1;
-    padding-right: 6px;
-  }
-  .scaffold-col:last-child {
-    border-right: none;
-    padding-right: 0;
-  }
-  .scaffold-label {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 7.8pt;
-    color: #000000;
-    margin-bottom: 2px;
-    display: block;
-    letter-spacing: 0.2px;
-  }
-  .scaffold-content {
-    color: #000000;
-    font-size: 7.6pt;
-    line-height: 1.3;
-  }
-  .scaffold-pill {
-    display: inline-block;
-    background: #ffffff;
-    border: 1.2px solid #000000;
-    border-radius: 2px;
-    padding: 1px 5px;
-    margin: 1px 2px 1px 0;
-    font-size: 7.6pt;
-    font-weight: 700;
-    color: #000000;
-    white-space: nowrap;
-  }
-
-  /* Pearson Professional Full-Width Stacked Scaffolding */
-  .importance-scaffold-stack {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    background: #f8fafc;
-    padding: 4px 8px;
-    margin-bottom: 5px;
-    font-size: 8.4pt;
-    line-height: 1.3;
-    color: #000000;
-  }
-  .scaffold-focus-row {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-    padding: 2px 0;
-    border-bottom: 1px solid #cbd5e1;
-  }
-  .scaffold-badge {
-    font-size: 7.6pt;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #000000;
-    padding: 1.5px 6px;
-    border-radius: 2px;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .scaffold-text {
-    color: #000000;
-    font-size: 8.2pt;
-    line-height: 1.3;
-  }
-  .scaffold-vocab-row {
-    padding-top: 3px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  .scaffold-vocab-subrow {
-    display: flex;
     align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-  .scaffold-pills-list {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 3px;
-  }
-  .scaffold-stem-subrow {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-    font-size: 7.6pt;
-    color: #000000;
-  }
-  .scaffold-stem-label {
-    font-weight: 800;
-    color: #000000;
-    font-size: 7.6pt;
-    text-transform: uppercase;
-    flex-shrink: 0;
-  }
-  .scaffold-stem-text {
-    font-style: italic;
-    color: #000000;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 7px;
+    font-size: 7.5pt;
+    color: #334155;
+    white-space: nowrap;
   }
 
-  .narrative-flow-planner {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    background: #f8fafc;
-    padding: 4px 8px;
-    margin-bottom: 6px;
-    font-size: 8.4pt;
-    line-height: 1.3;
-  }
-  .narrative-stages-row {
-    display: flex;
-    gap: 6px;
-    margin-bottom: 4px;
-  }
-  .narrative-stage-box {
-    flex: 1;
-    background: #ffffff;
-    border: 1.2px solid #000000;
-    border-radius: 2px;
-    padding: 3px 5px;
-  }
-  .narrative-stage-hdr {
-    font-weight: 800;
-    font-size: 7.6pt;
-    text-transform: uppercase;
-    color: #000000;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 1px;
-    margin-bottom: 2px;
-  }
-
-  /* Fatal Traps Card */
-  .traps-card {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    padding: 6px 8px;
-    background: #ffffff;
-    margin-bottom: 6px;
-  }
-  .traps-header {
-    font-size: 8.5pt;
-    font-weight: 800;
-    color: #ffffff;
-    background: #000000;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    padding: 3px 6px;
-    border-radius: 2px;
-    margin-bottom: 5px;
-  }
-  .traps-grid {
+  .pupil-Write-strip {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 6px;
-  }
-  .trap-item {
-    background: #f8fafc;
-    border: 1.2px solid #000000;
-    border-radius: 2px;
-    padding: 5px 6px;
-    font-size: 7.6pt;
-    line-height: 1.25;
-    color: #000000;
-  }
-  .trap-item strong {
-    color: #000000;
-    display: block;
-    margin-bottom: 2px;
-    font-weight: 800;
-  }
-  .trap-item span {
-    color: #000000;
-  }
-
-  /* 100% Specification Practice Bank Container (Page 12) */
-  .spec-bank-container {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    padding: 6px 9px;
+    grid-template-columns: 2.2fr 1fr 1fr;
+    gap: 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
     background: #ffffff;
-    margin-bottom: 6px;
   }
-  .spec-bank-header {
+  .pupil-field {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
-    border-bottom: 1.5px solid #000000;
-    padding-bottom: 2px;
-    margin-bottom: 4px;
-  }
-  .spec-bank-title {
-    color: #000000;
-    font-size: 8.5pt;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-  }
-  .spec-bank-subtitle {
-    font-size: 7.2pt;
-    color: #000000;
-    font-style: italic;
-  }
-  .spec-bank-list {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
-  .spec-bank-item {
-    background: #f8fafc;
-    border: 1px solid #000000;
-    border-radius: 2px;
-    padding: 3px 6px;
-    font-size: 7.8pt;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 1.25;
-    color: #000000;
-  }
-  .spec-bank-q {
-    flex: 1;
-    color: #000000;
-    padding-right: 8px;
-  }
-  .spec-bank-badge {
-    background: #000000;
-    color: #ffffff;
-    font-size: 6.8pt;
+    gap: 6px;
+    font-size: 8.2pt;
     font-weight: 700;
-    padding: 1.5px 5px;
-    border-radius: 2px;
-    white-space: nowrap;
-    text-transform: uppercase;
+    color: #0f172a;
+  }
+  .pupil-line {
+    flex: 1;
+    border-bottom: 1px solid #64748b;
+    height: 15px;
   }
 
-  /* Diagnostic Card */
-  .diagnostic-action-card {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    padding: 5px 8px;
-    background: #f8fafc;
-    font-size: 7.4pt;
-    color: #000000;
-  }
-
-  /* Progress Tracker Table on Page 1 */
+  /* Tracker Table */
   .tracker-card {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    background: #ffffff;
-    padding: 5px 8px;
-    margin-bottom: 7px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
   }
   .tracker-header {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    border-bottom: 1.5px solid #000000;
-    padding-bottom: 2px;
-    margin-bottom: 4px;
+    align-items: center;
   }
   .tracker-title {
-    font-size: 8.5pt;
+    font-size: 8.2pt;
     font-weight: 800;
-    color: #000000;
     text-transform: uppercase;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.4px;
   }
   .tracker-sub {
-    font-size: 7pt;
-    color: #000000;
-    font-style: italic;
+    font-size: 7.2pt;
+    color: #cbd5e1;
   }
   .tracker-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 7.4pt;
-    line-height: 1.2;
+    font-size: 7.8pt;
   }
   .tracker-table th {
-    background: #000000;
-    color: #ffffff;
-    font-weight: 800;
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
     text-transform: uppercase;
-    padding: 2.5px 5px;
-    border: 1px solid #000000;
-    text-align: left;
     font-size: 6.8pt;
+    letter-spacing: 0.3px;
+    padding: 4px 7px;
+    border-bottom: 1px solid #94a3b8;
+    text-align: left;
   }
   .tracker-table td {
-    padding: 2.5px 5px;
-    border: 1px solid #cbd5e1;
-    color: #000000;
+    padding: 5.5px 7px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #1e293b;
   }
   .tracker-section-hdr td {
-    background: #f1f5f9;
+    background: #f8fafc;
     font-weight: 800;
-    color: #000000;
-    font-size: 7pt;
+    color: #0f172a;
+    font-size: 7.1pt;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    padding: 2.5px 5px;
-    border-top: 1.5px solid #000000;
-    border-bottom: 1.5px solid #000000;
-  }
-  .tracker-row:nth-child(even) {
-    background: #fafafa;
-  }
-  .page-cell {
-    text-align: center;
-    font-weight: 800;
-    color: #000000;
-  }
-  .marks-cell {
-    text-align: center;
-    font-weight: 700;
-  }
-  .score-cell {
-    text-align: center;
-    font-weight: 700;
-    color: #000000;
+    padding: 4px 7px;
+    border-top: 1px solid #94a3b8;
+    border-bottom: 1px solid #cbd5e1;
   }
   .type-tag {
     display: inline-block;
-    padding: 1px 4px;
+    padding: 1px 5px;
     border-radius: 2px;
-    font-size: 6.5pt;
+    font-size: 6.6pt;
     font-weight: 700;
     text-transform: uppercase;
-    background: #000000;
-    color: #ffffff;
+    border: 1px solid #94a3b8;
+    background: #ffffff;
+    color: #334155;
     white-space: nowrap;
   }
-  .tracker-box {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border: 1.2px solid #000000;
-    border-radius: 1px;
-    vertical-align: middle;
-    margin-right: 2px;
+  .page-cell, .marks-cell, .score-cell {
+    text-align: center;
+    font-weight: 600;
   }
 
-  /* Specification Audit Checklist on Page 1 */
+  /* Specification Checklist */
   .spec-audit-container {
-    border: 1.5px solid #000000;
-    border-radius: 3px;
-    padding: 5px 8px;
-    background: #f8fafc;
-    margin-bottom: 5px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    padding: 9px 11px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
   }
   .spec-audit-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    border-bottom: 1.2px solid #000000;
-    padding-bottom: 2px;
-    margin-bottom: 4px;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
   }
   .spec-audit-title {
     font-size: 8pt;
     font-weight: 800;
-    color: #000000;
+    color: #0f172a;
     text-transform: uppercase;
+    letter-spacing: 0.3px;
   }
   .spec-audit-sub {
-    font-size: 6.8pt;
-    color: #000000;
-    font-style: italic;
+    font-size: 7pt;
+    color: #64748b;
   }
   .spec-audit-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 6px;
+    gap: 8px;
+    flex: 1;
   }
   .spec-audit-col {
-    background: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 2px;
-    padding: 3px 5px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 3px;
+    padding: 5px 7px;
   }
   .spec-col-title {
-    font-size: 7.2pt;
+    font-size: 7.3pt;
     font-weight: 800;
-    color: #000000;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 1.5px;
-    margin-bottom: 2.5px;
+    color: #0f172a;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
     text-transform: uppercase;
   }
   .spec-points-list {
@@ -702,1099 +264,1032 @@
     margin: 0;
   }
   .spec-point-item {
-    font-size: 6.6pt;
-    line-height: 1.2;
-    color: #000000;
+    font-size: 6.9pt;
+    line-height: 1.28;
+    color: #334155;
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
   .spec-tick-box {
     width: 8px;
     height: 8px;
-    border: 1.2px solid #000000;
+    border: 1px solid #475569;
     border-radius: 1px;
-    margin-right: 3px;
+    margin-right: 5px;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 2px;
+    background: #ffffff;
   }
   .spec-point-text {
     flex: 1;
   }
 
-  /* Footers */
-  .page-footer {
-    border-top: 1.2px solid #000000;
-    padding-top: 3px;
-    font-size: 7.5pt;
-    color: #000000;
+  /* Internal Page Headers */
+  .page-header {
+    border-bottom: 1.5px solid #0f172a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-left h2 {
+    font-size: 10pt;
+    font-weight: 800;
+    margin: 0;
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .header-left p {
+    font-size: 7.8pt;
+    margin: 2px 0 0 0;
+    color: #475569;
+  }
+  .header-tag {
+    font-size: 7.4pt;
+    font-weight: 700;
+    color: #0f172a;
+    background: #f1f5f9;
+    border: 1px solid #94a3b8;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+
+  /* Clean Question Blocks */
+  .question-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .question-block-split {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .question-divider {
+    border-top: 1px dashed #cbd5e1;
+    margin: 10px 0;
+  }
+  .question-prompt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .q-left {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    flex: 1;
+  }
+  .q-num {
+    font-size: 9.5pt;
+    font-weight: 800;
+    color: #0f172a;
+    background: #f1f5f9;
+    border: 1px solid #94a3b8;
+    padding: 1px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .q-stem {
+    font-size: 9.8pt;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #0f172a;
+  }
+  .exam-provenance-pill {
+    font-size: 6.6pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin-left: 5px;
+    color: #475569;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .q-marks {
+    font-size: 9.2pt;
+    font-weight: 800;
+    color: #0f172a;
+    white-space: nowrap;
+  }
+
+  /* Authentic Pearson Edexcel Stimulus Box (Q2 & Q7 Narrative Only) */
+  .stimulus-card {
+    border-left: 3px solid #0f172a;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 6px 12px;
+    margin: 2px 0 8px 0;
+    font-size: 8.5pt;
+    line-height: 1.35;
+    color: #1e293b;
+  }
+  .stimulus-card ul {
+    margin: 3px 0 3px 18px;
+    padding: 0;
+  }
+  .stimulus-card li {
+    margin-bottom: 2px;
+  }
+  .stimulus-note {
+    font-size: 8pt;
+    color: #475569;
+    font-style: italic;
+  }
+
+  /* Spacious, Clean Exam Writing Lines */
+  .lines-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .dotted-line {
+    border-bottom: 0.9px solid #94a3b8;
+    height: 8.2mm;
+    width: 100%;
+  }
+
+  .mark-box-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 7.8pt;
+    font-weight: 700;
+    color: #475569;
+  }
+  .mark-pill {
+    border: 1px solid #94a3b8;
+    background: #f8fafc;
+    padding: 2px 10px;
+    border-radius: 3px;
+    color: #0f172a;
+  }
+
+  /* Page 12: Clean Technique Summary & Additional Question Stems */
+  .technique-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .technique-card {
+    border: 1px solid #94a3b8;
+    border-top: 3px solid #0f172a;
+    border-radius: 3px;
+    padding: 7px 9px;
+    background: #f8fafc;
+    font-size: 7.6pt;
+    line-height: 1.32;
+    color: #334155;
+  }
+  .technique-card strong.tech-hdr {
+    display: block;
+    font-size: 8pt;
+    color: #0f172a;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 2px;
+  }
+
+  .spec-bank-container {
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .spec-bank-header {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    white-space: nowrap;
   }
-  .cover-footer {
-    border-top: 1.2px solid #000000;
-    padding-top: 3px;
-    font-size: 7.5pt;
-    color: #000000;
+  .spec-bank-title {
+    font-size: 8.2pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .spec-bank-subtitle {
+    font-size: 7.2pt;
+    color: #cbd5e1;
+  }
+  .spec-bank-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    padding: 4px 8px;
+  }
+  .spec-bank-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 5px 4px;
+    font-size: 8.1pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.3;
+    color: #0f172a;
+  }
+  .spec-bank-item:last-child {
+    border-bottom: none;
+  }
+  .spec-bank-q {
+    flex: 1;
+  }
+  .spec-bank-badge {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #94a3b8;
+    font-size: 6.8pt;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  .reflection-card {
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    padding: 8px 10px;
+    background: #f8fafc;
+    font-size: 7.8pt;
+    color: #1e293b;
+  }
+
+  /* Footers */
+  .page-footer, .cover-footer {
+    border-top: 1px solid #94a3b8;
+    padding-top: 4px;
+    margin-top: 6px;
+    font-size: 7.4pt;
+    color: #475569;
     display: flex;
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
   }
   .turn-over {
-    font-weight: 800;
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
+    font-weight: 700;
+    color: #0f172a;
   }
 </style>
 </head>
 <body>
 
-    <!-- ============================================================= -->
-    <!-- PAGE 1: AUTHENTIC PEARSON EDEXCEL EXAMINATION COVER           -->
-    <!-- ============================================================= -->
+    <!-- PAGE 1: CLEAN EXAM PRACTICE COVER & TRACKER -->
     <div class="page">
-        <div>
-            <div class="cover-warning">
-                Please check the examination details below before entering your candidate information
-            </div>
-
-            <!-- Candidate Information Box -->
-            <div class="candidate-box">
-                <div class="candidate-row">
-                    <div style="flex: 2;">
-                        <div class="field-label">Candidate surname</div>
-                        <div class="field-input"></div>
-                    </div>
-                    <div style="flex: 1.5;">
-                        <div class="field-label">Other names</div>
-                        <div class="field-input"></div>
-                    </div>
-                </div>
-                <div class="candidate-row">
-                    <div style="flex: 1;">
-                        <div class="field-label">Centre Number</div>
-                        <div>
-                            <span class="char-cell"></span><span class="char-cell"></span><span class="char-cell"></span><span class="char-cell"></span><span class="char-cell"></span>
-                        </div>
-                    </div>
-                    <div style="flex: 1;">
-                        <div class="field-label">Candidate Number</div>
-                        <div>
-                            <span class="char-cell"></span><span class="char-cell"></span><span class="char-cell"></span><span class="char-cell"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="edexcel-banner">Pearson Edexcel GCSE (9–1)</div>
-
-            <!-- Exam Header Box -->
-            <div class="exam-header-box">
-                <div class="exam-header-left">
-                    <div class="exam-date">History · Paper 2: Period Study</div>
-                    <div class="exam-time">Time: Approx. 50 minutes (Section A Timed Mock)</div>
-                    <div class="exam-subject">Conflict in the Middle East, 1945–95</div>
-                    <div class="exam-booklet">Key Topic 2: The Escalating Conflict, 1964–73</div>
-                    <div class="exam-subtopic">Comprehensive 12-Page Specification Practice Pack · 1964–1973</div>
-                </div>
-                <div class="exam-header-right">
-                    <div class="ref-label">Paper<br>reference</div>
-                    <div class="ref-code">1HI0/P5</div>
-                </div>
-            </div>
-
-            <!-- Instructions & Information -->
-            <div style="border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 8px; margin-bottom: 6px; font-size: 7.2pt; color: #334155; line-height: 1.25;">
-                <div><strong>Instructions:</strong> Use black ink. Complete Section A as a timed 32-mark mock (~50 mins). Section B provides exhaustive specification depth. Section C provides the 100% syllabus practice bank and fatal traps on Page 12.</div>
-                <div style="margin-top: 2px;"><strong>Information:</strong> The total mark for Section A is 32. Marks for each question are shown in brackets. Clean student pack with zero model answers.</div>
-            </div>
-
-            <!-- 12-Page Complete Unit Exam Tracker -->
-            <div class="tracker-card">
-                <div class="tracker-header">
-                    <span class="tracker-title">📋 12-Page Specification Practice Tracker &amp; Progress Audit</span>
-                    <span class="tracker-sub">Track marks achieved across Timed Mock (Sec A) &amp; Depth Practice (Sec B)</span>
-                </div>
-                <table class="tracker-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 10%;">Question</th>
-                            <th style="width: 15%;">Format</th>
-                            <th style="width: 47%;">Specification Focus &amp; Historical Content</th>
-                            <th style="width: 8%; text-align: center;">Page</th>
-                            <th style="width: 8%; text-align: center;">Marks</th>
-                            <th style="width: 12%; text-align: center;">Done / Score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- SECTION A -->
-                        <tr class="tracker-section-hdr">
-                            <td colspan="6">SECTION A: 32-MARK TIMED MOCK EXAM (Spend approx. 50 minutes)</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q1 (a)</strong></td>
-                            <td><span class="type-tag">Consequence</span></td>
-                            <td>Syrian-Israeli Border & Air Clash (7 April 1967)</td>
-                            <td class="page-cell">P2</td>
-                            <td class="marks-cell">[4]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 4</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q1 (b)</strong></td>
-                            <td><span class="type-tag">Consequence</span></td>
-                            <td>Black September & PLO Expulsion from Jordan (1970)</td>
-                            <td class="page-cell">P2</td>
-                            <td class="marks-cell">[4]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 4</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q2</strong></td>
-                            <td><span class="type-tag">Narrative</span></td>
-                            <td>Key Events of the Six Day War (June 1967)</td>
-                            <td class="page-cell">P3–4</td>
-                            <td class="marks-cell">[8]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 8</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q3 (a)</strong></td>
-                            <td><span class="type-tag">Importance</span></td>
-                            <td>UN Resolution 242 for the 1967 Aftermath</td>
-                            <td class="page-cell">P5</td>
-                            <td class="marks-cell">[8]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 8</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q3 (b)</strong></td>
-                            <td><span class="type-tag">Importance</span></td>
-                            <td>Cairo Conference (1964) for Fatah & PLO Growth</td>
-                            <td class="page-cell">P6</td>
-                            <td class="marks-cell">[8]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 8</td>
-                        </tr>
-                        
-
-                        <!-- SECTION B -->
-                        <tr class="tracker-section-hdr">
-                            <td colspan="6">SECTION B: EXHAUSTIVE SPECIFICATION DEPTH BANK (Homework &amp; Mastery)</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q4 (a)</strong></td>
-                            <td><span class="type-tag">Consequence</span></td>
-                            <td>Israeli Raid on Samu (1966) on Jordan-Israel Ties</td>
-                            <td class="page-cell">P7</td>
-                            <td class="marks-cell">[4]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 4</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q4 (b)</strong></td>
-                            <td><span class="type-tag">Consequence</span></td>
-                            <td>Munich Olympics Terrorist Attack (1972)</td>
-                            <td class="page-cell">P7</td>
-                            <td class="marks-cell">[4]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 4</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q5</strong></td>
-                            <td><span class="type-tag">Importance</span></td>
-                            <td>Occupied Territories for Israeli Security</td>
-                            <td class="page-cell">P8</td>
-                            <td class="marks-cell">[8]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 8</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q6</strong></td>
-                            <td><span class="type-tag">Importance</span></td>
-                            <td>Egyptian Relations with the USSR (1967–73)</td>
-                            <td class="page-cell">P9</td>
-                            <td class="marks-cell">[8]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 8</td>
-                        </tr>
-                        
-                        <tr class="tracker-row">
-                            <td><strong>Q7</strong></td>
-                            <td><span class="type-tag">Narrative</span></td>
-                            <td>Key Events of the Yom Kippur War (1973)</td>
-                            <td class="page-cell">P10–11</td>
-                            <td class="marks-cell">[8]</td>
-                            <td class="score-cell"><span class="tracker-box"></span> / 8</td>
-                        </tr>
-                        
-
-                        <!-- SECTION C -->
-                        <tr class="tracker-section-hdr">
-                            <td colspan="6">SECTION C: 100% SPECIFICATION PRACTICE BANK &amp; FATAL TRAPS</td>
-                        </tr>
-                        <tr class="tracker-row">
-                            <td><strong>Page 12</strong></td>
-                            <td><span class="type-tag">Syllabus Bank</span></td>
-                            <td>Exhaustive Practice Stems &amp; Top 3 Fatal Examiner Traps</td>
-                            <td class="page-cell">12</td>
-                            <td class="marks-cell">Audit</td>
-                            <td class="score-cell"><span class="tracker-box"></span> Complete</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Official Specification Mastery Checklist -->
-            <div class="spec-audit-container">
-                <div class="spec-audit-header">
-                    <span class="spec-audit-title">Pearson Edexcel GCSE (9–1) Specification Audit &amp; Revision Checklist</span>
-                    <span class="spec-audit-sub">Tick each official syllabus requirement once revised and mastered:</span>
-                </div>
-                <div class="spec-audit-grid">
-                    
-                    <div class="spec-audit-col">
-                        <div class="spec-col-title">1. The Six Day War, 1967</div>
-                        <ul class="spec-points-list">
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text">The significance of the <strong>Cairo Conference (1964)</strong> and the <strong>growth of Fatah and the PLO</strong>.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text"><strong>Escalating tension</strong> between Israel, Syria and Jordan: <strong>Syria’s support for Fatah</strong>, <strong>Israel’s raid on Samu</strong> and the <strong>events of 7 April 1967</strong>.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text">The <strong>actions of the USSR, Nasser and the USA</strong> in the period leading to war.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text"><strong>Key events of the war</strong>.</span>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="spec-audit-col">
-                        <div class="spec-col-title">2. Aftermath of the 1967 War</div>
-                        <ul class="spec-points-list">
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text"><strong>UN Resolution 242</strong> and the <strong>continued dispute over the Suez Canal</strong>.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text"><strong>Palestinian refugees</strong> and the significance of the <strong>occupied territories</strong>: <strong>Golan Heights, Gaza Strip, West Bank, Sinai and East Jerusalem</strong>.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text">The <strong>use of terrorism, Israel’s response and international attitudes</strong> towards the Palestine issue: the <strong>PFLP airplane hijacks of 1970</strong>; <strong>Black September</strong> and the <strong>Munich Olympics</strong>.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text">The <strong>expulsion of the PLO from Jordan (1970)</strong>.</span>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="spec-audit-col">
-                        <div class="spec-col-title">3. Israel and Egypt, 1967–73</div>
-                        <ul class="spec-points-list">
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text"><strong>Egyptian relations</strong> with Israel, the USA, the USSR and other Arab states.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text">Israel’s <strong>consolidation of control of the occupied territories</strong>.</span>
-                            </li>
-                            
-                            <li class="spec-point-item">
-                                <span class="spec-tick-box"></span>
-                                <span class="spec-point-text">Key events of the <strong>Yom Kippur War (1973)</strong> and its aftermath.</span>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
+      <div class="page-main">
+        <div class="cover-top-bar">
+          <span class="cover-board">GCSE (9–1) History &middot; Paper 2: Period Study</span>
+          <span class="cover-ref">Option P5</span>
         </div>
 
-        <div class="cover-footer">
-            <span>Pearson Edexcel GCSE (9–1) History · Option P5 Conflict in the Middle East</span>
-            <span class="turn-over">Turn over for Section A &#9654;</span>
-            <span>Page 1 of 12</span>
+        <div class="cover-hero-box">
+          <div class="cover-kicker">Exam Question Practice Booklet &middot; Closed-Book Assessment (1964–1973)</div>
+          <h1 class="cover-unit-title">Conflict in the Middle East, 1945–95</h1>
+          <div class="cover-kt-title">Key Topic 2: The Escalating Conflict, 1964–73</div>
+          <div class="cover-meta-row">
+            <span><strong>Section A:</strong> 32-Mark Timed Mock Paper (~50 mins)</span>
+            <span>&bull;</span>
+            <span><strong>Section B:</strong> 32-Mark Additional Practice Bank</span>
+            <span>&bull;</span>
+            <span><strong>Section C:</strong> Further Exam Stems</span>
+          </div>
         </div>
+
+        <div class="pupil-Write-strip">
+          <div class="pupil-field"><span>Name:</span><span class="pupil-line"></span></div>
+          <div class="pupil-field"><span>Class:</span><span class="pupil-line"></span></div>
+          <div class="pupil-field"><span>Score:</span><span class="pupil-line"></span><span>/ 64</span></div>
+        </div>
+
+        <div class="tracker-card">
+          <div class="tracker-header">
+            <span class="tracker-title">Question Index &amp; Score Tracker</span>
+            <span class="tracker-sub">Closed-book exam conditions &middot; Zero prompts or trigger words</span>
+          </div>
+          <table class="tracker-table">
+            <thead>
+              <tr>
+                <th style="width: 10%;">Q</th>
+                <th style="width: 16%;">Question Type</th>
+                <th style="width: 48%;">Topic Focus</th>
+                <th style="width: 8%; text-align: center;">Page</th>
+                <th style="width: 8%; text-align: center;">Marks</th>
+                <th style="width: 10%; text-align: center;">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tracker-section-hdr">
+                <td colspan="6">Section A: Timed Exam Paper (32 Marks &middot; Approx. 50 Minutes)</td>
+              </tr>
+              
+              <tr>
+                <td><strong>Q1 (a)</strong></td>
+                <td><span class="type-tag">Consequence</span></td>
+                <td>Syrian-Israeli Border & Air Clash (7 April 1967)</td>
+                <td class="page-cell">P2</td>
+                <td class="marks-cell">[4]</td>
+                <td class="score-cell">___ / 4</td>
+              </tr>
+              <tr>
+                <td><strong>Q1 (b)</strong></td>
+                <td><span class="type-tag">Consequence</span></td>
+                <td>Black September & PLO Expulsion from Jordan (1970)</td>
+                <td class="page-cell">P2</td>
+                <td class="marks-cell">[4]</td>
+                <td class="score-cell">___ / 4</td>
+              </tr>
+              <tr>
+                <td><strong>Q2</strong></td>
+                <td><span class="type-tag">Narrative</span></td>
+                <td>Key Events of the Six Day War (June 1967)</td>
+                <td class="page-cell">P3–4</td>
+                <td class="marks-cell">[8]</td>
+                <td class="score-cell">___ / 8</td>
+              </tr>
+              <tr>
+                <td><strong>Q3 (a)</strong></td>
+                <td><span class="type-tag">Importance</span></td>
+                <td>UN Resolution 242 for the 1967 Aftermath</td>
+                <td class="page-cell">P5</td>
+                <td class="marks-cell">[8]</td>
+                <td class="score-cell">___ / 8</td>
+              </tr>
+              <tr>
+                <td><strong>Q3 (b)</strong></td>
+                <td><span class="type-tag">Importance</span></td>
+                <td>Cairo Conference (1964) for Fatah & PLO Growth</td>
+                <td class="page-cell">P6</td>
+                <td class="marks-cell">[8]</td>
+                <td class="score-cell">___ / 8</td>
+              </tr>
+              <tr class="tracker-section-hdr">
+                <td colspan="6">Section B: Additional Specification Practice (32 Marks &middot; Homework &amp; Revision)</td>
+              </tr>
+              
+              <tr>
+                <td><strong>Q4 (a)</strong></td>
+                <td><span class="type-tag">Consequence</span></td>
+                <td>Israeli Raid on Samu (1966) on Jordan-Israel Ties</td>
+                <td class="page-cell">P7</td>
+                <td class="marks-cell">[4]</td>
+                <td class="score-cell">___ / 4</td>
+              </tr>
+              <tr>
+                <td><strong>Q4 (b)</strong></td>
+                <td><span class="type-tag">Consequence</span></td>
+                <td>Munich Olympics Terrorist Attack (1972)</td>
+                <td class="page-cell">P7</td>
+                <td class="marks-cell">[4]</td>
+                <td class="score-cell">___ / 4</td>
+              </tr>
+              <tr>
+                <td><strong>Q5</strong></td>
+                <td><span class="type-tag">Importance</span></td>
+                <td>Occupied Territories for Israeli Security</td>
+                <td class="page-cell">P8</td>
+                <td class="marks-cell">[8]</td>
+                <td class="score-cell">___ / 8</td>
+              </tr>
+              <tr>
+                <td><strong>Q6</strong></td>
+                <td><span class="type-tag">Importance</span></td>
+                <td>Egyptian Relations with the USSR (1967–73)</td>
+                <td class="page-cell">P9</td>
+                <td class="marks-cell">[8]</td>
+                <td class="score-cell">___ / 8</td>
+              </tr>
+              <tr>
+                <td><strong>Q7</strong></td>
+                <td><span class="type-tag">Narrative</span></td>
+                <td>Key Events of the Yom Kippur War (1973)</td>
+                <td class="page-cell">P10–11</td>
+                <td class="marks-cell">[8]</td>
+                <td class="score-cell">___ / 8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="spec-audit-container">
+          <div class="spec-audit-header">
+            <span class="spec-audit-title">Key Topic 2 Specification Checklist</span>
+            <span class="spec-audit-sub">Tick each topic once revised before attempting closed-book practice</span>
+          </div>
+          <div class="spec-audit-grid">
+            
+              <div class="spec-audit-col">
+                <div class="spec-col-title">1. The Six Day War, 1967</div>
+                <ul class="spec-points-list">
+                  
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text">Significance of the <strong>Cairo Conference (1964)</strong> and growth of <strong>Fatah and the PLO</strong>.</span>
+                    </li>
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text"><strong>Escalating tension</strong>: Syria’s support for Fatah, <strong>Samu raid</strong> and events of <strong>7 April 1967</strong>.</span>
+                    </li>
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text">Actions of the <strong>USSR, Nasser and the USA</strong> leading to war.</span>
+                    </li>
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text"><strong>Key events of the Six Day War (June 1967)</strong>.</span>
+                    </li>
+                </ul>
+              </div>
+              <div class="spec-audit-col">
+                <div class="spec-col-title">2. Aftermath of the 1967 War</div>
+                <ul class="spec-points-list">
+                  
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text"><strong>UN Resolution 242</strong> and the continued dispute over the Suez Canal.</span>
+                    </li>
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text"><strong>Palestinian refugees</strong> and significance of the <strong>occupied territories</strong> (Golan, Gaza, West Bank, Sinai, East Jerusalem).</span>
+                    </li>
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text"><strong>PFLP plane hijacks (1970)</strong>, <strong>Black September</strong>, <strong>Munich Olympics (1972)</strong> and expulsion of PLO from Jordan.</span>
+                    </li>
+                </ul>
+              </div>
+              <div class="spec-audit-col">
+                <div class="spec-col-title">3. Israel and Egypt, 1967–73</div>
+                <ul class="spec-points-list">
+                  
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text"><strong>Egyptian relations</strong> with Israel, the USA, the USSR and Arab states.</span>
+                    </li>
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text">Israel’s <strong>consolidation of control</strong> of the occupied territories.</span>
+                    </li>
+                    <li class="spec-point-item">
+                      <span class="spec-tick-box"></span>
+                      <span class="spec-point-text">Key events of the <strong>Yom Kippur War (1973)</strong> and its aftermath.</span>
+                    </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover-footer">
+        <span>GCSE History &middot; Paper 2 Period Study: Conflict in the Middle East, 1945–95</span>
+        <span class="turn-over">Turn over for Section A &rarr;</span>
+        <span>Page 1 of 12</span>
+      </div>
     </div>
 
-    <!-- ============================================================= -->
-    <!-- PAGE 2: SECTION A — QUESTION 1: CONSEQUENCE PRACTICE (8 MARKS) -->
-    <!-- ============================================================= -->
+    <!-- PAGE 2: SECTION A — QUESTION 1 (CONSEQUENCE) -->
     <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section A: Timed Exam Paper · Question 1</h2>
-                    <p>Answer Question 1(a) and Question 1(b). Spend approx. 6 minutes on each question.</p>
-                </div>
-                <span class="header-tag">Q1: Consequence [8m Total]</span>
-            </div>
-
-            <!-- Question 1(a) -->
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">1 (a)</strong>
-                        <span class="exam-provenance-pill forecast">★ High-Yield Forecast</span>
-                        Explain one consequence of the events of 7 April 1967.
-                    </span>
-                    <span class="q-marks">(4)</span>
-                </div>
-                <div class="scaffold-bar">
-                    <div class="scaffold-col" style="flex: 1.2;">
-                        <span class="scaffold-label">Key Facts Bank:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">7 April 1967 border clash</span> <span class="scaffold-pill">Tractor dispute in DMZ</span> <span class="scaffold-pill">Israeli Air Force (IAF)</span> <span class="scaffold-pill">6 Syrian MiG-21s shot down</span> <span class="scaffold-pill">IAF victory flyover Damascus</span> <span class="scaffold-pill">1966 Egyptian-Syrian Defence Pact</span> <span class="scaffold-pill">Soviet false intelligence report (May 1967)</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 0.9;">
-                        <span class="scaffold-label">Causal Connectives:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">One immediate consequence was...</span> <span class="scaffold-pill">This humiliating defeat meant that...</span> <span class="scaffold-pill">Consequently, Syria pressured...</span> <span class="scaffold-pill">This directly acted as the catalyst for...</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 1.6;">
-                        <span class="scaffold-label">Response Structure:</span>
-                        <div class="scaffold-content" style="font-size: 7.4pt;">Identify Consequence (e.g. Humiliation of Syrian Regime OR Catalyst for 1967 War) &rarr; Facts (6 MiGs downed, Damascus flyover) &rarr; Causal Chain: Syrian desire for revenge &rarr; Invoked mutual defence treaty &rarr; Soviet false intelligence &rarr; Nasser mobilized in Sinai.</div>
-                    </div>
-                </div>
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
-
-            <!-- Question 1(b) -->
-            <div class="question-container" style="margin-top: 8px;">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">1 (b)</strong>
-                        <span class="exam-provenance-pill past">Edexcel June 2019</span>
-                        Explain one consequence of the expulsion of the PLO from Jordan (1970).
-                    </span>
-                    <span class="q-marks">(4)</span>
-                </div>
-                <div class="scaffold-bar">
-                    <div class="scaffold-col" style="flex: 1.2;">
-                        <span class="scaffold-label">Key Facts Bank:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">Black September (Sept 1970)</span> <span class="scaffold-pill">King Hussein of Jordan</span> <span class="scaffold-pill">Dawson's Field hijackings</span> <span class="scaffold-pill">Jordanian Army crackdown (3,000+ dead)</span> <span class="scaffold-pill">PLO relocation to Southern Lebanon ("Fatahland")</span> <span class="scaffold-pill">New border front vs Galilee</span> <span class="scaffold-pill">Black September terrorist cell formed</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 0.9;">
-                        <span class="scaffold-label">Causal Connectives:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">One critical consequence was...</span> <span class="scaffold-pill">Being expelled from Jordan forced...</span> <span class="scaffold-pill">As a direct result, this created...</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 1.6;">
-                        <span class="scaffold-label">Response Structure:</span>
-                        <div class="scaffold-content" style="font-size: 7.4pt;">Identify Consequence (e.g. PLO Relocation to Lebanon OR Rise of Black September Cell) &rarr; Facts (Hussein, 3,000 dead, move to Beirut) &rarr; Causal Chain: PLO established cross-border base in southern Lebanon &rarr; Prompted Israeli reprisals &rarr; Paved path to 1982 invasion.</div>
-                    </div>
-                </div>
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section A: Timed Exam Paper &middot; Question 1</h2>
+            <p>Answer both parts. Write one focused paragraph per consequence (~6 minutes each).</p>
+          </div>
+          <span class="header-tag">Q1 &middot; Consequence [8m]</span>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · The Escalating Conflict, 1964–73</span>
-            <span class="turn-over">Turn over for Question 2 &#9654;</span>
-            <span>Page 2 of 12</span>
+        <div style="flex: 1; display: flex; flex-direction: column;">
+          
+    <div class="question-block question-block-split">
+      <div>
+        <div class="question-prompt">
+          <div class="q-left">
+            <span class="q-num">Q1 (a)</span>
+            <span class="q-stem">
+              Explain one consequence of the events of 7 April 1967.
+              <span class="exam-provenance-pill">High-Yield Forecast</span>
+            </span>
+          </div>
+          <span class="q-marks">(4)</span>
         </div>
+      </div>
+      <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+      <div class="mark-box-row">
+        <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 4</span>
+      </div>
+    </div>
+  
+          <div class="question-divider"></div>
+          
+    <div class="question-block question-block-split">
+      <div>
+        <div class="question-prompt">
+          <div class="q-left">
+            <span class="q-num">Q1 (b)</span>
+            <span class="q-stem">
+              Explain one consequence of the expulsion of the PLO from Jordan (1970).
+              <span class="exam-provenance-pill">Exam Style · June 2019</span>
+            </span>
+          </div>
+          <span class="q-marks">(4)</span>
+        </div>
+      </div>
+      <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+      <div class="mark-box-row">
+        <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 4</span>
+      </div>
+    </div>
+  
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Turn over for Question 2 &rarr;</span>
+        <span>Page 2 of 12</span>
+      </div>
     </div>
 
-    <!-- ============================================================= -->
-    <!-- PAGE 3: SECTION A — QUESTION 2: NARRATIVE ACCOUNT (PART 1)    -->
-    <!-- ============================================================= -->
+    <!-- PAGES 3–4: SECTION A — QUESTION 2 (NARRATIVE ACCOUNT) -->
+    
     <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section A: Timed Exam Paper · Question 2</h2>
-                    <p>Spend approx. 12 minutes on this question. Write in continuous chronological prose.</p>
-                </div>
-                <span class="header-tag">Q2: Narrative Account [8m]</span>
-            </div>
-
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">2</strong>
-                        <span class="exam-provenance-pill past">Edexcel June 2023</span>
-                        Write a narrative account analysing the key events of the Six Day War (1967).
-                    </span>
-                    <span class="q-marks">(8)</span>
-                </div>
-
-                <!-- Stimulus Box -->
-                <div class="stimulus-card">
-                    You may use the following in your answer:
-                    <ul>
-                        <li><strong>Air attacks on Egyptian airfields (5 June 1967)</strong></li>
-                        <li><strong>The capture of East Jerusalem (7 June)</strong></li>
-                    </ul>
-                    <span style="display: block; margin-top: 2px; font-style: italic; color: #475569;">(You must also use information of your own.)</span>
-                </div>
-
-                <!-- Narrative Flow Planner -->
-                <div class="narrative-flow-planner">
-                    <div style="font-weight: 800; font-size: 7.4pt; text-transform: uppercase; color: #0f172a; margin-bottom: 2px;">
-                        Chronological 3-Stage Narrative Architecture:
-                    </div>
-                    <div class="narrative-stages-row">
-                        <div class="narrative-stage-box">
-                            <div class="narrative-stage-hdr">Stage 1: Pre-emptive Air Strike (5 June 1967)</div>
-                            <div style="font-size: 7.2pt; color: #334155;">Surprise attack destroys Egyptian air force on runways within 3 hours</div>
-                        </div>
-                        <div class="narrative-stage-box">
-                            <div class="narrative-stage-hdr">Stage 2: Ground Blitz & Jerusalem (6–8 June 1967)</div>
-                            <div style="font-size: 7.2pt; color: #334155;">Israeli armour crosses Sinai; paratroopers secure East Jerusalem & West Bank</div>
-                        </div>
-                        <div class="narrative-stage-box">
-                            <div class="narrative-stage-hdr">Stage 3: Golan Victory & Ceasefire (9–10 June 1967)</div>
-                            <div style="font-size: 7.2pt; color: #334155;">Syrian escarpment stormed; quadrupling of Israeli territory</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #cbd5e1; padding-top: 2px; font-size: 7.4pt; color: #475569;">
-                        <span><strong>Fact Bank:</strong> <span class="scaffold-pill">Pre-emptive air strike (7:45 am)</span> <span class="scaffold-pill">Destruction of Egyptian airfields</span> <span class="scaffold-pill">300+ aircraft destroyed on runways</span> <span class="scaffold-pill">Total Israeli air supremacy</span> <span class="scaffold-pill">Sinai armoured blitz (Sharon & Tal)</span> <span class="scaffold-pill">Motta Gur paratroopers at Western Wall</span> <span class="scaffold-pill">Capture of West Bank & Old City</span> <span class="scaffold-pill">Storming of Golan Heights (9–10 June)</span></span>
-                        <span><strong>Connectives:</strong> The war began when... · Having established complete air supremacy, ... · Meanwhile on the central front, ...</span>
-                    </div>
-                </div>
-
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section A: Timed Exam Paper · Question 2</h2>
+            <p>Write an analytical narrative showing how events linked together chronologically (~12–15 minutes).</p>
+          </div>
+          <span class="header-tag">Q2 · Narrative Account [8m]</span>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · The Escalating Conflict, 1964–73</span>
-            <span class="turn-over">Question 2 continues on next page &#9654;</span>
-            <span>Page 3 of 12</span>
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div>
+            <div class="question-prompt">
+              <div class="q-left">
+                <span class="q-num">Q2</span>
+                <span class="q-stem">
+                  Write a narrative account analysing the key events of the Six Day War (1967).
+                  <span class="exam-provenance-pill">Exam Style · June 2023</span>
+                </span>
+              </div>
+              <span class="q-marks">(8)</span>
+            </div>
+
+            <div class="stimulus-card">
+              <div>You may use the following in your answer:</div>
+              <ul>
+                <li><strong>Air attacks on Egyptian airfields (5 June 1967)</strong></li>
+                <li><strong>The capture of East Jerusalem (7 June)</strong></li>
+              </ul>
+              <div class="stimulus-note">You must also use information of your own.</div>
+            </div>
+          </div>
+
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
         </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Question 2 continues on Page 4 &rarr;</span>
+        <span>Page 3 of 12</span>
+      </div>
     </div>
 
-    <!-- ============================================================= -->
-    <!-- PAGE 4: SECTION A — QUESTION 2: NARRATIVE ACCOUNT (PART 2)    -->
-    <!-- ============================================================= -->
     <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section A: Timed Exam Paper · Question 2 (Continued)</h2>
-                    <p>Complete your 3-stage causal account: Stage 1 (Catalyst) &rarr; Stage 2 (Turning Point) &rarr; Stage 3 (Outcome).</p>
-                </div>
-                <span class="header-tag">Q2: Narrative Continuation</span>
-            </div>
-
-            <div class="question-container">
-                <div style="border: 1px solid #94a3b8; border-radius: 4px; background: #f8fafc; padding: 4px 8px; margin-bottom: 6px; font-size: 7.4pt; color: #334155; display: flex; justify-content: space-between;">
-                    <span><strong>Narrative Rule:</strong> Use linking connectives (<em>"Consequently"</em>, <em>"This directly led to"</em>) between paragraphs.</span>
-                    <span><strong>Check:</strong> Both stimulus points + 1 own fact included.</span>
-                </div>
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section A: Timed Exam Paper · Question 2 (Continued)</h2>
+            <p>Continue your answer to Question 2 below.</p>
+          </div>
+          <span class="header-tag">Q2 Continuation</span>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · The Escalating Conflict, 1964–73</span>
-            <span class="turn-over">Turn over for Question 3(a) &#9654;</span>
-            <span>Page 4 of 12</span>
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+
+          <div class="mark-box-row">
+            <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 8</span>
+          </div>
         </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Turn over for Question 3(a) &rarr;</span>
+        <span>Page 4 of 12</span>
+      </div>
+    </div>
+  
+
+    <!-- PAGE 5: SECTION A — QUESTION 3(a) (IMPORTANCE) -->
+    
+    <div class="page">
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section A: Timed Exam Paper · Question 3(a)</h2>
+            <p>Write two distinct analytical paragraphs explaining why this was important (~12 minutes).</p>
+          </div>
+          <span class="header-tag">Q3(a) · Importance [8m]</span>
+        </div>
+
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div class="question-prompt">
+            <div class="q-left">
+              <span class="q-num">Q3 (a)</span>
+              <span class="q-stem">
+                Explain the importance of UN Resolution 242 for the aftermath of the 1967 war.
+                <span class="exam-provenance-pill">Exam Style · June 2018</span>
+              </span>
+            </div>
+            <span class="q-marks">(8)</span>
+          </div>
+
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+
+          <div class="mark-box-row">
+            <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 8</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Turn over for Question 3(b) &rarr;</span>
+        <span>Page 5 of 12</span>
+      </div>
+    </div>
+  
+
+    <!-- PAGE 6: SECTION A — QUESTION 3(b) (IMPORTANCE) -->
+    
+    <div class="page">
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section A: Timed Exam Paper · Question 3(b)</h2>
+            <p>Write two distinct analytical paragraphs explaining why this was important (~12 minutes).</p>
+          </div>
+          <span class="header-tag">Q3(b) · Importance [8m]</span>
+        </div>
+
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div class="question-prompt">
+            <div class="q-left">
+              <span class="q-num">Q3 (b)</span>
+              <span class="q-stem">
+                Explain the importance of the Cairo Conference (1964) for the growth of Fatah and the PLO.
+                <span class="exam-provenance-pill">High-Yield Forecast</span>
+              </span>
+            </div>
+            <span class="q-marks">(8)</span>
+          </div>
+
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+
+          <div class="mark-box-row">
+            <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 8</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">End of Section A · Turn over for Section B &rarr;</span>
+        <span>Page 6 of 12</span>
+      </div>
+    </div>
+  
+
+    <!-- PAGE 7: SECTION B — QUESTION 4 (CONSEQUENCE PRACTICE) -->
+    <div class="page">
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section B: Additional Practice &middot; Question 4</h2>
+            <p>Answer both parts. Write one focused paragraph per consequence (~6 minutes each).</p>
+          </div>
+          <span class="header-tag">Q4 &middot; Consequence [8m]</span>
+        </div>
+
+        <div style="flex: 1; display: flex; flex-direction: column;">
+          
+    <div class="question-block question-block-split">
+      <div>
+        <div class="question-prompt">
+          <div class="q-left">
+            <span class="q-num">Q4 (a)</span>
+            <span class="q-stem">
+              Explain one consequence of Israel’s raid on Samu (1966).
+              <span class="exam-provenance-pill">Unexamined Spec Target</span>
+            </span>
+          </div>
+          <span class="q-marks">(4)</span>
+        </div>
+      </div>
+      <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+      <div class="mark-box-row">
+        <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 4</span>
+      </div>
+    </div>
+  
+          <div class="question-divider"></div>
+          
+    <div class="question-block question-block-split">
+      <div>
+        <div class="question-prompt">
+          <div class="q-left">
+            <span class="q-num">Q4 (b)</span>
+            <span class="q-stem">
+              Explain one consequence of the terrorist attack at the Munich Olympics (1972).
+              <span class="exam-provenance-pill">Exam Style · Specimen</span>
+            </span>
+          </div>
+          <span class="q-marks">(4)</span>
+        </div>
+      </div>
+      <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+      <div class="mark-box-row">
+        <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 4</span>
+      </div>
+    </div>
+  
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Turn over for Question 5 &rarr;</span>
+        <span>Page 7 of 12</span>
+      </div>
     </div>
 
-    <!-- ============================================================= -->
-    <!-- PAGE 5: SECTION A — QUESTION 3(a): IMPORTANCE QUESTION        -->
-    <!-- ============================================================= -->
+    <!-- PAGE 8: SECTION B — QUESTION 5 (IMPORTANCE) -->
+    
     <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section A: Timed Exam Paper · Question 3(a)</h2>
-                    <p>Spend approx. 12 minutes on this question. Write two developed explanatory paragraphs.</p>
-                </div>
-                <span class="header-tag">Q3(a): Importance [8m]</span>
-            </div>
-
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">3 (a)</strong>
-                        <span class="exam-provenance-pill past">Edexcel June 2018</span>
-                        Explain the importance of UN Resolution 242 for the aftermath of the 1967 war.
-                    </span>
-                    <span class="q-marks">(8)</span>
-                </div>
-                <div class="focus-guidance">
-                    <strong>Examiner Guidance:</strong> Explain why the "land for peace" formula and its deliberate linguistic ambiguity dictated all subsequent diplomatic negotiations.
-                </div>
-
-                <!-- Importance Scaffold Stack -->
-                <div class="importance-scaffold-stack">
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 1 Focus</span>
-                        <span class="scaffold-text">Foundational "Land for Peace" Principle: Explain how Res 242 established the universal formula requiring Israel to return land in exchange for Arab peace treaties.</span>
-                    </div>
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 2 Focus</span>
-                        <span class="scaffold-text">Deliberate Linguistic Ambiguity: Explain how omitting the word "the" from the English draft allowed Israel to claim it was not required to surrender all 1967 conquests.</span>
-                    </div>
-                    <div class="scaffold-vocab-row">
-                        <div class="scaffold-vocab-subrow">
-                            <span class="scaffold-badge">Specification Fact Bank</span>
-                            <div class="scaffold-pills-list">
-                                <span class="scaffold-pill">22 November 1967</span><span class="scaffold-pill">UN Security Council</span><span class="scaffold-pill">"Land for peace" formula</span><span class="scaffold-pill">Withdrawal from occupied territories</span><span class="scaffold-pill">Deliberate ambiguity (omission of "the")</span><span class="scaffold-pill">Israeli insistence on direct bilateral treaties</span><span class="scaffold-pill">Arab League Khartoum Summit ("Three No's")</span><span class="scaffold-pill">Palestinian refugee status vs national rights</span>
-                            </div>
-                        </div>
-                        <div class="scaffold-stem-subrow">
-                            <span class="scaffold-stem-label">Analytical Stems:</span>
-                            <span class="scaffold-stem-text"><em>"This was vital because..."</em> · <em>"Furthermore, ..."</em> · <em>"Crucially, ..."</em></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section B: Additional Practice · Question 5</h2>
+            <p>Write two distinct analytical paragraphs explaining why this was important (~12 minutes).</p>
+          </div>
+          <span class="header-tag">Q5 · Importance [8m]</span>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · The Escalating Conflict, 1964–73</span>
-            <span class="turn-over">Turn over for Question 3(b) &#9654;</span>
-            <span>Page 5 of 12</span>
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div class="question-prompt">
+            <div class="q-left">
+              <span class="q-num">Q5</span>
+              <span class="q-stem">
+                Explain the importance of the occupied territories (Golan Heights, West Bank, Sinai) for Israeli security after 1967.
+                <span class="exam-provenance-pill">High-Yield Forecast</span>
+              </span>
+            </div>
+            <span class="q-marks">(8)</span>
+          </div>
+
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+
+          <div class="mark-box-row">
+            <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 8</span>
+          </div>
         </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Turn over for Question 6 &rarr;</span>
+        <span>Page 8 of 12</span>
+      </div>
+    </div>
+  
+
+    <!-- PAGE 9: SECTION B — QUESTION 6 (IMPORTANCE) -->
+    
+    <div class="page">
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section B: Additional Practice · Question 6</h2>
+            <p>Write two distinct analytical paragraphs explaining why this was important (~12 minutes).</p>
+          </div>
+          <span class="header-tag">Q6 · Importance [8m]</span>
+        </div>
+
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div class="question-prompt">
+            <div class="q-left">
+              <span class="q-num">Q6</span>
+              <span class="q-stem">
+                Explain the importance of Egyptian relations with the USSR between 1967 and 1973.
+                <span class="exam-provenance-pill">Unexamined Spec Target</span>
+              </span>
+            </div>
+            <span class="q-marks">(8)</span>
+          </div>
+
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+
+          <div class="mark-box-row">
+            <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 8</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Turn over for Question 7 &rarr;</span>
+        <span>Page 9 of 12</span>
+      </div>
+    </div>
+  
+
+    <!-- PAGES 10–11: SECTION B — QUESTION 7 (NARRATIVE ACCOUNT) -->
+    
+    <div class="page">
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section B: Additional Practice · Question 7</h2>
+            <p>Write an analytical narrative showing how events linked together chronologically (~12–15 minutes).</p>
+          </div>
+          <span class="header-tag">Q7 · Narrative Account [8m]</span>
+        </div>
+
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div>
+            <div class="question-prompt">
+              <div class="q-left">
+                <span class="q-num">Q7</span>
+                <span class="q-stem">
+                  Write a narrative account analysing the key events of the Yom Kippur War (1973).
+                  <span class="exam-provenance-pill">Exam Style · June 2022</span>
+                </span>
+              </div>
+              <span class="q-marks">(8)</span>
+            </div>
+
+            <div class="stimulus-card">
+              <div>You may use the following in your answer:</div>
+              <ul>
+                <li><strong>The crossing of the Suez Canal (October 1973)</strong></li>
+                <li><strong>The Israeli counter-attack across the Suez Canal</strong></li>
+              </ul>
+              <div class="stimulus-note">You must also use information of your own.</div>
+            </div>
+          </div>
+
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Question 7 continues on Page 11 &rarr;</span>
+        <span>Page 10 of 12</span>
+      </div>
     </div>
 
-    <!-- ============================================================= -->
-    <!-- PAGE 6: SECTION A — QUESTION 3(b): IMPORTANCE QUESTION        -->
-    <!-- ============================================================= -->
     <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section A: Timed Exam Paper · Question 3(b)</h2>
-                    <p>Spend approx. 12 minutes on this question. Write two developed explanatory paragraphs.</p>
-                </div>
-                <span class="header-tag">Q3(b): Importance [8m]</span>
-            </div>
-
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">3 (b)</strong>
-                        <span class="exam-provenance-pill forecast">★ High-Yield Forecast</span>
-                        Explain the importance of the Cairo Conference (1964) for the growth of Fatah and the PLO.
-                    </span>
-                    <span class="q-marks">(8)</span>
-                </div>
-                <div class="focus-guidance">
-                    <strong>Examiner Guidance:</strong> Explain how establishing a pan-Arab institutional framework provided the platform that Yasser Arafat’s guerrilla movement subsequently took over.
-                </div>
-
-                <!-- Importance Scaffold Stack -->
-                <div class="importance-scaffold-stack">
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 1 Focus</span>
-                        <span class="scaffold-text">Official Institutional Framework: Explain how Arab states created an official, recognised umbrella organization to represent Palestinian national identity.</span>
-                    </div>
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 2 Focus</span>
-                        <span class="scaffold-text">Platform for Independent Militancy: Explain how Fatah exploited this official apparatus following the 1967 Arab defeat to wrest control and launch armed struggle.</span>
-                    </div>
-                    <div class="scaffold-vocab-row">
-                        <div class="scaffold-vocab-subrow">
-                            <span class="scaffold-badge">Specification Fact Bank</span>
-                            <div class="scaffold-pills-list">
-                                <span class="scaffold-pill">January 1964 Arab League summit</span><span class="scaffold-pill">Gamal Abdel Nasser sponsorship</span><span class="scaffold-pill">Creation of the PLO (May 1964)</span><span class="scaffold-pill">Palestinian National Charter</span><span class="scaffold-pill">Ahmad Shukeiri leadership</span><span class="scaffold-pill">Disillusionment after 1967 defeat</span><span class="scaffold-pill">Battle of Karameh (1968)</span><span class="scaffold-pill">Yasser Arafat & Fatah takeover (1969)</span><span class="scaffold-pill">Shift to independent armed struggle</span>
-                            </div>
-                        </div>
-                        <div class="scaffold-stem-subrow">
-                            <span class="scaffold-stem-label">Analytical Stems:</span>
-                            <span class="scaffold-stem-text"><em>"This conference was important because..."</em> · <em>"Moreover, ..."</em> · <em>"This provided the platform for..."</em></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section B: Additional Practice · Question 7 (Continued)</h2>
+            <p>Continue your answer to Question 7 below.</p>
+          </div>
+          <span class="header-tag">Q7 Continuation</span>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · End of Section A (32 Marks Total)</span>
-            <span class="turn-over">Turn over for Section B (Specification Depth Bank) &#9654;</span>
-            <span>Page 6 of 12</span>
+        <div class="question-block" style="flex: 1; justify-content: space-between;">
+          <div class="lines-wrap"><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div>
+
+          <div class="mark-box-row">
+            <span class="mark-pill">Mark: &nbsp;&nbsp;&nbsp;&nbsp; / 8</span>
+          </div>
         </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Option P5 &middot; The Escalating Conflict, 1964–73</span>
+        <span class="turn-over">Turn over for Further Practice Stems &rarr;</span>
+        <span>Page 11 of 12</span>
+      </div>
     </div>
+  
 
-    <!-- ============================================================= -->
-    <!-- PAGE 7: SECTION B — SPECIFICATION BANK: CONSEQUENCE DEPTH     -->
-    <!-- ============================================================= -->
+    <!-- PAGE 12: SECTION C — FURTHER SPECIFICATION PRACTICE STEMS -->
     <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section B: Specification Depth Bank · Consequence Practice</h2>
-                    <p>Exhaustive curriculum coverage. Practice additional 4-mark consequence stems.</p>
-                </div>
-                <span class="header-tag">Spec Depth: Consequence</span>
-            </div>
-
-            <!-- Question 4(a) -->
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">4 (a)</strong>
-                        <span class="exam-provenance-pill unexamined">Unexamined Spec Target</span>
-                        Explain one consequence of Israel’s raid on Samu (1966).
-                    </span>
-                    <span class="q-marks">(4)</span>
-                </div>
-                <div class="scaffold-bar">
-                    <div class="scaffold-col" style="flex: 1.2;">
-                        <span class="scaffold-label">Key Facts Bank:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">13 Nov 1966 reprisal raid</span> <span class="scaffold-pill">Samu village (West Bank)</span> <span class="scaffold-pill">IDF tanks and aircraft</span> <span class="scaffold-pill">15 Jordanian soldiers killed, 100+ houses destroyed</span> <span class="scaffold-pill">King Hussein public humiliation</span> <span class="scaffold-pill">Anti-Hussein riots in West Bank</span> <span class="scaffold-pill">Breakdown of secret Israeli-Jordanian talks</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 0.9;">
-                        <span class="scaffold-label">Causal Connectives:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">One significant consequence was...</span> <span class="scaffold-pill">This large-scale assault resulted in...</span> <span class="scaffold-pill">Consequently, King Hussein was forced to...</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 1.6;">
-                        <span class="scaffold-label">Response Structure:</span>
-                        <div class="scaffold-content" style="font-size: 7.4pt;">Identify Consequence (e.g. Destruction of Moderate Cooperation OR Riots against Hussein) &rarr; Facts (15 killed, 100 houses flattened) &rarr; Causal Chain: Ended backchannel diplomacy &rarr; Pushed King Hussein into reluctant defense alliance with Nasser (May 1967).</div>
-                    </div>
-                </div>
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
-
-            <!-- Question 4(b) -->
-            <div class="question-container" style="margin-top: 8px;">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">4 (b)</strong>
-                        <span class="exam-provenance-pill specimen">Edexcel Specimen</span>
-                        Explain one consequence of the terrorist attack at the Munich Olympics (1972).
-                    </span>
-                    <span class="q-marks">(4)</span>
-                </div>
-                <div class="scaffold-bar">
-                    <div class="scaffold-col" style="flex: 1.2;">
-                        <span class="scaffold-label">Key Facts Bank:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">5 Sept 1972 Munich Olympics</span> <span class="scaffold-pill">Black September splinter group</span> <span class="scaffold-pill">11 Israeli athletes murdered</span> <span class="scaffold-pill">Global live TV broadcast (900m viewers)</span> <span class="scaffold-pill">Worldwide moral condemnation</span> <span class="scaffold-pill">International recognition of Palestinian plight</span> <span class="scaffold-pill">Operation Wrath of God (Mossad assassinations)</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 0.9;">
-                        <span class="scaffold-label">Causal Connectives:</span>
-                        <div class="scaffold-content"><span class="scaffold-pill">One major consequence was...</span> <span class="scaffold-pill">The global television coverage ensured that...</span> <span class="scaffold-pill">While the murders drew international revulsion, they also...</span></div>
-                    </div>
-                    <div class="scaffold-col" style="flex: 1.6;">
-                        <span class="scaffold-label">Response Structure:</span>
-                        <div class="scaffold-content" style="font-size: 7.4pt;">Identify Consequence (e.g. Global Horror / Condemnation OR Rocketing Awareness of Palestinian Plight) &rarr; Facts (11 murdered, 900m viewers) &rarr; Causal Chain: Shocked world public &rarr; Put Palestinian statelessness permanently on the UN and international diplomatic map.</div>
-                    </div>
-                </div>
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+      <div class="page-main">
+        <div class="page-header">
+          <div class="header-left">
+            <h2>Section C: Further Exam Question Stems</h2>
+            <p>Use these additional specification questions for timed paragraph drills on lined paper.</p>
+          </div>
+          <span class="header-tag">Key Topic 2 Bank</span>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · 100% Specification Practice Bank</span>
-            <span class="turn-over">Turn over for Question 5 &#9654;</span>
-            <span>Page 7 of 12</span>
-        </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- PAGE 8: SECTION B — SPECIFICATION BANK: IMPORTANCE DEPTH (A)  -->
-    <!-- ============================================================= -->
-    <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section B: Specification Depth Bank · Importance Depth</h2>
-                    <p>Exhaustive curriculum coverage. Write two developed analytical paragraphs.</p>
-                </div>
-                <span class="header-tag">Spec Depth: Importance A</span>
-            </div>
-
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">5</strong>
-                        <span class="exam-provenance-pill forecast">★ High-Yield Forecast</span>
-                        Explain the importance of the occupied territories (Golan Heights, West Bank, Sinai) for Israeli security after 1967.
-                    </span>
-                    <span class="q-marks">(8)</span>
-                </div>
-                <div class="focus-guidance">
-                    <strong>Examiner Guidance:</strong> Explain how capturing strategic geographic depth transformed Israeli military defense while creating long-term internal security dilemmas.
-                </div>
-
-                <!-- Importance Scaffold Stack -->
-                <div class="importance-scaffold-stack">
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 1 Focus</span>
-                        <span class="scaffold-text">Geographic Buffer & Artillery Defense: Explain how the Sinai and Golan Heights eliminated the immediate threat of surprise artillery bombardments on Israeli cities.</span>
-                    </div>
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 2 Focus</span>
-                        <span class="scaffold-text">Internal Security Dilemma: Explain how controlling the West Bank and Gaza brought one million hostile Palestinian Arabs under military rule, requiring continuous troop deployment.</span>
-                    </div>
-                    <div class="scaffold-vocab-row">
-                        <div class="scaffold-vocab-subrow">
-                            <span class="scaffold-badge">Specification Fact Bank</span>
-                            <div class="scaffold-pills-list">
-                                <span class="scaffold-pill">Strategic depth</span><span class="scaffold-pill">Golan Heights escarpment</span><span class="scaffold-pill">Sinai Peninsula buffer zone</span><span class="scaffold-pill">Bar-Lev Line (Suez Canal)</span><span class="scaffold-pill">West Bank / Jordan Valley border</span><span class="scaffold-pill">Artillery range protection</span><span class="scaffold-pill">One million Palestinian inhabitants</span><span class="scaffold-pill">Military administration burden</span>
-                            </div>
-                        </div>
-                        <div class="scaffold-stem-subrow">
-                            <span class="scaffold-stem-label">Analytical Stems:</span>
-                            <span class="scaffold-stem-text"><em>"This territorial acquisition was vital because..."</em> · <em>"Furthermore, ..."</em> · <em>"On the other hand, ..."</em></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+        <div class="technique-grid">
+          <div class="technique-card">
+            <strong class="tech-hdr">Q1: Consequence [4 Marks]</strong>
+            Write <strong>one focused paragraph</strong> (~6 mins). State one clear consequence in your opening sentence, support with precise historical detail, and explain the direct outcome.
+          </div>
+          <div class="technique-card">
+            <strong class="tech-hdr">Q2: Narrative Account [8 Marks]</strong>
+            Write <strong>three chronological paragraphs</strong> (~15 mins): Beginning &rarr; Turning Point &rarr; Outcome. Link stages with causal connectives and include own knowledge beyond the stimulus.
+          </div>
+          <div class="technique-card">
+            <strong class="tech-hdr">Q3: Importance [8 Marks Each]</strong>
+            Write <strong>two distinct paragraphs</strong> (~12 mins per question). Focus every paragraph on <em>why X mattered for Y</em> rather than merely retelling events.
+          </div>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · 100% Specification Practice Bank</span>
-            <span class="turn-over">Turn over for Question 6 &#9654;</span>
-            <span>Page 8 of 12</span>
-        </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- PAGE 9: SECTION B — SPECIFICATION BANK: IMPORTANCE DEPTH (B)  -->
-    <!-- ============================================================= -->
-    <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section B: Specification Depth Bank · Importance Depth</h2>
-                    <p>Exhaustive curriculum coverage. Write two developed analytical paragraphs.</p>
-                </div>
-                <span class="header-tag">Spec Depth: Importance B</span>
-            </div>
-
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">6</strong>
-                        <span class="exam-provenance-pill unexamined">Unexamined Spec Target</span>
-                        Explain the importance of Egyptian relations with the USSR between 1967 and 1973.
-                    </span>
-                    <span class="q-marks">(8)</span>
-                </div>
-                <div class="focus-guidance">
-                    <strong>Examiner Guidance:</strong> Explain how Soviet military rearmament rebuilt Egypt’s armed forces, and how Sadat’s expulsion of Soviet advisers set the stage for the 1973 offensive.
-                </div>
-
-                <!-- Importance Scaffold Stack -->
-                <div class="importance-scaffold-stack">
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 1 Focus</span>
-                        <span class="scaffold-text">Military Reconstruction & SAM Missile Umbrella: Explain how Soviet hardware rebuilt Egypt’s shattered armed forces, creating the air-defense shield essential for the 1973 canal crossing.</span>
-                    </div>
-                    <div class="scaffold-focus-row">
-                        <span class="scaffold-badge">Paragraph 2 Focus</span>
-                        <span class="scaffold-text">Strategic Deception through Expulsion: Explain how Sadat’s 1972 expulsion of Soviet advisers deceived Israeli intelligence into assuming Egypt was incapable of going to war.</span>
-                    </div>
-                    <div class="scaffold-vocab-row">
-                        <div class="scaffold-vocab-subrow">
-                            <span class="scaffold-badge">Specification Fact Bank</span>
-                            <div class="scaffold-pills-list">
-                                <span class="scaffold-pill">SAM-2, SAM-3, SAM-6 missile umbrella</span><span class="scaffold-pill">War of Attrition (1969–70)</span><span class="scaffold-pill">Soviet military advisers (15,000)</span><span class="scaffold-pill">Anwar Sadat presidency (1970)</span><span class="scaffold-pill">Expulsion of Soviet advisers (July 1972)</span><span class="scaffold-pill">Deception strategy vs Israeli intelligence</span><span class="scaffold-pill">Preparation for the 1973 surprise assault</span>
-                            </div>
-                        </div>
-                        <div class="scaffold-stem-subrow">
-                            <span class="scaffold-stem-label">Analytical Stems:</span>
-                            <span class="scaffold-stem-text"><em>"This relationship was critical because..."</em> · <em>"Moreover, ..."</em> · <em>"However, the relationship changed when..."</em></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
+        <div class="spec-bank-container">
+          <div class="spec-bank-header">
+            <span class="spec-bank-title">Additional Key Topic 2 Exam Questions</span>
+            <span class="spec-bank-subtitle">Complete 100% syllabus coverage</span>
+          </div>
+          <div class="spec-bank-list">
+            
+              <div class="spec-bank-item">
+                <div class="spec-bank-q"><strong>1.</strong> Explain one consequence of the Cairo Conference (1964).</div>
+                <span class="spec-bank-badge">4m Consequence</span>
+              </div>
+              <div class="spec-bank-item">
+                <div class="spec-bank-q"><strong>2.</strong> Explain the importance of Syria’s support for Fatah in the years 1964–67 for escalating regional tension.</div>
+                <span class="spec-bank-badge">8m Importance</span>
+              </div>
+              <div class="spec-bank-item">
+                <div class="spec-bank-q"><strong>3.</strong> Explain the importance of the actions of the USSR and the USA for the outbreak of the Six Day War (1967).</div>
+                <span class="spec-bank-badge">8m Importance</span>
+              </div>
+              <div class="spec-bank-item">
+                <div class="spec-bank-q"><strong>4.</strong> Write a narrative account analysing the escalating tension between Israel, Syria and Jordan between 1964 and 1967.</div>
+                <span class="spec-bank-badge">8m Narrative</span>
+              </div>
+              <div class="spec-bank-item">
+                <div class="spec-bank-q"><strong>5.</strong> Explain one consequence of the PFLP airplane hijackings of 1970 (Dawson’s Field).</div>
+                <span class="spec-bank-badge">4m Consequence</span>
+              </div>
+              <div class="spec-bank-item">
+                <div class="spec-bank-q"><strong>6.</strong> Explain the importance of the War of Attrition (1969–70) for Egyptian-Israeli relations.</div>
+                <span class="spec-bank-badge">8m Importance</span>
+              </div>
+              <div class="spec-bank-item">
+                <div class="spec-bank-q"><strong>7.</strong> Explain one consequence of the Yom Kippur War (1973).</div>
+                <span class="spec-bank-badge">4m Consequence</span>
+              </div>
+          </div>
         </div>
 
-        <div class="page-footer">
-            <span>Option P5 · 100% Specification Practice Bank</span>
-            <span class="turn-over">Turn over for Question 7 &#9654;</span>
-            <span>Page 9 of 12</span>
+        <div class="reflection-card">
+          <div style="font-weight: 800; font-size: 7.8pt; text-transform: uppercase; margin-bottom: 6px; color: #0f172a;">
+            Post-Practice Reflection &amp; Revision Priorities
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div>
+              <span style="font-size: 7.4pt; font-weight: 600; color: #475569;">Topic area to revise next:</span>
+              <div style="border-bottom: 1px solid #64748b; height: 18px;"></div>
+            </div>
+            <div>
+              <span style="font-size: 7.4pt; font-weight: 600; color: #475569;">Exam skill target for next timed paper:</span>
+              <div style="border-bottom: 1px solid #64748b; height: 18px;"></div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- ============================================================= -->
-    <!-- PAGE 10: SECTION B — SPECIFICATION BANK: NARRATIVE (PART 1)   -->
-    <!-- ============================================================= -->
-    <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section B: Specification Depth Bank · Narrative Account (Part 1)</h2>
-                    <p>Exhaustive curriculum coverage. Analyse the chronological sequence and causal links.</p>
-                </div>
-                <span class="header-tag">Spec Depth: Narrative Pt 1</span>
-            </div>
-
-            <div class="question-container">
-                <div class="question-prompt">
-                    <span>
-                        <strong class="q-num">7</strong>
-                        <span class="exam-provenance-pill past">Edexcel June 2022</span>
-                        Write a narrative account analysing the key events of the Yom Kippur War (1973).
-                    </span>
-                    <span class="q-marks">(8)</span>
-                </div>
-
-                <div class="stimulus-card">
-                    You may use the following in your answer:
-                    <ul>
-                        <li><strong>The crossing of the Suez Canal (October 1973)</strong></li>
-                        <li><strong>The Israeli counter-attack across the Suez Canal</strong></li>
-                    </ul>
-                    <span style="display: block; margin-top: 2px; font-style: italic; color: #475569;">(You must also use information of your own.)</span>
-                </div>
-
-                <!-- Narrative Flow Planner -->
-                <div class="narrative-flow-planner">
-                    <div style="font-weight: 800; font-size: 7.4pt; text-transform: uppercase; color: #0f172a; margin-bottom: 2px;">
-                        Chronological 3-Stage Narrative Architecture:
-                    </div>
-                    <div class="narrative-stages-row">
-                        <div class="narrative-stage-box">
-                            <div class="narrative-stage-hdr">Stage 1: Arab Surprise & Canal Crossing (6–8 Oct 1973)</div>
-                            <div style="font-size: 7.2pt; color: #334155;">Egyptian forces breach Bar-Lev Line; Syrian armour assaults Golan</div>
-                        </div>
-                        <div class="narrative-stage-box">
-                            <div class="narrative-stage-hdr">Stage 2: Israeli Mobilization & Golan Recovery (9–14 Oct 1973)</div>
-                            <div style="font-size: 7.2pt; color: #334155;">Reserves mobilized; Syrian tanks repelled at Valley of Tears</div>
-                        </div>
-                        <div class="narrative-stage-box">
-                            <div class="narrative-stage-hdr">Stage 3: Counter-Crossing & Ceasefire (15–24 Oct 1973)</div>
-                            <div style="font-size: 7.2pt; color: #334155;">Sharon crosses canal; Egyptian Third Army trapped; UN Res 338</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #cbd5e1; padding-top: 2px; font-size: 7.4pt; color: #475569;">
-                        <span><strong>Fact Bank:</strong> <span class="scaffold-pill">6 October 1973 (Yom Kippur / Ramadan)</span> <span class="scaffold-pill">Breach of sand wall with water cannons</span> <span class="scaffold-pill">Bar-Lev Line breached</span> <span class="scaffold-pill">Soviet SAM missile umbrella</span> <span class="scaffold-pill">Syrian assault on Golan Heights</span> <span class="scaffold-pill">Valley of Tears tank battles</span> <span class="scaffold-pill">Ariel Sharon crossing (Chinese Farm)</span> <span class="scaffold-pill">Egyptian Third Army encircled</span> <span class="scaffold-pill">UN Resolution 338 ceasefire</span></span>
-                        <span><strong>Connectives:</strong> The war began with complete tactical surprise when... · Faced with a dual-front crisis, Israel... · A decisive turning point came when...</span>
-                    </div>
-                </div>
-
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-            </div>
-        </div>
-
-        <div class="page-footer">
-            <span>Option P5 · 100% Specification Practice Bank</span>
-            <span class="turn-over">Turn over for Question 7 continuation lines &#9654;</span>
-            <span>Page 10 of 12</span>
-        </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- PAGE 11: SECTION B — SPECIFICATION BANK: NARRATIVE (PART 2)   -->
-    <!-- ============================================================= -->
-    <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section B: Specification Depth Bank · Narrative Account (Part 2)</h2>
-                    <p>Continue your narrative analysis below. Ensure all 3 chronological stages are causally linked.</p>
-                </div>
-                <span class="header-tag">Q7: Continuation</span>
-            </div>
-
-            <div class="question-container">
-                <div class="question-prompt" style="margin-bottom: 5px;">
-                    <span><strong class="q-num">Question 7 continued:</strong></span>
-                </div>
-
-                <div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div>
-
-                <!-- Pupil Self-Assessment & Examiner Standards Checklist -->
-                <div style="border: 1.5px solid #000000; border-radius: 4px; background: #f8fafc; padding: 4px 8px; margin-top: 6px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px; margin-bottom: 3px;">
-                        <strong style="color: #000000; font-size: 7.8pt; text-transform: uppercase;">
-                            🔍 Narrative Account Quality Audit &amp; Examiner Criteria (8 Marks)
-                        </strong>
-                        <span style="font-size: 7.2pt; color: #000000; font-weight: 700;">Pearson Edexcel Level 3 Standard</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 7.2pt; color: #000000;">
-                        <span>[ &nbsp; ] 3 Distinct Chronological Phases</span>
-                        <span>[ &nbsp; ] Explicit Causal Connectives Used</span>
-                        <span>[ &nbsp; ] Precise Historical Facts &amp; Dates</span>
-                        <span>[ &nbsp; ] Avoided Mere Storytelling</span>
-                        <span style="background: #fff; border: 1px solid #000000; padding: 1px 6px; border-radius: 3px; font-weight: 800;">Score: &nbsp; &nbsp; / 8</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-footer">
-            <span>Option P5 · 100% Specification Practice Bank</span>
-            <span class="turn-over">Turn over for Specification Practice Bank &amp; Fatal Traps &#9654;</span>
-            <span>Page 11 of 12</span>
-        </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- PAGE 12: 100% SPECIFICATION PRACTICE BANK & EXAMINER TRAPS   -->
-    <!-- ============================================================= -->
-    <div class="page">
-        <div>
-            <div class="page-header">
-                <div class="header-left">
-                    <h2>Section C: Specification Practice Bank &amp; Fatal Traps</h2>
-                    <p>100% specification coverage guarantee — practice every remaining Pearson Edexcel exam question stem.</p>
-                </div>
-                <span class="header-tag">100% Spec Guarantee</span>
-            </div>
-
-            <!-- Top Section: Top 3 Fatal Examiner Traps -->
-            <div class="traps-card">
-                <div class="traps-header">
-                    ⚠️ Top 3 Fatal Examiner Traps for Key Topic 2
-                </div>
-                <div class="traps-grid">
-                    
-                        <div class="trap-item">
-                            <strong>• The 1967 vs 1973 Territorial Shift:</strong>
-                            <span>Israel conquered the Occupied Territories (Sinai, Gaza Strip, West Bank, East Jerusalem, Golan Heights) in the 1967 Six Day War, NOT in 1973. In 1973, borders remained essentially unchanged following the UN ceasefire.</span>
-                        </div>
-                    
-                        <div class="trap-item">
-                            <strong>• The Wording of UN Resolution 242:</strong>
-                            <span>In UN Resolution 242 (1967), the English text intentionally called for Israeli withdrawal from "territories occupied" rather than "THE territories occupied". This deliberate ambiguity allowed Israel to claim it was not required to surrender all land.</span>
-                        </div>
-                    
-                        <div class="trap-item">
-                            <strong>• Israeli Intelligence and "The Conception":</strong>
-                            <span>The catastrophic surprise of the 1973 Yom Kippur War was rooted in "The Conception" (Aman hubris) — the false Israeli assumption that Egypt would never attack without long-range strike aircraft capable of neutralizing Israeli airfields.</span>
-                        </div>
-                    
-                </div>
-            </div>
-
-            <!-- Middle Section: 100% Specification Practice Bank -->
-            <div class="spec-bank-container">
-                <div class="spec-bank-header">
-                    <span class="spec-bank-title">📚 Specification Practice Bank: 100% Curriculum Coverage</span>
-                    <span class="spec-bank-subtitle">Every remaining specification bullet point tested below</span>
-                </div>
-                
-                <div class="spec-bank-list">
-                    
-                        <div class="spec-bank-item">
-                            <div class="spec-bank-q">
-                                <strong>Question 1:</strong> Explain one consequence of the Cairo Conference (1964).
-                            </div>
-                            <span class="spec-bank-badge">
-                                4m Consequence
-                            </span>
-                        </div>
-                    
-                        <div class="spec-bank-item">
-                            <div class="spec-bank-q">
-                                <strong>Question 2:</strong> Explain the importance of Syria’s support for Fatah in the years 1964–67 for escalating regional tension.
-                            </div>
-                            <span class="spec-bank-badge">
-                                8m Importance
-                            </span>
-                        </div>
-                    
-                        <div class="spec-bank-item">
-                            <div class="spec-bank-q">
-                                <strong>Question 3:</strong> Explain the importance of the actions of the USSR and the USA for the outbreak of the Six Day War (1967).
-                            </div>
-                            <span class="spec-bank-badge">
-                                8m Importance
-                            </span>
-                        </div>
-                    
-                        <div class="spec-bank-item">
-                            <div class="spec-bank-q">
-                                <strong>Question 4:</strong> Write a narrative account analysing the escalating tension between Israel, Syria and Jordan between 1964 and 1967.
-                            </div>
-                            <span class="spec-bank-badge">
-                                8m Narrative
-                            </span>
-                        </div>
-                    
-                        <div class="spec-bank-item">
-                            <div class="spec-bank-q">
-                                <strong>Question 5:</strong> Explain one consequence of the PFLP airplane hijackings of 1970 (Dawson’s Field).
-                            </div>
-                            <span class="spec-bank-badge">
-                                4m Consequence
-                            </span>
-                        </div>
-                    
-                        <div class="spec-bank-item">
-                            <div class="spec-bank-q">
-                                <strong>Question 6:</strong> Explain the importance of the War of Attrition (1969–70) for Egyptian-Israeli relations.
-                            </div>
-                            <span class="spec-bank-badge">
-                                8m Importance
-                            </span>
-                        </div>
-                    
-                        <div class="spec-bank-item">
-                            <div class="spec-bank-q">
-                                <strong>Question 7:</strong> Explain one consequence of the Yom Kippur War (1973).
-                            </div>
-                            <span class="spec-bank-badge">
-                                4m Consequence
-                            </span>
-                        </div>
-                    
-                </div>
-            </div>
-
-            <!-- Bottom Section: Pupil Personal Revision Commitments -->
-            <div class="diagnostic-action-card">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px;">
-                    <strong style="color: #334155; font-size: 7.6pt; text-transform: uppercase;">
-                        ✍️ Pupil Diagnostic Action Plan &amp; Targeted Revision Commitments
-                    </strong>
-                    <span style="font-size: 6.8pt; color: #64748b;">Complete following self-marking of Pages 2–11</span>
-                </div>
-                
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 4px;">
-                    <div>
-                        <span style="font-size: 7.2pt; font-weight: 700; color: #475569;">1. Weakest Sub-Topic / Knowledge Area:</span>
-                        <div style="border-bottom: 1.2px solid #475569; height: 16px;"></div>
-                    </div>
-                    <div>
-                        <span style="font-size: 7.2pt; font-weight: 700; color: #475569;">2. Key Dates / Statistics I Need to Memorise:</span>
-                        <div style="border-bottom: 1.2px solid #475569; height: 16px;"></div>
-                    </div>
-                </div>
-                
-                <div style="display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid #cbd5e1; border-radius: 3px; padding: 2.5px 6px; font-size: 7.2pt;">
-                    <span><strong>Revision Commitment:</strong> [ &nbsp; ] Complete Quiz Flashcards &nbsp;&nbsp; [ &nbsp; ] Redo Timed Dual-Track &nbsp;&nbsp; [ &nbsp; ] Practice Spec Bank Question</span>
-                    <span><strong>Target Grade:</strong> [ 9 &nbsp; 8 &nbsp; 7 &nbsp; 6 &nbsp; 5 &nbsp; 4 ]</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-footer">
-            <span>Pearson Edexcel GCSE (9–1) History · Option P5 Conflict in the Middle East</span>
-            <span class="turn-over">End of Booklet · 100% Specification Mastered</span>
-            <span>Page 12 of 12</span>
-        </div>
+      <div class="page-footer">
+        <span>GCSE History &middot; Conflict in the Middle East, 1945–95</span>
+        <span class="turn-over">End of Key Topic 2 Practice Booklet</span>
+        <span>Page 12 of 12</span>
+      </div>
     </div>
 
 </body>
