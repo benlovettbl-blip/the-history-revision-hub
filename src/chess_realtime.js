@@ -21,10 +21,10 @@ let pushDebounceTimer = null;
 let currentSyncStatus = 'idle'; // 'idle' | 'syncing' | 'synced' | 'offline'
 
 export function isAirgapModeActive() {
-  if (typeof window === 'undefined') return true;
+  if (typeof window === 'undefined') return false;
   const val = localStorage.getItem('chess_airgap_mode');
-  // Safe by default: Airgap is active unless explicitly turned off
-  return val !== 'false';
+  // Cloud Sync is active by default: Airgap is only active if explicitly enabled
+  return val === 'true';
 }
 
 export function setAirgapMode(active) {

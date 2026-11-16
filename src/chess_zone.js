@@ -180,6 +180,8 @@ export const DEFAULT_LOCAL_NAME_MAP = {
   p_1789653960520: 'William Harvey',
   p_1789653940195: 'The Bar Lev Defender',
   p_1791467946326: 'The Armada Fireship',
+  p_1794496895101: 'Jensen W.',
+  p_1794498328039: 'Harry M.',
 };
 
 // Pupil Username Handles (@username)
@@ -197,6 +199,8 @@ export const PLAYER_USERNAMES = {
   p_1789653960520: 'WilliamHarvey',
   p_1789653940195: 'BarLevDefender',
   p_1791467946326: 'ArmadaFireship',
+  p_1794496895101: 'JensenW.',
+  p_1794498328039: 'HarryM.',
 };
 
 export const CALLSIGN_MAP = {
@@ -962,8 +966,14 @@ function initChessState(forceClean = false) {
   if (typeof window !== 'undefined' && !window.__chessSyncListenerStarted) {
     window.__chessSyncListenerStarted = true;
     startPupilRealtimeSync((remoteData) => {
-      // Only apply remote data updates in pupil mode or pupil preview
-      if (chessState.userRole === 'pupil' || chessState.isPupilPreview) {
+      // Apply remote data updates in pupil mode/preview, or in teacher mode if cloud has newer/more matches
+      const isRemoteNewer =
+        remoteData &&
+        ((remoteData.syncedAt && remoteData.syncedAt > (chessState.timestamp || 0)) ||
+          (Array.isArray(remoteData.matches) &&
+            remoteData.matches.length > (chessState.matches?.length || 0)));
+
+      if (chessState.userRole === 'pupil' || chessState.isPupilPreview || isRemoteNewer) {
         if (Array.isArray(remoteData.players) && remoteData.players.length > 0) {
           chessState.players = remoteData.players;
         }
@@ -982,10 +992,22 @@ function initChessState(forceClean = false) {
         if (remoteData.knockoutBracket !== undefined) {
           chessState.knockoutBracket = remoteData.knockoutBracket;
         }
+        if (remoteData.syncedAt) {
+          chessState.timestamp = remoteData.syncedAt;
+        }
+        // Persist to local cache if teacher view was synced
+        if (chessState.userRole === 'teacher' && isRemoteNewer) {
+          saveChessState();
+        }
         // Hard Guardrail: NEVER hijack view or toast if user is on another page
         if (isChessViewActive()) {
           renderChessHubView();
-          showChessToast('⚡ Live update received from teacher!', 'info');
+          showChessToast(
+            chessState.userRole === 'teacher'
+              ? '☁️ Live standings synced from cloud!'
+              : '⚡ Live update received from teacher!',
+            'info',
+          );
         }
       }
     });
@@ -1179,12 +1201,10 @@ export function renderChessHubView() {
   }
   filteredPlayers.sort((a, b) => a.rank - b.rank);
 
-  // In Pupil View, prevent teacher-only tabs from showing
+  // In Pupil View, prevent teacher-only administration tabs from showing
   if (
     chessState.userRole === 'pupil' &&
-    (chessState.activeTab === 'signin' ||
-      chessState.activeTab === 'quickdesk' ||
-      chessState.activeTab === 'knockout')
+    (chessState.activeTab === 'signin' || chessState.activeTab === 'quickdesk')
   ) {
     chessState.activeTab = 'ladder';
   }
@@ -1316,6 +1336,9 @@ export function renderChessHubView() {
           <button id="tab-btn-table" type="button" onclick="window.switchChessTab('table')" style="${getTabStyle(currentTab === 'table')}">
             <span>📊</span> Cross-Table Grid
           </button>
+          <button id="tab-btn-knockout" type="button" onclick="window.switchChessTab('knockout')" style="${getTabStyle(currentTab === 'knockout')}">
+            <span>👑</span> Tournament Cup ${chessState.knockoutBracket ? `<span style="background: ${currentTab === 'knockout' ? 'rgba(255,255,255,0.25)' : '#fef3c7'}; color: ${currentTab === 'knockout' ? '#ffffff' : '#b45309'}; padding: 1px 6px; border-radius: 10px; font-size: 0.68rem; font-weight: 800;">Live</span>` : ''}
+          </button>
         </div>
 
         ${
@@ -1390,6 +1413,8 @@ function renderActiveTabContent(filteredPlayers) {
     return renderPairingsTab();
   } else if (tab === 'table') {
     return renderLeagueTableTab(filteredPlayers);
+  } else if (tab === 'knockout') {
+    return renderKnockoutTab();
   } else {
     return renderLadderTab(filteredPlayers);
   }
@@ -4033,12 +4058,85 @@ function renderPairingsTab() {
   `;
 }
 
+// Classroom Attendance & Live Seeding Control Bar for Knockout Cup
+function renderKnockoutAttendanceBar() {
+  const checkedInSet = new Set(chessState.checkedInPlayerIds || []);
+  const checkedInCount = checkedInSet.size;
+  const isTeacher = chessState.userRole === 'teacher';
+
+  return `
+    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+        <div>
+          <div style="font-weight: 800; font-size: 0.95rem; color: #0f172a; display: flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-clipboard-user" style="color: #0284c7;"></i>
+            <span>Classroom Check-In: <strong style="color: #0284c7;">${checkedInCount}</strong> of ${chessState.players.length} Pupils Present</span>
+          </div>
+          <div style="font-size: 0.78rem; color: #64748b; margin-top: 3px; line-height: 1.4;">
+            As pupils walk into Period 6, tap their name to mark them present. The tournament bracket will automatically seed only the pupils in the room based on their official ranking, giving top seeds a Round 1 Bye if attendance isn't an exact power of 2!
+          </div>
+        </div>
+
+        ${
+          isTeacher
+            ? `
+          <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
+            <button type="button" onclick="window.checkInAllPlayers()" style="background: #ffffff; border: 1px solid #cbd5e1; color: #0284c7; padding: 5px 10px; border-radius: 5px; font-weight: 700; font-size: 0.74rem; cursor: pointer;">
+              ✓ Check In All
+            </button>
+            <button type="button" onclick="window.clearAttendance()" style="background: #ffffff; border: 1px solid #cbd5e1; color: #64748b; padding: 5px 10px; border-radius: 5px; font-weight: 700; font-size: 0.74rem; cursor: pointer;">
+              Clear All
+            </button>
+            <button type="button" onclick="window.generateKnockoutTournament()" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; border: none; padding: 7px 16px; border-radius: 6px; font-weight: 800; font-size: 0.82rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);" title="Auto-populate seeded tournament bracket using arrived pupils">
+              <span>⚡</span> Auto-Populate Seeded Bracket (${checkedInCount > 0 ? checkedInCount : chessState.players.length})
+            </button>
+          </div>
+        `
+            : ''
+        }
+      </div>
+
+      <!-- Pupil Check-in Chips -->
+      <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+        ${chessState.players
+          .map((p) => {
+            const isChecked = checkedInSet.has(p.id);
+            const cleanName =
+              DEFAULT_LOCAL_NAME_MAP[p.id] ||
+              CALLSIGN_TO_FIRST_NAME[p.name] ||
+              p.realName ||
+              p.name;
+
+            if (!isTeacher) {
+              return `
+                <div style="background: ${isChecked ? '#dcfce7' : '#ffffff'}; border: 1px solid ${isChecked ? '#86efac' : '#e2e8f0'}; border-radius: 16px; padding: 3px 8px; font-size: 0.72rem; font-weight: 700; color: ${isChecked ? '#15803d' : '#94a3b8'}; display: inline-flex; align-items: center; gap: 4px;">
+                  <span>${isChecked ? '✓' : '·'}</span>
+                  <span>${cleanName}</span>
+                </div>
+              `;
+            }
+
+            return `
+              <button type="button" onclick="${isChecked ? `window.checkOutPlayer('${p.id}')` : `window.checkInPlayer('${p.id}')`}" style="background: ${isChecked ? '#dcfce7' : '#ffffff'}; border: 1.5px solid ${isChecked ? '#86efac' : '#cbd5e1'}; border-radius: 16px; padding: 4px 10px; font-size: 0.74rem; font-weight: 700; color: ${isChecked ? '#15803d' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s;" title="Click to toggle present/absent">
+                <span style="font-weight: 900;">${isChecked ? '✓' : '+'}</span>
+                <span>${cleanName}</span>
+                <span style="font-size: 0.65rem; color: #64748b; font-weight: 800;">(#${p.rank || '-'})</span>
+              </button>
+            `;
+          })
+          .join('')}
+      </div>
+    </div>
+  `;
+}
+
 // 5. Digital Knockout Cup (Single-Elimination Bracket) (Audio 3)
 function renderKnockoutTab() {
   const bracket = chessState.knockoutBracket;
 
   if (!bracket) {
     return `
+      ${renderKnockoutAttendanceBar()}
       <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 40px 24px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
         <div style="width: 60px; height: 60px; border-radius: 50%; background: #fef3c7; color: #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 16px;">
           <i class="fa-solid fa-trophy"></i>
@@ -4047,10 +4145,10 @@ function renderKnockoutTab() {
           Thursday Period 6 Knockout Cup
         </h2>
         <p style="color: #64748b; max-width: 580px; margin: 0 auto 24px; font-size: 0.95rem; line-height: 1.6;">
-          Keep it fully digital! Generate a single-elimination tournament bracket using today's checked-in pupils. Tap the winner of each match on-screen to automatically advance them, log the game, and award vital House Points!
+          Keep it fully digital! Mark attending pupils above as they arrive, then tap <strong>Auto-Populate Seeded Bracket</strong>. The app automatically balances the draw by official player rankings and awards Round 1 Byes to top seeds!
         </p>
         <button onclick="window.generateKnockoutTournament()" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; font-size: 1rem; padding: 12px 26px; border-radius: 8px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);">
-          <i class="fa-solid fa-sitemap"></i> Generate Digital Knockout Bracket
+          <i class="fa-solid fa-sitemap"></i> Auto-Populate Seeded Bracket
         </button>
       </div>
     `;
@@ -4106,6 +4204,7 @@ function renderKnockoutTab() {
   }
 
   return `
+    ${renderKnockoutAttendanceBar()}
     <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
       
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
@@ -4122,7 +4221,7 @@ function renderKnockoutTab() {
         </div>
 
         <div style="display: flex; gap: 8px;">
-          <button onclick="window.generateKnockoutTournament()" style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer;">
+          <button onclick="window.generateKnockoutTournament()" style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer;" title="Re-seed bracket using currently arrived pupils">
             <i class="fa-solid fa-rotate"></i> Re-Seed Bracket
           </button>
           <button onclick="window.resetKnockoutTournament()" style="background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer;">
@@ -4177,27 +4276,29 @@ function renderKnockoutTab() {
                     const h2 = p2 ? HOUSES[p2.house] : null;
 
                     return `
-                    <div style="background: #f8fafc; border: 1.5px solid ${m.winner ? '#10b981' : '#cbd5e1'}; border-radius: 8px; padding: 10px 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); position: relative;">
+                    <div style="background: #f8fafc; border: 1.5px solid ${m.isBye ? '#86efac' : m.winner ? '#10b981' : '#cbd5e1'}; border-radius: 8px; padding: 10px 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); position: relative;">
                       
                       <!-- P1 Slot -->
                       <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#dcfce7' : '#ffffff'}; margin-bottom: 4px;">
-                        <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                          ${p1 ? p1.name : 'TBD'}
+                        <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 4px;">
+                          ${p1?.seed ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.65rem; font-weight: 800; padding: 1px 5px; border-radius: 4px;">#${p1.seed}</span>` : ''}
+                          <span>${p1 ? p1.name : 'TBD'}</span>
                         </span>
-                        ${h1 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h1.color};">${h1.name}</span>` : ''}
+                        ${h1 && !p1?.isBye ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h1.color};">${h1.name}</span>` : ''}
                       </div>
 
                       <!-- P2 Slot -->
-                      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${m.winner && m.winner.id === (p2 && p2.id) ? '#dcfce7' : '#ffffff'};">
-                        <span style="font-weight: 700; font-size: 0.85rem; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                          ${p2 ? p2.name : 'TBD'}
+                      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 4px; background: ${m.winner && m.winner.id === (p2 && p2.id) ? '#dcfce7' : p2?.isBye ? '#f1f5f9' : '#ffffff'};">
+                        <span style="font-weight: 700; font-size: 0.85rem; color: ${p2?.isBye ? '#94a3b8' : '#0f172a'}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 4px;">
+                          ${p2?.seed && !p2?.isBye ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.65rem; font-weight: 800; padding: 1px 5px; border-radius: 4px;">#${p2.seed}</span>` : ''}
+                          <span>${p2 ? (p2.isBye ? '— [BYE] —' : p2.name) : 'TBD'}</span>
                         </span>
-                        ${h2 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h2.color};">${h2.name}</span>` : ''}
+                        ${h2 && !p2?.isBye ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${h2.color};">${h2.name}</span>` : ''}
                       </div>
 
                       <!-- Action Button -->
                       ${
-                        p1 && p2 && !m.winner
+                        p1 && p2 && !m.winner && !m.isBye && chessState.userRole === 'teacher'
                           ? `
                         <div style="display: flex; gap: 6px; margin-top: 8px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
                           <button onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Advance ${p1.name}">
@@ -4211,7 +4312,13 @@ function renderKnockoutTab() {
                           : ''
                       }
                       ${
-                        m.winner
+                        m.isBye
+                          ? `
+                        <div style="font-size: 0.72rem; font-weight: 800; color: #059669; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #dcfce7;">
+                          <i class="fa-solid fa-forward"></i> Auto-Advanced (Top-Seed Bye)
+                        </div>
+                      `
+                          : m.winner
                           ? `
                         <div style="font-size: 0.72rem; font-weight: 800; color: #15803d; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #dcfce7;">
                           <i class="fa-solid fa-check"></i> Winner: ${m.winner.name} (+3 pts)
@@ -4993,7 +5100,7 @@ function getChessModalContainer() {
 window.switchChessTab = function (tabName) {
   if (
     chessState.userRole === 'pupil' &&
-    (tabName === 'quickdesk' || tabName === 'signin' || tabName === 'knockout')
+    (tabName === 'quickdesk' || tabName === 'signin')
   ) {
     showChessToast('🔒 Access Restricted: Teacher mode required.', 'error');
     return;
@@ -6171,56 +6278,171 @@ window.setLeagueTableViewMode = function (mode) {
 };
 
 // Knockout Cup Generator & Progression (Audio 3)
-window.generateKnockoutTournament = function () {
-  let playerPool = chessState.players.filter((p) => chessState.checkedInPlayerIds.includes(p.id));
-  if (playerPool.length < 4) {
-    // If fewer than 4, take top 8 players from overall roster
-    playerPool = [...chessState.players].slice(0, 8);
+window.generateKnockoutTournament = function (forceSize = null) {
+  // 1. Gather all pupils who are checked in / present today
+  let presentPupils = chessState.players.filter((p) =>
+    chessState.checkedInPlayerIds.includes(p.id),
+  );
+
+  // If no pupils are checked in yet, automatically check in all registered pupils
+  if (presentPupils.length === 0) {
+    chessState.checkedInPlayerIds = chessState.players.map((p) => p.id);
+    presentPupils = [...chessState.players];
+    saveChessState();
+    showChessToast(
+      `✓ Auto-checked in all ${presentPupils.length} pupils as attendance baseline!`,
+      'info',
+    );
   }
 
-  if (playerPool.length < 4) {
+  if (presentPupils.length < 2) {
     showChessToast(
-      'Need at least 4 registered pupils to create a Knockout Cup bracket.',
+      '⚠️ Need at least 2 present pupils to generate a Tournament Bracket.',
       'warning',
     );
     return;
   }
 
-  // Shuffle players
-  const shuffled = [...playerPool].sort(() => 0.5 - Math.random());
-  const tournamentSize = shuffled.length >= 8 ? 8 : 4;
-  const participants = shuffled.slice(0, tournamentSize);
+  // 2. Strict Rank & Rating Seeding: Seed 1 = #1 ranked, Seed 2 = #2, etc.
+  presentPupils.sort(
+    (a, b) => (a.rank || 999) - (b.rank || 999) || (b.rating || 0) - (a.rating || 0),
+  );
 
-  const round1Matches = [];
-  for (let i = 0; i < tournamentSize; i += 2) {
-    round1Matches.push({
-      id: `ko_r1_${i / 2}`,
-      p1: participants[i],
-      p2: participants[i + 1],
-      winner: null,
-    });
+  const N = presentPupils.length;
+
+  // 3. Determine optimal bracket size (4, 8, or 16)
+  let tournamentSize = 8;
+  if (forceSize) {
+    tournamentSize = forceSize;
+  } else if (N <= 4) {
+    tournamentSize = 4;
+  } else if (N <= 8) {
+    tournamentSize = 8;
+  } else {
+    tournamentSize = 16;
   }
 
-  const roundNames =
-    tournamentSize === 8
-      ? ['Quarter-Finals', 'Semi-Finals', 'Championship Final']
-      : ['Semi-Finals', 'Championship Final'];
+  // Tag seeds on players
+  const participants = [];
+  for (let i = 0; i < tournamentSize; i++) {
+    if (i < N) {
+      participants.push({
+        ...presentPupils[i],
+        seed: i + 1,
+      });
+    } else {
+      participants.push({
+        id: `bye_${i + 1}`,
+        name: 'BYE',
+        nickname: 'BYE',
+        realName: 'BYE',
+        seed: i + 1,
+        isBye: true,
+        house: 'none',
+      });
+    }
+  }
 
-  const rounds = [round1Matches];
-  if (tournamentSize === 8) {
+  // 4. Standard Tournament Seeding Bracket Pairings
+  let seedPairs = [];
+  if (tournamentSize === 4) {
+    seedPairs = [
+      [1, 4],
+      [2, 3],
+    ];
+  } else if (tournamentSize === 8) {
+    seedPairs = [
+      [1, 8],
+      [4, 5],
+      [2, 7],
+      [3, 6],
+    ];
+  } else if (tournamentSize === 16) {
+    seedPairs = [
+      [1, 16],
+      [8, 9],
+      [4, 13],
+      [5, 12],
+      [2, 15],
+      [7, 10],
+      [3, 14],
+      [6, 11],
+    ];
+  }
+
+  const getBySeed = (s) => participants.find((p) => p.seed === s);
+
+  // Build Round 1 Matches
+  const round1Matches = seedPairs.map((pair, idx) => {
+    const p1 = getBySeed(pair[0]);
+    const p2 = getBySeed(pair[1]);
+    const match = {
+      id: `ko_r1_${idx}`,
+      p1,
+      p2,
+      winner: null,
+      loser: null,
+      isBye: Boolean(p1?.isBye || p2?.isBye),
+    };
+
+    // Auto-advance if one participant is a BYE!
+    if (match.isBye) {
+      if (p1 && !p1.isBye) {
+        match.winner = p1;
+        match.loser = p2;
+      } else if (p2 && !p2.isBye) {
+        match.winner = p2;
+        match.loser = p1;
+      }
+    }
+    return match;
+  });
+
+  // Build Binary Progression Tree
+  let roundNames = [];
+  let rounds = [round1Matches];
+
+  if (tournamentSize === 4) {
+    roundNames = ['Semi-Finals', 'Championship Final'];
+    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null }]);
+  } else if (tournamentSize === 8) {
+    roundNames = ['Quarter-Finals', 'Semi-Finals', 'Championship Final'];
     rounds.push([
       { id: 'ko_sf_0', p1: null, p2: null, winner: null },
       { id: 'ko_sf_1', p1: null, p2: null, winner: null },
     ]);
+    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null }]);
+  } else if (tournamentSize === 16) {
+    roundNames = ['Round of 16', 'Quarter-Finals', 'Semi-Finals', 'Championship Final'];
+    rounds.push([
+      { id: 'ko_qf_0', p1: null, p2: null, winner: null },
+      { id: 'ko_qf_1', p1: null, p2: null, winner: null },
+      { id: 'ko_qf_2', p1: null, p2: null, winner: null },
+      { id: 'ko_qf_3', p1: null, p2: null, winner: null },
+    ]);
+    rounds.push([
+      { id: 'ko_sf_0', p1: null, p2: null, winner: null },
+      { id: 'ko_sf_1', p1: null, p2: null, winner: null },
+    ]);
+    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null }]);
   }
-  rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null }]);
 
-  // Challenger Plate & Wooden Spoon Shield Setup:
-  // In an 8-player bracket:
-  // - 4 losers from Round 1 battle in Plate Semi-Finals -> Challenger Plate Final
-  // - The 2 losers from Plate Semi-Finals battle in the Wooden Spoon Shield Final!
-  // - The 2 losers from Cup Semi-Finals battle in the 3rd Place Bronze Playoff!
-  // In a 4-player bracket: 2 losers from Round 1 battle in the Challenger Plate Final directly!
+  // Pre-advance any Round 1 BYE winners into Round 2 slots
+  round1Matches.forEach((m, mIdx) => {
+    if (m.winner && m.isBye && rounds[1]) {
+      const nextMIdx = Math.floor(mIdx / 2);
+      const nextMatch = rounds[1][nextMIdx];
+      if (nextMatch) {
+        if (mIdx % 2 === 0) {
+          nextMatch.p1 = m.winner;
+        } else {
+          nextMatch.p2 = m.winner;
+        }
+      }
+    }
+  });
+
+  // Setup Challenger Plate & Bronze Match
   let plateRounds = [];
   let plateRoundNames = [];
   let woodenSpoonMatch = null;
@@ -6251,7 +6473,38 @@ window.generateKnockoutTournament = function () {
       loser: null,
       title: '3rd Place Bronze Playoff',
     };
-  } else {
+  } else if (tournamentSize === 16) {
+    plateRoundNames = ['Plate Quarter-Finals', 'Plate Semi-Finals', 'Challenger Plate Final'];
+    plateRounds = [
+      [
+        { id: 'plate_qf_0', p1: null, p2: null, winner: null, loser: null },
+        { id: 'plate_qf_1', p1: null, p2: null, winner: null, loser: null },
+        { id: 'plate_qf_2', p1: null, p2: null, winner: null, loser: null },
+        { id: 'plate_qf_3', p1: null, p2: null, winner: null, loser: null },
+      ],
+      [
+        { id: 'plate_sf_0', p1: null, p2: null, winner: null, loser: null },
+        { id: 'plate_sf_1', p1: null, p2: null, winner: null, loser: null },
+      ],
+      [{ id: 'plate_final', p1: null, p2: null, winner: null, loser: null }],
+    ];
+    woodenSpoonMatch = {
+      id: 'wooden_spoon_final',
+      p1: null,
+      p2: null,
+      winner: null,
+      loser: null,
+      title: 'Wooden Spoon Shield Final',
+    };
+    cupBronzeMatch = {
+      id: 'cup_bronze_final',
+      p1: null,
+      p2: null,
+      winner: null,
+      loser: null,
+      title: '3rd Place Bronze Playoff',
+    };
+  } else if (tournamentSize === 4) {
     plateRoundNames = ['Challenger Plate Final'];
     plateRounds = [[{ id: 'plate_final', p1: null, p2: null, winner: null, loser: null }]];
   }
@@ -6265,11 +6518,19 @@ window.generateKnockoutTournament = function () {
     plateRounds,
     woodenSpoonMatch,
     casualMatches: [],
+    seededAt: Date.now(),
+    participantCount: N,
   };
 
   saveChessState();
   chessState.activeTab = 'knockout';
   renderChessHubView();
+
+  const byeCount = tournamentSize - N;
+  showChessToast(
+    `⚡ Seeded ${N} pupils by ranking into a ${tournamentSize}-bracket! ${byeCount > 0 ? `(${byeCount} Top-Seed Byes awarded)` : ''}`,
+    'success',
+  );
 };
 
 window.advanceKnockoutWinner = function (roundIdx, matchIdx, winnerId) {
@@ -6278,6 +6539,7 @@ window.advanceKnockoutWinner = function (roundIdx, matchIdx, winnerId) {
 
   const match = bracket.rounds[roundIdx][matchIdx];
   if (!match || !match.p1 || !match.p2) return;
+  if (match.isBye || match.winner) return;
 
   const winner = match.p1.id === winnerId ? match.p1 : match.p2;
   const loser = match.p1.id === winnerId ? match.p2 : match.p1;
@@ -6318,9 +6580,9 @@ window.advanceKnockoutWinner = function (roundIdx, matchIdx, winnerId) {
     }
   }
 
-  // Route Round 1 losers into the Challenger Plate
-  if (roundIdx === 0 && bracket.plateRounds && bracket.plateRounds.length > 0) {
-    if (bracket.tournamentSize === 8) {
+  // Route Round 1 losers into the Challenger Plate (ignoring BYEs)
+  if (roundIdx === 0 && bracket.plateRounds && bracket.plateRounds.length > 0 && loser && !loser.isBye) {
+    if (bracket.tournamentSize === 16 || bracket.tournamentSize === 8) {
       const plateMatchIdx = Math.floor(matchIdx / 2);
       const plateMatch = bracket.plateRounds[0][plateMatchIdx];
       if (plateMatch) {

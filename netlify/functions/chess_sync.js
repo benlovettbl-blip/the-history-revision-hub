@@ -3,8 +3,7 @@ import crypto from 'node:crypto';
 const memoryFallbackMap = new Map();
 const SALT_PREFIX = 'hrh_staff_v1:';
 const DEFAULT_STAFF_DIGESTS = [
-  'bdb43a5156af51799383207dd6a0bcedf596fc328f198fb5353ad7be302abcf9',
-  '7575097ea46dfdf5e91458244b3ad95be653d0ea015b266ff1c7bf625ab8cbb5',
+  '44f85ae76f2b9cf8c64f9195bfbd2b6d787799e049405e6915fa80765638692b',
 ];
 
 function computeDigest(rawKey) {
