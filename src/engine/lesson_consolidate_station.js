@@ -1,43 +1,33 @@
 /**
- * Lesson Consolidate Station
- * 
- * Embedded, auto-collapsed 1-Click 6-Pill Launcher Bar & interactive consolidation hub
- * rendered directly at the bottom of every lesson page across all Key Stages (KS2, KS3, GCSE).
- * 
- * 6 Unified Plenary & Retrieval Modes:
- * 1. Living Timeline — Centrefold workbook milestone (pp. 8–9) & Dual-Pathway guide
- * 2. Lesson Quiz (10–20 Qs) — Instant closed-book multiple-choice factual retrieval
- * 3. Vocab Cards (5–8 Terms) — Interactive 3D flip-cards for disciplinary terminology
- * 4. Chrono Domino (3–5 Milestones) — Tap-to-order causal sequence & turning points challenge
- * 5. Exit Ticket — Rotating disciplinary synthesis (Golden Sentence / Causal Scale / Misconception / Hinge Verdict)
- * 6. Classroom Arena — Whole-class active plenaries (Hot Seat Taboo / Four Corners / 60s Standoff / Lightning Chain)
+ * Lesson Finish & Arcade Launchbar + Teacher Plenary Projector
+ *
+ * Streamlined replacement for the legacy 6-tab Check & Consolidate Hub:
+ * 1. ⚡ Quick 5 Check — Fast 5-question sampled retrieval wired directly to Spaced Repetition Weak Spots & XP.
+ * 2. 🕹️ Lesson Arcade Launchers — 1-click jump into Keyword Stack (Tetris), Redacted!, or all 7 Arcade games for this lesson.
+ * 3. 🔥 Teacher Plenary Projector — Full-screen smartboard theatre mode (Hot Seat Taboo, 60s Standoff, Four Corners) surfaced cleanly in Teacher Mode.
  */
 
 import { appStore } from './store.js';
-import { WORKBOOK_TIMELINE_DATA } from './workbook_timeline_data.js';
 import { getArenaStandoffPair } from './arena_standoff_registry.js';
 import { getArenaCornersData } from './arena_corners_registry.js';
+import { addXp, generateQuestionId, recordQuestionResult } from '../storage.js';
 
-// Global registry of active station states keyed by lessonId
 window.consolidateStations = window.consolidateStations || {};
 
-function formatMarkdown(str) {
-  if (!str) return '';
-  return str
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em>$1</em>');
-}
-
-function countWordsAndSentences(text) {
-  if (!text || !text.trim()) return { words: 0, sentences: 0 };
-  const words = text.trim().split(/\s+/).filter(Boolean).length;
-  const sentences = (text.match(/[^.!?]+[.!?]+(\s|$)/g) || []).length || (words > 0 ? 1 : 0);
-  return { words, sentences };
-}
+const ARENA_STOPWORDS = new Set([
+  'the', 'a', 'an', 'and', 'or', 'of', 'to', 'in', 'is', 'was', 'for', 'by', 'with',
+  'that', 'this', 'as', 'at', 'from', 'it', 'on', 'which', 'be', 'are', 'were', 'been',
+  'into', 'through', 'over', 'after', 'under', 'between', 'during', 'their', 'them',
+  'his', 'her', 'its', 'they', 'he', 'she', 'who', 'whom', 'whose', 'where', 'when',
+  'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such',
+  'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 'can', 'will',
+  'just', 'should', 'now', 'used', 'became', 'made', 'also', 'what', 'would', 'could',
+  'have', 'having', 'had', 'does', 'did', 'doing', 'shall', 'might',
+]);
 
 function truncateAtWord(text, maxChars = 140) {
   if (!text) return '';
-  const clean = text
+  const clean = String(text)
     .replace(/<[^>]+>/g, '')
     .replace(/\[\d+\.\d+\]/g, '')
     .replace(/\s+/g, ' ')
@@ -48,137 +38,46 @@ function truncateAtWord(text, maxChars = 140) {
   return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + '...';
 }
 
-function extractCleanSentence(text, maxChars = 280) {
-  if (!text) return '';
-  const clean = text
-    .replace(/<[^>]+>/g, '')
-    .replace(/\[\d+\.\d+\]/g, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-
-  // Temporarily protect decimals (e.g. 1.4 million, 1.5 million) and known abbreviations/initials
-  const protectedText = clean
-    .replace(/(\d)\.(\d)/g, '$1_DOT_$2')
-    .replace(/\b([A-Z])\.\s+/g, '$1_DOT_ ')
-    .replace(/\b(Mr|Mrs|Ms|Dr|St|Lt|Gen|Capt|Col|Prof|c|vs|etc|e\.g|i\.e)\.\s+/gi, (m, g1) => g1 + '_DOT_ ');
-
-  const match = protectedText.match(/^([^\.!\?]+[\.!\?])/);
-  if (match) {
-    let sentence = match[1].replace(/_DOT_/g, '.').trim();
-    if (sentence.length >= 50 && sentence.length <= maxChars) {
-      return sentence;
-    }
-    if (sentence.length < 50) {
-      const rest = protectedText.slice(match[0].length).trim();
-      const secondMatch = rest.match(/^([^\.!\?]+[\.!\?])/);
-      if (secondMatch) {
-        const full = (sentence + ' ' + secondMatch[1].replace(/_DOT_/g, '.')).trim();
-        if (full.length <= maxChars) return full;
-      }
-      return sentence;
-    }
-  }
-
-  // Fallback: If no period found or initial sentence is longer than maxChars, break cleanly at whole word
-  return truncateAtWord(clean, maxChars);
-}
-
-function extractSketchIdeas(lesson, date) {
-  const ideas = [];
-  if (lesson.causal_domino_spine && Array.isArray(lesson.causal_domino_spine.stages)) {
-    lesson.causal_domino_spine.stages.forEach((st) => {
-      if (st.tag && !ideas.includes(st.tag.trim())) {
-        ideas.push(st.tag.trim());
-      }
-    });
-  }
-  if (ideas.length < 3 && Array.isArray(lesson.margin_spine)) {
-    lesson.margin_spine.forEach((m) => {
-      if (m.label && ideas.length < 3 && !ideas.includes(m.label.trim())) {
-        ideas.push(m.label.trim());
-      }
-    });
-  }
-  if (ideas.length < 3 && Array.isArray(lesson.vocab)) {
-    lesson.vocab.forEach((v) => {
-      if (v.term && ideas.length < 3 && !ideas.includes(v.term.trim())) {
-        ideas.push(v.term.trim());
-      }
-    });
-  }
-  if (ideas.length === 0) {
-    ideas.push('👑 Sovereign symbol / Crest', '📜 Official decree / Charter', '⚔️ Defining conflict emblem');
-  }
-  return ideas.slice(0, 3);
-}
-
-// =============================================================
-// CLASSROOM ARENA: CONSTANTS, VOCAB EXTRACTION & AUDIO ENGINE
-// =============================================================
-const ARENA_STOPWORDS = new Set([
-  'the', 'a', 'an', 'and', 'or', 'of', 'to', 'in', 'is', 'was', 'for', 'by', 'with',
-  'that', 'this', 'as', 'at', 'from', 'it', 'on', 'which', 'be', 'are', 'were', 'been',
-  'into', 'through', 'over', 'after', 'under', 'between', 'during', 'their', 'them',
-  'his', 'her', 'its', 'they', 'he', 'she', 'who', 'whom', 'whose', 'where', 'when',
-  'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such',
-  'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 'can', 'will',
-  'just', 'should', 'now', 'used', 'became', 'made', 'also', 'such', 'what', 'would',
-  'could', 'have', 'having', 'had', 'does', 'did', 'doing', 'shall', 'might'
-]);
-
 function extractTabooWords(term, definition) {
   const termWords = new Set(
-    (term || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean)
+    (term || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean),
   );
-
   const forbidden = new Set();
-
   const words = (definition || '')
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, '')
     .split(/\s+/)
-    .filter(w => w.length > 3 && !ARENA_STOPWORDS.has(w) && !termWords.has(w));
+    .filter((w) => w.length > 3 && !ARENA_STOPWORDS.has(w) && !termWords.has(w));
 
   for (const w of words) {
-    if (!forbidden.has(w)) {
-      forbidden.add(w);
-      if (forbidden.size >= 3) break;
-    }
+    forbidden.add(w);
+    if (forbidden.size >= 3) break;
   }
 
-  const result = [...forbidden].slice(0, 3).map(w => w.toUpperCase());
-  if (result.length < 3) {
-    const fallbacks = ['HISTORICAL', 'KEY_CONCEPT', 'DEFINITION'];
-    while (result.length < 3) {
-      result.push(fallbacks[result.length]);
-    }
+  const result = [...forbidden].slice(0, 3).map((w) => w.toUpperCase());
+  const fallbacks = ['HISTORICAL', 'CONCEPT', 'EVIDENCE'];
+  while (result.length < 3) {
+    result.push(fallbacks[result.length]);
   }
   return result;
 }
 
 let arenaAudioCtx = null;
-function getArenaAudioContext() {
-  if (!arenaAudioCtx) {
-    const AudioCtx = window.AudioContext || window.webkitAudioContext;
-    if (AudioCtx) arenaAudioCtx = new AudioCtx();
-  }
-  if (arenaAudioCtx && arenaAudioCtx.state === 'suspended') {
-    arenaAudioCtx.resume();
-  }
-  return arenaAudioCtx;
-}
-
 function playArenaSound(type) {
   try {
-    const ctx = getArenaAudioContext();
-    if (!ctx) return;
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!arenaAudioCtx && AudioCtx) arenaAudioCtx = new AudioCtx();
+    if (!arenaAudioCtx) return;
+    if (arenaAudioCtx.state === 'suspended') arenaAudioCtx.resume();
+    const ctx = arenaAudioCtx;
     const now = ctx.currentTime;
 
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
     if (type === 'tick') {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.connect(gain);
-      gain.connect(ctx.destination);
       osc.type = 'sine';
       osc.frequency.setValueAtTime(800, now);
       osc.frequency.exponentialRampToValueAtTime(400, now + 0.04);
@@ -187,148 +86,138 @@ function playArenaSound(type) {
       osc.start(now);
       osc.stop(now + 0.04);
     } else if (type === 'buzzer') {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.connect(gain);
-      gain.connect(ctx.destination);
       osc.type = 'sawtooth';
       osc.frequency.setValueAtTime(160, now);
       osc.frequency.setValueAtTime(120, now + 0.15);
-      gain.gain.setValueAtTime(0.35, now);
+      gain.gain.setValueAtTime(0.32, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
       osc.start(now);
       osc.stop(now + 0.45);
     } else if (type === 'ding') {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.connect(gain);
-      gain.connect(ctx.destination);
       osc.type = 'sine';
       osc.frequency.setValueAtTime(880, now);
       osc.frequency.exponentialRampToValueAtTime(1760, now + 0.15);
-      gain.gain.setValueAtTime(0.25, now);
+      gain.gain.setValueAtTime(0.24, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
       osc.start(now);
       osc.stop(now + 0.3);
     } else if (type === 'pass') {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.connect(gain);
-      gain.connect(ctx.destination);
       osc.type = 'triangle';
       osc.frequency.setValueAtTime(440, now);
       osc.frequency.exponentialRampToValueAtTime(300, now + 0.12);
-      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.setValueAtTime(0.18, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
       osc.start(now);
       osc.stop(now + 0.12);
-    } else if (type === 'fanfare') {
-      const notes = [523.25, 659.25, 783.99, 1046.50];
-      notes.forEach((freq, idx) => {
-        const noteOsc = ctx.createOscillator();
-        const noteGain = ctx.createGain();
-        noteOsc.type = 'triangle';
-        noteOsc.frequency.setValueAtTime(freq, now + idx * 0.09);
-        noteGain.gain.setValueAtTime(0.2, now + idx * 0.09);
-        noteGain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.09 + 0.4);
-        noteOsc.connect(noteGain);
-        noteGain.connect(ctx.destination);
-        noteOsc.start(now + idx * 0.09);
-        noteOsc.stop(now + idx * 0.09 + 0.4);
-      });
     }
-  } catch (e) { }
+  } catch (e) {}
+}
+
+function normalizeQuestions(rawList, unitId, lessonTitle) {
+  if (!Array.isArray(rawList)) return [];
+  return rawList
+    .map((q) => {
+      let options = q.options ? [...q.options] : [];
+      let correctIdx = -1;
+      const rawAns = q.answer !== undefined ? q.answer : q.a;
+      if (typeof rawAns === 'number') {
+        correctIdx = rawAns;
+      } else if (typeof rawAns === 'string') {
+        correctIdx = options.findIndex(
+          (opt) => opt.trim().toLowerCase() === rawAns.trim().toLowerCase(),
+        );
+        if (correctIdx === -1 && options.length === 0 && q.distractors) {
+          options = [rawAns, ...q.distractors].sort(() => Math.random() - 0.5);
+          correctIdx = options.indexOf(rawAns);
+        }
+      }
+      const qText = q.question || q.q || '';
+      const safeIdx = correctIdx >= 0 ? correctIdx : 0;
+      const ansText = options[safeIdx] || (typeof rawAns === 'string' ? rawAns : '');
+      return {
+        id: generateQuestionId(unitId, lessonTitle, qText),
+        q: qText,
+        a: ansText,
+        options,
+        answer: safeIdx,
+        source: lessonTitle,
+        explanation: q.explanation || q.historian_explanation || '',
+      };
+    })
+    .filter((q) => q.q && q.options.length >= 2);
+}
+
+function sampleQuickFive(allQuestions) {
+  const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, Math.min(5, shuffled.length));
 }
 
 function extractClassroomArenaData(lesson, currentIdx, lessonsList, unitId) {
-  // 1. Hot Seat Cumulative Vocabulary
   const cumulativeDeck = [];
   const todayDeck = [];
 
   lessonsList.slice(0, currentIdx + 1).forEach((l, lIdx) => {
     const isToday = lIdx === currentIdx;
-    (l.vocab || []).forEach(v => {
-      const taboo = extractTabooWords(v.term, v.definition || '');
+    (l.vocab || []).forEach((v) => {
+      const def = v.definition || v.def || '';
       const card = {
         term: v.term,
-        tabooWords: taboo,
-        definition: v.definition || '',
-        syllables: v.syllables || '',
+        tabooWords: extractTabooWords(v.term, def),
+        definition: def,
         origin: isToday ? "Today's Lesson" : `Lesson ${lIdx + 1}: ${truncateAtWord(l.title || '', 28)}`,
-        isToday
+        isToday,
       };
       cumulativeDeck.push(card);
       if (isToday) todayDeck.push(card);
     });
   });
 
-  // Fallback if no vocab found
   if (cumulativeDeck.length === 0) {
-    const terms = [
+    [
       { term: 'Sovereignty', def: 'Supreme independent power and authority over a territory and its people.' },
-      { term: 'Chronology', def: 'The arrangement of events or dates in the exact order of their occurrence.' },
-      { term: 'Hierarchy', def: 'A system in which members of an organization or society are ranked according to status or authority.' },
-      { term: 'Causation', def: 'The relationship between cause and consequence, demonstrating why historical events developed.' }
-    ];
-    terms.forEach(t => {
-      const taboo = extractTabooWords(t.term, t.def);
-      const card = { term: t.term, tabooWords: taboo, definition: t.def, origin: "Today's Lesson", isToday: true };
+      { term: 'Causation', def: 'The relationship between cause and consequence in historical events.' },
+    ].forEach((t) => {
+      const card = {
+        term: t.term,
+        tabooWords: extractTabooWords(t.term, t.def),
+        definition: t.def,
+        origin: "Today's Lesson",
+        isToday: true,
+      };
       cumulativeDeck.push(card);
       todayDeck.push(card);
     });
   }
 
-  // 2. Four Corners — Evaluative Enquiry Debate
-  // Uses curated registry or smart causal engine to ensure a genuine question and competing causal claims
   const cornersData = getArenaCornersData(unitId, lesson.id, lesson);
-  const cleanEnquiry = cornersData.enquiry;
-  const cornerItems = cornersData.cornerItems;
-
-  // 3. 60s Standoff — High-Impact Historical Shoulder-Partner Duel
-  // Driven by curated ARENA_STANDOFF_REGISTRY (or academic causal/historiographical fallback)
   const standoffPair = getArenaStandoffPair(unitId, lesson.id, lesson);
-
-  // 4. Quick Facts Lifeline for Lightning Chain
-  const stages = lesson.causal_domino_spine?.stages || [];
-  const quickFacts = [];
-  stages.forEach(s => {
-    if (s.date && s.title) quickFacts.push(`${s.date}: ${s.title}`);
-  });
-  (lesson.vocab || []).forEach(v => {
-    if (quickFacts.length < 8) quickFacts.push(`Key Term: ${v.term}`);
-  });
 
   return {
     cumulativeDeck,
     todayDeck,
-    enquiry: cleanEnquiry,
-    cornerItems,
+    enquiry: cornersData.enquiry,
+    cornerItems: cornersData.cornerItems,
     standoffPair,
-    quickFacts
   };
 }
 
 function clearAllArenaTimers(state) {
   if (!state || !state.arena) return;
   const a = state.arena;
-  ['taboo', 'corners', 'standoff', 'lightning'].forEach(key => {
-    const intervalKey = `${key}TimerInterval`;
-    if (a[intervalKey]) {
-      clearInterval(a[intervalKey]);
-      a[intervalKey] = null;
+  ['taboo', 'corners', 'standoff'].forEach((key) => {
+    if (a[`${key}TimerInterval`]) {
+      clearInterval(a[`${key}TimerInterval`]);
+      a[`${key}TimerInterval`] = null;
     }
     a[`${key}TimerRunning`] = false;
   });
 }
 
-function stopAllArenaTimers(state) {
+function closeProjectorPortal(state) {
   clearAllArenaTimers(state);
-  if (state && state.arena) {
-    state.arena.isWhiteboardMode = false;
-  }
+  if (state && state.arena) state.arena.isProjectorOpen = false;
   if (typeof document !== 'undefined') {
-    const portal = document.getElementById('arena-projector-portal');
-    if (portal) portal.remove();
+    document.getElementById('arena-projector-portal')?.remove();
   }
   if (typeof window !== 'undefined' && window._arenaEscKeyHandler) {
     window.removeEventListener('keydown', window._arenaEscKeyHandler);
@@ -336,711 +225,86 @@ function stopAllArenaTimers(state) {
   }
 }
 
-function tickArenaTimer(lessonId, gameKey, totalDuration) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  const a = state.arena;
-  const timeKey = `${gameKey}TimerSeconds`;
-  const intervalKey = `${gameKey}TimerInterval`;
-  const runningKey = `${gameKey}TimerRunning`;
-
-  if (a[timeKey] > 0) {
-    a[timeKey]--;
-
-    // Play tick in final 5 seconds
-    if (a.soundEnabled && a[timeKey] <= 5 && a[timeKey] > 0) {
-      playArenaSound('tick');
-    }
-
-    // Standoff 30s phase switch
-    if (gameKey === 'standoff') {
-      if (a[timeKey] <= 30 && a.standoffPhase === 'roleA') {
-        a.standoffPhase = 'roleB';
-        if (a.soundEnabled) playArenaSound('ding');
-      }
-    }
-
-    if (a[timeKey] === 0) {
-      clearInterval(a[intervalKey]);
-      a[intervalKey] = null;
-      a[runningKey] = false;
-      if (a.soundEnabled) {
-        if (gameKey === 'lightning' && a.seatedCount >= a.targetStudents) {
-          playArenaSound('fanfare');
-        } else {
-          playArenaSound('buzzer');
-        }
-      }
-    }
-
-    updateArenaTimerDOM(lessonId, gameKey);
-  }
-}
-
-function updateArenaTimerDOM(lessonId, gameKey) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  const a = state.arena;
-  const seconds = a[`${gameKey}TimerSeconds`];
-  const isRunning = a[`${gameKey}TimerRunning`];
-
-  const mins = Math.floor(seconds / 60);
-  const secs = seconds % 60;
-  const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-
-  const timeDisplay = document.getElementById(`arena-timer-val-${gameKey}-${lessonId}`);
-  if (timeDisplay) {
-    timeDisplay.textContent = timeStr;
-    if (seconds <= 5 && seconds > 0) {
-      timeDisplay.style.color = '#ef4444';
-    } else if (seconds === 0) {
-      timeDisplay.style.color = '#dc2626';
-    } else {
-      timeDisplay.style.color = a.isWhiteboardMode ? '#f8fafc' : '#0f172a';
-    }
-  }
-
-  const startBtn = document.getElementById(`arena-timer-start-${gameKey}-${lessonId}`);
-  if (startBtn) {
-    if (isRunning) {
-      startBtn.innerHTML = '<i class="fa-solid fa-pause"></i> Pause';
-      startBtn.setAttribute('onclick', `window.pauseArenaTimer('${lessonId}', '${gameKey}')`);
-      startBtn.style.background = '#f59e0b';
-    } else {
-      startBtn.innerHTML = '<i class="fa-solid fa-play"></i> Start';
-      const defaultDuration = gameKey === 'lightning' ? 90 : 60;
-      startBtn.setAttribute('onclick', `window.startArenaTimer('${lessonId}', '${gameKey}', ${defaultDuration})`);
-      startBtn.style.background = '#10b981';
-    }
-  }
-
-  if (gameKey === 'standoff') {
-    const phaseBadge = document.getElementById(`standoff-phase-badge-${lessonId}`);
-    const isHistoriographical = state.arenaData?.standoffPair?.category === 'historiographical';
-    const isKs2Standoff = Boolean(state.isKs2 || state.unitId === 'ks2_ww2');
-    if (phaseBadge) {
-      if (a.standoffPhase === 'roleA') {
-        const p1Lbl = isHistoriographical ? (isKs2Standoff ? 'Viewpoint 1' : 'Interpretation') : 'Defending';
-        phaseBadge.innerHTML = `<span style="background: #2563eb; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${p1Lbl} (30s)</span>`;
-      } else {
-        const p2Lbl = isHistoriographical ? (isKs2Standoff ? 'Viewpoint 2' : 'Counter-View') : 'Rebutting';
-        phaseBadge.innerHTML = `<span style="background: #dc2626; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${p2Lbl} (30s)</span>`;
-      }
-    }
-    const cardA = document.getElementById(`standoff-card-a-${lessonId}`);
-    const cardB = document.getElementById(`standoff-card-b-${lessonId}`);
-    if (cardA && cardB) {
-      if (a.standoffPhase === 'roleA') {
-        cardA.style.borderColor = '#2563eb';
-        cardA.style.boxShadow = '0 0 0 3px rgba(37,99,235,0.3)';
-        cardA.style.opacity = '1';
-        cardB.style.borderColor = a.isWhiteboardMode ? '#334155' : '#cbd5e1';
-        cardB.style.boxShadow = 'none';
-        cardB.style.opacity = '0.7';
-      } else {
-        cardB.style.borderColor = '#dc2626';
-        cardB.style.boxShadow = '0 0 0 3px rgba(220,38,38,0.3)';
-        cardB.style.opacity = '1';
-        cardA.style.borderColor = a.isWhiteboardMode ? '#334155' : '#cbd5e1';
-        cardA.style.boxShadow = 'none';
-        cardA.style.opacity = '0.7';
-      }
-    }
-  }
-}
-
-function normalizeQuestions(rawList) {
-  if (!Array.isArray(rawList)) return [];
-  return rawList.map((q) => {
-    let options = q.options ? [...q.options] : [];
-    let correctIdx = -1;
-    const rawAns = q.answer !== undefined ? q.answer : q.a;
-    if (typeof rawAns === 'number') {
-      correctIdx = rawAns;
-    } else if (typeof rawAns === 'string') {
-      correctIdx = options.findIndex(
-        (opt) => opt.trim().toLowerCase() === rawAns.trim().toLowerCase()
-      );
-      if (correctIdx === -1 && options.length === 0 && q.distractors) {
-        options = [rawAns, ...q.distractors].sort(() => Math.random() - 0.5);
-        correctIdx = options.indexOf(rawAns);
-      }
-    }
-    return {
-      q: q.question || q.q || '',
-      options,
-      answer: correctIdx >= 0 ? correctIdx : 0,
-      explanation: q.explanation || q.historian_explanation || ''
-    };
-  });
-}
-
-function normalizeVocab(rawVocab) {
-  if (!Array.isArray(rawVocab)) return [];
-  return rawVocab.map((v) => ({
-    term: v.term || v.word || '',
-    definition: v.definition || v.def || '',
-    syllables: v.syllables || '',
-    tier: v.tier || '2'
-  }));
-}
-
-function extractChronologyMilestones(lesson) {
-  if (!lesson) return [];
-
-  // 1. Causal domino spine stages (Universal 3-Act Causal Arc: Start, Turning Point, Climax)
-  if (
-    lesson.causal_domino_spine &&
-    Array.isArray(lesson.causal_domino_spine.stages) &&
-    lesson.causal_domino_spine.stages.length >= 3
-  ) {
-    const rawStages = lesson.causal_domino_spine.stages;
-    let selectedStages = [];
-    if (rawStages.length === 3) {
-      selectedStages = rawStages;
-    } else if (rawStages.length === 4) {
-      selectedStages = [rawStages[0], rawStages[1], rawStages[3]];
-    } else {
-      // 5 stages: Beginning (0), Turning Point (2), Climax/Legacy (4)
-      selectedStages = [rawStages[0], rawStages[2], rawStages[rawStages.length - 1]];
-    }
-
-    return selectedStages.map((s, idx) => {
-      const rawText = s.trigger || s.tag || s.therefore || '';
-      const fullSentence = extractCleanSentence(rawText, 260) || rawText.replace(/<[^>]+>/g, '').replace(/\[\d+\.\d+\]/g, '').trim();
-      return {
-        originalIndex: idx,
-        date: s.date || `Turning Point ${idx + 1}`,
-        title: s.title || `Turning Point ${idx + 1}`,
-        detail: fullSentence
-      };
-    });
-  }
-
-  // 2. Margin spine (3-item arc)
-  if (Array.isArray(lesson.margin_spine) && lesson.margin_spine.length >= 3) {
-    const rawMargin = lesson.margin_spine;
-    let selectedMargin = [];
-    if (rawMargin.length === 3) {
-      selectedMargin = rawMargin;
-    } else {
-      selectedMargin = [rawMargin[0], rawMargin[Math.floor(rawMargin.length / 2)], rawMargin[rawMargin.length - 1]];
-    }
-    return selectedMargin.map((m, idx) => {
-      const rawText = m.desc || m.label || '';
-      const fullSentence = extractCleanSentence(rawText, 260) || rawText.replace(/<[^>]+>/g, '').trim();
-      return {
-        originalIndex: idx,
-        date: m.year || `Point ${idx + 1}`,
-        title: m.label || `Milestone ${idx + 1}`,
-        detail: fullSentence
-      };
-    });
-  }
-
-  // 3. Narrative blocks (3-item arc)
-  const blocks = lesson.narrative_blocks || lesson.blocks || [];
-  if (Array.isArray(blocks) && blocks.length >= 3) {
-    let selectedBlocks = [];
-    if (blocks.length === 3) {
-      selectedBlocks = blocks;
-    } else {
-      selectedBlocks = [blocks[0], blocks[Math.floor(blocks.length / 2)], blocks[blocks.length - 1]];
-    }
-    return selectedBlocks.map((b, idx) => {
-      const dateMatch = (b.heading || b.title || '').match(/\b(1\d{3}|20\d{2}|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b[^\)]*/i);
-      const cleanTitle = (b.heading || b.title || `Stage ${idx + 1}`)
-        .replace(/^\[?\d+\.\d+\]?\s*/, '')
-        .replace(/\([^\)]+\)/, '')
-        .trim();
-      const rawText = (b.text || '').replace(/<[^>]+>/g, '').replace(/\[\d+\.\d+\]/, '').trim();
-      const fullSentence = extractCleanSentence(rawText, 260) || rawText.slice(0, 180);
-      return {
-        originalIndex: idx,
-        date: dateMatch ? dateMatch[0].trim() : `Phase ${idx + 1}`,
-        title: cleanTitle,
-        detail: fullSentence
-      };
-    });
-  }
-
-  return [];
-}
-
-function shuffleDominoMilestones(milestones) {
-  if (!milestones || milestones.length <= 1) return [...(milestones || [])];
-  const copy = [...milestones];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  // Guarantee milestones do not start in exact pre-solved chronological order
-  if (copy.length >= 2 && copy.every((m, idx) => m.originalIndex === idx)) {
-    const tmp = copy[0];
-    copy[0] = copy[1];
-    copy[1] = tmp;
-  }
-  return copy;
-}
-
-function getDominoDisplayTitle(title, showDates) {
-  if (!title) return '';
-  if (showDates) return title;
-  const stripped = title
-    // Strip parenthetical dates like (1949), (June 1967), (1978–1979)
-    .replace(/\(\s*(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s*)?(?:18|19|20)\d{2}(?:\s*[\u2013\u2014\-]\s*(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s*)?(?:18|19|20)?\d{2})?\s*\)/gi, '')
-    // Strip date ranges like 1948–1949
-    .replace(/\b(?:18|19|20)\d{2}\s*[\u2013\u2014\-]\s*(?:18|19|20)\d{2}\b/g, '')
-    // Strip standalone 4-digit years with leading or trailing space
-    .replace(/\b(?:18|19|20)\d{2}\s+/g, '')
-    .replace(/\s+\b(?:18|19|20)\d{2}\b/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
-  return stripped.length >= 3 ? stripped : title;
-}
-
-function extractLivingTimelineMilestone(lesson, lessonIndex = 0) {
-  if (!lesson) return null;
-
-  // 1. Check Canonical Master Workbook Timeline Registry (100% literal physical workbook sync)
-  const activeUnitId = appStore?.state?.activeUnitData?.id || '';
-  const unitMissions = WORKBOOK_TIMELINE_DATA[activeUnitId];
-  if (Array.isArray(unitMissions)) {
-    const matched = unitMissions.find(
-      (m) => (lesson.id && m.lessonId === lesson.id) || m.lessonIndex === lessonIndex
-    );
-    if (matched) {
-      return {
-        milestoneNum: lessonIndex + 1,
-        milestoneBadge: matched.milestoneBadge,
-        date: matched.date,
-        title: matched.title,
-        desc: matched.desc,
-        pageRef: matched.pageRef,
-        sketchPrompt: matched.sketchPrompt,
-        sketchIdeas: matched.sketchIdeas || [],
-        conceptTitle: matched.conceptTitle,
-        branches: matched.branches || [],
-        fullMissionText: matched.fullMissionText,
-        isWorkbookMission: true
-      };
-    }
-  }
-
-  // 2. Dynamic extraction fallback
-  let date = '';
-  let title = lesson.title || '';
-  let desc = '';
-
-  if (lesson.timeline_anchor && lesson.timeline_anchor.length > 0) {
-    const a = lesson.timeline_anchor[0];
-    date = a.year || a.date || '';
-    title = a.title || a.event || title;
-    desc = a.summary || a.desc || '';
-  } else if (lesson.margin_spine && lesson.margin_spine.length > 0) {
-    const m = lesson.margin_spine[0];
-    date = m.year || '';
-    title = m.label || title;
-    desc = m.desc || '';
-  } else if (
-    lesson.causal_domino_spine &&
-    lesson.causal_domino_spine.stages &&
-    lesson.causal_domino_spine.stages.length > 0
-  ) {
-    const s = lesson.causal_domino_spine.stages[0];
-    date = s.date || '';
-    title = s.title || title;
-    desc = s.trigger || '';
-  }
-
-  if (!date) {
-    const dateM = (lesson.title || '').match(/\b(1\d{3}|20\d{2}|c\.\s*1\d{3}[–\-0-9\s]*)\b/);
-    if (dateM) date = dateM[0];
-  }
-
-  if (!desc && lesson.narrative_blocks && lesson.narrative_blocks.length > 0) {
-    desc = extractCleanSentence(lesson.narrative_blocks[0].text, 280);
-  }
-
-  const cleanTitle = title.replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '').trim();
-  const vocabTerms = (lesson.vocab || []).slice(0, 3).map((v) => v.term);
-  const cleanEnquiry = (lesson.enquiryQuestion || lesson.enquiry || lesson.title || '')
-    .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
-    .trim();
-
-  const sketchIdeas = extractSketchIdeas(lesson, date);
-  const enquirySnippet = truncateAtWord(cleanEnquiry, 140);
-
-  const branches = [
-    { label: 'Date & Anchor', value: date || 'Key Turning Point' },
-    { label: 'Key Concept', value: vocabTerms[0] || 'Historical Mechanism' },
-    { label: 'Enquiry Synthesis', value: enquirySnippet }
-  ];
-
-  return {
-    milestoneNum: lessonIndex + 1,
-    date: date || 'Key Milestone',
-    title: cleanTitle,
-    desc: desc || `Chronological milestone for Lesson ${lessonIndex + 1}.`,
-    sketchIdeas,
-    branches,
-    vocabTerms
-  };
-}
-
-function extractExitTicket(lesson, lessonIndex = 0) {
-  if (!lesson) return null;
-
-  // 1. Handcrafted Exit Ticket object (e.g. in Conflict in the Middle East)
-  if (lesson.exit_ticket) {
-    return {
-      title: lesson.exit_ticket.title || 'Exit Ticket · Lesson Closure',
-      type_label: lesson.exit_ticket.type_label || 'Exit Ticket',
-      prompt: lesson.exit_ticket.prompt || '',
-      options: lesson.exit_ticket.options || [],
-      guidance: lesson.exit_ticket.guidance || '',
-      model: lesson.exit_ticket.model || lesson.exit_ticket.exemplar || 'A high-level response includes precise statistics, named historical individuals, and clear analytical causal links.'
-    };
-  }
-
-  // 2. Dedicated consolidation string
-  if (typeof lesson.consolidation === 'string' && lesson.consolidation.trim().length > 0) {
-    return {
-      title: 'Exit Ticket · Evaluative Verdict',
-      type_label: 'Exit Ticket · Evaluative Verdict',
-      prompt: lesson.consolidation,
-      options: [
-        'State your clear, definitive historical verdict.',
-        'Support your claim with one piece of precise evidence from today\'s lesson.',
-        'Explain the long-term historical significance.'
-      ],
-      guidance: 'Write your concise historical verdict in 1–2 sentences.',
-      model: 'An exemplary verdict states a nuanced historical judgment supported by concrete dates and named figures.'
-    };
-  }
-
-  const enquiry = lesson.enquiryQuestion || lesson.enquiry_question || lesson.enquiry || lesson.title || '';
-  const cleanEnquiry = enquiry.replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '').trim();
-
-  let hingeQ = '';
-  if (lesson.teacher_notes && Array.isArray(lesson.teacher_notes.objectives)) {
-    const objWithQ = lesson.teacher_notes.objectives.find((o) => o.question);
-    if (objWithQ) hingeQ = objWithQ.question;
-  }
-
-  const vocabList = (lesson.vocab || []).slice(0, 3).map((v) => v.term).join(', ') || 'today\'s key terms';
-
-  const activeUnit = appStore?.state?.activeUnitData;
-  const activeUnitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
-  const isKs2 = activeUnitId === 'ks2_ww2' || (activeUnit && activeUnit.stage === 'ks2') || Boolean(lesson && lesson.is_ks2);
-
-  // Dedicated KS2 Primary Exit Ticket Engine (Tailored 1:1 to each of the 11 WW2 Enquiries, Years 5–6 Accessible)
-  if (isKs2) {
-    const ks2ExitMap = {
-      lesson_1: {
-        title: 'Exit Ticket · Sentence Builder',
-        type_label: 'Exit Ticket · Sentence Builder',
-        prompt: `Finish this sentence in your own words to answer today's Big Question:<br><div style="margin-top:10px;padding:12px 16px;background:#eff6ff;border-left:4px solid #3b82f6;border-radius:6px;font-size:1.05rem;font-weight:700;color:#1e3a8a;">&ldquo;In September 1939, ordinary British families prepared for war by...&rdquo;</div>`,
-        options: [
-          `Word Helper: Use at least two key words from today (${vocabList}).`,
-          'Fact Check: Include a true detail such as 38 million gas masks, 1 September Blackout, or ARP wardens.'
-        ],
-        guidance: 'Write 1–2 clear sentences in your own words.',
-        model: `Model Answer: "In September 1939, ordinary British families prepared for war by carrying one of 38 million gas masks in cardboard boxes and hanging thick blackout curtains over every window so enemy bombers could not spot towns from above."`,
-        placeholder: 'In September 1939, ordinary British families prepared for war by...'
-      },
-      lesson_2: {
-        title: 'Exit Ticket · Postcard from the Countryside',
-        type_label: 'Exit Ticket · Evacuee Postcard',
-        prompt: `Imagine you are an evacuee child who has just arrived in a country village on <strong>Operation Pied Piper</strong>. Write a 2-sentence postcard home to your family in the city.`,
-        options: [
-          'What happened: Mention your cardboard luggage label, the train journey, or the Billeting Officer.',
-          'How you feel: Share one exciting country sight and one thing you miss about home.'
-        ],
-        guidance: 'Write 2 clear sentences as an evacuee child in September 1939.',
-        model: `Model Answer: "Dear Mum and Dad, After a long train ride with my luggage label pinned to my coat, the Billeting Officer found me a kind host family on a Devon farm. Seeing real pigs and green fields is exciting, even though I miss you both terribly!"`,
-        placeholder: 'Dear Mum and Dad, Today I arrived in the countryside...'
-      },
-      lesson_3: {
-        title: 'Exit Ticket · 3-2-1 History Check',
-        type_label: 'Exit Ticket · 3-2-1 Recall',
-        prompt: `Complete this quick 3-2-1 check on <strong>Pre-War Jewish Life &amp; Rights Lost (1933–1938)</strong>:`,
-        options: [
-          '3 Facts: Name one normal pre-war detail (e.g. Schultüte, football teams) and two unfair Nazi rules.',
-          `2 Words: Use two key words from today (${vocabList}).`,
-          '1 Thought: Explain why losing rights step by step made life harder and harder for Jewish children.'
-        ],
-        guidance: 'Write short sentences or clear bullet points.',
-        model: `Model Answer: "Before 1933, Jewish children in Germany played in football teams and carried Schultüte sweet cones on their first day of school. After 1933, over 400 Nazi laws stripped away their civil rights step by step until Jewish pupils were banned from all state schools in November 1938."`,
-        placeholder: 'Before 1933, Jewish children... After 1933, unfair laws...'
-      },
-      lesson_4: {
-        title: "Exit Ticket · Vera's Suitcase Reflection",
-        type_label: 'Exit Ticket · Historical Empathy',
-        prompt: `Explain in 2 sentences how the <strong>Kindertransport</strong> rescued nine-year-old Vera Löwyová, and why the journey was both hopeful and sad.`,
-        options: [
-          'Key Facts: Mention nearly 10,000 children, one small suitcase, £50 sponsors, or Liverpool Street Station.',
-          'Both Sides: Explain why Vera was safe in England, yet heartbroken at Prague station.'
-        ],
-        guidance: "Write 2 clear sentences using true facts from Vera's story.",
-        model: `Model Answer: "The Kindertransport rescued nearly 10,000 unaccompanied refugee children like nine-year-old Vera, who travelled from Prague to Liverpool Street Station with just one small suitcase and her porcelain doll. It was hopeful because British foster families kept her safe, yet heartbreaking because parents were not allowed to come too."`,
-        placeholder: 'The Kindertransport rescued children like Vera by...'
-      },
-      lesson_5: {
-        title: 'Exit Ticket · Upstander vs Bystander',
-        type_label: 'Exit Ticket · Upstander Check',
-        prompt: `Finish this explanation in 2 sentences:<br><div style="margin-top:10px;padding:12px 16px;background:#eff6ff;border-left:4px solid #3b82f6;border-radius:6px;font-size:1.05rem;font-weight:700;color:#1e3a8a;">&ldquo;Nicholas Winton, Doreen Warriner, and Trevor Chadwick were upstanders rather than bystanders because...&rdquo;</div>`,
-        options: [
-          'Teamwork: Mention cancelling the Swiss skiing trip, working in Prague and London, or finding £50 sponsors.',
-          'Impact: State how many children their rescue trains saved before 1 September 1939.'
-        ],
-        guidance: 'Write 2 clear sentences explaining how their rescue chain worked.',
-        model: `Model Answer: "Nicholas Winton, Doreen Warriner, and Trevor Chadwick were upstanders because instead of looking away, they teamed up across Prague and London to organise visas, trains, and British foster sponsors. Together their eight rescue trains saved 669 children before war closed the borders."`,
-        placeholder: 'They were upstanders rather than bystanders because...'
-      },
-      lesson_6: {
-        title: 'Exit Ticket · Fact Detective (Myth Buster)',
-        type_label: 'Exit Ticket · Fact Detective',
-        prompt: `A pupil claimed: <em>&ldquo;During the Blitz, everyone in Britain hid inside the exact same type of shelter and nobody stayed above ground.&rdquo;</em><br><br>Why is this statement <strong>untrue</strong>?`,
-        options: [
-          'Different Shelters: Compare garden Anderson shelters, indoor Morrison table cages, and London Tube platforms.',
-          'Above Ground: Name one group of brave volunteers working outside during air raids (e.g. AFS firefighters, firewatchers, WVS).'
-        ],
-        guidance: 'Write 2 sentences correcting the mistake with real evidence.',
-        model: `Model Answer: "Families used different shelters depending on where they lived: families with gardens dug Anderson shelters three feet deep, families without gardens slept in steel Morrison table shelters, and 150,000 Londoners used Tube platforms. Meanwhile, brave AFS firefighters and rooftop firewatchers risked their lives above ground."`,
-        placeholder: 'This claim is untrue because during the Blitz...'
-      },
-      lesson_7: {
-        title: 'Exit Ticket · Fair Shares Challenge',
-        type_label: 'Exit Ticket · Sentence Builder',
-        prompt: `Explain in 2 sentences why Britain introduced <strong>ration books</strong> in January 1940 and how <strong>Dig for Victory</strong> helped keep children healthy.`,
-        options: [
-          'Why Rationing Started: Mention over 70% imported food and German U-boat submarines in the Atlantic.',
-          'Staying Fed: Mention coupons (e.g. one fresh egg a week), allotments, Potato Pete, or Lord Woolton Pie.'
-        ],
-        guidance: 'Write 2 clear sentences showing cause and effect.',
-        model: `Model Answer: "Because German U-boats attacked merchant ships bringing over 70% of Britain's food, the government introduced ration books so rich and poor families received fair shares such as one fresh egg a week. Families also dug 1.4 million 'Dig for Victory' vegetable allotments, helping British children grow taller and healthier!"`,
-        placeholder: 'Britain introduced ration books in January 1940 because...'
-      },
-      lesson_8: {
-        title: 'Exit Ticket · Fact Detective (Women at War)',
-        type_label: 'Exit Ticket · Fact Detective',
-        prompt: `Someone claimed: <em>&ldquo;Women only did quiet indoor jobs during World War II.&rdquo;</em><br><br>Prove this claim wrong using <strong>two examples</strong> from today's enquiry!`,
-        options: [
-          'Farms & Forests: Mention the 80,000 Land Girls or the Lumberjills felling forest timber.',
-          'Factories & Skies: Mention Canary Girls packing explosive shells or the 168 ATA women pilots flying Spitfires.'
-        ],
-        guidance: 'Write 2 clear sentences packed with specific wartime roles.',
-        model: `Model Answer: "This claim is completely wrong because after female conscription began in December 1941, over 80,000 Land Girls ploughed fields and Lumberjills felled heavy forest trees. Nearly a million 'Canary Girls' packed dangerous TNT shells, while 168 female ATA pilots flew brand-new Spitfires and bombers to RAF airfields."`,
-        placeholder: 'This claim is wrong because women worked in tough, vital roles such as...'
-      },
-      lesson_9: {
-        title: 'Exit Ticket · Station X Top-Secret Summary',
-        type_label: 'Exit Ticket · Codebreaker Check',
-        prompt: `Write a 2-sentence summary explaining how the secret team at <strong>Bletchley Park</strong> helped shorten World War II.`,
-        options: [
-          "Machines: Mention the German Enigma machine and Alan Turing's Bombe (or Colossus).",
-          'People & Secrecy: Mention that around 75% (7,500) of the 10,000 workers were women who kept silent for 30 years.'
-        ],
-        guidance: 'Write 2 clear sentences explaining both the machines and the people.',
-        model: `Model Answer: "At Bletchley Park ('Station X'), Alan Turing's Bombe machines and 10,000 secret staff — around 75% of whom were women — cracked Germany's daily Enigma codes. Their Ultra intelligence steered Allied ships away from U-boats and shortened the war by at least two years."`,
-        placeholder: 'At Bletchley Park, secret codebreakers helped shorten the war by...'
-      },
-      lesson_10: {
-        title: 'Exit Ticket · Joy and Sorrow on VE Day',
-        type_label: 'Exit Ticket · Historical Balance',
-        prompt: `Explain in 2 sentences why <strong>VE Day (8 May 1945)</strong> was a day of both joyful street parties and quiet sorrow, and how Britain remembers today.`,
-        options: [
-          'Celebration & Hardship: Contrast bunting and street parties with loved ones lost, 2 million bombed homes, and rationing until 1954.',
-          'Remembrance: Mention red poppies, the two-minute silence, The Cenotaph on Whitehall, or founding the NHS in 1948.'
-        ],
-        guidance: 'Write 2 thoughtful sentences.',
-        model: `Model Answer: "On VE Day (8 May 1945), neighbours hung bunting and held street parties because nearly six years of war in Europe had ended, yet many families mourned lost loved ones and faced over 2 million bombed homes. Today we wear red poppies and keep a two-minute silence at memorials like The Cenotaph to honour everyone from Britain and the Commonwealth who served."`,
-        placeholder: 'VE Day on 8 May 1945 brought both joy and sorrow because...'
-      },
-      lesson_11: {
-        title: 'Exit Ticket · Rebuilding Lives at Lake Windermere',
-        type_label: 'Exit Ticket · Sanctuary & Legacy',
-        prompt: `Explain in 2 sentences how the <strong>Calgarth Estate</strong> helped the 300 <strong>Windermere Children</strong> heal in 1945, and how they later thanked Britain.`,
-        options: [
-          'Arrival & Care: Mention the 10 RAF Short Stirling bombers from Prague, hiding bread under pillows, Dr Friedman, or shiny red bicycles.',
-          "Giving Back: Mention founding The '45 Aid Society in 1963 or sharing oral history memories with author Tom Palmer."
-        ],
-        guidance: 'Write 2 clear sentences connecting 1945 to their lifelong legacy.',
-        model: `Model Answer: "Flown from Prague to Cumbria aboard ten RAF Short Stirling bombers in August 1945, 300 orphaned child survivors healed at Calgarth Estate through patient care, English lessons, and shiny red bicycles. As adults, they founded The '45 Aid Society in 1963 to thank Britain and shared their memories so their story would never be forgotten."`,
-        placeholder: 'In August 1945, 300 child survivors healed beside Lake Windermere through...'
-      }
-    };
-    const lessonKey = (lesson && lesson.id) || `lesson_${lessonIndex + 1}`;
-    return ks2ExitMap[lessonKey] || ks2ExitMap.lesson_1;
-  }
-
-  const styleType = lessonIndex % 4;
-
-  if (styleType === 0) {
-    // Style 0: The Three-Tiered Golden Sentence (Disciplinary Syntax)
-    return {
-      title: 'Exit Ticket: The Three-Tiered Golden Sentence',
-      type_label: 'Exit Ticket · The Golden Sentence',
-      prompt: `Write **ONE single, grammatically sophisticated historical sentence** evaluating today's enquiry: <em>&ldquo;${cleanEnquiry}&rdquo;</em>. Your sentence MUST strictly include all three required ingredients:`,
-      options: [
-        'Ingredient 1 (Precise Evidence): Include one specific date, statistic, or named historical figure.',
-        `Ingredient 2 (Historical Concept): Incorporate at least one key vocabulary term from today\'s word bank [e.g. ${vocabList}].`,
-        'Ingredient 3 (Causal Conjunction): Connect cause and consequence using an analytical connective [e.g. consequently, provoked by, culminating in, or whereas].'
-      ],
-      guidance: 'Write exactly ONE sentence. Do not split your thought into multiple sentences.',
-      model: `Model Sentence: Provoked by rising tensions and key turning points, historical leaders enacted decisive measures [such as ${vocabList}], consequently transforming the political landscape forever.`
-    };
-  } else if (styleType === 1) {
-    // Style 1: The Causal Balance Scale (0 to 10 Historical Judgement)
-    return {
-      title: 'Exit Ticket: The Causal Balance Scale',
-      type_label: 'Exit Ticket · The Causal Balance Scale',
-      prompt: `How far do you agree with today's decisive historical claim? Rate your judgment on a scale of **0 (Completely Disagree)** to **10 (Completely Agree)**:<br><strong style="color: #1e3a8a;">&ldquo;${hingeQ || cleanEnquiry}&rdquo;</strong>`,
-      options: [
-        'Rating (0–10): State your numerical score clearly at the start of your response.',
-        'The Decisive Factor: Cite the single most convincing piece of historical evidence justifying your rating.',
-        'The Counter-Perspective: Acknowledge what an alternative historian might argue from the opposite viewpoint.'
-      ],
-      guidance: 'A nuanced Grade 8/9 judgment weighs both sides before giving a decisive score.',
-      model: `Score: 8/10. While opponents argued that alternative factors played a role, the decisive historical turning point was solidified by concrete evidence and institutional policy.`
-    };
-  } else if (styleType === 2) {
-    // Style 2: The Historical Misconception Check (Two Truths & A Fallacy)
-    return {
-      title: 'Exit Ticket: Spot the Misconception & Correct the Fallacy',
-      type_label: 'Exit Ticket · Misconception Check',
-      prompt: `A student in another class made this claim: <em>&ldquo;Historical changes in this era happened entirely overnight because of a single leader.&rdquo;</em><br>Identify what is flawed about this interpretation and write a **2-sentence historical correction** citing accurate evidence from today's lesson.`,
-      options: [
-        'Identify the Flaw: Explain why this common assumption oversimplifies the true historical cause.',
-        'Historical Correction: Cite specific economic, social, or political evidence from today proving how change really occurred.'
-      ],
-      guidance: 'Historians look for underlying causes rather than crediting single individuals in isolation.',
-      model: `Historical Correction: This claim overlooks the long-term structural and economic tensions that had built up over decades. Real change was driven by broader social friction and institutional pressures rather than a single sudden event.`
-    };
-  } else {
-    // Style 3: The Evaluative Historical Verdict (Hinge Question Synthesis)
-    return {
-      title: 'Exit Ticket: The Evaluative Historical Verdict',
-      type_label: 'Exit Ticket · Evaluative Verdict',
-      prompt: hingeQ
-        ? `Answer today's central Hinge Question before leaving class:<br><strong style="color: #1e3a8a; font-size: 1.1rem;">&ldquo;${hingeQ}&rdquo;</strong>`
-        : `In 2–3 sentences, evaluate today's core historical enquiry: <em>&ldquo;${cleanEnquiry}&rdquo;</em>.`,
-      options: [
-        'Criterion 1: State your direct, nuanced historical judgment.',
-        'Criterion 2: Cite two corroborating historical details from today\'s lesson.',
-        'Criterion 3: Conclude with the overarching long-term significance.'
-      ],
-      guidance: 'Synthesize your argument with precision before packing up.',
-      model: `Historian's Verdict: The evidence demonstrates that developments were primarily driven by systemic strategic priorities, establishing a decisive legal and political precedent for generations to follow.`
-    };
-  }
-}
-
 export function renderConsolidateStationHTML(lesson) {
   if (!lesson) return '';
   const rawQuiz = lesson.quiz || lesson.quick_quiz || lesson.quiz_questions || [];
   const rawVocab = lesson.vocab || [];
-  const milestones = extractChronologyMilestones(lesson);
+  if (rawQuiz.length === 0 && rawVocab.length === 0) return '';
 
-  const activeUnit = appStore.state.activeUnitData;
+  const activeUnit = appStore?.state?.activeUnitData;
   const lessonsList = (activeUnit && (activeUnit.lessons || activeUnit.subtopics)) || [];
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
-  const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
-  const isKs2 =
-    unitId === 'ks2_ww2' ||
-    String(unitId).toLowerCase().startsWith('ks2_') ||
-    Boolean(activeUnit && (activeUnit.is_ks2 || activeUnit.stage === 'ks2' || activeUnit.keyStage === 'KS2')) ||
-    Boolean(lesson && lesson.is_ks2);
+  const unitId =
+    (activeUnit && activeUnit.id) ||
+    (typeof window !== 'undefined' && window.currentUnitId) ||
+    '';
 
-  const livingTimeline = isKs2 ? null : extractLivingTimelineMilestone(lesson, currentIdx);
-  const exitTicket = extractExitTicket(lesson, currentIdx);
+  const quickCount = Math.min(5, rawQuiz.length);
+  const isTeacherOn =
+    typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active');
 
-  const quizCount = rawQuiz.length;
-  const vocabCount = rawVocab.length;
-  const dominoCount = milestones.length;
-  const hasTimeline = !isKs2 && Boolean(livingTimeline);
-  const hasExitTicket = Boolean(exitTicket);
-  const hasArena = (vocabCount > 0 || (lesson.causal_domino_spine && lesson.causal_domino_spine.stages && lesson.causal_domino_spine.stages.length > 0));
-
-  if (quizCount === 0 && vocabCount === 0 && dominoCount === 0 && !hasTimeline && !hasExitTicket && !hasArena) {
-    return '';
-  }
-
-  // Check saved score from localStorage
   let savedScoreBadge = '';
   try {
     const saved = localStorage.getItem('history_quiz_' + lesson.id);
     if (saved) {
       const s = JSON.parse(saved);
-      savedScoreBadge = `<span class="station-score-pill" title="Previous Best Score" style="background: #e0f2fe; color: #0369a1; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700;"><i class="fa-solid fa-circle-check"></i> Best: ${s.score}/${s.total} (${s.pct}%)</span>`;
+      savedScoreBadge = `<span class="station-score-pill" style="background:#dcfce7;color:#166534;border:1px solid #86efac;padding:2px 9px;border-radius:999px;font-size:0.75rem;font-weight:800;"><i class="fa-solid fa-circle-check"></i> Last: ${s.score}/${s.total}</span>`;
     }
-  } catch (e) { }
+  } catch (e) {}
 
   return `
-    <div class="phase-card no-print consolidate-station" id="consolidate-station-${lesson.id}" style="margin: 18px 0 24px 0; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05); overflow: hidden; max-width: 100%; box-sizing: border-box;">
-      <!-- Sleek 1-Click 6-Pill Launcher Masthead -->
-      <div id="station-masthead-${lesson.id}" style="background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-bottom: none; padding: 12px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-        <div onclick="window.toggleConsolidateStation('${lesson.id}', event)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.toggleConsolidateStation('${lesson.id}', event);}" title="Click to expand or collapse Check &amp; Consolidate Hub" style="display: flex; align-items: center; gap: 11px; cursor: pointer; user-select: none;">
-          <div style="width: 36px; height: 36px; border-radius: 9px; background: #eff6ff; border: 1.5px solid #bfdbfe; display: flex; align-items: center; justify-content: center; font-size: 1.12rem; color: #2563eb; flex-shrink: 0; box-shadow: 0 1px 4px rgba(37,99,235,0.1);">
-            🎯
+    <div class="phase-card no-print consolidate-station" id="consolidate-station-${lesson.id}" style="margin: 22px 0 26px 0; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 14px; box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06); overflow: hidden;">
+      <!-- High-Conversion Lesson Finish & Arcade Launchbar -->
+      <div id="station-masthead-${lesson.id}" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(56, 189, 248, 0.16); border: 1.5px solid rgba(56, 189, 248, 0.45); display: flex; align-items: center; justify-content: center; font-size: 1.15rem; color: #38bdf8; flex-shrink: 0;">
+            <i class="fa-solid fa-gamepad"></i>
           </div>
           <div>
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              <h3 style="margin: 0; color: #0f172a; font-size: 1.12rem; line-height: 1.2; font-family: 'Playfair Display', Georgia, serif; font-weight: 700;">
-                Check &amp; Consolidate Hub
+              <h3 style="margin: 0; color: #ffffff; font-size: 1.08rem; font-family: 'Outfit', 'Playfair Display', sans-serif; font-weight: 800;">
+                Quick Check &amp; Lesson Arcade
               </h3>
-              <i id="station-title-chevron-${lesson.id}" class="fa-solid fa-chevron-down" style="font-size: 0.74rem; color: #64748b; transition: transform 0.2s ease; transform: rotate(0deg);"></i>
               ${savedScoreBadge}
             </div>
-            <p style="margin: 2px 0 0 0; color: #64748b; font-size: 0.78rem; line-height: 1.25;">
-              <span id="station-status-hint-${lesson.id}">Select any activity tab to expand &bull; Plenary &amp; Retrieval</span>
+            <p style="margin: 2px 0 0 0; color: #94a3b8; font-size: 0.78rem;">
+              Lock in this enquiry with a 60-second Quick ${quickCount} check or jump straight into the Revision Arcade.
             </p>
           </div>
         </div>
 
-        <!-- 1-Click Mode Launcher Pills & Collapse Toggle -->
-        <div class="station-tabs" style="display: flex; align-items: center; gap: 5px; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 4px; border-radius: 10px; flex-wrap: wrap;">
-          ${hasTimeline ? `
-            <button type="button" class="station-tab-btn" data-mode="timeline" id="tab-btn-timeline-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'timeline', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-              <i class="fa-solid fa-map" data-default-color="#0284c7" data-active-color="#38bdf8" style="color: #0284c7;"></i> Living Timeline
+        <div style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
+          ${
+            quickCount > 0
+              ? `
+            <button type="button" id="tab-btn-quiz-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'quiz', event)" style="padding: 7px 13px; border-radius: 8px; border: 1.5px solid #60a5fa; background: #2563eb; color: #ffffff; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(37,99,235,0.35);">
+              <i class="fa-solid fa-bolt" style="color:#fde047;"></i> <span id="quick5-btn-lbl-${lesson.id}">Quick ${quickCount} Check</span>
             </button>
-          ` : ''}
-          ${quizCount > 0 ? `
-            <button type="button" class="station-tab-btn" data-mode="quiz" id="tab-btn-quiz-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'quiz', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-              <i class="fa-solid fa-circle-check" data-default-color="#2563eb" data-active-color="#60a5fa" style="color: #2563eb;"></i> Lesson Quiz (${quizCount})
-            </button>
-          ` : ''}
-          ${vocabCount > 0 ? `
-            <button type="button" class="station-tab-btn" data-mode="vocab" id="tab-btn-vocab-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'vocab', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-              <i class="fa-solid fa-layer-group" data-default-color="#10b981" data-active-color="#34d399" style="color: #10b981;"></i> Vocab Cards (${vocabCount})
-            </button>
-          ` : ''}
-          ${dominoCount > 0 ? `
-            <button type="button" class="station-tab-btn" data-mode="domino" id="tab-btn-domino-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'domino', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-              <i class="fa-solid fa-timeline" data-default-color="#8b5cf6" data-active-color="#a78bfa" style="color: #8b5cf6;"></i> Chrono Domino (${dominoCount})
-            </button>
-          ` : ''}
-          ${hasExitTicket ? `
-            <button type="button" class="station-tab-btn" data-mode="exit" id="tab-btn-exit-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'exit', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-              <i class="fa-solid fa-ticket" data-default-color="#f59e0b" data-active-color="#fbbf24" style="color: #f59e0b;"></i> Exit Ticket
-            </button>
-          ` : ''}
-          <button type="button" class="station-tab-btn" data-mode="arena" id="tab-btn-arena-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'arena', event)" style="padding: 5px 10px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #ffffff; color: #1e293b; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-            <i class="fa-solid fa-bolt" data-default-color="#f59e0b" data-active-color="#fbbf24" style="color: #f59e0b;"></i> Classroom Arena
+          `
+              : ''
+          }
+
+          <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIdx}, 'tetris')" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #10b981; background: rgba(16, 185, 129, 0.15); color: #6ee7b7; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <span>🧱</span> Keyword Stack
           </button>
-          <button type="button" id="station-collapse-btn-${lesson.id}" aria-expanded="false" title="Expand Check &amp; Consolidate Hub" onclick="window.toggleConsolidateStation('${lesson.id}', event)" style="padding: 5px 9px; border-radius: 7px; border: 1px solid #cbd5e1; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.18s ease; background: #e2e8f0; color: #334155;">
-            <span>Expand</span>
-            <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; transition: transform 0.2s ease; transform: rotate(0deg);"></i>
+
+          <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIdx}, 'redacted')" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #f59e0b; background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <span>🕵️</span> Redacted!
+          </button>
+
+          <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIdx}, 'lobby')" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #475569; background: #1e293b; color: #f8fafc; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-dice-d6" style="color:#c084fc;"></i> All 7 Games
+          </button>
+
+          <button type="button" class="teacher-only-plenary-btn" data-lesson-id="${lesson.id}" onclick="window.openTeacherPlenaryProjector('${lesson.id}')" style="display: ${isTeacherOn ? 'inline-flex' : 'none'}; padding: 7px 12px; border-radius: 8px; border: 1.5px solid #f97316; background: #ea580c; color: #ffffff; font-size: 0.8rem; font-weight: 800; cursor: pointer; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-tv"></i> Plenary Projector
           </button>
         </div>
       </div>
 
-      <!-- Main Interactive Viewport (Auto-Collapsed on Initial Load) -->
-      <div id="station-body-${lesson.id}" class="station-body-container" style="display: none; padding: clamp(12px, 3.5vw, 24px); min-height: 270px; background: #ffffff; box-sizing: border-box; overflow-x: hidden; max-width: 100%;">
-        <!-- Injected lazily or on demand via JavaScript controller -->
-      </div>
+      <!-- Expandable Quick 5 Quiz Drawer -->
+      <div id="station-body-${lesson.id}" style="display: none; padding: clamp(14px, 3vw, 24px); background: #ffffff;"></div>
     </div>
   `;
 }
@@ -1048,2035 +312,571 @@ export function renderConsolidateStationHTML(lesson) {
 export function initConsolidateStation(lesson) {
   if (!lesson) return;
   const rawQuiz = lesson.quiz || lesson.quick_quiz || lesson.quiz_questions || [];
-  const rawVocab = lesson.vocab || [];
-  const milestones = extractChronologyMilestones(lesson);
-
-  const activeUnit = appStore.state.activeUnitData;
+  const activeUnit = appStore?.state?.activeUnitData;
   const lessonsList = (activeUnit && (activeUnit.lessons || activeUnit.subtopics)) || [];
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
-  const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
+  const unitId =
+    (activeUnit && activeUnit.id) ||
+    (typeof window !== 'undefined' && window.currentUnitId) ||
+    '';
   const isKs2 =
     unitId === 'ks2_ww2' ||
     String(unitId).toLowerCase().startsWith('ks2_') ||
     Boolean(activeUnit && (activeUnit.is_ks2 || activeUnit.stage === 'ks2' || activeUnit.keyStage === 'KS2')) ||
     Boolean(lesson && lesson.is_ks2);
 
-  const livingTimeline = isKs2 ? null : extractLivingTimelineMilestone(lesson, currentIdx);
-  const exitTicket = extractExitTicket(lesson, currentIdx);
-  const hasArena = (rawVocab.length > 0 || (lesson.causal_domino_spine && lesson.causal_domino_spine.stages && lesson.causal_domino_spine.stages.length > 0));
+  const allQuestions = normalizeQuestions(rawQuiz, unitId, lesson.title || `Lesson ${currentIdx + 1}`);
+  const sampled = sampleQuickFive(allQuestions);
 
-  if (rawQuiz.length === 0 && rawVocab.length === 0 && milestones.length === 0 && !livingTimeline && !exitTicket && !hasArena) return;
-
-  const allQuestions = normalizeQuestions(rawQuiz);
-  const allVocab = normalizeVocab(rawVocab);
-  const shuffledMilestones = shuffleDominoMilestones(milestones);
-
-  // Default mode when expanded via title/chevron (Living Timeline for KS3/GCSE; Quiz/Domino/Vocab for KS2)
-  let initialMode = livingTimeline
-    ? 'timeline'
-    : (allQuestions.length > 0
-      ? 'quiz'
-      : (milestones.length > 0
-        ? 'domino'
-        : (allVocab.length > 0 ? 'vocab' : (exitTicket ? 'exit' : 'arena'))));
-
-  // Load saved exit ticket text
-  let savedExitText = '';
-  try {
-    savedExitText = localStorage.getItem('exit_ticket_' + lesson.id) || '';
-  } catch (e) { }
-
-  // Load timeline completion status
-  let timelineDone = false;
-  try {
-    timelineDone = localStorage.getItem('timeline_done_' + lesson.id) === 'true';
-  } catch (e) { }
-
-  // Load saved pathway choice ('sketch' | 'map')
-  let timelinePathway = 'sketch';
-  try {
-    timelinePathway = localStorage.getItem('timeline_pathway_' + lesson.id) || 'sketch';
-  } catch (e) { }
-
-  // Load saved class size for Classroom Arena
-  let savedClassSize = 30;
-  try {
-    const s = localStorage.getItem('history_arena_class_size');
-    if (s) {
-      const parsed = parseInt(s, 10);
-      if (!isNaN(parsed) && parsed > 0) savedClassSize = parsed;
-    }
-  } catch (e) { }
-
-  const state = {
+  window.consolidateStations[lesson.id] = {
     lessonId: lesson.id,
     unitId,
+    lessonIndex: currentIdx,
     isKs2,
-    isOpen: false, // Auto-collapsed on initial lesson load across KS2, KS3 & GCSE
-    mode: initialMode, // 'timeline' | 'quiz' | 'vocab' | 'domino' | 'exit' | 'arena'
-    totalLessons: lessonsList.length || 5,
+    isOpen: false,
+    mode: 'quiz',
     allQuestions,
-    allVocab,
-    // Timeline state
-    livingTimeline,
-    timelineDone,
-    timelinePathway,
-    // Quiz state
-    questions: allQuestions,
+    questions: sampled,
     currentIndex: 0,
     score: 0,
     answered: false,
     selectedOption: null,
-    // Vocab state
-    vocabIndex: 0,
-    vocabFlipped: false,
-    // Domino state
-    domino: {
-      correctOrder: milestones,
-      currentOrder: shuffledMilestones,
-      showDateHints: false,
-      isSubmitted: false,
-      isCorrect: false
-    },
-    // Exit ticket state
-    exitTicket,
-    exitResponse: savedExitText,
-    exitSubmitted: Boolean(savedExitText && savedExitText.trim().length > 0),
-    showExitModel: false,
-    // Classroom Arena state
     arena: {
-      gameMode: 'taboo', // 'taboo' | 'corners' | 'standoff' | 'lightning'
-      isWhiteboardMode: false,
+      gameMode: 'taboo', // 'taboo' | 'standoff' | 'corners'
+      isProjectorOpen: false,
       soundEnabled: true,
-      // Taboo state
-      tabooDeckType: isKs2 ? 'today' : 'cumulative', // Default KS2 to today's lesson key terms
+      tabooDeckType: isKs2 ? 'today' : 'cumulative',
       tabooIndex: 0,
       tabooRevealedDef: false,
       tabooScore: 0,
       tabooPasses: 0,
       tabooTeamMode: false,
-      tabooActiveTeam: 'red', // 'red' | 'blue'
+      tabooActiveTeam: 'red',
       tabooTeamRedScore: 0,
       tabooTeamBlueScore: 0,
       tabooTimerSeconds: 60,
       tabooTimerRunning: false,
       tabooTimerInterval: null,
-      // Four Corners state
       cornersSelectedCorner: null,
       cornersTimerSeconds: 60,
       cornersTimerRunning: false,
       cornersTimerInterval: null,
-      // 60s Standoff state
       standoffTimerSeconds: 60,
       standoffTimerRunning: false,
       standoffTimerInterval: null,
-      standoffPhase: 'roleA', // 'roleA' or 'roleB'
-      standoffPairIndex: 0,
-      // Lightning Chain state
-      lightningTimerSeconds: 90,
-      lightningTimerRunning: false,
-      lightningTimerInterval: null,
-      seatedCount: 0,
-      targetStudents: savedClassSize,
-      showLifeline: false
+      standoffPhase: 'roleA',
     },
-    arenaData: extractClassroomArenaData(lesson, currentIdx, lessonsList, unitId)
+    arenaData: extractClassroomArenaData(lesson, currentIdx, lessonsList, unitId),
   };
-
-  window.consolidateStations[lesson.id] = state;
-  syncStationOpenUI(lesson.id);
 }
 
-function renderStationContent(lessonId) {
+function renderQuickQuizDrawer(lessonId) {
   const state = window.consolidateStations[lessonId];
   const bodyEl = document.getElementById(`station-body-${lessonId}`);
+  const lblEl = document.getElementById(`quick5-btn-lbl-${lessonId}`);
   if (!state || !bodyEl) return;
 
-  if (state.mode === 'timeline') {
-    renderLivingTimelineView(state, bodyEl);
-  } else if (state.mode === 'vocab') {
-    renderVocabCardView(state, bodyEl);
-  } else if (state.mode === 'domino') {
-    renderChronologyDominoView(state, bodyEl);
-  } else if (state.mode === 'exit') {
-    renderExitTicketView(state, bodyEl);
-  } else if (state.mode === 'arena') {
-    renderClassroomArenaView(state, bodyEl);
-  } else {
-    // Mode 'quiz'
-    if (state.currentIndex >= state.questions.length) {
-      renderQuizResultsView(state, bodyEl);
-    } else {
-      renderQuestionView(state, bodyEl);
-    }
+  bodyEl.style.display = state.isOpen ? 'block' : 'none';
+  if (lblEl) {
+    lblEl.textContent = state.isOpen
+      ? 'Close Quick Check'
+      : `Quick ${state.questions.length} Check`;
   }
-}
+  if (!state.isOpen) return;
 
-// -------------------------------------------------------------
-// TAB 1: LIVING TIMELINE (DEFAULT ACTIVE TAB)
-// -------------------------------------------------------------
-function renderLivingTimelineView(state, bodyEl) {
-  const lt = state.livingTimeline;
-  if (!lt) {
-    bodyEl.innerHTML = '<div style="text-align:center; padding: 30px; color:#64748b;">No centrefold living timeline milestone recorded for this lesson.</div>';
+  if (state.currentIndex >= state.questions.length) {
+    const total = state.questions.length;
+    const pct = total > 0 ? Math.round((state.score / total) * 100) : 0;
+    try {
+      localStorage.setItem(
+        'history_quiz_' + state.lessonId,
+        JSON.stringify({ score: state.score, total, pct, date: Date.now() }),
+      );
+    } catch (e) {}
+
+    bodyEl.innerHTML = `
+      <div style="max-width: 620px; margin: 0 auto; text-align: center; padding: 8px 0;">
+        <div style="font-size: 2.5rem; margin-bottom: 6px;">${pct >= 80 ? '🏆' : '⚡'}</div>
+        <h4 style="margin: 0 0 6px 0; font-size: 1.35rem; color: #0f172a; font-family: 'Playfair Display', Georgia, serif;">
+          Quick Check Complete: ${state.score}/${total} (${pct}%)
+        </h4>
+        <p style="margin: 0 0 18px 0; color: #475569; font-size: 0.9rem;">
+          ${pct === 100 ? 'Flawless recall! Ready to test your speed in the Arcade?' : 'Missed items have been logged to your Spaced Repetition Weak Spots.'}
+        </p>
+        <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+          <button type="button" onclick="window.restartStationQuiz('${state.lessonId}')" style="background: #2563eb; color: #ffffff; border: none; padding: 9px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer;">
+            <i class="fa-solid fa-shuffle"></i> Deal Fresh 5 Questions
+          </button>
+          <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${state.unitId}', ${state.lessonIndex}, 'tetris')" style="background: #0f172a; color: #6ee7b7; border: 1.5px solid #10b981; padding: 9px 18px; border-radius: 8px; font-weight: 800; font-size: 0.88rem; cursor: pointer;">
+            🧱 Play Keyword Stack
+          </button>
+        </div>
+      </div>
+    `;
     return;
   }
 
-  bodyEl.innerHTML = `
-    <div style="max-width: 860px; margin: 0 auto;">
-      <!-- Unified Hero Card: Centrefold Milestone & Context (Clean single container) -->
-      <div style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border-radius: 14px; padding: 20px 24px; margin-bottom: 22px; box-shadow: 0 4px 16px rgba(2, 132, 199, 0.22);">
-        <!-- Top Meta Row -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span style="background: rgba(255,255,255,0.22); color: #ffffff; padding: 3px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-book-open"></i> ${lt.pageRef || 'Workbook Centrefold &bull; pp. 8–9'}
-            </span>
-          </div>
-          <span style="background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); color: #ffffff; padding: 3px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 700;">
-            ${lt.milestoneBadge || `Milestone ${lt.milestoneNum} of ${state.totalLessons || 5}`}
-          </span>
-        </div>
-
-        <!-- Title & Date Row -->
-        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; flex-wrap: wrap;">
-          <span style="background: #ffffff; color: #0369a1; padding: 3px 12px; border-radius: 6px; font-weight: 800; font-size: 0.92rem; box-shadow: 0 1px 3px rgba(0,0,0,0.15);">
-            ${lt.date}
-          </span>
-          <h3 style="margin: 0; color: #ffffff; font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em;">
-            ${lt.title}
-          </h3>
-        </div>
-
-        <!-- Full Complete Narrative Context Sentence (Zero Truncation) -->
-        <p style="margin: 0; color: #e0f2fe; font-size: 0.96rem; line-height: 1.6; max-width: 800px;">
-          ${lt.desc}
-        </p>
-      </div>
-
-      ${lt.fullMissionText ? `
-      <!-- Printed Workbook Task Prompt (100% Verbatim Synchronicity with Physical Print) -->
-      <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4.5px solid #0284c7; border-radius: 12px; padding: 14px 18px; margin-bottom: 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
-          <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; color: #0369a1; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-book-open"></i> Printed Workbook Task &bull; ${lt.pageRef || 'Centrefold'}
-          </span>
-          <span style="font-size: 0.70rem; font-weight: 700; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 2px 8px; border-radius: 10px; display: inline-flex; align-items: center; gap: 4px;">
-            <i class="fa-solid fa-circle-check"></i> 100% Identical to Printed Workbook
-          </span>
-        </div>
-        <p style="margin: 0; font-family: 'Georgia', serif; font-size: 0.90rem; color: #1e293b; line-height: 1.52;">
-          ${lt.fullMissionText}
-        </p>
-      </div>` : ''}
-
-      <!-- Dual-Pathway Living Timeline Choices -->
-      <div style="margin-bottom: 22px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-          <div style="font-size: 0.82rem; text-transform: uppercase; font-weight: 800; color: #475569; letter-spacing: 0.05em; display: flex; align-items: center; gap: 8px;">
-            <span>Choose Your Centrefold Representation:</span>
-          </div>
-          <span style="font-size: 0.8rem; color: #64748b; font-weight: 600;">
-            Select your preferred pathway below
-          </span>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
-          <!-- Pathway A: Visual Icon Sketch -->
-          <div onclick="window.selectStationTimelinePathway('${state.lessonId}', 'sketch')" style="background: ${state.timelinePathway === 'sketch' ? '#fffdf7' : '#ffffff'}; border: 2px solid ${state.timelinePathway === 'sketch' ? '#f59e0b' : '#e2e8f0'}; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; transition: all 0.2s ease; box-shadow: ${state.timelinePathway === 'sketch' ? '0 4px 16px rgba(245, 158, 11, 0.15)' : '0 2px 6px rgba(0,0,0,0.03)'};">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <strong style="color: #92400e; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
-                  <i class="fa-solid fa-paintbrush" style="color: #d97706;"></i> Pathway A: Dual-Coding Sketch
-                </strong>
-                ${state.timelinePathway === 'sketch'
-      ? '<span style="background: #f59e0b; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-check"></i> Selected</span>'
-      : '<span style="background: #fef3c7; color: #92400e; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">Sketch & Date</span>'}
-              </div>
-              
-              <p style="font-size: 0.88rem; color: #475569; line-height: 1.45; margin: 0 0 12px 0;">
-                ${lt.sketchPrompt ? `${lt.sketchPrompt}:` : `Draw a 60-second historical symbol for this turning point on your centrefold timeline alongside the date <strong>${lt.date}</strong>:`}
-              </p>
-
-              <!-- Specific Visual Sketch Ideas -->
-              ${lt.sketchIdeas && lt.sketchIdeas.length > 0 ? `
-              <div style="background: #fffbeb; border: 1.5px solid #fef3c7; border-radius: 10px; padding: 12px; margin-bottom: 14px;">
-                <div style="font-size: 0.74rem; text-transform: uppercase; font-weight: 800; color: #92400e; letter-spacing: 0.05em; margin-bottom: 8px;">
-                  Suggested Historical Symbols:
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 6px;">
-                  ${lt.sketchIdeas.map((idea) => `
-                    <div style="display: flex; align-items: center; gap: 8px; font-size: 0.86rem; color: #78350f; font-weight: 600;">
-                      <span style="color: #d97706;">&bull;</span> ${idea}
-                    </div>
-                  `).join('')}
-                </div>
-              </div>` : ''}
-            </div>
-
-            <div style="background: #fefce8; border: 1px dashed #fde047; border-radius: 8px; padding: 9px 12px; font-size: 0.8rem; color: #854d0e; line-height: 1.4;">
-              💡 <strong>Dual-Coding Rule:</strong> Pair simple shapes with the bold date. No artistic perfection needed!
-            </div>
-          </div>
-
-          <!-- Pathway B: 3-Branch Concept Map -->
-          <div onclick="window.selectStationTimelinePathway('${state.lessonId}', 'map')" style="background: ${state.timelinePathway === 'map' ? '#f0f9ff' : '#ffffff'}; border: 2px solid ${state.timelinePathway === 'map' ? '#0284c7' : '#e2e8f0'}; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; transition: all 0.2s ease; box-shadow: ${state.timelinePathway === 'map' ? '0 4px 16px rgba(2, 132, 199, 0.15)' : '0 2px 6px rgba(0,0,0,0.03)'};">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <strong style="color: #0369a1; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
-                  <i class="fa-solid fa-diagram-project" style="color: #0284c7;"></i> Pathway B: 3-Branch Concept Map
-                </strong>
-                ${state.timelinePathway === 'map'
-      ? '<span style="background: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-check"></i> Selected</span>'
-      : '<span style="background: #e0f2fe; color: #0369a1; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">Concept Nodes</span>'}
-              </div>
-
-              <p style="font-size: 0.88rem; color: #475569; line-height: 1.45; margin: 0 0 12px 0;">
-                Draw a central bubble <strong>&ldquo;${lt.conceptTitle || lt.title}&rdquo;</strong> and branch out into 3 concrete historical nodes:
-              </p>
-
-              <!-- 3 Structured Concept Nodes -->
-              <div style="display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px;">
-                ${lt.branches.map((b) => {
-        const label = (typeof b === 'object' && b.label) ? b.label.trim() : '';
-        const val = typeof b === 'object' ? (b.value || '') : b;
-        return `
-                  <div style="padding: 7px 11px; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #0284c7; border-radius: 6px; font-size: 0.84rem; color: #1e293b; line-height: 1.4;">
-                    ${label ? `<span style="font-weight: 800; color: #0369a1;">${label}: </span>` : `<span style="color: #0284c7; font-weight: 800; margin-right: 4px;">&bull;</span> `}${val}
-                  </div>
-                `;
-      }).join('')}
-              </div>
-            </div>
-
-            <div style="background: #eff6ff; border: 1px dashed #bfdbfe; border-radius: 8px; padding: 9px 12px; font-size: 0.8rem; color: #1e40af; line-height: 1.4;">
-              💡 <strong>Concept Map Rule:</strong> Connect each node to your central milestone bubble with a quick causal arrow.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Completion & Sequential Plenary Progression Bar -->
-      <div style="background: ${state.timelineDone ? '#f0fdf4' : '#f8fafc'}; border: 1.5px solid ${state.timelineDone ? '#86efac' : '#cbd5e1'}; border-radius: 14px; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; transition: all 0.25s ease;">
-        <label style="display: inline-flex; align-items: center; gap: 12px; cursor: pointer; user-select: none;">
-          <input type="checkbox" id="cb-timeline-${state.lessonId}" onchange="window.toggleStationTimelineDone('${state.lessonId}', this.checked)" ${state.timelineDone ? 'checked' : ''} style="width: 20px; height: 20px; accent-color: #16a34a; cursor: pointer;">
-          <span style="font-size: 0.94rem; font-weight: 700; color: ${state.timelineDone ? '#166534' : '#1e293b'};">
-            ${state.timelineDone ? `🎉 ${lt.milestoneBadge || ('Milestone ' + lt.milestoneNum)} Recorded in Centrefold Workbook!` : `Mark ${lt.milestoneBadge || ('Milestone ' + lt.milestoneNum)} completed in your workbook centrefold`}
-          </span>
-        </label>
-
-        <button type="button" onclick="window.switchConsolidateTab('${state.lessonId}', 'quiz')" style="background: #2563eb; color: #ffffff; border: none; padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 0.92rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(37,99,235,0.25); transition: all 0.15s ease;">
-          <span>Next: Take Lesson Quiz</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
-    </div>
-  `;
-}
-
-// -------------------------------------------------------------
-// TAB 2: LESSON QUIZ
-// -------------------------------------------------------------
-function renderQuestionView(state, bodyEl) {
   const q = state.questions[state.currentIndex];
-  if (!q) return;
-
   const total = state.questions.length;
   const currentNum = state.currentIndex + 1;
-  const progressPct = Math.round((currentNum / total) * 100);
   const letters = ['A', 'B', 'C', 'D'];
+  const isTeacherOn =
+    typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active');
 
   bodyEl.innerHTML = `
-    <div style="max-width: 820px; margin: 0 auto;">
-      <!-- Progress Bar & Question Counter -->
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-          <span style="background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 800; font-size: 0.78rem;">
-            LESSON QUIZ
-          </span>
-          Question ${currentNum} of ${total}
-        </span>
-        <span style="color: #2563eb; font-weight: 700;">Score: ${state.score}</span>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 0.82rem; font-weight: 700; color: #64748b;">
+        <span>⚡ QUICK CHECK &bull; Question ${currentNum} of ${total}</span>
+        <span style="color: #2563eb;">Score: ${state.score}/${total}</span>
       </div>
 
-      <div style="height: 6px; width: 100%; background: #e2e8f0; border-radius: 999px; overflow: hidden; margin-bottom: 20px;">
-        <div style="height: 100%; width: ${progressPct}%; background: linear-gradient(90deg, #3b82f6, #2563eb); border-radius: 999px; transition: width 0.3s ease;"></div>
-      </div>
-
-      <!-- Question Text -->
-      <h4 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; color: #0f172a; line-height: 1.45; margin: 0 0 20px 0; font-weight: 700;">
+      <h4 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.18rem; color: #0f172a; margin: 0 0 16px 0; line-height: 1.45;">
         ${q.q}
       </h4>
 
-      <!-- Options Grid -->
-      <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
-        ${q.options.map((opt, idx) => {
-    let btnStyle = 'background: #ffffff; border: 1.5px solid #cbd5e1; color: #1e293b;';
-    let iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.82rem; color: #475569; flex-shrink: 0;">${letters[idx] || (idx + 1)}</span>`;
+      <div style="display: flex; flex-direction: column; gap: 9px; margin-bottom: 16px;">
+        ${q.options
+          .map((opt, idx) => {
+            let btnStyle = 'background:#ffffff;border:1.5px solid #cbd5e1;color:#1e293b;';
+            if (state.answered) {
+              if (idx === q.answer) {
+                btnStyle = 'background:#f0fdf4;border:2px solid #22c55e;color:#15803d;font-weight:700;';
+              } else if (idx === state.selectedOption) {
+                btnStyle = 'background:#fef2f2;border:2px solid #ef4444;color:#b91c1c;font-weight:700;';
+              } else {
+                btnStyle = 'background:#f8fafc;border:1px solid #e2e8f0;color:#94a3b8;opacity:0.65;';
+              }
+            }
+            return `
+              <button type="button" onclick="window.answerStationQuestion('${state.lessonId}', ${idx})" ${state.answered ? 'disabled' : ''} style="${btnStyle} text-align:left; padding:11px 14px; border-radius:9px; cursor:${state.answered ? 'default' : 'pointer'}; display:flex; align-items:center; gap:12px; font-size:0.93rem;">
+                <span style="width:24px;height:24px;border-radius:6px;background:#f1f5f9;color:#334155;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:0.78rem;flex-shrink:0;">${letters[idx] || idx + 1}</span>
+                <span>${opt}</span>
+              </button>
+            `;
+          })
+          .join('')}
+      </div>
 
-    if (state.answered) {
-      const isCorrect = idx === q.answer;
-      const isSelected = idx === state.selectedOption;
-
-      if (isCorrect) {
-        btnStyle = 'background: #f0fdf4; border: 2px solid #22c55e; color: #15803d; font-weight: 700;';
-        iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #22c55e; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #ffffff; flex-shrink: 0;"><i class="fa-solid fa-check"></i></span>`;
-      } else if (isSelected) {
-        btnStyle = 'background: #fef2f2; border: 2px solid #ef4444; color: #b91c1c; font-weight: 700;';
-        iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #ef4444; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #ffffff; flex-shrink: 0;"><i class="fa-solid fa-xmark"></i></span>`;
-      } else {
-        btnStyle = 'background: #f8fafc; border: 1px solid #e2e8f0; color: #94a3b8; opacity: 0.6;';
+      ${
+        state.answered
+          ? `
+        <div style="background:#f8fafc;border:1px solid #cbd5e1;border-left:4px solid ${state.selectedOption === q.answer ? '#22c55e' : '#f59e0b'};border-radius:8px;padding:12px 15px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+          <div style="flex:1;min-width:220px;font-size:0.88rem;color:#334155;line-height:1.45;">
+            <strong style="color:${state.selectedOption === q.answer ? '#15803d' : '#b45309'};">${state.selectedOption === q.answer ? '✅ Correct!' : '💡 Key Takeaway:'}</strong>
+            ${q.explanation || `Correct answer: ${q.a}`}
+          </div>
+          <button type="button" onclick="window.nextStationQuestion('${state.lessonId}')" style="background:#2563eb;color:#ffffff;border:none;padding:9px 18px;border-radius:8px;font-weight:700;font-size:0.88rem;cursor:pointer;">
+            ${currentNum === total ? 'See Result' : 'Next'} <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      `
+          : ''
       }
-    }
 
-    return `
-            <button type="button" class="station-opt-btn" onclick="window.answerStationQuestion('${state.lessonId}', ${idx})" ${state.answered ? 'disabled' : ''} style="${btnStyle} text-align: left; padding: 12px 16px; border-radius: 10px; cursor: ${state.answered ? 'default' : 'pointer'}; display: flex; align-items: center; gap: 14px; font-size: 0.95rem; line-height: 1.4; transition: all 0.15s ease;">
-              ${iconHtml}
-              <span style="flex-grow: 1;">${opt}</span>
-            </button>
-          `;
-  }).join('')}
-      </div>
-
-      <!-- Feedback / Explanation Box (revealed upon answering) -->
-      ${state.answered ? `
-        <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4.5px solid ${state.selectedOption === q.answer ? '#22c55e' : '#f59e0b'}; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; animation: fadeIn 0.2s ease;">
-          <div style="font-weight: 800; font-size: 0.88rem; color: ${state.selectedOption === q.answer ? '#15803d' : '#b45309'}; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
-            ${state.selectedOption === q.answer ? '<i class="fa-solid fa-circle-check"></i> Correct!' : '<i class="fa-solid fa-triangle-exclamation"></i> Historian Key Knowledge:'}
-          </div>
-          <p style="margin: 0; color: #334155; font-size: 0.9rem; line-height: 1.5;">
-            ${q.explanation || 'Key factual recall consolidated.'}
-          </p>
+      ${
+        isTeacherOn
+          ? `
+        <div style="margin-top:12px;background:#f5f3ff;border:1px solid #c4b5fd;border-left:4px solid #7c3aed;border-radius:8px;padding:10px 14px;font-size:0.82rem;color:#1e293b;">
+          <strong style="color:#5b21b6;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Answer Key:</strong>
+          ${state.questions.map((it, i) => `${i + 1}. <strong>${letters[it.answer] || ''}: ${it.a}</strong>`).join(' &bull; ')}
         </div>
-
-        <div style="display: flex; justify-content: flex-end;">
-          <button type="button" onclick="window.nextStationQuestion('${state.lessonId}')" style="background: #2563eb; color: #ffffff; border: none; padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(37,99,235,0.22); transition: all 0.2s ease;">
-            <span>${currentNum === total ? 'Complete &amp; View Result' : 'Next Question'}</span>
-            <i class="fa-solid ${currentNum === total ? 'fa-award' : 'fa-arrow-right'}"></i>
-          </button>
-        </div>
-      ` : ''}
-
-      ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? `
-        <div class="station-teacher-quiz-crib" style="margin-top: 16px; background: #f5f3ff; border: 1.5px solid #c4b5fd; border-left: 4px solid #7c3aed; border-radius: 8px; padding: 12px 16px;">
-          <div style="font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #5b21b6; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-chalkboard-user"></i> Teacher Mode &bull; Lesson Quiz Answer Key (${state.questions.length} Questions)
-          </div>
-          <ol style="margin: 0; padding-left: 18px; font-size: 0.86rem; color: #1e293b; line-height: 1.5;">
-            ${state.questions.map((item, qIdx) => {
-              const ansLetter = letters[item.answer] || String(item.answer + 1);
-              const ansText = item.options[item.answer] || '';
-              return `<li style="margin-bottom: 5px; ${qIdx === state.currentIndex ? 'font-weight: 700; color: #4c1d95;' : ''}"><strong>${ansLetter}: ${ansText}</strong>${item.explanation ? ` <span style="color: #475569; font-weight: 400;">— ${item.explanation}</span>` : ''}</li>`;
-            }).join('')}
-          </ol>
-        </div>
-      ` : ''}
+      `
+          : ''
+      }
     </div>
   `;
 }
 
-function renderQuizResultsView(state, bodyEl) {
-  const total = state.questions.length;
-  const score = state.score;
-  const pct = Math.round((score / total) * 100);
+// =============================================================
+// TEACHER PLENARY PROJECTOR PORTAL (TABOO / STANDOFF / CORNERS)
+// =============================================================
+function renderProjectorPortal(lessonId) {
+  const state = window.consolidateStations[lessonId];
+  if (!state || !state.arena.isProjectorOpen) return;
 
-  // Save to localStorage
-  try {
-    const record = { score, total, pct, date: Date.now() };
-    localStorage.setItem('history_quiz_' + state.lessonId, JSON.stringify(record));
-  } catch (e) { }
-
-  let trophy = '🏆';
-  let badgeText = 'Outstanding Recall &bull; Mastery Achieved';
-  let badgeColor = '#15803d';
-  let badgeBg = '#f0fdf4';
-  let badgeBorder = '#86efac';
-
-  if (pct < 60) {
-    trophy = '💡';
-    badgeText = 'Good Effort &bull; Review Key Points &amp; Retry';
-    badgeColor = '#b45309';
-    badgeBg = '#fffbeb';
-    badgeBorder = '#fde68a';
-  } else if (pct < 80) {
-    trophy = '⭐';
-    badgeText = 'Solid Knowledge &bull; Ready for Disciplinary Tasks';
-    badgeColor = '#1e40af';
-    badgeBg = '#eff6ff';
-    badgeBorder = '#bfdbfe';
-  }
-
-  bodyEl.innerHTML = `
-    <div style="max-width: 600px; margin: 10px auto 20px auto; text-align: center; animation: fadeIn 0.3s ease;">
-      <div style="font-size: 3rem; margin-bottom: 8px;">${trophy}</div>
-      <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; color: #0f172a; margin: 0 0 6px 0;">
-        Lesson Quiz Complete!
-      </h3>
-      <div style="display: inline-block; background: ${badgeBg}; color: ${badgeColor}; border: 1.5px solid ${badgeBorder}; padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 0.85rem; margin-bottom: 20px;">
-        ${badgeText}
-      </div>
-
-      <!-- Score Box -->
-      <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 20px; margin-bottom: 25px; display: flex; justify-content: space-around; align-items: center;">
-        <div>
-          <div style="font-size: 0.8rem; text-transform: uppercase; color: #64748b; font-weight: 700; letter-spacing: 0.05em;">Your Score</div>
-          <div style="font-size: 2.2rem; font-weight: 900; color: #0f172a;">${score}<span style="font-size: 1.2rem; color: #94a3b8; font-weight: 600;">/${total}</span></div>
-        </div>
-        <div style="height: 45px; width: 1.5px; background: #cbd5e1;"></div>
-        <div>
-          <div style="font-size: 0.8rem; text-transform: uppercase; color: #64748b; font-weight: 700; letter-spacing: 0.05em;">Accuracy</div>
-          <div style="font-size: 2.2rem; font-weight: 900; color: ${pct >= 70 ? '#16a34a' : '#d97706'};">${pct}%</div>
-        </div>
-      </div>
-
-      <!-- Action Buttons (Left-to-Right Plenary Progression) -->
-      <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-        <button type="button" onclick="window.restartStationQuiz('${state.lessonId}')" style="background: #2563eb; color: #ffffff; border: none; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; box-shadow: 0 4px 10px rgba(37,99,235,0.2);">
-          <i class="fa-solid fa-rotate-right"></i> Try Again
-        </button>
-        ${state.allVocab.length > 0 ? `
-          <button type="button" onclick="window.switchConsolidateTab('${state.lessonId}', 'vocab')" style="background: #10b981; color: #ffffff; border: none; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
-            <i class="fa-solid fa-layer-group"></i> Flip Vocab Cards
-          </button>
-        ` : ''}
-        ${state.domino.correctOrder.length > 0 ? `
-          <button type="button" onclick="window.switchConsolidateTab('${state.lessonId}', 'domino')" style="background: #8b5cf6; color: #ffffff; border: none; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
-            <i class="fa-solid fa-timeline"></i> Chrono Domino
-          </button>
-        ` : ''}
-        ${state.exitTicket ? `
-          <button type="button" onclick="window.switchConsolidateTab('${state.lessonId}', 'exit')" style="background: #f59e0b; color: #000000; border: none; padding: 10px 18px; border-radius: 8px; font-weight: 800; font-size: 0.9rem; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
-            <i class="fa-solid fa-ticket"></i> Exit Ticket
-          </button>
-        ` : ''}
-      </div>
-    </div>
-  `;
-}
-
-// -------------------------------------------------------------
-// TAB 3: VOCAB CARDS
-// -------------------------------------------------------------
-function renderVocabCardView(state, bodyEl) {
-  const vocabList = state.allVocab;
-  if (!vocabList || vocabList.length === 0) {
-    bodyEl.innerHTML = '<div style="text-align:center; padding: 30px; color:#64748b;">No vocabulary items recorded for this lesson.</div>';
-    return;
-  }
-
-  const v = vocabList[state.vocabIndex];
-  const total = vocabList.length;
-  const currentNum = state.vocabIndex + 1;
-
-  bodyEl.innerHTML = `
-    <div style="max-width: 680px; margin: 0 auto; text-align: center;">
-      <!-- Flashcard Header Bar -->
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; font-size: 0.85rem; color: #64748b; font-weight: 600;">
-        <span style="background: #ecfdf5; color: #047857; padding: 2px 10px; border-radius: 20px; font-weight: 800; font-size: 0.78rem;">
-          VOCABULARY FLASHCARD &bull; TIER ${v.tier || '2'}
-        </span>
-        <span>Card ${currentNum} of ${total}</span>
-      </div>
-
-      <!-- Interactive 3D Card Plate -->
-      <div onclick="window.flipStationVocabCard('${state.lessonId}')" role="button" tabindex="0" title="Click to flip card" style="cursor: pointer; min-height: 180px; background: ${state.vocabFlipped ? 'linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%)' : 'linear-gradient(135deg, #f8fafc 0%, #ffffff 100%)'}; border: 2px solid ${state.vocabFlipped ? '#86efac' : '#cbd5e1'}; border-radius: 14px; padding: 24px 28px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 4px 14px rgba(0,0,0,0.05); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); user-select: none; margin-bottom: 18px;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
-        ${!state.vocabFlipped ? `
-          <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: #64748b; font-weight: 700; margin-bottom: 8px;">
-            KEY HISTORICAL TERM
-          </div>
-          <h4 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; color: #0f172a; margin: 0 0 10px 0; font-weight: 700;">
-            ${v.term}
-          </h4>
-          ${v.syllables ? `
-            <div style="display: inline-block; background: #e2e8f0; color: #475569; padding: 2px 10px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; font-family: monospace; margin-bottom: 12px;">
-              ${v.syllables}
-            </div>
-          ` : ''}
-          <div style="font-size: 0.82rem; color: #3b82f6; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-arrows-rotate"></i> Click card to reveal definition
-          </div>
-        ` : `
-          <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: #047857; font-weight: 800; margin-bottom: 8px;">
-            <i class="fa-solid fa-book-bookmark"></i> DEFINITION &bull; ${v.term}
-          </div>
-          <p style="font-size: 1.05rem; color: #064e3b; line-height: 1.6; margin: 0 0 12px 0; font-family: 'Inter', sans-serif;">
-            ${v.definition}
-          </p>
-          <div style="font-size: 0.82rem; color: #059669; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-arrows-rotate"></i> Click card to flip back
-          </div>
-        `}
-      </div>
-
-      <!-- Navigation & Shuffle Bar -->
-      <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
-        <button type="button" onclick="window.nextStationVocabCard('${state.lessonId}', -1)" ${state.vocabIndex === 0 ? 'disabled' : ''} style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #1e293b; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; cursor: ${state.vocabIndex === 0 ? 'not-allowed' : 'pointer'}; opacity: ${state.vocabIndex === 0 ? '0.4' : '1'}; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-arrow-left"></i> Previous
-        </button>
-
-        <button type="button" onclick="window.flipStationVocabCard('${state.lessonId}')" style="background: #ffffff; border: 1.5px solid #3b82f6; color: #2563eb; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-arrows-rotate"></i> Flip Card
-        </button>
-
-        <div style="display: flex; gap: 8px;">
-          <button type="button" onclick="window.shuffleStationVocab('${state.lessonId}')" title="Shuffle flashcards" style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #475569; padding: 8px 12px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; cursor: pointer;">
-            <i class="fa-solid fa-shuffle"></i>
-          </button>
-          <button type="button" onclick="window.nextStationVocabCard('${state.lessonId}', 1)" ${state.vocabIndex === total - 1 ? 'disabled' : ''} style="background: #2563eb; border: none; color: #ffffff; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: ${state.vocabIndex === total - 1 ? 'not-allowed' : 'pointer'}; opacity: ${state.vocabIndex === total - 1 ? '0.4' : '1'}; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(37,99,235,0.2);">
-            Next <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-// -------------------------------------------------------------
-// TAB 4: CHRONOLOGY DOMINO (SEQUENCE CHALLENGE)
-// -------------------------------------------------------------
-function renderChronologyDominoView(state, bodyEl) {
-  const domino = state.domino;
-  const items = domino.currentOrder;
-  const total = items.length;
-
-  if (total === 0) {
-    bodyEl.innerHTML = '<div style="text-align:center; padding: 30px; color:#64748b;">No chronology turning points recorded for this lesson.</div>';
-    return;
-  }
-
-  // Count correct positions
-  let correctCount = 0;
-  items.forEach((item, idx) => {
-    if (item.originalIndex === idx) correctCount++;
-  });
-  const allCorrect = correctCount === total;
-  const showHints = Boolean(domino.showDateHints && !domino.isSubmitted);
-  const showFullDates = Boolean(domino.isSubmitted);
-  const showAnyDates = showHints || showFullDates;
-
-  bodyEl.innerHTML = `
-    <div style="max-width: 820px; margin: 0 auto;">
-      <!-- Challenge Header & Guidance -->
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
-        <div>
-          <span style="background: #ede9fe; color: #6d28d9; padding: 2px 10px; border-radius: 20px; font-weight: 800; font-size: 0.78rem;">
-            CHRONOLOGICAL CAUSAL SEQUENCE
-          </span>
-          <h4 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; color: #0f172a; margin: 4px 0 0 0; font-weight: 700;">
-            Chrono Domino: Arrange the ${total} Causal Turning Points
-          </h4>
-        </div>
-        <div style="font-size: 0.82rem; color: #64748b; font-weight: 600;">
-          Use the <strong>Up / Down</strong> buttons to put the events in true chronological order.
-        </div>
-      </div>
-
-      <!-- Feedback Banner if checked -->
-      ${domino.isSubmitted ? `
-        <div style="background: ${allCorrect ? '#f0fdf4' : '#fffbeb'}; border: 2px solid ${allCorrect ? '#22c55e' : '#f59e0b'}; color: ${allCorrect ? '#15803d' : '#b45309'}; border-radius: 12px; padding: 14px 18px; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; animation: fadeIn 0.25s ease;">
-          <i class="fa-solid ${allCorrect ? 'fa-award' : 'fa-arrows-rotate'}" style="font-size: 1.6rem; color: ${allCorrect ? '#16a34a' : '#d97706'};"></i>
-          <div>
-            <div style="font-weight: 800; font-size: 0.95rem;">
-              ${allCorrect ? '🎉 Perfect Historical Sequence! All events in exact order.' : `${correctCount} of ${total} turning points in correct position.`}
-            </div>
-            <div style="font-size: 0.85rem; margin-top: 2px; font-weight: 500;">
-              ${allCorrect ? 'You have mastered the causal timeline and chronological progression for this enquiry.' : 'Look at the highlighted cards below. Swap the remaining points to complete the chain!'}
-            </div>
-          </div>
-        </div>
-      ` : ''}
-
-      <!-- Interactive Milestone Cards Stack -->
-      <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px;">
-        ${items.map((item, idx) => {
-    const isPosCorrect = domino.isSubmitted && item.originalIndex === idx;
-    const isPosWrong = domino.isSubmitted && item.originalIndex !== idx;
-
-    let cardBorder = '#cbd5e1';
-    let cardBg = '#ffffff';
-    let statusBadge = '';
-
-    if (isPosCorrect) {
-      cardBorder = '#22c55e';
-      cardBg = '#f0fdf4';
-      statusBadge = `<span style="background: #22c55e; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800;"><i class="fa-solid fa-check"></i> Correct</span>`;
-    } else if (isPosWrong) {
-      cardBorder = '#f59e0b';
-      cardBg = '#fffdf7';
-      statusBadge = `<span style="background: #f59e0b; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800;"><i class="fa-solid fa-arrows-rotate"></i> Swap</span>`;
-    }
-
-    let dateBadge = '';
-    if (showHints) {
-      dateBadge = `<span style="background: #fef3c7; color: #92400e; border: 1.5px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; animation: fadeIn 0.2s ease;"><i class="fa-solid fa-lightbulb" style="color: #d97706;"></i> Hint: ${item.date}</span>`;
-    } else if (showFullDates) {
-      dateBadge = `<span style="background: #e2e8f0; color: #334155; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">${item.date}</span>`;
-    }
-
-    const cardTitle = getDominoDisplayTitle(item.title, showAnyDates);
-
-    return `
-            <div style="background: ${cardBg}; border: 1.5px solid ${cardBorder}; border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.03); transition: all 0.2s ease;">
-              <div style="display: flex; align-items: center; gap: 14px; flex: 1;">
-                <div style="width: 32px; height: 32px; border-radius: 8px; background: ${isPosCorrect ? '#22c55e' : '#ede9fe'}; color: ${isPosCorrect ? '#ffffff' : '#6d28d9'}; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0;">
-                  ${idx + 1}
-                </div>
-                <div style="flex: 1;">
-                  <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <strong style="color: #0f172a; font-size: 0.98rem;">${cardTitle}</strong>
-                    ${dateBadge}
-                    ${statusBadge}
-                  </div>
-                  ${item.detail ? `
-                    <p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.86rem; line-height: 1.4;">
-                      ${item.detail}
-                    </p>
-                  ` : ''}
-                </div>
-              </div>
-
-              <!-- Reordering Arrows -->
-              <div style="display: flex; flex-direction: column; gap: 4px; flex-shrink: 0;">
-                <button type="button" onclick="window.moveStationDominoCard('${state.lessonId}', ${idx}, ${idx - 1})" ${idx === 0 ? 'disabled' : ''} style="width: 28px; height: 26px; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #1e293b; cursor: ${idx === 0 ? 'not-allowed' : 'pointer'}; opacity: ${idx === 0 ? '0.25' : '1'}; display: flex; align-items: center; justify-content: center; font-size: 0.78rem;" title="Move earlier in chronology">
-                  <i class="fa-solid fa-arrow-up"></i>
-                </button>
-                <button type="button" onclick="window.moveStationDominoCard('${state.lessonId}', ${idx}, ${idx + 1})" ${idx === total - 1 ? 'disabled' : ''} style="width: 28px; height: 26px; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #1e293b; cursor: ${idx === total - 1 ? 'not-allowed' : 'pointer'}; opacity: ${idx === total - 1 ? '0.25' : '1'}; display: flex; align-items: center; justify-content: center; font-size: 0.78rem;" title="Move later in chronology">
-                  <i class="fa-solid fa-arrow-down"></i>
-                </button>
-              </div>
-            </div>
-          `;
-  }).join('')}
-      </div>
-
-      <!-- Domino Control Buttons -->
-      <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <button type="button" onclick="window.shuffleStationDomino('${state.lessonId}')" style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #1e293b; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-shuffle"></i> Reshuffle
-          </button>
-          <button type="button" onclick="window.toggleStationDominoHints('${state.lessonId}')" style="background: ${domino.showDateHints ? '#fef3c7' : '#ffffff'}; border: 1.5px solid ${domino.showDateHints ? '#f59e0b' : '#cbd5e1'}; color: ${domino.showDateHints ? '#92400e' : '#334155'}; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
-            <i class="fa-solid fa-lightbulb" style="color: ${domino.showDateHints ? '#d97706' : '#94a3b8'};"></i> ${domino.showDateHints ? 'Hide Date Hints' : 'Show Date Hints'}
-          </button>
-        </div>
-
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <button type="button" onclick="window.revealStationDomino('${state.lessonId}')" style="background: #ffffff; border: 1.5px solid #8b5cf6; color: #6d28d9; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-eye"></i> Show Correct Sequence
-          </button>
-          <button type="button" onclick="window.checkStationDomino('${state.lessonId}')" style="background: #8b5cf6; border: none; color: #ffffff; padding: 8px 20px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(139,92,246,0.3);">
-            <i class="fa-solid fa-check"></i> Check Sequence
-          </button>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-// -------------------------------------------------------------
-// TAB 5: EXIT TICKET (ROTATING DISCIPLINARY VERDICT)
-// -------------------------------------------------------------
-function renderExitTicketView(state, bodyEl) {
-  const et = state.exitTicket;
-  if (!et) {
-    bodyEl.innerHTML = '<div style="text-align:center; padding: 30px; color:#64748b;">No exit ticket assigned for this lesson.</div>';
-    return;
-  }
-
-  const counts = countWordsAndSentences(state.exitResponse);
-
-  bodyEl.innerHTML = `
-    <div style="max-width: 820px; margin: 0 auto;">
-      <!-- Exit Ticket Masthead -->
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <span style="width: 34px; height: 34px; border-radius: 8px; background: #fef3c7; color: #b45309; display: flex; align-items: center; justify-content: center; font-size: 1.05rem;">
-            <i class="fa-solid fa-ticket"></i>
-          </span>
-          <h4 style="margin: 0; color: #0f172a; font-size: 1.25rem; font-family: 'Playfair Display', Georgia, serif; font-weight: 700;">
-            ${et.title}
-          </h4>
-        </div>
-        <span style="background: #fef3c7; color: #92400e; font-size: 0.78rem; font-weight: 800; padding: 3px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">
-          ${et.type_label}
-        </span>
-      </div>
-
-      <!-- Prompt Description -->
-      <div style="font-size: 1.05rem; color: #1e293b; line-height: 1.6; margin-bottom: 16px;">
-        ${formatMarkdown(et.prompt)}
-      </div>
-
-      <!-- Success Criteria / Ingredients Box -->
-      ${et.options && et.options.length > 0 ? `
-        <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-bottom: 18px;">
-          <div style="font-size: 0.78rem; text-transform: uppercase; font-weight: 800; color: #64748b; letter-spacing: 0.05em; margin-bottom: 8px;">
-            Success Criteria &amp; Required Ingredients:
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            ${et.options.map((opt) => `
-              <div style="padding: 8px 12px; background: #ffffff; border: 1px solid #e2e8f0; border-left: 3.5px solid #f59e0b; border-radius: 6px; font-size: 0.9rem; color: #334155; line-height: 1.4;">
-                ${formatMarkdown(opt)}
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      ` : ''}
-
-      ${et.guidance ? `
-        <p style="font-size: 0.88rem; color: #64748b; font-style: italic; margin-bottom: 14px;">
-          <strong>Teacher Guidance:</strong> ${formatMarkdown(et.guidance)}
-        </p>
-      ` : ''}
-
-      <!-- Interactive Student Response Box -->
-      <div style="margin-bottom: 12px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-          <label for="exit-ticket-input-${state.lessonId}" style="font-size: 0.82rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.04em;">
-            Your Written Response:
-          </label>
-          <span id="exit-counter-${state.lessonId}" style="font-size: 0.78rem; font-weight: 600; color: #64748b;">
-            ${counts.sentences} sentence${counts.sentences === 1 ? '' : 's'} &bull; ${counts.words} words
-          </span>
-        </div>
-        <textarea id="exit-ticket-input-${state.lessonId}" oninput="window.handleExitTicketInput('${state.lessonId}', this.value)" placeholder="${et.placeholder || (state.isKs2 ? 'Write your answer here...' : 'Type your 1–2 sentence historical verdict here before packing up...')}" style="width: 100%; min-height: 105px; padding: 12px 14px; border: 1.5px solid ${state.exitSubmitted ? '#86efac' : '#cbd5e1'}; border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 0.95rem; line-height: 1.55; box-sizing: border-box; background: ${state.exitSubmitted ? '#f0fdf4' : '#ffffff'}; color: #0f172a; resize: vertical;">${state.exitResponse || ''}</textarea>
-      </div>
-
-      <!-- Action Bar with Compare with Model Verdict Toggle -->
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
-        <div style="display: flex; gap: 10px; align-items: center;">
-          <button type="button" onclick="window.submitStationExitTicket('${state.lessonId}')" style="background: #f59e0b; border: none; color: #000000; font-weight: 800; font-size: 0.92rem; padding: 10px 22px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(245,158,11,0.3);">
-            <i class="fa-solid fa-paper-plane"></i> Save &amp; Submit Ticket
-          </button>
-          ${state.exitSubmitted ? `
-            <button type="button" onclick="window.toggleStationExitModel('${state.lessonId}')" style="background: #ffffff; border: 1.5px solid #059669; color: #047857; font-weight: 700; font-size: 0.88rem; padding: 9px 16px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
-              <i class="fa-solid fa-award"></i> ${state.showExitModel ? (state.isKs2 ? 'Hide Model Answer' : 'Hide Model Verdict') : (state.isKs2 ? 'Compare with Model Answer' : 'Compare with Model Verdict')}
-            </button>
-          ` : ''}
-        </div>
-
-        ${state.exitSubmitted ? `
-          <div style="color: #15803d; font-weight: 700; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-circle-check"></i> Ticket Saved Locally
-          </div>
-        ` : ''}
-      </div>
-
-      <!-- Model Verdict Showcase (Unlocked upon submission or toggle) -->
-      ${state.showExitModel && et.model ? `
-        <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 10px; padding: 16px 20px; animation: fadeIn 0.25s ease;">
-          <div style="font-size: 0.8rem; text-transform: uppercase; font-weight: 800; color: #166534; letter-spacing: 0.05em; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-graduation-cap"></i> ${state.isKs2 ? "Teacher's Model Answer & Example:" : "Historian's Model Verdict & Criteria:"}
-          </div>
-          <p style="margin: 0; color: #14532d; font-size: 0.95rem; line-height: 1.6; font-family: 'Inter', sans-serif;">
-            ${formatMarkdown(et.model)}
-          </p>
-        </div>
-      ` : ''}
-    </div>
-  `;
-}
-
-// -------------------------------------------------------------
-// TAB 6: CLASSROOM ARENA (WHOLE-CLASS ACTIVE PLENARIES)
-// -------------------------------------------------------------
-function renderClassroomArenaView(state, bodyEl) {
+  const a = state.arena;
   const arenaData = state.arenaData;
-  if (!arenaData) {
-    bodyEl.innerHTML = '<div style="text-align:center; padding: 30px; color:#64748b;">Classroom Arena content unavailable for this lesson.</div>';
-    return;
+  let portal = document.getElementById('arena-projector-portal');
+  if (!portal) {
+    portal = document.createElement('div');
+    portal.id = 'arena-projector-portal';
+    document.body.appendChild(portal);
   }
 
-  const a = state.arena;
-  const isWhiteboard = a.isWhiteboardMode;
-
-  // Manage ESC key listener for Projector Mode
-  if (isWhiteboard) {
-    if (window._arenaEscKeyHandler) {
-      window.removeEventListener('keydown', window._arenaEscKeyHandler);
-    }
-    window._arenaEscKeyHandler = function (e) {
-      if (e.key === 'Escape') {
-        window.toggleArenaWhiteboard(state.lessonId);
-      }
-    };
-    window.addEventListener('keydown', window._arenaEscKeyHandler);
-  } else if (window._arenaEscKeyHandler) {
+  if (window._arenaEscKeyHandler) {
     window.removeEventListener('keydown', window._arenaEscKeyHandler);
-    window._arenaEscKeyHandler = null;
+  }
+  window._arenaEscKeyHandler = (e) => {
+    if (e.key === 'Escape') window.closeTeacherPlenaryProjector(lessonId);
+  };
+  window.addEventListener('keydown', window._arenaEscKeyHandler);
+
+  let stageHtml = '';
+  if (a.gameMode === 'standoff') {
+    stageHtml = renderProjectorStandoff(state, arenaData);
+  } else if (a.gameMode === 'corners') {
+    stageHtml = renderProjectorCorners(state, arenaData);
+  } else {
+    stageHtml = renderProjectorTaboo(state, arenaData);
   }
 
-  const overlayStyle = isWhiteboard
-    ? 'position: fixed; inset: 0; z-index: 999999; background: #0b1120; color: #f8fafc; overflow-y: auto; padding: 24px 36px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start;'
-    : 'max-width: 900px; margin: 0 auto;';
+  portal.innerHTML = `
+    <div style="position:fixed;inset:0;z-index:9999999;background:#0b1120;color:#f8fafc;overflow-y:auto;padding:24px 36px;font-family:'Inter',system-ui,sans-serif;">
+      <div style="max-width:1100px;margin:0 auto;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-bottom:1.5px solid #1e293b;padding-bottom:14px;margin-bottom:20px;">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button type="button" onclick="window.switchArenaGame('${lessonId}', 'taboo')" style="padding:8px 14px;border-radius:8px;border:none;font-weight:800;font-size:0.85rem;cursor:pointer;background:${a.gameMode === 'taboo' ? '#2563eb' : '#1e293b'};color:#ffffff;">
+              🔥 Hot Seat Taboo
+            </button>
+            <button type="button" onclick="window.switchArenaGame('${lessonId}', 'standoff')" style="padding:8px 14px;border-radius:8px;border:none;font-weight:800;font-size:0.85rem;cursor:pointer;background:${a.gameMode === 'standoff' ? '#2563eb' : '#1e293b'};color:#ffffff;">
+              ⚔️ 60s Partner Standoff
+            </button>
+            <button type="button" onclick="window.switchArenaGame('${lessonId}', 'corners')" style="padding:8px 14px;border-radius:8px;border:none;font-weight:800;font-size:0.85rem;cursor:pointer;background:${a.gameMode === 'corners' ? '#2563eb' : '#1e293b'};color:#ffffff;">
+              🏃 Four Corners Debate
+            </button>
+          </div>
 
-  // Sub-navigation bar inside Classroom Arena
-  const navHtml = `
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; border-bottom: 1.5px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; padding-bottom: 14px; max-width: 100%; box-sizing: border-box;">
-      <!-- 4 Game Switcher Buttons -->
-      <div style="display: flex; gap: 6px; background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; padding: 4px; border-radius: 10px; flex-wrap: wrap; flex: 1 1 auto; max-width: 100%; box-sizing: border-box;">
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'taboo')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'taboo' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
-          <span>🔥</span> Hot Seat (Taboo)
+          <div style="display:flex;align-items:center;gap:10px;">
+            <button type="button" onclick="window.toggleArenaSound('${lessonId}')" style="padding:7px 12px;border-radius:8px;border:1px solid #334155;background:#1e293b;color:#e2e8f0;font-weight:700;font-size:0.82rem;cursor:pointer;">
+              <i class="fa-solid ${a.soundEnabled ? 'fa-volume-high' : 'fa-volume-xmark'}"></i> ${a.soundEnabled ? 'Sound ON' : 'Muted'}
+            </button>
+            <button type="button" onclick="window.closeTeacherPlenaryProjector('${lessonId}')" style="padding:7px 14px;border-radius:8px;border:1px solid #ef4444;background:#dc2626;color:#ffffff;font-weight:800;font-size:0.82rem;cursor:pointer;">
+              <i class="fa-solid fa-xmark"></i> Close Projector (ESC)
+            </button>
+          </div>
+        </div>
+        ${stageHtml}
+      </div>
+    </div>
+  `;
+}
+
+function formatSec(sec) {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
+function renderProjectorTaboo(state, arenaData) {
+  const a = state.arena;
+  const isToday = a.tabooDeckType === 'today';
+  const deck = isToday && arenaData.todayDeck.length > 0 ? arenaData.todayDeck : arenaData.cumulativeDeck;
+  const card = deck[a.tabooIndex % deck.length];
+
+  return `
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px;">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" onclick="window.switchArenaTabooDeck('${state.lessonId}', 'cumulative')" style="padding:6px 12px;border-radius:7px;border:1.5px solid ${!isToday ? '#38bdf8' : '#334155'};background:${!isToday ? '#1e3a8a' : 'transparent'};color:#f8fafc;font-weight:700;font-size:0.8rem;cursor:pointer;">
+          ⭐ Cumulative Unit Terms (${arenaData.cumulativeDeck.length})
         </button>
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'corners')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'corners' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
-          <span>🏃</span> Four Corners
-        </button>
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'standoff')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'standoff' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
-          <span>⚔️</span> 60s Standoff
-        </button>
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'lightning')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'lightning' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
-          <span>⚡</span> Lightning Chain
+        <button type="button" onclick="window.switchArenaTabooDeck('${state.lessonId}', 'today')" style="padding:6px 12px;border-radius:7px;border:1.5px solid ${isToday ? '#38bdf8' : '#334155'};background:${isToday ? '#1e3a8a' : 'transparent'};color:#f8fafc;font-weight:700;font-size:0.8rem;cursor:pointer;">
+          📌 Today's Lesson (${arenaData.todayDeck.length})
         </button>
       </div>
 
-      <!-- Right Utility Actions: Sound & Projector Mode -->
-      <div style="display: flex; align-items: center; gap: 8px;">
-        <button type="button" onclick="window.toggleArenaSound('${state.lessonId}')" title="Toggle Synthesizer Sound" style="padding: 6px 12px; border-radius: 7px; border: 1px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; color: ${isWhiteboard ? '#e2e8f0' : '#475569'}; font-size: 0.8rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid ${a.soundEnabled ? 'fa-volume-high' : 'fa-volume-xmark'}" style="color: ${a.soundEnabled ? '#10b981' : '#94a3b8'};"></i>
-          <span>${a.soundEnabled ? 'Sound ON' : 'Muted'}</span>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="background:#1e293b;border:1px solid #f59e0b;color:#fde047;padding:5px 14px;border-radius:999px;font-weight:800;font-size:0.9rem;">
+          🔥 Score: ${a.tabooScore}
+        </span>
+        <div style="display:flex;align-items:center;gap:8px;background:#1e293b;border:1.5px solid #334155;padding:5px 12px;border-radius:10px;">
+          <span id="arena-timer-val-taboo-${state.lessonId}" style="font-family:monospace;font-size:1.35rem;font-weight:900;color:#f8fafc;">${formatSec(a.tabooTimerSeconds)}</span>
+          <button type="button" id="arena-timer-start-taboo-${state.lessonId}" onclick="window.${a.tabooTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'taboo', 60)" style="background:${a.tabooTimerRunning ? '#f59e0b' : '#10b981'};color:#fff;border:none;padding:5px 12px;border-radius:6px;font-weight:800;cursor:pointer;">
+            ${a.tabooTimerRunning ? 'Pause' : 'Start 60s'}
+          </button>
+          <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'taboo', 60)" style="background:transparent;color:#94a3b8;border:none;cursor:pointer;"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#1e293b;border:2.5px solid #334155;border-radius:18px;padding:34px 24px;text-align:center;">
+      <span style="background:#065f46;color:#a7f3d0;padding:4px 14px;border-radius:999px;font-size:0.8rem;font-weight:800;text-transform:uppercase;">${card.origin}</span>
+      <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.2rem,5vw,3.6rem);color:#38bdf8;margin:14px 0 22px 0;">${card.term}</h2>
+
+      <div style="background:#450a0a;border:2px dashed #ef4444;border-radius:14px;padding:18px;max-width:680px;margin:0 auto 24px auto;">
+        <div style="font-size:0.8rem;font-weight:800;color:#fca5a5;margin-bottom:10px;"><i class="fa-solid fa-ban"></i> FORBIDDEN TABOO WORDS:</div>
+        <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+          ${card.tabooWords.map((w) => `<span style="background:#18181b;border:2px solid #ef4444;color:#f87171;font-weight:900;font-size:1.3rem;padding:6px 18px;border-radius:8px;">${w}</span>`).join('')}
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+        <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', false, true)" style="background:#78350f;border:1.5px solid #f59e0b;color:#fef3c7;font-weight:800;font-size:1rem;padding:12px 22px;border-radius:10px;cursor:pointer;">
+          <i class="fa-solid fa-forward-step"></i> Pass Card
         </button>
-        <button type="button" onclick="window.toggleArenaWhiteboard('${state.lessonId}')" title="${isWhiteboard ? 'Exit Projector Mode (ESC)' : 'Full-Screen Whiteboard Display'}" style="padding: 6px 14px; border-radius: 7px; border: 1px solid ${isWhiteboard ? '#38bdf8' : '#3b82f6'}; background: ${isWhiteboard ? '#0369a1' : '#eff6ff'}; color: ${isWhiteboard ? '#ffffff' : '#1d4ed8'}; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid ${isWhiteboard ? 'fa-compress' : 'fa-expand'}"></i>
-          <span>${isWhiteboard ? 'Exit Projector (ESC)' : 'Projector Mode'}</span>
+        <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', true, false)" style="background:#10b981;border:none;color:#ffffff;font-weight:900;font-size:1.05rem;padding:12px 28px;border-radius:10px;cursor:pointer;">
+          <i class="fa-solid fa-check"></i> Got It! (+1 Point)
         </button>
       </div>
     </div>
   `;
-
-  let gameHtml = '';
-  if (a.gameMode === 'corners') {
-    gameHtml = renderArenaCornersView(state, arenaData, isWhiteboard);
-  } else if (a.gameMode === 'standoff') {
-    gameHtml = renderArenaStandoffView(state, arenaData, isWhiteboard);
-  } else if (a.gameMode === 'lightning') {
-    gameHtml = renderArenaLightningView(state, arenaData, isWhiteboard);
-  } else {
-    gameHtml = renderArenaTabooView(state, arenaData, isWhiteboard);
-  }
-
-  let portal = document.getElementById('arena-projector-portal');
-  if (isWhiteboard) {
-    if (!portal) {
-      portal = document.createElement('div');
-      portal.id = 'arena-projector-portal';
-      document.body.appendChild(portal);
-    }
-    portal.innerHTML = `
-      <div class="classroom-arena-container arena-theatre" style="position: fixed; inset: 0; z-index: 9999999; background: #0b1120; color: #f8fafc; overflow-y: auto; padding: 30px 48px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start;">
-        ${navHtml}
-        ${gameHtml}
-      </div>
-    `;
-    bodyEl.innerHTML = `
-      <div style="background: #0f172a; border: 2px solid #3b82f6; border-radius: 12px; padding: 24px; text-align: center; color: #f8fafc;">
-        <i class="fa-solid fa-expand" style="font-size: 2rem; color: #38bdf8; margin-bottom: 10px;"></i>
-        <h4 style="margin: 0 0 6px 0; font-family: 'Playfair Display', serif; font-size: 1.25rem;">Projector Mode Active on Whiteboard</h4>
-        <p style="margin: 0 0 14px 0; color: #94a3b8; font-size: 0.88rem;">The Classroom Arena is currently displayed in full-screen theatre mode for front-of-class projection.</p>
-        <button type="button" onclick="window.toggleArenaWhiteboard('${state.lessonId}')" style="background: #2563eb; color: #ffffff; border: none; font-weight: 700; font-size: 0.88rem; padding: 8px 18px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
-          <i class="fa-solid fa-compress"></i> Exit Projector Mode (ESC)
-        </button>
-      </div>
-    `;
-  } else {
-    if (portal) {
-      portal.remove();
-    }
-    bodyEl.innerHTML = `
-      <div class="classroom-arena-container" style="${overlayStyle}">
-        ${navHtml}
-        ${gameHtml}
-      </div>
-    `;
-  }
 }
 
-function renderArenaTabooView(state, arenaData, isWhiteboard) {
+function renderProjectorStandoff(state, arenaData) {
   const a = state.arena;
-  const isTodayDeck = a.tabooDeckType === 'today';
-  const deck = (isTodayDeck && arenaData.todayDeck.length > 0)
-    ? arenaData.todayDeck
-    : arenaData.cumulativeDeck;
-
-  const card = deck.length > 0 ? deck[a.tabooIndex % deck.length] : null;
-  const timeSec = a.tabooTimerSeconds;
-  const mins = Math.floor(timeSec / 60);
-  const secs = timeSec % 60;
-  const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-
-  if (!card) {
-    return `<div style="text-align: center; padding: 40px; color: ${isWhiteboard ? '#94a3b8' : '#64748b'};">No vocabulary terms available for Taboo.</div>`;
-  }
+  const pair = arenaData.standoffPair;
+  if (!pair) return `<div style="text-align:center;padding:40px;color:#94a3b8;">No standoff pair available.</div>`;
+  const isRoleA = a.standoffPhase === 'roleA';
 
   return `
-    <div style="display: flex; flex-direction: column; gap: 16px;">
-      <!-- Deck Toggle, Team Battle & Round Score Bar -->
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-        <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
-          <button type="button" onclick="window.switchArenaTabooDeck('${state.lessonId}', 'cumulative')" style="padding: 5px 12px; border-radius: 6px; border: 1.5px solid ${!isTodayDeck ? '#3b82f6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${!isTodayDeck ? (isWhiteboard ? '#1e3a8a' : '#eff6ff') : 'transparent'}; color: ${!isTodayDeck ? (isWhiteboard ? '#93c5fd' : '#1d4ed8') : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
-            <span>⭐</span> All Cumulative Unit Terms (${arenaData.cumulativeDeck.length})
-          </button>
-          <button type="button" onclick="window.switchArenaTabooDeck('${state.lessonId}', 'today')" style="padding: 5px 12px; border-radius: 6px; border: 1.5px solid ${isTodayDeck ? '#3b82f6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${isTodayDeck ? (isWhiteboard ? '#1e3a8a' : '#eff6ff') : 'transparent'}; color: ${isTodayDeck ? (isWhiteboard ? '#93c5fd' : '#1d4ed8') : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
-            <span>📌</span> Today's Lesson Only (${arenaData.todayDeck.length})
-          </button>
-          <button type="button" onclick="window.toggleArenaTabooTeamMode('${state.lessonId}')" style="padding: 5px 12px; border-radius: 6px; border: 1.5px solid ${a.tabooTeamMode ? '#8b5cf6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${a.tabooTeamMode ? (isWhiteboard ? '#4c1d95' : '#f5f3ff') : 'transparent'}; color: ${a.tabooTeamMode ? (isWhiteboard ? '#c4b5fd' : '#6d28d9') : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
-            <span>⚔️</span> ${a.tabooTeamMode ? 'Team Battle: ON' : 'Team Battle Mode'}
-          </button>
-        </div>
-
-        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-          ${!a.tabooTeamMode ? `
-            <span style="background: ${isWhiteboard ? '#1e293b' : '#fef3c7'}; color: ${isWhiteboard ? '#f59e0b' : '#b45309'}; border: 1px solid ${isWhiteboard ? '#f59e0b' : '#fde68a'}; padding: 4px 12px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;">
-              🔥 Round Score: ${a.tabooScore || 0} Correct
-            </span>
-            <span style="background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; border: 1px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 10px; border-radius: 999px; font-weight: 700; font-size: 0.8rem;">
-              ⏭️ Passes: ${a.tabooPasses || 0}
-            </span>
-          ` : `
-            <div style="display: flex; align-items: center; gap: 6px;">
-              <span style="background: ${isWhiteboard ? '#450a0a' : '#fef2f2'}; color: #ef4444; border: 1.5px solid ${a.tabooActiveTeam === 'red' ? '#ef4444' : (isWhiteboard ? '#7f1d1d' : '#fca5a5')}; padding: 4px 10px; border-radius: 999px; font-weight: 900; font-size: 0.82rem; display: inline-flex; align-items: center; gap: 4px; ${a.tabooActiveTeam === 'red' ? 'box-shadow: 0 0 8px rgba(239,68,68,0.4);' : 'opacity: 0.75;'}">
-                🔴 Red: ${a.tabooTeamRedScore || 0}
-              </span>
-              <span style="background: ${isWhiteboard ? '#172554' : '#eff6ff'}; color: #3b82f6; border: 1.5px solid ${a.tabooActiveTeam === 'blue' ? '#3b82f6' : (isWhiteboard ? '#1e3a8a' : '#93c5fd')}; padding: 4px 10px; border-radius: 999px; font-weight: 900; font-size: 0.82rem; display: inline-flex; align-items: center; gap: 4px; ${a.tabooActiveTeam === 'blue' ? 'box-shadow: 0 0 8px rgba(59,130,246,0.4);' : 'opacity: 0.75;'}">
-                🔵 Blue: ${a.tabooTeamBlueScore || 0}
-              </span>
-              <span style="background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; border: 1px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 8px; border-radius: 999px; font-weight: 700; font-size: 0.78rem;">
-                ⏭️ Passes: ${a.tabooPasses || 0}
-              </span>
-            </div>
-          `}
-
-          <!-- 60s Countdown Timer Controls -->
-          <div style="display: flex; align-items: center; gap: 6px; background: ${isWhiteboard ? '#1e293b' : '#f8fafc'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 3px 8px; border-radius: 8px;">
-            <i class="fa-solid fa-stopwatch" style="color: #3b82f6; font-size: 0.9rem;"></i>
-            <span id="arena-timer-val-taboo-${state.lessonId}" style="font-family: monospace; font-size: 1.15rem; font-weight: 800; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'}; min-width: 52px; text-align: center;">
-              ${timeStr}
-            </span>
-            <button type="button" id="arena-timer-start-taboo-${state.lessonId}" onclick="window.${a.tabooTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'taboo', 60)" style="background: ${a.tabooTimerRunning ? '#f59e0b' : '#10b981'}; color: #ffffff; border: none; padding: 4px 10px; border-radius: 6px; font-weight: 700; font-size: 0.75rem; cursor: pointer;">
-              <i class="fa-solid ${a.tabooTimerRunning ? 'fa-pause' : 'fa-play'}"></i> ${a.tabooTimerRunning ? 'Pause' : 'Start'}
-            </button>
-            <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'taboo', 60)" title="Reset to 60s" style="background: transparent; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; border: none; padding: 4px 6px; cursor: pointer; font-size: 0.8rem;">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      ${a.tabooTeamMode ? `
-        <!-- Team Battle Turn Banner -->
-        <div style="display: flex; justify-content: space-between; align-items: center; background: ${a.tabooActiveTeam === 'red' ? (isWhiteboard ? '#450a0a' : '#fef2f2') : (isWhiteboard ? '#172554' : '#eff6ff')}; border: 2px solid ${a.tabooActiveTeam === 'red' ? '#ef4444' : '#3b82f6'}; border-radius: 12px; padding: 10px 18px; box-shadow: 0 2px 10px rgba(${a.tabooActiveTeam === 'red' ? '239,68,68' : '59,130,246'},0.12); flex-wrap: wrap; gap: 8px;">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span style="font-size: 1.4rem;">${a.tabooActiveTeam === 'red' ? '🔴' : '🔵'}</span>
-            <div>
-              <div style="font-weight: 900; font-size: 0.92rem; color: ${a.tabooActiveTeam === 'red' ? (isWhiteboard ? '#f87171' : '#b91c1c') : (isWhiteboard ? '#60a5fa' : '#1d4ed8')}; text-transform: uppercase; letter-spacing: 0.04em;">
-                ACTIVE TURN: TEAM ${a.tabooActiveTeam === 'red' ? 'RED' : 'BLUE'}
-              </div>
-              <div style="font-size: 0.74rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'};">
-                Teammates from Team ${a.tabooActiveTeam === 'red' ? 'Red' : 'Blue'} give clues to their Hot Seat player!
-              </div>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <button type="button" onclick="window.switchArenaTabooTeam('${state.lessonId}', 'red')" style="background: ${a.tabooActiveTeam === 'red' ? '#ef4444' : 'transparent'}; color: ${a.tabooActiveTeam === 'red' ? '#ffffff' : (isWhiteboard ? '#fca5a5' : '#dc2626')}; border: 1.5px solid #ef4444; padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 0.75rem; cursor: pointer;">
-              🔴 Red's Turn
-            </button>
-            <button type="button" onclick="window.switchArenaTabooTeam('${state.lessonId}', 'blue')" style="background: ${a.tabooActiveTeam === 'blue' ? '#3b82f6' : 'transparent'}; color: ${a.tabooActiveTeam === 'blue' ? '#ffffff' : (isWhiteboard ? '#93c5fd' : '#2563eb')}; border: 1.5px solid #3b82f6; padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 0.75rem; cursor: pointer;">
-              🔵 Blue's Turn
-            </button>
-          </div>
-        </div>
-      ` : ''}
-
-      <!-- Main Secret Taboo Card -->
-      <div style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${isWhiteboard ? '#334155' : '#e2e8f0'}; border-radius: 16px; padding: 28px 24px; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,${isWhiteboard ? '0.3' : '0.06'});">
-        <!-- Origin Badge -->
-        <div style="display: flex; justify-content: center; margin-bottom: 12px;">
-          <span style="background: ${card.isToday ? (isWhiteboard ? '#065f46' : '#dcfce7') : (isWhiteboard ? '#1e3a8a' : '#dbeafe')}; color: ${card.isToday ? (isWhiteboard ? '#a7f3d0' : '#15803d') : (isWhiteboard ? '#bfdbfe' : '#1e40af')}; padding: 3px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase;">
-            ${card.origin}
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:#1e293b;border:1.5px solid #334155;border-radius:14px;padding:16px 20px;margin-bottom:18px;">
+      <div>
+        <div id="standoff-phase-badge-${state.lessonId}">
+          <span style="background:${isRoleA ? '#2563eb' : '#dc2626'};color:#fff;padding:4px 14px;border-radius:999px;font-weight:800;font-size:0.85rem;">
+            ${isRoleA ? '🛡️ PHASE 1: Partner A (First 30s)' : '⚔️ PHASE 2: Partner B (Second 30s)'}
           </span>
         </div>
+        <h3 style="margin:8px 0 0 0;font-size:1.25rem;color:#ffffff;">${pair.prompt || arenaData.enquiry}</h3>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;background:#0f172a;border:1.5px solid #334155;padding:6px 14px;border-radius:10px;">
+        <span id="arena-timer-val-standoff-${state.lessonId}" style="font-family:monospace;font-size:1.5rem;font-weight:900;color:#f8fafc;">${formatSec(a.standoffTimerSeconds)}</span>
+        <button type="button" id="arena-timer-start-standoff-${state.lessonId}" onclick="window.${a.standoffTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'standoff', 60)" style="background:${a.standoffTimerRunning ? '#f59e0b' : '#10b981'};color:#fff;border:none;padding:6px 14px;border-radius:6px;font-weight:800;cursor:pointer;">
+          ${a.standoffTimerRunning ? 'Pause' : 'Start 60s Duel'}
+        </button>
+        <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'standoff', 60)" style="background:transparent;color:#94a3b8;border:none;cursor:pointer;"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+    </div>
 
-        <!-- Target Word Heading -->
-        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: ${isWhiteboard ? '3.4rem' : '2.6rem'}; font-weight: 800; color: ${isWhiteboard ? '#38bdf8' : '#1e3a8a'}; margin: 0 0 18px 0; letter-spacing: -0.01em;">
-          ${card.term}
-        </h2>
-
-        <!-- Red Forbidden Words Box -->
-        <div style="background: ${isWhiteboard ? '#450a0a' : '#fef2f2'}; border: 2px dashed #ef4444; border-radius: 12px; padding: 16px 20px; max-width: 650px; margin: 0 auto 20px auto;">
-          <div style="font-size: 0.78rem; font-weight: 800; color: #ef4444; text-transform: uppercase; letter-spacing: 0.08em; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px;">
-            <i class="fa-solid fa-ban"></i> FORBIDDEN TABOO WORDS (DO NOT SAY!):
-          </div>
-          <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-            ${card.tabooWords.map(w => `
-              <span style="background: ${isWhiteboard ? '#18181b' : '#ffffff'}; border: 2px solid #ef4444; color: #ef4444; font-weight: 900; font-size: ${isWhiteboard ? '1.35rem' : '1.15rem'}; padding: 6px 18px; border-radius: 8px; box-shadow: 0 2px 6px rgba(239,68,68,0.15);">
-                ${w}
-              </span>
-            `).join('')}
-          </div>
-        </div>
-
-        <!-- Definition Lifeline (Toggle for Clue-Givers) -->
-        <div style="margin-bottom: 22px;">
-          <button type="button" onclick="window.toggleArenaTabooDef('${state.lessonId}')" style="background: transparent; border: 1px dashed ${isWhiteboard ? '#64748b' : '#94a3b8'}; color: ${isWhiteboard ? '#cbd5e1' : '#64748b'}; padding: 4px 12px; border-radius: 6px; font-size: 0.78rem; font-weight: 600; cursor: pointer;">
-            <i class="fa-solid fa-lightbulb" style="color: #f59e0b;"></i> ${a.tabooRevealedDef ? 'Hide Definition Lifeline' : 'Show Definition Lifeline (For Clue-Givers)'}
-          </button>
-          ${a.tabooRevealedDef ? `
-            <div style="margin-top: 10px; padding: 10px 16px; background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#334155' : '#e2e8f0'}; border-radius: 8px; font-size: 0.88rem; color: ${isWhiteboard ? '#94a3b8' : '#475569'}; max-width: 650px; margin-left: auto; margin-right: auto; line-height: 1.45;">
-              <strong>Historical Definition:</strong> ${card.definition || 'Key concept essential to this period.'}
-            </div>
-          ` : ''}
-        </div>
-
-        <!-- Action Control Buttons -->
-        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-          <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', false, true)" style="background: ${isWhiteboard ? '#78350f' : '#fef3c7'}; border: 1.5px solid ${isWhiteboard ? '#f59e0b' : '#fcd34d'}; color: ${isWhiteboard ? '#fef3c7' : '#92400e'}; font-weight: 700; font-size: 0.92rem; padding: 10px 20px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(245,158,11,0.15);">
-            <i class="fa-solid fa-forward-step"></i> Pass / Skip Card
-          </button>
-          <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', true, false)" style="background: #10b981; border: none; color: #ffffff; font-weight: 800; font-size: 0.95rem; padding: 10px 26px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.3);">
-            <i class="fa-solid fa-check"></i> ${a.tabooTeamMode ? `Got It! (+1 to Team ${a.tabooActiveTeam === 'red' ? 'Red 🔴' : 'Blue 🔵'})` : 'Got It! (+1 Point)'}
-          </button>
-          <button type="button" onclick="window.shuffleArenaTaboo('${state.lessonId}')" title="Reshuffle deck & reset score" style="background: transparent; border: 1px solid ${isWhiteboard ? '#475569' : '#cbd5e1'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; font-weight: 600; font-size: 0.82rem; padding: 10px 14px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-shuffle"></i> Reshuffle & Reset
-          </button>
-        </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;">
+      <div id="standoff-card-a-${state.lessonId}" style="background:#1e293b;border:2.5px solid ${isRoleA ? '#2563eb' : '#334155'};border-radius:16px;padding:22px;opacity:${isRoleA ? '1' : '0.72'};">
+        <span style="background:#2563eb;color:#fff;padding:4px 10px;border-radius:6px;font-weight:800;font-size:0.8rem;">🛡️ PARTNER A: ${pair.roleA.name}</span>
+        <p style="margin:12px 0;font-size:1rem;color:#e2e8f0;line-height:1.5;"><strong>Objective:</strong> ${pair.roleA.objective}</p>
+        <div style="background:#0f172a;border-left:4px solid #2563eb;padding:12px;border-radius:6px;color:#93c5fd;font-style:italic;">${pair.roleA.starter}</div>
       </div>
 
-      <!-- Classroom Teacher Protocol Note -->
-      <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; border-radius: 8px; padding: 10px 14px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; line-height: 1.45;">
-        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> Seat one pupil in the "Hot Seat" with their back to the screen. Classmates raise hands to give historical clues explaining the concept WITHOUT saying any of the 3 red taboo words! ${a.tabooTeamMode ? 'In Team Battle Mode, switch turns after each 60-second round so Team Red and Team Blue alternate hot seat contenders.' : 'Rotate pupils after each 60s round.'}
+      <div id="standoff-card-b-${state.lessonId}" style="background:#1e293b;border:2.5px solid ${!isRoleA ? '#dc2626' : '#334155'};border-radius:16px;padding:22px;opacity:${!isRoleA ? '1' : '0.72'};">
+        <span style="background:#dc2626;color:#fff;padding:4px 10px;border-radius:6px;font-weight:800;font-size:0.8rem;">⚔️ PARTNER B: ${pair.roleB.name}</span>
+        <p style="margin:12px 0;font-size:1rem;color:#e2e8f0;line-height:1.5;"><strong>Objective:</strong> ${pair.roleB.objective}</p>
+        <div style="background:#0f172a;border-left:4px solid #dc2626;padding:12px;border-radius:6px;color:#fca5a5;font-style:italic;">${pair.roleB.starter}</div>
       </div>
     </div>
   `;
 }
 
-function renderArenaCornersView(state, arenaData, isWhiteboard) {
+function renderProjectorCorners(state, arenaData) {
   const a = state.arena;
-  const timeSec = a.cornersTimerSeconds;
-  const mins = Math.floor(timeSec / 60);
-  const secs = timeSec % 60;
-  const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
   const corners = arenaData.cornerItems || [];
-  const selectedIdx = a.cornersSelectedCorner;
-
   return `
-    <div style="display: flex; flex-direction: column; gap: 16px;">
-      <!-- Enquiry Banner & Group Consultation Timer -->
-      <div style="background: linear-gradient(135deg, ${isWhiteboard ? '#1e293b 0%, #0f172a 100%' : '#f8fafc 0%, #f1f5f9 100%'}); border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; border-radius: 12px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-        <div style="flex: 1; min-width: 260px;">
-          <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #3b82f6; letter-spacing: 0.05em; margin-bottom: 4px;">
-            TODAY'S BIG ENQUIRY QUESTION:
-          </div>
-          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: ${isWhiteboard ? '1.3rem' : '1.15rem'}; font-weight: 700; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'}; line-height: 1.35;">
-            &ldquo;${arenaData.enquiry}&rdquo;
-          </h3>
-          <p style="margin: 4px 0 0 0; font-size: 0.82rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'};">
-            Move to your chosen corner. Agree with your group on your 1-sentence knockdown historical defense!
-          </p>
-        </div>
-
-        <!-- 60s Consultation Countdown Timer -->
-        <div style="display: flex; align-items: center; gap: 8px; background: ${isWhiteboard ? '#0f172a' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 6px 12px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
-          <div style="display: flex; flex-direction: column; align-items: flex-end;">
-            <span style="font-size: 0.68rem; text-transform: uppercase; font-weight: 800; color: #64748b; letter-spacing: 0.04em;">Group Debate Clock</span>
-            <span id="arena-timer-val-corners-${state.lessonId}" style="font-family: monospace; font-size: 1.35rem; font-weight: 800; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'};">
-              ${timeStr}
-            </span>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 3px;">
-            <button type="button" id="arena-timer-start-corners-${state.lessonId}" onclick="window.${a.cornersTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'corners', 60)" style="background: ${a.cornersTimerRunning ? '#f59e0b' : '#10b981'}; color: #ffffff; border: none; padding: 4px 10px; border-radius: 5px; font-weight: 700; font-size: 0.72rem; cursor: pointer;">
-              <i class="fa-solid ${a.cornersTimerRunning ? 'fa-pause' : 'fa-play'}"></i> ${a.cornersTimerRunning ? 'Pause' : 'Start'}
-            </button>
-            <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'corners', 60)" title="Reset to 60s" style="background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; border: 1px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; cursor: pointer; text-align: center;">
-              Reset
-            </button>
-          </div>
-        </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:#1e293b;border:1.5px solid #334155;border-radius:14px;padding:16px 20px;margin-bottom:18px;">
+      <div>
+        <div style="font-size:0.76rem;font-weight:800;color:#38bdf8;text-transform:uppercase;">FOUR CORNERS ENQUIRY DEBATE</div>
+        <h3 style="margin:4px 0 0 0;font-size:1.3rem;color:#ffffff;">&ldquo;${arenaData.enquiry}&rdquo;</h3>
       </div>
+      <div style="display:flex;align-items:center;gap:8px;background:#0f172a;border:1.5px solid #334155;padding:6px 14px;border-radius:10px;">
+        <span id="arena-timer-val-corners-${state.lessonId}" style="font-family:monospace;font-size:1.5rem;font-weight:900;color:#f8fafc;">${formatSec(a.cornersTimerSeconds)}</span>
+        <button type="button" id="arena-timer-start-corners-${state.lessonId}" onclick="window.${a.cornersTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'corners', 60)" style="background:${a.cornersTimerRunning ? '#f59e0b' : '#10b981'};color:#fff;border:none;padding:6px 14px;border-radius:6px;font-weight:800;cursor:pointer;">
+          ${a.cornersTimerRunning ? 'Pause' : 'Start 60s'}
+        </button>
+        <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'corners', 60)" style="background:transparent;color:#94a3b8;border:none;cursor:pointer;"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+    </div>
 
-      <!-- 4 Corners 2x2 Interactive Grid -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px; max-width: 100%; box-sizing: border-box;">
-        ${corners.map((c, idx) => {
-    const isSelected = selectedIdx === idx;
-    return `
-            <div onclick="window.selectArenaCorner('${state.lessonId}', ${idx})" style="background: ${isWhiteboard ? (isSelected ? '#1e293b' : '#0f172a') : (isSelected ? '#f8fafc' : '#ffffff')}; border: ${isSelected ? '2.5px solid #f59e0b' : `1.5px solid ${isWhiteboard ? '#334155' : c.border}`}; border-left: 5px solid ${c.color}; border-radius: 12px; padding: clamp(12px, 3vw, 18px); cursor: pointer; transition: all 0.2s ease; box-shadow: ${isSelected ? '0 0 0 3px rgba(245,158,11,0.25)' : '0 2px 8px rgba(0,0,0,0.04)'}; display: flex; flex-direction: column; justify-content: space-between; min-width: 0; box-sizing: border-box; overflow-wrap: break-word; word-break: break-word;">
-              <div>
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                  <span style="background: ${isWhiteboard ? '#1e293b' : c.badgeBg}; color: ${c.color}; padding: 2px 8px; border-radius: 6px; font-weight: 800; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em;">
-                    📍 ${c.corner} &bull; ${c.location}
-                  </span>
-                  ${isSelected ? '<span style="background: #f59e0b; color: #000000; font-weight: 800; font-size: 0.68rem; padding: 2px 6px; border-radius: 4px;">SPOTLIGHTED</span>' : ''}
-                </div>
-                <div style="font-size: 0.78rem; font-weight: 800; color: ${c.color}; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 2px;">
-                  ${c.label}
-                </div>
-                <h4 style="margin: 0 0 8px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'};">
-                  ${c.title}
-                </h4>
-                <p style="margin: 0; font-size: 0.85rem; color: ${isWhiteboard ? '#cbd5e1' : '#475569'}; line-height: 1.45;">
-                  ${c.detail}
-                </p>
-                ${c.starter ? `
-                  <div style="margin-top: 10px; background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border-left: 3.5px solid ${c.color}; padding: 7px 10px; border-radius: 4px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#334155'}; font-style: italic; line-height: 1.4;">
-                    ${c.starter}
-                  </div>
-                ` : ''}
-              </div>
-              <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; color: #94a3b8;">
-                <span>Click to spotlight corner</span>
-                <i class="fa-solid fa-arrow-pointer"></i>
-              </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">
+      ${corners
+        .map((c, idx) => {
+          const sel = a.cornersSelectedCorner === idx;
+          return `
+            <div onclick="window.selectArenaCorner('${state.lessonId}', ${idx})" style="background:#1e293b;border:2px solid ${sel ? '#f59e0b' : '#334155'};border-left:6px solid ${c.color};border-radius:14px;padding:18px;cursor:pointer;">
+              <div style="font-size:0.76rem;font-weight:800;color:${c.color};text-transform:uppercase;margin-bottom:4px;">📍 ${c.corner} &bull; ${c.location}</div>
+              <h4 style="margin:0 0 8px 0;font-size:1.2rem;color:#ffffff;">${c.title}</h4>
+              <p style="margin:0;font-size:0.9rem;color:#cbd5e1;line-height:1.45;">${c.detail}</p>
             </div>
           `;
-  }).join('')}
-      </div>
-
-      <!-- Spotlight Banner (If a corner is selected) -->
-      ${selectedIdx !== null && corners[selectedIdx] ? `
-        <div style="background: #fffbeb; border: 2px solid #f59e0b; border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; animation: fadeIn 0.2s ease;">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <div style="width: 36px; height: 36px; border-radius: 8px; background: #f59e0b; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
-              🎤
-            </div>
-            <div>
-              <div style="font-weight: 800; font-size: 0.88rem; color: #92400e;">
-                SPOTLIGHT: ${corners[selectedIdx].corner} (${corners[selectedIdx].location}) &bull; ${corners[selectedIdx].title}
-              </div>
-              <div style="font-size: 0.82rem; color: #78350f;">
-                Spokesperson: You have 30 seconds to defend why <strong>${corners[selectedIdx].title}</strong> was the decisive historical turning point!
-              </div>
-              ${corners[selectedIdx].starter ? `
-                <div style="margin-top: 4px; font-size: 0.8rem; font-style: italic; color: #b45309;">
-                  Defense Stance: ${corners[selectedIdx].starter}
-                </div>
-              ` : ''}
-            </div>
-          </div>
-          <button type="button" onclick="window.selectArenaCorner('${state.lessonId}', ${selectedIdx})" style="background: #ffffff; border: 1px solid #d97706; color: #92400e; padding: 4px 10px; border-radius: 6px; font-weight: 700; font-size: 0.75rem; cursor: pointer;">
-            Clear Spotlight
-          </button>
-        </div>
-      ` : ''}
-
-      <!-- Classroom Teacher Protocol Note -->
-      <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; border-radius: 8px; padding: 10px 14px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; line-height: 1.45;">
-        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> Pupils walk to their chosen corner. In groups, they have 60s to agree on their strongest historical argument. The teacher then invites a spokesperson from each corner to present their 30s pitch and cross-examine opposing corners.
-      </div>
+        })
+        .join('')}
     </div>
   `;
 }
 
-function renderArenaStandoffView(state, arenaData, isWhiteboard) {
-  const a = state.arena;
-  const timeSec = a.standoffTimerSeconds;
-  const mins = Math.floor(timeSec / 60);
-  const secs = timeSec % 60;
-  const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-  const pair = arenaData.standoffPair;
-
-  if (!pair) {
-    return `<div style="text-align: center; padding: 40px; color: #64748b;">No historical roleplay pairs available.</div>`;
-  }
-
-  const isRoleA = a.standoffPhase === 'roleA';
-  const isHistoriographical = pair.category === 'historiographical';
-  const isKs2Standoff = Boolean(state.isKs2 || state.unitId === 'ks2_ww2');
-
-  const mastheadBadgeText = isHistoriographical
-    ? isKs2Standoff
-      ? 'HISTORIAN DEBATE DUEL &bull; 30S VIEWPOINT 1 &bull; 30S VIEWPOINT 2'
-      : 'HISTORIOGRAPHICAL SHOULDER-PARTNER DUEL &bull; 30s INTERPRETATION 1 &bull; 30s INTERPRETATION 2'
-    : 'HISTORICAL SHOULDER-PARTNER DUEL &bull; 30s DEFENSE &bull; 30s REBUTTAL';
-
-  const teacherProtocolText = isHistoriographical
-    ? isKs2Standoff
-      ? 'Shoulder partners compare two historical viewpoints using evidence! Partner A presents Viewpoint 1 for 30 seconds. At the chime, Partner B presents Viewpoint 2 using their key evidence!'
-      : 'Shoulder partners analyze opposing historical arguments. Partner A presents Interpretation 1 using evidence for 30s. At the chime, Partner B presents Interpretation 2 using counter-evidence!'
-    : 'Shoulder partners turn to face each other. Partner A has 30 seconds uninterrupted to argue their stance. At the chime (30s mark), Partner B immediately launches their 30-second rebuttal using opposing historical evidence!';
-
-  const keyTermsA = pair.roleA.keyTerms && pair.roleA.keyTerms.length > 0 ? `
-    <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed ${isWhiteboard ? '#334155' : '#cbd5e1'}; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-      <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.04em;">Key Evidence:</span>
-      ${pair.roleA.keyTerms.map(t => `<span style="background: ${isWhiteboard ? '#0f172a' : '#eff6ff'}; border: 1px solid #93c5fd; color: #1e40af; font-size: 0.74rem; font-weight: 700; padding: 2px 7px; border-radius: 4px;">${t}</span>`).join('')}
-    </div>
-  ` : '';
-
-  const keyTermsB = pair.roleB.keyTerms && pair.roleB.keyTerms.length > 0 ? `
-    <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed ${isWhiteboard ? '#334155' : '#cbd5e1'}; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-      <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.04em;">Key Evidence:</span>
-      ${pair.roleB.keyTerms.map(t => `<span style="background: ${isWhiteboard ? '#0f172a' : '#fef2f2'}; border: 1px solid #fca5a5; color: #b91c1c; font-size: 0.74rem; font-weight: 700; padding: 2px 7px; border-radius: 4px;">${t}</span>`).join('')}
-    </div>
-  ` : '';
-
-  return `
-    <div style="display: flex; flex-direction: column; gap: 16px;">
-      <!-- Masthead & Standoff Timer -->
-      <div style="background: linear-gradient(135deg, ${isWhiteboard ? '#1e293b 0%, #0f172a 100%' : '#f8fafc 0%, #f1f5f9 100%'}); border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; border-radius: 12px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-        <div>
-          <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #8b5cf6; letter-spacing: 0.05em; margin-bottom: 4px;">
-            ${mastheadBadgeText}
-          </div>
-          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: ${isWhiteboard ? '1.25rem' : '1.15rem'}; font-weight: 700; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'};">
-            ${pair.roleA.name} vs. ${pair.roleB.name}
-          </h3>
-          ${pair.subtitle ? `<div style="font-size: 0.82rem; font-weight: 700; color: #8b5cf6; margin-top: 3px;">${pair.subtitle}</div>` : ''}
-          <p style="margin: 3px 0 0 0; font-size: 0.82rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'};">
-            ${isHistoriographical ? (isKs2Standoff ? 'Face your shoulder partner. Partner A explains Viewpoint 1 for 30s. At the chime, Partner B explains Viewpoint 2!' : 'Face your shoulder partner. Partner A defends Interpretation 1 for 30s. At the chime, Partner B counter-argues with Interpretation 2!') : 'Face your shoulder partner. Partner A defends their actions for 30s. At the chime, Partner B rebuts with evidence!'}
-          </p>
-        </div>
-
-        <!-- Standoff Dual Timer & Active Phase Badge -->
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; width: 100%; box-sizing: border-box;">
-          <div id="standoff-phase-badge-${state.lessonId}" style="flex: 1 1 auto; min-width: 0; max-width: 100%;">
-            ${isRoleA
-      ? `<span style="background: #2563eb; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${isHistoriographical ? (isKs2Standoff ? 'Viewpoint 1' : 'Interpretation') : 'Defending'} (30s)</span>`
-      : `<span style="background: #dc2626; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${isHistoriographical ? (isKs2Standoff ? 'Viewpoint 2' : 'Counter-View') : 'Rebutting'} (30s)</span>`}
-          </div>
-
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: ${isWhiteboard ? '#0f172a' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 10px; border-radius: 8px; flex-shrink: 0; white-space: nowrap;">
-            <span id="arena-timer-val-standoff-${state.lessonId}" style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'}; min-width: 50px; text-align: center; white-space: nowrap; font-variant-numeric: tabular-nums;">
-              ${timeStr}
-            </span>
-            <button type="button" id="arena-timer-start-standoff-${state.lessonId}" onclick="window.${a.standoffTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'standoff', 60)" style="background: ${a.standoffTimerRunning ? '#f59e0b' : '#10b981'}; color: #ffffff; border: none; padding: 4px 10px; border-radius: 5px; font-weight: 700; font-size: 0.72rem; cursor: pointer; white-space: nowrap;">
-              <i class="fa-solid ${a.standoffTimerRunning ? 'fa-pause' : 'fa-play'}"></i> ${a.standoffTimerRunning ? 'Pause' : 'Start'}
-            </button>
-            <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'standoff', 60)" title="Reset duel" style="background: transparent; color: #64748b; border: none; padding: 4px; cursor: pointer;">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Side-by-Side Facing Dual Cards -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; max-width: 100%; box-sizing: border-box;">
-        <!-- Partner A Card (Blue) -->
-        <div id="standoff-card-a-${state.lessonId}" style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${isRoleA ? '#2563eb' : (isWhiteboard ? '#334155' : '#cbd5e1')}; border-radius: 14px; padding: clamp(14px, 3.5vw, 20px); box-shadow: ${isRoleA ? '0 0 0 3px rgba(37,99,235,0.3)' : 'none'}; opacity: ${isRoleA ? '1' : '0.7'}; transition: all 0.25s ease; min-width: 0; box-sizing: border-box; overflow-wrap: break-word; word-break: break-word;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-            <span style="background: #2563eb; color: #ffffff; padding: 4px 10px; border-radius: 6px; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; max-width: 100%; line-height: 1.35; overflow-wrap: break-word; word-break: break-word;">
-              🛡️ PARTNER A: ${pair.roleA.name}
-            </span>
-            <span style="font-size: 0.75rem; font-weight: 700; color: #3b82f6;">First 30 Seconds</span>
-          </div>
-          <div style="font-size: 0.82rem; font-weight: 700; color: #64748b; margin-bottom: 6px;">
-            ${pair.roleA.title}
-          </div>
-          <p style="margin: 0 0 14px 0; font-size: 0.92rem; color: ${isWhiteboard ? '#cbd5e1' : '#334155'}; line-height: 1.45;">
-            <strong>Objective:</strong> ${pair.roleA.objective}
-          </p>
-          <div style="background: ${isWhiteboard ? '#0f172a' : '#f1f5f9'}; border-left: 4px solid #2563eb; padding: 10px 14px; border-radius: 6px; font-size: 0.88rem; color: ${isWhiteboard ? '#93c5fd' : '#1e40af'}; font-style: italic;">
-            ${pair.roleA.starter}
-          </div>
-          ${keyTermsA}
-        </div>
-
-        <!-- Partner B Card (Crimson) -->
-        <div id="standoff-card-b-${state.lessonId}" style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${!isRoleA ? '#dc2626' : (isWhiteboard ? '#334155' : '#cbd5e1')}; border-radius: 14px; padding: clamp(14px, 3.5vw, 20px); box-shadow: ${!isRoleA ? '0 0 0 3px rgba(220,38,38,0.3)' : 'none'}; opacity: ${!isRoleA ? '1' : '0.7'}; transition: all 0.25s ease; min-width: 0; box-sizing: border-box; overflow-wrap: break-word; word-break: break-word;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-            <span style="background: #dc2626; color: #ffffff; padding: 4px 10px; border-radius: 6px; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; max-width: 100%; line-height: 1.35; overflow-wrap: break-word; word-break: break-word;">
-              ⚔️ PARTNER B: ${pair.roleB.name}
-            </span>
-            <span style="font-size: 0.75rem; font-weight: 700; color: #ef4444;">Second 30 Seconds</span>
-          </div>
-          <div style="font-size: 0.82rem; font-weight: 700; color: #64748b; margin-bottom: 6px;">
-            ${pair.roleB.title}
-          </div>
-          <p style="margin: 0 0 14px 0; font-size: 0.92rem; color: ${isWhiteboard ? '#cbd5e1' : '#334155'}; line-height: 1.45;">
-            <strong>Objective:</strong> ${pair.roleB.objective}
-          </p>
-          <div style="background: ${isWhiteboard ? '#0f172a' : '#fef2f2'}; border-left: 4px solid #dc2626; padding: 10px 14px; border-radius: 6px; font-size: 0.88rem; color: ${isWhiteboard ? '#fca5a5' : '#b91c1c'}; font-style: italic;">
-            ${pair.roleB.starter}
-          </div>
-          ${keyTermsB}
-        </div>
-      </div>
-
-      <!-- Classroom Teacher Protocol Note -->
-      <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; border-radius: 8px; padding: 10px 14px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; line-height: 1.45;">
-        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> ${teacherProtocolText}
-      </div>
-    </div>
-  `;
-}
-
-function renderArenaLightningView(state, arenaData, isWhiteboard) {
-  const a = state.arena;
-  const timeSec = a.lightningTimerSeconds;
-  const mins = Math.floor(timeSec / 60);
-  const secs = timeSec % 60;
-  const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-
-  const seated = a.seatedCount || 0;
-  const target = a.targetStudents || 30;
-  const pct = Math.min(100, Math.round((seated / target) * 100));
-  const isComplete = seated >= target;
-
-  return `
-    <div style="display: flex; flex-direction: column; gap: 16px;">
-      <!-- Rules Banner -->
-      <div style="background: linear-gradient(135deg, ${isWhiteboard ? '#1e293b 0%, #0f172a 100%' : '#f8fafc 0%, #f1f5f9 100%'}); border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; border-radius: 12px; padding: 14px 18px;">
-        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #f59e0b; letter-spacing: 0.05em; margin-bottom: 4px;">
-          ⚡ LIGHTNING CHAIN &bull; WHOLE-CLASS STAND-TO-SIT RECALL
-        </div>
-        <p style="margin: 0; font-size: 0.85rem; color: ${isWhiteboard ? '#cbd5e1' : '#334155'}; line-height: 1.45;">
-          <strong>Rules:</strong> 1. Entire class stands up. &bull; 2. 90-second countdown begins. &bull; 3. Go in sequence: each pupil states <strong>ONE unrepeated historical fact, date, or key term</strong> from today. &bull; 4. Once accepted, SIT DOWN! &bull; 5. Can the class sit down before the clock hits 0?
-        </p>
-      </div>
-
-      <!-- Giant Countdown & Counter Terminal -->
-      <div style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2px solid ${isWhiteboard ? '#334155' : '#e2e8f0'}; border-radius: 16px; padding: 24px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-        <!-- Giant Digital Clock Display -->
-        <div style="display: flex; justify-content: center; align-items: baseline; gap: 10px; margin-bottom: 12px;">
-          <span id="arena-timer-val-lightning-${state.lessonId}" style="font-family: monospace; font-size: ${isWhiteboard ? '4.5rem' : '3.6rem'}; font-weight: 900; color: ${timeSec <= 10 && timeSec > 0 ? '#ef4444' : (isWhiteboard ? '#38bdf8' : '#0f172a')}; letter-spacing: 0.02em;">
-            ${timeStr}
-          </span>
-        </div>
-
-        <!-- Timer Controls -->
-        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 24px;">
-          <button type="button" id="arena-timer-start-lightning-${state.lessonId}" onclick="window.${a.lightningTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'lightning', 90)" style="background: ${a.lightningTimerRunning ? '#f59e0b' : '#10b981'}; color: #ffffff; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 800; font-size: 0.95rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.25);">
-            <i class="fa-solid ${a.lightningTimerRunning ? 'fa-pause' : 'fa-play'}"></i> ${a.lightningTimerRunning ? 'Pause Clock' : 'Start 90s Countdown'}
-          </button>
-          <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'lightning', 90)" style="background: ${isWhiteboard ? '#334155' : '#f1f5f9'}; border: 1.5px solid ${isWhiteboard ? '#475569' : '#cbd5e1'}; color: ${isWhiteboard ? '#e2e8f0' : '#475569'}; padding: 10px 16px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-rotate-right"></i> Reset Clock
-          </button>
-        </div>
-
-        <!-- Class Size Preset Selector & Seated Counter -->
-        <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#e2e8f0'}; border-radius: 12px; padding: 18px 20px; max-width: 600px; margin: 0 auto 16px auto;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; padding-bottom: 12px;">
-            <!-- Manual Input & Steppers -->
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 0.8rem; font-weight: 800; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; text-transform: uppercase; letter-spacing: 0.04em;">
-                <i class="fa-solid fa-users"></i> Class Size:
-              </span>
-              <div style="display: flex; align-items: center; gap: 3px; background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#38bdf8' : '#3b82f6'}; border-radius: 8px; padding: 2px 4px;">
-                <button type="button" onclick="window.adjustArenaClassSize('${state.lessonId}', -1)" title="Decrease class size" style="width: 24px; height: 24px; border: none; background: transparent; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; font-weight: 800; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">-</button>
-                <input type="number" id="class-size-manual-${state.lessonId}" min="1" max="99" value="${target}" onchange="window.setArenaClassSize('${state.lessonId}', this.value)" onkeydown="if(event.key==='Enter'){this.blur();}" style="width: 44px; border: none; background: transparent; font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 800; text-align: center; color: ${isWhiteboard ? '#38bdf8' : '#1d4ed8'}; outline: none;" />
-                <button type="button" onclick="window.adjustArenaClassSize('${state.lessonId}', 1)" title="Increase class size" style="width: 24px; height: 24px; border: none; background: transparent; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; font-weight: 800; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">+</button>
-              </div>
-              <span style="font-size: 0.78rem; font-weight: 600; color: #94a3b8;">pupils</span>
-            </div>
-
-            <!-- Quick Presets -->
-            <div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
-              <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #94a3b8; margin-right: 2px;">Presets:</span>
-              ${[15, 20, 25, 28, 30, 32].map(sz => `
-                <button type="button" onclick="window.setArenaClassSize('${state.lessonId}', ${sz})" style="padding: 3px 8px; border-radius: 5px; border: 1px solid ${target === sz ? '#3b82f6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${target === sz ? '#3b82f6' : 'transparent'}; color: ${target === sz ? '#ffffff' : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.75rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">
-                  ${sz}
-                </button>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Seated Pupils Counter -->
-          <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 12px;">
-            <button type="button" onclick="window.adjustArenaSeated('${state.lessonId}', -1)" title="Subtract 1 pupil" style="width: 44px; height: 44px; border-radius: 10px; background: ${isWhiteboard ? '#334155' : '#e2e8f0'}; border: none; font-size: 1.3rem; font-weight: 800; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'}; cursor: pointer; display: flex; align-items: center; justify-content: center;">
-              -
-            </button>
-            <div style="text-align: center;">
-              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 2.2rem; font-weight: 800; color: ${isComplete ? '#10b981' : (isWhiteboard ? '#f8fafc' : '#0f172a')}; line-height: 1;">
-                ${seated} / ${target}
-              </div>
-              <div style="font-size: 0.78rem; font-weight: 700; color: #64748b; margin-top: 4px;">
-                Pupils Seated (${pct}%)
-              </div>
-            </div>
-            <button type="button" onclick="window.adjustArenaSeated('${state.lessonId}', 1)" title="Add 1 seated pupil" style="width: 44px; height: 44px; border-radius: 10px; background: #10b981; border: none; font-size: 1.3rem; font-weight: 800; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(16,185,129,0.3);">
-              +
-            </button>
-          </div>
-
-          <!-- Progress Bar -->
-          <div style="height: 10px; width: 100%; background: ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; border-radius: 999px; overflow: hidden;">
-            <div style="height: 100%; width: ${pct}%; background: linear-gradient(90deg, #10b981, #059669); transition: width 0.25s ease;"></div>
-          </div>
-        </div>
-
-        <!-- Class Victory Celebration Banner -->
-        ${isComplete ? `
-          <div style="background: #f0fdf4; border: 2px solid #22c55e; border-radius: 10px; padding: 14px 20px; max-width: 600px; margin: 0 auto 16px auto; animation: fadeIn 0.3s ease;">
-            <div style="font-size: 1.1rem; font-weight: 800; color: #15803d; display: flex; align-items: center; justify-content: center; gap: 8px;">
-              🎉 CLASS VICTORY!
-            </div>
-            <p style="margin: 4px 0 0 0; color: #166534; font-size: 0.88rem;">
-              All ${target} pupils successfully recalled historical evidence and are seated before the buzzer!
-            </p>
-          </div>
-        ` : ''}
-
-        <!-- Student Freeze Lifeline Drawer (Toggle) -->
-        <div style="max-width: 600px; margin: 0 auto;">
-          <button type="button" onclick="window.toggleArenaLifeline('${state.lessonId}')" style="background: transparent; border: 1px dashed ${isWhiteboard ? '#64748b' : '#94a3b8'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer;">
-            <i class="fa-solid fa-lightbulb" style="color: #f59e0b;"></i> ${a.showLifeline ? 'Hide Student Freeze Lifeline' : 'Student Freeze Lifeline (Fact Idea Bank)'}
-          </button>
-          ${a.showLifeline ? `
-            <div style="margin-top: 10px; padding: 12px 16px; background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; border-radius: 8px; text-align: left;">
-              <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #f59e0b; margin-bottom: 6px;">
-                Fact Inspiration Bank (If a pupil hesitates):
-              </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-                ${(arenaData.quickFacts || []).map(f => `
-                  <span style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 1px solid ${isWhiteboard ? '#334155' : '#e2e8f0'}; color: ${isWhiteboard ? '#cbd5e1' : '#334155'}; font-size: 0.75rem; padding: 3px 8px; border-radius: 5px;">
-                    ${f}
-                  </span>
-                `).join('')}
-              </div>
-            </div>
-          ` : ''}
-        </div>
-      </div>
-
-      <!-- Classroom Teacher Protocol Note -->
-      <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; border-radius: 8px; padding: 10px 14px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; line-height: 1.45;">
-        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> High-energy, low-stakes plenary. If a pupil hesitates for more than 5 seconds, allow a classmate to offer a quick keyword hint, or click the Freeze Lifeline so the chain never stalls.
-      </div>
-    </div>
-  `;
-}
-
-// -------------------------------------------------------------
-// STATION OPEN/COLLAPSE UI SYNCHRONIZATION & GLOBAL HANDLERS
-// -------------------------------------------------------------
-function syncStationOpenUI(lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state) return;
-
-  const isOpen = Boolean(state.isOpen);
-
-  const bodyEl = document.getElementById(`station-body-${lessonId}`);
-  if (bodyEl) {
-    bodyEl.style.display = isOpen ? 'block' : 'none';
-  }
-
-  const mastheadEl = document.getElementById(`station-masthead-${lessonId}`);
-  if (mastheadEl) {
-    mastheadEl.style.borderBottom = isOpen ? '2px solid #e2e8f0' : 'none';
-  }
-
-  const hintEl = document.getElementById(`station-status-hint-${lessonId}`);
-  if (hintEl) {
-    hintEl.innerHTML = isOpen
-      ? 'Click active tab or Collapse to close &bull; Plenary &amp; Retrieval'
-      : 'Select any activity tab to expand &bull; Plenary &amp; Retrieval';
-  }
-
-  const titleChevron = document.getElementById(`station-title-chevron-${lessonId}`);
-  if (titleChevron) {
-    titleChevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
-  }
-
-  const collapseBtn = document.getElementById(`station-collapse-btn-${lessonId}`);
-  if (collapseBtn) {
-    collapseBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    collapseBtn.title = isOpen
-      ? 'Collapse Check & Consolidate Hub'
-      : 'Expand Check & Consolidate Hub';
-    collapseBtn.style.background = isOpen ? '#ffffff' : '#e2e8f0';
-    collapseBtn.innerHTML = isOpen
-      ? '<span>Collapse</span> <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; transition: transform 0.2s ease; transform: rotate(180deg);"></i>'
-      : '<span>Expand</span> <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; transition: transform 0.2s ease; transform: rotate(0deg);"></i>';
-  }
-
-  const card = document.getElementById(`consolidate-station-${lessonId}`);
-  if (card) {
-    card.querySelectorAll('.station-tab-btn').forEach((btn) => {
-      const icon = btn.querySelector('i');
-      if (!isOpen) {
-        btn.classList.remove('active');
-        btn.setAttribute('aria-selected', 'false');
-        btn.style.background = '#ffffff';
-        btn.style.color = '#1e293b';
-        btn.style.border = '1px solid #cbd5e1';
-        btn.style.boxShadow = '0 1px 2px rgba(0,0,0,0.04)';
-        if (icon && icon.dataset.defaultColor) {
-          icon.style.color = icon.dataset.defaultColor;
-        }
-      } else {
-        const isActive =
-          (btn.dataset.mode && btn.dataset.mode === state.mode) ||
-          btn.id === `tab-btn-${state.mode}-${lessonId}`;
-        if (isActive) {
-          btn.classList.add('active');
-          btn.setAttribute('aria-selected', 'true');
-          btn.style.background = '#0f172a';
-          btn.style.color = '#ffffff';
-          btn.style.border = '1px solid #0f172a';
-          btn.style.boxShadow = '0 2px 6px rgba(15,23,42,0.18)';
-          if (icon && icon.dataset.activeColor) {
-            icon.style.color = icon.dataset.activeColor;
-          }
-        } else {
-          btn.classList.remove('active');
-          btn.setAttribute('aria-selected', 'false');
-          btn.style.background = 'transparent';
-          btn.style.color = '#475569';
-          btn.style.border = '1px solid transparent';
-          btn.style.boxShadow = 'none';
-          if (icon && icon.dataset.defaultColor) {
-            icon.style.color = icon.dataset.defaultColor;
-          }
-        }
-      }
-    });
-  }
-}
-
+// =============================================================
+// GLOBAL WINDOW HANDLERS (BACKWARDS-COMPATIBLE + NEW)
+// =============================================================
 window.toggleConsolidateStation = function (lessonId, evt) {
-  const e = evt || (typeof window !== 'undefined' ? window.event : null);
-  if (e && typeof e.stopPropagation === 'function') {
-    e.stopPropagation();
-  }
-
+  if (evt?.stopPropagation) evt.stopPropagation();
   const state = window.consolidateStations[lessonId];
   if (!state) return;
-
-  if (state.isOpen) {
-    stopAllArenaTimers(state);
-    state.isOpen = false;
-    syncStationOpenUI(lessonId);
-  } else {
-    state.isOpen = true;
-    syncStationOpenUI(lessonId);
-    renderStationContent(lessonId);
-  }
+  state.isOpen = !state.isOpen;
+  renderQuickQuizDrawer(lessonId);
 };
 
 window.switchConsolidateTab = function (lessonId, newMode, evt) {
-  const e = evt || (typeof window !== 'undefined' ? window.event : null);
-  if (e && typeof e.stopPropagation === 'function') {
-    e.stopPropagation();
-  }
-
+  if (evt?.stopPropagation) evt.stopPropagation();
   const state = window.consolidateStations[lessonId];
   if (!state) return;
-
-  if (!state.isOpen) {
-    state.isOpen = true;
-    state.mode = newMode;
-    if (newMode === 'quiz' && (!state.questions || state.questions.length === 0)) {
-      state.questions = state.allQuestions;
-    } else if (newMode === 'vocab') {
-      state.vocabFlipped = false;
-    }
-    syncStationOpenUI(lessonId);
-    renderStationContent(lessonId);
+  if (newMode === 'arena') {
+    window.openTeacherPlenaryProjector(lessonId);
     return;
   }
-
-  if (state.mode === newMode) {
-    stopAllArenaTimers(state);
-    state.isOpen = false;
-    syncStationOpenUI(lessonId);
-    return;
-  }
-
-  if (state.mode === 'arena') {
-    stopAllArenaTimers(state);
-  } else {
-    clearAllArenaTimers(state);
-  }
-
-  state.mode = newMode;
-  if (newMode === 'quiz' && (!state.questions || state.questions.length === 0)) {
-    state.questions = state.allQuestions;
-  } else if (newMode === 'vocab') {
-    state.vocabFlipped = false;
-  }
-
-  syncStationOpenUI(lessonId);
-  renderStationContent(lessonId);
+  state.isOpen = !state.isOpen;
+  renderQuickQuizDrawer(lessonId);
 };
 
-// Timeline handlers
-window.toggleStationTimelineDone = function (lessonId, checked) {
-  const state = window.consolidateStations[lessonId];
-  if (!state) return;
-  state.timelineDone = checked;
-  try {
-    localStorage.setItem('timeline_done_' + lessonId, checked ? 'true' : 'false');
-  } catch (e) { }
-  renderStationContent(lessonId);
-};
-
-window.selectStationTimelinePathway = function (lessonId, pathway) {
-  const state = window.consolidateStations[lessonId];
-  if (!state) return;
-  state.timelinePathway = pathway;
-  try {
-    localStorage.setItem('timeline_pathway_' + lessonId, pathway);
-  } catch (e) { }
-  renderStationContent(lessonId);
-};
-
-// Quiz handlers
 window.answerStationQuestion = function (lessonId, optionIdx) {
   const state = window.consolidateStations[lessonId];
   if (!state || state.answered) return;
-
   const q = state.questions[state.currentIndex];
   state.answered = true;
   state.selectedOption = optionIdx;
-
-  if (optionIdx === q.answer) {
+  const isCorrect = optionIdx === q.answer;
+  if (isCorrect) {
     state.score++;
+    addXp(5, 'Quick Check Recall');
   }
-
-  renderStationContent(lessonId);
+  recordQuestionResult(q.id, isCorrect, q, state.unitId);
+  renderQuickQuizDrawer(lessonId);
 };
 
 window.nextStationQuestion = function (lessonId) {
   const state = window.consolidateStations[lessonId];
   if (!state) return;
-
   state.currentIndex++;
   state.answered = false;
   state.selectedOption = null;
-  renderStationContent(lessonId);
+  renderQuickQuizDrawer(lessonId);
 };
 
 window.restartStationQuiz = function (lessonId) {
   const state = window.consolidateStations[lessonId];
   if (!state) return;
   state.isOpen = true;
-  state.mode = 'quiz';
-  state.questions = state.allQuestions;
+  state.questions = sampleQuickFive(state.allQuestions);
   state.currentIndex = 0;
   state.score = 0;
   state.answered = false;
   state.selectedOption = null;
-  syncStationOpenUI(lessonId);
-  renderStationContent(lessonId);
+  renderQuickQuizDrawer(lessonId);
 };
 
-// Vocab handlers
-window.flipStationVocabCard = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
+window.openTeacherPlenaryProjector = function (lessonId) {
+  const targetId =
+    lessonId ||
+    Object.keys(window.consolidateStations || {})[0];
+  const state = window.consolidateStations?.[targetId];
   if (!state) return;
-  state.vocabFlipped = !state.vocabFlipped;
-  renderStationContent(lessonId);
+  state.arena.isProjectorOpen = true;
+  renderProjectorPortal(targetId);
 };
 
-window.nextStationVocabCard = function (lessonId, direction) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.allVocab) return;
-  const newIdx = state.vocabIndex + direction;
-  if (newIdx >= 0 && newIdx < state.allVocab.length) {
-    state.vocabIndex = newIdx;
-    state.vocabFlipped = false;
-    renderStationContent(lessonId);
-  }
+window.closeTeacherPlenaryProjector = function (lessonId) {
+  const state = window.consolidateStations?.[lessonId];
+  closeProjectorPortal(state);
 };
 
-window.shuffleStationVocab = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.allVocab) return;
-  state.allVocab = [...state.allVocab].sort(() => Math.random() - 0.5);
-  state.vocabIndex = 0;
-  state.vocabFlipped = false;
-  renderStationContent(lessonId);
-};
-
-// Chrono Domino handlers
-window.toggleStationDominoHints = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.domino) return;
-  state.domino.showDateHints = !state.domino.showDateHints;
-  renderStationContent(lessonId);
-};
-
-window.moveStationDominoCard = function (lessonId, fromIdx, toIdx) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.domino) return;
-  const list = state.domino.currentOrder;
-  if (toIdx < 0 || toIdx >= list.length) return;
-
-  const item = list.splice(fromIdx, 1)[0];
-  list.splice(toIdx, 0, item);
-  state.domino.isSubmitted = false;
-  renderStationContent(lessonId);
-};
-
-window.checkStationDomino = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.domino) return;
-  state.domino.isSubmitted = true;
-  renderStationContent(lessonId);
-};
-
-window.shuffleStationDomino = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.domino) return;
-  state.domino.currentOrder = shuffleDominoMilestones(state.domino.correctOrder);
-  state.domino.isSubmitted = false;
-  state.domino.showDateHints = false;
-  renderStationContent(lessonId);
-};
-
-window.revealStationDomino = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.domino) return;
-  state.domino.currentOrder = [...state.domino.correctOrder];
-  state.domino.isSubmitted = true;
-  renderStationContent(lessonId);
-};
-
-// Exit Ticket handlers
-window.handleExitTicketInput = function (lessonId, text) {
-  const state = window.consolidateStations[lessonId];
-  if (!state) return;
-  state.exitResponse = text;
-
-  try {
-    localStorage.setItem('exit_ticket_' + lessonId, text);
-  } catch (e) { }
-
-  const counterEl = document.getElementById(`exit-counter-${lessonId}`);
-  if (counterEl) {
-    const counts = countWordsAndSentences(text);
-    counterEl.textContent = `${counts.sentences} sentence${counts.sentences === 1 ? '' : 's'} • ${counts.words} words`;
-  }
-};
-
-window.submitStationExitTicket = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state) return;
-  const input = document.getElementById(`exit-ticket-input-${lessonId}`);
-  if (input) {
-    state.exitResponse = input.value;
-    try {
-      localStorage.setItem('exit_ticket_' + lessonId, input.value);
-    } catch (e) { }
-  }
-  state.exitSubmitted = true;
-  state.showExitModel = true; // Auto-reveal model on submit
-  renderStationContent(lessonId);
-};
-
-window.toggleStationExitModel = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state) return;
-  state.showExitModel = !state.showExitModel;
-  renderStationContent(lessonId);
-};
-
-// =============================================================
-// CLASSROOM ARENA GLOBAL ACTION HANDLERS
-// =============================================================
 window.switchArenaGame = function (lessonId, gameMode) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
   clearAllArenaTimers(state);
   state.arena.gameMode = gameMode;
-  renderStationContent(lessonId);
-};
-
-window.toggleArenaWhiteboard = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  state.arena.isWhiteboardMode = !state.arena.isWhiteboardMode;
-  renderStationContent(lessonId);
+  renderProjectorPortal(lessonId);
 };
 
 window.toggleArenaSound = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
   state.arena.soundEnabled = !state.arena.soundEnabled;
-  renderStationContent(lessonId);
+  renderProjectorPortal(lessonId);
 };
 
-window.startArenaTimer = function (lessonId, gameKey, defaultSeconds) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
+window.switchArenaTabooDeck = function (lessonId, deckType) {
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
+  state.arena.tabooDeckType = deckType;
+  state.arena.tabooIndex = 0;
+  renderProjectorPortal(lessonId);
+};
+
+window.nextArenaTabooCard = function (lessonId, isCorrect, isPass = false) {
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
+  if (isCorrect) {
+    state.arena.tabooScore++;
+    if (state.arena.soundEnabled) playArenaSound('ding');
+  } else if (isPass) {
+    state.arena.tabooPasses++;
+    if (state.arena.soundEnabled) playArenaSound('pass');
+  }
+  state.arena.tabooIndex++;
+  renderProjectorPortal(lessonId);
+};
+
+window.selectArenaCorner = function (lessonId, idx) {
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
+  state.arena.cornersSelectedCorner =
+    state.arena.cornersSelectedCorner === idx ? null : idx;
+  renderProjectorPortal(lessonId);
+};
+
+window.startArenaTimer = function (lessonId, gameKey, defaultSeconds = 60) {
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
   const a = state.arena;
-  const timeKey = `${gameKey}TimerSeconds`;
-  const intervalKey = `${gameKey}TimerInterval`;
-  const runningKey = `${gameKey}TimerRunning`;
-
-  if (a[runningKey]) return;
-
-  if (a[timeKey] <= 0) {
-    a[timeKey] = defaultSeconds;
+  if (a[`${gameKey}TimerRunning`]) return;
+  if (a[`${gameKey}TimerSeconds`] <= 0) {
+    a[`${gameKey}TimerSeconds`] = defaultSeconds;
     if (gameKey === 'standoff') a.standoffPhase = 'roleA';
   }
+  a[`${gameKey}TimerRunning`] = true;
+  renderProjectorPortal(lessonId);
 
-  a[runningKey] = true;
-  updateArenaTimerDOM(lessonId, gameKey);
-
-  a[intervalKey] = setInterval(() => {
-    tickArenaTimer(lessonId, gameKey, defaultSeconds);
+  a[`${gameKey}TimerInterval`] = setInterval(() => {
+    if (a[`${gameKey}TimerSeconds`] > 0) {
+      a[`${gameKey}TimerSeconds`]--;
+      if (a.soundEnabled && a[`${gameKey}TimerSeconds`] <= 5 && a[`${gameKey}TimerSeconds`] > 0) {
+        playArenaSound('tick');
+      }
+      if (gameKey === 'standoff' && a[`${gameKey}TimerSeconds`] <= 30 && a.standoffPhase === 'roleA') {
+        a.standoffPhase = 'roleB';
+        if (a.soundEnabled) playArenaSound('ding');
+      }
+      if (a[`${gameKey}TimerSeconds`] === 0) {
+        clearInterval(a[`${gameKey}TimerInterval`]);
+        a[`${gameKey}TimerInterval`] = null;
+        a[`${gameKey}TimerRunning`] = false;
+        if (a.soundEnabled) playArenaSound('buzzer');
+      }
+      renderProjectorPortal(lessonId);
+    }
   }, 1000);
 };
 
 window.pauseArenaTimer = function (lessonId, gameKey) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
   const a = state.arena;
-  const intervalKey = `${gameKey}TimerInterval`;
-  const runningKey = `${gameKey}TimerRunning`;
-
-  if (a[intervalKey]) {
-    clearInterval(a[intervalKey]);
-    a[intervalKey] = null;
+  if (a[`${gameKey}TimerInterval`]) {
+    clearInterval(a[`${gameKey}TimerInterval`]);
+    a[`${gameKey}TimerInterval`] = null;
   }
-  a[runningKey] = false;
-  updateArenaTimerDOM(lessonId, gameKey);
+  a[`${gameKey}TimerRunning`] = false;
+  renderProjectorPortal(lessonId);
 };
 
-window.resetArenaTimer = function (lessonId, gameKey, defaultSeconds) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
+window.resetArenaTimer = function (lessonId, gameKey, defaultSeconds = 60) {
+  const state = window.consolidateStations?.[lessonId];
+  if (!state) return;
   const a = state.arena;
-  const timeKey = `${gameKey}TimerSeconds`;
-  const intervalKey = `${gameKey}TimerInterval`;
-  const runningKey = `${gameKey}TimerRunning`;
-
-  if (a[intervalKey]) {
-    clearInterval(a[intervalKey]);
-    a[intervalKey] = null;
+  if (a[`${gameKey}TimerInterval`]) {
+    clearInterval(a[`${gameKey}TimerInterval`]);
+    a[`${gameKey}TimerInterval`] = null;
   }
-  a[runningKey] = false;
-  a[timeKey] = defaultSeconds;
+  a[`${gameKey}TimerRunning`] = false;
+  a[`${gameKey}TimerSeconds`] = defaultSeconds;
   if (gameKey === 'standoff') a.standoffPhase = 'roleA';
-  updateArenaTimerDOM(lessonId, gameKey);
-};
-
-window.switchArenaTabooDeck = function (lessonId, deckType) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  state.arena.tabooDeckType = deckType;
-  state.arena.tabooIndex = 0;
-  state.arena.tabooRevealedDef = false;
-  renderStationContent(lessonId);
-};
-
-window.toggleArenaTabooTeamMode = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  state.arena.tabooTeamMode = !state.arena.tabooTeamMode;
-  renderStationContent(lessonId);
-};
-
-window.switchArenaTabooTeam = function (lessonId, targetTeam) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  if (targetTeam === 'red' || targetTeam === 'blue') {
-    state.arena.tabooActiveTeam = targetTeam;
-  } else {
-    state.arena.tabooActiveTeam = state.arena.tabooActiveTeam === 'red' ? 'blue' : 'red';
-  }
-  renderStationContent(lessonId);
-};
-
-window.nextArenaTabooCard = function (lessonId, isCorrect, isPass = false) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  const a = state.arena;
-  if (isCorrect) {
-    a.tabooScore = (a.tabooScore || 0) + 1;
-    if (a.tabooTeamMode) {
-      if (a.tabooActiveTeam === 'red') {
-        a.tabooTeamRedScore = (a.tabooTeamRedScore || 0) + 1;
-      } else {
-        a.tabooTeamBlueScore = (a.tabooTeamBlueScore || 0) + 1;
-      }
-    }
-    if (a.soundEnabled) playArenaSound('ding');
-  } else if (isPass) {
-    a.tabooPasses = (a.tabooPasses || 0) + 1;
-    if (a.soundEnabled) playArenaSound('pass');
-  }
-  a.tabooIndex = (a.tabooIndex || 0) + 1;
-  a.tabooRevealedDef = false;
-  renderStationContent(lessonId);
-};
-
-window.shuffleArenaTaboo = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arenaData) return;
-  state.arenaData.cumulativeDeck = [...state.arenaData.cumulativeDeck].sort(() => Math.random() - 0.5);
-  state.arenaData.todayDeck = [...state.arenaData.todayDeck].sort(() => Math.random() - 0.5);
-  state.arena.tabooIndex = 0;
-  state.arena.tabooScore = 0;
-  state.arena.tabooPasses = 0;
-  state.arena.tabooTeamRedScore = 0;
-  state.arena.tabooTeamBlueScore = 0;
-  state.arena.tabooRevealedDef = false;
-  renderStationContent(lessonId);
-};
-
-window.toggleArenaTabooDef = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  state.arena.tabooRevealedDef = !state.arena.tabooRevealedDef;
-  renderStationContent(lessonId);
-};
-
-window.selectArenaCorner = function (lessonId, cornerIdx) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  state.arena.cornersSelectedCorner = (state.arena.cornersSelectedCorner === cornerIdx ? null : cornerIdx);
-  renderStationContent(lessonId);
-};
-
-window.adjustArenaSeated = function (lessonId, delta) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  const a = state.arena;
-  const target = a.targetStudents || 30;
-  const prev = a.seatedCount || 0;
-  const next = Math.max(0, Math.min(target, prev + delta));
-  a.seatedCount = next;
-
-  if (next >= target && prev < target) {
-    window.pauseArenaTimer(lessonId, 'lightning');
-    if (a.soundEnabled) playArenaSound('fanfare');
-  } else if (delta > 0 && a.soundEnabled) {
-    playArenaSound('tick');
-  }
-
-  renderStationContent(lessonId);
-};
-
-window.setArenaClassSize = function (lessonId, size) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  const parsed = parseInt(size, 10);
-  if (isNaN(parsed) || parsed < 1) return;
-  state.arena.targetStudents = parsed;
-  try {
-    localStorage.setItem('history_arena_class_size', parsed.toString());
-  } catch (e) { }
-  if ((state.arena.seatedCount || 0) > parsed) {
-    state.arena.seatedCount = parsed;
-  }
-  renderStationContent(lessonId);
-};
-
-window.adjustArenaClassSize = function (lessonId, delta) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  const current = state.arena.targetStudents || 30;
-  window.setArenaClassSize(lessonId, Math.max(1, Math.min(99, current + delta)));
-};
-
-window.toggleArenaLifeline = function (lessonId) {
-  const state = window.consolidateStations[lessonId];
-  if (!state || !state.arena) return;
-  state.arena.showLifeline = !state.arena.showLifeline;
-  renderStationContent(lessonId);
+  renderProjectorPortal(lessonId);
 };
 
 window.refreshConsolidateTeacherMode = function (isActive) {
+  if (typeof document !== 'undefined') {
+    document.querySelectorAll('.teacher-only-plenary-btn').forEach((btn) => {
+      btn.style.display = isActive ? 'inline-flex' : 'none';
+    });
+  }
   if (!window.consolidateStations) return;
   Object.keys(window.consolidateStations).forEach((lessonId) => {
     const state = window.consolidateStations[lessonId];
-    if (!state) return;
-    if (isActive && state.questions && state.questions.length > 0 && !state.isOpen) {
-      state.isOpen = true;
-      state.mode = 'quiz';
-      syncStationOpenUI(lessonId);
-    }
-    if (state.isOpen) {
-      renderStationContent(lessonId);
+    if (state && state.isOpen) {
+      renderQuickQuizDrawer(lessonId);
     }
   });
 };

@@ -510,6 +510,22 @@ export function renderSidebar() {
     navContainer.appendChild(cheatSheetLink);
   }
 
+  if (window.currentUnitId && window.currentUnitId !== 'battlefield_trip') {
+    const arcadeLink = document.createElement('a');
+    arcadeLink.className = 'lesson-link';
+    arcadeLink.innerHTML =
+      '<i class="fa-solid fa-gamepad" style="color: #38bdf8; margin-right: 8px;"></i> Revision Arcade (7 Games)';
+    arcadeLink.href = '#';
+    arcadeLink.style.marginTop = '12px';
+    arcadeLink.onclick = (e) => {
+      e.preventDefault();
+      if (typeof window.launchUnitArcade === 'function') {
+        window.launchUnitArcade(window.currentUnitId, 'all', 'lobby');
+      }
+    };
+    navContainer.appendChild(arcadeLink);
+  }
+
   if (window.currentUnitId === 'usa') {
     const tradingLink = document.createElement('a');
     tradingLink.className = 'lesson-link';
@@ -517,17 +533,8 @@ export function renderSidebar() {
       '<i class="fa-solid fa-layer-group" style="color: #facc15; margin-right: 8px;"></i> Historical Hooligans (Top Trumps)';
     tradingLink.href = '/units/usa/trading_cards.html';
     tradingLink.target = '_blank';
-    tradingLink.style.marginTop = '12px';
+    tradingLink.style.marginTop = '8px';
     navContainer.appendChild(tradingLink);
-
-    const arcadeLink = document.createElement('a');
-    arcadeLink.className = 'lesson-link';
-    arcadeLink.innerHTML =
-      '<i class="fa-solid fa-gamepad" style="color: #06b6d4; margin-right: 8px;"></i> Falling Blocks Arcade';
-    arcadeLink.href = '/units/usa/falling_blocks.html';
-    arcadeLink.target = '_blank';
-    arcadeLink.style.marginTop = '8px';
-    navContainer.appendChild(arcadeLink);
 
     const worksheetLink = document.createElement('a');
     worksheetLink.className = 'lesson-link';

@@ -705,15 +705,15 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const revisionGuidePill = rg
     ? `
         <!-- Optional Pillar: 14-Page Ultra-Condensed Revision Guide -->
-        <div class="launchpad-pill-group pill-revision-guide" style="border-color: rgba(45, 212, 191, 0.45);">
+        <div class="launchpad-pill-group pill-revision-guide">
           <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${rg.htmlUrl}', '${cleanRgTitle}', '${rg.pdfUrl}', 'REVISION_GUIDE')" title="Open 14-Page Revision Guide in classroom reader">
-            <i class="fa-solid fa-book-bookmark" style="color: #2dd4bf;"></i>
+            <i class="fa-solid fa-book-bookmark"></i>
             <span>${rg.label}</span>
           </button>
           ${
             isVerifiedPdf(rg.pdfUrl)
               ? `
-          <a href="${rg.pdfUrl}" target="_blank" download title="Download 14-Page Revision Guide PDF" class="launchpad-pill-pdf" style="background: rgba(13, 148, 136, 0.25); color: #2dd4bf;">
+          <a href="${rg.pdfUrl}" target="_blank" download title="Download 14-Page Revision Guide PDF" class="launchpad-pill-pdf">
             <i class="fa-solid fa-file-pdf"></i>
           </a>`
               : ''
@@ -781,6 +781,18 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         </div>`
     : '';
 
+  const arcadePill =
+    unitId && unitId !== 'battlefield_trip'
+      ? `
+        <!-- Pillar: Interactive 7-Game Revision Arcade -->
+        <div class="launchpad-pill-group pill-overview">
+          <button type="button" class="launchpad-pill-btn" onclick="if(window.launchUnitArcade){window.launchUnitArcade('${unitId}', 'all', 'lobby');}else if(window.switchView){window.switchView('arcade', '${unitId}');}" title="Launch the 7-Game Revision Arcade (Keyword Stack, Timeline Blitz, Connections Wall, Redacted, Boss Sprint & more)">
+            <i class="fa-solid fa-gamepad" style="color: #38bdf8;"></i>
+            <span>Revision Arcade</span>
+          </button>
+        </div>`
+      : '';
+
   return `
     <div class="hero-curricular-launchpad">
       <div class="hero-launchpad-capsule">
@@ -788,6 +800,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         ${workbookPill}
         ${workbookMarkSchemePill}
         ${retrievalPill}
+        ${arcadePill}
         ${revisionGuidePill}
         ${sowPill}
         ${timelinePill}

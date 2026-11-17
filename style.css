@@ -3100,11 +3100,17 @@ img::after {
   background: rgba(5, 150, 105, 0.28);
 }
 
+.launchpad-pill-group.pill-revision-guide {
+  border: 1px solid rgba(45, 212, 191, 0.55);
+  background: rgba(13, 148, 136, 0.28);
+}
+
 .launchpad-pill-btn {
   border: none;
   padding: 7px 12px 7px 14px;
   font-size: 0.83rem;
   font-weight: 700;
+  background: #334155;
   color: #ffffff;
   cursor: pointer;
   display: inline-flex;
@@ -3144,10 +3150,20 @@ img::after {
   filter: brightness(1.15);
 }
 
+.pill-revision-guide .launchpad-pill-btn {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+}
+
+.pill-revision-guide .launchpad-pill-btn:hover {
+  filter: brightness(1.12);
+}
+
 .launchpad-pill-pdf {
   border: none;
   padding: 7px 10px;
   font-size: 0.82rem;
+  background: #1e293b;
+  color: #e2e8f0;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -3193,6 +3209,16 @@ img::after {
 
 .pill-combined .launchpad-pill-pdf:hover {
   background: #4338ca;
+  color: #ffffff;
+}
+
+.pill-revision-guide .launchpad-pill-pdf {
+  background: #115e59;
+  color: #99f6e4;
+}
+
+.pill-revision-guide .launchpad-pill-pdf:hover {
+  background: #0f766e;
   color: #ffffff;
 }
 
@@ -3769,6 +3795,264 @@ img::after {
   }
 }
 
+/* Unified Narrative Annotation Engine: Dossier Inline Chips, Quick-Peek Popover & Plate Credits */
+.key-individual-inline-link {
+  border-radius: 5px;
+  text-decoration: none !important;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1px 6px;
+  font-size: 0.92em;
+  line-height: 1.35;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  vertical-align: baseline;
+  transition: all 0.16s ease;
+}
+
+.key-individual-inline-link i {
+  font-size: 0.82em;
+  opacity: 0.9;
+}
+
+.key-individual-inline-link.dossier-chip-person {
+  background: rgba(37, 99, 235, 0.09);
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  color: #1d4ed8;
+}
+
+.key-individual-inline-link.dossier-chip-person:hover,
+.key-individual-inline-link.dossier-chip-person.active {
+  background: rgba(37, 99, 235, 0.17);
+  border-color: #2563eb;
+  color: #1e40af;
+}
+
+.key-individual-inline-link.dossier-chip-org {
+  background: rgba(13, 148, 136, 0.1);
+  border: 1px solid rgba(13, 148, 136, 0.32);
+  color: #0f766e;
+}
+
+.key-individual-inline-link.dossier-chip-org:hover,
+.key-individual-inline-link.dossier-chip-org.active {
+  background: rgba(13, 148, 136, 0.18);
+  border-color: #0d9488;
+  color: #115e59;
+}
+
+.narrative-plate-caption .plate-caption-prose {
+  display: block;
+}
+
+.narrative-plate-caption .plate-caption-credit {
+  display: block;
+  margin-top: 5px;
+  padding-top: 4px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.69rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #94a3b8;
+  line-height: 1.35;
+}
+
+#global-dossier-popover.dossier-quick-popover {
+  position: fixed;
+  z-index: 100001;
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.24),
+    0 4px 12px rgba(15, 23, 42, 0.08);
+  width: 390px;
+  max-width: calc(100vw - 24px);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(6px) scale(0.98);
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#global-dossier-popover.dossier-quick-popover.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.dossier-pop-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 13px 14px 11px 14px;
+  background: #f8fafc;
+  border-bottom: 2.5px solid #1d4ed8;
+}
+
+.dossier-pop-thumb {
+  flex: 0 0 54px;
+  width: 54px;
+  height: 64px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0f172a;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dossier-pop-thumb.is-contain {
+  background: #ffffff;
+  padding: 4px;
+}
+
+.dossier-pop-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.dossier-pop-thumb.is-contain img {
+  object-fit: contain;
+}
+
+.dossier-pop-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.dossier-pop-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+.dossier-pop-badge {
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dossier-pop-dates {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.dossier-pop-title {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.04rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.dossier-pop-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.dossier-pop-close {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0 2px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.dossier-pop-close:hover {
+  color: #0f172a;
+}
+
+.dossier-pop-body {
+  padding: 12px 14px;
+  max-height: 245px;
+  overflow-y: auto;
+  font-size: 0.83rem;
+  line-height: 1.48;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dossier-pop-summary {
+  color: #1e293b;
+}
+
+.dossier-pop-bullets {
+  margin: 0;
+  padding-left: 16px;
+  color: #334155;
+  font-size: 0.8rem;
+}
+
+.dossier-pop-bullets li {
+  margin-bottom: 4px;
+}
+
+.dossier-pop-distinction {
+  background: #fffbeb;
+  border-left: 3px solid #d97706;
+  padding: 6px 9px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.78rem;
+  color: #78350f;
+}
+
+.dossier-pop-footer {
+  padding: 9px 14px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dossier-pop-jump-btn {
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 5px 11px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: filter 0.15s ease;
+}
+
+.dossier-pop-jump-btn:hover {
+  filter: brightness(0.96);
+}
+
 #global-glossary-popover {
   position: fixed;
   background: #0f172a;
@@ -4163,20 +4447,20 @@ body.sen-mode .narrative-chunk.reading-highlight {
 }
 
 .unified-stage-header-card {
-  margin-bottom: 14px;
+  margin-bottom: 6px;
   background: #0f172a;
   border: 1px solid #334155;
   border-left: 4px solid #0284c7;
-  border-radius: 8px;
-  padding: 12px 16px;
+  border-radius: 7px;
+  padding: 7px 12px;
   color: #ffffff;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.1);
   transition: all 0.2s ease;
 }
 
 .unified-stage-header-card .narrative-heading {
   color: #f8fafc !important;
-  font-size: 1.05rem !important;
+  font-size: 1.02rem !important;
 }
 
 .unified-stage-header-card .narrative-heading i {
@@ -4186,15 +4470,22 @@ body.sen-mode .narrative-chunk.reading-highlight {
 .unified-stage-header-card:hover {
   background: #1e293b;
   border-color: #38bdf8;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.22);
+}
+
+.stage-header-single-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .stage-header-top-bar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .stage-header-meta {
@@ -4204,6 +4495,64 @@ body.sen-mode .narrative-chunk.reading-highlight {
   flex-wrap: wrap;
   flex: 1 1 auto;
   min-width: 0;
+}
+
+.stage-banner-question {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f8fafc;
+  line-height: 1.32;
+  flex: 1 1 260px;
+  min-width: 0;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.narrative-stage-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.055em;
+  color: #475569;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+  line-height: 1.35;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.narrative-para-break {
+  display: block;
+  height: 9px;
+}
+
+details.archival-drawer > summary .source-audio-bar,
+details.cme-source-drawer > summary .source-audio-bar {
+  margin-left: 0 !important;
+}
+
+details.archival-drawer > summary .source-audio-bar .read-aloud-btn,
+details.cme-source-drawer > summary .source-audio-bar .read-aloud-btn {
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  min-height: 26px !important;
+  font-size: 0.74rem !important;
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e40af !important;
+}
+
+details.archival-drawer > summary .source-audio-bar .read-aloud-btn:hover,
+details.cme-source-drawer > summary .source-audio-bar .read-aloud-btn:hover {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
 }
 
 .stage-header-title-row {
@@ -4219,7 +4568,7 @@ body.sen-mode .narrative-chunk.reading-highlight {
 }
 
 .stage-enquiry-subcard {
-  padding-top: 10px;
+  padding-top: 8px;
   border-top: 1px solid rgba(148, 163, 184, 0.2);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -4444,24 +4793,33 @@ body.sen-mode .narrative-chunk.reading-highlight {
 
   /* Mobile Calibrated Unified Stage Header Cards */
   .unified-stage-header-card {
-    padding: 10px 14px !important;
-    margin-bottom: 12px !important;
+    padding: 7px 11px !important;
+    margin-bottom: 6px !important;
   }
 
+  .stage-header-single-row,
   .stage-header-top-bar {
     display: flex !important;
     justify-content: space-between !important;
-    align-items: flex-start !important;
+    align-items: center !important;
     gap: 8px !important;
-    margin-bottom: 6px !important;
+    margin-bottom: 0 !important;
   }
 
   .stage-header-meta {
     display: flex !important;
-    flex-direction: column !important;
-    gap: 4px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
     flex: 1 1 auto !important;
     min-width: 0 !important;
+  }
+
+  .stage-banner-question {
+    font-size: 0.94rem !important;
+    line-height: 1.3 !important;
+    flex: 1 1 100% !important;
   }
 
   .stage-header-title-row {
@@ -4471,25 +4829,27 @@ body.sen-mode .narrative-chunk.reading-highlight {
     flex-wrap: wrap !important;
   }
 
-  .stage-header-title-row .stage-decimal-pill {
-    font-size: 0.72rem !important;
+  .stage-header-title-row .stage-decimal-pill,
+  .stage-header-meta .stage-decimal-pill {
+    font-size: 0.70rem !important;
     padding: 2px 7px !important;
   }
 
   .stage-header-title-row .narrative-heading {
-    font-size: 0.98rem !important;
+    font-size: 0.96rem !important;
     margin: 0 !important;
     line-height: 1.25 !important;
   }
 
-  .stage-header-date-row .stage-date-badge {
-    font-size: 0.70rem !important;
+  .stage-header-date-row .stage-date-badge,
+  .stage-header-meta .stage-date-badge {
+    font-size: 0.68rem !important;
     padding: 1px 6px !important;
-    margin-top: 1px !important;
+    margin-top: 0 !important;
   }
 
   .unified-stage-header-card .narrative-chunk-audio {
-    align-self: flex-start !important;
+    align-self: center !important;
     margin-top: 0 !important;
     flex-shrink: 0 !important;
   }
@@ -6159,7 +6519,7 @@ details.medicine-source-drawer,
 details.eee-source-drawer,
 details.key-individual-drawer,
 details.spotlight-drawer {
-  margin: 6px 0 !important;
+  margin: 4px 0 !important;
   padding: 0 !important;
   border: 1px solid #cbd5e1 !important;
   border-radius: 6px !important;
@@ -6180,7 +6540,7 @@ details.medicine-source-drawer[open],
 details.eee-source-drawer[open],
 details.key-individual-drawer[open],
 details.spotlight-drawer[open] {
-  margin: 10px 0 16px 0 !important;
+  margin: 6px 0 10px 0 !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
 }
 
@@ -6235,23 +6595,24 @@ details.spotlight-drawer > summary::-webkit-details-marker {
   display: none !important;
 }
 
-details.archival-drawer summary > div:first-child,
-details.cme-source-drawer summary > div:first-child,
-details.weimar-source-drawer summary > div:first-child,
-details.usa-source-drawer summary > div:first-child,
-details.cold-war-source-drawer summary > div:first-child,
-details.gcse-source-drawer summary > div:first-child,
-details.exam-stimulus-drawer summary > div:first-child,
-details.medicine-source-drawer summary > div:first-child,
-details.eee-source-drawer summary > div:first-child,
-details.key-individual-drawer summary > div:first-child,
-details.spotlight-drawer summary > div:first-child {
+details.archival-drawer > summary > div:first-child,
+details.cme-source-drawer > summary > div:first-child,
+details.weimar-source-drawer > summary > div:first-child,
+details.usa-source-drawer > summary > div:first-child,
+details.cold-war-source-drawer > summary > div:first-child,
+details.gcse-source-drawer > summary > div:first-child,
+details.exam-stimulus-drawer > summary > div:first-child,
+details.medicine-source-drawer > summary > div:first-child,
+details.eee-source-drawer > summary > div:first-child,
+details.key-individual-drawer > summary > div:first-child,
+details.spotlight-drawer > summary > div:first-child {
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
   flex: 1 !important;
   min-width: 0 !important;
-  margin-right: 12px !important;
+  margin-right: 10px !important;
+  flex-wrap: wrap !important;
 }
 
 details.archival-drawer .archival-meta-tag,
@@ -6286,13 +6647,13 @@ details.spotlight-drawer > summary .archival-drawer-title {
   line-height: 1.35 !important;
   font-weight: 700 !important;
   color: #1e293b !important;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 2 !important;
-  -webkit-box-orient: vertical !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
+  display: inline !important;
+  -webkit-line-clamp: unset !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
   white-space: normal !important;
-  word-break: break-word !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
 }
 
 details.archival-drawer .drawer-toggle-indicator,
@@ -7312,22 +7673,22 @@ details.cme-source-drawer summary::marker {
   display: none !important;
 }
 
-details.cme-source-drawer summary:hover {
+details.cme-source-drawer > summary:hover {
   background: #e2e8f0 !important;
 }
 
-details.archival-drawer[open] summary,
-details.cme-source-drawer[open] summary,
-details.key-individual-drawer[open] summary,
-details.spotlight-drawer[open] summary {
+details.archival-drawer[open] > summary,
+details.cme-source-drawer[open] > summary,
+details.key-individual-drawer[open] > summary,
+details.spotlight-drawer[open] > summary {
   background: #e2e8f0 !important;
   border-bottom: 1px solid #cbd5e1 !important;
 }
 
-details.archival-drawer summary .drawer-caret,
-details.cme-source-drawer summary .drawer-caret,
-details.key-individual-drawer summary .drawer-caret,
-details.spotlight-drawer summary .drawer-caret {
+details.archival-drawer > summary .drawer-caret,
+details.cme-source-drawer > summary .drawer-caret,
+details.key-individual-drawer > summary .drawer-caret,
+details.spotlight-drawer > summary .drawer-caret {
   display: inline-block;
   transition: transform 0.25s ease;
   font-size: 0.65rem;
@@ -12305,9 +12666,9 @@ body.search-modal-open {
 }
 
 .btn-think-discuss-toggle {
-  width: 140px !important;
-  min-width: 140px !important;
-  max-width: 140px !important;
+  width: auto !important;
+  min-width: 132px !important;
+  max-width: none !important;
   justify-content: center !important;
   text-align: center !important;
   box-sizing: border-box !important;
@@ -12445,7 +12806,7 @@ details.source-enquiry-reveal .reveal-arrow {
 }
 
 .archival-source-fullwidth-enquiry details.source-enquiry-reveal {
-  margin-top: 14px !important;
+  margin-top: 6px !important;
   margin-bottom: 0 !important;
   width: 100% !important;
   box-sizing: border-box !important;

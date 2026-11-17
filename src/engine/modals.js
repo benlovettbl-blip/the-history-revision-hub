@@ -848,6 +848,9 @@ export function initGlossaryPopover() {
     if (!definition) return;
 
     cancelHidePopover();
+    if (pinned && typeof window.hideDossierPopover === 'function') {
+      window.hideDossierPopover();
+    }
     if (pinned) {
       isPinned = true;
     }
@@ -3932,10 +3935,110 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     } catch (e) {}
   };
 
+  const escapeCoverHtml = (val) =>
+    String(val ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
+  const getSavedDayExtraNotes = () => {
+    try {
+      return JSON.parse(localStorage.getItem('history_cover_day_extra_notes') || '{}');
+    } catch (e) {
+      return {};
+    }
+  };
+
+  const getLatestExtraNotes = () => {
+    try {
+      return JSON.parse(localStorage.getItem('history_cover_latest_extra_notes') || 'null');
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const saveExtraNotesForDay = (week, day, dateStr, text, include = true) => {
+    try {
+      const dayMap = getSavedDayExtraNotes();
+      const key = `${week}_${day}`;
+      dayMap[key] = { text, include, dateStr, updatedAt: Date.now() };
+      localStorage.setItem('history_cover_day_extra_notes', JSON.stringify(dayMap));
+      localStorage.setItem(
+        'history_cover_latest_extra_notes',
+        JSON.stringify({
+          text,
+          include,
+          fromWeek: week,
+          fromDay: day,
+          fromDateStr: dateStr,
+          updatedAt: Date.now(),
+        }),
+      );
+    } catch (e) {}
+  };
+
+  const resolveExtraNotesForDay = (week, day) => {
+    const dayMap = getSavedDayExtraNotes();
+    const key = `${week}_${day}`;
+    if (dayMap[key] !== undefined) {
+      return {
+        text: dayMap[key].text || '',
+        include: dayMap[key].include !== false,
+        carriedFrom: null,
+      };
+    }
+    const latest = getLatestExtraNotes();
+    if (latest && latest.text !== undefined) {
+      const isSameSlot = latest.fromWeek === week && latest.fromDay === day;
+      return {
+        text: latest.text || '',
+        include: latest.include !== false,
+        carriedFrom:
+          !isSameSlot && latest.text && latest.text.trim()
+            ? `${latest.fromDay}, ${latest.fromDateStr} (${latest.fromWeek})`
+            : null,
+      };
+    }
+    const log = getRecentCoverLog();
+    for (const item of log) {
+      if (item.extraNotes && item.extraNotes.trim()) {
+        const isSameSlot = item.week === week && item.dayName === day;
+        return {
+          text: item.extraNotes,
+          include: true,
+          carriedFrom: isSameSlot ? null : `${item.dayName}, ${item.dateStr} (${item.week})`,
+        };
+      }
+    }
+    return { text: '', include: true, carriedFrom: null };
+  };
+
+  const getSavedSetNotes = () => {
+    try {
+      return JSON.parse(localStorage.getItem('history_cover_set_notes') || '{}');
+    } catch (e) {
+      return {};
+    }
+  };
+
+  const saveSetNote = (setName, text, fromLabel) => {
+    if (!setName) return;
+    try {
+      const map = getSavedSetNotes();
+      map[setName] = { text: text || '', fromLabel: fromLabel || '', updatedAt: Date.now() };
+      localStorage.setItem('history_cover_set_notes', JSON.stringify(map));
+    } catch (e) {}
+  };
+
   const wipeAbsenceMemory = () => {
     try {
       localStorage.removeItem('history_cover_recent_log');
       localStorage.removeItem('history_cover_last_topics');
+      localStorage.removeItem('history_cover_day_extra_notes');
+      localStorage.removeItem('history_cover_latest_extra_notes');
+      localStorage.removeItem('history_cover_set_notes');
     } catch (e) {}
   };
 
@@ -4189,6 +4292,24 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
               Early Finishers: Pupils should navigate to the Revision Zone flashcards or Living Timeline challenge on the platform.
             </div>
 
+            <!-- Final Row: Manual Extra Notes & Next-Day Continuity Memory -->
+            <div id="coverExtraNotesRow" style="margin-top: 6px; padding: 12px 16px; background: #111a2e; border: 1px solid #243044; border-left: 4px solid #f59e0b; border-radius: 0 8px 8px 0; display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                <label for="coverExtraNotesInput" style="display: inline-flex; align-items: center; gap: 7px; font-size: 0.82rem; font-weight: 700; color: #fbbf24; cursor: pointer;">
+                  <input type="checkbox" id="chkIncludeExtraNotes" checked style="accent-color: #f59e0b; cursor: pointer;">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>Extra Notes (Manual Cover &amp; Next-Day Handover Memory)</span>
+                </label>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span id="coverExtraNotesMemoryBadge" style="display: none; background: rgba(245, 158, 11, 0.14); border: 1px solid rgba(245, 158, 11, 0.35); color: #fcd34d; padding: 2px 8px; border-radius: 5px; font-size: 0.7rem; font-weight: 600; align-items: center; gap: 5px;"></span>
+                  <button type="button" id="btnClearExtraNotes" style="display: none; background: rgba(148, 163, 184, 0.12); border: 1px solid #334155; color: #cbd5e1; padding: 2px 8px; border-radius: 5px; font-size: 0.7rem; font-weight: 600; cursor: pointer;" title="Clear extra notes from today and next-day memory">
+                    <i class="fa-solid fa-eraser"></i> Clear
+                  </button>
+                </div>
+              </div>
+              <textarea id="coverExtraNotesInput" rows="2" style="width: 100%; box-sizing: border-box; background: #162032; border: 1px solid #334155; border-radius: 6px; color: #f8fafc; font-family: inherit; font-size: 0.84rem; line-height: 1.5; padding: 8px 12px; resize: vertical; outline: none;" placeholder="Type any manual extra notes here (e.g. seating plans, room/equipment notes, pupil reminders, handover instructions)... Automatically remembered for the next day."></textarea>
+            </div>
+
             <div style="margin-top: 12px; color: #f8fafc;">
               Thanks
             </div>
@@ -4250,6 +4371,44 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
   const clozeDateDisplay = overlay.querySelector('#clozeDateDisplay');
   const clozeDutiesText = overlay.querySelector('#clozeDutiesText');
   const coverSubjectLine = overlay.querySelector('#coverSubjectLine');
+  const extraNotesInput = overlay.querySelector('#coverExtraNotesInput');
+  const chkIncludeExtraNotes = overlay.querySelector('#chkIncludeExtraNotes');
+  const extraNotesMemoryBadge = overlay.querySelector('#coverExtraNotesMemoryBadge');
+  const btnClearExtraNotes = overlay.querySelector('#btnClearExtraNotes');
+
+  let lastRenderedDayKey = '';
+  let latestPeriodsSnapshot = [];
+  let latestMetaSnapshot = {
+    recipient: 'Paul',
+    sender: 'Ben',
+    whenPhrase: 'for ',
+    dateStr: '',
+    dutiesStr: 'none',
+    generalNote: '',
+    includeGeneralNote: true,
+    subject: '',
+  };
+
+  const refreshExtraNotesMemoryUi = (carriedFromLabel) => {
+    const val = (extraNotesInput && extraNotesInput.value) || '';
+    const hasVal = val.trim().length > 0;
+    if (btnClearExtraNotes) {
+      btnClearExtraNotes.style.display = hasVal ? 'inline-flex' : 'none';
+      btnClearExtraNotes.style.alignItems = 'center';
+      btnClearExtraNotes.style.gap = '4px';
+    }
+    if (extraNotesMemoryBadge) {
+      if (carriedFromLabel && hasVal) {
+        extraNotesMemoryBadge.style.display = 'inline-flex';
+        extraNotesMemoryBadge.innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i> Carried from ${escapeCoverHtml(carriedFromLabel)}`;
+      } else if (hasVal) {
+        extraNotesMemoryBadge.style.display = 'inline-flex';
+        extraNotesMemoryBadge.innerHTML = `<i class="fa-solid fa-floppy-disk"></i> Saved for next day`;
+      } else {
+        extraNotesMemoryBadge.style.display = 'none';
+      }
+    }
+  };
 
   // Toggle Raw Plain-Text Drawer
   let rawTextDrawerOpen = false;
@@ -4274,6 +4433,11 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     wipeAbsenceMemory();
     selectedUnits = {};
     selectedLessons = {};
+    periodSettings = {};
+    Object.keys(sessionCoverHistory).forEach((k) => delete sessionCoverHistory[k]);
+    lastRenderedDayKey = '';
+    if (extraNotesInput) extraNotesInput.value = '';
+    refreshExtraNotesMemoryUi(null);
     const origHtml = wipeMemoryBtn.innerHTML;
     wipeMemoryBtn.innerHTML = '<i class="fa-solid fa-check"></i> Wiped Clean!';
     wipeMemoryBtn.style.background = 'rgba(16, 185, 129, 0.25)';
@@ -4300,29 +4464,63 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
 
     recentHistoryList.innerHTML = log
       .map(
-        (item) => `
+        (item, logIdx) => `
       <div style="background: #1e293b; border: 1px solid #334155; border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px;">
         <div style="display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-weight: 700; color: #60a5fa; font-size: 0.78rem;"><i class="fa-solid fa-calendar-day" style="margin-right: 5px;"></i>${item.dayName}, ${item.dateStr} (${item.week})</span>
-          <span style="color: #94a3b8; font-size: 0.7rem;"><i class="fa-solid fa-clock" style="margin-right: 4px;"></i>${item.recordedAt || ''}</span>
+          <span style="font-weight: 700; color: #60a5fa; font-size: 0.78rem;"><i class="fa-solid fa-calendar-day" style="margin-right: 5px;"></i>${escapeCoverHtml(item.dayName)}, ${escapeCoverHtml(item.dateStr)} (${escapeCoverHtml(item.week)})</span>
+          <span style="color: #94a3b8; font-size: 0.7rem;"><i class="fa-solid fa-clock" style="margin-right: 4px;"></i>${escapeCoverHtml(item.recordedAt || '')}</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.72rem; color: #cbd5e1;">
           ${(item.entries || [])
             .map((e) => {
               const yb = getYearBadge(e.setName);
+              const setNoteChip = e.extraNote
+                ? `<span style="color: #fcd34d; font-style: italic;">• ${escapeCoverHtml(e.extraNote)}</span>`
+                : '';
               return `
-            <span style="background: #0f172a; border: 1px solid #334155; padding: 3px 8px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px;">
+            <span style="background: #0f172a; border: 1px solid #334155; padding: 3px 8px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;">
               <span style="background: ${yb.bg}; border: 1px solid ${yb.border}; color: ${yb.color}; padding: 1px 5px; border-radius: 3px; font-size: 0.64rem; font-weight: 700;">${yb.label}</span>
-              <strong style="color: #f8fafc;">${e.period}:</strong> <span style="color: #e2e8f0;">${e.setName}</span> — <span style="color: #93c5fd;">${e.topic}</span>
+              <strong style="color: #f8fafc;">${escapeCoverHtml(e.period)}:</strong> <span style="color: #e2e8f0;">${escapeCoverHtml(e.setName)}</span> — <span style="color: #93c5fd;">${escapeCoverHtml(e.topic)}</span>
+              ${setNoteChip}
             </span>
           `;
             })
             .join('')}
         </div>
+        ${
+          item.extraNotes
+            ? `
+        <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 5px; padding: 5px 10px; font-size: 0.72rem; color: #fde68a; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+          <span><i class="fa-solid fa-note-sticky" style="margin-right: 5px; color: #fbbf24;"></i><strong>Extra Notes:</strong> ${escapeCoverHtml(item.extraNotes)}</span>
+          <button type="button" class="btn-restore-history-note" data-log-idx="${logIdx}" style="background: #0f172a; border: 1px solid #475569; color: #f8fafc; border-radius: 4px; padding: 2px 8px; font-size: 0.66rem; font-weight: 600; cursor: pointer; white-space: nowrap;">Use Note</button>
+        </div>
+        `
+            : ''
+        }
       </div>
     `,
       )
       .join('');
+
+    recentHistoryList.querySelectorAll('.btn-restore-history-note').forEach((btn) => {
+      btn.onclick = () => {
+        const idx = parseInt(btn.getAttribute('data-log-idx'), 10);
+        const picked = log[idx];
+        if (picked && picked.extraNotes && extraNotesInput) {
+          extraNotesInput.value = picked.extraNotes;
+          if (chkIncludeExtraNotes) chkIncludeExtraNotes.checked = true;
+          saveExtraNotesForDay(
+            currentWeek,
+            currentDay,
+            latestMetaSnapshot.dateStr,
+            picked.extraNotes,
+            true,
+          );
+          refreshExtraNotesMemoryUi(`${picked.dayName}, ${picked.dateStr}`);
+          syncCoverEmailAndPayload();
+        }
+      };
+    });
   };
 
   // Helper to find previous cover topic for a set from history & session
@@ -4347,6 +4545,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
             lessonIdx: entry.lessonIdx,
             unitId: entry.unitId,
             unitTitle: entry.unitTitle || getUnitTitle(entry.unitId),
+            extraNote: entry.extraNote || '',
             nextLesson: hasNextLesson
               ? {
                   idx: nextLessonIdx,
@@ -4390,6 +4589,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
             lessonIdx: found.lessonIdx,
             unitId: unitId,
             unitTitle: found.unitTitle || getUnitTitle(unitId),
+            extraNote: found.extraNote || '',
             nextLesson: hasNextLesson
               ? {
                   idx: nextLessonIdx,
@@ -4610,9 +4810,30 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     }
     clozeDutiesText.textContent = dutiesStr;
 
+    const currentDayKey = `${currentWeek}_${currentDay}`;
+    if (currentDayKey !== lastRenderedDayKey) {
+      const resolvedExtra = resolveExtraNotesForDay(currentWeek, currentDay);
+      if (extraNotesInput) extraNotesInput.value = resolvedExtra.text;
+      if (chkIncludeExtraNotes) chkIncludeExtraNotes.checked = resolvedExtra.include !== false;
+      refreshExtraNotesMemoryUi(resolvedExtra.carriedFrom);
+      lastRenderedDayKey = currentDayKey;
+    }
+
+    latestMetaSnapshot = {
+      recipient,
+      sender,
+      whenPhrase,
+      dateStr,
+      dutiesStr,
+      generalNote,
+      includeGeneralNote,
+      subject,
+    };
+
     // 4. Render Dynamic Periods Flow (Cloze Gap-Fill Rows)
     periodsFlow.innerHTML = '';
     const savedLastTopics = getSavedTopics();
+    const savedSetNotes = getSavedSetNotes();
     const periodsData = [];
 
     timetableDayList.forEach((slot, pIdx) => {
@@ -4707,7 +4928,26 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       const activeTopic = activeLesson.title || defaultInfo.default_topic;
       const liveUrl = `${HUB_BASE_URL}/?unit=${activeUnitId}&lesson=${activeLIdx}`;
 
-      periodsData.push({
+      const yb = getYearBadge(setName);
+      const prevCover = findPreviousCoverForSet(setName);
+
+      // Per-Period Settings & Set-Level Extra Note Memory
+      const pSetting = getPeriodSetting(pIdx, setName);
+      const isShelf = pSetting.shelf === true;
+      const colMode = pSetting.collection || 'collect';
+      let activeSetNote = '';
+      let setNoteCarriedFrom = null;
+      if (pSetting.extraNote !== undefined) {
+        activeSetNote = pSetting.extraNote;
+      } else if (savedSetNotes[setName] && savedSetNotes[setName].text) {
+        activeSetNote = savedSetNotes[setName].text;
+        setNoteCarriedFrom = savedSetNotes[setName].fromLabel || 'previous lesson';
+      } else if (prevCover && prevCover.extraNote) {
+        activeSetNote = prevCover.extraNote;
+        setNoteCarriedFrom = prevCover.dateStr || 'previous cover';
+      }
+
+      const periodEntryObj = {
         pIdx: pIdx,
         type: 'lesson',
         period: periodName,
@@ -4718,20 +4958,21 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
         topicName: activeTopic,
         lessonIdx: activeLIdx,
         liveUrl: liveUrl,
-      });
+        extraNote: activeSetNote,
+      };
+      periodsData.push(periodEntryObj);
 
       // Record current state into sessionCoverHistory for this slot
-      sessionCoverHistory[`${currentWeek}_${currentDay}_${setName}`] = {
+      const sessionSlotObj = {
         unitId: activeUnitId,
         unitTitle: activeUnitTitle,
         lessonIdx: activeLIdx,
         topic: activeTopic,
         dayName: currentDay,
         dateStr: dateStr,
+        extraNote: activeSetNote,
       };
-
-      const yb = getYearBadge(setName);
-      const prevCover = findPreviousCoverForSet(setName);
+      sessionCoverHistory[`${currentWeek}_${currentDay}_${setName}`] = sessionSlotObj;
 
       // Build Unit Dropdown Options with optgroups
       const gcseUnits = ALL_UNITS.filter((u) => u.group === 'GCSE History');
@@ -4763,12 +5004,6 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       } else {
         lessonOptionsHtml = `<option value="0">${defaultInfo.default_topic}</option>`;
       }
-
-      // Per-Period Settings
-      const pSetting = getPeriodSetting(pIdx, setName);
-      const isWorkbooks = pSetting.resource === 'workbooks';
-      const isShelf = pSetting.shelf === true;
-      const colMode = pSetting.collection || 'collect';
 
       // Header previous context display
       let headerPrevHtml = '';
@@ -4836,7 +5071,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
 
         <!-- Cloze Line 1: Topic -->
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.88rem; color: #cbd5e1;">
-          <span style="color: #94a3b8; font-weight: 700; min-width: 44px;">Topic:</span>
+          <span style="color: #94a3b8; font-weight: 700; min-width: 72px;">Topic:</span>
           <select class="cloze-unit-picker" data-pidx="${pIdx}" data-setname="${setName}" style="background: #1e293b; border: 1px solid #334155; border-radius: 6px; color: #f8fafc; font-size: 0.82rem; padding: 4px 8px; outline: none; cursor: pointer; max-width: 270px;">
             ${unitOptionsHtml}
           </select>
@@ -4851,7 +5086,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
 
         <!-- Cloze Line 2: Resources -->
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.88rem; color: #cbd5e1;">
-          <span style="color: #94a3b8; font-weight: 700; min-width: 44px;">Resources:</span>
+          <span style="color: #94a3b8; font-weight: 700; min-width: 72px;">Resources:</span>
           <select class="cloze-res-picker" data-pidx="${pIdx}" data-setname="${setName}" style="background: #1e293b; border: 1px solid #334155; border-radius: 6px; color: #f8fafc; font-size: 0.82rem; padding: 4px 8px; outline: none; cursor: pointer; flex: 1; min-width: 320px;">
             <option value="workbooks_shelf" ${currentResSelectVal === 'workbooks_shelf' ? 'selected' : ''}>Printed physical workbooks — please hand out from classroom shelf and ensure all are returned to shelf at end</option>
             <option value="workbooks_pupil" ${currentResSelectVal === 'workbooks_pupil' ? 'selected' : ''}>Pupils should work in their printed physical workbooks</option>
@@ -4862,12 +5097,24 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
 
         <!-- Cloze Line 3: Work Collection -->
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.88rem; color: #cbd5e1;">
-          <span style="color: #94a3b8; font-weight: 700; min-width: 44px;">Collection:</span>
+          <span style="color: #94a3b8; font-weight: 700; min-width: 72px;">Collection:</span>
           <select class="cloze-col-picker" data-pidx="${pIdx}" data-setname="${setName}" style="background: #1e293b; border: 1px solid #334155; border-radius: 6px; color: #f8fafc; font-size: 0.82rem; padding: 4px 8px; outline: none; cursor: pointer; flex: 1; min-width: 280px;">
             <option value="collect" ${colMode === 'collect' ? 'selected' : ''}>Please collect all pupil work at the end of the period</option>
             <option value="folders" ${colMode === 'folders' ? 'selected' : ''}>Pupils keep completed work in their books/folders for next lesson</option>
             <option value="digital" ${colMode === 'digital' ? 'selected' : ''}>Pupils submit work digitally via Google Classroom / VLE</option>
           </select>
+        </div>
+
+        <!-- Cloze Line 4: Optional Class Extra Note (Remembered per Set) -->
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.88rem; color: #cbd5e1;">
+          <span style="color: #94a3b8; font-weight: 700; min-width: 72px;">Extra Note:</span>
+          <input type="text" class="cloze-note-input" data-pidx="${pIdx}" data-setname="${setName}" value="${escapeCoverHtml(activeSetNote)}" placeholder="Optional manual note for ${setName} (remembered next lesson)..." style="background: #162032; border: 1px solid ${activeSetNote ? 'rgba(245, 158, 11, 0.45)' : '#334155'}; border-radius: 6px; color: #f8fafc; font-size: 0.82rem; padding: 4px 10px; outline: none; flex: 1; min-width: 240px;">
+          <span class="cloze-note-mem-pill" style="display: ${setNoteCarriedFrom && activeSetNote ? 'inline-flex' : 'none'}; align-items: center; gap: 4px; font-size: 0.68rem; color: #fcd34d; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2px 7px; border-radius: 4px;" title="Remembered from ${escapeCoverHtml(setNoteCarriedFrom || '')}">
+            <i class="fa-solid fa-clock-rotate-left"></i> Remembered
+          </span>
+          <button type="button" class="btn-clear-set-note" style="display: ${activeSetNote ? 'inline-flex' : 'none'}; align-items: center; background: transparent; border: 1px solid #334155; color: #94a3b8; border-radius: 5px; padding: 3px 7px; font-size: 0.72rem; cursor: pointer;" title="Clear note for ${setName}">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
       `;
 
@@ -4927,8 +5174,43 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
         updateModalState();
       };
 
+      // Per-Set Extra Note input & clear button listeners (smooth non-rerendering)
+      const setNoteInputEl = card.querySelector('.cloze-note-input');
+      const setNoteMemPill = card.querySelector('.cloze-note-mem-pill');
+      const clearSetNoteBtn = card.querySelector('.btn-clear-set-note');
+      if (setNoteInputEl) {
+        setNoteInputEl.oninput = (e) => {
+          const val = e.target.value;
+          setPeriodSetting(pIdx, setName, { extraNote: val });
+          saveSetNote(setName, val, `${currentDay.slice(0, 3)} ${currentWeek.slice(-1)} (${dateStr})`);
+          periodEntryObj.extraNote = val;
+          sessionSlotObj.extraNote = val;
+          setNoteInputEl.style.borderColor = val.trim() ? 'rgba(245, 158, 11, 0.45)' : '#334155';
+          if (setNoteMemPill) setNoteMemPill.style.display = 'none';
+          if (clearSetNoteBtn) {
+            clearSetNoteBtn.style.display = val.trim() ? 'inline-flex' : 'none';
+          }
+          syncCoverEmailAndPayload();
+        };
+      }
+      if (clearSetNoteBtn && setNoteInputEl) {
+        clearSetNoteBtn.onclick = () => {
+          setNoteInputEl.value = '';
+          setPeriodSetting(pIdx, setName, { extraNote: '' });
+          saveSetNote(setName, '', '');
+          periodEntryObj.extraNote = '';
+          sessionSlotObj.extraNote = '';
+          setNoteInputEl.style.borderColor = '#334155';
+          if (setNoteMemPill) setNoteMemPill.style.display = 'none';
+          clearSetNoteBtn.style.display = 'none';
+          syncCoverEmailAndPayload();
+        };
+      }
+
       periodsFlow.appendChild(card);
     });
+
+    latestPeriodsSnapshot = periodsData;
 
     // Wire Batch Advance All Sets Button in toolbar
     const pendingAdvances = [];
@@ -4976,7 +5258,38 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       }
     }
 
-    // 5. Generate Synchronized Clean Plain-Text Output
+    syncCoverEmailAndPayload();
+    renderRecentHistory();
+  };
+
+  // 5. Synchronize Clean Plain-Text Output, Mail Links & Memory Payload (Non-destructive to DOM focus)
+  function syncCoverEmailAndPayload() {
+    const savedRecipient = localStorage.getItem('cover_recipient') || 'Paul';
+    const recipient = (recipientInput && recipientInput.value.trim()) || savedRecipient;
+    const savedSender = localStorage.getItem('cover_sender_name') || 'Ben';
+    const sender = (senderInput && senderInput.value.trim()) || savedSender;
+    const defaultGenNote =
+      'All cover set on VLE; please allow pupils to use laptops as textbooks only.';
+    const savedGeneralNote =
+      localStorage.getItem('cover_general_note') !== null
+        ? localStorage.getItem('cover_general_note')
+        : defaultGenNote;
+    const generalNote =
+      generalNoteInput &&
+      generalNoteInput.value !== undefined &&
+      generalNoteInput.value.trim() !== ''
+        ? generalNoteInput.value.trim()
+        : savedGeneralNote;
+    const includeGeneralNote = chkIncludeGeneralNote ? chkIncludeGeneralNote.checked : true;
+
+    const extraNotesRaw = (extraNotesInput && extraNotesInput.value) || '';
+    const extraNotesTrimmed = extraNotesRaw.trim();
+    const includeExtraNotes = chkIncludeExtraNotes ? chkIncludeExtraNotes.checked : true;
+
+    const { whenPhrase, dateStr, dutiesStr, subject } = latestMetaSnapshot;
+    clozeRecipientDisplay.textContent = recipient;
+    clozeSenderDisplay.textContent = sender;
+
     const emailLines = [];
     emailLines.push(`Dear ${recipient},`);
     emailLines.push(
@@ -4990,7 +5303,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       emailLines.push(`Duties: ${dutiesStr}`);
     }
 
-    periodsData.forEach((p) => {
+    latestPeriodsSnapshot.forEach((p) => {
       if (p.type === 'hub') {
         emailLines.push(`${p.period.toUpperCase()} (${p.time}) — HUB SUPERVISION`);
         emailLines.push('SUPERVISION ONLY — NO COVER WORK TO SET');
@@ -5033,11 +5346,20 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           );
         }
       }
+
+      if (p.extraNote && p.extraNote.trim()) {
+        emailLines.push(`Extra Note: ${p.extraNote.trim()}`);
+      }
     });
 
     emailLines.push(
       'Early Finishers: Pupils should navigate to the Revision Zone flashcards or Living Timeline challenge on the platform.',
     );
+
+    if (includeExtraNotes && extraNotesTrimmed) {
+      emailLines.push(`Extra Notes: ${extraNotesTrimmed}`);
+    }
+
     emailLines.push('Thanks');
     emailLines.push(sender);
 
@@ -5056,7 +5378,8 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       dateStr: dateStr,
       dayName: currentDay,
       week: currentWeek,
-      entries: periodsData
+      extraNotes: includeExtraNotes && extraNotesTrimmed ? extraNotesTrimmed : '',
+      entries: latestPeriodsSnapshot
         .filter((p) => p.type === 'lesson')
         .map((p) => ({
           period: p.period,
@@ -5065,11 +5388,10 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           unitTitle: p.unitName,
           topic: p.topicName,
           lessonIdx: p.lessonIdx,
+          extraNote: p.extraNote ? p.extraNote.trim() : '',
         })),
     };
-
-    renderRecentHistory();
-  };
+  }
 
   const commitDispatchToLog = () => {
     if (
@@ -5142,34 +5464,68 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
   if (chkIncludePolicy) {
     chkIncludePolicy.onchange = () => {
       includePolicyNotes = chkIncludePolicy.checked;
-      updateModalState();
+      syncCoverEmailAndPayload();
     };
   }
 
   if (recipientInput) {
     recipientInput.oninput = () => {
       localStorage.setItem('cover_recipient', recipientInput.value);
-      updateModalState();
+      syncCoverEmailAndPayload();
     };
   }
 
   if (senderInput) {
     senderInput.oninput = () => {
       localStorage.setItem('cover_sender_name', senderInput.value);
-      updateModalState();
+      syncCoverEmailAndPayload();
     };
   }
 
   if (generalNoteInput) {
     generalNoteInput.oninput = () => {
       localStorage.setItem('cover_general_note', generalNoteInput.value);
-      updateModalState();
+      syncCoverEmailAndPayload();
     };
   }
 
   if (chkIncludeGeneralNote) {
     chkIncludeGeneralNote.onchange = () => {
-      updateModalState();
+      syncCoverEmailAndPayload();
+    };
+  }
+
+  if (extraNotesInput) {
+    extraNotesInput.oninput = () => {
+      const val = extraNotesInput.value;
+      const inc = chkIncludeExtraNotes ? chkIncludeExtraNotes.checked : true;
+      saveExtraNotesForDay(currentWeek, currentDay, latestMetaSnapshot.dateStr, val, inc);
+      refreshExtraNotesMemoryUi(null);
+      syncCoverEmailAndPayload();
+    };
+  }
+
+  if (chkIncludeExtraNotes) {
+    chkIncludeExtraNotes.onchange = () => {
+      const val = (extraNotesInput && extraNotesInput.value) || '';
+      saveExtraNotesForDay(
+        currentWeek,
+        currentDay,
+        latestMetaSnapshot.dateStr,
+        val,
+        chkIncludeExtraNotes.checked,
+      );
+      syncCoverEmailAndPayload();
+    };
+  }
+
+  if (btnClearExtraNotes && extraNotesInput) {
+    btnClearExtraNotes.onclick = () => {
+      extraNotesInput.value = '';
+      const inc = chkIncludeExtraNotes ? chkIncludeExtraNotes.checked : true;
+      saveExtraNotesForDay(currentWeek, currentDay, latestMetaSnapshot.dateStr, '', inc);
+      refreshExtraNotesMemoryUi(null);
+      syncCoverEmailAndPayload();
     };
   }
 

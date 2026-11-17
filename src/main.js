@@ -11,6 +11,7 @@ import { state } from './state.js';
 import { initEventDelegation } from './engine/events.js';
 import { initSpeech, cancelSpeech } from './engine/speech.js';
 import { initGlossaryPopover } from './engine/modals.js';
+import { initDossierPopover } from './engine/narrative_annotator.js';
 import * as staffAuthModule from './engine/staff_auth.js';
 if (typeof window !== 'undefined') window.__staffAuthModule = staffAuthModule;
 import {
@@ -163,6 +164,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   initEventDelegation();
   initSpeech();
   initGlossaryPopover();
+  initDossierPopover();
   initTeacherMode();
 
   // Bind global helper routing

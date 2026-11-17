@@ -398,6 +398,7 @@ export function updateHeaderBackBtn(explicitView = null) {
       activeView === 'reading' ||
       activeView === 'guided-reading' ||
       activeView === 'interactive' ||
+      activeView === 'arcade' ||
       activeView === 'marking' ||
       activeView === 'answers' ||
       activeView === 'reader' ||
@@ -461,6 +462,7 @@ window.handleHeaderBackClick = function () {
       activeView === 'reading' ||
       activeView === 'guided-reading' ||
       activeView === 'interactive' ||
+      activeView === 'arcade' ||
       activeView === 'marking' ||
       activeView === 'answers' ||
       activeView === 'reader' ||
@@ -533,7 +535,7 @@ export function initNavigationUI() {
       viewName === 'taboo'
     ) {
       activeMobId = 'mob-nav-units';
-    } else if (viewName === 'interactive') {
+    } else if (viewName === 'interactive' || viewName === 'arcade') {
       activeMobId = 'mob-nav-quizzing';
     } else if (viewName === 'profile') {
       activeMobId = 'mob-nav-profile';
@@ -652,6 +654,7 @@ export function updateBreadcrumbs(customTrail = null) {
       unitId &&
       (viewName === 'lessons' ||
         viewName === 'interactive' ||
+        viewName === 'arcade' ||
         viewName === 'timeline' ||
         viewName === 'booklet' ||
         viewName === 'mock-exams' ||
@@ -670,6 +673,7 @@ export function updateBreadcrumbs(customTrail = null) {
 
     let currentSectionLabel = '';
     if (viewName === 'interactive') currentSectionLabel = 'Interactive Quizzing';
+    else if (viewName === 'arcade') currentSectionLabel = 'Revision Arcade';
     else if (viewName === 'timeline') currentSectionLabel = 'Chronological Timeline';
     else if (viewName === 'booklet') currentSectionLabel = 'Printable Booklet';
     else if (viewName === 'mock-exams') currentSectionLabel = 'GCSE Mock Exams';
@@ -1011,6 +1015,16 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     } catch (e) {}
   }
 
+  // Clean up any running Revision Arcade game loop when leaving arcade view
+  if (
+    typeof window !== 'undefined' &&
+    previousView === 'arcade' &&
+    viewName !== 'arcade' &&
+    typeof window.cleanupArcadeZone === 'function'
+  ) {
+    window.cleanupArcadeZone();
+  }
+
   // Auto-save return origin when transitioning from an active lesson (or timeline) into a unit tool
   const isUnitToolTarget =
     viewName === 'timeline' ||
@@ -1020,6 +1034,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'reading' ||
     viewName === 'guided-reading' ||
     viewName === 'interactive' ||
+    viewName === 'arcade' ||
     viewName === 'marking';
 
   if (
@@ -1085,6 +1100,18 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     if (!isLockedSession) {
       url.searchParams.delete('portal');
     }
+    if (viewName === 'arcade') {
+      if (options?.game && options.game !== 'lobby') {
+        url.searchParams.set('game', options.game);
+      }
+      if (options?.lessonScope !== undefined && String(options.lessonScope) !== 'all') {
+        url.searchParams.set('arcadeLesson', String(options.lessonScope));
+      }
+    } else {
+      url.searchParams.delete('game');
+      url.searchParams.delete('arcadeLesson');
+    }
+
     if (viewName === 'reading' || viewName === 'guided-reading') {
       if (options && options.rawLesson !== undefined) {
         url.searchParams.set('lesson', options.rawLesson);
@@ -1174,6 +1201,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     [
       'nav-lessons',
       'nav-interactive',
+      'nav-arcade',
       'nav-unit-booklet',
       'nav-timeline',
       'nav-mock-exams',
@@ -1196,6 +1224,12 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     renderDashboard();
   } else if (viewName === 'profile') {
     renderProfileView();
+  } else if (viewName === 'arcade') {
+    const targetUnit =
+      param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
+    await loadUnit(targetUnit);
+    const { renderArcadeView } = await import('./arcade_zone.js');
+    renderArcadeView({ ...(options || {}), unitId: targetUnit });
   } else if (viewName === 'interactive' || viewName === 'quiz') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
     await loadUnit(targetUnit);
@@ -1568,6 +1602,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   const navLessonsLabel = document.getElementById('nav-lessons-label');
   const navLessonsCountPill = document.getElementById('nav-lessons-count-pill');
   const navInteractive = document.getElementById('nav-interactive');
+  const navArcade = document.getElementById('nav-arcade');
   const navTimeline = document.getElementById('nav-timeline');
   const navUnitBooklet = document.getElementById('nav-unit-booklet');
   const navMockExams = document.getElementById('nav-mock-exams');
@@ -1703,6 +1738,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
       };
     }
     if (navInteractive) navInteractive.style.display = 'none';
+    if (navArcade) navArcade.style.display = 'none';
     if (navTimeline) navTimeline.style.display = 'none';
     if (navUnitBooklet) navUnitBooklet.style.display = 'none';
     if (navMockExams) navMockExams.style.display = 'none';
@@ -1842,6 +1878,21 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     navTimeline.style.display = 'none';
   }
 
+  // Universal 7-Game Revision Arcade (visible across all curriculum units)
+  if (navArcade) {
+    navArcade.style.display = 'flex';
+    delete navArcade.dataset.action;
+    navArcade.dataset.view = 'arcade';
+    navArcade.dataset.unit = unitId;
+    navArcade.innerHTML =
+      '<i class="fa-solid fa-gamepad" style="color: #38bdf8;"></i><span>Revision Arcade</span>';
+    navArcade.onclick = (e) => {
+      if (e) e.stopPropagation();
+      saveUnitReturnOrigin();
+      switchView('arcade', unitId, false, { lessonScope: 'all', game: 'lobby' });
+    };
+  }
+
   // Interactive Quizzing & Flashcards - DECOMMISSIONED from sidebar in favour of Hero Curricular Launchpad & In-Lesson Consolidation Station
   if (navInteractive) {
     navInteractive.style.display = 'none';
@@ -1938,4 +1989,13 @@ function updateSidebarForUnit(unitId, unitData = {}) {
 
 if (typeof window !== 'undefined') {
   window.jumpToKeyIndividual = jumpToKeyIndividual;
+  window.launchUnitArcade = function (unitId, lessonIndex = 'all', gameId = 'lobby') {
+    saveUnitReturnOrigin();
+    const targetUnit =
+      unitId || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
+    switchView('arcade', targetUnit, false, {
+      lessonScope: lessonIndex,
+      game: gameId,
+    });
+  };
 }

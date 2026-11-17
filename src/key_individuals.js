@@ -161,11 +161,11 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   return `
     <details class="key-individual-drawer archival-drawer gcse-source-container archival-source-box" data-entity-type="${isOrg ? 'organisation' : 'person'}" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
       <summary style="padding: 4px 10px; min-height: 26px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; min-width: 0; flex: 1; margin-right: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; flex: 1; margin-right: 8px;">
           <span class="archival-meta-tag" style="background: ${badgeBg}; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">
             <i class="fa-solid ${badgeIcon}" style="margin-right: 3px;"></i>${summaryTag}
           </span>
-          <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.82rem; color: #1e293b; font-weight: 700; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+          <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">
             ${person.name}${dateLabel ? ` (${dateLabel})` : ''}${anchorSubtext}
           </span>
         </div>

@@ -24,6 +24,10 @@ import {
 } from './lesson_exam_practice_panel.js';
 import { getLessonMockQuestions } from './mock_exam_bank_data.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
+import {
+  createLessonNarrativeAnnotator,
+  formatVisualPlateCaption,
+} from './narrative_annotator.js';
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
 import { getLessonInfographicCount, getLessonInfographicsSync } from '../infographic_viewer.js';
 
@@ -1215,20 +1219,15 @@ export function renderArchivalSourceBody(text, source = {}, options = {}) {
       ? `max-height: ${options.maxHeight}; overflow-y: auto;`
       : '';
   const borderColor = options.accentColor || '#1e3a8a';
-  const padding = options.padding || '14px 18px';
-  const fontSize = options.fontSize || '1.05rem';
-  const lineHeight = options.lineHeight || '1.75';
-  const marginBottom = options.marginBottom || '8px';
+  const padding = options.padding || '10px 14px';
+  const fontSize = options.fontSize || '1.02rem';
+  const lineHeight = options.lineHeight || '1.62';
+  const marginBottom = options.marginBottom || '4px';
   const fontFamily = isSummaryText ? "'Inter', sans-serif" : "'Georgia', serif";
   const fontStyle = isSummaryText ? 'normal' : 'italic';
   const bgStyle = isSummaryText ? '#f8fafc' : '#fffdfa';
 
-  return `
-    ${textTypeBadgeHtml}
-    <div class="archival-source-body${isSummaryText ? ' is-summary-position' : ''}" style="width: 100%; ${maxHeightStyle} font-family: ${fontFamily}; font-style: ${fontStyle}; font-size: ${fontSize}; line-height: ${lineHeight}; color: #1e293b; background: ${bgStyle}; padding: ${padding}; border-left: 4px solid ${borderColor}; border-radius: 4px; margin-bottom: ${marginBottom}; white-space: pre-line;">
-      ${clean}
-    </div>
-  `;
+  return `${textTypeBadgeHtml}<div class="archival-source-body${isSummaryText ? ' is-summary-position' : ''}" style="width: 100%; box-sizing: border-box; ${maxHeightStyle} font-family: ${fontFamily}; font-style: ${fontStyle}; font-size: ${fontSize}; line-height: ${lineHeight}; color: #1e293b; background: ${bgStyle}; padding: ${padding}; border-left: 4px solid ${borderColor}; border-radius: 4px; margin-bottom: ${marginBottom}; white-space: pre-line;">${clean}</div>`;
 }
 
 export function toggleThinkDiscuss(btn, targetId) {
@@ -3931,11 +3930,11 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
           <div style="background: #0b1120; border: 1.5px solid #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);">
             <!-- Interactive Mat Top Strip -->
             <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; background: #0f172a; border-bottom: 1.5px solid #1e293b; flex-wrap: wrap; gap: 10px;">
-              <div style="display: flex; align-items: center; gap: 10px; min-width: 0;">
+              <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex-wrap: wrap;">
                 <span style="font-size: 0.72rem; font-weight: 800; color: #f59e0b; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); padding: 3px 9px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0;">
                   <i class="fa-solid fa-wand-magic-sparkles"></i> Native Interactive Mat
                 </span>
-                <h4 style="margin: 0; font-size: 0.96rem; font-weight: 700; color: #f8fafc; font-family: 'Playfair Display', Georgia, serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                <h4 style="margin: 0; font-size: 0.96rem; font-weight: 700; color: #f8fafc; font-family: 'Playfair Display', Georgia, serif; white-space: normal; overflow-wrap: break-word;">
                   ${mat.title}
                 </h4>
               </div>
@@ -5041,11 +5040,11 @@ export function renderTextbookSpotlightDrawers(lesson) {
     html += `
       <details class="spotlight-drawer spotlight-drawer-figure archival-drawer" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
         <summary style="padding: 4px 10px; min-height: 26px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; min-width: 0; flex: 1; margin-right: 8px;">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; flex: 1; margin-right: 8px;">
             <span class="archival-meta-tag" style="background: #1d4ed8; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">
               <i class="fa-solid fa-user" style="margin-right: 3px;"></i>KEY FIGURE
             </span>
-            <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.82rem; color: #1e293b; font-weight: 700; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+            <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">
               ${kf.name} ${kf.lifespan ? `(${kf.lifespan})` : ''}${kf.epithet ? ` &bull; ${kf.epithet}` : ''}
             </span>
           </div>
@@ -5100,11 +5099,11 @@ export function renderTextbookSpotlightDrawers(lesson) {
     html += `
       <details class="spotlight-drawer spotlight-drawer-concept archival-drawer" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
         <summary style="padding: 4px 10px; min-height: 26px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; min-width: 0; flex: 1; margin-right: 8px;">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; flex: 1; margin-right: 8px;">
             <span class="archival-meta-tag" style="background: #b45309; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">
               <i class="fa-solid fa-lightbulb" style="margin-right: 3px;"></i>CONCEPT SPOTLIGHT
             </span>
-            <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.82rem; color: #1e293b; font-weight: 700; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+            <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">
               ${cs.title}${cs.category ? ` &bull; ${cs.category}` : ''}
             </span>
           </div>
@@ -5144,11 +5143,11 @@ export function renderTextbookSpotlightDrawers(lesson) {
     html += `
       <details class="spotlight-drawer spotlight-drawer-dispatch archival-drawer" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
         <summary style="padding: 4px 10px; min-height: 26px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; min-width: 0; flex: 1; margin-right: 8px;">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; flex: 1; margin-right: 8px;">
             <span class="archival-meta-tag" style="background: #475569; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">
               <i class="fa-solid fa-scroll" style="margin-right: 3px;"></i>ARCHIVAL DISPATCH
             </span>
-            <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.82rem; color: #1e293b; font-weight: 700; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+            <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">
               ${ad.title}${ad.origin_and_date ? ` &bull; ${ad.origin_and_date}` : ''}
             </span>
           </div>
@@ -5312,6 +5311,16 @@ export function renderLesson(lesson) {
         details.source-enquiry-reveal.mode-exam {
           border: 1.5px solid #6ee7b7 !important;
           box-shadow: 0 2px 6px rgba(16, 185, 129, 0.07) !important;
+        }
+        details.source-enquiry-reveal.mode-exam > summary {
+          background: #f0fdf4 !important;
+        }
+        details.source-enquiry-reveal.mode-exam > summary:hover {
+          background: #dcfce7 !important;
+        }
+        details.source-enquiry-reveal.mode-exam[open] > summary {
+          background: #dcfce7 !important;
+          border-bottom: 1px solid #86efac !important;
         }
         details.source-enquiry-reveal.mode-exam > summary:hover .reveal-answer-pill {
           background: #10b981 !important;
@@ -5527,8 +5536,8 @@ export function renderLesson(lesson) {
     let answerContentHtml = '';
     if (renderedBullets) {
       answerContentHtml = `
-        <div style="margin-bottom: 12px; background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 6px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
+        <div style="background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 9px 13px; border-radius: 0 4px 4px 0;">
+          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 5px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
           <ul style="margin: 0; padding-left: 18px;">
             ${renderedBullets}
           </ul>
@@ -5536,9 +5545,9 @@ export function renderLesson(lesson) {
       `;
     } else if (srcObj && srcObj.model_answer) {
       answerContentHtml = `
-        <div style="margin-bottom: 12px; background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
-          <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.6;">${fmt(srcObj.model_answer)}</div>
+        <div style="background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 9px 13px; border-radius: 0 4px 4px 0;">
+          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
+          <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.55;">${fmt(srcObj.model_answer)}</div>
         </div>
       `;
     } else if (
@@ -5547,37 +5556,40 @@ export function renderLesson(lesson) {
       srcObj.discussion_ideas.length > 0
     ) {
       answerContentHtml = `
-        <div style="margin-bottom: 12px; background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
-          <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.55;">
-            ${srcObj.discussion_ideas.map((d) => `<li style="margin-bottom: 6px;">${fmt(d)}</li>`).join('')}
+        <div style="background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 9px 13px; border-radius: 0 4px 4px 0;">
+          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
+          <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">
+            ${srcObj.discussion_ideas.map((d) => `<li style="margin-bottom: 5px;">${fmt(d)}</li>`).join('')}
           </ul>
         </div>
       `;
     }
 
+    const fallbackContextHtml =
+      !answerContentHtml && contextVal
+        ? `
+          <div style="background: #f8fafc; border-left: 3.5px solid #64748b; padding: 9px 13px; border-radius: 0 4px 4px 0;">
+            <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px;">Historical Context &amp; Guidance:</strong>
+            <div style="font-size: 0.88rem; color: #334155; line-height: 1.52;">${fmt(contextVal)}</div>
+          </div>
+        `
+        : '';
+
     return `
       <details id="source-enquiry-det-${enqIdx}" class="source-enquiry-reveal ${modeCfg.detailsClass}" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" ontoggle="if(window.syncSourceAnswerToggle){window.syncSourceAnswerToggle(${enqIdx}, this.open);}">
-        <summary style="padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; list-style: none; user-select: none; background: ${modeCfg.softBg}; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;">
-            <span class="source-enquiry-mode-badge" style="font-size: 0.70rem; font-weight: 800; text-transform: uppercase; color: ${modeCfg.badgeText}; background: ${modeCfg.badgeBg}; border: 1px solid ${modeCfg.badgeBorder}; padding: 3px 8px; border-radius: 12px; letter-spacing: 0.5px; flex-shrink: 0;">${dynamicBadge}</span>
-            <span id="ans-btn-${enqIdx}" class="reveal-answer-pill" role="button" aria-expanded="false" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" data-closed-label="${modeCfg.closedLabel}" data-open-label="${modeCfg.openLabel}" style="flex-shrink: 0;">
-              <i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent};"></i>
-              <span class="reveal-text-closed">${modeCfg.closedLabel}</span>
-              <span class="reveal-text-open">${modeCfg.openLabel}</span>
-            </span>
+        <summary class="source-enquiry-single-row-summary" style="padding: 8px 12px; cursor: pointer; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; list-style: none; user-select: none; background: ${modeCfg.softBg}; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
+          <div class="source-enquiry-left-wrap" style="display: flex; align-items: center; gap: 9px; flex: 1 1 auto; min-width: 0; flex-wrap: wrap;">
+            <span class="source-enquiry-mode-badge" style="font-size: 0.66rem; font-weight: 800; text-transform: uppercase; color: ${modeCfg.badgeText}; background: ${modeCfg.badgeBg}; border: 1px solid ${modeCfg.badgeBorder}; padding: 2px 7px; border-radius: 10px; letter-spacing: 0.45px; flex-shrink: 0; white-space: nowrap;">${dynamicBadge}</span>
+            <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; color: ${modeCfg.promptColor}; font-weight: 700; line-height: 1.38; flex: 1 1 240px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${fmt(promptText)}</div>
           </div>
-          <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: ${modeCfg.promptColor}; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${fmt(promptText)}</div>
+          <span id="ans-btn-${enqIdx}" class="reveal-answer-pill" role="button" aria-expanded="false" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" data-closed-label="${modeCfg.closedLabel}" data-open-label="${modeCfg.openLabel}" style="flex-shrink: 0;">
+            <i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent};"></i>
+            <span class="reveal-text-closed">${modeCfg.closedLabel}</span>
+            <span class="reveal-text-open">${modeCfg.openLabel}</span>
+          </span>
         </summary>
-        <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid ${modeCfg.border};">
-          ${contextVal
-            ? `
-            <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
-              <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
-              <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${fmt(contextVal)}</div>
-            </div>
-          `
-            : ''}
+        <div class="source-enquiry-answer-body" style="padding: 10px 14px; background: #ffffff; border-top: 1.5px solid ${modeCfg.border};">
+          ${fallbackContextHtml}
           ${answerContentHtml}
         </div>
       </details>
@@ -5903,6 +5915,8 @@ export function renderLesson(lesson) {
         ? `<button class="btn btn-note-scaffold-jump" onclick="const sc = document.getElementById('lesson-note-scaffold'); if(sc) { sc.open = true; sc.scrollIntoView({ behavior: 'smooth' }); }" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump directly to the Active Lesson Task"><i class="fa-solid fa-pen-to-square" style="color: #16a34a;"></i> Core Lesson Task</button>`
         : ''
       }
+              <button type="button" class="btn btn-lesson-arcade-launcher" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIndex}, 'lobby')" style="padding: 6px 12px; font-size: 0.86rem; background: #0f172a; color: #38bdf8; border: 1.5px solid #334155; font-weight: 700; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Launch the 7-Game Revision Arcade for this lesson"><i class="fa-solid fa-gamepad" style="color: #38bdf8;"></i> <span>Arcade</span></button>
+              <button type="button" class="btn teacher-only-plenary-btn" onclick="window.openTeacherPlenaryProjector && window.openTeacherPlenaryProjector('${lesson.id}')" style="display: ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #ea580c; color: #ffffff; border: 1.5px solid #f97316; font-weight: 800; border-radius: 6px; align-items: center; gap: 6px; cursor: pointer;" title="Open Full-Screen Smartboard Plenary Projector (Hot Seat Taboo, 60s Standoff, Four Corners)"><i class="fa-solid fa-tv"></i> <span>Plenary Projector</span></button>
 
             `
     }
@@ -6077,6 +6091,14 @@ export function renderLesson(lesson) {
     return highlightGlossaryInProse(text, vocabDict, maxPerBlock);
   };
 
+  const narrativeAnnotator = createLessonNarrativeAnnotator({
+    lesson,
+    unitData: activeUnitData,
+    unitId: window.currentUnitId || unitId || activeUnitData?.id || 'unit',
+    vocabDict,
+    formatBoldFn: formatBold,
+  });
+
   // Note: Teacher Guidance, Pedagogical Primers, and Hinge Questions
   // are routed to the Departmental Portal (?view=department-portal) for staff lesson planning.
 
@@ -6176,18 +6198,25 @@ export function renderLesson(lesson) {
           `
           : '';
 
+        const standaloneAudioHtml = sourceText
+          ? renderAudioPlaybackBar('Read Aloud Primary Source Excerpt', 'source-audio-bar')
+          : '';
+
         htmlSources1 += `
           <details class="cme-source-drawer eee-source-drawer archival-drawer gcse-source-container archival-source-box" ${cardIdAttr} style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-            <summary style="padding: 4px 10px; min-height: 26px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; min-width: 0; flex: 1; margin-right: 8px;">
+            <summary style="padding: 4px 10px; min-height: 28px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f8fafc; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; flex: 1; margin-right: 8px;">
                 <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">${sLetter ? `SOURCE ${sLetter}` : 'ARCHIVAL EVIDENCE'}</span>
-                <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.82rem; color: #1e293b; font-weight: 700; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${displayTitle}</span>
+                <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">${displayTitle}</span>
               </div>
-              <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0; white-space: nowrap;">
-                Archival Evidence &bull; Expand <span class="drawer-caret">&#9660;</span>
-              </span>
+              <div style="display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0;">
+                ${standaloneAudioHtml}
+                <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0; white-space: nowrap;">
+                  <span class="drawer-state-expand">View Source</span><span class="drawer-state-collapse">Close</span> <span class="drawer-caret">&#9660;</span>
+                </span>
+              </div>
             </summary>
-            <div class="eee-source-content" style="padding: 14px 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
+            <div class="eee-source-content" style="padding: 10px 14px; background: #ffffff; border-top: 1px solid #e2e8f0;">
               ${sourceImgUrl
             ? (() => {
               const disc = getArchivalSourceDiscussionComponents(
@@ -6242,27 +6271,18 @@ export function renderLesson(lesson) {
             : `
                 <div>
                   ${sourceText
-              ? renderArchivalSourceBody(sourceText, source, { maxHeight: '350px', marginBottom: '8px', accentColor: '#1e3a8a' })
+              ? renderArchivalSourceBody(sourceText, source, { maxHeight: '350px', marginBottom: '4px', accentColor: '#1e3a8a' })
               : ''
             }
-                  ${!isKs2 && citationText
-              ? `<div class="archival-citation-footer" style="font-size: 0.80rem; color: #64748b; font-style: italic; text-align: right; margin-top: 6px; margin-bottom: 12px; line-height: 1.4;">
+                  ${!isKs2 && citationText && citationText.trim().toLowerCase() !== displayTitle.trim().toLowerCase()
+              ? `<div class="archival-citation-footer" style="font-size: 0.76rem; color: #64748b; font-style: italic; text-align: right; margin-top: 3px; margin-bottom: 6px; padding-top: 0; line-height: 1.35;">
                           &mdash; <span style="font-style: normal; font-weight: 600; color: #475569;">Provenance:</span> ${citationText}
                         </div>`
               : ''
             }
-                  ${!sourceEnquiryHtml && contextText
-              ? `
-                    <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 12px; color: #334155; font-size: 0.98rem; line-height: 1.6;">
-                      <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}
-                    </div>
-                  `
-              : ''
-            }
-                  ${renderArchivalSourceDiscussionBox(hingeText, source, isKs2, '12px')}
-                  ${sourceEnquiryHtml
-              ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 10px;">${sourceEnquiryHtml}</div>`
-              : ''
+                  ${!sourceEnquiryHtml
+              ? renderArchivalSourceDiscussionBox(hingeText, source, isKs2, '8px')
+              : `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 6px;">${sourceEnquiryHtml}</div>`
             }
                 </div>
               `
@@ -8524,60 +8544,6 @@ export function renderLesson(lesson) {
       const blockText = block.text || block.content || '';
       const isQuote = typeof blockText === 'string' && blockText.startsWith('"');
 
-      // 1. Add inline Key Individual & Key Organisation links FIRST
-      const resolveInlineAgent = (rawName) => {
-        const needle = String(rawName || '').trim().toLowerCase();
-        const list =
-          (appStore.state.activeUnitData && appStore.state.activeUnitData.key_individuals) ||
-          (typeof window !== 'undefined' &&
-            window.currentUnitData &&
-            window.currentUnitData.key_individuals);
-        if (!Array.isArray(list)) return null;
-        return list.find((p) => {
-          if (p?.name && p.name.toLowerCase() === needle) return true;
-          if (Array.isArray(p?.aliases) && p.aliases.some((a) => String(a).toLowerCase() === needle))
-            return true;
-          return Boolean(p?.name && p.name.toLowerCase().includes(needle));
-        });
-      };
-      const renderInlineAgentChip = (label, agentObj) => {
-        const isOrg = String(agentObj?.entity_type || agentObj?.type || '')
-          .toLowerCase()
-          .startsWith('org');
-        const chipBg = isOrg ? 'rgba(15, 118, 110, 0.1)' : 'rgba(59, 130, 246, 0.1)';
-        const chipBorder = isOrg ? 'rgba(15, 118, 110, 0.32)' : 'rgba(59, 130, 246, 0.3)';
-        const chipColor = isOrg ? '#0f766e' : '#2563eb';
-        const chipIcon = isOrg ? 'fa-landmark' : 'fa-id-card-clip';
-        const targetName = (agentObj?.name || label).replace(/"/g, '&quot;');
-        return `<a href="javascript:void(0)" class="key-individual-inline-link no-print" data-action="jump-to-key-individual" data-name="${targetName}" onclick="event.preventDefault(); event.stopPropagation(); if(window.jumpToKeyIndividual){window.jumpToKeyIndividual(this.dataset.name);}" style="background: ${chipBg}; border: 1px solid ${chipBorder}; border-radius: 4px; color: ${chipColor}; text-decoration: none; font-weight: 600; cursor: pointer; padding: 2px 6px; font-size: 0.95em; font-family: inherit; display: inline-flex; align-items: center; gap: 4px; vertical-align: baseline;"><i class="fa-solid ${chipIcon}"></i> ${label}</a><span class="print-only" style="display:none; font-weight:bold;">${label}</span>`;
-      };
-
-      const kiPlaceholders = [];
-      let contentStr = blockText.replace(
-        /\[Key (?:Individual|Organisation|Organization):\s*([^\]]+)\]/gi,
-        (match, name) => {
-          const found = resolveInlineAgent(name);
-          if (!found) return name;
-          const token = `@@KICHIP_${kiPlaceholders.length}@@`;
-          kiPlaceholders.push(renderInlineAgentChip(name, found));
-          return token;
-        },
-      );
-
-      // 2. Add Glossary highlighting SECOND (tokens protect chip HTML attributes from glossary spans)
-      contentStr = isQuote
-        ? `<em style="font-size:1.1rem; color:#475569;">${contentStr}</em>`
-        : highlightGlossary(contentStr);
-
-      contentStr = formatBold(contentStr);
-      kiPlaceholders.forEach((chipHtml, idx) => {
-        contentStr = contentStr.replace(`@@KICHIP_${idx}@@`, () => chipHtml);
-      });
-      contentStr = contentStr.replace(
-        /src=["'](\.\/)?assets\//g,
-        'src="/units/' + window.currentUnitId + '/assets/',
-      );
-
       // Decimal reference and paragraph number resolution
       const rawTextForMatch = block.text || block.content || '';
       const paraMatch = rawTextForMatch.match(/\[\s*(\d+\.\d+)\s*\]/);
@@ -8603,7 +8569,7 @@ export function renderLesson(lesson) {
       );
 
       // Unified Stage 1–5 Architecture: Strip legacy [X.Y] / para-ref decimals so App, Textbook & Workbook all align on Stage 1–5
-      const formatParagraphPills = (str, fallbackRef) => {
+      const formatParagraphPills = (str) => {
         if (!str || typeof str !== 'string') return str;
         // 1. Strip <span class="para-ref">[3.1]</span> while preserving an invisible anchor for deep links
         str = str.replace(
@@ -8617,39 +8583,6 @@ export function renderLesson(lesson) {
         );
         return str;
       };
-
-      contentStr = formatParagraphPills(contentStr, decimalRef);
-
-      let styledContent = contentStr;
-
-      let l4StyledContent = '';
-      if (block.level_4) {
-        // 1. Add inline Key Individual & Key Organisation links FIRST via protected tokens
-        const l4KiPlaceholders = [];
-        let l4ContentStr = block.level_4.replace(
-          /\[Key (?:Individual|Organisation|Organization):\s*([^\]]+)\]/gi,
-          (match, name) => {
-            const found = resolveInlineAgent(name);
-            if (!found) return name;
-            const token = `@@L4KICHIP_${l4KiPlaceholders.length}@@`;
-            l4KiPlaceholders.push(renderInlineAgentChip(name, found));
-            return token;
-          },
-        );
-
-        // 2. Add Glossary highlighting SECOND
-        l4ContentStr = isQuote
-          ? `<em style="font-size:1.1rem; color:#475569;">${l4ContentStr}</em>`
-          : highlightGlossary(l4ContentStr);
-
-        l4ContentStr = formatBold(l4ContentStr);
-        l4KiPlaceholders.forEach((chipHtml, idx) => {
-          l4ContentStr = l4ContentStr.replace(`@@L4KICHIP_${idx}@@`, () => chipHtml);
-        });
-        l4ContentStr = formatParagraphPills(l4ContentStr, decimalRef);
-
-        l4StyledContent = l4ContentStr;
-      }
 
       let themeHeadingHtml = '';
       const rawHeading = block.theme_heading || block.theme || block.title;
@@ -8715,10 +8648,35 @@ export function renderLesson(lesson) {
         matchedWbStage = wbStagesList[index] || null;
       }
 
+      // Unified Narrative Annotation Engine (App-Wide: Dossier Pills + Lesson-Scoped Vocab + Balanced Bolding)
+      let contentStr = narrativeAnnotator.annotateBlock(blockText, {
+        wbStage: matchedWbStage,
+        isQuote,
+        isExtension: false,
+      });
+      contentStr = contentStr.replace(
+        /src=["'](\.\/)?assets\//g,
+        'src="/units/' + window.currentUnitId + '/assets/',
+      );
+      contentStr = formatParagraphPills(contentStr);
+      let styledContent = contentStr;
+
+      let l4StyledContent = '';
+      if (block.level_4) {
+        let l4ContentStr = narrativeAnnotator.annotateBlock(block.level_4, {
+          wbStage: matchedWbStage,
+          isQuote,
+          isExtension: true,
+        });
+        l4ContentStr = formatParagraphPills(l4ContentStr);
+        l4StyledContent = l4ContentStr;
+      }
+
       let stageDateVal = (matchedStage && matchedStage.date) || (matchedWbStage && (matchedWbStage.date || matchedWbStage.dates)) || '';
       const stageObj = matchedStage;
       const stageNum = stageObj ? (stageObj.step || index + 1) : index + 1;
       let cleanHeadingTitle = '';
+      let headingAnchorId = '';
 
       if (rawHeading) {
         let displayHeading = rawHeading;
@@ -8744,11 +8702,11 @@ export function renderLesson(lesson) {
           cleanHeadingTitle = cleanHeadingTitle.replace(/\s*\([^)]*\d{2,4}[^)]*\)\s*$/, '').trim();
         }
 
-        const headingId = cleanHeadingTitle
+        headingAnchorId = cleanHeadingTitle
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/(^-|-$)/g, '');
-        themeHeadingHtml = `<h4 class="narrative-heading" id="${headingId}" style="margin: 0; color: #1e3a8a; font-size: 1.10rem; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;"><i class="fa-solid fa-bookmark" style="color: #64748b; font-size: 0.92rem;"></i><span>${cleanHeadingTitle}</span></h4>`;
+        themeHeadingHtml = `<h4 class="narrative-heading" id="${headingAnchorId}" style="margin: 0; color: #1e3a8a; font-size: 1.05rem; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; white-space: normal; overflow-wrap: break-word;"><i class="fa-solid fa-bookmark" style="color: #64748b; font-size: 0.90rem;"></i><span>${cleanHeadingTitle}</span></h4>`;
       }
 
       let imageHtml = '';
@@ -8860,7 +8818,7 @@ export function renderLesson(lesson) {
                      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; justify-content: center; margin: 20px 0; width: 100%; grid-column: 1 / -1;">
                        <div style="flex: 1 1 300px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
                          <img src="${getAssetUrl(img.src || img.image)}" alt="${img.alt || img.image_alt || 'Narrative Image'}" style="width: 100%; max-height: 400px; object-fit: contain; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; cursor: zoom-in;" data-action="open-gallery" data-gallery="${galleryData}" data-index="${idx}">
-                         ${img.caption || img.image_caption || img.alt || img.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${img.source_letter ? `<strong>Source ${img.source_letter}:</strong> ` : ''}${img.caption || img.image_caption || img.alt || img.image_alt}</div>` : ''}
+                         ${img.caption || img.image_caption || img.alt || img.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${formatVisualPlateCaption(img.caption || img.image_caption || img.alt || img.image_alt, img.source_letter)}</div>` : ''}
                        </div>
                        <div style="flex: 1 1 300px; background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center;">
                          <h4 style="margin-top: 0; margin-bottom: 12px; color: #b45309; display: flex; align-items: center; gap: 8px; font-size: 1.1rem;">
@@ -8876,7 +8834,7 @@ export function renderLesson(lesson) {
                 return `
                      <div class="narrative-image-container" style="text-align: center;">
                        <img src="${getAssetUrl(img.src || img.image)}" alt="${img.alt || img.image_alt || 'Narrative Image'}" style="width: 100%; max-height: 400px; object-fit: contain; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; cursor: zoom-in;" data-action="open-gallery" data-gallery="${galleryData}" data-index="${idx}">
-                       ${img.caption || img.image_caption || img.alt || img.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${img.source_letter ? `<strong>Source ${img.source_letter}:</strong> ` : ''}${img.caption || img.image_caption || img.alt || img.image_alt}</div>` : ''}
+                       ${img.caption || img.image_caption || img.alt || img.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${formatVisualPlateCaption(img.caption || img.image_caption || img.alt || img.image_alt, img.source_letter)}</div>` : ''}
                      </div>
                    `;
               }
@@ -8909,7 +8867,7 @@ export function renderLesson(lesson) {
              <div class="narrative-image-container" style="${containerStyle}">
                <div style="${imgWrapperStyle}">
                  <img src="${getAssetUrl(block.image)}" alt="${block.image_alt || 'Narrative Image'}" style="max-width: 100%; max-height: 240px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(block.image)}">
-                 ${block.caption || block.image_caption || block.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${block.source_letter ? `<strong>Source ${block.source_letter}:</strong> ` : ''}${block.caption || block.image_caption || block.image_alt}</div>` : ''}
+                 ${block.caption || block.image_caption || block.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${formatVisualPlateCaption(block.caption || block.image_caption || block.image_alt, block.source_letter)}</div>` : ''}
 
                </div>
                ${contextHtml}
@@ -8972,7 +8930,7 @@ export function renderLesson(lesson) {
           rawSource.caption ||
           (bLetter ? `Source ${bLetter}: Archival Record` : '');
         const sourceAudioBtnHtml =
-          isWrittenSource && sourceText
+          Boolean(sourceText) && !(rawSource && rawSource.perspective_pair)
             ? renderAudioPlaybackBar('Read Aloud Primary Source Excerpt', 'source-audio-bar')
             : '';
 
@@ -9070,20 +9028,20 @@ export function renderLesson(lesson) {
                           : 'GCSE Source Utility Enquiry [8 Marks]');
 
               return `
-                <details class="source-enquiry-reveal edexcel-paper3-utility-card">
-                  <summary style="padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; list-style: none; user-select: none; background: #f0fdf4; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
-                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;">
-                      <span style="font-size: 0.70rem; font-weight: 800; text-transform: uppercase; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 3px 8px; border-radius: 12px; letter-spacing: 0.5px; flex-shrink: 0;">${examBadgeTitle}</span>
-                      <span class="reveal-answer-pill" style="flex-shrink: 0;">
-                        <i class="fa-solid fa-lightbulb" style="color: #16a34a;"></i>
-                        <span class="reveal-text-closed">Reveal Exam Guidance</span>
-                        <span class="reveal-text-open">Hide Exam Guidance</span>
-                        <span class="reveal-arrow">&#9660;</span>
-                      </span>
+                <details class="source-enquiry-reveal mode-exam edexcel-paper3-utility-card">
+                  <summary class="source-enquiry-single-row-summary" style="padding: 8px 12px; cursor: pointer; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; list-style: none; user-select: none; background: #f0fdf4; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
+                    <div class="source-enquiry-left-wrap" style="display: flex; align-items: center; gap: 9px; flex: 1 1 auto; min-width: 0; flex-wrap: wrap;">
+                      <span style="font-size: 0.66rem; font-weight: 800; text-transform: uppercase; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 2px 7px; border-radius: 10px; letter-spacing: 0.45px; flex-shrink: 0; white-space: nowrap;">${examBadgeTitle}</span>
+                      <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; color: #14532d; font-weight: 700; line-height: 1.38; flex: 1 1 240px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uPrompt) : uPrompt}</div>
                     </div>
-                    <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uPrompt) : uPrompt}</div>
+                    <span class="reveal-answer-pill" style="flex-shrink: 0;">
+                      <i class="fa-solid fa-lightbulb" style="color: #16a34a;"></i>
+                      <span class="reveal-text-closed">Reveal Exam Guidance</span>
+                      <span class="reveal-text-open">Hide Exam Guidance</span>
+                      <span class="reveal-arrow">&#9660;</span>
+                    </span>
                   </summary>
-                  <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
+                  <div class="source-enquiry-answer-body" style="padding: 12px 16px; background: #ffffff; border-top: 1.5px solid #86efac;">
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 4px;">
                       ${uInferences ? `<div style="background: #f8fafc; border: 1px solid #bbf7d0; border-radius: 5px; padding: 10px 12px;"><div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #166534; margin-bottom: 5px;"><i class="fa-solid fa-magnifying-glass" style="color: #16a34a;"></i> 1. Content &amp; Inferences</div><div style="font-size: 0.86rem; color: #1e293b; line-height: 1.5;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uInferences) : uInferences}</div></div>` : ''}
                       ${uProv ? `<div style="background: #f8fafc; border: 1px solid #bbf7d0; border-radius: 5px; padding: 10px 12px;"><div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #166534; margin-bottom: 5px;"><i class="fa-solid fa-stamp" style="color: #16a34a;"></i> 2. Provenance (NOP)</div><div style="font-size: 0.86rem; color: #1e293b; line-height: 1.5;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uProv) : uProv}</div></div>` : ''}
@@ -9311,24 +9269,25 @@ export function renderLesson(lesson) {
             </div>
           `;
         } else if (isWrittenSource) {
-          const provenanceText = rawSource.citation || rawSource.provenance || '';
+          const provenanceText = (rawSource.citation || rawSource.provenance || '').trim();
+          const summaryNorm = (rawSource.title || '')
+            .replace(/^(?:Source|Map|Diagram)\s+[A-Z0-9]+[:\s-]*/i, '')
+            .trim()
+            .toLowerCase();
           const provenanceHtml =
-            !isKs2 && provenanceText
-              ? `<div class="archival-citation-footer" style="font-size: 0.80rem; color: #64748b; font-style: italic; text-align: right; margin-top: 6px; margin-bottom: 12px; line-height: 1.4;">
+            !isKs2 && provenanceText && provenanceText.toLowerCase() !== summaryNorm
+              ? `<div class="archival-citation-footer" style="font-size: 0.76rem; color: #64748b; font-style: italic; text-align: right; margin-top: 3px; margin-bottom: 5px; padding-top: 0; line-height: 1.35;">
                   &mdash; <span style="font-style: normal; font-weight: 600; color: #475569;">Provenance:</span> ${provenanceText}
                 </div>`
               : '';
 
           sourceBodyHtml = `
-            <div style="position: relative;">
-              ${sourceAudioBtnHtml ? `<div style="float: right; margin: 2px 0 6px 10px; position: relative; z-index: 2;">${sourceAudioBtnHtml}</div>` : ''}
-              ${sourceText
-              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '350px', marginBottom: '6px', accentColor: '#1e3a8a' })
+            ${sourceText
+              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '350px', marginBottom: '4px', accentColor: '#1e3a8a' })
               : ''
             }
-            </div>
             ${provenanceHtml}
-            ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 8px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '8px')}
+            ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 6px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '6px')}
           `;
         } else {
           const rawSourceImgUrl = getAssetUrl(rawImgSrc);
@@ -9442,22 +9401,20 @@ export function renderLesson(lesson) {
               : 'ARCHIVAL EVIDENCE';
 
           return `
-            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer usa-source-drawer cold-war-source-drawer gcse-source-drawer archival-drawer gcse-source-container archival-source-box${hasPerspectivePair ? ' has-perspective-pair' : ''}" ${bCardIdAttr} style="margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-              <summary style="padding: 6px 12px; min-height: 38px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 12px;">
+            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer usa-source-drawer cold-war-source-drawer gcse-source-drawer archival-drawer gcse-source-container archival-source-box${hasPerspectivePair ? ' has-perspective-pair' : ''}" ${bCardIdAttr} style="margin: 5px 0 0 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+              <summary style="padding: 5px 12px; min-height: 32px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
+                <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 10px; flex-wrap: wrap;">
                   <span class="archival-meta-tag${hasPerspectivePair ? ' is-competing-perspectives' : ''}" style="background: #1e40af; color: #ffffff; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">${drawerPillLabel}</span>
-                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #1e293b; font-weight: 700; line-height: 1.35;">${displayTitle}</span>
+                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">${displayTitle}</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-                  <button type="button" class="source-to-narrative-jump-btn" onclick="event.stopPropagation(); if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${stageNum});}" title="Jump back to Stage ${stageNum} Narrative" style="background: rgba(2, 132, 199, 0.12); border: 1px solid rgba(56, 189, 248, 0.4); color: #0284c7; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; cursor: pointer; align-items: center; gap: 4px; transition: all 0.15s ease;">
-                    <i class="fa-solid fa-arrow-turn-up"></i> Stage ${stageNum} Narrative
-                  </button>
+                <div style="display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0;">
+                  ${sourceAudioBtnHtml}
                   <span class="drawer-toggle-indicator" style="cursor: pointer;">
                     <span class="drawer-state-expand">View Source</span><span class="drawer-state-collapse">Close</span> <span class="drawer-caret">&#9660;</span>
                   </span>
                 </div>
               </summary>
-              <div class="cme-source-content" style="padding: 14px 16px; background: #ffffff; border-top: 1px solid #e2e8f0;">
+              <div class="cme-source-content" style="padding: 10px 14px; background: #ffffff; border-top: 1px solid #e2e8f0;">
                 ${sourceBodyHtml}
               </div>
             </details>
@@ -9609,10 +9566,10 @@ export function renderLesson(lesson) {
       let stageQ = stageObj ? (stageObj.question || '') : '';
       if (!stageQ && matchedWbStage) {
         stageQ =
-          matchedWbStage.heading ||
-          matchedWbStage.focus_clue ||
           matchedWbStage.question ||
+          matchedWbStage.focus_clue ||
           matchedWbStage.prompt ||
+          matchedWbStage.heading ||
           matchedWbStage.title ||
           '';
       }
@@ -9626,57 +9583,40 @@ export function renderLesson(lesson) {
         'edexcel_medicine',
       ].includes(window.currentUnitId || unitId);
 
-      // Workbook Trigger chip bars retired across all narratives so stage headers display only the clean Stage Enquiry
+      // Uniform App-Wide Standard: Slim 1-Row Dark Stage Question Bar + Compact White-Box Section Eyebrow
       const isHeaderUnified = Boolean(stageQ);
 
       let headerBlockHtml = '';
       if (isHeaderUnified) {
+        const cleanStageQ = String(stageQ).replace(/^[“"']+|[”"']+$/g, '').trim();
         headerBlockHtml = `
-          <div class="workbook-stage-question-banner unified-stage-header-card" id="stage-banner-${stageNum}" style="margin-bottom: 14px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 8px; padding: 12px 16px; color: #ffffff; box-shadow: 0 2px 6px rgba(15,23,42,0.12);">
-            <div class="stage-header-top-bar" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
-              <div class="stage-header-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <span class="stage-header-title-row" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                  <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">
-                    Stage ${stageNum}
-                  </span>
-                  ${themeHeadingHtml}
+          <div class="workbook-stage-question-banner unified-stage-header-card slim-stage-banner" id="stage-banner-${stageNum}" style="margin-bottom: 6px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 7px; padding: 7px 12px; color: #ffffff; box-shadow: 0 2px 5px rgba(15,23,42,0.10);">
+            <div class="stage-header-single-row" style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+              <div class="stage-header-meta" onclick="if(window.jumpToSpineCard){window.jumpToSpineCard(${stageNum});}" style="flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; cursor: pointer;">
+                <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px; flex-shrink: 0; white-space: nowrap;">
+                  Stage ${stageNum}
                 </span>
-                ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
+                ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 7px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; white-space: nowrap;"><i class="fa-regular fa-clock" style="font-size: 0.65rem;"></i> ${stageDateVal}</span>` : ''}
+                <span class="stage-banner-question" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.0rem; font-weight: 700; color: #f8fafc; line-height: 1.32; flex: 1 1 260px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${cleanStageQ}</span>
               </div>
-              <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
-                ${renderAudioPlaybackBar('Read Aloud Paragraph')}
-              </div>
-            </div>
-            ${
-              stageQ
-                ? `
-            <div class="stage-enquiry-subcard" onclick="if(window.jumpToSpineCard){window.jumpToSpineCard(${stageNum});}" title="Click to view Stage ${stageNum} causal dominoes in Chronology Spine above" style="padding-top: 10px; border-top: 1px solid rgba(148, 163, 184, 0.2); cursor: pointer;">
-              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px;">
-                  <i class="fa-solid fa-book-open"></i> Stage ${stageNum} Workbook Enquiry
-                </span>
+              <div class="narrative-chunk-audio" style="flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px;">
                 ${
-                  matchingLetter && isFiveBlockUnit
+                  matchingLetter && isFiveBlockUnit && !blockSourceHtml.trim()
                     ? `
-                  <button type="button" class="stage-source-jump-btn" onclick="event.stopPropagation(); if(window.jumpToSourceDrawer){window.jumpToSourceDrawer('${matchingLetter}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;" title="Jump directly to Source ${matchingLetter} Evidence Drawer below">
-                    <i class="fa-solid fa-scroll" style="color: #38bdf8;"></i> Jump to Source ${matchingLetter}
+                  <button type="button" class="stage-source-jump-btn" onclick="event.stopPropagation(); if(window.jumpToSourceDrawer){window.jumpToSourceDrawer('${matchingLetter}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease; white-space: nowrap;" title="Jump directly to Source ${matchingLetter} Evidence Drawer below">
+                    <i class="fa-solid fa-scroll" style="color: #38bdf8;"></i> Source ${matchingLetter}
                   </button>
                 `
                     : ''
                 }
-              </div>
-              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #f8fafc; line-height: 1.35;">
-                &ldquo;${stageQ}&rdquo;
+                ${renderAudioPlaybackBar('Read Aloud Paragraph')}
               </div>
             </div>
-            `
-                : ''
-            }
           </div>
         `;
       } else {
         headerBlockHtml = `
-          <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
+          <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
             <div class="narrative-chunk-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
               <span class="stage-header-title-row" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                 ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">Stage ${stageNum}</span>` : ''}
@@ -9691,11 +9631,16 @@ export function renderLesson(lesson) {
         `;
       }
 
+      const stageEyebrowHtml =
+        isHeaderUnified && cleanHeadingTitle
+          ? `<div class="narrative-stage-eyebrow"${headingAnchorId ? ` id="${headingAnchorId}"` : ''}>${cleanHeadingTitle}</div>`
+          : '';
+
       const hasHookOrSlideCol = hasStageHookMap || hasSlideCompare;
       const narrativeChunkHtml = `
-              <div id="para-${index + 1}" class="narrative-chunk ${hasSideMedia ? '' : 'standalone-narrative-chunk'}${hasHookOrSlideCol ? ' stage-hook-narrative-chunk' : ''}" style="display: flex; flex-direction: column; margin-bottom: ${hasSideMedia ? '0' : '15px'}; padding: 18px 20px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: ${hasHookOrSlideCol ? '1 1 46%' : '1 1 58%'}; min-width: 0;">
-                ${isHeaderUnified ? '' : headerBlockHtml}
-                <div class="narrative-text" style="width: 100%; ${hasSideMedia ? '' : 'max-width: 880px;'} line-height: ${hasSideMedia ? '1.72' : '1.75'}; color: #0f172a; font-size: 1.15rem;">${styledContent}</div>
+              <div id="para-${index + 1}" class="narrative-chunk ${hasSideMedia ? '' : 'standalone-narrative-chunk'}${hasHookOrSlideCol ? ' stage-hook-narrative-chunk' : ''}" style="display: flex; flex-direction: column; margin-bottom: ${hasSideMedia ? '0' : '6px'}; padding: 14px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: ${hasHookOrSlideCol ? '1 1 46%' : '1 1 58%'}; min-width: 0;">
+                ${isHeaderUnified ? stageEyebrowHtml : headerBlockHtml}
+                <div class="narrative-text" style="width: 100%; ${hasSideMedia ? '' : 'max-width: 880px;'} line-height: ${hasSideMedia ? '1.68' : '1.70'}; color: #0f172a; font-size: 1.13rem;">${styledContent}</div>
               </div>
       `;
 
@@ -9802,12 +9747,12 @@ export function renderLesson(lesson) {
         const visualPlateHtml = `
           <div class="${plateClass}" style="flex: 0 0 ${plateFlexBasis}; max-width: ${plateMaxWidth}; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: ${platePadding}; box-shadow: 0 2px 5px rgba(0,0,0,0.04); text-align: center;">
             <img class="archival-image" src="${getAssetUrl(effectiveImage)}" alt="${escAttrSafe(effectiveAlt)}" style="max-width: 100%; max-height: ${plateMaxImgHeight}; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(effectiveImage)}">
-            ${effectiveCaption ? `<div class="narrative-plate-caption" style="font-size: 0.80rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.4; user-select: none;">${effectiveCaption}</div>` : ''}
+            ${effectiveCaption ? `<div class="narrative-plate-caption" style="font-size: 0.80rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.4; user-select: none;">${formatVisualPlateCaption(effectiveCaption)}</div>` : ''}
           </div>
         `;
         topNarrativeHtml = `
           ${isHeaderUnified ? headerBlockHtml : ''}
-          <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 12px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
+          <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 18px; align-items: flex-start; margin-bottom: 6px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
             ${narrativeChunkHtml}
             ${visualPlateHtml}
           </div>
@@ -9821,7 +9766,7 @@ export function renderLesson(lesson) {
       }
 
       htmlNarrative += `
-            <div class="standard-narrative-container" style="margin-bottom: 24px;">
+            <div class="standard-narrative-container" style="margin-bottom: 20px;">
               ${topNarrativeHtml}
               ${blockSourceHtml}
             </div>
@@ -15918,7 +15863,15 @@ export function injectArchivalAudioButtons(container = document) {
     const bar = barWrap.firstElementChild;
 
     const header = box.querySelector('.archival-source-header');
-    if (header) {
+    const summaryEl = box.tagName === 'DETAILS' ? box.querySelector(':scope > summary') : null;
+    if (summaryEl) {
+      let rightGroup = summaryEl.querySelector(':scope > div:last-child');
+      if (rightGroup && rightGroup !== summaryEl.querySelector(':scope > div:first-child')) {
+        rightGroup.insertBefore(bar, rightGroup.firstChild);
+      } else {
+        summaryEl.insertBefore(bar, summaryEl.querySelector('.drawer-toggle-indicator') || null);
+      }
+    } else if (header) {
       // If header has a right-aligned container or stamp, append next to it, or append to header
       let rightContainer = header.querySelector('.archival-shelfmark-stamp')?.parentElement;
       if (
@@ -15936,7 +15889,7 @@ export function injectArchivalAudioButtons(container = document) {
     } else {
       const topBar = document.createElement('div');
       topBar.className = 'archival-audio-bar no-print';
-      topBar.style.cssText = 'display: flex; justify-content: flex-end; margin-bottom: 8px;';
+      topBar.style.cssText = 'display: flex; justify-content: flex-end; margin-bottom: 6px;';
       topBar.appendChild(bar);
       box.insertBefore(topBar, box.firstChild);
     }

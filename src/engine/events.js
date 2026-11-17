@@ -482,15 +482,22 @@ export function initEventDelegation() {
         }
         break;
 
-      case 'read-aloud':
+      case 'read-aloud': {
+        e.preventDefault();
+        const parentDetails = target.closest('details.archival-drawer, details.cme-source-drawer');
+        if (parentDetails && !parentDetails.open) {
+          parentDetails.open = true;
+        }
         if (typeof readAloudText === 'function') {
           readAloudText(target);
         } else if (window.readAloudText) {
           window.readAloudText(target);
         }
         break;
+      }
 
       case 'stop-speech':
+        e.preventDefault();
         if (typeof cancelSpeech === 'function') {
           cancelSpeech();
         } else if (window.cancelSpeech) {

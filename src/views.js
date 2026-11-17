@@ -1471,30 +1471,26 @@ export function renderInteractiveQuiz() {
         </button>
       </div>
 
-      ${
-        unitId === 'usa'
-          ? `
-      <!-- USA Collector Cards & Arcade Games -->
-      <div style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), rgba(6, 182, 212, 0.08)); border: 1px solid rgba(249, 115, 22, 0.3); border-radius: 12px; padding: 14px 18px; margin-top: 14px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <i class="fa-solid fa-gamepad" style="color: #f97316; font-size: 1.2rem;"></i>
+      <!-- Universal 7-Game Revision Arcade Banner -->
+      <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 14px 18px; margin-top: 14px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <i class="fa-solid fa-gamepad" style="color: #38bdf8; font-size: 1.3rem;"></i>
           <div>
-            <strong style="color: #ffffff; font-size: 0.88rem; display: block;">Bonus Revision Arcade</strong>
-            <span style="color: #cbd5e1; font-size: 0.78rem;">16 3D collector cards + Falling Blocks arcade revision game.</span>
+            <strong style="color: #ffffff; font-size: 0.92rem; display: block;">7-Game Revision Arcade</strong>
+            <span style="color: #cbd5e1; font-size: 0.8rem;">Play Keyword Stack (History Tetris), Timeline Blitz, Connections Wall, Redacted!, 60s Boss Sprint, Archive Detective &amp; Mythbuster.</span>
           </div>
         </div>
-        <div style="display: flex; gap: 8px;">
-          <a href="/units/usa/trading_cards.html" target="_blank" style="text-decoration: none; background: linear-gradient(135deg, #f97316, #ea580c); color: #fff; font-weight: 700; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 5px;">
-            <i class="fa-solid fa-id-card"></i> Trading Cards
-          </a>
-          <a href="/units/usa/falling_blocks.html" target="_blank" style="text-decoration: none; background: rgba(255, 255, 255, 0.1); color: #fff; font-weight: 700; border-radius: 6px; padding: 6px 12px; font-size: 0.8rem; border: 1px solid var(--border-glass); display: inline-flex; align-items: center; gap: 5px;">
-            <i class="fa-solid fa-gamepad" style="color: #06b6d4;"></i> Arcade
-          </a>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          ${
+            unitId === 'usa'
+              ? `<a href="/units/usa/trading_cards.html" target="_blank" style="text-decoration: none; background: linear-gradient(135deg, #f97316, #ea580c); color: #fff; font-weight: 700; border-radius: 7px; padding: 7px 13px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 5px;"><i class="fa-solid fa-id-card"></i> Trading Cards</a>`
+              : ''
+          }
+          <button type="button" onclick="if(window.launchUnitArcade){window.launchUnitArcade('${unitId}', 'all', 'lobby');}else if(window.switchView){window.switchView('arcade', '${unitId}');}" style="background: #2563eb; color: #ffffff; font-weight: 800; border-radius: 7px; padding: 8px 15px; font-size: 0.82rem; border: 1px solid #60a5fa; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-gamepad"></i> Launch Revision Arcade
+          </button>
         </div>
       </div>
-      `
-          : ''
-      }
 
     </div>
   `;

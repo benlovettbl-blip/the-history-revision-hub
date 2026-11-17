@@ -1,0 +1,251 @@
+/**
+ * Game 4: Redacted! ("Classified Dossier SPaG Cracker")
+ * Declassify censored specification vocabulary & key individuals letter-by-letter
+ * to build precision GCSE SPaG accuracy.
+ */
+
+import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
+import { shuffleList } from '../arcade_data_adapter.js';
+import { addXp, recordQuestionResult } from '../../storage.js';
+
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
+
+export function mountRedactedDossier(stageEl, pools, ctx) {
+  const pool = pools.redactedPool || [];
+  if (pool.length === 0) {
+    stageEl.innerHTML = `<div class="arcade-empty">No vocabulary dossiers available in this selection.</div>`;
+    return () => {};
+  }
+
+  let deck = [];
+  let currentDossier = null;
+  let guessedChars = new Set();
+  let strikes = 0;
+  const MAX_STRIKES = 6;
+  let score = 0;
+  let solvedCount = 0;
+  let showTopicHint = false;
+  let showStructHint = false;
+  let roundStatus = 'PLAYING'; // PLAYING | WON | LOST
+  let pb = getArcadePersonalBest(ctx.unitId, 'redacted', ctx.scope);
+
+  function nextDossier() {
+    arcadeAudio.ensureContext();
+    if (deck.length === 0) deck = shuffleList(pool);
+    currentDossier = deck.pop();
+    guessedChars = new Set();
+    strikes = 0;
+    showTopicHint = false;
+    showStructHint = false;
+    roundStatus = 'PLAYING';
+    render();
+  }
+
+  function isAutoRevealedChar(ch) {
+    return !/[A-Z0-9]/.test(ch);
+  }
+
+  function checkAllLettersRevealed() {
+    if (!currentDossier) return false;
+    for (const ch of currentDossier.term) {
+      if (!isAutoRevealedChar(ch) && !guessedChars.has(ch)) return false;
+    }
+    return true;
+  }
+
+  function guessLetter(rawChar) {
+    if (roundStatus !== 'PLAYING' || !currentDossier) return;
+    const ch = String(rawChar || '').toUpperCase();
+    if (!/[A-Z0-9]/.test(ch) || guessedChars.has(ch)) return;
+
+    guessedChars.add(ch);
+    if (currentDossier.term.includes(ch)) {
+      arcadeAudio.move();
+      score += 20;
+      if (checkAllLettersRevealed()) {
+        roundStatus = 'WON';
+        solvedCount++;
+        const bonus = 120 + (MAX_STRIKES - strikes) * 20;
+        score += bonus;
+        arcadeAudio.correct();
+        const { best } = saveArcadePersonalBest(ctx.unitId, 'redacted', ctx.scope, score);
+        pb = best;
+        addXp(20, `Declassified: ${currentDossier.displayTerm}`);
+        recordQuestionResult(
+          currentDossier.id,
+          true,
+          {
+            id: currentDossier.id,
+            q: `Spell and define "${currentDossier.displayTerm}"`,
+            a: currentDossier.displayTerm,
+            source: currentDossier.source,
+            explanation: currentDossier.fullDefinition,
+          },
+          ctx.unitId,
+        );
+      }
+    } else {
+      strikes++;
+      arcadeAudio.wrong();
+      if (strikes >= MAX_STRIKES) {
+        roundStatus = 'LOST';
+        const { best } = saveArcadePersonalBest(ctx.unitId, 'redacted', ctx.scope, score);
+        pb = best;
+        recordQuestionResult(
+          currentDossier.id,
+          false,
+          {
+            id: currentDossier.id,
+            q: `Which specification term matches: "${currentDossier.cluePrimary}"?`,
+            a: currentDossier.displayTerm,
+            source: currentDossier.source,
+            explanation: `${currentDossier.displayTerm}: ${currentDossier.fullDefinition}`,
+          },
+          ctx.unitId,
+        );
+      }
+    }
+    render();
+  }
+
+  function revealOneLetterLifeline() {
+    if (roundStatus !== 'PLAYING' || !currentDossier) return;
+    const hiddenChars = currentDossier.term
+      .split('')
+      .filter((ch) => !isAutoRevealedChar(ch) && !guessedChars.has(ch));
+    if (hiddenChars.length === 0) return;
+    score = Math.max(0, score - 30);
+    showStructHint = true;
+    const pick = hiddenChars[Math.floor(Math.random() * hiddenChars.length)];
+    arcadeAudio.zoom();
+    guessLetter(pick);
+  }
+
+  function render() {
+    if (!currentDossier) return;
+    const clearanceLeft = MAX_STRIKES - strikes;
+    const clearanceBars =
+      '🟩'.repeat(Math.max(0, clearanceLeft)) + '🟥'.repeat(Math.max(0, strikes));
+
+    // Split term into words so multi-word terms never break awkwardly mid-word
+    const words = currentDossier.term.split(' ');
+    const hasDigits = /[0-9]/.test(currentDossier.term);
+    const keySet = hasDigits ? ALPHABET : ALPHABET.slice(0, 26);
+
+    stageEl.innerHTML = `
+      <div class="red-wrap">
+        <div class="tlb-hud">
+          <div class="tlb-stat"><span>Score</span><strong class="cyan">${score}</strong></div>
+          <div class="tlb-stat"><span>Declassified</span><strong class="green">${solvedCount} Files</strong></div>
+          <div class="tlb-stat"><span>Clearance</span><strong>${clearanceBars}</strong></div>
+          <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
+        </div>
+
+        <div class="red-dossier-card">
+          <div class="red-stamp-row">
+            <span class="red-stamp"><i class="fa-solid fa-file-shield"></i> CLASSIFIED ARCHIVE DOSSIER • SPaG TARGET</span>
+            <span class="red-letter-count">${currentDossier.term.replace(/[^A-Z0-9]/g, '').length} Letters</span>
+          </div>
+
+          <p class="red-clue-main">
+            <strong>Intelligence Brief:</strong> ${currentDossier.cluePrimary}
+          </p>
+
+          ${showTopicHint ? `<div class="red-hint-pill"><i class="fa-solid fa-folder-open"></i> ${currentDossier.clueTopic}</div>` : ''}
+          ${showStructHint ? `<div class="red-hint-pill"><i class="fa-solid fa-spell-check"></i> ${currentDossier.clueStructure}</div>` : ''}
+
+          <!-- Letter Slots -->
+          <div class="red-words-row">
+            ${words
+              .map(
+                (word) => `
+                <div class="red-word-group">
+                  ${word
+                    .split('')
+                    .map((ch) => {
+                      const auto = isAutoRevealedChar(ch);
+                      const shown = auto || guessedChars.has(ch) || roundStatus !== 'PLAYING';
+                      const missed = roundStatus === 'LOST' && !auto && !guessedChars.has(ch);
+                      return `<span class="red-char-box ${auto ? 'punct' : shown ? (missed ? 'missed' : 'revealed') : ''}">${shown ? ch : ''}</span>`;
+                    })
+                    .join('')}
+                </div>
+              `,
+              )
+              .join('')}
+          </div>
+
+          ${
+            roundStatus === 'PLAYING'
+              ? `
+            <div class="red-lifelines">
+              <button type="button" class="arcade-btn-ghost" id="red-topic-btn" ${showTopicHint ? 'disabled' : ''}>
+                <i class="fa-solid fa-compass" style="color:#38bdf8;"></i> Declassify Topic (-15)
+              </button>
+              <button type="button" class="arcade-btn-ghost" id="red-letter-btn">
+                <i class="fa-solid fa-key" style="color:#fbbf24;"></i> Reveal Letter &amp; Structure (-30)
+              </button>
+            </div>
+
+            <div class="red-keyboard">
+              ${keySet
+                .map((k) => {
+                  const used = guessedChars.has(k);
+                  const hit = used && currentDossier.term.includes(k);
+                  return `<button type="button" class="red-key ${used ? (hit ? 'hit' : 'miss') : ''}" data-key="${k}" ${used ? 'disabled' : ''}>${k}</button>`;
+                })
+                .join('')}
+            </div>
+          `
+              : `
+            <div class="red-verdict ${roundStatus === 'WON' ? 'won' : 'lost'}">
+              <div>
+                <strong>${roundStatus === 'WON' ? '🔓 DOSSIER DECLASSIFIED!' : '🔒 CLEARANCE REVOKED — TERM REVEALED:'} ${currentDossier.displayTerm}</strong>
+                <p>${currentDossier.fullDefinition}</p>
+              </div>
+              <button type="button" class="arcade-btn-primary" id="red-next-btn">
+                Next Classified File <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          `
+          }
+        </div>
+      </div>
+    `;
+
+    stageEl.querySelectorAll('.red-key').forEach((btn) => {
+      btn.addEventListener('click', () => guessLetter(btn.dataset.key));
+    });
+    stageEl.querySelector('#red-topic-btn')?.addEventListener('click', () => {
+      showTopicHint = true;
+      score = Math.max(0, score - 15);
+      arcadeAudio.zoom();
+      render();
+    });
+    stageEl.querySelector('#red-letter-btn')?.addEventListener('click', revealOneLetterLifeline);
+    stageEl.querySelector('#red-next-btn')?.addEventListener('click', nextDossier);
+  }
+
+  const onKeyDown = (e) => {
+    const tag = (e.target?.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+
+    if (roundStatus !== 'PLAYING' && e.key === 'Enter') {
+      e.preventDefault();
+      nextDossier();
+      return;
+    }
+    if (roundStatus === 'PLAYING' && /^[a-zA-Z0-9]$/.test(e.key)) {
+      e.preventDefault();
+      guessLetter(e.key.toUpperCase());
+    }
+  };
+  window.addEventListener('keydown', onKeyDown);
+
+  nextDossier();
+
+  return () => {
+    window.removeEventListener('keydown', onKeyDown);
+  };
+}

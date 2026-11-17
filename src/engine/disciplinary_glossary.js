@@ -630,57 +630,106 @@ export const MASTER_DISCIPLINARY_GLOSSARY = [
  * 3. The current lesson's specific vocabulary (highest priority)
  * 4. Automatic plural, stem, and morphological derivatives
  */
+function normalizeGlossaryKey(str) {
+  return String(str || '')
+    .replace(/[’‘]/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+function stripParentheticalSuffix(str) {
+  return String(str || '')
+    .replace(/\s*\([^)]*\)\s*/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function buildComprehensiveVocabDict(lesson, unitData) {
   const vocabDict = {};
 
-  const registerItem = (term, def, syllables = '', phonetic = '', tier = '2', variants = []) => {
+  const setKey = (rawKey, meta) => {
+    const k = normalizeGlossaryKey(rawKey);
+    if (!k || k.length < 2) return;
+    const existing = vocabDict[k];
+    if (!existing || meta.priority >= existing.priority) {
+      vocabDict[k] = meta;
+    }
+  };
+
+  const registerItem = (
+    term,
+    def,
+    syllables = '',
+    phonetic = '',
+    tier = '2',
+    variants = [],
+    priority = 1,
+  ) => {
     if (!term || !def) return;
-    const baseTerm = term.trim();
-    const termKey = baseTerm.toLowerCase();
+    const baseTerm = String(term).trim();
+    const cleanRoot = normalizeGlossaryKey(stripParentheticalSuffix(baseTerm)) || normalizeGlossaryKey(baseTerm);
     const meta = {
       term: baseTerm,
+      rootKey: cleanRoot,
       definition: def,
       syllables: syllables || '',
       phonetic: phonetic || '',
       tier: String(tier || '2'),
+      priority,
     };
 
-    if (!vocabDict[termKey]) {
-      vocabDict[termKey] = meta;
+    const candidateKeys = new Set([normalizeGlossaryKey(baseTerm)]);
+    const stripped = stripParentheticalSuffix(baseTerm);
+    if (stripped && stripped.length >= 3) {
+      candidateKeys.add(normalizeGlossaryKey(stripped));
     }
 
-    // Auto-register regular plurals
-    if (!termKey.endsWith('s') && !termKey.includes(' ')) {
-      const pl = termKey + 's';
-      if (!vocabDict[pl]) vocabDict[pl] = meta;
-    }
-
-    // Register explicit variants
-    if (Array.isArray(variants)) {
-      variants.forEach((v) => {
-        const vKey = (v || '').trim().toLowerCase();
-        if (vKey && !vocabDict[vKey]) {
-          vocabDict[vKey] = meta;
+    // Extract clean uppercase acronym inside parentheses e.g. "Palestine Liberation Organisation (PLO)" -> "plo"
+    const parenMatches = baseTerm.match(/\(([A-Z]{2,7})\)/g);
+    if (parenMatches) {
+      parenMatches.forEach((pm) => {
+        const inner = pm.slice(1, -1).trim();
+        if (/^[A-Z]{2,7}$/.test(inner)) {
+          candidateKeys.add(inner.toLowerCase());
         }
       });
     }
 
-    // Auto-register common historical adjective/stem derivatives
-    if (termKey.endsWith('ism')) {
-      const stem = termKey.slice(0, -3);
-      if (!vocabDict[stem + 'ist']) vocabDict[stem + 'ist'] = meta;
-      if (!vocabDict[stem + 'ists']) vocabDict[stem + 'ists'] = meta;
+    if (Array.isArray(variants)) {
+      variants.forEach((v) => {
+        const vNorm = normalizeGlossaryKey(v);
+        if (vNorm) candidateKeys.add(vNorm);
+        const vStripped = normalizeGlossaryKey(stripParentheticalSuffix(v));
+        if (vStripped && vStripped.length >= 3) candidateKeys.add(vStripped);
+      });
     }
-    if (termKey.endsWith('y')) {
-      const stem = termKey.slice(0, -1);
-      if (!vocabDict[stem + 'ies']) vocabDict[stem + 'ies'] = meta;
-      if (!vocabDict[stem + 'ic']) vocabDict[stem + 'ic'] = meta;
-      if (!vocabDict[stem + 'ical']) vocabDict[stem + 'ical'] = meta;
-    }
-    if (termKey.endsWith('tion')) {
-      const stem = termKey.slice(0, -4);
-      if (!vocabDict[stem + 'tive']) vocabDict[stem + 'tive'] = meta;
-    }
+
+    candidateKeys.forEach((termKey) => {
+      setKey(termKey, meta);
+
+      // Auto-register regular plurals for single words
+      if (!termKey.endsWith('s') && !termKey.includes(' ') && termKey.length >= 4) {
+        setKey(termKey + 's', meta);
+      }
+
+      // Auto-register common historical adjective/stem derivatives
+      if (termKey.endsWith('ism') && termKey.length >= 6) {
+        const stem = termKey.slice(0, -3);
+        setKey(stem + 'ist', meta);
+        setKey(stem + 'ists', meta);
+      }
+      if (termKey.endsWith('y') && !termKey.includes(' ') && termKey.length >= 5) {
+        const stem = termKey.slice(0, -1);
+        setKey(stem + 'ies', meta);
+        setKey(stem + 'ic', meta);
+        setKey(stem + 'ical', meta);
+      }
+      if (termKey.endsWith('tion') && termKey.length >= 7) {
+        const stem = termKey.slice(0, -4);
+        setKey(stem + 'tive', meta);
+      }
+    });
   };
 
   const isKs2Unit = Boolean(
@@ -688,7 +737,7 @@ export function buildComprehensiveVocabDict(lesson, unitData) {
     (lesson && lesson.is_ks2)
   );
 
-  // 1. Master Disciplinary Glossary (Secondary/GCSE baseline concepts — skipped for KS2 so primary pupils only see age-appropriate vocabulary)
+  // 1. Master Disciplinary Glossary (priority 1 — baseline secondary concepts, skipped for KS2)
   if (!isKs2Unit) {
     MASTER_DISCIPLINARY_GLOSSARY.forEach((item) => {
       registerItem(
@@ -698,11 +747,12 @@ export function buildComprehensiveVocabDict(lesson, unitData) {
         item.phonetic,
         item.tier,
         item.variants,
+        1,
       );
     });
   }
 
-  // 2. Unit-wide vocabulary pool from all lessons in the active unit
+  // 2. Unit-wide vocabulary pool from all lessons in the active unit (priority 2)
   if (unitData && Array.isArray(unitData.lessons)) {
     unitData.lessons.forEach((l) => {
       const vArr = (l.vocab || l.vocabulary || []).concat(
@@ -717,12 +767,13 @@ export function buildComprehensiveVocabDict(lesson, unitData) {
           v.phonetic,
           v.tier,
           v.variants,
+          2,
         );
       });
     });
   }
 
-  // 3. Current lesson vocabulary (overrides / highest priority)
+  // 3. Current lesson vocabulary (priority 3 — highest priority & overrides)
   const currentVocab = (lesson && (lesson.vocab || lesson.vocabulary || [])) || [];
   currentVocab.forEach((v) => {
     if (!v) return;
@@ -733,6 +784,7 @@ export function buildComprehensiveVocabDict(lesson, unitData) {
       v.phonetic,
       v.tier,
       v.variants,
+      3,
     );
   });
 
@@ -741,20 +793,36 @@ export function buildComprehensiveVocabDict(lesson, unitData) {
 
 /**
  * Annotates historical narrative prose with ambient vocabulary lens markup.
- * Matches terms against HTML while strictly skipping existing tags and links.
+ * Matches terms against HTML while strictly skipping existing tags, protected tokens, and links.
  *
  * @param {string} text - Raw narrative text
  * @param {Object} vocabDict - Comprehensive vocabulary dictionary
- * @param {number} maxPerBlock - Maximum interactive terms highlighted per paragraph block
+ * @param {number|Object} maxPerBlockOrOptions - Max terms per block, or options { maxPerBlock, seenRoots, excludedTerms }
  * @returns {string} HTML with embedded .vocab-lens-term spans
  */
-export function highlightGlossaryInProse(text, vocabDict, maxPerBlock = 3) {
+export function highlightGlossaryInProse(text, vocabDict, maxPerBlockOrOptions = 3) {
   if (!text || typeof text !== 'string') return text || '';
   if (!vocabDict || Object.keys(vocabDict).length === 0) return text;
 
+  const opts =
+    typeof maxPerBlockOrOptions === 'object' && maxPerBlockOrOptions !== null
+      ? maxPerBlockOrOptions
+      : { maxPerBlock: typeof maxPerBlockOrOptions === 'number' ? maxPerBlockOrOptions : 3 };
+
+  const maxPerBlock = typeof opts.maxPerBlock === 'number' ? opts.maxPerBlock : 3;
+  const lessonSeenRoots = opts.seenRoots instanceof Set ? opts.seenRoots : null;
+  const excludedTerms = opts.excludedTerms instanceof Set ? opts.excludedTerms : null;
+
   let processedText = text;
   let blockCount = 0;
-  const sortedTerms = Object.keys(vocabDict).sort((a, b) => b.length - a.length);
+
+  // Sort by pedagogical priority FIRST (Current Lesson > Unit > Master Glossary), then phrase length
+  const sortedTerms = Object.keys(vocabDict).sort((a, b) => {
+    const prioDiff = (vocabDict[b]?.priority || 1) - (vocabDict[a]?.priority || 1);
+    if (prioDiff !== 0) return prioDiff;
+    return b.length - a.length;
+  });
+
   const matchedRootsInBlock = new Set();
 
   for (const term of sortedTerms) {
@@ -762,26 +830,43 @@ export function highlightGlossaryInProse(text, vocabDict, maxPerBlock = 3) {
     const vocabItem = vocabDict[term];
     if (!vocabItem || !vocabItem.definition) continue;
 
-    const rootKey = vocabItem.term.toLowerCase();
-    if (matchedRootsInBlock.has(rootKey)) continue;
+    const normTerm = normalizeGlossaryKey(term);
+    const rootKey = vocabItem.rootKey || normalizeGlossaryKey(vocabItem.term);
 
-    // Regex matches existing <a>...</a> tags OR existing <span class="...vocab-...">...</span> tags OR other HTML tags OR the exact target term
-    const escapedTerm = term.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+    if (matchedRootsInBlock.has(rootKey)) continue;
+    if (lessonSeenRoots && lessonSeenRoots.has(rootKey)) continue;
+    if (
+      excludedTerms &&
+      (excludedTerms.has(normTerm) || excludedTerms.has(rootKey))
+    ) {
+      continue;
+    }
+
+    // Escape regex special chars, then allow straight or curly apostrophes interchangeably
+    const escapedTerm = term
+      .replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
+      .replace(/['’]/g, "['’]");
+
+    // Short uppercase acronyms (2–4 chars like PLO, UN, NHS) match case-sensitively so e.g. 'un' never matches
+    const isShortAcronym = term.length <= 4 && vocabItem.term.toUpperCase() === vocabItem.term;
+    const flags = isShortAcronym ? 'g' : 'gi';
+    const wordPattern = isShortAcronym ? escapedTerm.toUpperCase() : escapedTerm;
+
     const regex = new RegExp(
-      `(<a\\b[^>]*>[\\s\\S]*?<\\/a>)|(<span\\b[^>]*class=["'][^"']*vocab-[^"']*["'][^>]*>[\\s\\S]*?<\\/span>)|(<[^>]+>)|\\b(${escapedTerm})\\b`,
-      'gi',
+      `(@@[A-Z0-9_]+@@)|(<a\\b[^>]*>[\\s\\S]*?<\\/a>)|(<span\\b[^>]*class=["'][^"']*vocab-[^"']*["'][^>]*>[\\s\\S]*?<\\/span>)|(<[^>]+>)|\\b(${wordPattern})\\b`,
+      flags,
     );
     let didMatch = false;
 
     processedText = processedText.replace(
       regex,
-      (match, anchorTag, existingVocabSpan, htmlTag, word) => {
-        // Preserve existing links, existing vocab spans, and HTML tags completely
+      (match, protectedToken, anchorTag, existingVocabSpan, htmlTag, word) => {
+        if (protectedToken) return protectedToken;
         if (anchorTag) return anchorTag;
         if (existingVocabSpan) return existingVocabSpan;
         if (htmlTag) return htmlTag;
 
-        if (word && blockCount < maxPerBlock) {
+        if (word && !didMatch && blockCount < maxPerBlock) {
           didMatch = true;
           blockCount++;
           const safeDef = vocabItem.definition.replace(/"/g, '&quot;');
@@ -792,10 +877,14 @@ export function highlightGlossaryInProse(text, vocabDict, maxPerBlock = 3) {
           return `<span class="vocab-word vocab-lens-term" data-term="${safeTerm}" data-definition="${safeDef}" data-syllables="${safeSyllables}" data-phonetic="${safePhonetic}" data-tier="${safeTier}">${word}</span>`;
         }
         return match;
-      });
+      },
+    );
 
     if (didMatch) {
       matchedRootsInBlock.add(rootKey);
+      if (lessonSeenRoots) {
+        lessonSeenRoots.add(rootKey);
+      }
     }
   }
 
