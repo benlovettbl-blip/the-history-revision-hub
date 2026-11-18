@@ -620,6 +620,10 @@ const enquiryConfigs = [
   },
 ];
 
+const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
+applyCanonicalStageOverrides('industrialisation_and_empire', enquiryConfigs);
+
+
 // ============================================================================
 // HELPER RENDERERS
 // ============================================================================
@@ -688,19 +692,6 @@ ${linesHtml}        </div>
 function renderSpinePage(cfg, pageNum) {
   const stagesHtml = cfg.stages
     .map((st, sIdx) => {
-      // 3 High-density trigger concepts in 26mm left spine
-      const bulletsHtml = (st.bullets || [])
-        .map(
-          (b, idx) => `
-            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
-                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
-              </div>
-            </div>`,
-        )
-        .join('');
-
       const rawQ = (st.questionHeading || st.question || '').replace(/^\[[\d\.]+\]\s*/, '').trim();
       const stageNum = st.step || sIdx + 1;
       const questionText = rawQ;
@@ -708,42 +699,28 @@ function renderSpinePage(cfg, pageNum) {
       const qFontSize = combinedLen > 105 ? '7.8pt' : combinedLen > 95 ? '8.2pt' : combinedLen > 85 ? '8.5pt' : '8.8pt';
 
       return `
+        <!-- STAGE ${stageNum} CONTAINER (FULL-WIDTH CME/EEE GOLDEN STANDARD — ZERO TRIGGER COLUMN) -->
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
-          
-          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+          <div class="stage-banner" style="background: #f4f4f5; color: #000000; padding: 2px 6px; display: flex; align-items: center; border-bottom: 1.3px solid #000000;">
             <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
-                ${stageNum}
+              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; padding: 0.8px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+                Stage ${stageNum}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 ${st.date ? `${st.date}` : ''}
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span class="stage-question-text" data-base-size="${qFontSize}" style="font-family: 'Playfair Display', serif; font-size: ${qFontSize}; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.2pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span class="stage-question-text" data-base-size="${qFontSize}" style="font-family: 'Playfair Display', Georgia, serif; font-size: ${qFontSize}; font-weight: 800; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
             </div>
           </div>
-
-          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
-          <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
-            
-            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
-            <div class="stage-trigger-col">
-              ${bulletsHtml}
-            </div>
-
-            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div class="stage-writing-col">
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-              <div class="ruled-line"></div>
-            </div>
-
+          <div class="stage-writing-col" style="padding: 0 5px;">
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
+            <div class="ruled-line"></div>
           </div>
         </div>`;
     })
@@ -865,13 +842,14 @@ function renderRightPage(cfg, pageNum) {
 
       <!-- Teacher Feedback Strip -->
       <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3px 6px; background: #ffffff; display: flex; justify-content: space-between; align-items: center;">
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #000000;">
-          Teacher Check &bull; Disciplinary Level:
+        <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #000000;">
+          Teacher Check &bull; Progress Category:
         </span>
-        <div style="display: flex; gap: 10px; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+        <div style="display: flex; gap: 7px; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000;">
           <span>[ ] Emerging</span>
-          <span>[ ] Developing</span>
-          <span>[ ] Secure</span>
+          <span>[ ] Emerging+</span>
+          <span>[ ] Expected</span>
+          <span>[ ] Expected+</span>
           <span>[ ] Greater Depth</span>
         </div>
       </div>
@@ -977,13 +955,14 @@ function renderRightPage(cfg, pageNum) {
 
       <!-- Teacher Feedback Strip -->
       <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3px 6px; background: #ffffff; display: flex; justify-content: space-between; align-items: center; margin-top: 2px;">
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #000000;">
-          Teacher Check &bull; Disciplinary Level:
+        <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #000000;">
+          Teacher Check &bull; Progress Category:
         </span>
-        <div style="display: flex; gap: 10px; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+        <div style="display: flex; gap: 7px; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000;">
           <span>[ ] Emerging</span>
-          <span>[ ] Developing</span>
-          <span>[ ] Secure</span>
+          <span>[ ] Emerging+</span>
+          <span>[ ] Expected</span>
+          <span>[ ] Expected+</span>
           <span>[ ] Greater Depth</span>
         </div>
       </div>
@@ -1079,13 +1058,14 @@ function renderRightPage(cfg, pageNum) {
 
         <!-- Teacher Feedback Strip -->
         <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 6px; background: #ffffff; display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #000000;">
-            Teacher Check &bull; Disciplinary Level:
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #000000;">
+            Teacher Check &bull; Progress Category:
           </span>
-          <div style="display: flex; gap: 10px; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
+          <div style="display: flex; gap: 7px; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; color: #000000;">
             <span>[ ] Emerging</span>
-            <span>[ ] Developing</span>
-            <span>[ ] Secure</span>
+            <span>[ ] Emerging+</span>
+            <span>[ ] Expected</span>
+            <span>[ ] Expected+</span>
             <span>[ ] Greater Depth</span>
           </div>
         </div>
@@ -1652,20 +1632,20 @@ function compileIndustrialisationWorkbook() {
         </div>
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
           
-          <!-- Emerging (1–2) -->
+          <!-- Emerging (1–3) -->
           <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
             <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging (1–2)
+              Emerging (1–3)
             </div>
             <div style="color: #000000;">
               Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
             </div>
           </div>
 
-          <!-- Emerging+ (3) -->
+          <!-- Emerging+ (3–4) -->
           <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
             <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ (3)
+              Emerging+ (3–4)
             </div>
             <div style="color: #000000;">
               Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
@@ -1805,8 +1785,8 @@ function compileIndustrialisationWorkbook() {
               <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; font-size: 8.5pt; color: #0f284e;">
                 <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 25</strong></span>
               </td>
-              <td colspan="2" style="padding: 6px 8px; font-size: 7.2pt; color: #475569; vertical-align: middle;">
-                Overall Retrieval Grade: &nbsp;&nbsp;&nbsp;&nbsp; [ Emerging &bull; Expected &bull; Greater Depth ]
+              <td colspan="2" style="padding: 4px 8px; font-size: 6.4pt; line-height: 1.2; color: #475569; vertical-align: middle;">
+                <strong>Overall Progress Category:</strong><br>[ Emerging &bull; Emerging+ &bull; Expected &bull; Expected+ &bull; Greater Depth ]
               </td>
             </tr>
           </tbody>

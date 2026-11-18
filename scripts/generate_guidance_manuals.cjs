@@ -426,6 +426,44 @@ const guides = [
           </div>
         `,
       },
+      {
+        subtitle:
+          'Part IV: 5-Tier Stage Question Progression & Zero Split-Attention Verso Workbooks (Counsell, Sweller & Beck)',
+        content: `
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-header" style="background: #0f766e;">🪜 13. The 5-Tier Cognitive Question Ladder (KS2 &rarr; GCSE)</div>
+              <div class="card-body">
+                <strong>Core Principle:</strong> Every narrative block question (&le; 82 chars single-line fit) scales progressively across age cohorts while remaining 100% answerable from its paired prose block:<br><br>
+                <ul>
+                  <li><strong>KS2 (Y5–6) &amp; Year 7:</strong> &le; 13 words, &le; 2 complex common words — concrete actors, actions, and immediate reactions.</li>
+                  <li><strong>Year 8:</strong> &le; 14 words, &le; 3 complex common words — multi-step chains and contrasting perspectives.</li>
+                  <li><strong>Year 9:</strong> &le; 15 words, &le; 4 complex common words — systemic shifts, turning points, and ideology.</li>
+                  <li><strong>GCSE (Y10–11):</strong> &le; 15 words, &le; 5 complex common words — specification-precise mechanisms (open <em>"To what extent..."</em> essays reserved for Recto tasks).</li>
+                </ul>
+                <div class="citation">
+                  <strong>References:</strong> Counsell, C. (2000). <em>Historical Knowledge &amp; Historical Skill</em> &bull; Beck, I. et al. (1997). <em>Questioning the Author</em>.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" style="background: #1e3a8a;">📝 14. Full-Width Verso Boxes &amp; Prose-Hash Sustainability</div>
+              <div class="card-body">
+                <strong>Eliminating Split-Attention &amp; Curriculum Drift Across 773 Stages:</strong>
+                <ul>
+                  <li><strong>Retired 3-Trigger Margin Columns:</strong> Removing narrow 26mm left trigger sidebars eliminates spatial split-attention and prevents copying isolated 2-word fragments, giving pupils 5 full-width ruled lines to compose complete causal sentences.</li>
+                  <li><strong>1-to-1 App &harr; Print Parity:</strong> Identical canonical Stage Questions appear across Web App banners, Chronology Spine cards, and Printed Pupil Workbooks while preserving noun-phrase milestone titles for Arcade timelines.</li>
+                  <li><strong>Automated SHA-1 Prose-Hash Gate:</strong> Editing any narrative block automatically flags stage-question verification during <code>sync:unit</code> and <code>test:qa</code>.</li>
+                </ul>
+                <div class="citation">
+                  <strong>Reference:</strong> Chandler, P. &amp; Sweller, J. (1991). <em>Cognitive Load Theory and the Format of Instruction</em>.
+                </div>
+              </div>
+            </div>
+          </div>
+        `,
+      },
     ],
   },
 ];
@@ -677,8 +715,14 @@ function generateGuideHtml(guide) {
 
 (async () => {
   console.log('🚀 Compiling History Revision Hub Guidance Manuals...');
+  const chromePath =
+    process.env.PUPPETEER_EXECUTABLE_PATH ||
+    (fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
+      ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+      : undefined);
   const browser = await puppeteer.launch({
     headless: 'new',
+    executablePath: chromePath,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
 

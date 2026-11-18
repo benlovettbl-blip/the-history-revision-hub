@@ -1529,6 +1529,11 @@ const CME_BOOKLETS = {
   },
 };
 
+const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
+Object.values(CME_BOOKLETS).forEach((b) => {
+  if (Array.isArray(b.lessons)) applyCanonicalStageOverrides('cme_new', b.lessons);
+});
+
 module.exports = {
   HUB_BASE,
   CME_BOOKLETS,

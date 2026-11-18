@@ -1038,7 +1038,7 @@ async function compileCombinedWorkbook() {
                 (enq) => `
             <tr>
               <td class="left-title"><strong>Enquiry ${enq.number}:</strong> ${enq.shortTitle}</td>
-              <td><span style="font-size: 6.8pt; font-weight: 700;">[&nbsp;] Emerging [&nbsp;] Secure</span></td>
+              <td><span style="font-size: 6.4pt; font-weight: 700;">[&nbsp;] Emerging [&nbsp;] Expected [&nbsp;] GD</span></td>
               <td><span style="font-size: 6.8pt; font-weight: 700;">[&nbsp;&nbsp;] Read Aloud</span></td>
               <td class="score-box">[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ 6]</td>
               <td><span style="border-bottom: 1.2px solid #000; display: block; min-height: 10px;"></span></td>
@@ -1139,22 +1139,26 @@ async function compileCombinedWorkbook() {
         </div>
 
         <!-- Assessment Pathways Grid -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 4px;">
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; background: #ffffff;">
-            <strong style="display: block; font-size: 7.2pt; text-transform: uppercase; margin-bottom: 1.5px;">Emerging &bull; Foundational Recall</strong>
-            <span style="font-size: 6.6pt; line-height: 1.25; display: block; color: #334155;">Identifies basic chronological milestones (1914 enlistment, trenches, 1918 Armistice). Completes Tier 1 retrieval questions with factual accuracy.</span>
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-bottom: 4px;">
+          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
+            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Emerging (1–3)</strong>
+            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Identifies key chronological milestones (1914 enlistment, trenches, 1918 Armistice) using simple statements and structured frames.</span>
           </div>
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; background: #ffffff;">
-            <strong style="display: block; font-size: 7.2pt; text-transform: uppercase; margin-bottom: 1.5px;">Developing &bull; Causal Understanding</strong>
-            <span style="font-size: 6.6pt; line-height: 1.25; display: block; color: #334155;">Explains primary causes of trench stalemate and the transition to total war. Links artillery firepower to the catastrophic breakdown on 1 July 1916.</span>
+          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
+            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Emerging+ (3–4)</strong>
+            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Describes reasons why trench stalemate and total war developed; begins to explain causes supported by basic facts.</span>
           </div>
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; background: #ffffff;">
-            <strong style="display: block; font-size: 7.2pt; text-transform: uppercase; margin-bottom: 1.5px;">Securing &bull; Multi-Causal Analysis</strong>
-            <span style="font-size: 6.6pt; line-height: 1.25; display: block; color: #334155;">Constructs balanced 12-mark arguments distinguishing military, imperial, and domestic catalysts. Integrates evidence from primary wartime memoirs.</span>
+          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
+            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Expected (4–5)</strong>
+            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Constructs structured paragraphs explaining multiple causes and consequences on the Western Front with precise dates and terms.</span>
           </div>
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; background: #ffffff;">
-            <strong style="display: block; font-size: 7.2pt; text-transform: uppercase; margin-bottom: 1.5px;">Greater Depth &bull; Historiographical Verdict</strong>
-            <span style="font-size: 6.6pt; line-height: 1.25; display: block; color: #334155;">Critically evaluates historical controversies (e.g. Haig’s learning curve vs "Butcher" critique; Keynes’s prophetic critique of Versailles).</span>
+          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
+            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Expected+ (6–7)</strong>
+            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Weighs competing military, imperial, and domestic factors; explains why key turning points were decisive using accurate evidence.</span>
+          </div>
+          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
+            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Greater Depth (8–9)</strong>
+            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Critically evaluates historical debates (e.g. Haig’s learning curve vs "Butcher" critique; Keynes on Versailles) in sustained judgements.</span>
           </div>
         </div>
 
@@ -1175,11 +1179,12 @@ async function compileCombinedWorkbook() {
 
       <!-- Teacher Synoptic Verdict Strip -->
       <div style="border: 1.4px solid #000000; border-radius: 3px; padding: 6px 8px; background: #ffffff; margin-top: 4px;">
-        <strong style="font-size: 7.4pt; text-transform: uppercase; display: block; margin-bottom: 2px;">Teacher Termly Synoptic Verdict:</strong>
+        <strong style="font-size: 7.4pt; text-transform: uppercase; display: block; margin-bottom: 2px;">Teacher Termly Progress Category Verdict:</strong>
         <div style="display: flex; gap: 10px; font-size: 7.0pt; margin-bottom: 6px;">
           <span>[&nbsp;&nbsp;] Emerging</span>
-          <span>[&nbsp;&nbsp;] Developing</span>
-          <span>[&nbsp;&nbsp;] Securing</span>
+          <span>[&nbsp;&nbsp;] Emerging+</span>
+          <span>[&nbsp;&nbsp;] Expected</span>
+          <span>[&nbsp;&nbsp;] Expected+</span>
           <span>[&nbsp;&nbsp;] Greater Depth</span>
         </div>
         <div style="border-bottom: 1.2px solid #000000; height: 14px; margin-bottom: 4px;"></div>

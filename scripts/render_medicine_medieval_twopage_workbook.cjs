@@ -602,6 +602,9 @@ const medievalConfigs = [
   },
 ];
 
+const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
+applyCanonicalStageOverrides('edexcel_medicine', medievalConfigs);
+
 function renderSpinePage(cfg) {
   const { pageNum, lessonNum, keyTopicBadge, enquiryQuestion, specAnchor, stages, leftPageQuip } =
     cfg;

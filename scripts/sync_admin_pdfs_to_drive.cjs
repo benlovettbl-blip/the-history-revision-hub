@@ -37,6 +37,18 @@ const STATIC_MAPPINGS = [
   },
   {
     folder: path.join('02_Department_Admin_and_Strategy', 'Department_Policies'),
+    src: 'ks3_history_curriculum_outline_and_progress_categories.pdf',
+    dest: 'KS3 History Curriculum Outline & Progress Categories (Years 7-9).pdf',
+    category: 'Admin',
+  },
+  {
+    folder: path.join('01_Curriculum_and_Key_Stages', 'KS3 (Years 7-9)'),
+    src: 'ks3_history_curriculum_outline_and_progress_categories.pdf',
+    dest: 'KS3 History Curriculum Outline & Progress Categories (Years 7-9).pdf',
+    category: 'KS3 Outline',
+  },
+  {
+    folder: path.join('02_Department_Admin_and_Strategy', 'Department_Policies'),
     src: 'Research Dossier - 2nd Lt Ernest Crummack (AI Case Study).pdf',
     dest: 'Research Dossier - 2nd Lt Ernest Crummack (AI Case Study).pdf',
     category: 'Admin',

@@ -1248,4 +1248,9 @@ const USA_ENQUIRY_CONFIGS = {
   ]
 };
 
+const { applyCanonicalStageOverrides } = require('./canonical_stage_loader.cjs');
+Object.values(USA_ENQUIRY_CONFIGS).forEach((ktLessons) => {
+  applyCanonicalStageOverrides('usa', ktLessons);
+});
+
 module.exports = { USA_ENQUIRY_CONFIGS };

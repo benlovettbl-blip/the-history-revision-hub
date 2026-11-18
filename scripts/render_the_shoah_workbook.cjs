@@ -1849,20 +1849,20 @@ function renderBackCover() {
         </div>
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
           
-          <!-- Emerging (1–2) -->
+          <!-- Emerging (1–3) -->
           <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
             <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging (1–2)
+              Emerging (1–3)
             </div>
             <div style="color: #000000;">
               Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
             </div>
           </div>
 
-          <!-- Emerging+ (3) -->
+          <!-- Emerging+ (3–4) -->
           <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
             <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ (3)
+              Emerging+ (3–4)
             </div>
             <div style="color: #000000;">
               Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.

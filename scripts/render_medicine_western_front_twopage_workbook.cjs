@@ -790,6 +790,9 @@ const wfConfigs = [
   },
 ];
 
+const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
+applyCanonicalStageOverrides('edexcel_medicine', wfConfigs);
+
 // ============================================================================
 // HELPER: RENDER ENVIRONMENTAL INQUIRY SPINE PAGE (PAGE 1 OF LESSON)
 // ============================================================================

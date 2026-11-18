@@ -89,48 +89,69 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "title": "Prior Knowledge Baseline",
+        "instructions": "Answer these questions using your prior historical and civic knowledge before beginning this unit.",
+        "is_baseline": true,
         "items": [
           {
-            "question": "What was the Triple Entente in the First World War?",
-            "answer": "An alliance between Britain, France, and Russia."
+            "question": "In what year were the independent German states unified into the German Empire following victory over France?",
+            "answer": "1871",
+            "explanation": "Prussian Minister-President Otto von Bismarck unified the German states into the German Empire in January 1871."
           },
           {
-            "question": "What was the Triple Alliance?",
-            "answer": "An alliance between Germany, Austria-Hungary, and Italy."
+            "question": "Which dominant German kingdom led the unification of Germany in 1871 and supplied its emperors and military elite?",
+            "answer": "Prussia",
+            "explanation": "Prussia was the largest and most militarized German kingdom, shaping the authoritarian traditions of Imperial Germany."
           },
           {
-            "question": "What is a 'dictatorship'?",
-            "answer": "A country ruled by a single leader with total power."
+            "question": "What title was held by the hereditary monarch who ruled the German Empire between 1888 and 1918?",
+            "answer": "Kaiser (Emperor)",
+            "explanation": "Kaiser Wilhelm II ruled Imperial Germany as hereditary Emperor, commanding the armed forces and appointing imperial chancellors."
           },
           {
-            "question": "What is a 'democracy'?",
-            "answer": "A system where the government is elected by the people."
+            "question": "In what year did the First World War break out across Europe?",
+            "answer": "1914",
+            "explanation": "Rival European alliance commitments plunged the continent into industrial total war in August 1914."
           },
           {
-            "question": "What does 'abdicate' mean?",
-            "answer": "When a monarch steps down from the throne."
+            "question": "Which three major powers formed the Triple Entente fighting against Germany in the First World War?",
+            "answer": "Britain, France, and Russia",
+            "explanation": "The Triple Entente encircled Germany geographically, forcing the German army to fight simultaneously on Western and Eastern fronts."
           },
           {
-            "question": "What is a 'republic'?",
-            "answer": "A country without a monarch, usually led by an elected president."
+            "question": "Which major European empire was Germany's closest Central Powers ally at the outbreak of the First World War?",
+            "answer": "Austria-Hungary",
+            "explanation": "Germany and Austria-Hungary formed the core of the Central Powers alliance alongside the Ottoman Empire and Bulgaria."
           },
           {
-            "question": "What does 'inflation' mean?",
-            "answer": "The general increase in prices and fall in the purchasing value of money."
+            "question": "What type of static, defensive warfare characterized fighting on the Western Front in France and Belgium between 1914 and 1918?",
+            "answer": "Trench warfare",
+            "explanation": "Machine guns, barbed wire, and heavy artillery created a four-year stalemate along fortified trenches on the Western Front."
           },
           {
-            "question": "What is an 'armistice'?",
-            "answer": "A formal agreement to stop fighting; a truce."
+            "question": "What is the strategic purpose of a naval blockade during wartime?",
+            "answer": "Cutting off an enemy country's sea trade, food, and war supplies",
+            "explanation": "Naval powers blockade enemy ports to weaken industrial war production and exhaust civilian morale on the home front."
           },
           {
-            "question": "What does 'mutiny' mean?",
-            "answer": "An open rebellion against the proper authorities, especially by soldiers or sailors."
+            "question": "In which country did revolutions in 1917 overthrow the Tsar and bring Vladimir Lenin's Bolshevik Communists to power?",
+            "answer": "Russia",
+            "explanation": "The October 1917 Bolshevik Revolution created the world's first communist state, inspiring socialists and alarming conservatives across Europe."
           },
           {
-            "question": "In what year did the First World War begin?",
-            "answer": "1914."
+            "question": "Which wealthy industrial power entered the First World War on the Allied side in April 1917, tipping the military balance against Germany?",
+            "answer": "The United States of America",
+            "explanation": "Fresh American soldiers, industrial munitions, and financial loans reinforced Britain and France as German resources neared exhaustion."
+          },
+          {
+            "question": "What is the fundamental constitutional difference between a monarchy and a democratic republic?",
+            "answer": "A monarchy has a hereditary king or emperor; a republic elects its leaders",
+            "explanation": "Replacing a monarchy with a democratic republic transfers political sovereignty from a royal dynasty to voting citizens."
+          },
+          {
+            "question": "What is a dictatorship?",
+            "answer": "Absolute rule by a single leader or party without democratic opposition",
+            "explanation": "Unlike parliamentary democracies with free elections and civil liberties, dictatorships ban rival parties and rule without accountability."
           }
         ]
       },
@@ -242,8 +263,8 @@ window.unitData = {
         {
           "title": "Mutiny on the High Seas: The Kiel Sailors' Revolt and Imperial Collapse (1918)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany was facing imminent military collapse on the Western Front. Four grueling years of the British **Allied naval blockade** had strangled civilian supply lines, causing catastrophic food deprivation remembered as the **Turnip Winter starvation** that killed over 750,000 civilians. When naval commanders ordered a suicidal final sortie against the British fleet, exhausted sailors mutinied.\n\n<span class=\"para-ref\">[1.2]</span> The rebellion exploded into the historic **Kiel naval mutiny** on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners. Within days, workers' and soldiers' councils took power across major cities, proving that imperial authorities had lost control of the armed forces and sparking the German Revolution.",
-          "content": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany was facing imminent military collapse on the Western Front. Four grueling years of the British **Allied naval blockade** had strangled civilian supply lines, causing catastrophic food deprivation remembered as the **Turnip Winter starvation** that killed over 750,000 civilians. When naval commanders ordered a suicidal final sortie against the British fleet, exhausted sailors mutinied.\n\n<span class=\"para-ref\">[1.2]</span> The rebellion exploded into the historic **Kiel naval mutiny** on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners. Within days, workers' and soldiers' councils took power across major cities, proving that imperial authorities had lost control of the armed forces and sparking the German Revolution.",
+          "text": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany faced military collapse on the Western Front. Four hard years of the British **Allied naval blockade** had cut civilian supply lines, causing **Turnip Winter starvation** that killed over 750,000 civilians. When naval commanders ordered a suicidal final battle against the British fleet, exhausted sailors mutinied.\n\n<span class=\"para-ref\">[1.2]</span> Revolt broke out in the **Kiel naval mutiny** on 3 November 1918, as forty thousand armed sailors and dockworkers seized naval bases and raised red socialist banners. Within days, workers' and soldiers' councils took power across major cities, proving imperial leaders had lost control of the armed forces and sparking the German Revolution.",
+          "content": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany faced military collapse on the Western Front. Four hard years of the British **Allied naval blockade** had cut civilian supply lines, causing **Turnip Winter starvation** that killed over 750,000 civilians. When naval commanders ordered a suicidal final battle against the British fleet, exhausted sailors mutinied.\n\n<span class=\"para-ref\">[1.2]</span> Revolt broke out in the **Kiel naval mutiny** on 3 November 1918, as forty thousand armed sailors and dockworkers seized naval bases and raised red socialist banners. Within days, workers' and soldiers' councils took power across major cities, proving imperial leaders had lost control of the armed forces and sparking the German Revolution.",
           "sources": [
             {
               "id": "weimar_l1_source_b",
@@ -305,8 +326,8 @@ window.unitData = {
         {
           "title": "Flight to the Border: The Abdication of Kaiser Wilhelm II and the Birth of the Republic (9 Nov 1918)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> On 9 November 1918, massive general strikes brought central Berlin to a standstill as revolutionary crowds surrounded government ministries. Isolated at military headquarters in Spa, the Emperor was warned by Field Marshal Hindenburg that the army would no longer obey his commands, compelling the formal **Kaiser Wilhelm abdication** and ending five centuries of proud Hohenzollern dynastic rule.\n\n<span class=\"para-ref\">[2.2]</span> Wilhelm slipped into permanent **Dutch border exile** aboard a royal train the following morning. Meanwhile in Berlin, desperate to preempt communist revolutionaries from establishing a Soviet republic, Social Democratic leader **Philipp Scheidemann proclamation** announced the birth of the German Republic from a Reichstag window, handing provisional authority to SPD chancellor Friedrich Ebert to restore domestic order.",
-          "content": "<span class=\"para-ref\">[2.1]</span> On 9 November 1918, massive general strikes brought central Berlin to a standstill as revolutionary crowds surrounded government ministries. Isolated at military headquarters in Spa, the Emperor was warned by Field Marshal Hindenburg that the army would no longer obey his commands, compelling the formal **Kaiser Wilhelm abdication** and ending five centuries of proud Hohenzollern dynastic rule.\n\n<span class=\"para-ref\">[2.2]</span> Wilhelm slipped into permanent **Dutch border exile** aboard a royal train the following morning. Meanwhile in Berlin, desperate to preempt communist revolutionaries from establishing a Soviet republic, Social Democratic leader **Philipp Scheidemann proclamation** announced the birth of the German Republic from a Reichstag window, handing provisional authority to SPD chancellor Friedrich Ebert to restore domestic order.",
+          "text": "<span class=\"para-ref\">[2.1]</span> On 9 November 1918, general strikes brought central Berlin to a standstill as crowds surrounded government ministries. At army headquarters in Spa, Field Marshal Hindenburg warned the Emperor that soldiers would no longer obey his orders. That warning forced **Kaiser Wilhelm**'s **abdication**, ending five centuries of Hohenzollern rule.\n\n<span class=\"para-ref\">[2.2]</span> Wilhelm slipped into **Dutch border exile** aboard a royal train next morning. Meanwhile in Berlin, keen to stop communists declaring a Soviet republic first, Social Democratic leader **Philipp Scheidemann** proclaimed the new German Republic from a Reichstag window. He handed provisional power to SPD Chancellor Friedrich Ebert to restore order.",
+          "content": "<span class=\"para-ref\">[2.1]</span> On 9 November 1918, general strikes brought central Berlin to a standstill as crowds surrounded government ministries. At army headquarters in Spa, Field Marshal Hindenburg warned the Emperor that soldiers would no longer obey his orders. That warning forced **Kaiser Wilhelm**'s **abdication**, ending five centuries of Hohenzollern rule.\n\n<span class=\"para-ref\">[2.2]</span> Wilhelm slipped into **Dutch border exile** aboard a royal train next morning. Meanwhile in Berlin, keen to stop communists declaring a Soviet republic first, Social Democratic leader **Philipp Scheidemann** proclaimed the new German Republic from a Reichstag window. He handed provisional power to SPD Chancellor Friedrich Ebert to restore order.",
           "sources": [
             {
               "id": "weimar_l1_source_d",
@@ -365,8 +386,8 @@ window.unitData = {
         {
           "title": "The Armistice & The Ebert-Groener Pact: Forging a Secret Alliance with the Old Army (Nov 1918)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> Assuming power amid violent street fighting in Berlin, Social Democratic leader **Friedrich Ebert chancellor** sought desperately to stabilize the collapsing state. On 10 November 1918, Ebert concluded the telephone **Ebert-Groener army pact** with General Wilhelm Groener. The imperial officer corps promised to maintain domestic order and suppress communist insurrections, in exchange for Ebert guaranteeing military autonomy and defending the traditional officer caste against radical reform.\n\n<span class=\"para-ref\">[3.2]</span> The following morning, the **Compiègne armistice signed** by civilian politician Matthias Erzberger in a railway carriage ended the First World War. While the armistice brought immediate peace, military commanders like Hindenburg and Ludendorff cynically avoided responsibility, shifting the stigma of surrender onto civilian republican politicians who were subsequently branded the \"November Criminals\" by right-wing nationalists across Germany.",
-          "content": "<span class=\"para-ref\">[3.1]</span> Assuming power amid violent street fighting in Berlin, Social Democratic leader **Friedrich Ebert chancellor** sought desperately to stabilize the collapsing state. On 10 November 1918, Ebert concluded the telephone **Ebert-Groener army pact** with General Wilhelm Groener. The imperial officer corps promised to maintain domestic order and suppress communist insurrections, in exchange for Ebert guaranteeing military autonomy and defending the traditional officer caste against radical reform.\n\n<span class=\"para-ref\">[3.2]</span> The following morning, the **Compiègne armistice signed** by civilian politician Matthias Erzberger in a railway carriage ended the First World War. While the armistice brought immediate peace, military commanders like Hindenburg and Ludendorff cynically avoided responsibility, shifting the stigma of surrender onto civilian republican politicians who were subsequently branded the \"November Criminals\" by right-wing nationalists across Germany.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Taking power amid street fighting in Berlin, Social Democratic Chancellor **Friedrich Ebert** moved fast to steady the state. On 10 November 1918, Ebert struck the telephone **Ebert-Groener army pact** with General Wilhelm Groener of the Imperial Army. The officer corps promised to keep order and crush communist risings if Ebert protected army independence from radical reform.\n\n<span class=\"para-ref\">[3.2]</span> Next morning, civilian politician Matthias Erzberger signed the **Compiègne armistice** in a railway carriage, ending the First World War. While peace returned at once, generals like Hindenburg and Ludendorff dodged blame for defeat, leaving right-wing nationalists to brand civilian republican leaders the \"November Criminals\".",
+          "content": "<span class=\"para-ref\">[3.1]</span> Taking power amid street fighting in Berlin, Social Democratic Chancellor **Friedrich Ebert** moved fast to steady the state. On 10 November 1918, Ebert struck the telephone **Ebert-Groener army pact** with General Wilhelm Groener of the Imperial Army. The officer corps promised to keep order and crush communist risings if Ebert protected army independence from radical reform.\n\n<span class=\"para-ref\">[3.2]</span> Next morning, civilian politician Matthias Erzberger signed the **Compiègne armistice** in a railway carriage, ending the First World War. While peace returned at once, generals like Hindenburg and Ludendorff dodged blame for defeat, leaving right-wing nationalists to brand civilian republican leaders the \"November Criminals\".",
           "sources": [
             {
               "id": "weimar_l1_source_a",
@@ -428,8 +449,8 @@ window.unitData = {
         {
           "title": "Flight from Berlin: The National Assembly Convened in Weimar (Jan–Feb 1919)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> In January 1919, nationwide democratic elections were held across Germany with an extraordinary eighty-three percent voter turnout. The moderate pro-republican parties secured a commanding parliamentary majority, establishing a stable **democratic coalition government** formed by the SPD, the Catholic Centre Party, and the German Democratic Party. Delegates subsequently elected moderate socialist leader **Friedrich Ebert president** of the newborn German Republic.\n\n<span class=\"para-ref\">[4.2]</span> Because continuing street warfare and communist strikes made Berlin too dangerous for politicians, parliamentarians convened 150 miles south at the **Weimar National Assembly** in February 1919. Meeting inside the National Theatre, delegates drafted a new democratic constitution, deliberately associating the new state with the enlightened humanist traditions of Goethe and Schiller rather than authoritarian Prussian militarism.",
-          "content": "<span class=\"para-ref\">[4.1]</span> In January 1919, nationwide democratic elections were held across Germany with an extraordinary eighty-three percent voter turnout. The moderate pro-republican parties secured a commanding parliamentary majority, establishing a stable **democratic coalition government** formed by the SPD, the Catholic Centre Party, and the German Democratic Party. Delegates subsequently elected moderate socialist leader **Friedrich Ebert president** of the newborn German Republic.\n\n<span class=\"para-ref\">[4.2]</span> Because continuing street warfare and communist strikes made Berlin too dangerous for politicians, parliamentarians convened 150 miles south at the **Weimar National Assembly** in February 1919. Meeting inside the National Theatre, delegates drafted a new democratic constitution, deliberately associating the new state with the enlightened humanist traditions of Goethe and Schiller rather than authoritarian Prussian militarism.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In January 1919, nationwide elections drew an eighty-three percent voter turnout across Germany. Moderate pro-republican parties won a clear majority, forming a stable **democratic coalition government** uniting the SPD, the Catholic Centre Party, and the German Democratic Party. Delegates then elected moderate socialist **Friedrich Ebert** first **President** of the new German Republic.\n\n<span class=\"para-ref\">[4.2]</span> Because continuing street warfare and communist strikes made Berlin too dangerous for politicians, deputies met 150 miles south at the **Weimar National Assembly** in February 1919. Inside the National Theatre, delegates drafted a democratic constitution linked to the peaceful culture of Goethe and Schiller rather than Prussian militarism.",
+          "content": "<span class=\"para-ref\">[4.1]</span> In January 1919, nationwide elections drew an eighty-three percent voter turnout across Germany. Moderate pro-republican parties won a clear majority, forming a stable **democratic coalition government** uniting the SPD, the Catholic Centre Party, and the German Democratic Party. Delegates then elected moderate socialist **Friedrich Ebert** first **President** of the new German Republic.\n\n<span class=\"para-ref\">[4.2]</span> Because continuing street warfare and communist strikes made Berlin too dangerous for politicians, deputies met 150 miles south at the **Weimar National Assembly** in February 1919. Inside the National Theatre, delegates drafted a democratic constitution linked to the peaceful culture of Goethe and Schiller rather than Prussian militarism.",
           "sources": [
             {
               "id": "weimar_l1_source_e",
@@ -489,8 +510,8 @@ window.unitData = {
         {
           "title": "The Weimar Constitution: Progressive Universal Suffrage and Fatal Emergency Powers (Aug 1919)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Promulgated on 11 August 1919, the Weimar Constitution established one of the most progressive democracies in the world. It guaranteed full freedom of speech, assembly, and religious worship, granting sweeping **universal suffrage rights** to all men and women aged twenty and above, creating an equitable voting framework that empowered ordinary citizens across Germany's eighteen federal states.\n\n<span class=\"para-ref\">[5.2]</span> However, institutional flaws undermined its stability. The system of **proportional representation weakness** meant small fringe parties proliferated, making single-party majorities impossible and forcing endless unstable coalition governments. Most dangerously, **Article 48 emergency powers** empowered the president to suspend civil liberties and rule by presidential decree without parliamentary consent, providing a constitutional loophole that future dictators would exploit.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Promulgated on 11 August 1919, the Weimar Constitution established one of the most progressive democracies in the world. It guaranteed full freedom of speech, assembly, and religious worship, granting sweeping **universal suffrage rights** to all men and women aged twenty and above, creating an equitable voting framework that empowered ordinary citizens across Germany's eighteen federal states.\n\n<span class=\"para-ref\">[5.2]</span> However, institutional flaws undermined its stability. The system of **proportional representation weakness** meant small fringe parties proliferated, making single-party majorities impossible and forcing endless unstable coalition governments. Most dangerously, **Article 48 emergency powers** empowered the president to suspend civil liberties and rule by presidential decree without parliamentary consent, providing a constitutional loophole that future dictators would exploit.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Signed into law on 11 August 1919, the Weimar Constitution created one of the freest democracies in the world. It protected free speech, assembly, and worship while granting **universal suffrage rights** to all men and women aged twenty and over. Ordinary citizens gained equal votes across Germany's eighteen federal states.\n\n<span class=\"para-ref\">[5.2]</span> However, two deep flaws weakened its stability. Under **proportional representation**, small fringe parties multiplied in parliament, making single-party majorities impossible and causing unstable coalitions. Worst of all, **Article 48 emergency powers** let the President suspend civil rights and rule by decree without Reichstag consent — a loophole future dictators exploited.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Signed into law on 11 August 1919, the Weimar Constitution created one of the freest democracies in the world. It protected free speech, assembly, and worship while granting **universal suffrage rights** to all men and women aged twenty and over. Ordinary citizens gained equal votes across Germany's eighteen federal states.\n\n<span class=\"para-ref\">[5.2]</span> However, two deep flaws weakened its stability. Under **proportional representation**, small fringe parties multiplied in parliament, making single-party majorities impossible and causing unstable coalitions. Worst of all, **Article 48 emergency powers** let the President suspend civil rights and rule by decree without Reichstag consent — a loophole future dictators exploited.",
           "sources": [
             {
               "id": "weimar_l1_source_c",
@@ -548,228 +569,284 @@ window.unitData = {
       ],
       "quiz": [
         {
-          "question": "Where did naval commanders order the High Seas Fleet on 28 October 1918 on a suicidal final sortie?",
-          "options": [
-            "Wilhelmshaven",
-            "Kiel",
-            "Hamburg",
-            "Bremen"
-          ],
-          "answer": "Wilhelmshaven",
-          "explanation": "On 28 October 1918, naval commanders at Wilhelmshaven ordered the High Seas Fleet on a suicidal final sortie against the Royal Navy, triggering a sailor mutiny.",
-          "q": "Where did naval commanders order the High Seas Fleet on 28 October 1918 on a suicidal final sortie?",
-          "a": "Wilhelmshaven"
-        },
-        {
-          "question": "How many German civilians died from starvation caused by the four-year Allied naval blockade?",
-          "options": [
-            "Over 763,000 civilian starvation deaths",
-            "Under 10,000 deaths",
-            "Over 5 million deaths",
-            "Roughly 50,000 deaths"
-          ],
-          "answer": "Over 763,000 civilian starvation deaths",
-          "explanation": "Four years of Allied naval blockade caused over 763,000 civilian starvation deaths across Imperial Germany.",
-          "q": "How many German civilians died from starvation caused by the four-year Allied naval blockade?",
-          "a": "Over 763,000 civilian starvation deaths"
-        },
-        {
+          "stage": 1,
           "question": "What event occurred at a naval base in late October 1918 that sparked a nationwide revolution?",
+          "q": "What event occurred at a naval base in late October 1918 that sparked a nationwide revolution?",
           "options": [
             "The abdication of the Kaiser",
-            "The Spartacist Uprising",
             "The mutiny of German sailors at Kiel",
+            "The Spartacist Uprising",
             "The signing of the Treaty of Versailles"
           ],
-          "answer": 2
+          "answer": "The mutiny of German sailors at Kiel",
+          "a": "The mutiny of German sailors at Kiel",
+          "explanation": "The rebellion exploded into the historic Kiel naval mutiny on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners."
         },
         {
-          "question": "On what exact date did Kaiser Wilhelm II abdicate?",
+          "stage": 1,
+          "question": "On what exact date was the Armistice signed?",
+          "q": "On what exact date was the Armistice signed?",
           "options": [
             "11 November 1918",
-            "1 January 1919",
             "28 June 1919",
+            "1 September 1939",
             "9 November 1918"
           ],
-          "answer": 3
+          "answer": "11 November 1918",
+          "a": "11 November 1918",
+          "explanation": "The rebellion exploded into the historic Kiel naval mutiny on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners."
         },
         {
-          "question": "Where did Kaiser Wilhelm II flee to after his abdication?",
+          "stage": 1,
+          "question": "What insulting term was given to the politicians who signed the Armistice by right-wing nationalists?",
+          "q": "What insulting term was given to the politicians who signed the Armistice by right-wing nationalists?",
           "options": [
-            "Switzerland",
-            "Austria",
-            "Holland",
-            "Britain"
+            "The Weimar Traitors",
+            "The Freikorps",
+            "The Spartacists",
+            "The November Criminals"
           ],
-          "answer": 2
+          "answer": "The November Criminals",
+          "a": "The November Criminals",
+          "explanation": "The rebellion exploded into the historic Kiel naval mutiny on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners."
         },
         {
+          "stage": 1,
+          "question": "How frequently was the President of the Weimar Republic elected?",
+          "q": "How frequently was the President of the Weimar Republic elected?",
+          "options": [
+            "For life",
+            "Every 4 years",
+            "Every 7 years",
+            "Every 5 years"
+          ],
+          "answer": "Every 7 years",
+          "a": "Every 7 years",
+          "explanation": "Four grueling years of the British Allied naval blockade had strangled civilian supply lines, causing catastrophic food deprivation remembered as the Turnip Winter starvation that killed over 750,000 civilians."
+        },
+        {
+          "stage": 2,
+          "question": "On what exact date did Kaiser Wilhelm II abdicate?",
+          "q": "On what exact date did Kaiser Wilhelm II abdicate?",
+          "options": [
+            "11 November 1918",
+            "9 November 1918",
+            "1 January 1919",
+            "28 June 1919"
+          ],
+          "answer": "9 November 1918",
+          "a": "9 November 1918",
+          "explanation": "On 9 November 1918, massive general strikes brought central Berlin to a standstill as revolutionary crowds surrounded government ministries."
+        },
+        {
+          "stage": 2,
           "question": "Who proclaimed the new German Republic from the balcony of the Reichstag?",
+          "q": "Who proclaimed the new German Republic from the balcony of the Reichstag?",
           "options": [
             "Philipp Scheidemann",
             "Matthias Erzberger",
             "Friedrich Ebert",
             "Kaiser Wilhelm II"
           ],
-          "answer": 0
+          "answer": "Philipp Scheidemann",
+          "a": "Philipp Scheidemann",
+          "explanation": "Meanwhile in Berlin, desperate to preempt communist revolutionaries from establishing a Soviet republic, Social Democratic leader Philipp Scheidemann proclamation announced the birth of the German Republic from a Reichstag window, handing provisional authority to SPD chancellor Friedrich Ebert to restore domestic order."
         },
         {
+          "stage": 2,
+          "question": "What derogatory label was given by German military chiefs to the civilian politicians who signed the 1918 armistice?",
+          "q": "What derogatory label was given by German military chiefs to the civilian politicians who signed the 1918 armistice?",
+          "options": [
+            "The Spartacist Traitors",
+            "The Weimar Coalition",
+            "The Council of Commissars",
+            "The November Criminals"
+          ],
+          "answer": "The November Criminals",
+          "a": "The November Criminals",
+          "explanation": "Military leaders like Hindenburg and Ludendorff shifted the stigma of defeat onto civilian politicians branded the 'November Criminals'."
+        },
+        {
+          "stage": 2,
+          "question": "Which royal dynasty's five-century rule ended when Kaiser Wilhelm II abdicated on 9 November 1918?",
+          "q": "Which royal dynasty's five-century rule ended when Kaiser Wilhelm II abdicated on 9 November 1918?",
+          "options": [
+            "The Habsburg dynasty",
+            "The Romanov dynasty",
+            "The Hohenzollern dynasty",
+            "The Bourbon dynasty"
+          ],
+          "answer": "The Hohenzollern dynasty",
+          "a": "The Hohenzollern dynasty",
+          "explanation": "Kaiser Wilhelm II's abdication on 9 November 1918 ended five centuries of Hohenzollern monarchical rule and sent him into exile in the Netherlands."
+        },
+        {
+          "stage": 3,
           "question": "Who became the first Chancellor (and later first President) of the Weimar Republic?",
+          "q": "Who became the first Chancellor (and later first President) of the Weimar Republic?",
           "options": [
             "Matthias Erzberger",
             "Friedrich Ebert",
             "Rosa Luxemburg",
             "Philipp Scheidemann"
           ],
-          "answer": 1
+          "answer": "Friedrich Ebert",
+          "a": "Friedrich Ebert",
+          "explanation": "Assuming power amid violent street fighting in Berlin, Social Democratic leader Friedrich Ebert chancellor sought desperately to stabilize the collapsing state."
         },
         {
-          "question": "What provisional council did Friedrich Ebert lead to head the temporary government in November 1918?",
-          "options": [
-            "The Council of People’s Commissars",
-            "The Spartacist Directorate",
-            "The Imperial Regency Council",
-            "The National Defense Committee"
-          ],
-          "answer": "The Council of People’s Commissars",
-          "explanation": "Ebert assumed leadership of a provisional Council of People’s Commissars to maintain administrative order.",
-          "q": "What provisional council did Friedrich Ebert lead to head the temporary government in November 1918?",
-          "a": "The Council of People’s Commissars"
-        },
-        {
-          "question": "On what exact date was the Armistice signed?",
-          "options": [
-            "28 June 1919",
-            "11 November 1918",
-            "1 September 1939",
-            "9 November 1918"
-          ],
-          "answer": 1
-        },
-        {
+          "stage": 3,
           "question": "Which German politician signed the Armistice on behalf of the Republic?",
+          "q": "Which German politician signed the Armistice on behalf of the Republic?",
           "options": [
+            "Matthias Erzberger",
             "Friedrich Ebert",
             "Philipp Scheidemann",
-            "Paul von Hindenburg",
-            "Matthias Erzberger"
+            "Paul von Hindenburg"
           ],
-          "answer": 3
+          "answer": "Matthias Erzberger",
+          "a": "Matthias Erzberger",
+          "explanation": "The following morning, the Compiègne armistice signed by civilian politician Matthias Erzberger in a railway carriage ended the First World War."
         },
         {
-          "question": "What insulting term was given to the politicians who signed the Armistice by right-wing nationalists?",
+          "stage": 3,
+          "question": "Which German general concluded a secret telephone pact with Chancellor Friedrich Ebert on 10 November 1918?",
+          "q": "Which German general concluded a secret telephone pact with Chancellor Friedrich Ebert on 10 November 1918?",
           "options": [
-            "The Weimar Traitors",
-            "The Freikorps",
-            "The November Criminals",
-            "The Spartacists"
+            "General Erich Ludendorff",
+            "General Kurt von Schleicher",
+            "General Hans von Seeckt",
+            "General Wilhelm Groener"
           ],
-          "answer": 2
+          "answer": "General Wilhelm Groener",
+          "a": "General Wilhelm Groener",
+          "explanation": "Under the Ebert-Groener Pact, the army promised to suppress communist revolts in exchange for Ebert preserving the traditional officer corps."
         },
         {
-          "question": "What derogatory label was given by German military chiefs to the civilian politicians who signed the 1918 armistice?",
+          "stage": 3,
+          "question": "Where was the railway carriage located in which Matthias Erzberger signed the Armistice ending the First World War?",
+          "q": "Where was the railway carriage located in which Matthias Erzberger signed the Armistice ending the First World War?",
           "options": [
-            "The November Criminals",
-            "The Spartacist Traitors",
-            "The Weimar Coalition",
-            "The Council of Commissars"
+            "Versailles",
+            "Locarno",
+            "Compiègne",
+            "Weimar"
           ],
-          "answer": "The November Criminals",
-          "explanation": "Military leaders like Hindenburg and Ludendorff shifted the stigma of defeat onto civilian politicians branded the 'November Criminals'.",
-          "q": "What derogatory label was given by German military chiefs to the civilian politicians who signed the 1918 armistice?",
-          "a": "The November Criminals"
+          "answer": "Compiègne",
+          "a": "Compiègne",
+          "explanation": "Signing the Compiègne Armistice on 11 November 1918 ended the fighting but allowed army chiefs to shift blame for defeat onto civilian politicians."
         },
         {
-          "question": "Why did the National Assembly convene in the cultural town of Weimar rather than Berlin in February 1919?",
+          "stage": 4,
+          "question": "Why did Germany's newly elected National Assembly convene in Weimar rather than Berlin in February 1919?",
+          "q": "Why did Germany's newly elected National Assembly convene in Weimar rather than Berlin in February 1919?",
           "options": [
-            "Because Berlin was paralyzed by the violent Spartacist Uprising",
-            "Because the Kaiser ordered the assembly to meet in his private palace",
-            "Because the Treaty of Versailles required parliament to meet in the south",
-            "Because all government buildings in Berlin were burned down"
+            "Allied armies had occupied central Berlin",
+            "Continuing street warfare and communist strikes made Berlin too dangerous",
+            "Weimar was the largest industrial port in Germany",
+            "Kaiser Wilhelm II still controlled Berlin's palaces"
           ],
-          "answer": "Because Berlin was paralyzed by the violent Spartacist Uprising",
-          "explanation": "Because Berlin was paralyzed by the violent Spartacist Uprising, delegates could not safely convene in the capital and gathered in Weimar.",
-          "q": "Why did the National Assembly convene in the cultural town of Weimar rather than Berlin in February 1919?",
-          "a": "Because Berlin was paralyzed by the violent Spartacist Uprising"
+          "answer": "Continuing street warfare and communist strikes made Berlin too dangerous",
+          "a": "Continuing street warfare and communist strikes made Berlin too dangerous",
+          "explanation": "Violent street fighting and strikes in Berlin forced parliamentarians to meet 150 miles south in the peaceful cultural town of Weimar."
         },
         {
+          "stage": 4,
+          "question": "What percentage of eligible voters turned out across Germany for the January 1919 National Assembly elections?",
+          "q": "What percentage of eligible voters turned out across Germany for the January 1919 National Assembly elections?",
+          "options": [
+            "Eighty-three percent",
+            "Thirty-two percent",
+            "Fifty-one percent",
+            "Ninety-nine percent"
+          ],
+          "answer": "Eighty-three percent",
+          "a": "Eighty-three percent",
+          "explanation": "An extraordinary eighty-three percent voter turnout in January 1919 gave moderate pro-republican parties a strong democratic mandate."
+        },
+        {
+          "stage": 4,
+          "question": "Which three moderate pro-republican parties formed the democratic Weimar Coalition government in early 1919?",
+          "q": "Which three moderate pro-republican parties formed the democratic Weimar Coalition government in early 1919?",
+          "options": [
+            "The NSDAP, Communist Party, and Nationalist Party",
+            "The Freikorps, Spartacists, and Bavarian People's Party",
+            "The Conservative Party, Agrarian League, and Fatherland Party",
+            "The SPD, Catholic Centre Party, and German Democratic Party"
+          ],
+          "answer": "The SPD, Catholic Centre Party, and German Democratic Party",
+          "a": "The SPD, Catholic Centre Party, and German Democratic Party",
+          "explanation": "The Social Democrats (SPD), Catholic Centre Party, and German Democratic Party united to elect Friedrich Ebert President and draft the constitution."
+        },
+        {
+          "stage": 4,
+          "question": "Inside which Weimar building did National Assembly delegates meet in February 1919 to draft the new constitution?",
+          "q": "Inside which Weimar building did National Assembly delegates meet in February 1919 to draft the new constitution?",
+          "options": [
+            "The Kroll Opera House",
+            "The Bürgerbräukeller Beer Hall",
+            "The National Theatre",
+            "Landsberg Fortress"
+          ],
+          "answer": "The National Theatre",
+          "a": "The National Theatre",
+          "explanation": "Meeting inside Weimar's National Theatre linked the young republic with the humanist heritage of Goethe and Schiller rather than Prussian militarism."
+        },
+        {
+          "stage": 5,
           "question": "Under the Weimar Constitution, what was the minimum voting age for men and women?",
+          "q": "Under the Weimar Constitution, what was the minimum voting age for men and women?",
           "options": [
-            "Citizens aged twenty and over",
             "Only men over the age of twenty-one",
+            "Citizens aged twenty and over",
             "Property-owning men aged thirty and above",
             "Only citizens who completed military service"
           ],
           "answer": "Citizens aged twenty and over",
-          "explanation": "Article 22 of the Weimar Constitution guaranteed universal suffrage for citizens aged twenty and over.",
-          "q": "Under the Weimar Constitution, what was the minimum voting age for men and women?",
-          "a": "Citizens aged twenty and over"
+          "a": "Citizens aged twenty and over",
+          "explanation": "Article 22 of the Weimar Constitution guaranteed universal suffrage for citizens aged twenty and over."
         },
         {
+          "stage": 5,
           "question": "What was the specific name of the voting system used to elect the Reichstag?",
+          "q": "What was the specific name of the voting system used to elect the Reichstag?",
           "options": [
+            "Proportional Representation",
             "First Past the Post",
             "Absolute Monarchy",
-            "The Electoral College",
-            "Proportional Representation"
+            "The Electoral College"
           ],
-          "answer": 3
+          "answer": "Proportional Representation",
+          "a": "Proportional Representation",
+          "explanation": "The system of proportional representation weakness meant small fringe parties proliferated, making single-party majorities impossible and forcing endless unstable coalition governments."
         },
         {
-          "question": "How frequently was the President of the Weimar Republic elected?",
-          "options": [
-            "Every 7 years",
-            "For life",
-            "Every 4 years",
-            "Every 5 years"
-          ],
-          "answer": 0
-        },
-        {
-          "question": "How were seats in the Reichstag allocated under the Weimar Constitution?",
-          "options": [
-            "Using Proportional Representation based on exact vote shares",
-            "First-past-the-post winner takes all in each district",
-            "Direct appointment by the Kaiser and Chancellor",
-            "Equal allocation of ten seats per federal state"
-          ],
-          "answer": "Using Proportional Representation based on exact vote shares",
-          "explanation": "Proportional representation allocated seats in the Reichstag based on exact vote shares.",
-          "q": "How were seats in the Reichstag allocated under the Weimar Constitution?",
-          "a": "Using Proportional Representation based on exact vote shares"
-        },
-        {
-          "question": "Why did Proportional Representation create weak governments in the Weimar Republic?",
-          "options": [
-            "It allowed splinter extremist parties to enter parliament, forcing fragile coalition governments",
-            "It gave the military commander the power to dissolve parliament each month",
-            "It banned all political debate during national elections",
-            "It gave foreign ambassadors veto power over German laws"
-          ],
-          "answer": "It allowed splinter extremist parties to enter parliament, forcing fragile coalition governments",
-          "explanation": "Proportional representation allowed splinter extremist parties to enter the Reichstag, preventing single-party majorities and forcing fragile coalitions.",
-          "q": "Why did Proportional Representation create weak governments in the Weimar Republic?",
-          "a": "It allowed splinter extremist parties to enter parliament, forcing fragile coalition governments"
-        },
-        {
+          "stage": 5,
           "question": "What was Article 48?",
+          "q": "What was Article 48?",
           "options": [
             "A clause forcing Germany to pay reparations",
             "A law banning extremist political parties",
-            "A constitutional clause allowing the President to bypass the Reichstag and rule by emergency decree",
-            "A clause giving all men and women the right to vote"
+            "A clause giving all men and women the right to vote",
+            "A constitutional clause allowing the President to bypass the Reichstag and rule by emergency decree"
           ],
-          "answer": 2
+          "answer": "A constitutional clause allowing the President to bypass the Reichstag and rule by emergency decree",
+          "a": "A constitutional clause allowing the President to bypass the Reichstag and rule by emergency decree",
+          "explanation": "Most dangerously, Article 48 emergency powers empowered the president to suspend civil liberties and rule by presidential decree without parliamentary consent, providing a constitutional loophole that future dictators would exploit."
         },
         {
-          "question": "What was the name of the upper house of parliament that represented the 18 German regions (Länder)?",
+          "stage": 5,
+          "question": "On what exact date was the Weimar Constitution formally promulgated?",
+          "q": "On what exact date was the Weimar Constitution formally promulgated?",
           "options": [
-            "The Reichstag",
-            "The Freikorps",
-            "The Gestapo",
-            "The Reichsrat"
+            "9 November 1918",
+            "28 June 1919",
+            "11 August 1919",
+            "30 January 1933"
           ],
-          "answer": 3
+          "answer": "11 August 1919",
+          "a": "11 August 1919",
+          "explanation": "Promulgated on 11 August 1919, the Weimar Constitution established universal suffrage from age twenty alongside proportional representation and Article 48."
         }
       ],
       "tasks": [],
@@ -1057,14 +1134,17 @@ window.unitData = {
             }
           ],
           "model_sentence": "Severe civilian suffering during the <strong>Turnip Winter starvation</strong>, intensified by the <strong>Allied naval blockade</strong>, triggered the <strong>Kiel naval mutiny</strong> which shattered military discipline and imperial rule.",
-          "title": "How did naval mutiny and civilian starvation force military leaders to surrender?",
-          "dates": "Oct–Nov 1918"
+          "title": "Military Collapse & The Kiel Mutiny",
+          "dates": "Oct–Nov 1918",
+          "question": "How did naval mutiny and civilian starvation force military leaders to surrender?",
+          "questionHeading": "How did naval mutiny and civilian starvation force military leaders to surrender?",
+          "prose_hash": "384e5c32bb"
         },
         {
           "step": 2,
           "date": "9 Nov 1918",
           "para_ref": "[2.1–2.2]",
-          "heading": "Why did moderate Social Democrats rush to proclaim a republic before Communists did?",
+          "heading": "Why did Scheidemann rush to proclaim a republic on 9 November 1918?",
           "bullets": [
             "Kaiser Wilhelm abdication",
             "Dutch border exile",
@@ -1086,8 +1166,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Amid mounting revolutionary unrest, ministers forced <strong>Kaiser Wilhelm abdication</strong> followed by his hasty <strong>Dutch border exile</strong>, prompting the <strong>Philipp Scheidemann proclamation</strong> of a democratic republic to preempt a communist coup.",
-          "title": "Why did moderate Social Democrats rush to proclaim a republic before Communists did?",
-          "dates": "9 Nov 1918"
+          "title": "Abdication of Kaiser Wilhelm II",
+          "dates": "9 Nov 1918",
+          "question": "Why did Scheidemann rush to proclaim a republic on 9 November 1918?",
+          "questionHeading": "Why did Scheidemann rush to proclaim a republic on 9 November 1918?",
+          "prose_hash": "cb662b1d75"
         },
         {
           "step": 3,
@@ -1115,8 +1198,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Immediately after the <strong>Compiègne armistice signed</strong> ended the war, new leader <strong>Friedrich Ebert chancellor</strong> secured the stability of the provisional government through the secret <strong>Ebert-Groener army pact</strong>.",
-          "title": "Why did Ebert form a secret pact with the Imperial Army leadership?",
-          "dates": "11 Nov 1918"
+          "title": "Armistice & Ebert-Groener Pact",
+          "dates": "11 Nov 1918",
+          "question": "Why did Ebert form a secret pact with the Imperial Army leadership?",
+          "questionHeading": "Why did Ebert form a secret pact with the Imperial Army leadership?",
+          "prose_hash": "08e6e745b2"
         },
         {
           "step": 4,
@@ -1144,14 +1230,17 @@ window.unitData = {
             }
           ],
           "model_sentence": "Convening away from street fighting in Berlin, the <strong>Weimar National Assembly</strong> elected <strong>Friedrich Ebert president</strong> and established Germany’s first <strong>democratic coalition government</strong>.",
-          "title": "Why was the constitutional assembly held in Weimar rather than Berlin?",
-          "dates": "Jan–Feb 1919"
+          "title": "The National Assembly at Weimar",
+          "dates": "Jan–Feb 1919",
+          "question": "Why was the constitutional assembly held in Weimar rather than Berlin?",
+          "questionHeading": "Why was the constitutional assembly held in Weimar rather than Berlin?",
+          "prose_hash": "04bf4560fc"
         },
         {
           "step": 5,
           "date": "Aug 1919",
           "para_ref": "[5.1–5.2]",
-          "heading": "Why did proportional representation and Article 48 undermine constitutional stability?",
+          "heading": "Why did proportional representation and Article 48 weaken Weimar?",
           "bullets": [
             "Universal suffrage rights",
             "Proportional representation weakness",
@@ -1173,8 +1262,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Although the Weimar constitution granted progressive <strong>universal suffrage rights</strong>, chronic political fragmentation caused by <strong>proportional representation weakness</strong> forced frequent reliance on <strong>Article 48 emergency powers</strong>.",
-          "title": "Why did proportional representation and Article 48 undermine constitutional stability?",
-          "dates": "Aug 1919"
+          "title": "Weimar Constitution Architecture & Flaws",
+          "dates": "Aug 1919",
+          "question": "Why did proportional representation and Article 48 weaken Weimar?",
+          "questionHeading": "Why did proportional representation and Article 48 weaken Weimar?",
+          "prose_hash": "411f3f0907"
         }
       ],
       "causal_domino_spine": {
@@ -1191,7 +1283,8 @@ window.unitData = {
             "trigger": "The German naval command ordered a suicidal final naval sortie against the British fleet, sparking mutinies at Wilhelmshaven and Kiel that triggered popular revolution.",
             "desc": "The German naval command ordered a suicidal final naval sortie against the British fleet, sparking mutinies at Wilhelmshaven and Kiel that triggered popular revolution.",
             "connective": "Mutinous sailors and striking workers formed revolutionary councils across Germany, shattering imperial authority and making peace negotiations unavoidable.",
-            "question": "How did naval mutiny and civilian starvation force military leaders to surrender?"
+            "question": "How did naval mutiny and civilian starvation force military leaders to surrender?",
+            "prose_hash": "384e5c32bb"
           },
           {
             "step": 2,
@@ -1203,7 +1296,8 @@ window.unitData = {
             "trigger": "Facing general strikes in Berlin, Chancellor Prince Max announced the Kaiser’s abdication without his consent; Scheidemann proclaimed a republic from the Reichstag.",
             "desc": "Facing general strikes in Berlin, Chancellor Prince Max announced the Kaiser’s abdication without his consent; Scheidemann proclaimed a republic from the Reichstag.",
             "connective": "Ended five centuries of Hohenzollern monarchical rule and created a democratic republic before radical communists could declare a Soviet regime.",
-            "question": "Why did moderate Social Democrats rush to proclaim a republic before Communists did?"
+            "question": "Why did Scheidemann rush to proclaim a republic on 9 November 1918?",
+            "prose_hash": "cb662b1d75"
           },
           {
             "step": 3,
@@ -1215,7 +1309,8 @@ window.unitData = {
             "trigger": "Ebert’s provisional government signed the Armistice ending the war, and concluded a secret telephone pact with General Groener to preserve army discipline.",
             "desc": "Ebert’s provisional government signed the Armistice ending the war, and concluded a secret telephone pact with General Groener to preserve army discipline.",
             "connective": "Secured army backing to suppress left-wing uprisings, but left the traditional imperial officer corps entrenched within the new democratic republic.",
-            "question": "Why did Ebert form a secret pact with the Imperial Army leadership?"
+            "question": "Why did Ebert form a secret pact with the Imperial Army leadership?",
+            "prose_hash": "08e6e745b2"
           },
           {
             "step": 4,
@@ -1227,7 +1322,8 @@ window.unitData = {
             "trigger": "Following democratic elections in January 1919 where pro-republican parties won 76% of votes, the assembly met in Weimar to escape Berlin’s street violence.",
             "desc": "Following democratic elections in January 1919 where pro-republican parties won 76% of votes, the assembly met in Weimar to escape Berlin’s street violence.",
             "connective": "Allowed delegates to draft a progressive democratic constitution in peaceful isolation, establishing a parliamentary republic with universal suffrage.",
-            "question": "Why was the constitutional assembly held in Weimar rather than Berlin?"
+            "question": "Why was the constitutional assembly held in Weimar rather than Berlin?",
+            "prose_hash": "04bf4560fc"
           },
           {
             "step": 5,
@@ -1239,7 +1335,8 @@ window.unitData = {
             "trigger": "The Weimar Constitution was ratified in August 1919, combining universal democratic voting rights with Proportional Representation and Article 48 emergency powers.",
             "desc": "The Weimar Constitution was ratified in August 1919, combining universal democratic voting rights with Proportional Representation and Article 48 emergency powers.",
             "connective": "Fostered dozens of splinter parties and weak coalition cabinets, while Article 48 provided a legal mechanism that later enabled authoritarian rule.",
-            "question": "Why did proportional representation and Article 48 undermine constitutional stability?"
+            "question": "Why did proportional representation and Article 48 weaken Weimar?",
+            "prose_hash": "411f3f0907"
           }
         ]
       },
@@ -1512,48 +1609,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "When did the First World War end?",
-            "answer": "11 November 1918."
+            "stage": 1,
+            "question": "What event occurred at a naval base in late October 1918 that sparked a nationwide revolution?",
+            "answer": "The mutiny of German sailors at Kiel",
+            "explanation": "The rebellion exploded into the historic Kiel naval mutiny on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners."
           },
           {
-            "question": "Who was the Kaiser of Germany during WW1?",
-            "answer": "Kaiser Wilhelm II."
+            "stage": 2,
+            "question": "On what exact date did Kaiser Wilhelm II abdicate?",
+            "answer": "9 November 1918",
+            "explanation": "On 9 November 1918, massive general strikes brought central Berlin to a standstill as revolutionary crowds surrounded government ministries."
           },
           {
-            "question": "Why did the Kaiser abdicate?",
-            "answer": "Germany was losing the war, there were food shortages, and sailors mutinied at Kiel."
+            "stage": 3,
+            "question": "Who became the first Chancellor (and later first President) of the Weimar Republic?",
+            "answer": "Friedrich Ebert",
+            "explanation": "Assuming power amid violent street fighting in Berlin, Social Democratic leader Friedrich Ebert chancellor sought desperately to stabilize the collapsing state."
           },
           {
-            "question": "What happened during the Kiel Mutiny in October 1918?",
-            "answer": "German naval sailors refused orders to launch a suicidal final attack against the British Royal Navy, sparking revolution across German ports."
+            "stage": 4,
+            "question": "Why did Germany's newly elected National Assembly convene in Weimar rather than Berlin in February 1919?",
+            "answer": "Continuing street warfare and communist strikes made Berlin too dangerous",
+            "explanation": "Violent street fighting and strikes in Berlin forced parliamentarians to meet 150 miles south in the peaceful cultural town of Weimar."
           },
           {
-            "question": "What was the secret Ebert-Groener Pact of November 1918?",
-            "answer": "An agreement where General Groener promised the army would support Friedrich Ebert’s provisional republic in exchange for preventing communist revolution."
+            "stage": 5,
+            "question": "Under the Weimar Constitution, what was the minimum voting age for men and women?",
+            "answer": "Citizens aged twenty and over",
+            "explanation": "Article 22 of the Weimar Constitution guaranteed universal suffrage for citizens aged twenty and over."
           },
           {
-            "question": "What is a 'democracy'?",
-            "answer": "A system where the government is elected by the people."
+            "stage": 1,
+            "question": "On what exact date was the Armistice signed?",
+            "answer": "11 November 1918",
+            "explanation": "The rebellion exploded into the historic Kiel naval mutiny on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners."
           },
           {
-            "question": "What is a 'republic'?",
-            "answer": "A country without a monarch."
+            "stage": 2,
+            "question": "Who proclaimed the new German Republic from the balcony of the Reichstag?",
+            "answer": "Philipp Scheidemann",
+            "explanation": "Meanwhile in Berlin, desperate to preempt communist revolutionaries from establishing a Soviet republic, Social Democratic leader Philipp Scheidemann proclamation announced the birth of the German Republic from a Reichstag window, handing provisional authority to SPD chancellor Friedrich Ebert to restore domestic order."
           },
           {
-            "question": "What does 'mutiny' mean?",
-            "answer": "A rebellion by soldiers or sailors."
+            "stage": 3,
+            "question": "Which German politician signed the Armistice on behalf of the Republic?",
+            "answer": "Matthias Erzberger",
+            "explanation": "The following morning, the Compiègne armistice signed by civilian politician Matthias Erzberger in a railway carriage ended the First World War."
           },
           {
-            "question": "What was the Triple Entente?",
-            "answer": "The alliance of Britain, France, and Russia."
+            "stage": 4,
+            "question": "What percentage of eligible voters turned out across Germany for the January 1919 National Assembly elections?",
+            "answer": "Eighty-three percent",
+            "explanation": "An extraordinary eighty-three percent voter turnout in January 1919 gave moderate pro-republican parties a strong democratic mandate."
           },
           {
-            "question": "What does 'abdicate' mean?",
-            "answer": "To step down from the throne."
+            "stage": 5,
+            "question": "What was the specific name of the voting system used to elect the Reichstag?",
+            "answer": "Proportional Representation",
+            "explanation": "The system of proportional representation weakness meant small fringe parties proliferated, making single-party majorities impossible and forcing endless unstable coalition governments."
           }
         ]
       },
@@ -1642,8 +1758,8 @@ window.unitData = {
         {
           "title": "Red Flags in Berlin: The Spartacist Uprising and the Freikorps Bloodbath (Jan 1919)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> In January 1919, radical left-wing revolutionaries mounted a violent armed assault against the new republican government. Led by Karl Liebknecht and Rosa Luxemburg, the **Spartacist Communist uprising** mobilized over one hundred thousand armed workers in Berlin, seizing railway junctions, newspaper offices, and government buildings in an attempt to overthrow Ebert and establish a Soviet-style workers' council dictatorship.\n\n<span class=\"para-ref\">[1.2]</span> Lacking reliable police, Defense Minister Gustav Noske authorized aggressive **Freikorps paramilitary deployment**, unleashing demobilized imperial soldiers armed with machine guns and flamethrowers to crush the revolt in the streets. Over one hundred workers were killed in fierce urban combat, culminating when **Rosa Luxemburg murdered** alongside Liebknecht by right-wing soldiers, creating a permanent, bitter rift between Social Democrats and Communists.",
-          "content": "<span class=\"para-ref\">[1.1]</span> In January 1919, radical left-wing revolutionaries mounted a violent armed assault against the new republican government. Led by Karl Liebknecht and Rosa Luxemburg, the **Spartacist Communist uprising** mobilized over one hundred thousand armed workers in Berlin, seizing railway junctions, newspaper offices, and government buildings in an attempt to overthrow Ebert and establish a Soviet-style workers' council dictatorship.\n\n<span class=\"para-ref\">[1.2]</span> Lacking reliable police, Defense Minister Gustav Noske authorized aggressive **Freikorps paramilitary deployment**, unleashing demobilized imperial soldiers armed with machine guns and flamethrowers to crush the revolt in the streets. Over one hundred workers were killed in fierce urban combat, culminating when **Rosa Luxemburg murdered** alongside Liebknecht by right-wing soldiers, creating a permanent, bitter rift between Social Democrats and Communists.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In January 1919, radical left-wing revolutionaries launched an armed rising against Ebert's republican government. Led by Karl Liebknecht and Rosa Luxemburg, the **Spartacist Communist uprising** brought over one hundred thousand armed workers onto Berlin's streets. Rebels seized rail junctions, newspaper offices, and ministries, hoping to topple Ebert and set up workers' councils.\n\n<span class=\"para-ref\">[1.2]</span> Lacking loyal police, Defence Minister Gustav Noske ordered **Freikorps** volunteer units of demobilized imperial soldiers into Berlin with machine guns and flamethrowers. Over one hundred workers died in street fighting, and right-wing soldiers beat and **murdered Rosa Luxemburg** alongside Liebknecht, leaving a permanent rift between Social Democrats and Communists.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In January 1919, radical left-wing revolutionaries launched an armed rising against Ebert's republican government. Led by Karl Liebknecht and Rosa Luxemburg, the **Spartacist Communist uprising** brought over one hundred thousand armed workers onto Berlin's streets. Rebels seized rail junctions, newspaper offices, and ministries, hoping to topple Ebert and set up workers' councils.\n\n<span class=\"para-ref\">[1.2]</span> Lacking loyal police, Defence Minister Gustav Noske ordered **Freikorps** volunteer units of demobilized imperial soldiers into Berlin with machine guns and flamethrowers. Over one hundred workers died in street fighting, and right-wing soldiers beat and **murdered Rosa Luxemburg** alongside Liebknecht, leaving a permanent rift between Social Democrats and Communists.",
           "sources": [
             {
               "id": "weimar_l2_source_e",
@@ -1701,8 +1817,8 @@ window.unitData = {
         {
           "title": "The Diktat of Versailles: War Guilt, Reparations and the 'Stab in the Back' Legend (Jun 1919)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, German delegates were forced to sign the Treaty of Versailles under threat of immediate Allied invasion. Denounced across the political spectrum as a humiliating diktat, the treaty enforced the punitive **Article 231 War Guilt** clause, requiring Germany to accept sole moral responsibility for the war and justifying astronomical **£6.6 billion reparations** payments to Allied powers.\n\n<span class=\"para-ref\">[2.2]</span> Germany lost thirteen percent of its European territory, its overseas colonies, and had its army capped at one hundred thousand volunteers. Nationalist circles bitterly blamed democratic politicians for accepting these catastrophic terms, aggressively promoting the **'Dolchstoss' backstab myth**, which falsely alleged that the German army was undefeated on the battlefield but betrayed from within by socialists and Jews.",
-          "content": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, German delegates were forced to sign the Treaty of Versailles under threat of immediate Allied invasion. Denounced across the political spectrum as a humiliating diktat, the treaty enforced the punitive **Article 231 War Guilt** clause, requiring Germany to accept sole moral responsibility for the war and justifying astronomical **£6.6 billion reparations** payments to Allied powers.\n\n<span class=\"para-ref\">[2.2]</span> Germany lost thirteen percent of its European territory, its overseas colonies, and had its army capped at one hundred thousand volunteers. Nationalist circles bitterly blamed democratic politicians for accepting these catastrophic terms, aggressively promoting the **'Dolchstoss' backstab myth**, which falsely alleged that the German army was undefeated on the battlefield but betrayed from within by socialists and Jews.",
+          "text": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, threats of Allied invasion forced German envoys to sign the Treaty of Versailles. Hated across Germany as a humiliating *Diktat* (dictated peace), the treaty enforced the harsh **Article 231 War Guilt** clause. Germany had to accept sole blame for the war and pay **£6.6 billion reparations** to the Allies.\n\n<span class=\"para-ref\">[2.2]</span> Germany also lost thirteen percent of its European land and all overseas colonies, while its army was capped at 100,000 volunteers. Nationalists blamed democratic politicians for signing these terms and spread the **'Dolchstoss' backstab myth**, falsely claiming socialists and Jews had betrayed an unbeaten army.",
+          "content": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, threats of Allied invasion forced German envoys to sign the Treaty of Versailles. Hated across Germany as a humiliating *Diktat* (dictated peace), the treaty enforced the harsh **Article 231 War Guilt** clause. Germany had to accept sole blame for the war and pay **£6.6 billion reparations** to the Allies.\n\n<span class=\"para-ref\">[2.2]</span> Germany also lost thirteen percent of its European land and all overseas colonies, while its army was capped at 100,000 volunteers. Nationalists blamed democratic politicians for signing these terms and spread the **'Dolchstoss' backstab myth**, falsely claiming socialists and Jews had betrayed an unbeaten army.",
           "sources": [
             {
               "id": "weimar_l2_source_a",
@@ -1764,8 +1880,8 @@ window.unitData = {
         {
           "title": "The Ehrhardt Brigade Marches: The Kapp Putsch and the General Strike (Mar 1920)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> In March 1920, the government faced a dangerous insurrection from the extreme right when it attempted to disband the Freikorps under Versailles treaty obligations. Nationalists launched the **Wolfgang Kapp putsch**, marching five thousand armed troops into Berlin and seizing government ministries, forcing Ebert and his cabinet to flee the capital for Stuttgart to avoid arrest.\n\n<span class=\"para-ref\">[3.2]</span> When Ebert ordered the regular army to intervene, he encountered **General von Seeckt refusal**, who coldly proclaimed that \"Reichswehr does not fire on Reichswehr\". The republic was rescued not by the military, but by a massive nationwide **Berlin general strike** called by trade unions, which paralyzed gas, water, and transport services, causing the putsch to collapse within four days.",
-          "content": "<span class=\"para-ref\">[3.1]</span> In March 1920, the government faced a dangerous insurrection from the extreme right when it attempted to disband the Freikorps under Versailles treaty obligations. Nationalists launched the **Wolfgang Kapp putsch**, marching five thousand armed troops into Berlin and seizing government ministries, forcing Ebert and his cabinet to flee the capital for Stuttgart to avoid arrest.\n\n<span class=\"para-ref\">[3.2]</span> When Ebert ordered the regular army to intervene, he encountered **General von Seeckt refusal**, who coldly proclaimed that \"Reichswehr does not fire on Reichswehr\". The republic was rescued not by the military, but by a massive nationwide **Berlin general strike** called by trade unions, which paralyzed gas, water, and transport services, causing the putsch to collapse within four days.",
+          "text": "<span class=\"para-ref\">[3.1]</span> In March 1920, anger erupted on the far right when the government tried to disband the Freikorps under Versailles rules. Nationalists launched the **Wolfgang Kapp putsch**, marching five thousand armed troops into Berlin and seizing ministries. Ebert and his cabinet fled south to Stuttgart to escape arrest.\n\n<span class=\"para-ref\">[3.2]</span> Ebert ordered regular soldiers to crush the rebels, yet army chief **General von Seeckt** refused: *\"Reichswehr does not fire upon Reichswehr.\"* Instead, trade unions rescued the republic by calling a **Berlin general strike**. It shut off gas, water, and trams, defeating the putsch in four days.",
+          "content": "<span class=\"para-ref\">[3.1]</span> In March 1920, anger erupted on the far right when the government tried to disband the Freikorps under Versailles rules. Nationalists launched the **Wolfgang Kapp putsch**, marching five thousand armed troops into Berlin and seizing ministries. Ebert and his cabinet fled south to Stuttgart to escape arrest.\n\n<span class=\"para-ref\">[3.2]</span> Ebert ordered regular soldiers to crush the rebels, yet army chief **General von Seeckt** refused: *\"Reichswehr does not fire upon Reichswehr.\"* Instead, trade unions rescued the republic by calling a **Berlin general strike**. It shut off gas, water, and trams, defeating the putsch in four days.",
           "sources": [
             {
               "id": "weimar_l2_source_b",
@@ -1823,8 +1939,8 @@ window.unitData = {
         {
           "title": "Bullets from the Shadows: The Assassinations of Erzberger and Rathenau (1921–1922)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> Defeated in open coup attempts, right-wing extremists turned to covert political murder, orchestrating systematic **Organisation Consul terror** campaigns against prominent republican leaders. In August 1921, armistice signatory **Matthias Erzberger assassinated** by nationalist hit-squads while walking in the Black Forest, demonized as a traitor for signing the surrender and implementing democratic tax reforms that burdened wealthy elites.\n\n<span class=\"para-ref\">[4.2]</span> In June 1922, foreign minister **Walther Rathenau murdered** by machine-gun fire and hand grenades hurled into his open car in Berlin. As a wealthy Jewish industrialist who pursued reconciliation with Western powers, Rathenau was despised by anti-Semitic nationalists. Over 350 political assassinations occurred between 1919 and 1922, with right-wing judges handing down notoriously lenient sentences to nationalist killers.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Defeated in open coup attempts, right-wing extremists turned to covert political murder, orchestrating systematic **Organisation Consul terror** campaigns against prominent republican leaders. In August 1921, armistice signatory **Matthias Erzberger assassinated** by nationalist hit-squads while walking in the Black Forest, demonized as a traitor for signing the surrender and implementing democratic tax reforms that burdened wealthy elites.\n\n<span class=\"para-ref\">[4.2]</span> In June 1922, foreign minister **Walther Rathenau murdered** by machine-gun fire and hand grenades hurled into his open car in Berlin. As a wealthy Jewish industrialist who pursued reconciliation with Western powers, Rathenau was despised by anti-Semitic nationalists. Over 350 political assassinations occurred between 1919 and 1922, with right-wing judges handing down notoriously lenient sentences to nationalist killers.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Defeated in open coups after January 1919, far-right extremists turned to political murder through secret **Organisation Consul** hit-squads. In August 1921, nationalist gunmen **assassinated Matthias Erzberger** in the Black Forest, hating him as a \"traitor\" for signing the 1918 surrender and raising taxes on the rich.\n\n<span class=\"para-ref\">[4.2]</span> In June 1922, Foreign Minister **Walther Rathenau** was **murdered** with submachine guns and hand grenades in his open car in Berlin. Anti-Semitic nationalists despised this wealthy Jewish minister for seeking peace with the West. Over 350 political assassinations took place between 1919 and 1922, yet right-wing judges gave nationalist killers light sentences.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Defeated in open coups after January 1919, far-right extremists turned to political murder through secret **Organisation Consul** hit-squads. In August 1921, nationalist gunmen **assassinated Matthias Erzberger** in the Black Forest, hating him as a \"traitor\" for signing the 1918 surrender and raising taxes on the rich.\n\n<span class=\"para-ref\">[4.2]</span> In June 1922, Foreign Minister **Walther Rathenau** was **murdered** with submachine guns and hand grenades in his open car in Berlin. Anti-Semitic nationalists despised this wealthy Jewish minister for seeking peace with the West. Over 350 political assassinations took place between 1919 and 1922, yet right-wing judges gave nationalist killers light sentences.",
           "sources": [
             {
               "id": "weimar_l2_source_rathenau",
@@ -1880,8 +1996,8 @@ window.unitData = {
         {
           "title": "French Troops in the Ruhr & The Mark Collapses: The Nightmare of Hyperinflation (1923)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> In January 1923, after Germany defaulted on timber and coal deliveries, sixty thousand French and Belgian troops carried out the **Ruhr industrial occupation** to seize reparations by force. Chancellor Wilhelm Cuno ordered a policy of **passive strike resistance**, instructing coal miners and railway workers to refuse cooperation while the German government paid their lost wages by printing billions of paper marks.\n\n<span class=\"para-ref\">[5.2]</span> This reckless money printing triggered a catastrophic **hyperinflation currency collapse**, rendering the German mark worthless by autumn 1923. Citizens carried wheelbarrows of cash to purchase basic loaves of bread, while middle-class bank savings, pensions, and insurance policies were completely wiped out. Although debts were eliminated, hyperinflation shattered middle-class faith in the democratic Weimar Republic.",
-          "content": "<span class=\"para-ref\">[5.1]</span> In January 1923, after Germany defaulted on timber and coal deliveries, sixty thousand French and Belgian troops carried out the **Ruhr industrial occupation** to seize reparations by force. Chancellor Wilhelm Cuno ordered a policy of **passive strike resistance**, instructing coal miners and railway workers to refuse cooperation while the German government paid their lost wages by printing billions of paper marks.\n\n<span class=\"para-ref\">[5.2]</span> This reckless money printing triggered a catastrophic **hyperinflation currency collapse**, rendering the German mark worthless by autumn 1923. Citizens carried wheelbarrows of cash to purchase basic loaves of bread, while middle-class bank savings, pensions, and insurance policies were completely wiped out. Although debts were eliminated, hyperinflation shattered middle-class faith in the democratic Weimar Republic.",
+          "text": "<span class=\"para-ref\">[5.1]</span> In January 1923, Germany failed to pay its scheduled £6.6 billion reparations in coal and timber. In response, sixty thousand French and Belgian troops carried out the **Ruhr occupation**. Chancellor Wilhelm Cuno ordered **passive resistance**, telling Ruhr miners and rail workers to strike while the government printed billions of paper marks.\n\n<span class=\"para-ref\">[5.2]</span> Reckless money-printing triggered runaway **hyperinflation**, making the mark worthless by autumn 1923 when one loaf cost 201 billion marks. Shoppers pushed wheelbarrows of cash for bread, while the middle classes saw their life savings and fixed pensions wiped out, shattering faith in Weimar democracy.",
+          "content": "<span class=\"para-ref\">[5.1]</span> In January 1923, Germany failed to pay its scheduled £6.6 billion reparations in coal and timber. In response, sixty thousand French and Belgian troops carried out the **Ruhr occupation**. Chancellor Wilhelm Cuno ordered **passive resistance**, telling Ruhr miners and rail workers to strike while the government printed billions of paper marks.\n\n<span class=\"para-ref\">[5.2]</span> Reckless money-printing triggered runaway **hyperinflation**, making the mark worthless by autumn 1923 when one loaf cost 201 billion marks. Shoppers pushed wheelbarrows of cash for bread, while the middle classes saw their life savings and fixed pensions wiped out, shattering faith in Weimar democracy.",
           "sources": [
             {
               "id": "weimar_l2_source_c",
@@ -1943,216 +2059,284 @@ window.unitData = {
       ],
       "quiz": [
         {
-          "question": "On what exact date was the Treaty of Versailles signed?",
-          "options": [
-            "11 November 1918",
-            "9 November 1918",
-            "28 June 1914",
-            "28 June 1919"
-          ],
-          "answer": 3
-        },
-        {
-          "question": "What was Article 231 of the Treaty of Versailles?",
-          "options": [
-            "The clause limiting the German army to 100,000 men",
-            "The War Guilt Clause, forcing Germany to accept total blame for the war",
-            "The clause removing all of Germany's overseas colonies",
-            "The clause forcing Germany to pay reparations"
-          ],
-          "answer": 1
-        },
-        {
-          "question": "How much was Germany ordered to pay in reparations in 1921?",
-          "options": [
-            "£132 million",
-            "£2.2 billion",
-            "£6.6 billion",
-            "£10.5 billion"
-          ],
-          "answer": 2
-        },
-        {
+          "stage": 1,
           "question": "Under the 1919 Treaty of Versailles, what was the maximum number of soldiers allowed in the German army?",
+          "q": "Under the 1919 Treaty of Versailles, what was the maximum number of soldiers allowed in the German army?",
           "options": [
             "100,000 men",
             "250,000 men",
             "50,000 men",
             "10,000 men"
           ],
-          "answer": 0
+          "answer": "100,000 men",
+          "a": "100,000 men",
+          "explanation": "In January 1919, radical left-wing revolutionaries mounted a violent armed assault against the new republican government."
         },
         {
-          "question": "What German term was used to describe the Treaty of Versailles, meaning a 'dictated peace'?",
-          "options": [
-            "Freikorps",
-            "Putsch",
-            "Diktat",
-            "Dolchstoß"
-          ],
-          "answer": 2
-        },
-        {
+          "stage": 1,
           "question": "Who were the two main leaders of the Spartacist League?",
+          "q": "Who were the two main leaders of the Spartacist League?",
           "options": [
             "Adolf Hitler and Ernst Röhm",
             "Friedrich Ebert and Philipp Scheidemann",
             "Wolfgang Kapp and Walther von Lüttwitz",
             "Rosa Luxemburg and Karl Liebknecht"
           ],
-          "answer": 3
+          "answer": "Rosa Luxemburg and Karl Liebknecht",
+          "a": "Rosa Luxemburg and Karl Liebknecht",
+          "explanation": "Led by Karl Liebknecht and Rosa Luxemburg, the Spartacist Communist uprising mobilized over one hundred thousand armed workers in Berlin, seizing railway junctions, newspaper offices, and government buildings in an attempt to overthrow Ebert and establish a Soviet-style workers' council dictatorship."
         },
         {
+          "stage": 1,
           "question": "What was the political movement led by Rosa Luxemburg and Karl Liebknecht that staged the January 1919 uprising in Berlin?",
+          "q": "What was the political movement led by Rosa Luxemburg and Karl Liebknecht that staged the January 1919 uprising in Berlin?",
           "options": [
-            "The communist Spartacist League",
             "The Social Democratic Party",
             "The Centre Party",
+            "The communist Spartacist League",
             "The German Nationalist Party"
           ],
           "answer": "The communist Spartacist League",
-          "explanation": "In January 1919, the communist Spartacist League, led by Rosa Luxemburg and Karl Liebknecht, attempted to seize power in Berlin.",
-          "q": "What was the political movement led by Rosa Luxemburg and Karl Liebknecht that staged the January 1919 uprising in Berlin?",
-          "a": "The communist Spartacist League"
+          "a": "The communist Spartacist League",
+          "explanation": "In January 1919, the communist Spartacist League, led by Rosa Luxemburg and Karl Liebknecht, attempted to seize power in Berlin."
         },
         {
-          "question": "In what month and year did the Spartacist Uprising take place?",
-          "options": [
-            "January 1919",
-            "March 1920",
-            "January 1923",
-            "November 1918"
-          ],
-          "answer": 0
-        },
-        {
-          "question": "Who did Chancellor Ebert use to violently crush the Spartacist Uprising?",
-          "options": [
-            "The regular army (Reichswehr)",
-            "The French army",
-            "The Freikorps",
-            "The SA (Sturmabteilung)"
-          ],
-          "answer": 2
-        },
-        {
+          "stage": 1,
           "question": "Who were the Freikorps deployed by the government to crush left-wing uprisings?",
+          "q": "Who were the Freikorps deployed by the government to crush left-wing uprisings?",
           "options": [
-            "Volunteer units of demobilized imperial soldiers",
             "British and French occupation troops",
+            "Volunteer units of demobilized imperial soldiers",
             "Communist trade union factory workers",
             "Armed police officers from Berlin"
           ],
           "answer": "Volunteer units of demobilized imperial soldiers",
-          "explanation": "The Freikorps were volunteer paramilitary units composed of demobilized First World War soldiers.",
-          "q": "Who were the Freikorps deployed by the government to crush left-wing uprisings?",
-          "a": "Volunteer units of demobilized imperial soldiers"
+          "a": "Volunteer units of demobilized imperial soldiers",
+          "explanation": "The Freikorps were volunteer paramilitary units composed of demobilized First World War soldiers."
         },
         {
+          "stage": 2,
+          "question": "On what exact date was the Treaty of Versailles signed?",
+          "q": "On what exact date was the Treaty of Versailles signed?",
+          "options": [
+            "28 June 1919",
+            "11 November 1918",
+            "9 November 1918",
+            "28 June 1914"
+          ],
+          "answer": "28 June 1919",
+          "a": "28 June 1919",
+          "explanation": "On 28 June 1919, German delegates were forced to sign the Treaty of Versailles under threat of immediate Allied invasion."
+        },
+        {
+          "stage": 2,
+          "question": "What was Article 231 of the Treaty of Versailles?",
+          "q": "What was Article 231 of the Treaty of Versailles?",
+          "options": [
+            "The clause limiting the German army to 100,000 men",
+            "The clause removing all of Germany's overseas colonies",
+            "The clause forcing Germany to pay reparations",
+            "The War Guilt Clause, forcing Germany to accept total blame for the war"
+          ],
+          "answer": "The War Guilt Clause, forcing Germany to accept total blame for the war",
+          "a": "The War Guilt Clause, forcing Germany to accept total blame for the war",
+          "explanation": "Denounced across the political spectrum as a humiliating diktat, the treaty enforced the punitive Article 231 War Guilt clause, requiring Germany to accept sole moral responsibility for the war and justifying astronomical £6.6 billion reparations payments to Allied powers."
+        },
+        {
+          "stage": 2,
+          "question": "What German term was used to describe the Treaty of Versailles, meaning a 'dictated peace'?",
+          "q": "What German term was used to describe the Treaty of Versailles, meaning a 'dictated peace'?",
+          "options": [
+            "Freikorps",
+            "Putsch",
+            "Diktat",
+            "Dolchstoß"
+          ],
+          "answer": "Diktat",
+          "a": "Diktat",
+          "explanation": "Denounced across the political spectrum as a humiliating diktat, the treaty enforced the punitive Article 231 War Guilt clause, requiring Germany to accept sole moral responsibility for the war and justifying astronomical £6.6 billion reparations payments to Allied powers."
+        },
+        {
+          "stage": 2,
+          "question": "Why did French and Belgian troops invade the Ruhr in January 1923?",
+          "q": "Why did French and Belgian troops invade the Ruhr in January 1923?",
+          "options": [
+            "To steal German weapons stored there",
+            "Because Germany had failed to pay its scheduled reparations",
+            "To stop a communist uprising in the region",
+            "To force Germany to sign the Treaty of Versailles"
+          ],
+          "answer": "Because Germany had failed to pay its scheduled reparations",
+          "a": "Because Germany had failed to pay its scheduled reparations",
+          "explanation": "Denounced across the political spectrum as a humiliating diktat, the treaty enforced the punitive Article 231 War Guilt clause, requiring Germany to accept sole moral responsibility for the war and justifying astronomical £6.6 billion reparations payments to Allied powers."
+        },
+        {
+          "stage": 3,
+          "question": "Who did Chancellor Ebert use to violently crush the Spartacist Uprising?",
+          "q": "Who did Chancellor Ebert use to violently crush the Spartacist Uprising?",
+          "options": [
+            "The Freikorps",
+            "The regular army (Reichswehr)",
+            "The French army",
+            "The SA (Sturmabteilung)"
+          ],
+          "answer": "The Freikorps",
+          "a": "The Freikorps",
+          "explanation": "In March 1920, the government faced a dangerous insurrection from the extreme right when it attempted to disband the Freikorps under Versailles treaty obligations."
+        },
+        {
+          "stage": 3,
           "question": "In what month and year did the Kapp Putsch take place?",
+          "q": "In what month and year did the Kapp Putsch take place?",
           "options": [
             "November 1923",
             "January 1919",
             "June 1919",
             "March 1920"
           ],
-          "answer": 3
+          "answer": "March 1920",
+          "a": "March 1920",
+          "explanation": "In March 1920, the government faced a dangerous insurrection from the extreme right when it attempted to disband the Freikorps under Versailles treaty obligations."
         },
         {
-          "question": "Why did the Kapp Putsch begin?",
-          "options": [
-            "The government tried to increase the size of the army",
-            "The government tried to disband Freikorps units to comply with the Treaty of Versailles limits",
-            "The communists attempted to seize control of Berlin again",
-            "The French invaded the Ruhr"
-          ],
-          "answer": 1
-        },
-        {
+          "stage": 3,
           "question": "What famous phrase did General von Seeckt declare when the government ordered the army to fire on the Kapp Putsch rebels?",
+          "q": "What famous phrase did General von Seeckt declare when the government ordered the army to fire on the Kapp Putsch rebels?",
           "options": [
-            "'Reichswehr does not fire upon Reichswehr'",
             "'The army obeys only the Kaiser'",
             "'We surrender to the workers' councils'",
+            "'Reichswehr does not fire upon Reichswehr'",
             "'Berlin belongs to the Freikorps'"
           ],
           "answer": "'Reichswehr does not fire upon Reichswehr'",
-          "explanation": "General Hans von Seeckt flatly refused Ebert's orders to suppress the putsch, declaring: 'Reichswehr does not fire upon Reichswehr.'",
-          "q": "What famous phrase did General von Seeckt declare when the government ordered the army to fire on the Kapp Putsch rebels?",
-          "a": "'Reichswehr does not fire upon Reichswehr'"
+          "a": "'Reichswehr does not fire upon Reichswehr'",
+          "explanation": "General Hans von Seeckt flatly refused Ebert's orders to suppress the putsch, declaring: 'Reichswehr does not fire upon Reichswehr.'"
         },
         {
+          "stage": 3,
           "question": "How did the Weimar government successfully defeat the Kapp Putsch?",
+          "q": "How did the Weimar government successfully defeat the Kapp Putsch?",
           "options": [
             "They asked the French army for help",
             "They called on the workers of Berlin to launch a General Strike",
             "They ordered the Freikorps to attack the rebels",
             "They surrendered to Wolfgang Kapp"
           ],
-          "answer": 1
+          "answer": "They called on the workers of Berlin to launch a General Strike",
+          "a": "They called on the workers of Berlin to launch a General Strike",
+          "explanation": "The republic was rescued not by the military, but by a massive nationwide Berlin general strike called by trade unions, which paralyzed gas, water, and transport services, causing the putsch to collapse within four days."
         },
         {
-          "question": "Why did French and Belgian troops invade the Ruhr in January 1923?",
+          "stage": 4,
+          "question": "In what month and year did the Spartacist Uprising take place?",
+          "q": "In what month and year did the Spartacist Uprising take place?",
           "options": [
-            "To steal German weapons stored there",
-            "To stop a communist uprising in the region",
-            "To force Germany to sign the Treaty of Versailles",
-            "Because Germany had failed to pay its scheduled reparations"
+            "January 1919",
+            "March 1920",
+            "January 1923",
+            "November 1918"
           ],
-          "answer": 3
+          "answer": "January 1919",
+          "a": "January 1919",
+          "explanation": "Over 350 political assassinations occurred between 1919 and 1922, with right-wing judges handing down notoriously lenient sentences to nationalist killers."
         },
         {
-          "question": "During the 1923 French invasion of the Ruhr, what non-violent tactic did the German government order workers to use?",
+          "stage": 4,
+          "question": "Which right-wing nationalist secret terror group orchestrated the assassinations of republican politicians between 1921 and 1922?",
+          "q": "Which right-wing nationalist secret terror group orchestrated the assassinations of republican politicians between 1921 and 1922?",
           "options": [
-            "Passive Resistance",
+            "The Spartacist League",
+            "The Red Orchestra",
+            "The Edelweiss Pirates",
+            "Organisation Consul"
+          ],
+          "answer": "Organisation Consul",
+          "a": "Organisation Consul",
+          "explanation": "Defeated in open coups, former Freikorps extremists formed Organisation Consul to murder prominent democratic leaders dubbed 'November Criminals'."
+        },
+        {
+          "stage": 4,
+          "question": "Which Jewish German Foreign Minister was murdered with machine guns and hand grenades in Berlin in June 1922?",
+          "q": "Which Jewish German Foreign Minister was murdered with machine guns and hand grenades in Berlin in June 1922?",
+          "options": [
+            "Gustav Stresemann",
+            "Philipp Scheidemann",
+            "Walther Rathenau",
+            "Heinrich Brüning"
+          ],
+          "answer": "Walther Rathenau",
+          "a": "Walther Rathenau",
+          "explanation": "Anti-Semitic nationalists from Organisation Consul assassinated Foreign Minister Walther Rathenau in June 1922 for pursuing diplomacy with Western powers."
+        },
+        {
+          "stage": 4,
+          "question": "Over how many political assassinations took place in Weimar Germany between 1919 and 1922?",
+          "q": "Over how many political assassinations took place in Weimar Germany between 1919 and 1922?",
+          "options": [
+            "Exactly 12 political assassinations",
+            "Over 350 political assassinations",
+            "Around 45 political assassinations",
+            "Over 5,000 political assassinations"
+          ],
+          "answer": "Over 350 political assassinations",
+          "a": "Over 350 political assassinations",
+          "explanation": "Over 350 political murders occurred between 1919 and 1922, with sympathetic right-wing judges handing down lenient sentences to nationalist killers."
+        },
+        {
+          "stage": 5,
+          "question": "How much was Germany ordered to pay in reparations in 1921?",
+          "q": "How much was Germany ordered to pay in reparations in 1921?",
+          "options": [
+            "£6.6 billion",
+            "£132 million",
+            "£2.2 billion",
+            "£10.5 billion"
+          ],
+          "answer": "£6.6 billion",
+          "a": "£6.6 billion",
+          "explanation": "Chancellor Wilhelm Cuno ordered a policy of passive strike resistance, instructing coal miners and railway workers to refuse cooperation while the German government paid their lost wages by printing billions of paper marks."
+        },
+        {
+          "stage": 5,
+          "question": "During the 1923 French invasion of the Ruhr, what non-violent tactic did the German government order workers to use?",
+          "q": "During the 1923 French invasion of the Ruhr, what non-violent tactic did the German government order workers to use?",
+          "options": [
             "Writing letters of protest to the League of Nations",
             "Sabotaging the railways",
-            "A hunger strike"
+            "A hunger strike",
+            "Passive Resistance"
           ],
-          "answer": 0
+          "answer": "Passive Resistance",
+          "a": "Passive Resistance",
+          "explanation": "Chancellor Wilhelm Cuno ordered a policy of passive strike resistance, instructing coal miners and railway workers to refuse cooperation while the German government paid their lost wages by printing billions of paper marks."
         },
         {
-          "question": "Why did the 1923 French occupation of the Ruhr directly lead to hyperinflation?",
-          "options": [
-            "The workers demanded higher wages",
-            "The French stole all of Germany's gold reserves",
-            "The government printed massive amounts of unbacked paper money to pay the striking workers",
-            "The price of coal skyrocketed globally"
-          ],
-          "answer": 2
-        },
-        {
+          "stage": 5,
           "question": "By November 1923, how much did a single loaf of bread cost in Germany?",
+          "q": "By November 1923, how much did a single loaf of bread cost in Germany?",
           "options": [
             "201 marks",
-            "201 billion marks",
             "201 thousand marks",
+            "201 billion marks",
             "201 million marks"
           ],
-          "answer": 1
+          "answer": "201 billion marks",
+          "a": "201 billion marks",
+          "explanation": "Chancellor Wilhelm Cuno ordered a policy of passive strike resistance, instructing coal miners and railway workers to refuse cooperation while the German government paid their lost wages by printing billions of paper marks."
         },
         {
+          "stage": 5,
           "question": "Which specific social class was hit the hardest by hyperinflation, and why?",
+          "q": "Which specific social class was hit the hardest by hyperinflation, and why?",
           "options": [
             "The upper classes, because their land was confiscated",
+            "The middle classes, because their life savings and fixed pensions became completely worthless",
             "The working classes, because they lost their jobs",
-            "Farmers, because nobody could afford to buy their food",
-            "The middle classes, because their life savings and fixed pensions became completely worthless"
+            "Farmers, because nobody could afford to buy their food"
           ],
-          "answer": 3
-        },
-        {
-          "question": "Who benefited from the 1923 hyperinflation crisis by clearing their debts with worthless marks?",
-          "options": [
-            "Debtors and industrial borrowers",
-            "Pensioners on fixed incomes",
-            "Civil servants on state salaries",
-            "Middle-class families with cash savings"
-          ],
-          "answer": "Debtors and industrial borrowers",
-          "explanation": "While hyperinflation wiped out middle-class savings, debtors and industrialists cleared substantial debts with worthless paper marks.",
-          "q": "Who benefited from the 1923 hyperinflation crisis by clearing their debts with worthless marks?",
-          "a": "Debtors and industrial borrowers"
+          "answer": "The middle classes, because their life savings and fixed pensions became completely worthless",
+          "a": "The middle classes, because their life savings and fixed pensions became completely worthless",
+          "explanation": "Citizens carried wheelbarrows of cash to purchase basic loaves of bread, while middle-class bank savings, pensions, and insurance policies were completely wiped out."
         }
       ],
       "vocab_cloze_text": "The Weimar Republic faced immediate outrage when they signed the Treaty of Versailles, viewed by many Germans as a harsh, dictated peace or [Diktat], which forced them to pay massive financial [Reparations]. Threats came from the extreme left, such as the communist [Spartacist League] uprising, and the extreme right, when nationalist ex-soldiers known as the [Freikorps] attempted to overthrow the government in the Kapp [Putsch]. In 1923, when Germany defaulted on payments, French troops invaded the Ruhr; the government ordered workers to strike in [Passive Resistance], and printed more money to pay them, which directly caused the catastrophic collapse of the currency known as [Hyperinflation].",
@@ -2792,8 +2976,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "In January 1919, the left-wing <strong>Spartacist Communist uprising</strong> was brutally crushed through government <strong>Freikorps paramilitary deployment</strong>, during which leader <strong>Rosa Luxemburg murdered</strong> extinguished the immediate revolutionary threat.",
-          "title": "Why did the government rely on right-wing paramilitaries to crush the Spartacists?",
-          "dates": "Jan 1919"
+          "title": "The Spartacist Uprising",
+          "dates": "Jan 1919",
+          "question": "Why did the government rely on right-wing paramilitaries to crush the Spartacists?",
+          "questionHeading": "Why did the government rely on right-wing paramilitaries to crush the Spartacists?",
+          "prose_hash": "8c805a9eb0"
         },
         {
           "step": 2,
@@ -2821,8 +3008,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Nationalist resentment exploded over the treaty’s <strong>Article 231 War Guilt</strong> clause and crippling <strong>£6.6 billion reparations</strong>, heavily fueling the right-wing <strong>'Dolchstoss' backstab myth</strong> against democratic politicians.",
-          "title": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
-          "dates": "28 Jun 1919"
+          "title": "The Treaty of Versailles (The Diktat)",
+          "dates": "28 Jun 1919",
+          "question": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
+          "questionHeading": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
+          "prose_hash": "479f91a39f"
         },
         {
           "step": 3,
@@ -2850,8 +3040,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "When right-wing rebels launched the <strong>Wolfgang Kapp putsch</strong> and army chief <strong>General von Seeckt refusal</strong> left the government defenseless, the putsch was paralyzed by a massive <strong>Berlin general strike</strong>.",
-          "title": "Why did the army refuse to defend Ebert against the right-wing putsch?",
-          "dates": "Mar 1920"
+          "title": "The Kapp Putsch",
+          "dates": "Mar 1920",
+          "question": "Why did the army refuse to defend Ebert against the right-wing putsch?",
+          "questionHeading": "Why did the army refuse to defend Ebert against the right-wing putsch?",
+          "prose_hash": "5f49164e27"
         },
         {
           "step": 4,
@@ -2879,8 +3072,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Political extremism escalated through <strong>Organisation Consul terror</strong>, as ultranationalist squads ensured <strong>Matthias Erzberger assassinated</strong> and foreign minister <strong>Walther Rathenau murdered</strong> in brazen daylight attacks.",
-          "title": "How did judicial bias protect right-wing nationalist assassins?",
-          "dates": "1921–1922"
+          "title": "Political Assassinations & Judicial Bias",
+          "dates": "1921–1922",
+          "question": "How did judicial bias protect right-wing nationalist assassins?",
+          "questionHeading": "How did judicial bias protect right-wing nationalist assassins?",
+          "prose_hash": "944d345f60"
         },
         {
           "step": 5,
@@ -2908,8 +3104,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "When French forces began the <strong>Ruhr industrial occupation</strong>, the German government called for <strong>passive strike resistance</strong> and printed paper currency to fund striking workers, triggering catastrophic <strong>hyperinflation currency collapse</strong>.",
-          "title": "How did passive resistance in the Ruhr trigger runaway hyperinflation?",
-          "dates": "Jan–Nov 1923"
+          "title": "Occupation of the Ruhr & Hyperinflation",
+          "dates": "Jan–Nov 1923",
+          "question": "How did passive resistance in the Ruhr trigger runaway hyperinflation?",
+          "questionHeading": "How did passive resistance in the Ruhr trigger runaway hyperinflation?",
+          "prose_hash": "47c775b133"
         }
       ],
       "causal_domino_spine": {
@@ -2926,7 +3125,8 @@ window.unitData = {
             "trigger": "The revolutionary communist Spartacist League launched an armed general uprising in Berlin to overthrow Ebert and establish a Soviet workers’ republic.",
             "desc": "The revolutionary communist Spartacist League launched an armed general uprising in Berlin to overthrow Ebert and establish a Soviet workers’ republic.",
             "connective": "Ebert deployed right-wing Freikorps paramilitaries who crushed the rebellion brutally, creating an enduring rift that permanently fractured the German political left.",
-            "question": "Why did the government rely on right-wing paramilitaries to crush the Spartacists?"
+            "question": "Why did the government rely on right-wing paramilitaries to crush the Spartacists?",
+            "prose_hash": "8c805a9eb0"
           },
           {
             "step": 2,
@@ -2938,7 +3138,8 @@ window.unitData = {
             "trigger": "Allied leaders forced Germany under threat of renewed invasion to sign the Versailles Treaty, imposing Article 231 War Guilt, £6.6bn reparations, and severe land loss.",
             "desc": "Allied leaders forced Germany under threat of renewed invasion to sign the Versailles Treaty, imposing Article 231 War Guilt, £6.6bn reparations, and severe land loss.",
             "connective": "Nationalists branded Weimar politicians the \"November Criminals\" and propagated the Dolchstoßlegende, permanently undermining public faith in democracy.",
-            "question": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?"
+            "question": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
+            "prose_hash": "479f91a39f"
           },
           {
             "step": 3,
@@ -2950,7 +3151,8 @@ window.unitData = {
             "trigger": "When the government ordered the disbandment of Freikorps units to meet Versailles troop limits, 5,000 armed troops marched on Berlin to seize power.",
             "desc": "When the government ordered the disbandment of Freikorps units to meet Versailles troop limits, 5,000 armed troops marched on Berlin to seize power.",
             "connective": "The regular army refused to fire on the rebels, forcing Ebert to flee until a nationwide general strike by trade unionists paralyzed the capital and defeated the putsch.",
-            "question": "Why did the army refuse to defend Ebert against the right-wing putsch?"
+            "question": "Why did the army refuse to defend Ebert against the right-wing putsch?",
+            "prose_hash": "5f49164e27"
           },
           {
             "step": 4,
@@ -2962,7 +3164,8 @@ window.unitData = {
             "trigger": "Right-wing death squads assassinated prominent republican figures, including Matthias Erzberger (1921) and Jewish Foreign Minister Walter Rathenau (1922).",
             "desc": "Right-wing death squads assassinated prominent republican figures, including Matthias Erzberger (1921) and Jewish Foreign Minister Walter Rathenau (1922).",
             "connective": "Weimar judges exhibited blatant political bias, granting light sentences to right-wing murderers while severely punishing left-wing radicals.",
-            "question": "How did judicial bias protect right-wing nationalist assassins?"
+            "question": "How did judicial bias protect right-wing nationalist assassins?",
+            "prose_hash": "944d345f60"
           },
           {
             "step": 5,
@@ -2974,7 +3177,8 @@ window.unitData = {
             "trigger": "French and Belgian troops invaded the Ruhr following a reparations default; the government declared passive resistance and printed unbacked currency to pay strikers.",
             "desc": "French and Belgian troops invaded the Ruhr following a reparations default; the government declared passive resistance and printed unbacked currency to pay strikers.",
             "connective": "Triggered catastrophic hyperinflation where the mark collapsed to 4.2 trillion per dollar, wiping out middle-class savings and creating enduring anti-republican bitterness.",
-            "question": "How did passive resistance in the Ruhr trigger runaway hyperinflation?"
+            "question": "How did passive resistance in the Ruhr trigger runaway hyperinflation?",
+            "prose_hash": "47c775b133"
           }
         ]
       },
@@ -3199,48 +3403,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What was the Weimar Constitution?",
-            "answer": "The set of rules for how Germany would be governed as a democratic republic."
+            "stage": 1,
+            "question": "Under the 1919 Treaty of Versailles, what was the maximum number of soldiers allowed in the German army?",
+            "answer": "100,000 men",
+            "explanation": "In January 1919, radical left-wing revolutionaries mounted a violent armed assault against the new republican government."
           },
           {
-            "question": "What was Proportional Representation (PR)?",
-            "answer": "An electoral system where the percentage of votes equals the percentage of seats in the Reichstag."
+            "stage": 2,
+            "question": "On what exact date was the Treaty of Versailles signed?",
+            "answer": "28 June 1919",
+            "explanation": "On 28 June 1919, German delegates were forced to sign the Treaty of Versailles under threat of immediate Allied invasion."
           },
           {
-            "question": "Why was Proportional Representation a weakness?",
-            "answer": "It led to dozens of tiny parties and weak coalition governments."
+            "stage": 3,
+            "question": "Who did Chancellor Ebert use to violently crush the Spartacist Uprising?",
+            "answer": "The Freikorps",
+            "explanation": "In March 1920, the government faced a dangerous insurrection from the extreme right when it attempted to disband the Freikorps under Versailles treaty obligations."
           },
           {
-            "question": "What was Article 48?",
-            "answer": "It allowed the President to make laws without the Reichstag in an emergency."
+            "stage": 4,
+            "question": "In what month and year did the Spartacist Uprising take place?",
+            "answer": "January 1919",
+            "explanation": "Over 350 political assassinations occurred between 1919 and 1922, with right-wing judges handing down notoriously lenient sentences to nationalist killers."
           },
           {
-            "question": "Who was the first President of the Weimar Republic?",
-            "answer": "Friedrich Ebert."
+            "stage": 5,
+            "question": "How much was Germany ordered to pay in reparations in 1921?",
+            "answer": "£6.6 billion",
+            "explanation": "Chancellor Wilhelm Cuno ordered a policy of passive strike resistance, instructing coal miners and railway workers to refuse cooperation while the German government paid their lost wages by printing billions of paper marks."
           },
           {
-            "question": "What was the 'stab in the back' myth?",
-            "answer": "The belief that Germany was betrayed by politicians, not defeated in battle."
+            "stage": 1,
+            "question": "Who were the two main leaders of the Spartacist League?",
+            "answer": "Rosa Luxemburg and Karl Liebknecht",
+            "explanation": "Led by Karl Liebknecht and Rosa Luxemburg, the Spartacist Communist uprising mobilized over one hundred thousand armed workers in Berlin, seizing railway junctions, newspaper offices, and government buildings in an attempt to overthrow Ebert and establish a Soviet-style workers' council dictatorship."
           },
           {
-            "question": "Who were the 'November Criminals'?",
-            "answer": "The politicians who signed the Armistice."
+            "stage": 2,
+            "question": "What was Article 231 of the Treaty of Versailles?",
+            "answer": "The War Guilt Clause, forcing Germany to accept total blame for the war",
+            "explanation": "Denounced across the political spectrum as a humiliating diktat, the treaty enforced the punitive Article 231 War Guilt clause, requiring Germany to accept sole moral responsibility for the war and justifying astronomical £6.6 billion reparations payments to Allied powers."
           },
           {
-            "question": "When did WW1 end?",
-            "answer": "1918."
+            "stage": 3,
+            "question": "In what month and year did the Kapp Putsch take place?",
+            "answer": "March 1920",
+            "explanation": "In March 1920, the government faced a dangerous insurrection from the extreme right when it attempted to disband the Freikorps under Versailles treaty obligations."
           },
           {
-            "question": "What is an 'armistice'?",
-            "answer": "An agreement to stop fighting."
+            "stage": 4,
+            "question": "Which right-wing nationalist secret terror group orchestrated the assassinations of republican politicians between 1921 and 1922?",
+            "answer": "Organisation Consul",
+            "explanation": "Defeated in open coups, former Freikorps extremists formed Organisation Consul to murder prominent democratic leaders dubbed 'November Criminals'."
           },
           {
-            "question": "What does 'inflation' mean?",
-            "answer": "Prices rising rapidly."
+            "stage": 5,
+            "question": "During the 1923 French invasion of the Ruhr, what non-violent tactic did the German government order workers to use?",
+            "answer": "Passive Resistance",
+            "explanation": "Chancellor Wilhelm Cuno ordered a policy of passive strike resistance, instructing coal miners and railway workers to refuse cooperation while the German government paid their lost wages by printing billions of paper marks."
           }
         ]
       },
@@ -3329,8 +3552,8 @@ window.unitData = {
         {
           "title": "Burning the Trillion-Mark Notes: Stresemann and the Miracle of the Rentenmark (Nov 1923)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> In August 1923, at the catastrophic height of the national inflation crisis, moderate statesman **Gustav Stresemann chancellor** formed a broad \"Great Coalition\" government. Stresemann acted with decisive political courage, calling off passive resistance in the occupied Ruhr to halt ruinous state compensation spending and balancing the national budget by slashing bloated civil service payrolls and cutting government expenditure across all ministries.\n\n<span class=\"para-ref\">[1.2]</span> In November 1923, Stresemann introduced the revolutionary **Rentenmark land-backed currency**, a strictly limited temporary currency mortgaged on Germany's collective industrial and agricultural land assets. The German public accepted the new notes with confidence, and when the permanent Reichsbank **Mark stabilized (1924)** under the new Reichsmark, hyperinflation was conquered, establishing the monetary bedrock for a dramatic five-year economic recovery.",
-          "content": "<span class=\"para-ref\">[1.1]</span> In August 1923, at the catastrophic height of the national inflation crisis, moderate statesman **Gustav Stresemann chancellor** formed a broad \"Great Coalition\" government. Stresemann acted with decisive political courage, calling off passive resistance in the occupied Ruhr to halt ruinous state compensation spending and balancing the national budget by slashing bloated civil service payrolls and cutting government expenditure across all ministries.\n\n<span class=\"para-ref\">[1.2]</span> In November 1923, Stresemann introduced the revolutionary **Rentenmark land-backed currency**, a strictly limited temporary currency mortgaged on Germany's collective industrial and agricultural land assets. The German public accepted the new notes with confidence, and when the permanent Reichsbank **Mark stabilized (1924)** under the new Reichsmark, hyperinflation was conquered, establishing the monetary bedrock for a dramatic five-year economic recovery.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In August 1923, at the height of the inflation crisis, moderate statesman **Gustav Stresemann** became **Chancellor** of a broad \"Great Coalition\". Acting boldly, Stresemann called off passive resistance in the occupied Ruhr to stop ruinous state payouts. He also cut civil service jobs and government spending across ministries to balance the budget.\n\n<span class=\"para-ref\">[1.2]</span> In November 1923, Stresemann introduced the temporary **Rentenmark**, a strictly limited currency backed by German agricultural and industrial land values. Public trust returned at once, and in **1924** the Reichsbank stabilized the currency under the permanent **Reichsmark**, ending hyperinflation and launching five years of recovery.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In August 1923, at the height of the inflation crisis, moderate statesman **Gustav Stresemann** became **Chancellor** of a broad \"Great Coalition\". Acting boldly, Stresemann called off passive resistance in the occupied Ruhr to stop ruinous state payouts. He also cut civil service jobs and government spending across ministries to balance the budget.\n\n<span class=\"para-ref\">[1.2]</span> In November 1923, Stresemann introduced the temporary **Rentenmark**, a strictly limited currency backed by German agricultural and industrial land values. Public trust returned at once, and in **1924** the Reichsbank stabilized the currency under the permanent **Reichsmark**, ending hyperinflation and launching five years of recovery.",
           "sources": [
             {
               "id": "weimar_l3_source_rentenmark",
@@ -3390,8 +3613,8 @@ window.unitData = {
         {
           "title": "Wall Street Gold: The Dawes Plan and the Influx of American Loans (1924)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> To resolve the paralyzed international reparations dispute and stabilize the German economy, Stresemann negotiated the **1924 Dawes Plan** with the Western Allies, chaired by American financier Charles Dawes. The agreement provided crucial fiscal breathing room by establishing a **reparations annual restructuring**, scaling down initial German payments to one billion gold marks annually and pegging future installments directly to Germany's economic performance.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the agreement unlocked massive transatlantic financial aid, delivering **800m gold-mark loans** from Wall Street investment banks directly to Germany. This influx of American capital financed extensive modernisation of factories, municipal railways, and social housing estates. However, it created a dangerous financial dependency, leaving the German economy perilously tethered to the stability of the United States stock market.",
-          "content": "<span class=\"para-ref\">[2.1]</span> To resolve the paralyzed international reparations dispute and stabilize the German economy, Stresemann negotiated the **1924 Dawes Plan** with the Western Allies, chaired by American financier Charles Dawes. The agreement provided crucial fiscal breathing room by establishing a **reparations annual restructuring**, scaling down initial German payments to one billion gold marks annually and pegging future installments directly to Germany's economic performance.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the agreement unlocked massive transatlantic financial aid, delivering **800m gold-mark loans** from Wall Street investment banks directly to Germany. This influx of American capital financed extensive modernisation of factories, municipal railways, and social housing estates. However, it created a dangerous financial dependency, leaving the German economy perilously tethered to the stability of the United States stock market.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Following a policy of *Erfüllungspolitik* (fulfillment), Stresemann next agreed the **1924 Dawes Plan** with Allied banker Charles Dawes (leaving final bill cuts to the later Young Plan). Dawes restructured annual reparations down to one billion gold marks at first, rising later only in step with German industrial output.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the deal unlocked an influx of American loans totaling **800 million gold marks** (**800m**) from Wall Street banks. American capital modernised German factories, municipal railways, and public housing. Yet it also created a risky dependency, tying German prosperity closely to the US stock market.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Following a policy of *Erfüllungspolitik* (fulfillment), Stresemann next agreed the **1924 Dawes Plan** with Allied banker Charles Dawes (leaving final bill cuts to the later Young Plan). Dawes restructured annual reparations down to one billion gold marks at first, rising later only in step with German industrial output.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the deal unlocked an influx of American loans totaling **800 million gold marks** (**800m**) from Wall Street banks. American capital modernised German factories, municipal railways, and public housing. Yet it also created a risky dependency, tying German prosperity closely to the US stock market.",
           "sources": [
             {
               "id": "weimar_l3_source_b",
@@ -3449,8 +3672,8 @@ window.unitData = {
         {
           "title": "The Spirit of Reconciliation: The Locarno Treaties and Demilitarising the Rhineland (1925)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> Stresemann pursued a pragmatic foreign policy of diplomatic reconciliation known as *Verständigungspolitik*. In October 1925, he signed the landmark **Locarno Treaties (1925)** alongside Britain, France, Belgium, and Italy. In this historic pact, Germany voluntarily reaffirmed Versailles borders, meaning **Western borders recognized** as permanent, including the formal renunciation of claims to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France pledged to avoid future military occupations like the Ruhr, while permanent **Rhineland demilitarization affirmed** by all signatory powers to guarantee European collective security. The treaty brought a new \"Spirit of Locarno\", calming European diplomatic hostilities, reassuring Western democracies of Germany's peaceful intentions, and paving the way for Germany's return to the international diplomatic community.",
-          "content": "<span class=\"para-ref\">[3.1]</span> Stresemann pursued a pragmatic foreign policy of diplomatic reconciliation known as *Verständigungspolitik*. In October 1925, he signed the landmark **Locarno Treaties (1925)** alongside Britain, France, Belgium, and Italy. In this historic pact, Germany voluntarily reaffirmed Versailles borders, meaning **Western borders recognized** as permanent, including the formal renunciation of claims to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France pledged to avoid future military occupations like the Ruhr, while permanent **Rhineland demilitarization affirmed** by all signatory powers to guarantee European collective security. The treaty brought a new \"Spirit of Locarno\", calming European diplomatic hostilities, reassuring Western democracies of Germany's peaceful intentions, and paving the way for Germany's return to the international diplomatic community.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Seeking peaceful reconciliation abroad, Stresemann signed the **Locarno Pact** (**Locarno Treaties**) in October **1925** alongside Britain, France, Belgium, and Italy. Unlike Versailles, Germany voluntarily recognized its western borders as permanent, formally giving up any claim to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France promised never to occupy the Ruhr again, while all powers affirmed permanent **Rhineland demilitarization** to protect European peace. This warm \"Spirit of Locarno\" calmed post-war tension, reassured Western democracies of Germany's peaceful aims, and paved the way for its return to world diplomacy.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Seeking peaceful reconciliation abroad, Stresemann signed the **Locarno Pact** (**Locarno Treaties**) in October **1925** alongside Britain, France, Belgium, and Italy. Unlike Versailles, Germany voluntarily recognized its western borders as permanent, formally giving up any claim to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France promised never to occupy the Ruhr again, while all powers affirmed permanent **Rhineland demilitarization** to protect European peace. This warm \"Spirit of Locarno\" calmed post-war tension, reassured Western democracies of Germany's peaceful aims, and paved the way for its return to world diplomacy.",
           "sources": [
             {
               "id": "weimar_l3_source_e",
@@ -3506,8 +3729,8 @@ window.unitData = {
         {
           "title": "Return to the World Stage: Germany Joins the League of Nations (Sep 1926)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> A crowning diplomatic triumph occurred in September 1926 when Stresemann successfully secured Germany's official **League of Nations admission**, decisively overturning the punitive international ostracism originally imposed at Versailles. Germany was not merely admitted as an ordinary member, but was immediately granted a prestigious permanent **Geneva Council seat** alongside Britain and France, restoring Germany's equal voting status and formal veto power in high-level international diplomacy.\n\n<span class=\"para-ref\">[4.2]</span> This momentous diplomatic event represented vital **great power rehabilitation** for the young democratic republic, allowing Stresemann to advocate peacefully for German minorities across Eastern Europe and negotiate the early withdrawal of Allied occupation troops from the Rhineland. For his transformative international statesmanship, Stresemann was awarded the Nobel Peace Prize alongside French foreign minister Aristide Briand in December 1926.",
-          "content": "<span class=\"para-ref\">[4.1]</span> A crowning diplomatic triumph occurred in September 1926 when Stresemann successfully secured Germany's official **League of Nations admission**, decisively overturning the punitive international ostracism originally imposed at Versailles. Germany was not merely admitted as an ordinary member, but was immediately granted a prestigious permanent **Geneva Council seat** alongside Britain and France, restoring Germany's equal voting status and formal veto power in high-level international diplomacy.\n\n<span class=\"para-ref\">[4.2]</span> This momentous diplomatic event represented vital **great power rehabilitation** for the young democratic republic, allowing Stresemann to advocate peacefully for German minorities across Eastern Europe and negotiate the early withdrawal of Allied occupation troops from the Rhineland. For his transformative international statesmanship, Stresemann was awarded the Nobel Peace Prize alongside French foreign minister Aristide Briand in December 1926.",
+          "text": "<span class=\"para-ref\">[4.1]</span> A major diplomatic triumph followed in September **1926**, when Stresemann won Germany's official **League of Nations admission**, ending post-war isolation. Better still, Germany immediately gained a permanent seat on the **League of Nations Council** in Geneva alongside Britain and France, restoring equal voting power as a great power.\n\n<span class=\"para-ref\">[4.2]</span> Using this restored standing, Stresemann spoke up peacefully for German minorities in Eastern Europe, negotiated early Allied troop withdrawals from the Rhineland, and laid groundwork for the **Young Plan**. In December 1926, he shared the **Nobel Peace Prize** with French Foreign Minister Aristide Briand.",
+          "content": "<span class=\"para-ref\">[4.1]</span> A major diplomatic triumph followed in September **1926**, when Stresemann won Germany's official **League of Nations admission**, ending post-war isolation. Better still, Germany immediately gained a permanent seat on the **League of Nations Council** in Geneva alongside Britain and France, restoring equal voting power as a great power.\n\n<span class=\"para-ref\">[4.2]</span> Using this restored standing, Stresemann spoke up peacefully for German minorities in Eastern Europe, negotiated early Allied troop withdrawals from the Rhineland, and laid groundwork for the **Young Plan**. In December 1926, he shared the **Nobel Peace Prize** with French Foreign Minister Aristide Briand.",
           "sources": [
             {
               "id": "weimar_l3_source_geneva",
@@ -3567,8 +3790,8 @@ window.unitData = {
         {
           "title": "Dancing on a Volcano: The Kellogg-Briand Pact, the Young Plan and Hidden Vulnerabilities (1928–1929)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> In August 1928, Germany proudly signed the **Kellogg-Briand Pact (1928)** alongside sixty-four nations, officially renouncing war as an instrument of national policy. Building on this international goodwill, Stresemann subsequently negotiated the **Young Plan (1929)**, which decisively lowered the total Allied reparations bill from £6.6 billion to £2 billion, securing **reparations reduced (£2bn)** and extending repayment deadlines over fifty-nine years until 1988.\n\n<span class=\"para-ref\">[5.2]</span> Despite these substantial financial concessions, right-wing nationalists led by press baron Alfred Hugenberg and Adolf Hitler bitterly campaigned against the plan, branding it national financial enslavement. When Stresemann died suddenly of a stroke in October 1929, mere weeks before the catastrophic Wall Street Crash, he left a fragile republic dangerously reliant on foreign short-term loans, dancing recklessly on the edge of an economic precipice.",
-          "content": "<span class=\"para-ref\">[5.1]</span> In August 1928, Germany proudly signed the **Kellogg-Briand Pact (1928)** alongside sixty-four nations, officially renouncing war as an instrument of national policy. Building on this international goodwill, Stresemann subsequently negotiated the **Young Plan (1929)**, which decisively lowered the total Allied reparations bill from £6.6 billion to £2 billion, securing **reparations reduced (£2bn)** and extending repayment deadlines over fifty-nine years until 1988.\n\n<span class=\"para-ref\">[5.2]</span> Despite these substantial financial concessions, right-wing nationalists led by press baron Alfred Hugenberg and Adolf Hitler bitterly campaigned against the plan, branding it national financial enslavement. When Stresemann died suddenly of a stroke in October 1929, mere weeks before the catastrophic Wall Street Crash, he left a fragile republic dangerously reliant on foreign short-term loans, dancing recklessly on the edge of an economic precipice.",
+          "text": "<span class=\"para-ref\">[5.1]</span> In August 1928, Germany and sixty-four nations signed the **Kellogg-Briand Pact (1928)**, renouncing war as an instrument of national policy. Building on this goodwill, Stresemann negotiated the **Young Plan (1929)**, reducing total reparations from £6.6 billion to **£2 billion** (£2bn) and spreading payments over fifty-nine years until 1988.\n\n<span class=\"para-ref\">[5.2]</span> Despite these major cuts and lower taxes, right-wing nationalists led by press baron Alfred Hugenberg and Adolf Hitler campaigned fiercely against the plan. Weeks before the October 1929 crash, Stresemann died of a stroke after warning: *\"Germany is dancing on a volcano.\"*",
+          "content": "<span class=\"para-ref\">[5.1]</span> In August 1928, Germany and sixty-four nations signed the **Kellogg-Briand Pact (1928)**, renouncing war as an instrument of national policy. Building on this goodwill, Stresemann negotiated the **Young Plan (1929)**, reducing total reparations from £6.6 billion to **£2 billion** (£2bn) and spreading payments over fifty-nine years until 1988.\n\n<span class=\"para-ref\">[5.2]</span> Despite these major cuts and lower taxes, right-wing nationalists led by press baron Alfred Hugenberg and Adolf Hitler campaigned fiercely against the plan. Weeks before the October 1929 crash, Stresemann died of a stroke after warning: *\"Germany is dancing on a volcano.\"*",
           "sources": [
             {
               "id": "weimar_l3_source_d",
@@ -3626,179 +3849,107 @@ window.unitData = {
       ],
       "quiz": [
         {
+          "stage": 1,
           "question": "Who became Chancellor in August 1923 and is widely credited with saving the Weimar Republic?",
+          "q": "Who became Chancellor in August 1923 and is widely credited with saving the Weimar Republic?",
           "options": [
-            "Gustav Stresemann",
             "Friedrich Ebert",
             "Wolfgang Kapp",
-            "Adolf Hitler"
+            "Adolf Hitler",
+            "Gustav Stresemann"
           ],
-          "answer": 0
+          "answer": "Gustav Stresemann",
+          "a": "Gustav Stresemann",
+          "explanation": "In August 1923, at the catastrophic height of the national inflation crisis, moderate statesman Gustav Stresemann chancellor formed a broad \"Great Coalition\" government."
         },
         {
+          "stage": 1,
           "question": "What was the name of the temporary currency introduced by Stresemann in November 1923?",
+          "q": "What was the name of the temporary currency introduced by Stresemann in November 1923?",
           "options": [
             "The Euro",
             "The Reichsmark",
-            "The Deutschmark",
-            "The Rentenmark"
+            "The Rentenmark",
+            "The Deutschmark"
           ],
-          "answer": 3
+          "answer": "The Rentenmark",
+          "a": "The Rentenmark",
+          "explanation": "In November 1923, Stresemann introduced the revolutionary Rentenmark land-backed currency, a strictly limited temporary currency mortgaged on Germany's collective industrial and agricultural land assets."
         },
         {
+          "stage": 1,
           "question": "What was the Rentenmark tied to in order to restore public confidence in its value?",
+          "q": "What was the Rentenmark tied to in order to restore public confidence in its value?",
           "options": [
             "American gold reserves",
-            "The French Franc",
             "German property / agricultural and industrial land values",
+            "The French Franc",
             "The value of German coal in the Ruhr"
           ],
-          "answer": 2
+          "answer": "German property / agricultural and industrial land values",
+          "a": "German property / agricultural and industrial land values",
+          "explanation": "In November 1923, Stresemann introduced the revolutionary Rentenmark land-backed currency, a strictly limited temporary currency mortgaged on Germany's collective industrial and agricultural land assets."
         },
         {
+          "stage": 1,
           "question": "What permanent, gold-backed currency replaced the temporary one in 1924?",
+          "q": "What permanent, gold-backed currency replaced the temporary one in 1924?",
           "options": [
-            "The Rentenmark",
             "The Reichsmark",
+            "The Rentenmark",
             "The Ostmark",
             "The Deutschmark"
           ],
-          "answer": 1
+          "answer": "The Reichsmark",
+          "a": "The Reichsmark",
+          "explanation": "The German public accepted the new notes with confidence, and when the permanent Reichsbank Mark stabilized (1924) under the new Reichsmark, hyperinflation was conquered, establishing the monetary bedrock for a dramatic five-year economic recovery."
         },
         {
+          "stage": 2,
           "question": "In what year was the Dawes Plan agreed?",
+          "q": "In what year was the Dawes Plan agreed?",
           "options": [
             "1923",
             "1929",
             "1922",
             "1924"
           ],
-          "answer": 3
+          "answer": "1924",
+          "a": "1924",
+          "explanation": "To resolve the paralyzed international reparations dispute and stabilize the German economy, Stresemann negotiated the 1924 Dawes Plan with the Western Allies, chaired by American financier Charles Dawes."
         },
         {
+          "stage": 2,
           "question": "Under the Dawes Plan of 1924, what major financial lifeline did Germany receive from Wall Street?",
+          "q": "Under the Dawes Plan of 1924, what major financial lifeline did Germany receive from Wall Street?",
           "options": [
-            "An influx of American loans totaling 800 million gold marks",
             "Direct ownership of French coal mines in Alsace",
             "The complete cancellation of all war debts",
+            "An influx of American loans totaling 800 million gold marks",
             "A free fleet of merchant steamships"
           ],
           "answer": "An influx of American loans totaling 800 million gold marks",
-          "explanation": "The Dawes Plan arranged an immediate loan of 800 million gold marks from American banks to stabilize the German economy.",
-          "q": "Under the Dawes Plan of 1924, what major financial lifeline did Germany receive from Wall Street?",
-          "a": "An influx of American loans totaling 800 million gold marks"
+          "a": "An influx of American loans totaling 800 million gold marks",
+          "explanation": "The Dawes Plan arranged an immediate loan of 800 million gold marks from American banks to stabilize the German economy."
         },
         {
-          "question": "What was the primary economic danger of the Dawes Plan for the Weimar Republic?",
-          "options": [
-            "It raised taxes for everyone in Germany",
-            "It made the entire German economy reliant on American loans",
-            "It forced Germany to give up the Ruhr permanently",
-            "It caused further hyperinflation"
-          ],
-          "answer": 1
-        },
-        {
-          "question": "What was the name of the 1929 economic plan that reduced total reparations?",
-          "options": [
-            "The Stresemann Plan",
-            "The Marshall Plan",
-            "The Young Plan",
-            "The Dawes Plan"
-          ],
-          "answer": 2
-        },
-        {
-          "question": "How much was the reparations bill reduced to under the Young Plan?",
-          "options": [
-            "From £10.5 billion to £6.6 billion",
-            "It was completely cancelled",
-            "From £6.6 billion to £4 billion",
-            "From £6.6 billion to £2 billion"
-          ],
-          "answer": 3
-        },
-        {
-          "question": "What diplomatic treaty did Germany sign in 1925, agreeing to its new western borders?",
-          "options": [
-            "The Treaty of Brest-Litovsk",
-            "The Treaty of Versailles",
-            "The Locarno Pact",
-            "The Kellogg-Briand Pact"
-          ],
-          "answer": 2
-        },
-        {
-          "question": "Why was the Locarno Pact viewed so differently by Germans compared to the Treaty of Versailles?",
-          "options": [
-            "It removed all limits on the size of the German army",
-            "Germany was treated as an equal negotiating partner, not dictated to",
-            "It forced France to pay reparations to Germany",
-            "It gave Germany its colonies back"
-          ],
-          "answer": 1
-        },
-        {
-          "question": "In what year was Germany allowed to join the League of Nations?",
-          "options": [
-            "1926",
-            "1925",
-            "1919",
-            "1923"
-          ],
-          "answer": 0
-        },
-        {
-          "question": "What position was Germany given within the League of Nations to show it was a 'great power' again?",
-          "options": [
-            "Veto power over all League decisions",
-            "Control over the League's armed forces",
-            "A seat on the League of Nations Council",
-            "The Presidency of the League"
-          ],
-          "answer": 2
-        },
-        {
-          "question": "What 1928 international pact signed by sixty-two nations renounced war as an instrument of national policy?",
-          "options": [
-            "The Kellogg-Briand Pact",
-            "The Locarno Treaties",
-            "The Treaty of Versailles",
-            "The Dawes Plan"
-          ],
-          "answer": "The Kellogg-Briand Pact",
-          "explanation": "In 1928, Germany signed the Kellogg-Briand Pact with sixty-two nations, renouncing war as an instrument of national policy.",
-          "q": "What 1928 international pact signed by sixty-two nations renounced war as an instrument of national policy?",
-          "a": "The Kellogg-Briand Pact"
-        },
-        {
-          "question": "What sixty-two nation pact did Stresemann sign in 1928 renouncing war as an instrument of policy?",
-          "options": [
-            "The Kellogg-Briand Pact",
-            "The Locarno Treaties",
-            "The Dawes Plan",
-            "The Treaty of Versailles"
-          ],
-          "answer": "The Kellogg-Briand Pact",
-          "explanation": "In 1928, Stresemann signed the Kellogg-Briand Pact with sixty-two nations, renouncing war as an instrument of national policy.",
-          "q": "What sixty-two nation pact did Stresemann sign in 1928 renouncing war as an instrument of policy?",
-          "a": "The Kellogg-Briand Pact"
-        },
-        {
+          "stage": 2,
           "question": "What pragmatic diplomatic policy did Gustav Stresemann pursue to restore Germany's standing through peaceful diplomacy?",
+          "q": "What pragmatic diplomatic policy did Gustav Stresemann pursue to restore Germany's standing through peaceful diplomacy?",
           "options": [
-            "Erfüllungspolitik (fulfillment)",
             "Gleichschaltung",
+            "Erfüllungspolitik (fulfillment)",
             "Kulturkampf",
             "Dolchstoßlegende"
           ],
           "answer": "Erfüllungspolitik (fulfillment)",
-          "explanation": "Stresemann pursued Erfüllungspolitik (fulfillment), restoring Germany's international standing through peaceful diplomacy.",
-          "q": "What pragmatic diplomatic policy did Gustav Stresemann pursue to restore Germany's standing through peaceful diplomacy?",
-          "a": "Erfüllungspolitik (fulfillment)"
+          "a": "Erfüllungspolitik (fulfillment)",
+          "explanation": "Stresemann pursued Erfüllungspolitik (fulfillment), restoring Germany's international standing through peaceful diplomacy."
         },
         {
+          "stage": 2,
           "question": "What 1929 agreement slashed Germany's total reparations bill from £6.6 billion to £2 billion?",
+          "q": "What 1929 agreement slashed Germany's total reparations bill from £6.6 billion to £2 billion?",
           "options": [
             "The Young Plan",
             "The Dawes Plan",
@@ -3806,42 +3957,176 @@ window.unitData = {
             "The Rapallo Treaty"
           ],
           "answer": "The Young Plan",
-          "explanation": "In 1929, the Young Plan slashed Germany's reparations debt from £6.6 billion to £2 billion and extended payment over 59 years.",
-          "q": "What 1929 agreement slashed Germany's total reparations bill from £6.6 billion to £2 billion?",
-          "a": "The Young Plan"
+          "a": "The Young Plan",
+          "explanation": "In 1929, the Young Plan slashed Germany's reparations debt from £6.6 billion to £2 billion and extended payment over 59 years."
         },
         {
-          "question": "What temporary gold-backed currency introduced by Stresemann in November 1923 ended hyperinflation?",
+          "stage": 3,
+          "question": "What diplomatic treaty did Germany sign in 1925, agreeing to its new western borders?",
+          "q": "What diplomatic treaty did Germany sign in 1925, agreeing to its new western borders?",
           "options": [
-            "The Rentenmark",
-            "The Reichsmark",
-            "The Goldmark",
-            "The Euro"
+            "The Treaty of Brest-Litovsk",
+            "The Treaty of Versailles",
+            "The Kellogg-Briand Pact",
+            "The Locarno Pact"
           ],
-          "answer": "The Rentenmark",
-          "explanation": "In November 1923, Stresemann introduced the Rentenmark, a temporary currency backed by agricultural land and industrial gold mortgages.",
-          "q": "What temporary gold-backed currency introduced by Stresemann in November 1923 ended hyperinflation?",
-          "a": "The Rentenmark"
+          "answer": "The Locarno Pact",
+          "a": "The Locarno Pact",
+          "explanation": "In October 1925, he signed the landmark Locarno Treaties (1925) alongside Britain, France, Belgium, and Italy."
         },
         {
-          "question": "What was Stresemann's famous quote warning about the fragility of the German economy?",
+          "stage": 3,
+          "question": "Which former territory did Germany permanently renounce claims to in favour of France under the 1925 Locarno Treaties?",
+          "q": "Which former territory did Germany permanently renounce claims to in favour of France under the 1925 Locarno Treaties?",
           "options": [
+            "The Sudetenland",
+            "The Polish Corridor",
+            "Alsace-Lorraine",
+            "East Prussia"
+          ],
+          "answer": "Alsace-Lorraine",
+          "a": "Alsace-Lorraine",
+          "explanation": "Under the October 1925 Locarno Treaties, Germany voluntarily recognized its western borders, renouncing claims to Alsace-Lorraine and Eupen-Malmedy."
+        },
+        {
+          "stage": 3,
+          "question": "What permanent military restriction did Germany and Western powers jointly reaffirm under the 1925 Locarno Treaties?",
+          "q": "What permanent military restriction did Germany and Western powers jointly reaffirm under the 1925 Locarno Treaties?",
+          "options": [
+            "Abolition of the British Royal Navy",
+            "Permanent Rhineland demilitarization",
+            "French annexation of the Ruhr",
+            "Compulsory German conscription"
+          ],
+          "answer": "Permanent Rhineland demilitarization",
+          "a": "Permanent Rhineland demilitarization",
+          "explanation": "Affirming permanent Rhineland demilitarization reassured France of Germany's peaceful intentions and fostered the cooperative 'Spirit of Locarno'."
+        },
+        {
+          "stage": 3,
+          "question": "Why did the 1925 Locarno Treaties calm European tensions far more effectively than the 1919 Treaty of Versailles?",
+          "q": "Why did the 1925 Locarno Treaties calm European tensions far more effectively than the 1919 Treaty of Versailles?",
+          "options": [
+            "Germany voluntarily recognized its western borders as permanent",
+            "Allied powers cancelled all Versailles territorial losses",
+            "Germany formed a military alliance with the Soviet Union",
+            "France agreed to disarm its entire army immediately"
+          ],
+          "answer": "Germany voluntarily recognized its western borders as permanent",
+          "a": "Germany voluntarily recognized its western borders as permanent",
+          "explanation": "Unlike the hated 'diktat' imposed at Versailles, Stresemann voluntarily signed Locarno on equal diplomatic terms, reassuring Britain and France."
+        },
+        {
+          "stage": 4,
+          "question": "What was the name of the 1929 economic plan that reduced total reparations?",
+          "q": "What was the name of the 1929 economic plan that reduced total reparations?",
+          "options": [
+            "The Stresemann Plan",
+            "The Marshall Plan",
+            "The Dawes Plan",
+            "The Young Plan"
+          ],
+          "answer": "The Young Plan",
+          "a": "The Young Plan",
+          "explanation": "This momentous diplomatic event represented vital great power rehabilitation for the young democratic republic, allowing Stresemann to advocate peacefully for German minorities across Eastern Europe and negotiate the early withdrawal of Allied occupation troops from the Rhineland."
+        },
+        {
+          "stage": 4,
+          "question": "In what year was Germany allowed to join the League of Nations?",
+          "q": "In what year was Germany allowed to join the League of Nations?",
+          "options": [
+            "1925",
+            "1919",
+            "1926",
+            "1923"
+          ],
+          "answer": "1926",
+          "a": "1926",
+          "explanation": "A crowning diplomatic triumph occurred in September 1926 when Stresemann successfully secured Germany's official League of Nations admission, decisively overturning the punitive international ostracism originally imposed at Versailles."
+        },
+        {
+          "stage": 4,
+          "question": "What position was Germany given within the League of Nations to show it was a 'great power' again?",
+          "q": "What position was Germany given within the League of Nations to show it was a 'great power' again?",
+          "options": [
+            "Veto power over all League decisions",
+            "A seat on the League of Nations Council",
+            "Control over the League's armed forces",
+            "The Presidency of the League"
+          ],
+          "answer": "A seat on the League of Nations Council",
+          "a": "A seat on the League of Nations Council",
+          "explanation": "A crowning diplomatic triumph occurred in September 1926 when Stresemann successfully secured Germany's official League of Nations admission, decisively overturning the punitive international ostracism originally imposed at Versailles."
+        },
+        {
+          "stage": 4,
+          "question": "Which prestigious international honour was awarded to Gustav Stresemann alongside French Foreign Minister Aristide Briand in December 1926?",
+          "q": "Which prestigious international honour was awarded to Gustav Stresemann alongside French Foreign Minister Aristide Briand in December 1926?",
+          "options": [
+            "The Nobel Peace Prize",
+            "Presidency of the Weimar Republic",
+            "Command of Allied Rhineland Forces",
+            "Chairmanship of the Dawes Committee"
+          ],
+          "answer": "The Nobel Peace Prize",
+          "a": "The Nobel Peace Prize",
+          "explanation": "Stresemann and Briand shared the 1926 Nobel Peace Prize after securing Locarno reconciliation and Germany's admission to the League of Nations Council."
+        },
+        {
+          "stage": 5,
+          "question": "How much was the reparations bill reduced to under the Young Plan?",
+          "q": "How much was the reparations bill reduced to under the Young Plan?",
+          "options": [
+            "From £10.5 billion to £6.6 billion",
+            "It was completely cancelled",
+            "From £6.6 billion to £4 billion",
+            "From £6.6 billion to £2 billion"
+          ],
+          "answer": "From £6.6 billion to £2 billion",
+          "a": "From £6.6 billion to £2 billion",
+          "explanation": "Building on this international goodwill, Stresemann subsequently negotiated the Young Plan (1929), which decisively lowered the total Allied reparations bill from £6.6 billion to £2 billion, securing reparations reduced (£2bn) and extending repayment deadlines over fifty-nine years until 1988."
+        },
+        {
+          "stage": 5,
+          "question": "What 1928 international pact signed by sixty-two nations renounced war as an instrument of national policy?",
+          "q": "What 1928 international pact signed by sixty-two nations renounced war as an instrument of national policy?",
+          "options": [
+            "The Locarno Treaties",
+            "The Treaty of Versailles",
+            "The Kellogg-Briand Pact",
+            "The Dawes Plan"
+          ],
+          "answer": "The Kellogg-Briand Pact",
+          "a": "The Kellogg-Briand Pact",
+          "explanation": "In 1928, Germany signed the Kellogg-Briand Pact with sixty-two nations, renouncing war as an instrument of national policy."
+        },
+        {
+          "stage": 5,
+          "question": "What sixty-two nation pact did Stresemann sign in 1928 renouncing war as an instrument of policy?",
+          "q": "What sixty-two nation pact did Stresemann sign in 1928 renouncing war as an instrument of policy?",
+          "options": [
+            "The Locarno Treaties",
+            "The Kellogg-Briand Pact",
+            "The Dawes Plan",
+            "The Treaty of Versailles"
+          ],
+          "answer": "The Kellogg-Briand Pact",
+          "a": "The Kellogg-Briand Pact",
+          "explanation": "In 1928, Stresemann signed the Kellogg-Briand Pact with sixty-two nations, renouncing war as an instrument of national policy."
+        },
+        {
+          "stage": 5,
+          "question": "What was Stresemann's famous quote warning about the fragility of the German economy?",
+          "q": "What was Stresemann's famous quote warning about the fragility of the German economy?",
+          "options": [
+            "\"Germany is dancing on a volcano.\"",
             "\"We have nothing to fear but fear itself.\"",
             "\"Peace in our time.\"",
-            "\"Germany is dancing on a volcano.\"",
             "\"The republic is dead.\""
           ],
-          "answer": 2
-        },
-        {
-          "question": "What major global economic event happened in October 1929, just weeks after Stresemann died?",
-          "options": [
-            "The Munich Putsch",
-            "The outbreak of World War Two",
-            "The French invasion of the Ruhr",
-            "The Wall Street Crash"
-          ],
-          "answer": 3
+          "answer": "\"Germany is dancing on a volcano.\"",
+          "a": "\"Germany is dancing on a volcano.\"",
+          "explanation": "In August 1928, Germany proudly signed the Kellogg-Briand Pact (1928) alongside sixty-four nations, officially renouncing war as an instrument of national policy."
         }
       ],
       "vocab_cloze_text": "Under Stresemann’s leadership, Germany recovered from economic disaster by scrapping the worthless currency and replacing it temporarily with the [Rentenmark], before permanently introducing the stable [Reichsmark]. To ease the burden of Versailles, he negotiated the [Dawes Plan (1924)] to receive US loans, and later the [Young Plan (1929)] to significantly reduce the total debt. To restore Germany's international reputation, Stresemann signed the [Locarno Pact (1925)] to agree on western borders, successfully led Germany into the international peacekeeping body the [League of Nations], and signed the [Kellogg-Briand Pact (1928)] alongside 61 other countries promising not to use war to resolve disputes.",
@@ -4132,8 +4417,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Appointed at the height of crisis, <strong>Gustav Stresemann chancellor</strong> abolished worthless paper money and issued the <strong>Rentenmark land-backed currency</strong>, ensuring the national <strong>mark stabilized (1924)</strong> to restore economic confidence.",
-          "title": "How did the Rentenmark restore basic confidence in the monetary system?",
-          "dates": "Nov 1923"
+          "title": "Stresemann & The Rentenmark Currency",
+          "dates": "Nov 1923",
+          "question": "How did the Rentenmark restore basic confidence in the monetary system?",
+          "questionHeading": "How did the Rentenmark restore basic confidence in the monetary system?",
+          "prose_hash": "f1832b9c11"
         },
         {
           "step": 2,
@@ -4161,8 +4449,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Stresemann negotiated the <strong>1924 Dawes Plan</strong>, which secured substantial <strong>800m gold-mark loans</strong> from American financiers alongside realistic <strong>reparations annual restructuring</strong> to revive German industry.",
-          "title": "Why did American loans provide temporary relief but leave Germany vulnerable?",
-          "dates": "Apr–Aug 1924"
+          "title": "The Dawes Plan & American Loans",
+          "dates": "Apr–Aug 1924",
+          "question": "Why did American loans provide temporary relief but leave Germany vulnerable?",
+          "questionHeading": "Why did American loans provide temporary relief but leave Germany vulnerable?",
+          "prose_hash": "568d713cc9"
         },
         {
           "step": 3,
@@ -4190,8 +4481,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Diplomatic rapprochement was cemented by the <strong>Locarno Treaties (1925)</strong>, wherein Germany’s <strong>western borders recognized</strong> permanently and <strong>Rhineland demilitarization affirmed</strong> to rebuild European trust.",
-          "title": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
-          "dates": "Oct 1925"
+          "title": "The Locarno Treaties",
+          "dates": "Oct 1925",
+          "question": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
+          "questionHeading": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
+          "prose_hash": "2b3520adcd"
         },
         {
           "step": 4,
@@ -4219,8 +4513,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Germany’s international standing was restored through <strong>League of Nations admission</strong> in 1926, which granted Berlin a permanent <strong>Geneva Council seat</strong> and confirmed Germany's <strong>great power rehabilitation</strong>.",
-          "title": "Why was admission to the League of Nations a major victory for Stresemann?",
-          "dates": "Sep 1926"
+          "title": "Entry into the League of Nations",
+          "dates": "Sep 1926",
+          "question": "Why was admission to the League of Nations a major victory for Stresemann?",
+          "questionHeading": "Why was admission to the League of Nations a major victory for Stresemann?",
+          "prose_hash": "f4f8ed6183"
         },
         {
           "step": 5,
@@ -4248,8 +4545,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Following Germany's signing of the <strong>Kellogg-Briand Pact (1928)</strong> outlawing war, Stresemann secured the <strong>Young Plan (1929)</strong> which saw <strong>reparations reduced (£2bn)</strong> to ease the long-term national debt.",
-          "title": "Why did right-wing nationalists fiercely oppose the Young Plan?",
-          "dates": "1928–1929"
+          "title": "The Kellogg-Briand Pact & The Young Plan",
+          "dates": "1928–1929",
+          "question": "Why did right-wing nationalists fiercely oppose the Young Plan?",
+          "questionHeading": "Why did right-wing nationalists fiercely oppose the Young Plan?",
+          "prose_hash": "236e726bf0"
         }
       ],
       "causal_domino_spine": {
@@ -4266,7 +4566,8 @@ window.unitData = {
             "trigger": "Chancellor Stresemann halted passive resistance in the Ruhr and introduced the Rentenmark, backed by national industrial and agricultural mortgages.",
             "desc": "Chancellor Stresemann halted passive resistance in the Ruhr and introduced the Rentenmark, backed by national industrial and agricultural mortgages.",
             "connective": "Ended hyperinflation and restored price stability, laying the financial foundation for international loan negotiations.",
-            "question": "How did the Rentenmark restore basic confidence in the monetary system?"
+            "question": "How did the Rentenmark restore basic confidence in the monetary system?",
+            "prose_hash": "f1832b9c11"
           },
           {
             "step": 2,
@@ -4278,7 +4579,8 @@ window.unitData = {
             "trigger": "The Dawes Plan rescheduled annual reparations to affordable levels, prompted French evacuation of the Ruhr, and injected 800m gold marks in American loans.",
             "desc": "The Dawes Plan rescheduled annual reparations to affordable levels, prompted French evacuation of the Ruhr, and injected 800m gold marks in American loans.",
             "connective": "Stimulated a major industrial modernizing boom, but created extreme financial dependency on short-term American capital.",
-            "question": "Why did American loans provide temporary relief but leave Germany vulnerable?"
+            "question": "Why did American loans provide temporary relief but leave Germany vulnerable?",
+            "prose_hash": "568d713cc9"
           },
           {
             "step": 3,
@@ -4290,7 +4592,8 @@ window.unitData = {
             "trigger": "Germany voluntarily guaranteed its western frontiers with France and Belgium, keeping the Rhineland demilitarised in exchange for French non-aggression.",
             "desc": "Germany voluntarily guaranteed its western frontiers with France and Belgium, keeping the Rhineland demilitarised in exchange for French non-aggression.",
             "connective": "Dismantled Germany’s post-war diplomatic isolation and paved the way for entry into the League of Nations as an equal power.",
-            "question": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?"
+            "question": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
+            "prose_hash": "2b3520adcd"
           },
           {
             "step": 4,
@@ -4302,7 +4605,8 @@ window.unitData = {
             "trigger": "Germany was unanimously admitted to the League of Nations and awarded a prestigious permanent seat on the executive Council.",
             "desc": "Germany was unanimously admitted to the League of Nations and awarded a prestigious permanent seat on the executive Council.",
             "connective": "Restored Germany’s great power diplomatic status, enabling Stresemann to champion German minority interests across Europe peacefully.",
-            "question": "Why was admission to the League of Nations a major victory for Stresemann?"
+            "question": "Why was admission to the League of Nations a major victory for Stresemann?",
+            "prose_hash": "f4f8ed6183"
           },
           {
             "step": 5,
@@ -4314,7 +4618,8 @@ window.unitData = {
             "trigger": "The Young Plan slashed reparations to £2bn and secured early Rhineland evacuation, but right-wing nationalists launched a furious anti-republican campaign.",
             "desc": "The Young Plan slashed reparations to £2bn and secured early Rhineland evacuation, but right-wing nationalists launched a furious anti-republican campaign.",
             "connective": "Stresemann warned Germany was \"dancing on a volcano\"; his death in October 1929 and the Wall Street Crash collapsed US loans and destroyed the economy.",
-            "question": "Why did right-wing nationalists fiercely oppose the Young Plan?"
+            "question": "Why did right-wing nationalists fiercely oppose the Young Plan?",
+            "prose_hash": "236e726bf0"
           }
         ]
       },
@@ -4580,48 +4885,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Which treaty punished Germany after WW1?",
-            "answer": "The Treaty of Versailles (1919)."
+            "stage": 1,
+            "question": "Who became Chancellor in August 1923 and is widely credited with saving the Weimar Republic?",
+            "answer": "Gustav Stresemann",
+            "explanation": "In August 1923, at the catastrophic height of the national inflation crisis, moderate statesman Gustav Stresemann chancellor formed a broad \"Great Coalition\" government."
           },
           {
-            "question": "How much was Germany forced to pay in reparations?",
-            "answer": "£6.6 billion."
+            "stage": 2,
+            "question": "In what year was the Dawes Plan agreed?",
+            "answer": "1924",
+            "explanation": "To resolve the paralyzed international reparations dispute and stabilize the German economy, Stresemann negotiated the 1924 Dawes Plan with the Western Allies, chaired by American financier Charles Dawes."
           },
           {
-            "question": "What was Article 231?",
-            "answer": "The 'War Guilt Clause', forcing Germany to accept full blame for starting the war."
+            "stage": 3,
+            "question": "What diplomatic treaty did Germany sign in 1925, agreeing to its new western borders?",
+            "answer": "The Locarno Pact",
+            "explanation": "In October 1925, he signed the landmark Locarno Treaties (1925) alongside Britain, France, Belgium, and Italy."
           },
           {
-            "question": "Under the 1919 Treaty of Versailles, how was the German army restricted?",
-            "answer": "Limited to 100,000 men, no air force, no submarines, and 6 battleships."
+            "stage": 4,
+            "question": "What was the name of the 1929 economic plan that reduced total reparations?",
+            "answer": "The Young Plan",
+            "explanation": "This momentous diplomatic event represented vital great power rehabilitation for the young democratic republic, allowing Stresemann to advocate peacefully for German minorities across Eastern Europe and negotiate the early withdrawal of Allied occupation troops from the Rhineland."
           },
           {
-            "question": "What happened to the Rhineland?",
-            "answer": "It was demilitarised (no German troops allowed)."
+            "stage": 5,
+            "question": "How much was the reparations bill reduced to under the Young Plan?",
+            "answer": "From £6.6 billion to £2 billion",
+            "explanation": "Building on this international goodwill, Stresemann subsequently negotiated the Young Plan (1929), which decisively lowered the total Allied reparations bill from £6.6 billion to £2 billion, securing reparations reduced (£2bn) and extending repayment deadlines over fifty-nine years until 1988."
           },
           {
-            "question": "What was Proportional Representation?",
-            "answer": "An electoral system leading to weak coalition governments."
+            "stage": 1,
+            "question": "What was the name of the temporary currency introduced by Stresemann in November 1923?",
+            "answer": "The Rentenmark",
+            "explanation": "In November 1923, Stresemann introduced the revolutionary Rentenmark land-backed currency, a strictly limited temporary currency mortgaged on Germany's collective industrial and agricultural land assets."
           },
           {
-            "question": "What was Article 48?",
-            "answer": "The President's emergency decree power."
+            "stage": 2,
+            "question": "Under the Dawes Plan of 1924, what major financial lifeline did Germany receive from Wall Street?",
+            "answer": "An influx of American loans totaling 800 million gold marks",
+            "explanation": "The Dawes Plan arranged an immediate loan of 800 million gold marks from American banks to stabilize the German economy."
           },
           {
-            "question": "Who were the November Criminals?",
-            "answer": "The politicians who signed the 1918 Armistice."
+            "stage": 3,
+            "question": "Which former territory did Germany permanently renounce claims to in favour of France under the 1925 Locarno Treaties?",
+            "answer": "Alsace-Lorraine",
+            "explanation": "Under the October 1925 Locarno Treaties, Germany voluntarily recognized its western borders, renouncing claims to Alsace-Lorraine and Eupen-Malmedy."
           },
           {
-            "question": "Who was Friedrich Ebert?",
-            "answer": "The first President of the Weimar Republic."
+            "stage": 4,
+            "question": "In what year was Germany allowed to join the League of Nations?",
+            "answer": "1926",
+            "explanation": "A crowning diplomatic triumph occurred in September 1926 when Stresemann successfully secured Germany's official League of Nations admission, decisively overturning the punitive international ostracism originally imposed at Versailles."
           },
           {
-            "question": "What is a 'dictatorship'?",
-            "answer": "Rule by a single leader with total power."
+            "stage": 5,
+            "question": "What 1928 international pact signed by sixty-two nations renounced war as an instrument of national policy?",
+            "answer": "The Kellogg-Briand Pact",
+            "explanation": "In 1928, Germany signed the Kellogg-Briand Pact with sixty-two nations, renouncing war as an instrument of national policy."
           }
         ]
       },
@@ -4710,8 +5034,8 @@ window.unitData = {
         {
           "title": "Wages, Tenements and Pensions: Standard of Living and Unemployment Insurance in the Twenties (1924–1928)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> Between 1924 and 1928, the Weimar Republic made significant progressive strides in social welfare and working-class living standards. As industrial production rebounded following currency stabilization, **real wages increase** by over ten percent, turning German industrial laborers into some of the best-paid workers in Europe, while the introduction of a maximum eight-hour working day improved factory working conditions.\n\n<span class=\"para-ref\">[1.2]</span> In 1927, the Reichstag passed landmark **1927 Unemployment Insurance** legislation, guaranteeing weekly state benefits to over seventeen million workers during periods of temporary unemployment. Concurrently, progressive municipal councils launched ambitious **municipal housing construction** programs, erecting over two million modern, subsidized apartments equipped with indoor plumbing and electricity, transforming urban working-class living conditions across major industrial cities.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Between 1924 and 1928, the Weimar Republic made significant progressive strides in social welfare and working-class living standards. As industrial production rebounded following currency stabilization, **real wages increase** by over ten percent, turning German industrial laborers into some of the best-paid workers in Europe, while the introduction of a maximum eight-hour working day improved factory working conditions.\n\n<span class=\"para-ref\">[1.2]</span> In 1927, the Reichstag passed landmark **1927 Unemployment Insurance** legislation, guaranteeing weekly state benefits to over seventeen million workers during periods of temporary unemployment. Concurrently, progressive municipal councils launched ambitious **municipal housing construction** programs, erecting over two million modern, subsidized apartments equipped with indoor plumbing and electricity, transforming urban working-class living conditions across major industrial cities.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Between 1924 and 1928, Weimar Germany improved social welfare and workers' living standards. As factory output rebounded after currency reform, **real wages** rose by over 10% (reaching 25% gains by 1928) alongside a maximum eight-hour working day. Even so, debt-hit farmers and the middle classes felt left behind.\n\n<span class=\"para-ref\">[1.2]</span> In 1927, parliament passed the **Unemployment Insurance Act**, using 3% wage contributions to guarantee weekly jobless benefits for over seventeen million workers. Meanwhile, town councils built over **2 million modern homes** fitted with indoor plumbing and electricity, easing city housing shortages across Germany.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Between 1924 and 1928, Weimar Germany improved social welfare and workers' living standards. As factory output rebounded after currency reform, **real wages** rose by over 10% (reaching 25% gains by 1928) alongside a maximum eight-hour working day. Even so, debt-hit farmers and the middle classes felt left behind.\n\n<span class=\"para-ref\">[1.2]</span> In 1927, parliament passed the **Unemployment Insurance Act**, using 3% wage contributions to guarantee weekly jobless benefits for over seventeen million workers. Meanwhile, town councils built over **2 million modern homes** fitted with indoor plumbing and electricity, easing city housing shortages across Germany.",
           "sources": [
             {
               "id": "weimar_l4_source_d",
@@ -4769,8 +5093,8 @@ window.unitData = {
         {
           "title": "The Bubikopf and the Vote: The Emancipation and Clashes of the 'New Woman' (1924–1929)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> The Weimar era ushered in sweeping constitutional, legal, and cultural transformations for German women across society. The 1919 Weimar Constitution granted women equal voting rights and educational access, resulting in energetic political engagement where dozens of **female Reichstag deputies** were elected to parliament, giving Germany a significantly higher proportion of female lawmakers than Britain or the United States.\n\n<span class=\"para-ref\">[2.2]</span> In major urban centers, young working women embraced the modern image of the **Weimar 'New Woman'**, cutting their hair into short 'Bubikopf' bobs, smoking in public, and wearing fashionable cosmetics. Increasing **financial employment independence** in clerical, retail, and teaching roles offered young women autonomy, though traditional conservatives and churches condemned this modern emancipation as a threat to family values.",
-          "content": "<span class=\"para-ref\">[2.1]</span> The Weimar era ushered in sweeping constitutional, legal, and cultural transformations for German women across society. The 1919 Weimar Constitution granted women equal voting rights and educational access, resulting in energetic political engagement where dozens of **female Reichstag deputies** were elected to parliament, giving Germany a significantly higher proportion of female lawmakers than Britain or the United States.\n\n<span class=\"para-ref\">[2.2]</span> In major urban centers, young working women embraced the modern image of the **Weimar 'New Woman'**, cutting their hair into short 'Bubikopf' bobs, smoking in public, and wearing fashionable cosmetics. Increasing **financial employment independence** in clerical, retail, and teaching roles offered young women autonomy, though traditional conservatives and churches condemned this modern emancipation as a threat to family values.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Weimar Germany brought sweeping legal and cultural change for women under Article 109 of the 1919 Constitution, which guaranteed equal voting rights and career access. Energetic political engagement elected dozens of **female Reichstag deputies**, giving Germany a higher proportion of female lawmakers than Britain or the United States.\n\n<span class=\"para-ref\">[2.2]</span> In big cities, young working women embraced the image of the **'New Woman' (*Neue Frau*)**, cutting their hair into short *Bubikopf* bobs, smoking in public, and wearing fashionable cosmetics. Paid jobs in clerical, retail, and teaching roles brought independence, though conservatives and churches attacked modern styles.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Weimar Germany brought sweeping legal and cultural change for women under Article 109 of the 1919 Constitution, which guaranteed equal voting rights and career access. Energetic political engagement elected dozens of **female Reichstag deputies**, giving Germany a higher proportion of female lawmakers than Britain or the United States.\n\n<span class=\"para-ref\">[2.2]</span> In big cities, young working women embraced the image of the **'New Woman' (*Neue Frau*)**, cutting their hair into short *Bubikopf* bobs, smoking in public, and wearing fashionable cosmetics. Paid jobs in clerical, retail, and teaching roles brought independence, though conservatives and churches attacked modern styles.",
           "sources": [
             {
               "id": "weimar_l4_source_b",
@@ -4830,8 +5154,8 @@ window.unitData = {
         {
           "title": "Glass, Steel and Functional Design: Walter Gropius and the Bauhaus Revolution (1925–1929)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> Weimar Germany rapidly became the dynamic epicenter of a revolutionary modernist movement in architecture and visual arts. In 1919, visionary architect **Walter Gropius Bauhaus** founded the celebrated Bauhaus school of design in Weimar, pioneering a bold new creative philosophy that bridged fine arts with practical industrial craftsmanship, boldly declaring that physical form must seamlessly follow all practical utilitarian function.\n\n<span class=\"para-ref\">[3.2]</span> Rejecting elaborate nineteenth-century decorative ornamentation, Bauhaus designers pioneered **modernist functional architecture**, utilizing clean geometric lines, steel frameworks, reinforced concrete, and expansive glass curtain walls. When the school relocated to its iconic **Dessau design campus** in 1925, its tubular steel furniture, streamlined typography, and functionalist apartment blocks became globally celebrated symbols of progressive European artistic modernism and functional industrial craftsmanship.",
-          "content": "<span class=\"para-ref\">[3.1]</span> Weimar Germany rapidly became the dynamic epicenter of a revolutionary modernist movement in architecture and visual arts. In 1919, visionary architect **Walter Gropius Bauhaus** founded the celebrated Bauhaus school of design in Weimar, pioneering a bold new creative philosophy that bridged fine arts with practical industrial craftsmanship, boldly declaring that physical form must seamlessly follow all practical utilitarian function.\n\n<span class=\"para-ref\">[3.2]</span> Rejecting elaborate nineteenth-century decorative ornamentation, Bauhaus designers pioneered **modernist functional architecture**, utilizing clean geometric lines, steel frameworks, reinforced concrete, and expansive glass curtain walls. When the school relocated to its iconic **Dessau design campus** in 1925, its tubular steel furniture, streamlined typography, and functionalist apartment blocks became globally celebrated symbols of progressive European artistic modernism and functional industrial craftsmanship.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Weimar Germany also stood at the heart of modernist art and design. In 1919, visionary architect **Walter Gropius** founded the **Bauhaus school** in Weimar. Bridging fine art with modern factory craft, Gropius taught young designers that everyday form must follow practical, everyday function.\n\n<span class=\"para-ref\">[3.2]</span> Rejecting heavy nineteenth-century carving, **Bauhaus** designers used clean geometric lines, steel frames, reinforced concrete, and wide glass curtain walls. Moving into its famous **Dessau** campus in 1925, its steel-tube chairs, clean lettering, and bright flats shaped modern architecture across Europe.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Weimar Germany also stood at the heart of modernist art and design. In 1919, visionary architect **Walter Gropius** founded the **Bauhaus school** in Weimar. Bridging fine art with modern factory craft, Gropius taught young designers that everyday form must follow practical, everyday function.\n\n<span class=\"para-ref\">[3.2]</span> Rejecting heavy nineteenth-century carving, **Bauhaus** designers used clean geometric lines, steel frames, reinforced concrete, and wide glass curtain walls. Moving into its famous **Dessau** campus in 1925, its steel-tube chairs, clean lettering, and bright flats shaped modern architecture across Europe.",
           "sources": [
             {
               "id": "weimar_l4_source_bauhaus",
@@ -4891,8 +5215,8 @@ window.unitData = {
         {
           "title": "Neue Sachlichkeit & Weimar Cinema: Otto Dix, The Cabinet of Dr. Caligari and Modernist Irony (1924–1929)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> Disillusioned by the horrors of the First World War and rapid urban commercialism, German painters pioneered the celebrated **Neue Sachlichkeit art** (New Objectivity) movement across major German cities during the nineteen-twenties. Rather than romanticizing German reality, these avant-garde artists used ruthless realism and stinging irony to critique Weimar society, portraying war cripples, street prostitutes, and corrupt industrialists in grotesque, unsparing visual detail.\n\n<span class=\"para-ref\">[4.2]</span> Influential master painter **Otto Dix expressionism** depicted mutilated veteran amputees and the visceral psychological trauma of trench warfare, while satirical genius **George Grosz satire** mocked the moral hypocrisy of capitalist elites and greedy generals in unsparing drawings and canvas oil paintings, establishing Weimar visual culture as the most biting, socially conscious artistic renaissance anywhere in twentieth-century Europe.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Disillusioned by the horrors of the First World War and rapid urban commercialism, German painters pioneered the celebrated **Neue Sachlichkeit art** (New Objectivity) movement across major German cities during the nineteen-twenties. Rather than romanticizing German reality, these avant-garde artists used ruthless realism and stinging irony to critique Weimar society, portraying war cripples, street prostitutes, and corrupt industrialists in grotesque, unsparing visual detail.\n\n<span class=\"para-ref\">[4.2]</span> Influential master painter **Otto Dix expressionism** depicted mutilated veteran amputees and the visceral psychological trauma of trench warfare, while satirical genius **George Grosz satire** mocked the moral hypocrisy of capitalist elites and greedy generals in unsparing drawings and canvas oil paintings, establishing Weimar visual culture as the most biting, socially conscious artistic renaissance anywhere in twentieth-century Europe.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Disillusioned by First World War slaughter and harsh city poverty, German painters pioneered **New Objectivity (*Neue Sachlichkeit*)** across major cities in the 1920s. Rather than romanticizing German life, avant-garde artists used blunt realism and sharp irony to critique Weimar society in unsparing detail.\n\n<span class=\"para-ref\">[4.2]</span> Leading painters **Otto Dix** and **George Grosz** drove this bold movement. Dix painted mutilated trench amputees and wartime trauma, while Grosz mocked corrupt industrialists and greedy generals in Berlin streets, making Weimar art the sharpest social commentary in Europe.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Disillusioned by First World War slaughter and harsh city poverty, German painters pioneered **New Objectivity (*Neue Sachlichkeit*)** across major cities in the 1920s. Rather than romanticizing German life, avant-garde artists used blunt realism and sharp irony to critique Weimar society in unsparing detail.\n\n<span class=\"para-ref\">[4.2]</span> Leading painters **Otto Dix** and **George Grosz** drove this bold movement. Dix painted mutilated trench amputees and wartime trauma, while Grosz mocked corrupt industrialists and greedy generals in Berlin streets, making Weimar art the sharpest social commentary in Europe.",
           "sources": [
             {
               "id": "weimar_l4_source_a",
@@ -4950,8 +5274,8 @@ window.unitData = {
         {
           "title": "The Conservative Backlash: Degeneracy Accusations and the Cultural Fault Lines of the Republic (1924–1929)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Weimar cinema achieved legendary global acclaim, centered at the pioneering **UFA film studios** in Babelsberg outside Berlin. German directors continuously pushed technical boundaries, producing visionary cinematic masterpieces like director **Fritz Lang Metropolis** (1927), a groundbreaking science-fiction epic exploring industrialization and class warfare that established German expressionist cinema as the most technically innovative and artistically daring film industry in Europe.\n\n<span class=\"para-ref\">[5.2]</span> However, Berlin's vibrant cabaret culture, open homosexuality, and avant-garde art provoked a furious **conservative cultural backlash** from traditional rural towns and conservative religious churches. Right-wing nationalists bitterly denounced Weimar culture as un-German, decadent, and morally degenerate, exploiting deep-seated cultural resentments to argue that parliamentary democracy was actively poisoning the traditional moral fiber of the German nation.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Weimar cinema achieved legendary global acclaim, centered at the pioneering **UFA film studios** in Babelsberg outside Berlin. German directors continuously pushed technical boundaries, producing visionary cinematic masterpieces like director **Fritz Lang Metropolis** (1927), a groundbreaking science-fiction epic exploring industrialization and class warfare that established German expressionist cinema as the most technically innovative and artistically daring film industry in Europe.\n\n<span class=\"para-ref\">[5.2]</span> However, Berlin's vibrant cabaret culture, open homosexuality, and avant-garde art provoked a furious **conservative cultural backlash** from traditional rural towns and conservative religious churches. Right-wing nationalists bitterly denounced Weimar culture as un-German, decadent, and morally degenerate, exploiting deep-seated cultural resentments to argue that parliamentary democracy was actively poisoning the traditional moral fiber of the German nation.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Weimar cinema won world fame too, led by the giant **UFA film studios** in Babelsberg outside Berlin. Directors pushed camera and lighting design in landmark expressionist films like **Fritz Lang**'s sci-fi epic *Metropolis* (1927), *The Cabinet of Dr. Caligari*, and Marlene Dietrich's cabaret drama *The Blue Angel*.\n\n<span class=\"para-ref\">[5.2]</span> However, Berlin's bold cabaret nightlife, sexual openness, and avant-garde art sparked a fierce **conservative cultural backlash** across rural towns and churches. Right-wing nationalists denounced Weimar culture as un-German, decadent, and morally degenerate, claiming democracy was poisoning traditional German values.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Weimar cinema won world fame too, led by the giant **UFA film studios** in Babelsberg outside Berlin. Directors pushed camera and lighting design in landmark expressionist films like **Fritz Lang**'s sci-fi epic *Metropolis* (1927), *The Cabinet of Dr. Caligari*, and Marlene Dietrich's cabaret drama *The Blue Angel*.\n\n<span class=\"para-ref\">[5.2]</span> However, Berlin's bold cabaret nightlife, sexual openness, and avant-garde art sparked a fierce **conservative cultural backlash** across rural towns and churches. Right-wing nationalists denounced Weimar culture as un-German, decadent, and morally degenerate, claiming democracy was poisoning traditional German values.",
           "sources": [
             {
               "id": "weimar_l4_source_e",
@@ -5009,106 +5333,149 @@ window.unitData = {
       ],
       "quiz": [
         {
-          "question": "By what percentage did 'real wages' for German workers rise between 1925 and 1928?",
-          "options": [
-            "25%",
-            "75%",
-            "10%",
-            "50%"
-          ],
-          "answer": 0
-        },
-        {
+          "stage": 1,
           "question": "What major welfare law was passed in 1927 to protect workers?",
+          "q": "What major welfare law was passed in 1927 to protect workers?",
           "options": [
             "The Rent Tax Act",
-            "The Unemployment Insurance Act",
             "The Dawes Plan",
+            "The Unemployment Insurance Act",
             "The Workers' Rights Bill"
           ],
-          "answer": 1
+          "answer": "The Unemployment Insurance Act",
+          "a": "The Unemployment Insurance Act",
+          "explanation": "In 1927, the Reichstag passed landmark 1927 Unemployment Insurance legislation, guaranteeing weekly state benefits to over seventeen million workers during periods of temporary unemployment."
         },
         {
-          "question": "What percentage of a worker's wage was deducted to fund the 1927 Unemployment Insurance Act?",
-          "options": [
-            "1%",
-            "5%",
-            "10%",
-            "3%"
-          ],
-          "answer": 3
-        },
-        {
+          "stage": 1,
           "question": "How many modern homes were constructed between 1924 and 1931 using state subsidies to alleviate the housing shortage?",
+          "q": "How many modern homes were constructed between 1924 and 1931 using state subsidies to alleviate the housing shortage?",
           "options": [
-            "Over 2 million modern homes",
             "Under 10,000 homes",
+            "Over 2 million modern homes",
             "Roughly 50,000 homes",
             "Over 10 million homes"
           ],
           "answer": "Over 2 million modern homes",
-          "explanation": "The Weimar state funded extensive public housing, constructing over 2 million modern homes between 1924 and 1931.",
-          "q": "How many modern homes were constructed between 1924 and 1931 using state subsidies to alleviate the housing shortage?",
-          "a": "Over 2 million modern homes"
+          "a": "Over 2 million modern homes",
+          "explanation": "The Weimar state funded extensive public housing, constructing over 2 million modern homes between 1924 and 1931."
         },
         {
-          "question": "Which specific clause in the Weimar Constitution guaranteed women equal rights with men?",
+          "stage": 1,
+          "question": "Which social class deeply resented the improvements made for the working classes because they had not recovered their own lost savings?",
+          "q": "Which social class deeply resented the improvements made for the working classes because they had not recovered their own lost savings?",
           "options": [
-            "Article 1",
-            "Article 48",
-            "Article 109",
-            "Article 231"
+            "The middle classes",
+            "The working classes",
+            "The upper class",
+            "Farmers"
           ],
-          "answer": 2
+          "answer": "The middle classes",
+          "a": "The middle classes",
+          "explanation": "Between 1924 and 1928, the Weimar Republic made significant progressive strides in social welfare and working-class living standards."
         },
         {
-          "question": "How many female deputies were in the Reichstag by 1926?",
+          "stage": 1,
+          "question": "Over how many German workers were guaranteed weekly unemployment benefits under the landmark 1927 Unemployment Insurance Act?",
+          "q": "Over how many German workers were guaranteed weekly unemployment benefits under the landmark 1927 Unemployment Insurance Act?",
           "options": [
-            "32",
-            "107",
-            "None",
-            "12"
+            "Around five hundred thousand workers",
+            "Two million workers",
+            "Fifty million workers",
+            "Over seventeen million workers"
           ],
-          "answer": 0
+          "answer": "Over seventeen million workers",
+          "a": "Over seventeen million workers",
+          "explanation": "The progressive 1927 Unemployment Insurance Act protected over seventeen million workers against temporary joblessness during the Weimar recovery."
         },
         {
-          "question": "What percentage turnout did German women achieve in the January 1919 national elections?",
-          "options": [
-            "A 90% female turnout",
-            "Under 25% female turnout",
-            "Roughly 50% female turnout",
-            "Exactly 10% female turnout"
-          ],
-          "answer": "A 90% female turnout",
-          "explanation": "Women eagerly exercised their new democratic rights, achieving a remarkable 90% female turnout in the 1919 elections.",
-          "q": "What percentage turnout did German women achieve in the January 1919 national elections?",
-          "a": "A 90% female turnout"
-        },
-        {
-          "question": "What progressive reform was introduced by the 1927 Unemployment Insurance Act?",
-          "options": [
-            "Guaranteed unemployment benefits for over 17 million workers funded by payroll contributions",
-            "A total ban on married women working in civil service offices",
-            "The immediate deportation of all foreign factory labourers",
-            "The complete elimination of all national income taxes"
-          ],
-          "answer": "Guaranteed unemployment benefits for over 17 million workers funded by payroll contributions",
-          "explanation": "The 1927 Act established comprehensive national unemployment insurance covering over 17 million workers.",
-          "q": "What progressive reform was introduced by the 1927 Unemployment Insurance Act?",
-          "a": "Guaranteed unemployment benefits for over 17 million workers funded by payroll contributions"
-        },
-        {
+          "stage": 2,
           "question": "What term was used by the media to describe young, independent, fashion-conscious women in the 1920s?",
+          "q": "What term was used by the media to describe young, independent, fashion-conscious women in the 1920s?",
           "options": [
             "The 'Liberated Woman'",
             "The 'Weimar Woman'",
-            "The 'Modern Woman'",
-            "The 'New Woman' (Neue Frau)"
+            "The 'New Woman' (Neue Frau)",
+            "The 'Modern Woman'"
           ],
-          "answer": 3
+          "answer": "The 'New Woman' (Neue Frau)",
+          "a": "The 'New Woman' (Neue Frau)",
+          "explanation": "In major urban centers, young working women embraced the modern image of the Weimar 'New Woman', cutting their hair into short 'Bubikopf' bobs, smoking in public, and wearing fashionable cosmetics."
         },
         {
+          "stage": 2,
+          "question": "What German name was given to the fashionable short bobbed hairstyle worn by emancipated young women in 1920s cities?",
+          "q": "What German name was given to the fashionable short bobbed hairstyle worn by emancipated young women in 1920s cities?",
+          "options": [
+            "Neue Sachlichkeit",
+            "The Bubikopf",
+            "Kindertracht",
+            "Volksempfänger"
+          ],
+          "answer": "The Bubikopf",
+          "a": "The Bubikopf",
+          "explanation": "Urban 'New Women' cut their hair into short Bubikopf bobs, smoked in public, and wore modern cosmetics in defiance of traditional gender norms."
+        },
+        {
+          "stage": 2,
+          "question": "How did female political representation in the Weimar Reichstag compare with parliaments in Britain or the United States?",
+          "q": "How did female political representation in the Weimar Reichstag compare with parliaments in Britain or the United States?",
+          "options": [
+            "Germany had a higher proportion of female Reichstag deputies",
+            "Women were barred from sitting in the Weimar Reichstag",
+            "Only aristocratic women could stand for election",
+            "Representation was identical at exactly one female deputy"
+          ],
+          "answer": "Germany had a higher proportion of female Reichstag deputies",
+          "a": "Germany had a higher proportion of female Reichstag deputies",
+          "explanation": "Equal voting rights from 1919 enabled dozens of women to win Reichstag seats, giving Weimar Germany a higher share of female lawmakers than Britain or the US."
+        },
+        {
+          "stage": 2,
+          "question": "In which urban job sectors did young Weimar women increasingly gain financial independence during the 1920s?",
+          "q": "In which urban job sectors did young Weimar women increasingly gain financial independence during the 1920s?",
+          "options": [
+            "Heavy coal mining and shipbuilding",
+            "Imperial army officer commands",
+            "Prussian judicial supreme courts",
+            "Clerical, retail, and teaching roles"
+          ],
+          "answer": "Clerical, retail, and teaching roles",
+          "a": "Clerical, retail, and teaching roles",
+          "explanation": "Growing employment in offices, department stores, and schools gave young urban women independent wages, though conservatives condemned the trend."
+        },
+        {
+          "stage": 3,
+          "question": "By what percentage did 'real wages' for German workers rise between 1925 and 1928?",
+          "q": "By what percentage did 'real wages' for German workers rise between 1925 and 1928?",
+          "options": [
+            "75%",
+            "10%",
+            "25%",
+            "50%"
+          ],
+          "answer": "25%",
+          "a": "25%",
+          "explanation": "When the school relocated to its iconic Dessau design campus in 1925, its tubular steel furniture, streamlined typography, and functionalist apartment blocks became globally celebrated symbols of progressive European artistic modernism and functional industrial craftsmanship."
+        },
+        {
+          "stage": 3,
+          "question": "What percentage of a worker's wage was deducted to fund the 1927 Unemployment Insurance Act?",
+          "q": "What percentage of a worker's wage was deducted to fund the 1927 Unemployment Insurance Act?",
+          "options": [
+            "1%",
+            "3%",
+            "5%",
+            "10%"
+          ],
+          "answer": "3%",
+          "a": "3%",
+          "explanation": "Weimar Germany rapidly became the dynamic epicenter of a revolutionary modernist movement in architecture and visual arts."
+        },
+        {
+          "stage": 3,
           "question": "What influential modernist design and architecture school was founded by Walter Gropius in 1919?",
+          "q": "What influential modernist design and architecture school was founded by Walter Gropius in 1919?",
           "options": [
             "The Bauhaus school",
             "The New Objectivity institute",
@@ -5116,98 +5483,55 @@ window.unitData = {
             "The Berlin expressionist gallery"
           ],
           "answer": "The Bauhaus school",
-          "explanation": "Walter Gropius founded the Bauhaus school, pioneering modernist design combining art and industrial technology.",
-          "q": "What influential modernist design and architecture school was founded by Walter Gropius in 1919?",
-          "a": "The Bauhaus school"
+          "a": "The Bauhaus school",
+          "explanation": "Walter Gropius founded the Bauhaus school, pioneering modernist design combining art and industrial technology."
         },
         {
+          "stage": 3,
+          "question": "What was the name of the revolutionary school of design and architecture founded in Weimar Germany?",
+          "q": "What was the name of the revolutionary school of design and architecture founded in Weimar Germany?",
+          "options": [
+            "The Avant-garde",
+            "The New Objectivity",
+            "The Reichstag",
+            "The Bauhaus"
+          ],
+          "answer": "The Bauhaus",
+          "a": "The Bauhaus",
+          "explanation": "In 1919, visionary architect Walter Gropius Bauhaus founded the celebrated Bauhaus school of design in Weimar, pioneering a bold new creative philosophy that bridged fine arts with practical industrial craftsmanship, boldly declaring that physical form must seamlessly follow all practical utilitarian function."
+        },
+        {
+          "stage": 4,
           "question": "What was the name of the new movement in art that painted the gritty reality of everyday German life?",
+          "q": "What was the name of the new movement in art that painted the gritty reality of everyday German life?",
           "options": [
             "Cubism",
             "Expressionism",
             "New Objectivity (Neue Sachlichkeit)",
             "Romanticism"
           ],
-          "answer": 2
+          "answer": "New Objectivity (Neue Sachlichkeit)",
+          "a": "New Objectivity (Neue Sachlichkeit)",
+          "explanation": "Disillusioned by the horrors of the First World War and rapid urban commercialism, German painters pioneered the celebrated Neue Sachlichkeit art (New Objectivity) movement across major German cities during the nineteen-twenties."
         },
         {
+          "stage": 4,
           "question": "Name two famous German artists associated with the New Objectivity movement.",
+          "q": "Name two famous German artists associated with the New Objectivity movement.",
           "options": [
             "Walter Gropius and Fritz Lang",
             "George Grosz and Otto Dix",
             "Gustav Stresemann and Paul von Hindenburg",
             "Marlene Dietrich and Rosa Luxemburg"
           ],
-          "answer": 1
+          "answer": "George Grosz and Otto Dix",
+          "a": "George Grosz and Otto Dix",
+          "explanation": "Influential master painter Otto Dix expressionism depicted mutilated veteran amputees and the visceral psychological trauma of trench warfare, while satirical genius George Grosz satire mocked the moral hypocrisy of capitalist elites and greedy generals in unsparing drawings and canvas oil paintings, establishing Weimar visual culture as the most biting, socially conscious artistic renaissance anywhere in twentieth-century Europe."
         },
         {
-          "question": "What was the name of the revolutionary school of design and architecture founded in Weimar Germany?",
-          "options": [
-            "The Avant-garde",
-            "The New Objectivity",
-            "The Bauhaus",
-            "The Reichstag"
-          ],
-          "answer": 2
-        },
-        {
-          "question": "Who was the founder of the Bauhaus movement?",
-          "options": [
-            "Walter Gropius",
-            "Otto Dix",
-            "Fritz Lang",
-            "George Grosz"
-          ],
-          "answer": 0
-        },
-        {
-          "question": "What was the core architectural philosophy of the Bauhaus movement under Walter Gropius?",
-          "options": [
-            "Functional modernist design combining art and industrial technology",
-            "Recreating elaborate 19th-century imperial Prussian palaces",
-            "Banning all metal, steel, and reinforced concrete in construction",
-            "Painting all public buildings in medieval Gothic motifs"
-          ],
-          "answer": "Functional modernist design combining art and industrial technology",
-          "explanation": "Bauhaus championed functional simplicity, clean lines, and industrial materials under the slogan 'Art and Technology: A New Unity'.",
-          "q": "What was the core architectural philosophy of the Bauhaus movement under Walter Gropius?",
-          "a": "Functional modernist design combining art and industrial technology"
-        },
-        {
-          "question": "Who directed the groundbreaking 1927 science-fiction film Metropolis?",
-          "options": [
-            "Marlene Dietrich",
-            "Walter Gropius",
-            "George Grosz",
-            "Fritz Lang"
-          ],
-          "answer": 3
-        },
-        {
-          "question": "Which visionary German filmmaker directed the dystopian science-fiction masterpiece Metropolis in 1927?",
-          "options": [
-            "Fritz Lang",
-            "Walter Gropius",
-            "Otto Dix",
-            "George Grosz"
-          ],
-          "answer": "Fritz Lang",
-          "explanation": "Director Fritz Lang created Metropolis in 1927, an iconic cinematic achievement of Weimar expressionist film.",
-          "q": "Which visionary German filmmaker directed the dystopian science-fiction masterpiece Metropolis in 1927?",
-          "a": "Fritz Lang"
-        },
-        {
-          "question": "Why did right-wing groups and the Nazi Party despise the cultural changes of the 1920s?",
-          "options": [
-            "They thought it cost too much money to fund",
-            "They believed the new culture was immoral, un-German, and undermined traditional family values",
-            "They wanted Berlin to be more like Paris",
-            "They believed it was not experimental enough"
-          ],
-          "answer": 1
-        },
-        {
+          "stage": 4,
           "question": "Which Weimar artists captured the cynicism of post-war society through harsh satirical paintings of wounded veterans and corrupt elites?",
+          "q": "Which Weimar artists captured the cynicism of post-war society through harsh satirical paintings of wounded veterans and corrupt elites?",
           "options": [
             "Otto Dix and George Grosz",
             "Claude Monet and Pierre Renoir",
@@ -5215,19 +5539,78 @@ window.unitData = {
             "Vincent van Gogh and Paul Gauguin"
           ],
           "answer": "Otto Dix and George Grosz",
-          "explanation": "Painters Otto Dix and George Grosz led the New Objectivity movement, producing biting visual satires of Weimar society.",
-          "q": "Which Weimar artists captured the cynicism of post-war society through harsh satirical paintings of wounded veterans and corrupt elites?",
-          "a": "Otto Dix and George Grosz"
+          "a": "Otto Dix and George Grosz",
+          "explanation": "Painters Otto Dix and George Grosz led the New Objectivity movement, producing biting visual satires of Weimar society."
         },
         {
-          "question": "Which social class deeply resented the improvements made for the working classes because they had not recovered their own lost savings?",
+          "stage": 4,
+          "question": "What subjects did New Objectivity painters like Otto Dix and George Grosz depict to critique post-war Weimar society?",
+          "q": "What subjects did New Objectivity painters like Otto Dix and George Grosz depict to critique post-war Weimar society?",
           "options": [
-            "The middle classes",
-            "The working classes",
-            "The upper class",
-            "Farmers"
+            "Romanticized medieval knights and castles",
+            "Heroic portraits of Kaiser Wilhelm II",
+            "Idyllic Alpine peasant harvests",
+            "Mutilated war veterans and corrupt industrialists"
           ],
-          "answer": 0
+          "answer": "Mutilated war veterans and corrupt industrialists",
+          "a": "Mutilated war veterans and corrupt industrialists",
+          "explanation": "Neue Sachlichkeit artists rejected romantic escapism, painting wounded trench amputees and greedy elites with stinging satirical realism."
+        },
+        {
+          "stage": 5,
+          "question": "Who directed the groundbreaking 1927 science-fiction film Metropolis?",
+          "q": "Who directed the groundbreaking 1927 science-fiction film Metropolis?",
+          "options": [
+            "Marlene Dietrich",
+            "Walter Gropius",
+            "Fritz Lang",
+            "George Grosz"
+          ],
+          "answer": "Fritz Lang",
+          "a": "Fritz Lang",
+          "explanation": "German directors continuously pushed technical boundaries, producing visionary cinematic masterpieces like director Fritz Lang Metropolis (1927), a groundbreaking science-fiction epic exploring industrialization and class warfare that established German expressionist cinema as the most technically innovative and artistically daring film industry in Europe."
+        },
+        {
+          "stage": 5,
+          "question": "Which visionary German filmmaker directed the dystopian science-fiction masterpiece Metropolis in 1927?",
+          "q": "Which visionary German filmmaker directed the dystopian science-fiction masterpiece Metropolis in 1927?",
+          "options": [
+            "Walter Gropius",
+            "Fritz Lang",
+            "Otto Dix",
+            "George Grosz"
+          ],
+          "answer": "Fritz Lang",
+          "a": "Fritz Lang",
+          "explanation": "Director Fritz Lang created Metropolis in 1927, an iconic cinematic achievement of Weimar expressionist film."
+        },
+        {
+          "stage": 5,
+          "question": "Which famous film studio in Babelsberg outside Berlin made Weimar cinema the most technically innovative in Europe?",
+          "q": "Which famous film studio in Babelsberg outside Berlin made Weimar cinema the most technically innovative in Europe?",
+          "options": [
+            "UFA film studios",
+            "Bavaria Propaganda Studios",
+            "Paramount Munich Studios",
+            "Bauhaus Cinema Guild"
+          ],
+          "answer": "UFA film studios",
+          "a": "UFA film studios",
+          "explanation": "Centered at the UFA film studios in Babelsberg, visionary directors like Fritz Lang produced expressionist masterpieces such as Metropolis (1927)."
+        },
+        {
+          "stage": 5,
+          "question": "How did right-wing nationalists and traditional rural conservatives react to Berlin's modernist Weimar cabaret and artistic culture?",
+          "q": "How did right-wing nationalists and traditional rural conservatives react to Berlin's modernist Weimar cabaret and artistic culture?",
+          "options": [
+            "Celebrated cabaret culture as a proud Prussian tradition",
+            "Subsidized modernist Bauhaus galleries in rural villages",
+            "Petitioned the Reichstag to abolish censorship of jazz",
+            "Denounced Weimar culture as un-German, decadent, and morally degenerate"
+          ],
+          "answer": "Denounced Weimar culture as un-German, decadent, and morally degenerate",
+          "a": "Denounced Weimar culture as un-German, decadent, and morally degenerate",
+          "explanation": "Traditionalists and nationalists fiercely attacked avant-garde Weimar art and cabaret life as morally degenerate evidence that democracy was poisoning Germany."
         }
       ],
       "vocab_cloze_text": "During the 'Golden Age', Germany's [Standard of Living] improved for many, supported by progressive welfare reforms like the [Unemployment Insurance Act (1927)]. Women were granted equal voting rights under [Article 109], paving the way for the socially liberated, independent [New Woman (Neue Frau)] who embraced modern fashion and work. Culturally, Berlin became a vibrant hub of [Avant-garde] experimentation; artists embraced the realism of [New Objectivity (Neue Sachlichkeit)], while the revolutionary [Bauhaus] movement transformed architecture and design with its sleek, functional aesthetic.",
@@ -5822,8 +6205,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Weimar social reforms saw average <strong>real wages increase</strong>, protected vulnerable families through the landmark <strong>1927 Unemployment Insurance</strong> Act, and funded extensive <strong>municipal housing construction</strong> across German cities.",
-          "title": "How did welfare legislation and real wage growth raise living standards?",
-          "dates": "1924–1928"
+          "title": "Rising Wages & The 1927 Unemployment Act",
+          "dates": "1924–1928",
+          "question": "How did welfare legislation and real wage growth raise living standards?",
+          "questionHeading": "How did welfare legislation and real wage growth raise living standards?",
+          "prose_hash": "f84ea0877c"
         },
         {
           "step": 2,
@@ -5851,8 +6237,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Urban society embraced the emancipated <strong>Weimar 'New Woman'</strong>, who gained representation through elected <strong>female Reichstag deputies</strong> and enjoyed greater <strong>financial employment independence</strong> in modern white-collar jobs.",
-          "title": "Why did urban women experience new freedoms while traditional roles persisted?",
-          "dates": "1924–1929"
+          "title": "The \"New Woman\" in Politics & Work",
+          "dates": "1924–1929",
+          "question": "Why did urban women experience new freedoms while traditional roles persisted?",
+          "questionHeading": "Why did urban women experience new freedoms while traditional roles persisted?",
+          "prose_hash": "5853e1af46"
         },
         {
           "step": 3,
@@ -5880,8 +6269,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Architectural innovation was pioneered by <strong>Walter Gropius Bauhaus</strong> school, which championed sleek <strong>modernist functional architecture</strong> from its groundbreaking <strong>Dessau design campus</strong>.",
-          "title": "How did the Bauhaus school embody modern functionalist design?",
-          "dates": "1925–1929"
+          "title": "The Bauhaus Movement & Modernist Architecture",
+          "dates": "1925–1929",
+          "question": "How did the Bauhaus school embody modern functionalist design?",
+          "questionHeading": "How did the Bauhaus school embody modern functionalist design?",
+          "prose_hash": "b664cc4159"
         },
         {
           "step": 4,
@@ -5909,8 +6301,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Weimar painters rejected romanticism in favour of cynical <strong>Neue Sachlichkeit art</strong>, showcased through raw <strong>Otto Dix expressionism</strong> and biting <strong>George Grosz satire</strong> targeting war profiteers.",
-          "title": "Why did Neue Sachlichkeit painters reject traditional romantic art?",
-          "dates": "1924–1929"
+          "title": "Neue Sachlichkeit & Weimar Cinema",
+          "dates": "1924–1929",
+          "question": "Why did Neue Sachlichkeit painters reject traditional romantic art?",
+          "questionHeading": "Why did Neue Sachlichkeit painters reject traditional romantic art?",
+          "prose_hash": "83ecb2dbc5"
         },
         {
           "step": 5,
@@ -5938,8 +6333,11 @@ window.unitData = {
             }
           ],
           "model_sentence": "Although cinematic masterpieces like <strong>Fritz Lang Metropolis</strong> produced at famous <strong>UFA film studios</strong> brought global acclaim, avant-garde experimentation provoked an intense <strong>conservative cultural backlash</strong> from traditionalists.",
-          "title": "Why did conservative Germans view Berlin culture as degenerate?",
-          "dates": "1926–1929"
+          "title": "Cultural Backlash & Societal Division",
+          "dates": "1926–1929",
+          "question": "Why did conservative Germans view Berlin culture as degenerate?",
+          "questionHeading": "Why did conservative Germans view Berlin culture as degenerate?",
+          "prose_hash": "3e2a0e70a1"
         }
       ],
       "causal_domino_spine": {
@@ -5956,7 +6354,8 @@ window.unitData = {
             "trigger": "Economic stabilization boosted real wages by 9–12% and enabled the passage of the 1927 Unemployment Insurance Act protecting 16.4 million workers.",
             "desc": "Economic stabilization boosted real wages by 9–12% and enabled the passage of the 1927 Unemployment Insurance Act protecting 16.4 million workers.",
             "connective": "Raised working-class living standards and built 2m subsidized apartments, but placed heavy tax burdens on middle-class business owners.",
-            "question": "How did welfare legislation and real wage growth raise living standards?"
+            "question": "How did welfare legislation and real wage growth raise living standards?",
+            "prose_hash": "f84ea0877c"
           },
           {
             "step": 2,
@@ -5968,7 +6367,8 @@ window.unitData = {
             "trigger": "Article 109 guaranteed equal rights, electing women to 10% of Reichstag seats while expanding white-collar secretarial employment in cities.",
             "desc": "Article 109 guaranteed equal rights, electing women to 10% of Reichstag seats while expanding white-collar secretarial employment in cities.",
             "connective": "Fostered financial independence and modern bobbed-hair styles, but provoked conservative backlash against working wives as \"double-earners.\"",
-            "question": "Why did urban women experience new freedoms while traditional roles persisted?"
+            "question": "Why did urban women experience new freedoms while traditional roles persisted?",
+            "prose_hash": "5853e1af46"
           },
           {
             "step": 3,
@@ -5980,7 +6380,8 @@ window.unitData = {
             "trigger": "Walter Gropius relocated the Bauhaus school to Dessau, pioneering functionalist architecture with steel-frame construction and glass curtain walls.",
             "desc": "Walter Gropius relocated the Bauhaus school to Dessau, pioneering functionalist architecture with steel-frame construction and glass curtain walls.",
             "connective": "Revolutionized twentieth-century industrial design and municipal housing, embodying democratic, forward-looking Weimar culture.",
-            "question": "How did the Bauhaus school embody modern functionalist design?"
+            "question": "How did the Bauhaus school embody modern functionalist design?",
+            "prose_hash": "b664cc4159"
           },
           {
             "step": 4,
@@ -5992,7 +6393,8 @@ window.unitData = {
             "trigger": "Painters Otto Dix and George Grosz created biting satirical portraits of society, while UFA Babelsberg produced cinematic classics like Metropolis.",
             "desc": "Painters Otto Dix and George Grosz created biting satirical portraits of society, while UFA Babelsberg produced cinematic classics like Metropolis.",
             "connective": "Made Berlin the vibrant entertainment capital of Europe, but exposed raw social fractures between war veterans and corrupt wealthy elites.",
-            "question": "Why did Neue Sachlichkeit painters reject traditional romantic art?"
+            "question": "Why did Neue Sachlichkeit painters reject traditional romantic art?",
+            "prose_hash": "83ecb2dbc5"
           },
           {
             "step": 5,
@@ -6004,7 +6406,8 @@ window.unitData = {
             "trigger": "Conservative churchgoers, rural provincial communities, and right-wing nationalists condemned Berlin modernism as decadent \"Cultural Bolshevism.\"",
             "desc": "Conservative churchgoers, rural provincial communities, and right-wing nationalists condemned Berlin modernism as decadent \"Cultural Bolshevism.\"",
             "connective": "Deepened political polarization, ensuring conservative Germans remained culturally alienated from the Republic when economic crisis struck in 1929.",
-            "question": "Why did conservative Germans view Berlin culture as degenerate?"
+            "question": "Why did conservative Germans view Berlin culture as degenerate?",
+            "prose_hash": "3e2a0e70a1"
           }
         ]
       },
@@ -6228,48 +6631,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What was the Spartacist Uprising (1919)?",
-            "answer": "A communist attempt to overthrow the Weimar government in Berlin."
+            "stage": 1,
+            "question": "What major welfare law was passed in 1927 to protect workers?",
+            "answer": "The Unemployment Insurance Act",
+            "explanation": "In 1927, the Reichstag passed landmark 1927 Unemployment Insurance legislation, guaranteeing weekly state benefits to over seventeen million workers during periods of temporary unemployment."
           },
           {
-            "question": "Who led the Spartacist Uprising?",
-            "answer": "Rosa Luxemburg and Karl Liebknecht."
+            "stage": 2,
+            "question": "What term was used by the media to describe young, independent, fashion-conscious women in the 1920s?",
+            "answer": "The 'New Woman' (Neue Frau)",
+            "explanation": "In major urban centers, young working women embraced the modern image of the Weimar 'New Woman', cutting their hair into short 'Bubikopf' bobs, smoking in public, and wearing fashionable cosmetics."
           },
           {
-            "question": "Who were the Freikorps?",
-            "answer": "Right-wing ex-soldiers who hated communists and helped crush the Spartacist Uprising."
+            "stage": 3,
+            "question": "By what percentage did 'real wages' for German workers rise between 1925 and 1928?",
+            "answer": "25%",
+            "explanation": "When the school relocated to its iconic Dessau design campus in 1925, its tubular steel furniture, streamlined typography, and functionalist apartment blocks became globally celebrated symbols of progressive European artistic modernism and functional industrial craftsmanship."
           },
           {
-            "question": "What was the Kapp Putsch (1920)?",
-            "answer": "A right-wing attempt by Wolfgang Kapp and the Freikorps to overthrow the government."
+            "stage": 4,
+            "question": "What was the name of the new movement in art that painted the gritty reality of everyday German life?",
+            "answer": "New Objectivity (Neue Sachlichkeit)",
+            "explanation": "Disillusioned by the horrors of the First World War and rapid urban commercialism, German painters pioneered the celebrated Neue Sachlichkeit art (New Objectivity) movement across major German cities during the nineteen-twenties."
           },
           {
-            "question": "How did the government defeat the Kapp Putsch?",
-            "answer": "They asked the workers of Berlin to go on a general strike."
+            "stage": 5,
+            "question": "Who directed the groundbreaking 1927 science-fiction film Metropolis?",
+            "answer": "Fritz Lang",
+            "explanation": "German directors continuously pushed technical boundaries, producing visionary cinematic masterpieces like director Fritz Lang Metropolis (1927), a groundbreaking science-fiction epic exploring industrialization and class warfare that established German expressionist cinema as the most technically innovative and artistically daring film industry in Europe."
           },
           {
-            "question": "How much were the reparations set at?",
-            "answer": "£6.6 billion."
+            "stage": 1,
+            "question": "How many modern homes were constructed between 1924 and 1931 using state subsidies to alleviate the housing shortage?",
+            "answer": "Over 2 million modern homes",
+            "explanation": "The Weimar state funded extensive public housing, constructing over 2 million modern homes between 1924 and 1931."
           },
           {
-            "question": "What was the War Guilt Clause?",
-            "answer": "Article 231 of the Treaty of Versailles."
+            "stage": 2,
+            "question": "What German name was given to the fashionable short bobbed hairstyle worn by emancipated young women in 1920s cities?",
+            "answer": "The Bubikopf",
+            "explanation": "Urban 'New Women' cut their hair into short Bubikopf bobs, smoked in public, and wore modern cosmetics in defiance of traditional gender norms."
           },
           {
-            "question": "What was Article 48?",
-            "answer": "The President's emergency power."
+            "stage": 3,
+            "question": "What percentage of a worker's wage was deducted to fund the 1927 Unemployment Insurance Act?",
+            "answer": "3%",
+            "explanation": "Weimar Germany rapidly became the dynamic epicenter of a revolutionary modernist movement in architecture and visual arts."
           },
           {
-            "question": "What was the 'stab in the back' myth?",
-            "answer": "The belief that Germany was betrayed by politicians."
+            "stage": 4,
+            "question": "Name two famous German artists associated with the New Objectivity movement.",
+            "answer": "George Grosz and Otto Dix",
+            "explanation": "Influential master painter Otto Dix expressionism depicted mutilated veteran amputees and the visceral psychological trauma of trench warfare, while satirical genius George Grosz satire mocked the moral hypocrisy of capitalist elites and greedy generals in unsparing drawings and canvas oil paintings, establishing Weimar visual culture as the most biting, socially conscious artistic renaissance anywhere in twentieth-century Europe."
           },
           {
-            "question": "What is a 'republic'?",
-            "answer": "A country without a monarch."
+            "stage": 5,
+            "question": "Which visionary German filmmaker directed the dystopian science-fiction masterpiece Metropolis in 1927?",
+            "answer": "Fritz Lang",
+            "explanation": "Director Fritz Lang created Metropolis in 1927, an iconic cinematic achievement of Weimar expressionist film."
           }
         ]
       },
@@ -6336,8 +6758,8 @@ window.unitData = {
         {
           "title": "The Furrier's Son in the Sterneckerbräu: Anton Drexler and the German Workers’ Party (Sep 1919)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> In September 1919, army intelligence agent Adolf Hitler was ordered to monitor political subversion in Munich. Dispatched to small **Munich beer-cellar meetings** inside the Sterneckerbräu, he investigated the obscure **Anton Drexler DAP** (German Workers' Party). Founded by railway mechanic Drexler, the penniless nationalist group comprised just fifty members, lacking any formal manifesto or significant party funds.\n\n<span class=\"para-ref\">[1.2]</span> When an audience member advocated Bavarian secession, Hitler delivered an impassioned nationalist rebuttal that astonished party leaders. Drexler immediately invited him to join, leading to **Adolf Hitler joins (1919)** as committee member number 555. Hitler quickly assumed control of propaganda, discovering a charismatic rhetorical talent that soon transformed obscure beer hall gatherings into dynamic mass political rallies across Bavaria.",
-          "content": "<span class=\"para-ref\">[1.1]</span> In September 1919, army intelligence agent Adolf Hitler was ordered to monitor political subversion in Munich. Dispatched to small **Munich beer-cellar meetings** inside the Sterneckerbräu, he investigated the obscure **Anton Drexler DAP** (German Workers' Party). Founded by railway mechanic Drexler, the penniless nationalist group comprised just fifty members, lacking any formal manifesto or significant party funds.\n\n<span class=\"para-ref\">[1.2]</span> When an audience member advocated Bavarian secession, Hitler delivered an impassioned nationalist rebuttal that astonished party leaders. Drexler immediately invited him to join, leading to **Adolf Hitler joins (1919)** as committee member number 555. Hitler quickly assumed control of propaganda, discovering a charismatic rhetorical talent that soon transformed obscure beer hall gatherings into dynamic mass political rallies across Bavaria.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In September 1919, army intelligence agent Adolf Hitler was ordered to watch fringe political groups in **Munich** in **Bavaria**. Visiting small **Munich beer-cellar meetings** at the Sterneckerbräu, he checked on the tiny **DAP (German Workers' Party)** founded by railway locksmith **Anton Drexler**. At the time, the group had just fifty members and little money.\n\n<span class=\"para-ref\">[1.2]</span> When a speaker urged Bavaria to break away from Germany, Hitler jumped up and gave a fiery nationalist reply. Impressed, **Anton Drexler** invited him to join in **1919** as committee member number 555; Hitler soon took charge of propaganda and turned small beer-hall talks into packed rallies.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In September 1919, army intelligence agent Adolf Hitler was ordered to watch fringe political groups in **Munich** in **Bavaria**. Visiting small **Munich beer-cellar meetings** at the Sterneckerbräu, he checked on the tiny **DAP (German Workers' Party)** founded by railway locksmith **Anton Drexler**. At the time, the group had just fifty members and little money.\n\n<span class=\"para-ref\">[1.2]</span> When a speaker urged Bavaria to break away from Germany, Hitler jumped up and gave a fiery nationalist reply. Impressed, **Anton Drexler** invited him to join in **1919** as committee member number 555; Hitler soon took charge of propaganda and turned small beer-hall talks into packed rallies.",
           "sources": [
             {
               "id": "weimar_l5_source_drexler",
@@ -6397,8 +6819,8 @@ window.unitData = {
         {
           "title": "The 25-Point Programme: Anti-Versailles Grievances and Populist Rhetoric (Feb 1920)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> In February 1920, Hitler and Drexler presented their political manifesto to two thousand listeners in Munich’s Hofbräuhaus, unveiling the radical **25-Point NSDAP Programme**. Combining extreme pan-German nationalism with anti-capitalist rhetoric, the platform fiercely demanded total **Versailles Treaty repudiation**, the immediate unification of all German-speaking populations into a Greater Germany, and the nationalization of major industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the platform enshrined racial anti-Semitism as foundational doctrine through strict **anti-Semitic citizenship exclusion**. Point 4 explicitly declared that no person of Jewish blood could remain a German citizen, demanding that non-citizens be deported if food shortages occurred. This inflammatory synthesis of nationalist grievance, welfare promises, and racial scapegoating established the core ideological architecture of the early Nazi movement.",
-          "content": "<span class=\"para-ref\">[2.1]</span> In February 1920, Hitler and Drexler presented their political manifesto to two thousand listeners in Munich’s Hofbräuhaus, unveiling the radical **25-Point NSDAP Programme**. Combining extreme pan-German nationalism with anti-capitalist rhetoric, the platform fiercely demanded total **Versailles Treaty repudiation**, the immediate unification of all German-speaking populations into a Greater Germany, and the nationalization of major industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the platform enshrined racial anti-Semitism as foundational doctrine through strict **anti-Semitic citizenship exclusion**. Point 4 explicitly declared that no person of Jewish blood could remain a German citizen, demanding that non-citizens be deported if food shortages occurred. This inflammatory synthesis of nationalist grievance, welfare promises, and racial scapegoating established the core ideological architecture of the early Nazi movement.",
+          "text": "<span class=\"para-ref\">[2.1]</span> In February **1920**, before two thousand listeners in Munich’s **Hofbräuhaus**, Hitler and Drexler unveiled the **25-Point Programme**. Combining fierce nationalism with anti-capitalist rhetoric, it demanded the revocation of the Treaty of Versailles and the unification of all Germans into a Greater Germany. It also called for state control of big industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Above all, Point 4 made racial anti-Semitism core party policy. It declared that no person of Jewish blood could remain a German citizen and called for non-citizens to be deported during food shortages. Mixing anger over Versailles, welfare promises, and anti-Jewish scapegoating gave the early Nazi movement its core appeal.",
+          "content": "<span class=\"para-ref\">[2.1]</span> In February **1920**, before two thousand listeners in Munich’s **Hofbräuhaus**, Hitler and Drexler unveiled the **25-Point Programme**. Combining fierce nationalism with anti-capitalist rhetoric, it demanded the revocation of the Treaty of Versailles and the unification of all Germans into a Greater Germany. It also called for state control of big industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Above all, Point 4 made racial anti-Semitism core party policy. It declared that no person of Jewish blood could remain a German citizen and called for non-citizens to be deported during food shortages. Mixing anger over Versailles, welfare promises, and anti-Jewish scapegoating gave the early Nazi movement its core appeal.",
           "sources": [
             {
               "id": "weimar_l5_source_a",
@@ -6454,8 +6876,8 @@ window.unitData = {
         {
           "title": "The Hooked Cross: Rebranding the NSDAP, the Völkischer Beobachter and the Swastika Standard (1920–1921)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> In summer 1920, Hitler directed an aggressive **NSDAP party rebranding**, renaming the organization the National Socialist German Workers' Party to broaden its working-class appeal. Recognizing the necessity of striking visual theater, he adopted the black hooked **swastika party emblem**, angled inside a white circle upon a red field. The design cleverly co-opted imperial colors while deliberately provoking left-wing socialist rivals across Munich.\n\n<span class=\"para-ref\">[3.2]</span> In December 1920, wealthy nationalist donors helped the party purchase the **Völkischer Beobachter newspaper**, giving Hitler an influential print mouthpiece to circulate anti-republican propaganda and racial conspiracy theories. Armed with distinctive paramilitary insignia, printed party newspapers, and regular beer hall rallies drawing thousands of paying spectators, Hitler established himself as the party’s indispensable and dominant public figure.",
-          "content": "<span class=\"para-ref\">[3.1]</span> In summer 1920, Hitler directed an aggressive **NSDAP party rebranding**, renaming the organization the National Socialist German Workers' Party to broaden its working-class appeal. Recognizing the necessity of striking visual theater, he adopted the black hooked **swastika party emblem**, angled inside a white circle upon a red field. The design cleverly co-opted imperial colors while deliberately provoking left-wing socialist rivals across Munich.\n\n<span class=\"para-ref\">[3.2]</span> In December 1920, wealthy nationalist donors helped the party purchase the **Völkischer Beobachter newspaper**, giving Hitler an influential print mouthpiece to circulate anti-republican propaganda and racial conspiracy theories. Armed with distinctive paramilitary insignia, printed party newspapers, and regular beer hall rallies drawing thousands of paying spectators, Hitler established himself as the party’s indispensable and dominant public figure.",
+          "text": "<span class=\"para-ref\">[3.1]</span> In summer 1920, Hitler rebranded the **German Workers' Party (DAP)** as the **NSDAP (National Socialist German Workers' Party)** to attract both nationalists and workers. Knowing the pull of bold visual theatre, he designed a red, white, and black banner carrying the crooked black **swastika** emblem.\n\n<span class=\"para-ref\">[3.2]</span> In December 1920, wealthy nationalist donors helped buy the Munich newspaper **Völkischer Beobachter**, giving Hitler a print voice for anti-Weimar propaganda and racial conspiracy theories. Backed by uniformed insignia, party newspapers, and beer-hall rallies drawing thousands of paying spectators, Hitler became the party’s dominant public figure.",
+          "content": "<span class=\"para-ref\">[3.1]</span> In summer 1920, Hitler rebranded the **German Workers' Party (DAP)** as the **NSDAP (National Socialist German Workers' Party)** to attract both nationalists and workers. Knowing the pull of bold visual theatre, he designed a red, white, and black banner carrying the crooked black **swastika** emblem.\n\n<span class=\"para-ref\">[3.2]</span> In December 1920, wealthy nationalist donors helped buy the Munich newspaper **Völkischer Beobachter**, giving Hitler a print voice for anti-Weimar propaganda and racial conspiracy theories. Backed by uniformed insignia, party newspapers, and beer-hall rallies drawing thousands of paying spectators, Hitler became the party’s dominant public figure.",
           "sources": [
             {
               "id": "weimar_l5_source_c",
@@ -6513,8 +6935,8 @@ window.unitData = {
         {
           "title": "The Autocratic Dictator: Hitler Seizes the Führerprinzip and Ousts Drexler (Jul 1921)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> By summer 1921, fierce rivalries emerged between Hitler and the founding party committee. When Drexler sought a merger with rival nationalist groups to dilute Hitler's growing authority, Hitler delivered a dramatic **resignation ultimatum (Jul 1921)**. Knowing the party faced financial bankruptcy and collapse without its star orator, members capitulated, voting overwhelmingly to grant Hitler total dictatorial control over all party operations.\n\n<span class=\"para-ref\">[4.2]</span> This internal victory saw founder **Anton Drexler sidelined** into a powerless honorary role, establishing absolute **Führerprinzip absolute leadership** across the party. Democratic voting was formally abandoned in favor of unquestioned personal loyalty to Hitler’s will. From this turning point, all local branches and party officials were appointed from above, cementing an authoritarian chain of command modeled on Prussian military discipline.",
-          "content": "<span class=\"para-ref\">[4.1]</span> By summer 1921, fierce rivalries emerged between Hitler and the founding party committee. When Drexler sought a merger with rival nationalist groups to dilute Hitler's growing authority, Hitler delivered a dramatic **resignation ultimatum (Jul 1921)**. Knowing the party faced financial bankruptcy and collapse without its star orator, members capitulated, voting overwhelmingly to grant Hitler total dictatorial control over all party operations.\n\n<span class=\"para-ref\">[4.2]</span> This internal victory saw founder **Anton Drexler sidelined** into a powerless honorary role, establishing absolute **Führerprinzip absolute leadership** across the party. Democratic voting was formally abandoned in favor of unquestioned personal loyalty to Hitler’s will. From this turning point, all local branches and party officials were appointed from above, cementing an authoritarian chain of command modeled on Prussian military discipline.",
+          "text": "<span class=\"para-ref\">[4.1]</span> By July **1921**, sharp rivalries broke out between Hitler and the founding committee when Drexler sought a merger with rival nationalist groups. Hitler issued a dramatic **resignation ultimatum**, knowing the party faced ruin without its star speaker. Committee leaders gave in and voted to grant Hitler sole power.\n\n<span class=\"para-ref\">[4.2]</span> Founder **Anton Drexler** was pushed into a powerless honorary role as Hitler enforced the **Führerprinzip** (\"Leadership Principle\") across the party. Democratic voting ended; every local branch and party official now owed unquestioned personal obedience to Hitler's commands from above.",
+          "content": "<span class=\"para-ref\">[4.1]</span> By July **1921**, sharp rivalries broke out between Hitler and the founding committee when Drexler sought a merger with rival nationalist groups. Hitler issued a dramatic **resignation ultimatum**, knowing the party faced ruin without its star speaker. Committee leaders gave in and voted to grant Hitler sole power.\n\n<span class=\"para-ref\">[4.2]</span> Founder **Anton Drexler** was pushed into a powerless honorary role as Hitler enforced the **Führerprinzip** (\"Leadership Principle\") across the party. Democratic voting ended; every local branch and party official now owed unquestioned personal obedience to Hitler's commands from above.",
           "sources": [
             {
               "id": "weimar_l5_source_e",
@@ -6570,8 +6992,8 @@ window.unitData = {
         {
           "title": "The Brownshirt Brawlers: Ernst Röhm and the Formation of the Sturmabteilung (Aug 1921)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> As Nazi assemblies expanded, meetings encountered violent counter-demonstrations from communist and socialist opponents. In October 1921, Hitler formalized his bodyguard units into the **Sturmabteilung (SA) Brownshirts**, recruiting demobilized soldiers, brawlers, and nationalist Freikorps veterans. Clad in surplus military uniforms, these stormtroopers maintained aggressive discipline, violently clearing rival hecklers and transforming party gatherings into militaristic demonstrations of street power.\n\n<span class=\"para-ref\">[5.2]</span> Under charismatic Captain **Ernst Röhm leadership**, the SA expanded rapidly, securing clandestine access to hidden army weapons caches. The stormtroopers engaged in systematic **rival party intimidation**, attacking left-wing headquarters, assaulting communist newspaper sellers, and terrorizing political opponents across Munich. By 1922, over six thousand armed SA men provided the Nazi leadership with a formidable private army that dominated Bavarian street politics.",
-          "content": "<span class=\"para-ref\">[5.1]</span> As Nazi assemblies expanded, meetings encountered violent counter-demonstrations from communist and socialist opponents. In October 1921, Hitler formalized his bodyguard units into the **Sturmabteilung (SA) Brownshirts**, recruiting demobilized soldiers, brawlers, and nationalist Freikorps veterans. Clad in surplus military uniforms, these stormtroopers maintained aggressive discipline, violently clearing rival hecklers and transforming party gatherings into militaristic demonstrations of street power.\n\n<span class=\"para-ref\">[5.2]</span> Under charismatic Captain **Ernst Röhm leadership**, the SA expanded rapidly, securing clandestine access to hidden army weapons caches. The stormtroopers engaged in systematic **rival party intimidation**, attacking left-wing headquarters, assaulting communist newspaper sellers, and terrorizing political opponents across Munich. By 1922, over six thousand armed SA men provided the Nazi leadership with a formidable private army that dominated Bavarian street politics.",
+          "text": "<span class=\"para-ref\">[5.1]</span> As rallies of the **National Socialist German Workers' Party (NSDAP)** grew, meetings faced fierce heckling from communists and socialists. In August 1921, Hitler organised the **Sturmabteilung (SA or Brownshirts)** from jobless ex-soldiers, brawlers, and Freikorps veterans wearing brown surplus army uniforms.\n\n<span class=\"para-ref\">[5.2]</span> Led by Captain **Ernst Röhm**, **the Brownshirts** gained hidden army weapons, guarded Nazi speakers, attacked left-wing offices, and beat up communist newspaper sellers across Munich. By 1922, over six thousand armed SA men gave Hitler a violent private army dominating Bavaria's streets.",
+          "content": "<span class=\"para-ref\">[5.1]</span> As rallies of the **National Socialist German Workers' Party (NSDAP)** grew, meetings faced fierce heckling from communists and socialists. In August 1921, Hitler organised the **Sturmabteilung (SA or Brownshirts)** from jobless ex-soldiers, brawlers, and Freikorps veterans wearing brown surplus army uniforms.\n\n<span class=\"para-ref\">[5.2]</span> Led by Captain **Ernst Röhm**, **the Brownshirts** gained hidden army weapons, guarded Nazi speakers, attacked left-wing offices, and beat up communist newspaper sellers across Munich. By 1922, over six thousand armed SA men gave Hitler a violent private army dominating Bavaria's streets.",
           "sources": [
             {
               "id": "weimar_l5_source_b",
@@ -6633,109 +7055,23 @@ window.unitData = {
       ],
       "quiz": [
         {
+          "stage": 1,
           "question": "Who was the original founder of the German Workers' Party (DAP) in 1919?",
+          "q": "Who was the original founder of the German Workers' Party (DAP) in 1919?",
           "options": [
             "Hermann Göring",
-            "Adolf Hitler",
             "Anton Drexler",
+            "Adolf Hitler",
             "Ernst Röhm"
           ],
-          "answer": "Anton Drexler"
+          "answer": "Anton Drexler",
+          "a": "Anton Drexler",
+          "explanation": "Dispatched to small Munich beer-cellar meetings inside the Sterneckerbräu, he investigated the obscure Anton Drexler DAP (German Workers' Party)."
         },
         {
-          "question": "Why did Adolf Hitler originally attend a DAP meeting in September 1919?",
-          "options": [
-            "He was invited by Anton Drexler",
-            "He was looking for a job as an administrator",
-            "He wanted to become the leader of the party",
-            "He was sent by the army as an intelligence officer to spy on them"
-          ],
-          "answer": "He was sent by the army as an intelligence officer to spy on them"
-        },
-        {
-          "question": "What Munich beer hall political party did Corporal Adolf Hitler join as party member 555 in 1919?",
-          "options": [
-            "The German Workers' Party (DAP)",
-            "The Social Democratic Party (SPD)",
-            "The Communist Party (KPD)",
-            "The Centre Party (Zentrum)"
-          ],
-          "answer": "The German Workers' Party (DAP)",
-          "explanation": "In September 1919, Corporal Adolf Hitler joined Anton Drexler's German Workers' Party (DAP) in Munich.",
-          "q": "What Munich beer hall political party did Corporal Adolf Hitler join as party member 555 in 1919?",
-          "a": "The German Workers' Party (DAP)"
-        },
-        {
-          "question": "In what year did Hitler and Drexler write the 25-Point Programme?",
-          "options": [
-            "1922",
-            "1920",
-            "1919",
-            "1921"
-          ],
-          "answer": "1920"
-        },
-        {
-          "question": "What core demand was prominent in the 25-Point Programme drafted by Drexler and Hitler in February 1920?",
-          "options": [
-            "The revocation of the Treaty of Versailles and the unification of all Germans",
-            "The permanent cession of the Rhineland to the French Republic",
-            "The total disarmament of all German police forces",
-            "The immediate conversion of Germany into a Soviet republic"
-          ],
-          "answer": "The revocation of the Treaty of Versailles and the unification of all Germans",
-          "explanation": "The 25-Point Programme demanded the cancellation of the Treaty of Versailles and the unification of all Germans into a Greater Germany.",
-          "q": "What core demand was prominent in the 25-Point Programme drafted by Drexler and Hitler in February 1920?",
-          "a": "The revocation of the Treaty of Versailles and the unification of all Germans"
-        },
-        {
-          "question": "What new name was adopted by the German Workers' Party in 1920 to broaden its mass appeal?",
-          "options": [
-            "The National Socialist German Workers' Party (NSDAP)",
-            "The German Democratic Coalition",
-            "The Imperial Patriot League",
-            "The Bavarian Monarchist Party"
-          ],
-          "answer": "The National Socialist German Workers' Party (NSDAP)",
-          "explanation": "In 1920, the DAP was renamed the National Socialist German Workers' Party (NSDAP) to appeal to both nationalist and working-class voters.",
-          "q": "What new name was adopted by the German Workers' Party in 1920 to broaden its mass appeal?",
-          "a": "The National Socialist German Workers' Party (NSDAP)"
-        },
-        {
-          "question": "What symbol did Hitler place inside a white circle on the party's red flag in 1920?",
-          "options": [
-            "The swastika",
-            "The iron cross",
-            "The imperial double eagle",
-            "The red star"
-          ],
-          "answer": "The swastika",
-          "explanation": "In 1920, Hitler oversaw the design of the NSDAP flag, placing the black swastika inside a white circle on a red background.",
-          "q": "What symbol did Hitler place inside a white circle on the party's red flag in 1920?",
-          "a": "The swastika"
-        },
-        {
-          "question": "What did Hitler officially rename the DAP to?",
-          "options": [
-            "The KPD / Communist Party of Germany",
-            "The NSDAP / National Socialist German Workers' Party",
-            "The SA / Sturmabteilung",
-            "The SDP / Social Democratic Party"
-          ],
-          "answer": "The NSDAP / National Socialist German Workers' Party"
-        },
-        {
-          "question": "In what year did Hitler force Drexler out and become the absolute leader of the Nazi Party?",
-          "options": [
-            "1921",
-            "1919",
-            "1923",
-            "1920"
-          ],
-          "answer": "1921"
-        },
-        {
+          "stage": 1,
           "question": "Who was the founder of the German Workers' Party (DAP) whom Hitler ousted to become party chairman in July 1921?",
+          "q": "Who was the founder of the German Workers' Party (DAP) whom Hitler ousted to become party chairman in July 1921?",
           "options": [
             "Anton Drexler",
             "Ernst Röhm",
@@ -6743,22 +7079,223 @@ window.unitData = {
             "Dietrich Eckart"
           ],
           "answer": "Anton Drexler",
-          "explanation": "Hitler outmaneuvered party founder Anton Drexler in July 1921, demanding and receiving absolute dictatorial control as chairman.",
-          "q": "Who was the founder of the German Workers' Party (DAP) whom Hitler ousted to become party chairman in July 1921?",
-          "a": "Anton Drexler"
+          "a": "Anton Drexler",
+          "explanation": "Hitler outmaneuvered party founder Anton Drexler in July 1921, demanding and receiving absolute dictatorial control as chairman."
         },
         {
-          "question": "What was the name of the official Nazi newspaper purchased in December 1920?",
+          "stage": 1,
+          "question": "Which specific German region and city was the early Nazi Party entirely based in?",
+          "q": "Which specific German region and city was the early Nazi Party entirely based in?",
           "options": [
-            "Munich Post",
-            "Das Reich",
-            "Völkischer Beobachter / People's Observer",
-            "Der Stürmer"
+            "Rhineland / Cologne",
+            "Prussia / Berlin",
+            "Saxony / Dresden",
+            "Bavaria / Munich"
           ],
-          "answer": "Völkischer Beobachter / People's Observer"
+          "answer": "Bavaria / Munich",
+          "a": "Bavaria / Munich",
+          "explanation": "In September 1919, army intelligence agent Adolf Hitler was ordered to monitor political subversion in Munich."
         },
         {
+          "stage": 1,
+          "question": "In what official capacity did Adolf Hitler first attend a Munich beer-cellar meeting of the German Workers' Party in September 1919?",
+          "q": "In what official capacity did Adolf Hitler first attend a Munich beer-cellar meeting of the German Workers' Party in September 1919?",
+          "options": [
+            "Bavarian Minister of Finance",
+            "Editor of a communist newspaper",
+            "An army intelligence agent",
+            "Commander of the Berlin Freikorps"
+          ],
+          "answer": "An army intelligence agent",
+          "a": "An army intelligence agent",
+          "explanation": "Deployed as an army intelligence agent to monitor Munich fringe groups, Hitler impressed Anton Drexler with a nationalist speech and was invited to join the DAP."
+        },
+        {
+          "stage": 2,
+          "question": "In what year did Hitler and Drexler write the 25-Point Programme?",
+          "q": "In what year did Hitler and Drexler write the 25-Point Programme?",
+          "options": [
+            "1922",
+            "1920",
+            "1919",
+            "1921"
+          ],
+          "answer": "1920",
+          "a": "1920",
+          "explanation": "In February 1920, Hitler and Drexler presented their political manifesto to two thousand listeners in Munich’s Hofbräuhaus, unveiling the radical 25-Point NSDAP Programme."
+        },
+        {
+          "stage": 2,
+          "question": "What core demand was prominent in the 25-Point Programme drafted by Drexler and Hitler in February 1920?",
+          "q": "What core demand was prominent in the 25-Point Programme drafted by Drexler and Hitler in February 1920?",
+          "options": [
+            "The revocation of the Treaty of Versailles and the unification of all Germans",
+            "The permanent cession of the Rhineland to the French Republic",
+            "The total disarmament of all German police forces",
+            "The immediate conversion of Germany into a Soviet republic"
+          ],
+          "answer": "The revocation of the Treaty of Versailles and the unification of all Germans",
+          "a": "The revocation of the Treaty of Versailles and the unification of all Germans",
+          "explanation": "The 25-Point Programme demanded the cancellation of the Treaty of Versailles and the unification of all Germans into a Greater Germany."
+        },
+        {
+          "stage": 2,
+          "question": "At which famous Munich beer hall did Hitler and Drexler unveil the 25-Point Programme before two thousand listeners in February 1920?",
+          "q": "At which famous Munich beer hall did Hitler and Drexler unveil the 25-Point Programme before two thousand listeners in February 1920?",
+          "options": [
+            "The Reichstag Dome",
+            "The Kroll Opera House",
+            "Weimar National Theatre",
+            "The Hofbräuhaus"
+          ],
+          "answer": "The Hofbräuhaus",
+          "a": "The Hofbräuhaus",
+          "explanation": "Presenting the 25-Point Programme at Munich's Hofbräuhaus in February 1920 fused anti-Versailles nationalism, populist welfare pledges, and racial anti-Semitism."
+        },
+        {
+          "stage": 2,
+          "question": "What did Point 4 of the 1920 Nazi 25-Point Programme explicitly declare regarding Jewish people?",
+          "q": "What did Point 4 of the 1920 Nazi 25-Point Programme explicitly declare regarding Jewish people?",
+          "options": [
+            "Jewish citizens must pay double reparations taxes",
+            "Jewish schools would receive equal state funding",
+            "No person of Jewish blood could remain a German citizen",
+            "Jewish veterans were exempt from party restrictions"
+          ],
+          "answer": "No person of Jewish blood could remain a German citizen",
+          "a": "No person of Jewish blood could remain a German citizen",
+          "explanation": "Point 4 enshrined racial anti-Semitism at the core of Nazi doctrine by declaring that no person of Jewish blood could be a citizen of the German nation."
+        },
+        {
+          "stage": 3,
+          "question": "What Munich beer hall political party did Corporal Adolf Hitler join as party member 555 in 1919?",
+          "q": "What Munich beer hall political party did Corporal Adolf Hitler join as party member 555 in 1919?",
+          "options": [
+            "The Social Democratic Party (SPD)",
+            "The German Workers' Party (DAP)",
+            "The Communist Party (KPD)",
+            "The Centre Party (Zentrum)"
+          ],
+          "answer": "The German Workers' Party (DAP)",
+          "a": "The German Workers' Party (DAP)",
+          "explanation": "In September 1919, Corporal Adolf Hitler joined Anton Drexler's German Workers' Party (DAP) in Munich."
+        },
+        {
+          "stage": 3,
+          "question": "What symbol did Hitler place inside a white circle on the party's red flag in 1920?",
+          "q": "What symbol did Hitler place inside a white circle on the party's red flag in 1920?",
+          "options": [
+            "The swastika",
+            "The iron cross",
+            "The imperial double eagle",
+            "The red star"
+          ],
+          "answer": "The swastika",
+          "a": "The swastika",
+          "explanation": "In 1920, Hitler oversaw the design of the NSDAP flag, placing the black swastika inside a white circle on a red background."
+        },
+        {
+          "stage": 3,
+          "question": "What did Hitler officially rename the DAP to?",
+          "q": "What did Hitler officially rename the DAP to?",
+          "options": [
+            "The KPD / Communist Party of Germany",
+            "The SA / Sturmabteilung",
+            "The SDP / Social Democratic Party",
+            "The NSDAP / National Socialist German Workers' Party"
+          ],
+          "answer": "The NSDAP / National Socialist German Workers' Party",
+          "a": "The NSDAP / National Socialist German Workers' Party",
+          "explanation": "In summer 1920, Hitler directed an aggressive NSDAP party rebranding, renaming the organization the National Socialist German Workers' Party to broaden its working-class appeal."
+        },
+        {
+          "stage": 3,
+          "question": "What ancient symbol did Hitler adopt and redesign to act as the party's logo?",
+          "q": "What ancient symbol did Hitler adopt and redesign to act as the party's logo?",
+          "options": [
+            "The Iron Cross",
+            "The Eagle",
+            "The Swastika",
+            "The Fascio"
+          ],
+          "answer": "The Swastika",
+          "a": "The Swastika",
+          "explanation": "Recognizing the necessity of striking visual theater, he adopted the black hooked swastika party emblem, angled inside a white circle upon a red field."
+        },
+        {
+          "stage": 4,
+          "question": "In what year did Hitler force Drexler out and become the absolute leader of the Nazi Party?",
+          "q": "In what year did Hitler force Drexler out and become the absolute leader of the Nazi Party?",
+          "options": [
+            "1919",
+            "1921",
+            "1923",
+            "1920"
+          ],
+          "answer": "1921",
+          "a": "1921",
+          "explanation": "By summer 1921, fierce rivalries emerged between Hitler and the founding party committee."
+        },
+        {
+          "stage": 4,
+          "question": "What tactical move did Hitler make in July 1921 when Anton Drexler tried to dilute his authority through a party merger?",
+          "q": "What tactical move did Hitler make in July 1921 when Anton Drexler tried to dilute his authority through a party merger?",
+          "options": [
+            "Issued a dramatic resignation ultimatum",
+            "Appealed to President Ebert for arbitration",
+            "Formed a rival communist party in Berlin",
+            "Marched armed stormtroopers against the Reichstag"
+          ],
+          "answer": "Issued a dramatic resignation ultimatum",
+          "a": "Issued a dramatic resignation ultimatum",
+          "explanation": "Knowing the party would collapse financially without its star speaker, the committee capitulated to Hitler's July 1921 resignation ultimatum and granted him dictatorial control."
+        },
+        {
+          "stage": 4,
+          "question": "What authoritarian principle established in July 1921 abolished internal party democracy in favour of unquestioned obedience to Hitler?",
+          "q": "What authoritarian principle established in July 1921 abolished internal party democracy in favour of unquestioned obedience to Hitler?",
+          "options": [
+            "Erfüllungspolitik",
+            "Verständigungspolitik",
+            "Passive Resistance",
+            "The Führerprinzip"
+          ],
+          "answer": "The Führerprinzip",
+          "a": "The Führerprinzip",
+          "explanation": "Under the Führerprinzip ('Leader Principle'), internal voting ended and every party official owed absolute personal obedience to Hitler's will."
+        },
+        {
+          "stage": 4,
+          "question": "Into what position was party founder Anton Drexler pushed after Hitler seized dictatorial leadership in July 1921?",
+          "q": "Into what position was party founder Anton Drexler pushed after Hitler seized dictatorial leadership in July 1921?",
+          "options": [
+            "Supreme Commander of the SA",
+            "Vice-Chancellor of Germany",
+            "A powerless honorary role",
+            "Gauleiter of Berlin"
+          ],
+          "answer": "A powerless honorary role",
+          "a": "A powerless honorary role",
+          "explanation": "Sidelining founder Anton Drexler into a powerless honorary presidency left Hitler as undisputed autocratic ruler of the NSDAP."
+        },
+        {
+          "stage": 5,
+          "question": "What new name was adopted by the German Workers' Party in 1920 to broaden its mass appeal?",
+          "q": "What new name was adopted by the German Workers' Party in 1920 to broaden its mass appeal?",
+          "options": [
+            "The German Democratic Coalition",
+            "The National Socialist German Workers' Party (NSDAP)",
+            "The Imperial Patriot League",
+            "The Bavarian Monarchist Party"
+          ],
+          "answer": "The National Socialist German Workers' Party (NSDAP)",
+          "a": "The National Socialist German Workers' Party (NSDAP)",
+          "explanation": "In 1920, the DAP was renamed the National Socialist German Workers' Party (NSDAP) to appeal to both nationalist and working-class voters."
+        },
+        {
+          "stage": 5,
           "question": "What paramilitary street army did Hitler establish in 1921 to protect Nazi meetings and intimidate rivals?",
+          "q": "What paramilitary street army did Hitler establish in 1921 to protect Nazi meetings and intimidate rivals?",
           "options": [
             "The Sturmabteilung (SA or Brownshirts)",
             "The Gestapo",
@@ -6766,98 +7303,36 @@ window.unitData = {
             "The Freikorps Marinebrigade"
           ],
           "answer": "The Sturmabteilung (SA or Brownshirts)",
-          "explanation": "In 1921, Hitler established the Sturmabteilung (SA or Brownshirts) to serve as the party's paramilitary muscle.",
-          "q": "What paramilitary street army did Hitler establish in 1921 to protect Nazi meetings and intimidate rivals?",
-          "a": "The Sturmabteilung (SA or Brownshirts)"
+          "a": "The Sturmabteilung (SA or Brownshirts)",
+          "explanation": "In 1921, Hitler established the Sturmabteilung (SA or Brownshirts) to serve as the party's paramilitary muscle."
         },
         {
-          "question": "What ancient symbol did Hitler adopt and redesign to act as the party's logo?",
-          "options": [
-            "The Iron Cross",
-            "The Eagle",
-            "The Swastika",
-            "The Fascio"
-          ],
-          "answer": "The Swastika"
-        },
-        {
+          "stage": 5,
           "question": "Who was the hardline First World War captain appointed to lead the SA in 1921?",
+          "q": "Who was the hardline First World War captain appointed to lead the SA in 1921?",
           "options": [
-            "Ernst Röhm",
             "Heinrich Himmler",
             "Joseph Goebbels",
-            "Rudolf Hess"
+            "Rudolf Hess",
+            "Ernst Röhm"
           ],
           "answer": "Ernst Röhm",
-          "explanation": "Former army captain Ernst Röhm transformed the SA into a disciplined, violent paramilitary street organization.",
-          "q": "Who was the hardline First World War captain appointed to lead the SA in 1921?",
-          "a": "Ernst Röhm"
+          "a": "Ernst Röhm",
+          "explanation": "Former army captain Ernst Röhm transformed the SA into a disciplined, violent paramilitary street organization."
         },
         {
+          "stage": 5,
           "question": "What was the common nickname for the SA, based on their uniforms?",
+          "q": "What was the common nickname for the SA, based on their uniforms?",
           "options": [
             "The Freikorps",
             "The Stormtroopers",
-            "The Blackshirts",
-            "The Brownshirts"
+            "The Brownshirts",
+            "The Blackshirts"
           ],
-          "answer": "The Brownshirts"
-        },
-        {
-          "question": "Who was the ex-army captain placed in command of the SA?",
-          "options": [
-            "Ernst Röhm",
-            "Heinrich Himmler",
-            "Hermann Göring",
-            "Anton Drexler"
-          ],
-          "answer": "Ernst Röhm"
-        },
-        {
-          "question": "What were the two main roles of the SA?",
-          "options": [
-            "To collect taxes and manage party finances",
-            "To protect Nazi speakers and to violently disrupt the meetings of political opponents",
-            "To spy on the army and report back to Hitler",
-            "To write propaganda and publish the party newspaper"
-          ],
-          "answer": "To protect Nazi speakers and to violently disrupt the meetings of political opponents"
-        },
-        {
-          "question": "Who was appointed to lead the SA Brownshirts as an aggressive paramilitary strike force in 1921?",
-          "options": [
-            "Captain Ernst Röhm",
-            "Heinrich Himmler",
-            "Joseph Goebbels",
-            "Rudolf Hess"
-          ],
-          "answer": "Captain Ernst Röhm",
-          "explanation": "Under the leadership of Captain Ernst Röhm, the SA was deployed as an aggressive paramilitary strike force.",
-          "q": "Who was appointed to lead the SA Brownshirts as an aggressive paramilitary strike force in 1921?",
-          "a": "Captain Ernst Röhm"
-        },
-        {
-          "question": "How many members did Anton Drexler's German Workers' Party have when Hitler first investigated it in 1919?",
-          "options": [
-            "Just fifty members with total funds of seven marks",
-            "Over 10,000 members",
-            "Exactly 500 members",
-            "Roughly 2,000 members"
-          ],
-          "answer": "Just fifty members with total funds of seven marks",
-          "explanation": "Drexler’s DAP was a penniless nationalist group of just fifty members with no printing press, no manifesto, and total funds of seven marks.",
-          "q": "How many members did Anton Drexler's German Workers' Party have when Hitler first investigated it in 1919?",
-          "a": "Just fifty members with total funds of seven marks"
-        },
-        {
-          "question": "Which specific German region and city was the early Nazi Party entirely based in?",
-          "options": [
-            "Rhineland / Cologne",
-            "Prussia / Berlin",
-            "Bavaria / Munich",
-            "Saxony / Dresden"
-          ],
-          "answer": "Bavaria / Munich"
+          "answer": "The Brownshirts",
+          "a": "The Brownshirts",
+          "explanation": "In October 1921, Hitler formalized his bodyguard units into the Sturmabteilung (SA) Brownshirts, recruiting demobilized soldiers, brawlers, and nationalist Freikorps veterans."
         }
       ],
       "utility_starters": null,
@@ -7150,9 +7625,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Founded by railway mechanic <strong>Anton Drexler DAP</strong>, the tiny nationalist movement transformed rapidly when <strong>Adolf Hitler joins (1919)</strong> and electrified crowds during raucous <strong>Munich beer-cellar meetings</strong>.",
-          "heading": "Anton Drexler & The German Workers' Party (DAP)",
+          "heading": "How did military surveillance lead directly to party membership?",
           "date": "Sep 1919",
-          "step": 1
+          "step": 1,
+          "question": "How did military surveillance lead directly to party membership?",
+          "questionHeading": "How did military surveillance lead directly to party membership?",
+          "prose_hash": "adf50ff0c1"
         },
         {
           "stage": 2,
@@ -7184,9 +7662,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "In February 1920, Hitler announced the radical <strong>25-Point NSDAP Programme</strong>, demanding total <strong>Versailles Treaty repudiation</strong> alongside strict <strong>anti-Semitic citizenship exclusion</strong> for German Jews.",
-          "heading": "The 25-Point Programme",
+          "heading": "How did the 25-Point Programme combine nationalist and socialist appeals?",
           "date": "Feb 1920",
-          "step": 2
+          "step": 2,
+          "question": "How did the 25-Point Programme combine nationalist and socialist appeals?",
+          "questionHeading": "How did the 25-Point Programme combine nationalist and socialist appeals?",
+          "prose_hash": "c61501ebb3"
         },
         {
           "stage": 3,
@@ -7218,9 +7699,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "The movement orchestrated a bold <strong>NSDAP party rebranding</strong>, adopting the eye-catching <strong>swastika party emblem</strong> and purchasing the struggling <strong>Völkischer Beobachter newspaper</strong> to amplify its propaganda.",
-          "heading": "Party Rebranding & The Swastika Banner",
+          "heading": "Why was visual branding crucial for attracting working-class recruits?",
           "date": "1920–1921",
-          "step": 3
+          "step": 3,
+          "question": "Why was visual branding crucial for attracting working-class recruits?",
+          "questionHeading": "Why was visual branding crucial for attracting working-class recruits?",
+          "prose_hash": "23050f7cf0"
         },
         {
           "stage": 4,
@@ -7252,9 +7736,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Demanding total authority under the <strong>Führerprinzip absolute leadership</strong> doctrine, Hitler issued an uncompromising <strong>resignation ultimatum (Jul 1921)</strong> that left co-founder <strong>Anton Drexler sidelined</strong>.",
-          "heading": "Hitler Takes Absolute Leadership (Führerprinzip)",
+          "heading": "How did personal oratory secure complete dominance over party rivals?",
           "date": "Jul 1921",
-          "step": 4
+          "step": 4,
+          "question": "How did personal oratory secure complete dominance over party rivals?",
+          "questionHeading": "How did personal oratory secure complete dominance over party rivals?",
+          "prose_hash": "177e690700"
         },
         {
           "stage": 5,
@@ -7286,9 +7773,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "To command the streets, the party established the <strong>Sturmabteilung (SA) Brownshirts</strong> under ruthless <strong>Ernst Röhm leadership</strong> to carry out violent <strong>rival party intimidation</strong> against left-wing opponents.",
-          "heading": "Formation of the Sturmabteilung (SA)",
+          "heading": "What role did organized paramilitary violence play in protecting meetings?",
           "date": "Aug 1921",
-          "step": 5
+          "step": 5,
+          "question": "What role did organized paramilitary violence play in protecting meetings?",
+          "questionHeading": "What role did organized paramilitary violence play in protecting meetings?",
+          "prose_hash": "bba22558d6"
         }
       ],
       "causal_domino_spine": {
@@ -7305,7 +7795,8 @@ window.unitData = {
             "trigger": "Army intelligence sent Corporal Hitler to monitor a 40-member nationalist debating club in Munich, where Drexler invited him to join after an impassioned speech.",
             "desc": "Army intelligence sent Corporal Hitler to monitor a 40-member nationalist debating club in Munich, where Drexler invited him to join after an impassioned speech.",
             "connective": "Provided Hitler with an existing political base and platform, leading directly to the drafting of a radical new party manifesto.",
-            "question": "How did military surveillance lead directly to party membership?"
+            "question": "How did military surveillance lead directly to party membership?",
+            "prose_hash": "adf50ff0c1"
           },
           {
             "step": 2,
@@ -7317,7 +7808,8 @@ window.unitData = {
             "trigger": "Hitler and Drexler presented the 25-Point Programme to 2,000 spectators at the Hofbräuhaus, demanding Versailles revocation and racial citizenship laws.",
             "desc": "Hitler and Drexler presented the 25-Point Programme to 2,000 spectators at the Hofbräuhaus, demanding Versailles revocation and racial citizenship laws.",
             "connective": "Combined radical nationalism, anti-Semitism, and socialist welfare promises, giving the party wide demographic appeal across Bavaria.",
-            "question": "How did the 25-Point Programme combine nationalist and socialist appeals?"
+            "question": "How did the 25-Point Programme combine nationalist and socialist appeals?",
+            "prose_hash": "c61501ebb3"
           },
           {
             "step": 3,
@@ -7329,7 +7821,8 @@ window.unitData = {
             "trigger": "The party added \"National Socialist\" to become the NSDAP, adopted the red-white-black swastika emblem, and bought the Völkischer Beobachter newspaper.",
             "desc": "The party added \"National Socialist\" to become the NSDAP, adopted the red-white-black swastika emblem, and bought the Völkischer Beobachter newspaper.",
             "connective": "Gave the party an instantly recognizable public brand and print megaphone, escalating public profile and party recruitment.",
-            "question": "Why was visual branding crucial for attracting working-class recruits?"
+            "question": "Why was visual branding crucial for attracting working-class recruits?",
+            "prose_hash": "23050f7cf0"
           },
           {
             "step": 4,
@@ -7341,7 +7834,8 @@ window.unitData = {
             "trigger": "Hitler threatened total resignation unless granted dictatorial authority, demoting Drexler and abolishing democratic committee voting.",
             "desc": "Hitler threatened total resignation unless granted dictatorial authority, demoting Drexler and abolishing democratic committee voting.",
             "connective": "Transformed the party into an obedient personal autocracy driven entirely by Hitler’s oratorical will and radical agenda.",
-            "question": "How did personal oratory secure complete dominance over party rivals?"
+            "question": "How did personal oratory secure complete dominance over party rivals?",
+            "prose_hash": "177e690700"
           },
           {
             "step": 5,
@@ -7353,7 +7847,8 @@ window.unitData = {
             "trigger": "Hitler established the SA under Captain Ernst Röhm, dressing ex-soldiers in brown shirts to protect meetings and assault left-wing opponents.",
             "desc": "Hitler established the SA under Captain Ernst Röhm, dressing ex-soldiers in brown shirts to protect meetings and assault left-wing opponents.",
             "connective": "Institutionalized political violence on the streets, turning the NSDAP into a feared regional paramilitary force ready for armed insurrection.",
-            "question": "What role did organized paramilitary violence play in protecting meetings?"
+            "question": "What role did organized paramilitary violence play in protecting meetings?",
+            "prose_hash": "bba22558d6"
           }
         ]
       },
@@ -7620,48 +8115,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Why did France and Belgium invade the Ruhr in 1923?",
-            "answer": "Because Germany had failed to pay its reparation instalment."
+            "stage": 1,
+            "question": "Who was the original founder of the German Workers' Party (DAP) in 1919?",
+            "answer": "Anton Drexler",
+            "explanation": "Dispatched to small Munich beer-cellar meetings inside the Sterneckerbräu, he investigated the obscure Anton Drexler DAP (German Workers' Party)."
           },
           {
-            "question": "How did German workers react to the 1923 French invasion of the Ruhr?",
-            "answer": "They used 'passive resistance' (going on strike)."
+            "stage": 2,
+            "question": "In what year did Hitler and Drexler write the 25-Point Programme?",
+            "answer": "1920",
+            "explanation": "In February 1920, Hitler and Drexler presented their political manifesto to two thousand listeners in Munich’s Hofbräuhaus, unveiling the radical 25-Point NSDAP Programme."
           },
           {
-            "question": "What caused Hyperinflation in 1923?",
-            "answer": "The government printed massive amounts of money to pay the striking Ruhr workers."
+            "stage": 3,
+            "question": "What Munich beer hall political party did Corporal Adolf Hitler join as party member 555 in 1919?",
+            "answer": "The German Workers' Party (DAP)",
+            "explanation": "In September 1919, Corporal Adolf Hitler joined Anton Drexler's German Workers' Party (DAP) in Munich."
           },
           {
-            "question": "Who suffered most from Hyperinflation?",
-            "answer": "People with fixed savings and pensions, as their money became worthless."
+            "stage": 4,
+            "question": "In what year did Hitler force Drexler out and become the absolute leader of the Nazi Party?",
+            "answer": "1921",
+            "explanation": "By summer 1921, fierce rivalries emerged between Hitler and the founding party committee."
           },
           {
-            "question": "Who benefitted from Hyperinflation?",
-            "answer": "People with debts or loans, as they could pay them off easily."
+            "stage": 5,
+            "question": "What new name was adopted by the German Workers' Party in 1920 to broaden its mass appeal?",
+            "answer": "The National Socialist German Workers' Party (NSDAP)",
+            "explanation": "In 1920, the DAP was renamed the National Socialist German Workers' Party (NSDAP) to appeal to both nationalist and working-class voters."
           },
           {
-            "question": "Who were the Freikorps?",
-            "answer": "Right-wing ex-soldiers."
+            "stage": 1,
+            "question": "Who was the founder of the German Workers' Party (DAP) whom Hitler ousted to become party chairman in July 1921?",
+            "answer": "Anton Drexler",
+            "explanation": "Hitler outmaneuvered party founder Anton Drexler in July 1921, demanding and receiving absolute dictatorial control as chairman."
           },
           {
-            "question": "Who led the Spartacist Uprising?",
-            "answer": "Rosa Luxemburg and Karl Liebknecht."
+            "stage": 2,
+            "question": "What core demand was prominent in the 25-Point Programme drafted by Drexler and Hitler in February 1920?",
+            "answer": "The revocation of the Treaty of Versailles and the unification of all Germans",
+            "explanation": "The 25-Point Programme demanded the cancellation of the Treaty of Versailles and the unification of all Germans into a Greater Germany."
           },
           {
-            "question": "How was the Kapp Putsch defeated?",
-            "answer": "By a workers' general strike."
+            "stage": 3,
+            "question": "What symbol did Hitler place inside a white circle on the party's red flag in 1920?",
+            "answer": "The swastika",
+            "explanation": "In 1920, Hitler oversaw the design of the NSDAP flag, placing the black swastika inside a white circle on a red background."
           },
           {
-            "question": "What was Proportional Representation?",
-            "answer": "An electoral system causing weak coalitions."
+            "stage": 4,
+            "question": "What tactical move did Hitler make in July 1921 when Anton Drexler tried to dilute his authority through a party merger?",
+            "answer": "Issued a dramatic resignation ultimatum",
+            "explanation": "Knowing the party would collapse financially without its star speaker, the committee capitulated to Hitler's July 1921 resignation ultimatum and granted him dictatorial control."
           },
           {
-            "question": "What were the military restrictions of the Treaty of Versailles?",
-            "answer": "100k men, no air force, 6 battleships."
+            "stage": 5,
+            "question": "What paramilitary street army did Hitler establish in 1921 to protect Nazi meetings and intimidate rivals?",
+            "answer": "The Sturmabteilung (SA or Brownshirts)",
+            "explanation": "In 1921, Hitler established the Sturmabteilung (SA or Brownshirts) to serve as the party's paramilitary muscle."
           }
         ]
       },
@@ -7726,7 +8240,9 @@ window.unitData = {
       "vocab_cloze_text": "In 1923, Hitler attempted to overthrow the government with the help of [The Bavarian Triumvirate], but it failed and he was charged with [Treason]. While serving a lenient sentence in [Landsberg Prison], he dictated his manifesto, [Mein Kampf ('My Struggle')], which outlined his belief in the supremacy of the [Aryan] race and the need for absolute dictatorship through the [Führerprinzip (The Leadership Principle)]. Realising he needed a new political machine, Hitler appointed regional leaders called [Gauleiter] to organise the party, and later created the elite, black-uniformed [SS (Schutzstaffel)] as his fiercely loyal personal bodyguard.",
       "quiz": [
         {
+          "stage": 1,
           "question": "In what month and year did the Munich Putsch take place?",
+          "q": "In what month and year did the Munich Putsch take place?",
           "options": [
             "November 1923",
             "January 1919",
@@ -7734,77 +8250,83 @@ window.unitData = {
             "October 1929"
           ],
           "answer": "November 1923",
-          "explanation": "Hitler sought to exploit the hyperinflation crisis and passive resistance in the Ruhr, marching on Munich on 8–9 November 1923.",
-          "q": "In what month and year did the Munich Putsch take place?",
-          "a": "November 1923"
+          "a": "November 1923",
+          "explanation": "Hitler sought to exploit the hyperinflation crisis and passive resistance in the Ruhr, marching on Munich on 8–9 November 1923."
         },
         {
-          "question": "Name the three men who made up the 'Bavarian Triumvirate' that Hitler tried to hijack.",
-          "options": [
-            "Erich Ludendorff, Paul von Hindenburg, Wilhelm Groener",
-            "Gustav von Kahr, Otto von Lossow, Hans von Seisser",
-            "Friedrich Ebert, Philipp Scheidemann, Matthias Erzberger",
-            "Ernst Röhm, Hermann Göring, Heinrich Himmler"
-          ],
-          "answer": "Gustav von Kahr, Otto von Lossow, Hans von Seisser",
-          "explanation": "State Commissioner Kahr, Army Commander Lossow, and Police Chief Seisser initially agreed under armed threat, but alerted the authorities as soon as they left the beer hall.",
-          "q": "Name the three men who made up the 'Bavarian Triumvirate' that Hitler tried to hijack.",
-          "a": "Gustav von Kahr, Otto von Lossow, Hans von Seisser"
-        },
-        {
+          "stage": 1,
           "question": "Which famous First World War general supported Hitler during the Munich Putsch?",
+          "q": "Which famous First World War general supported Hitler during the Munich Putsch?",
           "options": [
             "General Paul von Hindenburg",
             "General Wilhelm Groener",
-            "General Erich Ludendorff",
-            "General Walther von Lüttwitz"
+            "General Walther von Lüttwitz",
+            "General Erich Ludendorff"
           ],
           "answer": "General Erich Ludendorff",
-          "explanation": "Ludendorff's national military fame gave the putsch vital public prestige, marching at the front of the column towards the Feldherrnhalle.",
-          "q": "Which famous First World War general supported Hitler during the Munich Putsch?",
-          "a": "General Erich Ludendorff"
+          "a": "General Erich Ludendorff",
+          "explanation": "Ludendorff's national military fame gave the putsch vital public prestige, marching at the front of the column towards the Feldherrnhalle."
         },
         {
-          "question": "How many Nazis were killed in the firefight with the police during the Putsch?",
+          "stage": 1,
+          "question": "Which Bavarian state commissioner was held at gunpoint by Hitler inside the Bürgerbräukeller Beer Hall on 8 November 1923?",
+          "q": "Which Bavarian state commissioner was held at gunpoint by Hitler inside the Bürgerbräukeller Beer Hall on 8 November 1923?",
           "options": [
-            "600",
-            "2",
-            "100",
-            "14"
+            "Franz von Papen",
+            "Heinrich Brüning",
+            "Gustav von Kahr",
+            "Gustav Stresemann"
           ],
-          "answer": "14",
-          "explanation": "Bavarian police opened fire on the marchers at Odeonsplatz, killing 14 putschists and 4 state policemen, instantly breaking the coup.",
-          "q": "How many Nazis were killed in the firefight with the police during the Putsch?",
-          "a": "14"
+          "answer": "Gustav von Kahr",
+          "a": "Gustav von Kahr",
+          "explanation": "Firing a pistol into the ceiling of the Bürgerbräukeller on 8 November 1923, Hitler coerced Bavarian commissioner Gustav von Kahr at gunpoint to back his putsch."
         },
         {
-          "question": "What serious criminal charge was Hitler put on trial for in early 1924?",
+          "stage": 1,
+          "question": "Which Munich beer hall did Hitler and six hundred armed SA stormtroopers storm on the night of 8 November 1923?",
+          "q": "Which Munich beer hall did Hitler and six hundred armed SA stormtroopers storm on the night of 8 November 1923?",
           "options": [
-            "Theft of government property",
+            "The Berlin Sportpalast",
+            "The Bürgerbräukeller Beer Hall",
+            "The Zeppelin Field Arena",
+            "The Weimar National Theatre"
+          ],
+          "answer": "The Bürgerbräukeller Beer Hall",
+          "a": "The Bürgerbräukeller Beer Hall",
+          "explanation": "Hitler interrupted a political rally inside the Bürgerbräukeller Beer Hall to proclaim a national revolution, though police gunfire crushed the march the next day."
+        },
+        {
+          "stage": 2,
+          "question": "What serious criminal charge was Hitler put on trial for in early 1924?",
+          "q": "What serious criminal charge was Hitler put on trial for in early 1924?",
+          "options": [
             "High Treason",
+            "Theft of government property",
             "Terrorism",
             "Murder"
           ],
           "answer": "High Treason",
-          "explanation": "High treason legally carried the death penalty or life imprisonment under the Weimar Penal Code, but conservative judges granted Hitler extraordinary leniency.",
-          "q": "What serious criminal charge was Hitler put on trial for in early 1924?",
-          "a": "High Treason"
+          "a": "High Treason",
+          "explanation": "High treason legally carried the death penalty or life imprisonment under the Weimar Penal Code, but conservative judges granted Hitler extraordinary leniency."
         },
         {
+          "stage": 2,
           "question": "Why did Hitler receive such a lenient sentence (5 years) at his trial?",
+          "q": "Why did Hitler receive such a lenient sentence (5 years) at his trial?",
           "options": [
-            "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views",
             "He successfully convinced the jury he wasn't there",
             "He bribed the judges with money stolen from the beer hall",
-            "The judges were terrified of the SA storming the courtroom"
+            "The judges were terrified of the SA storming the courtroom",
+            "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views"
           ],
           "answer": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views",
-          "explanation": "Presiding Judge Georg Neithardt openly sympathised with Hitler's anti-Weimar nationalism, allowing him to turn the trial into a political propaganda stage and granting him parole after just nine months.",
-          "q": "Why did Hitler receive such a lenient sentence (5 years) at his trial?",
-          "a": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views"
+          "a": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views",
+          "explanation": "Presiding Judge Georg Neithardt openly sympathised with Hitler's anti-Weimar nationalism, allowing him to turn the trial into a political propaganda stage and granting him parole after just nine months."
         },
         {
+          "stage": 2,
           "question": "How long did Hitler actually spend in Landsberg Prison?",
+          "q": "How long did Hitler actually spend in Landsberg Prison?",
           "options": [
             "Three years",
             "Five years",
@@ -7812,77 +8334,83 @@ window.unitData = {
             "Two weeks"
           ],
           "answer": "Nine months",
-          "explanation": "Hitler served less than a fifth of his nominal five-year sentence in comfortable fortress confinement before early release in December 1924.",
-          "q": "How long did Hitler actually spend in Landsberg Prison?",
-          "a": "Nine months"
+          "a": "Nine months",
+          "explanation": "Hitler served less than a fifth of his nominal five-year sentence in comfortable fortress confinement before early release in December 1924."
         },
         {
-          "question": "What was the title of the book Hitler dictated while in prison?",
+          "stage": 2,
+          "question": "How did Adolf Hitler turn his February 1924 Munich treason trial into a major political triumph?",
+          "q": "How did Adolf Hitler turn his February 1924 Munich treason trial into a major political triumph?",
           "options": [
+            "Proved he had not attended the Munich march",
+            "Turned the courtroom into a national propaganda platform",
+            "Persuaded President Ebert to grant an immediate pardon",
+            "Escaped across the Austrian border during cross-examination"
+          ],
+          "answer": "Turned the courtroom into a national propaganda platform",
+          "a": "Turned the courtroom into a national propaganda platform",
+          "explanation": "Sympathetic judges gave Hitler unrestricted speaking time to attack the Weimar Republic before national reporters, making him a famous right-wing figure across Germany."
+        },
+        {
+          "stage": 3,
+          "question": "What was the title of the book Hitler dictated while in prison?",
+          "q": "What was the title of the book Hitler dictated while in prison?",
+          "options": [
+            "Mein Kampf / My Struggle",
             "Das Kapital",
             "The 25-Point Programme",
-            "Triumph of the Will",
-            "Mein Kampf / My Struggle"
+            "Triumph of the Will"
           ],
           "answer": "Mein Kampf / My Struggle",
-          "explanation": "Dictated to deputy Rudolf Hess, Mein Kampf outlined Hitler's core racial doctrines, anti-Semitism, and foreign policy quest for Lebensraum.",
-          "q": "What was the title of the book Hitler dictated while in prison?",
-          "a": "Mein Kampf / My Struggle"
+          "a": "Mein Kampf / My Struggle",
+          "explanation": "Dictated to deputy Rudolf Hess, Mein Kampf outlined Hitler's core racial doctrines, anti-Semitism, and foreign policy quest for Lebensraum."
         },
         {
-          "question": "What specific Nazi term was used in Hitler's book to describe the 'master race' of Germanic peoples?",
+          "stage": 3,
+          "question": "What personal ideological manifesto did Hitler dictate to Rudolf Hess while imprisoned at Landsberg Fortress in 1924?",
+          "q": "What personal ideological manifesto did Hitler dictate to Rudolf Hess while imprisoned at Landsberg Fortress in 1924?",
           "options": [
-            "Nordic",
-            "Prussian",
-            "Aryan",
-            "Teutonic"
+            "The Communist Manifesto",
+            "The 25-Point Programme",
+            "The Myth of the Twentieth Century",
+            "Mein Kampf ('My Struggle')"
           ],
-          "answer": "Aryan",
-          "explanation": "Hitler pseudoscientifically classified Aryans as the sole 'culture-founders', claiming all progress required preserving racial purity against intermarriage.",
-          "q": "What specific Nazi term was used in Hitler's book to describe the 'master race' of Germanic peoples?",
-          "a": "Aryan"
+          "answer": "Mein Kampf ('My Struggle')",
+          "a": "Mein Kampf ('My Struggle')",
+          "explanation": "While serving nine months in Landsberg Fortress, Hitler dictated Mein Kampf, laying out his racial worldview and foreign policy goals."
         },
         {
-          "question": "What does the term 'Lebensraum' mean, as outlined in Mein Kampf?",
+          "stage": 3,
+          "question": "What German geopolitical term in Mein Kampf described Hitler's goal of conquering 'living space' in Eastern Europe and Russia?",
+          "q": "What German geopolitical term in Mein Kampf described Hitler's goal of conquering 'living space' in Eastern Europe and Russia?",
           "options": [
-            "Master race - the need to purify German blood",
-            "Living space - the need to expand Germany's borders into Eastern Europe",
-            "Living standards - the need to improve factory conditions",
-            "Breathing room - the need to eliminate the Treaty of Versailles"
+            "Autarky",
+            "Dolchstoss",
+            "Lebensraum",
+            "Reichskonkordat"
           ],
-          "answer": "Living space - the need to expand Germany's borders into Eastern Europe",
-          "explanation": "Hitler planned to conquer Poland, Ukraine, and western Russia to resettle German families and enslave Slavic populations.",
-          "q": "What does the term 'Lebensraum' mean, as outlined in Mein Kampf?",
-          "a": "Living space - the need to expand Germany's borders into Eastern Europe"
+          "answer": "Lebensraum",
+          "a": "Lebensraum",
+          "explanation": "Dictated in Landsberg Fortress, Mein Kampf demanded aggressive Lebensraum territorial expansion eastward to secure agricultural land for Germany."
         },
         {
-          "question": "What major strategic lesson did Hitler learn from the failure of the Munich Putsch?",
+          "stage": 3,
+          "question": "What fundamental strategic lesson did Hitler adopt after the armed failure of the November 1923 Munich Putsch?",
+          "q": "What fundamental strategic lesson did Hitler adopt after the armed failure of the November 1923 Munich Putsch?",
           "options": [
-            "That the Nazis had to win power legally through elections, not through violent revolution",
-            "That Ludendorff was a traitor who should be assassinated",
-            "That the SA was too weak and needed to be replaced immediately",
-            "That they should have attacked Berlin first instead of Munich"
+            "Relying exclusively on trade union general strikes",
+            "Pursuing power through legal constitutional elections rather than armed rebellion",
+            "Forming an electoral coalition with the Social Democrats",
+            "Abandoning nationwide politics to focus only on Munich"
           ],
-          "answer": "That the Nazis had to win power legally through elections, not through violent revolution",
-          "explanation": "Known as the Legalitätsprinzip, Hitler resolved to destroy Weimar democracy from within using parliamentary elections and mass propaganda.",
-          "q": "What major strategic lesson did Hitler learn from the failure of the Munich Putsch?",
-          "a": "That the Nazis had to win power legally through elections, not through violent revolution"
+          "answer": "Pursuing power through legal constitutional elections rather than armed rebellion",
+          "a": "Pursuing power through legal constitutional elections rather than armed rebellion",
+          "explanation": "Realizing the army and police would crush violent coups, Hitler resolved to win power legally through democratic elections in order to destroy democracy from within."
         },
         {
-          "question": "What title was given to the regional party chiefs appointed to run the 35 party districts (Gaue) across Germany?",
-          "options": [
-            "Gauleiter",
-            "Reichsstatthalter",
-            "Reichsführer",
-            "Oberbürgermeister"
-          ],
-          "answer": "Gauleiter",
-          "explanation": "Hitler restructured the party into 35 geographic districts (Gaue), each commanded by a loyal regional Gauleiter.",
-          "q": "What title was given to the regional party chiefs appointed to run the 35 party districts (Gaue) across Germany?",
-          "a": "Gauleiter"
-        },
-        {
+          "stage": 4,
           "question": "What dictatorial leadership principle was confirmed at the 1926 Bamberg Conference, establishing Hitler's absolute authority?",
+          "q": "What dictatorial leadership principle was confirmed at the 1926 Bamberg Conference, establishing Hitler's absolute authority?",
           "options": [
             "The Führerprinzip",
             "Erfüllungspolitik",
@@ -7890,51 +8418,27 @@ window.unitData = {
             "Kulturkampf"
           ],
           "answer": "The Führerprinzip",
-          "explanation": "The 1926 Bamberg Conference solidified the Führerprinzip, establishing that Hitler's will was the sole and supreme law of the party.",
-          "q": "What dictatorial leadership principle was confirmed at the 1926 Bamberg Conference, establishing Hitler's absolute authority?",
-          "a": "The Führerprinzip"
+          "a": "The Führerprinzip",
+          "explanation": "The 1926 Bamberg Conference solidified the Führerprinzip, establishing that Hitler's will was the sole and supreme law of the party."
         },
         {
+          "stage": 4,
           "question": "In what year did Hitler establish the SS (Schutzstaffel)?",
+          "q": "In what year did Hitler establish the SS (Schutzstaffel)?",
           "options": [
             "1923",
             "1933",
-            "1925",
-            "1928"
+            "1928",
+            "1925"
           ],
           "answer": "1925",
-          "explanation": "Formed in 1925 as Hitler's elite personal bodyguard, the SS swore loyalty oaths directly to the Führer rather than the broader party.",
-          "q": "In what year did Hitler establish the SS (Schutzstaffel)?",
-          "a": "1925"
+          "a": "1925",
+          "explanation": "Formed in 1925 as Hitler's elite personal bodyguard, the SS swore loyalty oaths directly to the Führer rather than the broader party."
         },
         {
-          "question": "Why did Hitler create the SS when he already had the SA?",
-          "options": [
-            "He needed an elite bodyguard that was unquestionably loyal only to him, unlike the SA which was loyal to Ernst Röhm",
-            "Because the SA had all been arrested after the Munich Putsch",
-            "Because the SA were seen as too weak and cowardly",
-            "Because the SA was disbanded under the terms of the Dawes Plan"
-          ],
-          "answer": "He needed an elite bodyguard that was unquestionably loyal only to him, unlike the SA which was loyal to Ernst Röhm",
-          "explanation": "Ernst Röhm's SA was rowdy, semi-autonomous, and heavily loyal to Röhm, prompting Hitler to establish the black-uniformed SS as a fanatically loyal private cadre.",
-          "q": "Why did Hitler create the SS when he already had the SA?",
-          "a": "He needed an elite bodyguard that was unquestionably loyal only to him, unlike the SA which was loyal to Ernst Röhm"
-        },
-        {
-          "question": "What personal ideological manifesto did Hitler dictate to Rudolf Hess while imprisoned at Landsberg Fortress in 1924?",
-          "options": [
-            "Mein Kampf ('My Struggle')",
-            "The Communist Manifesto",
-            "The 25-Point Programme",
-            "The Myth of the Twentieth Century"
-          ],
-          "answer": "Mein Kampf ('My Struggle')",
-          "explanation": "While serving nine months in Landsberg Fortress, Hitler dictated Mein Kampf, laying out his racial worldview and foreign policy goals.",
-          "q": "What personal ideological manifesto did Hitler dictate to Rudolf Hess while imprisoned at Landsberg Fortress in 1924?",
-          "a": "Mein Kampf ('My Struggle')"
-        },
-        {
+          "stage": 4,
           "question": "In what year was the Bamberg Conference held?",
+          "q": "In what year was the Bamberg Conference held?",
           "options": [
             "1933",
             "1924",
@@ -7942,12 +8446,13 @@ window.unitData = {
             "1929"
           ],
           "answer": "1926",
-          "explanation": "Hitler convened the Bamberg Conference in February 1926 to assert his absolute control over rival party factions in northern industrial cities.",
-          "q": "In what year was the Bamberg Conference held?",
-          "a": "1926"
+          "a": "1926",
+          "explanation": "Hitler convened the Bamberg Conference in February 1926 to assert his absolute control over rival party factions in northern industrial cities."
         },
         {
+          "stage": 4,
           "question": "Which key figure did Hitler successfully win over from the 'socialist' wing at the Bamberg Conference?",
+          "q": "Which key figure did Hitler successfully win over from the 'socialist' wing at the Bamberg Conference?",
           "options": [
             "Gregor Strasser",
             "Joseph Goebbels",
@@ -7955,12 +8460,27 @@ window.unitData = {
             "Heinrich Himmler"
           ],
           "answer": "Joseph Goebbels",
-          "explanation": "Goebbels abandoned Gregor Strasser's socialist-leaning wing after Hitler praised his talent and appointed him Gauleiter of Berlin in 1926.",
-          "q": "Which key figure did Hitler successfully win over from the 'socialist' wing at the Bamberg Conference?",
-          "a": "Joseph Goebbels"
+          "a": "Joseph Goebbels",
+          "explanation": "Goebbels abandoned Gregor Strasser's socialist-leaning wing after Hitler praised his talent and appointed him Gauleiter of Berlin in 1926."
         },
         {
+          "stage": 5,
+          "question": "What title was given to the regional party chiefs appointed to run the 35 party districts (Gaue) across Germany?",
+          "q": "What title was given to the regional party chiefs appointed to run the 35 party districts (Gaue) across Germany?",
+          "options": [
+            "Gauleiter",
+            "Reichsstatthalter",
+            "Reichsführer",
+            "Oberbürgermeister"
+          ],
+          "answer": "Gauleiter",
+          "a": "Gauleiter",
+          "explanation": "Hitler restructured the party into 35 geographic districts (Gaue), each commanded by a loyal regional Gauleiter."
+        },
+        {
+          "stage": 5,
           "question": "How many seats did the Nazi Party win in the 1928 Reichstag elections?",
+          "q": "How many seats did the Nazi Party win in the 1928 Reichstag elections?",
           "options": [
             "32 seats",
             "107 seats",
@@ -7968,22 +8488,36 @@ window.unitData = {
             "12 seats"
           ],
           "answer": "12 seats",
-          "explanation": "The Nazis polled a mere 2.6% of the national vote in 1928, marginalized by the Weimar Republic's economic recovery and cultural flourishing.",
-          "q": "How many seats did the Nazi Party win in the 1928 Reichstag elections?",
-          "a": "12 seats"
+          "a": "12 seats",
+          "explanation": "The Nazis polled a mere 2.6% of the national vote in 1928, marginalized by the Weimar Republic's economic recovery and cultural flourishing."
         },
         {
-          "question": "What northern socialist leader's faction did Hitler crush at the Bamberg Conference in February 1926?",
+          "stage": 5,
+          "question": "What share of the national vote did the Nazi Party receive in the May 1928 Reichstag election?",
+          "q": "What share of the national vote did the Nazi Party receive in the May 1928 Reichstag election?",
           "options": [
-            "Gregor Strasser",
-            "Ernst Röhm",
-            "Anton Drexler",
-            "Hermann Göring"
+            "18.3%",
+            "37.3%",
+            "2.6%",
+            "43.9%"
           ],
-          "answer": "Gregor Strasser",
-          "explanation": "At the Bamberg Conference, Hitler crushed Gregor Strasser's northern socialist wing, forcing the party to follow his singular authority.",
-          "q": "What northern socialist leader's faction did Hitler crush at the Bamberg Conference in February 1926?",
-          "a": "Gregor Strasser"
+          "answer": "2.6%",
+          "a": "2.6%",
+          "explanation": "Winning just 2.6% of the vote and twelve Reichstag seats in May 1928 showed how Weimar economic stability starved extremist parties of mass support."
+        },
+        {
+          "stage": 5,
+          "question": "Why were the Nazis starved of mass electoral support during the 'Lean Years' between 1924 and 1929?",
+          "q": "Why were the Nazis starved of mass electoral support during the 'Lean Years' between 1924 and 1929?",
+          "options": [
+            "Hitler remained imprisoned in Landsberg Fortress until late 1929",
+            "Stresemann's economic stabilization and Dawes Plan loans brought Weimar prosperity",
+            "The Weimar Constitution banned the NSDAP from contesting elections",
+            "Joseph Goebbels defected to the German Democratic Party"
+          ],
+          "answer": "Stresemann's economic stabilization and Dawes Plan loans brought Weimar prosperity",
+          "a": "Stresemann's economic stabilization and Dawes Plan loans brought Weimar prosperity",
+          "explanation": "Currency reform and American Dawes Plan loans restored relative prosperity between 1924 and 1929, leaving little public appetite for extremist revolution."
         }
       ],
       "questions": [
@@ -8188,8 +8722,8 @@ window.unitData = {
         {
           "title": "Pistol Shots in the Bürgerbräukeller: Von Kahr Held at Gunpoint in the Munich Putsch (8 Nov 1923)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> In November 1923, amidst national fury over the Ruhr occupation and runaway hyperinflation, Hitler plotted to seize power. Convinced the Weimar Republic was collapsing, he sought to emulate Mussolini’s 1922 March on Rome by launching a coup from Munich. To gain military legitimacy, Hitler enlisted prestigious First World War commander **General Erich Ludendorff** to lead a march against Berlin.\n\n<span class=\"para-ref\">[1.2]</span> On 8 November 1923, Hitler and six hundred armed SA stormtroopers stormed the **Bürgerbräukeller Beer Hall**, interrupting a speech by Bavarian commissioner Gustav von Kahr. Firing a pistol into the ceiling, Hitler declared a national revolution and coerced Bavarian leaders at gunpoint. However, the resulting **failed Munich march (16 dead)** through the streets was met by armed police gunfire, crushing the coup.",
-          "content": "<span class=\"para-ref\">[1.1]</span> In November 1923, amidst national fury over the Ruhr occupation and runaway hyperinflation, Hitler plotted to seize power. Convinced the Weimar Republic was collapsing, he sought to emulate Mussolini’s 1922 March on Rome by launching a coup from Munich. To gain military legitimacy, Hitler enlisted prestigious First World War commander **General Erich Ludendorff** to lead a march against Berlin.\n\n<span class=\"para-ref\">[1.2]</span> On 8 November 1923, Hitler and six hundred armed SA stormtroopers stormed the **Bürgerbräukeller Beer Hall**, interrupting a speech by Bavarian commissioner Gustav von Kahr. Firing a pistol into the ceiling, Hitler declared a national revolution and coerced Bavarian leaders at gunpoint. However, the resulting **failed Munich march (16 dead)** through the streets was met by armed police gunfire, crushing the coup.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In **November 1923**, amid national fury over the Ruhr occupation and hyperinflation, Hitler plotted to copy Mussolini’s 1922 March on Rome by launching a coup in Munich. To win military backing, he enlisted First World War hero **General Erich Ludendorff** to lead a march on Berlin.\n\n<span class=\"para-ref\">[1.2]</span> On 8 November 1923, Hitler and 600 armed SA men stormed the **Bürgerbräukeller Beer Hall**. Firing a pistol into the ceiling, Hitler forced Bavarian leader **Gustav von Kahr** at gunpoint to back his revolt. Next day, armed police gunfire blocked the Nazi march in Munich, leaving 16 Nazis dead and crushing the coup.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In **November 1923**, amid national fury over the Ruhr occupation and hyperinflation, Hitler plotted to copy Mussolini’s 1922 March on Rome by launching a coup in Munich. To win military backing, he enlisted First World War hero **General Erich Ludendorff** to lead a march on Berlin.\n\n<span class=\"para-ref\">[1.2]</span> On 8 November 1923, Hitler and 600 armed SA men stormed the **Bürgerbräukeller Beer Hall**. Firing a pistol into the ceiling, Hitler forced Bavarian leader **Gustav von Kahr** at gunpoint to back his revolt. Next day, armed police gunfire blocked the Nazi march in Munich, leaving 16 Nazis dead and crushing the coup.",
           "image": "/images/munich_putsch_defendants.jpg",
           "image_alt": "Adolf Hitler, General Erich Ludendorff, and co-defendants on trial for high treason in Munich in 1924",
           "caption": "Munich Treason Trial (February–March 1924): Adolf Hitler and General Erich Ludendorff standing before sympathetic Bavarian judges; Hitler used the dock as a national stage to justify the coup and win conservative acclaim.",
@@ -8249,8 +8783,8 @@ window.unitData = {
         {
           "title": "Bloodshed at the Feldherrnhalle: Bavarian Police Fire and the Collapse of the Coup (9 Nov 1923)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> In February 1924, Hitler and fellow putsch conspirators faced trial for high treason in Munich. Rather than denying the charges, Hitler turned the sensational **Munich treason trial** into a national propaganda platform. Sympathetic right-wing judges granted him unrestricted speaking time to attack the Weimar democracy, broadcast nationalist grievances, and justify his armed putsch as patriotic duty before reporters from across Germany.\n\n<span class=\"para-ref\">[2.2]</span> Capitalizing on widespread media coverage, masterly **Hitler courtroom propaganda** transformed him from an obscure regional agitator into a recognized national martyr. Conservative judges showed extraordinary judicial bias, giving him a remarkably **lenient five-year sentence** with immediate parole eligibility. While ordinary treason carried life imprisonment, Hitler served barely nine months in comfortable conditions at Landsberg Fortress, free to receive visitors and plan his political resurgence.",
-          "content": "<span class=\"para-ref\">[2.1]</span> In February 1924, Hitler and fellow putsch conspirators faced trial for high treason in Munich. Rather than denying the charges, Hitler turned the sensational **Munich treason trial** into a national propaganda platform. Sympathetic right-wing judges granted him unrestricted speaking time to attack the Weimar democracy, broadcast nationalist grievances, and justify his armed putsch as patriotic duty before reporters from across Germany.\n\n<span class=\"para-ref\">[2.2]</span> Capitalizing on widespread media coverage, masterly **Hitler courtroom propaganda** transformed him from an obscure regional agitator into a recognized national martyr. Conservative judges showed extraordinary judicial bias, giving him a remarkably **lenient five-year sentence** with immediate parole eligibility. While ordinary treason carried life imprisonment, Hitler served barely nine months in comfortable conditions at Landsberg Fortress, free to receive visitors and plan his political resurgence.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Put on trial for **High Treason** in **Munich** in February 1924, Hitler turned the courtroom into a national propaganda platform. Right-wing Weimar judges sympathised with his nationalist, anti-Weimar views. They let him attack Weimar democracy at length and defend his coup as patriotic duty before reporters.\n\n<span class=\"para-ref\">[2.2]</span> Front-page press coverage turned Hitler from a Bavarian agitator into a national right-wing martyr. Although treason normally carried life in prison, biased judges gave Hitler a lenient five-year sentence. Eligible for early parole, he walked free after barely **nine months** in comfortable rooms at Landsberg.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Put on trial for **High Treason** in **Munich** in February 1924, Hitler turned the courtroom into a national propaganda platform. Right-wing Weimar judges sympathised with his nationalist, anti-Weimar views. They let him attack Weimar democracy at length and defend his coup as patriotic duty before reporters.\n\n<span class=\"para-ref\">[2.2]</span> Front-page press coverage turned Hitler from a Bavarian agitator into a national right-wing martyr. Although treason normally carried life in prison, biased judges gave Hitler a lenient five-year sentence. Eligible for early parole, he walked free after barely **nine months** in comfortable rooms at Landsberg.",
           "sources": [
             {
               "id": "weimar_l6_source_d",
@@ -8308,8 +8842,8 @@ window.unitData = {
         {
           "title": "A Treason Trial as a Stage: Sympathetic Judges, Landsberg Fortress and Mein Kampf (1924)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> During comfortable **Landsberg Fortress detention**, Hitler enjoyed spacious quarters, fine food, and devoted party visitors. He utilized this quiet confinement to dictate his political autobiography and manifesto, creating the foundational **Mein Kampf treatise** with the assistance of deputy Rudolf Hess. The book outlined his core ideological doctrines of virulent racial anti-Semitism, violent anti-Marxism, and the imperative of totalitarian leadership.\n\n<span class=\"para-ref\">[3.2]</span> Crucially, the manifesto detailed his geopolitical ambitions, demanding aggressive **Lebensraum territorial expansion** through the conquest of agricultural land in Eastern Europe and Russia. The failed putsch also convinced Hitler that direct military rebellion was futile. He resolved that the party must abandon armed revolution and henceforth pursue power through legal democratic mechanisms, exploiting constitutional elections to dismantle the Weimar Republic from within.",
-          "content": "<span class=\"para-ref\">[3.1]</span> During comfortable **Landsberg Fortress detention**, Hitler enjoyed spacious quarters, fine food, and devoted party visitors. He utilized this quiet confinement to dictate his political autobiography and manifesto, creating the foundational **Mein Kampf treatise** with the assistance of deputy Rudolf Hess. The book outlined his core ideological doctrines of virulent racial anti-Semitism, violent anti-Marxism, and the imperative of totalitarian leadership.\n\n<span class=\"para-ref\">[3.2]</span> Crucially, the manifesto detailed his geopolitical ambitions, demanding aggressive **Lebensraum territorial expansion** through the conquest of agricultural land in Eastern Europe and Russia. The failed putsch also convinced Hitler that direct military rebellion was futile. He resolved that the party must abandon armed revolution and henceforth pursue power through legal democratic mechanisms, exploiting constitutional elections to dismantle the Weimar Republic from within.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Held in spacious quarters during his **Landsberg Fortress** detention, Hitler welcomed party visitors and dictated **Mein Kampf ('My Struggle')** to deputy Rudolf Hess. The book set out his core beliefs: Aryan racial supremacy, fierce hatred of Jews and communism, and total obedience under the *Führerprinzip*.\n\n<span class=\"para-ref\">[3.2]</span> Hitler also demanded **Lebensraum** (\"living space\") conquered across Eastern Europe and Russia. Crucially, the failed putsch taught him to abandon armed revolt. Instead, he focused on pursuing power through legal constitutional elections rather than armed rebellion, winning votes to dismantle Weimar democracy from within.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Held in spacious quarters during his **Landsberg Fortress** detention, Hitler welcomed party visitors and dictated **Mein Kampf ('My Struggle')** to deputy Rudolf Hess. The book set out his core beliefs: Aryan racial supremacy, fierce hatred of Jews and communism, and total obedience under the *Führerprinzip*.\n\n<span class=\"para-ref\">[3.2]</span> Hitler also demanded **Lebensraum** (\"living space\") conquered across Eastern Europe and Russia. Crucially, the failed putsch taught him to abandon armed revolt. Instead, he focused on pursuing power through legal constitutional elections rather than armed rebellion, winning votes to dismantle Weimar democracy from within.",
           "sources": [
             {
               "id": "weimar_l6_source_a",
@@ -8369,8 +8903,8 @@ window.unitData = {
         {
           "title": "The Bamberg Conference: Crushing Strasser’s Left Wing and Pledging the Legal Path to Power (1925–1926)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> Released from prison in December 1924, Hitler found the Nazi Party banned and splintered into competing regional factions. Re-founding the movement in February 1925, he pledged to pursue a strictly **legal democratic pathway**, promising authorities that the party would respect constitutional law. He subsequently established specialized party organizations for women, students, and youth, while founding the elite Schutzstaffel (SS) bodyguard.\n\n<span class=\"para-ref\">[4.2]</span> To resolve an ideological crisis between southern nationalists and northern socialist-leaning branches, Hitler convened the decisive **1926 Bamberg Conference**. In a commanding speech, he defeated northern rivals Gregor Strasser and Joseph Goebbels, reaffirming the 25-Point Programme as unalterable. With internal **party discipline consolidated** under the Führerprinzip, Hitler secured absolute personal control over the party apparatus, demanding unquestioning obedience across every regional branch in Germany.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Released from prison in December 1924, Hitler found the Nazi Party banned and splintered into competing regional factions. Re-founding the movement in February 1925, he pledged to pursue a strictly **legal democratic pathway**, promising authorities that the party would respect constitutional law. He subsequently established specialized party organizations for women, students, and youth, while founding the elite Schutzstaffel (SS) bodyguard.\n\n<span class=\"para-ref\">[4.2]</span> To resolve an ideological crisis between southern nationalists and northern socialist-leaning branches, Hitler convened the decisive **1926 Bamberg Conference**. In a commanding speech, he defeated northern rivals Gregor Strasser and Joseph Goebbels, reaffirming the 25-Point Programme as unalterable. With internal **party discipline consolidated** under the Führerprinzip, Hitler secured absolute personal control over the party apparatus, demanding unquestioning obedience across every regional branch in Germany.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Freed from prison in December 1924, Hitler re-founded the splintered Nazi Party in February **1925**, promising authorities to seek power through legal elections. He set up specialist Nazi branches for women, students, and youth alongside his elite black-shirted Schutzstaffel (SS) personal bodyguard.\n\n<span class=\"para-ref\">[4.2]</span> To settle an ideological split between southern nationalists and northern socialist-leaning Nazis, Hitler called the **1926** Bamberg Conference. Enforcing **the Führerprinzip**, he defeated Gregor Strasser, won **Joseph Goebbels** over as Berlin leader, and locked in strict personal obedience across every regional branch.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Freed from prison in December 1924, Hitler re-founded the splintered Nazi Party in February **1925**, promising authorities to seek power through legal elections. He set up specialist Nazi branches for women, students, and youth alongside his elite black-shirted Schutzstaffel (SS) personal bodyguard.\n\n<span class=\"para-ref\">[4.2]</span> To settle an ideological split between southern nationalists and northern socialist-leaning Nazis, Hitler called the **1926** Bamberg Conference. Enforcing **the Führerprinzip**, he defeated Gregor Strasser, won **Joseph Goebbels** over as Berlin leader, and locked in strict personal obedience across every regional branch.",
           "sources": [
             {
               "id": "weimar_l6_source_bamberg",
@@ -8426,8 +8960,8 @@ window.unitData = {
         {
           "title": "The Electoral Wilderness: 2.6% of the Reichstag Vote in the Golden Twenties (May 1928)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Between 1924 and 1929, Stresemann’s economic stabilization and American Dawes Plan loans ushered in Weimar prosperity, starving extremist parties of public support. In the May **1928 Reichstag election (2.6%)**, the Nazi Party suffered a humiliating defeat, securing barely eight hundred thousand votes. Winning just **twelve parliamentary seats**, the Nazis remained an insignificant fringe party, completely overshadowed by moderate Social Democrats and Centrists.\n\n<span class=\"para-ref\">[5.2]</span> Nevertheless, these \"lean years\" proved vital for building organizational resilience. Hitler divided the nation into thirty-five districts matching electoral boundaries, placing a dedicated **Gauleiter nationwide apparatus** in charge of regional recruitment and local propaganda. Party membership expanded past one hundred thousand disciplined activists. When the Wall Street Crash struck in October 1929, the party possessed a sophisticated nationwide organization primed to exploit national crisis.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Between 1924 and 1929, Stresemann’s economic stabilization and American Dawes Plan loans ushered in Weimar prosperity, starving extremist parties of public support. In the May **1928 Reichstag election (2.6%)**, the Nazi Party suffered a humiliating defeat, securing barely eight hundred thousand votes. Winning just **twelve parliamentary seats**, the Nazis remained an insignificant fringe party, completely overshadowed by moderate Social Democrats and Centrists.\n\n<span class=\"para-ref\">[5.2]</span> Nevertheless, these \"lean years\" proved vital for building organizational resilience. Hitler divided the nation into thirty-five districts matching electoral boundaries, placing a dedicated **Gauleiter nationwide apparatus** in charge of regional recruitment and local propaganda. Party membership expanded past one hundred thousand disciplined activists. When the Wall Street Crash struck in October 1929, the party possessed a sophisticated nationwide organization primed to exploit national crisis.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Between 1924 and 1929, Stresemann's economic stabilization and American Dawes Plan loans brought Weimar prosperity, starving extremists of votes. In the May 1928 Reichstag election, the Nazis won barely 800,000 votes — just **2.6%** of the vote and **12 seats** — staying a tiny fringe party behind moderate democrats.\n\n<span class=\"para-ref\">[5.2]</span> Even so, these \"lean years\" built a strong national party structure. Hitler divided Germany into thirty-five electoral regions, each run by a loyal **Gauleiter**, and grew membership past 100,000 disciplined activists. When the Wall Street Crash struck in October 1929, the party stood ready to exploit national crisis.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Between 1924 and 1929, Stresemann's economic stabilization and American Dawes Plan loans brought Weimar prosperity, starving extremists of votes. In the May 1928 Reichstag election, the Nazis won barely 800,000 votes — just **2.6%** of the vote and **12 seats** — staying a tiny fringe party behind moderate democrats.\n\n<span class=\"para-ref\">[5.2]</span> Even so, these \"lean years\" built a strong national party structure. Hitler divided Germany into thirty-five electoral regions, each run by a loyal **Gauleiter**, and grew membership past 100,000 disciplined activists. When the Wall Street Crash struck in October 1929, the party stood ready to exploit national crisis.",
           "sources": [
             {
               "id": "weimar_l6_source_election1928",
@@ -8744,8 +9278,8 @@ window.unitData = {
       "workbook_stages": [
         {
           "stage": 1,
-          "dates": "8 Nov 1923",
-          "title": "The Bürgerbräukeller Coup",
+          "dates": "8–9 Nov 1923",
+          "title": "The Bürgerbräukeller Coup & Failed March",
           "spec_focus": "Munich Putsch causes; Ruhr crisis; storming the beer hall; Ludendorff involvement.",
           "focus_clue": "How did the armed coup attempt to overthrow the Bavarian state?",
           "para_ref": "[1.1–1.2]",
@@ -8772,14 +9306,17 @@ window.unitData = {
             }
           ],
           "model_sentence": "Exploiting hyperinflation in November 1923, Hitler stormed the <strong>Bürgerbräukeller Beer Hall</strong> alongside war hero <strong>General Erich Ludendorff</strong>, but their armed coup collapsed during a <strong>failed Munich march (16 dead)</strong> when Bavarian police opened fire.",
-          "heading": "The Bürgerbräukeller Coup",
-          "date": "8 Nov 1923",
-          "step": 1
+          "heading": "Why did Hitler’s November 1923 Munich Beer Hall coup collapse?",
+          "date": "8–9 Nov 1923",
+          "step": 1,
+          "question": "Why did Hitler’s November 1923 Munich Beer Hall coup collapse?",
+          "questionHeading": "Why did Hitler’s November 1923 Munich Beer Hall coup collapse?",
+          "prose_hash": "d91e366eff"
         },
         {
           "stage": 2,
-          "dates": "9 Nov 1923",
-          "title": "The Residenzstrasse Clash & Putsch Collapse",
+          "dates": "Feb 1924",
+          "title": "The Munich Treason Trial Platform",
           "spec_focus": "Failure of the putsch; police resistance; Residenzstrasse firefight; 16 dead.",
           "focus_clue": "Why did the Bavarian police crush the march instead of defecting?",
           "para_ref": "[2.1–2.2]",
@@ -8806,14 +9343,17 @@ window.unitData = {
             }
           ],
           "model_sentence": "Rather than silencing him, the 1924 <strong>Munich treason trial</strong> provided an ideal national platform for <strong>Hitler courtroom propaganda</strong>, earning him sympathetic headlines and a remarkably <strong>lenient five-year sentence</strong>.",
-          "heading": "The Residenzstrasse Clash & Putsch Collapse",
-          "date": "9 Nov 1923",
-          "step": 2
+          "heading": "How did Hitler turn his 1924 Munich treason trial into propaganda?",
+          "date": "Feb 1924",
+          "step": 2,
+          "question": "How did Hitler turn his 1924 Munich treason trial into propaganda?",
+          "questionHeading": "How did Hitler turn his 1924 Munich treason trial into propaganda?",
+          "prose_hash": "771eaf5a6a"
         },
         {
           "stage": 3,
-          "dates": "Feb–Apr 1924",
-          "title": "The Munich Treason Trial & Landsberg Prison",
+          "dates": "1924",
+          "title": "Landsberg Fortress & Mein Kampf",
           "spec_focus": "Treason trial; propaganda victory; Landsberg imprisonment; Mein Kampf.",
           "focus_clue": "How did the trial transform a humiliating defeat into a propaganda triumph?",
           "para_ref": "[3.1–3.2]",
@@ -8840,9 +9380,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Serving minimal prison time in comfortable <strong>Landsberg Fortress detention</strong>, Hitler dictated his political autobiography <strong>Mein Kampf treatise</strong> outlining his racial worldview and plans for eastern <strong>Lebensraum territorial expansion</strong>.",
-          "heading": "The Munich Treason Trial & Landsberg Prison",
-          "date": "Feb–Apr 1924",
-          "step": 3
+          "heading": "What core ideas and strategy did Hitler set out in Landsberg Fortress?",
+          "date": "1924",
+          "step": 3,
+          "question": "What core ideas and strategy did Hitler set out in Landsberg Fortress?",
+          "questionHeading": "What core ideas and strategy did Hitler set out in Landsberg Fortress?",
+          "prose_hash": "6c3d0d63de"
         },
         {
           "stage": 4,
@@ -8874,9 +9417,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Recognizing armed insurrection was futile, Hitler pivoted toward a <strong>legal democratic pathway</strong> to power, using the pivotal <strong>1926 Bamberg Conference</strong> to ensure internal <strong>party discipline consolidated</strong> under his unquestioned authority.",
-          "heading": "The Bamberg Conference & The Legal Path to Power",
+          "heading": "Why did the Führer demand absolute obedience and legal election tactics?",
           "date": "1925–1926",
-          "step": 4
+          "step": 4,
+          "question": "Why did the Führer demand absolute obedience and legal election tactics?",
+          "questionHeading": "Why did the Führer demand absolute obedience and legal election tactics?",
+          "prose_hash": "3b8bb7e211"
         },
         {
           "stage": 5,
@@ -8908,9 +9454,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Despite winning only 2.6% of votes and <strong>twelve parliamentary seats</strong> in the <strong>1928 Reichstag election (2.6%)</strong>, the party used these lean years to build an efficient <strong>Gauleiter nationwide apparatus</strong> across every region.",
-          "heading": "Electoral Failure in the Golden Twenties",
+          "heading": "Why did Stresemann-era recovery reduce the Nazis to 2.6% in May 1928?",
           "date": "May 1928",
-          "step": 5
+          "step": 5,
+          "question": "Why did Stresemann-era recovery reduce the Nazis to 2.6% in May 1928?",
+          "questionHeading": "Why did Stresemann-era recovery reduce the Nazis to 2.6% in May 1928?",
+          "prose_hash": "d76bc25125"
         }
       ],
       "causal_domino_spine": {
@@ -8919,39 +9468,42 @@ window.unitData = {
         "stages": [
           {
             "step": 1,
-            "date": "8 Nov 1923",
+            "date": "8–9 Nov 1923",
             "para_ref": "[1.1–1.2]",
-            "title": "The Bürgerbräukeller Coup",
-            "actor": "Adolf Hitler, SA & General Ludendorff",
-            "tag": "🍺 ARMED BEER HALL INSURRECTION",
-            "trigger": "Hitler fired a pistol shot into the beer hall ceiling, forcing Bavarian leaders Kahr and Lossow at gunpoint to support an armed march on Berlin.",
-            "desc": "Hitler fired a pistol shot into the beer hall ceiling, forcing Bavarian leaders Kahr and Lossow at gunpoint to support an armed march on Berlin.",
-            "connective": "Attempted to spark a right-wing national revolution, but collapsed when the released Bavarian leaders alerted state police forces.",
-            "question": "How did the armed coup attempt to overthrow the Bavarian state?"
+            "title": "The Bürgerbräukeller Coup & Failed March",
+            "actor": "Adolf Hitler, Ludendorff & SA",
+            "tag": "🍺 ARMED MUNICH PUTSCH",
+            "trigger": "Hitler seized the Bürgerbräukeller at gunpoint with Ludendorff on 8 November 1923, but armed police gunfire crushed the Munich street march, leaving 16 dead.",
+            "desc": "Hitler seized the Bürgerbräukeller at gunpoint with Ludendorff on 8 November 1923, but armed police gunfire crushed the Munich street march, leaving 16 dead.",
+            "connective": "Shattered Hitler’s attempt to seize power by force and brought him before the Munich treason court in February 1924.",
+            "question": "Why did Hitler’s November 1923 Munich Beer Hall coup collapse?",
+            "prose_hash": "d91e366eff"
           },
           {
             "step": 2,
-            "date": "9 Nov 1923",
+            "date": "Feb 1924",
             "para_ref": "[2.1–2.2]",
-            "title": "The Residenzstrasse Clash & Putsch Collapse",
-            "actor": "Bavarian State Police & 2,000 Marchers",
-            "tag": "💥 ODEONSPLATZ BLOODBATH",
-            "trigger": "Police opened fire on 2,000 Nazi marchers in the narrow Residenzstrasse, killing sixteen stormtroopers and shattering the putsch.",
-            "desc": "Police opened fire on 2,000 Nazi marchers in the narrow Residenzstrasse, killing sixteen stormtroopers and shattering the putsch.",
-            "connective": "Dispersed the armed uprising, leading to Hitler’s arrest, the banning of the party, and a high-profile treason trial.",
-            "question": "Why did the Bavarian police crush the march instead of defecting?"
+            "title": "The Munich Treason Trial Platform",
+            "actor": "Adolf Hitler & Right-Wing Judges",
+            "tag": "⚖️ COURTROOM PROPAGANDA",
+            "trigger": "Sympathetic right-wing judges let Hitler turn his February 1924 Munich treason trial into a national propaganda stage and handed down a lenient five-year sentence.",
+            "desc": "Sympathetic right-wing judges let Hitler turn his February 1924 Munich treason trial into a national propaganda stage and handed down a lenient five-year sentence.",
+            "connective": "Transformed Hitler from a defeated regional rebel into a national right-wing figure serving barely nine months in Landsberg Fortress.",
+            "question": "How did Hitler turn his 1924 Munich treason trial into propaganda?",
+            "prose_hash": "771eaf5a6a"
           },
           {
             "step": 3,
-            "date": "Feb–Apr 1924",
+            "date": "1924",
             "para_ref": "[3.1–3.2]",
-            "title": "The Munich Treason Trial & Landsberg Prison",
-            "actor": "Adolf Hitler & Presiding Judge Neithardt",
-            "tag": "⚖️ LEGAL PLATFORM & MEIN KAMPF",
-            "trigger": "Sympathetic judges gave Hitler a platform to attack the Republic and a lenient five-year term, allowing him to dictate Mein Kampf in comfort.",
-            "desc": "Sympathetic judges gave Hitler a platform to attack the Republic and a lenient five-year term, allowing him to dictate Mein Kampf in comfort.",
-            "connective": "Transformed Hitler into a national celebrity and convinced him to abandon violent coups in favor of democratic electoral subversion.",
-            "question": "How did the trial transform a humiliating defeat into a propaganda triumph?"
+            "title": "Landsberg Fortress & Mein Kampf",
+            "actor": "Adolf Hitler & Rudolf Hess",
+            "tag": "📖 MEIN KAMPF & LEGAL STRATEGY",
+            "trigger": "During comfortable Landsberg Fortress detention, Hitler dictated Mein Kampf to Rudolf Hess, setting out racial anti-Semitism, Lebensraum, and a legal path to power.",
+            "desc": "During comfortable Landsberg Fortress detention, Hitler dictated Mein Kampf to Rudolf Hess, setting out racial anti-Semitism, Lebensraum, and a legal path to power.",
+            "connective": "Convinced Hitler to abandon armed coups and subvert Weimar democracy legally through constitutional elections.",
+            "question": "What core ideas and strategy did Hitler set out in Landsberg Fortress?",
+            "prose_hash": "6c3d0d63de"
           },
           {
             "step": 4,
@@ -8963,7 +9515,8 @@ window.unitData = {
             "trigger": "Hitler crushed Gregor Strasser’s northern socialist faction at Bamberg, establishing the Führerprinzip and committing to winning power via Reichstag votes.",
             "desc": "Hitler crushed Gregor Strasser’s northern socialist faction at Bamberg, establishing the Führerprinzip and committing to winning power via Reichstag votes.",
             "connective": "United the party under Hitler’s absolute leadership and laid the structural foundation for nationwide electoral mobilization.",
-            "question": "Why did the Führer demand absolute obedience and legal election tactics?"
+            "question": "Why did the Führer demand absolute obedience and legal election tactics?",
+            "prose_hash": "3b8bb7e211"
           },
           {
             "step": 5,
@@ -8975,7 +9528,8 @@ window.unitData = {
             "trigger": "The NSDAP won just 12 seats (2.6% of the vote) in May 1928 as Dawes Plan prosperity and Weimar social security neutralized political extremism.",
             "desc": "The NSDAP won just 12 seats (2.6% of the vote) in May 1928 as Dawes Plan prosperity and Weimar social security neutralized political extremism.",
             "connective": "Left the reorganized party waiting as a disciplined fringe apparatus until the economic catastrophe of 1929 provided a mass grievance.",
-            "question": "Why did economic stability make radical nationalist propaganda ineffective?"
+            "question": "Why did Stresemann-era recovery reduce the Nazis to 2.6% in May 1928?",
+            "prose_hash": "d76bc25125"
           }
         ]
       },
@@ -9241,48 +9795,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Who became Chancellor in 1923 and helped end hyperinflation?",
-            "answer": "Gustav Stresemann."
+            "stage": 1,
+            "question": "In what month and year did the Munich Putsch take place?",
+            "answer": "November 1923",
+            "explanation": "Hitler sought to exploit the hyperinflation crisis and passive resistance in the Ruhr, marching on Munich on 8–9 November 1923."
           },
           {
-            "question": "What new currency did Stresemann introduce in 1923?",
-            "answer": "The Rentenmark."
+            "stage": 2,
+            "question": "What serious criminal charge was Hitler put on trial for in early 1924?",
+            "answer": "High Treason",
+            "explanation": "High treason legally carried the death penalty or life imprisonment under the Weimar Penal Code, but conservative judges granted Hitler extraordinary leniency."
           },
           {
-            "question": "What was the Dawes Plan (1924)?",
-            "answer": "A plan to reduce annual reparation payments and secure 800 million marks in US loans."
+            "stage": 3,
+            "question": "What was the title of the book Hitler dictated while in prison?",
+            "answer": "Mein Kampf / My Struggle",
+            "explanation": "Dictated to deputy Rudolf Hess, Mein Kampf outlined Hitler's core racial doctrines, anti-Semitism, and foreign policy quest for Lebensraum."
           },
           {
-            "question": "What was the Young Plan (1929)?",
-            "answer": "It reduced the total reparations bill from £6.6 billion to £2 billion and gave Germany longer to pay."
+            "stage": 4,
+            "question": "What dictatorial leadership principle was confirmed at the 1926 Bamberg Conference, establishing Hitler's absolute authority?",
+            "answer": "The Führerprinzip",
+            "explanation": "The 1926 Bamberg Conference solidified the Führerprinzip, establishing that Hitler's will was the sole and supreme law of the party."
           },
           {
-            "question": "What was the Locarno Pact (1925)?",
-            "answer": "An agreement where Germany accepted its western borders with France."
+            "stage": 5,
+            "question": "What title was given to the regional party chiefs appointed to run the 35 party districts (Gaue) across Germany?",
+            "answer": "Gauleiter",
+            "explanation": "Hitler restructured the party into 35 geographic districts (Gaue), each commanded by a loyal regional Gauleiter."
           },
           {
-            "question": "Why did France invade the Ruhr in 1923?",
-            "answer": "Germany defaulted on reparations."
+            "stage": 1,
+            "question": "Which famous First World War general supported Hitler during the Munich Putsch?",
+            "answer": "General Erich Ludendorff",
+            "explanation": "Ludendorff's national military fame gave the putsch vital public prestige, marching at the front of the column towards the Feldherrnhalle."
           },
           {
-            "question": "What was passive resistance?",
-            "answer": "Workers striking against the French in the Ruhr."
+            "stage": 2,
+            "question": "Why did Hitler receive such a lenient sentence (5 years) at his trial?",
+            "answer": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views",
+            "explanation": "Presiding Judge Georg Neithardt openly sympathised with Hitler's anti-Weimar nationalism, allowing him to turn the trial into a political propaganda stage and granting him parole after just nine months."
           },
           {
-            "question": "Who suffered most from hyperinflation?",
-            "answer": "People with fixed savings."
+            "stage": 3,
+            "question": "What personal ideological manifesto did Hitler dictate to Rudolf Hess while imprisoned at Landsberg Fortress in 1924?",
+            "answer": "Mein Kampf ('My Struggle')",
+            "explanation": "While serving nine months in Landsberg Fortress, Hitler dictated Mein Kampf, laying out his racial worldview and foreign policy goals."
           },
           {
-            "question": "What was the Kapp Putsch?",
-            "answer": "A right-wing rebellion by the Freikorps."
+            "stage": 4,
+            "question": "In what year did Hitler establish the SS (Schutzstaffel)?",
+            "answer": "1925",
+            "explanation": "Formed in 1925 as Hitler's elite personal bodyguard, the SS swore loyalty oaths directly to the Führer rather than the broader party."
           },
           {
-            "question": "What was Article 231?",
-            "answer": "The War Guilt clause."
+            "stage": 5,
+            "question": "How many seats did the Nazi Party win in the 1928 Reichstag elections?",
+            "answer": "12 seats",
+            "explanation": "The Nazis polled a mere 2.6% of the national vote in 1928, marginalized by the Weimar Republic's economic recovery and cultural flourishing."
           }
         ]
       },
@@ -9340,7 +9913,9 @@ window.unitData = {
       "vocab_cloze_text": "Following the [The Wall Street Crash] in 1929, Germany suffered massive unemployment. The democratic government failed to cope; [Hermann Müller] resigned when his coalition collapsed, and his replacement, [Heinrich Brüning], relied heavily on [Article 48] to pass harsh laws. As unemployment rose, many workers flocked to the [KPD (Communist Party of Germany)], who used their violent [Rotfrontkämpferbund (Red Front Fighters' League)] to fight in the streets. Terrified of a communist revolution, many middle-class Germans began to support the Nazis through [Negative Cohesion]—not because they loved Hitler, but because they shared his hatred of communists.",
       "quiz": [
         {
+          "stage": 1,
           "question": "In what month and year did the Wall Street Crash occur?",
+          "q": "In what month and year did the Wall Street Crash occur?",
           "options": [
             "November 1923",
             "January 1933",
@@ -9348,169 +9923,97 @@ window.unitData = {
             "October 1929"
           ],
           "answer": "October 1929",
-          "q": "In what month and year did the Wall Street Crash occur?",
-          "a": "October 1929"
+          "a": "October 1929",
+          "explanation": "On 29 October 1929, the catastrophic Wall Street Crash (1929) in New York shattered international financial markets."
         },
         {
-          "question": "Why was Germany's economy hit so hard by the Wall Street Crash?",
-          "options": [
-            "Because the German government had invested all of its gold reserves in the US stock market",
-            "Because their economy relied heavily on US loans from the Dawes Plan, which American banks suddenly demanded back",
-            "Because all German factories were physically destroyed by the ensuing riots",
-            "Because France immediately demanded full payment of all remaining reparations"
-          ],
-          "answer": "Because their economy relied heavily on US loans from the Dawes Plan, which American banks suddenly demanded back",
-          "q": "Why was Germany's economy hit so hard by the Wall Street Crash?",
-          "a": "Because their economy relied heavily on US loans from the Dawes Plan, which American banks suddenly demanded back"
-        },
-        {
-          "question": "By 1932, how many Germans were unemployed?",
-          "options": [
-            "2 million",
-            "1 million",
-            "6 million",
-            "10 million"
-          ],
-          "answer": "6 million",
-          "q": "By 1932, how many Germans were unemployed?",
-          "a": "6 million"
-        },
-        {
+          "stage": 1,
           "question": "What catastrophic event in October 1929 triggered the collapse of the German economy and mass unemployment?",
+          "q": "What catastrophic event in October 1929 triggered the collapse of the German economy and mass unemployment?",
           "options": [
-            "The Wall Street Crash",
             "The Munich Putsch",
             "The invasion of the Ruhr",
+            "The Wall Street Crash",
             "The signing of the Locarno Treaties"
           ],
           "answer": "The Wall Street Crash",
-          "explanation": "The October 1929 Wall Street Crash caused American banks to abruptly recall their short-term loans, plunging Germany into catastrophe.",
-          "q": "What catastrophic event in October 1929 triggered the collapse of the German economy and mass unemployment?",
-          "a": "The Wall Street Crash"
+          "a": "The Wall Street Crash",
+          "explanation": "The October 1929 Wall Street Crash caused American banks to abruptly recall their short-term loans, plunging Germany into catastrophe."
         },
         {
-          "question": "Who replaced Müller as Chancellor in 1930?",
+          "stage": 1,
+          "question": "Why did the October 1929 Wall Street Crash trigger such a rapid financial collapse inside Germany?",
+          "q": "Why did the October 1929 Wall Street Crash trigger such a rapid financial collapse inside Germany?",
           "options": [
-            "Adolf Hitler",
-            "Heinrich Brüning",
-            "Kurt von Schleicher",
-            "Paul von Hindenburg"
+            "Britain imposed a fresh Royal Navy blockade on Hamburg",
+            "Short-term US bank loans under the Dawes Plan were recalled",
+            "France immediately invaded Berlin to seize gold reserves",
+            "Germany had invested its entire state budget in Soviet bonds"
           ],
-          "answer": "Heinrich Brüning",
-          "q": "Who replaced Müller as Chancellor in 1930?",
-          "a": "Heinrich Brüning"
+          "answer": "Short-term US bank loans under the Dawes Plan were recalled",
+          "a": "Short-term US bank loans under the Dawes Plan were recalled",
+          "explanation": "Because Weimar prosperity depended heavily on short-term American credits, US banks recalling their loans wiped out German capital reserves and bankrupted tens of thousands of firms."
         },
         {
-          "question": "What bitter nickname was given to Chancellor Brüning by the German public?",
+          "stage": 1,
+          "question": "By what percentage did German industrial factory production plummet after American loans were recalled following the Wall Street Crash?",
+          "q": "By what percentage did German industrial factory production plummet after American loans were recalled following the Wall Street Crash?",
           "options": [
-            "The 'Hunger Chancellor'",
-            "The 'Dictator'",
-            "The 'Iron Chancellor'",
-            "The 'November Criminal'"
+            "Forty percent",
+            "Five percent",
+            "Twelve percent",
+            "Ninety-five percent"
           ],
-          "answer": "The 'Hunger Chancellor'",
-          "q": "What bitter nickname was given to Chancellor Brüning by the German public?",
-          "a": "The 'Hunger Chancellor'"
+          "answer": "Forty percent",
+          "a": "Forty percent",
+          "explanation": "Bank failures and frozen credit caused German factory output to drop by forty percent, driving registered unemployment toward six million."
         },
         {
-          "question": "Why did the public give Brüning this nickname?",
+          "stage": 2,
+          "question": "By 1932, how many Germans were unemployed?",
+          "q": "By 1932, how many Germans were unemployed?",
           "options": [
-            "Because he deliberately starved communist prisoners",
-            "Because he gave all of Germany's food away to France as reparations",
-            "Because he raised taxes and cut government wages and unemployment benefits",
-            "Because he refused to import food from America"
+            "2 million",
+            "1 million",
+            "10 million",
+            "6 million"
           ],
-          "answer": "Because he raised taxes and cut government wages and unemployment benefits",
-          "q": "Why did the public give Brüning this nickname?",
-          "a": "Because he raised taxes and cut government wages and unemployment benefits"
+          "answer": "6 million",
+          "a": "6 million",
+          "explanation": "By winter 1932, German unemployment exploded into a devastating social catastrophe, leaving over 6 million unemployed registered workers without income."
         },
         {
+          "stage": 2,
           "question": "Which constitutional clause did Brüning and President Hindenburg use to bypass the Reichstag and rule by decree?",
+          "q": "Which constitutional clause did Brüning and President Hindenburg use to bypass the Reichstag and rule by decree?",
           "options": [
             "Article 231",
             "The Enabling Act",
-            "The Dawes Plan",
-            "Article 48"
+            "Article 48",
+            "The Dawes Plan"
           ],
           "answer": "Article 48",
-          "q": "Which constitutional clause did Brüning and President Hindenburg use to bypass the Reichstag and rule by decree?",
-          "a": "Article 48"
+          "a": "Article 48",
+          "explanation": "When the Reichstag rejected his austerity measures, Brüning dissolved parliament and governed through presidential emergency decrees under Article 48, fatally normalizing authoritarian rule without democratic parliamentary consent."
         },
         {
-          "question": "Which extreme left-wing party saw a surge in support from unemployed workers during the Depression?",
-          "options": [
-            "The Centre Party",
-            "The SPD / Social Democrats",
-            "The KPD / Communist Party",
-            "The NSDAP / Nazi Party"
-          ],
-          "answer": "The KPD / Communist Party",
-          "q": "Which extreme left-wing party saw a surge in support from unemployed workers during the Depression?",
-          "a": "The KPD / Communist Party"
-        },
-        {
+          "stage": 2,
           "question": "How high did registered unemployment surge in Germany by the winter of 1932 during the Great Depression?",
+          "q": "How high did registered unemployment surge in Germany by the winter of 1932 during the Great Depression?",
           "options": [
-            "Six million registered unemployed workers",
             "Under 500,000 workers",
+            "Six million registered unemployed workers",
             "Exactly 1 million workers",
             "Over 20 million workers"
           ],
           "answer": "Six million registered unemployed workers",
-          "explanation": "By the winter of 1932, registered unemployment surged to over six million workers, creating widespread destitution.",
-          "q": "How high did registered unemployment surge in Germany by the winter of 1932 during the Great Depression?",
-          "a": "Six million registered unemployed workers"
+          "a": "Six million registered unemployed workers",
+          "explanation": "By the winter of 1932, registered unemployment surged to over six million workers, creating widespread destitution."
         },
         {
-          "question": "Who did Hitler run against in the 1932 Presidential Election?",
-          "options": [
-            "Ernst Thälmann",
-            "Hermann Müller",
-            "Heinrich Brüning",
-            "Paul von Hindenburg"
-          ],
-          "answer": "Paul von Hindenburg",
-          "q": "Who did Hitler run against in the 1932 Presidential Election?",
-          "a": "Paul von Hindenburg"
-        },
-        {
-          "question": "Although he lost, roughly how many votes did Hitler secure in the 1932 Presidential Election?",
-          "options": [
-            "5 million votes",
-            "13.4 million votes",
-            "2 million votes",
-            "20 million votes"
-          ],
-          "answer": "13.4 million votes",
-          "q": "Although he lost, roughly how many votes did Hitler secure in the 1932 Presidential Election?",
-          "a": "13.4 million votes"
-        },
-        {
-          "question": "What was the name of the innovative propaganda campaign where Hitler travelled the country by aeroplane?",
-          "options": [
-            "The 'Skies of the Reich' campaign",
-            "The 'Hitler over Germany' campaign",
-            "The 'Eagle of Germany' campaign",
-            "The 'Flight of the Führer' campaign"
-          ],
-          "answer": "The 'Hitler over Germany' campaign",
-          "q": "What was the name of the innovative propaganda campaign where Hitler travelled the country by aeroplane?",
-          "a": "The 'Hitler over Germany' campaign"
-        },
-        {
-          "question": "What simple, powerful three-word slogan did the Nazis use to appeal to starving, unemployed workers?",
-          "options": [
-            "'Work and Bread'",
-            "'Blood and Iron'",
-            "'Peace and Prosperity'",
-            "'Freedom and Glory'"
-          ],
-          "answer": "'Work and Bread'",
-          "q": "What simple, powerful three-word slogan did the Nazis use to appeal to starving, unemployed workers?",
-          "a": "'Work and Bread'"
-        },
-        {
+          "stage": 2,
           "question": "What constitutional power did Chancellor Heinrich Brüning rely upon to govern when parliament deadlocked over budget cuts?",
+          "q": "What constitutional power did Chancellor Heinrich Brüning rely upon to govern when parliament deadlocked over budget cuts?",
           "options": [
             "Article 48 emergency presidential decrees",
             "A unanimous vote of the Reichsrat",
@@ -9518,73 +10021,176 @@ window.unitData = {
             "The direct command of the League of Nations"
           ],
           "answer": "Article 48 emergency presidential decrees",
-          "explanation": "Unable to secure parliamentary majorities, Chancellor Brüning relied on President Hindenburg's Article 48 emergency decrees to bypass the Reichstag.",
-          "q": "What constitutional power did Chancellor Heinrich Brüning rely upon to govern when parliament deadlocked over budget cuts?",
-          "a": "Article 48 emergency presidential decrees"
+          "a": "Article 48 emergency presidential decrees",
+          "explanation": "Unable to secure parliamentary majorities, Chancellor Brüning relied on President Hindenburg's Article 48 emergency decrees to bypass the Reichstag."
         },
         {
-          "question": "How many members did the SA (Brownshirts) have by 1932?",
+          "stage": 3,
+          "question": "Which extreme left-wing party saw a surge in support from unemployed workers during the Depression?",
+          "q": "Which extreme left-wing party saw a surge in support from unemployed workers during the Depression?",
           "options": [
-            "100,000",
-            "2 million",
-            "400,000",
-            "1 million"
+            "The Centre Party",
+            "The SPD / Social Democrats",
+            "The NSDAP / Nazi Party",
+            "The KPD / Communist Party"
           ],
-          "answer": "400,000",
-          "q": "How many members did the SA (Brownshirts) have by 1932?",
-          "a": "400,000"
+          "answer": "The KPD / Communist Party",
+          "a": "The KPD / Communist Party",
+          "explanation": "Industrial workers deserted moderate parties to join the Communist Party (KPD), which surged past one hundred Reichstag seats."
         },
         {
-          "question": "What violent communist paramilitary organization fought daily street battles against the Nazi SA between 1930 and 1932?",
+          "stage": 3,
+          "question": "What was the name of the innovative propaganda campaign where Hitler travelled the country by aeroplane?",
+          "q": "What was the name of the innovative propaganda campaign where Hitler travelled the country by aeroplane?",
           "options": [
-            "The Rotfrontkämpferbund",
-            "The Freikorps",
-            "The Stahlhelm",
-            "The Gestapo"
+            "The 'Skies of the Reich' campaign",
+            "The 'Eagle of Germany' campaign",
+            "The 'Hitler over Germany' campaign",
+            "The 'Flight of the Führer' campaign"
           ],
-          "answer": "The Rotfrontkämpferbund",
-          "explanation": "The communist Rotfrontkämpferbund fought violent, daily street skirmishes against the Nazi SA across industrial German cities.",
-          "q": "What violent communist paramilitary organization fought daily street battles against the Nazi SA between 1930 and 1932?",
-          "a": "The Rotfrontkämpferbund"
+          "answer": "The 'Hitler over Germany' campaign",
+          "a": "The 'Hitler over Germany' campaign",
+          "explanation": "Wealthy magnates like Fritz Thyssen poured substantial funds into party coffers, viewing Hitler’s disciplined SA as the only barrier against communist revolution."
         },
         {
+          "stage": 3,
           "question": "What psychological fear did the Nazis exploit to win over middle-class and rural German voters?",
+          "q": "What psychological fear did the Nazis exploit to win over middle-class and rural German voters?",
           "options": [
-            "The terror of a violent communist revolution",
             "The fear of British tourists visiting Berlin",
+            "The terror of a violent communist revolution",
             "A potential invasion by the Swiss army",
             "The introduction of modern automobiles"
           ],
           "answer": "The terror of a violent communist revolution",
-          "explanation": "Nazi propaganda effectively weaponized middle-class terror of communism, presenting the NSDAP as the only force capable of restoring order.",
-          "q": "What psychological fear did the Nazis exploit to win over middle-class and rural German voters?",
-          "a": "The terror of a violent communist revolution"
+          "a": "The terror of a violent communist revolution",
+          "explanation": "Nazi propaganda effectively weaponized middle-class terror of communism, presenting the NSDAP as the only force capable of restoring order."
         },
         {
-          "question": "How many Reichstag seats did the Nazi Party win in the dramatic breakthrough election of September 1930?",
+          "stage": 3,
+          "question": "Which wealthy German industrialist poured substantial financial backing into the Nazi Party out of fear of a Communist revolution?",
+          "q": "Which wealthy German industrialist poured substantial financial backing into the Nazi Party out of fear of a Communist revolution?",
           "options": [
-            "107 seats",
+            "Fritz Thyssen",
+            "Walther Rathenau",
+            "Oskar Schindler",
+            "Walter Gropius"
+          ],
+          "answer": "Fritz Thyssen",
+          "a": "Fritz Thyssen",
+          "explanation": "Terrified by surging KPD support and street fighting, industrial magnates like Fritz Thyssen financed the Nazis as a bulwark against Bolshevik revolution."
+        },
+        {
+          "stage": 4,
+          "question": "Who replaced Müller as Chancellor in 1930?",
+          "q": "Who replaced Müller as Chancellor in 1930?",
+          "options": [
+            "Adolf Hitler",
+            "Kurt von Schleicher",
+            "Paul von Hindenburg",
+            "Heinrich Brüning"
+          ],
+          "answer": "Heinrich Brüning",
+          "a": "Heinrich Brüning",
+          "explanation": "Appointed Reich propaganda director in 1930, Joseph Goebbels revolutionized modern election campaigning to market the Nazi movement."
+        },
+        {
+          "stage": 4,
+          "question": "What simple, powerful three-word slogan did the Nazis use to appeal to starving, unemployed workers?",
+          "q": "What simple, powerful three-word slogan did the Nazis use to appeal to starving, unemployed workers?",
+          "options": [
+            "'Blood and Iron'",
+            "'Peace and Prosperity'",
+            "'Work and Bread'",
+            "'Freedom and Glory'"
+          ],
+          "answer": "'Work and Bread'",
+          "a": "'Work and Bread'",
+          "explanation": "Utilizing brilliant Joseph Goebbels propaganda techniques, he flooded German towns with striking posters, synchronized loudspeaker trucks, and emotive slogans promising \"Work and Bread\"."
+        },
+        {
+          "stage": 4,
+          "question": "Who was appointed Reich propaganda director in 1930 to modernize Nazi election campaigns with posters, radio, and aircraft?",
+          "q": "Who was appointed Reich propaganda director in 1930 to modernize Nazi election campaigns with posters, radio, and aircraft?",
+          "options": [
+            "Heinrich Himmler",
+            "Joseph Goebbels",
+            "Hermann Göring",
+            "Ernst Röhm"
+          ],
+          "answer": "Joseph Goebbels",
+          "a": "Joseph Goebbels",
+          "explanation": "Appointed Reich propaganda chief in 1930, Joseph Goebbels packaged emotive slogans like 'Work and Bread' with modern mass-media campaigning."
+        },
+        {
+          "stage": 4,
+          "question": "How many German cities could Hitler address in a single day by chartering passenger aircraft during the 'Hitler over Germany' flights?",
+          "q": "How many German cities could Hitler address in a single day by chartering passenger aircraft during the 'Hitler over Germany' flights?",
+          "options": [
+            "Four or five cities",
+            "Only one city per week",
+            "Twenty cities per hour",
+            "Two cities per month"
+          ],
+          "answer": "Four or five cities",
+          "a": "Four or five cities",
+          "explanation": "Chartered aircraft allowed Hitler to speak across four or five cities in a single day, projecting an image of dynamic modernity and unstoppable momentum."
+        },
+        {
+          "stage": 5,
+          "question": "What bitter nickname was given to Chancellor Brüning by the German public?",
+          "q": "What bitter nickname was given to Chancellor Brüning by the German public?",
+          "options": [
+            "The 'Dictator'",
+            "The 'Iron Chancellor'",
+            "The 'November Criminal'",
+            "The 'Hunger Chancellor'"
+          ],
+          "answer": "The 'Hunger Chancellor'",
+          "a": "The 'Hunger Chancellor'",
+          "explanation": "When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a vulgar corporal."
+        },
+        {
+          "stage": 5,
+          "question": "Although he lost, roughly how many votes did Hitler secure in the 1932 Presidential Election?",
+          "q": "Although he lost, roughly how many votes did Hitler secure in the 1932 Presidential Election?",
+          "options": [
+            "5 million votes",
+            "2 million votes",
+            "13.4 million votes",
+            "20 million votes"
+          ],
+          "answer": "13.4 million votes",
+          "a": "13.4 million votes",
+          "explanation": "In the pivotal July 1932 election (37.3%), the Nazi Party captured nearly fourteen million votes, winning an extraordinary 230 Reichstag seats."
+        },
+        {
+          "stage": 5,
+          "question": "How many Reichstag seats did the Nazi Party win in the dramatic breakthrough election of September 1930?",
+          "q": "How many Reichstag seats did the Nazi Party win in the dramatic breakthrough election of September 1930?",
+          "options": [
             "12 seats",
+            "107 seats",
             "230 seats",
             "500 seats"
           ],
           "answer": "107 seats",
-          "explanation": "In September 1930, the Nazis surged from 12 to 107 seats, becoming the second-largest party in the Reichstag overnight.",
-          "q": "How many Reichstag seats did the Nazi Party win in the dramatic breakthrough election of September 1930?",
-          "a": "107 seats"
+          "a": "107 seats",
+          "explanation": "In September 1930, the Nazis surged from 12 to 107 seats, becoming the second-largest party in the Reichstag overnight."
         },
         {
-          "question": "What was Heinrich Brüning's austerity economic policy that earned him the nickname 'the Hunger Chancellor'?",
+          "stage": 5,
+          "question": "What percentage of the national vote did the Nazi Party capture in July 1932 when it won 230 seats to become the largest party in the Reichstag?",
+          "q": "What percentage of the national vote did the Nazi Party capture in July 1932 when it won 230 seats to become the largest party in the Reichstag?",
           "options": [
-            "Slashing civil service wages, cutting unemployment benefits, and raising taxes",
-            "Printing billions of fresh paper marks to pay worker bonuses",
-            "Borrowing billions in gold from the Soviet Union",
-            "Subsidizing free luxury housing for industrial factory labourers"
+            "37.3%",
+            "2.6%",
+            "18.3%",
+            "51.0%"
           ],
-          "answer": "Slashing civil service wages, cutting unemployment benefits, and raising taxes",
-          "explanation": "Brüning implemented harsh austerity—slashing state spending, cutting salaries, and reducing welfare benefits—earning him the moniker 'Hunger Chancellor'.",
-          "q": "What was Heinrich Brüning's austerity economic policy that earned him the nickname 'the Hunger Chancellor'?",
-          "a": "Slashing civil service wages, cutting unemployment benefits, and raising taxes"
+          "answer": "37.3%",
+          "a": "37.3%",
+          "explanation": "Winning 37.3% of the vote and 230 seats in July 1932 made the Nazis Germany's largest party, though Hindenburg still refused to make Hitler Chancellor."
         }
       ],
       "questions": [
@@ -9773,8 +10379,8 @@ window.unitData = {
         {
           "title": "Black Thursday in New York: The Wall Street Crash and the Recall of American Loans (Oct 1929)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> On 29 October 1929, the catastrophic **Wall Street Crash (1929)** in New York shattered international financial markets. Because the Weimar economic miracle had been artificially financed by short-term American credits under the Dawes Plan, Germany was devastated more rapidly than any other industrial nation. The sudden collapse halted global trade, froze business credit, and plunged German industry into immediate paralysis.\n\n<span class=\"para-ref\">[1.2]</span> Facing domestic bankruptcy, anxious **US bank loans recalled** wiped out German capital reserves, triggering a catastrophic **German financial collapse**. Major banking institutions collapsed, over fifty thousand businesses declared bankruptcy, and industrial factory production plummeted by forty percent. Stresemann’s prophetic warning that Germany was \"dancing on a volcano\" materialized as an economic catastrophe that shattered public confidence in the fragile Weimar Republic.",
-          "content": "<span class=\"para-ref\">[1.1]</span> On 29 October 1929, the catastrophic **Wall Street Crash (1929)** in New York shattered international financial markets. Because the Weimar economic miracle had been artificially financed by short-term American credits under the Dawes Plan, Germany was devastated more rapidly than any other industrial nation. The sudden collapse halted global trade, froze business credit, and plunged German industry into immediate paralysis.\n\n<span class=\"para-ref\">[1.2]</span> Facing domestic bankruptcy, anxious **US bank loans recalled** wiped out German capital reserves, triggering a catastrophic **German financial collapse**. Major banking institutions collapsed, over fifty thousand businesses declared bankruptcy, and industrial factory production plummeted by forty percent. Stresemann’s prophetic warning that Germany was \"dancing on a volcano\" materialized as an economic catastrophe that shattered public confidence in the fragile Weimar Republic.",
+          "text": "<span class=\"para-ref\">[1.1]</span> On 29 **October 1929**, **the Wall Street Crash** in New York wrecked international financial markets and hit Germany harder than any other industrial nation. Because Weimar recovery rested on short-term American credit under the Dawes Plan, anxious US banks recalled their loans at once, freezing credit and trade.\n\n<span class=\"para-ref\">[1.2]</span> Recalled US loans wiped out German capital reserves and triggered a banking collapse. Major banks shut down, over 50,000 businesses went bankrupt, and factory output dropped by **forty percent**. Stresemann’s warning that Germany was \"dancing on a volcano\" came true as confidence in Weimar rule collapsed.",
+          "content": "<span class=\"para-ref\">[1.1]</span> On 29 **October 1929**, **the Wall Street Crash** in New York wrecked international financial markets and hit Germany harder than any other industrial nation. Because Weimar recovery rested on short-term American credit under the Dawes Plan, anxious US banks recalled their loans at once, freezing credit and trade.\n\n<span class=\"para-ref\">[1.2]</span> Recalled US loans wiped out German capital reserves and triggered a banking collapse. Major banks shut down, over 50,000 businesses went bankrupt, and factory output dropped by **forty percent**. Stresemann’s warning that Germany was \"dancing on a volcano\" came true as confidence in Weimar rule collapsed.",
           "image": "/images/unemployment_berlin_1930.jpg",
           "image_alt": "Queue of hundreds of unemployed German men waiting outside a municipal welfare office in Berlin during the Great Depression in 1930",
           "caption": "Mass Unemployment in Berlin (1930): The Wall Street Crash triggered the immediate recall of American loans; by 1932, over six million Germans were registered as jobless, driving widespread destitution and radicalizing the electorate.",
@@ -9834,8 +10440,8 @@ window.unitData = {
         {
           "title": "The 'Hunger Chancellor': Heinrich Brüning, Article 48 and Six Million Jobless (1930–1932)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> By winter 1932, German unemployment exploded into a devastating social catastrophe, leaving over **6 million unemployed** registered workers without income. Millions of desperate citizens queued for hours outside municipal labour exchanges or crowded soup kitchens, while homelessness soared across every major industrial city. When the democratic coalition government collapsed over unemployment insurance funding in March 1930, parliamentary democracy ceased to function effectively.\n\n<span class=\"para-ref\">[2.2]</span> President Hindenburg appointed Centre Party leader Heinrich Brüning, whose rigid **Heinrich Brüning deflation** policies worsened the crisis. Brüning enacted severe **Hunger Chancellor cuts** to wages, pensions, and unemployment relief, alienating ordinary working families. When the Reichstag rejected his austerity measures, Brüning dissolved parliament and governed through presidential emergency decrees under Article 48, fatally normalizing authoritarian rule without democratic parliamentary consent.",
-          "content": "<span class=\"para-ref\">[2.1]</span> By winter 1932, German unemployment exploded into a devastating social catastrophe, leaving over **6 million unemployed** registered workers without income. Millions of desperate citizens queued for hours outside municipal labour exchanges or crowded soup kitchens, while homelessness soared across every major industrial city. When the democratic coalition government collapsed over unemployment insurance funding in March 1930, parliamentary democracy ceased to function effectively.\n\n<span class=\"para-ref\">[2.2]</span> President Hindenburg appointed Centre Party leader Heinrich Brüning, whose rigid **Heinrich Brüning deflation** policies worsened the crisis. Brüning enacted severe **Hunger Chancellor cuts** to wages, pensions, and unemployment relief, alienating ordinary working families. When the Reichstag rejected his austerity measures, Brüning dissolved parliament and governed through presidential emergency decrees under Article 48, fatally normalizing authoritarian rule without democratic parliamentary consent.",
+          "text": "<span class=\"para-ref\">[2.1]</span> By winter 1932, mass unemployment left **six million registered unemployed workers** (**6 million** jobless) without pay. Desperate crowds queued for hours outside municipal labour exchanges and soup kitchens while homelessness soared across industrial cities. When the Grand Coalition split over dole pay in March 1930, parliamentary rule broke down.\n\n<span class=\"para-ref\">[2.2]</span> President Hindenburg appointed Centre Party leader Heinrich Brüning, whose deflationary cuts to wages, pensions, and dole pay earned him the nickname \"Hunger Chancellor\". When MPs rejected his austerity cuts, Brüning dissolved parliament and governed through **Article 48 emergency presidential decrees**, sidelining Reichstag consent.",
+          "content": "<span class=\"para-ref\">[2.1]</span> By winter 1932, mass unemployment left **six million registered unemployed workers** (**6 million** jobless) without pay. Desperate crowds queued for hours outside municipal labour exchanges and soup kitchens while homelessness soared across industrial cities. When the Grand Coalition split over dole pay in March 1930, parliamentary rule broke down.\n\n<span class=\"para-ref\">[2.2]</span> President Hindenburg appointed Centre Party leader Heinrich Brüning, whose deflationary cuts to wages, pensions, and dole pay earned him the nickname \"Hunger Chancellor\". When MPs rejected his austerity cuts, Brüning dissolved parliament and governed through **Article 48 emergency presidential decrees**, sidelining Reichstag consent.",
           "sources": [
             {
               "id": "weimar_l7_source_b",
@@ -9891,8 +10497,8 @@ window.unitData = {
         {
           "title": "Street Warfare and the Red Threat: The KPD Surge and Middle-Class Panic (1930–1932)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> As economic desperation intensified, German politics polarized violently between extreme left and right factions. Industrial workers deserted moderate parties to join the Communist Party (KPD), which surged past one hundred Reichstag seats. Daily street fighting erupted between communist paramilitaries and Nazi stormtroopers, terrifying business owners and sparking acute **fear of Communist revolution** across conservative German society.\n\n<span class=\"para-ref\">[3.2]</span> Hitler skillfully capitalized on this pervasive panic, crafting powerful **Mittelstand small-business appeal** by promising shopkeepers protection against both corporate department stores and Marxist expropriation. Furthermore, terrified of a Bolshevik uprising, leading industrialists provided crucial **industrialist financial backing** to the Nazi Party. Wealthy magnates like Fritz Thyssen poured substantial funds into party coffers, viewing Hitler’s disciplined SA as the only barrier against communist revolution.",
-          "content": "<span class=\"para-ref\">[3.1]</span> As economic desperation intensified, German politics polarized violently between extreme left and right factions. Industrial workers deserted moderate parties to join the Communist Party (KPD), which surged past one hundred Reichstag seats. Daily street fighting erupted between communist paramilitaries and Nazi stormtroopers, terrifying business owners and sparking acute **fear of Communist revolution** across conservative German society.\n\n<span class=\"para-ref\">[3.2]</span> Hitler skillfully capitalized on this pervasive panic, crafting powerful **Mittelstand small-business appeal** by promising shopkeepers protection against both corporate department stores and Marxist expropriation. Furthermore, terrified of a Bolshevik uprising, leading industrialists provided crucial **industrialist financial backing** to the Nazi Party. Wealthy magnates like Fritz Thyssen poured substantial funds into party coffers, viewing Hitler’s disciplined SA as the only barrier against communist revolution.",
+          "text": "<span class=\"para-ref\">[3.1]</span> As misery deepened, German politics polarised sharply between extreme left and right. Millions of jobless workers backed **the Communist Party (KPD)**, which passed 100 Reichstag seats. Daily street brawls between communist fighters and Nazi stormtroopers terrified property owners and sparked **the terror of a violent communist revolution** across middle-class Germany.\n\n<span class=\"para-ref\">[3.2]</span> Alongside **the 'Hitler over Germany' campaign**, Hitler appealed to frightened *Mittelstand* shopkeepers and farmers by promising protection against big department stores and Marxist seizure. Fearing a Bolshevik rising too, wealthy industrialists like steel magnate **Fritz Thyssen** poured substantial funds into Nazi coffers.",
+          "content": "<span class=\"para-ref\">[3.1]</span> As misery deepened, German politics polarised sharply between extreme left and right. Millions of jobless workers backed **the Communist Party (KPD)**, which passed 100 Reichstag seats. Daily street brawls between communist fighters and Nazi stormtroopers terrified property owners and sparked **the terror of a violent communist revolution** across middle-class Germany.\n\n<span class=\"para-ref\">[3.2]</span> Alongside **the 'Hitler over Germany' campaign**, Hitler appealed to frightened *Mittelstand* shopkeepers and farmers by promising protection against big department stores and Marxist seizure. Fearing a Bolshevik rising too, wealthy industrialists like steel magnate **Fritz Thyssen** poured substantial funds into Nazi coffers.",
           "image": "/images/weimar_unemployed_sa_men_1932.jpg",
           "image_alt": "Unemployed SA stormtroopers in Berlin gathered at a party soup kitchen in 1932",
           "caption": "The SA Welfare Engine (1932): The Nazi Party provided free dormitory beds, soup kitchens, and brown uniforms to young unemployed men, transforming joblessness into a disciplined paramilitary army of 400,000 stormtroopers.",
@@ -9954,8 +10560,8 @@ window.unitData = {
         {
           "title": "Propaganda by Air and Loudspeaker: Joseph Goebbels Packages the Hitler Cult (1930–1932)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> Appointed Reich propaganda director in 1930, Joseph Goebbels revolutionized modern election campaigning to market the Nazi movement. Utilizing brilliant **Joseph Goebbels propaganda** techniques, he flooded German towns with striking posters, synchronized loudspeaker trucks, and emotive slogans promising \"Work and Bread\". Goebbels realized that simple, repetitive appeals to national pride and grievance resonated far more powerfully with anxious voters than complex economic policies.\n\n<span class=\"para-ref\">[4.2]</span> Embracing cutting-edge technology, Goebbels pioneered **'Hitler over Germany' flights**, chartering modern passenger aircraft that transported Hitler to deliver passionate speeches across four or five cities in a single day. Backed by innovative **radio & mass posters** campaigns, the Nazis projected a dynamic image of youthful vigor and unstoppable momentum, presenting Hitler as a messianic, classless national savior sent to rescue Germany.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Appointed Reich propaganda director in 1930, Joseph Goebbels revolutionized modern election campaigning to market the Nazi movement. Utilizing brilliant **Joseph Goebbels propaganda** techniques, he flooded German towns with striking posters, synchronized loudspeaker trucks, and emotive slogans promising \"Work and Bread\". Goebbels realized that simple, repetitive appeals to national pride and grievance resonated far more powerfully with anxious voters than complex economic policies.\n\n<span class=\"para-ref\">[4.2]</span> Embracing cutting-edge technology, Goebbels pioneered **'Hitler over Germany' flights**, chartering modern passenger aircraft that transported Hitler to deliver passionate speeches across four or five cities in a single day. Backed by innovative **radio & mass posters** campaigns, the Nazis projected a dynamic image of youthful vigor and unstoppable momentum, presenting Hitler as a messianic, classless national savior sent to rescue Germany.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Appointed Reich propaganda chief in 1930 while **Heinrich Brüning** offered only cuts, **Joseph Goebbels** transformed modern election campaigning. He flooded towns with striking posters, loudspeaker vans, and simple slogans promising jobless workers **'Work and Bread'** while appealing directly to hurt national pride.\n\n<span class=\"para-ref\">[4.2]</span> Embracing modern aviation in his \"Hitler over Germany\" flights, Goebbels chartered planes so Hitler could speak in **four or five cities** in a single day. Backed by radio campaigns and mass rallies, the **Nazi** movement projected youthful energy and unstoppable momentum, presenting Hitler as Germany's saviour.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Appointed Reich propaganda chief in 1930 while **Heinrich Brüning** offered only cuts, **Joseph Goebbels** transformed modern election campaigning. He flooded towns with striking posters, loudspeaker vans, and simple slogans promising jobless workers **'Work and Bread'** while appealing directly to hurt national pride.\n\n<span class=\"para-ref\">[4.2]</span> Embracing modern aviation in his \"Hitler over Germany\" flights, Goebbels chartered planes so Hitler could speak in **four or five cities** in a single day. Backed by radio campaigns and mass rallies, the **Nazi** movement projected youthful energy and unstoppable momentum, presenting Hitler as Germany's saviour.",
           "sources": [
             {
               "id": "weimar_l7_source_a",
@@ -10013,8 +10619,8 @@ window.unitData = {
         {
           "title": "The Electoral Breakthrough: 230 Seats and the Largest Party in the Reichstag (Jul 1932)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Goebbels’ sophisticated propaganda machinery yielded unprecedented electoral breakthroughs across Germany. In the pivotal **July 1932 election (37.3%)**, the Nazi Party captured nearly fourteen million votes, winning an extraordinary **230 Reichstag seats**. By more than doubling their parliamentary representation, the Nazis became the **largest parliamentary party** in Germany, eclipsing the Social Democrats and completely dominating the national political landscape.\n\n<span class=\"para-ref\">[5.2]</span> When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a vulgar corporal. However, because the Nazis and Communists held a combined anti-democratic majority in the Reichstag, no workable democratic coalition could be formed. Weimar parliamentary government was completely paralyzed, creating an unprecedented constitutional deadlock that left the republic vulnerable to backroom intrigues by authoritarian conservative elites.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Goebbels’ sophisticated propaganda machinery yielded unprecedented electoral breakthroughs across Germany. In the pivotal **July 1932 election (37.3%)**, the Nazi Party captured nearly fourteen million votes, winning an extraordinary **230 Reichstag seats**. By more than doubling their parliamentary representation, the Nazis became the **largest parliamentary party** in Germany, eclipsing the Social Democrats and completely dominating the national political landscape.\n\n<span class=\"para-ref\">[5.2]</span> When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a vulgar corporal. However, because the Nazis and Communists held a combined anti-democratic majority in the Reichstag, no workable democratic coalition could be formed. Weimar parliamentary government was completely paralyzed, creating an unprecedented constitutional deadlock that left the republic vulnerable to backroom intrigues by authoritarian conservative elites.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Public anger at **the 'Hunger Chancellor'** lifted Nazi strength from **107 seats** in 1930 to a huge electoral breakthrough in July 1932. Capturing **13.4 million votes** (**37.3%**) and **230** Reichstag seats, the Nazis more than doubled their tally and became the largest party in parliament.\n\n<span class=\"para-ref\">[5.2]</span> When Hitler demanded the Chancellorship, Hindenburg refused, privately dismissing him as a \"vulgar corporal\". Yet because Nazis and Communists held a combined anti-democratic majority, no workable democratic coalition could govern, leaving Weimar deadlocked and exposed to backroom conservative intrigue.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Public anger at **the 'Hunger Chancellor'** lifted Nazi strength from **107 seats** in 1930 to a huge electoral breakthrough in July 1932. Capturing **13.4 million votes** (**37.3%**) and **230** Reichstag seats, the Nazis more than doubled their tally and became the largest party in parliament.\n\n<span class=\"para-ref\">[5.2]</span> When Hitler demanded the Chancellorship, Hindenburg refused, privately dismissing him as a \"vulgar corporal\". Yet because Nazis and Communists held a combined anti-democratic majority, no workable democratic coalition could govern, leaving Weimar deadlocked and exposed to backroom conservative intrigue.",
           "sources": [
             {
               "id": "weimar_l7_source_e",
@@ -10732,9 +11338,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "The devastating October <strong>Wall Street Crash (1929)</strong> caused catastrophic economic shockwaves as vital <strong>US bank loans recalled</strong> immediately, precipitating a nationwide <strong>German financial collapse</strong>.",
-          "heading": "The Wall Street Crash & Economic Meltdown",
+          "heading": "How did the American stock crash shatter Germany’s banking system?",
           "date": "Oct 1929",
-          "step": 1
+          "step": 1,
+          "question": "How did the American stock crash shatter Germany’s banking system?",
+          "questionHeading": "How did the American stock crash shatter Germany’s banking system?",
+          "prose_hash": "b468a92c47"
         },
         {
           "stage": 2,
@@ -10766,9 +11375,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "With joblessness surging toward <strong>6 million unemployed</strong>, Chancellor <strong>Heinrich Brüning deflation</strong> policies worsened the crisis through unpopular welfare and wage reductions, earning him the despised moniker of <strong>Hunger Chancellor cuts</strong>.",
-          "heading": "Mass Unemployment & The \"Hunger Chancellor\"",
+          "heading": "Why did Brüning’s austerity policies deepen economic misery?",
           "date": "1930–1932",
-          "step": 2
+          "step": 2,
+          "question": "Why did Brüning’s austerity policies deepen economic misery?",
+          "questionHeading": "Why did Brüning’s austerity policies deepen economic misery?",
+          "prose_hash": "469ec345bf"
         },
         {
           "stage": 3,
@@ -10800,7 +11412,7 @@ window.unitData = {
             }
           ],
           "model_sentence": "Propaganda director <strong>Joseph Goebbels propaganda</strong> innovated modern campaigning through pioneering <strong>'Hitler over Germany' flights</strong> by aeroplane alongside pervasive <strong>radio & mass posters</strong> promising work and bread.",
-          "heading": "The Communist Threat & Polarisation",
+          "heading": "How did fear of a Communist revolution drive middle-class voters toward the Nazis?",
           "date": "1930–1932",
           "step": 3,
           "key_terms": [
@@ -10813,7 +11425,10 @@ window.unitData = {
             {
               "term": "Industrialist financial backing"
             }
-          ]
+          ],
+          "question": "How did fear of a Communist revolution drive middle-class voters toward the Nazis?",
+          "questionHeading": "How did fear of a Communist revolution drive middle-class voters toward the Nazis?",
+          "prose_hash": "b4409e954b"
         },
         {
           "stage": 4,
@@ -10845,7 +11460,7 @@ window.unitData = {
             }
           ],
           "model_sentence": "The Nazis broadened their electoral base through strong <strong>Mittelstand small-business appeal</strong>, exploiting bourgeois <strong>fear of Communist revolution</strong> to attract wealthy <strong>industrialist financial backing</strong>.",
-          "heading": "Goebbels & Modern Propaganda Campaigns",
+          "heading": "How did Goebbels’ posters, radio, and flights project Nazi momentum?",
           "date": "1930–1932",
           "step": 4,
           "key_terms": [
@@ -10858,7 +11473,10 @@ window.unitData = {
             {
               "term": "Radio & mass posters"
             }
-          ]
+          ],
+          "question": "How did Goebbels’ posters, radio, and flights project Nazi momentum?",
+          "questionHeading": "How did Goebbels’ posters, radio, and flights project Nazi momentum?",
+          "prose_hash": "8e13920585"
         },
         {
           "stage": 5,
@@ -10890,9 +11508,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Capitalizing on mass desperation, the Nazis achieved an electoral breakthrough in the <strong>July 1932 election (37.3%)</strong>, capturing <strong>230 Reichstag seats</strong> to emerge decisively as Germany’s <strong>largest parliamentary party</strong>.",
-          "heading": "The July Reichstag Breakthrough",
+          "heading": "Why did the Nazis become the largest party yet remain excluded from power?",
           "date": "Jul 1932",
-          "step": 5
+          "step": 5,
+          "question": "Why did the Nazis become the largest party yet remain excluded from power?",
+          "questionHeading": "Why did the Nazis become the largest party yet remain excluded from power?",
+          "prose_hash": "ffed7bef72"
         }
       ],
       "causal_domino_spine": {
@@ -10909,7 +11530,8 @@ window.unitData = {
             "trigger": "American banks recalled 90-day short-term loans, causing Danatbank to collapse and German industrial output to plummet by 40%.",
             "desc": "American banks recalled 90-day short-term loans, causing Danatbank to collapse and German industrial output to plummet by 40%.",
             "connective": "Triggered widespread industrial bankruptcies and mass factory closures across Germany.",
-            "question": "How did the American stock crash shatter Germany’s banking system?"
+            "question": "How did the American stock crash shatter Germany’s banking system?",
+            "prose_hash": "b468a92c47"
           },
           {
             "step": 2,
@@ -10921,7 +11543,8 @@ window.unitData = {
             "trigger": "Unemployment peaked at 6 million, while Chancellor Brüning slashed benefits and ruled via 66 Article 48 presidential decrees.",
             "desc": "Unemployment peaked at 6 million, while Chancellor Brüning slashed benefits and ruled via 66 Article 48 presidential decrees.",
             "connective": "Destroyed public faith in democratic Weimar institutions and radicalized desperate working-class and middle-class voters.",
-            "question": "Why did Brüning’s austerity policies deepen economic misery?"
+            "question": "Why did Brüning’s austerity policies deepen economic misery?",
+            "prose_hash": "469ec345bf"
           },
           {
             "step": 3,
@@ -10933,7 +11556,8 @@ window.unitData = {
             "trigger": "The Communist Party surged to 100 Reichstag seats, terrifying middle-class shopkeepers and wealthy industrialists into backing the Nazis as a bulwark.",
             "desc": "The Communist Party surged to 100 Reichstag seats, terrifying middle-class shopkeepers and wealthy industrialists into backing the Nazis as a bulwark.",
             "connective": "Created \"negative cohesion\", mobilizing millions of anti-communist protest votes and business campaign donations for Hitler.",
-            "question": "How did fear of a Communist revolution drive middle-class voters toward the Nazis?"
+            "question": "How did fear of a Communist revolution drive middle-class voters toward the Nazis?",
+            "prose_hash": "b4409e954b"
           },
           {
             "step": 4,
@@ -10945,7 +11569,8 @@ window.unitData = {
             "trigger": "Goebbels launched airplane tours (\"Hitler over Germany\"), radio gramophone records, and posters promising \"Work and Bread.\"",
             "desc": "Goebbels launched airplane tours (\"Hitler over Germany\"), radio gramophone records, and posters promising \"Work and Bread.\"",
             "connective": "Projected an irresistible aura of youthful energy, order, and national salvation that resonated with millions of suffering citizens.",
-            "question": "What innovative propaganda methods created an impression of dynamic national movement?"
+            "question": "How did Goebbels’ posters, radio, and flights project Nazi momentum?",
+            "prose_hash": "8e13920585"
           },
           {
             "step": 5,
@@ -10957,7 +11582,8 @@ window.unitData = {
             "trigger": "The Nazis won 230 seats (37.3%) to become the largest party in the Reichstag, though Hindenburg initially refused to appoint Hitler Chancellor.",
             "desc": "The Nazis won 230 seats (37.3%) to become the largest party in the Reichstag, though Hindenburg initially refused to appoint Hitler Chancellor.",
             "connective": "Made parliamentary government impossible without Nazi participation, triggering the backstairs political intrigues of late 1932.",
-            "question": "Why did the Nazis become the largest party yet remain excluded from power?"
+            "question": "Why did the Nazis become the largest party yet remain excluded from power?",
+            "prose_hash": "ffed7bef72"
           }
         ]
       },
@@ -11232,48 +11858,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Recall & Retrieval",
-        "instructions": "Answer these questions in full sentences.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "When did Germany join the League of Nations?",
-            "answer": "1926."
+            "stage": 1,
+            "question": "In what month and year did the Wall Street Crash occur?",
+            "answer": "October 1929",
+            "explanation": "On 29 October 1929, the catastrophic Wall Street Crash (1929) in New York shattered international financial markets."
           },
           {
-            "question": "What was the Kellogg-Briand Pact (1928)?",
-            "answer": "An international agreement where 62 countries promised not to use war to resolve disputes."
+            "stage": 2,
+            "question": "By 1932, how many Germans were unemployed?",
+            "answer": "6 million",
+            "explanation": "By winter 1932, German unemployment exploded into a devastating social catastrophe, leaving over 6 million unemployed registered workers without income."
           },
           {
-            "question": "Why did the 'Golden Age' (1924-29) rely on 'dancing on a volcano'?",
-            "answer": "The economic recovery was heavily dependent on short-term American loans."
+            "stage": 3,
+            "question": "Which extreme left-wing party saw a surge in support from unemployed workers during the Depression?",
+            "answer": "The KPD / Communist Party",
+            "explanation": "Industrial workers deserted moderate parties to join the Communist Party (KPD), which surged past one hundred Reichstag seats."
           },
           {
-            "question": "How did culture change during the Golden Age?",
-            "answer": "There was a boom in avant-garde art, cinema (e.g. Metropolis), and cabaret."
+            "stage": 4,
+            "question": "Who replaced Müller as Chancellor in 1930?",
+            "answer": "Heinrich Brüning",
+            "explanation": "Appointed Reich propaganda director in 1930, Joseph Goebbels revolutionized modern election campaigning to market the Nazi movement."
           },
           {
-            "question": "What did Stresemann introduce to fix hyperinflation?",
-            "answer": "The Rentenmark."
+            "stage": 5,
+            "question": "What bitter nickname was given to Chancellor Brüning by the German public?",
+            "answer": "The 'Hunger Chancellor'",
+            "explanation": "When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a vulgar corporal."
           },
           {
-            "question": "What was the Dawes Plan?",
-            "answer": "US loans to Germany to help pay reparations."
+            "stage": 1,
+            "question": "What catastrophic event in October 1929 triggered the collapse of the German economy and mass unemployment?",
+            "answer": "The Wall Street Crash",
+            "explanation": "The October 1929 Wall Street Crash caused American banks to abruptly recall their short-term loans, plunging Germany into catastrophe."
           },
           {
-            "question": "What was the Young Plan?",
-            "answer": "A reduction of the total reparation amount."
+            "stage": 2,
+            "question": "Which constitutional clause did Brüning and President Hindenburg use to bypass the Reichstag and rule by decree?",
+            "answer": "Article 48",
+            "explanation": "When the Reichstag rejected his austerity measures, Brüning dissolved parliament and governed through presidential emergency decrees under Article 48, fatally normalizing authoritarian rule without democratic parliamentary consent."
           },
           {
-            "question": "What was the Locarno Pact?",
-            "answer": "An agreement accepting western borders."
+            "stage": 3,
+            "question": "What was the name of the innovative propaganda campaign where Hitler travelled the country by aeroplane?",
+            "answer": "The 'Hitler over Germany' campaign",
+            "explanation": "Wealthy magnates like Fritz Thyssen poured substantial funds into party coffers, viewing Hitler’s disciplined SA as the only barrier against communist revolution."
           },
           {
-            "question": "In 1923, why did French and Belgian troops invade the Ruhr?",
-            "answer": "Missed reparation payments."
+            "stage": 4,
+            "question": "What simple, powerful three-word slogan did the Nazis use to appeal to starving, unemployed workers?",
+            "answer": "'Work and Bread'",
+            "explanation": "Utilizing brilliant Joseph Goebbels propaganda techniques, he flooded German towns with striking posters, synchronized loudspeaker trucks, and emotive slogans promising \"Work and Bread\"."
           },
           {
-            "question": "Who were the November Criminals?",
-            "answer": "Politicians who signed the Armistice."
+            "stage": 5,
+            "question": "Although he lost, roughly how many votes did Hitler secure in the 1932 Presidential Election?",
+            "answer": "13.4 million votes",
+            "explanation": "In the pivotal July 1932 election (37.3%), the Nazi Party captured nearly fourteen million votes, winning an extraordinary 230 Reichstag seats."
           }
         ]
       },
@@ -11325,46 +11970,121 @@ window.unitData = {
       "vocab_deliberate_error": "In January 1933, President Paul von Hindenburg appointed Adolf Hitler Chancellor following a nationwide democratic election victory, rejecting all Backstairs Intrigue from Franz von Papen and the Camarilla.",
       "quiz": [
         {
+          "stage": 1,
           "question": "Which Chancellor was dismissed by President Hindenburg in May 1932 before Franz von Papen was appointed?",
+          "q": "Which Chancellor was dismissed by President Hindenburg in May 1932 before Franz von Papen was appointed?",
           "options": [
-            "Brüning",
             "Hitler",
             "Schleicher",
+            "Brüning",
             "Ebert"
           ],
           "answer": "Brüning",
-          "explanation": "In May 1932, Hindenburg dismissed Brüning and appointed aristocratic monarchist Franz von Papen as Chancellor.",
-          "q": "Which Chancellor was dismissed by President Hindenburg in May 1932 before Franz von Papen was appointed?",
-          "a": "Brüning"
+          "a": "Brüning",
+          "explanation": "In May 1932, Hindenburg dismissed Brüning and appointed aristocratic monarchist Franz von Papen as Chancellor."
         },
         {
-          "question": "What aristocratic politician did Hindenburg appoint to lead the 'Cabinet of Barons' in May 1932?",
+          "stage": 1,
+          "question": "How many seats did the Nazi Party win in the July 1932 elections, making them the largest party?",
+          "q": "How many seats did the Nazi Party win in the July 1932 elections, making them the largest party?",
           "options": [
-            "Franz von Papen",
+            "12 seats",
+            "230 seats",
+            "196 seats",
+            "107 seats"
+          ],
+          "answer": "230 seats",
+          "a": "230 seats",
+          "explanation": "However, when fresh elections were held in November 1932, the Nazi Party suffered a sharp setback, losing two million votes and thirty-four seats."
+        },
+        {
+          "stage": 1,
+          "question": "In what month and year did von Schleicher become Chancellor?",
+          "q": "In what month and year did von Schleicher become Chancellor?",
+          "options": [
+            "December 1932",
+            "May 1932",
+            "January 1933",
+            "October 1929"
+          ],
+          "answer": "December 1932",
+          "a": "December 1932",
+          "explanation": "The collapse of parliamentary democracy began with the abrupt Brüning dismissal (May 1932) by President Hindenburg, who grew weary of the Chancellor’s inability to resolve the economic crisis."
+        },
+        {
+          "stage": 1,
+          "question": "What electoral setback did the Nazi Party suffer in the November 1932 Reichstag election?",
+          "q": "What electoral setback did the Nazi Party suffer in the November 1932 Reichstag election?",
+          "options": [
+            "Dropped back down to just twelve Reichstag seats",
+            "Was legally disqualified from standing in Prussia",
+            "Lost the presidency to Kurt von Schleicher",
+            "Lost two million votes and thirty-four seats"
+          ],
+          "answer": "Lost two million votes and thirty-four seats",
+          "a": "Lost two million votes and thirty-four seats",
+          "explanation": "Losing two million votes and thirty-four seats in November 1932 plunged the Nazi Party into severe financial crisis and internal division under Gregor Strasser."
+        },
+        {
+          "stage": 2,
+          "question": "What aristocratic politician did Hindenburg appoint to lead the 'Cabinet of Barons' in May 1932?",
+          "q": "What aristocratic politician did Hindenburg appoint to lead the 'Cabinet of Barons' in May 1932?",
+          "options": [
             "Kurt von Schleicher",
             "Heinrich Brüning",
+            "Franz von Papen",
             "Adolf Hitler"
           ],
           "answer": "Franz von Papen",
-          "explanation": "Hindenburg appointed monarchist aristocrat Franz von Papen to head the non-parliamentary 'Cabinet of Barons'.",
-          "q": "What aristocratic politician did Hindenburg appoint to lead the 'Cabinet of Barons' in May 1932?",
-          "a": "Franz von Papen"
+          "a": "Franz von Papen",
+          "explanation": "Hindenburg appointed monarchist aristocrat Franz von Papen to head the non-parliamentary 'Cabinet of Barons'."
         },
         {
-          "question": "What historic electoral milestone did the Nazi Party achieve in the July 1932 Reichstag election?",
+          "stage": 2,
+          "question": "Which army general replaced Franz von Papen as Chancellor in December 1932, only to resign after 57 days?",
+          "q": "Which army general replaced Franz von Papen as Chancellor in December 1932, only to resign after 57 days?",
           "options": [
-            "They won 230 seats (37.3% of the vote), becoming the largest party in the Reichstag",
-            "They failed to win a single seat and lost all party funding",
-            "They secured an absolute majority of 80% of all votes cast",
-            "They finished in third place behind the Communist Party"
+            "General Wilhelm Groener",
+            "General Kurt von Schleicher",
+            "Field Marshal Hindenburg",
+            "General Erich Ludendorff"
           ],
-          "answer": "They won 230 seats (37.3% of the vote), becoming the largest party in the Reichstag",
-          "explanation": "In July 1932, the Nazis won 230 seats (37.3%), becoming the largest political party in the Reichstag.",
-          "q": "What historic electoral milestone did the Nazi Party achieve in the July 1932 Reichstag election?",
-          "a": "They won 230 seats (37.3% of the vote), becoming the largest party in the Reichstag"
+          "answer": "General Kurt von Schleicher",
+          "a": "General Kurt von Schleicher",
+          "explanation": "General Kurt von Schleicher replaced Papen in December 1932, but was forced out after failing to split the Nazi party or form a coalition."
         },
         {
+          "stage": 2,
+          "question": "What position did Franz von Papen demand in the new government in exchange for helping Hitler?",
+          "q": "What position did Franz von Papen demand in the new government in exchange for helping Hitler?",
+          "options": [
+            "Vice-Chancellor",
+            "Minister of Defence",
+            "Minister of the Interior",
+            "President of the Reichstag"
+          ],
+          "answer": "Vice-Chancellor",
+          "a": "Vice-Chancellor",
+          "explanation": "In June 1932, Hindenburg appointed aristocratic monarchist Franz von Papen chancellor, tasking him with restoring conservative authority."
+        },
+        {
+          "stage": 2,
+          "question": "What major concession did Chancellor Franz von Papen make in summer 1932 to win right-wing Nazi goodwill?",
+          "q": "What major concession did Chancellor Franz von Papen make in summer 1932 to win right-wing Nazi goodwill?",
+          "options": [
+            "Appointed Ernst Röhm Minister of Defense",
+            "Abolished the Weimar office of President",
+            "Cancelled the Treaty of Versailles unilaterally",
+            "Lifted the ban on the SA"
+          ],
+          "answer": "Lifted the ban on the SA",
+          "a": "Lifted the ban on the SA",
+          "explanation": "Hoping to appease the Nazis despite lacking Reichstag support, Franz von Papen lifted the ban on the SA stormtroopers, unleashing fresh street violence."
+        },
+        {
+          "stage": 3,
           "question": "Who did Hindenburg appoint as Chancellor immediately after Brüning?",
+          "q": "Who did Hindenburg appoint as Chancellor immediately after Brüning?",
           "options": [
             "Kurt von Schleicher",
             "Adolf Hitler",
@@ -11372,84 +12092,13 @@ window.unitData = {
             "Hermann Müller"
           ],
           "answer": "Franz von Papen",
-          "q": "Who did Hindenburg appoint as Chancellor immediately after Brüning?",
-          "a": "Franz von Papen"
+          "a": "Franz von Papen",
+          "explanation": "On 4 January 1933, they met at banker Kurt von Schröder’s Cologne villa, where Papen offered to make Hitler Chancellor in exchange for the Vice-Chancellorship."
         },
         {
-          "question": "What nickname was given to von Papen's undemocratic government because it was filled with wealthy elites?",
-          "options": [
-            "The 'Government of Generals'",
-            "The 'Cabinet of Barons'",
-            "The 'Council of Kings'",
-            "The 'Dictatorship of the Rich'"
-          ],
-          "answer": "The 'Cabinet of Barons'",
-          "q": "What nickname was given to von Papen's undemocratic government because it was filled with wealthy elites?",
-          "a": "The 'Cabinet of Barons'"
-        },
-        {
-          "question": "How many seats did the Nazi Party win in the July 1932 elections, making them the largest party?",
-          "options": [
-            "12 seats",
-            "196 seats",
-            "107 seats",
-            "230 seats"
-          ],
-          "answer": "230 seats",
-          "q": "How many seats did the Nazi Party win in the July 1932 elections, making them the largest party?",
-          "a": "230 seats"
-        },
-        {
-          "question": "Following the July 1932 elections, what did Hitler immediately demand from Hindenburg?",
-          "options": [
-            "To be appointed President",
-            "To ban the Communist Party",
-            "To be appointed Chancellor",
-            "To be made leader of the army"
-          ],
-          "answer": "To be appointed Chancellor",
-          "q": "Following the July 1932 elections, what did Hitler immediately demand from Hindenburg?",
-          "a": "To be appointed Chancellor"
-        },
-        {
-          "question": "Which army general replaced Franz von Papen as Chancellor in December 1932, only to resign after 57 days?",
-          "options": [
-            "General Kurt von Schleicher",
-            "General Wilhelm Groener",
-            "Field Marshal Hindenburg",
-            "General Erich Ludendorff"
-          ],
-          "answer": "General Kurt von Schleicher",
-          "explanation": "General Kurt von Schleicher replaced Papen in December 1932, but was forced out after failing to split the Nazi party or form a coalition.",
-          "q": "Which army general replaced Franz von Papen as Chancellor in December 1932, only to resign after 57 days?",
-          "a": "General Kurt von Schleicher"
-        },
-        {
-          "question": "When Papen called a second election in November 1932, what happened to the Nazi vote?",
-          "options": [
-            "It increased to 250 seats, giving them an absolute majority",
-            "It stayed exactly the same",
-            "It dropped to 196 seats, and the party was running out of money",
-            "It collapsed entirely, leaving them with only 12 seats again"
-          ],
-          "answer": "It dropped to 196 seats, and the party was running out of money",
-          "q": "When Papen called a second election in November 1932, what happened to the Nazi vote?",
-          "a": "It dropped to 196 seats, and the party was running out of money"
-        },
-        {
-          "question": "In November 1932, what did wealthy industrialists (like Hjalmar Schacht) send to Hindenburg?",
-          "options": [
-            "A formal petition urging him to appoint Hitler as Chancellor",
-            "A threat to move their factories to France",
-            "A massive bribe of two million marks",
-            "A letter demanding he ban the Nazi Party"
-          ],
-          "answer": "A formal petition urging him to appoint Hitler as Chancellor",
-          "q": "In November 1932, what did wealthy industrialists (like Hjalmar Schacht) send to Hindenburg?",
-          "a": "A formal petition urging him to appoint Hitler as Chancellor"
-        },
-        {
+          "stage": 3,
           "question": "Which army general warned Hindenburg that keeping Papen in power would lead to a civil war?",
+          "q": "Which army general warned Hindenburg that keeping Papen in power would lead to a civil war?",
           "options": [
             "Erich Ludendorff",
             "Kurt von Schleicher",
@@ -11457,35 +12106,13 @@ window.unitData = {
             "Paul von Lettow-Vorbeck"
           ],
           "answer": "Kurt von Schleicher",
-          "q": "Which army general warned Hindenburg that keeping Papen in power would lead to a civil war?",
-          "a": "Kurt von Schleicher"
+          "a": "Kurt von Schleicher",
+          "explanation": "On 2 December 1932, Hindenburg appointed ambitious army powerbroker General Kurt von Schleicher as Chancellor."
         },
         {
-          "question": "In what month and year did von Schleicher become Chancellor?",
-          "options": [
-            "May 1932",
-            "January 1933",
-            "October 1929",
-            "December 1932"
-          ],
-          "answer": "December 1932",
-          "q": "In what month and year did von Schleicher become Chancellor?",
-          "a": "December 1932"
-        },
-        {
-          "question": "Who plotted revenge against von Schleicher by secretly meeting with Adolf Hitler?",
-          "options": [
-            "Heinrich Brüning",
-            "Franz von Papen",
-            "Hjalmar Schacht",
-            "Oskar von Hindenburg"
-          ],
-          "answer": "Franz von Papen",
-          "q": "Who plotted revenge against von Schleicher by secretly meeting with Adolf Hitler?",
-          "a": "Franz von Papen"
-        },
-        {
+          "stage": 3,
           "question": "What is the historical phrase used to describe the secret deal-making that brought Hitler to power?",
+          "q": "What is the historical phrase used to describe the secret deal-making that brought Hitler to power?",
           "options": [
             "Backstairs intrigue",
             "The November Treason",
@@ -11493,47 +12120,111 @@ window.unitData = {
             "The Munich Plot"
           ],
           "answer": "Backstairs intrigue",
-          "q": "What is the historical phrase used to describe the secret deal-making that brought Hitler to power?",
-          "a": "Backstairs intrigue"
+          "a": "Backstairs intrigue",
+          "explanation": "This produced an acute cabinet intrigue crisis when Schleicher proposed redistributing bankrupt aristocratic estates to unemployed workers, outraging wealthy Prussian landowners close to Hindenburg."
         },
         {
-          "question": "What position did Franz von Papen demand in the new government in exchange for helping Hitler?",
+          "stage": 3,
+          "question": "At which Cologne banker's villa did Franz von Papen meet secretly with Adolf Hitler on 4 January 1933 to plot Kurt von Schleicher's downfall?",
+          "q": "At which Cologne banker's villa did Franz von Papen meet secretly with Adolf Hitler on 4 January 1933 to plot Kurt von Schleicher's downfall?",
           "options": [
-            "Minister of Defence",
-            "Minister of the Interior",
-            "President of the Reichstag",
-            "Vice-Chancellor"
+            "Hjalmar Schacht",
+            "Fritz Thyssen",
+            "Gustav Krupp",
+            "Kurt von Schröder"
           ],
-          "answer": "Vice-Chancellor",
-          "q": "What position did Franz von Papen demand in the new government in exchange for helping Hitler?",
-          "a": "Vice-Chancellor"
+          "answer": "Kurt von Schröder",
+          "a": "Kurt von Schröder",
+          "explanation": "Meeting secretly at Kurt von Schröder's villa on 4 January 1933, Papen agreed to back Hitler as Chancellor in return for becoming Vice-Chancellor."
         },
         {
-          "question": "On what exact date did Adolf Hitler officially become Chancellor of Germany?",
+          "stage": 4,
+          "question": "What nickname was given to von Papen's undemocratic government because it was filled with wealthy elites?",
+          "q": "What nickname was given to von Papen's undemocratic government because it was filled with wealthy elites?",
           "options": [
+            "The 'Government of Generals'",
+            "The 'Council of Kings'",
+            "The 'Cabinet of Barons'",
+            "The 'Dictatorship of the Rich'"
+          ],
+          "answer": "The 'Cabinet of Barons'",
+          "a": "The 'Cabinet of Barons'",
+          "explanation": "Papen foolishly boasted that within two months Hitler would be squeezed into a corner, noting that only three of eleven cabinet ministers were Nazis, while Papen retained the right to attend all meetings with Hindenburg."
+        },
+        {
+          "stage": 4,
+          "question": "Who plotted revenge against von Schleicher by secretly meeting with Adolf Hitler?",
+          "q": "Who plotted revenge against von Schleicher by secretly meeting with Adolf Hitler?",
+          "options": [
+            "Heinrich Brüning",
+            "Franz von Papen",
+            "Hjalmar Schacht",
+            "Oskar von Hindenburg"
+          ],
+          "answer": "Franz von Papen",
+          "a": "Franz von Papen",
+          "explanation": "Throughout late January 1933, aggressive von Papen backroom intrigue operated behind closed doors in the presidential palace."
+        },
+        {
+          "stage": 4,
+          "question": "On what exact date did Adolf Hitler officially become Chancellor of Germany?",
+          "q": "On what exact date did Adolf Hitler officially become Chancellor of Germany?",
+          "options": [
+            "30 January 1933",
             "27 February 1933",
             "2 August 1934",
-            "30 January 1933",
             "9 November 1923"
           ],
           "answer": "30 January 1933",
-          "q": "On what exact date did Adolf Hitler officially become Chancellor of Germany?",
-          "a": "30 January 1933"
+          "a": "30 January 1933",
+          "explanation": "Throughout late January 1933, aggressive von Papen backroom intrigue operated behind closed doors in the presidential palace."
         },
         {
-          "question": "How many Nazis were allowed in Hitler's first Cabinet of 12 ministers?",
+          "stage": 4,
+          "question": "How many of the eleven cabinet ministers in Hitler's initial January 1933 coalition government were actually members of the Nazi Party?",
+          "q": "How many of the eleven cabinet ministers in Hitler's initial January 1933 coalition government were actually members of the Nazi Party?",
           "options": [
-            "Only three: Hitler, Wilhelm Frick, and Hermann Göring",
-            "Six (half the cabinet)",
-            "All twelve",
-            "None, except for Hitler"
+            "All eleven cabinet ministers",
+            "Nine of eleven cabinet ministers",
+            "Only Adolf Hitler alone",
+            "Three of eleven cabinet ministers"
           ],
-          "answer": "Only three: Hitler, Wilhelm Frick, and Hermann Göring",
-          "q": "How many Nazis were allowed in Hitler's first Cabinet of 12 ministers?",
-          "a": "Only three: Hitler, Wilhelm Frick, and Hermann Göring"
+          "answer": "Three of eleven cabinet ministers",
+          "a": "Three of eleven cabinet ministers",
+          "explanation": "Because only three of eleven cabinet posts went to Nazis, Franz von Papen foolishly boasted to Hindenburg that conservative elites had 'boxed Hitler in'."
         },
         {
+          "stage": 5,
+          "question": "Following the July 1932 elections, what did Hitler immediately demand from Hindenburg?",
+          "q": "Following the July 1932 elections, what did Hitler immediately demand from Hindenburg?",
+          "options": [
+            "To be appointed President",
+            "To ban the Communist Party",
+            "To be appointed Chancellor",
+            "To be made leader of the army"
+          ],
+          "answer": "To be appointed Chancellor",
+          "a": "To be appointed Chancellor",
+          "explanation": "In a brief ceremony before President Hindenburg, the solemn moment of Hitler sworn chancellor was completed as he took the constitutional oath of the Weimar Republic."
+        },
+        {
+          "stage": 5,
+          "question": "In November 1932, what did wealthy industrialists (like Hjalmar Schacht) send to Hindenburg?",
+          "q": "In November 1932, what did wealthy industrialists (like Hjalmar Schacht) send to Hindenburg?",
+          "options": [
+            "A threat to move their factories to France",
+            "A formal petition urging him to appoint Hitler as Chancellor",
+            "A massive bribe of two million marks",
+            "A letter demanding he ban the Nazi Party"
+          ],
+          "answer": "A formal petition urging him to appoint Hitler as Chancellor",
+          "a": "A formal petition urging him to appoint Hitler as Chancellor",
+          "explanation": "In a brief ceremony before President Hindenburg, the solemn moment of Hitler sworn chancellor was completed as he took the constitutional oath of the Weimar Republic."
+        },
+        {
+          "stage": 5,
           "question": "On what date did President Paul von Hindenburg formally appoint Adolf Hitler as Chancellor of Germany?",
+          "q": "On what date did President Paul von Hindenburg formally appoint Adolf Hitler as Chancellor of Germany?",
           "options": [
             "30 January 1933",
             "9 November 1918",
@@ -11541,33 +12232,22 @@ window.unitData = {
             "27 February 1933"
           ],
           "answer": "30 January 1933",
-          "explanation": "On 30 January 1933, Hindenburg formally appointed Adolf Hitler Chancellor in a coalition government with Franz von Papen as Vice-Chancellor.",
-          "q": "On what date did President Paul von Hindenburg formally appoint Adolf Hitler as Chancellor of Germany?",
-          "a": "30 January 1933"
+          "a": "30 January 1933",
+          "explanation": "On 30 January 1933, Hindenburg formally appointed Adolf Hitler Chancellor in a coalition government with Franz von Papen as Vice-Chancellor."
         },
         {
-          "question": "What famous quote did von Papen say, showing he severely underestimated Hitler?",
-          "options": [
-            "\"The German people will soon wake up from this nightmare\"",
-            "\"In two months we will have pushed Hitler into a corner so hard that he'll be squeaking\"",
-            "\"He is just a passing storm\"",
-            "\"We have hired a clown to run a circus\""
-          ],
-          "answer": "\"In two months we will have pushed Hitler into a corner so hard that he'll be squeaking\"",
-          "q": "What famous quote did von Papen say, showing he severely underestimated Hitler?",
-          "a": "\"In two months we will have pushed Hitler into a corner so hard that he'll be squeaking\""
-        },
-        {
+          "stage": 5,
           "question": "Did Hitler seize the Chancellorship by force, or was he appointed legally?",
+          "q": "Did Hitler seize the Chancellorship by force, or was he appointed legally?",
           "options": [
             "He assassinated President Hindenburg to take his place",
             "He seized it by force in a violent revolution",
-            "He was appointed legally / under the rules of the Weimar Constitution",
-            "He rigged the 1932 election to win 100% of the vote"
+            "He rigged the 1932 election to win 100% of the vote",
+            "He was appointed legally / under the rules of the Weimar Constitution"
           ],
           "answer": "He was appointed legally / under the rules of the Weimar Constitution",
-          "q": "Did Hitler seize the Chancellorship by force, or was he appointed legally?",
-          "a": "He was appointed legally / under the rules of the Weimar Constitution"
+          "a": "He was appointed legally / under the rules of the Weimar Constitution",
+          "explanation": "In a brief ceremony before President Hindenburg, the solemn moment of Hitler sworn chancellor was completed as he took the constitutional oath of the Weimar Republic."
         }
       ],
       "questions": [
@@ -11756,8 +12436,8 @@ window.unitData = {
         {
           "title": "Cracks in the Brown Front: Strasser's Mutiny, Lost Seats and Party Bankruptcy (Nov 1932)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> The collapse of parliamentary democracy began with the abrupt **Brüning dismissal (May 1932)** by President Hindenburg, who grew weary of the Chancellor’s inability to resolve the economic crisis. Hindenburg’s reliance on **Article 48 rule failure** destroyed constitutional stability, as successive emergency decrees bypassed parliamentary majorities. This reckless reliance on decree rule concentrated executive authority entirely within the hands of the aging President and his conservative palace circle.\n\n<span class=\"para-ref\">[1.2]</span> Through decisive **President Hindenburg intervention**, power shifted from elected politicians to unelected presidential advisers. However, when fresh elections were held in November 1932, the Nazi Party suffered a sharp setback, losing two million votes and thirty-four seats. Plunged into acute financial bankruptcy and facing internal mutiny from Gregor Strasser, Hitler’s high-stakes gamble for absolute power appeared on the verge of total collapse.",
-          "content": "<span class=\"para-ref\">[1.1]</span> The collapse of parliamentary democracy began with the abrupt **Brüning dismissal (May 1932)** by President Hindenburg, who grew weary of the Chancellor’s inability to resolve the economic crisis. Hindenburg’s reliance on **Article 48 rule failure** destroyed constitutional stability, as successive emergency decrees bypassed parliamentary majorities. This reckless reliance on decree rule concentrated executive authority entirely within the hands of the aging President and his conservative palace circle.\n\n<span class=\"para-ref\">[1.2]</span> Through decisive **President Hindenburg intervention**, power shifted from elected politicians to unelected presidential advisers. However, when fresh elections were held in November 1932, the Nazi Party suffered a sharp setback, losing two million votes and thirty-four seats. Plunged into acute financial bankruptcy and facing internal mutiny from Gregor Strasser, Hitler’s high-stakes gamble for absolute power appeared on the verge of total collapse.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Parliamentary rule unravelled when President Hindenburg sacked **Brüning** in May 1932 after endless Article 48 decrees failed to end the slump. Power shifted away from elected MPs to Hindenburg and his conservative palace circle. Although the Nazis won **230 seats** in July, fresh elections in November 1932 dealt Hitler a sharp setback.\n\n<span class=\"para-ref\">[1.2]</span> In November 1932, the Nazi Party **lost two million votes and thirty-four seats** as voters tired of street violence. Drained of campaign cash, the party faced internal crisis in **December 1932** when Gregor Strasser urged joining a coalition before Nazi support faded altogether.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Parliamentary rule unravelled when President Hindenburg sacked **Brüning** in May 1932 after endless Article 48 decrees failed to end the slump. Power shifted away from elected MPs to Hindenburg and his conservative palace circle. Although the Nazis won **230 seats** in July, fresh elections in November 1932 dealt Hitler a sharp setback.\n\n<span class=\"para-ref\">[1.2]</span> In November 1932, the Nazi Party **lost two million votes and thirty-four seats** as voters tired of street violence. Drained of campaign cash, the party faced internal crisis in **December 1932** when Gregor Strasser urged joining a coalition before Nazi support faded altogether.",
           "image": "/images/weimar_individuals/gregor_strasser.jpg",
           "image_alt": "Gregor Strasser, head of the NSDAP political organisation who resigned in December 1932",
           "caption": "Gregor Strasser (1892–1934): Head of the Nazi Party's Reich political organisation whose attempted coalition negotiations with Chancellor Schleicher in December 1932 precipitated a bitter party split and near financial ruin before Hitler reasserted total dominance.",
@@ -11817,8 +12497,8 @@ window.unitData = {
         {
           "title": "The Failed Political General: Kurt von Schleicher’s Divisive Chancellor Gamble (Dec 1932)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> In June 1932, Hindenburg appointed aristocratic monarchist **Franz von Papen chancellor**, tasking him with restoring conservative authority. Leading an unelected administration composed almost entirely of wealthy noblemen mockingly dubbed the **'Cabinet of Barons'**, Papen possessed virtually zero support in the Reichstag. To gain right-wing popularity, Papen lifted the ban on the SA and unconstitutionally deposed the socialist-led state government of Prussia.\n\n<span class=\"para-ref\">[2.2]</span> Papen’s reactionary regime was crippled following the **November election seat decline**, where ninety percent of deputies opposed his government. When Papen proposed dissolving parliament permanently and using the army to suppress civil unrest, Defense Minister Kurt von Schleicher warned Hindenburg that the military could not control widespread civil rebellion, forcing a humiliated Papen to resign the Chancellorship in December 1932.",
-          "content": "<span class=\"para-ref\">[2.1]</span> In June 1932, Hindenburg appointed aristocratic monarchist **Franz von Papen chancellor**, tasking him with restoring conservative authority. Leading an unelected administration composed almost entirely of wealthy noblemen mockingly dubbed the **'Cabinet of Barons'**, Papen possessed virtually zero support in the Reichstag. To gain right-wing popularity, Papen lifted the ban on the SA and unconstitutionally deposed the socialist-led state government of Prussia.\n\n<span class=\"para-ref\">[2.2]</span> Papen’s reactionary regime was crippled following the **November election seat decline**, where ninety percent of deputies opposed his government. When Papen proposed dissolving parliament permanently and using the army to suppress civil unrest, Defense Minister Kurt von Schleicher warned Hindenburg that the military could not control widespread civil rebellion, forcing a humiliated Papen to resign the Chancellorship in December 1932.",
+          "text": "<span class=\"para-ref\">[2.1]</span> In June 1932, Hindenburg appointed conservative nobleman **Franz von Papen** Chancellor of an unelected \"Cabinet of Barons\" with almost zero Reichstag support. Hoping to win Nazi backing, Papen **lifted the ban on the SA** and deposed Prussia’s elected socialist state government.\n\n<span class=\"para-ref\">[2.2]</span> Opposed by ninety percent of MPs after November's vote, Papen resigned in December 1932 (soon plotting return as **Vice-Chancellor**) after **General Kurt von Schleicher** warned the army could not stop civil war. Yet Schleicher failed to split the Nazis and outraged Junker landowners by proposing to break up bankrupt Prussian estates.",
+          "content": "<span class=\"para-ref\">[2.1]</span> In June 1932, Hindenburg appointed conservative nobleman **Franz von Papen** Chancellor of an unelected \"Cabinet of Barons\" with almost zero Reichstag support. Hoping to win Nazi backing, Papen **lifted the ban on the SA** and deposed Prussia’s elected socialist state government.\n\n<span class=\"para-ref\">[2.2]</span> Opposed by ninety percent of MPs after November's vote, Papen resigned in December 1932 (soon plotting return as **Vice-Chancellor**) after **General Kurt von Schleicher** warned the army could not stop civil war. Yet Schleicher failed to split the Nazis and outraged Junker landowners by proposing to break up bankrupt Prussian estates.",
           "sources": [
             {
               "id": "weimar_l8_source_d",
@@ -11876,8 +12556,8 @@ window.unitData = {
         {
           "title": "A Secret Meeting at Banker Schröder's Villa: Franz von Papen Plots His Revenge (Jan 1933)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> On 2 December 1932, Hindenburg appointed ambitious army powerbroker **General Kurt von Schleicher** as Chancellor. Schleicher attempted to construct a broad coalition through a \"Third Way\" policy, offering the Vice-Chancellorship to Gregor Strasser. However, Schleicher suffered a catastrophic **failure to split Nazis**, as Hitler swiftly expelled Strasser and reasserted iron party discipline, leaving Schleicher entirely isolated without any parliamentary majority.\n\n<span class=\"para-ref\">[3.2]</span> This produced an acute **cabinet intrigue crisis** when Schleicher proposed redistributing bankrupt aristocratic estates to unemployed workers, outraging wealthy Prussian landowners close to Hindenburg. Seeking personal vengeance against Schleicher for ousting him, Papen secretly approached Hitler. On 4 January 1933, they met at banker Kurt von Schröder’s Cologne villa, where Papen offered to make Hitler Chancellor in exchange for the Vice-Chancellorship.",
-          "content": "<span class=\"para-ref\">[3.1]</span> On 2 December 1932, Hindenburg appointed ambitious army powerbroker **General Kurt von Schleicher** as Chancellor. Schleicher attempted to construct a broad coalition through a \"Third Way\" policy, offering the Vice-Chancellorship to Gregor Strasser. However, Schleicher suffered a catastrophic **failure to split Nazis**, as Hitler swiftly expelled Strasser and reasserted iron party discipline, leaving Schleicher entirely isolated without any parliamentary majority.\n\n<span class=\"para-ref\">[3.2]</span> This produced an acute **cabinet intrigue crisis** when Schleicher proposed redistributing bankrupt aristocratic estates to unemployed workers, outraging wealthy Prussian landowners close to Hindenburg. Seeking personal vengeance against Schleicher for ousting him, Papen secretly approached Hitler. On 4 January 1933, they met at banker Kurt von Schröder’s Cologne villa, where Papen offered to make Hitler Chancellor in exchange for the Vice-Chancellorship.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Appointed Chancellor on 2 December 1932, **Kurt von Schleicher** tried to build a broad coalition by offering the Vice-Chancellorship to Gregor Strasser. Hitler swiftly forced Strasser to resign and reasserted strict party discipline, leaving Schleicher isolated without a Reichstag majority.\n\n<span class=\"para-ref\">[3.2]</span> Schleicher also lost Hindenburg's trust when Prussian landowners attacked his land plans for jobless workers. Seeking revenge through **backstairs intrigue**, **Franz von Papen** met Hitler secretly on 4 January 1933 at banker **Kurt von Schröder**’s Cologne villa. There Papen offered to make Hitler Chancellor with himself as Vice-Chancellor.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Appointed Chancellor on 2 December 1932, **Kurt von Schleicher** tried to build a broad coalition by offering the Vice-Chancellorship to Gregor Strasser. Hitler swiftly forced Strasser to resign and reasserted strict party discipline, leaving Schleicher isolated without a Reichstag majority.\n\n<span class=\"para-ref\">[3.2]</span> Schleicher also lost Hindenburg's trust when Prussian landowners attacked his land plans for jobless workers. Seeking revenge through **backstairs intrigue**, **Franz von Papen** met Hitler secretly on 4 January 1933 at banker **Kurt von Schröder**’s Cologne villa. There Papen offered to make Hitler Chancellor with himself as Vice-Chancellor.",
           "image": "/images/weimar_torchlight_parade_30jan1933.jpg",
           "image_alt": "Tens of thousands of SA stormtroopers marching with flaming torches through the Brandenburg Gate in Berlin on the night of 30 January 1933",
           "caption": "Torchlight Triumph at the Brandenburg Gate (30 January 1933): Over 25,000 SA and SS men paraded past the presidential palace until midnight, celebrating Hitler's legal appointment as the dawn of the \"National Revolution\".",
@@ -11937,8 +12617,8 @@ window.unitData = {
         {
           "title": "The Backstairs Conspiracy: Tricking President Hindenburg into Squeezing Hitler into a Corner (Jan 1933)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> Throughout late January 1933, aggressive **von Papen backroom intrigue** operated behind closed doors in the presidential palace. Papen allied with the President’s influential son, Oskar von Hindenburg, and state secretary Otto Meissner. Together, they relentlessly lobbied the eighty-five-year-old Field Marshal, successfully securing the crucial **Hindenburg appointment persuaded** by arguing that an alliance with Hitler was the only alternative to military dictatorship or civil war.\n\n<span class=\"para-ref\">[4.2]</span> Crucially, Papen eased Hindenburg’s lingering reservations by promoting the complacent **'Hitler boxed in' belief**. Papen foolishly boasted that within two months Hitler would be squeezed into a corner, noting that only three of eleven cabinet ministers were Nazis, while Papen retained the right to attend all meetings with Hindenburg. The traditional conservative elite foolishly believed they had safely harnessed Hitler to serve their own nationalist agenda.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Throughout late January 1933, aggressive **von Papen backroom intrigue** operated behind closed doors in the presidential palace. Papen allied with the President’s influential son, Oskar von Hindenburg, and state secretary Otto Meissner. Together, they relentlessly lobbied the eighty-five-year-old Field Marshal, successfully securing the crucial **Hindenburg appointment persuaded** by arguing that an alliance with Hitler was the only alternative to military dictatorship or civil war.\n\n<span class=\"para-ref\">[4.2]</span> Crucially, Papen eased Hindenburg’s lingering reservations by promoting the complacent **'Hitler boxed in' belief**. Papen foolishly boasted that within two months Hitler would be squeezed into a corner, noting that only three of eleven cabinet ministers were Nazis, while Papen retained the right to attend all meetings with Hindenburg. The traditional conservative elite foolishly believed they had safely harnessed Hitler to serve their own nationalist agenda.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Having failed earlier with **the 'Cabinet of Barons'**, **Franz von Papen** worked behind closed doors in the presidential palace. Teaming up with Hindenburg’s son Oskar and Otto Meissner before **30 January 1933**, he argued a Hitler-Papen cabinet was the only way to avoid civil war.\n\n<span class=\"para-ref\">[4.2]</span> Papen calmed Hindenburg’s doubts by stressing that only **three of eleven cabinet ministers** were Nazis while conservative ministers held eight posts. Boasting that within two months they would push Hitler into a corner until he squeaked, conservative elites fatally misjudged him.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Having failed earlier with **the 'Cabinet of Barons'**, **Franz von Papen** worked behind closed doors in the presidential palace. Teaming up with Hindenburg’s son Oskar and Otto Meissner before **30 January 1933**, he argued a Hitler-Papen cabinet was the only way to avoid civil war.\n\n<span class=\"para-ref\">[4.2]</span> Papen calmed Hindenburg’s doubts by stressing that only **three of eleven cabinet ministers** were Nazis while conservative ministers held eight posts. Boasting that within two months they would push Hitler into a corner until he squeaked, conservative elites fatally misjudged him.",
           "sources": [
             {
               "id": "weimar_l8_source_a",
@@ -11996,8 +12676,8 @@ window.unitData = {
         {
           "title": "Torches Through the Brandenburg Gate: Adolf Hitler Appointed Chancellor (30 Jan 1933)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> On the morning of **30 January 1933**, Adolf Hitler arrived at the presidential Chancellery in Berlin. In a brief ceremony before President Hindenburg, the solemn moment of **Hitler sworn chancellor** was completed as he took the constitutional oath of the Weimar Republic. Hitler had successfully attained supreme executive authority strictly through legal, constitutional mechanisms, outmaneuvering traditional conservative politicians who believed they could control him.\n\n<span class=\"para-ref\">[5.2]</span> That evening, the terrifying reality of the new regime was displayed before the nation. Over twenty-five thousand uniformed stormtroopers carried out triumphant **torchlight victory parades** through the Brandenburg Gate, singing martial anthems before cheering crowds as Hitler watched from the Chancellery window. From Munich, General Ludendorff sent a chilling telegram to Hindenburg, prophesying that Hitler would cast Germany into inconceivable misery and national ruin.",
-          "content": "<span class=\"para-ref\">[5.1]</span> On the morning of **30 January 1933**, Adolf Hitler arrived at the presidential Chancellery in Berlin. In a brief ceremony before President Hindenburg, the solemn moment of **Hitler sworn chancellor** was completed as he took the constitutional oath of the Weimar Republic. Hitler had successfully attained supreme executive authority strictly through legal, constitutional mechanisms, outmaneuvering traditional conservative politicians who believed they could control him.\n\n<span class=\"para-ref\">[5.2]</span> That evening, the terrifying reality of the new regime was displayed before the nation. Over twenty-five thousand uniformed stormtroopers carried out triumphant **torchlight victory parades** through the Brandenburg Gate, singing martial anthems before cheering crowds as Hitler watched from the Chancellery window. From Munich, General Ludendorff sent a chilling telegram to Hindenburg, prophesying that Hitler would cast Germany into inconceivable misery and national ruin.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Backed by **a formal petition urging him to appoint Hitler as Chancellor** from leading bankers and industrialists, Hindenburg gave way. On **30 January 1933**, Hitler was sworn in at the Berlin Chancellery. He was **appointed legally** under **the rules of the Weimar Constitution** by Conservative elites who thought they could control him.\n\n<span class=\"para-ref\">[5.2]</span> That evening, 25,000 uniformed stormtroopers marched in torchlight parades through the Brandenburg Gate while cheering crowds watched Hitler at the Chancellery window. From Munich, General Ludendorff sent Hindenburg a grim telegram warning that this \"accursed man\" would cast Germany into national ruin.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Backed by **a formal petition urging him to appoint Hitler as Chancellor** from leading bankers and industrialists, Hindenburg gave way. On **30 January 1933**, Hitler was sworn in at the Berlin Chancellery. He was **appointed legally** under **the rules of the Weimar Constitution** by Conservative elites who thought they could control him.\n\n<span class=\"para-ref\">[5.2]</span> That evening, 25,000 uniformed stormtroopers marched in torchlight parades through the Brandenburg Gate while cheering crowds watched Hitler at the Chancellery window. From Munich, General Ludendorff sent Hindenburg a grim telegram warning that this \"accursed man\" would cast Germany into national ruin.",
           "sources": [
             {
               "id": "weimar_l8_source_e",
@@ -12682,9 +13362,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Following <strong>Brüning dismissal (May 1932)</strong> and the total <strong>Article 48 rule failure</strong> to maintain parliamentary majorities, decisive <strong>President Hindenburg intervention</strong> left German governance entirely in presidential hands.",
-          "heading": "The Nazi Setback & Financial Exhaustion",
+          "heading": "Why did the November 1932 election suggest Nazi momentum was fading?",
           "date": "Nov 1932",
-          "step": 1
+          "step": 1,
+          "question": "Why did the November 1932 election suggest Nazi momentum was fading?",
+          "questionHeading": "Why did the November 1932 election suggest Nazi momentum was fading?",
+          "prose_hash": "95cc0239a4"
         },
         {
           "stage": 2,
@@ -12716,9 +13399,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Hindenburg appointed aristocrat <strong>Franz von Papen chancellor</strong> to lead an unelected <strong>'Cabinet of Barons'</strong>, but his regime proved fragile following a notable <strong>November election seat decline</strong> for both the government and Nazis.",
-          "heading": "General von Schleicher’s Failed Chancellor Gamble",
+          "heading": "Why did Schleicher’s policies alienate powerful conservative barons?",
           "date": "Dec 1932",
-          "step": 2
+          "step": 2,
+          "question": "Why did Schleicher’s policies alienate powerful conservative barons?",
+          "questionHeading": "Why did Schleicher’s policies alienate powerful conservative barons?",
+          "prose_hash": "5a4d672666"
         },
         {
           "stage": 3,
@@ -12750,9 +13436,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Papen’s successor <strong>General Kurt von Schleicher</strong> plunged Berlin into a deep <strong>cabinet intrigue crisis</strong>, exacerbated by his complete <strong>failure to split Nazis</strong> through negotiations with Gregor Strasser.",
-          "heading": "The Secret Schroeder Villa Meeting",
+          "heading": "How did Papen’s personal rivalry with Schleicher lead to political collusion?",
           "date": "4 Jan 1933",
-          "step": 3
+          "step": 3,
+          "question": "How did Papen’s personal rivalry with Schleicher lead to political collusion?",
+          "questionHeading": "How did Papen’s personal rivalry with Schleicher lead to political collusion?",
+          "prose_hash": "25236381a4"
         },
         {
           "stage": 4,
@@ -12784,9 +13473,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Seeking revenge against Schleicher, ruthless <strong>Von Papen backroom intrigue</strong> ensured <strong>Hindenburg appointment persuaded</strong> under the arrogant and mistaken <strong>'Hitler boxed in' belief</strong> that conservative elites could easily control the new chancellor.",
-          "heading": "The Backstairs Plot & Hindenburg’s Capitulation",
+          "heading": "Why did conservative elites believe they could control and manipulate Hitler?",
           "date": "20–28 Jan 1933",
-          "step": 4
+          "step": 4,
+          "question": "Why did conservative elites believe they could control and manipulate Hitler?",
+          "questionHeading": "Why did conservative elites believe they could control and manipulate Hitler?",
+          "prose_hash": "76ea2ef015"
         },
         {
           "stage": 5,
@@ -12818,9 +13510,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "On <strong>30 January 1933</strong>, democracy ended as <strong>Hitler sworn chancellor</strong> of a coalition cabinet, celebrated that night by twenty-five thousand SA stormtroopers staging triumphant <strong>torchlight victory parades</strong> through Berlin.",
-          "heading": "Appointment as Chancellor & Torchlight Parade",
+          "heading": "How did the appointment mark both legal transition and triumphant celebration?",
           "date": "30 Jan 1933",
-          "step": 5
+          "step": 5,
+          "question": "How did the appointment mark both legal transition and triumphant celebration?",
+          "questionHeading": "How did the appointment mark both legal transition and triumphant celebration?",
+          "prose_hash": "7f06a1bbd9"
         }
       ],
       "causal_domino_spine": {
@@ -12837,7 +13532,8 @@ window.unitData = {
             "trigger": "The Nazis lost 2 million votes and 34 seats in November 1932, emptying party bank accounts and prompting Gregor Strasser to resign in protest.",
             "desc": "The Nazis lost 2 million votes and 34 seats in November 1932, emptying party bank accounts and prompting Gregor Strasser to resign in protest.",
             "connective": "Threatened the party with financial collapse, forcing Hitler to seek external aristocratic funding and political alliances.",
-            "question": "Why did the November 1932 election suggest Nazi momentum was fading?"
+            "question": "Why did the November 1932 election suggest Nazi momentum was fading?",
+            "prose_hash": "95cc0239a4"
           },
           {
             "step": 2,
@@ -12849,7 +13545,8 @@ window.unitData = {
             "trigger": "Schleicher failed to split the Nazis and proposed redistributing bankrupt aristocratic Prussian estates, outraging Junker landowners and Hindenburg.",
             "desc": "Schleicher failed to split the Nazis and proposed redistributing bankrupt aristocratic Prussian estates, outraging Junker landowners and Hindenburg.",
             "connective": "Isolated Schleicher completely, leaving the presidency desperate for an alternative right-wing government.",
-            "question": "Why did Schleicher’s policies alienate powerful conservative barons?"
+            "question": "Why did Schleicher’s policies alienate powerful conservative barons?",
+            "prose_hash": "5a4d672666"
           },
           {
             "step": 3,
@@ -12861,7 +13558,8 @@ window.unitData = {
             "trigger": "Papen met Hitler secretly at banker Kurt von Schroeder’s villa in Cologne, agreeing to share power and securing industrialist cash to pay Nazi debts.",
             "desc": "Papen met Hitler secretly at banker Kurt von Schroeder’s villa in Cologne, agreeing to share power and securing industrialist cash to pay Nazi debts.",
             "connective": "Forged the conservative-Nazi alliance that provided the political mechanism to overcome Hindenburg’s objections.",
-            "question": "How did Papen’s personal rivalry with Schleicher lead to political collusion?"
+            "question": "How did Papen’s personal rivalry with Schleicher lead to political collusion?",
+            "prose_hash": "25236381a4"
           },
           {
             "step": 4,
@@ -12873,7 +13571,8 @@ window.unitData = {
             "trigger": "Papen convinced Hindenburg that Hitler could be \"boxed in\" within a cabinet containing only three Nazis alongside eight traditional conservatives.",
             "desc": "Papen convinced Hindenburg that Hitler could be \"boxed in\" within a cabinet containing only three Nazis alongside eight traditional conservatives.",
             "connective": "Overcame Hindenburg’s long-standing personal refusal to appoint Hitler, directly delivering executive power into Nazi hands.",
-            "question": "Why did conservative elites believe they could control and manipulate Hitler?"
+            "question": "Why did conservative elites believe they could control and manipulate Hitler?",
+            "prose_hash": "76ea2ef015"
           },
           {
             "step": 5,
@@ -12885,7 +13584,8 @@ window.unitData = {
             "trigger": "Hitler took the constitutional oath before Hindenburg at noon, celebrated that night by 25,000 SA men marching with torches through the Brandenburg Gate.",
             "desc": "Hitler took the constitutional oath before Hindenburg at noon, celebrated that night by 25,000 SA men marching with torches through the Brandenburg Gate.",
             "connective": "Marked the fatal constitutional transfer of state executive power to Adolf Hitler, sealing the collapse of the Weimar Republic.",
-            "question": "How did the appointment mark both legal transition and triumphant celebration?"
+            "question": "How did the appointment mark both legal transition and triumphant celebration?",
+            "prose_hash": "7f06a1bbd9"
           }
         ]
       },
@@ -13152,296 +13852,350 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Who appointed Adolf Hitler as Chancellor of Germany on 30 January 1933?",
-            "answer": "Reich President Paul von Hindenburg, advised by Franz von Papen."
+            "stage": 1,
+            "question": "Which Chancellor was dismissed by President Hindenburg in May 1932 before Franz von Papen was appointed?",
+            "answer": "Brüning",
+            "explanation": "In May 1932, Hindenburg dismissed Brüning and appointed aristocratic monarchist Franz von Papen as Chancellor."
           },
           {
-            "question": "Why did Franz von Papen believe he could control Hitler in the January 1933 cabinet?",
-            "answer": "Because conservatives held eight out of eleven cabinet seats, leaving Hitler with only two Nazi ministers (Frick and Göring)."
+            "stage": 2,
+            "question": "What aristocratic politician did Hindenburg appoint to lead the 'Cabinet of Barons' in May 1932?",
+            "answer": "Franz von Papen",
+            "explanation": "Hindenburg appointed monarchist aristocrat Franz von Papen to head the non-parliamentary 'Cabinet of Barons'."
           },
           {
-            "question": "What percentage of the vote did the NSDAP win in the July 1932 Reichstag election?",
-            "answer": "37.3%, making the Nazis the largest political party in the Reichstag with 230 seats."
+            "stage": 3,
+            "question": "Who did Hindenburg appoint as Chancellor immediately after Brüning?",
+            "answer": "Franz von Papen",
+            "explanation": "On 4 January 1933, they met at banker Kurt von Schröder’s Cologne villa, where Papen offered to make Hitler Chancellor in exchange for the Vice-Chancellorship."
           },
           {
-            "question": "How did Chancellor Heinrich Brüning govern Germany after March 1930?",
-            "answer": "He bypassed the Reichstag and ruled almost exclusively through emergency presidential decrees under Article 48."
+            "stage": 4,
+            "question": "What nickname was given to von Papen's undemocratic government because it was filled with wealthy elites?",
+            "answer": "The 'Cabinet of Barons'",
+            "explanation": "Papen foolishly boasted that within two months Hitler would be squeezed into a corner, noting that only three of eleven cabinet ministers were Nazis, while Papen retained the right to attend all meetings with Hindenburg."
           },
           {
-            "question": "What catastrophic economic event in October 1929 triggered mass unemployment in Germany?",
-            "answer": "The Wall Street Crash, which caused American banks to recall their short-term loans under the Dawes Plan."
+            "stage": 5,
+            "question": "Following the July 1932 elections, what did Hitler immediately demand from Hindenburg?",
+            "answer": "To be appointed Chancellor",
+            "explanation": "In a brief ceremony before President Hindenburg, the solemn moment of Hitler sworn chancellor was completed as he took the constitutional oath of the Weimar Republic."
           },
           {
-            "question": "What armed coup did Adolf Hitler attempt in Bavaria in November 1923?",
-            "answer": "The Munich Beer Hall Putsch, which was crushed by the Bavarian state police at the Odeonsplatz."
+            "stage": 1,
+            "question": "How many seats did the Nazi Party win in the July 1932 elections, making them the largest party?",
+            "answer": "230 seats",
+            "explanation": "However, when fresh elections were held in November 1932, the Nazi Party suffered a sharp setback, losing two million votes and thirty-four seats."
           },
           {
-            "question": "What political book did Hitler write while imprisoned at Landsberg Fortress?",
-            "answer": "Mein Kampf ('My Struggle'), setting out his doctrines of Lebensraum and the Führerprinzip."
+            "stage": 2,
+            "question": "Which army general replaced Franz von Papen as Chancellor in December 1932, only to resign after 57 days?",
+            "answer": "General Kurt von Schleicher",
+            "explanation": "General Kurt von Schleicher replaced Papen in December 1932, but was forced out after failing to split the Nazi party or form a coalition."
           },
           {
-            "question": "What emergency constitutional power allowed the Reich President to suspend civil liberties?",
-            "answer": "Article 48 of the Weimar Constitution."
+            "stage": 3,
+            "question": "Which army general warned Hindenburg that keeping Papen in power would lead to a civil war?",
+            "answer": "Kurt von Schleicher",
+            "explanation": "On 2 December 1932, Hindenburg appointed ambitious army powerbroker General Kurt von Schleicher as Chancellor."
           },
           {
-            "question": "What 1919 treaty imposed Article 231 (War Guilt) and £6.6 billion reparations on the Weimar Republic?",
-            "answer": "The Treaty of Versailles."
+            "stage": 4,
+            "question": "Who plotted revenge against von Schleicher by secretly meeting with Adolf Hitler?",
+            "answer": "Franz von Papen",
+            "explanation": "Throughout late January 1933, aggressive von Papen backroom intrigue operated behind closed doors in the presidential palace."
           },
           {
-            "question": "Who was the moderate German foreign minister who negotiated the 1924 Dawes Plan and 1925 Locarno Treaties?",
-            "answer": "Gustav Stresemann."
+            "stage": 5,
+            "question": "In November 1932, what did wealthy industrialists (like Hjalmar Schacht) send to Hindenburg?",
+            "answer": "A formal petition urging him to appoint Hitler as Chancellor",
+            "explanation": "In a brief ceremony before President Hindenburg, the solemn moment of Hitler sworn chancellor was completed as he took the constitutional oath of the Weimar Republic."
           }
         ]
       },
       "quiz": [
         {
+          "stage": 1,
           "question": "On what exact date did the Reichstag Fire happen?",
+          "q": "On what exact date did the Reichstag Fire happen?",
           "options": [
             "30 January 1933",
+            "27 February 1933",
             "15 March 1933",
-            "2 August 1934",
-            "27 February 1933"
+            "2 August 1934"
           ],
           "answer": "27 February 1933",
-          "q": "On what exact date did the Reichstag Fire happen?",
-          "a": "27 February 1933"
+          "a": "27 February 1933",
+          "explanation": "On the freezing night of 27 February 1933, flames erupted through the glass dome of the Reichstag building in Berlin."
         },
         {
+          "stage": 1,
           "question": "What was the name of the young Dutch communist blamed for the fire?",
+          "q": "What was the name of the young Dutch communist blamed for the fire?",
           "options": [
-            "Ernst Röhm",
             "Marinus van der Lubbe",
+            "Ernst Röhm",
             "Gregor Strasser",
             "Heinrich Himmler"
           ],
           "answer": "Marinus van der Lubbe",
-          "q": "What was the name of the young Dutch communist blamed for the fire?",
-          "a": "Marinus van der Lubbe"
+          "a": "Marinus van der Lubbe",
+          "explanation": "Inside the burning building, police arrested Marinus van der Lubbe, a young Dutch communist found half-naked carrying fire-lighters, who insisted he acted alone to protest capitalist oppression."
         },
         {
-          "question": "What did the 'Decree for the Protection of the People and the State' do?",
+          "stage": 1,
+          "question": "Who did German soldiers swear an unconditional personal oath of obedience to after Hindenburg died in August 1934?",
+          "q": "Who did German soldiers swear an unconditional personal oath of obedience to after Hindenburg died in August 1934?",
           "options": [
-            "Suspended civil rights like freedom of speech and the press",
+            "The German Constitution",
+            "The President of the Reichstag",
+            "The Weimar Republic",
+            "Adolf Hitler"
+          ],
+          "answer": "Adolf Hitler",
+          "a": "Adolf Hitler",
+          "explanation": "On 2 August 1934, German armed forces swore an unconditional personal oath of obedience directly to Adolf Hitler."
+        },
+        {
+          "stage": 1,
+          "question": "What conspiracy did Hitler and Göring immediately claim the February 1933 Reichstag Fire was the signal for?",
+          "q": "What conspiracy did Hitler and Göring immediately claim the February 1933 Reichstag Fire was the signal for?",
+          "options": [
+            "A British intelligence assassination plot",
+            "A monarchist coup to restore the Kaiser",
+            "A nationwide Communist insurrection",
+            "A rebellion by Bavarian separatists"
+          ],
+          "answer": "A nationwide Communist insurrection",
+          "a": "A nationwide Communist insurrection",
+          "explanation": "Hitler and Göring alleged the Reichstag arson was the signal for a nationwide Communist uprising, creating mass panic to justify crushing the left."
+        },
+        {
+          "stage": 2,
+          "question": "What did the 'Decree for the Protection of the People and the State' do?",
+          "q": "What did the 'Decree for the Protection of the People and the State' do?",
+          "options": [
             "Gave Hitler the power to pass laws without the Reichstag",
+            "Suspended civil rights like freedom of speech and the press",
             "Banned all trade unions in Germany",
             "Merged the SA and the regular army"
           ],
           "answer": "Suspended civil rights like freedom of speech and the press",
-          "q": "What did the 'Decree for the Protection of the People and the State' do?",
-          "a": "Suspended civil rights like freedom of speech and the press"
+          "a": "Suspended civil rights like freedom of speech and the press",
+          "explanation": "This draconian measure indefinitely revoked fundamental constitutional rights, including freedom of speech, assembly, and privacy of postal communications."
         },
         {
-          "question": "How many communist leaders were arrested immediately after the Reichstag Fire?",
+          "stage": 2,
+          "question": "In what month and year did Hitler ban all Trade Unions?",
+          "q": "In what month and year did Hitler ban all Trade Unions?",
           "options": [
-            "10,000",
-            "400",
-            "4,000",
-            "1,500"
+            "May 1933",
+            "July 1933",
+            "January 1934",
+            "June 1934"
           ],
-          "answer": "4,000",
-          "q": "How many communist leaders were arrested immediately after the Reichstag Fire?",
-          "a": "4,000"
+          "answer": "May 1933",
+          "a": "May 1933",
+          "explanation": "Left-wing newspapers were shut down, effectively paralyzing opposition campaigning mere days before the critical March 1933 Reichstag election."
         },
         {
-          "question": "What percentage of the vote did the Nazi Party receive in the March 1933 Reichstag election?",
+          "stage": 2,
+          "question": "In July 1933, what did the 'Law Against the Formation of Parties' achieve?",
+          "q": "In July 1933, what did the 'Law Against the Formation of Parties' achieve?",
           "options": [
-            "The Nazis won 43.9% of the vote",
+            "It banned the Communist Party only",
+            "It forced all parties to swear an oath to Hitler",
+            "It banned Jewish people from voting",
+            "It banned all other political parties, making Germany a one-party state"
+          ],
+          "answer": "It banned all other political parties, making Germany a one-party state",
+          "a": "It banned all other political parties, making Germany a one-party state",
+          "explanation": "Most crucially, fundamental habeas corpus suspended overnight, empowering police authorities to detain political suspects indefinitely without charge or legal representation."
+        },
+        {
+          "stage": 2,
+          "question": "Over how many Communist Party officials and Reichstag deputies were arrested within forty-eight hours under the Reichstag Fire Decree?",
+          "q": "Over how many Communist Party officials and Reichstag deputies were arrested within forty-eight hours under the Reichstag Fire Decree?",
+          "options": [
+            "Around fifty",
+            "Exactly two hundred",
+            "Over four thousand",
+            "Over one hundred thousand"
+          ],
+          "answer": "Over four thousand",
+          "a": "Over four thousand",
+          "explanation": "Suspending habeas corpus under the Reichstag Fire Decree enabled police and SA auxiliaries to imprison over four thousand KPD officials within two days."
+        },
+        {
+          "stage": 3,
+          "question": "What percentage of the vote did the Nazi Party receive in the March 1933 Reichstag election?",
+          "q": "What percentage of the vote did the Nazi Party receive in the March 1933 Reichstag election?",
+          "options": [
             "The Nazis won 90% of the vote",
+            "The Nazis won 43.9% of the vote",
             "The Nazis won 15% of the vote",
             "The Nazis won 2% of the vote"
           ],
           "answer": "The Nazis won 43.9% of the vote",
-          "explanation": "Despite intense state intimidation, the March 1933 election yielded the Nazis only 43.9% of the vote, denying Hitler an absolute majority.",
-          "q": "What percentage of the vote did the Nazi Party receive in the March 1933 Reichstag election?",
-          "a": "The Nazis won 43.9% of the vote"
+          "a": "The Nazis won 43.9% of the vote",
+          "explanation": "Despite intense state intimidation, the March 1933 election yielded the Nazis only 43.9% of the vote, denying Hitler an absolute majority."
         },
         {
-          "question": "What law gave Hitler the power to pass laws without the Reichstag for four years?",
+          "stage": 3,
+          "question": "By 1934, how many men were in the SA?",
+          "q": "By 1934, how many men were in the SA?",
           "options": [
-            "The Enabling Act",
-            "The Nuremberg Laws",
-            "The Decree for the Protection of the People",
-            "The Law Against the Formation of Parties"
+            "3 million",
+            "1 million",
+            "5 million",
+            "500,000"
           ],
-          "answer": "The Enabling Act",
-          "q": "What law gave Hitler the power to pass laws without the Reichstag for four years?",
-          "a": "The Enabling Act"
+          "answer": "3 million",
+          "a": "3 million",
+          "explanation": "After the March election failed to give the Nazis a parliamentary majority, Hitler moved to destroy constitutional democracy permanently through the 1933 Enabling Act."
         },
         {
-          "question": "Which political party did Hitler strike a deal with to ensure the Enabling Act passed with a two-thirds majority?",
+          "stage": 3,
+          "question": "Inside which Berlin venue did the Reichstag convene surrounded by armed SS and SA guards on 23 March 1933 to vote on the Enabling Act?",
+          "q": "Inside which Berlin venue did the Reichstag convene surrounded by armed SS and SA guards on 23 March 1933 to vote on the Enabling Act?",
           "options": [
-            "Ludwig Kaas's Catholic Centre Party",
-            "The Communist Party (KPD)",
-            "The Social Democratic Party (SPD)",
-            "The German Democratic Party (DDP)"
+            "Weimar National Theatre",
+            "The Munich Hofbräuhaus",
+            "Babelsberg Film Studios",
+            "The Kroll Opera House"
           ],
-          "answer": "Ludwig Kaas's Catholic Centre Party",
-          "explanation": "Hitler secured a two-thirds majority by winning the support of Ludwig Kaas's Catholic Centre Party, promising to safeguard church rights.",
-          "q": "Which political party did Hitler strike a deal with to ensure the Enabling Act passed with a two-thirds majority?",
-          "a": "Ludwig Kaas's Catholic Centre Party"
+          "answer": "The Kroll Opera House",
+          "a": "The Kroll Opera House",
+          "explanation": "Meeting in the Kroll Opera House after the Reichstag fire, intimidated deputies passed the Enabling Act by 444 votes to 94, ending Weimar democracy."
         },
         {
-          "question": "What German word means 'coordination' or bringing all society into line with Nazi ideals?",
+          "stage": 3,
+          "question": "Which was the only party in the Reichstag whose deputies courageously voted against the Enabling Act on 23 March 1933?",
+          "q": "Which was the only party in the Reichstag whose deputies courageously voted against the Enabling Act on 23 March 1933?",
           "options": [
-            "Lebensraum",
-            "Volksgemeinschaft",
-            "Gleichschaltung",
-            "Dolchstoss"
+            "The Catholic Centre Party",
+            "The German Nationalist Party",
+            "The Social Democrats",
+            "The Bavarian People's Party"
           ],
-          "answer": "Gleichschaltung",
-          "q": "What German word means 'coordination' or bringing all society into line with Nazi ideals?",
-          "a": "Gleichschaltung"
+          "answer": "The Social Democrats",
+          "a": "The Social Democrats",
+          "explanation": "With Communist deputies already banned and imprisoned, only Otto Wels's Social Democrats (SPD) voted against surrendering Reichstag legislative powers."
         },
         {
-          "question": "In what month and year did Hitler ban all Trade Unions?",
-          "options": [
-            "July 1933",
-            "January 1934",
-            "May 1933",
-            "June 1934"
-          ],
-          "answer": "May 1933",
-          "q": "In what month and year did Hitler ban all Trade Unions?",
-          "a": "May 1933"
-        },
-        {
-          "question": "What decisive action did the Nazi regime take against trade unions on 2 May 1933?",
-          "options": [
-            "SA stormtroopers raided union offices, arrested leaders, and abolished trade unions",
-            "The regime doubled worker wages across all industrial factories",
-            "Trade unions were given full control over national economic planning",
-            "Union leaders were elected as permanent members of the Reichstag"
-          ],
-          "answer": "SA stormtroopers raided union offices, arrested leaders, and abolished trade unions",
-          "explanation": "On 2 May 1933, SA stormtroopers occupied union headquarters across Germany, arresting officials and outlawing free trade unions.",
-          "q": "What decisive action did the Nazi regime take against trade unions on 2 May 1933?",
-          "a": "SA stormtroopers raided union offices, arrested leaders, and abolished trade unions"
-        },
-        {
-          "question": "In July 1933, what did the 'Law Against the Formation of Parties' achieve?",
-          "options": [
-            "It banned the Communist Party only",
-            "It banned all other political parties, making Germany a one-party state",
-            "It forced all parties to swear an oath to Hitler",
-            "It banned Jewish people from voting"
-          ],
-          "answer": "It banned all other political parties, making Germany a one-party state",
-          "q": "In July 1933, what did the 'Law Against the Formation of Parties' achieve?",
-          "a": "It banned all other political parties, making Germany a one-party state"
-        },
-        {
+          "stage": 4,
           "question": "What was the name of the regional state governments that Hitler abolished in January 1934?",
+          "q": "What was the name of the regional state governments that Hitler abolished in January 1934?",
           "options": [
-            "The Länder",
             "The Reichswehr",
+            "The Länder",
             "The Gauleiters",
             "The Bundesrat"
           ],
           "answer": "The Länder",
-          "q": "What was the name of the regional state governments that Hitler abolished in January 1934?",
-          "a": "The Länder"
+          "a": "The Länder",
+          "explanation": "Defense Minister Werner von Blomberg and President Hindenburg warned Hitler that the military would take control unless the disorderly, violent brownshirts were brought under control immediately."
         },
         {
-          "question": "By 1934, how many men were in the SA?",
-          "options": [
-            "1 million",
-            "5 million",
-            "500,000",
-            "3 million"
-          ],
-          "answer": "3 million",
-          "q": "By 1934, how many men were in the SA?",
-          "a": "3 million"
-        },
-        {
+          "stage": 4,
           "question": "Who was the leader of the SA who wanted a 'second revolution'?",
+          "q": "Who was the leader of the SA who wanted a 'second revolution'?",
           "options": [
-            "Heinrich Himmler",
             "Ernst Röhm",
+            "Heinrich Himmler",
             "Hermann Göring",
             "Reinhard Heydrich"
           ],
           "answer": "Ernst Röhm",
-          "q": "Who was the leader of the SA who wanted a 'second revolution'?",
-          "a": "Ernst Röhm"
+          "a": "Ernst Röhm",
+          "explanation": "Ernst Röhm, leader of the three-million-strong SA militia, demanded a socialist \"second revolution\" and sought to absorb the aristocratic regular army into his stormtroopers."
         },
         {
-          "question": "Which two powerful groups in Germany hated the SA and pressured Hitler to destroy them?",
-          "options": [
-            "The regular army (Reichswehr) and wealthy industrialists",
-            "The SS and the Gestapo",
-            "The Catholic Church and the middle class",
-            "The Trade Unions and the Communists"
-          ],
-          "answer": "The regular army (Reichswehr) and wealthy industrialists",
-          "q": "Which two powerful groups in Germany hated the SA and pressured Hitler to destroy them?",
-          "a": "The regular army (Reichswehr) and wealthy industrialists"
-        },
-        {
+          "stage": 4,
           "question": "On what exact date did the Night of the Long Knives happen?",
+          "q": "On what exact date did the Night of the Long Knives happen?",
           "options": [
             "27 February 1933",
             "2 August 1934",
-            "30 June 1934",
-            "15 March 1933"
+            "15 March 1933",
+            "30 June 1934"
           ],
           "answer": "30 June 1934",
-          "q": "On what exact date did the Night of the Long Knives happen?",
-          "a": "30 June 1934"
+          "a": "30 June 1934",
+          "explanation": "On 30 June 1934, Hitler executed the murderous Night of Long Knives, unleashing elite SS execution squads against his former comrades."
         },
         {
+          "stage": 4,
           "question": "Name the left-wing rival within the Nazi Party who was murdered during the Night of the Long Knives.",
+          "q": "Name the left-wing rival within the Nazi Party who was murdered during the Night of the Long Knives.",
           "options": [
             "Joseph Goebbels",
-            "Gregor Strasser",
             "Anton Drexler",
+            "Gregor Strasser",
             "Rudolf Hess"
           ],
           "answer": "Gregor Strasser",
-          "q": "Name the left-wing rival within the Nazi Party who was murdered during the Night of the Long Knives.",
-          "a": "Gregor Strasser"
+          "a": "Gregor Strasser",
+          "explanation": "Over one hundred political rivals, including former Chancellor Kurt von Schleicher and Gregor Strasser, were murdered, securing the army’s gratitude."
         },
         {
-          "question": "Which former German Chancellor was executed by the SS during the Night of the Long Knives in June 1934?",
+          "stage": 5,
+          "question": "What law gave Hitler the power to pass laws without the Reichstag for four years?",
+          "q": "What law gave Hitler the power to pass laws without the Reichstag for four years?",
           "options": [
-            "Kurt von Schleicher",
-            "Heinrich Brüning",
-            "Franz von Papen",
-            "Friedrich Ebert"
+            "The Nuremberg Laws",
+            "The Enabling Act",
+            "The Decree for the Protection of the People",
+            "The Law Against the Formation of Parties"
           ],
-          "answer": "Kurt von Schleicher",
-          "explanation": "During the Night of the Long Knives, the SS murdered former Chancellor Kurt von Schleicher and his wife in their home.",
-          "q": "Which former German Chancellor was executed by the SS during the Night of the Long Knives in June 1934?",
-          "a": "Kurt von Schleicher"
+          "answer": "The Enabling Act",
+          "a": "The Enabling Act",
+          "explanation": "Within hours, Hitler acted swiftly, passing a law that saw the prestigious offices of Führer and Chancellor combined into his single person."
         },
         {
+          "stage": 5,
           "question": "What title did Hitler adopt when Hindenburg died in August 1934, combining the roles of Chancellor and President?",
+          "q": "What title did Hitler adopt when Hindenburg died in August 1934, combining the roles of Chancellor and President?",
           "options": [
+            "Führer",
             "Kaiser",
             "Reichspräsident",
-            "Supreme Commander",
-            "Führer"
+            "Supreme Commander"
           ],
           "answer": "Führer",
-          "q": "What title did Hitler adopt when Hindenburg died in August 1934, combining the roles of Chancellor and President?",
-          "a": "Führer"
+          "a": "Führer",
+          "explanation": "Within hours, Hitler acted swiftly, passing a law that saw the prestigious offices of Führer and Chancellor combined into his single person."
         },
         {
-          "question": "Who did German soldiers swear an unconditional personal oath of obedience to after Hindenburg died in August 1934?",
+          "stage": 5,
+          "question": "On what exact date did President Paul von Hindenburg die, removing the last constitutional check on Hitler's power?",
+          "q": "On what exact date did President Paul von Hindenburg die, removing the last constitutional check on Hitler's power?",
           "options": [
-            "Adolf Hitler",
-            "The German Constitution",
-            "The President of the Reichstag",
-            "The Weimar Republic"
+            "30 January 1933",
+            "23 March 1933",
+            "30 June 1934",
+            "2 August 1934"
           ],
-          "answer": "Adolf Hitler",
-          "explanation": "On 2 August 1934, German armed forces swore an unconditional personal oath of obedience directly to Adolf Hitler.",
-          "q": "Who did German soldiers swear an unconditional personal oath of obedience to after Hindenburg died in August 1934?",
-          "a": "Adolf Hitler"
+          "answer": "2 August 1934",
+          "a": "2 August 1934",
+          "explanation": "Within hours of eighty-six-year-old Hindenburg's death on 2 August 1934, Hitler combined the offices of President and Chancellor as Führer."
+        },
+        {
+          "stage": 5,
+          "question": "How was the German military oath altered on the afternoon of President Hindenburg's death in August 1934?",
+          "q": "How was the German military oath altered on the afternoon of President Hindenburg's death in August 1934?",
+          "options": [
+            "Officers swore allegiance to the League of Nations",
+            "Conscripts pledged obedience to the Reichstag cabinet",
+            "Soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution",
+            "Generals swore loyalty to the Hohenzollern monarchy"
+          ],
+          "answer": "Soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution",
+          "a": "Soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution",
+          "explanation": "Binding every soldier by personal honour directly to Adolf Hitler rather than the German constitution locked the armed forces into his dictatorship."
         }
       ],
       "questions": [
@@ -13674,8 +14428,8 @@ window.unitData = {
         {
           "title": "Flames Over the Reichstag Dome: Marinus van der Lubbe and the Arson Crisis (Feb 1933)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> On the freezing night of 27 February 1933, flames erupted through the glass dome of the Reichstag building in Berlin. The sudden **Reichstag Fire (Feb 1933)** shocked the capital, gutting the parliamentary debating chamber. Inside the burning building, police arrested **Marinus van der Lubbe**, a young Dutch communist found half-naked carrying fire-lighters, who insisted he acted alone to protest capitalist oppression.\n\n<span class=\"para-ref\">[1.2]</span> Adolf Hitler and Hermann Göring instantly exploited the catastrophe, fabricating an aggressive **Communist plot allegation** that the arson was the signal for a nationwide Bolshevik insurrection. Declaring that communist conspirators intended to burn government ministries and poison water supplies, the Nazi leadership created a climate of national hysteria to justify an immediate, unsparing crackdown against all left-wing political opponents.",
-          "content": "<span class=\"para-ref\">[1.1]</span> On the freezing night of 27 February 1933, flames erupted through the glass dome of the Reichstag building in Berlin. The sudden **Reichstag Fire (Feb 1933)** shocked the capital, gutting the parliamentary debating chamber. Inside the burning building, police arrested **Marinus van der Lubbe**, a young Dutch communist found half-naked carrying fire-lighters, who insisted he acted alone to protest capitalist oppression.\n\n<span class=\"para-ref\">[1.2]</span> Adolf Hitler and Hermann Göring instantly exploited the catastrophe, fabricating an aggressive **Communist plot allegation** that the arson was the signal for a nationwide Bolshevik insurrection. Declaring that communist conspirators intended to burn government ministries and poison water supplies, the Nazi leadership created a climate of national hysteria to justify an immediate, unsparing crackdown against all left-wing political opponents.",
+          "text": "<span class=\"para-ref\">[1.1]</span> On the freezing night of **27 February 1933**, flames burst through the glass dome of the Reichstag building in Berlin during the sudden **Reichstag Fire**. Inside the burning chamber, police arrested **Marinus van der Lubbe**, a young Dutch communist found carrying firelighters who insisted he had acted alone.\n\n<span class=\"para-ref\">[1.2]</span> Chancellor **Adolf Hitler** and Hermann Göring exploited the blaze at once, claiming the arson was the signal for **a nationwide Communist insurrection**. Declaring that communists planned to burn ministries and poison water supplies, Nazi papers whipped up public panic to justify an immediate crackdown on the left.",
+          "content": "<span class=\"para-ref\">[1.1]</span> On the freezing night of **27 February 1933**, flames burst through the glass dome of the Reichstag building in Berlin during the sudden **Reichstag Fire**. Inside the burning chamber, police arrested **Marinus van der Lubbe**, a young Dutch communist found carrying firelighters who insisted he had acted alone.\n\n<span class=\"para-ref\">[1.2]</span> Chancellor **Adolf Hitler** and Hermann Göring exploited the blaze at once, claiming the arson was the signal for **a nationwide Communist insurrection**. Declaring that communists planned to burn ministries and poison water supplies, Nazi papers whipped up public panic to justify an immediate crackdown on the left.",
           "sources": [
             {
               "id": "weimar_l9_source_a",
@@ -13731,8 +14485,8 @@ window.unitData = {
         {
           "title": "The Emergency Decree: Suspending Civil Liberties and Mass Arrests (Feb 1933)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> On the morning following the arson, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48. This draconian measure indefinitely revoked fundamental constitutional rights, including freedom of speech, assembly, and privacy of postal communications. Most crucially, fundamental **habeas corpus suspended** overnight, empowering police authorities to detain political suspects indefinitely without charge or legal representation.\n\n<span class=\"para-ref\">[2.2]</span> Nazi authorities immediately launched **mass Communist arrests**, mobilizing regular police and fifty thousand armed SA auxiliary stormtroopers to raid private homes across Berlin. Over four thousand Communist Party (KPD) officials, organizers, and Reichstag deputies were imprisoned within forty-eight hours. Left-wing newspapers were shut down, effectively paralyzing opposition campaigning mere days before the critical March 1933 Reichstag election.",
-          "content": "<span class=\"para-ref\">[2.1]</span> On the morning following the arson, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48. This draconian measure indefinitely revoked fundamental constitutional rights, including freedom of speech, assembly, and privacy of postal communications. Most crucially, fundamental **habeas corpus suspended** overnight, empowering police authorities to detain political suspects indefinitely without charge or legal representation.\n\n<span class=\"para-ref\">[2.2]</span> Nazi authorities immediately launched **mass Communist arrests**, mobilizing regular police and fifty thousand armed SA auxiliary stormtroopers to raid private homes across Berlin. Over four thousand Communist Party (KPD) officials, organizers, and Reichstag deputies were imprisoned within forty-eight hours. Left-wing newspapers were shut down, effectively paralyzing opposition campaigning mere days before the critical March 1933 Reichstag election.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Next morning, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48. Overnight, the decree **suspended civil rights like freedom of speech and the press**, free assembly, and private mail. Suspending *habeas corpus*, it let police jail political suspects indefinitely without trial.\n\n<span class=\"para-ref\">[2.2]</span> Regular police and 50,000 armed SA auxiliaries raided homes across Germany and locked up **over four thousand** Communist officials within forty-eight hours before the March election. After trade unions were crushed in **May 1933**, a July law **banned all other political parties, making Germany a one-party state**.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Next morning, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48. Overnight, the decree **suspended civil rights like freedom of speech and the press**, free assembly, and private mail. Suspending *habeas corpus*, it let police jail political suspects indefinitely without trial.\n\n<span class=\"para-ref\">[2.2]</span> Regular police and 50,000 armed SA auxiliaries raided homes across Germany and locked up **over four thousand** Communist officials within forty-eight hours before the March election. After trade unions were crushed in **May 1933**, a July law **banned all other political parties, making Germany a one-party state**.",
           "sources": [
             {
               "id": "weimar_l9_source_c",
@@ -13792,8 +14546,8 @@ window.unitData = {
         {
           "title": "The Kroll Opera House: The Enabling Act and the Death of the Republic (Mar 1933)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> After the March election failed to give the Nazis a parliamentary majority, Hitler moved to destroy constitutional democracy permanently through the **1933 Enabling Act**. On 23 March, parliament convened for the historic **Kroll Opera House vote** in Berlin. The hall was surrounded by armed SS guards, while stormtroopers lined corridors chanting violent threats to intimidate arriving delegates into submission.\n\n<span class=\"para-ref\">[3.2]</span> With Communist deputies banned and Catholic Centrists coerced by promises to protect church schools, only Otto Wels’ courageous Social Democrats voted against the bill. Passing by 444 votes to 94, total **Reichstag powers surrendered** to the cabinet. Hitler acquired dictatorial authority to enact legislation and alter the constitution without parliamentary consent, marking the formal legal suicide of the Weimar Republic.",
-          "content": "<span class=\"para-ref\">[3.1]</span> After the March election failed to give the Nazis a parliamentary majority, Hitler moved to destroy constitutional democracy permanently through the **1933 Enabling Act**. On 23 March, parliament convened for the historic **Kroll Opera House vote** in Berlin. The hall was surrounded by armed SS guards, while stormtroopers lined corridors chanting violent threats to intimidate arriving delegates into submission.\n\n<span class=\"para-ref\">[3.2]</span> With Communist deputies banned and Catholic Centrists coerced by promises to protect church schools, only Otto Wels’ courageous Social Democrats voted against the bill. Passing by 444 votes to 94, total **Reichstag powers surrendered** to the cabinet. Hitler acquired dictatorial authority to enact legislation and alter the constitution without parliamentary consent, marking the formal legal suicide of the Weimar Republic.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Even with **3 million** SA and auxiliary bullies intimidating voters, **the Nazis won 43.9% of the vote** in March 1933 — still short of a solo majority. Hitler therefore brought the **1933 Enabling Act** before deputies gathered at **the Kroll Opera House** in Berlin on 23 March to end **Weimar** democracy.\n\n<span class=\"para-ref\">[3.2]</span> With Communist MPs jailed, armed SS guards ringed the hall and SA men chanted threats while Hitler promised Catholic Centrists church safety. Only **the Social Democrats** under Otto Wels voted no; passing by 444 votes to 94, parliament handed Hitler four years of dictatorial lawmaking power.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Even with **3 million** SA and auxiliary bullies intimidating voters, **the Nazis won 43.9% of the vote** in March 1933 — still short of a solo majority. Hitler therefore brought the **1933 Enabling Act** before deputies gathered at **the Kroll Opera House** in Berlin on 23 March to end **Weimar** democracy.\n\n<span class=\"para-ref\">[3.2]</span> With Communist MPs jailed, armed SS guards ringed the hall and SA men chanted threats while Hitler promised Catholic Centrists church safety. Only **the Social Democrats** under Otto Wels voted no; passing by 444 votes to 94, parliament handed Hitler four years of dictatorial lawmaking power.",
           "sources": [
             {
               "id": "weimar_l9_source_gleichschaltung",
@@ -13849,8 +14603,8 @@ window.unitData = {
         {
           "title": "The Night of the Long Knives: Purging Ernst Röhm and the SA Leadership (Jun 1934)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> By summer 1934, intense rivalry threatened Hitler’s dictatorship. Ernst Röhm, leader of the three-million-strong SA militia, demanded a socialist \"second revolution\" and sought to absorb the aristocratic regular army into his stormtroopers. Defense Minister Werner von Blomberg and President Hindenburg warned Hitler that the military would take control unless the disorderly, violent brownshirts were brought under control immediately.\n\n<span class=\"para-ref\">[4.2]</span> On 30 June 1934, Hitler executed the murderous **Night of Long Knives**, unleashing elite SS execution squads against his former comrades. SA commander **Ernst Röhm executed** after refusing suicide in Stadelheim prison, as the violent **SA paramilitary purged** of its senior leadership. Over one hundred political rivals, including former Chancellor Kurt von Schleicher and Gregor Strasser, were murdered, securing the army’s gratitude.",
-          "content": "<span class=\"para-ref\">[4.1]</span> By summer 1934, intense rivalry threatened Hitler’s dictatorship. Ernst Röhm, leader of the three-million-strong SA militia, demanded a socialist \"second revolution\" and sought to absorb the aristocratic regular army into his stormtroopers. Defense Minister Werner von Blomberg and President Hindenburg warned Hitler that the military would take control unless the disorderly, violent brownshirts were brought under control immediately.\n\n<span class=\"para-ref\">[4.2]</span> On 30 June 1934, Hitler executed the murderous **Night of Long Knives**, unleashing elite SS execution squads against his former comrades. SA commander **Ernst Röhm executed** after refusing suicide in Stadelheim prison, as the violent **SA paramilitary purged** of its senior leadership. Over one hundred political rivals, including former Chancellor Kurt von Schleicher and Gregor Strasser, were murdered, securing the army’s gratitude.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Having abolished regional state parliaments (**the Länder**), Hitler faced dangerous radical dissent by summer 1934 from **Ernst Röhm**, commander of the three-million-strong SA. Röhm demanded a socialist \"second revolution\" absorbing the regular army into his stormtroopers, prompting Defence Minister Blomberg and Hindenburg to demand action.\n\n<span class=\"para-ref\">[4.2]</span> To win the loyalty of the regular army, Hitler purged Ernst Röhm and the senior SA leadership during the **Night of the Long Knives** on **30 June 1934**. SS squads executed an estimated 400 rivals — including Röhm, former Chancellor Schleicher, and **Gregor Strasser** — securing the army's gratitude.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Having abolished regional state parliaments (**the Länder**), Hitler faced dangerous radical dissent by summer 1934 from **Ernst Röhm**, commander of the three-million-strong SA. Röhm demanded a socialist \"second revolution\" absorbing the regular army into his stormtroopers, prompting Defence Minister Blomberg and Hindenburg to demand action.\n\n<span class=\"para-ref\">[4.2]</span> To win the loyalty of the regular army, Hitler purged Ernst Röhm and the senior SA leadership during the **Night of the Long Knives** on **30 June 1934**. SS squads executed an estimated 400 rivals — including Röhm, former Chancellor Schleicher, and **Gregor Strasser** — securing the army's gratitude.",
           "sources": [
             {
               "id": "weimar_l9_source_e",
@@ -13906,8 +14660,8 @@ window.unitData = {
         {
           "title": "The Final Oath: Hindenburg's Death and the Soldier's Pledge to the Führer (Aug 1934)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> On 2 August 1934, eighty-six-year-old **President Hindenburg dies** at his Neudeck estate, removing the last constitutional check on Hitler’s power. Within hours, Hitler acted swiftly, passing a law that saw the prestigious offices of **Führer and Chancellor combined** into his single person. Hitler absorbed all presidential executive powers, emergency decree authority, and supreme command of the armed forces without opposition.\n\n<span class=\"para-ref\">[5.2]</span> That afternoon, the entire military swore an altered allegiance oath. Crucially, the **armed forces loyalty oath** bound every officer and soldier not to the German constitution or nation, but personally to \"Adolf Hitler, the Führer of the German Reich and people.\" Bound by Prussian military honour to obey Hitler unconditionally, the German armed forces were firmly locked into his totalitarian regime.",
-          "content": "<span class=\"para-ref\">[5.1]</span> On 2 August 1934, eighty-six-year-old **President Hindenburg dies** at his Neudeck estate, removing the last constitutional check on Hitler’s power. Within hours, Hitler acted swiftly, passing a law that saw the prestigious offices of **Führer and Chancellor combined** into his single person. Hitler absorbed all presidential executive powers, emergency decree authority, and supreme command of the armed forces without opposition.\n\n<span class=\"para-ref\">[5.2]</span> That afternoon, the entire military swore an altered allegiance oath. Crucially, the **armed forces loyalty oath** bound every officer and soldier not to the German constitution or nation, but personally to \"Adolf Hitler, the Führer of the German Reich and people.\" Bound by Prussian military honour to obey Hitler unconditionally, the German armed forces were firmly locked into his totalitarian regime.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Already armed with **the Enabling Act**, Hitler lost his final constitutional check on **2 August 1934**, when 86-year-old President Hindenburg died at his Neudeck estate. Within hours, Hitler passed a law merging the offices of Chancellor and President, naming himself sole **Führer** and supreme commander.\n\n<span class=\"para-ref\">[5.2]</span> That afternoon, every officer and soldier swore a rewritten allegiance oath in which **soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution**. Bound by military honour to obey Hitler personally, the German armed forces were locked firmly into his dictatorship.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Already armed with **the Enabling Act**, Hitler lost his final constitutional check on **2 August 1934**, when 86-year-old President Hindenburg died at his Neudeck estate. Within hours, Hitler passed a law merging the offices of Chancellor and President, naming himself sole **Führer** and supreme commander.\n\n<span class=\"para-ref\">[5.2]</span> That afternoon, every officer and soldier swore a rewritten allegiance oath in which **soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution**. Bound by military honour to obey Hitler personally, the German armed forces were locked firmly into his dictatorship.",
           "image": "/images/hitler_hindenburg_1933.jpg",
           "image_alt": "Chancellor Adolf Hitler bowing before Field Marshal President Paul von Hindenburg in Potsdam, March 1933",
           "caption": "The Day of Potsdam (21 March 1933): Adolf Hitler ceremoniously deferred to the revered 85-year-old Field Marshal Paul von Hindenburg, reassuring Germany's conservative establishment and the Reichswehr high command before dissolving their independence.",
@@ -14229,7 +14983,7 @@ window.unitData = {
         {
           "stage": 1,
           "dates": "27 Feb 1933",
-          "title": "The Reichstag Fire (Feb 1933)",
+          "title": "The Reichstag Fire",
           "spec_focus": "Van der Lubbe; Reichstag Fire Decree; suspension of civil liberties; mass arrests.",
           "focus_clue": "How was the arson used as a pretext to destroy constitutional rights?",
           "para_ref": "[1.1–1.2]",
@@ -14256,14 +15010,17 @@ window.unitData = {
             }
           ],
           "model_sentence": "When arson destroyed the parliament in the <strong>Reichstag Fire (Feb 1933)</strong>, the arrest of Dutch communist <strong>Marinus van der Lubbe</strong> was seized upon by Hitler to fabricate a terrifying <strong>communist plot allegation</strong>.",
-          "heading": "The Reichstag Fire & Emergency Decree",
+          "heading": "How did Hitler exploit the February 1933 Reichstag Fire politically?",
           "date": "27 Feb 1933",
-          "step": 1
+          "step": 1,
+          "question": "How did Hitler exploit the February 1933 Reichstag Fire politically?",
+          "questionHeading": "How did Hitler exploit the February 1933 Reichstag Fire politically?",
+          "prose_hash": "e407fe9817"
         },
         {
           "stage": 2,
-          "dates": "23 Mar 1933",
-          "title": "The Reichstag Fire Decree (Feb 1933)",
+          "dates": "28 Feb 1933",
+          "title": "The Reichstag Fire Decree & Mass Arrests",
           "spec_focus": "Enabling Act; Kroll Opera House; SA intimidation; end of democracy.",
           "focus_clue": "Why did the Enabling Act effectively end parliamentary democracy in Germany?",
           "para_ref": "[2.1–2.2]",
@@ -14290,14 +15047,17 @@ window.unitData = {
             }
           ],
           "model_sentence": "Hitler persuaded Hindenburg to sign the emergency <strong>Reichstag Fire Decree</strong>, under which constitutional <strong>habeas corpus suspended</strong> completely, enabling the police to carry out <strong>mass Communist arrests</strong> and suppress free press.",
-          "heading": "The Enabling Act",
-          "date": "23 Mar 1933",
-          "step": 2
+          "heading": "How did the Reichstag Fire Decree cripple Communist opposition?",
+          "date": "28 Feb 1933",
+          "step": 2,
+          "question": "How did the Reichstag Fire Decree cripple Communist opposition?",
+          "questionHeading": "How did the Reichstag Fire Decree cripple Communist opposition?",
+          "prose_hash": "a47f585722"
         },
         {
           "stage": 3,
-          "dates": "May–Jul 1933",
-          "title": "The Enabling Act (Mar 1933)",
+          "dates": "23 Mar 1933",
+          "title": "The Enabling Act at Kroll Opera House",
           "spec_focus": "Gleichschaltung; trade union suppression; DAF; Law Against Formation of Parties.",
           "focus_clue": "How did Gleichschaltung dismantle independent social and political bodies?",
           "para_ref": "[3.1–3.2]",
@@ -14324,9 +15084,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Surrounded by armed SA stormtroopers during the dramatic <strong>Kroll Opera House vote</strong>, intimidated politicians passed the <strong>1933 Enabling Act</strong>, whereby all legislative <strong>Reichstag powers surrendered</strong> directly to Hitler's cabinet.",
-          "heading": "Gleichschaltung (Co-ordination of State & Society)",
-          "date": "May–Jul 1933",
-          "step": 3
+          "heading": "Why did the March 1933 Enabling Act end Weimar democracy?",
+          "date": "23 Mar 1933",
+          "step": 3,
+          "question": "Why did the March 1933 Enabling Act end Weimar democracy?",
+          "questionHeading": "Why did the March 1933 Enabling Act end Weimar democracy?",
+          "prose_hash": "548e1be691"
         },
         {
           "stage": 4,
@@ -14358,9 +15121,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "To eliminate internal radical rivals and placate the regular army, Hitler ordered the bloody June 1934 <strong>Night of Long Knives</strong>, ensuring SA chief <strong>Ernst Röhm executed</strong> as the violent <strong>SA paramilitary purged</strong> decisively.",
-          "heading": "The Night of the Long Knives",
+          "heading": "Why did the Führer purge his own paramilitary commanders?",
           "date": "30 Jun 1934",
-          "step": 4
+          "step": 4,
+          "question": "Why did the Führer purge his own paramilitary commanders?",
+          "questionHeading": "Why did the Führer purge his own paramilitary commanders?",
+          "prose_hash": "08d23beac6"
         },
         {
           "stage": 5,
@@ -14392,9 +15158,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "In August 1934 when elderly <strong>President Hindenburg dies</strong>, Hitler had the constitutional offices of <strong>Führer and Chancellor combined</strong>, cementing his absolute dictatorship when soldiers swore an unconditional <strong>armed forces loyalty oath</strong> to him personally.",
-          "heading": "Death of Hindenburg & The Army Oath",
+          "heading": "How did the military oath cement total control over the armed forces?",
           "date": "2 Aug 1934",
-          "step": 5
+          "step": 5,
+          "question": "How did the military oath cement total control over the armed forces?",
+          "questionHeading": "How did the military oath cement total control over the armed forces?",
+          "prose_hash": "316d95851e"
         }
       ],
       "causal_domino_spine": {
@@ -14405,37 +15174,40 @@ window.unitData = {
             "step": 1,
             "date": "27 Feb 1933",
             "para_ref": "[1.1–1.2]",
-            "title": "The Reichstag Fire & Emergency Decree",
-            "actor": "Marinus van der Lubbe & Adolf Hitler",
-            "tag": "🔥 ARSON & SUSPENSION OF RIGHTS",
-            "trigger": "The Reichstag building was torched, prompting Hitler to extract the Reichstag Fire Decree from Hindenburg, suspending all civil liberties and arresting 4,000 communists.",
-            "desc": "The Reichstag building was torched, prompting Hitler to extract the Reichstag Fire Decree from Hindenburg, suspending all civil liberties and arresting 4,000 communists.",
-            "connective": "Crippled left-wing opposition, clearing the path to push through absolute emergency legislation in parliament.",
-            "question": "How was the arson used as a pretext to destroy constitutional rights?"
+            "title": "The Reichstag Fire",
+            "actor": "Marinus van der Lubbe, Hitler & Göring",
+            "tag": "🔥 REICHSTAG ARSON CRISIS",
+            "trigger": "After Marinus van der Lubbe was arrested inside the burning Reichstag on 27 February 1933, Hitler and Göring alleged a nationwide Communist plot.",
+            "desc": "After Marinus van der Lubbe was arrested inside the burning Reichstag on 27 February 1933, Hitler and Göring alleged a nationwide Communist plot.",
+            "connective": "Created a climate of anti-communist panic to justify emergency decrees and a sweeping crackdown on the left.",
+            "question": "How did Hitler exploit the February 1933 Reichstag Fire politically?",
+            "prose_hash": "e407fe9817"
           },
           {
             "step": 2,
-            "date": "23 Mar 1933",
+            "date": "28 Feb 1933",
             "para_ref": "[2.1–2.2]",
-            "title": "The Enabling Act",
-            "actor": "Reichstag Deputies & SA Intimidators",
-            "tag": "📜 KROLL OPERA HOUSE ENABLING ACT",
-            "trigger": "Surrounded by chanting brownshirts in the Kroll Opera House, the Reichstag passed the Enabling Act by 444 to 94 votes, granting Hitler power to enact laws without parliament.",
-            "desc": "Surrounded by chanting brownshirts in the Kroll Opera House, the Reichstag passed the Enabling Act by 444 to 94 votes, granting Hitler power to enact laws without parliament.",
-            "connective": "Gave the Nazi cabinet total legal power to unilaterally dismantle all remaining democratic and civic institutions.",
-            "question": "Why did the Enabling Act effectively end parliamentary democracy in Germany?"
+            "title": "The Reichstag Fire Decree & Mass Arrests",
+            "actor": "President Hindenburg, Police & SA",
+            "tag": "🚨 CIVIL LIBERTIES SUSPENDED",
+            "trigger": "Hindenburg signed the Reichstag Fire Decree under Article 48, suspending habeas corpus and civil rights as police and SA arrested 4,000 Communists.",
+            "desc": "Hindenburg signed the Reichstag Fire Decree under Article 48, suspending habeas corpus and civil rights as police and SA arrested 4,000 Communists.",
+            "connective": "Paralyzed left-wing opposition and shut down KPD newspapers days before the March 1933 Reichstag election.",
+            "question": "How did the Reichstag Fire Decree cripple Communist opposition?",
+            "prose_hash": "a47f585722"
           },
           {
             "step": 3,
-            "date": "May–Jul 1933",
+            "date": "23 Mar 1933",
             "para_ref": "[3.1–3.2]",
-            "title": "Gleichschaltung (Co-ordination of State & Society)",
-            "actor": "Robert Ley (DAF) & Nazi Police",
-            "tag": "⚙️ TOTALITARIAN CO-ORDINATION",
-            "trigger": "The regime smashed trade unions on 2 May to create the DAF, banned the SPD, and declared a one-party state on 14 July 1933.",
-            "desc": "The regime smashed trade unions on 2 May to create the DAF, banned the SPD, and declared a one-party state on 14 July 1933.",
-            "connective": "Extinguished all independent political parties and labor organizations across German civil society.",
-            "question": "How did Gleichschaltung dismantle independent social and political bodies?"
+            "title": "The Enabling Act at Kroll Opera House",
+            "actor": "Hitler, Reichstag Deputies & Otto Wels",
+            "tag": "📜 DEATH OF WEIMAR DEMOCRACY",
+            "trigger": "Intimidated by SS and SA guards in the Kroll Opera House, deputies passed the 1933 Enabling Act by 444 votes to 94 despite SPD opposition.",
+            "desc": "Intimidated by SS and SA guards in the Kroll Opera House, deputies passed the 1933 Enabling Act by 444 votes to 94 despite SPD opposition.",
+            "connective": "Surrendered Reichstag law-making powers to Hitler’s cabinet for four years, legally ending Weimar parliamentary democracy.",
+            "question": "Why did the March 1933 Enabling Act end Weimar democracy?",
+            "prose_hash": "548e1be691"
           },
           {
             "step": 4,
@@ -14447,7 +15219,8 @@ window.unitData = {
             "trigger": "Hitler purged Ernst Röhm and the SA leadership, executing an estimated 400 individuals to eliminate internal radical dissent and win the loyalty of the regular army.",
             "desc": "Hitler purged Ernst Röhm and the SA leadership, executing an estimated 400 individuals to eliminate internal radical dissent and win the loyalty of the regular army.",
             "connective": "Pacified the Reichswehr high command and removed the last organized domestic challenge to Hitler’s authority.",
-            "question": "Why did the Führer purge his own paramilitary commanders?"
+            "question": "Why did the Führer purge his own paramilitary commanders?",
+            "prose_hash": "08d23beac6"
           },
           {
             "step": 5,
@@ -14459,7 +15232,8 @@ window.unitData = {
             "trigger": "President Hindenburg died; Hitler merged the presidency and chancellorship into the supreme title of Führer, requiring every soldier to swear an oath of personal loyalty.",
             "desc": "President Hindenburg died; Hitler merged the presidency and chancellorship into the supreme title of Führer, requiring every soldier to swear an oath of personal loyalty.",
             "connective": "Completed the transformation of Germany into an absolute totalitarian dictatorship with total military obedience.",
-            "question": "How did the military oath cement total control over the armed forces?"
+            "question": "How did the military oath cement total control over the armed forces?",
+            "prose_hash": "316d95851e"
           }
         ]
       },
@@ -14724,48 +15498,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What emergency decree was passed on 28 February 1933 suspending civil liberties?",
-            "answer": "The Reichstag Fire Emergency Decree (Decree for the Protection of the People and State)."
+            "stage": 1,
+            "question": "On what exact date did the Reichstag Fire happen?",
+            "answer": "27 February 1933",
+            "explanation": "On the freezing night of 27 February 1933, flames erupted through the glass dome of the Reichstag building in Berlin."
           },
           {
-            "question": "What landmark law did the Reichstag pass on 23 March 1933 giving Hitler power to rule by decree?",
-            "answer": "The Enabling Act (Law to Remedy the Distress of the People and the Reich)."
+            "stage": 2,
+            "question": "What did the 'Decree for the Protection of the People and the State' do?",
+            "answer": "Suspended civil rights like freedom of speech and the press",
+            "explanation": "This draconian measure indefinitely revoked fundamental constitutional rights, including freedom of speech, assembly, and privacy of postal communications."
           },
           {
-            "question": "What term describes the process of coordinating all German institutions under Nazi control?",
-            "answer": "Gleichschaltung."
+            "stage": 3,
+            "question": "What percentage of the vote did the Nazi Party receive in the March 1933 Reichstag election?",
+            "answer": "The Nazis won 43.9% of the vote",
+            "explanation": "Despite intense state intimidation, the March 1933 election yielded the Nazis only 43.9% of the vote, denying Hitler an absolute majority."
           },
           {
-            "question": "What bloody purge took place on 30 June 1934 to eliminate the SA leadership?",
-            "answer": "The Night of the Long Knives, in which Ernst Röhm and other rivals were executed."
+            "stage": 4,
+            "question": "What was the name of the regional state governments that Hitler abolished in January 1934?",
+            "answer": "The Länder",
+            "explanation": "Defense Minister Werner von Blomberg and President Hindenburg warned Hitler that the military would take control unless the disorderly, violent brownshirts were brought under control immediately."
           },
           {
-            "question": "What did German army soldiers do on 2 August 1934 following President Hindenburg's death?",
-            "answer": "They swore a personal oath of unconditional loyalty to Adolf Hitler as Führer."
+            "stage": 5,
+            "question": "What law gave Hitler the power to pass laws without the Reichstag for four years?",
+            "answer": "The Enabling Act",
+            "explanation": "Within hours, Hitler acted swiftly, passing a law that saw the prestigious offices of Führer and Chancellor combined into his single person."
           },
           {
-            "question": "Who appointed Adolf Hitler as Chancellor on 30 January 1933?",
-            "answer": "President Paul von Hindenburg."
+            "stage": 1,
+            "question": "What was the name of the young Dutch communist blamed for the fire?",
+            "answer": "Marinus van der Lubbe",
+            "explanation": "Inside the burning building, police arrested Marinus van der Lubbe, a young Dutch communist found half-naked carrying fire-lighters, who insisted he acted alone to protest capitalist oppression."
           },
           {
-            "question": "Which Dutch communist was blamed and executed for setting fire to the Reichstag?",
-            "answer": "Marinus van der Lubbe."
+            "stage": 2,
+            "question": "In what month and year did Hitler ban all Trade Unions?",
+            "answer": "May 1933",
+            "explanation": "Left-wing newspapers were shut down, effectively paralyzing opposition campaigning mere days before the critical March 1933 Reichstag election."
           },
           {
-            "question": "Which paramilitary organization was led by Ernst Röhm before 1934?",
-            "answer": "The SA (Sturmabteilung, or Brownshirts)."
+            "stage": 3,
+            "question": "By 1934, how many men were in the SA?",
+            "answer": "3 million",
+            "explanation": "After the March election failed to give the Nazis a parliamentary majority, Hitler moved to destroy constitutional democracy permanently through the 1933 Enabling Act."
           },
           {
-            "question": "What was the 'stab-in-the-back' myth (Dolchstoßlegende) propagated by German military leaders like Ludendorff?",
-            "answer": "The false conspiracy theory that the German army was undefeated in the field and betrayed from within by socialists, communists, and Jews."
+            "stage": 4,
+            "question": "Who was the leader of the SA who wanted a 'second revolution'?",
+            "answer": "Ernst Röhm",
+            "explanation": "Ernst Röhm, leader of the three-million-strong SA militia, demanded a socialist \"second revolution\" and sought to absorb the aristocratic regular army into his stormtroopers."
           },
           {
-            "question": "What 1928 international pact signed by 62 nations renounced war as an instrument of national policy?",
-            "answer": "The Kellogg-Briand Pact."
+            "stage": 5,
+            "question": "What title did Hitler adopt when Hindenburg died in August 1934, combining the roles of Chancellor and President?",
+            "answer": "Führer",
+            "explanation": "Within hours, Hitler acted swiftly, passing a law that saw the prestigious offices of Führer and Chancellor combined into his single person."
           }
         ]
       },
@@ -14825,8 +15618,8 @@ window.unitData = {
         {
           "title": "The Black Order: Heinrich Himmler and the Expansion of the SS (1933–1939)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> The supreme instrument of Nazi terror was the Schutzstaffel, led by Reichsführer **Heinrich Himmler SS**. Originating as a small personal bodyguard, Himmler transformed the organization into a fanatical racial elite. SS recruits were subjected to rigorous genealogical screening to prove pure Aryan ancestry back to 1750, undergoing intense ideological indoctrination to foster unquestioning loyalty and ruthless obedience to Adolf Hitler.\n\n<span class=\"para-ref\">[1.2]</span> Dressed in menacing black uniforms, these **Schutzstaffel blackshirts** rapidly expanded from fifty thousand men in 1933 to over two hundred thousand by 1939. Operating entirely above ordinary civil law, Himmler established the sinister **SD intelligence security** service under Reinhard Heydrich. The SD monitored public opinion, uncovered internal dissidents, and gathered surveillance intelligence, creating a pervasive apparatus of totalitarian state terror across Germany.",
-          "content": "<span class=\"para-ref\">[1.1]</span> The supreme instrument of Nazi terror was the Schutzstaffel, led by Reichsführer **Heinrich Himmler SS**. Originating as a small personal bodyguard, Himmler transformed the organization into a fanatical racial elite. SS recruits were subjected to rigorous genealogical screening to prove pure Aryan ancestry back to 1750, undergoing intense ideological indoctrination to foster unquestioning loyalty and ruthless obedience to Adolf Hitler.\n\n<span class=\"para-ref\">[1.2]</span> Dressed in menacing black uniforms, these **Schutzstaffel blackshirts** rapidly expanded from fifty thousand men in 1933 to over two hundred thousand by 1939. Operating entirely above ordinary civil law, Himmler established the sinister **SD intelligence security** service under Reinhard Heydrich. The SD monitored public opinion, uncovered internal dissidents, and gathered surveillance intelligence, creating a pervasive apparatus of totalitarian state terror across Germany.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Alongside religious targets like **the Reich Church**, **Heinrich Himmler** expanded the **SS** from a small bodyguard into an elite 240,000-man force (over two hundred thousand men by 1939). Recruits proved pure Aryan ancestry back to 1750 and trained in ruthless obedience, opening Dachau in March 1933 to detain political prisoners indefinitely in protective custody.\n\n<span class=\"para-ref\">[1.2]</span> Operating above civil law in menacing black uniforms, the SS ran a permanent concentration camp network across Germany. Inside it, Himmler's deputy **Reinhard Heydrich** led the **SD** security intelligence service, monitoring public opinion and hunting suspected internal dissidents across the Reich.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Alongside religious targets like **the Reich Church**, **Heinrich Himmler** expanded the **SS** from a small bodyguard into an elite 240,000-man force (over two hundred thousand men by 1939). Recruits proved pure Aryan ancestry back to 1750 and trained in ruthless obedience, opening Dachau in March 1933 to detain political prisoners indefinitely in protective custody.\n\n<span class=\"para-ref\">[1.2]</span> Operating above civil law in menacing black uniforms, the SS ran a permanent concentration camp network across Germany. Inside it, Himmler's deputy **Reinhard Heydrich** led the **SD** security intelligence service, monitoring public opinion and hunting suspected internal dissidents across the Reich.",
           "sources": [
             {
               "id": "weimar_l10_source_dachau_opening",
@@ -14886,8 +15679,8 @@ window.unitData = {
         {
           "title": "Terror from the Shadows: The Gestapo, Dachau and Protective Custody (1933–1939)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> Under Reinhard Heydrich, the dreaded **Gestapo secret police** struck terror throughout German society. Operating without uniforms from headquarters on Prinz-Albrecht-Straße in Berlin, agents intercepted private mail, monitored phone calls, and conducted brutal interrogations using torture. The Gestapo operated entirely above judicial review; no German court held legal authority to overturn its arrests or investigate its detention facilities.\n\n<span class=\"para-ref\">[2.2]</span> In March 1933, Himmler established **Dachau concentration camp (1933)** near Munich to incarcerate political opponents. Supervised by the brutal SS-Totenkopfverbände, Dachau served as the prototype for an expanding network of penal camps. Dissidents were subjected to **indefinite protective custody** without trial or legal counsel, enduring forced hard labour, severe physical abuse, and summary execution for minor infractions.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Under Reinhard Heydrich, the dreaded **Gestapo secret police** struck terror throughout German society. Operating without uniforms from headquarters on Prinz-Albrecht-Straße in Berlin, agents intercepted private mail, monitored phone calls, and conducted brutal interrogations using torture. The Gestapo operated entirely above judicial review; no German court held legal authority to overturn its arrests or investigate its detention facilities.\n\n<span class=\"para-ref\">[2.2]</span> In March 1933, Himmler established **Dachau concentration camp (1933)** near Munich to incarcerate political opponents. Supervised by the brutal SS-Totenkopfverbände, Dachau served as the prototype for an expanding network of penal camps. Dissidents were subjected to **indefinite protective custody** without trial or legal counsel, enduring forced hard labour, severe physical abuse, and summary execution for minor infractions.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Under Heydrich, **the Gestapo** secret police policed a nation of 70 million with only 32,000 agents. Agents relied heavily on voluntary denunciations from neighbours, colleagues, and local Block Wardens. Crucially, **the Gestapo operated entirely above judicial review** with legal immunity, tapping phones, opening private mail, and using torture.\n\n<span class=\"para-ref\">[2.2]</span> Alongside **the People's Court**, the Gestapo locked political suspects into indefinite **protective custody** without trial in camps like **Dachau** (opened March 1933). Guarded by Death's Head units, widespread fear of informers spread suspicion that paralysed open resistance.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Under Heydrich, **the Gestapo** secret police policed a nation of 70 million with only 32,000 agents. Agents relied heavily on voluntary denunciations from neighbours, colleagues, and local Block Wardens. Crucially, **the Gestapo operated entirely above judicial review** with legal immunity, tapping phones, opening private mail, and using torture.\n\n<span class=\"para-ref\">[2.2]</span> Alongside **the People's Court**, the Gestapo locked political suspects into indefinite **protective custody** without trial in camps like **Dachau** (opened March 1933). Guarded by Death's Head units, widespread fear of informers spread suspicion that paralysed open resistance.",
           "sources": [
             {
               "id": "weimar_l10_source_a",
@@ -14943,8 +15736,8 @@ window.unitData = {
         {
           "title": "Swastika Robes: The Nazification of the Courts and Roland Freisler (1933–1934)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> To ensure the judiciary served as an instrument of political terror, Hitler subordinated all legal professionals to Nazi doctrine. All judges and lawyers were compelled to join the **National Socialist League Jurists**, swearing a formal oath to interpret statutes according to Nazi racial philosophy. Traditional courtroom impartiality was eliminated, as judges wore swastika emblems and evaluated cases based upon perceived \"sound popular sentiment\".\n\n<span class=\"para-ref\">[3.2]</span> In 1934, Hitler established the **People's Court (Roland Freisler)** to try political offenses such as high treason and defeatism. Operating without juries or independent defense counsel, trials were held in secret, with fanatical judges like Freisler screaming abuse at defendants. Through this system, total **judicial independence abolished**, turning German legal courtrooms into lethal instruments of state terror that handed down thousands of executions.",
-          "content": "<span class=\"para-ref\">[3.1]</span> To ensure the judiciary served as an instrument of political terror, Hitler subordinated all legal professionals to Nazi doctrine. All judges and lawyers were compelled to join the **National Socialist League Jurists**, swearing a formal oath to interpret statutes according to Nazi racial philosophy. Traditional courtroom impartiality was eliminated, as judges wore swastika emblems and evaluated cases based upon perceived \"sound popular sentiment\".\n\n<span class=\"para-ref\">[3.2]</span> In 1934, Hitler established the **People's Court (Roland Freisler)** to try political offenses such as high treason and defeatism. Operating without juries or independent defense counsel, trials were held in secret, with fanatical judges like Freisler screaming abuse at defendants. Through this system, total **judicial independence abolished**, turning German legal courtrooms into lethal instruments of state terror that handed down thousands of executions.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Hitler also turned German courts into loyal tools of Nazi terror. Every judge and lawyer was forced to join **the National Socialist League for the Maintenance of the Law**, swearing to interpret statutes by Nazi racial beliefs. Courtroom fairness vanished as judges wore swastika badges.\n\n<span class=\"para-ref\">[3.2]</span> In 1934, Hitler set up **the People's Court (Volksgerichtshof)** under fanatical judges like **Roland Freisler** to try political treason. **Trials were held in secret without juries or independent defense counsel**, judicial independence was abolished, and screaming Nazi judges handed down thousands of death sentences.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Hitler also turned German courts into loyal tools of Nazi terror. Every judge and lawyer was forced to join **the National Socialist League for the Maintenance of the Law**, swearing to interpret statutes by Nazi racial beliefs. Courtroom fairness vanished as judges wore swastika badges.\n\n<span class=\"para-ref\">[3.2]</span> In 1934, Hitler set up **the People's Court (Volksgerichtshof)** under fanatical judges like **Roland Freisler** to try political treason. **Trials were held in secret without juries or independent defense counsel**, judicial independence was abolished, and screaming Nazi judges handed down thousands of death sentences.",
           "sources": [
             {
               "id": "weimar_l10_source_c",
@@ -15000,8 +15793,8 @@ window.unitData = {
         {
           "title": "The Vatican Concordat: Papal Compromise and Broken Promises (1933–1937)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> In July 1933, seeking international diplomatic prestige, Hitler signed the historic **Reichskonkordat treaty (1933)** with the Vatican, negotiated by Franz von Papen. Under the concordat, the papacy agreed that Catholic priests would withdraw from active party politics, leading to the dramatic development where the Catholic **Center Party dissolved** itself, removing a major democratic parliamentary rival from the German political landscape.\n\n<span class=\"para-ref\">[4.2]</span> In return, the Nazi government guaranteed full religious freedom and made solemn promises that **Catholic Church autonomy promised**, specifically protecting church schools, youth organizations, and charitable foundations. However, Hitler broke the treaty almost immediately: Catholic youth leagues were forcibly disbanded, crucifixes removed from classrooms, and outspoken priests arrested on fabricated charges of financial smuggling and immoral conduct.",
-          "content": "<span class=\"para-ref\">[4.1]</span> In July 1933, seeking international diplomatic prestige, Hitler signed the historic **Reichskonkordat treaty (1933)** with the Vatican, negotiated by Franz von Papen. Under the concordat, the papacy agreed that Catholic priests would withdraw from active party politics, leading to the dramatic development where the Catholic **Center Party dissolved** itself, removing a major democratic parliamentary rival from the German political landscape.\n\n<span class=\"para-ref\">[4.2]</span> In return, the Nazi government guaranteed full religious freedom and made solemn promises that **Catholic Church autonomy promised**, specifically protecting church schools, youth organizations, and charitable foundations. However, Hitler broke the treaty almost immediately: Catholic youth leagues were forcibly disbanded, crucifixes removed from classrooms, and outspoken priests arrested on fabricated charges of financial smuggling and immoral conduct.",
+          "text": "<span class=\"para-ref\">[4.1]</span> While Protestants later split over **the Confessional Church**, Hitler first sought prestige with Rome in **July 1933**. Through Papen, he signed **the Concordat (Reichskonkordat)** with the Vatican. Catholic priests left politics and the Catholic Centre Party dissolved itself, while Hitler promised to leave church schools and youth groups untouched.\n\n<span class=\"para-ref\">[4.2]</span> Despite promising Catholic Church autonomy, Hitler broke the treaty almost at once — **forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms**. Nazi police censored Catholic newspapers, closed church schools, and arrested outspoken priests on trumped-up charges.",
+          "content": "<span class=\"para-ref\">[4.1]</span> While Protestants later split over **the Confessional Church**, Hitler first sought prestige with Rome in **July 1933**. Through Papen, he signed **the Concordat (Reichskonkordat)** with the Vatican. Catholic priests left politics and the Catholic Centre Party dissolved itself, while Hitler promised to leave church schools and youth groups untouched.\n\n<span class=\"para-ref\">[4.2]</span> Despite promising Catholic Church autonomy, Hitler broke the treaty almost at once — **forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms**. Nazi police censored Catholic newspapers, closed church schools, and arrested outspoken priests on trumped-up charges.",
           "sources": [
             {
               "id": "weimar_l10_source_d",
@@ -15057,8 +15850,8 @@ window.unitData = {
         {
           "title": "Pagan Altars vs Confessional Pulpits: The Protestant Church Struggle (1933–1939)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Germany’s forty million Protestants were initially targeted for state coordination into a unified **Protestant Reich Church**, led by Hitler’s handpicked Reich Bishop Ludwig Müller. Supported by the fanatical \"German Christians\" movement, Müller attempted to Nazify the church, removing the Jewish Old Testament from scriptures, demanding the dismissal of non-Aryan clergy, and placing swastika flags alongside Christian crucifixes on church altars.\n\n<span class=\"para-ref\">[5.2]</span> This blatant pagan interference sparked fierce theological resistance, led by courageous **Martin Niemöller opposition** alongside theologian Dietrich Bonhoeffer. In 1934, dissident pastors established the **Confessional Church resistance**, refusing state control and preaching that Christians must obey God rather than man. The Gestapo retaliated swiftly, arresting over eight hundred pastors and confining Niemöller in Dachau concentration camp until 1945.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Germany’s forty million Protestants were initially targeted for state coordination into a unified **Protestant Reich Church**, led by Hitler’s handpicked Reich Bishop Ludwig Müller. Supported by the fanatical \"German Christians\" movement, Müller attempted to Nazify the church, removing the Jewish Old Testament from scriptures, demanding the dismissal of non-Aryan clergy, and placing swastika flags alongside Christian crucifixes on church altars.\n\n<span class=\"para-ref\">[5.2]</span> This blatant pagan interference sparked fierce theological resistance, led by courageous **Martin Niemöller opposition** alongside theologian Dietrich Bonhoeffer. In 1934, dissident pastors established the **Confessional Church resistance**, refusing state control and preaching that Christians must obey God rather than man. The Gestapo retaliated swiftly, arresting over eight hundred pastors and confining Niemöller in Dachau concentration camp until 1945.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Hitler next tried to coordinate Germany’s forty million Protestants into a unified Reich Church under handpicked Reich Bishop **Ludwig Müller**. Backed by fanatical **'German Christians'**, Müller placed swastika banners beside altar crosses, dismissed pastors of Jewish ancestry, and sought to drop the Jewish Old Testament.\n\n<span class=\"para-ref\">[5.2]</span> This interference sparked firm resistance led by Pastor **Martin Niemöller** and theologian Dietrich Bonhoeffer. In 1934, they founded the Confessional Church to preach that Christians obey God rather than the state. Over 800 dissident pastors were arrested, and Niemöller was confined in **Dachau** until 1945.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Hitler next tried to coordinate Germany’s forty million Protestants into a unified Reich Church under handpicked Reich Bishop **Ludwig Müller**. Backed by fanatical **'German Christians'**, Müller placed swastika banners beside altar crosses, dismissed pastors of Jewish ancestry, and sought to drop the Jewish Old Testament.\n\n<span class=\"para-ref\">[5.2]</span> This interference sparked firm resistance led by Pastor **Martin Niemöller** and theologian Dietrich Bonhoeffer. In 1934, they founded the Confessional Church to preach that Christians obey God rather than the state. Over 800 dissident pastors were arrested, and Niemöller was confined in **Dachau** until 1945.",
           "image": "/images/weimar_individuals/martin_niem_ller.jpg",
           "image_alt": "Pastor Martin Niemöller, Protestant theologian and leader of the anti-Nazi Confessing Church",
           "caption": "Pastor Martin Niemöller (1892–1984): Former U-boat commander who founded the Pastors' Emergency League (PFB) in 1933 to resist the Nazification of the Protestant Church. Niemöller was arrested by the Gestapo in 1937 and held in Sachsenhausen and Dachau as Hitler's personal prisoner.",
@@ -15118,30 +15911,65 @@ window.unitData = {
       ],
       "quiz": [
         {
+          "stage": 1,
+          "question": "Who was the leader of the SS, who eventually took control of all police forces in Germany?",
           "q": "Who was the leader of the SS, who eventually took control of all police forces in Germany?",
-          "a": "Heinrich Himmler",
           "options": [
+            "Heinrich Himmler",
             "Ernst Röhm",
             "Hermann Goering",
-            "Heinrich Himmler",
             "Joseph Goebbels"
-          ]
-        },
-        {
-          "question": "What was the elite security and intelligence service headed by Reinhard Heydrich within the SS?",
-          "options": [
-            "The Sicherheitsdienst (SD)",
-            "The Gestapo",
-            "The SA",
-            "The Freikorps"
           ],
-          "answer": "The Sicherheitsdienst (SD)",
-          "explanation": "The Sicherheitsdienst (SD) was the elite intelligence service of the SS, founded to identify and track political subversives.",
-          "q": "What was the elite security and intelligence service headed by Reinhard Heydrich within the SS?",
-          "a": "The Sicherheitsdienst (SD)"
+          "answer": "Heinrich Himmler",
+          "a": "Heinrich Himmler",
+          "explanation": "The supreme instrument of Nazi terror was the Schutzstaffel, led by Reichsführer Heinrich Himmler SS."
         },
         {
+          "stage": 1,
+          "question": "What was the name of the official, Nazified Protestant church set up by the government?",
+          "q": "What was the name of the official, Nazified Protestant church set up by the government?",
+          "options": [
+            "The Confessional Church",
+            "The German Catholic League",
+            "The People's Church",
+            "The Reich Church"
+          ],
+          "answer": "The Reich Church",
+          "a": "The Reich Church",
+          "explanation": "The supreme instrument of Nazi terror was the Schutzstaffel, led by Reichsführer Heinrich Himmler SS."
+        },
+        {
+          "stage": 1,
+          "question": "Who headed the sinister SD intelligence security service established within the SS to monitor public opinion and uncover dissidents?",
+          "q": "Who headed the sinister SD intelligence security service established within the SS to monitor public opinion and uncover dissidents?",
+          "options": [
+            "Ernst Röhm",
+            "Roland Freisler",
+            "Reinhard Heydrich",
+            "Robert Ley"
+          ],
+          "answer": "Reinhard Heydrich",
+          "a": "Reinhard Heydrich",
+          "explanation": "Under Heinrich Himmler, Reinhard Heydrich ran the SD intelligence service to gather surveillance on public attitudes and expose opposition across Germany."
+        },
+        {
+          "stage": 1,
+          "question": "To over how many men had Heinrich Himmler's black-uniformed SS expanded by 1939?",
+          "q": "To over how many men had Heinrich Himmler's black-uniformed SS expanded by 1939?",
+          "options": [
+            "Five thousand men",
+            "Over two hundred thousand men",
+            "Twenty-five thousand men",
+            "Three million men"
+          ],
+          "answer": "Over two hundred thousand men",
+          "a": "Over two hundred thousand men",
+          "explanation": "Subjected to strict racial screening and ideological indoctrination, the Schutzstaffel grew from 50,000 members in 1933 to over 200,000 by 1939."
+        },
+        {
+          "stage": 2,
           "question": "What secret state police force operated out of Prinz-Albrecht-Straße in Berlin using widespread citizen denunciations?",
+          "q": "What secret state police force operated out of Prinz-Albrecht-Straße in Berlin using widespread citizen denunciations?",
           "options": [
             "The Gestapo",
             "The Kripo",
@@ -15149,12 +15977,55 @@ window.unitData = {
             "The Ordnungspolizei"
           ],
           "answer": "The Gestapo",
-          "explanation": "The Gestapo (Geheime Staatspolizei), based at Prinz-Albrecht-Straße, relied heavily on voluntary citizen denunciations to police the population.",
-          "q": "What secret state police force operated out of Prinz-Albrecht-Straße in Berlin using widespread citizen denunciations?",
-          "a": "The Gestapo"
+          "a": "The Gestapo",
+          "explanation": "The Gestapo (Geheime Staatspolizei), based at Prinz-Albrecht-Straße, relied heavily on voluntary citizen denunciations to police the population."
         },
         {
+          "stage": 2,
+          "question": "What was the name of the new court set up in 1934 to hear cases of treason without a jury?",
+          "q": "What was the name of the new court set up in 1934 to hear cases of treason without a jury?",
+          "options": [
+            "The Nuremberg Court",
+            "The Reichstag Tribunal",
+            "The Supreme Court of Justice",
+            "The People's Court"
+          ],
+          "answer": "The People's Court",
+          "a": "The People's Court",
+          "explanation": "The Gestapo operated entirely above judicial review; no German court held legal authority to overturn its arrests or investigate its detention facilities."
+        },
+        {
+          "stage": 2,
+          "question": "What legal euphemism did the Gestapo use to detain political suspects indefinitely in concentration camps without trial?",
+          "q": "What legal euphemism did the Gestapo use to detain political suspects indefinitely in concentration camps without trial?",
+          "options": [
+            "Passive resistance",
+            "Habeas corpus",
+            "Protective custody",
+            "Preventive parole"
+          ],
+          "answer": "Protective custody",
+          "a": "Protective custody",
+          "explanation": "Under 'indefinite protective custody', the Gestapo imprisoned dissidents in camps like Dachau without charges, legal counsel, or courtroom review."
+        },
+        {
+          "stage": 2,
+          "question": "Why were German citizens arrested by the Gestapo unable to challenge their detention in ordinary law courts?",
+          "q": "Why were German citizens arrested by the Gestapo unable to challenge their detention in ordinary law courts?",
+          "options": [
+            "All local courts in Germany were closed in 1933",
+            "The Gestapo operated entirely above judicial review",
+            "Appeals had to be heard by the League of Nations",
+            "Only military conscripts had access to defence lawyers"
+          ],
+          "answer": "The Gestapo operated entirely above judicial review",
+          "a": "The Gestapo operated entirely above judicial review",
+          "explanation": "Operating entirely above civil law, the Gestapo could arrest, interrogate, and intern citizens with no German court holding authority to intervene."
+        },
+        {
+          "stage": 3,
           "question": "What specialized court was established by the regime in 1934 to try political treason cases outside normal judicial standards?",
+          "q": "What specialized court was established by the regime in 1934 to try political treason cases outside normal judicial standards?",
           "options": [
             "The People's Court (Volksgerichtshof)",
             "The Supreme Constitutional Court",
@@ -15162,175 +16033,162 @@ window.unitData = {
             "The Weimar Assembly"
           ],
           "answer": "The People's Court (Volksgerichtshof)",
-          "explanation": "In 1934, Hitler established the People's Court (Volksgerichtshof) under fanatical judges to dispense swift verdicts for treason.",
-          "q": "What specialized court was established by the regime in 1934 to try political treason cases outside normal judicial standards?",
-          "a": "The People's Court (Volksgerichtshof)"
+          "a": "The People's Court (Volksgerichtshof)",
+          "explanation": "In 1934, Hitler established the People's Court (Volksgerichtshof) under fanatical judges to dispense swift verdicts for treason."
         },
         {
-          "q": "Because the Gestapo was actually quite small, who did they rely on for 80% of their information?",
-          "a": "Ordinary citizens / informers denouncing their neighbours",
-          "options": [
-            "Undercover SS officers working in factories",
-            "Ordinary citizens / informers denouncing their neighbours",
-            "The regular local police force",
-            "Secret listening devices planted in homes"
-          ]
-        },
-        {
-          "q": "What is the German term for 'Protective Custody', which allowed the Gestapo to arrest people without trial?",
-          "a": "Schutzhaft",
-          "options": [
-            "Lebensraum",
-            "Dolchstoß",
-            "Gleichschaltung",
-            "Schutzhaft"
-          ]
-        },
-        {
+          "stage": 3,
+          "question": "What was the name of the compulsory organisation that all German judges were forced to join?",
           "q": "What was the name of the compulsory organisation that all German judges were forced to join?",
-          "a": "The National Socialist League for the Maintenance of the Law",
           "options": [
-            "The National Socialist League for the Maintenance of the Law",
             "The Gestapo Legal Department",
             "The Reich Judicial Chamber",
-            "The People's Court"
-          ]
-        },
-        {
-          "q": "What was the name of the new court set up in 1934 to hear cases of treason without a jury?",
-          "a": "The People's Court",
-          "options": [
-            "The Nuremberg Court",
-            "The Reichstag Tribunal",
             "The People's Court",
-            "The Supreme Court of Justice"
-          ]
+            "The National Socialist League for the Maintenance of the Law"
+          ],
+          "answer": "The National Socialist League for the Maintenance of the Law",
+          "a": "The National Socialist League for the Maintenance of the Law",
+          "explanation": "All judges and lawyers were compelled to join the National Socialist League Jurists, swearing a formal oath to interpret statutes according to Nazi racial philosophy."
         },
         {
-          "q": "Name the first concentration camp, opened in Germany in 1933.",
-          "a": "Dachau",
+          "stage": 3,
+          "question": "Which fanatical Nazi judge became notorious for screaming abuse at political defendants in the People's Court?",
+          "q": "Which fanatical Nazi judge became notorious for screaming abuse at political defendants in the People's Court?",
           "options": [
-            "Auschwitz",
-            "Buchenwald",
-            "Treblinka",
-            "Dachau"
-          ]
+            "Franz von Papen",
+            "Wilhelm Groener",
+            "Roland Freisler",
+            "Konstantin Hierl"
+          ],
+          "answer": "Roland Freisler",
+          "a": "Roland Freisler",
+          "explanation": "Presiding over secret treason trials without juries, fanatical People's Court judge Roland Freisler handed down thousands of death sentences."
         },
         {
-          "q": "In the years 1933–39, which specific groups of people made up the vast majority of concentration camp inmates?",
-          "a": "Political prisoners / Communists / Trade Unionists",
+          "stage": 3,
+          "question": "Why did political trials inside the Nazi People's Court abolish any chance of an impartial verdict?",
+          "q": "Why did political trials inside the Nazi People's Court abolish any chance of an impartial verdict?",
           "options": [
-            "Corrupt businessmen and bankers",
-            "Jewish people and their families",
-            "Political prisoners / Communists / Trade Unionists",
-            "Captured enemy soldiers from foreign wars"
-          ]
+            "Cases were decided by public telephone votes",
+            "Trials were held in secret without juries or independent defense counsel",
+            "Foreign ambassadors sat as prosecution judges",
+            "Defendants were tried by local trade union committees"
+          ],
+          "answer": "Trials were held in secret without juries or independent defense counsel",
+          "a": "Trials were held in secret without juries or independent defense counsel",
+          "explanation": "Eliminating juries, open hearings, and independent defence lawyers turned the People's Court into a rubber-stamp instrument of state terror."
         },
         {
+          "stage": 4,
+          "question": "In what month and year did Hitler sign the Concordat with the Catholic Church?",
           "q": "In what month and year did Hitler sign the Concordat with the Catholic Church?",
-          "a": "July 1933",
           "options": [
             "July 1933",
             "January 1933",
             "November 1938",
             "August 1934"
-          ]
+          ],
+          "answer": "July 1933",
+          "a": "July 1933",
+          "explanation": "In July 1933, seeking international diplomatic prestige, Hitler signed the historic Reichskonkordat treaty (1933) with the Vatican, negotiated by Franz von Papen."
         },
         {
+          "stage": 4,
           "question": "What 1933 agreement was signed between Nazi Germany and the Vatican, negotiated by Franz von Papen?",
+          "q": "What 1933 agreement was signed between Nazi Germany and the Vatican, negotiated by Franz von Papen?",
           "options": [
-            "The Concordat (Reichskonkordat)",
             "The Treaty of Versailles",
             "The Locarno Pact",
-            "The Munich Agreement"
+            "The Munich Agreement",
+            "The Concordat (Reichskonkordat)"
           ],
           "answer": "The Concordat (Reichskonkordat)",
-          "explanation": "In July 1933, the regime concluded the Reichskonkordat with the Vatican, guaranteeing religious freedom in exchange for Catholic political withdrawal.",
-          "q": "What 1933 agreement was signed between Nazi Germany and the Vatican, negotiated by Franz von Papen?",
-          "a": "The Concordat (Reichskonkordat)"
+          "a": "The Concordat (Reichskonkordat)",
+          "explanation": "In July 1933, the regime concluded the Reichskonkordat with the Vatican, guaranteeing religious freedom in exchange for Catholic political withdrawal."
         },
         {
-          "question": "Which Protestant pastor founded the Confessional Church and the Pastors' Emergency League to oppose Nazi control?",
-          "options": [
-            "Martin Niemöller",
-            "Ludwig Müller",
-            "Bernhard Rust",
-            "Alfred Rosenberg"
-          ],
-          "answer": "Martin Niemöller",
-          "explanation": "Pastor Martin Niemöller established the Pastors' Emergency League and the Confessional Church, resisting the Nazification of Christianity.",
-          "q": "Which Protestant pastor founded the Confessional Church and the Pastors' Emergency League to oppose Nazi control?",
-          "a": "Martin Niemöller"
-        },
-        {
-          "q": "Give one example of how Hitler broke the Concordat.",
-          "a": "He launched a campaign to remove crucifixes from schools / banned Catholic youth groups / arrested priests",
-          "options": [
-            "He launched a campaign to remove crucifixes from schools / banned Catholic youth groups / arrested priests",
-            "He completely banned Catholicism and forced everyone to become Protestant",
-            "He forced Catholic priests to wear the swastika during Mass",
-            "He ordered the Pope to be arrested during a visit to Berlin"
-          ]
-        },
-        {
-          "q": "What was the title of the angry letter the Pope had smuggled into Germany and read out in 1937?",
-          "a": "'Mit brennender Sorge' / With Burning Concern",
-          "options": [
-            "'Mein Kampf' / My Struggle",
-            "'Dolchstoßlegende' / Stab-in-the-back myth",
-            "'Mit brennender Sorge' / With Burning Concern",
-            "'Glaube und Schönheit' / Faith and Beauty"
-          ]
-        },
-        {
-          "q": "What was the name of the official, Nazified Protestant church set up by the government?",
-          "a": "The Reich Church",
-          "options": [
-            "The Confessional Church",
-            "The German Catholic League",
-            "The People's Church",
-            "The Reich Church"
-          ]
-        },
-        {
-          "q": "Who was appointed as the 'Reich Bishop' to lead the Nazified Protestant church?",
-          "a": "Ludwig Müller",
-          "options": [
-            "Hanns Kerrl",
-            "Martin Niemöller",
-            "Dietrich Bonhoeffer",
-            "Ludwig Müller"
-          ]
-        },
-        {
-          "q": "What did members of the Reich Church proudly call themselves?",
-          "a": "'German Christians'",
-          "options": [
-            "'The Pure Christians'",
-            "'Hitler's Flock'",
-            "'German Christians'",
-            "'Aryan Believers'"
-          ]
-        },
-        {
+          "stage": 4,
+          "question": "What was the name of the illegal, breakaway Protestant church set up in opposition to the Nazis?",
           "q": "What was the name of the illegal, breakaway Protestant church set up in opposition to the Nazis?",
-          "a": "The Confessional Church",
           "options": [
             "The Reich Church",
-            "The Confessional Church",
             "The Edelweiss Church",
+            "The Confessional Church",
             "The Free German Church"
-          ]
+          ],
+          "answer": "The Confessional Church",
+          "a": "The Confessional Church",
+          "explanation": "In return, the Nazi government guaranteed full religious freedom and made solemn promises that Catholic Church autonomy promised, specifically protecting church schools, youth organizations, and charitable foundations."
         },
         {
-          "q": "Name one of the key leaders of the Confessional Church who opposed the Nazis.",
-          "a": "Martin Niemöller or Dietrich Bonhoeffer",
+          "stage": 4,
+          "question": "How did Hitler almost immediately break the guarantees promised to the Vatican in the July 1933 Concordat?",
+          "q": "How did Hitler almost immediately break the guarantees promised to the Vatican in the July 1933 Concordat?",
           "options": [
-            "Martin Niemöller or Dietrich Bonhoeffer",
-            "Hanns Kerrl",
+            "Appointing Pope Pius XI as Reich Bishop of Berlin",
+            "Forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms",
+            "Forcing Catholic priests to join the Confessional Church",
+            "Restoring the Catholic Centre Party to the Reichstag"
+          ],
+          "answer": "Forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms",
+          "a": "Forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms",
+          "explanation": "After securing the dissolution of the Catholic Centre Party through the 1933 Concordat, the Nazis broke their word by shutting Catholic youth clubs and harassing priests."
+        },
+        {
+          "stage": 5,
+          "question": "Name the first concentration camp, opened in Germany in 1933.",
+          "q": "Name the first concentration camp, opened in Germany in 1933.",
+          "options": [
+            "Dachau",
+            "Auschwitz",
+            "Buchenwald",
+            "Treblinka"
+          ],
+          "answer": "Dachau",
+          "a": "Dachau",
+          "explanation": "The Gestapo retaliated swiftly, arresting over eight hundred pastors and confining Niemöller in Dachau concentration camp until 1945."
+        },
+        {
+          "stage": 5,
+          "question": "Which Protestant pastor founded the Confessional Church and the Pastors' Emergency League to oppose Nazi control?",
+          "q": "Which Protestant pastor founded the Confessional Church and the Pastors' Emergency League to oppose Nazi control?",
+          "options": [
             "Ludwig Müller",
-            "Bernhard Rust"
-          ]
+            "Bernhard Rust",
+            "Alfred Rosenberg",
+            "Martin Niemöller"
+          ],
+          "answer": "Martin Niemöller",
+          "a": "Martin Niemöller",
+          "explanation": "Pastor Martin Niemöller established the Pastors' Emergency League and the Confessional Church, resisting the Nazification of Christianity."
+        },
+        {
+          "stage": 5,
+          "question": "Who was appointed as the 'Reich Bishop' to lead the Nazified Protestant church?",
+          "q": "Who was appointed as the 'Reich Bishop' to lead the Nazified Protestant church?",
+          "options": [
+            "Hanns Kerrl",
+            "Martin Niemöller",
+            "Ludwig Müller",
+            "Dietrich Bonhoeffer"
+          ],
+          "answer": "Ludwig Müller",
+          "a": "Ludwig Müller",
+          "explanation": "Germany’s forty million Protestants were initially targeted for state coordination into a unified Protestant Reich Church, led by Hitler’s handpicked Reich Bishop Ludwig Müller."
+        },
+        {
+          "stage": 5,
+          "question": "What did members of the Reich Church proudly call themselves?",
+          "q": "What did members of the Reich Church proudly call themselves?",
+          "options": [
+            "'The Pure Christians'",
+            "'German Christians'",
+            "'Hitler's Flock'",
+            "'Aryan Believers'"
+          ],
+          "answer": "'German Christians'",
+          "a": "'German Christians'",
+          "explanation": "Supported by the fanatical \"German Christians\" movement, Müller attempted to Nazify the church, removing the Jewish Old Testament from scriptures, demanding the dismissal of non-Aryan clergy, and placing swastika flags alongside Christian crucifixes on church altars."
         }
       ],
       "utility_starters": null,
@@ -15633,9 +16491,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Terror apparatus was consolidated under <strong>Heinrich Himmler SS</strong>, whose elite <strong>Schutzstaffel blackshirts</strong> and Reinhard Heydrich's pervasive <strong>SD intelligence security</strong> network monitored potential dissenters across society.",
-          "heading": "The SS & Heinrich Himmler’s Terror Empire",
+          "heading": "How did Heinrich Himmler transform the SS into a vast machinery of racial terror?",
           "date": "1933–1939",
-          "step": 1
+          "step": 1,
+          "question": "How did Heinrich Himmler transform the SS into a vast machinery of racial terror?",
+          "questionHeading": "How did Heinrich Himmler transform the SS into a vast machinery of racial terror?",
+          "prose_hash": "ef043ed70f"
         },
         {
           "stage": 2,
@@ -15667,9 +16528,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Citizens were terrorized by the ruthless <strong>Gestapo secret police</strong>, who bypassed judicial courts by consigning political suspects to <strong>indefinite protective custody</strong> within the brutal <strong>Dachau concentration camp (1933)</strong> system.",
-          "heading": "The Gestapo & Informer Network",
+          "heading": "How did the Gestapo, Dachau camp, and protective custody enforce terror?",
           "date": "1933–1939",
-          "step": 2
+          "step": 2,
+          "question": "How did the Gestapo, Dachau camp, and protective custody enforce terror?",
+          "questionHeading": "How did the Gestapo, Dachau camp, and protective custody enforce terror?",
+          "prose_hash": "09cb981a33"
         },
         {
           "stage": 3,
@@ -15701,9 +16565,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "The regime subverted the legal profession through the compulsory <strong>National Socialist League Jurists</strong> and established the notorious <strong>People's Court (Roland Freisler)</strong>, ensuring traditional <strong>judicial independence abolished</strong> in favour of ideological loyalty.",
-          "heading": "Nazifying the Legal System & People’s Court",
+          "heading": "How did the abolition of independent courts undermine the rule of law?",
           "date": "1933–1934",
-          "step": 3
+          "step": 3,
+          "question": "How did the abolition of independent courts undermine the rule of law?",
+          "questionHeading": "How did the abolition of independent courts undermine the rule of law?",
+          "prose_hash": "4fc5df5be6"
         },
         {
           "stage": 4,
@@ -15735,9 +16602,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Hitler neutralized Catholic political opposition by signing the <strong>Reichskonkordat treaty (1933)</strong> with the Vatican, under which <strong>Catholic Church autonomy promised</strong> in worship while the Catholic <strong>Center Party dissolved</strong> itself.",
-          "heading": "The Catholic Concordat & Papal Resistance",
+          "heading": "Why did the regime violate the Concordat and persecute Catholic youth groups?",
           "date": "Jul 1933",
-          "step": 4
+          "step": 4,
+          "question": "Why did the regime violate the Concordat and persecute Catholic youth groups?",
+          "questionHeading": "Why did the regime violate the Concordat and persecute Catholic youth groups?",
+          "prose_hash": "75f3840af9"
         },
         {
           "stage": 5,
@@ -15769,9 +16639,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Although the regime established a unified, swastika-adorned <strong>Protestant Reich Church</strong> under Ludwig Müller, courageous religious leaders led by <strong>Martin Niemöller opposition</strong> formed the rival <strong>Confessional Church resistance</strong> to defend Christian doctrine.",
-          "heading": "The Reich Church & The Confessional Resistance",
+          "heading": "Why did the creation of the Reich Church spark theological rebellion?",
           "date": "1933–1937",
-          "step": 5
+          "step": 5,
+          "question": "Why did the creation of the Reich Church spark theological rebellion?",
+          "questionHeading": "Why did the creation of the Reich Church spark theological rebellion?",
+          "prose_hash": "f9d97324bd"
         }
       ],
       "causal_domino_spine": {
@@ -15788,7 +16661,8 @@ window.unitData = {
             "trigger": "Himmler expanded the SS into an elite 240,000-man racial police force, opening Dachau in March 1933 to detain political prisoners indefinitely in protective custody.",
             "desc": "Himmler expanded the SS into an elite 240,000-man racial police force, opening Dachau in March 1933 to detain political prisoners indefinitely in protective custody.",
             "connective": "Created a permanent concentration camp apparatus operated outside the jurisdiction of civil courts.",
-            "question": "How did Heinrich Himmler transform the SS into a vast machinery of racial terror?"
+            "question": "How did Heinrich Himmler transform the SS into a vast machinery of racial terror?",
+            "prose_hash": "ef043ed70f"
           },
           {
             "step": 2,
@@ -15800,7 +16674,8 @@ window.unitData = {
             "trigger": "The Gestapo operated with legal immunity, relying on voluntary denunciations from neighbors and colleagues to police a population of 70 million with only 32,000 agents.",
             "desc": "The Gestapo operated with legal immunity, relying on voluntary denunciations from neighbors and colleagues to police a population of 70 million with only 32,000 agents.",
             "connective": "Induced an atmosphere of pervasive paranoia that paralyzed spontaneous political resistance.",
-            "question": "Why did voluntary civilian denunciations prove to be the most vital intelligence source?"
+            "question": "How did the Gestapo, Dachau camp, and protective custody enforce terror?",
+            "prose_hash": "09cb981a33"
           },
           {
             "step": 3,
@@ -15812,7 +16687,8 @@ window.unitData = {
             "trigger": "Judges joined the Nazi Jurists League, swearing loyalty to Hitler, while the People’s Court was established in 1934 to execute political dissidents without juries.",
             "desc": "Judges joined the Nazi Jurists League, swearing loyalty to Hitler, while the People’s Court was established in 1934 to execute political dissidents without juries.",
             "connective": "Subverted the rule of law into an instrument of state terror and judicial execution.",
-            "question": "How did the abolition of independent courts undermine the rule of law?"
+            "question": "How did the abolition of independent courts undermine the rule of law?",
+            "prose_hash": "4fc5df5be6"
           },
           {
             "step": 4,
@@ -15824,7 +16700,8 @@ window.unitData = {
             "trigger": "Hitler signed the Concordat with the Vatican, then breached it by harassing youth groups, prompting Pope Pius XI’s 1937 encyclical Mit brennender Sorge.",
             "desc": "Hitler signed the Concordat with the Vatican, then breached it by harassing youth groups, prompting Pope Pius XI’s 1937 encyclical Mit brennender Sorge.",
             "connective": "Provoked moral resistance from Catholic pulpits while triggering retaliatory Gestapo arrests of outspoken clergy.",
-            "question": "Why did the regime violate the Concordat and persecute Catholic youth groups?"
+            "question": "Why did the regime violate the Concordat and persecute Catholic youth groups?",
+            "prose_hash": "75f3840af9"
           },
           {
             "step": 5,
@@ -15836,7 +16713,8 @@ window.unitData = {
             "trigger": "The pro-Nazi Reich Church Nazified Protestantism, provoking Pastor Martin Niemöller to establish the Confessional Church before being imprisoned at Sachsenhausen.",
             "desc": "The pro-Nazi Reich Church Nazified Protestantism, provoking Pastor Martin Niemöller to establish the Confessional Church before being imprisoned at Sachsenhausen.",
             "connective": "Demonstrated principled theological defiance, exposing the limits of Nazi ideological conformity among devout Christians.",
-            "question": "Why did the creation of the Reich Church spark theological rebellion?"
+            "question": "Why did the creation of the Reich Church spark theological rebellion?",
+            "prose_hash": "f9d97324bd"
           }
         ]
       },
@@ -16101,48 +16979,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Who was appointed Reichsführer-SS and Chief of the German Police in the 1930s?",
-            "answer": "Heinrich Himmler."
+            "stage": 1,
+            "question": "Who was the leader of the SS, who eventually took control of all police forces in Germany?",
+            "answer": "Heinrich Himmler",
+            "explanation": "The supreme instrument of Nazi terror was the Schutzstaffel, led by Reichsführer Heinrich Himmler SS."
           },
           {
-            "question": "What was the Gestapo and what was its primary role in Nazi Germany?",
-            "answer": "The Secret State Police (Geheime Staatspolizei), responsible for rooting out political dissent and enemies of the state."
+            "stage": 2,
+            "question": "What secret state police force operated out of Prinz-Albrecht-Straße in Berlin using widespread citizen denunciations?",
+            "answer": "The Gestapo",
+            "explanation": "The Gestapo (Geheime Staatspolizei), based at Prinz-Albrecht-Straße, relied heavily on voluntary citizen denunciations to police the population."
           },
           {
-            "question": "Where was the first Nazi concentration camp opened in March 1933 for political prisoners?",
-            "answer": "Dachau, near Munich."
+            "stage": 3,
+            "question": "What specialized court was established by the regime in 1934 to try political treason cases outside normal judicial standards?",
+            "answer": "The People's Court (Volksgerichtshof)",
+            "explanation": "In 1934, Hitler established the People's Court (Volksgerichtshof) under fanatical judges to dispense swift verdicts for treason."
           },
           {
-            "question": "What special court was set up in 1934 to try political treason cases without juries?",
-            "answer": "The People's Court (Volksgerichtshof)."
+            "stage": 4,
+            "question": "In what month and year did Hitler sign the Concordat with the Catholic Church?",
+            "answer": "July 1933",
+            "explanation": "In July 1933, seeking international diplomatic prestige, Hitler signed the historic Reichskonkordat treaty (1933) with the Vatican, negotiated by Franz von Papen."
           },
           {
-            "question": "What agreement did Hitler sign with the Vatican in July 1933?",
-            "answer": "The Concordat (Reichskonkordat), promising religious freedom for Catholics in return for political neutrality."
+            "stage": 5,
+            "question": "Name the first concentration camp, opened in Germany in 1933.",
+            "answer": "Dachau",
+            "explanation": "The Gestapo retaliated swiftly, arresting over eight hundred pastors and confining Niemöller in Dachau concentration camp until 1945."
           },
           {
-            "question": "Which Protestant pastor led the Confessing Church in opposition to the Nazi Reich Church?",
-            "answer": "Pastor Martin Niemöller."
+            "stage": 1,
+            "question": "What was the name of the official, Nazified Protestant church set up by the government?",
+            "answer": "The Reich Church",
+            "explanation": "The supreme instrument of Nazi terror was the Schutzstaffel, led by Reichsführer Heinrich Himmler SS."
           },
           {
-            "question": "What law gave Hitler dictatorial powers to enact laws without the Reichstag in March 1933?",
-            "answer": "The Enabling Act."
+            "stage": 2,
+            "question": "What was the name of the new court set up in 1934 to hear cases of treason without a jury?",
+            "answer": "The People's Court",
+            "explanation": "The Gestapo operated entirely above judicial review; no German court held legal authority to overturn its arrests or investigate its detention facilities."
           },
           {
-            "question": "What violent purge took place in June 1934 against Ernst Röhm and the SA?",
-            "answer": "The Night of the Long Knives."
+            "stage": 3,
+            "question": "What was the name of the compulsory organisation that all German judges were forced to join?",
+            "answer": "The National Socialist League for the Maintenance of the Law",
+            "explanation": "All judges and lawyers were compelled to join the National Socialist League Jurists, swearing a formal oath to interpret statutes according to Nazi racial philosophy."
           },
           {
-            "question": "What paramilitary group, nicknamed the 'Brownshirts' and led by Ernst Röhm, protected Nazi meetings and attacked opponents?",
-            "answer": "The SA (Sturmabteilung / Stormtroopers)."
+            "stage": 4,
+            "question": "What 1933 agreement was signed between Nazi Germany and the Vatican, negotiated by Franz von Papen?",
+            "answer": "The Concordat (Reichskonkordat)",
+            "explanation": "In July 1933, the regime concluded the Reichskonkordat with the Vatican, guaranteeing religious freedom in exchange for Catholic political withdrawal."
           },
           {
-            "question": "How did the 1923 hyperinflation crisis affect Germany's middle classes?",
-            "answer": "It wiped out their life savings, bank deposits, and war pensions, permanently alienating them from the Weimar democracy."
+            "stage": 5,
+            "question": "Which Protestant pastor founded the Confessional Church and the Pastors' Emergency League to oppose Nazi control?",
+            "answer": "Martin Niemöller",
+            "explanation": "Pastor Martin Niemöller established the Pastors' Emergency League and the Confessional Church, resisting the Nazification of Christianity."
           }
         ]
       },
@@ -16195,8 +17092,8 @@ window.unitData = {
         {
           "title": "The Propaganda Machine: Joseph Goebbels and the Reich Chamber of Culture (1933)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> In March 1933, Hitler established the **Reich Ministry of Propaganda**, appointing thirty-five-year-old Dr. Joseph Goebbels as its minister. Goebbels understood that terror alone could not secure lasting power; public attitudes had to be systematically coordinated into enthusiastic national conformity. Operating from Berlin, he directed all aspects of mass communication to ensure the entire population supported the Nazi state with devotion.\n\n<span class=\"para-ref\">[1.2]</span> Through tyrannical **Joseph Goebbels control**, cultural expression was placed under the Reich Chamber of Culture. Divided into seven branches—press, radio, literature, fine arts, music, theater, and cinema—membership was mandatory for all artists and journalists. Jews, modernists, and socialists were banned from working, enforcing **total media censorship** and ensuring that every artistic creation strictly reinforced Nazi racial and nationalist ideology.",
-          "content": "<span class=\"para-ref\">[1.1]</span> In March 1933, Hitler established the **Reich Ministry of Propaganda**, appointing thirty-five-year-old Dr. Joseph Goebbels as its minister. Goebbels understood that terror alone could not secure lasting power; public attitudes had to be systematically coordinated into enthusiastic national conformity. Operating from Berlin, he directed all aspects of mass communication to ensure the entire population supported the Nazi state with devotion.\n\n<span class=\"para-ref\">[1.2]</span> Through tyrannical **Joseph Goebbels control**, cultural expression was placed under the Reich Chamber of Culture. Divided into seven branches—press, radio, literature, fine arts, music, theater, and cinema—membership was mandatory for all artists and journalists. Jews, modernists, and socialists were banned from working, enforcing **total media censorship** and ensuring that every artistic creation strictly reinforced Nazi racial and nationalist ideology.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In March 1933, Hitler set up the Reich Ministry of Public Enlightenment and Propaganda under 35-year-old Dr **Joseph Goebbels**. Knowing police terror alone could not win lasting loyalty, Goebbels directed press, radio, and film from Berlin to coordinate public opinion into enthusiastic national conformity.\n\n<span class=\"para-ref\">[1.2]</span> Goebbels placed all cultural expression under **the Reich Chamber of Culture**, divided into **seven branches** covering press, radio, literature, art, music, theatre, and cinema. Every artist and journalist had to join; **Jews, modernists, and socialists** were banned from working under strict media censorship.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In March 1933, Hitler set up the Reich Ministry of Public Enlightenment and Propaganda under 35-year-old Dr **Joseph Goebbels**. Knowing police terror alone could not win lasting loyalty, Goebbels directed press, radio, and film from Berlin to coordinate public opinion into enthusiastic national conformity.\n\n<span class=\"para-ref\">[1.2]</span> Goebbels placed all cultural expression under **the Reich Chamber of Culture**, divided into **seven branches** covering press, radio, literature, art, music, theatre, and cinema. Every artist and journalist had to join; **Jews, modernists, and socialists** were banned from working under strict media censorship.",
           "image": "/images/weimar_individuals/joseph_goebbels.jpg",
           "image_alt": "Dr Joseph Goebbels, Reich Minister of Public Enlightenment and Propaganda from 1933 to 1945",
           "caption": "Dr Joseph Goebbels (1897–1945): As Minister of Propaganda, Goebbels subordinated all German media, literature, radio, theatre, and the arts to the Reich Chamber of Culture, insisting that propaganda was an art form whose purpose was the total ideological conquest of the nation.",
@@ -16256,8 +17153,8 @@ window.unitData = {
         {
           "title": "The People's Receiver: Radio Indoctrination and the Controlled Press (1933–1939)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> Goebbels recognized radio as the ultimate instrument for modern mass indoctrination. In 1933, the state sponsored the **Volksempfänger cheap radio**, mass-producing sets priced at just seventy-six marks so ordinary German working families could afford them. The radios were engineered with limited reception capabilities, successfully preventing listeners from picking up foreign news broadcasts while piping Hitler’s major speeches directly into living rooms.\n\n<span class=\"para-ref\">[2.2]</span> By 1939, rapid distribution achieved over **70% household radio ownership**, representing the highest rate of radio access anywhere in Europe. The regime backed this broadcast monopoly with strict **foreign broadcast bans**, making listening to foreign radio stations a criminal offense punishable by penal imprisonment, while municipal loudspeakers in factories and cafes broadcast Nazi propaganda to captive public audiences.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Goebbels recognized radio as the ultimate instrument for modern mass indoctrination. In 1933, the state sponsored the **Volksempfänger cheap radio**, mass-producing sets priced at just seventy-six marks so ordinary German working families could afford them. The radios were engineered with limited reception capabilities, successfully preventing listeners from picking up foreign news broadcasts while piping Hitler’s major speeches directly into living rooms.\n\n<span class=\"para-ref\">[2.2]</span> By 1939, rapid distribution achieved over **70% household radio ownership**, representing the highest rate of radio access anywhere in Europe. The regime backed this broadcast monopoly with strict **foreign broadcast bans**, making listening to foreign radio stations a criminal offense punishable by penal imprisonment, while municipal loudspeakers in factories and cafes broadcast Nazi propaganda to captive public audiences.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Goebbels saw radio as his sharpest weapon for mass indoctrination. In 1933, state-backed factories mass-produced the affordable 76-mark **Volksempfänger (People's Receiver)** for working families. Built with **limited reception capabilities and strict foreign broadcast bans**, it piped Hitler’s speeches straight into living rooms while blocking foreign stations.\n\n<span class=\"para-ref\">[2.2]</span> By 1939, rapid sales achieved **over 70% household radio ownership** — the highest rate anywhere in Europe. Tuning in to foreign stations like the BBC became a crime punishable by prison, while 6,000 public loudspeakers broadcast Nazi speeches across factories, squares, and cafés.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Goebbels saw radio as his sharpest weapon for mass indoctrination. In 1933, state-backed factories mass-produced the affordable 76-mark **Volksempfänger (People's Receiver)** for working families. Built with **limited reception capabilities and strict foreign broadcast bans**, it piped Hitler’s speeches straight into living rooms while blocking foreign stations.\n\n<span class=\"para-ref\">[2.2]</span> By 1939, rapid sales achieved **over 70% household radio ownership** — the highest rate anywhere in Europe. Tuning in to foreign stations like the BBC became a crime punishable by prison, while 6,000 public loudspeakers broadcast Nazi speeches across factories, squares, and cafés.",
           "sources": [
             {
               "id": "weimar_l11_source_a",
@@ -16315,8 +17212,8 @@ window.unitData = {
         {
           "title": "Cathedrals of Light: The Nuremberg Rallies and the Cult of the Führer (1933–1938)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> The supreme theatrical expression of Nazi propaganda occurred at the **Annual Nuremberg Rallies**, staged every September on the Zeppelin Field grounds. Masterminded by architect Albert Speer, these week-long spectacles gathered up to five hundred thousand participants in geometrically rigid formations, displaying martial banners, marching columns, and soaring eagles to project an overwhelming image of unstoppable national power and unity.\n\n<span class=\"para-ref\">[3.2]</span> Speer created the iconic **Zeppelin Field cathedral of light** by encircling the arena with 152 anti-aircraft searchlights beaming pillars of blue light 25,000 feet into the night sky. This quasi-religious spectacle was immortalized in celebrated **Leni Riefenstahl propaganda films** such as *Triumph of the Will*, which transformed Hitler into a messianic savior demanding absolute personal obedience.",
-          "content": "<span class=\"para-ref\">[3.1]</span> The supreme theatrical expression of Nazi propaganda occurred at the **Annual Nuremberg Rallies**, staged every September on the Zeppelin Field grounds. Masterminded by architect Albert Speer, these week-long spectacles gathered up to five hundred thousand participants in geometrically rigid formations, displaying martial banners, marching columns, and soaring eagles to project an overwhelming image of unstoppable national power and unity.\n\n<span class=\"para-ref\">[3.2]</span> Speer created the iconic **Zeppelin Field cathedral of light** by encircling the arena with 152 anti-aircraft searchlights beaming pillars of blue light 25,000 feet into the night sky. This quasi-religious spectacle was immortalized in celebrated **Leni Riefenstahl propaganda films** such as *Triumph of the Will*, which transformed Hitler into a messianic savior demanding absolute personal obedience.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Nazi theatrical spectacle peaked every September at the week-long party rallies in **Nuremberg**. Masterminded by architect **Albert Speer**, up to 500,000 uniformed members marched with banners and eagles across Zeppelin Field. Their tight columns projected an overwhelming image of unity and national strength.\n\n<span class=\"para-ref\">[3.2]</span> Speer created his famous \"Cathedral of Light\" by **encircling Zeppelin Field with 152 anti-aircraft searchlights** beaming blue pillars 25,000 feet into the night sky. Film director **Leni Riefenstahl** captured these rallies in *Triumph of the Will*, presenting Hitler to cinema audiences as Germany's saviour.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Nazi theatrical spectacle peaked every September at the week-long party rallies in **Nuremberg**. Masterminded by architect **Albert Speer**, up to 500,000 uniformed members marched with banners and eagles across Zeppelin Field. Their tight columns projected an overwhelming image of unity and national strength.\n\n<span class=\"para-ref\">[3.2]</span> Speer created his famous \"Cathedral of Light\" by **encircling Zeppelin Field with 152 anti-aircraft searchlights** beaming blue pillars 25,000 feet into the night sky. Film director **Leni Riefenstahl** captured these rallies in *Triumph of the Will*, presenting Hitler to cinema audiences as Germany's saviour.",
           "sources": [
             {
               "id": "weimar_l11_source_c",
@@ -16376,8 +17273,8 @@ window.unitData = {
         {
           "title": "A Facade of Normalcy: The 1936 Berlin Olympic Games and Jesse Owens (Aug 1936)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> In August 1936, the Nazi regime utilized the prestigious **Berlin Olympics (1936)** as a massive international public relations triumph. Goebbels constructed a colossal 100,000-seat stadium, pioneering live television coverage to project Germany as a peaceful, prosperous, and modern nation. To deceive foreign visitors, anti-Semitic street signage was removed, anti-Jewish violence was paused, and jazz music was permitted in Berlin nightclubs.\n\n<span class=\"para-ref\">[4.2]</span> Intended as an undeniable **Nazi athletic showcase** of Aryan biological superiority, Germany topped the medal table with thirty-three gold medals. However, the racial myth was publicly punctured by magnificent **Jesse Owens track victories**. The African American sprinting superstar captured four Olympic gold medals, setting world records and winning thunderous applause from German crowds, undermining Hitler’s theories of racial supremacy before the world.",
-          "content": "<span class=\"para-ref\">[4.1]</span> In August 1936, the Nazi regime utilized the prestigious **Berlin Olympics (1936)** as a massive international public relations triumph. Goebbels constructed a colossal 100,000-seat stadium, pioneering live television coverage to project Germany as a peaceful, prosperous, and modern nation. To deceive foreign visitors, anti-Semitic street signage was removed, anti-Jewish violence was paused, and jazz music was permitted in Berlin nightclubs.\n\n<span class=\"para-ref\">[4.2]</span> Intended as an undeniable **Nazi athletic showcase** of Aryan biological superiority, Germany topped the medal table with thirty-three gold medals. However, the racial myth was publicly punctured by magnificent **Jesse Owens track victories**. The African American sprinting superstar captured four Olympic gold medals, setting world records and winning thunderous applause from German crowds, undermining Hitler’s theories of racial supremacy before the world.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In August **1936**, the regime used the Berlin Olympic Games as an international showcase inside a giant 100,000-seat stadium with live television cameras. To deceive foreign visitors and reporters, Goebbels hid anti-Jewish street signs, paused SA street violence, and briefly allowed jazz in Berlin nightclubs.\n\n<span class=\"para-ref\">[4.2]</span> Germany topped the Olympic table with **33 gold medals**, hailed by Nazi papers as proof of Aryan strength. Yet African American sprinter **Jesse Owens** publicly punctured Hitler’s racial claims before cheering Berlin crowds by winning four gold medals and breaking world track records.",
+          "content": "<span class=\"para-ref\">[4.1]</span> In August **1936**, the regime used the Berlin Olympic Games as an international showcase inside a giant 100,000-seat stadium with live television cameras. To deceive foreign visitors and reporters, Goebbels hid anti-Jewish street signs, paused SA street violence, and briefly allowed jazz in Berlin nightclubs.\n\n<span class=\"para-ref\">[4.2]</span> Germany topped the Olympic table with **33 gold medals**, hailed by Nazi papers as proof of Aryan strength. Yet African American sprinter **Jesse Owens** publicly punctured Hitler’s racial claims before cheering Berlin crowds by winning four gold medals and breaking world track records.",
           "sources": [
             {
               "id": "weimar_l11_source_olympics1936",
@@ -16433,8 +17330,8 @@ window.unitData = {
         {
           "title": "Purging the Arts: Book Burnings, Degenerate Art and Monumental Architecture (1933–1937)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Nazi cultural policy launched an unsparing war against Weimar artistic experimentation. In May 1933, university students staged symbolic **1933 Book burnings** across Germany, hurling twenty thousand works by Jewish, socialist, and pacifist writers—including Albert Einstein, Sigmund Freud, and Karl Marx—into public bonfires. Literature was strictly censored, compelling authors to write romanticized stories extolling peasant virtue and heroic military sacrifice.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, Goebbels enforced the famous **'Degenerate Art' ban**, confiscating thousands of modernist masterpieces by Otto Dix, Paul Klee, and Ernst and mocking them in a Munich exhibition. In architecture, modernist Bauhaus styles were outlawed, replaced by colossal **Albert Speer neoclassical architecture** featuring monumental granite columns and imposing porticos, designed to intimidate individual citizens and express the eternal power of the Reich.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Nazi cultural policy launched an unsparing war against Weimar artistic experimentation. In May 1933, university students staged symbolic **1933 Book burnings** across Germany, hurling twenty thousand works by Jewish, socialist, and pacifist writers—including Albert Einstein, Sigmund Freud, and Karl Marx—into public bonfires. Literature was strictly censored, compelling authors to write romanticized stories extolling peasant virtue and heroic military sacrifice.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, Goebbels enforced the famous **'Degenerate Art' ban**, confiscating thousands of modernist masterpieces by Otto Dix, Paul Klee, and Ernst and mocking them in a Munich exhibition. In architecture, modernist Bauhaus styles were outlawed, replaced by colossal **Albert Speer neoclassical architecture** featuring monumental granite columns and imposing porticos, designed to intimidate individual citizens and express the eternal power of the Reich.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Meanwhile, Nazi censors waged war on Weimar artistic freedom. In May 1933, university students staged **massive book burnings of works by Jewish and communist authors** across Germany. Crowds hurled 20,000 books by writers like **Albert Einstein and Sigmund Freud** and Karl Marx onto public bonfires.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, Goebbels confiscated thousands of modernist paintings by Otto Dix and Paul Klee to mock in a Munich exhibition of **Degenerate Art** (*Entartete Kunst*). Modern Bauhaus design was outlawed too, replaced by Speer’s giant **monumental neoclassical architecture** built in granite and stone to project eternal Reich power.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Meanwhile, Nazi censors waged war on Weimar artistic freedom. In May 1933, university students staged **massive book burnings of works by Jewish and communist authors** across Germany. Crowds hurled 20,000 books by writers like **Albert Einstein and Sigmund Freud** and Karl Marx onto public bonfires.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, Goebbels confiscated thousands of modernist paintings by Otto Dix and Paul Klee to mock in a Munich exhibition of **Degenerate Art** (*Entartete Kunst*). Modern Bauhaus design was outlawed too, replaced by Speer’s giant **monumental neoclassical architecture** built in granite and stone to project eternal Reich power.",
           "sources": [
             {
               "id": "weimar_l11_source_d",
@@ -16492,210 +17389,284 @@ window.unitData = {
       ],
       "quiz": [
         {
+          "stage": 1,
+          "question": "Who was appointed as the Minister of Public Enlightenment and Propaganda in 1933?",
           "q": "Who was appointed as the Minister of Public Enlightenment and Propaganda in 1933?",
-          "a": "Joseph Goebbels",
           "options": [
-            "Joseph Goebbels",
             "Hermann Goering",
             "Albert Speer",
-            "Heinrich Himmler"
-          ]
+            "Heinrich Himmler",
+            "Joseph Goebbels"
+          ],
+          "answer": "Joseph Goebbels",
+          "a": "Joseph Goebbels",
+          "explanation": "Joseph Goebbels as its minister."
         },
         {
-          "q": "What was the 'Editor's Law' of 1933?",
-          "a": "A law making newspaper editors personally responsible for anything printed in their papers",
+          "stage": 1,
+          "question": "What organisation did all artists, writers, and musicians have to join to get work?",
+          "q": "What organisation did all artists, writers, and musicians have to join to get work?",
           "options": [
-            "A law making it illegal to own a printing press",
-            "A law shutting down all newspapers except the Nazi daily paper",
-            "A law making newspaper editors personally responsible for anything printed in their papers",
-            "A law forcing editors to write positive reviews of Nazi films"
-          ]
-        },
-        {
-          "q": "What was the name of the Nazi publishing house that bought up 82% of all German newspapers by 1939?",
-          "a": "The Eher Verlag",
-          "options": [
-            "Der Stürmer",
-            "The Volksempfänger",
-            "The Reich Chamber of Press",
+            "The German Labour Front",
+            "The National Socialist Teachers' League",
+            "The Reich Chamber of Culture",
             "The Eher Verlag"
-          ]
+          ],
+          "answer": "The Reich Chamber of Culture",
+          "a": "The Reich Chamber of Culture",
+          "explanation": "Through tyrannical Joseph Goebbels control, cultural expression was placed under the Reich Chamber of Culture."
         },
         {
-          "q": "What happened in Berlin and other university towns in May 1933?",
-          "a": "Massive book burnings of works by Jewish and communist authors",
+          "stage": 1,
+          "question": "Into how many cultural branches—covering press, radio, literature, fine arts, music, theater, and cinema—was the Reich Chamber of Culture divided?",
+          "q": "Into how many cultural branches—covering press, radio, literature, fine arts, music, theater, and cinema—was the Reich Chamber of Culture divided?",
           "options": [
-            "A huge strike by university professors protesting the Nazis",
-            "Massive book burnings of works by Jewish and communist authors",
-            "The first compulsory Hitler Youth rallies",
-            "Jewish students were banned from attending university classes"
-          ]
+            "Three branches",
+            "Seven branches",
+            "Twelve branches",
+            "Twenty-five branches"
+          ],
+          "answer": "Seven branches",
+          "a": "Seven branches",
+          "explanation": "Dividing the Reich Chamber of Culture into seven mandatory branches allowed Goebbels to enforce total censorship across every medium of German cultural life."
         },
         {
+          "stage": 1,
+          "question": "Which groups of artists, writers, and journalists were barred from joining the Reich Chamber of Culture and banned from working?",
+          "q": "Which groups of artists, writers, and journalists were barred from joining the Reich Chamber of Culture and banned from working?",
+          "options": [
+            "Jews, modernists, and socialists",
+            "Prussian army veterans and rural farmers",
+            "Classical composers and landscape painters",
+            "Neoclassical architects and realist sculptors"
+          ],
+          "answer": "Jews, modernists, and socialists",
+          "a": "Jews, modernists, and socialists",
+          "explanation": "Mandatory Reich Chamber of Culture membership excluded Jews, modernists, and socialists from employment so all cultural output served Nazi ideology."
+        },
+        {
+          "stage": 2,
+          "question": "What was the German name for the cheap, mass-produced 'People's Receiver' radio?",
           "q": "What was the German name for the cheap, mass-produced 'People's Receiver' radio?",
-          "a": "Volksempfänger",
           "options": [
-            "Volksempfänger",
             "Gleichschaltung",
             "Eher Verlag",
-            "Lebensraum"
-          ]
+            "Lebensraum",
+            "Volksempfänger"
+          ],
+          "answer": "Volksempfänger",
+          "a": "Volksempfänger",
+          "explanation": "In 1933, the state sponsored the Volksempfänger cheap radio, mass-producing sets priced at just seventy-six marks so ordinary German working families could afford them."
         },
         {
-          "q": "Why were the Nazi radios deliberately designed with short range?",
-          "a": "So Germans could not pick up foreign broadcasts like the BBC",
-          "options": [
-            "To prevent people from communicating with the Edelweiss Pirates",
-            "Because cheap materials were used to keep the price down",
-            "So they would break quickly, forcing people to buy replacements",
-            "So Germans could not pick up foreign broadcasts like the BBC"
-          ]
-        },
-        {
+          "stage": 2,
           "question": "What cheap mass-produced radio receiver was promoted by Goebbels to bring Nazi propaganda into every German home?",
+          "q": "What cheap mass-produced radio receiver was promoted by Goebbels to bring Nazi propaganda into every German home?",
           "options": [
-            "The Volksempfänger (People's Receiver)",
             "The Telefunken Grand",
             "The Siemens Transistor",
+            "The Volksempfänger (People's Receiver)",
             "The Reich Broadcast Unit"
           ],
           "answer": "The Volksempfänger (People's Receiver)",
-          "explanation": "The Volksempfänger ('People’s Receiver') was heavily subsidised by the state, ensuring millions of German households received broadcast propaganda.",
-          "q": "What cheap mass-produced radio receiver was promoted by Goebbels to bring Nazi propaganda into every German home?",
-          "a": "The Volksempfänger (People's Receiver)"
+          "a": "The Volksempfänger (People's Receiver)",
+          "explanation": "The Volksempfänger ('People’s Receiver') was heavily subsidised by the state, ensuring millions of German households received broadcast propaganda."
         },
         {
+          "stage": 2,
+          "question": "What percentage of German households owned a radio by 1939, giving Nazi Germany the highest radio ownership rate in Europe?",
+          "q": "What percentage of German households owned a radio by 1939, giving Nazi Germany the highest radio ownership rate in Europe?",
+          "options": [
+            "Around 15% household radio ownership",
+            "Over 70% household radio ownership",
+            "Exactly 35% household radio ownership",
+            "Under 50% household radio ownership"
+          ],
+          "answer": "Over 70% household radio ownership",
+          "a": "Over 70% household radio ownership",
+          "explanation": "Subsidizing the 76-mark Volksempfänger pushed radio ownership past 70% of German households by 1939, piping Hitler's speeches directly into living rooms."
+        },
+        {
+          "stage": 2,
+          "question": "How did the Nazi regime stop German listeners from using radios to hear foreign news broadcasts?",
+          "q": "How did the Nazi regime stop German listeners from using radios to hear foreign news broadcasts?",
+          "options": [
+            "Limited reception capabilities and strict foreign broadcast bans",
+            "Shutting down all German radio transmitters at dusk",
+            "Restricting radio ownership solely to SS officers",
+            "Broadcasting exclusively in Morse code across cities"
+          ],
+          "answer": "Limited reception capabilities and strict foreign broadcast bans",
+          "a": "Limited reception capabilities and strict foreign broadcast bans",
+          "explanation": "Volksempfänger sets were engineered with short reception range while listening to foreign stations was made a criminal offence punishable by imprisonment."
+        },
+        {
+          "stage": 3,
+          "question": "In which city did the Nazis hold their massive, carefully choreographed annual rallies?",
           "q": "In which city did the Nazis hold their massive, carefully choreographed annual rallies?",
-          "a": "Nuremberg",
           "options": [
             "Munich",
-            "Nuremberg",
             "Weimar",
-            "Berlin"
-          ]
+            "Berlin",
+            "Nuremberg"
+          ],
+          "answer": "Nuremberg",
+          "a": "Nuremberg",
+          "explanation": "The supreme theatrical expression of Nazi propaganda occurred at the Annual Nuremberg Rallies, staged every September on the Zeppelin Field grounds."
         },
         {
+          "stage": 3,
+          "question": "Who was the architect who designed the 'Cathedral of Light' for the Nuremberg Rallies?",
           "q": "Who was the architect who designed the 'Cathedral of Light' for the Nuremberg Rallies?",
-          "a": "Albert Speer",
           "options": [
             "Heinrich Himmler",
             "Joseph Goebbels",
             "Albert Speer",
             "Walter Gropius"
-          ]
+          ],
+          "answer": "Albert Speer",
+          "a": "Albert Speer",
+          "explanation": "Masterminded by architect Albert Speer, these week-long spectacles gathered up to five hundred thousand participants in geometrically rigid formations, displaying martial banners, marching columns, and soaring eagles to project an overwhelming image of unstoppable national power and unity."
         },
         {
+          "stage": 3,
+          "question": "What was the name of the famous female film director who made 'Triumph of the Will'?",
           "q": "What was the name of the famous female film director who made 'Triumph of the Will'?",
-          "a": "Leni Riefenstahl",
           "options": [
-            "Leni Riefenstahl",
             "Gertrud Scholtz-Klink",
+            "Leni Riefenstahl",
             "Marlene Dietrich",
             "Judith Kerr"
-          ]
+          ],
+          "answer": "Leni Riefenstahl",
+          "a": "Leni Riefenstahl",
+          "explanation": "This quasi-religious spectacle was immortalized in celebrated Leni Riefenstahl propaganda films such as *Triumph of the Will*, which transformed Hitler into a messianic savior demanding absolute personal obedience."
         },
         {
-          "question": "Which African American athlete shattered Nazi racial theories by winning four gold medals at the 1936 Berlin Olympics?",
+          "stage": 3,
+          "question": "How did architect Albert Speer create his awe-inspiring 'Cathedral of Light' at the annual Nuremberg Rallies?",
+          "q": "How did architect Albert Speer create his awe-inspiring 'Cathedral of Light' at the annual Nuremberg Rallies?",
           "options": [
-            "Jesse Owens",
+            "Encircling Zeppelin Field with 152 anti-aircraft searchlights",
+            "Lighting twenty thousand bonfires around Nuremberg Castle",
+            "Projecting color films onto giant airships overhead",
+            "Floodlighting the Reichstag glass dome in Berlin"
+          ],
+          "answer": "Encircling Zeppelin Field with 152 anti-aircraft searchlights",
+          "a": "Encircling Zeppelin Field with 152 anti-aircraft searchlights",
+          "explanation": "Pointing 152 anti-aircraft searchlights 25,000 feet into the night sky around Zeppelin Field created a quasi-religious spectacle glorifying Hitler."
+        },
+        {
+          "stage": 4,
+          "question": "Which African American athlete shattered Nazi racial theories by winning four gold medals at the 1936 Berlin Olympics?",
+          "q": "Which African American athlete shattered Nazi racial theories by winning four gold medals at the 1936 Berlin Olympics?",
+          "options": [
             "Ralph Metcalfe",
             "Mack Robinson",
-            "Cornelius Johnson"
+            "Cornelius Johnson",
+            "Jesse Owens"
           ],
           "answer": "Jesse Owens",
-          "explanation": "Jesse Owens won four gold medals in track and field at the 1936 Berlin Olympics, directly undermining Nazi claims of Aryan supremacy.",
-          "q": "Which African American athlete shattered Nazi racial theories by winning four gold medals at the 1936 Berlin Olympics?",
-          "a": "Jesse Owens"
+          "a": "Jesse Owens",
+          "explanation": "Jesse Owens won four gold medals in track and field at the 1936 Berlin Olympics, directly undermining Nazi claims of Aryan supremacy."
         },
         {
+          "stage": 4,
+          "question": "In what year did Berlin host the Olympic Games?",
           "q": "In what year did Berlin host the Olympic Games?",
-          "a": "1936",
           "options": [
             "1938",
             "1939",
-            "1933",
-            "1936"
-          ]
+            "1936",
+            "1933"
+          ],
+          "answer": "1936",
+          "a": "1936",
+          "explanation": "In August 1936, the Nazi regime utilized the prestigious Berlin Olympics (1936) as a massive international public relations triumph."
         },
         {
-          "q": "Give one example of how the Nazis hid their true nature during the Olympics.",
-          "a": "They temporarily took down 'Jews Not Wanted' signs / hid anti-Semitic newspapers",
-          "options": [
-            "They allowed the Communist Party to campaign during the Games",
-            "They allowed all Jewish athletes to compete for the German team",
-            "They temporarily took down 'Jews Not Wanted' signs / hid anti-Semitic newspapers",
-            "Hitler refused to attend the games to avoid controversy"
-          ]
-        },
-        {
+          "stage": 4,
+          "question": "Who was the African-American athlete who won four gold medals at the 1936 Olympics?",
           "q": "Who was the African-American athlete who won four gold medals at the 1936 Olympics?",
-          "a": "Jesse Owens",
           "options": [
-            "Jesse Owens",
             "Carl Lewis",
+            "Jesse Owens",
             "Jackie Robinson",
             "Muhammad Ali"
-          ]
+          ],
+          "answer": "Jesse Owens",
+          "a": "Jesse Owens",
+          "explanation": "However, the racial myth was publicly punctured by magnificent Jesse Owens track victories."
         },
         {
+          "stage": 4,
+          "question": "How many gold medals did Germany win at the 1936 Olympics, allowing Goebbels to claim it was a domestic triumph?",
           "q": "How many gold medals did Germany win at the 1936 Olympics, allowing Goebbels to claim it was a domestic triumph?",
-          "a": "33 gold medals",
           "options": [
+            "33 gold medals",
             "21 gold medals",
             "50 gold medals",
-            "12 gold medals",
-            "33 gold medals"
-          ]
+            "12 gold medals"
+          ],
+          "answer": "33 gold medals",
+          "a": "33 gold medals",
+          "explanation": "Intended as an undeniable Nazi athletic showcase of Aryan biological superiority, Germany topped the medal table with thirty-three gold medals."
         },
         {
-          "q": "What organisation did all artists, writers, and musicians have to join to get work?",
-          "a": "The Reich Chamber of Culture",
+          "stage": 5,
+          "question": "What happened in Berlin and other university towns in May 1933?",
+          "q": "What happened in Berlin and other university towns in May 1933?",
           "options": [
-            "The German Labour Front",
-            "The Reich Chamber of Culture",
-            "The National Socialist Teachers' League",
-            "The Eher Verlag"
-          ]
+            "A huge strike by university professors protesting the Nazis",
+            "The first compulsory Hitler Youth rallies",
+            "Jewish students were banned from attending university classes",
+            "Massive book burnings of works by Jewish and communist authors"
+          ],
+          "answer": "Massive book burnings of works by Jewish and communist authors",
+          "a": "Massive book burnings of works by Jewish and communist authors",
+          "explanation": "In May 1933, university students staged symbolic 1933 Book burnings across Germany, hurling twenty thousand works by Jewish, socialist, and pacifist writers—including Albert Einstein, Sigmund Freud, and Karl Marx—into public bonfires."
         },
         {
-          "q": "What was the Nazi term for modern, abstract art that they completely banned?",
-          "a": "Degenerate Art / Entartete Kunst",
+          "stage": 5,
+          "question": "What derogatory label did Goebbels attach to confiscated modernist paintings displayed for public mockery in Munich in 1937?",
+          "q": "What derogatory label did Goebbels attach to confiscated modernist paintings displayed for public mockery in Munich in 1937?",
           "options": [
-            "Jewish Art",
-            "Degenerate Art / Entartete Kunst",
-            "Bolshevik Art",
-            "Weimar Art"
-          ]
+            "New Objectivity",
+            "Strength Through Joy",
+            "Degenerate Art",
+            "Triumph of the Will"
+          ],
+          "answer": "Degenerate Art",
+          "a": "Degenerate Art",
+          "explanation": "Enforcing the 1937 'Degenerate Art' ban, the Nazis confiscated thousands of modernist works by artists like Otto Dix and Paul Klee to ridicule Weimar culture."
         },
         {
-          "q": "What was the purpose of the 1937 'Degenerate Art Exhibition' in Munich?",
-          "a": "To deliberately display banned modern art so the German public could mock and laugh at it",
+          "stage": 5,
+          "question": "What architectural style did Albert Speer champion for Nazi public buildings after modernist Bauhaus design was outlawed?",
+          "q": "What architectural style did Albert Speer champion for Nazi public buildings after modernist Bauhaus design was outlawed?",
           "options": [
-            "To deliberately display banned modern art so the German public could mock and laugh at it",
-            "To burn all the modern paintings in a massive public bonfire",
-            "To sell off the banned paintings to wealthy foreign buyers to raise money",
-            "To showcase the new heroic, realistic style of art the Nazis approved of"
-          ]
+            "Glass modernist skyscrapers",
+            "Monumental neoclassical architecture",
+            "Medieval Gothic timber framing",
+            "Expressionist steel domes"
+          ],
+          "answer": "Monumental neoclassical architecture",
+          "a": "Monumental neoclassical architecture",
+          "explanation": "Albert Speer's colossal granite neoclassical columns and porticos were designed to dwarf individual citizens and project the eternal power of the Reich."
         },
         {
-          "q": "Why did Hitler and Albert Speer build their architecture on such a massive scale?",
-          "a": "To make the individual feel small and the Nazi State feel eternal and powerful",
+          "stage": 5,
+          "question": "Name two prominent Jewish or socialist thinkers whose works were hurled into university student bonfires during the May 1933 book burnings.",
+          "q": "Name two prominent Jewish or socialist thinkers whose works were hurled into university student bonfires during the May 1933 book burnings.",
           "options": [
-            "Because they needed massive spaces to hold all the new factory workers",
-            "Because classical Roman architecture was the only style they knew how to design",
-            "To make the individual feel small and the Nazi State feel eternal and powerful",
-            "To compete with the skyscrapers being built in New York"
-          ]
-        },
-        {
-          "q": "Which genre of music did the Nazis ban because they racistly viewed it as 'black music'?",
-          "a": "Jazz",
-          "options": [
-            "Classical",
-            "Folk music",
-            "Opera",
-            "Jazz"
-          ]
+            "Albert Einstein and Sigmund Freud",
+            "Richard Wagner and Friedrich Nietzsche",
+            "Johann Goethe and Friedrich Schiller",
+            "Albert Speer and Leni Riefenstahl"
+          ],
+          "answer": "Albert Einstein and Sigmund Freud",
+          "a": "Albert Einstein and Sigmund Freud",
+          "explanation": "In May 1933, Nazi student groups burned twenty thousand books by Jewish, socialist, and pacifist authors including Albert Einstein, Sigmund Freud, and Karl Marx."
         }
       ],
       "utility_starters": null,
@@ -17352,9 +18323,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Ideological conformity was enforced by the newly created <strong>Reich Ministry of Propaganda</strong>, placing <strong>Joseph Goebbels control</strong> over all communication channels to impose <strong>total media censorship</strong> across Germany.",
-          "heading": "Goebbels & The Reich Chamber of Culture",
+          "heading": "How did the Ministry enforce strict ideological conformity across all media?",
           "date": "Mar–May 1933",
-          "step": 1
+          "step": 1,
+          "question": "How did the Ministry enforce strict ideological conformity across all media?",
+          "questionHeading": "How did the Ministry enforce strict ideological conformity across all media?",
+          "prose_hash": "46f5881eab"
         },
         {
           "stage": 2,
@@ -17386,9 +18360,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Goebbels mass-produced the affordable <strong>Volksempfänger cheap radio</strong> to achieve over <strong>70% household radio ownership</strong>, while strictly enforcing draconian <strong>foreign broadcast bans</strong> to isolate citizens from external news.",
-          "heading": "Radio (Volksempfänger) & The Daily Press",
+          "heading": "Why was the cheap Volksempfänger radio such a powerful propaganda tool?",
           "date": "1933–1939",
-          "step": 2
+          "step": 2,
+          "question": "Why was the cheap Volksempfänger radio such a powerful propaganda tool?",
+          "questionHeading": "Why was the cheap Volksempfänger radio such a powerful propaganda tool?",
+          "prose_hash": "af50a9f9ed"
         },
         {
           "stage": 3,
@@ -17420,9 +18397,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Mass spectacle peaked during the grand <strong>annual Nuremberg Rallies</strong>, where Albert Speer’s dazzling <strong>Zeppelin Field cathedral of light</strong> and monumental <strong>Leni Riefenstahl propaganda films</strong> mesmerized millions with images of supreme national unity.",
-          "heading": "Mass Rallies & The Cult of the Führer",
+          "heading": "How did choreographed mass rallies overwhelm individual critical thought?",
           "date": "1933–1938",
-          "step": 3
+          "step": 3,
+          "question": "How did choreographed mass rallies overwhelm individual critical thought?",
+          "questionHeading": "How did choreographed mass rallies overwhelm individual critical thought?",
+          "prose_hash": "39d7349e66"
         },
         {
           "stage": 4,
@@ -17454,9 +18434,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "The regime exploited the prestigious <strong>Berlin Olympics (1936)</strong> as a choreographed <strong>Nazi athletic showcase</strong> for Aryan superiority, though racial propaganda was famously disrupted by African-American athlete <strong>Jesse Owens track victories</strong>.",
-          "heading": "The Berlin Olympic Games Showcase",
+          "heading": "Why were the 1936 Olympics staged as an international showcase of Nazi success?",
           "date": "Aug 1936",
-          "step": 4
+          "step": 4,
+          "question": "Why were the 1936 Olympics staged as an international showcase of Nazi success?",
+          "questionHeading": "Why were the 1936 Olympics staged as an international showcase of Nazi success?",
+          "prose_hash": "c4ccdaadf6"
         },
         {
           "stage": 5,
@@ -17488,9 +18471,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Cultural life was purged of modernist influence through public <strong>1933 Book burnings</strong> and an aggressive <strong>'Degenerate Art' ban</strong>, replaced by monumental <strong>Albert Speer neoclassical architecture</strong> designed to demonstrate state power.",
-          "heading": "Purging Culture: Degenerate Art vs Aryan Realism",
+          "heading": "Why did the regime denounce modern artistic expression as degenerate?",
           "date": "1937",
-          "step": 5
+          "step": 5,
+          "question": "Why did the regime denounce modern artistic expression as degenerate?",
+          "questionHeading": "Why did the regime denounce modern artistic expression as degenerate?",
+          "prose_hash": "924c0f3354"
         }
       ],
       "causal_domino_spine": {
@@ -17507,7 +18493,8 @@ window.unitData = {
             "trigger": "Goebbels created the Propaganda Ministry and Reich Chamber of Culture, while students torched 20,000 un-German books in Berlin’s Opernplatz.",
             "desc": "Goebbels created the Propaganda Ministry and Reich Chamber of Culture, while students torched 20,000 un-German books in Berlin’s Opernplatz.",
             "connective": "Purged intellectual dissidents, establishing total state licensing over all literature, press, and arts.",
-            "question": "How did the Ministry enforce strict ideological conformity across all media?"
+            "question": "How did the Ministry enforce strict ideological conformity across all media?",
+            "prose_hash": "46f5881eab"
           },
           {
             "step": 2,
@@ -17519,7 +18506,8 @@ window.unitData = {
             "trigger": "The 35-mark Volksempfänger reached 70% of households with short-range reception, while daily morning press conferences dictated headlines.",
             "desc": "The 35-mark Volksempfänger reached 70% of households with short-range reception, while daily morning press conferences dictated headlines.",
             "connective": "Brought Hitler’s voice directly into private homes and eliminated independent investigative journalism.",
-            "question": "Why was the affordable People's Receiver the most powerful propaganda tool?"
+            "question": "Why was the cheap Volksempfänger radio such a powerful propaganda tool?",
+            "prose_hash": "af50a9f9ed"
           },
           {
             "step": 3,
@@ -17531,7 +18519,8 @@ window.unitData = {
             "trigger": "Albert Speer staged the annual Nuremberg Rallies using 152 anti-aircraft searchlights to project the \"Cathedral of Light\" above hundreds of thousands.",
             "desc": "Albert Speer staged the annual Nuremberg Rallies using 152 anti-aircraft searchlights to project the \"Cathedral of Light\" above hundreds of thousands.",
             "connective": "Manufactured religious adulation for Hitler and created an overwhelming spectacle of national unity.",
-            "question": "How did choreographed mass rallies overwhelm individual critical thought?"
+            "question": "How did choreographed mass rallies overwhelm individual critical thought?",
+            "prose_hash": "39d7349e66"
           },
           {
             "step": 4,
@@ -17543,7 +18532,8 @@ window.unitData = {
             "trigger": "The regime sanitized Berlin by hiding anti-Semitic signs to present a modern, prosperous face to the world at the 100,000-seat Olympiastadion.",
             "desc": "The regime sanitized Berlin by hiding anti-Semitic signs to present a modern, prosperous face to the world at the 100,000-seat Olympiastadion.",
             "connective": "Gained international prestige and deceived foreign visitors, despite Jesse Owens challenging Aryan racial superiority.",
-            "question": "Why were the 1936 Olympics staged as an international showcase of Nazi success?"
+            "question": "Why were the 1936 Olympics staged as an international showcase of Nazi success?",
+            "prose_hash": "c4ccdaadf6"
           },
           {
             "step": 5,
@@ -17555,7 +18545,8 @@ window.unitData = {
             "trigger": "The regime staged the Degenerate Art exhibition to mock modernists like Dix and Grosz, outlawing jazz while promoting heroic Aryan pastoral realism.",
             "desc": "The regime staged the Degenerate Art exhibition to mock modernists like Dix and Grosz, outlawing jazz while promoting heroic Aryan pastoral realism.",
             "connective": "Enforced aesthetic conformity, stripping German culture of avant-garde creativity and international influences.",
-            "question": "Why did the regime denounce modern artistic expression as degenerate?"
+            "question": "Why did the regime denounce modern artistic expression as degenerate?",
+            "prose_hash": "924c0f3354"
           }
         ]
       },
@@ -17824,48 +18815,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Who was the Minister of Public Enlightenment and Propaganda in Nazi Germany?",
-            "answer": "Dr Joseph Goebbels."
+            "stage": 1,
+            "question": "Who was appointed as the Minister of Public Enlightenment and Propaganda in 1933?",
+            "answer": "Joseph Goebbels",
+            "explanation": "Joseph Goebbels as its minister."
           },
           {
-            "question": "What cheap, standardized radio was mass-produced to broadcast Nazi propaganda into homes?",
-            "answer": "The Volksempfänger VE301 (People's Receiver)."
+            "stage": 2,
+            "question": "What was the German name for the cheap, mass-produced 'People's Receiver' radio?",
+            "answer": "Volksempfänger",
+            "explanation": "In 1933, the state sponsored the Volksempfänger cheap radio, mass-producing sets priced at just seventy-six marks so ordinary German working families could afford them."
           },
           {
-            "question": "Where did the Nazi Party hold its colossal annual propaganda rallies in September?",
-            "answer": "Nuremberg (at the Zeppelin Field complex designed by Albert Speer)."
+            "stage": 3,
+            "question": "In which city did the Nazis hold their massive, carefully choreographed annual rallies?",
+            "answer": "Nuremberg",
+            "explanation": "The supreme theatrical expression of Nazi propaganda occurred at the Annual Nuremberg Rallies, staged every September on the Zeppelin Field grounds."
           },
           {
-            "question": "Which African American athlete won four gold medals at the 1936 Berlin Olympics?",
-            "answer": "Jesse Owens."
+            "stage": 4,
+            "question": "Which African American athlete shattered Nazi racial theories by winning four gold medals at the 1936 Berlin Olympics?",
+            "answer": "Jesse Owens",
+            "explanation": "Jesse Owens won four gold medals in track and field at the 1936 Berlin Olympics, directly undermining Nazi claims of Aryan supremacy."
           },
           {
-            "question": "What term did the Nazis apply to modern art and jazz that they banned and purged?",
-            "answer": "'Degenerate Art' (Entartete Kunst) and 'Degenerate Music' (Entartete Musik)."
+            "stage": 5,
+            "question": "What happened in Berlin and other university towns in May 1933?",
+            "answer": "Massive book burnings of works by Jewish and communist authors",
+            "explanation": "In May 1933, university students staged symbolic 1933 Book burnings across Germany, hurling twenty thousand works by Jewish, socialist, and pacifist writers—including Albert Einstein, Sigmund Freud, and Karl Marx—into public bonfires."
           },
           {
-            "question": "What was the secret state police force led by Reinhard Heydrich and Heinrich Himmler?",
-            "answer": "The Gestapo (Geheime Staatspolizei)."
+            "stage": 1,
+            "question": "What organisation did all artists, writers, and musicians have to join to get work?",
+            "answer": "The Reich Chamber of Culture",
+            "explanation": "Through tyrannical Joseph Goebbels control, cultural expression was placed under the Reich Chamber of Culture."
           },
           {
-            "question": "What was the name of the Protestant group led by Martin Niemöller that opposed the Nazi Reich Church?",
-            "answer": "The Confessing Church (Bekennende Kirche)."
+            "stage": 2,
+            "question": "What cheap mass-produced radio receiver was promoted by Goebbels to bring Nazi propaganda into every German home?",
+            "answer": "The Volksempfänger (People's Receiver)",
+            "explanation": "The Volksempfänger ('People’s Receiver') was heavily subsidised by the state, ensuring millions of German households received broadcast propaganda."
           },
           {
-            "question": "What was the legal decree passed after the February 1933 fire that suspended civil liberties?",
-            "answer": "The Reichstag Fire Emergency Decree."
+            "stage": 3,
+            "question": "Who was the architect who designed the 'Cathedral of Light' for the Nuremberg Rallies?",
+            "answer": "Albert Speer",
+            "explanation": "Masterminded by architect Albert Speer, these week-long spectacles gathered up to five hundred thousand participants in geometrically rigid formations, displaying martial banners, marching columns, and soaring eagles to project an overwhelming image of unstoppable national power and unity."
           },
           {
-            "question": "What major financial pact in 1929 reduced German reparations to £2 billion and extended payment over 59 years?",
-            "answer": "The Young Plan."
+            "stage": 4,
+            "question": "In what year did Berlin host the Olympic Games?",
+            "answer": "1936",
+            "explanation": "In August 1936, the Nazi regime utilized the prestigious Berlin Olympics (1936) as a massive international public relations triumph."
           },
           {
-            "question": "In what city was the 1919 constitution for the new German democratic republic drafted and approved?",
-            "answer": "Weimar (giving the republic its popular historical name)."
+            "stage": 5,
+            "question": "What derogatory label did Goebbels attach to confiscated modernist paintings displayed for public mockery in Munich in 1937?",
+            "answer": "Degenerate Art",
+            "explanation": "Enforcing the 1937 'Degenerate Art' ban, the Nazis confiscated thousands of modernist works by artists like Otto Dix and Paul Klee to ridicule Weimar culture."
           }
         ]
       },
@@ -17919,8 +18929,8 @@ window.unitData = {
         {
           "title": "Everyday Grumbling and Silence: Popular Conformity and Terror (1933–1939)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> Between 1933 and 1939, overt political resistance remained remarkably rare among ordinary Germans. The overwhelming majority practiced **popular Nazi conformity**, choosing accommodation, outward compliance, and passive acceptance. Millions of working-class citizens expressed genuine **economic recovery approval**, celebrating the dramatic fall in unemployment from six million to under five hundred thousand, the restoration of national pride, and subsidized leisure programs.\n\n<span class=\"para-ref\">[1.2]</span> Where discontent existed, it rarely escalated beyond private grumbling or cynical political jokes. The public understood that open defiance was fatal, enforcing strict **terror police compliance**. Pervasive fear of the Gestapo, concentration camps, and local Block Wardens created an atmosphere of universal surveillance, compelling citizens to conform through Nazi salutes and public silence to protect their families and jobs.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Between 1933 and 1939, overt political resistance remained remarkably rare among ordinary Germans. The overwhelming majority practiced **popular Nazi conformity**, choosing accommodation, outward compliance, and passive acceptance. Millions of working-class citizens expressed genuine **economic recovery approval**, celebrating the dramatic fall in unemployment from six million to under five hundred thousand, the restoration of national pride, and subsidized leisure programs.\n\n<span class=\"para-ref\">[1.2]</span> Where discontent existed, it rarely escalated beyond private grumbling or cynical political jokes. The public understood that open defiance was fatal, enforcing strict **terror police compliance**. Pervasive fear of the Gestapo, concentration camps, and local Block Wardens created an atmosphere of universal surveillance, compelling citizens to conform through Nazi salutes and public silence to protect their families and jobs.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Between 1933 and 1939, open political revolt stayed rare among ordinary Germans, as most chose outward compliance. Exiled SPD *Sopade* reports noted genuine **economic recovery approval as unemployment fell dramatically** from six million to under half a million, alongside restored national pride and cheap KdF holidays.\n\n<span class=\"para-ref\">[1.2]</span> Most everyday discontent stayed cautious **Passive Resistance** — **everyday grumbling and public silence** or private political jokes. Citizens knew open defiance meant camp arrest, avoiding the Nazi salute only when snooping local **Block Wardens** and Gestapo informers were safely out of earshot.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Between 1933 and 1939, open political revolt stayed rare among ordinary Germans, as most chose outward compliance. Exiled SPD *Sopade* reports noted genuine **economic recovery approval as unemployment fell dramatically** from six million to under half a million, alongside restored national pride and cheap KdF holidays.\n\n<span class=\"para-ref\">[1.2]</span> Most everyday discontent stayed cautious **Passive Resistance** — **everyday grumbling and public silence** or private political jokes. Citizens knew open defiance meant camp arrest, avoiding the Nazi salute only when snooping local **Block Wardens** and Gestapo informers were safely out of earshot.",
           "sources": [
             {
               "id": "weimar_l12_source_e",
@@ -17976,8 +18986,8 @@ window.unitData = {
         {
           "title": "Underground Cells and Sabotage: Left-Wing Resistance and the Rote Kapelle (1933–1938)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> The most determined early opposition came from crushed left-wing workers' parties. Following mass arrests in 1933, dedicated militants organized secret **KPD and SPD underground cells** across industrial centers. The exiled SPD leadership in Prague smuggled illegal anti-Nazi newspapers into Germany concealed inside seed packets and bicycle manuals, documenting factory grievances, wage freezes, and brutal working conditions to sustain working-class morale.\n\n<span class=\"para-ref\">[2.2]</span> In Berlin, elite underground groups like the **Rote Kapelle courier networks** gathered sensitive military intelligence to undermine rearmament. In factories, communist cells organized slow-downs, **factory sabotage & illegal leaflets** distribution to disrupt armaments production. However, persistent socialist-communist divisions and systematic Gestapo infiltration crippled the underground movement, resulting in mass arrests and execution of ringleaders by 1938.",
-          "content": "<span class=\"para-ref\">[2.1]</span> The most determined early opposition came from crushed left-wing workers' parties. Following mass arrests in 1933, dedicated militants organized secret **KPD and SPD underground cells** across industrial centers. The exiled SPD leadership in Prague smuggled illegal anti-Nazi newspapers into Germany concealed inside seed packets and bicycle manuals, documenting factory grievances, wage freezes, and brutal working conditions to sustain working-class morale.\n\n<span class=\"para-ref\">[2.2]</span> In Berlin, elite underground groups like the **Rote Kapelle courier networks** gathered sensitive military intelligence to undermine rearmament. In factories, communist cells organized slow-downs, **factory sabotage & illegal leaflets** distribution to disrupt armaments production. However, persistent socialist-communist divisions and systematic Gestapo infiltration crippled the underground movement, resulting in mass arrests and execution of ringleaders by 1938.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Determined early opposition came from crushed left-wing workers' parties after the mass arrests of 1933. Exiled SPD leaders in **Prague** smuggled illegal anti-Nazi newspapers into Germany inside seed packets and bicycle manuals. Meanwhile, Berlin spy networks like **the Red Orchestra (Rote Kapelle)** passed military intelligence abroad.\n\n<span class=\"para-ref\">[2.2]</span> Inside arms factories, secret KPD and SPD underground cells organised **work slow-downs, factory sabotage, and illegal leaflets** to disrupt rearmament. However, **persistent socialist-communist divisions and systematic Gestapo infiltration** crippled the underground network and led to mass arrests and executions by 1938.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Determined early opposition came from crushed left-wing workers' parties after the mass arrests of 1933. Exiled SPD leaders in **Prague** smuggled illegal anti-Nazi newspapers into Germany inside seed packets and bicycle manuals. Meanwhile, Berlin spy networks like **the Red Orchestra (Rote Kapelle)** passed military intelligence abroad.\n\n<span class=\"para-ref\">[2.2]</span> Inside arms factories, secret KPD and SPD underground cells organised **work slow-downs, factory sabotage, and illegal leaflets** to disrupt rearmament. However, **persistent socialist-communist divisions and systematic Gestapo infiltration** crippled the underground network and led to mass arrests and executions by 1938.",
           "sources": [
             {
               "id": "weimar_l12_source_c",
@@ -18035,8 +19045,8 @@ window.unitData = {
         {
           "title": "The Alpine Flower: The Edelweiss Pirates and Working-Class Youth Defiance (1936–1939)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth membership became increasingly militarized and compulsory, rebellious adolescents formed counter-cultural protest groups across western industrial cities. Expressing fearless **Edelweiss Pirates defiance**, working-class youths in Cologne, Essen, and Düsseldorf wore check shirts, dark trousers, and pinned the alpine edelweiss flower beneath their collars, deliberately violating the strict uniform regulations and disciplined regimentation of the Hitler Youth.\n\n<span class=\"para-ref\">[3.2]</span> This vibrant **working-class youth rebellion** met in public parks, singing satirical anti-Nazi parodies and escaping state surveillance on weekend camping trips. Their defiance frequently turned violent, ambushing Hitler Youth patrols and daubing anti-war slogans on walls. The regime responded ruthlessly, imposing **camp beatings & anti-Nazi leaflets** crackdowns, Gestapo detentions, forced head shaving, and public hangings of teenage leaders.",
-          "content": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth membership became increasingly militarized and compulsory, rebellious adolescents formed counter-cultural protest groups across western industrial cities. Expressing fearless **Edelweiss Pirates defiance**, working-class youths in Cologne, Essen, and Düsseldorf wore check shirts, dark trousers, and pinned the alpine edelweiss flower beneath their collars, deliberately violating the strict uniform regulations and disciplined regimentation of the Hitler Youth.\n\n<span class=\"para-ref\">[3.2]</span> This vibrant **working-class youth rebellion** met in public parks, singing satirical anti-Nazi parodies and escaping state surveillance on weekend camping trips. Their defiance frequently turned violent, ambushing Hitler Youth patrols and daubing anti-war slogans on walls. The regime responded ruthlessly, imposing **camp beatings & anti-Nazi leaflets** crackdowns, Gestapo detentions, forced head shaving, and public hangings of teenage leaders.",
+          "text": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth drill grew compulsory from **1936**, working-class teenagers in Cologne, Essen, and Düsseldorf formed rebellious groups called **the Edelweiss Pirates**. Rejecting uniform rules, youths wore check shirts, dark trousers, and pinned **the white edelweiss flower** beneath their collars.\n\n<span class=\"para-ref\">[3.2]</span> Meeting in parks and camping at weekends beyond state watch, Pirates sang satirical anti-Nazi parodies, painted anti-war slogans on walls, and ambushed Hitler Youth patrols. The Gestapo answered ruthlessly with arrests, forced head-shaving, camp beatings, and wartime hangings of teenage leaders.",
+          "content": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth drill grew compulsory from **1936**, working-class teenagers in Cologne, Essen, and Düsseldorf formed rebellious groups called **the Edelweiss Pirates**. Rejecting uniform rules, youths wore check shirts, dark trousers, and pinned **the white edelweiss flower** beneath their collars.\n\n<span class=\"para-ref\">[3.2]</span> Meeting in parks and camping at weekends beyond state watch, Pirates sang satirical anti-Nazi parodies, painted anti-war slogans on walls, and ambushed Hitler Youth patrols. The Gestapo answered ruthlessly with arrests, forced head-shaving, camp beatings, and wartime hangings of teenage leaders.",
           "sources": [
             {
               "id": "weimar_l12_source_a",
@@ -18096,8 +19106,8 @@ window.unitData = {
         {
           "title": "Jazz in the Underground: The Swing Youth and Bourgeois Rebellion (1937–1939)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> In affluent urban centers like Hamburg, Frankfurt, and Berlin, middle-class teenagers engaged in cultural dissent through the **Swing Youth culture**. Passionately devoted to British and **American jazz music**—which Nazi propaganda officially banned as degenerate \"negro music\"—these youths gathered in secret dance halls and private flats, listening to banned gramophone records by Benny Goodman, Louis Armstrong, and Duke Ellington.\n\n<span class=\"para-ref\">[4.2]</span> Embracing English fashion with long hair, tweed jackets, and makeup, their lifestyle represented provocative **middle-class non-conformity** against the militarized austerity of the Third Reich. While lacking a formal political agenda, their refusal to join the Hitler Youth alarmed Nazi leaders. Heinrich Himmler condemned their counter-culture as treasonous, ordering Gestapo raids, club closures, and sending repeat offenders to youth concentration camps.",
-          "content": "<span class=\"para-ref\">[4.1]</span> In affluent urban centers like Hamburg, Frankfurt, and Berlin, middle-class teenagers engaged in cultural dissent through the **Swing Youth culture**. Passionately devoted to British and **American jazz music**—which Nazi propaganda officially banned as degenerate \"negro music\"—these youths gathered in secret dance halls and private flats, listening to banned gramophone records by Benny Goodman, Louis Armstrong, and Duke Ellington.\n\n<span class=\"para-ref\">[4.2]</span> Embracing English fashion with long hair, tweed jackets, and makeup, their lifestyle represented provocative **middle-class non-conformity** against the militarized austerity of the Third Reich. While lacking a formal political agenda, their refusal to join the Hitler Youth alarmed Nazi leaders. Heinrich Himmler condemned their counter-culture as treasonous, ordering Gestapo raids, club closures, and sending repeat offenders to youth concentration camps.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In Hamburg, Frankfurt, and Berlin, affluent teenagers formed **the Swing Youth** around banned British and **American Jazz and Swing** records by Benny Goodman and Louis Armstrong. Crucially, **the Swing Youth were middle and upper class, whereas the Pirates were working class**.\n\n<span class=\"para-ref\">[4.2]</span> Wearing long hair, English tweed jackets, and makeup in secret dance clubs that welcomed Jewish friends, their counter-culture rejected **Nazi** militarism. Outraged, Heinrich Himmler condemned Swing clubs as treasonous, ordering Gestapo raids, club closures, and youth concentration camp detentions.",
+          "content": "<span class=\"para-ref\">[4.1]</span> In Hamburg, Frankfurt, and Berlin, affluent teenagers formed **the Swing Youth** around banned British and **American Jazz and Swing** records by Benny Goodman and Louis Armstrong. Crucially, **the Swing Youth were middle and upper class, whereas the Pirates were working class**.\n\n<span class=\"para-ref\">[4.2]</span> Wearing long hair, English tweed jackets, and makeup in secret dance clubs that welcomed Jewish friends, their counter-culture rejected **Nazi** militarism. Outraged, Heinrich Himmler condemned Swing clubs as treasonous, ordering Gestapo raids, club closures, and youth concentration camp detentions.",
           "sources": [
             {
               "id": "weimar_l12_source_b",
@@ -18153,8 +19163,8 @@ window.unitData = {
         {
           "title": "Pulpit Defiance: Bishop von Galen, Dietrich Bonhoeffer and Religious Courage (1937–1939)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Christian leaders mounted some of the most influential public protests against Nazi tyranny. In 1937, Pope Pius XI issued the encyclical **Mit Brennender Sorge (1937)**, which was smuggled into Germany and read from Catholic pulpits, openly attacking Nazi racial idolatry. In Protestant circles, theological opposition was spearheaded by **Pastor Martin Niemöller & Bonhoeffer**, who refused state control and established illegal underground seminaries for dissident pastors.\n\n<span class=\"para-ref\">[5.2]</span> The most effective individual protest was led by the Bishop of Münster, whose outspoken sermons sparked famous **Bishop von Galen euthanasia protests**. Galen courageously condemned Gestapo murders and the secret T4 euthanasia program that killed mentally ill patients, generating such immense public outrage that Hitler temporarily suspended the euthanasia program, fearing mutiny among Catholic soldiers on the Western Front.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Christian leaders mounted some of the most influential public protests against Nazi tyranny. In 1937, Pope Pius XI issued the encyclical **Mit Brennender Sorge (1937)**, which was smuggled into Germany and read from Catholic pulpits, openly attacking Nazi racial idolatry. In Protestant circles, theological opposition was spearheaded by **Pastor Martin Niemöller & Bonhoeffer**, who refused state control and established illegal underground seminaries for dissident pastors.\n\n<span class=\"para-ref\">[5.2]</span> The most effective individual protest was led by the Bishop of Münster, whose outspoken sermons sparked famous **Bishop von Galen euthanasia protests**. Galen courageously condemned Gestapo murders and the secret T4 euthanasia program that killed mentally ill patients, generating such immense public outrage that Hitler temporarily suspended the euthanasia program, fearing mutiny among Catholic soldiers on the Western Front.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Courageous Christian leaders also spoke out publicly against Nazi attacks on faith. In 1937, Pope Pius XI had his encyclical **Mit Brennender Sorge** smuggled into Germany and read from Catholic pulpits condemning Nazi racism. Meanwhile, Protestant Pastor **Dietrich Bonhoeffer** ran **illegal underground seminaries** alongside Martin Niemöller.\n\n<span class=\"para-ref\">[5.2]</span> Catholic **Bishop Clemens August von Galen** of Münster led the most effective public protest. His fiery sermons condemned Gestapo terror and exposed the secret T4 euthanasia killings of disabled patients, sparking such public outrage that Hitler temporarily paused the programme.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Courageous Christian leaders also spoke out publicly against Nazi attacks on faith. In 1937, Pope Pius XI had his encyclical **Mit Brennender Sorge** smuggled into Germany and read from Catholic pulpits condemning Nazi racism. Meanwhile, Protestant Pastor **Dietrich Bonhoeffer** ran **illegal underground seminaries** alongside Martin Niemöller.\n\n<span class=\"para-ref\">[5.2]</span> Catholic **Bishop Clemens August von Galen** of Münster led the most effective public protest. His fiery sermons condemned Gestapo terror and exposed the secret T4 euthanasia killings of disabled patients, sparking such public outrage that Hitler temporarily paused the programme.",
           "sources": [
             {
               "id": "weimar_l12_source_d",
@@ -18216,224 +19226,284 @@ window.unitData = {
       ],
       "quiz": [
         {
+          "stage": 1,
+          "question": "What is the term for low-level, non-violent opposition, such as telling an anti-Nazi joke or working slowly?",
           "q": "What is the term for low-level, non-violent opposition, such as telling an anti-Nazi joke or working slowly?",
-          "a": "Passive Resistance",
           "options": [
-            "Passive Resistance",
             "Subversion",
             "Active Resistance",
+            "Passive Resistance",
             "Gleichschaltung"
-          ]
-        },
-        {
-          "q": "What working-class youth opposition movement wore edelweiss badges and beat up Hitler Youth patrols?",
-          "a": "The Edelweiss Pirates",
-          "options": [
-            "The Edelweiss Pirates",
-            "The Swing Youth",
-            "The White Rose",
-            "The Young Fellows"
           ],
-          "question": "What working-class youth opposition movement wore edelweiss badges and beat up Hitler Youth patrols?",
-          "answer": "The Edelweiss Pirates"
+          "answer": "Passive Resistance",
+          "a": "Passive Resistance",
+          "explanation": "Between 1933 and 1939, overt political resistance remained remarkably rare among ordinary Germans."
         },
         {
-          "q": "What was the name of the secret intelligence reports smuggled out of Germany by the exiled SPD?",
-          "a": "The Sopade reports",
-          "options": [
-            "The Edelweiss reports",
-            "The Sopade reports",
-            "The Red Orchestra files",
-            "The Munich reports"
-          ]
-        },
-        {
-          "q": "What middle-class youth group rebelled culturally by listening to banned American jazz and swing music?",
-          "a": "The Swing Youth",
-          "options": [
-            "The Swing Youth",
-            "The Edelweiss Pirates",
-            "The Hitler Youth",
-            "The Wandervogel"
-          ],
-          "question": "What middle-class youth group rebelled culturally by listening to banned American jazz and swing music?",
-          "answer": "The Swing Youth"
-        },
-        {
-          "q": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
-          "a": "Bishop Clemens August von Galen",
-          "options": [
-            "Bishop Clemens August von Galen",
-            "Pastor Martin Niemöller",
-            "Dietrich Bonhoeffer",
-            "Pope Pius XI"
-          ],
-          "question": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
-          "answer": "Bishop Clemens August von Galen"
-        },
-        {
-          "q": "Which Protestant theologian and pastor engaged in active resistance against the regime, ultimately joining the anti-Hitler conspiracy?",
-          "a": "Dietrich Bonhoeffer",
-          "options": [
-            "Dietrich Bonhoeffer",
-            "Ludwig Müller",
-            "Hanns Kerrl",
-            "Roland Freisler"
-          ],
-          "question": "Which Protestant theologian and pastor engaged in active resistance against the regime, ultimately joining the anti-Hitler conspiracy?",
-          "answer": "Dietrich Bonhoeffer"
-        },
-        {
-          "q": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
-          "a": "The Red Orchestra (Rote Kapelle)",
-          "options": [
-            "The Red Orchestra (Rote Kapelle)",
-            "The Edelweiss Pirates",
-            "The Swing Youth",
-            "The Freikorps"
-          ],
-          "question": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
-          "answer": "The Red Orchestra (Rote Kapelle)"
-        },
-        {
+          "stage": 1,
+          "question": "What was the most widespread form of everyday non-violent dissent among ordinary Germans?",
           "q": "What was the most widespread form of everyday non-violent dissent among ordinary Germans?",
-          "a": "Everyday grumbling and public silence",
           "options": [
-            "Everyday grumbling and public silence",
             "Organizing armed rebellions in Berlin streets",
+            "Everyday grumbling and public silence",
             "Publishing national opposition newspapers",
             "Assassinating high-ranking SS officers"
           ],
-          "question": "What was the most widespread form of everyday non-violent dissent among ordinary Germans?",
-          "answer": "Everyday grumbling and public silence"
+          "answer": "Everyday grumbling and public silence",
+          "a": "Everyday grumbling and public silence",
+          "explanation": "Pervasive fear of the Gestapo, concentration camps, and local Block Wardens created an atmosphere of universal surveillance, compelling citizens to conform through Nazi salutes and public silence to protect their families and jobs."
         },
         {
-          "q": "In what year did membership of the Hitler Youth become legally compulsory?",
-          "a": "1936",
+          "stage": 1,
+          "question": "Which local low-level Nazi officials monitored apartment blocks and neighbourhoods, compelling outward conformity from ordinary citizens?",
+          "q": "Which local low-level Nazi officials monitored apartment blocks and neighbourhoods, compelling outward conformity from ordinary citizens?",
           "options": [
-            "1936",
+            "Block Wardens",
+            "Freikorps captains",
+            "Reich Bishops",
+            "Wehrmacht generals"
+          ],
+          "answer": "Block Wardens",
+          "a": "Block Wardens",
+          "explanation": "Fear of denunciation to the Gestapo by local Block Wardens created an atmosphere of constant surveillance that silenced open criticism."
+        },
+        {
+          "stage": 1,
+          "question": "Alongside fear of police terror, what positive economic factor led millions of working-class Germans to conform with the Nazi regime?",
+          "q": "Alongside fear of police terror, what positive economic factor led millions of working-class Germans to conform with the Nazi regime?",
+          "options": [
+            "Abolition of all income taxes and worker deductions",
+            "Restoration of independent socialist trade unions",
+            "Guaranteed forty-percent annual wage rises",
+            "Economic recovery approval as unemployment fell dramatically"
+          ],
+          "answer": "Economic recovery approval as unemployment fell dramatically",
+          "a": "Economic recovery approval as unemployment fell dramatically",
+          "explanation": "Millions of Germans welcomed the drop in registered unemployment from six million to under half a million, fostering widespread passive accommodation."
+        },
+        {
+          "stage": 2,
+          "question": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
+          "q": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
+          "options": [
+            "The Edelweiss Pirates",
+            "The Swing Youth",
+            "The Red Orchestra (Rote Kapelle)",
+            "The Freikorps"
+          ],
+          "answer": "The Red Orchestra (Rote Kapelle)",
+          "a": "The Red Orchestra (Rote Kapelle)",
+          "explanation": "In Berlin, elite underground groups like the Rote Kapelle courier networks gathered sensitive military intelligence to undermine rearmament."
+        },
+        {
+          "stage": 2,
+          "question": "From which foreign city did the exiled Social Democratic (SPD) leadership smuggle illegal anti-Nazi newspapers into Germany?",
+          "q": "From which foreign city did the exiled Social Democratic (SPD) leadership smuggle illegal anti-Nazi newspapers into Germany?",
+          "options": [
+            "Moscow",
+            "Prague",
+            "London",
+            "Geneva"
+          ],
+          "answer": "Prague",
+          "a": "Prague",
+          "explanation": "Operating in exile in Prague, SPD organizers concealed illegal newspapers inside seed packets and bicycle manuals to report factory grievances inside Germany."
+        },
+        {
+          "stage": 2,
+          "question": "What covert resistance tactics did left-wing underground cells use inside German factories before 1938?",
+          "q": "What covert resistance tactics did left-wing underground cells use inside German factories before 1938?",
+          "options": [
+            "Work slow-downs, factory sabotage, and illegal leaflets",
+            "Open armed mutinies against Wehrmacht garrisons",
+            "Televised debates with German Labour Front leaders",
+            "Legal strikes approved by the People's Court"
+          ],
+          "answer": "Work slow-downs, factory sabotage, and illegal leaflets",
+          "a": "Work slow-downs, factory sabotage, and illegal leaflets",
+          "explanation": "Communist and socialist cells disrupted armaments output through deliberate slow-downs, sabotage, and secret leaflets despite lethal Gestapo reprisals."
+        },
+        {
+          "stage": 2,
+          "question": "Why was organized left-wing underground resistance inside Germany largely shattered by 1938?",
+          "q": "Why was organized left-wing underground resistance inside Germany largely shattered by 1938?",
+          "options": [
+            "Complete economic collapse of German armaments factories",
+            "Full amnesty granted to all KPD and SPD leaders",
+            "Voluntary merger of the KPD into the German Labour Front",
+            "Persistent socialist-communist divisions and systematic Gestapo infiltration"
+          ],
+          "answer": "Persistent socialist-communist divisions and systematic Gestapo infiltration",
+          "a": "Persistent socialist-communist divisions and systematic Gestapo infiltration",
+          "explanation": "Bitter KPD-SPD rivalry prevented united action while ruthless Gestapo informants infiltrated underground cells and executed their ringleaders."
+        },
+        {
+          "stage": 3,
+          "question": "What working-class youth opposition movement wore edelweiss badges and beat up Hitler Youth patrols?",
+          "q": "What working-class youth opposition movement wore edelweiss badges and beat up Hitler Youth patrols?",
+          "options": [
+            "The Swing Youth",
+            "The White Rose",
+            "The Edelweiss Pirates",
+            "The Young Fellows"
+          ],
+          "answer": "The Edelweiss Pirates",
+          "a": "The Edelweiss Pirates",
+          "explanation": "Expressing fearless Edelweiss Pirates defiance, working-class youths in Cologne, Essen, and Düsseldorf wore check shirts, dark trousers, and pinned the alpine edelweiss flower beneath their collars, deliberately violating the strict uniform regulations and disciplined regimentation of the Hitler Youth."
+        },
+        {
+          "stage": 3,
+          "question": "In what year did membership of the Hitler Youth become legally compulsory?",
+          "q": "In what year did membership of the Hitler Youth become legally compulsory?",
+          "options": [
             "1933",
+            "1936",
             "1939",
             "1938"
-          ]
-        },
-        {
-          "q": "Why did the Edelweiss Pirates reject the Hitler Youth?",
-          "a": "They hated military drills, strict regimentation, and totalitarian control",
-          "options": [
-            "They hated military drills, strict regimentation, and totalitarian control",
-            "They wanted the Hitler Youth to be more violent and extreme",
-            "They preferred serving in the regular German navy",
-            "They demanded higher membership fees for youth clubs"
           ],
-          "question": "Why did the Edelweiss Pirates reject the Hitler Youth?",
-          "answer": "They hated military drills, strict regimentation, and totalitarian control"
+          "answer": "1936",
+          "a": "1936",
+          "explanation": "As Hitler Youth membership became increasingly militarized and compulsory, rebellious adolescents formed counter-cultural protest groups across western industrial cities."
         },
         {
+          "stage": 3,
+          "question": "What was the name of the working-class youth opposition group that emerged in cities like Cologne and Essen?",
           "q": "What was the name of the working-class youth opposition group that emerged in cities like Cologne and Essen?",
-          "a": "The Edelweiss Pirates",
           "options": [
+            "The Edelweiss Pirates",
             "The Navajos",
+            "The Swing Youth",
+            "The White Rose Group"
+          ],
+          "answer": "The Edelweiss Pirates",
+          "a": "The Edelweiss Pirates",
+          "explanation": "Expressing fearless Edelweiss Pirates defiance, working-class youths in Cologne, Essen, and Düsseldorf wore check shirts, dark trousers, and pinned the alpine edelweiss flower beneath their collars, deliberately violating the strict uniform regulations and disciplined regimentation of the Hitler Youth."
+        },
+        {
+          "stage": 3,
+          "question": "What flower badge did working-class youth rebels pin beneath their collars as a clandestine symbol?",
+          "q": "What flower badge did working-class youth rebels pin beneath their collars as a clandestine symbol?",
+          "options": [
+            "The red rose",
+            "The yellow daffodil",
+            "The blue cornflower",
+            "The white edelweiss flower"
+          ],
+          "answer": "The white edelweiss flower",
+          "a": "The white edelweiss flower",
+          "explanation": "Expressing fearless Edelweiss Pirates defiance, working-class youths in Cologne, Essen, and Düsseldorf wore check shirts, dark trousers, and pinned the alpine edelweiss flower beneath their collars, deliberately violating the strict uniform regulations and disciplined regimentation of the Hitler Youth."
+        },
+        {
+          "stage": 4,
+          "question": "What middle-class youth group rebelled culturally by listening to banned American jazz and swing music?",
+          "q": "What middle-class youth group rebelled culturally by listening to banned American jazz and swing music?",
+          "options": [
+            "The Edelweiss Pirates",
+            "The Hitler Youth",
+            "The Swing Youth",
+            "The Wandervogel"
+          ],
+          "answer": "The Swing Youth",
+          "a": "The Swing Youth",
+          "explanation": "In affluent urban centers like Hamburg, Frankfurt, and Berlin, middle-class teenagers engaged in cultural dissent through the Swing Youth culture."
+        },
+        {
+          "stage": 4,
+          "question": "What was the name of the middle-class youth opposition group found in cities like Berlin and Hamburg?",
+          "q": "What was the name of the middle-class youth opposition group found in cities like Berlin and Hamburg?",
+          "options": [
+            "The Wandervogel",
             "The Swing Youth",
             "The White Rose Group",
             "The Edelweiss Pirates"
-          ]
-        },
-        {
-          "q": "What flower badge did working-class youth rebels pin beneath their collars as a clandestine symbol?",
-          "a": "The white edelweiss flower",
-          "options": [
-            "The white edelweiss flower",
-            "The red rose",
-            "The yellow daffodil",
-            "The blue cornflower"
           ],
-          "question": "What flower badge did working-class youth rebels pin beneath their collars as a clandestine symbol?",
-          "answer": "The white edelweiss flower"
-        },
-        {
-          "q": "What symbol did the Edelweiss Pirates wear on their lapels to identify each other?",
-          "a": "The white edelweiss flower",
-          "options": [
-            "A red star",
-            "The white edelweiss flower",
-            "A broken swastika",
-            "A small silver skull"
-          ]
-        },
-        {
-          "q": "Give two ways the Edelweiss Pirates rebelled against the Nazis.",
-          "a": "They went on hikes / wore checked shirts / beat up Hitler Youth members",
-          "options": [
-            "They went on hikes / wore checked shirts / beat up Hitler Youth members",
-            "They smuggled Jewish families out of the country / forged passports",
-            "They bombed Gestapo headquarters / assassinated Nazi officials",
-            "They secretly broadcast anti-Nazi radio programs from the woods"
-          ]
-        },
-        {
-          "q": "What was the name of the middle-class youth opposition group found in cities like Berlin and Hamburg?",
+          "answer": "The Swing Youth",
           "a": "The Swing Youth",
-          "options": [
-            "The Wandervogel",
-            "The White Rose Group",
-            "The Edelweiss Pirates",
-            "The Swing Youth"
-          ]
+          "explanation": "In affluent urban centers like Hamburg, Frankfurt, and Berlin, middle-class teenagers engaged in cultural dissent through the Swing Youth culture."
         },
         {
+          "stage": 4,
+          "question": "How did the social class of the Swing Youth differ from the Edelweiss Pirates?",
           "q": "How did the social class of the Swing Youth differ from the Edelweiss Pirates?",
-          "a": "The Swing Youth were middle/upper class; the Pirates were working class",
           "options": [
+            "The Swing Youth were middle/upper class; the Pirates were working class",
             "The Swing Youth were working class; the Pirates were middle class",
             "The Swing Youth were farmers; the Pirates were city workers",
-            "The Swing Youth were middle/upper class; the Pirates were working class",
             "Both groups were entirely made up of wealthy university students"
-          ]
+          ],
+          "answer": "The Swing Youth were middle/upper class; the Pirates were working class",
+          "a": "The Swing Youth were middle/upper class; the Pirates were working class",
+          "explanation": "In affluent urban centers like Hamburg, Frankfurt, and Berlin, middle-class teenagers engaged in cultural dissent through the Swing Youth culture."
         },
         {
+          "stage": 4,
+          "question": "What banned genre of music did the Swing Youth illegally listen to?",
           "q": "What banned genre of music did the Swing Youth illegally listen to?",
-          "a": "American Jazz and Swing",
           "options": [
             "British Rock and Roll",
             "Russian Folk Music",
             "French Classical",
             "American Jazz and Swing"
-          ]
-        },
-        {
-          "q": "Why did Nazi authorities ban American jazz and swing music?",
-          "a": "Because they condemned it as 'degenerate negro music' contrary to Aryan culture",
-          "options": [
-            "Because they condemned it as 'degenerate negro music' contrary to Aryan culture",
-            "Because American instruments were too expensive to import",
-            "Because the music was too quiet for radio broadcasts",
-            "Because Hitler preferred French classical opera"
           ],
-          "question": "Why did Nazi authorities ban American jazz and swing music?",
-          "answer": "Because they condemned it as 'degenerate negro music' contrary to Aryan culture"
+          "answer": "American Jazz and Swing",
+          "a": "American Jazz and Swing",
+          "explanation": "Passionately devoted to British and American jazz music—which Nazi propaganda officially banned as degenerate \"negro music\"—these youths gathered in secret dance halls and private flats, listening to banned gramophone records by Benny Goodman, Louis Armstrong, and Duke Ellington."
         },
         {
-          "q": "What fashion choices did Swing Youth members adopt to rebel against Nazi uniformity?",
-          "a": "Long hair, English tweed jackets, and makeup",
+          "stage": 5,
+          "question": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
+          "q": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
           "options": [
-            "Long hair, English tweed jackets, and makeup",
-            "Military combat helmets and steel toe boots",
-            "Traditional peasant lederhosen and dirndls",
-            "Gymnastic uniforms and tracksuits"
+            "Pastor Martin Niemöller",
+            "Dietrich Bonhoeffer",
+            "Bishop Clemens August von Galen",
+            "Pope Pius XI"
           ],
-          "question": "What fashion choices did Swing Youth members adopt to rebel against Nazi uniformity?",
-          "answer": "Long hair, English tweed jackets, and makeup"
+          "answer": "Bishop Clemens August von Galen",
+          "a": "Bishop Clemens August von Galen",
+          "explanation": "The most effective individual protest was led by the Bishop of Münster, whose outspoken sermons sparked famous Bishop von Galen euthanasia protests."
         },
         {
-          "q": "Before 1939, how did the Gestapo usually punish Edelweiss Pirates who were caught?",
-          "a": "They arrested them, shaved their heads, and beat them, but rarely killed them",
+          "stage": 5,
+          "question": "Which Protestant theologian and pastor engaged in active resistance against the regime, ultimately joining the anti-Hitler conspiracy?",
+          "q": "Which Protestant theologian and pastor engaged in active resistance against the regime, ultimately joining the anti-Hitler conspiracy?",
           "options": [
-            "They arrested them, shaved their heads, and beat them, but rarely killed them",
-            "They executed them publicly by hanging",
-            "They simply sent them home with a warning letter to their parents",
-            "They immediately sent them to extermination camps"
-          ]
+            "Ludwig Müller",
+            "Dietrich Bonhoeffer",
+            "Hanns Kerrl",
+            "Roland Freisler"
+          ],
+          "answer": "Dietrich Bonhoeffer",
+          "a": "Dietrich Bonhoeffer",
+          "explanation": "In Protestant circles, theological opposition was spearheaded by Pastor Martin Niemöller & Bonhoeffer, who refused state control and established illegal underground seminaries for dissident pastors."
+        },
+        {
+          "stage": 5,
+          "question": "What was the title of Pope Pius XI's 1937 encyclical smuggled into Germany and read from Catholic pulpits to condemn Nazi racial idolatry?",
+          "q": "What was the title of Pope Pius XI's 1937 encyclical smuggled into Germany and read from Catholic pulpits to condemn Nazi racial idolatry?",
+          "options": [
+            "Mit Brennender Sorge",
+            "Reichskonkordat",
+            "Mein Kampf",
+            "Kinder, Küche, Kirche"
+          ],
+          "answer": "Mit Brennender Sorge",
+          "a": "Mit Brennender Sorge",
+          "explanation": "Smuggled across the border in 1937, Pope Pius XI's encyclical Mit Brennender Sorge ('With Burning Anxiety') publicly denounced Nazi treaty violations and racial dogma."
+        },
+        {
+          "stage": 5,
+          "question": "What illegal training institutions did Pastor Dietrich Bonhoeffer establish for dissident Protestant clergy opposing state control?",
+          "q": "What illegal training institutions did Pastor Dietrich Bonhoeffer establish for dissident Protestant clergy opposing state control?",
+          "options": [
+            "Catholic monastery schools",
+            "Napolas cadet academies",
+            "Strength Through Joy camps",
+            "Illegal underground seminaries"
+          ],
+          "answer": "Illegal underground seminaries",
+          "a": "Illegal underground seminaries",
+          "explanation": "Alongside Martin Niemöller, Dietrich Bonhoeffer defied the Nazified Reich Church by running underground seminaries until the Gestapo shut them down."
         }
       ],
       "utility_starters": null,
@@ -19096,9 +20166,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Widespread civilian obedience was sustained through genuine <strong>popular Nazi conformity</strong> driven by broad <strong>economic recovery approval</strong> alongside pervasive <strong>terror police compliance</strong> that silenced private misgivings.",
-          "heading": "The Reality of Conformity & Everyday Grumbling",
+          "heading": "Why did the majority of German citizens conform rather than openly resist?",
           "date": "1933–1939",
-          "step": 1
+          "step": 1,
+          "question": "Why did the majority of German citizens conform rather than openly resist?",
+          "questionHeading": "Why did the majority of German citizens conform rather than openly resist?",
+          "prose_hash": "29b6ecb266"
         },
         {
           "stage": 2,
@@ -19130,9 +20203,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Left-wing opponents organized courageous <strong>KPD and SPD underground cells</strong> and clandestine <strong>Rote Kapelle courier networks</strong>, actively resisting the regime through coordinated <strong>factory sabotage & illegal leaflets</strong>.",
-          "heading": "Left-Wing Underground Workers’ Resistance",
+          "heading": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
           "date": "1933–1938",
-          "step": 2
+          "step": 2,
+          "question": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
+          "questionHeading": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
+          "prose_hash": "1da5fd26c3"
         },
         {
           "stage": 3,
@@ -19164,9 +20240,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Working-class teenagers expressed overt <strong>Edelweiss Pirates defiance</strong> through spontaneous <strong>working-class youth rebellion</strong>, mocking official indoctrination by conducting <strong>camp beatings & anti-Nazi leaflets</strong> drops against Hitler Youth patrols.",
-          "heading": "Youth Rebellion: The Edelweiss Pirates",
+          "heading": "Why did the working-class Edelweiss Pirates defy Hitler Youth rules?",
           "date": "1936–1939",
-          "step": 3
+          "step": 3,
+          "question": "Why did the working-class Edelweiss Pirates defy Hitler Youth rules?",
+          "questionHeading": "Why did the working-class Edelweiss Pirates defy Hitler Youth rules?",
+          "prose_hash": "dc306bd5a2"
         },
         {
           "stage": 4,
@@ -19198,9 +20277,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Affluent bourgeois adolescents embraced subversive <strong>Swing Youth culture</strong>, flaunting forbidden <strong>American jazz music</strong> and British fashion as a stylish vehicle for <strong>middle-class non-conformity</strong> against regimented Nazi collectivism.",
-          "heading": "Cultural Dissent: The Swing Youth",
+          "heading": "How did middle-class youth use foreign music to reject Nazi conformity?",
           "date": "1937–1939",
-          "step": 4
+          "step": 4,
+          "question": "How did middle-class youth use foreign music to reject Nazi conformity?",
+          "questionHeading": "How did middle-class youth use foreign music to reject Nazi conformity?",
+          "prose_hash": "682660baec"
         },
         {
           "stage": 5,
@@ -19232,9 +20314,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Religious defiance surfaced when Pope Pius XI issued the encyclical <strong>Mit Brennender Sorge (1937)</strong>, echoed domestically by dissident theologians <strong>Pastor Martin Niemöller & Bonhoeffer</strong> and brave <strong>Bishop von Galen euthanasia protests</strong> against secret murder.",
-          "heading": "Religious Resistance: Niemöller & Galen",
+          "heading": "Why did the regime hesitate to execute high-profile church critics?",
           "date": "1937–1939",
-          "step": 5
+          "step": 5,
+          "question": "Why did the regime hesitate to execute high-profile church critics?",
+          "questionHeading": "Why did the regime hesitate to execute high-profile church critics?",
+          "prose_hash": "00f6c66e2f"
         }
       ],
       "causal_domino_spine": {
@@ -19251,7 +20336,8 @@ window.unitData = {
             "trigger": "Millions conformed due to economic recovery (unemployment falling to 300,000) and fear of the Gestapo, limiting dissent to private \"everyday grumbling.\"",
             "desc": "Millions conformed due to economic recovery (unemployment falling to 300,000) and fear of the Gestapo, limiting dissent to private \"everyday grumbling.\"",
             "connective": "Provided the regime with broad domestic stability and prevented spontaneous mass resistance.",
-            "question": "Why did the majority of German citizens conform rather than openly resist?"
+            "question": "Why did the majority of German citizens conform rather than openly resist?",
+            "prose_hash": "29b6ecb266"
           },
           {
             "step": 2,
@@ -19263,7 +20349,8 @@ window.unitData = {
             "trigger": "Outlawed socialist and communist cells distributed secret anti-Nazi pamphlets and sabotaged factory lines, but remained crippled by division and Gestapo arrests.",
             "desc": "Outlawed socialist and communist cells distributed secret anti-Nazi pamphlets and sabotaged factory lines, but remained crippled by division and Gestapo arrests.",
             "connective": "Maintained clandestine ideological defiance without being able to threaten the regime’s hold on state power.",
-            "question": "How did outlawed Communist and Socialist cells maintain clandestine resistance?"
+            "question": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
+            "prose_hash": "1da5fd26c3"
           },
           {
             "step": 3,
@@ -19275,7 +20362,8 @@ window.unitData = {
             "trigger": "Working-class youth rejected compulsory Hitler Youth drills, wearing flower badges, camping freely, and ambushing Nazi youth patrols in western cities.",
             "desc": "Working-class youth rejected compulsory Hitler Youth drills, wearing flower badges, camping freely, and ambushing Nazi youth patrols in western cities.",
             "connective": "Provoked harsh police crackdowns, culminating in public hangings of youth ringleaders in Cologne.",
-            "question": "Why did working-class youth rebel against compulsory state youth movements?"
+            "question": "Why did the working-class Edelweiss Pirates defy Hitler Youth rules?",
+            "prose_hash": "dc306bd5a2"
           },
           {
             "step": 4,
@@ -19287,7 +20375,8 @@ window.unitData = {
             "trigger": "Middle-class teenagers in Hamburg and Berlin embraced forbidden American jazz, English tweed fashion, and jitterbug dancing to reject totalitarian conformity.",
             "desc": "Middle-class teenagers in Hamburg and Berlin embraced forbidden American jazz, English tweed fashion, and jitterbug dancing to reject totalitarian conformity.",
             "connective": "Demonstrated passive cultural alienation among privileged youth, leading Himmler to order concentration camp internment.",
-            "question": "How did middle-class youth use foreign music to reject Nazi conformity?"
+            "question": "How did middle-class youth use foreign music to reject Nazi conformity?",
+            "prose_hash": "682660baec"
           },
           {
             "step": 5,
@@ -19299,7 +20388,8 @@ window.unitData = {
             "trigger": "Niemöller defied state control over Protestantism before his arrest, while Bishop Galen’s sermons exposed the Aktion T4 euthanasia programme, forcing Hitler to halt it.",
             "desc": "Niemöller defied state control over Protestantism before his arrest, while Bishop Galen’s sermons exposed the Aktion T4 euthanasia programme, forcing Hitler to halt it.",
             "connective": "Proved that principled moral opposition with broad public backing could force tactical retreats from the totalitarian state.",
-            "question": "Why did the regime hesitate to execute high-profile church critics?"
+            "question": "Why did the regime hesitate to execute high-profile church critics?",
+            "prose_hash": "00f6c66e2f"
           }
         ]
       },
@@ -19595,48 +20685,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Name one youth group that actively resisted the Nazi regime in the late 1930s.",
-            "answer": "The Edelweiss Pirates (working-class youth) or the Swing Youth (middle-class jazz enthusiasts)."
+            "stage": 1,
+            "question": "What is the term for low-level, non-violent opposition, such as telling an anti-Nazi joke or working slowly?",
+            "answer": "Passive Resistance",
+            "explanation": "Between 1933 and 1939, overt political resistance remained remarkably rare among ordinary Germans."
           },
           {
-            "question": "Which Catholic Bishop delivered famous sermons in Münster condemning Gestapo terror and euthanasia?",
-            "answer": "Bishop Clemens August Graf von Galen."
+            "stage": 2,
+            "question": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
+            "answer": "The Red Orchestra (Rote Kapelle)",
+            "explanation": "In Berlin, elite underground groups like the Rote Kapelle courier networks gathered sensitive military intelligence to undermine rearmament."
           },
           {
-            "question": "Which Protestant pastor co-founded the Confessing Church in opposition to the Nazi Reich Church?",
-            "answer": "Pastor Martin Niemöller (or Dietrich Bonhoeffer)."
+            "stage": 3,
+            "question": "What working-class youth opposition movement wore edelweiss badges and beat up Hitler Youth patrols?",
+            "answer": "The Edelweiss Pirates",
+            "explanation": "Expressing fearless Edelweiss Pirates defiance, working-class youths in Cologne, Essen, and Düsseldorf wore check shirts, dark trousers, and pinned the alpine edelweiss flower beneath their collars, deliberately violating the strict uniform regulations and disciplined regimentation of the Hitler Youth."
           },
           {
-            "question": "Who was appointed Reich Minister of Public Enlightenment and Propaganda in March 1933?",
-            "answer": "Dr Joseph Goebbels."
+            "stage": 4,
+            "question": "What middle-class youth group rebelled culturally by listening to banned American jazz and swing music?",
+            "answer": "The Swing Youth",
+            "explanation": "In affluent urban centers like Hamburg, Frankfurt, and Berlin, middle-class teenagers engaged in cultural dissent through the Swing Youth culture."
           },
           {
-            "question": "What cheap mass-produced radio did Goebbels introduce to broadcast Nazi propaganda directly into homes?",
-            "answer": "The Volksempfänger (VE301 \"People's Receiver\")."
+            "stage": 5,
+            "question": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
+            "answer": "Bishop Clemens August von Galen",
+            "explanation": "The most effective individual protest was led by the Bishop of Münster, whose outspoken sermons sparked famous Bishop von Galen euthanasia protests."
           },
           {
-            "question": "Who headed the SS and transformed it into the primary terror organization of the Third Reich?",
-            "answer": "Reichsführer-SS Heinrich Himmler."
+            "stage": 1,
+            "question": "What was the most widespread form of everyday non-violent dissent among ordinary Germans?",
+            "answer": "Everyday grumbling and public silence",
+            "explanation": "Pervasive fear of the Gestapo, concentration camps, and local Block Wardens created an atmosphere of universal surveillance, compelling citizens to conform through Nazi salutes and public silence to protect their families and jobs."
           },
           {
-            "question": "What law passed in March 1933 gave Adolf Hitler the power to enact laws without the Reichstag?",
-            "answer": "The Enabling Act (Gesetz zur Behebung der Not von Volk und Reich)."
+            "stage": 2,
+            "question": "From which foreign city did the exiled Social Democratic (SPD) leadership smuggle illegal anti-Nazi newspapers into Germany?",
+            "answer": "Prague",
+            "explanation": "Operating in exile in Prague, SPD organizers concealed illegal newspapers inside seed packets and bicycle manuals to report factory grievances inside Germany."
           },
           {
-            "question": "What catastrophic economic event in October 1929 plunged Germany into mass unemployment?",
-            "answer": "The Wall Street Crash in the United States."
+            "stage": 3,
+            "question": "In what year did membership of the Hitler Youth become legally compulsory?",
+            "answer": "1936",
+            "explanation": "As Hitler Youth membership became increasingly militarized and compulsory, rebellious adolescents formed counter-cultural protest groups across western industrial cities."
           },
           {
-            "question": "What emergency decree did Hindenburg sign after the Reichstag Fire in February 1933, suspending civil liberties?",
-            "answer": "The Decree for the Protection of People and State (Reichstag Fire Decree)."
+            "stage": 4,
+            "question": "What was the name of the middle-class youth opposition group found in cities like Berlin and Hamburg?",
+            "answer": "The Swing Youth",
+            "explanation": "In affluent urban centers like Hamburg, Frankfurt, and Berlin, middle-class teenagers engaged in cultural dissent through the Swing Youth culture."
           },
           {
-            "question": "What law passed in March 1933 gave Hitler dictatorial power to enact legislation without the Reichstag?",
-            "answer": "The Enabling Act (Gesetz zur Behebung der Not von Volk und Reich)."
+            "stage": 5,
+            "question": "Which Protestant theologian and pastor engaged in active resistance against the regime, ultimately joining the anti-Hitler conspiracy?",
+            "answer": "Dietrich Bonhoeffer",
+            "explanation": "In Protestant circles, theological opposition was spearheaded by Pastor Martin Niemöller & Bonhoeffer, who refused state control and established illegal underground seminaries for dissident pastors."
           }
         ]
       },
@@ -19696,8 +20805,8 @@ window.unitData = {
         {
           "title": "The Domestic Ideal: Kinder, Küche, Kirche and the Anti-Feminist Reaction (1933)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> During the Weimar Republic, German women experienced unprecedented emancipation, gaining voting rights and entering medicine, teaching, and commerce. However, Adolf Hitler and the Nazi Party viewed female liberation as a decadent social disease that had caused annual birth rates to plummet. They demanded the complete **rejection of Weimar 'New Woman'** culture, condemning female independence as a threat to racial survival.\n\n<span class=\"para-ref\">[1.2]</span> Nazi ideology promoted the famous slogan **'Kinder, Küche, Kirche'** (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace **traditional domestic roles**. Under Reich Women's Leader Gertrud Scholtz-Klink, all female associations were centralized into the Nazi Women's League, training young women in home economics and infant care to serve the national racial community as self-sacrificing mothers.",
-          "content": "<span class=\"para-ref\">[1.1]</span> During the Weimar Republic, German women experienced unprecedented emancipation, gaining voting rights and entering medicine, teaching, and commerce. However, Adolf Hitler and the Nazi Party viewed female liberation as a decadent social disease that had caused annual birth rates to plummet. They demanded the complete **rejection of Weimar 'New Woman'** culture, condemning female independence as a threat to racial survival.\n\n<span class=\"para-ref\">[1.2]</span> Nazi ideology promoted the famous slogan **'Kinder, Küche, Kirche'** (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace **traditional domestic roles**. Under Reich Women's Leader Gertrud Scholtz-Klink, all female associations were centralized into the Nazi Women's League, training young women in home economics and infant care to serve the national racial community as self-sacrificing mothers.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Reversing Weimar female emancipation, the Nazi regime banned women from legal and medical careers, capped female university entry at 10%, and promoted **Kinder, Küche, Kirche** (Children, Kitchen, Church). Hitler rejected the Weimar 'New Woman', condemning female career independence as a threat to German birth rates.\n\n<span class=\"para-ref\">[1.2]</span> Steering women back into **traditional domestic roles** and motherhood, Reich Women's Leader **Gertrud Scholtz-Klink** merged all female societies into **the Nazi Women's League**. Six million members attended courses in home cooking, thrifty housekeeping, infant care, and racial duty.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Reversing Weimar female emancipation, the Nazi regime banned women from legal and medical careers, capped female university entry at 10%, and promoted **Kinder, Küche, Kirche** (Children, Kitchen, Church). Hitler rejected the Weimar 'New Woman', condemning female career independence as a threat to German birth rates.\n\n<span class=\"para-ref\">[1.2]</span> Steering women back into **traditional domestic roles** and motherhood, Reich Women's Leader **Gertrud Scholtz-Klink** merged all female societies into **the Nazi Women's League**. Six million members attended courses in home cooking, thrifty housekeeping, infant care, and racial duty.",
           "sources": [
             {
               "id": "weimar_l13_source_goebbels_womanhood",
@@ -19753,8 +20862,8 @@ window.unitData = {
         {
           "title": "The Law for the Encouragement of Marriage: Subsidies and Childbirth Loans (1933)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> Confronted by declining birth rates, the Nazi regime introduced aggressive financial subsidies to encourage early marriage and large families. In June 1933, the government enacted the landmark **1933 Marriage Loan Act**, providing young newlywed Aryan couples with substantial financial support. Eligible couples were issued **1,000-mark marriage coupons**, equivalent to nine months of an average industrial worker's wages, redeemable for household furniture and domestic goods.\n\n<span class=\"para-ref\">[2.2]</span> To stimulate population growth directly, the legislation included an inventive debt-relief mechanism providing **25% loan forgiveness per child** born. Having four children completely cancelled the initial debt, effectively paying couples to produce Aryan offspring. This financial incentive sparked an immediate surge in marriages, rewarding couples who embraced early parenthood while the state penalized childless families through heavy income tax surcharges.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Confronted by declining birth rates, the Nazi regime introduced aggressive financial subsidies to encourage early marriage and large families. In June 1933, the government enacted the landmark **1933 Marriage Loan Act**, providing young newlywed Aryan couples with substantial financial support. Eligible couples were issued **1,000-mark marriage coupons**, equivalent to nine months of an average industrial worker's wages, redeemable for household furniture and domestic goods.\n\n<span class=\"para-ref\">[2.2]</span> To stimulate population growth directly, the legislation included an inventive debt-relief mechanism providing **25% loan forgiveness per child** born. Having four children completely cancelled the initial debt, effectively paying couples to produce Aryan offspring. This financial incentive sparked an immediate surge in marriages, rewarding couples who embraced early parenthood while the state penalized childless families through heavy income tax surcharges.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Confronted by falling birth rates, the government enacted **the Law for the Encouragement of Marriage** in June 1933 to subsidise large Aryan families. Young newlywed Aryan couples received interest-free 1,000-mark marriage loan coupons — worth nine months' factory wages — for furniture, provided the bride left her job.\n\n<span class=\"para-ref\">[2.2]</span> To boost family size directly, the law granted **25% loan forgiveness per child** born, so having **four children** cancelled the entire debt. Mothers of **eight or more children** later won gold honours, while childless couples faced extra income tax surcharges.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Confronted by falling birth rates, the government enacted **the Law for the Encouragement of Marriage** in June 1933 to subsidise large Aryan families. Young newlywed Aryan couples received interest-free 1,000-mark marriage loan coupons — worth nine months' factory wages — for furniture, provided the bride left her job.\n\n<span class=\"para-ref\">[2.2]</span> To boost family size directly, the law granted **25% loan forgiveness per child** born, so having **four children** cancelled the entire debt. Mothers of **eight or more children** later won gold honours, while childless couples faced extra income tax surcharges.",
           "sources": [
             {
               "id": "weimar_l13_source_c",
@@ -19814,8 +20923,8 @@ window.unitData = {
         {
           "title": "The Mother's Cross and the Lebensborn Racial Breeding Program (1935–1938)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> To glorify prolific motherhood, the regime established prestigious national honours for fertile women. In 1938, Hitler instituted **Mother's Cross medals**, awarded annually on his mother's birthday. Medals were graded into bronze for four children, silver for six, and the revered **gold cross (8 children)** or more. Recipients received public salutes from the Hitler Youth, preferential shopping queues, and seats of honour at state ceremonies.\n\n<span class=\"para-ref\">[3.2]</span> Beyond conventional family units, Heinrich Himmler's SS founded the secretive **Lebensborn maternity program** in 1935. Initially established to provide confidential maternity homes for unmarried women of pure Nordic ancestry, Lebensborn evolved into a selective breeding experiment. Unmarried Aryan women were actively encouraged to mate with SS officers in state clinics to produce genetically pure children, prioritizing demographic expansion over traditional Christian moral values.",
-          "content": "<span class=\"para-ref\">[3.1]</span> To glorify prolific motherhood, the regime established prestigious national honours for fertile women. In 1938, Hitler instituted **Mother's Cross medals**, awarded annually on his mother's birthday. Medals were graded into bronze for four children, silver for six, and the revered **gold cross (8 children)** or more. Recipients received public salutes from the Hitler Youth, preferential shopping queues, and seats of honour at state ceremonies.\n\n<span class=\"para-ref\">[3.2]</span> Beyond conventional family units, Heinrich Himmler's SS founded the secretive **Lebensborn maternity program** in 1935. Initially established to provide confidential maternity homes for unmarried women of pure Nordic ancestry, Lebensborn evolved into a selective breeding experiment. Unmarried Aryan women were actively encouraged to mate with SS officers in state clinics to produce genetically pure children, prioritizing demographic expansion over traditional Christian moral values.",
+          "text": "<span class=\"para-ref\">[3.1]</span> To glorify large families, Hitler introduced **the Cross of Honour of the German Mother (Mutterkreuz)** in 1938, awarded each year on his mother's birthday. Medals gave **four for bronze and six for silver**, plus a revered gold cross for **8 or more** children, earning seats of honour and Hitler Youth salutes.\n\n<span class=\"para-ref\">[3.2]</span> Beyond marriage, Heinrich Himmler's SS founded the secretive **Lebensborn** maternity programme in 1935. Starting as private maternity homes for unmarried Nordic women, Lebensborn encouraged unmarried Aryan women to have \"genetically pure\" children with SS officers in state clinics.",
+          "content": "<span class=\"para-ref\">[3.1]</span> To glorify large families, Hitler introduced **the Cross of Honour of the German Mother (Mutterkreuz)** in 1938, awarded each year on his mother's birthday. Medals gave **four for bronze and six for silver**, plus a revered gold cross for **8 or more** children, earning seats of honour and Hitler Youth salutes.\n\n<span class=\"para-ref\">[3.2]</span> Beyond marriage, Heinrich Himmler's SS founded the secretive **Lebensborn** maternity programme in 1935. Starting as private maternity homes for unmarried Nordic women, Lebensborn encouraged unmarried Aryan women to have \"genetically pure\" children with SS officers in state clinics.",
           "act_title": "Stage 3: The Mother's Cross & Lebensborn Programme",
           "sources": [
             {
@@ -19871,8 +20980,8 @@ window.unitData = {
         {
           "title": "Forced Sterilisation and Eugenic Hygiene: The Hereditary Health Law (1933)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> Nazi demographic engineering was ruthlessly governed by biological eugenics, restricting reproduction strictly to citizens deemed genetically valuable. In July 1933, the regime enacted the sweeping **1933 Hereditary Health Act**, formally known as the Law for the Prevention of Hereditarily Diseased Offspring. This statute established specialized Genetic Health Courts empowered to mandate compulsory surgical operations on individuals diagnosed with alleged genetic defects.\n\n<span class=\"para-ref\">[4.2]</span> Under this draconian **forced sterilization law**, over **400,000 citizens sterilized** against their will, targeting individuals suffering from hereditary blindness, deafness, epilepsy, physical deformities, schizophrenia, and severe alcoholism. The overwhelming majority of victims were young working-class women. Furthermore, the 1935 Marital Health Law required couples to obtain medical certificates of genetic fitness before marriage, enforcing state control over human reproduction.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Nazi demographic engineering was ruthlessly governed by biological eugenics, restricting reproduction strictly to citizens deemed genetically valuable. In July 1933, the regime enacted the sweeping **1933 Hereditary Health Act**, formally known as the Law for the Prevention of Hereditarily Diseased Offspring. This statute established specialized Genetic Health Courts empowered to mandate compulsory surgical operations on individuals diagnosed with alleged genetic defects.\n\n<span class=\"para-ref\">[4.2]</span> Under this draconian **forced sterilization law**, over **400,000 citizens sterilized** against their will, targeting individuals suffering from hereditary blindness, deafness, epilepsy, physical deformities, schizophrenia, and severe alcoholism. The overwhelming majority of victims were young working-class women. Furthermore, the 1935 Marital Health Law required couples to obtain medical certificates of genetic fitness before marriage, enforcing state control over human reproduction.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Alongside gold medals requiring Hitler Youth boys to **salute her** and later Duty Year rules (**a policy forcing young women to work on farms or in factories**), eugenics barred \"unfit\" births. Under the July 1933 Hereditary Health Act, Genetic Health Courts ordered **compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities**.\n\n<span class=\"para-ref\">[4.2]</span> Under this harsh law, **over 400,000** German **citizens** — mostly working-class people — were sterilised against their will. Courts targeted hereditary blindness, deafness, epilepsy, schizophrenia, and severe alcoholism, while the 1935 Marital Health Law required genetic fitness certificates before marriage.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Alongside gold medals requiring Hitler Youth boys to **salute her** and later Duty Year rules (**a policy forcing young women to work on farms or in factories**), eugenics barred \"unfit\" births. Under the July 1933 Hereditary Health Act, Genetic Health Courts ordered **compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities**.\n\n<span class=\"para-ref\">[4.2]</span> Under this harsh law, **over 400,000** German **citizens** — mostly working-class people — were sterilised against their will. Courts targeted hereditary blindness, deafness, epilepsy, schizophrenia, and severe alcoholism, while the 1935 Marital Health Law required genetic fitness certificates before marriage.",
           "image": "/images/mothers_cross_award.jpg",
           "image_alt": "The Cross of Honour of the German Mother medal in blue and white enamel with ribbon",
           "caption": "The Cross of Honour of the German Mother (Ehrenkreuz der Deutschen Mutter): Instituted in December 1938, this state medal militarized motherhood into a civic duty. Awarded on Hitler’s mother’s birthday (12 August), mothers received Bronze for 4–5 children, Silver for 6–7, and Gold for 8 or more racially pure Aryan children.",
@@ -19932,8 +21041,8 @@ window.unitData = {
         {
           "title": "The Policy Reversal: Four-Year Plan Rearmament and the Duty Year (1937–1939)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> By the late 1930s, Nazi policies towards women encountered severe economic contradictions. As Hermann Göring’s **Four-Year Plan rearmament** accelerated armaments production and military conscription depleted industrial factory workforces, severe labor shortages threatened war preparations. Despite years of domestic propaganda, the regime was forced to reverse its ideological stance and recruit women back into the industrial labor market.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, the requirement that marriage-loan recipients remain unemployed was revoked, and in 1938 a compulsory **Duty Year labour service** was imposed on young unmarried women in agriculture and textiles. Consequently, **women factory workers expand** rapidly, pushing female employment to 14.6 million by May 1939. Women constituted 37% of Germany’s workforce on the eve of war, demonstrating how military mobilization shattered domestic propaganda ideals.",
-          "content": "<span class=\"para-ref\">[5.1]</span> By the late 1930s, Nazi policies towards women encountered severe economic contradictions. As Hermann Göring’s **Four-Year Plan rearmament** accelerated armaments production and military conscription depleted industrial factory workforces, severe labor shortages threatened war preparations. Despite years of domestic propaganda, the regime was forced to reverse its ideological stance and recruit women back into the industrial labor market.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, the requirement that marriage-loan recipients remain unemployed was revoked, and in 1938 a compulsory **Duty Year labour service** was imposed on young unmarried women in agriculture and textiles. Consequently, **women factory workers expand** rapidly, pushing female employment to 14.6 million by May 1939. Women constituted 37% of Germany’s workforce on the eve of war, demonstrating how military mobilization shattered domestic propaganda ideals.",
+          "text": "<span class=\"para-ref\">[5.1]</span> By the late 1930s, Nazi domestic ideals collided with **the Four Year Plan for rearmament**. **Rapid military rearmament under the Four-Year Plan created acute labour shortages** as men were conscripted, so munitions factories urgently needed women back on production lines.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, marriage-loan wives were allowed back into factory jobs, and in 1938 young unmarried women faced a compulsory Duty Year in farming or textiles. As a result, female employment **went up, rising from 11.6 million to 14.6 million** (37% of Germany's workforce) by May 1939.",
+          "content": "<span class=\"para-ref\">[5.1]</span> By the late 1930s, Nazi domestic ideals collided with **the Four Year Plan for rearmament**. **Rapid military rearmament under the Four-Year Plan created acute labour shortages** as men were conscripted, so munitions factories urgently needed women back on production lines.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, marriage-loan wives were allowed back into factory jobs, and in 1938 young unmarried women faced a compulsory Duty Year in farming or textiles. As a result, female employment **went up, rising from 11.6 million to 14.6 million** (37% of Germany's workforce) by May 1939.",
           "act_title": "Stage 5: Rearmament Demands & The Policy Reversal",
           "sources": [
             {
@@ -19989,216 +21098,284 @@ window.unitData = {
       ],
       "quiz": [
         {
+          "stage": 1,
+          "question": "What three German words (starting with K) summarised the traditional Nazi ideal for women?",
           "q": "What three German words (starting with K) summarised the traditional Nazi ideal for women?",
-          "a": "Kinder, Küche, Kirche",
           "options": [
             "Kraft, Kultur, Kampf",
             "Kinder, Küche, Kirche",
             "Krankheit, Kontrolle, Kreuz",
             "Krieg, Kunst, Kaiser"
-          ]
+          ],
+          "answer": "Kinder, Küche, Kirche",
+          "a": "Kinder, Küche, Kirche",
+          "explanation": "Nazi ideology promoted the famous slogan 'Kinder, Küche, Kirche' (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace traditional domestic roles."
         },
         {
+          "stage": 1,
+          "question": "Translate those three words into English.",
           "q": "Translate those three words into English.",
-          "a": "Children, Kitchen, Church",
           "options": [
+            "Children, Kitchen, Church",
             "Sickness, Control, Cross",
             "Strength, Culture, Struggle",
-            "Children, Kitchen, Church",
             "War, Art, Emperor"
-          ]
+          ],
+          "answer": "Children, Kitchen, Church",
+          "a": "Children, Kitchen, Church",
+          "explanation": "Nazi ideology promoted the famous slogan 'Kinder, Küche, Kirche' (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace traditional domestic roles."
         },
         {
+          "stage": 1,
+          "question": "Who was the 'Reich Women's Leader' in charge of all female organisations?",
+          "q": "Who was the 'Reich Women's Leader' in charge of all female organisations?",
+          "options": [
+            "Leni Riefenstahl",
+            "Sophie Scholl",
+            "Eva Braun",
+            "Gertrud Scholtz-Klink"
+          ],
+          "answer": "Gertrud Scholtz-Klink",
+          "a": "Gertrud Scholtz-Klink",
+          "explanation": "Under Reich Women's Leader Gertrud Scholtz-Klink, all female associations were centralized into the Nazi Women's League, training young women in home economics and infant care to serve the national racial community as self-sacrificing mothers."
+        },
+        {
+          "stage": 1,
+          "question": "Into which centralized organization were all German female associations merged under Reich Women's Leader Gertrud Scholtz-Klink?",
+          "q": "Into which centralized organization were all German female associations merged under Reich Women's Leader Gertrud Scholtz-Klink?",
+          "options": [
+            "The Women's Political Council",
+            "The League of German Girls",
+            "The Nazi Women's League",
+            "The Confessional Sisterhood"
+          ],
+          "answer": "The Nazi Women's League",
+          "a": "The Nazi Women's League",
+          "explanation": "Centralizing female groups under the Nazi Women's League trained women in domestic economy and infant care while rejecting Weimar 'New Woman' independence."
+        },
+        {
+          "stage": 2,
+          "question": "What was the name of the 1933 law that gave couples 1,000 marks to marry?",
           "q": "What was the name of the 1933 law that gave couples 1,000 marks to marry?",
-          "a": "The Law for the Encouragement of Marriage",
           "options": [
             "The Law for the Protection of German Blood",
+            "The Law for the Encouragement of Marriage",
             "The Nuremberg Laws",
-            "The Four Year Plan",
-            "The Law for the Encouragement of Marriage"
-          ]
-        },
-        {
-          "q": "What was the condition placed on the wife for the couple to receive this loan?",
-          "a": "She had to quit her job",
-          "options": [
-            "She had to quit her job",
-            "She had to swear loyalty to Hitler",
-            "She had to have blonde hair and blue eyes",
-            "She had to join the BDM"
-          ]
-        },
-        {
-          "q": "How much of the marriage loan was forgiven for each child born?",
-          "a": "25% / one quarter",
-          "options": [
-            "25% / one quarter",
-            "100% / all of it",
-            "10%",
-            "50% / one half"
-          ]
-        },
-        {
-          "q": "How many children did a woman have to give birth to in order to win the Gold Mother's Cross?",
-          "a": "8 or more",
-          "options": [
-            "6",
-            "8 or more",
-            "4",
-            "10"
-          ]
-        },
-        {
-          "q": "What did Hitler Youth members have to do if they saw a woman wearing a Gold Mother's Cross?",
-          "a": "Salute her",
-          "options": [
-            "Give her money",
-            "Sing the Nazi anthem",
-            "Carry her shopping",
-            "Salute her"
-          ]
-        },
-        {
-          "q": "What was the name of the SS 'Spring of Life' breeding programme started by Heinrich Himmler in 1935?",
-          "a": "Lebensborn",
-          "options": [
-            "Gleichschaltung",
-            "Lebensraum",
-            "Lebensborn",
-            "Kraft durch Freude"
-          ]
-        },
-        {
-          "q": "What did the July 1933 Law for the Prevention of Hereditarily Diseased Offspring mandate?",
-          "a": "Compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities",
-          "options": [
-            "Compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities",
-            "Free university scholarships for disabled children",
-            "Mandatory military service for all married mothers",
-            "The immediate closure of all maternity hospitals"
+            "The Four Year Plan"
           ],
-          "question": "What did the July 1933 Law for the Prevention of Hereditarily Diseased Offspring mandate?",
-          "answer": "Compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities"
+          "answer": "The Law for the Encouragement of Marriage",
+          "a": "The Law for the Encouragement of Marriage",
+          "explanation": "Confronted by declining birth rates, the Nazi regime introduced aggressive financial subsidies to encourage early marriage and large families."
         },
         {
-          "q": "What medal was instituted in 1938 to reward German mothers who gave birth to large Aryan families?",
-          "a": "The Cross of Honour of the German Mother (Mutterkreuz)",
-          "options": [
-            "The Cross of Honour of the German Mother (Mutterkreuz)",
-            "The Iron Cross First Class",
-            "The Order of the Red Eagle",
-            "The Blue Max"
-          ],
-          "question": "What medal was instituted in 1938 to reward German mothers who gave birth to large Aryan families?",
-          "answer": "The Cross of Honour of the German Mother (Mutterkreuz)"
-        },
-        {
+          "stage": 2,
+          "question": "How many children did a mother need to have to receive the Gold Cross of Honour of the German Mother?",
           "q": "How many children did a mother need to have to receive the Gold Cross of Honour of the German Mother?",
-          "a": "Eight or more children",
           "options": [
             "Eight or more children",
             "Four children",
             "Two children",
             "Six children"
           ],
-          "question": "How many children did a mother need to have to receive the Gold Cross of Honour of the German Mother?",
-          "answer": "Eight or more children"
+          "answer": "Eight or more children",
+          "a": "Eight or more children",
+          "explanation": "Having four children completely cancelled the initial debt, effectively paying couples to produce Aryan offspring."
         },
         {
-          "q": "Who was the 'Reich Women's Leader' in charge of all female organisations?",
-          "a": "Gertrud Scholtz-Klink",
+          "stage": 2,
+          "question": "What percentage of a couple's 1,000-mark government marriage loan was cancelled for each child they produced?",
+          "q": "What percentage of a couple's 1,000-mark government marriage loan was cancelled for each child they produced?",
           "options": [
-            "Leni Riefenstahl",
-            "Sophie Scholl",
-            "Gertrud Scholtz-Klink",
-            "Eva Braun"
-          ]
-        },
-        {
-          "q": "What financial incentive was established under the June 1933 Law for the Encouragement of Marriage?",
-          "a": "An interest-free loan of 1,000 Reichsmarks, reduced by 25% for each child born",
-          "options": [
-            "An interest-free loan of 1,000 Reichsmarks, reduced by 25% for each child born",
-            "A free luxury car for every newlywed couple",
-            "Free lifetime housing in central Berlin",
-            "An exemption from all national and local income taxes"
+            "5% loan forgiveness per child",
+            "10% loan forgiveness per child",
+            "50% loan forgiveness per child",
+            "25% loan forgiveness per child"
           ],
-          "question": "What financial incentive was established under the June 1933 Law for the Encouragement of Marriage?",
-          "answer": "An interest-free loan of 1,000 Reichsmarks, reduced by 25% for each child born"
+          "answer": "25% loan forgiveness per child",
+          "a": "25% loan forgiveness per child",
+          "explanation": "Cancelling 25% of the marriage loan per birth meant couples who had four children never had to repay the initial 1,000-mark state subsidy."
         },
         {
-          "q": "What percentage quota capped female enrollment in universities under Nazi policy?",
-          "a": "A strict ten percent quota",
+          "stage": 2,
+          "question": "How many children did an Aryan couple need to have in order to cancel their entire 1,000-mark marriage loan debt?",
+          "q": "How many children did an Aryan couple need to have in order to cancel their entire 1,000-mark marriage loan debt?",
           "options": [
-            "A strict ten percent quota",
-            "A fifty percent quota",
-            "A total ban on female attendance",
-            "A twenty-five percent quota"
+            "Two children",
+            "Six children",
+            "Four children",
+            "Eight children"
           ],
-          "question": "What percentage quota capped female enrollment in universities under Nazi policy?",
-          "answer": "A strict ten percent quota"
+          "answer": "Four children",
+          "a": "Four children",
+          "explanation": "With 25% debt relief granted per birth under the 1933 Marriage Loan Act, giving birth to four children completely wiped out the loan."
         },
         {
-          "q": "Which female professionals were immediately forced to give up their jobs in 1933?",
-          "a": "Female teachers, doctors, and civil servants",
+          "stage": 3,
+          "question": "How many children did a woman have to give birth to in order to win the Gold Mother's Cross?",
+          "q": "How many children did a woman have to give birth to in order to win the Gold Mother's Cross?",
           "options": [
-            "Female teachers, doctors, and civil servants",
-            "Female nurses and midwives",
-            "Female factory workers and farmers",
-            "Female shop assistants and waitresses"
-          ]
+            "6",
+            "8 or more",
+            "4",
+            "10"
+          ],
+          "answer": "8 or more",
+          "a": "8 or more",
+          "explanation": "Medals were graded into bronze for four children, silver for six, and the revered gold cross (8 children) or more."
         },
         {
-          "q": "What profession were women completely banned from entering in 1936?",
-          "a": "The legal profession / becoming judges or lawyers",
+          "stage": 3,
+          "question": "What was the name of the SS 'Spring of Life' breeding programme started by Heinrich Himmler in 1935?",
+          "q": "What was the name of the SS 'Spring of Life' breeding programme started by Heinrich Himmler in 1935?",
           "options": [
-            "The teaching profession",
-            "Medicine and nursing",
-            "Acting and film directing",
-            "The legal profession / becoming judges or lawyers"
-          ]
+            "Lebensborn",
+            "Gleichschaltung",
+            "Lebensraum",
+            "Kraft durch Freude"
+          ],
+          "answer": "Lebensborn",
+          "a": "Lebensborn",
+          "explanation": "Beyond conventional family units, Heinrich Himmler's SS founded the secretive Lebensborn maternity program in 1935."
         },
         {
+          "stage": 3,
+          "question": "What medal was instituted in 1938 to reward German mothers who gave birth to large Aryan families?",
+          "q": "What medal was instituted in 1938 to reward German mothers who gave birth to large Aryan families?",
+          "options": [
+            "The Iron Cross First Class",
+            "The Order of the Red Eagle",
+            "The Blue Max",
+            "The Cross of Honour of the German Mother (Mutterkreuz)"
+          ],
+          "answer": "The Cross of Honour of the German Mother (Mutterkreuz)",
+          "a": "The Cross of Honour of the German Mother (Mutterkreuz)",
+          "explanation": "To glorify prolific motherhood, the regime established prestigious national honours for fertile women."
+        },
+        {
+          "stage": 3,
+          "question": "How many children did a German mother need to receive the Bronze and Silver grades of the Mother's Cross instituted in 1938?",
+          "q": "How many children did a German mother need to receive the Bronze and Silver grades of the Mother's Cross instituted in 1938?",
+          "options": [
+            "One for bronze and two for silver",
+            "Two for bronze and four for silver",
+            "Four for bronze and six for silver",
+            "Six for bronze and ten for silver"
+          ],
+          "answer": "Four for bronze and six for silver",
+          "a": "Four for bronze and six for silver",
+          "explanation": "Awarded annually on Hitler's mother's birthday, the Mother's Cross honoured four children with bronze, six with silver, and eight or more with gold."
+        },
+        {
+          "stage": 4,
+          "question": "What did Hitler Youth members have to do if they saw a woman wearing a Gold Mother's Cross?",
+          "q": "What did Hitler Youth members have to do if they saw a woman wearing a Gold Mother's Cross?",
+          "options": [
+            "Give her money",
+            "Salute her",
+            "Sing the Nazi anthem",
+            "Carry her shopping"
+          ],
+          "answer": "Salute her",
+          "a": "Salute her",
+          "explanation": "In July 1933, the regime enacted the sweeping 1933 Hereditary Health Act, formally known as the Law for the Prevention of Hereditarily Diseased Offspring."
+        },
+        {
+          "stage": 4,
+          "question": "What did the July 1933 Law for the Prevention of Hereditarily Diseased Offspring mandate?",
+          "q": "What did the July 1933 Law for the Prevention of Hereditarily Diseased Offspring mandate?",
+          "options": [
+            "Compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities",
+            "Free university scholarships for disabled children",
+            "Mandatory military service for all married mothers",
+            "The immediate closure of all maternity hospitals"
+          ],
+          "answer": "Compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities",
+          "a": "Compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities",
+          "explanation": "This statute established specialized Genetic Health Courts empowered to mandate compulsory surgical operations on individuals diagnosed with alleged genetic defects."
+        },
+        {
+          "stage": 4,
+          "question": "What was the 'Compulsory Duty Year' introduced in 1937?",
+          "q": "What was the 'Compulsory Duty Year' introduced in 1937?",
+          "options": [
+            "A policy forcing young women to attend university",
+            "A policy forcing young women to join the army",
+            "A policy forcing young women to marry SS officers",
+            "A policy forcing young women to work on farms or in factories"
+          ],
+          "answer": "A policy forcing young women to work on farms or in factories",
+          "a": "A policy forcing young women to work on farms or in factories",
+          "explanation": "The overwhelming majority of victims were young working-class women."
+        },
+        {
+          "stage": 4,
+          "question": "Over how many citizens were forcibly sterilized against their will under the July 1933 Hereditary Health Act?",
+          "q": "Over how many citizens were forcibly sterilized against their will under the July 1933 Hereditary Health Act?",
+          "options": [
+            "Around 5,000 citizens",
+            "Exactly 25,000 citizens",
+            "Over 400,000 citizens",
+            "Over 3 million citizens"
+          ],
+          "answer": "Over 400,000 citizens",
+          "a": "Over 400,000 citizens",
+          "explanation": "Specialized Genetic Health Courts ordered compulsory surgical sterilization for over 400,000 people diagnosed with alleged hereditary illnesses or disabilities."
+        },
+        {
+          "stage": 5,
+          "question": "What economic plan, introduced by Göring in 1936, forced the Nazis to change their minds about women working?",
           "q": "What economic plan, introduced by Göring in 1936, forced the Nazis to change their minds about women working?",
-          "a": "The Four Year Plan for rearmament",
           "options": [
             "The New Plan for trade",
+            "The Four Year Plan for rearmament",
             "The Dawes Plan",
-            "The Young Plan",
-            "The Four Year Plan for rearmament"
-          ]
+            "The Young Plan"
+          ],
+          "answer": "The Four Year Plan for rearmament",
+          "a": "The Four Year Plan for rearmament",
+          "explanation": "As Hermann Göring’s Four-Year Plan rearmament accelerated armaments production and military conscription depleted industrial factory workforces, severe labor shortages threatened war preparations."
         },
         {
+          "stage": 5,
+          "question": "Why did Nazi policy reverse in the late 1930s to encourage women back into the industrial workforce?",
           "q": "Why did Nazi policy reverse in the late 1930s to encourage women back into the industrial workforce?",
-          "a": "Because rapid military rearmament under the Four-Year Plan created acute labour shortages",
           "options": [
             "Because rapid military rearmament under the Four-Year Plan created acute labour shortages",
             "Because Hitler embraced modern feminist equality",
             "Because the League of Nations demanded female employment",
             "Because men refused to work in weapons factories"
           ],
-          "question": "Why did Nazi policy reverse in the late 1930s to encourage women back into the industrial workforce?",
-          "answer": "Because rapid military rearmament under the Four-Year Plan created acute labour shortages"
+          "answer": "Because rapid military rearmament under the Four-Year Plan created acute labour shortages",
+          "a": "Because rapid military rearmament under the Four-Year Plan created acute labour shortages",
+          "explanation": "As Hermann Göring’s Four-Year Plan rearmament accelerated armaments production and military conscription depleted industrial factory workforces, severe labor shortages threatened war preparations."
         },
         {
-          "q": "What was the 'Compulsory Duty Year' introduced in 1937?",
-          "a": "A policy forcing young women to work on farms or in factories",
-          "options": [
-            "A policy forcing young women to attend university",
-            "A policy forcing young women to join the army",
-            "A policy forcing young women to work on farms or in factories",
-            "A policy forcing young women to marry SS officers"
-          ]
-        },
-        {
+          "stage": 5,
+          "question": "Did female employment go up or down between 1933 and 1939? (Give the statistics if you can).",
           "q": "Did female employment go up or down between 1933 and 1939? (Give the statistics if you can).",
-          "a": "It went up, rising from 11.6 million to 14.6 million",
           "options": [
-            "It went up, rising from 11.6 million to 14.6 million",
             "It dropped to zero by 1939",
             "It went down, falling from 14.6 million to 11.6 million",
-            "It stayed exactly the same"
-          ]
+            "It stayed exactly the same",
+            "It went up, rising from 11.6 million to 14.6 million"
+          ],
+          "answer": "It went up, rising from 11.6 million to 14.6 million",
+          "a": "It went up, rising from 11.6 million to 14.6 million",
+          "explanation": "Consequently, women factory workers expand rapidly, pushing female employment to 14.6 million by May 1939."
+        },
+        {
+          "stage": 5,
+          "question": "Why did the Nazi regime revoke the rule barring marriage-loan recipients from paid employment in 1937?",
+          "q": "Why did the Nazi regime revoke the rule barring marriage-loan recipients from paid employment in 1937?",
+          "options": [
+            "German birth rates had fallen to zero by 1937",
+            "Gertrud Scholtz-Klink campaigned for feminist career equality",
+            "Rearmament under the Four-Year Plan created severe labour shortages",
+            "Trade unions went on strike demanding female factory quotas"
+          ],
+          "answer": "Rearmament under the Four-Year Plan created severe labour shortages",
+          "a": "Rearmament under the Four-Year Plan created severe labour shortages",
+          "explanation": "Military conscription and rapid rearmament created acute industrial labour shortages, forcing the Nazis to abandon domestic dogma and recruit women back into factories."
         }
       ],
       "utility_starters": null,
@@ -20456,9 +21633,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Nazi social engineering championed the motto <strong>'Kinder, Küche, Kirche'</strong> to force women back into <strong>traditional domestic roles</strong> as child-bearers, representing a total <strong>rejection of Weimar 'New Woman'</strong> freedom.",
-          "heading": "The Domestic Ideal: Kinder, Küche, Kirche",
+          "heading": "How did the regime attempt to remove women from public professions?",
           "date": "1933",
-          "step": 1
+          "step": 1,
+          "question": "How did the regime attempt to remove women from public professions?",
+          "questionHeading": "How did the regime attempt to remove women from public professions?",
+          "prose_hash": "52af8120b3"
         },
         {
           "stage": 2,
@@ -20490,9 +21670,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "To incentivize parenthood, the state passed the <strong>1933 Marriage Loan Act</strong> providing newlywed couples with <strong>1,000-mark marriage coupons</strong>, offering a generous <strong>25% loan forgiveness per child</strong> born to encourage large Aryan families.",
-          "heading": "The Law for the Encouragement of Marriage",
+          "heading": "How were financial loans used to encourage childbearing and lower unemployment?",
           "date": "Jun 1933",
-          "step": 2
+          "step": 2,
+          "question": "How were financial loans used to encourage childbearing and lower unemployment?",
+          "questionHeading": "How were financial loans used to encourage childbearing and lower unemployment?",
+          "prose_hash": "7ae6000ac0"
         },
         {
           "stage": 3,
@@ -20524,9 +21707,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "The regime elevated motherhood by awarding prestigious <strong>Mother's Cross medals</strong> including the coveted <strong>gold cross (8 children)</strong>, while SS leader Himmler expanded the racial breeding <strong>Lebensborn maternity program</strong>.",
-          "heading": "The Mother's Cross & Lebensborn Programme",
+          "heading": "How did honors and breeding centres aim to expand the Aryan population?",
           "date": "1935–1938",
-          "step": 3
+          "step": 3,
+          "question": "How did honors and breeding centres aim to expand the Aryan population?",
+          "questionHeading": "How did honors and breeding centres aim to expand the Aryan population?",
+          "prose_hash": "921ba808a7"
         },
         {
           "stage": 4,
@@ -20558,9 +21744,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Racial hygiene was enforced through the punitive <strong>1933 Hereditary Health Act</strong>, which instituted a compulsory <strong>forced sterilization law</strong> under which over <strong>400,000 citizens sterilized</strong> for alleged genetic disorders.",
-          "heading": "Forced Sterilisation & Eugenic Control",
+          "heading": "How did eugenics legislation enforce biological selection on German families?",
           "date": "1933–1935",
-          "step": 4
+          "step": 4,
+          "question": "How did eugenics legislation enforce biological selection on German families?",
+          "questionHeading": "How did eugenics legislation enforce biological selection on German families?",
+          "prose_hash": "3afd198a7e"
         },
         {
           "stage": 5,
@@ -20592,9 +21781,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "When industrial demands surged under <strong>Four-Year Plan rearmament</strong>, the state introduced a compulsory <strong>Duty Year labour service</strong> causing the number of essential <strong>women factory workers expand</strong> dramatically by 1939.",
-          "heading": "Rearmament Demands & The Policy Reversal",
+          "heading": "Why did the Four-Year Plan force the regime to abandon its domestic ideology?",
           "date": "1937–1939",
-          "step": 5
+          "step": 5,
+          "question": "Why did the Four-Year Plan force the regime to abandon its domestic ideology?",
+          "questionHeading": "Why did the Four-Year Plan force the regime to abandon its domestic ideology?",
+          "prose_hash": "8e298d6115"
         }
       ],
       "causal_domino_spine": {
@@ -20611,7 +21803,8 @@ window.unitData = {
             "trigger": "The regime banned women from legal and medical professions, restricted university entry to 10%, and promoted the slogan Kinder, Küche, Kirche.",
             "desc": "The regime banned women from legal and medical professions, restricted university entry to 10%, and promoted the slogan Kinder, Küche, Kirche.",
             "connective": "Reversed Weimar emancipation, confining women to traditional domestic roles and family reproduction.",
-            "question": "How did the regime attempt to remove women from public professions?"
+            "question": "How did the regime attempt to remove women from public professions?",
+            "prose_hash": "52af8120b3"
           },
           {
             "step": 2,
@@ -20623,7 +21816,8 @@ window.unitData = {
             "trigger": "Couples received 1,000-mark marriage loans with 25% debt forgiven per child born, provided the bride left the workforce.",
             "desc": "Couples received 1,000-mark marriage loans with 25% debt forgiven per child born, provided the bride left the workforce.",
             "connective": "Artificially reduced male unemployment figures while encouraging early marriage and increased childbearing.",
-            "question": "How were financial loans used to encourage childbearing and lower unemployment?"
+            "question": "How were financial loans used to encourage childbearing and lower unemployment?",
+            "prose_hash": "7ae6000ac0"
           },
           {
             "step": 3,
@@ -20635,7 +21829,8 @@ window.unitData = {
             "trigger": "Hitler awarded the Mother’s Cross (Bronze, Silver, Gold for 4, 6, 8+ children), while Himmler established Lebensborn breeding centres for SS men.",
             "desc": "Hitler awarded the Mother’s Cross (Bronze, Silver, Gold for 4, 6, 8+ children), while Himmler established Lebensborn breeding centres for SS men.",
             "connective": "Elevated childbearing into a militarized civic duty and expanded the biological pool of pure Aryan offspring.",
-            "question": "How did honors and breeding centres aim to expand the Aryan population?"
+            "question": "How did honors and breeding centres aim to expand the Aryan population?",
+            "prose_hash": "921ba808a7"
           },
           {
             "step": 4,
@@ -20647,7 +21842,8 @@ window.unitData = {
             "trigger": "The 1933 Sterilisation Law forced over 300,000 women diagnosed with mental or physical disabilities to undergo compulsory surgical sterilization.",
             "desc": "The 1933 Sterilisation Law forced over 300,000 women diagnosed with mental or physical disabilities to undergo compulsory surgical sterilization.",
             "connective": "Enforced biological selection, denying reproductive rights to citizens judged outside the racial community.",
-            "question": "How did eugenics legislation enforce biological selection on German families?"
+            "question": "How did eugenics legislation enforce biological selection on German families?",
+            "prose_hash": "3afd198a7e"
           },
           {
             "step": 5,
@@ -20659,7 +21855,8 @@ window.unitData = {
             "trigger": "Four-Year Plan labor shortages forced the regime to introduce the Duty Year, placing 7.1 million women into armaments factories by September 1939.",
             "desc": "Four-Year Plan labor shortages forced the regime to introduce the Duty Year, placing 7.1 million women into armaments factories by September 1939.",
             "connective": "Shattered the domestic ideal of Kinder, Küche, Kirche in order to fuel the industrial machinery of war.",
-            "question": "Why did the Four-Year Plan force the regime to abandon its domestic ideology?"
+            "question": "Why did the Four-Year Plan force the regime to abandon its domestic ideology?",
+            "prose_hash": "8e298d6115"
           }
         ]
       },
@@ -20918,48 +22115,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What three German words summarized the traditional Nazi domestic slogan for women?",
-            "answer": "Kinder, Küche, Kirche (Children, Kitchen, Church)."
+            "stage": 1,
+            "question": "What three German words (starting with K) summarised the traditional Nazi ideal for women?",
+            "answer": "Kinder, Küche, Kirche",
+            "explanation": "Nazi ideology promoted the famous slogan 'Kinder, Küche, Kirche' (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace traditional domestic roles."
           },
           {
-            "question": "What financial incentive did the 1933 Law for the Encouragement of Marriage provide to newlyweds?",
-            "answer": "An interest-free loan of up to 1,000 marks in vouchers, reduced by 25% for each child born."
+            "stage": 2,
+            "question": "What was the name of the 1933 law that gave couples 1,000 marks to marry?",
+            "answer": "The Law for the Encouragement of Marriage",
+            "explanation": "Confronted by declining birth rates, the Nazi regime introduced aggressive financial subsidies to encourage early marriage and large families."
           },
           {
-            "question": "What medal was awarded to German mothers for bearing four, six, or eight children?",
-            "answer": "The Cross of Honour of the German Mother (Mutterkreuz) in Bronze, Silver, or Gold."
+            "stage": 3,
+            "question": "How many children did a woman have to give birth to in order to win the Gold Mother's Cross?",
+            "answer": "8 or more",
+            "explanation": "Medals were graded into bronze for four children, silver for six, and the revered gold cross (8 children) or more."
           },
           {
-            "question": "What compulsory policy was introduced in 1938 requiring unmarried women to complete manual labor?",
-            "answer": "The Duty Year (Pflichtjahr) on farms or in domestic service."
+            "stage": 4,
+            "question": "What did Hitler Youth members have to do if they saw a woman wearing a Gold Mother's Cross?",
+            "answer": "Salute her",
+            "explanation": "In July 1933, the regime enacted the sweeping 1933 Hereditary Health Act, formally known as the Law for the Prevention of Hereditarily Diseased Offspring."
           },
           {
-            "question": "Which Nazi leader was appointed Reich Women's Leader (Reichsfrauenführerin) in 1934?",
-            "answer": "Gertrud Scholtz-Klink."
+            "stage": 5,
+            "question": "What economic plan, introduced by Göring in 1936, forced the Nazis to change their minds about women working?",
+            "answer": "The Four Year Plan for rearmament",
+            "explanation": "As Hermann Göring’s Four-Year Plan rearmament accelerated armaments production and military conscription depleted industrial factory workforces, severe labor shortages threatened war preparations."
           },
           {
-            "question": "What was the secret state police force established by Hermann Göring and led by Heinrich Himmler?",
-            "answer": "The Gestapo (Geheime Staatspolizei)."
+            "stage": 1,
+            "question": "Translate those three words into English.",
+            "answer": "Children, Kitchen, Church",
+            "explanation": "Nazi ideology promoted the famous slogan 'Kinder, Küche, Kirche' (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace traditional domestic roles."
           },
           {
-            "question": "What purge in June 1934 eliminated Ernst Röhm and the senior leadership of the SA?",
-            "answer": "The Night of the Long Knives (Operation Hummingbird)."
+            "stage": 2,
+            "question": "How many children did a mother need to have to receive the Gold Cross of Honour of the German Mother?",
+            "answer": "Eight or more children",
+            "explanation": "Having four children completely cancelled the initial debt, effectively paying couples to produce Aryan offspring."
           },
           {
-            "question": "Which Weimar Foreign Minister negotiated the Locarno Treaties (1925) and entry into the League of Nations?",
-            "answer": "Gustav Stresemann."
+            "stage": 3,
+            "question": "What was the name of the SS 'Spring of Life' breeding programme started by Heinrich Himmler in 1935?",
+            "answer": "Lebensborn",
+            "explanation": "Beyond conventional family units, Heinrich Himmler's SS founded the secretive Lebensborn maternity program in 1935."
           },
           {
-            "question": "What violent purge took place between 30 June and 2 July 1934 to eliminate Ernst Röhm and the SA leadership?",
-            "answer": "The Night of the Long Knives (Operation Hummingbird)."
+            "stage": 4,
+            "question": "What did the July 1933 Law for the Prevention of Hereditarily Diseased Offspring mandate?",
+            "answer": "Compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities",
+            "explanation": "This statute established specialized Genetic Health Courts empowered to mandate compulsory surgical operations on individuals diagnosed with alleged genetic defects."
           },
           {
-            "question": "What oath did all German armed forces take on 2 August 1934 following President Hindenburg's death?",
-            "answer": "A personal oath of unconditional loyalty and obedience to Adolf Hitler as Führer and Supreme Commander."
+            "stage": 5,
+            "question": "Why did Nazi policy reverse in the late 1930s to encourage women back into the industrial workforce?",
+            "answer": "Because rapid military rearmament under the Four-Year Plan created acute labour shortages",
+            "explanation": "As Hermann Göring’s Four-Year Plan rearmament accelerated armaments production and military conscription depleted industrial factory workforces, severe labor shortages threatened war preparations."
           }
         ]
       },
@@ -21020,7 +22236,7 @@ window.unitData = {
           "id": "block_1",
           "decimal": "[4.2.1]",
           "title": "The Hitler Youth (Hitlerjugend): Military Drill and Battlefield Preparation (1933–1939)",
-          "text": "<span class=\"para-ref\">[1.1]</span> For German adolescent boys aged fourteen to eighteen, social life was dominated by the **Hitlerjugend for boys**. Operating under Baldur von Schirach, the organization was designed to toughen boys into fearless, obedient soldiers for the Third Reich. Physical conditioning was prioritized above intellect, with boys spending long afternoons running obstacle courses, boxing, and participating in small-bore rifle marksmanship.\n\n<span class=\"para-ref\">[1.2]</span> Weekend activities focused on rigorous **military drill & camping**, where boys undertook multi-day marches carrying heavy knapsacks and practiced trench navigation, signaling, and compass reading. Through rigorous **preparation for armed forces**, boys passed demanding physical fitness tests before receiving an engraved Hitler Youth dagger bearing the motto *Blood and Honour*, instilling unquestioning personal devotion to Adolf Hitler.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Under Reich Youth Leader **Baldur von Schirach**, life for boys aged 14–18 centred on the *Hitlerjugend*. Governed by **the Law for the Hitler Youth**, it toughened boys into fearless soldiers through obstacle courses, boxing, and rifle shooting rather than classroom study.\n\n<span class=\"para-ref\">[1.2]</span> Enrolling over **8 million** young Germans overall by 1939, weekend camps drilled boys in route marches with heavy packs, trench map reading, and signalling. After passing fitness tests, boys received engraved Hitler Youth daggers stamped *Blood and Honour*, cementing personal loyalty to Hitler.",
           "image": "/images/weimar_individuals/bernhard_rust.jpg",
           "image_alt": "Hitler Youth Military Drill",
           "caption": "Hitler Youth boys on a field exercise undergoing military map-reading and endurance drills.",
@@ -21053,7 +22269,7 @@ window.unitData = {
             "<span class=\"para-ref\">[1.1]</span> For German adolescent boys aged fourteen to eighteen, social life was dominated by the **Hitlerjugend for boys**. Operating under Baldur von Schirach, the organization was designed to toughen boys into fearless, obedient soldiers for the Third Reich. Physical conditioning was prioritized above intellect, with boys spending long afternoons running obstacle courses, boxing, and participating in small-bore rifle marksmanship.",
             "<span class=\"para-ref\">[1.2]</span> Weekend activities focused on rigorous **military drill & camping**, where boys undertook multi-day marches carrying heavy knapsacks and practiced trench navigation, signaling, and compass reading. Through rigorous **preparation for armed forces**, boys passed demanding physical fitness tests before receiving an engraved Hitler Youth dagger bearing the motto *Blood and Honour*, instilling unquestioning personal devotion to Adolf Hitler."
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> For German adolescent boys aged fourteen to eighteen, social life was dominated by the **Hitlerjugend for boys**. Operating under Baldur von Schirach, the organization was designed to toughen boys into fearless, obedient soldiers for the Third Reich. Physical conditioning was prioritized above intellect, with boys spending long afternoons running obstacle courses, boxing, and participating in small-bore rifle marksmanship.\n\n<span class=\"para-ref\">[1.2]</span> Weekend activities focused on rigorous **military drill & camping**, where boys undertook multi-day marches carrying heavy knapsacks and practiced trench navigation, signaling, and compass reading. Through rigorous **preparation for armed forces**, boys passed demanding physical fitness tests before receiving an engraved Hitler Youth dagger bearing the motto *Blood and Honour*, instilling unquestioning personal devotion to Adolf Hitler.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Under Reich Youth Leader **Baldur von Schirach**, life for boys aged 14–18 centred on the *Hitlerjugend*. Governed by **the Law for the Hitler Youth**, it toughened boys into fearless soldiers through obstacle courses, boxing, and rifle shooting rather than classroom study.\n\n<span class=\"para-ref\">[1.2]</span> Enrolling over **8 million** young Germans overall by 1939, weekend camps drilled boys in route marches with heavy packs, trench map reading, and signalling. After passing fitness tests, boys received engraved Hitler Youth daggers stamped *Blood and Honour*, cementing personal loyalty to Hitler.",
           "act": 1,
           "act_title": "Stage 1: The Hitler Youth (Hitlerjugend) for Boys"
         },
@@ -21061,7 +22277,7 @@ window.unitData = {
           "id": "block_2",
           "decimal": "[4.2.2]",
           "title": "The League of German Girls: Bund Deutscher Mädel and Motherhood Training (1933–1939)",
-          "text": "<span class=\"para-ref\">[2.1]</span> While boys were drilled for warfare, German girls aged fourteen to eighteen joined the **Bund Deutscher Mädel (BDM)**. Dressed identically in dark blue skirts, white blouses, and brown vests, girls engaged in gymnastics, calisthenics, and long-distance running. Physical fitness was not designed for athletics, but to develop robust, healthy bodies capable of bearing multiple children for the German Volk.\n\n<span class=\"para-ref\">[2.2]</span> Activities centered on extensive **motherhood & domestic training**, teaching girls cooking, meal planning, needlework, and infant healthcare. Alongside domestic skills, members received intensive **racial hygiene instruction**, memorizing genealogical charts to identify suitable Aryan marriage partners and reject racial intermarriage. Evening campfire gatherings reinforced ideological conformity through folk songs celebrating the national racial community (*Volksgemeinschaft*).",
+          "text": "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the Bund Deutscher Mädel (BDM or League of German Girls)**. Wearing dark blue skirts and white blouses, girls practised gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.\n\n<span class=\"para-ref\">[2.2]</span> BDM meetings focused on domestic training — cooking, meal planning, needlework, and infant care — alongside **racial science (Rassenkunde)** instruction. Girls studied family charts to pick Aryan husbands, shun racial intermarriage, and sing folk songs celebrating the *Volksgemeinschaft*.",
           "image": "/images/hitler_youth_march_1930s.jpg",
           "image_alt": "BDM Calisthenics Exercise",
           "caption": "Members of the League of German Girls performing synchronised physical exercises outdoors.",
@@ -21094,7 +22310,7 @@ window.unitData = {
             "<span class=\"para-ref\">[2.1]</span> While boys were drilled for warfare, German girls aged fourteen to eighteen joined the **Bund Deutscher Mädel (BDM)**. Dressed identically in dark blue skirts, white blouses, and brown vests, girls engaged in gymnastics, calisthenics, and long-distance running. Physical fitness was not designed for athletics, but to develop robust, healthy bodies capable of bearing multiple children for the German Volk.",
             "<span class=\"para-ref\">[2.2]</span> Activities centered on extensive **motherhood & domestic training**, teaching girls cooking, meal planning, needlework, and infant healthcare. Alongside domestic skills, members received intensive **racial hygiene instruction**, memorizing genealogical charts to identify suitable Aryan marriage partners and reject racial intermarriage. Evening campfire gatherings reinforced ideological conformity through folk songs celebrating the national racial community (*Volksgemeinschaft*)."
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> While boys were drilled for warfare, German girls aged fourteen to eighteen joined the **Bund Deutscher Mädel (BDM)**. Dressed identically in dark blue skirts, white blouses, and brown vests, girls engaged in gymnastics, calisthenics, and long-distance running. Physical fitness was not designed for athletics, but to develop robust, healthy bodies capable of bearing multiple children for the German Volk.\n\n<span class=\"para-ref\">[2.2]</span> Activities centered on extensive **motherhood & domestic training**, teaching girls cooking, meal planning, needlework, and infant healthcare. Alongside domestic skills, members received intensive **racial hygiene instruction**, memorizing genealogical charts to identify suitable Aryan marriage partners and reject racial intermarriage. Evening campfire gatherings reinforced ideological conformity through folk songs celebrating the national racial community (*Volksgemeinschaft*).",
+          "content": "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the Bund Deutscher Mädel (BDM or League of German Girls)**. Wearing dark blue skirts and white blouses, girls practised gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.\n\n<span class=\"para-ref\">[2.2]</span> BDM meetings focused on domestic training — cooking, meal planning, needlework, and infant care — alongside **racial science (Rassenkunde)** instruction. Girls studied family charts to pick Aryan husbands, shun racial intermarriage, and sing folk songs celebrating the *Volksgemeinschaft*.",
           "act": 2,
           "act_title": "Stage 2: The League of German Girls (Bund Deutscher Mädel)"
         },
@@ -21102,7 +22318,7 @@ window.unitData = {
           "id": "block_3",
           "decimal": "[4.2.3]",
           "title": "Compulsory Indoctrination: The 1936 Youth Law and Banning Independent Clubs (1933–1939)",
-          "text": "<span class=\"para-ref\">[3.1]</span> To achieve total ideological control over the younger generation, the Nazi state systematically dismantled independent youth organizations. Independent scouting associations and sports teams were banned, while independent **church youth organizations banned** following relentless Gestapo intimidation. In December 1936, Hitler enacted the landmark **1936 Hitler Youth Act**, giving the organization exclusive responsibility for all physical and ideological training outside school.\n\n<span class=\"para-ref\">[3.2]</span> In March 1939, the state issued a second decree establishing **compulsory membership (1939)** for all eligible German children aged ten to eighteen. By the outbreak of the Second World War, over eight million boys and girls were enrolled in uniform. Although millions embraced the camaraderie and outdoor activities, rebellious youths formed dissident underground groups like the Edelweiss Pirates to escape regimentation.",
+          "text": "<span class=\"para-ref\">[3.1]</span> To win total control over young minds, the Nazi state dismantled rival youth clubs. Independent scouts, sports teams, and church youth leagues **were systematically banned** after Gestapo pressure so **the Hitler Youth (*Hitlerjugend*, HJ)** stood alone. In December **1936**, the Hitler Youth Act gave Schirach sole charge of youth training outside school.\n\n<span class=\"para-ref\">[3.2]</span> A second decree in March 1939 enforced compulsory membership for all eligible German 10-to-18-year-olds. Although millions enjoyed campfires and outdoor comradeship, rebellious teenagers formed dissident groups like **the Edelweiss Pirates** to escape constant military drill.",
           "image_alt": "Hitler Youth Nuremberg Rally",
           "caption": "Massed ranks of Hitler Youth parading before Adolf Hitler at the Nuremberg Party Rally.",
           "theme_heading": "Totalitarian Coercion & Dissent",
@@ -21135,7 +22351,7 @@ window.unitData = {
             "<span class=\"para-ref\">[3.1]</span> To achieve total ideological control over the younger generation, the Nazi state systematically dismantled independent youth organizations. Independent scouting associations and sports teams were banned, while independent **church youth organizations banned** following relentless Gestapo intimidation. In December 1936, Hitler enacted the landmark **1936 Hitler Youth Act**, giving the organization exclusive responsibility for all physical and ideological training outside school.",
             "<span class=\"para-ref\">[3.2]</span> In March 1939, the state issued a second decree establishing **compulsory membership (1939)** for all eligible German children aged ten to eighteen. By the outbreak of the Second World War, over eight million boys and girls were enrolled in uniform. Although millions embraced the camaraderie and outdoor activities, rebellious youths formed dissident underground groups like the Edelweiss Pirates to escape regimentation."
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> To achieve total ideological control over the younger generation, the Nazi state systematically dismantled independent youth organizations. Independent scouting associations and sports teams were banned, while independent **church youth organizations banned** following relentless Gestapo intimidation. In December 1936, Hitler enacted the landmark **1936 Hitler Youth Act**, giving the organization exclusive responsibility for all physical and ideological training outside school.\n\n<span class=\"para-ref\">[3.2]</span> In March 1939, the state issued a second decree establishing **compulsory membership (1939)** for all eligible German children aged ten to eighteen. By the outbreak of the Second World War, over eight million boys and girls were enrolled in uniform. Although millions embraced the camaraderie and outdoor activities, rebellious youths formed dissident underground groups like the Edelweiss Pirates to escape regimentation.",
+          "content": "<span class=\"para-ref\">[3.1]</span> To win total control over young minds, the Nazi state dismantled rival youth clubs. Independent scouts, sports teams, and church youth leagues **were systematically banned** after Gestapo pressure so **the Hitler Youth (*Hitlerjugend*, HJ)** stood alone. In December **1936**, the Hitler Youth Act gave Schirach sole charge of youth training outside school.\n\n<span class=\"para-ref\">[3.2]</span> A second decree in March 1939 enforced compulsory membership for all eligible German 10-to-18-year-olds. Although millions enjoyed campfires and outdoor comradeship, rebellious teenagers formed dissident groups like **the Edelweiss Pirates** to escape constant military drill.",
           "act": 3,
           "act_title": "Stage 3: Compulsory Youth Membership & Resistance"
         },
@@ -21143,7 +22359,7 @@ window.unitData = {
           "id": "block_4",
           "decimal": "[4.2.4]",
           "title": "Purging the Staffroom: The National Socialist Teachers' League (1933–1939)",
-          "text": "<span class=\"para-ref\">[4.1]</span> Transforming German schools into ideological factories required total control over teaching staff. Under the April 1933 Civil Service Law, the regime commenced **Jewish teachers sacked (1933)** alongside suspected socialist and democratic educators. Teachers were compelled to join the **National Socialist Teachers League** (NSLB), with over ninety-seven percent of all German educators enrolling by 1937 to protect their professional livelihoods.\n\n<span class=\"para-ref\">[4.2]</span> The league organized mandatory **ideological summer camps** during school holidays, forcing teachers to participate in military drills, physical fitness courses, and lectures on Nazi racial biology. In the classroom, teachers were required to begin and end every lesson with the Nazi salute, while those failing to display sufficient political enthusiasm were denounced by students or dismissed by party inspectors.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Turning German schools into ideological training grounds required tight control over staff. Under **the April 1933 Civil Service Law**, Jewish, socialist, and democratic teachers were sacked. Remaining educators had to join **the National Socialist Teachers' League (NSLB)**, enrolling 97% of all German teachers by 1937.\n\n<span class=\"para-ref\">[4.2]</span> The NSLB ran **mandatory ideological summer camps** during holidays, drilling teachers in physical fitness and Nazi racial biology. Every school lesson began and ended with **the Nazi salute**, and teachers lacking Nazi zeal risked denunciation by pupils and dismissal.",
           "image_alt": "Nazi Classroom Instruction",
           "caption": "A German schoolteacher conducting a lesson before a portrait of Adolf Hitler, beginning with the mandatory Hitler salute.",
           "theme_heading": "Subversion of the Teaching Profession",
@@ -21175,7 +22391,7 @@ window.unitData = {
             "<span class=\"para-ref\">[4.1]</span> Transforming German schools into ideological factories required total control over teaching staff. Under the April 1933 Civil Service Law, the regime commenced **Jewish teachers sacked (1933)** alongside suspected socialist and democratic educators. Teachers were compelled to join the **National Socialist Teachers League** (NSLB), with over ninety-seven percent of all German educators enrolling by 1937 to protect their professional livelihoods.",
             "<span class=\"para-ref\">[4.2]</span> The league organized mandatory **ideological summer camps** during school holidays, forcing teachers to participate in military drills, physical fitness courses, and lectures on Nazi racial biology. In the classroom, teachers were required to begin and end every lesson with the Nazi salute, while those failing to display sufficient political enthusiasm were denounced by students or dismissed by party inspectors."
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> Transforming German schools into ideological factories required total control over teaching staff. Under the April 1933 Civil Service Law, the regime commenced **Jewish teachers sacked (1933)** alongside suspected socialist and democratic educators. Teachers were compelled to join the **National Socialist Teachers League** (NSLB), with over ninety-seven percent of all German educators enrolling by 1937 to protect their professional livelihoods.\n\n<span class=\"para-ref\">[4.2]</span> The league organized mandatory **ideological summer camps** during school holidays, forcing teachers to participate in military drills, physical fitness courses, and lectures on Nazi racial biology. In the classroom, teachers were required to begin and end every lesson with the Nazi salute, while those failing to display sufficient political enthusiasm were denounced by students or dismissed by party inspectors.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Turning German schools into ideological training grounds required tight control over staff. Under **the April 1933 Civil Service Law**, Jewish, socialist, and democratic teachers were sacked. Remaining educators had to join **the National Socialist Teachers' League (NSLB)**, enrolling 97% of all German teachers by 1937.\n\n<span class=\"para-ref\">[4.2]</span> The NSLB ran **mandatory ideological summer camps** during holidays, drilling teachers in physical fitness and Nazi racial biology. Every school lesson began and ended with **the Nazi salute**, and teachers lacking Nazi zeal risked denunciation by pupils and dismissal.",
           "act": 4,
           "act_title": "Stage 4: Purging Teachers & The Nazi Teachers' League"
         },
@@ -21183,7 +22399,7 @@ window.unitData = {
           "id": "block_5",
           "decimal": "[4.2.5]",
           "title": "The Nazified Curriculum: Racial Biology and the Napolas Elite Cadet Schools (1933–1939)",
-          "text": "<span class=\"para-ref\">[5.1]</span> The academic curriculum was thoroughly reconstructed to serve military preparation and racial fanaticism. Traditional learning was displaced by **rewritten school textbooks** across all subjects: history was rewritten to portray German history as an endless struggle against Jewish enemies, while mathematics problems calculated bombing trajectories, artillery flight times, and the financial cost of caring for the disabled.\n\n<span class=\"para-ref\">[5.2]</span> Compulsory courses in **racial biology & Eugenics** taught children to measure facial skull shapes and classify races into Aryan masters and subhuman parasites. For promising future leaders, the regime established elite **Napolas elite cadet schools** (National Political Educational Institutes), residential boarding academies overseen by the SS where boys underwent brutal military training to produce ruthless future commanders.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Every school curriculum was rewritten by **1939** to serve war preparation and racial hatred. New history textbooks portrayed the past as **an endless struggle against Jewish enemies**. Meanwhile, school maths problems practised **calculating bombing trajectories and the financial cost of caring for the disabled**.\n\n<span class=\"para-ref\">[5.2]</span> Compulsory lessons in racial biology and Eugenics taught children to measure skull shapes and rank Aryan \"masters\" above \"subhumans\". Meanwhile, elite SS-backed boarding academies called **Napolas (National Political Educational Institutes)** put selected boys through harsh military training to produce ruthless future commanders.",
           "image_alt": "Racial Biology Lesson in German School",
           "caption": "Pupils measuring facial indices with calipers in a compulsory racial biology lesson.",
           "theme_heading": "Curriculum Militarisation & Elite Academies",
@@ -21215,227 +22431,291 @@ window.unitData = {
             "<span class=\"para-ref\">[5.1]</span> The academic curriculum was thoroughly reconstructed to serve military preparation and racial fanaticism. Traditional learning was displaced by **rewritten school textbooks** across all subjects: history was rewritten to portray German history as an endless struggle against Jewish enemies, while mathematics problems calculated bombing trajectories, artillery flight times, and the financial cost of caring for the disabled.",
             "<span class=\"para-ref\">[5.2]</span> Compulsory courses in **racial biology & Eugenics** taught children to measure facial skull shapes and classify races into Aryan masters and subhuman parasites. For promising future leaders, the regime established elite **Napolas elite cadet schools** (National Political Educational Institutes), residential boarding academies overseen by the SS where boys underwent brutal military training to produce ruthless future commanders."
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> The academic curriculum was thoroughly reconstructed to serve military preparation and racial fanaticism. Traditional learning was displaced by **rewritten school textbooks** across all subjects: history was rewritten to portray German history as an endless struggle against Jewish enemies, while mathematics problems calculated bombing trajectories, artillery flight times, and the financial cost of caring for the disabled.\n\n<span class=\"para-ref\">[5.2]</span> Compulsory courses in **racial biology & Eugenics** taught children to measure facial skull shapes and classify races into Aryan masters and subhuman parasites. For promising future leaders, the regime established elite **Napolas elite cadet schools** (National Political Educational Institutes), residential boarding academies overseen by the SS where boys underwent brutal military training to produce ruthless future commanders.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Every school curriculum was rewritten by **1939** to serve war preparation and racial hatred. New history textbooks portrayed the past as **an endless struggle against Jewish enemies**. Meanwhile, school maths problems practised **calculating bombing trajectories and the financial cost of caring for the disabled**.\n\n<span class=\"para-ref\">[5.2]</span> Compulsory lessons in racial biology and Eugenics taught children to measure skull shapes and rank Aryan \"masters\" above \"subhumans\". Meanwhile, elite SS-backed boarding academies called **Napolas (National Political Educational Institutes)** put selected boys through harsh military training to produce ruthless future commanders.",
           "act": 5,
           "act_title": "Stage 5: Indoctrinating the Curriculum & Elite Schools"
         }
       ],
       "quiz": [
         {
-          "q": "Who was the Nazi Minister of Education?",
-          "a": "Bernhard Rust",
+          "stage": 1,
+          "question": "Who was appointed by Hitler in 1933 as the Reich Youth Leader?",
+          "q": "Who was appointed by Hitler in 1933 as the Reich Youth Leader?",
           "options": [
-            "Joseph Goebbels",
-            "Robert Ley",
-            "Hjalmar Schacht",
-            "Bernhard Rust"
-          ]
-        },
-        {
-          "q": "What was the name of the compulsory union that 97% of teachers had joined by 1939?",
-          "a": "The National Socialist Teachers' League / NSLB",
-          "options": [
-            "The Gestapo Education Wing",
-            "The National Socialist Teachers' League / NSLB",
-            "The German Labour Front / DAF",
-            "The Reich Teachers' Chamber"
-          ]
-        },
-        {
-          "q": "Who was appointed Education Minister in 1934 to convert state schools into tools of Nazi indoctrination?",
-          "a": "Bernhard Rust",
-          "options": [
-            "Bernhard Rust",
             "Baldur von Schirach",
-            "Joseph Goebbels",
-            "Alfred Rosenberg"
+            "Heinrich Himmler",
+            "Ernst Röhm",
+            "Joseph Goebbels"
           ],
-          "question": "Who was appointed Education Minister in 1934 to convert state schools into tools of Nazi indoctrination?",
-          "answer": "Bernhard Rust"
+          "answer": "Baldur von Schirach",
+          "a": "Baldur von Schirach",
+          "explanation": "Operating under Baldur von Schirach, the organization was designed to toughen boys into fearless, obedient soldiers for the Third Reich."
         },
         {
-          "q": "What percentage of the school curriculum timetable was mandated for physical education and fitness?",
-          "a": "At least fifteen percent of school hours",
+          "stage": 1,
+          "question": "What law passed in December 1936 declared the Hitler Youth the sole youth movement in Germany?",
+          "q": "What law passed in December 1936 declared the Hitler Youth the sole youth movement in Germany?",
           "options": [
-            "At least fifteen percent of school hours",
-            "Fifty percent of all classes",
-            "Only one hour per week",
-            "Thirty percent of school hours"
+            "The Reich Education Statute",
+            "The Nuremberg Youth Decree",
+            "The Enabling Act",
+            "The Law for the Hitler Youth"
           ],
-          "question": "What percentage of the school curriculum timetable was mandated for physical education and fitness?",
-          "answer": "At least fifteen percent of school hours"
+          "answer": "The Law for the Hitler Youth",
+          "a": "The Law for the Hitler Youth",
+          "explanation": "Through rigorous preparation for armed forces, boys passed demanding physical fitness tests before receiving an engraved Hitler Youth dagger bearing the motto *Blood and Honour*, instilling unquestioning personal devotion to Adolf Hitler."
         },
         {
-          "q": "What percentage of the school timetable was eventually taken up by Physical Education (PE)?",
-          "a": "15%",
+          "stage": 1,
+          "question": "Roughly how many members were in the Nazi youth movements by 1939?",
+          "q": "Roughly how many members were in the Nazi youth movements by 1939?",
           "options": [
-            "5%",
-            "50%",
-            "30%",
-            "15%"
-          ]
+            "12 million",
+            "4 million",
+            "8 million",
+            "1 million"
+          ],
+          "answer": "8 million",
+          "a": "8 million",
+          "explanation": "For German adolescent boys aged fourteen to eighteen, social life was dominated by the Hitlerjugend for boys."
         },
         {
+          "stage": 1,
+          "question": "What motto was engraved onto the Hitler Youth dagger awarded to boys who passed their physical and military fitness tests?",
+          "q": "What motto was engraved onto the Hitler Youth dagger awarded to boys who passed their physical and military fitness tests?",
+          "options": [
+            "Work and Bread",
+            "Blood and Honour",
+            "Strength Through Joy",
+            "Children, Kitchen, Church"
+          ],
+          "answer": "Blood and Honour",
+          "a": "Blood and Honour",
+          "explanation": "After completing rigorous marching, camping, and marksmanship drills, boys received an engraved dagger bearing the motto 'Blood and Honour'."
+        },
+        {
+          "stage": 2,
+          "question": "What new compulsory school subject taught children pseudo-scientific racial theory and skull measurement?",
           "q": "What new compulsory school subject taught children pseudo-scientific racial theory and skull measurement?",
-          "a": "Racial science (Rassenkunde)",
           "options": [
             "Racial science (Rassenkunde)",
             "Modern sociology",
             "Classical Greek philosophy",
             "Industrial economics"
           ],
-          "question": "What new compulsory school subject taught children pseudo-scientific racial theory and skull measurement?",
-          "answer": "Racial science (Rassenkunde)"
+          "answer": "Racial science (Rassenkunde)",
+          "a": "Racial science (Rassenkunde)",
+          "explanation": "Alongside domestic skills, members received intensive racial hygiene instruction, memorizing genealogical charts to identify suitable Aryan marriage partners and reject racial intermarriage."
         },
         {
+          "stage": 2,
+          "question": "What youth organization was established for German boys aged ten to fourteen?",
           "q": "What youth organization was established for German boys aged ten to fourteen?",
-          "a": "The Deutsches Jungvolk (German Young People)",
           "options": [
-            "The Deutsches Jungvolk (German Young People)",
             "The Pimpfen",
             "The Hitlerjugend",
-            "The BDM"
+            "The BDM",
+            "The Deutsches Jungvolk (German Young People)"
           ],
-          "question": "What youth organization was established for German boys aged ten to fourteen?",
-          "answer": "The Deutsches Jungvolk (German Young People)"
+          "answer": "The Deutsches Jungvolk (German Young People)",
+          "a": "The Deutsches Jungvolk (German Young People)",
+          "explanation": "While boys were drilled for warfare, German girls aged fourteen to eighteen joined the Bund Deutscher Mädel (BDM)."
         },
         {
-          "q": "In what year were Jewish children banned from attending German state schools entirely?",
-          "a": "1938",
-          "options": [
-            "1935",
-            "1939",
-            "1938",
-            "1933"
-          ]
-        },
-        {
+          "stage": 2,
+          "question": "What youth organization was established for German girls aged fourteen to eighteen?",
           "q": "What youth organization was established for German girls aged fourteen to eighteen?",
-          "a": "The Bund Deutscher Mädel (BDM or League of German Girls)",
           "options": [
-            "The Bund Deutscher Mädel (BDM or League of German Girls)",
             "The Jungmädel",
             "The Faith and Beauty Society",
+            "The Bund Deutscher Mädel (BDM or League of German Girls)",
             "The NSF"
           ],
-          "question": "What youth organization was established for German girls aged fourteen to eighteen?",
-          "answer": "The Bund Deutscher Mädel (BDM or League of German Girls)"
+          "answer": "The Bund Deutscher Mädel (BDM or League of German Girls)",
+          "a": "The Bund Deutscher Mädel (BDM or League of German Girls)",
+          "explanation": "While boys were drilled for warfare, German girls aged fourteen to eighteen joined the Bund Deutscher Mädel (BDM)."
         },
         {
-          "q": "Who was appointed by Hitler in 1933 as the Reich Youth Leader?",
-          "a": "Baldur von Schirach",
+          "stage": 2,
+          "question": "What was the ultimate goal for girls in the BDM?",
+          "q": "What was the ultimate goal for girls in the BDM?",
           "options": [
-            "Heinrich Himmler",
-            "Ernst Röhm",
-            "Baldur von Schirach",
-            "Joseph Goebbels"
-          ]
+            "To become factory managers during wartime",
+            "To become healthy, racially pure mothers",
+            "To become nurses for the army on the front lines",
+            "To become female politicians and leaders"
+          ],
+          "answer": "To become healthy, racially pure mothers",
+          "a": "To become healthy, racially pure mothers",
+          "explanation": "Physical fitness was not designed for athletics, but to develop robust, healthy bodies capable of bearing multiple children for the German Volk."
         },
         {
+          "stage": 3,
+          "question": "What was the name of the youth group for boys aged 14-18?",
           "q": "What was the name of the youth group for boys aged 14-18?",
-          "a": "Hitlerjugend / HJ / Hitler Youth",
           "options": [
             "Hitlerjugend / HJ / Hitler Youth",
             "Sturmabteilung / SA",
             "Wandervogel",
             "Deutsches Jungvolk / DJ"
-          ]
-        },
-        {
-          "q": "Give two examples of typical Hitler Youth activities for boys.",
-          "a": "Rifle shooting, map reading, hiking, military drill",
-          "options": [
-            "Reading poetry and painting landscapes",
-            "Rifle shooting, map reading, hiking, military drill",
-            "Cooking, sewing, and nursing",
-            "Learning foreign languages and studying abroad"
-          ]
-        },
-        {
-          "q": "What was the ultimate goal for boys in the Hitler Youth?",
-          "a": "To become soldiers for the army",
-          "options": [
-            "To become university professors",
-            "To become wealthy businessmen",
-            "To become soldiers for the army",
-            "To become politicians in the Reichstag"
-          ]
-        },
-        {
-          "q": "What law passed in December 1936 declared the Hitler Youth the sole youth movement in Germany?",
-          "a": "The Law for the Hitler Youth",
-          "options": [
-            "The Law for the Hitler Youth",
-            "The Reich Education Statute",
-            "The Nuremberg Youth Decree",
-            "The Enabling Act"
           ],
-          "question": "What law passed in December 1936 declared the Hitler Youth the sole youth movement in Germany?",
-          "answer": "The Law for the Hitler Youth"
+          "answer": "Hitlerjugend / HJ / Hitler Youth",
+          "a": "Hitlerjugend / HJ / Hitler Youth",
+          "explanation": "In December 1936, Hitler enacted the landmark 1936 Hitler Youth Act, giving the organization exclusive responsibility for all physical and ideological training outside school."
         },
         {
-          "q": "What was the ultimate goal for girls in the BDM?",
-          "a": "To become healthy, racially pure mothers",
+          "stage": 3,
+          "question": "In what year did the Hitler Youth Law make the youth movements effectively mandatory?",
+          "q": "In what year did the Hitler Youth Law make the youth movements effectively mandatory?",
           "options": [
-            "To become factory managers during wartime",
-            "To become nurses for the army on the front lines",
-            "To become female politicians and leaders",
-            "To become healthy, racially pure mothers"
-          ]
+            "1935",
+            "1933",
+            "1939",
+            "1936"
+          ],
+          "answer": "1936",
+          "a": "1936",
+          "explanation": "In December 1936, Hitler enacted the landmark 1936 Hitler Youth Act, giving the organization exclusive responsibility for all physical and ideological training outside school."
         },
         {
+          "stage": 3,
+          "question": "What happened to independent scouting groups, sports clubs, and church youth organizations as the Nazis consolidated control over youth?",
+          "q": "What happened to independent scouting groups, sports clubs, and church youth organizations as the Nazis consolidated control over youth?",
+          "options": [
+            "They were funded equally alongside the Hitler Youth",
+            "They merged voluntarily with British scouting clubs",
+            "They were systematically banned",
+            "They were placed under Reichstag parliamentary oversight"
+          ],
+          "answer": "They were systematically banned",
+          "a": "They were systematically banned",
+          "explanation": "Banning independent scouting and church youth clubs removed rival influences before decrees in 1936 and 1939 made Hitler Youth membership compulsory."
+        },
+        {
+          "stage": 3,
+          "question": "Which dissident youth group did rebellious teenagers form to escape compulsory Hitler Youth regimentation?",
+          "q": "Which dissident youth group did rebellious teenagers form to escape compulsory Hitler Youth regimentation?",
+          "options": [
+            "The Reich Labour Service",
+            "The Edelweiss Pirates",
+            "The Young Pioneers",
+            "The Spartacist Youth"
+          ],
+          "answer": "The Edelweiss Pirates",
+          "a": "The Edelweiss Pirates",
+          "explanation": "Although over eight million youths enrolled by 1939, non-conformist working-class teenagers formed groups like the Edelweiss Pirates to reject Nazi drill."
+        },
+        {
+          "stage": 4,
+          "question": "What was the name of the compulsory union that 97% of teachers had joined by 1939?",
+          "q": "What was the name of the compulsory union that 97% of teachers had joined by 1939?",
+          "options": [
+            "The National Socialist Teachers' League / NSLB",
+            "The Gestapo Education Wing",
+            "The German Labour Front / DAF",
+            "The Reich Teachers' Chamber"
+          ],
+          "answer": "The National Socialist Teachers' League / NSLB",
+          "a": "The National Socialist Teachers' League / NSLB",
+          "explanation": "Teachers were compelled to join the National Socialist Teachers League (NSLB), with over ninety-seven percent of all German educators enrolling by 1937 to protect their professional livelihoods."
+        },
+        {
+          "stage": 4,
+          "question": "Which April 1933 law was used by the regime to sack Jewish, socialist, and democratic teachers from German schools?",
+          "q": "Which April 1933 law was used by the regime to sack Jewish, socialist, and democratic teachers from German schools?",
+          "options": [
+            "The 1936 Hitler Youth Act",
+            "The 1933 Marriage Loan Act",
+            "The 1935 Reich Citizenship Law",
+            "The April 1933 Civil Service Law"
+          ],
+          "answer": "The April 1933 Civil Service Law",
+          "a": "The April 1933 Civil Service Law",
+          "explanation": "Under the April 1933 Civil Service Law, politically unreliable and Jewish educators were purged so German classrooms served Nazi indoctrination."
+        },
+        {
+          "stage": 4,
+          "question": "What mandatory holiday courses did the National Socialist Teachers' League run to train educators in Nazi racial biology and drill?",
+          "q": "What mandatory holiday courses did the National Socialist Teachers' League run to train educators in Nazi racial biology and drill?",
+          "options": [
+            "Foreign university exchange terms",
+            "Weimar constitutional law seminars",
+            "Mandatory ideological summer camps",
+            "Optional church theology retreats"
+          ],
+          "answer": "Mandatory ideological summer camps",
+          "a": "Mandatory ideological summer camps",
+          "explanation": "Over 97% of teachers joined the NSLB and attended ideological summer camps featuring fitness drills and lectures on Nazi racial theory."
+        },
+        {
+          "stage": 4,
+          "question": "With what compulsory political gesture were German teachers required to begin and end every school lesson?",
+          "q": "With what compulsory political gesture were German teachers required to begin and end every school lesson?",
+          "options": [
+            "Reciting the Weimar Constitution",
+            "The Nazi salute",
+            "Singing the League of Nations anthem",
+            "Bowing toward a portrait of Hindenburg"
+          ],
+          "answer": "The Nazi salute",
+          "a": "The Nazi salute",
+          "explanation": "Requiring the Nazi salute at the start and end of every lesson enforced visible classroom conformity, with unenthusiastic teachers risking denunciation by pupils."
+        },
+        {
+          "stage": 5,
+          "question": "In what year was membership in the Hitler Youth made strictly compulsory for all eligible adolescents?",
           "q": "In what year was membership in the Hitler Youth made strictly compulsory for all eligible adolescents?",
-          "a": "1939",
           "options": [
             "1939",
             "1933",
             "1936",
             "1945"
           ],
-          "question": "In what year was membership in the Hitler Youth made strictly compulsory for all eligible adolescents?",
-          "answer": "1939"
+          "answer": "1939",
+          "a": "1939",
+          "explanation": "The academic curriculum was thoroughly reconstructed to serve military preparation and racial fanaticism."
         },
         {
-          "q": "What was the primary domestic objective of the League of German Girls (BDM)?",
-          "a": "Preparing young women for motherhood, domestic skills, and racial hygiene",
+          "stage": 5,
+          "question": "What elite residential boarding academies overseen by the SS trained ruthless future military and political commanders?",
+          "q": "What elite residential boarding academies overseen by the SS trained ruthless future military and political commanders?",
           "options": [
-            "Preparing young women for motherhood, domestic skills, and racial hygiene",
-            "Training female fighter pilots for the Luftwaffe",
-            "Preparing girls for careers in corporate banking",
-            "Teaching foreign languages for diplomatic service"
+            "Bauhaus Design Academies",
+            "Confessional Seminaries",
+            "Weimar Gymnasiums",
+            "Napolas (National Political Educational Institutes)"
           ],
-          "question": "What was the primary domestic objective of the League of German Girls (BDM)?",
-          "answer": "Preparing young women for motherhood, domestic skills, and racial hygiene"
+          "answer": "Napolas (National Political Educational Institutes)",
+          "a": "Napolas (National Political Educational Institutes)",
+          "explanation": "Napolas elite cadet boarding schools subjected selected boys to harsh SS-supervised military training to forge the future leadership elite of the Reich."
         },
         {
-          "q": "In what year did the Hitler Youth Law make the youth movements effectively mandatory?",
-          "a": "1936",
+          "stage": 5,
+          "question": "How were school mathematics textbooks rewritten to embed Nazi military and eugenic ideology into everyday lessons?",
+          "q": "How were school mathematics textbooks rewritten to embed Nazi military and eugenic ideology into everyday lessons?",
           "options": [
-            "1935",
-            "1936",
-            "1933",
-            "1939"
-          ]
+            "Eliminating geometry and algebra from secondary schools",
+            "Teaching Wall Street stock-market speculation",
+            "Calculating bombing trajectories and the financial cost of caring for the disabled",
+            "Calculating League of Nations disarmament budgets"
+          ],
+          "answer": "Calculating bombing trajectories and the financial cost of caring for the disabled",
+          "a": "Calculating bombing trajectories and the financial cost of caring for the disabled",
+          "explanation": "Even mathematics problems were weaponized to normalize war and eugenics, asking pupils to calculate artillery flight times and state spending on disabled citizens."
         },
         {
-          "q": "Roughly how many members were in the Nazi youth movements by 1939?",
-          "a": "8 million",
+          "stage": 5,
+          "question": "How did rewritten Nazi history textbooks portray the entire course of German history to schoolchildren?",
+          "q": "How did rewritten Nazi history textbooks portray the entire course of German history to schoolchildren?",
           "options": [
-            "12 million",
-            "4 million",
-            "1 million",
-            "8 million"
-          ]
-        },
-        {
-          "q": "Why did some young people start to hate the Hitler Youth by the late 1930s?",
-          "a": "It became compulsory, too strict, and focused on boring military drill instead of fun",
-          "options": [
-            "It became compulsory, too strict, and focused on boring military drill instead of fun",
-            "They were banned from wearing uniforms",
-            "The camping trips were too expensive for working class families",
-            "It was run by the Catholic Church"
-          ]
+            "A peaceful partnership with Western democracies",
+            "An endless struggle against Jewish enemies",
+            "A celebration of Weimar parliamentary coalitions",
+            "A history of international working-class solidarity"
+          ],
+          "answer": "An endless struggle against Jewish enemies",
+          "a": "An endless struggle against Jewish enemies",
+          "explanation": "Rewritten school textbooks distorted German history into a racial struggle against alleged Jewish enemies to indoctrinate children from an early age."
         }
       ],
       "utility_starters": null,
@@ -21738,9 +23018,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Male youth were indoctrinated in the <strong>Hitlerjugend for boys</strong>, focusing on rigorous <strong>military drill & camping</strong> expeditions designed as physical <strong>preparation for armed forces</strong> conscription.",
-          "heading": "The Hitler Youth (Hitlerjugend) for Boys",
+          "heading": "How did the Hitlerjugend train German boys for war and obedience?",
           "date": "1933–1936",
-          "step": 1
+          "step": 1,
+          "question": "How did the Hitlerjugend train German boys for war and obedience?",
+          "questionHeading": "How did the Hitlerjugend train German boys for war and obedience?",
+          "prose_hash": "538c78ec4e"
         },
         {
           "stage": 2,
@@ -21772,9 +23055,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Girls were organized within the <strong>Bund Deutscher Mädel (BDM)</strong>, which combined physical fitness with intensive <strong>motherhood & domestic training</strong> and strict <strong>racial hygiene instruction</strong> for future wives.",
-          "heading": "The League of German Girls (Bund Deutscher Mädel)",
+          "heading": "How did the BDM train adolescent girls for motherhood and domestic duty?",
           "date": "1933–1936",
-          "step": 2
+          "step": 2,
+          "question": "How did the BDM train adolescent girls for motherhood and domestic duty?",
+          "questionHeading": "How did the BDM train adolescent girls for motherhood and domestic duty?",
+          "prose_hash": "c599465432"
         },
         {
           "stage": 3,
@@ -21806,9 +23092,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "The state tightened its monopoly over adolescence through the <strong>1936 Hitler Youth Act</strong>, establishing legally <strong>compulsory membership (1939)</strong> while rival Catholic and Protestant <strong>church youth organizations banned</strong> completely.",
-          "heading": "Compulsory Youth Membership & Resistance",
+          "heading": "Why did the regime make youth group attendance legally compulsory in 1939?",
           "date": "1936–1939",
-          "step": 3
+          "step": 3,
+          "question": "Why did the regime make youth group attendance legally compulsory in 1939?",
+          "questionHeading": "Why did the regime make youth group attendance legally compulsory in 1939?",
+          "prose_hash": "eeee5043e8"
         },
         {
           "stage": 4,
@@ -21840,9 +23129,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "School classrooms were ideologically regimented as the vast majority joined the <strong>National Socialist Teachers League</strong>, following the purge when <strong>Jewish teachers sacked (1933)</strong> and educators attended mandatory <strong>ideological summer camps</strong>.",
-          "heading": "Purging Teachers & The Nazi Teachers' League",
+          "heading": "How did the regime ensure that school teachers actively delivered propaganda?",
           "date": "1933–1937",
-          "step": 4
+          "step": 4,
+          "question": "How did the regime ensure that school teachers actively delivered propaganda?",
+          "questionHeading": "How did the regime ensure that school teachers actively delivered propaganda?",
+          "prose_hash": "d679ea9102"
         },
         {
           "stage": 5,
@@ -21874,9 +23166,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "The curriculum was transformed through thoroughly <strong>rewritten school textbooks</strong> prioritizing pseudo-scientific <strong>racial biology & Eugenics</strong>, while the regime nurtured future political leaders inside specialized <strong>Napolas elite cadet schools</strong>.",
-          "heading": "Indoctrinating the Curriculum & Elite Schools",
+          "heading": "How were academic subjects rewritten to reinforce racial theory and militarism?",
           "date": "1933–1939",
-          "step": 5
+          "step": 5,
+          "question": "How were academic subjects rewritten to reinforce racial theory and militarism?",
+          "questionHeading": "How were academic subjects rewritten to reinforce racial theory and militarism?",
+          "prose_hash": "a5f4084ef0"
         }
       ],
       "causal_domino_spine": {
@@ -21893,7 +23188,8 @@ window.unitData = {
             "trigger": "Boys were drilled in trench warfare, map reading, and small-bore rifle shooting, swearing personal loyalty to Hitler upon receiving their pocket knives.",
             "desc": "Boys were drilled in trench warfare, map reading, and small-bore rifle shooting, swearing personal loyalty to Hitler upon receiving their pocket knives.",
             "connective": "Prepared German boys physically and psychologically for future combat service in the armed forces.",
-            "question": "How did the Hitler Youth prepare boys for future military service and total obedience?"
+            "question": "How did the Hitlerjugend train German boys for war and obedience?",
+            "prose_hash": "538c78ec4e"
           },
           {
             "step": 2,
@@ -21905,7 +23201,8 @@ window.unitData = {
             "trigger": "Adolescent girls exercised outdoors to build stamina and learned domestic cooking, infant hygiene, and racial science to prepare for motherhood.",
             "desc": "Adolescent girls exercised outdoors to build stamina and learned domestic cooking, infant hygiene, and racial science to prepare for motherhood.",
             "connective": "Conditioned girls to accept their domestic role as breeders of the Aryan racial community.",
-            "question": "How did the BDM train adolescent girls for motherhood and domestic duty?"
+            "question": "How did the BDM train adolescent girls for motherhood and domestic duty?",
+            "prose_hash": "c599465432"
           },
           {
             "step": 3,
@@ -21917,7 +23214,8 @@ window.unitData = {
             "trigger": "The regime banned rival church youth groups and made attendance legally compulsory in 1939, enrolling 8.2 million children into state uniforms.",
             "desc": "The regime banned rival church youth groups and made attendance legally compulsory in 1939, enrolling 8.2 million children into state uniforms.",
             "connective": "Monopolized young people’s leisure time while sparking resentment among rebellious gangs like the Edelweiss Pirates.",
-            "question": "Why did the regime make youth group attendance legally compulsory in 1939?"
+            "question": "Why did the regime make youth group attendance legally compulsory in 1939?",
+            "prose_hash": "eeee5043e8"
           },
           {
             "step": 4,
@@ -21929,7 +23227,8 @@ window.unitData = {
             "trigger": "Jewish and democratic teachers were dismissed, while 97% of educators joined the NSLB, attending mandatory ideological camps during holidays.",
             "desc": "Jewish and democratic teachers were dismissed, while 97% of educators joined the NSLB, attending mandatory ideological camps during holidays.",
             "connective": "Eliminated classroom dissent, ensuring that state propaganda was delivered uniformly across German schools.",
-            "question": "How did the regime ensure that school teachers actively delivered propaganda?"
+            "question": "How did the regime ensure that school teachers actively delivered propaganda?",
+            "prose_hash": "d679ea9102"
           },
           {
             "step": 5,
@@ -21941,7 +23240,8 @@ window.unitData = {
             "trigger": "Schools allocated 15% of time to PE, militarized maths word problems, taught racial science with skull calipers, and trained leaders in Napolas.",
             "desc": "Schools allocated 15% of time to PE, militarized maths word problems, taught racial science with skull calipers, and trained leaders in Napolas.",
             "connective": "Subverted intellectual inquiry into racial conditioning and military obedience across an entire generation.",
-            "question": "How were academic subjects rewritten to reinforce racial theory and militarism?"
+            "question": "How were academic subjects rewritten to reinforce racial theory and militarism?",
+            "prose_hash": "a5f4084ef0"
           }
         ]
       },
@@ -22201,48 +23501,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Who was appointed Reich Minister of Science, Education and National Culture in 1934?",
-            "answer": "Bernhard Rust."
+            "stage": 1,
+            "question": "Who was appointed by Hitler in 1933 as the Reich Youth Leader?",
+            "answer": "Baldur von Schirach",
+            "explanation": "Operating under Baldur von Schirach, the organization was designed to toughen boys into fearless, obedient soldiers for the Third Reich."
           },
           {
-            "question": "What percentage of school timetable hours did Bernhard Rust allocate to physical education?",
-            "answer": "15 percent (roughly two to three hours every day)."
+            "stage": 2,
+            "question": "What new compulsory school subject taught children pseudo-scientific racial theory and skull measurement?",
+            "answer": "Racial science (Rassenkunde)",
+            "explanation": "Alongside domestic skills, members received intensive racial hygiene instruction, memorizing genealogical charts to identify suitable Aryan marriage partners and reject racial intermarriage."
           },
           {
-            "question": "What law passed in March 1939 made membership of the Hitler Youth legally compulsory for all 10–18 year olds?",
-            "answer": "The First Decree for the Implementation of the Law on the Hitler Youth."
+            "stage": 3,
+            "question": "What was the name of the youth group for boys aged 14-18?",
+            "answer": "Hitlerjugend / HJ / Hitler Youth",
+            "explanation": "In December 1936, Hitler enacted the landmark 1936 Hitler Youth Act, giving the organization exclusive responsibility for all physical and ideological training outside school."
           },
           {
-            "question": "What domestic slogan summarized the Nazi ideal for women in the home?",
-            "answer": "Kinder, Küche, Kirche (Children, Kitchen, Church)."
+            "stage": 4,
+            "question": "What was the name of the compulsory union that 97% of teachers had joined by 1939?",
+            "answer": "The National Socialist Teachers' League / NSLB",
+            "explanation": "Teachers were compelled to join the National Socialist Teachers League (NSLB), with over ninety-seven percent of all German educators enrolling by 1937 to protect their professional livelihoods."
           },
           {
-            "question": "What state award was conferred on mothers who had four, six, or eight children?",
-            "answer": "The Cross of Honour of the German Mother (Mutterkreuz)."
+            "stage": 5,
+            "question": "In what year was membership in the Hitler Youth made strictly compulsory for all eligible adolescents?",
+            "answer": "1939",
+            "explanation": "The academic curriculum was thoroughly reconstructed to serve military preparation and racial fanaticism."
           },
           {
-            "question": "What law passed in July 1933 authorized compulsory sterilization for hereditary illnesses?",
-            "answer": "The Law for the Prevention of Hereditarily Diseased Offspring."
+            "stage": 1,
+            "question": "What law passed in December 1936 declared the Hitler Youth the sole youth movement in Germany?",
+            "answer": "The Law for the Hitler Youth",
+            "explanation": "Through rigorous preparation for armed forces, boys passed demanding physical fitness tests before receiving an engraved Hitler Youth dagger bearing the motto *Blood and Honour*, instilling unquestioning personal devotion to Adolf Hitler."
           },
           {
-            "question": "What purge in June 1934 destroyed the leadership of the SA and secured army loyalty for Hitler?",
-            "answer": "The Night of the Long Knives."
+            "stage": 2,
+            "question": "What youth organization was established for German boys aged ten to fourteen?",
+            "answer": "The Deutsches Jungvolk (German Young People)",
+            "explanation": "While boys were drilled for warfare, German girls aged fourteen to eighteen joined the Bund Deutscher Mädel (BDM)."
           },
           {
-            "question": "What Dutch communist was executed for setting fire to the Reichstag building in February 1933?",
-            "answer": "Marinus van der Lubbe."
+            "stage": 3,
+            "question": "In what year did the Hitler Youth Law make the youth movements effectively mandatory?",
+            "answer": "1936",
+            "explanation": "In December 1936, Hitler enacted the landmark 1936 Hitler Youth Act, giving the organization exclusive responsibility for all physical and ideological training outside school."
           },
           {
-            "question": "Who was appointed Minister of Public Enlightenment and Propaganda in March 1933?",
-            "answer": "Dr Joseph Goebbels."
+            "stage": 4,
+            "question": "Which April 1933 law was used by the regime to sack Jewish, socialist, and democratic teachers from German schools?",
+            "answer": "The April 1933 Civil Service Law",
+            "explanation": "Under the April 1933 Civil Service Law, politically unreliable and Jewish educators were purged so German classrooms served Nazi indoctrination."
           },
           {
-            "question": "What secret state police force, created by Hermann Göring and later commanded by Heinrich Himmler, operated above the law?",
-            "answer": "The Gestapo (Geheime Staatspolizei)."
+            "stage": 5,
+            "question": "What elite residential boarding academies overseen by the SS trained ruthless future military and political commanders?",
+            "answer": "Napolas (National Political Educational Institutes)",
+            "explanation": "Napolas elite cadet boarding schools subjected selected boys to harsh SS-supervised military training to forge the future leadership elite of the Reich."
           }
         ]
       },
@@ -22309,8 +23628,8 @@ window.unitData = {
         {
           "title": "Smashed Unions: Robert Ley and the German Labour Front (DAF) (May 1933)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> Upon seizing power, Hitler moved swiftly to crush the organized working-class movement. On 2 May 1933, the day after celebrating May Day as a national holiday, SA and SS stormtroopers raided union offices nationwide, arresting officials and confiscating bank assets. Through this decisive assault, independent **trade unions abolished (May 1933)** overnight, removing the primary institutional defender of workers' wages and employment rights.\n\n<span class=\"para-ref\">[1.2]</span> In their place, Dr. Robert Ley established the compulsory **German Labour Front (DAF)**, which absorbed all workers and employers into a single state-controlled corporation. Under the DAF, **strikes banned & wages frozen**, while factory councils were abolished. In 1935, the DAF introduced compulsory workbooks (*Arbeitsbuch*), preventing workers from changing jobs without written permission and binding laborers directly to armaments factories.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Upon seizing power, Hitler moved swiftly to crush the organized working-class movement. On 2 May 1933, the day after celebrating May Day as a national holiday, SA and SS stormtroopers raided union offices nationwide, arresting officials and confiscating bank assets. Through this decisive assault, independent **trade unions abolished (May 1933)** overnight, removing the primary institutional defender of workers' wages and employment rights.\n\n<span class=\"para-ref\">[1.2]</span> In their place, Dr. Robert Ley established the compulsory **German Labour Front (DAF)**, which absorbed all workers and employers into a single state-controlled corporation. Under the DAF, **strikes banned & wages frozen**, while factory councils were abolished. In 1935, the DAF introduced compulsory workbooks (*Arbeitsbuch*), preventing workers from changing jobs without written permission and binding laborers directly to armaments factories.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Alongside expanding the **National Labour Service**, Hitler moved swiftly to crush organized labour on 2 May 1933. SA and SS stormtroopers raided trade union offices nationwide, jailed union officials, and abolished independent unions, while Dr **Robert Ley** replaced them with **the German Labour Front (DAF)**.\n\n<span class=\"para-ref\">[1.2]</span> Absorbing both workers and employers into one state body, the DAF banned strikes and froze wages. In 1935, compulsory workbooks (*Arbeitsbuch*) stopped workers changing jobs without written permission, while compulsory DAF dues (plus **5 marks** weekly for car savings) tied workers to arms factories.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Alongside expanding the **National Labour Service**, Hitler moved swiftly to crush organized labour on 2 May 1933. SA and SS stormtroopers raided trade union offices nationwide, jailed union officials, and abolished independent unions, while Dr **Robert Ley** replaced them with **the German Labour Front (DAF)**.\n\n<span class=\"para-ref\">[1.2]</span> Absorbing both workers and employers into one state body, the DAF banned strikes and froze wages. In 1935, compulsory workbooks (*Arbeitsbuch*) stopped workers changing jobs without written permission, while compulsory DAF dues (plus **5 marks** weekly for car savings) tied workers to arms factories.",
           "act_title": "Stage 1: Smashed Unions & The German Labour Front (DAF)",
           "sources": [
             {
@@ -22366,8 +23685,8 @@ window.unitData = {
         {
           "title": "The Labour Army: Konstantin Hierl and the Reich Labour Service (RAD) (1933–1935)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> To combat massive youth unemployment and foster national solidarity, the regime established the **Reich Labour Service (RAD)** under Konstantin Hierl. Converted into a compulsory state program in July 1935, the law mandated **six months compulsory labour** for all unmarried young men aged eighteen to twenty-five prior to their military conscription, removing hundreds of thousands of men from unemployment figures.\n\n<span class=\"para-ref\">[2.2]</span> Conscripts lived in communal barracks, wore militaristic uniforms, and drilled with spades instead of rifles. Workers drained peat bogs, planted forests, and carried out extensive **Autobahn highway construction**, building arterial dual carriageways designed for rapid military troop transit. While working hours were grueling and wages nominal, the RAD successfully instilled physical endurance, military discipline, and state obedience into German youth.",
-          "content": "<span class=\"para-ref\">[2.1]</span> To combat massive youth unemployment and foster national solidarity, the regime established the **Reich Labour Service (RAD)** under Konstantin Hierl. Converted into a compulsory state program in July 1935, the law mandated **six months compulsory labour** for all unmarried young men aged eighteen to twenty-five prior to their military conscription, removing hundreds of thousands of men from unemployment figures.\n\n<span class=\"para-ref\">[2.2]</span> Conscripts lived in communal barracks, wore militaristic uniforms, and drilled with spades instead of rifles. Workers drained peat bogs, planted forests, and carried out extensive **Autobahn highway construction**, building arterial dual carriageways designed for rapid military troop transit. While working hours were grueling and wages nominal, the RAD successfully instilled physical endurance, military discipline, and state obedience into German youth.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Inheriting **over six million registered unemployed workers** in 1933, Nazi work schemes cut official figures to **under 300,000 unemployed workers** by 1939. Under Konstantin Hierl, **the Reich Labour Service (Reichsarbeitsdienst or RAD)** became compulsory in July 1935, requiring six months' labour from unmarried men aged 18–25.\n\n<span class=\"para-ref\">[2.2]</span> Living in camp barracks, RAD conscripts drilled in uniform with spades instead of rifles. Workers drained peat marshes, planted forests, and carried out **Autobahn highway construction** across Germany, instilling military discipline for tiny pay.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Inheriting **over six million registered unemployed workers** in 1933, Nazi work schemes cut official figures to **under 300,000 unemployed workers** by 1939. Under Konstantin Hierl, **the Reich Labour Service (Reichsarbeitsdienst or RAD)** became compulsory in July 1935, requiring six months' labour from unmarried men aged 18–25.\n\n<span class=\"para-ref\">[2.2]</span> Living in camp barracks, RAD conscripts drilled in uniform with spades instead of rifles. Workers drained peat marshes, planted forests, and carried out **Autobahn highway construction** across Germany, instilling military discipline for tiny pay.",
           "sources": [
             {
               "id": "weimar_l15_source_autobahn_works",
@@ -22427,8 +23746,8 @@ window.unitData = {
         {
           "title": "Rearmament and Conscription: The Reality of 'Invisible Unemployment' (1935–1939)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> Nazi propaganda loudly celebrated an economic \"miracle\", claiming registered unemployment plummeted from six million in 1933 to under three hundred thousand by 1939. This dramatic recovery was heavily driven when **military conscription reintroduced** in March 1935, drafting five hundred thousand young men into the Wehrmacht and stimulating massive heavy industrial orders for aircraft, tanks, artillery, and synthetic petroleum fuel.\n\n<span class=\"para-ref\">[3.2]</span> However, historians emphasize that these figures masked extensive **'invisible unemployment' stats** through statistical manipulation. Crucially, **women and Jews excluded** from official unemployment registers after being purged from civil service, medical, and teaching roles. Furthermore, young men serving in the compulsory RAD and political dissidents imprisoned in concentration camps were omitted, concealing hundreds of thousands of jobless citizens from public records.",
-          "content": "<span class=\"para-ref\">[3.1]</span> Nazi propaganda loudly celebrated an economic \"miracle\", claiming registered unemployment plummeted from six million in 1933 to under three hundred thousand by 1939. This dramatic recovery was heavily driven when **military conscription reintroduced** in March 1935, drafting five hundred thousand young men into the Wehrmacht and stimulating massive heavy industrial orders for aircraft, tanks, artillery, and synthetic petroleum fuel.\n\n<span class=\"para-ref\">[3.2]</span> However, historians emphasize that these figures masked extensive **'invisible unemployment' stats** through statistical manipulation. Crucially, **women and Jews excluded** from official unemployment registers after being purged from civil service, medical, and teaching roles. Furthermore, young men serving in the compulsory RAD and political dissidents imprisoned in concentration camps were omitted, concealing hundreds of thousands of jobless citizens from public records.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Nazi propaganda hailed an \"economic miracle of full employment\" while preparing the nation for war, as jobless counts fell from six million in 1933 to under 300,000 by 1939. Reintroducing **military conscription** in March **1935** drafted 500,000 men at first — absorbing **1.4m** men into the Wehrmacht by 1939 — alongside booming arms orders.\n\n<span class=\"para-ref\">[3.2]</span> Yet historians show this statistical manipulation masked **Invisible Unemployment**. Dismissing **Jews** and married **women** from civil service, medical, and teaching jobs excluded them from jobless counts. RAD recruits and camp prisoners were omitted too to mask real jobless numbers.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Nazi propaganda hailed an \"economic miracle of full employment\" while preparing the nation for war, as jobless counts fell from six million in 1933 to under 300,000 by 1939. Reintroducing **military conscription** in March **1935** drafted 500,000 men at first — absorbing **1.4m** men into the Wehrmacht by 1939 — alongside booming arms orders.\n\n<span class=\"para-ref\">[3.2]</span> Yet historians show this statistical manipulation masked **Invisible Unemployment**. Dismissing **Jews** and married **women** from civil service, medical, and teaching jobs excluded them from jobless counts. RAD recruits and camp prisoners were omitted too to mask real jobless numbers.",
           "act_title": "Stage 3: Conscription & 'Invisible Unemployment'",
           "sources": [
             {
@@ -22484,8 +23803,8 @@ window.unitData = {
         {
           "title": "Strength Through Joy (KdF): Subsidized Leisure and the People's Car (1933–1939)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to lost trade union rights and long hours, Robert Ley established **Kraft durch Freude (KdF)**, or Strength Through Joy. Subsidized by the DAF, KdF became the world’s largest leisure provider, organizing affordable concerts, sporting events, hiking excursions, and popular **subsidized cruises & theater** voyages to Norway and the Mediterranean aboard purpose-built luxury liners for working-class families.\n\n<span class=\"para-ref\">[4.2]</span> To provide affordable private transport, KdF launched the ambitious **Volkswagen Beetle savings scheme**, allowing workers to purchase an automobile by saving five marks weekly. However, no German worker ever received a civilian car; when war broke out in 1939, factory machinery was converted to military vehicles, and workers’ personal savings deposits were confiscated to finance military rearmament production.",
-          "content": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to lost trade union rights and long hours, Robert Ley established **Kraft durch Freude (KdF)**, or Strength Through Joy. Subsidized by the DAF, KdF became the world’s largest leisure provider, organizing affordable concerts, sporting events, hiking excursions, and popular **subsidized cruises & theater** voyages to Norway and the Mediterranean aboard purpose-built luxury liners for working-class families.\n\n<span class=\"para-ref\">[4.2]</span> To provide affordable private transport, KdF launched the ambitious **Volkswagen Beetle savings scheme**, allowing workers to purchase an automobile by saving five marks weekly. However, no German worker ever received a civilian car; when war broke out in 1939, factory machinery was converted to military vehicles, and workers’ personal savings deposits were confiscated to finance military rearmament production.",
+          "text": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to long hours after abolishing **Trade Unions**, **Robert Ley** set up Strength Through Joy (*Kraft durch Freude*, KdF) inside **the German Labour Front (DAF)**. Subsidised by the state, KdF ran cheap concerts, theatre trips, sports, hikes, and luxury cruise voyages to Norway and the Mediterranean.\n\n<span class=\"para-ref\">[4.2]</span> KdF also promoted **the Volkswagen savings scheme**, letting workers pay five marks a week toward a \"People's Car\". However, no worker ever received a civilian car; when war broke out in 1939, factories switched to army vehicles and workers' savings were seized for rearmament.",
+          "content": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to long hours after abolishing **Trade Unions**, **Robert Ley** set up Strength Through Joy (*Kraft durch Freude*, KdF) inside **the German Labour Front (DAF)**. Subsidised by the state, KdF ran cheap concerts, theatre trips, sports, hikes, and luxury cruise voyages to Norway and the Mediterranean.\n\n<span class=\"para-ref\">[4.2]</span> KdF also promoted **the Volkswagen savings scheme**, letting workers pay five marks a week toward a \"People's Car\". However, no worker ever received a civilian car; when war broke out in 1939, factories switched to army vehicles and workers' savings were seized for rearmament.",
           "act_title": "Stage 4: Strength Through Joy (KdF) & Beauty of Labour (SdA)",
           "sources": [
             {
@@ -22541,8 +23860,8 @@ window.unitData = {
         {
           "title": "Guns vs Butter: The Four-Year Plan and Falling Living Standards (1936–1939)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> In 1936, Hermann Göring took control of the economy under the ambitious **Four-Year Plan (1936)**, designed to prepare the military and economy for total European war within four years. Göring prioritized **autarky economic self-sufficiency**, attempting to eliminate dependence on imported foreign raw materials by manufacturing expensive domestic synthetic rubber (*Buna*), synthetic oil from coal, and low-grade German iron ore.\n\n<span class=\"para-ref\">[5.2]</span> This aggressive rearmament produced the famous \"guns or butter\" dilemma, sacrificing civilian living standards for military production. Workers endured **longer hours & food rationing**, with average weekly working hours rising from forty-three to forty-nine by 1939. Shortages of butter, meat, and consumer goods grew acute, and real wages barely matched 1928 levels, proving that ordinary German living standards remained severely strained.",
-          "content": "<span class=\"para-ref\">[5.1]</span> In 1936, Hermann Göring took control of the economy under the ambitious **Four-Year Plan (1936)**, designed to prepare the military and economy for total European war within four years. Göring prioritized **autarky economic self-sufficiency**, attempting to eliminate dependence on imported foreign raw materials by manufacturing expensive domestic synthetic rubber (*Buna*), synthetic oil from coal, and low-grade German iron ore.\n\n<span class=\"para-ref\">[5.2]</span> This aggressive rearmament produced the famous \"guns or butter\" dilemma, sacrificing civilian living standards for military production. Workers endured **longer hours & food rationing**, with average weekly working hours rising from forty-three to forty-nine by 1939. Shortages of butter, meat, and consumer goods grew acute, and real wages barely matched 1928 levels, proving that ordinary German living standards remained severely strained.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Alongside **6 months** of RAD service, **Hermann Göring** took command of the Four-Year Plan in 1936 **to prepare the German economy for war within four years**. Göring pursued **Autarky** (economic self-sufficiency), pouring billions into costly domestic synthetic rubber (*Buna*), synthetic oil from coal, and low-grade iron ore.\n\n<span class=\"para-ref\">[5.2]</span> Choosing military \"guns before butter\" strained civilian living standards with food rationing and shortages of butter, meat, and consumer goods. Average working weeks rose from 43 to 49 hours by **1939** while real wages barely matched 1928 levels.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Alongside **6 months** of RAD service, **Hermann Göring** took command of the Four-Year Plan in 1936 **to prepare the German economy for war within four years**. Göring pursued **Autarky** (economic self-sufficiency), pouring billions into costly domestic synthetic rubber (*Buna*), synthetic oil from coal, and low-grade iron ore.\n\n<span class=\"para-ref\">[5.2]</span> Choosing military \"guns before butter\" strained civilian living standards with food rationing and shortages of butter, meat, and consumer goods. Average working weeks rose from 43 to 49 hours by **1939** while real wages barely matched 1928 levels.",
           "sources": [
             {
               "id": "weimar_l15_source_a",
@@ -22604,270 +23923,284 @@ window.unitData = {
       ],
       "quiz": [
         {
-          "q": "How many registered unemployed workers were there in Germany when Hitler became Chancellor in January 1933?",
-          "a": "Over six million registered unemployed workers",
-          "options": [
-            "Over six million registered unemployed workers",
-            "Under 500,000 workers",
-            "Exactly 1 million workers",
-            "Over 15 million workers"
-          ],
-          "question": "How many registered unemployed workers were there in Germany when Hitler became Chancellor in January 1933?",
-          "answer": "Over six million registered unemployed workers"
-        },
-        {
-          "q": "To what official figure had unemployment fallen by 1939, heralded by Nazi propaganda as an economic miracle?",
-          "a": "Under 300,000 unemployed workers",
-          "options": [
-            "Under 300,000 unemployed workers",
-            "Zero workers",
-            "Two million workers",
-            "Five million workers"
-          ],
-          "question": "To what official figure had unemployment fallen by 1939, heralded by Nazi propaganda as an economic miracle?",
-          "answer": "Under 300,000 unemployed workers"
-        },
-        {
+          "stage": 1,
+          "question": "What do the initials RAD stand for in English?",
           "q": "What do the initials RAD stand for in English?",
-          "a": "National Labour Service",
           "options": [
-            "National Labour Service",
             "National Agricultural Duty",
             "Reich Aviation Department",
-            "Reich Army Division"
-          ]
+            "Reich Army Division",
+            "National Labour Service"
+          ],
+          "answer": "National Labour Service",
+          "a": "National Labour Service",
+          "explanation": "On 2 May 1933, the day after celebrating May Day as a national holiday, SA and SS stormtroopers raided union offices nationwide, arresting officials and confiscating bank assets."
         },
         {
+          "stage": 1,
+          "question": "Who was the leader of the German Labour Front (DAF) who created the 'Strength Through Joy' (KdF) organization?",
+          "q": "Who was the leader of the German Labour Front (DAF) who created the 'Strength Through Joy' (KdF) organization?",
+          "options": [
+            "Hermann Göring",
+            "Hjalmar Schacht",
+            "Robert Ley",
+            "Bernhard Rust"
+          ],
+          "answer": "Robert Ley",
+          "a": "Robert Ley",
+          "explanation": "Robert Ley established the compulsory German Labour Front (DAF), which absorbed all workers and employers into a single state-controlled corporation."
+        },
+        {
+          "stage": 1,
+          "question": "What Nazi organisation replaced trade unions?",
+          "q": "What Nazi organisation replaced trade unions?",
+          "options": [
+            "National Labour Service / RAD",
+            "The German Labour Front / DAF",
+            "Strength Through Joy / KdF",
+            "Beauty of Labour / SdA"
+          ],
+          "answer": "The German Labour Front / DAF",
+          "a": "The German Labour Front / DAF",
+          "explanation": "Robert Ley established the compulsory German Labour Front (DAF), which absorbed all workers and employers into a single state-controlled corporation."
+        },
+        {
+          "stage": 1,
+          "question": "How much did workers pay per week into the Volkswagen savings scheme?",
+          "q": "How much did workers pay per week into the Volkswagen savings scheme?",
+          "options": [
+            "5 marks",
+            "10 marks",
+            "1 mark",
+            "50 marks"
+          ],
+          "answer": "5 marks",
+          "a": "5 marks",
+          "explanation": "In 1935, the DAF introduced compulsory workbooks (*Arbeitsbuch*), preventing workers from changing jobs without written permission and binding laborers directly to armaments factories."
+        },
+        {
+          "stage": 2,
+          "question": "How many registered unemployed workers were there in Germany when Hitler became Chancellor in January 1933?",
+          "q": "How many registered unemployed workers were there in Germany when Hitler became Chancellor in January 1933?",
+          "options": [
+            "Under 500,000 workers",
+            "Exactly 1 million workers",
+            "Over 15 million workers",
+            "Over six million registered unemployed workers"
+          ],
+          "answer": "Over six million registered unemployed workers",
+          "a": "Over six million registered unemployed workers",
+          "explanation": "Converted into a compulsory state program in July 1935, the law mandated six months compulsory labour for all unmarried young men aged eighteen to twenty-five prior to their military conscription, removing hundreds of thousands of men from unemployment figures."
+        },
+        {
+          "stage": 2,
+          "question": "To what official figure had unemployment fallen by 1939, heralded by Nazi propaganda as an economic miracle?",
+          "q": "To what official figure had unemployment fallen by 1939, heralded by Nazi propaganda as an economic miracle?",
+          "options": [
+            "Zero workers",
+            "Two million workers",
+            "Under 300,000 unemployed workers",
+            "Five million workers"
+          ],
+          "answer": "Under 300,000 unemployed workers",
+          "a": "Under 300,000 unemployed workers",
+          "explanation": "To combat massive youth unemployment and foster national solidarity, the regime established the Reich Labour Service (RAD) under Konstantin Hierl."
+        },
+        {
+          "stage": 2,
+          "question": "What compulsory six-month labour service was mandated for unmarried young men aged 18 to 25?",
+          "q": "What compulsory six-month labour service was mandated for unmarried young men aged 18 to 25?",
+          "options": [
+            "The German Labour Front",
+            "The Reich Labour Service (Reichsarbeitsdienst or RAD)",
+            "The Organisation Todt",
+            "The Hitler Youth"
+          ],
+          "answer": "The Reich Labour Service (Reichsarbeitsdienst or RAD)",
+          "a": "The Reich Labour Service (Reichsarbeitsdienst or RAD)",
+          "explanation": "To combat massive youth unemployment and foster national solidarity, the regime established the Reich Labour Service (RAD) under Konstantin Hierl."
+        },
+        {
+          "stage": 2,
+          "question": "Which major transport infrastructure project employed Reich Labour Service (RAD) conscripts to build dual carriageways for military transit?",
+          "q": "Which major transport infrastructure project employed Reich Labour Service (RAD) conscripts to build dual carriageways for military transit?",
+          "options": [
+            "Autobahn highway construction",
+            "Electrification of the London Underground",
+            "Digging the Suez Canal",
+            "Rebuilding Weimar municipal tenements"
+          ],
+          "answer": "Autobahn highway construction",
+          "a": "Autobahn highway construction",
+          "explanation": "Drilling with spades on nominal pay, compulsory RAD conscripts drained marshes and built the Autobahn motorway network while reducing unemployment statistics."
+        },
+        {
+          "stage": 3,
+          "question": "In what year did the RAD become compulsory for all young men aged 18–25?",
           "q": "In what year did the RAD become compulsory for all young men aged 18–25?",
-          "a": "1935",
           "options": [
             "1938",
             "1939",
             "1933",
             "1935"
-          ]
+          ],
+          "answer": "1935",
+          "a": "1935",
+          "explanation": "This dramatic recovery was heavily driven when military conscription reintroduced in March 1935, drafting five hundred thousand young men into the Wehrmacht and stimulating massive heavy industrial orders for aircraft, tanks, artillery, and synthetic petroleum fuel."
         },
         {
-          "q": "How long did young men have to serve in the RAD?",
-          "a": "6 months",
-          "options": [
-            "3 months",
-            "2 years",
-            "6 months",
-            "1 year"
-          ]
-        },
-        {
-          "q": "By 1938, how many men were employed building the Autobahns?",
-          "a": "Over 100,000",
-          "options": [
-            "1 million",
-            "500,000",
-            "Around 10,000",
-            "Over 100,000"
-          ]
-        },
-        {
+          "stage": 3,
+          "question": "What term is used to describe the Nazi manipulation of unemployment statistics?",
           "q": "What term is used to describe the Nazi manipulation of unemployment statistics?",
-          "a": "Invisible Unemployment",
           "options": [
             "Gleichschaltung",
-            "Invisible Unemployment",
             "Economic Miracle",
+            "Invisible Unemployment",
             "The Four Year Plan"
-          ]
+          ],
+          "answer": "Invisible Unemployment",
+          "a": "Invisible Unemployment",
+          "explanation": "However, historians emphasize that these figures masked extensive 'invisible unemployment' stats through statistical manipulation."
         },
         {
+          "stage": 3,
+          "question": "Name two groups of people who were removed from the workforce but not counted in the unemployment figures.",
           "q": "Name two groups of people who were removed from the workforce but not counted in the unemployment figures.",
-          "a": "Jews and Women",
           "options": [
-            "Jews and Women",
             "Farmers and Soldiers",
+            "Jews and Women",
             "SS officers and Gestapo agents",
             "Teachers and Doctors"
-          ]
-        },
-        {
-          "q": "What compulsory six-month labour service was mandated for unmarried young men aged 18 to 25?",
-          "a": "The Reich Labour Service (Reichsarbeitsdienst or RAD)",
-          "options": [
-            "The Reich Labour Service (Reichsarbeitsdienst or RAD)",
-            "The German Labour Front",
-            "The Organisation Todt",
-            "The Hitler Youth"
           ],
-          "question": "What compulsory six-month labour service was mandated for unmarried young men aged 18 to 25?",
-          "answer": "The Reich Labour Service (Reichsarbeitsdienst or RAD)"
+          "answer": "Jews and Women",
+          "a": "Jews and Women",
+          "explanation": "Crucially, women and Jews excluded from official unemployment registers after being purged from civil service, medical, and teaching roles."
         },
         {
-          "q": "What monumental public works construction project was overseen by engineer Fritz Todt?",
-          "a": "The national motorway network (Reichsautobahnen)",
+          "stage": 3,
+          "question": "What military measure reintroduced by Hitler in March 1935 drafted five hundred thousand young men into the Wehrmacht?",
+          "q": "What military measure reintroduced by Hitler in March 1935 drafted five hundred thousand young men into the Wehrmacht?",
           "options": [
-            "The national motorway network (Reichsautobahnen)",
-            "The Berlin underground metro",
-            "The Baltic shipping canal",
-            "The Rhine hydroelectric dam"
+            "Military conscription",
+            "Passive Resistance",
+            "The Ebert-Groener Pact",
+            "Voluntary Freikorps enlistment"
           ],
-          "question": "What monumental public works construction project was overseen by engineer Fritz Todt?",
-          "answer": "The national motorway network (Reichsautobahnen)"
+          "answer": "Military conscription",
+          "a": "Military conscription",
+          "explanation": "Reintroducing compulsory military conscription in March 1935 absorbed half a million young men into the army and boomed heavy armaments factories."
         },
         {
-          "q": "Who was appointed to head the Four-Year Plan in 1936 to prepare the German economy for war?",
-          "a": "Hermann Göring",
-          "options": [
-            "Hermann Göring",
-            "Hjalmar Schacht",
-            "Robert Ley",
-            "Fritz Todt"
-          ],
-          "question": "Who was appointed to head the Four-Year Plan in 1936 to prepare the German economy for war?",
-          "answer": "Hermann Göring"
-        },
-        {
-          "q": "What was the ultimate goal of the Four Year Plan?",
-          "a": "To prepare the German economy for war within four years",
-          "options": [
-            "To pay back all of Germany's war debts",
-            "To colonise Eastern Europe",
-            "To prepare the German economy for war within four years",
-            "To completely eliminate unemployment"
-          ]
-        },
-        {
-          "q": "What is the term for the economic policy of self-sufficiency?",
-          "a": "Autarky",
-          "options": [
-            "Gleichschaltung",
-            "Ersatz",
-            "Lebensraum",
-            "Autarky"
-          ]
-        },
-        {
+          "stage": 4,
+          "question": "What monolithic Nazi organization replaced independent trade unions on 2 May 1933?",
           "q": "What monolithic Nazi organization replaced independent trade unions on 2 May 1933?",
-          "a": "The German Labour Front (DAF)",
           "options": [
-            "The German Labour Front (DAF)",
             "The Reich Labour Service",
             "The Gestapo",
-            "The SS-Totenkopf"
+            "The SS-Totenkopf",
+            "The German Labour Front (DAF)"
           ],
-          "question": "What monolithic Nazi organization replaced independent trade unions on 2 May 1933?",
-          "answer": "The German Labour Front (DAF)"
+          "answer": "The German Labour Front (DAF)",
+          "a": "The German Labour Front (DAF)",
+          "explanation": "Subsidized by the DAF, KdF became the world’s largest leisure provider, organizing affordable concerts, sporting events, hiking excursions, and popular subsidized cruises & theater voyages to Norway and the Mediterranean aboard purpose-built luxury liners for working-class families."
         },
         {
-          "q": "Who was the leader of the German Labour Front (DAF) who created the 'Strength Through Joy' (KdF) organization?",
-          "a": "Robert Ley",
-          "options": [
-            "Robert Ley",
-            "Hermann Göring",
-            "Hjalmar Schacht",
-            "Bernhard Rust"
-          ],
-          "question": "Who was the leader of the German Labour Front (DAF) who created the 'Strength Through Joy' (KdF) organization?",
-          "answer": "Robert Ley"
-        },
-        {
+          "stage": 4,
+          "question": "In May 1933, what did Hitler ban to gain control over the workers?",
           "q": "In May 1933, what did Hitler ban to gain control over the workers?",
-          "a": "Trade Unions",
           "options": [
-            "Trade Unions",
             "The Reichstag",
             "Political Parties",
+            "Trade Unions",
             "Catholic Schools"
-          ]
+          ],
+          "answer": "Trade Unions",
+          "a": "Trade Unions",
+          "explanation": "To reconcile workers to lost trade union rights and long hours, Robert Ley established Kraft durch Freude (KdF), or Strength Through Joy."
         },
         {
-          "q": "What Nazi organisation replaced trade unions?",
-          "a": "The German Labour Front / DAF",
-          "options": [
-            "The German Labour Front / DAF",
-            "National Labour Service / RAD",
-            "Strength Through Joy / KdF",
-            "Beauty of Labour / SdA"
-          ]
-        },
-        {
+          "stage": 4,
+          "question": "Who was the leader of the DAF?",
           "q": "Who was the leader of the DAF?",
-          "a": "Robert Ley",
           "options": [
             "Hjalmar Schacht",
             "Robert Ley",
             "Albert Speer",
             "Hermann Goering"
-          ]
+          ],
+          "answer": "Robert Ley",
+          "a": "Robert Ley",
+          "explanation": "To reconcile workers to lost trade union rights and long hours, Robert Ley established Kraft durch Freude (KdF), or Strength Through Joy."
         },
         {
-          "q": "What did Strength Through Joy (KdF) provide for workers?",
-          "a": "Cheap, subsidised leisure activities like theatre tickets and cruises",
-          "options": [
-            "Free housing and healthcare",
-            "Better working conditions in factories",
-            "Higher wages and shorter hours",
-            "Cheap, subsidised leisure activities like theatre tickets and cruises"
-          ]
-        },
-        {
-          "q": "How much did workers pay per week into the Volkswagen savings scheme?",
-          "a": "5 marks",
-          "options": [
-            "10 marks",
-            "1 mark",
-            "5 marks",
-            "50 marks"
-          ]
-        },
-        {
-          "q": "Why was the Volkswagen scheme a massive scam?",
-          "a": "Production shifted to military vehicles in 1939; no one got a car and no money was refunded",
-          "options": [
-            "The cars were badly built and broke down immediately",
-            "Only Nazi Party officials were allowed to buy them",
-            "Production shifted to military vehicles in 1939; no one got a car and no money was refunded",
-            "The factory was never actually built"
-          ]
-        },
-        {
+          "stage": 4,
+          "question": "What savings scheme promoted by the KdF failed to deliver any cars to workers before the war?",
           "q": "What savings scheme promoted by the KdF failed to deliver any cars to workers before the war?",
-          "a": "The Volkswagen savings scheme",
           "options": [
             "The Volkswagen savings scheme",
             "The Mercedes-Benz programme",
             "The BMW savings fund",
             "The Opel Blitz scheme"
           ],
-          "question": "What savings scheme promoted by the KdF failed to deliver any cars to workers before the war?",
-          "answer": "The Volkswagen savings scheme"
+          "answer": "The Volkswagen savings scheme",
+          "a": "The Volkswagen savings scheme",
+          "explanation": "To provide affordable private transport, KdF launched the ambitious Volkswagen Beetle savings scheme, allowing workers to purchase an automobile by saving five marks weekly."
         },
         {
-          "q": "How much did the average working week increase between 1933 and 1939?",
-          "a": "From 43 hours to 49 hours",
+          "stage": 5,
+          "question": "How long did young men have to serve in the RAD?",
+          "q": "How long did young men have to serve in the RAD?",
           "options": [
-            "From 43 hours to 49 hours",
-            "It actually decreased to 40 hours",
-            "From 50 hours to 60 hours",
-            "From 35 hours to 40 hours"
-          ]
+            "3 months",
+            "2 years",
+            "1 year",
+            "6 months"
+          ],
+          "answer": "6 months",
+          "a": "6 months",
+          "explanation": "In 1936, Hermann Göring took control of the economy under the ambitious Four-Year Plan (1936), designed to prepare the military and economy for total European war within four years."
         },
         {
-          "q": "Which phrase describes the tension between military spending and consumer goods?",
-          "a": "'Guns versus Butter'",
+          "stage": 5,
+          "question": "Who was appointed to head the Four-Year Plan in 1936 to prepare the German economy for war?",
+          "q": "Who was appointed to head the Four-Year Plan in 1936 to prepare the German economy for war?",
           "options": [
-            "'Strength Through Joy'",
-            "'Guns versus Butter'",
-            "'Blood and Soil'",
-            "'Bread and Work'"
-          ]
+            "Hjalmar Schacht",
+            "Robert Ley",
+            "Hermann Göring",
+            "Fritz Todt"
+          ],
+          "answer": "Hermann Göring",
+          "a": "Hermann Göring",
+          "explanation": "In 1936, Hermann Göring took control of the economy under the ambitious Four-Year Plan (1936), designed to prepare the military and economy for total European war within four years."
         },
         {
-          "q": "Did 'real wages' (purchasing power) for the average worker improve by 1939?",
-          "a": "No, because food prices rose faster than their wages",
+          "stage": 5,
+          "question": "What was the ultimate goal of the Four Year Plan?",
+          "q": "What was the ultimate goal of the Four Year Plan?",
           "options": [
-            "Yes, they were much richer than before 1933",
-            "No, because food prices rose faster than their wages",
-            "Yes, because taxes were completely abolished",
-            "No, because all wages were paid in Ersatz money"
-          ]
+            "To pay back all of Germany's war debts",
+            "To prepare the German economy for war within four years",
+            "To colonise Eastern Europe",
+            "To completely eliminate unemployment"
+          ],
+          "answer": "To prepare the German economy for war within four years",
+          "a": "To prepare the German economy for war within four years",
+          "explanation": "In 1936, Hermann Göring took control of the economy under the ambitious Four-Year Plan (1936), designed to prepare the military and economy for total European war within four years."
+        },
+        {
+          "stage": 5,
+          "question": "What is the term for the economic policy of self-sufficiency?",
+          "q": "What is the term for the economic policy of self-sufficiency?",
+          "options": [
+            "Autarky",
+            "Gleichschaltung",
+            "Ersatz",
+            "Lebensraum"
+          ],
+          "answer": "Autarky",
+          "a": "Autarky",
+          "explanation": "Göring prioritized autarky economic self-sufficiency, attempting to eliminate dependence on imported foreign raw materials by manufacturing expensive domestic synthetic rubber (*Buna*), synthetic oil from coal, and low-grade German iron ore."
         }
       ],
       "utility_starters": null,
@@ -23524,9 +24857,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "In May 1933 independent <strong>trade unions abolished (May 1933)</strong> and replaced by Robert Ley’s monolithic <strong>German Labour Front (DAF)</strong>, under which all <strong>strikes banned & wages frozen</strong> to ensure industrial discipline.",
-          "heading": "Smashed Unions & The German Labour Front (DAF)",
+          "heading": "How did the DAF destroy independent collective bargaining for wages?",
           "date": "May 1933",
-          "step": 1
+          "step": 1,
+          "question": "How did the DAF destroy independent collective bargaining for wages?",
+          "questionHeading": "How did the DAF destroy independent collective bargaining for wages?",
+          "prose_hash": "311d82d7be"
         },
         {
           "stage": 2,
@@ -23558,9 +24894,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "To eliminate visible unemployment, young men were conscripted into the <strong>Reich Labour Service (RAD)</strong> for <strong>six months compulsory labour</strong> performing manual physical work on public schemes like <strong>Autobahn highway construction</strong>.",
-          "heading": "The Reich Labour Service (RAD) & Public Works",
+          "heading": "How did compulsory RAD service and Autobahn works cut unemployment?",
           "date": "1933–1935",
-          "step": 2
+          "step": 2,
+          "question": "How did compulsory RAD service and Autobahn works cut unemployment?",
+          "questionHeading": "How did compulsory RAD service and Autobahn works cut unemployment?",
+          "prose_hash": "55d55e9235"
         },
         {
           "stage": 3,
@@ -23592,9 +24931,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Unemployment figures plummeted when peacetime <strong>military conscription reintroduced</strong> in 1935, aided by manipulated <strong>'invisible unemployment' stats</strong> wherein married <strong>women and Jews excluded</strong> from official government tallies.",
-          "heading": "Conscription & \"Invisible Unemployment\"",
+          "heading": "Why was the Nazi claim of full employment statistically misleading?",
           "date": "1935–1939",
-          "step": 3
+          "step": 3,
+          "question": "Why was the Nazi claim of full employment statistically misleading?",
+          "questionHeading": "Why was the Nazi claim of full employment statistically misleading?",
+          "prose_hash": "751d5ba535"
         },
         {
           "stage": 4,
@@ -23626,9 +24968,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Worker loyalty was cultivated through the leisure division <strong>Kraft durch Freude (KdF)</strong> offering <strong>subsidized cruises & theater</strong> tickets, alongside the popular but unfulfilled <strong>Volkswagen Beetle savings scheme</strong>.",
-          "heading": "Strength Through Joy (KdF) & Beauty of Labour (SdA)",
+          "heading": "How did leisure schemes compensate workers for lost political rights?",
           "date": "1933–1939",
-          "step": 4
+          "step": 4,
+          "question": "How did leisure schemes compensate workers for lost political rights?",
+          "questionHeading": "How did leisure schemes compensate workers for lost political rights?",
+          "prose_hash": "9d225fc96f"
         },
         {
           "stage": 5,
@@ -23660,9 +25005,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Directed by Hermann Göring, the ambitious <strong>Four-Year Plan (1936)</strong> aimed at total <strong>autarky economic self-sufficiency</strong> for impending war, resulting in <strong>longer hours & food rationing</strong> of butter and meat for working families.",
-          "heading": "Four-Year Plan: Guns vs Butter Dilemma",
+          "heading": "How did total rearmament erode real worker purchasing power by 1939?",
           "date": "1936–1939",
-          "step": 5
+          "step": 5,
+          "question": "How did total rearmament erode real worker purchasing power by 1939?",
+          "questionHeading": "How did total rearmament erode real worker purchasing power by 1939?",
+          "prose_hash": "a79b25ba58"
         }
       ],
       "causal_domino_spine": {
@@ -23679,7 +25027,8 @@ window.unitData = {
             "trigger": "The regime smashed free trade unions on 2 May, freezing hourly wages and forcing 22 million workers into Robert Ley’s compulsory German Labour Front.",
             "desc": "The regime smashed free trade unions on 2 May, freezing hourly wages and forcing 22 million workers into Robert Ley’s compulsory German Labour Front.",
             "connective": "Stripped industrial workers of collective bargaining rights and tied them to their employers via compulsory Work Books.",
-            "question": "How did the DAF destroy independent collective bargaining for wages?"
+            "question": "How did the DAF destroy independent collective bargaining for wages?",
+            "prose_hash": "311d82d7be"
           },
           {
             "step": 2,
@@ -23691,7 +25040,8 @@ window.unitData = {
             "trigger": "Young men completed compulsory six-month service in the RAD shovelling earth, building the 7,000-km Reich Autobahn network without machinery.",
             "desc": "Young men completed compulsory six-month service in the RAD shovelling earth, building the 7,000-km Reich Autobahn network without machinery.",
             "connective": "Absorbed hundreds of thousands of unemployed men into labor-intensive public works and military-style discipline.",
-            "question": "How did public works and motorway construction artificially reduce jobless figures?"
+            "question": "How did compulsory RAD service and Autobahn works cut unemployment?",
+            "prose_hash": "55d55e9235"
           },
           {
             "step": 3,
@@ -23703,7 +25053,8 @@ window.unitData = {
             "trigger": "Reintroducing conscription absorbed 1.4m men into the Wehrmacht, while dismissing Jews, married women, and RAD recruits masked real jobless numbers.",
             "desc": "Reintroducing conscription absorbed 1.4m men into the Wehrmacht, while dismissing Jews, married women, and RAD recruits masked real jobless numbers.",
             "connective": "Manufactured the illusion of an \"economic miracle of full employment\" while preparing the nation for war.",
-            "question": "Why was the Nazi claim of full employment statistically misleading?"
+            "question": "Why was the Nazi claim of full employment statistically misleading?",
+            "prose_hash": "751d5ba535"
           },
           {
             "step": 4,
@@ -23715,7 +25066,8 @@ window.unitData = {
             "trigger": "The DAF subsidized theatre trips, ocean cruises on the Wilhelm Gustloff, and the Volkswagen Beetle stamp scheme to pacify industrial workers.",
             "desc": "The DAF subsidized theatre trips, ocean cruises on the Wilhelm Gustloff, and the Volkswagen Beetle stamp scheme to pacify industrial workers.",
             "connective": "Compensated workers for frozen wages and lost civil rights with state-controlled leisure and consumer promises.",
-            "question": "How did leisure schemes compensate workers for lost political rights?"
+            "question": "How did leisure schemes compensate workers for lost political rights?",
+            "prose_hash": "9d225fc96f"
           },
           {
             "step": 5,
@@ -23727,7 +25079,8 @@ window.unitData = {
             "trigger": "Göring prioritized synthetic autarky and rearmament over consumer goods; working hours rose to 47 per week while meat and butter were rationed.",
             "desc": "Göring prioritized synthetic autarky and rearmament over consumer goods; working hours rose to 47 per week while meat and butter were rationed.",
             "connective": "Eroded workers’ real purchasing power and living standards, subordinating the domestic economy entirely to the machinery of war.",
-            "question": "How did total rearmament erode real worker purchasing power by 1939?"
+            "question": "How did total rearmament erode real worker purchasing power by 1939?",
+            "prose_hash": "a79b25ba58"
           }
         ]
       },
@@ -24001,48 +25354,67 @@ window.unitData = {
       },
       "do_now": {
         "type": "questions",
-        "title": "Spaced Retrieval Starter",
-        "instructions": "Answer these questions in full sentences from prior learning.",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What compulsory six-month manual labour scheme was introduced for men aged 18–25 in 1935?",
-            "answer": "The Reich Labour Service (Reichsarbeitsdienst / RAD)."
+            "stage": 1,
+            "question": "What do the initials RAD stand for in English?",
+            "answer": "National Labour Service",
+            "explanation": "On 2 May 1933, the day after celebrating May Day as a national holiday, SA and SS stormtroopers raided union offices nationwide, arresting officials and confiscating bank assets."
           },
           {
-            "question": "Which Nazi organisation replaced independent trade unions on 2 May 1933?",
-            "answer": "The German Labour Front (Deutsche Arbeitsfront / DAF), led by Dr Robert Ley."
+            "stage": 2,
+            "question": "How many registered unemployed workers were there in Germany when Hitler became Chancellor in January 1933?",
+            "answer": "Over six million registered unemployed workers",
+            "explanation": "Converted into a compulsory state program in July 1935, the law mandated six months compulsory labour for all unmarried young men aged eighteen to twenty-five prior to their military conscription, removing hundreds of thousands of men from unemployment figures."
           },
           {
-            "question": "What DAF leisure division provided subsidized holidays, theatre tickets, and cruises?",
-            "answer": "Strength Through Joy (Kraft durch Freude / KdF)."
+            "stage": 3,
+            "question": "In what year did the RAD become compulsory for all young men aged 18–25?",
+            "answer": "1935",
+            "explanation": "This dramatic recovery was heavily driven when military conscription reintroduced in March 1935, drafting five hundred thousand young men into the Wehrmacht and stimulating massive heavy industrial orders for aircraft, tanks, artillery, and synthetic petroleum fuel."
           },
           {
-            "question": "Who was appointed Plenipotentiary for the Four-Year Plan in October 1936 to direct rearmament?",
-            "answer": "Hermann Göring."
+            "stage": 4,
+            "question": "What monolithic Nazi organization replaced independent trade unions on 2 May 1933?",
+            "answer": "The German Labour Front (DAF)",
+            "explanation": "Subsidized by the DAF, KdF became the world’s largest leisure provider, organizing affordable concerts, sporting events, hiking excursions, and popular subsidized cruises & theater voyages to Norway and the Mediterranean aboard purpose-built luxury liners for working-class families."
           },
           {
-            "question": "Who was the Reich Minister of Science, Education and National Culture?",
-            "answer": "Bernhard Rust."
+            "stage": 5,
+            "question": "How long did young men have to serve in the RAD?",
+            "answer": "6 months",
+            "explanation": "In 1936, Hermann Göring took control of the economy under the ambitious Four-Year Plan (1936), designed to prepare the military and economy for total European war within four years."
           },
           {
-            "question": "What law passed in 1939 made membership of the Hitler Youth strictly compulsory?",
-            "answer": "The First Decree for the Implementation of the Law on the Hitler Youth."
+            "stage": 1,
+            "question": "Who was the leader of the German Labour Front (DAF) who created the 'Strength Through Joy' (KdF) organization?",
+            "answer": "Robert Ley",
+            "explanation": "Robert Ley established the compulsory German Labour Front (DAF), which absorbed all workers and employers into a single state-controlled corporation."
           },
           {
-            "question": "What economic plan arranged US loans to stabilize Germany's economy in 1924?",
-            "answer": "The Dawes Plan."
+            "stage": 2,
+            "question": "To what official figure had unemployment fallen by 1939, heralded by Nazi propaganda as an economic miracle?",
+            "answer": "Under 300,000 unemployed workers",
+            "explanation": "To combat massive youth unemployment and foster national solidarity, the regime established the Reich Labour Service (RAD) under Konstantin Hierl."
           },
           {
-            "question": "What failed armed coup did Adolf Hitler lead in Bavaria in November 1923?",
-            "answer": "The Munich Beer Hall Putsch."
+            "stage": 3,
+            "question": "What term is used to describe the Nazi manipulation of unemployment statistics?",
+            "answer": "Invisible Unemployment",
+            "explanation": "However, historians emphasize that these figures masked extensive 'invisible unemployment' stats through statistical manipulation."
           },
           {
-            "question": "What July 1933 agreement was signed between Nazi Germany and the Vatican guaranteeing Catholic religious rights in exchange for political neutrality?",
-            "answer": "The Reichskonkordat (Concordat)."
+            "stage": 4,
+            "question": "In May 1933, what did Hitler ban to gain control over the workers?",
+            "answer": "Trade Unions",
+            "explanation": "To reconcile workers to lost trade union rights and long hours, Robert Ley established Kraft durch Freude (KdF), or Strength Through Joy."
           },
           {
-            "question": "Which Protestant pastor founded the anti-Nazi Confessing Church and was later imprisoned at Dachau?",
-            "answer": "Pastor Martin Niemöller."
+            "stage": 5,
+            "question": "Who was appointed to head the Four-Year Plan in 1936 to prepare the German economy for war?",
+            "answer": "Hermann Göring",
+            "explanation": "In 1936, Hermann Göring took control of the economy under the ambitious Four-Year Plan (1936), designed to prepare the military and economy for total European war within four years."
           }
         ]
       },
@@ -24104,7 +25476,7 @@ window.unitData = {
           "id": "block_1",
           "decimal": "[4.4.1]",
           "title": "Racial Hierarchy: Aryan 'Herrenvolk' Ideology and the April Boycott (1933)",
-          "text": "<span class=\"para-ref\">[1.1]</span> Nazi domestic policy was driven by fanatical biological racism, placing the Nordic **Aryan 'Herrenvolk' ideology** at the peak of a pseudo-scientific racial hierarchy. Hitler portrayed Jews, Roma, and Slavs as subhuman parasites (*Untermenschen*) allegedly threatening to poison German blood. The regime viewed the elimination of Jewish influence as the essential prerequisite for national rebirth and European conquest.\n\n<span class=\"para-ref\">[1.2]</span> On 1 April 1933, the state launched its first coordinated anti-Semitic assault with the **April 1933 shop boycott**. Armed SA stormtroopers stood outside Jewish-owned shops, law firms, and medical clinics, painting yellow Stars of David on windows and intimidating customers. Six days later, thousands of **Jewish civil servants purged** from government administration, schools, and university faculties under the Civil Service Restoration Act.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Driven by fanatical **Social Darwinism** and biological racism, Nazi policy placed Nordic Aryan **Herrenvolk** (\"master race\") Germans at the peak of a racial hierarchy. Propaganda branded Jews, Roma, and Slavs as **Untermenschen** (\"subhumans\") threatening to poison German blood and block national rebirth.\n\n<span class=\"para-ref\">[1.2]</span> State persecution began on 1 **April 1933** with a one-day boycott of Jewish shops, law firms, and clinics. Armed SA men painted yellow Stars of David on windows, and six days later **the Civil Service Act** purged Jewish civil servants, judges, and teachers.",
           "image_alt": "April 1933 Anti-Jewish Boycott Berlin",
           "caption": "SA stormtroopers picketing a Jewish-owned retail shop during the nationwide boycott of 1 April 1933.",
           "theme_heading": "Racial Hierarchy & Economic Boycott",
@@ -24136,7 +25508,7 @@ window.unitData = {
             "<span class=\"para-ref\">[1.1]</span> Nazi domestic policy was driven by fanatical biological racism, placing the Nordic **Aryan 'Herrenvolk' ideology** at the peak of a pseudo-scientific racial hierarchy. Hitler portrayed Jews, Roma, and Slavs as subhuman parasites (*Untermenschen*) allegedly threatening to poison German blood. The regime viewed the elimination of Jewish influence as the essential prerequisite for national rebirth and European conquest.",
             "<span class=\"para-ref\">[1.2]</span> On 1 April 1933, the state launched its first coordinated anti-Semitic assault with the **April 1933 shop boycott**. Armed SA stormtroopers stood outside Jewish-owned shops, law firms, and medical clinics, painting yellow Stars of David on windows and intimidating customers. Six days later, thousands of **Jewish civil servants purged** from government administration, schools, and university faculties under the Civil Service Restoration Act."
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> Nazi domestic policy was driven by fanatical biological racism, placing the Nordic **Aryan 'Herrenvolk' ideology** at the peak of a pseudo-scientific racial hierarchy. Hitler portrayed Jews, Roma, and Slavs as subhuman parasites (*Untermenschen*) allegedly threatening to poison German blood. The regime viewed the elimination of Jewish influence as the essential prerequisite for national rebirth and European conquest.\n\n<span class=\"para-ref\">[1.2]</span> On 1 April 1933, the state launched its first coordinated anti-Semitic assault with the **April 1933 shop boycott**. Armed SA stormtroopers stood outside Jewish-owned shops, law firms, and medical clinics, painting yellow Stars of David on windows and intimidating customers. Six days later, thousands of **Jewish civil servants purged** from government administration, schools, and university faculties under the Civil Service Restoration Act.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Driven by fanatical **Social Darwinism** and biological racism, Nazi policy placed Nordic Aryan **Herrenvolk** (\"master race\") Germans at the peak of a racial hierarchy. Propaganda branded Jews, Roma, and Slavs as **Untermenschen** (\"subhumans\") threatening to poison German blood and block national rebirth.\n\n<span class=\"para-ref\">[1.2]</span> State persecution began on 1 **April 1933** with a one-day boycott of Jewish shops, law firms, and clinics. Armed SA men painted yellow Stars of David on windows, and six days later **the Civil Service Act** purged Jewish civil servants, judges, and teachers.",
           "act": 1,
           "act_title": "Stage 1: Aryan Supremacy & The April Anti-Jewish Boycott"
         },
@@ -24144,7 +25516,7 @@ window.unitData = {
           "id": "block_2",
           "decimal": "[4.4.2]",
           "title": "The Nuremberg Laws: Reich Citizenship and the Protection of German Blood (Sep 1935)",
-          "text": "<span class=\"para-ref\">[2.1]</span> In September 1935, anti-Semitic persecution was codified into constitutional law at the annual Nuremberg rally through the **Nuremberg Laws (1935)**. The first statute, the **Reich Citizenship Act**, stripped German Jews of full citizenship, demoting them to subjects without voting rights or the right to hold public office, legally transforming German Jews into stateless aliens inside their own homeland.\n\n<span class=\"para-ref\">[2.2]</span> The companion statute, the **German Blood Protection Law**, outlawed marriage and sexual relations between Jewish citizens and people of German blood, criminalizing violations as \"racial defilement\" punishable by imprisonment. Crucially, Jewish identity was defined not by religious belief, but biologically by ancestry: having three or four Jewish grandparents classified an individual as fully Jewish regardless of their personal faith.",
+          "text": "<span class=\"para-ref\">[2.1]</span> At the September **1935** Nuremberg rally, Hitler codified racial persecution into law through two Nuremberg Laws. First, the Reich Citizenship Law **stripped Jewish people of their German citizenship and the right to vote** or hold office. Overnight, German Jews became stateless subjects in their own homeland.\n\n<span class=\"para-ref\">[2.2]</span> Second, the Law for the Protection of German Blood outlawed **marriage and sexual relations between Jews and Aryans** as criminal \"racial defilement\". Crucially, Jewish identity was defined by ancestry rather than faith: anyone with three or four Jewish grandparents counted legally as Jewish.",
           "image": "/images/weimar_individuals/julius_streicher.jpg",
           "image_alt": "Nuremberg Laws Racial Classification Chart",
           "caption": "Official diagram illustrating legal categories of citizenship based on the number of Jewish grandparents.",
@@ -24178,7 +25550,7 @@ window.unitData = {
             "<span class=\"para-ref\">[2.1]</span> In September 1935, anti-Semitic persecution was codified into constitutional law at the annual Nuremberg rally through the **Nuremberg Laws (1935)**. The first statute, the **Reich Citizenship Act**, stripped German Jews of full citizenship, demoting them to subjects without voting rights or the right to hold public office, legally transforming German Jews into stateless aliens inside their own homeland.",
             "<span class=\"para-ref\">[2.2]</span> The companion statute, the **German Blood Protection Law**, outlawed marriage and sexual relations between Jewish citizens and people of German blood, criminalizing violations as \"racial defilement\" punishable by imprisonment. Crucially, Jewish identity was defined not by religious belief, but biologically by ancestry: having three or four Jewish grandparents classified an individual as fully Jewish regardless of their personal faith."
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> In September 1935, anti-Semitic persecution was codified into constitutional law at the annual Nuremberg rally through the **Nuremberg Laws (1935)**. The first statute, the **Reich Citizenship Act**, stripped German Jews of full citizenship, demoting them to subjects without voting rights or the right to hold public office, legally transforming German Jews into stateless aliens inside their own homeland.\n\n<span class=\"para-ref\">[2.2]</span> The companion statute, the **German Blood Protection Law**, outlawed marriage and sexual relations between Jewish citizens and people of German blood, criminalizing violations as \"racial defilement\" punishable by imprisonment. Crucially, Jewish identity was defined not by religious belief, but biologically by ancestry: having three or four Jewish grandparents classified an individual as fully Jewish regardless of their personal faith.",
+          "content": "<span class=\"para-ref\">[2.1]</span> At the September **1935** Nuremberg rally, Hitler codified racial persecution into law through two Nuremberg Laws. First, the Reich Citizenship Law **stripped Jewish people of their German citizenship and the right to vote** or hold office. Overnight, German Jews became stateless subjects in their own homeland.\n\n<span class=\"para-ref\">[2.2]</span> Second, the Law for the Protection of German Blood outlawed **marriage and sexual relations between Jews and Aryans** as criminal \"racial defilement\". Crucially, Jewish identity was defined by ancestry rather than faith: anyone with three or four Jewish grandparents counted legally as Jewish.",
           "act": 2,
           "act_title": "Stage 2: The Nuremberg Laws (Citizenship & Blood Protection)"
         },
@@ -24186,7 +25558,7 @@ window.unitData = {
           "id": "block_3",
           "decimal": "[4.4.3]",
           "title": "Biological Purity: Persecuting Roma, Homosexuals and the Disabled (1933–1939)",
-          "text": "<span class=\"para-ref\">[3.1]</span> The racial state targeted all minority groups deemed biologically inferior or socially unproductive. Systematic **Roma Gypsy persecution** escalated rapidly, with hundreds deported to enclosed municipal internment camps like Marzahn before transfer to concentration camps. Under Paragraph 175, thousands endured **pink triangle homosexual arrests**, resulting in over fifteen thousand men being imprisoned in concentration camps, where they were subjected to forced labor and medical experiments.\n\n<span class=\"para-ref\">[3.2]</span> The disabled and mentally ill suffered the most murderous persecution. Under the 1933 Sterilisation Law, four hundred thousand individuals were forcibly sterilized. In 1939, this culminated in the **Euthanasia T4 program origins**, where Hitler authorized doctors to murder mentally and physically disabled children and adults by lethal injection and carbon monoxide gas chambers, pioneering industrial killing methods later used in the Holocaust.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Grounded in **Social Darwinism**, the Nazi racial state persecuted other minorities deemed \"unfit\". Hundreds of Roma families were rounded up into enclosed municipal internment camps like **Marzahn** before deportation to concentration camps. Under Paragraph 175, over 15,000 gay men were jailed in camps wearing **pink** triangles.\n\n<span class=\"para-ref\">[3.2]</span> Disabled and mentally ill citizens suffered murderous persecution too. After 400,000 forced sterilisations under the 1933 law, Hitler secretly authorised **the Euthanasia T4 program** in 1939. Doctors murdered disabled children and adults using lethal injections and carbon monoxide gas chambers.",
           "image_alt": "Marzahn Roma Internment Camp",
           "caption": "Roma and Sinti families held at the Marzahn internment camp outside Berlin prior to mass deportation.",
           "theme_heading": "The Wider Racial Terror",
@@ -24218,7 +25590,7 @@ window.unitData = {
             "<span class=\"para-ref\">[3.1]</span> The racial state targeted all minority groups deemed biologically inferior or socially unproductive. Systematic **Roma Gypsy persecution** escalated rapidly, with hundreds deported to enclosed municipal internment camps like Marzahn before transfer to concentration camps. Under Paragraph 175, thousands endured **pink triangle homosexual arrests**, resulting in over fifteen thousand men being imprisoned in concentration camps, where they were subjected to forced labor and medical experiments.",
             "<span class=\"para-ref\">[3.2]</span> The disabled and mentally ill suffered the most murderous persecution. Under the 1933 Sterilisation Law, four hundred thousand individuals were forcibly sterilized. In 1939, this culminated in the **Euthanasia T4 program origins**, where Hitler authorized doctors to murder mentally and physically disabled children and adults by lethal injection and carbon monoxide gas chambers, pioneering industrial killing methods later used in the Holocaust."
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> The racial state targeted all minority groups deemed biologically inferior or socially unproductive. Systematic **Roma Gypsy persecution** escalated rapidly, with hundreds deported to enclosed municipal internment camps like Marzahn before transfer to concentration camps. Under Paragraph 175, thousands endured **pink triangle homosexual arrests**, resulting in over fifteen thousand men being imprisoned in concentration camps, where they were subjected to forced labor and medical experiments.\n\n<span class=\"para-ref\">[3.2]</span> The disabled and mentally ill suffered the most murderous persecution. Under the 1933 Sterilisation Law, four hundred thousand individuals were forcibly sterilized. In 1939, this culminated in the **Euthanasia T4 program origins**, where Hitler authorized doctors to murder mentally and physically disabled children and adults by lethal injection and carbon monoxide gas chambers, pioneering industrial killing methods later used in the Holocaust.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Grounded in **Social Darwinism**, the Nazi racial state persecuted other minorities deemed \"unfit\". Hundreds of Roma families were rounded up into enclosed municipal internment camps like **Marzahn** before deportation to concentration camps. Under Paragraph 175, over 15,000 gay men were jailed in camps wearing **pink** triangles.\n\n<span class=\"para-ref\">[3.2]</span> Disabled and mentally ill citizens suffered murderous persecution too. After 400,000 forced sterilisations under the 1933 law, Hitler secretly authorised **the Euthanasia T4 program** in 1939. Doctors murdered disabled children and adults using lethal injections and carbon monoxide gas chambers.",
           "act": 3,
           "act_title": "Stage 3: Persecution of Roma, Homosexuals & The Disabled"
         },
@@ -24226,7 +25598,7 @@ window.unitData = {
           "id": "block_4",
           "decimal": "[4.4.4]",
           "title": "Kristallnacht: The Night of Broken Glass and State-Sponsored Terror (Nov 1938)",
-          "text": "<span class=\"para-ref\">[4.1]</span> On 9–10 November 1938, anti-Semitic violence escalated into murderous state-orchestrated terror during the infamous **Kristallnacht pogrom (1938)**. Following the assassination of a German diplomat in Paris by a young Polish Jew, Joseph Goebbels unleashed plainclothes SA and SS mobs across Germany, launching coordinated attacks against Jewish communities while police and fire brigades were ordered not to intervene.\n\n<span class=\"para-ref\">[4.2]</span> Across the Reich, over one thousand **synagogues burnt & shops looted**, as rioters smashed windows of seven thousand Jewish businesses and ransacked homes. Ninety-one Jews were murdered, and **30,000 Jewish men sent to camps** such as Dachau, Buchenwald, and Sachsenhausen, enduring brutal abuse until families agreed to surrender their property and emigrate. Kristallnacht marked the transition from legal discrimination to physical violence.",
+          "text": "<span class=\"para-ref\">[4.1]</span> On 9–10 November 1938, persecution escalated from legal discrimination into state-orchestrated terror during **Kristallnacht (The Night of Broken Glass)**. After a young Polish Jew shot German diplomat vom Rath in Paris, **Joseph Goebbels** unleashed plainclothes SA and SS mobs nationwide while police and fire crews stood back.\n\n<span class=\"para-ref\">[4.2]</span> Across the Reich, **over 1,000 synagogues burned**, 7,500 Jewish shops were smashed and looted, and 91 Jews were murdered. In addition, **30,000** Jewish men were rounded up and sent to concentration camps at Dachau, Buchenwald, and Sachsenhausen to force families to emigrate.",
           "image": "/images/kristallnacht_berlin_aftermath_1938.jpg",
           "image_alt": "Synagogue Burning on Kristallnacht",
           "caption": "A burning synagogue in 1938 surrounded by bystanders and firefighters instructed not to extinguish the flames.",
@@ -24259,7 +25631,7 @@ window.unitData = {
             "<span class=\"para-ref\">[4.1]</span> On 9–10 November 1938, anti-Semitic violence escalated into murderous state-orchestrated terror during the infamous **Kristallnacht pogrom (1938)**. Following the assassination of a German diplomat in Paris by a young Polish Jew, Joseph Goebbels unleashed plainclothes SA and SS mobs across Germany, launching coordinated attacks against Jewish communities while police and fire brigades were ordered not to intervene.",
             "<span class=\"para-ref\">[4.2]</span> Across the Reich, over one thousand **synagogues burnt & shops looted**, as rioters smashed windows of seven thousand Jewish businesses and ransacked homes. Ninety-one Jews were murdered, and **30,000 Jewish men sent to camps** such as Dachau, Buchenwald, and Sachsenhausen, enduring brutal abuse until families agreed to surrender their property and emigrate. Kristallnacht marked the transition from legal discrimination to physical violence."
           ],
-          "content": "<span class=\"para-ref\">[4.1]</span> On 9–10 November 1938, anti-Semitic violence escalated into murderous state-orchestrated terror during the infamous **Kristallnacht pogrom (1938)**. Following the assassination of a German diplomat in Paris by a young Polish Jew, Joseph Goebbels unleashed plainclothes SA and SS mobs across Germany, launching coordinated attacks against Jewish communities while police and fire brigades were ordered not to intervene.\n\n<span class=\"para-ref\">[4.2]</span> Across the Reich, over one thousand **synagogues burnt & shops looted**, as rioters smashed windows of seven thousand Jewish businesses and ransacked homes. Ninety-one Jews were murdered, and **30,000 Jewish men sent to camps** such as Dachau, Buchenwald, and Sachsenhausen, enduring brutal abuse until families agreed to surrender their property and emigrate. Kristallnacht marked the transition from legal discrimination to physical violence.",
+          "content": "<span class=\"para-ref\">[4.1]</span> On 9–10 November 1938, persecution escalated from legal discrimination into state-orchestrated terror during **Kristallnacht (The Night of Broken Glass)**. After a young Polish Jew shot German diplomat vom Rath in Paris, **Joseph Goebbels** unleashed plainclothes SA and SS mobs nationwide while police and fire crews stood back.\n\n<span class=\"para-ref\">[4.2]</span> Across the Reich, **over 1,000 synagogues burned**, 7,500 Jewish shops were smashed and looted, and 91 Jews were murdered. In addition, **30,000** Jewish men were rounded up and sent to concentration camps at Dachau, Buchenwald, and Sachsenhausen to force families to emigrate.",
           "act": 4,
           "act_title": "Stage 4: Kristallnacht (The Night of Broken Glass)"
         },
@@ -24267,7 +25639,7 @@ window.unitData = {
           "id": "block_5",
           "decimal": "[4.4.5]",
           "title": "Economic Destruction: Aryanisation, Collective Fines and Forced Flight (1938–1939)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In the wake of Kristallnacht, the Nazi state moved to completely eliminate Jews from economic life. Perversely blaming Jewish victims for the destruction, Göring imposed an astronomical **1 billion mark collective fine** on the Jewish community and confiscated all insurance payouts. Soon afterward, decrees banned Jews from attending public theaters, concerts, parks, and swimming pools, while Jewish children were expelled from state schools.\n\n<span class=\"para-ref\">[5.2]</span> Through forced \"Aryanisation\", all remaining **Jewish businesses 'Aryanized'**, compelled to sell their shops and factories to Nazi party members at fraction of their true value. Under Reinhard Heydrich, the **Central Emigration Office expulsions** stripped emigrants of their assets before forcing them into foreign exile. Over half of Germany’s Jewish population fled before borders closed in September 1939.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Following the pogrom of **9-10 November 1938**, Göring blamed **the Jewish community** for the damage, seized their insurance payouts, and imposed a 1 billion mark fine. New decrees barred Jews from public parks, cinemas, theatres, and swimming pools, and expelled Jewish children from state schools.\n\n<span class=\"para-ref\">[5.2]</span> Under forced \"Aryanisation\" — **the forced transfer of Jewish businesses and property to Aryans** at rock-bottom prices — remaining Jewish shops and factories were seized. Meanwhile, Heydrich’s **Reich Office for Jewish Emigration** stripped emigrants' assets as over half of Germany’s Jews fled before September 1939.",
           "image_alt": "Queues for Emigration Visas Berlin 1939",
           "caption": "Desperate Jewish families queueing outside foreign consulates in Berlin in 1939 trying to escape the Third Reich.",
           "theme_heading": "Economic Ruin & Desperate Flight",
@@ -24299,279 +25671,291 @@ window.unitData = {
             "<span class=\"para-ref\">[5.1]</span> In the wake of Kristallnacht, the Nazi state moved to completely eliminate Jews from economic life. Perversely blaming Jewish victims for the destruction, Göring imposed an astronomical **1 billion mark collective fine** on the Jewish community and confiscated all insurance payouts. Soon afterward, decrees banned Jews from attending public theaters, concerts, parks, and swimming pools, while Jewish children were expelled from state schools.",
             "<span class=\"para-ref\">[5.2]</span> Through forced \"Aryanisation\", all remaining **Jewish businesses 'Aryanized'**, compelled to sell their shops and factories to Nazi party members at fraction of their true value. Under Reinhard Heydrich, the **Central Emigration Office expulsions** stripped emigrants of their assets before forcing them into foreign exile. Over half of Germany’s Jewish population fled before borders closed in September 1939."
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> In the wake of Kristallnacht, the Nazi state moved to completely eliminate Jews from economic life. Perversely blaming Jewish victims for the destruction, Göring imposed an astronomical **1 billion mark collective fine** on the Jewish community and confiscated all insurance payouts. Soon afterward, decrees banned Jews from attending public theaters, concerts, parks, and swimming pools, while Jewish children were expelled from state schools.\n\n<span class=\"para-ref\">[5.2]</span> Through forced \"Aryanisation\", all remaining **Jewish businesses 'Aryanized'**, compelled to sell their shops and factories to Nazi party members at fraction of their true value. Under Reinhard Heydrich, the **Central Emigration Office expulsions** stripped emigrants of their assets before forcing them into foreign exile. Over half of Germany’s Jewish population fled before borders closed in September 1939.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Following the pogrom of **9-10 November 1938**, Göring blamed **the Jewish community** for the damage, seized their insurance payouts, and imposed a 1 billion mark fine. New decrees barred Jews from public parks, cinemas, theatres, and swimming pools, and expelled Jewish children from state schools.\n\n<span class=\"para-ref\">[5.2]</span> Under forced \"Aryanisation\" — **the forced transfer of Jewish businesses and property to Aryans** at rock-bottom prices — remaining Jewish shops and factories were seized. Meanwhile, Heydrich’s **Reich Office for Jewish Emigration** stripped emigrants' assets as over half of Germany’s Jews fled before September 1939.",
           "act": 5,
           "act_title": "Stage 5: Economic Expropriation & Forced Emigration"
         }
       ],
       "quiz": [
         {
-          "q": "What twisted biological theory underpinned Hitler's racial ideology?",
-          "a": "Social Darwinism",
-          "options": [
-            "Capitalism",
-            "Eugenics",
-            "Social Darwinism",
-            "Marxism"
-          ]
-        },
-        {
+          "stage": 1,
+          "question": "What German term meaning 'subhuman' was used by Nazi racial theory to brand Jews and Roma?",
           "q": "What German term meaning 'subhuman' was used by Nazi racial theory to brand Jews and Roma?",
-          "a": "Untermenschen",
           "options": [
-            "Untermenschen",
             "Herrenvolk",
             "Volksgemeinschaft",
+            "Untermenschen",
             "Mutterkreuz"
           ],
-          "question": "What German term meaning 'subhuman' was used by Nazi racial theory to brand Jews and Roma?",
-          "answer": "Untermenschen"
+          "answer": "Untermenschen",
+          "a": "Untermenschen",
+          "explanation": "Hitler portrayed Jews, Roma, and Slavs as subhuman parasites (*Untermenschen*) allegedly threatening to poison German blood."
         },
         {
-          "q": "What nationwide action did the Nazi regime organize on 1 April 1933 against Jewish businesses and doctors?",
-          "a": "A nationwide boycott of Jewish shops, lawyers, and doctors",
-          "options": [
-            "A nationwide boycott of Jewish shops, lawyers, and doctors",
-            "The immediate mass deportation of all Jews to Poland",
-            "The mandatory wearing of the yellow star across Germany",
-            "The confiscation of all private bank accounts"
-          ],
-          "question": "What nationwide action did the Nazi regime organize on 1 April 1933 against Jewish businesses and doctors?",
-          "answer": "A nationwide boycott of Jewish shops, lawyers, and doctors"
-        },
-        {
-          "q": "What two landmark racial laws were enacted at the Nuremberg party rally in September 1935?",
-          "a": "The Reich Citizenship Law and the Law for the Protection of German Blood and German Honour",
-          "options": [
-            "The Reich Citizenship Law and the Law for the Protection of German Blood and German Honour",
-            "The Enabling Act and the Emergency Decree",
-            "The Concordat and the Church Reform Statute",
-            "The Versailles Revocation and the Rearmament Act"
-          ],
-          "question": "What two landmark racial laws were enacted at the Nuremberg party rally in September 1935?",
-          "answer": "The Reich Citizenship Law and the Law for the Protection of German Blood and German Honour"
-        },
-        {
-          "q": "Roughly how many people were forcibly sterilised under this law?",
-          "a": "400,000",
-          "options": [
-            "400,000",
-            "50,000",
-            "10,000",
-            "1.5 million"
-          ]
-        },
-        {
-          "q": "What was the T4 programme introduced in 1939?",
-          "a": "A secret state euthanasia programme killing disabled babies and children",
-          "options": [
-            "A programme to breed racially pure Aryan children",
-            "A secret state euthanasia programme killing disabled babies and children",
-            "A secret programme to build the atomic bomb",
-            "The code name for the invasion of Poland"
-          ]
-        },
-        {
-          "q": "Under the 1935 Nuremberg Laws, what was forbidden between German citizens and Jewish people?",
-          "a": "Marriage and sexual relations",
-          "options": [
-            "Marriage and sexual relations",
-            "Trading in the same market square",
-            "Living in the same town",
-            "Traveling on the same railway line"
-          ],
-          "question": "Under the 1935 Nuremberg Laws, what was forbidden between German citizens and Jewish people?",
-          "answer": "Marriage and sexual relations"
-        },
-        {
-          "q": "What seventeenth-century Polish Jewish youth shot German diplomat Ernst vom Rath in Paris in November 1938?",
-          "a": "Herschel Grynszpan",
-          "options": [
-            "Herschel Grynszpan",
-            "Marinus van der Lubbe",
-            "Dietrich Bonhoeffer",
-            "Karl Liebknecht"
-          ],
-          "question": "What seventeenth-century Polish Jewish youth shot German diplomat Ernst vom Rath in Paris in November 1938?",
-          "answer": "Herschel Grynszpan"
-        },
-        {
-          "q": "What colour triangle were homosexual prisoners forced to wear in concentration camps?",
-          "a": "Pink",
-          "options": [
-            "Pink",
-            "Red",
-            "Yellow",
-            "Black"
-          ]
-        },
-        {
+          "stage": 1,
+          "question": "In what month and year did the SA lead a one-day boycott of Jewish shops and businesses?",
           "q": "In what month and year did the SA lead a one-day boycott of Jewish shops and businesses?",
-          "a": "April 1933",
           "options": [
             "September 1935",
             "April 1933",
             "January 1933",
             "November 1938"
-          ]
+          ],
+          "answer": "April 1933",
+          "a": "April 1933",
+          "explanation": "On 1 April 1933, the state launched its first coordinated anti-Semitic assault with the April 1933 shop boycott."
         },
         {
+          "stage": 1,
+          "question": "What 1933 law resulted in Jewish teachers, judges, and government workers losing their jobs?",
           "q": "What 1933 law resulted in Jewish teachers, judges, and government workers losing their jobs?",
-          "a": "The Civil Service Act",
           "options": [
+            "The Civil Service Act",
             "The Nuremberg Laws",
             "The Law against the Overcrowding of German Schools",
-            "The Enabling Act",
-            "The Civil Service Act"
-          ]
+            "The Enabling Act"
+          ],
+          "answer": "The Civil Service Act",
+          "a": "The Civil Service Act",
+          "explanation": "Six days later, thousands of Jewish civil servants purged from government administration, schools, and university faculties under the Civil Service Restoration Act."
         },
         {
+          "stage": 1,
+          "question": "What German racial term meaning 'master race' did Nazi ideology use to place Nordic Aryans at the top of its racial hierarchy?",
+          "q": "What German racial term meaning 'master race' did Nazi ideology use to place Nordic Aryans at the top of its racial hierarchy?",
+          "options": [
+            "Untermenschen",
+            "Mittelstand",
+            "Volksempfänger",
+            "Herrenvolk"
+          ],
+          "answer": "Herrenvolk",
+          "a": "Herrenvolk",
+          "explanation": "Nazi biological racism exalted Nordic Aryans as the Herrenvolk ('master race') while branding Jews, Roma, and Slavs as subhuman Untermenschen."
+        },
+        {
+          "stage": 2,
+          "question": "Under the 1935 Nuremberg Laws, what was forbidden between German citizens and Jewish people?",
+          "q": "Under the 1935 Nuremberg Laws, what was forbidden between German citizens and Jewish people?",
+          "options": [
+            "Trading in the same market square",
+            "Living in the same town",
+            "Marriage and sexual relations",
+            "Traveling on the same railway line"
+          ],
+          "answer": "Marriage and sexual relations",
+          "a": "Marriage and sexual relations",
+          "explanation": "The companion statute, the German Blood Protection Law, outlawed marriage and sexual relations between Jewish citizens and people of German blood, criminalizing violations as \"racial defilement\" punishable by imprisonment."
+        },
+        {
+          "stage": 2,
+          "question": "In what year were the Nuremberg Laws passed?",
           "q": "In what year were the Nuremberg Laws passed?",
-          "a": "1935",
           "options": [
             "1933",
+            "1935",
             "1939",
-            "1938",
-            "1935"
-          ]
+            "1938"
+          ],
+          "answer": "1935",
+          "a": "1935",
+          "explanation": "In September 1935, anti-Semitic persecution was codified into constitutional law at the annual Nuremberg rally through the Nuremberg Laws (1935)."
         },
         {
+          "stage": 2,
+          "question": "What did the 'Reich Citizenship Law' do?",
           "q": "What did the 'Reich Citizenship Law' do?",
-          "a": "Stripped Jewish people of their German citizenship and the right to vote",
           "options": [
             "Stripped Jewish people of their German citizenship and the right to vote",
             "Banned marriage between Jews and Aryans",
             "Banned Jewish people from leaving Germany",
             "Forced all Jewish people to wear the Star of David"
-          ]
+          ],
+          "answer": "Stripped Jewish people of their German citizenship and the right to vote",
+          "a": "Stripped Jewish people of their German citizenship and the right to vote",
+          "explanation": "The first statute, the Reich Citizenship Act, stripped German Jews of full citizenship, demoting them to subjects without voting rights or the right to hold public office, legally transforming German Jews into stateless aliens inside their own homeland."
         },
         {
+          "stage": 2,
+          "question": "What did the 'Law for the Protection of German Blood and Honour' forbid?",
           "q": "What did the 'Law for the Protection of German Blood and Honour' forbid?",
-          "a": "Marriage and sexual relations between Jews and Aryans",
           "options": [
             "Jewish people attending German state schools",
-            "Marriage and sexual relations between Jews and Aryans",
             "Jewish people working as doctors or lawyers",
-            "Jewish people owning businesses"
-          ]
+            "Jewish people owning businesses",
+            "Marriage and sexual relations between Jews and Aryans"
+          ],
+          "answer": "Marriage and sexual relations between Jews and Aryans",
+          "a": "Marriage and sexual relations between Jews and Aryans",
+          "explanation": "The companion statute, the German Blood Protection Law, outlawed marriage and sexual relations between Jewish citizens and people of German blood, criminalizing violations as \"racial defilement\" punishable by imprisonment."
         },
         {
-          "q": "What violent nationwide pogrom occurred on the night of 9–10 November 1938 across Germany?",
-          "a": "Kristallnacht (The Night of Broken Glass)",
+          "stage": 3,
+          "question": "What twisted biological theory underpinned Hitler's racial ideology?",
+          "q": "What twisted biological theory underpinned Hitler's racial ideology?",
           "options": [
-            "Kristallnacht (The Night of Broken Glass)",
+            "Capitalism",
+            "Eugenics",
+            "Social Darwinism",
+            "Marxism"
+          ],
+          "answer": "Social Darwinism",
+          "a": "Social Darwinism",
+          "explanation": "The racial state targeted all minority groups deemed biologically inferior or socially unproductive."
+        },
+        {
+          "stage": 3,
+          "question": "What colour triangle were homosexual prisoners forced to wear in concentration camps?",
+          "q": "What colour triangle were homosexual prisoners forced to wear in concentration camps?",
+          "options": [
+            "Red",
+            "Pink",
+            "Yellow",
+            "Black"
+          ],
+          "answer": "Pink",
+          "a": "Pink",
+          "explanation": "Under Paragraph 175, thousands endured pink triangle homosexual arrests, resulting in over fifteen thousand men being imprisoned in concentration camps, where they were subjected to forced labor and medical experiments."
+        },
+        {
+          "stage": 3,
+          "question": "To which enclosed municipal internment camp outside Berlin were Roma families deported before later transfer to concentration camps?",
+          "q": "To which enclosed municipal internment camp outside Berlin were Roma families deported before later transfer to concentration camps?",
+          "options": [
+            "Marzahn",
+            "Landsberg",
+            "Weimar",
+            "Compiegne"
+          ],
+          "answer": "Marzahn",
+          "a": "Marzahn",
+          "explanation": "Escalating persecution saw hundreds of Roma families rounded up into enclosed municipal camps like Marzahn prior to deportation to SS concentration camps."
+        },
+        {
+          "stage": 3,
+          "question": "Under which secret 1939 program did Hitler authorize doctors to murder mentally and physically disabled children and adults?",
+          "q": "Under which secret 1939 program did Hitler authorize doctors to murder mentally and physically disabled children and adults?",
+          "options": [
+            "The Lebensborn maternity program",
+            "The Strength Through Joy scheme",
+            "The Marriage Loan Act",
+            "The Euthanasia T4 program"
+          ],
+          "answer": "The Euthanasia T4 program",
+          "a": "The Euthanasia T4 program",
+          "explanation": "Authorized in 1939, the secret T4 euthanasia program murdered disabled patients by lethal injection and carbon monoxide gas chambers."
+        },
+        {
+          "stage": 4,
+          "question": "What violent nationwide pogrom occurred on the night of 9–10 November 1938 across Germany?",
+          "q": "What violent nationwide pogrom occurred on the night of 9–10 November 1938 across Germany?",
+          "options": [
             "The Night of the Long Knives",
             "The Munich Putsch",
+            "Kristallnacht (The Night of Broken Glass)",
             "The Spartacist Uprising"
           ],
-          "question": "What violent nationwide pogrom occurred on the night of 9–10 November 1938 across Germany?",
-          "answer": "Kristallnacht (The Night of Broken Glass)"
+          "answer": "Kristallnacht (The Night of Broken Glass)",
+          "a": "Kristallnacht (The Night of Broken Glass)",
+          "explanation": "On 9–10 November 1938, anti-Semitic violence escalated into murderous state-orchestrated terror during the infamous Kristallnacht pogrom (1938)."
         },
         {
+          "stage": 4,
+          "question": "How many Jewish synagogues were burned and destroyed across Germany during Kristallnacht?",
           "q": "How many Jewish synagogues were burned and destroyed across Germany during Kristallnacht?",
-          "a": "Over 1,000 synagogues burned",
           "options": [
-            "Over 1,000 synagogues burned",
             "Ten synagogues",
+            "Over 1,000 synagogues burned",
             "Exactly fifty synagogues",
             "Over 10,000 synagogues"
           ],
-          "question": "How many Jewish synagogues were burned and destroyed across Germany during Kristallnacht?",
-          "answer": "Over 1,000 synagogues burned"
+          "answer": "Over 1,000 synagogues burned",
+          "a": "Over 1,000 synagogues burned",
+          "explanation": "Across the Reich, over one thousand synagogues burnt & shops looted, as rioters smashed windows of seven thousand Jewish businesses and ransacked homes."
         },
         {
-          "q": "What is the exact date of Kristallnacht?",
-          "a": "9-10 November 1938",
-          "options": [
-            "9 November 1923",
-            "9-10 November 1938",
-            "1-2 September 1939",
-            "30 June 1934"
-          ]
-        },
-        {
+          "stage": 4,
+          "question": "Who orchestrated Kristallnacht to win Hitler's favour?",
           "q": "Who orchestrated Kristallnacht to win Hitler's favour?",
-          "a": "Joseph Goebbels",
           "options": [
             "Joseph Goebbels",
             "Hermann Goering",
             "Reinhard Heydrich",
             "Heinrich Himmler"
-          ]
+          ],
+          "answer": "Joseph Goebbels",
+          "a": "Joseph Goebbels",
+          "explanation": "Following the assassination of a German diplomat in Paris by a young Polish Jew, Joseph Goebbels unleashed plainclothes SA and SS mobs across Germany, launching coordinated attacks against Jewish communities while police and fire brigades were ordered not to intervene."
         },
         {
+          "stage": 4,
+          "question": "How many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
           "q": "How many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
-          "a": "30,000",
           "options": [
             "100,000",
             "10,000",
             "50,000",
             "30,000"
-          ]
-        },
-        {
-          "q": "How many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
-          "a": "Over 30,000 Jewish men",
-          "options": [
-            "Over 30,000 Jewish men",
-            "Under 500 men",
-            "Over 500,000 men",
-            "Roughly 2,000 men"
           ],
-          "question": "How many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
-          "answer": "Over 30,000 Jewish men"
+          "answer": "30,000",
+          "a": "30,000",
+          "explanation": "Ninety-one Jews were murdered, and 30,000 Jewish men sent to camps such as Dachau, Buchenwald, and Sachsenhausen, enduring brutal abuse until families agreed to surrender their property and emigrate."
         },
         {
+          "stage": 5,
+          "question": "What is the exact date of Kristallnacht?",
+          "q": "What is the exact date of Kristallnacht?",
+          "options": [
+            "9 November 1923",
+            "1-2 September 1939",
+            "9-10 November 1938",
+            "30 June 1934"
+          ],
+          "answer": "9-10 November 1938",
+          "a": "9-10 November 1938",
+          "explanation": "Over half of Germany’s Jewish population fled before borders closed in September 1939."
+        },
+        {
+          "stage": 5,
+          "question": "Who did the Nazi government blame for the destruction of Kristallnacht?",
           "q": "Who did the Nazi government blame for the destruction of Kristallnacht?",
-          "a": "The Jewish community",
           "options": [
             "Communist agitators",
+            "The Jewish community",
             "The SA",
-            "British spies",
-            "The Jewish community"
-          ]
-        },
-        {
-          "q": "What colossal collective fine was imposed by the Nazi regime on the Jewish community to pay for Kristallnacht damage?",
-          "a": "A one billion Reichsmark fine",
-          "options": [
-            "A one billion Reichsmark fine",
-            "Ten thousand marks",
-            "Fifty million marks",
-            "One hundred billion marks"
+            "British spies"
           ],
-          "question": "What colossal collective fine was imposed by the Nazi regime on the Jewish community to pay for Kristallnacht damage?",
-          "answer": "A one billion Reichsmark fine"
+          "answer": "The Jewish community",
+          "a": "The Jewish community",
+          "explanation": "Perversely blaming Jewish victims for the destruction, Göring imposed an astronomical 1 billion mark collective fine on the Jewish community and confiscated all insurance payouts."
         },
         {
+          "stage": 5,
+          "question": "What does the term 'Aryanisation' mean in the context of 1938-1939?",
           "q": "What does the term 'Aryanisation' mean in the context of 1938-1939?",
-          "a": "The forced transfer of Jewish businesses and property to Aryans",
           "options": [
-            "The process of proving your racial purity to the SS",
             "The forced transfer of Jewish businesses and property to Aryans",
+            "The process of proving your racial purity to the SS",
             "The introduction of Race Studies in schools",
             "The renaming of streets and cities to sound more German"
-          ]
+          ],
+          "answer": "The forced transfer of Jewish businesses and property to Aryans",
+          "a": "The forced transfer of Jewish businesses and property to Aryans",
+          "explanation": "Through forced \"Aryanisation\", all remaining Jewish businesses 'Aryanized', compelled to sell their shops and factories to Nazi party members at fraction of their true value."
         },
         {
+          "stage": 5,
+          "question": "In January 1939, what organisation did Reinhard Heydrich set up?",
           "q": "In January 1939, what organisation did Reinhard Heydrich set up?",
-          "a": "The Reich Office for Jewish Emigration",
           "options": [
             "The Gestapo",
             "The SD",
-            "The Reich Office for Jewish Emigration",
-            "The Einsatzgruppen"
-          ]
-        },
-        {
-          "q": "What was the purpose of this new office?",
-          "a": "To systematically force Jewish people to leave Germany by taking their wealth in exchange for exit visas",
-          "options": [
-            "To systematically force Jewish people to leave Germany by taking their wealth in exchange for exit visas",
-            "To oversee the creation of Jewish ghettos in Poland",
-            "To transport Jewish people to concentration camps",
-            "To negotiate trade deals with other countries"
-          ]
+            "The Einsatzgruppen",
+            "The Reich Office for Jewish Emigration"
+          ],
+          "answer": "The Reich Office for Jewish Emigration",
+          "a": "The Reich Office for Jewish Emigration",
+          "explanation": "Under Reinhard Heydrich, the Central Emigration Office expulsions stripped emigrants of their assets before forcing them into foreign exile."
         }
       ],
       "utility_starters": null,
@@ -25213,9 +26597,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Driven by racist <strong>Aryan 'Herrenvolk' ideology</strong>, the regime initiated state-sponsored persecution with the <strong>April 1933 shop boycott</strong> against Jewish businesses, rapidly followed as <strong>Jewish civil servants purged</strong> from state employment.",
-          "heading": "Aryan Supremacy & The April Anti-Jewish Boycott",
+          "heading": "How did the regime initiate public state-sponsored antisemitic discrimination?",
           "date": "1933",
-          "step": 1
+          "step": 1,
+          "question": "How did the regime initiate public state-sponsored antisemitic discrimination?",
+          "questionHeading": "How did the regime initiate public state-sponsored antisemitic discrimination?",
+          "prose_hash": "f66122edfd"
         },
         {
           "stage": 2,
@@ -25247,9 +26634,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Anti-Semitic discrimination was formalized in the landmark <strong>Nuremberg Laws (1935)</strong>, comprising the <strong>Reich Citizenship Act</strong> stripping Jews of citizenship and the strict <strong>German Blood Protection Law</strong> criminalizing mixed marriages.",
-          "heading": "The Nuremberg Laws (Citizenship & Blood Protection)",
+          "heading": "Why did the Nuremberg Laws turn antisemitism into legal statute?",
           "date": "Sep 1935",
-          "step": 2
+          "step": 2,
+          "question": "Why did the Nuremberg Laws turn antisemitism into legal statute?",
+          "questionHeading": "Why did the Nuremberg Laws turn antisemitism into legal statute?",
+          "prose_hash": "73a97ebbcb"
         },
         {
           "stage": 3,
@@ -25281,9 +26671,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Nazi biological cleansing encompassed brutal <strong>Roma Gypsy persecution</strong>, widespread <strong>pink triangle homosexual arrests</strong> sent to concentration camps, and the sinister <strong>Euthanasia T4 program origins</strong> targeting disabled infants and patients.",
-          "heading": "Persecution of Roma, Homosexuals & The Disabled",
+          "heading": "How did forced sterilisation and the 1939 T4 program target minorities?",
           "date": "1933–1938",
-          "step": 3
+          "step": 3,
+          "question": "How did forced sterilisation and the 1939 T4 program target minorities?",
+          "questionHeading": "How did forced sterilisation and the 1939 T4 program target minorities?",
+          "prose_hash": "f5289bd16a"
         },
         {
           "stage": 4,
@@ -25315,9 +26708,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "State terror erupted into nationwide violence during the November <strong>Kristallnacht pogrom (1938)</strong>, where hundreds of <strong>synagogues burnt & shops looted</strong> by stormtroopers, culminating with <strong>30,000 Jewish men sent to camps</strong>.",
-          "heading": "Kristallnacht (The Night of Broken Glass)",
+          "heading": "How did the November pogrom mark a decisive shift toward violent state terror?",
           "date": "9–10 Nov 1938",
-          "step": 4
+          "step": 4,
+          "question": "How did the November pogrom mark a decisive shift toward violent state terror?",
+          "questionHeading": "How did the November pogrom mark a decisive shift toward violent state terror?",
+          "prose_hash": "69bd7e99ab"
         },
         {
           "stage": 5,
@@ -25349,9 +26745,12 @@ window.unitData = {
             }
           ],
           "model_sentence": "Following Kristallnacht, the Nazi state imposed an extortionate <strong>1 billion mark collective fine</strong> on the victimized community, forced all remaining <strong>Jewish businesses 'Aryanized'</strong>, and created the <strong>Central Emigration Office expulsions</strong> agency under Heydrich to drive Jews penniless into exile.",
-          "heading": "Economic Expropriation & Forced Emigration",
+          "heading": "How did the regime eliminate all remaining Jewish participation in economic life?",
           "date": "1938–1939",
-          "step": 5
+          "step": 5,
+          "question": "How did the regime eliminate all remaining Jewish participation in economic life?",
+          "questionHeading": "How did the regime eliminate all remaining Jewish participation in economic life?",
+          "prose_hash": "be7c3d553d"
         }
       ],
       "causal_domino_spine": {
@@ -25368,7 +26767,8 @@ window.unitData = {
             "trigger": "The regime initiated state anti-Semitism by deploying brownshirts to picket Jewish shops with placards on 1 April and barring Jews from civil service posts.",
             "desc": "The regime initiated state anti-Semitism by deploying brownshirts to picket Jewish shops with placards on 1 April and barring Jews from civil service posts.",
             "connective": "Marked the transition from violent street agitation into official state discrimination.",
-            "question": "How did the regime initiate public state-sponsored antisemitic discrimination?"
+            "question": "How did the regime initiate public state-sponsored antisemitic discrimination?",
+            "prose_hash": "f66122edfd"
           },
           {
             "step": 2,
@@ -25380,7 +26780,8 @@ window.unitData = {
             "trigger": "The Nuremberg Laws stripped Jews of German citizenship, outlawed intermarriage and sexual relations with Aryans, and classified race via parish records.",
             "desc": "The Nuremberg Laws stripped Jews of German citizenship, outlawed intermarriage and sexual relations with Aryans, and classified race via parish records.",
             "connective": "Turned racial discrimination into permanent constitutional law, legally isolating Jews from German society.",
-            "question": "Why did the Nuremberg Laws turn antisemitism into legal statute?"
+            "question": "Why did the Nuremberg Laws turn antisemitism into legal statute?",
+            "prose_hash": "73a97ebbcb"
           },
           {
             "step": 3,
@@ -25392,7 +26793,8 @@ window.unitData = {
             "trigger": "Police interned Roma at Marzahn, sent homosexuals wearing pink triangles to camps, and compulsorily sterilized 300,000 citizens with disabilities.",
             "desc": "Police interned Roma at Marzahn, sent homosexuals wearing pink triangles to camps, and compulsorily sterilized 300,000 citizens with disabilities.",
             "connective": "Expanded state terror to eliminate any groups deemed biological or moral threats to the Aryan Volk.",
-            "question": "How did racial hygiene theories target groups outside the racial community?"
+            "question": "How did forced sterilisation and the 1939 T4 program target minorities?",
+            "prose_hash": "f5289bd16a"
           },
           {
             "step": 4,
@@ -25404,7 +26806,8 @@ window.unitData = {
             "trigger": "Goebbels ordered a nationwide pogrom following vom Rath’s assassination: 1,000 synagogues burned, 7,500 shops looted, and 30,000 men sent to camps.",
             "desc": "Goebbels ordered a nationwide pogrom following vom Rath’s assassination: 1,000 synagogues burned, 7,500 shops looted, and 30,000 men sent to camps.",
             "connective": "Represented a violent escalation from legal exclusion to state-orchestrated destruction and mass incarceration.",
-            "question": "How did the November pogrom mark a decisive shift toward violent state terror?"
+            "question": "How did the November pogrom mark a decisive shift toward violent state terror?",
+            "prose_hash": "69bd7e99ab"
           },
           {
             "step": 5,
@@ -25416,7 +26819,8 @@ window.unitData = {
             "trigger": "The regime imposed a 1-billion-mark collective fine, forcibly \"Aryanized\" remaining businesses, and tasked Heydrich with expelling all Jews from the Reich.",
             "desc": "The regime imposed a 1-billion-mark collective fine, forcibly \"Aryanized\" remaining businesses, and tasked Heydrich with expelling all Jews from the Reich.",
             "connective": "Liquidated Jewish economic survival in Germany, driving 250,000 into exile and laying the groundwork for wartime genocide.",
-            "question": "How did the regime eliminate all remaining Jewish participation in economic life?"
+            "question": "How did the regime eliminate all remaining Jewish participation in economic life?",
+            "prose_hash": "be7c3d553d"
           }
         ]
       },

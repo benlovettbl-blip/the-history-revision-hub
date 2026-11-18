@@ -7,6 +7,15 @@ const publicDbPath = path.join(__dirname, '..', 'public', 'database.json');
 async function buildDatabase() {
   console.log('Building database.json from units directory...');
   const db = {};
+  let existingNonUnitCollections = {};
+  if (fs.existsSync(publicDbPath)) {
+    try {
+      const prevDb = JSON.parse(fs.readFileSync(publicDbPath, 'utf8'));
+      for (const k of ['micro_histories', 'key_individuals']) {
+        if (prevDb[k]) existingNonUnitCollections[k] = prevDb[k];
+      }
+    } catch (e) {}
+  }
   const dirs = fs
     .readdirSync(unitsDir, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
@@ -27,6 +36,7 @@ async function buildDatabase() {
     }
     if (fs.existsSync(dataPath)) {
       try {
+        globalThis.window = {};
         const fileUrl = 'file:///' + dataPath.replace(/\\/g, '/');
         const module = await import(fileUrl);
         let unitData =
@@ -34,12 +44,13 @@ async function buildDatabase() {
           module.unitData ||
           module[unitId] ||
           module.data ||
-          module[`${unitId}_data`];
+          module[`${unitId}_data`] ||
+          Object.values(globalThis.window).find((v) => v && Array.isArray(v.lessons));
         if (!unitData) {
           try {
             const raw = fs.readFileSync(dataPath, 'utf8');
             const vm = require('vm');
-            const sandbox = { module: { exports: {} }, exports: {} };
+            const sandbox = { window: {}, module: { exports: {} }, exports: {} };
             vm.createContext(sandbox);
             vm.runInContext(raw.replace(/export\s+default[\s\S]*$/, ''), sandbox);
             const exp = sandbox.module.exports;
@@ -49,7 +60,8 @@ async function buildDatabase() {
                 : exp[unitId] ||
                   exp[`${unitId}_data`] ||
                   sandbox[unitId] ||
-                  sandbox[`${unitId}_data`];
+                  sandbox[`${unitId}_data`] ||
+                  Object.values(sandbox.window).find((v) => v && Array.isArray(v.lessons));
             if (!unitData) {
               const varMatch = raw.match(/const\s+([a-zA-Z0-9_]+)\s*=\s*\{/);
               if (varMatch && sandbox[varMatch[1]]) {
@@ -82,6 +94,10 @@ async function buildDatabase() {
     } else {
       console.log(`⏭️  Skipped ${unitId} (no data.js found)`);
     }
+  }
+
+  for (const [k, val] of Object.entries(existingNonUnitCollections)) {
+    if (!db[k]) db[k] = val;
   }
 
   const rootDbPath = path.join(__dirname, '..', 'database.json');

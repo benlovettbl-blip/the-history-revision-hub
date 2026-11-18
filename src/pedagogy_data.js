@@ -766,4 +766,54 @@ export const PEDAGOGY_RESEARCH_BANK = [
       },
     ],
   },
+  {
+    id: 'stage_question_cognitive_progression_verso',
+    author: 'Christine Counsell, John Sweller & Isabel Beck',
+    affiliation: 'University of Cambridge / UNSW / University of Pittsburgh',
+    category: 'Disciplinary Enquiry & Cognitive Load',
+    categoryBadge: 'badge-emerald',
+    title:
+      'The 5-Tier Stage Question Ladder (KS2 to GCSE) & Full-Width Verso Note-Taking',
+    subtitle:
+      'Eliminating Split-Attention Margin Columns, Unanswerable Prompts, and Year-Group Readability Inflation Across 773 Curriculum Stages',
+    overview:
+      'When pupils read a 100-word historical narrative block, the accompanying Stage Question must direct attention to the exact causal mechanism inside that paragraph without exceeding working-memory capacity or demanding facts absent from the text. Grounded in Isabel Beck’s "Questioning the Author" (QtA), Christine Counsell’s enquiry-question principles, and Chandler & Sweller’s Split-Attention Effect, The History Revision Hub calibrates all 773 narrative stage questions progressively from KS2 (Years 5–6) to GCSE (Years 10–11), unites Web App and Pupil Workbook questions under a single SHA-1 prose-hash source of truth, and retires narrow 26mm margin trigger columns in favour of full-width stacked Verso stage boxes.',
+    analysisHeading: 'The Classroom Dilemma: Unanswerable Questions, Jargon Inflation & Split Attention',
+    analysisText:
+      'Three recurring flaws undermine secondary history workbooks: (1) Narrative-Question Drift, where prose is edited over time while an older question still asks about a person, date, or off-by-one stage no longer in that paragraph; (2) Premature Syntactic Complexity, where Year 7 pupils face 18-word GCSE-style stems packed with abstract nominalisations ("institutionalisation", "operationalise") or open "To what extent..." essay questions attached to a single 90-word paragraph; and (3) Margin Split-Attention, where a narrow 3-bullet left trigger column crowds handwriting space and tempts pupils to copy isolated noun fragments rather than compose a coherent historical sentence.',
+    evidenceHeading: 'What Cognitive & Disciplinary Research Proves',
+    evidenceText:
+      'Beck, McKeown, Hamilton, and Kucan (1997) demonstrate that text-grounded queries immediately following a short passage build durable situation models only when every entity and causal link required by the prompt is explicitly resolvable from the text just read. Counsell (2000; 2011) establishes that effective historical sub-questions marry crisp, accessible syntax with progressive disciplinary thinking—moving from concrete human actions and immediate reactions in Year 7 to multi-factor structural causation and specification-precise consequences at GCSE. Simultaneously, Chandler and Sweller (1991) prove that spatially separating competing text cues from a cramped writing zone induces extraneous split-attention load; full-width integrated boxes beneath a single-line question banner maximise generative note-making.',
+    applicationHeading: 'Revision Hub Architecture: 5-Tier Progression & Prose-Hash Sustainability',
+    implementation: [
+      'Progressive 5-Tier Readability & Cognitive Ceiling: Every stage question fits a single print line (<= 82 characters) while scaling syntax and non-proper polysyllabic vocabulary smoothly: KS2 (<= 13 words, <= 2 complex common words), Year 7 (<= 13w, <= 2), Year 8 (<= 14w, <= 3), Year 9 (<= 15w, <= 4), and GCSE Years 10–11 (<= 15w, <= 5). Open "To what extent..." evaluative judgements are reserved strictly for whole-lesson Recto writing tasks.',
+      'Full-Width Stacked Verso Stage Boxes (Zero 3-Trigger Columns): Retires legacy .stage-trigger-col sidebars across all KS3 and GCSE Pupil Workbooks, giving pupils five full-width ruled lines directly beneath each crisp Stage Question banner.',
+      'Single Source of Truth & Arcade Noun-Title Protection: Unifies causal_domino_spine.stages[i].question, workbook_stages[i].question, and compiled pupil_workbook.html banners 1-to-1 while preserving noun-phrase milestone titles for interactive Arcade timeline games.',
+      'Automated SHA-1 Prose-Hash Drift Gate: Stamps a 10-character SHA-1 hash of narrative_blocks[i].text onto every calibrated stage and enforces automated entity, year, off-by-one, and readability checks in sync_unit.cjs and npm run test:qa.',
+    ],
+    protocolHeading: 'Practical Classroom Protocol for History Teachers',
+    teacherProtocols: [
+      '1. Read-Pause-Synthesise Cycle: Read one two-paragraph narrative block aloud (or via the neural audio player), pause at the Stage Question banner, and give pupils 60–90 seconds to write a complete 1–2 sentence causal answer across the full-width Verso lines.',
+      '2. Insist on Full Causal Sentences: Because the 3-word trigger sidebar is retired, train pupils to answer every "Why..." or "How..." banner using a complete clause containing a named historical actor, date/event, and causal connective ("because", "leading to", "so that").',
+      '3. Immediate Chronology Spine Check: Reveal the matching stage card on the app’s interactive Chronology Spine so pupils self-verify and refine their note in green/purple pen before advancing to the next block.',
+    ],
+    citations: [
+      'Beck, I. L., McKeown, M. G., Hamilton, R. L., & Kucan, L. (1997). Questioning the Author: An Approach for Enhancing Student Engagement with Text. International Reading Association.',
+      'Chandler, P., & Sweller, J. (1991). Cognitive load theory and the format of instruction. Cognition and Instruction, 8(4), pp. 293–332.',
+      'Counsell, C. (2000). Historical knowledge and historical skill: A distracting dichotomy. In J. Arthur & R. Phillips (Eds.), Issues in History Teaching (pp. 54–71). Routledge.',
+      'Willingham, D. T. (2009). Why Don’t Students Like School? Jossey-Bass.',
+    ],
+    links: [
+      {
+        title: 'Historical Association: Enquiry Questions in Secondary History',
+        url: 'https://www.history.org.uk/secondary/categories/enquiry-questions',
+        displayText: 'www.history.org.uk/secondary/categories/enquiry-questions',
+      },
+      {
+        title: 'Reading Rockets: Questioning the Author (Beck & McKeown)',
+        url: 'https://www.readingrockets.org/classroom/classroom-strategies/questioning-author',
+        displayText: 'www.readingrockets.org/classroom/classroom-strategies/questioning-author',
+      },
+    ],
+  },
 ];

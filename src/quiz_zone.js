@@ -95,7 +95,9 @@ export function renderQuizZone(container, unitData) {
         });
       }
       if (
+        (!lessonQuiz || lessonQuiz.length === 0) &&
         l.do_now &&
+        !l.do_now.is_baseline &&
         (l.do_now.type === 'questions' ||
           l.do_now.type === 'retrieval_starter' ||
           l.do_now.items) &&
@@ -121,8 +123,20 @@ export function renderQuizZone(container, unitData) {
           addFlashcard(`Which term matches this definition: "${v.definition}"?`, v.term);
         });
       }
-      if (
+      if (lessonQuiz && Array.isArray(lessonQuiz) && lessonQuiz.length > 0) {
+        lessonQuiz.forEach((item) => {
+          const qText = item.question || item.q;
+          const aText =
+            item.options && typeof item.answer === 'number'
+              ? item.options[item.answer]
+              : item.a || item.answer;
+          if (qText && aText && qText !== 'Who is this historical figure?') {
+            addFlashcard(qText, aText);
+          }
+        });
+      } else if (
         l.do_now &&
+        !l.do_now.is_baseline &&
         (l.do_now.type === 'questions' || l.do_now.type === 'retrieval_starter' || l.do_now.items)
       ) {
         const items = l.do_now.items || l.do_now.tasks || [];

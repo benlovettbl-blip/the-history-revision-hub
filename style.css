@@ -11836,6 +11836,7 @@ body.search-modal-open {
 }
 
 /* Constrain content to centered presentation canvas */
+.donow-panel-content.donow-presentation-mode .donow-streamlined-header,
 .donow-panel-content.donow-presentation-mode .donow-mode-deck,
 .donow-panel-content.donow-presentation-mode #donow-gcse-unit-chips-wrapper,
 .donow-panel-content.donow-presentation-mode #donow-mode-subtitle,
@@ -11844,6 +11845,10 @@ body.search-modal-open {
   width: 94% !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.donow-panel-content.donow-presentation-mode .donow-streamlined-header {
+  margin-top: 12px !important;
 }
 
 .donow-panel-content.donow-presentation-mode .donow-rows-container {

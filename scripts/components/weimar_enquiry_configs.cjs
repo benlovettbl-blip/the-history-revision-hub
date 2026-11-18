@@ -1360,4 +1360,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
   ]
 };
 
+const { applyCanonicalStageOverrides } = require('./canonical_stage_loader.cjs');
+Object.values(WEIMAR_ENQUIRY_CONFIGS).forEach((ktLessons) => {
+  applyCanonicalStageOverrides('weimar_nazi_germany', ktLessons);
+});
+
 module.exports = { WEIMAR_ENQUIRY_CONFIGS };

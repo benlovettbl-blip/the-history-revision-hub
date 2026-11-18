@@ -344,7 +344,8 @@ export default {
             "tag": "📜 SECRET ORDERS",
             "trigger": "Captain James Cook departed Plymouth on the Endeavour, carrying public instructions to observe the transit of Venus in Tahiti alongside secret Admiralty orders to find and claim the Great Southern Land.",
             "connective": "Transformed a prestigious scientific expedition into a covert imperial mission to secure strategic Pacific territory before rival French explorers could claim it.",
-            "question": "Why did the British Admiralty issue secret imperial instructions to Captain Cook?"
+            "question": "What secret orders did James Cook carry aboard HMS Endeavour in 1768?",
+            "prose_hash": "b4cbb43eeb"
           },
           {
             "step": 2,
@@ -354,7 +355,8 @@ export default {
             "tag": "🧭 STAR NAVIGATION",
             "trigger": "High priest and master star navigator Tupaia joined the Endeavour in Raiatea, drawing an astonishing mental chart of over 130 Pacific islands and guiding Cook across thousands of miles of ocean without European instruments.",
             "connective": "Disproved European myths of \"discovering\" unknown seas by demonstrating that Indigenous Pacific peoples had navigated and mapped Oceania for centuries.",
-            "question": "How did Tupaia’s navigational mastery enable the Endeavour to reach New Zealand and Australia?"
+            "question": "How did Tupaia’s star navigation and chart guide Cook’s Pacific voyage?",
+            "prose_hash": "c8693193ff"
           },
           {
             "step": 3,
@@ -364,7 +366,8 @@ export default {
             "tag": "🛡️ BOTANY BAY ENCOUNTER",
             "trigger": "When Cook’s pinnace attempted to land at Kamay (Botany Bay), two Gweagal warriors brandished spears and shouted 'Walla walla ma' (go away) to defend their sacred land, prompting the British to open fire with muskets.",
             "connective": "Established a dangerous precedent where British forces interpreted Indigenous spiritual defence and boundary protection as unprovoked aggression, justifying military force.",
-            "question": "How did the Dharawal and Gweagal warriors defend their ancestral lands at Botany Bay?"
+            "question": "What happened when Gweagal warriors met Cook’s boats at Botany Bay?",
+            "prose_hash": "c349252841"
           },
           {
             "step": 4,
@@ -374,7 +377,8 @@ export default {
             "tag": "🇬🇧 POSSESSION ISLAND",
             "trigger": "Standing on Possession Island in the Torres Strait, Cook hoisted the Union Jack and claimed the entire eastern coast of Australia—renaming it New South Wales—in the name of King George III.",
             "connective": "Formally claimed two million square kilometres of sovereign Indigenous land without seeking permission, entering into treaties, or offering compensation.",
-            "question": "Why did Captain Cook claim eastern Australia on Possession Island without a treaty?"
+            "question": "How did Cook break his Admiralty orders on Possession Island in 1770?",
+            "prose_hash": "50430c9411"
           },
           {
             "step": 5,
@@ -384,7 +388,8 @@ export default {
             "tag": "⚖️ TERRA NULLIUS",
             "trigger": "British jurists declared Australia terra nullius ('nobody's land') by claiming Indigenous peoples did not cultivate soil or live in permanent towns under European property law.",
             "connective": "Stripped First Nations peoples of legal recognition and sovereignty, denying them land rights and setting the legal foundation for two centuries of dispossession.",
-            "question": "How did the legal fiction of terra nullius justify British dispossession of First Nations peoples?"
+            "question": "How did the claim of terra nullius strip First Nations of land rights?",
+            "prose_hash": "ae9d68d8d8"
           }
         ]
       },
@@ -393,7 +398,7 @@ export default {
           "step": 1,
           "para_ref": "[1.1]",
           "date": "1768–1769",
-          "heading": "Why did the British Admiralty issue secret imperial instructions to Captain Cook?",
+          "heading": "What secret orders did James Cook carry aboard HMS Endeavour in 1768?",
           "bullets": [
             "Transit of Venus",
             "Secret Admiralty Orders",
@@ -413,16 +418,20 @@ export default {
               "clue": "Terra Australis Incognita: the vast southern continent Britain raced to claim before France or Spain."
             }
           ],
-          "focus_clue": "How did the British government use a scientific astronomical mission to mask an aggressive search for Pacific imperial territory?",
+          "focus_clue": "What secret orders did James Cook carry aboard HMS Endeavour in 1768?",
           "model_sentence": "Publicly celebrated for observing the <strong>Transit of Venus</strong>, Captain Cook carried <strong>secret Admiralty orders</strong> commanding him to claim the mythical <strong>Great Southern Land</strong> for King George III.",
-          "title": "Why did the British Admiralty issue secret imperial instructions to Captain Cook?",
-          "dates": "1768–1769"
+          "title": "Secret Admiralty Orders & Royal Society",
+          "dates": "1768–1769",
+          "question": "What secret orders did James Cook carry aboard HMS Endeavour in 1768?",
+          "questionHeading": "What secret orders did James Cook carry aboard HMS Endeavour in 1768?",
+          "focusClue": "What secret orders did James Cook carry aboard HMS Endeavour in 1768?",
+          "prose_hash": "b4cbb43eeb"
         },
         {
           "step": 2,
           "para_ref": "[1.2]",
           "date": "1769–1770",
-          "heading": "How did Tupaia’s navigational mastery enable the Endeavour to reach New Zealand and Australia?",
+          "heading": "How did Tupaia’s star navigation and chart guide Cook’s Pacific voyage?",
           "bullets": [
             "130 Pacific Islands",
             "Non-Instrument Navigation",
@@ -442,16 +451,20 @@ export default {
               "clue": "Tupaia served as master navigator and diplomatic mediator, vital for British survival and passage."
             }
           ],
-          "focus_clue": "Why does Tupaia's mental map of Oceania challenge the Eurocentric concept of 'discovery' in the South Pacific?",
+          "focus_clue": "How did Tupaia’s star navigation and chart guide Cook’s Pacific voyage?",
           "model_sentence": "Drawing on mental charts of over <strong>130 Pacific islands</strong>, Tupaia used <strong>non-instrument navigation</strong> to provide indispensable <strong>Indigenous guidance</strong> across uncharted waters.",
-          "title": "How did Tupaia’s navigational mastery enable the Endeavour to reach New Zealand and Australia?",
-          "dates": "1769–1770"
+          "title": "Tupaia: Master Polynesian Navigator",
+          "dates": "1769–1770",
+          "question": "How did Tupaia’s star navigation and chart guide Cook’s Pacific voyage?",
+          "questionHeading": "How did Tupaia’s star navigation and chart guide Cook’s Pacific voyage?",
+          "focusClue": "How did Tupaia’s star navigation and chart guide Cook’s Pacific voyage?",
+          "prose_hash": "c8693193ff"
         },
         {
           "step": 3,
           "para_ref": "[1.3]",
           "date": "April 1770",
-          "heading": "How did the Dharawal and Gweagal warriors defend their ancestral lands at Botany Bay?",
+          "heading": "What happened when Gweagal warriors met Cook’s boats at Botany Bay?",
           "bullets": [
             "Two Gweagal Warriors",
             "Defensive Spear Protocol",
@@ -471,16 +484,20 @@ export default {
               "clue": "Cook ordered three musket volleys, wounding a warrior in the leg to force an armed British landing."
             }
           ],
-          "focus_clue": "Why did the Gweagal warriors shout 'Walla walla ma' and throw stones, and how did British gunshots violate Indigenous spiritual law?",
+          "focus_clue": "What happened when Gweagal warriors met Cook’s boats at Botany Bay?",
           "model_sentence": "When <strong>two Gweagal warriors</strong> defended their shore following <strong>defensive spear protocol</strong>, Cook ordered <strong>British musket fire</strong> to force a landing on sovereign First Nations territory.",
-          "title": "How did the Dharawal and Gweagal warriors defend their ancestral lands at Botany Bay?",
-          "dates": "April 1770"
+          "title": "First Encounter: The Gweagal Defense",
+          "dates": "April 1770",
+          "question": "What happened when Gweagal warriors met Cook’s boats at Botany Bay?",
+          "questionHeading": "What happened when Gweagal warriors met Cook’s boats at Botany Bay?",
+          "focusClue": "What happened when Gweagal warriors met Cook’s boats at Botany Bay?",
+          "prose_hash": "c349252841"
         },
         {
           "step": 4,
           "para_ref": "[1.4]",
           "date": "August 1770",
-          "heading": "Why did Captain Cook claim eastern Australia on Possession Island without a treaty?",
+          "heading": "How did Cook break his Admiralty orders on Possession Island in 1770?",
           "bullets": [
             "Torres Strait Island",
             "Union Jack Flag",
@@ -500,16 +517,20 @@ export default {
               "clue": "Cook claimed the entire eastern coastline for King George III without negotiating or seeking consent."
             }
           ],
-          "focus_clue": "Why did Cook ignore the Admiralty instructions requiring 'consent of the natives' when claiming the continent for King George III?",
+          "focus_clue": "How did Cook break his Admiralty orders on Possession Island in 1770?",
           "model_sentence": "Landing on a remote <strong>Torres Strait island</strong>, Cook raised the <strong>Union Jack flag</strong> to declare the entire eastern coast under the <strong>New South Wales claim</strong> without consulting native inhabitants.",
-          "title": "Why did Captain Cook claim eastern Australia on Possession Island without a treaty?",
-          "dates": "August 1770"
+          "title": "Possession Island & Royal Claim",
+          "dates": "August 1770",
+          "question": "How did Cook break his Admiralty orders on Possession Island in 1770?",
+          "questionHeading": "How did Cook break his Admiralty orders on Possession Island in 1770?",
+          "focusClue": "How did Cook break his Admiralty orders on Possession Island in 1770?",
+          "prose_hash": "50430c9411"
         },
         {
           "step": 5,
           "para_ref": "[1.5]",
           "date": "1770–1788",
-          "heading": "How did the legal fiction of terra nullius justify British dispossession of First Nations peoples?",
+          "heading": "How did the claim of terra nullius strip First Nations of land rights?",
           "bullets": [
             "European Property Law",
             "No Treaties Signed",
@@ -529,35 +550,80 @@ export default {
               "clue": "The colonial legal fiction erased 65,000 years of custodianship until the 1992 Mabo High Court ruling."
             }
           ],
-          "focus_clue": "How did European assumptions regarding fences, agriculture, and property erase 65,000 years of Indigenous land management?",
+          "focus_clue": "How did the claim of terra nullius strip First Nations of land rights?",
           "model_sentence": "Relying on narrow <strong>European property law</strong>, Britain justified seizing Australia with <strong>no treaties signed</strong>, sparking over <strong>two centuries dispossession</strong> of sovereign First Nations peoples.",
-          "title": "How did the legal fiction of terra nullius justify British dispossession of First Nations peoples?",
-          "dates": "1770–1788"
+          "title": "The Legal Fiction of Terra Nullius",
+          "dates": "1770–1788",
+          "question": "How did the claim of terra nullius strip First Nations of land rights?",
+          "questionHeading": "How did the claim of terra nullius strip First Nations of land rights?",
+          "focusClue": "How did the claim of terra nullius strip First Nations of land rights?",
+          "prose_hash": "ae9d68d8d8"
         }
       ],
       "did_you_know": "When Captain Cook reached Tahiti in 1769, Polynesian master navigator Tupaia drew an astonishing map from memory showing the exact relative positions of 130 Pacific islands across 3,000 miles of ocean! Tupaia could navigate across pitch-black open seas without compasses, sextants, or chronometers simply by observing star azimuths, cloud reflections, ocean swells, and migrating birds.",
       "do_now": {
         "type": "questions",
+        "is_baseline": true,
         "items": [
           {
-            "question": "What economic system led European empires to hoard bullion and establish protected trade colonies?",
-            "answer": "Mercantilism."
+            "question": "What economic doctrine led European empires to restrict colonial trade and hoard gold and silver bullion?",
+            "answer": "Mercantilism",
+            "explanation": "Mercantilism held that colonies existed to supply cheap raw materials and captive markets for the mother country."
           },
           {
-            "question": "Which monarch granted the royal charter founding the East India Company in 1600?",
-            "answer": "Queen Elizabeth I."
+            "question": "Which Tudor monarch granted the royal charter founding the East India Company on New Year’s Eve 1600?",
+            "answer": "Queen Elizabeth I",
+            "explanation": "Queen Elizabeth I signed the founding charter of the East India Company on 31 December 1600."
           },
           {
-            "question": "What brutal maritime leg of the Triangular Trade transported chained Africans across the Atlantic?",
-            "answer": "The Middle Passage."
+            "question": "Which June 1757 battle in Bengal secured East India Company military dominance under Robert Clive?",
+            "answer": "The Battle of Plassey",
+            "explanation": "Robert Clive’s victory over Nawab Siraj ud-Daulah at Plassey in 1757 established British control over Bengal."
           },
           {
-            "question": "Which revered female leader commanded the Jamaican Maroons in guerrilla warfare against Britain in 1739?",
-            "answer": "Queen Nanny (Nanny of the Maroons)."
+            "question": "Which two British port cities grew rich as major hubs of the Triangular Transatlantic Slave Trade?",
+            "answer": "Liverpool and Bristol",
+            "explanation": "Merchant ships sailed from Liverpool and Bristol carrying manufactured goods to West Africa to trade for captives."
           },
           {
-            "question": "What 1776 document declared that 'all men are created equal' while preserving chattel slavery?",
-            "answer": "The American Declaration of Independence."
+            "question": "What name was given to the brutal eight-week Atlantic Ocean crossing endured by chained African captives?",
+            "answer": "The Middle Passage",
+            "explanation": "Captive Africans endured horrific overcrowding, shackles, and deadly disease below deck on the Middle Passage."
+          },
+          {
+            "question": "Which freed African author published a bestselling autobiography in London in 1789 exposing slavery’s horrors?",
+            "answer": "Olaudah Equiano",
+            "explanation": "Olaudah Equiano’s 1789 narrative galvanized public support across Britain for abolishing the slave trade."
+          },
+          {
+            "question": "Which Asante spiritual and military leader commanded the Windward Maroons in guerrilla warfare in Jamaica?",
+            "answer": "Queen Nanny",
+            "explanation": "Queen Nanny led Windward Maroon fighters in Jamaica’s Blue Mountains, forcing a British peace treaty in 1739."
+          },
+          {
+            "question": "What 1765 parliamentary tax on colonial legal documents and newspapers sparked protests across North America?",
+            "answer": "The Stamp Act",
+            "explanation": "Parliament’s 1765 Stamp Act provoked colonial boycotts and protests against taxation without representation."
+          },
+          {
+            "question": "What famous slogan did American colonists adopt to protest parliamentary taxes imposed without colonial MPs?",
+            "answer": "No taxation without representation",
+            "explanation": "Colonists argued that British subjects could only be taxed with the consent of their elected representatives."
+          },
+          {
+            "question": "During which December 1773 protest did the Sons of Liberty dump 342 chests of tea into Boston Harbour?",
+            "answer": "The Boston Tea Party",
+            "explanation": "Disguised as Mohawks, protesters destroyed £10,000 of East India Company tea in Boston Harbour."
+          },
+          {
+            "question": "What 1776 document drafted by Thomas Jefferson declared that all men are created equal?",
+            "answer": "The Declaration of Independence",
+            "explanation": "Adopted in Philadelphia in July 1776, the Declaration proclaimed American independence from Great Britain."
+          },
+          {
+            "question": "At which October 1781 siege in Virginia did British General Lord Cornwallis surrender eight thousand redcoats?",
+            "answer": "The Siege of Yorktown",
+            "explanation": "Trapped by American armies and a French naval blockade at Yorktown, Cornwallis surrendered on 19 October 1781."
           }
         ]
       },
@@ -681,7 +747,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In 1768, Lieutenant James Cook sailed aboard HMS <em>Endeavour</em> on an Enlightenment voyage funded by the Royal Society. Officially, Cook was tasked with transporting astronomer Joseph Banks to Tahiti to observe the rare transit of Venus across the Sun.</p><p class=\"prose-p\">However, Cook carried locked secret Admiralty orders commanding him to sail south into uncharted Pacific waters. The British Crown ordered Cook to search for the legendary Great Southern Land (<em>Terra Australis</em>) and claim the territory for King George III before rival European empires could discover it.</p>"
         },
         {
           "act": 2,
@@ -726,7 +793,8 @@ export default {
               },
               "id": "aus_l1_src_b"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Navigating the vast Pacific required extraordinary expertise that European charts lacked. In Tahiti, Cook enlisted Tupaia, an Arioi high priest and master navigator whose Indigenous guidance proved indispensable to the British expedition.</p><p class=\"prose-p\">Using traditional Polynesian non-instrument navigation, Tupaia read star movements, oceanic swells, bird flight paths, and cloud reflections to guide the ship safely across treacherous waters. Tupaia drafted an astonishing navigational chart showing over 130 Pacific islands across thousands of miles, while acting as an essential translator when meeting Māori communities in New Zealand.</p>"
         },
         {
           "act": 3,
@@ -771,7 +839,8 @@ export default {
               },
               "id": "aus_l1_src_c"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> In April 1770, the <em>Endeavour</em> anchored in Botany Bay. As British rowing boats approached the shoreline, two Gweagal warriors of the Dharawal nation marched down to confront the strangers, defending their sacred country.</p><p class=\"prose-p\">Following ancient defensive spear protocol, the warriors shouted warnings and brandished weapons to forbid entry. Interpreting this territorial defiance as unprovoked aggression, Cook responded with British musket fire, wounding one warrior in the leg. The Gweagal retreated behind the coastal dunes, leaving the landing party to plant the British flag under armed force.</p>"
         },
         {
           "act": 4,
@@ -819,7 +888,8 @@ export default {
               },
               "id": "aus_l1_src_d"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Cook surveyed the eastern coastline for four months, navigating dangerous coral reefs along the Queensland coast. In August 1770, Cook landed on a rocky Torres Strait island off Cape York that he named Possession Island.</p><p class=\"prose-p\">In full naval uniform, Cook hoisted the Union Jack flag and fired three volleys of musketry to formalise his New South Wales claim for King George III. In doing so, Cook violated his explicit Admiralty instructions, which strictly ordered him to take possession of new territories only with the consent of the native population.</p>"
         },
         {
           "act": 5,
@@ -869,7 +939,8 @@ export default {
               },
               "id": "aus_l1_src_e"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Cook justified seizing the continent by describing First Nations peoples as primitive nomads who did not farm or construct towns. British jurists used these flawed accounts to declare the continent <em>terra nullius</em>—land belonging to nobody.</p><p class=\"prose-p\">Under 18th-century European property law, legal sovereignty required fences, iron ploughs, and permanent towns. Because the British recognized no Indigenous ownership, there were no treaties signed with clan elders. This catastrophic legal fiction initiated over two centuries dispossession, stripping Aboriginal nations of ancestral land, legal sovereignty, and basic human rights.</p>"
         }
       ],
       "quick_quiz": [
@@ -1465,264 +1536,284 @@ export default {
       ],
       "quiz": [
         {
-          "question": "What was the public scientific purpose of Captain Cook’s 1768 Endeavour voyage?",
-          "q": "What was the public scientific purpose of Captain Cook’s 1768 Endeavour voyage?",
+          "stage": 1,
+          "question": "Aboard which ship did Lieutenant James Cook sail on his 1768 Pacific expedition funded by the Royal Society?",
+          "q": "Aboard which ship did Lieutenant James Cook sail on his 1768 Pacific expedition funded by the Royal Society?",
           "options": [
-            "To observe the transit of Venus across the Sun from Tahiti",
-            "To establish a convict penal colony at Sydney Cove",
-            "To find a Northwest Passage across North America",
-            "To wage naval war against Spanish fleets in the Pacific"
-          ],
-          "answer": "To observe the transit of Venus across the Sun from Tahiti",
-          "a": "To observe the transit of Venus across the Sun from Tahiti",
-          "explanation": "The voyage was publicly sponsored by the Royal Society to observe the rare 1769 transit of Venus from Tahiti."
-        },
-        {
-          "question": "What secret orders was Captain Cook given by the British Admiralty?",
-          "q": "What secret orders was Captain Cook given by the British Admiralty?",
-          "options": [
-            "To search for the mythical continent Terra Australis Incognita and claim it for King George III",
-            "To arrest mutineers from the Royal Navy",
-            "To purchase tea directly from Chinese merchants",
-            "To evacuate British loyalists from Boston"
-          ],
-          "answer": "To search for the mythical continent Terra Australis Incognita and claim it for King George III",
-          "a": "To search for the mythical continent Terra Australis Incognita and claim it for King George III",
-          "explanation": "Cook was commanded to sail south in search of the mythical continent Terra Australis Incognita and claim it for King George III."
-        },
-        {
-          "question": "Who was Tupaia, and how did he assist the Endeavour expedition?",
-          "q": "Who was Tupaia, and how did he assist the Endeavour expedition?",
-          "options": [
-            "A Polynesian master navigator who guided the ship using star azimuths and drew a map of 130 islands",
-            "A British naval botanist who collected rare plant specimens at Botany Bay",
-            "A Dharawal warrior who led the defense against British landing boats",
-            "A French explorer who surrendered his Pacific charts to Captain Cook"
-          ],
-          "answer": "A Polynesian master navigator who guided the ship using star azimuths and drew a map of 130 islands",
-          "a": "A Polynesian master navigator who guided the ship using star azimuths and drew a map of 130 islands",
-          "explanation": "Tupaia was a Polynesian high priest whose remarkable navigational knowledge allowed Cook to safely navigate the South Pacific."
-        },
-        {
-          "question": "Where did Captain Cook formally claim the eastern coast of Australia for King George III in August 1770?",
-          "q": "Where did Captain Cook formally claim the eastern coast of Australia for King George III in August 1770?",
-          "options": [
-            "Possession Island in the Torres Strait",
-            "Sydney Cove in Port Jackson",
-            "Botany Bay in New South Wales",
-            "Flinders Island in Bass Strait"
-          ],
-          "answer": "Possession Island in the Torres Strait",
-          "a": "Possession Island in the Torres Strait",
-          "explanation": "Cook hoisted the Union Jack and claimed eastern Australia under the name New South Wales on Possession Island on 22 August 1770."
-        },
-        {
-          "question": "What did the legal doctrine of terra nullius mean in British colonial law?",
-          "q": "What did the legal doctrine of terra nullius mean in British colonial law?",
-          "options": [
-            "That Australia was 'land belonging to nobody', meaning First Nations sovereignty was ignored",
-            "That all convicts had the right to own free land upon arrival",
-            "That the British Crown had to negotiate sovereign treaties before purchasing land",
-            "That Indigenous Australians were recognized as full citizens of the British Empire"
-          ],
-          "answer": "That Australia was 'land belonging to nobody', meaning First Nations sovereignty was ignored",
-          "a": "That Australia was 'land belonging to nobody', meaning First Nations sovereignty was ignored",
-          "explanation": "Terra nullius falsely claimed the continent had no legal owners, denying First Nations people their land rights and legal existence."
-        },
-        {
-          "question": "Which overhauled Whitby coal bark did Lieutenant James Cook sail aboard from Plymouth in August 1768?",
-          "q": "Which overhauled Whitby coal bark did Lieutenant James Cook sail aboard from Plymouth in August 1768?",
-          "options": [
+            "HMS Warrior",
             "HMS Endeavour",
-            "HMS Sirius",
-            "HMS Supply",
-            "HMS Bounty"
+            "HMS Guardian",
+            "HMS Dreadnought"
           ],
           "answer": "HMS Endeavour",
           "a": "HMS Endeavour",
-          "explanation": "Cook sailed from Plymouth aboard the HMS Endeavour, an overhauled Whitby coal bark."
+          "explanation": "In 1768, Lieutenant James Cook sailed aboard HMS Endeavour on a scientific and imperial voyage into the Pacific."
         },
         {
-          "question": "Which wealthy young botanist accompanied Lieutenant James Cook on the Endeavour expedition to Tahiti?",
-          "q": "Which wealthy young botanist accompanied Lieutenant James Cook on the Endeavour expedition to Tahiti?",
+          "stage": 1,
+          "question": "What rare astronomical phenomenon at Tahiti was Captain Cook’s 1768 voyage publicly sent to observe?",
+          "q": "What rare astronomical phenomenon at Tahiti was Captain Cook’s 1768 voyage publicly sent to observe?",
           "options": [
-            "Sir Joseph Banks",
-            "William Bligh",
+            "Transit of Venus across the Sun",
+            "Halley’s Comet passing Mars",
+            "A total lunar eclipse",
+            "Aurora Australis lights"
+          ],
+          "answer": "Transit of Venus across the Sun",
+          "a": "Transit of Venus across the Sun",
+          "explanation": "Publicly, the Royal Society funded Cook’s voyage to observe the rare transit of Venus across the Sun from Tahiti."
+        },
+        {
+          "stage": 1,
+          "question": "Which scientific figure accompanied Lieutenant James Cook to Tahiti aboard HMS Endeavour in 1768?",
+          "q": "Which scientific figure accompanied Lieutenant James Cook to Tahiti aboard HMS Endeavour in 1768?",
+          "options": [
             "Arthur Phillip",
-            "Charles Darwin"
+            "George Gipps",
+            "Edward Hargraves",
+            "Joseph Banks"
           ],
-          "answer": "Sir Joseph Banks",
-          "a": "Sir Joseph Banks",
-          "explanation": "Cook transported wealthy young botanist Sir Joseph Banks to Tahiti to observe the rare transit of Venus."
+          "answer": "Joseph Banks",
+          "a": "Joseph Banks",
+          "explanation": "Joseph Banks accompanied Cook to Tahiti to record astronomical observations and Pacific natural history."
         },
         {
-          "question": "Which latitude was Cook commanded by secret Admiralty instructions to sail south towards in search of Terra Australis Incognita?",
-          "q": "Which latitude was Cook commanded by secret Admiralty instructions to sail south towards in search of Terra Australis Incognita?",
+          "stage": 1,
+          "question": "What locked instructions ordered Cook to sail south and claim the Great Southern Land for King George III?",
+          "q": "What locked instructions ordered Cook to sail south and claim the Great Southern Land for King George III?",
           "options": [
-            "40 degrees latitude",
-            "10 degrees latitude",
-            "60 degrees latitude",
-            "25 degrees latitude"
+            "Proclamation of 1763",
+            "Treaty of Allahabad",
+            "Secret Admiralty orders",
+            "People’s Charter"
           ],
-          "answer": "40 degrees latitude",
-          "a": "40 degrees latitude",
-          "explanation": "Cook was commanded to sail south to 40 degrees latitude in search of the mythical continent Terra Australis Incognita."
+          "answer": "Secret Admiralty orders",
+          "a": "Secret Admiralty orders",
+          "explanation": "Cook carried secret Admiralty orders instructing him to search for Terra Australis and claim it for King George III."
         },
         {
-          "question": "From which Pacific island was the master Polynesian navigator Tupaia originally from?",
-          "q": "From which Pacific island was the master Polynesian navigator Tupaia originally from?",
+          "stage": 2,
+          "question": "Which Arioi high priest and master navigator joined the Endeavour in Tahiti to guide the ship across the Pacific?",
+          "q": "Which Arioi high priest and master navigator joined the Endeavour in Tahiti to guide the ship across the Pacific?",
           "options": [
-            "Raiatea",
-            "Fiji",
-            "Hawaii",
-            "Tonga"
+            "Bennelong",
+            "Tupaia",
+            "Pemulwuy",
+            "Truganini"
           ],
-          "answer": "Raiatea",
-          "a": "Raiatea",
-          "explanation": "Tupaia was a revered Arioi high priest and master navigator from the island of Raiatea."
+          "answer": "Tupaia",
+          "a": "Tupaia",
+          "explanation": "In Tahiti, Cook enlisted Tupaia, an Arioi high priest and master navigator whose guidance proved indispensable."
         },
         {
-          "question": "How many Pacific islands did Tupaia map on his astonishing navigational chart?",
-          "q": "How many Pacific islands did Tupaia map on his astonishing navigational chart?",
+          "stage": 2,
+          "question": "More than how many Pacific islands did Tupaia map on his remarkable navigational chart?",
+          "q": "More than how many Pacific islands did Tupaia map on his remarkable navigational chart?",
           "options": [
-            "More than 130 islands",
+            "Over 130 islands",
             "Exactly 12 islands",
-            "500 islands",
-            "20 islands"
+            "Around 25 islands",
+            "Fewer than 50 islands"
           ],
-          "answer": "More than 130 islands",
-          "a": "More than 130 islands",
-          "explanation": "Tupaia drew an astonishing chart displaying more than 130 islands across 3,000 miles of the Pacific."
+          "answer": "Over 130 islands",
+          "a": "Over 130 islands",
+          "explanation": "Tupaia drew a remarkable navigational chart mapping more than 130 islands across thousands of miles of the Pacific."
         },
         {
-          "question": "Which Indigenous people in New Zealand understood Tupaia's Tahitian speech, preventing violent clashes?",
-          "q": "Which Indigenous people in New Zealand understood Tupaia's Tahitian speech, preventing violent clashes?",
+          "stage": 2,
+          "question": "What traditional Polynesian technique reading stars, swells, and bird flight paths did Tupaia use to guide the Endeavour?",
+          "q": "What traditional Polynesian technique reading stars, swells, and bird flight paths did Tupaia use to guide the Endeavour?",
           "options": [
-            "The Māori",
-            "The Palawa",
-            "The Dharawal",
-            "The Eora"
+            "Magnetic compass triangulation",
+            "Steam sextant telemetry",
+            "Chronometer telegraphy",
+            "Non-instrument navigation"
           ],
-          "answer": "The Māori",
-          "a": "The Māori",
-          "explanation": "Tupaia spoke Tahitian which the Māori immediately understood, preventing countless violent clashes."
+          "answer": "Non-instrument navigation",
+          "a": "Non-instrument navigation",
+          "explanation": "Using Polynesian non-instrument navigation, Tupaia read stars, ocean swells, bird paths, and cloud reflections."
         },
         {
-          "question": "Which nation of First Nations warriors defended their country at Botany Bay when Cook's pinnace approached the shore?",
-          "q": "Which nation of First Nations warriors defended their country at Botany Bay when Cook's pinnace approached the shore?",
+          "stage": 2,
+          "question": "With which Indigenous people in New Zealand did Tupaia act as an indispensable cultural diplomat and translator?",
+          "q": "With which Indigenous people in New Zealand did Tupaia act as an indispensable cultural diplomat and translator?",
           "options": [
-            "The Dharawal nation",
-            "The Palawa nation",
-            "The Wirrayaraay nation",
-            "The Yolngu nation"
+            "Palawa",
+            "Taíno",
+            "Māori",
+            "Mohawks"
           ],
-          "answer": "The Dharawal nation",
-          "a": "The Dharawal nation",
-          "explanation": "Two Gweagal warriors of the Dharawal nation marched down to the water’s edge to defend their sacred country."
+          "answer": "Māori",
+          "a": "Māori",
+          "explanation": "When the Endeavour reached New Zealand, Tupaia communicated directly with Māori communities, preventing violent clashes."
         },
         {
-          "question": "What Dharawal phrase meaning 'go away' did Gweagal warriors shout at Cook's landing party?",
-          "q": "What Dharawal phrase meaning 'go away' did Gweagal warriors shout at Cook's landing party?",
+          "stage": 3,
+          "question": "In which bay on Australia’s east coast did the Endeavour drop anchor in April 1770?",
+          "q": "In which bay on Australia’s east coast did the Endeavour drop anchor in April 1770?",
           "options": [
-            "'Walla walla ma!'",
-            "'Koorie!'",
-            "'Ngunnawal!'",
-            "'Marrickville!'"
+            "Risdon Cove",
+            "Botany Bay",
+            "Chesapeake Bay",
+            "Port Phillip"
           ],
-          "answer": "'Walla walla ma!'",
-          "a": "'Walla walla ma!'",
-          "explanation": "The warriors shook their wooden spears and shouted 'Walla walla ma!' (go away)."
+          "answer": "Botany Bay",
+          "a": "Botany Bay",
+          "explanation": "In April 1770, Cook anchored the Endeavour in Botany Bay before attempting to come ashore."
         },
         {
-          "question": "What defensive object did Gweagal warriors leave behind after Cook fired his musket and wounded a warrior?",
-          "q": "What defensive object did Gweagal warriors leave behind after Cook fired his musket and wounded a warrior?",
+          "stage": 3,
+          "question": "Two warriors from which clan of the Dharawal nation confronted Cook’s landing boats at Botany Bay?",
+          "q": "Two warriors from which clan of the Dharawal nation confronted Cook’s landing boats at Botany Bay?",
           "options": [
-            "A pierced bark shield",
-            "An iron boomerang",
-            "A carved stone axe",
-            "A kangaroo-skin cloak"
+            "Gweagal warriors",
+            "Palawa warriors",
+            "Wirrayaraay warriors",
+            "Nuenonne warriors"
           ],
-          "answer": "A pierced bark shield",
-          "a": "A pierced bark shield",
-          "explanation": "The warriors retreated behind the dunes, leaving behind a pierced bark shield."
+          "answer": "Gweagal warriors",
+          "a": "Gweagal warriors",
+          "explanation": "As British boats approached Botany Bay, two Gweagal warriors marched down to defend their sacred country."
         },
         {
-          "question": "What natural hazard nearly wrecked the Endeavour during Cook's four-month voyage north along the coastline?",
-          "q": "What natural hazard nearly wrecked the Endeavour during Cook's four-month voyage north along the coastline?",
+          "stage": 3,
+          "question": "To which First Nations nation did the two Gweagal warriors defending Botany Bay belong?",
+          "q": "To which First Nations nation did the two Gweagal warriors defending Botany Bay belong?",
           "options": [
-            "The Great Barrier Reef",
-            "A volcanic eruption",
-            "A mid-ocean iceberg",
-            "A Spanish fleet ambush"
+            "Asante nation",
+            "Yorta Yorta nation",
+            "Iroquois nation",
+            "Dharawal nation"
           ],
-          "answer": "The Great Barrier Reef",
-          "a": "The Great Barrier Reef",
-          "explanation": "Cook sailed north along 2,000 miles of coastline, nearly wrecking the Endeavour when its hull struck coral on the Great Barrier Reef."
+          "answer": "Dharawal nation",
+          "a": "Dharawal nation",
+          "explanation": "The two Gweagal warriors belonged to the Dharawal nation whose ancestral country encompassed Botany Bay."
         },
         {
-          "question": "What British name did Cook assign to the eastern seaboard of Australia when he claimed it on Possession Island?",
-          "q": "What British name did Cook assign to the eastern seaboard of Australia when he claimed it on Possession Island?",
+          "stage": 3,
+          "question": "How did Captain Cook respond when the two Gweagal warriors brandished spears to forbid British landing at Botany Bay?",
+          "q": "How did Captain Cook respond when the two Gweagal warriors brandished spears to forbid British landing at Botany Bay?",
+          "options": [
+            "Signed a formal land treaty",
+            "Retreated immediately to Tahiti",
+            "Musket fire, wounding one warrior in the leg",
+            "Offered thirty-acre land grants"
+          ],
+          "answer": "Musket fire, wounding one warrior in the leg",
+          "a": "Musket fire, wounding one warrior in the leg",
+          "explanation": "Interpreting defensive protocol as hostility, Cook fired his musket and wounded one Gweagal warrior in the leg."
+        },
+        {
+          "stage": 4,
+          "question": "On which Torres Strait island off Cape York did Captain Cook hoist the Union Jack in August 1770?",
+          "q": "On which Torres Strait island off Cape York did Captain Cook hoist the Union Jack in August 1770?",
+          "options": [
+            "Norfolk Island",
+            "Possession Island",
+            "Flinders Island",
+            "Bruny Island"
+          ],
+          "answer": "Possession Island",
+          "a": "Possession Island",
+          "explanation": "In August 1770, Cook landed on Possession Island off Cape York to claim the eastern coast for King George III."
+        },
+        {
+          "stage": 4,
+          "question": "What name did Captain Cook give to the eastern coast of Australia when claiming it for King George III?",
+          "q": "What name did Captain Cook give to the eastern coast of Australia when claiming it for King George III?",
           "options": [
             "New South Wales",
-            "Van Diemen's Land",
-            "Victoria",
-            "Queensland"
+            "Van Diemen’s Land",
+            "Nova Scotia",
+            "Westralia"
           ],
           "answer": "New South Wales",
           "a": "New South Wales",
-          "explanation": "Cook declared the eastern seaboard to be the sovereign possession of King George III under the name New South Wales."
+          "explanation": "On Possession Island, Cook hoisted the Union Jack and claimed the eastern coastline under the name New South Wales."
         },
         {
-          "question": "What condition in his Admiralty instructions did Cook violate when he claimed the continent without consulting Indigenous elders?",
-          "q": "What condition in his Admiralty instructions did Cook violate when he claimed the continent without consulting Indigenous elders?",
+          "stage": 4,
+          "question": "How many volleys of musketry did Cook’s party fire after raising the Union Jack on Possession Island?",
+          "q": "How many volleys of musketry did Cook’s party fire after raising the Union Jack on Possession Island?",
           "options": [
-            "'with the consent of the natives'",
-            "To pay £10,000 in silver coins",
-            "To build a stone cathedral",
-            "To return to Plymouth immediately"
+            "Ten cannon broadsides",
+            "One single pistol shot",
+            "Twenty-one gun salutes",
+            "Three volleys of musketry"
           ],
-          "answer": "'with the consent of the natives'",
-          "a": "'with the consent of the natives'",
-          "explanation": "Cook violated his explicit Admiralty instructions, which had commanded him to take possession 'with the consent of the natives'."
+          "answer": "Three volleys of musketry",
+          "a": "Three volleys of musketry",
+          "explanation": "Dressed in full naval uniform, Cook hoisted the Union Jack and fired three volleys of musketry to formalise his claim."
         },
         {
-          "question": "What agricultural technique did First Nations peoples practice to manage grassland ecology instead of European plowing?",
-          "q": "What agricultural technique did First Nations peoples practice to manage grassland ecology instead of European plowing?",
+          "stage": 4,
+          "question": "What explicit requirement in his Admiralty instructions did Cook violate when claiming New South Wales unilaterally?",
+          "q": "What explicit requirement in his Admiralty instructions did Cook violate when claiming New South Wales unilaterally?",
           "options": [
-            "Fire-stick farming",
-            "Deep-trench irrigation",
-            "Crop rotation",
-            "Terrace gardening"
+            "Approval from the Pope",
+            "Payment in silver ingots",
+            "Consent of the natives",
+            "Ratification by France"
           ],
-          "answer": "Fire-stick farming",
-          "a": "Fire-stick farming",
-          "explanation": "First Nations people practiced subtle environmental fire-stick farming rather than European agriculture."
+          "answer": "Consent of the natives",
+          "a": "Consent of the natives",
+          "explanation": "Admiralty instructions ordered Cook to take possession only with the consent of the native population, which he ignored."
         },
         {
-          "question": "How many Indigenous people did the British legal doctrine of terra nullius strip of their sovereign existence and rights?",
-          "q": "How many Indigenous people did the British legal doctrine of terra nullius strip of their sovereign existence and rights?",
+          "stage": 5,
+          "question": "What Latin legal fiction meaning \"land belonging to nobody\" did British jurists use to justify seizing Australia?",
+          "q": "What Latin legal fiction meaning \"land belonging to nobody\" did British jurists use to justify seizing Australia?",
           "options": [
-            "Over 500,000",
-            "Under 1,000",
-            "Exactly 5,000",
-            "50,000"
+            "Habeas corpus",
+            "Terra nullius",
+            "Vernichtungskrieg",
+            "Laissez-faire"
           ],
-          "answer": "Over 500,000",
-          "a": "Over 500,000",
-          "explanation": "Terra nullius stripped over 500,000 Indigenous people of their legal existence, leaving them without sovereign rights."
+          "answer": "Terra nullius",
+          "a": "Terra nullius",
+          "explanation": "British jurists declared Australia terra nullius—land belonging to nobody—denying First Nations land ownership."
         },
         {
-          "question": "What European concept of property ownership did British jurists demand before recognizing sovereign land rights?",
-          "q": "What European concept of property ownership did British jurists demand before recognizing sovereign land rights?",
+          "stage": 5,
+          "question": "How did Captain Cook inaccurately describe First Nations peoples to justify claiming their inhabited continent?",
+          "q": "How did Captain Cook inaccurately describe First Nations peoples to justify claiming their inhabited continent?",
           "options": [
-            "Enclosed fields with fences",
-            "Nomadic hunter-gatherer paths",
-            "Oral songlines",
-            "Sacred rock art"
+            "Primitive nomads",
+            "Feudal plantation lords",
+            "Maritime treaty allies",
+            "Industrial ironmasters"
           ],
-          "answer": "Enclosed fields with fences",
-          "a": "Enclosed fields with fences",
-          "explanation": "Under European theory, sovereignty was recognized only if people cultivated soil with iron plows and enclosed fields with fences."
+          "answer": "Primitive nomads",
+          "a": "Primitive nomads",
+          "explanation": "Cook portrayed First Nations Australians as primitive nomads without permanent towns or attachment to property."
+        },
+        {
+          "stage": 5,
+          "question": "Because Britain declared Australia terra nullius, how many treaties were signed with Indigenous clan elders?",
+          "q": "Because Britain declared Australia terra nullius, how many treaties were signed with Indigenous clan elders?",
+          "options": [
+            "Twelve regional treaties",
+            "Fifty coastal treaties",
+            "Two hundred clan treaties",
+            "No treaties signed"
+          ],
+          "answer": "No treaties signed",
+          "a": "No treaties signed",
+          "explanation": "Unlike in North America or New Zealand, British authorities signed no treaties with Australian First Nations peoples."
+        },
+        {
+          "stage": 5,
+          "question": "Under 18th-century European property law, what visible features did jurists claim were necessary to prove sovereignty?",
+          "q": "Under 18th-century European property law, what visible features did jurists claim were necessary to prove sovereignty?",
+          "options": [
+            "Songlines and sacred sites",
+            "Seasonal fire-stick pastures",
+            "Fences and permanent towns",
+            "Navigational star charts"
+          ],
+          "answer": "Fences and permanent towns",
+          "a": "Fences and permanent towns",
+          "explanation": "European property theory recognized ownership only where land was enclosed with fences, tilled with ploughs, and settled with permanent towns."
         }
       ]
     },
@@ -1773,7 +1864,8 @@ export default {
             "tag": "⛓️ PRISON HULKS",
             "trigger": "After losing the Thirteen American Colonies in 1783, Britain could no longer transport convicts across the Atlantic, packing thousands of prisoners into filthy, rotting prison hulks along the River Thames.",
             "connective": "Created an unbearable overcrowding and disease crisis in London, forcing the British government to seek a remote penal colony on the other side of the globe.",
-            "question": "Why did the loss of the American colonies force Britain to establish a penal colony in Australia?"
+            "question": "Why did losing America in 1783 lead Britain to send convicts to Botany Bay?",
+            "prose_hash": "765bc2a337"
           },
           {
             "step": 2,
@@ -1783,7 +1875,8 @@ export default {
             "tag": "🚢 THE FIRST FLEET",
             "trigger": "Captain Arthur Phillip assembled 11 sailing ships at Portsmouth carrying roughly 750 convicts, 250 Royal Marines, and two years of salted rations, sailing 15,000 miles via Tenerife, Rio, and Cape Town.",
             "connective": "Executed one of history’s greatest maritime logistical feats, arriving at Botany Bay in January 1788 with remarkably low mortality (under 50 deaths during the eight-month crossing).",
-            "question": "How did Captain Arthur Phillip manage the 15,000-mile voyage of the First Fleet?"
+            "question": "How did Arthur Phillip keep convict deaths low on the First Fleet voyage?",
+            "prose_hash": "ac046b1f9f"
           },
           {
             "step": 3,
@@ -1793,7 +1886,8 @@ export default {
             "tag": "⚓ SYDNEY COVE",
             "trigger": "Finding Botany Bay exposed to heavy ocean surf and lacking fresh water, Phillip relocated the fleet eight miles north to Port Jackson, raising the Union Jack at Sydney Cove beside a clear freshwater stream.",
             "connective": "Founded the permanent settlement of Sydney, clearing ancient eucalyptus woodland to build crude wattle-and-daub huts, tents, and blacksmith forges.",
-            "question": "Why did Governor Phillip abandon Botany Bay and establish the settlement at Sydney Cove?"
+            "question": "Why did Phillip move the 1788 settlement from Botany Bay to Sydney Cove?",
+            "prose_hash": "b777b85cee"
           },
           {
             "step": 4,
@@ -1803,7 +1897,8 @@ export default {
             "tag": "🌾 STARVATION CRISIS",
             "trigger": "Poor sandy soil, blistering heat, broken farming tools, and the shipwreck of the supply ship HMS Guardian reduced the colony to near-starvation, cutting weekly flour rations to just two pounds per person.",
             "connective": "Pushed the penal settlement to the absolute brink of total collapse, forcing Phillip to send 200 convicts to Norfolk Island to harvest wild seabirds and pine timber.",
-            "question": "What factors pushed the early settlement at Sydney Cove to the brink of starvation?"
+            "question": "Why did the new penal colony nearly starve during its first two years?",
+            "prose_hash": "ffe512aa22"
           },
           {
             "step": 5,
@@ -1813,7 +1908,8 @@ export default {
             "tag": "🔨 THE CAT-O'-NINE-TAILS",
             "trigger": "Convicts worked from dawn to dusk clearing forests and cutting sandstone under threat of 50 to 500 lashes from the cat-o'-nine-tails, but those who served their terms could earn land grants as free 'emancipists'.",
             "connective": "Demonstrated the dual nature of transportation as both brutal physical terror and a pathway to social reinvention, transforming convicts into Australia’s first free colonial farmers.",
-            "question": "How did the system of convict labour balance severe punishment with the prospect of freedom?"
+            "question": "How did Phillip combine harsh punishments with land grants for convicts?",
+            "prose_hash": "566e76d65e"
           }
         ]
       },
@@ -1822,13 +1918,13 @@ export default {
           "step": 1,
           "para_ref": "[2.1]",
           "date": "1783–1786",
-          "heading": "Why did the loss of the American colonies force Britain to establish a penal colony in Australia?",
+          "heading": "Why did losing America in 1783 lead Britain to send convicts to Botany Bay?",
           "bullets": [
             "Loss of American Colonies",
             "Rotting Thames Hulks",
             "Typhus & Overcrowding"
           ],
-          "focus_clue": "How did the end of the American Revolutionary War in 1783 precipitate an unprecedented crisis in British prisons?",
+          "focus_clue": "Why did losing America in 1783 lead Britain to send convicts to Botany Bay?",
           "words": [
             {
               "term": "Loss of American Colonies",
@@ -1845,20 +1941,24 @@ export default {
           ],
           "model_sentence": "Following the <strong>loss of American colonies</strong>, British prisons overflowed into <strong>rotting Thames hulks</strong> where fatal <strong>typhus & overcrowding</strong> forced the government to establish an Australian penal colony.",
           "modelSentence": "Following the <strong>loss of American colonies</strong>, British prisons overflowed into <strong>rotting Thames hulks</strong> where fatal <strong>typhus & overcrowding</strong> forced the government to establish an Australian penal colony.",
-          "title": "Why did the loss of the American colonies force Britain to establish a penal colony in Australia?",
-          "dates": "1783–1786"
+          "title": "The Loss of America & The Thames Prison Hulks",
+          "dates": "1783–1786",
+          "question": "Why did losing America in 1783 lead Britain to send convicts to Botany Bay?",
+          "questionHeading": "Why did losing America in 1783 lead Britain to send convicts to Botany Bay?",
+          "focusClue": "Why did losing America in 1783 lead Britain to send convicts to Botany Bay?",
+          "prose_hash": "765bc2a337"
         },
         {
           "step": 2,
           "para_ref": "[2.2]",
           "date": "1787–1788",
-          "heading": "How did Captain Arthur Phillip manage the 15,000-mile voyage of the First Fleet?",
+          "heading": "How did Arthur Phillip keep convict deaths low on the First Fleet voyage?",
           "bullets": [
             "11 Sailing Ships",
             "750 Convicts & 250 Marines",
             "15,000 Miles via Cape Town"
           ],
-          "focus_clue": "What health and hygiene measures did Governor Phillip enforce to ensure remarkably low mortality during the eight-month crossing?",
+          "focus_clue": "How did Arthur Phillip keep convict deaths low on the First Fleet voyage?",
           "words": [
             {
               "term": "11 Sailing Ships",
@@ -1875,20 +1975,24 @@ export default {
           ],
           "model_sentence": "Commanding <strong>11 sailing ships</strong> carrying <strong>750 convicts & 250 marines</strong>, Captain Arthur Phillip navigated <strong>15,000 miles via Cape Town</strong> to reach Botany Bay.",
           "modelSentence": "Commanding <strong>11 sailing ships</strong> carrying <strong>750 convicts & 250 marines</strong>, Captain Arthur Phillip navigated <strong>15,000 miles via Cape Town</strong> to reach Botany Bay.",
-          "title": "How did Captain Arthur Phillip manage the 15,000-mile voyage of the First Fleet?",
-          "dates": "1787–1788"
+          "title": "Outfitting the First Fleet & The 15,000-Mile Voyage",
+          "dates": "1787–1788",
+          "question": "How did Arthur Phillip keep convict deaths low on the First Fleet voyage?",
+          "questionHeading": "How did Arthur Phillip keep convict deaths low on the First Fleet voyage?",
+          "focusClue": "How did Arthur Phillip keep convict deaths low on the First Fleet voyage?",
+          "prose_hash": "ac046b1f9f"
         },
         {
           "step": 3,
           "para_ref": "[2.3]",
           "date": "Jan 1788",
-          "heading": "Why did Governor Phillip abandon Botany Bay and establish the settlement at Sydney Cove?",
+          "heading": "Why did Phillip move the 1788 settlement from Botany Bay to Sydney Cove?",
           "bullets": [
             "Unprotected Botany Bay",
             "Port Jackson Deep Water",
             "Fresh Water Stream"
           ],
-          "focus_clue": "Why was Port Jackson considered by Phillip to be 'the finest harbour in the world', and why was Botany Bay unsuited for a town?",
+          "focus_clue": "Why did Phillip move the 1788 settlement from Botany Bay to Sydney Cove?",
           "words": [
             {
               "term": "Unprotected Botany Bay",
@@ -1905,20 +2009,24 @@ export default {
           ],
           "model_sentence": "Rejecting <strong>unprotected Botany Bay</strong>, Phillip discovered <strong>Port Jackson deep water</strong> and founded Sydney Cove beside a clean <strong>fresh water stream</strong>.",
           "modelSentence": "Rejecting <strong>unprotected Botany Bay</strong>, Phillip discovered <strong>Port Jackson deep water</strong> and founded Sydney Cove beside a clean <strong>fresh water stream</strong>.",
-          "title": "Why did Governor Phillip abandon Botany Bay and establish the settlement at Sydney Cove?",
-          "dates": "Jan 1788"
+          "title": "Landing at Sydney Cove & Rejecting Botany Bay",
+          "dates": "Jan 1788",
+          "question": "Why did Phillip move the 1788 settlement from Botany Bay to Sydney Cove?",
+          "questionHeading": "Why did Phillip move the 1788 settlement from Botany Bay to Sydney Cove?",
+          "focusClue": "Why did Phillip move the 1788 settlement from Botany Bay to Sydney Cove?",
+          "prose_hash": "b777b85cee"
         },
         {
           "step": 4,
           "para_ref": "[2.4]",
           "date": "1788–1790",
-          "heading": "What factors pushed the early settlement at Sydney Cove to the brink of starvation?",
+          "heading": "Why did the new penal colony nearly starve during its first two years?",
           "bullets": [
             "Sandy Unproductive Soil",
             "Broken Farming Hoes",
             "Shipwreck of HMS Guardian"
           ],
-          "focus_clue": "How did British ignorance of Australian soils and native plants almost cause the entire settlement to starve to death?",
+          "focus_clue": "Why did the new penal colony nearly starve during its first two years?",
           "words": [
             {
               "term": "Sandy Unproductive Soil",
@@ -1935,20 +2043,24 @@ export default {
           ],
           "model_sentence": "Beset by <strong>sandy unproductive soil</strong> and <strong>broken farming hoes</strong>, the colony faced starvation when the <strong>shipwreck of HMS Guardian</strong> destroyed vital food supplies.",
           "modelSentence": "Beset by <strong>sandy unproductive soil</strong> and <strong>broken farming hoes</strong>, the colony faced starvation when the <strong>shipwreck of HMS Guardian</strong> destroyed vital food supplies.",
-          "title": "What factors pushed the early settlement at Sydney Cove to the brink of starvation?",
-          "dates": "1788–1790"
+          "title": "Starvation Years & The Ordeal of the Guardian",
+          "dates": "1788–1790",
+          "question": "Why did the new penal colony nearly starve during its first two years?",
+          "questionHeading": "Why did the new penal colony nearly starve during its first two years?",
+          "focusClue": "Why did the new penal colony nearly starve during its first two years?",
+          "prose_hash": "ffe512aa22"
         },
         {
           "step": 5,
           "para_ref": "[2.5]",
           "date": "1788–1792",
-          "heading": "How did the system of convict labour balance severe punishment with the prospect of freedom?",
+          "heading": "How did Phillip combine harsh punishments with land grants for convicts?",
           "bullets": [
             "Dawn-to-Dusk Labour",
             "Cat-o'-Nine-Tails Lash",
             "30-Acre Land Grants"
           ],
-          "focus_clue": "How did the opportunity to become an 'emancipist' transform petty thieves and farm labourers into permanent Australian landowners?",
+          "focus_clue": "How did Phillip combine harsh punishments with land grants for convicts?",
           "words": [
             {
               "term": "Dawn-to-Dusk Labour",
@@ -1965,33 +2077,78 @@ export default {
           ],
           "model_sentence": "While convicts endured <strong>dawn-to-dusk labour</strong> under threat of the <strong>cat-o'-nine-tails lash</strong>, exemplary conduct was rewarded with <strong>30-acre land grants</strong> as free emancipists.",
           "modelSentence": "While convicts endured <strong>dawn-to-dusk labour</strong> under threat of the <strong>cat-o'-nine-tails lash</strong>, exemplary conduct was rewarded with <strong>30-acre land grants</strong> as free emancipists.",
-          "title": "How did the system of convict labour balance severe punishment with the prospect of freedom?",
-          "dates": "1788–1792"
+          "title": "Convict Life: The Lash, Forced Labour & Emancipists",
+          "dates": "1788–1792",
+          "question": "How did Phillip combine harsh punishments with land grants for convicts?",
+          "questionHeading": "How did Phillip combine harsh punishments with land grants for convicts?",
+          "focusClue": "How did Phillip combine harsh punishments with land grants for convicts?",
+          "prose_hash": "566e76d65e"
         }
       ],
       "did_you_know": "The majority of the 750 convicts aboard the First Fleet were not violent murderers, but impoverished teenagers and young adults sentenced under Britain’s savage 'Bloody Code'. Fourteen-year-old John Hudson was sentenced to seven years’ transportation for stealing a pair of linen trousers and 37 pence, while Mary Wade, an 11-year-old London girl, was convicted of highway robbery for stealing an 8-penny cotton frock and spent 10 months in Newgate prison before being exiled to Australia!",
       "do_now": {
         "type": "questions",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What public scientific reason was given for Captain Cook’s 1768 Endeavour voyage?",
-            "answer": "To observe the transit of Venus across the Sun in Tahiti."
+            "stage": 1,
+            "question": "Aboard which ship did Lieutenant James Cook sail on his 1768 Pacific expedition funded by the Royal Society?",
+            "answer": "HMS Endeavour",
+            "explanation": "In 1768, Lieutenant James Cook sailed aboard HMS Endeavour on a scientific and imperial voyage into the Pacific."
           },
           {
-            "question": "What secret instructions did Cook carry from the British Admiralty?",
-            "answer": "To locate the Great Southern Land and claim it for King George III."
+            "stage": 2,
+            "question": "Which Arioi high priest and master navigator joined the Endeavour in Tahiti to guide the ship across the Pacific?",
+            "answer": "Tupaia",
+            "explanation": "In Tahiti, Cook enlisted Tupaia, an Arioi high priest and master navigator whose guidance proved indispensable."
           },
           {
-            "question": "Who was the Polynesian navigator who guided the Endeavour across thousands of miles of ocean?",
-            "answer": "Tupaia."
+            "stage": 3,
+            "question": "In which bay on Australia’s east coast did the Endeavour drop anchor in April 1770?",
+            "answer": "Botany Bay",
+            "explanation": "In April 1770, Cook anchored the Endeavour in Botany Bay before attempting to come ashore."
           },
           {
-            "question": "Which Indigenous clan did Cook encounter on the shores of Botany Bay in April 1770?",
-            "answer": "The Gweagal clan (of the Dharawal nation)."
+            "stage": 4,
+            "question": "On which Torres Strait island off Cape York did Captain Cook hoist the Union Jack in August 1770?",
+            "answer": "Possession Island",
+            "explanation": "In August 1770, Cook landed on Possession Island off Cape York to claim the eastern coast for King George III."
           },
           {
-            "question": "What legal fiction did Britain use to justify claiming Australia without signing a treaty?",
-            "answer": "Terra nullius (land belonging to nobody)."
+            "stage": 5,
+            "question": "What Latin legal fiction meaning \"land belonging to nobody\" did British jurists use to justify seizing Australia?",
+            "answer": "Terra nullius",
+            "explanation": "British jurists declared Australia terra nullius—land belonging to nobody—denying First Nations land ownership."
+          },
+          {
+            "stage": 1,
+            "question": "What rare astronomical phenomenon at Tahiti was Captain Cook’s 1768 voyage publicly sent to observe?",
+            "answer": "Transit of Venus across the Sun",
+            "explanation": "Publicly, the Royal Society funded Cook’s voyage to observe the rare transit of Venus across the Sun from Tahiti."
+          },
+          {
+            "stage": 2,
+            "question": "More than how many Pacific islands did Tupaia map on his remarkable navigational chart?",
+            "answer": "Over 130 islands",
+            "explanation": "Tupaia drew a remarkable navigational chart mapping more than 130 islands across thousands of miles of the Pacific."
+          },
+          {
+            "stage": 3,
+            "question": "Two warriors from which clan of the Dharawal nation confronted Cook’s landing boats at Botany Bay?",
+            "answer": "Gweagal warriors",
+            "explanation": "As British boats approached Botany Bay, two Gweagal warriors marched down to defend their sacred country."
+          },
+          {
+            "stage": 4,
+            "question": "What name did Captain Cook give to the eastern coast of Australia when claiming it for King George III?",
+            "answer": "New South Wales",
+            "explanation": "On Possession Island, Cook hoisted the Union Jack and claimed the eastern coastline under the name New South Wales."
+          },
+          {
+            "stage": 5,
+            "question": "How did Captain Cook inaccurately describe First Nations peoples to justify claiming their inhabited continent?",
+            "answer": "Primitive nomads",
+            "explanation": "Cook portrayed First Nations Australians as primitive nomads without permanent towns or attachment to property."
           }
         ]
       },
@@ -2103,7 +2260,8 @@ export default {
               },
               "id": "aus_l2_src_a"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> For decades, Britain transported thousands of convicted felons to work on American plantations. However, the loss of American colonies after the 1783 War of Independence abruptly closed this transatlantic penal outlet, creating an acute prison crisis across Britain.</p><p class=\"prose-p\">Under the harsh Bloody Code, British county jails overflowed with minor property offenders. Parliament converted rotting Thames hulks into floating prisons, where convicts suffered horrific typhus & overcrowding in disease-ridden holds. Desperate to relieve London’s crowded river hulks, Prime Minister William Pitt decided to establish a distant penal colony at Botany Bay.</p>"
         },
         {
           "act": 2,
@@ -2151,7 +2309,8 @@ export default {
               },
               "id": "aus_l2_src_b"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> In May 1787, Captain Arthur Phillip was appointed Governor of New South Wales and commanded to assemble the First Fleet. Phillip prepared a convoy of 11 sailing ships carrying over 750 convicts & 250 marines to guard them.</p><p class=\"prose-p\">The expedition sailed an arduous 15,000 miles via Cape Town and Rio de Janeiro across treacherous, uncharted oceans over eight months. Through Phillip’s strict hygiene, clean drinking water, and ventilation standards, fewer than fifty convicts died during the voyage—an astonishing maritime achievement for eighteenth-century navigation.</p>"
         },
         {
           "act": 3,
@@ -2196,7 +2355,8 @@ export default {
               },
               "id": "aus_l2_src_c"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> In January 1788, the fleet reached its destination. Phillip was dismayed to discover an open, unprotected Botany Bay offering swampy land, shallow anchorages, and no reliable river for a permanent settlement.</p><p class=\"prose-p\">Phillip immediately sailed north in small rowing boats to scout alternative bays, discovering Port Jackson deep water anchorages that formed the finest natural harbour in the world. Landing at Sydney Cove beside a fresh water stream, marines cleared eucalyptus trees, raised the British flag on 26 January 1788, and officially founded New South Wales.</p>"
         },
         {
           "act": 4,
@@ -2245,7 +2405,8 @@ export default {
             }
           ],
           "image": "/images/sydney_cove_1792.jpg",
-          "caption": "Sydney Cove in 1792: Depicting the struggling early encampment, storehouses, and convict huts during the starvation years (National Library of Australia)."
+          "caption": "Sydney Cove in 1792: Depicting the struggling early encampment, storehouses, and convict huts during the starvation years (National Library of Australia).",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> The nascent penal colony plunged into desperate hardship during its first two years. Most convicts were urban thieves and weavers lacking agricultural skills, and the settlement struggled against sandy unproductive soil that ruined English seed grain.</p><p class=\"prose-p\">Primitive farming tools snapped on tough native tree roots, leaving broken farming hoes useless in rocky ground. Famine worsened when the shipwreck of HMS Guardian on an Antarctic iceberg destroyed vital food supplies. Facing imminent starvation, Phillip slashed rations to subsistence levels and sent convicts to fertile Norfolk Island to survive.</p>"
         },
         {
           "act": 5,
@@ -2295,7 +2456,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Under Governor Phillip, Sydney was run as a disciplined open-air prison. Convicts endured exhausting dawn-to-dusk labour clearing bush, quarrying sandstone, and building storehouses, while guards enforced order using the brutal cat-o'-nine-tails lash for drunkenness or insolence.</p><p class=\"prose-p\">However, Phillip also recognized that incentive encouraged industry. The governor awarded 30-acre land grants to industrious emancipists who completed their sentences. Former convict James Ruse successfully cultivated wheat and corn at Rose Hill, proving Australian soil could sustain British farming and leading the penal colony toward eventual agricultural self-sufficiency.</p>"
         }
       ],
       "quick_quiz": [
@@ -2946,264 +3108,284 @@ export default {
       ],
       "quiz": [
         {
-          "question": "Why could Britain no longer transport convicts to America after 1783?",
-          "q": "Why could Britain no longer transport convicts to America after 1783?",
+          "stage": 1,
+          "question": "Why could Great Britain no longer transport convicted felons to North American plantations after 1783?",
+          "q": "Why could Great Britain no longer transport convicted felons to North American plantations after 1783?",
           "options": [
-            "The American Revolutionary War ended in British defeat in 1783, shutting American ports to British convicts",
-            "British convicts refused to board ships sailing to America",
-            "American plantation owners preferred using Irish indentured servants",
-            "The British Parliament abolished transportation in 1783"
+            "Loss of American colonies",
+            "Outbreak of the Black War",
+            "Discovery of gold at Ballarat",
+            "Opening of the Suez Canal"
           ],
-          "answer": "The American Revolutionary War ended in British defeat in 1783, shutting American ports to British convicts",
-          "a": "The American Revolutionary War ended in British defeat in 1783, shutting American ports to British convicts",
-          "explanation": "When the American Revolutionary War ended in British defeat in 1783, the newly independent United States slammed its ports shut."
+          "answer": "Loss of American colonies",
+          "a": "Loss of American colonies",
+          "explanation": "Following the loss of the American colonies in 1783, Britain lost its transatlantic outlet for transported convicts."
         },
         {
-          "question": "What were the prison hulks along the Thames?",
-          "q": "What were the prison hulks along the Thames?",
+          "stage": 1,
+          "question": "Under what harsh British legal code did county jails overflow with minor property offenders?",
+          "q": "Under what harsh British legal code did county jails overflow with minor property offenders?",
           "options": [
-            "Decommissioned warships converted into overcrowded floating prisons",
-            "Special military forts built to train Royal Marines",
-            "Iron cages suspended beneath London bridges",
-            "Merchant ships used to import tea from Canton"
+            "Code Napoleon",
+            "Nuremberg Laws",
+            "Calico Acts",
+            "Bloody Code"
           ],
-          "answer": "Decommissioned warships converted into overcrowded floating prisons",
-          "a": "Decommissioned warships converted into overcrowded floating prisons",
-          "explanation": "The hulks were old dismasted warships moored in rivers, where thousands of convicts were held in squalid conditions."
+          "answer": "Bloody Code",
+          "a": "Bloody Code",
+          "explanation": "Under Britain’s harsh Bloody Code, county prisons overflowed with thousands of convicted property offenders."
         },
         {
-          "question": "On what date did Governor Arthur Phillip land at Sydney Cove and raise the Union Jack?",
-          "q": "On what date did Governor Arthur Phillip land at Sydney Cove and raise the Union Jack?",
+          "stage": 1,
+          "question": "Into what disease-ridden vessels along the River Thames did Parliament cram prisoners during the 1780s prison crisis?",
+          "q": "Into what disease-ridden vessels along the River Thames did Parliament cram prisoners during the 1780s prison crisis?",
           "options": [
-            "26 January 1788",
-            "4 July 1776",
-            "22 August 1770",
-            "1 January 1801"
+            "Luxury ocean liners",
+            "Ironclad steam battleships",
+            "Rotting Thames hulks converted into floating prisons",
+            "Subterranean brick bunkers"
           ],
-          "answer": "26 January 1788",
-          "a": "26 January 1788",
-          "explanation": "On 26 January 1788, Phillip raised the British flag at Sydney Cove, Port Jackson, founding the colony of New South Wales."
+          "answer": "Rotting Thames hulks converted into floating prisons",
+          "a": "Rotting Thames hulks converted into floating prisons",
+          "explanation": "Parliament converted rotting Thames hulks into floating prisons where convicts died from typhus and overcrowding."
         },
         {
-          "question": "Why was the early settlement at Sydney Cove pushed to the brink of starvation in 1788–1790?",
-          "q": "Why was the early settlement at Sydney Cove pushed to the brink of starvation in 1788–1790?",
+          "stage": 1,
+          "question": "Which British Prime Minister decided to relieve overcrowded Thames hulks by sending convicts to Botany Bay?",
+          "q": "Which British Prime Minister decided to relieve overcrowded Thames hulks by sending convicts to Botany Bay?",
           "options": [
-            "Poor sandstone soil, lack of farming skills, and the loss of the relief ship HMS Guardian",
-            "A blockade of Sydney harbour by French naval warships",
-            "Insects destroying all the convict supply ships in harbour",
-            "A total drought that dried up the freshwater tank stream for five years"
-          ],
-          "answer": "Poor sandstone soil, lack of farming skills, and the loss of the relief ship HMS Guardian",
-          "a": "Poor sandstone soil, lack of farming skills, and the loss of the relief ship HMS Guardian",
-          "explanation": "The soil was poor sandstone sand, convicts lacked farming skills, and the relief ship HMS Guardian struck an iceberg."
-        },
-        {
-          "question": "What was an 'emancipist' in colonial Australian society?",
-          "q": "What was an 'emancipist' in colonial Australian society?",
-          "options": [
-            "A convict who had completed their sentence and received a pardon and land grant",
-            "A British marine officer who resigned from the military to hunt gold",
-            "An Indigenous warrior who signed a peace agreement with Governor Phillip",
-            "A slave who had escaped from Caribbean sugar plantations"
-          ],
-          "answer": "A convict who had completed their sentence and received a pardon and land grant",
-          "a": "A convict who had completed their sentence and received a pardon and land grant",
-          "explanation": "Emancipists were former convicts who regained free legal status and frequently became successful farmers and businessmen."
-        },
-        {
-          "question": "Which British legal framework carried the death penalty for stealing goods worth more than 12 pence?",
-          "q": "Which British legal framework carried the death penalty for stealing goods worth more than 12 pence?",
-          "options": [
-            "The Bloody Code",
-            "The Habeas Corpus Act",
-            "The Bill of Rights",
-            "The Magna Carta"
-          ],
-          "answer": "The Bloody Code",
-          "a": "The Bloody Code",
-          "explanation": "Convicts were sentenced under the savage Bloody Code, where stealing goods worth more than 12 pence carried the death penalty."
-        },
-        {
-          "question": "What was the name of London's notorious overcrowded county jail in the 1780s?",
-          "q": "What was the name of London's notorious overcrowded county jail in the 1780s?",
-          "options": [
-            "Newgate",
-            "The Tower of London",
-            "Dartmoor",
-            "Pentonville"
-          ],
-          "answer": "Newgate",
-          "a": "Newgate",
-          "explanation": "London’s county jails—such as Newgate—were quickly overwhelmed with convicts."
-        },
-        {
-          "question": "Which British Prime Minister's cabinet approved the plan to establish a penal colony at Botany Bay?",
-          "q": "Which British Prime Minister's cabinet approved the plan to establish a penal colony at Botany Bay?",
-          "options": [
+            "Clement Attlee",
             "William Pitt",
-            "Robert Walpole",
-            "Lord North",
-            "The Duke of Wellington"
+            "Harold Wilson",
+            "William Gladstone"
           ],
           "answer": "William Pitt",
           "a": "William Pitt",
-          "explanation": "Prime Minister William Pitt’s cabinet looked 15,000 miles away to Captain Cook’s Botany Bay."
+          "explanation": "Prime Minister William Pitt’s government approved establishing a distant penal colony at Botany Bay."
         },
         {
-          "question": "Who was appointed founding Governor of New South Wales in December 1786?",
-          "q": "Who was appointed founding Governor of New South Wales in December 1786?",
+          "stage": 2,
+          "question": "Who was appointed founding Governor of New South Wales and commander of the First Fleet?",
+          "q": "Who was appointed founding Governor of New South Wales and commander of the First Fleet?",
           "options": [
             "Captain Arthur Phillip",
-            "Captain James Cook",
-            "Lachlan Macquarie",
-            "William Bligh"
+            "George Gipps",
+            "Philip Gidley King",
+            "George Arthur"
           ],
           "answer": "Captain Arthur Phillip",
           "a": "Captain Arthur Phillip",
-          "explanation": "In December 1786, 48-year-old naval veteran Captain Arthur Phillip was appointed founding Governor of New South Wales."
+          "explanation": "Naval veteran Captain Arthur Phillip was appointed founding Governor of New South Wales and led the First Fleet."
         },
         {
-          "question": "How many total sailing ships made up the First Fleet that sailed from Portsmouth in May 1787?",
-          "q": "How many total sailing ships made up the First Fleet that sailed from Portsmouth in May 1787?",
+          "stage": 2,
+          "question": "How many sailing ships made up the First Fleet convoy to Australia?",
+          "q": "How many sailing ships made up the First Fleet convoy to Australia?",
           "options": [
-            "11 sailing ships",
-            "3 ships",
-            "25 ships",
-            "50 ships"
+            "3 sailing ships",
+            "27 battleships",
+            "50 galleons",
+            "11 sailing ships"
           ],
           "answer": "11 sailing ships",
           "a": "11 sailing ships",
-          "explanation": "Phillip assembled 11 sailing ships at Portsmouth: two escort warships, three storeships, and six transport merchantmen."
+          "explanation": "Arthur Phillip assembled a convoy of 11 sailing ships to carry convicts, marines, and stores to New South Wales."
         },
         {
-          "question": "Approximately how many British convicts were transported aboard the First Fleet to Australia?",
-          "q": "Approximately how many British convicts were transported aboard the First Fleet to Australia?",
+          "stage": 2,
+          "question": "Approximately how many convicts and marines sailed aboard the First Fleet?",
+          "q": "Approximately how many convicts and marines sailed aboard the First Fleet?",
           "options": [
-            "Roughly 750 convicts",
-            "Over 5,000 convicts",
-            "Exactly 100 convicts",
-            "10,000 convicts"
+            "100 convicts and 20 marines",
+            "5,000 convicts and 1,000 marines",
+            "750 convicts and 250 marines",
+            "50 convicts and 500 marines"
           ],
-          "answer": "Roughly 750 convicts",
-          "a": "Roughly 750 convicts",
-          "explanation": "The six transport merchantmen carried roughly 750 convicts (around 560 men and 190 women)."
+          "answer": "750 convicts and 250 marines",
+          "a": "750 convicts and 250 marines",
+          "explanation": "The First Fleet carried roughly 750 convicts guarded by 250 marines across 15,000 miles of ocean."
         },
         {
-          "question": "Which sheltered inlet inside Port Jackson did Arthur Phillip choose to establish the British settlement?",
-          "q": "Which sheltered inlet inside Port Jackson did Arthur Phillip choose to establish the British settlement?",
+          "stage": 2,
+          "question": "Via which two Atlantic and African ports did the First Fleet sail during its eight-month voyage?",
+          "q": "Via which two Atlantic and African ports did the First Fleet sail during its eight-month voyage?",
           "options": [
+            "Bombay and Calcutta",
+            "Cape Town and Rio de Janeiro",
+            "Boston and New York",
+            "Surat and Madras"
+          ],
+          "answer": "Cape Town and Rio de Janeiro",
+          "a": "Cape Town and Rio de Janeiro",
+          "explanation": "The First Fleet sailed 15,000 miles over eight months via Rio de Janeiro and Cape Town with fewer than fifty deaths."
+        },
+        {
+          "stage": 3,
+          "question": "Why did Governor Arthur Phillip reject Botany Bay as the site for a permanent colony in January 1788?",
+          "q": "Why did Governor Arthur Phillip reject Botany Bay as the site for a permanent colony in January 1788?",
+          "options": [
+            "Swampy marshes and no river",
+            "Active volcanic eruptions",
+            "French fortress artillery",
+            "Frozen winter sea ice"
+          ],
+          "answer": "Swampy marshes and no river",
+          "a": "Swampy marshes and no river",
+          "explanation": "Phillip found unprotected Botany Bay unsuitable due to swampy land, shallow water, and no reliable freshwater river."
+        },
+        {
+          "stage": 3,
+          "question": "Which natural harbour north of Botany Bay did Arthur Phillip scout for its deep-water anchorages?",
+          "q": "Which natural harbour north of Botany Bay did Arthur Phillip scout for its deep-water anchorages?",
+          "options": [
+            "Portsmouth Harbour",
+            "Tilbury Docks",
+            "Chesapeake Bay",
+            "Port Jackson"
+          ],
+          "answer": "Port Jackson",
+          "a": "Port Jackson",
+          "explanation": "Sailing north in small boats, Phillip discovered Port Jackson’s sheltered deep-water anchorages."
+        },
+        {
+          "stage": 3,
+          "question": "At which sheltered inlet beside a fresh water stream inside Port Jackson did the First Fleet settle?",
+          "q": "At which sheltered inlet beside a fresh water stream inside Port Jackson did the First Fleet settle?",
+          "options": [
+            "Risdon Cove",
+            "Myall Creek",
             "Sydney Cove",
-            "Botany Bay",
-            "Manly Cove",
-            "Darling Harbour"
+            "Lambing Flat"
           ],
           "answer": "Sydney Cove",
           "a": "Sydney Cove",
-          "explanation": "On 26 January 1788, the ships anchored in a sheltered inlet named Sydney Cove."
+          "explanation": "Phillip selected Sydney Cove inside Port Jackson because it offered deep anchorage beside a reliable freshwater stream."
         },
         {
-          "question": "After which British Home Secretary was Sydney Cove named in January 1788?",
-          "q": "After which British Home Secretary was Sydney Cove named in January 1788?",
+          "stage": 3,
+          "question": "On what date in 1788 did the First Fleet raise the flag at Sydney Cove to found New South Wales?",
+          "q": "On what date in 1788 did the First Fleet raise the flag at Sydney Cove to found New South Wales?",
           "options": [
-            "Lord Sydney",
-            "Lord North",
-            "Lord Palmerston",
-            "Lord Melbourne"
+            "22 June 1948",
+            "26 January 1788",
+            "3 December 1854",
+            "5 March 1770"
           ],
-          "answer": "Lord Sydney",
-          "a": "Lord Sydney",
-          "explanation": "The inlet was named Sydney Cove after the British Home Secretary, Lord Sydney."
+          "answer": "26 January 1788",
+          "a": "26 January 1788",
+          "explanation": "On 26 January 1788, marines cleared eucalyptus trees and raised the British flag at Sydney Cove."
         },
         {
-          "question": "What natural freshwater feature was fatally missing from Botany Bay, forcing Phillip to move to Port Jackson?",
-          "q": "What natural freshwater feature was fatally missing from Botany Bay, forcing Phillip to move to Port Jackson?",
+          "stage": 4,
+          "question": "What poor environmental condition around Sydney ruined seed grain during the Starvation Years of 1788–1790?",
+          "q": "What poor environmental condition around Sydney ruined seed grain during the Starvation Years of 1788–1790?",
           "options": [
-            "A reliable freshwater river",
-            "Salt water",
-            "A sandy beach",
-            "A sheltering headland"
+            "Sandy unproductive soil",
+            "Monsoon floodwaters",
+            "Permafrost tundra",
+            "Locust plagues"
           ],
-          "answer": "A reliable freshwater river",
-          "a": "A reliable freshwater river",
-          "explanation": "Phillip found open marshland, shallow anchorages, and no reliable freshwater river at Botany Bay."
+          "answer": "Sandy unproductive soil",
+          "a": "Sandy unproductive soil",
+          "explanation": "Urban convicts lacked farming experience and struggled to grow crops in Sydney’s sandy unproductive soil."
         },
         {
-          "question": "Which vital British relief ship struck an iceberg off South Africa in December 1789, losing its cargo of supplies?",
-          "q": "Which vital British relief ship struck an iceberg off South Africa in December 1789, losing its cargo of supplies?",
+          "stage": 4,
+          "question": "Which British supply ship struck an iceberg, destroying vital food stores bound for the starving colony?",
+          "q": "Which British supply ship struck an iceberg, destroying vital food stores bound for the starving colony?",
           "options": [
-            "HMS Guardian",
-            "HMS Sirius",
-            "HMS Supply",
-            "HMS Bounty"
+            "HMS Endeavour",
+            "HMS Warrior",
+            "HMT Empire Windrush",
+            "HMS Guardian"
           ],
           "answer": "HMS Guardian",
           "a": "HMS Guardian",
-          "explanation": "In December 1789 the vital relief ship HMS Guardian struck an iceberg off South Africa, losing its entire cargo."
+          "explanation": "Famine worsened when the relief ship HMS Guardian struck an iceberg and lost its vital food cargo."
         },
         {
-          "question": "To which fertile island were 200 convicts sent to relieve food shortages during the Starvation Years?",
-          "q": "To which fertile island were 200 convicts sent to relieve food shortages during the Starvation Years?",
+          "stage": 4,
+          "question": "How did Governor Arthur Phillip respond immediately to preserve dwindling food stocks during the Starvation Years?",
+          "q": "How did Governor Arthur Phillip respond immediately to preserve dwindling food stocks during the Starvation Years?",
           "options": [
+            "Abandoned Port Jackson",
+            "Imported Bengali wheat",
+            "Slashed rations",
+            "Abolished convict labour"
+          ],
+          "answer": "Slashed rations",
+          "a": "Slashed rations",
+          "explanation": "Facing imminent famine, Phillip slashed food rations across the settlement to bare survival levels."
+        },
+        {
+          "stage": 4,
+          "question": "To which fertile island did Governor Phillip send convicts to ease pressure on food supplies?",
+          "q": "To which fertile island did Governor Phillip send convicts to ease pressure on food supplies?",
+          "options": [
+            "Possession Island",
             "Norfolk Island",
-            "Tasmania",
             "Flinders Island",
-            "Kangaroo Island"
+            "Malden Island"
           ],
           "answer": "Norfolk Island",
           "a": "Norfolk Island",
-          "explanation": "Phillip ordered 200 convicts sent to fertile Norfolk Island to relieve pressure on Sydney's supplies."
+          "explanation": "Phillip dispatched convicts to fertile Norfolk Island to help the struggling penal colony survive starvation."
         },
         {
-          "question": "Which native green plant did colonists and officers gather along Sydney shorelines to stave off starvation?",
-          "q": "Which native green plant did colonists and officers gather along Sydney shorelines to stave off starvation?",
+          "stage": 5,
+          "question": "What multi-tailed whip was used to flog unruly convicts in the Sydney penal settlement?",
+          "q": "What multi-tailed whip was used to flog unruly convicts in the Sydney penal settlement?",
           "options": [
-            "Native spinach",
-            "Wild barley",
-            "Kelp kelp",
-            "Sea cabbage"
+            "Cat-o’-nine-tails lash",
+            "Cowhide plantation whip",
+            "Overlooker leather strap",
+            "Cavalry sabre"
           ],
-          "answer": "Native spinach",
-          "a": "Native spinach",
-          "explanation": "Officers and convicts alike scoured the shoreline for wild oysters and native spinach to stave off starvation."
+          "answer": "Cat-o’-nine-tails lash",
+          "a": "Cat-o’-nine-tails lash",
+          "explanation": "Military guards enforced strict discipline in sandstone quarries and bush clearings using the cat-o’-nine-tails lash."
         },
         {
-          "question": "What was the whip called that was used to deliver between 50 and 500 lashes to unruly convicts?",
-          "q": "What was the whip called that was used to deliver between 50 and 500 lashes to unruly convicts?",
+          "stage": 5,
+          "question": "What name was given to convicts who had completed their sentences and gained freedom in New South Wales?",
+          "q": "What name was given to convicts who had completed their sentences and gained freedom in New South Wales?",
           "options": [
-            "The cat-o'-nine-tails",
-            "The iron rod",
-            "The scourge",
-            "The bullwhip"
-          ],
-          "answer": "The cat-o'-nine-tails",
-          "a": "The cat-o'-nine-tails",
-          "explanation": "Those who shirked work or stole food were sentenced to between 50 and 500 lashes with the cat-o'-nine-tails."
-        },
-        {
-          "question": "What term was used to describe convicts who had served out their full prison sentences and gained freedom?",
-          "q": "What term was used to describe convicts who had served out their full prison sentences and gained freedom?",
-          "options": [
-            "Emancipists",
-            "Bushrangers",
             "Squatters",
-            "Diggers"
+            "Maroons",
+            "Chartists",
+            "Emancipists"
           ],
           "answer": "Emancipists",
           "a": "Emancipists",
-          "explanation": "Convicts who served out their sentences became free emancipists."
+          "explanation": "Convicts who served out their sentences and became free settlers were known as emancipists."
         },
         {
-          "question": "Which illiterate Cornish farm labourer proved that wheat and corn could be grown successfully at Rose Hill?",
-          "q": "Which illiterate Cornish farm labourer proved that wheat and corn could be grown successfully at Rose Hill?",
+          "stage": 5,
+          "question": "What land reward did Governor Phillip grant to industrious emancipists to build colonial agriculture?",
+          "q": "What land reward did Governor Phillip grant to industrious emancipists to build colonial agriculture?",
           "options": [
+            "1,500-acre mountain estates",
+            "Ten-pound borough votes",
+            "30-acre land grants",
+            "Free passage to London"
+          ],
+          "answer": "30-acre land grants",
+          "a": "30-acre land grants",
+          "explanation": "Phillip awarded 30-acre land grants to hardworking emancipists to encourage colonial self-sufficiency."
+        },
+        {
+          "stage": 5,
+          "question": "Which former convict proved that wheat and corn could be grown successfully in Australian soil?",
+          "q": "Which former convict proved that wheat and corn could be grown successfully in Australian soil?",
+          "options": [
+            "Edward Hargraves",
             "James Ruse",
-            "William Cooper",
-            "Peter Lalor",
-            "Edward Hargraves"
+            "George Gipps",
+            "Joseph Banks"
           ],
           "answer": "James Ruse",
           "a": "James Ruse",
-          "explanation": "Ex-convict James Ruse, an illiterate Cornish farm labourer, proved that wheat and corn could be grown successfully."
+          "explanation": "Emancipist farmer James Ruse successfully harvested wheat and corn, demonstrating that the colony could feed itself."
         }
       ]
     },
@@ -3254,7 +3436,8 @@ export default {
             "tag": "🌿 65,000 YEARS",
             "trigger": "Before British arrival, over 500,000 First Nations people lived across Australia in 250 distinct language nations, managing the land through fire-stick burning and governed by complex spiritual Songlines.",
             "connective": "Disproved colonial assumptions of nomadic wandering by revealing sophisticated environmental stewardship, territorial boundaries, and deep spiritual law that had thrived for over 65,000 years.",
-            "question": "How did First Nations peoples manage and govern their lands before 1788?"
+            "question": "How did First Nations peoples care for country for over 65,000 years?",
+            "prose_hash": "4729122372"
           },
           {
             "step": 2,
@@ -3264,7 +3447,8 @@ export default {
             "tag": "🦠 THE 1789 SMALLPOX",
             "trigger": "In April 1789, a catastrophic outbreak of smallpox (known as gal-galla) tore through the Sydney basin, killing between 50% and 70% of the local Eora population within weeks.",
             "connective": "Decimated Indigenous elders, spiritual leaders, and family networks, fatally weakening tribal military resistance just as British settlers began expanding inland.",
-            "question": "What was the impact of the 1789 smallpox epidemic on the Eora people of Sydney?"
+            "question": "How did the 1789 smallpox outbreak devastate Sydney’s Eora clans?",
+            "prose_hash": "c4e49bdc2e"
           },
           {
             "step": 3,
@@ -3274,7 +3458,8 @@ export default {
             "tag": "🤝 BENNELONG’S DIPLOMACY",
             "trigger": "Governor Phillip ordered the capture of Bennelong to serve as an interpreter; Bennelong escaped, later facilitated dialogue, was wounded alongside Phillip, and traveled to London to meet King George III in 1793.",
             "connective": "Highlighted the tragic dilemma of cultural intermediaries, caught between an unyielding imperial power and an Indigenous society being torn apart by dispossession.",
-            "question": "Why did Bennelong act as a cultural intermediary between the British and the Eora?"
+            "question": "Why did Bennelong end up trapped between British and Indigenous worlds?",
+            "prose_hash": "4d53ef7a4b"
           },
           {
             "step": 4,
@@ -3284,7 +3469,8 @@ export default {
             "tag": "⚡ PEMULWUY’S UPRISING",
             "trigger": "Following the fatal spearing of Governor Phillip's gamekeeper John McIntyre, Bidjigal warrior Pemulwuy launched a 12-year guerrilla campaign, leading 100 warriors in a direct daytime assault at the Battle of Parramatta (1797).",
             "connective": "Transformed Indigenous resistance into organized military warfare, burning colonial wheat fields and proving that First Nations warriors would fight relentlessly to defend their ancestral country.",
-            "question": "How did Pemulwuy lead Indigenous armed resistance against British expansion?"
+            "question": "How did Pemulwuy lead Bidjigal warriors against British farms by 1797?",
+            "prose_hash": "ac9daf1c0a"
           },
           {
             "step": 5,
@@ -3294,7 +3480,8 @@ export default {
             "tag": "⚔️ HAWKESBURY WAR",
             "trigger": "As settlers cleared prime Dharug and Eora hunting grounds along the fertile Hawkesbury River, Governor King outlawed Aboriginal gatherings, deploying redcoat soldiers with orders to shoot on sight until Pemulwuy was killed in 1802.",
             "connective": "Shattered the early myth of peaceful coexistence, cementing a pattern of violent frontier expansion and military suppression that spread across the entire Australian continent.",
-            "question": "Why did the Hawkesbury River expansion lead to protracted frontier warfare?"
+            "question": "How did fighting along the Hawkesbury River end in 1802?",
+            "prose_hash": "511108109e"
           }
         ]
       },
@@ -3303,13 +3490,13 @@ export default {
           "step": 1,
           "para_ref": "[3.1]",
           "date": "Pre-1788",
-          "heading": "How did First Nations peoples manage and govern their lands before 1788?",
+          "heading": "How did First Nations peoples care for country for over 65,000 years?",
           "bullets": [
             "250 Language Nations",
             "Fire-Stick Farming",
             "Songlines & Custodianship"
           ],
-          "focus_clue": "How did Indigenous Australians combine fire management, seasonal harvesting, and spiritual kinship to sustain the continent for 65,000 years?",
+          "focus_clue": "How did First Nations peoples care for country for over 65,000 years?",
           "words": [
             {
               "term": "250 Language Nations",
@@ -3326,20 +3513,24 @@ export default {
           ],
           "model_sentence": "Across <strong>250 language nations</strong>, First Nations peoples practiced <strong>fire-stick farming</strong> and preserved <strong>songlines & custodianship</strong> without destructive exploitation.",
           "modelSentence": "Across <strong>250 language nations</strong>, First Nations peoples practiced <strong>fire-stick farming</strong> and preserved <strong>songlines & custodianship</strong> without destructive exploitation.",
-          "title": "How did First Nations peoples manage and govern their lands before 1788?",
-          "dates": "Pre-1788"
+          "title": "First Nations Custodianship: 65,000 Years of Sovereignty",
+          "dates": "Pre-1788",
+          "question": "How did First Nations peoples care for country for over 65,000 years?",
+          "questionHeading": "How did First Nations peoples care for country for over 65,000 years?",
+          "focusClue": "How did First Nations peoples care for country for over 65,000 years?",
+          "prose_hash": "4729122372"
         },
         {
           "step": 2,
           "para_ref": "[3.2]",
           "date": "April 1789",
-          "heading": "What was the impact of the 1789 smallpox epidemic on the Eora people of Sydney?",
+          "heading": "How did the 1789 smallpox outbreak devastate Sydney’s Eora clans?",
           "bullets": [
             "Gal-galla Smallpox",
             "50–70% Eora Mortality",
             "Loss of Elders & Law"
           ],
-          "focus_clue": "Why was the rapid loss of law-keepers, healers, and warriors in 1789 an irreversible biological catastrophe for the Sydney clans?",
+          "focus_clue": "How did the 1789 smallpox outbreak devastate Sydney’s Eora clans?",
           "words": [
             {
               "term": "Gal-galla Smallpox",
@@ -3356,20 +3547,24 @@ export default {
           ],
           "model_sentence": "The outbreak of <strong>gal-galla smallpox</strong> caused <strong>50–70% Eora mortality</strong>, inflicting a catastrophic <strong>loss of elders & law</strong> on Indigenous society.",
           "modelSentence": "The outbreak of <strong>gal-galla smallpox</strong> caused <strong>50–70% Eora mortality</strong>, inflicting a catastrophic <strong>loss of elders & law</strong> on Indigenous society.",
-          "title": "What was the impact of the 1789 smallpox epidemic on the Eora people of Sydney?",
-          "dates": "April 1789"
+          "title": "The Smallpox Epidemic: Demographic Catastrophe",
+          "dates": "April 1789",
+          "question": "How did the 1789 smallpox outbreak devastate Sydney’s Eora clans?",
+          "questionHeading": "How did the 1789 smallpox outbreak devastate Sydney’s Eora clans?",
+          "focusClue": "How did the 1789 smallpox outbreak devastate Sydney’s Eora clans?",
+          "prose_hash": "c4e49bdc2e"
         },
         {
           "step": 3,
           "para_ref": "[3.3]",
           "date": "1789–1795",
-          "heading": "Why did Bennelong act as a cultural intermediary between the British and the Eora?",
+          "heading": "Why did Bennelong end up trapped between British and Indigenous worlds?",
           "bullets": [
             "Kidnapped by Marines",
             "London Voyage 1793",
             "Trapped Between Two Worlds"
           ],
-          "focus_clue": "How did Bennelong attempt to use diplomacy to protect his people, and why did his journey to London leave him alienated from both societies?",
+          "focus_clue": "Why did Bennelong end up trapped between British and Indigenous worlds?",
           "words": [
             {
               "term": "Kidnapped by Marines",
@@ -3386,20 +3581,24 @@ export default {
           ],
           "model_sentence": "First <strong>kidnapped by marines</strong> and taken on a <strong>London voyage 1793</strong>, Bennelong lived tragically <strong>trapped between two worlds</strong> upon his return.",
           "modelSentence": "First <strong>kidnapped by marines</strong> and taken on a <strong>London voyage 1793</strong>, Bennelong lived tragically <strong>trapped between two worlds</strong> upon his return.",
-          "title": "Why did Bennelong act as a cultural intermediary between the British and the Eora?",
-          "dates": "1789–1795"
+          "title": "Bennelong: Diplomat, Captive & Intermediary",
+          "dates": "1789–1795",
+          "question": "Why did Bennelong end up trapped between British and Indigenous worlds?",
+          "questionHeading": "Why did Bennelong end up trapped between British and Indigenous worlds?",
+          "focusClue": "Why did Bennelong end up trapped between British and Indigenous worlds?",
+          "prose_hash": "4d53ef7a4b"
         },
         {
           "step": 4,
           "para_ref": "[3.4]",
           "date": "1790–1797",
-          "heading": "How did Pemulwuy lead Indigenous armed resistance against British expansion?",
+          "heading": "How did Pemulwuy lead Bidjigal warriors against British farms by 1797?",
           "bullets": [
             "Bidjigal Clan Leader",
             "Burning Settler Farms",
             "Battle of Parramatta (1797)"
           ],
-          "focus_clue": "Why did Pemulwuy target colonial crops, livestock, and soldiers, and how did his survival from musket wounds build his legendary reputation?",
+          "focus_clue": "How did Pemulwuy lead Bidjigal warriors against British farms by 1797?",
           "words": [
             {
               "term": "Bidjigal Clan Leader",
@@ -3416,20 +3615,24 @@ export default {
           ],
           "model_sentence": "As a defiant <strong>Bidjigal clan leader</strong>, Pemulwuy orchestrated <strong>burning settler farms</strong> and commanded warriors at the <strong>Battle of Parramatta (1797)</strong>.",
           "modelSentence": "As a defiant <strong>Bidjigal clan leader</strong>, Pemulwuy orchestrated <strong>burning settler farms</strong> and commanded warriors at the <strong>Battle of Parramatta (1797)</strong>.",
-          "title": "How did Pemulwuy lead Indigenous armed resistance against British expansion?",
-          "dates": "1790–1797"
+          "title": "Pemulwuy: The Rainbow Warrior & The Battle of Parramatta",
+          "dates": "1790–1797",
+          "question": "How did Pemulwuy lead Bidjigal warriors against British farms by 1797?",
+          "questionHeading": "How did Pemulwuy lead Bidjigal warriors against British farms by 1797?",
+          "focusClue": "How did Pemulwuy lead Bidjigal warriors against British farms by 1797?",
+          "prose_hash": "ac9daf1c0a"
         },
         {
           "step": 5,
           "para_ref": "[3.5]",
           "date": "1795–1802",
-          "heading": "Why did the Hawkesbury River expansion lead to protracted frontier warfare?",
+          "heading": "How did fighting along the Hawkesbury River end in 1802?",
           "bullets": [
             "Fertile Farming Invasions",
             "Shoot on Sight Orders",
             "Death of Pemulwuy (1802)"
           ],
-          "focus_clue": "How did competition for food and water along the Hawkesbury River force British governors into declaring open military conflict?",
+          "focus_clue": "How did fighting along the Hawkesbury River end in 1802?",
           "words": [
             {
               "term": "Fertile Farming Invasions",
@@ -3446,33 +3649,78 @@ export default {
           ],
           "model_sentence": "Triggered by <strong>fertile farming invasions</strong>, Governor King enacted <strong>shoot on sight orders</strong> until the tragic <strong>death of Pemulwuy (1802)</strong>.",
           "modelSentence": "Triggered by <strong>fertile farming invasions</strong>, Governor King enacted <strong>shoot on sight orders</strong> until the tragic <strong>death of Pemulwuy (1802)</strong>.",
-          "title": "Why did the Hawkesbury River expansion lead to protracted frontier warfare?",
-          "dates": "1795–1802"
+          "title": "The Hawkesbury & Nepean Frontier Wars",
+          "dates": "1795–1802",
+          "question": "How did fighting along the Hawkesbury River end in 1802?",
+          "questionHeading": "How did fighting along the Hawkesbury River end in 1802?",
+          "focusClue": "How did fighting along the Hawkesbury River end in 1802?",
+          "prose_hash": "511108109e"
         }
       ],
       "did_you_know": "Bidjigal warrior Pemulwuy became so feared by British redcoats that settlers believed he possessed supernatural powers and could not be killed by lead musket balls! During the 1797 Battle of Parramatta, Pemulwuy was shot seven times in the head and body, chained to a hospital bed, and yet escaped into the bush with his iron leg-irons still attached, leading another five years of guerrilla raids!",
       "do_now": {
         "type": "questions",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Why did Britain establish a penal colony in Australia in 1788?",
-            "answer": "Because the American Revolution ended transportation to North America, causing severe overcrowding in British jails."
+            "stage": 1,
+            "question": "Why could Great Britain no longer transport convicted felons to North American plantations after 1783?",
+            "answer": "Loss of American colonies",
+            "explanation": "Following the loss of the American colonies in 1783, Britain lost its transatlantic outlet for transported convicts."
           },
           {
-            "question": "What were the decommissioned floating prison warships along the Thames called?",
-            "answer": "Prison hulks."
+            "stage": 2,
+            "question": "Who was appointed founding Governor of New South Wales and commander of the First Fleet?",
+            "answer": "Captain Arthur Phillip",
+            "explanation": "Naval veteran Captain Arthur Phillip was appointed founding Governor of New South Wales and led the First Fleet."
           },
           {
-            "question": "Who was appointed the first naval Governor of New South Wales in 1788?",
-            "answer": "Captain Arthur Phillip."
+            "stage": 3,
+            "question": "Why did Governor Arthur Phillip reject Botany Bay as the site for a permanent colony in January 1788?",
+            "answer": "Swampy marshes and no river",
+            "explanation": "Phillip found unprotected Botany Bay unsuitable due to swampy land, shallow water, and no reliable freshwater river."
           },
           {
-            "question": "What Latin legal term meaning 'nobody's land' was used to dispossess First Nations Australians?",
-            "answer": "Terra nullius."
+            "stage": 4,
+            "question": "What poor environmental condition around Sydney ruined seed grain during the Starvation Years of 1788–1790?",
+            "answer": "Sandy unproductive soil",
+            "explanation": "Urban convicts lacked farming experience and struggled to grow crops in Sydney’s sandy unproductive soil."
           },
           {
-            "question": "What were former convicts who earned their freedom and received land grants called?",
-            "answer": "Emancipists."
+            "stage": 5,
+            "question": "What multi-tailed whip was used to flog unruly convicts in the Sydney penal settlement?",
+            "answer": "Cat-o’-nine-tails lash",
+            "explanation": "Military guards enforced strict discipline in sandstone quarries and bush clearings using the cat-o’-nine-tails lash."
+          },
+          {
+            "stage": 1,
+            "question": "Under what harsh British legal code did county jails overflow with minor property offenders?",
+            "answer": "Bloody Code",
+            "explanation": "Under Britain’s harsh Bloody Code, county prisons overflowed with thousands of convicted property offenders."
+          },
+          {
+            "stage": 2,
+            "question": "How many sailing ships made up the First Fleet convoy to Australia?",
+            "answer": "11 sailing ships",
+            "explanation": "Arthur Phillip assembled a convoy of 11 sailing ships to carry convicts, marines, and stores to New South Wales."
+          },
+          {
+            "stage": 3,
+            "question": "Which natural harbour north of Botany Bay did Arthur Phillip scout for its deep-water anchorages?",
+            "answer": "Port Jackson",
+            "explanation": "Sailing north in small boats, Phillip discovered Port Jackson’s sheltered deep-water anchorages."
+          },
+          {
+            "stage": 4,
+            "question": "Which British supply ship struck an iceberg, destroying vital food stores bound for the starving colony?",
+            "answer": "HMS Guardian",
+            "explanation": "Famine worsened when the relief ship HMS Guardian struck an iceberg and lost its vital food cargo."
+          },
+          {
+            "stage": 5,
+            "question": "What name was given to convicts who had completed their sentences and gained freedom in New South Wales?",
+            "answer": "Emancipists",
+            "explanation": "Convicts who served out their sentences and became free settlers were known as emancipists."
           }
         ]
       },
@@ -3589,7 +3837,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> For over 65,000 years, First Nations peoples lived across Australia in the world’s oldest continuous civilization. More than 250 language nations occupied distinct ancestral territories, ranging from the coastal Eora clans around Sydney to desert nations of the arid interior.</p><p class=\"prose-p\">Aboriginal societies managed ecosystems through sophisticated fire-stick farming, deliberately burning dry grasslands to prevent catastrophic bushfires and regenerate fresh grazing for wallabies. Communities were governed by ancient Songlines & custodianship, spiritual tracks that connected ancestral dreaming, complex customary law, moral obligations, and navigational routes across country.</p>"
         },
         {
           "act": 2,
@@ -3636,7 +3885,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Early contact between British colonists and local clans quickly turned tense as Europeans cleared sacred bush, depleted fish stocks, and contaminated freshwater creeks. In April 1789, an apocalyptic epidemic of gal-galla smallpox struck First Nations communities.</p><p class=\"prose-p\">Having no natural biological immunity, local clans suffered devastating 50–70% Eora mortality within weeks. Corpses floated in Sydney Harbour, and survivors abandoned infected campsites in terror. The catastrophic loss of elders & law wiped out vital knowledge, sacred stories, and community leaders, crippling Aboriginal social cohesion and ability to resist British expansion.</p>"
         },
         {
           "act": 3,
@@ -3681,7 +3931,8 @@ export default {
               },
               "id": "aus_l3_src_c"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> Seeking to establish communication with local clans, Governor Phillip ordered Aboriginal men captured. In late 1789, Wangal warrior Bennelong was kidnapped by marines and held at Government House, where he learned English and adopted European dress.</p><p class=\"prose-p\">Bennelong acted as an indispensable cultural mediator between Phillip and Indigenous leaders, negotiating peaceful meetings. In 1792, Bennelong accompanied Phillip to England on a celebrated London voyage 1793, meeting King George III. Returning to Sydney, Bennelong found himself alienated from both British officials and his own people, remaining tragically trapped between two worlds.</p>"
         },
         {
           "act": 4,
@@ -3729,7 +3980,8 @@ export default {
               },
               "id": "aus_l3_src_d"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> While some leaders attempted diplomacy, others launched armed resistance against colonial invasion. Pemulwuy, a revered Bidjigal clan leader, united diverse Aboriginal groups across the Sydney Basin into a coordinated guerrilla resistance movement against European expansion.</p><p class=\"prose-p\">Pemulwuy’s warriors ambushed British soldiers, speared convict cattle thieves, and retaliated against land theft by burning settler farms and destroying grain stores. In 1797, Pemulwuy led a daylight raid during the Battle of Parramatta (1797), facing British redcoats directly. Though shot multiple times, Pemulwuy survived and escaped hospital, earning legendary status among his people.</p>"
         },
         {
           "act": 5,
@@ -3776,7 +4028,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> By the late 1790s, the frontier shifted to the Hawkesbury River. Expanding fertile farming invasions drove Dharug and Bidjigal families away from rich yam beds and fishing grounds, sparking bloody guerrilla warfare as warriors attacked isolated farmhouses.</p><p class=\"prose-p\">Governor Philip Gidley King outlawed Indigenous warriors, issuing ruthless shoot on sight orders that permitted settlers and redcoats to kill Aboriginal people without trial. The resistance suffered a fatal blow with the death of Pemulwuy (1802) in an ambush. Pemulwuy’s severed head was shipped to London, ending the first organised frontier war.</p>"
         }
       ],
       "quick_quiz": [
@@ -4399,264 +4652,284 @@ export default {
       ],
       "quiz": [
         {
-          "question": "Approximately how long have First Nations peoples lived continuously in Australia?",
-          "q": "Approximately how long have First Nations peoples lived continuously in Australia?",
+          "stage": 1,
+          "question": "For at least how many years had First Nations peoples lived continuously in Australia before European arrival?",
+          "q": "For at least how many years had First Nations peoples lived continuously in Australia before European arrival?",
           "options": [
-            "At least 65,000 years",
-            "Around 10,000 years",
-            "Around 2,000 years",
-            "Only since European arrival in 1788"
-          ],
-          "answer": "At least 65,000 years",
-          "a": "At least 65,000 years",
-          "explanation": "Archaeological evidence proves Aboriginal Australians have continuous cultural custodianship extending back at least 65,000 years."
-        },
-        {
-          "question": "What was the impact of the April 1789 smallpox epidemic on the Sydney Eora population?",
-          "q": "What was the impact of the April 1789 smallpox epidemic on the Sydney Eora population?",
-          "options": [
-            "It killed between 50% and 70% of the local Indigenous population within weeks",
-            "It affected only British convicts and spared Indigenous clans",
-            "It was completely cured by traditional bush medicine within days",
-            "It caused Governor Phillip to abandon Sydney and return to Britain"
-          ],
-          "answer": "It killed between 50% and 70% of the local Indigenous population within weeks",
-          "a": "It killed between 50% and 70% of the local Indigenous population within weeks",
-          "explanation": "Lacking biological immunity, the Eora suffered catastrophic mortality of up to 70%, devastating clan structures and defense."
-        },
-        {
-          "question": "Who was Woollarawarre Bennelong?",
-          "q": "Who was Woollarawarre Bennelong?",
-          "options": [
-            "A Wangal leader who acted as an intermediary with Governor Phillip and traveled to London in 1792",
-            "The leader of the 1854 Eureka Stockade gold rebellion in Ballarat",
-            "A British soldier who was executed for the Myall Creek Massacre",
-            "The Polynesian star navigator who guided Captain Cook to Botany Bay"
-          ],
-          "answer": "A Wangal leader who acted as an intermediary with Governor Phillip and traveled to London in 1792",
-          "a": "A Wangal leader who acted as an intermediary with Governor Phillip and traveled to London in 1792",
-          "explanation": "Bennelong was a prominent diplomat who learned English, negotiated with Phillip, and visited King George III."
-        },
-        {
-          "question": "Which Bidjigal warrior led a 12-year guerrilla war against British expansion across Sydney?",
-          "q": "Which Bidjigal warrior led a 12-year guerrilla war against British expansion across Sydney?",
-          "options": [
-            "Pemulwuy",
-            "Tupaia",
-            "Arabanoo",
-            "Truganini"
-          ],
-          "answer": "Pemulwuy",
-          "a": "Pemulwuy",
-          "explanation": "Pemulwuy led fierce guerrilla resistance against British soldiers and settlers between 1790 and his death in 1802."
-        },
-        {
-          "question": "What proclamation did Governor King issue in November 1801 regarding Indigenous peoples in Parramatta and Hawkesbury?",
-          "q": "What proclamation did Governor King issue in November 1801 regarding Indigenous peoples in Parramatta and Hawkesbury?",
-          "options": [
-            "Authorising soldiers and settlers to shoot Aboriginal people on sight and placing a bounty on Pemulwuy",
-            "Granting equal voting rights and legal representation to all First Nations elders",
-            "Ordering all British settlers to abandon their farms and leave New South Wales",
-            "Establishing a permanent independent sovereign reserve for the Dharug nation"
-          ],
-          "answer": "Authorising soldiers and settlers to shoot Aboriginal people on sight and placing a bounty on Pemulwuy",
-          "a": "Authorising soldiers and settlers to shoot Aboriginal people on sight and placing a bounty on Pemulwuy",
-          "explanation": "Governor King’s 1801 proclamation declared Aboriginal people outlaws and authorized shoot-on-sight orders, reflecting escalating frontier war."
-        },
-        {
-          "question": "For how many thousands of years had First Nations peoples inhabited Australia before European arrival?",
-          "q": "For how many thousands of years had First Nations peoples inhabited Australia before European arrival?",
-          "options": [
-            "At least 65,000 years",
-            "Around 2,000 years",
+            "2,000 years",
+            "10,000 years",
             "500 years",
-            "10,000 years"
+            "65,000 years"
           ],
-          "answer": "At least 65,000 years",
-          "a": "At least 65,000 years",
-          "explanation": "For at least 65,000 years before European arrival, First Nations peoples inhabited the Australian continent."
+          "answer": "65,000 years",
+          "a": "65,000 years",
+          "explanation": "First Nations peoples inhabited Australia for over 65,000 years in the world’s oldest continuous living cultures."
         },
         {
-          "question": "Approximately how many distinct sovereign First Nations existed across Australia prior to 1788?",
-          "q": "Approximately how many distinct sovereign First Nations existed across Australia prior to 1788?",
+          "stage": 1,
+          "question": "More than how many distinct First Nations existed across the Australian continent prior to 1788?",
+          "q": "More than how many distinct First Nations existed across the Australian continent prior to 1788?",
           "options": [
+            "Exactly 12",
+            "Around 30",
             "More than 250",
-            "Exactly 4",
-            "Only 10",
-            "Over 2,000"
+            "Fewer than 50"
           ],
           "answer": "More than 250",
           "a": "More than 250",
-          "explanation": "An estimated 500,000 to 750,000 people lived in more than 250 distinct sovereign nations."
+          "explanation": "Over 250 distinct sovereign language nations occupied ancestral territories across Australia before 1788."
         },
         {
-          "question": "What were the vast memorised musical pathways called that served as oral maps and historical laws?",
-          "q": "What were the vast memorised musical pathways called that served as oral maps and historical laws?",
+          "stage": 1,
+          "question": "What seasonal burning method did First Nations clans use to prevent bushfires and regenerate grazing grasslands?",
+          "q": "What seasonal burning method did First Nations clans use to prevent bushfires and regenerate grazing grasslands?",
+          "options": [
+            "Crop rotation enclosure",
+            "Fire-stick farming",
+            "Slash-and-charcoal smelting",
+            "Canal flood irrigation"
+          ],
+          "answer": "Fire-stick farming",
+          "a": "Fire-stick farming",
+          "explanation": "Through systematic fire-stick farming, clans burned patches of dry grass to prevent bushfires and encourage fresh shoots."
+        },
+        {
+          "stage": 1,
+          "question": "What ancient spiritual tracks encoded customary law, moral duty, and navigational maps across country?",
+          "q": "What ancient spiritual tracks encoded customary law, moral duty, and navigational maps across country?",
           "options": [
             "Songlines",
-            "Tjukurpa trails",
-            "Corroborees",
-            "Walkabouts"
+            "Turnpikes",
+            "Proclamation lines",
+            "Telegraph corridors"
           ],
           "answer": "Songlines",
           "a": "Songlines",
-          "explanation": "Society was governed by oral Songlines—vast memorised musical pathways that served as navigational maps and moral laws."
+          "explanation": "Communities were governed by Songlines and custodianship connecting ancestral law and navigation across country."
         },
         {
-          "question": "What was the deadly disease that broke out in April 1789, devastating between 50% and 70% of the local Eora population?",
-          "q": "What was the deadly disease that broke out in April 1789, devastating between 50% and 70% of the local Eora population?",
+          "stage": 2,
+          "question": "What catastrophic epidemic struck First Nations clans around Sydney Harbour in April 1789?",
+          "q": "What catastrophic epidemic struck First Nations clans around Sydney Harbour in April 1789?",
           "options": [
-            "Smallpox",
-            "Cholera",
-            "Typhus",
-            "Yellow fever"
+            "Asiatic cholera",
+            "Bubonic plague",
+            "Byssinosis",
+            "Smallpox"
           ],
           "answer": "Smallpox",
           "a": "Smallpox",
-          "explanation": "In April 1789, an explosive outbreak of smallpox (gal-galla) ripped through the Sydney Basin, killing 50% to 70% of the Eora."
+          "explanation": "In April 1789, a devastating smallpox epidemic swept through Indigenous clans around Sydney."
         },
         {
-          "question": "What Indigenous name was given by the Eora clans to the 1789 smallpox epidemic?",
-          "q": "What Indigenous name was given by the Eora clans to the 1789 smallpox epidemic?",
+          "stage": 2,
+          "question": "By what Indigenous name was the 1789 smallpox epidemic known among the Eora clans?",
+          "q": "By what Indigenous name was the 1789 smallpox epidemic known among the Eora clans?",
           "options": [
-            "gal-galla",
-            "tjukurpa",
-            "walla-walla",
-            "corroboree"
+            "Terra nullius",
+            "Wybalenna",
+            "Gal-galla",
+            "Abeng"
           ],
-          "answer": "gal-galla",
-          "a": "gal-galla",
-          "explanation": "Smallpox was known to the coastal Eora clans as gal-galla."
+          "answer": "Gal-galla",
+          "a": "Gal-galla",
+          "explanation": "The April 1789 gal-galla smallpox outbreak devastated local Eora clans who had no prior immunity."
         },
         {
-          "question": "Why did Indigenous Australians suffer such catastrophic mortality from smallpox in 1789?",
-          "q": "Why did Indigenous Australians suffer such catastrophic mortality from smallpox in 1789?",
+          "stage": 2,
+          "question": "What estimated proportion of the Eora population died during the 1789 smallpox catastrophe?",
+          "q": "What estimated proportion of the Eora population died during the 1789 smallpox catastrophe?",
           "options": [
-            "Zero biological immunity to the virus",
-            "A lack of warm blankets",
-            "Refusal to drink fresh water",
-            "An exclusive diet of salt pork"
+            "Less than 5% mortality",
+            "50–70% Eora mortality",
+            "Around 10% mortality",
+            "100% total extinction"
           ],
-          "answer": "Zero biological immunity to the virus",
-          "a": "Zero biological immunity to the virus",
-          "explanation": "Indigenous Australians possessed zero biological immunity to the smallpox virus."
+          "answer": "50–70% Eora mortality",
+          "a": "50–70% Eora mortality",
+          "explanation": "Lacking biological immunity, Eora clans suffered catastrophic 50–70% mortality within weeks."
         },
         {
-          "question": "Which Wangal warrior was captured by British marines in November 1789 to serve as a cultural intermediary?",
-          "q": "Which Wangal warrior was captured by British marines in November 1789 to serve as a cultural intermediary?",
+          "stage": 2,
+          "question": "Alongside mass deaths, what vital social foundation was shattered by the 1789 epidemic?",
+          "q": "Alongside mass deaths, what vital social foundation was shattered by the 1789 epidemic?",
           "options": [
-            "Woollarawarre Bennelong",
-            "Pemulwuy",
-            "Eddie Mabo",
-            "William Cooper"
+            "Loss of elders and law",
+            "Loss of Merino sheep flocks",
+            "Collapse of gold licences",
+            "Destruction of brick forts"
           ],
-          "answer": "Woollarawarre Bennelong",
-          "a": "Woollarawarre Bennelong",
-          "explanation": "Marines captured 25-year-old Wangal warrior Woollarawarre Bennelong, who became Phillip's key cultural intermediary."
+          "answer": "Loss of elders and law",
+          "a": "Loss of elders and law",
+          "explanation": "The sudden loss of elders and law stripped communities of sacred knowledge and weakened their capacity to resist expansion."
         },
         {
-          "question": "Which Indigenous elder speared Governor Phillip through the shoulder at Manly Cove as traditional legal punishment?",
-          "q": "Which Indigenous elder speared Governor Phillip through the shoulder at Manly Cove as traditional legal punishment?",
+          "stage": 3,
+          "question": "Which Wangal warrior was kidnapped by British marines in 1789 to act as an intermediary with Sydney clans?",
+          "q": "Which Wangal warrior was kidnapped by British marines in 1789 to act as an intermediary with Sydney clans?",
           "options": [
-            "Willemering",
             "Pemulwuy",
             "Tupaia",
-            "Arabanoo"
-          ],
-          "answer": "Willemering",
-          "a": "Willemering",
-          "explanation": "An elder named Willemering speared Phillip through the shoulder—a traditional Indigenous legal punishment."
-        },
-        {
-          "question": "At which location in Sydney was a brick house built for Bennelong, now the site of the Sydney Opera House?",
-          "q": "At which location in Sydney was a brick house built for Bennelong, now the site of the Sydney Opera House?",
-          "options": [
-            "Tubowgalle (Bennelong Point)",
-            "Parramatta",
-            "Botany Bay",
-            "Rose Hill"
-          ],
-          "answer": "Tubowgalle (Bennelong Point)",
-          "a": "Tubowgalle (Bennelong Point)",
-          "explanation": "A brick house was built for Bennelong at Tubowgalle, now known as Bennelong Point."
-        },
-        {
-          "question": "Which Bidjigal warrior led a 12-year guerrilla resistance campaign against British colonization across the Sydney Basin?",
-          "q": "Which Bidjigal warrior led a 12-year guerrilla resistance campaign against British colonization across the Sydney Basin?",
-          "options": [
-            "Pemulwuy",
-            "Bennelong",
             "Truganini",
-            "Willemering"
+            "Bennelong"
+          ],
+          "answer": "Bennelong",
+          "a": "Bennelong",
+          "explanation": "In late 1789, Wangal warrior Bennelong was kidnapped by marines on Governor Phillip’s orders."
+        },
+        {
+          "stage": 3,
+          "question": "Where was Bennelong held in Sydney after being captured by Governor Phillip’s marines in 1789?",
+          "q": "Where was Bennelong held in Sydney after being captured by Governor Phillip’s marines in 1789?",
+          "options": [
+            "Wybalenna camp",
+            "Eureka Stockade",
+            "Government House",
+            "Portsmouth Dockyard"
+          ],
+          "answer": "Government House",
+          "a": "Government House",
+          "explanation": "Held at Government House, Bennelong learned English and became a key cultural intermediary between Phillip and local clans."
+        },
+        {
+          "stage": 3,
+          "question": "Which British monarch did Bennelong meet during his 1793 London voyage with Arthur Phillip?",
+          "q": "Which British monarch did Bennelong meet during his 1793 London voyage with Arthur Phillip?",
+          "options": [
+            "Queen Elizabeth I",
+            "King George III",
+            "King Charles II",
+            "Queen Victoria"
+          ],
+          "answer": "King George III",
+          "a": "King George III",
+          "explanation": "Bennelong travelled to England with Arthur Phillip on the 1793 London voyage, meeting King George III."
+        },
+        {
+          "stage": 3,
+          "question": "How do historians summarise Bennelong’s painful isolation after returning from England to Sydney?",
+          "q": "How do historians summarise Bennelong’s painful isolation after returning from England to Sydney?",
+          "options": [
+            "Trapped between two worlds",
+            "Appointed Governor of Tasmania",
+            "Exiled to Nova Scotia",
+            "Elected to Westminster"
+          ],
+          "answer": "Trapped between two worlds",
+          "a": "Trapped between two worlds",
+          "explanation": "Returning to Sydney, Bennelong found himself alienated from British officials and traditional clan life, trapped between two worlds."
+        },
+        {
+          "stage": 4,
+          "question": "Which Bidjigal warrior united Sydney Basin clans in armed guerrilla resistance against British invasion from 1790?",
+          "q": "Which Bidjigal warrior united Sydney Basin clans in armed guerrilla resistance against British invasion from 1790?",
+          "options": [
+            "Bennelong",
+            "Tupaia",
+            "James Ruse",
+            "Pemulwuy"
           ],
           "answer": "Pemulwuy",
           "a": "Pemulwuy",
-          "explanation": "Pemulwuy, a fierce Bidjigal warrior, led a 12-year guerrilla warfare campaign against British expansion."
+          "explanation": "Bidjigal leader Pemulwuy led a coordinated guerrilla resistance campaign across the Sydney Basin against British expansion."
         },
         {
-          "question": "Which notorious gamekeeper was speared by Pemulwuy in December 1790 for shooting Aboriginal people?",
-          "q": "Which notorious gamekeeper was speared by Pemulwuy in December 1790 for shooting Aboriginal people?",
+          "stage": 4,
+          "question": "How did Pemulwuy’s warriors strike back economically against expanding British settlements?",
+          "q": "How did Pemulwuy’s warriors strike back economically against expanding British settlements?",
           "options": [
-            "John McIntyre",
-            "James Ruse",
-            "William Hobbs",
-            "George Robinson"
+            "Imposing customs tariffs",
+            "Blocking London banks",
+            "Burning settler farms",
+            "Boycotting city buses"
           ],
-          "answer": "John McIntyre",
-          "a": "John McIntyre",
-          "explanation": "Pemulwuy speared gamekeeper John McIntyre, who had been notorious among the Eora for shooting Aboriginal people."
+          "answer": "Burning settler farms",
+          "a": "Burning settler farms",
+          "explanation": "Pemulwuy’s fighters ambushed soldiers, speared livestock, and retaliated against land theft by burning settler farms and crops."
         },
         {
-          "question": "In which March 1797 battle did Pemulwuy lead 100 warriors in a direct daytime assault on the redcoat garrison?",
-          "q": "In which March 1797 battle did Pemulwuy lead 100 warriors in a direct daytime assault on the redcoat garrison?",
+          "stage": 4,
+          "question": "In which 1797 battle did Pemulwuy lead warriors in a direct daytime raid against British redcoats?",
+          "q": "In which 1797 battle did Pemulwuy lead warriors in a direct daytime raid against British redcoats?",
           "options": [
+            "Battle of Plassey",
             "Battle of Parramatta",
-            "Battle of Myall Creek",
-            "Eureka Stockade",
-            "Risdon Cove"
+            "Battle of Saratoga",
+            "Battle of Omdurman"
           ],
           "answer": "Battle of Parramatta",
           "a": "Battle of Parramatta",
-          "explanation": "In March 1797, Pemulwuy led 100 warriors in a direct daytime assault on the redcoat garrison at the Battle of Parramatta."
+          "explanation": "In 1797, Pemulwuy confronted British redcoats directly during a daylight raid at the Battle of Parramatta."
         },
         {
-          "question": "Along which two fertile river plains did frontier warfare escalate during the late 1790s?",
-          "q": "Along which two fertile river plains did frontier warfare escalate during the late 1790s?",
+          "stage": 4,
+          "question": "What happened after Pemulwuy was shot multiple times and held in hospital following the 1797 Battle of Parramatta?",
+          "q": "What happened after Pemulwuy was shot multiple times and held in hospital following the 1797 Battle of Parramatta?",
           "options": [
-            "The Hawkesbury and Nepean Rivers",
-            "The Murray and Darling Rivers",
-            "The Yarra and Maribyrnong Rivers",
-            "The Brisbane and Swan Rivers"
+            "Escaped hospital",
+            "Exiled to Flinders Island",
+            "Transported to London",
+            "Pardoned with a land grant"
           ],
-          "answer": "The Hawkesbury and Nepean Rivers",
-          "a": "The Hawkesbury and Nepean Rivers",
-          "explanation": "Conflict shifted west to the fertile alluvial plains of the Hawkesbury and Nepean Rivers."
+          "answer": "Escaped hospital",
+          "a": "Escaped hospital",
+          "explanation": "Despite severe gunshot wounds, Pemulwuy survived and escaped from hospital, cementing his legendary reputation."
         },
         {
-          "question": "Which British Governor issued a proclamation authorising soldiers to shoot Aboriginal people around Parramatta 'on sight'?",
-          "q": "Which British Governor issued a proclamation authorising soldiers to shoot Aboriginal people around Parramatta 'on sight'?",
+          "stage": 5,
+          "question": "Along which fertile river did expanding British farms provoke intense frontier warfare in the late 1790s?",
+          "q": "Along which fertile river did expanding British farms provoke intense frontier warfare in the late 1790s?",
           "options": [
+            "Thames",
+            "River Meon",
+            "Chesapeake",
+            "Hawkesbury"
+          ],
+          "answer": "Hawkesbury",
+          "a": "Hawkesbury",
+          "explanation": "Fertile farming invasions along the Hawkesbury drove Dharug families from yam beds and sparked fierce guerrilla warfare."
+        },
+        {
+          "stage": 5,
+          "question": "Which British Governor issued ruthless \"shoot on sight\" orders outlawing Indigenous warriors around Parramatta and the Hawkesbury?",
+          "q": "Which British Governor issued ruthless \"shoot on sight\" orders outlawing Indigenous warriors around Parramatta and the Hawkesbury?",
+          "options": [
+            "Arthur Phillip",
+            "George Gipps",
             "Governor Philip Gidley King",
-            "Governor Arthur Phillip",
-            "Governor Charles Hotham",
-            "Governor George Gipps"
+            "Edward Trelawny"
           ],
           "answer": "Governor Philip Gidley King",
           "a": "Governor Philip Gidley King",
-          "explanation": "Governor Philip Gidley King issued a proclamation authorising soldiers and settlers to 'shoot them on sight'."
+          "explanation": "Governor Philip Gidley King outlawed Aboriginal people in frontier districts and authorised settlers and soldiers to shoot on sight."
         },
         {
-          "question": "On what date was Pemulwuy ambushed and shot dead by a British sailor, ending the first phase of the frontier wars?",
-          "q": "On what date was Pemulwuy ambushed and shot dead by a British sailor, ending the first phase of the frontier wars?",
+          "stage": 5,
+          "question": "In what year was Bidjigal resistance leader Pemulwuy ambushed and killed, ending the first Sydney frontier war?",
+          "q": "In what year was Bidjigal resistance leader Pemulwuy ambushed and killed, ending the first Sydney frontier war?",
           "options": [
-            "2 June 1802",
-            "26 January 1788",
-            "3 December 1854",
-            "10 June 1838"
+            "1770",
+            "1802",
+            "1788",
+            "1838"
           ],
-          "answer": "2 June 1802",
-          "a": "2 June 1802",
-          "explanation": "On 2 June 1802, Pemulwuy was ambushed and shot dead by a British sailor."
+          "answer": "1802",
+          "a": "1802",
+          "explanation": "Pemulwuy was killed in an ambush in 1802, dealing a fatal blow to organised armed resistance around Sydney."
+        },
+        {
+          "stage": 5,
+          "question": "Where was Pemulwuy’s severed head shipped after he was killed in 1802?",
+          "q": "Where was Pemulwuy’s severed head shipped after he was killed in 1802?",
+          "options": [
+            "London",
+            "Paris",
+            "Berlin",
+            "Philadelphia"
+          ],
+          "answer": "London",
+          "a": "London",
+          "explanation": "Following Pemulwuy’s death in 1802, his severed head was preserved and shipped to London."
         }
       ]
     },
@@ -4707,7 +4980,8 @@ export default {
             "tag": "🏝️ VAN DIEMEN’S LAND",
             "trigger": "British authorities established secondary penal settlements in Van Diemen's Land (Tasmania); at Risdon Cove in 1804, soldiers opened fire with cannons on a Palawa kangaroo hunting party, sparking thirty years of conflict.",
             "connective": "Initiated the devastating invasion of Tasmania, where convicts and settlers competed ruthlessly with Indigenous clans for the island’s hunting grounds and fertile Midlands.",
-            "question": "Why did the British settlement of Van Diemen's Land trigger violent conflict with the Palawa people?"
+            "question": "Why did British settlement in Van Diemen’s Land spark war with Palawa clans?",
+            "prose_hash": "3b5c3c1903"
           },
           {
             "step": 2,
@@ -4717,7 +4991,8 @@ export default {
             "tag": "📜 MARTIAL LAW & BLACK LINE",
             "trigger": "Governor Arthur declared martial law in 1828, authorising soldiers to shoot or capture Aboriginal Tasmanians, culminating in the 1830 'Black Line' where 2,200 armed men swept across the island to drive the Palawa into the Tasman Peninsula.",
             "connective": "Represented the most comprehensive military campaign conducted by the British Army against an Indigenous population, costing £30,000 and devastating the remaining Palawa clans.",
-            "question": "How did Governor Arthur's martial law and the 'Black Line' escalate the Black War?"
+            "question": "Why did Governor Arthur’s 1830 Black Line fail to capture Palawa warriors?",
+            "prose_hash": "c0002bc861"
           },
           {
             "step": 3,
@@ -4727,7 +5002,8 @@ export default {
             "tag": "💔 WYBALENNA EXILE",
             "trigger": "Believing it would save her people from extermination, Palawa leader Truganini helped missionary George Augustus Robinson negotiate a truce; instead, the surviving 200 Aboriginal Tasmanians were exiled to a windswept penal camp at Wybalenna on Flinders Island.",
             "connective": "Resulted in catastrophic cultural and physical trauma, where cold, disease, and forced Christianisation decimated the survivors, making Truganini an enduring symbol of survival and tragedy.",
-            "question": "Why was the relocation of the Palawa to Wybalenna on Flinders Island catastrophic?"
+            "question": "What happened to the 200 Palawa people exiled to Wybalenna camp?",
+            "prose_hash": "2378239808"
           },
           {
             "step": 4,
@@ -4737,7 +5013,8 @@ export default {
             "tag": "🐑 SQUATTER INVASION",
             "trigger": "Wealthy British settlers called 'squatters' illegally seized millions of acres of inland grazing country to run massive flocks of Merino sheep for the booming Yorkshire woollen mills, destroying native yam fields and waterholes.",
             "connective": "Transformed the Australian interior into a commercial pastoral powerhouse while pushing the frontier wars hundreds of miles into the mainland bush, triggering violent reprisals.",
-            "question": "How did the Merino wool boom drive violent frontier expansion across the Australian interior?"
+            "question": "How did the Merino wool boom drive squatters onto Indigenous lands?",
+            "prose_hash": "c1c2cb8517"
           },
           {
             "step": 5,
@@ -4747,7 +5024,8 @@ export default {
             "tag": "⚖️ MYALL CREEK TRIAL",
             "trigger": "A gang of eleven white stockmen tied up and murdered 28 unarmed Wirrayaraay women, children, and elders at Myall Creek; in an unprecedented verdict, seven perpetrators were convicted of murder and publicly hanged.",
             "connective": "Marked the only time in colonial Australian history that white perpetrators were legally executed for murdering Aboriginal people, prompting intense fury from wealthy squatters and driving future frontier massacres underground.",
-            "question": "Why was the 1838 Myall Creek trial an unprecedented turning point in colonial Australian law?"
+            "question": "Why was the 1838 Myall Creek murder verdict a landmark in colonial law?",
+            "prose_hash": "28ae5d34f8"
           }
         ]
       },
@@ -4756,13 +5034,13 @@ export default {
           "step": 1,
           "para_ref": "[4.1]",
           "date": "1803–1824",
-          "heading": "Why did the British settlement of Van Diemen’s Land trigger violent conflict with the Palawa people?",
+          "heading": "Why did British settlement in Van Diemen’s Land spark war with Palawa clans?",
           "bullets": [
             "Secondary Penal Colony",
             "Risdon Cove Cannon Fire",
             "Palawa Hunting Grounds"
           ],
-          "focus_clue": "How did the deployment of hardened convicts and armed sealers across Tasmania lead to immediate frontier bloodshed?",
+          "focus_clue": "Why did British settlement in Van Diemen’s Land spark war with Palawa clans?",
           "words": [
             {
               "term": "Secondary Penal Colony",
@@ -4779,20 +5057,24 @@ export default {
           ],
           "model_sentence": "The founding of a <strong>secondary penal colony</strong> led directly to <strong>Risdon Cove cannon fire</strong> and violent seizures of <strong>Palawa hunting grounds</strong>.",
           "modelSentence": "The founding of a <strong>secondary penal colony</strong> led directly to <strong>Risdon Cove cannon fire</strong> and violent seizures of <strong>Palawa hunting grounds</strong>.",
-          "title": "Why did the British settlement of Van Diemen’s Land trigger violent conflict with the Palawa people?",
-          "dates": "1803–1824"
+          "title": "The Invasion of Van Diemen’s Land & Risdon Cove",
+          "dates": "1803–1824",
+          "question": "Why did British settlement in Van Diemen’s Land spark war with Palawa clans?",
+          "questionHeading": "Why did British settlement in Van Diemen’s Land spark war with Palawa clans?",
+          "focusClue": "Why did British settlement in Van Diemen’s Land spark war with Palawa clans?",
+          "prose_hash": "3b5c3c1903"
         },
         {
           "step": 2,
           "para_ref": "[4.2]",
           "date": "1826–1830",
-          "heading": "How did Governor Arthur’s martial law and the ‘Black Line’ escalate the Black War?",
+          "heading": "Why did Governor Arthur’s 1830 Black Line fail to capture Palawa warriors?",
           "bullets": [
             "Governor Arthur Martial Law",
             "2,200 Armed Men",
             "The Black Line Sweeps"
           ],
-          "focus_clue": "Why did Governor Arthur mobilize the entire male civilian and military population into a 120-mile human chain across Tasmania?",
+          "focus_clue": "Why did Governor Arthur’s 1830 Black Line fail to capture Palawa warriors?",
           "words": [
             {
               "term": "Governor Arthur Martial Law",
@@ -4809,20 +5091,24 @@ export default {
           ],
           "model_sentence": "Under <strong>Governor Arthur martial law</strong>, an army of <strong>2,200 armed men</strong> staged <strong>the Black Line sweeps</strong> across the island of Van Diemen's Land.",
           "modelSentence": "Under <strong>Governor Arthur martial law</strong>, an army of <strong>2,200 armed men</strong> staged <strong>the Black Line sweeps</strong> across the island of Van Diemen's Land.",
-          "title": "How did Governor Arthur’s martial law and the ‘Black Line’ escalate the Black War?",
-          "dates": "1826–1830"
+          "title": "The Black War & Governor Arthur’s Martial Law",
+          "dates": "1826–1830",
+          "question": "Why did Governor Arthur’s 1830 Black Line fail to capture Palawa warriors?",
+          "questionHeading": "Why did Governor Arthur’s 1830 Black Line fail to capture Palawa warriors?",
+          "focusClue": "Why did Governor Arthur’s 1830 Black Line fail to capture Palawa warriors?",
+          "prose_hash": "c0002bc861"
         },
         {
           "step": 3,
           "para_ref": "[4.3]",
           "date": "1830–1835",
-          "heading": "Why was the relocation of the Palawa to Wybalenna on Flinders Island catastrophic?",
+          "heading": "What happened to the 200 Palawa people exiled to Wybalenna camp?",
           "bullets": [
             "Truganini Peacemaking",
             "200 Exiled to Flinders",
             "Wybalenna Camp Sickness"
           ],
-          "focus_clue": "How did broken government promises transform Robinson’s 'Friendly Mission' into an exile camp where disease wiped out over 150 people?",
+          "focus_clue": "What happened to the 200 Palawa people exiled to Wybalenna camp?",
           "words": [
             {
               "term": "Truganini Peacemaking",
@@ -4839,20 +5125,24 @@ export default {
           ],
           "model_sentence": "Despite <strong>Truganini peacemaking</strong>, approximately <strong>200 exiled to Flinders</strong> perished from despair and <strong>Wybalenna camp sickness</strong>.",
           "modelSentence": "Despite <strong>Truganini peacemaking</strong>, approximately <strong>200 exiled to Flinders</strong> perished from despair and <strong>Wybalenna camp sickness</strong>.",
-          "title": "Why was the relocation of the Palawa to Wybalenna on Flinders Island catastrophic?",
-          "dates": "1830–1835"
+          "title": "Truganini & The Exile to Flinders Island",
+          "dates": "1830–1835",
+          "question": "What happened to the 200 Palawa people exiled to Wybalenna camp?",
+          "questionHeading": "What happened to the 200 Palawa people exiled to Wybalenna camp?",
+          "focusClue": "What happened to the 200 Palawa people exiled to Wybalenna camp?",
+          "prose_hash": "2378239808"
         },
         {
           "step": 4,
           "para_ref": "[4.4]",
           "date": "1820–1838",
-          "heading": "How did the Merino wool boom drive violent frontier expansion across the Australian interior?",
+          "heading": "How did the Merino wool boom drive squatters onto Indigenous lands?",
           "bullets": [
             "Merino Sheep Flocks",
             "Yorkshire Wool Demand",
             "Seizing Native Waterholes"
           ],
-          "focus_clue": "Why did squatter pastoralists push hundreds of miles beyond the limits of colonial law, and how did sheep destroy Indigenous food supplies?",
+          "focus_clue": "How did the Merino wool boom drive squatters onto Indigenous lands?",
           "words": [
             {
               "term": "Merino Sheep Flocks",
@@ -4869,20 +5159,24 @@ export default {
           ],
           "model_sentence": "Explosive growth of <strong>Merino sheep flocks</strong> driven by <strong>Yorkshire wool demand</strong> resulted in squatters <strong>seizing native waterholes</strong> across the interior.",
           "modelSentence": "Explosive growth of <strong>Merino sheep flocks</strong> driven by <strong>Yorkshire wool demand</strong> resulted in squatters <strong>seizing native waterholes</strong> across the interior.",
-          "title": "How did the Merino wool boom drive violent frontier expansion across the Australian interior?",
-          "dates": "1820–1838"
+          "title": "Squatters, Merino Sheep & The Pastoral Land Grab",
+          "dates": "1820–1838",
+          "question": "How did the Merino wool boom drive squatters onto Indigenous lands?",
+          "questionHeading": "How did the Merino wool boom drive squatters onto Indigenous lands?",
+          "focusClue": "How did the Merino wool boom drive squatters onto Indigenous lands?",
+          "prose_hash": "c1c2cb8517"
         },
         {
           "step": 5,
           "para_ref": "[4.5]",
           "date": "1838",
-          "heading": "Why was the 1838 Myall Creek trial an unprecedented turning point in colonial Australian law?",
+          "heading": "Why was the 1838 Myall Creek murder verdict a landmark in colonial law?",
           "bullets": [
             "28 Wirrayaraay Murdered",
             "7 White Stockmen Hanged",
             "Squatter Outrage & Secrecy"
           ],
-          "focus_clue": "Why did the public hanging of seven white stockmen outrage wealthy landowners, and how did it change the nature of frontier violence?",
+          "focus_clue": "Why was the 1838 Myall Creek murder verdict a landmark in colonial law?",
           "words": [
             {
               "term": "28 Wirrayaraay Murdered",
@@ -4899,33 +5193,78 @@ export default {
           ],
           "model_sentence": "After <strong>28 Wirrayaraay murdered</strong> at Myall Creek, <strong>7 white stockmen hanged</strong> in a landmark verdict that caused <strong>squatter outrage & secrecy</strong>.",
           "modelSentence": "After <strong>28 Wirrayaraay murdered</strong> at Myall Creek, <strong>7 white stockmen hanged</strong> in a landmark verdict that caused <strong>squatter outrage & secrecy</strong>.",
-          "title": "Why was the 1838 Myall Creek trial an unprecedented turning point in colonial Australian law?",
-          "dates": "1838"
+          "title": "The Myall Creek Massacre & The Historic 1838 Trial",
+          "dates": "1838",
+          "question": "Why was the 1838 Myall Creek murder verdict a landmark in colonial law?",
+          "questionHeading": "Why was the 1838 Myall Creek murder verdict a landmark in colonial law?",
+          "focusClue": "Why was the 1838 Myall Creek murder verdict a landmark in colonial law?",
+          "prose_hash": "28ae5d34f8"
         }
       ],
       "did_you_know": "When the 1830 'Black Line' swept across Tasmania—comprising 2,200 armed soldiers, police, and settlers marching shoulder-to-shoulder across 120 miles of rugged mountains and forests at a cost of £30,000—the entire military operation succeeded in capturing only two Aboriginal people: an elderly man who fell asleep behind a log and a young boy! The Palawa warriors effortlessly slipped through the British lines under cover of darkness.",
       "do_now": {
         "type": "questions",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What disease outbreak killed between 50% and 70% of the Sydney Eora population in April 1789?",
-            "answer": "Smallpox (gal-galla)."
+            "stage": 1,
+            "question": "For at least how many years had First Nations peoples lived continuously in Australia before European arrival?",
+            "answer": "65,000 years",
+            "explanation": "First Nations peoples inhabited Australia for over 65,000 years in the world’s oldest continuous living cultures."
           },
           {
-            "question": "Which Bidjigal warrior led 12 years of armed guerrilla resistance against British expansion around Sydney?",
-            "answer": "Pemulwuy."
+            "stage": 2,
+            "question": "What catastrophic epidemic struck First Nations clans around Sydney Harbour in April 1789?",
+            "answer": "Smallpox",
+            "explanation": "In April 1789, a devastating smallpox epidemic swept through Indigenous clans around Sydney."
           },
           {
-            "question": "What 1797 military clash saw Pemulwuy lead 100 warriors in a direct daytime assault on British redcoats?",
-            "answer": "The Battle of Parramatta."
+            "stage": 3,
+            "question": "Which Wangal warrior was kidnapped by British marines in 1789 to act as an intermediary with Sydney clans?",
+            "answer": "Bennelong",
+            "explanation": "In late 1789, Wangal warrior Bennelong was kidnapped by marines on Governor Phillip’s orders."
           },
           {
-            "question": "Who was the Eora intermediary who met King George III in London in 1793?",
-            "answer": "Woollarawarre Bennelong."
+            "stage": 4,
+            "question": "Which Bidjigal warrior united Sydney Basin clans in armed guerrilla resistance against British invasion from 1790?",
+            "answer": "Pemulwuy",
+            "explanation": "Bidjigal leader Pemulwuy led a coordinated guerrilla resistance campaign across the Sydney Basin against British expansion."
           },
           {
-            "question": "On what river did British expansion lead Governor King to issue 'shoot-on-sight' orders in 1801?",
-            "answer": "The Hawkesbury River."
+            "stage": 5,
+            "question": "Along which fertile river did expanding British farms provoke intense frontier warfare in the late 1790s?",
+            "answer": "Hawkesbury",
+            "explanation": "Fertile farming invasions along the Hawkesbury drove Dharug families from yam beds and sparked fierce guerrilla warfare."
+          },
+          {
+            "stage": 1,
+            "question": "More than how many distinct First Nations existed across the Australian continent prior to 1788?",
+            "answer": "More than 250",
+            "explanation": "Over 250 distinct sovereign language nations occupied ancestral territories across Australia before 1788."
+          },
+          {
+            "stage": 2,
+            "question": "By what Indigenous name was the 1789 smallpox epidemic known among the Eora clans?",
+            "answer": "Gal-galla",
+            "explanation": "The April 1789 gal-galla smallpox outbreak devastated local Eora clans who had no prior immunity."
+          },
+          {
+            "stage": 3,
+            "question": "Where was Bennelong held in Sydney after being captured by Governor Phillip’s marines in 1789?",
+            "answer": "Government House",
+            "explanation": "Held at Government House, Bennelong learned English and became a key cultural intermediary between Phillip and local clans."
+          },
+          {
+            "stage": 4,
+            "question": "How did Pemulwuy’s warriors strike back economically against expanding British settlements?",
+            "answer": "Burning settler farms",
+            "explanation": "Pemulwuy’s fighters ambushed soldiers, speared livestock, and retaliated against land theft by burning settler farms and crops."
+          },
+          {
+            "stage": 5,
+            "question": "Which British Governor issued ruthless \"shoot on sight\" orders outlawing Indigenous warriors around Parramatta and the Hawkesbury?",
+            "answer": "Governor Philip Gidley King",
+            "explanation": "Governor Philip Gidley King outlawed Aboriginal people in frontier districts and authorised settlers and soldiers to shoot on sight."
           }
         ]
       },
@@ -5039,7 +5378,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> In 1803, the British Crown established a secondary penal colony in Van Diemen’s Land (modern Tasmania) to deter French expansion. British authorities transported repeat convicts and soldiers to an island home to around 6,000 Indigenous Palawa people.</p><p class=\"prose-p\">Violence erupted in May 1804 when British soldiers opened Risdon Cove cannon fire upon three hundred Palawa hunters on a traditional kangaroo hunt. As pastoral sheep farmers seized fertile Palawa hunting grounds across the Tasmanian Midlands, conflict escalated into two decades of bloody retaliation, kidnapping of Aboriginal women, and frontier warfare.</p>"
         },
         {
           "act": 2,
@@ -5084,7 +5424,8 @@ export default {
               },
               "id": "aus_l4_src_b"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> By the late 1820s, Palawa guerrilla resistance threatened British settlement across Tasmania. In response, Governor Arthur martial law was declared in 1828, authorising British forces and armed settlers to shoot Aboriginal people on sight throughout settled districts.</p><p class=\"prose-p\">In October 1830, Arthur mobilised 2,200 armed men in a massive human cordon. Over seven weeks, the Black Line sweeps south across the island to drive surviving Palawa into the Tasman Peninsula. Costing £30,000, the operation was a tactical failure, capturing only two Palawa as warriors slipped through the dragnet.</p>"
         },
         {
           "act": 3,
@@ -5134,7 +5475,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Seeking to end the conflict without military humiliation, British missionary George Augustus Robinson enlisted Truganini peacemaking diplomacy. A Nuenonne woman whose family had been murdered by settlers, Truganini persuaded surviving Palawa clans to accept government protection.</p><p class=\"prose-p\">However, British authorities betrayed the agreement. Around 200 exiled to Flinders Island were imprisoned in the damp, windswept settlement of Wybalenna. Plagued by depression, poor diet, and Wybalenna camp sickness, over 150 Palawa died within a decade, making Truganini an enduring symbol of tragic Palawa survival and resistance against imperial extermination.</p>"
         },
         {
           "act": 4,
@@ -5184,7 +5526,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> On the Australian mainland, economic forces drove an immense land grab across New South Wales and Victoria. Industrial revolution in Britain created soaring Yorkshire wool demand, making fine Australian sheep fleece exceptionally valuable for northern textile mills.</p><p class=\"prose-p\">Wealthy colonial pastoralists, known as squatters, pushed millions of Merino sheep flocks across the Blue Mountains into the interior. Squatters seized Indigenous country, fencing creeks and seizing native waterholes for livestock. Sheep devastated native yam daisy fields, destroying Aboriginal food supplies and triggering bitter guerrilla raids as starving clans speared grazing livestock.</p>"
         },
         {
           "act": 5,
@@ -5229,7 +5572,8 @@ export default {
               },
               "id": "aus_l4_src_e"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> In June 1838, frontier brutality culminated in the Myall Creek Massacre. A gang of eleven white stockmen attacked a peaceful camp of unresisting Aboriginal people, leaving 28 Wirrayaraay murdered in cold blood before burning their corpses.</p><p class=\"prose-p\">Governor George Gipps ordered a relentless investigation, conducting two trials in Sydney that resulted in 7 white stockmen hanged for murder. This landmark verdict provoked furious squatter outrage & secrecy across colonial newspapers, ensuring future frontier massacres were hidden from colonial authorities behind a code of rural settler silence.</p>"
         }
       ],
       "quick_quiz": [
@@ -5861,264 +6205,284 @@ export default {
       ],
       "quiz": [
         {
-          "question": "What was the island of Tasmania named during early British colonial rule?",
-          "q": "What was the island of Tasmania named during early British colonial rule?",
+          "stage": 1,
+          "question": "What colonial name was given to Tasmania when Britain established a secondary penal colony there in 1803?",
+          "q": "What colonial name was given to Tasmania when Britain established a secondary penal colony there in 1803?",
           "options": [
+            "New South Wales",
+            "Norfolk Island",
             "Van Diemen’s Land",
-            "New Holland",
-            "Botany Bay",
-            "Norfolk Island"
+            "Nova Scotia"
           ],
           "answer": "Van Diemen’s Land",
           "a": "Van Diemen’s Land",
-          "explanation": "Tasmania was named Van Diemen’s Land by Dutch explorer Abel Tasman in 1642, a name retained by Britain until 1856."
+          "explanation": "In 1803, the British Crown founded a secondary penal colony in Van Diemen’s Land (modern Tasmania) to deter France."
         },
         {
-          "question": "What was the 'Black Line' military operation in Tasmania in October 1830?",
-          "q": "What was the 'Black Line' military operation in Tasmania in October 1830?",
+          "stage": 1,
+          "question": "Which Indigenous people inhabited Tasmania prior to the 1803 British invasion?",
+          "q": "Which Indigenous people inhabited Tasmania prior to the 1803 British invasion?",
           "options": [
-            "A 120-mile human cordon of 2,200 armed men sweeping across Tasmania to capture the Palawa",
-            "A railway line constructed by convicts across the Tasmanian interior",
-            "A defensive stone wall built around Hobart to protect settlers from bushrangers",
-            "A naval blockade of Bass Strait to prevent French landings"
+            "Māori people",
+            "Palawa people",
+            "Gweagal people",
+            "Taíno people"
           ],
-          "answer": "A 120-mile human cordon of 2,200 armed men sweeping across Tasmania to capture the Palawa",
-          "a": "A 120-mile human cordon of 2,200 armed men sweeping across Tasmania to capture the Palawa",
-          "explanation": "Governor Arthur mobilized 2,200 men into an unbroken line to herd remaining Indigenous Tasmanians onto the Tasman Peninsula."
+          "answer": "Palawa people",
+          "a": "Palawa people",
+          "explanation": "Van Diemen’s Land was the ancestral homeland of around 6,000 Indigenous Palawa people."
         },
         {
-          "question": "Where were surviving Aboriginal Tasmanians exiled in the 1830s under George Augustus Robinson’s scheme?",
-          "q": "Where were surviving Aboriginal Tasmanians exiled in the 1830s under George Augustus Robinson’s scheme?",
-          "options": [
-            "Wybalenna on Flinders Island",
-            "Sydney Cove in New South Wales",
-            "Port Arthur penal prison",
-            "Rottnest Island in Western Australia"
-          ],
-          "answer": "Wybalenna on Flinders Island",
-          "a": "Wybalenna on Flinders Island",
-          "explanation": "Surviving Palawa people were exiled to Wybalenna on Flinders Island, where over 150 died from disease and neglect."
-        },
-        {
-          "question": "Why were wealthy pastoralists who seized inland territory called 'squatters'?",
-          "q": "Why were wealthy pastoralists who seized inland territory called 'squatters'?",
-          "options": [
-            "They ignored government regulations and illegally occupied vast empires of land",
-            "Because they built low mud huts that forced them to squat on the ground",
-            "Because they refused to ride horses and traveled everywhere on foot",
-            "Because they were former convicts who were not permitted to stand upright in courts"
-          ],
-          "answer": "They ignored government regulations and illegally occupied vast empires of land",
-          "a": "They ignored government regulations and illegally occupied vast empires of land",
-          "explanation": "Wealthy colonial elites, known as squatters, ignored government regulations and illegally occupied vast empires of land."
-        },
-        {
-          "question": "Why was the 1838 Myall Creek trial historically unique in colonial Australia?",
-          "q": "Why was the 1838 Myall Creek trial historically unique in colonial Australia?",
-          "options": [
-            "It was the only time white settlers were legally convicted and hanged for murdering Indigenous people",
-            "It was the first trial where an Aboriginal Australian was appointed as chief judge",
-            "It resulted in the British government granting full land ownership back to the Wirrayaraay nation",
-            "It was conducted entirely in the Wirrayaraay language with Indigenous translators"
-          ],
-          "answer": "It was the only time white settlers were legally convicted and hanged for murdering Indigenous people",
-          "a": "It was the only time white settlers were legally convicted and hanged for murdering Indigenous people",
-          "explanation": "Seven white stockmen were publicly hanged for the murder of 28 Wirrayaraay people, an unprecedented verdict in colonial law."
-        },
-        {
-          "question": "In which year did the British Crown establish a second penal colony in Van Diemen's Land (Tasmania)?",
-          "q": "In which year did the British Crown establish a second penal colony in Van Diemen's Land (Tasmania)?",
-          "options": [
-            "1803",
-            "1788",
-            "1851",
-            "1838"
-          ],
-          "answer": "1803",
-          "a": "1803",
-          "explanation": "In 1803, fearing French naval expansion into Bass Strait, the British Crown established a colony in Van Diemen’s Land."
-        },
-        {
-          "question": "What was the name of the Indigenous Tasmanian people whose 6,000 to 8,000 population lived on the island?",
-          "q": "What was the name of the Indigenous Tasmanian people whose 6,000 to 8,000 population lived on the island?",
-          "options": [
-            "The Palawa people",
-            "The Eora people",
-            "The Dharawal people",
-            "The Wirrayaraay people"
-          ],
-          "answer": "The Palawa people",
-          "a": "The Palawa people",
-          "explanation": "Van Diemen’s Land was home to an estimated 6,000 to 8,000 Palawa people, divided into nine distinct nations."
-        },
-        {
-          "question": "At which location did British soldiers fire naval cannons on a Palawa kangaroo hunt in May 1804?",
-          "q": "At which location did British soldiers fire naval cannons on a Palawa kangaroo hunt in May 1804?",
+          "stage": 1,
+          "question": "Where in Tasmania did panicked British soldiers fire naval cannons on 300 Palawa people during a kangaroo hunt in May 1804?",
+          "q": "Where in Tasmania did panicked British soldiers fire naval cannons on 300 Palawa people during a kangaroo hunt in May 1804?",
           "options": [
             "Risdon Cove",
+            "Sydney Cove",
             "Myall Creek",
-            "Eureka",
-            "Ballarat"
+            "Botany Bay"
           ],
           "answer": "Risdon Cove",
           "a": "Risdon Cove",
-          "explanation": "In May 1804 at Risdon Cove, soldiers panicked and fired grape-shot from naval cannons into a Palawa kangaroo hunt."
+          "explanation": "Bloodshed erupted at Risdon Cove in May 1804 when British soldiers fired cannon shot at a Palawa kangaroo hunt."
         },
         {
-          "question": "Which British Governor declared martial law in Van Diemen's Land in November 1828?",
-          "q": "Which British Governor declared martial law in Van Diemen's Land in November 1828?",
+          "stage": 1,
+          "question": "Which pastoral settlers invaded sacred Palawa hunting grounds across the fertile Tasmanian Midlands?",
+          "q": "Which pastoral settlers invaded sacred Palawa hunting grounds across the fertile Tasmanian Midlands?",
           "options": [
-            "Governor Colonel George Arthur",
-            "Governor Arthur Phillip",
-            "Governor Sir George Gipps",
-            "Governor Charles Hotham"
+            "Sugar planters",
+            "Cotton weavers",
+            "Gold commissioners",
+            "Sheep farmers"
           ],
-          "answer": "Governor Colonel George Arthur",
-          "a": "Governor Colonel George Arthur",
-          "explanation": "In November 1828, Governor Colonel George Arthur declared martial law, authorising troops to shoot Aboriginal people."
+          "answer": "Sheep farmers",
+          "a": "Sheep farmers",
+          "explanation": "Expanding sheep farmers seized fertile Palawa hunting grounds across the Midlands, triggering two decades of frontier violence."
         },
         {
-          "question": "What was the military sweep called that involved 2,200 armed men forming an unbroken 120-mile human cordon in October 1830?",
-          "q": "What was the military sweep called that involved 2,200 armed men forming an unbroken 120-mile human cordon in October 1830?",
+          "stage": 2,
+          "question": "What emergency measure did Governor George Arthur declare in 1828 authorising troops to shoot Aboriginal people in settled districts?",
+          "q": "What emergency measure did Governor George Arthur declare in 1828 authorising troops to shoot Aboriginal people in settled districts?",
+          "options": [
+            "Habeas corpus",
+            "Universal suffrage",
+            "Martial law",
+            "Free trade"
+          ],
+          "answer": "Martial law",
+          "a": "Martial law",
+          "explanation": "During the Black War in 1828, Governor Arthur declared martial law across settled districts of Tasmania."
+        },
+        {
+          "stage": 2,
+          "question": "How many armed men did Governor Arthur mobilise in October 1830 to form a human cordon across Tasmania?",
+          "q": "How many armed men did Governor Arthur mobilise in October 1830 to form a human cordon across Tasmania?",
+          "options": [
+            "150 armed men",
+            "2,200 armed men",
+            "10,000 armed men",
+            "50 armed men"
+          ],
+          "answer": "2,200 armed men",
+          "a": "2,200 armed men",
+          "explanation": "In October 1830, Arthur mobilised 2,200 soldiers, police, convicts, and settlers in a massive sweep across the island."
+        },
+        {
+          "stage": 2,
+          "question": "By what name was the seven-week October 1830 military sweep across Tasmania known?",
+          "q": "By what name was the seven-week October 1830 military sweep across Tasmania known?",
           "options": [
             "The Black Line",
-            "The Great March",
-            "The Redcoat Wall",
-            "The Tasman Sweep"
+            "The Proclamation Line",
+            "The Thin Red Line",
+            "The Western Design"
           ],
           "answer": "The Black Line",
           "a": "The Black Line",
-          "explanation": "Arthur launched the 'Black Line' in October 1830: 2,200 armed men formed an unbroken human cordon across the island."
+          "explanation": "For seven weeks in 1830, the Black Line swept south to drive surviving Palawa onto the Tasman Peninsula."
         },
         {
-          "question": "How much did the 1830 'Black Line' military operation cost the British colonial government?",
-          "q": "How much did the 1830 'Black Line' military operation cost the British colonial government?",
+          "stage": 2,
+          "question": "How much did the failed 1830 Black Line operation cost while capturing only two Palawa people?",
+          "q": "How much did the failed 1830 Black Line operation cost while capturing only two Palawa people?",
           "options": [
-            "£30,000",
             "£500",
-            "£1,000,000",
-            "£5,000"
+            "£133 million",
+            "£10,000",
+            "£30,000"
           ],
           "answer": "£30,000",
           "a": "£30,000",
-          "explanation": "The Black Line operation cost £30,000 but captured only two Aboriginal people."
+          "explanation": "Costing £30,000, the Black Line proved a tactical failure as Palawa warriors slipped easily through the cordon."
         },
         {
-          "question": "Which evangelical builder and missionary was hired by Governor Arthur to conduct the 'Friendly Mission'?",
-          "q": "Which evangelical builder and missionary was hired by Governor Arthur to conduct the 'Friendly Mission'?",
+          "stage": 3,
+          "question": "Which British missionary persuaded surviving Palawa clans to accept government relocation in the early 1830s?",
+          "q": "Which British missionary persuaded surviving Palawa clans to accept government relocation in the early 1830s?",
           "options": [
+            "Granville Sharp",
+            "William Bentinck",
             "George Augustus Robinson",
-            "William Cooper",
-            "John Macarthur",
-            "James Ruse"
+            "Joseph Banks"
           ],
           "answer": "George Augustus Robinson",
           "a": "George Augustus Robinson",
-          "explanation": "Governor Arthur hired evangelical missionary George Augustus Robinson to embark on a 'Friendly Mission'."
+          "explanation": "Missionary George Augustus Robinson promised surviving Palawa protection and eventual return to their homelands."
         },
         {
-          "question": "Which young Nuenonne woman helped Robinson negotiate with surviving Palawa clans?",
-          "q": "Which young Nuenonne woman helped Robinson negotiate with surviving Palawa clans?",
+          "stage": 3,
+          "question": "Which Nuenonne woman assisted Robinson’s peacemaking mission in the hope of saving her surviving people?",
+          "q": "Which Nuenonne woman assisted Robinson’s peacemaking mission in the hope of saving her surviving people?",
           "options": [
+            "Queen Nanny",
             "Truganini",
-            "Pemulwuy",
-            "Bennelong",
-            "Willemering"
+            "Rani Lakshmibai",
+            "Claudia Jones"
           ],
           "answer": "Truganini",
           "a": "Truganini",
-          "explanation": "Robinson enlisted the help of Truganini, a remarkable young Nuenonne woman from Bruny Island."
+          "explanation": "Truganini, whose family had been murdered by settlers and sealers, helped persuade surviving Palawa clans to end the fighting."
         },
         {
-          "question": "To which barren penal settlement on Flinders Island were the surviving 200 Aboriginal Tasmanians exiled?",
-          "q": "To which barren penal settlement on Flinders Island were the surviving 200 Aboriginal Tasmanians exiled?",
+          "stage": 3,
+          "question": "To which damp, windswept settlement on Flinders Island were around 200 surviving Palawa exiled?",
+          "q": "To which damp, windswept settlement on Flinders Island were around 200 surviving Palawa exiled?",
           "options": [
             "Wybalenna",
-            "Port Arthur",
-            "Sydney Cove",
-            "Norfolk Island"
+            "Parramatta",
+            "Bathurst",
+            "Ballarat"
           ],
           "answer": "Wybalenna",
           "a": "Wybalenna",
-          "explanation": "The surviving 200 Aboriginal Tasmanians were exiled to Wybalenna on Flinders Island."
+          "explanation": "Betraying promises of protection on country, authorities exiled around 200 surviving Palawa to Wybalenna on Flinders Island."
         },
         {
-          "question": "Which breed of sheep, introduced by pioneers like John Macarthur, thrived in the dry Australian climate?",
-          "q": "Which breed of sheep, introduced by pioneers like John Macarthur, thrived in the dry Australian climate?",
+          "stage": 3,
+          "question": "Over how many of the 200 Palawa exiles died within a decade from camp sickness and despair at Wybalenna?",
+          "q": "Over how many of the 200 Palawa exiles died within a decade from camp sickness and despair at Wybalenna?",
           "options": [
-            "Merino sheep",
-            "Suffolk sheep",
-            "Dorper sheep",
-            "Romney sheep"
+            "Fewer than 10",
+            "Exactly 22",
+            "Around 28",
+            "Over 150"
           ],
-          "answer": "Merino sheep",
-          "a": "Merino sheep",
-          "explanation": "Australian Merino sheep, bred by pioneers like John Macarthur, thrived in the dry Australian climate."
+          "answer": "Over 150",
+          "a": "Over 150",
+          "explanation": "Plagued by respiratory camp sickness and grief, over 150 of the 200 exiled Palawa perished at Wybalenna within ten years."
         },
         {
-          "question": "Which mountainous barrier did squatters cross with millions of sheep to occupy inland territory?",
-          "q": "Which mountainous barrier did squatters cross with millions of sheep to occupy inland territory?",
+          "stage": 4,
+          "question": "Soaring demand for raw fleece from textile mills in which English region drove Australia’s mainland pastoral land grab?",
+          "q": "Soaring demand for raw fleece from textile mills in which English region drove Australia’s mainland pastoral land grab?",
           "options": [
-            "The Blue Mountains",
-            "The Snowy Mountains",
-            "The Flinders Ranges",
-            "The MacDonnell Ranges"
+            "Cornwall tin demand",
+            "Kentish hop demand",
+            "Yorkshire wool demand",
+            "Portsmouth hemp demand"
           ],
-          "answer": "The Blue Mountains",
-          "a": "The Blue Mountains",
-          "explanation": "Squatters drove millions of sheep over the Blue Mountains, illegally occupying vast empires of land."
+          "answer": "Yorkshire wool demand",
+          "a": "Yorkshire wool demand",
+          "explanation": "Industrial textile mills in Yorkshire created surging demand for fine Australian wool between 1820 and 1838."
         },
         {
-          "question": "What traditional First Nations staple food plant was destroyed when sharp-hoofed sheep trampled the topsoil?",
-          "q": "What traditional First Nations staple food plant was destroyed when sharp-hoofed sheep trampled the topsoil?",
+          "stage": 4,
+          "question": "What name was given to wealthy colonial pastoralists who pushed vast sheep flocks inland across Indigenous country?",
+          "q": "What name was given to wealthy colonial pastoralists who pushed vast sheep flocks inland across Indigenous country?",
           "options": [
-            "Yam daisies",
-            "Wheat stalks",
-            "Wild plums",
-            "Barley grain"
+            "Emancipists",
+            "Squatters",
+            "Suffragists",
+            "Luddites"
+          ],
+          "answer": "Squatters",
+          "a": "Squatters",
+          "explanation": "Wealthy pastoral squatters occupied vast tracts of inland country, seizing native waterholes for grazing flocks."
+        },
+        {
+          "stage": 4,
+          "question": "Which mountain barrier did squatters cross with millions of Merino sheep to occupy inland pastures?",
+          "q": "Which mountain barrier did squatters cross with millions of Merino sheep to occupy inland pastures?",
+          "options": [
+            "Blue Mountains",
+            "Appalachian Mountains",
+            "Pennine Hills",
+            "Southern Alps"
+          ],
+          "answer": "Blue Mountains",
+          "a": "Blue Mountains",
+          "explanation": "Squatters drove millions of Merino sheep across the Blue Mountains, trampling Indigenous ecosystems."
+        },
+        {
+          "stage": 4,
+          "question": "Which staple First Nations root crop was destroyed by sharp-hoofed Merino sheep flocks?",
+          "q": "Which staple First Nations root crop was destroyed by sharp-hoofed Merino sheep flocks?",
+          "options": [
+            "Sugar cane",
+            "Paddy rice",
+            "Cotton bolls",
+            "Yam daisies"
           ],
           "answer": "Yam daisies",
           "a": "Yam daisies",
-          "explanation": "Millions of sheep ate the yam daisies that formed the staple diet of First Nations nations."
+          "explanation": "Grazing Merino sheep muddied waterholes and devoured native yam daisies that sustained Aboriginal clans."
         },
         {
-          "question": "At which cattle station in northern New South Wales were 28 unarmed Wirrayaraay people murdered on 10 June 1838?",
-          "q": "At which cattle station in northern New South Wales were 28 unarmed Wirrayaraay people murdered on 10 June 1838?",
+          "stage": 5,
+          "question": "Where were 28 unarmed Wirrayaraay people murdered by white stockmen in June 1838?",
+          "q": "Where were 28 unarmed Wirrayaraay people murdered by white stockmen in June 1838?",
           "options": [
-            "Myall Creek",
             "Risdon Cove",
-            "Bathurst Station",
-            "Hawkesbury Station"
+            "Lambing Flat",
+            "Myall Creek",
+            "Bakery Hill"
           ],
           "answer": "Myall Creek",
           "a": "Myall Creek",
-          "explanation": "On Sunday 10 June 1838, eleven armed stockmen butchered 28 unarmed Wirrayaraay people at Myall Creek station."
+          "explanation": "In June 1838, eleven armed white stockmen murdered 28 peaceful Wirrayaraay people at Myall Creek before burning their bodies."
         },
         {
-          "question": "Who was the colonial Governor who insisted on an uncompromising investigation into the Myall Creek massacre?",
-          "q": "Who was the colonial Governor who insisted on an uncompromising investigation into the Myall Creek massacre?",
+          "stage": 5,
+          "question": "How many Wirrayaraay people were murdered in cold blood during the June 1838 Myall Creek Massacre?",
+          "q": "How many Wirrayaraay people were murdered in cold blood during the June 1838 Myall Creek Massacre?",
           "options": [
-            "Sir George Gipps",
+            "5 Wirrayaraay murdered",
+            "28 Wirrayaraay murdered",
+            "133 Wirrayaraay murdered",
+            "300 Wirrayaraay murdered"
+          ],
+          "answer": "28 Wirrayaraay murdered",
+          "a": "28 Wirrayaraay murdered",
+          "explanation": "Twenty-eight Wirrayaraay people were murdered by eleven stockmen at Myall Creek in June 1838."
+        },
+        {
+          "stage": 5,
+          "question": "Which colonial Governor ordered an uncompromising investigation and second trial over the Myall Creek Massacre?",
+          "q": "Which colonial Governor ordered an uncompromising investigation and second trial over the Myall Creek Massacre?",
+          "options": [
+            "George Gipps",
             "Arthur Phillip",
-            "Colonel George Arthur",
-            "Sir Charles Hotham"
+            "George Arthur",
+            "Philip Gidley King"
           ],
-          "answer": "Sir George Gipps",
-          "a": "Sir George Gipps",
-          "explanation": "Newly appointed Governor Sir George Gipps ordered an uncompromising investigation into the massacre."
+          "answer": "George Gipps",
+          "a": "George Gipps",
+          "explanation": "Governor George Gipps insisted on prosecuting the Myall Creek killers even after the first jury acquitted them."
         },
         {
-          "question": "How many white stockmen were convicted and publicly hanged for murder following the second Myall Creek trial?",
-          "q": "How many white stockmen were convicted and publicly hanged for murder following the second Myall Creek trial?",
+          "stage": 5,
+          "question": "What landmark punishment was carried out in Sydney after the second Myall Creek trial?",
+          "q": "What landmark punishment was carried out in Sydney after the second Myall Creek trial?",
           "options": [
-            "Seven stockmen",
-            "All eleven stockmen",
-            "None of them",
-            "Only one stockman"
+            "Small monetary fines imposed",
+            "Thirty-acre land grants revoked",
+            "Deportation to New Zealand",
+            "7 white stockmen hanged for murder"
           ],
-          "answer": "Seven stockmen",
-          "a": "Seven stockmen",
-          "explanation": "Seven stockmen were convicted of murder and publicly hanged in Sydney on 18 December 1838."
+          "answer": "7 white stockmen hanged for murder",
+          "a": "7 white stockmen hanged for murder",
+          "explanation": "Seven white stockmen were convicted and hanged in Sydney, sparking squatter outrage and rural secrecy over future massacres."
         }
       ]
     },
@@ -6169,7 +6533,8 @@ export default {
             "tag": "⛏️ GOLD RUSH BOOM",
             "trigger": "Following Edward Hargraves's discovery of payable gold in 1851, hundreds of thousands of immigrants rushed to Ballarat and Bendigo, tripling Australia’s population from 400,000 to over 1.2 million within a decade.",
             "connective": "Permanently broke the convict penal identity of Australia, turning Melbourne into one of the wealthiest cities in the British Empire and creating an assertive, diverse working class.",
-            "question": "How did the 1851 gold discoveries transform Australia from a penal colony into an economic powerhouse?"
+            "question": "How did the 1851 gold rush transform Australia’s population and wealth?",
+            "prose_hash": "8736431831"
           },
           {
             "step": 2,
@@ -6179,7 +6544,8 @@ export default {
             "tag": "🪪 LICENCE HUNTS",
             "trigger": "The colonial government imposed a punishing monthly 30-shilling miner's licence fee, sending corrupt police on brutal armed 'digger hunts' through the tent cities to arrest any miner who could not produce paper receipts.",
             "connective": "United thousands of diggers in outrage against taxation without representation, sparking mass protest rallies and the formation of the Ballarat Reform League.",
-            "question": "Why did the monthly miner's licence fee provoke widespread outrage among the gold diggers?"
+            "question": "Why did the 30-shilling monthly licence fee anger Ballarat gold diggers?",
+            "prose_hash": "2640dc9625"
           },
           {
             "step": 3,
@@ -6189,7 +6555,8 @@ export default {
             "tag": "⚔️ EUREKA STOCKADE",
             "trigger": "Diggers gathered on Bakery Hill, swearing an oath beneath the blue Southern Cross flag to defend their rights; at dawn on 3 December, 300 soldiers and police stormed their wooden stockade, killing 22 miners and 6 soldiers in a 15-minute battle.",
             "connective": "Sparked immense public sympathy in Melbourne, forcing the government to abolish the licence, grant diggers voting rights, and establishing Eureka as the legendary birthplace of Australian democracy.",
-            "question": "What was the significance of the 1854 Eureka Stockade for the development of Australian democracy?"
+            "question": "How did the 1854 Eureka Stockade clash lead to democratic voting reforms?",
+            "prose_hash": "db7aba6ac3"
           },
           {
             "step": 4,
@@ -6199,7 +6566,8 @@ export default {
             "tag": "📜 WHITE AUSTRALIA",
             "trigger": "Over 40,000 Chinese miners arrived on the goldfields, encountering violent anti-Chinese race riots at Buckland River (1857) and Lambing Flat (1861) that prompted colonial parliaments to pass discriminatory entry taxes.",
             "connective": "Laid the racialized political foundation for national Federation in 1901, where the very first act of the new Commonwealth Parliament was the racist Immigration Restriction Act (the White Australia Policy).",
-            "question": "How did anti-Chinese hostility on the goldfields lead directly to the 1901 White Australia Policy?"
+            "question": "How did goldfield racism lead to the 1901 White Australia Policy?",
+            "prose_hash": "2ccb1b921b"
           },
           {
             "step": 5,
@@ -6209,7 +6577,8 @@ export default {
             "tag": "🕊️ DAY OF MOURNING & MABO",
             "trigger": "On 26 January 1938, First Nations activists held the historic 'Day of Mourning', demanding full citizenship and highlighting the Stolen Generations; in 1992, Eddie Mabo won the landmark High Court ruling that legally destroyed terra nullius.",
             "connective": "Transformed the historical memory of Australia from a triumphalist pioneer myth into a recognition of enduring Indigenous survival, land rights, and the ongoing journey towards truth-telling and treaty.",
-            "question": "How did the 1938 Day of Mourning and the 1992 Mabo Decision reshape modern Australian history?"
+            "question": "How did the 1992 Mabo ruling overturn the myth of terra nullius?",
+            "prose_hash": "fb6e96cf99"
           }
         ]
       },
@@ -6218,13 +6587,13 @@ export default {
           "step": 1,
           "para_ref": "[5.1]",
           "date": "1851–1853",
-          "heading": "How did the 1851 gold discoveries transform Australia from a penal colony into an economic powerhouse?",
+          "heading": "How did the 1851 gold rush transform Australia’s population and wealth?",
           "bullets": [
             "Hargraves 1851 Discovery",
             "Population Triples to 1.2m",
             "Melbourne Victorian Wealth"
           ],
-          "focus_clue": "How did the rush of free fortune-seekers break the social stigma of convict transportation and create 'Marvellous Melbourne'?",
+          "focus_clue": "How did the 1851 gold rush transform Australia’s population and wealth?",
           "words": [
             {
               "term": "Hargraves 1851 Discovery",
@@ -6241,20 +6610,24 @@ export default {
           ],
           "model_sentence": "Following the <strong>Hargraves 1851 discovery</strong>, the Australian <strong>population triples to 1.2m</strong> and fueled immense <strong>Melbourne Victorian wealth</strong>.",
           "modelSentence": "Following the <strong>Hargraves 1851 discovery</strong>, the Australian <strong>population triples to 1.2m</strong> and fueled immense <strong>Melbourne Victorian wealth</strong>.",
-          "title": "How did the 1851 gold discoveries transform Australia from a penal colony into an economic powerhouse?",
-          "dates": "1851–1853"
+          "title": "Gold Fever: Ballarat, Bendigo & The Demographic Boom",
+          "dates": "1851–1853",
+          "question": "How did the 1851 gold rush transform Australia’s population and wealth?",
+          "questionHeading": "How did the 1851 gold rush transform Australia’s population and wealth?",
+          "focusClue": "How did the 1851 gold rush transform Australia’s population and wealth?",
+          "prose_hash": "8736431831"
         },
         {
           "step": 2,
           "para_ref": "[5.2]",
           "date": "1853–1854",
-          "heading": "Why did the monthly miner’s licence fee provoke widespread outrage among the gold diggers?",
+          "heading": "Why did the 30-shilling monthly licence fee anger Ballarat gold diggers?",
           "bullets": [
             "30-Shilling Monthly Fee",
             "Armed Police Digger Hunts",
             "Taxation Without Representation"
           ],
-          "focus_clue": "Why did diggers view corrupt ex-convict police officers and arbitrary licence inspections as tyrannical oppression?",
+          "focus_clue": "Why did the 30-shilling monthly licence fee anger Ballarat gold diggers?",
           "words": [
             {
               "term": "30-Shilling Monthly Fee",
@@ -6271,20 +6644,24 @@ export default {
           ],
           "model_sentence": "Angered by the <strong>30-shilling monthly fee</strong> and humiliating <strong>armed police digger hunts</strong>, miners rebelled against <strong>taxation without representation</strong>.",
           "modelSentence": "Angered by the <strong>30-shilling monthly fee</strong> and humiliating <strong>armed police digger hunts</strong>, miners rebelled against <strong>taxation without representation</strong>.",
-          "title": "Why did the monthly miner’s licence fee provoke widespread outrage among the gold diggers?",
-          "dates": "1853–1854"
+          "title": "The Gold Commission & The Monthly Licence Tax",
+          "dates": "1853–1854",
+          "question": "Why did the 30-shilling monthly licence fee anger Ballarat gold diggers?",
+          "questionHeading": "Why did the 30-shilling monthly licence fee anger Ballarat gold diggers?",
+          "focusClue": "Why did the 30-shilling monthly licence fee anger Ballarat gold diggers?",
+          "prose_hash": "2640dc9625"
         },
         {
           "step": 3,
           "para_ref": "[5.3]",
           "date": "Dec 1854",
-          "heading": "What was the significance of the 1854 Eureka Stockade for the development of Australian democracy?",
+          "heading": "How did the 1854 Eureka Stockade clash lead to democratic voting reforms?",
           "bullets": [
             "Southern Cross Flag",
             "15-Minute Dawn Assault",
             "Secret Ballot & Universal Suffrage"
           ],
-          "focus_clue": "How did an armed uprising that ended in military defeat lead to male voting rights, parliamentary seats, and the miner’s right?",
+          "focus_clue": "How did the 1854 Eureka Stockade clash lead to democratic voting reforms?",
           "words": [
             {
               "term": "Southern Cross Flag",
@@ -6301,20 +6678,24 @@ export default {
           ],
           "model_sentence": "Unfurling the <strong>Southern Cross flag</strong>, miners fought a bloody <strong>15-minute dawn assault</strong> that catalyzed <strong>secret ballot & universal suffrage</strong> across Australia.",
           "modelSentence": "Unfurling the <strong>Southern Cross flag</strong>, miners fought a bloody <strong>15-minute dawn assault</strong> that catalyzed <strong>secret ballot & universal suffrage</strong> across Australia.",
-          "title": "What was the significance of the 1854 Eureka Stockade for the development of Australian democracy?",
-          "dates": "Dec 1854"
+          "title": "The Eureka Stockade: Blood on the Southern Cross",
+          "dates": "Dec 1854",
+          "question": "How did the 1854 Eureka Stockade clash lead to democratic voting reforms?",
+          "questionHeading": "How did the 1854 Eureka Stockade clash lead to democratic voting reforms?",
+          "focusClue": "How did the 1854 Eureka Stockade clash lead to democratic voting reforms?",
+          "prose_hash": "db7aba6ac3"
         },
         {
           "step": 4,
           "para_ref": "[5.4]",
           "date": "1855–1901",
-          "heading": "How did anti-Chinese hostility on the goldfields lead directly to the 1901 White Australia Policy?",
+          "heading": "How did goldfield racism lead to the 1901 White Australia Policy?",
           "bullets": [
             "40,000 Chinese Diggers",
             "Lambing Flat Riots (1861)",
             "1901 Immigration Restriction Act"
           ],
-          "focus_clue": "How was white working-class economic jealousy weaponized into racial fear, culminating in the 1901 dictation test?",
+          "focus_clue": "How did goldfield racism lead to the 1901 White Australia Policy?",
           "words": [
             {
               "term": "40,000 Chinese Diggers",
@@ -6331,20 +6712,24 @@ export default {
           ],
           "model_sentence": "Hostility toward <strong>40,000 Chinese diggers</strong> erupted in the <strong>Lambing Flat Riots (1861)</strong>, leading directly to the <strong>1901 Immigration Restriction Act</strong>.",
           "modelSentence": "Hostility toward <strong>40,000 Chinese diggers</strong> erupted in the <strong>Lambing Flat Riots (1861)</strong>, leading directly to the <strong>1901 Immigration Restriction Act</strong>.",
-          "title": "How did anti-Chinese hostility on the goldfields lead directly to the 1901 White Australia Policy?",
-          "dates": "1855–1901"
+          "title": "Chinese Diggers, The Anti-Chinese Riots & Federation",
+          "dates": "1855–1901",
+          "question": "How did goldfield racism lead to the 1901 White Australia Policy?",
+          "questionHeading": "How did goldfield racism lead to the 1901 White Australia Policy?",
+          "focusClue": "How did goldfield racism lead to the 1901 White Australia Policy?",
+          "prose_hash": "2ccb1b921b"
         },
         {
           "step": 5,
           "para_ref": "[5.5]",
           "date": "1901–Present",
-          "heading": "How did the 1938 Day of Mourning and the 1992 Mabo Decision reshape modern Australian history?",
+          "heading": "How did the 1992 Mabo ruling overturn the myth of terra nullius?",
           "bullets": [
             "1938 Day of Mourning",
             "Stolen Generations Truth",
             "1992 Mabo Overturns Terra Nullius"
           ],
-          "focus_clue": "How did Eddie Mabo’s ten-year legal battle overturn two centuries of British imperial law and establish Native Title?",
+          "focus_clue": "How did the 1992 Mabo ruling overturn the myth of terra nullius?",
           "words": [
             {
               "term": "1938 Day of Mourning",
@@ -6361,33 +6746,78 @@ export default {
           ],
           "model_sentence": "Beginning with the <strong>1938 Day of Mourning</strong> and confronting <strong>Stolen Generations truth</strong>, the historic <strong>1992 Mabo overturns terra nullius</strong> established native title.",
           "modelSentence": "Beginning with the <strong>1938 Day of Mourning</strong> and confronting <strong>Stolen Generations truth</strong>, the historic <strong>1992 Mabo overturns terra nullius</strong> established native title.",
-          "title": "How did the 1938 Day of Mourning and the 1992 Mabo Decision reshape modern Australian history?",
-          "dates": "1901–Present"
+          "title": "From Dispossession to Survival: Day of Mourning to Mabo",
+          "dates": "1901–Present",
+          "question": "How did the 1992 Mabo ruling overturn the myth of terra nullius?",
+          "questionHeading": "How did the 1992 Mabo ruling overturn the myth of terra nullius?",
+          "focusClue": "How did the 1992 Mabo ruling overturn the myth of terra nullius?",
+          "prose_hash": "fb6e96cf99"
         }
       ],
       "did_you_know": "The Southern Cross flag flown by the Eureka rebels was designed by Canadian digger Henry Ross and sewn from silk petticoats by women on the Ballarat goldfield! Today, the original flag—peppered with bullet holes and torn by soldiers who trampled it in the mud after the stockade fell—is preserved as Australia’s most sacred democratic relic in the Ballarat Fine Art Gallery.",
       "do_now": {
         "type": "questions",
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What was the island of Tasmania called during the Black War of the 1820s?",
-            "answer": "Van Diemen’s Land."
+            "stage": 1,
+            "question": "What colonial name was given to Tasmania when Britain established a secondary penal colony there in 1803?",
+            "answer": "Van Diemen’s Land",
+            "explanation": "In 1803, the British Crown founded a secondary penal colony in Van Diemen’s Land (modern Tasmania) to deter France."
           },
           {
-            "question": "What was the 1830 military operation that swept 2,200 armed men across Tasmania called?",
-            "answer": "The Black Line."
+            "stage": 2,
+            "question": "What emergency measure did Governor George Arthur declare in 1828 authorising troops to shoot Aboriginal people in settled districts?",
+            "answer": "Martial law",
+            "explanation": "During the Black War in 1828, Governor Arthur declared martial law across settled districts of Tasmania."
           },
           {
-            "question": "Who was the Nuenonne woman who helped negotiate peace before being exiled to Flinders Island?",
-            "answer": "Truganini."
+            "stage": 3,
+            "question": "Which British missionary persuaded surviving Palawa clans to accept government relocation in the early 1830s?",
+            "answer": "George Augustus Robinson",
+            "explanation": "Missionary George Augustus Robinson promised surviving Palawa protection and eventual return to their homelands."
           },
           {
-            "question": "What valuable agricultural commodity drove squatter expansion across the Australian interior in the 1830s?",
-            "answer": "Merino wool."
+            "stage": 4,
+            "question": "Soaring demand for raw fleece from textile mills in which English region drove Australia’s mainland pastoral land grab?",
+            "answer": "Yorkshire wool demand",
+            "explanation": "Industrial textile mills in Yorkshire created surging demand for fine Australian wool between 1820 and 1838."
           },
           {
-            "question": "In what year were seven white stockmen hanged for the Myall Creek Massacre?",
-            "answer": "1838."
+            "stage": 5,
+            "question": "Where were 28 unarmed Wirrayaraay people murdered by white stockmen in June 1838?",
+            "answer": "Myall Creek",
+            "explanation": "In June 1838, eleven armed white stockmen murdered 28 peaceful Wirrayaraay people at Myall Creek before burning their bodies."
+          },
+          {
+            "stage": 1,
+            "question": "Which Indigenous people inhabited Tasmania prior to the 1803 British invasion?",
+            "answer": "Palawa people",
+            "explanation": "Van Diemen’s Land was the ancestral homeland of around 6,000 Indigenous Palawa people."
+          },
+          {
+            "stage": 2,
+            "question": "How many armed men did Governor Arthur mobilise in October 1830 to form a human cordon across Tasmania?",
+            "answer": "2,200 armed men",
+            "explanation": "In October 1830, Arthur mobilised 2,200 soldiers, police, convicts, and settlers in a massive sweep across the island."
+          },
+          {
+            "stage": 3,
+            "question": "Which Nuenonne woman assisted Robinson’s peacemaking mission in the hope of saving her surviving people?",
+            "answer": "Truganini",
+            "explanation": "Truganini, whose family had been murdered by settlers and sealers, helped persuade surviving Palawa clans to end the fighting."
+          },
+          {
+            "stage": 4,
+            "question": "What name was given to wealthy colonial pastoralists who pushed vast sheep flocks inland across Indigenous country?",
+            "answer": "Squatters",
+            "explanation": "Wealthy pastoral squatters occupied vast tracts of inland country, seizing native waterholes for grazing flocks."
+          },
+          {
+            "stage": 5,
+            "question": "How many Wirrayaraay people were murdered in cold blood during the June 1838 Myall Creek Massacre?",
+            "answer": "28 Wirrayaraay murdered",
+            "explanation": "Twenty-eight Wirrayaraay people were murdered by eleven stockmen at Myall Creek in June 1838."
           }
         ]
       },
@@ -6504,7 +6934,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In February 1851, Edward Hargraves announced his landmark Hargraves 1851 discovery of payable alluvial gold near Bathurst, New South Wales. Within months, vastly richer goldfields were found at Ballarat and Bendigo in Victoria, sparking one of the greatest mass migrations in imperial history.</p><p class=\"prose-p\">Over half a million prospectors poured into Australia from Europe, America, and China. As gold fever gripped the colonies, the Australian population triples to 1.2m within a decade. Massive gold exports stimulated commerce and railways, financing magnificent Melbourne Victorian wealth that turned Melbourne into one of the British Empire’s grandest metropolises.</p>"
         },
         {
           "act": 2,
@@ -6549,7 +6980,8 @@ export default {
               },
               "id": "aus_l5_src_b"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> To fund colonial administration and control unruly diggers, Victorian authorities imposed a compulsory 30-shilling monthly fee for a mining licence, whether prospectors found gold or dug empty shafts.</p><p class=\"prose-p\">Corrupt colonial police enforced the tax through armed police digger hunts, handcuffing miners who could not produce paperwork on demand and chaining them to trees. Miners deeply resented paying heavy taxes while having no political vote, denouncing this oppression as tyrannical taxation without representation and organising mass protest rallies at Bakery Hill in Ballarat.</p>"
         },
         {
           "act": 3,
@@ -6594,7 +7026,8 @@ export default {
               },
               "id": "aus_l5_src_c"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> In late 1854, Ballarat miners formed the Reform League and built a wooden stockade at Eureka. Swearing an oath under the blue silk Southern Cross flag, diggers pledged to defend their civil liberties against military tyranny.</p><p class=\"prose-p\">At dawn on 3 December 1854, nearly three hundred redcoats stormed the camp. A brutal 15-minute dawn assault crushed the rebellion, killing twenty-two diggers. However, public sympathy forced Victorian authorities to abolish mining licences and introduce democratic reforms, including the secret ballot & universal suffrage that founded modern Australian democracy.</p>"
         },
         {
           "act": 4,
@@ -6644,7 +7077,8 @@ export default {
               "src": "",
               "image": ""
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> The gold rush attracted over 40,000 Chinese diggers, who worked cooperatively re-washing abandoned claims with great success. European miners reacted with intense racial hostility, accusing Chinese workers of stealing water, driving down wages, and introducing foreign vices.</p><p class=\"prose-p\">Simmering racism exploded into violence during the Lambing Flat Riots (1861), where white mobs assaulted Chinese miners and destroyed camps. When Australian colonies federated in 1901, the new federal parliament passed the 1901 Immigration Restriction Act, creating the White Australia Policy and using language dictation tests to exclude non-European migrants.</p>"
         },
         {
           "act": 5,
@@ -6689,7 +7123,8 @@ export default {
               },
               "id": "aus_l5_src_e"
             }
-          ]
+          ],
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Federation excluded Indigenous Australians from citizenship and national censuses, entrenching state child removals that created the Stolen Generations truth. Yet First Nations leaders continued fighting relentlessly for civil rights and constitutional recognition.</p><p class=\"prose-p\">On 26 January 1938, Aboriginal activists held a historic 1938 Day of Mourning in Sydney to protest 150 years of dispossession. Sixty years later, a landmark legal victory occurred when the High Court’s 1992 Mabo overturns terra nullius ruling legally recognized Native Title, finally demolishing the legal myth of an empty continent.</p>"
         }
       ],
       "quick_quiz": [
@@ -7294,264 +7729,284 @@ export default {
       ],
       "quiz": [
         {
-          "question": "What was the immediate demographic effect of the 1851 Australian Gold Rush?",
-          "q": "What was the immediate demographic effect of the 1851 Australian Gold Rush?",
+          "stage": 1,
+          "question": "Which prospector sparked the Australian Gold Rush by discovering payable gold near Bathurst in February 1851?",
+          "q": "Which prospector sparked the Australian Gold Rush by discovering payable gold near Bathurst in February 1851?",
           "options": [
-            "Australia’s non-Indigenous population tripled from 400,000 to over 1.2 million in a decade",
-            "All British convicts were immediately executed by colonial courts",
-            "Over 90% of the population emigrated to California",
-            "Melbourne was abandoned and fell into complete economic ruin"
-          ],
-          "answer": "Australia’s non-Indigenous population tripled from 400,000 to over 1.2 million in a decade",
-          "a": "Australia’s non-Indigenous population tripled from 400,000 to over 1.2 million in a decade",
-          "explanation": "Over 500,000 fortune seekers rushed to Victoria and New South Wales, tripling the population within ten years."
-        },
-        {
-          "question": "What major grievance sparked the 1854 Eureka Stockade rebellion in Ballarat?",
-          "q": "What major grievance sparked the 1854 Eureka Stockade rebellion in Ballarat?",
-          "options": [
-            "The expensive 30-shilling monthly miner’s licence fee and corrupt police digger hunts",
-            "A ban on drinking tea on the goldfields",
-            "The British decision to reintroduce convict transportation to Melbourne",
-            "An attack on Ballarat by French naval warships"
-          ],
-          "answer": "The expensive 30-shilling monthly miner’s licence fee and corrupt police digger hunts",
-          "a": "The expensive 30-shilling monthly miner’s licence fee and corrupt police digger hunts",
-          "explanation": "Diggers were furious at paying heavy monthly licence taxes while suffering police harassment and having no vote in parliament."
-        },
-        {
-          "question": "What flag did the rebel miners swear allegiance to on Bakery Hill before the Eureka Stockade battle?",
-          "q": "What flag did the rebel miners swear allegiance to on Bakery Hill before the Eureka Stockade battle?",
-          "options": [
-            "The Southern Cross flag (Eureka flag)",
-            "The Union Jack",
-            "The American Stars and Stripes",
-            "The Red Ensign"
-          ],
-          "answer": "The Southern Cross flag (Eureka flag)",
-          "a": "The Southern Cross flag (Eureka flag)",
-          "explanation": "The miners swore an oath beneath the blue-and-white Southern Cross flag designed by Henry Ross."
-        },
-        {
-          "question": "What was the White Australia Policy established by the 1901 Immigration Restriction Act?",
-          "q": "What was the White Australia Policy established by the 1901 Immigration Restriction Act?",
-          "options": [
-            "A set of racist laws and dictation tests designed to ban non-European migrants from Australia",
-            "A policy requiring all Australian houses to be painted white",
-            "A law granting free land to First Nations people across the interior",
-            "A military alliance with the United States and Canada"
-          ],
-          "answer": "A set of racist laws and dictation tests designed to ban non-European migrants from Australia",
-          "a": "A set of racist laws and dictation tests designed to ban non-European migrants from Australia",
-          "explanation": "Passed at Federation in 1901, the policy used arbitrary language dictation tests to exclude Asian and non-white migrants."
-        },
-        {
-          "question": "What did the landmark 1992 Mabo Decision achieve in Australian law?",
-          "q": "What did the landmark 1992 Mabo Decision achieve in Australian law?",
-          "options": [
-            "It overturned the doctrine of terra nullius and recognized Indigenous Native Title",
-            "It declared Australia an independent republic and abolished the British monarchy",
-            "It restored the gold licence fee across all mining regions",
-            "It made 26 January a mandatory national day of celebration"
-          ],
-          "answer": "It overturned the doctrine of terra nullius and recognized Indigenous Native Title",
-          "a": "It overturned the doctrine of terra nullius and recognized Indigenous Native Title",
-          "explanation": "The High Court ruled in 1992 that terra nullius had been wrong, recognizing that First Nations land rights had survived British arrival."
-        },
-        {
-          "question": "Which prospector returned from California and discovered five specks of payable gold near Bathurst in February 1851?",
-          "q": "Which prospector returned from California and discovered five specks of payable gold near Bathurst in February 1851?",
-          "options": [
-            "Edward Hargraves",
-            "Peter Lalor",
             "James Ruse",
-            "Eddie Mabo"
+            "Edward Hargraves",
+            "George Gipps",
+            "Arthur Phillip"
           ],
           "answer": "Edward Hargraves",
           "a": "Edward Hargraves",
-          "explanation": "In February 1851, veteran prospector Edward Hargraves returned from California and found payable gold near Bathurst."
+          "explanation": "In February 1851, Edward Hargraves discovered payable alluvial gold near Bathurst, New South Wales."
         },
         {
-          "question": "Which city in Victoria was transformed by the gold rush into one of the richest, most opulent cities in the British Empire?",
-          "q": "Which city in Victoria was transformed by the gold rush into one of the richest, most opulent cities in the British Empire?",
+          "stage": 1,
+          "question": "At which rich Victorian goldfield town alongside Bendigo were major alluvial deposits found months after Bathurst?",
+          "q": "At which rich Victorian goldfield town alongside Bendigo were major alluvial deposits found months after Bathurst?",
           "options": [
+            "Ballarat",
+            "Wybalenna",
+            "Risdon Cove",
+            "Myall Creek"
+          ],
+          "answer": "Ballarat",
+          "a": "Ballarat",
+          "explanation": "Richer alluvial gold discoveries at Ballarat and Bendigo in Victoria triggered mass global migration."
+        },
+        {
+          "stage": 1,
+          "question": "To what total did Australia’s population triple within a decade of the 1851 gold rush?",
+          "q": "To what total did Australia’s population triple within a decade of the 1851 gold rush?",
+          "options": [
+            "100,000",
+            "10m",
+            "250,000",
+            "1.2m"
+          ],
+          "answer": "1.2m",
+          "a": "1.2m",
+          "explanation": "Over half a million prospectors arrived between 1851 and 1861, tripling the colonial population to 1.2 million."
+        },
+        {
+          "stage": 1,
+          "question": "Which Victorian city grew into one of the richest, grandest metropolises of the British Empire through gold wealth?",
+          "q": "Which Victorian city grew into one of the richest, grandest metropolises of the British Empire through gold wealth?",
+          "options": [
+            "Hobart",
+            "Parramatta",
             "Melbourne",
-            "Sydney",
-            "Adelaide",
-            "Perth"
+            "Bathurst"
           ],
           "answer": "Melbourne",
           "a": "Melbourne",
-          "explanation": "Gold injected hundreds of millions of pounds into the economy, transforming Melbourne into 'Marvellous Melbourne'."
+          "explanation": "Gold exports financed railways and grand architecture, turning Melbourne into a wealthy Victorian metropolis."
         },
         {
-          "question": "How many immigrants poured into Australia between 1851 and 1861 during the gold rush?",
-          "q": "How many immigrants poured into Australia between 1851 and 1861 during the gold rush?",
+          "stage": 2,
+          "question": "What compulsory monthly tax did Victorian authorities impose on every gold digger regardless of whether they struck gold?",
+          "q": "What compulsory monthly tax did Victorian authorities impose on every gold digger regardless of whether they struck gold?",
           "options": [
-            "Over 500,000",
-            "Under 10,000",
-            "Exactly 50,000",
-            "Five million"
+            "Ten-pound property tax",
+            "30-shilling monthly licence fee",
+            "Seventy percent cotton tariff",
+            "One-shilling tea duty"
           ],
-          "answer": "Over 500,000",
-          "a": "Over 500,000",
-          "explanation": "Between 1851 and 1861, over 500,000 immigrants poured into Australia from around the globe."
+          "answer": "30-shilling monthly licence fee",
+          "a": "30-shilling monthly licence fee",
+          "explanation": "Every prospector on the Victorian goldfields had to pay a harsh 30-shilling monthly licence fee."
         },
         {
-          "question": "What was the monthly fee charged for a miner's licence on the Victorian goldfields?",
-          "q": "What was the monthly fee charged for a miner's licence on the Victorian goldfields?",
+          "stage": 2,
+          "question": "By what name were the armed police raids checking miners’ licences on the goldfields known?",
+          "q": "By what name were the armed police raids checking miners’ licences on the goldfields known?",
           "options": [
-            "A 30-shilling fee",
-            "One shilling",
-            "100 pounds",
-            "Five pence"
+            "Digger hunts",
+            "Black Lines",
+            "Swing Riots",
+            "Press gangs"
           ],
-          "answer": "A 30-shilling fee",
-          "a": "A 30-shilling fee",
-          "explanation": "The Victorian government imposed a harsh monthly 30-shilling miner’s licence fee on every digger."
+          "answer": "Digger hunts",
+          "a": "Digger hunts",
+          "explanation": "Armed colonial police conducted frequent digger hunts, chaining unlicensed miners to trees."
         },
         {
-          "question": "Which Victorian Governor deployed armed Commissioners and police to conduct aggressive digger hunts?",
-          "q": "Which Victorian Governor deployed armed Commissioners and police to conduct aggressive digger hunts?",
+          "stage": 2,
+          "question": "What democratic slogan did gold miners invoke because they paid heavy licence fees while having no right to vote?",
+          "q": "What democratic slogan did gold miners invoke because they paid heavy licence fees while having no right to vote?",
           "options": [
-            "Sir Charles Hotham",
-            "Sir George Gipps",
-            "Arthur Phillip",
-            "George Arthur"
+            "Deeds, not words",
+            "Stop the Duke, go for gold",
+            "Peace, bread, and land",
+            "Taxation without representation"
           ],
-          "answer": "Sir Charles Hotham",
-          "a": "Sir Charles Hotham",
-          "explanation": "Governor Sir Charles Hotham deployed armed Gold Commissioners and mounted police to hunt down miners without licences."
+          "answer": "Taxation without representation",
+          "a": "Taxation without representation",
+          "explanation": "Miners condemned the compulsory licence fee and lack of voting rights as tyrannical taxation without representation."
         },
         {
-          "question": "Which reform organization was formed by 10,000 diggers at Bakery Hill in November 1854 to demand voting rights?",
-          "q": "Which reform organization was formed by 10,000 diggers at Bakery Hill in November 1854 to demand voting rights?",
+          "stage": 2,
+          "question": "At which Ballarat site did thousands of miners rally to protest police corruption and form the Reform League?",
+          "q": "At which Ballarat site did thousands of miners rally to protest police corruption and form the Reform League?",
           "options": [
-            "The Ballarat Reform League",
-            "The Chartist Movement",
-            "The Diggers Union",
-            "The Southern Cross Alliance"
+            "St Peter’s Field",
+            "King Street",
+            "Bakery Hill",
+            "Sydney Cove"
           ],
-          "answer": "The Ballarat Reform League",
-          "a": "The Ballarat Reform League",
-          "explanation": "10,000 diggers met at Bakery Hill, forming the Ballarat Reform League to demand universal male suffrage."
+          "answer": "Bakery Hill",
+          "a": "Bakery Hill",
+          "explanation": "Outraged diggers held mass protest meetings at Bakery Hill in Ballarat demanding democratic reform."
         },
         {
-          "question": "Who was the fiery Irish engineer who led the miners at the Eureka Stockade in December 1854?",
-          "q": "Who was the fiery Irish engineer who led the miners at the Eureka Stockade in December 1854?",
+          "stage": 3,
+          "question": "Beneath which blue silk flag did Ballarat rebels swear an oath to defend their rights and liberties in late 1854?",
+          "q": "Beneath which blue silk flag did Ballarat rebels swear an oath to defend their rights and liberties in late 1854?",
           "options": [
-            "Peter Lalor",
-            "Edward Hargraves",
-            "Henry Ross",
-            "William Cooper"
+            "Union Jack",
+            "Southern Cross",
+            "Red Ensign",
+            "Mohawk banner"
           ],
-          "answer": "Peter Lalor",
-          "a": "Peter Lalor",
-          "explanation": "Led by fiery Irish engineer Peter Lalor, the diggers swore to defend their rights and liberties."
+          "answer": "Southern Cross",
+          "a": "Southern Cross",
+          "explanation": "Eureka miners knelt beneath the blue-and-white Southern Cross flag and swore to stand truly by each other."
         },
         {
-          "question": "How many miners and soldiers were killed during the savage 15-minute battle at the Eureka Stockade?",
-          "q": "How many miners and soldiers were killed during the savage 15-minute battle at the Eureka Stockade?",
+          "stage": 3,
+          "question": "On what date did British redcoats storm the Eureka Stockade in Ballarat?",
+          "q": "On what date did British redcoats storm the Eureka Stockade in Ballarat?",
           "options": [
-            "22 miners and six soldiers",
-            "Over 500 miners",
-            "Zero casualties",
-            "100 redcoats only"
+            "3 December 1854",
+            "26 January 1788",
+            "26 January 1938",
+            "10 May 1857"
           ],
-          "answer": "22 miners and six soldiers",
-          "a": "22 miners and six soldiers",
-          "explanation": "In a savage 15-minute battle at the Eureka Stockade, 22 miners and six soldiers were killed."
+          "answer": "3 December 1854",
+          "a": "3 December 1854",
+          "explanation": "At dawn on 3 December 1854, nearly three hundred redcoats and police stormed the wooden Eureka Stockade."
         },
         {
-          "question": "What annual permit did Governor Hotham introduce to replace the hated monthly licence after the Eureka rebellion?",
-          "q": "What annual permit did Governor Hotham introduce to replace the hated monthly licence after the Eureka rebellion?",
+          "stage": 3,
+          "question": "How brief was the dawn military assault that overwhelmed the Eureka Stockade and killed twenty-two miners?",
+          "q": "How brief was the dawn military assault that overwhelmed the Eureka Stockade and killed twenty-two miners?",
           "options": [
-            "Miner's Right",
-            "Digger Passport",
-            "Crown Grant",
-            "Pastoral Lease"
+            "Three-day siege",
+            "Seven-week sweep",
+            "Four-month blockade",
+            "15-minute dawn assault"
           ],
-          "answer": "Miner's Right",
-          "a": "Miner's Right",
-          "explanation": "Governor Hotham abolished the monthly licence and introduced an annual £1 'Miner's Right'."
+          "answer": "15-minute dawn assault",
+          "a": "15-minute dawn assault",
+          "explanation": "A fierce 15-minute dawn assault crushed the stockade defences, leaving twenty-two miners dead."
         },
         {
-          "question": "Approximately how many Chinese miners arrived in Victoria during the gold rush to work on the goldfields?",
-          "q": "Approximately how many Chinese miners arrived in Victoria during the gold rush to work on the goldfields?",
+          "stage": 3,
+          "question": "Which two democratic reforms were introduced in Victoria after public outrage rallied behind the Eureka miners?",
+          "q": "Which two democratic reforms were introduced in Victoria after public outrage rallied behind the Eureka miners?",
           "options": [
+            "Rotten boroughs and open hustings",
+            "Martial law and penal hulks",
+            "Secret ballot and universal suffrage",
+            "Hereditary peerages and tithes"
+          ],
+          "answer": "Secret ballot and universal suffrage",
+          "a": "Secret ballot and universal suffrage",
+          "explanation": "Public sympathy forced authorities to abolish the licence fee and introduce the secret ballot and universal male suffrage."
+        },
+        {
+          "stage": 4,
+          "question": "Approximately how many Chinese diggers worked on the Australian goldfields during the Gold Rush?",
+          "q": "Approximately how many Chinese diggers worked on the Australian goldfields during the Gold Rush?",
+          "options": [
+            "Around 500",
             "Over 40,000",
-            "Under 500",
-            "Two million",
-            "5,000"
+            "Fewer than 2,000",
+            "Over 500,000"
           ],
           "answer": "Over 40,000",
           "a": "Over 40,000",
-          "explanation": "Over 40,000 Chinese miners arrived in Victoria, working cooperatively in well-organized teams."
+          "explanation": "Over 40,000 Chinese miners worked cooperatively on the goldfields, meticulously re-washing abandoned claims."
         },
         {
-          "question": "At which goldfield in New South Wales did 1,000 white miners riot in June 1861 under a banner reading 'No Chinese'?",
-          "q": "At which goldfield in New South Wales did 1,000 white miners riot in June 1861 under a banner reading 'No Chinese'?",
+          "stage": 4,
+          "question": "At which goldfield did violent anti-Chinese riots erupt in 1861 when white mobs burned Chinese camps?",
+          "q": "At which goldfield did violent anti-Chinese riots erupt in 1861 when white mobs burned Chinese camps?",
           "options": [
             "Lambing Flat",
-            "Ballarat",
-            "Bendigo",
-            "Mount Alexander"
+            "Myall Creek",
+            "Risdon Cove",
+            "Port Jackson"
           ],
           "answer": "Lambing Flat",
           "a": "Lambing Flat",
-          "explanation": "In June 1861, over 1,000 armed white miners marched on the Lambing Flat goldfield behind a 'No Chinese' banner."
+          "explanation": "During the 1861 Lambing Flat riots, white mobs assaulted Chinese miners and destroyed their camps."
         },
         {
-          "question": "How many words did the European language dictation test contain under the 1901 Immigration Restriction Act?",
-          "q": "How many words did the European language dictation test contain under the 1901 Immigration Restriction Act?",
+          "stage": 4,
+          "question": "Which 1901 federal statute established the White Australia Policy upon Federation?",
+          "q": "Which 1901 federal statute established the White Australia Policy upon Federation?",
           "options": [
-            "A 50-word test",
-            "A 10-word test",
-            "A 500-word test",
-            "A 1,000-word test"
+            "British Nationality Act",
+            "Government of India Act",
+            "Ballot Act",
+            "Immigration Restriction Act"
           ],
-          "answer": "A 50-word test",
-          "a": "A 50-word test",
-          "explanation": "The Act used a rigged 50-word European language dictation test to enforce racial exclusion under the White Australia Policy."
+          "answer": "Immigration Restriction Act",
+          "a": "Immigration Restriction Act",
+          "explanation": "In 1901, the newly federated Parliament passed the Immigration Restriction Act codifying the White Australia Policy."
         },
         {
-          "question": "What historic protest was staged on 26 January 1938 in Sydney by Indigenous leaders demanding citizenship rights?",
-          "q": "What historic protest was staged on 26 January 1938 in Sydney by Indigenous leaders demanding citizenship rights?",
+          "stage": 4,
+          "question": "What rigged barrier did the 1901 Immigration Restriction Act use to exclude non-European migrants?",
+          "q": "What rigged barrier did the 1901 Immigration Restriction Act use to exclude non-European migrants?",
           "options": [
-            "The Day of Mourning",
-            "The Eureka Stockade",
-            "The Freedom Ride",
-            "The Wave Hill Walk-Off"
+            "Thirty-shilling mining licence",
+            "Ten-pound property qualification",
+            "Language dictation test",
+            "Secret guild oath"
           ],
-          "answer": "The Day of Mourning",
-          "a": "The Day of Mourning",
-          "explanation": "On 26 January 1938, Indigenous leaders led by William Cooper staged the historic Day of Mourning in Sydney."
+          "answer": "Language dictation test",
+          "a": "Language dictation test",
+          "explanation": "Officials used rigged European language dictation tests under the 1901 Act to bar non-white migrants."
         },
         {
-          "question": "What percentage of Australian voters approved the 1967 referendum to include Aboriginal people in the national census?",
-          "q": "What percentage of Australian voters approved the 1967 referendum to include Aboriginal people in the national census?",
+          "stage": 5,
+          "question": "What name describes the First Nations children forcibly removed from their families by Australian state authorities?",
+          "q": "What name describes the First Nations children forcibly removed from their families by Australian state authorities?",
           "options": [
-            "90.77%",
-            "51.2%",
-            "75.0%",
-            "99.9%"
+            "Kindertransport",
+            "Stolen Generations",
+            "Windermere Children",
+            "Pauper apprentices"
           ],
-          "answer": "90.77%",
-          "a": "90.77%",
-          "explanation": "In 1967, a record 90.77% of Australians voted in a constitutional referendum to include Aboriginal people in the national census."
+          "answer": "Stolen Generations",
+          "a": "Stolen Generations",
+          "explanation": "Federation entrenched exclusionary policies and forced child removals known as the Stolen Generations."
         },
         {
-          "question": "Who was the Torres Strait Islander activist who led the heroic ten-year legal battle resulting in the 1992 Mabo Decision?",
-          "q": "Who was the Torres Strait Islander activist who led the heroic ten-year legal battle resulting in the 1992 Mabo Decision?",
+          "stage": 5,
+          "question": "What landmark Indigenous civil rights protest was held in Sydney on 26 January 1938?",
+          "q": "What landmark Indigenous civil rights protest was held in Sydney on 26 January 1938?",
           "options": [
-            "Eddie Koiki Mabo",
-            "William Cooper",
-            "Bennelong",
-            "Peter Lalor"
+            "Day of Mourning",
+            "Aldermaston March",
+            "Bristol Bus Boycott",
+            "Great Exhibition"
           ],
-          "answer": "Eddie Koiki Mabo",
-          "a": "Eddie Koiki Mabo",
-          "explanation": "Following a heroic ten-year legal battle led by Eddie Koiki Mabo, the High Court handed down the historic Mabo Decision."
+          "answer": "Day of Mourning",
+          "a": "Day of Mourning",
+          "explanation": "On 26 January 1938, Aboriginal activists staged the Day of Mourning in Sydney protesting 150 years of dispossession."
+        },
+        {
+          "stage": 5,
+          "question": "Which historic 1992 High Court decision overturned the legal fiction of terra nullius?",
+          "q": "Which historic 1992 High Court decision overturned the legal fiction of terra nullius?",
+          "options": [
+            "1838 Myall Creek",
+            "1901 Federation",
+            "1854 Eureka",
+            "1992 Mabo"
+          ],
+          "answer": "1992 Mabo",
+          "a": "1992 Mabo",
+          "explanation": "In 1992, the High Court’s landmark Mabo ruling finally demolished the colonial myth of terra nullius."
+        },
+        {
+          "stage": 5,
+          "question": "What Indigenous land right did Australian law recognize for the first time in the 1992 Mabo ruling?",
+          "q": "What Indigenous land right did Australian law recognize for the first time in the 1992 Mabo ruling?",
+          "options": [
+            "Effective Occupation",
+            "Doctrine of Lapse",
+            "Native Title",
+            "The Diwani"
+          ],
+          "answer": "Native Title",
+          "a": "Native Title",
+          "explanation": "By overturning terra nullius in 1992, the High Court legally recognized First Nations Native Title."
         }
       ]
     }

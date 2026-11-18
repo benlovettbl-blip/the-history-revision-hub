@@ -1726,7 +1726,7 @@ function getRetrievalStarterActions(lesson, currentUnitId) {
 
 export function renderDoNowInlineTimerHTML(timerId = 'donow-timer') {
   return `
-    <div class="donow-inline-timer-bar" id="${timerId}-bar" style="display: inline-flex; align-items: center; gap: 5px; background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 20px; padding: 2.5px 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+    <div class="donow-inline-timer-bar" id="${timerId}-bar" style="display: inline-flex; align-items: center; gap: 5px; flex-wrap: wrap; background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 20px; padding: 2.5px 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
       <i class="fa-solid fa-stopwatch" style="color: #0284c7; font-size: 0.85rem; margin-left: 2px;"></i>
       <span id="${timerId}-display" style="font-size: 0.95rem; font-weight: 800; font-family: 'Courier New', monospace; color: #0f172a; min-width: 44px; text-align: center;">05:00</span>
       <span id="${timerId}-summary-badge" style="display: none;">05:00</span>
@@ -1735,6 +1735,14 @@ export function renderDoNowInlineTimerHTML(timerId = 'donow-timer') {
       <div id="${timerId}-presets" style="display: inline-flex; align-items: center; gap: 3px;">
         <button type="button" class="btn-timer-pill" data-sec="180" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 180);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer;" title="3 minutes">3m</button>
         <button type="button" class="btn-timer-pill active-preset" data-sec="300" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 300);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1.2px solid #0284c7; background: #e0f2fe; color: #0284c7; cursor: pointer;" title="5 minutes">5m</button>
+        <button type="button" class="btn-timer-pill" data-sec="480" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 480);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer;" title="8 minutes">8m</button>
+        <button type="button" class="btn-timer-pill" data-sec="600" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 600);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer;" title="10 minutes">10m</button>
+        <button type="button" class="btn-timer-pill" data-sec="900" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 900);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer;" title="15 minutes">15m</button>
+      </div>
+
+      <div style="display: inline-flex; align-items: center; gap: 2px; border-left: 1px solid #e2e8f0; padding-left: 4px;">
+        <button type="button" id="${timerId}-sub1-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'sub1');" style="padding: 1px 5px; font-size: 0.68rem; font-weight: 700; border-radius: 8px; border: 1px solid #e2e8f0; background: #f8fafc; color: #475569; cursor: pointer;" title="Subtract 1 minute">−1m</button>
+        <button type="button" id="${timerId}-add1-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'add1');" style="padding: 1px 5px; font-size: 0.68rem; font-weight: 700; border-radius: 8px; border: 1px solid #e2e8f0; background: #f8fafc; color: #475569; cursor: pointer;" title="Add 1 minute">+1m</button>
       </div>
 
       <button type="button" class="btn-timer-ctl" id="${timerId}-start-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'start');" style="padding: 2px 8px; font-weight: 700; font-size: 0.73rem; border-radius: 12px; cursor: pointer; background: #0284c7; color: #ffffff; border: none; display: inline-flex; align-items: center; gap: 3px;" title="Start countdown">
@@ -2067,11 +2075,36 @@ window.toggleDoNowTimer = function (timerId, action) {
     if (pauseBtn) pauseBtn.style.display = 'none';
   } else if (action === 'add1') {
     timer.totalSeconds += 60;
-    if (timer.totalSeconds > timer.initialSeconds) timer.initialSeconds = timer.totalSeconds;
+    if (!timer.isRunning || timer.totalSeconds > timer.initialSeconds) {
+      timer.initialSeconds = timer.totalSeconds;
+    }
+    const presetsContainer = document.getElementById(`${timerId}-presets`);
+    if (presetsContainer) {
+      presetsContainer.querySelectorAll('.btn-timer-pill').forEach((pill) => {
+        const isMatch = parseInt(pill.getAttribute('data-sec'), 10) === timer.totalSeconds;
+        pill.classList.toggle('active-preset', isMatch);
+        pill.style.border = isMatch ? '1.5px solid #0284c7' : '1px solid #cbd5e1';
+        pill.style.background = isMatch ? '#e0f2fe' : '#ffffff';
+        pill.style.color = isMatch ? '#0369a1' : '#475569';
+      });
+    }
     updateDisplay();
   } else if (action === 'sub1') {
     if (timer.totalSeconds > 60) {
       timer.totalSeconds -= 60;
+      if (!timer.isRunning) {
+        timer.initialSeconds = timer.totalSeconds;
+      }
+      const presetsContainer = document.getElementById(`${timerId}-presets`);
+      if (presetsContainer) {
+        presetsContainer.querySelectorAll('.btn-timer-pill').forEach((pill) => {
+          const isMatch = parseInt(pill.getAttribute('data-sec'), 10) === timer.totalSeconds;
+          pill.classList.toggle('active-preset', isMatch);
+          pill.style.border = isMatch ? '1.5px solid #0284c7' : '1px solid #cbd5e1';
+          pill.style.background = isMatch ? '#e0f2fe' : '#ffffff';
+          pill.style.color = isMatch ? '#0369a1' : '#475569';
+        });
+      }
       updateDisplay();
     }
   } else if (action === 'add5') {
@@ -6733,8 +6766,10 @@ export function renderLesson(lesson) {
       htmlDoNowInner += `</div></div>`;
     }
   } else if (
-    lesson.do_now &&
-    (lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks)
+    !isTrip &&
+    ((lesson.do_now &&
+      (lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks)) ||
+      (Array.isArray(lesson.quiz) && lesson.quiz.length > 0))
   ) {
     const headerHtml = renderDoNowHeaderWithTimerHTML({
       timerId: 'donow-timer',

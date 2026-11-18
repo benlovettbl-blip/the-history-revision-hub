@@ -1443,6 +1443,11 @@ const EEE_BOOKLETS = {
   },
 };
 
+const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
+Object.values(EEE_BOOKLETS).forEach((b) => {
+  if (Array.isArray(b.lessons)) applyCanonicalStageOverrides('eee', b.lessons);
+});
+
 module.exports = {
   EEE_BOOKLETS,
 };

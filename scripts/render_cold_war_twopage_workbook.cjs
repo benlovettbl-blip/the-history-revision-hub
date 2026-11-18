@@ -649,6 +649,9 @@ const enquiryConfigs = [
   },
 ];
 
+const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
+applyCanonicalStageOverrides('cold_war', enquiryConfigs);
+
 // ============================================================================
 // HELPER RENDERERS
 // ============================================================================
@@ -681,23 +684,10 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
       const combinedLen = questionText.length + (st.date ? String(st.date).length : 0);
       const qFontSize = combinedLen > 105 ? '7.8pt' : combinedLen > 95 ? '8.2pt' : combinedLen > 85 ? '8.5pt' : '8.8pt';
 
-      const bulletsHtml = (st.bullets || [])
-        .map(
-          (b, idx) => `
-            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
-                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
-              </div>
-            </div>`,
-        )
-        .join('');
-
       return `
         <!-- STAGE ${stageNum} CONTAINER -->
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
           <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
           <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
             <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
@@ -714,15 +704,8 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
+          <!-- Full-Width Ruled Note-Taking Lines (Trigger-Free Golden Standard) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
-            
-            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
-            <div class="stage-trigger-col">
-              ${bulletsHtml}
-            </div>
-
-            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
             <div class="stage-writing-col">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -730,7 +713,6 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
             </div>
-
           </div>
         </div>`;
     })
@@ -1808,21 +1790,6 @@ async function compileColdWarWorkbook() {
       width: 100%;
       border-bottom: 1.2px solid #000000;
       box-sizing: border-box;
-    }
-    .stage-trigger-col {
-      width: 26mm;
-      flex-shrink: 0;
-      background: #f8fafc;
-      display: flex;
-      flex-direction: column;
-      border-right: 1.2px solid #000000;
-      box-sizing: border-box;
-    }
-    .trigger-fact-cell {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      padding: 0 3px;
     }
     .stage-writing-col {
       flex: 1;

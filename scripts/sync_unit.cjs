@@ -142,6 +142,48 @@ async function runSync() {
     }
   }
 
+  // Step 1e: Do Now & Quiz Stage Narrative-Grounding Gate + Auto-Derive Do Now
+  if (unitId !== 'trip_ypres') {
+    console.log(
+      `\n[Step 1e/6] 🎯 Auditing Do Now & Quiz 100% Stage Narrative Grounding for ${unitId}...`,
+    );
+    try {
+      execSync(`node scripts/audit_donow_grounding.cjs ${unitId} --derive-donow`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+      execSync(`node scripts/sync_donow_mirrors.cjs ${unitId} --skip-db`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+    } catch (err) {
+      console.error(
+        `❌ Fatal: Do Now & Quiz narrative grounding audit failed for ${unitId}. Build aborted.`,
+      );
+      return false;
+    }
+
+    // Step 1f: Stage Question Single-Source-of-Truth Mirror & Answerability/Prose-Hash Gate
+    console.log(
+      `\n[Step 1f/6] 🧭 Syncing Stage Questions & auditing Narrative Answerability / Year-Group Ceiling for ${unitId}...`,
+    );
+    try {
+      execSync(`node scripts/sync_stage_questions.cjs ${unitId} --skip-db`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+      execSync(`node scripts/audit_narrative_question_answerability.cjs ${unitId}`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+    } catch (err) {
+      console.error(
+        `❌ Fatal: Narrative Stage Question answerability/parity gate failed for ${unitId}. Build aborted.`,
+      );
+      return false;
+    }
+  }
+
   // Step 2: Rebuild Global Database
   console.log(`\n[Step 2/6] 🗄️ Updating public/database.json for digital app...`);
   try {
@@ -289,6 +331,46 @@ async function runSync() {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });
+      }
+      if (unitId === 'post_war_britain') {
+        console.log(`\n📚 Compiling pupil workbook for [post_war_britain]...`);
+        execSync(`node scripts/render_post_war_britain_twopage_workbook.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+      }
+      if (unitId === 'cold_war') {
+        console.log(`\n📚 Compiling pupil workbook for [cold_war]...`);
+        execSync(`node scripts/render_cold_war_twopage_workbook.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+      }
+      if (unitId === 'weimar_nazi_germany') {
+        console.log(`\n📚 Compiling pupil workbooks for [weimar_nazi_germany]...`);
+        execSync(`node scripts/render_weimar_twopage_workbook.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+      }
+      if (unitId === 'usa') {
+        console.log(`\n📚 Compiling pupil workbooks for [usa]...`);
+        execSync(`node scripts/render_usa_twopage_workbook.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+      }
+      if (unitId === 'edexcel_medicine') {
+        console.log(`\n📚 Compiling 5-Era pupil workbooks for [edexcel_medicine]...`);
+        for (const medScript of [
+          'render_medicine_medieval_twopage_workbook.cjs',
+          'render_medicine_renaissance_twopage_workbook.cjs',
+          'render_medicine_18th_19th_twopage_workbook.cjs',
+          'render_medicine_modern_twopage_workbook.cjs',
+          'render_medicine_western_front_twopage_workbook.cjs',
+        ]) {
+          execSync(`node scripts/${medScript}`, { stdio: 'inherit', cwd: ROOT_DIR });
+        }
       }
 
       // Unified Full-Colour Textbook Auto-Sync: Any unit (or multi-KT GCSE unit) registered in
