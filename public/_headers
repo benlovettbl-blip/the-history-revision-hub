@@ -9,58 +9,58 @@
 /sw.js
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/edexcel-medicine
+/edexcel-medicine*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/early-elizabethan-england
+/early-elizabethan-england*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/conflict-in-the-middle-east
+/conflict-in-the-middle-east*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/weimar-nazi-germany
+/weimar-nazi-germany*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/usa-1954-1975
+/usa-1954-1975*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/medieval-england
+/medieval-england*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/tudors-stuarts-parliament
+/tudors-stuarts-parliament*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/water-and-sanitation
+/water-and-sanitation*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/first-british-empire
+/first-british-empire*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/industrial-revolution
+/industrial-revolution*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/second-british-empire
+/second-british-empire*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/history-of-australia
+/history-of-australia*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/causes-of-world-war-1
+/causes-of-world-war-1*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/first-world-war-1914-1919
+/first-world-war-1914-1919*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/the-holocaust-shoah
+/the-holocaust-shoah*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/cold-war-1945-1991
+/cold-war-1945-1991*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/post-war-britain
+/post-war-britain*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/ks2-world-war-2
+/ks2-world-war-2*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
 /database.json

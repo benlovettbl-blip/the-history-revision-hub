@@ -1,24 +1,24 @@
 # Dual-Compatible Clean Course Redirects (Cloudflare Pages & Netlify)
-/usa/*                          /usa-1954-1975                 301
-/usa                            /usa-1954-1975                 301
-/usa-conflict-home-and-abroad   /usa-1954-1975                 301
-/cme/*                          /conflict-in-the-middle-east   301
-/cme                            /conflict-in-the-middle-east   301
-/middle-east-1945-1995          /conflict-in-the-middle-east   301
-/eee/*                          /early-elizabethan-england     301
-/eee                            /early-elizabethan-england     301
-/elizabethan-england            /early-elizabethan-england     301
-/medicine-through-time          /edexcel-medicine              301
-/gcse-medicine                  /edexcel-medicine              301
-/weimar-and-nazi-germany        /weimar-nazi-germany           301
-/monarchy-religion-power        /tudors-stuarts-parliament     301
-/crown-church-parliament        /tudors-stuarts-parliament     301
-/industrialisation-and-empire   /industrial-revolution         301
-/causes-of-the-great-war        /causes-of-world-war-1         301
-/course-of-the-great-war        /first-world-war-1914-1919     301
-/the-shoah                      /the-holocaust-shoah           301
-/superpower-relations-cold-war  /cold-war-1945-1991            301
-/primary-ww2-home-front         /ks2-world-war-2               301
+/usa/*                          /usa-1954-1975/                301
+/usa                            /usa-1954-1975/                301
+/usa-conflict-home-and-abroad   /usa-1954-1975/                301
+/cme/*                          /conflict-in-the-middle-east/  301
+/cme                            /conflict-in-the-middle-east/  301
+/middle-east-1945-1995          /conflict-in-the-middle-east/  301
+/eee/*                          /early-elizabethan-england/    301
+/eee                            /early-elizabethan-england/    301
+/elizabethan-england            /early-elizabethan-england/    301
+/medicine-through-time          /edexcel-medicine/             301
+/gcse-medicine                  /edexcel-medicine/             301
+/weimar-and-nazi-germany        /weimar-nazi-germany/          301
+/monarchy-religion-power        /tudors-stuarts-parliament/    301
+/crown-church-parliament        /tudors-stuarts-parliament/    301
+/industrialisation-and-empire   /industrial-revolution/        301
+/causes-of-the-great-war        /causes-of-world-war-1/        301
+/course-of-the-great-war        /first-world-war-1914-1919/    301
+/the-shoah                      /the-holocaust-shoah/          301
+/superpower-relations-cold-war  /cold-war-1945-1991/           301
+/primary-ww2-home-front         /ks2-world-war-2/              301
 
 # Canonical PDF Redirects (Zero Broken QR Codes on Printed Booklets)
 /pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf                     /pdfs/ks2_ww2_retrieval_companion.pdf 301

@@ -28,6 +28,19 @@ function seoCoursePagesPlugin() {
         '@context': 'https://schema.org',
         '@graph': [
           {
+            '@type': 'EducationalOrganization',
+            name: 'The History Revision Hub',
+            url: `${SITE_ORIGIN}/`,
+            email: 'contact@historyrevisionhub.co.uk',
+            contactPoint: {
+              '@type': 'ContactPoint',
+              email: 'contact@historyrevisionhub.co.uk',
+              contactType: 'customer support',
+              areaServed: 'GB',
+              availableLanguage: 'en-GB',
+            },
+          },
+          {
             '@type': 'WebSite',
             name: 'The History Revision Hub',
             url: `${SITE_ORIGIN}/`,
@@ -41,7 +54,7 @@ function seoCoursePagesPlugin() {
               '@type': 'ListItem',
               position: idx + 1,
               name: r.heading,
-              url: `${SITE_ORIGIN}/${r.slug}`,
+              url: `${SITE_ORIGIN}/${r.slug}/`,
             })),
           },
         ],
@@ -55,7 +68,7 @@ function seoCoursePagesPlugin() {
               <ul style="line-height: 1.8; padding-left: 20px;">
                 ${SEO_UNIT_ROUTES.map(
                   (r) =>
-                    `<li><a href="/${escapeHtml(r.slug)}"><strong>${escapeHtml(r.heading)}</strong></a> — ${escapeHtml(r.keyStage)}</li>`,
+                    `<li><a href="/${escapeHtml(r.slug)}/"><strong>${escapeHtml(r.heading)}</strong></a> — ${escapeHtml(r.keyStage)}</li>`,
                 ).join('\n                ')}
               </ul>
             </nav>
@@ -79,7 +92,7 @@ function seoCoursePagesPlugin() {
         const unitRecord = db[route.unitId];
         const unitData = (unitRecord && (unitRecord.data || unitRecord)) || {};
         const lessons = unitData.lessons || unitData.subtopics || [];
-        const canonicalUrl = `${SITE_ORIGIN}/${route.slug}`;
+        const canonicalUrl = `${SITE_ORIGIN}/${route.slug}/`;
         const rawImage = unitData.cover_image || unitData.homepage_background || '/icon-512.svg';
         const ogImageUrl = rawImage.startsWith('http') ? rawImage : `${SITE_ORIGIN}${rawImage}`;
         const overviewProse =
@@ -116,6 +129,7 @@ function seoCoursePagesPlugin() {
                 '@type': 'EducationalOrganization',
                 name: 'The History Revision Hub',
                 url: `${SITE_ORIGIN}/`,
+                email: 'contact@historyrevisionhub.co.uk',
               },
               syllabusSections: lessons.slice(0, 30).map((l, idx) => ({
                 '@type': 'Syllabus',

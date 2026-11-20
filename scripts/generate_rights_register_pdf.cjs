@@ -1048,7 +1048,7 @@ function buildHtml(targetUnitId = null) {
       <!-- Cover Running Footer -->
       <div class="register-footer">
         <div>
-          <strong>${db.platform}</strong> • Master Legal Compliance &amp; Rights Concordance
+          <strong>${db.platform}</strong> • Master Legal Compliance &amp; Rights Concordance • <a href="mailto:contact@historyrevisionhub.co.uk" style="color: inherit; text-decoration: none;">contact@historyrevisionhub.co.uk</a>
         </div>
         <div>
           Executive Cover Sheet • Certified Neutral Commercial Edition

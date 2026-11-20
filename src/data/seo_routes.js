@@ -274,12 +274,12 @@ export function resolveUnitIdFromPathname(pathname) {
 }
 
 /**
- * Returns the canonical clean path (e.g. "/weimar-nazi-germany") for a unitId, or null.
+ * Returns the canonical clean path (e.g. "/weimar-nazi-germany/") for a unitId, or null.
  */
 export function getCleanPathForUnit(unitId) {
   if (!unitId) return null;
   const route = UNIT_TO_ROUTE.get(unitId);
-  return route ? `/${route.slug}` : null;
+  return route ? `/${route.slug}/` : null;
 }
 
 /**

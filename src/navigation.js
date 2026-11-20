@@ -33,7 +33,7 @@ function syncDynamicSeoMetadata(viewName, unitId) {
   const route = viewName !== 'dashboard' && unitId ? getSeoRouteForUnit(unitId) : null;
   const nextTitle = route ? route.seoTitle : DEFAULT_DOCUMENT_TITLE;
   const nextDesc = route ? route.metaDescription : DEFAULT_META_DESCRIPTION;
-  const nextCanonical = route ? `${SITE_ORIGIN}/${route.slug}` : `${SITE_ORIGIN}/`;
+  const nextCanonical = route ? `${SITE_ORIGIN}/${route.slug}/` : `${SITE_ORIGIN}/`;
 
   document.title = nextTitle;
   const descEl = document.querySelector('meta[name="description"]');
